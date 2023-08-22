@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: db78a300-f506-4edf-9e6d-f8507969d6cb
 caps.latest.revision: 8
-manager: edupont
 ---
 # ADCS Overview
 The Automated Data Capture System \(ADCS\) solution provides a way for [!INCLUDE[navnow](includes/navnow_md.md)] to communicate with handheld devices through web services. You can test your solution by using the VT100 plug-in.  
@@ -20,7 +19,7 @@ The Automated Data Capture System \(ADCS\) solution provides a way for [!INCLUDE
 ## Overview and Architecture  
  ADCS enables you to accurately capture data for inbound, outbound, and internal documents, primarily for warehouse activities. For example, you can have users scan the bar codes of items in your warehouse as they perform daily tasks, and that information is recorded from these handheld device activities in [!INCLUDE[navnow](includes/navnow_md.md)].  
   
- ![ADCS Flow](media/ADCSFlow.png "ADCSFlow")  
+ ![ADCS Flow.](media/ADCSFlow.png "ADCSFlow")  
   
  [!INCLUDE[nav_server](includes/nav_server_md.md)] processes the data coming to in from the handheld devices via the plug-in and sends the appropriate response back to the handheld devices via the plug-in. An XML format is used to send and receive the data. The VT100 plug-in makes sure that the response from [!INCLUDE[navnow](includes/navnow_md.md)] is directed to the correct handheld device. This reduces the load on the server.  
   
@@ -29,7 +28,7 @@ The Automated Data Capture System \(ADCS\) solution provides a way for [!INCLUDE
 ### Design Overview  
  The following illustration provides a simple diagram of ADCS. The part of the illustration that is shaded, which does not include ADCS, represents what could be developed.  
   
- ![ADCS Logic](media/ADCSLogic.png "ADCSLogic")  
+ ![ADCS Logic.](media/ADCSLogic.png "ADCSLogic")  
   
  Consider the following when you deploy an ADCS solution:  
   

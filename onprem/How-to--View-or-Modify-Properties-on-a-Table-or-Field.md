@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: a3aa1f8c-12a8-4ec5-9700-fdcbe53b1edc
 caps.latest.revision: 10
-manager: edupont
 ---
 # How to: View or Modify Properties on a Table or Field
 Use the following procedure to view or modify properties for a table or a field.  

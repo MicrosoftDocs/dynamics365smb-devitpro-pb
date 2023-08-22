@@ -1,14 +1,14 @@
 ---
 title: "Notifications"
+description: Learn how you can generate notifications that will show to the user.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: solsen
-ms.service: "dynamics365-business-central"
 ---
 
  
@@ -54,7 +54,7 @@ The scope determines where the notification is broadcast in the client. There ar
 
 * A *LocalScope* notification appears in context of the user's current task, that is, on the page the user is currently working on. *LocalScope* is the default.
 
-* A *GlobalScope* notification is not directly related to the current task, and will appear regardless of which the page the user is viewing.
+* A *GlobalScope* notification is not directly related to the current task, and will appear regardless of which page the user is viewing.
   > [!NOTE]  
   > *GlobalScope* is currently not supported. This will be implemented in a future release.
 
@@ -189,7 +189,7 @@ To complete the example, follow these steps:
                 //Add a data property for the customer number
                 CreditBalanceNotification.SetData('CustNumber', Customer."No.");
                 //Add an action that calls the ActionHandler codeunit, which you define in the next step.
-                CreditBalanceNotification.AddAction('Text004', Codeunit::"ActionHandler", 'OpenCustomer');
+                CreditBalanceNotification.AddAction(Text004, Codeunit::"ActionHandler", 'OpenCustomer');
                 //Send the notification to the client.
                 CreditBalanceNotification.Send();
             end;
@@ -215,7 +215,7 @@ To complete the example, follow these steps:
             CustPage: Page "Customer Card";
         begin
             //Get the customer number data from the SetData() call.
-            CustNo := CreditBalanceNotification.GetData(CustNumber);
+            CustNo := CreditBalanceNotification.GetData('CustNumber');
             // Open the Customer Card page for the customer.
             if CustRec.Get(CustNo) then begin
                 CustPage.SetRecord(CustRec);
@@ -228,6 +228,6 @@ To complete the example, follow these steps:
     ```
 
 ## See Also
-[Notification Data Type](datatypes/devenv-notification-data-type.md)   
+[Notification Data Type](./methods-auto/library.md)   
 [Developing Extensions](devenv-dev-overview.md)   
-[Getting Started with AL](devenv-get-started.md)   
+[Get Started with AL](devenv-get-started.md)

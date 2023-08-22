@@ -7,7 +7,6 @@ title: Ready to Go Online Learning Catalog
 description: 
 ms.topic: hub-page
 ms.date: 10/25/2018
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 

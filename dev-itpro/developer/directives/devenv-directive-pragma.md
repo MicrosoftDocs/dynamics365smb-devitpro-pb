@@ -3,11 +3,10 @@ title: "Pragma Directive in AL"
 description: "Types of pragma directives supported in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ms.author: solsen
 ---
 
@@ -17,7 +16,7 @@ ms.author: solsen
 
 ## Pragma
 
-The `#pragma` directive gives the compiler special instructions for the compilation of the file in which it appears. The `#pragma` directive has a number of actions that can be used with the pragma instructions below, these are `disable`, `restore`, and `enable`.
+The `#pragma` directive gives the compiler special instructions for the compilation of the file in which it appears. The `#pragma` directive has many actions that can be used with the pragma instructions in the following sections, which are `disable`, `restore`, and `enable`.
 
 AL supports the following pragma instructions:
 

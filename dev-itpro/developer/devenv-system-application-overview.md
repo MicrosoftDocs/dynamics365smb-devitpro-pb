@@ -6,16 +6,17 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: overview
 ms.author: bholtorf
-ms.date: 10/01/2020
+ms.date: 10/01/2021
 ---
 
 # Overview of the System Application
 The System Application contains modules that interact with the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform and online ecosystem to support the business logic in the Base Application. If you are developing extensions or add-ons for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you will probably need to use one or more of the objects in the modules. 
 
 This topic provides an overview of the modules in the System Application. For more details about each module, and to get a look at the code, choose the **ReadMe** link for the module to visit our [ALAppExtensions](https://github.com/microsoft/ALAppExtensions) repository on GitHub.
+
+For an overview of system application reference documentation, see [Module System Application](/dynamics365/business-central/application/reference/system%20application/).
 
 > [!Note]
 > The modules in the System Application represent a significant change in what's happening under the hood in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. We are aware that the changes we have made will introduce breaking changes, so we have made a list of those that we know about, which includes suggestions for solutions. To view the breaking changes list, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md).<br><br>We will continue to enhance the System Application in future releases. If you find something you think we should add, visit our [Dynamics 365 Application Ideas](https://aka.ms/bcideas) page. If you want us to improve something, go to the [ALAppExtensions](https://github.com/microsoft/ALAppExtensions) repository and submit a pull request for it.  
@@ -25,17 +26,18 @@ The list of modules is growing continuously. The following table lists and descr
 
 |Module|Description|Link to ReadMe|
 |----|----|----|
-|Assisted Setup|Contains all pages that are used by assisted setup guides.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Assisted%20Setup/README.md)|
 |Auto Format|Formats the appearance decimal data types.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Auto%20Format/README.md)|
-|Azure AD Graph|Interface for the Azure AD Graph API.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Graph/README.md)|
+|Azure AD Graph|Interface for the Azure AD Graph API.<br><br> **Note** <br>  Azure Active Directory Graph is being retired, and we recommend that you start using Microsoft Graph instead. To avoid causing issues with apps that use the Azure AD Graph module in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], we haven't changed its name or the names of the objects it contains. For more information about the Azure Active Directory Graph retirement, see [Migrate Azure AD Graph apps to Microsoft Graph](/graph/migrate-azure-ad-graph-overview).|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Graph/README.md)|
 |Azure AD Licensing|Access information about the subscribed SKUs and the corresponding service plans.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Licensing/README.md)|
 |Azure AD Plan|Provides methods for retrieving and managing user plans in Azure Active Directory.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Plan/README.md)|
 |Azure AD Tenant|Retrieves information about the Azure Active Directory tenant.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Tenant/README.md)|
 |Azure AD User Management|Provides functionality for managing Azure Active Directory users.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20User%20Management/README.md)|
 |Azure AD User|Retrieves and updates a user from the Azure AD Graph API.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20User/README.md)|
+|Azure Functions|Provides functionality for connecting to Azure Functions and gathering data about the success of calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to Azure Functions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)|
 |Azure Key Vault|Stores Azure Key Vault secrets for deployments.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20Key%20Vault/README.md)|
 |BLOB Storage|Stores and manages data in a binary format.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/BLOB%20Storage/README.md)|
 |Base64 Convert|Converts text and from base 64.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Base64%20Convert/README.md)|
+|Barcode|Exposes functionality to encode barcodes for using on, for example, reports.|[ReadMe](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Barcode)|
 |Caption Class|Defines how the CaptionClass property displays captions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Caption%20Class/README.md)|
 |Client Type Management|Allows testing of code that relies on different types of clients.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Client%20Type%20Management/README.md)|
 |Confirm Management|Determines whether a confirm dialog displays when logic is run.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Confirm%20Management/README.md)|
@@ -45,6 +47,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Data Compression|Compresses and uncompresses data in a binary format.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Data%20Compression/README.md)|
 |Date-Time Dialog|Provides helper functions for entering date-time values.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Date-Time%20Dialog/README.md)|
 |Default Role Center|Supports the default RoleCenter selection.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Default%20Role%20Center/README.md)|
+|Document Sharing|Enable document sharing flows through a valid document service, like OneDrive for Business|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/main/Modules/System/Document%20Sharing/README.md)|
 |DotNet Aliases|Defines aliases for .NET classes.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/DotNet%20Aliases/README.md)|
 |Environment Information|Contains helper methods for getting information about the tenant and general settings.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Environment%20Information/README.md)|
 |Extension Management|Provides the tools needed to manage an extension.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Extension%20Management/README.md)|
@@ -52,11 +55,10 @@ The list of modules is growing continuously. The following table lists and descr
 |Filter Tokens|Provides helper functions to manage filter texts.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Filter%20Tokens/README.md)|
 |Headlines|Helps with constructing the text for headlines.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Headlines/README.md)|
 |Language|Changes the language for Windows and applications.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Language/README.md)|
-|Manual Setup|Contains functions and events used by manual setup pages.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Manual%20Setup/README.md)|
 |Math|Provides constants and static methods for trigonometric, logarithmic, and other common mathematical functions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Math/README.md)|
 |Object Selection|Look up page for all of the application objects, including objects from installed extensions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Object%20Selection/README.md)|
 |Page Summary Provider|Contains functionality for providing summary data for a given page in Microsoft Teams. |[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Page%20Summary%20Provider/README.md)|
-|Password Dialog|Sets and verifies passwords.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Password%20Dialog/README.md)|
+|Password|Sets and verifies passwords.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Password/README.md)|
 |Printer Management|Contains functionality that enables a user to manage printers.|[ReadMe](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Printer%20Management)|
 |Record Link Management|Provides helper functions for RecordLinks.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Record%20Link%20Management/README.md)|
 |Recurrence Schedule|Calculates when the next event will occur.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Recurrence%20Schedule/README.md)|
@@ -64,6 +66,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Secrets|Contains secret providers for reading secrets from the key vault that is specified by an extension or from other secret providers.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Secrets/README.md)|
 |Server Settings|Exposes methods that get settings from the server configuration file.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Server%20Settings/README.md)|
 |System Initialization|Runs non-business logic on user log-ins.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/System%20Initialization/README.md)|
+|Telemetry|Provides the tools needed to add feature telemetry (uptake/usage/errors) for an app.|[ReadMe](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry/README.md)|
 |Tenant License State|Retrieves the current state of the tenant license.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Tenant%20License%20State/README.md)|
 |Translation|Gets and stores language translations.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Translation/README.md)|
 |Upgrade Tags|Provides functionality for ensuring that the upgrade code is run only one time.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Upgrade%20Tags/README.md)|
@@ -72,10 +75,6 @@ The list of modules is growing continuously. The following table lists and descr
 |User Selection|Looks up and selects registered users.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/User%20Selection/README.md)|
 |Video|Looks up and plays videos.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Video/README.md)|
 |Web Service Management|Provides the tools needed to manage web services.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Web%20Service%20Management/README.md)|
-
-
-
-
 
 <!--## Example - Enhancing a Module
 

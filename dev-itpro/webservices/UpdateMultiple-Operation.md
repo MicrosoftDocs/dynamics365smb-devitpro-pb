@@ -1,12 +1,11 @@
 ---
 title: "UpdateMultiple Operation"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ---
 # UpdateMultiple Operation
 Updates a set of records. The updated array of records is passed as a reference and is updated with the latest version.  

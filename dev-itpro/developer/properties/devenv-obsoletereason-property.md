@@ -1,54 +1,61 @@
 ---
 title: "ObsoleteReason Property"
-description: "Description of the ObsoleteReason property"
-author: jswymer
+description: "Specifies why the object has been marked as Pending in the ObsoleteState property."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
-ms.author: jswymer
+ms.topic: reference
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ObsoleteReason Property
+> **Version**: _Available or changed with runtime version 10.0._
 
-Specifies why an object or element has been marked as **Pending** or **Removed** in the **ObsoleteState** property.  
+Specifies why the object has been marked as Pending in the ObsoleteState property.
 
-## Applies To
+## Applies to
+-   Page Action Ref
+-   Page Custom Action
+-   Table Field
+-   Table
+-   Table Key
+-   Codeunit
+-   Enum Type
+-   Enum Value
+-   Page Action
+-   Page Action Group
+-   Page Action Separator
+-   Page Part
+-   Page System Part
+-   Page Chart Part
+-   Page Field
+-   Page Group
+-   Page Label
+-   Query
+-   Query Column
+-   Query Filter
+-   Report
+-   Report Data Item
+-   Report Column
+-   Request Page
+-   Xml Port
+-   Page Action Area
+-   Page Area
+-   Page
+-   Page View
+-   Profile
+-   Interface
+-   Control Add In
+-   Permission Set
+-   Field Group
 
-- Table objects
-- Table fields
-- Table keys
-- Codeunit
-- Enum
-- EnumValue
-- Page
-- PageAction
-- PageActionArea
-- PageActionGroup
-- PageActionSeparator
-- PageArea
-- PageChartPart
-- PageField
-- PageGroup
-- PageLabel
-- PagePart
-- PageSystemPart
-- Query
-- QueryColumn
-- QueryDataItem
-- QueryFilter
-- Report
-- ReportColumn
-- ReportDataItem
-- RequestPage
-- XmlPort
-  
-## Property Value
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-A text string.
 
 ## Syntax
 
@@ -58,7 +65,7 @@ ObsoleteReason = 'Not Needed';
 
 ## Remarks 
 
-Use this property to inform developers about a table, field, or key that will become obsolete in time or is already obsolete. Use the [ObsoleteTag Property](devenv-obsoletetag-property.md) to specify additional information which can be valuable to other developers.
+Use this property to inform developers about an object or element that will become obsolete in time or is already obsolete. Use the [ObsoleteTag Property](devenv-obsoletetag-property.md) to specify additional information which can be valuable to other developers.
 
 ## See Also
 
@@ -66,4 +73,4 @@ Use this property to inform developers about a table, field, or key that will be
 [ObsoleteTag](devenv-obsoletetag-property.md)  
 [Properties](devenv-properties.md)  
 [MethodType Property (Upgrade Codeunits)](../devenv-methodtype-property-upgrade-codeunits.md)  
-
+[Obsolete Attribute](../attributes/devenv-obsolete-attribute.md)  

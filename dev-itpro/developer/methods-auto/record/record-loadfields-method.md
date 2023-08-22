@@ -1,24 +1,26 @@
 ---
-title: "Record.LoadFields Method"
+title: "Record.LoadFields(Any,...) Method"
+description: "Accesses the table's corresponding data source and loads the values of the specified fields on the record."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.LoadFields Method
+# Record.LoadFields(Any,...) Method
+> **Version**: _Available or changed with runtime version 6.0._
+
 Accesses the table's corresponding data source and loads the values of the specified fields on the record.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Record.LoadFields(Fields: Any,...)
 ```
 ## Parameters
@@ -32,9 +34,9 @@ The FieldNo's of the fields to be loaded.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if all values were loaded on the record; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if all values were loaded on the record; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -48,5 +50,5 @@ This method is part of the partial records capability for improving performance.
 
 [Using Partial Records](../../devenv-partial-records.md)  
 [Record Data Type](record-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

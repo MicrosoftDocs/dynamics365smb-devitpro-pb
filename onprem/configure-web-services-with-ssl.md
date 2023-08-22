@@ -28,7 +28,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
     >  The makecert.exe tool is only required if you do not already have an SSL certificate and you want to create a certificate for test purposes.  
 
 ## Story  
- Victor, who is a business systems developer at [!INCLUDE[demoname](../developer/includes/demoname_md.md)], knows that his implementation of web services applications for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is unlikely to pass a company security audit unless he encrypts sensitive data that is transmitted over the company intranet. He decides to protect web services communication with SSL.  
+ Victor, who is a business systems developer at [!INCLUDE[demoname](../developer/includes/demoname_md.md)], knows that their implementation of web services applications for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is unlikely to pass a company security audit unless the sensitive data that is transmitted over the company intranet is encrypted. Victor decides to protect web services communication with SSL.  
 -->
 ##  <a name="ObtainCert"></a> Obtain an SSL Certificate
   
@@ -137,7 +137,7 @@ Once you obtain a certificate, you must import it into the **Personal** local co
   
 The first step is to prepare [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to use SSL. This involves configuring the relevant [!INCLUDE[server](../developer/includes/server.md)] instance to specify SSL.
 
-You can configure [!INCLUDE[server](../developer/includes/server.md)] instances with the [Server Administration Tool](../administration/administration-tool.md) or [Business Central Windows PowerShell Cmdlets]((https://docs.microsoft.com/powershell/dynamics-nav/overview). For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
+You can configure [!INCLUDE[server](../developer/includes/server.md)] instances with the [Server Administration Tool](../administration/administration-tool.md) or [Business Central Windows PowerShell Cmdlets]((/powershell/dynamics-nav/overview). For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
 
    
 1.  Open the [!INCLUDE[admintool](../developer/includes/admintool.md)], select [!INCLUDE[server](../developer/includes/server.md)] that you want to modify.

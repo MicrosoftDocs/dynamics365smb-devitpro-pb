@@ -1,21 +1,24 @@
 ---
 title: "Scope (Table) Property"
+description: The scope property for tables sets whether the scope is cloud or on-prem in AL.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 
 # Scope (Table) Property
+> **Version**: _Available from runtime version 1.0._
+
+<!-- this topic is manually created, parent node is devenv-scope-property.md -->
 
 Sets the scope of a table. The options are `Cloud`, `Extension`, `Internal`, `OnPrem`, and `Personalization`. 
 
 > [!NOTE]  
-> The following options `Extension`, `Internal`, and `Personalization` are being deprecated with runtime 4.0. `External` is replaced by `Cloud` and `Internal` is replaced by `OnPrem`.
+> The following options `Extension`, `Internal`, and `Personalization` are being deprecated with runtime 4.0. `Extension` is replaced by `Cloud` and `Internal` is replaced by `OnPrem`.
 
 ## Applies to 
 
@@ -23,7 +26,7 @@ Sets the scope of a table. The options are `Cloud`, `Extension`, `Internal`, `On
 
 ## Remarks
 
-When a table is marked with `Scope = OnPrem` it is not available to a cloud extension. System tables that have the `Scope` property set to `Internal` (`OnPrem`) cannot be accessed from extensions that have the `target` property set to `Cloud` or `External` through direct reference or through RecordRef.
+When a table is marked with `Scope = OnPrem` it is not available to a cloud extension. System tables that have the `Scope` property set to `Internal` (`OnPrem`) cannot be accessed from extensions that have the `target` property set to `Cloud` or `Extension` through direct reference or through RecordRef.
 
 
 ## Examples

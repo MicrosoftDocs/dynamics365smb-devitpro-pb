@@ -1,0 +1,1 @@
+Specifies the total time the operation ran for.

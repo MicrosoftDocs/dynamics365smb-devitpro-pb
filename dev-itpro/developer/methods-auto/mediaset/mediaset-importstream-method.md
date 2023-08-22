@@ -1,25 +1,27 @@
 ---
-title: "MediaSet.ImportStream Method"
+title: "MediaSet.ImportStream(InStream, Text [, Text]) Method"
+description: "Adds a media file, such as a JPEG image, from an InStream object to the MediaSet of record for displaying in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# MediaSet.ImportStream Method
+# MediaSet.ImportStream(InStream, Text [, Text]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Adds a media file, such as a JPEG image, from an InStream object to the MediaSet of record for displaying in the client. The media is imported to the database and included in a MediaSet for the record.
 
 
 ## Syntax
-```
-[ID := ]  MediaSet.ImportStream(Stream: InStream, Description: String [, MimeType: String])
+```AL
+[ID := ]  MediaSet.ImportStream(Stream: InStream, Description: Text [, MimeType: Text])
 ```
 ## Parameters
 *MediaSet*  
@@ -28,22 +30,21 @@ An instance of the [MediaSet](mediaset-data-type.md) data type.
 
 *Stream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
-Specifies the InStream object that contains the media that you want to use on the record.
-        
+Specifies the InStream object that contains the media that you want to use on the record.  
+
 *Description*  
-&emsp;Type: [String](../string/string-data-type.md)  
-Specifies text that can be used in the client to describe the media files.
-        
-*MimeType*  
-&emsp;Type: [String](../string/string-data-type.md)  
-Specifies the media content type. MIME type is used by browsers, and is an Internet standard to describe the contents of a file. The MimeType value must be a two-part string that consists of a type and subtype, such as image/jpeg or image/gif. If this parameter is not specified, the function will deduct the MIME type from the file extension. For example the MIME type for a .jpg file is image/jpeg.
-          
+&emsp;Type: [Text](../text/text-data-type.md)  
+Specifies text that can be used in the client to describe the media files.  
+
+*[Optional] MimeType*  
+&emsp;Type: [Text](../text/text-data-type.md)  
+Specifies the media content type. MIME type is used by browsers, and is an Internet standard to describe the contents of a file. The MimeType value must be a two-part string that consists of a type and subtype, such as image/jpeg or image/gif. If this parameter is not specified, the function will deduct the MIME type from the file extension. For example the MIME type for a .jpg file is image/jpeg.  
 
 
 ## Return Value
-*ID*  
+*[Optional] ID*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
-The unique ID that is assigned to the MediaSet of the record. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+The unique ID that is assigned to the MediaSet of the record. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -56,7 +57,7 @@ When a media is imported, it is assigned a unique identifier \(GUID\) and stored
 In addition, the media object is assigned to a MediaSet which also has a specific GUID. This GUID is included in the MediaSet data type field as a reference to the media objects. The MediaSet and its GUID are created with the first media that is imported, and the information is stored in table **2000000183 Tenant Media Set**. All additional media objects for the record are then associated with the same MediaSet GUID.
 
 ## Example  
- This example uses the IMPORTSTREAM method to add images to records in table **27 Item** of the [!INCLUDE[demolonglight_md](../../includes/demolonglight_md.md)].
+ This example uses the ImportStream method to add images to records in table **27 Item** of the [!INCLUDE[demolonglight_md](../../includes/demolonglight_md.md)].
 
  To support the example code that follows, you also have to complete these tasks:  
 
@@ -70,7 +71,7 @@ In addition, the media object is assigned to a MediaSet which also has a specifi
 
 With these tasks in place, you can add and run the following AL code to import the images. For this code example, create a codeunit and add the code to the OnRun trigger.  
 
-```
+```al
  var
     itemRec: Record Item;
     count: Integer;
@@ -92,7 +93,7 @@ begin
     fileName := 'C:\images\1000-v2.jpg';
     importFile.Open(fileName);  
     importFile.CreateInStream(inStreamObject);  
-    itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + FORMAT(itemRec."No."));  
+    itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + Format(itemRec."No."));  
     itemRec.Modify;  
     importFile.Close;
     
@@ -105,5 +106,5 @@ end;
 If you run system table **2000000181 Tenant Media**, you should see the new images in the list.
 ## See Also
 [MediaSet Data Type](mediaset-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

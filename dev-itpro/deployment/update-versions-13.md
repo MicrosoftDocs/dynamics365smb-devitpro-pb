@@ -1,19 +1,18 @@
 ---
 title: "Cumulative updates"
 description: "Learn about the cumulative updates for Dynamics 365 Business Central on-premises deployments."
-author: MartinNielander
+author: jswymer
 ms.custom: na
-ms.reviewer: edupont
-ms.topic: article
-ms.service: "dynamics365-business-central"
-ms.author: martinni
-ms.date: 10/01/2020
+ms.reviewer: jswymer
+ms.topic: conceptual
+ms.author: jswymer
+ms.date: 04/01/2021
 
 ---
 
 # Dynamics 365 Business Central On-Premises October'18 Updates
 
-This article lists cumulative updates released for the October'18 release of Microsoft Dynamics 365 Business Central on-premises. A cumulative update is a cumulative set of files that includes hotfixes and regulatory features for Business Central. If you have customers using Business Central October'18 on-premises, we recommend applying the latest cumulative update. For customers using Business Central online, check the [Business Central Admin center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) to see whether the tenants have been updated.  
+This article lists cumulative updates released for the October'18 release of Microsoft Dynamics 365 Business Central on-premises. A cumulative update is a cumulative set of files that includes hotfixes and regulatory features for Business Central. If you have customers using Business Central October'18 on-premises, we recommend applying the latest cumulative update. For customers using Business Central online, check the [Business Central Admin center](../administration/tenant-admin-center.md) to see whether the tenants have been updated.  
 
 Each cumulative update is intended mainly for solutions that are experiencing the problems described in the Support articles linked to below. However, you're advised to always keep your solution updated with the latest cumulative update. Support professionals in Customer Support Services are ready to help you if:
 
@@ -28,7 +27,7 @@ We recommend that you install the latest cumulative update.
 
 ## Available updates for Business Central October 2018
 
-The following table lists the cumulative updates that have been released for the October'18 release of Business Central (version 13). The cumulative updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
+The following table lists the cumulative updates that have been released for the October'18 release of Business Central (version 13). The cumulative updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
@@ -59,7 +58,7 @@ The following table lists the cumulative updates that have been released for the
 [Resources for Help and Support](../help-and-support.md)  
 [System Requirements](system-requirement-business-central.md)  
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
-[Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
+[Countries/regions and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
-[Dynamics NAV developer and ITpro content](/dynamics-nav/index)  
+[Dynamics NAV developer and ITpro content](/dynamics-nav/index)

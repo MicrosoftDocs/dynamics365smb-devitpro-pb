@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 25a6a189-fd8e-4324-9f29-88af759716db
 caps.latest.revision: 23
-manager: edupont
 ---
 # Walkthrough: Inserting Data from XML Documents to Multiple Tables
 XMLports are used to export data from a [!INCLUDE[navnow](includes/navnow_md.md)] database to an XML document or import data from an XML document to a [!INCLUDE[navnow](includes/navnow_md.md)] database. The data can be exported from or imported to multiple tables in the database. Exporting data from a [!INCLUDE[navnow](includes/navnow_md.md)] database into XML format enables seamless exchange of information between different computer systems. You only need a basic knowledge of XML to design and work with XMLports.  
@@ -33,7 +32,7 @@ XMLports are used to export data from a [!INCLUDE[navnow](includes/navnow_md.md)
 -   The [!INCLUDE[demolong](includes/demolong_md.md)].  
   
 ## Story  
- Simon is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] A colleague in the Sales Department has shared Sales Order records with Simon. Simon has been asked to import the Sales Order records from an XML document into the appropriate tables in the database. When Simon examined the data in the XML document, he realized that the data in the Sales Order document belongs in two different tables, the Sale Header table and the Sales Line table. The tables have a header-lines relationship. Simon’s task is to insert the Sales Header records from the XML document into the Sales Header table and insert the Line records into the Sales Line table. Simon knows that he can create an XMLport to import the data into the database and he also knows that he can design the XMLport to insert the Header data into the Sales Header table and the Line data into data into the Sales Line table.  
+ Simon is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] A colleague in the Sales Department has shared Sales Order records with Simon. Simon has been asked to import the Sales Order records from an XML document into the appropriate tables in the database. On examining the data in the XML document, Simon realized that the data in the Sales Order document belongs in two different tables, the Sale Header table and the Sales Line table. The tables have a header-lines relationship. Simon’s task is to insert the Sales Header records from the XML document into the Sales Header table and insert the Line records into the Sales Line table. Simon can create an XMLport to import the data into the database and design the XMLport to insert the Header data into the Sales Header table and the Line data into data into the Sales Line table.  
   
 ## Setting Up the Sample Data  
  In this walkthrough, you import an XML document and insert it into the database. The document contains Sales Order information, which is made up of sales header and sales lines information. The customer named “The Cannon Group PLC” has new sales order information in the sales order document. The sales header information is in the `<Header></Header>` element and the sales line information is in the `<Line></Line>` elements. You create an XMLport that inserts the header data into the Sales Header table and the sales line data into the Sales Line table.  

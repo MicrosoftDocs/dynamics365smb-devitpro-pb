@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0b18ff07-ed4d-4924-83a1-6a2f3d74084d
 caps.latest.revision: 16
-manager: edupont
 ---
 # Using About This Page and About This Report
 To see more information about a page, use the About This Page feature to view all the fields that make up the current page. These fields are the fields for the current record in the table on which the page is based. For example, if you open a sales order page, choose the Help button, and then choose **About This Page**, the **About This Page: Sales Order** window opens. The **About This Page** window shows the following FastTabs:  
@@ -28,14 +27,14 @@ To see more information about a page, use the About This Page feature to view al
   
  The following illustration shows a Sales Order page and the About This Page.  
   
- ![About This Page window that shows all fields](media/NAV_Zoom_SalesOrderRTC.png "NAV\_Zoom\_SalesOrderRTC")  
+ ![About This Page window that shows all fields.](media/NAV_Zoom_SalesOrderRTC.png "NAV\_Zoom\_SalesOrderRTC")  
   
 > [!NOTE]  
 >  To see more information about a subpage, such as a Factbox or a Line page, you must use the shortcut for About This Page, CTRL+ALT+F1.  
   
  To see more information about a report, use the About This Report feature to view the dataset on which the report is based. For example, if you view the report preview of the Inventory Cost and Price List report, then the first time that you choose the Help button and then choose **About This Report**, you activate the About This Report feature. After the feature is activated, if you view the report preview, choose the Help button, and then choose **About This Report**, then the **About this Report: Inventory Cost and Price List** page opens. The following illustration shows the Inventory Cost and Price List report and the About This Report page.  
   
- ![About This Report page that shows the dataset](media/NAV_Zoom_AboutThisReport.png "NAV\_Zoom\_AboutThisReport")  
+ ![About This Report page that shows the dataset.](media/NAV_Zoom_AboutThisReport.png "NAV\_Zoom\_AboutThisReport")  
   
 > [!NOTE]  
 >  The About This Report feature remains active during the client session. When the feature is active, the size of the data that is sent to the client when you run a report is about twice the size of the data when the feature is not active. To deactivate the feature, restart the client.  

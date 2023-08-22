@@ -2,12 +2,11 @@
 title: "Publishing Events"
 description: This article describes how to create an event publisher method to publish business and integration events.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
@@ -43,7 +42,7 @@ The following procedure provides an outline of the tasks that are involved in cr
 
      Give the method a name that has the format *On\[Event\]*, where *\[Event\]* is text that indicates what occurred, such as `OnAddressLineChanged`.  
 
-3.  Decorate the method with either the [Integration attribute](methods/devenv-integration-attribute.md) or [Business attribute](methods/devenv-business-attribute.md) as follows: 
+3.  Decorate the method with either the [Integration attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-integrationevent-attribute) or [Business attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-businessevent-attribute) as follows: 
 
     ```AL
     [IntegrationEvent(IncludeSender : Boolean, GlobalVarAccess : Boolean)] 
@@ -63,7 +62,7 @@ The following procedure provides an outline of the tasks that are involved in cr
 
      You can include as many parameters of any type as necessary.  
 
-     Make sure to expose enough information. Parameters to enable subscriber methods to add value to the application. However, don't expose unnecessary parameters that may constrain you from changing or extending methodically in the future.  
+     Make sure to expose enough information. Parameters enable subscriber methods to add value to the application. However, don't expose unnecessary parameters that may constrain you from changing or extending methodically in the future.  
 
  You can now add code to the application that raises the event by calling the event publisher method. You can also create subscriber methods that handle the event when it's raised. 
 
@@ -87,4 +86,4 @@ The next step is to raise this event in the application. To see an example for h
 ## See Also  
 [Raising Events](devenv-raising-events.md)   
 [Subscribing to Events](devenv-subscribing-to-events.md)   
-[Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)   
+[Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)

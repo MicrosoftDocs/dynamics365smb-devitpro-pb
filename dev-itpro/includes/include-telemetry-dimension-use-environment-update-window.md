@@ -1,0 +1,1 @@
+A boolean value (true or false) that specifies whether to use the update window that's defined in the Business Central admin center.

@@ -9,12 +9,11 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6fb765df-55e3-45eb-a4a3-cb3fb5bb8abc
 caps.latest.revision: 32
-manager: edupont
 ---
 # Walkthrough: Creating a Cue Based on a FlowField
 This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rtc_md.md)]. A Cue provides a way to graphically show the number of entities in a table and view the entities in a filtered list. For example, the Cue can show the total number of open invoices, sales orders, or credit memos. As shown in the following illustration, a Cue is an icon that depicts a stack of papers on the page, where the height of the stack indicates the approximate number of entities in an underlying table. A number value on each Cue gives the precise number of entities. The Cue provides a shortcut link to a filtered list page for displaying the entities. You can add actions to a Cue to open related tasks that a user of the Role Center will typically perform.  
 
- ![Shows a Cue in the RoleTailored client](media/NAVRTCCueExample.png "NAVRTCCueExample")  
+ ![Shows a Cue in the RoleTailored client.](media/NAVRTCCueExample.png "NAVRTCCueExample")  
 
 ## About This Walkthrough  
  This walkthrough illustrates the following tasks:  
@@ -52,7 +51,7 @@ This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rt
     -   Page 43, Sales Invoice  
 
 ## Story  
- Viktor is a software developer who is working for [!INCLUDE[demoname](includes/demoname_md.md)] He has been asked to add a Cue to the Role Centers of sales order processors. The Cue will show how many open sales invoices they have. To accomplish this, Viktor will create a Cue that extracts the number of open sales invoices from the **Sales Header** table. He will place the Cue in a part on the **Order Processor Role Center** page. He will also add an action that allows users to create a new sales invoice from a link on the Cue. The Cue will look similar to the illustration earlier in this document.  
+ Viktor is a software developer who is working for [!INCLUDE[demoname](includes/demoname_md.md)] Viktor has been asked to add a Cue to the Role Centers of sales order processors. The Cue will show how many open sales invoices they have. To accomplish this, Viktor will create a Cue that extracts the number of open sales invoices from the **Sales Header** table. The Cue will be placed in a part on the **Order Processor Role Center** page. Viktor will also add an action that allows users to create a new sales invoice from a link on the Cue. The Cue will look similar to the illustration earlier in this document.  
 
 ##  <a name="CreateTableFieldForCue"></a> Creating the Table Field for Cue Data  
  To calculate the number of open sales invoices, Viktor creates a table that includes a **FlowField** that extracts data from the **Sales Header** table and calculates how many opens sales invoices exist. Because a table must have at least one data field, and a **FlowField** is based on a calculation and not considered an actual data field, Viktor adds a dummy primary key field that does not yield any data. For more information about **FlowFields**, see [FlowFields](FlowFields.md).  
@@ -105,7 +104,7 @@ This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rt
 
      The **Table Filters** window will look similar to the following illustration.  
 
-     ![Shows the table filter setup for a Cue](media/NAVRTCCueTableFilterExample.PNG "NAVRTCCueTableFilterExample")  
+     ![Shows the table filter setup for a Cue.](media/NAVRTCCueTableFilterExample.PNG "NAVRTCCueTableFilterExample")  
 
     > [!IMPORTANT]  
     >  You cannot define a table filter that filters explicitly on a date because you will get an error when you try to open the Cue group in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. For example, you cannot define a field that has the **Type** set to **CONST** or **FILTER** and the **Value** set to 21/03/2011. If you do, when you try to open the Cue group from the page in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], you get an error that states that ‘2011-03-21’ is not a valid date.  
@@ -128,7 +127,7 @@ This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rt
 5.  Choose the **OK** button.  
 
 ##  <a name="CueCardPage"></a> Creating a Cue on a Card Page for the Role Center  
- To display the Sales Invoices - Open Cue on the Role Center, Viktor creates a CardPart page type that has a **CueGroup** control that includes the **Sales Invoices – Open** field of the **Sales Cue** table. Viktor also needs to initialize the data field on the Cue with a record, so he adds code to the OnOpenPage trigger of the CardPart page type.  
+ To display the Sales Invoices - Open Cue on the Role Center, Viktor creates a CardPart page type that has a **CueGroup** control that includes the **Sales Invoices – Open** field of the **Sales Cue** table. To initialize the data field on the Cue with a record, Viktor adds code to the OnOpenPage trigger of the CardPart page type.  
 
 > [!IMPORTANT]  
 >  The **CaptionClass** property on a field in a **CueGroup** is not supported.  
@@ -176,7 +175,7 @@ This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rt
 
      Page Designer should look similar to the following illustration.  
 
-     ![Shows Page Designer setup for a Cue](media/NAVRTCCuePageDesignerExample.png "NAVRTCCuePageDesignerExample")  
+     ![Shows Page Designer setup for a Cue.](media/NAVRTCCuePageDesignerExample.png "NAVRTCCuePageDesignerExample")  
 
 5.  To create a link from the Cue to the **Sales Invoice List** page for displaying the open invoices, select the **Sales Invoices - Open** field row, and then on the **View** menu, choose **Properties**.  
 
@@ -218,7 +217,7 @@ This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rt
 7.  The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] opens and displays the new page.  
 
 ##  <a name="AddingActionToCue"></a> Adding an Action to the Cue  
- Viktor wants to add a link on the Cue that allows the user to create a new sales invoice. To accomplish this, he creates an action on the **CueGroup** control that targets the **Sales Invoice** page.  
+ Viktor wants to add a link on the Cue that allows the user to create a new sales invoice. To accomplish this, Viktor creates an action on the **CueGroup** control that targets the **Sales Invoice** page.  
 
 #### To add actions to the Sales Order Cue page  
 
@@ -243,7 +242,7 @@ This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rt
 7.  Save the page.  
 
 ##  <a name="AddingCuePartToRoleCenter"></a> Adding the Cue CardPart Page on the Role Center Page  
- To display the Sales Invoice Cue on the Role Center, Viktor must add the **Sales Invoice Cue** CardPart page to the **Role Center** page for sales order processors. To do this, he adds a part to the **Order Processor Role Center** page that targets the new **Sales Invoice Cue** page.  
+ To display the Sales Invoice Cue on the Role Center, Viktor must add the **Sales Invoice Cue** CardPart page to the **Role Center** page for sales order processors. To do this, Viktor adds a part to the **Order Processor Role Center** page that targets the new **Sales Invoice Cue** page.  
 
 #### To add the Sales Cue part page to the Role Center page  
 

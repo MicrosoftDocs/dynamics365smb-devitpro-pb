@@ -1,25 +1,31 @@
 ---
 title: "AutoUpdate Property"
+description: "Sets whether a record in the database with the same primary key as the record in the imported XmlPort is updated with values from the imported record."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
-ms.assetid: 49de51bb-b82f-42be-964e-aadd40e3b331
-caps.latest.revision: 11
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AutoUpdate Property
-Sets whether a record in the database with the same primary key as the record in the imported XMLport is updated with values from the imported record.  
+> **Version**: _Available or changed with runtime version 1.0._
 
-## Applies to  
-Table elements in XMLports.  
+Sets whether a record in the database with the same primary key as the record in the imported XmlPort is updated with values from the imported record.
+
+## Applies to
+-   Xml Port Table Element
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Value  
- **True** if the records are updated; otherwise, **false**. The default value is **true**.  
+ **True** if the records are updated; otherwise, **false**. The default value is **false**.  
 
 ## Syntax
 ```AL

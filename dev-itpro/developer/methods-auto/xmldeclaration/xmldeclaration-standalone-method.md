@@ -1,46 +1,48 @@
 ---
-title: "XmlDeclaration.Standalone Method"
+title: "XmlDeclaration.Standalone([Text]) Method"
+description: "Gets or sets the standalone property for this document."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlDeclaration.Standalone Method
+# XmlDeclaration.Standalone([Text]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets or sets the standalone property for this document.
 
 
 ## Syntax
+```AL
+[Value := ]  XmlDeclaration.Standalone([NewValue: Text])
 ```
-[Value := ]  XmlDeclaration.Standalone([NewValue: String])
-```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
 *XmlDeclaration*  
 &emsp;Type: [XmlDeclaration](xmldeclaration-data-type.md)  
 An instance of the [XmlDeclaration](xmldeclaration-data-type.md) data type.  
 
-*NewValue*  
-&emsp;Type: [String](../string/string-data-type.md)  
+*[Optional] NewValue*  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A string containing the standalone property for this document.  
 
 
 ## Return Value
-*Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The standalone property for this document.  
+*[Optional] Value*  
+&emsp;Type: [Text](../text/text-data-type.md)  
+The standalone property for this document.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlDeclaration Data Type](xmldeclaration-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -1,12 +1,11 @@
 ---
 title: "Asynchronous Considerations for Control Add-ins"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ms.assetid: 6c90376e-b86e-406d-880d-3cc905bf6527
 author: SusanneWindfeldPedersen
 ---
@@ -24,7 +23,9 @@ The methods from the "See Also" section are not auto-generated as they come from
 -->
   
 ## See Also  
+
 [InvokeExtensibilityMethod Method](methods/devenv-invokeextensibility-method.md)   
 [GetImageResource Method](methods/devenv-getimageresource-method.md)
 [GetEnvironment Method](methods/devenv-getenvironment-method.md)  
+[Control Add-in Best Practices](devenv-control-addin-bestpractices.md)  
 [OpenWindow Method](methods/devenv-openwindow-method.md)

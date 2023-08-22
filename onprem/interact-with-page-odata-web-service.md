@@ -95,7 +95,7 @@ After publishing a web service, verify that the port that web service applicatio
 
     {"@odata.context":"https://localhost:7048/BC150/ODataV4/$metadata","value":[{"name":"CustomerPriceAndLineDisc","kind":"EntitySet","url":"CustomerPriceAndLineDisc"}, 
   <!--
-      ![Basic AtomPub document for a page](media/BasAtomPub.JPG "BasAtomPub")  -->
+      ![Basic AtomPub document for a page.](media/BasAtomPub.JPG "BasAtomPub")  -->
   
 ##  <a name="BKMK_CreateConsoleApp"></a> Creating the console application for the web service
  

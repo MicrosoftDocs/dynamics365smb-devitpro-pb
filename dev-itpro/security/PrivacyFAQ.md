@@ -3,10 +3,9 @@ title: "Privacy FAQ"
 description: "Find useful links and other answers to frequently asked questions about Dynamics 365 Business Central."
 author: teshela
 ms.custom: na
-ms.date: 10/01/2020
-ms.reviewer: edupont
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.date: 04/01/2021
+ms.reviewer: jswymer
+ms.topic: conceptual
 ms.author: eumuntha
 ---
 
@@ -15,8 +14,8 @@ ms.author: eumuntha
 Here you find links that can help you find answers to questions concerning privacy when you use Business Central.
 
 <!--Please check this link for matters relating to customer content(https://microsoft.sharepoint.com/teams/CAI-Privacy/SitePages/C+AI-Data-Sharing-Process.aspx)-->
-- Privacy and personal data for Microsoft Dynamics 365: [Privacy and personal data for Microsoft Dynamics 365](/dynamics365/get-started/gdpr/)
-- International availablity for Business Central: [Country/regional availability and supported languages](https://aka.ms/bccountries)  
+- Privacy and personal data for Microsoft Dynamics 365: [Privacy and personal data for Microsoft Dynamics 365](/dynamics365/get-started/privacy/)
+- International availablity for Business Central: [Country/regional availability and supported languages](../compliance/apptest-countries-and-translations.md)  
 - Customer definitions on Microsoft Trust Center: [How Microsoft categorizes data for online services](https://www.microsoft.com/trust-center/privacy/customer-data-definitions)
 - Site for legal terms for all Microsoft products: [Product Terms](https://www.microsoft.com/licensing/terms/)
 - Azure Geo to Azure regional mapping: [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/)
@@ -25,4 +24,4 @@ Here you find links that can help you find answers to questions concerning priva
 
 ## See also
 
-[Security and Protection in Business Central](security-and-protection.md)  
+[Security and Protection in Business Central](security-and-protection.md)

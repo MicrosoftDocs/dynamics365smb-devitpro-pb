@@ -33,7 +33,7 @@ By default, [!INCLUDE[navnow_md](includes/navnow_md.md)] uses a *separate schema
     In practical terms, a tenant is the database. This means that in a multitenant deployment, you have a separate database for each tenant. 
 -  Each company has a separate set of tables for storing business entity data, such as the Item, Customer, and Invoice tables (see figure 1). 
 
-![Separate schema](media/separateschema2companies.png "Separate schema")
+![Separate schema.](media/separateschema2companies.png "Separate schema")
 
 **Figure 1: Company business data tables with separate schema**
 
@@ -52,11 +52,11 @@ A database that uses the shared schema data model has the following characterist
 
 -   It can support multiple application versions, which means that tenants in the database can be mounted to different [!INCLUDE[nav_server_md](includes/nav_server_md.md)] instances that use different application versions.   
 
-![Shared schema tenant data](media/SharedSchemaTenantTables.png "Shared schema tenant data")
+![Shared schema tenant data.](media/SharedSchemaTenantTables.png "Shared schema tenant data")
 
 **Figure 2: Tenant and company information with shared schema**
 
- ![Shared schema item table](media/SharedSchemaEntityTables.png "Shared schema item table")
+ ![Shared schema item table.](media/SharedSchemaEntityTables.png "Shared schema item table")
 
 **Figure 3: Company business data tables with shared schema**
 

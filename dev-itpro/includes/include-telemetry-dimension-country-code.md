@@ -1,0 +1,1 @@
+Specifies the localization for the environment, such as **US** or **DK**.

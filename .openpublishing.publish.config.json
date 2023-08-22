@@ -19,12 +19,14 @@
   ],
   "notification_subscribers": [
     "solsen@microsoft.com",
-    "jswymer@microsoft.com",
-    "edupont@microsoft.com"
+    "jswymer@microsoft.com"
+  ],
+  "sync_notification_subscribers": [
+    "buckley.guderian@microsoft.com"
   ],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb",
-  "git_repository_branch_open_to_public_contributors": "live",
+  "git_repository_branch_open_to_public_contributors": "main",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
   "contribution_branch_mappings": {},
@@ -32,13 +34,19 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "shared-content",
+      "url": "https://github.com/MicrosoftDocs/powerapps-docs-pr",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],

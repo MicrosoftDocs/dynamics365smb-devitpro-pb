@@ -1,12 +1,11 @@
 ---
 title: "How to: Use Logman to Collect Event Trace Data"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: jswymer
 ---
 # How to: Use LogMan to Collect Event Trace Data

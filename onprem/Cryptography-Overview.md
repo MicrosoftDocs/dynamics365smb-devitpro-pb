@@ -9,12 +9,11 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 7e0817eb-59cd-411c-ab81-bf3d8e17844d
 caps.latest.revision: 4
-manager: edupont
 ---
 # Cryptography Overview
 The functions that support cryptography in [!INCLUDE[navnow](includes/navnow_md.md)] provide services that enable developers to add security for encrypting and decrypting data and key management. Each [!INCLUDE[navnow](includes/navnow_md.md)] tenant supports a single encryption key which is used for encrypting and decrypting data stored in the database. Additional functions are provided to assist building robust solutions when working with encryption and for managing the encryption keys.  
 
- ![Flow between plain text and encrypted text](media/NAV_Encryption.jpg "NAV\_Encryption")  
+ ![Flow between plain text and encrypted text.](media/NAV_Encryption.jpg "NAV\_Encryption")  
 
 ## Encryption Keys  
  To encrypt and decrypt text, we use an encryption key. [!INCLUDE[navnow](includes/navnow_md.md)] stores the key in a secure location and accesses it at runtime when needed. Additional functionality is provided to export and import keys, which is important when moving solutions from one location to another. 

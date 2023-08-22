@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: fbb49b5d-2d48-4030-a066-fef631355152
 caps.latest.revision: 17
-manager: edupont
 ---
 # Understanding Query Totals and Grouping in Dynamics NAV
 In a query, you use a totals method to perform a calculation on the fields of a column and return the calculated value in the dataset. For example, you can sum all the fields in a column or find the average value. The following table shows the available totals methods.  
@@ -31,7 +30,7 @@ In a query, you use a totals method to perform a calculation on the fields of a 
   
  The following illustration shows how to use Query Designer to create a query that links the Customer table and the Sales Line table and retrieves the total number of items for each customer. The query is grouped by the **No.** and **Name** columns.  
   
- ![Query with Sum column](media/Query_WalkthroughTotals.png "Query\_WalkthroughTotals")  
+ ![Query with Sum column.](media/Query_WalkthroughTotals.png "Query\_WalkthroughTotals")  
   
  The totals methods and grouping correspond to using aggregate functions and the GROUP BY clause, respectively, in SQL SELECT statements. For more information, see [Creating Queries with Totals in SQL](Understanding-Query-Totals-and-Grouping.md#SQL).  
   
@@ -40,7 +39,7 @@ In a query, you use a totals method to perform a calculation on the fields of a 
 ## Sample Query  
  The sample query retrieves the quantity of items and customer for each open sales order from the [!INCLUDE[demolong](includes/demolong_md.md)]. The query links table 18 Customer with table 37 Sales Line. The following illustration shows the query setup in Query Designer.  
   
- ![Query Designer for Customer Sales query](media/NAV_Query_Designer_CustomerSales_Clip.png "NAV\_Query\_Designer\_CustomerSales\_Clip")  
+ ![Query Designer for Customer Sales query.](media/NAV_Query_Designer_CustomerSales_Clip.png "NAV\_Query\_Designer\_CustomerSales\_Clip")  
   
  The following table represents a simplified version of the resulting dataset for the sample query.  
   
@@ -58,7 +57,7 @@ In a query, you use a totals method to perform a calculation on the fields of a 
 ##  <a name="Sum"></a> Sum  
  The Sum method adds the values of all fields for the specified column within a group. To set up a Sum method on the **Quantity** column of the sample query, set the MethodType property to **Totals** and the Method property to **Sum**. The name of the **Quantity** column automatically changes to **Sum\_Quantity** and the query is automatically grouped by the **No.** and **Name** columns. The following illustration shows the query in Query Designer.  
   
- ![Query with Sum column](media/Query_WalkthroughTotals.png "Query\_WalkthroughTotals")  
+ ![Query with Sum column.](media/Query_WalkthroughTotals.png "Query\_WalkthroughTotals")  
   
  The following table illustrates the resulting dataset for the query.  
   
@@ -115,7 +114,7 @@ In a query, you use a totals method to perform a calculation on the fields of a 
   
      Query Designer will look similar to the following illustration.  
   
-     ![Query Designer for counting Customer Sales](media/NAV_Query_CustomerSales_Count_Clip.png "NAV\_Query\_CustomerSales\_Count\_Clip")  
+     ![Query Designer for counting Customer Sales.](media/NAV_Query_CustomerSales_Count_Clip.png "NAV\_Query\_CustomerSales\_Count\_Clip")  
   
  The following table illustrates the resulting dataset for the query.  
   

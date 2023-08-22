@@ -9,12 +9,11 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 383e5940-ab42-446a-a0d4-00c7726cd6be
 caps.latest.revision: 10
-manager: edupont
 ---
 # Walkthrough: Creating a Cue Based on a Normal Field and a Query
 This walkthrough demonstrates how to create a Cue that is based on a normal field that derives data from a [!INCLUDE[navnow](includes/navnow_md.md)] query object. The following figure illustrates the Sales This Month Cue that is added by this walkthrough.  
 
- ![Example of a Cue showing sales this month](media/NAV_Cues_SalesThisMonth_Example.png "NAV\_Cues\_SalesThisMonth\_Example")  
+ ![Example of a Cue showing sales this month.](media/NAV_Cues_SalesThisMonth_Example.png "NAV\_Cues\_SalesThisMonth\_Example")  
 
 > [!NOTE]  
 >  This walkthrough is a continuation of [Walkthrough: Creating a Cue Based on a FlowField](Walkthrough--Creating-a-Cue-Based-on-a-FlowField.md).  
@@ -53,7 +52,7 @@ This walkthrough demonstrates how to create a Cue that is based on a normal fiel
     -   Page 25, Customer Ledger Entries  
 
 ## Story  
- Viktor is a software developer who is working for [!INCLUDE[demoname](includes/demoname_md.md)] He has been asked to add a Cue to the Role Centers of sales order processors that shows the total sales for the month. To accomplish this, Viktor will create a Cue that is based on a query object that extracts the total sales for the month from table **21 Cust. Ledger Entry**. The company already has a table \(**50001 Sales Invoice Cue**\) and page \(**50001 Sales Invoice Cue**\) that are used to display open sales invoices on the **Order Processor** Role Center. Viktor will add the new Cue to these objects.  
+ Viktor, a software developer working for [!INCLUDE[demoname](includes/demoname_md.md)] has been asked to add a Cue to the Role Centers of sales order processors that shows the total sales for the month. To accomplish this, Viktor will create a Cue that is based on a query object that extracts the total sales for the month from table **21 Cust. Ledger Entry**. The company already has a table \(**50001 Sales Invoice Cue**\) and page \(**50001 Sales Invoice Cue**\) that are used to display open sales invoices on the **Order Processor** Role Center. Viktor will add the new Cue to these objects.  
 
 ## Creating a Query for Calculating the Cue Data  
  First, Viktor creates a query object to calculate the number of open sales invoices from table 21 **Cust. Ledger Entry**.  
@@ -84,7 +83,7 @@ This walkthrough demonstrates how to create a Cue that is based on a normal fiel
          Select the **Compiled** check box, and then choose the **OK** button.  
 
 ##  <a name="CreateTableFieldForCue"></a> Adding the Table Field for the Cue Data  
- Viktor will add a normal field to the table **50001 Sales Invoice Cue** for holding the Cue data. He will add a global function that returns the total amount of sales invoices for the current month from the query object that he created in the previous procedure.  
+ Viktor will add a normal field to the table **50001 Sales Invoice Cue** for holding the Cue data. Viktor will then add a global function that returns the total amount of sales invoices for the current month from the query object created in the previous procedure.  
 
 #### To add a field for the Cue data  
 
@@ -115,7 +114,7 @@ This walkthrough demonstrates how to create a Cue that is based on a normal fiel
 
 3.  In the **C/AL Globals** window, select the new function, and then choose **Locals**.  
 
-     The C/AL Locals window appears. From her you will add a return value and variables.  
+     The C/AL Locals window appears. From here you will add a return value and variables.  
 
 4.  On the **Return Value** tab, set **Name** field to **Amount** and the **Return Type** field to **Decimal**.  
 
@@ -167,7 +166,7 @@ This walkthrough demonstrates how to create a Cue that is based on a normal fiel
 
          Page Designer should look similar to the following illustration.  
 
-         ![Page Designer showing cues](media/NAV_PageDesigner_SalesThisMonthCue_Clip.png "NAV\_PageDesigner\_SalesThisMonthCue\_Clip")  
+         ![Page Designer showing cues.](media/NAV_PageDesigner_SalesThisMonthCue_Clip.png "NAV\_PageDesigner\_SalesThisMonthCue\_Clip")  
 
 3.  Open the C/AL code for the page, and then add the following code to the [OnAfterGetRecord Trigger](OnAfterGetRecord-Trigger.md) to assign the **Sales This month** field to the *CalcSalesThisMonthAmount* function of table **50001 Sales Invoice Cue**:  
 
@@ -188,7 +187,7 @@ This walkthrough demonstrates how to create a Cue that is based on a normal fiel
  The Cue is now available on the page. To view the page, in Object Designer, select the page 50001 Sales Invoice Cue, and the choose **Run**.  
 
 ### Formatting the Cue Data  
- Viktor wants to display the amount in the Cue so that it is preceded with "kr", which indicates Danish Krone is the currency. Additionally, he does not want to display any decimal places. To achieve this, he sets the [AutoFormatType Property](AutoFormatType-Property.md) and [AutoFormatExpr Property](AutoFormatExpr-Property.md) of the Cue field on the page.  
+ Viktor wants to display the amount in the Cue so that it is preceded with "kr", which indicates Danish Krone is the currency. Additionally, Viktor does not want to display any decimal places. To achieve this, Viktor sets the [AutoFormatType Property](AutoFormatType-Property.md) and [AutoFormatExpr Property](AutoFormatExpr-Property.md) of the Cue field on the page.  
 
 ##### To change the data format  
 

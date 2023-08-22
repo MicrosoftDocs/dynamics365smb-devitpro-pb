@@ -1,14 +1,15 @@
 ---
-title: "Troubleshooting the Business Central Mobile App On-Premises"
+title: Troubleshooting the Business Central Mobile App On-Premises
+description: Learn how to fix issues related to the Business Central on-premises mobile app.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: troubleshooting
 author: blrobl
 ---
+
 # Troubleshooting the Business Central Mobile App On-Premises
 
 This section contains information to help you resolve problems using the [!INCLUDE[nav_web](includes/nav_web_md.md)], the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)], and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] when working on-premises.

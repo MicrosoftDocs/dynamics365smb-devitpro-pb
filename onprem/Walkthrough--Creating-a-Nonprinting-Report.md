@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 2f99ed56-44ef-40fa-951e-9990443df153
 caps.latest.revision: 18
-manager: edupont
 ---
 # Walkthrough: Creating a Nonprinting Report
 In this walkthrough, you will create a non-printing report. A non-printing report is a report that only does processing without actually outputting or printing a report. This type of processing is usually achieved by using codeunits. You use the [ProcessingOnly Property](ProcessingOnly-Property.md) of the report to make the report non-printing without much programming. This functionality also gives you access to the request page and enables the user to filter the data before you run the report. Instead of writing C/AL code to open tables and retrieve records, you only have to define a data item.  

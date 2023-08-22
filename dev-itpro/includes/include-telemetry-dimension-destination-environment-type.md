@@ -1,0 +1,1 @@
+Specifies the type of the destination environment of the operation.

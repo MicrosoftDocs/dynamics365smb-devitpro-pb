@@ -1,1 +1,1 @@
-<Token> **APPLIES TO:** C/AL only</Token>
+> **APPLIES TO:** C/AL only

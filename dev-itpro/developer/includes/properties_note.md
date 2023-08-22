@@ -1,0 +1,2 @@
+> [!NOTE]
+> This article may not include all properties for this object. To see a complete list of properties, use the table of contents from [Properties Overview](..\properties\devenv-properties.md). In Visual Studio Code, use Ctrl+Space to see the properties available for the object and its controls.

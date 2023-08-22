@@ -2,13 +2,12 @@
 title: Publishing, Upgrading, and Installing Extensions During Upgrade
 description: This article describes the tasks required for publishing, upgrading, and installing extensions during upgrade to Dynamics 365 Business Central.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 #  <a name="AddExtensions"></a>Publishing, Upgrading, and Installing Extensions During Upgrade
@@ -66,11 +65,11 @@ If you installed the **AL Development Environment**, you can find the symbol fil
         If the application database contains test objects (ID 130000-139999), then make sure to exclude these objects when generating symbols. You can do this by using the `-Filter` parameter and running the command twice:
 
         ```
-        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=1..129999"
+        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>", filter="Object ID=1..129999"
         ```
 
         ```
-        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=140000..1999999999"
+        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>", filter="Object ID=140000..1999999999"
         ```
 
         > [!NOTE]  
@@ -131,7 +130,7 @@ For more information about publishing extensions, see [Publish and Install an Ex
 
 This ensures that the extensions work on the new platform and application versions. For each extension, complete the following steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]: 
 
-1. Compile the extension to make it work with the new platform by running the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navappSynchronize) cmdlet:
+1. Compile the extension to make it work with the new platform by running the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
 
     ```
     Repair-NAVApp -ServerInstance <ServerInstanceName> -Name <Extension Name> -Version <N.N.N.N>

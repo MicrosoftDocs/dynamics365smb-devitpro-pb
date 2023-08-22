@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 945d1af3-e644-48b4-a0cf-73bbbf577152
 caps.latest.revision: 41
-manager: edupont
 ---
 # Walkthrough: Creating a Customer Card Page in Page Designer
 In this walkthrough, you learn how to create a card page to display customer details. A card page is used to display more detailed information than is available on a list page. You can link a list page to a card page so that when you select a customer in the list, you open a specific customer card page.  
@@ -37,10 +36,10 @@ In this walkthrough, you learn how to create a card page to display customer det
 -   [!INCLUDE[demolong](includes/demolong_md.md)].  
   
 ## Story  
- Simon is a partner working for CRONUS International Ltd. Kevin, the Sales Manager, has asked Simon to create a card page to store customer information. He wants to be able to view the details of each customer in a card page when he chooses a customer in the customer list.  
+ Simon is a partner working for CRONUS International Ltd. Kevin, the Sales Manager, has asked Simon to create a card page to store customer information. Kevin wants to be able to view the details of each customer in a card page when a customer is chosen in the customer list.  
   
 ## Creating a Card Page  
- To create a customer card page to run on the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], Simon knows that he must use the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] Object Designer.  
+ To create a customer card page to run on the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], Simon knows that the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] Object Designer must be used.  
   
 > [!NOTE]  
 >  In this walkthrough, to learn about the properties and controls of a card page you will create a card page from a blank page. Object Designer also includes a wizard that you can use to create a card page that sets up many properties and controls for you. For more information about the wizard, see [How to: Create a Page](How-to--Create-a-Page.md).  
@@ -68,7 +67,7 @@ In this walkthrough, you learn how to create a card page to display customer det
  You have now successfully created a card page. However, you cannot save your card page until you have added at least one control to your page.  
   
 ## Adding a Control to Display Customer Details  
- Simon wants to add a basic control to his card page to display a selection of fields from the customer table in a group that can be expanded or collapsed. He knows that all card pages use the FastTab control to display data in this way, so he decides to add a FastTab control to his blank card page.  
+ Simon wants to add a basic control to the card page to display a selection of fields from the customer table in a group that can be expanded or collapsed. Knowing that all card pages use the FastTab control to display data in this way, Simon decides to add a FastTab control to the blank card page.  
   
 #### To add a control to display customer details  
   
@@ -104,7 +103,7 @@ In this walkthrough, you learn how to create a card page to display customer det
   
      In Page Designer, your card page should now look something like the following illustration.  
   
-     ![Customer Card page in Page Designer](media/NAV_CardPageElements.png "NAV\_CardPageElements")  
+     ![Customer Card page in Page Designer.](media/NAV_CardPageElements.png "NAV\_CardPageElements")  
   
 5.  Select the next available blank row on your page, below **Phone No.**, and on the **View** menu, choose **Properties**.  
   
@@ -127,7 +126,7 @@ In this walkthrough, you learn how to create a card page to display customer det
     >  You can clear the **Compiled** check box to save your page, but your page will not run. You can compile only if there are no errors on the page.  
   
 ## Promoting Customer Data to the FastTab Header  
- Now Simon wants to highlight key customer information on his customer card page. He can do this by making the contents of some fields visible on the FastTab header, even when a FastTab is in its collapsed state.  
+ Now Simon wants to highlight key customer information on the customer card page. To do this, Simon can make the contents of some fields visible on the FastTab header, even when a FastTab is in its collapsed state.  
   
 #### To promote key customer data to the FastTab header  
   
@@ -159,7 +158,7 @@ In this walkthrough, you learn how to create a card page to display customer det
 2.  Collapse the **General** FastTab on your card page and notice that the contact field you selected is displayed.  
   
 ## Next Steps  
- Simon wants to create a customer list page for his customers and to create a link from the list page to Kevin's Customer Card page.  
+ Simon wants to create a customer list page for the customers and to create a link from the list page to Kevin's Customer Card page.  
   
 ## See Also  
  [Walkthrough: Creating a Customer List in Page Designer](Walkthrough--Creating-a-Customer-List-in-Page-Designer.md)   

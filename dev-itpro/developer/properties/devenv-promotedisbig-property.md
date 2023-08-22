@@ -1,25 +1,29 @@
 ---
 title: "PromotedIsBig Property"
+description: "Sets the action to appear before other promoted actions in the action bar, regardless of its position in the AL code of the page."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
-ms.assetid: e83bfe80-9c0e-468e-80b6-c9d184e64afe
-caps.latest.revision: 10
-author: jswymer
+ms.topic: reference
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PromotedIsBig Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Sets a value that indicates whether to display the action before other actions in the action bar, regardless of its position in the AL page definition.  
-  
-## Applies to  
-  
-- Page actions  
- 
+Sets the action to appear before other promoted actions in the action bar, regardless of its position in the AL code of the page.
+
+## Applies to
+-   Page Action
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## Syntax
 
 ```AL
@@ -32,14 +36,19 @@ PromotedIsBig = true;
 
 ## Remarks
 
+> [!NOTE]  
+> With [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](../devenv-promoted-actions.md).
+
 If there is more than one action that has the PromotedIsBig property set to **true**, then the actions will appear before other actions, in the order that they are defined in AL.
 
+For more information about promoting actions, see [Promoted Actions](../devenv-promoted-actions.md).
+
 > [!NOTE]
-> In the [!INCLUDE[prodshort](../includes/nav_windows_md.md)], this property behaves differently. Setting the property to **true** will display a bigger icon than normal in the client. It will not reposition the action.
+> In the [!INCLUDE[prod_short](../includes/nav_windows_md.md)], this property behaves differently. Setting the property to **true** will display a bigger icon than normal in the client. It will not reposition the action.
 
 ## Example
 
-In the following code snippet, the **Sales Invoice** action is defined after the **Sales Quote** action, However, because the **PromotedIsBig** property is **true**, it will appear before the **Sales Quote** action in the client.
+The following code snippet adds the **Sales Invoice** and the **Sales Quote** actions to a page, and promotes them to the category named **New**. In AL, the **Sales Invoice** action is defined after the **Sales Quote** action. But because the **PromotedIsBig** property on the **Sales Invoice** action is **true** , it will appear before the **Sales Quote** action in the user interface.
 
 ```AL
 actions
@@ -49,7 +58,7 @@ actions
             action("Sales Quote")
             {
                 Promoted = true;
-                PromotedCategory = Category5;  // PromotedActionCategories = New Document
+                PromotedCategory = New;
                 PromotedOnly = true;
                 Image = NewSalesQuote;
                 ApplicationArea = All;
@@ -57,7 +66,7 @@ actions
             action("Sales Invoice")
             {
                 Promoted = true;
-                PromotedCategory = Category5;  // PromotedActionCategories = New Document
+                PromotedCategory = New;
                 Image = SalesInvoice;
                 PromotedIsBig = true;
                 ApplicationArea = All;

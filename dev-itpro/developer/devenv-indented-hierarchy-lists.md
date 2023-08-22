@@ -2,12 +2,11 @@
 title: "Designing Indented Hierarchy Lists"
 description: This article explains how to indent rows in a repeater control to design hierarchical lists. You can nest records that users can navigate, expand, and collapse.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: jswymer
 ---
 # Designing Indented Hierarchy Lists
@@ -18,7 +17,7 @@ This article explains how to indent specific rows in a list.
 
 Using the indentation properties in AL, you can display rows in a parent-child structure.
 
-![Fixed indented list](media/static-tree.png "Fixed indented list")
+![Fixed indented list.](media/static-tree.png "Fixed indented list")
 
 A row that's indented from a row above is considered a *child* of that row. The row above is considered the *parent*. Indenting rows can help organize related records in the list and make it more readable for the user.
 
@@ -98,7 +97,7 @@ In the client, run the page and add records to the table. Be sure to set the **I
 
 In a fixed hierarchy, child rows are always shown, as illustrated in the following figure.
 
-![Fixed indented list](media/static-tree-2.png "Fixed indented list")
+![Fixed hierarchy](media/static-tree-2.png "Fixed hierarchy")
 
 In the figure, indentation is applied to the second column. Setting up the fixed indented hierarchy involves configuring two properties on the page object: IndentColumn and IndentationControls.
 
@@ -173,7 +172,7 @@ For a more detailed implementation example, see the [Chart of Accounts](https://
 
 In a collapsible hierarchy, users can collapse and expand parent rows to show and hide child records.
 
-![Fixed indented list](media/collapsible-tree.png "Fixed indented list")
+![collapsible hierarchy.](media/collapsible-tree.png "collapsible hierarchy")
 
 Setting up a collapsible hierarchy is similar to the fixed indented list, except for the properties that you set. A collapsible hierarchy involves three properties: IndentColumn, ShowsAsTree, and TreeInitialState.
 
@@ -242,14 +241,12 @@ page 50100 MyPage
 }  
 ```
 
-You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above. 
+You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above.
 
-For a more detailed implementation example, see the [Assisted Setup](https://businesscentral.dynamics.com/?page=1801) page in the base application (link requires sign-in to Business Central online). 
-
+For a more detailed implementation example, see the [Assisted Setup](https://businesscentral.dynamics.com/?page=1801) page in the base application (link requires sign-in to Business Central online).
 
 ### Collapsed or Expanded lists
-Users can change whether the page opens with rows collapsed or expanded, essentially overriding the TreeInitialState property. They change the behavior by selecting the **Toggle Expand All / Collapse All** button in the header of the first column, or using the button in the top-left corner of the repeater. It stays this way, until they delete personalization on the page.  
-
+Users can change whether the page opens with rows collapsed or expanded, essentially overriding the TreeInitialState property. They change the behavior by selecting the **Toggle Expand All / Collapse All** button in the header of the first column, or using the button in the top-left corner of the repeater. It stays this way, until they delete personalization on the page.
 
 ## Design and behavior considerations
 
@@ -260,6 +257,8 @@ When using an indented hierarchy, consider the following behavior:
 - Indentation is used to visually communicate structure, without modifying the table of records itself. There's no tightly defined *parent-child* relationship between records, so you must implement additional logic if records need to relate together. For example, if a user deletes a parent record, Business Central won't delete all of its child records.  
 - Indenting records in a list doesn't automatically apply any additional styling to emphasize parent records and distinguish them from child records. You can implement styling using style expressions. For example, you could format all fields on parent records to display bold values. Learn more about [StyleExpr Property](properties/devenv-styleexpr-property.md).  
 
+> [!NOTE]
+> Having more than 1000 nested rows under the root level row can cause performance issues in the web client.
 
 ## See Also
 

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: cb9728db-e129-4df6-a175-4339f25b09a9
 caps.latest.revision: 23
-manager: edupont
 ---
 # COM Overview
 This topic describes how you can use Component Object Model \(COM\) technologies in the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] to extend the functionality of [!INCLUDE[navnow](includes/navnow_md.md)]. In the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)], you can use two types of COM technologies: *Automation* and *custom controls*.  

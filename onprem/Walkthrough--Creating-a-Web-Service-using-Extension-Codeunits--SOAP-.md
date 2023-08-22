@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ---
 # Walkthrough: Creating a Web Service using Extension Codeunits (SOAP)
 This walkthrough shows how to publish and consume a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] page as a web service and how you can extend the [Basic Page Operations](Basic-Page-Operations.md).  

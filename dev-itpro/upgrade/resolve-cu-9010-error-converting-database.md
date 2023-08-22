@@ -2,16 +2,15 @@
 title: "Resolving Codeunit 9010 Compilation Error"
 description: "Explains how to resolve the compilation error that you get for Codeunit 9010 when converting a database from Dynamics NAV 2018."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: jswymer
 ---
 # Resolving Codeunit 9010 Compilation Error 
-This article explains how to resolve the compilation error that you get for codeunit **9010 Azure AD User Management** when converting a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to  [!INCLUDE[prodhort](../developer/includes/prodshort.md)].
+This article explains how to resolve the compilation error that you get for codeunit **9010 Azure AD User Management** when converting a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to  [!INCLUDE[prodhort](../developer/includes/prod_short.md)].
 
 ## Resolution
 <!--
@@ -179,7 +178,7 @@ OBJECT Codeunit 9010 Azure AD User Management
       NavUserPlan@1002 : Record 9005;
       TempNavUserPlan@1004 : TEMPORARY Record 9005;
     BEGIN
-      // Have any plans been removed from this user in O365, since last time he logged-in to NAV?
+      // Have any plans been removed from this user in O365, since last time they logged-in to NAV?
       // Get all plans assigned to the user, in NAV
       NavUserPlan.SETRANGE("User Security ID",ForUserSecurityId);
       IF NavUserPlan.FINDSET THEN
@@ -224,7 +223,7 @@ OBJECT Codeunit 9010 Azure AD User Management
       NavUserPlan@1002 : Record 9005;
       PermissionManager@1005 : Codeunit 9002;
     BEGIN
-      // Have any plans been added to this user in O365, since last time he logged-in to NAV?
+      // Have any plans been added to this user in O365, since last time they logged-in to NAV?
       // For each plan assigned to the user in Office
       IF TempO365Plan.FINDSET THEN
         REPEAT
@@ -411,8 +410,8 @@ OBJECT Codeunit 9010 Azure AD User Management
 
       TempString := GraphUser.GivenName;
       IF GraphUser.Surname <> '' THEN
-      TempString := TempString + ' ';
-      TempString := TempString + GraphUser.Surname;
+      TempString += ' ';
+      TempString += GraphUser.Surname;
       TempString := COPYSTR(TempString,1,MAXSTRLEN(User."Full Name"));
       IF LOWERCASE(User."Full Name") <> LOWERCASE(TempString) THEN BEGIN
       User."Full Name" := TempString;
@@ -451,10 +450,10 @@ OBJECT Codeunit 9010 Azure AD User Management
     BEGIN
       GetGraphUserPlans(TempO365Plan,GraphUser,FALSE);
 
-      // Have any plans been removed from this user in O365, since last time he logged-in to NAV?
+      // Have any plans been removed from this user in O365, since last time they logged-in to NAV?
       RemoveUnassignedUserPlans(TempO365Plan,ForUserSecurityId);
 
-      // Have any plans been added to this user in O365, since last time he logged-in to NAV?
+      // Have any plans been added to this user in O365, since last time they logged-in to NAV?
       AddNewlyAssignedUserPlans(TempO365Plan,ForUserSecurityId);
     END;
 

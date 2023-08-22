@@ -1,14 +1,13 @@
 ---
 title: Designing Card Pages
-description: "Provides and overview of Role Center design"
+description: "Provides and overview of card page design"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ms.author: jswymer
 ---
 # Designing Card and Document Pages
@@ -43,13 +42,13 @@ As a developer or administrator, you can use Designer to customize a card and do
 A card page is defined by a page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. 
 For a simple code example of a list page, see [Simple Card Page Example](devenv-simple-card-page-example.md).
 
-A document page is defined by a page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Document`. A document page is also includes a `part()` control that embeds another page into the document page. This is typically that displays line items from the associated transaction or event.
+A document page is defined by a page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Document`. A document page also includes a `part()` control that embeds another page into the document page. This typically displays line items from the associated transaction or event.
 
 ### Structure
 
 The following figure illustrates the general layout and elements of a card page and document page.
 
-![Card and document page overview](media/card-document-page-overview.png "Card page overview")
+![Card and document page overview.](media/card-document-page-overview.png "Card page overview")
 
 The following table describes the elements of the page.
 
@@ -113,7 +112,7 @@ Only promoted actions will display on mobile devices, so make sure you promote t
 
 -    Configure the gesture for actions
 
-        Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](properties/devenv-implementation-tips-gestures-property.md).
+        Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](devenv-implementation-tips-gestures-property.md).
 
  
 ## See Also

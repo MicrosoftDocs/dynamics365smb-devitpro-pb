@@ -1,29 +1,30 @@
 ---
-title: "XmlElement.NamespaceUri Method"
+title: "XmlElement.NamespaceUri() Method"
+description: "Gets the namespace URI of this element."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlElement.NamespaceUri Method
+# XmlElement.NamespaceUri() Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets the namespace URI of this element.
 
 
 ## Syntax
-```
+```AL
 Value :=   XmlElement.NamespaceUri()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
-
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
 *XmlElement*  
 &emsp;Type: [XmlElement](xmlelement-data-type.md)  
@@ -31,12 +32,12 @@ An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 ## Return Value
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The namespace URI of this element.  
+&emsp;Type: [Text](../text/text-data-type.md)  
+The namespace URI of this element.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlElement Data Type](xmlelement-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

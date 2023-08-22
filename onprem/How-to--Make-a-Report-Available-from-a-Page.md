@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 1b723ebd-fb79-4ea3-856f-059618a64e52
 caps.latest.revision: 27
-manager: edupont
 ---
 # How to: Make a Report Available from a Page
 After you have created and designed a report, you can add the report to the interface of the page so that users can view the report.  

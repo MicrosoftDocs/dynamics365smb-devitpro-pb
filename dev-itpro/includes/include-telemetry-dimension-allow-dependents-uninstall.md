@@ -1,0 +1,1 @@
+A boolean that specifies whether dependent extensions will be uninstalled.

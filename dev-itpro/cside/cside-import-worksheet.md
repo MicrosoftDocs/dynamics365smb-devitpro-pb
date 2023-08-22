@@ -1,12 +1,11 @@
 ---
 title: "Import Worksheet"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ---
 # Import Worksheet
 When you import objects from a binary file \(.fob\), if there are conflicts with objects that exist in the database with the same ID, then you use the Import Worksheet to resolve the conflicts. If the import file contains only objects that are new, then the objects are imported.  

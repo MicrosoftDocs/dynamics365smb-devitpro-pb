@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: b786ecd0-fc98-4c35-94a0-3f6b9395999c
 caps.latest.revision: 8
-manager: edupont
 ---
 # Type Conversion in Expressions
 This topic describes type conversions in C/AL expressions.  
@@ -33,7 +32,7 @@ Sum := CharVar + integerVar;
 
 -   The data types in the two main groups, numbers and strings, can be ranked from "most general" to "least general."  
 
-     ![Data types, grouped from most to least general](media/NAV_ADG_25_Diag_22.png "NAV\_ADG\_25\_Diag\_22")  
+     ![Data types, grouped from most to least general.](media/NAV_ADG_25_Diag_22.png "NAV\_ADG\_25\_Diag\_22")  
 
 -   The most general data types include all the possible values from the less general data types: a decimal is more general than an integer, which is more general than a char.  
 

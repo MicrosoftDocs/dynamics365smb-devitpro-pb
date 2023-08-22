@@ -1,20 +1,19 @@
 ---
 title: "Adding Help Links from Pages, Reports, and XMLports"
-description: "This topic shows how to specify the help link."
-author: edupont04
+description: "This article shows how to specify the Help link."
+author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 05/23/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
-ms.author: edupont
+ms.topic: conceptual
+ms.author: solsen
 ---
 
 # Adding Help Links from Pages, Reports, and XMLports
 
-When creating new pages, you can specify which Help file to open if the user selects the *Learn more* links in the UI of [!INCLUDE[prodshort](includes/prodshort.md)].  
+When creating new pages, you can specify which Help file to open if the user selects the *Learn more* links in the UI of [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 The context-sensitive Help link is generated based on a configuration setting in the `app.json` file and the name of the relevant Help file that you specify as part of the metadata for the page object. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 
@@ -49,13 +48,13 @@ xmlport 50100 XmlPortWithHelp
 }
 ```
 
-In all three examples, the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md) is set to point at the same Help files. This is because all three example objects support the same feature that is explained in the *sales-rewards* Help topic. In your app, you can choose to structure the Help differently.  
+In all three examples, the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md) is set to point at the same Help file. This is because all three example objects support the same feature that is explained in the *sales-rewards* Help article. In your app, you can choose to structure the Help differently.  
 
 ## See Also
 
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
 [Translating Base App Help](devenv-translate-base-app-help.md)  
-[JSON Files](devenv-json-files.md#Appjson)  
+[JSON Files](devenv-json-files.md#appjson-file)  
 [Page Object](devenv-page-object.md)  
 [Report Object](devenv-report-object.md)  
 [XMLport Object](devenv-xmlport-object.md)  

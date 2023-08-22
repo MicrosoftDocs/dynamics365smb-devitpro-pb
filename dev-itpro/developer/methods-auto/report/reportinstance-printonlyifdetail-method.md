@@ -1,44 +1,46 @@
 ---
-title: "Report.PrintOnlyIfDetail Method"
+title: "Report.PrintOnlyIfDetail([Boolean]) Method"
+description: "Gets or sets the current settings of the PrintOnlyIfDetail property."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/12/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.PrintOnlyIfDetail Method
+# Report.PrintOnlyIfDetail([Boolean]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets or sets the current settings of the PrintOnlyIfDetail property.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises.
+> From runtime version 10.1 and onward, this method is supported in Business Central online.
 
 ## Syntax
-```
+```AL
 [IsPrintOnlyIfDetail := ]  Report.PrintOnlyIfDetail([SetPrintOnlyIfDetail: Boolean])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.  
 
-*SetPrintOnlyIfDetail*  
+*[Optional] SetPrintOnlyIfDetail*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 The new setting of PrintOnlyIfDetail property.  
 
 
 ## Return Value
-*IsPrintOnlyIfDetail*  
+*[Optional] IsPrintOnlyIfDetail*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-The current settings of the PrintOnlyIfDetail property.  
+The current settings of the PrintOnlyIfDetail property.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -52,7 +54,7 @@ var
     GLEntryPage: Record "G/L Entry";
     PageGroupNo: Integer;
 begin
-    if CurrReport.PRINTONLYifDETAIL and GLEntryPage.FIND('-') then  
+    if CurrReport.PrintONLYifDETAIL and GLEntryPage.Find('-') then  
       PageGroupNo := PageGroupNo + 1;  
 end;
 ```  
@@ -62,11 +64,11 @@ end;
  The following example sets the value of the [PrintOnlyIfDetail Property](../../properties/devenv-printonlyifdetail-property.md) to true. It requires that you create a Report variable named Report111. The Subtype of the variable is report 111, Customer - Top 10 List.  
   
 ```  
-IsPrintOnlyIfDetail := Report111.PRINTONLYifDETAIL(true);  
+IsPrintOnlyIfDetail := Report111.PrintONLYifDETAIL(true);  
 ```  
   
 
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

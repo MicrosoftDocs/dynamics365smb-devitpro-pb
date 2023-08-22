@@ -1,30 +1,36 @@
 ---
 title: "Importance Property"
+description: "Sets the amount of information that is visible in a window or dialog box."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
-author: jswymer
+ms.topic: reference
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Importance Property
+> **Version**: _Available or changed with runtime version 3.2._
 
-Specifies how a field appears on the FastTab of a page when the FastTab is expanded and collapsed.
-  
+Sets the amount of information that is visible in a window or dialog box.
+
 ## Applies to
+-   Page Label
+-   Page Field
 
-- Page Fields  
+## Property Value
 
-## Property Values  
-  
-|Value|[!INCLUDE[bp_tabledescription](../includes/bp_tabledescription_md.md)]|  
-|-----------|---------------------------------------|  
-|**Standard**|Displays the field on the page by default. This is the default value.|  
-|**Promoted**|Displays the field on the page and also in the header of the FastTab when the FastTab is collapsed.<br /><br /> If there is only one FastTab on the page, then this property has no effect because the FastTab cannot be collapsed.|  
-|**Additional**|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|  
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Standard**|runtime version 1.0|Displays the field on the page by default.|
+|**Promoted**|runtime version 1.0|Displays the field on the page and also in the header of the FastTab when the FastTab is collapsed.|
+|**Additional**|runtime version 1.0|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 

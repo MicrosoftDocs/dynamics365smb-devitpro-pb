@@ -4,10 +4,9 @@ description: "How to extend pages that previously had the Date virtual table as 
 author: blrobl
 ms.custom: na
 ms.reviewer: solsen
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.suite: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ---
 
 # Extending Pages Previously Based on the Date Virtual Table
@@ -86,6 +85,8 @@ codeunit 50001 GLAccountBalanceLinesExt
 ```
 
 ## See Also
+
 [Page Extension object](devenv-page-ext-object.md)  
 [Page object](devenv-page-object.md)  
-[CalcFields Method](methods-auto/record/record-calcfields-method.md)
+[CalcFields Method](methods-auto/record/record-calcfields-method.md)  
+[Date virtual table](devenv-date-virtual-table.md)

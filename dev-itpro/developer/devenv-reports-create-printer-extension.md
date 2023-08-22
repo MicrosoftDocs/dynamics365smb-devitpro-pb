@@ -2,12 +2,11 @@
 title: "Creating a Printer Extension"
 description: Describes how to create an extension that sets up cloud printers. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: jswymer
 ---
 # Creating a Printer Extension
@@ -33,7 +32,7 @@ This section describes how to use the OnAfterSetupPrinters event to set up a pri
 
 1. Create an AL project for the printer extension.
 
-    See [Getting Started with AL](devenv-get-started.md).
+    See [Get Started with AL](devenv-get-started.md).
 
 2. Create a codeunit to use for subscribing to the OnAfterSetupPrinters event.
 

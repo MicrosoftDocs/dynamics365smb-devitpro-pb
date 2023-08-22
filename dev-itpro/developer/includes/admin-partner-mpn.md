@@ -1,9 +1,8 @@
 ---
-author: edupont04
-ms.service: dynamics365-business-central
+author: solsen
 ms.topic: include
-ms.date: 11/12/2020
-ms.author: edupont
+ms.date: 04/01/2021
+ms.author: solsen
 ---
 ### Join the Microsoft Partner Network
 

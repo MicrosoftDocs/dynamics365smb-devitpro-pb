@@ -1,24 +1,31 @@
 ---
-title: EntityName Property
-description: Sets the singular entity name with which the page is exposed in the api endpoint.
+title: "EntityName Property"
+description: "Sets the singular entity name with which the page is exposed in the API endpoint."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # EntityName Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Sets the singular entity name with which the page is exposed in the api endpoint. The following example illustrates the syntax:
+Sets the singular entity name with which the page is exposed in the API endpoint.
 
-## Applies to  
-  
-- Pages  
-- Queries  
+## Applies to
+-   Page
+-   Page Part
+-   Page System Part
+-   Page Chart Part
+-   Query
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 
@@ -29,7 +36,6 @@ EntityName = 'Customer';
 > [!NOTE]
 > The value `EntityMetadata` is reserved and using it for the **EntityName Property** will result in a compiler error.
   
-## See Also
-
-[EntitySetName Property](devenv-entitysetname-property.md)  
-[Properties](devenv-properties.md)  
+## See Also  
+[Get Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  

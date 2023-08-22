@@ -1,0 +1,1 @@
+Specifies the version of the extension/app to be installed or updated to.S

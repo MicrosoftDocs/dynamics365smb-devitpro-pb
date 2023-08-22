@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: bfd8ea82-13d1-48fb-8b94-52bf72f6d9f1
 caps.latest.revision: 18
-manager: edupont
 ---
 # Changing Department Icons in the Dynamics NAV Windows Client 
 To change an icon that is displayed with a department on the Departments page of the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], you use the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] to configure the MenuSuite object that is used by the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. Each button in the MenuSuite corresponds to a department in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and each button includes a [Bitmap Property](Bitmap-Property.md) that you use to specify its icon. To display an icon with a department in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], you enter a bitmap ID. The bitmap ID corresponds to an icon that is displayed with the department in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
@@ -29,7 +28,7 @@ To change an icon that is displayed with a department on the Departments page of
   
      The following illustration shows the bitmap ID and the corresponding icons that are displayed with the department in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
   
-     ![Images for departments in RoleTailored client](media/RTCDepartmentImageLibrary.png "RTCDepartmentImageLibrary")  
+     ![Images for departments in RoleTailored client.](media/RTCDepartmentImageLibrary.png "RTCDepartmentImageLibrary")  
   
 4.  Choose the **OK** button.  
   

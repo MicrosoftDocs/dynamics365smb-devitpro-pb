@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 8162ff34-d59f-4771-b942-702d3027cf05
 caps.latest.revision: 28
-manager: edupont
 ---
 # How to: Run Reports
 You can run reports:  

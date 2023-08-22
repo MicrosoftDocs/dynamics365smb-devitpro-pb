@@ -1,12 +1,11 @@
 ---
 title: "Defining Action Scope for Business Central Pages"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: blrobl
 ---
 

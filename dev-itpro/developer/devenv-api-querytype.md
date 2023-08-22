@@ -3,9 +3,8 @@ title: "API Query Type"
 description: "Description of the API query type used for exposing and viewing web service endpoints."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.date: 04/01/2021
+ms.topic: conceptual
 ms.author: solsen
 ---
 
@@ -74,6 +73,6 @@ query 20000 "APIV1 - Customer Sales"
 [APIGroup Property](properties/devenv-apigroup-query-property.md)  
 [APIVersion Property](properties/devenv-apiversion-query-property.md)   
 [EntityName Property](properties/devenv-entityname-property.md)  
-[EntitySetName Property](properties/devenv-entitysetname-property.md)
+[EntitySetName Property](properties/devenv-entitysetname-property.md)  
 [Query Object](devenv-query-object.md)  
 [Developing Extensions](devenv-dev-overview.md)  

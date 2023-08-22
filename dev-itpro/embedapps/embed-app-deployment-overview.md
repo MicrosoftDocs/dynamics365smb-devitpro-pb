@@ -6,15 +6,14 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: overview
 ms.author: jswymer
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 
 # Embed Apps Deployment
 
-This article provides an overview of the process for deploying an Embed App to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online service. The deployment involves the following tasks:
+This article provides an overview of the process for deploying an Embed App to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online service. The deployment involves the following tasks:
 
 |Task|Description|See...|
 |----|-----------|------|
@@ -27,3 +26,5 @@ This article provides an overview of the process for deploying an Embed App to t
 [Embed App Overview](../deployment/embed-app-overview.md)  
 [Qualification and Onboarding](../deployment/embed-app-qualifications-onboarding.md)  
 [Managing Embed Apps in Microsoft Lifecycle Services](../deployment/embed-app-lifecycle-services.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

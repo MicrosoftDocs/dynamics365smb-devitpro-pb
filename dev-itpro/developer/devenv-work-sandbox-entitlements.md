@@ -4,11 +4,10 @@ description:
 ms.author: freddyk
 ms.reviewer: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: freddydk
 ---
 
@@ -30,13 +29,13 @@ To mimic users with a specific subscription plan assigned, you can set them up w
 
 |User Name <br>The type of subscription plan <br> assigned to the given user|User Groups|
 |---------|-----------
-|EXTERNALACCOUNTANT<br><br>Dynamics 365 Business Central External Accountant|D365 EXT. ACCOUNTANT<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
-|PREMIUM<br><br>Dynamics 365 Business Central Premium<br>Dynamics 365 Business Central for IWs|D365 BUS PREMIUM<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
-|ESSENTIAL<br><br>Dynamics 365 Business Central Essential|D365 BUS FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
+|EXTERNALACCOUNTANT<br><br>Dynamics 365 Business Central External Accountant|D365 EXT. ACCOUNTANT<br>EXTEND. MGT. - ADMIN (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
+|PREMIUM<br><br>Dynamics 365 Business Central Premium<br>Dynamics 365 Business Central for IWs|D365 BUS PREMIUM<br>EXTEND. MGT. - ADMIN (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
+|ESSENTIAL<br><br>Dynamics 365 Business Central Essential|D365 BUS FULL ACCESS<br>EXTEND. MGT. - ADMIN (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
 |INTERNALADMIN<br><br>Internal Administrator (Microsoft 365 Global administrator role)|D365 INTERNAL ADMIN<br>D365 TROUBLESHOOT<br>D365 BACKUP/RESTORE<br>D365 SECURITY (non-default)|
 |TEAMMEMBER<br><br>Dynamics 365 for Team Members|D365 TEAM MEMBER<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
-|DEVICE    <br><br>Dynamics 365 Business Central Device|D365 FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>D365 BUS PREMIUM (non-default)* <br>D365 TROUBLESHOOT (non-default)<br><br>D365 SECURITY (non-default)<br><br> *) Please note: usage need to be according to terms in Licensing Guide |
-|DELEGATEDADMIN<br><br>Delegated Admin agent - Partner<br>Delegated Helpdesk agent - Partner|D365 EXTENSION MGT<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>D365 BACKUP/RESTORE<br>D365 TROUBLESHOOT<br>D365 SECURITY (non-default)|
+|DEVICE    <br><br>Dynamics 365 Business Central Device|D365 FULL ACCESS<br>EXTEND. MGT. - ADMIN (non-default)<br>D365 BUS PREMIUM (non-default)* <br>D365 TROUBLESHOOT (non-default)<br><br>D365 SECURITY (non-default)<br><br> *) Please note: usage need to be according to terms in Licensing Guide |
+|DELEGATEDADMIN<br><br>Delegated Admin agent - Partner<br>Delegated Helpdesk agent - Partner|EXTEND. MGT. - ADMIN<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>D365 BACKUP/RESTORE<br>D365 TROUBLESHOOT<br>D365 SECURITY (non-default)|
 
 > [!TIP]  
 > For more information about how to choose a user experience, see [Changing Which Features are Displayed](/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features).
@@ -70,7 +69,7 @@ specifying the container and the password that you want to use for the new users
 
 Internally, the `Setup-BCContainerTestUsers` downloads an app which exposes an API, publishes and installs the app, and then invokes the `CreateTestUsers` API with the password needed. After this, the app is uninstalled and unpublished.
 
-If you want to see code behind the app, it is available [here](https://dev.azure.com/businesscentralapps/CreateTestUsers).
+If you want to see code behind the app, it is available [here](https://github.com/businesscentralapps/createtestusers).
 
 ### Docker run
 If you are using Docker run to run your containers, you have a little more work to do.
@@ -81,17 +80,18 @@ First of all, you must override the `SetupNavUsers.ps1` by sharing a local folde
 # Invoke default behavior
 . (Join-Path $runPath $MyInvocation.MyCommand.Name)
  
-Get-NavServerUser -serverInstance NAV -tenant default |? LicenseType -eq "FullUser" | % {
+Get-NavServerUser -serverInstance $ServerInstance -tenant default |? LicenseType -eq "FullUser" | ForEach-Object {
     $UserId = $_.UserSecurityId
     Write-Host "Assign Premium plan for $($_.Username)"
-    sqlcmd -S 'localhostSQLEXPRESS' -d $DatabaseName -Q "INSERT INTO [dbo].[User Plan] ([Plan ID],[User Security ID]) VALUES ('{8e9002c0-a1d8-4465-b952-817d2948e6e2}','$userId')" | Out-Null
+    Invoke-Sqlcmd -ErrorAction Ignore -ServerInstance 'localhost\SQLEXPRESS' -Query "USE [$TenantId]
+    INSERT INTO [dbo].[User Plan`$63ca2fa4-4f03-4f2b-a480-172fef340d3f] ([Plan ID],[User Security ID]) VALUES ('{8e9002c0-a1d8-4465-b952-817d2948e6e2}','$userId')"
 }
 ```
 
 This will assign the Premium plan to the admin user in the database.
 
 > [!TIP]  
-> To set up test users, you can clone the [createtestusers](https://dev.azure.com/businesscentralapps/CreateTestUsers) repository and modify the code to create the users on the `oninstall` trigger with the password that you want.
+> To set up test users, you can clone the [createtestusers](https://github.com/businesscentralapps/createtestusers) repository and modify the code to create the users on the `oninstall` trigger with the password that you want.
 
 ## See Also
 

@@ -3,29 +3,34 @@ title: "Interfaces in AL"
 description: "Interfaces in AL are syntactical contracts that can be implemented by a non-abstract method."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 02/24/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ms.author: solsen
 ---
 
 # Interfaces in AL
 
-An interface in AL is similar to an interface in any other programming language; it is a syntactical contract that can be implemented by a non-abstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface.
+[!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
+
+An interface in AL is similar to an interface in any other programming language; it's a syntactical contract that can be implemented by a non-abstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface.
 
 This allows for writing code that reduces the dependency on implementation details, makes it easier to reuse code, and supports a polymorphic way of calling object methods, which again can be used for substituting business logic.
 
-The interface declares an interface name along with its methods, and codeunits that implement the interface methods, must use the `implements` keyword along with the interface name(s). The interface itself does not contain any code, only signatures, and cannot itself be called from code, but must be implemented by other objects.
+The interface declares an interface name along with its methods, and codeunits that implement the interface methods, must use the `implements` keyword along with the interface name(s). The interface itself doesn't contain any code, only signatures, and can't itself be called from code, but must be implemented by other objects.
  
 The AL compiler checks to ensure that implementations adhere to assigned interfaces.
 
 You can declare variables as a given interface to allow passing objects that implement the interface, and then call interface implementations on the passed object in a polymorphic manner.
 
+> [!NOTE]  
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, you can use the **Go to Implementations** option in the Visual Studio Code context menu (or press <kbd>Ctrl+F12</kbd>) on an interface to view all the implementations within scope for that interface. This is supported on interfaces, and on codeunits and enums, which implement an interface, as well as on their procedures if they map to a procedure on an interface. It's also supported on codeunit variables of type interface to jump to other implementations of that specific interface.
+
 ## Snippet support
-Typing the shortcut `tinterface` will create the basic layout for an interface object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
+Typing the shortcut `tinterface` creates the basic layout for an interface object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 
 ## Interface example
@@ -35,45 +40,52 @@ The following example defines an interface `IAddressProvider`, which has one met
 The `MyAddressPage` is a simple page with an action that captures the choice of address and calls, based on that choice, an implementation of the `IAddressProvider` interface.
 
 ```AL
-interface IAddressProvider
+interface "IAddressProvider"
 {
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
 }
 
 codeunit 50200 CompanyAddressProvider implements IAddressProvider
 {
-    procedure GetAddress(): Text;
 
+    procedure GetAddress(): Text;
+    var
+        ExampleAddressLbl: Label 'Company address \ Denmark 2800';
+        
     begin
-        exit('Company address \ Denmark 2800')
+        exit(ExampleAddressLbl);
     end;
 }
 
 codeunit 50201 PrivateAddressProvider implements IAddressProvider
 {
+
     procedure GetAddress(): Text;
+    var
+        ExampleAddressLbl: Label 'My Home address \ Denmark 2800';
 
     begin
-        exit('My Home address \ Denmark 2800')
+        exit(ExampleAddressLbl);
     end;
 }
 
-enum 50200 SendTo
+enum 50200 SendTo implements IAddressProvider
 {
     Extensible = true;
 
     value(0; Company)
     {
+        Implementation = IAddressProvider = CompanyAddressProvider;
     }
 
     value(1; Private)
     {
+        Implementation = IAddressProvider = PrivateAddressProvider;
     }
 }
 
 page 50200 MyAddressPage
 {
-
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
@@ -82,7 +94,7 @@ page 50200 MyAddressPage
     {
         area(Content)
         {
-            group(GroupName)
+            group(MyGroup)
             {
             }
         }
@@ -92,21 +104,17 @@ page 50200 MyAddressPage
     {
         area(Processing)
         {
-            action(ActionName)
+            action(GetAddress)
             {
                 ApplicationArea = All;
 
                 trigger OnAction()
-
                 var
-                    iAddressProvider: Interface IAddressProvider;
-
+                    AddressProvider: Interface IAddressProvider;
                 begin
-                    AddressproviderFactory(iAddressProvider);
-                    Message(iAddressProvider.GetAddress());
-
+                    AddressproviderFactory(AddressProvider);
+                    Message(AddressProvider.GetAddress());
                 end;
-
             }
 
             action(SendToHome)
@@ -114,9 +122,8 @@ page 50200 MyAddressPage
                 ApplicationArea = All;
 
                 trigger OnAction()
-
                 begin
-                    sendTo := sendTo::Private
+                    sendTo := sendTo::Private;
                 end;
             }
 
@@ -125,31 +132,21 @@ page 50200 MyAddressPage
                 ApplicationArea = All;
 
                 trigger OnAction()
-
                 begin
-                    sendTo := sendTo::Company
+                    sendTo := sendTo::Company;
                 end;
             }
         }
     }
 
     local procedure AddressproviderFactory(var iAddressProvider: Interface IAddressProvider)
-    var
-        CompanyImplementer: Codeunit CompanyAddressProvider;
-        PrivateImplementer: Codeunit PrivateAddressProvider;
     begin
-
-        if sendTo = sendTo::Company then
-            iAddressProvider := CompanyImplementer;
-
-        if sendTo = sendTo::Private then
-            iAddressProvider := PrivateImplementer;
-
+        iAddressProvider := sendTo;
     end;
 
     var
         sendTo: enum SendTo;
-
+}
 ```
 
 ## See Also

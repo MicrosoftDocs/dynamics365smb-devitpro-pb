@@ -1,15 +1,13 @@
 ---
 title: "Compiling Objects"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.assetid: 386dbfff-1518-4731-a2b1-424b556ed42a
 caps.latest.revision: 14
-manager: edupont
 ---
 # Compiling Objects
 Before you can run an object, you must compile the object. To compile an object, do one of the following:  

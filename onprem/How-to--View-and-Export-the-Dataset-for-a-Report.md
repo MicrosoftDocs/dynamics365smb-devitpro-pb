@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 88eb2f13-580e-4be7-8094-fead853f99c5
 caps.latest.revision: 14
-manager: edupont
 ---
 # How to: View and Export the Dataset for a Report
 You use the About This Report feature to view the dataset on which the report is based. Before viewing the dataset for the first time, you must activate the About This Report feature. To deactivate the feature, restart the client.  
@@ -23,9 +22,9 @@ You use the About This Report feature to view the dataset on which the report is
   
 2.  To activate the feature, do one of the following steps:  
   
-    -   In the request page for the report, on the **Application** menu ![Application Menu button in menu bar](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Page**.  
+    -   In the request page for the report, on the **Application** menu ![Application Menu button in menu bar.](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Page**.  
   
-    -   In the request page for the report, choose **Preview**. On the **Print Preview** page, on the **Application** menu ![Application Menu button in menu bar](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Report**. If the About This Report feature was not previously active, then the **About This Report** window will display the following message:  
+    -   In the request page for the report, choose **Preview**. On the **Print Preview** page, on the **Application** menu ![Application Menu button in menu bar.](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Report**. If the About This Report feature was not previously active, then the **About This Report** window will display the following message:  
   
          “The About This Report feature is now active. Run your report again to view the dataset.”  
   
@@ -37,7 +36,7 @@ You use the About This Report feature to view the dataset on which the report is
   
 3.  In the request page for the report, set any filters on the report data, and then choose **Preview**.  
   
-4.  On the **Print Preview** page, on the **Application** menu ![Application Menu button in menu bar](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Report**.  
+4.  On the **Print Preview** page, on the **Application** menu ![Application Menu button in menu bar.](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Report**.  
   
     > [!NOTE]  
     >  The data in the **About This Report** page will be filtered based the filters that you set in the request page.  
@@ -50,7 +49,7 @@ You use the About This Report feature to view the dataset on which the report is
   
 3.  In the request page for the report, set any filters on the report data, and then choose **Preview**.  
   
-4.  On the **Print Preview** page, on the **Application** menu ![Application Menu button in menu bar](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Report**.  
+4.  On the **Print Preview** page, on the **Application** menu ![Application Menu button in menu bar.](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Report**.  
   
     > [!NOTE]  
     >  The data in the **About This Report** page will be filtered based the filters that you set in the request page.  

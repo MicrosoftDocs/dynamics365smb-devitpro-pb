@@ -2,12 +2,11 @@
 title: "Configuring Query Hints for Optimizing SQL Server Performance"
 description: Enable query hints in a database for optimizing performance.
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: jswymer
 ---
 # Configuring Query Hints for Optimizing SQL Server Performance with Business Central
@@ -18,7 +17,7 @@ On its own, SQL Server query optimizer will try to select the best execution pla
 |--------|---------------|--|
 |FORCE ORDER|Instructs the query optimizer to preserve the join order that is indicated by the query syntax.<|No|
 |LOOP JOIN|Instructs the query optimizer to use LOOP JOIN for all join operations in the whole query.|No|
-|OPTIMIZE FOR UNKNOWN|Instructs the query optimizer to use statistical data instead of the initial values for all local variables when the query is compiled and optimized, including parameters created with forced parameterization.<br /><br />If you clear the check box (`false`), the OPTIMIZE FOR UNKNOWN hint is used in queries.|Yes|
+|OPTIMIZE FOR UNKNOWN|Instructs the query optimizer to use statistical data instead of the initial values for all local variables when the query is compiled and optimized, including parameters created with forced parameterization.<br /><br /> If you want this hint to be used in SQL queries, then set *DisableQueryHintOptimizeForUnknown* to (`false`). |No|
 
 For more information about configuring the [!INCLUDE[server](../developer/includes/server.md)] instance, see [Configuring Business Central Server](configure-server-instance.md#Database).
 
@@ -29,4 +28,4 @@ For more information about configuring the [!INCLUDE[server](../developer/includ
   
 [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  
-[Microsoft SQL Server documentation](https://go.microsoft.com/fwlink/?LinkId=253107)
+[Microsoft SQL Server documentation](/sql/sql-server/)

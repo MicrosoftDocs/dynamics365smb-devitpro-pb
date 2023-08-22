@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 899abeac-1f26-4544-8806-03128865677d
 caps.latest.revision: 10
-manager: edupont
 ---
 # How to: Export Objects
 You can export one or more application objects to one of the following formats:  

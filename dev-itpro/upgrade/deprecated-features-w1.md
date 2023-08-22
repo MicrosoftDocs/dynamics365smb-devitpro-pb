@@ -1,101 +1,121 @@
 ---
-title: "Deprecated Features in W1"
+title: Deprecated Features in the Base App
 description: describes the features that have been moved, removed, or replaced in the W1 version 
 author: bholtorf
 ms.custom: na
-ms.date: 11/11/2020
+ms.date: 12/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
-ms.assetid: d60655a7-3e9b-4577-a2e3-d12427a656c2
-caps.latest.revision: 16
+ms.topic: conceptual
 ---
 
-# Deprecated Features in W1
-This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This information will change with future releases, and might not include each deprecated feature.
+# Deprecated Features in the Base App
 
-Deprecated features won't be available in future versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which can happen for different kinds of reasons. <!--Should we talk about how long we're obligated to provide support for previous versions? --> For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed, either the feature itself or an extension of it, you should look for or develop an alternative.
+This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
-The next sections give a brief description of the deprecated features, state what happened to the feature, and explain why. The following table gives a few examples of what we mean by "moved, removed, or replaced."
+[!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
-|State  |Examples  |
-|---------|---------|
-|Moved     |The capability has been moved from local functionality to W1 because it was no longer specific to one or more country versions. The capability was combined with other related functionality to eliminate redundancy.|
-|Removed| The capability will be removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a coming release.|
-|Replaced  |Something better has become available, and will be used instead.|
+## Changes in 2023 release wave 1
 
-## Deprecated Features in 2021 release wave 2
+The following features are marked as `obsolete:pending` in 2023 release wave 1.
+
+### French, Belgian, and Dutch features for reviewing G/L accounts
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| Businesses in all countries can benefit from the ability to review general ledger entries before posting them. In a future release, we'll deprecate the country-specific feature and replace it with one that's available in all country versions. After the feature is deprecated, you can use it to access previous reviews, but not to do new reviews. We'll archive your data according to local requirements. To learn about the replacement feature, go to [Review Amounts in General Ledger Accounts](/dynamics365/business-central/finance-review-accounts).  |
+
+### User groups
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced | User groups let administrators manage permissions for groups of users who have the same or similar roles in the business. For example, you might create a user group for your sales department, and one for your purchasers. To make it a bit easier for administrators to manage permissions, we're replacing user groups and adding the ability to group users directly on permission sets. On the **Permission Sets** page, use the **Users** FactBox to assign the set to users.<br><br> To make it easier to reuse sets of users across other Dynamics 365 apps, we've also introduced optional security groups. Administrators can link [!INCLUDE [prod_short](../includes/prod_short.md)] security groups to their counterparts in Azure Active Directory or Windows Active Directory. The link let's administrators manage group memberships in Active Directory. In terms of managing permissions, security groups work in the same way as user groups. To learn more about the new security groups, go to [Control Access Using Security Groups](/dynamics365/business-central/ui-security-groups).  |
+
+## Changes in 2022 release wave 2
+
+### Permissions and Permission Set Objects
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced | In the latest enhancements to composing permissions, the following legacy objects are marked as `obsolete:pending` and replaced with new ones:<br><br>* The Log Table Permissions code unit is replaced by the Log Table Data Permissions codeunit.<br><br>* The Permissions page is replaced by the Expanded Permissions page.<br><br>* The Tenant Permissions page is replaced by the Permission Set page.<br><br>For information about other objects and methods that are being obsoleted, refer to the obsolete reasons in permission management.|
+
+### Microsoft SharePoint Connection Setup
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced | The SharePoint connection setup feature used for OneDrive integration is obsolete and will be removed in 2023 release wave 2 (version 23). In its place, version 21 offers a new guided setup to configure OneDrive integration for system and application features. Learn more about the new setup at [Managing OneDrive Integration with Business Central](/dynamics365/business-central/admin-onedrive-integration).<br><br>The deprecation means that the  **Microsoft SharePoint Connection Setup** page (9551 Document Service Config) is marked as `obsolete:pending`. However, the platform APIs (in codeunit 9510 Document Service Management) and the document service table that make the legacy functionality possible aren't being deprecated. So any partner solutions that use the APIs directly are unaffected by this change.<br><br>Existing customers who are upgrading to version 21, and eventually version 22, can continue to use the legacy SharePoint/Onedrive integration. But we highly recommend that you transition them to the newer OneDrive integration because it's the path going forward. Switching to the newer OneDrive integration setup is a one-way operation, meaning you can't revert to the legacy setup after you've made the switch.<br><br> We aspire to resume work on SharePoint integration at a later date.|
+
+## Changes in 2022 release wave 1
+
+The following feature is marked as `obsolete:pending` in 2022 release wave 1.
+
+### XBRL reporting
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Removed | Over the years, XBRL has become more than just tagging your financial statement. It's seen improvements in the level of reporting detail, schemas are more flexible in their design, and ESAF has added customization capabilities. This development has meant that the XBRL implementations in the countries we support are diverse, and often complex. For example, taxonomies with hundreds of schema and linkbase files have become the norm. This complexity has made XBRL reporting a task that is better managed by either dedicated software or by service providers. <br><br> We recommend that you use these service providers. Alternatively, if you have the resources in-house, acquire a dedicated XBRL reporting tool. The XBRL org provides a list of tools and services. For more information, see [Tools and Services](https://www.xbrl.org/the-standard/how/tools-and-services/).<br><br> Currently, we expect to fully remove support for XBRL in 2023 release wave 1.|
+
+### Intercompany Setup page
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced | We have consolidated settings for setting up intercompany capabilities on a single page, and have added a new feature for automatically accepting intercompany transactions in general journals. The current **Intercompany Setup** page (page 621) is replaced with a new **Intercompany Setup** page (page 653). |
+
+### Bank Reconciliation Worksheet and Deposits in North American versions (US, CA, MX)
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced | We're standardizing the features for reconciling bank accounts and making cash deposits, so that more country versions can benefit from them. For more information, see [Standardizing the bank reconciliation process in North American versions](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/standardizing-bank-reconciliation-process-north-american-versions). The current features will still allow you to view posted bank reconciliations done through the Bank Rec. Worksheet page, and posted deposits done through the Deposits features, but you can't use these features to create new entries. In April 2023, you must use the Bank Reconciliation page for bank reconciliations. The Bank Rec. Worksheet page won't be available.|
+
+## Changes in 2021 release wave 2
 
 ### Standard APIs, Beta version
 
-The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 2.
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
 
-
-|Moved, Removed, or Replaced? |	Why?|
+|Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Removed | Beta version of the standard APIs will be removed by 2021 release wave 2. At this point, Beta APIs will not be available in new releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. There are many improvements to v1.0 and v2.0 of the standard APIs. Improvements include more APIs, better performance and improved OData capabilities. It's recommended that integrations move to v2.0 of the standard APIs.|
+|Removed | Beta version of the standard APIs is removed in 2021 release wave 2. At this point, Beta APIs won't be available in new releases of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. There are many improvements to v1.0 and v2.0 of the standard APIs. Improvements include more APIs, better performance and improved OData capabilities. It's recommended that integrations move to v2.0 of the standard APIs.|
 
-### Automation APIs, Beta version
+### Client secret authentication in integrations between Microsoft-hosted Business Central online and Microsoft Dataverse
 
-The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 2.
-
-
-|Moved, Removed, or Replaced?|	Why?|
-|----------------------------|------|
-|Removed | Beta version of the Automation APIs will be removed by 2021 release wave 2. At this point, Automation Beta APIs will not be available in new releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. It's recommended that integrations move to v2.0 of the Automation APIs.|
-
-
-## Deprecated Features in 2021 release wave 1
-
-### Expose UI pages as SOAP endpoints (Warning)
-In [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1, a warning will be shown if you expose UI pages as SOAP endpoints. The capability of exposing UI pages as SOAP endpoints will be removed in a later release.
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Replaced | SOAP has been superseded by OData V4. SOAP endpoints will be deprecated as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that integrations are migrated to OData V4 as soon as possible.|
+|Removed | The ability to use client secret Service-to-Service authentication to connect [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Dataverse will be removed for online tenants hosted by Microsoft in March 2022. To further strengthen security, we introduced the ability to use certificate-based authentication in client secret Service-to-Service authentication 2021 release wave 1 (version 18 and later). Existing users can easily switch to certificate-based authentication. For more information, see [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/upgrade-certificate-based-service-to-service-authentication-dataverse-dynamics-365-integration). On-premises customers, and online tenants that are hosted by ISVs, can continue using client secret authentication for their connections to Dataverse.|
 
-### OData V3 
-The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1.
+### Legacy Outlook add-in for synchronizing data
 
-|Moved, Removed, or Replaced? |Why?|
-|---------|---------|
-|Removed | OData V3 has been superseded by OData v4. OData V3 will be deprecated as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1. It's recommended that integrations are migrated to OData v4 as soon as possible.  |
-
-### Basic Auth / Web Service Access Keys for SaaS 
-The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1.
+The legacy Outlook add-in for synchronizing data, such as to-dos, contacts, and tasks, between Business Central and Outlook is **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed (for SaaS)| The capability to access web services in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using Basic Auth will be deprecated for SaaS. OAuth2 will be the only authentication option for SaaS. OAuth flows that are currently supported are **Implicit** and **Auth Token**. Efforts are being made for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. For on-premises, Basic Auth will remain an option for the time being. This change has no impact on how [!INCLUDE[prodshort](../developer/includes/prodshort.md)] connects to external services.|
+|Removed | This add-in used Business Central web services based on outdated technology.|
+
+> [!NOTE]
+> The feature is separate from and has no effect on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] add-in for Outlook, which is described at [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin).
 
 ## Deprecated Features in 2020 release wave 1
-The following feature was marked as obsolete:pending in 2020 release wave 1.
+The following feature was marked as `obsolete:pending` in 2020 release wave 1.
 
 ### Best Price Calculations
-When you have recorded special prices and line discounts for sales and purchases, Business Central ensures that your profit on item trade is always optimal by automatically calculating the best price on sales and purchase documents and on job and item journal lines.
+When you have recorded special prices and line discounts for sales and purchases, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] ensures that your profit on item trade is always optimal. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calculates the best price on sales and purchase documents and on job and item journal lines.
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Replaced|The functionality is replaced with new calculations that you can extend to include additional sources or calculation methods. The current capabilities will be available, and can be used in parallel with the new, until 2021 release wave 1. For more information, see [Extending Best Price Calculations](../developer/devenv-extending-best-price-calculations.md).|
+|Replaced|The functionality is replaced with new calculations that you can extend to include other sources or calculation methods. The current capabilities will be available, and can be used in parallel with the new, until 2021 release wave 1. For more information, see [Extending Best Price Calculations](../developer/devenv-extending-best-price-calculations.md).|
 
 ## Deprecated Features in 2019 release wave 2
 The following sections describe the features that were deprecated in 2019 release wave 2.
 
 ### The Bank Data Conversion Service
-You can use the bank data conversion service from AMC to convert bank data from an XML file that you export from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] into a format that your bank can accept.
+You can use AMC's bank data conversion service to convert bank data from an XML file that you export from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] into a format that your bank can accept.
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
 |Moved|The functionality has been moved to an extension. It now ships as the AMC Banking 365 Fundamentals extension, which can convert bank data to formats that are used by more than 600 banks worldwide. For more information, see [Using the AMC Banking 365 Fundamentals extension](/dynamics365/business-central/ui-extensions-amc-banking).|
-
-### The Windows Client
-You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Windows client that is installed on your computer.
-
-|Moved, Removed, or Replaced?|Why?|
-|----|----|
-|Removed| Business Central continues to evolve the modern client experiences where users work with Business Central in the browser, Windows 10 desktop app, or mobile apps on Android and iOS. The legacy Dynamics NAV Windows client is no longer available for deployment. Instead, users can switch to the modern experience in the browser, the Android/iOS mobile apps, or the Windows 10 desktop app (available through the respective stores). |
 
 ### Reports 204-207
 You can generate external-facing documents, such as sales invoices and order confirmations, that you send to customers as PDF files.
@@ -116,36 +136,44 @@ The reports in the 204-207 range are replaced by the following updated reports i
 <!--This is just stubbed in. Need the actual names of the reports and a better description of the information they provided.-->
 
 ### User Personalizations and Profile Configurations
-You can personalize pages and configure profiles by adding or removing fields, and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will save your changes.
+You can personalize pages and configure profiles by adding or removing fields, and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will save your changes.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Replaced|The shift to AL caused the legacy personalization and profile configuration features to become outdated, so we have introduced new tooling. In this release, existing personalizations and configurations are discarded, and you must use the new tools to recreate them. Your new changes will be kept in future releases.|
-
-### Excel COM Add-In
-You can export data to an Excel workbook.
-
-|Moved, Removed, or Replaced? |Why?|
-|---------|---------|
-|Removed| The Excel COM add-in was installed along with the Windows client. Now that the Windows Client is no longer available, neither is the add-in. To export data to Excel, use the **Edit in Excel** action.|
-
-### Printing Programmatically
-You can print documents such as invoices automatically, without prompting the user or without the user choosing to do so.
-
-|Moved, Removed, or Replaced? |Why?|
-|---------|---------|
-|Removed| This feature was tied to the Windows Client, which is no longer available. |
+|Replaced|The shift to AL made the legacy features for personalization and configuring profiles outdated. Therefore, we've introduced new tooling. In this release, existing personalizations and configurations are discarded, and you must use the new tools to recreate them. Your new changes will be kept in future releases.|
 
 ## Objects that have been marked as obsolete
-Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 <!--should probably mention the other tags too. For example, "after one year we will mark the object as "ObsoleteState:Removed."-->
 
 ## Breaking Changes
-When we move, remove, or replace an object, breaking changes can result in other apps or extensions that use the object. To help our partners identify and resolve breaking changes, we have created a [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md) document that lists known issues and suggestions for what to do about them.
+When we move, remove, or replace an object, breaking changes can occur in other apps or extensions that use the object. To help our partners identify and resolve breaking changes, we have created a [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md) document. The document lists known issues and suggestions for what to do about them.
 
 ## Features that are available only in the online version
 <!--Should we include a section about this?-->
-Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises).
+Some features are available only under specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](../features-not-implemented-on-premises.md).
 
 ## See Also
-[AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)
+
+[Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  
+[Deprecated Features in the Austrian Version](deprecated-features-at.md)  
+[Deprecated Features in the Belgian Version](deprecated-features-be.md)  
+[Deprecated Features in the Canadian Version](deprecated-features-ca.md)  
+[Deprecated Features in the Czech Version](deprecated-features-cz.md)  
+[Deprecated Features in the Dutch Version](deprecated-features-nl.md)  
+[Deprecated Features in the Finnish Version](deprecated-features-fi.md)  
+[Deprecated Features in the German Version](deprecated-features-de.md)  
+[Deprecated Features in the Icelandic Version](deprecated-features-is.md)  
+[Deprecated Features in the Italian Version](deprecated-features-it.md)  
+[Deprecated Features in the Mexican Version](deprecated-features-mx.md)  
+[Deprecated Features in the Norwegian Version](deprecated-features-no.md)  
+[Deprecated Features in the Russian Version](deprecated-features-ru.md)  
+[Deprecated Features in the Swedish Version](deprecated-features-se.md)  
+[Deprecated Features in the Swiss Version](deprecated-features-ch.md)  
+[Deprecated Features in the UK Version](deprecated-features-uk.md)  
+[Deprecated Features in the United States Version](deprecated-features-us.md)  
+[Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](deprecated-fields.md)
+[Deprecated Tables](deprecated-tables.md)  
+[AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)  
+[Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)

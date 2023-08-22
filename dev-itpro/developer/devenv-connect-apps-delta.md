@@ -1,17 +1,19 @@
 ---
-title: "Using Delta Links With APIs"
+title: Using delta links with APIs
+description: Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.custom: na
-ms.date: 10/01/2020
+ms.custom: bap-template
+ms.date: 06/16/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.service: dynamics365-business-central
+ms.topic: conceptual
 ---
 
-# Using Delta Links With APIs
+# Using delta links with APIs
+
+[!INCLUDE [online_only](../developer/includes/online_only.md)]
+
 
 Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 
 
@@ -19,7 +21,7 @@ The user can obtain a delta link from each entity API in the library by includin
 
 On subsequent calls, the API consumer can use the deltaLink URL, which will provide the changes that have occurred in the data set since the initial request was made including the following points.
 
-+ Any records that have not changed will exclude from the resulting response
++ Any records that haven't changed will exclude from the resulting response
 + Any added or updated entries appear as regular JSON objects with their current properties
 + Any records that have been removed will include in the response but represented only by their `"id"` and a `@odata.context` URL followed by a `/$deletedEntity`
 
@@ -71,10 +73,18 @@ The response would return with the specified changes in the result, see the foll
 -->
 ## Delta support limitations
 
-+ The delta links apply to all entity APIs that include a persistent identifier, which is `"id"`, and the deltaLink will not apply to APIs that do not have the ID property. For example, the report APIs like balanceSheet.
-+ If a deltaLink is no longer valid, the service will respond with `410 Gone`. The response should include a location header so that the client can use that to retrieve a new baseline set of results.
-+ Not all entities in the API library support delta tokens. If a delta token is requested for an entity that does not support them, the service will respond with `500 Entity does not support delta requests`.
-+ The client must use the deltaLink URL as provided. The URL must not be modified either by parsing it or adding any additional query string parameters including changing the filters. The deltaLink and token are specific to the original query provided.
+- The delta links apply to all entity APIs that include a persistent identifier, which is `"id"`, and the deltaLink won't apply to APIs that don't have the ID property. For example, the report APIs like balanceSheet.
+- If a deltaLink is no longer valid, the service will respond with `410 Gone`. The response should include a location header so that the client can use that to retrieve a new baseline set of results.
+- Not all entities in the API library support delta tokens. If a delta token is requested for an entity that doesn't support them, the service will respond with `500 Entity does not support delta requests`.
+- The client must use the deltaLink URL as provided. The URL must not be modified either by parsing it or adding any more query string parameters including changing the filters. The deltaLink and token are specific to the original query provided.
+- Delta links don't work with all `$expand` statements.
+- The use of delta links for large data sets may fail due to timing out. Use filtering to limit the size of data sets that you are tracking changes for.
+- The delta service isn't suitable for frequent change tracking requests, because it can take minutes for changes to be propagated to the delta service.
+
+   It's recommended to use webhooks instead. For more information about the use of webhooks, see [Working with Webhooks in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-subscriptions.md).
+
+> [!NOTE]
+> Starting in Business Central 2023 release wave 2 (v23), delta links are deprecated and will be removed from the product in 2024 release wave 1 (v24). We recommend using webhooks as a replacement. For more information, see [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
 
 ## See Also
 [Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  

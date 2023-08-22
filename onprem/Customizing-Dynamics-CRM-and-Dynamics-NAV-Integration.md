@@ -8,7 +8,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: jswymer
-manager: edupont
 ---
 # Customizing Dynamics 365 for Sales and Dynamics NAV Integration
 If you have a customer relationship solution that is based on [!INCLUDE[crm](includes/crm_md.md)], then you can integrate it with [!INCLUDE[navnow](includes/navnow_md.md)]. This enables you to integrate and synchronize data in [!INCLUDE[crm](includes/crm_md.md)] entities such as accounts, contacts, and products, with equivalent record types in [!INCLUDE[navnow](includes/navnow_md.md)] such as customers, contacts, and items, respectively.  

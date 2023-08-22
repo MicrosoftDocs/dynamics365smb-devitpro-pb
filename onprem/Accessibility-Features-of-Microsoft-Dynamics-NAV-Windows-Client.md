@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6458a4a7-c713-4c76-b33e-06160e8bb73d
 caps.latest.revision: 6
-manager: edupont
 ---
 # Accessibility Features of Microsoft Dynamics NAV Windows Client
 Microsoft is committed to making its products and services easier for everyone to use. This topic provides information about features of the [!INCLUDE[navnow](includes/navnow_md.md)] that makes the product more accessible for people with disabilities.  

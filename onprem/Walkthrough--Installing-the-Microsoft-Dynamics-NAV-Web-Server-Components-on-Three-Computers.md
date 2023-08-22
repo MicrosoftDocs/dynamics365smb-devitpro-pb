@@ -12,7 +12,7 @@ author: jswymer
 # Walkthrough: Installing the Microsoft Dynamics NAV Web Server Components on Three Computers
 In this walkthrough, you will install [!INCLUDE[nav_web](includes/nav_web_md.md)] and [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] in a four tier production environment, with the [!INCLUDE[nav_web](includes/nav_web_md.md)], [!INCLUDE[nav_server](includes/nav_server_md.md)], and Microsoft SQL Server with [!INCLUDE[navnow](includes/navnow_md.md)] database components on three separate computers as shown in the following illustration.  
 
- ![NAV Web client setup on four  tiers](media/NAV_WebClient_4Tiered_Setup.png "NAV\_WebClient\_4Tiered\_Setup")  
+ ![NAV Web client setup on four  tiers.](media/NAV_WebClient_4Tiered_Setup.png "NAV\_WebClient\_4Tiered\_Setup")  
 
 |Computer|Installed operating system and software|  
 |--------------|---------------------------------------------|  
@@ -73,7 +73,7 @@ In this walkthrough, you will install [!INCLUDE[nav_web](includes/nav_web_md.md)
     >  By default, [!INCLUDE[navnow](includes/navnow_md.md)] Setup uses NETWORK SERVICE as the service account. You can use NETWORK SERVICE instead of a domain user account, but this is considered less secure. If you want to use NETWORK SERVICE, then you do not need this prerequisite.  
 
 ## Story  
- Viktor is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] He has been tasked with deploying [!INCLUDE[nav_web](includes/nav_web_md.md)] for customer. To meet the customer's network needs and requirements, Viktor will install the [!INCLUDE[nav_web](includes/nav_web_md.md)], [!INCLUDE[nav_server](includes/nav_server_md.md)], and SQL server with [!INCLUDE[navnow](includes/navnow_md.md)] database components on separate computers. For security reasons, he will use a domain user account instead of the Network Service account as the service account for [!INCLUDE[nav_server](includes/nav_server_md.md)]. He will configure the environment to authenticate users who are using Windows Authentication.  
+ Viktor, a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] has been tasked with deploying [!INCLUDE[nav_web](includes/nav_web_md.md)] for customer. To meet the customer's network needs and requirements, Viktor will install the [!INCLUDE[nav_web](includes/nav_web_md.md)], [!INCLUDE[nav_server](includes/nav_server_md.md)], and SQL server with [!INCLUDE[navnow](includes/navnow_md.md)] database components on separate computers. For security reasons, Viktor will use a domain user account instead of the Network Service account as the service account for [!INCLUDE[nav_server](includes/nav_server_md.md)]. Viktor will configure the environment to authenticate users who are using Windows Authentication.  
 
 ##  <a name="InstallDatabase"></a> Installing the Microsoft Dynamics NAV Database Components  
  In this procedure, you run [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup to install the SQL Server Database components for [!INCLUDE[navnow](includes/navnow_md.md)], including the [!INCLUDE[demolong](includes/demolong_md.md)]. During setup, you will assign the domain user account as the service account for the database.  

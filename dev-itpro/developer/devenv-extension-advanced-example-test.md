@@ -3,12 +3,11 @@ author: solsen
 title: "Testing the Advanced Sample Extension"
 description: "Includes test code for the advanced example extension."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ms.author: solsen
 ---
 
@@ -59,7 +58,7 @@ Before we can start writing the tests for the extension, we need to do the follo
 Our CustomerRewardsTest project will be referencing objects from the CustomerRewards project and so we will need to specify this in the `dependencies` setting in the CustomerRewardsTest project's app.json file. The `dependencies` setting takes a list of dependencies, where each dependency specifies the `appId`, `name`, `publisher`, and `version` of the base project/package that the current project/package will depend on.  
 
 > [!NOTE]  
-> Another prerequisite is to update the app.json with a dependency to the test toolkit.
+> Another prerequisite is to update the app.json with the dependencies of the test libraries used. In this case *Library Assert* and *Tests-TestLibraries*.
 
 ```json
  {
@@ -70,9 +69,20 @@ Our CustomerRewardsTest project will be referencing objects from the CustomerRew
       "name": "CustomerRewards", 
       "publisher": "Microsoft", 
       "version": "1.0.0.0" 
-    } 
-  ], 
-  "test": "13.0.0.0"
+    },
+    {
+        "id":  "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
+        "name":  "Library Assert",
+        "publisher":  "Microsoft",
+        "version":  "19.0.0.0"
+    },
+    {
+        "id":  "5d86850b-0d76-4eca-bd7b-951ad998e997",
+        "name":  "Tests-TestLibraries",
+        "publisher":  "Microsoft",
+        "version":  "19.0.0.0"
+    }
+  ]
    ...
 }
 ```
@@ -238,11 +248,11 @@ To create tests that can be automated, you must handle cases when user interacti
 
 |Function Type|Syntax example|Purpose|
 |-------------|-------|-------|
-|MessageHandler |<br>`[MessageHandler]` </br> `procedure MessageHandler(Msg : Text[1024]);`|This handler is called when a message function is invoked in the code. The parameter type, **Text**,  contains the text of the function.
+|MessageHandler |<br>`[MessageHandler]` </br> `procedure MessageHandler(Msg : Text[1024]);`|This handler is called when a message function is invoked in the code. The parameter type, **Text**,  contains the text of the function.|
 |ConfirmHandler |<br>`[ConfirmHandler]` </br> `procedure ConfirmHandlerNo(Question: Text[1024]; var Reply: Boolean);`|This handler is called when a confirm function is invoked in the code. The parameter type, **Text**,  contains the text of the function and the parameter **Reply** if the response to confirm is *yes* or *no*.|
-|StrMenuHandler |<br>`[StrMenuHandler]` </br> `procedure StrMenuHandler(Option: Text[1024]; var Choice: Integer; Instruction: Text[1024]);`|This handler is called when a StrMenu function is invoked in code. The parameter type, **Text**,  contains the text of the function and **Choice** is the option chosen in the StrMenu. **Options** is the list of the different option values and **Instruction** is the leading text.| |
+|StrMenuHandler |<br>`[StrMenuHandler]` </br> `procedure StrMenuHandler(Option: Text[1024]; var Choice: Integer; Instruction: Text[1024]);`|This handler is called when a StrMenu function is invoked in code. The parameter type, **Text**,  contains the text of the function and **Choice** is the option chosen in the StrMenu. **Options** is the list of the different option values and **Instruction** is the leading text.|
 |PageHandler |<br>`[PageHandler]` </br> `procedure MappingPageHandler(var MappingPage: TestPage 1214);`|This handler is called when a non-modal page is invoked in the code. **TestPage** is the specific page in this case.|
-|ModalPageHandler |<br>`[ModalPageHandler]` </br> `procedure DevSelectedObjectPageHandler(var DevSelectedObjects: TestPage 89015);`|This handler is called when a modal page is invoked in the code. **TestPage** is the specific page in this case.||
+|ModalPageHandler |<br>`[ModalPageHandler]` </br> `procedure DevSelectedObjectPageHandler(var DevSelectedObjects: TestPage 89015);`|This handler is called when a modal page is invoked in the code. **TestPage** is the specific page in this case.|
 |ReportHandler |<br>`[ReportHandler]` </br> `procedure VendorListReportHandler(var VendorList: Report 301);`|This handler is called when a report is invoked in the code. **Report** is the specific report in this case.| 
 |RequestPageHandler |<br>`[RequestPageHandler]` </br> `procedure SalesInvoiceReportRequestPageHandler(var SalesInvoice: TestRequestPage 206);`|This handler is called when a report is invoked in the code.  **TestRequestPage** refers to the specific report ID.| 
 
@@ -281,7 +291,7 @@ And finally, we verify that an error message is displayed because the validation
 This test verifies that the new **Reward Levels** action exists on the Customer List page. 
 
 ### TestCustomerHasBronzeRewardLevelAfterPostedSalesOrders Test 
-This is one of the tests that considers the interaction between Customers, Sales Orders, and Reward Levels. This test verifies that when two sales orders are made for a new customer, that customer accrues two reward points. Consequently, he attains the corresponding reward level for two points, which is the BRONZE reward level. 
+This is one of the tests that considers the interaction between Customers, Sales Orders, and Reward Levels. This test verifies that when two sales orders are made for a new customer, that customer accrues two reward points. Consequently, they attain the corresponding reward level for two points, which is the BRONZE reward level. 
 
 First, the test is initialized by calling Initialize. The extension is activated and then a BRONZE reward level for two points or more is set up in the **Reward Level** table. 
 
@@ -953,14 +963,14 @@ At this point you can publish and run your tests on your tenant by pressing Ctrl
 In order to run the tests, follow the steps below.
 
 1. Open the **Test Tool** page (130401). 
-![Test Tool](media/TestToolPage.png)  
+![Test Tool.](media/TestToolPage.png)  
 2. Choose **Get Test Codeunits** and then choose **Select Test Codeunits**. 
 3. Select your test codeunits and then choose the **OK** button.
-![Test Codeunits](media/TestGetCodeUnits.png)
+![Test Codeunits.](media/TestGetCodeUnits.png)
 You can now see all the test methods from your test codeunits. 
 
 4. Now, choose **Run** or **Run Selected** to run all the tests in the test codeunit or only the selected tests. The **Result** column indicates whether a test was a SUCCESS or FAILURE. A summary is also presented at the bottom of the page. 
-![Run Selected](media/RunSelected.png)
+![Run Selected.](media/RunSelected.png)
 
 ## Failing Tests 
 Let us look at what to do if you have a failing test. To create a failing test, we will modify the **SetDefaultCustomerRewardsExtMgtCodeunit** method in codeunit 50100 **Customer Rewards Install Logic** to the following: 
@@ -984,7 +994,7 @@ procedure SetDefaultCustomerRewardsExtMgtCodeunit();
 Now, anytime the **SetDefaultCustomerRewardsExtMgtCodeunit** method in the install codeunit is run, the **Customer Rewards Ext. Mgt. Codeunit ID** in the **Customer Rewards Mgt. Setup** table will be set to 0. 
 
 Press Ctrl+F5 to publish the updated tests to your tenant and then run them.
-![Publish Test](media/PublishTest.png)
+![Publish Test.](media/PublishTest.png)
 
 The test TestOnInstallLogic should now have a Failure result with the error message:  
 ```
@@ -992,19 +1002,19 @@ The test TestOnInstallLogic should now have a Failure result with the error mess
 ```
 
 The error message shows that the actual result in one of our Assert statements differed from what was expected. According to the error message, the Assert statement was expecting a value of 50101 but actually got a value of 0. We can also tell where in our code this is happening because of the message; "Codeunit does not match default", which we defined earlier when we wrote our tests. If we had no idea where the error occurred, we can click on the error message to open the **Test Results** page and then choose the **Call Stack** action. 
-![Call Stack](media/CallStack.png)
+![Call Stack.](media/CallStack.png)
 
 Choosing the **Call Stack** action will give you a message alert that contains an ordered list of method calls up to the one that caused the error. 
 
-![Error Message](media/ErrorMessage.png)
+![Error Message.](media/ErrorMessage.png)
 
 The list of method calls is arranged from the most recent at the top to the oldest at the bottom. In our example, we can tell that the `Assert(CodeUnit 130000).AreEqual` (the first on the list) was the last method to be run, indicating where the error was found. Because we did not modify the Assert codeunit, then the wrong values or results must have been passed to it. The next item on the list, `"Customer Rewards Test"(CodeUnit 50103).TestOnInstallLogic_Scope_1248196953` line 35 points to the method that was run before the final one that caused the error. This time, it is in the TestOnInstallLogic method of codeunit 50103 Customer Rewards Test after line 35.  
 
-![Test On Install Logic](media/TestOnInstallLogic.png)
+![Test On Install Logic.](media/TestOnInstallLogic.png)
 
 On line 36 of codeunit 50103 **Customer Rewards Test**, we can see the Assert statement that throws the error. We tested that the result should be `Codeunit::"Customer Rewards Ext. Mgt."` which is 50101, when our install logic is run, however, the result of the test indicated that we got a result of 0. This implies that our install logic is not working as expected. To fix this, we need to examine all the previous lines of code in the method to figure out where we went wrong. This will lead us to line 31, where the **SetDefaultCustomerRewardsExtMgtCodeunit** method call is made. 
 
-![Customer Rewards Install Logic](media/CustRewardsInstallLogic.png)
+![Customer Rewards Install Logic.](media/CustRewardsInstallLogic.png)
 
 When you go into the **SetDefaultCustomerRewardsExtMgtCodeunit** method, codeunit 50100 **Customer Rewards Install Logic**, you will see the change we made to cause the test to fail. Revert it so that `CustomerRewardsExtMgtSetup."Customer Rewards Ext. Mgt. Codeunit ID"` now stores `Codeunit::"Customer Rewards Ext. Mgt."`, instead of 0. Publish the updated extension and tests to your tenant and run the tests again. The test **TestOnInstallLogic** should pass now because the actual result matches what is expected.  
 
@@ -1013,7 +1023,7 @@ At this point, the Customer Rewards sample extension can be published and instal
 
 ## See Also  
 [Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md) 
 

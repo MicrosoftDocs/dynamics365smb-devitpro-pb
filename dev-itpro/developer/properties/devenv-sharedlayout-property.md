@@ -1,22 +1,30 @@
 ---
 title: "SharedLayout Property"
+description: "Specifies whether the view has the same layout as the default view 'All'."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/09/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SharedLayout Property
+> **Version**: _Available or changed with runtime version 4.0._
 
-The `SharedLayout` property specifies whether a view has the same layout as the default view **All**.
+Specifies whether the view has the same layout as the default view 'All'.
+When set to true, user personalization on the page is also applied when the view is selected.
+When set to false, the view defines its own layout and is not affected by user personalization.
 
-## Applies to  
+## Applies to
+-   Page View
 
-- Views
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Values  
 
@@ -48,16 +56,16 @@ view(SharedLayoutView)
 } 
 ```
 
-### Detached layout view
+### Unique layout view
 
-A view with detached layout `SharedLayout = false` defines its own layout and is independent from all other views. Any changes coded in the layout sections are applied in the view. User personalization made on the page are not applied on that view.
+A view with unique layout `SharedLayout = false` defines its own layout and is independent from all other views. Any changes coded in the layout sections are applied in the view. User personalization made on the page are not applied on that view.
 
 ### Example 2
 
 ```AL
-view(DetachedView)
+view(UniqueView)
 {
-    Caption = 'View With Detached Layout';
+    Caption = 'View With Unique Layout';
     Filters = where("Balance Due (LCY)" = filter(> 10000));
     // By settings this property to false, the view gets its own independent layout.
     // User personalization are not applied on this view.

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 244bd4b3-172d-45cf-b346-cf61e7edf59a
 caps.latest.revision: 9
-manager: edupont
 ---
 # Walkthrough: Importing Data from Text Files to Tables
 XMLports are used to export data from a [!INCLUDE[navnow](includes/navnow_md.md)] database to a file or import data from a file to a [!INCLUDE[navnow](includes/navnow_md.md)] database. The file format can be an XML document, fixed width text file, or CSV \(Comma Separated Value\) file. Exporting or importing data by using these file formats enables seamless exchange of data between different computer systems. When importing files to a [!INCLUDE[navnow](includes/navnow_md.md)] database, you can replace an entire record or update specific fields in records that already exist in the database. You can also automatically save the data you are importing or you can manipulate the data in code before you save it.  
@@ -37,7 +36,7 @@ XMLports are used to export data from a [!INCLUDE[navnow](includes/navnow_md.md)
 -   The [!INCLUDE[demolong](includes/demolong_md.md)].  
   
 ## Story  
- Viktor is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] Viktor’s manager has informed him that the marketing department has changed the unit price of the loud speakers in their inventory and requesting that the current unit prices in the database should be replaced with the new prices. The loud speaker information is located in the **Item** table. The marketing department provided the new prices in a text file. The file contains only item number values for the **No.** field, which is the primary key, and the new unit prices. The text file is in a fixed width text file format. Viktor’s task is to import the data in the text file into the Item table and update the unit price field. Viktor knows that he can accomplish the task by designing an XMLport that can import the data from the text file and set properties to update the existing record in the table.  
+ Viktor is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] Viktor has been informed by the manager that the marketing department has changed the unit price of the loud speakers in their inventory and requesting that the current unit prices in the database should be replaced with the new prices. The loud speaker information is located in the **Item** table. The marketing department provided the new prices in a text file. The file contains only item number values for the **No.** field, which is the primary key, and the new unit prices. The text file is in a fixed width text file format. Viktor’s task is to import the data in the text file into the Item table and update the unit price field. Viktor can accomplish the task by designing an XMLport that can import the data from the text file and set properties to update the existing record in the table.  
   
  The text file that the marking department provided resembles the following. You will use this file in the walkthrough.  
   

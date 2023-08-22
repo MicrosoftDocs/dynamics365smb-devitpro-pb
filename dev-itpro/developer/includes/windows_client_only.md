@@ -1,1 +1,1 @@
-<Token> **APPLIES TO:** [!INCLUDE[nav_windows_md.md](nav_windows_md.md)] only</Token>
+> **APPLIES TO:** [!INCLUDE[nav_windows_md.md](nav_windows_md.md)] only

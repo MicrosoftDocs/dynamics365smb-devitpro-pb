@@ -1,14 +1,13 @@
 ---
 title: "Report Object"
-description: "Reports are used to print or display information from a database."
+description: "The report object in AL for Business Central allows to create a new report."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 08/31/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ms.author: solsen
 ---
 
@@ -16,14 +15,16 @@ ms.author: solsen
 
 Reports are used to print or display information from a database. You can use a report to structure and summarize information, and to print documents, such as sales quotes and invoices.
 
-Creating a report consists of two primary tasks; the first task is to create the underlying data model and the next is to define the visual layout that displays the data. The report object defines the underlying data model and specifies which database tables and fields to pull data from. When the report is run, that data is displayed in a specified layout; the visual layout, which determines the content and format of a report when it is viewed and printed. 
+Creating a report consists of two primary tasks; the first task is to create the underlying data model and the next is to define the visual layout that displays the data. The report object defines the underlying data model and specifies which database tables and fields to pull data from. When the report is run, that data is displayed in a specified layout; the visual layout, which determines the content and format of a report when it's viewed and printed. 
 
 For more information about defining database tables and fields, see [Defining a Report Dataset](devenv-report-dataset.md). For more information about the Report data type, see [Report Data Type](methods-auto/report/report-data-type.md).
 
-You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are two types of report layouts; client report definition, also called RDL layouts and Word layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word. Word layouts are based on a Word document that includes a custom XML part representing the report dataset. 
+You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are three types of report layouts; client report definition, also called RDL layouts, Word layouts, and Excel layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word. Word layouts are based on a Word document that includes a custom XML part representing the report dataset. Excel layouts are created in Excel based on the report dataset, utilizing the Excel capabilities such as sliders, diagrams, charts, pivot tables, and PowerQuery. One report can contain multiple report layout definitions. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
 
-> [!NOTE]  
-> Extension objects can have a name with a maximum length of 30 characters. 
+If you want to modify an existing report, for example, add new columns, add to the request page, or add a new layout, you can create a report extension instead. For more information, see [Report Extension Object](devenv-report-ext-object.md).
+
+[!INCLUDE[intelli_shortcut](includes/query_as_a_report_datasource.md)]
+
 
 ## Snippet support
 
@@ -32,7 +33,8 @@ Typing the shortcut `treport` will create the basic layout for a report object w
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Report example
-The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a Word Layout report, see [Creating a Report](devenv-howto-report-layout.md).
+
+The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. This example defines a report that uses an RDL report layout. For more information about creating an RDL report layout, see [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md). For more information on creating a report that uses Word Layout, see [Creating a Word Layout Report](devenv-howto-report-layout.md). For information about creating an Excel layout, see [Creating an Excel Layout Report](devenv-howto-excel-report-layout.md).
 
 ```AL
 report 50103 "Customer List"
@@ -46,13 +48,13 @@ report 50103 "Customer List"
     dataitem(Customer;Customer)
     {
       RequestFilterFields="No.","Search Name","Customer Posting Group";
-      column(COMPANYNAME;COMPANYNAME)
+      column(CompanyName;CompanyName)
       {
       }
-      column(CurrReport_PAGENO;Customer."no.")
+      column(CurrReport_PageNo;Customer."no.")
       {
       }
-      column(Customer_TABLECAPTION_CustFilter;TABLECAPTION + ': ' + CustFilter)
+      column(Customer_TableCaption_CustFilter;TableCaption + ': ' + CustFilter)
       {
       }
       column(CustFilter;CustFilter)
@@ -122,10 +124,10 @@ report 50103 "Customer List"
       column(Customer_ListCaption;Customer_ListCaptionLbl)
       {
       }
-      column(CurrReport_PAGENOCaption;CurrReport_PAGENOCaptionLbl)
+      column(CurrReport_PageNoCaption;CurrReport_PageNoCaptionLbl)
       {
       }
-      column(Customer_NoCaption;FIELDCAPTION("No."))
+      column(Customer_NoCaption;FieldCaption("No."))
       {
       }
       column(Customer_Customer_Posting_GroupCaption;Customer_Customer_Posting_GroupCaptionLbl)
@@ -140,28 +142,28 @@ report 50103 "Customer List"
       column(Customer_Customer_Price_GroupCaption;Customer_Customer_Price_GroupCaptionLbl)
       {
       }
-      column(Customer_Fin_Charge_Terms_CodeCaption;FIELDCAPTION("Fin. Charge Terms Code"))
+      column(Customer_Fin_Charge_Terms_CodeCaption;FieldCaption("Fin. Charge Terms Code"))
       {
       }
       column(Customer_Payment_Terms_CodeCaption;Customer_Payment_Terms_CodeCaptionLbl)
       {
       }
-      column(Customer_Salesperson_CodeCaption;FIELDCAPTION("Salesperson Code"))
+      column(Customer_Salesperson_CodeCaption;FieldCaption("Salesperson Code"))
       {
       }
       column(Customer_Currency_CodeCaption;Customer_Currency_CodeCaptionLbl)
       {
       }
-      column(Customer_Credit_Limit_LCYCaption;FIELDCAPTION("Credit Limit (LCY)"))
+      column(Customer_Credit_Limit_LCYCaption;FieldCaption("Credit Limit (LCY)"))
       {
       }
-      column(Customer_Balance_LCYCaption;FIELDCAPTION("Balance (LCY)"))
+      column(Customer_Balance_LCYCaption;FieldCaption("Balance (LCY)"))
       {
       }
-      column(Customer_ContactCaption;FIELDCAPTION(Contact))
+      column(Customer_ContactCaption;FieldCaption(Contact))
       {
       }
-      column(Customer_Phone_NoCaption;FIELDCAPTION("Phone No."))
+      column(Customer_Phone_NoCaption;FieldCaption("Phone No."))
       {
       }
       column(Total_LCY_Caption;Total_LCY_CaptionLbl)
@@ -209,7 +211,7 @@ report 50103 "Customer List"
     CustFilter : Text;
     CustAddr : ARRAY [8] OF Text[50];
     Customer_ListCaptionLbl : Label 'Customer - List';
-    CurrReport_PAGENOCaptionLbl : Label 'Page';
+    CurrReport_PageNoCaptionLbl : Label 'Page';
     Customer_Customer_Posting_GroupCaptionLbl : Label 'Customer Posting Group';
     Customer_Customer_Disc_GroupCaptionLbl : Label 'Cust./Item Disc. Gr.';
     Customer_Invoice_Disc_CodeCaptionLbl : Label 'Invoice Disc. Code';
@@ -221,8 +223,17 @@ report 50103 "Customer List"
 
 ```
 
-## See Also
+[!INCLUDE [send-report-excel](includes/send-report-excel.md)]
+
+## Schedule reports
+
+It's possible to schedule a report to run at your desired date and time by using **AllowScheduling** property. By setting the property to *true*, you'll get the **Schedule** action button to set the date and time for your report. To learn more about scheduling a report, see [AllowScheduling Property](../developer/properties/devenv-allowscheduling-property.md) and [Schedule a report](/dynamics365/business-central/ui-work-report#ScheduleReport).
+
+## See also
+
+[Report Extension Object](devenv-report-ext-object.md)  
 [Request Pages](devenv-request-pages.md)  
+[Report Properties](../developer/properties/devenv-report-properties.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  

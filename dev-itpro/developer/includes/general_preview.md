@@ -1,0 +1,4 @@
+> [!IMPORTANT]
+> Some or all of the functionality noted in this article is available as part of a preview release. The content and the functionality are subject to change.
+<!--
+> The features described in this article are in preview and the [supplemental preview terms](https://dynamics.microsoft.com/legaldocs/supp-dynamics365-preview/) apply. A preview feature is a feature that isn't complete, but is made available before it's officially in a release so partners and customers can get early access and provide feedback. Preview features aren't meant for production use and may have limited or restricted functionality.-->

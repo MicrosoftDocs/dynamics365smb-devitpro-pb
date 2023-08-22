@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0456b0e3-873e-427b-8ef5-b9bb0ac7ba6e
 caps.latest.revision: 17
-manager: edupont
 ---
 # Using Codeunits
 By using codeunits, you eliminate the need to duplicate code and you make the code easier to maintain. For example, if you use the same code repeatedly in your objects, then you should create a global function for the code in a codeunit. After you create a codeunit and a global function in that codeunit, you can access the function from another codeunit by declaring a variable of type Codeunit and specifying the name of the codeunit as the subtype of the variable. You can then access the function by using *\<CodeunitVariableName>*.*\<FunctionName>*.  
@@ -55,7 +54,7 @@ Result := StatVariable.F(3425)+StatVariable.G(346);
   
  You can access codeunits through codeunit variables either by explicitly declaring a variable with the data type codeunit or by setting the RunObject property on pages to a codeunit. A codeunit variable does not contain a codeunit, but only a reference to a codeunit. More than one codeunit variable can refer to the same codeunit, as shown in the following illustration.  
   
- ![Codeunit variables](media/NAVCodeunitVariables.png "NAVCodeunitVariables")  
+ ![Codeunit variables.](media/NAVCodeunitVariables.png "NAVCodeunitVariables")  
 Codeunit Variables  
   
  Codeunits contain internal variables that are defined as global variables. These variables cannot be accessed directly from code outside the codeunit, but they can be accessed through user-defined functions on the codeunit. When a codeunit variable is used for the first time, a new instance of the codeunit is created, that is, a new set of internal variables is initialized so that different codeunit variables use different sets of internal variables.  

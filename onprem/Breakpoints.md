@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 52eb9384-166a-4425-94e7-a75cbcec1c90
 caps.latest.revision: 33
-manager: edupont
 ---
 # Breakpoints
 You can break code execution of the session that you are debugging by:  

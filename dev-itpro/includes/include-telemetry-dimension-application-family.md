@@ -1,0 +1,1 @@
+Specifies the application family for the environment, such as **BusinessCentral**. For environments in the ISV embed program, other values might show up here.

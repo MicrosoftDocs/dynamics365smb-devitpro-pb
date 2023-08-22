@@ -1,0 +1,1 @@
+Specifies the name of the extension/app.

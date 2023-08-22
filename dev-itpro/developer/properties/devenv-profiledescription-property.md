@@ -1,22 +1,28 @@
 ---
 title: "ProfileDescription Property"
+description: "Sets the description of the profile that users will see."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ProfileDescription Property
+> **Version**: _Available or changed with runtime version 4.0._
 
-Sets the description of the profile to be displayed to end-users; describing who the profile is for, and when or how to use it.
-    
-## Applies to  
+Sets the description of the profile that users will see.
 
-- Profiles
+## Applies to
+-   Profile
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 

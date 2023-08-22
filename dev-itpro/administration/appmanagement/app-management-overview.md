@@ -3,12 +3,11 @@ title: "App Management for ISVs"
 description: The App Management API can help you manage your apps running in different customer Business Central environments.
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: overview
 ms.author: jswymer
 ---
 
@@ -16,9 +15,9 @@ ms.author: jswymer
 
 [!INCLUDE[2020_releasewave1](../../includes/2020_releasewave1.md)]
 
-Each [!INCLUDE[prodshort](../../developer/includes/prodshort.md)] environment is built as a collection of apps. These apps include Microsoft apps and apps from AppSource that reselling partners have installed for customers. The apps are working together to provide customers with a broad set of features to address their various business, market, and industry needs.
+Each [!INCLUDE[prod_short](../../developer/includes/prod_short.md)] environment is built as a collection of apps. These apps include Microsoft apps and apps from AppSource that reselling partners have installed for customers. The apps are working together to provide customers with a broad set of features to address their various business, market, and industry needs.
 
-As an authorized ISV, you can deliver your functionality or your services as apps in AppSource. For more information, see [Get Started with Building Apps](../../developer/readiness/readiness-get-started.md). To help you manage your apps running in different customer Business Central environments, [!INCLUDE[prodshort](../../developer/includes/prodshort.md)] provides the App Management API.
+As an authorized ISV, you can deliver your functionality or your services as apps in AppSource. For more information, see [Get Started with Building Apps](../../developer/readiness/get-started.md). To help you manage your apps running in different customer Business Central environments, [!INCLUDE[prod_short](../../developer/includes/prod_short.md)] provides the App Management API.
 
 ## About the App Management API
 
@@ -34,7 +33,7 @@ You can use the API for the following operations:
 
 The App Management API lets you apply modern continuous integration (CI), continuous deployment (CD), and DevOps practices to your work, for example:
 
-- Automate operations by using Microsoft Azure DevOps Services or other available process automation tools.
+- Automate operations by using [AL-Go for GitHub](https://aka.ms/AL-Go) .
 - Organize role-based access control.
 - Manage your apps at scale, in multiple geo locations, supported by advanced and well-controlled build, test, and release flows.
 

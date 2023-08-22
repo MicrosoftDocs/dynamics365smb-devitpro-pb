@@ -1,19 +1,23 @@
 ---
 title: "Turn Off or Limit Telemetry Trace Events"
+description: Get tips for how to configure telemetry traces, depending on what you want to measure.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: jswymer
 ---
 # Turn Off or Limit Telemetry Trace Events
 The application and platform can emit many telemetry trace events, which can be collected using various event trace tools. For example, telemetry trace events are recorded in the [!INCLUDE[server](../developer/includes/server.md)] channel logs, which you can see in Event Viewer, under **Applications and Services Logs** > **Microsoft** > **DynamicsNAV** > **Common** > **Admin**. 
 
 The number of events can place a large demand on the logging resources on the computer running the [!INCLUDE[server](../developer/includes/server.md)] instance. To help alleviate this demand, the [!INCLUDE[server](../developer/includes/server.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of customer telemetry trace events that are emitted from the application, or even turn off telemetry events altogether. Custom telemetry trace events have IDs from  700-712. 
-  
+
+> [!NOTE]
+> The logging of events from external proxies uses the configuration setting **Diagnostic Trace Level for External Proxies** ('ExternalTraceLevel' in the customsettings.config file). 
+
+
 To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[admintool](../developer/includes/admintool.md)], modify the [!INCLUDE[server](../developer/includes/server.md)] instance configuration file \(CustomSettings.config\) directly, or use the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerConfiguration) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
 >[!TIP]
@@ -37,9 +41,9 @@ To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[a
   
      You must restart the [!INCLUDE[server](../developer/includes/server.md)] instance for the changes to take effect.  
   
-6.  To restart, the [!INCLUDE[server](../developer/includes/server.md)] instance, in the left pane, select the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] computer.  
+6.  To restart, the [!INCLUDE[server](../developer/includes/server.md)] instance, in the left pane, select the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] computer.  
   
-     Unless you are administering a remote computer, this is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] \(local\).  
+     Unless you are administering a remote computer, this is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] \(local\).  
   
 7.  In the center pane, right-click an instance, and then select **Restart**.  
   
@@ -64,9 +68,9 @@ To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[a
     ```
     Substitute `MyServerInstance` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance and `level` with either `Critical`, `Error`, `Warning`, `Normal`, `Verbose`, or `Off`.
     
-For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Business Central PowerShell Cmdlets](/powershell/business-central/overview) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
+For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Business Central PowerShell Cmdlets](/powershell/business-central/overview) and [Set-NAVServerConfiguration Cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
 
 ## See Also  
  [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)   
  [Monitoring Business Central Server Events](monitor-server-events.md)   
- [Configuring Business Central Server](configure-server-instance.md#General)  
+ [Configuring Business Central Server](configure-server-instance.md#general-settings)  

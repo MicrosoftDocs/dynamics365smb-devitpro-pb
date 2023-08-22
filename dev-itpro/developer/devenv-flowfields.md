@@ -1,12 +1,11 @@
 ---
 title: "FlowFields"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/31/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
@@ -15,9 +14,10 @@ FlowFields display the result of the calculation described in the [CalcFormula P
   
 FlowFields increase performance in activities such as calculating the balance of your customers. In traditional database systems, this involves a series of accesses and calculations before a result is available. By using FlowFields, the result is immediately available. You can further optimize the performance of Flowfields by enabling or disabling SIFT. For more information, see [SumIndexField Technology (SIFT)](devenv-sift-technology.md).
   
-FlowFields are not physical fields that are stored in the database. They are a description of a calculation and a location for the result to be displayed. Because the information in FlowFields exists only at run time, values in FlowFields are automatically initialized to 0 (zero). To update a FlowField, use the [CalcFields Method (Record)](methods-auto/record/record-calcfields-method.md). If a FlowField is the direct source expression of a control on a page, then the FlowField is automatically calculated when the page is displayed.  
+FlowFields aren't physical fields that are stored in the database. They're a description of a calculation and a location for the result to be displayed. Because the information in FlowFields exists only at run time, values in FlowFields are automatically initialized to 0 (zero). To update a FlowField, use the [CalcFields Method (Record)](methods-auto/record/record-calcfields-method.md). If a FlowField is the direct source expression of a control on a page, then the FlowField is automatically calculated when the page is displayed.  
   
-## FlowField types  
+## FlowField types
+
 There are seven types of FlowFields. Each is described in the following table.  
   
 |FlowField type|Field type|Description|  
@@ -30,10 +30,11 @@ There are seven types of FlowFields. Each is described in the following table.
 |**Max**|Any|The maximum value in a column in a specified set in a table.|  
 |**Lookup**|Any|Looks up a value in a column in another table.|  
 
-### Example  
+### Example
+
 Consider the Customer table in the following illustration. This table contains two FlowFields. The field named **Any Entries** is a FlowField of the Exist type, and the **Balance** field is a FlowField of the Sum type.  
-  
- ![Table that has two FlowFields](media/NAV_ADG_Diag_3.png "NAV\_ADG\_Diag\_3")  
+
+:::image type="content" source="media/NAV_ADG_Diag_3.png" alt-text="Table that has two FlowFields":::
   
 The figure shows that the value in the Balance FlowField for customer number 10000 (Windy City Solutions) is retrieved from the Amount column in the Customer Entry table. The value is the sum of the amount fields for the entries that have the customer number 10000.  
   
@@ -46,15 +47,16 @@ The values shown in the **Balance** column in the Customer table for customers 1
 In this example, the Balance FlowField in the Customer table reflects the sum of a specific subset of the Amount fields in the Customer Entry table. How the calculation of a FlowField is to be made, is defined in a calculation formula. The calculation formula for the **Balance** field is:  
   
 ```AL
-Sum("Customer Entries".Amount WHERE(CustNo=FIELD(CustNo)))  
+Sum("Customer Entries".Amount where(CustNo=field(CustNo)))  
 ```  
   
 Correspondingly, the **Any Entries** field, which indicates whether any entries exist, has the following definition:  
   
 ```AL
-Exist("Customer Entries" WHERE(CustNo=FIELD(CustNo)))  
+Exist("Customer Entries" where(CustNo=field(CustNo)))  
 ```  
 
-## See Also  
+## See Also
+
 [CalcFields Method (Record)](methods-auto/record/record-calcfields-method.md)  
 [Create FlowFields and FlowFilters](devenv-creating-flowfields-and-flowfilters.md)  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 990a4cbc-d545-4568-aff8-30e7833edd59
 caps.latest.revision: 13
-manager: edupont
 ---
 # FlowFields
 FlowFields display the result of the calculation described in the [CalcFormula Property](CalcFormula-Property.md). For example, the Account Balance field in the General Ledger Account table shows the balance of the account and is calculated as the sum of the NetAmount fields for all General Journal entries in the account.  
@@ -34,7 +33,7 @@ FlowFields display the result of the calculation described in the [CalcFormula P
 ### Example  
  Consider the Customer table in the following illustration. This table contains two FlowFields. The field named Any Entries is a FlowField of the Exist type, and the Balance field is a FlowField of the Sum type.  
   
- ![Table that has two FlowFields](media/NAV_ADG_Diag_3.png "NAV\_ADG\_Diag\_3")  
+ ![Table that has two FlowFields.](media/NAV_ADG_Diag_3.png "NAV\_ADG\_Diag\_3")  
   
  The figure shows that the value in the Balance FlowField for customer number 10000 \(Windy City Solutions\) is retrieved from the Amount column in the Customer Entry table. The value is the sum of the amount fields for the entries that have the customer number 10000.  
   

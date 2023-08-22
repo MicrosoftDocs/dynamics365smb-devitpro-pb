@@ -1,21 +1,22 @@
 ---
-title: "Deploying Microsoft Dynamics NAV Using ClickOnce"
+title: "Dynamics NAV Client connected to Business Central using ClickOnce"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/20/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.prod: "dynamics-nav-2018"
-ms.assetid: 0a6f16fb-07fe-4c2f-9986-5633d31d1c60
-caps.latest.revision: 42
-manager: edupont
+ms.topic: conceptual
+ms.service: "dynamics365-business-central"
+ms.search.keywords: NAV Windows client
+author: jswymer
 ---
-# Deploying [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)] Using ClickOnce
-This article contains instructions for deploying the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] using the ClickOnce deployment technology. ClickOnce allows you to deploy web applications by choosing a link on a web page. ClickOnce is a component of the Microsoft .NET Framework.  
+# Deploying Dynamics NAV Client connected to Business Central Using ClickOnce
+
+This article contains instructions for deploying the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] using the ClickOnce deployment technology. ClickOnce allows you to deploy web applications by choosing a link on a web page. ClickOnce is a component of the Microsoft .NET Framework.  
   
-## ClickOnce installation from the end-user's perspective  
-As an administrator, you wll provide end users with a link to the ClickOnce deployment source, which can point to a file share or a website. The end user will choose the link to the application to install [!INCLUDE[navnow](includes/navnow_md.md)].
+## ClickOnce installation from the end-user's perspective
+
+As an administrator, you wll provide end users with a link to the ClickOnce deployment source, which can point to a file share or a website. The end user will choose the link to the application to install [!INCLUDE[p](../developer/includes/prod_short.md)].
 
 -   The ClickOnce runtime opens with a confirmation dialog box, which asks whether to install the application and includes an **Install** and **Don't Install** button.  
   
@@ -57,7 +58,7 @@ The file structure of a ClickOnce deployment is as follows:
   
 -   You create another XML file, usually called the *deployment manifest*. This file should be suffixed with .application, and added to the directory outside the root of your application folder. The deployment manifest has a link to the application manifest. It also has information about the application, such as a product name, version number, and so on. This information will be shown in locations such as the **Start** menu and in **Add or Remove Programs**.  
   
- When a user installs the application, he runs the deployment manifest, and then ClickOnce will automatically install the application.  
+ When a user installs the application, they run the deployment manifest, and then ClickOnce will automatically install the application.  
   
 ## Prepare Users Computers by Installing .NET Framework 4.6.1
 The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] requires .NET Framework 4.6.1. Depending on the version of Windows, .NET 4.6.1 Framework might already be installed. If not, then you have two options:
@@ -101,7 +102,7 @@ Follow these steps to host on a file share:
   
     1.  If you do not already have a code signing certificate, you will have to obtain one from one of the certification authorities. For a list of certification authorities, see [Microsoft Technet](https://go.microsoft.com/fwlink/?LinkId=262163).  
   
-    2.  You can also create a test certificate and use it for testing. For more information, see [How to: Create Your Own Test Certificate](https://msdn.microsoft.com/library/ff699202.aspx) or [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate).  
+    2.  You can also create a test certificate and use it for testing. For more information, see [How to: Create Your Own Test Certificate](https://msdn.microsoft.com/library/ff699202.aspx) or [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate).  
   
     3.  For information about when it is acceptable to skip this step, see [Security Considerations](Deploying-Microsoft-Dynamics-NAV-Using-ClickOnce.md#Security).  
   
@@ -171,7 +172,7 @@ Follow these steps to host on a file share:
 
     Open Microsoft.Dynamics.Nav.Client.exe.manifest in a text editor, like Notepad. You do not have to change anything in this file, but you should be aware of what it looks like. The application manifest has an identity \(assembly.assemblyIdentity\), which is referred to by the deployment manifest. This can be any string, and it will not be shown to end users. Note the version number, which will be used in upgrade scenarios.  
   
-9. (Optional) Sign the application manifest. If you do not sign the manifest, the user will get a security warning when he installs, because the publisher, who is you, cannot be verified. This means that the end user cannot distinguish between your application and malware. If you sign the manifest, the user will see that the application is coming from your company, and he will trust it. If you have the code signing certificate PartnerCodeSigningCertificate.cer and the private key PartnerPrivateKey.pvk, run the following commands.  
+9. (Optional) Sign the application manifest. If you do not sign the manifest, the user will get a security warning when they install, because the publisher, who is you, cannot be verified. This means that the end user cannot distinguish between your application and malware. If you sign the manifest, the user will see that the application is coming from your company, and they will trust it. If you have the code signing certificate PartnerCodeSigningCertificate.cer and the private key PartnerPrivateKey.pvk, run the following commands.  
   
      `cert2spc PartnerCodeSigningCertificate.cer PartnerSoftwarePublisherCertificate.spc`  
   
@@ -258,7 +259,7 @@ All the logic needed for requesting user permissions to install or check for upg
   
  If you decide to deploy the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] using ClickOnce, then it is your responsibility that end users accept the Microsoft software license terms before the installation. We recommend that you also require end user acceptance of your software license terms and any third-party software license terms that are part of the ClickOnce deployment.  
   
- To help you with this process, you can use the **NAVClientInstallation.html** template web page that was installed as part of the ClickOnce Installer Tools. When you try to open that file, you must select the **Accept** check boxes before you can install the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. You can design your own web page, as long as the process for the end user is the same. The end user cannot install the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] until he has accepted the software license terms.  
+ To help you with this process, you can use the **NAVClientInstallation.html** template web page that was installed as part of the ClickOnce Installer Tools. When you try to open that file, you must select the **Accept** check boxes before you can install the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. You can design your own web page, as long as the process for the end user is the same. The end user cannot install the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] until they have accepted the software license terms.  
   
 ### Upgrading to a New Version of the [!INCLUDE[navnow](includes/navnow_md.md)] Client  
  If you want to push a new version of the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] out to end users, you must do the following:  
@@ -306,11 +307,11 @@ All the logic needed for requesting user permissions to install or check for upg
   
 -   An end user cannot specify the Home page.  
   
--   An end user cannot specify a profile. He can only use his default profile.  
+-   An end user cannot specify a profile. They can only use their default profile.  
   
 -   An end user cannot disable personalization. An administrator can disable personalization on a profile.  
   
--   An administrator cannot configure profiles. He should use the MSI-installed client for this task.  
+-   An administrator cannot configure profiles. They should use the MSI-installed client for this task.  
   
 -   An end user cannot run in full-screen mode.  
   

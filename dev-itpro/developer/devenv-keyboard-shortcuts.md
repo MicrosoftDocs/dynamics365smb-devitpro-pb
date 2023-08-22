@@ -3,12 +3,11 @@ title: "Keyboard Shortcuts"
 description: "List of keyboard shortcuts for the new development environment."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/10/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ms.author: solsen
 ---
 
@@ -55,12 +54,13 @@ The following table provides an overview of some of the shortcut key combination
 |**F8**|Move to the next error or warning|
 |**Shift+F8**|Move to the previous error or warning|
 
-## Compile in Visual Studio Code
+## Compile and publish in Visual Studio Code
 
 |Keyboard Shortcut| Action|
 |-----------------|-------|
 |**Ctrl+Shift+B**|Compile and build the solution|
 |**Ctrl+F5**|Build and deploy|
+|**Shift+Alt+W**| Publish full dependency tree for the active project|
 
 ## Debugging in Visual Studio Code
 
@@ -76,8 +76,22 @@ For topics on debugging in AL, see [Debugging](devenv-debugging.md) and [Snapsho
 |**Shift+F7**|List all available snapshots|
 |**Alt+F7**|Finish a snapshot debugging session|
 
+## Profiling in Visual Studio Code
+
+For more information about profiling, see [AL Profiler Overview](devenv-al-profiler-overview.md)
+
+|Keyboard Shortcut|Action|
+|-----------------|------|
+|**Enter+Toggle** | Expand and collapse a node. |
+|**Arrow+Left** | Collapse a node. |
+|**Arrow+Right** | Expand a node. |
+|- (minus) | Collapse all nodes.|
+|* (star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
+
+
+
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [AL Development Environment](devenv-reference-overview.md)

@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.assetid: b928abe2-e462-40e9-9d03-863c10f03e67
 caps.latest.revision: 13
-manager: edupont
 ---
 # Customizing Security
 [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] provides options for limiting and monitoring user access to the database.  
@@ -40,4 +38,4 @@ Passwords in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not ha
   
 ## See Also  
  [How to: Set Up User Time Constraints](How-to--Set-Up-User-Time-Constraints.md)   
- [Managing Users and Permissions]( https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions)
+ [Managing Users and Permissions]( /dynamics365/business-central/ui-how-users-permissions)

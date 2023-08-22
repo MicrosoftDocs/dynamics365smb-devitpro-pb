@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: f6b7668b-f925-4349-8729-46ea29210a94
 caps.latest.revision: 13
-manager: edupont
 ---
 # Synchronizing Dynamics NAV with Outlook
 Use the Microsoft Office Outlook Add-In component to synchronize data, such as to-dos, contacts, and tasks, between [!INCLUDE[navnow](includes/navnow_md.md)] and Outlook. The Microsoft Office Outlook Add-In uses [!INCLUDE[navnow](includes/navnow_md.md)] web services.  

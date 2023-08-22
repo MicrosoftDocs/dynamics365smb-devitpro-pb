@@ -1,18 +1,22 @@
 ---
 title: "APIPublisher Property (Query)"
+description: "Sets publisher of the API endpoint that the query is exposed in."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
  
 # APIPublisher Property (Query)
-Sets the publisher of the API endpoint the query is exposed in. The syntax for providing a publisher is illustrated in the example below:
+> **Version**: _Available from runtime version 1.0._
+
+<!-- this topic is manually created, parent node is devenv-apipublisher-property.md -->
+
+Sets the publisher of the API endpoint the query is exposed in. he APIPublisher contains the first part of the URL for the endpoint. The syntax for providing a publisher is illustrated in the example below, and is typically the name of the company that owns the API. The syntax for providing a publisher is illustrated in the example below:
 
 ## Applies to  
 

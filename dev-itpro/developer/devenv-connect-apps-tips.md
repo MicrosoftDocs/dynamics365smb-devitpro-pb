@@ -3,17 +3,14 @@ title: "Tips for working with the APIs"
 description: Provides some tips about working with Business Central API.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.custom: na
-ms.date: 11/12/2020
+ms.custom: bap-template
+ms.date: 07/03/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.service: dynamics365-business-central
+ms.topic: conceptual
 ---
 
-# Tips for working with the APIs
-
+# Tips for working with APIs
 
 ## GET
 
@@ -46,11 +43,11 @@ ms.service: "dynamics365-business-central"
 + The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in () after the API endpoint. For example, to GET the "CRONUS USA, Inc." company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`
 + All resources live in the context of a parent company, which means that the company ID must be provided in the URL for all resource API calls. For example, to GET all customers in the "CRONUS USA, Inc." company, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`
 
-## <a name="AcceptLanguage"></a>Accept-Language
+## <a name="AcceptLanguage"></a>Accept-Language HTTP header
 
-By specifying `Accept-Language` in the request header, you can set a specific language for your web service response. It's strongly recommended to use this setting, if your app is dependent on a web service response to be in a specific language. If `Accept-Language` is set, it will override default settings. This setting also controls the regional formatting settings, affecting behavior such as how date and time will be formatted.
+By specifying `Accept-Language` in the request header, you can set a specific language for your web service response. It's recommended to use this setting, if your app is dependent on a web service response to be in a specific language. If `Accept-Language` is set, it will override default settings. This setting also controls the regional formatting settings, affecting behavior such as how date and time will be formatted.
 
-One of the most common examples is showing error messages to the users in their language. To see which possible error messages to display, see [Error Codes](/dynamics-nav/api-reference/v2.0/dynamics_error_codes). Another common example is displaying reports in a specific language, see the example below for how to specify `Accept-Language`. The following example sets the language to always be `en-US`.
+One of the most common examples is showing error messages to the users in their language. To see which possible error messages to display, see [Error Codes](../api-reference/v2.0/dynamics-error-codes.md). Another common example is displaying reports in a specific language, see the example below for how to specify `Accept-Language`. The following example sets the language to always be `en-US`.
 
 ### Example
 
@@ -63,9 +60,9 @@ One of the most common examples is showing error messages to the users in their 
 |Accept-Language|en-US|
 
 #### Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
-#### Reponse
+#### Response
 If successful, this method returns a `200 OK` response code and a report PDF file in the response body.
 
 ## <a name="batch"></a>OData transactional $batch requests
@@ -76,112 +73,42 @@ It's possible to specify that all inner requests in a certain OData $batch reque
 
 To enable transactional batch behavior, include the `Isolation: snapshot` header with the $batch request.
 
+For more information, see [Using OData Transactional $batch Requests](../webservices/use-odata-batch.md)
+
+## <a name="DataAccessIntent"></a>Specifying Data Access Intent for GET requests
+
+By specifying HTTP request header `Data-Access-Intent`, it's possible to override data access intent of the API page or query that has been defined with [DataAccessIntent property](properties/devenv-dataaccessintent-property.md). 
+
+### Possible header values
+
+|Value|Description|
+|-----------|---------------------------------------|
+|**ReadOnly**|Intent to access records, but not to modify them. The page or query reads data from a replica of the database (if available), reducing the load on the primary database, but prevents modifications to the database records.|
+|**ReadWrite**|Intent to access and modify records.|
+
+When request header is specified, the value of the DataAccessIntent property defined on the object, if any, is ignored. Overrides that are specified on the page **9880 Database Access Intent List**  take higher precedence than the value in the request header.
+
+Modification requests (like POST, PUT, or DELETE) only support `ReadWrite` as a value for data access intent. Trying to specify `Data-Access-Intent: ReadOnly` for such requests will result in an error.
+
 ### Example
 
-```
-POST businesscentralPrefix/api/v2.0/$batch HTTP/1.1
-```
+`GET businesscentralPrefix/companies({id})/salesInvoices({salesInvoiceId})/pdfDocument({salesInvoiceId})/content`
 
-### Request headers
-
+#### Request headers
 |Header|Value|
 |------|-----|
-|Authorization |   Bearer {token}. Required.|
-|Content-Type   | application/json. Required for JSON Batch content.|
-|Accept |  application/json|
-|Isolation|snapshot|
+|Authorization  |Bearer {token}. Required. |
+|Data-Access-Intent|ReadOnly|
 
-### Request body
+#### Request body
+Don't supply a request body for this method.
 
-The following request body contains three inner requests. The first two requests should execute successfully. The last request  includes content that triggers a validation failure, so the request fails.
-
-```json
-{
-       "requests": [
-              {
-                     "method": "PATCH",
-                     "url": "items(7ce0af2e-0963-460f-9b1f-0014aea3e117)",
-                     "headers": {
-                           "Company": "CRONUS International Ltd.",
-                           "Content-Type": "application/json",
-                           "If-Match": "*"
-                     },
-                     "body": {
-                           "displayName": "Touring Bicycle v2"
-                     }
-              },
-              {
-                     "method": "PATCH",
-                     "url": "items(7ce0af2e-0963-460f-9b1f-0014aea3e117)/picture(7ce0af2e-0963-460f-9b1f-0014aea3e117)/contentValue",
-                     "headers": {
-                           "Company": "CRONUS International Ltd.",
-                           "Content-Type": "application/json",
-                           "If-Match": "*"
-                     },
-                     "body": {
-                           "value": "Picture Blob"
-                     }
-              },      
-              {
-                     "method": "PATCH",
-                     "url": "items(7ce0af2e-0963-460f-9b1f-0014aea3e117)",
-                     "headers": {
-                           "Company": "CRONUS International Ltd.",
-                           "Content-Type": "application/json",
-                           "If-Match": "*"
-                     },
-                     "body": {
-                           "type": "Invalid Type"
-                     }
-              }
-       ]
-}
-
-```
-
-### Response
-
-The following response includes successful responses for the first two inner requests, and an error for the last inner request. Because the `Isolation: snapshot` header was present in the batch request, none of the changes made by either of the successful inner requests are applied after completion of the batch request.
-
-```json
-{
-       "responses": [
-              {
-                     "id": null,
-                     "status": 200,
-                     "headers": {
-                           "content-type": "application/json; odata.metadata=minimal",
-                           "odata-version": "4.0"
-                     },
-                     "body": {
-                           "displayName": "Touring Bicycle v2",
-                           // ...
-                     }
-              },
-              {
-                     "id": null,
-                     "status": 204,
-                     "headers": {}
-              },
-              {
-                     "id": null,
-                     "status": 400,
-                     "headers": {
-                           "content-type": "application/json; odata.metadata=minimal",
-                           "odata-version": "4.0"
-                     },
-                     "body": {
-                           "error": {
-                                  "code": "Unknown",
-                                  "message": "'Invalid Type' is not an option. The existing options are: Inventory,Service,Non-Inventory  CorrelationId:  x."
-                           }
-                     }
-              }
-       ]
-}
-```
+#### Response
+If successful, this method returns a `200 OK` response code and a report PDF file in the response body.
 
 ## See Also
 <!-- [Using Deltas With APIs](devenv-connect-apps-delta.md)-->  
 [Using Filtering With APIs](devenv-connect-apps-filtering.md)  
+[API performance](../webservices/web-service-performance.md)   
 [Performance Articles For Developers](../performance/performance-developer.md)  
+[DataAccessIntent property](properties/devenv-dataaccessintent-property.md)

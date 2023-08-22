@@ -11,7 +11,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 3e3378be-bfe7-4371-9468-d6a028d5eded
 caps.latest.revision: 16
-manager: edupont
 ---
 # C/AL Repetitive Statements
 A repetitive statement is also known as a loop. The following table shows the looping mechanisms in C/AL.  

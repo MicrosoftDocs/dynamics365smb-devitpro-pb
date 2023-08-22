@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 8823b1fc-a148-4259-a590-027296e0278f
 caps.latest.revision: 21
-manager: edupont
 ---
 # Setting Up the Home Button and Home Items
 **Home** is a default activity button in the navigation pane of [!INCLUDE[navnow](includes/navnow_md.md)] and displays items that link to List Places.  
@@ -21,7 +20,7 @@ manager: edupont
   
      You use the Action Designer to add actions under the **HomeItems** control. You set up the actions to open list pages. Each action appears as an item under the **Home** button. For example, the following illustration shows the Action Designer for the **Home** button items that are shown in the previous illustration.  
   
-     ![Action Designer showing the HomeItems actions](media/NAVRTCHomeItemsActionDesigner.PNG "NAVRTCHomeItemsActionDesigner")  
+     ![Action Designer showing the HomeItems actions.](media/NAVRTCHomeItemsActionDesigner.PNG "NAVRTCHomeItemsActionDesigner")  
   
      For information about how to add an action under the **HomeItems** control, see [How to: Add Actions to a Page](How-to--Add-Actions-to-a-Page.md).  
   

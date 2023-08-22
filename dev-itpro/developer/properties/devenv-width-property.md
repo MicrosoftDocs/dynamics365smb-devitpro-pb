@@ -1,25 +1,28 @@
 ---
 title: "Width Property"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 ms.assetid: 59701d5d-65f8-42e8-9b1b-8c47709cf4bc
 caps.latest.revision: 22
 author: jswymer
 ---
 
+<!-- this topic is manually created, sibling node is devenv-width-xmlport-property.md -->
+
 # Width Property
+> **Version**: _Available from runtime version 1.0._
 
 Sets the width of a field when it appears as a column in a list. The width is specified by an integer that corresponds to the number of characters. <!-- and must be a fixed number when specified. --> 
   
 ## Applies to  
   
-- Page fields  
-- Table fields  
+-   Table Field
+-   Page Field
+-   Page Label
 
 ## Syntax
 

@@ -1,7 +1,6 @@
 ---
 title: "How to: Work with the BASIC Permission Set"
 author: edupont04
-manager: edupont04
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na

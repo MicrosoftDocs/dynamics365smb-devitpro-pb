@@ -3,17 +3,17 @@ title: "Viewing Table Data"
 description: "View tables in browser for troubleshooting"
 author: jswymer
 ms.custom: na
-ms.date: 10/05/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 ---
 
 # Viewing Table Data
 
-For developers, administrators, and support personnel, it can be useful to inspect table data in the tenant database, particularly when debugging or troubleshooting. To support this need, you can view table objects in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]. This lets you to see the data in all rows and columns of a specific table, including any columns that are added by table extensions.
+For developers, administrators, and support personnel, it can be useful to inspect table data in the tenant database, particularly when debugging or troubleshooting. To support this need, you can view table objects in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]. This lets you see the data in all rows and columns of a specific table, including any columns that are added by table extensions.
 
 - In a production environment, administrators and support can view a table directly from the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)].  
 
@@ -36,7 +36,7 @@ Whether viewing the table directly from the client or from Visual Studio Code, y
 
 Any end-user that is assigned these permissions will be able to view that table in the browser.
 
-For information about assigning permissions, see [Manage Users and Permissions](/dynamics365/financials/ui-how-users-permissions).
+For information about assigning permissions, see [Manage Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 
 ## View a table object directly from the client
 
@@ -49,14 +49,14 @@ https://businesscentral.dynamics.com/?table=18
 
 ```
 
-Or for a specific company, such as "CRONUS Inc.":
+Or, for a specific company, such as "CRONUS Inc.":
 
 ```
 https://businesscentral.dynamics.com/?company=CRONUS%20Inc.&table=18
 
 ```
 
-Note the use of `&` when `table=<TableID>` is not located directly after the domain name.
+Note the use of `&` when `table=<TableID>` isn't located directly after the domain name.
 
 ## View a table object from an AL project in Visual Studio Code
 
@@ -81,7 +81,8 @@ In the `launch.json` file for the project, set the `"startupObjectType"` paramet
 
 ```
 
-For more information about the `launch.json` file, see [Launch.json file](devenv-json-files.md#Launchjson).
+For more information about the `launch.json` file, see [Launch JSON file](devenv-json-launch-file.md).
+
 <!--
 Users: 
 Must have read access to the table 
@@ -116,12 +117,12 @@ You cannot view virtual tables or the following system tables:
 | 2000000195 |Membership Entitlement|
 | 2000000162 |Nav App Capabilities|
 | 2000000152 |Nav App Data Archive|
-| 2000000161 |Application Dependency ( *Nav App Dependencies)|
-| 2000000150 |Application Object Metadata ( *Nav App Object Metadata)|
+| 2000000161 |Application Dependency (*Nav App Dependencies)|
+| 2000000150 |Application Object Metadata (*Nav App Object Metadata)|
 | 2000000163 |Nav App Object Prerequisites|
-| 2000000142 |Application Resource ( *Nav App Resource)|
-| 2000000151 |Installed Application ( *Nav App TenantApp)|
-| 2000000160 |Published Application ( *Nav App)|
+| 2000000142 |Application Resource (*Nav App Resource)|
+| 2000000151 |Installed Application (*Nav App TenantApp)|
+| 2000000160 |Published Application (*Nav App)|
 | 2000000071 |Object Metadata|
 | 2000000079 |Object Tracking|
 | 2000000001 |Object|

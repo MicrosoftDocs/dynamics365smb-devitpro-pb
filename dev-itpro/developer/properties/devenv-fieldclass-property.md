@@ -1,30 +1,35 @@
 ---
 title: "FieldClass Property"
+description: "Sets the class of the field."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldClass Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Sets the class of the field.  
-  
-## Applies to  
+Sets the class of the field.
 
-Fields  
-  
-## Property Value  
-  
-|**Value**|**Description**|  
-|---------------|---------------------|  
-|**Normal**|A data entry field|  
-|**FlowFilter**|To compute the results of FlowFields|  
-|**FlowField**|A calculated field|  
+## Applies to
+-   Table Field
+
+## Property Value
+
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Normal**|runtime version 1.0|A data entry field.|
+|**FlowField**|runtime version 1.0|A calculated field.|
+|**FlowFilter**|runtime version 1.0|To compute the results of FlowFields.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 

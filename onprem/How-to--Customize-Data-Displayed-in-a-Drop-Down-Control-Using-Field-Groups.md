@@ -10,14 +10,13 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 27e06f03-185e-49d2-8c81-841ecf53ef28
 caps.latest.revision: 16
-manager: edupont
 ---
 # Customize Data Displayed in a Drop-Down Control Using Field Groups
 In the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], some fields are enabled with filter-as-you-type functionality. When you type text into these fields, a drop-down control appears that displays data from a source table. For example, in the sell-to-customer-no field on the Sales Orders page, records from the Customer table are displayed when you use this control.  
   
  If you do not define any field groups for the drop-down control, by default you only see data from two fields in the source table; the primary key and description fields, as these are indexed automatically.  
   
- To specify which fields are displayed in the drop-down control, you must use field groups. If you select the appropriate fields in the field groups table, you can help users to quickly find the data they need, without scrolling through multiple records. For example, if you define field groups on the Items table you can help the order processor to create new customer orders more easily. On the Sales Order card page, she can find specific items for the order, such as 2-inch nails, by using filter-as-you-type, and the drop-down control linked to the Items table. This could be very useful when creating a new customer order over the telephone.  
+ To specify which fields are displayed in the drop-down control, you must use field groups. If you select the appropriate fields in the field groups table, you can help users to quickly find the data they need, without scrolling through multiple records. For example, if you define field groups on the Items table you can help the order processor to create new customer orders more easily. On the Sales Order card page, they can find specific items for the order, such as 2-inch nails, by using filter-as-you-type, and the drop-down control linked to the Items table. This could be very useful when creating a new customer order over the telephone.  
   
 ## Adding Fields to the Field Groups Table  
  You can add or remove field groups from the Field groups table, using Table Designer.  

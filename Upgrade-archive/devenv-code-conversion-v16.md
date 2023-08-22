@@ -4,7 +4,6 @@ description: "Description of the conversion process from C/AL to AL."
 ms.custom: na
 ms.date: 04/01/2020
 ms.topic: article
-ms.service: "dynamics365-business-central"
 author: jswymer
 ms.author: jswymer
 ---

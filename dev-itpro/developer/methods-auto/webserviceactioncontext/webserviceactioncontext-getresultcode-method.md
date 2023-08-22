@@ -1,24 +1,26 @@
 ---
-title: "WebServiceActionContext.GetResultCode Method"
+title: "WebServiceActionContext.GetResultCode() Method"
+description: "Gets the web service action result status code."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# WebServiceActionContext.GetResultCode Method
+# WebServiceActionContext.GetResultCode() Method
+> **Version**: _Available or changed with runtime version 2.0._
+
 Gets the web service action result status code.
 
 
 ## Syntax
-```
+```AL
 ResultCode :=   WebServiceActionContext.GetResultCode()
 ```
 
@@ -30,7 +32,7 @@ An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.m
 ## Return Value
 *ResultCode*  
 &emsp;Type: [WebServiceActionResultCode](../webserviceactionresultcode/webserviceactionresultcode-option.md)  
-The web service action result status code.  
+The web service action result status code.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -38,5 +40,5 @@ The web service action result status code.
 ## See Also
 [WebServiceActionContext Data Type](webserviceactioncontext-data-type.md)  
 [Creating and Interacting with an OData V4 Bound Action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

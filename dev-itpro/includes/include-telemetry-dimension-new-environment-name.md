@@ -1,0 +1,1 @@
+Specifies the new name of the environment.

@@ -1,12 +1,11 @@
 ---
 title: "Formatting the Data in a Field"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: jswymer
 ---
 # Formatting Decimal Values in Fields
@@ -38,7 +37,7 @@ With the following set up, the **AutoFormatExpression** property is ignored.
   
 |AutoFormatType Property|DecimalPlaces Property|Usage Description|  
 |---------------------------|--------------------------|---------------------------|
-|0|Set to the number of decimal places that you want to display for the value.|Use this configuration when you want to format the decimal value according the Standard Format 0 (which is the default format) with a specific number of decimal places.<br /><br /> For example, if the value is a US decimal `-76543.21` and you set the **DecimalPlaces** property to `0`, then the value appears as **76,543**. The properties will look like this:<br /><br />`AutoFormatType = 0;`<br />`DecimalPlaces = '0';`|
+|0|Set to the number of decimal places that you want to display for the value.|Use this configuration when you want to format the decimal value according the Standard Format 0 (which is the default format) with a specific number of decimal places.<br /><br /> For example, if the value is a US decimal `-76543.21` and you set the **DecimalPlaces** property to `0`, then the value appears as **76,543**. The properties will look like this:<br /><br />`AutoFormatType = 0;`<br />`DecimalPlaces = 0;`|
 
 ## Setting the AutoFormatExpression property
 

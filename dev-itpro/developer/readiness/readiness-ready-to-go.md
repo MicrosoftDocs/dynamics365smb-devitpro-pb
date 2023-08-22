@@ -1,81 +1,148 @@
 ---
-title: "Ready to Go"
-description: "The Ready to Go program contains a set of resources, services and tools to support Microsoft Dynamics 365 Business Central."
-author: SusanneWindfeldPedersen
+title: Resources for partners
+description: "Resources for partners contains a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central."
+author: a-emniel
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/04/2023
 ms.reviewer: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ms.author: solsen
 ---
 
-# The "Ready to Go" Program
+# Welcome to Business Central | Resources for Partners
 
-![ReadyToGo Banner](../media/readytogo-banner.png)
+Are you a Microsoft partner working with Business Central and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
-[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] is a business management solution that helps companies connect their financials, sales, service, and operations to streamline business processes, improve customer interactions, and make better decisions.  
+## Hot topics right now
+- Register for the Business Central Launch Event on [aka.ms/BCLE](https://aka.ms/BCLE)
+- Access Business Central with your Microsoft 365 license. Read about it [here](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
+- Introducing Microsoft Dynamics 365 Copilot, AI-powered assistance to get more done with less effort, also in Business Central: [aka.ms/BCAI](https://aka.ms/BCAI)
 
-[!INCLUDE[prodshort](../includes/prodshort.md)] creates multiple [opportunities for partners to provide apps or consulting services](https://aka.ms/businesscentralapps) on Microsoft AppSource.
+## Latest release and updates  
+- Business Central release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
+- Major updates: [aka.ms/BCUpdates](https://aka.ms/BCUpdates)
+- Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
+- Missing a feature? Post or vote for ideas on: [aka.ms/BCIdeas](https://aka.ms/BCIdeas) 
+- Optional features that are now mandatory [https://aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt)
+- Where is Business Central available? [aka.ms/BCCountries](https://aka.ms/BCCountries)
 
-The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. Use the tabs below to read more about the elements of the "Ready to Go" program.  
+## Stay up to date
+- Discover what's new for partners in the Business Central newsletter: [aka.ms/BCNews](https://aka.ms/BCNews)
+- Watch the what’s new launch event sessions: [aka.ms/BCLE](https://aka.ms/BCLE) 
+- Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
+- Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
 
-> [!TIP]
-> Keep on top of news, tips, tools, programs, and new capabilities by following [Business Central on the Dynamics 365 cloudblog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/).
 
-# [**Learning**](#tab/learning)
-**The "Ready to Go" online learning catalog** is an extensive collection of materials for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], including training resources, white papers, and tools for both app developers (ISVs) as well as resellers (VARs). It is designed for marketeers, business decision makers, sales and pre-sales roles, architects, consultants, and developers. [Access the "Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101).
+## Social and blogs
+- Stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) (Use #BCALHelp on Twitter for quick hints on how to do things) 
+- Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
+- Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [community.dynamics.com/business](https://community.dynamics.com/business) 
+- Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/product/business-central](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
+- Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm)
+- Join the Business Central development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
 
-# [**Coaching**](#tab/coaching)
-Several Development Centers, Master VARs, and Training Centers provide **"Ready to Go" coaching**.
+## Partner readiness and programs
+- Get started as a partner (reselling [!INCLUDE [prod_short](../includes/prod_short.md)]): [aka.ms/BCReseller](https://aka.ms/BCReseller)
+- Essential partner resources (marketing material): [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)  
+- Browse all [!INCLUDE [prod_short](../includes/prod_short.md)] learning courses: [aka.ms/BCLearn](https://aka.ms/BCLearn) 
+- Supported countries, regions, and languages: [aka.ms/BCCountries](https://aka.ms/BCCountries) 
+- Join the conversation on Yammer for partners: [aka.ms/BCYammer](https://aka.ms/BCYammer)  
+- Online or in-person training and coaching for [!INCLUDE [prod_short](../includes/prod_short.md)]. Contact an ISV Development Center: [aka.ms/ISVDevCenter](https://aka.ms/ISVDevCenter)
+- The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode) 
 
-The coaches are independently owned companies which provide services to partners, tailored to their needs. Over time they have developed lots of best practices by supporting multiple partners, they also have strong ties with [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] teams and are always up to date on the latest strategy and product innovation.
+## Go to market 
+- [!INCLUDE [prod_short](../includes/prod_short.md)] homepage: [dynamics.microsoft.com/business-central/overview/](https://dynamics.microsoft.com/business-central/overview/)  
+- Try [!INCLUDE [prod_short](../includes/prod_short.md)] for free (30-day trial): [go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409](https://go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409)
+- [!INCLUDE [prod_short](../includes/prod_short.md)] customer stories: [aka.ms/BCCustomerStories](https://aka.ms/BCCustomerStories) 
+- Discover useful resources for partners: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
+- Transact capability for Business Central Apps on Microsoft AppSource: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
 
-An example of one of the coaching sessions provided by the Development Centers and Master VARs are **the "Ready to Go" validation workshops**. This workshop is an 8h workshop at a fixed price which is designed to coach you in bringing your app into Microsoft AppSource or help you with the implementation of your first customer.  
+## Customer onboarding and resources 
+- Discover all Business Central apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)
+- Get Business Central on your mobile devices: [aka.ms/BusinessCentralApp](https://aka.ms/BusinessCentralApp)
+- Get Business Central installable app on your desktop: [aka.ms/BCPWA](https://aka.ms/BCPWA)
+- Learn about onboarding experiences in Business Central: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)
+- Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
+- Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys)
 
-Please find the coaches in your region and explore which "Ready to Go" offerings they provide:
+## Reporting and Business intelligence  
+- Get started with reporting: [aka.ms/BCReporting](https://aka.ms/BCReporting)
+- Excel layout samples: [aka.ms/BCExcelSamples](https://aka.ms/BCExcelSamples)
+- Business Central and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI)
 
-|Company|Coaching services provided|More info|
-|-------|--------------------------|---------|
-|**1ClickFactory** <br>(Development Center)|Coaching and training services in person and online in Europe, North and South America, Asia, and Africa.|[ReadyToGo Contacts](https://www.1clickfactory.com/readytogo/)|
-|**Ciellos** <br>(Development Center)|Coaching and training services in person and online in Europe, North, and South America.|[ReadyToGo Contacts](https://www.ciellos.com/ready-to-go)|
-|**Cloud-Ready-Software**(Development Center)|Coaching and training services in person and online in Europe, North and South America, Asia, and Africa.|[ReadyToGo Contacts](https://cloud-ready-software.com/readytogo/)|
-|**Innova Consulting**<br>(Development Center)|Coaching and training services in person and online in Europe and South America.|[ReadyToGo Contacts](https://www.innovaconsulting.es/en/readytogo/)|
-|**QBS Group**<br>(MasterVAR)|Coaching and training services in person and online in Europe, Middle East, and Africa.|[ReadyToGo Contacts](https://www.qbsgroup.com/service/ready-to-go-for-dynamics-365-business-central/)|
-|**Velosio**<br>(MasterVar)|Coaching and training services in person and online in North America.|[ReadyToGo Contacts](https://www.velosio.com/landing/readytogo/)|
-|**Plataan**<br>(Training Center)|Training services in person and online in Europe, North and South America, Asia, and Africa.|[ReadyToGo Contacts](https://plataan.tv/en)|
+## Power Platform  
+- Business Central and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI)
+- Business Central and Power Automate: [aka.ms/BCAutomate](https://aka.ms/BCAutomate) 
+- Business Central and Power Apps: [aka.ms/BCPApps](https://aka.ms/BCPApps)
+- [Prototype] Low code sync of Business Central entities to Dataverse: [aka.ms/bc2dataverse](https://aka.ms/BC2Dataverse)
 
-# [**Tooling**](#tab/tooling)
-**The "Ready to Go" tooling** is designed to support you in the actual app development, including testing and learning scenarios. The platform provides you with various insider builds of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] (cf. both current, upcoming and daily builds are available).  
-The platform also enables you to provide direct feedback to the Microsoft engineers who are working on [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. 
+## Migrating from on-premises to cloud (online)  
+- Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online: [aka.ms/BCMigrations](https://aka.ms/BCMigrations)  
+- Use migration tooling: [Migrate Data](../../administration/migrate-data.md) 
 
-# [**Resources**](#tab/resources)
-### Business Central on the Dynamics 365 Blog for partners
+## Getting support
+- Managing technical support for customers: [Manage Technical Support](../../administration/manage-technical-support.md) 
+- Test network connectivity for Business Central: [aka.ms/BCCP](https://aka.ms/BCCP)
 
-The blog talks about opportunities, processes, programs, and tools for the Business Central partner community. Follow the blog here: [Business Central on the Dynamics 365 Blog for partners](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
+## Developing for Business Central in general
+- Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/BCPublisher)
+- [!INCLUDE [prod_short](../includes/prod_short.md)] technology samples: [aka.ms/BCTech](https://aka.ms/BCTech)
+- Maintain your app(s): [Maintain Your App](../app-maintain.md) 
+- Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: [github.com/microsoft/al/issues](https://github.com/microsoft/al/issues) 
+- Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
+- Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
+- Get the latest preview version and give feedback: [aka.ms/Collaborate](https://aka.ms/Collaborate) (learn how you join relevant engagements [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-getting-access-to-preview-bits))
+- Build solutions that link to Business Central mobile app: [aka.ms/BCProtocol](https://aka.ms/BCProtocol)
+- Troubleshoot issues with Business Central: [aka.ms/BCTroubleshoot](https://aka.ms/bctroubleshoot)
 
-### Monthly "Ready to Go" Office Hours call
-"Ready to Go" Office Hours is a monthly call that takes place the second Tuesday of every month. The call is structured as a FAQ session, where a team of our different experts will be present to answer any questions that you may have in relation to bringing your offerings into AppSource. Sign up here: [aka.ms/ReadyToGoOfficeHours](https://aka.ms/ReadyToGoOfficeHours).
+## Developing apps for AppSource
+- AppSource marketing checklist: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)
+- AppSource technical checklist: [aka.ms/CheckBeforeYouSubmit](https://aka.ms/CheckBeforeYouSubmit)
+- AppSource technical FAQ: [aka.ms/TechValidationFAQ](https://aka.ms/TechValidationFAQ) 
+- Set up DevOps for your AppSource apps: [aka.ms/AL-Go-AppSource](https://aka.ms/AL-Go-AppSource)
+- Ask your question related to AppSource in the AppSource group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
+- Development of a localization app: [aka.ms/BusinessCentralLocApps](https://aka.ms/businesscentrallocapps) 
 
-### GitHub
-Use the GitHub forum to post questions about AL to the community and Microsoft experts here: [https://github.com/microsoft/al/issues](https://github.com/microsoft/al/issues).
+## Developing customer specific solutions
+- Set up DevOps for your customer projects: [aka.ms/AL-Go-PTE](https://aka.ms/AL-Go-PTE)
 
-### Follow "Ready to Go" activity on social media
-Get insights into what's happening with [!INCLUDE[prodshort](../../includes/prodshort.md)]. Follow us on [Twitter](https://twitter.com/search?q=%23ReadyToGo%20%23MSDYN365BC&src=typd). 
+## Telemetry and performance
+- App performance documentation: [aka.ms/BCPerformance](https://aka.ms/BCPerformance)
+- Telemetry documentation: [aka.ms/BCTelemetry](https://aka.ms/BCTelemetry) 
+- Telemetry samples: [aka.ms/BCTelemetrySamples](https://aka.ms/BCTelemetrySamples) 
+- Analyze environment telemetry data with Power BI: [aka.ms/BCTelemetryReport](https://aka.ms/BCTelemetryReport) 
+- Analyze app telemetry data with Power BI: [aka.ms/BCTelemetry-Isv-App](https://aka.ms/BCTelemetry-isv-app) 
 
-### Learn more about the offering types
-+ [Build Add-on apps: https://aka.ms/BusinessCentralAddonApps](https://aka.ms/BusinessCentralAddonApps)  
-+ [Build Embed apps: https://aka.ms/BusinessCentralEmbedApps](https://aka.ms/BusinessCentralEmbedApps)  
-+ [Build Connect apps: https://aka.ms/BusinessCentralConnectApps](https://aka.ms/BusinessCentralConnectApps)  
-+ [Build Localization apps: https://aka.ms/BusinessCentralLocalizationApps](https://aka.ms/BusinessCentralLocalizationApps)  
-+ [Deliver consulting services as a VAR: https://aka.ms/BusinessCentralConsultingServices](https://aka.ms/BusinessCentralConsultingServices) 
+## Security, Privacy, and Compliance
+- Security and Privacy documentation: [aka.ms/BCSecurity](https://aka.ms/BCSecurity) 
+- Security in Business Central: [aka.ms/BCSecurity](https://aka.ms/BCSecurity)
+- Databases and backups: [aka.ms/bcbackups](https://aka.ms/BCBackups)
+- Compliance overview: [aka.ms/BCCompliance](https://aka.ms/BCCompliance)
+- Application compliance: [aka.ms/BCAppCompliance](https://aka.ms/BCAppCompliance)
 
-### Shortcuts to developing and publishing Business Central apps documentation
 
-+ [Marketing Validation Checklist](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing)
-+ [Technical Validation Checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission)
-+ [How to create an effective sales landing page](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-create-sales-landing-page)
-+ [How to make compelling videos](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-make-compelling-videos)
+## Licensing and Pricing  
+- [Business Central licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)
+- [Business Central Universal Code Initiative](https://partner.microsoft.com/resources/collection/microsoft-publisher-program#/)
 
-### Learning catalog
-+ [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
+
+## Shopify
+- Shopify start: [aka.ms/BCShopifyStart](https://aka.ms/BCShopifyStart)
+- Shopify FAQ: [aka.ms/BCShopifyFAQ](https://aka.ms/BCShopifyFAQ)
+- Shopify consultant: [aka.ms/BCShopifyConsultant](https://aka.ms/BCShopifyConsultant)
+
+## Events for partners
+- Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)
+- [Directions NA](https://directionsna.com) 
+- [Directions EMEA](https://directions4partners.com/events/directions-emea-2023/)  
+- [Directions Asia](https://directions4partners.com/events/directions-asia-2023/) 
+- [Business Central TechDays](https://bctechdays.com)
+- [Days of Knowledge (Nordic)](https://directions4partners.com/days-of-knowledge/nordic-2023/)
+- [Days of Knowledge (Central)](https://directions4partners.com/days-of-knowledge/central-2023/) 
+- [Days of Knowledge (UK)](https://directions4partners.com/days-of-knowledge/uk-2023/)
+
+## Events for customers
+- Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)
+- [DynamicsMinds](https://www.dynamicsminds.com/)
+- [UG Summit](https://www.summitna.com/)
+- [DynamicsCon](https://dynamicscon.com/)

@@ -4,12 +4,11 @@ description: Use the User Personalization page to assign a user to a profile, an
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ---
 
 # Assign a User to a Profile
@@ -18,7 +17,7 @@ When you have created a profile, you can use the **User Personalization** page t
   
 ## Assigning a user to a profile  
 
-1. In [!INCLUDE[prodshort](includes/prodshort.md)], in the **Tell Me** box, enter **User Personalization**, and then choose the related link.  
+1. In [!INCLUDE[prod_short](includes/prod_short.md)], in the **Tell Me** box, enter **User Personalization**, and then choose the related link.  
 2. Choose **New** to open.
 3. In the **User Personalization** window, fill in the fields described in the following table.  
   

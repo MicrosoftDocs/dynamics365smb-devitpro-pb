@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: fc7527c2-8ede-4b6e-8e0e-e2ac6ad22521
 caps.latest.revision: 9
-manager: edupont
 ---
 # Using Linked Objects
 When you are using a linked object, you should take the following into account:  

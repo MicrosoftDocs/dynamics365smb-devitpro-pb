@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 57aac5ec-f41c-4370-8436-6de141976f21
 caps.latest.revision: 16
-manager: edupont
 ---
 # Walkthrough: Running a Report Offline
 You can view a report and view the dataset and layout on a computer that does not have [!INCLUDE[navnow](includes/navnow_md.md)] installed. To do this, you must have Microsoft Visual Studio installed and you must export the report dataset from [!INCLUDE[navnow](includes/navnow_md.md)] as an .xml file and export the report layout .rdlc file from Visual Studio Report Designer.  
@@ -40,7 +39,7 @@ You can view a report and view the dataset and layout on a computer that does no
 -   A second computer with Visual Studio.  
 
 ## Story  
- Viktor is a Microsoft Certified Partner working for CRONUS International. He is working on some enhancements to the Customer – Top 10 List report, but during his development phase, he has encountered some problems. Viktor wants to send the report to Microsoft Support to help him troubleshoot the problems. The Microsoft Support engineer wants to be able to view the report and report data offline instead of on a computer that has [!INCLUDE[navnow](includes/navnow_md.md)] installed. Viktor saves the report dataset and the report layout and sends them to the Microsoft Support engineer, who runs the report on his computer by using Visual Studio.  
+ Viktor, a Microsoft Certified Partner working for CRONUS International is working on some enhancements to the Customer – Top 10 List report. During the development phase, Viktor has encountered some problems. Viktor wants to send the report to Microsoft Support to troubleshoot the problems. The Microsoft Support engineer wants to be able to view the report and report data offline instead of on a computer that has [!INCLUDE[navnow](includes/navnow_md.md)] installed. Viktor saves the report dataset and the report layout and sends them to the Microsoft Support engineer, who runs the report on Viktor's computer by using Visual Studio.  
 
 ## Saving the report dataset and layout  
  First, Viktor exports the report dataset to an .xml file.  
@@ -51,7 +50,7 @@ You can view a report and view the dataset and layout on a computer that does no
 
 2.  In the **Search** box, enter **Customer – Top 10 List**, and then choose the related link.  
 
-3.  On the request page for the Customer – Top 10 List report, on the **Application** menu ![Application Menu button in menu bar](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Page** to activate the About This Report feature. For more information, see [How to: View and Export the Dataset for a Report](How-to--View-and-Export-the-Dataset-for-a-Report.md).  
+3.  On the request page for the Customer – Top 10 List report, on the **Application** menu ![Application Menu button in menu bar.](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Page** to activate the About This Report feature. For more information, see [How to: View and Export the Dataset for a Report](How-to--View-and-Export-the-Dataset-for-a-Report.md).  
 
 4.  Close the **About This Page** page.  
 
@@ -79,7 +78,7 @@ You can view a report and view the dataset and layout on a computer that does no
 
 4.  In Visual Studio, in **Solution Explorer**, select **Report.rdlc**, and then in the **Properties** window, note the path where the Report.rdlc file is located.  
 
-     ![Visual Studio 2010 Solution Explorer, Properties](media/Plat_ExportLayout_SolnExpl.png "Plat\_ExportLayout\_SolnExpl")  
+     ![Visual Studio 2010 Solution Explorer, Properties.](media/Plat_ExportLayout_SolnExpl.png "Plat\_ExportLayout\_SolnExpl")  
 
     > [!TIP]  
     >  If the **Properties** window is not visible, then on the **View** menu, choose **Properties**.  
@@ -104,7 +103,7 @@ You can view a report and view the dataset and layout on a computer that does no
 
 4.  In the **New Project** window, under **Installed Templates**, expand **Visual C\#**, choose **Windows**, and then choose **Windows Forms Application**.  
 
-     ![Visual Studio 2010, New Visual C&#35; Project](media/Plat_ExportReport_.png "Plat\_ExportReport\_")  
+     ![Visual Studio 2010, New Visual C&#35; Project.](media/Plat_ExportReport_.png "Plat\_ExportReport\_")  
 
     > [!TIP]  
     >  If **Visual C\#** is not listed under **Installed Templates**, then you must install the Visual C\# feature. To do this, in Control Panel, choose **Programs**, choose **Uninstall a program**, select your version of Microsoft Visual Studio, and then choose **Uninstall/Change**. In the setup wizard, follow the instructions to add or remove features, and then choose the Visual C\# feature.  
@@ -113,11 +112,11 @@ You can view a report and view the dataset and layout on a computer that does no
 
 6.  In Solution Explorer, right-click the OfflineReport project, choose **Add**, and then choose **Existing Item**.  
 
-     ![Visual Studio 2010, Add Existing to project](media/Plat_ExportReport_AddExisting.png "Plat\_ExportReport\_AddExisting")  
+     ![Visual Studio 2010, Add Existing to project.](media/Plat_ExportReport_AddExisting.png "Plat\_ExportReport\_AddExisting")  
 
 7.  In the **Add Existing Item** dialog box, navigate to your Desktop, set the file type to **All Files \(\*.\*\)**, select the Dataset.xml file and the Report.rdlc file, and then choose **Add**.  
 
-     ![Add Existing Item dialog box, file type All Files](media/Plat_ExportReport_AddFiles.png "Plat\_ExportReport\_AddFiles")  
+     ![Add Existing Item dialog box, file type All Files.](media/Plat_ExportReport_AddFiles.png "Plat\_ExportReport\_AddFiles")  
 
 8.  In Solution Explorer, under OfflineReport, select Dataset.xml. In the **Properties** window, in the **Copy to Output Directory** field, choose **Copy Always** from the drop-down list.  
 
@@ -126,9 +125,9 @@ You can view a report and view the dataset and layout on a computer that does no
 
 9. In the **Toolbox** window, under **Reporting**, drag a new **ReportViewer** control to Form1.  
 
-     ![Visual Studio ReportViewer control](media/Plat_ExportReport_ReportViewerCtrl.png "Plat\_ExportReport\_ReportViewerCtrl")  
+     ![Visual Studio ReportViewer control.](media/Plat_ExportReport_ReportViewerCtrl.png "Plat\_ExportReport\_ReportViewerCtrl")  
 
-    If you do not see the ReportViewer control, or the ReportViewer control version in earlier than 14.0.0.0, then see  view see [Integrating Reporting Services Using ReportViewer Controls - Get Started](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started#adding-the-reportviewer-control-to-a-new-windows-forms-project) to learn how to add the control to a Windows form application project.
+    If you do not see the ReportViewer control, or the ReportViewer control version in earlier than 14.0.0.0, then see  view see [Integrating Reporting Services Using ReportViewer Controls - Get Started](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started#adding-the-reportviewer-control-to-a-new-windows-forms-project) to learn how to add the control to a Windows form application project.
 
     > [!TIP]  
     >  If the **Toolbox** window is not visible, then on the **View** menu, choose **Toolbox**.  
@@ -138,7 +137,7 @@ You can view a report and view the dataset and layout on a computer that does no
 
 10. Select the report viewer control, and then in the **Properties** window, under **Misc**, expand **Local Report**, and then set the **ReportEmbeddedResource** property, to **OfflineReport.Report.rdlc**.  
 
-     ![Visual Studio, ReportEmbeddedResource property](media/Plat_ExportReport_ReportEmbeddedResource.png "Plat\_ExportReport\_ReportEmbeddedResource")  
+     ![Visual Studio, ReportEmbeddedResource property.](media/Plat_ExportReport_ReportEmbeddedResource.png "Plat\_ExportReport\_ReportEmbeddedResource")  
 
     > [!NOTE]  
     >  If your report includes external images, then in the **Properties** window of the report viewer control, you must set the **EnableExternalImages** property to **True**.  
@@ -148,11 +147,11 @@ You can view a report and view the dataset and layout on a computer that does no
 
 11. In Solution Explorer, select the OfflineReport project, and on the shortcut menu, choose **Add**, and then choose **Class**.  
 
-     ![Visual Studio 2010, Add a Class to a solution](media/Plat_ExportReport_AddClass.png "Plat\_ExportReport\_AddClass")  
+     ![Visual Studio 2010, Add a Class to a solution.](media/Plat_ExportReport_AddClass.png "Plat\_ExportReport\_AddClass")  
 
 12. In the **Add New Item** window, under **Installed Templates**, choose **Visual C\# Items**, and then choose **Class**.  
 
-     ![Visual Studio, Add a Class, select Visual C&#35; class](media/Plat_ExportReport_SelectClass.png "Plat\_ExportReport\_SelectClass")  
+     ![Visual Studio, Add a Class, select Visual C&#35; class.](media/Plat_ExportReport_SelectClass.png "Plat\_ExportReport\_SelectClass")  
 
 13. In the **Name** field, enter **CreateDataSource.cs**, and then choose **Add**.  
 
@@ -209,7 +208,7 @@ You can view a report and view the dataset and layout on a computer that does no
 
 19. On the **Debug** menu, choose **Start Debugging** to view the report in the report viewer control.  
 
-     ![Visual Studio 2010, Debug menu, Start Debugging](media/Plat_ExportReport_Report.png "Plat\_ExportReport\_Report")  
+     ![Visual Studio 2010, Debug menu, Start Debugging.](media/Plat_ExportReport_Report.png "Plat\_ExportReport\_Report")  
 
 20. To make changes to the report layout, in Solution Explorer, right-click Report.rdlc, and then choose **Open**.  
 

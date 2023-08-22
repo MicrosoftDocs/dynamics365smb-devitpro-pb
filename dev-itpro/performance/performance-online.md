@@ -1,25 +1,25 @@
 ---
 title: "Performance in Business Central Online"
+description: Learn about how you can improve performance for environments in Business Central online. 
 ms.custom: na
-ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: KennieNP
+ms.date: 04/01/2021
 ---
 
-# Performance in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online
+# Performance in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
 
-These sections describe how settings in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online impact the performance experience of users. 
+These sections describe how settings in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online impact the performance experience of users. 
 
 ## Performance on sandbox environments
 
-The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service offers the ability to test code in a sandbox environment before to deploying to a production environment. 
+The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service offers the ability to test code in a sandbox environment before to deploying to a production environment. 
 
 <!-- section partly rephrased -->
-Users often can't get the same performance and reliability in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online as they get in their production environments. This discrepancy is caused by a couple factors.
+Users often can't get the same performance and reliability in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online as they get in their production environments. This discrepancy is caused by a couple factors.
 
 Firstly, it's the nature of the operations that our users do in the sandbox environments. Some typical examples of this are:
 
@@ -32,26 +32,6 @@ Secondly, it is because the sandbox services configuration. Sandbox configuratio
 <!--
 Due to the nature of the operations our users perform in the sandbox environments, such as (for instance frequent publishing and installation of per-tenant extensions (PTEs), which are not yet of production quality, creating multiple companies for different users to try their scenarios, initializing test environments with data via RapidStart, and so on etc.), and due to the Sandbox services configuration (with more density, and very different thresholds), the users will often cannot get the same performance and reliability as they get in their production environments.  -->
 
-## Telemetry
-
-For monitoring and analyzing performance issues in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals from. For more information, see [Sending telemetry to Microsoft Azure Application Insights](../administration/tenant-admin-center-telemetry.md#appinsights). 
-
-Here are some ways where telemetry can help troubleshoot performance issues:
-
-| Area | Telemetry | Why |
-|---------------------------|------------|------------|
-| Page Background Task      | [Authorization signal](../administration/telemetry-authorization-trace.md)   | Each page background task will open a new session. Any expensive action in the OnCompanyOpen trigger will slow down opening new sessions. | 
-| Sign-in      | [Authorization signal](../administration/telemetry-authorization-trace.md)   | Any expensive action in the OnCompanyOpen trigger will slow down opening new sessions. | 
-| Something was slow during this period of time | [Company lifecycle signal](../administration/telemetry-company-lifecycle-trace.md) | Check whether a copy-company operation was running while the performance issue occurred. |
-| Something was slow during this period of time | [Database locks signal](../administration/telemetry-database-locks-trace.md) | Maybe the performance issue was because of locking in the database. |
-| Suddenly the XYZ page is slow | [Extension lifecycle signal](../administration/telemetry-extension-update-trace.md) | Maybe an extension was installed that interferes with the page in question.|
-| Some pages or reports are slow to load | [Long running SQL queries](../administration/telemetry-long-running-sql-query-trace.md) | Investigate whether the data operations on the page or report are taking a long time to complete. |
-| A report is slow | [Report signal](../administration/telemetry-reports-trace.md)  | Check whether the report is reading more data than you expected. |
-| System UI feels slow | [Web service requests signal](../administration/telemetry-webservices-trace.md) | Calling your environment too  aggressively with web service requests can affect performance of the system. |
-
-
-
-This page shows an overview of all currently available signals: [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
 
 ## Operational Limits
 

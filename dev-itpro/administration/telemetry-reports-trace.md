@@ -2,25 +2,27 @@
 title: Report Generation Telemetry Trace | Microsoft Docs
 description: Learn about the report telemetry in Business Central  
 author: jswymer
-ms.service: dynamics365-business-central
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/01/2020
+ms.date: 05/31/2023
 ms.author: jswymer
+ms.reviewer: jswymer
+ms.custom: bap-template
+ms.service: dynamics365-business-central
 ---
 
-# Analyzing Report Generation Telemetry
+# Analyzing Report Telemetry
 
 [!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
 
-Report generation telemetry gathers data about reports that are run on the service. It provides information about whether the report dataset generation succeeded, failed, or was canceled. For each report, it tells you how long it ran, how many SQL statements it executed, and how many rows it consumed.
+Report telemetry gathers data about which reports are run on the environment. It provides information about whether the report succeeded, failed, or was canceled. For each report, it tells you how long it ran, how many SQL statements it executed, and how many rows it consumed.
 
-You use this data to gather statistics to help identify slow-running reports.
+You use this data to gather statistics on report usage or to help identify slow-running reports.
 
-## Success report generation
+> [!TIP]
+> The time spent to run a report consists of two parts: generating the dataset and rendering the report (applying the layout). In report telemetry, you get two durations: serverExecutionTime and totalTime. The former is roughly the time it takes for the server to generate the dataset. To calculate the rendering time, simply subtract serverExecutionTime from totalTime: renderingTime = totalTime - serverExecutionTime.
+
+## Successful report generation
 
 Occurs when a report dataset generates without any errors.
 
@@ -30,9 +32,10 @@ The following table explains the general dimensions of this trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|operation_Name|**Success report generation**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
+|operation_Name|**Success report generation**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventId` column custom in Kusto queries instead of `operation_Name`.|
 |message|Version 16.1 and later:<br />**Report rendered: {report ID} - {report name}**<br /><br />Before version 16.1:<br />**The report {report ID} '{report name}' rendered successfully**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -50,17 +53,18 @@ The custom dimensions that are of particular interest for this operation include
 -->
 
 |Dimension|Description or value|
-|---------|-----|-----------|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|---------|-----|
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company for which the report was run.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|documentFormat|Specifies the format of the report outputs as a result of the report action. See [documentFormat](#documentFormat). This dimension was added in version 20.0.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0006**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
@@ -68,14 +72,45 @@ The custom dimensions that are of particular interest for this operation include
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
 |numberOfRows|Specifies the number of rows/records generated for the report dataset.|
+|reportAction|Specifies the action that was done on the report. See [reportAction](#reportAction). This dimension was added in version 20.0.|
+|reportingEngine | Specifies the reporting engine used to generate the report, such as **ProcessingOnly**, **Rdlc**, or **Word**. This dimension was added in version 17.3 |
 |result|**Success**|
 |serverExecutionTime|Specifies the amount of time it took the service to complete the request<sup>[\[1\]](#1)</sup>. The time has the format hh:mm:ss.sssssss.|
+|sqlDatabaseAccessIntent | Specifies the database access intent used to read data for the report, such as **ReadOnly**, or **ReadWrite**. This dimension was added in version 19.1. |
 |sqlExecutes|Specifies the number of SQL statements that the report executed<sup>[\[1\]](#1)</sup>.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements<sup>[\[1\]](#1)</sup>.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report<sup>[\[1\]](#1)</sup>. The time has the format hh:mm:ss.sssssss.|
 
 <sup><a name=1>1</a></sup>From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
+
+### <a name=reportAction></a>reportAction
+
+The reportAction dimension shows actions taken to generate a report. The action can be taken from the report request page, for example, from the **Send To** menu,  or from AL code.
+
+|Value|Description|
+|-----|-----------|
+|None|There were no results from the request page, for example, the user canceled.|
+|Print|The user selected to print the report.|
+|Preview|The user selected to preview the report from the request page.|
+|Save|The report was saved to a file by a call to the [SaveAs method](/dynamics365/business-central/dev-itpro/developer/methods-auto/report/report-saveas-method) in AL code.|
+|Schedule|The user selected to schedule the report from the request page.|
+|Download|The user downloaded the report as a file from the request page.  |
+|Parameters|Parameters and filters were collected from the request page without rendering the output.|
+
+### <a name=documentFormat></a>documentFormat
+
+The documentFormat dimension shows the output of the generated report as a result of the report action. The action can be taken from the report request page, for example, from the **Send To** menu,  or from AL code.
+
+|Value|Description|
+|-----|-----------|
+|None|There was no output, for example, the user canceled.|
+|Rdlc|The output was a .rdlc file type.|
+|Word|The output was a .docx file type.|
+|Excel|The output was a .xlsx file type that included the layout and dataset.|
+|ExcelDataset|The output was a .xlsx file type that contained the dataset only.|
+|Custom|The output was an custom file type.|
+|ProcessingOnly|The action was for processing report without any kind of layout.|
 
 ## Failed report generation
 
@@ -90,22 +125,24 @@ The following table explains the general dimensions of the **Failed report gener
 |message|Version 16.1 and later:<br />**Report rendering failed: {report ID} - {report name}**<br /><br />Before version 16.1:<br />**The report {report ID} '{report name}' couldn't be rendered**|
 |operation_Name|**Failed report generation**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
 |severityLevel|**3**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
 |alStackTrace|The stack trace in AL.|
 |cancelReason<sup>[\[2\]](#2)</sup>|Specifies why the report was canceled. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company for which the report was run.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|documentFormat|Specifies the format of the report outputs as a result of the report action. See [documentFormat](#documentFormat). This dimension was added in version 20.0.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0006**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
@@ -113,14 +150,16 @@ The following table explains the general dimensions of the **Failed report gener
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
 |numberOfRows|Specifies the number of rows/records generated for the report dataset.|
+|reportAction|Specifies the action that was done on the report. See [reportAction](#reportAction). This dimension was added in version 20.0.|
+|reportingEngine| Specifies the reporting engine used to generate the report, such as **ProcessingOnly**, **Rdlc**, or **Word**. This dimension was added in version 17.3 |
 |result|Specifies the title of the exception that was thrown, such as **NavNCLDialogException**.|
 |serverExecutionTime|Specifies the amount of time used by service on the request. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that the report executed. |
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to generate the dataset and render the report before it failed. The time has the format hh:mm:ss.sssssss.|
 
-<sup><a name=2></a>2</sup> Available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2 and later only. 
+<sup><a name=2></a>2</sup> Available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and later only. 
 
 ### Analyzing report generation failures
 
@@ -139,20 +178,21 @@ The following table explains the general dimensions of the **Cancellation report
 |operation_Name|**Cancellation report generation**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
 |message|Specifies the reason why the report was canceled. See [Analyzing cancellation messages](#reportcancellation) section for details.|
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company for which the report was run.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
@@ -160,7 +200,7 @@ The following table explains the general dimensions of the **Cancellation report
 |extensionId|Specifies the appID of the extension that the report object belongs to.|
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ### <a name="reportcancellation"></a>Analyzing report cancellations
 
@@ -183,7 +223,7 @@ The service is configured to cancel reports if they take longer to generate than
 
 #### The rendering of the word report has been cancelled because it took longer than the specified threshold ({0})"
 
-This message occurs when a report that based on a Word layout takes longer to generate than the specified threshold. The event is only relevant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. There's no timeout for on-premises.
+This message occurs when a report that based on a Word layout takes longer to generate than the specified threshold. The event is only relevant for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. There's no timeout for on-premises.
 
 #### The number of processed rows exceeded ({0} rows) the maximum number of rows ({1} rows). Requesting cancellation of the action.
 
@@ -201,21 +241,22 @@ The following table explains the general dimensions of the **Report cancelled bu
 |---------|-----|
 |message|The report \<ID\> \'\<Name\>' is being canceled, but a COMMIT() has been performed. This can lead to data inconsistency if the report is not idempotent|
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
 |alStackTrace|The stack trace in AL.|
 |cancelReason|The reason why the report was cancelled|
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company for which the report was run.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
@@ -224,7 +265,7 @@ The following table explains the general dimensions of the **Report cancelled bu
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionPublisher|Specifies the name of the extension publisher that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 
 
@@ -246,13 +287,13 @@ The following table explains the CustomDimensions included in report generation 
 |Dimension|Description or value||
 |---------|-----|-----------|
 |extensionVersion|Specifies the version of the extension.||
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.||
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.||
 |serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |sqlExecutes|Specifies the number of SQL statements that the request executed. ||
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. ||
-|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. ||
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. ||
+|companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used at time of execution. ||
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.||
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).||
 |totalTime|Specifies the amount of time it took for the service to process the request. The time has the format hh:mm:ss.sssssss.||
@@ -273,21 +314,21 @@ Report cancellation
 
 Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
 |alStackTrace|| 
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company for which the report was run.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |extensionId|Specifies the appID of the extension that the report object belongs to.|
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
-|telemetry"chemaVersio"|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.||
+|telemetry"chemaVersio"|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.||
 
 ## Example trace
 
@@ -311,5 +352,4 @@ The following code snippet is a CustomDimensions example for a successful report
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
-[Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
+[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

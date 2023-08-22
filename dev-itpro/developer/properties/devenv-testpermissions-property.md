@@ -1,36 +1,37 @@
 ---
 title: "TestPermissions Property"
+description: "Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.author: solsen
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestPermissions Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Specifies a value that can be used to determine which permission sets are used on tests that are run by test codeunits. Test codeunits are codeunits that have the **SubType** property set to **Test**.
+Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions.
 
 ## Applies to
+-   Codeunit
 
-- Test codeunits
-    
-## Property values
+## Property Value
 
-The property has the following values: 
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**InheritFromTestCodeunit**|runtime version 1.0|Is only relevant for test methods; not test codeunits. It specifies that a test method uses the TestPermissions property setting of the test codeunit to which it belongs. If you use this value on a test codunit, the property will resolve to Restrictive at runtime.|
+|**Restrictive**|runtime version 1.0|This is the default value. Setting the Restrictive value will cause the permission execution context of every test in the codeunit to be set by default to 'D365 Full Access’. It is required to lower the level of permissions within every test to any permission sets other than 'D365 Full Access’. Otherwise, it will result in a runtime error. The change of the permission execution context is supported by  Codeunit "Library - Lower Permissions".|
+|**NonRestrictive**|runtime version 1.0|Setting the NonRestrictive value will cause that the permission execution context of every test in the codeunit is set to 'D365 Full Access’. Opposite to Restrictive, setting the TestPermissions property to NonRestrictive does not require a change of permissions.|
+|**Disabled**|runtime version 1.0|Setting this value will exclude any change of the permission execution context and all tests will be executed using SUPER.|
 
-* **Disabled**
-* **Restrictive**
-* **NonRestrictive**
-* **InheritFromTestCodeunit**
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-    **InheritFromTestCodeunit** is only relevant for test methods; not test codeunits. It specifies that a test method uses the TestPermissions property setting of the test codeunit to which it belongs. If you use this value on a test codeunit, the property will resolve to **Restrictive** at runtime.
-
-Apart from **InheritFromTestCodeunit**, the values themselves do not perform any operations or have any specific behavior. Instead, you programmatically define what each value does, and the permissions sets it applies at runtime, by adding code in a test runner codeunit.
 
 ## Syntax
 
@@ -40,22 +41,16 @@ TestPermissions = Disabled;
 
 ## Remarks
 
-The **TestPermissions** property works together with the **OnBeforeTestRun** and **OnAfterTestRun** triggers in test runner codeunits. The value of the **TestPermissions** property is passed as a parameter to the test runner codeunit triggers. The permission sets that are used during a test are determined by the code that you add to the triggers. Typically, you use the **OnBeforeTestRun** trigger to apply permissions sets and the **OnAfterTestRun** trigger to clear permissions sets.
+The default value of `TestPermissions` is `Restrictive`. The **TestPermissions** property works together with the **OnBeforeTestRun** and **OnAfterTestRun** triggers in test runner codeunits. The value of the **TestPermissions** property is passed as a parameter to the test runner codeunit triggers. The permission sets that are used during a test are determined by the code that you add to the triggers. Typically, you use the **OnBeforeTestRun** trigger to apply permissions sets and the **OnAfterTestRun** trigger to clear permissions sets.
+
+Tests have the `TestPermissions` property by default set to `Restrictive`. With the **Permissions Mock** system app in the test framework library, you can mock permissions when running unit tests. The **Permissions Mock** module can be used to add permissions sets to the running test user, or limit the user's permissions.
+
+For more information, see the open source module [Permissions Mock](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/DevTools/TestFramework/TestLibraries/Permissions%20Mock).
 
 > [!NOTE]  
-> To specify the permission sets that are used by the tests run by a specific test method, use the [TestPermissions Attribute](../methods/devenv-testpermissions-attribute.md).
+> To specify the permission sets that are used by the tests run by a specific test method, use the [TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute).
 
 ## See Also
 
 [Properties](devenv-properties.md)  
-[TestPermissions Attribute](../methods/devenv-testpermissions-attribute.md)
-<!--
-## See Also
-[Testing With Permission Sets](../devenv-testing-permissionsets.md)  
-[Testing the Application](../devenv-Testing-the-Application.md)  
-[How to: Create a Test Runner Codeunit](../devenv-How-to-Create-a-Test-Runner-Codeunit.md)  
-[How to: Create Test Codeunits and Test Methods](../methods/devenv-How-to-Create-Test-Codeunits-and-Test-Methods.md)  
-[How to: Create Handler Methods](../methods/devenv-How-to-Create-Handler-Methods.md)  
-[Walkthrough: Testing Purchase Invoice Discounts](../Walkthrough--Testing-Purchase-Invoice-Discounts.md)  
-[OnAfterTestRun Trigger](../triggers/devenv-trigger-onaftertestrun.md)  
-[OnBeforeTestRun Trigger](../triggers/devenv-trigger-onbeforetestrun.md)  -->
+[TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute)

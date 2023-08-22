@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 56de551c-f53e-4ab9-a738-3f9a58beb853
 caps.latest.revision: 8
-manager: edupont
 ---
 # C/AL ASSERTERROR Statements
 You use ASSERTERROR statements in test functions to test how your application behaves under failing conditions. The ASSERTERROR keyword specifies that an error is expected at run time in the statement that follows the ASSERTERROR keyword.  

@@ -1,25 +1,27 @@
 ---
-title: "JsonArray.SelectToken Method"
+title: "JsonArray.SelectToken(Text, var JsonToken) Method"
+description: "Selects a JsonToken using a JPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonArray.SelectToken Method
+# JsonArray.SelectToken(Text, var JsonToken) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Selects a JsonToken using a JPath expression.
 
 
 ## Syntax
-```
-[Ok := ]  JsonArray.SelectToken(Path: String, var Result: JsonToken)
+```AL
+[Ok := ]  JsonArray.SelectToken(Path: Text, var Result: JsonToken)
 ```
 ## Parameters
 *JsonArray*  
@@ -27,18 +29,18 @@ Selects a JsonToken using a JPath expression.
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 
 *Path*  
-&emsp;Type: [String](../string/string-data-type.md)  
-A valid JPath expression.
-        
+&emsp;Type: [Text](../text/text-data-type.md)  
+A valid JPath expression.  
+
 *Result*  
 &emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)  
 A **JsonToken** variable that will contain the result if the operation is successful.  
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the read was successful; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the read was successful; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -75,15 +77,17 @@ var
     query : Text;
     salaryToken : JsonToken;
 begin
-    query := '$.company.employees[?(@.id=="'+employeeId+'")].salary';
+    query := '$.company.employees[?(@.id=='''+employeeId+''')].salary';
     companyData.SelectToken(query, salaryToken);
 
     salary := salaryToken.AsValue().AsDecimal();    
 end;
 ```
 
+> [!NOTE]
+> Ensure that the selected expression contains ' (single quotation mark) and not " (double quotation mark) to decorate the string value.
 
 ## See Also
 [JsonArray Data Type](jsonarray-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

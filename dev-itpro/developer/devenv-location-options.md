@@ -1,13 +1,13 @@
 ---
 title: "LocationOptions Overview"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: overview
 author: blrobl
+description: Discover Dynamics365 Business Central Location Options - EnableHighAccuracy, Timeout, MaximumAge & more. Enhance your AL implementation.
 ---
 # LocationOptions Overview
 When implementing location from AL, there are some options that you can optionally pass to `LocationProvider.RequestLocationAsync(options)`. The options can be accessed by using `Microsoft.Dynamics.Nav.Client.Capabilities.LocationOptions` found in the `Microsoft.Dynamics.Nav.ClientExtensions` dll.  

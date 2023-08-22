@@ -1,12 +1,12 @@
 ---
 title: "IsUpdated Operation"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
+description: Discover Dynamics 365 Business Central's IsUpdated Operation - check object updates, manage concurrency, and prevent record change failures.
 ---
 # IsUpdated Operation
 Checks if an object has been updated since the key was obtained. This operation returns **true** if the object has been updated by any user; otherwise, **false**. Concurrency management prevents a record being changed if it has been subsequently updated. This check proactively prevents that failure.  

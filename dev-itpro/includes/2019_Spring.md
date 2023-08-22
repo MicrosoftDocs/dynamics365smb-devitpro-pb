@@ -1,1 +1,1 @@
-<Token> **APPLIES TO:** Business Central Spring 2019 and earlier</Token>
+> **APPLIES TO:** Business Central Spring 2019 and earlier

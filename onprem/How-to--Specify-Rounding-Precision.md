@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 948cdeb0-07cf-4e89-800d-5ead0addd263
 caps.latest.revision: 13
-manager: edupont
 ---
 # How to: Specify Rounding Precision
 In Visual Studio Report Designer, you can use the **ROUND** function to round a double-precision floating point value to the nearest integer. However, this function does not have options for changing the precision to which you want to round. For example, you cannot round to the nearest tenth or nearest hundredth of a number, only to the nearest integer. To specify precision when using the **ROUND** function, you must multiply the number by a factor of 10, call the **ROUND** function, and then divide the rounded number by the same factor of 10. The factor that you choose depends on the degree of precision that you want. For example, if you want to round the number 12.3456 to the nearest hundredth, you would multiply 12.3456 by 100 to get 1234.56. Next, call the ROUND function on 1234.56. The **ROUND** function rounds to the nearest integer, resulting in the number 1235. Finally, divide the rounded number, 1235, by the factor, 100, to get 12.35. This result is the same as rounding the original number, 12.3456, to the nearest hundredth.  

@@ -1,13 +1,12 @@
 ---
 title: "OpenWindow Method"
-description: "The OpenWindow method in AL for Business Central"
+description: "The OpenWindow method in control add-in for Business Central"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: solsen
 ---
 
@@ -27,7 +26,7 @@ Opens a new browser window which navigates to the specified URL. The benefit of 
 ## See Also
 
 [AL Method Reference](../methods-auto/library.md)  
-[InvokeExtensibilityMethod Method](devenv-invokeextensibility-method.md)   
-[GetImageResource Method](devenv-getimageresource-method.md)   
 [GetEnvironment Method](devenv-getenvironment-method.md)  
+[GetImageResource Method](devenv-getimageresource-method.md)   
+[InvokeExtensibilityMethod Method](devenv-invokeextensibility-method.md)   
 [Asynchronous Considerations](../devenv-control-addin-asynchronous-considerations.md)

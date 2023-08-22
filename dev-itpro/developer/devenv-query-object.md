@@ -2,19 +2,18 @@
 title: "Query Object"
 description: "Description of the query object."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
 
 # Query Object
 
-[!INCLUDE[prodshort](includes/prodshort.md)] query objects enable you to retrieve records from one or more tables and then combine the data into rows and columns in a single dataset. Query objects can also perform calculations on data, such finding the sum or average of all values in a column of the dataset.
+[!INCLUDE[prod_short](includes/prod_short.md)] query objects enable you to retrieve records from one or more tables and then combine the data into rows and columns in a single dataset. Query objects can also perform calculations on data, such finding the sum or average of all values in a column of the dataset.
 
 There are two types of query objects: normal and API. This article describes normal query objects, which can be used to display data in the user interface. API query objects are used to generate web service endpoints and cannot be displayed in the user interface. For information about creating a query of the type API, see [API Query Type](devenv-api-querytype.md).
 <!-- 
@@ -103,6 +102,8 @@ query 50102 "Top Customer Overview"
     QueryType = Normal;
     Caption = 'Top Customer Overview';
 
+    DataAccessIntent = ReadOnly; // use this to read data from the secondary database replica to speed up performance
+
     elements
     {
         dataitem(Customer; Customer)
@@ -162,6 +163,7 @@ query 50102 "Top Customer Overview"
 [Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  
 [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)  
 [Query Properties](properties/devenv-query-properties.md)  
+[Query DataAccessIntent](properties/devenv-dataaccessintent-property.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [API Query Type](devenv-api-querytype.md)  

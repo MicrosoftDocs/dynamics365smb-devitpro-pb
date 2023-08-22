@@ -1,24 +1,26 @@
 ---
-title: "XmlNamespaceManager.PushScope Method"
+title: "XmlNamespaceManager.PushScope() Method"
+description: "Pushes a namespace scope onto the stack."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlNamespaceManager.PushScope Method
+# XmlNamespaceManager.PushScope() Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Pushes a namespace scope onto the stack.
 
 
 ## Syntax
-```
+```AL
  XmlNamespaceManager.PushScope()
 ```
 
@@ -31,5 +33,5 @@ An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlNamespaceManager Data Type](xmlnamespacemanager-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

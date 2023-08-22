@@ -1,40 +1,42 @@
 ---
-title: "System.ExportObjects Method"
+title: "System.ExportObjects(Text, var Record [, Integer]) Method"
+description: "Exports application objects to a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.ExportObjects Method
+# System.ExportObjects(Text, var Record [, Integer]) Method
+> **Version**: _Available or changed with runtime version 1.0 until version 1.0 where it was deprecated._
+
 Exports application objects to a file.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
+```AL
+ System.ExportObjects(FileName: Text, var ObjectRecord: Record [, Format: Integer])
 ```
- System.ExportObjects(FileName: String, var ObjectRecord: Record [, Format: Integer])
-```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The path of the file to export to.
-        
+&emsp;Type: [Text](../text/text-data-type.md)  
+The path of the file to export to.  
+
 *ObjectRecord*  
 &emsp;Type: [Record](../record/record-data-type.md)  
-A record to the Object table.
-        
-*Format*  
+A record to the Object table.  
+
+*[Optional] Format*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The format to use when exporting.  
 
@@ -43,5 +45,5 @@ The format to use when exporting.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

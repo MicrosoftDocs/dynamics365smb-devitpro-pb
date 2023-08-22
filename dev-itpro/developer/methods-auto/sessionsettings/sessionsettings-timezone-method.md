@@ -1,62 +1,71 @@
 ---
-title: "SessionSettings.TimeZone Method"
+title: "SessionSettings.TimeZone([Text]) Method"
+description: "Gets or sets the time zone property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SessionSettings.TimeZone Method
+# SessionSettings.TimeZone([Text]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets or sets the time zone property in a SessionSettings object.
 
 
 ## Syntax
+```AL
+[TimeZone := ]  SessionSettings.TimeZone([NewTimeZone: Text])
 ```
-[TimeZone := ]  SessionSettings.TimeZone([NewTimeZone: String])
-```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
 *SessionSettings*  
 &emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
 An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
 
-*NewTimeZone*  
-&emsp;Type: [String](../string/string-data-type.md)  
+*[Optional] NewTimeZone*  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the time zone property in the SessionsSettings object. The value must be a valid Windows time zone name, such as **UTC** or **Pacific Standard Time**.  
 
 
 ## Return Value
-*TimeZone*  
-&emsp;Type: [String](../string/string-data-type.md)  
+*[Optional] TimeZone*  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The time zone set in the SessionSettings object.
-        
+      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example
-This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the TIMEZONE method to set the time zone to 'UTC' (Coordinated Universal Time). Finally, the REQUESTSESSIONUPDATE method sends a request to the client to abnandon the current session and start a new session that uses the new profile ID. This example requires a SessionSettings data type variable.
+## Remarks
 
-```
+The default time zone is **UTC**. This method can also be used with web service sessions.
+
+## Example
+
+This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the TimeZone method to set the time zone to 'UTC' (Coordinated Universal Time). Finally, the RequestSessionUpdate method sends a request to the client to abandon the current session and start a new session that uses the new profile ID. This example requires a SessionSettings data type variable.
+
+```al
 var
   MySessionSettings : SessionSettings;
 begin
-  MySessionSettings.INIT;
-  MySessionSettings.TIMEZONE('UTC');
-  MySessionSettings.REQUESTSESSIONUPDATE(false);
+  MySessionSettings.Init;
+  MySessionSettings.TimeZone('UTC');
+  MySessionSettings.RequestSessionUpdate(false);
 end;  
 ```  
 
 
 ## See Also
+
 [SessionSettings Data Type](sessionsettings-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Get Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  
+[Managing Time Zones with Web Services](../../../webservices/Managing-Time-Zones-with-Web-Services.md)

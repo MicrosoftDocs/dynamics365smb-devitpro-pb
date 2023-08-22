@@ -2,12 +2,11 @@
 title: "Change a Module in the System Application"
 description: "This topic provides steps and examples of how to change a module in the System Application."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: bholtorf
 ---
 
@@ -15,8 +14,8 @@ author: bholtorf
 This topic provides an overview of how to change an existing module.
 
 ## Requirements
-1. Familiarity with development in AL. For more information, see [AL Development](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-get-started).  
-2. Your development environment is ready. For more information, see [Development Environment](https://github.com/microsoft/ALAppExtensions/blob/master/DevEnvironment.md).
+1. Familiarity with development in AL. For more information, see [AL Development](./devenv-get-started.md).  
+2. Your local repository and development environment are ready. For more information, see [Set Up an Environment for Developing a Module](./devenv-set-up-an-environment.md).
 
 > [!NOTE]
 > Your environment must have the correct symbols. Go get those, in Visual Studio Code, press **F1**, and then choose **AL: Download Symbols**. Also, make a note of the **server** and **serverInstance** settings. You will add that information to the launch.json file.
@@ -24,13 +23,15 @@ This topic provides an overview of how to change an existing module.
 Your changes must follow the guidelines for module architecture. For more information, see [Module Architecture](devenv-blueprint.md). When changing an existing module, do not introduce breaking changes, that is, make sure that you do not break existing functionality. Existing tests must still pass, and you should add new tests for the functionality that you change or add.
 
 ### Set Up Visual Studio Code for Module Development
+
 Open the **launch.json**, file and update the **server**, **serverInstance**, and **authentication** settings, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
 
 ```json
-    "server": "https://YourDockerContainerName",
+    "server": "http://YourDockerContainerName",
     "serverInstance": "BC",
-    "authentication": "Windows",
+    "authentication": "UserPassword",
 ```
+
 Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
 
 ### Create a Branch
@@ -40,7 +41,7 @@ To create a branch, run the **git checkout -b "YourFeatureBranchName"** command.
 The following sections provide an example of how to contribute to an existing module. The example is based on a previous contribution to the Base64 Convert module, which has been published in the AlAppExtensions repository. The contribution added support for text encodings other than UTF8. If you're interested, you can view the original pull request at [Pull Request 7676](https://github.com/microsoft/ALAppExtensions/pull/7676).
 
 ### Make Changes to a Module
-Before making changes, make sure you are familiar with the general architecture of system modules. For more information, see [Module Architecture](devenv-blueprint.md). You can also check out the article titled [How to add a system module](https://github.com/microsoft/ALAppExtensions/blob/master/How-to-add-a-module.md) for an example of creating a full system module.
+Before making changes, make sure you are familiar with the general architecture of system modules. For more information, see [Module Architecture](devenv-blueprint.md). You can also check out the article titled How to add a system module for an example of creating a full system module.
 
 We'll start by adding the functions that we need to support different text encodings to the internal implementation codeunit. We'll add the following functions to the **System/Base64 Convert/src/Base64ConvertImpl.Codeunit.al** implementation codeunit:
 
@@ -231,6 +232,7 @@ To submit your changes, follow these steps:
 You can now go to your GitHub fork and open a pull request in the AlAppExtensions repository. 
 
 ## See Also
-[Become a contributor](https://blogs.msdn.microsoft.com/nav/2018/08/28/become-a-contributor-to-business-central/)
-[Git going with extensions](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions)
-[Walkthrough: Contributing to an extension on GitHub](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github)
+[Become a contributor](https://blogs.msdn.microsoft.com/nav/2018/08/28/become-a-contributor-to-business-central/)  
+[Git going with extensions](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions)  
+[Walkthrough: Contributing to an extension on GitHub](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github)  
+[Create a new module](devenv-new-module.md)  

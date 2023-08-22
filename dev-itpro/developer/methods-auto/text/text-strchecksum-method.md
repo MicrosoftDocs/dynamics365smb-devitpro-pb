@@ -1,38 +1,40 @@
 ---
-title: "Text.StrCheckSum Method"
+title: "Text.StrCheckSum(Text [, Text] [, Integer]) Method"
+description: "Calculates a checksum for a string that contains a number."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.StrCheckSum Method
+# Text.StrCheckSum(Text [, Text] [, Integer]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Calculates a checksum for a string that contains a number. If the source is empty, 0 is returned. Each char in the source and in the weight must be a numeric character 0-9, otherwise an exception is thrown. If the WeightString parameter is shorter then the source, it is padded with '1' up until the length of source. If the WeightString parameter is longer than the source, an exception is thrown.
 
 
 ## Syntax
+```AL
+CheckNumber :=   Text.StrCheckSum(String: Text [, WeightString: Text] [, Modulus: Integer])
 ```
-CheckNumber :=   Text.StrCheckSum(String: String [, WeightString: String] [, Modulus: Integer])
-```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
-This string contains the number for which you want to calculate a checksum. You can only enter the numeric characters 0-9 in this string. If you enter anything else, a run-time error will occur. If String is empty, 0 is returned.
-        
-*WeightString*  
-&emsp;Type: [String](../string/string-data-type.md)  
-This string contains numbers that you want to use as weights when calculating the checksum. The default value is a string that contains STRLEN(String) '1'-characters.
-        
-*Modulus*  
+&emsp;Type: [Text](text-data-type.md)  
+This string contains the number for which you want to calculate a checksum. You can only enter the numeric characters 0-9 in this string. If you enter anything else, a run-time error will occur. If String is empty, 0 is returned.  
+
+*[Optional] WeightString*  
+&emsp;Type: [Text](text-data-type.md)  
+This string contains numbers that you want to use as weights when calculating the checksum. The default value is a string that contains STRLEN(String) '1'-characters.  
+
+*[Optional] Modulus*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number that you want to use in the checksum formula. The default value is 10.  
 
@@ -40,16 +42,16 @@ The number that you want to use in the checksum formula. The default value is 10
 ## Return Value
 *CheckNumber*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The resulting checksum value.  
+The resulting checksum value.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example 1
 
- This example shows how to use the STRCHECKSUM method to calculate a checksum.  
+ This example shows how to use the StrCheckSum method to calculate a checksum.  
  
-```  
+```al
 var
     StrNumber: Text[30];
     Weight: Text[30];
@@ -60,8 +62,8 @@ begin
     StrNumber := '4378';  
     Weight := '1234';  
     Modulus := 7;   
-    CheckSum := STRCHECKSUM(StrNumber, Weight, Modulus);   
-    MESSAGE(Text000 + Text001, StrNumber, CheckSum);  
+    CheckSum := StrCheckSum(StrNumber, Weight, Modulus);   
+    Message(Text000 + Text001, StrNumber, CheckSum);  
 end;
 ```  
 
@@ -77,9 +79,9 @@ end;
 
 ## Example 2
 
- This example shows how to use the STRCHECKSUM method to calculate a modulus 10 checksum for a bar code.  
+ This example shows how to use the StrCheckSum method to calculate a modulus 10 checksum for a bar code.  
 
- The STRCHECKSUM method can be used to calculate checksums for 13- and 8-digit European Article Number \(EAN\) and EAN-compatible bar codes such as a Universal Product Code \(UPC\) or Japanese Article Number \(JAN\).  
+ The StrCheckSum method can be used to calculate checksums for 13- and 8-digit European Article Number \(EAN\) and EAN-compatible bar codes such as a Universal Product Code \(UPC\) or Japanese Article Number \(JAN\).  
 
  A 13-digit EAN code has the following format:  
 
@@ -94,7 +96,7 @@ end;
 5.  The modulus 10 checksum is then \(10 - Total MOD 10\) MOD 10.  
 
  
-```  
+```al
 var
     StrNumber: Text[30];
     Weight: Text[30];
@@ -104,8 +106,8 @@ var
 begin
     StrNumber := '577622135746';  
     Weight := '131313131313';  
-    CheckSum := STRCHECKSUM(StrNumber, Weight);  
-    MESSAGE(Text000 + Text001, StrNumber, CheckSum);  
+    CheckSum := StrCheckSum(StrNumber, Weight);  
+    Message(Text000 + Text001, StrNumber, CheckSum);  
 end;
 ```  
 
@@ -118,5 +120,5 @@ end;
 
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

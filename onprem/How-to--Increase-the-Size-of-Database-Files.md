@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: ddf5bdf8-cbb1-4d27-97af-4d6217597549
 caps.latest.revision: 6
-manager: edupont
 ---
 # How to: Increase the Size of Database Files
 You can expand your [!INCLUDE[navnow](includes/navnow_md.md)] SQL Server database by increasing the size of one or more of its constituent database files.  

@@ -1,25 +1,29 @@
 ---
 title: "InstructionalText Property"
+description: "Sets the string used for instructions in the UI."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
-ms.assetid: c90654ad-da85-496c-900a-1c2fc7dd2f2b
-caps.latest.revision: 13
+ms.topic: reference
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # InstructionalText Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Sets the text used for instructions in the UI.  
-  
-## Applies to  
-  
-- Page object  
-- RequestPage
-- PageGroup
+Sets the string used for instructions in the UI.
+
+## Applies to
+-   Page
+-   Request Page
+-   Page Group
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Parameters
 
@@ -37,12 +41,18 @@ Sets the maximum length of the specific InstructionalText.
 
 ## Remarks
 
-The default is an empty string, which means there will be no instructions. According to the user assistance model for [!INCLUDE[prodshort](../includes/prodshort.md)], apps are expected to apply instructional text to setup guides and similar pages.  
+The default is an empty string, which means there will be no instructions. According to the user assistance model for [!INCLUDE[prod_short](../includes/prod_short.md)], apps are expected to apply instructional text to setup guides and similar pages.  
 
 The following example illustrates how you can apply instructional text in an app:  
 
 ```AL
 InstructionalText = 'Add an entity from your list of contacts. The entity can be a person or a company.';
+```
+
+Or, with the parameters:
+
+```AL
+InstructionalText = 'Add an entity from your list of contacts. The entity can be a person or a company.', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 100;
 ```
 
 ## See also

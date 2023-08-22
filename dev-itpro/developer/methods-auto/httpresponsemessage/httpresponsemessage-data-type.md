@@ -1,20 +1,22 @@
 ---
 title: "HttpResponseMessage Data Type"
+description: "Represents an HTTP response message including the status code and data."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/21/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HttpResponseMessage Data Type
-Represents a HTTP response message including the status code and data.
+> **Version**: _Available or changed with runtime version 1.0._
+
+Represents an HTTP response message including the status code and data.
 
 
 
@@ -24,10 +26,10 @@ The following methods are available on instances of the HttpResponseMessage data
 |-----------|-----------|
 |[Content()](httpresponsemessage-content-method.md)|Gets the contents of the HTTP response.|
 |[Headers()](httpresponsemessage-headers-method.md)|Gets the HTTP response's HTTP headers.|
-|[IsSuccessStatusCode()](httpresponsemessage-issuccessstatuscode-method.md)|Gets a value that indicates if the HTTP response was successful.|
-|[IsBlockedByEnvironment()](httpresponsemessage-isblockedbyenvironment-method.md)|Gets a value that indicates if the HTTP response is the result of the environment blocking an outgoing HTTP request.|
-|[ReasonPhrase()](httpresponsemessage-reasonphrase-method.md)|Gets the reason phrase which typically is sent by servers together with the status code.|
 |[HttpStatusCode()](httpresponsemessage-httpstatuscode-method.md)|Gets the status code of the HTTP response.|
+|[IsBlockedByEnvironment()](httpresponsemessage-isblockedbyenvironment-method.md)|Gets a value that indicates if the HTTP response is the result of the environment blocking an outgoing HTTP request.|
+|[IsSuccessStatusCode()](httpresponsemessage-issuccessstatuscode-method.md)|Gets a value that indicates if the HTTP response was successful.|
+|[ReasonPhrase()](httpresponsemessage-reasonphrase-method.md)|Gets the reason phrase which typically is sent by servers together with the status code.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -38,5 +40,5 @@ The size of the `HttpResponseMessage` is determined by the `HttpClient AL Functi
 > For performance reasons all HTTP, JSON, TextBuilder, and XML types are reference types, not value types. Reference types holds a pointer to the data elsewhere in memory, whereas value types store its own data.
 
 ## See Also
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

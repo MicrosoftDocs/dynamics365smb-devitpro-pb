@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 501c0ec0-d7d6-4752-918a-9e5e87428422
 caps.latest.revision: 52
-manager: edupont
 ---
 # Walkthrough: Installing the Three Tiers On Two Computers
 In this walkthrough, you install a new instance of [!INCLUDE[navnowlong](includes/navnowlong_md.md)] in a production environment with SQL Server and [!INCLUDE[nav_server](includes/nav_server_md.md)] together on one computer and the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] on a second computer.  
@@ -47,11 +46,11 @@ In this walkthrough, you install a new instance of [!INCLUDE[navnowlong](include
 ## Story  
  A consultant wants to install [!INCLUDE[navnowlong](includes/navnowlong_md.md)] in a production environment.  
 
-1.  She installs [!INCLUDE[nav_server](includes/nav_server_md.md)], [!INCLUDE[navnow](includes/navnow_md.md)] database components, and the Demo database on a server running Windows Server \(**NAVSERV**\) where she has already installed Microsoft SQL Server. As part of the installation she provides configuration information to allow the server to communicate with the database.  
+1.  They install [!INCLUDE[nav_server](includes/nav_server_md.md)], [!INCLUDE[navnow](includes/navnow_md.md)] database components, and the Demo database on a server running Windows Server \(**NAVSERV**\) where they have already installed Microsoft SQL Server. As part of the installation they provide configuration information to allow the server to communicate with the database.  
 
-2.  She creates a domain user account in Active Directory and uses [!INCLUDE[nav_admin](includes/nav_admin_md.md)] to configure a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance to run using the account’s domain credentials.  
+2.  They create a domain user account in Active Directory and uses [!INCLUDE[nav_admin](includes/nav_admin_md.md)] to configure a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance to run using the account’s domain credentials.  
 
-3.  She installs the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] on a computer running Windows 10 \(**NAVCLIENT**\) and configures it to communicate with [!INCLUDE[nav_server](includes/nav_server_md.md)].  
+3.  They install the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] on a computer running Windows 10 \(**NAVCLIENT**\) and configures it to communicate with [!INCLUDE[nav_server](includes/nav_server_md.md)].  
 
 ## Installing the [!INCLUDE[navnow](includes/navnow_md.md)] Database Components and [!INCLUDE[nav_server](includes/nav_server_md.md)]  
  When you run [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup, you see a menu of Installation Options. You configure one of those options, the Server Option, to install the SQL Server Database components, the CRONUS International, Ltd., Demo database, and [!INCLUDE[nav_server](includes/nav_server_md.md)], all at the same time.  
@@ -68,11 +67,11 @@ In this walkthrough, you install a new instance of [!INCLUDE[navnowlong](include
 
 5.  On the **Choose an installation option** pane, choose the word **Customize** that is underneath the **Server** option  
 
-     ![Configure Server option](media/ServerConfigure.JPG "ServerConfigure")  
+     ![Configure Server option.](media/ServerConfigure.JPG "ServerConfigure")  
 
 6.  On the **Customize the installation** pane, click within the **SQL Server Database Components** box and select **Run all from my computer**.  
 
-     ![Add Database Components to the Install](media/DBCompRunAll.JPG "DBCompRunAll")  
+     ![Add Database Components to the Install.](media/DBCompRunAll.JPG "DBCompRunAll")  
 
      This specifies that you want to install this component and all sub-components. In this case, there is a single sub-component: the Demo database.  
 
@@ -108,7 +107,7 @@ In this walkthrough, you install a new instance of [!INCLUDE[navnowlong](include
 
 2.  In [!INCLUDE[nav_admin](includes/nav_admin_md.md)], choose the triangle to the left of the local computer to display any instances on the server computer:  
 
-     ![Console root with two server instances](media/ConsoleRootExp.png "ConsoleRootExp")  
+     ![Console root with two server instances.](media/ConsoleRootExp.png "ConsoleRootExp")  
 
 3.  Right-click the default instance \(in the left pane\) and select **Log on Account**.  
 

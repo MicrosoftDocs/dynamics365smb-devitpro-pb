@@ -21,22 +21,22 @@ When you deploy for the first time, you will have a [!INCLUDE[navnow](includes/n
 ### Single Server Instance  
  With the single server instance configuration, each company has its own computer or virtual machine that hosts the [!INCLUDE[navnow](includes/navnow_md.md)] web server instance, [!INCLUDE[nav_server](includes/nav_server_md.md)] instance, and [!INCLUDE[navnow](includes/navnow_md.md)] database. Companies or instances do not share resources.  
   
- ![Scaling NAV on Azure Single instance](media/NAV_Azure_Scaling_SingleInstance.png "NAV\_Azure\_Scaling\_SingleInstance")  
+ ![Scaling NAV on Azure Single instance.](media/NAV_Azure_Scaling_SingleInstance.png "NAV\_Azure\_Scaling\_SingleInstance")  
   
 ### Multiple Companies - Single Database  
  With this configuration, companies share the same [!INCLUDE[navnow](includes/navnow_md.md)] web server instance and [!INCLUDE[nav_server](includes/nav_server_md.md)] instance, and [!INCLUDE[navnow](includes/navnow_md.md)] database on the same computer or virtual machine.  
   
- ![Azure Scaling Multi&#45;Company](media/NAV_Azure_Scaling_MultiCompany.png "NAV\_Azure\_Scaling\_MultiCompany")  
+ ![Azure Scaling Multi&#45;Company.](media/NAV_Azure_Scaling_MultiCompany.png "NAV\_Azure\_Scaling\_MultiCompany")  
   
 ### Multiple Server Instances - Multiple Databases  
  With this configuration, companies have their own [!INCLUDE[navnow](includes/navnow_md.md)] web server instance, [!INCLUDE[nav_server](includes/nav_server_md.md)] instance, and [!INCLUDE[navnow](includes/navnow_md.md)] database. Unlike the single-instance configuration, the [!INCLUDE[navnow](includes/navnow_md.md)] components for the companies are installed on the same computer or virtual machine.  
   
- ![NAV on Azure Multi&#45;Instance Scaling](media/NAV_Azure_Scaling_MultiInstance.png "NAV\_Azure\_Scaling\_MultiInstance")  
+ ![NAV on Azure Multi&#45;Instance Scaling.](media/NAV_Azure_Scaling_MultiInstance.png "NAV\_Azure\_Scaling\_MultiInstance")  
   
 ### Multiple Tenants  
  With this configuration, companies share a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance and application database, but have their own business database. The application database contains tables and information that describe the [!INCLUDE[navnow](includes/navnow_md.md)] application and is not specific to companies. The business database, which is referred to as a tenant, stores business data that is specific to the company.  
   
- ![Scaling NAV using multitenancy](media/NAV_Scaling_Multitenancy.png "NAV\_Scaling\_Multitenancy")  
+ ![Scaling NAV using multitenancy.](media/NAV_Scaling_Multitenancy.png "NAV\_Scaling\_Multitenancy")  
   
 > [!NOTE]  
 >  A tenant database can contain data for one or more companies.  

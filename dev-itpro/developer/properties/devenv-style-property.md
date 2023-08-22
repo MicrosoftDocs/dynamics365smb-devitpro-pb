@@ -1,43 +1,45 @@
 ---
 title: "Style Property"
-description: "Description of the Style property"
-author: SusanneWindfeldPedersen
+description: "Sets a value that determines how text in a field on a page is formatted."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
-ms.assetid: 3ac73e26-7723-46b1-aa15-fd578aa4b56f
-ms.author: solsen
+ms.topic: reference
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Style Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Sets a value that determines how text in a field on a page is formatted. For fields that are included in a **CueGroup**, this property sets the value of the color indicator on the cue.  
+Sets a value that determines how text in a field on a page is formatted. For fields that are included in a CueGroup, this property sets the value of the color indicator on the cue.
 
-## Applies to  
+## Applies to
+-   Page Label
+-   Page Field
 
-- Page field controls that contain text.  
-- Fields in a **CueGroup** control.  
+## Property Value
 
-## Property Value 
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**None**|runtime version 1.0|None|
+|**Standard**|runtime version 1.0|Standard|
+|**StandardAccent**|runtime version 1.0|Blue|
+|**Strong**|runtime version 1.0|Bold|
+|**StrongAccent**|runtime version 1.0|Blue + Bold|
+|**Attention**|runtime version 1.0|Red + Italic|
+|**AttentionAccent**|runtime version 1.0|Blue + Italic|
+|**Favorable**|runtime version 1.0|Bold + Green|
+|**Unfavorable**|runtime version 1.0|Bold + Italic + Red|
+|**Ambiguous**|runtime version 1.0|Yellow|
+|**Subordinate**|runtime version 1.0|Grey|
 
-The following table lists the values and their formatting for text and Cues.  
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-|Value|Text Formatting|Cue color indicator|  
-|-----------|---------------------|-------------------------|  
-|**Standard**|Standard|Standard|  
-|**StandardAccent**|Blue|Not applicable.|  
-|**Strong**|Bold|Not applicable.|  
-|**StrongAccent**|Blue + Bold|Not applicable.|  
-|**Attention**|Red + Italic|Red|  
-|**AttentionAccent**|Blue + Italic|Not applicable.|  
-|**Favorable**|Bold + Green|Green|  
-|**Unfavorable**|Bold + Italic + Red|Red|  
-|**Ambiguous**|Yellow|Yellow|  
-|**Subordinate**|Grey|Grey|  
 
 ## Remarks  
 

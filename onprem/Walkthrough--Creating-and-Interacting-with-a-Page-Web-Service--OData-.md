@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ---
 # Walkthrough: Creating and Interacting with a Page Web Service (OData)
 This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] page as an OData web service, use it in a Visual Studio console application, and change data in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] through the web service.  
@@ -71,7 +70,7 @@ This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](../devel
   
      The browser should now show the web service that you have published, in the format of an AtomPub document.  
   
-     ![Basic AtomPub document for a page](../media/BasAtomPub.JPG "BasAtomPub")  
+     ![Basic AtomPub document for a page.](../media/BasAtomPub.JPG "BasAtomPub")  
   
 ##  <a name="BKMK_CreateConsoleApp"></a> Creating the Console Application  
  Next, you create a C\# console application in Visual Studio.  

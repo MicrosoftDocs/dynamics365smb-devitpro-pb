@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: b2858619-94c9-482b-9547-2a4250317062
 caps.latest.revision: 69
-manager: edupont
 ---
 # Walkthrough: Installing the Three Tiers on Three Computers
 In this walkthrough, you will install [!INCLUDE[navnowlong](includes/navnowlong_md.md)] in a production environment, with each of the three [!INCLUDE[navnow](includes/navnow_md.md)] tiers \(client, server, database\) on a separate computer:  
@@ -53,13 +52,13 @@ In this walkthrough, you will install [!INCLUDE[navnowlong](includes/navnowlong_
 ## Story  
  A consultant wants to install [!INCLUDE[navnowlong](includes/navnowlong_md.md)] in a production environment.  
 
--   She installs [!INCLUDE[navnow](includes/navnow_md.md)] database components on a server running Windows Server \(**NAVSQL**\) where she has already installed Microsoft SQL Server.  
+-   They install [!INCLUDE[navnow](includes/navnow_md.md)] database components on a server running Windows Server \(**NAVSQL**\) where they have already installed Microsoft SQL Server.  
 
--   She installs [!INCLUDE[nav_server](includes/nav_server_md.md)] on a server running Windows Server \(**NAVSERV**\).  
+-   They install [!INCLUDE[nav_server](includes/nav_server_md.md)] on a server running Windows Server \(**NAVSERV**\).  
 
--   She creates a domain user account in Active Directory and uses [!INCLUDE[nav_admin](includes/nav_admin_md.md)] to configure a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance to run using that account’s credentials.  
+-   They create a domain user account in Active Directory and uses [!INCLUDE[nav_admin](includes/nav_admin_md.md)] to configure a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance to run using that account’s credentials.  
 
--   She installs the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] on a Windows 10 computer \(**NAVCLIENT**\) and configures it to communicate with [!INCLUDE[nav_server](includes/nav_server_md.md)].  
+-   They install the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] on a Windows 10 computer \(**NAVCLIENT**\) and configures it to communicate with [!INCLUDE[nav_server](includes/nav_server_md.md)].  
 
 ## Installing the Microsoft Dynamics NAV Database Components  
  When you run [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup, you see a menu of installation options. You configure the **Server Option** to install the SQL Server Database components and the [!INCLUDE[demolong](includes/demolong_md.md)]. When Setup is finished, you start the SQL Browser Service on the SQL Server.  
@@ -76,11 +75,11 @@ In this walkthrough, you will install [!INCLUDE[navnowlong](includes/navnowlong_
 
 5.  On the **Choose an installation option** page, choose **Customize** underneath the **Server** option.  
 
-     ![Configure Server option](media/ServerConfigure.JPG "ServerConfigure")  
+     ![Configure Server option.](media/ServerConfigure.JPG "ServerConfigure")  
 
 6.  On the **Customize the installation** page, choose the **SQL Server Database Components** box, and then select **Run all from My computer**.  
 
-     ![Add Database Components to the Install](media/DBCompRunAll.JPG "DBCompRunAll")  
+     ![Add Database Components to the Install.](media/DBCompRunAll.JPG "DBCompRunAll")  
 
      This specifies that you want to install this component and all subcomponents. In this case, there is a single subcomponent, which is the [!INCLUDE[demolong](includes/demolong_md.md)].  
 
@@ -90,7 +89,7 @@ In this walkthrough, you will install [!INCLUDE[navnowlong](includes/navnowlong_
 
      Your list of components should now look like this:  
 
-     ![Install database tier without other components](media/DBTierOnly.JPG "DBTierOnly")  
+     ![Install database tier without other components.](media/DBTierOnly.JPG "DBTierOnly")  
 
 8.  Choose **Next**.  
 
@@ -159,7 +158,7 @@ In this walkthrough, you will install [!INCLUDE[navnowlong](includes/navnowlong_
 
 2.  Choose **Microsoft Dynamics NAV \(Local\)**, under Console Root, in the left pane of the [!INCLUDE[nav_admin](includes/nav_admin_md.md)], to display all [!INCLUDE[navnow](includes/navnow_md.md)] instances on the server computer in the center pane:  
 
-     ![Console root with two server instances](media/ConsoleRootExp.png "ConsoleRootExp")  
+     ![Console root with two server instances.](media/ConsoleRootExp.png "ConsoleRootExp")  
 
 3.  In the left pane, choose the default instance, then right-click it, then choose **Log on Account**.  
 

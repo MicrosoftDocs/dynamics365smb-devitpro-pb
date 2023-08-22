@@ -1,12 +1,11 @@
 ---
 title: "Basic Page Operations"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ---
 # Basic Page Operations
 When you publish a page as a SOAP web service, it has a set of default operations that are exposed to consumers of the web service.  

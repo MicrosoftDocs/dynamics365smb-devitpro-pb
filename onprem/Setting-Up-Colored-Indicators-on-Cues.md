@@ -9,12 +9,11 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c29658cf-c786-4d10-bc4d-e02bc53fd88c
 caps.latest.revision: 4
-manager: edupont
 ---
 # Setting Up Colored Indicators on Cues
 You can set up Cues with an indicator that changes color based on the data values in the Cues. The indicator appears as a bar along the top border of the Cue tile. It provides a visual signal of the status of the Cue's activity, which can indicate various conditions such as favorable or unfavorable to prompt the user to take action.  
   
- ![Cues on the Order Processor Role Center](media/NAV_Cues_OrderProcessor.png "NAV\_Cues\_OrderProcessor")  
+ ![Cues on the Order Processor Role Center.](media/NAV_Cues_OrderProcessor.png "NAV\_Cues\_OrderProcessor")  
   
  For example, if a Cue displays open sales quotes, you can set up the indicator to appear green \(favorable\) when total number of open sales quotes is below 10, and appears red \(unfavorable\) when the total is greater than 20.  
   

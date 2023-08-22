@@ -3,12 +3,11 @@ title: "Extending Item Charges Distribution Methods"
 description: "How you extend item charges in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ms.author: grobyns
 ---
 
@@ -89,7 +88,7 @@ In the new codeunit, add functions to distribute the charges over the item lines
                 TempItemChargeAssgntPurch := ItemChargeAssignmentPurch;
                 TempItemChargeAssgntPurch.Insert(false);
                 GetItemValues(TempItemChargeAssgntPurch, LineArray);
-                TotalFairyDust := TotalFairyDust + (LineArray[2] * LineArray[1]);
+                TotalFairyDust += (LineArray[2] * LineArray[1]);
             end;
         until ItemChargeAssignmentPurch.Next = 0;
 
@@ -202,5 +201,7 @@ In the new codeunit, add a subscriber to the **OnAssignItemCharges** event.
 
 
 ## See Also
+
 [Extending Application Areas](devenv-extending-application-areas.md)  
- 
+[Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module)  
+[Module Base Application](/dynamics365/business-central/application/reference/base%20application/)  

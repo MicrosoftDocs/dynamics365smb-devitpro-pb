@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 108a99d5-ecf0-4365-ad61-6da9c28e9138
 caps.latest.revision: 4
-manager: edupont
 ---
 # Using Namespaces with XMLports
 When using the XMLport to import or export an XML document, you can set up multiple namespaces on the XMLport to make it compatible with the XML schema that is used system that provides or consumes [!INCLUDE[navnow](includes/navnow_md.md)] data. Namespaces are used to avoid XML element name conflicts. You can define multiple namespaces.  

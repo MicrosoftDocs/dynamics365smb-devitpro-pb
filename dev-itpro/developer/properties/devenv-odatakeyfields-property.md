@@ -1,35 +1,39 @@
 ---
 title: "ODataKeyFields Property"
+description: "Specifies the fields to select when using OData."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
-ms.assetid: 096dd046-161f-4d06-8212-0804f4271590
-caps.latest.revision: 13
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ODataKeyFields Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-This property is used to select the fields that will be the key fields under OData usage.
+Specifies the fields to select when using OData.
 
-## Applies to  
-  
-- Pages
+## Applies to
+-   Page
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 
 ```AL
-ODataKeyFields = Id;
+ODataKeyFields = Id, Number;
 ```
   
 ## Dependent Property
 
 - SourceTable
 
-## See Also
-
-[Properties](devenv-properties.md)
+## See Also  
+[Get Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  

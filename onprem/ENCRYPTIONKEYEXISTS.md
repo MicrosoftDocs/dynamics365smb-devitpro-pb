@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c31eb42b-c3a4-4592-b712-a24bb6141ccc
 caps.latest.revision: 5
-manager: edupont
 ---
 # ENCRYPTIONKEYEXISTS
 Checks whether an encryption key for the current tenant is present on the server tenant.  

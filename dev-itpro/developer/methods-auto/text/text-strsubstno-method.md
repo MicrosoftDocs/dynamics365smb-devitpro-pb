@@ -1,42 +1,44 @@
 ---
-title: "Text.StrSubstNo Method"
+title: "Text.StrSubstNo(Text [, Any,...]) Method"
+description: "Replaces %1, %2, %3..."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.StrSubstNo Method
+# Text.StrSubstNo(Text [, Any,...]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you provide as optional parameters.
 
 
 ## Syntax
+```AL
+NewString :=   Text.StrSubstNo(String: Text [, Value1: Any,...])
 ```
-NewString :=   Text.StrSubstNo(String: String [, Value1: Any,...])
-```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
-A string containing '#' and/or '%' fields.
-        
-*Value1*  
+&emsp;Type: [Text](text-data-type.md)  
+A string containing '#' and/or '%' fields.  
+
+*[Optional] Value1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 One or more values (expressions) that you want to insert into String. You can specify up to 10 values.  
 
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](../string/string-data-type.md)  
-Returns a new string with the provided values inserted into the specified string.  
+&emsp;Type: [Text](text-data-type.md)  
+Returns a new string with the provided values inserted into the specified string.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -80,38 +82,38 @@ Returns a new string with the provided values inserted into the specified string
   
  If one of the values is null, then it is treated as an empty string.  
   
- <!--Links For more information about the STRSUBSTNO method in a multilanguage-enabled application, see [Developing Multilanguage-Enabled Applications](Developing-Multilanguage-Enabled-Applications.md).-->  
+ <!--Links For more information about the StrSubstNo method in a multilanguage-enabled application, see [Developing Multilanguage-Enabled Applications](Developing-Multilanguage-Enabled-Applications.md).-->  
   
 ## Example  
- The following example shows how to use the STRSUBSTNO method.  
+ The following example shows how to use the StrSubstNo method.  
   
-```  
+```al
 var
     Str: Text[1024];
     AccountNo: Integer;
     Balance: Decimal;
     Text000: Label 'The balance of account %1 is $ %2';  
-    Text001: Label 'The test string before STRSUBSTNO is called:\\%1';  
-    Text002: Label 'The string after STRSUBSTNO is called:\\%1';  
+    Text001: Label 'The test string before StrSubstNo is called:\\%1';  
+    Text002: Label 'The string after StrSubstNo is called:\\%1';  
 begin
     Str := Text000;  
     AccountNo := 3452;   
     Balance := 2345 + 5462;  
-    MESSAGE(Text001, Str);  
-    Str := STRSUBSTNO(Str, AccountNo, Balance);  
-    MESSAGE(Text002, Str);  
+    Message(Text001, Str);  
+    Str := StrSubstNo(Str, AccountNo, Balance);  
+    Message(Text002, Str);  
 end;
 ```  
   
  The first message window displays the following text:  
   
- **The string before STRSUBSTNO has been called:**  
+ **The string before StrSubstNo has been called:**  
   
  **The balance of account %1 is $ %2**  
   
  The second message window displays the following text:  
   
- **The string after STRSUBSTNO has been called:**  
+ **The string after StrSubstNo has been called:**  
   
  **The balance of account 3452 is $ 7,807**  
   
@@ -120,5 +122,5 @@ end;
 
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

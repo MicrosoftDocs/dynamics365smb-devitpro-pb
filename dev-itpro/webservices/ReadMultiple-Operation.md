@@ -1,12 +1,11 @@
 ---
 title: "ReadMultiple Operation"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ---
 # ReadMultiple Operation
 Reads a filtered set of records. This operation returns an array of entities. The ReadMultiple operation allows the consumer of a web service to specify the number of records to be returned at one time. This can reduce load on the server.  
@@ -47,7 +46,7 @@ Reads a filtered set of records. This operation returns an array of entities. Th
   
 -   Field contains the name of the field that the filter is applied to. This name comes from the Entity\_Fields enum.  
   
--   Criteria is of type string and can contain any valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] style filter that is specified in a standard [!INCLUDE[prodshort](../developer/includes/prodshort.md)] filter format.  
+-   Criteria is of type string and can contain any valid [!INCLUDE[prod_short](../developer/includes/prod_short.md)] style filter that is specified in a standard [!INCLUDE[prod_short](../developer/includes/prod_short.md)] filter format.  
   
 ## Usage Examples  
  The following example returns the first 100 customer names that start with an S.

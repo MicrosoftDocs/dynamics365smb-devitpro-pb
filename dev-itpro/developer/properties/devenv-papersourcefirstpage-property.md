@@ -1,24 +1,62 @@
 ---
 title: "PaperSourceFirstPage Property"
+description: "Specifies which paper source to use when printing page one of the report."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
-ms.assetid: c927f9e3-e6ef-4046-b0d8-7d38e67a50be
-caps.latest.revision: 13
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PaperSourceFirstPage Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Specifies which paper source to use when printing page one of the report.  
-  
-## Applies to  
+Specifies which paper source to use when printing page one of the report.
 
-- Reports  
+## Applies to
+-   Report
+
+## Property Value
+
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Upper**|runtime version 1.0|The upper bin of a printer.|
+|**Lower**|runtime version 1.0|The lower bin of a printer.|
+|**Middle**|runtime version 1.0|The middle bin of a printer.|
+|**Manual**|runtime version 1.0|Manually fed paper.|
+|**Envelope**|runtime version 1.0|An envelope.|
+|**ManualFeed**|runtime version 1.0|Manually fed envelope.|
+|**AutomaticFeed**|runtime version 1.0|Automatically fed paper.|
+|**TractorFeed**|runtime version 1.0|A tractor feed.|
+|**SmallFormat**|runtime version 1.0|Small-format paper.|
+|**LargeFormat**|runtime version 1.0|Large-format paper.|
+|**LargeCapacity**|runtime version 1.0|The large-capacity bin of printer.|
+|**Cassette**|runtime version 1.0|A paper cassette.|
+|**FormSource**|runtime version 1.0|The default input bin of printer.|
+|**Custom1**|runtime version 1.0|A printer-specific paper source.|
+|**Custom2**|runtime version 1.0|A printer-specific paper source.|
+|**Custom3**|runtime version 1.0|A printer-specific paper source.|
+|**Custom4**|runtime version 1.0|A printer-specific paper source.|
+|**Custom5**|runtime version 1.0|A printer-specific paper source.|
+|**Custom6**|runtime version 1.0|A printer-specific paper source.|
+|**Custom7**|runtime version 1.0|A printer-specific paper source.|
+|**Custom8**|runtime version 1.0|A printer-specific paper source.|
+|**Custom9**|runtime version 1.0|A printer-specific paper source.|
+|**Custom10**|runtime version 1.0|A printer-specific paper source.|
+|**Custom11**|runtime version 1.0|A printer-specific paper source.|
+|**Custom12**|runtime version 1.0|A printer-specific paper source.|
+|**Custom13**|runtime version 1.0|A printer-specific paper source.|
+|**Custom14**|runtime version 1.0|A printer-specific paper source.|
+|**Custom15**|runtime version 1.0|A printer-specific paper source.|
+|**Custom16**|runtime version 1.0|A printer-specific paper source.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 
@@ -26,30 +64,6 @@ Specifies which paper source to use when printing page one of the report.
 PaperSourceFirstPage = AutomaticFeed;
 ```
 
-<!--
-## Remarks  
-
- In the **Report – Properties** window, in the **PaperSourceFirstPage** field, choose the paper source. The list contains 13 standard trays and 16 printer-specific trays. It is based on information in the fin.stx file.  
-  
- If the printer that is used for this report does not support the specified paper source, then the printer uses the default tray that is specified by the printer driver.  
-  
- If you do not specify a value for the **PaperSourceFirstPage** property, then the printer uses the tray that is specified in the [PaperSourceDefaultPage Property](devenv-papersourcedefaultpage-property.md).  
-  
- If you do not specify a value for either the **PaperSourceFirstPage** property or the [PaperSourceDefaultPage Property](devenv-papersourcedefaultpage-property.md), then the printer uses the default printer tray that is defined for the operating system.  
-  
- The printer specific trays that are contained in the list are intended for use with printers that have other paper sources than the standard ones that are listed in the property.  
-  
- The settings in the **Print** and **Page Setup** dialog boxes override the value that is specified for the **PaperSourceFirstPage** property.  
-  
- You can use the **GetPaperTrayForReport** function in codeunit 1, **Application Management**, to set the paper tray from AL code. This gives you runtime control over paper tray selection for first, last, and default pages in a report.  
-  
 ## See Also  
- [PaperSourceDefaultPage Property](devenv-papersourcedefaultpage-property.md)   
- [PaperSourceLastPage Property](devenv-papersourcelastpage-property.md)   
- [How to: Add GetPaperTrayForReport Procedure in Codeunit 1](How-to--Add-GetPaperTrayForReport-Procedure-in-Codeunit-1.md) -->
-
-## See Also  
-
-[Report Properties](devenv-report-properties.md)   
-[Report Object](../devenv-report-object.md)   
-[Properties](devenv-properties.md)
+[Get Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  

@@ -1,9 +1,8 @@
 ---
-author: edupont04
+author: solsen
 
-ms.service: dynamics365-business-central
 ms.topic: include
-ms.date: 10/01/2020
-ms.author: edupont
+ms.date: 04/01/2021
+ms.author: solsen
 ---
 Microsoft Dataverse

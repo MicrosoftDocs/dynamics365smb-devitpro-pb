@@ -1,22 +1,25 @@
 ---
 title: "Application Testing Example: Testing Purchase Invoice Discounts"
+description: Example to demonstrate the application testing scenario.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 08/12/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: blrobl
 ---
 
 # Application Testing Example: Testing Purchase Invoice Discounts
+
 Before you release a customized [!INCLUDE[d365_bus_central](includes/d365_bus_central_md.md)] application to a production environment, you must test the application. This walkthrough demonstrates how to use the test codeunits and test libraries to test an application.  
   
 ## About this example  
+
 You have modified codeunit 70, Purch-Calc.Discount, which is a codeunit in the [!INCLUDE[demoname](includes/demoname_md.md)] database. You want to test the functionality of the customized codeunit before you offer the customized application for sale. You create a new test codeunit with new test methods to test the Purch-Calc.Discount codeunit. During development, You use the application test libraries to help write a test with fewer lines of code.  
   
-## Prerequisites  
+## Prerequisites 
+ 
 To complete this example, you will need:  
   
 - [!INCLUDE[d365_bus_central](includes/d365_bus_central_md.md)] with a developer license.  
@@ -41,7 +44,7 @@ To complete this example, you will need:
   
   -  `Above`. It is a good practice to have tests for positive and negative scenarios. In this test, Isaac wants to check that discount come into effect when the document amount is above a minimum amount. But the amount in the document can be also less than or equal to the minimum amount.  
 
--  Isaac first defines the test scenario \[SCENARIO\], then details it with the GIVEN-THEN-WHEN notation. Finally, he adds the AL code.The code in this test method prepares the test data by setting a random discount percent, a minimum amount, and a document amount. Then, it creates a purchase document with a line and runs the Purch-Calc.Discount codeunit, which contains the code that is being tested. Finally, it verifies the results of running the Purch-Calc.Discount codeunit and raises an error if the results are not as expected.  
+-  Isaac first defines the test scenario \[SCENARIO\], then details it with the GIVEN-THEN-WHEN notation. Finally, Isaac adds the AL code.The code in this test method prepares the test data by setting a random discount percent, a minimum amount, and a document amount. Then, it creates a purchase document with a line and runs the Purch-Calc.Discount codeunit, which contains the code that is being tested. Finally, it verifies the results of running the Purch-Calc.Discount codeunit and raises an error if the results are not as expected.  
  
 -  You can create additional test methods in this test codeunit to test other aspects of vendor discounts. These test methods should include negative tests, which validate that the code being tested works as intended under failing conditions.  
 
@@ -54,7 +57,7 @@ Tne next task is to create a helper method that generates data for the test. The
 -  The code in the helper method prepares data for the test by creating a new vendor, setting up the invoice discount, and creating a purchase document with an item. Because this helper method is not specific to the test itself, you can reuse it for similar tests. For example, you can call it with other parameters and create a purchase credit memo, or set up 0% discount, or create a document where the total amount is less than the minimum amount that is specified in **Vendor Invoice Disc.** table.  
   
 > [!NOTE]  
->  This test code does not guarantee that the state of the database after you run the test is the same as the state of the database before you run the test.  
+> This test code does not guarantee that the state of the database after you run the test is the same as the state of the database before you run the test.  
 
 ## Code
 
@@ -94,8 +97,8 @@ codeunit 50111 "ERM Vendor Discount"
         // [WHEN] Calculate invoice discount for purchase document (line)
         PurchCalcDisc.RUN(PurchLine);
         // [THEN] "Inv. Discount Amount" = Amount "A" * discount "D" / 100
-        PurchLine.FIND;
-        Assert.AreEqual(ROUND(PurchLine."Line Amount" * DiscountPct / 100), PurchLine."Inv. Discount Amount", PurchInvDiscErr);
+        PurchLine.Find;
+        Assert.AreEqual(Round(PurchLine."Line Amount" * DiscountPct / 100), PurchLine."Inv. Discount Amount", PurchInvDiscErr);
     end;
 
     // Creates the test helper method
@@ -110,16 +113,16 @@ codeunit 50111 "ERM Vendor Discount"
         // Create vendor
         VendorNo := LibraryPurchase.CreateVendorNo;
         // Create vendor invoice discount
-        VendorInvoiceDisc.INIT;
+        VendorInvoiceDisc.Init;
         VendorInvoiceDisc.Code := VendorNo;
-        VendorInvoiceDisc.VALIDATE("Currency Code", '');
-        VendorInvoiceDisc.VALIDATE("Minimum Amount", MinAmount);
-        VendorInvoiceDisc.VALIDATE("Discount %", DiscountPct);
-        VendorInvoiceDisc.INSERT(TRUE);
+        VendorInvoiceDisc.Validate("Currency Code", '');
+        VendorInvoiceDisc.Validate("Minimum Amount", MinAmount);
+        VendorInvoiceDisc.Validate("Discount %", DiscountPct);
+        VendorInvoiceDisc.Insert(TRUE);
         // Create purchase line
         LibraryPurchase.CreatePurchaseDocumentWithItem(PurchaseHeader, Purchline, DocumentType, VendorNo, '', 1, '', 0D);
-        PurchLine.VALIDATE("Direct Unit Cost", DocAmount);
-        PurchLine.MODIFY(TRUE);
+        PurchLine.Validate("Direct Unit Cost", DocAmount);
+        PurchLine.Modify(TRUE);
     end;
 
     var
@@ -133,4 +136,5 @@ codeunit 50111 "ERM Vendor Discount"
 ```
 
 ## See Also  
+
  [Testing the Application](devenv-Testing-Application.md)

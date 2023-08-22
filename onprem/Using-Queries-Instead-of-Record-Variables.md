@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: af6d360a-242d-4274-9d3d-863dad6fdf48
 caps.latest.revision: 9
-manager: edupont
 ---
 # Using Queries Instead of Record Variables
 In scenarios where you want to read records from multiple table, it can be a good idea to use a query instead of implementing code with record variables. Using a query can improve performance and also simplify the C/AL code that is required to perform the operation.  
@@ -71,7 +70,7 @@ IF Item.FINDSET THEN
 
      The following illustration shows the query in Query Designer.  
 
-     ![Query that links Item and Item Legder Entry tables](media/NAV_Query_Example_InsteadOfRecords.png "NAV\_Query\_Example\_InsteadOfRecords")  
+     ![Query that links Item and Item Legder Entry tables.](media/NAV_Query_Example_InsteadOfRecords.png "NAV\_Query\_Example\_InsteadOfRecords")  
 
 2.  Add the following code to a codeunit that will run the query.  
 

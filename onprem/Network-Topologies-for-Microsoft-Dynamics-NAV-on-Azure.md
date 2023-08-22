@@ -16,7 +16,7 @@ The [!INCLUDE[nav_prov_long](includes/nav_prov_long_md.md)] support the automate
 ## Deploying [!INCLUDE[navnow](includes/navnow_md.md)] on One Virtual Machine  
  When you deploy [!INCLUDE[navnow](includes/navnow_md.md)] on a single virtual machine, the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], [!INCLUDE[nav_server](includes/nav_server_md.md)], SQL Server, and [!INCLUDE[navnow](includes/navnow_md.md)] database components are installed on the same virtual machine.  
   
- ![NAV topology on one Azure virtual machine](media/NAV_Azure_1VM_Topology_Overview.png "NAV\_Azure\_1VM\_Topology\_Overview")  
+ ![NAV topology on one Azure virtual machine.](media/NAV_Azure_1VM_Topology_Overview.png "NAV\_Azure\_1VM\_Topology\_Overview")  
   
  This virtual machine represents a single cloud service on Azure. Users can access [!INCLUDE[navnow](includes/navnow_md.md)] data by using the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] from a ClickOnce deployment, the [!INCLUDE[nav_web](includes/nav_web_md.md)], and OData and SOAP web services.  
   
@@ -27,7 +27,7 @@ The [!INCLUDE[nav_prov_long](includes/nav_prov_long_md.md)] support the automate
 ## Deploying [!INCLUDE[navnow](includes/navnow_md.md)] on Two Virtual Machines  
  When you deploy [!INCLUDE[navnow](includes/navnow_md.md)] on a two virtual machines, the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] and [!INCLUDE[nav_server](includes/nav_server_md.md)] are installed on one virtual machine, and the SQL Server and [!INCLUDE[navnow](includes/navnow_md.md)] database components are installed on another virtual machine.  
   
- ![NAV topology on two Azure virtual machines](media/NAV_Azure_2VM_Topology_Overview.png "NAV\_Azure\_2VM\_Topology\_Overview")  
+ ![NAV topology on two Azure virtual machines.](media/NAV_Azure_2VM_Topology_Overview.png "NAV\_Azure\_2VM\_Topology\_Overview")  
   
  Each virtual machine represents a cloud service on Azure. The virtual machines are joined inside the same virtual network.  
   

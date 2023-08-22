@@ -2,19 +2,18 @@
 title: "AL Simple Statements"
 description: "Describes the simple statements in AL for Business Central with examples"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 09/21/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ---
 
 # AL Simple Statements
 
-AL simple statements are single-line statements that are executed sequentially and do not alter the flow of execution of code. This article explains some of the simple statements in AL.
+AL simple statements are single-line statements that are executed sequentially and don't alter the flow of code execution. This article explains some of the simple statements in AL.
 
 ## Assignment statements
 
@@ -23,7 +22,7 @@ Assignment statements assign a value to a variable. The value that you assign to
 You use the ":=" operator for assignment statements.  
 
 ### Example  
-The following example assigns a constant integer value to an integer variable that you have defined.  
+The following example assigns a constant integer value to a variable that you've defined.  
 
 ```AL  
 Count := 1;  
@@ -36,14 +35,18 @@ Count := 1;
 Amount := 2 * Price;  
 ```  
 
-### Example  
-The following example assigns the return value of the [Open Method (File)](methods-auto/file/file-open-method.md) to a Boolean variable that you have defined.  
+### Example
+
+The following example assigns the return value of the [Open Method (File)](methods-auto/file/file-open-method.md) to a Boolean variable that you've defined.  
+
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
 
 ```AL  
 OK := TestFile.Open('C:\temp\simple.xml');  
 ```  
 
-The return value of the `Open` method is optional. If you do not handle the return value in your code, then a run-time error occurs when a method returns **false**. The following example causes a run-time error if the file `C:\temp\simple.xml` cannot be opened.  
+The return value of the `Open` method is optional. If you don't handle the return value in your code, then a run-time error occurs when a method returns **false**. The following example causes a run-time error if the file `C:\temp\simple.xml` can't be opened.  
 
 ```AL  
 TestFile.Open('C:\temp\simple.xml');  
@@ -58,15 +61,45 @@ else
   Error(Text001);  
 ```  
 
+### Example
+
+If you want to perform arithmetic operations on a variable and then assign the result to the same variable, you can use the following syntax.
+
+```AL
+Counter := 0;
+
+// you can use this syntax 
+
+// for addition
+Counter += 1;
+// for subtraction
+Counter -= 1;
+// for multiplication
+Counter *= 1:
+// for division
+Counter /= 1;
+
+// instead of 
+Counter := Counter + 1;
+```
+
+The following example shows how to use this syntax on variables of the [Text Data Type](methods-auto/text/text-data-type.md).
+
+```AL
+String := "Hello ";
+String += "World";
+```
+
 ## Method statements
-You use method statements to execute either built-in system methods or user-defined (custom) methods. Method calls may include parameters, which are passed to the method. For more information, see [Calling Methods](devenv-al-methods.md#Callmethod). 
+You use method statements to run either built-in system methods or user-defined (custom) methods. Method calls may include parameters, which are passed to the method. For more information, see [Calling Methods](devenv-al-methods.md#Callmethod). 
 
 ## AssertError statements
-You use AssertError statements in test methods to test how your application behaves under failing conditions. The AssertError keyword specifies that an error is expected at run time in the statement that follows the AssertError keyword.  
 
-If a simple or compound statement that follows the AssertError keyword causes an error, then execution successfully continues to the next statement in the test method. You can get the error text of the statement by using the [GetLastErrorText method](methods/devenv-GETLASTERRORTEXT-method.md).  
+You use AssertError statements in test methods to test how your application behaves under failing conditions. The `AssertError` keyword specifies that an error is expected at run time in the statement that follows the `AssertError` keyword.  
 
-If a statement that follows the AssertError keyword does not cause an error, then the AssertError statement causes the following error and the test method that is running produces a FAILURE result:  
+If a simple or compound statement that follows the AssertError keyword causes an error, then execution successfully continues to the next statement in the test method. You can get the error text of the statement by using the [GetLastErrorText method](./methods-auto/library.md).  
+
+If a statement that follows the AssertError keyword doesn't cause an error, then the AssertError statement causes the following error and the test method that is running produces a FAILURE result:  
 
 ```AL
 TestAsserterrorFail: FAILURE
@@ -75,7 +108,7 @@ An error was expected inside an AssertError statement.
 ```  
 
 ### Example
-To create a test method to test the result of a failure of a `CheckDate` method that you have defined, you can use the following code. This example requires that you create a method called `CheckDate` to check whether the date is valid for the customized application.  
+To create a test method to test the result of a failure of a `CheckDate` method that you've defined, you can use the following code. This example requires that you create a method called `CheckDate` to check whether the date is valid for the customized application.  
 
 ```AL  
 InvalidDate := 19000101D;  
@@ -98,7 +131,7 @@ var
 ## With statements (to be deprecated)
 
 > [!IMPORTANT]  
-> Using the `with` statement is being deprecated with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2020, release wave 2. With this release it will is a warning, which will become an error in a future release. <br>Using `with` statements introduces possible uniqueness collisions when multiple extensions contribute to the same objects because it allows working with members using just simple names instead of qualifying them. To avoid this going forward, we are marking the use of `with`, be it implicit or explicit as warnings. With this release, you can use a quick action to fix these files, as well as suppress obsolete warnings for now. Code that contains `with` statements will, however, need to be refactored before `with` statements are compiled with errors. For more information, see [Deprecating Explicit and Implicit With Statements](devenv-deprecating-with-statements-overview.md). For information about using directives in code, see [Directives in AL](directives/devenv-directives-in-al.md) and [Pragma ImplicitWith Directive in AL](directives/devenv-directive-pragma-implicitwith.md).
+> Using the `with` statement is being deprecated with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2020, release wave 2. With this release it is a warning, which will become an error in a future release. <br>Using `with` statements introduces possible uniqueness collisions when multiple extensions contribute to the same objects because it allows working with members using just simple names instead of qualifying them. To avoid this going forward, we are marking the use of `with`, be it implicit or explicit as warnings. With this release, you can use a quick action to fix these files, as well as suppress obsolete warnings for now. Code that contains `with` statements will, however, need to be refactored before `with` statements are compiled with errors. For more information, see [Deprecating Explicit and Implicit With Statements](devenv-deprecating-with-statements-overview.md). For information about using directives in code, see [Directives in AL](directives/devenv-directives-in-al.md) and [Pragma ImplicitWith Directive in AL](directives/devenv-directive-pragma-implicitwith.md).
 
 The following syntax shows a with-do statement.  
 
@@ -149,12 +182,14 @@ with CustomerRec do begin
 end;  
 ```  
 
-### Programming conventions  
-Within `with-do` blocks, do not repeat the name of the object by using the member variable or method.  
+### Programming conventions
+
+Within `with-do` blocks, don't repeat the name of the object by using the member variable or method.  
 
 If you nest a `with-do` block within another explicit or implicit `with-do` block, then the `with-do` block that you create within another `with-do` block must always be attached to a variable of the same type as the variable that is attached to the surrounding `with-do` block. Otherwise, it can be difficult to see what variable that a member variable or method refers to. For example, implicit `with-do` blocks occur in table objects and in pages that have been attached to a record.  
 
-#### Example  
+#### Example
+
 The following example demonstrates nested `with-do` blocks. Both `with-do` blocks are attached to a Customer Ledger Entry record variable.  
 
 ```AL  
@@ -168,8 +203,9 @@ with CustLedgEntry do begin
 end;  
 ```  
 
-#### Incorrect example  
-The following example demonstrates incorrect code in which you cannot directly tell which record variable that the MyField field refers to.  
+#### Incorrect example
+
+The following example demonstrates incorrect code in which you can't directly tell which record variable that the MyField field refers to.  
 
 ```AL  
 with CustLedgEntry do begin

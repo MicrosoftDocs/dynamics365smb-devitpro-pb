@@ -1,13 +1,12 @@
 ---
 title: "Getting Started Developing for the Dynamics 365 Business Central Mobile App"
-ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 # Getting Started Developing for the Dynamics 365 Business Central Mobile App
 The [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] are built on the same framework as the [!INCLUDE[nav_web](includes/nav_web_md.md)], such that they are all based on the same [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] pages. Developing for [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] is not much different from developing pages for [!INCLUDE[nav_web](includes/nav_web_md.md)] either, since it is also done from the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)].  
@@ -33,7 +32,7 @@ The [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](i
   
  There are some best practices and limitations to consider in particular caused by the smaller screen size and touch experience. For more information, see [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md). On devices that run the [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] and have a camera and location capability you also have a couple of additional options. For more information, see [Implementing the Camera in AL](devenv-implement-camera-al.md) and [Implementing Location in AL](devenv-implement-location-al.md).  
 
-To complete designing your [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] solution, you should consider offering users Help, to guide them through pages or workflows. For more information about adding help to your solution, see [Extend, Customize, and Collaborate on the Help for Dynamics 365 Business Central](../help/contributor-guide.md).
+To complete designing your [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] solution, you should consider offering users Help, to guide them through pages or workflows. For more information about adding help to your solution, see [Contribute to the Help for Dynamics 365 Business Central](../help/contributor-guide.md).
   
  The next steps are to consider how to deploy your solution and how to distribute it to your customers. After you have completed your solution, you can send an e-mail to the users to let them know that they can download [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]  from the relevant store and include the organization URL and sign-in information. For more information, see [Linking to the Dynamics 365 Business Central Mobile App](devenv-link-to-mobile-app.md).  
   

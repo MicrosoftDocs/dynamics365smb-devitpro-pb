@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0b5f1e2c-b748-48e2-b201-bc3b02ffe3e1
 caps.latest.revision: 28
-manager: edupont
 ---
 # Walkthrough: Combining Data from Microsoft Dynamics NAV Queries and Pages with Data from Azure DataMarket (OData)
 This walkthrough describes how you can use OData to combine data from [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] with data from Microsoft Azure Markeplace.  
@@ -43,7 +42,7 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
 -   A Microsoft account for accessing data from Azure Marketplace. For more information about Microsoft account, see the [What is a Microsoft account?](https://go.microsoft.com/fwlink/?LinkId=271494). To obtain a Microsoft account, go to the [sign-up page](https://go.microsoft.com/fwlink/?LinkId=271493).  
   
 ## Story  
- Victor, the business system developer at [!INCLUDE[demoname](../developer/includes/demoname_md.md)], has been asked by his manager Tim to create a data visualization that will show total sales to customers in different countries/regions, and how those countries/regions align with Key Development Indicators, which are a measure of national/regional affluence. Tim tells Victor that he can find information about Key Development Indicators on zure Marketplace. Victor assesses the assignment and decides that he can use OData web services to bring [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data to Excel, where he can merge it with economic data from Azure Marketplace.  
+ Victor, the business system developer at [!INCLUDE[demoname](../developer/includes/demoname_md.md)], has been asked by the manager Tim to create a data visualization that will show total sales to customers in different countries/regions, and how those countries/regions align with Key Development Indicators, which are a measure of national/regional affluence. Tim tells Victor that information about Key Development Indicators can be found on zure Marketplace. Victor assesses the assignment and decides that OData web services can be used to bring [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data to Excel, where it can be merged with economic data from Azure Marketplace.  
   
 ## Creating a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Query  
  You create a query to capture data about sales to individual customers.  
@@ -81,7 +80,7 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
   
      You should see the following in Query Designer.  
   
-     ![SalesOrderInfo query definition](media/SalesOrderInfoQuery.JPG "SalesOrderInfoQuery")  
+     ![SalesOrderInfo query definition.](media/SalesOrderInfoQuery.JPG "SalesOrderInfoQuery")  
   
 8.  On the **File** menu, choose **Save**.  
   
@@ -92,7 +91,7 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
   
 10. In Object Designer, choose query 50005, and then choose **Run**. When you run a query, you can view the data in the dataset.  
   
-     ![SalesOrderInfo query result](media/SalesOrderInfoWithData.JPG "SalesOrderInfoWithData")  
+     ![SalesOrderInfo query result.](media/SalesOrderInfoWithData.JPG "SalesOrderInfoWithData")  
   
 11. Close Query Designer and the development environment.  
   
@@ -132,7 +131,7 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
   
      The browser should now show the web services that you have published, in the format of an AtomPub document.  
   
-     ![Two web services](media/TwoWebServices.JPG "TwoWebServices")  
+     ![Two web services.](media/TwoWebServices.JPG "TwoWebServices")  
   
     > [!IMPORTANT]  
     >  You may want to modify your Internet Explorer settings to display the actual XML for a feed instead of the feed content that has changed. Choose **Internet Options**, choose **Content**, choose **Feeds and Web Slices**, and then clear the **Turn on feed reading view** check box. Restart Internet Explorer to enable the new setting.  
@@ -231,7 +230,7 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
   
 9. In Excel, a dialog box prompts that you select a workbook to import the atom feed to.  
   
-     ![Small PowerPivot dialog box](media/SmallPowerPivotdialogbox.JPG "SmallPowerPivotdialogbox")  
+     ![Small PowerPivot dialog box.](media/SmallPowerPivotdialogbox.JPG "SmallPowerPivotdialogbox")  
   
      Choose the **OK** button.  
   
@@ -270,7 +269,7 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
   
 1.  Go to the **SalesOrderInfo** tab in PowerPivot for Excel, right-click the header row for the **Sell\_to\_Customer\_No** column, and then from the list of commands, select **Create Relationship**.  
   
-     ![Creating a relationship between two data sources](media/SellToWithRelationship.JPG "SellToWithRelationship")  
+     ![Creating a relationship between two data sources.](media/SellToWithRelationship.JPG "SellToWithRelationship")  
   
 2.  In the **Create Relationship** dialog box, in the **Related Lookup Table** field, choose **Customer**.  
   
@@ -293,7 +292,7 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
   
 1.  In the PowerPivot ribbon, choose **PivotTable** and then, in the list of commands, choose **PivotTable** again.  
   
-     ![PivotTable from the PivotTable menu](media/Pivot2.JPG "Pivot2")  
+     ![PivotTable from the PivotTable menu.](media/Pivot2.JPG "Pivot2")  
   
 2.  In the **Create Pivot Table** dialog box, choose the **OK** button to accept the default, **New Worksheet**.  
   
@@ -310,13 +309,13 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
   
      PowerPivot automatically assigns these values to categories in the pivot table. **Country\_Region\_Code** and **No** are categorized as row labels, and **QuantityByAmount** as a sum.  
   
-     ![Adding fields to the PivotTable](media/PivotFields1.JPG "PivotFields1")  
+     ![Adding fields to the PivotTable.](media/PivotFields1.JPG "PivotFields1")  
   
      You can design a pivot table by moving values from one to list to another, configuring items in a list, or moving items up or down in a list.  
   
      Here is what the pivot table looks like at this point. Customers are arranged by country/region, with total sales amounts.  
   
-     ![PivotTable, first look](media/PivotTable1.JPG "PivotTable1")  
+     ![PivotTable, first look.](media/PivotTable1.JPG "PivotTable1")  
   
 6.  One enhancement is to replace the **Country\_Region\_Code** with the actual name of the country/region, which is available as a field in the **World Development Indicators** field.  
   
@@ -326,7 +325,7 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
   
 8.  Move **Name** up to the top of the **Row Labels** list.  
   
-     ![Move Name up](media/MoveName.JPG "MoveName")  
+     ![Move Name up.](media/MoveName.JPG "MoveName")  
   
 9. Choose **RegionName** from the **World Development Indicators** field, and then move it to the top of the **Row Labels** list.  
   
@@ -334,11 +333,11 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
   
      This completes the list of fields. The final list looks like this.  
   
-     ![Final pivot field list](media/FinalPivotListing.JPG "FinalPivotListing")  
+     ![Final pivot field list.](media/FinalPivotListing.JPG "FinalPivotListing")  
   
      The actual pivot table looks like this.  
   
-     ![Final pivot table](media/FinalPivotTabl.JPG "FinalPivotTabl")  
+     ![Final pivot table.](media/FinalPivotTabl.JPG "FinalPivotTabl")  
   
 11. Save the pivot table as **Customers by Economic Region.xlsx**.  
   
@@ -351,7 +350,7 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
   
  Now the final pivot table has a different result, as shown in the following example.  
   
- ![Final pivot table after modification](media/FinalPivotDoctor.JPG "FinalPivotDoctor")  
+ ![Final pivot table after modification.](media/FinalPivotDoctor.JPG "FinalPivotDoctor")  
   
 ## See Also  
  [OData Web Services](OData-Web-Services.md)   

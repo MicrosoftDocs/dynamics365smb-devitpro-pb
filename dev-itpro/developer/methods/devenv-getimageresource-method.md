@@ -1,21 +1,24 @@
 ---
 title: "GetImageResource Method"
-description: "The GetImageResource method in AL for Business Central"
+description: "The GetImageResource method in control add-in for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 ---
 
 # GetImageResource Method
-Gets the URL for an image resource specified in the control add-in manifest. The image resource is stored in the database as part of the .zip file for the control add-in and is exposed to the control add-in script running on the Business Central client using the URL that this method returns.  
+
+Gets the URL for an image resource specified in the control add-in manifest. The image resource is stored in the database as part of the .zip file for the control add-in and is exposed to the control add-in script running on the Business Central client using the URL that this method returns. 
+
+For more information, see [Control Add-in Object](../devenv-control-addin-object.md). 
   
 ## Method signature  
- `string Microsoft.Dynamics.NAV.GetImageResource(imageName)`  
+
+`string Microsoft.Dynamics.NAV.GetImageResource(imageName)`  
   
 ## Parameters  
   
@@ -24,24 +27,24 @@ Gets the URL for an image resource specified in the control add-in manifest. The
 |imageName|Type: String<br /><br /> A string that contains the name of the image resource to get a URL for. The image name is the name that is used in the control add-in manifest to reference the image.|  
   
 ## Return value  
- Type: String  
+
+Type: String  
   
- Returns a URL for the specified image resource.  
+Returns a URL for the specified image resource.  
   
 ## Example  
-<!--
- For a detailed code example, see [Walkthrough: Creating and Using a Client Control Add-in](Walkthrough--Creating-and-Using-a-Client-Control-Add-in.md)  -->
   
-```AL
+```javascript
 var map = new VEMap('controlAddIn');  
-    map.LoadMap(...);  
-    var pushpin = map.AddPushpin(map.GetCenter());  
-    var imageUrl = Microsoft.Dynamics.NAV.GetImageResource('PushpinImage.png');  
-    pushpin.SetCustomIcon("<div><img src='" + imageUrl +"'/></div>");  
-  
+map.LoadMap(...);  
+var pushpin = map.AddPushpin(map.GetCenter());  
+var imageUrl = Microsoft.Dynamics.NAV.GetImageResource('PushpinImage.png');  
+pushpin.SetCustomIcon("<div><img src='" + imageUrl +"'/></div>");   
 ```  
 
 ## See Also
 
 [AL Method Reference](../methods-auto/library.md)  
-[InvokeExtensibilityMethod Method](devenv-invokeextensibility-method.md)
+[GetEnvironment Method](devenv-getenvironment-method.md)   
+[InvokeExtensibilityMethod Method](devenv-invokeextensibility-method.md)   
+[OpenWindow Method](devenv-openwindow-method.md)  

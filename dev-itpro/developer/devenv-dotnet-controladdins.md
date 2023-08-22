@@ -3,19 +3,18 @@ title: ".NET Control Add-Ins"
 description: "Description of the process of declaring the usage of a .NET or Javascript add-ins in AL"
 author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ms.author: solsen
 ---
 
 # .NET Control Add-Ins
-In [!INCLUDE[prodlong](includes/prodlong.md)] on-premises you can use existing .NET and Javascript control add-ins from the AL Language through .NET interoperability. It is recommended that you convert your existing .NET and Javascript add-ins to native AL control add-ins that are supported both on-premises and in the cloud. For more information about native AL control add-ins, see [Control Add-In Object](devenv-control-addin-object.md). 
+In [!INCLUDE[prod_long](includes/prod_long.md)] on-premises you can use existing .NET and Javascript control add-ins from the AL Language through .NET interoperability. It is recommended that you convert your existing .NET and Javascript add-ins to native AL control add-ins that are supported both on-premises and in the cloud. For more information about native AL control add-ins, see [Control Add-In Object](devenv-control-addin-object.md). 
 
-To declare the usage of a .NET or Javascript add-in in AL, you need three critical pieces of information about the .NET type that represent the interface of the add-in. These are the name of the assembly containing the add-in, the name of the control add-in, and the name of the class that implements the control add-in. We will show how to retrieve this information for the `Microsoft.Dynamics.Nav.Client.PingPong` control add-in that ships with [!INCLUDE[prodshort](includes/prodshort.md)].
+To declare the usage of a .NET or Javascript add-in in AL, you need three critical pieces of information about the .NET type that represent the interface of the add-in. These are the name of the assembly containing the add-in, the name of the control add-in, and the name of the class that implements the control add-in. We will show how to retrieve this information for the `Microsoft.Dynamics.Nav.Client.PingPong` control add-in that ships with [!INCLUDE[prod_short](includes/prod_short.md)].
 
 The name of the assembly can be retrieved from the AssemblyName element in the `.csproj` file associated with the .NET project that represents the control add-in. In this case the name of the assembly is `Microsoft.Dynamics.Nav.Client.PingPong`.
 
@@ -116,7 +115,8 @@ Only members of the .NET type implementing the control add-in that are annotated
 If within the same project you have a native AL control add-in and a .NET add-in with the same name, the .NET add-in will be the one used.  
 
 ## See Also
-[Getting Started with AL](devenv-get-started.md)  
+[Migrating from .NET Framework to .NET Standard](devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
+[Get Started with AL](devenv-get-started.md)  
 [Control Add-In Object](devenv-control-addin-object.md)      
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)     
 [Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)            

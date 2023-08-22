@@ -1,24 +1,26 @@
 ---
-title: "OutStream.Write Method"
+title: "OutStream.Write(Variant [, Integer]) Method"
+description: "Writes a specified number of bytes to the stream."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# OutStream.Write Method
+# OutStream.Write(Variant [, Integer]) Method
+> **Version**: _Available or changed with runtime version 2.0._
+
 Writes a specified number of bytes to the stream. Data is written in binary format.
 
 
 ## Syntax
-```
+```AL
 [Written := ]  OutStream.Write(Value: Variant [, Length: Integer])
 ```
 ## Parameters
@@ -28,17 +30,17 @@ An instance of the [OutStream](outstream-data-type.md) data type.
 
 *Value*  
 &emsp;Type: [Variant](../variant/variant-data-type.md)  
-Contains the data to be written.
-        
-*Length*  
+Contains the data to be written.  
+
+*[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of bytes to be written. In the case of data types other than string, code, and binary, if you specify a length that differs from the size of the variable, an error message is displayed.  
 
 
 ## Return Value
-*Written*  
+*[Optional] Written*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of bytes that were written. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+The number of bytes that were written. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -50,21 +52,21 @@ The number of bytes that were written. If you omit this optional return value an
   
 ## Example  
 
-```
+```al
  var
     recBinaries: Record "Company Information";
     OStream: OutStream;
     Var: Variant;
 begin
-    recBinaries.FIND('-');  
-    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
-    OStream.WRITE(Var);  
-    recBinaries.MODIFY();  
+    recBinaries.Find('-');  
+    recBinaries.Picture.CreateOutstream(OStream);   
+    OStream.Write(Var);  
+    recBinaries.Modify();  
 end;
 ```   
   
 
 ## See Also
 [OutStream Data Type](outstream-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

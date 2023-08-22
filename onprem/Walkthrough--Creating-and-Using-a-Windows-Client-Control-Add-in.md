@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 670a6589-05e7-4289-9bb4-a3c0015f2442
 caps.latest.revision: 51
-manager: edupont
 ---
 # Walkthrough: Creating and Using a Windows Client Control Add-in
 The following walkthrough demonstrates how to develop a [!INCLUDE[nav_windows](includes/nav_windows_md.md)] add-in and use it on a [!INCLUDE[nav_windows](includes/nav_windows_md.md)] page. Add-ins are Microsoft .NET Framework assemblies that enable you to add custom functionality to the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. An API lets you develop add-ins without having to access the [!INCLUDE[navnow](includes/navnow_md.md)] source code.  
@@ -53,7 +52,7 @@ The following walkthrough demonstrates how to develop a [!INCLUDE[nav_windows](i
 -   Experience using Visual Studio.  
 
 ## Story  
- Simon is a software developer working for [!INCLUDE[demoname](includes/demoname_md.md)] He has been told that users of the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] want a way to see all the content of page fields when the content extends beyond the field size. He decides to create an add-in that can be applied on a field that enables the user to select the field to display its full content. Fields that have add-ins are displayed in blue. When the user selects the field, a pop-up window opens that shows all of the field's content.  
+ Simon, a software developer working for [!INCLUDE[demoname](includes/demoname_md.md)] has been told that users of the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] want a way to see all the content of page fields when the content extends beyond the field size. Simon decides to create an add-in that can be applied on a field that enables the user to select the field to display its full content. Fields that have add-ins are displayed in blue. When the user selects the field, a pop-up window opens that shows all of the field's content.  
 
 ##  <a name="CreatingAddIn"></a> Creating an Add-in with Visual Studio  
  [!INCLUDE[navnowlong](includes/navnowlong_md.md)] includes the Microsoft.Dynamics.Framework.UI.Extensibility.dll assembly that defines the model for creating [!INCLUDE[nav_windows](includes/nav_windows_md.md)] add-ins. The [!INCLUDE[navnowlong](includes/navnowlong_md.md)] API provides the binding mechanism between the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] add-in and the [!INCLUDE[navnowlong](includes/navnowlong_md.md)] framework.  

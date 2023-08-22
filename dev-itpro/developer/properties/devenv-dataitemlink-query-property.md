@@ -1,16 +1,16 @@
 ---
 title: "DataItemLink Property (Query)"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: jswymer
 ---
 
 # DataItemLink Property (Query)
+> **Version**: _Available from runtime version 1.0._
 
 Sets a reference between one or more fields of the data item table and data item or data items above it.  
   
@@ -44,7 +44,7 @@ When setting up a data item link between two data items, you always set up the D
 A Salesperson table and a Sales Header table have the Code column and Salesperson\_Code field in common, respectively. To create a link between these two tables, you add the following value in the DataItemLink property of the **Sales Header** data item.  
   
 ```AL
-DataItemLink = Salesperson Code=Salesperson.Code  
+DataItemLink = "Salesperson Code" = Salesperson.Code  
 ```  
 
 ## See Also

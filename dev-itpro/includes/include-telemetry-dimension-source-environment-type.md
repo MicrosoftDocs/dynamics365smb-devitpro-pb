@@ -1,0 +1,1 @@
+Specifies the type of the source environment of the operation.

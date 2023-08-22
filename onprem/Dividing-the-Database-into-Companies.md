@@ -17,7 +17,7 @@ caps.latest.revision: 11
 
  The following illustration shows a database that has four tables.  
 
- ![Dividing database](media/NAV_ADG_6_Diag_6.png "NAV\_ADG\_6\_Diag\_6")  
+ ![Dividing database.](media/NAV_ADG_6_Diag_6.png "NAV\_ADG\_6\_Diag\_6")  
 
  The four table descriptions on the left side apply to each of the data tables of  three companies. The records in the tables, G/L Account, Customer, and Vendor have the same structure and the same field definitions, even though they belong in three different companies. Only the data stored in the fields differ. The information in a Table Description can be used by tables from more than one company, no redundant information will be stored. This minimizes the size of the database.  
 

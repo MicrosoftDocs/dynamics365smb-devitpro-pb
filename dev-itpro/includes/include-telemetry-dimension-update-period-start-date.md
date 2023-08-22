@@ -1,0 +1,1 @@
+Specifies the start date and time of the update period (shown in UTC).

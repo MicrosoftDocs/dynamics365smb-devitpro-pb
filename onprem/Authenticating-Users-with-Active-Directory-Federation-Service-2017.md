@@ -43,12 +43,12 @@ You must complete these steps separately for [!INCLUDE[nav_web_md](includes/nav_
 
 1.  Open **Server Manager** on the computer that is running AD FS, and the choose **AD FS** to start **AD FS Management**.
 
-    ![AD FS Management](media/ADFS_Console.png "AD FS Management")
+    ![AD FS Management.](media/ADFS_Console.png "AD FS Management")
 2.  Right-click **Relying Party Trusts**, and then choose **Add Relying Party Trust**.
     The **Add Relying Party Trust Wizard** appears.
 3.  In the **Welcome** step, choose **Claims aware**, and then choose **Start**.
 
-    ![AD FS Relying Trust Wizard](media/ADFS_Relying_Trust_Wizard.png "AD FS Relying Trust Wizard")
+    ![AD FS Relying Trust Wizard.](media/ADFS_Relying_Trust_Wizard.png "AD FS Relying Trust Wizard")
 4.  In the **Select Data Source** step, choose **Enter data about the relying party manually**, and then choose **Next**.
 5.  In the **Specify Display Name** step, give the relying party a name, such as ```Dynamics NAV Web Client``` or ```Dynamics NAV Windows Client```, and then choose **Next**.
 6.  In the **Configure Certificate** step, choose **Next** to skip specifying the token encryption certificate.
@@ -56,7 +56,7 @@ You must complete these steps separately for [!INCLUDE[nav_web_md](includes/nav_
     This assumes that the [!INCLUDE[nav_web_md](includes/nav_web_md.md)] is running https.
 7.  In the **Configure URL** step, select the **Enable support for the WS-federation Passive protocol** check box.
 
-    ![AD FS Configure URL](media/ADFS_Relying_Trust_ConfigureURL.png "AD FS Configure URL")
+    ![AD FS Configure URL.](media/ADFS_Relying_Trust_ConfigureURL.png "AD FS Configure URL")
 
     Then, in **Relying party WS-Federation Passive Control URL** field, enter the URL for the [!INCLUDE[navnow](includes/navnow_md.md)] client according to the following:
 
@@ -114,7 +114,7 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 ### Set up support for SAML 1.0 tokens
 1. In the **Edit Claim Rules** dialog box, choose **Add Rule**.
 
-    ![AD FS Edit Claims Rule](media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
+    ![AD FS Edit Claims Rule.](media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
 2. In the **Select Rule Template** step, choose **Transform an incoming Claim** template, and then choose **Next**.
 3. In the **Edit Rule** step, set the **Claim rule name** to ```name```, the **Incoming claim type** to ```UPN```, and the **Outgoing claim type** to ```Name```. Choose **OK** when done.
 4. Repeat steps 1 to 3 to add another rule, except this time, set the **Claim rule name** to ```objectidentifier```, the **Incoming claim type** to ```Primary SID```, and the **Outgoing claim type** to:
@@ -126,14 +126,14 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
     Choose **OK** when done.
 5. Close the **Edit Claim Rules** dialog box.
 
-    ![AD FS Edit Claims Rule Done](media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
+    ![AD FS Edit Claims Rule Done.](media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
 
 ### Set up support for JSON Web tokens (JWT)
 JWT tokens are not supported by AD FS 2.0 or [!INCLUDE[navcrete_md](includes/navcrete_md.md)] (Cummulative Update 14 and earlier).
 
 1.  In the **Edit Claim Rules** dialog box, choose **Add Rule**.
 
-    ![AD FS Edit Claims Rule](media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
+    ![AD FS Edit Claims Rule.](media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
 2.  In the **Select Rule Template** step, choose **Send Claims Using a Custom Rule** template, and then choose **Next**.
 3. Set the **Claim rule name** to ```name```, and the  **Custom rule** to:
 
@@ -146,7 +146,7 @@ JWT tokens are not supported by AD FS 2.0 or [!INCLUDE[navcrete_md](includes/nav
     c:[Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"] => issue(Type = "oid", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
     ```
 5.  Close the **Edit Claim Rules** dialog box.
-    ![AD FS Edit Claims Rule Done](media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
+    ![AD FS Edit Claims Rule Done.](media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
 6.  Start Window Powershell, and run the following command to define the token type for the relying party to be JWT:
 
     ```
@@ -157,7 +157,7 @@ JWT tokens are not supported by AD FS 2.0 or [!INCLUDE[navcrete_md](includes/nav
 To setup [!INCLUDE[navnow_md](includes/navnow_md.md)] for ADFS authentication, you must modify the configuration of the [!INCLUDE[nav_server](includes/nav_server_md.md)], [!INCLUDE[nav_web_md](includes/nav_web_md.md)], and [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)]s.
 
 ### Dynamics NAV Server instance setup
-The [!INCLUDE[nav_server](includes/nav_server_md.md)] instance must be configured to allow claims based authentication. You can do this by using the [!INCLUDE[nav_admin_md](includes/nav_admin_md.md)], the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerConfiguration?view=dynamicsnav-ps-2017) in the [!INCLUDE[navnow_md](includes/navnow_md.md)] Administration Shell, or by modifying the server instance's CustomSettings.config file directly.
+The [!INCLUDE[nav_server](includes/nav_server_md.md)] instance must be configured to allow claims based authentication. You can do this by using the [!INCLUDE[nav_admin_md](includes/nav_admin_md.md)], the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerConfiguration?view=dynamicsnav-ps-2017) in the [!INCLUDE[navnow_md](includes/navnow_md.md)] Administration Shell, or by modifying the server instance's CustomSettings.config file directly.
 
 1.  Set the **Credential Type** (ClientServicesCredentialType) to ```NavUserPassword``` or ```AccessControlService```.
     -   If you set this to ```NavUserPassword```, client users can use either NavUserPassword or claims based authentication to access [!INCLUDE[navnow](includes/navnow_md.md)]. The CustomSetting.config file should include the following line:
@@ -204,7 +204,7 @@ The [!INCLUDE[nav_server](includes/nav_server_md.md)] instance must be configure
 4.  Restart the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance.
 
     >[!TIP]
-    >You can use the [Set-NAVServerInstance cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerInstance?view=dynamicsnav-ps-2017) to restart the service instance.
+    >You can use the [Set-NAVServerInstance cmdlet](/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerInstance?view=dynamicsnav-ps-2017) to restart the service instance.
 
 ### Dynamics NAV Web Client setup
 You configure the [!INCLUDE[nav_web_md](includes/nav_web_md.md)] by modifying it's [!INCLUDE[web_server_settings_file_md.md](includes/web_server_settings_file_md.md)].
@@ -228,7 +228,7 @@ You configure the [!INCLUDE[nav_web_md](includes/nav_web_md.md)] by modifying it
 The configuration changes are automatically picked up by the Internet Information Service (IIS).
 
 >[!TIP]
->Instead of reconfiguring the existing web client, consider using the [New-NAVWebServerInstance cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/New-NAVWebServerInstance?view=dynamicsnav-ps-2017) in the Dynamics NAV Administration Shell to add an additional web client instance, and leave the existing instance running NavUserPassword authentication.
+>Instead of reconfiguring the existing web client, consider using the [New-NAVWebServerInstance cmdlet](/powershell/module/microsoft.dynamics.nav.management/New-NAVWebServerInstance?view=dynamicsnav-ps-2017) in the Dynamics NAV Administration Shell to add an additional web client instance, and leave the existing instance running NavUserPassword authentication.
 
 ### Dynamic NAV Windows client setup (optional)
 You configure the [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)] by modifying the ClientUserSettings.config file for each client installation.

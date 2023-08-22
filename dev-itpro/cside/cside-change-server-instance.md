@@ -2,15 +2,13 @@
 title: Change the Server Instance
 description: Change the currently used Server instance by specifying the server instance from a list, or the field in the Database options window. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.assetid: c06ea848-bc0d-493d-99b8-9db10a684ecb
 caps.latest.revision: 5
-manager: edupont
 ---
 # Change the [!INCLUDE[server](../developer/includes/server.md)] in C/SIDE
 In some cases, you may want to change the [!INCLUDE[server](../developer/includes/server.md)] instance that is being used. For example:  

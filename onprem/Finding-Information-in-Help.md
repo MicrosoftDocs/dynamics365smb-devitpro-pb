@@ -28,7 +28,7 @@ There are several ways to access Help information in [!INCLUDE[navnow](includes/
 |Developer and IT Pro Help|Opens a Compiled HTML Help \(CHM\) window that contains the Developer and IT Pro Help.|  
 |About [!INCLUDE[navnow](includes/navnow_md.md)]|Displays product information, including the version number of [!INCLUDE[navnow](includes/navnow_md.md)].<br /><br /> For more information, see [About](uiref/-$-S_2091-About-$-.md).|  
 
- In the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], you can locate the Help options on the **Application** menu ![Application Menu button in menu bar](media/ApplicationMenuIcon.png "ApplicationMenuIcon").  
+ In the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], you can locate the Help options on the **Application** menu ![Application Menu button in menu bar.](media/ApplicationMenuIcon.png "ApplicationMenuIcon").  
 
  The Help menu in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] contains the following options.  
 

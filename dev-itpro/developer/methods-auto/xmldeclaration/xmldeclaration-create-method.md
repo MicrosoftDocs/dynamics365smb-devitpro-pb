@@ -1,48 +1,50 @@
 ---
-title: "XmlDeclaration.Create Method"
+title: "XmlDeclaration.Create(Text, Text, Text) Method"
+description: "Creates an XmlDeclaration node."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlDeclaration.Create Method
+# XmlDeclaration.Create(Text, Text, Text) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Creates an XmlDeclaration node.
 
 
 ## Syntax
-```
-XmlDeclaration :=   XmlDeclaration.Create(Version: String, Encoding: String, Standalone: String)
+```AL
+XmlDeclaration :=   XmlDeclaration.Create(Version: Text, Encoding: Text, Standalone: Text)
 ```
 ## Parameters
 *Version*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The version of the XML, usually "1.0".
-        
+&emsp;Type: [Text](../text/text-data-type.md)  
+The version of the XML, usually "1.0".  
+
 *Encoding*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The encoding for the XML document.
-        
+&emsp;Type: [Text](../text/text-data-type.md)  
+The encoding for the XML document.  
+
 *Standalone*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A string containing "yes" or "no" that specifies whether the XML is standalone or requires external entities to be resolved.  
 
 
 ## Return Value
 *XmlDeclaration*  
 &emsp;Type: [XmlDeclaration](xmldeclaration-data-type.md)  
-The created XmlDeclaration node.  
+The created XmlDeclaration node.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlDeclaration Data Type](xmldeclaration-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

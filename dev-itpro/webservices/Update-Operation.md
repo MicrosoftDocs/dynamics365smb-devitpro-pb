@@ -1,12 +1,11 @@
 ---
 title: "Update Operation"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ---
 # Update Operation
 Updates a single record. The updated record is passed as a reference and is updated with the latest version.  

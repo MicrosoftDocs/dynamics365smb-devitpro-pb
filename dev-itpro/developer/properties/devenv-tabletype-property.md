@@ -1,37 +1,39 @@
 ---
 title: "TableType Property"
-description: Describes the TableType property on table objects in Business Central
+description: "Specifies the table type."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TableType Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Specifies the table type.  
+Specifies the table type.
 
-## Applies to  
+## Applies to
+-   Table
 
-- Tables  
+## Property Value
 
-## Property Value  
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Normal**|runtime version 1.0|Specifies the table type used for Dynamics 365 Business Central.|
+|**CRM**|runtime version 1.0|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Dynamics 365 for Sales.|
+|**ExternalSQL**|runtime version 1.0|Specifies the table as a table or view in SQL Server that is not in the Dynamics 365 Business Central database. This table type is not supported in Business Central online.|
+|**Exchange**|runtime version 1.0|This table type is not supported in Business Central online.|
+|**MicrosoftGraph**|runtime version 1.0|This table type is not supported in Business Central online.|
+|**CDS**|runtime version 5.0|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Common Data Service.|
+|**Temporary**|runtime version 6.0|Specifies the table as an in-memory table used to store temporary data.|
 
-|Value|Description|  
-|-----------|-----------------|  
-|**Normal**|Specifies the table as a normal table in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. This value is the default.|  
-|**CDS**|Specifies the table as an integration table for integrating [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] with [!INCLUDE[crm](../includes/crm_md.md)]. The table is typically based on an entity in [!INCLUDE[crm](../includes/crm_md.md)], such as the Accounts entity.|  
-|**ExternalSQL**|Specifies the table as a table or view in SQL Server that isn't in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.|  
-|**Temporary**|Specifies the table as an in-memory only table in the [!INCLUDE[server](../includes/server.md)]. This table type isn't synchronized to the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. Specifies the table as an in-memory only table in the Business Central Server. This table type isn't synchronized to the Dynamics 365 Business Central database. <br /><br />**APPLIES TO:** [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] 2020 release wave 2 and later.|
-|**Exchange**|For internal use only.|
-|**MicrosoftGraph**|For for internal use only.|
-
-<!-- 
-|**Temporary**|Specifies the table as a temporary table in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. This table type is not synchronized.| -->
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
 ## Syntax
@@ -42,18 +44,17 @@ TableType = CDS;
 
 ## Remarks
 
-Tables that are marked as **CDS** or **ExternalSQL** are considered external tables that are not managed by [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. <!-- For more information, see [External Tables](External-Tables.md).  -->
+Tables that are marked as **CDS** or **ExternalSQL** are considered external tables that are not managed by [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. 
 
 > [!IMPORTANT]  
->  We advise against creating tables of type CDS manually. Instead, use the integration mapping functionality.
+> We advise against creating tables of type CDS manually. Instead, use the integration mapping functionality.
 <!-- For more information, see [Introduction to Dynamics 365 for Sales Integration Customization in Dynamics NAV](Introduction-to-Dynamics-CRM-Integration-Customization-in-Dynamics-NAV.md).  
  -->
 
-### Temporary tables
+## Temporary tables
 
 Marking a table as **Temporary** is the same as:
 
-- Setting all Record variables in AL code to "Temporary". See [Temporary Property](devenv-temporary-property.md).
 - Setting "SourceTableTemporary" on all pages that use the table. See [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md).  
 
 Temporary tables are not synchronized with the SQL database, so they do not follow the same rules about making destructive changes.
@@ -66,6 +67,3 @@ For more information, see [Temporary Tables](../devenv-temporary-tables.md).
 
 [Properties](devenv-properties.md)  
 [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md)  
-[Temporary Property](devenv-temporary-property.md)  
-<!--  [External Tables](External-Tables.md)   
- [Table Designer](uiref/-$-S_2102-Table-Designer-$-.md)  -->

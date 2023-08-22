@@ -1,24 +1,26 @@
 ---
-title: "List.RemoveRange Method"
+title: "List.RemoveRange(Integer, Integer) Method"
+description: "Removes a range of elements from the List."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# List.RemoveRange Method
+# List.RemoveRange(Integer, Integer) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Removes a range of elements from the List.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  List.RemoveRange(Index: Integer, Count: Integer)
 ```
 ## Parameters
@@ -28,21 +30,21 @@ An instance of the [List](list-data-type.md) data type.
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The one-based starting index of the range of elements to remove.
-        
+The one-based starting index of the range of elements to remove.  
+
 *Count*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of elements to remove.  
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the range is a valid range, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the range is a valid range, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [List Data Type](list-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

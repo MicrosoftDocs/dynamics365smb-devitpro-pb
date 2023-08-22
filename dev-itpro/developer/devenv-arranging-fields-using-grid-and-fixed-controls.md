@@ -2,12 +2,11 @@
 title: Arranging Fields in Multiple Rows and Columns
 description: Arrange fields in rows and columns in a gird-like format using the Grid and Fixed controls.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 # Arranging Fields Using Grid and Fixed Controls

@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 3af7054c-7457-4cbc-a94d-818dbaa8feb1
 caps.latest.revision: 3
-manager: edupont
 ---
 # Managing Companies in Dynamics NAV
 In this section, you can read more about how to manage companies in [!INCLUDE[navnow](includes/navnow_md.md)].  

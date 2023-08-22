@@ -1,0 +1,1 @@
+Specifies the publisher of the app/extension that the page belongs to.

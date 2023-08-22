@@ -1,20 +1,19 @@
 ---
 title: Fields that are Moved, Removed, or Replaced
 description: We're constantly streamlining and adjusting our app in-step with market developments. Read about the fields that you want to refactor your code for.
-author: edupont04
-ms.service: dynamics365-business-central
-ms.topic: article
+author: jswymer
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms. search.keywords: deprecated, obsolete
-ms.date: 10/01/2020
-ms.author: edupont
+ms.date: 04/01/2021
+ms.author: jswymer
 
 ---
 
 # Deprecated Fields, and Fields Marked as Obsolete
 
-In the latest version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], a number of fields have been deprecated in the current release or marked to be obsolete in a later release.  
+In the latest version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], a number of fields have been deprecated in the current release or marked to be obsolete in a later release.  
 
 ## Definitions
 
@@ -22,9 +21,9 @@ Deprecated fields fall into one of the following groups:
 
 1. Fields moved to an extension by Microsoft  
 
-   Partner impact: Remember to install the extension when you upgrade an existing solution from an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+   Partner impact: Remember to install the extension when you upgrade an existing solution from an earlier version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
   
-   Specifically for the extensions that are required for connecting on-premises solutions with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online for intelligent insights, you must install the **Intelligent Cloud Base Extension** extension first, and then the product-specific extension or extensions.  
+   Specifically for the extensions that are required for connecting on-premises solutions with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online for intelligent insights, you must install the **Intelligent Cloud Base Extension** extension first, and then the product-specific extension or extensions.  
 2. Fields marked as **Obsolete:Pending**  
 
    Partner impact: None in the current release, this is just a heads-up that a change is coming.  
@@ -32,7 +31,7 @@ Deprecated fields fall into one of the following groups:
 
    Partner impact: Refactor your code as soon as possible.  
 
-## Fields marked as ObsoleteState:Pending in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+## Fields marked as ObsoleteState:Pending in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
 A number of fields are marked as ObsoleteState:Pending. There is no impact on code in this release.  
 
@@ -72,6 +71,10 @@ A number of fields are marked as ObsoleteState:Pending. There is no impact on co
 
 [!INCLUDE [fields-obsolete-nl](../includes/fields-obsolete-nl.md)]
 
+### Russia
+
+[!INCLUDE [fields-obsolete-ru](../includes/fields-obsolete-ru.md)]
+
 ### Spain
 
 [!INCLUDE [fields-obsolete-es](../includes/fields-obsolete-es.md)]
@@ -92,13 +95,13 @@ A number of fields are marked as ObsoleteState:Pending. There is no impact on co
 
 [!INCLUDE [fields-obsolete-baseapp](../includes/fields-obsolete-baseapp.md)]
 
-## Fields moved to an extension by Microsoft in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
+## Fields moved to an extension by Microsoft in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
 A number of fields have been moved from the base application to an extension.
 
 ### Czech Republic
 
-The functionality for Different types of disposal and maintenance in the Czech version has been moved to the Different types of disposal and maintenance (CZ) extension. For more information, see [Different types of disposal and maintenance (CZ) Extension](/dynamics365/business-central/LocalFunctionality/Czech/ui-extensions-different-disposal-maintenance-types-cz) in the [!INCLUDE[d365fin_long](../developer/includes/d365fin_long_md.md)] documentation.
+The functionality for Different types of disposal and maintenance in the Czech version has been moved to the Different types of disposal and maintenance (CZ) extension. For more information, see [Different types of disposal and maintenance (CZ) Extension](/dynamics365/business-central/localfunctionality/czech/fixed-assets) in the [!INCLUDE[d365fin_long](../developer/includes/d365fin_long_md.md)] documentation.
 
 |Old Table ID|Old Table Name|Old Field ID|Old Field Name|New Table ID|New Table Name|New Field ID|New Field Name|
 |--------|--------|--------|--------|--------|--------|--------|--------|
@@ -141,6 +144,10 @@ The functionality for payments and reconciliation in the Danish version (FIK) ha
 
 ## See Also
 
+[Deprecated Features in the Base App](deprecated-features-w1.md)  
+[Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Important Information and Considerations for Before Upgrading to Dynamics 365 Business Central](upgrade-considerations.md)  
+[Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  

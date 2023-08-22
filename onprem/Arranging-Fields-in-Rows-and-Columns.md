@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 8bd17701-ec33-4448-9074-9817343d353b
 caps.latest.revision: 10
-manager: edupont
 ---
 # Arranging Fields in Rows and Columns
 By default, page fields are arranged automatically in two columns. For more information, see [Field Arrangement on FastTabs](Field-Arrangement-on-FastTabs.md). You can use a GridLayout control or a FixedLayout control to arrange fields in rows and columns on page. This topic outlines the differences between the two controls to help you determine which control to use.  

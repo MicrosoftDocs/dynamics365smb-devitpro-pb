@@ -1,25 +1,27 @@
 ---
-title: "JsonArray.IndexOf Method"
+title: "JsonArray.IndexOf(Text) Method"
+description: "Determines the index of a specific value in the JsonArray."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonArray.IndexOf Method
+# JsonArray.IndexOf(Text) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Determines the index of a specific value in the JsonArray.
 
 
 ## Syntax
-```
-Index :=   JsonArray.IndexOf(Value: String)
+```AL
+Index :=   JsonArray.IndexOf(Value: Text)
 ```
 ## Parameters
 *JsonArray*  
@@ -27,18 +29,24 @@ Index :=   JsonArray.IndexOf(Value: String)
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
   
 
 
 ## Return Value
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The position of the value in the JsonArray. -1 will be returned if Value cannot be found in the array.  
+The position of the value in the JsonArray. -1 will be returned if Value cannot be found in the array.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+> [!NOTE]  
+> The JsonArray is 0-based by design.
+
 ## See Also
 [JsonArray Data Type](jsonarray-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

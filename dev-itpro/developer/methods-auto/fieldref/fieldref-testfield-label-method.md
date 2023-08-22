@@ -1,24 +1,26 @@
 ---
-title: "FieldRef.TestField Method"
+title: "FieldRef.TestField(Label) Method"
+description: "Determines whether the contents of a field matches a given value."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FieldRef.TestField Method
+# FieldRef.TestField(Label) Method
+> **Version**: _Available or changed with runtime version 4.0._
+
 Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.
 
 
 ## Syntax
-```
+```AL
  FieldRef.TestField(Value: Label)
 ```
 ## Parameters
@@ -35,5 +37,5 @@ The value that you want to compare with the contents of the field referred to by
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [FieldRef Data Type](fieldref-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -60,7 +60,7 @@ Word report layouts are built on *custom XML parts*. A custom XML part is struct
   
  The following figure illustrates the simple custom XML part from the previous section in the **XML Mapping** pane of a Word document.  
   
- ![Clip of the XML Mapping pane in word](media/NAV_ReportLayout_XMLMappingPane.png "NAV\_ReportLayout\_XMLMappingPane")  
+ ![Clip of the XML Mapping pane in word.](media/NAV_ReportLayout_XMLMappingPane.png "NAV\_ReportLayout\_XMLMappingPane")  
   
 -   To add a label or field to the layout, you insert a content control that maps to the element in the **XML Mapping** pane.  
   

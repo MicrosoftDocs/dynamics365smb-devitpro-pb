@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 050d7047-d95d-424a-97c1-c115000c679e
 caps.latest.revision: 25
-manager: edupont
 ---
 # Walkthrough: Viewing Page Data in Excel Using PowerPivot (OData)
 This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] page as a web service and then analyze the page data using Microsoft PowerPivot for Excel 2013. Similar steps also apply to PowerPivot for Excel 2010. For information about PowerPivot, see [Microsoft PowerPivot](https://go.microsoft.com/fwlink/?LinkID=199906).  
@@ -84,7 +83,7 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
      The browser should now show the web service that you have published, as shown in the following illustration.  
 
-     ![OData services listed in a browser](media/ODataservicesinbrowser.JPG "ODataservicesinbrowser")  
+     ![OData services listed in a browser.](media/ODataservicesinbrowser.JPG "ODataservicesinbrowser")  
 
 > [!NOTE]  
 >  If the browser cannot find the web service, it may indicate that the specified [!INCLUDE[server](../developer/includes/server.md)] instance is not running. For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
@@ -157,7 +156,7 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
      You can now see the data in the body of the worksheet, as shown in the following illustration.  
 
-     ![PivotTable after selecting fields](media/PivotDataRaw.JPG "PivotDataRaw")  
+     ![PivotTable after selecting fields.](media/PivotDataRaw.JPG "PivotDataRaw")  
 
      The PivotTable shows customers by location and individual customer balances, and also adds the balances by location. To make the information more readable, you can update the headings on the PivotTable.  
 
@@ -169,7 +168,7 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
  The following illustration shows how the worksheet looks after you make these changes.  
 
- ![PivotTable during setup](media/PivotDataClean.JPG "PivotDataClean")  
+ ![PivotTable during setup.](media/PivotDataClean.JPG "PivotDataClean")  
 
 ## Next Steps  
  Now that you have created your PivotTable, you can continue to enhance the data to make it more useful and readable. You can:  

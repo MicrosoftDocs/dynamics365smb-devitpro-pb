@@ -1,0 +1,1 @@
+Specifies the ID of the session being cancelled.

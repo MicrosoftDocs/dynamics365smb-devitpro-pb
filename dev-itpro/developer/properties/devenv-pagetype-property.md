@@ -1,41 +1,49 @@
 ---
 title: "PageType Property"
-author: solsen
+description: "Sets the type of page to create."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
-ms.author: solsen
+ms.topic: reference
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PageType Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Sets the type of page that is created. The page type defines the layout and options on the page and it is important to choose the page type that aligns with the purpose of a page. For more information about designing pages, see [Page Types and Layouts](../devenv-page-types-and-layouts.md). For more information about the page object, see [Pages Overview](../devenv-pages-overview.md).
-
-The following page types are available:
-
-|PageType|Description|
-|----|----|
-|`RoleCenter`|Overview of business performance and the start page for a specific user profile.|
-|`Card`|Master, reference, and set up data management.|
-|`Document`|Transaction and other document management.|
-|`ListPlus`|Statistics, details, and related data management.|
-|`List`|Entity overviews and navigation, and inline editing of simple entities.|
-|`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|
-|`StandardDialog`|Routine dialog that starts or progresses a task.|Single or collection|
-|`ConfirmationDialog`|Confirmative or exceptional dialog, such as warnings.|Single or collection|
-|`NavigatePage`|Multi-step dialog (also known as a "Wizard").|
-|`CardPart`|A page that is embedded in another page, such as in a FactBox.|
-|`ListPart`|A page that is embedded in another page, such as in a FactBox.|Collection of entities/entries|
-|`HeadlinePart` | A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
-
+Sets the type of page to create.
 
 ## Applies to
+-   Page
 
-- Pages  
+## Property Value
+
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Card**|runtime version 1.0|Master, reference, and set up data management.|
+|**List**|runtime version 1.0|Entity overviews and navigation, and inline editing of simple entities.|
+|**RoleCenter**|runtime version 1.0|Overview of business performance and the start page for a specific user profile.|
+|**CardPart**|runtime version 1.0|A page that is embedded in another page, such as in a FactBox.|
+|**ListPart**|runtime version 1.0|A page that is embedded in another page, such as in a FactBox.|
+|**Document**|runtime version 1.0|Transaction and other document management.|
+|**Worksheet**|runtime version 1.0|Line-based data entry tasks (such as journals) and inquiries.|
+|**ListPlus**|runtime version 1.0|Statistics, details, and related data management.|
+|**ConfirmationDialog**|runtime version 1.0|Confirmative or exceptional dialog, such as warnings.|
+|**NavigatePage**|runtime version 1.0|Multi-step dialog (also known as a "Wizard").|
+|**StandardDialog**|runtime version 1.0|Routine dialog that starts or progresses a task.|
+|**API**|runtime version 1.0|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface.|
+|**ReportPreview**|runtime version 1.0|Preview of a report.|
+|**ReportProcessingOnly**|runtime version 1.0|Only report processing.|
+|**XmlPort**|runtime version 1.0|XmlPort page.|
+|**HeadlinePart**|runtime version 1.0|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 
@@ -51,6 +59,6 @@ The exception is the value *API*. Pages of this type are used to generate web se
 
 ## See Also  
 
-[Page Properties](devenv-page-properties.md)  
+[Page Properties](./devenv-properties.md)  
 [Properties](devenv-properties.md)  
-[Pages Overview](../devenv-pages-overview.md)  
+[Pages Overview](../devenv-pages-overview.md)

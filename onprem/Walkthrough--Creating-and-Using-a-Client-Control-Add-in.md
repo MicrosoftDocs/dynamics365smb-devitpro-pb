@@ -49,7 +49,7 @@ In a typical business scenario, developers create control add-ins using Microsof
 
 
 ## Story  
- Simon is a software developer working for [!INCLUDE[demoname](includes/demoname_md.md)] He has been told that the users of the [!INCLUDE[nav_web](includes/nav_web_md.md)] want to see Bing Maps displayed on the Web client. He wants to use the client extensibility framework to test how to do this on a separate page first.  
+ Simon, a software developer working for [!INCLUDE[demoname](includes/demoname_md.md)] has been told that the users of the [!INCLUDE[nav_web](includes/nav_web_md.md)] want to see Bing Maps displayed on the Web client. Simon wants to use the client extensibility framework to test how to do this on a separate page first.  
 
 ## Creating a Control Add-in With Visual Studio  
  [!INCLUDE[navnow](includes/navnow_md.md)] includes the Microsoft.Dynamics.Framework.UI.Extensibility.dll assembly that defines the model for creating [!INCLUDE[navnow](includes/navnow_md.md)] control add-ins. The [!INCLUDE[navnow](includes/navnow_md.md)] API provides the binding mechanism between the [!INCLUDE[navnow](includes/navnow_md.md)] control add-in and the [!INCLUDE[navnow](includes/navnow_md.md)] framework.  
@@ -219,7 +219,7 @@ Before registering the control add-in in [!INCLUDE[navnow](includes/navnow_md.md
 
 2.  Locate the **Manifest.xml** file that you created in the previous steps, and copy this to the same folder structure. Then locate the **Script.js** file that you created in the previous steps, and copy this to the **Script** folder. Your folder should now look like this:  
 
-     ![Folder structure before creating the .zip file](media/ControlAddInSingleFileFolderStructure.png "ControlAddInSingleFileFolderStructure")  
+     ![Folder structure before creating the .zip file.](media/ControlAddInSingleFileFolderStructure.png "ControlAddInSingleFileFolderStructure")  
 
 3.  Place images, scripts, and stylesheets in the right folders.  
 
@@ -311,7 +311,7 @@ You have set up the prerequisites for using a control add-in from a page. Now yo
 
      Your page design should now look like this.  
 
-     ![The page design for the Bing Maps control](media/ControlAddInPageDesignForBingMapsControl.png "ControlAddInPageDesignForBingMapsControl")  
+     ![The page design for the Bing Maps control.](media/ControlAddInPageDesignForBingMapsControl.png "ControlAddInPageDesignForBingMapsControl")  
 
 9. Save and compile the page. Name the page **Bing Maps**.  
 

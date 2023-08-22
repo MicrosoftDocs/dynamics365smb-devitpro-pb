@@ -1,27 +1,29 @@
 ---
-title: "TestRequestPage.SaveAsWord Method"
+title: "TestRequestPage.SaveAsWord(Text) Method"
+description: "Saves a report as a Microsoft Word (.doc) file."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestRequestPage.SaveAsWord Method
+# TestRequestPage.SaveAsWord(Text) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Saves a report as a Microsoft Word (.doc) file.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
- TestRequestPage.SaveAsWord(FileName: String)
+```AL
+ TestRequestPage.SaveAsWord(FileName: Text)
 ```
 ## Parameters
 *TestRequestPage*  
@@ -29,7 +31,7 @@ Saves a report as a Microsoft Word (.doc) file.
 An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.  
 
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The path and file name to which the report is saved. The file name extension should be .doc.  
 
 
@@ -53,28 +55,28 @@ The path and file name to which the report is saved. The file name extension sho
 -   A handler method of type RequestPageHandler called ReqPageHandler. This handler method has one parameter called RequestPage of Type TestRequestPage and Subtype Customer – Top 10 List. The RequestPage parameter is specified as VAR and is passed by reference to the handler method. 
 <!--Links For more information, see [How to: Create Handler Methods](devenv-How-to--Create-Handler-Methods.md).-->  
    
-```  
+```al
 var
     Filename: Text;
 begin
     //Test method: TestSaveAsWord  
-    Filename := TEMPORARYPATH + 'MyRep.doc';  
-    MESSAGE(Filename);  
-    if not FILE.ERASE(Filename) then  
-      ERROR('Cannot erase %1',Filename);  
-    REPORT.RUN(111);  
-    if not FILE.EXISTS(Filename) then  
-      ERROR('File should exist!');  
+    Filename := TemporaryPath + 'MyRep.doc';  
+    Message(Filename);  
+    if not File.Erase(Filename) then  
+      Error('Cannot erase %1',Filename);  
+    Report.Run(111);  
+    if not File.Exists(Filename) then  
+      Error('File should exist!');  
       
     //Request Page Handler method  
-    RequestPage.Customer.SETFILTER("No.", '20000');  
-    RequestPage.ChartType.VALUE('Pie chart');  
-    RequestPage.SAVEASEXCEL(Filename);  
+    RequestPage.Customer.SetFilter("No.", '20000');  
+    RequestPage.ChartType.Value('Pie chart');  
+    RequestPage.SaveAsExcel(Filename);  
 end;
   
 ```
 
 ## See Also
 [TestRequestPage Data Type](testrequestpage-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

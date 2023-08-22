@@ -1,24 +1,26 @@
 ---
-title: "RecordRef.Insert Method"
+title: "RecordRef.Insert(Boolean, Boolean) Method"
+description: "Inserts a record into a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.Insert Method
+# RecordRef.Insert(Boolean, Boolean) Method
+> **Version**: _Available or changed with runtime version 4.1._
+
 Inserts a record into a table.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  RecordRef.Insert(RunTrigger: Boolean, InsertWithSystemId: Boolean)
 ```
 ## Parameters
@@ -35,13 +37,13 @@ If this parameter is true, the SystemId field of the record is given a value tha
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [RecordRef Data Type](recordref-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

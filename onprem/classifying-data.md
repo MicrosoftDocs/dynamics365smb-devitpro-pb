@@ -37,7 +37,7 @@ Dynamics NAV operates with some standard rules for classification:
 For more information about this property, see the following articles:
 
 -   [DataClassification Property in AL](developer/properties/devenv-dataclassification-property.md) 
--   [DataClassification Property in C/AL](https://docs.microsoft.com/dynamics-nav/dataclassification-property)
+-   [DataClassification Property in C/AL](/dynamics-nav/dataclassification-property)
 
 ### Data classification on upgrade
 When you upgrade an application from a [!INCLUDE[d365fin_md](includes/d365fin_md.md)] version that does not contain the DataClassification property, existing tables and fields (except for FlowFields and FlowFilters) will automatically be assigned the **CustomerContent** classification. You can then access the **DataClassification** property on these tables and fields, and change the classification as needed. FlowFields and FlowFilters will be assigned the **SystemMetadata** classification automatically.
@@ -75,7 +75,7 @@ For more information, see the following articles:
 
 -   [Instrumenting an Application for Telemetry](instrumenting-application-for-telemetry.md) 
 -   [SENDTRACETAG Method (AL)](developer/methods/devenv-sendtracetag-method.md)
--   [SENDTRACETAG Function (C/AL)](https://docs.microsoft.com/dynamics-nav/sendtracetag-function)
+-   [SENDTRACETAG Function (C/AL)](/dynamics-nav/sendtracetag-function)
 
 ## See Also
 [How to: Create a Page to View a Virtual Table](How-to--Create-a-Page-to-View-a-Virtual-Table.md)    

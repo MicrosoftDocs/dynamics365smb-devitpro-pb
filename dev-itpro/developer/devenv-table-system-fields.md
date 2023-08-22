@@ -3,12 +3,11 @@ title: "Table System fields"
 description: Description of the table System fields.
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.topic: conceptual
 ms.author: jswymer
 --- 
 
@@ -52,9 +51,10 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
 - The [SystemIdNo()](methods-auto/recordref/recordref-systemidno-method.md) gets the field number used by the **SystemId** field in the table:
 
     ```AL
-    myRec.OPEN(DATABASE::MyTable);
+    myRec.Open(DATABASE::MyTable);
     SystemIdFieldNo := myRec.SystemIdNo();
     ```
+
 - The [TableRelation](properties/devenv-tablerelation-property.md) lets you use the **SystemId** field to set up table relationships:
 
     ```AL
@@ -85,11 +85,11 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
 - You can show the **SystemId** field as a field on a page.
 - You can link FactBoxes/page parts using the **SystemId** field.
 
-## Data audit fields
+## <a name="audit"></a>Data audit fields
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-Every table in [!INCLUDE[prodshort](includes/prodshort.md)] includes the following four system fields, which can be used for auditing records:
+Every table in [!INCLUDE[prod_short](includes/prod_short.md)] includes the following four system fields, which can be used for auditing records:
 
 |Field name (in AL) |Column name (in database)|Data type|Field number|Description|
 |-------------------|-------------------------|---------|------------|-----------|
@@ -104,9 +104,9 @@ At runtime, the data audit fields have the following characteristics and behavio
 
 The platform will automatically generate and assign values according to the following triggers:
 
-- After all [OnBeforeInsert](triggers/devenv-onbeforeinsert-trigger.md) and [OnBeforeModify](triggers/devenv-onbeforemodify-trigger.md) triggers are run
-- After the [OnInsert](triggers/devenv-oninsert-trigger.md) and [OnModify](triggers/devenv-onmodify-trigger.md) triggers are run
-- Before all [OnAfterInsert](triggers/devenv-onafterinsert-trigger.md) and [OnAfterModify](triggers/devenv-onaftermodify-trigger.md) triggers are run
+- After all [OnBeforeInsert](triggers-auto/tableextension/devenv-onbeforeinsert-tableextension-trigger.md) and [OnBeforeModify](triggers-auto/tableextension/devenv-onbeforemodify-tableextension-trigger.md) triggers are run
+- After the [OnInsert](triggers-auto/tableextension/devenv-oninsert-tableextension-trigger.md) and [OnModify](triggers-auto/tableextension/devenv-onmodify-tableextension-trigger.md) triggers are run
+- Before all [OnAfterInsert](triggers-auto/tableextension/devenv-onafterinsert-tableextension-trigger.md) and [OnAfterModify](triggers-auto/tableextension/devenv-onaftermodify-tableextension-trigger.md) triggers are run
 
 > [!NOTE]
 > You can assign the values, but the values written to the database are always provided by the platform.
@@ -149,37 +149,63 @@ There are a couple points of interest you should know:
 - If a record is copied into a temporary table, the data audit field values are copied as well. The values aren't changed by the server when calling a modify or insert method.  
 - It's possible to use audit fields in a key. The platform doesn't automatically index these fields in any way.
 
+If you want to translate a user security ID GUID to the corresponding user name, the following AL code might be useful:
+
+```al
+procedure GetUserNameFromSecurityId(UserSecurityID: Guid): Code[50]
+    var
+        User: Record User;
+    begin
+        User.Get(UserSecurityID);
+        exit(User."User Name");
+    end;
+```  
+
 ## <a name="timestamp"></a> Timestamp field
 
-The **timestamp** field contains row version numbers for records, as maintained in SQL Server. The **timestamp** field is hidden. But, you can expose it by using [SqlTimestamp Property](properties/devenv-sqltimestamp-property.md). You're then able to write code against it, add filters, and so on, similar to any other field in a table. However, you can't write to the **timestamp** field.  
-  
+The **timestamp** field contains [rowversion](/sql/t-sql/data-types/rowversion-transact-sql) numbers for records, as maintained in SQL Server. In SQL server, **timestamp** is a synonym for the **rowversion** data type. The value of the **timestamp** field is an automatically generated, unique binary number. The **timestamp** is a mechanism  for version-stamping table rows.
+
 A typical use of the **timestamp** field is for synchronizing data changes in tables. It lets you identify records that have changed since the last synchronization. For example, you can read all the records in a table, then store the highest **timestamp** value. Later, you can query and retrieve records that have a higher **timestamp** value than the stored value.  
-  
-#### Expose the timestamp field  
- 
+
+#### In AL
+
+In AL code, the **timestamp** is accessible through the `SystemRowVersion` field. However, you can't write to the field.
+
+The following methods are also available on the [Database](methods-auto/database/database-data-type.md) data type:
+
+|Method|Description|
+|------|-----------|
+|[LastUsedRowVersion](methods-auto/database/database-lastusedrowversion-method.md)|Gets the last used rowversion from the database. This method does the same as the [@@DBTS (Transact-SQL) function](/sql/t-sql/functions/dbts-transact-sql).|
+|[MinimumActiveRowVersion](methods-auto/database/database-minimumactiverowversion-method.md)|Gets the lowest active rowversion in the database. This method returns the lowest rowversion of any uncommitted rows. Rows that have a lower timestamp than this returned value are guaranteed to be committed. If there are no active transactions, the value is equal to LastUsedRowVersion + 1. This method does the same as the [MIN_ACTIVE_ROWVERSION (Transact-SQL) function](/sql/t-sql/functions/min-active-rowversion-transact-sql).|
+
+#### Expose the timestamp field in Business Central version 20 and earlier
+
+In versions of Business Central earlier than version 21, the **timestamp** field is hidden. But, you can expose it by using [SqlTimestamp Property](properties/devenv-sqltimestamp-property.md). You're then able to write code against it, add filters, and so on, similar to any other field in a table. 
+
 1. Add a field that has the data type `BigInteger`.
   
      Specify a name for the field, such as `Record Time Stamp`. You can specify any valid name for field, but you can't use `timestamp` because it's a reserved name.  
   
-2.  Set the `SqlTimestamp` property to `true`.
+2. Set the `SqlTimestamp` property to `true`.
 
     For example:
 
-    ```
+    ```al
     field(3; "Record Time Stamp"; BigInteger)
     {
         SqlTimestamp = true;
     }
+    ```
 
 Alternatively, you can use a [FieldRef Data Type](methods-auto/fieldref/fieldref-data-type.md) variable to access the timestamp value of a record, as follows:
 
-1.    Create a [RecordRef Data Type](methods-auto/recordref/recordref-data-type.md) variable that references the record in a table for which you want to retrieve its timestamp.
+1. Create a [RecordRef Data Type](methods-auto/recordref/recordref-data-type.md) variable that references the record in a table for which you want to retrieve its timestamp.
 
-2.    Use the [Field Method](methods-auto/recordref/recordref-field-method.md) on the **RecordRef** variable to get the **FieldRef** for the field that has the number 0. This field contains the timestamp value.
+2. Use the [Field Method](methods-auto/recordref/recordref-field-method.md) on the **RecordRef** variable to get the **FieldRef** for the field that has the number 0. This field contains the timestamp value.
 
 The following example shows how to retrieve the timestamp value for the first record in the `Customer` table. **RecordRef** and **FieldRef** are [RecordRef Data Type](methods-auto/recordref/recordref-data-type.md) and [FieldRef Data Type](methods-auto/fieldref/fieldref-data-type.md) variables, respectively.
 
-```
+```al
 RecordRef.Open(DATABASE::Customer);
 RecordRef.FindFirst();
 FieldRef := RecordRef.Field(0);
