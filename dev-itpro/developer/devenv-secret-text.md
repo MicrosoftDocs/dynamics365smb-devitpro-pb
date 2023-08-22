@@ -1,6 +1,6 @@
 ---
-title: "Using the SecretText data type"
-description: The 'SecretText' data type is designed to protect sensitive values from being exposed when debugging.
+title: "Protecting sensitive values with the SecretText data type"
+description: The SecretText data type is designed to protect sensitive values from being exposed when debugging.
 author: SusanneWindfeldPedersen
 ms.author:
 ms.custom: bap-template
@@ -10,9 +10,9 @@ ms.service: dynamics365-business-central
 ms.topic: conceptual
 ---
 
-# Using the SecretText data type
+# Protecting sensitive values with the SecretText data type
 
-`SecretText` is a data type designed to protect sensitive values from being exposed through the AL debugger when doing regular or snapshot debugging. Its use is recommended for applications that need to handle any kind of credentials like API keys, custom licensing tokens, or similar.
+[SecretText data type](methods-auto/secrettext/secrettext-data-type.md) is designed to protect sensitive values from being exposed through the AL debugger when doing regular or snapshot debugging. Its use is recommended for applications that need to handle any kind of credentials like API keys, custom licensing tokens, or similar.
 
 ## The lifetime of a credential
 
@@ -66,8 +66,7 @@ A credential transits through AL code to reach the points where it's consumed. T
 2. Use as a parameter to call a procedure/trigger
 3. Becoming the return value of a function call
 
-The `SecretText` data type guarantees that the value remains nondebuggable by preventing any assignment from itself to any
-debuggable type. This constraint includes the `Variant` data type. As a result, the `NonDebuggable` attribute is only required during retrieval
+The [SecretText data type](methods-auto/secrettext/secrettext-data-type.md) guarantees that the value remains nondebuggable by preventing any assignment from itself to any debuggable type. This constraint includes the `Variant` data type. As a result, the `NonDebuggable` attribute is only required during retrieval
 and can be omitted for the rest of the lifetime of a credential, as all intermediate destinations are automatically protected.
 
 ```al
@@ -193,5 +192,6 @@ end;
 
 ## See Also
 
+[SecretText data type](methods-auto/secrettext/secrettext-data-type.md)  
 [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md)  
 [Http Client](methods-auto/httpclient/httpclient-data-type.md)
