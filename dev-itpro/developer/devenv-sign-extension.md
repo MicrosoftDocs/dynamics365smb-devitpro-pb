@@ -20,9 +20,6 @@ Code signing is a common practice for many applications. It's the process of dig
 
 The signing of an APP package file must be performed on a computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed. If you're running [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on Docker for your development environment, that environment will meet this requirement. You must also have the certificate that will be used for signing on the computer. The certificate must include code signing as the intended purpose. It's recommended that you use a certificate purchased from a third-party certificate authority.
 
-> [!IMPORTANT]  
-> If you publish the extension as an app on AppSource, the APP package file must be signed using a certificate purchased from a Certification Authority that has its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to DigiCert and Symantec, see the image below. You don't have to use an EV Code Signing certificate, standard code signing certificates can be used for signing your extensions.
-
 ![Certificates.](media/certificates.png)
 
 
@@ -47,7 +44,7 @@ SignTool sign /f C:\Certificates\MyCert.pfx /p MyPassword /t http://timestamp.ve
 > If you are using the BCContainerHelper PowerShell module to run [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on Docker, you can use the function `Sign-BCContainerApp` to perform all the steps above.
 
 ## Self-signed certificate
-For testing purposes and on-premises deployments, it's acceptable to create your own self-signed certificate using the [New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate) cmdlet in PowerShell on Windows 10 or [MakeCert](/windows/desktop/SecCrypto/makecert).  
+For testing purposes and on-premises deployments, it's acceptable to create your own self-signed certificate. You can do so using the [New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate) cmdlet in PowerShell on Windows 10 or [MakeCert](/windows/desktop/SecCrypto/makecert).  
 
 The following example illustrates how to create a new self-signed certificate for code signing:
 
@@ -60,6 +57,16 @@ The following (deprecated) MakeCert command is used to create a new self-signed 
 ```
 Makecert –sk myNewKey –n “CN=Prosewaretest” –r –ss my
 ```
+
+
+## Code signing for AppSource
+If you publish the extension as an app on AppSource, the APP package file must be signed using a certificate purchased from a Certification Authority (CA); a self-signed certificate will not be accepted by the technical validation. The CA must has its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to DigiCert and Symantec, see the image below. You don't have to use an EV Code Signing certificate, standard code signing certificates can be used for signing your extensions.
+
+You can check the validity of your code signing by transferring your signed app file to a Windows device which did not sign it. Right-click on the file and go to properties-> Digital Signatures -> Details. In this pop-up, click View Certificate and finally go to Certification Path. It should look similar to the below example (though it is a Microsoft binary file):
+
+![Certificates.](media/CheckRootCA.png)
+
+If the Certification Path has only one entry then the file is not signed correctly and will be rejected by AppSource technical validation.
 
 ## See Also
 [Get Started with AL](devenv-get-started.md)  
