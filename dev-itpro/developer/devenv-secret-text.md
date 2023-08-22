@@ -1,6 +1,6 @@
 ---
 title: "Using the SecretText datatype"
-description: A description of the 'SecretText' data type and examples of its usage
+description: The 'SecretText' datatype is designed to protect sensitive values from being exposed when debugging.
 author: SusanneWindfeldPedersen
 ms.author:
 ms.custom: bap-template
