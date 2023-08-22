@@ -1,6 +1,6 @@
 ---
-title: "Using the SecretText datatype"
-description: The 'SecretText' datatype is designed to protect sensitive values from being exposed when debugging.
+title: "Using the SecretText data type"
+description: The 'SecretText' data type is designed to protect sensitive values from being exposed when debugging.
 author: SusanneWindfeldPedersen
 ms.author:
 ms.custom: bap-template
@@ -10,7 +10,7 @@ ms.service: dynamics365-business-central
 ms.topic: conceptual
 ---
 
-# Using the SecretText datatype
+# Using the SecretText data type
 
 `SecretText` is a data type designed to protect sensitive values from being exposed through the AL debugger when doing regular or snapshot debugging. Its use is recommended for applications that need to handle any kind of credentials like API keys, custom licensing tokens, or similar.
 
