@@ -45,7 +45,7 @@ Use the RunModal method or the Run method if you know at design time the exact r
   
 ## Example  
 
-```  
+```al 
 var
     CustomerRec: Record Customer;
     SomeReport: Report "Chart of Accounts";

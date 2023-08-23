@@ -311,7 +311,6 @@ begin​
   TaskParameters.Add('RecId', Id);​
   CurrPage.EnqueueBackgroundTask(TaskSumId, 50100, TaskParameters, 1000, PageBackgroundTaskErrorLevel::Warning);​
 end;
-```
 
 -->
 ## Coding the background task completion trigger to handle the results

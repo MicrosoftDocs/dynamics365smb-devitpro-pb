@@ -364,7 +364,6 @@ tableextension 50001 "Attach Price" extends "Sales Line"
         PriceCalculationMgt.GetHandler(SalesLinePrice, PriceCalculation);
     end;
 }
-
 ```
 
 The following page extension adds the Attach Line No. field to the Sales order page (subform). 
@@ -383,7 +382,6 @@ pageextension 50001 "Attach Price" extends "Sales Order Subform"
         }
     }
 }
-
 ```
 The following table extension adds the Attach to Item No. field to the "Price List line" table.
 ```AL
@@ -453,7 +451,7 @@ This example shows how to add a new type of asset so that it can be used in pric
 
 The product type that is set for the price list line is implemented by the **Price Asset Type** enum. Extend the enum with a new value, **Fixed Asset**.
 
-```
+```al
 enumextension 50000 "Fixed Asset Type" extends "Price Asset Type"
 {
     value(5600; "Fixed Asset")
@@ -567,7 +565,7 @@ Now lets include this new product type in price calculations.
 
 The following codeunit shows a sample implementation.
 
-```
+```al
 codeunit 50001 "Fixed Asset Price Calc."
 {
     [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnBeforeUpdateUnitPrice', '', false, false)]
@@ -620,7 +618,7 @@ The **Price Source Type** enum implements the **Applies-to Type** field in the h
 
 In this example, we will extend the Price Source Type enum to display the value in the sales price lists by also extending the Sales Price Source Type enum. For compatibility, the new value must have the same ID in both enums.
 
-```
+```al
 enumextension 50001 "Location Source Type" extends "Price Source Type"
 {
     value(50001; Location)
@@ -637,14 +635,13 @@ enumextension 50003 "Location Sales Source Type" extends "Sales Price Source Typ
         Caption = 'Location';
     }
 }
-
 ```
 
 The Price Source Type enum implements the Price Source and Price Source Group interfaces. We don't need special source group handling here, and can reuse the existing implementation codeunit **Price Source Group - Customer**. For the Price Source interface, we must add a new implementation codeunit **Price Source - Location**. For examples, see the existing implementations of the Price Source interface.
 
 The following example enables the new Applies-to Type on price lists.
 
-```
+```al
 codeunit 50003 "Price Source - Location" implements "Price Source"
 {
     var
@@ -708,7 +705,6 @@ codeunit 50003 "Price Source - Location" implements "Price Source"
         PriceSource.Description := Location.Name;
     end;
 }
-
 ```
 Now lets ensure that price calculations include the new applies-to type.
 
@@ -717,7 +713,7 @@ Now lets ensure that price calculations include the new applies-to type.
 
 The following example shows how.
 
-```
+```al
 codeunit 50004 "Location Source Price Calc."
 {
     [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnValidateLocationCodeOnAfterSetOutboundWhseHandlingTime', '', false, false)]
@@ -750,7 +746,6 @@ codeunit 50004 "Location Source Price Calc."
         PriceSourceList.Add("Price Source Type"::Location, SalesLine."Location Code");
     end;
 }
-
 ```
 
 Now we can test the price calculation. In this example, we have an **East** location where we keep item 1896-S, and the item has prices for all customers.
@@ -766,7 +761,7 @@ This example adds a new price calculation method that changes the existing imple
 
 The **Price Calculation Method** implements the price calculation methods. The following examples show how to extend the enum with the new value.
 
-```
+```al
 enumextension 50005 "Hierarchical Price Method" extends "Price Calculation Method"
 {
     value(50005; Hierarchical)
@@ -774,7 +769,6 @@ enumextension 50005 "Hierarchical Price Method" extends "Price Calculation Metho
         Caption = 'Hierarchical';
     }
 }
-
 ```
 
 We'll add a new codeunit that does the following:
@@ -784,10 +778,9 @@ We'll add a new codeunit that does the following:
 
 The following example shows how.
 
-```
+```al
 codeunit 50005 "Hierarchical Price Calc."
 {
-
     local procedure SetHierarchicalSourceList(SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line"; var PriceSourceList: Codeunit "Price Source List")
     begin
         PriceSourceList.Init();
@@ -819,7 +812,6 @@ codeunit 50005 "Hierarchical Price Calc."
             SetHierarchicalSourceList(SalesHeader, SalesLine, PriceSourceList);
     end;
 }
-
 ```
 
 Now we can set up a price calculation method and see how it works in a sales order. Let's create a new price calculation method named **Hierarchical**  with one implementation for the sales type, as shown in the following images.

@@ -43,7 +43,6 @@ entitlement BC_Role_Delegated
     ObjectEntitlements = 
         ”D365 BUS PREMIUM - BaseApp”;​
 }
-
 ```
 
 An example of an entitlement where `Type` is `PerUserServicePlan`:

@@ -104,7 +104,7 @@ In order to install the Application Test Toolkit:
 1. Open the BCContainerHelper prompt found on the Desktop. You will see a list of functions that you can run on the container.
 2. Run the `Import-TestToolkitToBCContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
 
-```
+```powershell
 Import-TestToolkitToBCContainer -containerName <name-of-container> 
 ```
 
@@ -302,8 +302,7 @@ Finally, to verify that the customer got the correct reward points and level, we
 There are many more areas that we look at in the sample test. See the full codeunit below for the rest of the tests. 
 
 ```AL
-codeunit 50103 "Customer Rewards Test" 
-
+codeunit 50103 "Customer Rewards Test"
 { 
     // [FEATURE] [Customer Rewards] 
 
@@ -954,7 +953,6 @@ codeunit 50103 "Customer Rewards Test"
     begin 
     end; 
 } 
-
 ``` 
 
 At this point you can publish and run your tests on your tenant by pressing Ctrl+F5. 

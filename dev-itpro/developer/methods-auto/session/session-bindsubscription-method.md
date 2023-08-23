@@ -48,7 +48,7 @@ The codeunit instance that event subscribers are bound to will be this exact ins
  
 The following sample code illustrates a typical use of the BindSubscription method.  
   
-```
+```al
 Method MyFunction(….)  
 LocalVar  
   SubScriberCodeunit5000;  

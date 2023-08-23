@@ -333,7 +333,7 @@ To upgrade to the new extension version, you use the [Sync-NavApp](/powershell/m
 
 1.  Publish the new extension version. For simplicity, this example assumes the extension isn't signed, which isn't allowed with [!INCLUDE[d365fin_md](includes/d365fin_md.md)] and isn't recommended with an on-premise production environment.
 
-    ```
+    ```powershell
     Publish-NAVApp -ServerInstance BC -Path .\ProswareStuff_1.7.1.0.app -SkipVerification
     ```
     
@@ -341,14 +341,14 @@ To upgrade to the new extension version, you use the [Sync-NavApp](/powershell/m
 
 3.  Synchronize the new extension version with the database.
 
-    ```
+    ```powershell
     Sync-NAVApp -ServerInstance BC -Name ProswareStuff -Version 1.7.1.0
     ```
     This step synchronizes the database with any table schema changes in the extension; it adds the tables from the extension to the tenant.
 
 4.  Run a data upgrade.
 
-    ```
+    ```powershell
     Start-NAVAppDataUpgrade -ServerInstance BC -Name ProswareStuff -Version 1.7.1.0
     ```
     This step runs the upgrade logic that is defined by the upgrade codeunits in the extension. This step will uninstall the current extension version and enable the new version instead.

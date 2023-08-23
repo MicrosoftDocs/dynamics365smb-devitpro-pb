@@ -182,7 +182,6 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 {
     "countryCode": "AT"
 }
-
 ```
 
 #### Example Response
@@ -479,7 +478,6 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
     "initialAvailability": "Preview",
     "packageContents": <contents>
 }
-
 ```
 
 #### Example Response

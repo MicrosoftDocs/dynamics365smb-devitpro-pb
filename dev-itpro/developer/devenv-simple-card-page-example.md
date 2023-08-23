@@ -118,7 +118,6 @@ page 50112 SampleCustomerCard
     var
         myInt: Integer;
 }
-
 ```
 
 ## See Also

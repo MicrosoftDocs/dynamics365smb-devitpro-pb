@@ -72,7 +72,6 @@ query ID Name
         }
     }
 }
-
 ```
 <!-- 
 The `column` control specifies a field of the table to include in the resulting dataset of a query. You start by adding a `dataitem` control for a table, then within  `dataitem` control, add the `column` controls.

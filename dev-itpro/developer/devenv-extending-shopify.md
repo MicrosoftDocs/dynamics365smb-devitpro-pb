@@ -27,7 +27,7 @@ To learn more about synchronizing orders, go to [Synchronize and fulfill sales o
 
 The following example shows how to populate fields on an order that you imported from Shopify. For example, select a customer based on the sales channel. 
 
-```
+```al
 codeunit 50113 "Shpfy Order Set Customer"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Order Events", 'OnAfterImportShopifyOrderHeader', '', false, false)]
@@ -75,7 +75,7 @@ pageextension 50102 "Shpfy Shop Ext" extends "Shpfy Shop Card"
 
 The following example shows how to check whether a Shopify order is ready to be converted to a sales document, and you want to make it mandatory to specify a payment method.
 
-```
+```al
 codeunit 50107 "Shpfy Order Check Pay. Method"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Order Events", 'OnBeforeCreateSalesHeader', '', false, false)]
@@ -91,7 +91,7 @@ codeunit 50107 "Shpfy Order Check Pay. Method"
 You can add more information to a sales document that's based on a Shopify order. For example, you can add the Shopify order number as an external document number.
 
 
-```
+```al
 codeunit 50112 "Shpfy Order External Doc. No"
 {
 
@@ -108,7 +108,7 @@ codeunit 50112 "Shpfy Order External Doc. No"
 
 The following example shows how to add dimensions to a sales document line that's based on a Shopify order.
 
-```
+```al
 codeunit 50111 "Shpfy Order Line Dim"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Order Events", 'OnAfterCreateItemSalesLine', '', false, false)]
@@ -153,7 +153,7 @@ codeunit 50111 "Shpfy Order Line Dim"
 
 The following example shows how to include information from a Shopify order on a sales document. For example, the sales channel.
 
-```
+```al
 tableextension 50101 "Shpfy Sales Header Extend" extends "Sales Header"
 {
     fields
@@ -186,7 +186,7 @@ pageextension 50100 "Shpfy SI Extend" extends "Sales Invoice"
 
 The following example shows how to include related information, for example tags, in a sales document.
 
-```
+```al
 pageextension 50103 "Shpfy SO Extend" extends "Sales Order"
 {
     layout
@@ -207,7 +207,7 @@ pageextension 50103 "Shpfy SO Extend" extends "Sales Order"
 
 The following example shows how to include information from a Shopify order line in a sales document line. For example, a description of an item variant.
 
-```
+```al
 tableextension 50102 "Shpfy Sales Line Extend" extends "Sales Line"
 {
     fields
@@ -248,7 +248,7 @@ To learn more about standard inventory calculation, go to [Sync inventory to Sho
 
 The following example shows how to calculate stock on hand.
 
-```
+```al
 enumextension 50101 "Extended Stock Calculations" extends "Shpfy Stock Calculation"
 {
   value(50101; "Inventory on hand")
@@ -271,7 +271,7 @@ codeunit 50101 "Shpfy Stock Calc. Inventory" implements "Shpfy Stock Calculation
 
 The following example shows how to calculate stock on hand reduced by reserved stock.
 
-```
+```al
 enumextension 50102 "Extended Stock Calculations" extends "Shpfy Stock Calculation"
 {
     value(50102; "Non-reserved Inventory")
@@ -294,7 +294,7 @@ codeunit 50102 "Shpfy Stock Calc. Free Invent" implements "Shpfy Stock Calculati
 
 The following example shows how to calculate the balance that's expected to be available on specific date in the future.
 
-```
+```al
 enumextension 50103 "Extended Stock Calculations" extends "Shpfy Stock Calculation"
 {
     value(50103; "Projected Available Balance in X Days")
@@ -323,7 +323,7 @@ codeunit 50103 "Shpfy Stock Calc. Proj at Date" implements "Shpfy Stock Calculat
 
 The following example shows how to calculate the quantity that's available and can be picked for locations that require warehouse handling.
 
-```
+```al
 enumextension 50104 "Extended Stock Calculations" extends "Shpfy Stock Calculation"
 {
     value(50104; "Available to Pick")
@@ -370,7 +370,7 @@ To learn more about standard price calculation, go to [Sync prices with Shopify]
 
 The following example shows how to implement logic for defining prices.
 
-```
+```al
 codeunit 50105 "Shpfy Custom Price"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnBeforeCalculateUnitPrice', '', false, false)]
@@ -399,7 +399,7 @@ When you're selling an item at a discounted price, you can include the original 
 
 The following example shows how to implement logic for defining compare-at prices.
 
-```
+```al
 codeunit 50110 "Shpfy Custom Compare Price"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnAfterCalculateUnitPrice', '', false, false)]
@@ -422,7 +422,7 @@ To learn more about exporting products, go to [Export items to Shopify](/dynamic
 
 The following example shows how to use a manufacturer instead of a vendor when you export items.
 
-```
+```al
 codeunit 50106 "Shpfy Product Export Manuf"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnAfterCreateTempShopifyProduct', '', false, false)]
@@ -442,7 +442,7 @@ codeunit 50106 "Shpfy Product Export Manuf"
 
 The following example shows how to tag exported items. Tags categorize products on your online store and organize search results for customers.
 
-```
+```al
 codeunit 50109 "Shpfy Product Export Tag"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnAfterCreateTempShopifyProduct', '', false, false)]
@@ -461,7 +461,7 @@ codeunit 50109 "Shpfy Product Export Tag"
 
 The following example shows how to use the GTIN field to map imported products to existing items. If it makes sense for your implementation, you can also use other fields for the mapping. For example, a field that your extension adds.
 
-```
+```al
 codeunit 50108 "Shpfy Product Import Mapping"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnBeforeFindMapping', '', false, false)]

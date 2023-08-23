@@ -44,7 +44,7 @@ If the report you specify does not exist, then a compile error occurs.
   
 ## Example  
 
-```  
+```al
 var
     CustomerRec: Record Customer;
     SomeReport: Report "Salesperson - Sales Statistics";

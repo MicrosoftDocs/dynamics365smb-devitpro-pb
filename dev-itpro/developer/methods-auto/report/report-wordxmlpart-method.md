@@ -64,7 +64,7 @@ The report data structure as structured XML that is compatible with Microsoft Wo
 ## Example  
  The following example uses the WORDXMLPART method to save the data structure of Report 112 Sales Statistics in an XML file in a predefined folder *C:\\Report Documents*. The resultant file can be used in Word as a custom XML part. 
  
-``` 
+```al
 var
     ReportAsString Text;
     SalesStatsReport: File;

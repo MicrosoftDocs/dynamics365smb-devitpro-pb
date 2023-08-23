@@ -64,7 +64,6 @@ pagecustomization MyCustomization customizes "Customer List"
       }
     }
 }
-
 ```
 
 ## Using the client to create AL profiles and page customizations
@@ -77,7 +76,7 @@ A profile's `Caption` and `ProfileDescription` properties appear in the client u
 
 For example, the following code is the content of an XLIFF file for translating the example profile mentioned above from its source language, en-US, to the target language da-DK.
 
-```
+```xml
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" source-language="en-US" target-language="da-DK" original="profiles">
     <body>

@@ -87,7 +87,7 @@ To see which functions are available in the BCContainerHelper module use the fol
 
 To get started quickly, run the following command from the BCContainerHelper module:
 
-```
+```powershell
 $artifactUrl = Get-BcArtifactUrl -type sandbox -country us -select Latest
 New-BCContainer -accept_eula -containerName mysandbox -artifactUrl $artifactUrl
 ```

@@ -56,7 +56,7 @@ The path and name of the file that you want to save the report as.
 ## Example  
  This example shows how to use the **SaveAsPDF** method to save a specific report as a PDF file on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. 
  
-```  
+```al
 var
     Filename: Text;
     ReturnValue: Boolean;
