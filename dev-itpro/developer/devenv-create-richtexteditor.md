@@ -10,6 +10,13 @@ ms.service: dynamics365-business-central
 ms.topic: conceptual
 ---
 
+# Introduction
+Rich Text Editors are controls which enable rich multimedia content editing. One use case of a rich text editor is the email editor. They require significant screen space to function correctly, and will fill the available horizontal space and stretch vertically up to a limit. The control includes a toolbar and shortcuts for formatting text, e.g. by changing the font or font size, making text _italic_, **bold**, and more; there is also the option to add tables, images, and hyperlinks.
+
+![Shows an example of the rich text editor containing multiple different types of text formatting.](../developer/media/RichTextEditorExample.png)
+
+When persisted in the database, the content of the control is saved as HTML. Media like pictures is embedded in the HTML content itself, and is not persisted in a separate tabl nor in online file storage. The size and type of data means that the control's content is best persisted by using a table field with the `Blob` type.
+
 # Creating a rich text editor
 
 Creating a control, which renders a rich text editor can be done with a few steps, but it takes a bit more work to combine the control with a persisted value on a record. In this article, we provide an example of how to persist the value of a rich text editor in a table's blob field.
