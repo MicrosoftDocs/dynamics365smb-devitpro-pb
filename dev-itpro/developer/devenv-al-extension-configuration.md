@@ -50,6 +50,7 @@ The following table describes the user and workspace settings for the AL Languag
 |Generate PermissionSet for Extension Objects | Generate a permission set as an AL object. Syntax is `al.generatePermissionSetForExtensionObjects`. When invoking the command, the developer can choose to create a new permission file or select an existing file to update.|
 |Inlayhints > Function Return Types|Switch on/off inlay hints for implicit return types on method signatures.|
 |Inlayhints > Parameter Names|Switch on/off inlay hints for parameter names.|
+|AL-Go Suggested Folder|Sets the suggested folder when using AL:Go! command. Can be set per user or per workspace.|
 
 ## See Also
 
