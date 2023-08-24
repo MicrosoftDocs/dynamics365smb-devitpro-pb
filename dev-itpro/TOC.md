@@ -69,6 +69,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 22.4](whatsnew/whatsnew-update-22-4.md)
 ### [Update 22.3](whatsnew/whatsnew-update-22-3.md)
 ### [Update 22.2](whatsnew/whatsnew-update-22-2.md)
 ### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
@@ -117,6 +118,10 @@
 #### [Configure context-sensitive help](help/context-sensitive-help.md)
 #### [Contribute to the help](help/contributor-guide.md)
 #### [Authoring guide](help/writing-guide.md)
+#### [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
+### ALDoc tool (preview)
+#### [Generating help with the ALDoc tool (preview)](help/help-aldoc-generate-help.md)
+#### [Overwriting help with the ALDoc tool (preview)](help/help-aldoc-overwrites.md)
 <!--### Resources for a developer
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Documentation](developer/devenv-dev-overview.md)
@@ -792,6 +797,7 @@
 #### [Overview](developer/devenv-reports.md)
 #### [Report design overview](developer/devenv-report-design-overview.md)
 #### [Report object](developer/devenv-report-object.md)
+#### [Report extension object](developer/devenv-report-ext-object.md)
 #### [Report extension example](developer/devenv-report-ext-example.md)
 #### [Defining a report dataset](developer/devenv-report-dataset.md)
 #### [Request pages](developer/devenv-request-pages.md)
@@ -924,6 +930,7 @@
 
 ### Calling external services
 #### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
+#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
 <!--#### [Connecting to Azure Functions](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)-->
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)  
@@ -976,6 +983,7 @@
 ##### [Extending customer, vendor, and item templates](developer/devenv-extending-templates.md)
 ##### [Extending email capabilities](developer/devenv-extending-email.md)
 ##### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
+##### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
 
 ### Using events 
 #### [Event types](developer/devenv-event-types.md)
@@ -1192,6 +1200,7 @@
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-service authentication](administration/automation-apis-using-s2s-authentication.md)
 #### [Web service performance](webservices/web-service-performance.md)
+#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [Web service telemetry](webservices/web-service-telemetry.md)
 #### [Walkthrough: Creating a console application that uses OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
 #### [Securing remote connections using certificates](deployment/implement-security-certificates-production-environment.md)

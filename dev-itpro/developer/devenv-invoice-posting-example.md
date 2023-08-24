@@ -34,7 +34,7 @@ Extend the posting process for sales, purchase, and service documents by changin
 
 The following is an example of an implementation that uses the **Sales Invoice Posting** enum.
 
-```
+```AL
 enum 815 "Sales Invoice Posting" implements "Invoice Posting" 
 { 
     Extensible = true; 
@@ -51,7 +51,6 @@ enum 815 "Sales Invoice Posting" implements "Invoice Posting"
         Implementation = "Invoice Posting" = "Sales Post Invoice"; 
     } 
 } 
-
 ```
 
 * The temporary **Invoice Posting Buffer** table uses the generic key, `Group ID: Text[1000]`. You can use the `BuildPrimaryKey()` method to compose the key from table fields. The `OnAfterBuildPrimaryKey` event can be used to compose the primary key in a different way. 
@@ -63,8 +62,7 @@ Typically, you'll only need to add fields to the Invoice Posting Buffer table.
 
 1. Add a new **Product Line Code** field to the **Invoice Posting Buffer** table in your extension. The following code sample shows how.
 
-    ```
-
+    ```AL
     tableextension 50000 "Invoice Posting Buffer Ext." extends "Invoice Posting Buffer" 
     { 
         fields 
@@ -79,7 +77,7 @@ Typically, you'll only need to add fields to the Invoice Posting Buffer table.
 
 2. After you have a Product Line Code field on sales lines, add subscribers as shown in the following code sample.
 
-    ```
+    ```AL
     codeunit 50000 "Product Line Subscribers" 
     { 
       

@@ -12,13 +12,13 @@ ms.author: kepontop
 
 # Call external services with the HttpClient data type
 
-The [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md)  is simply a wrapper on the .NET class HttpClient.  
+The [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md) is simply a wrapper on the .NET class HttpClient.  
 
 In this article, you learn how to make HTTP requests using the _HttpClient_ data type and handle responses using the _HttpResponseMessage_ data type. 
 
 ## Set up an external call
 
-The first thing you need to do is to define the HTTP request, that is, which URI to call, set HTTP headers, and choose which HTTP method to use. You do this using the _HttpRequestMessage_ data type.
+The first thing you need to do is to define the HTTP request, that is, which URI to call, set request and content HTTP headers, and choose which HTTP method to use. You do this using the _HttpRequestMessage_ data type.
 
 The following example illustrates ways to prepare the request.
 
@@ -28,17 +28,24 @@ The following example illustrates ways to prepare the request.
         Client: HttpClient;
         HttpRequestMessage: HttpRequestMessage;
         RequestHeaders: HttpHeaders;
-        RequestURL: Text;
+        RequestURI: Text;
+        Content: HttpContent;
+        ContentHeaders: HttpHeaders;
     begin
-        RequestURL := 'https://httpcats.com/418.json';
+        RequestURI := 'https://httpcats.com/418.json';
 
-        // This shows how you can set HTTP headers in your request
+        // This shows how you can set or change HTTP content headers in your request
+        Content.GetHeaders(ContentHeaders);
+        if ContentHeaders.Contains('Content-Type') then headers.Remove('Content-Type');
+        ContentHeaders.Add('Content-Type', 'multipart/form-data;boundary=boundary');
+
+        // This shows how you can set HTTP request headers in your request
         HttpRequestMessage.GetHeaders(RequestHeaders);
         RequestHeaders.Add('Accept', 'application/json');
         RequestHeaders.Add('Accept-Encoding', 'utf-8');
         RequestHeaders.Add('Connection', 'Keep-alive');
 
-        HttpRequestMessage.SetRequestUri(RequestURL);
+        HttpRequestMessage.SetRequestUri(RequestURI);
         HttpRequestMessage.Method(HttpMethod);
 
         // from here on, the method must deal with calling out to the external service. 
@@ -46,9 +53,13 @@ The following example illustrates ways to prepare the request.
     end;
 ```
 
+For more information about content headers, see [HttpContent data type](methods-auto/httpcontent/httpcontent-data-type.md).  
+
 ## Run the call
 
-When you have setup the request, it's time to call out using a supported HTTP method. The call might fail in the [!INCLUDE[prod_short](../includes/prod_short.md)] platform before actually reaching the external web service. It's therefore important that you check for possible errors in your AL code.
+When you have set up the request, it's time to call out using a supported HTTP method. 
+
+[!INCLUDE[httpCallErrors](../includes/include-http-call-errors-note.md)]
 
 The following example shows how to call an external web service from AL. It also illustrates the error handling you need to setup for handling errors when sending the request.
 
@@ -56,11 +67,14 @@ The following example shows how to call an external web service from AL. It also
     local procedure GetRequest() ResponseText: Text
     var
         Client: HttpClient;
+        Response: HttpResponseMessage;
         IsSuccessful: Boolean;
         ServiceCallErr: Label 'Web service call failed.';
         ErrorInfoObject: ErrorInfo;
     begin
-        IsSuccessful := Client.Get('https://httpcats.com/418.json', HttpResponseMessage);
+        // assume you have setup the request here
+
+        IsSuccessful := Client.Get('https://httpcats.com/418.json', Response);
 
         if not IsSuccessful then begin
             ErrorInfoObject.DetailedMessage := 'Sorry, we could not retrieve the cat info right now.';
@@ -69,6 +83,8 @@ The following example shows how to call an external web service from AL. It also
         end;
     end;
 ```
+
+[!INCLUDE[allowhttpclientnote](../includes/include-http-allowhttpclient-note.md)]
 
 ### Supported HTTP methods
 [!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md )]
@@ -108,6 +124,8 @@ The following example illustrates the error handling you need to setup for handl
 
 [!INCLUDE[httpStatusCodes](../includes/include-http-status-codes.md)]
 
+### Common HTTP status error codes
+[!INCLUDE[httpStatusErrorCodes](../includes/include-http-status-error-codes.md)]
 
 ## Advanced scenarios
 
@@ -132,7 +150,7 @@ begin
 end;
 ```
 
-For more information about certificates, see [HttpClient.Send(HttpRequestMessage, var HttpResponseMessage) Method](methods-auto/httpclient/httpclient-addcertificate-method.md)
+For more information about certificates, see the [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-method.md)
 
 ## Monitor and troubleshoot
 
@@ -153,6 +171,7 @@ You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry 
 ## See also
 
 [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md)  
+[HttpContent data type](methods-auto/httpcontent/httpcontent-data-type.md)  
 [Analyzing outgoing web service request telemetry](../administration/telemetry-webservices-outgoing-trace.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  
