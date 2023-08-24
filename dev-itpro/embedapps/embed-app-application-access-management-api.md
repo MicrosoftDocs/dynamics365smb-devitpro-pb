@@ -2,12 +2,13 @@
 title: Application Access Management API
 description: Learn about the Application Access Management API.
 author: jswymer
+ms.author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.service: dynamics365-business-central
+ms.custom: bap-template
+ms.reviewer: jswymer
 ms.search.keywords: application, tenant, management, access, API
-ms.date: 04/01/2021
+ms.date: 08/24/2023
 ---
 # Application Access Management API
 
@@ -76,13 +77,13 @@ PUT /admin/v2.15/manageableapplications/{applicationFamily}/countries/{countryCo
 ```
 
 > [!NOTE]  
-> It is not possible to disable the access to an application family for the AAD tenant which already has an environment created in that family.
+> It is not possible to disable the access to an application family for the Microsoft Entra tenant which already has an environment created in that family.
 
 #### Expected Error Codes
 
 `invalidInput` - the targeted property in invalid in some way
 
-   - target: {targeted tenant's AAD Id} - attempt to remove access to an application but the targeted tenant already has an environment in that application
+   - target: {targeted tenant's Id} - attempt to remove access to an application but the targeted tenant already has an environment in that application
 
 `resourceDoesNotExist` - couldn't find the targeted application
 
