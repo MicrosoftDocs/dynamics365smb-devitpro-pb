@@ -32,7 +32,7 @@ Specifies whether this table field can be used as source expression for new page
 
 ## Remarks
 
-If you change the property from `Always` to `Never`, then when the new extension version is published, the field is removed from any existing pages that show it. For more information about page customization, see [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage).
+If you change the property from `Always` to `Never`, then when the new extension version is published, the field is no longer available for adding to a page using customization. Also, it's removed from any existing pages that show it. For more information about page customization, see [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage).
 
 ## Example
 
