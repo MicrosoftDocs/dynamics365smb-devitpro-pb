@@ -1339,7 +1339,7 @@
 ## [Microsoft timeline for deprecating code in Business Central](developer/devenv-deprecation-timeline.md)
 ## Platform
 ### [Overview of deprecated features in the platform](upgrade/deprecated-features-platform.md)  
-## Base app  
+## Application  
 ### [Overview of deprecated features in the base app](upgrade/deprecated-features-w1.md)  
 ### Examples of how to uptake deprecations  
 #### [Migrate from User Groups to Permission Sets or Security Groups](upgrade/deprecated-features-user-groups.md)  
