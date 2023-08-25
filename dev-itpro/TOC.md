@@ -1332,12 +1332,19 @@
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
-## [Extract data from Business Central](developer/devenv-extract-data.md)
+## [Extract data from Business Central](developer/devenv-extract-data.md)  
 <!-- end integration-->
 <!--deprecated features -->
-# Removed or deprecated features
-## Deprecated features in the application
-### [Deprecated features in the base app](upgrade/deprecated-features-w1.md)  
+# Deprecated features
+## [Microsoft timeline for deprecating code in Business Central](developer/devenv-deprecation-timeline.md)
+## Platform
+### [Overview of deprecated features in the platform](upgrade/deprecated-features-platform.md)  
+## Application  
+### [Overview of deprecated features in the base app](upgrade/deprecated-features-w1.md)  
+### Examples of how to uptake deprecations  
+#### [Migrate from User Groups to Permission Sets or Security Groups](upgrade/deprecated-features-user-groups.md)  
+#### [Migrating from legacy views to modern views](developer/devenv-views-legacy.md)  
+## Local functionality
 ### [Deprecated fields, and fields marked as obsolete in local functionality](upgrade/deprecated-fields.md)
 ### [Deprecated features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated features in the Belgian Version](upgrade/deprecated-features-be.md)
@@ -1355,12 +1362,10 @@
 ### [Deprecated features in the Swiss Version](upgrade/deprecated-features-ch.md)
 ### [Deprecated features in the UK Version](upgrade/deprecated-features-uk.md)
 ### [Deprecated features in the United States Version](upgrade/deprecated-features-us.md)
-## [Deprecated features in the platform](upgrade/deprecated-features-platform.md)  
 ## Deprecated tables
 ### [Deprecated tables](upgrade/deprecated-tables.md)
 ### [Deprecated tables in the India version](upgrade/india-data-migration-list-of-deprecated-tables.md)
-## Deprecated code
-### [Microsoft timeline for deprecating code in Business Central](developer/devenv-deprecation-timeline.md)
+## Deprecating code
 ### [Best practices for deprecation of code in the base app](developer/devenv-deprecation-guidelines.md)
 ### [Deprecating explicit and implicit With statements](developer/devenv-deprecating-with-statements-overview.md)
 <!--end deprecated features -->
