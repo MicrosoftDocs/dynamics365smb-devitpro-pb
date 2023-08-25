@@ -3,7 +3,7 @@ title: "AllowInCustomizations Property"
 description: "Specifies whether this table field can be used as source expression for new page fields in page customizations."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 08/25/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,10 +32,11 @@ Specifies whether this table field can be used as source expression for new page
 
 ## Remarks
 
-For more information about page customization, see [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage).
+If you change the property from `Always` to `Never`, then when the new extension version is published, the field is removed from any existing pages that show it. For more information about page customization, see [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage).
+
 ## Example
 
-The following table extension example adds a field to the **Customer** table. The field can't be added to any pages by using page customizations from the client.  
+The following table extension example adds a field to the **Customer** table. Because the `AllowInCustomizations` property is set to `Never`, the field can't be added to any pages by using the page customizations feature in the client.  
 
 ```AL
 tableextension 50100 MyExtension extends Customer
