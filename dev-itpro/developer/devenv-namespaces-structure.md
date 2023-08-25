@@ -28,10 +28,9 @@ The script takes a .csv file as input, which specifies what namespace to give to
 
 Open PowerShell and go to your source folder and run the following script:
 
-<script>
-
- 
 
 You are now ready to open VS Code and use the AL Code actions to apply all the missing using statements.
 
 ## See also
+
+[Namespaces in AL](devenv-namespaces.md)
