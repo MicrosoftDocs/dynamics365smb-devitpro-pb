@@ -29,6 +29,27 @@ Specifies whether this table field can be used as source expression for new page
 |**Never**|runtime version 1.0|The field cannot be used as source expression for new page fields in page customizations.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+For more information about page customization, see [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage).
+## Example
+
+The following table extension example adds a field to the **Customer** table. The field can't be added to any pages by using page customizations from the client.  
+
+```AL
+tableextension 50100 MyExtension extends Customer
+{
+    fields
+    {
+        field(599999; MyField; Blob)
+        {
+           AllowInCustomizations = Never;
+        }
+    }
+}
+```
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
