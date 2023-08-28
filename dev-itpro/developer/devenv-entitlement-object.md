@@ -95,6 +95,37 @@ procedure CheckingLicensing()
 
 ```
 
+## Entitlement example - Azure AD group
+
+For scenarios when user has to have access to the AppSource app with transact support and no. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+
+```al
+entitlement BC_Group
+{    
+    Type = Group;
+    ObjectEntitlements = "Custom license";
+}
+
+```
+
+Testing for the `Unlicensed` type of entitlement can be done by using the [NavApp.IsUnlicensed([Guid]) Method](methods-auto/navapp/navapp-isunlicensed-method.md) method as illustrated in the pseudo code example below.
+
+```al
+procedure CheckingLicensing()
+{
+    // When using no or custom licensing
+    if NavApp.IsUnlicensed() then
+        // Do custom licensing
+    
+    // Transactability licensing
+    if NavApp.IsEntitled() then
+        // Do transactability licensing
+}
+
+```
+
+
+
 ## See also
 
 [Developing Extensions](devenv-dev-overview.md)  
