@@ -47,7 +47,7 @@ Occurs when the Error method is called and displays a dialog to the user.
 
 <a name="other"></a>**Common custom dimensions**
 
-The following table explains other custom dimensions that are common to all extension update traces.
+The following table explains other custom dimensions that are common to all error telemetry.
 
 |Dimension|Description or value|
 |---------|-----|
