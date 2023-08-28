@@ -111,6 +111,9 @@ traces
 
 [!INCLUDE[httpStatusCodes](../includes/include-http-status-codes.md)]
 
+### Common HTTP status error codes
+[!INCLUDE[httpStatusErrorCodes](../includes/include-http-status-error-codes.md)]
+
 
 ## See also
 

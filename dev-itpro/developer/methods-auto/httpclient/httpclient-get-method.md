@@ -43,7 +43,13 @@ The response received from the remote endpoint.
 Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example
+## Ways that HttpClient.Get calls can fail
+The method HttpClient.Get can fail and return false in the following ways:
+
+[!INCLUDE[httpclientFailureReasonsList](../../includes/include-http-call-failure-reasons.md)]
+
+
+## Example (HTTP GET)
 A GET request shouldn't send a body and is used (as the method name indicates) to retrieve (or get) data from a resource. To make an HTTP GET request, given an HttpClient and a URI, use the HttpClient.Get method:
 
 ```AL
@@ -88,6 +94,7 @@ The preceding code:
 [!INCLUDE[SupportedHTTPmethods](../../../includes/include-http-methods.md )]
 
 ## See Also
+[Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
