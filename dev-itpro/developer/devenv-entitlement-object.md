@@ -68,7 +68,7 @@ entitlement BC_PerUserServicePlan
 
 ## Entitlement example - unlicensed
 
-For scenarios when the user isn't licensed through entitlements mapping to AppSource offer plans, the `Unlicensed` type of entitlement is used. This type is used to enable *side-by-side support* for transactability-enabled apps on AppSource. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+For scenarios when the user isn't licensed through entitlements mapping to AppSource offer plans, the `Unlicensed` type of entitlement is used. This type is used to enable custom licensing for an existing customer, or *side-by-side support*, for transactability-enabled apps on AppSource. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 ```al
 entitlement BC_Unlicensed
@@ -97,29 +97,13 @@ procedure CheckingLicensing()
 
 ## Entitlement example - Azure AD group
 
-For scenarios when user has to have access to the AppSource app with transact support and no. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+An example of an entitlement where `Type` is `Group`. This supports scenarios when a user has to have access to the AppSource app with transact support and no need to buy a developer license. The `id` property is the object ID of the Azure AD group. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md). <!-- need input from Steffen -->
 
 ```al
 entitlement BC_Group
 {    
     Type = Group;
-    ObjectEntitlements = "Custom license";
-}
-
-```
-
-Testing for the `Unlicensed` type of entitlement can be done by using the [NavApp.IsUnlicensed([Guid]) Method](methods-auto/navapp/navapp-isunlicensed-method.md) method as illustrated in the pseudo code example below.
-
-```al
-procedure CheckingLicensing()
-{
-    // When using no or custom licensing
-    if NavApp.IsUnlicensed() then
-        // Do custom licensing
-    
-    // Transactability licensing
-    if NavApp.IsEntitled() then
-        // Do transactability licensing
+    Id = '1a2aaaaa-3aa4-5aa6-789a-a1234567aaaa';
 }
 
 ```
