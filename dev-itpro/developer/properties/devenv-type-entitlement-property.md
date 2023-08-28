@@ -53,7 +53,7 @@ When `Type` is set to `Role`, the [RoleType Property](devenv-roletype-property.m
 
 ## Syntax
 
-The following pseudo code example, shows how to use the `Type` property in the `entitlement` object. For more information, see [Entitlement object](../devenv-entitlement-object.md).
+The following code snippet, shows how to use the `Type` property in the `entitlement` object. For more information, see [Entitlement object](../devenv-entitlement-object.md).
 
 ```al
 entitlement MyEntitlement
