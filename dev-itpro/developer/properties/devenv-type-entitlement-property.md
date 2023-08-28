@@ -42,7 +42,7 @@ The type of entitlement. When a user logs into Business Central, it's checked if
 > [!NOTE]  
 > With [!INCLUDE [prod_short](../../includes/prod_short.md)] 2023 release wave 1, the entitlement type `Unlicensed` is introduced. This type is used for scenarios when the user isn't licensed through entitlements mapping to AppSource offer plans. 
 > 
-> The `Unlicensed` type of entitlement is only applied to users who don't have an offer defined in the app’s entitlements. It's then possible to test for this unlicensed scenario and perform your custom licensing as before for existing customers, allowing side-by-side support while transitioning existing customers to the new AppSource transactability model.
+> The `Unlicensed` type of entitlement is only applied to users who don't have a plan, that is a license, defined in the app’s entitlements. It's then possible to test for this unlicensed scenario and perform your custom licensing as before for existing customers, allowing side-by-side support while transitioning existing customers to the new AppSource transactability model.
 
 <!--
 > [!NOTE]  
