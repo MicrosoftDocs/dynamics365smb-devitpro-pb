@@ -22,6 +22,8 @@ For pricing, you can optionally decide to define minimum and maximum number of u
 
 If you already have existing customers on custom licensing, you shouldn't opt in to using transactability and entitlements until you have implemented side-by-side support, which is the ability to fall back to custom licensing for existing customers in a transition period. Without the side-by-side support, your existing customers are locked out once they upgrade to the app version that uses entitlements. To implement the side-by-side support, you must create an entitlement mapping `Unlicensed` user to the required permission sets to run their custom licensing check. For more information, see [Entitlement object](devenv-entitlement-object.md).
 
+It's also recommended to create a dummy app where you can learn and play with functionality first. Furthermore, it's recommended to use private plans only, because this hides the app in AppSource, making it only accessible to yourself, and anyone that you have given access to, in order to the test app.
+
 ## The process of enabling transactability
 
 The following steps outline the process of enabling transactability for your app, assuming that you already have an existing offer in AppSource. If you don't have an existing offer in AppSource, read more here [Create a Saas Offer](/partner-center/marketplace/create-new-saas-offer). Having assured any transition period for your app by setting up side-by-side support, you can enable transactability for your app. The following outlines the steps to take:
