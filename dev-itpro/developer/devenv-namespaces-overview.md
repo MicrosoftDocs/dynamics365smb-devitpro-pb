@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: overview
 ms.collection: 
-ms.date: 06/20/2023
+ms.date: 08/28/2023
 ms.custom: bap-template
 ---
 
@@ -17,14 +17,14 @@ Namespaces are used to organize code into logical groups and hierarchies, which 
 
 A .al file declares a namespace at the beginning of the file, and all objects in the code file belong to that namespace. A given object can only belong to one namespace, but the same namespace can be used for multiple .al files, which means for multiple objects.
 
-When objects are resolved, they're resolved using the closest scope first. Therefore, to resolve to a similar named object in a dependent extension, the reference must use a fully qualified name. Alternatively, it's possible to define `using` directives to refer external namespaces and avoid fully qualified names for references to objects in those. <!-- check -->
-
 > [!IMPORTANT]  
-> Renaming existing names is a breaking change, therefore namespaces can only help with logical structure for existing objects.
+> Renaming existing object or member names is a breaking change, therefore namespaces can only help with logical structure for existing objects.
 
 ## Namespace syntax
 
-To declare a namespace in AL, you must use the `namespace` keyword followed by the name of the namespace. The namespace name must be unique within the extension. The namespace name can be any valid AL identifier, and it can contain dots to indicate a hierarchy of namespaces. The following example shows a namespace declaration. All of the objects declared in the code file belong to the namespace `MyNamespace`.
+To declare a namespace in AL, you must use the `namespace` keyword followed by the name of the namespace. A namespace should be globally unique. The best practice is that the first part of a namespace is tied to the developing organization or an individual, followed by a product name, and logical grouping within the product, such as for example, `namespace BigCompany.SmartProduct.SomeProductArea`. This supports the two purposes of namespaces - object name unique and logical grouping of related functionality.
+
+The namespace name can be any valid AL identifier, and it can contain dots to indicate a hierarchy of namespaces. The following example shows a namespace declaration. All of the objects declared in the code file belong to the namespace `MyNamespace`.
 
 ```al
 namespace MyNamespace;
@@ -42,14 +42,23 @@ To declare more objects in the same namespace, you can use the same namespace de
 
 ## Using directive
 
-To refer to objects in other namespaces, you can either use the fully qualified name, or the `using` directive. The `using` directive is used to refer to objects in other namespaces without having to use the fully qualified name. The `using` directive is placed at the top of the .al file, *before* any namespace declaration. The following example shows a `using` directive.
+To refer to objects in other namespaces, you can either use the fully qualified name, or the `using` directive. The `using` directive is used to refer to objects in other namespaces without having to use the fully qualified name. The `using` directive is placed at the top of the .al file, *after* the namespace declaration and *before* any object declarations. The following example shows the order of the `namespace` declaration and the `using` directive.
 
 ```al
-using MyNamespace
 
-namespace MyOtherNamespace;
+namespace MyNamespace;
+using SomeOtherNamespace;
+
+codeunit 10 MyCode
+{
+    ...
+}
 
 ```
+
+## Scope
+
+When objects are resolved, they're resolved using the closest scope first. Therefore, to resolve to a similar named object in a dependent extension, the reference must use a fully qualified name. Alternatively, it's possible to define `using` directives to refer external namespaces and avoid fully qualified names for references to objects in those. 
 
 ## Nested namespaces
 

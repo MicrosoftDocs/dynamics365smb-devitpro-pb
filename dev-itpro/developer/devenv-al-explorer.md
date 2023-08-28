@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 06/30/2023
+ms.date: 08/28/2023
 ms.custom: bap-template
 ---
 
