@@ -249,7 +249,7 @@ Some endpoints have restrictions on the size of files that can be uploaded and h
 *This article is maintained by Microsoft. Parts of the examples were originally written by the following contributors.*
 
 * [Michael Megel](https://www.linkedin.com/in/michaelmegel/) | Microsoft MVP 
-
+* [Nikolay Arhangelov](https://www.linkedin.com/in/nikolay-arhangelov/) | Technical Manager
 
 
 ## See Also
