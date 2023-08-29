@@ -62,7 +62,7 @@ The following table shows the minimum system requirements for the [Business Cent
 
 ## AL development
 
-The following table shows the minimum system requirements for customizing or extending [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using the AL language in Visual Studio Code.
+The following table shows the minimum system requirements for customizing or extending [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using the AL Language extension for Microsoft Dynamics 365 Business Central in Visual Studio Code.
 
 |Specification|Requirement|
 |-----|-----|
