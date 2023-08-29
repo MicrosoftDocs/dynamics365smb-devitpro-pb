@@ -132,7 +132,7 @@ Non-deductible VAT:
 |11784|Non Deductible VAT Setup|3|From Date|Will be removed in a later release (marked as `ObsoleteState = Removed;` in 01.2021).|
 |11784|Non Deductible VAT Setup|4|Non Deductible VAT %|Will be removed in a later release (marked as `ObsoleteState = Removed;` in 01.2021).|
 
-VAT Registration in Other Countries:
+VAT Registration in Other Countries/Regions:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|

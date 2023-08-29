@@ -36,7 +36,7 @@ To let you use more than one interest rate to calculate finance charges for a sp
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Moved| This functionality is also available to countries such as NO, SE, FI, and IT, so we have removed the country-specific designation so that it's available to everyone.|
+|Moved| This functionality is also available to countries such as NO, SE, FI, and IT, so we have removed the country/region-specific designation so that it's available to everyone.|
 -->
 
 <!-- THIS WORK DID NOT GET DONE. EXPECT IT TO COME IN A FUTURE UPDATE

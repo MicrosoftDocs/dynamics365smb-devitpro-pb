@@ -50,6 +50,7 @@ The following table explains the custom dimensions included in a **Web Services 
 |eventId|**RT0019**|
 |extensionId|Specifies the appID of the extension that made the request.|
 |extensionName|Specifies the name of the extension that made the request.|
+|extensionPublisher|Specifies the publisher of the extension that made the request.|
 |extensionVersion|Specifies the version of the extension that made the request.|
 |httpHeaders|Specifies the http headers set in the request. </br></br>Introduced in version 17.2.|
 |httpMethod|Specifies the HTTP method used in the outgoing request. Values include: POST, GET, PUT, PATCH, or DELETE. |
@@ -109,6 +110,9 @@ traces
 ### HTTP status codes
 
 [!INCLUDE[httpStatusCodes](../includes/include-http-status-codes.md)]
+
+### Common HTTP status error codes
+[!INCLUDE[httpStatusErrorCodes](../includes/include-http-status-error-codes.md)]
 
 
 ## See also

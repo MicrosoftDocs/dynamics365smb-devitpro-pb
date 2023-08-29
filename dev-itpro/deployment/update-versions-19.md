@@ -22,7 +22,7 @@ You should always install the latest update.
 
 ## Available updates for Business Central 2021 Release Wave 2
 
-The following table lists the updates that have been released for 2021 release wave 2 of Business Central (version 19). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
+The following table lists the updates that have been released for 2021 release wave 2 of Business Central (version 19). The updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
 
@@ -55,7 +55,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Resources for Help and Support](../help-and-support.md)  
 [System Requirements](system-requirements-business-central-v19.md)  
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
-[Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
+[Countries/Regions and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
 [Dynamics NAV developer and IT Pro content](/dynamics-nav/index)

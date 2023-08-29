@@ -20,7 +20,7 @@ Get an overview of new and upcoming changes in the [Dynamics 365 release plans](
 
 ## Global availability
 
-[!INCLUDE[prod_short](includes/prod_short.md)] online is available in many markets, and new countries go live on a quarterly basis. For more information, see [Countries and Translations Supported](compliance/apptest-countries-and-translations.md).  
+[!INCLUDE[prod_short](includes/prod_short.md)] online is available in many markets, and new countries/regions go live on a quarterly basis. For more information, see [Countries/regions and Translations Supported](compliance/apptest-countries-and-translations.md).  
 
 For a visual overview of where [!INCLUDE [prod_short](includes/prod_short.md)] online is deployed, see the [Geographical availability](https://dynamics.microsoft.com/availability-reports/georeport/) site.  
 

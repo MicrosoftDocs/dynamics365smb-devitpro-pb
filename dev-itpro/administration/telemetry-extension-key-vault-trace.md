@@ -123,7 +123,7 @@ Occurs when a key vault failed to be initialized.
 
 ### Sample KQL code (Azure Keyvault initialization errors)
 
-This KQL code can help you get started troubleshooting Azure Keyvault retrieval errors.
+This KQL code can help you get started troubleshooting and alerting on Azure Keyvault retrieval errors.
 
 ```kql
 traces
@@ -142,7 +142,7 @@ traces
 , failureReason = customDimensions.failureReason
 ```
 
-
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
 
 ## <a name="retrievedsuccess"></a>App Key Vault secret retrieval succeeded
 
@@ -230,7 +230,7 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 
 ### Sample KQL code (Azure Keyvault retrieval errors)
 
-This KQL code can help you get started troubleshooting Azure Keyvault retrieval errors.
+This KQL code can help you get started troubleshooting and alerting on Azure Keyvault retrieval errors.
 
 ```kql
 traces
@@ -250,9 +250,12 @@ traces
 , keyVaultUrl = customDimensions.keyVaultUrl
 ```
 
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
+
 
 ## See also
 
 [App Key Vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[Alert on Telemetry](telemetry-alert.md)   

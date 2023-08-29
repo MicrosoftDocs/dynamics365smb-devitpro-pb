@@ -48,7 +48,7 @@ On July 6, we published this quarter's newsletter for Business Central partners.
 
 In September, we will host the following call, which you can already register for today:
 
-**September 5:** Performance Troubleshooting Tools
+**September 3:** Performance Troubleshooting Tools
 
 - Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
 

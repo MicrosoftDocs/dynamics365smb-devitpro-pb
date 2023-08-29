@@ -11,12 +11,12 @@ ms.author: jswymer
 
 # Manage existing Power Automate flows for Business Central
 
-Managing existing flows (like editing the flow steps or turning them on or off) is done directly in Power Automate. You can get to your flows in Power Automate two ways:
+Managing existing flows (like editing the flow steps or turning them on or off) is done directly in Power Automate. You can get to your flows in Power Automate in two ways:
 
 - Sign in to [Power Automate](https://powerautomate.com), then select **My flows** from the navigation bar on the left.
 - From Business Central,  open a list, card, or document page, select **Automate** > **Manage Flows**.
 
-On the **My flows** page, you can find any flows you have already created yourself and flows shared with you by an admin or coworker.
+On the **My flows** page, you can find any flows you have already created and those shared with you by an admin or coworker.
 
 ## View details and edit flow in Power Automate
 
@@ -24,10 +24,10 @@ To view details about a flow from the **My flows** page in Power Automate, selec
 
 | Name | Description |
 | ----------- | ----------- |
-| Details | Shows details about the flow such as when was it created, modified, what the current status is, flow type, and the owner of the flow. |
-| Connections | Shows connections being used by the flow, such as data sources and applications. |
+| Details | Shows details about the flow such as when it was created and modified, the current status, flow type, and the owner of the flow. |
+| Connections | Shows the connections being used by the flow, such as data sources and applications. |
 | Owners | Shows who owns the flow. You can add more owners by choosing this option. Learn more at [Share a cloud flow](/power-automate/create-team-flows) |
-| Process insights (preview) | Shows the average time it takes your flow to complete. Also identifies possible bottlenecks, which if you fix could streamline your flow. |
+| Process insights (preview) | Shows the average time your flow takes to complete. It also identifies possible bottlenecks, which could streamline your flow if you fix them. |
 | 28-day run history | Shows the run history of your flow for past 28 days including start date, duration of the flow, and the current status.  |
 | Run-only users | Shows the users with whom you've shared your flow and have permission to run it.  |
 
@@ -61,7 +61,12 @@ You can also create flows by choosing **+ New flow** on the **Manage Power Autom
 
 ### Other settings
 
-You can find two more menu items on the **Manage Power Automate** flows page: **Home** and **Configuration**. Choose **Home** to open *Power Automate* or find *flow entries*. Choose **Configuration** to select the environment in which you want to create or see the flows. You can also find the connection information for the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate under **Configuration**.
+You can find two more menu items on the **Manage Power Automate** flows page: **Home** and **Configuration**. 
+
+- Choose **Home** to open *Power Automate* or find *flow entries*.
+- Choose **Configuration** to select the environment in which you want to create or see the flows.
+
+You can also find the connection information for the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate under **Configuration**.
 
 > [!NOTE]
 > **Flow entries** shows the list of records upon which the flow is acting. Such as a record of a user to whom the flow sent an approval request, indicating the request status and other details of the record. 
