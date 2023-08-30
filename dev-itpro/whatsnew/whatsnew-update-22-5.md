@@ -17,7 +17,7 @@ Would you like to know what has changed in update 22.5? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5029765) and the downloads [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5031031) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
 
