@@ -3,7 +3,7 @@ title: "JSON files"
 description: "Description of the settings of the app JSON and other JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 06/19/2023
+ms.date: 08/30/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -62,6 +62,8 @@ The following table describes the settings in the `app.json` file. To see an exa
 |keyVaultUrls|No|List of URLs of key vaults that from which the extension can retrieve secrets. For example: `"keyVaultUrls": [ "https://myfirstkeyvault.vault.azure.net", "https://mysecondkeyvault.vault.azure.net" ]`. <br><br>For more information, see [App Key Vaults](devenv-app-key-vault-overview.md).|
 |suppressWarnings|No|Specifies that warnings issued by, for example, a specific analyzer rule shouldn't be shown in the **Output** window. Syntax is `"suppressWarnings": [<warning ID>,<warning ID2>,...]`. For example, `"suppressWarnings": [ "AL0458" ]`. It's also possible to use `#pragma` directives for suppressing warnings for specific areas of code. For more information, see [Pragma Warning Directive](directives/devenv-directive-pragma-warning.md) and [Suppressing Warnings](devenv-deprecating-with-statements-overview.md#suppressing-warnings).|
 |resourceExposurePolicy|No|Defines the accessibility of the resources and source code during different operations. The `resourceExposurePolicy` property contains four options for defining access: `applyToDevExtension`, `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile`. All defaults are false. The syntax is `"resourceExposurePolicy": {"applyToDevExtension": true, "allowDebugging": true, "allowDownloadingSource": true, "includeSourceInSymbolFile": true}`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).|
+|source|No|Specifies the properties for source control. The options are: <br> `resposityUrl`, which is the URL of the repository where the source code of the project can be found.<br> `commit`, which is an ID of the source code for the current version of the project, that allows getting back to the commit that triggered building the extension.|
+|build|No|Specifies the properties for building the package. The options are: `by`, which is useful for tracking the build agent/system that orchestrated the build, for example AL-Go for GitHub. <br> `url`, which can be used for the URL to the build system invocation where the build can be found.|
 
 ## See Also
 
