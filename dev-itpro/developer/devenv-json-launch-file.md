@@ -3,7 +3,7 @@ title: "Launch JSON file"
 description: "Description of the settings of the launch JSON file for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/14/2023
+ms.date: 08/30/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -191,6 +191,7 @@ The settings for snapshot debugging on a cloud production environment are descri
 |executionContext|Yes|Specifies which kind of connection a snapshot debugging session will be established. There are three options: `Debug`, `DebugAndProfile`, and `Profile`. For more information, see [AL Profiler](devenv-al-profiler-overview.md#snapshot-configuration-settings).|
 |snapshotVerbosity|No|Specifies the verbosity level of snapshot data. If SnapPoint is specified then stacktraces and line information will only be gathered on snap points. The options are: `Full`, which allows stepping through every line executed and `SnapPoint`, which only allows stepping to lines with SnapPoints.|
 |profilingType|Yes|Specifies the profiling type to be used. There are two options: <br> `Instrumentation`, which means that if profiling is enabled then all frames executed will be measured for their total time <br>`Sampling`, which means that if profiling is enabled then frames will be collected and aggregated based on a sample interval. This option can only be used with the `executionContext` set to `Profile`. For more information, see [AL Profiler](devenv-al-profiler-overview.md|
+|profileSamplingInterval|No| Specifies the sampling interval in milliseconds when the `Sampling` profiling type is specified. The default value is 100ms. Options are `50`, `100`, or `150` ms.|
 
 ### Initialize a snapshot debugging session on your own server
 
@@ -213,6 +214,7 @@ The settings for snapshot debugging on your own server are described in the foll
 |executionContext|Yes|Specifies which kind of connection a snapshot debugging session will be established. There are three options: `Debug`, `DebugAndProfile`, and `Profile`. For more information, see [AL Profiler](devenv-al-profiler-overview.md#snapshot-configuration-settings).|
 |snapshotVerbosity|No|Specifies the verbosity level of snapshot data. If SnapPoint is specified then stacktraces and line information will only be gathered on snap points. The options are: <br>`Full`, which allows stepping through every line executed <br>`SnapPoint`, which only allows stepping to lines with SnapPoints.|
 |profilingType|Yes|Specifies the profiling type to be used. There are two options: <br> `Instrumentation`, which means that if profiling is enabled then all frames executed will be measured for their total time <br>`Sampling`, which means that if profiling is enabled then frames will be collected and aggregated based on a sample interval. This option can only be used with the `executionContext` set to `Profile`. For more information, see [AL Profiler](devenv-al-profiler-overview.md).|
+|profileSamplingInterval|No| Specifies the sampling interval in milliseconds when the `Sampling` profiling type is specified. The default value is 100ms. Options are `50`, `100`, or `150` ms.|
 
 ## Global and workspace launch configuration
 
