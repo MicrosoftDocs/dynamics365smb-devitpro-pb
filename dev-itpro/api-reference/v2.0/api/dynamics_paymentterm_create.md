@@ -47,14 +47,12 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/paymentTerms
 Content-type: application/json
 
 {
-    "id": "01a5738a-44e3-ea11-bb43-000d3a2feca1",
     "code": "10 DAYS",
     "displayName": "Net 10 days",
     "dueDateCalculation": "10D",
     "discountDateCalculation": "",
     "discountPercent": 0,
-    "calculateDiscountOnCreditMemos": false,
-    "lastModifiedDateTime": "2020-08-21T00:24:12.633Z"
+    "calculateDiscountOnCreditMemos": false
 }
 ```
 
