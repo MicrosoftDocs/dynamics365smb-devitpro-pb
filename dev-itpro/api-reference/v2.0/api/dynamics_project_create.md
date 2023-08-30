@@ -63,8 +63,7 @@ Content-type: application/json
 {
     "id": "22d7a1c5-bde4-ea11-bbf2-00155df3a615",
     "number": "DEERFIELD, 8 WP",
-    "displayName": "Setting up Eight Work Areas",
-    "lastModifiedDateTime": "2020-08-30T00:24:12.633Z"
+    "displayName": "Setting up Eight Work Areas"
 }
 ```
 
