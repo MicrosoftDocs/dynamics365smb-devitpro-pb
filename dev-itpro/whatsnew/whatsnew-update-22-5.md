@@ -45,9 +45,12 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-### Business Central newsletter for partners
+### Important: Take action before October 31st to retain your delegated admin access to your customers  
+Last year Microsoft introduced [Granular Delegated Admin Privileges (GDAP)](/partner-center/gdap-introduction) to improve upon and replace Delegated Admin Privileges (DAP). GDAP addresses various security concerns by allowing customer administrators to provide partners a proper level of time-bound access to their tenants.
 
-On July 6, we published this quarter's newsletter for Business Central partners. The newsletter contains a summary of relevant information related to Business Central. You can find it on [aka.ms/BCNews](https://aka.ms/BCNews).
+The Partner Center team has now [announced](/partner-center/announcements/2023-may#new-timelines-important-actions-to-secure-the-partner-ecosystem) the timeline by which you need to migrate your customer relationships to GDAP. Please make sure to read this new Partner Center announcement for more details about milestone dates and the transition plan and about the tools Microsoft provides to facilitate this process. 
+
+To manage Dynamics 365 Business Central customers via GDAP we recommend requesting the Dynamics 365 Administrator role as the least-privileged role that grants access to Dynamics 365 Business Central environments. Read more about which other roles are supported for delegated administration of Business Central [here](/dynamics365/business-central/dev-itpro/administration/delegated-admin).
 
 ### Upcoming Business Central Office Hours Calls
 
