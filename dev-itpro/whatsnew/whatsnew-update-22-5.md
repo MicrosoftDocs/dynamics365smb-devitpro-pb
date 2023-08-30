@@ -22,7 +22,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 ## Feature changes
 
 - [Extend general ledger posting aggregations](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)
-- [Auto-update AppSource apps with minor updates](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/experience-improved-app-management-settings)
 - Your Reference Field Should Flow Through to Cust. Ledger Entry
 - General Journal to copy added Links to posted entries
 
