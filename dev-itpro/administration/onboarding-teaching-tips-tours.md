@@ -230,7 +230,7 @@ For more information about tooltips, see [Help users get unblocked](../user-assi
 [Guidelines for tooltip text](../user-assistance.md#guidelines-for-tooltip-text)  
 [Onboarding experiences in Business Central](onboarding-experiences.md)  
 [AboutTitle Property](../developer/properties/devenv-abouttitle-property.md)  
-[AboutTitleML Property](properties/devenv-abouttitleml-property.md)   
+[AboutTitleML Property](../developer/properties/devenv-abouttitleml-property.md)   
 [AboutText Property](../developer/properties/devenv-abouttext-property.md)  
-[AboutTextML Property](properties/devenv-abouttextml-property.md)   
+[AboutTextML Property](../developer/properties/devenv-abouttextml-property.md)   
 
