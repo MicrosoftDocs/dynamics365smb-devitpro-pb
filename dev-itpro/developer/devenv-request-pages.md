@@ -149,7 +149,7 @@ Both of these properties (or their equivalent multi-language versions) needs to 
 With teaching tips, you can help explain logic that is relevant to the report therefore allowing users to get on with a reporting task right away without blocking them. After users dismiss a teaching tip, they can choose or hover over the report title in the request page. This action will reopen the teaching tip.
 
 
-[!INCLUDE[aboutTeachingTips](../includes/include-about-teaching-tips.md)]
+[!INCLUDE[aboutTeachingTips](includes/include-about-teaching-tips.md)]
 
 
 ## See Also
