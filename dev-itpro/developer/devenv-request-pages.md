@@ -18,6 +18,10 @@ A request page is a page that is run before the report or XMLport starts to exec
 |[RequestFilterHeading Property](properties/devenv-requestfilterheading-property.md)|Sets a caption for the request page tab that is related to a report's data item or an XMLport's table element.|
 |[RequestFilterHeadingML Property](properties/devenv-requestfilterheadingml-property.md)|Sets the text used as a RequestFilterHeading Property for a request page tab.|
 |[RequestFilterFields Property](properties/devenv-requestfilterfields-property.md)|Specifies which columns are automatically included on the tab of the request page that is related to a report's data item or an XMLport's table element. The user can set filters on these columns. |
+|[AboutTitle Property](properties/devenv-abouttitle-property.md)|Specifies the title for a teaching tip on the report. |
+|[AboutTitleML Property](properties/devenv-abouttitleml-property.md)|Specifies the multi-language version of the title for a teaching tip on the report. |
+|[AboutText Property](properties/devenv-abouttext-property.md)|Specifies the text for a teaching tip on the report. |
+|[AboutTextML Property](properties/devenv-abouttextml-property.md)|Specifies the multi-language version of the text for a teaching tip on the report. |
 
 > [!NOTE]  
 > Request pages for XMLports are not supported by the [!INCLUDE[webclient](includes/webclient.md)] in versions prior to [!INCLUDE[prod_long](includes/prod_long.md)] 2019 release wave 2. If you try to run an XMLport with a Request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLport request pages do work in the [!INCLUDE[webclient](includes/nav_windows_md.md)].
@@ -133,6 +137,21 @@ requestpage
 ...
 ```
 
+## Adding teaching tips to your reports
+The primary purpose of a teaching tip is to increase the user's chance of success with the report. So, the title and description of the teaching tip should answer the following hypothetical user questions:
+
+  - **AboutTitle**: *What is this report about*?
+
+  - **AboutText**: *What can I do with this report?*
+
+Both of these properties (or their equivalent multi-language versions) needs to be defined on the request page for the teaching tip to appear.
+
+With teaching tips, you can help explain logic that is relevant to the report therefore allowing users to get on with a reporting task right away without blocking them. After users dismiss a teaching tip, they can choose or hover over the report title in the request page. This action will reopen the teaching tip.
+
+
+[!INCLUDE[aboutTeachingTips](../includes/include-about-teaching-tips.md)]
+
+
 ## See Also
 
 [Report Object](devenv-report-object.md)  
@@ -141,6 +160,10 @@ requestpage
 [Reports Overview](devenv-reports.md)  
 [Report Design Overview](devenv-report-design-overview.md)  
 [RunRequestPage Method](methods-auto/report/reportinstance-runrequestpage-method.md)  
+[AboutTitle Property](properties/devenv-abouttitle-property.md)   
+[AboutTitleML Property](properties/devenv-abouttitleml-property.md)   
+[AboutText Property](properties/devenv-abouttext-property.md)   
+[AboutTextML Property](properties/devenv-abouttextml-property.md)   
 [RequestFilterHeading Property](properties/devenv-requestfilterheading-property.md)  
 [RequestFilterHeadingML Property](properties/devenv-requestfilterheadingml-property.md)  
 [RequestFilterFields Property](properties/devenv-requestfilterfields-property.md)  
