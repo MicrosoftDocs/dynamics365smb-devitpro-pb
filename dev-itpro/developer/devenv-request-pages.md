@@ -22,6 +22,11 @@ A request page is a page that is run before the report or XMLport starts to exec
 |[AboutTitleML Property](properties/devenv-abouttitleml-property.md)|Specifies the multi-language version of the title for a teaching tip on the report. |
 |[AboutText Property](properties/devenv-abouttext-property.md)|Specifies the text for a teaching tip on the report. |
 |[AboutTextML Property](properties/devenv-abouttextml-property.md)|Specifies the multi-language version of the text for a teaching tip on the report. |
+|[ContextSensitiveHelpPage Property](properties/devenv-contextsensitivehelppage-property.md)| Specifies the help topic to show when the user presses Help in the UI. Note that the help server on which this help topic is located, must be defined in the app.json file. |
+
+
+
+
 
 > [!NOTE]  
 > Request pages for XMLports are not supported by the [!INCLUDE[webclient](includes/webclient.md)] in versions prior to [!INCLUDE[prod_long](includes/prod_long.md)] 2019 release wave 2. If you try to run an XMLport with a Request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLport request pages do work in the [!INCLUDE[webclient](includes/nav_windows_md.md)].
@@ -108,6 +113,15 @@ requestpage
     {
         SaveValues = true;
 
+        // These properties control the title and content of the teaching tip.
+        AboutTitle = 'Awesome report';
+        AboutText = 'This is an awesome report. Use it to be awesome';
+        // Use the multi-language versions AboutTitleML and AboutTextML if you need that.
+
+        // This property defines the help page for this report.
+        // Remember to also set contextSensitiveHelpUrl in the app.json
+        ContextSensitiveHelpPage = 'business-central/sales-reports';
+
         layout
         {
             area(content)
@@ -148,9 +162,20 @@ Both of these properties (or their equivalent multi-language versions) needs to 
 
 With teaching tips, you can help explain logic that is relevant to the report therefore allowing users to get on with a reporting task right away without blocking them. After users dismiss a teaching tip, they can choose or hover over the report title in the request page. This action will reopen the teaching tip.
 
-
 [!INCLUDE[aboutTeachingTips](includes/include-about-teaching-tips.md)]
 
+## Adding help links to your reports
+
+A key pillar of helping users help themselves is to give them access to Help for the particular part of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that they're working in. This also applies for reports. 
+
+Starting in 2023 release wave 2, version 23, you can set the *ContextSensitiveHelpPage* property on report request pages, which will in turn show the report help link in the Help pane.
+
+*Learn more* links are generated based on two configuration settings:
+
+* App-level configuration of the URL
+* Request page-level configuration of report-specific article
+
+For more information about configuring context-sensitive help, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md) 
 
 ## See Also
 
@@ -160,10 +185,12 @@ With teaching tips, you can help explain logic that is relevant to the report th
 [Reports Overview](devenv-reports.md)  
 [Report Design Overview](devenv-report-design-overview.md)  
 [RunRequestPage Method](methods-auto/report/reportinstance-runrequestpage-method.md)  
+[Configure Context-Sensitive Help for reports](../help/context-sensitive-help.md) 
 [AboutTitle Property](properties/devenv-abouttitle-property.md)   
 [AboutTitleML Property](properties/devenv-abouttitleml-property.md)   
 [AboutText Property](properties/devenv-abouttext-property.md)   
 [AboutTextML Property](properties/devenv-abouttextml-property.md)   
+[ContextSensitiveHelpPage Property](properties/devenv-contextsensitivehelppage-property.md)   
 [RequestFilterHeading Property](properties/devenv-requestfilterheading-property.md)  
 [RequestFilterHeadingML Property](properties/devenv-requestfilterheadingml-property.md)  
 [RequestFilterFields Property](properties/devenv-requestfilterfields-property.md)  

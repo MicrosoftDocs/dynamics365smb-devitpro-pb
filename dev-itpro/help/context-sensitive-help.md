@@ -90,6 +90,24 @@ pageextension 50104 "Customer Card Ext" extends "Customer Card"
 }
 ```
 
+Starting in 2023 release wave 2, version 23, you can set the *ContextSensitiveHelpPage* property on report request pages, which will in turn show the report help link in the Help pane:
+
+```AL
+report 50105 MyReport
+{
+    ...
+
+    requestpage
+    {
+    ...
+
+    // This property defines the help page for this report.
+    // Remember to also set contextSensitiveHelpUrl in the app.json
+    ContextSensitiveHelpPage = 'business-central/sales-reports';
+    }
+}
+```
+
 You can use the [ContextSensitiveHelpPage property](../developer/properties/devenv-contextsensitivehelppage-property.md) to direct Help calls from multiple page objects or actions to the same article. For example, Microsoft has chosen to group the context-sensitive links depending on the granularity of the Help for specific area in the base application. If the Help for a specific area is made more granular, then the context-sensitive Help mapping is updated accordingly.
 
 Your target website is expected to have a default page that will display if no other page is appropriate. For every page where *ContextSensitiveHelpPage* isn't set, this default Help page will be shown.  
