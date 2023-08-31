@@ -22,7 +22,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 ## Feature changes
 
 - [Extend general ledger posting aggregations](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)
-- Users with the Device license can now set up jobs to run as scheduled tasks in the job queue of Business Central, see [Device user features and limitations](dynamics365/business-central/dev-itpro/deployment/licensing#device-user-features-and-limitations) 
+- Users with the Device license can now set up jobs to run as scheduled tasks in the job queue of Business Central, see [Device user features and limitations](../deployment/licensing.md#device-user-limitations) 
 - Your Reference Field Should Flow Through to Cust. Ledger Entry
 - General Journal to copy added Links to posted entries
 
