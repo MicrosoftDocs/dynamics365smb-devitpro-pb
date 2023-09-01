@@ -71,7 +71,7 @@ table 50100 MyTable
 </PermissionSets>
 ```
 
-The XML permission set grants access to the table and thereby satisfies the validation.
+The XML permission set grants access to the table and thereby satisfies the validation. However, the XML approach is discouraged by the AppSourceCop rule AS0094, in which it is recommended instead to use the AL Permission Set object (see Example 2).
 
 ### Example 2 - Permission defined in AL
 

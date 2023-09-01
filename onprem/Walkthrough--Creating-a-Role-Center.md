@@ -40,10 +40,10 @@ In this walkthrough, you will learn how to create a new Role Center for the [!IN
 -   [!INCLUDE[demolong](includes/demolong_md.md)].  
   
 ## Story  
- Simon is a partner working for CRONUS International Ltd. Susan, the Order Processor at CRONUS, has contacted Simon and asked him to create her a new Role Center that will show her work queue, give her easy access to common actions like creating a new sales order, and will also display a list of current notifications.  
+ Simon is a partner working for CRONUS International Ltd. Susan, the Order Processor at CRONUS, has asked Simon to create a new Role Center that will show Susan's work queue, give easy access to common actions like creating a new sales order, and will also display a list of current notifications.  
   
 ## Creating a Role Center Page  
- Simon creates a new Role Center using Page Designer. Simon knows that because Role Centers can contain several different parts, they are not tied to a specific source table. As a result, when Simon creates the Role Center page, he does not select a table in the **New Page** window.  
+ Simon creates a new Role Center using Page Designer. Simon knows that because Role Centers can contain several different parts, they are not tied to a specific source table. As a result, when creating the Role Center page, Simon does not select a table in the **New Page** window.  
   
 #### To create a Role Center page  
   
@@ -67,7 +67,7 @@ In this walkthrough, you will learn how to create a new Role Center for the [!IN
 8.  On the **File** menu, choose **Save**. Set **Name** to **Sales Order Proc. Role Center**, and set **ID** to **50005**. Choose the **OK** button.  
   
 ## Creating a Sales Order Processor Queue Page  
- Simon needs to create a page that provides a visual indicator of the work Susan has to do each day. He wants to host this page in a part on Susan's Role Center so he will need to create it before he can add it to the Role Center page that he just created. He has already created a table that contains the fields that he wants to use, so he only needs to create the page. Simon knows that to create a queue, he must use the **CardPart** page type.  
+ Simon needs to create a page that provides a visual indicator of the work Susan has to do each day. Simon wants to host this page in a part on Susan's Role Center so the page needs to be created before adding it to the Role Center page. Simon has already created a table that contains the required fields, so the next step is to create the page. To create a queue, Simon must use the **CardPart** page type.  
   
 #### To create a Sales Order Processor Queue page  
   
@@ -142,7 +142,7 @@ In this walkthrough, you will learn how to create a new Role Center for the [!IN
      The [!INCLUDE[rtc](includes/rtc_md.md)] opens and displays the new page.  
   
 ## Adding Actions to the Sales Order Queue Page  
- Simon now needs to add actions to the **Sales Order Processor Queue** page. He knows that the **CardPart** page type is special in that he can include actions on individual groups within the page. These actions will then be displayed immediately adjacent to the queues on the page. He also adds code to the OnOpenPage\(\) method to ensure that the work queues update to reflect Susan's current work when the Role Center opens.  
+ Simon now needs to add actions to the **Sales Order Processor Queue** page. Simon knows that the **CardPart** page type is special and actions on individual groups within the page can be included. These actions will then be displayed immediately adjacent to the queues on the page. Simon also adds code to the OnOpenPage\(\) method to ensure that the work queues update to reflect Susan's current work when the Role Center opens.  
   
 #### To add actions to the Sales Order Processor Queue page  
   
@@ -244,7 +244,7 @@ In this walkthrough, you will learn how to create a new Role Center for the [!IN
 29. In Object Designer, choose **Run** to view the page.  
   
 ## Adding Parts to the Role Center Page  
- Simon now needs to add his new sales order queue page to Susan's new Role Center. Simon knows that he can create multiple groups with multiple parts on the Role Center, but he will have to create one group that contains two parts, the **Sales Order Processer Queue** page and a notifications page.  
+ Simon now needs to add the new sales order queue page to Susan's new Role Center. Multiple groups can be created with multiple parts on the Role Center, but Simon will have to create one group that contains two parts, the **Sales Order Processer Queue** page and a notifications page.  
   
 #### To add parts to the Role Center page  
   

@@ -5,7 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: article
-ms.date: 11/03/2022
+ms.date: 04/20/2023
 ms.author: edupont
 ---
 
@@ -117,7 +117,7 @@ The following screenshot illustrates the Help pane when it is opened from the **
 
 In this case, the **Purchase Invoice** page has not been extended by any apps. If two apps had extended the page, their page-level and app-level configuration would be used to add links on a card after the *Related articles from Microsoft Docs* card.  
 
-The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library, ([learn.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)), so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend for your customers.  
+The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library, ([learn.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)), so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in Markdown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend for your customers.  
 
 > [!NOTE]
 > Currently, [!INCLUDE [prod_short](includes/prod_short.md)] does not require the Help for your own functionality to be created in a specific format. But we expect you to make it available on a website that the users of your functionality can access. For more information, see [Configure Context-Sensitive Help](help/context-sensitive-help.md).
@@ -126,7 +126,7 @@ For the base version of [!INCLUDE [prod_short](developer/includes/prod_short.md)
 
 ### Feedback and contributions
 
-On learn.microsoft.com, each article has two buttons at the end of the article. The *Product feedback* button sends you to the Ideas site, and the *Sign in to give documentation feedback* button lets you submit feedback about the content through GitHub. In both cases, you must create an account if you do not already have one. For *product feedback*, you must sign in with your work or organizational email account. For *access to GitHub*, you can use any email address when you create an account.  
+On the *learn.microsoft.com* website, each documentation article encourages you to provide feedback. We've changed the mechanism a couple of times based on, well, feedback. Currently, we ask you to choose the **Feedback** action below the article's title. You can give the article a rating, and write a comment if you want to. The feedback goes straight to the article's author and the team that owns the docs.  
 
 We welcome your contributions, both as pull requests with suggestions or corrections to the content, and as GitHub Issues with bugs or questions. However, we can only accept feedback and contributions to the content in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) and [dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb) repos. Also, we cannot address issues or questions about the product.  
 
@@ -135,17 +135,17 @@ We welcome your contributions, both as pull requests with suggestions or correct
 
 For more information, see [Contribute to the Help](help/contributor-guide.md).  
 
-### Working in MarkDown
+### Working in Markdown
 
-If you fork one of our repos, you will be authoring in MarkDown. We recommend that you learn the basics by referring to the [Docs Markdown reference](/contribute/markdown-reference) section in the Learn Contributor Guide.  
+If you fork one of our repos, you will be authoring in Markdown. We recommend that you learn the basics by referring to the [Learn Markdown reference](/contribute/markdown-reference) section in the Learn Contributor Guide.  
 
-The [Docs Authoring Pack for VS Code](/contribute/how-to-write-docs-auth-pack) can aid with MarkDown authoring and validation in Visual Studio Code. However, you can also use other text editors to edit MarkDown.  
+The [Learn Authoring Pack for VS Code](/contribute/how-to-write-docs-auth-pack) can aid with Markdown authoring and validation in Visual Studio Code. However, you can also use other text editors to edit Markdown.  
 
 For other tips and tricks, see [Contribute to the Help](help/contributor-guide.md) and the blog post [Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/).  
 
 ## Translate the Help
 
-If you want to deliver a [localization app](developer/readiness/readiness-develop-localization.md), or if you want to deliver your functionality in more than one country, you will want to translate the Help as well as the product. We suggest that you take a look at the [Microsoft Dynamics 365 Translation Service](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview), which is available as preview in Microsoft Dynamics Life Cycle Services. For more information, see [Translate documentation files](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
+If you want to deliver a [localization app](developer/readiness/readiness-develop-localization.md), or if you want to deliver your functionality in more than one country/region, you will want to translate the Help as well as the product. We suggest that you take a look at the [Microsoft Dynamics 365 Translation Service](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview), which is available as preview in Microsoft Dynamics Life Cycle Services. For more information, see [Translate documentation files](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
 
 The user interface text, including the tooltips, is translated as part of the application. For more information, see [Working with Translation Files](developer/devenv-work-with-translation-files.md).  
 

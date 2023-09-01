@@ -1,13 +1,13 @@
 ---
 title: Preparing test environments of Business Central
 description: Get an overview of your options for deploying test environments for Dynamics 365 Business Central for performance testing.
-author: edupont04
+author: jswymer
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.author: edupont
+ms.author: jswymer
 ms.date: 04/01/2021
 ---
 # Preparing Test Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]

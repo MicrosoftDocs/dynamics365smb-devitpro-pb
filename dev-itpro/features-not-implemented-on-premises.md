@@ -1,12 +1,12 @@
 ---
 title: Features not implemented in on-premises deployments
 description: Some features work differently or not at all, depending on whether your Business Central solution is in the cloud or on-premises.
-author: edupont04
+author: jswymer
 
 ms.custom: na
 ms.reviewer: na
 ms.topic: article
-ms.author: edupont
+ms.author: jswymer
 ms.date: 06/13/2022
 ---
 # Features not implemented in on-premises deployments of [!INCLUDE[prod_long](includes/prod_long.md)]

@@ -74,7 +74,7 @@ For more information about these and other things you can do, see [BCContainerHe
 
 |Requirement|Condition|Description|
 |----|----|-----------|
-|Running on a supported [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform| Always|The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform is updated monthly. You're responsible for updating the Embed App to operate with the updated version of Business Central. The Embed App must run on a supported build (platform) of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], namely, the current version of Business Central or one of the two immediately preceding versions. The immediately preceding versions can be both minor and major versions of Business Central. Earlier versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform are out of support and can't be used for Embed app deployments. |
+|Running on a supported [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform| Always|The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform version is updated with every major update. You're responsible for updating the Embed App to operate with the updated version of Business Central. The Embed App must run on a supported build (platform) of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], namely, the current platform version of Business Central or the preceding platform version. Earlier versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform are out of support and can't be used for Embed app deployments. |
 | Unique Base Application ID, Name, and Publisher|If any change is applied to the Microsoft Base Application objects| Create and assign your own unique App ID for it in the app.json file. Also, change the Publisher property and the Application name to your own in the app.json file. You can't use the original values of the Microsoft Base Application unless you've extracted all your customizations from that app into your own app(s). |
 | Use System Application | Always| Your Embed app must be built on top of the Microsoft System Application. The System Application must not be customized and must be used as a dependency for your customized or non-customized Base Application. |
 | Use `Microsoft_Application.app` file| If you use customized Base Application | Use `Microsoft_Application.app` to encapsulate references to your own customized Base Application, instead of referencing that app as a direct dependency in each extension separately. This will also allow other apps (like AppSource apps) to refer to your solution via the `Microsoft_Application.app`. For more information about the `Microsoft_Application.app`, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).|
@@ -93,9 +93,9 @@ We recommend you to use RapidStart packages to populate the new companies with t
 
 ## Exporting application and tenant databases
 
-You export the databases to BACPAC format by using the `Export-BCContainerDatabasesAsBacpac` command from the [BcContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper).
+You export the databases to .bacpac and .dacpac format by using the `Export-BCContainerDatabasesAsBacpac` command adding the `-includeDacPac` flag from the [BcContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper).
 
-We strongly recommend using this command for creating the BACPAC files you're planning to deploy to the Business Central service. To simplify exporting the data, the command also does a number of clean-up steps on the databases. It cleans up sessions, database connection, list of tenants, imported license, and more. It also verifies that the schemas of the application and tenant databases are synchronized, which is essential for deployment. We keep enhancing this command with more cleanup and validation steps as we discover BACPAC-related issues with deployments. So, remember to update the BcContainerHelper PowerShell module for every new iteration.
+We strongly recommend using this command for creating the .bacpac and .dacpac files you're planning to deploy to the Business Central service. To simplify exporting the data, the command also does a number of clean-up steps on the databases. It cleans up sessions, database connection, list of tenants, imported license, and more. It also verifies that the schemas of the application and tenant databases are synchronized, which is essential for deployment. We keep enhancing this command with more cleanup and validation steps as we discover .dacpac-related issues with deployments. So, remember to update the BcContainerHelper PowerShell module for every new iteration.
 
 ## Providing deployment instructions in the manifest.json
 
@@ -142,6 +142,8 @@ The manifest.json file, supplied within the deployment package, contains importa
 |----|----|-----------|
 | applicationBacpacPath| String  |Path to the application database (.bacpac) included with the deployment package. |
 | tenantTemplateBacpacPath| String|Path to the tenant template database (.bacpac) included with the deployment package. |
+| applicationDacpacPath| String |Path to the application database (.dacpac) included with the deployment package. |
+| tenantTemplateDacpacPath| String|Path to the tenant template database (.dacpac) included with the deployment package. |
 
 #### "links"
 

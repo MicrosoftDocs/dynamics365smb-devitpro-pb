@@ -4,7 +4,7 @@ description: "Get answers to some of your questions about library apps and depen
 author: freddyk
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: edupont
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: freddyk
 ---

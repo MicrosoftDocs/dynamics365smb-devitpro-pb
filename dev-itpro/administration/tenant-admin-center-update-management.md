@@ -1,7 +1,7 @@
 ---
 title: Managing Updates in the Admin Center
 description: Use the Business Central administration center to manage environment updates, including setting update windows and update dates.  
-author: edupont04
+author: jswymer
 
 ms.topic: conceptual
 ms.devlang: na
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
 ms.date: 05/31/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Managing Updates in the Business Central Admin Center
@@ -22,7 +22,7 @@ Updates of the base application and platform are managed by Microsoft. As an int
 
 The update window for an environment defines the hours during the day for the selected time zone in which the environment can be updated. When an update is rolling out&mdash;monthly or major update&mdash;it will be applied to an environment within the time frame that the update window defines.
 
-This window helps ensure updates are applied outside of the normal business hours of the organization. Every environment has a default update window that's between 8:00 PM and 6:00 AM local time for the environment's country. In countries that have multiple time zones, the system sets a time zone that's close to the geographic center of the country as default.
+This window helps ensure updates are applied outside of the normal business hours of the organization. Every environment has a default update window that's between 8:00 PM and 6:00 AM local time for the environment's country/region. In countries that have multiple time zones, the system sets a time zone that's close to the geographic center of the country/region as default.
 
 <!--
  The default time zone is set based on the environment localization and may differ from the administrator's time zone in countries that span multiple time zones.
@@ -78,6 +78,7 @@ For more information, see [Failed updates and rescheduling](update-rollout-timel
 
 ## See also
 
+[What's new or changed in Business Central](../whatsnew/overview.md)  
 [Major Updates of Business Central Online](update-rollout-timeline.md)  
 [Prepare for major updates with preview environments](preview-environments.md)  
 [Working with Administration Tools](administration.md)  

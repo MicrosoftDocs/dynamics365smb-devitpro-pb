@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 
 # Get started with AL

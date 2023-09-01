@@ -143,7 +143,7 @@ You find the txt2al.exe on the installation media (DVD) in the "DVD\RoleTailored
 2. Convert the test library TXT files to AL.
 
     This is similar to the previous step.
-    1. Create a folder for storing the AL files for base application objects (for example, c:\export2al\baseapplication\al).
+    1. Create a folder for storing the AL files for test objects (for example, c:\export2al\testlibrary\al).
     2. Run the txt2al command:
 
         ```      

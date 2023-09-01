@@ -1,14 +1,14 @@
 ---
 title: Business Central Admin Center| Microsoft Docs
 description: Learn about how a VAR or an internal administrator can set update windows and other admin tasks.  
-author: edupont04
+author: jswymer
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 04/01/2021
-ms.author: edupont
+ms.author: jswymer
 ---
 # The Business Central Administration Center
 
@@ -23,15 +23,11 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 
 ## Access to the administration center
 
-The following users are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]:
+Users with the following Microsoft Entra ID roles are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]:
 
-- Internal tenant administrators
-- Admin agent
-- Helpdesk agent
-
-*Internal administrators* are users who are assigned the **Global admin** role or the **Dynamics 365 Admin** role in the Microsoft 365 admin center. These users are typically system administrators, IT professionals, or super users at the customer's company. For more information, see [About admin roles](/office365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
-
-The *admin agent* and *helpdesk agent* roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner that is associated with the tenant. These roles can access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant as *delegated administrators*. For more information, see [Administration of Business Central Online](tenant-administration.md).  
+- Global Administrator
+- Dynamics 365 Administrator
+- Helpdesk Administrator (Delegated users only)
 
 ## Internal administrators
 

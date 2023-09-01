@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 04/27/2023
 ms.author: solsen
 ---
 
@@ -45,7 +45,7 @@ Represents a picture in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the picture. Non-editable.|
-|parentType|NAV.pictureEntityParentType|The type of the parent document of the picture. It can be "Customer","Item", "Vendor", "Employee". |
+|parentType|NAV.pictureEntityParentType|The type of the parent document of the picture. It can be "Customer","Item", "Vendor", "Employee", or "Contact". |
 |width|integer|The width of the picture.|
 |height|integer|The height of the picture.|
 |contentType|string|The media type of the picture.|

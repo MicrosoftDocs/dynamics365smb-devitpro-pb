@@ -24,7 +24,7 @@ If you don't want to publish and invoke functionality to debug it, you can inste
 
 ## Attach configuration
 
-You can activate the attach functionality by creating a new configuration in the `launch.json` file. The configuration has two flavors; **Attach to the client on the cloud sandbox** and **Attach to the client on your server**. Use the first option to attach to a cloud session, and the second option to attach to a local server. 
+You can activate the attach functionality by creating a new configuration in the `launch.json` file. The configuration has two flavors; **Attach to the client on the cloud sandbox** and **Attach to the client on your server**. Use the first option to attach to a cloud session, and the second option to attach to a local server. For an overview of configuration options, see [Launch JSON file](devenv-json-launch-file.md).
 
 > [!NOTE]  
 > With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, two new properties are added to the launch configuration: `sessionId` and `userId`, which allow attaching to an ongoing session and also debugging on behalf of another user.

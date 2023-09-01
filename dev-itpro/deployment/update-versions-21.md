@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 04/04/2023
+ms.date: 08/09/2023
 ms.custom: bap-template
 ---
 
@@ -22,12 +22,16 @@ You should always install the latest update.
 
 ## Available updates for Business Central 2022 Release Wave 2
 
-The following table lists the updates that have been released for 2022 release wave 2 of Business Central (version 22). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
+The following table lists the updates that have been released for 2022 release wave 2 of Business Central (version 21). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5029764](https://support.microsoft.com/help/5029764)|Update 21.10| August 2023|Application Build 21.10.59121 </br>Platform Build 21.0.59030 |
+|[5029056](https://support.microsoft.com/help/5029056)|Update 21.9| July 2023|Application Build 21.9.58412 </br>Platform Build 21.0.58319 |
+|[5027891](https://support.microsoft.com/help/5027891)  |Update 21.8| June 2023|Application Build 21.8.56995 </br>Platform Build 21.0.56953 |
+|[5026931](https://support.microsoft.com/help/5026931)  |Update 21.7| May 2023|Application Build 21.7.56019 </br>Platform Build 21.0.56004 |
 |[5025975](https://support.microsoft.com/help/5025975)  |Update 21.6| April 2023|Application Build 21.6.54874 </br>Platform Build 21.0.54828 |
 |[5024403](https://support.microsoft.com/help/5024403)  |Update 21.5| March 2023|Application Build 21.5.53946 </br>Platform Build 21.0.53923 |
 |[5023401](https://support.microsoft.com/help/5023401) |Update 21.4| February 2023|Application Build 21.4.52785</br>Platform Build 21.0.52534 |

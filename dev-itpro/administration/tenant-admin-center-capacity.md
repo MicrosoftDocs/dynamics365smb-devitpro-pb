@@ -25,7 +25,7 @@ To help our customers manage and plan their storage costs on an ongoing basis, t
 
 - Creating more business branches
 - Moving into more countries
-- Expanding within their current country
+- Expanding within their current country/region
 - Development
 - Testing changes
 - Learning new product capabilities
@@ -34,7 +34,7 @@ Every [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer with 
 
 Customers can also choose to purchase any number of additional production environments via their CSP partner. Each additionally purchased production environment comes with three additional sandbox environments.  
 
-Production and sandbox environments can be created and used in any country where [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service is available, also in the country where the default [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are located. Additional environments can be created by customers, administrators, and partners by using the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+Production and sandbox environments can be created and used in any country/region where [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service is available, also in the country/region where the default [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are located. Additional environments can be created by customers, administrators, and partners by using the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
 When customer administrators create users in Microsoft 365 Admin Center and assign them [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses, each user, by default, gets access to all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments (sandbox and production) under the same single [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license, still acting within the scope of their license within each of these environments. Administrators can limit users' access to any particular environment by [changing their permissions](/dynamics365/business-central/ui-define-granular-permissions), or by [removing users' access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) within that environment.
 

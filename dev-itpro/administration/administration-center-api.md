@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 04/24/2023
 ---
 
 # The Business Central Admin Center API
@@ -72,8 +72,10 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API su
 
 5. (optional) Grant admin consent on each permission by selecting it in the list, then selecting **Grant admin consent for \<tenant name\>**. This step isn't required if you'll be granting consent from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. It is possible to grant consent from this page only for your own current tenant. This works for single-tenant apps, but for multi-tenant apps you have to grant consent for each tenant from that tenant's Azure AD portal or the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
 6. Go to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and navigate to the 'Authorized AAD Apps' page. Paste the **Application (client) ID** of your app in the form to authorize an app.
-7. If not already completed in step 5 you can grant consent for your app from the 'Authorized AAD Apps' page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
-  **Note:** There might be a short delay until the `Granted` status is visible in the TAC UI after refreshing.
+7. If not already completed in step 5 you can grant consent for your app from the 'Authorized AAD Apps' page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+  
+    > [!NOTE]
+    > There might be a short delay until the `Granted` status is visible in the Business Central admin center after refreshing. To grant consent, you must have a Microsoft Entra role assigned that allows for management of application registrations in the tenant, such as the [Cloud Application Administrator](https://learn.microsoft.com/azure/active-directory/roles/permissions-reference#cloud-application-administrator) role. The Dynamics 365 Administrator role that grants access to the [!INCLUDE[prodadmincenter] does not allow users to grant consent to applications in the tenant.
 8. (optional) Some operations in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API require that the app has a permissions assigned in the environment in addition to the authorization in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Follow the instructions in Task 2 [here](automation-apis-using-s2s-authentication.md) to assign permissions.
 
     > [!NOTE]
@@ -146,26 +148,30 @@ HTTP requests sent to the [!INCLUDE[prodadmincenter](../developer/includes/proda
 The following examples show how to obtain such a token using PowerShell. Using C# is straightforward.
 
 PowerShell example without prompt:
- ```powershell
-    $cred = [Microsoft.IdentityModel.Clients.ActiveDirectory.UserPasswordCredential]::new($UserName, $Password)
-    $ctx = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext]::new("https://login.windows.net/$TenantName")
-    $token = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContextIntegratedAuthExtensions]::AcquireTokenAsync($ctx, "https://api.businesscentral.dynamics.com", <Application ID>, $cred).GetAwaiter().GetResult().AccessToken
- ```
- 
- PowerShell example with prompt:
 
- ```powershell
-    $ctx = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext]::new("https://login.windows.net/$tenantName")
-    $redirectUri = New-Object -TypeName System.Uri -ArgumentList <Redirect URL>
-    $platformParameters = New-Object -TypeName Microsoft.IdentityModel.Clients.ActiveDirectory.PlatformParameters -ArgumentList ([Microsoft.IdentityModel.Clients.ActiveDirectory.PromptBehavior]::Always)
-    $token = $ctx.AcquireTokenAsync("https://api.businesscentral.dynamics.com", <Application ID>, $redirectUri, $platformParameters).GetAwaiter().GetResult().AccessToken
- ```
+```powershell
+$cred = [System.Management.Automation.PSCredential]::new($userName, $secureStringPassword)
+$authority = "https://login.microsoftonline.com/$tenantName"
+$scopes = [String[]]@("https://api.businesscentral.dynamics.com/.default")
+$client = [Microsoft.Identity.Client.PublicClientApplicationBuilder]::Create($applicationId).WithAuthority($authority).Build()
+$accessToken = $client.AcquireTokenByUsernamePassword($Scopes, $cred.UserName, $cred.Password).ExecuteAsync().GetAwaiter().GetResult().AccessToken
+```
+ 
+PowerShell example with prompt:
+
+```powershell
+$authority = "https://login.microsoftonline.com/$tenantName"
+$scopes = [String[]]@("https://api.businesscentral.dynamics.com/.default")
+$client = [Microsoft.Identity.Client.PublicClientApplicationBuilder]::Create($applicationId).WithAuthority($authority).WithRedirectUri($redirectUri).Build()
+$accessToken = $client.AcquireTokenInteractive($scopes).ExecuteAsync().GetAwaiter().GetResult().AccessToken
+```
 
 ## Error Format
 
 If an error occurs during the execution of an API method, it will respond back with an error object. While the specifics of any error will vary from endpoint to endpoint and by the error, the error object returned should adhere to the following structure. When an error occurs that doesn't fit this structure, it typically indicates that an error occurred in sending the request or during authentication of the request. For example, it could be that the API hasn't yet received the request. 
 
-**Error Response Object:**  
+**Error Response Object:** 
+
 ```
 {
 "code": string, // A stable error code describing the type an nature of the error. Ex: EnvironmentNotFound

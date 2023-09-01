@@ -46,11 +46,11 @@ In this walkthrough, you install a new instance of [!INCLUDE[navnowlong](include
 ## Story  
  A consultant wants to install [!INCLUDE[navnowlong](includes/navnowlong_md.md)] in a production environment.  
 
-1.  She installs [!INCLUDE[nav_server](includes/nav_server_md.md)], [!INCLUDE[navnow](includes/navnow_md.md)] database components, and the Demo database on a server running Windows Server \(**NAVSERV**\) where she has already installed Microsoft SQL Server. As part of the installation she provides configuration information to allow the server to communicate with the database.  
+1.  They install [!INCLUDE[nav_server](includes/nav_server_md.md)], [!INCLUDE[navnow](includes/navnow_md.md)] database components, and the Demo database on a server running Windows Server \(**NAVSERV**\) where they have already installed Microsoft SQL Server. As part of the installation they provide configuration information to allow the server to communicate with the database.  
 
-2.  She creates a domain user account in Active Directory and uses [!INCLUDE[nav_admin](includes/nav_admin_md.md)] to configure a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance to run using the account’s domain credentials.  
+2.  They create a domain user account in Active Directory and uses [!INCLUDE[nav_admin](includes/nav_admin_md.md)] to configure a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance to run using the account’s domain credentials.  
 
-3.  She installs the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] on a computer running Windows 10 \(**NAVCLIENT**\) and configures it to communicate with [!INCLUDE[nav_server](includes/nav_server_md.md)].  
+3.  They install the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] on a computer running Windows 10 \(**NAVCLIENT**\) and configures it to communicate with [!INCLUDE[nav_server](includes/nav_server_md.md)].  
 
 ## Installing the [!INCLUDE[navnow](includes/navnow_md.md)] Database Components and [!INCLUDE[nav_server](includes/nav_server_md.md)]  
  When you run [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup, you see a menu of Installation Options. You configure one of those options, the Server Option, to install the SQL Server Database components, the CRONUS International, Ltd., Demo database, and [!INCLUDE[nav_server](includes/nav_server_md.md)], all at the same time.  

@@ -7,11 +7,11 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms. search.keywords: cloud, edge, gp, migration
 ms.search.form: 4003
 ms.date: 08/23/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Migrate Dynamics GP Data to the Cloud
@@ -100,6 +100,8 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
     Vendor EFT Bank information will be migrated to Business Central as Vendor Bank Accounts.  If a Vendor's Remit to address contains EFT Bank information in Dynamics GP, it will be migrated over as the Preferred Bank Account Code on a vendor in Business Central.
 
     We also bring over outstanding Payables transactions. These transactions will be brought in with the amount remaining in Dynamics GP. For example, if an invoice for $1000 was entered into Dynamics GP, and it has been partially paid and has a remaining balance of $400, the new invoice created in Business Central will be for $600 as that is the amount remaining to be paid. We bring over all transaction types from Payables Management.
+    
+   1099 vendor information and amounts can be migrated to Business Central.   An option has been added to the GP Company Migration Configuration page where you can select if you want to migrate 1099 information.    The tax type, Federal ID number and 1099 box number from the vendor record will be migrated.  In addition, the 1099 box amounts will be migrated for each 1099 vendor.   If you select to migration 1099 information, you will also indicate the calendar year for which you want to migrate 1099 amounts.  Note that the first supported year for migrating 1099 information is 2022.    
 
     You can also bring over Open Purchase Orders. When we migrate purchase orders, we are looking at the items and the quantities remaining on those items to determine what we will bring over as an open purchase order. If an item is fully received and invoiced that item will not migrate. By bringing over open purchase orders, you do not have to enter outstanding transactions from the purchase order aspect.
 
@@ -181,7 +183,7 @@ At the end of the migration, you have a completely copy of your Dynamics GP data
 
 ## See also
 
-[Run the assisted setup guide](migrate-data.md#run-the-assisted-setup-guide)  
+[Run the assisted setup guide](migrate-gp-overview.md#run-the-assisted-setup-guide)  
 [Compare Work in Dynamics GP to Business Central](migrate-dynamics-gp-videos.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
 [Troubleshooting Cloud Migration](migration-troubleshooting.md)  

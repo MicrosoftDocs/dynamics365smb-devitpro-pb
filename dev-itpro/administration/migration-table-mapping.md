@@ -1,18 +1,17 @@
 ---
-title: Migration Table Mapping
+title: Define migration table mappings
 description: Learn how to use migration table mapping to rename the table during the cloud migration or to move a subset of fields to a different table or table extension.
 author: jswymer 
 ms.author: jswymer 
 ms.reviewer: jswymer 
 ms.service: dynamics365-business-central
 ms.topic: how-to
-ms.date: 11/25/2022
+ms.date: 03/22/2023
 ms.custom: bap-template
 ---
+# Define migration table mappings
 
-# Define Migration Table Mappings
-
-Migration table mapping can be used to rename the table during the cloud migration or to move a subset of fields to a different table or table extension. Before you start defining table mapping
+Migration table mapping can be used to rename the table during the cloud migration or to move a subset of fields to a different table or table extension. Table mapping is a process that allows you to define the relationship between source tables in an on-premises database and destination tables in the online environment. In other words, table mapping lets you specify which tables in the on-premises database are migrated to which tables in the online environment. 
 
 > [!TIP]
 > You can use the **Import** and **Export** actions to import or export the definition done in the UI.
@@ -35,8 +34,7 @@ But the following mappings are supported:
 |Customer|Customer|
 |Customer|MyTable|
 
-This limitation also applies to tables that are automatically included into the replication, which means tables enabled for cloud migration by the [ReplicateData property](../developer/properties/devenv-replicatedata-property.md). If these tables exist in the on-premises database, they'll automatically be included in the clod migration. So, no table mappings can define these tables the destination table.
-
+This limitation also applies to tables that are automatically included into the replication, which means tables enabled for cloud migration by the [ReplicateData property](../developer/properties/devenv-replicatedata-property.md). If these tables exist in the on-premises database, they're automatically included in the cloud migration. So, no table mappings can define these tables as the destination table.
 
 ## Rename the table during the cloud migration
 
@@ -61,7 +59,7 @@ For example, suppose the Business Central on-premises table is named **My Custom
    |Target Type| **Table**|
    |Extension Names|Set to the name of the extension that contains the table. |
    |Table Name|Set to the table in the extension. Setting these three fields specifies the target table.|
-   |Source Table Name|Enter the full name as it appears in SQL. The system will parse the values. <br /><br />C/AL table example: `[CRONUS COMPANY$ABC My Custom Table]` <br /><br />AL table example: `[CRONUS COMPANY$ABC My Custom Table$437dbf0e-84ff-417a-965d-ed2bb9650972]`. The GUID `437dbf0e-84ff-417a-965d-ed2bb9650972` is the extension ID, which in this case is for base app. |
+   |Source Table Name|Enter the full name as it appears in SQL. The system parses the values. <br /><br />C/AL table example: `[CRONUS COMPANY$ABC My Custom Table]` <br /><br />AL table example: `[CRONUS COMPANY$ABC My Custom Table$437dbf0e-84ff-417a-965d-ed2bb9650972]`. The GUID `437dbf0e-84ff-417a-965d-ed2bb9650972` is the extension ID, which in this case is for base app. |
 
 The following figure illustrates an example of the **Migrate Table Mappings** page for an AL table:
 
@@ -76,7 +74,7 @@ For example, suppose that you've added two custom fields to the **Customer** tab
 
 ### Prerequisite
 
-Fields to be moved to a table extension must have the same name and type as in the source table in the Business Central. If the name is different, the fields will be ignored by the engine, and won't be moved to Business Central online.
+Fields to be moved to a table extension must have the same name and type as in the source table in the Business Central. If the name is different, the fields are ignored by the engine, and won't be moved to Business Central online.
 
 ### Create the table mapping for moving fields
 
@@ -114,13 +112,17 @@ Follow these steps if you need multiple table mappings.
 
 5. Close the page.
 
-   After closing the page, the multiple table mappings will be inserted. This step is useful when you want to split a single source table into multiple table extensions.
+   After you close the page, the multiple table mappings will be inserted. This step is useful when you want to split a single source table into multiple table extensions.
 
 ## Provide table mappings programmatically
 
 We recommend that you provide the table mappings programmatically. To do table mappings programmatically, subscribe to `OnInsertDefaultTableMappings` event from codeunit 4001 "Hybrid Cloud Management".
 
 Table mappings will be inserted after the setup wizard is completed or if you run the **Restore Default Mappings** from **Migration Table Mapping** page.
+
+## Next steps
+
+[Run data migration setup](migration-setup.md)
 
 ## See also
 

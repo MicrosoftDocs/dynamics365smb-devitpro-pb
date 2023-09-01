@@ -1,23 +1,26 @@
 ---
-title: Using OData Transactional $batch Requests
+title: Using OData transactional $batch requests
 description: How to specify that all inner requests in a certain OData $batch request are processed in a transactional way in Business Central.
-ms.custom: na
-ms.date: 02/09/2022
+ms.custom: bap-template
+ms.date: 04/25/2023
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.service: d365-business-central
+ms.author: jswymer
 ms.topic: conceptual
+author: jswymer
 ---
 
-# Using OData Transactional $batch Requests
+# Using OData transactional $batch requests
 
 > **APPLIES TO:** Business Central 2020 release wave 2 (version 17.1) and later
 
-It's possible to specify that all inner requests in a certain OData $batch request are processed in a transactional way. If one of the inner requests fails after another request (or requests) has committed changes, all changes within a batch will be reverted as if the batch request never happened. Transactional $batch requests are useful in scenarios where a single business operation spans multiple requests, because they prevent adverse effects if parts of the operation fail. Also, they can improve performance by reducing the number of requests the client needs to do when errors occur.
+It's possible to specify that all inner requests in a certain OData $batch request are processed in a transactional way. Unless it's invoked commit, if an inner request fails after another request(s) has committed changes, all changes within a batch will be reverted as if the batch request never happened. Transactional $batch requests are useful in scenarios where a single business operation spans multiple requests, because they prevent adverse effects if parts of the operation fail. Also, they can improve performance by reducing the number of requests the client needs to do when errors occur.
 
-## Enabling OData transactional batch behavior
+## Enable OData transactional batch behavior
 
-To enable transactional batch behavior, include the `Isolation: snapshot` header with the $batch request.
+To enable transactional batch behavior, include the `Isolation: snapshot` header with the $batch request. The `Isolation: snapshot` header makes the entire batch to run within the same session. If the AL code doesn't invoke COMMIT, then the entire batch runs in the same transaction. Otherwise, for each commit, the transaction is committed, and a new one is started. 
+
+The [CommitBehavior attribute](../developer/attributes/devenv-commitbehavior-attribute.md) can be used to override the COMMIT behavior of the invoked method.
 
 ## Example
 

@@ -73,7 +73,7 @@ For the listed objects in the table, these examples show how to name the files.
 |------|---------------------------|
 |codeunit 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Codeunit.al`|
 |page 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Page.al`|
-|page 70000000 MyPrefixSalesperson extends "Customer Card"|`MyPrefixSalesperson.PageExt.al`|
+|pageextension 70000000 MyPrefixSalesperson extends "Customer Card"|`MyPrefixSalesperson.PageExt.al`|
 
 ### Examples of object naming
 

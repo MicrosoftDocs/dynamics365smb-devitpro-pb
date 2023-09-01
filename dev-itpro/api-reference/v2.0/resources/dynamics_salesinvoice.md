@@ -93,7 +93,7 @@ The response has no content; the response code is 204.
 |externalDocumentNumber|string|Specifies an external document number for the sales invoice.|
 |invoiceDate|date|The invoice date .|
 |postingDate|date|The date that the sales invoice   is posted.|
-|dueDate|date|T he date the sales invoice is due.|
+|dueDate|date|The date the sales invoice is due.|
 |customerPurchaseOrderReference|string|The customer purchase order reference for the invoice.|
 |customerId|GUID|The unique ID of customer.  |
 |customerNumber|string|The customer's number.|

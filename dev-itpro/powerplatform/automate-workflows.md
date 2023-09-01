@@ -6,14 +6,16 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: how-to
-ms.date: 10/14/2022
+ms.date: 04/21/2023
 ms.custom: bap-template 
+ms.search.keywords: workflow, OData, Power Automate, Get adaptive card (v3), Get url (v3)
+
 ---
-# Set Up Automated Flows
+# Create automated flows
 
 [!INCLUDE [online_only](../developer/includes/online_only.md)]
 
-This article explains how you set up [!INCLUDE[prod_short](../includes/prod_short.md)] online to run Power Automate flows when an event happens in [!INCLUDE [prod_short](../includes/prod_short.md)].  
+This article explains how you can set up [!INCLUDE[prod_short](../includes/prod_short.md)] online to run Power Automate flows when an event happens in [!INCLUDE [prod_short](../includes/prod_short.md)].  
 
 > [!NOTE]  
 > To use Power Automate with [!INCLUDE[prod_short](../includes/prod_short.md)], you must have a valid Power Automate account.
@@ -24,22 +26,27 @@ Automated flows are designed to run automatically when an event occurs in [!INCL
 
 An automated flow consists of at least one trigger (the event that starts the flow) and one action (does an operation). To support creating flows, the [!INCLUDE[prod_short](../includes/prod_short.md)] connector includes several [triggers](/connectors/dynamicssmbsaas/#triggers) and [actions](/connectors/dynamicssmbsaas/#actions) that you can use.
 
-The connector​ seamlessly connects data and gives you the option to include **Dynamic content** when you create automated flows. The [!INCLUDE[prod_short](../includes/prod_short.md)] triggers return data, like the ID of a record, which can be consumed by actions later in the flow. [!INCLUDE[prod_short](../includes/prod_short.md)] actions also return data that can be passed to other actions. 
+The connector​ seamlessly connects data and gives you the option to include **Dynamic content** when you create automated flows. The [!INCLUDE[prod_short](../includes/prod_short.md)] triggers return data, like the ID of a record, which actions later in the flow can consume. [!INCLUDE[prod_short](../includes/prod_short.md)] actions also return data that can be passed to other actions. 
 
 > [!NOTE]
 > The [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate supports multiple production and sandbox environments. If you haven't created multiple production or sandbox environments, **Production** is the only available option you can choose.  
 
+## Prerequisites
+
+- Power Automate premium license or a license that includes premium connectors. For more information, see [Power Automate licenses](/power-platform/admin/power-automate-licensing/types).
+
 ## Create an automated flow from scratch
 
-This procedure outlines that steps required to create an automated flow using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. To illustrate the process, it walks you through a basic example of a flow that sends a message to a Teams group chat when a new customer is created in [!INCLUDE[prod_short](../includes/prod_short.md)]. The following figure illustrates the flow. 
+This procedure outlines the steps required to create an automated flow using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. To illustrate the process, it walks you through a basic example of a flow that sends a message to a Teams group chat when a new customer is created or modified in [!INCLUDE[prod_short](../includes/prod_short.md)]. The message contains a card that shows some information about the customer and a **Details** button that opens even more information about the customer. The card is the same as the one displayed in Teams when you manually [share a record to Teams](/dynamics365/business-central/across-working-with-teams) from inside Business Central.
 
-:::image type="content" source="../developer/media/power-automate-automated-flow.png" alt-text="Shows the structure of the flow that includes the record is created (V3) trigger, get record trigger, and the post message to teams chat trigger.":::
+The following figure illustrates the flow that you create.
+
+:::image type="content" source="../developer/media/power-automate-automated-flow-v2.png" alt-text="Shows the structure of the flow that includes the record is created (V3) trigger, get record trigger, and the post message to teams chat trigger.":::
 
 Complete the following steps:
 
-1. Sign in to [Power Automate](https://powerautomate.com) or from a page in [!INCLUDE[prod_short](../includes/prod_short.md)], select the actions **Automate**> **Power Automate** > **Manage Flows**.
-
-2. Select **Create** from the left side, then choose to create by starting from blank or starting from connector:
+1. Sign in to [Power Automate](https://powerautomate.com) or select the actions **Automate**> **Power Automate** > **Manage Flows** from a page in [!INCLUDE[prod_short](../includes/prod_short.md)].
+2. On the left side, select **Create**, then choose to create by starting from blank or starting from connector:
 
    # [Starting from blank](#tab/blank)
    1. Under **Starting from blank**, select **Automated cloud flow**.
@@ -52,50 +59,74 @@ Complete the following steps:
    1. Under **Starting from a connector**, select **All connectors**.
    2. In the search, type *business central*, then select **Dynamics 365 Business Central** in the results.
    3. The **Dynamics 365 Business Central** page opens and shows all available triggers. For the example, select **When a record is created (V3)** to open the new flow.
-   4. In the upper left corner, replace the text **Untitled** with the name of your flow.
+   4. In the upper-left corner, replace the text **Untitled** with the name of your flow.
 
    ---
 
-   Your flow will look similar to the following figure:
+   Your flow looks similar to the following figure:
 
    :::image type="content" source="../developer/media/power-automate-when-record-is created-trigger.png" alt-text="Shows the trigger called when a record is created (V3) in Power Automate.":::
 
-3. Fill in the parameters to specify what the flow pertains to. The parameters and whether they're required depends on the trigger.
+3. Fill in the parameters to specify what the flow relates to. The parameters and whether they're required depend on the trigger.
 
     :::image type="content" source="../developer/media/power-automate-when-record-is created-trigger-example.png" alt-text="Shows the filled-in trigger called when a record is created (V3) in Power Automate.":::
 
     |Parameter|Description|
     |---------|-----------|
-    |Environment name|Name of the [!INCLUDE[prod_short](../includes/prod_short.md)] environment that the flow will run on. The [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate supports multiple production and sandbox environments. If you haven't created multiple production or sandbox environments, **Production** is the only available option you can choose.|
-    |Company name|Name of [!INCLUDE[prod_short](../includes/prod_short.md)] company that the flow will run on|
-    |API category|Name of the [!INCLUDE[prod_short](../includes/prod_short.md)] API category that will run the flow (also called API route)|
-    |Table name|Name of the [!INCLUDE[prod_short](../includes/prod_short.md)] table that the flow will run on.|
+    |Environment name|Name of the [!INCLUDE[prod_short](../includes/prod_short.md)] environment that the flow runs on. The [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate supports multiple production and sandbox environments. If you haven't created multiple production or sandbox environments, **Production** is the only available option you can choose.|
+    |Company name|Name of [!INCLUDE[prod_short](../includes/prod_short.md)] company that the flow runs on|
+    |API category|Name of the [!INCLUDE[prod_short](../includes/prod_short.md)] API category that runs the flow (also called API route)|
+    |Table name|Name of the [!INCLUDE[prod_short](../includes/prod_short.md)] table that the flow runs on.|
 
-4. Now begin designing the flow by adding actions and more triggers. Start by selecting **+ New step**.
+4. Begin designing the flow by adding actions and more triggers. Start by selecting **+ New step**.
 
    > [!NOTE]
    > Because each step in the flow is independent of the next, you may be required to define the environment and company multiple times. 
-5. Add an action to get information about the new record from the table you specified in the previous step:
+5. Complete the following steps to add the action called **Get url (V3)**. This action gets the web client page URL for the specified [!INCLUDE[prod_short](../includes/prod_short.md)] record, in this case, the customer card page 21.
 
-    1. In the search box on the **Choose an operation**, select the **Actions** tab, then search for and select *Get record (V3)* for the Dynamics 365 Business Central connector.
-    2. On the **Get record (V3)** step, set the **Environment name**, **Company name**, **API category**, and **Table name** to the same values as the **When a record is created (V3)** the trigger.
-    3. For the **Row ID**, use dynamic content. Select the field to open the **Dynamic content** pane, then select **RowID**.
+    1. In the **Choose an operation** step, select the **Actions** tab, then search for and select *get url (v3)* for the Dynamics 365 Business Central connector.
+    2. On the **Get url (v3)** step, set the **Environment name** and **Company name** to the same values as the **When a record is created (V3)** the trigger.
+    3. Set the **Page** to the ID of the page, in this case, *21*.
+    4. Select the **Row ID** field to open the **Dynamic content** pane, then select **RowID**.
 
-    The flow will look something like this:
+    The flow looks like this:
 
-    :::image type="content" source="../developer/media/power-automate-get-record-action-example.png" alt-text="Shows the action called Get record (V3) in Power Automate.":::
+    :::image type="content" source="../developer/media/power-automate-get-url-action-example.png" alt-text="Shows the action called Get record (V3) in Power Automate.":::
 
-6. Selecting **+ New step** to add a new step for posting a message to a Teams chat.
-   1. Select **Microsoft Teams** > **Post a message in a chat or channel**.
-   2. Set **Post as** to **User** and **Post in** to **Group chat**.
-   3. Set **Group ID** to the name of the chat group in Teams where you want to post the message. 
-   4. Add content to the **Message**. Apart from text, you can use dynamic content to add information about the customer record, like **number** and **name**.
+    > [!IMPORTANT]
+    >  The **Get url (v3)** action only works for [!INCLUDE[prod_short](../includes/prod_short.md)] version 22.0 and later.
 
-    The flow will look something like this:
+6. Repeat the previous step, except this time, add the action called **Get adaptive card (v3)**. This action generates an adaptive card for the specified record that acts as a payload for input to Team.
 
-    :::image type="content" source="../developer/media/power-automate-post-teams-action-example.png" alt-text="Shows the action called Post a message to a chat or channel in Power Automate.":::
+    1. Select **+ New step**.
+    2. In the **Choose an operation** step, select the **Actions** tab, then search for and select *get adaptive card (v3)* for the Dynamics 365 Business Central connector.
+    3. On the **Get adaptive card (v3)** action, select the **Url** field to open the **Dynamic content** pane. Then, under **Get url (V3)**, select **Web Client URL**.
+    4. On the **Get adaptive card (v3)** action, set the **Target** field to **Teams**.
 
-7. Select **Save**.
+    The flow looks like this:
+
+    :::image type="content" source="../developer/media/power-automate-get-adaptive-card-action-example.png" alt-text="Shows the action called Post card to a chat or channel in Power Automate.":::
+
+7. Add the final action that posts the card to a Teams channel. 
+
+   1. Select **+ New step**.
+   2. In the **Choose an operation** step, select the **Actions** tab, then search for and select *post a card in a chat or channel* for the Microsoft Teams connector.
+   3. On the **Post a card in a chat or channel** action, set the following fields:
+
+      |Field|Value|
+      |-|-|
+      |Post as|**User**|
+      |Post in|**Channel**|
+      |Team|The team in Teams where you want to post the card|
+      |Channel|The team channel in Teams where you want to post the card|
+      |Adaptive card|Use dynamic content to set to **Adaptive Card** from the **Get adaptive card (V3)** action.|
+      |Subject|Optional text that appears above the card in Teams|
+
+    The flow looks like this:
+
+    :::image type="content" source="../developer/media/power-automate-post-card-action-example.png" alt-text="Shows the action called Post a message to a chat or channel in Power Automate.":::
+
+8. Select **Save**.
 
 ## Create a flow from a template
 
@@ -118,14 +149,13 @@ Microsoft also provides automated flow templates that you can use to build your 
 1. Sign in to [Power Automate](https://powerautomate.com) or from a page in [!INCLUDE[prod_short](../includes/prod_short.md)], select the actions **Automate**> **Power Automate** > **Manage Flows**.
 2. Select **Create** from the left side.
 3. Under **Starting from a template**, select **All templates**.
-4. In the search, type *business central* and you'll see all the available automated flow templates in the results.
+4. In the search, type *business central* to get a list of all the available automated flow templates in the results.
 5. Select template to open the flow.
-6. Make changes to the flow, for example, by adding or changing steps. There are typically a few parameters that you'll need to fill in before saving the flow as one of your own.
+6. Make changes to the flow, for example, by adding or changing steps. There are typically a few parameters that you need to fill in before saving the flow as one of your own.
 
    > [!NOTE]
-   > Because each step in the flow is independent of the next, you may be required to define the environment and company multiple times
+   > Because each step in the flow is independent of the next, you may have to define the environment and company multiple times
 7. Select **Save** when done.
-
 
 
 <!--
@@ -171,6 +201,9 @@ Next Power Automate prompts you to select an environment and company within your
 The [connectors](/connectors/dynamicssmbsaas/) for Power Platform and Azure Logic Apps also support other scenarios. For example, use the [Find records (V3)](/connectors/dynamicssmbsaas/#find-records-(v3)) action to create or edit table data for document headers or lines. You can also build a Power App that creates and posts time sheets, or a Power Automate flow that posts journal lines.  
 
 The **Find records (V3)** action finds records in the same way as [filter expressions in OData URIs](../webservices/use-filter-expressions-in-odata-uris.md). But it does so behind the scenes, so all you have to do is add the action as a step in your flow. Learn more at [Find records (V3)](/connectors/dynamicssmbsaas/#find-records-(v3)).  
+
+   > [!NOTE]
+   > All the actions and triggers in the connector (except the ones related to approvals) support Business Central APIs coming from AppSource extensions or from other extensions installed in your Business Central environment, provided that they follow the API best practices. Learn more at [Developing a Custom API](/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api).
 
 ## See also
 

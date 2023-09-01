@@ -15,13 +15,13 @@ ms.author: jswymer
 
 As an administrator, you can restore an existing environment from a time in the past, within the retention period that applies to both production and sandbox environments.  
 
-Database backups are an essential part of any business continuity and disaster recovery strategy, because they protect your data from corruption or deletion. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online uses Azure SQL Database as the underlying database backup technology for its environments. All databases are protected by automated backups that are continuously created and maintained by the Azure SQL service. For more information, see [Databases and backups](../service-overview.md#databases-and-backups).  
+Database backups are an essential part of any business continuity and disaster recovery strategy, because they protect your data from corruption or deletion. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online uses Azure SQL Database as the underlying database backup technology for its environments. All databases are protected by automated backups that are continuously created and maintained by the Azure SQL service. For more information, see [Business continuity and disaster recovery (BCDR)](../service-overview.md#business-continuity-and-disaster-recovery-bcdr).  
 
 ## Users who can restore environments
 
 Permission to restore environments is limited to specific types of users: internal and delegated administrators. The following users are allowed to restore environments.
 
-- Delegated administrators from reselling partners
+- Delegated administrators. For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md)
 - Administrators from the organization that subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
 
 Also, these users must have the **D365 BACKUP/RESTORE** permission set assigned to their user account in the environment they're trying to export.

@@ -26,7 +26,7 @@ The following steps help you get started by creating a repository on GitHub usin
 
 ## Setting up the environment in Visual Studio Code
 
-1. Start Visual Studio Code, select <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>P</kbd> and select **Git Clone** and paste the URL that you copied in the previous section.
+1. Start Visual Studio Code, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and select **Git Clone** and paste the URL that you copied in the previous section.
 1. Choose which folder to clone the directory to.
 1. Now, open the cloned repository and then open the workspace in Visual Studio Code when prompted for it.
 1. In the `.AL-Go` folder, choose the `localDevEnv.ps1` script and in the upper right corner of the script, choose **Run**.

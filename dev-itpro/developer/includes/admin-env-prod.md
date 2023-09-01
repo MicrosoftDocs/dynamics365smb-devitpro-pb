@@ -1,9 +1,9 @@
 ---
-author: edupont04
+author: solsen
 
 ms.topic: include
 ms.date: 04/01/2021
-ms.author: edupont
+ms.author: solsen
 ---
 Production environments are meant to be precisely that: Environments that a business can run their daily business in [!INCLUDE [prod_short](prod_short.md)] in, deployed on performance tiers in Azure with a guaranteed high level of availability and support.  
 

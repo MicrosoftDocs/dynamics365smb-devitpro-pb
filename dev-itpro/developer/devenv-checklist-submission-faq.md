@@ -3,7 +3,7 @@ title: "Technical Validation FAQ"
 description: Describing the most common questions when submitting your app to AppSource.
 author: qutreson
 ms.custom: na
-ms.date: 12/20/2022
+ms.date: 08/24/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
@@ -92,7 +92,7 @@ You're only required to include the dependencies for your extension as part of y
 
 If you didn't include the dependencies for your app and they aren't available, your submission will fail during the "Automated Application Validation" stage. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
 
-If you receive an error with the diagnostic code `AVS0107` and a message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you've already published another .app file for this extension to [!INCLUDE[prod_short](../includes/prod_short.md)] as part of a previous submission. This can happen if you submit a .app file with different content, or created by a different build (each .app file created has a specific build ID stamped, so building multiple times the same project results in .app files with different build IDs). If this version of the library is already available for all countries targeted by your submission, you can just remove the extension from the submission. If you're making your library available in new countries, you should use the .app file that has already been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] or increase the version number in the manifest of the extension (the app.json file).
+If you receive an error with the diagnostic code `AVS0107` and a message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you've already published another .app file for this extension to [!INCLUDE[prod_short](../includes/prod_short.md)] as part of a previous submission. This can happen if you submit a .app file with different content, or created by a different build (each .app file created has a specific build ID stamped, so building multiple times the same project results in .app files with different build IDs). If this version of the library is already available for all countries/regions targeted by your submission, you can just remove the extension from the submission. If you're making your library available in new countries/regions, you should use the .app file that has already been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] or increase the version number in the manifest of the extension (the app.json file).
 
 ### My app failed at the "Automated application validation" stage, what do I do next?
 
@@ -102,11 +102,15 @@ If this stage failed with an error message similar to `The validation of the sub
 
 If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, you must update the list of extensions submitted. For more information, see "When should I include my library apps as part of my submission?".
 
+If this stage failed with an error message similar to `The manifest property 'X' of the extension 'My App' by 'Publisher Name' (version '1.2.3.4') specifies 'Y' while the offer description specifies 'Z'.`, you should either change your app.json file or the offer description to match each other and submit a new version. Offer description changes in Partner Center can be made in the "Properties" section of your offer for the app version, "Offer listing" section for the app name, and your publisher name can be found in Partner Center under `Account Settings > Organizational Profile > Legal > Developer > Publisher Name`. When changing any of these, remember to consult the section on this page called "Questions about app identity".
+
 If this stage failed with an error message similar to `The submission must target at least one existing country/region of Business Central`, your submission doesn't target any countries/regions currently available in [!INCLUDE[prod_short](../includes/prod_short.md)]. If your submission targets a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), you must wait for the localization to become available in [!INCLUDE[prod_short](../includes/prod_short.md)] and resubmit your offer. Generally, it's possible to upload apps for new localizations, a few weeks before they're made available to customers.
 
 If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') contains inconsistent information about the package id/name/publisher/version`, it means that something went wrong when the package included in your submission was built. In order to mitigate the issue, you must rebuild the package and submit it again.
 
 If this stage failed with an error message similar to `The App ID '<some-Guid>' is already used for Per-Tenant-Extensions in Business Central and cannot be used for the AppSource extension with name 'MyApp' and publisher 'MyPublisher'`, this means that there exists one or many PTEs with the same App ID in the service. Since [!INCLUDE[prod_short](../includes/prod_short.md)] doesn't support having AppSource apps and PTEs with the same App ID, it's then recommended to change the ID of your extension before submitting it in Partner Center. For more information, see [Moving a PTE to AppSource](devenv-extension-moving-scope.md#moving-a-pte-to-appsource). If the PTEs with that App ID aren't used in any customer environments anymore, you can create a support case in Partner Center to request an exception.
+
+If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has not been signed.` or `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has been signed, but the root certificate authority (CA) is not trusted.`, your submission doesn't live up to the code signing requirement of AppSource for [!INCLUDE[prod_short](../includes/prod_short.md)]. In order to correctly sign your app, please check out the section below called "Questions about code-signing validation" as well as [Sign an app package file](devenv-sign-extension.md).
 
 If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again. `, you should create a new submission in Partner Center. If your submission fails again, you should create a support case in Partner Center as documented in this article.
 
@@ -129,10 +133,11 @@ If this stage failed with the following error message `Automated upload to Busin
 
 If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in the dedicated section below.
 
-## Questions about hotfixing an AppSource extension
+## Questions about hotfixing an AppSource app
 
-### What is qualified as a hotfix submission?
+For questions like what is qualified as a hotfix submission or what kind of changes can't be part of a hotfix, see [Hotfixing an AppSource app](devenv-hotfixing-appsource-app.md)
 
+<!--
 We're defining as `hotfix` the submission of a new version of an AppSource extension which will not become the latest version available in AppSource. 
 
 For example, if you have version 2.0.0.0 of your extension available in AppSource, and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered a hotfix because 1.5.0.0 will not become the latest version available.
@@ -141,7 +146,7 @@ For example, if you have version 2.0.0.0 of your extension available in AppSourc
 > When submitting a hotfix, you must not update the version of your offer in Partner Center to match the hotfix version submitted, because the version in Partner Center is shown on the AppSource marketplace listing, which is meant to show the latest version.
 
 > [!Note]  
-> The concept of hotfix is tied to the country/region for which your apps version are available. If you have different versions of your apps on some countries, your submission might be a hotfix for one country, but not for another one. However, we generally do not recommend having different versions per country.
+> The concept of hotfix is tied to the country/region for which your apps version are available. If you have different versions of your apps on some countries/regions, your submission might be a hotfix for one country, but not for another one. However, we generally do not recommend having different versions per country.
 
 ### Against which releases is a hotfix submission validated?
 
@@ -192,7 +197,7 @@ If you submit a new version 1.5.0.0, you're then allowed to add the following pr
 - `[Obsolete] procedure MyNewObsoleteProcedure()` because it's obsolete pending,
 - `MyPublicProcedureFromV2()` because it's already defined in the next version.
 
-However, you're not allowed to define a new procedure `procedure MyNewPublicProcedure()`, because the service will detect that upgrading from version to 1.5.0.0 to version 2.0.0.0 results in the deletion of a public procedure.
+However, you're not allowed to define a new procedure `procedure MyNewPublicProcedure()`, because the service will detect that upgrading from version to 1.5.0.0 to version 2.0.0.0 results in the deletion of a public procedure. -->
 
 ## Questions about Azure Application Insights usage during AppSource submissions
 
@@ -228,6 +233,12 @@ It means that your license doesn't allow you to publish that application. A reco
 ## Questions about code-signing validation
 
 This section contains frequently asked questions related to the code-signing requirement from the [Technical Validation Checklist](devenv-checklist-submission.md). For more information about code-signing, see [Sign an APP Package File](devenv-sign-extension.md).
+
+### Can I use any computer to sign my apps?
+
+No, you need to use a Microsoft Windows computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed.
+
+If [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is not installed, you'll get an error similar to: "This file format cannot be signed because it is not recognized".
 
 ### Can I use a self-signed certificate to sign my apps targeting AppSource?
 
@@ -296,9 +307,9 @@ If you are submitting a new version of your extension with a different App ID fo
 
 Each unique codebase has one unique ID. If you have four apps in AppSource, you need to have four unique IDs for these apps. Otherwise you'll get conflicts. 
 
-### What if we already have an app on AppSource but we need to create the same app for another country; can we then have the same app ID for two different apps targeting two different countries? 
+### What if we already have an app on AppSource but we need to create the same app for another country; can we then have the same app ID for two different apps targeting two different countries/regions? 
 
-If they're different apps (different code), they should have different identity. Identity is used in, for example, app management, dependencies, support cases, and telemetry. If reused across different apps, identity uniqueness is lost. Another approach could be a common shared (internal/library) app across countries (with one app identity) and localized functionality as extensions on top (with their own identity). 
+If they're different apps (different code), they should have different identity. Identity is used in, for example, app management, dependencies, support cases, and telemetry. If reused across different apps, identity uniqueness is lost. Another approach could be a common shared (internal/library) app across countries/regions (with one app identity) and localized functionality as extensions on top (with their own identity). 
 
 ## Questions about Business Central offers
 

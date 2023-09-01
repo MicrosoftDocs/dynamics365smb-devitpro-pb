@@ -291,7 +291,7 @@ And finally, we verify that an error message is displayed because the validation
 This test verifies that the new **Reward Levels** action exists on the Customer List page. 
 
 ### TestCustomerHasBronzeRewardLevelAfterPostedSalesOrders Test 
-This is one of the tests that considers the interaction between Customers, Sales Orders, and Reward Levels. This test verifies that when two sales orders are made for a new customer, that customer accrues two reward points. Consequently, he attains the corresponding reward level for two points, which is the BRONZE reward level. 
+This is one of the tests that considers the interaction between Customers, Sales Orders, and Reward Levels. This test verifies that when two sales orders are made for a new customer, that customer accrues two reward points. Consequently, they attain the corresponding reward level for two points, which is the BRONZE reward level. 
 
 First, the test is initialized by calling Initialize. The extension is activated and then a BRONZE reward level for two points or more is set up in the **Reward Level** table. 
 

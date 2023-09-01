@@ -136,10 +136,10 @@ After you have a table for holding the Cue data, you create a page that you asso
     To initialize the fields, for example, you can add the following AL code to the [OnOpenPage Trigger](triggers-auto/page/devenv-onopenpage-page-trigger.md).     
 
     ```AL
-          RESET;
-        if not get then begin
-            INIT;
-            INSERT;
+        Rec.Reset();
+        if not Rec.Get() then begin
+            Rec.Init();
+            Rec.Insert();
         end;
     ```    
 
@@ -170,10 +170,10 @@ page 50105 SalesInvoiceCuePage
         
     trigger OnOpenPage();
     begin
-        RESET;
-        if not get then begin
-            INIT;
-            INSERT;
+        Rec.Reset();
+        if not Rec.Get() then begin
+            Rec.Init();
+            Rec.Insert();
         end;
     end;
 }

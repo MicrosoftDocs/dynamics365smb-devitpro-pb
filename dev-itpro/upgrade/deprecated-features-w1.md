@@ -1,13 +1,12 @@
 ---
 title: Deprecated Features in the Base App
-description: describes the features that have been moved, removed, or replaced in the W1 version 
-author: bholtorf
-ms.custom: na
-ms.date: 12/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+description: Describes the features that have been moved, removed, or replaced in the W1 version. 
+author: brentholtorf
+ms.author: bholtorf
+ms.date: 08/23/2023
+ms.reviewer: jswymer
 ms.topic: conceptual
+ms.custom: bap-template
 ---
 
 # Deprecated Features in the Base App
@@ -24,13 +23,13 @@ The following features are marked as `obsolete:pending` in 2023 release wave 1.
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| Businesses in all countries can benefit from the ability to review general ledger entries before posting them. In a future release, we'll deprecate the country-specific feature and replace it with one that's available in all country versions. After the feature is deprecated, you can use it to access previous reviews, but not to do new reviews. We'll archive your data according to local requirements. To learn about the replacement feature, go to [Review Amounts in General Ledger Accounts](business-central/finance-review-accounts.md).  |
+|Replaced| Businesses in all countries can benefit from the ability to review general ledger entries before posting them. In a future release, we'll deprecate the country-specific feature and replace it with one that's available in all country versions. After the feature is deprecated, you can use it to access previous reviews, but not to do new reviews. We'll archive your data according to local requirements. To learn about the replacement feature, go to [Review Amounts in General Ledger Accounts](/dynamics365/business-central/finance-review-accounts).  |
 
 ### User groups
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced | User groups let administrators manage permissions for groups of users who have the same or similar roles in the business. For example, you might create a user group for your sales department, and one for your purchasers. To make it a bit easier for administrators to manage permissions, we're replacing user groups with security groups. The security groups in [!INCLUDE [prod_short](../includes/prod_short.md)] link to security groups in Azure Active Directory. The link let's administrators reuse the security group in other Dynamics 365 applications, without having to recreate the memberships in the group. In terms of managing permissions, security groups work in the same way as user groups. To learn more about the new security groups, go to [Control Access Using Security Groups](business-central/ui-security-groups.md).  |
+|Replaced | User groups let administrators manage permissions for groups of users who have the same or similar roles in the business. For example, you might create a user group for your sales department, and one for your purchasers. To make it a bit easier for administrators to manage permissions, we're replacing user groups and adding the ability to group users directly on permission sets. On the **Permission Sets** page, use the **Users** FactBox to assign the set to users.<br><br> To make it easier to reuse sets of users across other Dynamics 365 apps, we've also introduced optional security groups. Administrators can link [!INCLUDE [prod_short](../includes/prod_short.md)] security groups to their counterparts in Microsoft Entra ID or Windows Active Directory. The link let's administrators manage group memberships in Active Directory. In terms of managing permissions, security groups work in the same way as user groups. To learn more about the new security groups, go to [Control Access Using Security Groups](/dynamics365/business-central/ui-security-groups).<br><br>If you have an extension that relies on user groups, and you'd like to explore examples of how to update it to use permission sets or [!INCLUDE [prod_short](../developer/includes/prod_short.md)] security groups, go to [Migrate from User Groups to Composable Permission Sets](/dynamics365/business-central/deprecated-features-user-groups.md). |
 
 ## Changes in 2022 release wave 2
 
