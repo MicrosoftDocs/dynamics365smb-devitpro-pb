@@ -55,9 +55,10 @@ To manage Dynamics 365 Business Central customers via GDAP we recommend requesti
 
 ### Upcoming Business Central Office Hours Calls
 
-In September, we will host the following call, which you can already register for today:
+During September and October, we will host the following calls, which you can already register for today:
 
-**September 5:** Performance Troubleshooting Tools
+**September 5:** Performance troubleshooting tools
+**October 17:** Power Platform integrations
 
 - Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
 
