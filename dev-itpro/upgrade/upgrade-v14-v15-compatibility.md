@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 07/23/2023
+ms.date: 08/28/2023
 ms.custom: bap-template
 ---
 
@@ -34,7 +34,8 @@ The following table lists the Business Central 21 versions and the minimum versi
 |[21.7](https://support.microsoft.com/help/5026931)|[22.2](https://support.microsoft.com/help/5027892)|
 |[21.8](https://support.microsoft.com/help/5027891)|[22.3](https://support.microsoft.com/help/5029057)|
 |[21.9](https://support.microsoft.com/help/5029056)|[22.4](https://support.microsoft.com/help/5029765)|
-|[21.10](https://support.microsoft.com/help/5029764)<sup>[\[1\]](#1)</sup>|22.5|
+|[21.10](https://support.microsoft.com/help/5029764)|[22.5](https://support.microsoft.com/help/5031031)|
+|[21.11](https://support.microsoft.com/help/5031030)<sup>[\[1\]](#1)</sup>|22.6|
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
@@ -55,7 +56,8 @@ The following table lists the Business Central 20 versions and the minimum versi
 |[20.13](https://support.microsoft.com/help/5026930)|[21.8](https://support.microsoft.com/help/5027891)|[22.2](https://support.microsoft.com/help/5027892)|
 |[20.14](https://support.microsoft.com/help/5027890)|[21.9](https://support.microsoft.com/help/5029056) |[22.3](https://support.microsoft.com/help/5029057) |
 |[20.15](https://support.microsoft.com/help/5029055)|[21.10](https://support.microsoft.com/help/5029764) |[22.4](https://support.microsoft.com/help/5029765) |
-|[20.16](https://support.microsoft.com/help/5029763)<sup>[\[1\]](#1)</sup>|21.11 |22.5 |
+|[20.16](https://support.microsoft.com/help/5029763)|[21.11](https://support.microsoft.com/help/5031030) |[22.5](https://support.microsoft.com/help/5031031)|
+|[20.17](https://support.microsoft.com/help/5031029)<sup>[\[1\]](#1)</sup>|21.12 |22.6|
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
@@ -241,7 +243,8 @@ The following table lists the Business Central 14 versions and the minimum versi
 |[14.48 (cumulative update 47)](https://support.microsoft.com/help/5026929)|None|None|None|None|None|[20.14](https://support.microsoft.com/help/5027890)|[21.8](https://support.microsoft.com/help/5027891)|[22.2](https://support.microsoft.com/help/5027892) |
 |[14.49 (cumulative update 48)](https://support.microsoft.com/help/5027889)|None|None|None|None|None|[20.15](https://support.microsoft.com/help/5029055)|[21.9](https://support.microsoft.com/help/5029056) |[22.3](https://support.microsoft.com/help/5029057)|
 |[14.50 (cumulative update 49)](https://support.microsoft.com/help/5029054)|None|None|None|None|None|[20.16](https://support.microsoft.com/help/5029763)|[21.10](https://support.microsoft.com/help/5029764) |[22.4](https://support.microsoft.com/help/5029765)|
-|[14.51 (cumulative update 50)](https://support.microsoft.com/help/5029762)<sup>[\[1\]](#1)</sup>|None|None|None|None|None|20.17|21.11 |22.5|
+|[14.51 (cumulative update 50)](https://support.microsoft.com/help/5029762)|None|None|None|None|None|[20.17](https://support.microsoft.com/help/5031029) |[21.11](https://support.microsoft.com/help/5031030) |[22.5](https://support.microsoft.com/help/5031031)|
+|[14.52 (cumulative update 51)](https://support.microsoft.com/help/5029762)<sup>[\[1\]](#1)</sup>|None|None|None|None|None|20.18|21.12 |22.6|
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)] 
 
