@@ -46,7 +46,7 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-### Important: Take action before October 31st to retain your delegated admin access to your customers  
+### Important: Take action before October 31 2023 to retain your delegated admin access to your customers  
 Last year Microsoft introduced [Granular Delegated Admin Privileges (GDAP)](/partner-center/gdap-introduction) to improve upon and replace Delegated Admin Privileges (DAP). GDAP addresses various security concerns by allowing customer administrators to provide partners a proper level of time-bound access to their tenants.
 
 The Partner Center team has now [announced](/partner-center/announcements/2023-may#new-timelines-important-actions-to-secure-the-partner-ecosystem) the timeline by which you need to migrate your customer relationships to GDAP. Please make sure to read this new Partner Center announcement for more details about milestone dates and the transition plan and about the tools Microsoft provides to facilitate this process. 
