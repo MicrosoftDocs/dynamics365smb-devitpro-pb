@@ -163,7 +163,7 @@ With teaching tips, you can help explain logic that is relevant to the report th
 
 A key pillar of helping users help themselves is to give them access to help for the particular part of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that they're working in. This also applies for reports. 
 
-Starting with Business Central 2023 release wave 2 (version 23), you can set the *ContextSensitiveHelpPage* property on report request pages, which will in turn show the report help link in the Help pane.
+Starting with Business Central 2023 release wave 1 (version 22), you can set the *ContextSensitiveHelpPage* property on report request pages, which will in turn show the report help link in the Help pane.
 
 *Learn more* links are generated based on two configuration settings:
 
