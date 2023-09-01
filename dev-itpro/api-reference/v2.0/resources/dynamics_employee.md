@@ -35,7 +35,6 @@ Represents an employee in [!INCLUDE[prod_short](../../../includes/prod_short.md)
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the employee.|
 |[picture](dynamics_picture.md)|picture |Gets the picture of the employee.|
 |[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the employee.|
 |[timeRegistrationEntries](dynamics_timeregistrationentry.md)|timeRegistrationEntries |Gets the timeregistrationentries of the employee.|
