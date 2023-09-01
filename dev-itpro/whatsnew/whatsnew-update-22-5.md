@@ -24,7 +24,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Extend general ledger posting aggregations](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)
 - [Users with the device license can now set up jobs to run as scheduled tasks in the job queue of Business Central](/dynamics365/business-central/dev-itpro/deployment/licensing#device-user-features-and-limitations) 
 - Get reference information for a customer ledger entry through posting (link is coming)
-- Copy Links when posting general journals (link is coming)
+- [Copy Links when posting general journals](/dynamics365/business-central/ui-work-general-journals)
 
 ## Localization updates
 
