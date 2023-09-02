@@ -23,7 +23,7 @@ GET businesscentralPrefix/companies({companyId})/items({itemId})/picture
 GET businesscentralPrefix/companies({companyId})/employees({employeeId})/picture
 GET businesscentralPrefix/companies({companyId})/vendors({vendorId})/picture
 GET businesscentralPrefix/companies({companyId})/customers({customerId})/picture
-
+GET businesscentralPrefix/companies({companyId})/contacts({contactId})/picture
 ```
 
 ## Request headers
@@ -81,7 +81,7 @@ Body is the raw image data.
 
 
 ## See also
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)
-[picture](../resources/dynamics_picture.md)
-[Delete picture](dynamics_picture_Delete.md)
-[Update picture](dynamics_picture_Update.md)
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
+[picture](../resources/dynamics_picture.md)  
+[Delete picture](dynamics_picture_Delete.md)  
+[Update picture](dynamics_picture_Update.md)  
