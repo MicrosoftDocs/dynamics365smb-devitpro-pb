@@ -22,6 +22,10 @@ Creates a customer return reason in [!INCLUDE[prod_short](../../../includes/prod
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
+```
+POST businesscentralPrefix/companies({id})/customerReturnReasons
+```
+
 ## Request headers
 
 |Header|Value|
@@ -37,7 +41,6 @@ In the request body, supply a JSON representation of a **customerReturnReason** 
 ## Response
 
 If successful, this method returns ```201 Created``` response code and a **customerReturnReason** object in the response body.
-
 
 ## Example
 
