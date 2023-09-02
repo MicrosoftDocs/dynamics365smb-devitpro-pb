@@ -43,7 +43,6 @@ The response has no content; the response code is 204.
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[customer](dynamics_customer.md)|customer |Gets the customer of the salesOrder.|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the salesOrder.|
 |[dimensionValue](dynamics_dimensionvalue.md)|dimensionValue |Gets the dimensionvalue of the salesOrder.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the salesOrder.|
 |[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the paymentterm of the salesOrder.|
