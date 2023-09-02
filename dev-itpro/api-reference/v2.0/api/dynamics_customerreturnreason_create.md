@@ -49,7 +49,7 @@ If successful, this method returns ```201 Created``` response code and a **custo
 Here is an example of the request.
 
 ```json
-POST businesscentralPrefix/api/v2.0/companies({id})/customerReturnReasons
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/customerReturnReasons
 Content-type: application/json
 {
   "code": "VARIANT",
