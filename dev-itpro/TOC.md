@@ -690,7 +690,7 @@
 ##### [XMLport object](developer/devenv-xmlport-object.md)
 ##### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)  
 ##### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
-##### [Request pages](developer/devenv-request-pages.md)
+##### [Using request pages with XMLports](developer/devenv-request-pages.md)
 ### Pages and user interfaces
 #### [Customizing for user roles](developer/devenv-role-customization.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
@@ -801,7 +801,7 @@
 #### [Report extension object](developer/devenv-report-ext-object.md)
 #### [Report extension example](developer/devenv-report-ext-example.md)
 #### [Defining a report dataset](developer/devenv-report-dataset.md)
-#### [Request pages](developer/devenv-request-pages.md)
+#### [Using request pages with reports](developer/devenv-request-pages-for-reports.md)
 #### [Report triggers and operations](developer/devenv-report-triggers.md)
 #### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### [Substituting a report](developer/devenv-substituting-reports.md)

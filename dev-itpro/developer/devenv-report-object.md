@@ -232,8 +232,9 @@ It's possible to schedule a report to run at your desired date and time by using
 ## See also
 
 [Report Extension Object](devenv-report-ext-object.md)  
-[Request Pages](devenv-request-pages.md)  
+[Using request pages with reports](devenv-request-pages-for-reports.md)   
 [Report Properties](../developer/properties/devenv-report-properties.md)  
+[Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
