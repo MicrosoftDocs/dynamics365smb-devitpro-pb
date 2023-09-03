@@ -55,6 +55,13 @@ Install the DocFx tool when you have installed .NET 6.0 or higher. DocFx is an o
 1. Start a command line tool as administrator, and run the following command to install the .NET DocFx tool, version 2.70.0, which is currently the newest recommended version for ALDoc.
 
     ```bash
+    # check nuget source is correct
+    dotnet nuget list source
+
+    # if list is empty, add nuget source
+    dotnet nuget add source --name nuget.org https://api.nuget.org/v3/index.json
+    
+    # download and install docfx
     dotnet tool install docfx --version 2.70 -g
     ```
 
