@@ -62,7 +62,7 @@ Excel report layouts are based on an Excel (.xlsx) document and can take advanta
 [Report Object](devenv-report-object.md)  
 [Report Extension Object](devenv-report-ext-object.md)  
 [Report Data Type](/dynamics365/business-central/dev-itpro/developer/methods-auto/library)  
-[Using request pages with reports](developer/devenv-request-pages-for-reports.md)  
+[Using request pages with reports](devenv-request-pages-for-reports.md)  
 [Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
