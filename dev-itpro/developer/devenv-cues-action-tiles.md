@@ -75,7 +75,7 @@ The first thing that you must do is to create a table that contains fields that 
 
     - Set the [FieldClass property](properties/devenv-fieldclass-property.md) to **FlowField** or **Normal**.  
   
-      If field is a FlowField, then set the `CalcFormula` property to calculate the Cue data. For more information, see [Calculation Formulas and the CalcFormula Property](devenv-calculation-formulas-and-the-calcformula-property.md).  
+      If field is a FlowField, then set the `CalcFormula` property to calculate the Cue data. For more information, see [CalcFormula property](properties\devenv-calcformula-property.md).  
   
 3. Add a primary key field for FlowFields.  
 
