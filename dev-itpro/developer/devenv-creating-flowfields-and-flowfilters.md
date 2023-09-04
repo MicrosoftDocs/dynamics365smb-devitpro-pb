@@ -1,8 +1,8 @@
 ---
-title: Create FlowFields and FlowFilters
+title: Creating FlowFields and FlowFilters
 description: Examples of FlowFields and FlowFilters that are used to display the result of the calculation described in the CalcFormula property. 
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+ms.date: 09/04/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Create FlowFields and FlowFilters
+# Creating FlowFields and FlowFilters
 
-This topic describes the procedure and the properties used to create FlowFields and FlowFilters. 
+This article describes the procedure and the properties used to create FlowFields and FlowFilters. 
 
 A FlowField performs a set of calculations and displays the results immediately. A FlowFilter displays the results based on the user input to calculate the filtered values that will affect the calculation of a FlowField. The FlowFields and FlowFilters are not physical fields; these fields act as a virtual field which does not actually exist in the database. They are a description of a calculation and a location for the result to be displayed which is typically derived in the [CalcFormula Property](properties/devenv-calcformula-property.md). 
 
-For more information about the FlowField type, see [FlowFields](devenv-flowfields.md), and for more information about the FlowFilter type, see [FlowFilter Overview](devenv-flowfilter-overview.md).
+For more information about the FlowField type, see [FlowFields overview](devenv-flowfields.md), and for more information about the FlowFilter type, see [FlowFilter Overview](devenv-flowfilter-overview.md).
 
 <!--
 ### Example scenarios
@@ -120,6 +120,6 @@ table 50123 MyTable
 
 ## See Also
 
-[FlowFields](devenv-flowfields.md)  
+[FlowFields overview](devenv-flowfields.md)  
 [FlowFilter Overview](devenv-flowfilter-overview.md)  
 [CalcFormula property](properties\devenv-calcformula-property.md)
