@@ -24,7 +24,7 @@ A request page is a page that is run before the report starts to execute. Reques
 |[AboutTextML Property](properties/devenv-abouttextml-property.md)|Specifies the multi-language version of the text for a teaching tip on the report. |
 |[ContextSensitiveHelpPage Property](properties/devenv-contextsensitivehelppage-property.md)| Specifies the help topic to show when the user presses Help in the UI. Note that the help server on which this help topic is located, must be defined in the app.json file. |
 
-By default, a request page is displayed, unless the [UseRequestPage](properties/devenv-userequestpage-property.md) is set to `false`; then the report will immediately. In this case, end users can't cancel the report. It's still possible to cancel the report, but some pages may print.
+By default, a request page is displayed, unless the [UseRequestPage](properties/devenv-userequestpage-property.md) is set to `false`; then the report will immediately run. In this case, end users can't cancel the report. It's still possible to cancel the report, but some pages may print.
 
 By default, without having set anything else, a request page will always display the following buttons:
 
@@ -58,7 +58,6 @@ report 50103 "Customer List"
 > It's recommended to add columns that the end users of the report will frequently set filters on.
 
 For more information about the report object, see [Report Object](devenv-report-object.md).
-
 
 By default, for every data item in the report, a FastTab for defining filters and sorting is created on the request page. To remove a FastTab from a request page, don't define any `RequestFilterFields` for the data item and set the [DataItemTableView](properties/devenv-dataitemtableview-property.md) property to define sorting. The request page is displayed, but there's no tab for this data item or table element.
 
