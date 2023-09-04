@@ -10,17 +10,17 @@ ms.author: kepontop
 ---
 
 
-## Report performance
+# Report performance
 
 [!INCLUDE[report_performance](../includes/include-report-performance.md)]
 
 
 ## See Also
 
-[Performance Overview](performance-overview.md)  
-[Performance Topics For Developers](performance-developer.md)  
-[How Application Configurations Affect Performance](performance-application.md)  
-[Performance Online](performance-online.md)  
-[Performance of On-Premises Installations](performance-onprem.md)  
-[How to Work with a Performance Problem](performance-work-perf-problem.md)  
-[Performance tips for business users](performance-users.md)  
+[Performance Overview](../performance/performance-overview.md)  
+[Performance Topics For Developers](../performance/performance-developer.md)  
+[How Application Configurations Affect Performance](../performance/performance-application.md)  
+[Performance Online](../performance/performance-online.md)  
+[Performance of On-Premises Installations](../performance/performance-onprem.md)  
+[How to Work with a Performance Problem](../performance/performance-work-perf-problem.md)  
+[Performance tips for business users](../performance/performance-users.md)  
