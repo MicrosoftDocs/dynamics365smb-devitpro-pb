@@ -806,6 +806,7 @@
 #### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### [Substituting a report](developer/devenv-substituting-reports.md)
 #### [Testing a report](developer/devenv-testing-reports.md)
+#### [Report performance](developer/devenv-report-performance.md)
 #### Report layouts
 ##### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
 ##### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
