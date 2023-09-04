@@ -4,7 +4,7 @@ description: Structuring your namespaces in AL for Business Central with script 
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: bap-template
-ms.date: 25/08/2023
+ms.date: 09/04/2023
 ms.reviewer: na
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -12,9 +12,11 @@ ms.topic: conceptual
 
 # Structuring namespaces in AL
 
-Namespaces provide structure to the source code... For more information, see [Namespaces in AL](devenv-namespaces.md).
+Namespaces are used to organize code into logical groups and hierarchies and they ensure uniqueness in code names and allow reuse of names in different contexts. Namespaces also provide structure for the code base, making it easier to navigate and understand. For more information, see [Namespaces in AL](devenv-namespaces.md).
 
-To get started introducing namespaces in your application, we're sharing a script that we have been using ourselves. This script allows you to specify namespaces for multiple objects at a time, using your folder structure. Usually code is structured into folders according to some kind of structure, which is often what you would like to replicate to some degree in your namespaces. The tool allows you to specify what namespace to assign all your AL objects within a folder. After you have run the tool, you can then customize these a bit further. We recommend doing a commit once you have found the proper namespaces. You can then use the code action to apply `using` statements to your application.
+To get started introducing namespaces in your application, we're sharing a script that we have been using ourselves. This script allows you to specify namespaces for multiple objects at a time, using your folder structure. Usually code is divided into folders according to some kind of structure, which is often what you would like to replicate to some degree in your namespaces. 
+
+The script shown in this article, allows you to specify what namespace to assign all your AL objects within a folder. After you have run the script, you can then customize these a bit further. We recommend doing a commit once you have found the proper namespaces. You can then use the code action to apply `using` statements to your application.
 
 The script takes a .csv file as input, which specifies what namespace to give to each file within a folder. The .csv file looks like below:
 
@@ -28,8 +30,10 @@ The script takes a .csv file as input, which specifies what namespace to give to
 
 Open PowerShell and go to your source folder and run the following script:
 
+```powershell
+```
 
-You are now ready to open VS Code and use the AL Code actions to apply all the missing using statements.
+You're now ready to open Visual Studio Code and use the AL code actions to apply all the missing `using` statements.
 
 ## See also
 
