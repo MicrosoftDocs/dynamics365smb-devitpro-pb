@@ -812,10 +812,10 @@
 ##### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)  
 ##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
 ##### [Defining a custom report render](developer/devenv-report-custom-render.md)
+##### [Adding barcodes to report layouts](developer/devenv-report-add-barcodes.md)
 #### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
-#### [Adding barcodes](developer/devenv-report-add-barcodes.md)
 #### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
-
+#### [Report telemetry](administration/telemetry-reports-trace.md)
 ### Handling security
 #### [Permission sets and entitlements overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 #### [Permissionset object](developer/devenv-permissionset-object.md)

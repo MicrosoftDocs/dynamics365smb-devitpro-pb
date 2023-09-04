@@ -9,7 +9,7 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# Walkthrough: Designing a Report from Multiple Tables
+# Walkthrough: Designing an RDL Report from Multiple Tables
 
 A report object is composed of a report dataset and a visual layout. You design a report by first defining the dataset and then designing the visual layout. You define the dataset for reports directly in AL code. You can design the layout in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder for an RDL layout, in Microsoft Word for a Word layout, and in Microsoft Excel for an Excel layout. After you design a report, you can make it available to applications that are running on the [!INCLUDE[webclient](includes/webclient.md)]. A report can be designed from one table or multiple tables. This walkthrough demonstrates how to design a report from multiple tables.  
 
