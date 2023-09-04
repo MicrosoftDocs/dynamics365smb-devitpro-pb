@@ -17,7 +17,9 @@ FlowFields display the result of the calculation described in the [CalcFormula P
 FlowFields increase performance in activities such as calculating the balance of your customers. In traditional database systems, this involves a series of accesses and calculations before a result is available. By using FlowFields, the result is immediately available. You can further optimize the performance of Flowfields by enabling or disabling SIFT. For more information, see [SumIndexField Technology (SIFT)](devenv-sift-technology.md).
   
 FlowFields aren't physical fields that are stored in the database. They're a description of a calculation and a location for the result to be displayed. Because the information in FlowFields exists only at run time, values in FlowFields are automatically initialized to 0 (zero). To update a FlowField, use the [CalcFields Method (Record)](methods-auto/record/record-calcfields-method.md). If a FlowField is the direct source expression of a control on a page, then the FlowField is automatically calculated when the page is displayed.  
-  
+
+For more information and examples, see [Creating FlowFields and FlowFilters](devenv-creating-flowfields-and-flowfilters.md).
+
 ## FlowField types
 
 There are seven types of FlowFields. Each is described in the following table.  
@@ -61,4 +63,4 @@ Exist("Customer Entries" where(CustNo=field(CustNo)))
 ## See also
 
 [CalcFields Method (Record)](methods-auto/record/record-calcfields-method.md)  
-[Create FlowFields and FlowFilters](devenv-creating-flowfields-and-flowfilters.md)  
+[Creating FlowFields and FlowFilters](devenv-creating-flowfields-and-flowfilters.md)  

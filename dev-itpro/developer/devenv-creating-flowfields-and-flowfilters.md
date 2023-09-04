@@ -36,7 +36,6 @@ A FlowField type is always associated with a calculation formula that determines
 In the following example, `MyTable` sets the `Global Dimension 1 Filter` and `Global Dimension 2 Filter` fields whose values are based only on the dimension values included in the filter. Also, some of the following fields formulate the currency filter to one single currency because you do not store the filter value on the entries, hence you define the `Currency Filter` as a FlowFilter type.
 `Total Amount`, `Amount upper bound`, `Amount lower bound`, `First Entry`, and `Customer Balance` are classified as a FlowField type and here you specify the calculations. These fields display the results immediately based on the filters that you apply in the user interface. 
 
-
 ```AL
 table 50123 MyTable
 {
@@ -44,12 +43,12 @@ table 50123 MyTable
     {
         field(1;MyField; Decimal)
         {
-            Description='New field';
+            Description = 'New field';
         }
 
         field(2;"No."; Code[20])
         {
-            Description='Serial number of the service';
+            Description = 'Serial number of the service';
         }
 
         field(3;"Global Dimension 1 Filter"; Code[20])
@@ -71,7 +70,7 @@ table 50123 MyTable
         {
             FieldClass = FlowField;
             CalcFormula = Sum("Detailed Cust. Ledg. Entry"."Amount (LCY)"
-            WHERE ("Customer No."=Field("No."),
+            where ("Customer No."=Field("No."),
             "Initial Entry Global Dim. 1"=Field("Global Dimension 1 Filter"),
             "Initial Entry Global Dim. 2"=Field("Global Dimension 2 Filter"),
             "Currency Code"=Field("Currency Filter")
@@ -82,7 +81,7 @@ table 50123 MyTable
         {
             FieldClass = FlowField;
             CalcFormula = max ("Detailed Cust. Ledg. Entry"."Amount (LCY)"
-            WHERE ("Customer No." = Field ("No."),
+            where ("Customer No." = Field ("No."),
             "Initial Entry Global Dim. 1" = Field ("Global Dimension 1 Filter"),
             "Initial Entry Global Dim. 2" = Field ("Global Dimension 2 Filter"),
             "Currency Code" = Field ("Currency Filter")
@@ -93,7 +92,7 @@ table 50123 MyTable
         {
             FieldClass = FlowField;
             CalcFormula = min ("Detailed Cust. Ledg. Entry"."Amount (LCY)"
-            WHERE ("Customer No." = Field ("No."),
+            where ("Customer No." = Field ("No."),
             "Initial Entry Global Dim. 1" = Field ("Global Dimension 1 Filter"),
             "Initial Entry Global Dim. 2" = Field ("Global Dimension 2 Filter"),
             "Currency Code" = Field ("Currency Filter")
