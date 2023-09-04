@@ -197,7 +197,7 @@ report 50103 "Customer List"
 
   requestpage
   {
-    SaveValues=true;
+    SaveValues = true;
 
     // These properties control the title and content of the teaching tip.
     AboutTitle = 'Awesome report';
@@ -243,7 +243,6 @@ report 50103 "Customer List"
     Customer_Currency_CodeCaptionLbl : Label 'Currency Code';
     Total_LCY_CaptionLbl : Label 'Total (LCY)';
 }
-
 ```
 
 [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
