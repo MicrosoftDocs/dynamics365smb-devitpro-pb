@@ -9,7 +9,6 @@ ms.topic: conceptual
 ms.author: kepontop
 ---
 
-
 # Report performance
 
 [!INCLUDE[report_performance](../includes/include-report-performance.md)]
