@@ -808,6 +808,30 @@
 #### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
 #### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
 -->
+
+### Developing reports
+#### [Overview](developer/devenv-reports.md)
+#### [Report design overview](developer/devenv-report-design-overview.md)
+#### [Report object](developer/devenv-report-object.md)
+#### [Report extension object](developer/devenv-report-ext-object.md)
+#### [Report extension example](developer/devenv-report-ext-example.md)
+#### [Defining a report dataset](developer/devenv-report-dataset.md)
+#### [Request pages](developer/devenv-request-pages.md)
+#### [Report triggers and operations](developer/devenv-report-triggers.md)
+#### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
+#### [Substituting a report](developer/devenv-substituting-reports.md)
+#### [Testing a report](developer/devenv-testing-reports.md)
+#### [Report performance](developer/devenv-report-performance.md)
+#### Report layouts
+##### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
+##### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
+##### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)  
+##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
+##### [Defining a custom report render](developer/devenv-report-custom-render.md)
+#### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
+#### [Adding barcodes](developer/devenv-report-add-barcodes.md)
+#### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
+
 ### [Handling security (permissions and entitlements)](security/security-application.md)
 #### [Permission sets and entitlements overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 #### [Permissionset object](developer/devenv-permissionset-object.md)
