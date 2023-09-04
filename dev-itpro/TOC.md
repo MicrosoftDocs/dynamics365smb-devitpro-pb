@@ -793,7 +793,6 @@
 #### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 #### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
 #### [Report telemetry](administration/telemetry-reports-trace.md)
-### Handling security
 ### [Events](developer/devenv-events-in-al.md)
 #### [Event types](developer/devenv-event-types.md)
 #### [Publishing events](developer/devenv-publishing-events.md)
@@ -808,7 +807,7 @@
 #### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
 #### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
 -->
-### [Handling security (permissions and entitlements)](security/security-application.md)
+### [Handling security overview)](security/security-application.md)
 #### [Permission sets and entitlements overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 #### [Permissionset object](developer/devenv-permissionset-object.md)
 #### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
