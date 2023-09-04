@@ -3,7 +3,7 @@ title: "Report Object"
 description: "The report object in AL for Business Central allows to create a new report."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/31/2022
+ms.date: 09/04/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,9 +18,9 @@ Reports are used to print or display information from a database. You can use a 
 The report object is typically used for one of the following three different scenarios: 
 - analytical reports, where the output is meant for online consumption of data. 
 - document reports, where the output is meant for print. 
-- processing-only reports, where there is no output. In this case, the report object is typically used with a request page to let the user set filters/options for the operation.
+- processing-only reports, where there's no output. In this case, the report object is typically used with a request page to let the user set filters/options for the operation.
 
-Creating a report consists of two primary tasks; the first task is to create the underlying data model and for analytical and document reports the second task is to define the visual layout that displays the data. The report object defines the underlying data model and specifies which database tables and fields to pull data from. When the report is run, that data is displayed in a specified layout; the visual layout, which determines the content and format of a report when it's viewed and printed. 
+Creating a report consists of two primary tasks; the first task is to create the underlying data model, and for analytical and document reports, the second task is to define the visual layout that displays the data. The report object defines the underlying data model and specifies, which database tables and fields to pull data from. When the report is run, that data is displayed in a specified layout; the visual layout, which determines the content and format of a report when it's viewed and printed. 
 
 For more information about defining database tables and fields, see [Defining a Report Dataset](devenv-report-dataset.md). For more information about the Report data type, see [Report Data Type](methods-auto/report/report-data-type.md).
 
