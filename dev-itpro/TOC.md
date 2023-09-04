@@ -789,11 +789,11 @@
 ##### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)  
 ##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
 ##### [Defining a custom report render](developer/devenv-report-custom-render.md)
+##### [Adding barcodes to report layouts](developer/devenv-report-add-barcodes.md)
 #### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
-#### [Adding barcodes](developer/devenv-report-add-barcodes.md)
 #### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
-
-
+#### [Report telemetry](administration/telemetry-reports-trace.md)
+### Handling security
 ### [Events](developer/devenv-events-in-al.md)
 #### [Event types](developer/devenv-event-types.md)
 #### [Publishing events](developer/devenv-publishing-events.md)
@@ -849,7 +849,6 @@
 #### Permissions APIs
 ##### [Permission set](administration/resources/dynamics_permissionset.md)
 ##### [Get permission set](administration/api/dynamics_permissionset_get.md)
-
 
 ### Running things in the background
 #### [Page background tasks](developer/devenv-page-background-tasks.md)
