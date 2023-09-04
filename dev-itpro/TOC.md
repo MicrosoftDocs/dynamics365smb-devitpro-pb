@@ -770,29 +770,6 @@
 ##### [Opening the Business Central tablet or phone client from a browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ##### [Example: Developing a sales rep role center for the tablet client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
 
-### Permissions and permission sets
-#### [Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
-#### [Composing permission sets](developer/devenv-permissionset-composing.md)
-#### [Permissionset object](developer/devenv-permissionset-object.md)
-#### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
-#### [Permissions on database objects](developer/devenv-permissions-on-database-objects.md)
-#### [Inherent permissions](developer/devenv-inherent-permissions.md)
-#### [Exporting permission sets to XML](developer/devenv-export-permission-sets.md)
-
-### [Events](developer/devenv-events-in-al.md)
-#### [Event types](developer/devenv-event-types.md)
-#### [Publishing events](developer/devenv-publishing-events.md)
-#### [Raising events](developer/devenv-raising-events.md)
-#### [Subscribing to events](developer/devenv-subscribing-to-events.md)
-#### [Isolated events](developer/devenv-events-isolated.md)
-#### [Discover events using the event recorder](developer/devenv-events-discoverability.md)
-#### [Event example](developer/devenv-events-example.md)
-#### [Walkthrough: Implementing new workflow events and responses](developer/devenv-walkthrough-workflow-events-responses.md)  
-#### [Notifications](developer/devenv-notifications-developing.md)
-<!--Events
-#### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
-#### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
--->
 
 ### Developing reports
 #### [Overview](developer/devenv-reports.md)
@@ -816,17 +793,45 @@
 #### [Adding barcodes](developer/devenv-report-add-barcodes.md)
 #### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
 
-### Handling security
+
+### [Events](developer/devenv-events-in-al.md)
+#### [Event types](developer/devenv-event-types.md)
+#### [Publishing events](developer/devenv-publishing-events.md)
+#### [Raising events](developer/devenv-raising-events.md)
+#### [Subscribing to events](developer/devenv-subscribing-to-events.md)
+#### [Isolated events](developer/devenv-events-isolated.md)
+#### [Discover events using the event recorder](developer/devenv-events-discoverability.md)
+#### [Event example](developer/devenv-events-example.md)
+#### [Walkthrough: Implementing new workflow events and responses](developer/devenv-walkthrough-workflow-events-responses.md)  
+#### [Notifications](developer/devenv-notifications-developing.md)
+<!--Events
+#### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
+#### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
+-->
+
+
+### [Handling security (permissions and entitlements)](security/security-application.md)
 #### [Permission sets and entitlements overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 #### [Permissionset object](developer/devenv-permissionset-object.md)
 #### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
+#### [Composing permission sets](developer/devenv-permissionset-composing.md)
 #### [Permissions on database objects](developer/devenv-permissions-on-database-objects.md)
 #### [Inherent permissions](developer/devenv-inherent-permissions.md)
 #### [Exporting permission sets to XML](developer/devenv-export-permission-sets.md)
+#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
 #### [Entitlement object](developer/devenv-entitlement-object.md)
+#### Permissions telemetry
+##### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
+##### [Permission dependency cycle telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
+##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
+#### Permissions APIs
+##### [Permission set](administration/resources/dynamics_permissionset.md)
+##### [Get permission set](administration/api/dynamics_permissionset_get.md)
+
 
 ### Running things in the background
 #### [Page background tasks](developer/devenv-page-background-tasks.md)
+
 
 ### Developing APIs
 #### [Overview](developer/devenv-api.md)
@@ -1041,7 +1046,7 @@
 ##### [Performance developer guide](performance/performance-developer.md)
 ##### [Analyzing performance](performance/performance-work-perf-problem.md)
 #### Security
-##### [Application security](security/security-application.md)
+##### [Layered security model](security/security-application.md)
 ##### [Data security](security/data-security.md)
 ##### [Using key vaults for secrets](developer/devenv-app-key-vault-overview.md)
 <!-- end Rules and Guidelines -->
