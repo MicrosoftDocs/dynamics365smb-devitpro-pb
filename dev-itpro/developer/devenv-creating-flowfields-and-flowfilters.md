@@ -29,7 +29,7 @@ In order to create FlowFields and FlowFilters, you must first classify the field
 
 ## Calculation formula
 
-A FlowField type is always associated with a calculation formula that determines how the FlowField is calculated. Likewise, the FlowFilter type is associated with the calculation formula. To perform the calculations by using the FlowField and FlowFilter type, you must derive those fields in the calculation formula which you classify in the table. You can choose from several methods of calculations including sum (total), average, maximum value, minimum value, record count, lookup, and more, by using the CalcFormula Property. For more information about the syntax and formulas, see [Calculation Formulas and the CalcFormula Property](devenv-calculation-formulas-and-the-calcformula-property.md). 
+A FlowField type is always associated with a calculation formula that determines how the FlowField is calculated. Likewise, the FlowFilter type is associated with the calculation formula. To perform the calculations by using the FlowField and FlowFilter type, you must derive those fields in the calculation formula which you classify in the table. You can choose from several methods of calculations including sum (total), average, maximum value, minimum value, record count, lookup, and more, by using the CalcFormula Property. For more information about the syntax and formulas, see [CalcFormula property](properties\devenv-calcformula-property.md). 
  
 ### Example
 
@@ -122,4 +122,4 @@ table 50123 MyTable
 
 [FlowFields](devenv-flowfields.md)  
 [FlowFilter Overview](devenv-flowfilter-overview.md)  
-[Calculation Formulas and the CalcFormula Property](devenv-calculation-formulas-and-the-calcformula-property.md)
+[CalcFormula property](properties\devenv-calcformula-property.md)

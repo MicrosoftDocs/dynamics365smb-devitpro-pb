@@ -11,8 +11,6 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # CalcFormula Property
 Sets the calculation for FlowFields.  
   
@@ -29,5 +27,6 @@ CalcFormula = Count(RecordCalcFields);
  You can choose from several methods of calculations including sum (total), average, maximum value, minimum value, record count, lookup, and whether a record exists.  
   
 ## See Also  
+
 [FlowFields](../devenv-flowfields.md)  
-[Calculation Formulas and the CalcFormula Property](devenv-calculation-formulas-and-the-calcformula-property.md)
+[CalcFormula property](properties\devenv-calcformula-property.md)
