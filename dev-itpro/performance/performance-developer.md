@@ -335,6 +335,8 @@ Some tips for avoiding locking:
 -	Make sure you have indexes on ranges you update
 -	Locking is much less of an issue if you have a logical separation across companies
 
+  [TBD] Should we mention this option? https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-read-isolation 
+
 #### Database locking caused by web service calls
 
 Don't insert child records belonging to the same parent record in parallel. This condition causes locks on both the parent table and the integration record table because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use OData `$batch`, which will make sure calls get run one after another.
