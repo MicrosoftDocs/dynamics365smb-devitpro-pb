@@ -132,6 +132,7 @@ traces
 , clientType = customDimensions.clientType
 ```
 
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
 
 ## <a name="smtp_connection"></a>SMTP server connections
 
@@ -175,6 +176,8 @@ traces
 , clientType = customDimensions.clientType
 ```
 
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
+
 ## <a name="smtp_sent"></a>Email sent (using SMTP)
 
 Occurs when the SMTP module is sending an email.
@@ -217,6 +220,8 @@ traces
 , clientType = customDimensions.clientType
 ```
 
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
+
 ## Sample KQL code for alerting on SMTP failures
 
 Use this KQL code if you want to setup alerts on SMTP failures, either failures authenticating/connecting to SMTP servers or failures on sending emails.
@@ -244,7 +249,10 @@ traces
 )
 ```
 
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
+
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[Alert on Telemetry](telemetry-alert.md)   

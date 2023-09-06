@@ -69,6 +69,8 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 22.5](whatsnew/whatsnew-update-22-5.md)
+### [Update 22.4](whatsnew/whatsnew-update-22-4.md)
 ### [Update 22.3](whatsnew/whatsnew-update-22-3.md)
 ### [Update 22.2](whatsnew/whatsnew-update-22-2.md)
 ### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
@@ -117,6 +119,10 @@
 #### [Configure context-sensitive help](help/context-sensitive-help.md)
 #### [Contribute to the help](help/contributor-guide.md)
 #### [Authoring guide](help/writing-guide.md)
+#### [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
+### ALDoc tool (preview)
+#### [Generating help with the ALDoc tool (preview)](help/help-aldoc-generate-help.md)
+#### [Overwriting help with the ALDoc tool (preview)](help/help-aldoc-overwrites.md)
 <!--### Resources for a developer
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Documentation](developer/devenv-dev-overview.md)
@@ -387,14 +393,37 @@
 
 <!--migrate to BC online-->
 ## Migrate to Business Central online
-### [Migrate on-premises data](administration/migrate-data.md)
-### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
-### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
-### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [Define migration table mappings](administration/migration-table-mapping.md)
-### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
-### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
-### [Compare work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
+### [Introduction](administration/migrate-data.md)
+<!--### [Understand Data Migration](administration/migrate-data-overview.md)-->
+### From Business Central on-premises
+#### [End-to-end overview](administration/migrate-business-central-on-premises.md)
+#### [Managing cloud migration](administration/migration-manage.md)
+#### Prepare
+##### [Upgrade to Business Central v14](upgrade/Upgrade-Considerations.md#online)
+##### [Plan cloud migration](administration/cloud-migration-plan-prepare.md)
+##### [Prerequisites for cloud migration](administration/cloud-migration-prerequisites.md)
+##### [Align SQL table definitions](administration/migration-align-table-definitions.md)
+##### [Clean data for cloud migration](administration/migration-clean-data.md)
+##### [Optimize cloud migration performance](administration/migration-optimize-replication.md)
+#### Set up cloud migration 
+##### [Cloud migration setup overview](administration/migration-setup-overview.md)
+##### [Define migration table mappings](administration/migration-table-mapping.md)
+##### [Run cloud migration setup](administration/migration-setup.md)
+##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
+#### Replicate data 
+##### [Data replication overview](administration/migration-data-replication.md)
+##### [Run data replication](administration/migrate-data-replication-run.md)
+##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
+#### [Run data upgrade](administration/migration-data-upgrade.md)
+#### [Complete cloud migration](administration/migration-finish.md)  
+### From Dynamics GP
+#### [End-to-end overview](administration/migrate-gp-overview.md)
+#### [Managing cloud migration](administration/migration-manage.md)
+#### [Prerequisites](administration/cloud-migration-prerequisites-gp.md)
+#### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
+#### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
+### [FAQ](administration/faq-migrate-data.md)
+### [Troubleshoot](administration/migration-troubleshooting.md)
 <!-- end migrate -->
 <!-- end admin -->
 
@@ -661,7 +690,7 @@
 ##### [XMLport object](developer/devenv-xmlport-object.md)
 ##### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)  
 ##### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
-##### [Request pages](developer/devenv-request-pages.md)
+##### [Using request pages with XMLports](developer/devenv-request-pages.md)
 ### Pages and user interfaces
 #### [Customizing for user roles](developer/devenv-role-customization.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
@@ -741,14 +770,32 @@
 ##### [Opening the Business Central tablet or phone client from a browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ##### [Example: Developing a sales rep role center for the tablet client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
 
-### Permissions and permission sets
-#### [Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
-#### [Composing permission sets](developer/devenv-permissionset-composing.md)
-#### [Permissionset object](developer/devenv-permissionset-object.md)
-#### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
-#### [Permissions on database objects](developer/devenv-permissions-on-database-objects.md)
-#### [Inherent permissions](developer/devenv-inherent-permissions.md)
-#### [Exporting permission sets to XML](developer/devenv-export-permission-sets.md)
+
+### Developing reports
+#### [Overview](developer/devenv-reports.md)
+#### [Report design overview](developer/devenv-report-design-overview.md)
+#### [Report object](developer/devenv-report-object.md)
+#### [Report extension object](developer/devenv-report-ext-object.md)
+#### [Report extension example](developer/devenv-report-ext-example.md)
+#### [Report datatype](developer/methods-auto/report/report-data-type.md)
+#### [Defining a report dataset](developer/devenv-report-dataset.md)
+#### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
+#### [Using request pages with reports](developer/devenv-request-pages-for-reports.md)
+#### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
+#### Report layouts
+##### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
+##### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
+##### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)  
+##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
+##### [Defining a custom report render](developer/devenv-report-custom-render.md)
+##### [Adding barcodes to report layouts](developer/devenv-report-add-barcodes.md)
+#### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
+#### [Report triggers and operations](developer/devenv-report-triggers.md)
+#### [Substituting a report](developer/devenv-substituting-reports.md)
+#### [Testing a report](developer/devenv-testing-reports.md)
+#### [Report performance](developer/devenv-report-performance.md)
+#### [Report telemetry](administration/telemetry-reports-trace.md)
+
 
 ### [Events](developer/devenv-events-in-al.md)
 #### [Event types](developer/devenv-event-types.md)
@@ -765,38 +812,27 @@
 #### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
 -->
 
-### Developing reports
-#### [Overview](developer/devenv-reports.md)
-#### [Report design overview](developer/devenv-report-design-overview.md)
-#### [Report object](developer/devenv-report-object.md)
-#### [Report extension example](developer/devenv-report-ext-example.md)
-#### [Defining a report dataset](developer/devenv-report-dataset.md)
-#### [Request pages](developer/devenv-request-pages.md)
-#### [Report triggers and operations](developer/devenv-report-triggers.md)
-#### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
-#### [Substituting a report](developer/devenv-substituting-reports.md)
-#### [Testing a report](developer/devenv-testing-reports.md)
-#### Report layouts
-##### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
-##### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
-##### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)  
-##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
-##### [Defining a custom report render](developer/devenv-report-custom-render.md)
-#### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
-#### [Adding barcodes](developer/devenv-report-add-barcodes.md)
-#### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
-
-### Handling security
+### [Handling security overview](security/security-application.md)
 #### [Permission sets and entitlements overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 #### [Permissionset object](developer/devenv-permissionset-object.md)
 #### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
+#### [Composing permission sets](developer/devenv-permissionset-composing.md)
 #### [Permissions on database objects](developer/devenv-permissions-on-database-objects.md)
 #### [Inherent permissions](developer/devenv-inherent-permissions.md)
 #### [Exporting permission sets to XML](developer/devenv-export-permission-sets.md)
+#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
 #### [Entitlement object](developer/devenv-entitlement-object.md)
+#### Permissions telemetry
+##### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
+##### [Permission dependency cycle telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
+##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
+#### Permissions APIs
+##### [Permission set](administration/resources/dynamics_permissionset.md)
+##### [Get permission set](administration/api/dynamics_permissionset_get.md)
 
 ### Running things in the background
 #### [Page background tasks](developer/devenv-page-background-tasks.md)
+
 
 ### Developing APIs
 #### [Overview](developer/devenv-api.md)
@@ -845,8 +881,10 @@
 #### [UICop analyzer rules](developer/analyzers/uicop.md)
 ### [Isolated storage](developer/devenv-isolated-storage.md)
 ### [File handling and text encoding](developer/devenv-file-handling-and-text-encoding.md)
-### [Flowfields](developer/devenv-flowfields.md)
-### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### FlowFields and FlowFilters
+#### [Flowfields overview](developer/devenv-flowfields.md)
+#### [FlowFilters overview](developer/devenv-flowfilter-overview.md)
+#### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
 ### Nonclustered Columnstore Indexes (NCCI)
 #### [NCCI overview](developer/devenv-ncci-overview.md)
 #### [NCCI and SQL server](developer/devenv-ncci-and-sql-server.md)
@@ -901,6 +939,7 @@
 
 ### Calling external services
 #### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
+#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
 <!--#### [Connecting to Azure Functions](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)-->
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)  
@@ -953,6 +992,7 @@
 ##### [Extending customer, vendor, and item templates](developer/devenv-extending-templates.md)
 ##### [Extending email capabilities](developer/devenv-extending-email.md)
 ##### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
+##### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
 
 ### Using events 
 #### [Event types](developer/devenv-event-types.md)
@@ -1009,7 +1049,7 @@
 ##### [Performance developer guide](performance/performance-developer.md)
 ##### [Analyzing performance](performance/performance-work-perf-problem.md)
 #### Security
-##### [Application security](security/security-application.md)
+##### [Layered security model](security/security-application.md)
 ##### [Data security](security/data-security.md)
 ##### [Using key vaults for secrets](developer/devenv-app-key-vault-overview.md)
 <!-- end Rules and Guidelines -->
@@ -1169,6 +1209,7 @@
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-service authentication](administration/automation-apis-using-s2s-authentication.md)
 #### [Web service performance](webservices/web-service-performance.md)
+#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [Web service telemetry](webservices/web-service-telemetry.md)
 #### [Walkthrough: Creating a console application that uses OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
 #### [Securing remote connections using certificates](deployment/implement-security-certificates-production-environment.md)
@@ -1300,12 +1341,19 @@
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
-## [Extract data from Business Central](developer/devenv-extract-data.md)
+## [Extract data from Business Central](developer/devenv-extract-data.md)  
 <!-- end integration-->
 <!--deprecated features -->
-# Removed or deprecated features
-## Deprecated features in the application
-### [Deprecated features in the base app](upgrade/deprecated-features-w1.md)  
+# Deprecated features
+## [Microsoft timeline for deprecating code in Business Central](developer/devenv-deprecation-timeline.md)
+## Platform
+### [Overview of deprecated features in the platform](upgrade/deprecated-features-platform.md)  
+## Application  
+### [Overview of deprecated features in the base app](upgrade/deprecated-features-w1.md)  
+### Examples of how to uptake deprecations  
+#### [Migrate from User Groups to Permission Sets or Security Groups](upgrade/deprecated-features-user-groups.md)  
+#### [Migrating from legacy views to modern views](developer/devenv-views-legacy.md)  
+## Local functionality
 ### [Deprecated fields, and fields marked as obsolete in local functionality](upgrade/deprecated-fields.md)
 ### [Deprecated features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated features in the Belgian Version](upgrade/deprecated-features-be.md)
@@ -1323,12 +1371,10 @@
 ### [Deprecated features in the Swiss Version](upgrade/deprecated-features-ch.md)
 ### [Deprecated features in the UK Version](upgrade/deprecated-features-uk.md)
 ### [Deprecated features in the United States Version](upgrade/deprecated-features-us.md)
-## [Deprecated features in the platform](upgrade/deprecated-features-platform.md)  
 ## Deprecated tables
 ### [Deprecated tables](upgrade/deprecated-tables.md)
 ### [Deprecated tables in the India version](upgrade/india-data-migration-list-of-deprecated-tables.md)
-## Deprecated code
-### [Microsoft timeline for deprecating code in Business Central](developer/devenv-deprecation-timeline.md)
+## Deprecating code
 ### [Best practices for deprecation of code in the base app](developer/devenv-deprecation-guidelines.md)
 ### [Deprecating explicit and implicit With statements](developer/devenv-deprecating-with-statements-overview.md)
 <!--end deprecated features -->

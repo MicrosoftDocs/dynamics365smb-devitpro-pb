@@ -102,7 +102,7 @@ An Authorization request header is now added containing the Bearer token.
 6. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
    > [!NOTE]  
    > **For OAuth for testing purposes**, a multi-tenant Azure AD app has been created. Admin consent is needed before the Azure AD app can be used. Information is as follows:
-   > * Grant Type: Implict
+   > * Grant Type: Implicit
    > * Callback URL: https://localhost 
    > * Auth URL: https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.businesscentral.dynamics.com 
    > * Client ID: 060af3ac-70c3-4c14-92bb-8a88230f3f38

@@ -56,8 +56,9 @@ This article lists properties that apply to the [table object](../devenv-table-o
 |[MinValue Property](devenv-minvalue-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>| 
 |[NotBlank Property](devenv-notblank-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>| 
 |[Numeric Property](devenv-numeric-property.md)||<ul><li>Code field</li><li>OemCode field</li><li>OemText field</li><li>Text field</li></ul>|
-|[ObsoleteReason](devenv-obsoletereason-property.md)||<ul><li>Table object</li><li>Table keys</li><li>Text field</li></ul>|
-|[ObsoleteState](devenv-obsoletestate-property.md)||<ul><li>Table object</li><li>Table keys</li><li>Text field</li></ul>|
+|[ObsoleteReason](devenv-obsoletereason-property.md)||<ul><li>Table object</li><li>Table keys</li><li>Table fields</li></ul>|
+|[ObsoleteState](devenv-obsoletestate-property.md)||<ul><li>Table object</li><li>Table keys</li><li>Table fields</li></ul>|
+|[ObsoleteTag](devenv-obsoletetag-property.md)||<ul><li>Table object</li><li>Table keys</li><li>Table fields</li></ul>|
 |[OptionCaption Property](devenv-optioncaption-property.md)|X|<ul><li>Option field</li></ul>|
 |[OptionMembers Property](devenv-optionmembers-property.md)||<ul><li>Option field</li></ul>|
 |[PasteIsValid Property](devenv-pasteisvalid-property.md)||<ul><li>Table object</li></ul>|
