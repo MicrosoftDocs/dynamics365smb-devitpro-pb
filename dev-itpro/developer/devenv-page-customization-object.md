@@ -83,7 +83,7 @@ profile TheSalesman
 
 ## Adding groups and page fields based on table fields
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, we have added the ability to add groups and page fields using a table field as source expression in page customizations as illustrated in the following example:
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, it's possible to add groups and page fields using a table field as source expression in page customizations as illustrated in the following example:
 
 ```al
 pagecustomization MyPageCust customizes MyPage
