@@ -3,7 +3,7 @@ title: "Page, Page Fields, and Page Extension Properties"
 description: "This topic lists properties that apply to the [page object](../devenv-page-object.md), page fields, and [page extension object](../devenv-page-ext-object.md)."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 09/06/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,17 +24,14 @@ The following properties all apply to the Page object, only some of these proper
 
 |**Property Name**|**Extensible**|**Applies to**|
 |-----------|------------|----------|
-|[AboutText Property](devenv-abouttext-property.md)| True| -Page Custom Action <br />  -Page <br />  -Page Action <br />  -Page Action Group <br />  -Page Field <br />  -Page Part <br />  -Page Group <br />  -Request Page <br /> |
-|[AboutTextML Property](devenv-abouttextml-property.md)| True| -Page Custom Action <br />  -Page <br />  -Page Action <br />  -Page Action Group <br />  -Page Field <br />  -Page Part <br />  -Page Group <br />  -Request Page <br /> |
-|[AboutTitle Property](devenv-abouttitle-property.md)| True| -Page Custom Action <br />  -Page <br />  -Page Action <br />  -Page Action Group <br />  -Page Field <br />  -Page Part <br />  -Page Group <br />  -Request Page <br /> |
-|[AboutTitleML Property](devenv-abouttitleml-property.md)| True| -Page Custom Action <br />  -Page <br />  -Page Action <br />  -Page Action Group <br />  -Page Field <br />  -Page Part <br />  -Page Group <br />  -Request Page <br /> |
+|[AboutText Property](devenv-abouttext-property.md)| True| -Page Custom Action <br />  -Query <br />  -Page <br />  -Page Action <br />  -Page Action Group <br />  -Page Field <br />  -Page Part <br />  -Page Group <br />  -Request Page <br /> |
+|[AboutTextML Property](devenv-abouttextml-property.md)| True| -Page Custom Action <br />  -Query <br />  -Page <br />  -Page Action <br />  -Page Action Group <br />  -Page Field <br />  -Page Part <br />  -Page Group <br />  -Request Page <br /> |
+|[AboutTitle Property](devenv-abouttitle-property.md)| True| -Page Custom Action <br />  -Query <br />  -Page <br />  -Page Action <br />  -Page Action Group <br />  -Page Field <br />  -Page Part <br />  -Page Group <br />  -Request Page <br /> |
+|[AboutTitleML Property](devenv-abouttitleml-property.md)| True| -Page Custom Action <br />  -Query <br />  -Page <br />  -Page Action <br />  -Page Action Group <br />  -Page Field <br />  -Page Part <br />  -Page Group <br />  -Request Page <br /> |
 |[AccessByPermission Property](devenv-accessbypermission-property.md)| | -Table Field <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action <br />  -Page Custom Action <br />  -Page <br />  -Report <br /> |
 |[AdditionalSearchTerms Property](devenv-additionalsearchterms-property.md)| True| -Page <br />  -Report <br /> |
 |[AdditionalSearchTermsML Property](devenv-additionalsearchtermsml-property.md)| True| -Page <br />  -Report <br /> |
 |[AnalysisModeEnabled Property](devenv-analysismodeenabled-property.md)| | -Page <br /> |
-|[APIGroup Property](devenv-apigroup-property.md)| | -Page <br />  -Query <br /> |
-|[APIPublisher Property](devenv-apipublisher-property.md)| | -Page <br />  -Query <br /> |
-|[APIVersion Property](devenv-apiversion-property.md)| | -Page <br />  -Query <br /> |
 |[ApplicationArea Property](devenv-applicationarea-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action <br />  -Page Custom Action <br />  -Page User Control <br />  -Page <br />  -Report <br /> |
 |[AssistEdit Property](devenv-assistedit-property.md)| True| -Page Field <br /> |
 |[AutoFormatExpression Property](devenv-autoformatexpression-property.md)| | -Table Field <br />  -Page Field <br />  -Report Column <br /> |
@@ -119,7 +116,6 @@ The following properties all apply to the Page object, only some of these proper
 |[PageType Property](devenv-pagetype-property.md)| | -Page <br /> |
 |[Permissions Property](devenv-permissions-property.md)| | -Codeunit <br />  -Table <br />  -Request Page <br />  -Page <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Permission Set <br />  -Permission Set Extension <br /> |
 |[PopulateAllFields Property](devenv-populateallfields-property.md)| | -Page <br />  -Request Page <br /> |
-|[Promoted Property](devenv-promoted-property.md)| True| -Page Action <br />  -Profile <br /> |
 |[PromotedActionCategories Property](devenv-promotedactioncategories-property.md)| True| -Page <br /> |
 |[PromotedActionCategoriesML Property](devenv-promotedactioncategoriesml-property.md)| True| -Page <br /> |
 |[PromotedCategory Property](devenv-promotedcategory-property.md)| True| -Page Action <br /> |
@@ -136,7 +132,6 @@ The following properties all apply to the Page object, only some of these proper
 |[RunPageOnRec Property](devenv-runpageonrec-property.md)| | -Page Action <br /> |
 |[RunPageView Property](devenv-runpageview-property.md)| | -Page Action <br /> |
 |[SaveValues Property](devenv-savevalues-property.md)| | -Page <br />  -Request Page <br /> |
-|[Scope Property](devenv-scope-property.md)| | -Table <br />  -Page Action <br />  -Page Custom Action <br /> |
 |[SharedLayout Property](devenv-sharedlayout-property.md)| | -Page View <br /> |
 |[ShortcutKey Property](devenv-shortcutkey-property.md)| True| -Page Action <br />  -Page Custom Action <br /> |
 |[ShowAs Property](devenv-showas-property.md)| True| -Page Action Group <br /> |
@@ -147,7 +142,6 @@ The following properties all apply to the Page object, only some of these proper
 |[SignDisplacement Property](devenv-signdisplacement-property.md)| | -Table Field <br />  -Page Field <br /> |
 |[SourceTable Property](devenv-sourcetable-property.md)| | -Page <br />  -Request Page <br /> |
 |[SourceTableTemporary Property](devenv-sourcetabletemporary-property.md)| | -Page <br />  -Request Page <br /> |
-|[SourceTableView Property](devenv-sourcetableview-property.md)| | -Page <br />  -Request Page <br />  -Xml Port Table Element <br /> |
 |[Style Property](devenv-style-property.md)| True| -Page Label <br />  -Page Field <br /> |
 |[StyleExpr Property](devenv-styleexpr-property.md)| True| -Page Label <br />  -Page Field <br /> |
 |[SubPageLink Property](devenv-subpagelink-property.md)| | -Page Part <br />  -Page System Part <br />  -Page Chart Part <br /> |
@@ -158,10 +152,9 @@ The following properties all apply to the Page object, only some of these proper
 |[ToolTipML Property](devenv-tooltipml-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br /> |
 |[TreeInitialState Property](devenv-treeinitialstate-property.md)| True| -Page Group <br /> |
 |[UpdatePropagation Property](devenv-updatepropagation-property.md)| | -Page Part <br />  -Page System Part <br />  -Page Chart Part <br /> |
-|[UsageCategory Property](devenv-usagecategory-property.md)| | -Page <br />  -Report <br /> |
+|[UsageCategory Property](devenv-usagecategory-property.md)| | -Query <br />  -Page <br />  -Report <br /> |
 |[ValuesAllowed Property](devenv-valuesallowed-property.md)| | -Table Field <br />  -Page Field <br /> |
 |[Visible Property](devenv-visible-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action <br />  -Page Action Group <br />  -Page Action Ref <br />  -Page Custom Action <br />  -Page View <br />  -Page User Control <br /> |
-|[Width Property](devenv-width-property.md)| True| -Table Field <br />  -Page Field <br />  -Page Label <br />  -Xml Port Text Element <br />  -Xml Port Field Element <br />  -Xml Port Table Element <br />  -Xml Port Field Attribute <br />  -Xml Port Text Attribute <br /> |
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

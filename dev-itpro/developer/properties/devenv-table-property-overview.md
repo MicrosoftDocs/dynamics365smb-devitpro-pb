@@ -3,7 +3,7 @@ title: "Table, Table Fields, and Table Extension Properties"
 description: "This topic lists properties that apply to the [table object](../devenv-table-object.md), table fields, and [table extension object](../devenv-table-ext-object.md)."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 09/06/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,6 @@ The following properties all apply to the Table object, only some of these prope
 |[Compressed Property](devenv-compressed-property.md)| | -Table Field <br /> |
 |[CompressionType Property](devenv-compressiontype-property.md)| | -Table <br /> |
 |[DataCaptionFields Property](devenv-datacaptionfields-property.md)| True| -Table <br />  -Page <br />  -Request Page <br /> |
-|[DataClassification Property](devenv-dataclassification-property.md)| | -Table <br />  -Table Field <br /> |
 |[DataPerCompany Property](devenv-datapercompany-property.md)| | -Table <br /> |
 |[DateFormula Property](devenv-dateformula-property.md)| | -Table Field <br />  -Page Field <br /> |
 |[DecimalPlaces Property](devenv-decimalplaces-property.md)| | -Table Field <br />  -Page Field <br />  -Report Column <br /> |
@@ -88,7 +87,6 @@ The following properties all apply to the Table object, only some of these prope
 |[ObsoleteTag Property](devenv-obsoletetag-property.md)| | -Page Action Ref <br />  -Page Custom Action <br />  -Table <br />  -Table Field <br />  -Table Key <br />  -Codeunit <br />  -Enum Type <br />  -Enum Value <br />  -Page Action <br />  -Page Action Group <br />  -Page Action Separator <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Group <br />  -Page Label <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Xml Port <br />  -Page Field <br />  -Page Action Area <br />  -Page Area <br />  -Page <br />  -Page View <br />  -Profile <br />  -Interface <br />  -Control Add In <br />  -Permission Set <br />  -Field Group <br /> |
 |[OptionCaption Property](devenv-optioncaption-property.md)| True| -Table Field <br />  -Page Field <br />  -Report Column <br /> |
 |[OptionCaptionML Property](devenv-optioncaptionml-property.md)| True| -Table Field <br />  -Page Field <br />  -Report Column <br /> |
-|[OptionMembers Property](devenv-optionmembers-property.md)| | -Table Field <br />  -Report Column <br /> |
 |[OptionOrdinalValues Property](devenv-optionordinalvalues-property.md)| | -Table Field <br /> |
 |[PasteIsValid Property](devenv-pasteisvalid-property.md)| | -Table <br /> |
 |[Permissions Property](devenv-permissions-property.md)| | -Codeunit <br />  -Table <br />  -Request Page <br />  -Page <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Permission Set <br />  -Permission Set Extension <br /> |
@@ -96,23 +94,18 @@ The following properties all apply to the Table object, only some of these prope
 |[RequestFilterFields Property](devenv-requestfilterfields-property.md)| | -Xml Port Table Element <br />  -Report Data Item <br /> |
 |[RequestFilterHeading Property](devenv-requestfilterheading-property.md)| | -Xml Port Table Element <br />  -Report Data Item <br /> |
 |[RequestFilterHeadingML Property](devenv-requestfilterheadingml-property.md)| | -Xml Port Table Element <br />  -Report Data Item <br /> |
-|[Scope Property](devenv-scope-property.md)| | -Table <br />  -Page Action <br />  -Page Custom Action <br /> |
 |[SignDisplacement Property](devenv-signdisplacement-property.md)| | -Table Field <br />  -Page Field <br /> |
-|[SourceTableView Property](devenv-sourcetableview-property.md)| | -Page <br />  -Request Page <br />  -Xml Port Table Element <br /> |
 |[SqlDataType Property](devenv-sqldatatype-property.md)| | -Table Field <br /> |
 |[SqlIndex Property](devenv-sqlindex-property.md)| | -Table Key <br /> |
 |[SqlTimestamp Property](devenv-sqltimestamp-property.md)| | -Table Field <br /> |
-|[Subtype Property](devenv-subtype-property.md)| | -Codeunit <br />  -Table Field <br /> |
 |[SumIndexFields Property](devenv-sumindexfields-property.md)| | -Table Key <br /> |
 |[TableRelation Property](devenv-tablerelation-property.md)| True| -Table Field <br />  -Page Field <br /> |
 |[TableType Property](devenv-tabletype-property.md)| | -Table <br /> |
 |[TestTableRelation Property](devenv-testtablerelation-property.md)| | -Table Field <br /> |
 |[Unbound Property](devenv-unbound-property.md)| | -Xml Port Text Element <br />  -Xml Port Field Element <br />  -Xml Port Table Element <br />  -Xml Port Field Attribute <br />  -Xml Port Text Attribute <br /> |
 |[Unique Property](devenv-unique-property.md)| | -Table Key <br /> |
-|[UseTemporary Property](devenv-usetemporary-property.md)| | -Xml Port Table Element <br />  -Report Data Item <br /> |
 |[ValidateTableRelation Property](devenv-validatetablerelation-property.md)| | -Table Field <br /> |
 |[ValuesAllowed Property](devenv-valuesallowed-property.md)| | -Table Field <br />  -Page Field <br /> |
-|[Width Property](devenv-width-property.md)| True| -Table Field <br />  -Page Field <br />  -Page Label <br />  -Xml Port Text Element <br />  -Xml Port Field Element <br />  -Xml Port Table Element <br />  -Xml Port Field Attribute <br />  -Xml Port Text Attribute <br /> |
 |[XmlName Property](devenv-xmlname-property.md)| | -Xml Port Text Element <br />  -Xml Port Field Element <br />  -Xml Port Table Element <br />  -Xml Port Field Attribute <br />  -Xml Port Text Attribute <br /> |
 
 
