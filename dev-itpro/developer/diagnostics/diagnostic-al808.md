@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL0575"
-description: "You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'."
+title: "Compiler Error AL0808"
+description: "You cannot set the '{0}' property to '{1}' for {2} '{3}' in the page customization '{4}'."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/06/2023
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0575
+# Compiler Error AL0808
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'.
+You cannot set the '{0}' property to '{1}' for {2} '{3}' in the page customization '{4}'.
 
 
 ## Description
@@ -25,5 +25,5 @@ You cannot reference an element defined in a page customization outside the page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Get Started with AL](../devenv-get-started.md)  
+[Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

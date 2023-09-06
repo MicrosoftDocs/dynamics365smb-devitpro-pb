@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL0755"
 description: "The '{0}' already defines a built-in member called '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/26/2023
+ms.date: 09/06/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ The '{0}' already defines a built-in member called '{1}'. Choose another name fo
 
 
 > [!IMPORTANT]
-> This warning will become an error with Business Central 2024 release wave 1.  
+> This warning will become an error with Business Central 2024 release wave 2.  
 
 ## Description
 A built-in member with the same name is already defined for the object, which can cause runtime errors.  

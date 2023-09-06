@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL0798"
-description: "The Application Object of type {0} and ID {1} can only be moved by Microsoft."
+description: "Currently, the Moved(To/From) property is exclusively accessible to Microsoft."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 09/06/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The Application Object of type {0} and ID {1} can only be moved by Microsoft.
+Currently, the Moved(To/From) property is exclusively accessible to Microsoft.
 
 
 ## Description

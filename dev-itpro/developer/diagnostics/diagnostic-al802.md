@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL0575"
-description: "You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'."
+title: "Compiler Error AL0802"
+description: "The parameter '{0}' cannot be of type 'SecretText'."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/06/2023
@@ -13,17 +13,17 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0575
+# Compiler Error AL0802
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'.
+The parameter '{0}' cannot be of type 'SecretText'.
 
 
 ## Description
-You cannot reference an element defined in a page customization outside the page customization declaring it.  
+Parameters of type 'SecretText' are not allowed on control add-in procedures to prevent leakage of confidential values to the browser.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Get Started with AL](../devenv-get-started.md)  
+[Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL0795"
-description: "Parameters of type 'SecretText' are not allowed on events."
+description: "The parameter '{0}' cannot be of type 'SecretText'."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 09/06/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,11 +17,11 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Parameters of type 'SecretText' are not allowed on events.
+The parameter '{0}' cannot be of type 'SecretText'.
 
 
 ## Description
-Parameters of type 'SecretText' are not allowed on events.  
+Parameters of type 'SecretText' are not allowed on events to prevent unintended leakage of confidential values.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

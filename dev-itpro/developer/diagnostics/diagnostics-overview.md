@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 09/06/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -465,7 +465,7 @@ author: SusanneWindfeldPedersen
 |[AL0572](diagnostic-al572.md)|I/O operations on the file or folder '{0}' resulted in an exception with the Windows 32 error code '{1}'.|Error|
 |[AL0573](diagnostic-al573.md)|{0} is not valid for client expressions.|Warning (Future Error)|
 |[AL0574](diagnostic-al574.md)|This feature is under development and cannot be used in an extension.|Error|
-|[AL0575](diagnostic-al575.md)|You cannot modify the {0} '{1}' because it is defined in the page customization '{2}'.|Error|
+|[AL0575](diagnostic-al575.md)|You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'.|Error|
 |[AL0576](diagnostic-al576.md)|The profile name '{0}' is not valid because it contains leading or trailing spaces.|Error|
 |[AL0577](diagnostic-al577.md)|The view '{0}' cannot define layout changes because its property '{1}' is not set to false.|Error|
 |[AL0578](diagnostic-al578.md)|The value for the property '{0}' is not valid because its length exceeds {1} characters ({2} characters).|Error|
@@ -581,8 +581,10 @@ author: SusanneWindfeldPedersen
 |[AL0697](diagnostic-al697.md)|Argument {0}: The argument should be a valid Field type.|Warning (Future Error)|
 |[AL0698](diagnostic-al698.md)|Type {0} cannot be used in a 'case' statement.|Error|
 |[AL0699](diagnostic-al699.md)|The symbol '{0}' is not valid in this context. Only symbols from '{1}' are allowed.|Error|
-|[AL0700](diagnostic-al700.md)|Dependency '{0}' should be referenced in the property '{1}' rather than as an explicit dependency.|Warning|
-|[AL0702](diagnostic-al702.md)|Dependency '{0}' is referenced in the property '{1}' and as an explicit dependency. Remove the explicit dependency.|Warning|
+|[AL0700](diagnostic-al700.md)|Dependency '{0}' must be referenced in the property '{1}' rather than as an explicit dependency.|Warning (Future Error)|
+|[AL0701](diagnostic-al701.md)|Dependency '{0}' must be referenced in the property '{1}' rather than as an explicit dependency.|Error|
+|[AL0702](diagnostic-al702.md)|Dependency '{0}' is referenced in the property '{1}' and as an explicit dependency. Remove the explicit dependency.|Warning (Future Error)|
+|[AL0703](diagnostic-al703.md)|Dependency '{0}' is referenced in the property '{1}' and as an explicit dependency. Remove the explicit dependency.|Error|
 |[AL0704](diagnostic-al704.md)|A layout must be specified through the 'ExcelLayout' property when the default layout type for a report is 'Excel'.|Error|
 |[AL0705](diagnostic-al705.md)|Another layout with name '{0}' already exists.|Error|
 |[AL0706](diagnostic-al706.md)|The property '{0}' cannot be used while also specifying the rendering section.|Error|
@@ -674,12 +676,21 @@ author: SusanneWindfeldPedersen
 |[AL0792](diagnostic-al792.md)|Unused using directive.|Hidden|
 |[AL0793](diagnostic-al793.md)|The property '{0}' cannot be used on a multi-select action with '{1}' scope.|Error|
 |[AL0794](diagnostic-al794.md)|The property value '{0}' is not valid for the cue action '{1}'.|Error|
-|[AL0795](diagnostic-al795.md)|Parameters of type 'SecretText' are not allowed on events.|Error|
+|[AL0795](diagnostic-al795.md)|The parameter '{0}' cannot be of type 'SecretText'.|Error|
 |[AL0796](diagnostic-al796.md)|The 'Unwrap' method should only be used inside a non-debuggable method otherwise the contents of the value will be viewable through the debugger.|Warning|
 |[AL0797](diagnostic-al797.md)|{0} '{1}' is moved. {2}.|Error|
-|[AL0798](diagnostic-al798.md)|The Application Object of type {0} and ID {1} can only be moved by Microsoft.|Error|
+|[AL0798](diagnostic-al798.md)|Currently, the Moved(To/From) property is exclusively accessible to Microsoft.|Error|
 |[AL0799](diagnostic-al799.md)|The field with ID '{0}' and name '{1}' cannot be used as source expression in the page customization '{2}' targeting page '{3}'.|Error|
 |[AL0800](diagnostic-al800.md)|The field '{0}' specifies ExtendedDataType '{1}'. This ExtendedDataType can only be set on a control.|Error|
+|[AL0801](diagnostic-al801.md)|{0} '{1}' is marked to be moved. {2}.|Warning|
+|[AL0802](diagnostic-al802.md)|The parameter '{0}' cannot be of type 'SecretText'.|Error|
+|[AL0803](diagnostic-al803.md)|The parameter '{0}' cannot be used when the property '{1}' has the value '{2}'.|Error|
+|[AL0804](diagnostic-al804.md)|You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'.|Warning (Future Error)|
+|[AL0805](diagnostic-al805.md)|The object ID '{0}' should not be surrounded with quotes.|Warning (Future Error)|
+|[AL0806](diagnostic-al806.md)|The object ID '{0}' should not be surrounded with quotes.|Error|
+|[AL0807](diagnostic-al807.md)|The integer '{0}' should not be used as the name for the object.|Warning|
+|[AL0808](diagnostic-al808.md)|You cannot set the '{0}' property to '{1}' for {2} '{3}' in the page customization '{4}'.|Error|
+|[AL0809](diagnostic-al809.md)|The variable '{0}' is not allowed to be of type 'SecretText' because it is declared as protected.|Error|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|
