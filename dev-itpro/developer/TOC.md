@@ -1037,7 +1037,7 @@
 #### [AuditCategory Option Type](methods-auto/auditcategory/auditcategory-option.md)
 #### [ClientType Option Type](methods-auto/clienttype/clienttype-option.md)
 #### [CommitBehavior Option Type](methods-auto/commitbehavior/commitbehavior-option.md)
-#### [DataClassification Option Type](methods-auto/dataclassification/dataclassification-option.md)
+<!-- #### [DataClassification Option Type](methods-auto/dataclassification/dataclassification-option.md) -->
 #### [DataScope Option Type](methods-auto/datascope/datascope-option.md)
 #### [DefaultLayout Option Type](methods-auto/defaultlayout/defaultlayout-option.md)
 #### [ErrorBehavior Option Type](methods-auto/errorbehavior/errorbehavior-option.md)
@@ -2784,7 +2784,6 @@
 ### [DataAccessIntent Property](properties/devenv-dataaccessintent-property.md)
 ### [DataCaptionExpression Property](properties/devenv-datacaptionexpression-property.md)
 ### [DataCaptionFields Property](properties/devenv-datacaptionfields-property.md)
-### [DataClassification Property](properties/devenv-dataclassification-property.md)
 ### [DataItemLink Property](properties/devenv-dataitemlink-property.md)
 ### [DataItemLinkReference Property](properties/devenv-dataitemlinkreference-property.md)
 ### [DataItemTableFilter Property](properties/devenv-dataitemtablefilter-property.md)

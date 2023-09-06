@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
-description: Discover Dynamics365 Business Central App Components & Deployment Steps: Microsoft's Base Application, Platform Updates, & Ecosystem Integrations.
+description: Discover Dynamics365 Business Central App Components & Deployment Steps - Microsoft's Base Application, Platform Updates, & Ecosystem Integrations.
 ---
 
 # Components and Capabilities
