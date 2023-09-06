@@ -3,7 +3,7 @@ title: "Report.Preview() Method"
 description: "Indicates whether a report is being printed in preview mode."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 08/18/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,24 +38,9 @@ An instance of the [Report](report-data-type.md) data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- You must use the return value. A compile error is generated if this value is not used.  
+## Remarks
 
-If you run a client report definition \(RDLC\) report layout in preview mode and then call the CurrReport.PREView method, then the Print icon, Print Layout icon, Page Setup icon, and Save As icon are not displayed.  
-
- If you run a client report definition \(RDLC\) report layout in preview mode and do not call the CurrReport.PREView method, then you can print from the **Print Preview** window.  
-
-## Example  
- This example shows how to use the PREView method. You can use this method in an application that stores a count of how many times a document has been printed in the database. This number must be updated from inside the report that is used to print the document. To avoid updating the number when the report is run in preview mode, add a construct to the OnPreDataItem trigger that resembles the one that is shown in this example when you add the code that updates the count.  
-
-```  
-if CurrReport.PREView then  
-... // Preview-specific processing.  
-else  
-... // Processing that is not preview specific:  
-... // Update the print count.  
-```  
-
+Application triggers are not invoked when the web client PDF viewer runs client actions. They are only invoked during the print action so that you can use the trigger code, for example, to increment the No.Printed value.
 
 ## See Also
 [Report Data Type](report-data-type.md)  

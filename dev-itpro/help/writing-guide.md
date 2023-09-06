@@ -355,6 +355,7 @@ Messages that users see when they work in [!INCLUDE [prod_short](../developer/in
 [Business Central User Assistance Model](../user-assistance.md)  
 [Contribute to the Help](contributor-guide.md)  
 [Configuring the Help Experience](../deployment/configure-help.md)  
+[Generating help with the ALDoc tool](help-aldoc-generate-help.md)  
 [Docs Contributor Guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)  

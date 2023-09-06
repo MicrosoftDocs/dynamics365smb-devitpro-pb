@@ -1,0 +1,2 @@
+> [!TIP]
+> From the Business Central client, you can export report results as raw data to an XML file. Use the file to help validate that the report returns the expected data. To export a report, run the report and select the **Send to** > **XML (data only)**  on the request page. 
