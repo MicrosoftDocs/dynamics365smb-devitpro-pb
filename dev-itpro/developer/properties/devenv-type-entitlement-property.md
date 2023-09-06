@@ -3,7 +3,7 @@ title: "Type (Entitlement) Property"
 description: "The type of entitlement."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/15/2023
+ms.date: 06/07/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,15 +25,17 @@ The type of entitlement. When a user logs into Business Central, it's checked if
 
 |Value|Description|
 |-----------|---------------------------------------|
-|**PerUserServicePlan**|The entitlement is associated with an AAD service plan which is licensed to specific users.|
-|**PerUserOfferPlan**|The entitlement is associated with an offer which is licensed to specific users.|
-|**FlatRateServicePlan**|The entitlement is associated with an AAD service plan which is licensed to an AAD tenant.|
-|**Role**|The entitlement is associated with an AAD role.|
-|**ConcurrentUserServicePlan**|The entitlement is associated with a named AAD group.|
-|**Application**|The entitlement is associated with an AAD application.|
-|**ApplicationScope**|The entitlement is associated with an AAD application scope.|
+|**PerUserServicePlan**|The entitlement is associated with an Azure AD service plan which is licensed to specific users.|
+|**PerUserOfferPlan**|The entitlement is associated with an offer, which is licensed to specific users.|
+|**FlatRateServicePlan**|The entitlement is associated with an Azure AD service plan which is licensed to an Azure AD tenant|
+|**Role**|The entitlement is associated with an Azure AD role.|
+|**ConcurrentUserServicePlan**|The entitlement is associated with a named Azure AD group.|
+|**Application**|The entitlement is associated with an Azure AD application.|
+|**ApplicationScope**|The entitlement is associated with an Azure AD application scope.|
 |**Implicit**|Everyone has this license.|
 |**Unlicensed**|Entitlement applied when no other entitlements from an app has been applied.|
+|**Group**|The entitlement is associated with a specific Azure AD group, identified by the object ID specified in the id property.|
+
 
 ## Remarks
 

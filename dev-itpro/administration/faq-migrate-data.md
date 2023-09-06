@@ -10,7 +10,7 @@ ms.date: 11/30/2022
 ms.author: jswymer
 ---
 
-# FAQ about Migrating to Business Central Online from On-Premises Solutions
+# FAQ about migrating to Business Central online from on-premises solutions
 
 This section contains answers to frequently asked questions about migrating from on-premises solutions to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.  
 
@@ -33,15 +33,15 @@ For comparison, see the [System Requirements for [!INCLUDE[prod_long](../develop
 
 ## How is my on-premises data migrated to my [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant?
 
-Data is migrated using an Azure service called Azure Data Factory (ADF). ADF is a service that is always running within the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online service manager. When you start the cloud migration, a data pipeline is created in the ADF service so that data can flow from your on-premises solution to your Business Central online tenant. If your data source is a local SQL Server instance, you'll also be asked to configure a self-hosted integration runtime (SHIR). The runtime is installed locally and manages the communication between the cloud services and your on-premises data without opening any ports or firewalls.  
+Data is migrated using an Azure service called Azure Data Factory (ADF). ADF is a service that is always running within the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online service manager. When you start the cloud migration, a data pipeline is created in the ADF service so that data can flow from your on-premises solution to your Business Central online tenant. If your data source is a local SQL Server instance, you're also asked to configure a self-hosted integration runtime (SHIR). The runtime is installed locally and manages the communication between the cloud services and your on-premises data without opening any ports or firewalls.  
 
-## Are there any limits on the amount or type of data that will migrate?
+## Are there any limits on the amount or type of data that can be migrated?
 
 There are no restrictions on the type of data that can be migrated. [!INCLUDE [db-storage-limit](../includes/db-storage-limit.md)]  
 
 We recommend that you reduce the number of companies that you're migrating data for in each migration run. You can specify which companies to include in the migration in the assisted setup wizard.  
 
-If you want to add more companies after the first selection of companies, you can add more companies in the **Cloud Migration Management** page in Business Central online. For more information, see [Run the tool multiple times](migrate-data.md#run-the-tool-multiple-times).
+If you want to add more companies after the first selection of companies, you can add more companies in the **Cloud Migration Management** page in Business Central online. For more information, see [Run the tool multiple times](migration-setup.md#rerunning-cloud-migration-setup-guide).
 
 If you're looking at migrating databases larger than 80 GB, we recommend that you contact the support team and work with them to make sure that the migration is successful. If needed, you can also purchase more storage. For more information, go to [Managing Capacity](tenant-admin-center-capacity.md).  
 
@@ -51,17 +51,25 @@ Yes. The SQL connection string is passed to Azure Data Factory, where it's encry
 
 ## How do I find my SQL connection string?
 
-Find the connection string to your SQL database in SQL Management Studio or Visual Studio. The user name and password defined in the connection requires a SQL Authenticated user name/password. Your connection string will look something like this:
+You can find the connection string in SQL Management Studio for an on-premise SQL Server database or in Azure portal for an Azure SQL database. The user name and password defined in the connection requires a SQL Authenticated user name/password
 
-*Server=tcp:{ServerName},1433;Initial Catalog={DatabaseName};Persist Security Info=False; User ID={UserName};Password={Password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;*
+A connection string to an on-premise SQL Server database looks like this:
 
-## How do I find the Integration Runtime name?
+`Server={SQLServerName}{SQLServerInstance};Database={DatabaseName};User ID={UserName};Password={Password};`
 
-Find the Integration Runtime name in the Microsoft Integration Runtime Manager, which you can find in your Windows system tray or by searching for the program. You must type the name. You won't be able to copy and paste the name.  
+A connection string to an Azure SQL database looks like this:
+
+`Server=tcp:{ServerName},1433;Initial Catalog={DatabaseName};Persist Security Info=False; User ID={UserName};Password={Password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;`
+
+To learn more, go to [Define SQL database connection and integration runtime](migration-setup.md#define-sql-database-connection-and-integration-runtime).
+
+## How do I find the Integration Runtime name or key?
+
+Find the Integration Runtime name in the Microsoft Integration Runtime Manager, which you can find in your Windows system tray or by searching for the program. You must type the name. You can't copy and paste the name.  You can get the key from the **Cloud Migration Management** by selecting the **Get runtime service key** action. 
 
 ## I'm a hosting partner - do I need to configure the Self-Hosted Runtime Service for each tenant?
 
-No, there's no limit on the number of tenants that can be added to your Self-Hosted Integration Runtime. Each added tenant will have a dedicated pipeline created.
+No, there's no limit on the number of tenants that can be added to your Self-Hosted Integration Runtime. Each added tenant has a dedicated pipeline created. However, if there are multiple tenants migrating using the same Integration Runtime, it's important to plan their migrations in a way that avoids overlapping in time. This will help prevent your Integration Runtime service from experiencing an excessive load.
 
 ## Will data from tables with code customizations migrate?
 
@@ -71,7 +79,7 @@ Yes, but it requires that someone defines tables mappings to move the customized
 
 ## Why are my permissions restricted in the Business Central online tenant?
 
-When you connect your on-premises solution to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online as part of the migration, all existing users are automatically added to the *Intelligent Cloud* user group, unless they have the SUPER permission set. In this configuration, your on-premises solution is the master where all business transactions take place. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment is read-only, and the data is used to generate intelligent business insights based on your on-premises data for you. We restrict permissions to prevent users from accidentally entering transactions or updating master records only to have that information overwritten and lost when data replication takes place. Once the migration is complete, you can assign the relevant permissions to all users and stop using your on-premises solution.  
+When you connect your on-premises solution to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online as part of the migration, all existing users are automatically added to the *Intelligent Cloud* user group, unless they have the SUPER permission set. In this configuration, your on-premises solution is the primary source where all business transactions take place. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment is read-only, and the data is used to generate intelligent business insights based on your on-premises data for you. We restrict permissions to prevent users from accidentally entering transactions or updating primary records only to have that information overwritten and lost when data replication takes place. Once the migration is complete, you can assign the relevant permissions to all users and stop using your on-premises solution.  
 
 <!-- 
 ## Can I pause the migration?
@@ -128,7 +136,7 @@ To keep the Role Center experience as clean as possible and avoid permission err
 
 <!-- Not necessarily. Most extensions will run without issues in the online environment. You may want to consider uninstalling extensions that send data to an external service to avoid potential duplicated calls to that service. It's a best practice to test any extension in a sandbox tenant configured for the Business Central online environment that you're connecting to. --> 
 
-No. But if your cloud migration includes data upgrade of a large amount of data, we recommend that you uninstall the extensions that that include any data to move. It will speed up the upgrade and overall cloud migration process. You can reinstall the extensions after the migration.
+No. But if your cloud migration includes data upgrade of a large amount of data, we recommend that you uninstall the extensions that that include any data to move. It speeds up the upgrade and overall cloud migration process. You can reinstall the extensions after the migration.
 
 
 <!--## How do I build an extension that enables data replication?
