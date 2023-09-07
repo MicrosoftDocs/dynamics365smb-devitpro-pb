@@ -83,6 +83,7 @@ The **Edit in Excel** feature uses UI pages exposed through OData, which means t
 
 [!INCLUDE[report_performance](../includes/include-report-performance.md)]
 
+For more information on how to use telemetry to analyze the performance of reports, see [Report performance](../developer/devenv-report-performance.md)
 
 ### Loading data efficiently to Power BI
 
