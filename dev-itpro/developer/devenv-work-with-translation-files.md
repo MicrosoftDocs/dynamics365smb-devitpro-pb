@@ -54,7 +54,7 @@ Now, when you run the build command (**Ctrl+Shift+B**) in Visual Studio Code, a 
 > [!IMPORTANT]  
 > Make sure to rename the translation file before building the extension next time, as it'll be overwritten.
 
-By setting the `GenerateCaptions` flag in the app.json file, you specify that you want to generate captions based on the object name for pages, tables, reports, XMLports, request pages, and table fields. If the object already has a `Caption` property set, that value is used. For the table fields, the `OptionCaption` is used. The syntax is as follows:
+By setting the `GenerateCaptions` flag in the app.json file, you specify that you want to generate captions based on the object name for pages, tables, reports, XMLports, and request pages. If the object already has a `Caption` property set, that value is used. For the table fields, the `OptionCaption` is used. The syntax is as follows:
 
 ```json
   "features": [ "TranslationFile", "GenerateCaptions" ]
