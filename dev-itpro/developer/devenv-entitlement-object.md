@@ -89,7 +89,7 @@ procedure CheckingLicensing()
         // Do custom licensing
     
     // Transactability licensing
-    if NavApp.IsEntitled() then
+    if NavApp.IsEntitled('MyEntitlementName') then
         // Do transactability licensing
 }
 
