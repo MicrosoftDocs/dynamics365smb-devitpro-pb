@@ -112,6 +112,11 @@ The documentFormat dimension shows the output of the generated report as a resul
 |Custom|The output was an custom file type.|
 |ProcessingOnly|The action was for processing report without any kind of layout.|
 
+### Sample KQL code
+
+[!INCLUDE[report-success-kql](../includes/include-telemetry-report-success-kql.md)]
+
+
 ## Failed report generation
 
 This operation occurs when the report dataset couldn't be generated because of an error.

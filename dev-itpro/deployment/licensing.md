@@ -63,13 +63,11 @@ The Dynamics 365 Business Central Device license allows multiple users to simult
 
 Your company's Microsoft 365 administrator or Microsoft partner can create the *Dynamics 365 Business Central Device Users* group and add device users as members in the [Microsoft 365 Admin Center](https://admin.microsoft.com/) or on the [Azure portal](https://portal.azure.com/).
 
-### Device user limitations
+### Device user features and limitations
 
-Users with the Device license can't perform the following tasks in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]:
+Users with the Device license can now set up jobs to run as scheduled tasks in the job queue of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. Device users are concurrent users and when it's time to run their scheduled tasks, they'll be automatically signed in to run their tasks in background sessions. When their tasks are running, each of them is considered present in the system and using a device license. 
 
-- Set up jobs to run as scheduled tasks in the job queue. Device users are concurrent users and, therefore, we can't ensure that the involved user is present in the system when a task is executed, which is required.  
-
-- A device user can't be the first user to sign in. A user of type Administrator, Full User, or External Accountant must be the first to sign in so they can set up [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information, see [Administration of Business Central Online](../administration/tenant-administration.md).  
+In terms of limitations, a device user can't be the first user to sign in. A user of type Administrator, Full User, or External Accountant must be the first to sign in so they can set up [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information, see [Administration of Business Central Online](../administration/tenant-administration.md).  
 
 ### To create the Dynamics 365 Business Central Device Users group
 

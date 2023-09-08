@@ -70,6 +70,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 22.5](whatsnew/whatsnew-update-22-5.md)
 ### [Update 22.4](whatsnew/whatsnew-update-22-4.md)
 ### [Update 22.3](whatsnew/whatsnew-update-22-3.md)
 ### [Update 22.2](whatsnew/whatsnew-update-22-2.md)
@@ -690,7 +691,7 @@
 ##### [XMLport object](developer/devenv-xmlport-object.md)
 ##### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)  
 ##### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
-##### [Request pages](developer/devenv-request-pages.md)
+##### [Using request pages with XMLports](developer/devenv-request-pages.md)
 ### Pages and user interfaces
 #### [Customizing for user roles](developer/devenv-role-customization.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
@@ -770,14 +771,32 @@
 ##### [Opening the Business Central tablet or phone client from a browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ##### [Example: Developing a sales rep role center for the tablet client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
 
-### Permissions and permission sets
-#### [Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
-#### [Composing permission sets](developer/devenv-permissionset-composing.md)
-#### [Permissionset object](developer/devenv-permissionset-object.md)
-#### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
-#### [Permissions on database objects](developer/devenv-permissions-on-database-objects.md)
-#### [Inherent permissions](developer/devenv-inherent-permissions.md)
-#### [Exporting permission sets to XML](developer/devenv-export-permission-sets.md)
+
+### Developing reports
+#### [Overview](developer/devenv-reports.md)
+#### [Report design overview](developer/devenv-report-design-overview.md)
+#### [Report object](developer/devenv-report-object.md)
+#### [Report extension object](developer/devenv-report-ext-object.md)
+#### [Report extension example](developer/devenv-report-ext-example.md)
+#### [Report datatype](developer/methods-auto/report/report-data-type.md)
+#### [Defining a report dataset](developer/devenv-report-dataset.md)
+#### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
+#### [Using request pages with reports](developer/devenv-request-pages-for-reports.md)
+#### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
+#### Report layouts
+##### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
+##### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
+##### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)  
+##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
+##### [Defining a custom report render](developer/devenv-report-custom-render.md)
+##### [Adding barcodes to report layouts](developer/devenv-report-add-barcodes.md)
+#### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
+#### [Report triggers and operations](developer/devenv-report-triggers.md)
+#### [Substituting a report](developer/devenv-substituting-reports.md)
+#### [Testing a report](developer/devenv-testing-reports.md)
+#### [Report performance](developer/devenv-report-performance.md)
+#### [Report telemetry](administration/telemetry-reports-trace.md)
+
 
 ### [Events](developer/devenv-events-in-al.md)
 #### [Event types](developer/devenv-event-types.md)
@@ -794,39 +813,27 @@
 #### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
 -->
 
-### Developing reports
-#### [Overview](developer/devenv-reports.md)
-#### [Report design overview](developer/devenv-report-design-overview.md)
-#### [Report object](developer/devenv-report-object.md)
-#### [Report extension object](developer/devenv-report-ext-object.md)
-#### [Report extension example](developer/devenv-report-ext-example.md)
-#### [Defining a report dataset](developer/devenv-report-dataset.md)
-#### [Request pages](developer/devenv-request-pages.md)
-#### [Report triggers and operations](developer/devenv-report-triggers.md)
-#### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
-#### [Substituting a report](developer/devenv-substituting-reports.md)
-#### [Testing a report](developer/devenv-testing-reports.md)
-#### Report layouts
-##### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
-##### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
-##### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)  
-##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
-##### [Defining a custom report render](developer/devenv-report-custom-render.md)
-#### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
-#### [Adding barcodes](developer/devenv-report-add-barcodes.md)
-#### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
-
-### Handling security
+### [Handling security overview](security/security-application.md)
 #### [Permission sets and entitlements overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 #### [Permissionset object](developer/devenv-permissionset-object.md)
 #### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
+#### [Composing permission sets](developer/devenv-permissionset-composing.md)
 #### [Permissions on database objects](developer/devenv-permissions-on-database-objects.md)
 #### [Inherent permissions](developer/devenv-inherent-permissions.md)
 #### [Exporting permission sets to XML](developer/devenv-export-permission-sets.md)
+#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
 #### [Entitlement object](developer/devenv-entitlement-object.md)
+#### Permissions telemetry
+##### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
+##### [Permission dependency cycle telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
+##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
+#### Permissions APIs
+##### [Permission set](administration/resources/dynamics_permissionset.md)
+##### [Get permission set](administration/api/dynamics_permissionset_get.md)
 
 ### Running things in the background
 #### [Page background tasks](developer/devenv-page-background-tasks.md)
+
 
 ### Developing APIs
 #### [Overview](developer/devenv-api.md)
@@ -875,8 +882,10 @@
 #### [UICop analyzer rules](developer/analyzers/uicop.md)
 ### [Isolated storage](developer/devenv-isolated-storage.md)
 ### [File handling and text encoding](developer/devenv-file-handling-and-text-encoding.md)
-### [Flowfields](developer/devenv-flowfields.md)
-### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### FlowFields and FlowFilters
+#### [Flowfields overview](developer/devenv-flowfields.md)
+#### [FlowFilters overview](developer/devenv-flowfilter-overview.md)
+#### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
 ### Nonclustered Columnstore Indexes (NCCI)
 #### [NCCI overview](developer/devenv-ncci-overview.md)
 #### [NCCI and SQL server](developer/devenv-ncci-and-sql-server.md)
@@ -1041,7 +1050,7 @@
 ##### [Performance developer guide](performance/performance-developer.md)
 ##### [Analyzing performance](performance/performance-work-perf-problem.md)
 #### Security
-##### [Application security](security/security-application.md)
+##### [Layered security model](security/security-application.md)
 ##### [Data security](security/data-security.md)
 ##### [Using key vaults for secrets](developer/devenv-app-key-vault-overview.md)
 <!-- end Rules and Guidelines -->
@@ -1393,13 +1402,14 @@
 #### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
 #### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
-#### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
-#### [2021 release wave 1 on-premises updates](deployment/update-versions-18.md)
-#### [2020 release wave 2 on-premises updates](deployment/update-versions-17.md)
-#### [2020 release wave 1 on-premises updates](deployment/update-versions-16.md)
-#### [2019 release wave 2 On-premises updates](deployment/update-versions-15.md)
 #### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
-#### [October 2018 on-premises updates](deployment/update-versions-13.md)
+#### Versions no longer updated
+##### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
+##### [2021 release wave 1 on-premises updates](deployment/update-versions-18.md)
+##### [2020 release wave 2 on-premises updates](deployment/update-versions-17.md)
+##### [2020 release wave 1 on-premises updates](deployment/update-versions-16.md)
+##### [2019 release wave 2 On-premises updates](deployment/update-versions-15.md)
+##### [October 2018 on-premises updates](deployment/update-versions-13.md)
 ### [Running a container-based development environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
