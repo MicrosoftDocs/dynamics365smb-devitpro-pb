@@ -42,15 +42,47 @@ Typing the shortcut `tentitlement` creates the basic layout for an entitlement o
 This example illustrates a simple entitlement object with the [Type property](properties/devenv-type-property.md) set to `Role`, which means that the entitlement is associated with a Microsoft Entra role. When `Type` is set to `Role`, the [RoleType property](properties/devenv-roletype-property.md) is used to distinguish between local and delegated assignments of the role, in this case it's `Delegated`. The [ObjectEntitlements property](properties/devenv-objectentitlements-property.md) defines the list of permissions that the entitlement includes.
 
 ```al
-entitlement BC_Role_Delegated
+
+entitlement "Delegated Admin agent - Partner"
+
 {
-    Type = Role;
-    RoleType = Delegated;
-    Id = '1a2aaaaa-3aa4-5aa6-789a-a1234567aaaa';
-    ObjectEntitlements = 
-        ”D365 BUS PREMIUM - BaseApp”;​
+    Type = Role;
+
+    RoleType = Delegated;
+
+    Id = '00000000-0000-0000-0000-000000000007';
+
+    ObjectEntitlement = MyApp_PartnerFullAccessPermissionSet;
+
 }
 
+entitlement "Delegated Helpdesk agent - Partner"
+
+{
+
+    Type = Role;
+
+    RoleType = Delegated;
+
+    Id = '00000000-0000-0000-0000-000000000008';
+
+    ObjectEntitlement = MyApp_PartnerFullAccessPermissionSet;
+
+}
+
+entitlement "Dynamics 365 Admin - Partner"
+
+{
+
+    Type = Role;
+
+    RoleType = Delegated;
+
+    Id = '00000000-0000-0000-0000-000000000009';
+
+    ObjectEntitlement = MyApp_PartnerFullAccessPermissionSet;
+
+}
 ```
 
 ## Entitlement example - per-user plan
