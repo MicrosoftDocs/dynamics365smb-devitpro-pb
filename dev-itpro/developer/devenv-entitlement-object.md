@@ -79,23 +79,9 @@ entitlement BC_Unlicensed
 
 ```
 
-Testing for the `Unlicensed` type of entitlement can be done by using the [NavApp.IsUnlicensed([Guid]) Method](methods-auto/navapp/navapp-isunlicensed-method.md) method as illustrated in the pseudo code example below.
+In the following code example, you can see how to check for entitlements in code.
 
-```al
-procedure CheckingLicensing()
-{
-    // When using no or custom licensing
-    if NavApp.IsUnlicensed() then
-        // Do custom licensing
-    
-    // Transactability licensing
-    if NavApp.IsEntitled('MyEntitlementName') then
-        // Do transactability licensing
-}
-
-```
-
-## Entitlement example - testing for entitlements in code
+### Entitlement example - testing for entitlements in code
 
 ```al
 permissionset 50101 MyFreeLicensePermission
@@ -164,7 +150,7 @@ procedure CheckingForEntitlementsUsingPermissions()
 ## Entitlement example - Microsoft Entra group
 
 <!-- check -->
-An example of an entitlement where `Type` is `Group`. This supports scenarios when a user has to have access to the AppSource app with transact support and no need to buy a developer license. The `id` property is the object ID of the Azure AD group. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+An example of an entitlement where `Type` is `Group`. This supports scenarios when a user has to have access to the AppSource app with transact support and no need to buy a developer license. The `id` property is the object ID of the Microsoft Entra group. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 ```al
 entitlement BC_Group
