@@ -1,6 +1,6 @@
 ---
-title: "Entitlement object"
-description: "Description of the entitlement object in AL for Business Central."
+title: Entitlement object
+description: Description of the entitlement object in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 08/18/2023
@@ -15,7 +15,7 @@ ms.author: solsen
 
 [!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
 
-The entitlement object in [!INCLUDE [prod_short](includes/prod_short.md)] describes which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased or the role that they have in Azure AD. 
+The entitlement object in [!INCLUDE [prod_short](includes/prod_short.md)] describes which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased or the role that they have in Microsoft Entra ID. 
 
 An entitlement consists of a number of [PermissionSet Objects](devenv-permissionset-object.md) put together to constitute a set of meaningful permissions for a user. An entitlement can only include permission set objects, which reference the objects that are included within the same app. This is to ensure that the entitlements included with one app can't alter or redefine the entitlements included with another app.
 
@@ -37,7 +37,7 @@ Typing the shortcut `tentitlement` creates the basic layout for an entitlement o
 
 ## Entitlement example - delegated admin
 
-This example illustrates a simple entitlement object with the [Type property](properties/devenv-type-property.md) set to `Role`, which means that the entitlement is associated with an Azure AD role. When `Type` is set to `Role`, the [RoleType property](properties/devenv-roletype-property.md) is used to distinguish between local and delegated assignments of the role, in this case it's `Delegated`. The [ObjectEntitlements property](properties/devenv-objectentitlements-property.md) defines the list of permissions that the entitlement includes.
+This example illustrates a simple entitlement object with the [Type property](properties/devenv-type-property.md) set to `Role`, which means that the entitlement is associated with a Microsoft Entra role. When `Type` is set to `Role`, the [RoleType property](properties/devenv-roletype-property.md) is used to distinguish between local and delegated assignments of the role, in this case it's `Delegated`. The [ObjectEntitlements property](properties/devenv-objectentitlements-property.md) defines the list of permissions that the entitlement includes.
 
 ```al
 entitlement BC_Role_Delegated
@@ -94,7 +94,8 @@ procedure CheckingLicensing()
 }
 
 ```
-## Entitlement example - testing for entitlements in code.
+
+## Entitlement example - testing for entitlements in code
 
 ```al
 permissionset 50101 MyFreeLicensePermission
@@ -130,10 +131,10 @@ procedure CheckingForEntitlementsUsingPermissions()
         myTable: Record MyTable;
     begin
         if myTable.WritePermission() then
-            message('User is entitled and has permisson to write to MyTable => user is licensed')
+            message('User is entitled and has permission to write to MyTable => user is licensed')
         else
             if myTable.ReadPermission() then
-                message('User is entitled and has permisson to read from MyTable => user is unlicensed')
+                message('User is entitled and has permission to read from MyTable => user is unlicensed')
             else
                 Message('User does not have permission to read from MyTable - we do not know if the user is licensed ');
     end;
@@ -141,7 +142,7 @@ procedure CheckingForEntitlementsUsingPermissions()
     procedure CheckingForMyEntitlements()
     begin
         if NavApp.IsUnlicensed() then
-            Message('User is assgined my BC_Unlicensed entitlement')
+            Message('User is assigned my BC_Unlicensed entitlement')
         else
             if NavApp.IsEntitled('BC_PerUserOfferPlan') then
                 Message('User is assigned my BC_PerUserOfferPlan entitlement')
@@ -152,16 +153,18 @@ procedure CheckingForEntitlementsUsingPermissions()
     procedure CheckingForOtherAppEntitlements()
     begin
         if (NavApp.IsEntitled('Delegated Admin agent - Partner', '63ca2fa4-4f03-4f2b-a480-172fef340d3f')) then
-            Message('User is assgined the delegated admin agent entitlement defined in the system app: https://github.com/microsoft/ALAppExtensions/blob/main/Modules/System/Entitlements/DelegatedAdminagentPartner.Entitlement.al')
+            Message('User is assigned the delegated admin agent entitlement defined in the system app: https://github.com/microsoft/ALAppExtensions/blob/main/Modules/System/Entitlements/DelegatedAdminagentPartner.Entitlement.al')
         else
             if (NavApp.IsEntitled('Dynamics 365 Business Central Essentials', '63ca2fa4-4f03-4f2b-a480-172fef340d3f')) then
-                Message('User is assgined the essentials entitlement defined in the system app: https://github.com/microsoft/ALAppExtensions/blob/main/Modules/System/Entitlements/Dynamics365BusinessCentralEssentials.Entitlement.al');
+                Message('User is assigned the essentials entitlement defined in the system app: https://github.com/microsoft/ALAppExtensions/blob/main/Modules/System/Entitlements/Dynamics365BusinessCentralEssentials.Entitlement.al');
     end;
 ...
+```
 
-## Entitlement example - Azure AD group
+## Entitlement example - Microsoft Entra group
 
-An example of an entitlement where `Type` is `Group`. This supports scenarios when a user has to have access to the AppSource app with transact support and no need to buy a developer license. The `id` property is the object ID of the Azure AD group. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md). <!-- need input from Steffen -->
+<!-- check -->
+An example of an entitlement where `Type` is `Group`. This supports scenarios when a user has to have access to the AppSource app with transact support and no need to buy a developer license. The `id` property is the object ID of the Azure AD group. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 ```al
 entitlement BC_Group
@@ -171,8 +174,6 @@ entitlement BC_Group
 }
 
 ```
-
-
 
 ## See also
 
