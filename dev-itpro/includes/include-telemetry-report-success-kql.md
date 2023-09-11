@@ -3,7 +3,7 @@ This KQL code can help you get started analyzing report rendering:
 ```kql
 traces
 | where timestamp > ago(60d) // adjust as needed
-| where operation_Name == "Success report generation" // do note that in a later version of the schema, this field will not be used 
+| where operation_Name == "Success report generation" // Note that in a later version of the schema, this field will not be used 
      or customDimensions.eventId == 'RT0006'          // introduced in version 16.1
 | where customDimensions.result == "Success"
 | project timestamp
@@ -30,17 +30,17 @@ traces
 , reportingEngine = customDimensions.reportingEngine // reportingEngine dimension was added in version 17.3
 // which user ran the report
 , usertelemetryId = case(
-  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry id was introduced in the platform in version 20.0
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry ID was introduced in the platform in version 20.0
 , 'N/A'
 )
 // performance data
 , numberOfRows = customDimensions.numberOfRows
 // , serverExecutionTime = customDimensions.serverExecutionTime // the datatype for executionTime is timespan
-, serverExecutionTimeInMS = toreal(totimespan(customDimensions.serverExecutionTime))/10000 // this shows how to convert timespan to millisecods
+, serverExecutionTimeInMS = toreal(totimespan(customDimensions.serverExecutionTime))/10000 // this shows how to convert timespan to milliseconds
 , sqlDatabaseAccessIntent = customDimensions.sqlDatabaseAccessIntent  // sqlDatabaseAccessIntent dimension added in version 19.1
 , sqlExecutes = customDimensions.sqlExecutes 
 , sqlRowsRead = customDimensions.sqlRowsRead
 // , totalTime = customDimensions.totalTime // the datatype for totalTime is timespan
-, totalTimeInMS = toreal(totimespan(customDimensions.totalTime))/10000 // this shows how to convert timespan to millisecods
+, totalTimeInMS = toreal(totimespan(customDimensions.totalTime))/10000 // this shows how to convert timespan to milliseconds
 | extend renderTimeInMS = totalTimeInMS - serverExecutionTimeInMS
 ```
