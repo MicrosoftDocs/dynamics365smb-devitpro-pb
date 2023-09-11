@@ -268,6 +268,7 @@
 <!-- support-->
 ## Manage technical support
 ### [Manage technical support overview](administration/manage-technical-support.md)
+### [Troubleshooting tools and guides](developer/devenv-troubleshooting-overview.md)
 ### [Escalate support issues to Microsoft](administration/raise-support-case.md)
 ### [Report customer outages](administration/report-outage.md)
 ### [Report a performance issue](administration/report-performance-issue.md)
@@ -1150,9 +1151,17 @@
 #### [Overview](administration/telemetry-overview.md)
 #### [Available telemetry](administration/telemetry-available-telemetry.md) 
 #### [Enabling telemetry](administration/telemetry-enable-application-insights.md)
-#### [Using Jupyter notebook troubleshooting guides](https://aka.ms/bctelemetrysamples)
-#### [Using Power BI troubleshooting reports](https://aka.ms/bctelemetrysamples)
+#### [Analyze telemetry with Power BI](administration/telemetry-power-bi-app.md)
+#### [Analyze telemetry with KQL](administration/telemetry-analyze-with-kql.md)
+#### [Alert on telemetry](administration/telemetry-alert.md)
 #### [Using telemetry to investigate performance issues](performance/performance-work-perf-problem.md)
+### Troubleshooting guides (TSGs)
+#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
+#### [Troubleshooting OData calls](webservices/dynamics-error-codes.md)
+#### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
+#### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
+##### [Troubleshooting cloud migration setup](administration/migration-setup-troubleshooting.md)
+##### [Troubleshooting data replication](administration/migration-data-replication-troubleshooting.md)
 
 ## [AL language reference](developer/index.md)
 <!-- end AL -->
