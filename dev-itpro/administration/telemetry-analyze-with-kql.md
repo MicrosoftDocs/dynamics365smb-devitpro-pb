@@ -73,7 +73,7 @@ A query tool for KQL, either the **Logs** part of the **Monitoring** menu in App
 
 ### Understand report usage with telemetry and KQL
 
-First, go to the article on report telemetry [Analyzing Report Telemetry](telemetry-reports-trace#sample-kql-code.md)
+First, go to the article on report telemetry [Analyzing Report Telemetry](telemetry-reports-trace.md#sample-kql-code)
 
 Now copy the KQL query for successful report generation:
 [!INCLUDE[report-success-kql](../includes/include-telemetry-report-success-kql.md)]
