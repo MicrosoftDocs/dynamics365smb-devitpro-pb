@@ -47,12 +47,12 @@ You can use Kusto queries as the data source in many places. For example:
 
 ## KQL walkthrough example - understand report usage
 
-This walkthrough will guide you step by step to create a kusto (KQL) query to analyze how users use reports in a BC environment. You will start with a sample query from the documentation article for report telemetry. Then you will step by step change and refine the query, learning about important KQL operators along the way. The final result will show you data for the most frequently used reports, grouped by the app/extension they are from, what users did with the report (download/preview/print/...), as well as which layout (Excel/Word/RDLC) that was used.
+This walkthrough will guide you step by step to create a kusto (KQL) query to analyze how users use reports in a Business Central environment. You will start with a sample query from the documentation article for report telemetry. Then you will step by step change and refine the query, learning about important KQL operators along the way. The final result will show you data for the most frequently used reports, grouped by the app/extension they are from, what users did with the report (download/preview/print/...), as well as, which layout (Excel/Word/RDLC) that was used.
 
 ### About this walkthrough
 This walkthrough covers the following tasks:
   
-1. Choose a query tool for KQL, either the **Logs** part of the **Monitoring** menu in Application Insights in the Azure portal, or Kusto.Explorer (see [Kusto.Explorer installation and user interface](/azure/data-explorer/kusto/tools/kusto-explorer)).
+1. Choose a query tool for KQL, either the **Logs** part of the **Monitoring** menu in Application Insights in the Azure portal, or in Kusto.Explorer (see [Kusto.Explorer installation and user interface](/azure/data-explorer/kusto/tools/kusto-explorer)).
 2. Get a sample query (in this example, we use the sample query for report renderings)
 3. Limit the result rows by adding a **take** operator
 4. Limit the result columns by removing lines from the **project** operator 
@@ -69,16 +69,16 @@ An [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource.
 
 Report telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that has been emitted to Application Insights.
 
-A query tool for KQL, either the **Logs** part of the **Monitoring** menu in Application Insights in the Azure portal, or Kusto.Explorer (see [Kusto.Explorer installation and user interface](/azure/data-explorer/kusto/tools/kusto-explorer)).
+A query tool for KQL, either the **Logs** part of the **Monitoring** menu in Application Insights in the Azure portal, or the Kusto.Explorer (see [Kusto.Explorer installation and user interface](/azure/data-explorer/kusto/tools/kusto-explorer)).
 
 ### Understand report usage with telemetry and KQL
 
 First, go to the article on report telemetry [Analyzing Report Telemetry](telemetry-reports-trace.md#sample-kql-code)
 
-Now copy the KQL query for successful report generation:
+Now, copy the KQL query for successful report generation:
 [!INCLUDE[report-success-kql](../includes/include-telemetry-report-success-kql.md)]
 
-The query above is has four parts: a table and three KQL operators separated by a pipe (**|**):
+The query above has four parts: a table and three KQL operators separated by a pipe (**|**):
 1. which kusto table that stores the data
 2. where operators to filter the data
 3. a project operator limits the number of columns
@@ -101,7 +101,7 @@ traces // which kusto table that stores the data
 | extend renderTimeInMS = totalTimeInMS - serverExecutionTimeInMS
 ```
 
-When writing KQL queries, it is good practice to limit the number of rows while developing it. This allows for quick explorations and experimentation without having to wait for the result in each modification of the query.
+When writing KQL queries, it's good practice to limit the number of rows while developing it. This allows for quick explorations and experimentation without having to wait for the result in each modification of the query.
 
 So, before running the query, add a **take** operator on a new line after the **where** operator and the **project** operator:
 
@@ -155,7 +155,7 @@ traces
 
 Try running the query. You should now see 5 rows with a lot of columns. 
 
-As you can see on the result, the original query includes a lot of columns. In this example, we are not interested in performance data and other details. So we simply remove the lines that we don't need from the **project** part of the query:
+As you can see on the result, the original query includes a lot of columns. In this example, we aren't interested in performance data and other details. So, we simply remove the lines that we don't need from the **project** part of the query:
 
 ```kql
 traces
@@ -181,7 +181,7 @@ traces
 , reportAction = customDimensions.reportAction       // reportAction dimension added in version 20.0
 ```
 
-Try running the query again. You should now see 5 rows with a lot less columns. 
+Try running the query again. You should now see 5 rows with a lot fewer columns. 
 
 Next, we want to summarize how many reports have been run. For this, we add a new line with a **summarize** operator to the query:
 
