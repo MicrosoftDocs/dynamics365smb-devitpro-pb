@@ -23,12 +23,26 @@ From the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can ope
 
 ## Open a page from within the Page Inspector
 
-- On a page, you can start the Page Inspector, and choose the **Explore page in Visual Studio Code** link, you will be asked if you want to download the symbols for the page, and if the code, for example, was added by another extension, you will need the symbols to be able to troubleshoot further. You can now choose to snapshot debug, regular debug, or just inspect the code.
-    - You can also choose to inspect a specific field on a page, from the **Page Inspector**, choose the field, choose the dropdown menu, and choose **Explore field in VS Code**.
-    - 
-## Troubleshoot the current session from within the Help and Support page
+From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the following:
 
- (**Attach debugger to this session**, **Use current project**, or **Create a new project** - if you choose to create a new project, you will be asked to specify a location for the project and you will choose whether to use snapshot debugging, or regular debugging. Then you will attach to the current session that you're running in the web client. Now, you can, for example, set the breakpoints needed in the code, go back to run the task in the web client, and when the breakpoint is hit, you can inspect this code in Visual Studio Code.
+1. Locate the page that you want to inspect.
+1. From the page, start the **Page Inspector** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
+1. Choose the **Explore page in Visual Studio Code** link.  
+    You'll be asked if you want to download the symbols for the page.
+4. Choose to do snapshot debugging, regular debugging, or just inspect the code. <!-- create new project?-->
+1. If you want to debug, set breakpoints and go back to the web client to run the task. When the breakpoint is hit, you can inspect the code in Visual Studio Code.
+
+You can also choose to inspect a specific field on a page, from the **Page Inspector**, choose the field, choose the dropdown menu, and then choose **Explore field in VS Code**.
+
+## Troubleshoot from the Help and Support page
+
+In the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the following:
+
+1. Go to the **Help and Support** page, and then choose the **Attach debugger to this session** link.
+1. If installed, and not already open, Visual Studio Code will open a new session, and you can choose **Use current project**, or **Create a new project**.
+1. Specify the location for the project, and choose whether to use snapshot debugging, regular debugging, or just view code.
+1. Next, if you have chosen to debug, you can attach to the current session in the web client.
+1. Set the breakpoints needed in the code, and return to the web client to perform the task, you want to inspect. Once the breakpoint is hit, you can inspect the code in Visual Studio Code.
 
 ## Good to know
 
