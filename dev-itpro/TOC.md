@@ -1194,7 +1194,7 @@
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
 
-#### Finance Reports API
+#### Finance reports API
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 ##### [Accounting period](administration/financereportsapi/resources/dynamics_accountingperiod.md)
