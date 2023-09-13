@@ -940,21 +940,34 @@
 #### [Serializing .NET Framework types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 
 ## Extensibility
+### [Extensibility overview](developer/devenv-extensibility-overview.md)
+### Extending AL objects
+#### [Extending application areas](developer/devenv-extending-application-areas.md)
+#### [Extending enumerations](developer/devenv-extensible-enums.md)
+#### [Extending code flows with events](developer/devenv-event-types.md)
+#### [Extending pages](developer/devenv-page-ext-object.md)
+#### [Extending reports](developer/devenv-report-ext-object.md)
+#### [Extending security model](developer/devenv-permissionset-ext-object.md)
+#### [Extending tables](developer/devenv-table-ext-object.md)
+### Extending the system application
+#### [System application reference](/dynamics365/business-central/application/system-application)
+#### [Contributing to the Business Central open source system application](https://github.com/microsoft/ALAppExtensions/blob/main/CONTRIBUTING.md)
+#### [Get started creating or modifying modules](developer/devenv-getting-started.md)
 ### Extending the base application
-#### [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
+#### [Base application reference](/dynamics365/business-central/application/base-application)
 #### [The Microsoft_Application.app file](developer/devenv-application-app-file.md)
 #### [Publishing a code-customized base application](developer/devenv-publish-code-customization.md)
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
-#### Examples
-##### [Extending item charge distribution methods](developer/devenv-extending-item-charges.md)
-##### [Extending price calculations](developer/devenv-extending-best-price-calculations.md)
-##### [Extending pages previously based on the Date virtual table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
-##### [Extending data archiving](developer/devenv-data-archive-extension.md)
-##### [Extending document sharing and OneDrive integration](developer/devenv-extending-document-sharing-onedrive.md)
-##### [Extending customer, vendor, and item templates](developer/devenv-extending-templates.md)
-##### [Extending email capabilities](developer/devenv-extending-email.md)
-##### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
-##### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
+### Examples
+#### [Extending item charge distribution methods](developer/devenv-extending-item-charges.md)
+#### [Extending price calculations](developer/devenv-extending-best-price-calculations.md)
+#### [Extending pages previously based on the Date virtual table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
+#### [Extending data archiving](developer/devenv-data-archive-extension.md)
+#### [Extending document sharing and OneDrive integration](developer/devenv-extending-document-sharing-onedrive.md)
+#### [Extending customer, vendor, and item templates](developer/devenv-extending-templates.md)
+#### [Extending email capabilities](developer/devenv-extending-email.md)
+#### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
+#### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
 
 ### Using events 
 #### [Event types](developer/devenv-event-types.md)
