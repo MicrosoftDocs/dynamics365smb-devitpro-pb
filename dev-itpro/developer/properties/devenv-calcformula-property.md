@@ -59,7 +59,7 @@ Parts of the formula are described in the following table.
 |`<SourceFieldName>`|Specifies the source field name.|
 |`<Filter>`|A filter expression such as 10&#124;20..30.|  
 
-You can choose from several methods of calculations including sum (total), average, maximum value, minimum value, record count, lookup, and whether a record exists. For more information, see [Creating FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md), [FlowFields overview](devenv-flowfields.md), and [FlowFilter overview](../devenv-flowfilter-overview.md).
+You can choose from several methods of calculations including sum (total), average, maximum value, minimum value, record count, lookup, and whether a record exists. For more information, see [Creating FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md), [FlowFields overview](../devenv-flowfields.md), and [FlowFilter overview](../devenv-flowfilter-overview.md).
 
 ## See also
 
