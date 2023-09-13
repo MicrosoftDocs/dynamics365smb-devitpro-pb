@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can open a new Visual Studio Code session directly from the web client for a specific customer production or sandbox environment. This enables performing troubleshooting, such as debugging, inspecting variables, setting breakpoints and viewing source code.
 
-Depending on the context, Visual Studio Code opens to allow inspecting objects and source, and allow attaching to debug or snapshot debug and profile the current web client session. Access to the source code is gated by the resource exposure profile settings for each extension. For more information, see [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
+Depending on the context, Visual Studio Code opens to allow inspecting objects and source, and allow attaching to debug or snapshot debug and profile the current web client session. Whether you can access the source code is gated by the resource exposure profile settings for each extension. For more information, see [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
 
 From the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can open Visual Studio Code in the following ways:
 
