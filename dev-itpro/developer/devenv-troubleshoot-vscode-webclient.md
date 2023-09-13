@@ -18,20 +18,24 @@ Depending on the context, Visual Studio Code opens to allow inspecting objects a
 
 From the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can open Visual Studio Code in the following ways:
 
-- Open a page from within the **Page Inspector**
+- Open a page from the **Page Inspector**
 - Troubleshoot the current session from within the **Help and Support** page
 
-## Open a page from within the Page Inspector
+## Open a page from the Page Inspector
 
 From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the following:
 
 1. Locate the page that you want to inspect.
-1. From the page, start the **Page Inspector** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
+1. From that page, run the **Page Inspector** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
 1. Choose the **Explore page in Visual Studio Code** link.  
 4. Next, select to do snapshot debugging, regular debugging, or just inspect the code. <!-- create new project?-->
 1. If you want to debug, set breakpoints and go back to the web client to run the task. When the breakpoint is hit, you can inspect the code in Visual Studio Code.
 
-You can also choose to inspect a specific field on a page, from the **Page Inspector**, choose the field, choose the dropdown menu, and then choose **Explore field in VS Code**.
+You can also choose to inspect a specific field on a page.
+
+1. Locate the page that you want to inspect.
+1. From that page, run the **Page Inspector** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
+1. Choose the field to inspect, select the dropdown menu, and then choose **Explore field in VS Code**.
 
 ## Troubleshoot from the Help and Support page
 
