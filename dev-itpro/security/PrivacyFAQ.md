@@ -21,7 +21,7 @@ Here you find links that can help you find answers to questions concerning priva
 - Azure Geo to Azure regional mapping: [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/)
 - Dynamics 365 and Power Platform availability: [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/geographic-availability/)
 - Get the PDF file that shows the international availability of Dynamics 365:[International availability of Dynamics 365](/dynamics365/get-started/availability)
-- Business Central online uses Azure Front Door: [Services permanently excluded from the EU Data Boundary](/privacy/eudb/eu-data-boundary-permanent-transfers-from-services#azure-services)
+- Business Central online uses Azure Front Door, which isn't in scope for the EU Data Boundary: [Services permanently excluded from the EU Data Boundary](/privacy/eudb/eu-data-boundary-permanent-transfers-from-services)
 
 ## See also
 
