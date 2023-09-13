@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting in Visual Studio Code directly from the web client
+title: Troubleshoot in Visual Studio Code directly from the web client
 description: Opening Visual Studio Code directly from the Business Central web client to perform troubleshooting.
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -10,7 +10,7 @@ ms.date: 09/13/2023
 ms.custom: bap-template
 ---
 
-# Troubleshooting in Visual Studio Code directly from the web client
+# Troubleshoot in Visual Studio Code directly from the web client
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can open a new Visual Studio Code session directly from the web client for a specific customer production or sandbox environment. This enables performing troubleshooting, such as debugging, inspecting variables, setting breakpoints and viewing source code.
 

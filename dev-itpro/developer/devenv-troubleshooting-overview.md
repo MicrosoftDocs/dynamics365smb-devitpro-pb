@@ -2,7 +2,7 @@
 title: Troubleshooting overview
 description: An overview of tools and processes that help troubleshoot issues in Business Central.
 ms.custom: na
-ms.date: 04/01/2022
+ms.date: 09/13/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,6 +29,7 @@ The following sections help you troubleshoot issues with Business Central so tha
 - Mitigate can't start profile configuration issues with [Troubleshooting profile configuration can't be started](devenv-troubleshooting-profile-configuration.md)
 - Verify user permissions with [Effective Permissions](/dynamics365/business-central/ui-define-granular-permissions)
 - Investigate issues with [Mobile App On-Premises](devenv-troubleshooting-the-mobile-app.md)
+- Investigate issues with [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md).
 
 
 ## Troubleshooting in AL
@@ -39,6 +40,7 @@ The following sections help you troubleshoot issues with Business Central so tha
 - Investigate [Printer and Report Payloads](devenv-reports-troubleshoot-printing.md) when working with reporting
 - [Inspecting and Troubleshooting Pages](devenv-inspecting-pages.md) to help identify data issues
 - Identifying and working with [Performance Issues](../performance/performance-overview.md)
+- Investigate and troubleshoot from the web client with [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md).
 
 ## Troubleshooting with telemetry
 
