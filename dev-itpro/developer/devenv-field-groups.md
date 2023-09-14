@@ -79,6 +79,34 @@ tableextension 50100 CustomerExercise extends Customer
 }
 ```
 
+> [!NOTE]
+> If the field you are adding to the DropDown has `Visibility = false` on the underlying lookup page, it will not show up in the DropDown. 
+
+For example, We want to add the "Address 2" field to the Ship-to Address DropDown. 
+The underlying lookup page is the Ship-To Address List, where Address 2 Visibility = false. 
+The following example illustrates the code changes needed in order to add the "Address 2" field to the Ship-To Address DropDown fieldgroup.
+
+```AL
+tableextension 50101 ShipToAddressExercise extends "Ship-to Address"
+{
+    fieldgroups
+    {
+        addlast(DropDown; "Address 2"){}
+    }
+}
+
+pageextension 50101 ShipToAddressExercise extends "Ship-to Address"
+{
+    layout
+    {
+        modify("Address 2")
+        {
+            Visible = true;
+        }
+    }
+}
+```
+
 <!--
 ## Define fields to display in tile view
 
