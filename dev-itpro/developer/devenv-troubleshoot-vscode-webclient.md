@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can open a new Visual Studio Code session directly from the web client for a specific customer production or sandbox environment. This enables performing troubleshooting, such as debugging, inspecting variables, setting breakpoints and viewing source code.
 
-Depending on the context, Visual Studio Code opens to allow inspecting objects and source, and allow attaching to debug or snapshot debug and profile the current web client session. Whether you can access the source code is gated by the resource exposure profile settings for each extension. For more information, see [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
+Depending on the context, Visual Studio Code opens to allow inspecting objects and source, and allows attaching to debug or snapshot debug and profile the current web client session. Whether you can access the source code is gated by the resource exposure profile settings for each extension. For more information, see [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
 
 From the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can open Visual Studio Code in the following ways:
 
@@ -28,7 +28,7 @@ From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, d
 1. Locate the page that you want to inspect.
 1. From that page, run the **Page Inspector** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
 1. Choose the **Explore page in Visual Studio Code** link.  
-1. Next, to open a Visual Studio Code instance, you must accept to open **Allow an extension to open this URI?**. If you already have Visual Studio Code running that instance will open.
+1. Next, to open a Visual Studio Code instance, you must choose the **Open** button in the **Allow an extension to open this URI?** dialog. If you already have Visual Studio Code running that instance will open.
 1. Then, you must specify, if you want to create a new project, or use an existing project. You will only be asked the first time, and from then on, the Visual Studio Code window that was last active will be used.
 1. Next, you must decide if you want to download symbols.  
     > [!NOTE]  
@@ -37,7 +37,7 @@ From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, d
 1. Now, you are prompted whether to do a snapshot or regular debugging session, or not to debug, but just view the source code.  
     > [!NOTE]  
     > For production environments, regular debugging isn't supported.
-1. If you want to debug, set breakpoints and go back to the web client to run the task. When the breakpoint is hit, you can inspect the code in Visual Studio Code.
+1. If you want to debug, then set breakpoints and go back to the web client to run the task. When the breakpoint is hit, you can inspect the code in Visual Studio Code.
 
 You can also choose to inspect a specific field on a page.
 
@@ -50,8 +50,9 @@ You can also choose to inspect a specific field on a page.
 In the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the following:
 
 1. Go to the **Help and Support** page, and then choose the **Attach debugger to this session** link under the **Troubleshooting** section.
-1. Next, to open a Visual Studio Code instance, you must accept to open **Allow an extension to open this URI?**. If you already have Visual Studio Code running that instance will open.
-1. Now, follow the steps 5-8 described in the previous section [Open a page from the Page Inspector](devenv-troubleshoot-vscode-webclient.md#open-a-page-from-the-page-inspector).
+1. Next, to open a Visual Studio Code instance, you must choose the **Open** button in the **Allow an extension to open this URI?** dialog. If you already have Visual Studio Code running that instance will open.
+1. Then, you must specify, if you want to create a new project, or use an existing project. You will only be asked the first time, and from then on, the Visual Studio Code window that was last active will be used.
+1. If you want to debug, then set breakpoints and go back to the web client to run the task. When the breakpoint is hit, you can inspect the code in Visual Studio Code.
 
 ## Good to know
 
