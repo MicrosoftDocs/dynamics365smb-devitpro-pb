@@ -58,7 +58,6 @@ In the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the follow
 
 - If Visual Studio Code is already open, the last active session is used; otherwise, a new Visual Studio Code session opens. If the AL Language extension isn't installed, the user is asked to install it, and the process ends.
 - When invoked, a new project is created, and a matching launch configuration is created, depending on the current environment being a production or sandbox environment.
-- If invoked for page in the **Page Inspector**, symbols for that page are downloaded 
 - If the user chooses to debug, Visual Studio Code attaches to the web client process, which it was invoked from and awaits breaking on error.
 - If reusing a project and the source files aren't up to date with the version on the server, the breakpoints will not be hit correctly when debugging. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
 - When you choose to generate new projects, remember to delete the projects occasionally to not accumulate many unused projects.
