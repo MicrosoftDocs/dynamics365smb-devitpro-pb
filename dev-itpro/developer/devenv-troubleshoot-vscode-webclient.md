@@ -51,7 +51,7 @@ In the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the follow
 
 1. Go to the **Help and Support** page, and then choose the **Attach debugger to this session** link under the **Troubleshooting** section.
 1. Next, to open a Visual Studio Code instance, you must accept to open **Allow an extension to open this URI?**. If you already have Visual Studio Code running that instance will open.
-1. Now, follow the steps 5-8 as described in the previous section [Open a page from the Page Inspector](devenv-troubleshoot-vscode-webclient.md#open-a-page-from-the-page-inspector).
+1. Now, follow the steps 5-8 described in the previous section [Open a page from the Page Inspector](devenv-troubleshoot-vscode-webclient.md#open-a-page-from-the-page-inspector).
 
 ## Good to know
 
@@ -59,8 +59,8 @@ In the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the follow
 - When invoked, a new project is created, and a matching launch configuration is created, depending on the current environment being a production or sandbox environment.
 - If invoked for page in the **Page Inspector**, symbols for that page are downloaded 
 - If the user chooses to debug, Visual Studio Code attaches to the web client process, which it was invoked from and awaits breaking on error.
-
-When you choose to generate new projects, remember to delete the projects occasionally to not accumulate many unused projects.
+- If reusing a project and the source files aren't up to date with the version on the server, the breakpoints will not be hit correctly when debugging. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
+- When you choose to generate new projects, remember to delete the projects occasionally to not accumulate many unused projects.
 
 ## See also
 
