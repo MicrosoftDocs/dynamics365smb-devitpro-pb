@@ -49,11 +49,9 @@ You can also choose to inspect a specific field on a page.
 
 In the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the following:
 
-1. Go to the **Help and Support** page, and then choose the **Attach debugger to this session** link.
-1. If installed, and not already open, Visual Studio Code opens a new session, and you can choose **Use current project**, or **Create a new project**.
-1. If it's a new project, specify the location, and then choose whether to use snapshot debugging, regular debugging, or just view code.
-1. Next, if you have chosen to debug, you can attach to the current session in the web client.
-1. Set the breakpoints needed in the code, and return to the web client to perform the task, you want to inspect. Once the breakpoint is hit, you can inspect the code in Visual Studio Code.
+1. Go to the **Help and Support** page, and then choose the **Attach debugger to this session** link under the **Troubleshooting** section.
+1. Next, to open a Visual Studio Code instance, you must accept to open **Allow an extension to open this URI?**. If you already have Visual Studio Code running that instance will open.
+1. Now, follow the steps 5-8 as described in the previous section [Open a page from the Page Inspector](devenv-troubleshoot-vscode-webclient.md#open-a-page-from-the-page-inspector).
 
 ## Good to know
 
