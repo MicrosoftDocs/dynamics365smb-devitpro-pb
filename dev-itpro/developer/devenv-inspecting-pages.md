@@ -1,9 +1,9 @@
 ---
-title: Inspecting Pages
+title: Inspecting pages
 description: "Learn about the structure of a page and its' underlying data."
 author: jswymer
 ms.custom: na
-ms.date: 08/22/2022
+ms.date: 09/15/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: jswymer
 ---
 
-# Inspecting and Troubleshooting Pages
+# Inspecting and troubleshooting pages
 
 The [!INCLUDE[webclient](includes/webclient.md)] includes a page inspection feature that lets you get details about a page. Page inspection provides insight into the page design, the different elements that form the page, and the source behind the data it displays. Page inspection helps you:
 
@@ -26,7 +26,7 @@ You start page inspection from the **Help & Support** page. Choose the question 
 
 The **Page inspection** pane opens on the side. The following figure illustrates the **Page Inspection** pane on the **Sales Order** page.
 
-![Page Inspection Pane.](media/page-inspection-example.png)
+![Page Inspection Pane.](media/page-inspection-example.png) <!-- to do - need new one for VS Code -->
 
 When the **Page Inspection** pane first opens, it shows information that pertains to the main page object.
 
@@ -167,4 +167,5 @@ The following table describes the different filter types.
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md)
+[Using Designer](devenv-inclient-designer.md)  
+[Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md)

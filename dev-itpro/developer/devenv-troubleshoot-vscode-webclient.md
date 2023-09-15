@@ -18,15 +18,15 @@ Depending on the context, Visual Studio Code opens to allow inspecting objects a
 
 From the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can open Visual Studio Code in the following ways:
 
-- Open a page from the **Page Inspector**
-- Troubleshoot the current session from within the **Help and Support** page
+- Open a page from the [Page Inspector](devenv-troubleshoot-vscode-webclient.md#open-a-page-from-the-page-inspector)
+- Troubleshoot the current session from within [Help and Support](devenv-troubleshoot-vscode-webclient.md#troubleshoot-from-the-help-and-support-page)
 
 ## Open a page from the Page Inspector
 
 From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the following:
 
 1. Locate the page that you want to inspect.
-1. From that page, run the **Page Inspector** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
+1. From that page, run the **Page Inspection** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
 1. Choose the **Explore page in Visual Studio Code** link.  
 1. Next, to open a Visual Studio Code instance, you must choose the **Open** button in the **Allow an extension to open this URI?** dialog. If you already have Visual Studio Code running that instance will open.
 1. Then, you must specify, if you want to create a new project, or use an existing project. You will only be asked the first time, and from then on, the Visual Studio Code window that was last active will be used.
@@ -42,7 +42,7 @@ From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, d
 You can also choose to inspect a specific field on a page.
 
 1. Locate the page that you want to inspect.
-1. From that page, run the **Page Inspector** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
+1. From that page, run the **Page Inspection** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
 1. Choose the field to inspect, select the dropdown menu, and then choose **Explore field in VS Code**. The source code for the table field definition behind the page field is now opened.
 
 ## Troubleshoot from the Help and Support page
