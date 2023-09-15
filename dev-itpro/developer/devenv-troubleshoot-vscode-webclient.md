@@ -35,7 +35,7 @@ You can also choose to inspect a specific field on a page.
 
 1. Locate the page that you want to inspect.
 1. From that page, run the **Page Inspector** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
-1. Choose the field to inspect, select the dropdown menu, and then choose **Explore field in VS Code**.
+1. Choose the field to inspect, select the dropdown menu, and then choose **Explore field in VS Code**. The source code for the table field definition behind the page field is now opened.
 
 ## Troubleshoot from the Help and Support page
 
