@@ -210,7 +210,7 @@ GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}
 
 ### Response
 
-If the group exists in Microsoft Entra ID graph:
+If the group exists in Azure AD graph:
 
 ```
 {
@@ -219,7 +219,7 @@ If the group exists in Microsoft Entra ID graph:
 }
 ```
 
-If a previously assigned group no longer exists in Microsoft Entra ID graph:
+If a previously assigned group no longer exists in Azure AD graph:
 
 ```
 {
