@@ -89,7 +89,7 @@ Your on-premises deployment must meet the following prerequisites:
 
 - Microsoft Entra ID used to authenticate users.
 
-  The [!INCLUDE[server](../developer/includes/server.md)] instance, clients, and users must be configured for Microsoft Entra ID authentication, including OData.
+  The [!INCLUDE[server](../developer/includes/server.md)] instance, clients, and users must be configured for Microsoft Entra authentication, including OData.
 
   - For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (v20) and later, go to [Configure Microsoft Entra authentication with OpenID Connect](Authenticating-Users-with-Azure-ad-openid-connect.md).
 

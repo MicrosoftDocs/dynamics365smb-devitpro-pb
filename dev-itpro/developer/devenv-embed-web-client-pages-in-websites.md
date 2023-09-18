@@ -94,7 +94,7 @@ In order to show a list page in an HTML site on a different host, the configurat
 
 ## When using Microsoft Entra authentication
 
-This section describes what to do if [!INCLUDE[prod_short](includes/prod_short.md)] is set up to use Microsoft Entra ID authentication, but the page that hosts the iframe doesn't use Microsoft Entra ID. This section doesn't apply to host pages that use already use Microsoft Entra ID, such as Sharepoint or other Microsoft 365 products.
+This section describes what to do if [!INCLUDE[prod_short](includes/prod_short.md)] is set up to use Microsoft Entra authentication, but the page that hosts the iframe doesn't use Microsoft Entra ID. This section doesn't apply to host pages that use already use Microsoft Entra ID, such as Sharepoint or other Microsoft 365 products.
 
 In this scenario, [!INCLUDE[prod_short](includes/prod_short.md)] won't load inside the iframe until the user has first been authenticated in the parent frame. The reason is that the Microsoft Entra authentication (sign-in) dialog can't load inside the iframe. So, when [!INCLUDE[prod_short](includes/prod_short.md)] tries to redirect to the authentication dialog, and it gets blocked. This isn't a problem for pages hosted in sites that already use Microsoft Entra ID, like Microsoft Sharepoint, because users have been already authenticated to access the page in the first place.
 

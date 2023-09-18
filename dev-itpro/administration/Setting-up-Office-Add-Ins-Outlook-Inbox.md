@@ -65,7 +65,7 @@ The steps you'll need to go through to prepare for deploying the add-in will dep
 
 2. Prepare Business Central
 
-    - Set up Microsoft Entra ID authentication.
+    - Set up Microsoft Entra authentication.
 
        For more information, see [Authenticating Business Central Users with Microsoft Entra ID](authenticating-users-with-azure-active-directory.md).
     - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
@@ -87,7 +87,7 @@ The steps you'll need to go through to prepare for deploying the add-in will dep
 
 2. Business Central
 
-    - Set up Microsoft Entra ID authentication or NavUserPassword.
+    - Set up Microsoft Entra authentication or NavUserPassword.
 
       For more information, see [Authenticating Business Central Users with Microsoft Entra ID](authenticating-users-with-azure-active-directory.md).
     - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
