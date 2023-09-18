@@ -385,7 +385,7 @@ This Logic App runs a specified number of times a day (parameter in deployment p
 
 ### Prerequisites
 
-Business Central admin center API is configured for S2S authentication of Microsoft Entra ID apps. For more information, go to [Authenticate using service-to-service AAD Apps](administration-center-api.md#authenticate-using-service-to-service-aad-apps-client-credentials-flow).
+Business Central admin center API is configured for S2S authentication of Microsoft Entra apps. For more information, go to [Authenticate using service-to-service AAD Apps](administration-center-api.md#authenticate-using-service-to-service-aad-apps-client-credentials-flow).
 
 ### Preparation
 
@@ -393,7 +393,7 @@ You'll need the following information about Business Central and your Teams serv
 
 |Service|Information|
 |-|-|
-|Business Central|<ul><li>The Microsoft Entra ID (AD) tenant ID for Business Central</li><li>The application (client) ID of the registered application in Azure used for S2S authentication</li><li>The client secret of the registered application in Azure used for S2S authentication</li></ul>|
+|Business Central|<ul><li>The Microsoft Entra tenant ID for Business Central</li><li>The application (client) ID of the registered application in Azure used for S2S authentication</li><li>The client secret of the registered application in Azure used for S2S authentication</li></ul>|
 |Teams|<ul><li>The group ID of the team in Teams that you want to send the alerts to</li><li>The ID of the channel in Teams that you want to send the alerts to</li></ul> |
 
 > [!IMPORTANT]

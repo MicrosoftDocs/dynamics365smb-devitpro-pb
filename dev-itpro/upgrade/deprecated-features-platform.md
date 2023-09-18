@@ -115,7 +115,7 @@ The following feature will be **Replaced** with [!INCLUDE[prod_short](../develop
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Replaced | For Microsoft Entra ID (AD) authentication, Business Central supports the OpenID Connect protocol instead of WS-Federation. Support for OpenID Connect was introduced as the default configuration in version 20.0. Until version 22.0, you could choose to opt out of using OpenID Connect and still configure WS-Federation. As a consequence of removing WS-Federation support, we've also removed the Business Central Server setting `ClientServicesFederationMetadataLocation` and replaced it with the setting `ADOpenIdMetadataLocation`. For more information about setting up Microsoft Entra authentication with OpenID Connect, go to [Configure Microsoft Entra authentication with OpenID Connect](../administration/authenticating-users-with-azure-ad-openid-connect.md).|
+|Replaced | For Microsoft Entra authentication, Business Central supports the OpenID Connect protocol instead of WS-Federation. Support for OpenID Connect was introduced as the default configuration in version 20.0. Until version 22.0, you could choose to opt out of using OpenID Connect and still configure WS-Federation. As a consequence of removing WS-Federation support, we've also removed the Business Central Server setting `ClientServicesFederationMetadataLocation` and replaced it with the setting `ADOpenIdMetadataLocation`. For more information about setting up Microsoft Entra authentication with OpenID Connect, go to [Configure Microsoft Entra authentication with OpenID Connect](../administration/authenticating-users-with-azure-ad-openid-connect.md).|
 
 ### .NET add-ins not using .NET Standard (removal)
 
