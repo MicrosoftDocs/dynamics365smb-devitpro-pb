@@ -32,7 +32,7 @@ From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, d
 1. Then, you must specify, if you want to create a new project, or use an existing project. You will only be asked the first time, and from then on, the Visual Studio Code window that was last active will be used.
 1. Next, you must decide if you want to download symbols.  
     > [!NOTE]  
-    > If you specify yes, the app.json file will be updated with the dependent extensions of the page, which are shown on the **Extensions** tab in the **Page Inspector** page, and the symbols will automatically be downloaded. You can specify no, if you're already working on the specific source code files.  
+    > If you specify yes, the app.json file will be updated with the dependent extensions of the page, which are shown on the **Extensions** tab in the **Page Inspection** page, and the symbols will automatically be downloaded. You can specify no, if you're already working on the specific source code files.  
     > If you say no, and don't have the right symbols downloaded, you will not be able to navigate to the object source code.
 1. Now, you are prompted whether to do a snapshot or regular debugging session, or not to debug, but just view the source code.  
     > [!NOTE]  
