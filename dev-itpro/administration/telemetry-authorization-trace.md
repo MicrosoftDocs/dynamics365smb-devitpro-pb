@@ -47,7 +47,7 @@ Occurs when a user has been successfully authorized. This data is not emitted fo
 |Dimension|Description or value|
 |---------|-----|
 |authorizationStatus|**Succeeded**|
-|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
@@ -105,7 +105,7 @@ Occurs when a user sign-in has failed authorization. This data is not emitted fo
 |userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).|
 
 <!--
-|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
@@ -164,7 +164,7 @@ Occurs when the company has opened successfully. This data is emitted both for o
 |Dimension|Description or value|
 |---------|-----|
 |authorizationStatus|**Success**|
-|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that opened the session, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
 |component|**Dynamics 365 Business Central Server**.|

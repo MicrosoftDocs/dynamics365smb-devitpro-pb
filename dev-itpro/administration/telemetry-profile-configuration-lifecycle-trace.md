@@ -23,7 +23,7 @@ The following table explains custom dimensions that are common to all profile co
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |companyName|The name of the company where the operation is applied. Added in version 20.0. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|

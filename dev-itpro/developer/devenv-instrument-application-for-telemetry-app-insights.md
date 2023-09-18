@@ -84,7 +84,7 @@ The following table explains CustomDimensions that are automatically included in
  -->
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alCallerAppName|Specifies the name of the extension that emitted the telemetry signal to Application Insights. This is typically the base application.|
 |alCallerAppPublishser|Specifies the publisher of the extension that emitted the telemetry signal to Application Insights. This is typically the publisher of the base application, which is `Microsoft`.|
 |alCallerAppVersion|Specifies the version number of the extension that emitted the telemetry signal to Application Insights. This is typically the version of the base application.|

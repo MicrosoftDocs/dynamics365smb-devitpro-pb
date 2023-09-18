@@ -33,7 +33,7 @@ The following table explains the custom dimensions included in a **Web Services 
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that was run by request.<sup>[\[1\]](#1)</sup>|
 |alObjectName|Specifies the name of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
 |alObjectType|Specifies the type of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|

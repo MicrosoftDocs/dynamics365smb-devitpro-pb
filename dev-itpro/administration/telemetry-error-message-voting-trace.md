@@ -44,7 +44,7 @@ The following table explains the custom dimensions included in the trace.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**CL0002**|
-|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that threw the error.|
 |alObjectName|Specifies the ID of the AL object that threw the error.|
 |alObjectType|Specifies the ID of the AL object that threw the error.|

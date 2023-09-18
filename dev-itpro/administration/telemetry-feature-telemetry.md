@@ -93,7 +93,7 @@ Feature names should be short and easy to identify. For example, *Retention poli
 
 |Dimension  | Description or value  |
 |---------|---------|
-|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**.|
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**.|
 |alCategory     | **FeatureTelemetry**.  |
 |alFeatureName  | The name of the feature being tracked.  |
 |alSubCategory     | Holds one of the values **Uptake**, **Usage**, or **Error**.  |
@@ -239,7 +239,7 @@ This event is logged if more than one telemetry logger has been registered for p
 
 |Dimension  | Description or value  |
 |---------|---------|
-|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises solutions that do not use Microsoft Entra authentication, this value is **common**.|
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises solutions that do not use Microsoft Entra authentication, this value is **common**.|
 |alCallerAppName     | The name of the extension that emitted telemetry.      |
 |alCallerAppPublisher     | The name of the extension that emitted telemetry.      |
 |alCallerAppVersion     | The name of the extension that emitted telemetry.      | 
@@ -281,7 +281,7 @@ This event is logged if no telemetry logger has been registered for publisher.
 
 |Dimension  | Description or value  |
 |---------|---------|
-|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**.|
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**.|
 |alCallerAppName     | The name of the extension that emitted telemetry.      |
 |alCallerAppPublisher     | The name of the extension that emitted telemetry.      |
 |alCallerAppVersion     | The name of the extension that emitted telemetry.      | 

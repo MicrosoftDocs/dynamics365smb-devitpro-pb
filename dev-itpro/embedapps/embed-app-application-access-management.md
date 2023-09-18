@@ -70,7 +70,7 @@ As a VAR, once you've been registered by your ISV, you must explicitly give ever
 
 ### Prerequisite: Register an application for in your Microsoft Entra tenant
 
-You only have to do this step once. In your Microsoft Entra ID tenant, register an application that has delegated permission to the Dynamics 365 Business Central API. You'll use this application to call the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration Center API for each customer that you want to onboard.
+You only have to do this step once. In your Microsoft Entra tenant, register an application that has delegated permission to the Dynamics 365 Business Central API. You'll use this application to call the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration Center API for each customer that you want to onboard.
 
 Apart from registering an application, you'll also need an access token. For more information, see [Setting up Microsoft Entra ID based authentication](../administration/administration-center-api.md#azuread) and [Getting an access token](../administration/administration-center-api.md#getting-an-access-token-with-client-credentials-flow).
 

@@ -50,7 +50,7 @@ The following table explains additional custom dimensions that are common to all
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alCategory|**AL PermissionSet**|
 |alDataClassification|**SystemMetadata**|
 |alObjectId|**1351**, which is the ID of the system application codeunit that subscribes to the telemetry events.|
