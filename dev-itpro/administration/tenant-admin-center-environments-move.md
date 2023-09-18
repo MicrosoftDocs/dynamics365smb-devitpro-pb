@@ -1,5 +1,5 @@
 ---
-title: Move an environment to another Microsoft Entra ID organization
+title: Move an environment to another Microsoft Entra organization
 description: You can move a Business Central environment to another Microsoft Entra tenant. Start in the Business Central admin center.
 author: jswymer
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.date: 04/01/2021
 ms.author: jswymer
 ---
 
-# Move an Environment to another Microsoft Entra ID organization
+# Move an Environment to another Microsoft Entra organization
 
 In some cases, the Microsoft Entra ID organization (also known as the Microsoft Entra tenant) of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, such as the following:
 
