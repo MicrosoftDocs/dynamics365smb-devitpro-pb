@@ -92,16 +92,16 @@ For more information, see [Managing Users and Permissions](/dynamics365/business
 
 ## Will my on-premises users and permissions replicate?
 
-No. Since you aren't required to configure your on-premises solution with Microsoft Entra ID (Microsoft Entra ID), we can't guarantee a mapping between on-premises users and users in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online requires Microsoft Entra ID accounts, and users must be manually added. All permissions must be granted in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant, independent from your on-premises permissions.  
+No. Since you aren't required to configure your on-premises solution with Microsoft Entra ID , we can't guarantee a mapping between on-premises users and users in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online requires Microsoft Entra ID accounts, and users must be manually added. All permissions must be granted in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant, independent from your on-premises permissions.  
 
 For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 
 <!-- 
-No. Because you aren't required to configure your on-premises solution with Microsoft Entra ID (Microsoft Entra ID), we can't guarantee a mapping between on-premises users and users in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online requires Microsoft Entra ID accounts, and users must be manually added. All permissions must be granted in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant, independent from your on-premises permissions. But cloud migration does provide a way for you to easily map on-premises users to online user accounts.
+No. Because you aren't required to configure your on-premises solution with Microsoft Entra ID , we can't guarantee a mapping between on-premises users and users in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online requires Microsoft Entra ID accounts, and users must be manually added. All permissions must be granted in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant, independent from your on-premises permissions. But cloud migration does provide a way for you to easily map on-premises users to online user accounts.
 
 The following steps outline the general procedure:
 
-1. For each on-premises user account, create a user account in your Microsoft Entra ID tenant and assign the user a Business Central license.
+1. For each on-premises user account, create a user account in your Microsoft Entra tenant and assign the user a Business Central license.
 
    1. Sign in to [Microsoft admin center](https://admin.microsoft.com).
    2. In **User Management**, select **Add User** and follow the instructions.

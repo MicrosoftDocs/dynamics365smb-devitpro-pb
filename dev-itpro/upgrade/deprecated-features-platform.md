@@ -109,13 +109,13 @@ The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/
 |---------|---------|
 |Replaced | Apps that integrate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] should be based on [System Fields](../developer/devenv-table-system-fields.md) instead of integration records. Using system fields improves overall performance, reduces the size of table data, and improves the ability to audit changes. If you haven't already refactored your app and want to learn more, go to [Refactor Integration Management](../developer/devenv-integration-record-refactoring.md). |
 
-### WS-Federation with Microsoft Entra ID authentication
+### WS-Federation with Microsoft Entra authentication
 
 The following feature will be **Replaced** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Replaced | For Microsoft Entra ID (AD) authentication, Business Central supports the OpenID Connect protocol instead of WS-Federation. Support for OpenID Connect was introduced as the default configuration in version 20.0. Until version 22.0, you could choose to opt out of using OpenID Connect and still configure WS-Federation. As a consequence of removing WS-Federation support, we've also removed the Business Central Server setting `ClientServicesFederationMetadataLocation` and replaced it with the setting `ADOpenIdMetadataLocation`. For more information about setting up Microsoft Entra ID authentication with OpenID Connect, go to [Configure Microsoft Entra ID Authentication with OpenID Connect](../administration/authenticating-users-with-azure-ad-openid-connect.md).|
+|Replaced | For Microsoft Entra ID (AD) authentication, Business Central supports the OpenID Connect protocol instead of WS-Federation. Support for OpenID Connect was introduced as the default configuration in version 20.0. Until version 22.0, you could choose to opt out of using OpenID Connect and still configure WS-Federation. As a consequence of removing WS-Federation support, we've also removed the Business Central Server setting `ClientServicesFederationMetadataLocation` and replaced it with the setting `ADOpenIdMetadataLocation`. For more information about setting up Microsoft Entra authentication with OpenID Connect, go to [Configure Microsoft Entra authentication with OpenID Connect](../administration/authenticating-users-with-azure-ad-openid-connect.md).|
 
 ### .NET add-ins not using .NET Standard (removal)
 
@@ -153,13 +153,13 @@ The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/
 
 ## Changes in 2022 release wave 2 (version 21.0)
 
-### Microsoft Entra ID (Microsoft Entra ID) Authentication Library (ADAL) and Microsoft Entra ID Graph API
+### Microsoft Entra ID Authentication Library (ADAL) and Microsoft Entra ID Graph API
 
-The Microsoft Entra ID (Microsoft Entra ID) Authentication Library (ADAL) and Microsoft Entra ID Graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+The Microsoft Entra ID Authentication Library (ADAL) and Microsoft Entra ID Graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Replaced| To help developers take advantage of all the identity features available in Microsoft Entra ID, we’re now recommending that all developers use the Microsoft Authentication Library (MSAL) and the Microsoft Graph API in their application development. Moving forward, all new identity capabilities will only be available in MSAL and Microsoft Graph. We’re also providing guidance on end of support timelines for Microsoft Entra ID (Microsoft Entra ID) Authentication Library (ADAL) and Microsoft Entra ID Graph API, so that you can plan to update any applications that are still using either one of them. **Starting June 30th, 2022**, Microsoft will end support for ADAL and Microsoft Entra ID Graph and will no longer provide technical support or security updates. Apps using Microsoft Entra ID Graph after this time will no longer receive responses from the Microsoft Entra ID Graph endpoint. Apps using ADAL on existing OS versions will continue to work after this time but will not get any technical support or security updates. For more information, see [Update your applications to use Microsoft Authentication Library and Microsoft Graph API](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363)|
+|Replaced| To help developers take advantage of all the identity features available in Microsoft Entra ID, we’re now recommending that all developers use the Microsoft Authentication Library (MSAL) and the Microsoft Graph API in their application development. Moving forward, all new identity capabilities will only be available in MSAL and Microsoft Graph. We’re also providing guidance on end of support timelines for Microsoft Entra ID Authentication Library (ADAL) and Microsoft Entra ID Graph API, so that you can plan to update any applications that are still using either one of them. **Starting June 30th, 2022**, Microsoft will end support for ADAL and Microsoft Entra ID Graph and will no longer provide technical support or security updates. Apps using Microsoft Entra ID Graph after this time will no longer receive responses from the Microsoft Entra ID Graph endpoint. Apps using ADAL on existing OS versions will continue to work after this time but will not get any technical support or security updates. For more information, see [Update your applications to use Microsoft Authentication Library and Microsoft Graph API](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363)|
 
 
 ### Business Central Server Administration tool (removal)
@@ -356,13 +356,13 @@ We have simplified the story for how to deploy Help for a customer-specific solu
 
 The following sections describe the features that were deprecated in 2020 release wave 1.
 
-### Microsoft Entra ID (Microsoft Entra ID) Authentication Library (ADAL) and Microsoft Entra ID Graph API
+### Microsoft Entra ID Authentication Library (ADAL) and Microsoft Entra ID Graph API
 
-The Microsoft Entra ID (Microsoft Entra ID) Authentication Library (ADAL) and Microsoft Entra ID Graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+The Microsoft Entra ID Authentication Library (ADAL) and Microsoft Entra ID Graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Replaced| To help developers take advantage of all the identity features available in Microsoft Entra ID, we’re now recommending that all developers to use the Microsoft Authentication Library (MSAL) and the Microsoft Graph API in their application development. Moving forward, all new identity capabilities will only be available in MSAL and Microsoft Graph. We’re also providing guidance on end of support timelines for Microsoft Entra ID (Microsoft Entra ID) Authentication Library (ADAL) and Microsoft Entra ID Graph API, so you can plan to update any applications that are still using either one of them. **Starting, June 30th, 2020**, Microsoft will no longer add any new features to ADAL and Microsoft Entra ID Graph. We'll continue to provide technical support and security updates but will no longer provide feature updates. For more information, see [Update your applications to use Microsoft Authentication Library and Microsoft Graph API](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363)|
+|Replaced| To help developers take advantage of all the identity features available in Microsoft Entra ID, we’re now recommending that all developers to use the Microsoft Authentication Library (MSAL) and the Microsoft Graph API in their application development. Moving forward, all new identity capabilities will only be available in MSAL and Microsoft Graph. We’re also providing guidance on end of support timelines for Microsoft Entra ID Authentication Library (ADAL) and Microsoft Entra ID Graph API, so you can plan to update any applications that are still using either one of them. **Starting, June 30th, 2020**, Microsoft will no longer add any new features to ADAL and Microsoft Entra ID Graph. We'll continue to provide technical support and security updates but will no longer provide feature updates. For more information, see [Update your applications to use Microsoft Authentication Library and Microsoft Graph API](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363)|
 
 
 ## Changes in 2019 release wave 2 (version 15.0)

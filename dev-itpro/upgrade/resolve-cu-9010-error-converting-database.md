@@ -81,7 +81,7 @@ OBJECT Codeunit 9010 Microsoft Entra ID User Management
       Graph@1000 : DotNet "'Microsoft.Dynamics.Nav.AzureADGraphClient, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Dynamics.Nav.AzureADGraphClient.GraphQuery";
       IsInitialized@1003 : Boolean;
       UserDoesNotObjectIdSetErr@1004 : TextConst '@@@="%1 =  The specified User Security ID";ENU=The user with the security ID %1 does not have a valid object ID in Microsoft Entra ID.';
-      CouldNotFindGraphUserErr@1005 : TextConst '@@@="%1 = The specified object id";ENU=An Microsoft Entra ID user with the object ID %1 was not found.';
+      CouldNotFindGraphUserErr@1005 : TextConst '@@@="%1 = The specified object id";ENU=a Microsoft Entra ID user with the object ID %1 was not found.';
       IsTest@1002 : Boolean;
 
     [Internal]

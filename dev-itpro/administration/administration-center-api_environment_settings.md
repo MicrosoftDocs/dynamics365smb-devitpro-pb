@@ -196,7 +196,7 @@ PUT /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}
 
 **INTRODUCED IN:** API version 2.8
 
-Gets the Microsoft Entra ID group currently assigned to an environment.
+Gets the Microsoft Entra group currently assigned to an environment.
 
 ```
 GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
@@ -234,7 +234,7 @@ If no group is configured for the tenant, returns 204.
 
 **INTRODUCED IN:** API version 2.8
 
-Assigns an Microsoft Entra ID group to an environment.
+Assigns a Microsoft Entra group to an environment.
 
 ```
 Content-Type: application/json
@@ -251,7 +251,7 @@ POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName
 
 ```
 {
-  "Value": GUID, // The object Id of the Microsoft Entra ID group, "11111111-aaaa-2222-bbbb-222222222222"
+  "Value": GUID, // The object Id of the Microsoft Entra group, "11111111-aaaa-2222-bbbb-222222222222"
 }
 ```
 
@@ -263,7 +263,7 @@ Returns 200 if successful, or 404 if the group doesn't exist in Microsoft Entra 
 
 **INTRODUCED IN:** API version 2.8
 
-Clears an Microsoft Entra ID group that is currently assigned to an environment.
+Clears a Microsoft Entra group that is currently assigned to an environment.
 
 ```
 DELETE /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess

@@ -87,15 +87,15 @@ Sometimes, users run into problems with the Excel add-in. In this section, we pr
 
 Your on-premises deployment must meet the following prerequisites:
 
-- Microsoft Entra ID (Microsoft Entra ID) used to authenticate users.
+- Microsoft Entra ID used to authenticate users.
 
-  The [!INCLUDE[server](../developer/includes/server.md)] instance, clients, and users must be configured for Microsoft Entra ID (Microsoft Entra ID) authentication, including OData.
+  The [!INCLUDE[server](../developer/includes/server.md)] instance, clients, and users must be configured for Microsoft Entra ID authentication, including OData.
 
-  - For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (v20) and later, go to [Configure Microsoft Entra ID Authentication with OpenID Connect](Authenticating-Users-with-Azure-ad-openid-connect.md).
+  - For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (v20) and later, go to [Configure Microsoft Entra authentication with OpenID Connect](Authenticating-Users-with-Azure-ad-openid-connect.md).
 
        > [!IMPORTANT]
        > Be sure to set `WSFederationLoginEndpoint` parameter of [!INCLUDE[server](../developer/includes/server.md)] instance. Otherwise, you'll get an error that the realm is not defined when trying to edit data using **Edit in Excel**.
-  - For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 (v19) and earlier, go to [Configure Microsoft Entra ID Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
+  - For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 (v19) and earlier, go to [Configure Microsoft Entra authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
 - OData enabled and uses Secure Sockets Layer (SSL) for authentication.
 
    For more information, go to [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).  
@@ -114,10 +114,10 @@ Your on-premises deployment must meet the following prerequisites:
 
 ## Expose the Business Central application Web API in Microsoft Entra ID
 
-When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Microsoft Entra ID authentication, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application is registered as an application in an Microsoft Entra ID. Before the Excel add-in can be configured, you must configure the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Microsoft Entra ID to expose its Web API.
+When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Microsoft Entra authentication, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application is registered as an application in a Microsoft Entra ID. Before the Excel add-in can be configured, you must configure the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Microsoft Entra ID to expose its Web API.
 
 > [!NOTE]
-> The API may have already been exposed as part of the Microsoft Entra ID authentication setup. You can also use the following steps to verify.
+> The API may have already been exposed as part of the Microsoft Entra authentication setup. You can also use the following steps to verify.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Search for and select **Microsoft Entra ID**.
@@ -129,7 +129,7 @@ For information about how to expose the Web API, go to [Quickstart: Configure an
 
 ## Register and configure an application in Microsoft Azure
 
-When Microsoft Entra ID authentication was set up for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment, an Microsoft Entra ID tenant was created in Microsoft Azure, and an application for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] was registered in the tenant. The Excel add-in requires that you add (register) a separate Microsoft Entra ID application in the Microsoft Entra ID tenant. For more guidelines, go to [Register your application with your Microsoft Entra ID tenant](/azure/active-directory/active-directory-app-registration).
+When Microsoft Entra authentication was set up for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment, a Microsoft Entra tenant was created in Microsoft Azure, and an application for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] was registered in the tenant. The Excel add-in requires that you add (register) a separate Microsoft Entra application in the Microsoft Entra tenant. For more guidelines, go to [Register your application with your Microsoft Entra tenant](/azure/active-directory/active-directory-app-registration).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Search for and select **Microsoft Entra ID**.
@@ -168,7 +168,7 @@ When Microsoft Entra ID authentication was set up for your [!INCLUDE[prod_short]
 
 6. Grant the Excel add-in application permission to access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application Web API.
 
-    Give the Microsoft Entra ID application for the Excel add-in delegated permission to access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application Web API, which you exposed earlier in this article. This permission allows users of the Excel add-in to access the OData web services to read and write data.  
+    Give the Microsoft Entra application for the Excel add-in delegated permission to access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application Web API, which you exposed earlier in this article. This permission allows users of the Excel add-in to access the OData web services to read and write data.  
 
     1. From the application's **Overview** page, select **API Permissions**.
     2. Select the **Add a permission**
@@ -221,7 +221,7 @@ You add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.m
     ```
 
    > [!NOTE]
-   > Make sure the  **Microsoft Entra ID App ID URI** is set to the App ID URI of the registered app for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Microsoft Entra ID tenant.
+   > Make sure the  **Microsoft Entra app ID URI** is set to the App ID URI of the registered app for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Microsoft Entra tenant.
 
 2. In the **Client Services** section, set the **Web Client Base URL** field to the base URL of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 

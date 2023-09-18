@@ -139,7 +139,7 @@ The ability to debug certain methods and/or variables can be restricted. For mor
 
 ## Authenticate with Microsoft Entra ID on Business Central on-premises
 
-You can use Microsoft Entra ID as the authentication mechanism for [!INCLUDE[prod_short](includes/prod_short.md)] on-premises or containers. For more information, see [Microsoft Entra ID authentication for Business Central on-premises](devenv-aad-auth-onprem.md).
+You can use Microsoft Entra ID as the authentication mechanism for [!INCLUDE[prod_short](includes/prod_short.md)] on-premises or containers. For more information, see [Microsoft Entra authentication for Business Central on-premises](devenv-aad-auth-onprem.md).
 
 ## See Also
 

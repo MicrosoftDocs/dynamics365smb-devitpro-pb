@@ -42,10 +42,10 @@ The following table explains the custom dimensions included in the trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra ID (Microsoft Entra ID) tenant ID used for Microsoft Entra ID authentication. For on-premises, if you aren't using Microsoft Entra ID authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that was run by request.|
 |authenticationStatus|**Succeeded**|
-|authenticationType|Specifies whether the service uses NavUserPassword or AccessControl (Microsoft Entra ID) authentication.|
+|authenticationType|Specifies whether the service uses NavUserPassword or AccessControl  authentication.|
 |category|Specifies the service type. Values include: **Api**, **ODataV4**, **ODataV3**, and **SOAP**.|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
@@ -80,10 +80,10 @@ The following table explains the custom dimensions included in the trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra ID (Microsoft Entra ID) tenant ID used for Microsoft Entra ID authentication. For on-premises, if you aren't using Microsoft Entra ID authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that was run by request.|
 |authenticationStatus|**Failed**|
-|authenticationType|Specifies whether the service uses NavUserPassword or AccessControl (Microsoft Entra ID) authentication.|
+|authenticationType|Specifies whether the service uses NavUserPassword or AccessControl  authentication.|
 |category|Specifies the service type. Values include: **Api**, **ODataV4**, **ODataV3**, and **SOAP**.|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|

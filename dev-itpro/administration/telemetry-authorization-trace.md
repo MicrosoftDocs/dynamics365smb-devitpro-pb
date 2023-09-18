@@ -47,7 +47,7 @@ Occurs when a user has been successfully authorized. This data is not emitted fo
 |Dimension|Description or value|
 |---------|-----|
 |authorizationStatus|**Succeeded**|
-|aadTenantId|Specifies the Microsoft Entra ID (Microsoft Entra ID) tenant ID used for Microsoft Entra ID authentication. For on-premises, if you aren't using Microsoft Entra ID authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
@@ -105,7 +105,7 @@ Occurs when a user sign-in has failed authorization. This data is not emitted fo
 |userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).|
 
 <!--
-|aadTenantId|Specifies the Microsoft Entra ID (Microsoft Entra ID) tenant ID used for Microsoft Entra ID authentication. For on-premises, if you aren't using Microsoft Entra ID authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
@@ -140,7 +140,7 @@ Entitlements are assigned to the user account in the Microsoft 365 admin center 
 
 ### The user is not a direct/indirect member of the security group associated with the environment, or the group does not exist, hence restricting the user access to the environment
 
-In Microsoft Entra ID (Microsoft Entra ID), you can create security that include users that you want to give access to your environments. Then, from the Business Central Admin center, you can associate the groups with your environments. This error occurs if the user who tries to sign in isn't a member of the security group, or the security group assigned to the environment doesn't exist in Microsoft Entra ID. For more information, see [Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md).
+In Microsoft Entra ID , you can create security that include users that you want to give access to your environments. Then, from the Business Central Admin center, you can associate the groups with your environments. This error occurs if the user who tries to sign in isn't a member of the security group, or the security group assigned to the environment doesn't exist in Microsoft Entra ID. For more information, see [Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md).
 
 ## Authorization Succeeded (Open Company)
 
@@ -164,7 +164,7 @@ Occurs when the company has opened successfully. This data is emitted both for o
 |Dimension|Description or value|
 |---------|-----|
 |authorizationStatus|**Success**|
-|aadTenantId|Specifies the Microsoft Entra ID (Microsoft Entra ID) tenant ID used for Microsoft Entra ID authentication. For on-premises, if you aren't using Microsoft Entra ID authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that opened the session, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
 |component|**Dynamics 365 Business Central Server**.|
@@ -250,7 +250,7 @@ This message indicates that the tenant has been locked by Microsoft, typically f
 
 For help with resolving this issue, read the following articles or contact Microsoft Support: 
 
-- [Troubleshoot account lockout problems with an Microsoft Entra ID Domain Services managed domain](/azure/active-directory-domain-services/troubleshoot-account-lockout)
+- [Troubleshoot account lockout problems with a Microsoft Entra ID Domain Services managed domain](/azure/active-directory-domain-services/troubleshoot-account-lockout)
 
 - ["It looks like your account has been blocked" error when signing in to Microsoft 365](/office365/troubleshoot/access-management/account-blocked-error-when-sign-in)
 

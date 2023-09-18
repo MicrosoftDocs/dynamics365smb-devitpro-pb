@@ -17,7 +17,7 @@ The web is constantly evolving to improve the user experience, security, and pri
 
 - When using the Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] Outlook Add-In.
 - Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] as a SharePoint app.
-- Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] is using Microsoft Entra ID authentication.
+- Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] is using Microsoft Entra authentication.
 - Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] is embedded in an iframe as part of another web site.
 
 ## Which browsers are impacted by the change
@@ -55,7 +55,7 @@ To prevent disruption, you must upgrade the platform for your version of Dynamic
 |Dynamics 365 Business Central 2019 Release Wave 2|[15.2](https://support.microsoft.com/help/4533389/update-15-1-for-microsoft-dynamics-365-business-central-2019-release-w)|
 
 > [!NOTE]
-> Currently, Chrome 80 implements a temporary mitigation to allow LAX+Post requests in a 2 minute window. This should be enough to make Microsoft Entra ID authentication work. However, this mitigation will be removed at some point. For more information from Chrome, see [SameSite Updates](https://www.chromium.org/updates/same-site).
+> Currently, Chrome 80 implements a temporary mitigation to allow LAX+Post requests in a 2 minute window. This should be enough to make Microsoft Entra authentication work. However, this mitigation will be removed at some point. For more information from Chrome, see [SameSite Updates](https://www.chromium.org/updates/same-site).
 
 
 ### Additional changes required to load balancer configuration

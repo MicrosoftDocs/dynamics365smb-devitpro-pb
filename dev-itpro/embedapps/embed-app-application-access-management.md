@@ -68,9 +68,9 @@ In your LCS project, you can specify that VARs can or cannot approve customers w
 
 As a VAR, once you've been registered by your ISV, you must explicitly give every customer access to create [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environments. Access is given by using the application access management API. The required steps are outlined in the sections that follow.
 
-### Prerequisite: Register an application for in your Microsoft Entra ID tenant
+### Prerequisite: Register an application for in your Microsoft Entra tenant
 
-You only have to do this step once. In your Microsoft Entra ID (Microsoft Entra ID) tenant, register an application that has delegated permission to the Dynamics 365 Business Central API. You'll use this application to call the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration Center API for each customer that you want to onboard.
+You only have to do this step once. In your Microsoft Entra ID tenant, register an application that has delegated permission to the Dynamics 365 Business Central API. You'll use this application to call the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration Center API for each customer that you want to onboard.
 
 Apart from registering an application, you'll also need an access token. For more information, see [Setting up Microsoft Entra ID based authentication](../administration/administration-center-api.md#azuread) and [Getting an access token](../administration/administration-center-api.md#getting-an-access-token-with-client-credentials-flow).
 
@@ -91,10 +91,10 @@ With application access management enabled, the typical process for getting cust
 
     For more information, see [Application Access Management API](embed-app-application-access-management-api.md). The article explains the API calls that you can make to get the list of the available [!INCLUDE[embedapp](../developer/includes/embedapp.md)]s and enable or disable a specific [!INCLUDE[embedapp](../developer/includes/embedapp.md)] for the customer.
 
-    This work is done using your Microsoft Entra ID application and delegated admin access and credentials.
+    This work is done using your Microsoft Entra application and delegated admin access and credentials.
 3. Create the first [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environment for the customer by signing in to it for the first time, using the branded [!INCLUDE[embedapp](../developer/includes/embedapp.md)] URL:
 
-    `https://[application family].bc.dynamics.com/[Customer Microsoft Entra ID Tenant ID]/Production`
+    `https://[application family].bc.dynamics.com/[Customer Microsoft Entra tenant ID]/Production`
 
 ## See Also
 

@@ -113,13 +113,13 @@ Once you've established the reseller relationship with the customer and added [!
 To create a new production environment for your customers, go to this URL:
 
 ```http
-https://[your application family].bc.dynamics.com/[Customer's Microsoft Entra ID Tenant ID]/Production
+https://[your application family].bc.dynamics.com/[Customer's Microsoft Entra tenant ID]/Production
 ```
 
 To open your customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] Administration center, go to this URL:
 
 ```http
-https://[your application family].bc.dynamics.com/[Customer's Microsoft Entra ID Tenant ID]/admin
+https://[your application family].bc.dynamics.com/[Customer's Microsoft Entra tenant ID]/admin
 ```
 
 Each environment that you signed up for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is then displayed on the Tenant list part in your LCS project. On this part, you can find more details about the environment, including the name and the URL to sign in to each one. You can see which environments are running on which application version by selecting application version on the list.  

@@ -13,9 +13,9 @@ ms.custom: bap-template
 
 This article describes admin center features that you use for controlling user access to environments. In addition to what you do in the admin center, these features typically require configuration and set up in either Business Central or another product or service.
 
-## Manage access using Microsoft Entra ID groups
+## Manage access using Microsoft Entra groups
 
-To manage access at the environment level, you can assign an Microsoft Entra ID (Microsoft Entra ID) group to the environment. By assigning an Microsoft Entra ID group to an environment, only direct and indirect members of the group are granted access to the environment. Indirect members are users in another group, which itself is a member of the group assigned to the environment. Although all licensed users in Microsoft Entra ID will be added to the environment when it's synchronized with Microsoft 365, only group members can sign in.
+To manage access at the environment level, you can assign a Microsoft Entra ID group to the environment. By assigning a Microsoft Entra group to an environment, only direct and indirect members of the group are granted access to the environment. Indirect members are users in another group, which itself is a member of the group assigned to the environment. Although all licensed users in Microsoft Entra ID will be added to the environment when it's synchronized with Microsoft 365, only group members can sign in.
 
 From the **Environments** page, you'll see the currently assigned group in the **Security Group** column. **Not set** indicates that no group has been assigned. **Not available** indicates that the group that was assigned is no longer available in the Microsoft Entra ID.
 
@@ -24,7 +24,7 @@ From the **Environments** page, you'll see the currently assigned group in the *
  
 ### Assign, change, or remove a group
 
-Before you can assign an Microsoft Entra ID group to an environment, the group must be created in your Microsoft Entra ID tenant. For more information, see [Create a basic group and add members using Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in the Azure documentation.
+Before you can assign a Microsoft Entra group to an environment, the group must be created in your Microsoft Entra tenant. For more information, see [Create a basic group and add members using Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in the Azure documentation.
 
 1. Select **Environments**, then select the environment on which you want to assign, change, or remove the group.
 2. On the **Environment Details** page, the currently assigned group is shown under **Security Group**.

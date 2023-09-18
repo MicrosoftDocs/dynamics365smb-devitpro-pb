@@ -1,5 +1,5 @@
 ---
-title: Configure Microsoft Entra ID Authentication with OpenID Connect
+title: Configure Microsoft Entra authentication with OpenID Connect
 description: Learn how to authentication Business Central users by using Microsoft Entra ID with OpenID Connect.
 ms.custom: bap-template
 ms.date: 02/09/2023
@@ -8,25 +8,25 @@ ms.author: jswymer
 ms.topic: how-to
 author: jswymer
 ---
-# Configure Microsoft Entra ID Authentication with OpenID Connect
+# Configure Microsoft Entra authentication with OpenID Connect
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-This article explains how to configure Business Central to use Microsoft Entra ID to authenticate users. This setup configures Microsoft Entra ID authentication to use [OpenID connect](). 
+This article explains how to configure Business Central to use Microsoft Entra ID to authenticate users. This setup configures Microsoft Entra authentication to use [OpenID connect](). 
 
 ## Preparation
 
 - Obtain and set up security certificates on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment
 
-    Microsoft Entra ID authentication requires the use of service certificates to help secure client connections over a wide area network (WAN). In a production environment, you should obtain a certificate from a certification authority or trusted provider. In a test environment, if you don't have a certificate, then you can create your own self-signed certificate. The implementation of certificates involves installation and configuration of the certificates on the [!INCLUDE[server](../developer/includes/server.md)] server and client computers.
+    Microsoft Entra authentication requires the use of service certificates to help secure client connections over a wide area network (WAN). In a production environment, you should obtain a certificate from a certification authority or trusted provider. In a test environment, if you don't have a certificate, then you can create your own self-signed certificate. The implementation of certificates involves installation and configuration of the certificates on the [!INCLUDE[server](../developer/includes/server.md)] server and client computers.
 
     Follow the instructions for obtaining and installing the certificates [Using Certificates to Secure Connections](../deployment/implement-security-certificates-production-environment.md). However, for now, **don't** change the credential type used by [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[webserver](../developer/includes/webserver.md)] yet. You'll change it later in this article.
 
-## Task 1: Create an Microsoft Entra ID Tenant
+## Task 1: Create a Microsoft Entra tenant
 
-To get started, you need an Microsoft Entra ID tenant. The Microsoft Entra ID tenant is where you manage user accounts and register apps, like [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+To get started, you need a Microsoft Entra tenant. The Microsoft Entra tenant is where you manage user accounts and register apps, like [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-There are a couple ways to get an Microsoft Entra ID tenant:
+There are a couple ways to get a Microsoft Entra tenant:
 
 - Sign up a Microsoft 365 plan
 
@@ -34,34 +34,34 @@ There are a couple ways to get an Microsoft Entra ID tenant:
 
     If you want to sign up for a Microsoft 365 plan, you can use a plan such as Microsoft 365 Enterprise E1 as your test site, or sign up for a trial developer plan. A trial plan includes an administrative account that you'll use to access the Azure management portal. If your Microsoft 365 site is *solutions.onmicrosoft.com*, for example, your administrative account can be *admin\@solutions\.onmicrosoft\.com*. For more information, see [Select a Microsoft 365 plan for business](https://go.microsoft.com/fwlink/?LinkId=309050).
 
-- Sign up for an Azure subscription that isn't associated with a Microsoft 365 subscription and create your own Microsoft Entra ID tenant. For more information, see the next section.
+- Sign up for an Azure subscription that isn't associated with a Microsoft 365 subscription and create your own Microsoft Entra tenant. For more information, see the next section.
 
-### Create your own Microsoft Entra ID tenants
+### Create your own Microsoft Entra tenants
 
-If you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises deployment configured for multitenancy, you can choose to use the same Microsoft Entra ID tenant for all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants. Or you can create a separate Microsoft Entra ID tenant for each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant.
+If you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises deployment configured for multitenancy, you can choose to use the same Microsoft Entra tenant for all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants. Or you can create a separate Microsoft Entra tenant for each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant.
 
 1. Sign up for an Azure subscription at [https://azure.microsoft.com](https://azure.microsoft.com).
 2. Sign in to [Azure portal](https://portal.azure.com).
-3. Create a directory by following the instructions at [How to get an Microsoft Entra ID tenant](/azure/active-directory/develop/active-directory-howto-tenant).
+3. Create a directory by following the instructions at [How to get a Microsoft Entra tenant](/azure/active-directory/develop/active-directory-howto-tenant).
 
-    This step will create an Microsoft Entra ID tenant. When you create an Microsoft Entra ID in the Azure portal, you specify an initial domain name that identifies your Microsoft Entra ID tenant, such as *solutions.onmicrosoft.com* or *cronusinternationltd.onmicrosoft.com*. You'll use the domain name when you add users to your Microsoft Entra ID and when you configure the [!INCLUDE[server](../developer/includes/server.md)] instance. In the tasks that follow, this value is referred to as the Microsoft Entra ID Tenant ID. 
+    This step will create a Microsoft Entra tenant. When you create a Microsoft Entra ID in the Azure portal, you specify an initial domain name that identifies your Microsoft Entra tenant, such as *solutions.onmicrosoft.com* or *cronusinternationltd.onmicrosoft.com*. You'll use the domain name when you add users to your Microsoft Entra ID and when you configure the [!INCLUDE[server](../developer/includes/server.md)] instance. In the tasks that follow, this value is referred to as the Microsoft Entra tenant ID. 
 
-4. After you've created the Microsoft Entra ID tenant, add users.
+4. After you've created the Microsoft Entra tenant, add users.
 
     For more information, see [Quickstart: Add new users to Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory). Later, you'll have to map the users in Microsoft Entra ID to your users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-## Task 2: Register an application in the Microsoft Entra ID tenant  
+## Task 2: Register an application in the Microsoft Entra tenant  
 
-In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution as an application in the Microsoft Entra ID tenant.
+In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution as an application in the Microsoft Entra tenant.
 
 > [!NOTE]
-> If you're configuring a multitenant deployment, where each tenant will use a different Azure Tenant, you only register an application on one of the Microsoft Entra ID tenants. Then, you'll make the application available to the other Microsoft Entra ID tenants by making it a *Multitenant* application.
+> If you're configuring a multitenant deployment, where each tenant will use a different Azure Tenant, you only register an application on one of the Microsoft Entra tenants. Then, you'll make the application available to the other Microsoft Entra tenants by making it a *Multitenant* application.
 
 1. Sign in to [Azure portal](https://portal.azure.com) and open the Active Directory tenant.
 
 2. To register the application, follow the guidelines at [Registering Business Central On-Premises in Microsoft Entra ID for Integrating with Other Services](/dynamics365/business-central/dev-itpro/administration/register-app-azure).
 
-    When you add an application to an Microsoft Entra ID tenant, you specify the following information. The configuration is slightly different in for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] single-tenant and multitenant deployment.
+    When you add an application to a Microsoft Entra tenant, you specify the following information. The configuration is slightly different in for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] single-tenant and multitenant deployment.
 
     # [Single-tenant](#tab/singletenant)
 
@@ -76,7 +76,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
     | Setting | Description |
     |--|--|
     |Name|Specifies the name of your application as it will display to your users, such as **Business Central App by My Solutions**.|
-    |Supported account types|Specifies the accounts that you would like your application to support. If you're going to use different Microsoft Entra ID tenants for different [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants, then select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)**. Otherwise, you can choose **Accounts in this organizational directory only (Single tenant)**.|
+    |Supported account types|Specifies the accounts that you would like your application to support. If you're going to use different Microsoft Entra tenants for different [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants, then select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)**. Otherwise, you can choose **Accounts in this organizational directory only (Single tenant)**.|
     |Redirect URI|Specifies the type of application that you're registering and the redirect URI (or reply URL) for your application. Set the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC220/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/BC220/SignIn` or `https://MyBcWebServer/BC220/SignIn`.<br /> <br />**Important** The portion of the reply URL after the domain name (in this case `BC220/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
 
     ---
@@ -87,7 +87,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
    2. Under **Implicit grant and hybrid flows**, select **ID tokens (used for implicit and hybrid flows)**.
    3. Select **Save**.
 
-4. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution is now registered in your Microsoft Entra ID tenant. To complete the steps that follow, you'll need the following information:
+4. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution is now registered in your Microsoft Entra tenant. To complete the steps that follow, you'll need the following information:
 
    - Tenant's domain (**Directory (tenant) ID**)
    - **Redirect URI**
@@ -100,7 +100,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
 
 ## <a name="task3"></a>Task 3: Associate Microsoft Entra ID Users with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users
   
-Each user in your Microsoft Entra ID tenant that will access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] must be set up with an account in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+Each user in your Microsoft Entra tenant that will access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] must be set up with an account in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 You can postpone this task for most users and do it after you complete Microsoft Entra ID setup. But you must do this task now for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account. If you don't, you won't be able to sign in to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] after you switch to Microsoft Entra ID.
 
@@ -132,7 +132,7 @@ For more information, see [Create Users According to Licenses](/dynamics365/busi
 
 ## Task 4: Configure [!INCLUDE[server](../developer/includes/server.md)]
 
-Once you have the Microsoft Entra ID tenant and a registered application for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you configure the [!INCLUDE[server](../developer/includes/server.md)] instance for Microsoft Entra ID authentication.
+Once you have the Microsoft Entra tenant and a registered application for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you configure the [!INCLUDE[server](../developer/includes/server.md)] instance for Microsoft Entra authentication.
 
 1. Run [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
  
@@ -178,7 +178,7 @@ Once you have the Microsoft Entra ID tenant and a registered application for [!I
 
         # [Single-tenant](#tab/singletenant)
 
-        Replace `<AAD TENANT ID>` with the ID of the Microsoft Entra ID tenant ID or its domain, for example, `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.
+        Replace `<AAD TENANT ID>` with the ID of the Microsoft Entra tenant ID or its domain, for example, `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.
 
         For example:
 
@@ -199,8 +199,8 @@ Once you have the Microsoft Entra ID tenant and a registered application for [!I
         <!--
         |Value|Description|
         |-|-|
-        |`{AADTENANTID}`|Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant corresponds to an Microsoft Entra ID tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Microsoft Entra ID tenant. The Microsoft Entra ID Tenant ID is specified when you mount the tenant. ID parameter that is specified when mounting a tenant replaces the placeholder.
-        |`common`|Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Microsoft Entra ID configured as a multitenant application, but tenants will use the same Microsoft Entra ID tenant|
+        |`{AADTENANTID}`|Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant corresponds to a Microsoft Entra tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Microsoft Entra tenant. The Microsoft Entra tenant ID is specified when you mount the tenant. ID parameter that is specified when mounting a tenant replaces the placeholder.
+        |`common`|Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Microsoft Entra ID configured as a multitenant application, but tenants will use the same Microsoft Entra tenant|
         -->
 
         For example:
@@ -230,9 +230,9 @@ Once you have the Microsoft Entra ID tenant and a registered application for [!I
 
         |Parameter|Description|
         |-|-|-|
-        |`<AAD TENANT ID>`|The ID of the Microsoft Entra ID tenant ID or its domain, like `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.|
+        |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, like `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.|
         |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44444444-cccc-5555-dddd-666666666666` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
-        |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Microsoft Entra ID tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Microsoft Entra ID.|
+        |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Microsoft Entra tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Microsoft Entra ID.|
 
        > [!IMPORTANT]
        > The string parameter must be URI-encoded. This means, for example, use "%26" instead of "&".
@@ -243,7 +243,7 @@ Once you have the Microsoft Entra ID tenant and a registered application for [!I
         Set-NAVServerConfiguration -ServerInstance BC210 -KeyName WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC210/SignIn"
         ```
 
-4. To configure SOAP and OData web services for Microsoft Entra ID authentication, specify the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Microsoft Entra ID.
+4. To configure SOAP and OData web services for Microsoft Entra authentication, specify the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Microsoft Entra ID.
 
     ```powershell
     Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName AppIdUri -KeyValue "<Application ID URI>"
@@ -294,7 +294,7 @@ Once you have the Microsoft Entra ID tenant and a registered application for [!I
 
     # [Single-tenant](#tab/singletenant)
 
-    Replace `<AAD TENANT ID>` with the ID of the Microsoft Entra ID tenant ID or its domain, for example, `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.
+    Replace `<AAD TENANT ID>` with the ID of the Microsoft Entra tenant ID or its domain, for example, `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.
 
     For example:
 
@@ -310,8 +310,8 @@ Once you have the Microsoft Entra ID tenant and a registered application for [!I
 
     |Value|Description|
     |-|-|
-    |`{AADTENANTID}`|Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant corresponds to an Microsoft Entra ID tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Microsoft Entra ID tenant. The Microsoft Entra ID Tenant ID is specified when you mount the tenant. ID parameter that is specified when mounting a tenant replaces the placeholder.
-    |`common`|Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Microsoft Entra ID configured as a multitenant application, but tenants will use the same Microsoft Entra ID tenant|
+    |`{AADTENANTID}`|Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant corresponds to a Microsoft Entra tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Microsoft Entra tenant. The Microsoft Entra tenant ID is specified when you mount the tenant. ID parameter that is specified when mounting a tenant replaces the placeholder.
+    |`common`|Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Microsoft Entra ID configured as a multitenant application, but tenants will use the same Microsoft Entra tenant|
 
     -->
     For example:
@@ -339,8 +339,8 @@ If you have a multitenant [!INCLUDE[prod_short](../developer/includes/prod_short
 
 Mount your tenants by using the [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant).
 
-- If you'll be using the same Microsoft Entra ID tenant for all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants, you can omit the `-AadTenantId` parameter.
-- If you'll be using different Microsoft Entra ID tenants, set the `-AadTenantId` parameter to the ID or domain name of the Microsoft Entra ID tenant that you want to use for the tenant.
+- If you'll be using the same Microsoft Entra tenant for all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants, you can omit the `-AadTenantId` parameter.
+- If you'll be using different Microsoft Entra tenants, set the `-AadTenantId` parameter to the ID or domain name of the Microsoft Entra tenant that you want to use for the tenant.
 - Also, if you've set up different host names that you want to use accessing the tenant, use the `-AlternateId` parameter. See [Using alternate tenant IDs](#altid).
 
 For example:
@@ -356,11 +356,11 @@ Mount-NAVTenant -ServerInstance BC210  -Tenant Tenant1 –DatabaseServer ..\BCDE
   
 ### User accounts
 
-Set up remaining [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user accounts, which you didn't cover in [Task 3](#task3), with Microsoft Entra ID authentication email accounts.
+Set up remaining [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user accounts, which you didn't cover in [Task 3](#task3), with Microsoft Entra authentication email accounts.
 
 ### Web service accounts
 
-With Microsoft Entra ID authentication, [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  supports two different methods for authenticating users trying to access data through OData and SOAP web services: web service access keys (or Basic authentication) and OAuth.
+With Microsoft Entra authentication, [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  supports two different methods for authenticating users trying to access data through OData and SOAP web services: web service access keys (or Basic authentication) and OAuth.
 
 With Basic authentication, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account must have web service access key. To sign in, instead of using their Microsoft Entra ID password, users provide the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] the web service access key. For information about setting up web service access keys, see [How to use an Access Key for SOAP and OData Web Service Authentication](../webservices/web-services-authentication.md#accesskey).
 
@@ -376,7 +376,7 @@ With OAuth, users are authenticated based on their Microsoft Entra ID credential
 Follow the steps outlined below.
 
 1. Download the latest [Microsoft Entra ID PowerShell Module Public Preview release](https://www.powershellgallery.com/packages/AzureADPreview/2.0.1.11).
-2. Run the following command to sign in to your Microsoft Entra ID admin account: `Connect-AzureAD -Confirm`
+2. Run the following command to sign in to your Microsoft Entra admin account: `Connect-AzureAD -Confirm`
 3. Sign in as the tenant admin. 
 4. Run the `Get-AzureADPolicy` command. 
 5. For each `Id` that is the result of above command, run `Remove-AzureADPolicy -Id {Guid}`. 

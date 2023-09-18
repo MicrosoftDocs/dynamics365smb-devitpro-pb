@@ -33,9 +33,9 @@ The easiest way is to use the Azure portal. For instructions, see [Quickstart: S
 
 For using other methods, see [Azure Key Vault Developer's Guide](/azure/key-vault/general/developers-guide#creating-and-managing-key-vaults).
 
-## Provision the key reader application in your Microsoft Entra ID tenant
+## Provision the key reader application in your Microsoft Entra tenant
 
-Your Business Central online solution is configured to use an Microsoft Entra ID application for reading key vault secrets. The application is called **Dynamics 365 Business Central ISV Key Vault Reader**. Microsoft manages the key vault reader application, however, there are a couple tasks that you have to do to enable it. First, the application must be provisioned on your Microsoft Entra ID tenant, as described here.
+Your Business Central online solution is configured to use a Microsoft Entra application for reading key vault secrets. The application is called **Dynamics 365 Business Central ISV Key Vault Reader**. Microsoft manages the key vault reader application, however, there are a couple tasks that you have to do to enable it. First, the application must be provisioned on your Microsoft Entra tenant, as described here.
 
 To provision the key vault reader application, use the [Microsoft Entra ID PowerShell module](/powershell/module/azuread).
 
@@ -50,7 +50,7 @@ To provision the key vault reader application, use the [Microsoft Entra ID Power
     ```powershell
     Import-Module AzureAD 
     ```
-4. Connect to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Microsoft Entra ID tenant.
+4. Connect to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Microsoft Entra tenant.
 
     1. Run the following command:
 
@@ -59,15 +59,15 @@ To provision the key vault reader application, use the [Microsoft Entra ID Power
        ```
     2. Provide your sign-in name and password when prompted.
 
-4. Create an Microsoft Entra ID service principal using the following command:
+4. Create a Microsoft Entra ID service principal using the following command:
       
     ```powershell
     New-AzureADServicePrincipal -AppId 7e97dcfb-bcdd-426e-8f0a-96439602627a
     ```
     
-    `7e97dcfb-bcdd-426e-8f0a-96439602627a` is the Application (client) ID of Microsoft's centralized Microsoft Entra ID application.
+    `7e97dcfb-bcdd-426e-8f0a-96439602627a` is the Application (client) ID of Microsoft's centralized Microsoft Entra application.
     
-    This step provisions the application in your Microsoft Entra ID tenant, where it now "lives" together with your key vaults.
+    This step provisions the application in your Microsoft Entra tenant, where it now "lives" together with your key vaults.
 
 ## Grant the key vault reader application permission to your key vaults
 
@@ -89,11 +89,11 @@ Send an email to [bcappkeyvaultonboard@microsoft.com](mailto:bcappkeyvaultonboar
 
 <!-- Do this step before you publish your updated extension to Partner Center.-->
 
-The onboarding process involves a manual verification step that verifies that you own the Microsoft Entra ID tenant that contains the key vaults.
+The onboarding process involves a manual verification step that verifies that you own the Microsoft Entra tenant that contains the key vaults.
 
 Provide the following information in the email:
 
-- Your Microsoft Entra ID tenant ID. Obtain this information from the Azure portal by going to the Microsoft Entra ID Overview page.
+- Your Microsoft Entra tenant ID. Obtain this information from the Azure portal by going to the Microsoft Entra ID Overview page.
 - Your AppSource extensions, including names and App IDs, that should be enabled to read secrets from your key vaults. **Note: It is important that all your AppSource extensions that need access to a key vault are included, as it is not enough to just set the key vault property in your `app.json` manifest files.**
 - Confirmation that the app is already published on AppSource.
 - Optionally, a screenshot from the Azure portal showing the key vault and its access policies. The screenshot can help Microsoft catch configuration mistakes early in the process.

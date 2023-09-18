@@ -15,7 +15,7 @@ This article provides troubleshooting guidelines for SAML2 token errors that use
 
 ## Troubleshooting: The SAML2 token is not valid because its validity period has ended
 
-When using Microsoft Entra ID authentication, while working in the client, users get an error similar to the following message: 
+When using Microsoft Entra authentication, while working in the client, users get an error similar to the following message: 
 
 **Connection is not longer available or was lost**
 

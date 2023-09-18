@@ -20,7 +20,7 @@ This section helps you understand and improve the security of your Business Cent
 
 ## Authentication
 
-Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as a valid user in the system. Business Central (on-premises) supports several authentication methods, such as Windows and Microsoft Entra ID (Microsoft Entra ID). Business Central online deployments use Microsoft Entra ID only. For more information, see the following articles:
+Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as a valid user in the system. Business Central (on-premises) supports several authentication methods, such as Windows and Microsoft Entra ID . Business Central online deployments use Microsoft Entra ID only. For more information, see the following articles:
 
 [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)
 

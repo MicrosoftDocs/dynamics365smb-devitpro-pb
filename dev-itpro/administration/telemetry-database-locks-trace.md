@@ -45,7 +45,7 @@ Occurs when a database lock has timed out for a session.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra ID (Microsoft Entra ID) tenant ID used for Microsoft Entra ID authentication. For on-premises, if you aren't using Microsoft Entra ID authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alExecutingMethodScope|Specifies the AL action that is running the transaction that caused the lock.|
 |alObjectId|Specifies the ID of the running AL object that requested the lock. |
 |alObjectName|Specifies the name of the running AL object that requested the lock. not shown|
@@ -119,7 +119,7 @@ In the case of a database lock timeout, the BC server also takes a snapshot. Her
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra ID (Microsoft Entra ID) tenant ID used for Microsoft Entra ID authentication. For on-premises, if you aren't using Microsoft Entra ID authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alExecutingMethodScope|Specifies the AL action that is running the transaction that caused the lock.|
 |alObjectId|Specifies the ID of the running AL object that requested the lock. |
 |alObjectName|Specifies the name of the running AL object that requested the lock.|

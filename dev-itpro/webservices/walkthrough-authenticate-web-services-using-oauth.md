@@ -34,14 +34,14 @@ To complete the following tasks in this article, make sure your system meets the
 
     Also, for purposes of this article only, make sure that your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account is configured with a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Authentication password or web access key.  
 
-- Get information about the Microsoft Entra ID tenant and the registered [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application.
+- Get information about the Microsoft Entra tenant and the registered [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application.
 
     When you configured authentication, you had to register [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as an application in Microsoft Entra ID. To complete the tasks that follow, you'll need the following information about the tenant and application. You can get this information from the Azure portal.
 
     |Setting/option|Description|
     |--------------|-----------|
-    |Microsoft Entra ID Tenant ID|The ID of the directory that's used by Business Central in Microsoft Entra ID. The Microsoft Entra ID Tenant ID can be the tenant's domain name or GUID. In most cases, you can use the domain name. The domain name is typically in the form *mytenant.onmicrosoft.com*, which is the case if you have a Microsoft 365 subscription. You get the domain name from the **Domain** or **Custom domain names** settings for the AD tenant in the Azure portal. The Microsoft Entra ID Tenant ID also makes up part of the **WS-federation login endpoint** setting that is configured for the [!INCLUDE[server](../developer/includes/server.md)] instance|
-    |App ID URI| When you configured Business Central for Microsoft Entra ID or Microsoft 365 authentication, you had to register Business Central as an application in the Microsoft Entra ID (Microsoft Entra ID) and also specify an APP ID URI. The APP ID URI has the format `https://<domain>/<guid>`, like `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`. You need the APP ID URI later to enable OAuth. You can get the ID from the Azure portal by viewing the Business Central application **Settings** in Active Directory. This value is also specified as the `wtrealm` in the `WS-Federation Login Endpoint` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance configuration. For more information, see [Microsoft Entra ID Settings](../administration/configure-server-instance.md#AzureAd).|
+    |Microsoft Entra tenant ID|The ID of the directory that's used by Business Central in Microsoft Entra ID. The Microsoft Entra tenant ID can be the tenant's domain name or GUID. In most cases, you can use the domain name. The domain name is typically in the form *mytenant.onmicrosoft.com*, which is the case if you have a Microsoft 365 subscription. You get the domain name from the **Domain** or **Custom domain names** settings for the AD tenant in the Azure portal. The Microsoft Entra tenant ID also makes up part of the **WS-federation login endpoint** setting that is configured for the [!INCLUDE[server](../developer/includes/server.md)] instance|
+    |App ID URI| When you configured Business Central for Microsoft Entra ID or Microsoft 365 authentication, you had to register Business Central as an application in the Microsoft Entra ID and also specify an APP ID URI. The APP ID URI has the format `https://<domain>/<guid>`, like `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`. You need the APP ID URI later to enable OAuth. You can get the ID from the Azure portal by viewing the Business Central application **Settings** in Active Directory. This value is also specified as the `wtrealm` in the `WS-Federation Login Endpoint` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance configuration. For more information, see [Microsoft Entra ID Settings](../administration/configure-server-instance.md#AzureAd).|
   
 - Enable OData Services and V4 Endpoint on the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
@@ -61,9 +61,9 @@ To complete the following tasks in this article, make sure your system meets the
 
 ## Configure the App ID URI in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server
 
-When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] was registered in the Microsoft Entra ID tenant, it was assigned an APP ID URI. For example, in this article, the APP ID URI is `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`.
+When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] was registered in the Microsoft Entra tenant, it was assigned an APP ID URI. For example, in this article, the APP ID URI is `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`.
 
-If you haven't already done so, set the **Microsoft Entra ID App ID URI** setting in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance configuration to the same value as the APP ID URI in Azure. You can do this step by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) of the [!INCLUDE[adminshell](../developer/includes/admintool.md)], or by modifying the server instance CustomSettings.config file directly. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
+If you haven't already done so, set the **Microsoft Entra app ID URI** setting in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance configuration to the same value as the APP ID URI in Azure. You can do this step by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) of the [!INCLUDE[adminshell](../developer/includes/admintool.md)], or by modifying the server instance CustomSettings.config file directly. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
 
 ## Expose a page as web service
 
@@ -89,7 +89,7 @@ Use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client to pu
 
     This condition illustrates the problem&mdash;users must use different credentials for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] clients than they do for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services.
 
-## Register the console application in the Microsoft Entra ID tenant
+## Register the console application in the Microsoft Entra tenant
 
 Although you haven't yet created the console application, the next thing to do is to register it as an application in the same Microsoft Entra ID Directory in which you registered [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Having to register the console application in Microsoft Entra ID makes sense because Microsoft Entra ID is the common authority that can issue security tokens that enable client applications to call server applications.
 
@@ -192,7 +192,7 @@ Install the latest version of the package by using NuGet Package Manager in Visu
         class Program
         {
             // Microsoft Entra ID registrations:
-            // Specifies the Microsoft Entra ID tenant ID
+            // Specifies the Microsoft Entra tenant ID
             const string AadTenantId = "<mytenant.onmicrosoft.com>";
             // Specifies the Application (client) ID of the console application registration in Microsoft Entra ID
             const string ClientId = "<7b235fb6-c01b-47c5-afeb-cbb165abeaf7>";

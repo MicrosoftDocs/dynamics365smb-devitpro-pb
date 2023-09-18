@@ -23,7 +23,7 @@ To complete the tasks in this article, you need:
 
 - An Azure subscription with an Active Directory tenant.
 
-    You sign up for an Azure subscription at [https://azure.microsoft.com](https://azure.microsoft.com). For information about getting an Microsoft Entra ID tenant, see [How to get an Microsoft Entra ID tenant](/azure/active-directory/develop/active-directory-howto-tenant).
+    You sign up for an Azure subscription at [https://azure.microsoft.com](https://azure.microsoft.com). For information about getting a Microsoft Entra tenant, see [How to get a Microsoft Entra tenant](/azure/active-directory/develop/active-directory-howto-tenant).
 
 - A security certificate
 
@@ -53,16 +53,16 @@ There are different ways to create an Azure key vault. For example, you can use 
 
 ## Register a key vault reader application in Microsoft Entra ID
 
-Next, register an application on your Microsoft Entra ID tenant for reading secrets from the key vaults. When Microsoft Entra ID authentication was set up, an Microsoft Entra ID tenant was created in Azure. Reading key vaults requires a separate application registration with the Microsoft Entra ID tenant. You can use an existing application.
+Next, register an application on your Microsoft Entra tenant for reading secrets from the key vaults. When Microsoft Entra authentication was set up, a Microsoft Entra tenant was created in Azure. Reading key vaults requires a separate application registration with the Microsoft Entra tenant. You can use an existing application.
 
 The steps in this task are done from the [Azure portal](https://portal.azure.com).
 
-1. Sign in to Azure portal at [portal.azure.com](https://portal.azure.com) and set the portal to your Microsoft Entra ID tenant.
-2. Register an Microsoft Entra ID application for the reading key vault.
+1. Sign in to Azure portal at [portal.azure.com](https://portal.azure.com) and set the portal to your Microsoft Entra tenant.
+2. Register a Microsoft Entra application for the reading key vault.
 
-    You add the new application by using the [Azure portal](https://portal.azure.com). For guidelines, see [Register your application with your Microsoft Entra ID tenant](/azure/active-directory/develop/quickstart-register-app).
+    You add the new application by using the [Azure portal](https://portal.azure.com). For guidelines, see [Register your application with your Microsoft Entra tenant](/azure/active-directory/develop/quickstart-register-app).
     
-    When you add an application to an Microsoft Entra ID tenant, you must specify the following information:
+    When you add an application to a Microsoft Entra tenant, you must specify the following information:
 
     |Setting|Description|
     |-------|-----------|
@@ -71,7 +71,7 @@ The steps in this task are done from the [Azure portal](https://portal.azure.com
 
     <!--
         |Directory Access|Choose **Single Sign-On**.|
-            |App ID URI|The URI to a domain in your Microsoft Entra ID tenant, such as *https://solutions.onmicrosoft.com/ExcelAddinforBusinessCentral*. **Important:**  The App ID URI must be unique within the Microsoft Entra ID tenant and not the same as you specified for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution.|
+            |App ID URI|The URI to a domain in your Microsoft Entra tenant, such as *https://solutions.onmicrosoft.com/ExcelAddinforBusinessCentral*. **Important:**  The App ID URI must be unique within the Microsoft Entra tenant and not the same as you specified for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution.|
                 |Sign-on URL (App URL)|The URI for signing in to your [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)], such as `https://www.solutions.com/BC`|
     -->
     When completed, the **Overview** displays in the portal for the new application.
@@ -150,8 +150,8 @@ To complete this task, you'll need the user name of the service account that run
     |Client Certificate Store Location<br />(AzureKeyVaultClientCertificateStoreLocation)|Set to the certificate store location where key vault certificate was stored.<br /><br />Example:<br />LocalMachine|
     |Client Certificate Store Name<br />(AzureKeyVaultClientCertificateStoreName)|Set to the certificate store name where key vault certificate was stored.<br /><br />Example:<br />MY|
     |Client Certificate Thumbprint<br />(AzureKeyVaultClientCertificateThumbprint)|Set to the thumbprint for the key vault certificate.<br /><br />Example:<br />649419e4fbb87340f5a0f995e605b74c5f6d943e|
-    |Client ID<br />(AzureKeyVaultClientId)|Set to the **Application (client) ID** of the key vault reader application registered in your Microsoft Entra ID tenant.<br /><br />Example:<br />ed4129d9-b913-4514-83db-82e305163bec|
-    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. <br /><br />Enabling this setting (`true`) blocks attempts in AL to read secrets from another publisher's key vault. When extensions that use key vault secrets are published, you must provide your Microsoft Entra ID tenant ID, which is done by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) with the `-PublisherAzureActiveDirectoryTenantId` parameter.<br /><br />**Important** We recommend that you only set it to `false` if you trust all extensions that will be installed. For more information, see [App Key Vaults - Security considerations](../developer/devenv-app-key-vault.md#security).<br /><br />Example:<br />true|
+    |Client ID<br />(AzureKeyVaultClientId)|Set to the **Application (client) ID** of the key vault reader application registered in your Microsoft Entra tenant.<br /><br />Example:<br />ed4129d9-b913-4514-83db-82e305163bec|
+    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. <br /><br />Enabling this setting (`true`) blocks attempts in AL to read secrets from another publisher's key vault. When extensions that use key vault secrets are published, you must provide your Microsoft Entra tenant ID, which is done by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) with the `-PublisherAzureActiveDirectoryTenantId` parameter.<br /><br />**Important** We recommend that you only set it to `false` if you trust all extensions that will be installed. For more information, see [App Key Vaults - Security considerations](../developer/devenv-app-key-vault.md#security).<br /><br />Example:<br />true|
 
     You can configure the instance using the [[!INCLUDE[admintool](../developer/includes/admintool.md)]](administration-tool.md) or [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
       

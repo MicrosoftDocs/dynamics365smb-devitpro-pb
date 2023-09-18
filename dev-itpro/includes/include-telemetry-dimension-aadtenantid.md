@@ -1,1 +1,1 @@
-Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra ID authentication. For on-premises, if you aren't using Microsoft Entra ID authentication, this value is **common**. 
+Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. 

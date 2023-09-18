@@ -36,7 +36,7 @@ By setting this parameter to `true`, you accept the following terms:
 -->
 ### Required In-Product Permissions for Installing and Uninstalling Apps
 
-To use the `install` and `uninstall` endpoints, you must have the following permission sets assigned to your Business Central user account or authorized Microsoft Entra ID App:
+To use the `install` and `uninstall` endpoints, you must have the following permission sets assigned to your Business Central user account or authorized Microsoft Entra app:
 
 |Business Central version|Permission set|
 |------------------------|---------------|
@@ -385,7 +385,7 @@ This Logic App runs a specified number of times a day (parameter in deployment p
 
 ### Prerequisites
 
-Business Central admin center API is configured for S2S authentication of Microsoft Entra ID (Microsoft Entra ID) apps. For more information, go to [Authenticate using service-to-service AAD Apps](administration-center-api.md#authenticate-using-service-to-service-aad-apps-client-credentials-flow).
+Business Central admin center API is configured for S2S authentication of Microsoft Entra ID apps. For more information, go to [Authenticate using service-to-service AAD Apps](administration-center-api.md#authenticate-using-service-to-service-aad-apps-client-credentials-flow).
 
 ### Preparation
 

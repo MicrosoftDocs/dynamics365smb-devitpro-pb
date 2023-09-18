@@ -58,7 +58,7 @@ For more information, see [Security tokens](/azure/active-directory/develop/secu
 
 ## App registration
 
-Your client app needs a way to trust the security tokens issued to it by the Microsoft identity platform. The first step in establishing that trust is by registering your app with the identity platform in Microsoft Entra ID (Microsoft Entra ID).
+Your client app needs a way to trust the security tokens issued to it by the Microsoft identity platform. The first step in establishing that trust is by registering your app with the identity platform in Microsoft Entra ID .
 
 For more information, see [App registration](/azure/active-directory/develop/active-directory-v2-protocols#app-registration) in the Azure documentation.
 
@@ -87,7 +87,7 @@ For more information, please visit [Service-to-Service Authentication](../admini
 
 ## Credentials lifetime
 
-With authentication methods other than Microsoft Entra ID, like Windows or NavUserPassword, the credentials that users provide are persisted by application and used for as long as they're valid in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, this is different for OAuth, because the security tokens that are used for authentication have a limited lifetime.
+With authentication methods other tha Microsoft Entra ID, like Windows or NavUserPassword, the credentials that users provide are persisted by application and used for as long as they're valid in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, this is different for OAuth, because the security tokens that are used for authentication have a limited lifetime.
 
 An authentication result from Microsoft Entra ID, contains two tokens: an access token and an ID token.
 

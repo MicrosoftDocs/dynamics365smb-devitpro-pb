@@ -21,11 +21,11 @@ This article describes how to set up [!INCLUDE [prod_short](../developer/include
 
 ## Prerequisites
 
-- An Microsoft Entra ID (AD) tenant.
+- a Microsoft Entra ID (AD) tenant.
 
    You'll need a tenant on Microsoft Entra ID that has at least one user. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant).
 
-   If the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] deployment is using Microsoft Entra ID authentication, then you already have a tenant with users. See [Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Microsoft Entra ID](authenticating-users-with-azure-active-directory.md).
+   If the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] deployment is using Microsoft Entra authentication, then you already have a tenant with users. See [Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Microsoft Entra ID](authenticating-users-with-azure-active-directory.md).
 
    If your deployment uses NavUserPassword authentication, you'll need the credentials (sign in email and password) of a user account later in this article.
 
@@ -35,16 +35,16 @@ This article describes how to set up [!INCLUDE [prod_short](../developer/include
 
 ## Register an application in Microsoft Entra ID
 
-The first task is to use Azure portal to register an application for Business Central on your Microsoft Entra ID tenant. As part of the registration, you'll also give the relevant services access to the application. The purpose of registration is to ensure [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises and the services know each other's Microsoft Entra ID (Microsoft Entra ID) details.
+The first task is to use Azure portal to register an application for Business Central on your Microsoft Entra tenant. As part of the registration, you'll also give the relevant services access to the application. The purpose of registration is to ensure [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises and the services know each other's Microsoft Entra ID details.
 
 > [!TIP]
-> The following steps describe how to register a new application. However, if you're using Microsoft Entra ID authentication, you already have a registered application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. So instead of registering a new application, you can use the existing application. But if you do, make sure you modify it based on the information in the steps that follow.
+> The following steps describe how to register a new application. However, if you're using Microsoft Entra authentication, you already have a registered application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. So instead of registering a new application, you can use the existing application. But if you do, make sure you modify it based on the information in the steps that follow.
 
-1. Sign in to the [Azure portal](https://portal.azure.com) and register an application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises in Microsoft Entra ID tenant.
+1. Sign in to the [Azure portal](https://portal.azure.com) and register an application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises in Microsoft Entra tenant.
 
-    1. Follow the general guidelines at [Register your application with your Microsoft Entra ID tenant](/azure/active-directory/active-directory-app-registration).
+    1. Follow the general guidelines at [Register your application with your Microsoft Entra tenant](/azure/active-directory/active-directory-app-registration).
 
-        When you add an application to an Microsoft Entra ID tenant, you must specify the following information:
+        When you add an application to a Microsoft Entra tenant, you must specify the following information:
 
         |Setting|Description|
         |-------|-----------|
@@ -110,7 +110,7 @@ After you create the application registration, the next task is to configure the
 5. In the **Key** field, specify the value of the client secret that's used by the Business Central application in Microsoft Entra ID.
 6. Choose **Next**.
 
-    If you're using NavUserPassword authentication, you're prompted to sign in to the Microsoft Entra ID tenant. In this case, enter the sign-in email and password of a valid account.
+    If you're using NavUserPassword authentication, you're prompted to sign in to the Microsoft Entra tenant. In this case, enter the sign-in email and password of a valid account.
 
 Unless you see an error message, you're now done. The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises solution is registered and ready to connect to services such as Cortana Intelligence, or embedding Power BI in [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
 
@@ -134,7 +134,7 @@ To fix this issue, verify that the **Reply URL** in the Setup Microsoft Entra ID
 
 After authorizing the Azure service, you get a message similar to the following text:  
 
-**We couldn't connect to [service name] using your Microsoft Entra ID application registration. Run the Set Up Microsoft Entra ID assisted setup again, and make sure all values are set correctly.**
+**We couldn't connect to [service name] using your Microsoft Entra application registration. Run the Set Up Microsoft Entra ID assisted setup again, and make sure all values are set correctly.**
 
 This issue indicates there's a problem with the configuration of the Azure registered application used by the service. The problem is typically caused by incorrect values for either the **Redirect URL**, **Application ID**, or **Key** fields in the application registration. A common problem deals with the redirect URLs. Make sure the **Redirect URL** matches the redirect URL in the Azure portal and the URL of the Web client. To fix this issue, run the **Set Up Microsoft Entra ID** assisted setup and compare the values with the app registration in Azure.
 

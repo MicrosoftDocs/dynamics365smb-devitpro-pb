@@ -19,7 +19,7 @@ Environment lifecycle telemetry gathers data about the success or failure of the
 - Start/stop/restart an environment
 - Copy an environment
 - Point-in-time restore an environment
-- Move an environment to a difference Microsoft Entra ID tenant
+- Move an environment to a difference Microsoft Entra tenant
 - Cancel a session from the Business Central admin center
 - Export the environment database
 - Change the environment configuration 

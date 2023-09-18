@@ -36,7 +36,7 @@ After the solutions are installed in the [!INCLUDE[cds_long_md](../includes/cds_
 
 The next step in the process is to provide [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment and company to connect to. The following steps walk through this part of the process.
 
-0. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to the page 'Microsoft Entra ID Applications' and toggle the app 'Dynamics 365 Business Central for Virtual tables' to **Enabled**. This will allow [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] to communicate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+0. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to the page 'Microsoft Entra applications' and toggle the app 'Dynamics 365 Business Central for Virtual tables' to **Enabled**. This will allow [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] to communicate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to the table **Business Central Virtual Data Source Configuration**.
 

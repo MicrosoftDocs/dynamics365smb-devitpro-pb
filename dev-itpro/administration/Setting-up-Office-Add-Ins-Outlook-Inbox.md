@@ -48,9 +48,9 @@ The add-in deployment works with Exchange Online, Exchange Online as part of Mic
 
 The authentication and authorization that can be used will depend on whether you're using Exchange Online or Exchange Server.
 
-- In Exchange Online, standalone or as part of Microsoft 365, EWS uses OAuth2 as an authorization protocol. OAuth2 doesn't share password data but instead uses authorization tokens to prove an identity between consumers and service providers. It allows users to approve one application interacting with another on their behalf without giving away your password. The Business Central add-in for Outlook supports multi-factor authentication if that has been configured in Microsoft 365. With Exchange Online, Business Central must be configured to use Microsoft Entra ID authentication.
+- In Exchange Online, standalone or as part of Microsoft 365, EWS uses OAuth2 as an authorization protocol. OAuth2 doesn't share password data but instead uses authorization tokens to prove an identity between consumers and service providers. It allows users to approve one application interacting with another on their behalf without giving away your password. The Business Central add-in for Outlook supports multi-factor authentication if that has been configured in Microsoft 365. With Exchange Online, Business Central must be configured to use Microsoft Entra authentication.
 
-- With Exchange Server, EWS and Autodiscover will try to find the local Exchange Server. In this case, Business Central can be configured to use either NavUserPassword or Microsoft Entra ID authentication.
+- With Exchange Server, EWS and Autodiscover will try to find the local Exchange Server. In this case, Business Central can be configured to use either NavUserPassword or Microsoft Entra authentication.
 
 ## Prepare for deployment
 
@@ -65,7 +65,7 @@ The steps you'll need to go through to prepare for deploying the add-in will dep
 
 2. Prepare Business Central
 
-    - Set up Microsoft Entra ID (Microsoft Entra ID) authentication.
+    - Set up Microsoft Entra ID authentication.
 
        For more information, see [Authenticating Business Central Users with Microsoft Entra ID](authenticating-users-with-azure-active-directory.md).
     - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
@@ -87,7 +87,7 @@ The steps you'll need to go through to prepare for deploying the add-in will dep
 
 2. Business Central
 
-    - Set up Microsoft Entra ID (Microsoft Entra ID) authentication or NavUserPassword.
+    - Set up Microsoft Entra ID authentication or NavUserPassword.
 
       For more information, see [Authenticating Business Central Users with Microsoft Entra ID](authenticating-users-with-azure-active-directory.md).
     - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
@@ -182,7 +182,7 @@ If you've prepared for deployment as described earlier, then as an admin, the on
 
 ### Register an application in Microsoft Entra ID
 
-In the Azure portal, add an application registration for Business Central in your Microsoft Entra ID tenant. Give the registered app delegated permission to Exchange web service (EWS). After you've added the registered app in Microsoft Entra ID, set up Business Central to use it by using the **Set up your Microsoft Entra ID accounts** assisted setup.
+In the Azure portal, add an application registration for Business Central in your Microsoft Entra tenant. Give the registered app delegated permission to Exchange web service (EWS). After you've added the registered app in Microsoft Entra ID, set up Business Central to use it by using the **Set up your Microsoft Entra ID accounts** assisted setup.
 
 For more information about how to complete this step, see [Registering [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-Premises in Microsoft Entra ID for Integrating with Other Services](register-app-azure.md).
 

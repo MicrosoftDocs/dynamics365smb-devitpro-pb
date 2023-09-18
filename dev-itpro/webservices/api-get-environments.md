@@ -32,7 +32,7 @@ Returns a wrapped array of environments.
 {
     "value": [
         {
-            "aadTenantId": Guid, // ID of the Microsoft Entra ID tenant that owns the environment
+            "aadTenantId": Guid, // ID of the Microsoft Entra tenant that owns the environment
             "applicationFamily": string, // Family of the environment (for example, "Business Central")
             "type": string, // Environment type (production or sandbox)
             "name": string, // Environment name, unique within an application family

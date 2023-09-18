@@ -13,20 +13,20 @@ ms.author: jswymer
 
 # Delegated Administrator Access to Business Central Online
 
-As a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reselling partner, you must set up your employees to work in Partner Center, and you must assign employees to support your customers. When you request a reseller relationship with a customer, you can choose to include *delegated administration* privileges for Microsoft Entra ID (Microsoft Entra ID) and Microsoft 365 in the request email that you send to the customer.  
+As a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reselling partner, you must set up your employees to work in Partner Center, and you must assign employees to support your customers. When you request a reseller relationship with a customer, you can choose to include *delegated administration* privileges for Microsoft Entra ID and Microsoft 365 in the request email that you send to the customer.  
 
 > [!TIP]
 > Since February 2022, you can request access to your customer's tenant with *granular delegated admin privileges*. This way, you [set up security groups](/partner-center/gdap-assign-azure-ad-roles) to specify which users in your own organization must have access to a specific customer as *Dynamics 365 administrator* or any other role you prefer. For more information, see [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) in the Partner Center content. We recommend that you switch off any existing relationship and [request granular delegated admin privileges](/partner-center/gdap-assign-azure-ad-roles) instead. For more information, see the [GDAP FAQ](/partner-center/gdap-faq#dap-and-gdap).  
 
-When a customer accepts a partner's request for *granular delegated administration privileges*, the relevant members of the specified security group in the partner's Microsoft Entra ID tenant get access as indicated in the following list:
+When a customer accepts a partner's request for *granular delegated administration privileges*, the relevant members of the specified security group in the partner's Microsoft Entra tenant get access as indicated in the following list:
 
 - The *[Dynamics 365 Administrator](/azure/active-directory/roles/permissions-reference?branch=main#dynamics-365-administrator)* role gives access to manage Dynamics 365 for the customer, including support requests  
 - The *[Service Support Administrator](/azure/active-directory/roles/permissions-reference#service-support-administrator)* role gives access to manage support requests on the customer's behalf
-- The *[Helpdesk Administrator](/azure/active-directory/roles/permissions-reference#helpdesk-administrator)* role gives access to the customer's Microsoft Entra ID tenant.  
+- The *[Helpdesk Administrator](/azure/active-directory/roles/permissions-reference#helpdesk-administrator)* role gives access to the customer's Microsoft Entra tenant.  
 
 For more information, see [Least-privileged roles](/partner-center/gdap-least-privileged-roles-by-task) in the GDAP section of the Partner Center content.  
 
-The members of the security group have either the *Admin agent* or *Helpdesk agent* role in your own Microsoft Entra ID tenant. For more information, see [Assign roles and permissions to users](/partner-center/permissions-overview).  
+The members of the security group have either the *Admin agent* or *Helpdesk agent* role in your own Microsoft Entra tenant. For more information, see [Assign roles and permissions to users](/partner-center/permissions-overview).  
 
 For certain tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is a powerful tool for you to manage your customers' tenants. From the administration center, you can manage upgrades and access the tenants as the delegated administrator. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 

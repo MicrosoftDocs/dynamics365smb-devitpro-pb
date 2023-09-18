@@ -167,7 +167,7 @@
 ### Admin Center API
 #### [Overview](administration/administration-center-api.md)
 #### [App management](administration/administration-center-api_app_management.md)
-#### [Authorized Microsoft Entra ID apps](administration/administration-center-api_authorizedaadapps.md)
+#### [Authorized Microsoft Entra apps](administration/administration-center-api_authorizedaadapps.md)
 #### [Available applications](administration/administration-center-api_available_applications.md)
 #### [Environments](administration/administration-center-api_environments.md)
 #### [Environment database export](administration/administration-center-api_environment_database_export.md)
@@ -460,7 +460,7 @@
 #### [AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 #### [Sign an app package file](developer/devenv-sign-extension.md)
-#### [Using Microsoft Entra ID authentication for Business Central on-premises installations](developer/devenv-aad-auth-onprem.md)
+#### [Using Microsoft Entra authentication for Business Central on-premises installations](developer/devenv-aad-auth-onprem.md)
 
 ### Testing
 #### [Overview](developer/devenv-testing-application.md)
@@ -1487,8 +1487,8 @@
 #### [Authentication and credential types](administration/users-credential-types.md)
 #### Authenticating with Microsoft Entra ID
 ##### [Overview](administration/authenticating-users-with-azure-ad-overview.md)
-##### [Configure Microsoft Entra ID authentication with OpenID Connect](administration/authenticating-users-with-azure-ad-openid-connect.md)
-##### [Configure Microsoft Entra ID authentication with WS-Federation](administration/authenticating-users-with-azure-active-directory.md)
+##### [Configure Microsoft Entra authentication with OpenID Connect](administration/authenticating-users-with-azure-ad-openid-connect.md)
+##### [Configure Microsoft Entra authentication with WS-Federation](administration/authenticating-users-with-azure-active-directory.md)
 #### [Authenticating with NavUserPassword](administration/authenticating-users-with-navuserpassword.md)
 ### [Configuring Business Central server](administration/configure-server-instance.md)
 ### Configuring Business Central web server

@@ -31,7 +31,7 @@ Learn more about the consulting services that are currently offered on AppSource
 
 Microsoft’s catalog of consulting services offerings for solutions is based on Dynamics 365, Power BI, and Power Apps to AppSource. As a Microsoft partner, AppSource Consulting Services enables you to provide your expertise to customers near you, as a fully working customized offering in one week or less. In doing so, this service allows you to showcase your proven expertise and offer pre-defined engagements that are fixed in scope. When bundling your quality consulting service offerings you get the benefit of going to market quickly, while being exposed to more Dynamics 365 trial prospects and customers.
 
-## How can Microsoft partners list the consulting services they want to offer?
+## How ca Microsoft partners list the consulting services they want to offer?
 
 To help deliver repeatable and predictable outcomes, partners and consulting services offerings need to meet the following requirements to be listed on AppSource:
 

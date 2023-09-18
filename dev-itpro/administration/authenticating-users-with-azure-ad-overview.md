@@ -1,6 +1,6 @@
 ---
 title: Authenticating Business Central Users with Microsoft Entra ID 
-description: Get an overview about using Microsoft Entra ID authentication in Business Central.
+description: Get an overview about using Microsoft Entra authentication in Business Central.
 ms.custom: bap-template
 ms.date: 02/09/2023
 ms.reviewer: na
@@ -13,13 +13,13 @@ ms.author: jswymer
 
 Microsoft Entra ID \(Microsoft Entra ID\) is a cloud service that provides identity and access capabilities for applications. The applications can be cloud-based, like on Microsoft Azure and  Microsoft 365, and installed on-premises, like [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-The article describes the tasks involved in setting up Microsoft Entra ID authentication for authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users.
+The article describes the tasks involved in setting up Microsoft Entra authentication for authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users.
 
 ## Microsoft Entra ID and [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
-With Microsoft Entra ID authentication, you store user accounts and credentials in an Microsoft Entra ID tenant. You then associate [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user accounts with the Microsoft Entra ID tenant user account. Once in place, users access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] by using their Microsoft Entra ID account.  
+With Microsoft Entra authentication, you store user accounts and credentials in a Microsoft Entra tenant. You then associate [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user accounts with the Microsoft Entra tenant user account. Once in place, users access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] by using their Microsoft Entra ID account.  
 
-Microsoft Entra ID authentication enables [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to integrate with various applications and services, through a single sign-on experience. It's the required authentication method for some features offered by [!INCLUDE[prod_short](../developer/includes/prod_short.md)], such as:  
+Microsoft Entra authentication enables [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to integrate with various applications and services, through a single sign-on experience. It's the required authentication method for some features offered by [!INCLUDE[prod_short](../developer/includes/prod_short.md)], such as:  
 
 - Excel add-in
 - Excel financial reports
@@ -33,14 +33,14 @@ Microsoft Entra ID authentication enables [!INCLUDE[prod_short](../developer/inc
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-In 2022 release wave 1 (version 20), Business Central introduced support for OpenID Connect (OIDC) protocol for Microsoft Entra ID authentication. In previous releases, Microsoft Entra ID authentication in Business Central used WS-Federation (Web Services Federation Language) only. [OpenID Connect](https://openid.net/connect/) is a modern protocol that's built on OAuth 2.0 and has a standard authentication library. For more information about OpenID Connect, see [Microsoft identity platform and OpenID Connect protocol](/azure/active-directory/develop/v2-protocols-oidc).
+In 2022 release wave 1 (version 20), Business Central introduced support for OpenID Connect (OIDC) protocol for Microsoft Entra authentication. In previous releases, Microsoft Entra authentication in Business Central used WS-Federation (Web Services Federation Language) only. [OpenID Connect](https://openid.net/connect/) is a modern protocol that's built on OAuth 2.0 and has a standard authentication library. For more information about OpenID Connect, see [Microsoft identity platform and OpenID Connect protocol](/azure/active-directory/develop/v2-protocols-oidc).
 
-With the introduction of OpenID Connect, WS-Federation support in Business Central has been deprecated. It's removed in 2023 release wave 1 (version 22) and later versions. If you're using version 20 or 21, you can continue to use Microsoft Entra ID authentication with WS-Federation, but we recommend using OpenID Connect.
+With the introduction of OpenID Connect, WS-Federation support in Business Central has been deprecated. It's removed in 2023 release wave 1 (version 22) and later versions. If you're using version 20 or 21, you can continue to use Microsoft Entra authentication with WS-Federation, but we recommend using OpenID Connect.
 
-For the complete setup of Microsoft Entra ID with OpenID Connect, see [Configure Microsoft Entra ID Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
+For the complete setup of Microsoft Entra ID with OpenID Connect, see [Configure Microsoft Entra authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
 > [!NOTE]
-> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 19 and earlier versions still only support WS-Federation. If you're setting up one of these version, see [Configure Microsoft Entra ID Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
+> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 19 and earlier versions still only support WS-Federation. If you're setting up one of these version, see [Configure Microsoft Entra authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
 
 ### Switch a version 20 or 21 configuration from WS-Federation to OpenID Connect
 
@@ -62,11 +62,11 @@ The complete setup for OpenID Connect isn't much different than it is for WS-Fed
         Set-NAVWebServerInstanceConfiguration -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/<Azure_AD_Tenant_ID>"
         ```
 
-For the complete setup with more details, see [Configure Microsoft Entra ID Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
+For the complete setup with more details, see [Configure Microsoft Entra authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
 ### Configure legacy WS-Federation in version 20 and 21
 
-If you want to set up Microsoft Entra ID authentication use WS-Federation in version 20 or 21, you can, The full setup is the same as in earlier versions, except the [!INCLUDE[webserver](../developer/includes/webserver.md)] now includes a setting named `UseLegacyAcsAuthentication` that you set to `true`.
+If you want to set up Microsoft Entra authentication use WS-Federation in version 20 or 21, you can, The full setup is the same as in earlier versions, except the [!INCLUDE[webserver](../developer/includes/webserver.md)] now includes a setting named `UseLegacyAcsAuthentication` that you set to `true`.
 
 For example, using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], you run the following command:
 
@@ -74,7 +74,7 @@ For example, using the [!INCLUDE[adminshell](../developer/includes/adminshell.md
 Set-NAVWebServerInstanceConfiguration -KeyName UseLegacyAcsAuthentication -KeyValue "true"
 ```
 
-For the complete setup, see [Configure Microsoft Entra ID Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
+For the complete setup, see [Configure Microsoft Entra authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
 
 ## See Also  
 

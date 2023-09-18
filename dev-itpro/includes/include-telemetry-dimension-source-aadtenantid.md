@@ -1,1 +1,1 @@
-Specifies the source Microsoft Entra ID tenant ID for the move.
+Specifies the source Microsoft Entra tenant ID for the move.

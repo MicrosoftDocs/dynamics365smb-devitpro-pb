@@ -57,7 +57,7 @@ The following table explains other custom dimensions that are common to all fiel
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra ID (Microsoft Entra ID) tenant ID used for Microsoft Entra ID authentication. For on-premises, if you aren't using Microsoft Entra ID authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alDataClassification|**SystemMetadata**|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
@@ -98,7 +98,7 @@ The following table explains other custom dimensions that are common to all fiel
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra ID (Microsoft Entra ID) tenant ID used for Microsoft Entra ID authentication. For on-premises, if you aren't using Microsoft Entra ID authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alDataClassification|**SystemMetadata**|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
@@ -138,7 +138,7 @@ The following table explains other custom dimensions that are common to all fiel
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra ID (Microsoft Entra ID) tenant ID used for Microsoft Entra ID authentication. For on-premises, if you aren't using Microsoft Entra ID authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alDataClassification|**SystemMetadata**|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
@@ -185,7 +185,7 @@ The following table explains other custom dimensions that are common to all fiel
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra ID (Microsoft Entra ID) tenant ID used for Microsoft Entra ID authentication. For on-premises, if you aren't using Microsoft Entra ID authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra ID tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alDataClassification|**SystemMetadata**|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
