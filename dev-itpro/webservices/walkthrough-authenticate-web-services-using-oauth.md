@@ -63,7 +63,7 @@ To complete the following tasks in this article, make sure your system meets the
 
 When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] was registered in the Microsoft Entra tenant, it was assigned an APP ID URI. For example, in this article, the APP ID URI is `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`.
 
-If you haven't already done so, set the **Microsoft Entra app ID URI** setting in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance configuration to the same value as the APP ID URI in Azure. You can do this step by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) of the [!INCLUDE[adminshell](../developer/includes/admintool.md)], or by modifying the server instance CustomSettings.config file directly. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
+If you haven't already done so, set the **Microsoft Entra app ID URI** (or Azure AD app ID URI)) setting in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance configuration to the same value as the APP ID URI in Azure. You can do this step by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) of the [!INCLUDE[adminshell](../developer/includes/admintool.md)], or by modifying the server instance CustomSettings.config file directly. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
 
 ## Expose a page as web service
 
@@ -91,7 +91,7 @@ Use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client to pu
 
 ## Register the console application in the Microsoft Entra tenant
 
-Although you haven't yet created the console application, the next thing to do is to register it as an application in the same Microsoft Entra ID Directory in which you registered [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Having to register the console application in Microsoft Entra ID makes sense because Microsoft Entra ID is the common authority that can issue security tokens that enable client applications to call server applications.
+Although you haven't yet created the console application, the next thing to do is to register it as an application in the same Microsoft Entra tenant in which you registered [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Having to register the console application in Microsoft Entra ID makes sense because Microsoft Entra ID is the common authority that can issue security tokens that enable client applications to call server applications.
 
 1. Using the Azure portal, register the console application as a native client application.
 
@@ -191,7 +191,7 @@ Install the latest version of the package by using NuGet Package Manager in Visu
     {
         class Program
         {
-            // Microsoft Entra ID registrations:
+            // Microsoft Entra registrations:
             // Specifies the Microsoft Entra tenant ID
             const string AadTenantId = "<mytenant.onmicrosoft.com>";
             // Specifies the Application (client) ID of the console application registration in Microsoft Entra ID
