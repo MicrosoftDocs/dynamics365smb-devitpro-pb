@@ -94,7 +94,7 @@ You must have the following prerequisites to register on Microsoft Collaborate:
   > [!NOTE]
   > If you have Microsoft 365, then your company most likely has Microsoft Entra ID.
 
-- Microsoft Entra ID Global Administrator permission
+- Microsoft Entra Global Administrator permission
 
   > [!NOTE]
   > To find out if your company has a Microsoft Entra account, check with your system administrator.
