@@ -315,7 +315,7 @@ Request: POST https://webhook.site/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
 This request contains the following data:
 
-- `initiatingUserAADObjectId`: The Microsoft Entra ID object ID of user who initiated this business event
+- `initiatingUserAADObjectId`: The Microsoft Entra object ID of user who initiated this business event
 - `timestamp`: The timestamp when this business event occurred (UTC)
 - `companyName`: The name of company where this business event occurred
 - `companyId`: The GUID of company where this business event occurred
