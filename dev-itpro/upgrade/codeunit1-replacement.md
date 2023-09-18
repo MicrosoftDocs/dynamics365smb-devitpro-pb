@@ -52,7 +52,7 @@ OBJECT Codeunit 1 ApplicationManagement
       LogonManagement.SetLogonInProgress(TRUE);
 
       // This needs to be the very first thing to run before company open
-      CODEUNIT.RUN(CODEUNIT::"Microsoft Entra ID User Management");
+      CODEUNIT.RUN(CODEUNIT::"Azure AD User Management");
 
       OnBeforeCompanyOpen;
       LogInManagement.CompanyOpen;
