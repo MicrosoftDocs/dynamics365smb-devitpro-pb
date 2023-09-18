@@ -59,7 +59,7 @@ To provision the key vault reader application, use the [Microsoft Entra ID Power
        ```
     2. Provide your sign-in name and password when prompted.
 
-4. Create a Microsoft Entra ID service principal using the following command:
+4. Create a Microsoft Entra service principal using the following command:
       
     ```powershell
     New-AzureADServicePrincipal -AppId 7e97dcfb-bcdd-426e-8f0a-96439602627a
