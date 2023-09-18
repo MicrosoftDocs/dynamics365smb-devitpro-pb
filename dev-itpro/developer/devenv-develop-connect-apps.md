@@ -34,7 +34,7 @@ In the following sections you can read more about setting up the two types of au
 APIs can also be explored through the [OpenAPI specification for Business Central](/dynamics-nav/api-reference/v1.0/dynamics-open-api).
 
 ## Setting up basic authentication
-If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the Microsoft Entra ID based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use Microsoft Entra ID/Oauth v2 authentication, see the section [Setting up Microsoft Entra ID based authentication](#Microsoft Entra ID).
+If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the Microsoft Entra ID based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use Microsoft Entra ID/Oauth v2 authentication, see the section [Setting up Microsoft Entra ID based authentication](#Microsoft-Entra-ID).
 
 1. To set up basic authentication, log into your tenant, and in the **Search** field, enter **Users** and then select the relevant link.
 2. Select the user to add access for, and on the **User Card** page, in the **Web Service Access Key** field, generate a key.  
@@ -94,7 +94,7 @@ In this `Hello World` example, we're going over the basic steps required to retr
     - In the **Access Token URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/token?resource=https://api.businesscentral.dynamics.com`.
     - In the **Client ID** field, enter the Application ID from the registered app in Azure Portal.
     - In the **Scope** field, 
-    - In the **Client Secret** field, enter the key generated under **Keys** that you copied in step 6 in the [Setting up Microsoft Entra ID based authentication](#Microsoft Entra ID).
+    - In the **Client Secret** field, enter the key generated under **Keys** that you copied in step 6 in the [Setting up Microsoft Entra ID based authentication](#Microsoft-Entra-ID).
     - In the **Client Authentication** field, choose the **Send client credentials in body** option.
 4. Choose the **Get New Access Token** button. The first time you sign in, you'll get prompted for consent.
 5. Scroll down and choose **Use token** button.  
