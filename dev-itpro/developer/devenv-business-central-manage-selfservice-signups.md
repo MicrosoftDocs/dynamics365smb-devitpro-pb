@@ -19,12 +19,12 @@ PowerShell commands can be used with Microsoft Entra ID to disable adhoc (self-s
 
 ## Disable self-service signups
 1. Start Windows PowerShell as an administrator.
-2. At the command prompt, run the following command to sign in to your Microsoft Entra ID service. You must provide the credentials of an administrator of the Microsoft 365 service:
+2. At the command prompt, run the following command to sign in to your Microsoft Entra service. You must provide the credentials of an administrator of the Microsoft 365 service:
 
     ```PowerShell
     $Msolcred = Get-credential
     ```
-2. Run the following command to connect to the Microsoft Entra ID service using the provided credentials:
+2. Run the following command to connect to the Microsoft Entra service using the provided credentials:
 
     ```PowerShell
     Connect-MsolService -Credential $MsolCred
@@ -47,14 +47,14 @@ PowerShell commands can be used with Microsoft Entra ID to disable adhoc (self-s
  
 ## Enable self-service signups
 
-To enable self-service signups, follow the same steps to sign in and connect to your Microsoft Entra ID service, and then run the following command:
+To enable self-service signups, follow the same steps to sign in and connect to your Microsoft Entra service, and then run the following command:
 
 ```PowerShell  
 Set-MsolCompanySettings -AllowAdHocSubscriptions $true 
   
 ```
 ## Verify whether signups are enabled or disabled
-To see whether self-service signups are enabled or disabled in Microsoft Entra ID, follow the same steps to sign in and connect to your Microsoft Entra ID service, then run the following command:
+To see whether self-service signups are enabled or disabled in Microsoft Entra ID, follow the same steps to sign in and connect to your Microsoft Entra service, then run the following command:
 
 ```PowerShell
 Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
