@@ -140,7 +140,7 @@ Entitlements are assigned to the user account in the Microsoft 365 admin center 
 
 ### The user is not a direct/indirect member of the security group associated with the environment, or the group does not exist, hence restricting the user access to the environment
 
-In Microsoft Entra ID , you can create security that include users that you want to give access to your environments. Then, from the Business Central Admin center, you can associate the groups with your environments. This error occurs if the user who tries to sign in isn't a member of the security group, or the security group assigned to the environment doesn't exist in Microsoft Entra ID. For more information, see [Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md).
+In Microsoft Entra ID, you can create security that include users that you want to give access to your environments. Then, from the Business Central Admin center, you can associate the groups with your environments. This error occurs if the user who tries to sign in isn't a member of the security group, or the security group assigned to the environment doesn't exist in Microsoft Entra ID. For more information, see [Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md).
 
 ## Authorization Succeeded (Open Company)
 

@@ -31,7 +31,7 @@ The members of the security group have either the *Admin agent* or *Helpdesk age
 For certain tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is a powerful tool for you to manage your customers' tenants. From the administration center, you can manage upgrades and access the tenants as the delegated administrator. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
 > [!TIP]
-> Always include the domain or the Microsoft Entra ID ID of the customer in the URL when you log in as a *delegated admin*, such as in `https://businesscentral.dynamics.com/contoso.com/admin`. This way, you always know exactly which customer you are trying to access.
+> Always include the domain or the Microsoft Entra ID of the customer in the URL when you log in as a *delegated admin*, such as in `https://businesscentral.dynamics.com/contoso.com/admin`. This way, you always know exactly which customer you are trying to access.
 
 > [!CAUTION]
 > [!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]

@@ -21,7 +21,7 @@ This article describes how to set up [!INCLUDE [prod_short](../developer/include
 
 ## Prerequisites
 
-- a Microsoft Entra ID (AD) tenant.
+- a Microsoft Entra tenant.
 
    You'll need a tenant on Microsoft Entra ID that has at least one user. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant).
 
@@ -116,7 +116,7 @@ Unless you see an error message, you're now done. The [!INCLUDE [prod_short](../
 
 ## Next step
 
-The first time a feature that uses the registered application is accessed from [!INCLUDE [prod_short](../developer/includes/prod_short.md)], consent must be given to the Azure service. Consent can only be given by Microsoft Entra IDmin user account. So, after you set up the registered the application in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], make the initial connection to these services and give consent. As an example, see [Connect to Power BI from Business Central- one time only](/dynamics365/business-central/across-working-with-powerbi#connect-to-power-bi-from-business-central--one-time-only).
+The first time a feature that uses the registered application is accessed from [!INCLUDE [prod_short](../developer/includes/prod_short.md)], consent must be given to the Azure service. Consent can only be given by a Microsoft Entra admin user account. So, after you set up the registered the application in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], make the initial connection to these services and give consent. As an example, see [Connect to Power BI from Business Central- one time only](/dynamics365/business-central/across-working-with-powerbi#connect-to-power-bi-from-business-central--one-time-only).
 
 ## Fixing problems
 
