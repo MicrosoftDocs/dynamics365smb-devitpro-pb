@@ -13,7 +13,7 @@ ms.date: 04/01/2021
 ---
 # Multi-Factor Authentication for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]  
 
-When using Microsoft Entra authentication with [!INCLUDE[prod_short](../developer/includes/prod_short.md)], we recommend you take advantage of Microsoft Entra ID Multi-Factor Authentication (MFA). MFA further safeguards access to the application and data. It delivers single sign-on authentication through a range of verification options, like:
+When using Microsoft Entra authentication with [!INCLUDE[prod_short](../developer/includes/prod_short.md)], we recommend you take advantage of Microsoft Entra Multi-Factor Authentication (MFA). MFA further safeguards access to the application and data. It delivers single sign-on authentication through a range of verification options, like:
 
 - Phone call
 - Text message
