@@ -99,7 +99,7 @@ After you create the application registration, the next task is to configure the
 > Don't complete this task for configuring OneDrive integration with Business Central 2022 release wave 1 (version 20) and earlier. Instead, see [Configuring Business Central On-Premises for OneDrive](/dynamics365/business-central/admin-onedrive-integration-onpremises#set-up-the-connection-in--version-19-and-20) in the business functionality help.
 
 1. In the top-right corner, choose the ![Tell me.](../developer/media/search-icon.png "Tell me what you want to do") icon, enter **Assisted Setup**, and then choose the related link.
-2. Select **Set up your Microsoft Entra ID accounts**, then **Next**.
+2. Select **Set up your Microsoft Entra accounts**, then **Next**.
 
     The **Connect With Azure** page opens.
     <!--

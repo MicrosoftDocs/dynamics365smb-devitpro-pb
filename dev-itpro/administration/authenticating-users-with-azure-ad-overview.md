@@ -17,7 +17,7 @@ The article describes the tasks involved in setting up Microsoft Entra authentic
 
 ## Microsoft Entra ID and [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
-With Microsoft Entra authentication, you store user accounts and credentials in a Microsoft Entra tenant. You then associate [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user accounts with the Microsoft Entra tenant user account. Once in place, users access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] by using their Microsoft Entra ID account.  
+With Microsoft Entra authentication, you store user accounts and credentials in a Microsoft Entra tenant. You then associate [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user accounts with the Microsoft Entra tenant user account. Once in place, users access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] by using their Microsoft Entra account.  
 
 Microsoft Entra authentication enables [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to integrate with various applications and services, through a single sign-on experience. It's the required authentication method for some features offered by [!INCLUDE[prod_short](../developer/includes/prod_short.md)], such as:  
 

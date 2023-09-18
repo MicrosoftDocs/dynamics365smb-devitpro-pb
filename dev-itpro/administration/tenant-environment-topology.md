@@ -22,7 +22,7 @@ When someone wants to buy [!INCLUDE [prod_short](../includes/prod_short.md)] onl
 
 The first decision to make is related to the Microsoft Entra ID tenant that is required to use for [!INCLUDE [prod_short](../includes/prod_short.md)] online. To sign up for a trial, use a work or school account. For more information, see [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide&preserve-view=true).  
 
-This account is an important step because it is tied to a region of the world. Users are defined in the Microsoft Entra ID account and then assigned the relevant licenses in the Microsoft 365 admin center. It is also important for the reseller's Microsoft Entra ID. For more information, see the [Enroll in the CSP program](tenant-administration.md#enroll-in-the-csp-program) section.  
+This account is an important step because it is tied to a region of the world. Users are defined in the Microsoft Entra account and then assigned the relevant licenses in the Microsoft 365 admin center. It is also important for the reseller's Microsoft Entra ID. For more information, see the [Enroll in the CSP program](tenant-administration.md#enroll-in-the-csp-program) section.  
 
 > [!TIP]
 > For some customers, the right approach is to have multiple Microsoft Entra tenants due to their own organizational structure. However, in [!INCLUDE [prod_short](../includes/prod_short.md)], all users of an environment must belong to the same Microsoft Entra tenant.

@@ -60,7 +60,7 @@ When the add-in is installed, it shows up as a panel in Excel. Next, you must co
 
 1. In the Dynamics 365 Excel add-in, choose **Add server information**, and then in the **Server URL** field, enter `https://exceladdinprovider.smb.dynamics.com`.
 2. Choose the OK button, and then confirm that the app reloads.
-3. When prompted, sign in with your Microsoft Entra ID account.
+3. When prompted, sign in with your Microsoft Entra account.
 4. Optionally, choose the environment and company that you want to connect to.
 
 The add-in is now connected to your [!INCLUDE [prod_short](../developer/includes/prod_short.md)], and you can edit data and publish the changes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  

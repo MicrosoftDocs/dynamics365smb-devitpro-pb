@@ -182,7 +182,7 @@ If you've prepared for deployment as described earlier, then as an admin, the on
 
 ### Register an application in Microsoft Entra ID
 
-In the Azure portal, add an application registration for Business Central in your Microsoft Entra tenant. Give the registered app delegated permission to Exchange web service (EWS). After you've added the registered app in Microsoft Entra ID, set up Business Central to use it by using the **Set up your Microsoft Entra ID accounts** assisted setup.
+In the Azure portal, add an application registration for Business Central in your Microsoft Entra tenant. Give the registered app delegated permission to Exchange web service (EWS). After you've added the registered app in Microsoft Entra ID, set up Business Central to use it by using the **Set up your Microsoft Entra accounts** assisted setup.
 
 For more information about how to complete this step, see [Registering [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-Premises in Microsoft Entra ID for Integrating with Other Services](register-app-azure.md).
 
