@@ -47,7 +47,7 @@ This type of environment can be useful if you want to run benchmark tests, for e
     In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can create new production and sandbox environments for the test customer.
 
     > [!TIP]
-    > Always include the domain or the Azure Active Directory ID of the customer in the URL when you login as a *delegated admin*. This way, you always know exactly which customer you are trying to access.
+    > Always include the domain or the Microsoft Entra ID ID of the customer in the URL when you login as a *delegated admin*. This way, you always know exactly which customer you are trying to access.
 
 5. Access [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as the local user that you created in step 2.
 

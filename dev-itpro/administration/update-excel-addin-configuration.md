@@ -11,7 +11,7 @@ ms.date: 05/25/2022
 ---
 # Modify the Excel Add-in Configuration to Support July 2022 Update
 
-Starting in July 2022, Microsoft will roll out an update to the Excel add-in. The update will help to secure the connection between the add-in and [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. The update requires that you modify your organization's Azure Active Directory (Azure AD) configuration so that users can continue using the add-in.
+Starting in July 2022, Microsoft will roll out an update to the Excel add-in. The update will help to secure the connection between the add-in and [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. The update requires that you modify your organization's Microsoft Entra ID (Microsoft Entra ID) configuration so that users can continue using the add-in.
 
 > [!NOTE]
 > You can make the changes that are described in this article at any time. The existing Excel add-in will work with the changes. So we recommend that you make the changes as soon as possible to avoid any down time when the update occurs.
@@ -24,10 +24,10 @@ After Microsoft updates the Excel add-in, users will no longer be able to sign i
 
 ## What you need to do to prepare
 
-You'll have to change to the existing Azure AD app registration that's set up for the add-in to use the new single-page application (*spa*) redirect URI instead of the legacy *web* redirect URI. The change requires you have administrative permissions. It only has to be done once for the whole organization. Your registered app may already be configured for *spa*. You can also use the following steps to verify.
+You'll have to change to the existing Microsoft Entra ID app registration that's set up for the add-in to use the new single-page application (*spa*) redirect URI instead of the legacy *web* redirect URI. The change requires you have administrative permissions. It only has to be done once for the whole organization. Your registered app may already be configured for *spa*. You can also use the following steps to verify.
 
 1. Sign in to [Azure portal](https://portal.azure.com).
-2. Select **Azure Active Directory**. 
+2. Select **Microsoft Entra ID**. 
 3. Under **Manage**, select **App Registrations**.
 4. Select the app that was registered to enable users to sign in to the Excel add-in. 
 5. Under **Manage**, select **Manifest**.
@@ -41,9 +41,9 @@ You'll have to change to the existing Azure AD app registration that's set up fo
     ```
 
 > [!IMPORTANT]
-> Your experience may vary if your Azure AD app registration also includes redirect URIs for other services. Don't not change other redirect URIs for other services or for the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] Web client as part of this change. To check if other services are affected by similar security hardening exercises and require re-configuration, contact the service provider.
+> Your experience may vary if your Microsoft Entra ID app registration also includes redirect URIs for other services. Don't not change other redirect URIs for other services or for the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] Web client as part of this change. To check if other services are affected by similar security hardening exercises and require re-configuration, contact the service provider.
 
 ## See Also
 
 [Setting up the Business Central Add-in for Excel in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-premises](configuring-excel-addin.md)  
-[Registering an application Azure Active Directory](/azure/active-directory/develop/quickstart-register-app)    
+[Registering an application Microsoft Entra ID](/azure/active-directory/develop/quickstart-register-app)    

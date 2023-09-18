@@ -17,7 +17,7 @@ Some indirect providers (distributors) provide their resellers with a custom por
 
 Both indirect resellers and direct bill partners can access and support their customers' [!INCLUDE [prod_short](prod_short.md)] by setting up a reseller relationship with them.  
 
-To service customers in a specific country, your partner company's Azure Active Directory (Azure AD) tenant and CSP account must be registered in the regional CSP market that covers that country. For more information, see [Cloud Solution Provider program regional markets and currencies](/partner-center/regional-authorization-overview).  
+To service customers in a specific country, your partner company's Microsoft Entra ID (Microsoft Entra ID) tenant and CSP account must be registered in the regional CSP market that covers that country. For more information, see [Cloud Solution Provider program regional markets and currencies](/partner-center/regional-authorization-overview).  
 
 > [!NOTE]  
 > When you buy [!INCLUDE [prod_short](prod_short.md)] offers on behalf of your CSP customers, the CSP offer must be available in both your own tenant's country and in your customer's tenant's country. For example, if your tenant is located in Slovakia and the customer's tenant is in Germany, you will not be able to sell Dynamics 365 Business Central Premium to that customer, because this offer is currently not available in Slovakia.

@@ -26,7 +26,7 @@ Each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance must con
 For information about the common deployment scenarios, see [Deployment Topologies](deployment-scenarios.md).  
 
 > [!IMPORTANT]
-> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support Azure Active Directory Application Proxy, because Application Proxy doesn't fully support web sockets.
+> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support Microsoft Entra ID Application Proxy, because Application Proxy doesn't fully support web sockets.
 
 ##  Creating a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance  
 

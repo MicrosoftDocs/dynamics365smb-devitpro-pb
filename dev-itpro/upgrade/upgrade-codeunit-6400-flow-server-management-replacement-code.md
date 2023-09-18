@@ -42,7 +42,7 @@ codeunit 6400 "Flow Service Management"
         FlowTemplatePageSizeTxt: Label '4', Locked = true;
         FlowTemplateDestinationNewTxt: Label 'new', Locked = true;
         FlowTemplateDestinationDetailsTxt: Label 'details', Locked = true;
-        AzureAdMgt: Codeunit "Azure AD Mgt.";
+        AzureAdMgt: Codeunit "Microsoft Entra ID Mgt.";
         DotNetString: DotNet String;
         FlowPPEErr: Label 'Power Automate integration is not supported outside of a PROD environment.';
         FlowAccessDeniedErr: Label 'Windows Azure Service Management API permissions need to be enabled for Flow in the Azure Portal. Contact your system administrator.';

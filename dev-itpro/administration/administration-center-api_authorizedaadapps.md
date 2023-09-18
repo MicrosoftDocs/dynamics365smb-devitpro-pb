@@ -1,6 +1,6 @@
 ---
 title: Business Central Admin Center API - Authorized AAD Apps
-description: Learn about the Business Central administration center API for authorizing Azure AD Apps.
+description: Learn about the Business Central administration center API for authorizing Microsoft Entra ID Apps.
 author: jobulsin
 ms.topic: conceptual
 ms.devlang: na
@@ -11,13 +11,13 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
 
-# Authorized Azure AD Apps 
+# Authorized Microsoft Entra ID Apps 
 
-Authorized Apps are Azure Active Directory Apps authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
+Authorized Apps are Microsoft Entra ID Apps authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
 
-## Get Authorized Azure AD Apps
+## Get Authorized Microsoft Entra ID Apps
 
-Returns the Azure AD apps that are authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Azure AD Tenant.
+Returns the Microsoft Entra ID apps that are authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra ID Tenant.
 
 ```
 GET /admin/v2.18/authorizedAadApps
@@ -38,9 +38,9 @@ GET /admin/v2.18/authorizedAadApps
 ]
 ```
 
-## Authorize Azure AD App
+## Authorize Microsoft Entra ID App
 
-Authorizes an Azure AD app to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Azure AD Tenant. This does not grant admin consent or assign permission sets in environments to the Azure AD app.
+Authorizes an Microsoft Entra ID app to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra ID Tenant. This does not grant admin consent or assign permission sets in environments to the Microsoft Entra ID app.
 
 ```
 PUT /admin/v2.18/authorizedAadApps/<appClientId>
@@ -53,9 +53,9 @@ PUT /admin/v2.18/authorizedAadApps/<appClientId>
     "isAdminConsentGranted": false
 }
 ```
-## Remove Azure AD App
+## Remove Microsoft Entra ID App
 
-Removes an Azure AD app authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Azure AD Tenant. This does not revoke admin consent in Azure AD nor remove permission sets assigned to the Azure AD app in environments.
+Removes an Microsoft Entra ID app authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra ID Tenant. This does not revoke admin consent in Microsoft Entra ID nor remove permission sets assigned to the Microsoft Entra ID app in environments.
 
 ```
 DELETE /admin/v2.18/authorizedAadApps/<appClientId>

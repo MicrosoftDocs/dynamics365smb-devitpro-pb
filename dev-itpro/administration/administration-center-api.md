@@ -27,24 +27,24 @@ For more information about administrative capabilities, see [The Business Centra
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is located at the following URL: `https://api.businesscentral.dynamics.com`.
 
-## Authenticate using service-to-service AAD Apps ([Client Credentials Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow))
+## Authenticate using service-to-service Microsoft Entra ID Apps ([Client Credentials Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow))
 
 > [!IMPORTANT]  
 > This authentication type is supported from version 20.0 an onwards
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API supports authentication using AAD Apps.
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API supports authentication using Microsoft Entra ID Apps.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Register an application for [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] in your Azure Active Directory tenant.
+2. Register an application for [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] in your Microsoft Entra ID tenant.
 
-    Follow the general guidelines at [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
+    Follow the general guidelines at [Register your application with your Microsoft Entra ID tenant](/azure/active-directory/active-directory-app-registration).
 
-    When you add an application to an Azure AD tenant, you must specify the following information:
+    When you add an application to an Microsoft Entra ID tenant, you must specify the following information:
 
     |Setting|Description|
     |-------|-----------|
     |Name|Specify a unique name for your application. |
-    |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong>.|
+    |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)</strong>.|
     |Redirect URI|Optional. You can grant consent from the Azure portal if left empty.|
 
     When completed, an **Overview** displays in the portal for the new application.
@@ -56,7 +56,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API su
     > [!NOTE]
     > Copy the secret's value for use in your client application code. This secret value is never displayed again after you leave this page.
 
-    For the latest guidelines about adding client secrets in Azure AD, see [Add credentials](/azure/active-directory/develop/quickstart-register-app#add-credentials) in the Azure documentation.
+    For the latest guidelines about adding client secrets in Microsoft Entra ID, see [Add credentials](/azure/active-directory/develop/quickstart-register-app#add-credentials) in the Azure documentation.
 
   > [!NOTE]
   > Copy the **Application (client) ID** of the registered app. You'll need this later. You can get this value from the **Overview** page.
@@ -68,11 +68,11 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API su
     3. Select **Application permissions**, select **AdminCenter.ReadWrite.All**, then select **Add permissions**.
   
     > [!NOTE]
-    > If you intent to use the same AAD App with the Automation API and Business Central Web Services you can also grant **API.ReadWrite.All** and **Automation.ReadWrite.All** permissions. Learn more [here](automation-apis-using-s2s-authentication.md).
+    > If you intent to use the same Microsoft Entra ID App with the Automation API and Business Central Web Services you can also grant **API.ReadWrite.All** and **Automation.ReadWrite.All** permissions. Learn more [here](automation-apis-using-s2s-authentication.md).
 
-5. (optional) Grant admin consent on each permission by selecting it in the list, then selecting **Grant admin consent for \<tenant name\>**. This step isn't required if you'll be granting consent from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. It is possible to grant consent from this page only for your own current tenant. This works for single-tenant apps, but for multi-tenant apps you have to grant consent for each tenant from that tenant's Azure AD portal or the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
-6. Go to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and navigate to the 'Authorized AAD Apps' page. Paste the **Application (client) ID** of your app in the form to authorize an app.
-7. If not already completed in step 5 you can grant consent for your app from the 'Authorized AAD Apps' page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+5. (optional) Grant admin consent on each permission by selecting it in the list, then selecting **Grant admin consent for \<tenant name\>**. This step isn't required if you'll be granting consent from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. It is possible to grant consent from this page only for your own current tenant. This works for single-tenant apps, but for multi-tenant apps you have to grant consent for each tenant from that tenant's Microsoft Entra ID portal or the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
+6. Go to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and navigate to the 'Authorized Microsoft Entra ID Apps' page. Paste the **Application (client) ID** of your app in the form to authorize an app.
+7. If not already completed in step 5 you can grant consent for your app from the 'Authorized Microsoft Entra ID Apps' page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
   
     > [!NOTE]
     > There might be a short delay until the `Granted` status is visible in the Business Central admin center after refreshing. To grant consent, you must have a Microsoft Entra role assigned that allows for management of application registrations in the tenant, such as the [Cloud Application Administrator](https://learn.microsoft.com/azure/active-directory/roles/permissions-reference#cloud-application-administrator) role. The Dynamics 365 Administrator role that grants access to the [!INCLUDE[prodadmincenter] does not allow users to grant consent to applications in the tenant.
@@ -96,9 +96,9 @@ PowerShell example without prompt:
   > In the PowerShell example above, the guid specified to acquire the token (996def3d-b36c-4153-8607-a6fd3c01b89f) is the resource ID of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The example gets the client credential using the app secret, but the recommended way would be to rely on X.509 certificates.
 
 ### Calling [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API OAuth2Flows
-After the Azure AD Application has been set up, authorized in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and granted admin consent, you're ready to make API calls.
+After the Microsoft Entra ID Application has been set up, authorized in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and granted admin consent, you're ready to make API calls.
 
-The following sample uses the [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) for Visual Studio Code. Using the Rest Client makes it easy to see which HTTP calls are made both against [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and Azure Active Directory. Any HTTP client can be used to create the requests below. Or you can choose any library, like MSAL.
+The following sample uses the [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) for Visual Studio Code. Using the Rest Client makes it easy to see which HTTP calls are made both against [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and Microsoft Entra ID. Any HTTP client can be used to create the requests below. Or you can choose any library, like MSAL.
 
 ```
 @tenantId = <tenant id>
@@ -128,11 +128,11 @@ Authorization: {{accessHeader}}
 @environmentName = {{GetEnvironments.response.body.value.[0].name}}
 ```
 
-## <a name="azuread"></a>Setting up Azure Active Directory (Azure AD) based authentication ([Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow))
+## <a name="azuread"></a>Setting up Microsoft Entra ID (Microsoft Entra ID) based authentication ([Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow))
 
 Sign in to the [Azure portal](https://portal.azure.com) to register your client application as an app and enable it to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
 
-1. Follow the instructions in the [Integrating applications with Azure Active Directory](/azure/active-directory/develop/active-directory-integrating-applications) article. The next steps elaborate on some of the specific settings you must enable.
+1. Follow the instructions in the [Integrating applications with Microsoft Entra ID](/azure/active-directory/develop/active-directory-integrating-applications) article. The next steps elaborate on some of the specific settings you must enable.
 2. Give the application a **Name**, such as **Business Central Web Service Client**.
 3. For **Application type**, choose either **Native** or **Web app/API** depending on your scenario. The code examples below assume **Native**.
 4. Choose a **Redirect URI**. If it's a **Native** app, you can choose for example: **BusinessCentralWebServiceClient://auth**. If it's a **Web app/API** app, set the value to the actual URL of the web application.

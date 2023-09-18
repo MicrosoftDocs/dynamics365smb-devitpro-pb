@@ -57,7 +57,7 @@ Here is an example of the response.
     "id" : "26066f96-8775-eb11-bb56-000d3a298ab3",
     "category" : "APIUSERJOB",
     "status" : "In Progress",
-    "description" : "Create new users from Azure AD API job",
+    "description" : "Create new users from Microsoft Entra ID API job",
     "errorMessage" : ""
 }
 ```

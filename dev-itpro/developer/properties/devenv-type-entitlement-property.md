@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Type (Entitlement) Property
 > **Version**: _Available or changed with runtime version 7.0._
 
-The type of entitlement. When a user logs into Business Central, it's checked if the user is assigned the given Azure AD service plan, the given Azure AD role etc., and if that's the case, the user will be entitled to use the objects covered by this entitlement. The same applies if an application logs into Business Central.
+The type of entitlement. When a user logs into Business Central, it's checked if the user is assigned the given Microsoft Entra ID service plan, the given Microsoft Entra ID role etc., and if that's the case, the user will be entitled to use the objects covered by this entitlement. The same applies if an application logs into Business Central.
 
 ## Applies to
 -   Entitlement
@@ -25,16 +25,16 @@ The type of entitlement. When a user logs into Business Central, it's checked if
 
 |Value|Description|
 |-----------|---------------------------------------|
-|**PerUserServicePlan**|The entitlement is associated with an Azure AD service plan which is licensed to specific users.|
+|**PerUserServicePlan**|The entitlement is associated with an Microsoft Entra ID service plan which is licensed to specific users.|
 |**PerUserOfferPlan**|The entitlement is associated with an offer, which is licensed to specific users.|
-|**FlatRateServicePlan**|The entitlement is associated with an Azure AD service plan which is licensed to an Azure AD tenant|
-|**Role**|The entitlement is associated with an Azure AD role.|
-|**ConcurrentUserServicePlan**|The entitlement is associated with a named Azure AD group.|
-|**Application**|The entitlement is associated with an Azure AD application.|
-|**ApplicationScope**|The entitlement is associated with an Azure AD application scope.|
+|**FlatRateServicePlan**|The entitlement is associated with an Microsoft Entra ID service plan which is licensed to an Microsoft Entra ID tenant|
+|**Role**|The entitlement is associated with an Microsoft Entra ID role.|
+|**ConcurrentUserServicePlan**|The entitlement is associated with a named Microsoft Entra ID group.|
+|**Application**|The entitlement is associated with an Microsoft Entra ID application.|
+|**ApplicationScope**|The entitlement is associated with an Microsoft Entra ID application scope.|
 |**Implicit**|Everyone has this license.|
 |**Unlicensed**|Entitlement applied when no other entitlements from an app has been applied.|
-|**Group**|The entitlement is associated with a specific Azure AD group, identified by the object ID specified in the id property.|
+|**Group**|The entitlement is associated with a specific Microsoft Entra ID group, identified by the object ID specified in the id property.|
 
 
 ## Remarks

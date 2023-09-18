@@ -28,20 +28,20 @@ The tasks illustrate how to use OAuth by walking you through the creation of a s
 
 To complete the following tasks in this article, make sure your system meets the following requirements:
 
-- Configure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Azure Active Directory or Microsoft 365 authentication.
+- Configure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Microsoft Entra ID or Microsoft 365 authentication.
 
-    For more information, see [Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Azure Active Directory](../administration/authenticating-users-with-azure-active-directory.md).
+    For more information, see [Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Microsoft Entra ID](../administration/authenticating-users-with-azure-active-directory.md).
 
     Also, for purposes of this article only, make sure that your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account is configured with a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Authentication password or web access key.  
 
-- Get information about the Azure Active Directory tenant and the registered [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application.
+- Get information about the Microsoft Entra ID tenant and the registered [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application.
 
-    When you configured authentication, you had to register [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as an application in Azure Active Directory. To complete the tasks that follow, you'll need the following information about the tenant and application. You can get this information from the Azure portal.
+    When you configured authentication, you had to register [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as an application in Microsoft Entra ID. To complete the tasks that follow, you'll need the following information about the tenant and application. You can get this information from the Azure portal.
 
     |Setting/option|Description|
     |--------------|-----------|
-    |Azure Active Directory Tenant ID|The ID of the directory that's used by Business Central in Azure AD. The Azure Active Directory Tenant ID can be the tenant's domain name or GUID. In most cases, you can use the domain name. The domain name is typically in the form *mytenant.onmicrosoft.com*, which is the case if you have a Microsoft 365 subscription. You get the domain name from the **Domain** or **Custom domain names** settings for the AD tenant in the Azure portal. The Azure AD Tenant ID also makes up part of the **WS-federation login endpoint** setting that is configured for the [!INCLUDE[server](../developer/includes/server.md)] instance|
-    |App ID URI| When you configured Business Central for Azure AD or Microsoft 365 authentication, you had to register Business Central as an application in the Azure Active Directory (Azure AD) and also specify an APP ID URI. The APP ID URI has the format `https://<domain>/<guid>`, like `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`. You need the APP ID URI later to enable OAuth. You can get the ID from the Azure portal by viewing the Business Central application **Settings** in Active Directory. This value is also specified as the `wtrealm` in the `WS-Federation Login Endpoint` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance configuration. For more information, see [Azure Active Directory Settings](../administration/configure-server-instance.md#AzureAd).|
+    |Microsoft Entra ID Tenant ID|The ID of the directory that's used by Business Central in Microsoft Entra ID. The Microsoft Entra ID Tenant ID can be the tenant's domain name or GUID. In most cases, you can use the domain name. The domain name is typically in the form *mytenant.onmicrosoft.com*, which is the case if you have a Microsoft 365 subscription. You get the domain name from the **Domain** or **Custom domain names** settings for the AD tenant in the Azure portal. The Microsoft Entra ID Tenant ID also makes up part of the **WS-federation login endpoint** setting that is configured for the [!INCLUDE[server](../developer/includes/server.md)] instance|
+    |App ID URI| When you configured Business Central for Microsoft Entra ID or Microsoft 365 authentication, you had to register Business Central as an application in the Microsoft Entra ID (Microsoft Entra ID) and also specify an APP ID URI. The APP ID URI has the format `https://<domain>/<guid>`, like `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`. You need the APP ID URI later to enable OAuth. You can get the ID from the Azure portal by viewing the Business Central application **Settings** in Active Directory. This value is also specified as the `wtrealm` in the `WS-Federation Login Endpoint` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance configuration. For more information, see [Microsoft Entra ID Settings](../administration/configure-server-instance.md#AzureAd).|
   
 - Enable OData Services and V4 Endpoint on the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
@@ -61,9 +61,9 @@ To complete the following tasks in this article, make sure your system meets the
 
 ## Configure the App ID URI in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server
 
-When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] was registered in the Azure AD tenant, it was assigned an APP ID URI. For example, in this article, the APP ID URI is `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`.
+When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] was registered in the Microsoft Entra ID tenant, it was assigned an APP ID URI. For example, in this article, the APP ID URI is `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`.
 
-If you haven't already done so, set the **Azure AD App ID URI** setting in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance configuration to the same value as the APP ID URI in Azure. You can do this step by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) of the [!INCLUDE[adminshell](../developer/includes/admintool.md)], or by modifying the server instance CustomSettings.config file directly. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
+If you haven't already done so, set the **Microsoft Entra ID App ID URI** setting in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance configuration to the same value as the APP ID URI in Azure. You can do this step by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) of the [!INCLUDE[adminshell](../developer/includes/admintool.md)], or by modifying the server instance CustomSettings.config file directly. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
 
 ## Expose a page as web service
 
@@ -85,17 +85,17 @@ Use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client to pu
     For more information about publishing, see [Publish a Web Service](./publish-web-service.md).
 5. After you publish the web service, you can now enter the OData URL in the address of an Internet browser.
 
-    You're prompted for your user name and password. The user name and password that you enter is the user name and password (or web service access key) of your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] account; not your Microsoft 365 or Azure AD user name and password.
+    You're prompted for your user name and password. The user name and password that you enter is the user name and password (or web service access key) of your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] account; not your Microsoft 365 or Microsoft Entra ID user name and password.
 
     This condition illustrates the problem&mdash;users must use different credentials for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] clients than they do for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services.
 
-## Register the console application in the Azure AD tenant
+## Register the console application in the Microsoft Entra ID tenant
 
-Although you haven't yet created the console application, the next thing to do is to register it as an application in the same Azure AD Directory in which you registered [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Having to register the console application in Azure AD makes sense because Azure AD is the common authority that can issue security tokens that enable client applications to call server applications.
+Although you haven't yet created the console application, the next thing to do is to register it as an application in the same Microsoft Entra ID Directory in which you registered [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Having to register the console application in Microsoft Entra ID makes sense because Microsoft Entra ID is the common authority that can issue security tokens that enable client applications to call server applications.
 
 1. Using the Azure portal, register the console application as a native client application.
 
-    For information about how to do this step, follow the instructions in [Quickstart: Register an app with the Azure Active Directory](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app).
+    For information about how to do this step, follow the instructions in [Quickstart: Register an app with the Microsoft Entra ID](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app).
 
     Use the following table as guide to help you determine some of the registration settings.
 
@@ -103,7 +103,7 @@ Although you haven't yet created the console application, the next thing to do i
     |------|-----|----|
     |Name|Specifies a descriptive name for the application. | `My Business Central Web Service App`|
     |Application Type|Set to `Native`|`Native`|
-    |Redirect URI|Specifies the redirect URI to a valid URI for Azure AD to redirect to in response to an OAuth request.<br /><br /> This value is a logical URL that only acts as a unique identifier for the application. It doesn't have to refer to an actual endpoint; but it must be a valid URI.|`https://mybcclient`|
+    |Redirect URI|Specifies the redirect URI to a valid URI for Microsoft Entra ID to redirect to in response to an OAuth request.<br /><br /> This value is a logical URL that only acts as a unique identifier for the application. It doesn't have to refer to an actual endpoint; but it must be a valid URI.|`https://mybcclient`|
 
 2. Grant the console application delegated permissions to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application.
 
@@ -118,7 +118,7 @@ Although you haven't yet created the console application, the next thing to do i
 
     In the Azure portal, you can see these values by opening **Settings** for the registered application.
 
-Now the custom client application is registered in Azure AD, and it has the permission to call [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services on behalf of a signed-in user.
+Now the custom client application is registered in Microsoft Entra ID, and it has the permission to call [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services on behalf of a signed-in user.
 
 ## Create the console application that connects to the OData Web Service using OAuth
 
@@ -191,20 +191,20 @@ Install the latest version of the package by using NuGet Package Manager in Visu
     {
         class Program
         {
-            // Azure AD registrations:
-            // Specifies the Azure AD tenant ID
+            // Microsoft Entra ID registrations:
+            // Specifies the Microsoft Entra ID tenant ID
             const string AadTenantId = "<mytenant.onmicrosoft.com>";
-            // Specifies the Application (client) ID of the console application registration in Azure AD
+            // Specifies the Application (client) ID of the console application registration in Microsoft Entra ID
             const string ClientId = "<7b235fb6-c01b-47c5-afeb-cbb165abeaf7>";
-            // Specifies the redirect URL for the client that was configured for console application registration in Azure AD
+            // Specifies the redirect URL for the client that was configured for console application registration in Microsoft Entra ID
             const string ClientRedirectUrl = "<https://mybcclient>";
-            // Specifies the APP ID URI that is configured for the registered Business Central application in Azure AD
+            // Specifies the APP ID URI that is configured for the registered Business Central application in Microsoft Entra ID
             const string ServerAppIdUri = "<https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd>";
 
             static void Main()
             {
-                // Get access token from Azure AD. This will show the login dialog.
-                            // Get access token from Azure AD. This will show the login dialog.
+                // Get access token from Microsoft Entra ID. This will show the login dialog.
+                            // Get access token from Microsoft Entra ID. This will show the login dialog.
                 var client = PublicClientApplicationBuilder.Create(ClientId)
                     .WithAuthority("https://login.microsoftonline.com/" + AadTenantId, false)
                     .WithRedirectUri(ClientRedirectUrl)
@@ -233,7 +233,7 @@ Install the latest version of the package by using NuGet Package Manager in Visu
 
 More and more companies adopt Microsoft 365 and integrate [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Microsoft 365 to obtain single sign-on. As this occurs, it also becomes important that customers can authenticate to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services by using their universal credentials – the Microsoft 365 user name and password. OAuth is the web service authorization protocol that makes this possible.
 
-This article covered how to configure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services for OAuth authorization. It also demonstrated how to create a simple .NET console application that connects to these web services. It is also possible to create other types of applications that authenticate using OAuth, such as modern Windows 10 apps, iOS apps, and Android apps. The Microsoft Azure Active Directory team has released libraries for all these platforms. See the following resources:
+This article covered how to configure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services for OAuth authorization. It also demonstrated how to create a simple .NET console application that connects to these web services. It is also possible to create other types of applications that authenticate using OAuth, such as modern Windows 10 apps, iOS apps, and Android apps. The Microsoft Microsoft Entra ID team has released libraries for all these platforms. See the following resources:
 
 https://github.com/azureadsamples/nativeclient-windowsstore
 

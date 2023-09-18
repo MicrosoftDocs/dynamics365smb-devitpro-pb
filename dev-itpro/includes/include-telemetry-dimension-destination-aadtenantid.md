@@ -1,1 +1,1 @@
-Specifies the destination Azure Active Directory (AAD) tenant ID for the move.
+Specifies the destination Microsoft Entra ID (AAD) tenant ID for the move.

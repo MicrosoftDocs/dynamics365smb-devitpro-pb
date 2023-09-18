@@ -383,7 +383,7 @@ The AL compiler is more strict than the C/SIDE compiler and will issue errors fo
                 TempPlan.Reset;
                 TempPlan.DeleteAll;
         
-                // Loop through assigned Azure AD Plans
+                // Loop through assigned Microsoft Entra ID Plans
                 foreach AssignedPlan in GraphUser.AssignedPlans do begin
                   HaveAssignedPlans := true;
                   if AssignedPlan.CapabilityStatus = 'Enabled' then begin
@@ -393,7 +393,7 @@ The AL compiler is more strict than the C/SIDE compiler and will issue errors fo
                   end;
                 end;
         
-                // If there are no Azure AD Plans, loop through Azure AD Roles
+                // If there are no Microsoft Entra ID Plans, loop through Microsoft Entra ID Roles
                 /* if not HaveAssignedPlans then
                   foreach DirectoryRole in Graph.GetUserRoles(GraphUser) do begin
                     Evaluate(IsSystemRole,Format(DirectoryRole.IsSystem));

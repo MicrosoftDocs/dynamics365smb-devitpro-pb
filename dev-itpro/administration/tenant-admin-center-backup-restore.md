@@ -37,7 +37,7 @@ For more information about permissions sets and user groups, see [Assign Permiss
 - When restoring a sandbox environment, all development extensions (that is, extensions published directly from Visual Studio Code) won't be available in the restored environment&mdash;even if they were present at the point-in-time you're restoring to). Additionally, any per-tenant extensions that depend on such development extensions will also not be available.
 - Per-tenant extensions you may have uploaded that target the **next** version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] won't be available in the restored environment&mdash;even if they were uploaded at the point-in-time you're restoring to. Per-tenant extensions that were already installed will be available in the restored environment.
 - Every AppSource and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] app in the restored environment will have the latest available hotfix installed automatically&mdash;even if the hotfix was introduced after the point-in-time you're restoring to.  The environment will be restored to the major/minor version it was on at the time you are restoring to.
-- Azure Active Directory app registration, status, and permissions in the environment will be restored to their state at the time you are restoring to. Apps that were authorized in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] will not be restored even if their permissions in the restored environment are.
+- Microsoft Entra ID app registration, status, and permissions in the environment will be restored to their state at the time you are restoring to. Apps that were authorized in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] will not be restored even if their permissions in the restored environment are.
 - The update window and application insights connection string that are specified for the source environment in the admin center at the time when the restore operation started will be retained on the target environment. The target environment will not be restored to the values for these settings that existed on the source environment at the time that the source environment is being restored to.
 
 ## Environment cleanup
@@ -110,7 +110,7 @@ When you're satisfied with the data in the restored database, enable the users, 
 [Updating Environments](tenant-admin-center-update-management.md)  
 [Rename Environments](tenant-admin-center-environments-rename.md)  
 [Restoring an Environment](tenant-admin-center-backup-restore.md)  
-[Move an Environment to another Azure Active Directory organization](tenant-admin-center-environments-move.md)  
+[Move an Environment to another Microsoft Entra ID organization](tenant-admin-center-environments-move.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
 [Service Overview for Business Central Online](../service-overview.md)  

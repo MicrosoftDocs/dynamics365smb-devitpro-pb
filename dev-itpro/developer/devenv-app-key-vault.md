@@ -105,19 +105,19 @@ For on-premises deployments, you can configure [!INCLUDE[server](../developer/in
 
 #### How it works
 
-Publisher validation is done by comparing the key vault's Azure AD tenant ID with the extension publisher's Azure AD tenant ID. It works this way:
+Publisher validation is done by comparing the key vault's Microsoft Entra ID tenant ID with the extension publisher's Microsoft Entra ID tenant ID. It works this way:
 
-1. When an extension is published by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp), the publisher can provide their Azure AD tenant ID by setting the `-PublisherAzureActiveDirectoryTenantId` parameter:
+1. When an extension is published by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp), the publisher can provide their Microsoft Entra ID tenant ID by setting the `-PublisherAzureActiveDirectoryTenantId` parameter:
 
     ```powershell
-    Publish-NavApp -ServerInstance <server instance> -Path <path to extension package> -PublisherAzureActiveDirectoryTenantId <Azure AD tenant ID GUID>
+    Publish-NavApp -ServerInstance <server instance> -Path <path to extension package> -PublisherAzureActiveDirectoryTenantId <Microsoft Entra ID tenant ID GUID>
     ```
     
     > [!NOTE]
     > An error won't occur if `-PublisherAzureActiveDirectoryTenantId` isn't set. There is nothing preventing you from publishing the extension at this point.
 
 2.  When the extension runs, it tries to initialize the **App Key Vault Secret Provider** codeunit.
-3. The system compares the key vault's Azure AD tenant ID with the Azure AD tenant ID published with the extension:
+3. The system compares the key vault's Microsoft Entra ID tenant ID with the Microsoft Entra ID tenant ID published with the extension:
 
     - If they match, initialization succeeds.
     - If they don't match, an error occurs.

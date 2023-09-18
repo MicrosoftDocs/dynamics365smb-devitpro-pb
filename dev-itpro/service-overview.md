@@ -88,7 +88,7 @@ Microsoft regularly ships feature updates to the underlying service and targeted
 
 However, even with these safeguards, live site incidents can and do happen. Live site incidents can be divided into several categories:
 
-* Dependent-service issues, such as Azure Active Directory (Azure AD), Azure SQL, Storage, virtual machine scale set, Service Fabric, and so on  
+* Dependent-service issues, such as Microsoft Entra ID, Azure SQL, Storage, virtual machine scale set, Service Fabric, and so on  
 
 * Infrastructure outage, such as a hardware failure or data center failure  
 

@@ -41,7 +41,7 @@ This table describes the different dimensions of a **Operation exceeded time thr
 
 |Column (key)|Description or value|
 |------------|---------------|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID when using Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra ID (Microsoft Entra ID) tenant ID when using Microsoft Entra ID authentication. For on-premises, if you aren't using Microsoft Entra ID authentication, this value is **common**. |
 |alMethod|The name of the long running AL method.|
 |alObjectId|The type of the AL object that executed the AL method.|
 |alObjectName|The name of the AL object that executed the AL method.|

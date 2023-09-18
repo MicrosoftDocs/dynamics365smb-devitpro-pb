@@ -112,9 +112,9 @@ For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, a user 
 
 For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, internal and delegated administrators also have access to this information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. You can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to easily navigate to the different environments in a tenant, and you can create sandbox environments that can help troubleshoot any issues reported by users. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
-#### Azure Active Directory tenant
+#### Microsoft Entra ID tenant
 
-When the internal administrator wants to contact the partner for support, then the **Help and Support** page encourages them to include information about their Azure Active Directory tenant ID in the email. This information is shown in the **Troubleshooting** section at the bottom of the **Help and Support** page.  
+When the internal administrator wants to contact the partner for support, then the **Help and Support** page encourages them to include information about their Microsoft Entra ID tenant ID in the email. This information is shown in the **Troubleshooting** section at the bottom of the **Help and Support** page.  
 
 The delegated administrator can use that to identify the tenant in the Partner Center and in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] for troubleshooting.  
 
