@@ -140,7 +140,7 @@ page 6400 "Flow Template Selector"
     end;
 
     var
-        AzureAdMgt: Codeunit "Microsoft Entra ID Mgt.";
+        AzureAdMgt: Codeunit "Azure AD Mgt.";
         FlowServiceManagement: Codeunit "Flow Service Management";
         SearchText: Text;
         ErrorMessageText: Text;
