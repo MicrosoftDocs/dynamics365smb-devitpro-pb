@@ -29,7 +29,7 @@ This error occurs because the security token that's used by Microsoft Entra ID h
 
 ### Resolution
 
-The [!INCLUDE[server](../developer/includes/server.md)] includes a configuration setting called `ExtendedSecurityTokenLifetime` that you can set to add additional time to the security token lifetime. If this issue becomes a problem, you can increase the value of the  `ExtendedSecurityTokenLifetime` setting. Before you do, read more about the Microsoft Entra ID token lifetime policies at [Configurable token lifetimes in Microsoft Entra ID](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
+The [!INCLUDE[server](../developer/includes/server.md)] includes a configuration setting called `ExtendedSecurityTokenLifetime` that you can set to add additional time to the security token lifetime. If this issue becomes a problem, you can increase the value of the  `ExtendedSecurityTokenLifetime` setting. Before you do, read more about the Microsoft Entra token lifetime policies at [Configurable token lifetimes in Microsoft Entra ID](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
 
 ## ID4148: The Saml2SecurityToken is rejected because the SAML2:Assertion's NotOnOrAfter condition is not satisfied
 
