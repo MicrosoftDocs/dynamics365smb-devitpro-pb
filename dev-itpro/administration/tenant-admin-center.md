@@ -23,7 +23,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 
 ## Access to the administration center
 
-Users with the following Microsoft Entra ID roles are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]:
+Users with the following Microsoft Entra roles are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]:
 
 - Global Administrator
 - Dynamics 365 Administrator

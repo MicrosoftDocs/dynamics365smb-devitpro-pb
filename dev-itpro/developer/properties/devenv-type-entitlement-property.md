@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Type (Entitlement) Property
 > **Version**: _Available or changed with runtime version 7.0._
 
-The type of entitlement. When a user logs into Business Central, it's checked if the user is assigned the given Microsoft Entra service plan, the given Microsoft Entra ID role etc., and if that's the case, the user will be entitled to use the objects covered by this entitlement. The same applies if an application logs into Business Central.
+The type of entitlement. When a user logs into Business Central, it's checked if the user is assigned the given Microsoft Entra service plan, the given Microsoft Entra role etc., and if that's the case, the user will be entitled to use the objects covered by this entitlement. The same applies if an application logs into Business Central.
 
 ## Applies to
 -   Entitlement
@@ -28,7 +28,7 @@ The type of entitlement. When a user logs into Business Central, it's checked if
 |**PerUserServicePlan**|The entitlement is associated with a Microsoft Entra service plan which is licensed to specific users.|
 |**PerUserOfferPlan**|The entitlement is associated with an offer, which is licensed to specific users.|
 |**FlatRateServicePlan**|The entitlement is associated with a Microsoft Entra service plan which is licensed to a Microsoft Entra tenant|
-|**Role**|The entitlement is associated with a Microsoft Entra ID role.|
+|**Role**|The entitlement is associated with a Microsoft Entra role.|
 |**ConcurrentUserServicePlan**|The entitlement is associated with a named Microsoft Entra group.|
 |**Application**|The entitlement is associated with a Microsoft Entra application.|
 |**ApplicationScope**|The entitlement is associated with a Microsoft Entra application scope.|

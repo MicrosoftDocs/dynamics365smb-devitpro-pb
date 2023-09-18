@@ -818,7 +818,7 @@ Occurs when a point-in-time restore operation for the environment failed in the 
 
 ## Environment move to different AAD tenant operation scheduled
 
-Occurs when the environment is scheduled to be moved to a different Microsoft Entra ID (AAD) tenant.
+Occurs when the environment is scheduled to be moved to a different Microsoft Entra tenant.
 
 ### General dimensions
 
@@ -842,7 +842,7 @@ Occurs when the environment is scheduled to be moved to a different Microsoft En
 
 ## Environment move to different AAD tenant operation scheduling failed
 
-Occurs when the operation to schedule a move of an environment to a different Microsoft Entra ID (AAD) tenant failed.
+Occurs when the operation to schedule a move of an environment to a different Microsoft Entra) tenant failed.
 
 ### General dimensions
 

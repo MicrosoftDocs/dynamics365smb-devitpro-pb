@@ -128,7 +128,7 @@ Enable the user account by setting the **State** field to **Enabled**. For more 
 
 This message occurs if the user has an account, but the account hasn't been assigned any entitlements.
 
-Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user can use, according to their Microsoft Entra ID role or license. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/)
+Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user can use, according to their Microsoft Entra role or license. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/)
 
 *Resolution*
 

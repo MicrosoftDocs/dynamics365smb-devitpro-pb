@@ -266,7 +266,7 @@ OBJECT Codeunit 9010 Microsoft Entra ID User Management
               AddToTempPlan(ServicePlanIdValue,AssignedPlan.ServicePlanName,TempPlan);
           END;
 
-      // If there are no Microsoft Entra ID Plans, loop through Microsoft Entra ID Roles
+      // If there are no Microsoft Entra ID Plans, loop through Microsoft Entra roles
       IF ISNULL(GraphUser.AssignedPlans) THEN
         FOREACH DirectoryRole IN GraphUser.Roles DO BEGIN
           EVALUATE(IsSystemRole,FORMAT(DirectoryRole.IsSystem));
