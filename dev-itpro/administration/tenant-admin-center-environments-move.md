@@ -13,7 +13,7 @@ ms.author: jswymer
 
 # Move an Environment to another Microsoft Entra organization
 
-In some cases, the Microsoft Entra ID organization (also known as the Microsoft Entra tenant) of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, such as the following:
+In some cases, the Microsoft Entra organization (also known as the Microsoft Entra tenant) of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, such as the following:
 
 - Business entities merge.
 - An acquisition takes place.

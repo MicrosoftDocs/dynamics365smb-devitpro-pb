@@ -152,7 +152,7 @@ Currently, the log includes the following operations:
 |Recovered environment|A deleted environment was recovered.|[See...](tenant-admin-center-environments-delete.md#recover-an-environment)|[See...](administration-center-api_environments.md#recover-environment)||
 |Delete environment|An environment was permanently deleted.|[See...](tenant-admin-center-environments-delete.md)|[See...](administration-center-api_environments.md#delete-environment)||
 |Modify environment|One of the following operations was done on an environment: <ul><li>Set update window</li><li>Set Application Insights connection string</li><li>Set security group</li><li>Clear security group</li><li>Reschedule update </li><li>Set access with Microsoft 365 licenses.</li></ul>|[See update management...](tenant-admin-center-update-management.md)<br /><br />[See telemetry...](tenant-admin-center-telemetry.md)<br /><br />[See manage access...](tenant-admin-center-manage-access.md)|[See environment settings...](administration-center-api_environment_settings.md)||
-|Move environment|An environment was moved to another Microsoft Entra ID organization.|[See...](tenant-admin-center-environments-move.md)|||
+|Move environment|An environment was moved to another Microsoft Entra organization.|[See...](tenant-admin-center-environments-move.md)|||
 |Rename environment|Environment was renamed.|[See...](tenant-admin-center-environments-rename.md)|[See...](administration-center-api_environments.md#rename-environment)||
 |Restart environment|Environment was restarted|[See...](tenant-admin-center-manage-sessions.md#restart-environment)||
 |Update environment|An environment is updated to a newer version.|[See...](tenant-admin-center-update-management.md)|[See...](administration-center-api_environment_settings.md)|
@@ -174,6 +174,6 @@ The operations are kept for 180 days, after which they're deleted.
 [Copy a Production or Sandbox Environment](tenant-admin-center-environments-copy.md)  
 [Rename Environments](tenant-admin-center-environments-rename.md)  
 [Restoring an Environment](tenant-admin-center-backup-restore.md)  
-[Move an Environment to another Microsoft Entra ID organization](tenant-admin-center-environments-move.md)  
+[Move an Environment to another Microsoft Entra organization](tenant-admin-center-environments-move.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)
 [The Business Central Administration Center](tenant-admin-center.md)  

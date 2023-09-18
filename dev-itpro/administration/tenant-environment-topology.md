@@ -27,7 +27,7 @@ This account is an important step because it is tied to a region of the world. U
 > [!TIP]
 > For some customers, the right approach is to have multiple Microsoft Entra tenants due to their own organizational structure. However, in [!INCLUDE [prod_short](../includes/prod_short.md)], all users of an environment must belong to the same Microsoft Entra tenant.
 
-If an organization's structure changes over time, admins can transfer environments from one Microsoft Entra tenant to another. For more information, see [Move an Environment to another Microsoft Entra ID organization](tenant-admin-center-environments-move.md).  
+If an organization's structure changes over time, admins can transfer environments from one Microsoft Entra tenant to another. For more information, see [Move an Environment to another Microsoft Entra organization](tenant-admin-center-environments-move.md).  
 
 ## Environments and companies
 
