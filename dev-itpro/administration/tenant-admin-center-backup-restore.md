@@ -110,7 +110,7 @@ When you're satisfied with the data in the restored database, enable the users, 
 [Updating Environments](tenant-admin-center-update-management.md)  
 [Rename Environments](tenant-admin-center-environments-rename.md)  
 [Restoring an Environment](tenant-admin-center-backup-restore.md)  
-[Move an Environment to another Microsoft Entra ID organization](tenant-admin-center-environments-move.md)  
+[Move an Environment to another Microsoft Entra organization](tenant-admin-center-environments-move.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
 [Service Overview for Business Central Online](../service-overview.md)  
