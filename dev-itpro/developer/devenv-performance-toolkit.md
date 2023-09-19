@@ -492,7 +492,7 @@ Yes, if you have enabled telemetry on your test environment, you get telemetry w
 ### How can I analyze BCPT data?
 
 The telemetry data emitted from the Performance Toolkit can be analyzed using the Power BI Performance report:
-![Performance Toolkit report in PBI](images/bcpt-pbi-report.png).
+![Performance Toolkit report shown in PBI](media/bcpt-pbi-report.png).
 
 You can also analyze this data directly with KQL, see sample code here: https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/ExampleQueriesForEachArea/PerformanceToolkit.kql.
 
