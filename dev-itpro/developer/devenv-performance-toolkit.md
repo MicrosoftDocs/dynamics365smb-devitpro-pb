@@ -65,7 +65,7 @@ As a VAR partner, you sometimes get questions like "Can Business Central handle 
 If you have enabled environment telemetry, then you get signal about Performance Toolkit runs and scenarios. See more here [Analyzing Performance Toolkit Telemetry](../administration/telemetry-performance-toolkit-trace.md).
 
 The telemetry data emitted from the Performance Toolkit can be analyzed using the Power BI Performance report:
-![Performance Toolkit report in PBI](images/bcpt-pbi-report.png)
+![Performance Toolkit report in PBI](media/bcpt-pbi-report.png)
 
 You can also analyze this data directly with KQL, see sample code here: https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/ExampleQueriesForEachArea/PerformanceToolkit.kql
 
