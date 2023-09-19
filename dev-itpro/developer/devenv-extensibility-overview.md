@@ -16,22 +16,22 @@ AL developers can extend the functionality of Business Central in several ways. 
 
 This article provides an overview of the extensibility options available to AL developers in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] including examples on how to extend various features, such as extending item charges, best price calculations, and data archiving. 
 
-## Extending AL objects
-The AL object model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports many different ways for developers to extend objects in an app. 
+## Extending AL objects and artifacts
+The AL object model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports many different ways for developers to extend objects and artifacts in an app. 
 
-1. **Extending Tables**: AL developers can add new fields to existing tables or modify the properties of existing fields. This allows for customization of data structures to fit specific business needs.
+1. **Extending Tables**: AL developers can add new fields to existing tables or modify the properties of existing fields. This allows for customization of data structures to fit specific business needs. See [Extending AL objects: tables](devenv-table-ext-object.md).
 
-2. **Extending Enumerations**: Enumerations, or Enums, are lists of constants that represent a set of values. Developers can extend existing Enums or create new ones to cater to unique business requirements.
+2. **Extending Enumerations**: Enumerations, or Enums, are lists of constants that represent a set of values. Developers can extend existing Enums or create new ones to cater to unique business requirements. See [Extending AL objects: enumerations](devenv-extensible-enums.md).
 
-3. **Extending Application Areas**: Application areas help control the visibility of UI elements based on licensing and configuration. Developers can extend these areas to tailor the user interface according to business needs.
+3. **Extending Application Areas**: Application areas help control the visibility of UI elements based on licensing and configuration. Developers can extend these areas to tailor the user interface according to business needs. See [Extending AL objects: application areas](devenv-extending-application-areas.md).
 
-4. **Extending Pages**: Pages are the main way to display data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Developers can add or modify fields, actions, and layout of existing pages or create new ones.
+4. **Extending Pages**: Pages are the main way to display data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Developers can add or modify fields, actions, and layout of existing pages or create new ones. See [Extending AL objects: pages](devenv-page-ext-object.md).
 
-5. **Extending Reports**: Reports provide a structured view of data and are essential for analysis and decision-making. Developers can extend existing reports by adding data items or columns, modifying request pages, or adding new layouts.
+5. **Extending Reports**: Reports provide a structured view of data and are essential for analysis and decision-making. Developers can extend existing reports by adding data items or columns, modifying request pages, or adding new layouts. See [Extending AL objects: reports](devenv-report-ext-object.md).
 
-6. **Extending Code Flows**: Codeunits contain AL code that can be reused across the application. Developers can subscribe to events in base app codeunits and write custom logic to extend the application's functionality.
+6. **Extending Code Flows**: Codeunits contain AL code that can be reused across the application. Developers can subscribe to events in base app codeunits and write custom logic to extend the application's functionality. See [Extending AL code flows: events](devenv-event-types.md).
 
-7. **Extending the Security Model**: Permission sets define what actions a user can perform in Business Central. Developers can create new permission sets or extend existing ones to ensure users have appropriate access rights.
+7. **Extending the Security Model**: Permission sets define what actions a user can perform in Business Central. Developers can create new permission sets or extend existing ones to ensure users have appropriate access rights. See [Extending AL objects: security model](devenv-permissionset-ext-object.md).
 
 > [!NOTE]  
 > Extending API pages and queries is not currently possible in Business Central.
