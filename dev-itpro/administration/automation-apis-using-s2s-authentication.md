@@ -181,7 +181,7 @@ For most cases, use the `AcquireTokenByAuthorizationCode` method from the OAuth 
 > [!TIP]
 > You can also see this sample in the [BCTech Github repo](https://github.com/microsoft/BCTech/tree/master/samples/VSCRestClientOAuthBCAccess).
 
-The following sample uses the [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) for Visual Studio Code. Using the Rest Client makes it easy to see which HTTP calls are made both against [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and Azure Active Directory. Any HTTP client can be used to create the requests below. Or you can choose any library, like MSAL.
+The following sample uses the [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) for Visual Studio Code using the Client Credentials OAuth 2.0 flow. Using the Rest Client makes it easy to see which HTTP calls are made both against [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and Azure Active Directory. Any HTTP client can be used to create the requests below. Or you can choose any library, like MSAL. Remember to specify the scope as `https://api.businesscentral.dynamics.com/.default` and the Token URL as `https://login.microsoftonline.com/<tenantId>/oauth2/v2.0/token`.
 
 ```http
 @tenantId = <tenant id>
