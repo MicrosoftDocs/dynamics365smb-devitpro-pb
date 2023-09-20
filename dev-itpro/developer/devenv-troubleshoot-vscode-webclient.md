@@ -61,7 +61,7 @@ In the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the follow
 - If the user chooses to debug, Visual Studio Code attaches to the web client process, which it was invoked from and awaits breaking on error.
 - If reusing a project and the source files aren't up to date with the version on the server, the breakpoints will not be hit correctly when debugging. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
 - When you choose to generate new projects, remember to delete the projects occasionally to not accumulate many unused projects.
-- Running the web client in a browser, you're typically not running the browser as an administrator, which means that Visual Studio Code also doesn't open in administrator mode. So, for example, if Visual Studio Code prompts you for an update, and you choose yes, you'll get an error, because you're not an administrator and don't have permissions to update. It's then recommended to shut down Visual Studio Code, and reopen it as an administrator and update it. Then, you can continue debugging.
+- Running the web client in a browser, you're typically not running the browser as an administrator, which means that Visual Studio Code also doesn't open in administrator mode. So, for example, if Visual Studio Code prompts you for an update, and you choose yes, you'll get an error, because you don't have permissions to update. It's then recommended to shut down Visual Studio Code, and reopen it as an administrator and update it. Then, you can continue debugging.
 
 ## See also
 
