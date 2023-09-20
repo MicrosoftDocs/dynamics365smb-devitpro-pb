@@ -66,7 +66,7 @@ The **Label** variable names should have an approved suffix. For more informatio
 
 Report labels are used by RDL and Word report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. For a code example on how to use report labels for an RDL layout, see [Walkthrough: Designing a Report from Multiple Tables](devenv-walktrough-designing-reports-multiple-tables.md).
 
-Report labels are defined inside the `labels` control of a report object, as shown in the ollwoing code sample.
+Report labels are defined inside the `labels` control of a report object, as shown in the following code sample.
 
 ```AL
 labels
