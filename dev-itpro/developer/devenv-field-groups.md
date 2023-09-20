@@ -78,7 +78,7 @@ tableextension 50100 CustomerExercise extends Customer
 
 ## Adding new field groups
 
-It is always possible to add fields to the two predefined field groups, `DropDown` and `Brick`. If they are not defined on the target table,they will be dynamically created and will contain only the fields specified in the `addlast` sections.
+It is always possible to add fields to the two predefined field groups, `DropDown` and `Brick`. If they are not defined on the target table,they will be dynamically created and will contain only the fields specified in the `addlast` controls.
 
 The ordering of the fields will then be determined by the order in which extensions are loaded by the server, while removing any duplicate fields.
 
