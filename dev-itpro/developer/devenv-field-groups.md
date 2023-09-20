@@ -82,7 +82,6 @@ It is always possible to add fields to the two predefined field groups, `DropDow
 
 The ordering of the fields will then be determined by the order in which extensions are loaded by the server, while removing any duplicate fields.
 
-
 <!--
 ## Define fields to display in tile view
 
