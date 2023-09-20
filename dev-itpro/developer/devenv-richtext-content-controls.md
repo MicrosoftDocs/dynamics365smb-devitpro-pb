@@ -28,7 +28,7 @@ Creating a control, which renders a rich text editor is done with a few steps, b
 
 ### Example: Creating a rich text editor backed by a Blob field
 
-This example uses triggers and streams to achieve persistence of the rich text value. The code comments inside the example explain the design pattern. The example uses `Text`, but the pattern is also applicable to using `BigText`.
+This example uses triggers and streams to achieve persistence of the rich text value. The code comments inside the example explain the design pattern. The example uses `Text`, but the pattern is also applicable to using the `BigText` data type.
 
 ```AL
 table 50100 MyTable
