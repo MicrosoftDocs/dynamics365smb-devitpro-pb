@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
+description: Learn how to deploy Microsoft's Business Central on a single computer. Includes pre-installation tasks, installation, and post-installation configuration.
 ---
 # Deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in a Single-Computer Topology
 In this scenario, you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and the SQL Server database components on the same computer.  
