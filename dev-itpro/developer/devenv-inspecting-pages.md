@@ -50,11 +50,6 @@ The following sections describe details about what is shown.
 > [!TIP]
 > To copy the values of a field or entity under one of the tabs to the clip board, select the field or entity and press Ctrl+C.
 
-### Explore page in Visual Studio Code
-
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can explore the code behind the page in Visual Studio Code to troubleshoot any issues. To do this, select the **Explore in Visual Studio Code** link, which opens the page in Visual Studio Code, where you can inspect the page object and its source table. For more information, see [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md). 
-
-
 ### [Page](#tab/page)
 
 The **Page** field shows information about the main page or a selected (highlighted) subpage in a part. The field shows the following information:
@@ -76,6 +71,10 @@ The **Page** field shows information about the main page or a selected (highligh
     [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
 - System parts, such as Links or Notes, and parts containing charts.
+
+#### Explore page in Visual Studio Code
+
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can explore the code behind the page in Visual Studio Code to troubleshoot any issues. To do this, select the **Explore in Visual Studio Code** link, which opens the page in Visual Studio Code, where you can inspect the page object and its source table. For more information, see [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md). 
 
 
 ### [Table](#tab/table)
