@@ -23,7 +23,11 @@ From the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can ope
 
 ## Open a page from the Page Inspector
 
-From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the following. For more information about Page inspection, see [Page inspection](devenv-inspecting-pages.md).
+From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can open the **Page Inspection** page and explore the code behind it in Visual Studio Code. For more information about Page inspection, see [Page inspection](devenv-inspecting-pages.md).
+
+![Page Inspection Open in VS Code.](media/page-inspection-openinvscode.png)
+
+To open and explore a page from the Page Inspector, do the following:
 
 1. Locate the page that you want to inspect.
 1. From that page, run the **Page Inspection** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
@@ -37,7 +41,7 @@ From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, d
 1. Now, you are prompted whether to do a snapshot or regular debugging session, or not to debug, but just view the source code.  
     > [!NOTE]  
     > For production environments, regular debugging isn't supported.
-1. If you want to debug, then set breakpoints and go back to the web client to run the task. When the breakpoint is hit, you can inspect the code in Visual Studio Code.
+1. If you want to debug, then set breakpoints and go back to the web client to run the task. When the breakpoint is hit, you can inspect the code in Visual Studio Code.  
 
 You can also choose to inspect a specific field on a page.
 
@@ -47,7 +51,11 @@ You can also choose to inspect a specific field on a page.
 
 ## Troubleshoot from the Help and Support page
 
-In the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the following:
+In the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can open the **Help and Support** page and explore the code behind it in Visual Studio Code.
+
+![Attach Debugger to this session.](media/attach-debugger-session.png)
+
+To attach the debugger to a session, do the following:
 
 1. Go to the **Help and Support** page, and then choose the **Attach debugger to this session** link under the **Troubleshooting** section.
 1. Next, to open a Visual Studio Code instance, you must choose the **Open** button in the **Allow an extension to open this URI?** dialog. If you already have Visual Studio Code running that instance will open.
