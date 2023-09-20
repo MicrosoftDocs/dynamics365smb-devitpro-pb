@@ -116,8 +116,8 @@ page 50100 MyPage
 
 - The rich text control stretches to sides of the page and to a maximum height, but it can't be reduced to a single line field, nor stretched to fill the entire screen.
 - It can't be used with repeater controls.
-- Cannot customize the toolbar or set of capabilities offered to the user.
 - A rich text control has limited UI customization through, for example, personalization.
+- The toolbar can't be customized.
 - Extensions can transform a field into `RichContent` as long as the full code pattern matches our expected pattern.
 - Images are embedded in the HTML.
 - The `RichContent` value of `ExtendedDataType` can't be set directly on a table field, if you try, you'll get a compiler error.
