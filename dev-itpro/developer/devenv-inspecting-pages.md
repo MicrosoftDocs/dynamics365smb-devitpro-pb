@@ -26,7 +26,7 @@ You start page inspection from the **Help & Support** page. Choose the question 
 
 The **Page inspection** pane opens on the side. The following figure illustrates the **Page Inspection** pane on the **Sales Order** page.
 
-![Page Inspection Pane.](media/page-inspection-example.png) <!-- to do - need new one for VS Code -->
+![Page Inspection Pane.](media/page-inspection-example-vscode.png)
 
 When the **Page Inspection** pane first opens, it shows information that pertains to the main page object.
 
@@ -45,10 +45,15 @@ The page inspection pane shows the information for the main page or page part, i
 The following sections describe details about what is shown.
 
 > [!NOTE]
-> If you do not see all details described below, you might not have the required permissions. For more information, see [Controlling Access to Page Inspection Details](/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
+> If you don't see all details described below, you might not have the required permissions. For more information, see [Controlling Access to Page Inspection Details](/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
 
 > [!TIP]
 > To copy the values of a field or entity under one of the tabs to the clip board, select the field or entity and press Ctrl+C.
+
+### Explore page in Visual Studio Code
+
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can explore the code behind the page in Visual Studio Code to troubleshoot any issues. To do this, select the **Explore in Visual Studio Code** link, which opens the page in Visual Studio Code, where you can inspect the page object and its source table. For more information, see [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md). 
+
 
 ### [Page](#tab/page)
 
