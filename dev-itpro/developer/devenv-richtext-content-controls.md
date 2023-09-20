@@ -1,0 +1,138 @@
+---
+title: "Rich text and content controls"
+description: How to create a functioning rich text editor using ExtendedDataType and a table blob field in AL for Business Central.
+author: damsboemil
+ms.author: solsen
+ms.custom: na
+ms.date: 08/01/2023
+ms.reviewer: solsen
+ms.service: dynamics365-business-central
+ms.topic: conceptual
+---
+
+# Rich text and content controls
+
+The rich text feature in !INCLUDE [prod_short] is designed to handle multimedia content, such as social media posts, email bodies, quick annotations, file contents, or any field that requires a mix of text, tables, links, and images. It's best suited for cases where the user needs to author, view, or modify unstructured information and requires a moderate amount of space to work comfortably. The rich text control enables rich multimedia content editing. With that you get a multiline textbox with a rich toolbar, corresponding keyboard shortcuts, and the ability to author or paste in pictures, tables, and formatted text. A typical use case of a rich text editor is the email editor. They require significant screen space to function correctly and fill the available horizontal space and stretch vertically up to a limit. The control includes a toolbar and shortcuts for formatting text (for example, for changing the font or font size), making text italic, bold, and more. There's also the option to add tables, images, and hyperlinks.
+The following image shows an example of the rich text editor containing multiple different types of text formatting.
+
+![Shows an example of the rich text editor containing multiple different types of text formatting.](../developer/media/RichTextEditorExample.png)
+
+The rich text feature can be applied to Blob, BigText, and Text data types without any size limits. A rich text control must be placed on its own in a group (for example, in a FastTab). When the content of the rich text control is persisted in the database, it's saved as HTML. Media-like pictures are embedded in the HTML content itself and aren't persisted in a separate table, nor in online file storage. The size and type of data means that the control’s content is best persisted by using a table field of the Blob data type.
+
+> [!NOTE]  
+> The rich text feature isn't intended for simple text formatting, such as bold, italic, and underline, but that will be supported in a future update.
+
+## Creating a rich text editor
+
+Creating a control, which renders a rich text editor is done with a few steps, but it takes a bit more work to combine the control with a persisted value on a record. In the following section, you'll see an example of how to persist the value of a rich text editor in a table's blob field.
+
+### Example: Creating a rich text editor backed by a Blob field
+
+This example uses triggers and streams to achieve persistence of the rich text value. The code comments inside the example explain the design pattern. The example uses `Text`, but the pattern is also applicable to using `BigText`.
+
+```AL
+table 50100 MyTable
+{
+    fields
+    {
+        field(1; MyIntegerField; Integer) { }
+        field(2; RichTextBlob; Blob) { Description = 'Contains a rich text value'; }
+    }
+
+    /// <summary>
+    /// Reads the RichTextBlob value into a stream and outputs the value as a text representation.
+    /// </summary>
+    /// <returns>A text value, which can be used with a rich text editor.</returns>
+    procedure GetRichText(): Text
+    var
+        InStream: Instream;
+        TextValue: Text;
+    begin
+        rec.CalcFields(rec.RichTextBlob);
+        rec.RichTextBlob.CreateInStream(InStream);
+        InStream.ReadText(TextValue);
+
+        exit(TextValue);
+    end;
+
+    // 
+    /// <summary>
+    /// Saves the text parameter in the RichTextBlob field.
+    /// </summary>
+    /// <param name="MyRichText">The value to save in blob field.</param>
+    procedure SaveRichText(RichText: Text)
+    var
+        OutStream: OutStream;
+    begin
+        rec.RichTextBlob.CreateOutStream(OutStream);
+        Output.WriteText(RichText);
+        rec.Modify();
+    end;
+}
+
+page 50100 MyPage
+{
+    PageType = Card;
+    SourceTable = MyTable;
+
+    layout
+    {
+        area(Content)
+        {
+            group(FastTabGroup)
+            {
+                // Rich text editor is required to be alone in a FastTab group, which is a group that is at the root-level of it's page
+                field("Rich Text Editor"; RichText)
+                {
+                    Caption = 'My rich text editor.';
+
+                    // Both these are required to render a rich text editor
+                    ExtendedDataType = RichContent;
+                    MultiLine = true;
+
+                    // Ensures that the value from the RichText variable is persisted in the record
+                    trigger OnValidate()
+                    begin
+                        rec.SaveRichText(RichText);
+                    end;
+                }
+            }
+        }
+    }
+    
+    // Ensures that when the page loads, the persisted value is read into the rich text editor control
+    trigger OnAfterGetCurrRecord()
+    begin
+        RichText := rec.GetRichText();
+    end;
+
+    var
+        RichText: Text;
+}
+
+```
+
+### Good to know
+
+- The rich text control stretches to sides of the page and to a maximum height, but it can't be reduced to a single line field, nor stretched to fill the entire screen.
+- It can't be used with repeater controls.
+- Cannot customize the toolbar or set of capabilities offered to the user.
+- A rich text control has limited UI customization through, for example, personalization.
+- Extensions can transform a field into `RichContent` as long as the full code pattern matches our expected pattern.
+- Images are embedded in the HTML.
+- The `RichContent` value of `ExtendedDataType` can't be set directly on a table field, if you try, you'll get a compiler error.
+- The rich text editor must specify `MultiLine = true`.
+- The placement of the rich text editor must be on a root-level group on the page (that is, a FastTab group), and it must be the only control in that group.
+
+<!-- 
+- The Code pattern that triggers displaying a field as Rich Content
+- How UICop rules help you get it right
+- The (HTML) format of the output data and how to work with it
+-->
+
+## See also
+
+[Blob data type](methods-auto/blob/blob-data-type.md)  
+[BigText data type](methods-auto/bigtext/bigtext-data-type.md)  
+[Text data type](methods-auto/text/text-data-type.md)  
+[ExtendedDataType Property](properties/extendeddatatype-property.md)  
