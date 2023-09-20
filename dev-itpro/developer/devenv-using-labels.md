@@ -3,13 +3,13 @@ title: "Working with labels"
 description: "Labels syntax and usage in Business Central."
 ms.custom: na
 ms.reviewer: solsen
-ms.date: 09/18/2023
+ms.date: 09/20/2023
 ms.topic: conceptual
 ms.author: brobledodiaz
 author: blrobl
 ---
 
-# Working with Labels
+# Working with labels
 
 Labels are string constants displayed in the [!INCLUDE[prod_short](includes/prod_short.md)] client that can be translated into multiple languages, such as captions, descriptions, or messages. This way, the user interface can be displayed in different languages. For more information on how translation is carried out in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Multilanguage development](devenv-work-with-translation-files.md).
 
@@ -20,7 +20,7 @@ Labels have a specific syntax defined by a text constant followed by three optio
 | Parameter   | Type  | Description|
 |-------------|-------|--------------|
 |**Comment**  |Text   | Used for general comments about the label, specifically about the placeholders in that label.|
-|**Locked**   |Boolean| When Locked is set to **true**, the label shouldn't be translated. Default value is **false**.|
+|**Locked**   |Boolean| When Locked is set to **true**, the label shouldn't be translated. The default value is **false**.|
 |**MaxLength**|Integer| Determines how much of the label is used. If no maximum length is specified, the string can be any length.|
 
 ## Using labels
