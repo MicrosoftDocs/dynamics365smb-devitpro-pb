@@ -49,18 +49,60 @@ Typing the shortcut `treport` will create the basic layout for a report object w
 
 ## Example: Using tables to define a report dataset
 
-The following example adds the `Customer` table as the data item and the `CustomerName` and `CompanyName` as fields of a column to the report. For more information on creating a report, see [Creating a Word Report Layout](devenv-howto-report-layout.md).
+The following example adds the `Customer` table as the data item and the `CustomerName` and `CompanyName` as fields of a column to the report. It then adds a secondary dataitem with data from the `Cust. Ledger Entry` table and joins the two.
 
 ```AL
-dataset
+dataitem(Customer; Customer)
 {
-    dataitem(Customer; Customer)
+    // For each field that you want to display you add a column control.
+    
+    column(No_Customer; "No.")
     {
-        column(CustomerName; CustomerName)
+        // Include the caption of the "No." field in the dataset of the report.
+        IncludeCaption = true;
+    }
+    column(Name_Customer; Name)
+    {
+        IncludeCaption = true;
+    }
+    column(Phone_Customer; "Phone No.")
+    {
+        IncludeCaption = true;
+    }
+    column(Address_Customer; Address)
+    {
+        IncludeCaption = true;
+    }
+    column(EMail_Customer; "E-Mail")
+    {
+        IncludeCaption = true;
+    }
+
+    // If your dataset joins multiple tables, add secondary dataitems and link them
+    dataitem(CustLedger; "Cust. Ledger Entry")
+    {
+        // Set a filter on the child data item, **CustLedgerEntry** to select only the records where the 
+        // value of `Customer."No."` field and the `"Customer Ledger Entry"."Customer No."` field matches.
+        DataItemLink = "Customer No." = field("No.");
+        column(EntryNo_CustLedgerEntry; "Entry No.")
         {
+            IncludeCaption = true;
         }
-        column(CompanyName; CompanyName)
+        column(CustomerNo_CustLedgerEntry; "Customer No.")
         {
+            IncludeCaption = true;
+        }
+        column(PostingDate_CustLedgerEntry; "Posting Date")
+        {
+            IncludeCaption = true;
+        }
+        column(DocumentType_CustLedgerEntry; "Document Type")
+        {
+            IncludeCaption = true;
+        }
+        column(DocumentNo_CustLedgerEntry; "Document No.")
+        {
+            IncludeCaption = true;
         }
     }
 }
@@ -68,7 +110,8 @@ dataset
 
 [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
-### Example: Using a query to define a report dataset
+
+## Example: Using a query to define a report dataset
 
 Let's imagine that you have created the query object `CustomerQuery` that joins the customer data with data from some other table. The following example shows how you can use that query as the data source for a report dataset.
 

@@ -1,7 +1,7 @@
 ---
 author: solsen
 ms.topic: include
-ms.date: 04/12/2023
+ms.date: 08/23/2023
 ms.author: solsen
 ---
 When an environment is created as a copy of another environment, a number of precautions are taken for that copy:
@@ -20,3 +20,5 @@ When an environment is created as a copy of another environment, a number of pre
     The internal administrator has the same tools and responsibilities for the copy as they do for the original environment. As a data processor, [!INCLUDE [prod_short](prod_short.md)] offers the same level of data protection and data handling restrictions to all types of environments, both sandboxes and production environments.  
     
 [!INCLUDE [create copy-restore-cleanup-operations](copy-restore-cleanup-operations.md)]
+
+- The environment settings set in the admin center, including the Application Insights connection string and update window, are copied over to the target environment. If you don't want the target environment to emit telemetry to the same Application Insights resource as the source environment, you can remove or change the connection string after the copy completes or use [Data Collection Rules](/dynamics365/business-central/dev-itpro/administration/telemetry-control-cost#use-data-collection-rules-dcr) on the Application Insights resource to filter out telemetry from any environments from which you don't want to collect telemetry on that resource.

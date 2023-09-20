@@ -130,7 +130,7 @@ The following table illustrates how we communicate about the different environme
 |AppSource App Uninstall Scheduling |![check mark for feature](../developer/media/check.png) |         |         |         |
 |AppSource App/PTE Uninstall | ![check mark for feature](../developer/media/check.png)        |         |         |         | ![check mark for feature](../developer/media/check.png)
 |AppSource App/PTE Dependency Install & Update Orchestration |![check mark for feature](../developer/media/check.png) |         |         |         |
-|Installed PTE incompatible with next version |         |![check mark for feature](../developer/media/check.png) |         |         |
+|Installed PTE incompatible with next version |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |         |         |
 |Service Incidents and Advisories |         |         |         |![check mark for feature](../developer/media/check.png) |
 |Feature Change and Deprecation Announcements |         |         |![check mark for feature](../developer/media/check.png) |         |
 

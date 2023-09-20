@@ -115,6 +115,8 @@ traces
 , message
 ```
 
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
+
 ## <a name="versioncountrystarted"></a>(Version, country-region) validation started
 
 Occurs when the validation has started for a specific version and country/region.
@@ -230,6 +232,8 @@ traces
 , diagnosticSourcePath = customDimensions.diagnosticSourcePath
 ```
 
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
+
 ## <a name="extensionvalidationcompleted"></a>Extension validation completed successfully
 
 Occurs when the validation for a specific extension the submission has completed, and no errors occurred.
@@ -308,6 +312,7 @@ traces
 , failureReason = customDimensions.failureReason
 ```
 
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
 
 ## <a name="versioncountrycompleted"></a>(Version, country-region) validation completed successfully
 
@@ -383,6 +388,8 @@ traces
 , failureReason = customDimensions.failureReason
 ```
 
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
+
 ## <a name="validationrequestcompleted"></a>AppSource submission validation request completed successfully
 
 Occurs when the submission validation process has fully completed, and no errors occurred.
@@ -451,9 +458,12 @@ traces
 , failureReason = customDimensions.failureReason
 ```
 
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
+
 ## See also
 
 [Telemetry overview](telemetry-overview.md)   
 [Sending App Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md)   
+[Alert on Telemetry](telemetry-alert.md)   
 [Technical Validation Checklist](../developer/devenv-checklist-submission.md)     
 [Technical Validation FAQ](../developer/devenv-checklist-submission-faq.md)  

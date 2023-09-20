@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: blrobl
+description: Learn how to implement location access in AL for Dynamics 365 Business Central. Enhance your app with GPS capabilities for better customer service.
 ---
 
 # Implementing Location in AL

@@ -44,6 +44,14 @@ The following methods are available on instances of the HttpClient data type.
 
 The supported security protocols are controlled by the **SecurityProtocol** configuration setting. For more information, see [Microsoft Dynamics 365 Business Central Server Configuration](../../../administration/configure-server-instance.md#Compatibility).
 
+## Ways that HttpClient calls can fail
+All of the methods HttpClient.Delete, HttpClient.Get, HttpClient.Post, HttpClient.Put, or HttpClient.Send in the HttpClient data type can fail and return false. 
+
+[!INCLUDE[httpCallErrors](../../../includes/include-http-call-errors-note.md)]
+
+[!INCLUDE[allowhttpclientnote](../../../includes/include-http-allowhttpclient-note.md)]
+
+
 ## Telemetry
 
 [!INCLUDE[httpclientTelemetry](../../../includes/telemetry-outgoing-http.md)] 
@@ -57,6 +65,9 @@ For more information, see [Outgoing Web Service Request Telemetry](../../../admi
 #### HTTP status codes
 [!INCLUDE[httpStatusCodes](../../../includes/include-http-status-codes.md)]
 
+#### Common HTTP status error codes
+[!INCLUDE[httpStatusErrorCodes](../../../includes/include-http-status-error-codes.md)]
+
 
 ## Performance considerations
 
@@ -64,7 +75,7 @@ For more information, see [Outgoing Web Service Request Telemetry](../../../admi
 
 
 ## See also
-
+[Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Outgoing Web Service Request Telemetry](../../../administration/telemetry-webservices-outgoing-trace.md)  
