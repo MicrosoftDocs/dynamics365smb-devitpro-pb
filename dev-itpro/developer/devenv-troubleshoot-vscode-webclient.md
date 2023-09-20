@@ -23,7 +23,7 @@ From the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can ope
 
 ## Open a page from the Page Inspector
 
-From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the following:
+From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the following. For more information about Page inspection, see [Page inspection](devenv-inspecting-pages.md).
 
 1. Locate the page that you want to inspect.
 1. From that page, run the **Page Inspection** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
@@ -67,4 +67,5 @@ In the [!INCLUDE [prod_short](includes/prod_short.md)] web client, do the follow
 
 [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md)  
 [Debugging](devenv-debugging.md)  
-[Snapshot debugging](devenv-snapshot-debugging.md)
+[Snapshot debugging](devenv-snapshot-debugging.md)  
+[Page inspection](devenv-inspecting-pages.md)  
