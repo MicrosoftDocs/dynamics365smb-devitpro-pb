@@ -60,7 +60,9 @@ To attach the debugger to a session, do the following:
 1. Go to the **Help and Support** page, and then choose the **Attach debugger to this session** link under the **Troubleshooting** section.
 1. Next, to open a Visual Studio Code instance, you must choose the **Open** button in the **Allow an extension to open this URI?** dialog. If you already have Visual Studio Code running that instance will open.
 1. Then, you must specify, if you want to create a new project, or use an existing project. You will only be asked the first time, and from then on, the Visual Studio Code window that was last active will be used.
-1. If you want to debug, then set breakpoints and go back to the web client to run the task. When the breakpoint is hit, you can inspect the code in Visual Studio Code.
+1. If you want to debug, then set breakpoints and go back to the web client to run the task. When the breakpoint is hit, you can inspect the code in Visual Studio Code.  
+    > [!NOTE]  
+    > For production environments, regular debugging isn't supported.
 
 ## Good to know
 
