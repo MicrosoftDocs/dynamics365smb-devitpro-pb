@@ -79,7 +79,7 @@ tableextension 50100 CustomerExercise extends Customer
 
 ## Adding new field groups
 
-[!INCLUDE[2023-releasewave2](includes/2023-releasewave2.md)]
+[!INCLUDE[2023-releasewave2](../includes/2023-releasewave2.md)]
 
 It's always possible to add fields to the two predefined field groups, `DropDown` and `Brick`. If they aren't defined on the target table, they'll be dynamically created and will contain only the fields specified in the `addlast` controls.
 
