@@ -232,7 +232,7 @@ The following table includes the most common problems that prevent instant flows
 |The user isn't the owner of the flow. |Share ownership of the flow with the user. For more information, see [Share a cloud flow](/power-automate/create-team-flows).|[!INCLUDE[prod_short](../includes/prod_short.md)] only supports displaying flows owned by the current user; flows shared as "Run-only" can't be displayed.|
 |The flow isn't in the Power Platform environment that Business Central is connected to|<ul><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 21 and earlier, create flows in the default Power Platform environment.</li><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 22 and later, run the **Power Automate Environment** assisted setup guide and select the environment where the flow is stored.</li></ul>|[!INCLUDE[prod_short](../includes/prod_short.md)] connects to a specific Power Platform environment.|
 |The flow that was shared with you but with read-only permissions|Ask the owner of the flow to add you as an owner of the flow. For more information, see [Share a flow in Power Automate](/power-automate/create-team-flows).|Flows shared to users as read-only don't appear in the **Automate** action group for the users.  |
-|Using service-to-service (S2S) authentication||S2S authentication isn't currently supported by the Business Central connector. |
+|Using service-to-service (S2S) authentication||S2S authentication isn't currently supported by the Business Central connector. This limitation also applies to Power Automate, Azure Logic Apps, and Power Apps. Partners interested in such scenarios must rely on the OData connector for now.|
 
 
 ## Next steps
