@@ -24,9 +24,14 @@ An AL file declares a namespace at the beginning of the file, and all objects in
 
 ## Namespace syntax
 
-To declare a namespace in AL, you must use the `namespace` keyword followed by the name of the namespace. A namespace should be globally unique. The best practice is that the first part of a namespace is tied to the developing organization or an individual, followed by a product name, and logical grouping within the product, such as for example, `namespace BigCompany.SmartProduct.SomeProductArea`. This supports the two purposes of namespaces - object name unique and logical grouping of related functionality.
+To declare a namespace in AL, you must use the `namespace` keyword followed by the name of the namespace. Some best practices for namespace keywords are:
 
-The namespace name can be any valid AL identifier, and it can contain dots to indicate a hierarchy of namespaces. The following example shows a namespace declaration. All of the objects declared in the code file belong to the namespace `MyNamespace`.
+- A namespace should be globally unique. 
+- The first part of a namespace is tied to the developing organization or an individual, followed by a product name, and logical grouping within the product, such as for example, `namespace BigCompany.SmartProduct.SomeProductArea`. This supports the two purposes of namespaces - object name unique and logical grouping of related functionality.
+- Use a stable name for the namespace. Changing the name of a namespace is a breaking change.
+- The namespace name can be any valid AL identifier, and it can contain dots to indicate a hierarchy of namespaces. 
+ 
+The following example shows the syntax of a namespace declaration. All of the objects declared in the code file belong to the namespace `MyNamespace`.
 
 ```al
 namespace MyNamespace;
