@@ -18,7 +18,9 @@ Namespaces are used to organize code into logical groups and hierarchies, which 
 An AL file declares a namespace at the beginning of the file, and all objects in the code file belong to that namespace. A given object can only belong to one namespace, but the same namespace can be used for multiple AL files, which means for multiple objects. 
 
 > [!IMPORTANT]  
-> Renaming existing object or member names is a breaking change, therefore namespaces can only help with logical structure for existing objects.
+> Renaming existing object or member names is a breaking change, therefore namespaces can only help with logical structure for existing objects.  
+> 
+> Any app, which is dependent on your app will be broken if you rename namespaces, and likewise your app will break if any of the dependencies rename their namespaces.
 
 ## Namespace syntax
 
