@@ -40,7 +40,7 @@ To declare more objects in the same namespace, you can use the same namespace de
 > [!NOTE]  
 > It's a best practice to separate objects into different files, and to use the same name for the file as the object. For more information, see [Best Practices for AL code](../compliance/apptest-bestpracticesforalcode.md).
 
-## Using directive
+## The `using` directive
 
 To refer to objects in other namespaces, you can either use the fully qualified name, or the `using` directive. The `using` directive is used to refer to objects in other namespaces without having to use the fully qualified name. The `using` directive is placed at the top of the .al file, *after* the namespace declaration and *before* any object declarations. The following example shows the order of the `namespace` declaration and the `using` directive.
 
@@ -75,11 +75,11 @@ In the example, the fully qualified name of the namespace is `MyNamespace.MyNest
 using MyNamespace.MyNestedNamespace
 ```
 
-<!-- update on best practices article, on al explorer, code actions -->
-
 > [!TIP]  
 > Use code actions to help add namespaces to existing source. For more information, see [Code actions](devenv-code-actions.md).
 
 ## See also
 
 [Development in AL](devenv-dev-overview.md)  
+[Code actions](devenv-code-actions.md)  
+[AL Explorer](devenv-al-explorer.md)
