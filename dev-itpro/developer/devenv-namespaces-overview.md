@@ -28,10 +28,10 @@ To declare a namespace in AL, you must use the `namespace` keyword followed by t
 
 - A namespace should be globally unique. 
 - The first part of a namespace is tied to the developing organization or an individual, followed by a product name, and logical grouping within the product, such as for example, `namespace BigCompany.SmartProduct.SomeProductArea`. This supports the two purposes of namespaces - object name unique and logical grouping of related functionality.
-- Use a stable name for the namespace. Changing the name of a namespace is a breaking change.
+- Use a stable and non-version specific name for the namespace. Changing the name of a namespace is a breaking change.
 - The namespace name can be any valid AL identifier, and it can contain dots to indicate a hierarchy of namespaces. 
  
-The following example shows the syntax of a namespace declaration. All of the objects declared in the code file belong to the namespace `MyNamespace`.
+The following example shows the syntax of a namespace declaration. All of the objects declared in the code file belong to the namespace `MyNamespace`. The syntax shown below is for illustrational purposes, as it's still a best practice to separate objects into different files, and to use the same name for the file as the object. For more information, see [Best Practices for AL code](../compliance/apptest-bestpracticesforalcode.md).
 
 ```al
 namespace MyNamespace;
@@ -42,14 +42,11 @@ namespace MyNamespace;
 
 Now, to refer to the objects in the `MyNamespace`, you must either use the fully qualified name, or the `using` directive. For more information, see [Using directive](devenv-namespaces-overview.md#using-directive).
 
-To declare more objects in the same namespace, you can use the same namespace declaration in other .al files. All code files that use the same namespace declaration belong to the same namespace.
-
-> [!NOTE]  
-> It's a best practice to separate objects into different files, and to use the same name for the file as the object. For more information, see [Best Practices for AL code](../compliance/apptest-bestpracticesforalcode.md).
+To declare more objects in the same namespace, you can use the same namespace declaration in other .al files. All code files that use the same namespace declaration belong to the same namespace. 
 
 ## The `using` directive
 
-To refer to objects in other namespaces, you can either use the fully qualified name, or the `using` directive. The `using` directive is used to refer to objects in other namespaces without having to use the fully qualified name. The `using` directive is placed at the top of the .al file, *after* the namespace declaration and *before* any object declarations. The following example shows the order of the `namespace` declaration and the `using` directive.
+To refer to objects in other namespaces, you can either use the fully qualified name, or the `using` directive. The `using` directive is used to refer to objects in other namespaces without having to use the fully qualified name. The `using` directive is placed at the top of the .al file, *after* the namespace declaration and *before* any object declarations. The following example shows the order of the `namespace` declaration and the `using` directive. The order of the `using` directives doesn't matter.
 
 ```al
 
@@ -69,7 +66,7 @@ When objects are resolved, they're resolved using the closest scope first. There
 
 ## Nested namespaces
 
-A nested namespace is a namespace that's declared within another namespace. Nested namespaces allow for better and more structured naming of objects compared to having to express the full structure in the 30 character object name. The following example shows a nested namespace declaration of `MyNestedNamespace` within the `MyNamespace` namespace.
+A nested namespace is a namespace that's declared within another namespace. Nested namespaces allow for better and more structured naming of objects compared to having to express the full structure in the 30 character object name. The following syntax shows a nested namespace declaration of `MyNestedNamespace` within the `MyNamespace` namespace, separated by a dot.
 
 ```al
 namespace MyNamespace.MyNestedNamespace;
