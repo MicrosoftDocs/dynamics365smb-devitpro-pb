@@ -262,7 +262,7 @@ If you extend the user group functionality by adding actions, fields, or control
 
 ## Deprecated objects 
 
-The following objects are deprecated.
+The following objects are deprecated. To make these objects easy to find in the code, we've added a `[220_UserGroups]` tag to the obsolete reason.
 
 |Name  |Object type  |
 |---------|---------|

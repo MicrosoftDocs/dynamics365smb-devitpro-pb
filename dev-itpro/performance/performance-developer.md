@@ -81,18 +81,9 @@ The **Edit in Excel** feature uses UI pages exposed through OData, which means t
 
 ### Writing efficient AL reports
 
-Reports generally fall into two categories. They can be specific to a single instance of an entity, like an invoice. Or, they can be of a more analytical nature that joins data from multiple instances of multiple entities. Typically, performance issues in reports lie in the latter category. The following articles contain advice about implementing faster reports: 
+[!INCLUDE[report_performance](../includes/include-report-performance.md)]
 
-- Use Read Scale-Out to read data from a read-only copy of the database, see [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md) for more information.
-- Use Partial Records to reduce the data loaded from the database, see [Using Partial Records](../developer/devenv-partial-records.md) for more information.
-- Use AL queries to optimize the way data is read from the database, see [Queries in Business Central](../developer/devenv-query-overview.md) for more information.
-- Compared to Word layouts, RDL layouts can result in slower performance with document reports, especially for actions related to the user interface (like sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
-
-Read more about how to tune RDL reports here:
-
-- [RDLC Performance Optimization Tips](https://community.dynamics.com/business/b/navteam/posts/a-couple-of-rdlc-performance-optimization-tips)
-
-[!INCLUDE [send-report-excel](../developer/includes/send-report-excel.md)]
+For more information on how to use telemetry to analyze the performance of reports, see [Report performance](../developer/devenv-report-performance.md)
 
 ### Loading data efficiently to Power BI
 
@@ -344,6 +335,7 @@ Some tips for avoiding locking:
 -	If possible, limit transaction size (divide into smaller operations that can be committed)
 -	Make sure you have indexes on ranges you update
 -	Locking is much less of an issue if you have a logical separation across companies
+-	Set record instance isolation level on transactions to isolate them from other transactions to prevent problems in concurrent situations. [Learn more about record instance isolation level](../developer/devenv-read-isolation.md).  
 
 #### Database locking caused by web service calls
 
