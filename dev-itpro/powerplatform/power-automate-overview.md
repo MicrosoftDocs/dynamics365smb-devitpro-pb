@@ -47,6 +47,9 @@ The Dynamics 365 Business Central includes several triggers and actions for buil
 
 Business Central connector can also initiate actions provided through other connectors. For example, sending an email using Office 365 connector or starting a chat in Teams using the Microsoft Teams connector.
 
+> [!NOTE]
+> The connector currently doesn't support service-to-service (S2S) authentication.
+
 ## What users can do from inside Business Central
 
 With Power Automate integration, users can create and run Power Automate instant flows directly from the most list, card, and document pages. These pages have an **Automate** action group in the action bar, which includes actions for creating and managing flows, and also running existing flows created or shared in Power Automate.
