@@ -42,7 +42,7 @@ The following table explains the general dimensions of this trace.
 -->
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|--------------------|
 |eventId|**LC0040**|
 |codeunitObjectId|Specifies the ID of the task's main codeunit.|
 |failureCodeunitObjectId|Specifies the ID of the task's failure codeunit. **0** indicates that there's no failure codeunit.|
