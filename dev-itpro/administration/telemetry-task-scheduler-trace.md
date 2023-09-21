@@ -15,9 +15,7 @@ ms.author: jswymer
 
 [!INCLUDE[2021_releasewave2.md](../includes/2021_releasewave2.md)]
 
-Task scheduler telemetry gathers information about the execution of scheduled tasks. The data gives insight into what happens in background sessions that are coming from scheduled tasks. It provides information that lets you troubleshoot failures. The data can also help you determine whether tasks would be better scheduled for off hours to limit the load on the service.  
-
-For an overview of task scheduler and to understand the flow related to these traces, see [Task Scheduler](../developer/devenv-task-scheduler.md).
+[!INCLUDE[task_scheduler_telemetry](../includes/include-telemetry-task-scheduler.md)]
 
 > [!NOTE]
 > In this article, *main codeunit* refers to the codeunit that's run by the TaskScheduler.CreateTask method.
