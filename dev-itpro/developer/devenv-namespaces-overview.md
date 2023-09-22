@@ -15,12 +15,15 @@ ms.custom: bap-template
 
 Namespaces are used to organize code into logical groups and hierarchies, which can prevent naming conflicts that can occur when libraries are combined. Namespaces ensure uniqueness in code names and allow reuse of names in different contexts, and provide structure for the code base, making it easier to navigate and understand. Namespaces are used in many programming languages and with [!INCLUDE [prod_short](includes/prod_short.md)] they're available with AL.
 
-An AL file declares a namespace at the beginning of the file, and all objects in the code file belong to that namespace. A given object can only belong to one namespace, but the same namespace can be used for multiple AL files, which means for multiple objects. 
+An AL file declares a namespace at the beginning of the file, and all objects in the code file belong to that namespace. A given object can only belong to one namespace, but the same namespace can be used for multiple AL files, which means for multiple objects and for multiple modules. There are two compiler rules that apply to namespaces and object naming specifically:  
+
+    - You can only have one object of a kind with the same name in a module​
+    - You can only have one object of a kind with the same name in a namespace
 
 > [!IMPORTANT]  
 > Renaming existing object or member names is a breaking change, therefore namespaces can only help with logical structure for existing objects.  
 > 
-> Any app, which is dependent on your app will be broken if you rename namespaces, and likewise your app will break if any of the dependencies rename their namespaces.
+> Any app, which is dependent on your app will be broken if you rename namespaces, and likewise your app will break if any of your dependencies rename their namespaces.
 
 ## Namespace syntax
 
