@@ -56,14 +56,14 @@ foreach ($file in $files) {
         $content = Get-Content $path -Raw
         $licenseText = "// ------------------------------------------------------------------------------------------------`r`n// Copyright (c) Microsoft Corporation. All rights reserved.`r`n// Licensed under the MIT License. See License.txt in the project root for license information.`r`n// ------------------------------------------------------------------------------------------------`r`n"
                              
-        if ($content.IndexOf($licenseText) -eq -1) { # The file does not contain license statement
+        if ($content.IndexOf($licenseText) -eq -1) { # The file doesn't contain a license statement
             if ($License -eq "Ignore") {
                 $content = $namespaceLine + $content
                 continue
             }
-            $content = $licenseText + $content # Add license statement
+            $content = $licenseText + $content # Add a license statement
         }
-                             $content = $content.Replace($licenseText, $licenseText + "`r`n" + $namespaceLine) # Keep license and add namespace
+                             $content = $content.Replace($licenseText, $licenseText + "`r`n" + $namespaceLine) # Keep license and add a namespace
 
         $content | Set-Content $path -NoNewline
     }
@@ -75,4 +75,4 @@ You're now ready to open Visual Studio Code and use the AL code actions to apply
 
 ## See also
 
-[Namespaces in AL](devenv-namespaces.md)
+[Namespaces in AL](devenv-namespaces.md)  
