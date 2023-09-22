@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Namespaces in AL
 
-[!INCLUDE [2023_releasewave2](../includes/2023_releasewave2.md)]
+[!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
 
 Namespaces are used to organize code into logical groups and hierarchies, which can prevent naming conflicts that can occur when libraries are combined. Namespaces ensure uniqueness in code names and allow reuse of names in different contexts, and provide structure for the code base, making it easier to navigate and understand. Namespaces are used in many programming languages and with [!INCLUDE [prod_short](includes/prod_short.md)] they're available with AL.
 
