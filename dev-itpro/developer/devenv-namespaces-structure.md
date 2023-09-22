@@ -28,9 +28,47 @@ The script takes a .csv file as input, which specifies what namespace to give to
 | Retention Policy   | System.DataAdministration |
 | SharePoint         | System.Integration.Sharepoint |
 
-Open PowerShell and go to your source folder and run the following script:
+Copy and paste the following code lines into your preferred script editor, then save the file as a .ps1 file. Now, open PowerShell as an administrator, locate the folder of the script, and run the script with the following command: `.\<scriptname>.ps1`. The script will prompt you to specify the .csv file and the base path of your application. The script will then go through all the files in the base path and assign the namespaces specified in the .csv file.
 
 ```powershell
+param
+(
+    [Parameter(Mandatory=$true)]
+    [string] $CsvMappingFile,
+    [Parameter(Mandatory=$true)]
+    [string] $BasePath,
+    [ValidateSet("Add","Ignore")]
+    [string] $License = "Ignore",
+    [char] $Delimiter = ";"
+)
+
+$files = Import-Csv $CsvMappingFile -Delimiter $Delimiter
+foreach ($file in $files) {
+    $folder = $file.Folder
+    $namespace = $file.Namespace
+    $namespaceLine = "namespace $namespace;`r`n"
+
+    $folderPath = Join-Path $BasePath $folder
+    $alFiles = Get-ChildItem -Path $folderPath -Filter "*.al" -File -Recurse
+
+    foreach ($alFile in $alFiles) {
+        $path = $alFile.FullName
+        $content = Get-Content $path -Raw
+        $licenseText = "// ------------------------------------------------------------------------------------------------`r`n// Copyright (c) Microsoft Corporation. All rights reserved.`r`n// Licensed under the MIT License. See License.txt in the project root for license information.`r`n// ------------------------------------------------------------------------------------------------`r`n"
+                             
+        if ($content.IndexOf($licenseText) -eq -1) { # The file does not contain license statement
+            if ($License -eq "Ignore") {
+                $content = $namespaceLine + $content
+                continue
+            }
+            $content = $licenseText + $content # Add license statement
+        }
+                             $content = $content.Replace($licenseText, $licenseText + "`r`n" + $namespaceLine) # Keep license and add namespace
+
+        $content | Set-Content $path -NoNewline
+    }
+}
+
 ```
 
 You're now ready to open Visual Studio Code and use the AL code actions to apply all the missing `using` statements.
