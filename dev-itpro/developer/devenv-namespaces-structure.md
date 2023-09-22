@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 [!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
 
-Namespaces are used to organize code into logical groups and hierarchies and they ensure uniqueness in code names and allow reuse of names in different contexts. Namespaces also provide structure for the code base, making it easier to navigate and understand. For more information, see [Namespaces in AL](devenv-namespaces.md).
+Namespaces are used to organize code into logical groups and hierarchies and they ensure uniqueness in code names and allow reuse of names in different contexts. Namespaces also provide structure for the code base, making it easier to navigate and understand. For more information, see [Namespaces in AL](devenv-namespaces-overview.md).
 
 To get started introducing namespaces in your application, we're sharing a script that we have been using ourselves. This script allows you to specify namespaces for multiple objects at a time, using your folder structure. Usually code is divided into folders according to some kind of structure, which is often what you would like to replicate to some degree in your namespaces. 
 
