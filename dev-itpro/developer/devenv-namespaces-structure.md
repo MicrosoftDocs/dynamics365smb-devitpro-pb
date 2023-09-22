@@ -18,7 +18,7 @@ To get started introducing namespaces in your application, we're sharing a scrip
 
 The script shown in this article, allows you to specify what namespace to assign all your AL objects within a folder. After you have run the script, you can then customize these a bit further. We recommend doing a commit once you have found the proper namespaces. You can then use the code action to apply `using` statements to your application.
 
-The script takes a .csv file as input, which specifies what namespace to give to each file within a folder. The .csv file looks like below:
+The script takes a .csv file as input, which specifies what namespace to give to each file within a folder. The .csv file should contain a folder name and a namespace, as illustrated in the following example:
 
 | Folder             | Namespace |
 |--------------------|-----------|
@@ -27,6 +27,15 @@ The script takes a .csv file as input, which specifies what namespace to give to
 | Data Archive       | System.DataAdministration |
 | Retention Policy   | System.DataAdministration |
 | SharePoint         | System.Integration.Sharepoint |
+
+```csv
+Folder,Namespace
+Azure AD Graph,System.Azure.Identity
+Azure AD Licensing,System.Azure.Identity
+Data Archive,System.DataAdministration
+Retention Policy,System.DataAdministration
+SharePoint,System.Integration.Sharepoint
+```
 
 Copy and paste the following code lines into your preferred script editor, then save the file as a .ps1 file. Now, open PowerShell as an administrator, locate the folder of the script, and run the script with the following command: `.\<scriptname>.ps1`. The script will prompt you to specify the .csv file and the base path of your application. The script will then go through all the files in the base path and assign the namespaces specified in the .csv file.
 
