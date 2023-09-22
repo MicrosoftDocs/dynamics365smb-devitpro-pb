@@ -37,7 +37,7 @@ Retention Policy,System.DataAdministration
 SharePoint,System.Integration.Sharepoint
 ```
 
-Copy and paste the following code lines into your preferred script editor, then save the file as a .ps1 file. Now, open PowerShell as an administrator, locate the folder of the script, and run the script with the following command: `.\<scriptname>.ps1`. The script will prompt you to specify the .csv file and the base path of your application. The script will then go through all the files in the base path and assign the namespaces specified in the .csv file.
+Copy and paste the following code lines into your preferred script editor, then save the file as a .ps1 file. Now, open PowerShell as an administrator, locate the folder of the script, and run the script with the following command: `.\<scriptname>.ps1`. The script will prompt you to specify the .csv file and the base path of your application. The script will then go through all the files in the base path and assign the namespaces specified in the .csv file based on the given folder names.
 
 ```powershell
 param
