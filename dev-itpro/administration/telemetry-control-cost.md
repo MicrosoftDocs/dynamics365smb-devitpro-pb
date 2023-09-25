@@ -76,7 +76,7 @@ To help you get started with setting up Data Collection Rules, we've added many 
 
 - How to filter out one or more events (I don't need these events, no need to pay for them)
 - How to only filter part of an event (I only want to see events when something fails or I only want 10 percent of these events)
-- How to filter on Azure AD tenant (I'm an ISV and I want to start slowly on telemetry, so only enabling it for a few customers)
+- How to filter on Microsoft Entra tenant (I'm an ISV and I want to start slowly on telemetry, so only enabling it for a few customers)
 - How to filter on environment type (I'm an ISV and I only want data from production environments)
 - How to filter on app dimensions (I'm a VAR and this app/publisher is too noisy)
 

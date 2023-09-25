@@ -161,13 +161,13 @@
 ### [Rename environments](administration/tenant-admin-center-environments-rename.md)
 ### [Export databases](administration/tenant-admin-center-database-export.md)
 ### [Restore an environment](administration/tenant-admin-center-backup-restore.md)
-### [Move an environment to another Azure Active Directory organization](administration/tenant-admin-center-environments-move.md)
+### [Move an environment to another Microsoft Entra organization](administration/tenant-admin-center-environments-move.md)
 ### [Delete environments](administration/tenant-admin-center-environments-delete.md)
 ### [Environment telemetry](administration/tenant-admin-center-telemetry.md)
 ### Admin Center API
 #### [Overview](administration/administration-center-api.md)
 #### [App management](administration/administration-center-api_app_management.md)
-#### [Authorized Azure AD apps](administration/administration-center-api_authorizedaadapps.md)
+#### [Authorized Microsoft Entra apps](administration/administration-center-api_authorizedaadapps.md)
 #### [Available applications](administration/administration-center-api_available_applications.md)
 #### [Environments](administration/administration-center-api_environments.md)
 #### [Environment database export](administration/administration-center-api_environment_database_export.md)
@@ -458,9 +458,10 @@
 #### [Snapshot debugging](developer/devenv-snapshot-debugging.md)
 #### [Debug upgrade and install code](developer/devenv-debug-upgrade-install-code.md)
 #### [AL Profiler](developer/devenv-al-profiler-overview.md)
+#### [Troubleshoot in VS Code directly from the web client](developer/devenv-troubleshoot-vscode-webclient.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 #### [Sign an app package file](developer/devenv-sign-extension.md)
-#### [Using Azure AD authentication for Business Central on-premises installations](developer/devenv-aad-auth-onprem.md)
+#### [Using Microsoft Entra authentication for Business Central on-premises installations](developer/devenv-aad-auth-onprem.md)
 
 ### Testing
 #### [Overview](developer/devenv-testing-application.md)
@@ -1485,10 +1486,10 @@
 #### [Development cmdlets for extensions](/powershell/module/microsoft.dynamics.nav.apps.tools)
 ### Configuring user authentication
 #### [Authentication and credential types](administration/users-credential-types.md)
-#### Authenticating with Azure Active Directory
+#### Authenticating with Microsoft Entra ID
 ##### [Overview](administration/authenticating-users-with-azure-ad-overview.md)
-##### [Configure Azure AD authentication with OpenID Connect](administration/authenticating-users-with-azure-ad-openid-connect.md)
-##### [Configure Azure AD authentication with WS-Federation](administration/authenticating-users-with-azure-active-directory.md)
+##### [Configure Microsoft Entra authentication with OpenID Connect](administration/authenticating-users-with-azure-ad-openid-connect.md)
+##### [Configure Microsoft Entra authentication with WS-Federation](administration/authenticating-users-with-azure-active-directory.md)
 #### [Authenticating with NavUserPassword](administration/authenticating-users-with-navuserpassword.md)
 ### [Configuring Business Central server](administration/configure-server-instance.md)
 ### Configuring Business Central web server
