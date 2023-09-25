@@ -1425,6 +1425,7 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
+#### [2023 release wave 1 on-premises updates](deployment/update-versions-23.md)
 #### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
 #### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
@@ -1535,6 +1536,29 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
+### Business Central 2023 Release Wave 2
+#### [Overview](upgrade/upgrade-overview-v23.md)
+#### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
+#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+#### [Upgrading reports](upgrade/upgrade-reports.md)
+#### Application and data
+##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v23.md)
+##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v23.md)
+##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v23.md)
+##### Related articles
+###### [Convert to AL](upgrade/devenv-code-conversion.md)
+###### Migrating tables and fields between extensions
+####### [Overview](developer/devenv-migrate-table-fields.md)
+####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+###### Data migration toolkit - India
+####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
+#### Technical upgrade
+##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v23.md)
+##### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v23.md)
+##### [From version 20, 21, or 22](upgrade/upgrade-technical-upgrade-v23.md)
+#### [Installing a minor update](upgrade/upgrading-cumulative-update-v23.md)
 ### Business Central 2023 Release Wave 1
 #### [Overview](upgrade/upgrade-overview-v22.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v22.md)
@@ -1602,27 +1626,27 @@
 ##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v20.md)
 ##### [From version 17, 18, or 19](upgrade/upgrade-technical-upgrade-v20.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v20.md)
-### Business Central 2021 release wave 2
-#### [Overview](upgrade/upgrade-overview-v19.md)
-#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
-#### Application and data
-##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v19.md)
-##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v19.md)
-##### [From versions 15 and later](upgrade/upgrade-unmodified-application-to-v19.md)
-##### Related articles
-###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating tables and fields between extensions
-####### [Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-###### Data migration toolkit - India
-####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
-#### Technical Upgrade
-##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v19.md)
-##### [From version 16, 17, or 18](upgrade/upgrade-technical-upgrade-v19.md)
-#### [Installing a minor update](upgrade/upgrading-cumulative-update-v19.md)
 ### Earlier versions
+#### Business Central 2021 release wave 2
+##### [Overview](upgrade/upgrade-overview-v19.md)
+##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+##### Application and data
+###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v19.md)
+###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v19.md)
+###### [From versions 15 and later](upgrade/upgrade-unmodified-application-to-v19.md)
+###### Related articles
+####### [Convert to AL](upgrade/devenv-code-conversion.md)
+####### Migrating tables and fields between extensions
+######## [Overview](developer/devenv-migrate-table-fields.md)
+######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+####### Data migration toolkit - India
+######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
+##### Technical Upgrade
+###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v19.md)
+###### [From version 16, 17, or 18](upgrade/upgrade-technical-upgrade-v19.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update-v19.md)
 #### Business Central 2021 release wave 1
 ##### [Overview](upgrade/upgrade-overview-v18.md)
 ##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
