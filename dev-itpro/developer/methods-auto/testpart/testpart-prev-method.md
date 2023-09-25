@@ -3,7 +3,7 @@ title: "TestPart.Prev() Method"
 description: "Sets the current row of the test page as the previous row in the data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 06/30/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestPart.Prev() Method
-> **Version**: _Available or changed with runtime version 3.0 until version 3.0 where it was deprecated._
+> **Version**: _Available or changed with runtime version 3.0-13.0-true until version 3.0 where it was deprecated for the following reason: "Use Previous instead."_
 
 Sets the current row of the test page as the previous row in the data set.
 
@@ -23,7 +23,6 @@ Sets the current row of the test page as the previous row in the data set.
 ```AL
 [Ok := ]  TestPart.Prev()
 ```
-
 ## Parameters
 *TestPart*  
 &emsp;Type: [TestPart](testpart-data-type.md)  
