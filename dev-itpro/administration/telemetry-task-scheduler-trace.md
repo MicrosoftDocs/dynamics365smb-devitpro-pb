@@ -15,9 +15,7 @@ ms.author: jswymer
 
 [!INCLUDE[2021_releasewave2.md](../includes/2021_releasewave2.md)]
 
-Task scheduler telemetry gathers information about the execution of scheduled tasks. The data gives insight into what happens in background sessions that are coming from scheduled tasks. It provides information that lets you troubleshoot failures. The data can also help you determine whether tasks would be better scheduled for off hours to limit the load on the service.  
-
-For an overview of task scheduler and to understand the flow related to these traces, see [Task Scheduler](../developer/devenv-task-scheduler.md).
+[!INCLUDE[task_scheduler_telemetry](../includes/include-telemetry-task-scheduler.md)]
 
 > [!NOTE]
 > In this article, *main codeunit* refers to the codeunit that's run by the TaskScheduler.CreateTask method.
@@ -44,7 +42,7 @@ The following table explains the general dimensions of this trace.
 -->
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|--------------------|
 |eventId|**LC0040**|
 |codeunitObjectId|Specifies the ID of the task's main codeunit.|
 |failureCodeunitObjectId|Specifies the ID of the task's failure codeunit. **0** indicates that there's no failure codeunit.|
@@ -59,7 +57,7 @@ The following table explains other custom dimensions that are common to all task
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company in which the task was run.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|

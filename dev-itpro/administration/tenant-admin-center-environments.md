@@ -88,31 +88,31 @@ The version list may also have one or more *preview* versions. Preview versions 
 When you create a sandbox environment on a preview version, the environment will automatically be updated to new preview versions when they become available. However, the environment won't be updated to the production version. Once a sandbox environment is on a preview version, it must stay on a preview version until it's deleted. The environment can also be deleted if an update between preview versions fails. We recommend that preview versions are used only for temporary testing of an upcoming release.
 
 <!--
-## Manage access using Azure Active Directory groups
+## Manage access using Microsoft Entra groups
 
-To manage access at the environment level, you can assign an Azure Active Directory (Azure AD) group to the environment. By assigning an Azure AD group to an environment, only direct and indirect members of the group are granted access to the environment. Indirect members are users in another group, which itself is a member of the group assigned to the environment. Although all licensed users in Azure AD will be added to the environment when it's synchronized with Microsoft 365, only group members can sign in.
+To manage access at the environment level, you can assign a Microsoft Entra group to the environment. By assigning a Microsoft Entra group to an environment, only direct and indirect members of the group are granted access to the environment. Indirect members are users in another group, which itself is a member of the group assigned to the environment. Although all licensed users in Microsoft Entra ID will be added to the environment when it's synchronized with Microsoft 365, only group members can sign in.
 
-From the **Environments** page, you'll see the currently assigned group in the **Security Group** column. **Not set** indicates that no group has been assigned. **Not available** indicates that the group that was assigned is no longer available in the Azure AD.
+From the **Environments** page, you'll see the currently assigned group in the **Security Group** column. **Not set** indicates that no group has been assigned. **Not available** indicates that the group that was assigned is no longer available in the Microsoft Entra ID.
 
 > [!NOTE]
 > The restrictions imposed by a security group don't apply to administrators. Local and delegated admins can freely sign in to all environments, regardless of the assigned group.
  
 ### Assign, change, or remove a group
 
-Before you can assign an Azure AD group to an environment, the group must be created in your Azure AD tenant. For more information, see [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in the Azure documentation.
+Before you can assign a Microsoft Entra group to an environment, the group must be created in your Microsoft Entra tenant. For more information, see [Create a basic group and add members using Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in the Azure documentation.
 
 1. Select **Environments**, then select the environment on which you want to assign, change, or remove the group.
 2. On the **Environment Details** page, the currently assigned group is shown under **Security Group**.
 
     - To assign a group, select **(Define)**.
     - To change or remove the currently assigned group, select **Modify**.
-3. The **Edit Security Group** pane shows the current security group, if any, followed by all the available groups in Azure AD.
+3. The **Edit Security Group** pane shows the current security group, if any, followed by all the available groups in Microsoft Entra ID.
 
    - To assign or change a group, search for and select the group from the list.
    - To remove a group, select ![Unassign a group.](../developer/media/admin/admin-center-delete-group.png) under **Current Security Group**.
 
     > [!NOTE]
-    > If there are more than 10,000 groups in Azure AD, they can't all be retrieved and displayed in the admin center. Instead, you'll see the message **You have too many groups to display them all**. In this case, you'll have to enter the object ID of the group that you want to assign. You get the object ID from the [Azure portal](https://portal.azure.com).
+    > If there are more than 10,000 groups in Microsoft Entra ID, they can't all be retrieved and displayed in the admin center. Instead, you'll see the message **You have too many groups to display them all**. In this case, you'll have to enter the object ID of the group that you want to assign. You get the object ID from the [Azure portal](https://portal.azure.com).
 
 4. Select **Save** when done.
 
@@ -152,7 +152,7 @@ Currently, the log includes the following operations:
 |Recovered environment|A deleted environment was recovered.|[See...](tenant-admin-center-environments-delete.md#recover-an-environment)|[See...](administration-center-api_environments.md#recover-environment)||
 |Delete environment|An environment was permanently deleted.|[See...](tenant-admin-center-environments-delete.md)|[See...](administration-center-api_environments.md#delete-environment)||
 |Modify environment|One of the following operations was done on an environment: <ul><li>Set update window</li><li>Set Application Insights connection string</li><li>Set security group</li><li>Clear security group</li><li>Reschedule update </li><li>Set access with Microsoft 365 licenses.</li></ul>|[See update management...](tenant-admin-center-update-management.md)<br /><br />[See telemetry...](tenant-admin-center-telemetry.md)<br /><br />[See manage access...](tenant-admin-center-manage-access.md)|[See environment settings...](administration-center-api_environment_settings.md)||
-|Move environment|An environment was moved to another Azure Active Directory organization.|[See...](tenant-admin-center-environments-move.md)|||
+|Move environment|An environment was moved to another Microsoft Entra organization.|[See...](tenant-admin-center-environments-move.md)|||
 |Rename environment|Environment was renamed.|[See...](tenant-admin-center-environments-rename.md)|[See...](administration-center-api_environments.md#rename-environment)||
 |Restart environment|Environment was restarted|[See...](tenant-admin-center-manage-sessions.md#restart-environment)||
 |Update environment|An environment is updated to a newer version.|[See...](tenant-admin-center-update-management.md)|[See...](administration-center-api_environment_settings.md)|
@@ -174,6 +174,6 @@ The operations are kept for 180 days, after which they're deleted.
 [Copy a Production or Sandbox Environment](tenant-admin-center-environments-copy.md)  
 [Rename Environments](tenant-admin-center-environments-rename.md)  
 [Restoring an Environment](tenant-admin-center-backup-restore.md)  
-[Move an Environment to another Azure Active Directory organization](tenant-admin-center-environments-move.md)  
+[Move an Environment to another Microsoft Entra organization](tenant-admin-center-environments-move.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)
 [The Business Central Administration Center](tenant-admin-center.md)  

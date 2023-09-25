@@ -40,6 +40,6 @@ When the process starts, you can go to the list of your environments and see the
 [Managing Sessions](tenant-admin-center-manage-sessions.md)  
 [Rename Environments](tenant-admin-center-environments-rename.md)  
 [Restoring an Environment](tenant-admin-center-backup-restore.md)  
-[Move an Environment to another Azure Active Directory organization](tenant-admin-center-environments-move.md)  
+[Move an Environment to another Microsoft Entra organization](tenant-admin-center-environments-move.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)
 [The Business Central Administration Center](tenant-admin-center.md)  

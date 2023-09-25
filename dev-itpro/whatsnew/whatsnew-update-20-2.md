@@ -49,7 +49,7 @@ Last October, we announced a new partnership with Shopify to help our customers 
 We're simplifying access to Business Central online by transitioning to a single app tile starting in June 2022. Learn more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/single-tile-go-business-central).
 
 **Action required by July 2022 for Excel Add-in**  
-Starting in July 2022, Microsoft will roll out an update to the Excel add-in that further secures the connection to Business Central. The update requires that you modify your organization's Azure Active Directory (Azure AD) configuration so that users can continue using the add-in. This impacts all Business Central on premises deployments that use the Excel add-in. Learn more [here](/dynamics365/business-central/dev-itpro/administration/update-excel-addin-configuration).
+Starting in July 2022, Microsoft will roll out an update to the Excel add-in that further secures the connection to Business Central. The update requires that you modify your organization's Microsoft Entra ID configuration so that users can continue using the add-in. This impacts all Business Central on premises deployments that use the Excel add-in. Learn more [here](/dynamics365/business-central/dev-itpro/administration/update-excel-addin-configuration).
 
 **Changes to the Per-Tenant Extensions Disclaimer**  
 The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
