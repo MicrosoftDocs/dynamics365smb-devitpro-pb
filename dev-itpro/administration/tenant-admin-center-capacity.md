@@ -32,31 +32,11 @@ To help our customers manage and plan their storage costs on an ongoing basis, t
 
 Every [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Premium or Essential subscriptions can use one production environment and three sandbox environments, at no extra charge.  
 
-Customers can also choose to purchase any number of additional production environments via their CSP partner. Each additionally purchased production environment comes with three additional sandbox environments.  
+Customers can also choose to purchase any number of additional production environments via their CSP partner. Each additionally purchased production environment comes with three additional sandbox environments and increases storage capacity shared by all environments on the tenant by 4 GB.  
 
 Production and sandbox environments can be created and used in any country/region where [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service is available, also in the country/region where the default [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are located. Additional environments can be created by customers, administrators, and partners by using the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
 When customer administrators create users in Microsoft 365 Admin Center and assign them [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses, each user, by default, gets access to all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments (sandbox and production) under the same single [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license, still acting within the scope of their license within each of these environments. Administrators can limit users' access to any particular environment by [changing their permissions](/dynamics365/business-central/ui-define-granular-permissions), or by [removing users' access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) within that environment.
-
-### Customers with Premium or Essentials subscriptions purchased before October 1 2020
-
-Existing customers with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Premium or Essentials subscriptions purchased before October 1 2020 will keep their existing environment entitlements (three production and three sandbox environments) for one year, until October 1 2021 or until their subscription is renewed or ended, whichever occurs last. 
-
-Access to two additional production environments during this period won't increase your overall database storage capacity and won't enable extra sandbox environments. These benefits are only activated with the production environments purchased by the customers separately.
-
-Examples:
-
-- Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscription renews **before** October 1 2021
-
-    You can use up to three production environments until October 1 2021. After that date, you'll only be entitled to one production and three sandbox environments.
-
-- Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscription renews **after** October 1 2021
-
-    You can use up to three production environments until the day your subscription renews. After that date, you'll only be entitled to one production and three sandbox environments.
-
-When your entitlement for two additional production environments expires, the additional production environments you may have created during that period will still be fully available. You won't be automatically charged for the extra environments. But to become compliant, you'll have to purchase additional production environments via your CSP partner within 30 days following the expiration date. For more information, see the **Exceeding capacity quotas** section. 
-
-Use the **Capacity** page to see how many environments of each type you have available for your organization.  
 
 ## Storage
 
@@ -79,7 +59,7 @@ Apart from the default storage capacity, the customer is entitled to additional 
 The **Storage capacity, by source** section shows how much capacity is available by default, how much extra capacity is added with user licenses, and how much additional capacity was specifically purchased via CSP.  
 
 > [!NOTE]
-> Since July 1, 2021, along with introduction of lower-priced capacity add-ons and per-license capacity quota extensions, the capacity occupied by the files or Blob data stored in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database (the content of the Tenant Media and Tenant Media Thumbnails tables) is counted towards the overall database storage capacity of the customer (tenant).  
+> The capacity occupied by the files or Blob data stored in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database (the content of the Tenant Media and Tenant Media Thumbnails tables) is counted towards the overall database storage capacity of the customer (tenant).  
 
 ### Storage usage by environment
 

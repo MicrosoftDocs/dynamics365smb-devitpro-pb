@@ -458,6 +458,7 @@
 #### [Snapshot debugging](developer/devenv-snapshot-debugging.md)
 #### [Debug upgrade and install code](developer/devenv-debug-upgrade-install-code.md)
 #### [AL Profiler](developer/devenv-al-profiler-overview.md)
+#### [Troubleshoot in VS Code directly from the web client](developer/devenv-troubleshoot-vscode-webclient.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 #### [Sign an app package file](developer/devenv-sign-extension.md)
 #### [Using Microsoft Entra authentication for Business Central on-premises installations](developer/devenv-aad-auth-onprem.md)
@@ -702,6 +703,7 @@
 ##### [Field groups](developer/devenv-field-groups.md)
 ##### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate methods](developer/devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
 ##### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
+##### [Rich Text and content controls](developer/devenv-richtext-content-controls.md)
 #### Actions
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding actions to a page](developer/devenv-adding-actions-to-a-page.md)
