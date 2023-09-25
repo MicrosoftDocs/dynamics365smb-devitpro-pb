@@ -49,7 +49,7 @@ To install a working [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 - The computer on which you install the app must meet the requirements outlined on the download page for the app.
 
 > [!IMPORTANT]
-> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support Azure Active Directory Application Proxy, because Application Proxy doesn't fully support web sockets.
+> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support Microsoft Entra application Proxy, because Application Proxy doesn't fully support web sockets.
 
 ## Install the Business Central App
 

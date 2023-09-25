@@ -6,6 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
+description: Learn how to create multiple records with Microsoft's CreateMultiple Operation. Understand method signatures, parameters, results, and handle faults.
 ---
 # CreateMultiple Operation
 Creates a set of records. The supplied record object is overwritten with the version that is created by the page.  
