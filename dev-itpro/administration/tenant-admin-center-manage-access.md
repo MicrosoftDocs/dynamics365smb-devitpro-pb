@@ -13,31 +13,31 @@ ms.custom: bap-template
 
 This article describes admin center features that you use for controlling user access to environments. In addition to what you do in the admin center, these features typically require configuration and set up in either Business Central or another product or service.
 
-## Manage access using Azure Active Directory groups
+## Manage access using Microsoft Entra groups
 
-To manage access at the environment level, you can assign an Azure Active Directory (Azure AD) group to the environment. By assigning an Azure AD group to an environment, only direct and indirect members of the group are granted access to the environment. Indirect members are users in another group, which itself is a member of the group assigned to the environment. Although all licensed users in Azure AD will be added to the environment when it's synchronized with Microsoft 365, only group members can sign in.
+To manage access at the environment level, you can assign a Microsoft Entra group to the environment. By assigning a Microsoft Entra group to an environment, only direct and indirect members of the group are granted access to the environment. Indirect members are users in another group, which itself is a member of the group assigned to the environment. Although all licensed users in Microsoft Entra ID will be added to the environment when it's synchronized with Microsoft 365, only group members can sign in.
 
-From the **Environments** page, you'll see the currently assigned group in the **Security Group** column. **Not set** indicates that no group has been assigned. **Not available** indicates that the group that was assigned is no longer available in the Azure AD.
+From the **Environments** page, you'll see the currently assigned group in the **Security Group** column. **Not set** indicates that no group has been assigned. **Not available** indicates that the group that was assigned is no longer available in the Microsoft Entra ID.
 
 > [!NOTE]
 > The restrictions imposed by a security group don't apply to administrators. Local and delegated admins can freely sign in to all environments, regardless of the assigned group.
  
 ### Assign, change, or remove a group
 
-Before you can assign an Azure AD group to an environment, the group must be created in your Azure AD tenant. For more information, see [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in the Azure documentation.
+Before you can assign a Microsoft Entra group to an environment, the group must be created in your Microsoft Entra tenant. For more information, see [Create a basic group and add members using Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in the Azure documentation.
 
 1. Select **Environments**, then select the environment on which you want to assign, change, or remove the group.
 2. On the **Environment Details** page, the currently assigned group is shown under **Security Group**.
 
     - To assign a group, select **(Define)**.
     - To change or remove the currently assigned group, select **Modify**.
-3. The **Edit Security Group** pane shows the current security group, if any, followed by all the available groups in Azure AD.
+3. The **Edit Security Group** pane shows the current security group, if any, followed by all the available groups in Microsoft Entra ID.
 
    - To assign or change a group, search for and select the group from the list.
    - To remove a group, select ![Unassign a group.](../developer/media/admin/admin-center-delete-group.png) under **Current Security Group**.
 
     > [!NOTE]
-    > If there are more than 10,000 groups in Azure AD, they can't all be retrieved and displayed in the admin center. Instead, you'll see the message **You have too many groups to display them all**. In this case, you'll have to enter the object ID of the group that you want to assign. You get the object ID from the [Azure portal](https://portal.azure.com).
+    > If there are more than 10,000 groups in Microsoft Entra ID, they can't all be retrieved and displayed in the admin center. Instead, you'll see the message **You have too many groups to display them all**. In this case, you'll have to enter the object ID of the group that you want to assign. You get the object ID from the [Azure portal](https://portal.azure.com).
 
 4. Select **Save** when done.
 

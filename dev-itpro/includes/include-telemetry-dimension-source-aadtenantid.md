@@ -1,1 +1,1 @@
-Specifies the source Azure Active Directory (AAD) tenant ID for the move.
+Specifies the source Microsoft Entra tenant ID for the move.

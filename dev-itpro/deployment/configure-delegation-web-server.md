@@ -119,7 +119,7 @@ As a best practice, you should configure kernel mode authentication to use the a
 ## <a name="RegisterSPN"></a> Registering Service Principal Names for [!INCLUDE[server](../developer/includes/server.md)]
 
 > [!NOTE]
-> This section only applies to Business Central 2022 release wave 1 (version 20) and earlier. SPNs aren't support in later versions.
+> This section only applies to Business Central 2022 release wave 1 (version 20) and earlier. SPNs aren't supported in later versions.
 
 When [!INCLUDE[server](../developer/includes/server.md)] is using a dedicated domain user account as its logon account, then you must register service principal names \(SPN\) for the [!INCLUDE[server](../developer/includes/server.md)] on the domain user account to make delegation work. An SPN is the name by which a client uniquely identifies an instance of a service, using the account under which the service runs. To register SPNs, you used the setspn command-line tool that is available in Windows Server 2008 and Windows 7.  
   
