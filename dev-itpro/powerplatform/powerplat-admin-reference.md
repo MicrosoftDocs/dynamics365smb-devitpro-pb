@@ -1,6 +1,6 @@
 ---
-title: "Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] admin reference"
-description: "The admin reference for working with Business Central and Microsoft Dataverse tables"
+title: Business Central Virtual Table for Microsoft Dataverse admin reference
+description: The admin reference for working with Business Central and Microsoft Dataverse tables.
 ms.custom: na
 ms.date: 06/02/2021
 ms.reviewer: solsen
@@ -36,7 +36,7 @@ After the solutions are installed in the [!INCLUDE[cds_long_md](../includes/cds_
 
 The next step in the process is to provide [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment and company to connect to. The following steps walk through this part of the process.
 
-0. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to the page 'AAD Applications' and toggle the app 'Dynamics 365 Business Central for Virtual tables' to **Enabled**. This will allow [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] to communicate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+0. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to the page 'Microsoft Entra applications' and toggle the app 'Dynamics 365 Business Central for Virtual tables' to **Enabled**. This will allow [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] to communicate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to the table **Business Central Virtual Data Source Configuration**.
 

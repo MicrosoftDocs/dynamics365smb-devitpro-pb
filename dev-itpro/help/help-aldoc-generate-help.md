@@ -4,7 +4,7 @@ description: This article describes how to download and use the ALDoc tool to ge
 author: SusanneWindfeldPedersen
 ms.topic: conceptual
 ms.reviewer: solsen
-ms.date: 08/09/2023
+ms.date: 09/01/2023
 ms.author: solsen
 ms.custom: bap-template
 ---
@@ -47,11 +47,15 @@ Download the latest version of .NET here [Download .NET (Linux, macOS, and Windo
 
 ### DocFx
 
+> [!IMPORTANT]  
+> ALDoc will only work with DocFx version 2.70.0 or lower.
+
 Install the DocFx tool when you have installed .NET 6.0 or higher. DocFx is an open-source tool used to generate static sites. It's designed to create reference documentation based on .NET code and XML comments. The ALDoc tool adds support for generating documentation for AL objects with DocFx. For more information, see [Basic concepts in DocFx](https://dotnet.github.io/docfx/docs/basic-concepts.html).
 
-1. Start a command line tool as administrator, and run the following command to install the .NET DocFx tool:  
+1. Start a command line tool as administrator, and run the following command to install the .NET DocFx tool, version 2.70.0, which is currently the newest recommended version for ALDoc.
+
     ```bash
-    dotnet tool update -g docfx
+    dotnet tool install docfx --version 2.70 -g
     ```
 
 After the installation is complete, you have the latest version of the DocFx tool on your machine.

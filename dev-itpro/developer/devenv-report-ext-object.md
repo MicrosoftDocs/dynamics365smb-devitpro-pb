@@ -128,7 +128,8 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
 ## See Also
 
 [Report Extension Example](devenv-report-ext-example.md)  
-[Request Pages](devenv-request-pages.md)  
+[Using request pages with reports](devenv-request-pages-for-reports.md)
+[Creating an Excel layout report](devenv-howto-excel-report-layout.md)
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
