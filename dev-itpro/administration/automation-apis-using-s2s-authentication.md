@@ -16,10 +16,10 @@ ms.author: jswymer
 Service-to-Service (S2S) authentication is suited for scenarios where integrations are required to run without any user interaction. S2S authentication uses the [Client Credentials OAuth 2.0 Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). This flow enables you to access resources by using the identity of an application.
 
 > [!NOTE]
-> For more information about OAuth 2.0 flows, see [OAuth 2.0 and OpenID Connect protocols on the Microsoft identity platform](/azure/active-directory/develop/active-directory-v2-protocols) in the Azure Active Directory (Azure AD) documentation.
+> For more information about OAuth 2.0 flows, see [OAuth 2.0 and OpenID Connect protocols on the Microsoft identity platform](/azure/active-directory/develop/active-directory-v2-protocols) in the Microsoft Entra ID documentation.
 
 
-In contrast, OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Azure Active Directory. 
+In contrast, OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Microsoft Entra ID. 
 
 ## Feature availability
 
@@ -52,40 +52,40 @@ Two main scenarios are enabled with S2S authentication:
 
 ## Business Central on-premises prerequisite
 
-Business Central on-premises must be configured for Azure AD authentication with OpenID Connect.
+Business Central on-premises must be configured for Microsoft Entra authentication with OpenID Connect.
 
 > [!IMPORTANT]
 > The `ValidAudiences` parameter of the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] must include the endpoint `https://api.businesscentral.dynamics.com`. If it doesn't, you'll get the error `Authentication_InvalidCredentials` on API requests, or the error `securitytokeninvalidaudienceexception` in the application log when you try to download symbols from Visual Studio.
 
-For more information, go to [Configure Azure Active Directory Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
+For more information, go to [Configure Microsoft Entra authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
 ## Set up service-to-service authentication
 
 To set up service-to-service authentication, you'll have to do two things:
 
-- Register an application in your Azure Active Directory tenant for authenticating API calls against [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+- Register an application in your Microsoft Entra tenant for authenticating API calls against [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 - Grant access for that application in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 These tasks are described in the sections that follow. 
 
-## Task 1: Register an Azure AD application for authentication to Business Central
+## Task 1: Register a Microsoft Entra application for authentication to Business Central
 
-Complete these steps to register an application in your Azure AD tenant for service-to-service authentication.
+Complete these steps to register an application in your Microsoft Entra tenant for service-to-service authentication.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-2. Register an application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] in Azure Active Directory tenant.
+2. Register an application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] in Microsoft Entra tenant.
 
-    Follow the general guidelines at [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
+    Follow the general guidelines at [Register your application with your Microsoft Entra tenant](/azure/active-directory/active-directory-app-registration).
 
-    When you add an application to an Azure AD tenant, you must specify the following information:
+    When you add an application to a Microsoft Entra tenant, you must specify the following information:
 
     |Setting|Description|
     |-------|-----------|
     |Name|Specify a unique name for your application. |
-    |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong>.|
-    |Redirect URI|(optional) This setting is only required if you want to use the Business Central web client to grant consent to the API (see task 2). Otherwise, you can grant consent using the Azure portal.<br><br>To specify the redirect URL, set the first box to **Web** to specify a web application. Then, enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC210/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC210/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC210/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
+    |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)</strong>.|
+    |Redirect URI|(optional) This setting is only required if you want to use the Business Central web client to grant consent to the API (see task 2). Otherwise, you can grant consent using the Azure portal.<br><br>To specify the redirect URL, set the first box to **Web** to specify a web application. Then, enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC210/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC210/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central and other services through Microsoft Entra ID.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC210/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
 
     When completed, an **Overview** displays in the portal for the new application.
 
@@ -100,7 +100,7 @@ Complete these steps to register an application in your Azure AD tenant for serv
     > [!NOTE]
     > Copy the secret's value for use in your client application code. This secret value is never displayed again after you leave this page.
 
-    For the latest guidelines about adding client secrets in Azure AD, see [Add credentials ](/azure/active-directory/develop/quickstart-register-app#add-credentials) in the Azure documentation.
+    For the latest guidelines about adding client secrets in Microsoft Entra ID, see [Add credentials ](/azure/active-directory/develop/quickstart-register-app#add-credentials) in the Azure documentation.
 
 4. Grant the registered application **API.ReadWrite.All** and **Automation.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]** API as follows:
 
@@ -115,23 +115,23 @@ Complete these steps to register an application in your Azure AD tenant for serv
         |Dynamics 365 Business Central / Automation.ReadWrite.All|Application|Full access to automation|
         |Dynamics 365 Business Central / API.ReadWrite.All|Application|Access to APIs and webservices|
 
-        For the latest guidelines about adding permissions in Azure AD, see [Add permissions to access your APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api) in the Azure documentation.
+        For the latest guidelines about adding permissions in Microsoft Entra ID, see [Add permissions to access your APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api) in the Azure documentation.
 
     4. (optional) Grant admin consent on each permission by selecting it in the list, then selecting **Grant admin consent for \<tenant name\>**.
 
         This step isn't required if you'll be granting consent from the Business Central web client in task 2.
 
-## Task 2: Set up the Azure AD application in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
+## Task 2: Set up the Microsoft Entra application in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
-Complete these steps to set up the Azure AD application for service-to-service authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. 
+Complete these steps to set up the Microsoft Entra application for service-to-service authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. 
 
-1. In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, search for **Azure Active Directory Applications**  and open the page.
+1. In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, search for **Microsoft Entra applications**  and open the page.
 
 2. Select **New**.
 
-    The **Azure Active Directory Application Card** opens.
+    The **Microsoft Entra application Card** opens.
 
-3. In the **Client ID** field, enter the **Application (Client) ID**  for the registered application in Azure AD from task 1. 
+3. In the **Client ID** field, enter the **Application (Client) ID**  for the registered application in Microsoft Entra ID from task 1. 
 
 4. Fill in the **Description** field. If this application is set up by a partner, please enter sufficient partner-identifying information, so all applications set up by this partner can be tracked in the future if necessary.
 
@@ -151,14 +151,14 @@ Complete these steps to set up the Azure AD application for service-to-service a
 
 7. (optional) Select **Grant Consent** and follow the wizard. 
 
-    This step will grant consent to the API. This step is only required if you haven't granted consent from the Azure portal in task 1. You can only complete this step if you've configured a redirect URL in the registered Azure AD app.
+    This step will grant consent to the API. This step is only required if you haven't granted consent from the Azure portal in task 1. You can only complete this step if you've configured a redirect URL in the registered Microsoft Entra app.
 
    > [!TIP]
-   > Pre-consent can be done by adding the AAD application to the **Adminagents** group in the partner tenant.  For more information, see [Pre-consent your app for all your customers](/graph/auth-cloudsolutionprovider#pre-consent-your-app-for-all-your-customers) in the Graph documentation.
+   > Pre-consent can be done by adding the Microsoft Entra application to the **Adminagents** group in the partner tenant.  For more information, see [Pre-consent your app for all your customers](/graph/auth-cloudsolutionprovider#pre-consent-your-app-for-all-your-customers) in the Graph documentation.
 
 ## Calling API and web services OAuth2Flows
 
-After the Azure AD application has been set up and access has been granted, you're ready to make API and web service calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+After the Microsoft Entra application has been set up and access has been granted, you're ready to make API and web service calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 For most cases, use the `AcquireTokenByAuthorizationCode` method from the OAuth 2.0 module. For more information, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). To explore an example, see [OAuth2Flows](https://github.com/microsoft/BCTech/blob/master/samples/OAuth2Flows/TestOAuth2Flows.Page.al).
 
@@ -262,7 +262,7 @@ Authorization: {{accessHeader}}
 ```
 
 ## See Also
-[OAuth2 and Azure Active Directory](/azure/active-directory/develop/active-directory-v2-protocols)  
+[OAuth2 and Microsoft Entra ID](/azure/active-directory/develop/active-directory-v2-protocols)  
 [Client Credentials flow/S2S using MSAL library](/azure/active-directory/develop/scenario-daemon-overview)  
 [C# samples using Client Credentials flow](https://github.com/Azure-Samples/active-directory-dotnetcore-daemon-v2)  
 [OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)  
