@@ -3,7 +3,7 @@ title: "FieldRef Data Type"
 description: "Identifies a field in a table and gives you access to this field."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 06/30/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,6 +40,7 @@ The following methods are available on instances of the FieldRef data type.
 |[GetFilter()](fieldref-getfilter-method.md)|Gets the filter that is currently applied to the field referred to by FieldRef.|
 |[GetRangeMax()](fieldref-getrangemax-method.md)|Gets the maximum value in a range for a field.|
 |[GetRangeMin()](fieldref-getrangemin-method.md)|Gets the minimum value in a range for a field.|
+|[IsEnum()](fieldref-isenum-method.md)|Checks if the currently selected field is an enum.|
 |[Length()](fieldref-length-method.md)|Gets the maximum size of the field (the size specified in the DataLength property of the field). This method is usually used for finding the defined length of code and text fields.|
 |[Name()](fieldref-name-method.md)|Gets the name of a field as a string.|
 |[Number()](fieldref-number-method.md)|Gets the number of a field as an integer.|
