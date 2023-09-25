@@ -17,7 +17,7 @@ Allows for the export of an environment's Azure database. Databases are exported
 
 ### Required In-Product Permissions for Exporting an Environment Database
 
-To use the `exports` endpoint, you must have the **D365 BACKUP/RESTORE** permission set assigned to your Business Central user account or authorized AAD App.
+To use the `exports` endpoint, you must have the **D365 BACKUP/RESTORE** permission set assigned to your Business Central user account or authorized Microsoft Entra app.
 
 ## Get Export Metrics
 
