@@ -22,6 +22,21 @@ Sets a value that specifies whether analysis mode on the page is allowed.
 -   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Property Value  
+
+**true** enables the analysis mode on the page. When enabled, the **Analyze** switch is available at the top of the page; **false** disables the analysis mode on the page. The default is **true**.  
+
+## Syntax
+
+```AL
+AnalysisModeEnabled = true|false;
+```
+
+## Remarks
+
+The analysis mode enables users to analyze data directly from the page, without having to run a report or switch another application like Excel. It provides an interactive and versatile way to calculate, summarize, and examine data. [Learn more about the analysis mode](/dynamics365/business-central/analysis-mode) in the business functionality help.
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
