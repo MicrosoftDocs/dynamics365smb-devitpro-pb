@@ -20,7 +20,7 @@ Get an overview of new and upcoming changes in the [Dynamics 365 release plans](
 
 ## Global availability
 
-[!INCLUDE[prod_short](includes/prod_short.md)] online is available in many markets, and new countries go live on a quarterly basis. For more information, see [Countries and Translations Supported](compliance/apptest-countries-and-translations.md).  
+[!INCLUDE[prod_short](includes/prod_short.md)] online is available in many markets, and new countries/regions go live on a quarterly basis. For more information, see [Countries/regions and Translations Supported](compliance/apptest-countries-and-translations.md).  
 
 For a visual overview of where [!INCLUDE [prod_short](includes/prod_short.md)] online is deployed, see the [Geographical availability](https://dynamics.microsoft.com/availability-reports/georeport/) site.  
 
@@ -53,9 +53,6 @@ Administrators can also use the [!INCLUDE [prod_short](includes/prod_short.md)] 
 ### High availability through geographical redundancy
 
 Each [!INCLUDE [prod_short](includes/prod_short.md)] environment is also protected by automatic geo-redundant backups. If a region experiences a full outage, Azure restores your data from the backup in another Azure region within the same Azure geography. Although it's rare, recovering data into another Azure region is a fully automated internal procedure that we practice regularly. It's a standard part of our internal audits and disaster recovery drills. To learn more about backups, go to [Automated backups in Azure SQL Database](/azure/azure-sql/database/automated-backups-overview).
-
-> [!IMPORTANT]
-> In 2023 release wave 1, [!INCLUDE [prod_short](includes/prod_short.md)] is gradually enabling support for Azure availability zones in some regions. Several regions are already enabled with the minor updates, and existing customers who upgrade to the latest version will benefit from this capability. We'll continue to gradually enable availability zones in the remaining regions in upcoming minor updates.
 
 [Azure availability zones](/azure/reliability/availability-zones-overview) provide extra resilience by offering physically separate data centers within an Azure region. Distributing resources across multiple availability zones achieves high availability for the compute and storage resources for [!INCLUDE [prod_short](includes/prod_short.md)]. During local failures or planned maintenance in one or more zones, tenants in the available zones aren't affected. Other tenants are automatically redirected to resources in the available zones in the same region. This option is enabled for all [!INCLUDE [prod_short](includes/prod_short.md)] production environments with paid [!INCLUDE [prod_short](includes/prod_short.md)] subscriptions.  
 
@@ -91,7 +88,7 @@ Microsoft regularly ships feature updates to the underlying service and targeted
 
 However, even with these safeguards, live site incidents can and do happen. Live site incidents can be divided into several categories:
 
-* Dependent-service issues, such as Azure Active Directory (Azure AD), Azure SQL, Storage, virtual machine scale set, Service Fabric, and so on  
+* Dependent-service issues, such as Microsoft Entra ID, Azure SQL, Storage, virtual machine scale set, Service Fabric, and so on  
 
 * Infrastructure outage, such as a hardware failure or data center failure  
 

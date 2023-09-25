@@ -1,13 +1,13 @@
 ---
 title: "Temporary tables"
 description: Learn about temporary tables in Business Central 
-ms.custom: na
+ms.custom: bap-template
 ms.date: 02/24/2023
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.author: solsen
 ---
 
 # Temporary tables
@@ -29,7 +29,7 @@ The advantage of using a temporary table is that all the interaction with a temp
 
 When you want to do many operations on the data in a specific database table, you can load the data into a temporary table when you modify it. Loading the data into a temporary table speeds up the process because all the operations are done in memory on the [!INCLUDE[server](includes/server.md)].
 
-For endpoint performance and temporary tables, see [Anti-patterns (don't do this)](../performance/performance-developer.md#anti-patterns-dont-do-this).
+For endpoint performance and temporary tables, see [Anti-patterns (don't do this)](../performance/performance-developer.md#general-anti-patterns-dont-do-this).
 
 ## Creating and using a temporary table
 

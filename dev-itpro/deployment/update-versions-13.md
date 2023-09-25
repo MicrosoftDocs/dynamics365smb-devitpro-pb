@@ -27,7 +27,7 @@ We recommend that you install the latest cumulative update.
 
 ## Available updates for Business Central October 2018
 
-The following table lists the cumulative updates that have been released for the October'18 release of Business Central (version 13). The cumulative updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
+The following table lists the cumulative updates that have been released for the October'18 release of Business Central (version 13). The cumulative updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
@@ -58,7 +58,7 @@ The following table lists the cumulative updates that have been released for the
 [Resources for Help and Support](../help-and-support.md)  
 [System Requirements](system-requirement-business-central.md)  
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
-[Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
+[Countries/regions and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
 [Dynamics NAV developer and ITpro content](/dynamics-nav/index)

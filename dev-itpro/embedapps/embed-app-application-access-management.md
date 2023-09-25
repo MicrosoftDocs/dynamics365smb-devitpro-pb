@@ -34,7 +34,7 @@ Follow these steps to provide your VARs with access to the Application Access Ma
 
 - Prepare the VAR for the change
 
-    Once you enable application access management in your LCS project, any existing customers already using your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] will be blocked from access to their [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environments by default. It also won't be possible to create new environments based on your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] application for any new or existing customers. The VAR will have to explicitly enable the access for each customer by using the API explained in the section below. Make sure you coordinate this change with your VARs.
+    Once you enable application access management in your LCS project, any existing customers already using your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] will be blocked from access to their [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environments and will be unable to create new [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environments if the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] has not already been enabled on their tenant. Make sure to  coordinate enabling the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] on customer tenants with your VARs before you enable the application access management setting in your LCS project.
 
 - Get the VAR's CSP organizational ID (Microsoft ID). You'll need this ID for registration.
 
@@ -47,7 +47,7 @@ Follow these steps to provide your VARs with access to the Application Access Ma
 3. On the **Manage VARs access** page, specify if VARs must be able to approve customers.
 
     > [!IMPORTANT]
-    > This step enables application access management. Once you have allowed VARs to approve customers, it won't take effect until you save the change. Be aware that once you save, any existing VAR customers already using your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and any new customers will be blocked from access by default, until the VAR explicitly enables the app for them.
+    > This step enables application access management. Once you have allowed VARs to approve customers, it won't take effect until you save the change. Be aware that once you save, any existing VAR customers already using your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] without previously enabling this on their tenant and any new customers will be blocked from access by default, until the VAR explicitly enables the app for them. We recommend that you enable your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] on your customer tenants before you enable application access management in LCS.
 
 4. Now you start to register VARs. Select **+Add**.
 5. On the **Register new VAR Tenant**, enter the VAR's Microsoft ID in the **Tenant ID** box.
@@ -68,11 +68,11 @@ In your LCS project, you can specify that VARs can or cannot approve customers w
 
 As a VAR, once you've been registered by your ISV, you must explicitly give every customer access to create [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environments. Access is given by using the application access management API. The required steps are outlined in the sections that follow.
 
-### Prerequisite: Register an application for in your Azure Active Directory tenant
+### Prerequisite: Register an application for in your Microsoft Entra tenant
 
-You only have to do this step once. In your Azure Active Directory (Azure AD) tenant, register an application that has delegated permission to the Dynamics 365 Business Central API. You'll use this application to call the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration Center API for each customer that you want to onboard.
+You only have to do this step once. In your Microsoft Entra tenant, register an application that has delegated permission to the Dynamics 365 Business Central API. You'll use this application to call the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration Center API for each customer that you want to onboard.
 
-Apart from registering an application, you'll also need an access token. For more information, see [Setting up Azure Active Directory (AAD) based authentication](../administration/administration-center-api.md#azuread) and [Getting an access token](../administration/administration-center-api.md#getting-an-access-token-with-client-credentials-flow).
+Apart from registering an application, you'll also need an access token. For more information, see [Setting up Microsoft Entra ID based authentication](../administration/administration-center-api.md#azuread) and [Getting an access token](../administration/administration-center-api.md#getting-an-access-token-with-client-credentials-flow).
 
 ### Onboarding customers
 
@@ -91,10 +91,10 @@ With application access management enabled, the typical process for getting cust
 
     For more information, see [Application Access Management API](embed-app-application-access-management-api.md). The article explains the API calls that you can make to get the list of the available [!INCLUDE[embedapp](../developer/includes/embedapp.md)]s and enable or disable a specific [!INCLUDE[embedapp](../developer/includes/embedapp.md)] for the customer.
 
-    This work is done using your AAD application and delegated admin access and credentials.
+    This work is done using your Microsoft Entra application and delegated admin access and credentials.
 3. Create the first [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environment for the customer by signing in to it for the first time, using the branded [!INCLUDE[embedapp](../developer/includes/embedapp.md)] URL:
 
-    `https://[application family].bc.dynamics.com/[Customer Azure Active Directory Tenant ID]/Production`
+    `https://[application family].bc.dynamics.com/[Customer Microsoft Entra tenant ID]/Production`
 
 ## See Also
 

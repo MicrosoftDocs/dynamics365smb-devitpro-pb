@@ -37,7 +37,7 @@ When you deploy the [!INCLUDE[webserver](../developer/includes/webserver.md)] in
   
 Host names for the [!INCLUDE[webserver](../developer/includes/webserver.md)] can now be used. If a tenant's mounted with a host name as an alternative ID, the [!INCLUDE[webserver](../developer/includes/webserver.md)] will accept a URL that contains this host name to identify the tenant.  
   
-If you create a non-tenant specific app for SharePoint that accesses the [!INCLUDE[webserver](../developer/includes/webserver.md)] by using Microsoft Azure Active Directory, the resulting URL includes a parameter that specifies a SharePoint host URL. This parameter represents the URL for opening the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] that you've specified in the app manifest. You must enable a URL rewrite rule to accept the URL.  
+If you create a non-tenant specific app for SharePoint that accesses the [!INCLUDE[webserver](../developer/includes/webserver.md)] by using Microsoft Microsoft Entra ID, the resulting URL includes a parameter that specifies a SharePoint host URL. This parameter represents the URL for opening the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] that you've specified in the app manifest. You must enable a URL rewrite rule to accept the URL.  
   
 ## See Also
 

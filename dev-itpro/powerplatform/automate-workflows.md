@@ -15,7 +15,7 @@ ms.search.keywords: workflow, OData, Power Automate, Get adaptive card (v3), Get
 
 [!INCLUDE [online_only](../developer/includes/online_only.md)]
 
-This article explains how you set up [!INCLUDE[prod_short](../includes/prod_short.md)] online to run Power Automate flows when an event happens in [!INCLUDE [prod_short](../includes/prod_short.md)].  
+This article explains how you can set up [!INCLUDE[prod_short](../includes/prod_short.md)] online to run Power Automate flows when an event happens in [!INCLUDE [prod_short](../includes/prod_short.md)].  
 
 > [!NOTE]  
 > To use Power Automate with [!INCLUDE[prod_short](../includes/prod_short.md)], you must have a valid Power Automate account.
@@ -37,7 +37,7 @@ The connector​ seamlessly connects data and gives you the option to include **
 
 ## Create an automated flow from scratch
 
-This procedure outlines that steps required to create an automated flow using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. To illustrate the process, it walks you through a basic example of a flow that sends a message to a Teams group chat when a new customer is created or modified in [!INCLUDE[prod_short](../includes/prod_short.md)]. The message contains a card that shows some information about the customer and a **Details** button that opens even more information about the customer. The card is the same as the card displayed in Teams when you manually [share a record to Teams](/dynamics365/business-central/across-working-with-teams) from inside Business Central.
+This procedure outlines the steps required to create an automated flow using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. To illustrate the process, it walks you through a basic example of a flow that sends a message to a Teams group chat when a new customer is created or modified in [!INCLUDE[prod_short](../includes/prod_short.md)]. The message contains a card that shows some information about the customer and a **Details** button that opens even more information about the customer. The card is the same as the one displayed in Teams when you manually [share a record to Teams](/dynamics365/business-central/across-working-with-teams) from inside Business Central.
 
 The following figure illustrates the flow that you create.
 
@@ -45,8 +45,8 @@ The following figure illustrates the flow that you create.
 
 Complete the following steps:
 
-1. Sign in to [Power Automate](https://powerautomate.com) or from a page in [!INCLUDE[prod_short](../includes/prod_short.md)], select the actions **Automate**> **Power Automate** > **Manage Flows**.
-2. In the left side, select **Create**, then choose to create by starting from blank or starting from connector:
+1. Sign in to [Power Automate](https://powerautomate.com) or select the actions **Automate**> **Power Automate** > **Manage Flows** from a page in [!INCLUDE[prod_short](../includes/prod_short.md)].
+2. On the left side, select **Create**, then choose to create by starting from blank or starting from connector:
 
    # [Starting from blank](#tab/blank)
    1. Under **Starting from blank**, select **Automated cloud flow**.
@@ -67,7 +67,7 @@ Complete the following steps:
 
    :::image type="content" source="../developer/media/power-automate-when-record-is created-trigger.png" alt-text="Shows the trigger called when a record is created (V3) in Power Automate.":::
 
-3. Fill in the parameters to specify what the flow pertains to. The parameters and whether they're required depends on the trigger.
+3. Fill in the parameters to specify what the flow relates to. The parameters and whether they're required depend on the trigger.
 
     :::image type="content" source="../developer/media/power-automate-when-record-is created-trigger-example.png" alt-text="Shows the filled-in trigger called when a record is created (V3) in Power Automate.":::
 

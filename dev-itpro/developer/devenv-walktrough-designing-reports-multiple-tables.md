@@ -1,7 +1,8 @@
 ---
-title: "Walkthrough: Designing a Report from Multiple Tables"
+title: "Walkthrough: Designing a report from multiple tables"
 ms.custom: na
-ms.date: 04/01/2021
+ms.author: solsen
+ms.date: 09/04/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,11 +10,11 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# Walkthrough: Designing a Report from Multiple Tables
+# Walkthrough: Designing an RDL report from multiple tables
 
 A report object is composed of a report dataset and a visual layout. You design a report by first defining the dataset and then designing the visual layout. You define the dataset for reports directly in AL code. You can design the layout in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder for an RDL layout, in Microsoft Word for a Word layout, and in Microsoft Excel for an Excel layout. After you design a report, you can make it available to applications that are running on the [!INCLUDE[webclient](includes/webclient.md)]. A report can be designed from one table or multiple tables. This walkthrough demonstrates how to design a report from multiple tables.  
 
-## About This Walkthrough
+## About this walkthrough
 
 This walkthrough shows you how to design a report from the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] and using Visual Studio Report Designer for designing an RDL layout.  
 
@@ -53,7 +54,7 @@ The following illustration shows an example of the second page of the report.
 
 ![Completed report.](media/MicrosoftDynamicsNAV_MultiDataSetReport.jpg "MicrosoftDynamicsNAV\_MultiDataSetReport")  
 
-## Defining the Dataset
+## Defining the dataset
 
 Viktor starts by creating an empty report object by using the AL Language extension in Visual Studio Code. You can use the shortcut `treport` to create the basic layout for a report object.
 
@@ -61,13 +62,13 @@ Viktor sets the [DefaultLayout Property](properties/devenv-defaultlayout-propert
 
 Viktor will now design the dataset to display customers and their transaction details. This is defined within the `dataset` part of the report object. 
 
-### Adding Data Items and columns
+### Adding data items and columns
  
 The datasets for the data model will come from four tables: `Customer`, `Cust. Ledger Entry`, `Detailed Cust. Ledger Entry`, and `Sales Header`. Viktor will create a data item for each table with the `dataitem` control. Moreover, for each table, fields that need to be added to the report will be added. Each field is given by a `column` control, defined inside the corresponding data item.
 
 The hierarchy of the `dataitem` and `column` controls is important because it will determine the sequence in which data items are linked, which in turn will control the results. Working from top-to-bottom, you start by adding the `dataitem` control for first table that you want in the dataset, then add column controls for each table field that you want to include in the dataset. For the next table, you add another `dataitem` control that is embedded within the first `dataitem` control, then add column controls as needed. You continue this pattern for more tables and fields.
 
-### Defining Properties for the Data Items
+### Defining properties for the data items
 
 Once, Viktor has specified the data item and column elements, the appropriate properties will be defined. Viktor sets the [DataItemTableView Property](properties/devenv-dataitemtableview-property.md) in each data item to sort the table view based on a specific field. 
 
@@ -83,7 +84,7 @@ For each of the `column` controls, Viktor adds the [IncludeCaption Property](pro
 Finally, Viktor sets the [PrintOnlyIfDetail Property](properties/devenv-printonlyifdetail-property.md) to **True** on a data item to print data only if at least one of its child data items generates output.
 
 
-## Adding Labels to the Report
+## Adding labels to the report
 
 Viktor will now add labels to the report. You define the labels in the `label` part of the report. These labels will be used later as captions.  
 
@@ -643,7 +644,7 @@ The next step is to add the data from the **Sales Header** table.
 
 4.  Save the report.  
 
-## Building and Running the Report  
+## Building and running the report  
 
 Viktor will run the report to view how it looks like. For this, do the following steps:
 

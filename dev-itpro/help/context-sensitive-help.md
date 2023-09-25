@@ -1,14 +1,14 @@
 ---
-title: Configure Context-Sensitive Help
-description: Learn about how to add context-sensitive Help to your Business Central solution, both as an app publisher, an administrator, and as a developer.
+title: Configure context-sensitive help
+description: Learn about how to add context-sensitive help to your Business Central solution, both as an app publisher, an administrator, and as a developer.
 author: SusanneWindfeldPedersen
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
-ms.date: 10/24/2022
+ms.date: 09/01/2023
 ---
 
-# Configure Context-Sensitive Help
+# Configure context-sensitive help
 
 A key pillar of helping users help themselves is to give them access to Help for the particular part of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that they're working in. When you build an app for [!INCLUDE [prod_short](../includes/prod_short.md)] online, we expect you to provide Help for your solution that can be accessed from the *Learn more* links on tooltips. For more information, see [Help users learn more](../user-assistance.md#help-users-learn-more).  
 
@@ -90,29 +90,47 @@ pageextension 50104 "Customer Card Ext" extends "Customer Card"
 }
 ```
 
-You can use the [ContextSensitiveHelpPage property](../developer/properties/devenv-contextsensitivehelppage-property.md) to direct Help calls from multiple page objects or actions to the same article. For example, Microsoft has chosen to group the context-sensitive links depending on the granularity of the Help for specific area in the base application. If the Help for a specific area is made more granular, then the context-sensitive Help mapping is updated accordingly.
+Starting in Business Central 2023 release wave 1, version 22, you can set the *ContextSensitiveHelpPage* property on report request pages, which will in turn show the report help link in the Help pane:
 
-Your target website is expected to have a default page that will display if no other page is appropriate. For every page where *ContextSensitiveHelpPage* isn't set, this default Help page will be shown.  
+```AL
+report 50105 MyReport
+{
+    ...
 
-For page extensions, the value of the *ContextSensitiveHelpPage* property will apply only to the controls that the page extension adds to the extended page objects. For example, if your page extension adds two new controls to the base application's Customer Card page, then the *Learn more* links in the tooltips for those two controls will go to the Help page that you've specified. The *Learn more* links in the rest of the controls will go to the default Help that is specified in the base application. This way, multiple apps can extend the same page object and each apply their own content-sensitive Help link without overwriting the context-sensitive links for other apps.  
+    requestpage
+    {
+    ...
 
-> [!NOTE]
+    // This property defines the help page for this report.
+    // Remember to also set contextSensitiveHelpUrl in the app.json
+    ContextSensitiveHelpPage = 'business-central/sales-reports';
+    }
+}
+```
+
+You can use the [ContextSensitiveHelpPage property](../developer/properties/devenv-contextsensitivehelppage-property.md) to direct help calls from multiple page objects or actions to the same article. For example, Microsoft has chosen to group the context-sensitive links depending on the granularity of the help for specific area in the base application. If the help for a specific area is made more granular, then the context-sensitive help mapping is updated accordingly.
+
+Your target website is expected to have a default page that will display if no other page is appropriate. For every page where *ContextSensitiveHelpPage* isn't set, this default help page will be shown.  
+
+For page extensions, the value of the *ContextSensitiveHelpPage* property will apply only to the controls that the page extension adds to the extended page objects. For example, if your page extension adds two new controls to the base application's Customer Card page, then the *Learn more* links in the tooltips for those two controls will go to the help page that you've specified. The *Learn more* links in the rest of the controls will go to the default help that is specified in the base application. This way, multiple apps can extend the same page object and each apply their own content-sensitive help link without overwriting the context-sensitive links for other apps.  
+
+> [!NOTE]  
 > The app.json file also contains a *help* property that is used by AppSource to specify the link that describes the app or solution.  
 
-## UI-to-Help mapping for the base application
+## UI-to-help mapping for the base application
 
-In the current version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the context-sensitive links to Help for the base application is based on a different UI-to-Help mapping that is stored in table 2000000198 **Page Documentation**. In this table, all page objects in the default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are listed, and have a target Help article associated with each of them. Multiple page objects can be associated with the same Help article, such as when a specific workflow involves multiple pages.  
+In the current version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the context-sensitive links to help for the base application is based on a different UI-to-help mapping that is stored in table 2000000198 **Page Documentation**. In this table, all page objects in the default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are listed, and have a target help article associated with each of them. Multiple page objects can be associated with the same help article, such as when a specific workflow involves multiple pages.  
 
-The base URL to the location of the target articles that are listed in table 2000000198 **Page Documentation** is specified at the app level as [/dynamics365/business-central/](/dynamics365/business-central/). In an extension, you can overrule this URL so that all calls for Help go to your site instead. This is especially important for localization apps where all context-sensitive Help calls for that app's language must go to the provider's website. For more information, see [Configuring the Help Experience](../deployment/configure-help.md).  
+The base URL to the location of the target articles that are listed in table 2000000198 **Page Documentation** is specified at the app level as [/dynamics365/business-central/](/dynamics365/business-central/). In an extension, you can overrule this URL so that all calls for help go to your site instead. This is especially important for localization apps where all context-sensitive help calls for that app's language must go to the provider's website. For more information, see [Configuring the Help Experience](../deployment/configure-help.md).  
 
-### Adding page-level UI-to-Help mapping to the system table
+### Adding page-level UI-to-help mapping to the system table
 
-You can run a script that populates the **Page Documentation** table with a mapping for Microsoft's page objects and your own page objects. This is useful if you want to reuse legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help for your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises deployment.  
+You can run a script that populates the **Page Documentation** table with a mapping for Microsoft's page objects and your own page objects. This is useful if you want to reuse legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] help for your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises deployment.  
 
 > [!CAUTION]
-> While it is possible to reuse the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] legacy Help with the legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help Server, and to populate the system table, **Page Documentation**, we recommend that you convert any existing content to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] format, and that you fork our GitHub repos. For more information, see [Contribute to the Help for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](contributor-guide.md) and [Migrate Legacy Help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Format](../upgrade/migrate-help.md).  
+> While it is possible to reuse the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] legacy help with the legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] help server, and to populate the system table, **Page Documentation**, we recommend that you convert any existing content to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] format, and that you fork our GitHub repos. For more information, see [Contribute to the Help for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](contributor-guide.md) and [Migrate Legacy Help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Format](../upgrade/migrate-help.md).  
 
-In the following example, you have chosen not to apply context-sensitive Help links to your page objects and instead you want to overwrite the UI-to-Help mapping that Microsoft has made in the system table.  
+In the following example, you have chosen not to apply context-sensitive help links to your page objects and instead you want to overwrite the UI-to-help mapping that Microsoft has made in the system table.  
 
 Let's assume that the current mapping is:
 
@@ -121,7 +139,7 @@ Let's assume that the current mapping is:
 |4     |Payment Terms |W1              |sales-manage-sales|
 |11300 |Financial Journal  |BE         |how-to-create-financial-journals |
 
-You want to replace the values of the fields in the **Relative Path** column with classic page-level Help files:
+You want to replace the values of the fields in the **Relative Path** column with classic page-level help files:
 
 |Page ID  |Page Name  |Region/Country  |Relative Path  |
 |---------|-----------|----------------|---------------|

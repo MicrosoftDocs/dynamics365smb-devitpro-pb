@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
-ms.date: 08/18/2022
+ms.date: 07/07/2023
 ms.author: jswymer
 ---
 
@@ -42,9 +42,10 @@ The following table describes the milestones with example dates for the two rele
 |Last scheduled update date|June 1 |December 1|The last date you can choose to extend your upgrade date to. <!--</br>Starting with 2023 release wave 2, the update window is again 30 days after an update is available, which makes these two dates May 1 and November 1, respectively.-->|
 
 > [!IMPORTANT]
-> The update window was temporarily extended during the CoViD-19 pandemic and throughout 2022 release wave 2 and 2023 release wave 1. In 2022 release wave 2 and 2023 release wave 1, the update window remains *60 days*. Based on feedback, we're currently evaluating the best longer-term processes for major updates and update windows. We expect that on October 1, 2023, when we release 2023 release wave 2, new policies will be in place that could include a return to an update window that again is *30 days* after an update is available.
+> For 2023 release wave 2, the update window remains 60 days. Based on feedback, we're currently evaluating longer-term processes for major updates and update windows. New policies might be updated at a later stage, which can include a return to a update window that again is 30 days after an update is available.
 >
-> We recommend that you keep any apps and per-tenant extensions ready for upgrade at any given time, and that you actively test compatibility. We encourage everyone to use the time until October 1, 2023, to get apps, per-tenant extensions, and processes ready for a shorter update window.  
+>We recommend that you keep any apps and per-tenant extensions ready for upgrade at any given time, and that you actively test compatibility. We encourage everyone to use the time needed to get apps, per-tenant extensions, and processes ready for a shorter update window.
+  
 
 > [!TIP]
 > There are many benefits to keeping code current and staying on top of updates. Microsoft and members of the community continue to provide more and more tools and best practices to help.
@@ -209,6 +210,7 @@ These updates do not add or remove functionality, and they are transparent to bu
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)
+[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+[What's new or changed in Business Central](../whatsnew/overview.md)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

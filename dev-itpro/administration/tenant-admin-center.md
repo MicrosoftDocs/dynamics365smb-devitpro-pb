@@ -23,15 +23,11 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 
 ## Access to the administration center
 
-The following users are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]:
+Users with the following Microsoft Entra roles are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]:
 
-- Internal tenant administrators
-- Admin agent
-- Helpdesk agent
-
-*Internal administrators* are users who are assigned the **Global admin** role or the **Dynamics 365 Admin** role in the Microsoft 365 admin center. These users are typically system administrators, IT professionals, or super users at the customer's company. For more information, see [About admin roles](/office365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
-
-The *admin agent* and *helpdesk agent* roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner that is associated with the tenant. These roles can access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant as *delegated administrators*. For more information, see [Administration of Business Central Online](tenant-administration.md).  
+- Global Administrator
+- Dynamics 365 Administrator
+- Helpdesk Administrator (Delegated users only)
 
 ## Internal administrators
 
@@ -67,11 +63,11 @@ If your organization decides to switch to another partner, you must make sure th
     1. In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment, and then, in the top menu, choose **Application Insights Key**.
     2. Remove the value of the **Instrumentation Key**
 
-- Authorized Azure Active Directory Apps (if this was set up by the partner)
+- Authorized Microsoft Entra apps (if this was set up by the partner)
 
-    1. In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], navigate to 'Authorized AAD Apps' and remove any apps authorized by the partner.
-    2. Revoke consent granted to the AAD App belonging to the partner from your AAD Tenant. For more information, [see here](/azure/active-directory/manage-apps/manage-application-permissions).
-    3. Removed apps may have additional permissions assigned to execute certain administration operations, such as the **D365 BACKUP/RESTORE** permission. Any apps set up with permissions in Business Central can be disabled from the **Azure Active Directory Applications** page. For more information, [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
+    1. In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], navigate to 'Authorized Microsoft Entra apps' and remove any apps authorized by the partner.
+    2. Revoke consent granted to the Microsoft Entra app belonging to the partner from your Microsoft Entra tenant. For more information, [see here](/azure/active-directory/manage-apps/manage-application-permissions).
+    3. Removed apps may have additional permissions assigned to execute certain administration operations, such as the **D365 BACKUP/RESTORE** permission. Any apps set up with permissions in Business Central can be disabled from the **Microsoft Entra applications** page. For more information, [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
 When you establish a relationship with a new partner, they will fill in these fields again.
 

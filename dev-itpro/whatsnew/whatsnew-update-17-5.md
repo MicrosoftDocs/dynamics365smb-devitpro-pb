@@ -20,9 +20,9 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/off
 
 ## Localization updates 
 
-| Country| Feature change |
+| Country/region| Feature change |
 |-------------|--------------|
-Netherlands | Intrastat support for Partner VAT ID and Country of Origin|
+Netherlands | Intrastat support for Partner VAT ID and Country/region of Origin|
 |Spain | Support for using Sales Invoice as substitution type in Immediate Supply of Information (SII) |
 Spain | Support for delivery of goods and services in the same foreign customer document in Immediate Supply of Information (SII) |
 Germany | Support of two new ciphers in preliminary VAT Return/Advance notification (kz37 and kz50)

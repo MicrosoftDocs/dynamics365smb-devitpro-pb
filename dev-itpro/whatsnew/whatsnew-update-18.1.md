@@ -30,7 +30,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/top
 
 ## Localization updates 
 
-| Country| Feature change |
+| Country/region| Feature change |
 |-------------|--------------|
 |Canada and US | Updates for Include Tax with partial shipping and prepayment credit memo|
 |Italy | Changes in withholding tax declaration 2021 |
