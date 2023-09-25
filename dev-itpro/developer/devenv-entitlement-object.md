@@ -183,7 +183,6 @@ procedure CheckingForEntitlementsUsingPermissions()
 
 ## Entitlement example - Microsoft Entra group
 
-<!-- check -->
 An example of an entitlement where `Type` is `Group`. This supports scenarios when a user has to have access to the AppSource app with transact support and no need to buy a developer license. The `id` property is the object ID of the Microsoft Entra group. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 ```al

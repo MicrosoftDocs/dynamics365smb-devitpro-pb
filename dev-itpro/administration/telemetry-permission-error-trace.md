@@ -36,7 +36,7 @@ Occurs when a user gets a permissions-related error message in Business Central 
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**RT0031**|
-|aadTenantId|The Azure Active Directory (Azure AD) tenant ID that's used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|The Microsoft Entra tenant ID that's used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|If there's no value or the value is 0, then the permission error wasn't related to a specific object, which typically happens when `permissionArea` is something other than `Object`. |
 |alObjectType|The type of the AL object that the user was trying to access, like a table or page. |
 |clientType|The type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|

@@ -8,6 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
+description: Learn how to use the DestinationAppsForMigration setting in Business Central Server for upgrading from C/AL to AL extensions. Detailed guide and FAQs included.
 ---
 
 # DestinationAppsForMigration

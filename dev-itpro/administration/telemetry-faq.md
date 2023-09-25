@@ -40,6 +40,14 @@ See an overview at [Telemetry overview](telemetry-overview.md).
 
 [!INCLUDE[telemetryEventDistribution](../includes/include-telemetry-event-distribution.md)]
 
+## Why do I see _1, _2 in custom dimensions?
+
+Each event has a `customDimensions` column that includes a set of dimensions containing metrics specific to the event. Each of these custom dimensions has a limit of 8000 characters. When logging an event with a dimension exceeding 8000 characters, the  [!INCLUDE[server](../developer/includes/server.md)] adds more overflow dimension keys to the event to contain the excess characters. There can be up to two extra overflow dimension keys, each with a maximum 8000 characters. The overflow dimension keys are named  `<dimension_key_name>_1` and `<dimension_key_name>_2`, where `<dimension_key>` is the name of the original dimension key. So if the custom dimension key is `extensionCompilationDependencyList`, then the overflow dimension keys would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
+
+> [!NOTE]
+> The 8000 character limit is governed by the [Application Insights API](/azure/azure-monitor/app/api-custom-events-metrics#limits).
+
+
 ## Should each customer/app have their own Application Insights resource, rather than one insight for multiple customers/apps?
 
 Partitioning of [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources across multiple customers or apps depends on what you use telemetry for. The benefit of having a one-to-one relationship between customers/apps and [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources is that you can also use the Usage features in the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] portal to monitor how a particular customer is using [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. And you can set up and share the Power BI app with the customer directly without having to fear that one customer can see data from another customer. It also makes it easy to separate the cost of telemetry per customer/app. Downside of a one-to-one relationship between customers/apps and [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources is that you have more Azure resources to manage, including any cross-customer alerting/monitoring you might want to set up.
