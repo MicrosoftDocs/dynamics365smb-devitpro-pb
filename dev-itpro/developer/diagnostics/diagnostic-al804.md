@@ -1,9 +1,9 @@
 ---
-title: "Compiler Warning (Future Error) AL0758"
-description: "The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'."
+title: "Compiler Warning (Future Error) AL0804"
+description: "You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 09/06/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,18 +13,18 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning (Future Error) AL0758
+# Compiler Warning (Future Error) AL0804
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Please choose another name for one of them. Otherwise, this might cause runtime issues.
+You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'.
 
 
 > [!IMPORTANT]
 > This warning will become an error with Business Central 2024 release wave 1.  
 
 ## Description
- Whitespaces in names are internally replaced with an underscore during compilation, such that two different names can collide.  
+You cannot reference an element defined in a page customization outside the page customization declaring it.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

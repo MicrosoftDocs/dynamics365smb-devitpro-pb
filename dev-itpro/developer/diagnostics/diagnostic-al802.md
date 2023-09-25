@@ -1,9 +1,9 @@
 ---
-title: "Compiler Error AL0754"
-description: "The '{0}' already defines a built-in member called '{1}'."
+title: "Compiler Error AL0802"
+description: "The parameter '{0}' cannot be of type 'SecretText'."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/26/2023
+ms.date: 09/06/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,15 +13,15 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0754
+# Compiler Error AL0802
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The '{0}' already defines a built-in member called '{1}'. Choose another name for {2} '{1}', or it might cause runtime issues.
+The parameter '{0}' cannot be of type 'SecretText'.
 
 
 ## Description
-A built-in member with the same name is already defined for the object, which can cause runtime errors.  
+Parameters of type 'SecretText' are not allowed on control add-in procedures to prevent leakage of confidential values to the browser.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
