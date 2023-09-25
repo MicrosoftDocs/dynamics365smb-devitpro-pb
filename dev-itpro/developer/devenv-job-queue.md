@@ -74,15 +74,29 @@ You can set up Business Central to send telemetry traces to an Application Insig
 
 [Enable Sending Telemetry to Application Insights](../administration/telemetry-enable-application-insights.md) 
 
-[Analyzing Task Scheduler Telemetry](../administration/telemetry-task-scheduler-trace.md)
+#### Job queue telemetry
+
+[!INCLUDE[job_queue_telemetry](../includes/include-telemetry-job-queue.md)]
+
+[!INCLUDE[job_queue_telemetry_events](../includes/include-telemetry-job-queue-events.md)]
+
+For more information about job queue telemetry, see [Analyzing Job Queue Telemetry](../administration/telemetry-job-queue-lifecycle-trace.md)
+
+#### Task scheduler telemetry
+
+[!INCLUDE[task_scheduler_telemetry](../includes/include-telemetry-task-scheduler.md)]
+
+For more information about task scheduler telemetry, see [Analyzing Task Scheduler Telemetry](../administration/telemetry-task-scheduler-trace.md)
 
 ### Session Event Table
 
 From the Business Central web client, you can open the Session Events table by adding `table=2000000111` to the URL. For example: [https://businesscentral.dynamics.com/?table=2000000111](https://businesscentral.dynamics.com/?table=2000000111).
 
 ## See Also
-
-[Task Scheduler](devenv-task-scheduler.md).
+[Use Job Queues to Schedule Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks)   
+[Analyzing Job Queue Telemetry](../administration/telemetry-job-queue-lifecycle-trace.md)   
+[Task Scheduler](devenv-task-scheduler.md)   
 [Task Scheduler Data Type](methods-auto/taskscheduler/taskscheduler-data-type.md)   
+[Analyzing Task Scheduler Telemetry](../administration/telemetry-task-scheduler-trace.md)
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md) 

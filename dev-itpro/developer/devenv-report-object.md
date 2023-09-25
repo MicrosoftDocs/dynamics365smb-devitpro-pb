@@ -255,8 +255,8 @@ It's possible to schedule a report to run at your desired date and time by using
 
 [Report Extension Object](devenv-report-ext-object.md)  
 [Using request pages with reports](devenv-request-pages-for-reports.md)  
-[Report datatype](developer/methods-auto/report/report-data-type.md)   
-[Report Properties](../developer/properties/devenv-report-properties.md)  
+[Report datatype](methods-auto/report/report-data-type.md)  
+[Report Properties](properties/devenv-report-properties.md)  
 [How users can schedule a report](/dynamics365/business-central/ui-work-report#ScheduleReport.md)  
 [AllowScheduling Property](../developer/properties/devenv-allowscheduling-property.md)   
 [Defining a Report Dataset](devenv-report-dataset.md)  

@@ -146,6 +146,14 @@ Starting with Business Central 2023 release wave 1 (version 22), you can set the
 
 For more information about configuring context-sensitive help, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md). 
 
+## Request page and preview triggers and operations
+
+The following diagram illustrates the main trigger and operation sequence related to request page invocation and button actions. 
+
+[![Report trigger main flow.](media/report-trigger-main-flow.png)](media/report-trigger-main-flow.png#lightbox)
+
+For a more detailed discussion on these concepts, see [Report triggers and operations](devenv-report-triggers.md#requestpage)
+
 ## See Also
 
 [Report Object](devenv-report-object.md)  
@@ -163,3 +171,4 @@ For more information about configuring context-sensitive help, see [Configure Co
 [RequestFilterHeadingML Property](properties/devenv-requestfilterheadingml-property.md)  
 [RequestFilterFields Property](properties/devenv-requestfilterfields-property.md)  
 [DataItemTableView](properties/devenv-dataitemtableview-property.md)  
+[Request page triggers and operations](devenv-report-triggers.md)   
