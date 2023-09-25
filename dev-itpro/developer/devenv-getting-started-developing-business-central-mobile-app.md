@@ -7,6 +7,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.collection: get-started
+description: Learn how to develop for the Dynamics 365 Business Central Mobile App with this comprehensive guide. Includes design tips, best practices, and deployment steps.
 ---
 # Getting Started Developing for the Dynamics 365 Business Central Mobile App
 The [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] are built on the same framework as the [!INCLUDE[nav_web](includes/nav_web_md.md)], such that they are all based on the same [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] pages. Developing for [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] is not much different from developing pages for [!INCLUDE[nav_web](includes/nav_web_md.md)] either, since it is also done from the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)].  

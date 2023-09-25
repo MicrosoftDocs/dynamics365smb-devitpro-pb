@@ -22,7 +22,7 @@ Each environment can be divided into multiple companies, where each company defi
 
 - As data per company continues to grow, the more companies you have per environment, the longer data upgrades and schema syncs will take when your environment is updated, making it more difficult to schedule and fit an upgrade in an overnight update window.
 
-- Configuring user access at the company level is more complex than doing it at the environment level, which can be done using the standard Azure Active Directory (Azure AD) features.
+- Configuring user access at the company level is more complex than doing it at the environment level, which can be done using the standard Microsoft Entra ID features.
 
 - To reproduce and debug some issues, you'll need to copy your production environment into your sandbox environment. Consequently, the more companies you have per environment, the longer this will take, which increases the time to mitigate those issues.
 
