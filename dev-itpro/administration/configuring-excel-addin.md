@@ -60,7 +60,7 @@ When the add-in is installed, it shows up as a panel in Excel. Next, you must co
 
 1. In the Dynamics 365 Excel add-in, choose **Add server information**, and then in the **Server URL** field, enter `https://exceladdinprovider.smb.dynamics.com`.
 2. Choose the OK button, and then confirm that the app reloads.
-3. When prompted, sign in with your Azure Active Directory account.
+3. When prompted, sign in with your Microsoft Entra account.
 4. Optionally, choose the environment and company that you want to connect to.
 
 The add-in is now connected to your [!INCLUDE [prod_short](../developer/includes/prod_short.md)], and you can edit data and publish the changes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
@@ -87,15 +87,15 @@ Sometimes, users run into problems with the Excel add-in. In this section, we pr
 
 Your on-premises deployment must meet the following prerequisites:
 
-- Azure Active Directory (Azure AD) used to authenticate users.
+- Microsoft Entra ID used to authenticate users.
 
-  The [!INCLUDE[server](../developer/includes/server.md)] instance, clients, and users must be configured for Azure Active Directory (Azure AD) authentication, including OData.
+  The [!INCLUDE[server](../developer/includes/server.md)] instance, clients, and users must be configured for Microsoft Entra authentication, including OData.
 
-  - For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (v20) and later, go to [Configure Azure Active Directory Authentication with OpenID Connect](Authenticating-Users-with-Azure-ad-openid-connect.md).
+  - For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (v20) and later, go to [Configure Microsoft Entra authentication with OpenID Connect](Authenticating-Users-with-Azure-ad-openid-connect.md).
 
        > [!IMPORTANT]
        > Be sure to set `WSFederationLoginEndpoint` parameter of [!INCLUDE[server](../developer/includes/server.md)] instance. Otherwise, you'll get an error that the realm is not defined when trying to edit data using **Edit in Excel**.
-  - For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 (v19) and earlier, go to [Configure Azure Active Directory Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
+  - For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 (v19) and earlier, go to [Configure Microsoft Entra authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
 - OData enabled and uses Secure Sockets Layer (SSL) for authentication.
 
    For more information, go to [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).  
@@ -112,15 +112,15 @@ Your on-premises deployment must meet the following prerequisites:
 
    For more information, go to [System Requirements](../deployment/System-Requirement-business-central.md#WebClient).
 
-## Expose the Business Central application Web API in Azure AD
+## Expose the Business Central application Web API in Microsoft Entra ID
 
-When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Azure AD authentication, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application is registered as an application in an Azure AD. Before the Excel add-in can be configured, you must configure the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Azure AD to expose its Web API.
+When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Microsoft Entra authentication, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application is registered as an application in a Microsoft Entra ID. Before the Excel add-in can be configured, you must configure the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Microsoft Entra ID to expose its Web API.
 
 > [!NOTE]
-> The API may have already been exposed as part of the Azure AD authentication setup. You can also use the following steps to verify.
+> The API may have already been exposed as part of the Microsoft Entra authentication setup. You can also use the following steps to verify.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Search for and select **Azure Active Directory**.
+2. Search for and select **Microsoft Entra ID**.
 3. Under **Manage**, select **App registrations**, then select the app registration for Business Central authentication. 
 4. Under **Manage**, select **Expose API**.
 5. On the **Expose API** page, if the **Application ID URI** box is filled out, then API is already exposed, so you don't have to do anything else. Otherwise, select **Set** to expose the API.
@@ -129,10 +129,10 @@ For information about how to expose the Web API, go to [Quickstart: Configure an
 
 ## Register and configure an application in Microsoft Azure
 
-When Azure AD authentication was set up for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment, an Azure AD tenant was created in Microsoft Azure, and an application for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] was registered in the tenant. The Excel add-in requires that you add (register) a separate Azure AD application in the Azure AD tenant. For more guidelines, go to [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
+When Microsoft Entra authentication was set up for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment, a Microsoft Entra tenant was created in Microsoft Azure, and an application for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] was registered in the tenant. The Excel add-in requires that you add (register) a separate Microsoft Entra application in the Microsoft Entra tenant. For more guidelines, go to [Register your application with your Microsoft Entra tenant](/azure/active-directory/active-directory-app-registration).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Search for and select **Azure Active Directory**.
+2. Search for and select **Microsoft Entra ID**.
 3. Under **Manage**, select **App registrations** > **New registration**.
 4. On the **Register an application** page, fill in the following information, then select **Register**.:
 
@@ -168,7 +168,7 @@ When Azure AD authentication was set up for your [!INCLUDE[prod_short](../develo
 
 6. Grant the Excel add-in application permission to access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application Web API.
 
-    Give the Azure AD application for the Excel add-in delegated permission to access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application Web API, which you exposed earlier in this article. This permission allows users of the Excel add-in to access the OData web services to read and write data.  
+    Give the Microsoft Entra application for the Excel add-in delegated permission to access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application Web API, which you exposed earlier in this article. This permission allows users of the Excel add-in to access the OData web services to read and write data.  
 
     1. From the application's **Overview** page, select **API Permissions**.
     2. Select the **Add a permission**
@@ -212,7 +212,7 @@ You've completed the work you have to do in the Azure portal. The next configura
 
 You add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.md)] instances in your deployment. You can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or  [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
-1. In the [!INCLUDE[admintool](../developer/includes/admintool.md)], in the **Azure Active Directory** section, set the **Excel add-in AAD client ID** field to the application (client) ID for the Excel add-in application that you copied from the Azure portal.
+1. In the [!INCLUDE[admintool](../developer/includes/admintool.md)], in the **Microsoft Entra ID** section, set the **Excel add-in Microsoft Entra ID client ID** field to the application (client) ID for the Excel add-in application that you copied from the Azure portal.
 
    If you're using the Set-NAVServerConfiguration cmdlet, set the `ExcelAddInAzureActiveDirectoryClientId` key.
 
@@ -221,7 +221,7 @@ You add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.m
     ```
 
    > [!NOTE]
-   > Make sure the  **Azure AD App ID URI** is set to the App ID URI of the registered app for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Azure AD tenant.
+   > Make sure the  **Microsoft Entra app ID URI** is set to the App ID URI of the registered app for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Microsoft Entra tenant.
 
 2. In the **Client Services** section, set the **Web Client Base URL** field to the base URL of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 
@@ -293,4 +293,4 @@ Your users can now use the Excel add-in. When a list page shows the **Edit in Ex
 ## See Also
 
 [Configuring Business Central Server](configure-server-instance.md)  
-[Authenticating Users with Azure Active Directory](Authenticating-Users-with-Azure-Active-Directory.md)  
+[Authenticating Users with Microsoft Entra ID](Authenticating-Users-with-Azure-Active-Directory.md)  
