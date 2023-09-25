@@ -238,7 +238,7 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
                   end;
                 end;
         
-                // If there are no Azure AD Plans, loop through Azure AD Roles
+                // If there are no Microsoft Entra ID Plans, loop through Microsoft Entra roles
                 /* if not HaveAssignedPlans then
                   foreach DirectoryRole in Graph.GetUserRoles(GraphUser) do begin
                     Evaluate(IsSystemRole,Format(DirectoryRole.IsSystem));

@@ -83,6 +83,7 @@ The **Edit in Excel** feature uses UI pages exposed through OData, which means t
 
 [!INCLUDE[report_performance](../includes/include-report-performance.md)]
 
+For more information on how to use telemetry to analyze the performance of reports, see [Report performance](../developer/devenv-report-performance.md)
 
 ### Loading data efficiently to Power BI
 
@@ -334,6 +335,7 @@ Some tips for avoiding locking:
 -	If possible, limit transaction size (divide into smaller operations that can be committed)
 -	Make sure you have indexes on ranges you update
 -	Locking is much less of an issue if you have a logical separation across companies
+-	Set record instance isolation level on transactions to isolate them from other transactions to prevent problems in concurrent situations. [Learn more about record instance isolation level](../developer/devenv-read-isolation.md).  
 
 #### Database locking caused by web service calls
 
