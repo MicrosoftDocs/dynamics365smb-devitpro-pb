@@ -24,7 +24,7 @@ The following table shows the main difference between basic authentication with 
 |-----|-----------------------------------------|-------|
 | User | Linked to an interactive user account| Supports both interactive and non-interactive accounts|
 | License | Always needs a licensed user | No license required for service-to-service integrations |
-| Security server | Business Central manages security | Security managed by Azure Active Directory |
+| Security server | Business Central manages security | Security managed by Microsoft Entra ID |
 | Multi-factor authentication | No multi-factor authentication support | Fully supports multi-factor authentication |
 | Secret validity | Password exposed in HTTP request (no expiration date) | HTTP requests contain a short-lived access token |
 

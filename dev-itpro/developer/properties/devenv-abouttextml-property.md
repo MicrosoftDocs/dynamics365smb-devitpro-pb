@@ -3,7 +3,7 @@ title: "AboutTextML Property"
 description: "Sets the body of text that appears in a teaching tip in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/04/2022
+ms.date: 09/06/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Sets the body of text that appears in a teaching tip in the UI.
 
 ## Applies to
 -   Page Custom Action
+-   Query
 -   Page
 -   Page Action
 -   Page Action Group
@@ -43,7 +44,8 @@ AboutTextML = ENU = 'Sales invoices appear in this list until they are finalized
 ## Remarks 
 
 For more information, see the [AboutText Property](devenv-abouttext-property.md). 
-For more information about designing teaching tips and tours, see [Teaching tips and in-app tours for onboarding users](../../administration/onboarding-teaching-tips-tours.md).
+
+[!INCLUDE[aboutTeachingTips](../includes/include-about-teaching-tips.md)]
 
 ## See Also  
 

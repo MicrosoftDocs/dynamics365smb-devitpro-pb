@@ -1,13 +1,12 @@
 ---
 title: Deprecated Features in the Base App
-description: describes the features that have been moved, removed, or replaced in the W1 version 
-author: bholtorf
-ms.custom: na
-ms.date: 12/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+description: Describes the features that have been moved, removed, or replaced in the W1 version. 
+author: brentholtorf
+ms.author: bholtorf
+ms.date: 08/23/2023
+ms.reviewer: jswymer
 ms.topic: conceptual
+ms.custom: bap-template
 ---
 
 # Deprecated Features in the Base App
@@ -30,7 +29,7 @@ The following features are marked as `obsolete:pending` in 2023 release wave 1.
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced | User groups let administrators manage permissions for groups of users who have the same or similar roles in the business. For example, you might create a user group for your sales department, and one for your purchasers. To make it a bit easier for administrators to manage permissions, we're replacing user groups and adding the ability to group users directly on permission sets. On the **Permission Sets** page, use the **Users** FactBox to assign the set to users.<br><br> To make it easier to reuse sets of users across other Dynamics 365 apps, we've also introduced optional security groups. Administrators can link [!INCLUDE [prod_short](../includes/prod_short.md)] security groups to their counterparts in Azure Active Directory or Windows Active Directory. The link let's administrators manage group memberships in Active Directory. In terms of managing permissions, security groups work in the same way as user groups. To learn more about the new security groups, go to [Control Access Using Security Groups](/dynamics365/business-central/ui-security-groups).  |
+|Replaced | User groups let administrators manage permissions for groups of users who have the same or similar roles in the business. For example, you might create a user group for your sales department, and one for your purchasers. To make it a bit easier for administrators to manage permissions, we're replacing user groups and adding the ability to group users directly on permission sets. On the **Permission Sets** page, use the **Users** FactBox to assign the set to users.<br><br> To make it easier to reuse sets of users across other Dynamics 365 apps, we've also introduced optional security groups. Administrators can link [!INCLUDE [prod_short](../includes/prod_short.md)] security groups to their counterparts in Microsoft Entra ID or Windows Active Directory. The link let's administrators manage group memberships in Active Directory. In terms of managing permissions, security groups work in the same way as user groups. To learn more about the new security groups, go to [Control Access Using Security Groups](/dynamics365/business-central/ui-security-groups).<br><br>If you have an extension that relies on user groups, and you'd like to explore examples of how to update it to use permission sets or [!INCLUDE [prod_short](../developer/includes/prod_short.md)] security groups, go to [Migrate from User Groups to Permission Sets or Security Groups](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-user-groups). |
 
 ## Changes in 2022 release wave 2
 
@@ -45,6 +44,12 @@ The following features are marked as `obsolete:pending` in 2023 release wave 1.
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced | The SharePoint connection setup feature used for OneDrive integration is obsolete and will be removed in 2023 release wave 2 (version 23). In its place, version 21 offers a new guided setup to configure OneDrive integration for system and application features. Learn more about the new setup at [Managing OneDrive Integration with Business Central](/dynamics365/business-central/admin-onedrive-integration).<br><br>The deprecation means that the  **Microsoft SharePoint Connection Setup** page (9551 Document Service Config) is marked as `obsolete:pending`. However, the platform APIs (in codeunit 9510 Document Service Management) and the document service table that make the legacy functionality possible aren't being deprecated. So any partner solutions that use the APIs directly are unaffected by this change.<br><br>Existing customers who are upgrading to version 21, and eventually version 22, can continue to use the legacy SharePoint/Onedrive integration. But we highly recommend that you transition them to the newer OneDrive integration because it's the path going forward. Switching to the newer OneDrive integration setup is a one-way operation, meaning you can't revert to the legacy setup after you've made the switch.<br><br> We aspire to resume work on SharePoint integration at a later date.|
+
+### Bank Reconciliation Worksheet and Deposits in North American versions (US, CA, MX)
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced | We're standardizing the features for reconciling bank accounts and making cash deposits, so that more country versions can benefit from them. For more information, see [Standardizing the bank reconciliation process in North American versions](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/standardizing-bank-reconciliation-process-north-american-versions). The current features will still allow you to view posted bank reconciliations done through the Bank Rec. Worksheet page, and posted deposits done through the Deposits features, but you can't use these features to create new entries. In October 2023, you must use the Bank Reconciliation page for bank reconciliations. The Bank Rec. Worksheet page won't be available.|
 
 ## Changes in 2022 release wave 1
 
@@ -61,12 +66,6 @@ The following feature is marked as `obsolete:pending` in 2022 release wave 1.
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced | We have consolidated settings for setting up intercompany capabilities on a single page, and have added a new feature for automatically accepting intercompany transactions in general journals. The current **Intercompany Setup** page (page 621) is replaced with a new **Intercompany Setup** page (page 653). |
-
-### Bank Reconciliation Worksheet and Deposits in North American versions (US, CA, MX)
-
-|Moved, Removed, or Replaced? |    Why?|
-|-----------------------------|-----|
-|Replaced | We're standardizing the features for reconciling bank accounts and making cash deposits, so that more country versions can benefit from them. For more information, see [Standardizing the bank reconciliation process in North American versions](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/standardizing-bank-reconciliation-process-north-american-versions). The current features will still allow you to view posted bank reconciliations done through the Bank Rec. Worksheet page, and posted deposits done through the Deposits features, but you can't use these features to create new entries. In April 2023, you must use the Bank Reconciliation page for bank reconciliations. The Bank Rec. Worksheet page won't be available.|
 
 ## Changes in 2021 release wave 2
 

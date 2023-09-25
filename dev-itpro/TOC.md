@@ -69,6 +69,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 22.5](whatsnew/whatsnew-update-22-5.md)
 ### [Update 22.4](whatsnew/whatsnew-update-22-4.md)
 ### [Update 22.3](whatsnew/whatsnew-update-22-3.md)
 ### [Update 22.2](whatsnew/whatsnew-update-22-2.md)
@@ -160,13 +161,13 @@
 ### [Rename environments](administration/tenant-admin-center-environments-rename.md)
 ### [Export databases](administration/tenant-admin-center-database-export.md)
 ### [Restore an environment](administration/tenant-admin-center-backup-restore.md)
-### [Move an environment to another Azure Active Directory organization](administration/tenant-admin-center-environments-move.md)
+### [Move an environment to another Microsoft Entra organization](administration/tenant-admin-center-environments-move.md)
 ### [Delete environments](administration/tenant-admin-center-environments-delete.md)
 ### [Environment telemetry](administration/tenant-admin-center-telemetry.md)
 ### Admin Center API
 #### [Overview](administration/administration-center-api.md)
 #### [App management](administration/administration-center-api_app_management.md)
-#### [Authorized Azure AD apps](administration/administration-center-api_authorizedaadapps.md)
+#### [Authorized Microsoft Entra apps](administration/administration-center-api_authorizedaadapps.md)
 #### [Available applications](administration/administration-center-api_available_applications.md)
 #### [Environments](administration/administration-center-api_environments.md)
 #### [Environment database export](administration/administration-center-api_environment_database_export.md)
@@ -267,6 +268,7 @@
 <!-- support-->
 ## Manage technical support
 ### [Manage technical support overview](administration/manage-technical-support.md)
+### [Troubleshooting tools and guides](developer/devenv-troubleshooting-overview.md)
 ### [Escalate support issues to Microsoft](administration/raise-support-case.md)
 ### [Report customer outages](administration/report-outage.md)
 ### [Report a performance issue](administration/report-performance-issue.md)
@@ -349,45 +351,6 @@
 #### [Delete table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_delete.md)
 #### [Create table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_create.md)
 #### [Update table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_update.md)
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-## Finance Reports API
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-### [Accounting period](administration/financereportsapi/resources/dynamics_accountingperiod.md)
-#### [Get accounting period](administration/financereportsapi/api/dynamics_accountingperiod_get.md)
-### [Business unit](administration/financereportsapi/resources/dynamics_businessunit.md)
-#### [Get business unit](administration/financereportsapi/api/dynamics_businessunit_get.md)
-### [Company](administration/financereportsapi/resources/dynamics_company.md)
-#### [Get company](administration/financereportsapi/api/dynamics_company_get.md)
-### [Customer](administration/financereportsapi/resources/dynamics_customer.md)
-#### [Get customer](administration/financereportsapi/api/dynamics_customer_get.md)
-### [Customer ledger entry](administration/financereportsapi/resources/dynamics_customerledgerentry.md)
-#### [Get customer ledger entry](administration/financereportsapi/api/dynamics_customerledgerentry_get.md)
-### [Detailed customer ledger entry](administration/financereportsapi/resources/dynamics_detailedcustomerledgerentry.md)
-#### [Get detailed customer ledger entry](administration/financereportsapi/api/dynamics_detailedcustomerledgerentry_get.md)
-### [Detailed vendor ledger entry](administration/financereportsapi/resources/dynamics_detailedvendorledgerentry.md)
-#### [Get detailed vendor ledger entry](administration/financereportsapi/api/dynamics_detailedvendorledgerentry_get.md)
-### [Dimension set entry](administration/financereportsapi/resources/dynamics_dimensionsetentry.md)
-#### [Get dimension set entry](administration/financereportsapi/api/dynamics_dimensionsetentry_get.md)
-### [Dimension value](administration/financereportsapi/resources/dynamics_dimensionvalue.md)
-#### [Get dimension value](administration/financereportsapi/api/dynamics_dimensionvalue_get.md)
-### [General budget entry](administration/financereportsapi/resources/dynamics_generalbudgetentry.md)
-#### [Get general budget entry](administration/financereportsapi/api/dynamics_generalbudgetentry_get.md)
-### [General ledger account](administration/financereportsapi/resources/dynamics_generalledgeraccount.md)
-#### [Get general ledger account](administration/financereportsapi/api/dynamics_generalledgeraccount_get.md)
-### [General ledger budgets](administration/financereportsapi/resources/dynamics_generalledgerbudgets.md)
-#### [Get general ledger budgets](administration/financereportsapi/api/dynamics_generalledgerbudgets_get.md)
-### [General ledger entry](administration/financereportsapi/resources/dynamics_generalledgerentry.md)
-#### [Get general ledger entry](administration/financereportsapi/api/dynamics_generalledgerentry_get.md)
-### [Subscriptions](administration/financereportsapi/resources/dynamics_subscriptions.md)
-#### [Get subscriptions](administration/financereportsapi/api/dynamics_subscriptions_get.md)
-#### [Delete subscriptions](administration/financereportsapi/api/dynamics_subscriptions_delete.md)
-#### [Create subscriptions](administration/financereportsapi/api/dynamics_subscriptions_create.md)
-#### [Update subscriptions](administration/financereportsapi/api/dynamics_subscriptions_update.md)
-### [Vendor](administration/financereportsapi/resources/dynamics_vendor.md)
-#### [Get vendor](administration/financereportsapi/api/dynamics_vendor_get.md)
-### [Vendor ledger entry](administration/financereportsapi/resources/dynamics_vendorledgerentry.md)
-#### [Get vendor ledger entry](administration/financereportsapi/api/dynamics_vendorledgerentry_get.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 <!--migrate to BC online-->
@@ -495,9 +458,10 @@
 #### [Snapshot debugging](developer/devenv-snapshot-debugging.md)
 #### [Debug upgrade and install code](developer/devenv-debug-upgrade-install-code.md)
 #### [AL Profiler](developer/devenv-al-profiler-overview.md)
+#### [Troubleshoot in VS Code directly from the web client](developer/devenv-troubleshoot-vscode-webclient.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 #### [Sign an app package file](developer/devenv-sign-extension.md)
-#### [Using Azure AD authentication for Business Central on-premises installations](developer/devenv-aad-auth-onprem.md)
+#### [Using Microsoft Entra authentication for Business Central on-premises installations](developer/devenv-aad-auth-onprem.md)
 
 ### Testing
 #### [Overview](developer/devenv-testing-application.md)
@@ -689,7 +653,7 @@
 ##### [XMLport object](developer/devenv-xmlport-object.md)
 ##### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)  
 ##### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
-##### [Request pages](developer/devenv-request-pages.md)
+##### [Using request pages with XMLports](developer/devenv-request-pages.md)
 ### Pages and user interfaces
 #### [Customizing for user roles](developer/devenv-role-customization.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
@@ -739,6 +703,7 @@
 ##### [Field groups](developer/devenv-field-groups.md)
 ##### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate methods](developer/devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
 ##### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
+##### [Rich Text and content controls](developer/devenv-richtext-content-controls.md)
 #### Actions
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding actions to a page](developer/devenv-adding-actions-to-a-page.md)
@@ -769,14 +734,32 @@
 ##### [Opening the Business Central tablet or phone client from a browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ##### [Example: Developing a sales rep role center for the tablet client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
 
-### Permissions and permission sets
-#### [Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
-#### [Composing permission sets](developer/devenv-permissionset-composing.md)
-#### [Permissionset object](developer/devenv-permissionset-object.md)
-#### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
-#### [Permissions on database objects](developer/devenv-permissions-on-database-objects.md)
-#### [Inherent permissions](developer/devenv-inherent-permissions.md)
-#### [Exporting permission sets to XML](developer/devenv-export-permission-sets.md)
+
+### Developing reports
+#### [Overview](developer/devenv-reports.md)
+#### [Report design overview](developer/devenv-report-design-overview.md)
+#### [Report object](developer/devenv-report-object.md)
+#### [Report extension object](developer/devenv-report-ext-object.md)
+#### [Report extension example](developer/devenv-report-ext-example.md)
+#### [Report datatype](developer/methods-auto/report/report-data-type.md)
+#### [Defining a report dataset](developer/devenv-report-dataset.md)
+#### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
+#### [Using request pages with reports](developer/devenv-request-pages-for-reports.md)
+#### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
+#### Report layouts
+##### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
+##### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
+##### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)  
+##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
+##### [Defining a custom report render](developer/devenv-report-custom-render.md)
+##### [Adding barcodes to report layouts](developer/devenv-report-add-barcodes.md)
+#### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
+#### [Report triggers and operations](developer/devenv-report-triggers.md)
+#### [Substituting a report](developer/devenv-substituting-reports.md)
+#### [Testing a report](developer/devenv-testing-reports.md)
+#### [Report performance](developer/devenv-report-performance.md)
+#### [Report telemetry](administration/telemetry-reports-trace.md)
+
 
 ### [Events](developer/devenv-events-in-al.md)
 #### [Event types](developer/devenv-event-types.md)
@@ -793,39 +776,27 @@
 #### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
 -->
 
-### Developing reports
-#### [Overview](developer/devenv-reports.md)
-#### [Report design overview](developer/devenv-report-design-overview.md)
-#### [Report object](developer/devenv-report-object.md)
-#### [Report extension object](developer/devenv-report-ext-object.md)
-#### [Report extension example](developer/devenv-report-ext-example.md)
-#### [Defining a report dataset](developer/devenv-report-dataset.md)
-#### [Request pages](developer/devenv-request-pages.md)
-#### [Report triggers and operations](developer/devenv-report-triggers.md)
-#### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
-#### [Substituting a report](developer/devenv-substituting-reports.md)
-#### [Testing a report](developer/devenv-testing-reports.md)
-#### Report layouts
-##### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
-##### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
-##### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)  
-##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
-##### [Defining a custom report render](developer/devenv-report-custom-render.md)
-#### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
-#### [Adding barcodes](developer/devenv-report-add-barcodes.md)
-#### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
-
-### Handling security
+### [Handling security overview](security/security-application.md)
 #### [Permission sets and entitlements overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 #### [Permissionset object](developer/devenv-permissionset-object.md)
 #### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
+#### [Composing permission sets](developer/devenv-permissionset-composing.md)
 #### [Permissions on database objects](developer/devenv-permissions-on-database-objects.md)
 #### [Inherent permissions](developer/devenv-inherent-permissions.md)
 #### [Exporting permission sets to XML](developer/devenv-export-permission-sets.md)
+#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
 #### [Entitlement object](developer/devenv-entitlement-object.md)
+#### Permissions telemetry
+##### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
+##### [Permission dependency cycle telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
+##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
+#### Permissions APIs
+##### [Permission set](administration/resources/dynamics_permissionset.md)
+##### [Get permission set](administration/api/dynamics_permissionset_get.md)
 
 ### Running things in the background
 #### [Page background tasks](developer/devenv-page-background-tasks.md)
+
 
 ### Developing APIs
 #### [Overview](developer/devenv-api.md)
@@ -874,8 +845,10 @@
 #### [UICop analyzer rules](developer/analyzers/uicop.md)
 ### [Isolated storage](developer/devenv-isolated-storage.md)
 ### [File handling and text encoding](developer/devenv-file-handling-and-text-encoding.md)
-### [Flowfields](developer/devenv-flowfields.md)
-### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### FlowFields and FlowFilters
+#### [FlowFields overview](developer/devenv-flowfields.md)
+#### [FlowFilters overview](developer/devenv-flowfilter-overview.md)
+#### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
 ### Nonclustered Columnstore Indexes (NCCI)
 #### [NCCI overview](developer/devenv-ncci-overview.md)
 #### [NCCI and SQL server](developer/devenv-ncci-and-sql-server.md)
@@ -969,21 +942,34 @@
 #### [Serializing .NET Framework types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 
 ## Extensibility
+### [Extensibility overview](developer/devenv-extensibility-overview.md)
+### Extending AL objects
+#### [Extending application areas](developer/devenv-extending-application-areas.md)
+#### [Extending enumerations](developer/devenv-extensible-enums.md)
+#### [Extending code flows with events](developer/devenv-event-types.md)
+#### [Extending pages](developer/devenv-page-ext-object.md)
+#### [Extending reports](developer/devenv-report-ext-object.md)
+#### [Extending security model](developer/devenv-permissionset-ext-object.md)
+#### [Extending tables](developer/devenv-table-ext-object.md)
+### Extending the system application
+#### [System application reference](/dynamics365/business-central/application/system-application)
+#### [Contributing to the Business Central open source system application](https://github.com/microsoft/ALAppExtensions/blob/main/CONTRIBUTING.md)
+#### [Get started creating or modifying modules](developer/devenv-getting-started.md)
 ### Extending the base application
-#### [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
+#### [Base application reference](/dynamics365/business-central/application/base-application)
 #### [The Microsoft_Application.app file](developer/devenv-application-app-file.md)
 #### [Publishing a code-customized base application](developer/devenv-publish-code-customization.md)
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
-#### Examples
-##### [Extending item charge distribution methods](developer/devenv-extending-item-charges.md)
-##### [Extending price calculations](developer/devenv-extending-best-price-calculations.md)
-##### [Extending pages previously based on the Date virtual table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
-##### [Extending data archiving](developer/devenv-data-archive-extension.md)
-##### [Extending document sharing and OneDrive integration](developer/devenv-extending-document-sharing-onedrive.md)
-##### [Extending customer, vendor, and item templates](developer/devenv-extending-templates.md)
-##### [Extending email capabilities](developer/devenv-extending-email.md)
-##### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
-##### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
+### Examples
+#### [Extending item charge distribution methods](developer/devenv-extending-item-charges.md)
+#### [Extending price calculations](developer/devenv-extending-best-price-calculations.md)
+#### [Extending pages previously based on the Date virtual table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
+#### [Extending data archiving](developer/devenv-data-archive-extension.md)
+#### [Extending document sharing and OneDrive integration](developer/devenv-extending-document-sharing-onedrive.md)
+#### [Extending customer, vendor, and item templates](developer/devenv-extending-templates.md)
+#### [Extending email capabilities](developer/devenv-extending-email.md)
+#### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
+#### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
 
 ### Using events 
 #### [Event types](developer/devenv-event-types.md)
@@ -1040,7 +1026,7 @@
 ##### [Performance developer guide](performance/performance-developer.md)
 ##### [Analyzing performance](performance/performance-work-perf-problem.md)
 #### Security
-##### [Application security](security/security-application.md)
+##### [Layered security model](security/security-application.md)
 ##### [Data security](security/data-security.md)
 ##### [Using key vaults for secrets](developer/devenv-app-key-vault-overview.md)
 <!-- end Rules and Guidelines -->
@@ -1141,9 +1127,17 @@
 #### [Overview](administration/telemetry-overview.md)
 #### [Available telemetry](administration/telemetry-available-telemetry.md) 
 #### [Enabling telemetry](administration/telemetry-enable-application-insights.md)
-#### [Using Jupyter notebook troubleshooting guides](https://aka.ms/bctelemetrysamples)
-#### [Using Power BI troubleshooting reports](https://aka.ms/bctelemetrysamples)
+#### [Analyze telemetry with Power BI](administration/telemetry-power-bi-app.md)
+#### [Analyze telemetry with KQL](administration/telemetry-analyze-with-kql.md)
+#### [Alert on telemetry](administration/telemetry-alert.md)
 #### [Using telemetry to investigate performance issues](performance/performance-work-perf-problem.md)
+### Troubleshooting guides (TSGs)
+#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
+#### [Troubleshooting OData calls](webservices/dynamics-error-codes.md)
+#### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
+#### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
+##### [Troubleshooting cloud migration setup](administration/migration-setup-troubleshooting.md)
+##### [Troubleshooting data replication](administration/migration-data-replication-troubleshooting.md)
 
 ## [AL language reference](developer/index.md)
 <!-- end AL -->
@@ -1214,6 +1208,47 @@
 #### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
+
+#### Finance reports API
+<!-- START>DO_NOT_EDIT -->
+<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+##### [Accounting period](administration/financereportsapi/resources/dynamics_accountingperiod.md)
+###### [Get accounting period](administration/financereportsapi/api/dynamics_accountingperiod_get.md)
+##### [Business unit](administration/financereportsapi/resources/dynamics_businessunit.md)
+###### [Get business unit](administration/financereportsapi/api/dynamics_businessunit_get.md)
+##### [Company](administration/financereportsapi/resources/dynamics_company.md)
+###### [Get company](administration/financereportsapi/api/dynamics_company_get.md)
+##### [Customer](administration/financereportsapi/resources/dynamics_customer.md)
+###### [Get customer](administration/financereportsapi/api/dynamics_customer_get.md)
+##### [Customer ledger entry](administration/financereportsapi/resources/dynamics_customerledgerentry.md)
+###### [Get customer ledger entry](administration/financereportsapi/api/dynamics_customerledgerentry_get.md)
+##### [Detailed customer ledger entry](administration/financereportsapi/resources/dynamics_detailedcustomerledgerentry.md)
+###### [Get detailed customer ledger entry](administration/financereportsapi/api/dynamics_detailedcustomerledgerentry_get.md)
+##### [Detailed vendor ledger entry](administration/financereportsapi/resources/dynamics_detailedvendorledgerentry.md)
+###### [Get detailed vendor ledger entry](administration/financereportsapi/api/dynamics_detailedvendorledgerentry_get.md)
+##### [Dimension set entry](administration/financereportsapi/resources/dynamics_dimensionsetentry.md)
+###### [Get dimension set entry](administration/financereportsapi/api/dynamics_dimensionsetentry_get.md)
+##### [Dimension value](administration/financereportsapi/resources/dynamics_dimensionvalue.md)
+###### [Get dimension value](administration/financereportsapi/api/dynamics_dimensionvalue_get.md)
+##### [General budget entry](administration/financereportsapi/resources/dynamics_generalbudgetentry.md)
+###### [Get general budget entry](administration/financereportsapi/api/dynamics_generalbudgetentry_get.md)
+##### [General ledger account](administration/financereportsapi/resources/dynamics_generalledgeraccount.md)
+###### [Get general ledger account](administration/financereportsapi/api/dynamics_generalledgeraccount_get.md)
+##### [General ledger budgets](administration/financereportsapi/resources/dynamics_generalledgerbudgets.md)
+###### [Get general ledger budgets](administration/financereportsapi/api/dynamics_generalledgerbudgets_get.md)
+##### [General ledger entry](administration/financereportsapi/resources/dynamics_generalledgerentry.md)
+###### [Get general ledger entry](administration/financereportsapi/api/dynamics_generalledgerentry_get.md)
+##### [Subscriptions](administration/financereportsapi/resources/dynamics_subscriptions.md)
+###### [Get subscriptions](administration/financereportsapi/api/dynamics_subscriptions_get.md)
+###### [Delete subscriptions](administration/financereportsapi/api/dynamics_subscriptions_delete.md)
+###### [Create subscriptions](administration/financereportsapi/api/dynamics_subscriptions_create.md)
+###### [Update subscriptions](administration/financereportsapi/api/dynamics_subscriptions_update.md)
+##### [Vendor](administration/financereportsapi/resources/dynamics_vendor.md)
+###### [Get vendor](administration/financereportsapi/api/dynamics_vendor_get.md)
+##### [Vendor ledger entry](administration/financereportsapi/resources/dynamics_vendorledgerentry.md)
+###### [Get vendor ledger entry](administration/financereportsapi/api/dynamics_vendorledgerentry_get.md)
+<!-- IMPORTANT: END>DO_NOT_EDIT -->
+
 #### [Automation API](administration/itpro-introduction-to-automation-apis.md)
 #### [Admin Center API](administration/administration-center-api.md)
 #### [Cloud migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
@@ -1332,12 +1367,19 @@
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
-## [Extract data from Business Central](developer/devenv-extract-data.md)
+## [Extract data from Business Central](developer/devenv-extract-data.md)  
 <!-- end integration-->
 <!--deprecated features -->
-# Removed or deprecated features
-## Deprecated features in the application
-### [Deprecated features in the base app](upgrade/deprecated-features-w1.md)  
+# Deprecated features
+## [Microsoft timeline for deprecating code in Business Central](developer/devenv-deprecation-timeline.md)
+## Platform
+### [Overview of deprecated features in the platform](upgrade/deprecated-features-platform.md)  
+## Application  
+### [Overview of deprecated features in the base app](upgrade/deprecated-features-w1.md)  
+### Examples of how to uptake deprecations  
+#### [Migrate from User Groups to Permission Sets or Security Groups](upgrade/deprecated-features-user-groups.md)  
+#### [Migrating from legacy views to modern views](developer/devenv-views-legacy.md)  
+## Local functionality
 ### [Deprecated fields, and fields marked as obsolete in local functionality](upgrade/deprecated-fields.md)
 ### [Deprecated features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated features in the Belgian Version](upgrade/deprecated-features-be.md)
@@ -1355,12 +1397,10 @@
 ### [Deprecated features in the Swiss Version](upgrade/deprecated-features-ch.md)
 ### [Deprecated features in the UK Version](upgrade/deprecated-features-uk.md)
 ### [Deprecated features in the United States Version](upgrade/deprecated-features-us.md)
-## [Deprecated features in the platform](upgrade/deprecated-features-platform.md)  
 ## Deprecated tables
 ### [Deprecated tables](upgrade/deprecated-tables.md)
 ### [Deprecated tables in the India version](upgrade/india-data-migration-list-of-deprecated-tables.md)
-## Deprecated code
-### [Microsoft timeline for deprecating code in Business Central](developer/devenv-deprecation-timeline.md)
+## Deprecating code
 ### [Best practices for deprecation of code in the base app](developer/devenv-deprecation-guidelines.md)
 ### [Deprecating explicit and implicit With statements](developer/devenv-deprecating-with-statements-overview.md)
 <!--end deprecated features -->
@@ -1388,13 +1428,14 @@
 #### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
 #### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
-#### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
-#### [2021 release wave 1 on-premises updates](deployment/update-versions-18.md)
-#### [2020 release wave 2 on-premises updates](deployment/update-versions-17.md)
-#### [2020 release wave 1 on-premises updates](deployment/update-versions-16.md)
-#### [2019 release wave 2 On-premises updates](deployment/update-versions-15.md)
 #### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
-#### [October 2018 on-premises updates](deployment/update-versions-13.md)
+#### Versions no longer updated
+##### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
+##### [2021 release wave 1 on-premises updates](deployment/update-versions-18.md)
+##### [2020 release wave 2 on-premises updates](deployment/update-versions-17.md)
+##### [2020 release wave 1 on-premises updates](deployment/update-versions-16.md)
+##### [2019 release wave 2 On-premises updates](deployment/update-versions-15.md)
+##### [October 2018 on-premises updates](deployment/update-versions-13.md)
 ### [Running a container-based development environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -1447,10 +1488,10 @@
 #### [Development cmdlets for extensions](/powershell/module/microsoft.dynamics.nav.apps.tools)
 ### Configuring user authentication
 #### [Authentication and credential types](administration/users-credential-types.md)
-#### Authenticating with Azure Active Directory
+#### Authenticating with Microsoft Entra ID
 ##### [Overview](administration/authenticating-users-with-azure-ad-overview.md)
-##### [Configure Azure AD authentication with OpenID Connect](administration/authenticating-users-with-azure-ad-openid-connect.md)
-##### [Configure Azure AD authentication with WS-Federation](administration/authenticating-users-with-azure-active-directory.md)
+##### [Configure Microsoft Entra authentication with OpenID Connect](administration/authenticating-users-with-azure-ad-openid-connect.md)
+##### [Configure Microsoft Entra authentication with WS-Federation](administration/authenticating-users-with-azure-active-directory.md)
 #### [Authenticating with NavUserPassword](administration/authenticating-users-with-navuserpassword.md)
 ### [Configuring Business Central server](administration/configure-server-instance.md)
 ### Configuring Business Central web server

@@ -48,9 +48,9 @@ The add-in deployment works with Exchange Online, Exchange Online as part of Mic
 
 The authentication and authorization that can be used will depend on whether you're using Exchange Online or Exchange Server.
 
-- In Exchange Online, standalone or as part of Microsoft 365, EWS uses OAuth2 as an authorization protocol. OAuth2 doesn't share password data but instead uses authorization tokens to prove an identity between consumers and service providers. It allows users to approve one application interacting with another on their behalf without giving away your password. The Business Central add-in for Outlook supports multi-factor authentication if that has been configured in Microsoft 365. With Exchange Online, Business Central must be configured to use Azure Active Directory authentication.
+- In Exchange Online, standalone or as part of Microsoft 365, EWS uses OAuth2 as an authorization protocol. OAuth2 doesn't share password data but instead uses authorization tokens to prove an identity between consumers and service providers. It allows users to approve one application interacting with another on their behalf without giving away your password. The Business Central add-in for Outlook supports multi-factor authentication if that has been configured in Microsoft 365. With Exchange Online, Business Central must be configured to use Microsoft Entra authentication.
 
-- With Exchange Server, EWS and Autodiscover will try to find the local Exchange Server. In this case, Business Central can be configured to use either NavUserPassword or Azure Active Directory authentication.
+- With Exchange Server, EWS and Autodiscover will try to find the local Exchange Server. In this case, Business Central can be configured to use either NavUserPassword or Microsoft Entra authentication.
 
 ## Prepare for deployment
 
@@ -65,9 +65,9 @@ The steps you'll need to go through to prepare for deploying the add-in will dep
 
 2. Prepare Business Central
 
-    - Set up Azure Active Directory (Azure AD) authentication.
+    - Set up Microsoft Entra authentication.
 
-       For more information, see [Authenticating Business Central Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md).
+       For more information, see [Authenticating Business Central Users with Microsoft Entra ID](authenticating-users-with-azure-active-directory.md).
     - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
 
       For more information, see [Configure SSL to Secure the Connection to Web Client](../deployment/configure-ssl-web-client-connection.md).
@@ -87,9 +87,9 @@ The steps you'll need to go through to prepare for deploying the add-in will dep
 
 2. Business Central
 
-    - Set up Azure Active Directory (Azure AD) authentication or NavUserPassword.
+    - Set up Microsoft Entra authentication or NavUserPassword.
 
-      For more information, see [Authenticating Business Central Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md).
+      For more information, see [Authenticating Business Central Users with Microsoft Entra ID](authenticating-users-with-azure-active-directory.md).
     - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
 
       For more information, see [Configure SSL to Secure the Connection to Web Client](../deployment/configure-ssl-web-client-connection.md).
@@ -123,7 +123,7 @@ You can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)]
     Set-NavServerConfiguration -ServerInstance <BC server instance> -Keyname PublicWebBaseUrl -Keyvalue <web client URL>
     ```
 
-3. Set the **Valid Audiences** setting for Azure AD to include the host name of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], which is the web client base URL *without* the port number and server instance, like `https://MyNavWebServer`.
+3. Set the **Valid Audiences** setting for Microsoft Entra ID to include the host name of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], which is the web client base URL *without* the port number and server instance, like `https://MyNavWebServer`.
 
    If you have a multitenant deployment that uses different host names for tenants, like `https://tenant1.cronusinternational.com`, you'll also have to register each host name as a valid audience. There are two ways you can do this:
 
@@ -176,15 +176,15 @@ After you finish, you can always change the deployment in admin center, like ass
 
 ## <a name="automated-individual-deployment"></a>Automated individual deployment
 
-With this deployment option, users install the Business Central add-in for Outlook for themselves only. This deployment option uses a registered application in Azure Active directory with Exchange web service permission, so users don't have to upload the add-ins manually in Outlook. When using the add-in, users don't have to sign in the Business Central because authentication against the Exchange or Microsoft 365 is done using an authentication token.
+With this deployment option, users install the Business Central add-in for Outlook for themselves only. This deployment option uses a registered application in Microsoft Entra ID with Exchange web service permission, so users don't have to upload the add-ins manually in Outlook. When using the add-in, users don't have to sign in the Business Central because authentication against the Exchange or Microsoft 365 is done using an authentication token.
 
-If you've prepared for deployment as described earlier, then as an admin, the only remaining task is to set up an application registration in Azure AD. Then, users can start to install the add-in in Outlook.
+If you've prepared for deployment as described earlier, then as an admin, the only remaining task is to set up an application registration in Microsoft Entra ID. Then, users can start to install the add-in in Outlook.
 
-### Register an application in Azure Active Directory
+### Register an application in Microsoft Entra ID
 
-In the Azure portal, add an application registration for Business Central in your Azure AD tenant. Give the registered app delegated permission to Exchange web service (EWS). After you've added the registered app in Azure AD, set up Business Central to use it by using the **Set up your Azure Active Directory accounts** assisted setup.
+In the Azure portal, add an application registration for Business Central in your Microsoft Entra tenant. Give the registered app delegated permission to Exchange web service (EWS). After you've added the registered app in Microsoft Entra ID, set up Business Central to use it by using the **Set up your Microsoft Entra accounts** assisted setup.
 
-For more information about how to complete this step, see [Registering [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-Premises in Azure AD for Integrating with Other Services](register-app-azure.md).
+For more information about how to complete this step, see [Registering [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-Premises in Microsoft Entra ID for Integrating with Other Services](register-app-azure.md).
 
 ### Get the add-in (users)
 
