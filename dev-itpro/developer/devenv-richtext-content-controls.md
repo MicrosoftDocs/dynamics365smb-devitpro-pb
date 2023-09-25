@@ -4,13 +4,15 @@ description: How to create a functioning Rich Text Editor using ExtendedDataType
 author: damsboemil
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2023
+ms.date: 09/25/2023
 ms.reviewer: solsen
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ---
 
 # Rich Text and content controls
+
+[!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
 
 The Rich Text feature in !INCLUDE [prod_short] is designed to handle multimedia content, such as social media posts, email bodies, quick annotations, file contents, or any field that requires a mix of text, tables, links, and images. It's best suited for cases where the user needs to author, view, or modify unstructured information and requires a moderate amount of space to work comfortably. The rich text control enables rich multimedia content editing. With that you get a multiline textbox with a rich toolbar, corresponding keyboard shortcuts, and the ability to author or paste in pictures, tables, and formatted text. A typical use case of a Rich Text Editor is the email editor. They require significant screen space to function correctly and fill the available horizontal space and stretch vertically up to a limit. The control includes a toolbar and shortcuts for formatting text (for example, for changing the font or font size), making text italic, bold, and more. There's also the option to add tables, images, and hyperlinks.
 The following image shows an example of the Rich Text Editor containing multiple different types of text formatting.
@@ -123,12 +125,6 @@ page 50100 MyPage
 - The `RichContent` value of `ExtendedDataType` can't be set directly on a table field, if you try, you'll get a compiler error.
 - The Rich Text Editor must specify `MultiLine = true`.
 - The placement of the Rich Text Editor must be on a root-level group on the page (that is, a FastTab group), and it must be the only control in that group.
-
-<!-- 
-- The Code pattern that triggers displaying a field as Rich Content
-- How UICop rules help you get it right
-- The (HTML) format of the output data and how to work with it
--->
 
 ## See also
 
