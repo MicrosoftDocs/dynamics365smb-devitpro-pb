@@ -1,6 +1,6 @@
 ---
-title: "InherentPermissions Property"
-description: "Specifies the permissions that are inherently assigned to the given object."
+title: "AnalysisModeEnabled Property"
+description: "Sets a value that specifies whether analysis mode on the page is allowed."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/02/2023
@@ -13,17 +13,12 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# InherentPermissions Property
-> **Version**: _Available or changed with runtime version 11.0._
+# AnalysisModeEnabled Property
+> **Version**: _Available or changed with runtime version 12.0._
 
-Specifies the permissions that are inherently assigned to the given object.
+Sets a value that specifies whether analysis mode on the page is allowed.
 
 ## Applies to
--   Query
--   Report
--   Xml Port
--   Table
--   Codeunit
 -   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
