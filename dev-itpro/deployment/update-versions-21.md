@@ -1,12 +1,12 @@
 ---
-title: "Updates for the Business Central 2022 Release Wave 2 versions"
-description: "Learn about the updates for Dynamics 365 Business Central 2022 Release Wave 2 on-premises deployments."
+title: Updates for the Business Central 2022 Release Wave 2 versions
+description: Learn about the updates for Dynamics 365 Business Central 2022 Release Wave 2 on-premises deployments.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 08/28/2023
+ms.date: 09/24/2023
 ms.custom: bap-template
 ---
 
@@ -28,7 +28,8 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|[5031030](https://support.microsoft.com/help/5031030)|Update 21.11.60137| September 2023|Application Build 21.11 </br>Platform Build 21.0.60119 |
+|[5031950](https://support.microsoft.com/help/5031950)|Update 21.12| October 2023|Application Build 21.12 </br>Platform Build 21.0.60119 |
+|[5031030](https://support.microsoft.com/help/5031030)|Update 21.11| September 2023|Application Build 21.11.60137 </br>Platform Build 21.0.60119 |
 |[5029764](https://support.microsoft.com/help/5029764)|Update 21.10| August 2023|Application Build 21.10.59121 </br>Platform Build 21.0.59030 |
 |[5029056](https://support.microsoft.com/help/5029056)|Update 21.9| July 2023|Application Build 21.9.58412 </br>Platform Build 21.0.58319 |
 |[5027891](https://support.microsoft.com/help/5027891)  |Update 21.8| June 2023|Application Build 21.8.56995 </br>Platform Build 21.0.56953 |
