@@ -1,15 +1,15 @@
 ---
-title: "Snapshot Debugging"
+title: "Snapshot debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/24/2022
+ms.date: 09/13/2023
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Snapshot Debugging
+# Snapshot debugging
 
 > [!NOTE]  
 > With [!INCLUDE[prod_short](includes/prod_short.md)] 17.2 - Snapshot Debugging is available in production cloud environments.

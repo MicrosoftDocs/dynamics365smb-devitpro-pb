@@ -3,7 +3,7 @@ title: "InherentEntitlements Property"
 description: "Specifies the entitlement permissions that are inherently assigned to the given object."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2022
+ms.date: 08/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,12 +19,12 @@ author: SusanneWindfeldPedersen
 Specifies the entitlement permissions that are inherently assigned to the given object.
 
 ## Applies to
--   Table
--   Report
--   Codeunit
--   Xml Port
--   Page
 -   Query
+-   Report
+-   Xml Port
+-   Table
+-   Codeunit
+-   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
