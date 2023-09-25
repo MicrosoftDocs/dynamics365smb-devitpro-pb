@@ -13,8 +13,6 @@ ms.author: jswymer
 
 # Managing Apps
 
-[!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
-
 A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is built as a collection of apps. These apps include Microsoft apps and third-party apps, for example, apps from AppSource. The apps work together to provide customers with a broad set of features to address their various business, market, and industry needs.
 
 Updates are frequently made available for these apps by Microsoft, partners, and ISVs. App updates add new features and fix known problems. To keep your environment up to date and running smoothly, you should check for and install the latest updates regularly.
@@ -64,7 +62,7 @@ The following steps provide the general flow for updating an app.
 5. When the **Available Update Action** column for the app shows **Install update**, select this action to install the new version of the app.
 
     > [!Important]
-    > The update will be applied immediately after you accept the confirmation dialogue. The users can continue working during update installation, but depending on the app changes coming with the update, they may receive a message asking them to log out and login again. It is therefore recommended that you apply the updates outside of working hours.
+    > By default, the update will be applied immediately after you accept the confirmation dialogue. The users can continue working during update installation, but depending on the app changes coming with the update, they may receive a message asking them to log out and login again. It is therefore recommended that you apply the updates outside of working hours. Tick the "Schedule update in the next update window" box in the confirmation dialogue when installing an app update to start the update during the next [update window](../tenant-admin-center-update-management#set-the-update-window-for-each-environment).
 
 6. Wait for the app to be installed.
 
@@ -99,9 +97,19 @@ The **Install requirements** category lists dependency apps that haven't been in
 
 You can't, however, install a new app from the **Manage App** page. Use the **Extension Management** page in the client instead. Completing this step will resolve the requirement. For more information, see [Installing an Extension](/dynamics365/business-central/ui-extensions#installing-an-extension).
 
+## Update installed apps with environment updates
+Installed apps will always update when the environment updates to a new major or minor version if the app update is required for the Business Central version the environment is updating to, for example when the app developer has indicated that the installed version of the app is not compatible with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version your environment is updating to. Additionally, all apps update to the latest version when an environment updates to a new major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+
+Administrators can control whether apps installed on the environment should be updated when [!INCLUDE[prod_short](../developer/includes/prod_short.md)] updates to a new minor version by using the **Apps Update Cadence** setting in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] on the Environment Details page by setting the cadence to **With minor and major updates**.
+
+   > [!TIP]
+   > By default, the **Apps Update Cadence** setting is set to **'Default'** on all environments. Currently this means that apps installed on an environment will only automatically update with major updates (unless an app update is required for the environment to update to a new minor version), but the behavior of 'Default' may change in the future. If you want to opt-out of the default setting changing in the future, set the **Apps Update Cadence** to **With major updates**.
+
+The Apps Update Cadence setting does not affect updates to per-tenant extensions installed on the environment.
+
 ## What happens when an app update is installed?
 
-The new app version is starting to install immediately, following the confirmation dialogue. The new app version will be published, synchronized, and updated in the background. This process usually doesn't take long, and users won't be interrupted. However, we still recommend you to install the updates outside of working hours.
+When you install an app update, the new app version will be published, synchronized, and updated in the background. This process usually doesn't take long, and users won't be interrupted. However, we still recommend you to install the updates outside of working hours. Tick the "Schedule update in the next update window" box in the confirmation dialogue when installing an app update to start the update during the next [update window](../tenant-admin-center-update-management#set-the-update-window-for-each-environment).
 
 ## <a name="failure"></a>What do I do when an update fails?
 
