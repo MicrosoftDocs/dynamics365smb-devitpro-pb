@@ -25,9 +25,9 @@ Prospects and customers can also subscribe for an evaluation version by using se
 
 [!include[prod_short](../developer/includes/prod_short.md)] online doesn't use the classic [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] license files (.flf). Instead, permissions are generated based on entitlements.  
 
-Behind the scenes, the **Entitlements** table defines license permissions per object. Entitlements are grouped in the **Entitlement Set** table, and then each entitlement set is associated with one of the four Azure Active Directory (Azure AD) service plans.  
+Behind the scenes, the **Entitlements** table defines license permissions per object. Entitlements are grouped in the **Entitlement Set** table, and then each entitlement set is associated with one of the four Microsoft Entra ID service plans.  
 
-This condition means that when a user purchases, for example, an Essential license and tries to sign in to Business Central, we retrieve the user's service plan (in this case Essential) from Azure AD. Then, we load the corresponding entitlements as license permissions.  
+This condition means that when a user purchases, for example, an Essential license and tries to sign in to Business Central, we retrieve the user's service plan (in this case Essential) from Microsoft Entra ID. Then, we load the corresponding entitlements as license permissions.  
 
 > [!NOTE]
 > For more information about the different types of licenses and how licensing works in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], see the Dynamics 365
@@ -35,11 +35,11 @@ Licensing Guide, which you can download from [https://go.microsoft.com/fwlink/?L
 
 ## Entitlements and user groups
 
-*Entitlements* are permissions that describe which objects in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] a user is entitled to use according to their Azure Active Directory role or the license they purchased from Microsoft.  
+*Entitlements* are permissions that describe which objects in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] a user is entitled to use according to their Microsoft Entra role or the license they purchased from Microsoft.  
 
-The **User Group Plan** table stores the mapping between the service plans and the user groups. Based on this mapping, the service determines which user group is assigned to a user by default when a user logs in to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] for the first time. The user group assigns a specific license (or makes the user a member of a specific Azure AD role).  
+The **User Group Plan** table stores the mapping between the service plans and the user groups. Based on this mapping, the service determines which user group is assigned to a user by default when a user logs in to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] for the first time. The user group assigns a specific license (or makes the user a member of a specific Microsoft Entra role).  
 
-When a user logs in to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the service applies the intersection of the entitlements that are associated with the user's service plan (or Azure AD role) and the permissions that are defined for that user. Entitlements always have higher priority over permissions. For example, even is the user is given SUPER permissions by the admin but has the Team Member license assigned – the user can still only access the objects defined by the Team Member entitlements.  
+When a user logs in to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the service applies the intersection of the entitlements that are associated with the user's service plan (or Microsoft Entra role) and the permissions that are defined for that user. Entitlements always have higher priority over permissions. For example, even is the user is given SUPER permissions by the admin but has the Team Member license assigned – the user can still only access the objects defined by the Team Member entitlements.  
 
 You can verify how entitlements, licenses, and user groups work together by looking at the **Effective Permissions** page, which you can access from the **User** page. Starting with 2022 release wave 1, admins can also customize the default permissions per license type. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) in the business functionality content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
 
