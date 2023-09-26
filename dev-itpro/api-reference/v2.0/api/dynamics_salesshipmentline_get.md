@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a salesShipmentLine object for [!IN
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
 GET businesscentralPrefix/companies({id})/salesShipments({id})/salesShipmentLines({salesShipmentLineId})
-GET businesscentralPrefix/companies({id})/salesShipments({salesShipmentLineId})
+GET businesscentralPrefix/companies({id})/salesShipmentLines({salesShipmentLineId})
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a ```200 OK``` response code and an **salesSh
 
 Here is an example of the request.
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/salesShipmentLines({id})/salesShipmentLines({salesShipmentLineId})
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/salesShipments({id})/salesShipmentLines({salesShipmentLineId})
 ```
 
 **Response**

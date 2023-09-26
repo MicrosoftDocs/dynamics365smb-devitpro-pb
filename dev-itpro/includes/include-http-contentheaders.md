@@ -30,7 +30,7 @@ The following AL code examples illustrate ways to change the content header.
         Content.GetHeaders(ContentHeaders);
 
         // In this example, you just change the headers you need
-        if ContentHeaders.Contains('Content-Type') then headers.Remove('Content-Type');
+        if ContentHeaders.Contains('Content-Type') then ContentHeaders.Remove('Content-Type');
         ContentHeaders.Add('Content-Type', 'multipart/form-data;boundary=boundary');
 
         // from here on, the method must deal with calling out to the external service. 

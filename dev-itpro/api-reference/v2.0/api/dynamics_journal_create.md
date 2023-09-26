@@ -48,9 +48,10 @@ Here is an example of a request.
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/journals
 Content-type: application/json
-```json
+
 {
-  "code": "DEFAULT"
+  "code": "DEFAULT",
+  "displayName": "Default Journal Batch"
 }
 ```
 

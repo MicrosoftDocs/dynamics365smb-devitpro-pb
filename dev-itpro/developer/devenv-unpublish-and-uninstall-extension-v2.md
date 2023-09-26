@@ -35,9 +35,6 @@ You can't synchronize in clean mode if any version of the extension is installed
 In production, this should primarily be done as a final cleanup step after all versions of an extension have been uninstalled and unpublished for good. During extension development, this can be useful in order to give the developer a "clean" environment when creating database schema related modifications (table extensions, tables). 
 -->
 
-> [!TIP]
-> 
-
 ## Uninstalling extensions
 
 You can uninstall an extension by using the [!INCLUDE[adminshell](includes/adminshell.md)] or from the client. You can run the synchronizing in clean mode operation as part of the uninstall operation, instead of doing it after separately.
@@ -46,7 +43,7 @@ You can uninstall an extension by using the [!INCLUDE[adminshell](includes/admin
 > - You can't uninistall an extension if any there are other installed extensions that are dependent on the extension. If you try, you'll get a message stating that there are dependent extensions and asking you to confirm whether you want to uninstall the extension and its dependents.
 > - When you choose to run the synchronizing in clean mode operation when uninstalling, the database schema and data associated with dependent extensions will also be removed.
 
-### To uninstall an extension by using [!INCLUDE[adminshell](includes/adminshell.md)] 
+### Uninstall an extension by using [!INCLUDE[adminshell](includes/adminshell.md)] 
 
 1. Start the [!INCLUDE[adminshell](includes/adminshell.md)]. 
 
@@ -83,16 +80,24 @@ You can uninstall an extension by using the [!INCLUDE[adminshell](includes/admin
 
     If you want to run synchronizing in clean mode operation, include the `-ClearSchema` parameter.
 
-### To uninstall an extension by using the client  
+### Uninstall an extension by using the client  
 
 1. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], use search to open the **Extension Management** page.
 
     In the **Extension Management** window, you can view the extensions that are installed on the tenant 
 2. Choose an extension, and choose the **Uninstall** action.
 
+3. If you want to delete data in tables owned by the extension, turn on the **Delete Extension Data** switch. This action does the same as the `-ClearSchema` parameter with the Uninstall-NavApp cmldet. This action can't be undone.
+
 For more information, see [Uninstall an Extension](/dynamics365/business-central/ui-extensions-install-uninstall#uninstall-an-extension) in the business functionality help.
 
-## Unpublishing extensions
+### Delete orphaned extension data
+
+If you want to keep the data for an uninstalled app, you can delete the data later by using the **Delete Orphaned Extension Data** page. The **Delete Orphaned Extension Data** page lists the apps that you still have data for. To delete the data, choose the app, and then choose **Delete Data**. 
+
+There are several reasons for why you should delete orphaned extension data. First, it frees up database capacity. Second, it reduces the row size in the companion table used to store data for extension tables. This will, in turn, speed up data operations on that table.
+
+## Unpublish extensions
 
 You unpublish an extension on a [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance by using the [!INCLUDE[adminshell](includes/adminshell.md)].
 
@@ -128,7 +133,7 @@ You unpublish an extension on a [!INCLUDE[d365fin_server_md](includes/d365fin_se
     Get-NAVAppInfo -ServerInstance YourDynamicsNAVServer -Name 'My Extension' -Version 1.0.0.0 | Unpublish-NAVApp
     ```
 
-### To unpublish an extension by using the client  
+### Unpublish an extension by using the client  
 
 1. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], use search to open the **Extension Management** page.
 

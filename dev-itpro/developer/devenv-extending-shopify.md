@@ -240,7 +240,7 @@ pageextension 50101 "Shpfy Sales Line Extend" extends "Sales Order Subform"
 
 Companies have different rules on how and what items to expose to Shopify as available stock. 
 
-You can extend the **Shpfy Stock Calculation** enum by adding your own options. You'll also need to add your own implementation of the **Shpfy Stock Calculation** interface.
+You can extend the **Shpfy Stock Calculation** enum by adding your own options. You'll also need to add your own implementation of the **Shpfy Stock Calculation** interface. Remember to add implementaion `Shpfy Can Have Stock` for `Shpfy IStock Available`.
 
 To learn more about standard inventory calculation, go to [Sync inventory to Shopify](/dynamics365/business-central/shopify/synchronize-items#sync-inventory-to-shopify).
 
@@ -254,7 +254,8 @@ enumextension 50101 "Extended Stock Calculations" extends "Shpfy Stock Calculati
   value(50101; "Inventory on hand")
     {
         Caption = 'Inventory on hand';
-        Implementation = "Shpfy Stock Calculation" = "Shpfy Stock Calc. Inventory";
+        Implementation = "Shpfy Stock Calculation" = "Shpfy Stock Calc. Inventory",
+                         "Shpfy IStock Available" = "Shpfy Can Have Stock";
     }
 }
 codeunit 50101 "Shpfy Stock Calc. Inventory" implements "Shpfy Stock Calculation"
@@ -277,7 +278,8 @@ enumextension 50102 "Extended Stock Calculations" extends "Shpfy Stock Calculati
     value(50102; "Non-reserved Inventory")
     {
         Caption = 'Free Inventory (not reserved)';
-        Implementation = "Shpfy Stock Calculation" = "Shpfy Stock Calc. Free Invent";
+        Implementation = "Shpfy Stock Calculation" = "Shpfy Stock Calc. Free Invent",
+                         "Shpfy IStock Available" = "Shpfy Can Have Stock";
     }
 }
 codeunit 50102 "Shpfy Stock Calc. Free Invent" implements "Shpfy Stock Calculation"
@@ -300,7 +302,8 @@ enumextension 50103 "Extended Stock Calculations" extends "Shpfy Stock Calculati
     value(50103; "Projected Available Balance in X Days")
     {
         Caption = 'Projected Available Balance in X Days';
-        Implementation = "Shpfy Stock Calculation" = "Shpfy Stock Calc. Proj at Date";
+        Implementation = "Shpfy Stock Calculation" = "Shpfy Stock Calc. Proj at Date",
+                         "Shpfy IStock Available" = "Shpfy Can Have Stock";
     }
 }
 codeunit 50103 "Shpfy Stock Calc. Proj at Date" implements "Shpfy Stock Calculation"
@@ -329,7 +332,8 @@ enumextension 50104 "Extended Stock Calculations" extends "Shpfy Stock Calculati
     value(50104; "Available to Pick")
     {
         Caption = 'Available to pick (warehouse handling)';
-        Implementation = "Shpfy Stock Calculation" = "Shpfy Stock Calc. AvailPick";
+        Implementation = "Shpfy Stock Calculation" = "Shpfy Stock Calc. AvailPick",
+                         "Shpfy IStock Available" = "Shpfy Can Have Stock";
     }
 }
 codeunit 50104 "Shpfy Stock Calc. AvailPick" implements "Shpfy Stock Calculation"

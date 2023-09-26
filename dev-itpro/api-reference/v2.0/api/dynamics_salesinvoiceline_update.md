@@ -91,7 +91,8 @@ Content-type: application/json
     "netTaxAmount": 8.24,
     "netAmountIncludingTax": 172.94,
     "shipmentDate": "2020-08-21",
-"itemVariantId": "00000000-0000-0000-0000-000000000000"
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 

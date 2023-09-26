@@ -23,7 +23,7 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 
 ```
 POST businesscentralPrefix/companies({id})/salesInvoices({id})/salesInvoiceLines
-POST businesscentralPrefix/companies({id})/salesInvoices({id})/salesInvoiceLines({salesInvoiceLineId})
+POST businesscentralPrefix/companies({id})/salesInvoiceLines
 ```
 
 ## Request headers
@@ -51,32 +51,19 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salesInvoices({id}
 Content-type: application/json
 
 {
-"id": "238cb9c0-44e3-ea11-bb43-000d3a2feca1",
-"documentId": "9e0f5c9c-44e3-ea11-bb43-000d3a2feca1",
-"sequence": 10000,
-"itemId": "02a6738a-44e3-ea11-bb43-000d3a2feca1",
-"accountId": "00000000-0000-0000-0000-000000000000",
-"lineType": "Item",
-"lineObjectNumber": "1928-S",
-"description": "AMSTERDAM Lamp",
-"unitOfMeasureId": "5ca6738a-44e3-ea11-bb43-000d3a2feca1",
-"unitOfMeasureCode": "PCS",
-"unitPrice": 54.9,
-"quantity": 3,
-"discountAmount": 0,
-"discountPercent": 0,
-"discountAppliedBeforeTax": false,
-"amountExcludingTax": 164.7,
-"taxCode": "FURNITURE",
-"taxPercent": 5,
-"totalTaxAmount": 8.24,
-"amountIncludingTax": 172.94,
-"invoiceDiscountAllocation": 0,
-"netAmount": 164.7,
-"netTaxAmount": 8.24,
-"netAmountIncludingTax": 172.94,
-"shipmentDate": "2020-08-21",
-"itemVariantId": "00000000-0000-0000-0000-000000000000"
+  "itemId": "02a6738a-44e3-ea11-bb43-000d3a2feca1",
+  "lineType": "Item",
+  "lineObjectNumber": "1928-S",
+  "description": "AMSTERDAM Lamp",
+  "unitOfMeasureId": "5ca6738a-44e3-ea11-bb43-000d3a2feca1",
+  "unitOfMeasureCode": "PCS",
+  "unitPrice": 54.9,
+  "quantity": 3,
+  "discountAmount": 0,
+  "discountPercent": 0,
+  "taxCode": "FURNITURE",
+  "shipmentDate": "2020-08-21",
+  "itemVariantId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 
@@ -117,7 +104,8 @@ Content-type: application/json
     "netTaxAmount": 8.24,
     "netAmountIncludingTax": 172.94,
     "shipmentDate": "2020-08-21",
-"itemVariantId": "00000000-0000-0000-0000-000000000000"
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 
