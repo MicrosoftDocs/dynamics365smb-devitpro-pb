@@ -3,7 +3,7 @@ title: "CompanyProperty Data Type"
 description: "Provides language support for company properties."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 08/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,6 +25,7 @@ The following methods are available on the CompanyProperty data type.
 |Method name|Description|
 |-----------|-----------|
 |[DisplayName()](companyproperty-displayname-method.md)|Gets the current company display name.|
+|[ID()](companyproperty-id-method.md)|Gets the current company ID.|
 |[UrlName()](companyproperty-urlname-method.md)|Gets the string that represents the company name in a URL.|
 
 

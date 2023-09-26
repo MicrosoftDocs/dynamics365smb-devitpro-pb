@@ -214,7 +214,7 @@ page 6401 "Flow Selector"
     end;
 
     var
-        AzureAdMgt: Codeunit "Azure AD Mgt.";
+        AzureAdMgt: Codeunit "Microsoft Entra ID Mgt.";
         FlowServiceManagement: Codeunit "Flow Service Management";
         IsErrorMessageVisible: Boolean;
         ErrorMessageText: Text;

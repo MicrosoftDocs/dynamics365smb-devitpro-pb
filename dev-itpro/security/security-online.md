@@ -18,7 +18,7 @@ This section helps you understand and improve the security of your Dynamics 365 
 
 ## Authentication
  
-Business Central uses Azure Active Directory (Azure AD) as the authentication method, which is automatically set up and managed for you.
+Business Central uses Microsoft Entra ID as the authentication method, which is automatically set up and managed for you.
 
 ## Data isolation and encryption
 

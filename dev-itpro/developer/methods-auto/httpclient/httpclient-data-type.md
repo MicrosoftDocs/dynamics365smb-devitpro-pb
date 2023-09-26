@@ -3,7 +3,7 @@ title: "HttpClient Data Type"
 description: "Provides a data type for sending HTTP requests and receiving HTTP responses from a resource identified by a URI."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/01/2023
+ms.date: 09/06/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,8 @@ The following methods are available on instances of the HttpClient data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[AddCertificate(Text [, Text])](httpclient-addcertificate-method.md)|Adds a certificate to the HttpClient class.|
+|[AddCertificate(Text [, Text])](httpclient-addcertificate-string-string-method.md)|Adds a certificate to the HttpClient class.|
+|[AddCertificate(SecretText [, SecretText])](httpclient-addcertificate-secrettext-secrettext-method.md)|Adds a certificate as a SecretText to the HttpClient class.|
 |[Clear()](httpclient-clear-method.md)|Sets the HttpClient variable to the default value.|
 |[DefaultRequestHeaders()](httpclient-defaultrequestheaders-method.md)|Gets the default request headers which should be sent with each request.|
 |[Delete(Text, var HttpResponseMessage)](httpclient-delete-method.md)|Sends a DELETE request to delete the resource identified by the request URL.|
@@ -36,7 +37,8 @@ The following methods are available on instances of the HttpClient data type.
 |[SetBaseAddress(Text)](httpclient-setbaseaddress-method.md)|Sets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests.|
 |[Timeout([Duration])](httpclient-timeout-method.md)|Gets or sets the duration in milliseconds to wait before the request times out.|
 |[UseDefaultNetworkWindowsAuthentication()](httpclient-usedefaultnetworkwindowsauthentication-method.md)|Sets the HttpClient credentials to use the default network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
-|[UseWindowsAuthentication(Text, Text [, Text])](httpclient-usewindowsauthentication-method.md)|Sets the HttpClient credentials to use the specified network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
+|[UseWindowsAuthentication(Text, Text [, Text])](httpclient-usewindowsauthentication-string-string-string-method.md)|Sets the HttpClient credentials to use the specified network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
+|[UseWindowsAuthentication(SecretText, SecretText [, SecretText])](httpclient-usewindowsauthentication-secrettext-secrettext-secrettext-method.md)|Sets the HttpClient credentials to use the specified network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
