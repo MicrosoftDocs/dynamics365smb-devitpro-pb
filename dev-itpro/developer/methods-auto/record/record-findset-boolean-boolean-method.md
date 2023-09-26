@@ -3,7 +3,7 @@ title: "Record.FindSet(Boolean, Boolean) Method"
 description: "Finds a set of records in a table based on the current key and filter."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/19/2023
+ms.date: 06/30/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
