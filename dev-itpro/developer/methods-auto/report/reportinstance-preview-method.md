@@ -3,7 +3,7 @@ title: "Report.Preview() Method"
 description: "Indicates whether a report is being printed in preview mode."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 08/18/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,6 +37,10 @@ An instance of the [Report](report-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+Application triggers are not invoked when the web client PDF viewer runs client actions. They are only invoked during the print action so that you can use the trigger code, for example, to increment the No.Printed value.
 
 ## See Also
 [Report Data Type](report-data-type.md)  

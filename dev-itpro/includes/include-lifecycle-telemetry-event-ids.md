@@ -1,8 +1,14 @@
 | Event ID | Area | Message |
 |----------|-------------|-----------------|
 | AL0000E24 | Job Queue Lifecycle | [Job queue entry enqueued: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#enqueued) |
+| AL0000FNY | Job Queue Lifecycle | [Job queue entry not enqueued: {alJobQueueId}](../administration/telemetry-job-queue-lifecycle-trace.md#enqueueError) |
 | AL0000E25 | Job Queue Lifecycle | [Job queue entry started: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#started) |
 | AL0000E26 | Job Queue Lifecycle | [Job queue entry finished: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#finished) |
+| AL0000HE7 | Job Queue Lifecycle | [Job queue entry errored: {alJobQueueId}](../administration/telemetry-job-queue-lifecycle-trace.md#error) |
+| AL0000I49 | Job Queue Lifecycle | [Job queue entry rescheduled on login: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#rescheduledOnLogin) |
+| AL0000JRG | Job Queue Lifecycle | [Job queue entry {Job Queue Id} errored after {attempt number} attempts](../administration/telemetry-job-queue-lifecycle-trace.md#errorStopped) |
+| AL0000FMG | Job Queue Lifecycle | [Running job queue once](../administration/telemetry-job-queue-lifecycle-trace.md#runOnce) |
+| AL0000I49 | Job Queue Lifecycle | [Job queue entry rescheduled on login: {job queue entry id}](../administration/telemetry-job-queue-lifecycle-trace.md#rescheduledOnLogin) |
 |AL0000E3F|Configuration Package|[Configuration package export started: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#exportstarted)|
 |AL0000E3G|Configuration Package|[Configuration package exported successfully: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#exportsuccessful)|
 |AL0000E3H|Configuration Package|[Configuration package import started: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#importstarted)|
@@ -134,7 +140,7 @@
 | LC0153 | Environment | [Environment renamed successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-renamed) |
 | LC0154 | Environment | [Environment rename operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-rename-operation-failed) |
 | LC0155 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} scheduled for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-scheduled-by-app-management-api) |
-| LC0156 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} scheduling failed for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-scheduling-by-app-management-api-failed) |
+| LC0156 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} scheduling failed for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-scheduling-by-app-management-api-failed-to-be-scheduled) |
 | LC0157 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} was cancelled for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-cancelled-by-app-management-api) |
 | LC0158 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} started for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-started-by-app-management-api) |
 | LC0159 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} applied successfully for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-applied-successfully-by-app-management-api) |

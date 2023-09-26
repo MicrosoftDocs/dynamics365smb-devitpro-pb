@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+description: Master AL programming with essential methods. Learn the most common methods, their uses, and how to add specialized functionality to your applications.
 ---
 
 # Essential AL Methods

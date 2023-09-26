@@ -38,11 +38,16 @@ Internal and delegated administrators can report this outage to Microsoft by usi
 
 A support request ticket is then created, and you will see a dialog box with the ticket ID. You can then monitor progress in the **Reported Outages** section. From there, you can access the tickets in the Partner Center. For more information, see the [Microsoft Partner Center](/partner-center/) documentation.  
 
+## Troubleshooting tools and guides
+[!INCLUDE [troubleshooting-overview](../includes/include-troubleshooting-overview.md)]
+
+
 ## See Also
 
 [Escalating Support Issues to Microsoft](raise-support-case.md)  
 [Managing Technical Support](manage-technical-support.md)  
 [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md)  
+[Troubleshooting tools and guides](../developer/devenv-troubleshooting-overview.md)
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Technical Support for Business Central](../technical-support.md)  
 [Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)  

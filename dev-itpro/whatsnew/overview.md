@@ -5,7 +5,7 @@ description: This article points to articles that describe the new and changed f
 author: edupont04
 ms.author: edupont
 ms.reviewer: jswymer 
-ms.date: 08/09/2023
+ms.date: 08/25/2023
 ms.custom: bap-template #Required; don't change.
 ms.topic: whats-new #Required; don't change.
 
@@ -16,8 +16,8 @@ Wondering about upcoming and recently released capabilities in Dynamics 365 Busi
 
 See the release plans for what's coming. Choose the following links to learn about the latest versions of Business Central.
 
-- [2023 release wave 1](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/planned-features)
-- [2022 release wave 2](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features)  
+- [2023 release wave 2](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/planned-features)
+- [2023 release wave 1](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/planned-features)  
 
 Keep track of changes on the [Dynamics 365 Business Central release planner](https://experience.dynamics.com/releaseplans/?app=Business+Central) site, or download the release plan as a single PDF.  
 
@@ -29,6 +29,7 @@ Learn more about what's new or changed in recent releases in the links in the fo
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
+|22.5|Application Build 22.5.x, Platform Build 22.0.|September 2023|[Update 22.5 for Microsoft Dynamics 365 Business Central online 2023 release wave 1](whatsnew-update-22-5.md)|
 |22.4|Application Build 22.4.59535, Platform Build 22.0.59520|August 2023|[Update 22.4 for Microsoft Dynamics 365 Business Central online 2023 release wave 1](whatsnew-update-22-4.md)|
 |22.3|Application Build 22.3.58453, Platform Build 22.0.58423|July 2023|[Update 22.3 for Microsoft Dynamics 365 Business Central online 2023 release wave 1](whatsnew-update-22-3.md)|
 |22.2|Application Build 22.2.57617, Platform Build 22.0.57579| June 2023|[Update 22.2 for Microsoft Dynamics 365 Business Central online 2023 release wave 1](whatsnew-update-22-2.md)|

@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 6c90376e-b86e-406d-880d-3cc905bf6527
 author: SusanneWindfeldPedersen
+description: Learn about asynchronous communication limitations in Dynamics 365 Business Central server and how to effectively write control add-ins for all display targets.
 ---
 
 # Asynchronous Considerations

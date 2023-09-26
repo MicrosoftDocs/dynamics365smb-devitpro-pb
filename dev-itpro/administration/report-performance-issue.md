@@ -19,6 +19,9 @@ When a customer has a situation where performance is problematic, you might need
 
 Before you create a support request for a performance issue, you must provide information on what is wrong, when it happens, and for whom. This article specifies what information support engineers need to work on performance issues.
 
+## Troubleshooting tools and guides
+[!INCLUDE [troubleshooting-overview](../includes/include-troubleshooting-overview.md)]
+
 ## To report a performance issue
 
 In order for support engineers to be able to work on the issue, they need some basic information about when and where the issue occurs and steps to reproduce the problem.

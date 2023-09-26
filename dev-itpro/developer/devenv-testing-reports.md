@@ -57,6 +57,8 @@ Any changes done in the handler above will result in the `XmlParameters` being c
 > [!NOTE]  
 > The existing tests still need support and the codeunit solves this problem by supporting both formats for now. `TestRequestPage.SaveAsXML` uses Tags for values, while the new format uses attributes. This means that you cannot use any public method that contains "Tag" in the name to test the reports generated in the memory.
 
+[!INCLUDE [send-report-xml](../developer/includes/send-report-xml.md)]
+
 ## See Also
 
 [Reports Overview](devenv-reports.md)  

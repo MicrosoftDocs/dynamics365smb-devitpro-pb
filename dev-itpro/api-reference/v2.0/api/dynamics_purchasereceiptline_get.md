@@ -19,8 +19,9 @@ Retrieve the properties and relationships of a purchaseReceiptLine object for [!
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+
 ```
-GET businesscentralPrefix/companies({id})/purchaseReceiptLines({id})/purchaseReceiptLines({purchaseReceiptLineId})
+GET businesscentralPrefix/companies({id})/purchaseReceipts({id})/purchaseReceiptLines({purchaseReceiptLineId})
 GET businesscentralPrefix/companies({id})/purchaseReceiptLines({purchaseReceiptLineId})
 ```
 
@@ -41,8 +42,9 @@ If successful, this method returns a ```200 OK``` response code and an **purchas
 **Request**
 
 Here is an example of the request.
+
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseReceiptLines({id})/purchaseReceiptLines({purchaseReceiptLineId})
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseReceipts({id})/purchaseReceiptLines({purchaseReceiptLineId})
 ```
 
 **Response**
@@ -68,6 +70,7 @@ Here is an example of the response.
 
 
 ## See also
+
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [purchaseReceiptLine](../resources/dynamics_purchaseReceiptLine.md)  
 

@@ -16,7 +16,7 @@ You can use reports to print or display information from a [!INCLUDE[prod_short]
 
 Reports can also be used to process data without printing or displaying content. For example, use a report to automate updating all prices in an item list. It can be easier to create a report to process data instead of a codeunit to do the same processing because you can use:  
 
-- Request page functionality to select options and filters for data items, which are available in a report but are difficult to add to a codeunit. For more information, see [Request Pages](devenv-request-pages.md). 
+- Request page functionality to select options and filters for data items, which are available in a report but are difficult to add to a codeunit. For more information, see [Using request pages with reports](devenv-request-pages-for-reports.md). 
 
 - Report data items instead of writing code to open tables and retrieve records.  
 
@@ -47,7 +47,7 @@ The following table includes links to help you get started with designing the re
 [Report Object](devenv-report-object.md)  
 [Report Extension Object](devenv-report-ext-object.md)  
 [Creating a Report](devenv-howto-report-layout.md)  
-[Request Pages](devenv-request-pages.md)  
+[Using request pages with reports](devenv-request-pages-for-reports.md)   
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)  

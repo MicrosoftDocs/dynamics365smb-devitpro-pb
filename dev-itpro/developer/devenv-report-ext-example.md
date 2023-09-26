@@ -174,7 +174,7 @@ The example code above illustrates how additive changes to tables that are used 
 [Reports Overview](devenv-reports.md)  
 [Report Object](devenv-report-object.md)  
 [Report Extension Object](devenv-report-ext-object.md)  
-[Request Pages](devenv-request-pages.md)  
+[Using request pages with reports](devenv-request-pages-for-reports.md)
 [OnPostReport (Report Extension) Trigger](triggers-auto/reportextension/devenv-onpostreport-reportextension-trigger.md)  
 [OnPreReport (Report Extension) Trigger](triggers-auto/reportextension/devenv-onprereport-reportextension-trigger.md)  
 [OnAfterAfterGetRecord (Report Extension Data Set Modify) Trigger](triggers-auto/reportextensiondatasetmodify/devenv-onafteraftergetrecord-reportextensiondatasetmodify-trigger.md)  

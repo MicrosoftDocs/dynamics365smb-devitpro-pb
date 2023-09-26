@@ -9,6 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
+description: Learn how to set up your Business Central security system effectively. Discover the importance of superuser roles and permission sets in database security.
 ---
 # Security Considerations
 

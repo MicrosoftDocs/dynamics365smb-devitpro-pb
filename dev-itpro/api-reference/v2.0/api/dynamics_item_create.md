@@ -62,6 +62,7 @@ Content-type: application/json
     "taxGroupCode": "FURNITURE",
     "baseUnitOfMeasureId": "5ca6738a-44e3-ea11-bb43-000d3a2feca1",
     "baseUnitOfMeasureCode": "PCS"
+
 }
 ```
 
