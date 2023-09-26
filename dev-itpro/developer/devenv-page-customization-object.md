@@ -83,7 +83,7 @@ profile TheSalesman
 
 ## Adding groups and page fields based on table fields
 
-[!INCLUDE[prod_short](includes/prod_short.md)]
+[!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
 
 You can add groups and page fields using a table field as source expression in page customizations as illustrated in the following example:
 
@@ -111,3 +111,4 @@ To specify if a table field can be used as a source expression for page fields t
 [Page Extension Object](devenv-page-ext-object.md)  
 [Views](devenv-views.md)  
 [Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
+[AllowInCustomizations](properties/devenv-allowincustomizations-property.md)  
