@@ -962,16 +962,17 @@
 #### [The Microsoft_Application.app file](developer/devenv-application-app-file.md)
 #### [Publishing a code-customized base application](developer/devenv-publish-code-customization.md)
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
-### Examples
-#### [Extending item charge distribution methods](developer/devenv-extending-item-charges.md)
-#### [Extending price calculations](developer/devenv-extending-best-price-calculations.md)
-#### [Extending pages previously based on the Date virtual table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
-#### [Extending data archiving](developer/devenv-data-archive-extension.md)
-#### [Extending document sharing and OneDrive integration](developer/devenv-extending-document-sharing-onedrive.md)
-#### [Extending customer, vendor, and item templates](developer/devenv-extending-templates.md)
-#### [Extending email capabilities](developer/devenv-extending-email.md)
-#### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
-#### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
+#### Examples
+##### [Extending item charge distribution methods](developer/devenv-extending-item-charges.md)
+##### [Extending price calculations](developer/devenv-extending-best-price-calculations.md)
+##### [Extending pages previously based on the Date virtual table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
+##### [Extending data archiving](developer/devenv-data-archive-extension.md)
+##### [Extending document sharing and OneDrive integration](developer/devenv-extending-document-sharing-onedrive.md)
+##### [Extending customer, vendor, and item templates](developer/devenv-extending-templates.md)
+##### [Extending email capabilities](developer/devenv-extending-email.md)
+##### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
+##### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
+##### [Extending Currency Exchange Rate Adjustments](developer/devenv-extend-exchange-rates.md)
 
 ### Using events 
 #### [Event types](developer/devenv-event-types.md)
