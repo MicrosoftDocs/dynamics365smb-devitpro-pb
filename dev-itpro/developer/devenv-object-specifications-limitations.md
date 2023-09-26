@@ -27,7 +27,7 @@ The following characteristics are based on maximum capacity specifications for S
 
 ## Specifications for Tables
   
-The following characteristics are based on maximum capacity specifications for SQL Server 2017. Please visit the link below to see specifications for previous versions of SQL Server.
+The following characteristics are based on maximum capacity specifications for SQL Server 2019. Please visit the link below to see specifications for previous versions of SQL Server.
 
 |Feature|Characteristic|  
 |-------------|--------------------|  
