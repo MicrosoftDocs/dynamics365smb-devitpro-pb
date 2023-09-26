@@ -553,7 +553,7 @@ For more information on base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]
 Let us explore another scenario. If we added an **Industry** field to the **Contact** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and now want to include the field in our integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 > [!TIP]
-> Sample code that customizes an integration between a contact in [!INCLUDE[prod_short](../includes/prod_short.md)] and a contact in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] by adding a new field is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/CDSCustomContactIntegration) repository. 
+> Sample code that customizes an integration between a contact in [!INCLUDE[prod_short](../includes/prod_short.md)] and a contact in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] by adding a new field is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/DataverseCustomContactIntegration) repository. 
 
 ### To create the integration table extension for table "CRM Contact" (ID 5342)
 
