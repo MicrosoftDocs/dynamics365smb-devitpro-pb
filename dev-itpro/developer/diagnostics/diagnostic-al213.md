@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL0213"
-description: "An area of type '{0}' is only valid on pages of type '{1}'."
+description: "An area of type '{0}' is only valid on pages of type(s) '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
+ms.date: 08/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,8 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-An area of type '{0}' is only valid on pages of type '{1}'.
+An area of type '{0}' is only valid on pages of type(s) '{1}'.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

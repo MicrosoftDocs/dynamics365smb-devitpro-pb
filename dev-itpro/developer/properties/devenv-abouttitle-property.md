@@ -3,7 +3,7 @@ title: "AboutTitle Property"
 description: "Sets the large-font title that appears in a teaching tip in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/04/2022
+ms.date: 09/06/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Sets the large-font title that appears in a teaching tip in the UI.
 
 ## Applies to
 -   Page Custom Action
+-   Query
 -   Page
 -   Page Action
 -   Page Action Group
