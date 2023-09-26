@@ -54,7 +54,7 @@ Installs an app on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
+POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
 ```
 
 ### Route Parameters
@@ -131,7 +131,7 @@ Uninstalls an app from an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
+POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
 ```
 
 ### Route Parameters
@@ -193,7 +193,7 @@ Example `400 Bad Request` response when dependent apps need to be uninstalled fi
 Get information about apps that are installed on the environment.
 
 ```
-GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/apps
+GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps
 ```
 
 ### Route Parameters
@@ -227,7 +227,7 @@ Returns information about the apps installed on the environment.
 Get information about new app versions that are available for apps currently installed on the environment.
 
 ```
-GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
+GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
 ```
 
 ### Route Parameters
@@ -268,7 +268,7 @@ Updates an app using an existing endpoint, but when new parameters in the reques
 
 ```
 Content-Type: application/json
-POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
+POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
 ```
 
 ### Route Parameters
@@ -302,7 +302,9 @@ POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName
   "targetAppVersion": "1.2.3.4", // Target version of the app on the tenant that will be installed during update.
   "status": "scheduled", // An enum that indicates the status. Values include: "scheduled", "running", "succeeded", "failed", "canceled", "skipped"
   "createdOn": "2021-03-22T15:44:57.9067589Z", // Date and time the request was created
-  "errorMessage": "" // Error message for failed operations
+  "errorMessage": "", // Error message for failed operations
+  "createdBy": "", // Email address if authenticated as user, App ID if authenticated as app
+  "canceledBy: "" // Empty value
 }
 ```
   
@@ -326,12 +328,55 @@ Example `400 Bad Request` response when dependent apps need to be updated first:
 }
 ```
 
+## Cancel a scheduled app update
+
+Cancels an app update in scheduled state.
+
+```
+Content-Type: application/json
+POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update/cancel
+```
+
+### Route Parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment.
+
+`appId` - ID of the targeted app.
+
+### Body
+
+```
+{ 
+  "ScheduledOperationId": guid // Obtained when scheduling an update or by getting app operations for the environment
+}
+```
+
+### Responses (app operation) 
+
+200 OK, with Body, example:
+
+```
+{ 
+  "id": "35601559-224a-47d5-8089-86ac88b2b995", // ID of the operation used for tracking the update request
+  "type": "update", // Type of the operation. For this endpoint, it's "update".
+  "sourceAppVersion": "1.2.3.0", // Current version of app on the tenant.
+  "targetAppVersion": "1.2.3.4", // Target version of the app on the tenant that will be installed during update.
+  "status": "canceled", // An enum that indicates the status. Values include: "scheduled", "running", "succeeded", "failed", "canceled", "skipped"
+  "createdOn": "2021-03-22T15:44:57.9067589Z", // Date and time the request was created
+  "errorMessage": "", // Error message for failed operations
+  "createdBy": "", // Email address if authenticated as user, App ID if authenticated as app
+  "canceledBy: "" // Email address if authenticated as user, App ID if authenticated as app
+}
+```
+
 ## Get App Operations
 
 Gets information about app install, uninstall, and update operations for the specified app.
 
 ```
-GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
+GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
 ```
 
 ### Route Parameters
