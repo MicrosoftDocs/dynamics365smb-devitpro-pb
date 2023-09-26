@@ -844,6 +844,7 @@
 #### [PerTenantExtensionCop analyzer rules](developer/analyzers/pertenantextensioncop.md)
 #### [UICop analyzer rules](developer/analyzers/uicop.md)
 ### [Isolated storage](developer/devenv-isolated-storage.md)
+### [Protecting sensitive values with the SecretText data type](developer/devenv-secret-text.md)
 ### [File handling and text encoding](developer/devenv-file-handling-and-text-encoding.md)
 ### FlowFields and FlowFilters
 #### [FlowFields overview](developer/devenv-flowfields.md)
