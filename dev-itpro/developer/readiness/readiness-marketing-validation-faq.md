@@ -53,7 +53,7 @@ No, you can't use the [!INCLUDE[prod_short](../includes/prod_short.md)] logo, as
 
 Marketing validation is a manual process that is required for new offers or when the marketing details change on existing offers. As a publisher there is no way you can impact how fast the marketing validation process takes. 
 
-However, since marketing validation now only happens when marketing details are added or changed, you can ensure that you do not make such changes if it is important for you to get the submission through as quickly as possible, e.g., when releasing a hotfix. Once that hotfix has passed the submit process and gone live, you can then submit a new version with required marketing details updated, and await the validation process.
+However, since marketing validation now only happens when marketing details are added or changed, you can ensure that you don't make such changes if it's important for you to get the submission through as quickly as possible, for example, when releasing a hotfix. Once that hotfix has passed the submit process and gone live, you can then submit a new version with required marketing details updated, and await the validation process.
 
 ## See Also
 
