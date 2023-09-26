@@ -199,7 +199,8 @@ The main reason for the code example being different when dealing with binary da
         MultiPartBody.AppendLine();
         MultiPartBody.AppendLine('--' + Format(Boundary));
         MultiPartBody.AppendLine('Content-Disposition: form-data; name="file"; filename="<add filename here>"');
-        MultiPartBody.AppendLine('Content-Type: application/octet-stream');
+        //add file Content-Type eg. image/jpeg, image/png. If not known, use application/octet-stream.
+        MultiPartBody.AppendLine('Content-Type: <add file Content-Type here>');
         MultiPartBody.AppendLine();
         MultiPartBodyOutStream.WriteText(MultiPartBody.ToText());
 
