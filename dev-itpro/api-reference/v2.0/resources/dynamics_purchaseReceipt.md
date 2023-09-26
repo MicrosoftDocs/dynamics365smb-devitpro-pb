@@ -32,8 +32,6 @@ Represents a purchase receipt in [!INCLUDE[prod_short](../../../includes/prod_sh
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[vendor](dynamics_vendor.md)|vendor |Gets the vendor of the purchaseReceipt.|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the purchaseReceipt.|
 |[purchaseReceiptLines](dynamics_purchasereceiptline.md)|purchaseReceiptLines |Gets the purchasereceiptlines of the purchaseReceipt.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the purchaseReceipt.|
 
