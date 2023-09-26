@@ -2,9 +2,9 @@
 title: "Protecting sensitive values with the SecretText data type"
 description: The SecretText data type is designed to protect sensitive values from being exposed when debugging.
 author: SusanneWindfeldPedersen
-ms.author:
+ms.author: sodragon
 ms.custom: bap-template
-ms.date: 08/28/2023
+ms.date: 09/26/2023
 ms.reviewer: na
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -28,7 +28,7 @@ A credential can be retrieved in multiple ways:
 3. A custom developer defined scenario creates an authentication token.
 4. A developer mistakenly hard-codes a credential in the code for testing purposes and forgets to remove it.
 
-Any value of type `Text` or `Code` can be assigned to a `SecretText` value. If the tokens are retrieved and then converted to a `SecretText` value in the scope of a nondebuggable procedure, they are protected from the debugger during their lifetime. Furthermore, the AL compiler guarantees that a hardcoded credential can't be assigned directly to a destination of type `SecretText`.
+Any value of type `Text` or `Code` can be assigned to a `SecretText` value. If the tokens are retrieved and then converted to a `SecretText` value in the scope of a nondebuggable procedure, they're protected from the debugger during their lifetime. Furthermore, the AL compiler guarantees that a hardcoded credential can't be assigned directly to a destination of type `SecretText`.
 
 ```al
 [NonDebuggable]
@@ -103,10 +103,9 @@ where the following steps may be required:
 2. Adding the credential to the body of a request for the initial log-in.
 3. Adding an API key to the parameters of a request
 
-The AL HttpClient and all the intermediate types required to make a request support methods, which accept the `SecretText` data type,
-so that the values can be passed directly to the AL runtime without being revealed to the debugger.
+The AL HttpClient and all the intermediate types required to make a request support methods, which accept the `SecretText` data type, so that the values can be passed directly to the AL runtime without being revealed to the debugger.
 
-The code snippet below demonstrates how all the before mentioned scenarios can be implemented through these methods.
+The following code snippet demonstrates how all the before mentioned scenarios can be implemented through these methods.
 
 ```al
 procedure SendAuthenticatedRequestToApi(UriTemplate: Text; BearerToken: SecretText; KeyParameter: SecretText; SecretBody: SecretText)
@@ -169,7 +168,7 @@ The `SecretStrSubstNo` method allows for composing different values of type `Sec
 Its behavior is identical to the `StrSubstNo` method on `Text` values with the important difference that its parameters and return value
 are of type `SecretText`.
 
-Some example uses are demonstrated in the snippet below:
+Some examples are demonstrated in the following snippet:
 
 ```al
 procedure SecretStrSubstNoExamples()
@@ -189,8 +188,7 @@ begin
 end;
 ```
 
-
-## See Also
+## See also
 
 [SecretText data type](methods-auto/secrettext/secrettext-data-type.md)  
 [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md)  
