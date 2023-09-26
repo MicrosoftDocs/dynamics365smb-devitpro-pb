@@ -59,20 +59,19 @@ The following characteristics are based on maximum capacity specifications for S
   
 |Feature|Characteristic|  
 |-------------|--------------------|  
-|Range for table object ID numbers|1 – 999,999,999 <sup>1</sup>|  
-|Maximum number of characters in variable names|30|  
-|Maximum number of dimensions in array variables|10|  
-|Maximum number of elements in an array variable|1,000,000|  
+|Range for codeunit object ID numbers|1 – 999,999,999 <sup>1</sup>|  
 |Maximum physical size of a codeunit|2 GB|  
-|Lower bound of index in an array|1|  
-
   
 ## Specifications for variables
  
 |Feature|Characteristic|  
 |-------------|--------------------|  
+|Maximum number of characters in variable names|120|  
 |Maximum number of characters in text variables|2048<sup>3</sup>|   
 |Maximum number of characters in code variables|2048|  
+|Maximum number of dimensions in array variables|10|  
+|Maximum number of elements in an array variable|1,000,000|  
+|Lower bound of index in an array|1|  
 
 ## Specifications for text constants  
   

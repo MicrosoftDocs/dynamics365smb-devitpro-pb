@@ -39,7 +39,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a ```200 OK``` response code and an updated **automationCompany ** object in the response body.
+If successful, this method returns a ```200 OK``` response code and an updated **automationCompany** object in the response body.
 
 ## Example
 
@@ -49,11 +49,10 @@ Here is an example of the request.
 ```json
 PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/automationCompanies({automationCompanyId})
 Content-type: application/json
-If-Match:*
+If-Match: *
 {
-    "displayName": "My Company",
+    "displayName": "My Company"
 }
-
 ```
 
 **Response**
