@@ -600,6 +600,9 @@
 
 #### [Triggers](developer/triggers-auto/devenv-triggers.md)
 
+#### [Namespaces in AL](developer/devenv-namespaces-overview.md)
+##### [Structuring namespaces in AL](developer/devenv-namespaces-structure.md)
+
 ### Error handling
 #### [Error handling](developer/devenv-al-error-handling.md)
 #### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md)

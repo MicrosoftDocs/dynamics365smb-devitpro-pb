@@ -88,5 +88,7 @@ using MyNamespace.MyNestedNamespace
 ## See also
 
 [Development in AL](devenv-dev-overview.md)  
+[Programming in AL](devenv-programming-in-al.md)  
 [Code actions](devenv-code-actions.md)  
-[AL Explorer](devenv-al-explorer.md)
+[AL Explorer](devenv-al-explorer.md)  
+[Structuring namespaces in AL](devenv-namespaces-structure.md)  
