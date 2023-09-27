@@ -3,7 +3,7 @@ title: Entitlement object
 description: Description of the entitlement object in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/18/2023
+ms.date: 09/27/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,10 +17,7 @@ ms.author: solsen
 
 The entitlement object in [!INCLUDE [prod_short](includes/prod_short.md)] describes which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased or the role that they have in Microsoft Entra ID. 
 
-An entitlement consists of a number of [PermissionSet Objects](devenv-permissionset-object.md) put together to constitute a set of meaningful permissions for a user. An entitlement can only include permission set objects, which reference the objects that are included within the same app. This is to ensure that the entitlements included with one app can't alter or redefine the entitlements included with another app.
-
-<!-- comment from Steffen Do we need to explain that being entitled means the maximum permission a user is entitled to?
-Actual permissions are the intersection between the permissions the user is entitled to and the permissions the user is assigned.-->
+An entitlement consists of a number of [PermissionSet objects](devenv-permissionset-object.md) put together to constitute a set of meaningful permissions for a user. An entitlement can only include permission set objects, which reference the objects that are included within the same app. This is to ensure that the entitlements included with one app can't alter or redefine the entitlements included with another app. Being entitled defines the maximum permissions a user is entitled to. Actual permissions are the intersection between the permissions the user is entitled to and the permissions the user is assigned.
 
 Entitlements can only be used with the online version of [!INCLUDE [prod_short](includes/prod_short.md)].
 
