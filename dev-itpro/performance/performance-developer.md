@@ -2,7 +2,7 @@
 title: Performance article for developers
 description: Provides information for developers to help improve performance in Business Central
 ms.custom: bap-tremplate
-ms.date: 03/07/2023
+ms.date: 09/27/2023
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -10,7 +10,7 @@ author: KennieNP
 ms.author: kepontop
 ---
 
-# Performance Articles For Developers
+# Performance articles for developers
 
 In this article, you can read about ways to tune performance when developing for [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -185,13 +185,13 @@ When writing AL code for which the fields needed on a record or recordref are kn
 Partial records improve performance in two major ways. First, they limit the fields that need to be loaded from the database. Loading more fields leads to more data being read, sent over the connection, and created on the record. Second, partial records limit the number of table extensions that need to be joined.
 
 > [!NOTE]  
-> In version 23, the data model for table extensions was changed. In this new model, data from all table extensions on a table are stored in the same companion table. This means that there will be at most one SQL join involved when doing data operations on the table (as seen from AL). Partial records can still eliminate the join to the single companion table in version 23, if all loaded fields reside in the base table.
+> With [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2023 release wave 2, the data model for table extensions has changed. In this new model, data from all table extensions on a table are stored in the same companion table. This means that there will be at most one SQL join involved when doing data operations on the table (as seen from AL). Partial records can still eliminate the join to the single companion table in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2023 release wave 2, if all loaded fields reside in the base table.
 
 The performance gains compound when looping over many records, because both effects scale with the number of rows loaded.
 
 For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
 
-### Table extension impact on performance (for version 22 and earlier)
+### Table extension impact on performance (for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2023 release wave 1 and earlier)
 
 > [!NOTE]  
 > In version 23, the data model for table extensions was changed. In this new model, data from all table extensions on a table are stored in the same companion table. This means that there will be at most one SQL join involved when doing data operations on the table (as seen from AL).
