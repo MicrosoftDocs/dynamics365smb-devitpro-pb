@@ -26,7 +26,7 @@ When designing an Excel layout, you need to know the following information:
 - How the layout file is validated when importing it into [!INCLUDE[prod_short](../includes/prod_short.md)].
 - How the [!INCLUDE[prod_short](../includes/prod_short.md)] server merges the layout with data when running the report.
 
-### Excel layout data contract
+### Excel layout data contract in release 2023 wave 1 and prior versions
 
 Every Excel layout file must have a worksheet called _Data_. This worksheet has one purpose: defining which metadata fields from the the dataset definition of the report object the layout uses, which is sometimes also called the _data contract_ between the layout file and the report dataset definition. The data contract consists of the following rules:
 
@@ -39,6 +39,13 @@ Every Excel layout file must have a worksheet called _Data_. This worksheet has 
 > When developing Excel layouts, you can add demo data to the _Data_ worksheet to make it easier to see the end result when the report is rendered with the layout. The data is removed when importing it to [!INCLUDE[prod_short](../includes/prod_short.md)] but if you include Excel layouts in an app/extension, you might want to keep the demo data there for easier troubleshooting later.
 
 For more information about the data contract, see [Understanding Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report#understanding-excel-layouts).
+
+### Excel layout data contract in release 2023 wave 2 and later versions
+Introduced in Business Central 2023 release wave 2, you can also work with reports that render multiple worksheets for the report data (if the dataset has multiple data items defined). With this release, you can set the property _ExcelLayoutMultipleDataSheets_ to true on the report. Then the AL runtime will generate an Excel worksheet for each data item and place its data there. The default is to use a single sheet for all data (as described above).
+
+Multiple sheets will be named #DataItemName, where DataItemName is the dataitem name used in the report design. Adding new empty Excel layouts to the report will use the property value to determine the sheet structure.
+
+With data in multiple worksheets, the report layout can now easily include data models defined with the PowerPivot feature in Excel.
 
 ### Validating an Excel layout
 
@@ -126,6 +133,7 @@ It's possible to specify multiple layouts for a report. For more information, se
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md)  
 [ExcelLayout Property](properties/devenv-excellayout-property.md)  
+[ExcelLayoutMultipleDataSheets Property](properties/devenv-ExcelLayoutMultipleDataSheets-property.md)   
 [LayoutFile Property](properties/devenv-layoutfile-property.md)  
 [Save Excel workbooks and report files in OneDrive](/dynamics365/business-central/across-onedrive-overview#save-excel-workbooks-and-report-files-in-onedrive)  
 [Understanding Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report#understanding-excel-layouts)  
