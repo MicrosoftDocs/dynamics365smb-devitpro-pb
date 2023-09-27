@@ -184,11 +184,17 @@ When writing AL code for which the fields needed on a record or recordref are kn
 
 Partial records improve performance in two major ways. First, they limit the fields that need to be loaded from the database. Loading more fields leads to more data being read, sent over the connection, and created on the record. Second, partial records limit the number of table extensions that need to be joined.
 
+> [!NOTE]  
+> In version 23, the data model for table extensions was changed. In this new model, data from all table extensions on a table are stored in the same companion table. This means that there will be at most one SQL join involved when doing data operations on the table (as seen from AL). Partial records can still eliminate the join to the single companion table in version 23, if all loaded fields reside in the base table.
+
 The performance gains compound when looping over many records, because both effects scale with the number of rows loaded.
 
 For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
 
-### Table extension impact on performance
+### Table extension impact on performance (for version 22 and earlier)
+
+> [!NOTE]  
+> In version 23, the data model for table extensions was changed. In this new model, data from all table extensions on a table are stored in the same companion table. This means that there will be at most one SQL join involved when doing data operations on the table (as seen from AL).
 
 Table extensions are separate tables in the database and therefore need to be joined together in the data stack when accessed via a record. With tables extensions being stored individually, the amount of joins necessary grows with the number of table extensions extending a table. Together with the current inability to define indexes that span base and extension fields, one should avoid splitting one's code into too many table extensions.
 
@@ -204,6 +210,8 @@ Here are the pros and cons of the two data models:
 |---------------------------------|-------------|
 |Table extension | Fields can be added to lists and are searchable. <br> Always loaded with the base table. <br> Expensive at runtime but easy to use. <br> Use only for critical fields. |
 | Related tables | Need to set up table relations. <br> Dedicated page for editing. <br> Requires flow field to be shown in lists. <br> Doesn't affect performance of base table. <br> Excellent for FactBoxes. | 
+
+
 
 ### Limit your event subscriptions
 
