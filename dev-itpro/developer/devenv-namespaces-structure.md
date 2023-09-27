@@ -95,3 +95,4 @@ You're now ready to open Visual Studio Code and use the AL code actions to apply
 ## See also
 
 [Namespaces in AL](devenv-namespaces-overview.md)  
+[Programming in AL](devenv-programming-in-al.md)  
