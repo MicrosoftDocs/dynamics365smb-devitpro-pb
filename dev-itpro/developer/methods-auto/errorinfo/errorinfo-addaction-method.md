@@ -54,7 +54,7 @@ The **AddAction** method accepts four parameters:
 - **Tooltip**, which is the text string that appears as the tooltip of the action in the error UI.
 
 ## Example
-In the following example from the [!INCLUDE[prod_short](includes/prod_short.md)] base app, you can see how an error message can be annotated with actions that the user can do to get unblocked.
+In the following example from the [!INCLUDE[prod_short](../../../includes/prod_short.md)] base app, you can see how an error message can be annotated with actions that the user can do to get unblocked.
 
 ```AL
  procedure PreventModifyRecIfOpenApprovalEntryExistForCurrentUser(Variant: Variant)
