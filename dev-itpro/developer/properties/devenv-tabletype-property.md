@@ -47,7 +47,7 @@ TableType = CDS;
 Tables that are marked as **CDS** or **ExternalSQL** are considered external tables that are not managed by [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. 
 
 > [!IMPORTANT]  
-> We advise against creating tables of type CDS manually. Instead, use the integration mapping functionality.
+> We advise against creating tables of type CRM/CDS manually. Instead, use the [AL Table Proxy Generator](../devenv-al-table-proxy-generator.md). 
 <!-- For more information, see [Introduction to Dynamics 365 for Sales Integration Customization in Dynamics NAV](Introduction-to-Dynamics-CRM-Integration-Customization-in-Dynamics-NAV.md).  
  -->
 
