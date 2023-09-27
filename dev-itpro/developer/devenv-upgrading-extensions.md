@@ -17,6 +17,9 @@ This article provides information about how to make a newer version of extension
 > [!NOTE]
 > An *upgrade* is defined as enabling an extension that has a greater version number, as defined in the app.json file, than the current installed extension version.
 
+> [!NOTE]  
+> It's recommended to upgrade apps that require extensive code logic upgrade outside of business hours. The upgrade might affect users working with the business logic.
+
 ## Writing upgrade code
 
 When you develop a new extension version, you must consider the data from the previous version. Determine the modifications that must be made to the data to make it compatible with the current version. For example, maybe the new version adds a new field that needs default values set for existing records. Or, the new version adds new tables that must be linked to existing records. To address this type of data handling, you must write upgrade code for the extension version. If there are no data changes between the extension versions, you don't need to write upgrade code. All data that isn't modified by upgrade code will automatically be available when the process completes.
