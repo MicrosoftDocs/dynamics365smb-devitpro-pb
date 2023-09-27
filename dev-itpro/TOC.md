@@ -56,6 +56,7 @@
 ### [Set up company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Onboarding experiences](administration/onboarding-experiences.md)
+### [Selling Business Central apps through AppSource](developer/devenv-sell-apps-appsource.md)
 ## Frequently asked questions
 ### [Frequently asked questions (general)](faq.yml)
 ### [FAQ for developing in AL](developer/devenv-dev-faq.md)

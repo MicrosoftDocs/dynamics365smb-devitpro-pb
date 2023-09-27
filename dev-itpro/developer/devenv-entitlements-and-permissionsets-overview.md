@@ -2,7 +2,7 @@
 title: "Entitlements and Permission Sets Overview"
 description: Learn about the different built-in methods to control which users can do what so that you can design the Business Central permission sets more precisely. 
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 08/18/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains a number of 
 
 Permission sets included with Microsoft and AppSource apps defined as AL objects are of the type **System**. <!-- If they are included in XML format, they are of the type **Extension**.--> <!-- Old data-sourced permissions are also tagged as System type. These are permission sets that on-premises admins/devs can add using our PowerShell cmdlets or creating and importing XML files with scope=system-->
 
-End-users cannot create or edit these types of permission sets or the permissions within them. However, they can copy these permission sets to define their own permission sets and permissions. Permission sets that users create, from new or as copies, are of the type **User-Defined** and they can be edited.
+End-users can't create or edit these types of permission sets or the permissions within them. However, they can copy these permission sets to define their own permission sets and permissions. Permission sets that users create, from new or as copies, are of the type **User-Defined** and they can be edited.
 
 ## Creating entitlements and permission sets in AL
 
@@ -40,8 +40,10 @@ When developing an app, entitlements and permission sets are handled as objects 
 - [PermissionSet](devenv-permissionset-object.md)  
 - [PermissionSetExtension](devenv-permissionset-ext-object.md)
 
+<!--
 > [!NOTE]  
 > In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases.  
+-->
 
 ## Upgrade considerations
 
