@@ -4,7 +4,7 @@ description: This article describes how to download and use the ALDoc tool to ge
 author: SusanneWindfeldPedersen
 ms.topic: conceptual
 ms.reviewer: solsen
-ms.date: 09/01/2023
+ms.date: 09/27/2023
 ms.author: solsen
 ms.custom: bap-template
 ---
@@ -89,14 +89,14 @@ When all prerequisites have been successfully installed, the next step is to use
      .\\aldoc\\aldoc.exe init -o .\\mypath\\ -t 'F:\\AL\\.alpackages\\Microsoft_System Application_23.0.00000.0.app'
     ```
 
-2. Next, generate the reference files for each .app file that you specified in the previous step. The `build` command *must be run for each .app file* that you want to generate documentation for. Furthermore, it's *important* for the cross references that the `build` command has access to the complete set of .app files that you intend to generate documentation for. You specify these files with the `-c` parameter.
+2. Next, generate the reference files for each .app file that you specified in the previous step. The `build` command *must be run for each .app file* that you want to generate documentation for. Furthermore, it's *important* for the cross references that the `build` command has access to the complete set of dependent .app files that you intend to generate documentation for. You specify these files with the `-c` parameter.
 
     ```bash
-     {path_to_aldoc}\\aldoc.exe build -o .\\{path-to-generated-content}\\ -c '{path_to_package1}','{path_to_package2}',...,'{path_to_package3}' -s {path_to_package}
+     {path_to_aldoc}\\aldoc.exe build -o .\\{path-to-generated-content}\\ -c '{path_to_package_cache1}','{path_to_package_cache2}',...,'{path_to_package_cache3}' -s {path_to_package}
      ```
     ```bash
      # Example
-     .\\aldoc\\aldoc.exe build -o .\\mypath\\ -c 'c:\\my_path_package1','c:\\my_path_package2','c:\\my_path_package3' -s 'F:\\AL\\.alpackages\\Microsoft_System Application_23.0.00000.0.app'
+     .\\aldoc\\aldoc.exe build -o .\\mypath\\ -c 'c:\\my_path_package_cache1','c:\\my_path_package_cache2','c:\\my_path_package_cache3' -s 'F:\\AL\\.alpackages\\Microsoft_System Application_23.0.00000.0.app'
     ```
 
 In the next steps, you will use the DocFx tool to build and host the static website.
