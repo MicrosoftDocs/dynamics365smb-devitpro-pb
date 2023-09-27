@@ -18,7 +18,7 @@ This article provides information about how to make a newer version of extension
 > An *upgrade* is defined as enabling an extension that has a greater version number, as defined in the app.json file, than the current installed extension version.
 
 > [!NOTE]  
-> It's recommended to upgrade apps that require extensive code logic upgrade outside of business hours. The upgrade might affect users working with the business logic.
+> It's recommended to upgrade extensions that require extensive code logic upgrade outside of business hours. The upgrade might affect users working with the business logic.
 
 ## Writing upgrade code
 
