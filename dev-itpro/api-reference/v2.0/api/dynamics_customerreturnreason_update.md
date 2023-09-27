@@ -21,11 +21,11 @@ Updates the properties of a customer return reason object for [!INCLUDE[prod_sho
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
+
 ```
 PATCH businesscentralPrefix/companies({id})/customerReturnReasons({id})
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## Request headers
 
 |Header|Value|
@@ -47,31 +47,29 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values) -->
+
 ```json
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/customerReturnReasons({id})
 Content-type: application/json
 {
-    "id" : ,
-    "code" :
+  "description": "Wrong item variant"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here is an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "id" : ,
-    "code" : ,
-    "description" :
+    "id": "6ea22bf6-a449-ee11-ad0b-a1422c0f7f1f",
+    "code": "VARIANT",
+    "description": "Wrong item variant"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  

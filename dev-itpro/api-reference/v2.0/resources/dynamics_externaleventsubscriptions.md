@@ -73,7 +73,7 @@ Here is a JSON representation of the externaleventsubscriptions resource.
 
 ## See Also
 
-[GET external event subscriptions](../api/dynamics_externaleventsubscriptions_get.md)
-[DELETE external event subscriptions](../api/dynamics_externaleventsubscriptions_delete.md)
-[POST external event subscriptions](../api/dynamics_externaleventsubscriptions_create.md)
-[PATCH external event subscriptions](../api/dynamics_externaleventsubscriptions_update.md)
+[GET external event subscriptions](../api/dynamics_externaleventsubscriptions_get.md)  
+[DELETE external event subscriptions](../api/dynamics_externaleventsubscriptions_delete.md)  
+[POST external event subscriptions](../api/dynamics_externaleventsubscriptions_create.md)  
+[PATCH external event subscriptions](../api/dynamics_externaleventsubscriptions_update.md)  

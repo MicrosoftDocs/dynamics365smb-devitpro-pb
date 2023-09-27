@@ -20,8 +20,8 @@ Update the properties of a sales quote line object for [!INCLUDE[prod_short](../
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
-PATCH businesscentralPrefix/companies({id})/salesQuotes({id})/salesQuoteLines({salesQouteLineId})
-PATCH businesscentralPrefix/companies({id})/salesQuoteLines({salesQouteLineId})
+PATCH businesscentralPrefix/companies({id})/salesQuotes({id})/salesQuoteLines({salesQuoteLineId})
+PATCH businesscentralPrefix/companies({id})/salesQuoteLines({salesQuoteLineId})
 ```
 
 ## Request headers

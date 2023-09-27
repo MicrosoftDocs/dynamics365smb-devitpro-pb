@@ -3,7 +3,7 @@ title: "AL Profiler overview"
 description: "Description of how to use the AL profiler and the Performance Profiler to analyze performance in code written for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/27/2023
+ms.date: 08/30/2023
 ms.topic: overview
 ms.author: solsen
 ---
@@ -73,7 +73,8 @@ For sampling profiling, choose `Sampling` as the `profilingType` in the `launch.
             "authentication": "Windows",
             "breakOnNext": "WebClient",
             "executionContext": "Profile",
-            "profilingType": "Sampling"
+            "profilingType": "Sampling",
+            "profileSamplingInterval": 100
         }
 ```
 

@@ -650,6 +650,7 @@
 ###### [Retrieving date data](developer/devenv-query-retrieve-date-data.md)
 ###### [Using queries instead of record variables](developer/devenv-query-using-instead-record-variables.md)
 ###### [Accessing columns of a query dataset](developer/devenv-query-accessing-columns.md)
+###### [Analyze query data using analysis mode](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Transferring data](developer/devenv-data-transfer.md)
 #### Importing and exporting data
 ##### [XMLport overview](developer/devenv-xmlport-overview.md)
@@ -964,16 +965,17 @@
 #### [The Microsoft_Application.app file](developer/devenv-application-app-file.md)
 #### [Publishing a code-customized base application](developer/devenv-publish-code-customization.md)
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
-### Examples
-#### [Extending item charge distribution methods](developer/devenv-extending-item-charges.md)
-#### [Extending price calculations](developer/devenv-extending-best-price-calculations.md)
-#### [Extending pages previously based on the Date virtual table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
-#### [Extending data archiving](developer/devenv-data-archive-extension.md)
-#### [Extending document sharing and OneDrive integration](developer/devenv-extending-document-sharing-onedrive.md)
-#### [Extending customer, vendor, and item templates](developer/devenv-extending-templates.md)
-#### [Extending email capabilities](developer/devenv-extending-email.md)
-#### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
-#### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
+#### Examples
+##### [Extending item charge distribution methods](developer/devenv-extending-item-charges.md)
+##### [Extending price calculations](developer/devenv-extending-best-price-calculations.md)
+##### [Extending pages previously based on the Date virtual table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
+##### [Extending data archiving](developer/devenv-data-archive-extension.md)
+##### [Extending document sharing and OneDrive integration](developer/devenv-extending-document-sharing-onedrive.md)
+##### [Extending customer, vendor, and item templates](developer/devenv-extending-templates.md)
+##### [Extending email capabilities](developer/devenv-extending-email.md)
+##### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
+##### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
+##### [Extending Currency Exchange Rate Adjustments](developer/devenv-extend-exchange-rates.md)
 
 ### Using events 
 #### [Event types](developer/devenv-event-types.md)
@@ -1069,6 +1071,7 @@
 #### [FAQ about managing and submitting your Business Central offer](developer/app-faq-offer.md)
 #### [Writing extension install code](developer/devenv-extension-install-code.md)
 #### [Publish and install an extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
+#### [Uninstall and unpublish an extension](developer/devenv-unpublish-and-uninstall-extension-v2.md)
 #### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
 
 ### Updating and hotfixing

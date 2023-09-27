@@ -27,7 +27,9 @@ Sets the object you want to run immediately when the action is activated.
 ## Remarks  
 
 Use this property to select the object you want to run.  
-  
+
+The following object types are supported: pages, reports, codeunits, and from version 23 also queries.
+
 Use the following properties to set parameters for the object you want to run:  
   
 - [RunPageView Property](devenv-runpageview-property.md)  

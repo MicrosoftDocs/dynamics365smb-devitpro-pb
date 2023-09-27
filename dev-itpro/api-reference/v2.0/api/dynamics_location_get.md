@@ -57,19 +57,19 @@ Here is an example of the response.
 <!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 {
-    "id" : "",
-    "code" : "",
-    "displayName" : "",
-    "contact" : "",
-    "addressLine1" : "",
-    "addressLine2" : "",
-    "city" : "",
-    "state" : "",
-    "country" : "",
-    "postalCode" : "",
-    "phoneNumber" : "",
-    "email" : "",
-    "website" : ""
+    "id": "59f029b1-508c-ed11-aada-000d3a298ab3",
+    "code": "MAIN",
+    "displayName": "Main Warehouse",
+    "contact": "Eleanor Faulkner",
+    "addressLine1": "UK Campus Bldg 5",
+    "addressLine2": "Thames Valley Park",
+    "city": "Reading",
+    "state": "",
+    "country": "GB",
+    "postalCode": "RG6 1WG",
+    "phoneNumber": "+44-(0)10 5214 4987",
+    "email": "",
+    "website": ""
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->

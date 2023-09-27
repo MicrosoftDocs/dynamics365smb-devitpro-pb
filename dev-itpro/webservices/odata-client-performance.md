@@ -10,7 +10,7 @@ ms.author: kepontop
 ms.date: 07/03/2023
 ---
 
-# OData/API client prformance
+# OData/API client performance
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports OData web services (APIs and pages exposed as OData endpoints) to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the client). This article focuses on client performance.
 

@@ -3,7 +3,7 @@ title: "Choosing runtime version in AL"
 description: "How to choose runtime in AL for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/23/2023
+ms.date: 09/05/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Choosing runtime version in AL
 
-The capabilities and features of AL for [!INCLUDE[prod_short](../includes/prod_short.md)] are determined by the runtime version. The runtime version can be specified in the `app.json` file for a project. It is expressed with the following syntax, for example: `"runtime": "7.0"`. Specifying the runtime version is mostly interesting for scenarios where you develop for on-prem or a mix of on-prem and SaaS. For SaaS only development, you will most likely be interested in using the current runtime. If the runtime setting is not specified, the compiler will detect the runtime that matches the server.
+The capabilities and features of AL for [!INCLUDE[prod_short](../includes/prod_short.md)] are determined by the runtime version. The runtime version can be specified in the `app.json` file for a project. It's expressed with the following syntax, for example: `"runtime": "12.0"`. Specifying the runtime version is mostly interesting for scenarios where you develop for on-prem or a mix of on-prem and SaaS. For SaaS only development, you will most likely be interested in using the current runtime. If the runtime setting is not specified, the compiler will detect the runtime that matches the server.
 
 The runtime version specified in the `app.json` file determines which runtime the project is targeting. An extension can be published to a server with the same or a later runtime version as the runtime version specified in the `app.json` file of the extension.
 
@@ -42,6 +42,7 @@ The available options for setting the `runtime` in AL are:
 |`9.2`          |Business Central 2022 release wave 1 update 2|20.2|
 |`10.0`         |Business Central 2022 release wave 2|21.0|
 |`11.0`         |Business Central 2023 release wave 1|22.0|
+|`12.0`         |Business Central 2023 release wave 2|23.0|
 
 ## Setting the runtime version
 
