@@ -44,7 +44,7 @@ If you prefer to set up an environment with basic authentication just to explore
 
 Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#exploring-apis-with-postman-and-basic-authentication) section, we use Postman.
 
-## <a name="Microsoft Entra ID"></a>Setting up Microsoft Entra ID based authentication
+## Setting up Microsoft Entra ID based authentication
 
 Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
 
