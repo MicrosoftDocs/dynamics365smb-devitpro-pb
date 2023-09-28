@@ -15,6 +15,8 @@ ms.date: 02/24/2023
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Manage the apps that are installed on the environment.
 
 ## Important Information before you get started
