@@ -11,6 +11,8 @@ ms.collection: get-started
 
 # Get Started with Building Apps
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE [prod_long](../includes/prod_long.md)] is a business management solution that helps companies connect their services and operations to streamline business processes, improve customer interactions and make better decisions. With this modern business platform, you have the convenience to quickly tailor, extend, and build applications so that they fit your specific needs with little to no code development.
 
 Build a business app for a specific industry, process, or department such as HR, finance, marketing or operations. Then, publish your app to [the Microsoft commercial marketplace](https://appsource.microsoft.com/partners), where customers can find your app, try it and get in touch with you. For more information, see [What is the Microsoft commercial marketplace?](/azure/marketplace/overview).  

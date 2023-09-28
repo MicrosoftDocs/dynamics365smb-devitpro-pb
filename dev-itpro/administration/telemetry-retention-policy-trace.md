@@ -15,6 +15,8 @@ ms.author: jswymer
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2, update 17.1 and later
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Administrators define retention policies to specify how frequently they want [!INCLUDE[prod_short](../includes/prod_short.md)] to delete outdated data in tables that contain log entries and archived records. For example, cleaning up log entries makes it easier to work with the data that's relevant. Policies can include all data in the tables that is past the expiration date. Or you can add filter criteria to include only certain expired data in the policy.
 
 To gather this telemetry data, you'll have to set up retention policies on tables that contain log entries and archived records. For more information, see [Define Retention Policies](/dynamics365/business-central/admin-data-retention-policies) in the Application help.

@@ -11,6 +11,8 @@ author: jswymer
 ---
 # Web Services Authentication
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 When users send a request for a web service, they're authenticated according to the credential type that is configured for [!INCLUDE[server](../developer/includes/server.md)]. To access a web service, users must provide valid credentials for the credential type being used. If [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Windows credential type, then users are automatically authenticated against the Windows account that their computer is running under. In this case, they aren't prompted for their credentials. For other credential types, users are prompted to enter a user name and password.
 
 [!INCLUDE[webservice_key_deprecated](../includes/web-service-key-deprecated.md)]

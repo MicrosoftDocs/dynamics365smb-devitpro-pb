@@ -12,6 +12,8 @@ ms.custom: bac-template
 ---
 # Controlling Telemetry Cost
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE[telemetryCost](../includes/include-telemetry-cost.md)]
 
 ## Control data ingestion cost

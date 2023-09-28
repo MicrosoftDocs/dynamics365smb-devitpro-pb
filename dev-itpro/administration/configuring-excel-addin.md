@@ -11,6 +11,8 @@ ms.date: 05/25/2022
 ---
 # Setting up the Business Central Add-in for Excel in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-premises
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article provides guidance for how to configure [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premise so that users can edit data in Excel by using the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] add-in for Excel.
 
 > [!NOTE]

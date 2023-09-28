@@ -12,6 +12,9 @@ ms.date: 10/01/2021
 ---
 
 # Overview of the System Application
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The System Application contains modules that interact with the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform and online ecosystem to support the business logic in the Base Application. If you are developing extensions or add-ons for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you will probably need to use one or more of the objects in the modules. 
 
 This topic provides an overview of the modules in the System Application. For more details about each module, and to get a look at the code, choose the **ReadMe** link for the module to visit our [ALAppExtensions](https://github.com/microsoft/ALAppExtensions) repository on GitHub.

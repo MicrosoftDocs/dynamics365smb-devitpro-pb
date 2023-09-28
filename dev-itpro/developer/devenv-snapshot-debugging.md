@@ -14,6 +14,8 @@ ms.author: solsen
 > [!NOTE]  
 > With [!INCLUDE[prod_short](includes/prod_short.md)] 17.2 - Snapshot Debugging is available in production cloud environments.
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 With snapshot debugging, you can record AL code that runs on the server, and when it has completed, debug the recorded *snapshot* in Visual Studio Code. Snapshot debugging lets you inspect code execution and variables in the production environment on a cloud service for a specified user session. To create and download a snapshot file that exists on the server on behalf of an end-user, the user must be part of the **D365 Snapshot Debug** permission set. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
 Snapshot debugging introduces the concept of *snappoints*. A snappoint is a breakpoint in Visual Studio Code that is set while creating a snapshot but they don't stop execution of code like regular debugging. Snappoints log the state at the breakpoint for later offline inspection. Snapshot debugging will record AL code as it runs on the server, but will only collect variable information on: 

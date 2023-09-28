@@ -12,6 +12,8 @@ ms.author: jswymer
 
 # Managing technical support
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 When users report a problem with [!INCLUDE [prod_short](../developer/includes/prod_short.md)], superusers or the internal administrator can often find a solution. The internal administrator can find technical information in the **Help and Support** page, and they can then escalate relevant issues to the reselling partner.  
 
 The reselling partner can sign in to their customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as the delegated admin for troubleshooting. Sometimes, they create a sandbox environment based on production data or troubleshooting.  

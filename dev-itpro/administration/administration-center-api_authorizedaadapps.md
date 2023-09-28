@@ -13,6 +13,8 @@ ms.date: 02/24/2023
 
 # Authorized Microsoft Entra apps 
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Authorized Apps are Microsoft Entra apps authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
 
 ## Get Authorized Microsoft Entra apps

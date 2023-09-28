@@ -10,6 +10,8 @@ ms.reviewer: bholtorf
 
 # Create customer-centric onboarding experiences using SignupContext
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Microsoft partners can create customer-centric onboarding experiences to help customers quickly get started with [!INCLUDE [prod_short](../includes/prod_short.md)]. Speeding up the onboarding process saves time and money for both the partner and customer. The `SignupContext` parameter enables partners to create experiences that can help the customer try out and evaluate [!INCLUDE [prod_short](../includes/prod_short.md)], and then onboard at their own pace, without hands-on help from the partner, who instead provides onboarding services digitally. Allowing prospects to learn about [!INCLUDE [prod_short](../includes/prod_short.md)] from their own perspectives increases the chance of them becoming paying customers.
 
 Starting trials for customers is a multi-step task for partners:

@@ -12,6 +12,8 @@ ms.author: solsen
 
 # Register a customer production environment for manual deployment
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 > *The prerequisites for this how to is that you have completed the [Create a Release of Your Application](algo-create-release-app.md) instructions, and that you have an online production environment setup for S2S as specified in [task 2](../administration/automation-apis-using-s2s-authentication.md#task-2-set-up-the-azure-ad-application-in-) in the [Using Service-to-Service (S2S) Authentication](../administration/automation-apis-using-s2s-authentication.md) in the [Using Service to Service Authentication](../administration/automation-apis-using-s2s-authentication.md) topic, using the same Microsoft Entra app as you did in the Create a Release of Your Application scenario.*
 
 > [!NOTE]  

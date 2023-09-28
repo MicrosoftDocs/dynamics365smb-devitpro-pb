@@ -15,6 +15,8 @@ ms-custom: bap-template
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Outgoing web service request telemetry gathers data about outgoing web service requests sent using the AL HTTPClient module. As a partner, the data gives you insight into the execution time and failures that happen in external services that your environment and extensions depend on. Use the data to monitor environments for performance issues caused by external services, and be more proactive in preventing issues from occurring.
 
 ## General dimensions
