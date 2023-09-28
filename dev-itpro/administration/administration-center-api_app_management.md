@@ -387,7 +387,7 @@ This Logic App runs a specified number of times a day (parameter in deployment p
 
 ### Prerequisites
 
-Business Central admin center API is configured for S2S authentication of Microsoft Entra apps. For more information, go to [Authenticate using service-to-service AAD Apps](administration-center-api.md#authenticate-using-service-to-service-aad-apps-client-credentials-flow).
+Business Central admin center API is configured for S2S authentication of Microsoft Entra apps. For more information, go to [Authenticate using service-to-service AAD Apps](administration-center-api.md#authenticate-using-service-to-service-microsoft-entra-apps-client-credentials-flow).
 
 ### Preparation
 
