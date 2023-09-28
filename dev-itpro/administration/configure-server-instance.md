@@ -457,7 +457,7 @@ The following table describes fields on the **Upgrade** tab in the [!INCLUDE[adm
 
 ## <a name="external-events"></a>External event settings 
 
-[!INCLUDE[2023_releasewave2.md](../includes/2023_releasewave2.md)]
+[!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
 
 The following table describes parameters related to the external business events functionality. [Learn more about business events on Business Central](../developer/business-events-overview.md).
 

@@ -56,6 +56,7 @@
 ### [Set up company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Onboarding experiences](administration/onboarding-experiences.md)
+### [Selling Business Central apps through AppSource](developer/devenv-sell-apps-appsource.md)
 ## Frequently asked questions
 ### [Frequently asked questions (general)](faq.yml)
 ### [FAQ for developing in AL](developer/devenv-dev-faq.md)
@@ -1386,6 +1387,7 @@
 ### Examples of how to uptake deprecations  
 #### [Migrate from User Groups to Permission Sets or Security Groups](upgrade/deprecated-features-user-groups.md)  
 #### [Migrating from legacy views to modern views](developer/devenv-views-legacy.md)  
+#### [NA bank reconciliation and deposits are deprecated in the North American version](upgrade/deprecated-features-na-bank-rec.md)
 ## Local functionality
 ### [Deprecated fields, and fields marked as obsolete in local functionality](upgrade/deprecated-fields.md)
 ### [Deprecated features in the Austrian Version](upgrade/deprecated-features-at.md)
