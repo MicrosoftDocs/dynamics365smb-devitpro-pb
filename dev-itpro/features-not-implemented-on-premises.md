@@ -11,6 +11,8 @@ ms.date: 06/13/2022
 ---
 # Features not implemented in on-premises deployments of [!INCLUDE[prod_long](includes/prod_long.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/powerapps-docs-pr/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article lists features that are available in [!INCLUDE[prod_short](includes/prod_short.md)] but not in on-premises deployments. The article is divided into two sections:
 
 - The first section lists features that are available under specific circumstances in on-premises deployments.  
