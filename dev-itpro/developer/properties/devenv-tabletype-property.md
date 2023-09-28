@@ -44,7 +44,10 @@ TableType = CDS;
 
 ## Remarks
 
-Tables that are marked as **CDS** or **ExternalSQL** are considered external tables that are not managed by [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. 
+Tables that are marked as **CDS** or **ExternalSQL** are considered external tables that are not managed by [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.
+
+> [!NOTE]  
+> Tables of types `CRM` and `CDS` are used to create outgoing service calls towards Dataverse and Dynamics 365 Apps. Such calls are not counted against [Business Central API limits](../../administration/operational-limits-online.md), but are counted against [Power Platform request limits](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits).
 
 > [!IMPORTANT]  
 > We advise against creating tables of type CRM/CDS manually. Instead, use the [AL Table Proxy Generator](../devenv-al-table-proxy-generator.md). 
