@@ -14,6 +14,8 @@ ms.service: dynamics365-business-central
 
 > **APPLIES TO** [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online is automatically configured for integration with other online services.
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article describes how to set up [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises to use services that are based on Microsoft Azure. There are several services that you can integrate with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, like Cortana Intelligence and Power BI. Before using the services, you have to register Business Central on-premises in Microsoft Entra ID and give it access to the services. For example, the [Sales and Inventory Forecast](/dynamics365/business-central/ui-extensions-sales-forecast) extension requires that you specify an API key and API URI. Other services require similar information.
 
 > [!NOTE]

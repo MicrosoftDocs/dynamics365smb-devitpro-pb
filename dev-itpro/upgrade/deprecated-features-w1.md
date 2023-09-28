@@ -15,6 +15,8 @@ This article describes the features that have been moved, removed, or replaced i
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 ## Changes in 2023 release wave 2
 
 The following features are marked as `obsolete:pending` in 2023 release wave 2.

@@ -14,6 +14,8 @@ ms.author: solsen
 
 # Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE[prod_short](../../includes/prod_short.md)] on-premises and online expose an API that makes it possible to integrate with other services. To enable integration with these APIs, you must go through a few steps to enable the access first. For more information about these steps, see [Enabling APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md).
 
 ## Accessing the endpoints

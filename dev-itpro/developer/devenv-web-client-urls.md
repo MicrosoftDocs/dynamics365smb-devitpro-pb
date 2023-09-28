@@ -12,6 +12,8 @@ author: jswymer
 
 # Web Client URL
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 There are several parameters that you can add to the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL to manipulate what is displayed in the client. For example, you can open a specific company, target a specific page, report, or table. The following URL displays page **9305 Sales Order List** for the [!INCLUDE[demoname](includes/demoname_md.md)] company:
 
 ```

@@ -11,6 +11,9 @@ ms.author: jswymer
 author: jswymer
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2019 Release Wave 2
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 <!--
 > [!IMPORTANT]  
 > [!INCLUDE[vnext_preview](../developer/includes/vnext_preview.md)] 

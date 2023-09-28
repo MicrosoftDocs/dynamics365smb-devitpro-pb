@@ -12,6 +12,8 @@ ms.reviewer: jswymer
 
 # Report a performance issue
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 When a customer has a situation where performance is problematic, you might need to raise a support ticket, see how to do that here: [Escalate Support Issues to Microsoft](raise-support-case.md).
 
 > [!TIP]

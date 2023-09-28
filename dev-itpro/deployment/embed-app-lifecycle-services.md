@@ -13,6 +13,8 @@ ms.date: 04/01/2021
 
 # Managing an [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [!INCLUDE[embed app](../developer/includes/embedapp.md)] in Microsoft Lifecycle Services
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Microsoft provides essential functionality within [Microsoft Lifecycle Services](https://lcs.dynamics.com/v2) collaboration portal (LCS) to support qualified ISVs in managing the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] based on [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.  
 
 ## Creating LCS project

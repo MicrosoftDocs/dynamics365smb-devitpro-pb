@@ -14,6 +14,8 @@ ms.author: jswymer
 
 # Get a List of Business Central Environments
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE[prod_short](../includes/prod_short.md)] can have multiple environments. When working with a Business Central API, the name of the environment being connected to must to go into the endpoint URI. You can retrieve a list of environments deployed on the tenant by calling the environments endpoint as described in this article.
 
 ## Request
