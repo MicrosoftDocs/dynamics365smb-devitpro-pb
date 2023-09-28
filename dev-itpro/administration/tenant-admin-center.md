@@ -12,6 +12,8 @@ ms.author: jswymer
 ---
 # The Business Central Administration Center
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to do administrative tasks for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. Here, administrators can:
 
 - [view and work with production and sandbox environments](tenant-admin-center-environments.md) for the tenant.

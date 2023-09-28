@@ -15,6 +15,8 @@ ms.author: jswymer
 
 **INTRODUCED IN:** Business Central 2020 release wave 1, version 16.0
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Database lock timeout telemetry gathers information about database locks that have timed out. The telemetry data allows you to troubleshoot what caused these locks.
 
 In the client, when a lock has timed out, the user is presented with a message, similar to the following message:

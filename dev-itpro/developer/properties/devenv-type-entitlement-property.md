@@ -40,6 +40,8 @@ The type of entitlement. When a user logs into Business Central, it's checked if
 
 ## Remarks
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 > [!NOTE]  
 > With [!INCLUDE [prod_short](../../includes/prod_short.md)] 2023 release wave 1, the entitlement type `Unlicensed` is introduced. This type is used for scenarios when the user isn't licensed through entitlements mapping to AppSource offer plans. 
 > 

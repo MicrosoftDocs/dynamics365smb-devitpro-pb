@@ -12,6 +12,8 @@ author: jswymer
 
 # Walkthrough: Creating a console application that use OAuth to Authenticate Business Central Web Services (OData or SOAP)
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports the OAuth authorization protocol for SOAP and OData web services. The article provides a walkthrough guide on how to create a custom .NET application that connects to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services and authenticates by using OAuth.
 
 > [!TIP]

@@ -13,6 +13,8 @@ author: jswymer
 
 # Preparing Dynamics NAV or Dynamics 365 Business Central for Upcoming Changes to Browser Cookie Policy
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The web is constantly evolving to improve the user experience, security, and privacy. Upcoming releases of some browsers expected early calendar year 2020 include a change in how cookies are handled. This change affects federated authentication flows and cross-domain hosting scenarios when using these browsers. The change can potentially affect users' ability to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] or Dynamics NAV in one or more of the following situations:
 
 - When using the Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] Outlook Add-In.

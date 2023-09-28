@@ -13,6 +13,8 @@ ms.date: 02/24/2023
 
 # Environments
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Environments are the instances of the application that have been set up for the tenant. An instance can be of either a production type or a sandbox type. The environment APIs can be used to:
 
 - Get information about the environments currently set up for the tenant

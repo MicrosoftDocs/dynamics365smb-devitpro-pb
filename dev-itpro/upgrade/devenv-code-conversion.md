@@ -9,6 +9,8 @@ ms.author: jswymer
 ---
 # Code Conversion from C/AL to AL
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article explains how to convert a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (version 14) C/AL code-customized on-premises solution to AL code.
 
 You'll use this procedure as part of the upgrade process when going from version 14 to a later version, from 18 to 20.

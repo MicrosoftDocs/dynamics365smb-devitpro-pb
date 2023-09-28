@@ -14,6 +14,8 @@ author: jswymer
 
 # Preparing For and Installing the Microsoft Dynamics 365 Business Central App
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article describes how to prepare for and install the Business Central App when you have on-premises solution. If you have Business Central online, there's no preparation. For more information, see [Getting Business Central on Your Mobile Device](/dynamics365/business-central/install-mobile-app).
 
 The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] App is available for download for devices that use following operating systems (OS):

@@ -11,6 +11,8 @@ ms-service: dynamics365-business-central
 ---
 # Embed Business Central Web Client in Other Websites
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The [!INCLUDE[webclient](includes/webclient.md)] can be deployed as an independent website. In some cases, it's useful to embed parts of the [!INCLUDE[webclient](includes/webclient.md)] in other websites, for example, in order to build an internal company portal that not only contains data from [!INCLUDE[prod_short](includes/prod_short.md)], but also contains news feeds, document handling, and so on.  
 
 You can do this by adding an iframe element on the embedding website, such as: `<iframe src="https://MyWebServer/BC210/default.aspx?..." />`. The [!INCLUDE[!INCLUDE[webclient](includes/webclient.md)] will display the ribbon, the navigation pane, and other UI parts inside the frame. You can update the [!INCLUDE[webclient](includes/webclient.md)] to hide the ribbon, the navigation pane, or any UI parts, and only display the core part of the list inside the frame.  

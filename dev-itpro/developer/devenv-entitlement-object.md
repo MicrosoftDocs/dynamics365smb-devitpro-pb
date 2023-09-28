@@ -15,6 +15,8 @@ ms.author: solsen
 
 [!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The entitlement object in [!INCLUDE [prod_short](includes/prod_short.md)] describes which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased or the role that they have in Microsoft Entra ID. 
 
 An entitlement consists of a number of [PermissionSet objects](devenv-permissionset-object.md) put together to constitute a set of meaningful permissions for a user. An entitlement can only include permission set objects, which reference the objects that are included within the same app. This is to ensure that the entitlements included with one app can't alter or redefine the entitlements included with another app. Being entitled defines the maximum permissions a user is entitled to. Actual permissions are the intersection between the permissions the user is entitled to and the permissions the user is assigned.

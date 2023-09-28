@@ -14,6 +14,8 @@ ms.author: jswymer
 
 **INTRODUCED IN:** Exception telemetry was introduced in Business Central 2020 release wave 1, version 16.2. Upgrade tag telemetry was introduced in Business Central 2021 release wave 1, version 18.1.
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Extension upgrade telemetry gathers information about operations that can occur during extension upgrades:
 
 - Upgrade code failures
