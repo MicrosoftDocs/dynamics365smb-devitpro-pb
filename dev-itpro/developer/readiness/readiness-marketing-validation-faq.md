@@ -1,5 +1,5 @@
 ---
-title: "Marketing Validation FAQ"
+title: "Marketing validation FAQ"
 description: "The marketing validation FAQ for Business Central apps"
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Marketing Validation FAQ
+# Marketing validation FAQ
  
 ## Where do I state the countries, editions and languages that my offer supports?  
 

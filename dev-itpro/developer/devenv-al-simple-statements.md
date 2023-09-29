@@ -1,6 +1,6 @@
 ---
-title: "AL Simple Statements"
-description: "Describes the simple statements in AL for Business Central with examples"
+title: "AL simple statements"
+description: Describes the simple, single-line statements in AL for Business Central with examples
 ms.custom: na
 ms.date: 09/21/2022
 ms.reviewer: na

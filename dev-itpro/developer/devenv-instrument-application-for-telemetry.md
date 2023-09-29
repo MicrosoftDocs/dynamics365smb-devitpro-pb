@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
-# Instrumenting an Application for Telemetry
+# Instrumenting an application for telemetry
 
 This article describes how you can implement custom telemetry signals in your application for emitting telemetry data. This data can then be collected and visualized for analyzing the application against the desired business goals, troubleshooting, and more.
 

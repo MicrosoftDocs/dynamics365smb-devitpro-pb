@@ -1,6 +1,6 @@
 ---
-title: "Technical Validation FAQ"
-description: Describing the most common questions when submitting your app to AppSource.
+title: Technical validation FAQ
+description: Describes the most common questions when submitting your app to AppSource for Business Central.
 author: qutreson
 ms.custom: na
 ms.date: 08/24/2023
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.author: qutreson
 ---
 
-# Technical Validation FAQ
+# Technical validation FAQ
 
 This article addresses some of the most frequently asked questions around validation of apps for AppSource submission.
 
