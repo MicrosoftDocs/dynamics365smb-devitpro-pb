@@ -121,7 +121,7 @@
 #### [Contribute to the help](help/contributor-guide.md)
 #### [Authoring guide](help/writing-guide.md)
 #### [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
-### ALDoc tool (preview)
+### ALDoc tool
 #### [Generating help with the ALDoc tool (preview)](help/help-aldoc-generate-help.md)
 #### [Overwriting help with the ALDoc tool (preview)](help/help-aldoc-overwrites.md)
 <!--### Resources for a developer
