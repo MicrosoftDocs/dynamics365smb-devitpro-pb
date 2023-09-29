@@ -101,6 +101,7 @@ landingContent:
             url: devenv-al-methods.md
           - text: Triggers
             url: triggers-auto/devenv-triggers.md
+          - text: Events
             url: devenv-events-in-al.md
           - text: Attributes
             url: attributes/devenv-method-attributes.md
