@@ -21,7 +21,7 @@ Finds a set of records in a table based on the current key and filter.
 
 ## Syntax
 ```AL
-[Ok := ]  Record.FindSet([ForUpdate: Boolean])
+[Ok := ]  Record.FindSet([ForUpdate: Boolean][, UpdateKey: Boolean])
 ```
 ## Parameters
 *Record*  
