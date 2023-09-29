@@ -13,6 +13,8 @@ author: jswymer
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article explains how to develop extensions to send custom telemetry trace signals to Azure Application Insights for viewing and analyzing.
 
 You can add AL code in extensions to emit messages about activities or operations that users do within the application. At runtime, the messages can be picked up by an Application Insights resource, which you set up beforehand. In Application Insights, the custom telemetry events are stored in the *traces* table.   
@@ -84,7 +86,7 @@ The following table explains CustomDimensions that are automatically included in
  -->
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alCallerAppName|Specifies the name of the extension that emitted the telemetry signal to Application Insights. This is typically the base application.|
 |alCallerAppPublishser|Specifies the publisher of the extension that emitted the telemetry signal to Application Insights. This is typically the publisher of the base application, which is `Microsoft`.|
 |alCallerAppVersion|Specifies the version number of the extension that emitted the telemetry signal to Application Insights. This is typically the version of the base application.|

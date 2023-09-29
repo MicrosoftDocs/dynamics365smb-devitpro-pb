@@ -15,6 +15,8 @@ ms.author: jswymer
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 1, version 18.0 and later
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The table index trace gathers data when a index is added to, modified, or removed from a base table by a table extension.  
 
 In AL, an index is defined by a key, which can include one or more table fields. A key in a table extension object can include either fields from the base table or fields from the table extension object itself. A key that includes base tables fields is added as an index on the base table in the SQL database. For more information, see [Table Keys](../developer/devenv-table-keys.md).
@@ -57,7 +59,7 @@ The following table explains other custom dimensions that are common to all tabl
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|

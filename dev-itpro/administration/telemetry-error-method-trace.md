@@ -15,6 +15,8 @@ ms.author: jswymer
 
 [!INCLUDE[2022_releasewave1.md](../includes/2022_releasewave1.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 When a user gets an error dialog while working in Business Central, a telemetry signal is emitted, which can be logged in an Application Insights resource. 
 
 This telemetry data let's you identify and analyze calls to the ERROR method from AL code. You can also set up alerts in Azure Monitor to get notified if many users experience errors.
@@ -51,7 +53,7 @@ The following table explains other custom dimensions that are common to all erro
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|The Azure Active Directory (Azure AD) tenant ID that's used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|The Microsoft Entra tenant ID that's used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|The version number of the component that emits telemetry (see the component dimension)|
 |environmentName|The name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|

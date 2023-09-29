@@ -14,6 +14,8 @@ ms.author: solsen
 
 # Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online (v1.0)
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE[prod_short](../../includes/prod_short.md)] on-premises and online expose an API that makes it possible to integrate with other services. To enable integration with these APIs, you must go through a few steps to enable the access first. For more information about these steps, see [Enabling APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md).
 
 ## Accessing the endpoints
@@ -29,7 +31,7 @@ Once you have the API access enabled, you can write code that integrates your we
 |**Usage**|Production|Production|Rapid development and testing only|
 |**Endpoint**|`https://`<br>`graph.microsoft.com`<br>`/beta/financials/`| *With multiple environments (v2.0):*<br> `https://`<br>`api.businesscentral.dynamics.com/`<br> `v2.0/<environment name>/api/v1.0`  <br>Environment can be a named sandbox or production environment.<br><br> *Without environment (v1.0):* <br>  `https://`<br>`api.businesscentral.dynamics.com/`<br> `v1.0/api/v1.0` <br><br>Sandbox:<br> `https://`<br>`api.businesscentral.dynamics.com/`<br> `v1.0/sandbox/api/v1.0`  | *With multiple environments (v2.0):*  <br>`https://`<br>`api.businesscentral.dynamics.com/`<br>`v2.0/<user domain name>/<environment name>/api/v1.0`<br>Environment can be a named sandbox or production environment. <br><br>*Without multiple environments (v1.0):*<br>`https://`<br>`api.businesscentral.dynamics.com/`<br>`v1.0/<user domain name>/api/v1.0`<br>  Example: `https://`<br>`api.businesscentral.dynamics.com/`<br> `v1.0/cronus.com/api/v1.0` <br><br> Sandbox:<br> `https://`<br>`api.businesscentral.dynamics.com/`<br> `v1.0/cronus.com/sandbox/api/v1.0`|
 |**Availability**|Always enabled|Always enabled|Always enabled|
-|**Authentication**|Azure Active Directory<br> (AAD)|Azure Active Directory<br> (AAD)|Basic authentication.<br> Username and [web service<br> access key](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps) as password.|
+|**Authentication**|Microsoft Entra ID<br> |Microsoft Entra ID<br> |Basic authentication.<br> Username and [web service<br> access key](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps) as password.|
 |**API/Data access**|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|-|
 |**API update cycle**|Monthly|Monthly|Monthly|
 |**Development instance**|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|

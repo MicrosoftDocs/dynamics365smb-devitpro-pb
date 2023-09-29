@@ -14,6 +14,8 @@ ms.author: bholtorf
 
 # The Performance Toolkit extension
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The Performance Toolkit extension is built for Independent Solution Vendors (ISVs) and Value Added Resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prod_short](includes/prod_short.md)] for their customers. Because things change between released versions, it's important that ISVs and VARs can test the performance of their solutions to ensure that new versions don't introduce performance regressions when the volume of users grows. To help, the Performance Toolkit lets developers simulate workloads in realistic scenarios to compare performance between builds of their solutions.
 
 The Performance Toolkit extension helps answer questions such as, "Does my solution for [!INCLUDE[prod_short](includes/prod_short.md)] support X number of users doing this, that, and the other thing at the same time?"
@@ -388,7 +390,7 @@ RunBCPTTests.ps1 -Environment OnPrem -AuthorizationType Windows -Credential $Cre
 > * `AuthorizationType` - Specifies the authorization type needed to authorize to the service. The supported values are `Windows`,`NavUserPassword`, and `AAD`.
 > * `SandboxName` - Specifies the sandbox name. This is necessary only when the environment is either `PROD` or `TIE`. Default is `sandbox`.
 > * `ServiceUrl` - Specifies the base URL of the service. This parameter is used only in `OnPrem` environment. For example, `http://localhost:8080/PerformanceToolkit`.
-> * `ClientId` - Specifies the guid that the [!INCLUDE [prod_short](includes/prod_short.md)] is registered with in Azure AD. To set up Azure AD, go to [https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess).
+> * `ClientId` - Specifies the guid that the [!INCLUDE [prod_short](includes/prod_short.md)] is registered with in Microsoft Entra ID. To set up Microsoft Entra ID, go to [https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess).
 
 1. In Visual Studio Code, on the Explorer Pane, choose the script that you want to run.
 2. Choose the type of environment you want to target.

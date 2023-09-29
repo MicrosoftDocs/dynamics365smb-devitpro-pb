@@ -12,6 +12,8 @@ ms.date: 02/24/2023
 ---
 # Environment Settings
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Allows you to manage environment-specific settings such as the AppInsights key or the update window. 
 
 ## Get Update Settings
@@ -196,7 +198,7 @@ PUT /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}
 
 **INTRODUCED IN:** API version 2.8
 
-Gets the Azure AD group currently assigned to an environment.
+Gets the Microsoft Entra group currently assigned to an environment.
 
 ```
 GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
@@ -234,7 +236,7 @@ If no group is configured for the tenant, returns 204.
 
 **INTRODUCED IN:** API version 2.8
 
-Assigns an Azure AD group to an environment.
+Assigns a Microsoft Entra group to an environment.
 
 ```
 Content-Type: application/json
@@ -251,19 +253,19 @@ POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName
 
 ```
 {
-  "Value": GUID, // The object Id of the Azure AD group, "11111111-aaaa-2222-bbbb-222222222222"
+  "Value": GUID, // The object Id of the Microsoft Entra group, "11111111-aaaa-2222-bbbb-222222222222"
 }
 ```
 
 ### Response
 
-Returns 200 if successful, or 404 if the group doesn't exist in Azure AD.
+Returns 200 if successful, or 404 if the group doesn't exist in Microsoft Entra ID.
 
 ## Clear Security Group
 
 **INTRODUCED IN:** API version 2.8
 
-Clears an Azure AD group that is currently assigned to an environment.
+Clears a Microsoft Entra group that is currently assigned to an environment.
 
 ```
 DELETE /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess

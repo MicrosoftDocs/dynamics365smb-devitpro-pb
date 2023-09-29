@@ -11,6 +11,8 @@ ms-service: dynamics365-business-central
 ---
 # Embed Business Central Web Client in Other Websites
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The [!INCLUDE[webclient](includes/webclient.md)] can be deployed as an independent website. In some cases, it's useful to embed parts of the [!INCLUDE[webclient](includes/webclient.md)] in other websites, for example, in order to build an internal company portal that not only contains data from [!INCLUDE[prod_short](includes/prod_short.md)], but also contains news feeds, document handling, and so on.  
 
 You can do this by adding an iframe element on the embedding website, such as: `<iframe src="https://MyWebServer/BC210/default.aspx?..." />`. The [!INCLUDE[!INCLUDE[webclient](includes/webclient.md)] will display the ribbon, the navigation pane, and other UI parts inside the frame. You can update the [!INCLUDE[webclient](includes/webclient.md)] to hide the ribbon, the navigation pane, or any UI parts, and only display the core part of the list inside the frame.  
@@ -92,11 +94,11 @@ In order to show a list page in an HTML site on a different host, the configurat
 > [!WARNING]  
 >  Be aware that if you remove the `<add name="X-FRAME-OPTIONS" value="SAMEORIGIN" />` line from the web.config file, it can pose a potential security risk.  
 
-## When using Azure Active Directory authentication
+## When using Microsoft Entra authentication
 
-This section describes what to do if [!INCLUDE[prod_short](includes/prod_short.md)] is set up to use Azure Active Directory (Azure AD) authentication, but the page that hosts the iframe doesn't use Azure AD. This section doesn't apply to host pages that use already use Azure AD, such as Sharepoint or other Microsoft 365 products.
+This section describes what to do if [!INCLUDE[prod_short](includes/prod_short.md)] is set up to use Microsoft Entra authentication, but the page that hosts the iframe doesn't use Microsoft Entra ID. This section doesn't apply to host pages that use already use Microsoft Entra ID, such as Sharepoint or other Microsoft 365 products.
 
-In this scenario, [!INCLUDE[prod_short](includes/prod_short.md)] won't load inside the iframe until the user has first been authenticated in the parent frame. The reason is that the Azure AD authentication (sign-in) dialog can't load inside the iframe. So, when [!INCLUDE[prod_short](includes/prod_short.md)] tries to redirect to the authentication dialog, and it gets blocked. This isn't a problem for pages hosted in sites that already use Azure AD, like Microsoft Sharepoint, because users have been already authenticated to access the page in the first place.
+In this scenario, [!INCLUDE[prod_short](includes/prod_short.md)] won't load inside the iframe until the user has first been authenticated in the parent frame. The reason is that the Microsoft Entra authentication (sign-in) dialog can't load inside the iframe. So, when [!INCLUDE[prod_short](includes/prod_short.md)] tries to redirect to the authentication dialog, and it gets blocked. This isn't a problem for pages hosted in sites that already use Microsoft Entra ID, like Microsoft Sharepoint, because users have been already authenticated to access the page in the first place.
 
 To work around this issue, any custom page that you create to host [!INCLUDE[prod_short](includes/prod_short.md)] in an iframe must authenticate the user in the parent frame, before showing the iframe. There are various solutions to this problem, but the simplest solution is probably to use Microsoft Authentication Library for JavaScript (MSAL.js) for client-side authentication. For more information, see [https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser). For other ways of doing the authentication, refer to [Microsoft identity platform](/azure/active-directory/develop/v2-overview) documentation.
 

@@ -13,6 +13,8 @@ ms.service: dynamics365-business-central
 
 # Analyze and Monitor Telemetry with Power BI
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 To make it simple to analyze [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry, we've developed two Power BI apps available from Microsoft AppSource. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
 
 ## About the reports in the app 
@@ -159,7 +161,7 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
 
    Apart from required parameters, you can also control the following options:
 
-   - Azure Active Directory (Azure AD) tenant mapping (define which customer names correspond to which Azure AD tenant IDs). The format for this parameter is `{"map":[{ "AAD tenant id":"005bbe22-5949-4acb-9d24-3fb396c64a52" , "Domain":"Contoso 1" },{ "AAD tenant id":"0140d8e7-ef60-4cc3-9a6b-b89042b3ea1f" , "Domain":"Contoso 2"}]}`
+   - Microsoft Entra tenant mapping (define which customer names correspond to which Microsoft Entra tenant IDs). The format for this parameter is `{"map":[{ "AAD tenant id":"005bbe22-5949-4acb-9d24-3fb396c64a52" , "Domain":"Contoso 1" },{ "AAD tenant id":"0140d8e7-ef60-4cc3-9a6b-b89042b3ea1f" , "Domain":"Contoso 2"}]}`
    - Timezone (the Business Central platform emits telemetry in the UTC time zone. By setting a Timezone, all visuals that show telemetry by hour of day will adjust to show data in the configured time zone).
    - Whether the app should refresh data (the default is every night around midnight); this option is hidden under **Advanced**.
 

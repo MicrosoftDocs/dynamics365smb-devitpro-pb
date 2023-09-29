@@ -49,7 +49,45 @@ Here is an example of a request.
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseInvoices
 Content-type: application/json
+{
+    "invoiceDate": "2019-01-01",
+    "postingDate": "2019-01-01",
+    "dueDate": "2019-01-01",
+    "vendorInvoiceNumber": "107001",
+    "vendorId": "f8a5738a-44e3-ea11-bb43-000d3a2feca1",
+    "vendorNumber": "20000",
+    "payToVendorId": "f8a5738a-44e3-ea11-bb43-000d3a2feca1",
+    "payToVendorNumber": "20000",
+    "shipToName": "",
+    "shipToContact": "",
+    "buyFromAddressLine1": "100 Day Drive",
+    "buyFromAddressLine2": "",
+    "buyFromCity": "Chicago",
+    "buyFromCountry": "US",
+    "buyFromState": "IL",
+    "buyFromPostCode": "61236",
+    "shipToAddressLine1": "7122 South Ashford Street",
+    "shipToAddressLine2": "Westminster",
+    "shipToCity": "Atlanta",
+    "shipToCountry": "US",
+    "shipToState": "",
+    "shipToPostCode": "31772",
+    "currencyId": "00000000-0000-0000-0000-000000000000",
+    "currencyCode": "USD",
+    "pricesIncludeTax": false,
+    "discountAmount": 0,
+    "discountAppliedBeforeTax": true,
+    "totalAmountIncludingTax": 3310.17
+}
+```
 
+**Response**
+
+Here is an example of the response.
+
+```json
+HTTP/1.1 201 Created
+Content-type: application/json
 {
     "id": "5d115c9c-44e3-ea11-bb43-000d3a2feca1",
     "number": "108001",
@@ -64,7 +102,7 @@ Content-type: application/json
     "payToContact": "Evan McIntosh",
     "payToVendorId": "f8a5738a-44e3-ea11-bb43-000d3a2feca1",
     "payToVendorNumber": "20000",
-    "shipToName": "",
+    "shipToName": "CRONUS International Ltd.",
     "shipToContact": "",
     "buyFromAddressLine1": "100 Day Drive",
     "buyFromAddressLine2": "",
@@ -84,15 +122,19 @@ Content-type: application/json
     "payToCountry": "US",
     "payToState": "IL",
     "payToPostCode": "61236",
+    "shortcutDimension1Code": "",
+    "shortcutDimension2Code": "",
     "currencyId": "00000000-0000-0000-0000-000000000000",
     "currencyCode": "USD",
+    "orderId": "00000000-0000-0000-0000-000000000000",
+    "orderNumber": "",
     "pricesIncludeTax": false,
     "discountAmount": 0,
-    "discountAppliedBeforeTax": true,
-    "totalAmountExcludingTax": 3122.8,
-    "totalTaxAmount": 187.37,
-    "totalAmountIncludingTax": 3310.17,
-    "status": "Paid",
+    "discountAppliedBeforeTax": false,
+    "totalAmountExcludingTax": 0,
+    "totalTaxAmount": 0,
+    "totalAmountIncludingTax": 0,
+    "status": "Draft",
     "lastModifiedDateTime": "2020-08-21T00:26:53.793Z"
 }
 ```

@@ -228,7 +228,7 @@ The first thing to do is to set up cloud migration. This task doesn'r migrate an
 6. On the **Define your SQL database connection** page, fill in th **SQL Connection String**. For example, Server=navdevvm-0604\bcdemo;Database="Demo Database BC (21-0)";User Id=bclogin;Password=3VeryStepUtread!2;, select Next
 7. Do one of the following tasks:
 
-   - If you already have an Microsoft integration runtime service instance, you can use the instance by entering its name in the **Integration Runtime Name** box. Then select **Next** and go to step 9. 
+   - If you already have a Microsoft integration runtime service instance, you can use the instance by entering its name in the **Integration Runtime Name** box. Then select **Next** and go to step 9. 
    - If you don't already have an integration runtime, leave **Integration Runtime Name** blank, slect **Next**, then go to the next step.
 
 8. Select **Download the Self-hosted Integration Runtime**, the do these steps to install the integration runtime:

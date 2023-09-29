@@ -14,6 +14,8 @@ ms.author: jswymer
 
 **INTRODUCED IN:** Business Central 2020 release wave 1, version 16.3. Extension-level support introduced in 2020 release wave 2, version 17.1.
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Extension lifecycle telemetry gathers data about the success or failure of the following extension-related operations:
 
 - Compiling an extension
@@ -118,7 +120,7 @@ The following table explains custom dimensions that are common to all traces.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|

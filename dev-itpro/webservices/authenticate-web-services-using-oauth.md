@@ -12,6 +12,8 @@ author: jswymer
 
 # Using OAuth to Authorize Business Central Web Services (OData and SOAP)
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports the OAuth authorization protocol for SOAP and OData web services. This article describes some basics behind the use and configuration of OAuth authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. It describes the general aspects of the OAuth authorization protocol, including how to set it up for [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 > [!TIP]
@@ -58,7 +60,7 @@ For more information, see [Security tokens](/azure/active-directory/develop/secu
 
 ## App registration
 
-Your client app needs a way to trust the security tokens issued to it by the Microsoft identity platform. The first step in establishing that trust is by registering your app with the identity platform in Azure Active Directory (Azure AD).
+Your client app needs a way to trust the security tokens issued to it by the Microsoft identity platform. The first step in establishing that trust is by registering your app with the identity platform in Microsoft Entra ID .
 
 For more information, see [App registration](/azure/active-directory/develop/active-directory-v2-protocols#app-registration) in the Azure documentation.
 
@@ -87,15 +89,15 @@ For more information, please visit [Service-to-Service Authentication](../admini
 
 ## Credentials lifetime
 
-With authentication methods other than Azure AD, like Windows or NavUserPassword, the credentials that users provide are persisted by application and used for as long as they're valid in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, this is different for OAuth, because the security tokens that are used for authentication have a limited lifetime.
+With authentication methods other tha Microsoft Entra ID, like Windows or NavUserPassword, the credentials that users provide are persisted by application and used for as long as they're valid in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, this is different for OAuth, because the security tokens that are used for authentication have a limited lifetime.
 
-An authentication result from Azure AD, contains two tokens: an access token and an ID token.
+An authentication result from Microsoft Entra ID, contains two tokens: an access token and an ID token.
 
 The `access token` is the one that's used when the client application calls the web service. The access token is relatively short-lived (for example, one hour by default, and one day maximum). When it expires, the client application needs a new access token.
 
 To obtain new access token when the current access token expires, one can leverage token cache. For more information, see [Acquire & cache tokens with Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-acquire-cache-tokens).
 
-The lifetime of both these tokens is configurable. For more information about how to configure and manage these tokens for your installation, see [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
+The lifetime of both these tokens is configurable. For more information about how to configure and manage these tokens for your installation, see [Configurable token lifetimes in Microsoft Entra ID](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
 
 ## See Also
   

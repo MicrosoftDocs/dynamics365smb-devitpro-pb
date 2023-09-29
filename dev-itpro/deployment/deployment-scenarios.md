@@ -13,6 +13,8 @@ author: jswymer
 
 # Deployment Topologies
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment consists of various components that support the production, development, and testing. These components can be installed on various computers, in different combinations. The deployment process varies depending on the topology that you implement. This article provides an overview of the supported topologies. 
 
 <!-- 
@@ -34,7 +36,7 @@ The following table lists some of the most typical deployment topologies for the
 |Three-computer|Installs the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and the SQL Server database components on separate computers.| [Deploying in a Three Computer Environment](deploy-three-computer-environment.md)|
 
 > [!IMPORTANT]
-> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support Azure Active Directory Application Proxy, because Application Proxy doesn't fully support web sockets.
+> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support Microsoft Entra application Proxy, because Application Proxy doesn't fully support web sockets.
 
 ## See Also  
 [Install Business Central Using Setup](install-using-setup.md)  

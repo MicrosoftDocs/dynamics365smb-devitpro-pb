@@ -15,6 +15,8 @@ ms.author: jswymer
 
 [!INCLUDE[2021_releasewave2.md](../includes/2021_releasewave2.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE[task_scheduler_telemetry](../includes/include-telemetry-task-scheduler.md)]
 
 > [!NOTE]
@@ -57,7 +59,7 @@ The following table explains other custom dimensions that are common to all task
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company in which the task was run.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|

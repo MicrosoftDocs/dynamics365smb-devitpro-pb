@@ -13,10 +13,12 @@ ms.author: jswymer
 
 # Production and Sandbox Environments
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 You can create environments of different types. Which type of environment to choose depends on what you need it for.  
 
 > [!TIP]
-> If you're new to environments, get an overview of how Azure Active Directory, environments, and companies work in [!INCLUDE [prod_short](../includes/prod_short.md)] online at [Understanding the infrastructure of Business Central online](tenant-environment-topology.md).
+> If you're new to environments, get an overview of how Microsoft Entra ID, environments, and companies work in [!INCLUDE [prod_short](../includes/prod_short.md)] online at [Understanding the infrastructure of Business Central online](tenant-environment-topology.md).
 
 <!--The following table outlines some of the benefits of each environment type.
 
@@ -56,7 +58,7 @@ As a partner, you can buy the *Dynamics 365 Business Central Partner Sandbox* li
 > [!IMPORTANT]
 > The environments that you acquire through the *Dynamics 365 Business Central Partner Sandbox* license are strictly meant for use only on the partner’s tenant. You are not allowed to use this license in a customer tenant, nor in a production environment.  
 
-Use the *Partner Sandbox* license for an Microsoft 365 account that does not currently have a [!INCLUDE [prod_short](../includes/prod_short.md)] license. This gets you 1 production environment + 3 sandboxes. Alternatively, use the *Partner Sandbox* license to replace existing [!INCLUDE [prod_short](../includes/prod_short.md)] licenses in an existing environment; however, the license will not give you any additional environments on top of the environments you already had.  
+Use the *Partner Sandbox* license for a Microsoft 365 account that does not currently have a [!INCLUDE [prod_short](../includes/prod_short.md)] license. This gets you 1 production environment + 3 sandboxes. Alternatively, use the *Partner Sandbox* license to replace existing [!INCLUDE [prod_short](../includes/prod_short.md)] licenses in an existing environment; however, the license will not give you any additional environments on top of the environments you already had.  
 
 Partners can purchase the unique, partner-only license via Web Direct to create flexible, cost-effective solutions that do not expire. Accessing the SKUs and pricing is simple: [Go to experience.dynamics.com](https://experience.dynamics.com/requestlicense/) and submit a request for the *Dynamics 365 Business Central Partner Sandbox* license. Use a valid MPN ID. Once your request is approved, you receive a token to purchase the SKUs directly. Pay by credit card. If the total billing is over $500/month for your company, then you can pay by invoice.
 

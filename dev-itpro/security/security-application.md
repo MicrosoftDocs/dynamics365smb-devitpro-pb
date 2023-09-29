@@ -12,6 +12,8 @@ author: jswymer
 
 # Layered security model in Business Central
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This section helps you understand and improve the security of your Business Central installation regardless of where it's hosted. In the sections listed below, you'll find guidance and recommended practices related to authentication, authorization, and auditing, in addition to data encryption and secure development practices that can be applied to any Business Central environment.
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses a layered approach to application security, as outlined in the following diagram.
@@ -20,7 +22,7 @@ This section helps you understand and improve the security of your Business Cent
 
 ## Authentication
 
-Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as a valid user in the system. Business Central (on-premises) supports several authentication methods, such as Windows and Azure Active Directory (Azure AD). Business Central online deployments use Azure AD only. For more information, see the following articles:
+Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as a valid user in the system. Business Central (on-premises) supports several authentication methods, such as Windows and Microsoft Entra ID . Business Central online deployments use Microsoft Entra ID only. For more information, see the following articles:
 
 [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)
 

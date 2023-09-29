@@ -307,6 +307,25 @@ Occurs when a job queue entry was rescheduled on login of a user. This telemetry
 |[See common custom dimensions](#other)||
 
 
+## <a name="cancelled"></a>Job queue entry cancelled
+
+Occurs when a job queue entry was cancelled. This telemetry event was introduced in version 23.0.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Job queue entry cancelled: {job queue entry id}**|
+|severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|eventId|**AL0000KZV**|
+|[See common custom dimensions](#other)||
+
 
 ## Troubleshooting Job queue issues with telemetry
 

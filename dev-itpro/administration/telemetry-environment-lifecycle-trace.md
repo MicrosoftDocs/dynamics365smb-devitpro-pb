@@ -13,13 +13,15 @@ ms.service: dynamics365-business-central
 
 [!INCLUDE[component](../developer/includes/online_only.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Environment lifecycle telemetry gathers data about the success or failure of the following environment-related operations:
 
 - Update an environment
 - Start/stop/restart an environment
 - Copy an environment
 - Point-in-time restore an environment
-- Move an environment to a difference Azure Active Directory (AAD) tenant
+- Move an environment to a difference Microsoft Entra tenant
 - Cancel a session from the Business Central admin center
 - Export the environment database
 - Change the environment configuration 
@@ -1018,7 +1020,7 @@ traces
 
 ## Environment move to different AAD tenant operation scheduled
 
-Occurs when the environment is scheduled to be moved to a different Azure Active Directory (AAD) tenant.
+Occurs when the environment is scheduled to be moved to a different Microsoft Entra tenant.
 
 ### General dimensions
 
@@ -1042,7 +1044,7 @@ Occurs when the environment is scheduled to be moved to a different Azure Active
 
 ## Environment move to different AAD tenant operation scheduling failed
 
-Occurs when the operation to schedule a move of an environment to a different Azure Active Directory (AAD) tenant failed.
+Occurs when the operation to schedule a move of an environment to a different Microsoft Entra) tenant failed.
 
 ### General dimensions
 

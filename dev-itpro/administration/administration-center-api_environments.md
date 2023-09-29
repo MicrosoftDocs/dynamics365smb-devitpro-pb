@@ -13,6 +13,8 @@ ms.date: 02/24/2023
 
 # Environments
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Environments are the instances of the application that have been set up for the tenant. An instance can be of either a production type or a sandbox type. The environment APIs can be used to:
 
 - Get information about the environments currently set up for the tenant
@@ -54,7 +56,7 @@ Returns a wrapped array of environments.
       "name": string, // Environment name, unique within an application family
       "countryCode": string, // Country/Region that the environment is deployed in
       "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-      "aadTenantId": Guid, // Id of the Azure Active Directory tenant that owns the environment 
+      "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment 
       "applicationVersion": string, // The version of the environment's application
       "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
       "webClientLoginUrl": string, // Url to use to log into the environment,
@@ -95,7 +97,7 @@ Returns a single environment if exists.
   "name": string, // Environment name, unique within an application family
   "countryCode": string, // Country/Region that the environment is deployed in
   "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-  "aadTenantId": Guid, // Id of the Azure Active Directory tenant that owns the environment 
+  "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment 
   "applicationVersion": string, // The version of the environment's application
   "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
   "webClientLoginUrl": string, // Url to use to log into the environment,
@@ -186,7 +188,7 @@ Returns HTTP status code 201 (Created) with newly created environment.
   "name": string, // Environment name, unique within an application family
   "countryCode": string, // Country/Region that the environment is deployed in
   "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-  "aadTenantId": Guid, // Id of the Azure Active Directory tenant that owns the environment 
+  "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment 
   "applicationVersion": string, // The version of the environment's application
   "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
   "webClientLoginUrl": string, // Url to use to log into the environment,
@@ -313,7 +315,7 @@ Returns HTTP status code 201 (Created) with newly copied environment.
   "name": string, // Environment name, unique within an application family
   "countryCode": string, // Country/Region that the environment is deployed in
   "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-  "aadTenantId": Guid, // Id of the Azure Active Directory tenant that owns the environment 
+  "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment 
   "applicationVersion": string, // The version of the environment's application
   "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
   "webClientLoginUrl": string, // Url to use to log into the environment,
@@ -756,8 +758,8 @@ Data is returned for the following operation types:
 |EnvironmentAppInstall<sup>1</sup>|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](administration-center-api_app_management.md#install-an-app)|
 |EnvironmentAppUninstall<sup>1</sup>|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](administration-center-api_app_management.md#uninstall-an-app)|
 |EnvironmentRename|Environment was renamed by using the Admin Center|[Rename an Environment](tenant-admin-center-environments-rename.md)<br><br>[Rename Endpoint](#rename-environment)|
-|Modify<sup>5</sup>|Records the following operations:<br />[Set update window](administration-center-api_environment_settings.md#put-update-settings)<br />[Set Application Insights key](administration-center-api_environment_settings.md#put-appinsights-key)<br />[Set security group](administration-center-api_environment_settings.md#set-security-group)<br /> [Clear security group](administration-center-api_environment_settings.md#clear-security-group)<br />[Reschedule update](administration-center-api_reschedule_updates.md#reschedule-update)<br />[Set access with Microsoft 365 licenses](administration-center-api_environment_settings.md#set-access-with-microsoft-365-licenses)<sup>6</sup>|[Manage updates in Admin Center](tenant-admin-center-update-management.md)<br />[Manage access using Azure Active Directory groups in Admin Center](tenant-admin-center-manage-access.md#manage-access-using-azure-active-directory-groups)<br />[Manage access with Microsoft 365 licenses in Admin Center](tenant-admin-center-manage-access.md#manage-access-with-microsoft-365-licenses)|
-|MoveToAnotherAadTenant|An environment was moved to another Azure Active Directory organization by using the Admin Center|[Move an Environment](tenant-admin-center-environments-move.md)|
+|Modify<sup>5</sup>|Records the following operations:<br />[Set update window](administration-center-api_environment_settings.md#put-update-settings)<br />[Set Application Insights key](administration-center-api_environment_settings.md#put-appinsights-key)<br />[Set security group](administration-center-api_environment_settings.md#set-security-group)<br /> [Clear security group](administration-center-api_environment_settings.md#clear-security-group)<br />[Reschedule update](administration-center-api_reschedule_updates.md#reschedule-update)<br />[Set access with Microsoft 365 licenses](administration-center-api_environment_settings.md#set-access-with-microsoft-365-licenses)<sup>6</sup>|[Manage updates in Admin Center](tenant-admin-center-update-management.md)<br />[Manage access using Microsoft Entra groups in Admin Center](tenant-admin-center-manage-access.md#manage-access-using-microsoft-entra-groups)<br />[Manage access with Microsoft 365 licenses in Admin Center](tenant-admin-center-manage-access.md#manage-access-with-microsoft-365-licenses)|
+|MoveToAnotherAadTenant|An environment was moved to another Microsoft Entra organization by using the Admin Center|[Move an Environment](tenant-admin-center-environments-move.md)|
 |PitRestore|Environment was restored by using the Admin Center|[Restoring an Environment](tenant-admin-center-backup-restore.md)|
 |Recover<sup>7</sup>|A deleted environment was recovered.|[Delete and Recover Environments in Admin Center](tenant-admin-center-environments-delete.md#recover-an-environment)<br><br>[Delete Endpoint](#recover-environment)|
 |Restart<sup>4</sup>|An environment was restarted.|[Restart Environment](tenant-admin-center-manage-sessions.md#restart-environment)|

@@ -11,6 +11,9 @@ ms.author: jswymer
 author: jswymer
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2019 Release Wave 2
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 <!--
 > [!IMPORTANT]  
 > [!INCLUDE[vnext_preview](../developer/includes/vnext_preview.md)] 
@@ -238,7 +241,7 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
                   end;
                 end;
         
-                // If there are no Azure AD Plans, loop through Azure AD Roles
+                // If there are no Microsoft Entra ID Plans, loop through Microsoft Entra roles
                 /* if not HaveAssignedPlans then
                   foreach DirectoryRole in Graph.GetUserRoles(GraphUser) do begin
                     Evaluate(IsSystemRole,Format(DirectoryRole.IsSystem));

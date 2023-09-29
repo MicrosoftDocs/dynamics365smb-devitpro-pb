@@ -15,6 +15,8 @@ ms.date: 02/24/2023
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Manage the apps that are installed on the environment.
 
 ## Important Information before you get started
@@ -36,7 +38,7 @@ By setting this parameter to `true`, you accept the following terms:
 -->
 ### Required In-Product Permissions for Installing and Uninstalling Apps
 
-To use the `install` and `uninstall` endpoints, you must have the following permission sets assigned to your Business Central user account or authorized Azure AAD App:
+To use the `install` and `uninstall` endpoints, you must have the following permission sets assigned to your Business Central user account or authorized Microsoft Entra app:
 
 |Business Central version|Permission set|
 |------------------------|---------------|
@@ -385,7 +387,7 @@ This Logic App runs a specified number of times a day (parameter in deployment p
 
 ### Prerequisites
 
-Business Central admin center API is configured for S2S authentication of Azure active Directory (Azure AD) apps. For more information, go to [Authenticate using service-to-service AAD Apps](administration-center-api.md#authenticate-using-service-to-service-aad-apps-client-credentials-flow).
+Business Central admin center API is configured for S2S authentication of Microsoft Entra apps. For more information, go to [Authenticate using service-to-service AAD Apps](administration-center-api.md#authenticate-using-service-to-service-microsoft-entra-apps-client-credentials-flow).
 
 ### Preparation
 
@@ -393,7 +395,7 @@ You'll need the following information about Business Central and your Teams serv
 
 |Service|Information|
 |-|-|
-|Business Central|<ul><li>The Azure Active Directory (AD) tenant ID for Business Central</li><li>The application (client) ID of the registered application in Azure used for S2S authentication</li><li>The client secret of the registered application in Azure used for S2S authentication</li></ul>|
+|Business Central|<ul><li>The Microsoft Entra tenant ID for Business Central</li><li>The application (client) ID of the registered application in Azure used for S2S authentication</li><li>The client secret of the registered application in Azure used for S2S authentication</li></ul>|
 |Teams|<ul><li>The group ID of the team in Teams that you want to send the alerts to</li><li>The ID of the channel in Teams that you want to send the alerts to</li></ul> |
 
 > [!IMPORTANT]

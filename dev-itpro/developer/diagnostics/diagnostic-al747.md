@@ -1,9 +1,9 @@
 ---
-title: "Compiler Warning AL0747"
-description: "The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'."
+title: "Compiler Error AL0747"
+description: "The data type on the '{0}' control is not valid for this ExtendedDataType value."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/05/2022
+ms.date: 08/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,11 +13,12 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning AL0747
+# Compiler Error AL0747
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Please choose another name for one of them. Otherwise, this might cause runtime issues.
+The data type on the '{0}' control is not valid for this ExtendedDataType value. Valid data types are BigText and Text without max size.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
