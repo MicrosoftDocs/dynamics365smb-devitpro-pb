@@ -12,6 +12,8 @@ ms.topic: conceptual
 
 # Protecting sensitive values with the SecretText data type
 
+[!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
+
 [SecretText data type](methods-auto/secrettext/secrettext-data-type.md) is designed to protect sensitive values from being exposed through the AL debugger when doing regular or snapshot debugging. Its use is recommended for applications that need to handle any kind of credentials like API keys, custom licensing tokens, or similar.
 
 ## The lifetime of a credential
