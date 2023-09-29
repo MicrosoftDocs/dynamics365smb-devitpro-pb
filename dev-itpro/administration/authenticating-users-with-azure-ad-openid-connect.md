@@ -2,11 +2,12 @@
 title: Configure Microsoft Entra authentication with OpenID Connect
 description: Learn how to authentication Business Central users by using Microsoft Entra ID with OpenID Connect.
 ms.custom: bap-template
-ms.date: 02/09/2023
+ms.date: 09/18/2023
 ms.reviewer: na
 ms.author: jswymer
 ms.topic: how-to
 author: jswymer
+ms.service: dynamics365-business-central
 ---
 # Configure Microsoft Entra authentication with OpenID Connect
 
@@ -59,7 +60,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
 > [!NOTE]
 > If you're configuring a multitenant deployment, where each tenant will use a different Azure Tenant, you only register an application on one of the Microsoft Entra tenants. Then, you'll make the application available to the other Microsoft Entra tenants by making it a *Multitenant* application.
 
-1. Sign in to [Azure portal](https://portal.azure.com) and open the Active Directory tenant.
+1. Sign in to [Azure portal](https://portal.azure.com) and open the Microsoft Entra tenant.
 
 2. To register the application, follow the guidelines at [Registering Business Central On-Premises in Microsoft Entra ID for Integrating with Other Services](/dynamics365/business-central/dev-itpro/administration/register-app-azure).
 
@@ -161,7 +162,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC220 -KeyName ValidAudiences -KeyValue "44444444-cccc-5555-dddd-666666666666;https://api.businesscentral.dynamics.com"
+        Set-NAVServerConfiguration -ServerInstance BC230 -KeyName ValidAudiences -KeyValue "44444444-cccc-5555-dddd-666666666666;https://api.businesscentral.dynamics.com"
         ```
 
     2. Set the `ADOpenIdMetadataLocation` parameter for version 22 and later or `ClientServicesFederationMetadataLocation` parameter for version 21 and earlier.
@@ -185,7 +186,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         For example:
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC220 -KeyName ADOpenIdMetadataLocation -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/.well-known/openid-configuration"
+        Set-NAVServerConfiguration -ServerInstance BC230 -KeyName ADOpenIdMetadataLocation -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/.well-known/openid-configuration"
         ```  
 
         or
@@ -208,7 +209,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         For example:
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC220 -KeyName ADOpenIdMetadataLocation -KeyValue "https://login.microsoftonline.com/common/.well-known/openid-configuration"
+        Set-NAVServerConfiguration -ServerInstance BC230 -KeyName ADOpenIdMetadataLocation -KeyValue "https://login.microsoftonline.com/common/.well-known/openid-configuration"
         ```
 
         or
@@ -402,12 +403,12 @@ Set-NAVServerConfiguration -ServerInstance BC210  -KeyName ExtendedSecurityToken
 
 ### Using host names for tenants
 
-You can configure host name tenant resolution, where each tenant is assigned a unique domain, like customer1.cronusinternational.com. Customers would then access their tenant by using `https://customer1.cronusinternational.com/BC220`.
+You can configure host name tenant resolution, where each tenant is assigned a unique domain, like customer1.cronusinternational.com. Customers would then access their tenant by using `https://customer1.cronusinternational.com/BC230`.
 
 This setup implies that the public URL is different for each tenant. To support this scenario, you set [!INCLUDE[server](../developer/includes/server.md)] to calculate the host dynamically. In the `WSFederationLoginEndpoint` parameter, use the `{HOSTNAME}` placeholder in the `wreply`, for example:
 
 ```http
-https://login.microsoftonline.com/<AAD TENANT ID>/wsfed?wa=wsignin1.0%26wtrealm=<APP ID URI>%26wreply=https://{HOSTNAME}/BC220/SignIn
+https://login.microsoftonline.com/<AAD TENANT ID>/wsfed?wa=wsignin1.0%26wtrealm=<APP ID URI>%26wreply=https://{HOSTNAME}/BC230/SignIn
 
 ```
 
