@@ -1545,7 +1545,7 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
-### Business Central 2023 Release Wave 2
+### Business Central 2023 release wave 2
 #### [Overview](upgrade/upgrade-overview-v23.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
 #### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
@@ -1568,7 +1568,7 @@
 ##### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v23.md)
 ##### [From version 20, 21, or 22](upgrade/upgrade-technical-upgrade-v23.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v23.md)
-### Business Central 2023 Release Wave 1
+### Business Central 2023 release wave 1
 #### [Overview](upgrade/upgrade-overview-v22.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v22.md)
 #### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
@@ -1652,7 +1652,7 @@
 ######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
 ####### Data migration toolkit - India
 ######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
-##### Technical Upgrade
+##### Technical upgrade
 ###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v19.md)
 ###### [From version 16, 17, or 18](upgrade/upgrade-technical-upgrade-v19.md)
 ##### [Installing a minor update](upgrade/upgrading-cumulative-update-v19.md)
