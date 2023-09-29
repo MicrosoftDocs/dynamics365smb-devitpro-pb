@@ -13,6 +13,8 @@ ms.custom: bap-template
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2022 release wave 2, version 21.0, and later
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 From the [!INCLUDE[web](../developer/includes/webclient.md)], users can do various operations on profiles, like, import/export, create, copy, and remove. To learn more about these operations, see [Manage User Profiles](/dynamics365/business-central/admin-users-profiles-roles) and [Customize Pages for Profiles](/dynamics365/business-central/ui-personalization-manage).
 
 Business Central emits telemetry signals for these operations, which you can collect using an Application Insights resource. As a partner or consultant, this information gives you insight into what the service does with the profiles and page customizations you provide.

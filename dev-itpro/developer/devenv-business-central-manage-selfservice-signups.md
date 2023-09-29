@@ -11,6 +11,8 @@ author: jswymer
 
 # Enable and Disable Dynamics 365 Business Central Self-service Signups
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Administrators for a Microsoft 365 tenant might not want their users to sign up for the [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] service without their awareness. You can complete the following procedure in Microsoft Entra ID to block individual user signups.  
 
 To complete this procedure, you must install and use Microsoft Entra ID cmdlets. For a list of MSOnline cmdlets that are available for Microsoft Entra ID using Windows PowerShell, see [MSOnline](/powershell/module/MSOnline/?view=azureadps-1.0&redirectedfrom=msdn).   

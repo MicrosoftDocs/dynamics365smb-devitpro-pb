@@ -13,6 +13,8 @@ ms.service: dynamics365-business-central
 
 [!INCLUDE[component](../developer/includes/online_only.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Environment lifecycle telemetry gathers data about the success or failure of the following environment-related operations:
 
 - Update an environment

@@ -9,6 +9,8 @@ ms.custom: bap-template
 ---
 # [!INCLUDE[webserver](../developer/includes/webserver.md)] Overview
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Giving users access to data from the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], companion app, and Outlook add-in requires a Internet Information Services (IIS) website as part of your deployment. The website, which we refer to as [!INCLUDE[webserver](../developer/includes/webserver.md)] instance, hosts the files that provide content and services to client users over the Internet. This article highlights several factors to consider to help you set up [!INCLUDE[webserver](../developer/includes/webserver.md)] instances that suit your deployment requirements.
 
 If you just want to get started installing the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [Install Business Central Using Setup](install-using-setup.md).

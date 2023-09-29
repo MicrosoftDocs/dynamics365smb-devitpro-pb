@@ -11,6 +11,8 @@ ms.custom: bap-template
 ---
 # Manage Access to Environments
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article describes admin center features that you use for controlling user access to environments. In addition to what you do in the admin center, these features typically require configuration and set up in either Business Central or another product or service.
 
 ## Manage access using Microsoft Entra groups

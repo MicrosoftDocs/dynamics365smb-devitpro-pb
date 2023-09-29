@@ -4,6 +4,9 @@ ms.topic: include
 ms.date: 12/29/2021
 ms.author: edupont
 ---
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment to open the environment details.
 2. In the **Support** menu, choose **New Support Request**.
 

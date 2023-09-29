@@ -13,6 +13,8 @@ author: jswymer
 ---
 # Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] to Accept Host Names for Tenants
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 When you deploy the [!INCLUDE[webserver](../developer/includes/webserver.md)] in a multitenant deployment architecture, URLs that must access a specific tenant must specify the tenant ID. However, the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] can be also accessed from URLs that specify a host name. To use host names for tenants, you must enable the corresponding URL rewrite rule in the web.config configuration file for the [!INCLUDE[webserver](../developer/includes/webserver.md)].  
   
 ### Enable the URL rewrite rule to configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] to accept host names for tenants

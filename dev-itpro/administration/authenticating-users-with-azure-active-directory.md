@@ -13,6 +13,8 @@ ms.author: jswymer
 
 > **APPLIES TO:** Business Central 2022 release wave 2 (version 21) and earlier
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The article describes the tasks involved in setting up Microsoft Entra authentication for authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users. The configuration in this article sets up Microsoft Entra authentication to use the WS-Federation protocol.
 
 > [!IMPORTANT]  

@@ -11,6 +11,8 @@ ms.reviewer: jswymer
 ---
 # System requirements for Business Central 2023 release wave 1
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The following sections list the minimum hardware and software requirements to install and run [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (version 22). **Minimum** means that later versions \(such as SP1, SP2, or R2 versions\) of a required software product are also supported.  
 
 > [!NOTE]  
