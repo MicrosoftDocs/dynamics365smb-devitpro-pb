@@ -10,7 +10,7 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# Use Microsoft Entra authentication for Business Central On-Premises Installations
+# Use Microsoft Entra authentication for Business Central on-premises installations
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
