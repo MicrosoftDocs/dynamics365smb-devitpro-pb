@@ -8,7 +8,7 @@ ms.reviewer: solsen
 ms.topic: reference
 ---
 
-# Marketing Validation Checklist
+# Marketing validation checklist
 
 The storefront details on AppSource are the first impression that prospects get regarding your offer. First impressions last, so make sure to invest some time in developing the content on the storefront, so it gives a good impression from the beginning. Failing to do so will jeopardize the hard work you put in, when developing your offer, likely leaving the prospect confused or looking elsewhere. Accordingly, we recommend you put in the time, effort and due diligence when developing this content.
 
