@@ -1,5 +1,5 @@
 ---
-title: AL Reference Guide
+title: AL reference guide
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 09/29/2023
