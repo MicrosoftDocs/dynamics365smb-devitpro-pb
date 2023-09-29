@@ -1,6 +1,6 @@
 ---
-title: "AL Error Handling"
-description: "Error handling in AL for Business Central"
+title: "AL error handling"
+description: Deal with unexpected situations that occur when code is run in AL for Business Central
 ms.custom: na
 ms.date: 02/09/2022
 ms.reviewer: na
@@ -10,15 +10,15 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# AL Error Handling
+# AL error handling
 
 The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. This section contains articles about using these methods in AL to handle errors that occur during code execution, while making sure that your application has a consistent user interface. 
 
 The following articles introduce error handling in AL:
 
-- [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md)  
-- [Collecting Errors](devenv-error-collection.md)  
-- [Progress Windows, Message, Error, and Confirm Methods](devenv-progress-windows-message-error-and-confirm-methods.md)
+- [Handling errors using Try Methods](devenv-handling-errors-using-try-methods.md)  
+- [Collecting errors](devenv-error-collection.md)  
+- [Progress Windows, Message, Error, and Confirm methods](devenv-progress-windows-message-error-and-confirm-methods.md)
 
 ## Error handling methods in AL
 
