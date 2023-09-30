@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE [prod_short](includes/prod_short.md)] uses two main concepts for defining access to functionality: *Entitlements* and *permissions*.
 
 - *Entitlements* describe which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the *license* that they purchased from Microsoft or according to the Microsoft Entra role that they have assigned in Microsoft 365 Admin Center, such as Global Administrator. Entitlements are only used in the online version of [!INCLUDE [prod_short](includes/prod_short.md)]. 

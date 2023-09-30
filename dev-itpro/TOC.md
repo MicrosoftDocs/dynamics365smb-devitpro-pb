@@ -121,9 +121,9 @@
 #### [Contribute to the help](help/contributor-guide.md)
 #### [Authoring guide](help/writing-guide.md)
 #### [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
-### ALDoc tool (preview)
-#### [Generating help with the ALDoc tool (preview)](help/help-aldoc-generate-help.md)
-#### [Overwriting help with the ALDoc tool (preview)](help/help-aldoc-overwrites.md)
+### ALDoc tool
+#### [Generating help with the ALDoc tool](help/help-aldoc-generate-help.md)
+#### [Overwriting help with the ALDoc tool](help/help-aldoc-overwrites.md)
 <!--### Resources for a developer
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Documentation](developer/devenv-dev-overview.md)
@@ -406,11 +406,11 @@
 ### [AL code navigation](developer/devenv-al-code-navigation.md)
 ### [AL code actions](developer/devenv-code-actions.md)
 ### [Object ranges](developer/devenv-object-ranges.md)
-### [Differences in the development environments](developer/devenv-differences.md)
 <!-- ### [object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
 ### [Adding help links from pages, reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
 ### [Working with translation files](developer/devenv-work-with-translation-files.md)
 ### [Instrumenting an application for telemetry](developer/devenv-instrument-application-for-telemetry.md)
+### [Differences in the development environments](developer/devenv-differences.md)
 ### Ready to Go
 #### [The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)
 #### [Get started with building apps](developer/readiness/get-started.md)
@@ -1545,7 +1545,7 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
-### Business Central 2023 Release Wave 2
+### Business Central 2023 release wave 2
 #### [Overview](upgrade/upgrade-overview-v23.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
 #### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
@@ -1568,7 +1568,7 @@
 ##### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v23.md)
 ##### [From version 20, 21, or 22](upgrade/upgrade-technical-upgrade-v23.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v23.md)
-### Business Central 2023 Release Wave 1
+### Business Central 2023 release wave 1
 #### [Overview](upgrade/upgrade-overview-v22.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v22.md)
 #### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
@@ -1652,7 +1652,7 @@
 ######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
 ####### Data migration toolkit - India
 ######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
-##### Technical Upgrade
+##### Technical upgrade
 ###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v19.md)
 ###### [From version 16, 17, or 18](upgrade/upgrade-technical-upgrade-v19.md)
 ##### [Installing a minor update](upgrade/upgrading-cumulative-update-v19.md)

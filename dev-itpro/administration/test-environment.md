@@ -12,6 +12,8 @@ ms.date: 04/01/2021
 ---
 # Preparing Test Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 As a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] reselling partner, you might want to have an environment that you can use for testing or pre-sales demonstrations. You can create such environments based on free 30 day trials, or you can set up a dedicated environment if you have a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] subscription yourself.  
 
 ## Test environments based on a 30 day trial

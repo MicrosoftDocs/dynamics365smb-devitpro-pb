@@ -15,6 +15,8 @@ ms.author: jswymer
 
 **INTRODUCED IN:** Business Central 2020 release wave 1, version 16.1
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Company lifecycle telemetry gathers data about the success or failure of the following company-related operations:
 
 - creating a company

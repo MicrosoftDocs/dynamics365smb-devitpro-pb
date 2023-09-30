@@ -13,6 +13,8 @@ ms.author: solsen
 
 # Launch JSON file
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The `launch.json` file contains information about the server that the extension launches on. The `launch.json` file has multiple configuration options available, for example, for snapshot debugging and attach debugging. In Visual Studio Code, you can choose to add a new configuration to the `launch.json` file, by selecting the **Add Configuration** button. The following configuration options are available:
 
 - [Publish to Microsoft cloud sandbox](devenv-json-launch-file.md#publish-to-cloud-settings)

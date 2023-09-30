@@ -1,7 +1,7 @@
 ---
 title: "Rich Text and content controls"
 description: How to create a functioning Rich Text Editor using ExtendedDataType and a table blob field in AL for Business Central.
-author: damsboemil
+author: EmilDamsbo
 ms.author: solsen
 ms.custom: na
 ms.date: 09/25/2023

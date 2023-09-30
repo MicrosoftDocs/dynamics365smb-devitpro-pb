@@ -11,6 +11,9 @@ author: jswymer
 ms.author: jswymer
 ---
 # Linking to the Dynamics 365 Business Central App
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The protocol handler for the [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] lets you construct a URL for starting the app on a device, such as a phone or tablet. You can then distribute this URL by e-mail or from a Web page to the users.  
   
 The [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] URL is based on the *ms-businesscentral* URI scheme, which is registered automatically when the app is installed. Invoking a URL based on this scheme will start the app with the provided parameters.  

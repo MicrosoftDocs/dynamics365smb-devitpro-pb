@@ -1,5 +1,5 @@
 ---
-title: "Testing the Application Overview"
+title: aTesting the application overview
 description: Learn about how to use automated tests in Business Central
 ms.custom: na
 ms.date: 08/10/2022
@@ -10,7 +10,7 @@ ms.topic: overview
 author: jswymer
 ---
 
-# Testing the Application Overview
+# Testing the application overview
 
 Before you release your [!INCLUDE[prod_short](includes/prod_short.md)] application, you should test its functionality to ensure it works as expected. Testing is an iterative process. It's important and helpful to create repeatable tests that can be automated. This article describes the features in [!INCLUDE[prod_short](includes/prod_short.md)] to help you test the business logic in your application and provides best practices for testing.
 

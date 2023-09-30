@@ -11,6 +11,8 @@ ms.topic: conceptual
 ---
 # Troubleshooting: SAML2 token errors with Microsoft Entra ID / Office 365 Authentication
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article provides troubleshooting guidelines for SAML2 token errors that users might experience when your deployment's using Microsoft Entra ID or Office 365 Authentication.
 
 ## Troubleshooting: The SAML2 token is not valid because its validity period has ended

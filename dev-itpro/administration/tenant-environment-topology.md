@@ -13,6 +13,8 @@ ms.author: jswymer
 
 # Understanding the Infrastructure of Business Central Online
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 When someone wants to buy [!INCLUDE [prod_short](../includes/prod_short.md)] online, a couple of questions must be answered because [!INCLUDE [prod_short](../includes/prod_short.md)] can be configured along several different axes. In this section, we describe the topology of [!INCLUDE [prod_short](../includes/prod_short.md)] online so that you can make qualified decisions for how a [!INCLUDE [prod_short](../includes/prod_short.md)] tenant will be deployed and configured.  
 
 > [!TIP]

@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Deprecated Features in the Platform - Clients, Server, and Database
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article describes the features that are up for removal or that have been removed or replaced in the platform that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses across languages and base app.  
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]

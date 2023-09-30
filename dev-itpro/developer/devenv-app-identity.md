@@ -1,6 +1,6 @@
 ---
-title: "App Identity"
-description: "Description of what makes up the app identity of an app for Business Central."
+title: App identity
+description: Describes what makes up the app identity of an app for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/01/2021
@@ -11,7 +11,7 @@ ms.topic: article
 ms.author: solsen
 ---
 
-# App Identity
+# App identity
 
 Apps built using AL extend the functionality of [!INCLUDE[prod_short](../includes/prod_short.md)]. The `app.json` file is, together with the `launch.json` file, automatically generated when you create a new AL project. The `app.json` file contains information about the app that you are building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the *manifest*. The `app.json` file contains numerous project settings, but a few of them constitutes the actual identity of the app that you are creating.
 

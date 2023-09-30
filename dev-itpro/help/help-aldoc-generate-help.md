@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Generating help with the ALDoc tool
 
-[!INCLUDE [2023rw2_aldoctool_preview](../developer/includes/2023rw2_aldoctool_preview.md)]
-
 Generating content based on source code has many advantages such as accuracy, 100% reflection of the current codebase, less error prone documentation, and it saves time. The ALDoc tool generates documentation from symbolic and syntactical information, code comments, and overall application structure based on input .app file(s). The tool also generates a help site with these reference articles, sorted by the application structure, based on the provided template.
 
 This article describes the necessary steps to use the ALDoc tool to generate the documentation for AL .app packages. The ALDoc tool relies on the DocFx tool, and needs the DocFx prerequisites to be available on the machine that generates the reference documentation. To generate help using the ALDoc tool, the following steps are involved: 

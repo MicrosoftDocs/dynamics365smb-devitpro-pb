@@ -15,6 +15,8 @@ ms.author: jswymer
 
 [!INCLUDE[2021_releasewave2.md](../includes/2021_releasewave2.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE[task_scheduler_telemetry](../includes/include-telemetry-task-scheduler.md)]
 
 > [!NOTE]
