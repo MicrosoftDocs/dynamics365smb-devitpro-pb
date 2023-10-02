@@ -165,7 +165,3 @@ Snapshot debugging is almost the same as a regular debugging with the difference
 [Developing Extensions](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
 [AL Code Navigation](devenv-al-code-navigation.md)  
-[EnableLongRunningSQLStatements Property](./properties/devenv-properties.md)  
-[EnableSQLInformationDebugger Property](./properties/devenv-properties.md)  
-[LongrunningSQLStatementsThreshold Property](./properties/devenv-properties.md)  
-[NumberOfSQLStatements Property](./properties/devenv-properties.md)
