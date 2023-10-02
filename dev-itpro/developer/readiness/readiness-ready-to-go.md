@@ -16,13 +16,13 @@ Are you a Microsoft partner working with Business Central and looking for releva
 ## Hot topics right now
 - Register for the Business Central Launch Event on [aka.ms/BCLE](https://aka.ms/BCLE)
 - Access Business Central with your Microsoft 365 license. Read about it [here](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
-- Introducing Microsoft Dynamics 365 Copilot, AI-powered assistance to get more done with less effort, also in Business Central: [aka.ms/BCAI](https://aka.ms/BCAI)
 
 ## Latest release and updates  
 - Business Central release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
 - Major updates: [aka.ms/BCUpdates](https://aka.ms/BCUpdates)
 - Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
 - Missing a feature? Post or vote for ideas on: [aka.ms/BCIdeas](https://aka.ms/BCIdeas) 
+- Art Microsoft on an upcoming regulatory feature: [aka.ms/BCAlerts]
 - Optional features that are now mandatory [https://aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt)
 - Where is Business Central available? [aka.ms/BCCountries](https://aka.ms/BCCountries)
 
@@ -56,6 +56,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - [!INCLUDE [prod_short](../includes/prod_short.md)] customer stories: [aka.ms/BCCustomerStories](https://aka.ms/BCCustomerStories) 
 - Discover useful resources for partners: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
 - Transact capability for Business Central Apps on Microsoft AppSource: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
+- Find the capability guide: [aka.ms/BCCapabilities](https://aka.ms/BCCapabilities)
 
 ## Customer onboarding and resources 
 - Discover all Business Central apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)
