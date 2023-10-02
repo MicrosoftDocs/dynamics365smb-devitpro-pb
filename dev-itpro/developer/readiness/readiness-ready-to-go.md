@@ -22,7 +22,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Major updates: [aka.ms/BCUpdates](https://aka.ms/BCUpdates)
 - Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
 - Missing a feature? Post or vote for ideas on: [aka.ms/BCIdeas](https://aka.ms/BCIdeas) 
-- Art Microsoft on an upcoming regulatory feature: [aka.ms/BCAlerts]
+- Alert Microsoft on an upcoming regulatory feature: [aka.ms/BCAlerts]
 - Optional features that are now mandatory [https://aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt)
 - Where is Business Central available? [aka.ms/BCCountries](https://aka.ms/BCCountries)
 
