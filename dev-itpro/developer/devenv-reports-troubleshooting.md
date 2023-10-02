@@ -12,6 +12,8 @@ ms.date: 10/02/2023
 
 # Troubleshooting report errors
 
+If reports fail to generate or if they take too long time to generate, you might need to investigate why. This article contains strategies for analyzing report telemetry to find possible root cases for such errors or slow performance.
+
 A report in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can fail in either of these phases
 1. in the request page
 2. when generating the report dataset
@@ -24,7 +26,8 @@ The most effective way to troubleshoot report errors is to enable telemetry. In 
 
 [!INCLUDE[report_telemetry_intro](../includes/include-report-telemetry-intro.md)]
 
-When a report fails to generate, the `result` column in the CustomDimensions for the event RT0006 will include the title of the exception that was thrown by the service or the AL code. 
+When you run a report, either from the UI, in a background sessions, or from a web service call, it might fail. The failure can either be in the AL code of the report or in the layout. When a report fails to generate, you get an RT0006 event in telemetry and the `result` column in the customDimensions will include the title of the exception that was thrown by the service or the AL code.
+
 
 [!INCLUDE[telemetry_error_kql](../includes/include-report-telemetry-error-kql.md)]
 
@@ -32,7 +35,8 @@ For more information, see [Report telemetry](../administration/telemetry-reports
 
 ## Reporting exceptions
 
-This table highlights some of the most common exceptions than can happen in report errors and links to more information about them.
+
+In the following table, we list some common report exceptions and suggestions to how to fix them:
 
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
