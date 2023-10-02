@@ -24,11 +24,40 @@ The most effective way to troubleshoot report errors is to enable telemetry. In 
 
 [!INCLUDE[report_telemetry_intro](../includes/include-report-telemetry-intro.md)]
 
-### Sample KQL code (failed report generation)
+When a report fails to generate, the `result` column in the CustomDimensions for the event RT0006 will include the title of the exception that was thrown by the service or the AL code. 
 
 [!INCLUDE[telemetry_error_kql](../includes/include-report-telemetry-error-kql.md)]
 
 For more information, see [Report telemetry](../administration/telemetry-reports-trace.md).
+
+## Reporting exceptions
+
+This table highlights some of the most common exceptions than can happen in report errors and links to more information about them.
+
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the excel file defining exceptions in reports.)
+
+| Exception | Severity | Explanation | 
+| --------- | -------- | ----------- |
+|NavCSideRecordNotFoundException|Error|[Read more](#NavCSideRecordNotFoundException)|
+|NavNCLDialogException|Error|[Read more](#NavNCLDialogException)|
+|NavNCLReportResultEmptyException|Warning|[Read more](#NavNCLReportResultEmptyException)|
+|NavCSideException|Error|[Read more](#NavCSideException)|
+|NavTestFieldException|Warning|[Read more](#NavTestFieldException)|
+|XmlException|Error|[Read more](#XmlException)|
+|NavNCLStringLengthExceededException|Error|[Read more](#NavNCLStringLengthExceededException)|
+|NavCSideDuplicateKeyException|Error|[Read more](#NavCSideDuplicateKeyException)|
+|Canceled|Warning|[Read more](#Canceled)|
+|NavAdministratorMadeChangesException|Error|[Read more](#NavAdministratorMadeChangesException)|
+|NavNCLFieldNotFoundException|Error|[Read more](#NavNCLFieldNotFoundException)|
+|NavCSideFilterException|Error/Warning|[Read more](#NavCSideFilterException)|
+|NavSqlException|Error|[Read more](#NavSqlException)|
+|NavCSideSQLLockTimeoutException|Warning|[Read more](#NavCSideSQLLockTimeoutException)|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
