@@ -16,6 +16,21 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
+## 
+
+To ensure a successful upgrade to Business Central 2023 Wave 2 (Version 23) Czech OnPrem, it is critical to perform a forced synchronization of the database schema. Microsoft will ensure a seamless upgrade process for users of the online version of Business Central. However, for those upgrading to this version using Business Central On-Premises, it is necessary to set the "schemaUpdateMode" parameter of the Base Application to "ForceSync" to synchronize the data model.
+
+ 
+
+The reason for that is that in the Business Central 2023 wave 2 (version 23) release, the following Czech-specific fields will be removed from the tables, while primary keys will be updated:
+
+· Table 1251 "Text-to-Account Mapping", field 11700 Text-to-Account Mapping Code : Code[10]
+
+· Table 1252 "Bank Pmt. Appl. Rule", field "Bank Pmt. Appl. Rule Code" Code : Code[10]
+
+ 
+
+Users who are upgrading to the On-Premises version of Business Central 2023 Wave 2 (Version 23) Czech and higher must verify that there are no duplicate records in both tables 1251 "Text to Account Mapping" and 1252 "Bank Payment Application Rule" after the Czech fields have been removed from the primary key. This can be accomplished either by manually deleting the data or by upgrading to any version of BC 22.x where data modifications will be included as part of the upgrade procedures. It is highly recommended to back up the data in these tables before proceeding.‹ collapse
 ## Web server components fatal error during installation on Azure virtual machine (VM)
 
 <!-- hhttps://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/445272/-->
