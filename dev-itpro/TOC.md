@@ -763,6 +763,7 @@
 #### [Substituting a report](developer/devenv-substituting-reports.md)
 #### [Testing a report](developer/devenv-testing-reports.md)
 #### [Report performance](developer/devenv-report-performance.md)
+#### [Troubleshooting report errors](developer/devenv-reports-troubleshooting.md)
 #### [Report telemetry](administration/telemetry-reports-trace.md)
 
 
