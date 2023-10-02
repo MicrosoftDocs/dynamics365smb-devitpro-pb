@@ -394,6 +394,6 @@ For more information, see [Report performance](devenv-report-performance.md)
 
 ## See also
 
-[Testing a report](devenv-testing-reports.md)
-[Report performance](devenv-report-performance.md)
-[Report telemetry](../administration/telemetry-reports-trace.md)
+[Testing a report](devenv-testing-reports.md)   
+[Report performance](devenv-report-performance.md)   
+[Report telemetry](../administration/telemetry-reports-trace.md)   
