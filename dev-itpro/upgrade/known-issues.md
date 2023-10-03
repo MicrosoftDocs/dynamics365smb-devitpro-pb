@@ -16,19 +16,20 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
-## Removed table fields in base application cause sync errors
+## Removed table fields in the Czech (CZ) base application cause sync errors
 
-> Applies to: Upgrade to version 23 - CZ (Czech)
+> Applies to: Upgrade to version 23
 
 ### Problem
 
-In the Czech base application of version 23, the following table fields have been removed and the primary keys have been updated:
+As part of the de-localization process of the Czech (CZ) version of the Business Central, Microsoft has moved all Czech-specific functionalities into separate applications. As a result , , the following fields have been removed and the primary keys have been updated in the Czech (CZ) base application, version 23:
 
--  Table 1251 "Text-to-Account Mapping", field 11700 Text-to-Account Mapping Code : Code[10]
+|Table|Field|
+|-|-|
+|1251 "Text-to-Account Mapping"|"Text-to-Account Mapping (11700, Code[10]|
+|1252 "Bank Pmt. Appl. Rule"|"Bank Pmt. Appl. Rule Code" ( Code[10]|
 
-- Table 1252 "Bank Pmt. Appl. Rule", field "Bank Pmt. Appl. Rule Code" Code : Code[10]
-
-These changes can result in the following errors when you try to synchronize the base application with the tenant during upgrade:
+These changes can lead to the following errors when you try to synchronize the base application with the tenant during upgrade:
 
 ```ps
 Sync-NAVApp : Table 1251 Text-to-Account Mapping :: The field 'Text-to-Account Mapping Code' cannot be located. Removing fields is not allowed.
