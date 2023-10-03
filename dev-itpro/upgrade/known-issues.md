@@ -28,7 +28,7 @@ In the Czech base application of version 23, the following table fields have bee
 
 - Table 1252 "Bank Pmt. Appl. Rule", field "Bank Pmt. Appl. Rule Code" Code : Code[10]
 
-These changes can result in the follwoing error when you try to synchronize the base application with the tenant during upgrade:
+These changes can result in the following errors when you try to synchronize the base application with the tenant during upgrade:
 
 ```ps
 Sync-NAVApp : Table 1251 Text-to-Account Mapping :: The field 'Text-to-Account Mapping Code' cannot be located. Removing fields is not allowed.
