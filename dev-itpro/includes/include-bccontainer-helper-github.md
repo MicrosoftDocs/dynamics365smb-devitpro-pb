@@ -1,0 +1,1 @@
+  Use this repo to collaborate around the source code and the scripts of BcContainerHelper PowerShell module for [!INCLUDE [prod_short](developer/includes/prod_short.md)]: [https://github.com/Microsoft/NavContainerHelper](https://github.com/Microsoft/NavContainerHelper)

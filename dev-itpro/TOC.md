@@ -478,6 +478,7 @@
 
 ### Work in sandboxes
 #### [Sandbox environments for development](developer/devenv-sandbox-overview.md)
+#### [Running a container-based development environment](developer/devenv-running-container-development.md)
 #### [Get started with the container sandbox development environment](developer/devenv-get-started-container-sandbox.md)
 #### [Work with development sandboxes and entitlements](developer/devenv-work-sandbox-entitlements.md)
 
@@ -1448,7 +1449,6 @@
 ##### [2020 release wave 1 on-premises updates](deployment/update-versions-16.md)
 ##### [2019 release wave 2 On-premises updates](deployment/update-versions-15.md)
 ##### [October 2018 on-premises updates](deployment/update-versions-13.md)
-### [Running a container-based development environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
 ### Deployment topologies

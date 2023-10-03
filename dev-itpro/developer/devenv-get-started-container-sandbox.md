@@ -40,15 +40,23 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 
 ## Set up a local-hosted container sandbox
 
-1. If not already done, install Docker.
+### Prerequisite: install Docker
+If not already done, install Docker.
 
     To install and configure Docker, choose the version of Docker that is appropriate for the host operating system:
 
-    - For Windows 10, use [Docker Community Edition]( https://hub.docker.com/editions/community/docker-ce-desktop-windows).
+    - For Windows 10/11, use [Docker Desktop on Windows]( https://hub.docker.com/editions/community/docker-ce-desktop-windows).
         For more information, see [Install instructions](/virtualization/windowscontainers/quick-start/quick-start-windows-10).
     - For Windows Server, use [Docker Enterprise Edition](https://hub.docker.com/editions/enterprise/docker-ee-server-windows).
         For more information, see [Install instructions](/virtualization/windowscontainers/quick-start/quick-start-windows-server).
 
+### Setup a Docker container sandbox using BCContainerHelper
+
+To setup a Docker container sandbox using an existing sandbox environment, see [Running a Container-Based Development Environment](devenv-running-container-development.md).
+
+### Setup a Docker container sandbox using an existing sandbox environment
+
+To setup a Docker container sandbox using an existing sandbox environment, follow these steps
 2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **SANDBOX ENVIRONMENT (CONTAINER)**, and then select the relevant link.
 3. Choose **Host Locally**.
 4. Save the **CreateBCSandbox.ps1** file to your computer.
@@ -87,8 +95,6 @@ You now have a container sandbox set up on your computer. The following shortcut
 - **\<Container name\> PowerShell Prompt** - opens a Windows PowerShell prompt in the container. This gives you access to the [!INCLUDE[navnowg_md](includes/navnow_md.md)] (/powershell/business-central/overview), which you can run against the container sandbox environment. 
 - **\<Container name\>Command Prompt**  - opens a Windows command prompt in the container.
 
-
-For more information about working with a container sandbox, see [Running a Container-Based Development Environment](devenv-running-container-development.md).
 
 ### <a name="VSCode"></a>Set up Visual Studio Code
 After the container sandbox is set up, you must set up Visual Studio Code for extension development. To do this, you need the values for `Dev. Server`,  `Dev. ServerInstance`, and `Files` parameters that you retrieved from the Windows PowerShell ISE console when you ran the **CreateBCSandbox.ps1** script. 
