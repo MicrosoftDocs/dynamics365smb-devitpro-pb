@@ -74,11 +74,13 @@ For more information, see [Web URL syntax](devenv-web-client-urls.md).
 
 ## Using fonts in Excel layouts
 
-The online version of Business Central contains preinstalled fonts on the servers that can be used when generating reports. You can use any of these fonts in your layout.
+[!INCLUDE[using_fonts](../includes/include-excel-word-layouts-fonts.md)]
 
-For more information, see [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts).
+## Using Office document themes in Excel layouts
 
-## Create a simple Excel layout report
+[!INCLUDE[using_office_themes](../includes/include-excel-word-layouts-themes.md)]
+
+## Example: Create a simple Excel layout report
 
 The following steps show how to create a basic report based on an Excel layout. The example also illustrates how compilation triggers a starter template for the Excel layout. If an existing layout is referenced with the `LayoutFile` property, the layout is validated based on the schema of the report dataset. 
 

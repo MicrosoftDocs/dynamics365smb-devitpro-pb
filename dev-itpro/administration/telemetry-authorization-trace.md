@@ -285,6 +285,10 @@ This message occurs when AL code causes an error during the OnOpenCompany trigge
 
 Because AL code can trigger any type of error, the resolution will depend on the executed AL code. See the **failureReason** dimension for a callstack to determine where the error occurred.
 
+## Troubleshooting (Open Company) login performance
+[!INCLUDE[login_performance](../includes/include-telemetry-login-performance.md)])
+
+
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
