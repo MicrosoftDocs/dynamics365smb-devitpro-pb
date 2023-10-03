@@ -122,8 +122,8 @@
 #### [Authoring guide](help/writing-guide.md)
 #### [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 ### ALDoc tool
-#### [Generating help with the ALDoc tool (preview)](help/help-aldoc-generate-help.md)
-#### [Overwriting help with the ALDoc tool (preview)](help/help-aldoc-overwrites.md)
+#### [Generating help with the ALDoc tool](help/help-aldoc-generate-help.md)
+#### [Overwriting help with the ALDoc tool](help/help-aldoc-overwrites.md)
 <!--### Resources for a developer
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Documentation](developer/devenv-dev-overview.md)
@@ -757,6 +757,7 @@
 ##### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)  
 ##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
 ##### [Defining a custom report render](developer/devenv-report-custom-render.md)
+##### [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts)
 ##### [Adding barcodes to report layouts](developer/devenv-report-add-barcodes.md)
 #### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 #### [Report triggers and operations](developer/devenv-report-triggers.md)
@@ -895,6 +896,7 @@
 ### Using the system application
 #### [Overview of the system application](developer/devenv-system-application-overview.md)
 #### [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
+
 #### Creating new modules in the system application
 ##### [Module architecture](developer/devenv-blueprint.md)
 ##### [Get started with modules](developer/devenv-getting-started.md)

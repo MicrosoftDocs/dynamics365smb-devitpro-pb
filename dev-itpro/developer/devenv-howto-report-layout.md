@@ -15,7 +15,15 @@ When you create a new report, there are two main tasks. First, you define the re
 
 Later in this article you can read more how to enable multiple report layouts. For more information, see [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
 
-## Create a Word layout report
+## Using fonts in Word layouts
+
+[!INCLUDE[using_fonts](../includes/include-excel-word-layouts-fonts.md)]
+
+## Using Office document themes in Word layouts
+
+[!INCLUDE[using_office_themes](../includes/include-excel-word-layouts-themes.md)]
+
+## Example: Create a Word layout report
 
 The following example extends the Customer List page with a trigger that runs the report as soon as the Customer List page is opened.
 
@@ -82,6 +90,7 @@ You'll now see the generated report in preview mode.
 >```
 
 [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
+
 
 ## Enabling the Microsoft Word rendering engine
 

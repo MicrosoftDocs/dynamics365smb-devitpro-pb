@@ -12,6 +12,8 @@ ms.topic: conceptual
 
 # Selling Business Central apps through AppSource
 
+[!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
+
 To sell your [!INCLUDE [prod_short](includes/prod_short.md)] app through AppSource, you must first define offers and plans in Partner Center, and map those plans to functionality in your app. Once the transact option is enabled, you can define plans, or variants, of the offer. The plans can then be used to sell various levels of functionality, such as Gold, Silver, and Bronze variants at different prices. Plans can also be used for waterfall pricing, that is when selling the same level of functionality with a discount based on the number of users bought. With waterfall pricing, the price per user decreases as the number of users increases. For each plan, you define the market specifically. The markets supported are the same as the markets supported for Business Central.
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, transactability based on credit card payment and *per-user licensing* is available for AppSource apps. This means that customers can purchase your app directly in AppSource. The purchase is then automatically provisioned in the customer's Microsoft admin center, and the customer can assign the app licenses to individual users. <!-- For information about Microsoft admin center, see []().-->
