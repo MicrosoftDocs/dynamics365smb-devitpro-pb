@@ -336,7 +336,7 @@ You'll synchronize the tenant's database schema with any schema changes in the a
    Replace `$NewBCVersion` with the exact version of the published Base Application.
 
    > [!IMPORTANT]
-   > If you're upgrading a CZ-Czech language version, you must use the `-Mode ForceSync` parameter to force synchronize the base application. For more information, see [](); othew
+   > If you're upgrading a CZ-Czech language version, you must use the `-Mode ForceSync` parameter to force synchronize the base application; otherise a synchronization error occursFor more information, see [](); othew
 
 5. Synchronize the tenant with the [Application](../developer/devenv-application-app-file.md) extension.
 

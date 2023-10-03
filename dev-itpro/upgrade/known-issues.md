@@ -16,21 +16,38 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
-## 
+## Removed table fields in base application cause sync errors
 
-To ensure a successful upgrade to Business Central 2023 Wave 2 (Version 23) Czech OnPrem, it is critical to perform a forced synchronization of the database schema. Microsoft will ensure a seamless upgrade process for users of the online version of Business Central. However, for those upgrading to this version using Business Central On-Premises, it is necessary to set the "schemaUpdateMode" parameter of the Base Application to "ForceSync" to synchronize the data model.
+> Applies to: Upgrade to version 23 - CZ (Czech)
 
- 
+### Problem
 
-The reason for that is that in the Business Central 2023 wave 2 (version 23) release, the following Czech-specific fields will be removed from the tables, while primary keys will be updated:
+In the Czech base application of version 23, the following table fields have been removed and the primary keys have been updated:
 
-· Table 1251 "Text-to-Account Mapping", field 11700 Text-to-Account Mapping Code : Code[10]
+-  Table 1251 "Text-to-Account Mapping", field 11700 Text-to-Account Mapping Code : Code[10]
 
-· Table 1252 "Bank Pmt. Appl. Rule", field "Bank Pmt. Appl. Rule Code" Code : Code[10]
+- Table 1252 "Bank Pmt. Appl. Rule", field "Bank Pmt. Appl. Rule Code" Code : Code[10]
 
- 
+These changes can result in the follwoing error when you try to synchronize the base application with the tenant during upgrade:
 
-Users who are upgrading to the On-Premises version of Business Central 2023 Wave 2 (Version 23) Czech and higher must verify that there are no duplicate records in both tables 1251 "Text to Account Mapping" and 1252 "Bank Payment Application Rule" after the Czech fields have been removed from the primary key. This can be accomplished either by manually deleting the data or by upgrading to any version of BC 22.x where data modifications will be included as part of the upgrade procedures. It is highly recommended to back up the data in these tables before proceeding.‹ collapse
+```ps
+Sync-NAVApp : Table 1251 Text-to-Account Mapping :: The field 'Text-to-Account Mapping Code' cannot be located. Removing fields is not allowed.
+Table 1251 Text-to-Account Mapping :: Changing fields for the key 'Key1' is not allowed. Previous list: 'Text-to-Account Mapping Code', 'Line No.', new List: 'Line No.'.
+Table 1252 Bank Pmt. Appl. Rule :: The field 'Bank Pmt. Appl. Rule Code' cannot be located. Removing fields is not allowed.
+Table 1252 Bank Pmt. Appl. Rule :: Changing fields for the key 'Key1' is not allowed. Previous list: 'Bank Pmt. Appl. Rule Code', 'Match Confidence', 'Priority', new List: 'Match Confidence', 'Priority'.
+```
+
+### Workaround
+
+When you synchronize the base application, run the synchronization in the ForceSync mode using the `Mode ForceSync` parameter, for example: 
+
+```ps
+SyncNavApp -ServiceInstance BC230 -Name "Base Application" -Version 23.x.x.x -Mode ForceSync
+```
+
+[Learn more about this issue]()
+
+
 ## Web server components fatal error during installation on Azure virtual machine (VM)
 
 <!-- hhttps://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/445272/-->
