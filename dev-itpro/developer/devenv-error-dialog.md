@@ -73,6 +73,20 @@ The following table explains the different elements in Copy details.
 |AL call stack | The AL stack trace in the session when the error occurred.| 
 
 
+## Sample KQL code (troubleshoot further with telemetry)
+
+In telemetry, use this KQL code to help you understand what happened in the session prior to the error
+
+```kql
+traces
+| where timestamp > ago(1d) // adjust as needed
+| where operation_Id == '<insert Application Insights session ID here>'
+| project timestamp
+, message
+, eventId = customDimensions.eventId 
+, customDimensions
+| order by timestamp asc
+```
 
 
 ## See also
