@@ -14,7 +14,7 @@ There are many different ways to spin up a new task:
 
 They come with different characteristics as described in this table:
 
-|Method to start a new asynchronous operation | Properties |
+|Method to start a new asynchronous operation | Characteristics |
 |---------------------------|------------|
 | Page Background Task      | Can (will) be canceled <br> Read-only <br> Call back to parent session <br> Lightweight |
 | StartSession              | Created immediately <br> Runs on same server <br> Not as controlled as a Page Background Task |
