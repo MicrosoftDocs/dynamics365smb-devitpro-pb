@@ -15,6 +15,8 @@ ms.reviewer: jswymer
 
 [!INCLUDE[prod_short](../includes/2020_releasewave2.md)], version 17.1. Available in extension telemetry starting with version 18.1.
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The [!INCLUDE[server](../developer/includes/server.md)] server will emit telemetry about the execution time of long running AL methods, including the time spent in the database. The signal also includes a breakdown of how much time each event subscriber added to the total time. As a partner, this data gives you insight into bad performing code and enables you to troubleshoot performance issues caused by extensions.
 
 <!--

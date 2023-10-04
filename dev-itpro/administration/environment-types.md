@@ -13,6 +13,8 @@ ms.author: jswymer
 
 # Production and Sandbox Environments
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 You can create environments of different types. Which type of environment to choose depends on what you need it for.  
 
 > [!TIP]

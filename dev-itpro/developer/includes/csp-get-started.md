@@ -7,6 +7,8 @@ ms.collection: get-started
 ---
 ### Enroll in the CSP program
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The [Cloud Solution Provider](/partner-center/csp-overview) (CSP) program helps your company to be more involved in your customers' businesses, beyond reselling licenses. In CSP, you can choose to enroll as an *indirect reseller* or a *direct bill partner*.  
 
 In most cases, you will enroll as an *indirect reseller* and then work with an *indirect provider*, also referred to as a *distributor*, who then manages all interaction with Microsoft in terms of licensing and technology, so that you can focus on sales and support. If you decide to enroll as a *direct bill partner* in order to fully own the end-to-end relationship with both customers and Microsoft, make sure that you meet the eligibility requirements. For more information, see [Enroll in the Cloud Solution Provider program](/partner-center/enrolling-in-the-csp-program) in the Microsoft Partner Center content.  

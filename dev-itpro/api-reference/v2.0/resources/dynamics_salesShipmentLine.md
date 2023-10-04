@@ -33,7 +33,6 @@ Represents a sales shipment line in [!INCLUDE[prod_short](../../../includes/prod
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[salesShipment](dynamics_salesshipment.md)|salesShipment |Gets the salesshipment of the salesShipmentLine.|
-|[account](dynamics_account.md)|account |Gets the account of the salesShipmentLine.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesShipmentLine.|
 
 ## Properties

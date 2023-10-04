@@ -45,24 +45,23 @@ If successful, this method returns a ```200 OK``` response code and a **customer
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/customerReturnReasons({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here is an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 {
-    "id" : "",
-    "code" : "",
-    "description" : ""
+    "id": "6ea22bf6-a449-ee11-ad0b-a1422c0f7f1f",
+    "code": "VARIANT",
+    "description": "Wrong item variant"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  

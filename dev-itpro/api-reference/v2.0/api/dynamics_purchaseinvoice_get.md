@@ -90,6 +90,8 @@ Here is an example of the response.
     "payToPostCode": "61236",
     "currencyId": "00000000-0000-0000-0000-000000000000",
     "currencyCode": "USD",
+    "orderId": "00000000-0000-0000-0000-000000000000",
+    "orderNumber": "",
     "pricesIncludeTax": false,
     "discountAmount": 0,
     "discountAppliedBeforeTax": true,

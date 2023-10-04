@@ -11,6 +11,8 @@ ms.date: 05/25/2022
 ---
 # Modify the Excel Add-in Configuration to Support July 2022 Update
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Starting in July 2022, Microsoft will roll out an update to the Excel add-in. The update will help to secure the connection between the add-in and [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. The update requires that you modify your organization's Microsoft Entra ID configuration so that users can continue using the add-in.
 
 > [!NOTE]

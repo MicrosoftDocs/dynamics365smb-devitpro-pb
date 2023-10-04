@@ -14,6 +14,8 @@ ms.author: jswymer
 
 **INTRODUCED IN:** Business Central 2020 release wave 1, version 16.3. Extension-level support introduced in 2020 release wave 2, version 17.1.
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Extension lifecycle telemetry gathers data about the success or failure of the following extension-related operations:
 
 - Compiling an extension

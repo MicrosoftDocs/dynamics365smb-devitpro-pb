@@ -13,7 +13,9 @@ ms.author: jswymer
 
 # Analyzing Field Monitoring Telemetry
 
-[!INCLUDE[2020_releasewave2-17-1-later](../includes/2020_releasewave2-17-1-later.md)] 
+[!INCLUDE[2020_releasewave2-17-1-later](../includes/2020_releasewave2-17-1-later.md)]
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 Keeping sensitive data secure and private is a core concern for most businesses. To add a layer of security, you can monitor important fields when someone changes a value. For example, you might want to know if someone changes your company's IBAN number.
 

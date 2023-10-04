@@ -1,5 +1,5 @@
 ---
-title: Get Started Building Apps
+title: Get started building apps
 description: Learn how you can get started building apps for Dynamics 365 Business Central in six easy steps.
 author: a-emniel
 ms.topic: conceptual
@@ -9,7 +9,9 @@ ms.date: 08/02/2022
 ms.collection: get-started
 ---
 
-# Get Started with Building Apps
+# Get started with building apps
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 [!INCLUDE [prod_long](../includes/prod_long.md)] is a business management solution that helps companies connect their services and operations to streamline business processes, improve customer interactions and make better decisions. With this modern business platform, you have the convenience to quickly tailor, extend, and build applications so that they fit your specific needs with little to no code development.
 

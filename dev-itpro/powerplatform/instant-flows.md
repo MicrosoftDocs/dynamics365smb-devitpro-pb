@@ -25,9 +25,11 @@ There are two approaches to creating instant flows, as described in this section
 
 ### Instant flows that use the "For a selected record" trigger 
 
-You create these flows by using the "For a selected record (V3)" trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. They're designed to run on records in a page, although they don't have to. For users, these flows are available from the **Automate** action group on most list, card, and document pages. They allow users to run the flow in the context of a specific [!INCLUDE[prod_short](../includes/prod_short.md)] record&mdash;without leaving the page. This approach is recommended for flows related to [!INCLUDE[prod_short](../includes/prod_short.md)] data.
+You create these flows by using the "For a selected record (V3)" trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. They're designed to run on records in a page, although they don't have to. For users, these flows are available from the **Automate** action group on most list, card, and document pages. They allow users to run the flow in the context of a specific [!INCLUDE[prod_short](../includes/prod_short.md)] record&mdash;without leaving the page. This approach is recommended for flows related to [!INCLUDE[prod_short](../includes/prod_short.md)] data. 
 
-:::image type="content" source="../developer/media/power-automate-action-intro.png" alt-text="Shows the Automate action in the action bar with expanded actions.":::
+:::image type="content" source="../developer/media/power-automate-instant-menu.svg" alt-text="Shows the Automate action in the action bar with expanded actions.":::
+
+<!--:::image type="content" source="../developer/media/power-automate-action-intro.png" alt-text="Shows the Automate action in the action bar with expanded actions.":::-->
 
 You can choose to make the flow available in the **Automate** action group for all environments, companies, and pages or only a specific environment, company, or pages.
 
@@ -102,7 +104,7 @@ Complete the following steps:
 
    1. Sign in to [Business Central](https://businesscentral.microsoft.com).
    2. Open the list, card, or document page.
-   3. In the action bar, select **Automate** > **Power Automate** > **Create a Flow** > **Create from blank**.
+   3. In the action bar, select **Automate** > **Power Automate** > **Create action based on a flow** > **Create from blank**.
 
     You're automatically signed in to Power Automate.
 
@@ -175,13 +177,13 @@ To create an instant flow from a template, complete the following steps:
 
    1. Sign in to [Business Central](https://businesscentral.microsoft.com).
    2. Open the list, card, or document page.
-   3. In the action bar, select **Automate** > **Power Automate** > **Create a Flow**.
-   4. The **Create flow** page opens and lists all the available Business Central templates related to the page. Select the template you want.
+   3. In the action bar, select **Automate** > **Power Automate** > **Create action based on a flow**.
+   4. The **Create a flow** page opens and lists all the available Business Central templates related to the page. Select the template you want.
 
       > [!TIP]
       > When you select a template, an introductory page explaining the template appears, letting you continue or go back.
       >
-      > By default, the **Create flow** page is filtered to list only those templates that create flows that will appear in the **Automate** action group. If you want a template that's not shown or want to find out what other templates are available, select **Filtered templates** > **All templates** to clear the filter or use the **Search templates...** box. If you clear the filter, the **Create flow** page will list all Power Automate templates regardless of whether they connect to Business Central. So, remember that only flows that use the "For a selected record (V3)" trigger will be available from the **Automate** action group in Business Central.
+      > By default, the **Create a flow** page is filtered to list only those templates that create flows that will appear in the **Automate** action group. If you want a template that's not shown or want to find out what other templates are available, select **Filtered templates** > **All templates** to clear the filter or use the **Search templates...** box. If you clear the filter, the **Create a flow** page will list all Power Automate templates regardless of whether they connect to Business Central. So, remember that only flows that use the "For a selected record (V3)" trigger will be available from the **Automate** action group in Business Central.
 
    # [From Power Automate](#tab/pa)
 

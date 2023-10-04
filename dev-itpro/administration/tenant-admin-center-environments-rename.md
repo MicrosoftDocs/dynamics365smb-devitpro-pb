@@ -18,6 +18,8 @@ ms.author: jswymer
 > [!NOTE]
 > This feature is in preview. It might change or be removed in the future updates.
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 You can change the name of any environment. The name uniquely identifies the environment from your other environments. Before you change a name, you must consider that the name also is part of the environment's URL. The URL is used in links to the environment in various ways. So changing the name can have significant impact.
 
 The renaming of an environment is logged and shown in the [operations log](tenant-admin-center-environments.md#opslog).

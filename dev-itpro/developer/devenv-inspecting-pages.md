@@ -109,6 +109,9 @@ Each field is shown with the following information:
 - If the field is added by an extension, the name of the extension appears under the value.
 - For Code and Text fields the length of the field is shown as follows: `Text[x]` or `Code[x]`, where `x` is the length of the field.
 
+> [!TIP]
+> To find where a field is used on a page, select the field in the **Table Fields** tab. If it's used on the page, it's highlighted by a green border.
+
 #### What field information isn't shown
 
 - Page fields that aren't bound to the source table by the [SourceExp property](./properties/devenv-properties.md).

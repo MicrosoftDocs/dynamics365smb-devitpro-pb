@@ -1,6 +1,6 @@
 ---
-title: "AL Code Navigation"
-description: "This article describes how to use the Go To Definition feature when debugging the AL code in Dynamics 365 Business Central." 
+title: AL code navigation
+description: This article describes how to use the Go To Definition feature when debugging the AL code in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 05/23/2022
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# AL Code Navigation
+# AL code navigation
 
 When you develop an AL extension, you may want to navigate around the source code frequently. To jump around the code or to access the reference code, you use the **Go To Definition** feature in Visual Studio Code.
 
@@ -37,9 +37,9 @@ The following conditions still apply:
 
 For more information about code navigation in Visual Studio Code, see [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved).
 
-## See Also  
+## See also  
 
-[Developing Extensions in AL](devenv-dev-overview.md)  
+[Developing extensions in AL](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
 [Debugging in AL](devenv-debugging.md)  
-[AL Code Actions](devenv-code-actions.md)  
+[AL code actions](devenv-code-actions.md)  
