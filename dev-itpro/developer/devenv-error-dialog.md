@@ -12,7 +12,9 @@ ms.author: kepontop
 
 # Understanding the error dialog
 
-The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. Whenever an error is surfaced to the user, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client displays an error dialog. In this article, you can learn more about the different parts of the error dialog so you can more effectively help users mitigate any issues they might encounter.
+The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. Whenever an error is surfaced to the user, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client displays an error dialog, similar to the following figure. In this article, you can learn more about the different parts of the error dialog so you can more effectively help users mitigate any issues they might encounter.
+
+![Show an example of an error dialog in Business Central.](media/error-dialog.png)
 
 ## Visual elements of the error dialog (version 22 and earlier)
 
