@@ -49,7 +49,7 @@ SyncNavApp -ServiceInstance <BC 23 server instance> -Name "Base Application" -Ve
 If you're upgrading from version 21 or earlier, the workaround is slightly different. First, ensure that no duplicate records will exist in either table 1251 "Text to Account Mapping" or table 1252 "Bank Payment Application Rule" after upgrade. <!--the Czech-specific fields have been removed and the primary key modified.--> To do this, complete one of the following tasks before you upgrade to version 23:
 
 - Manually delete any duplicate records in either of the tables, or
-- Upgrade to the latest [version 22 that's compatible](upgrade-v14-v15-compatibility.md) with the version 23 you're upgrading to. With version 22, the necessary data modifications are included as part of the upgrade procedures.
+- Upgrade to the latest [version 22 that's compatible](upgrade-v14-v15-compatibility.md) with the version 23 you're upgrading to. With version 22, the necessary data modifications to handle duplicate records are included as part of the upgrade procedures.
 
 Once you completed either of these tasks, upgrade to version 23 as usual. Don't forget to synchronize the base application using the ForceSync mode with the Sync-NavApp cmdlet.
 
