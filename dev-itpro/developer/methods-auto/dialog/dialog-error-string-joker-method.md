@@ -41,19 +41,9 @@ Any variable or expression to be inserted in String. You can insert up to 10 val
 
 The window is automatically sized to hold the longest line of text and total number of lines. By calling the method with an **empty** string the execution of AL code ends without displaying a message. 
 
-## Programming Guidelines  
+## Guidelines for error messages
 
-We recommend the following guidelines for error messages:  
-
-- Describe what is wrong and how to solve the problem.  
-
-- Write a short descriptive message. Do not use more words than necessary.  
-
-- Always end the error message with a period.  
-
-- Use a text constant for the text of the message.  
-
-For more information, see [Progress Windows, Message, Error, and Confirm Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md).  
+[!INCLUDE[error_message_guidelines](../../includes/include-error-message-guidelines.md)]
 
 ## Example  
 
