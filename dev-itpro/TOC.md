@@ -437,6 +437,7 @@
 #### [Resource exposure policy setting](developer/devenv-security-settings-and-ip-protection.md)
 #### [Develop for multiple platform versions](developer/devenv-developing-for-multiple-platform-versions.md)
 #### [Optimize Visual Studio Code for AL development](developer/devenv-optimize-visual-studio-code.md)
+#### [Running a container-based development environment](developer/devenv-running-container-development.md)
 ### Configure projects and workspaces
 #### [Work with multiple AL project folders within one workspace](developer/devenv-multiroot-workspaces.md)
 #### [Work with multiple projects and project References](developer/devenv-work-workspace-projects-references.md)
@@ -1448,7 +1449,6 @@
 ##### [2020 release wave 1 on-premises updates](deployment/update-versions-16.md)
 ##### [2019 release wave 2 On-premises updates](deployment/update-versions-15.md)
 ##### [October 2018 on-premises updates](deployment/update-versions-13.md)
-### [Running a container-based development environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
 ### Deployment topologies
