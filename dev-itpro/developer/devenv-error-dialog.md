@@ -1,5 +1,5 @@
 ---
-title: "Understanding the error dialog"
+title: Understanding the error dialog
 description: Understand the different parts the error dialog to be able to help mitigate issues for users 
 ms.custom: bap-template
 ms.date: 10/04/2023
@@ -62,20 +62,20 @@ AL call stack:
 Report1(Report 50101).OnPostReport(Trigger) line 2 - ReportErrors by Default publisher
 ```
 
-Below the text 'If requesting support, please provide the following details to help troubleshooting:', the error message(s) supplied to the user (and optionally in _DetailedMessage_ if the AL developer used the ErrorInfo version of the Error method) is stored. After the error message(s), the BC platform adds additional sections that can be useful when troubleshooting. The following table explains the different additional sections in Copy details.
+Below the text 'If requesting support, please provide the following details to help troubleshooting:', the error message(s) supplied to the user (and optionally in _DetailedMessage_ if the AL developer used the ErrorInfo version of the Error method) is stored. After the error message(s), the BC platform adds more sections that can be useful when troubleshooting. The following table explains the different the extra sections in Copy details.
 
 
 |Section | Description |
 |--------|-------------|
-|Internal session ID| An internal session id that is used by the [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)] support team in case the issue needs to be reported as as support case.|
-|Application Insights session ID| The session id. This is logged to the field operationId in the telemetry logged to [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)] | 
-|Client activity id| An internal session id that is used by the [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)] support team in case the issue needs to be reported as as support case.|
+|Internal session ID| An internal session ID that is used by the [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)] support team in case the issue needs to be reported as support case.|
+|Application Insights session ID| The session ID. This ID is recorded in the `operationId` field in the telemetry logged to [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)] | 
+|Client activity ID| An internal session ID that is used by the [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)] support team in case the issue needs to be reported as support case.|
 |Time stamp on error| The date and time (in UTC timezone) for when the error occurred. |
-|User telemetry id | [!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] | 
+|User telemetry ID | [!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] | 
 |AL call stack | The AL stack trace in the session when the error occurred.| 
 
 
-There are three pieces of information that will help you better understand the error that the user experienced:
+There are three pieces of information that help you better understand the error that the user experienced:
 1. The error message(s)
 2. Application Insights session ID (if telemetry is enabled in the environment/app)
 3. The AL stack trace
@@ -96,11 +96,14 @@ traces
 ```
 
 ### Understanding the AL stack trace
-Whenever an operation in AL is started, the operation is added to a data structure called the _AL stack_ and when the operation completes, it is removed from the AL stack. This way, the AL stack trace is then showing what AL was currently running in the session. For each operation, it is also logged which object the operation comes from as well as details about the app.
 
-Example: In this example, the first operation in the stack is found in the bottom line: _Match Confidence - OnDrillDown"(Trigger)_ from the "Payment Reconciliation Journal" page (object id 1290) residing in the app _Base Application_ by the publisher _Microsoft_. This is where execution started. The error happened in the operation in the top of the stack: apparently _ValidateEntryNotApplied_ in the Payment Application Proposal" table (object 1293) residing in the app _Base Application_ by the publisher _Microsoft_.
+Whenever an operation in AL is started, the operation is added to a data structure called the _AL stack_. When the operation completes, it's removed from the AL stack. This way, the AL stack trace is then showing what AL was currently running in the session. For each operation, the object the operation comes from and details about the app are also logged.
 
-```AL stack trace example
+#### Example
+
+Consider the following AL stack trace: 
+
+```
 "Payment Application Proposal"(Table 1293).ValidateEntryNotApplied line 12 - Base Application by Microsoft
 "Payment Application Proposal"(Table 1293)."Applied - OnValidate"(Trigger) line 17 - Base Application by Microsoft
 "Bank Acc. Reconciliation Line"(Table 274).DisplayApplication line 27 - Base Application by Microsoft
@@ -108,9 +111,11 @@ Example: In this example, the first operation in the stack is found in the botto
 "Payment Reconciliation Journal"(Page 1290)."Match Confidence - OnDrillDown"(Trigger) line 8 - Base Application by Microsoft
 ```
 
-You can therefore use the stack trace to identify
-1. what the user was doing (the bottom of the stack trace), and
-2. where the error happened (the top of the stack trace).
+The first operation in the stack is found in the bottom line: the _Match Confidence - OnDrillDown"(Trigger)_ from the "Payment Reconciliation Journal" page (object ID 1290) residing in the app _Base Application_ by the publisher _Microsoft_. This line is where execution started. The error happened in the operation in the top of the stack: _ValidateEntryNotApplied_ in the "Payment Application Proposal" table (object 1293) residing in the app _Base Application_ by the publisher _Microsoft_.
+
+You can then use the stack trace to identify:
+1. What the user was doing (the bottom of the stack trace)
+2. Where the error happened (the top of the stack trace)
 
 
 ## See also
