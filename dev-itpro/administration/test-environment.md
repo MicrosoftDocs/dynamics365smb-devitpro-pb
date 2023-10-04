@@ -76,3 +76,4 @@ About two months before a major update, you can try out new functionality in pre
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/Deployment.md)  
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products)  
+[Performance in Business Central Online](../../performance/performance-online.md)   
