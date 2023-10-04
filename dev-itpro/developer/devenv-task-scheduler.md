@@ -164,14 +164,14 @@ From the [!INCLUDE[prod_short](includes/prod_short.md)] web client, you can open
 
 ## Characteristics of job queues and scheduled tasks
 
-[!INCLUDE[jobqueue-and-task-scheduler-characteristics](../includes/include-jobqueue-and-task-scheduler-characteristics.md)]
+[!INCLUDE[jobqueue-and-task-scheduler-characteristics](includes/include-jobqueue-and-task-scheduler-characteristics.md)]
 
 
 ## See Also
 [Task Scheduler Data Type](methods-auto/taskscheduler/taskscheduler-data-type.md)   
 [Analyzing Task Scheduler Telemetry](../administration/telemetry-task-scheduler-trace.md)   
-[Job queue](developer/devenv-job-queue.md)   
+[Job queue](devenv-job-queue.md)   
 [Async processing overview](devenv-async-overview.md)    
-[Performance Articles for Developers](performance-developer.md)   
+[Performance Articles for Developers](../performance/performance-developer.md)   
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md) 

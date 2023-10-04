@@ -532,7 +532,7 @@ Parts are a special category of page designed to be embedded within another page
 
 ## See Also
 [Async processing overview](devenv-async-overview.md)   
-[Performance Articles for Developers](performance-developer.md)   
+[Performance Articles for Developers](../performance/performance-developer.md)   
 [Configuring Business Central Server - Asynchronous Processing](../administration/configure-server-instance.md#PBT)  
 [Business Central Performance Counters](../administration/performance-counters.md)  
 [Monitoring Business Central Server Events](../administration/monitor-server-events.md)  

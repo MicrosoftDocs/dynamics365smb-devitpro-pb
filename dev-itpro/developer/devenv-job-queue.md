@@ -99,7 +99,7 @@ From the Business Central web client, you can open the Session Events table by a
 
 ## Characteristics of job queues and scheduled tasks
 
-[!INCLUDE[jobqueue-and-task-scheduler-characteristics](../includes/include-jobqueue-and-task-scheduler-characteristics.md)]
+[!INCLUDE[jobqueue-and-task-scheduler-characteristics](includes/include-jobqueue-and-task-scheduler-characteristics.md)]
 
 
 ## See Also
@@ -107,6 +107,6 @@ From the Business Central web client, you can open the Session Events table by a
 [Analyzing Job Queue Telemetry](../administration/telemetry-job-queue-lifecycle-trace.md)   
 [Task Scheduler](devenv-task-scheduler.md)   
 [Async processing overview](devenv-async-overview.md)   
-[Performance Articles for Developers](performance-developer.md)   
+[Performance Articles for Developers](../performance/performance-developer.md)   
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  
