@@ -22,12 +22,12 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 ### Problem
 
-As part of the de-localization process of the Czech (CZ) version of the Business Central, Microsoft has moved all Czech-specific functionalities into separate applications. As a result , , the following fields have been removed and the primary keys have been updated in the Czech (CZ) base application, version 23:
+As part of the delocalization process of the Czech (CZ) version of the Business Central, Microsoft has moved all Czech-specific functionalities into separate applications. As a result, the following fields have been removed and the primary keys have been updated in the Czech (CZ) base application, version 23:
 
 |Table|Field|
 |-|-|
-|1251 "Text-to-Account Mapping"|"Text-to-Account Mapping (11700, Code[10]|
-|1252 "Bank Pmt. Appl. Rule"|"Bank Pmt. Appl. Rule Code" ( Code[10]|
+|1251 "Text-to-Account Mapping"|11700 "Text-to-Account Mapping (Code[10]|
+|1252 "Bank Pmt. Appl. Rule"|11700 "Bank Pmt. Appl. Rule Code" (Code[10]|
 
 These changes can lead to the following errors when you try to synchronize the base application with the tenant during upgrade:
 
@@ -40,11 +40,21 @@ Table 1252 Bank Pmt. Appl. Rule :: Changing fields for the key 'Key1' is not all
 
 ### Workaround
 
-When you synchronize the base application, run the synchronization in the ForceSync mode using the `Mode ForceSync` parameter, for example: 
+If you're upgrading from version 22, when you synchronize the base application during upgrade, run synchronization in ForceSync mode using the [Sync-NavApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) with the `Mode ForceSync` parameter. For example: 
 
 ```ps
-SyncNavApp -ServiceInstance BC230 -Name "Base Application" -Version 23.x.x.x -Mode ForceSync
+SyncNavApp -ServiceInstance <BC 23 server instance> -Name "Base Application" -Version <23 version number> -Mode ForceSync
 ```
+
+If you're upgrading from version 21 or earlier, the workaround is slightly different because you must ensure that no duplicate records exist in either table 1251 "Text to Account Mapping" or table 1252 "Bank Payment Application Rule" after the Czech fields have been removed from the primary key. To solve this, before you upgrade to v23, do one of the following tasks:
+
+- Manually delete any duplicate records in table 1251 "Text to Account Mapping" and duplicate records in 1252 "Bank Payment Application Rule".
+
+Or,
+
+- Upgrade to the latest [version 22 that's compatible](upgrade-v14-v15-compatibility.md) with the version 23 you're upgrading to. With version 22, the required data modifications are included as part of the upgrade procedures.
+
+Once you completed either of these tasks, upgrade to version 23 as usual, expect remember to synchronize the base application using the ForceSync mode as described above. 
 
 [Learn more about this issue]()
 
