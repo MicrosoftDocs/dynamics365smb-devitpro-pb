@@ -14,7 +14,7 @@ ms.author: kepontop
 
 The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. Whenever an error is surfaced to the user, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client displays an error dialog. In this article, you can learn more about the different parts of the error dialog so you can more effectively help users mitigate any issues they might encounter.
 
-## Visual elements of the error dialog (version 22 and earlier)
+## Visual elements of the error dialog (2023 release wave 1 and earlier)
 
 In versions 22 and earlier, the error dialog consists of the following four parts:
 1. A title (optionally)
@@ -23,7 +23,7 @@ In versions 22 and earlier, the error dialog consists of the following four part
 4. A yes or no question as to whether the message was helpful
 
 
-## Visual elements of the error dialog (version 23 and later)
+## Visual elements of the error dialog (2023 release wave 2 and later)
 
 Starting in version 23, the error dialog consists of the following four parts:
 
@@ -41,7 +41,7 @@ Here's an example of the content of **Copy details**:
 ```
 If requesting support, please provide the following details to help troubleshooting:
 
-Something went wrong. Please contact your partner.
+The report couldn’t be generated, because it was empty. Adjust your filters and try again.
 
 Internal session ID: 
 23fa3850-ea3c-4529-81c8-fc36d3324676
@@ -62,7 +62,10 @@ AL call stack:
 Report1(Report 50101).OnPostReport(Trigger) line 2 - ReportErrors by Default publisher
 ```
 
-Below the text 'If requesting support, please provide the following details to help troubleshooting:', the error message(s) supplied to the user (and optionally in _DetailedMessage_ if the AL developer used the ErrorInfo version of the Error method) is stored. After the error message(s), the BC platform adds more sections that can be useful when troubleshooting. The following table explains the different the extra sections in Copy details.
+Below the text 'If requesting support, please provide the following details to help troubleshooting:', the error message(s) supplied to the user (and optionally in _DetailedMessage_ if the AL developer used the ErrorInfo version of the Error method) is stored. 
+
+
+After the error message(s), the BC platform adds more sections that can be useful when troubleshooting. The following table explains the different the extra sections in Copy details.
 
 
 |Section | Description |

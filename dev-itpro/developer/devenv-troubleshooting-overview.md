@@ -18,6 +18,7 @@ The following sections help you troubleshoot issues with [!INCLUDE[prod_short](.
 ## Troubleshooting in the client
 These tools provided in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client can help you gain insights on trends in application behavior, identify performance issues, database locks, and more. 
 
+- Investigate root causes for errors with [Copy details in the error dialog](developer/devenv-error-dialog.md)
 - Investigate page data, filters, and load times with the [Page Inspector](/dynamics365/business-central/across-inspect-page)
 - See if the events you rely on are fired as expected with the [Event Recorder](devenv-events-discoverability.md)
 - Check for unexpected table sizes with [Tables Information](/dynamics365/business-central/admin-view-table-information)
