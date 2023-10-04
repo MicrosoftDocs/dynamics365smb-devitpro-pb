@@ -4,7 +4,7 @@ description: Overview on the different ways an AL developer can do asynchronous 
 ms.custom: na
 ms.date: 10/04/2023
 ms.reviewer: jswymer
-ms.service: d365-business-central
+ms.service: dynamics365-business-central
 ms.topic: overview
 author: KennieNP
 ms.author: kepontop
