@@ -1,16 +1,16 @@
 ---
-title: "Task Scheduler"
+title: Task scheduler
 description: Learn about scheduled tasks and how the task scheduler works.
 ms.custom: na
-ms.date: 06/30/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 10/04/2023
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 author: jswymer
+ms.author: jswymer
 ---
 
-# Task Scheduler
+# Task scheduler
 
 <!-- source PartnerDiagnosticsScheduledTaskManagementTrace.cs -->
 
@@ -141,11 +141,11 @@ The session runs by using the same user/credentials that are used when calling A
 
 ## Monitor and troubleshoot
 
-[!INCLUDE[prod_short](includes/prod_short.md)] offers two ways to monitor the flow of scheduled tasks: telemetry in [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)] and the **Session Event** table. These tools let you follow execution of a task, and investigate errors in failure codeunits.
+[!INCLUDE[prod_short](includes/prod_short.md)] offers two ways to monitor the flow of scheduled tasks: telemetry in [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] and the **Session Event** table. These tools let you follow execution of a task, and investigate errors in failure codeunits.
 
 ### Task scheduler telemetry in Azure Application Insights
 
-You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry traces to an [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)] resource in Azure. Once set up, telemetry data will be sent to the resource as scheduled task moves through the flow. For more information, see:
+You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry traces to an [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] resource in Azure. Once set up, telemetry data will be sent to the resource as scheduled task moves through the flow. For more information, see:
 
 [Enable Sending Telemetry to Application Insights](../administration/telemetry-enable-application-insights.md) 
 
@@ -160,7 +160,7 @@ From the [!INCLUDE[prod_short](includes/prod_short.md)] web client, you can open
 [!INCLUDE[server](includes/server.md)] includes several settings related to task scheduler. These settings allow you to enable or disable task scheduler and manage tasks. For more information, see [Configure Business Central Server - Task Scheduler](../administration/configure-server-instance.md#Task).
 
 > [!NOTE]  
-> Task scheduler telemetry in Azure Application Insights also works for Business Central on-premises
+> Task scheduler telemetry in [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] also works for [!INCLUDE[prod_short](includes/prod_short.md)] on-premises.
 
 ## Characteristics of job queues and scheduled tasks
 

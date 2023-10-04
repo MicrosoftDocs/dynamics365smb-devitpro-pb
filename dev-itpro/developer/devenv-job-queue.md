@@ -72,7 +72,7 @@ Business Central offers two ways to monitor the flow of job queues: Azure Applic
 
 ### Job queue telemetry in Azure Application Insights
 
-You can set up Business Central to send telemetry traces to an [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)] resource in Azure. Once set up, telemetry data will be sent to the resource as job queue moves through the flow. For more information, see:
+You can set up Business Central to send telemetry traces to an [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] resource in Azure. Once set up, telemetry data will be sent to the resource as job queue moves through the flow. For more information, see:
 
 [Enable Sending Telemetry to Application Insights](../administration/telemetry-enable-application-insights.md) 
 
