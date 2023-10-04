@@ -26,8 +26,8 @@ As part of the delocalization process of the Czech (CZ) version of Business Cent
 
 |Table|Field|
 |-|-|
-|1251 "Text-to-Account Mapping"|11700 "Text-to-Account Mapping (Code[10]|
-|1252 "Bank Pmt. Appl. Rule"|11700 "Bank Pmt. Appl. Rule Code" (Code[10]|
+|1251 "Text-to-Account Mapping"|11700 "Text-to-Account Mapping (Code[10])|
+|1252 "Bank Pmt. Appl. Rule"|11700 "Bank Pmt. Appl. Rule Code" (Code[10])|
 
 These changes can lead to the following errors when you try to synchronize the base application with the tenant during upgrade:
 
