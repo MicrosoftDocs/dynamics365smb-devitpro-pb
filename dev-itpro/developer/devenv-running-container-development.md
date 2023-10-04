@@ -1,15 +1,15 @@
 ---
-title: "Running a Container-Based Development Environment"
-description: "Overview of the running container-based development."
+title: Running a container-based development environment"
+description: Overview of how to run a container-based development.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/13/2022
+ms.date: 10/04/2023
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Running a Container-Based Development Environment
+# Running a container-based development environment
 
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is available as artifacts for running on Docker on a Windows system with Docker installed.
 
@@ -17,7 +17,7 @@ ms.author: solsen
 
 Install Docker and configure it for Windows Containers.
 
-1. Please choose the version of Docker that is appropriate for the host operating system.
+1. Choose the version of Docker that is appropriate for the host operating system.
 
     - For Windows 10/11, use [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) - (option to qualify for free SKU - license may be required).
     - For Windows Server, use [Mirantis Container Runtime](https://docs.mirantis.com/mcr/23.0/overview.html) - (option to qualify for free SKU - license may be required).
@@ -28,9 +28,9 @@ Install Docker and configure it for Windows Containers.
     To switch to Windows containers, in the Taskbar, right-click the Docker icon ![Docker](media/docker-icon.png "Docker icon"), and then select **Switch to Windows Containers**. For more information, see [Switch between Windows and Linux containers](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers).
 
 > [!NOTE]
-> You can run Business Central on Docker using Docker commands, or you can use the BCContainerHelper PowerShell module. The BCContainerHelper module removes a lot of the complexity of running Docker.
+> You can run [!INCLUDE [prod_short](includes/prod_short.md)] on Docker using Docker commands, or you can use the BCContainerHelper PowerShell module. The BCContainerHelper module removes a lot of the complexity of running Docker.
 
-## Setup Business Central using the BCContainerHelper PowerShell module
+## Set up Business Central using the BCContainerHelper PowerShell module
 
 To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `BCContainerHelper` to work with containers. On a Windows 10/11, Windows Server 2016 or Windows server 2019 machine, **start PowerShell as an Administrator** and type:
 
@@ -47,21 +47,22 @@ $artifactUrl = Get-BcArtifactUrl -type sandbox -country us -select Latest
 New-BCContainer -accept_eula -containerName mysandbox -artifactUrl $artifactUrl
 ```
 
-The `BCContainerHelper` will create a folder on the C:\ drive called *bcartifacts.cache* for caching artifacts. It will also create a folder under C:\ProgramData called BCContainerHelper and will place all working files underneath that folder. The C:\ProgramData\BCContainerHelper folder will be shared to the container for transfer of files etc. If you don't specify a username and a password, it will ask for your password and use the current Windows username. If you specify your windows password, the container setup will use Windows Authentication integrated with the host. The `BCContainerHelper` will also create shortcuts on the desktop for the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Web client, a container prompt, and a container PowerShell prompt.
+The `BCContainerHelper` creates a folder on the C:\ drive called *bcartifacts.cache* for caching artifacts. It also creates a folder under C:\ProgramData called BCContainerHelper and places all working files underneath that folder. The C:\ProgramData\BCContainerHelper folder is shared to the container for transfer of files etc. If you don't specify a username and a password, it asks for your password and uses the current Windows username. If you specify your windows password, the container setup uses Windows Authentication integrated with the host. The `BCContainerHelper` also creates shortcuts on the desktop for the [!INCLUDE [prod_short](includes/prod_short.md)] web client, a container prompt, and a container PowerShell prompt.
 
-### Engage with us on GitHub - BcContainerHelper 
+### Engage with us on GitHub - BcContainerHelper
+
 [!INCLUDE[BcContainerHelper_github](../includes/include-bccontainer-helper-github.md)]
 
-
 ### For Business Central versions 14 or earlier
+
 The `BCContainerHelper` module also allows you to add the `-includeCSide` switch (For Business Central versions 14 or earlier) in order to add the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Windows client and C/SIDE to the desktop and export all objects to a folder underneath C:\ProgramData\BCContainerHelper\Extensions for the object handling functions from the module to work.
 
+## Set up Business Central using Docker commands
 
-## Setup Business Central using Docker commands
 > [!TIP]  
 > Use the `Get-BCArtifactUrl` from the BCContainerHelper PowerShell module to get the artifact URL for the version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] that you want.
 
-Open a Command Prompt as Administrator. In the command prompt, identify your version of Windows (example 10.0.19041.329). Run this command to pull the latest version of the generic image used to run Business Central on Docker:
+Run **Command Prompt** as **Administrator**. In the command prompt, identify your version of Windows (example 10.0.19041.329). Run this command to pull the latest version of the generic image used to run Business Central on Docker:
 
 ```docker pull mcr.microsoft.com/businesscentral:10.0.19041.329```
 
@@ -73,9 +74,9 @@ Use this command to run a sandbox container with the US localization of version 
 > You must specify the correct Windows Version in the generic image name. If your version of Windows doesn't have a corresponding generic Docker image, you might need to use Hyper-V isolation.
 
 
-## After setup (using BCContainerHelper or docker commands)
+## After setup (using BCContainerHelper or Docker commands)
 
-After starting the docker container, you'll see log entries similar to the following:
+After starting the Docker container, you see log entries similar to the following example:
 
 ```
 Initializing...
@@ -98,13 +99,13 @@ Initialization took 66 seconds
 Ready for connections!
 ```
 
-At this point, you can open your browser and type in the Web client URL from the log. You'll be prompted to sign in with the Admin Username/Password that is shown.
+At this point, you can open your browser and type in the web client URL from the log. You're prompted to sign in with the Admin Username/Password that is shown.
 
 > [!NOTE]  
 > The container image uses a so called self-signed certificate for HTTPS communication. Because of that, your browser might warn you that the page you are requesting is unsafe. In those specific circumstances, and only for test and development environments, it is safe to ignore this warning. If you want to resolve this warning, you can install the certificate on your PC. For more information, see the link under **Files** in the log entries.
 
 
-## See Also
+## See also
 
 [Get Started with AL](devenv-get-started.md)  
 [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md)  
