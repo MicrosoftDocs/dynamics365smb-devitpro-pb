@@ -12,7 +12,9 @@ ms.author: kepontop
 
 # Understanding the error dialog
 
-The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. Whenever an error is surfaced to the user, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client displays an error dialog. In this article, you can learn more about the different parts of the error dialog so you can more effectively help users mitigate any issues they might encounter.
+The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. Whenever an error is surfaced to the user, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client displays an error dialog, similar to the following figure. In this article, you can learn more about the different parts of the error dialog so you can more effectively help users mitigate any issues they might encounter.
+
+![Show an example of an error dialog in Business Central.](media/error-dialog.png)
 
 ## Visual elements of the error dialog (version 22 and earlier)
 
@@ -67,9 +69,9 @@ Below the text 'If requesting support, please provide the following details to h
 
 |Section | Description |
 |--------|-------------|
-|Internal session ID| An internal session ID that is used by the [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)] support team in case the issue needs to be reported as support case.|
-|Application Insights session ID| The session ID. This ID is recorded in the `operationId` field in the telemetry logged to [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)] | 
-|Client activity ID| An internal session ID that is used by the [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)] support team in case the issue needs to be reported as support case.|
+|Internal session ID| An internal session ID that is used by the [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] support team in case the issue needs to be reported as support case.|
+|Application Insights session ID| The session ID. This ID is recorded in the `operationId` field in the telemetry logged to [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] | 
+|Client activity ID| An internal session ID that is used by the [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] support team in case the issue needs to be reported as support case.|
 |Time stamp on error| The date and time (in UTC timezone) for when the error occurred. |
 |User telemetry ID | [!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] | 
 |AL call stack | The AL stack trace in the session when the error occurred.| 
