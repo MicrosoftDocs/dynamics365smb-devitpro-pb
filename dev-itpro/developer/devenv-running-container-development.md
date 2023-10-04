@@ -53,28 +53,7 @@ The `BCContainerHelper` creates a folder on the C:\ drive called *bcartifacts.ca
 
 [!INCLUDE[BcContainerHelper_github](../includes/include-bccontainer-helper-github.md)]
 
-### For Business Central versions 14 or earlier
-
-The `BCContainerHelper` module also allows you to add the `-includeCSide` switch (For Business Central versions 14 or earlier) in order to add the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Windows client and C/SIDE to the desktop and export all objects to a folder underneath C:\ProgramData\BCContainerHelper\Extensions for the object handling functions from the module to work.
-
-## Set up Business Central using Docker commands
-
-> [!TIP]  
-> Use the `Get-BCArtifactUrl` from the BCContainerHelper PowerShell module to get the artifact URL for the version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] that you want.
-
-Run **Command Prompt** as **Administrator**. In the command prompt, identify your version of Windows (example 10.0.19041.329). Run this command to pull the latest version of the generic image used to run Business Central on Docker:
-
-```docker pull mcr.microsoft.com/businesscentral:10.0.19041.329```
-
-Use this command to run a sandbox container with the US localization of version 16.3.14085.14363 on Docker:
-
-```docker run -e accept_eula=Y -m 4G -e artifacturl=https://bcartifacts.azureedge.net/sandbox/16.3.14085.14363/us mcr.microsoft.com/businesscentral:10.0.19041.329```
-
-> [!IMPORTANT]  
-> You must specify the correct Windows Version in the generic image name. If your version of Windows doesn't have a corresponding generic Docker image, you might need to use Hyper-V isolation.
-
-
-## After setup (using BCContainerHelper or Docker commands)
+## After setup
 
 After starting the Docker container, you see log entries similar to the following example:
 
