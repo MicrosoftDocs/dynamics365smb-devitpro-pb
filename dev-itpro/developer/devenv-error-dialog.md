@@ -17,7 +17,7 @@ The AL language has many error handling features, which can help you deal with u
 ## Visual elements of the error dialog (version 22 and earlier)
 
 In versions 22 and earlier, the error dialog consists of the following four parts:
-1. A title (option)
+1. A title (optionally)
 2. A message directed to the user
 3. A **See details** part that includes a **Copy Details** action
 4. A yes or no question as to whether the message was helpful
@@ -27,7 +27,7 @@ In versions 22 and earlier, the error dialog consists of the following four part
 
 Starting in version 23, the error dialog consists of the following four parts:
 
-1. A title (optional)
+1. A title (optionally)
 2. A message directed to the user
 3. A **Copy Details** action.
 4. A yes or no question as to whether the message was helpful
