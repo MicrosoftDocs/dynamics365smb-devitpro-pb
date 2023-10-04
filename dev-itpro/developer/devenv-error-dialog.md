@@ -37,7 +37,7 @@ The information provided in Copy details is meant for troubleshooting.
 
 Here is an example of the content of Copy details:
 
-```text
+```Copy details example
 If requesting support, please provide the following details to help troubleshooting:
 
 Something went wrong. Please contact your partner.
@@ -61,7 +61,8 @@ AL call stack:
 Report1(Report 50101).OnPostReport(Trigger) line 2 - ReportErrors by Default publisher
 ```
 
-The following table explains the different elements in Copy details.
+Below the text 'If requesting support, please provide the following details to help troubleshooting:', the error message(s) supplied to the user (and optionally in _DetailedMessage_ if the AL developer used the ErrorInfo version of the Error method) is stored. After the error message(s), the BC platform adds additional sections that can be useful when troubleshooting. The following table explains the different additional sections in Copy details.
+
 
 |Section | Description |
 |--------|-------------|
@@ -73,7 +74,12 @@ The following table explains the different elements in Copy details.
 |AL call stack | The AL stack trace in the session when the error occurred.| 
 
 
-## Sample KQL code (troubleshoot further with telemetry)
+There are three pieces of information that will help you better understand the error that the user experienced:
+1. The error message(s)
+2. Application Insights session ID (if telemetry is enabled in the environment/app)
+3. The AL stack trace
+
+### Sample KQL code (troubleshoot further with telemetry)
 
 In telemetry, use this KQL code to help you understand what happened in the session prior to the error
 
@@ -87,6 +93,23 @@ traces
 , customDimensions
 | order by timestamp asc
 ```
+
+### Understanding the AL stack trace
+Whenever an operation in AL is started, the operation is added to a data structure called the _AL stack_ and when the operation completes, it is removed from the AL stack. This way, the AL stack trace is then showing what AL was currently running in the session. For each operation, it is also logged which object the operation comes from as well as details about the app.
+
+Example: In this example, the first operation in the stack is found in the bottom line: _Match Confidence - OnDrillDown"(Trigger)_ from the "Payment Reconciliation Journal" page (object id 1290) residing in the app _Base Application_ by the publisher _Microsoft_. This is where execution started. The error happened in the operation in the top of the stack: apparently _ValidateEntryNotApplied_ in the Payment Application Proposal" table (object 1293) residing in the app _Base Application_ by the publisher _Microsoft_.
+
+```AL stack trace example
+"Payment Application Proposal"(Table 1293).ValidateEntryNotApplied line 12 - Base Application by Microsoft
+"Payment Application Proposal"(Table 1293)."Applied - OnValidate"(Trigger) line 17 - Base Application by Microsoft
+"Bank Acc. Reconciliation Line"(Table 274).DisplayApplication line 27 - Base Application by Microsoft
+"Payment Application Review"(Page 1287)."ApplyEntries - OnAction"(Trigger) line 3 - Base Application by Microsoft
+"Payment Reconciliation Journal"(Page 1290)."Match Confidence - OnDrillDown"(Trigger) line 8 - Base Application by Microsoft
+```
+
+You can therefore use the stack trace to identify
+1. what the user was doing (the bottom of the stack trace), and
+2. where the error happened (the top of the stack trace).
 
 
 ## See also

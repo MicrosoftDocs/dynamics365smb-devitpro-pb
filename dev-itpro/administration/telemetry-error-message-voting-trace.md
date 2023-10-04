@@ -21,7 +21,7 @@ When a user gets an error message in [!INCLUDE[prod_short](../developer/includes
 
 ![Shows the error dialog and the voting actions, Yes and No, about the helpfulness of the message.](../developer/media/error-voting.png )
 
-If a user selects either **Yes** or **No**, a signal is emitted and recorded in Application Insights. This information can help partners and developers get insight into error messages that users find hard to understand. They can then follow up with the customer to help out.
+If a user selects either **Yes** or **No**, a signal is emitted and recorded in [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)]. This information can help partners and developers get insight into error messages that users find hard to understand. They can then follow up with the customer to help out.
 
 This voting feature appears on all error messages that are thrown by calls to the [Error(String)](../developer/methods-auto/dialog/dialog-error-string-joker-method.md) and [Error(ErrorInfo)](../developer/methods-auto/dialog/dialog-error-errorinfo-method.md) methods.
 
