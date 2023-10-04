@@ -15,6 +15,8 @@ This article describes how the job queue works in [!INCLUDE[prod_short](includes
 
 For information about how users work with the job queue in the client, see [Use Job Queues to Schedule Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks).
 
+[!INCLUDE[async_note](includes/include-async-note.md)]
+
 ## Job queue flow
 
 The following diagram illustrates the flow of the job queue:
@@ -68,11 +70,14 @@ For more information about assigning permissions, see [Assign Permissions to Use
 
 Business Central offers two ways to monitor the flow of job queues: Azure Application Insights and the Session Event table. These tools let you follow the execution of a job and investigate errors in failure codeunits.
 
-### Application Insights
+### Job queue telemetry in Azure Application Insights
 
-You can set up Business Central to send telemetry traces to an Application Insights resource in Azure. Once set up, telemetry data will be sent to the resource as job queue moves through the flow. For more information, see:
+You can set up Business Central to send telemetry traces to an [!INCLUDE[prod_short](../includes/azure-appinsights-name.md)] resource in Azure. Once set up, telemetry data will be sent to the resource as job queue moves through the flow. For more information, see:
 
 [Enable Sending Telemetry to Application Insights](../administration/telemetry-enable-application-insights.md) 
+
+> [!NOTE]  
+> Job queue telemetry in Azure Application Insights also works for Business Central on-premises
 
 #### Job queue telemetry
 
@@ -92,11 +97,16 @@ For more information about task scheduler telemetry, see [Analyzing Task Schedul
 
 From the Business Central web client, you can open the Session Events table by adding `table=2000000111` to the URL. For example: [https://businesscentral.dynamics.com/?table=2000000111](https://businesscentral.dynamics.com/?table=2000000111).
 
+## Characteristics of job queues and scheduled tasks
+
+[!INCLUDE[jobqueue-and-task-scheduler-characteristics](../includes/include-jobqueue-and-task-scheduler-characteristics.md)]
+
+
 ## See Also
 [Use Job Queues to Schedule Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks)   
 [Analyzing Job Queue Telemetry](../administration/telemetry-job-queue-lifecycle-trace.md)   
 [Task Scheduler](devenv-task-scheduler.md)   
-[Task Scheduler Data Type](methods-auto/taskscheduler/taskscheduler-data-type.md)   
-[Analyzing Task Scheduler Telemetry](../administration/telemetry-task-scheduler-trace.md)
+[Async processing overview](devenv-async-overview.md)   
+[Performance Articles for Developers](performance-developer.md)   
 [Developing Extensions](devenv-dev-overview.md)  
-[Get Started with AL](devenv-get-started.md) 
+[Get Started with AL](devenv-get-started.md)  

@@ -17,6 +17,8 @@ ms.topic: conceptual
 
 To improve the performance of a page, you can develop the page to run read-only computations and long processes asynchronously in background tasks. Background tasks make a page quicker to open and more responsive, faster for users to enter information. Users aren't blocked from working while waiting for the computations to finish. Typical places where you might use background tasks are on cues and pages in FactBoxes.
 
+[!INCLUDE[async_note](includes/include-async-note.md)]
+
 ## About background tasks
 
 When a page opens in the client, a session is established between the page and the [!INCLUDE[server](includes/server.md)] instance. Consider this session as the *parent session*. As a user works on the page, the user can sometimes be blocked from continuing until a process has completed. This situation is where background tasks can be beneficial.
@@ -527,8 +529,10 @@ In the event log, events that occur in the child session are recorded in the **S
 
 Parts are a special category of page designed to be embedded within another page. Part type pages include ListPart, CardPart, and HeadlinePart. Like other page types, you can design a part page to use one or more page background tasks. However, unlike other page types, a part page won't display any data until all page background tasks have completed. This condition applies to synchronous data that's not reliant on the background tasks. In the user-interface, dashes (-) appear for field values while the page background tasks run. To work around this behavior, separate the synchronous data into a separate page part.
 
-## See Also
 
+## See Also
+[Async processing overview](devenv-async-overview.md)   
+[Performance Articles for Developers](performance-developer.md)   
 [Configuring Business Central Server - Asynchronous Processing](../administration/configure-server-instance.md#PBT)  
 [Business Central Performance Counters](../administration/performance-counters.md)  
 [Monitoring Business Central Server Events](../administration/monitor-server-events.md)  

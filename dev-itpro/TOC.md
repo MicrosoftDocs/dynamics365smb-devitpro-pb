@@ -801,8 +801,10 @@
 ##### [Get permission set](administration/api/dynamics_permissionset_get.md)
 
 ### Running things in the background
+#### [Overview](developer/devenv-async-overview.md)
 #### [Page background tasks](developer/devenv-page-background-tasks.md)
-
+#### [Task scheduler](developer/devenv-task-scheduler.md)
+#### [Job queue](developer/devenv-job-queue.md)
 
 ### Developing APIs
 #### [Overview](developer/devenv-api.md)
