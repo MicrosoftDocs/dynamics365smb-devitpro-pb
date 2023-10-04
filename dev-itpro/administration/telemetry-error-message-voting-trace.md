@@ -17,7 +17,7 @@ ms.author: jswymer
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-When a user gets an error message while working in the application, the message includes a yes or no question as to whether the message was helpful, similar to the following illustration:
+When a user gets an error message in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] while working in the application, the message includes a yes or no question as to whether the message was helpful, similar to the following illustration:
 
 ![Shows the error dialog and the voting actions, Yes and No, about the helpfulness of the message.](../developer/media/error-voting.png )
 
