@@ -53,6 +53,11 @@ For examples of different error handling strategies, see the following table:
 | Catch errors/exceptions that are thrown during .NET framework interoperability operations (on-premises only). | [Handling .NET Exceptions using Try Methods](devenv-handling-errors-using-try-methods.md)|
 | Log an error that happens within a database transaction (that rollback) | Either log the error in a new session using a background session, or use Session.LogMessage to log the error to telemetry. | 
 
+## Guidelines for error messages
+
+[!INCLUDE[error_message_guidelines](includes/include-error-message-guidelines.md)]
+
+
 ## See also
 
 [AL Control Statements](devenv-al-control-statements.md)  
