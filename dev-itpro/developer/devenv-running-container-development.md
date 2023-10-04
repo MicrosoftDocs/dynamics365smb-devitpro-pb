@@ -19,11 +19,11 @@ Install Docker and configure it for Windows Containers.
 
 1. Choose the version of Docker that is appropriate for the host operating system.
 
-    - For Windows 10/11, use [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) - (option to qualify for free SKU - license may be required).
+    - For Windows Desktop, use [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) - (option to qualify for free SKU - license may be required).
     - For Windows Server, use [Mirantis Container Runtime](https://docs.mirantis.com/mcr/23.0/overview.html) - (option to qualify for free SKU - license may be required).
     - An alternative is to use Docker Engine, which is open source and community-driven. For more information, see [Docker and Business Central](https://freddysblog.com/2021/10/30/docker-and-business-central/).
         
-2. For Windows 10/11, switch Docker to use Windows containers. By default Docker uses Linux containers.
+2. For Windows Desktop, switch Docker to use Windows containers. By default Docker uses Linux containers.
 
     To switch to Windows containers, in the Taskbar, right-click the Docker icon ![Docker](media/docker-icon.png "Docker icon"), and then select **Switch to Windows Containers**. For more information, see [Switch between Windows and Linux containers](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers).
 
@@ -32,7 +32,7 @@ Install Docker and configure it for Windows Containers.
 
 ## Set up Business Central using the BCContainerHelper PowerShell module
 
-To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `BCContainerHelper` to work with containers. On a Windows 10/11, Windows Server 2016 or Windows server 2019 machine, **start PowerShell as an Administrator** and type:
+To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `BCContainerHelper` to work with containers. On a Windows Desktop, Windows Server 2016 or Windows server 2019 machine, **start PowerShell as an Administrator** and type:
 
 ```install-module BCContainerHelper -force```
 
@@ -46,6 +46,9 @@ To get started quickly, run the following command from the BCContainerHelper mod
 $artifactUrl = Get-BcArtifactUrl -type sandbox -country us -select Latest
 New-BCContainer -accept_eula -containerName mysandbox -artifactUrl $artifactUrl
 ```
+
+> [!NOTE]  
+> If you want to try out the Insider builds of Business Central, you can access these by specifying `NextMajor` or `NextMinor` to the select parameter on `Get-BcArtifactUrl`. You also need to add `-accept_insiderEula` in order to get Insider builds.
 
 The `BCContainerHelper` creates a folder on the C:\ drive called *bcartifacts.cache* for caching artifacts. It also creates a folder under C:\ProgramData called BCContainerHelper and places all working files underneath that folder. The C:\ProgramData\BCContainerHelper folder is shared to the container for transfer of files etc. If you don't specify a username and a password, it asks for your password and uses the current Windows username. If you specify your windows password, the container setup uses Windows Authentication integrated with the host. The `BCContainerHelper` also creates shortcuts on the desktop for the [!INCLUDE [prod_short](includes/prod_short.md)] web client, a container prompt, and a container PowerShell prompt.
 
