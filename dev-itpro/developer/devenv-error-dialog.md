@@ -1,11 +1,10 @@
 ---
 title: "Understanding the error dialog"
 description: Understand the different parts the error dialog to be able to help mitigate issues for users 
-ms.custom: na
+ms.custom: bap-template
 ms.date: 10/04/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 author: kennienp
 ms.author: kepontop
@@ -13,31 +12,33 @@ ms.author: kepontop
 
 # Understanding the error dialog
 
-The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. Whenever an error is surfaced to the user, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client displays an error dialog. In this article, you can learn more about the different parts of the error dialog to make you be able to help mitigate issues for users.
+The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. Whenever an error is surfaced to the user, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client displays an error dialog. In this article, you can learn more about the different parts of the error dialog so you can more effectively help users mitigate any issues they might encounter.
 
-## Visual elements of the error dialog (versions 22 and earlier)
-In versions 22 and earlier, the error dialog consists of the following four parts
-1. (optionally) a title
-2. a message directed to the user.
-3. See details part that include a Copy Details action.
-4. a yes or no question as to whether the message was helpful.
+## Visual elements of the error dialog (version 22 and earlier)
 
-
-## Visual elements of the error dialog (from version 23)
-Starting in version 23, the error dialog consists of the following four parts
-1. (optionally) a title
-2. a message directed to the user.
-3. a Copy Details action.
-4. a yes or no question as to whether the message was helpful.
+In versions 22 and earlier, the error dialog consists of the following four parts:
+1. A title (option)
+2. A message directed to the user
+3. A **See details** part that includes a **Copy Details** action
+4. A yes or no question as to whether the message was helpful
 
 
+## Visual elements of the error dialog (version 23 and later)
 
-## Information in Copy details
-The information provided in Copy details is meant for troubleshooting. 
+Starting in version 23, the error dialog consists of the following four parts:
 
-Here is an example of the content of Copy details:
+1. A title (optional)
+2. A message directed to the user
+3. A **Copy Details** action.
+4. A yes or no question as to whether the message was helpful
 
-```Copy details example
+## Information in Copy details section
+
+The information provided in **Copy details** section is meant for troubleshooting. 
+
+Here's an example of the content of **Copy details**:
+
+```
 If requesting support, please provide the following details to help troubleshooting:
 
 Something went wrong. Please contact your partner.
