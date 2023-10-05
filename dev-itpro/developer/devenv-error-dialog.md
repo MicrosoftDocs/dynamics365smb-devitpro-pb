@@ -14,7 +14,7 @@ ms.author: kepontop
 
 The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. Whenever an error is surfaced to the user, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client displays an error dialog, similar to the figure later in this article. In this article, you can learn more about the different parts of the error dialog so you can more effectively help users mitigate any issues they might encounter.
 
-## Visual elements of the error dialog (2023 release wave 1 and earlier)
+## Visual elements of the error dialog (2022 release wave 2 and earlier)
 
 In versions 22 and earlier, the error dialog consists of the following four parts:
 1. A title (optionally)
@@ -22,7 +22,11 @@ In versions 22 and earlier, the error dialog consists of the following four part
 3. A **See details** part that includes a **Copy Details** action
 4. A yes or no question as to whether the message was helpful
 
-## Visual elements of the error dialog (2023 release wave 2 and later)
+The following figure shows an example of an error dialog in the 2022 release wave 2. 
+
+![Show an example of an error dialog in Business Central version 21.](media/error-dialog-v21.png)
+
+## Visual elements of the error dialog (2023 release wave 1 and later)
 
 Starting in version 23, the error dialog consists of the following four parts:
 
@@ -31,9 +35,9 @@ Starting in version 23, the error dialog consists of the following four parts:
 3. A **Copy Details** action.
 4. A yes or no question as to whether the message was helpful
 
-The following figure shows an example error dialog. 
+The following figure shows an example and example error dialog in the 2023 release wave 1 or later. 
 
-![Show an example of an error dialog in Business Central.](media/error-dialog.png)
+![Show an example of an error dialog in the latest Business Central version.](media/error-dialog.png)
 
 ## Information in Copy details section
 
