@@ -22,4 +22,4 @@ ms.custom: bap-template
 
 ## Next steps
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+[Upgrading to Business Central on-premises (version 14)](../upgrade/upgrading-to-business-central-on-premises.md)

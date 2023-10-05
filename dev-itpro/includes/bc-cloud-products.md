@@ -12,4 +12,7 @@ You can use the built-in migration tools to migrate data to [!INCLUDE [prod_shor
   [!INCLUDE [bc-cloud-versions](bc-cloud-versions.md)]
 - Dynamics NAV
 
+  
+
+
   [!INCLUDE [bc-cloud-nav](../includes/bc-cloud-nav.md)]
