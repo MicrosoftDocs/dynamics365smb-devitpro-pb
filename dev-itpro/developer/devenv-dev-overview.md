@@ -13,6 +13,8 @@ ms.author: solsen
 
 # Development in AL
 
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
+
 Extensions are a programming model where functionality is defined as an addition to existing objects and defines how they're different or modify the behavior of the solution. This section explains how you can develop extensions using the development environment for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 
 If you're new to building extensions, we recommend that you read this document to get an understanding of the basics and terms you'll encounter while working. Next, follow the [Get Started with AL](devenv-get-started.md) to set up the tools.
