@@ -25,8 +25,10 @@ The following permission sets have special definitions that you should be aware 
 |SYSTEM APP - BASIC| Grants access to most features of the system application and is required for login to [!INCLUDE[prod_short](../includes/prod_short.md)].|
 |SYSTEM APP - ADMIN| Grants full permissions to all features of the System Application.|
 |LOGIN|Grants the minimum permissions to application and system objects that needed to sign in to [!INCLUDE[prod_short](../includes/prod_short.md)]. Use the permission set to allow users to sign in to [!INCLUDE[prod_short](../includes/prod_short.md)] without accidentally granting them permissions beyond those required by their tasks. By granting this permission set, the user will always be able to sign in. <br /><br />**Note:** This permission set does not grant access to a Role Center. It only allows the user to log in to [!INCLUDE[prod_short](../includes/prod_short.md)].|
+|User Group|**Note:** This permission set is deprecated in [!INCLUDE[prod_short](../includes/prod_short.md)] online. Use the **SECURITY** permission set instead.<br><br>This permission set allows you to manage memberships and permissions for users in user groups in [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises.|
 
 ## See Also  
+
 [Removing Elements from the User Interface According to Permissions](hide-ui-elements.md)  
 <!--[Assign Permissions to Users and Groups](/business-central/ui-define-granular-permissions)
 broken link removed in SEO audit cleanup-->
