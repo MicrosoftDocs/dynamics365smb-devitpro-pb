@@ -385,6 +385,8 @@
 #### [Prerequisites](administration/cloud-migration-prerequisites-gp.md)
 #### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
 #### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
+### From Dynamics NAV
+#### [Migrate from Dynamics NAV to Business Central online](admministration/migrate-nav.md)
 ### [FAQ](administration/faq-migrate-data.md)
 ### [Troubleshoot](administration/migration-troubleshooting.md)
 <!-- end migrate -->

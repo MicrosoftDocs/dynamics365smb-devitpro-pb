@@ -9,8 +9,10 @@ You can upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] o
 > [!NOTE]
 > Upgrade your solution to Business Central Spring 2019 (version 14) or later, and then migrate to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.
 
-The process consists of two parts:
+The process consists of three parts:
 
-- Upgrade from [!INCLUDE[navnow_md](navnow_md.md)] to [!INCLUDE[prod_short](prod_short.md)] using the tools described in [Upgrading to Business Central on-premises (version 14)](upgrading-to-business-central-on-premises.md). For more information, see [Supported Upgrade Paths to [!INCLUDE[prod_long](prod_long.md)] Releases](upgrade-paths.md).  
-- Convert non-standard functionality and customizations to apps and per-tenant extensions. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md).
-- Run the cloud migration tool as described in [Migrate On-Premises Data to Business Central Online](../../administration/migrate-data.md), and then switch to use [!INCLUDE[prod_short](prod_short.md)] online going forward.
+1. Upgrade from [!INCLUDE[navnow_md](navnow_md.md)] to [!INCLUDE[prod_short](prod_short.md)] version 14.
+
+   Follow the instructions in [Upgrading to Business Central on-premises (version 14)](../../upgrade/upgrading-to-business-central-on-premises.md). For more information, see [Supported Upgrade Paths to [!INCLUDE[prod_long](prod_long.md)] Releases](upgrade-paths.md).  
+1. Convert non-standard functionality and customizations to apps and per-tenant extensions. For more information, see [Deploying a Tenant Customization](../devenv-deploy-tenant-customization.md).
+1. Migrate to Business Central online and then switch to use [!INCLUDE[prod_short](prod_short.md)] online going forward. For see [Migrate On-Premises Data to Business Central Online](../../administration/migrate-data.md).
