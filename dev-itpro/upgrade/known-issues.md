@@ -53,7 +53,7 @@ If you're upgrading from version 21 or earlier, the workaround is slightly diffe
 
 Once you completed either of these tasks, upgrade to version 23 as usual. Don't forget to synchronize the base application using the ForceSync mode with the Sync-NavApp cmdlet.
 
-[Learn more about this issue]()
+<!--[Learn more about this issue]()-->
 
 
 ## Web server components fatal error during installation on Azure virtual machine (VM)
