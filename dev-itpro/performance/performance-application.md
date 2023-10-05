@@ -25,8 +25,10 @@ It's often desirable to offload work from the user session to happen in the back
 - Enable [background posting](/dynamics365/business-central/ui-batch-posting) in areas where your business is using reservations and item tracking using serial and lot numbers
 - [Adjust item costs as a periodic background job](/dynamics365/business-central/finance-adjust-reconcile-inventory-cost-job-queue). Don't adjust automatically. 
 
-> [!TIP]  
-> don't run job queues too frequently.
+
+### Job queues and performance
+
+[!INCLUDE[job_queue_performance](../includes/include-job-queue-performance.md)]
 
 ## Avoid locking
 
