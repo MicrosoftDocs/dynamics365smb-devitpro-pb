@@ -389,7 +389,3 @@ The migration process, including the data flow and tasks that must be done to pr
 ## See also
 
 [FAQ about Migrating to the Cloud from On-Premises Solutions](faq-migrate-data.md)  
-[Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
-[Migrate Dynamics GP Data to the Cloud](migrate-dynamics-gp.md)  
-[Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
-[Managing Capacity](tenant-admin-center-capacity.md)  
