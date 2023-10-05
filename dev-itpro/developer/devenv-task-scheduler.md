@@ -1,20 +1,22 @@
 ---
-title: "Task Scheduler"
+title: Task scheduler
 description: Learn about scheduled tasks and how the task scheduler works.
 ms.custom: na
-ms.date: 06/30/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 10/04/2023
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 author: jswymer
+ms.author: jswymer
 ---
 
-# Task Scheduler
+# Task scheduler
 
 <!-- source PartnerDiagnosticsScheduledTaskManagementTrace.cs -->
 
 The task scheduler enables you to control when certain operations or processes (in other words *tasks*) are run. Basically, a task is a codeunit or report that is scheduled to run at a specific date and time. Tasks run in a background session between the [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance and database. Behind the scenes, the task scheduler is used by the job queue to process job queue entries that are created and managed from the clients.  
+
+[!INCLUDE[async_note](includes/include-async-note.md)]
 
 ## Create and manage scheduled tasks in AL
 
@@ -139,11 +141,11 @@ The session runs by using the same user/credentials that are used when calling A
 
 ## Monitor and troubleshoot
 
-[!INCLUDE[prod_short](includes/prod_short.md)] offers two ways to monitor the flow of scheduled tasks: Azure Application Insights and the **Session Event** table. These tools let you follow execution of a task, and investigate errors in failure codeunits.
+[!INCLUDE[prod_short](includes/prod_short.md)] offers two ways to monitor the flow of scheduled tasks: telemetry in [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] and the **Session Event** table. These tools let you follow execution of a task, and investigate errors in failure codeunits.
 
-### Application Insights
+### Task scheduler telemetry in Azure Application Insights
 
-You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry traces to an Application Insights resource in Azure. Once set up, telemetry data will be sent to the resource as scheduled task moves through the flow. For more information, see:
+You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry traces to an [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] resource in Azure. Once set up, telemetry data will be sent to the resource as scheduled task moves through the flow. For more information, see:
 
 [Enable Sending Telemetry to Application Insights](../administration/telemetry-enable-application-insights.md) 
 
@@ -157,8 +159,19 @@ From the [!INCLUDE[prod_short](includes/prod_short.md)] web client, you can open
 
 [!INCLUDE[server](includes/server.md)] includes several settings related to task scheduler. These settings allow you to enable or disable task scheduler and manage tasks. For more information, see [Configure Business Central Server - Task Scheduler](../administration/configure-server-instance.md#Task).
 
+> [!NOTE]  
+> Task scheduler telemetry in [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] also works for [!INCLUDE[prod_short](includes/prod_short.md)] on-premises.
+
+## Characteristics of job queues and scheduled tasks
+
+[!INCLUDE[jobqueue-and-task-scheduler-characteristics](includes/include-jobqueue-and-task-scheduler-characteristics.md)]
+
 
 ## See Also
 [Task Scheduler Data Type](methods-auto/taskscheduler/taskscheduler-data-type.md)   
+[Analyzing Task Scheduler Telemetry](../administration/telemetry-task-scheduler-trace.md)   
+[Job queue](devenv-job-queue.md)   
+[Async processing overview](devenv-async-overview.md)    
+[Performance Articles for Developers](../performance/performance-developer.md)   
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md) 

@@ -169,7 +169,7 @@ GitHub brings together communities of developers and other contributors to disco
 
 * BcContainerHelper
 
-  Use this repo to collaborate around the source code and the scripts of BcContainerHelper PowerShell module for [!INCLUDE [prod_short](developer/includes/prod_short.md)]: [https://github.com/Microsoft/NavContainerHelper](https://github.com/Microsoft/NavContainerHelper)
+[!INCLUDE[BcContainerHelper_github](includes/include-bccontainer-helper-github.md)]
 
 * Business Central Tech Samples
 
