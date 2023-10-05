@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 09/24/2023
+ms.date: 10/05/2023
 ms.custom: bap-template
 ---
 
@@ -29,7 +29,7 @@ The following table lists the Business Central 22 versions and the minimum versi
 
 |Version 21|Version 22|
 ----------|----------|
-|22.0 to 22.5|[23.0]()  |
+|22.0 to 22.5|[23.0](https://www.microsoft.com/en-us/download/details.aspx?id=105617)  |
 |[22.6](https://support.microsoft.com/help/5031951)<sup>[\[1\]](#1)</sup> |23.1 |
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
