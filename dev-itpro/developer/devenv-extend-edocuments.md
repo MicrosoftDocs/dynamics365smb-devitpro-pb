@@ -1,5 +1,5 @@
 ---
-title: Extend e-documents functionality
+title: Extending e-documents functionality
 description: Learn how to extend e-documents functionality with specific requirements.
 author: altotovi
 ms.topic: conceptual
@@ -13,7 +13,7 @@ ms.date: 10/05/2023
 ms.author: altotovi
 ---
 
-# Extend e-documents functionality
+# Extending e-documents functionality
 
 The **E-Documents Core** module is created as an extension and built as a framework. Therefore, by default, there's no **Document Format** or **Service Integration** option. These details, and others, are components of localization apps, which cater to specific local requirements. This framework is intended to cover most requirements for the process of communication with electronic documents (e-documents). However, some parts are left for localization apps. The information in this article helps you add value to this module and use it for your own localization.
 
