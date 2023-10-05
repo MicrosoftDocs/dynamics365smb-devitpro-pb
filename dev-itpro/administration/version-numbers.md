@@ -2,10 +2,12 @@
 title: Version numbers in Business Central and what they mean
 description: Learn how to read version numbers in Business Central and how to understand them when you troubleshoot issues.
 author: jswymer
-
+ms.author: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 03/09/2022
+ms.service: dynamics365-business-central
+ms.custom: bap-template
 ---
 # Version numbers in Business Central
 
@@ -30,7 +32,9 @@ The numbers are updated based on Microsoft's builds. In the default version of [
 The following list describes the meaning of each of the numbers in a full version number:
 
 - `major` is the major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
-
+  - `23` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2 update in October 2023 and forward
+  - `22` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1 update in April 2023 and forward
+  - `21` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 update in October 2022 and forward
   - `20` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 update in April 2022 and forward
   - `19` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 update in October 2021 and forward
   - `18` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 update in April 2021 and forward
@@ -49,7 +53,7 @@ In other words, if you see a version number such as `20.1.23456.26323`, then it 
 
 The same version numbers are used to identify versions in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, including when you deploy containers on Docker.  
 
-## See Also
+## See also
 
 [Managing Technical Support](manage-technical-support.md)  
 [Installing a Cumulative Update](../upgrade/upgrading-cumulative-update.md)  
