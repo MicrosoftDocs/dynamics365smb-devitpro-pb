@@ -19,7 +19,7 @@ The AL language has many error handling features, which can help you deal with u
 In versions 21 and earlier, the error dialog consists of the following four parts:
 1. A title (optionally)
 2. A message directed to the user
-3. A **How to report this issue** part that includes a **Copy Details** action
+3. A **How to report this issue** part that includes a **Copy information to clipboard** action
 4. A yes or no question as to whether the message was helpful
 
 The following figure shows an example of an error dialog in the 2022 release wave 2. 
