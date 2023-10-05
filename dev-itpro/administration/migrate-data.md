@@ -384,6 +384,7 @@ The migration process, including the data flow and tasks that must be done to pr
 
 - [Business Central on-premise to online migration](migrate-business-central-on-premises.md)
 - [Dynamics GP on-premise to online migration](migrate-gp-overview.md)
+- [Dynamics NAV to Business Central online](../administration/migrate-nav.md)
 
 ## See also
 
