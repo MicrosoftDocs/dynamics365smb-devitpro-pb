@@ -983,6 +983,7 @@
 ##### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
 ##### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
 ##### [Extending Currency Exchange Rate Adjustments](developer/devenv-extend-exchange-rates.md)
+##### [Extending e-documents functionality](developer/devenv-extend-edocuments.md)
 
 ### Using events 
 #### [Event types](developer/devenv-event-types.md)
