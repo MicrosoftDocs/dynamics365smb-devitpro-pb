@@ -301,7 +301,7 @@ The following table explains the general dimensions of this trace.
 
 
 ## See also
-[Task Scheduler](devenv-task-scheduler.md)   
+[Task Scheduler](../developer/devenv-task-scheduler.md)   
 [Telemetry overview](telemetry-overview.md)  
 [Enabling Telemetry](telemetry-enable-application-insights.md)  
 [Alert on Telemetry](telemetry-alert.md)  
