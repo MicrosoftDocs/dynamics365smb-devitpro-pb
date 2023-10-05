@@ -18,7 +18,7 @@ ms.custom: bap-template
 # Migrate Dynamics NAV to Business Central online 
 
 
-[!INCLUDE[navnow_md](../developer/includes/cloud-migration-nav.md)]
+[!INCLUDE[cloud-migration-nav](../developer/includes/cloud-migration-nav.md)]
 
 ## Next steps
 
