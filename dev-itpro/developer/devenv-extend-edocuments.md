@@ -711,6 +711,6 @@ Do you believe that there are any essential features that could make the develop
 
 ## See also
 
-[How to set up e-documents in Business Central](finance-how-setup-edocuments.md)  
-[How to use e-documents in Business Central](finance-how-use-edocuments.md)  
-[Work with [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[How to set up e-documents in Business Central](/dynamics365/business-central/finance-how-setup-edocuments)  
+[How to use e-documents in Business Central](/dynamics365/business-central/finance-how-use-edocuments)  
+[Work with [!INCLUDE[prod_short](includes/prod_short.md)]](/dynamics365/business-central/ui-work-product)
