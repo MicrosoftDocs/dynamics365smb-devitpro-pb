@@ -1116,6 +1116,7 @@
 ## Troubleshooting
 ### [Overview](developer/devenv-troubleshooting-overview.md)
 ### Troubleshooting in the client
+#### [Understanding the error dialog](developer/devenv-error-dialog.md)
 #### [Using the Page Inspector](/dynamics365/business-central/across-inspect-page)
 #### [Using the Event Recorder](developer/devenv-events-discoverability.md)
 #### [Database table information](/dynamics365/business-central/admin-view-table-information)
