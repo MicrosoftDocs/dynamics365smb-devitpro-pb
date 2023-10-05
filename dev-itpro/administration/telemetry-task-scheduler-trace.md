@@ -295,7 +295,13 @@ The following table explains the general dimensions of this trace.
 |totalTime|Specifies the amount of time it took to run the codeunit. The time has the format hh:mm:ss.sssssss.|
 |[See common custom dimensions](#other)||
 
-## See also
+## Task scheduler and performance
 
-[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[!INCLUDE[task_job_queue_performance](../includes/include-task-job-queue-performance.md)]
+
+
+## See also
+[Task Scheduler](devenv-task-scheduler.md)   
+[Telemetry overview](telemetry-overview.md)  
+[Enabling Telemetry](telemetry-enable-application-insights.md)  
+[Alert on Telemetry](telemetry-alert.md)  
