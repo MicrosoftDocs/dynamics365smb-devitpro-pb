@@ -16,7 +16,7 @@ The AL language has many error handling features, which can help you deal with u
 
 ## Visual elements of the error dialog (2022 release wave 2 and earlier)
 
-In versions 22 and earlier, the error dialog consists of the following four parts:
+In versions 21 and earlier, the error dialog consists of the following four parts:
 1. A title (optionally)
 2. A message directed to the user
 3. A **How to report this issue** part that includes a **Copy Details** action
@@ -28,7 +28,7 @@ The following figure shows an example of an error dialog in the 2022 release wav
 
 ## Visual elements of the error dialog (2023 release wave 1 and later)
 
-Starting in version 23, the error dialog consists of the following four parts:
+Starting in version 22, the error dialog consists of the following four parts:
 
 1. A title (optionally)
 2. A message directed to the user
