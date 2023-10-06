@@ -358,7 +358,7 @@
 ## Migrate to Business Central online
 ### [Introduction](administration/migrate-data.md)
 <!--### [Understand Data Migration](administration/migrate-data-overview.md)-->
-### From Business Central on-premises
+### Migrate from Business Central on-premises
 #### [End-to-end overview](administration/migrate-business-central-on-premises.md)
 #### [Managing cloud migration](administration/migration-manage.md)
 #### Prepare
@@ -379,14 +379,14 @@
 ##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
 #### [Run data upgrade](administration/migration-data-upgrade.md)
 #### [Complete cloud migration](administration/migration-finish.md)  
-### From Dynamics GP
+### Migrate from Dynamics NAV
+#### [Migrate from Dynamics NAV to Business Central online](administration/migrate-nav.md)
+### Migrate from Dynamics GP
 #### [End-to-end overview](administration/migrate-gp-overview.md)
 #### [Managing cloud migration](administration/migration-manage.md)
 #### [Prerequisites](administration/cloud-migration-prerequisites-gp.md)
 #### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
 #### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
-### From Dynamics NAV
-#### [Migrate from Dynamics NAV to Business Central online](administration/migrate-nav.md)
 ### [FAQ](administration/faq-migrate-data.md)
 ### [Troubleshoot](administration/migration-troubleshooting.md)
 <!-- end migrate -->
