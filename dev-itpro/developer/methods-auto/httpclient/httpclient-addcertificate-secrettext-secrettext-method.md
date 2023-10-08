@@ -39,7 +39,18 @@ The certificate password.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
+## Example
+[!INCLUDE[httpclient_cert_example](../../includes/include-http-cert-example.md)]
+
+## Remarks
+[!INCLUDE[httpclient_cert_remarks](../../includes/include-http-cert-remarks.md)]
+
+[!INCLUDE[httpclient_cert_note](../../includes/include-http-cert-note.md)]
+
 ## See Also
+
 [HttpClient Data Type](httpclient-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
