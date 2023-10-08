@@ -53,7 +53,7 @@ The system caches SSL sessions as they are created and attempts to reuse a cache
 > [!IMPORTANT]
 > The certificate must be use one of the supported cipher suites; otherwise, outgoing web service calls will fail with security exception. For more information, see [Supported Cipher Suites](../../devenv-supported-cipher-suites.md).
 
-[!INCLUDE[httpclient_cert_note](includes/include-http-cert-note.md)]
+[!INCLUDE[httpclient_cert_note](../../includes/include-http-cert-note.md)]
 
 ## See Also
 
