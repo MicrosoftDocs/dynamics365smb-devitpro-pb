@@ -25,12 +25,14 @@ Sets the Word layout that is used on a report and returns it as a data stream.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-> [!NOTE]  
-> Reports support both Word and RDL layout.
+[!INCLUDE[possible_layouts_note](../includes/include-possible-layouts-note.md)]
 
 ## Remarks
 
 The Word file has to be in the same folder as the AL object.
+
+[!INCLUDE[single_layouts](../includes/include-single-layout-obsolete.md)]
+
 
 ## Example
 

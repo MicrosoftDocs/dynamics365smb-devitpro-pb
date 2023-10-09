@@ -25,12 +25,14 @@ Sets the RDL layout that is used on a report and returns it as a data stream.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-> [!NOTE]  
-> Reports support both RDL and Word layout. For more information, see [DefaultLayout Property](devenv-defaultlayout-property.md).
+[!INCLUDE[possible_layouts_note](../includes/include-possible-layouts-note.md)]
 
 ## Remarks
 
 The RDL file has to be in the same folder as the AL object. 
+
+
+[!INCLUDE[single_layouts](../includes/include-single-layout-obsolete.md)]
 
 ## Example
 
@@ -54,9 +56,12 @@ report 50123 MyRdlReport
 ```
 
 ## See Also
-
-[Report Object](../devenv-report-object.md)  
 [Creating an RDL Layout Report](../devenv-howto-rdl-report-layout.md)   
+[ExcelLayout Property](devenv-excellayout-property.md)  
+[Creating an Excel layout report](../devenv-howto-excel-report-layout.md)  
 [WordLayout Property](devenv-wordlayout-property.md)  
 [Creating a Word Layout Report](../devenv-howto-report-layout.md)  
- 
+[Developing reports](devenv-reports.md)  
+[Defining multiple report layouts](devenv-multiple-report-layouts.md)  
+[Get Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)   
