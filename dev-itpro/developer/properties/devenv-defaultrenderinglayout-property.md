@@ -55,7 +55,7 @@ report 50124 MyExcelReport
 ```
 
 ## See Also  
-[Developing reports](devenv-reports.md)  
-[Defining multiple report layouts](devenv-multiple-report-layouts.md)  
+[Developing reports](../devenv-reports.md)  
+[Defining multiple report layouts](../devenv-multiple-report-layouts.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
