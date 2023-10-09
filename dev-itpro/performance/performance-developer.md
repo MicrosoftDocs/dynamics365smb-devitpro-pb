@@ -85,6 +85,10 @@ The **Edit in Excel** feature uses UI pages exposed through OData, which means t
 
 For more information on how to use telemetry to analyze the performance of reports, see [Report performance](../developer/devenv-report-performance.md)
 
+### Stop using report properties **DefaultLayout**, **ExcelLayout**, **RDLLayout**, and **WordLayout**
+
+[!INCLUDE[single_layouts](../developer/includes/include-single-layout-obsolete.md)]
+
 ### Loading data efficiently to Power BI
 
 [!INCLUDE[perf_ws_pbi_patterns](../includes/include-webservices-pbi-performance-patterns.md)]
