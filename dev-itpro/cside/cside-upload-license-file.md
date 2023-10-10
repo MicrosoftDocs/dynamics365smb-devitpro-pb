@@ -95,5 +95,4 @@ The following procedure uploads the license for all [!INCLUDE[prod_short](../dev
 
 ## See Also
 
-[Business Central Software License Terms](https://www.microsoft.com/download/details.aspx?id=57274)  
 [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)  
