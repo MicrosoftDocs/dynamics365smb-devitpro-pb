@@ -70,9 +70,9 @@ Error messages can have up to two recommended actions.
 
 |Description|Example|
 |-----------|-------|
-|In this error dialog case the recommended Fix-it action will set the value to blank, meaning that it will clear out the field value. <br><br> Notice the error dialog has two actions. In error cases both buttons are styled equally as secondary buttons, to allow users to consider the most suitable way to get unblocked for their case.|  |
-|Example of validation error with two promoted actions. Here the Show-it action will show the related Comments table, and the Fix-it action will reject the approval.<br><br> Users can also get unblocked by refreshing the page or copying the error details for sharing and troubleshooting.| <image> |
-|When there isn’t any known solution to recommend, the error dialog will have one primary OK button.<br>Users can copy and share the full error details needed for troubleshooting and support.| <image> |
+|In this error dialog case the recommended Fix-it action will set the value to blank, meaning that it will clear out the field value. <br><br> Notice the error dialog has two actions. In error cases both buttons are styled equally as secondary buttons, to allow users to consider the most suitable way to get unblocked for their case.| :::image type="content" source="media/error-dialog-multiple.png" alt-text="Error dialog with multiple actions"::: |
+|Example of validation error with two promoted actions. Here the Show-it action will show the related Comments table, and the Fix-it action will reject the approval.<br><br> Users can also get unblocked by refreshing the page or copying the error details for sharing and troubleshooting.| :::image type="content" source="media/validation-error-multiple.png" alt-text="Validation error with multiple  actions":::|
+|When there isn’t any known solution to recommend, the error dialog will have one primary OK button.<br>Users can copy and share the full error details needed for troubleshooting and support.| :::image type="content" source="media/error-dialog-nosolution.png" alt-text="Error dialog with no solution"::: |
 
 ## Error message best practices - what to say?
 
