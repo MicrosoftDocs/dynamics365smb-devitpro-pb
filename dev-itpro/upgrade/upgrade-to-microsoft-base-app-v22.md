@@ -346,6 +346,7 @@ You'll create two versions of this extension. The first version contains the tab
     ```powershell
     Stop-NAVServerInstance -ServerInstance <server instance name>
     ```
+[!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
 
 ## Task 7: Convert version 14 database
 
