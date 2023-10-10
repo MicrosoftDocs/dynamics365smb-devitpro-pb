@@ -57,7 +57,7 @@ For examples of different error handling strategies, see the following table:
 
 [!INCLUDE[error_message_guidelines](includes/include-error-message-guidelines.md)]
 
-For more information, see [Error handling guidelines](devenv-error-handling-guidelines.md).
+For more information, see [User experience guidelines for errors](devenv-error-handling-guidelines.md).
 
 
 ## See also
@@ -68,4 +68,4 @@ For more information, see [Error handling guidelines](devenv-error-handling-guid
 [Understanding the error dialog](devenv-error-dialog.md)   
 [AL control statements](devenv-al-control-statements.md)   
 [AL development environment](devenv-reference-overview.md)   
-[Error handling guidelines](devenv-error-handling-guidelines.md)
+[User experience guidelines for errors](devenv-error-handling-guidelines.md)
