@@ -89,7 +89,7 @@ Error messages are meant to unblock users. The primary purpose of the error dial
 
 Error dialogs should answer the following questions:
 
-**Title:** [What went wrong]
+**Title:** [What went wrong]  
 **Body content:** [Why, if relevant] + [How to fix it]  
 **Button label:** [Clear action] 
 
