@@ -62,7 +62,7 @@ Example of an error dialog with a Show-it action
 
 Example of a validation error with one Show-it action
 
-:::image type="content" source="media/validation-error-fixit.png" alt-text="Validation error with show-it action":::
+:::image type="content" source="media/validation-error-showit.png" alt-text="Validation error with show-it action":::
 
 ## Error messages with multiple actions - how to use them?
 
