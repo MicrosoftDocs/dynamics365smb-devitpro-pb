@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 The **AL Home** view shows news related to developing in AL for [!INCLUDE [prod_short](includes/prod_short.md)]. The **AL Home** view allows the [!INCLUDE [prod_short](includes/prod_short.md)] research and development department to efficiently share news, best practices, upcoming events, urgent information and status, and learn content. 
 
-> [!TIP]
+> [!TIP]  
 > To open the **AL Home** view from within Visual Studio Code, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **AL: Home**.
 
 ## Settings
