@@ -1,0 +1,2 @@
+> [!IMPORTANT)
+> Starting in 2023 release wave 1 (v22), the FLF license type has been [deprecated and removed](../../upgrade/deprecated-features-platform.md#license-files-in-the-flf-format-for-includeprod_short-on-premises-removed). It's been replaced by replaced by the BCLICENSE type. Make sure you get a valid BCLICENSE type before you continue upgrade.
