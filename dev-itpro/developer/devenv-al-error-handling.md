@@ -57,7 +57,7 @@ For examples of different error handling strategies, see the following table:
 
 [!INCLUDE[error_message_guidelines](includes/include-error-message-guidelines.md)]
 
-For more information, see [User experience guidelines for errors](devenv-error-handling-guidelines.md).
+To read more about guidelines for error messages, see [User experience guidelines for errors](devenv-error-handling-guidelines.md).
 
 
 ## See also
