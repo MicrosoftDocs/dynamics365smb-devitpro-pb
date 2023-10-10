@@ -21,8 +21,8 @@ This article outlines the lifecycle and support policies for [!INCLUDE[prod_long
 The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] (on-premises) software as indicated on the [Microsoft Lifecycle Policy for Business Central on-premises](/lifecycle/products/dynamics-365-business-central-onpremises-modern-policy) page, but only if the customer keeps the deployed software current according to this policy. By keeping current, you're getting all the latest feature and bug fixes.  
 
 The following image illustrates the update schedule for [!INCLUDE [prod_long](../developer/includes/prod_long.md)].
-> [!div class="mx-imgBorder"]
-> ![Update schedule for Dynamics 365 Business Central.](../developer/media/terms/dynamics-365-business-central-modern-lifecycle-policy.png)
+
+![Update schedule for Dynamics 365 Business Central.](../developer/media/lifecycle.svg)
 
 <!-- Critical fixes and non-critical updates are handled in the following way:
 
