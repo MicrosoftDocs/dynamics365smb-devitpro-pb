@@ -1,1 +1,1 @@
-For more information, see [Run Business Central Administration Shell](../../administration/administration-shell).
+For more information, see [Run Business Central Administration Shell](../../administration/administration-shell.md).
