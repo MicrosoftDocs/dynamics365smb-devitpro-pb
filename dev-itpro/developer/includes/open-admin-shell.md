@@ -1,1 +1,1 @@
-For more information, see [Start Business Central Administration Shell](/powershell/business-central/overview#start).
+For more information, see [Run Business Central Administration Shell](../../administration/administration-shell).
