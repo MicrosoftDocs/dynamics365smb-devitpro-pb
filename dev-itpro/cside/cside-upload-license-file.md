@@ -22,7 +22,7 @@ Initially, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses CRON
 
 ## FLF and bclicense file types
 
-Depending on your Business Central version and when you got your license, the license is either delivered as a single .flf file or as a \.zip that contains both a .flf and a \.bclicense file. The .flf file type is the legacy license format, which was [deprecated and removed in 2023 release wave 1 (v22)](../upgrade/deprecated-features-platform.md#license-files-in-the-flf-format-for-includeprod_short-on-premises-removal). The \.bclicense file type is the newer license format. Both file types provide the same terms and permissions. But the \.bclicense file type is better suited for large license files than the \.flf file type. With large licenses, you might have problems importing a \.flf file. The .flf file type will eventually be deprecated.
+Depending on your Business Central version and when you got your license, the license is either delivered as a single .flf file or as a \.zip that contains both a .flf and a \.bclicense file. The .flf file type is the legacy license format, which was [deprecated and removed in 2023 release wave 1 (v22)](../upgrade/deprecated-features-platform.md#flfformat). The \.bclicense file type is the newer license format. Both file types provide the same terms and permissions. But the \.bclicense file type is better suited for large license files than the \.flf file type. With large licenses, you might have problems importing a \.flf file. The .flf file type will eventually be deprecated.
 
 So we recommend that you use the \.bclicense file if you've gotten one.
 
