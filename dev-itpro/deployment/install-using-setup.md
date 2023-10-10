@@ -38,12 +38,9 @@ There are some components that require other software to run. For example, the d
 
 1. Go to the update page for the release that you want to install:
 
-   <!-- - [Business Central 2018](https://support.microsoft.com//help/4470116)-->
-  <!-- - [Business Central 2019 Release Wave 2](https://support.microsoft.com/help/4528706)-->
-
-   - [Business Central Spring 2019 (v14)](https://support.microsoft.com/help/4501292)
-   - [Business Central 2021 Release Wave 1 (v18)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-1-cba50f7c-8950-4795-bc86-53fb39e675d6)
-   - [Business Central 2021 Release Wave 2 (v19)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-2-0d9263bf-e474-41c1-ae41-d98de5cd6e84)
+   - [Business Central 2023 Release Wave 2 (v23)](https://www.microsoft.com/en-us/download/details.aspx?id=105617)
+   - [Business Central 2023 Release Wave 1 (v22)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-1-37e2d08e-6f61-4522-90ba-1cea59d8de51)
+   - [Business Central 2022 Release Wave 2 (v21)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2022-release-wave-2-8efa5bbb-3cd5-4445-ba3a-0752694bf46f)
    - [Business Central 2022 Release Wave 1 (v20)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2022-release-wave-1-25be7a74-9771-4f0a-b9bd-ee1aac5a227d)
 
 2. In the **Cumulative Updates** table, select the link in the **Knowledge Base ID** column for the update you want.

@@ -358,7 +358,7 @@
 ## Migrate to Business Central online
 ### [Introduction](administration/migrate-data.md)
 <!--### [Understand Data Migration](administration/migrate-data-overview.md)-->
-### From Business Central on-premises
+### Migrate from Business Central on-premises
 #### [End-to-end overview](administration/migrate-business-central-on-premises.md)
 #### [Managing cloud migration](administration/migration-manage.md)
 #### Prepare
@@ -379,7 +379,9 @@
 ##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
 #### [Run data upgrade](administration/migration-data-upgrade.md)
 #### [Complete cloud migration](administration/migration-finish.md)  
-### From Dynamics GP
+### Migrate from Dynamics NAV
+#### [Migrate from Dynamics NAV to Business Central online](administration/migrate-nav.md)
+### Migrate from Dynamics GP
 #### [End-to-end overview](administration/migrate-gp-overview.md)
 #### [Managing cloud migration](administration/migration-manage.md)
 #### [Prerequisites](administration/cloud-migration-prerequisites-gp.md)
@@ -983,6 +985,7 @@
 ##### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
 ##### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
 ##### [Extending Currency Exchange Rate Adjustments](developer/devenv-extend-exchange-rates.md)
+##### [Extending e-documents functionality](developer/devenv-extend-edocuments.md)
 
 ### Using events 
 #### [Event types](developer/devenv-event-types.md)
@@ -1116,6 +1119,7 @@
 ## Troubleshooting
 ### [Overview](developer/devenv-troubleshooting-overview.md)
 ### Troubleshooting in the client
+#### [Understanding the error dialog](developer/devenv-error-dialog.md)
 #### [Using the Page Inspector](/dynamics365/business-central/across-inspect-page)
 #### [Using the Event Recorder](developer/devenv-events-discoverability.md)
 #### [Database table information](/dynamics365/business-central/admin-view-table-information)
