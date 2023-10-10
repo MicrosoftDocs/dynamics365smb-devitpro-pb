@@ -9,6 +9,7 @@ ms.topic: conceptual
 ms.date: 01/02/2023
 ms.custom: bap-template
 ---
+
 # Record instance isolation level
 
 This article explains how you can use the [ReadIsolation method](methods-auto/record/record-readisolation-method.md) to control isolation level on database transactions. The isolation level on a transaction determines the degree to which it's isolated from other transactions to prevent problems in concurrent situations. On the record level, the isolation level improves the integrity and stability of data when multiple transactions are reading the same record. It protects a transaction from the effects of other transactions by taking locks, preventing reads of uncommitted data, or preventing modifications.
@@ -17,7 +18,7 @@ Database locking can be a major cause for performance issues. When AL code takes
 
 ## How isolation level works by default
 
-The runtime of Business Central automatically determines the isolation levels used when querying the database. A transaction's isolation level is heightened either implicitly by writes on a record or explicitly via a [LockTable](methods-auto/record/record-locktable-method-md) method call, both on a per-table basis. The heightened isolation level persists for the entirety of the transaction&mdash;leaving subsequent code executed be impacted by heightened isolation levels, whether it's required or wanted.
+The runtime of Business Central automatically determines the isolation levels used when querying the database. A transaction's isolation level is heightened either implicitly by writes on a record or explicitly via a [LockTable](methods-auto/record/record-locktable-method.md) method call, both on a per-table basis. The heightened isolation level persists for the entirety of the transaction&mdash;leaving subsequent code executed be impacted by heightened isolation levels, whether it's required or wanted.
 
 The below example shows AL code with SQL isolation level hints annotated on database reads, which solely relies on transaction determined locking.
 
@@ -70,7 +71,7 @@ end;
 
 ### Isolation levels
 
-The following table describes the different isolation levels of the [IsolationLevel option type](/isolationlevel/isolationlevel-option) that you can apply:
+The following table describes the different isolation levels of the [IsolationLevel option type](methods-auto/isolationlevel/isolationlevel-option.md) that you can apply:
 
 |Value|Description|
 |-|-|
