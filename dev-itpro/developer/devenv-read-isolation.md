@@ -77,7 +77,7 @@ The following table describes the different isolation levels of the [IsolationLe
 |Default|Follows the transaction's state. It's the same as not using read isolation.|
 |ReadUncommitted|Allows dirty reads, which means it can read rows that have been modified by other transactions but not yet committed. It takes no locks and ignores locks from other transactions.|
 |ReadCommitted|Allows reads on committed data only, in other words, it can't read data that has been modified by other transactions but not yet committed. But it doesn't guarantee that rows read will stay consistent throughout the entirety of the transaction.|
-|RepetableRead|Ensures all reads are stable by holding shared locks for the lifetime of the transaction. The transaction can't read data that has been modified but not yet committed by other transactions, and no other transactions can modify data that has been read by the current transaction until the current transaction completes.|
+|RepeatableRead|Ensures all reads are stable by holding shared locks for the lifetime of the transaction. The transaction can't read data that has been modified but not yet committed by other transactions, and no other transactions can modify data that has been read by the current transaction until the current transaction completes.|
 |UpdLock|Reads for update, disallowing others to read with the same intent.|
 
 For more about non-default values, go to [SET TRANSACTION ISOLATION LEVEL](/sql/t-sql/statements/set-transaction-isolation-level-transact-sql) and [UPDLOCK](/sql/t-sql/queries/hints-transact-sql-table?#updlock) in the SQL Server documentation.
