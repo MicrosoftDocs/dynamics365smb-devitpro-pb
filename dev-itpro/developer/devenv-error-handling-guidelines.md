@@ -91,7 +91,7 @@ Error dialogs should answer the following questions:
 
 **Title:** [What went wrong]  
 **Body content:** [Why, if relevant] + [How to fix it]  
-**Button label:** [Clear action] 
+**Button label:** [Clear action]  
 
 ### Validation errors content
 
