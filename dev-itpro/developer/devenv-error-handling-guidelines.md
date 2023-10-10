@@ -116,7 +116,9 @@ Validation errors should answer the following questions:
 ### Body content
 
 - Use positive cases (telling what the user can do) where possible, sometimes you need to tell what you can’t do, but for validation errors space is limited so focus on the solution.
-Button labels
+
+### Button labels
+
 - Fix-it actions are often phrased: “Set value to...”. 
   - Such as: “Set value to 10”, “Set Status to Open”, or “Set value to HOME”.
 - Fix-it action tooltips are often phrased: “Sets the value...”.
