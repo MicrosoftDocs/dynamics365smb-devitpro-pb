@@ -39,7 +39,7 @@ Here are some quick guidelines on when to use each type of error message and its
 3. Can the error (value) be corrected with one action?
 4. Does the user have permission to make the required correction?
 
-Example of a error dialog with a Fix-it action
+Example of an error dialog with a Fix-it action
 
 :::image type="content" source="media/error-dialog-fixit.png" alt-text="Error dialog with fix-it action":::
 
