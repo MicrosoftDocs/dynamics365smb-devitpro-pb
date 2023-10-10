@@ -27,8 +27,8 @@ Here are some quick guidelines on when to use each type of error message and its
 | Error type | Description |
 |------------|-------------|
 |Task dialogs |	Task dialogs are used when an error can be mitigated by the user choosing between two (sometimes three) different options to continue their task without encountering an error.|
-|Error messages with Fix-it actions | Fix-it actions can be used when the cause and solution to the error is known and can be solved by users with just one step.|
-|Error messages with Show-it actions | Show-it actions can be used when an error must be corrected on a related table. A Show-it action can then offer a shortcut to the related table, enabling users to correct the error by themselves with one or multiple steps, while keeping the context of their current task.|
+|[Error messages with Fix-it actions](devenv-error-handling-guidelines.md#error-messages-with-fix-it-actions-–-when-to-use-them) | Fix-it actions can be used when the cause and solution to the error is known and can be solved by users with just one step.|
+|[Error messages with Show-it actions](devenv-error-handling-guidelines.md#error-messages-with-show-it-actions-–-when-to-use-them) | Show-it actions can be used when an error must be corrected on a related table. A Show-it action can then offer a shortcut to the related table, enabling users to correct the error by themselves with one or multiple steps, while keeping the context of their current task.|
 
 ## Error messages with Fix-it actions – when to use them?
 
@@ -40,10 +40,12 @@ Here are some quick guidelines on when to use each type of error message and its
 4. Will the user have permission to make the required correction?
 
 Visual example of error dialog with Fix-it action
-<image>
+
+:::image type="content" source="media/error-dialog-fixit.png" alt-text="Error dialog with fix-it action":::
 
 Visual example of validation error with Fix-it action
-<image>
+
+:::image type="content" source="media/validation-error-fixit.png" alt-text="Validation error with fix-it action":::
 
 ## Error messages with Show-it actions – when to use them?
 
@@ -55,10 +57,12 @@ Visual example of validation error with Fix-it action
 4. Will the user have permission to make the required correction?
 
 Visual example of error dialog with Show-it action
-<image>
+
+:::image type="content" source="media/error-dialog-showit.png" alt-text="Error dialog with show-it action":::
 
 Example of validation error with one Show-it action
-<image>
+
+:::image type="content" source="media/validation-error-fixit.png" alt-text="Validation error with show-it action":::
 
 ## Error messages with multiple actions - how to use them?
 
@@ -66,8 +70,8 @@ Error messages can have up to two recommended actions.
 
 |Description|Example|
 |-----------|-------|
-|In this error dialog case the recommended Fix-it action will set the value to blank, meaning that it will clear out the field value. <br> Notice the error dialog has two actions. In error cases both buttons are styled equally as secondary buttons, to allow users to consider the most suitable way to get unblocked for their case.| image |
-|Example of validation error with two promoted actions. Here the Show-it action will show the related Comments table, and the Fix-it action will reject the approval.<br> Users can also get unblocked by refreshing the page or copying the error details for sharing and troubleshooting.| <image> |
+|In this error dialog case the recommended Fix-it action will set the value to blank, meaning that it will clear out the field value. <br><br> Notice the error dialog has two actions. In error cases both buttons are styled equally as secondary buttons, to allow users to consider the most suitable way to get unblocked for their case.|  |
+|Example of validation error with two promoted actions. Here the Show-it action will show the related Comments table, and the Fix-it action will reject the approval.<br><br> Users can also get unblocked by refreshing the page or copying the error details for sharing and troubleshooting.| <image> |
 |When there isn’t any known solution to recommend, the error dialog will have one primary OK button.<br>Users can copy and share the full error details needed for troubleshooting and support.| <image> |
 
 ## Error message best practices - what to say?
