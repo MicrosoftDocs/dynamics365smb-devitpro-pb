@@ -1,5 +1,5 @@
 ---
-title: Error handling guidelines
+title: User experience guidelines for errors
 description: Describes how to handle error dialogs in AL code.
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -10,7 +10,7 @@ ms.date: 10/09/2023
 ms.custom: bap-template
 ---
 
-# Error handling guidelines
+# User experience guidelines for errors
 
 This article describes how to handle error dialogs in AL code. It also describes how to use the error handling framework to provide recommended actions to users to resolve errors more effectively.
 
