@@ -39,11 +39,11 @@ Here are some quick guidelines on when to use each type of error message and its
 3. Can the error (value) be corrected with one action?
 4. Does the user have permission to make the required correction?
 
-Visual example of error dialog with Fix-it action
+Example of a error dialog with a Fix-it action
 
 :::image type="content" source="media/error-dialog-fixit.png" alt-text="Error dialog with fix-it action":::
 
-Visual example of validation error with Fix-it action
+Example of a validation error with a Fix-it action
 
 :::image type="content" source="media/validation-error-fixit.png" alt-text="Validation error with fix-it action":::
 
@@ -127,10 +127,10 @@ Button labels
 - Refer to the error message as a message and not an error or error message.  
 - It’s OK to use please when asking the user to resolve a problem that isn’t their fault. 
 - Only use sorry (and similar wording) in error messages that notify the customer about a serious problem or one that they might find frustrating. For example:
-- Data is lost. 
-- The customer can't continue to use the device, service, or application. 
-- The customer must get help from a support representative.  
-- A product or service fails. 
+  - Data is lost. 
+  - The customer can't continue to use the device, service, or application. 
+  - The customer must get help from a support representative.  
+  - A product or service fails. 
 
 ### Avoid these words and phrases
 
