@@ -85,7 +85,7 @@ Error messages can have up to two recommended actions.
 
 Error messages are meant to unblock users. The primary purpose of the error dialog is to alert users to the fact that something has gone wrong and that they need to take action to continue. 
 
-**Error dialogs**
+### Error dialog content
 
 Error dialogs should answer the following questions:
 
@@ -93,7 +93,7 @@ Error dialogs should answer the following questions:
 **Body content:** [Why, if relevant] + [How to fix it]  
 **Button label:** [Clear action] 
 
-**Validation errors**
+### Validation errors content
 
 Validation errors should answer the following questions:
 
