@@ -67,12 +67,12 @@ Example of a validation error with one Show-it action
 ## Error messages with multiple actions - how to use them?
 
 Error messages can have up to two recommended actions.
-<br>
-In this error dialog case the recommended Fix-it action sets the value to blank, meaning that it clears out the field value. <br><br> Notice the error dialog has two actions. In error cases both buttons are styled equally as secondary buttons, to allow users to consider the most suitable way to get unblocked for their case. <br><br>:::image type="content" source="media/error-dialog-multiple.png" alt-text="Error dialog with multiple actions":::
-<br>
-Example of validation error with two promoted actions. Here the Show-it action shows the related Comments table, and the Fix-it action rejects the approval.<br><br> Users can also get unblocked by refreshing the page or copying the error details for sharing and troubleshooting.<br><br>:::image type="content" source="media/validation-error-multiple.png" alt-text="Validation error with multiple  actions":::
-<br>
-When there isn’t any known solution to recommend, the error dialog has one primary OK button.<br>Users can copy and share the full error details needed for troubleshooting and support.<br><br> :::image type="content" source="media/error-dialog-nosolution.png" alt-text="Error dialog with no solution":::
+
+|Description|
+|-----------|
+|In this error dialog case the recommended Fix-it action sets the value to blank, meaning that it clears out the field value. <br><br> Notice the error dialog has two actions. In error cases both buttons are styled equally as secondary buttons, to allow users to consider the most suitable way to get unblocked for their case. <br><br>:::image type="content" source="media/error-dialog-multiple.png" alt-text="Error dialog with multiple actions":::|
+|Example of validation error with two promoted actions. Here the Show-it action shows the related Comments table, and the Fix-it action rejects the approval.<br><br> Users can also get unblocked by refreshing the page or copying the error details for sharing and troubleshooting.<br><br>:::image type="content" source="media/validation-error-multiple.png" alt-text="Validation error with multiple  actions":::|
+|When there isn’t any known solution to recommend, the error dialog has one primary OK button.<br>Users can copy and share the full error details needed for troubleshooting and support.<br><br> :::image type="content" source="media/error-dialog-nosolution.png" alt-text="Error dialog with no solution":::|
 
 <!--
 |Description|Example|
