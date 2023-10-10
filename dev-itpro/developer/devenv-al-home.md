@@ -16,6 +16,9 @@ ms.custom: bap-template
 
 The **AL Home** view shows news related to developing in AL for [!INCLUDE [prod_short](includes/prod_short.md)]. The **AL Home** view allows the [!INCLUDE [prod_short](includes/prod_short.md)] research and development department to efficiently share news, best practices, upcoming events, urgent information and status, and learn content. 
 
+> [!TIP]
+> To open the **AL Home** view from within Visual Studio Code, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **AL: Home**.
+
 ## Settings
 
 You can choose when to show the **AL Home** view as you start up Visual Studio Code, the default is that **AL Home** is shown when it's updated. To change the default, go to user or workspace settings, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration**, change the **Show Home at startup** to a different value. For more information, see [AL Language extension configuration](devenv-al-extension-configuration.md).
