@@ -161,3 +161,5 @@ For more guidelines, follow Microsoft’s voice guidelines [Microsoft's brand vo
 ## See also
 
 [AL error handling](devenv-al-error-handling.md)  
+[Understanding the error dialog](devenv-error-dialog.md)  
+[Dialog.Error(ErrorInfo) Method](methods-auto/dialog/dialog-error-errorinfo-method.md)
