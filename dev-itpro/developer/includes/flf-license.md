@@ -1,4 +1,4 @@
-Clear references to .flf license.
+Clear references to .flf license, if used.
 
    A *\.bclicense* license type was introduced in 17.12, 18.7, 19.1. Starting in 2023 release wave 1 (v22), the .flf license type [can no longer be used](../../upgrade/deprecated-features-platform.md#license-files-in-the-flf-format-for-includeprod_short-on-premises-removed). If your database is using an .flf, you must delete all references to the .flf file in the database. Otherwise, you'll have problems trying to complete the upgrade process.
 
