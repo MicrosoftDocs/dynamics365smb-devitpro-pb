@@ -1,5 +1,5 @@
 > [!WARNING] 
-> The use of report properties **DefaultLayout**, **ExcelLayout**, **RDLLayout**, and **WordLayout** should be avoided as these properties will be deprecated at a later release. Instead, start using the property **DefaultRenderingLayout** together with the new **rendering** syntax introduced in runtime version 9.0. 
+> The use of report properties **DefaultLayout**, **ExcelLayout**, **RDLCLayout**, and **WordLayout** should be avoided as these properties will be deprecated at a later release. Instead, start using the property **DefaultRenderingLayout** together with the new **rendering** syntax introduced in runtime version 9.0. 
 > 
 > In VSCode, when hovering over any line with the **ExcelLayout**, **RDLLayout**, or **WordLayout** property, you can use the code action **Convert to 'Rendering'** to convert to the new **rendering** syntax. 
 >
