@@ -126,7 +126,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
     ```powershell
     Stop-NAVServerInstance -ServerInstance $OldBcServerInstance
     ```
-[!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
+7. [!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
 
 ## Task 5: Convert application database to version 22
 

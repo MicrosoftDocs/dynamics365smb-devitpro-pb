@@ -173,7 +173,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
     Stop-NAVServerInstance -ServerInstance $OldBcServerInstance
     ```
 
-[!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
+9. [!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
 
 ## Task 4: Convert the application database to version 22
 
