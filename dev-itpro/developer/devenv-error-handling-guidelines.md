@@ -20,7 +20,7 @@ Improving error handling and error messages reduces friction for the users and h
 
 ## Unblocking users with actionable errors
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, the error handling framework has been enhanced to include promoted actions in both error dialogs and validation errors. These promoted actions are designed to assist users in resolving errors more effectively. There are currently roughly two main scenarios to keep in mind when deciding how to use recommended actions: [Fix-it](devenv-error-handling-guidelines.md#error-messages-with-fix-it-actions--when-to-use-them) actions are recommended for scenarios where the system knows the correct value that should be used to resolve the error. [Show-it](devenv-error-handling-guidelines.md#error-messages-with-show-it-actions--when-to-use-them) actions are recommended for scenarios when the system can identify the error correction location in a related table.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, the error handling framework has been enhanced to include promoted actions in both error dialogs and validation errors. These promoted actions are designed to assist users in resolving errors more effectively. There are currently two main scenarios to keep in mind when deciding how to use recommended actions: [Fix-it](devenv-error-handling-guidelines.md#error-messages-with-fix-it-actions--when-to-use-them) actions are recommended for scenarios where the system knows the correct value that should be used to resolve the error. [Show-it](devenv-error-handling-guidelines.md#error-messages-with-show-it-actions--when-to-use-them) actions are recommended for scenarios when the system can identify the location where the error may be fixed by the user.
 
 Here are some quick guidelines on when to use each type of error message and its accompanying recommended actions. However, it's essential to begin by considering whether the error could have been avoided in the first place.
 
@@ -56,11 +56,11 @@ Example of a validation error with a Fix-it action
 3. Can you show the related table with one action?
 4. Does the user have permission to make the required correction?
 
-Visual example of error dialog with Show-it action
+Example of an error dialog with a Show-it action
 
 :::image type="content" source="media/error-dialog-showit.png" alt-text="Error dialog with show-it action":::
 
-Example of validation error with one Show-it action
+Example of a validation error with one Show-it action
 
 :::image type="content" source="media/validation-error-fixit.png" alt-text="Validation error with show-it action":::
 
@@ -68,31 +68,38 @@ Example of validation error with one Show-it action
 
 Error messages can have up to two recommended actions.
 
+|Description|
+|-----------|
+|In this error dialog case the recommended Fix-it action sets the value to blank, meaning that it clears out the field value. <br><br> Notice the error dialog has two actions. In error cases both buttons are styled equally as secondary buttons, to allow users to consider the most suitable way to get unblocked for their case. <br><br>:::image type="content" source="media/error-dialog-multiple.png" alt-text="Error dialog with multiple actions"::: |
+|Example of validation error with two promoted actions. Here the Show-it action shows the related Comments table, and the Fix-it action rejects the approval.<br><br> Users can also get unblocked by refreshing the page or copying the error details for sharing and troubleshooting.<br><br>:::image type="content" source="media/validation-error-multiple.png" alt-text="Validation error with multiple  actions":::|
+|When there isn’t any known solution to recommend, the error dialog has one primary OK button.<br>Users can copy and share the full error details needed for troubleshooting and support.<br><br> :::image type="content" source="media/error-dialog-nosolution.png" alt-text="Error dialog with no solution"::: |
+
+<!--
 |Description|Example|
 |-----------|-------|
 |In this error dialog case the recommended Fix-it action sets the value to blank, meaning that it clears out the field value. <br><br> Notice the error dialog has two actions. In error cases both buttons are styled equally as secondary buttons, to allow users to consider the most suitable way to get unblocked for their case.| :::image type="content" source="media/error-dialog-multiple.png" alt-text="Error dialog with multiple actions"::: |
 |Example of validation error with two promoted actions. Here the Show-it action shows the related Comments table, and the Fix-it action rejects the approval.<br><br> Users can also get unblocked by refreshing the page or copying the error details for sharing and troubleshooting.| :::image type="content" source="media/validation-error-multiple.png" alt-text="Validation error with multiple  actions":::|
-|When there isn’t any known solution to recommend, the error dialog has one primary OK button.<br>Users can copy and share the full error details needed for troubleshooting and support.| :::image type="content" source="media/error-dialog-nosolution.png" alt-text="Error dialog with no solution"::: |
+|When there isn’t any known solution to recommend, the error dialog has one primary OK button.<br>Users can copy and share the full error details needed for troubleshooting and support.| :::image type="content" source="media/error-dialog-nosolution.png" alt-text="Error dialog with no solution"::: | -->
 
 ## Error message best practices - what to say?
 
 Error messages are meant to unblock users. The primary purpose of the error dialog is to alert users to the fact that something has gone wrong and that they need to take action to continue. 
 
-### Error dialogs
+**Error dialogs**
 
 Error dialogs should answer the following questions:
 
-Title: [What went wrong]  
-Body content: [Why, if relevant] + [How to fix it]  
-Button label: [Clear action] 
+**Title:** [What went wrong]
+**Body content:** [Why, if relevant] + [How to fix it]  
+**Button label:** [Clear action] 
 
-### Validation errors
+**Validation errors**
 
 Validation errors should answer the following questions:
 
-Title (if needed): [What went wrong]  
-Body content: [How to fix it]  
-Button label: [Clear action]  
+**Title (if needed):** [What went wrong]  
+**Body content:** [How to fix it]  
+**Button label:** [Clear action]  
 
 
 ## Error message voice guidelines – how to say it?
