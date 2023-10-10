@@ -610,6 +610,7 @@
 ### Error handling
 #### [Error handling](developer/devenv-al-error-handling.md)
 #### [Understanding the error dialog](developer/devenv-error-dialog.md)
+#### [User experience guidelines for errors](developer/devenv-error-handling-guidelines.md)
 #### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md)
 #### [Collecting errors](developer/devenv-error-collection.md)
 #### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
