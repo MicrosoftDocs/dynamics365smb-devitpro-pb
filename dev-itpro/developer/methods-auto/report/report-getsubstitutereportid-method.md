@@ -36,6 +36,11 @@ The ID of the report that will be run by the platform after considering any subs
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remark
+If no object exists with the integer supplied to the _Report.GetSubstituteReportId(Integer)_ method, the method will not fail. Instead, the method will just return the supplied integer back.
+
+
 ## See Also
 [Substituting Reports](../../devenv-substituting-reports.md)  
 [Report Data Type](report-data-type.md)  
