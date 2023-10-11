@@ -1100,23 +1100,6 @@
 
 ## DevOps with AL-Go for GitHub
 ### [AL-Go overview](al-go/algo-overview.md)
-<!--
-### [Create a new per-tenant extension and start developing in Visual Studio Code](al-go/algo-get-started.md)
-### [Add a test app to an existing project](al-go/algo-add-test-app.md)
-### [Register a customer sandbox environment for continuous deployment using S2S](al-go/algo-register-sandbox-env.md)
-### [Create a release of your application](al-go/algo-create-release-app.md)
-### [Register a customer production environment for manual deployment](al-go/algo-register-cust-prod-env.md)
-### [Update AL-Go system files](al-go/algo-update-system-files.md)
-### [Use Azure Key Vault for secrets with AL-Go](al-go/algo-enable-keyvault-app-development.md)
-### [Create online development environment from Visual Studio Code](al-go/algo-create-online-dev-env-vscode.md)
-### [Create online development environment from GitHub](al-go/algo-create-online-dev-env-github.md)
-### [Set up CI/CD for an existing per-tenant extension](al-go/algo-setup-cicd-existing-pte.md)
-### [Set up CI/CD for an existing AppSource app](al-go/algo-setup-cicd-existing-app.md)
-### [Enable key vault access for your AppSource app during development and/or test](al-go/algo-enable-keyvault-app-development.md)
-### [Set up your own GitHub Runner to increase build performance](al-go/algo-setup-github-runner-performance.md)
-### [Introducing a dependency to another GitHub repository](al-go/algo-dependency-app-github.md)
-### [Enabling telemetry for AL-Go workflows and actions](al-go/algo-enabling-telemetry.md)
--->
 
 ## Troubleshooting
 ### [Overview](developer/devenv-troubleshooting-overview.md)
