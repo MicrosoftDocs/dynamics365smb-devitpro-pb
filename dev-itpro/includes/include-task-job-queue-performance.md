@@ -1,6 +1,6 @@
-Scheduled tasks or job queue entries that are set to run on a recurring schedule can impact the performance of [!INCLUDE[prod_short](prod_short.md)] if they:
-1. Run too frequent
-2. Run run heavy jobs while many users are also using [!INCLUDE[prod_short](prod_short.md)].
+Scheduled tasks or job queue entries that are set to run on a recurring schedule can impact the performance of [!INCLUDE[prod_short](prod_short.md)] under either of the following conditions:
+- They run too frequently.
+- They run run heavy jobs while many users are also using [!INCLUDE[prod_short](prod_short.md)].
 
 As for recurrence, consider how often the task or job needs to run. Especially for polling scenarios, you might have better and more performant ways to react, such as using webhooks. 
 
