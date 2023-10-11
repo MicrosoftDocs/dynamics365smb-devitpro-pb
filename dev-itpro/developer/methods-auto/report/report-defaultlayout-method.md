@@ -42,7 +42,7 @@ The default built-in layout type that is used on a specified report.
 
 The default layout for a report is specified by the report's [DefaultLayout Property](../../properties/devenv-defaultlayout-property.md).
 
-## Example (using Report::<object identifier> syntax)
+## Example (using `Report::<object identifier>` syntax)
 
 As mentioned above, the `Report.DefaultLayout` method will throw a run-time error if no report with the supplied object ID exists. If you know the report object, a safe way to call Report.DefaultLayout is to use the Report::<object identifier> syntax as the compiler will tell you if Report1 doesn't exist.  
 
