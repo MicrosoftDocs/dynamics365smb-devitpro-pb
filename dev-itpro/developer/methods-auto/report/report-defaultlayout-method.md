@@ -3,7 +3,7 @@ title: "Report.DefaultLayout(Integer) Method"
 description: "Gets the default built-in layout type that is used on a specified report."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 04/11/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,11 +38,13 @@ The default built-in layout type that is used on a specified report.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- The default layout for a report is specified by the report's [DefaultLayout Property](../../properties/devenv-defaultlayout-property.md).
+## Remarks
+
+The default layout for a report is specified by the report's [DefaultLayout Property](../../properties/devenv-defaultlayout-property.md).
 
 ## Example (using Report::<object identifier> syntax)
-As mentioned above, the _Report.DefaultLayout_ method will throw a run-time error if no report with the supplied object id exist. If you know the report object, a safe way to call Report.DefaultLayout is to use the Report::<object identifier> syntax as the compiler will tell you if Report1 does not exist.  
+
+As mentioned above, the `Report.DefaultLayout` method will throw a run-time error if no report with the supplied object ID exists. If you know the report object, a safe way to call Report.DefaultLayout is to use the Report::<object identifier> syntax as the compiler will tell you if Report1 doesn't exist.  
 
 ```AL
 procedure MyProcKnownReport()
@@ -55,8 +57,9 @@ begin
 end;
 ```
 
-## Example (using a try function)
-As mentioned above, the _Report.DefaultLayout_ method will throw a run-time error if no report with the supplied object id exist. If you do not know the report object in your AL code, then you can wrap the _Report.DefaultLayout_ method in a try function as it does not write to the database.
+## Example (using a Try function)
+
+As mentioned above, the `Report.DefaultLayout` method will throw a run-time error if no report with the supplied object ID exists. If you don't know the report object in your AL code, then you can wrap the `Report.DefaultLayout` method in a Try function as it doesn't write to the database.
 
 ```AL
 procedure GetLayout(ObjectId: Integer): DefaultLayout
@@ -83,7 +86,8 @@ begin
 end;
 ```
 
-## See Also
+## See also
+
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
