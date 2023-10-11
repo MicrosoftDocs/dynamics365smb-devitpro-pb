@@ -44,7 +44,7 @@ The default layout for a report is specified by the report's [DefaultLayout Prop
 
 ## Example (using `Report::<object identifier>` syntax)
 
-As mentioned above, the `Report.DefaultLayout` method will throw a run-time error if no report with the supplied object ID exists. If you know the report object, a safe way to call Report.DefaultLayout is to use the Report::<object identifier> syntax as the compiler will tell you if Report1 doesn't exist.  
+As mentioned above, the `Report.DefaultLayout` method will throw a run-time error if no report with the supplied object ID exists. If you know the report object, a safe way to call Report.DefaultLayout is to use the `Report::<object identifier>` syntax as the compiler will tell you if Report1 doesn't exist.  
 
 ```AL
 procedure MyProcKnownReport()
