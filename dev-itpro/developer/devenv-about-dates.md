@@ -3,7 +3,7 @@ title: "About Dates in Business Central"
 description: "About dates and time zones in Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/14/2022
+ms.date: 10/11/2023
 ms.reviewer: 
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
