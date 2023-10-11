@@ -41,6 +41,48 @@ The default built-in layout type that is used on a specified report.
 ## Remarks  
  The default layout for a report is specified by the report's [DefaultLayout Property](../../properties/devenv-defaultlayout-property.md).
 
+## Example (using Report::<object identifier> syntax)
+As mentioned above, the _Report.DefaultLayout_ method will throw a run-time error if no report with the supplied object id exist. If you know the report object, a safe way to call Report.DefaultLayout is to use the Report::<object identifier> syntax as the compiler will tell you if Report1 does not exist.  
+
+```AL
+procedure MyProcKnownReport()
+var
+    layout: DefaultLayout;
+begin
+    // When you know the report object, this is safe
+    // as the compiler will tell you if MyReport does not exist
+    layout := Report.DefaultLayout(Report::MyReport);
+end;
+```
+
+## Example (using a try function)
+As mentioned above, the _Report.DefaultLayout_ method will throw a run-time error if no report with the supplied object id exist. If you do not know the report object in your AL code, then you can wrap the _Report.DefaultLayout_ method in a try function as it does not write to the database.
+
+```AL
+procedure GetLayout(ObjectId: Integer): DefaultLayout
+var
+    layout: DefaultLayout;
+begin
+    if not TryReportDefaultLayout(ObjectId) then begin
+        // handle error here
+    end
+    else // now it is safe to call Report.DefaultLayout
+        layout := Report.DefaultLayout(ObjectId);
+
+    exit(layout);
+end;
+
+[TryFunction]
+// Safe to wrap Report.DefaultLayout in a try function
+// as it does not write to the database 
+procedure TryReportDefaultLayout(ObjectId: Integer)
+var
+    layout: DefaultLayout;
+begin
+    layout := Report.DefaultLayout(ObjectId);
+end;
+```
+
 ## See Also
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
