@@ -69,15 +69,15 @@ begin
     if not TryReportDefaultLayout(ObjectId) then begin
         // handle error here
     end
-    else // now it is safe to call Report.DefaultLayout
+    else // now it's safe to call Report.DefaultLayout
         layout := Report.DefaultLayout(ObjectId);
 
     exit(layout);
 end;
 
 [TryFunction]
-// Safe to wrap Report.DefaultLayout in a try function
-// as it does not write to the database 
+// Safe to wrap Report.DefaultLayout in a Try function
+// as it doesn't write to the database 
 procedure TryReportDefaultLayout(ObjectId: Integer)
 var
     layout: DefaultLayout;
