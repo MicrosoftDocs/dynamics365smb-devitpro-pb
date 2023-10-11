@@ -2,7 +2,7 @@
 title: Performance article for developers
 description: Provides information for developers to help improve performance in Business Central
 ms.custom: bap-tremplate
-ms.date: 09/27/2023
+ms.date: 10/11/2023
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -84,6 +84,10 @@ The **Edit in Excel** feature uses UI pages exposed through OData, which means t
 [!INCLUDE[report_performance](../includes/include-report-performance.md)]
 
 For more information on how to use telemetry to analyze the performance of reports, see [Report performance](../developer/devenv-report-performance.md)
+
+### Stop using report properties **DefaultLayout**, **ExcelLayout**, **RDLLayout**, and **WordLayout**
+
+[!INCLUDE[single_layouts](../developer/includes/include-single-layout-obsolete.md)]
 
 ### Loading data efficiently to Power BI
 

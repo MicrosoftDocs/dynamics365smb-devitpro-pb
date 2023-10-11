@@ -3,7 +3,7 @@ title: "Report.DefaultLayout(Integer) Method"
 description: "Gets the default built-in layout type that is used on a specified report."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 04/11/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,10 +38,56 @@ The default built-in layout type that is used on a specified report.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- The default layout for a report is specified by the report's [DefaultLayout Property](../../properties/devenv-defaultlayout-property.md).
+## Remarks
 
-## See Also
+The default layout for a report is specified by the report's [DefaultLayout Property](../../properties/devenv-defaultlayout-property.md).
+
+## Example (using `Report::<object identifier>` syntax)
+
+As mentioned above, the `Report.DefaultLayout` method will throw a run-time error if no report with the supplied object ID exists. If you know the report object, a safe way to call Report.DefaultLayout is to use the `Report::<object identifier>` syntax as the compiler will tell you if Report1 doesn't exist.  
+
+```AL
+procedure MyProcKnownReport()
+var
+    layout: DefaultLayout;
+begin
+    // When you know the report object, this is safe
+    // as the compiler will tell you if MyReport does not exist
+    layout := Report.DefaultLayout(Report::MyReport);
+end;
+```
+
+## Example (using a Try function)
+
+As mentioned above, the `Report.DefaultLayout` method will throw a run-time error if no report with the supplied object ID exists. If you don't know the report object in your AL code, then you can wrap the `Report.DefaultLayout` method in a Try function as it doesn't write to the database.
+
+```AL
+procedure GetLayout(ObjectId: Integer): DefaultLayout
+var
+    layout: DefaultLayout;
+begin
+    if not TryReportDefaultLayout(ObjectId) then begin
+        // handle error here
+    end
+    else // now it's safe to call Report.DefaultLayout
+        layout := Report.DefaultLayout(ObjectId);
+
+    exit(layout);
+end;
+
+[TryFunction]
+// Safe to wrap Report.DefaultLayout in a Try function
+// as it doesn't write to the database 
+procedure TryReportDefaultLayout(ObjectId: Integer)
+var
+    layout: DefaultLayout;
+begin
+    layout := Report.DefaultLayout(ObjectId);
+end;
+```
+
+## See also
+
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
