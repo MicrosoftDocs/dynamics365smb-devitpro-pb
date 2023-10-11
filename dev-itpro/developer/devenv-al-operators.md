@@ -23,11 +23,14 @@ These operators are used to perform various operations such as arithmetic, compa
 |AL general operator | Meaning |
 |:---|:---|
 |`.`|Fields in records, controls on pages, and reports|
+|`:=`|Assigns a value to a variable. Assigns the value on the right side of the operator to the variable on the left side.|
 |`()`|Parentheses|
 |`[ ]`|Indexing|
 |`::`|Scope|
 |`..`|Range|
 |`@`|Case-insensitive|
+
+Arithmetic operators are used to perform arithmetic operations on numeric operands. The result of an arithmetic operation is a numeric value.
 
 |AL arithmetic operator | Meaning |
 |:---|:---|
@@ -38,6 +41,8 @@ These operators are used to perform various operations such as arithmetic, compa
 |`div`|Integer division|
 |`mod`| Modulus|
 
+Comparison operators are used to compare two values. The result of a comparison is a Boolean value, that is, true or false.
+
 |AL comparison operator | Meaning |
 |:---|:---|
 |`>`|Greater than|
@@ -47,6 +52,8 @@ These operators are used to perform various operations such as arithmetic, compa
 |`=`|Equal to|
 |`<>`|Not equal to|
 
+The logical operators are used on Boolean expressions
+
 |AL logical operator | Meaning |
 |:---|:---|
 |`and`|Logical conjunction|
@@ -54,33 +61,15 @@ These operators are used to perform various operations such as arithmetic, compa
 |`not`|Logical negation|
 |`xor`|Exclusive logical disjunction|
 
+Compound assignment operators perform an arithmetic operation and assign the result to the same variable.
 
-
-<!--
-|AL operator | Meaning |
+|AL compound assignment operator| Meaning|
 |:---|:---|
-|`.`|Fields in records, controls on pages, and reports|
-|`()`|Parentheses|
-|`[ ]`|Indexing|
-|`::`|Scope|
-|`+`|Addition|
-|`-`|Subtraction or negation|
-|`*`|Multiplication|
-|`/`|Division|
-|`div`|Integer division|
-|`mod`| Modulus|
-|`>`|Greater than|
-|`>=`|Greater than or equal to|
-|`<`|Less than|
-|`<=`|Less than or equal to|
-|`=`|Equal to|
-|`<>`|Not equal to|
-|`in`|In range|
-|`and`|Logical conjunction|
-|`or`|Logical disjunction|
-|`not`|Logical negation|
-|`xor`|Exclusive logical disjunction|
--->
+|`+=`|Addition|
+|`-=`|Subtraction|
+|`*=`|Multiplication|
+|`/=`|Division|
+
 
 The `+` and the `-` operators can be used both as unary and binary operators. The `NOT` operator can only be used as a unary operator. All the other operators are binary.
 
