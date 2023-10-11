@@ -1100,6 +1100,7 @@
 
 ## DevOps with AL-Go for GitHub
 ### [AL-Go overview](al-go/algo-overview.md)
+<!--
 ### [Create a new per-tenant extension and start developing in Visual Studio Code](al-go/algo-get-started.md)
 ### [Add a test app to an existing project](al-go/algo-add-test-app.md)
 ### [Register a customer sandbox environment for continuous deployment using S2S](al-go/algo-register-sandbox-env.md)
@@ -1115,7 +1116,7 @@
 ### [Set up your own GitHub Runner to increase build performance](al-go/algo-setup-github-runner-performance.md)
 ### [Introducing a dependency to another GitHub repository](al-go/algo-dependency-app-github.md)
 ### [Enabling telemetry for AL-Go workflows and actions](al-go/algo-enabling-telemetry.md)
-
+-->
 
 ## Troubleshooting
 ### [Overview](developer/devenv-troubleshooting-overview.md)
