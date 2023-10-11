@@ -41,9 +41,27 @@ The variable in which to return the RDLC layout.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-  
+
 ## Remarks  
  Using the return value is optional. When you use the return value, if the RDLC layout cannot be retrieved at run-time, then the system returns **false** and no error recorded. When you omit the return value, if the RDLC layout cannot be retrieved at run-time, then an error occurs, which states that the layout could not be retrieved. 
+
+## Example
+As mentioned above, the `Report.RdlcLayout` method will throw a run-time error if the operation fails, either if no object exists with that object id or if no RDL layout exists for that report. This code example shows how to write robust AL code to handle possible failures.
+
+```AL
+var
+    layoutAsStream: InStream;
+    result: Boolean;
+begin
+    result := Report.RDLCLayout(ObjectId, layoutAsStream);
+    if result then begin
+        // use the layout that now is available in the stream
+    end
+    else
+        // handle that no object exists with that id or that no Excel layout exists for that report
+    ;
+end;
+```
 
 ## See Also
 [Report Data Type](report-data-type.md)  
