@@ -70,7 +70,8 @@ The following table explains the custom dimensions included in a **Web Services 
 ### HTTP headers
 For privacy and security reasons, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] maintains a list of HTTP headers that are allowed to be emitted to telemetry. 
 
-The following HTTP headers are emitted to telemetry (if set in the request)
+The following HTTP headers are emitted to telemetry (if set in the request):
+
 * Accept
 * Accept-Charset
 * Accept-Encoding
