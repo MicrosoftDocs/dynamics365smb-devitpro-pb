@@ -3,7 +3,7 @@ title: "WordLayout Property"
 description: "Sets the Word layout that is used on a report and returns it as a data stream."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 10/11/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,10 +29,9 @@ Sets the Word layout that is used on a report and returns it as a data stream.
 
 ## Remarks
 
-The Word file has to be in the same folder as the AL object.
+The Word file must be in the same folder as the AL object.
 
 [!INCLUDE[single_layouts](../includes/include-single-layout-obsolete.md)]
-
 
 ## Example
 
@@ -54,7 +53,7 @@ report 50124 MyWordReport
 }
 ```
 
-## See Also
+## See also
 
 [Creating a Word Layout Report](../devenv-howto-report-layout.md)  
 [RDLCLayout Property](devenv-rdlclayout-property.md)  

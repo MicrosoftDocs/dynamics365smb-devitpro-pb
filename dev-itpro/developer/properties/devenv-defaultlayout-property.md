@@ -3,7 +3,7 @@ title: "DefaultLayout Property"
 description: "Specifies whether the report uses the built-in Excel, Word, or RDL report layout by default."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
+ms.date: 10/11/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,12 +46,13 @@ Allowed values are defined in the option type [DefaultLayout](../methods-auto/de
 
 ## Remarks
 
-A report object can include a built-in layout of either an Excel type, Word type, or RDL type. When you set the property to a type, then that layout type is used by default to view, save and print a report. Users can change a report to use another layout from the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] client.  
+A report object can include a built-in layout of either an Excel type, Word type, or RDL type. When you set the property to a type, then that layout type is used by default to view, save, and print a report. Users can change a report to use another layout from the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] client.  
 
 
 [!INCLUDE[single_layouts](../includes/include-single-layout-obsolete.md)]
 
-## See Also
+## See also
+
 [Developing reports](../devenv-reports.md)  
 [Defining multiple report layouts](../devenv-multiple-report-layouts.md)  
 [Creating an RDL Layout Report](../devenv-howto-rdl-report-layout.md)  

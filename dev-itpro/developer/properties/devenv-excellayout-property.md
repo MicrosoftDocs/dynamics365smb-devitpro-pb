@@ -3,7 +3,7 @@ title: "ExcelLayout Property"
 description: "Sets the Excel layout that is used on a report and returns it as a data stream."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 10/11/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,7 +49,8 @@ report 50124 MyExcelReport
 }
 ```
 
-## See Also  
+## See also
+
 [Creating an Excel layout report](../devenv-howto-excel-report-layout.md)  
 [WordLayout Property](devenv-wordlayout-property.md)  
 [Creating a Word Layout Report](../devenv-howto-report-layout.md)  
