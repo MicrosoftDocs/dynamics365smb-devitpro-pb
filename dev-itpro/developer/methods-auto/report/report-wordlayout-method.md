@@ -3,7 +3,7 @@ title: "Report.WordLayout(Integer, InStream) Method"
 description: "Gets the Word report layout that is used on a report and returns it as a data stream."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
+ms.date: 10/11/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,9 +41,28 @@ The variable in which to return the Word report layout.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- Using the return value is optional. When you use the return value, if the Word report layout cannot be retrieved at run-time, then the system returns **false** and no error recorded. When you omit the return value, if the Word report layout cannot be retrieved at run-time, then an error occurs, which states that the Word report could not be retrieved.  
+## Remarks
+
+Using the return value is optional. When you use the return value, if the Word report layout can't be retrieved at runtime, then the system returns **false** and no error is recorded. When you omit the return value, if the Word report layout can't be retrieved at runtime, then an error occurs, which states that the Word report couldn't be retrieved.  
   
+## Example
+
+The `Report.WordLayout` method will throw a runtime error if the operation fails, either if no object exists with that object ID or if no Word layout exists for that report. This code example shows how to write robust AL code to handle possible failures.
+
+```AL
+var
+    layoutAsStream: InStream;
+    result: Boolean;
+begin
+    result := Report.WordLayout(ObjectId, layoutAsStream);
+    if result then begin
+        // use the layout that now is available in the stream
+    end
+    else
+        // handle that no object exists with that id or that no Excel layout exists for that report
+    ;
+end;
+```
 
 ## See Also
 [Report Data Type](report-data-type.md)  

@@ -12,27 +12,32 @@ ms.author: kepontop
 
 # Understanding the error dialog
 
-The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. Whenever an error is surfaced to the user, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client displays an error dialog, similar to the following figure. In this article, you can learn more about the different parts of the error dialog so you can more effectively help users mitigate any issues they might encounter.
+The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. Whenever an error is surfaced to the user, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client displays an error dialog, similar to the figure later in this article. In this article, you can learn more about the different parts of the error dialog so you can more effectively help users mitigate any issues they might encounter.
 
-![Show an example of an error dialog in Business Central.](media/error-dialog.png)
+## Visual elements of the error dialog (2022 release wave 2 and earlier)
 
-## Visual elements of the error dialog (version 22 and earlier)
-
-In versions 22 and earlier, the error dialog consists of the following four parts:
+In versions 21 and earlier, the error dialog consists of the following four parts:
 1. A title (optionally)
 2. A message directed to the user
-3. A **See details** part that includes a **Copy Details** action
+3. A **How to report this issue** part that includes a **Copy information to clipboard** action
 4. A yes or no question as to whether the message was helpful
 
+The following figure shows an example of an error dialog in the 2022 release wave 2. 
 
-## Visual elements of the error dialog (version 23 and later)
+![Show an example of an error dialog in Business Central version 21.](media/error-dialog-v21.png)
 
-Starting in version 23, the error dialog consists of the following four parts:
+## Visual elements of the error dialog (2023 release wave 1 and later)
+
+Starting in version 22, the error dialog consists of the following four parts:
 
 1. A title (optionally)
 2. A message directed to the user
 3. A **Copy Details** action.
 4. A yes or no question as to whether the message was helpful
+
+The following figure shows an example and example error dialog in the 2023 release wave 1 or later. 
+
+![Show an example of an error dialog in the latest Business Central version.](media/error-dialog.png)
 
 ## Information in Copy details section
 
@@ -43,7 +48,7 @@ Here's an example of the content of **Copy details**:
 ```
 If requesting support, please provide the following details to help troubleshooting:
 
-Something went wrong. Please contact your partner.
+The report couldn’t be generated, because it was empty. Adjust your filters and try again.
 
 Internal session ID: 
 23fa3850-ea3c-4529-81c8-fc36d3324676
@@ -64,7 +69,10 @@ AL call stack:
 Report1(Report 50101).OnPostReport(Trigger) line 2 - ReportErrors by Default publisher
 ```
 
-Below the text 'If requesting support, please provide the following details to help troubleshooting:', the error message(s) supplied to the user (and optionally in _DetailedMessage_ if the AL developer used the ErrorInfo version of the Error method) is stored. After the error message(s), the BC platform adds more sections that can be useful when troubleshooting. The following table explains the different the extra sections in Copy details.
+The error messages supplied to the user are listed below the line `If requesting support, please provide the following details to help troubleshooting:`. Optionally, messages are in _DetailedMessage_ if the AL developer used the ErrorInfo version of the [Error method](methods-auto/dialog/dialog-error-errorinfo-method.md). 
+
+
+After the error messages, the platform adds more sections that can be useful when troubleshooting. The following table explains these additional sections in **Copy details**.
 
 
 |Section | Description |
@@ -78,13 +86,14 @@ Below the text 'If requesting support, please provide the following details to h
 
 
 There are three pieces of information that help you better understand the error that the user experienced:
-1. The error message(s)
+
+1. The error messages
 2. Application Insights session ID (if telemetry is enabled in the environment/app)
 3. The AL stack trace
 
 ### Sample KQL code (troubleshoot further with telemetry)
 
-In telemetry, use this KQL code to help you understand what happened in the session prior to the error
+In telemetry, use this KQL code to help you understand what happened in the session prior to the error.
 
 ```kql
 traces
@@ -121,6 +130,7 @@ You can then use the stack trace to identify:
 
 
 ## See also
+
 [Error message quality telemetry](../administration/telemetry-error-message-voting-trace.md)   
 [Error method telemetry](../administration/telemetry-error-method-trace.md)   
 [Permission error telemetry](../administration/telemetry-permission-error-trace.md)   

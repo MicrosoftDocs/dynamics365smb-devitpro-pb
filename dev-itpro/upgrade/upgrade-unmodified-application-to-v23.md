@@ -149,6 +149,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
     ```powershell
     Stop-NAVServerInstance -ServerInstance $OldBcServerInstance
     ```
+8. [!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
 
 ## Task 4: Convert application database to version 23
 
@@ -334,6 +335,9 @@ You'll synchronize the tenant's database schema with any schema changes in the a
     ```
 
    Replace `$NewBCVersion` with the exact version of the published Base Application.
+
+   > [!IMPORTANT]
+   > If you're upgrading a Czech (CZ) language version, you must use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. For more information, go to [Removed table fields in base application cause sync errors](known-issues.md#removed-table-fields-in-the-czech-cz-base-application-cause-sync-errors).
 
 5. Synchronize the tenant with the [Application](../developer/devenv-application-app-file.md) extension.
 
