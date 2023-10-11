@@ -12,12 +12,51 @@ ms.custom: bap-template
 
 # AL operators
 
-Operators can be used in expressions to combine, investigate, and adjust values and data elements. This article describes the operators that you can use in AL.
+Operators can be used in expressions to combine, investigate, and adjust values and data elements. This article describes the operators that are supported in AL.
 
 ## AL operators and meaning
 
 The following table shows the valid operators in AL.
 
+These operators are used to perform various operations such as arithmetic, comparison, and logical operations.
+
+|AL general operator | Meaning |
+|:---|:---|
+|`.`|Fields in records, controls on pages, and reports|
+|`()`|Parentheses|
+|`[ ]`|Indexing|
+|`::`|Scope|
+|`..`|Range|
+|`@`|Case-insensitive|
+
+|AL arithmetic operator | Meaning |
+|:---|:---|
+|`+`|Addition|
+|`-`|Subtraction or negation|
+|`*`|Multiplication|
+|`/`|Division|
+|`div`|Integer division|
+|`mod`| Modulus|
+
+|AL comparison operator | Meaning |
+|:---|:---|
+|`>`|Greater than|
+|`>=`|Greater than or equal to|
+|`<`|Less than|
+|`<=`|Less than or equal to|
+|`=`|Equal to|
+|`<>`|Not equal to|
+
+|AL logical operator | Meaning |
+|:---|:---|
+|`and`|Logical conjunction|
+|`or`|Logical disjunction|
+|`not`|Logical negation|
+|`xor`|Exclusive logical disjunction|
+
+
+
+<!--
 |AL operator | Meaning |
 |:---|:---|
 |`.`|Fields in records, controls on pages, and reports|
@@ -28,21 +67,20 @@ The following table shows the valid operators in AL.
 |`-`|Subtraction or negation|
 |`*`|Multiplication|
 |`/`|Division|
-|`DIV`|Integer division|
-|`MOD`| Modulus|
+|`div`|Integer division|
+|`mod`| Modulus|
 |`>`|Greater than|
 |`>=`|Greater than or equal to|
 |`<`|Less than|
 |`<=`|Less than or equal to|
 |`=`|Equal to|
 |`<>`|Not equal to|
-|`IN`|In range|
-|`AND`|Logical conjunction|
-|`OR`|Logical disjunction|
-|`NOT`|Logical negation|
-|`XOR`|Exclusive logical disjunction|
-|`..`|Range|
-|`@`|Case-insensitive|
+|`in`|In range|
+|`and`|Logical conjunction|
+|`or`|Logical disjunction|
+|`not`|Logical negation|
+|`xor`|Exclusive logical disjunction|
+-->
 
 The `+` and the `-` operators can be used both as unary and binary operators. The `NOT` operator can only be used as a unary operator. All the other operators are binary.
 
