@@ -139,6 +139,11 @@ The session runs by using the same user/credentials that are used when calling A
 > [!NOTE]  
 > The *delegated admins* can't schedule tasks. They can test the job queues by making a copy of the job and running it once in the foreground, but not as a recurrent or scheduled task. To know more about limitations for delegated admins, see [Restricted access to Business Central as delegated administrators](../administration/delegated-admin.md#restricted-access-to-business-central-as-delegated-administrator).
 
+## Task scheduler and performance
+
+[!INCLUDE[task_job_queue_performance](../includes/include-task-job-queue-performance.md)]
+
+
 ## Monitor and troubleshoot
 
 [!INCLUDE[prod_short](includes/prod_short.md)] offers two ways to monitor the flow of scheduled tasks: telemetry in [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] and the **Session Event** table. These tools let you follow execution of a task, and investigate errors in failure codeunits.
