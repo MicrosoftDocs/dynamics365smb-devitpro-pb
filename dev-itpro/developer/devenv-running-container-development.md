@@ -88,20 +88,16 @@ At this point, you can open your browser and type in the web client URL from the
 
 
 ## Common usage scenarios
-The BCContainerHelper PowerShell module supports a lot of scenarios that you might need as a developer. In this section, we will highlight a few of them. 
+The BCContainerHelper PowerShell module supports many scenarios that you might need as a developer. In this section, we highlight a few of them. 
 
 ### Installing an app
-Upload of per-tenant extensions is not supported in on-premises environments. If you want to install an app/extension using an **.app** file, then you can use the _Publish-BcContainerApp_ commandlet. 
+Uploading per-tenant extensions isn't supported in on-premises environments. If you want to install an app/extension using an **.app** file, then you can use the _Publish-BcContainerApp_ commandlet. 
 
-Use this Powershell example to get started
+Use this example to get started:
 
-``` Powershell
- Publish-BcContainerApp -appFile <full path to file> -tenant <tenant name> -install -containerName <container name> 
+```powershell
+Publish-BcContainerApp -appFile <full path to file> -tenant <tenant name> -install -containerName <container name> 
 ```
-
-
-
-
 
 ## See also
 
