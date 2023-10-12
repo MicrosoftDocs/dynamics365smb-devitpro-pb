@@ -45,9 +45,34 @@ The RecordRef that refers to the table in which you want to find a record.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You typically use this method together with the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md). The RunRequestPage method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the Print method to get the parameter string and print the report.  
+You typically use this method together with the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md). The RunRequestPage method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the Print method to get the parameter string and print the report.  
 
- For a simple example that illustrates how to use the Print method, see example in the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) topic.  
+> [!NOTE]  
+> Be careful crafting the string for the RunRequestPage parameter without using the RunRequestPage method. If the XML content is malformed, then a run-time error might occur when calling `Report.Execute`. 
+
+> [!NOTE]  
+> If no default printer has been setup or if the printer supplied in the **PrinterName** parameter does not exist, a PDF version of the document is downloaded to the client.  
+
+> [!NOTE]  
+> The `Report.Print` method is not supported for reports running with an Excel Layout.
+
+
+## Example (end-to-end scenario)
+For a simple example that illustrates how to use the Print method, see example in the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) topic. 
+
+
+## Example (using `Report::<object identifier>` syntax)
+As mentioned above, the `Report.Print` method will throw a run-time error if no report with the supplied object ID exists. If you know the report object, a safe way to call `Report.Print` is to use the `Report::<object identifier>` syntax as the compiler will tell you if the report object doesn't exist.  
+
+```AL
+procedure PrintKnownReport()
+var
+    RequestPagePayload: Text;
+begin
+    RequestPagePayload := Report.RunRequestPage(Report::MyReport);
+    Report.Print(Report::MyReport, RequestPagePayload);
+end;
+```
 
 ## See Also
 [Report Data Type](report-data-type.md)  
