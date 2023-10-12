@@ -23,7 +23,7 @@ The template repositories to use as starting point are:
 - To create an **AppSource app**, here's your starting point
 **[https://github.com/microsoft/AL-Go-AppSource](https://github.com/microsoft/AL-Go-AppSource)** is the GitHub repository template for AppSource apps. 
 
-To get started with AL-Go, try out the [AL-Go for GitHub Workshop](https://github.com/microsoft/AL-Go/blob/main/Workshop/Index.md). All documentation for AL-Go for GitHub is maintained and updated in the repository. Go to [Al-Go for GitHub](https://github.com/microsoft/AL-Go/blob/main/README.md) to see the latest documentation.
+To get started with AL-Go, try out the [AL-Go for GitHub Workshop](https://github.com/microsoft/AL-Go/blob/main/Workshop/Index.md). All documentation for AL-Go for GitHub is maintained and updated in the repository. Go to [AL-Go for GitHub](https://github.com/microsoft/AL-Go/blob/main/README.md) to see the latest documentation.
 
 ## See also
 
