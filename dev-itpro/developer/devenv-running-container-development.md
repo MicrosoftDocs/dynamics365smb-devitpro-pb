@@ -101,6 +101,18 @@ At this point, you can open your browser and type in the web client URL from the
 > The container image uses a so called self-signed certificate for HTTPS communication. Because of that, your browser might warn you that the page you are requesting is unsafe. In those specific circumstances, and only for test and development environments, it is safe to ignore this warning. If you want to resolve this warning, you can install the certificate on your PC. For more information, see the link under **Files** in the log entries.
 
 
+## Common usage scenarios
+The BCContainerHelper PowerShell module supports many scenarios that you might need as a developer. In this section, we highlight a few of them. 
+
+### Installing an app
+Uploading per-tenant extensions isn't supported in on-premises environments. If you want to install an app/extension using an **.app** file, then you can use the _Publish-BcContainerApp_ commandlet. 
+
+Use this example to get started:
+
+```powershell
+Publish-BcContainerApp -appFile <full path to file> -tenant <tenant name> -install -containerName <container name> 
+```
+
 ## See also
 
 [Get Started with AL](devenv-get-started.md)  
