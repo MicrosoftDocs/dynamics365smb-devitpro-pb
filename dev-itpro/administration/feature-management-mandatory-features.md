@@ -34,6 +34,11 @@ The following features are generally available. However, they aren't turned on b
 |---------|---------|
 |[Feature Update: Enable use of new extensible exchange rate adjustment, including posting review](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/adjust-exchange-rates-easily-replace-built-in-batch-job)  |**Note:** This feature update will become generally available in the first update for 2023 release wave 2.<br><br>When companies operate in multiple countries or regions, it's important that they can do business and run financial reports in more than one currency. Because exchange rates often change, businesses must periodically update the rates in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. This feature update gives accountants additional control over how they adjust exchange rates. At the same time, it allows partners to extend and customize an exchange rate adjustment to meet the needs of specific industries or markets.  |
 
+|Feature  |Description  |
+|---------|---------|
+|[Feature Update: Enable Tri-State locking in AL](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/performance-gain-reducing-locks-database)  |The tri-state locking feature is aimed at enhancing the performance and concurrency of database transactions. By enabling this feature, AL-based read operations that follow write operations are performed optimistically, rather than with strict consistency and low concurrency. Consequently, users can expect higher levels of concurrency and fewer blocked or failed operations while accessing data. [Learn more about tri-state locking](../developer/devenv-tri-state-locking.md).  |
+
+
 ## Features becoming mandatory in 2023 release wave 2
 
 These features are now mandatory and can no longer be disabled. Use the links to learn more about them in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans.

@@ -52,6 +52,20 @@ New-BCContainer -accept_eula -containerName mysandbox -artifactUrl $artifactUrl
 
 The `BCContainerHelper` creates a folder on the C:\ drive called *bcartifacts.cache* for caching artifacts. It also creates a folder under C:\ProgramData called BCContainerHelper and places all working files underneath that folder. The C:\ProgramData\BCContainerHelper folder is shared to the container for transfer of files etc. If you don't specify a username and a password, it asks for your password and uses the current Windows username. If you specify your windows password, the container setup uses Windows Authentication integrated with the host. The `BCContainerHelper` also creates shortcuts on the desktop for the [!INCLUDE [prod_short](includes/prod_short.md)] web client, a container prompt, and a container PowerShell prompt.
 
+### Issues setting up Business Central containers?
+
+If you encounter issues setting up Business Central containers, there are a few things you can try before creating an issue on GitHub.
+
+1. Make sure you are running the latest version of [Docker](https://www.docker.com/products/docker-desktop/) and the latest version of the [BcContainerHelper module](https://www.powershellgallery.com/packages/BcContainerHelper).
+2. If the container fails during creation?
+   - Check that you have enough memory (Business Central containers will use at least 6GB) and enough disk space (artifacts and container images uses ~15GB)
+   - You can try to add `-isolation hyperv` to your `New-BcContainer` command to see whether Hyper-V isolation will solve the problem.
+3. If the container is created, but you can't navigate to the container in a browser?
+   - You can try to include the `-updateHosts` parameter on your `New-BcContainer`. This will add an entry in your hosts file for the container.
+   - You can try to use Username/Password authentication instead of Windows authentication adding `-auth UserPassword -credential (Get-Credential)` to your `New-BcContainer` command.
+4. Try the most basic New-BcContainer command with the suggested arguments from this article to check whether the problem stems from advanced usage. 
+5. Remember to include the full output of your New-BcContainer command when creating an issue on GitHub.
+
 ### Engage with us on GitHub - BcContainerHelper
 
 [!INCLUDE[BcContainerHelper_github](../includes/include-bccontainer-helper-github.md)]
@@ -86,6 +100,18 @@ At this point, you can open your browser and type in the web client URL from the
 > [!NOTE]  
 > The container image uses a so called self-signed certificate for HTTPS communication. Because of that, your browser might warn you that the page you are requesting is unsafe. In those specific circumstances, and only for test and development environments, it is safe to ignore this warning. If you want to resolve this warning, you can install the certificate on your PC. For more information, see the link under **Files** in the log entries.
 
+
+## Common usage scenarios
+The BCContainerHelper PowerShell module supports many scenarios that you might need as a developer. In this section, we highlight a few of them. 
+
+### Installing an app
+Uploading per-tenant extensions isn't supported in on-premises environments. If you want to install an app/extension using an **.app** file, then you can use the _Publish-BcContainerApp_ commandlet. 
+
+Use this example to get started:
+
+```powershell
+Publish-BcContainerApp -appFile <full path to file> -tenant <tenant name> -install -containerName <container name> 
+```
 
 ## See also
 
