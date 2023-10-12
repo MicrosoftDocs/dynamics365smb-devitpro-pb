@@ -41,9 +41,32 @@ The RecordRef that refers to a record in a table.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You typically use this method together with the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) method. The [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md)) runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the Execute method to get the parameter string and run the report.  
+You typically use this method together with the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) method. The [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md)) runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the Execute method to get the parameter string and run the report.  
 
- For [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) method topic.  
+For more information, see [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md).  
+
+> [!NOTE]  
+> Be careful crafting the string for the RunRequestPage parameter without using the RunRequestPage method. If the XML content is malformed, then a run-time error might occur when calling `Report.Execute`. 
+
+> [!NOTE]  
+> The `Report.Execute` method is not supported for reports running with an Excel Layout.
+
+
+## Example (using `Report::<object identifier>` syntax)
+
+As mentioned above, the `Report.Execute` method will throw a run-time error if no report with the supplied object ID exists. If you know the report object, a safe way to call Report.Execute is to use the `Report::<object identifier>` syntax as the compiler will tell you if the report object doesn't exist.  
+
+```AL
+procedure MyProcKnownReport()
+var
+    RequestPagePayload: Text;
+begin
+    RequestPagePayload := Report.RunRequestPage(Report::MyReport);
+    Report.Execute(Report::MyReport, RequestPagePayload);
+end;
+```
+
+
 
 ## See Also
 [Report Data Type](report-data-type.md)  
