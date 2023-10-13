@@ -7,7 +7,7 @@ ms.author: edupont
 ---
 |Issue type             |Site               |
 |-----------------------|-------------------|
-|Submit support request on behalf of your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online customers|Start at the [Business Central administration center](../administration/tenant-admin-center.md) where you can easily submit a support request in the Power Platform admin center|
+|Submit support request on behalf of your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online customers|Start at the [Business Central administration center](../administration/tenant-admin-center.md) where you can easily submit a support request in the Power Platform admin center. In the [Business Central administration center](../administration/tenant-admin-center.md), select the environment in which the issues has been found. Then, from the top menu, choose **Support** and **New Support Request**. This will redirect you to the Power Platform admin center where the request will be made.|
 |Report bug in a preview or beta version|The [MS Collaborate](/collaborate/) site|
 |Collaboration on the AL language and developer experience|The [AL Developer Preview](https://github.com/microsoft/al) GitHub repo|
 |As an ISV, report an issue in production code, such as a problem with Microsoft's application, upgrade, or telemetry|The [Partner Center Support site](https://partner.microsoft.com/support) - choose the **Marketplace Offers** category, and then choose the relevant category in the **Problem type** field, such as *Dynamics 365 Business Central Development >  Core Application issues*. You'll be asked to check resources and then to provide issue details.|

@@ -72,7 +72,7 @@ In both cases, the locking behavior is about what happens in a session after a r
 
 The feature is enabled by default, but you can turn it on or off using the **Enable Tri-State locking in AL** switch on the Feature Management page in Business Central. Changes take effect for users the next time they sign in to Business Central. [Learn more about enabling upcoming features ahead of time](../administration/feature-management.md).
 
-If you're using Business Central on-premises, the `EnableTriStateLocking` setting in the server configuration must also be set to `false` to enable tri-state locking. [Learn more about configuring the server](../administration/configure-server-instance.md#Database).
+If you're using Business Central on-premises, the `EnableTriStateLocking` setting in the server configuration must also be set to `true` to enable tri-state locking. [Learn more about configuring the server](../administration/configure-server-instance.md#Database).
 
 ## See also
 
