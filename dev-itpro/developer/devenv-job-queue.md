@@ -66,6 +66,10 @@ The session runs using the same user/credentials that are used when calling AL c
 
 For more information about assigning permissions, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions) in the business functionality help.
 
+## Job queues and performance
+
+[!INCLUDE[job_queue_performance](../includes/include-task-job-queue-performance.md)]
+
 ## Monitor and troubleshoot
 
 Business Central offers two ways to monitor the flow of job queues: Azure Application Insights and the Session Event table. These tools let you follow the execution of a job and investigate errors in failure codeunits.
