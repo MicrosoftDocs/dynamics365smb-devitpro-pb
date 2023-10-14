@@ -54,7 +54,19 @@ This method opens the request page for the specified report to allow the user to
 
 Because the request page runs in the context of where it was invoked from, users cannot bookmark a link to this page from the user interface.  
 
-## Example
+## Example (using `Report::<object identifier>` syntax)
+As mentioned above, the `Report.RunRequestPage` method will throw a runtime error if no report with the supplied object ID exists. If you know the report object, a safe way to call `Report.RunRequestPage` is to use the `Report::<object identifier>` syntax as the compiler will tell you if the report object doesn't exist.  
+
+```AL
+procedure RunRequestPageKnownReport()
+var
+    XmlParameters: Text;
+begin
+    XmlParameters := Report.RunRequestPage(Report::MyReport);
+end;
+```
+
+## Example (end to end scenario)
 
 This example illustrates how to use the `RunRequestPage` method to run the request page for report ID 206 Sales Invoice. The request page parameters are saved to a table, and then uses the parameters with the Execute, SaveAs, and Print methods to preview the report, save it as a PDF file, and print it.  
 
@@ -98,10 +110,9 @@ var
     CurrentUser: Code[100];
     Content: File;
     TempFileName: Text;
-
 begin
     // Use the Report.RunRequestPage method to run the request page to get report parameters  
-    XmlParameters := Report.RunRequestPage(206);  
+    XmlParameters := Report.RunRequestPage(Report::"Sales Invoice");  
     CurrentUser := UserId;  
     
     // Save the request page parameters to the database table  
@@ -134,14 +145,14 @@ begin
     // Use the Report.SaveAs method to save the report as a PDF file  
     Content.Create('TestFile.pdf');  
     Content.CreateOutStream(OStream);  
-    Report.SaveAs(206,XmlParameters,ReportFormat::Pdf,OStream);  
+    Report.SaveAs(Report::"Sales Invoice", XmlParameters,ReportFormat::Pdf,OStream);  
     Content.Close;  
     
     // Use the Report.Execute method to preview the report  
-    Report.Execute(206,XmlParameters);  
+    Report.Execute(Report::"Sales Invoice", XmlParameters);  
     
     // Use the Report.Print method to print the report  
-    Report.Print(206,XmlParameters);  
+    Report.Print(Report::"Sales Invoice", XmlParameters);  
 
 ```  
 
