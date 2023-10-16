@@ -18,6 +18,10 @@ ms.author: jswymer
 
 Updates of the base application and platform are managed by Microsoft. As an internal administrator or as a partner, you use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify the timing of updates for each environment and who receives [notifications of when an update is available](#notify). You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product. For more information, see [Major Updates and Minor Updates](update-rollout-timeline.md).  
 
+The following video gives an overview of how you can control when updates apply to your [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RW1dhH8]
+
 ## Set the update window for each environment
 
 The update window for an environment defines the hours during the day for the selected time zone in which the environment can be updated. When an update is rolling out&mdash;monthly or major update&mdash;it will be applied to an environment within the time frame that the update window defines.
