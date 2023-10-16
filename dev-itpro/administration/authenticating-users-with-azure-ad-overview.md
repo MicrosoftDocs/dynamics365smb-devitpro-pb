@@ -11,6 +11,8 @@ ms.author: jswymer
 ---
 # Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Microsoft Entra ID 
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Microsoft Entra ID is a cloud service that provides identity and access capabilities for applications. The applications can be cloud-based, like on Microsoft Azure and  Microsoft 365, and installed on-premises, like [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 The article describes the tasks involved in setting up Microsoft Entra authentication for authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users.

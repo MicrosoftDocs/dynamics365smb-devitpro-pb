@@ -12,6 +12,8 @@ ms.date: 02/24/2023
 ---
 # Environment Settings
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Allows you to manage environment-specific settings such as the AppInsights key or the update window. 
 
 ## Get Update Settings

@@ -22,6 +22,7 @@ The structure of a table has four sections:
 - The keys section contains the definitions of the keys that the table needs to support.
 - The final section details the triggers and code that can run on the table.
 
+## Table extensibility limitations
 > [!IMPORTANT]  
 > Only tables with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
 
@@ -30,6 +31,11 @@ The structure of a table has four sections:
 
 > [!IMPORTANT]  
 > System and virtual tables can't be extended. System tables are created in the ID range of 2.000.000.000 and above. For more information about object ranges, see [Object Ranges](devenv-object-ranges.md).
+
+## Table object limits 
+The table object has limitations that are mostly dictated by SQL Server, such as the maximum record size, number of fields, and the number of keys.
+
+For more information about current limitations on the table object, see [Object Specifications and Limitations](devenv-object-specifications-limitations.md)   
 
 ## Snippet support
 Typing the shortcut `ttable` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
@@ -108,3 +114,4 @@ The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform will autom
 [SqlTimestamp Property](properties/devenv-sqltimestamp-property.md)  
 [Table Keys](devenv-table-keys.md)  
 [Table, Table Fields, and Table Extension Properties](properties/devenv-table-properties.md)  
+[Object Specifications and Limitations](devenv-object-specifications-limitations.md)   

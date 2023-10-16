@@ -168,7 +168,7 @@ Now that we have now exposed the functions, the next step is to add tests. To do
 
 We will add the following new file under **System Tests/XmlWriter/src**, **XmlWriterTest.Codeunit.al**. 
 
-```
+```al
     codeunit 139911 "Xml Writer Test"
     {
         Subtype = Test;
@@ -206,6 +206,7 @@ We will add the following new file under **System Tests/XmlWriter/src**, **XmlWr
     }
 
 ```
+
 After running the tests successfully, changes are complete.
 
 #### Commit and push your changes and open a PR
@@ -215,7 +216,8 @@ After running the tests successfully, changes are complete.
 
 You can now go to your Github fork and open a pull request in the AlAppExtensions repository. 
 
-## See Also
+## See also
+
 [Create a .NET Wrapper Module](devenv-create-a-wrapper-module.md)  
 [Become a Contributor to Business Central](https://blogs.msdn.microsoft.com/nav/2018/08/28/become-a-contributor-to-business-central/)  
 ["Git" going with extensions](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions)  

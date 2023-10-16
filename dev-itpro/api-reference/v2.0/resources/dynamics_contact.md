@@ -35,7 +35,6 @@ Represents a contact in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |:----------|:----------|:-----------------|
 |[contactInformation](dynamics_contactinformation.md)|contactInformation |Gets the contactinformation of the contact.|
 |[contact](dynamics_contact.md)|NAV.contactBusinessRelation |Gets the contact of the contact.|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the contact.|
 |[picture](dynamics_picture.md)|picture |Gets the picture of the contact.|
 
 ## Properties

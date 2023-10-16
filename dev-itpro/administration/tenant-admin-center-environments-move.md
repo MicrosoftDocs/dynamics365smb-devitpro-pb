@@ -13,6 +13,8 @@ ms.author: jswymer
 
 # Move an Environment to another Microsoft Entra organization
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 In some cases, the Microsoft Entra organization (also known as the Microsoft Entra tenant) of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, such as the following:
 
 - Business entities merge.

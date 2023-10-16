@@ -13,6 +13,8 @@ ms.date: 01/03/2023
 
 # Environment Database Export
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Allows for the export of an environment's Azure database. Databases are exported to an Azure Storage account provided by you. There is a limit to the number of exports that can be done within a month as shown by the 'metrics' endpoint below.
 
 ### Required In-Product Permissions for Exporting an Environment Database

@@ -13,6 +13,8 @@ author: jswymer
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions can be developed to get secrets from Azure Keys Vaults. This article describes the tasks required to set up Azure Keys Vaults for storing extension secrets and configure them in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment.
 
 For more information about developing extensions with key vaults, see [Using Key Vault Secrets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault.md).

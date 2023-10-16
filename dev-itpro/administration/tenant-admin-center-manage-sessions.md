@@ -13,6 +13,8 @@ ms.author: jswymer
 
 # Managing Sessions in the Admin Center
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 For each environment in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can use the **Manage Sessions** page to view information about active sessions on an environment and cancel selected sessions.
 
 To open the page, select **Manage Sessions**. Use the **Show session details** check box to show more or fewer details.

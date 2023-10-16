@@ -36,6 +36,9 @@ The fastest (and least disruptive) way to get delta loads from [!INCLUDE[prod_sh
 
 Also consider this pattern: For each company, start by determining which tables that you load data from have new data. You can do this in an AL codeunit that you expose as a web service endpoint. Based on the result of this initial call, only call the APIs that you know will return data. This practice reduces the number of API calls you need to issue for your incremental loads. The impact of this optimization depends on the distribution of new data since last load.
 
+> [!NOTE]
+> Starting in Business Central 2023 release wave 2 (v23), delta links are deprecated and will be removed from the product in 2024 release wave 1 (v24). We recommend using webhooks as a replacement. For more information, see [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
+
 ## Tools for reading data
 
 For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, you can just read directly from the environment database. This option isn't available for [!INCLUDE[prod_short](includes/prod_short.md)] online, so establishing this type of integration could block you from migrating from on-premises to the online version. 

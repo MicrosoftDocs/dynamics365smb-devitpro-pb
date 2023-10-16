@@ -12,6 +12,8 @@ ms.author: jswymer
 ---
 # Analyzing Stopped Session Telemetry
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 In Business Central, a background session is session without a UI that runs a specified codeunit. Background sessions are started and stopped by calling the [StartSession](..\developer\methods-auto\session\session-startsession-integer-integer-string-table-method.md) and [StopSession](..\developer\methods-auto\session\session-stopsession-method.md) methods from AL. With Business Central online, sessions can be stopped by using the admin center, which indirectly calls the StopSession method. For more information, see [Managing Sessions](tenant-admin-center-manage-sessions.md).
 
 With Application Insights, you can record when sessions are stopped, either by direct calls to the StopSession method or from the admin center.

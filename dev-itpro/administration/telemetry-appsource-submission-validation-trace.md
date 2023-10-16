@@ -1,5 +1,5 @@
 ---
-title: Analyzing AppSource Submission Validation Trace Telemetry
+title: Analyzing AppSource submission validation trace telemetry
 description: Learn about the telemetry for publishing apps to AppSource from Partner Center.  
 author: jswymer
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.date: 08/01/2021
 ms.author: jswymer
 ---
 
-# Analyzing AppSource Submission Validation Telemetry
+# Analyzing AppSource submission validation telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 1, version 18.4, and later
 
@@ -19,7 +19,7 @@ When you submit an app to AppSource using Partner Center, it starts an automated
 
 If an app's set up for it, telemetry traces are emitted to and recorded in Application Insights. The data provides details about the success or failure of different phases of the validation. For more information about setting up telemetry for an app, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
 
-> [!Note]
+> [!NOTE]  
 > In order to start analyzing your validation results, use this troubleshooting guide [Dynamics 365 Business Central Troubleshooting Guide (TSG) - AppSource Submission Results (SaaS)](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/TroubleShootingGuides/D365BC%20Troubleshooting%20Guides%20(TSG)/content/AppSource-Submission-TSG.ipynb).
 
 ## Validation process overview

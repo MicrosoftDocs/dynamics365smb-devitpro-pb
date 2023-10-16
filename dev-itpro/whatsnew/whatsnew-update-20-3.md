@@ -14,6 +14,8 @@ author: EmmaNielsson
 
 # Update 20.3 for Microsoft Dynamics 365 Business Central online 2022 release wave 1
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Would you like to know what has changed in update 20.3? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we've gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes

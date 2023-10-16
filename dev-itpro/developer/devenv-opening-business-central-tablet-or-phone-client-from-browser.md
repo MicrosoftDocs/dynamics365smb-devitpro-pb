@@ -11,8 +11,10 @@ author: blrobl
 # Opening the Business Central Tablet or Phone Client from a Browser
 You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] by using a browser from a device that has a network connection. This can make it easier to test your solution during the design phase. <!--To be able to open the client in a browser you must know the name of the computer that is running the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] and the HTTP port that it is running on.-->
 
-> [!IMPORTANT]  
-> The steps in this article illustrates how you can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] in a browser. The syntax and options for opening [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser are the same; just replace *tablet* with *phone* in the examples later in this section.  
+The steps in this article illustrates how you can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] in a browser. The syntax and options for opening [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser are the same; just replace *tablet* with *phone* in the examples later in this section.  
+
+> [!IMPORTANT]
+> Opening phone and tablet apps directly in the browser should only be used for testing. It isn't a supported production scenario.
 
 ## To open [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] in a browser  
 

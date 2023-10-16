@@ -15,6 +15,8 @@ ms.author: jswymer
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 1, version 18.0 and later
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The table index trace gathers data when a index is added to, modified, or removed from a base table by a table extension.  
 
 In AL, an index is defined by a key, which can include one or more table fields. A key in a table extension object can include either fields from the base table or fields from the table extension object itself. A key that includes base tables fields is added as an index on the base table in the SQL database. For more information, see [Table Keys](../developer/devenv-table-keys.md).

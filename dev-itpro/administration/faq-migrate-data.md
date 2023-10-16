@@ -12,6 +12,8 @@ ms.author: jswymer
 
 # FAQ about migrating to Business Central online from on-premises solutions
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This section contains answers to frequently asked questions about migrating from on-premises solutions to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.  
 
 > [!TIP]
@@ -21,7 +23,7 @@ This section contains answers to frequently asked questions about migrating from
 
 [!INCLUDE [bc-cloud-products](../includes/bc-cloud-products.md)]
 
-[!INCLUDE [bc-cloud-nav](../includes/bc-cloud-nav.md)]
+For more information, see [Upgrading from Dynamics NAV to Business Central online](../administration/migrate-nav.md).
 
 <!-- - Dynamics SL 2018 CU 1-->
 

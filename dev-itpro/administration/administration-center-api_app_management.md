@@ -15,6 +15,8 @@ ms.date: 02/24/2023
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Manage the apps that are installed on the environment.
 
 ## Important Information before you get started
@@ -430,7 +432,7 @@ This Logic App runs a specified number of times a day (parameter in deployment p
 
 ### Prerequisites
 
-Business Central admin center API is configured for S2S authentication of Microsoft Entra apps. For more information, go to [Authenticate using service-to-service AAD Apps](administration-center-api.md#authenticate-using-service-to-service-aad-apps-client-credentials-flow).
+Business Central admin center API is configured for S2S authentication of Microsoft Entra apps. For more information, go to [Authenticate using service-to-service AAD Apps](administration-center-api.md#authenticate-using-service-to-service-microsoft-entra-apps-client-credentials-flow).
 
 ### Preparation
 

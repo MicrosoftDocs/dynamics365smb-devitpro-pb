@@ -13,6 +13,8 @@ ms.author: jswymer
 
 # Delegated Administrator Access to Business Central Online
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 As a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reselling partner, you must set up your employees to work in Partner Center, and you must assign employees to support your customers. When you request a reseller relationship with a customer, you can choose to include *delegated administration* privileges for Microsoft Entra ID and Microsoft 365 in the request email that you send to the customer.  
 
 > [!TIP]

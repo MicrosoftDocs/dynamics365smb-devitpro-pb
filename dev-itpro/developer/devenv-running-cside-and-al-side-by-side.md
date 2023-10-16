@@ -1,6 +1,6 @@
 ---
-title: "Running C/SIDE and AL Side-by-Side"
-description: "Description of how you can run both development environments side-by-side."
+title: Running C/SIDE and AL side-by-side
+description: Description of how you can run both the C/SIDE and the AL development environments side-by-side.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 06/03/2022
@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Run C/SIDE and AL Side-by-Side
+# Run C/SIDE and AL side-by-side
+
 [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises supports development using C/SIDE, AL, and Designer side-by-side. When new objects are added or changed in C/SIDE, these changes must be reflected in the symbol download in Visual Studio Code using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. To enable this reflection, a command and argument called `generatesymbolreference` has been added to finsql.exe and you can run it as illustrated below. 
 
 ## Generate symbols and compile all objects

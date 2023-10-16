@@ -38,6 +38,9 @@ Image = Report;
 
  On **RoleCenter** type pages, the image property does not apply to actions that are set up in the navigation bar or top-level actions in the action bar. These actions cannot be assigned in icon, or if they have icon by default, the icon cannot be changed. The property only applies to subgroups and child actions in the action bar.
 
+[!INCLUDE[available_icons](../includes/include-http-call-failure-reasons.md)]
+
 ## See Also
 
 [Properties](devenv-properties.md)   
+[Available icons](https://aka.ms/bcicons)   

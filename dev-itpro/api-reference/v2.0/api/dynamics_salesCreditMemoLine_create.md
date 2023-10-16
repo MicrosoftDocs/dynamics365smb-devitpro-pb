@@ -49,32 +49,19 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salesCreditMemos({
 Content-type: application/json
 
 {
-"id": "cd7b3ba0-bde3-ea11-aa60-000d3ad7cacb",
-"documentId": "cb7b3ba0-bde3-ea11-aa60-000d3ad7cacb",
-"sequence": 10000,
-"itemId": "fca5738a-44e3-ea11-bb43-000d3a2feca1",
-"accountId": "00000000-0000-0000-0000-000000000000",
-"lineType": "Item",
-"lineObjectNumber": "1896-S",
-"description": "ATHENS Desk",
-"unitOfMeasureId": "5ca6738a-44e3-ea11-bb43-000d3a2feca1",
-"unitOfMeasureCode": "PCS",
-"unitPrice": 1000.8,
-"quantity": 1,
-"discountAmount": 0,
-"discountPercent": 0,
-"discountAppliedBeforeTax": false,
-"amountExcludingTax": 1000.8,
-"taxCode": "FURNITURE",
-"taxPercent": 6.0002,
-"totalTaxAmount": 60.05,
-"amountIncludingTax": 1060.85,
-"invoiceDiscountAllocation": 0,
-"netAmount": 1000.8,
-"netTaxAmount": 60.05,
-"netAmountIncludingTax": 1060.85,
-"shipmentDate": "2020-08-21",
-"itemVariantId": "00000000-0000-0000-0000-000000000000"
+    "itemId": "fca5738a-44e3-ea11-bb43-000d3a2feca1",
+    "lineType": "Item",
+    "lineObjectNumber": "1896-S",
+    "description": "ATHENS Desk",
+    "unitOfMeasureId": "5ca6738a-44e3-ea11-bb43-000d3a2feca1",
+    "unitOfMeasureCode": "PCS",
+    "unitPrice": 1000.8,
+    "quantity": 1,
+    "discountAmount": 0,
+    "discountPercent": 0,
+    "taxCode": "FURNITURE",
+    "shipmentDate": "2020-08-21",
+    "itemVariantId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 

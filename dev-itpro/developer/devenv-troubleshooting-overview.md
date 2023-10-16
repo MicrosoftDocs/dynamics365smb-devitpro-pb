@@ -18,6 +18,7 @@ The following sections help you troubleshoot issues with [!INCLUDE[prod_short](.
 ## Troubleshooting in the client
 These tools provided in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client can help you gain insights on trends in application behavior, identify performance issues, database locks, and more. 
 
+- Investigate root causes for errors with [Copy details in the error dialog](devenv-error-dialog.md)
 - Investigate page data, filters, and load times with the [Page Inspector](/dynamics365/business-central/across-inspect-page)
 - See if the events you rely on are fired as expected with the [Event Recorder](devenv-events-discoverability.md)
 - Check for unexpected table sizes with [Tables Information](/dynamics365/business-central/admin-view-table-information)
@@ -32,6 +33,7 @@ These tools provided in the [!INCLUDE[prod_short](../developer/includes/prod_sho
 - Mitigate can't start profile configuration issues with [Troubleshooting profile configuration can't be started](devenv-troubleshooting-profile-configuration.md)
 - Verify user permissions with [Effective Permissions](/dynamics365/business-central/ui-define-granular-permissions)
 - Investigate issues with [Mobile App On-Premises](devenv-troubleshooting-the-mobile-app.md)
+- Investigate issues with [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md).
 
 
 ## Troubleshooting in AL
@@ -43,6 +45,7 @@ Use profiling combined with debugging in sandboxes, or snapshot debugging in pro
 - Investigate [Printer and Report Payloads](devenv-reports-troubleshoot-printing.md) when working with reporting
 - [Inspecting and Troubleshooting Pages](devenv-inspecting-pages.md) to help identify data issues
 - Identifying and working with [Performance Issues](../performance/performance-overview.md)
+- Investigate and troubleshoot from the web client with [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md).
 
 ## Troubleshooting with telemetry
 

@@ -54,6 +54,13 @@ param
 )
 
 $files = Import-Csv $CsvMappingFile -Delimiter $Delimiter
+
+$licenseText = 
+        "// ------------------------------------------------------------------------------------------------`r`n" +
+        "// Copyright (c) <insert copyright>.`r`n" + 
+        "// <Insert license>`r`n" + 
+        "// ------------------------------------------------------------------------------------------------`r`n"
+
 foreach ($file in $files) {
     $folder = $file.Folder
     $namespace = $file.Namespace
@@ -65,17 +72,17 @@ foreach ($file in $files) {
     foreach ($alFile in $alFiles) {
         $path = $alFile.FullName
         $content = Get-Content $path -Raw
-        $licenseText = "// ------------------------------------------------------------------------------------------------`r`n// Copyright (c) Microsoft Corporation. All rights reserved.`r`n// Licensed under the MIT License. See License.txt in the project root for license information.`r`n// ------------------------------------------------------------------------------------------------`r`n"
-        
-        if ($content.IndexOf($licenseText) -eq -1) { # The file doesn't contain license statement
+                             
+        if ($content.IndexOf($licenseText) -eq -1) { # The file doesn't a contain license statement
             if ($License -eq "Ignore") {
                 $content = $namespaceLine + $content
-                $content | Set-Content $path -NoNewline
-                continue
+            } 
+            else {$content = $licenseText + "`r`n" + $namespaceLine + $content # Add a license statement
             }
-            $content = $licenseText + $content # Add license statement
+        } 
+        else {
+            $content = $content.Replace($licenseText, $licenseText + "`r`n" + $namespaceLine) # Keep the license and add a namespace
         }
-        $content = $content.Replace($licenseText, $licenseText + "`r`n" + $namespaceLine) # Keep license and add namespace
 
         $content | Set-Content $path -NoNewline
     }
@@ -88,3 +95,4 @@ You're now ready to open Visual Studio Code and use the AL code actions to apply
 ## See also
 
 [Namespaces in AL](devenv-namespaces-overview.md)  
+[Programming in AL](devenv-programming-in-al.md)  
