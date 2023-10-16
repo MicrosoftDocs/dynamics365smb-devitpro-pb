@@ -95,6 +95,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Get the latest preview version and give feedback: [aka.ms/Collaborate](https://aka.ms/Collaborate) (learn how you join relevant engagements [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-getting-access-to-preview-bits))
 - Build solutions that link to Business Central mobile app: [aka.ms/BCProtocol](https://aka.ms/BCProtocol)
 - Troubleshoot issues with Business Central: [aka.ms/BCTroubleshoot](https://aka.ms/bctroubleshoot)
+- Browse the images/icons available for the action bar: [aka.ms/BCIcons](https://aka.ms/BCIcons)
 
 ## Developing apps for AppSource
 - AppSource marketing checklist: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)
