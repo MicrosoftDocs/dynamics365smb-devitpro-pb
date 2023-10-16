@@ -13,12 +13,15 @@ ms.author: jswymer
 
 # Inherent Permissions
 
-With inherent permissions, developers can now grant permissions to a method or event while code executes. As soon as the code execution is completed, permissions are revoked. Inherent permissions simplify the overall management and maintenance work of permission sets. With it, a specific AL method or event can get the elevated permissions necessary to finish the task at hand without getting permission errors. And it helps tighten overall security by limiting long-term user permissions and giving permissions to the code process instead.
+With inherent permissions, developers can grant permissions to a method or event while code executes. As soon as the code execution is completed, permissions are revoked. Inherent permissions simplify the overall management and maintenance work of permission sets. With it, a specific AL method or event can get the elevated permissions necessary to finish the task at hand without getting permission errors. And it helps tighten overall security by limiting long-term user permissions and giving permissions to the code process instead.
 
 Let’s say a salesperson wants to make a report that includes certain critical pieces of information. In the background, a method will run a query to fetch the information from the table holding classified data. With inherent permissions, instead of managing permissions for that salesperson, a developer can add the permission permanently into the specific code path. This method will be granted permissions for the given object, which in this case is a table. Now, whenever an authorized person runs this method, the needed permissions are in place to complete the request.
 
 >[!TIP]
 > It's better to use the inherent permissions for small dedicated procedures or system tasks that don't risk data exposure to users.
+
+> [!NOTE]
+> You can use inherent permissions only for objects within the same extension.
 
 ## Syntax
 
