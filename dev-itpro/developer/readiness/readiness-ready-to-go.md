@@ -37,7 +37,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) (Use #BCALHelp on Twitter for quick hints on how to do things) 
 - Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
 - Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [community.dynamics.com/business](https://community.dynamics.com/business) 
-- Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/product/business-central](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
+- Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://cloudblogs.microsoft.com/dynamics365/it/)
 - Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm)
 - Join the Business Central development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
 
