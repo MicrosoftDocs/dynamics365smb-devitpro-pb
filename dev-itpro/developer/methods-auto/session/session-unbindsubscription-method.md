@@ -49,22 +49,20 @@ The codeunit that contains the event subscribers.
 ## Example  
  The following sample code illustrates a typical use of the BindSubscription method.  
   
-```  
-Method MyFunction(….)  
-LocalVar  
-  SubScriberCodeunit5000;  
+```al
+procedure MyFunction()  
+var  
+    Subscriber: Codeunit Subscriber;  
 begin 
-  // Set global information on the subscriber codeunit if required  
-  // You can rely on the instance being the same as the one receiving the event subscriber call  
+    // Set global information on the subscriber codeunit if required  
+    // You can rely on the instance being the same as the one receiving the event subscriber call  
   
-  SubScriberCodeunit5000.MySetGlobalInfo(<info you can later test in the subscriber event method>)  
-  BindSubscription(SubscriberCodeunit5000);  
-  DoSomething(…);  // After binding, all subscriptions on SubscriberCodeunit5000 are "active".  
-  UNBindSubscription(SubscriberCodeunit888);  // Now deactivating again  
-  DoStuff(…);  // This time no events are raised inside SubscriberCodeunit888;  
-  
-end;  
-  
+    Subscriber.MySetGlobalInfo(123);
+    BindSubscription(Subscriber);  
+    DoSomething();  // After binding, all subscriptions on Subscriber are "active".  
+    UnbindSubscription(Subscriber);  // Now deactivating again  
+    DoStuff();  // This time no events are raised inside Subscriber;  
+end;   
 ```  
 
 ## See Also
