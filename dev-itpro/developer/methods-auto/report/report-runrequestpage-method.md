@@ -54,7 +54,7 @@ This method opens the request page for the specified report to allow the user to
 
 Because the request page runs in the context of where it was invoked from, users cannot bookmark a link to this page from the user interface.  
 
-## Example (using `Report::<object identifier>` syntax)
+## Example: Using `Report::<object ID>` syntax
 As mentioned above, the `Report.RunRequestPage` method will throw a runtime error if no report with the supplied object ID exists. If you know the report object, a safe way to call `Report.RunRequestPage` is to use the `Report::<object identifier>` syntax as the compiler will tell you if the report object doesn't exist.  
 
 ```AL
@@ -66,7 +66,7 @@ begin
 end;
 ```
 
-## Example (end to end scenario)
+## Example: End-to-end scenario
 
 This example illustrates how to use the `RunRequestPage` method to run the request page for report ID 206 Sales Invoice. The request page parameters are saved to a table, and then uses the parameters with the Execute, SaveAs, and Print methods to preview the report, save it as a PDF file, and print it.  
 
