@@ -27,6 +27,9 @@ We recommend that you install the latest cumulative update.
 
 ## Available updates for Business Central April 2019
 
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
+
+
 The following table lists the cumulative updates released for the Spring 2019 release of Business Central (version 14). The cumulative updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description. 
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK

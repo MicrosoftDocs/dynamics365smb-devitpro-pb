@@ -28,7 +28,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|none|Update 23.1| coming in November 2023| |
+|[5032755](https://support.microsoft.com/help/5032755)|Update 23.1 |October 2023|Application Build 23.1 </br>Platform Build 23.| 
 
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
