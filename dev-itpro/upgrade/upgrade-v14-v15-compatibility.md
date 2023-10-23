@@ -76,7 +76,7 @@ The following table lists the Business Central 20 versions and the minimum versi
 |[20.14](https://support.microsoft.com/help/5027890)|[21.9](https://support.microsoft.com/help/5029056) |[22.3](https://support.microsoft.com/help/5029057) |23.0|
 |[20.15](https://support.microsoft.com/help/5029055)|[21.10](https://support.microsoft.com/help/5029764) |[22.4](https://support.microsoft.com/help/5029765) |23.0|
 |[20.16](https://support.microsoft.com/help/5029763)|[21.11](https://support.microsoft.com/help/5031030) |[22.5](https://support.microsoft.com/help/5031031)|23.0|
-|[20.17](https://support.microsoft.com/help/5031029]|[21.12](https://support.microsoft.com/help/5031950) |[22.6](https://support.microsoft.com/help/5031951)|23.0|
+|[20.17](https://support.microsoft.com/help/5031029)|[21.12](https://support.microsoft.com/help/5031950) |[22.6](https://support.microsoft.com/help/5031951)|23.0|
 |[20.18](https://support.microsoft.com/help/5031949)|[21.13](https://support.microsoft.com/help/5032753)|[22.7](https://support.microsoft.com/help/5032754)|[23.1](https://support.microsoft.com/help/5032755)|
 
 To view a list of all available updates for Business Central 2022 Release Wave 1, go to [Released Updates for Microsoft Dynamics 365 Business Central 2022 Release Wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2022-release-wave-1-25be7a74-9771-4f0a-b9bd-ee1aac5a227d). 
