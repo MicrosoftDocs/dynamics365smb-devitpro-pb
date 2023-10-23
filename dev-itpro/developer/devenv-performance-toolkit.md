@@ -160,19 +160,21 @@ codeunit 50000 "Create Sales Order"
     trigger OnRun();
     var
         Customer: Record Customer;
-        *SalesHeader: Record "Sales Header";*
+        SalesHeader: Record "Sales Header";
     begin
         Customer.FindFirst();
-        *SalesHeader.Init();*
-        *SalesHeader."Document Type" := SalesHeader."Document Type"::Order;*
-        *SalesHeader.Insert(true);*
+        SalesHeader.Init();
+        SalesHeader."Document Type" := SalesHeader."Document Type"::Order;
+        SalesHeader.Insert(true);
         BCPTTestContext.EndScenario('Add Order');
         BCPTTestContext.UserWait();
         BCPTTestContext.StartScenario('Enter Account No.');
-        *SalesHeader.Validate("Sell-to Customer No.", Customer."No.");*
-        *SalesHeader.Modify(true);*
+        SalesHeader.Validate("Sell-to Customer No.", Customer."No.");
+        SalesHeader.Modify(true);
         BCPTTestContext.EndScenario('Enter Account No.');
         BCPTTestContext.UserWait();
+    end;
+}
 ```
 
 To interact with pages and make the tests more realistic, define a codeunit of the subtype **Test** and use [Test Pages](devenv-testing-pages.md). The following code example shows the main difference between normal and test codeunits.
@@ -180,7 +182,7 @@ To interact with pages and make the tests more realistic, define a codeunit of t
 ```al
 codeunit 50000 "Create Sales Order"
 {
-    *Subtype = Test;*
+    Subtype = Test;
 
     var
         BCPTTestContext: Codeunit "BCPT Test Context";
@@ -188,17 +190,19 @@ codeunit 50000 "Create Sales Order"
     trigger OnRun();
     var
         Customer: Record Customer;
-        *SalesOrder: TestPage "Sales Order";*
+        SalesOrder: TestPage "Sales Order";
     begin
         Customer.FindFirst();
-        *SalesOrder.OpenNew();*
-        *SalesOrder."No.".SetValue('');*
+        SalesOrder.OpenNew();
+        SalesOrder."No.".SetValue('');
         BCPTTestContext.EndScenario('Add Order');
         BCPTTestContext.UserWait();
         BCPTTestContext.StartScenario('Enter Account No.');
-        *SalesOrder."Sell-to Customer No.".SetValue(Customer."No.");*
+        SalesOrder."Sell-to Customer No.".SetValue(Customer."No.");
         BCPTTestContext.EndScenario('Enter Account No.');
         BCPTTestContext.UserWait();
+    end;
+}
 ```
 
 > [!TIP]  
@@ -253,9 +257,7 @@ enumextension 50000 "Test Codeunits with Params" extends "BCPT Test Param. Enum"
     {
         Implementation = "BCPT Test Param. Provider" = "Create PO with N Lines";
     }
-    ...
 }
-
 ```
 
 Learn more about writing test scenarios at [Testing the Application Overview](devenv-testing-application.md).

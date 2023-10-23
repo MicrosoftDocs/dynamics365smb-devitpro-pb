@@ -358,7 +358,7 @@
 ## Migrate to Business Central online
 ### [Introduction](administration/migrate-data.md)
 <!--### [Understand Data Migration](administration/migrate-data-overview.md)-->
-### From Business Central on-premises
+### Migrate from Business Central on-premises
 #### [End-to-end overview](administration/migrate-business-central-on-premises.md)
 #### [Managing cloud migration](administration/migration-manage.md)
 #### Prepare
@@ -379,7 +379,9 @@
 ##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
 #### [Run data upgrade](administration/migration-data-upgrade.md)
 #### [Complete cloud migration](administration/migration-finish.md)  
-### From Dynamics GP
+### Migrate from Dynamics NAV
+#### [Migrate from Dynamics NAV to Business Central online](administration/migrate-nav.md)
+### Migrate from Dynamics GP
 #### [End-to-end overview](administration/migrate-gp-overview.md)
 #### [Managing cloud migration](administration/migration-manage.md)
 #### [Prerequisites](administration/cloud-migration-prerequisites-gp.md)
@@ -608,6 +610,7 @@
 ### Error handling
 #### [Error handling](developer/devenv-al-error-handling.md)
 #### [Understanding the error dialog](developer/devenv-error-dialog.md)
+#### [User experience guidelines for errors](developer/devenv-error-handling-guidelines.md)
 #### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md)
 #### [Collecting errors](developer/devenv-error-collection.md)
 #### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
@@ -983,6 +986,7 @@
 ##### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
 ##### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
 ##### [Extending Currency Exchange Rate Adjustments](developer/devenv-extend-exchange-rates.md)
+##### [Extending e-documents functionality](developer/devenv-extend-edocuments.md)
 
 ### Using events 
 #### [Event types](developer/devenv-event-types.md)
@@ -1096,22 +1100,6 @@
 
 ## DevOps with AL-Go for GitHub
 ### [AL-Go overview](al-go/algo-overview.md)
-### [Create a new per-tenant extension and start developing in Visual Studio Code](al-go/algo-get-started.md)
-### [Add a test app to an existing project](al-go/algo-add-test-app.md)
-### [Register a customer sandbox environment for continuous deployment using S2S](al-go/algo-register-sandbox-env.md)
-### [Create a release of your application](al-go/algo-create-release-app.md)
-### [Register a customer production environment for manual deployment](al-go/algo-register-cust-prod-env.md)
-### [Update AL-Go system files](al-go/algo-update-system-files.md)
-### [Use Azure Key Vault for secrets with AL-Go](al-go/algo-enable-keyvault-app-development.md)
-### [Create online development environment from Visual Studio Code](al-go/algo-create-online-dev-env-vscode.md)
-### [Create online development environment from GitHub](al-go/algo-create-online-dev-env-github.md)
-### [Set up CI/CD for an existing per-tenant extension](al-go/algo-setup-cicd-existing-pte.md)
-### [Set up CI/CD for an existing AppSource app](al-go/algo-setup-cicd-existing-app.md)
-### [Enable key vault access for your AppSource app during development and/or test](al-go/algo-enable-keyvault-app-development.md)
-### [Set up your own GitHub Runner to increase build performance](al-go/algo-setup-github-runner-performance.md)
-### [Introducing a dependency to another GitHub repository](al-go/algo-dependency-app-github.md)
-### [Enabling telemetry for AL-Go workflows and actions](al-go/algo-enabling-telemetry.md)
-
 
 ## Troubleshooting
 ### [Overview](developer/devenv-troubleshooting-overview.md)
@@ -1441,7 +1429,7 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
-#### [2023 release wave 1 on-premises updates](deployment/update-versions-23.md)
+#### [2023 release wave 2 on-premises updates](deployment/update-versions-23.md)
 #### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
 #### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
