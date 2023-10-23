@@ -30,7 +30,8 @@ The following table lists the Business Central 22 versions and the minimum versi
 |Version 21|Version 22|
 ----------|----------|
 |22.0 to 22.5|[23.0](https://www.microsoft.com/en-us/download/details.aspx?id=105617)  |
-|[22.6](https://support.microsoft.com/help/5031951)<sup>[\[1\]](#1)</sup> |23.1 |
+|[22.6](https://support.microsoft.com/help/5031951) |[23.1](https://support.microsoft.com/help/5032755)|
+|[22.7](https://support.microsoft.com/help/5032754)<sup>[\[1\]](#1)</sup> |23.2 |
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
@@ -47,7 +48,8 @@ The following table lists the Business Central 21 versions and the minimum versi
 |[21.9](https://support.microsoft.com/help/5029056)|[22.4](https://support.microsoft.com/help/5029765)|23.0|
 |[21.10](https://support.microsoft.com/help/5029764)|[22.5](https://support.microsoft.com/help/5031031)|23.0|
 |[21.11](https://support.microsoft.com/help/5031030)|[22.6](https://support.microsoft.com/help/5031951)| 23.0|
-|[21.12](https://support.microsoft.com/help/5031950)<sup>[\[1\]](#1)</sup>|22.7| 23.1|
+|[21.12](https://support.microsoft.com/help/5031950)|[22.7](https://support.microsoft.com/help/5032754)| [23.1](https://support.microsoft.com/help/5032755)|
+|[21.13](https://support.microsoft.com/help/5032753)<sup>[\[1\]](#1)</sup>|22.8 |23.2 |
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
@@ -70,7 +72,7 @@ The following table lists the Business Central 20 versions and the minimum versi
 |[20.15](https://support.microsoft.com/help/5029055)|[21.10](https://support.microsoft.com/help/5029764) |[22.4](https://support.microsoft.com/help/5029765) |23.0|
 |[20.16](https://support.microsoft.com/help/5029763)|[21.11](https://support.microsoft.com/help/5031030) |[22.5](https://support.microsoft.com/help/5031031)|23.0|
 |[20.17](https://support.microsoft.com/help/5031029|[21.12](https://support.microsoft.com/help/5031950) |[22.6](https://support.microsoft.com/help/5031951)|23.0|
-|[20.18](https://support.microsoft.com/help/5031949)<sup>[\[1\]](#1)</sup>|21.13 |22.7|23.1|
+|[20.18](https://support.microsoft.com/help/5031949)|[21.13](https://support.microsoft.com/help/5032753)|[22.7](https://support.microsoft.com/help/5032754)|[23.1](https://support.microsoft.com/help/5032755)|
 
 [!INCLUDE [upgrade-20](../includes/upgrade-20.md)]
 
@@ -258,7 +260,7 @@ The following table lists the Business Central 14 versions and the minimum versi
 |[14.50 (cumulative update 49)](https://support.microsoft.com/help/5029054)|None|None|None|None|None|[20.16](https://support.microsoft.com/help/5029763)|[21.10](https://support.microsoft.com/help/5029764) |[22.4](https://support.microsoft.com/help/5029765)|23.0|
 |[14.51 (cumulative update 50)](https://support.microsoft.com/help/5029762)|None|None|None|None|None|[20.17](https://support.microsoft.com/help/5031029) |[21.11](https://support.microsoft.com/help/5031030) |[22.5](https://support.microsoft.com/help/5031031)|23.0|
 |[14.52 (cumulative update 51)](https://support.microsoft.com/help/5029762)|None|None|None|None|None|[20.18](https://support.microsoft.com/help/5031949)|[21.12](https://support.microsoft.com/help/5031950) |[22.6](https://support.microsoft.com/help/5031951)|23.0|
-|[14.53 (cumulative update 52)](https://support.microsoft.com/help/5031948)<sup>[\[1\]](#1)</sup>|None|None|None|None|None|None|21.13|22.7|23.1|
+|[14.53 (cumulative update 52)](https://support.microsoft.com/help/5031948)|None|None|None|None|None|None|[21.13](https://support.microsoft.com/help/5032753)|[22.7](https://support.microsoft.com/help/5032754)| [23.1](https://support.microsoft.com/help/5032755)|
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)] 
 
