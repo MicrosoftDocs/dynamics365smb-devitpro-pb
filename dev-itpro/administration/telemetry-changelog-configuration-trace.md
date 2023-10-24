@@ -108,7 +108,7 @@ Occurs when changelog configuration for a field is changed.
 |alTableCaption| Specifies the name of the table where the changed field is included. |
 |alFieldNumber | Specifies the ID of the field to be logged. |
 |alFieldCaption| Specifies the name of the field to be logged.|
-|alLogInsertion| Is insertions logged? (**Yes**|**No**) |
+|alLogInsertion| Is insertions logged? (**Yes** or **No**) |
 |alLogInsertionOld| Was insertions logged before? (**Yes** or **No**) |
 |alLogModification| Is data modifications logged? (**Yes** or **No**) |
 |alLogModificationOld| Was data modifications logged before? (**Yes** or **No**) |
