@@ -37,7 +37,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) (Use #BCALHelp on Twitter for quick hints on how to do things) 
 - Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
 - Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [community.dynamics.com/business](https://community.dynamics.com/business) 
-- Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/product/business-central](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
+- Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://cloudblogs.microsoft.com/dynamics365/it/)
 - Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm)
 - Join the Business Central development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
 
@@ -95,6 +95,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Get the latest preview version and give feedback: [aka.ms/Collaborate](https://aka.ms/Collaborate) (learn how you join relevant engagements [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-getting-access-to-preview-bits))
 - Build solutions that link to Business Central mobile app: [aka.ms/BCProtocol](https://aka.ms/BCProtocol)
 - Troubleshoot issues with Business Central: [aka.ms/BCTroubleshoot](https://aka.ms/bctroubleshoot)
+- Browse the images/icons available for the action bar: [aka.ms/BCIcons](https://aka.ms/BCIcons)
 
 ## Developing apps for AppSource
 - AppSource marketing checklist: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)
