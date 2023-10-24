@@ -19,7 +19,7 @@ ms.author: kepontop
 
 The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] change log feature lets you track direct modifications a user makes to data in the database. You specify each table and field that you want the system to log, and then you activate the change log. The change log is based on changes that are made to data in the tables that you track. 
 
-For more information about the change log feature, see [Auditing Changes in Business Central](https://learn.microsoft.com/en-gb/dynamics365/business-central/across-log-changes).
+For more information about the change log feature, see [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes).
 
 
 Telemetry is logged for the following changes to the configuration of the change log:
@@ -93,7 +93,7 @@ Occurs when changelog configuration for a field is changed.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Field logging changed in changelog configuration**|
+|message|**Field logging changed in changelog configuration** |
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -197,7 +197,7 @@ traces
 ```
 
 ## See also
-[Auditing Changes in Business Central](dynamics365/business-central/across-log-changes)
+[Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes)
 [Field monitoring telemetry](telemetry-field-monitoring-trace.md)
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
