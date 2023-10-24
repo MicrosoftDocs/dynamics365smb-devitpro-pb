@@ -65,7 +65,7 @@ If you customize or extend [!INCLUDE[prod_short](includes/prod_short.md)], you a
 
 ### Dynamics 365 implementation guidance
 
-Microsoft also provides content that can help you get starated as a consultant, and you can find resources to help your implementation project. The [Dynamics 365 guidance hub](/dynamics365/guidance/) hosts non-product-specific implementation guidance, including [descriptions of business processes](/dynamics365/guidance/business-processes/overview). Learn more at [What is Dynamics 365 guidance?](/dynamics365/guidance/overview).  
+Microsoft also provides content that can help you get started as a consultant, and you can find resources to help your implementation project. The [Dynamics 365 guidance hub](/dynamics365/guidance/) hosts non-product-specific implementation guidance, including [descriptions of business processes](/dynamics365/guidance/business-processes/overview). Learn more at [What is Dynamics 365 guidance?](/dynamics365/guidance/overview).  
 
 ## Support
 
