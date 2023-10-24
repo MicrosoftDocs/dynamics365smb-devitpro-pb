@@ -196,6 +196,10 @@ traces
 , UsertelemetryId = user_Id
 ```
 
+## Performance effect of enabling change logging on a table
+
+[!INCLUDE[change_logging_performance](../includes/change_logging_performance.md)]
+
 ## See also
 [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes)  
 [Field monitoring telemetry](telemetry-field-monitoring-trace.md)  
