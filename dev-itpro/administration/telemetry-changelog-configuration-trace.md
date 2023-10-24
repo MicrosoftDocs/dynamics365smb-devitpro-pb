@@ -56,7 +56,7 @@ Occurs when a field is added to be tracked in the changelog
 |alLogDeletion| Is deletions logged? (**Yes** or **No**)|
 
 
-### Sample KQL code 
+### Sample KQL code (field added)
 This KQL code can help you get started analyzing change log telemetry for added fields or if you want to alert on these changes.
 
 ```kql
@@ -116,7 +116,7 @@ Occurs when changelog configuration for a field is changed.
 |alLogDeletionOld| Was deletions logged before? (**Yes** or **No**)|
 
 
-### Sample KQL code 
+### Sample KQL code (field logging changed)
 This KQL code can help you get started analyzing change log telemetry for changed logging of fields or if you want to alert on these changes.
 
 ```kql
@@ -172,7 +172,7 @@ Occurs when a field is removed for being tracked in the changelog.
 |alFieldCaption| Specifies the name of the field to no longer be logged.|
 
 
-### Sample KQL code 
+### Sample KQL code (field removed)
 This KQL code can help you get started analyzing change log telemetry for removed fields or if you want to alert on these changes.
 
 ```kql
