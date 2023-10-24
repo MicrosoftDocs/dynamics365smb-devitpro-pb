@@ -3,7 +3,7 @@ title: Technical validation FAQ
 description: Describes the most common questions when submitting your app to AppSource for Business Central.
 author: qutreson
 ms.custom: na
-ms.date: 08/24/2023
+ms.date: 10/24/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
@@ -77,22 +77,22 @@ We don't run a manual validation of the apps anymore. Instead, we rely on you to
 
 ### When are my apps ready to be installed in my Business Central environment?
 
-Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation in [!INCLUDE[prod_short](../includes/prod_short.md)].
+Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation on all [!INCLUDE[prod_short](../includes/prod_short.md)] environments from the AppSource marketplace.
 
-[!INCLUDE[prod_short](../includes/prod_short.md)] currently doesn't support installing offers at the "Preview creation" step.
+Selected customers can also install the Preview version of the extensions in your submission after the "Preview creation" step. In order to trigger the install, customers must use the URL `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` where `[TenantID]` is the Microsoft Entry ID of their environment, `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission. For more information about AppSource app preview, refer to the dedicated section below.
 
 ### When should I include my library apps as part of my submission?
 
 You aren't required to always include the dependencies of your extension as part of your submission.
 
-You're only required to include the dependencies for your extension as part of your submission if you're submitting a newer version for them. If you don't include them in your submission, they'll be downloaded automatically if they're available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries/regions.
+You're only required to include the dependencies for your extension as part of your submission if you're submitting a newer version for them. If you don't include them in your submission, they'll be downloaded automatically if they're publicly available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries/regions.
 
 > [!NOTE]  
 > If you include the dependencies of your extension as part of the submission, these dependency versions will be used during the validation, even if there are higher versions already available in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-If you didn't include the dependencies for your app and they aren't available, your submission will fail during the "Automated Application Validation" stage. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
+If you didn't include the dependencies for your app and they aren't publicly available, your submission will fail during the "Automated Application Validation" stage. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
 
-If you receive an error with the diagnostic code `AVS0107` and a message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you've already published another .app file for this extension to [!INCLUDE[prod_short](../includes/prod_short.md)] as part of a previous submission. This can happen if you submit a .app file with different content, or created by a different build (each .app file created has a specific build ID stamped, so building multiple times the same project results in .app files with different build IDs). If this version of the library is already available for all countries/regions targeted by your submission, you can just remove the extension from the submission. If you're making your library available in new countries/regions, you should use the .app file that has already been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] or increase the version number in the manifest of the extension (the app.json file).
+If you receive an error with the diagnostic code `AVS0107` and a message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you've already published another .app file for this extension to [!INCLUDE[prod_short](../includes/prod_short.md)] as part of a previous submission. This can happen if you submit a .app file with different content, or created by a different build (each .app file created has a specific build ID stamped, so building multiple times the same project results in .app files with different build IDs). If this version of the library is already available for all countries/regions targeted by your submission, you can just remove the extension from the submission. If you're making your library available in new countries/regions, you should use the .app file that has already been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] or increase the version number in the manifest of the extension (the app.json file). Note that all submitted versions that passed the "Automated Application Validation" are considered in the content validation check, even if they were not made publicly available
 
 ### My app failed at the "Automated application validation" stage, what do I do next?
 
@@ -137,67 +137,37 @@ If your submission failed at another stage than "Automated application validatio
 
 For questions like what is qualified as a hotfix submission or what kind of changes can't be part of a hotfix, see [Hotfixing an AppSource app](devenv-hotfixing-appsource-app.md)
 
-<!--
-We're defining as `hotfix` the submission of a new version of an AppSource extension which will not become the latest version available in AppSource. 
+## Questions about AppSource app Previews
 
-For example, if you have version 2.0.0.0 of your extension available in AppSource, and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered a hotfix because 1.5.0.0 will not become the latest version available.
+### What should I do to enable Previews of my AppSource offers?
 
-> [!Important]  
-> When submitting a hotfix, you must not update the version of your offer in Partner Center to match the hotfix version submitted, because the version in Partner Center is shown on the AppSource marketplace listing, which is meant to show the latest version.
+Preview support is now enabled for all submissions of [!INCLUDE[prod_short](../includes/prod_short.md)] offers. It uses the preview key specified on your offer in Partner Center under `Availability > Preview Audience > Hide Key`. Partner Center automatically generates a key when creating a new offer, but you can override it.
 
-> [!Note]  
-> The concept of hotfix is tied to the country/region for which your apps version are available. If you have different versions of your apps on some countries/regions, your submission might be a hotfix for one country, but not for another one. However, we generally do not recommend having different versions per country.
+### On which environments can I install preview versions?
 
-### Against which releases is a hotfix submission validated?
+Preview versions can be installed on Sandbox environments running on [!INCLUDE[prod_short](../includes/prod_short.md)] 2023 release wave 2, or newer.
 
-When submitting a hotfix of your AppSource extension, the service will automatically detect the next version available and for which release of Business Central it's available. The service will then validate your submission up to that release. The minimum release targeted by the submission is computed based on the `application` property similarly to any other submission.
+### How can I install preview versions for selected customers?
 
-For example, if you have version 2.0.0.0 of your extension available in AppSource targeting Business Central version 21.0, and you submit a new version 1.5.0.0 with `application` set to 19.0.0.0, then version 1.5.0.0 will be validated for all Business Central releases from 19.0.0.0 (included) to 21.0.0.0 (excluded).
+Selected customers can install the preview version of the extensions in your submission after the "Preview creation" step of the submission flow in Partner Center. In order to trigger the install, customers must use the URL `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` where `[TenantID]` is the Microsoft Entry ID of their environment, `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission. For more information about AppSource app preview, refer to the dedicated section below.
 
-### What is the additional validation done for a hotfix submission?
+### Is the preview key per submission or per offer?
 
-In order to make sure your customer can upgrade from your hotfix version to the next version available in AppSource, we're validating the next version of your extension for breaking changes with your hotfix version.
+The preview key specified in Partner Center under `Availability > Preview Audience > Hide Key` **at the time of the submission** is the one that must be used by customers to install this preview version. 
 
-For example, if you have versions 1.0.0.0 and 2.0.0.0 of your app in AppSource, and you submit a new version 1.5.0.0, the technical validation will verify that:
-- there are no breaking changes between 1.0.0.0 and 1.5.0.0,
-- there are no breaking changes between 1.5.0.0 and 2.0.0.0.
+If you change the preview key for your offer in Partner Center, the submitted preview version won't be automatically updated and will still use the previous preview key. For example, if you submit version 1.0.0.0 with the preview key `key-1`, then version 1.0.0.0 can be installed by customer that add the key `key-1` in the install URL. If you change the preview key for your offer in Partner Center to `key-2`, this key won't be used until you start a new submission. If you submit version 1.0.0.0 again, customers will be able to install it using either `key-1` or `key-2`. If you submit version 2.0.0.0, then customers will be able to install it with version `key-2` only.
 
-### What kind of changes can't be part of a hotfix?
+Similarly, if you submitted the same library version 1.0.0.0 as part of two offers using two separate preview keys `key-1` and `key-2`, customers will be able to use either `key-1` or `key-2` to install the library on their environment.
 
-Since the AppSourceCop will validate for breaking change the next version of your extension against the version you have submitted, you can modify the content of your procedure, but you can't add new AL objects or new elements (procedure, actions, fields, etc) to your extension's public API unless they are also part of the next version, or obsolete pending (except for table and table fields).
+### Are preview versions also validated for breaking changes?
 
-For example, let's consider that you have versions 1.0.0.0 and 2.0.0.0 of your app in AppSource.
+Preview versions are validated for breaking changes against the latest publicly available app. However, preview versions are not used as baseline for validation of breaking changes of other submissions.
 
-Version 1.0.0.0 of your extension is defined as follows:
-```al
-codeunit 1000000 MyCodeunit
-{
-    procedure MyPublicProcedureFromV1()
-    begin
-    end;
-}
-```
+For example, if you have version 1.0.0.0 as publicly available in AppSource and you submit version 2.0.0.0, then version 2.0.0.0 will be validated for breaking change against version 1.0.0.0. If you do not press "Go Live" for your submission of version 2.0.0.0, and decide to start a new submission with version 2.1.0.0, then version 2.1.0.0 will be validated for breaking change against 1.0.0.0.
 
-Version 2.0.0.0 of your extension is defined as follows:
-```al
-codeunit 1000000 MyCodeunit
-{
-    procedure MyPublicProcedureFromV1()
-    begin
-    end;
+### Can the submission for one offer depend on preview versions of libraries from another offer?
 
-    procedure MyPublicProcedureFromV2()
-    begin
-    end;
-}
-```
-
-If you submit a new version 1.5.0.0, you're then allowed to add the following procedures:
-- `local procedure MyNewLocalProcedure()` because it's not public,
-- `[Obsolete] procedure MyNewObsoleteProcedure()` because it's obsolete pending,
-- `MyPublicProcedureFromV2()` because it's already defined in the next version.
-
-However, you're not allowed to define a new procedure `procedure MyNewPublicProcedure()`, because the service will detect that upgrading from version to 1.5.0.0 to version 2.0.0.0 results in the deletion of a public procedure. -->
+Dependencies which are not included in the submission will be downloaded automatically if they're publicly available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries/regions. If you didn't include the dependencies for your app and they are not available or if they are only available as Preview, your submission will fail during the "Automated Application Validation" stage. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
 
 ## Questions about Azure Application Insights usage during AppSource submissions
 
