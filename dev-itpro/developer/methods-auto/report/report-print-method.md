@@ -16,21 +16,21 @@ author: SusanneWindfeldPedersen
 # Report.Print(Integer, Text [, Text] [, RecordRef]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RUNREQUESTPAGE method call.
+Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a Report.RunRequestPage method call.
 
 
 ## Syntax
 ```AL
- Report.Print(Number: Integer, Parameters: Text [, PrinterName: Text] [, RecordRef: RecordRef])
+ Report.Print(ObjectId: Integer, Parameters: Text [, PrinterName: Text] [, RecordRef: RecordRef])
 ```
 ## Parameters
-*Number*  
+*ObjectId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report that you want to print. If the report that you specify does not exist, then a run-time error occurs.  
 
 *Parameters*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RUNREQUESTPAGE method call.  
+A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a Report.RunRequestPage method call.  
 
 *[Optional] PrinterName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
