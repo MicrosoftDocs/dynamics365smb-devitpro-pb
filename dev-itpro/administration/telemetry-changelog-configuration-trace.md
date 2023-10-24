@@ -197,8 +197,8 @@ traces
 ```
 
 ## See also
-[Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes)
-[Field monitoring telemetry](telemetry-field-monitoring-trace.md)
-[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
+[Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes)  
+[Field monitoring telemetry](telemetry-field-monitoring-trace.md)  
+[Monitoring and Analyzing Telemetry](telemetry-overview.md)   
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
-[Alert on telemetry](telemetry-alert.md)
+[Alert on telemetry](telemetry-alert.md)   
