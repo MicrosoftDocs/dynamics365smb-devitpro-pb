@@ -51,9 +51,9 @@ Occurs when a field is added to be tracked in the changelog
 |alTableCaption| Specifies the name of the table where the changed field is included. |
 |alFieldNumber | Specifies the ID of the field to be logged. |
 |alFieldCaption| Specifies the name of the field to be logged.|
-|alLogInsertion| Is insertions logged? (**Yes**|**No**) |
-|alLogModification| Is data modifications logged? (**Yes**|**No**) |
-|alLogDeletion| Is deletions logged? (**Yes**|**No**)|
+|alLogInsertion| Is insertions logged? (**Yes** or **No**) |
+|alLogModification| Is data modifications logged? (**Yes** or **No**) |
+|alLogDeletion| Is deletions logged? (**Yes** or **No**)|
 
 
 ### Sample KQL code 
@@ -109,11 +109,11 @@ Occurs when changelog configuration for a field is changed.
 |alFieldNumber | Specifies the ID of the field to be logged. |
 |alFieldCaption| Specifies the name of the field to be logged.|
 |alLogInsertion| Is insertions logged? (**Yes**|**No**) |
-|alLogInsertionOld| Was insertions logged before? (**Yes**|**No**) |
-|alLogModification| Is data modifications logged? (**Yes**|**No**) |
-|alLogModificationOld| Was data modifications logged before? (**Yes**|**No**) |
-|alLogDeletion| Is deletions logged? (**Yes**|**No**)|
-|alLogDeletionOld| Was deletions logged before? (**Yes**|**No**)|
+|alLogInsertionOld| Was insertions logged before? (**Yes** or **No**) |
+|alLogModification| Is data modifications logged? (**Yes** or **No**) |
+|alLogModificationOld| Was data modifications logged before? (**Yes** or **No**) |
+|alLogDeletion| Is deletions logged? (**Yes** or **No**)|
+|alLogDeletionOld| Was deletions logged before? (**Yes** or **No**)|
 
 
 ### Sample KQL code 
