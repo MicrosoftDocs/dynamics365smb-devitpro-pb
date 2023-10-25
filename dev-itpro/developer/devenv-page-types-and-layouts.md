@@ -1,5 +1,5 @@
 ---
-title: Page Types and Layouts
+title: Page types and layouts
 description: Understanding page types to be able to create good user experience in Business Central.
 author: jacobwj
 ms.custom: bap-template
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: dynamics365-business-central
 ---
 
-# Page Types and Layouts
+# Page types and layouts
 
 Understanding how [!INCLUDE[prod_short](includes/prod_short.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface.
 
