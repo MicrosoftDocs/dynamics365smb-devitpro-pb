@@ -15,7 +15,6 @@ Are you a Microsoft partner working with Business Central and looking for releva
 
 ## Hot topics right now
 - Register for the Business Central Launch Event on [aka.ms/BCLE](https://aka.ms/BCLE)
-- Access Business Central with your Microsoft 365 license. Read about it [here](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
 - Subscribe to the Microsoft Dynamics 365 Business Central channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
 
 ## Latest release and updates  
