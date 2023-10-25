@@ -56,12 +56,11 @@ If not, you have until end of January 2024 to watch the opening session and cons
 
 During November, we will host the following calls, which you can already register for today:
 
-**November 14:** Cloud Migration
-**November 21:** Mobile app and barcode scanning
+- **November 14:** Cloud Migration
+- **November 21:** Mobile app and barcode scanning
 
-- Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
-
-- Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
+Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
+Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
 ### Follow our new YouTube channel  
 We're excited to announce that we're on YouTube now! Follow along as we're posting how to videos, Business Central Launch Event sessions, and much more! 
