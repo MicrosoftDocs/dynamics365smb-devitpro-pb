@@ -1,68 +1,71 @@
 ---
-title: "Update 22.5 for Microsoft Dynamics 365 Business Central 2023 Release Wave 1"
-description: Get an overview of new and changed capabilities in the 22.5 update of Business Central online, which is part of 2023 release wave 1.
+title: "Update 23.1 for Microsoft Dynamics 365 Business Central 2023 Release Wave 2"
+description: Get an overview of new and changed capabilities in the 23.1 update of Business Central online, which is part of 2023 release wave 2.
 ms.author: a-enielsson
 ms.custom: na
-ms.date: 08/29/2023
+ms.date: 10/25/2023
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: EmmaNielsson
 ---
 
-# Update 22.5 for Microsoft Dynamics 365 Business Central online 2023 release wave 1
+# Update 23.1 for Microsoft Dynamics 365 Business Central online 2023 release wave 2
 
-Would you like to know what has changed in update 22.5? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links that you might find interesting.
+Would you like to know what has changed in update 23.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links that you might find interesting.
 
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5031031) and the downloads [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article](INSERT LINK) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
 
-- [Extend general ledger posting aggregations](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)
-- [Users with the device license can now set up jobs to run as scheduled tasks in the job queue of Business Central](/dynamics365/business-central/dev-itpro/deployment/licensing#device-user-features-and-limitations) 
-- [Copy Links when posting general journals](/dynamics365/business-central/ui-work-general-journals)
-- Get reference information for a customer ledger entry through posting (link is coming)
-
+- [Business Central virtual tables fully supported on Microsoft Dataverse](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/business-central-virtual-tables-fully-supported-dataverse) 
+- [Easily integrate generative AI with your AL solutions](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/easily-integrate-generative-ai-al-solutions)
+- [Get marketing text suggestions with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/get-marketing-text-suggestions-copilot)
+- [AppSource ISV publishers can preview their AppSource apps with select customers](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/appsource-isv-publishers-preview-their-appsource-apps-select-customers)
+- [Extend general ledger posting aggregations](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)
+- [Granular administration as Dynamics 365 Business Central Administrator](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights) 
+- [Include or exclude tables from cloud migration](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/include-or-exclude-tables-cloud-migration)
+- [Digital vouchers](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/digital-vouchers) 
+- [Use actions to go to or fix errors inline](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/use-actions-navigate-or-fix-errors-inline-validation-dialog) 
 
 ## Localization updates
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-| France | Unique numbering for each Invoice in the General Journal | The numbering in the "EcritureNum" tag must increase over time and not contain any breaks. This transaction numbering must be unique for the whole file or specific to each journal code. Using numbers in the G/L Regusters provides unique numbering. However, if you post multiple invoices through one journal, all of the invoices will have one common number. But French regulation requires a unique number for each invoice.To fulfill this requirement, users now can run the report with an additional option, the Use Transaction No. |
-| Denmark/W1 | Standard Audit File Export (SAF-T) | Users can export all mandatory required data according to the Standard Audit File for Tax (SAF-T) format in Denmark. SAF-T is an international standard for the electronic exchange of reliable accounting data from organizations to a national tax authority or external auditors. This feature uses Organization for Economic Co-operation and Development (OECD) standard SAF-T as the standard file format for reporting and it can be used in all countries if they are using OECD standard. |
-| Denmark | Standard Chart of Account | The new Danish bookkeeping act requires the use of a standard chart of accounts. Because of this requirement, the Danish tax authority is providing a standard chart of accounts that can be used. Use the chart of accounts when you prepare annual accounts, and when you calculate regular tax and value-added tax (VAT) payments. You can use any chart of accounts that's included on the Chart of Accounts page. However, for required reporting, you must use the G/L Mapping page to map all general ledger (GL) accounts with the standard chart of accounts that's required by the law. |
-| Denmark | Upload of CSV file with accounting data to RegnskabBasies | Integration of Microsoft Dynamics 365 Business Central with comma-separated values (CSV) file uploads is required by Danish bookkeeping act Regnskab Basis and marks a pivotal advancement in financial data management. This streamlined process enables your business to effortlessly import large datasets and helps enhance accuracy and efficiency. Now users can export all required data as a CSV file according to the Danish requirements for Regnskab Basis. |
+| Denmark | E-submission of VAT return | Danish companies can use e-submission of VAT return as required by the new Danish Bookkeeping Act.|
+| Denmark | Registration and notification functionality for Denmark | Danish companies can be notified for registration in the Nemhandelsregisteret as required by the new Danish Bookkeeping Act.|
+
 
 ## Release Plan
 
-If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2023 release wave 1 (release from April 2023 through September 2023), find the link to the release plan [here](https://aka.ms/BCReleasePlan).
+If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2023 release wave 3 (release from October 2023 through March 2024), find the link to the release plan [here](https://aka.ms/BCReleasePlan).
 
-## Upgrade to 22.5
+## Upgrade to 23.1
 
-Please note that new customers will automatically get the latest builds of Business Central (22.5). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
+Please note that new customers will automatically get the latest builds of Business Central (23.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
-### Important: Take action before October 31 2023 to retain your delegated admin access to your customers  
-Last year Microsoft introduced [Granular Delegated Admin Privileges (GDAP)](/partner-center/gdap-introduction) to improve upon and replace Delegated Admin Privileges (DAP). GDAP addresses various security concerns by allowing customer administrators to provide partners a proper level of time-bound access to their tenants.
-
-The Partner Center team has now [announced](/partner-center/announcements/2023-may#new-timelines-important-actions-to-secure-the-partner-ecosystem) the timeline by which you need to migrate your customer relationships to GDAP. Please make sure to read this new Partner Center announcement for more details about milestone dates and the transition plan and about the tools Microsoft provides to facilitate this process. 
-
-To manage Dynamics 365 Business Central customers via GDAP we recommend requesting the Dynamics 365 Administrator role as the least-privileged role that grants access to Dynamics 365 Business Central environments. Read more about which other roles are supported for delegated administration of Business Central [here](/dynamics365/business-central/dev-itpro/administration/delegated-admin).
+### Did you join the Business Central Launch Event?   
+If not, you have until end of January 2024 to watch the opening session and consume 35 what's new videos made by the Microsoft engineering team. Register and watch the videos: [aka.ms/BCLE](https://aka.ms/BCLE).  
 
 ### Upcoming Business Central Office Hours Calls
 
-During September and October, we will host the following calls, which you can already register for today:
+During November, we will host the following calls, which you can already register for today:
 
-**September 5:** Performance troubleshooting tools
-**October 17:** Power Platform integrations
+**November 14:** Cloud Migration
+**November 21:** Mobile app and barcode scanning
 
 - Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
 
 - Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
+
+### Follow our new YouTube channel  
+We're excited to announce that we're on YouTube now! Follow along as we're posting how to videos, Business Central Launch Event sessions, and much more! 
+Subscribe now: [aka.ms/BCYouTube](https://aka.ms/BCYouTube).
 
 ### Looking for an aka.ms link?
 
