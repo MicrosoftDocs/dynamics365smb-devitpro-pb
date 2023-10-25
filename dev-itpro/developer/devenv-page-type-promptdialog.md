@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # The PromptDialog page type
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] runtime 12.2, you can add a new page type `PromptDialog`, which allows you to integrate Copilot capabilities into your custom scenarios. Use the `PromptDialog` to create generative AI experiences with the Copilot look and feel, which includes signature visuals, and built-in safety controls for customers. The `PromptDialog` page has a specific page syntax, which includes new area and action controls, as described in the code sample below. To get started, simply type `tpage` and pick the **Page of type Prompt Dialog** snippet.
+With [!INCLUDE [prod_short](includes/prod_short.md)] runtime 12.1, you can add a new page type `PromptDialog`, which allows you to integrate Copilot capabilities into your custom scenarios. Use the `PromptDialog` to create generative AI experiences with the Copilot look and feel, which includes signature visuals, and built-in safety controls for customers. The `PromptDialog` page has a specific page syntax, which includes new area and action controls, as described in the code sample below. To get started, simply type `tpage` and pick the **Page of type Prompt Dialog** snippet.
 
 ## Example
 
@@ -67,4 +67,5 @@ page 50100 MyCopilotPage
 
 ## See also
 
-[]()
+[Page types and layouts](devenv-page-types-and-layouts.md)  
+[Page object](devenv-page-object.md)  
