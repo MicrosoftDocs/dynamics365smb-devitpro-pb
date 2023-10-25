@@ -24,19 +24,19 @@ Find an overview of hotfixes in this [article](INSERT LINK) and the downloads [h
 - [Business Central virtual tables fully supported on Microsoft Dataverse](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/business-central-virtual-tables-fully-supported-dataverse) 
 - [Easily integrate generative AI with your AL solutions](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/easily-integrate-generative-ai-al-solutions)
 - [Get marketing text suggestions with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/get-marketing-text-suggestions-copilot)
-- [AppSource ISV publishers can preview their AppSource apps with select customers](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/appsource-isv-publishers-preview-their-appsource-apps-select-customers)
+- [Complete bank account reconciliation faster with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/complete-bank-account-reconciliation-faster-copilot)
 - [Extend general ledger posting aggregations](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)
 - [Granular administration as Dynamics 365 Business Central Administrator](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights) 
 - [Include or exclude tables from cloud migration](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/include-or-exclude-tables-cloud-migration)
-- [Digital vouchers](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/digital-vouchers) 
-- [Use actions to go to or fix errors inline](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/use-actions-navigate-or-fix-errors-inline-validation-dialog) 
+- [Use actions to go to or fix errors inline](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/use-actions-navigate-or-fix-errors-inline-validation-dialog)
+
 
 ## Localization updates
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-| Denmark | E-submission of VAT return | Danish companies can use e-submission of VAT return as required by the new Danish Bookkeeping Act.|
-| Denmark | Registration and notification functionality for Denmark | Danish companies can be notified for registration in the Nemhandelsregisteret as required by the new Danish Bookkeeping Act.|
+| Spain | Non-Deductible and partly deductible VAT update | Adding global non-deductible VAT feature to the Spanish localization to keep compliant with VAT reporting and SII requirements.|
+| Spain | Overdue Balance report update | New requirements for Vendor - Overdue Balance report (10748) in the Spanish version where we added Amounts (Volumen Monetario) and Number of invoices (Numero de facturas) information.|
 
 
 ## Release Plan
@@ -66,6 +66,12 @@ During November, we will host the following calls, which you can already registe
 ### Follow our new YouTube channel  
 We're excited to announce that we're on YouTube now! Follow along as we're posting how to videos, Business Central Launch Event sessions, and much more! 
 Subscribe now: [aka.ms/BCYouTube](https://aka.ms/BCYouTube).
+
+### Discover all partner related resources on aka.ms/BCAll
+If you’re a partner and you’re looking for relevant resources, you can find them in this article: aka.ms/BCAll. 
+ 
+### Discover all user related resources on aka.ms/BCUsers
+If you’re a user and you’re looking for relevant resources, you can find them in this article: aka.ms/BCUsers.  
 
 ### Looking for an aka.ms link?
 
