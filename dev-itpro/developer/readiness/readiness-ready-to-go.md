@@ -15,6 +15,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 
 ## Hot topics right now
 - Register for the Business Central Launch Event on [aka.ms/BCLE](https://aka.ms/BCLE)
+- Register for the Business Applications Launch Event [here](https://msbizappslaunchevent.eventcore.com/)
 - Subscribe to the Microsoft Dynamics 365 Business Central channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
 
 ## Latest release and updates  
