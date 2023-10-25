@@ -79,7 +79,7 @@ We don't run a manual validation of the apps anymore. Instead, we rely on you to
 
 Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation on all [!INCLUDE[prod_short](../includes/prod_short.md)] environments from the AppSource marketplace.
 
-Selected customers can also install the Preview version of the extensions in your submission after the "Preview creation" step. In order to trigger the install, customers must use the URL `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` where `[TenantID]` is the Microsoft Entry ID of their environment, `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission. For more information about AppSource app preview, refer to the dedicated section below.
+Selected customers can also install the Preview version of the extensions in your submission after the "Preview creation" step. In order to trigger the install, customers must use the URL `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` where `[TenantID]` is the Microsoft Entra ID of their environment, `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission. For more information about AppSource app preview, refer to the dedicated section below.
 
 ### When should I include my library apps as part of my submission?
 
@@ -149,7 +149,7 @@ Preview versions can be installed on Sandbox environments running on [!INCLUDE[p
 
 ### How can I install preview versions for selected customers?
 
-Selected customers can install the preview version of the extensions in your submission after the "Preview creation" step of the submission flow in Partner Center. In order to trigger the install, customers must use the URL `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` where `[TenantID]` is the Microsoft Entry ID of their environment, `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission. For more information about AppSource app preview, refer to the dedicated section below.
+Selected customers can install the preview version of the extensions in your submission after the "Preview creation" step of the submission flow in Partner Center. In order to trigger the install, customers must use the URL `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` where `[TenantID]` is the Microsoft Entra ID of their environment, `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission. For more information about AppSource app preview, refer to the dedicated section below.
 
 ### Is the preview key per submission or per offer?
 
