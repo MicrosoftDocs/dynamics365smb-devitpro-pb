@@ -16,13 +16,14 @@ Are you a Microsoft partner working with Business Central and looking for releva
 ## Hot topics right now
 - Register for the Business Central Launch Event on [aka.ms/BCLE](https://aka.ms/BCLE)
 - Access Business Central with your Microsoft 365 license. Read about it [here](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
+- Subscribe to the Microsoft Dynamics 365 Business Central channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
 
 ## Latest release and updates  
 - Business Central release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
 - Major updates: [aka.ms/BCUpdates](https://aka.ms/BCUpdates)
 - Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
 - Missing a feature? Post or vote for ideas on: [aka.ms/BCIdeas](https://aka.ms/BCIdeas) 
-- Alert Microsoft on an upcoming regulatory feature: [aka.ms/BCAlerts]
+- Alert Microsoft on an upcoming regulatory feature: [aka.ms/BCAlerts](https://aka.ms/BCAlerts)
 - Optional features that are now mandatory [https://aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt)
 - Where is Business Central available? [aka.ms/BCCountries](https://aka.ms/BCCountries)
 
@@ -31,6 +32,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Watch the what’s new launch event sessions: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
 - Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
+- Subscribe to the Microsoft Dynamics 365 Business Central channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
 
 
 ## Social and blogs
