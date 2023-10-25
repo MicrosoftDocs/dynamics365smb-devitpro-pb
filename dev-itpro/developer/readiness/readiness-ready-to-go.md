@@ -134,7 +134,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Shopify consultant: [aka.ms/BCShopifyConsultant](https://aka.ms/BCShopifyConsultant)
 
 ## Events for partners
-- Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)
+- [Business Central Launch Event (aka.ms/BCLE)](https://aka.ms/BCLE)
 - [Directions NA](https://directionsna.com) 
 - [Directions EMEA](https://directions4partners.com/events/directions-emea-2023/)  
 - [Directions Asia](https://directions4partners.com/events/directions-asia-2023/) 
@@ -144,7 +144,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - [Days of Knowledge (UK)](https://directions4partners.com/days-of-knowledge/uk-2023/)
 
 ## Events for customers
-- Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)
+- [Business Central Launch Event (aka.ms/BCLE)](https://aka.ms/BCLE)
 - [DynamicsMinds](https://www.dynamicsminds.com/)
 - [UG Summit](https://www.summitna.com/)
 - [DynamicsCon](https://dynamicscon.com/)
