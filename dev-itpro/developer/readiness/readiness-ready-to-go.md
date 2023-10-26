@@ -40,7 +40,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) (Use #BCALHelp on Twitter for quick hints on how to do things) 
 - Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
-- Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [community.dynamics.com/business](https://community.dynamics.com/business) 
+- Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCommunity](https://aka.ms/BCCommunity) 
 - Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://cloudblogs.microsoft.com/dynamics365/it/)
 - Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm)
 - Join the [!INCLUDE [prod_short](../includes/prod_short.md)] development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
@@ -153,12 +153,12 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - [Business Central Launch Event (aka.ms/BCLE)](https://aka.ms/BCLE)
 - [Directions NA](https://directionsna.com)
-- [Directions EMEA](https://directions4partners.com/events/directions-emea-2023/)  
-- [Directions Asia](https://directions4partners.com/events/directions-asia-2023/)
+- [Directions EMEA](https://directions4partners.com/events/directions-emea-2024/)  
+- [Directions Asia](https://directions4partners.com/events/directions-asia-2024/)
 - [Business Central TechDays](https://bctechdays.com)
-- [Days of Knowledge (Nordic)](https://directions4partners.com/days-of-knowledge/nordic-2023/)
-- [Days of Knowledge (Central)](https://directions4partners.com/days-of-knowledge/central-2023/)
-- [Days of Knowledge (UK)](https://directions4partners.com/days-of-knowledge/uk-2023/)
+- [Days of Knowledge (Nordic)](https://directions4partners.com/days-of-knowledge/)
+- [Days of Knowledge (Central)](https://directions4partners.com/days-of-knowledge/)
+- [Days of Knowledge (UK)](https://directions4partners.com/days-of-knowledge/)
 
 ## Events for customers
 
