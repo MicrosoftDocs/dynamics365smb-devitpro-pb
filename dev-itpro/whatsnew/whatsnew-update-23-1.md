@@ -17,7 +17,7 @@ Would you like to know what has changed in update 23.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](INSERT LINK) and the downloads [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5032755) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
 
@@ -41,7 +41,7 @@ Find an overview of hotfixes in this [article](INSERT LINK) and the downloads [h
 
 ## Release Plan
 
-If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2023 release wave 3 (release from October 2023 through March 2024), find the link to the release plan [here](https://aka.ms/BCReleasePlan).
+If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2023 release wave 2 (release from October 2023 through March 2024), find the link to the release plan [here](https://aka.ms/BCReleasePlan).
 
 ## Upgrade to 23.1
 
