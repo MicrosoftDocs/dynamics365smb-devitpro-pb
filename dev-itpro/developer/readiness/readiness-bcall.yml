@@ -114,6 +114,8 @@ landingContent:
             url: http://aka.ms/ALAppExtensions
           - text: aka.ms/alguidelines
             url: http://aka.ms/alguidelines
+          - text: aka.ms/BCIcons
+            url: https://aka.ms/BCIcons
       - linkListType: how-to-guide
         links:
           - text: aka.ms/AppSourceGo

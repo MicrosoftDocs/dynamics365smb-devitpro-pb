@@ -113,6 +113,8 @@ Use this example to get started:
 Publish-BcContainerApp -appFile <full path to file> -tenant <tenant name> -install -containerName <container name> 
 ```
 
+Use `help Publish-BcContainerApp -detailed` to get a full list of parameters and functionality.
+
 ## See also
 
 [Get Started with AL](devenv-get-started.md)  
