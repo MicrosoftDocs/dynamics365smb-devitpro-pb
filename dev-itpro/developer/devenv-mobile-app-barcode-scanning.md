@@ -19,7 +19,15 @@ ms-service: dynamics365-business-central
 
 # Adding barcode scanning to the mobile app 
 
-The Business Central mobile app supports a native barcode scanner control that enables you to add a  increases warehouse users' productivity as they can scan barcodes using the device camera or even the dedicated barcode scanner. This feature also opens scenarios for partners to create more advanced experiences using a barcode scanner.
+Business Central includes a native barcode scanner control that enables AL developers to add barcode scanning capability to the mobile app. The barcode scanner itself can be either the scanner built in to the device's camera or a dedicated scanning device. There are three different approaches to incorporating barcode scanning. The approach you choose depends your desired scenario and what is supported.
+
+
+|Approach|Scenario|DeviceCamera| Dedicated scanner|iOS|Android|
+|-|-|-|-|-|-|
+|UI button on a field|The user scans a barcode by manually selecting a button next to a field|x|x||x|x|
+|AL action|The user scans a barcode by manually selecting an action on the page|x|x||x|x|
+|Barcode event |||x|x||x|x|
+
 The new barcode scanning feature supports three different scenarios, each with varying levels of complexity. The scenarios range from simple user interface (UI) features to more advanced approaches that cater to ISVs.
 
 
