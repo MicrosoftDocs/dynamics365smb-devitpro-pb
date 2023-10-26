@@ -60,11 +60,12 @@ This article outlines requirements on the [!INCLUDE [dyn_gp_prod](../includes/dy
     > The login account used for SQL server authentication must have the **sysadmin** role on the server level and **db_owner** role on the database level.
 
 ### Is a data upgrade needed?
+
 A cloud migration can be performed either on a live system or from a backup. 
  
-For a migration from a live system, the database is running a production workload and must therefore use a non-developer SKU of SQL Server. This also means that if you are running your [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] production environment on a SQL Server version 2014 or older, you will need to upgrade the database prior to starting your cloud migration project. You might want to look into using a Azure SQL Managed Instance resource as such a stepping stone as this type of Azure SQL database allows for importing a database backup and also supports most of the on-premises features of SQL Server. 
+- For a migration from a live system, the database is running a production workload and must therefore use a non-developer SKU of SQL Server. This also means that if you are running your [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] production environment on a SQL Server version 2014 or earlier, you need to upgrade the database before starting your cloud migration project. You might want to consider using a Azure SQL Managed Instance resource as a stepping stone because this type of Azure SQL database allows for importing a database backup and also supports most of the on-premises features of SQL Server. 
  
-For a migration from a backup, you can simply restore the backup use a SQL Server 2022 (or later) developer edition and run the migration project from there (as long as you do not use that SQL Server for other workloads).
+- For a migration from a backup, you can just restore the backup using a SQL Server 2022 (or later) developer edition and run the migration project from there, as long as you don't use that SQL Server for other workloads.
 
 
 ## Other
