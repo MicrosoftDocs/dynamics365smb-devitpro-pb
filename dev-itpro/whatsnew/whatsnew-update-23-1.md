@@ -26,7 +26,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Get marketing text suggestions with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/get-marketing-text-suggestions-copilot)
 - [Complete bank account reconciliation faster with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/complete-bank-account-reconciliation-faster-copilot)
 - [Extend general ledger posting aggregations](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)
-- [Granular administration as Dynamics 365 Business Central Administrator](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights) 
 - [Include or exclude tables from cloud migration](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/include-or-exclude-tables-cloud-migration)
 - [Use actions to go to or fix errors inline](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/use-actions-navigate-or-fix-errors-inline-validation-dialog)
 
