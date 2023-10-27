@@ -236,6 +236,7 @@
 #### [Database wait statistics telemetry](administration/telemetry-database-wait-statistics-trace.md)
 #### [Email telemetry](administration/telemetry-email-trace.md)
 #### [Environment lifecycle telemetry](administration/telemetry-environment-lifecycle-trace.md) 
+#### [Environment validation telemetry](administration/telemetry-environment-validation-trace.md) 
 #### [Error message quality telemetry](administration/telemetry-error-message-voting-trace.md)
 #### [Error method telemetry](administration/telemetry-error-method-trace.md) 
 #### [Extension lifecycle telemetry](administration/telemetry-extension-lifecycle-trace.md)
