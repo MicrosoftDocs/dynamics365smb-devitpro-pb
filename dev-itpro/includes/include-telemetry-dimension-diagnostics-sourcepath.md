@@ -1,0 +1,1 @@
+Specifies where in which file in the app the AL compiler emitted the diagnostics.
