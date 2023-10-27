@@ -61,6 +61,9 @@ During November, we will host the following calls, which you can already registe
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
 Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
+### Automatically update AppSource apps with minor updates  
+You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the Release Plan for more details.
+
 ### Follow our new YouTube channel  
 We're excited to announce that we're on YouTube now! Follow along as we're posting how to videos, Business Central Launch Event sessions, and much more! 
 Subscribe now: [aka.ms/BCYouTube](https://aka.ms/BCYouTube).
