@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.date: 08/23/2023
+ms.date: 10/24/2023
 ms.custom: bap-template
 ---
 
@@ -81,6 +81,14 @@ Coming soon...
 |---------|---------|
 |[Feature Update: Standardized bank reconciliation and deposits.](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/standardizing-bank-reconciliation-process-north-american-versions?branch=main&branchFallbackFrom=pr-en-us-2746)|Bank reconciliation in the North American (NA) versions for the United States, Canada, and Mexico can be done either through the standard **Bank Reconciliation** page or with the **Bank Rec. Worksheet** page, which was missing some of the newer features that the **Bank Reconciliation** page offers. To standardize the bank reconciliation process, we have modified the **Bank Reconciliation** page, added a feature for deposits that is the same as we provide for the NA version today, and added capabilities to allow users to reconcile deposits.|
 
+### Features postponed from becoming mandatory in 2023 Release Wave 2
+
+The change to making these features mandatory is postponed. They aren't turned on by default and must be enabled manually. Use the links to learn more about them in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans.
+
+|Feature  |Expected to be mandatory release wave |
+|---------|---------|
+|[Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)     | 2025 release wave 1        | 
+
 ## Features becoming mandatory in 2023 release wave 1
 
 These features are now mandatory and can no longer be disabled. Use the links to learn more about them in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans.
@@ -121,7 +129,7 @@ The change to making these features mandatory is postponed. They aren't turned o
 |Feature  |Expected to be mandatory release wave |
 |---------|---------|
 |[Use tracking by package number in reservation and tracking system](/dynamics365/business-central/inventory-how-setup-item-tracking)     |  2024 release wave 1       |
-|[Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)     | 2024 release wave 1        |
+|[Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)     |**Note:** This feature was originally scheduled to become mandatory in 2024 release wave 1. It's now expected to become mandatory in 2025 release wave 1.        |
 |[New Microsoft Word report rendering platform](/dynamics365/business-central/dev-itpro/developer/devenv-howto-report-layout)     | 2024 release wave 1        |
 |[Replace Multiple Interest Rate CZ with Finance Charge Interest Rate](/dynamics365/business-central/receivables-collect-outstanding-balances)| 2025 release wave 2 |
 
