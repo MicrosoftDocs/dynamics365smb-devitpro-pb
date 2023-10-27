@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 06/30/2023
+ms.date: 10/27/2023
 ---
 
 # Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases
@@ -23,7 +23,9 @@ Whether you can upgrade directly to a release will depend on the source version.
 The following sections provide the supported upgrade paths to the different [!INCLUDE[prod_short](../developer/includes/prod_short.md)] releases.
 
 > [!NOTE]
-> Minor updates are regularly made available for each release wave. Not all minor updates between two releases are compatible. Make sure you upgrade to a release update that's compatible with your current version. Otherwise, you might encounter problems upgrading the application. For more information, see [Dynamics 365 Business Central Upgrade Compatibility Matrix](./upgrade-v14-v15-compatibility.md?branch=2020rw1-upgrade).
+> - Minor updates are regularly made available for each release wave. Not all minor updates between two releases are compatible. Make sure you upgrade to a release update that's compatible with your current version. Otherwise, you might encounter problems upgrading the application. For more information, see [Dynamics 365 Business Central Upgrade Compatibility Matrix](./upgrade-v14-v15-compatibility.md?branch=2020rw1-upgrade).
+> - Starting in 2025 release wave 1 (v26), the direct upgrade from Business Central 2019 (v14) to the latest release will no longer be supported. The supported upgrade path will be through 2024 release wave 2 (v25). 
+
 
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 Release Wave 1 (v22)
 
