@@ -32,7 +32,7 @@ You (our partner) add some features to your app and also some minor bug fixes. T
 
 ### Impact of app updates
 
-Customers can either do an uninstall and then reinstall on their own, or they can ask their partner do it on their behalf from the Extension Management window within [!INCLUDE[prod_short](includes/prod_short.md)]. Otherwise, they would have to wait until our every 6-month major release. That is the only time we do a force upgrade of extensions (except for critical bug hotfix extension updates)
+Internal and delegated administrators can update AppSource apps from the [[!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]](../administration/tenant-admin-center-manage-apps), and regular users can do so by uninstalling and reinstalling an app in the environment. AppSource apps are automatically updated to the latest version during a major update to an environment, unless the **App Update Cadence** has been set to **With minor and major updates** for the environment in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
 ## Scenario 3: Reported bugs in your app
 
@@ -62,8 +62,7 @@ Here is our process when this takes place:
 
 ## Conclusions
 
-You're responsible for your app. You own the process of updating the app and providing upgrade code if the schema changes between versions of the app.  
-If a customer uninstalls your app, and then installs it again later, then when they install the app the second time, they get the latest version from AppSource.  
+You're responsible for your app. You own the process of updating the app and providing upgrade code if the schema changes between versions of the app. If a customer uninstalls your app, and then installs it again later, then when they install the app the second time, they get the latest version from AppSource.  
 
 ### How Microsoft handles your app
 
