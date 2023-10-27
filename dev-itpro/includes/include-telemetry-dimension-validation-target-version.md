@@ -1,0 +1,1 @@
+Specifies the version of Business Central we are validating against. Typically the next major version.
