@@ -15,9 +15,9 @@ ms.service: dynamics365-business-central
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-Non-compatible 3rd party apps (per-tenant extensions) can block upgrades to next major version of BC if they cannot compile on that version. In the BC service, we proactively validate all environments regularly against the next release. If an environment is not ready to be updated, then we send an email to the administrator and starting from September 2023, we also emit telemetry on these validations. 
+Non-compatible 3rd party apps (per-tenant extensions) can block upgrades to next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] if they cannot compile on that version. In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, we proactively validate all environments regularly against the next release. If an environment is not ready to be updated, then we send an email to the administrator and starting from September 2023, we also emit telemetry on these validations. 
 
-With this telemetry, partners can monitor environments for the customers and setup alerts so that they know up front which customers will need help prior to updating to the next major version of BC.
+With this telemetry, partners can monitor environments for the customers and setup alerts so that they know up front which customers will need help prior to updating to the next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 Failed operations result in a trace log entry that includes a reason for the failure.
 
@@ -87,7 +87,7 @@ Occurs for each extension in the environment.
 
 ## Extension validation completed successfully (LC0225)
 
-Occurs if the extension validated successfully on the next major of BC.
+Occurs if the extension validated successfully on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ### General dimensions
 
@@ -112,7 +112,7 @@ Occurs if the extension validated successfully on the next major of BC.
 
 ## Extension Validation diagnostic reported (LC0210)
 
-Occurs if something was not right when validating the extension on the next major of BC.
+Occurs if something was not right when validating the extension on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ### General dimensions
 
@@ -143,7 +143,7 @@ Occurs if something was not right when validating the extension on the next majo
 
 ### Sample KQL code (Extension Validation diagnostic reported)
 
-This KQL code can help you get started analyzing validation failures for an app on the next major of BC:
+This KQL code can help you get started analyzing validation failures for an app on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
 
 ```kql
 // Extension Validation diagnostic reported (LC0210)
@@ -175,7 +175,7 @@ traces
 
 ## Extension validation completed with failures (LC0226)
 
-Occurs if the extension validated with one or more failures on the next major of BC.
+Occurs if the extension validated with one or more failures on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ### General dimensions
 
@@ -196,12 +196,12 @@ Occurs if the extension validated with one or more failures on the next major of
 |extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
 |extensionVersion|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-version.md)]|
 |targetVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-validation-target-version.md)]|
-|failureReason|The overall reason that the extension failed to validate on the new major of BC.|
+|failureReason|The overall reason that the extension failed to validate on the new major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|
 
 
 ### Sample KQL code (Extension validation completed with failures)
 
-This KQL code can help you get started analyzing validation failures for an app on the next major of BC:
+This KQL code can help you get started analyzing validation failures for an app on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
 
 ```kql
 // Extension validation completed with failures (LC0226)
@@ -227,7 +227,7 @@ traces
 
 ## Environment validation request completed successfully (LC0222)
 
-Occurs if all extensions in the environment validated successfully on the next major of BC.
+Occurs if all extensions in the environment validated successfully on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ### General dimensions
 
@@ -249,7 +249,7 @@ Occurs if all extensions in the environment validated successfully on the next m
 
 ## Environment validation completed with failures (LC0223)
 
-Occurs if one or more extensions in the environment failed to validate on the next major of BC.
+Occurs if one or more extensions in the environment failed to validate on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ### General dimensions
 
@@ -266,14 +266,14 @@ Occurs if one or more extensions in the environment failed to validate on the ne
 |environmentTenantAAD|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
-|failureReason|The overall reason that the environment failed to validate on the new major of BC.|
+|failureReason|The overall reason that the environment failed to validate on the new major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|
 |targetVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-validation-target-version.md)]|
 
 
 
 ## Environment diagnostic reported (LC0227)
 
-Occurs if an extension validated with a diagnostic on the next major of BC.
+Occurs if an extension validated with a diagnostic on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ### General dimensions
 
@@ -304,7 +304,7 @@ Occurs if an extension validated with a diagnostic on the next major of BC.
 
 ### Sample KQL code (Environment diagnostic reported)
 
-This KQL code can help you get started analyzing validation failures for an app on the next major of BC:
+This KQL code can help you get started analyzing validation failures for an app on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
 
 ```kql
 traces 
