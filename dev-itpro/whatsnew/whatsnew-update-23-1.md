@@ -74,6 +74,19 @@ If you’re a partner and you’re looking for relevant resources, you can find 
 ### Discover all user related resources on aka.ms/BCUsers
 If you’re a user and you’re looking for relevant resources, you can find them in this article: aka.ms/BCUsers.  
 
+### Features becoming mandatory soon  
+Following features may have potentially disruptive effect on extensions and apps you have installed in the future, when they become mandatory. These features are now optional to use and can be enabled in the [Feature Management](https://dynamics.microsoft.com/en-us/business-central/signin/?ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2F%3Fpage%3D2610%26noSignUpCheck%3D1) page. 
+- Extending G/L Entry Aggregations When Posting Invoices feature is generally available with Update 23.1 and becoming mandatory in Update 26.0 (2025 Release Wave 1). 
+The Invoice Post. Buffer table is replaced by the use of the Invoice Posting interface. The replacement helps resolve extensibility issues for the legacy Invoice Post. Buffer table. You can now use your own implementation of G/L invoice posting. 
+If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to [Extending G/L Entry Aggregations](/dynamics365/business-central/dev-itpro/developer/devenv-invoice-posting-example) When Posting Invoices. 
+- New extensible exchange rate adjustment, including posting review feature is generally available with Update 23.0 and becoming mandatory in Update 26.0 (2025 Release Wave 1) The legacy Exchange Rates Adjustment Report is being replaced by a new capability that increases extensibility and makes it easier to comply with local and industry-specific requirements. It also gives you more control over exchange rate adjustments with a posting preview and how dimension values are post when you adjust exchange rate, and better reporting. 
+
+If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to
+Extending Currency Exchange Rate Adjustments. 
+
+Work with your partner to update extensions and apps you have installed before above features become mandatory. To view complete list of optional features and features that are becoming mandatory, go to [aka.ms/BCFeatureMgmt]https://aka.ms/BCFeatureMgmt
+
+
 ### Looking for an aka.ms link?
 
 Are you looking for an aka.ms link, but simply can't find it? Remember that you can find all aka.ms links on [aka.ms/BCLinks](https://aka.ms/BCLinks). Don't forget to bookmark it!
