@@ -1508,6 +1508,7 @@
 ### [Setting up the add-in for Outlook integration](administration/Setting-up-Office-Add-Ins-Outlook-Inbox.md)
 ### [Setting up app key vaults for extensions](administration/setup-app-key-vault-onprem.md)
 ### Configuring Business Central database
+#### [Installation considerations for SQL server](deployment/installation-considerations-for-microsoft-sql-server.md)
 #### [Optimizing SQL server performance](administration/optimize-sql-server-performance.md)
 #### [Compatibility level](administration/optimize-sql-set-compatibility-level.md)
 #### [Using table partitioning and data compression](administration/using-sql-partitioning-and-compression.md)
