@@ -30,8 +30,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Stay up to date
 
-- Discover what's new for partners in the [!INCLUDE [prod_short](../includes/prod_short.md)] newsletter: [aka.ms/BCNews](https://aka.ms/BCNews)
-- Watch the what’s new launch event sessions: [aka.ms/BCLE](https://aka.ms/BCLE) 
+- Watch the what's new launch event sessions: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
 - Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
@@ -54,6 +53,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Join the conversation on Yammer for partners: [aka.ms/BCYammer](https://aka.ms/BCYammer)  
 - Online or in-person training and coaching for [!INCLUDE [prod_short](../includes/prod_short.md)]. Contact an ISV Development Center: [aka.ms/ISVDevCenter](https://aka.ms/ISVDevCenter)
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode)
+- Get technical to land large customer implementations and close deals: [aka.ms/BCConcierge](https://aka.ms/BCConcierge)  
 
 ## Go to market
 
@@ -90,6 +90,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online: [aka.ms/BCMigrations](https://aka.ms/BCMigrations)  
 - Use migration tooling: [Migrate Data](../../administration/migrate-data.md) 
+- Community group for questions and information about managing migrations to Business Central online: [aka.ms/BCCloudMigrationYammer](https://aka.ms/bccloudmigrationyammer)
 
 ## Getting support
 
@@ -117,6 +118,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Set up DevOps for your AppSource apps: [aka.ms/AL-Go-AppSource](https://aka.ms/AL-Go-AppSource)
 - Ask your question related to AppSource in the AppSource group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
 - Development of a localization app: [aka.ms/BusinessCentralLocApps](https://aka.ms/businesscentrallocapps) 
+- Transact capability for Business Central Apps on Microsoft AppSource: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
 
 ## Developing customer specific solutions
 
