@@ -30,11 +30,17 @@ Business Central includes a native barcode scanner control that enables AL devel
 
 The new barcode scanning feature supports three different scenarios, each with varying levels of complexity. The scenarios range from simple user interface (UI) features to more advanced approaches that cater to ISVs.
 
+> [!IMPORTANT]
+> Barcode scanning is only supported on [text data type](datatype) and code data type fields 
 
 
 Add a barcode scanning button on a field
 
-The simplest way to provide barcode scanning capability in the mobile app is by adding a button on a field that starts the barcode scanner built in to the device's camera. you To enable the barcode scanning action on a field, the ExtendedDatatype property in AL code must be set to Barcode. Pages with such fields, which are only supported for text and code data types, will automatically display a barcode scanning button in the UI, enabling scanning via the device camera. This scanning is highly efficient and responsive, featuring mobile OS level processing and supporting the most well-known 1D and 2D barcode formats. Once a barcode is scanned, its value is entered in the field on the page, and the focus moves to the next quick-entry field on the page. This feature is supported on both iOS and Android platforms.
+The simplest way to provide barcode scanning capability in the mobile app is by adding a button on a field that starts the barcode scanner capability of the device's camera.
+
+To enable the barcode scanning action on a field, set thr ExtendedDatatype property in AL code must be set to Barcode. Pages with such fields, which are only supported for text and code data types, will automatically display a barcode scanning button in the UI, enabling scanning via the device camera. This scanning is highly efficient and responsive, featuring mobile OS level processing and supporting the most well-known 1D and 2D barcode formats. Once a barcode is scanned, its value is entered in the field on the page, and the focus moves to the next quick-entry field on the page. This feature is supported on both iOS and Android platforms.
+
+
 
 Scenario 2: AL action
 
