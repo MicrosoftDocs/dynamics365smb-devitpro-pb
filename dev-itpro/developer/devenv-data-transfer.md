@@ -138,6 +138,23 @@ begin
 end;
 ```
 
+### Performance
+
+The same scenario could also be coded using the record API, by first looping over all rows in the **Source** table with a filter on field **S2**, then for each match, calling Get on the destination record, setting the fields, and calling Modify.
+
+The record-based solution executes three SQL operations per-row, while the DataTransfer does a maximum of two SQL queries altogether. Measurements for DataTransfer and record API solutions have shown an ~200x  performance improvement for DataTransfer. Gains are even greater if the destination table has modify triggers or if the environment has significant latency to SQL.
+
+### Uniqueness in the source table
+
+The join condition can be specified on arbitrary fields, which leaves the possibility that the set of fields doesn't produce a unique set of rows on that set of fields. This situation would lead to a many-to-many relation between the tables. A many-to-many relation would require the runtime to know which row to select&mdash;which at best would be selected at random. Instead, the upgrade runtime will detect this situation and throw an error. The following table illustrates an example where joining the fields **S1** and **S2** doesn't produce a unique set of rows, and would therefore lead to a runtime error.
+
+| PK | S1 | S2 | S3 |
+|----|----|----|----|
+| 1  | *A*  | *A*  | 42 |
+| 2  | *A*  | *A* | 43 |
+| 3  | C  | B  | 44 |
+| 4  | D  | B  | 45 |
+
 ### Example 2 - replace ModifyAll()
 
 In order to replace a Record.ModifyAll() with the DataTransfer data type, ensure that only one table is set (as both source and destination), apply filters if required, and then specify one or more new field values:
@@ -155,23 +172,6 @@ begin
     dt.CopyFields();
 end;
 ```
-
-### Performance
-
-The same scenario could also be coded using the record API, by first looping over all rows in the **Source** table with a filter on field **S2**, then for each match, calling Get on the destination record, setting the fields, and calling Modify.
-
-The record-based solution executes three SQL operations per-row, while the DataTransfer does a maximum of two SQL queries altogether. Measurements for DataTransfer and record API solutions have shown an ~200x  performance improvement for DataTransfer. Gains are even greater if the destination table has modify triggers or if the environment has significant latency to SQL.
-
-### Uniqueness in the source table
-
-The join condition can be specified on arbitrary fields, which leaves the possibility that the set of fields doesn't produce a unique set of rows on that set of fields. This situation would lead to a many-to-many relation between the tables. A many-to-many relation would require the runtime to know which row to select&mdash;which at best would be selected at random. Instead, the upgrade runtime will detect this situation and throw an error. The following table illustrates an example where joining the fields **S1** and **S2** doesn't produce a unique set of rows, and would therefore lead to a runtime error.
-
-| PK | S1 | S2 | S3 |
-|----|----|----|----|
-| 1  | *A*  | *A*  | 42 |
-| 2  | *A*  | *A* | 43 |
-| 3  | C  | B  | 44 |
-| 4  | D  | B  | 45 |
 
 ## Copy rows
 
