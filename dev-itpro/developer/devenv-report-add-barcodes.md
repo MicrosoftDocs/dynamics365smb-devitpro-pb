@@ -19,7 +19,7 @@ This article explains how to add barcodes to reports using the barcode functiona
 
 ## Overview
 
-The barcode functionality lets you convert an alphanumeric value in a report dataset into a barcode on a generated report. The functionality is provided by the **Barcode** module of the System Application. The module includes the objects and tools that you need to add barcodes to reports. This section provides a brief overview of the **Barcode** module. For more information about the module, see the [AL Extensions on GitHub](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Barcode).
+The barcode functionality lets you convert an alphanumeric value in a report dataset into a barcode on a generated report. The functionality is provided by the **Barcode** module of the System Application. The module includes the objects and tools that you need to add barcodes to reports. This section provides a brief overview of the **Barcode** module. For more information about the module, see the [BCApps repository](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Barcode).
 
 ### Barcode providers and encoders API
 
@@ -128,7 +128,7 @@ report 50100 ItemBarcodeReport1D
                 // Declare the font using the barcode symbology enum
                 BarcodeSymbology := Enum::"Barcode Symbology"::"Code39";
 
-                // Set data string source 
+                // Set data string source
                 BarcodeString := "No.";
 
                 // Validate the input. This method is not available for 2D provider
@@ -197,7 +197,7 @@ report 50101 ItemBarcodeReport2D
                 // Declare the font using the barcode symbology enum
                 BarcodeSymbology := Enum::"Barcode Symbology 2D"::"QR-Code";
 
-                // Set data string source 
+                // Set data string source
                 BarcodeString := "No.";
 
                 // Encode the data string to the barcode font
@@ -216,7 +216,7 @@ report 50101 ItemBarcodeReport2D
 
 ## <a name="reportlayout"></a>Adding the barcode to the report layout
 
-When done modifying the report or report extension objects, build the project to create the layout documents. Then create the report layouts as usual (see [Creating an Word Layout Report](devenv-howto-report-layout.md) or [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)). <!-- Each supported symbology has a corresponding font installed in Business Central online. --> 
+When done modifying the report or report extension objects, build the project to create the layout documents. Then create the report layouts as usual (see [Creating an Word Layout Report](devenv-howto-report-layout.md) or [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)). <!-- Each supported symbology has a corresponding font installed in Business Central online. -->
 
 To display the barcode the layout, you'll have to do two things:
 
@@ -228,7 +228,7 @@ To display the barcode the layout, you'll have to do two things:
 
    - For Word layouts:
 
-     In Word, select barcode column control, press Ctrl+D, then enter or select the barcode font name.  
+     In Word, select barcode column control, press Ctrl+D, then enter or select the barcode font name.
 
      [ ![Shows how to apply font to a barcode in a Word document.](media/report-layout-barcode-word-clip.png) ](media/report-layout-barcode-word-clip.png)
 
@@ -273,8 +273,8 @@ To install the fonts, follow the instructions from the font supplier or see [Add
 
 ## See Also
 
-[Request Pages](devenv-request-pages.md)  
-[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
-[Creating a Word Layout Report](devenv-howto-report-layout.md)  
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
+[Request Pages](devenv-request-pages.md)
+[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)
+[Creating a Word Layout Report](devenv-howto-report-layout.md)
+[Developing Extensions](devenv-dev-overview.md)
+[AL Development Environment](devenv-reference-overview.md)

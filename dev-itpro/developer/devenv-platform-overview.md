@@ -19,12 +19,12 @@ This section introduces the different parts of the AL platform that are availabl
 
 You can start background sessions using the task scheduler and job queues can help you offload work from UI sessions. For more information, see [Task Scheduler](devenv-task-scheduler.md).
 
-If you need to call out to external web services, you can use the HTTPClient datatype. For more information, see 
+If you need to call out to external web services, you can use the HTTPClient datatype. For more information, see
 [Call external services with the HttpClient data type](devenv-httpclient.md).
 
 Secure your app secrets with Azure Key Vault. For more information, see [Using Azure Key Vaults for Secrets](devenv-app-key-vault-overview.md).
 
-If you want to integrate to online print solutions, learn more about how to develop printer extensions here: [Printer extension overview](devenv-reports-printing.md). 
+If you want to integrate to online print solutions, learn more about how to develop printer extensions here: [Printer extension overview](devenv-reports-printing.md).
 
 You can create deep links to the web client and the mobile app, see [Web client URL](devenv-web-client-urls.md) and [Business Central app URL](devenv-link-to-mobile-app.md) for more information.
 
@@ -34,12 +34,12 @@ Instrumenting your extension using feature telemetry and custom telemetry can he
 
 ## See Also
 
-[Overview of the System Application](devenv-system-application-overview.md)  
-[Task Scheduler](devenv-task-scheduler.md)  
+[Overview of the System Application](devenv-system-application-overview.md)
+[Task Scheduler](devenv-task-scheduler.md)
 [Job Queue](devenv-job-queue.md)
-[HttpClient Data Type](methods-auto/httpclient/httpclient-data-type.md)    
-[Using Azure Key Vaults for Secrets](devenv-app-key-vault-overview.md)  
-[Creating Custom Telemetry Events](devenv-instrument-application-for-telemetry-app-insights.md)  
-[Add Feature Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)  
-[Creating a Printer Extension](devenv-reports-create-printer-extension.md)  
-[Getting started with Microsoft .NET Interoperability from AL (on-premises only)](devenv-get-started-call-dotnet-from-al.md)  
+[HttpClient Data Type](methods-auto/httpclient/httpclient-data-type.md)
+[Using Azure Key Vaults for Secrets](devenv-app-key-vault-overview.md)
+[Creating Custom Telemetry Events](devenv-instrument-application-for-telemetry-app-insights.md)
+[Add Feature Usage Telemetry](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)
+[Creating a Printer Extension](devenv-reports-create-printer-extension.md)
+[Getting started with Microsoft .NET Interoperability from AL (on-premises only)](devenv-get-started-call-dotnet-from-al.md)

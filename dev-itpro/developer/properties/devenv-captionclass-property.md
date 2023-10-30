@@ -40,20 +40,20 @@ When you set the **CaptionClass property** on a field, users can configure the c
 
 > [!NOTE]
 > `<Caption Area>` is the location of the caption you want to use. The `<Caption Area>` can be '50000', '50140', and so on. Or, it can be a code from among 1, 2, and 3, which are handled by the base application layer and have a special meaning.
-> - 1 is for using a Dimension as caption. 
+> - 1 is for using a Dimension as caption.
 > - 2 is for captions of fields that can include or not VAT. For example, if `CaptionClass = '2,0,Invoice Amount';`  the resulting caption in the UI will be **Invoice Amount Excl. VAT**. If `CaptionClass = '2,1,Invoice Amount';`  the resulting caption in the UI will be **Invoice Amount Incl. VAT**.
 > - 3 returns the `<Caption Expression>` string. In the example in the above section, "3" returns the `<Caption Expression>` that is **My awesome caption**.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > If you omit the pattern of `'<Caption Area>, <Caption Expression>'`, the caption becomes the value of whatever string has been given to the `CaptionClass` property. This means that you can use an expression such as `CaptionClass = ItemRec.Fieldcaption("Location Code");` as long as the returned data type is Text.
 
 ### Caption Class
 
 The `Caption Class` (codeunit 42) in the system application exposes two events; the `OnResolveCaptionClass` and the `OnAfterCaptionClassResolve` event.
 
-For more information, see the system [Caption Class](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Caption%20Class/README.md).
+For more information, see the system [Caption Class](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Caption%20Class).
 
-The Caption Class raises an `OnResolveCaptionClass` event for any other value of `<Caption Area>`. 
+The Caption Class raises an `OnResolveCaptionClass` event for any other value of `<Caption Area>`.
 
 ```al
 [IntegrationEvent(false, false)]
@@ -99,6 +99,6 @@ codeunit 50000 "MyCaptionClassMgmt"
 
 ## See Also
 
-[CaptionML Property](devenv-captionml-property.md)   
-[Caption Property](devenv-caption-property.md)  
-[CaptionClassTranslate Method](../methods-auto/system/system-captionclasstranslate-method.md) 
+[CaptionML Property](devenv-captionml-property.md)
+[Caption Property](devenv-caption-property.md)
+[CaptionClassTranslate Method](../methods-auto/system/system-captionclasstranslate-method.md)

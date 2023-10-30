@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-This article describes the features that are up for removal or that have been removed or replaced in the platform that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses across languages and base app.  
+This article describes the features that are up for removal or that have been removed or replaced in the platform that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses across languages and base app.
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
@@ -32,7 +32,7 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | Cloud migration tool and on-premises data upgrade toolkit support one-step upgrade path from any version starting from Dynamics Business Central 2019 (v.14) to the latest version of Business Central.<br><br>This is possible because none of the schema elements (tables and fields) deprecated over 11 major updates (from v.14 to v.25) were removed from the released databases to preserve backwards compatibility and enable more seamless transition for our customers to the latest versions on-premises and online. <br><br>Over these releases, we've accumulated a significant number of such obsolete schema elements, which increases complexity of working with the application code. This condition blocks the reuse of the long obsolete objects and field IDs, affecting our work of moving common functionality from local versions of Business Central to W1 version. <br><br>At the same time, much has changed in the area of upgradeability since v.14 like: the move to extensions, the transition to Universal Code, introduction of AL Go for GitHub for tracking apps compatibility and more. These improvements make it simpler to follow Business Central update cadence more closely.<br><br>So in the next release (that is, 2025 release wave 1 (v.26)), we're going to clean up all schemas that have been marked as `ObsoleteState = Removed` since Dynamics Business Central 2019 (v.14). <br><br>As a result, data upgrade or cloud migration to v.26 or higher will have to be done via v.25 (referred to as the *stepping-stone* release) following one of the paths:<br><ul><li>Pre-v.14 customers > upgrade to v.14 > upgrade to v.25 > upgrade or cloud migrate to v.26 </li><li>V.14 to v.24 customers > upgrade to v.25 > upgrade or cloud migrate to v.26</li></ul>`ObsoleteState = Removed` fields will then be regularly cleaned up with a cadence of once every five major releases. So after v.25, the next stepping-stone release will be v.30, and so on. | 
+|Removed | Cloud migration tool and on-premises data upgrade toolkit support one-step upgrade path from any version starting from Dynamics Business Central 2019 (v.14) to the latest version of Business Central.<br><br>This is possible because none of the schema elements (tables and fields) deprecated over 11 major updates (from v.14 to v.25) were removed from the released databases to preserve backwards compatibility and enable more seamless transition for our customers to the latest versions on-premises and online. <br><br>Over these releases, we've accumulated a significant number of such obsolete schema elements, which increases complexity of working with the application code. This condition blocks the reuse of the long obsolete objects and field IDs, affecting our work of moving common functionality from local versions of Business Central to W1 version. <br><br>At the same time, much has changed in the area of upgradeability since v.14 like: the move to extensions, the transition to Universal Code, introduction of AL Go for GitHub for tracking apps compatibility and more. These improvements make it simpler to follow Business Central update cadence more closely.<br><br>So in the next release (that is, 2025 release wave 1 (v.26)), we're going to clean up all schemas that have been marked as `ObsoleteState = Removed` since Dynamics Business Central 2019 (v.14). <br><br>As a result, data upgrade or cloud migration to v.26 or higher will have to be done via v.25 (referred to as the *stepping-stone* release) following one of the paths:<br><ul><li>Pre-v.14 customers > upgrade to v.14 > upgrade to v.25 > upgrade or cloud migrate to v.26 </li><li>V.14 to v.24 customers > upgrade to v.25 > upgrade or cloud migrate to v.26</li></ul>`ObsoleteState = Removed` fields will then be regularly cleaned up with a cadence of once every five major releases. So after v.25, the next stepping-stone release will be v.30, and so on. |
 
 ## Changes in 2024 release wave 1 (version 24.0)
 
@@ -97,7 +97,7 @@ This article describes the features that are up for removal or that have been re
 
 ### <a name="ropc"></a>Resource Owner Password Credentials (ROPC) flow in OAuth 2.0 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online (removal)
 
-The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.  
+The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
@@ -129,7 +129,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ### Business Central Telemetry: using an instrumentation key (removal)
 
-On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end. After that date, your Azure Applications Insights resources will continue to receive data, but we'll no longer provide updates or customer support for instrumentation key–based global ingestion. 
+On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end. After that date, your Azure Applications Insights resources will continue to receive data, but we'll no longer provide updates or customer support for instrumentation key–based global ingestion.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
@@ -184,7 +184,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ### <a name="ropc"></a>Resource Owner Password Credentials (ROPC) flow in OAuth 2.0 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online (warning)
 
-The following feature will eventually be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.  
+The following feature will eventually be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
@@ -205,7 +205,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ### <a name="flfformat"></a>License files in the .flf format for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (warning)
 
-The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.  
+The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
@@ -318,7 +318,7 @@ The legacy Outlook add-in for synchronizing data, such as to-dos, contacts, and 
 
 ### .NET add-ins not using .NET Standard (warning)
 
-In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, a warning shows if you include .NET add-ins that are compiled with .NET Framework and not with .NET Standard. The capability of using .NET add-ins compiled with .NET Framework will be removed in a later release. 
+In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, a warning shows if you include .NET add-ins that are compiled with .NET Framework and not with .NET Standard. The capability of using .NET add-ins compiled with .NET Framework will be removed in a later release.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
@@ -412,24 +412,25 @@ Some features are available only under specific circumstances, or not at all int
 
 ## See Also
 
-[Deprecated Features in the Base App](deprecated-features-w1.md)  
-[Deprecated Features in the Austrian Version](deprecated-features-at.md)  
-[Deprecated Features in the Belgian Version](deprecated-features-be.md)  
-[Deprecated Features in the Canadian Version](deprecated-features-ca.md)  
-[Deprecated Features in the Czech Version](deprecated-features-cz.md)  
-[Deprecated Features in the Dutch Version](deprecated-features-nl.md)  
-[Deprecated Features in the Finnish Version](deprecated-features-fi.md)  
-[Deprecated Features in the German Version](deprecated-features-de.md)  
-[Deprecated Features in the Icelandic Version](deprecated-features-is.md)  
-[Deprecated Features in the Italian Version](deprecated-features-it.md)  
-[Deprecated Features in the Mexican Version](deprecated-features-mx.md)  
-[Deprecated Features in the Norwegian Version](deprecated-features-no.md)  
-[Deprecated Features in the Russian Version](deprecated-features-ru.md)  
-[Deprecated Features in the Swedish Version](deprecated-features-se.md)  
-[Deprecated Features in the Swiss Version](deprecated-features-ch.md)  
-[Deprecated Features in the UK Version](deprecated-features-uk.md)  
-[Deprecated Features in the United States Version](deprecated-features-us.md)  
+[Deprecated Features in the Base App](deprecated-features-w1.md)
+[Deprecated Features in the Austrian Version](deprecated-features-at.md)
+[Deprecated Features in the Belgian Version](deprecated-features-be.md)
+[Deprecated Features in the Canadian Version](deprecated-features-ca.md)
+[Deprecated Features in the Czech Version](deprecated-features-cz.md)
+[Deprecated Features in the Dutch Version](deprecated-features-nl.md)
+[Deprecated Features in the Finnish Version](deprecated-features-fi.md)
+[Deprecated Features in the German Version](deprecated-features-de.md)
+[Deprecated Features in the Icelandic Version](deprecated-features-is.md)
+[Deprecated Features in the Italian Version](deprecated-features-it.md)
+[Deprecated Features in the Mexican Version](deprecated-features-mx.md)
+[Deprecated Features in the Norwegian Version](deprecated-features-no.md)
+[Deprecated Features in the Russian Version](deprecated-features-ru.md)
+[Deprecated Features in the Swedish Version](deprecated-features-se.md)
+[Deprecated Features in the Swiss Version](deprecated-features-ch.md)
+[Deprecated Features in the UK Version](deprecated-features-uk.md)
+[Deprecated Features in the United States Version](deprecated-features-us.md)
 [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](deprecated-fields.md)
-[Deprecated Tables](deprecated-tables.md)  
-[AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)  
-[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  
+[Deprecated Tables](deprecated-tables.md)
+[ALAppExtensions repository (legacy)](https://github.com/microsoft/ALAppExtensions)
+[BCApps repository (substutute for ALAppExtensions)](https://github.com/microsoft/BCApps)
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)

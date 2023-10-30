@@ -1,6 +1,6 @@
 ---
 title:  Azure Function Integration Telemetry
-description: Learn about telemetry on Azure Function integrations with Business Central  
+description: Learn about telemetry on Azure Function integrations with Business Central
 author: KennieNP
 ms.topic: conceptual
 ms.devlang: na
@@ -12,7 +12,7 @@ ms.author: kepontop
 ---
 # Analyzing Azure Function Integration Telemetry
 
-Azure Function integration telemetry gathers data about the success or failure of calls from Business Central to Azure Functions using the [Azure Function module](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20Function/readme.md) in the System Application.
+Azure Function integration telemetry gathers data about the success or failure of calls from Business Central to Azure Functions using the [Azure Function module](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function) in the System Application.
 
 Failed operations result in a trace log entry that includes a reason for the failure.
 
@@ -73,7 +73,7 @@ Occurs when a request to an Azure function hosted from the URL {alFunctionHost} 
 |alStatusCode| The HTTP status code for the request. |
 
 
-### Sample KQL code 
+### Sample KQL code
 This KQL code can help you get started analyzing and alerting on request failures to Azure functions:
 
 ```kql
@@ -113,7 +113,7 @@ Occurs when the environment was scheduled to be updated, but it wasn't possible 
 |eventId|**AL0000I75**|
 |alErrorText|The reason for the failure.|
 
-### Sample KQL code 
+### Sample KQL code
 This KQL code can help you get started analyzing and alerting on failures to authorize to Azure functions:
 
 ```kql
@@ -138,8 +138,8 @@ traces
 
 ## See also
 
-[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
-[Alert on Telemetry](telemetry-alert.md)   
-[Connecting to Azure Functions](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)   
-[Overview of the System Application](../developer/devenv-system-application-overview.md)   
+[Monitoring and Analyzing Telemetry](telemetry-overview.md)
+[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)
+[Alert on Telemetry](telemetry-alert.md)
+[Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)
+[Overview of the System Application](../developer/devenv-system-application-overview.md)

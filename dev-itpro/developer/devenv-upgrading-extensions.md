@@ -17,7 +17,7 @@ This article provides information about how to make a newer version of extension
 > [!NOTE]
 > An *upgrade* is defined as enabling an extension that has a greater version number, as defined in the app.json file, than the current installed extension version.
 
-> [!NOTE]  
+> [!NOTE]
 > It's recommended to upgrade extensions that require extensive code logic upgrade outside of business hours. The upgrade might affect users working with the business logic.
 
 ## Writing upgrade code
@@ -83,7 +83,7 @@ In most cases, it's important, that upgrade code isn't run more than once. There
 |--------|--------------|-------------|
 |Large application with many versions||x|
 |Extension version changes frequently, for example more than once a year||x|
-|Version is set manually|x|| 
+|Version is set manually|x||
 |When checking whether it's a first-time installation. In this case, comparing with 0.0.0.0|x||
 |Fixing a broken upgrade||x|
 
@@ -101,7 +101,7 @@ The `AppVersion` is one of the available properties and its value differs depend
 Another one of the more important properties is the `DataVersion` property, that represents the value of most recently installed/uninstalled/upgraded version of the extension, meaning that it reflects the most recent version of the data on the system, be that from the currently installed, or a previously uninstalled extension. The `DataVersion` property value differs depending on the context of the code being run:
 
 - Normal operation: `DataVersion` represents the version of the currently installed extension, in which case it's identical to the `AppVersion` property.
-- Installation code: 
+- Installation code:
     - Reinstallation (applying the same version): `DataVersion` represents the version of the extension you're trying to install (identical to the `AppVersion` property).
     - New installation: `DataVersion` represents the value of '0.0.0.0' that's used to indicate there's no data.
 - Upgrade code:
@@ -129,7 +129,7 @@ codeunit 50100 MyUpgradeCodeunit
 
     trigger OnUpgradePerDatabase()
     begin
-        NavApp.RestoreArchiveData(Database::"TableName");      
+        NavApp.RestoreArchiveData(Database::"TableName");
     end;
 }
 ```
@@ -146,7 +146,7 @@ Although you can control upgrade code by checking versions, this pattern becomes
 Upgrade tags are implemented as part the **Upgrade Tags** module of the system application. The module provides an API that you can code against to control your upgrade code.
 
 > [!TIP]
-> If you want to implement your own upgrade tagging functionality, or get a better understanding of the code behind implementation in the system application, see [Upgrade Tags](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Upgrade%20Tags) in the ALAppExtensions repository on GitHub.
+> If you want to implement your own upgrade tagging functionality, or get a better understanding of the code behind implementation in the system application, see [Upgrade Tags](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Upgrade%20Tags) in the BCApps repository.
 
 The **Upgrade Tags**  module consists of several AL objects. In particular, it includes codeunit 9999 "Upgrade Tag" for creating and handling upgrade tags and table 9999 "Upgrade Tags" for storing them.
 
@@ -174,20 +174,20 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 > Use upgrade tags only for upgrade purposes.
 
 1. Use the following construct around the upgrade code to check for and add an upgrade tag.
-        
+
     ```AL
     // Check whether upgrade tag exists
     if UpgradeTag.HasUpgradeTag(UpgradeTagValue) then
       exit;
-    
+
     // Upgrade code
-    
+
     // Add the new upgrade tag using SetUpgradeTag or SetAllUpgradeTags
-    UpgradeTag.SetUpgradeTag(UpgradeTagValue); 
+    UpgradeTag.SetUpgradeTag(UpgradeTagValue);
     ```
 
     You can use any value for the upgrade tag, but we recommend that you use the convention [CompanyPrefix]-[ID]-[Description]-[YYYYMMDD], for example, ABC-1234-MyExtensionUpgrade-20201206.
-    
+
 2. Add code to register the upgrade tag for new companies that might eventually be created.
 
     This step ensures that the upgrade code isn't run on the first upgrade because of a missing tag.
@@ -214,7 +214,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
     codeunit 50100 InstallCodeunit
     {
         Subtype=Install;
-    
+
         trigger OnInstallAppPerCompany()
         var
             UpgradeTag: Codeunit "Upgrade Tag";
@@ -306,7 +306,7 @@ codeunit 50101 "ABC Upgrade Tag Definitions"
 
 The extension might start code that you don't want to run during upgrade. The changes done to the data stored in the database will be rolled back. However, things like calls to external web services or physical printing can't be rolled back. Some code, like scheduling tasks, might also throw an error and fail the upgrade.
 
-For example, let's say the extension runs code that prints a check after a purchase invoice is posted for buying shoes. If the upgrade fails, the purchase invoice is rolled back. But the check will still be printed, unless you've implemented a mechanism to prevent printing. 
+For example, let's say the extension runs code that prints a check after a purchase invoice is posted for buying shoes. If the upgrade fails, the purchase invoice is rolled back. But the check will still be printed, unless you've implemented a mechanism to prevent printing.
 
 To avoid this situation, use the session `ExecutionContext`. Depending on the scenario, the system runs a session in a special context for a limited time, which can be either `Normal`, `Install`, `Uninstall`, or `Upgrade`. You get the `ExecutionContext` by calling the [GetExecutionContext method](methods-auto/session/session-getexecutioncontext-method.md). For example, referring the example for printing checks, you could add something like the following code to verify the ExecutionContent before printing the check:
 
@@ -339,7 +339,7 @@ To upgrade to the new extension version, you use the [Sync-NavApp](/powershell/m
     ```
     Publish-NAVApp -ServerInstance BC -Path .\ProswareStuff_1.7.1.0.app -SkipVerification
     ```
-    
+
     This step validates the extension syntax against server instance, and stages it for synchronizing.
 
 3.  Synchronize the new extension version with the database.
@@ -358,10 +358,10 @@ To upgrade to the new extension version, you use the [Sync-NavApp](/powershell/m
 
 ## See Also
 
-[Developing Extensions](devenv-dev-overview.md)  
-[Get Started with AL](devenv-get-started.md)  
-[How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
-[Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
-[Sample Extension](devenv-extension-example.md)  
-[Analyzing Extension Upgrade Telemetry](../administration/telemetry-extension-update-trace.md)  
+[Developing Extensions](devenv-dev-overview.md)
+[Get Started with AL](devenv-get-started.md)
+[How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)
+[Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)
+[Sample Extension](devenv-extension-example.md)
+[Analyzing Extension Upgrade Telemetry](../administration/telemetry-extension-update-trace.md)
 [Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)

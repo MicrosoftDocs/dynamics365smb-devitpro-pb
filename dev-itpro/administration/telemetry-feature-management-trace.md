@@ -1,6 +1,6 @@
 ---
 title: Feature Management telemetry
-description: Learn about the telemetry that is emitted from the Feature Management page in Business Central.  
+description: Learn about the telemetry that is emitted from the Feature Management page in Business Central.
 author: kennienp
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
@@ -11,7 +11,7 @@ ms.reviewer: jsywmer
 
 # Feature management telemetry
 
-**INTRODUCED IN:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1, version 22.0. 
+**INTRODUCED IN:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1, version 22.0.
 
 When new capabilities are added to [!INCLUDE [prod_short](../includes/prod_short.md)] in major updates and minor updates, they might come with the ability to be enabled ahead of time on sandbox and production environments. Enabling a feature is done by administrators using the **Feature Management** page. Each of these changes is logged to telemetry.
 
@@ -38,7 +38,7 @@ Occurs when a user changes the state of a feature on the Feature Management page
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**AL0000JT3** |
 
-### Sample KQL code 
+### Sample KQL code
 This KQL code can help you get started analyzing feature management telemetry or if you want to alert on these changes
 
 ```kql
@@ -57,10 +57,10 @@ traces
 
 ## See Also
 
-[Telemetry Overview](telemetry-overview.md)  
-[Enable Telemetry in Business Central](telemetry-enable-application-insights.md)  
-[Feature Telemetry sample code](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)  
-[System Application Overview](../developer/devenv-system-application-overview.md)  
-[Feature Telemetry System Application Documentation](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)  
-[Feature Telemetry Codeunit Reference Documentation](/dynamics365/business-central/application/reference/system%20application/codeunit/system_application_codeunit_feature_telemetry)  
-[Enabling new features ahead of time](feature-management.md)  
+[Telemetry Overview](telemetry-overview.md)
+[Enable Telemetry in Business Central](telemetry-enable-application-insights.md)
+[Feature Telemetry sample code](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)
+[System Application Overview](../developer/devenv-system-application-overview.md)
+[Feature Telemetry System Application Documentation](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)
+[Feature Telemetry Codeunit Reference Documentation](/dynamics365/business-central/application/reference/system%20application/codeunit/system_application_codeunit_feature_telemetry)
+[Enabling new features ahead of time](feature-management.md)

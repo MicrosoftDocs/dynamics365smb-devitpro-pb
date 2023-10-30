@@ -19,15 +19,15 @@ Your AL code might have to rely on an event to run immediately after a user sign
 
 ## About the OnAfterLogin and OnCompanyOpenCompleted events
 
-The base application subscribes to a platform-based event, `OnCompanyOpenCompleted`, that is also an isolated event, and raises `OnAfterLogin`. We recommend that you subscribe to `OnAfterLogin` in your code, and that you do not subscribe directly to the platform-based event.  
+The base application subscribes to a platform-based event, `OnCompanyOpenCompleted`, that is also an isolated event, and raises `OnAfterLogin`. We recommend that you subscribe to `OnAfterLogin` in your code, and that you do not subscribe directly to the platform-based event.
 
-The `OnAfterLogin` and `OnCompanyOpenCompleted` events are both designed to replace the `OnCompanyOpen` event, which is obsolete and will eventually be removed. The application event subscribes to the platform event, so they are both raised during sign-in when [!INCLUDE [prod_short](includes/prod_short.md)] tries to open the relevant company.  
+The `OnAfterLogin` and `OnCompanyOpenCompleted` events are both designed to replace the `OnCompanyOpen` event, which is obsolete and will eventually be removed. The application event subscribes to the platform event, so they are both raised during sign-in when [!INCLUDE [prod_short](includes/prod_short.md)] tries to open the relevant company.
 
-With the now obsolete `OnCompanyOpen` event, a failure in any event subscriber will stop the sign-in process. This behavior can be problematic for a couple reasons. There may be several subscribers from various extensions, and failures don't necessarily justify preventing the user from signing in. With the `OnAfterLogin` event, and it's sibling platform-based event, the sign-in process continues even though an event subscriber fails.  
+With the now obsolete `OnCompanyOpen` event, a failure in any event subscriber will stop the sign-in process. This behavior can be problematic for a couple reasons. There may be several subscribers from various extensions, and failures don't necessarily justify preventing the user from signing in. With the `OnAfterLogin` event, and it's sibling platform-based event, the sign-in process continues even though an event subscriber fails.
 
 ## Move to the OnAfterLogin event
 
-We recommend subscribing to the `OnAfterLogin` event instead of the OnCompanyOpen event, or even the OnCompanyOpenCompleted event, especially when developing for Business Central online. The `OnAfterLogin` event is published by the [System Initialization](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/System%20Initialization) module in the system application. In general, we recommend that you subscribe to events from the system application rather than directly from the underlying platform.  
+We recommend subscribing to the `OnAfterLogin` event instead of the OnCompanyOpen event, or even the OnCompanyOpenCompleted event, especially when developing for Business Central online. The `OnAfterLogin` event is published by the [System Initialization](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/System%20Initialization) module in the system application. In general, we recommend that you subscribe to events from the system application rather than directly from the underlying platform.
 
 Moving from the OnCompanyOpen event to `OnAfterLogin` is as easy as changing the event subscriber definition. For example, change:
 
@@ -46,4 +46,4 @@ to:
 
 ## See Also
 
-[Isolated Events](devenv-events-isolated.md)  
+[Isolated Events](devenv-events-isolated.md)

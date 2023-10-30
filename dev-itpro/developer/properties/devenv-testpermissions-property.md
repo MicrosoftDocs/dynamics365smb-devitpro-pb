@@ -45,12 +45,12 @@ The default value of `TestPermissions` is `Restrictive`. The **TestPermissions**
 
 Tests have the `TestPermissions` property by default set to `Restrictive`. With the **Permissions Mock** system app in the test framework library, you can mock permissions when running unit tests. The **Permissions Mock** module can be used to add permissions sets to the running test user, or limit the user's permissions.
 
-For more information, see the open source module [Permissions Mock](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/DevTools/TestFramework/TestLibraries/Permissions%20Mock).
+For more information, see the open source test library [Permissions Mock](https://github.com/microsoft/BCApps/tree/main/src/Tools/Test%20Framework/Test%20Libraries/Permissions%20Mock).
 
-> [!NOTE]  
+> [!NOTE]
 > To specify the permission sets that are used by the tests run by a specific test method, use the [TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute).
 
 ## See Also
 
-[Properties](devenv-properties.md)  
+[Properties](devenv-properties.md)
 [TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute)

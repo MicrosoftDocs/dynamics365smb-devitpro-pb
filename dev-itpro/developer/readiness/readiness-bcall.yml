@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Discover all aka.ms links related to Business Central
-summary: Are you looking for an aka.ms link? Look no further.  
+summary: Are you looking for an aka.ms link? Look no further.
 
 metadata:
   title: Find all aka.ms links related to Business Central
@@ -26,7 +26,7 @@ landingContent:
           - text: aka.ms/BCOfficeHours
             url: https://aka.ms/BCOfficeHours
           - text: aka.ms/BCOfficeHoursRecordings
-            url: https://aka.ms/BCOfficeHoursRecordings 
+            url: https://aka.ms/BCOfficeHoursRecordings
 
   - title: Stay up to date
     linkLists:
@@ -46,22 +46,22 @@ landingContent:
             url: https://aka.ms/BCMajorUpdates
           - text: aka.ms/BCUpdateHistory
             url: https://aka.ms/BCUpdateHistory
-          - text: aka.ms/BCIdeas 
+          - text: aka.ms/BCIdeas
             url: https://aka.ms/BCIdeas
           - text: aka.ms/BCNews
             url: https://aka.ms/BCNews
- 
+
   - title: AI innovation and Copilot
     linkLists:
     - linkListType: overview
       links:
         - text: aka.ms/BCAI
           url: https://aka.ms/BCAI
-      
+
   - title: Partner readiness and go to market
     linkLists:
       - linkListType: overview
-        links: 
+        links:
           - text: aka.ms/BCAll
             url: https://aka.ms/BCAll
           - text: aka.ms/BCDocs
@@ -69,7 +69,7 @@ landingContent:
           - text: aka.ms/D365BCDocsContributor
             url: https://aka.ms/D365BCDocsContributor
           - text: aka.ms/BCCountries
-            url: https://aka.ms/BCCountries    
+            url: https://aka.ms/BCCountries
           - text: aka.ms/P2P
             url: https://aka.ms/P2P
           - text: aka.ms/SMBcompetency
@@ -79,7 +79,7 @@ landingContent:
           - text: aka.ms/BCCapabilities
             url: https://aka.ms/BCCapabilities
       - linkListType: get-started
-        links: 
+        links:
           - text: aka.ms/BCPartnerPortal
             url: https://aka.ms/BCPartnerPortal
           - text: aka.ms/BCLearn
@@ -89,9 +89,9 @@ landingContent:
           - text: aka.ms/BCCustomerStories
             url: https://aka.ms/BCCustomerStories
           - text: aka.ms/BCExam
-            url: https://aka.ms/BCExam  
-          
-            
+            url: https://aka.ms/BCExam
+
+
   - title: App development
     linkLists:
       - linkListType: overview
@@ -100,8 +100,8 @@ landingContent:
             url: https://aka.ms/BCPublisher
           - text: aka.ms/BCTech
             url: https://aka.ms/BCTech
-          - text: aka.ms/ALAppExtensions
-            url: https://aka.ms/ALAppExtensions
+          - text: aka.ms/BCApps
+            url: https://aka.ms/BCApps
           - text: aka.ms/ALIssues
             url: https://aka.ms/ALIssues
           - text: aka.ms/Collaborate
@@ -110,8 +110,8 @@ landingContent:
             url: https://aka.ms/BCProtocol
           - text: aka.ms/BusinessCentralLocApps
             url: https://aka.ms/businesscentrallocapps
-          - text: aka.ms/ALAppExtensions
-            url: http://aka.ms/ALAppExtensions
+          - text: aka.ms/BCApps
+            url: http://aka.ms/BCApps
           - text: aka.ms/alguidelines
             url: http://aka.ms/alguidelines
           - text: aka.ms/BCIcons
@@ -207,7 +207,7 @@ landingContent:
           - text: aka.ms/BCgetTeamsApp
             url: https://aka.ms/BCgetTeamsApp
 
-  - title: Reporting and Business intelligence 
+  - title: Reporting and Business intelligence
     linkLists:
       - linkListType: overview
         links:
@@ -236,7 +236,7 @@ landingContent:
           - text: aka.ms/BCDataSync
             url: https://aka.ms/BCDataSync
 
-  - title: Security and support 
+  - title: Security and support
     linkLists:
       - linkListType: overview
         links:
@@ -251,11 +251,11 @@ landingContent:
           - text: aka.ms/BCTroubleshoot
             url: https://aka.ms/Bctroubleshoot
           - text: aka.ms/BCSecurity
-            url: https://aka.ms/BCSecurity 
-          - text: aka.ms/BCCompliance 
+            url: https://aka.ms/BCSecurity
+          - text: aka.ms/BCCompliance
             url: https://aka.ms/BCCompliance
           - text: aka.ms/BCBackups
-            url: https://aka.ms/BCBackups 
+            url: https://aka.ms/BCBackups
 
 
 

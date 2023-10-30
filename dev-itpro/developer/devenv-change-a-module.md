@@ -14,7 +14,7 @@ author: bholtorf
 This topic provides an overview of how to change an existing module.
 
 ## Requirements
-1. Familiarity with development in AL. For more information, see [AL Development](./devenv-get-started.md).  
+1. Familiarity with development in AL. For more information, see [AL Development](./devenv-get-started.md).
 2. Your local repository and development environment are ready. For more information, see [Set Up an Environment for Developing a Module](./devenv-set-up-an-environment.md).
 
 > [!NOTE]
@@ -38,7 +38,9 @@ Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as 
 To create a branch, run the **git checkout -b "YourFeatureBranchName"** command. Afterward, you can start creating a new module.
 
 ## Change an Existing Module
-The following sections provide an example of how to contribute to an existing module. The example is based on a previous contribution to the Base64 Convert module, which has been published in the AlAppExtensions repository. The contribution added support for text encodings other than UTF8. If you're interested, you can view the original pull request at [Pull Request 7676](https://github.com/microsoft/ALAppExtensions/pull/7676).
+The following sections provide an example of how to contribute to an existing module. The example is based on a previous contribution to the Base64 Convert module, which has been published in the legacy ALAppExtensions repository. The contribution added support for text encodings other than UTF8. If you're interested, you can view the original pull request at [Pull Request 7676](https://github.com/microsoft/ALAppExtensions/pull/7676).
+
+For new contributions, please refer to [BCApps repository](https://github.com/microsoft/BCApps).
 
 ### Make Changes to a Module
 Before making changes, make sure you are familiar with the general architecture of system modules. For more information, see [Module Architecture](devenv-blueprint.md). You can also check out the article titled How to add a system module for an example of creating a full system module.
@@ -229,10 +231,10 @@ To submit your changes, follow these steps:
 1. To commit your changes, run the **git commit -m "Your message"** command.
 2. To push your changes, run the **git push** command.
 
-You can now go to your GitHub fork and open a pull request in the AlAppExtensions repository. 
+You can now go to your GitHub fork and open a pull request in the BCApps repository.
 
 ## See Also
-[Become a contributor](https://blogs.msdn.microsoft.com/nav/2018/08/28/become-a-contributor-to-business-central/)  
-[Git going with extensions](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions)  
-[Walkthrough: Contributing to an extension on GitHub](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github)  
-[Create a new module](devenv-new-module.md)  
+[Become a contributor](https://blogs.msdn.microsoft.com/nav/2018/08/28/become-a-contributor-to-business-central/)
+[Git going with extensions](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions)
+[Walkthrough: Contributing to an extension on GitHub](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github)
+[Create a new module](devenv-new-module.md)
