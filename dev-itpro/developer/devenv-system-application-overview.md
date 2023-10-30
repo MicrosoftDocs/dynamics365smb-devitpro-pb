@@ -73,7 +73,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Field Selection|Provides a page where you can look up and select one or more fields from one or more tables. For example, this is useful when you want to set up a KPI on a Role Center.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Field%20Selection)|
 |Filter Tokens|This module enhances filtering by enabling users to enter additional filter tokens. |[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Filter%20Tokens)|
 |Geolocation|Contains functionality that retrieves data about the geographical location of a client device.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Geolocation)|
-|Guided Experience|# Public Objects|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Guided%20Experience)|
+|Guided Experience||[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Guided%20Experience)|
 |Headlines|This module provides methods for constructing headlines on Role Centers.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Headlines)|
 |Image|This module provides an API for working with images in Business Central. The module provide some basic for manipulating images. For example, you might want images to always display in a certain width and height, so we've added the ability to do things like resize and crop images. |[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Image)|
 |Language|Changes the language for Windows and applications, and converts language codes to language IDs, and vice versa. The Language table is a subset of Windows languages. You can add languages, and edit translations and descriptions in the list.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Language)|
@@ -81,7 +81,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Navigation Bar Subscribers|Collection of the default subscribers to system events and corresponding overridable integration events for the Navigation Bar.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Navigation%20Bar%20Subscribers)|
 |OAuth|This module contains supporting tools for authenticating via OAuth 1.0 authorization protocol.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/OAuth)|
 |OAuth2|This module contains tools that support authentication through Microsoft Entra ID using OAuth 2.0 authorization protocols.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/OAuth2)|
-|OAuthClientAddIn|# Introduction|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/OAuthClientAddIn)|
+|OAuthClientAddIn||[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/OAuthClientAddIn)|
 |Object Selection|The module provides a page to select application objects.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Object%20Selection)|
 |Page Action Provider|This module contains functionality for providing home items and the associated view actions for user's current role center page.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Page%20Action%20Provider)|
 |Page Summary Provider|This contains functionality for providing summary data for a given page. Depending on the given page, the returned summary data can be of different types (Caption, Brick fields, Dropdown fields, First N fields, etc.)|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Page%20Summary%20Provider)|
@@ -98,7 +98,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Rest Client||[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Rest%20Client)|
 |Retention Policy|Administrators can define retention policies to specify how frequently they want Business Central to delete outdated data in tables that contain log entries and archived records. For example, cleaning up log entries can make it easier to work with the data that's actually relevant. Policies can include all data in the tables that is past the expiration date, or you can add filter criteria that will include only certain expired data in the policy.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Retention%20Policy)|
 |Satisfaction Survey|This module provides methods for presenting a satisfaction survey to users.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Satisfaction%20Survey)|
-|Secrets|This module contains secret providers. Use this module to do the following:|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Secrets)|
+|Secrets|This module contains secret providers |[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Secrets)|
 |Security Groups||[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Security%20Groups)|
 |Server Settings|This module provides methods for retrieving server configuration settings.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Server%20Settings)|
 |SharePoint|Provides functions to interact with SharePoint REST API|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint)|
@@ -106,11 +106,11 @@ The list of modules is growing continuously. The following table lists and descr
 |SmartList Designer Subscribers|Collection of the default subscribers to system events and corresponding overridable integration events for the SmartList Designer.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SmartList%20Designer%20Subscribers)|
 |System Initialization|This module contains functionality for initializing the application.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/System%20Initialization)|
 |System Permissions||[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/System%20Permissions)|
-|Table Information|The Table Information page shows information about database tables. The page contains the following fields:|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Table%20Information)|
+|Table Information|The Table Information page shows information about database tables.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Table%20Information)|
 |Telemetry|Provides functionality for emitting telemetry about feature usage and uptake.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)|
 |Tenant License State|This module provides methods for retrieving the current state of the tenant license, and the start and end dates of the license.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Tenant%20License%20State)|
 |Time Zone Selection|Exposes ability for selecting and displaying time zones.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Time%20Zone%20Selection)|
-|Translation|# Introduction|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Translation)|
+|Translation||[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Translation)|
 |Upgrade Tags|This module provides functionality for ensuring that the upgrade code is run only one time.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Upgrade%20Tags)|
 |URI|This module provides functionality to work with URIs.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/URI)|
 |User Login Times|This module provides functionality for keeping track of when users sign in.|[Link](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/User%20Login%20Times)|
@@ -182,7 +182,7 @@ UnPublish-BCContainerApp -containerName $containerName `
 
 4. In Visual Studio Code, run the **AL:Go!** command to create a new AL Project, and then choose **4.0** as the **Target Platform**.
 
-  > [!Note]
+  > [!Note]  
   > The alProjectFolder must be in a location that is shared with the container. For example, a folder in C:\ProgramData\BCContainerHelper will work.
 
 5. When your project is created, follow these steps:
@@ -212,4 +212,4 @@ Publish-BCContainerApp -containerName $containerName `
 8. You can share your enhancements with others. For more information, see [Git Going with Extensions](https://community.dynamics.com/business/b/businesscentraldevitpro/posts/quot-git-quot-going-with-extensions). The only difference in the guidance is that you must use a container instead of a cloud sandbox.  -->
 
 ## See Also
-[BCApps](https://github.com/microsoft/BCApps)
+[BCApps](https://github.com/microsoft/BCApps)  
