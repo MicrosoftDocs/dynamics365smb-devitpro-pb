@@ -60,7 +60,7 @@ page 50100 MyCopilotPage
 
             systemaction(Ok)
             {
-                Caption = 'Accept the suggestion'; // The Caption and Tooltip of system actions can be modified.
+                Caption = 'Keep it'; // The Caption and Tooltip of system actions can be modified.
             }
         }
     }
