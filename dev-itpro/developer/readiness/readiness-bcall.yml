@@ -100,8 +100,8 @@ landingContent:
             url: https://aka.ms/BCPublisher
           - text: aka.ms/BCTech
             url: https://aka.ms/BCTech
-          - text: aka.ms/BCApps
-            url: https://aka.ms/BCApps
+          - text: aka.ms/ALAppExtensions
+            url: https://aka.ms/ALAppExtensions
           - text: aka.ms/ALIssues
             url: https://aka.ms/ALIssues
           - text: aka.ms/Collaborate
