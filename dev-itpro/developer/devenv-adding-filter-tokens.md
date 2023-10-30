@@ -22,14 +22,14 @@ You can add custom filter tokens and make these available in any language and ac
 To create the token word, start by defining a multi-language text string for your word. Subscribe to the `OnResolveTextFilterToken` event associated with the `MakeTextFilter` method from the `Filter Tokens` codeunit.
 In the event subscriber, if the value of the `TextToken` parameter contains the token string, process its value and construct the final filter string. If the filter string must contain multiple values, you must handle the operators that join them by adding the `|` filter symbol (OR operation). Complete the operation by setting the value of the `TextFilter` parameter to the value of the final filter string.
 
-> [!TIP]
+> [!TIP]  
 > Filter criteria will often contain symbols along with filter tokens. We recommend that you only modify the filter token you have introduced and preserve the rest of the filter string.
 
 ## Example
 
 This example shows how you can use the guidelines above to create the **%MYTOKEN** filter token. This will return a filter with the accounts marked as favorite by the user.
 
-> [!NOTE]
+> [!NOTE]  
 > To keep this sample short and simple, the entire filter string is overwritten.
 
 ```AL
