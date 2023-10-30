@@ -59,10 +59,10 @@ There are three kinds of events that a feature can log through the Feature Telem
 * `LogUsage` should be called when the feature is successfully used by a user.
 * `LogError` should be called when an error must be explicitly sent to telemetry. For example, after a call to a try function, when `Codeunit.Run` returned false, when sending an http response error message, and so on.
 * `LogUptake` should be called when a user changes the uptake state of a feature. There are four uptake states for features:
-  * `Undiscovered`
-  * `Discovered`
-  * `Set up`
-  * `Used`
+  * `Undiscovered` 
+  * `Discovered` 
+  * `Set up` 
+  * `Used` 
 
 > [!NOTE]
 > Tracking the uptake status of a feature may make database transactions. If `LogUptake` is called from within a try function, the `PerformWriteTransactionsInASeparateSession` parameter should be set to `True`.
