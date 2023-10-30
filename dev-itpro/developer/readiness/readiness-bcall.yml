@@ -90,7 +90,9 @@ landingContent:
             url: https://aka.ms/BCCustomerStories
           - text: aka.ms/BCExam
             url: https://aka.ms/BCExam  
-          
+          - text: aka.ms/BCConcierge
+            url: https://aka.ms/BCConcierge  
+                    
             
   - title: App development
     linkLists:
