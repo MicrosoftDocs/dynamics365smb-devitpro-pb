@@ -57,10 +57,10 @@ traces
 
 ## See Also
 
-[Telemetry Overview](telemetry-overview.md)
-[Enable Telemetry in Business Central](telemetry-enable-application-insights.md)
-[Feature Telemetry sample code](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)
-[System Application Overview](../developer/devenv-system-application-overview.md)
-[Feature Telemetry System Application Documentation](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)
-[Feature Telemetry Codeunit Reference Documentation](/dynamics365/business-central/application/reference/system%20application/codeunit/system_application_codeunit_feature_telemetry)
-[Enabling new features ahead of time](feature-management.md)
+[Telemetry Overview](telemetry-overview.md)  
+[Enable Telemetry in Business Central](telemetry-enable-application-insights.md)  
+[Feature Telemetry sample code](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)  
+[System Application Overview](../developer/devenv-system-application-overview.md)  
+[Feature Telemetry System Application Documentation](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)  
+[Feature Telemetry Codeunit Reference Documentation](/dynamics365/business-central/application/reference/system%20application/codeunit/system_application_codeunit_feature_telemetry)  
+[Enabling new features ahead of time](feature-management.md)  
