@@ -30,8 +30,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Stay up to date
 
-- Discover what's new for partners in the [!INCLUDE [prod_short](../includes/prod_short.md)] newsletter: [aka.ms/BCNews](https://aka.ms/BCNews)
-- Watch the what’s new launch event sessions: [aka.ms/BCLE](https://aka.ms/BCLE) 
+- Watch the what's new launch event sessions: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
 - Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
