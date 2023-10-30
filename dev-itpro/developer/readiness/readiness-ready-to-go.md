@@ -118,6 +118,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Set up DevOps for your AppSource apps: [aka.ms/AL-Go-AppSource](https://aka.ms/AL-Go-AppSource)
 - Ask your question related to AppSource in the AppSource group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
 - Development of a localization app: [aka.ms/BusinessCentralLocApps](https://aka.ms/businesscentrallocapps) 
+- Transact capability for Business Central Apps on Microsoft AppSource: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
 
 ## Developing customer specific solutions
 
