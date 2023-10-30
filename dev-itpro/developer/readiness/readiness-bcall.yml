@@ -157,6 +157,8 @@ landingContent:
             url: https://aka.ms/BCMigrations
           - text: aka.ms/BCAndGP
             url: https://aka.ms/BCAndGP
+          - text: aka.ms/BCCloudMigrationYammer
+            url: https://aka.ms/bccloudmigrationyammer
 
   - title: Telemetry and performance
     linkLists:
