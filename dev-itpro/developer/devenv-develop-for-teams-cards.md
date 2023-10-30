@@ -357,7 +357,7 @@ In the code, the **Vendor Role Name** field is defined in a table extension obje
 
 ## See Also
 
-[FAQ for Teams Integration](devenv-dev-faq-teams.md)
-[Field Groups](devenv-field-groups.md)
-[Designing List Pages](devenv-designing-list-pages.md)
-[Working With Media on Records](devenv-working-with-media-on-records.md)
+[FAQ for Teams Integration](devenv-dev-faq-teams.md)  
+[Field Groups](devenv-field-groups.md)  
+[Designing List Pages](devenv-designing-list-pages.md)  
+[Working With Media on Records](devenv-working-with-media-on-records.md)  
