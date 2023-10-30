@@ -90,6 +90,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online: [aka.ms/BCMigrations](https://aka.ms/BCMigrations)  
 - Use migration tooling: [Migrate Data](../../administration/migrate-data.md) 
+- Get answers to questions and information regarding managing migrations to Business Central online: [aka.ms/BCCloudMigrationYammer](https://aka.ms/bccloudmigrationyammer)
 
 ## Getting support
 
