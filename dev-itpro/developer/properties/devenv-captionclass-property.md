@@ -44,7 +44,7 @@ When you set the **CaptionClass property** on a field, users can configure the c
 > - 2 is for captions of fields that can include or not VAT. For example, if `CaptionClass = '2,0,Invoice Amount';`  the resulting caption in the UI will be **Invoice Amount Excl. VAT**. If `CaptionClass = '2,1,Invoice Amount';`  the resulting caption in the UI will be **Invoice Amount Incl. VAT**.
 > - 3 returns the `<Caption Expression>` string. In the example in the above section, "3" returns the `<Caption Expression>` that is **My awesome caption**.
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > If you omit the pattern of `'<Caption Area>, <Caption Expression>'`, the caption becomes the value of whatever string has been given to the `CaptionClass` property. This means that you can use an expression such as `CaptionClass = ItemRec.Fieldcaption("Location Code");` as long as the returned data type is Text.
 
 ### Caption Class
@@ -99,6 +99,6 @@ codeunit 50000 "MyCaptionClassMgmt"
 
 ## See Also
 
-[CaptionML Property](devenv-captionml-property.md)
-[Caption Property](devenv-caption-property.md)
-[CaptionClassTranslate Method](../methods-auto/system/system-captionclasstranslate-method.md)
+[CaptionML Property](devenv-captionml-property.md)  
+[Caption Property](devenv-caption-property.md)  
+[CaptionClassTranslate Method](../methods-auto/system/system-captionclasstranslate-method.md)  

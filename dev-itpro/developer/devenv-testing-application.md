@@ -150,12 +150,12 @@ We recommend the following best practices for designing your application tests:
 <!-- TO DO: Add articles for the links below-->
 ## See Also
  <!--[Application Test Automation](Application-Test-Automation.md)   -->
-[Testing Pages](devenv-Testing-Pages.md)
-<!--[Testing with Permission Sets](devenv-testing-with-permission-sets.md) -->
-[Create Handler Methods](devenv-creating-handler-methods.md)
-[Test Codeunits and Test Methods](devenv-test-codeunits-and-test-methods.md)
-[Application Testing Example: Testing Purchase Invoice Discounts](devenv-test-application-example-purchase-invoice-discounts.md)
-[Random Test Data](devenv-Random-Test-Data.md)
-[Testing the Advanced Extension Sample](devenv-extension-advanced-example-test.md)
+[Testing Pages](devenv-Testing-Pages.md)  
+<!--[Testing with Permission Sets](devenv-testing-with-permission-sets.md) -->  
+[Create Handler Methods](devenv-creating-handler-methods.md)  
+[Test Codeunits and Test Methods](devenv-test-codeunits-and-test-methods.md)  
+[Application Testing Example: Testing Purchase Invoice Discounts](devenv-test-application-example-purchase-invoice-discounts.md)  
+[Random Test Data](devenv-Random-Test-Data.md)  
+[Testing the Advanced Extension Sample](devenv-extension-advanced-example-test.md)  
 <!--[How to: Run Automated ApplicationTests](How-to--Run-Automated-ApplicationTests.md)   -->
 <!--[Walkthrough: Create a Test with Confirmation Dialog](Walkthrough--Create-a-Test-with-Confirmation-Dialog.md)  -->

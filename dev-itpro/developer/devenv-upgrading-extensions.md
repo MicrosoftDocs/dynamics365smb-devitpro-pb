@@ -14,10 +14,10 @@ ms.topic: conceptual
 
 This article provides information about how to make a newer version of extension upgrade available on tenants. The first phase of the process is to develop the extension for upgrading. In this phase, you add code to upgrade data from the previous extension version. Once you have the upgrade code in place, you can publish and synchronize the new version, and the run the data upgrade.
 
-> [!NOTE]
+> [!NOTE]  
 > An *upgrade* is defined as enabling an extension that has a greater version number, as defined in the app.json file, than the current installed extension version.
 
-> [!NOTE]
+> [!NOTE]  
 > It's recommended to upgrade extensions that require extensive code logic upgrade outside of business hours. The upgrade might affect users working with the business logic.
 
 ## Writing upgrade code
@@ -358,10 +358,10 @@ To upgrade to the new extension version, you use the [Sync-NavApp](/powershell/m
 
 ## See Also
 
-[Developing Extensions](devenv-dev-overview.md)
-[Get Started with AL](devenv-get-started.md)
-[How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)
-[Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)
-[Sample Extension](devenv-extension-example.md)
-[Analyzing Extension Upgrade Telemetry](../administration/telemetry-extension-update-trace.md)
-[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)
+[Developing Extensions](devenv-dev-overview.md)  
+[Get Started with AL](devenv-get-started.md)  
+[How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
+[Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
+[Sample Extension](devenv-extension-example.md)  
+[Analyzing Extension Upgrade Telemetry](../administration/telemetry-extension-update-trace.md)  
+[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)  

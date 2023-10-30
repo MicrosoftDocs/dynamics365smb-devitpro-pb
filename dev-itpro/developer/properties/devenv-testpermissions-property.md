@@ -47,10 +47,10 @@ Tests have the `TestPermissions` property by default set to `Restrictive`. With 
 
 For more information, see the open source test library [Permissions Mock](https://github.com/microsoft/BCApps/tree/main/src/Tools/Test%20Framework/Test%20Libraries/Permissions%20Mock).
 
-> [!NOTE]
+> [!NOTE]  
 > To specify the permission sets that are used by the tests run by a specific test method, use the [TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute).
 
 ## See Also
 
-[Properties](devenv-properties.md)
-[TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute)
+[Properties](devenv-properties.md)  
+[TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute)  
