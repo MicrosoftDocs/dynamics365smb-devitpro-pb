@@ -136,6 +136,10 @@ landingContent:
             url: https://aka.ms/AL-Go-PTE
           - text: aka.ms/NewALModule
             url: https://aka.ms/NewALModule
+          - text: aka.ms/BCAPI
+            url:  https://aka.ms/BCAPI
+          - text: aka.ms/BCCustomAPI
+            url: https://aka.ms/BCCustomAPI
 
   - title: Customer onboarding and migration
     linkLists:

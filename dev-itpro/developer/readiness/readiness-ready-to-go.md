@@ -109,6 +109,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Build solutions that link to [!INCLUDE [prod_short](../includes/prod_short.md)] mobile app: [aka.ms/BCProtocol](https://aka.ms/BCProtocol)
 - Troubleshoot issues with [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCTroubleshoot](https://aka.ms/bctroubleshoot)
 - Browse the images/icons available for the action bar: [aka.ms/BCIcons](https://aka.ms/BCIcons)
+- Find the documentation for the latest Business Central APIs to access your Business data: [aka.ms/BCAPI](https://aka.ms/BCAPI)
+- Learn how to develop your own API to use Business Central data in other products: [aka.ms/BCCustomAPI](https://aka.ms/BCCustomAPI)
 
 ## Developing apps for AppSource
 
