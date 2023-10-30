@@ -181,8 +181,8 @@ The following table describes the parameters of the trigger events:
 
 ## See Also
 
-[Events in AL](devenv-events-in-al.md)
-[Publishing Events](devenv-publishing-events.md)
-[Raising Events](devenv-raising-events.md)
-[Subscribing to Events](devenv-subscribing-to-events.md)
-[Isolated Events](devenv-events-isolated.md)
+[Events in AL](devenv-events-in-al.md)  
+[Publishing Events](devenv-publishing-events.md)  
+[Raising Events](devenv-raising-events.md)  
+[Subscribing to Events](devenv-subscribing-to-events.md)  
+[Isolated Events](devenv-events-isolated.md)  
