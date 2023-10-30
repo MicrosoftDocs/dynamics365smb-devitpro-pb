@@ -38,5 +38,5 @@ Please open an [issue](https://github.com/microsoft/BCApps/issues/new).
 
 ## See Also
 
-[Module Architecture](devenv-blueprint.md)
-[Create a module](devenv-new-module.md)
+[Module Architecture](devenv-blueprint.md)  
+[Create a module](devenv-new-module.md)  

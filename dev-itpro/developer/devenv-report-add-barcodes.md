@@ -273,8 +273,8 @@ To install the fonts, follow the instructions from the font supplier or see [Add
 
 ## See Also
 
-[Request Pages](devenv-request-pages.md)
-[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)
-[Creating a Word Layout Report](devenv-howto-report-layout.md)
-[Developing Extensions](devenv-dev-overview.md)
-[AL Development Environment](devenv-reference-overview.md)
+[Request Pages](devenv-request-pages.md)  
+[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
+[Creating a Word Layout Report](devenv-howto-report-layout.md)  
+[Developing Extensions](devenv-dev-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  

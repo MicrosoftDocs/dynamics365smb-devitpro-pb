@@ -92,5 +92,5 @@ codeunit 50100 UpdateRecommendedContent
 
 ## See also
 
-[Developing for Microsoft Teams Integration](devenv-develop-for-teams.md)
-[Create Business Central tabs for Teams](devenv-develop-for-teams-tabs.md)
+[Developing for Microsoft Teams Integration](devenv-develop-for-teams.md)  
+[Create Business Central tabs for Teams](devenv-develop-for-teams-tabs.md)  

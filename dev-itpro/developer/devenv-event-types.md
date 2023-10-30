@@ -99,7 +99,7 @@ Global events are predefined system events that are automatically raised by vari
 
 Unlike business and integration events which must be programmed, trigger events are predefined events. Trigger events are published by the runtime and they cannot be raised programmatically. There are two types of trigger events: database trigger events and page trigger events.
 
-> [!NOTE]
+> [!NOTE]  
 > Trigger events do not appear as methods in AL for a table or page object.
 
 ###  <a name="DatabaseEvents"></a> Database trigger events

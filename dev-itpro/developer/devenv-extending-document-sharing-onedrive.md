@@ -22,7 +22,7 @@ Standard functionality in Business Central makes it easy for users to store, man
 
 In the application code, the document sharing and OneDrive capabilities are divided between the system application and the base application. The system application provides that platform working with document sharing services&mdash;the base application makes it specific to OneDrive. As an AL developer, you can use the system and base applications to extend the OneDrive capabilities. Or even target another document sharing service.
 
-> [!NOTE]
+> [!NOTE]  
 > The **Share** action was introduced in Business Central 2022 release wave 1.
 
 ## System application
@@ -230,8 +230,8 @@ Yes, when you set record on the Document Sharing temporary table. But we'll prov
 
 ## See Also
 
-[Business Central and OneDrive for Business Integration](/dynamics365/business-central/across-onedrive-overview)
-[Overview of the System Application](devenv-system-application-overview.md)
-[Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module)
-[Module Base Application](/dynamics365/business-central/application/reference/base%20application/)
-[Extending Application Areas](devenv-extending-application-areas.md)
+[Business Central and OneDrive for Business Integration](/dynamics365/business-central/across-onedrive-overview)  
+[Overview of the System Application](devenv-system-application-overview.md)  
+[Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module)  
+[Module Base Application](/dynamics365/business-central/application/reference/base%20application/)  
+[Extending Application Areas](devenv-extending-application-areas.md)  

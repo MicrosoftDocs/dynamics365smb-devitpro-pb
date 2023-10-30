@@ -17,10 +17,10 @@ When you start a new AL project, two JSON files; the `app.json` file and the `la
 
 For information about the `launch.json` file see the article [Launch JSON file](devenv-json-launch-file.md).
 
-> [!NOTE]
+> [!NOTE]  
 > For information about data migration and creating a `migration.json` file, see [The Migration.json File](devenv-migration-json-file.md).
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > The `rad.json` and the `snapshots.json` files should not be modified.
 
 ## App.json file
@@ -67,11 +67,11 @@ The following table describes the settings in the `app.json` file. To see an exa
 
 ## See Also
 
-[Launch JSON file](devenv-json-launch-file.md)
-[AL Development Environment](devenv-reference-overview.md)
-[App Identity](devenv-app-identity.md)
-[Debugging in AL](devenv-debugging.md)
-[Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md)
-[AL Language Extension Configuration](devenv-al-extension-configuration.md)
-[Configure Context-Sensitive Help](../help/context-sensitive-help.md)
-[App Key Vaults](devenv-app-key-vault-overview.md)
+[Launch JSON file](devenv-json-launch-file.md)  
+[AL Development Environment](devenv-reference-overview.md)  
+[App Identity](devenv-app-identity.md)  
+[Debugging in AL](devenv-debugging.md)  
+[Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md)  
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
+[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
+[App Key Vaults](devenv-app-key-vault-overview.md)  
