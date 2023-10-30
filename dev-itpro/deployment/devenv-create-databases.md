@@ -168,6 +168,10 @@ Complete the following steps to get the application up and running on your tenan
 
     For more information, see [Export Permission Sets](../developer/devenv-export-permission-sets.md) and [Special Permission Sets](../administration/administration-special-permission-sets.md).
 
+## Integrating directly on SQL Server objects
+[!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
+
+
 ## See also
 
 [Changing Collation of Existing Database](../cside/cside-change-database-collation.md)  
