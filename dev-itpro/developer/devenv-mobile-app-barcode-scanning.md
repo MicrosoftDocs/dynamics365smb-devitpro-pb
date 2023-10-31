@@ -33,6 +33,27 @@ There are three different supported scenarios for adding barcode scanning to the
 |AL action|An operation or action, like when the page opens, triggers the barcode scanner.|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|
 |Barcode event |events||![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
 
+## Supported barcodes
+
+The barcode scanning capability supports several of the most common 1D and 2D barcode formats, including:​
+
+- QR code​
+- Data Matrix​
+- UPC A​
+- UPC E​
+- EAN 8​
+- EAN 13​
+- Code 39​
+- Code 93​
+- Code 128​
+- Codabar​*
+- ITF​
+- RSS14​*
+- RSS Expanded​*
+- PDF 417​
+- AZTEC​
+
+* Note supported on iOS
 ## Requirements
 
 - The field used for barcode scanning is either [text](datatype) and code data type, which are the only two data types that support barcode scanning.
