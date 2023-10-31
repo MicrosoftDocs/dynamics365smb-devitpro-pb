@@ -19,7 +19,7 @@ ms-service: dynamics365-business-central
 
 # Adding barcode scanning to the mobile app
 
-[!INCLUDE[2023-releasewave2](../includes/2023-releasewave2.md)], update 23.1
+[!INCLUDE[2023-releasewave2](../includes/2023-releasewave2.md)] update 23.1
 
 Business Central offers native barcode scanning support in the mobile app and AL language, enabling developers to provide barcode scanning capability to users of the mobile app. Barcode scanning works on supported phones and tablets, either using the device's camera or a dedicated Android barcode scanner device.
 
@@ -53,12 +53,13 @@ The barcode scanning capability supports several of the most common 1D and 2D ba
 - PDF 417​
 - AZTEC​
 
-* Note supported on iOS
+\* Not supported on iOS devices
+
 ## Requirements
 
-- The field used for barcode scanning is either [text](datatype) and code data type, which are the only two data types that support barcode scanning.
+- The field used for storing scanned barcodes is either [text](methods-auto/text/text-data-type) and [code](methods-auto/code/code-data-type) data type, which are the only two data types that support barcode scanning.
 
-- Business Central app version 4.0 or later
+- Business Central mobile app version 4.0 or later
 
 
 ## Add a barcode scanning button on a field
@@ -92,16 +93,77 @@ pageextension 50101 ItemBarcode extends "Item Card"
 }
 ```
 
-## AL action
+## Trigger from AL logic
 
-AL developers are also able to trigger the barcode scanning UI via an AL-based action, so the barcode scanning can be started via a button, link, or some other semiautomated logic (for instance, when a page is opened). Also supported on iOS and Android platforms, this scenario uses the same camera-based scanning technology as scenario 1 and returns the scanned barcode value to AL code for further processing.
+You can trigger the barcode scanning UI via an AL-based operation to start it start from a button, link, or some other semi-automated logic (for instance, when a page is opened). This scenario uses the same camera-based scanning technology as scenario 1 and returns the scanned barcode value to AL code for further processing.
 
-1. 
+1. Define the barcode scanner provider by declaring the 
+1. Verify the barcode scanner provider exists in context of the client. For example, if the user is using the Business Central web client, it's not available. 
+1. Create the barcode scanner.
+1. Call the camera action on the device.
+
+This following code illustrates how to start the barcode scanning when a page opens.    
+
+```al
+page 50100 "MyALPage"
+{
+    Caption = 'MyPage';
+    PageType = List;
+    ApplicationArea = All;
+    UsageCategory = Lists;
+
+    layout
+    {
+        area(content)
+        {
+        }
+    }
+
+    var
+        [RunOnClient]
+        [WithEvents]
+        CameraBarcodeScannerProvider: DotNet CameraBarcodeScannerProvider; // Step 1
+
+    trigger OnOpenPage()
+    begin
+        if not CameraBarcodeScannerProvider.IsAvailable then begin // Step 2
+            Message('Not available');
+            exit;
+        end;
+
+        CameraBarcodeScannerProvider := CameraBarcodeScannerProvider.Create(); // Step 3
+        CameraBarcodeScannerProvider.RequestBarcodeAsync(); // Step 4
+    end;
+
+    trigger CameraBarcodeScannerProvider::BarcodeAvailable(Barcode: Text; Format: Text)
+    begin
+        Message(Barcode);
+        exit;
+    end;
 
 
-Scenario 3: Barcode event
+    trigger CameraBarcodeScannerProvider::BarcodeFailure(failure: DotNet "CameraBarcodeScannerProviderFailure")
+    begin
+        if failure = failure.Cancel then
+            Message('Cancelled');
+        exit;
 
-This scenario targets professional hardware devices, typically with laser-based barcode scanners, offering greater flexibility to developers. It's only supported by hardware barcode scanners, such as Zebra or Datalogic, running Android 11 and above (there’s no support for iOS). With this scenario, developers register a barcode subscriber that listens for subsequent barcode events on the AL side. When the hardware scans a barcode, its value is sent to the Business Central mobile app and then to AL code. In other words, AL code can intercept an event from an Android device and process the decoded barcode further. Additionally, this scenario supports scanning barcodes and building up a document without interacting with any UI.
+        if failure = failure.NoBarcode then
+            Message('NoBarcode');
+        exit;
+
+        if failure = failure.Error then
+            Message('Error');
+        exit;
+    end;
+}
+```
+
+## Use a barcode event
+
+This scenario targets professional hardware devices, typically with laser-based barcode scanners, offering greater flexibility to developers. It only supports hardware barcode scanners, such as Zebra or Datalogic, running Android 11 and above (there’s no support for iOS). With this scenario, developers register a barcode subscriber that listens for subsequent barcode events on the AL side. When the hardware scans a barcode, its value is sent to the Business Central mobile app and then to AL code. In other words, AL code can intercept an event from an Android device and process the decoded barcode further. Additionally, this scenario supports scanning barcodes and building up a document without interacting with any UI.
+
+
 ## Section heading
 
 <!--add your content here-->
