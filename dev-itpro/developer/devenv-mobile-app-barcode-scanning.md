@@ -73,7 +73,7 @@ This scanning is highly efficient and responsive. Once a barcode is scanned, its
 
 To enable the barcode scanning button on a field, set the [ExtendedDatatype](properties/devenv-extendeddatatype-property.md) property to `Barcode`. You can set ExtendedDatatype on either the field in the table or page. The property instructs  the mobile client to display the barcode button when the page is opened on a supported device.
 
-The following illustrates a code example that adds a field with a barcode scanning button to the **Item** card page.
+The following code shows an example that adds a field with a barcode scanning button to the **Item** card page.
 
 
 ```al
@@ -100,14 +100,14 @@ You can trigger the barcode scanning UI via an AL-based operation to start it st
 The basic steps for implementing this scenario are: 
 
 1. Define the barcode scanner provider by declaring a variable for the CameraBarcodeScannerProvider.
-1. Verify the barcode scanner provider exists in context of the client. For example, if the user is working in the Business Central web client, this step would return false.  
+1. Verify the barcode scanner provider exists in context of the client. For example, if the user is working in the Business Central web client, this step returns false.  
 1. Create the barcode scanner. For example, this step could inside a page action.
 1. Call the camera action on the device.
 1. Depending on whether the barcode is scanned successfully, call either the BarcodeAvailable or BarcodeFailure triggers.
    
 
 
-This following code illustrates a simplified example of how to start the barcode scanning when a page opens.
+This following code shows an example of how to start the barcode scanning when a page opens.
 
 
 > [!TIP]
@@ -168,7 +168,15 @@ page 50100 "MyALPage"
 }
 ```
 
-## Scenario 3: Use a barcode event 
+## Scenario 3: Use a barcode event for barcode scanning device
 
-This scenario targets professional hardware devices, typically with laser-based barcode scanners, offering greater flexibility to developers. It only supports hardware barcode scanners, such as Zebra or Datalogic, running Android 11 and above (there’s no support for iOS). With this scenario, developers register a barcode subscriber that listens for subsequent barcode events on the AL side. When the hardware scans a barcode, its value is sent to the Business Central mobile app and then to AL code. In other words, AL code can intercept an event from an Android device and process the decoded barcode further. Additionally, this scenario supports scanning barcodes and building up a document without interacting with any UI.
+This scenario targets professional hardware devices, typically with laser-based barcode scanners, offering greater flexibility to developers. It only supports hardware barcode scanners, such as Zebra or Datalogic, running Android 11 and above.
+It's designed for warehouse employees who scan multiple items in the in a short span of time, evens seconds. It supports scanning any number of items while AL processes the incoming barcodes​. 
+
+When the scanner scans a barcode, the value is sent to the Business Central mobile app and then to AL code. In other words, AL code intercepts an event from an Android device and processes the decoded barcode. Additionally, this scenario supports scanning barcodes and building up a document without interacting with any UI.
+
+Instruct the 
+
+
+
 
