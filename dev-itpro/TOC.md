@@ -741,6 +741,7 @@
 ##### [Get started developing for the Business Central mobile app](developer/devenv-getting-started-developing-business-central-mobile-app.md)  
 ##### [Designing for different screen sizes on tablet and phone](developer/devenv-designing-different-screen-sizes-tablet-and-phone.md)  
 ##### [Differences and limitations when developing pages for the mobile app](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
+##### [Add barcode scanning to the mobile app](developer/devenv-mobile-app-barcode-scanning.md)
 ##### [Opening the Business Central tablet or phone client from a browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ##### [Example: Developing a sales rep role center for the tablet client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
 
