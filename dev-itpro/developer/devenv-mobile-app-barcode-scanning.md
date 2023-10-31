@@ -97,12 +97,17 @@ pageextension 50101 ItemBarcode extends "Item Card"
 
 You can trigger the barcode scanning UI via an AL-based operation to start it start from a button, link, or some other semi-automated logic (for instance, when a page is opened). This scenario uses the same camera-based scanning technology as scenario 1 and returns the scanned barcode value to AL code for further processing.
 
-1. Define the barcode scanner provider by declaring the 
-1. Verify the barcode scanner provider exists in context of the client. For example, if the user is using the Business Central web client, it's not available. 
-1. Create the barcode scanner.
-1. Call the camera action on the device.
+The basic steps for implementing this scenario are: 
 
-This following code example illustrates how to start the barcode scanning when a page opens.
+1. Define the barcode scanner provider by declaring a variable for the CameraBarcodeScannerProvider.
+1. Verify the barcode scanner provider exists in context of the client. For example, if the user is working in the Business Central web client, this step would return false.  
+1. Create the barcode scanner. For example, this step could inside a page action.
+1. Call the camera action on the device.
+1. Depending on whether the barcode is scanned successfully, call either the BarcodeAvailable or BarcodeFailure triggers.
+   
+
+
+This following code illustrates a simplified example of how to start the barcode scanning when a page opens.
 
 
 > [!TIP]
@@ -139,15 +144,15 @@ page 50100 "MyALPage"
         CameraBarcodeScannerProvider.RequestBarcodeAsync(); // Step 4
     end;
 
-    trigger CameraBarcodeScannerProvider::BarcodeAvailable(Barcode: Text; Format: Text)
+    trigger CameraBarcodeScannerProvider::BarcodeAvailable(Barcode: Text; Format: Text) // Step 5
     begin
         Message(Barcode);
         exit;
     end;
 
 
-    trigger CameraBarcodeScannerProvider::BarcodeFailure(failure: DotNet "CameraBarcodeScannerProviderFailure")
-    begin
+    trigger CameraBarcodeScannerProvider::BarcodeFailure(failure: DotNet "CameraBarcodeScannerProviderFailure") // Step 5
+    begin 
         if failure = failure.Cancel then
             Message('Cancelled');
         exit;
