@@ -171,12 +171,27 @@ page 50100 "MyALPage"
 ## Scenario 3: Use a barcode event for barcode scanning device
 
 This scenario targets professional hardware devices, typically with laser-based barcode scanners, offering greater flexibility to developers. It only supports hardware barcode scanners, such as Zebra or Datalogic, running Android 11 and above.
-It's designed for warehouse employees who scan multiple items in the in a short span of time, evens seconds. It supports scanning any number of items while AL processes the incoming barcodes​. 
+It's designed for warehouse employees who scan multiple items in the in a short span of time, evens seconds. It supports scanning any number of items while AL processes the incoming barcodes​. Additionally, this scenario supports scanning barcodes and building a document without users interacting with the UI.
 
-When the scanner scans a barcode, the value is sent to the Business Central mobile app and then to AL code. In other words, AL code intercepts an event from an Android device and processes the decoded barcode. Additionally, this scenario supports scanning barcodes and building up a document without interacting with any UI.
+When the scanner scans a barcode, the value is sent to the Business Central mobile app and then to AL code. AL code intercepts an event from an Android device and processes the decoded barcode. 
 
-Instruct the 
+AL developers need to explicitly instruct BC app to start listening for incoming barcodes
+
+Setup per page, meaning that multiple providers can be registered. However, incoming barcodes are always sent to the current page.​
+
+By default the BC app listens to these:
+ 
+    private static final String DEFAULT_INTENT_ACTION = "com.businesscentral.barcode.receive_barcode";
+    private static final String DEFAULT_INTENT_CATEGORY = "com.businesscentral.barcode.receive_category";
+    private static final String DEFAULT_DATA_STRING = "com.businesscentral.receive_barcode.barcode_string";
+    private static final String DEFAULT_DATA_FORMAT = "com.businesscentral.receive_barcode.barcode_format";
 
 
+The basic steps for implementing this scenario are: 
 
-
+1. Specify the barcode scanner provider by declaring a variable for the CameraBarcodeScannerProvider.
+1. Verify the barcode scanner provider exists in context of the client. For example, if the user is working in the Business Central web client, this step returns false.  
+1. Create the barcode scanner. For example, this step could inside a page action.
+1. Call the camera action on the device.
+1. Depending on whether the barcode is scanned successfully, call either the BarcodeAvailable or BarcodeFailure triggers.
+   
