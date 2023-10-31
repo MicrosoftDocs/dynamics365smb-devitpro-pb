@@ -30,31 +30,40 @@ Uses native mobile OS capabilities​
 Can use a dedicated Android barcode ​
 scanner  devices
 
-Business Central offers native barcode scanning support in the mobile app and AL language, which enables developers to add barcode scanning capability to the mobile app. The barcode scanner itself can be either the scanner built in to the device's camera or a dedicated Android barcode scanner device. There are three different approaches to incorporating barcode scanning. The approach you choose depends your desired scenario and what is supported.
+Business Central offers native barcode scanning support in the mobile app and AL language, enabling developers to provide barcode scanning capability to users of the mobile app. Barcode scanning works on supported phones and tablets, either using the device's camera or a dedicated Android barcode scanner device. There are three different supported scenarios for adding barcode scanning to the mobile. The approach you choose depends design needs, the scanner, and the device's operating system. The following table provides an overview. 
 
-
-|Approach|Scenario|DeviceCamera| Dedicated scanner|iOS|Android|
+|Scenario|Description|Device camera| Dedicated scanner|iOS device|Android device|
 |-|-|-|-|-|-|
-|UI button on a field|The user scans a barcode by manually selecting a button next to a field|x|x||x|x|
-|AL action|The user scans a barcode by manually selecting an action on the page|x|x||x|x|
-|Barcode event |||x|x||x|x|
+|UI button on a field|The user scans a barcode by manually selecting a button next to a field|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|
+|AL action|An operation or action, like when the page opens, triggers the barcode scanner.|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|
+|Barcode event |events||![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
 
 The new barcode scanning feature supports three different scenarios, each with varying levels of complexity. The scenarios range from simple user interface (UI) features to more advanced approaches that cater to ISVs.
 
 
- [!IMPORTANT]
-> Barcode scanning is only supported on [text data type](datatype) and code data type fields. App version 4.0
+## Requirements
+
+- The field used for barcode scanning is either [text](datatype) and code data type, which are the only two data types that support barcode scanning.
+
+- Business Central app version 4.0 or later
 
 
 ## Add a barcode scanning button on a field
 
-The simplest way to provide barcode scanning capability in the mobile app is by adding a button on a field that starts the barcode scanner capability of the device's camera. This scanning is highly efficient and responsive, featuring mobile OS level processing and supporting the most well-known 1D and 2D barcode formats. Once a barcode is scanned, its value is entered in the field on the page, and the focus moves to the next quick-entry field on the page. 
+The simplest way to provide barcode scanning capability in the mobile app is by adding a barcode scanning button on a field that starts the barcode scanner capability of the device's camera. 
 
-To enable the barcode scanning action on a field, set the [ExtendedDatatype](properties/devenv-extendeddatatype-property.md) property to `Barcode`. You can set ExtendedDatatype on either the field in the table or page.  
+![Shows the barcode scanning button an an item card](media/barcode-scanning-button.png)
+
+This scanning is highly efficient and responsive. Once a barcode is scanned, its value is entered in the field on the page, and the focus moves to the next quick-entry field on the page. 
+
+
+To enable the barcode scanning button on a field, set the [ExtendedDatatype](properties/devenv-extendeddatatype-property.md) property to `Barcode`. You can set ExtendedDatatype on either the field in the table or page. The property instructs  the mobile client to display the barcode button when the page is opened on a supported device.
+
+The following illustrates a code example that adds a field with a barcode scanning button to the **Item** card page.
 
 
 ```al
-pageextension 50101 CustomerBarcode extends "Item Card"
+pageextension 50101 ItemBarcode extends "Item Card"
 {
     layout
     {
@@ -79,7 +88,7 @@ AL developers are also able to trigger the barcode scanning UI via an AL-based a
 
 Scenario 3: Barcode event
 
-This scenario targets professional hardware devices, typically with laser-based barcode scanners, offering greater flexibility to developers. It is only supported by hardware barcode scanners, such as Zebra or Datalogic, running Android 11 and above (there’s no support for iOS). With this scenario, developers register a barcode subscriber that listens for subsequent barcode events on the AL side. When the hardware scans a barcode, its value is sent to the Business Central mobile app and then to AL code. In other words, AL code can intercept an event from an Android device and process the decoded barcode further. Additionally, this scenario supports scanning barcodes and building up a document without interacting with any UI.
+This scenario targets professional hardware devices, typically with laser-based barcode scanners, offering greater flexibility to developers. It's only supported by hardware barcode scanners, such as Zebra or Datalogic, running Android 11 and above (there’s no support for iOS). With this scenario, developers register a barcode subscriber that listens for subsequent barcode events on the AL side. When the hardware scans a barcode, its value is sent to the Business Central mobile app and then to AL code. In other words, AL code can intercept an event from an Android device and process the decoded barcode further. Additionally, this scenario supports scanning barcodes and building up a document without interacting with any UI.
 ## Section heading
 
 <!--add your content here-->
