@@ -102,7 +102,11 @@ You can trigger the barcode scanning UI via an AL-based operation to start it st
 1. Create the barcode scanner.
 1. Call the camera action on the device.
 
-This following code illustrates how to start the barcode scanning when a page opens.    
+This following code example illustrates how to start the barcode scanning when a page opens.
+
+
+> [!TIP]
+> For a detailed implementation in the Business Central base application, refer to source code of the **Item Tracking Lines** page (ItemTrackingLines.Page.al).
 
 ```al
 page 50100 "MyALPage"
@@ -159,16 +163,7 @@ page 50100 "MyALPage"
 }
 ```
 
-## Use a barcode event
+## Scenario 3: Use a barcode event 
 
 This scenario targets professional hardware devices, typically with laser-based barcode scanners, offering greater flexibility to developers. It only supports hardware barcode scanners, such as Zebra or Datalogic, running Android 11 and above (there’s no support for iOS). With this scenario, developers register a barcode subscriber that listens for subsequent barcode events on the AL side. When the hardware scans a barcode, its value is sent to the Business Central mobile app and then to AL code. In other words, AL code can intercept an event from an Android device and process the decoded barcode further. Additionally, this scenario supports scanning barcodes and building up a document without interacting with any UI.
 
-
-## Section heading
-
-<!--add your content here-->
-
-<!--Next steps - Required. Provide at least one next step and no more than three. Include some context so the customer can determine why they would click the link.-->
-## Next steps
-
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
