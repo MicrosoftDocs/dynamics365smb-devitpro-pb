@@ -58,8 +58,8 @@ The barcode scanning capability supports several of the most common 1D and 2D ba
 ## Requirements
 
 - The field used for storing scanned barcodes is either [text](methods-auto/text/text-data-type) and [code](methods-auto/code/code-data-type) data type, which are the only two data types that support barcode scanning.
-
 - Business Central mobile app version 4.0 or later
+- Dedicated barcode scanners must be running Android 11 or later. 
 
 
 ## Scenario 1: Add barcode scanning UI button on field
@@ -93,25 +93,23 @@ pageextension 50101 ItemBarcode extends "Item Card"
 }
 ```
 
-## Scenario 2: Invoke barcode scanning UI programmatically from AL
+## Scenario 2: Invoke barcode scanning programmatically from AL
 
 With this scenario, you add logic in AL to start the barcode scanning UI when a certain operation occurs or conditions are met. For example, barcode scanning can start when a user selects an action or link. Or, when some semi-automated logic or trigger is invoked (for instance, when a page opens). This scenario uses the same camera-based scanning technology as scenario 1 and returns the scanned barcode value to AL code for further processing.
 
 The basic steps for implementing this scenario are: 
 
-1. Define the barcode scanner provider by declaring a variable for the CameraBarcodeScannerProvider.
+1. Define the barcode scanner provider by declaring a DotNet variable for the `CameraBarcodeScannerProvider``.
 1. Verify the barcode scanner provider exists in context of the client. For example, if the user is working in the Business Central web client, this step returns false.  
 1. Create the barcode scanner. For example, this step could inside a page action.
 1. Call the camera action on the device.
-1. Depending on whether the barcode is scanned successfully, call either the BarcodeAvailable or BarcodeFailure triggers.
+1. Depending on whether the barcode is scanned successfully, call either the `BarcodeAvailable` or `BarcodeFailure` triggers.
    
-
-
 This following code shows an example of how to start the barcode scanning when a page opens.
 
 
 > [!TIP]
-> For a detailed implementation in the Business Central base application, refer to source code of the **Item Tracking Lines** page (ItemTrackingLines.Page.al).
+> For a detailed implementation as used in the Business Central base application, refer to source code of the **Item Tracking Lines** page (ItemTrackingLines.Page.al).
 
 ```al
 page 50100 "MyALPage"
@@ -170,13 +168,20 @@ page 50100 "MyALPage"
 
 ## Scenario 3: Integrate a dedicated barcode scanner
 
-This scenario integrates the use of professional hardware barcode scanners, like Zebra or Datalogic, with the mobile app. The design is aimed at enhancing the efficiency of users, like warehouse employees, who need to scan many items at a time. While the user scans a series of items, the system processes the incoming barcodes. <!-- offering greater flexibility to developers.--> <!--It supports hardware barcode scanners, such as Zebra or Datalogic, that run on Android 11 and above. -->
+This scenario enables the use of professional hardware barcode scanners, like Zebra or Datalogic, with the mobile app. The design is aimed at enhancing the efficiency of users, like warehouse employees, who need to scan many items in short period a time. While the user scans a series of items, the system processes the incoming barcodes. <!-- offering greater flexibility to developers.--> <!--It supports hardware barcode scanners, such as Zebra or Datalogic, that run on Android 11 and above. -->
 
 A significant feature of this scenario is that it allows for scanning barcodes and creating a document without the need for user interaction with the UI. When a barcode is scanned, the value is transmitted to the Business Central mobile app and subsequently to the AL code. The AL code then processes the decoded barcode after intercepting an event from the Android device.
 
 
+The tasks for  enabling a dedicated barcode scanner 
+bling a dedciates 
 
-TheSetup per page, meaning that multiple providers can be registered. However, incoming barcodes are always sent to the current page.​
+
+
+
+Barcode scanning is set per page, which means that multiple barcode providers can be registered. However, incoming scanned barcodes are always sent to the current page open in the mobile app.​
+
+
 
 AL developers need to explicitly instruct Business Central app to start listening for incoming barcodes. By default the Business Central app listens to these events from the barcode scanner:
  
