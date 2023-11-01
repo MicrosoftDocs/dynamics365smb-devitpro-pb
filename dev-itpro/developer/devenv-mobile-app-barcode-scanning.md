@@ -30,8 +30,8 @@ There are three different supported scenarios for adding barcode scanning to the
 |Scenario|Description|Device camera| Dedicated scanner|iOS device|Android device|
 |-|-|-|-|-|-|
 |UI button on a field|The user scans a barcode by manually selecting a button next to a field|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|
-|Invoke AL action|An operation or action, like when the page opens, triggers the barcode scanner.|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|
-|Barcode event |events||![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
+|Invoke from AL|Based on AL code, the barcode scanning capability is started when something happens, for example, a page opens, or the user selects a custom action on the page. |![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|
+|Integrate dedicated barcode scanner||![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
 
 ## Supported barcodes
 
@@ -62,7 +62,7 @@ The barcode scanning capability supports several of the most common 1D and 2D ba
 - Business Central mobile app version 4.0 or later
 
 
-## Scenario 1: Add UI button on a field
+## Scenario 1: Add barcode scanning UI button on field
 
 The simplest way to provide barcode scanning capability in the mobile app is by adding a barcode scanning button on a field that starts the barcode scanner capability of the device's camera. 
 
@@ -93,9 +93,9 @@ pageextension 50101 ItemBarcode extends "Item Card"
 }
 ```
 
-## Scenario 2: Invoke via AL logic
+## Scenario 2: Invoke barcode scanning UI programmatically from AL
 
-You can trigger the barcode scanning UI via an AL-based operation to start it start from a button, link, or some other semi-automated logic or trigger (for instance, when a page opens). This scenario uses the same camera-based scanning technology as scenario 1 and returns the scanned barcode value to AL code for further processing.
+With this scenario, you add logic in AL to start the barcode scanning UI when a certain operation occurs or conditions are met. For example, barcode scanning can start when a user selects an action or link. Or, when some semi-automated logic or trigger is invoked (for instance, when a page opens). This scenario uses the same camera-based scanning technology as scenario 1 and returns the scanned barcode value to AL code for further processing.
 
 The basic steps for implementing this scenario are: 
 
@@ -168,21 +168,17 @@ page 50100 "MyALPage"
 }
 ```
 
-## Scenario 3: Use a barcode event for barcode scanning device
+## Scenario 3: Integrate a dedicated barcode scanner
 
-This scenario targets professional hardware devices, typically with laser-based barcode scanners, offering greater flexibility to developers.
+This scenario integrates the use of professional hardware barcode scanners, like Zebra or Datalogic, with the mobile app. The design is aimed at enhancing the efficiency of users, like warehouse employees, who need to scan many items at a time. While the user scans a series of items, the system processes the incoming barcodes. <!-- offering greater flexibility to developers.--> <!--It supports hardware barcode scanners, such as Zebra or Datalogic, that run on Android 11 and above. -->
 
-It supports hardware barcode scanners, such as Zebra or Datalogic, that run on Android 11 and above.
+A significant feature of this scenario is that it allows for scanning barcodes and creating a document without the need for user interaction with the UI. When a barcode is scanned, the value is transmitted to the Business Central mobile app and subsequently to the AL code. The AL code then processes the decoded barcode after intercepting an event from the Android device.
 
-It's designed for warehouse employees who scan multiple items in a short span of time. It supports scanning a number of items while AL processes the incoming barcodes​. 
 
-Additionally, this scenario supports scanning barcodes and building a document without users interacting with the UI.
 
-When the scanner scans a barcode, the value is sent to the Business Central mobile app and then to AL code. AL code intercepts an event from an Android device and processes the decoded barcode. 
+TheSetup per page, meaning that multiple providers can be registered. However, incoming barcodes are always sent to the current page.​
 
-Setup per page, meaning that multiple providers can be registered. However, incoming barcodes are always sent to the current page.​
-
-AL developers need to explicitly instruct Business Central app to start listening for incoming barcodes. By default the Business Central app listens to these :
+AL developers need to explicitly instruct Business Central app to start listening for incoming barcodes. By default the Business Central app listens to these events from the barcode scanner:
  
     private static final String DEFAULT_INTENT_ACTION = "com.businesscentral.barcode.receive_barcode";
     private static final String DEFAULT_INTENT_CATEGORY = "com.businesscentral.barcode.receive_category";
