@@ -61,7 +61,7 @@ The barcode scanning capability supports several of the most common 1D and 2D ba
 - Mobile device is using  Business Central mobile app version 4.0 or later
 - Dedicated barcode scanners must be running Android 11 or later. 
 
-## Scenario 1: Add barcode scanning UI buttons on fields
+## Scenario 1: Add a barcode scanning UI button on a field
 
 The simplest way to provide barcode scanning capability in the mobile app is by adding a barcode scanning button on a field that starts the barcode scanner capability of the device's camera. 
 
