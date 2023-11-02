@@ -174,14 +174,17 @@ A significant benefit of this scenario is that it allows for scanning barcodes a
 
 ### Prepare barcode scanners 
 
-The barcode scanners must be configured to broadcast Android Intent messages for each scanned barcode. Refer to the barcode scanner manufacturer's instruction. For example, see [Configuring the Barcode Scanners on Datalogic Terminals To Work With TSL® Mobile Apps](https://www.tsl.com/configuring-datalogic-terminals-to-work-with-tsl-mobile-apps/).
+For barcode scanners to communicate with the Business Central mobile app, they must be configured to emit Android Intent messages for every scanned barcode. By default, the mobile app is programmed to listen for certain types of messages from the barcode scanners. To enable this communication, you need to adjust the scanner's settings according to the values outlined in the following table:
 
-By default, the Business Central mobile app listens for the following messages: 
- 
-- private static final String DEFAULT_INTENT_ACTION = "com.businesscentral.barcode.receive_barcode";
-- private static final String DEFAULT_INTENT_CATEGORY = "com.businesscentral.barcode.receive_category";
-- private static final String DEFAULT_DATA_STRING = "com.businesscentral.receive_barcode.barcode_string";
-- private static final String DEFAULT_DATA_FORMAT = "com.businesscentral.receive_barcode.barcode_format";
+|Scanner setting|Value|
+|-|-|
+|Intent delivery mode|broadcast intent|
+|Intent action |com.businesscentral.barcode.receive_barcode|
+|Intent category|com.businesscentral.barcode.receive_category|
+|Intent barcode string|com.businesscentral.receive_barcode.barcode_string|
+|Intent barcode type|com.businesscentral.receive_barcode.barcode_format|
+
+Consult the manufacturer's guidelines for your specific scanner to learn how to modify these settings. For instance, if you're using a Datalogic scanner, follow the instructions at [Configuring the Barcode Scanners on Datalogic Terminals To Work With TSL® Mobile Apps](https://www.tsl.com/configuring-datalogic-terminals-to-work-with-tsl-mobile-apps/).
 <!-- 
 
 AL developers need to explicitly instruct Business Central app to listen for incoming barcodes. 
