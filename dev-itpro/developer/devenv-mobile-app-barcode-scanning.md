@@ -184,7 +184,7 @@ For barcode scanners to communicate with the Business Central mobile app, they m
 |Intent barcode string|com.businesscentral.receive_barcode.barcode_string|
 |Intent barcode type|com.businesscentral.receive_barcode.barcode_format|
 
-Consult the manufacturer's guidelines for your specific scanner to learn how to modify these settings. For instance, if you're using a Datalogic scanner, follow the instructions at [Configuring the Barcode Scanners on Datalogic Terminals To Work With TSL® Mobile Apps](https://www.tsl.com/configuring-datalogic-terminals-to-work-with-tsl-mobile-apps/).
+Consult the manufacturer's guidelines for your specific scanner to learn how to modify these settings. For example, if you're using a Datalogic scanner, you can follow the instructions at [Configuring the Barcode Scanners on Datalogic Terminals To Work With TSL® Mobile Apps](https://www.tsl.com/configuring-datalogic-terminals-to-work-with-tsl-mobile-apps/).
 <!-- 
 
 AL developers need to explicitly instruct Business Central app to listen for incoming barcodes. 
