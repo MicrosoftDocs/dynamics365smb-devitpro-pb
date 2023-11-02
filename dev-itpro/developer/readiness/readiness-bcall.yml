@@ -102,8 +102,6 @@ landingContent:
         links:
           - text: aka.ms/BCPublisher
             url: https://aka.ms/BCPublisher
-          - text: aka.ms/BCTech
-            url: https://aka.ms/BCTech
           - text: aka.ms/ALAppExtensions
             url: https://aka.ms/ALAppExtensions
           - text: aka.ms/ALIssues
