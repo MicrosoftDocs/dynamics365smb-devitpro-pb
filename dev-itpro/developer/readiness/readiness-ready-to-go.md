@@ -101,6 +101,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/BCPublisher)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] technology samples: [aka.ms/BCTech](https://aka.ms/BCTech)
+- [!INCLUDE [prod_short](../includes/prod_short.md)] open source sample apps: [aka.ms/BCSamples](https://aka.ms/BCSamples)
 - Maintain your app(s): [Maintain Your App](../app-maintain.md)
 - Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: [github.com/microsoft/al/issues](https://github.com/microsoft/al/issues)
 - Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
