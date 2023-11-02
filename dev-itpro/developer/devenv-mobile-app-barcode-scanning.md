@@ -61,7 +61,7 @@ The barcode scanning capability supports several of the most common 1D and 2D ba
 - Mobile device is using  Business Central mobile app version 4.0 or later
 - Dedicated barcode scanners must be running Android 11 or later. 
 
-## Scenario 1: Add barcode scanning UI button on field
+## Scenario 1: Add barcode scanning UI buttons on fields
 
 The simplest way to provide barcode scanning capability in the mobile app is by adding a barcode scanning button on a field that starts the barcode scanner capability of the device's camera. 
 
@@ -165,7 +165,7 @@ page 50100 "MyALPage"
 }
 ```
 
-## Scenario 3: Integrate a dedicated barcode scanner
+## Scenario 3: Integrate dedicated barcode scanners
 
 This scenario enables the use of professional hardware barcode scanners, like Zebra or Datalogic, with the mobile app. The design is aimed at enhancing the efficiency of users, like warehouse employees, who need to scan many items in the span of a few seconds. While the user scans a series of items, the system processes the incoming barcodes. <!-- offering greater flexibility to developers.--> <!--It supports hardware barcode scanners, such as Zebra or Datalogic, that run on Android 11 and above. -->
 
