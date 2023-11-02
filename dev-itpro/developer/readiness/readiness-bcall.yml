@@ -140,7 +140,12 @@ landingContent:
             url:  https://aka.ms/BCAPI
           - text: aka.ms/BCCustomAPI
             url: https://aka.ms/BCCustomAPI
-
+      - linkListType: sample
+        links:
+          - text: aka.ms/BCTech
+            url: https://aka.ms/BCTech
+          - text: aka.ms/BCSamples
+            url: https://aka.ms/BCSamples      
   - title: Customer onboarding and migration
     linkLists:
       - linkListType: overview
