@@ -102,8 +102,6 @@ landingContent:
         links:
           - text: aka.ms/BCPublisher
             url: https://aka.ms/BCPublisher
-          - text: aka.ms/BCTech
-            url: https://aka.ms/BCTech
           - text: aka.ms/ALAppExtensions
             url: https://aka.ms/ALAppExtensions
           - text: aka.ms/ALIssues
@@ -140,7 +138,12 @@ landingContent:
             url:  https://aka.ms/BCAPI
           - text: aka.ms/BCCustomAPI
             url: https://aka.ms/BCCustomAPI
-
+      - linkListType: sample
+        links:
+          - text: aka.ms/BCTech
+            url: https://aka.ms/BCTech
+          - text: aka.ms/BCSamples
+            url: https://aka.ms/BCSamples      
   - title: Customer onboarding and migration
     linkLists:
       - linkListType: overview
@@ -268,6 +271,5 @@ landingContent:
             url: https://aka.ms/BCCompliance
           - text: aka.ms/BCBackups
             url: https://aka.ms/BCBackups 
-
 
 
