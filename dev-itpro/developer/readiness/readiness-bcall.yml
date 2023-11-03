@@ -138,7 +138,7 @@ landingContent:
             url:  https://aka.ms/BCAPI
           - text: aka.ms/BCCustomAPI
             url: https://aka.ms/BCCustomAPI
-      - linkListType: samples
+      - linkListType: sample
         links:
           - text: aka.ms/BCTech
             url: https://aka.ms/BCTech
@@ -272,5 +272,25 @@ landingContent:
           - text: aka.ms/BCBackups
             url: https://aka.ms/BCBackups 
 
+  - title: Samples 
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCSecurity
+            url: https://aka.ms/BCSecurity
+          - text: aka.ms/BCAppCompliance
+            url: https://aka.ms/BCAppCompliance
+          - text: aka.ms/BCSupport
+            url: https://aka.ms/BCSupport
+          - text: aka.ms/BCFAQ
+            url: https://aka.ms/Bcfaq
+          - text: aka.ms/BCTroubleshoot
+            url: https://aka.ms/Bctroubleshoot
+          - text: aka.ms/BCSecurity
+            url: https://aka.ms/BCSecurity 
+          - text: aka.ms/BCCompliance 
+            url: https://aka.ms/BCCompliance
+          - text: aka.ms/BCBackups
+            url: https://aka.ms/BCBackups 
 
 
