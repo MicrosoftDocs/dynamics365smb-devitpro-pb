@@ -19,7 +19,7 @@ ms-service: dynamics365-business-central
 
 # Adding barcode scanning to the mobile app
 
-> **APPLIES TO:** Business Central 2023 release wave 2 (version 23.1) and later
+> **APPLIES TO:** Business Central 2023 release wave 2 (version 23.0) and later; Business Central mobile app [version 4.0 or later](https://aka.ms/bcmobileapp).
 
 Business Central offers native barcode scanning support in the mobile app and AL language, enabling developers to provide barcode scanning capability to users of the mobile app. Barcode scanning works on supported phones and tablets, either using the device's camera or a dedicated Android barcode scanner device.
 
@@ -58,7 +58,7 @@ The barcode scanning capability supports several of the most common 1D and 2D ba
 ## Requirements
 
 - The field used for storing scanned barcodes is either [text](methods-auto/text/text-data-type) and [code](methods-auto/code/code-data-type) data type, which are the only two data types that support barcode scanning.
-- Mobile device is using  Business Central mobile app version 4.0 or later
+- Mobile device is using Business Central mobile app version 4.0 or later. To download the latest version, go to [https://aka.ms/bcmobileapp](https://aka.ms/bcmobileapp).
 - Dedicated barcode scanners must be running Android 11 or later. 
 
 ## Scenario 1: Add a barcode scanning UI button on a field
