@@ -48,8 +48,6 @@ landingContent:
             url: https://aka.ms/BCUpdateHistory
           - text: aka.ms/BCIdeas 
             url: https://aka.ms/BCIdeas
-          - text: aka.ms/BCNews
-            url: https://aka.ms/BCNews
  
   - title: AI innovation and Copilot
     linkLists:
@@ -57,6 +55,10 @@ landingContent:
       links:
         - text: aka.ms/BCAI
           url: https://aka.ms/BCAI
+    - linkListType: how-to-guide
+      links:
+        - text: aka.ms/BCStartCodingWithAILearn
+          url: https://aka.ms/BCStartCodingWithAILearn
       
   - title: Partner readiness and go to market
     linkLists:
@@ -90,7 +92,9 @@ landingContent:
             url: https://aka.ms/BCCustomerStories
           - text: aka.ms/BCExam
             url: https://aka.ms/BCExam  
-          
+          - text: aka.ms/BCConcierge
+            url: https://aka.ms/BCConcierge  
+                    
             
   - title: App development
     linkLists:
@@ -98,8 +102,6 @@ landingContent:
         links:
           - text: aka.ms/BCPublisher
             url: https://aka.ms/BCPublisher
-          - text: aka.ms/BCTech
-            url: https://aka.ms/BCTech
           - text: aka.ms/ALAppExtensions
             url: https://aka.ms/ALAppExtensions
           - text: aka.ms/ALIssues
@@ -124,13 +126,24 @@ landingContent:
             url: https://aka.ms/CheckBeforeYouSubmit
           - text: aka.ms/TechValidationFAQ
             url: https://aka.ms/TechValidationFAQ
+          - text: aka.ms/BCAppTransact
+            url: https://aka.ms/BCAppTransact
           - text: aka.ms/AL-Go-AppSource
             url: https://aka.ms/AL-Go-AppSource
           - text: aka.ms/AL-Go-PTE
             url: https://aka.ms/AL-Go-PTE
           - text: aka.ms/NewALModule
             url: https://aka.ms/NewALModule
-
+          - text: aka.ms/BCAPI
+            url:  https://aka.ms/BCAPI
+          - text: aka.ms/BCCustomAPI
+            url: https://aka.ms/BCCustomAPI
+      - linkListType: sample
+        links:
+          - text: aka.ms/BCTech
+            url: https://aka.ms/BCTech
+          - text: aka.ms/BCSamples
+            url: https://aka.ms/BCSamples      
   - title: Customer onboarding and migration
     linkLists:
       - linkListType: overview
@@ -153,6 +166,8 @@ landingContent:
             url: https://aka.ms/BCMigrations
           - text: aka.ms/BCAndGP
             url: https://aka.ms/BCAndGP
+          - text: aka.ms/BCCloudMigrationYammer
+            url: https://aka.ms/bccloudmigrationyammer
 
   - title: Telemetry and performance
     linkLists:
@@ -256,6 +271,5 @@ landingContent:
             url: https://aka.ms/BCCompliance
           - text: aka.ms/BCBackups
             url: https://aka.ms/BCBackups 
-
 
 
