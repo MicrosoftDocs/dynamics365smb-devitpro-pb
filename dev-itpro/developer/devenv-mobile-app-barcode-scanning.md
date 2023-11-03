@@ -25,11 +25,11 @@ Business Central offers native barcode scanning support in the mobile app and AL
 
 ## Supported scenarios
 
-There are three different supported scenarios for adding barcode scanning to the mobile. The scenarios have varying levels of complexity. The approach you choose depends design needs, the scanner, and the device's operating system, and whether you're using Business Central online or on-premises. The following table provides an overview. 
+There are three different supported scenarios for adding barcode scanning to the mobile. The scenarios have varying levels of complexity. The approach you choose depends design needs, the scanner, and the device's operating system. The following table provides an overview. 
 
 |Scenario|Description|Device camera| Dedicated scanner|iOS device|Android device|Online|On-premises|
-|-|-|-|-|-|-|
-|UI button on a field|The user scans a barcode by manually selecting a button next to a field|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|
+|-|-|-|-|-|-|-|-|
+|UI button on a field|The user scans a barcode by manually selecting a button next to a field|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|
 |Invoke from AL|Based on AL code, the barcode scanning capability is started when something happens, for example, a page opens, or the user selects a custom action on the page. |![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
 |Integrate dedicated barcode scanner|Enable the use of professional hardware scanners.||![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
 
