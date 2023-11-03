@@ -138,7 +138,7 @@ landingContent:
             url:  https://aka.ms/BCAPI
           - text: aka.ms/BCCustomAPI
             url: https://aka.ms/BCCustomAPI
-      - linkListType: sample
+      - linkListType: samples
         links:
           - text: aka.ms/BCTech
             url: https://aka.ms/BCTech
