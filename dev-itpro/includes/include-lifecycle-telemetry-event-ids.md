@@ -170,3 +170,11 @@
 |LC0183| Environment| [Environment recovery operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-recovery-un-delete-operation-started) |
 |LC0184| Environment| [Environment recovered successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-recovered) |
 |LC0185| Environment| [Environment recovery operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-recovery-un-delete-operation-failed) |
+|LC0200| Per-tenant extension| [PTE validation started: request {submissionId}](../administration/telemetry-pte-upload-validation-trace.md#pte-validation-started) |
+|LC0202| Per-tenant extension| [PTE submission validation request completed successfully: request {submission id}](../administration/telemetry-pte-upload-validation-trace.md#pte-validation-completed-successfully) |
+|LC0203| Per-tenant extension| [PTE validation completed with failures: request {submissionId}](../administration/telemetry-pte-upload-validation-trace.md#pte-validation-completed-with-failures) |
+|LC0204| Per-tenant extension| [Extension validation started: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](../administration/telemetry-pte-upload-validation-trace.md#extension-validation-started) |
+|LC0205| Per-tenant extension| [Extension validation completed successfully: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](../administration/telemetry-pte-upload-validation-trace.md#extension-validation-completed-successfully) |
+|LC0206| Per-tenant extension| [Extension validation completed with failures: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](../administration/telemetry-pte-upload-validation-trace.md#extension-validation-completed-with-failures) |
+|LC0210| Per-tenant extension| [Validation diagnostic reported: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](../administration/telemetry-pte-upload-validation-trace.md#extension-validation-reported) |
+

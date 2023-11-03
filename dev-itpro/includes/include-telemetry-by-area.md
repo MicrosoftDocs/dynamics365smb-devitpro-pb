@@ -17,6 +17,7 @@
 |Error method|Provides information about error dialogs that are shown to the users.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-error-method-trace.md) |
 |Extension lifecycle <sup>[\[2\]](#2)</sup>|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](../administration/telemetry-extension-lifecycle-trace.md) |
 |Extension update|Provides information about errors that occur and upgrade tags used when upgrading an extension.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](../administration/telemetry-extension-update-trace.md) |
+|Extension Upload Validation<sup>[\[9\]](#5)</sup>|Provides information about validations when a user/administrator uploads a per-tenant extension to an environment from the Extension Management page.|![check mark for feature.](../developer/media/check.png)|||[See...](../administration/telemetry-pte-upload-validation-trace.md)|
 |Feature Management<sup>[\[7\]](#7)</sup>|Provides information about the state changes done on the Feature Management page.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-feature-management-trace.md) |
 |Feature telemetry|Provides information about the usage and errors of features.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-feature-telemetry.md)  |
 |Field monitoring trace|Provides information about the usage of the field monitoring feature.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-field-monitoring-trace.md) |
@@ -59,3 +60,5 @@
 <sup>7</sup><a name="7"></a>Introduced in Business Central 2023 release wave 1, version 22.
   
 <sup>8</sup><a name="8"></a>Introduced in Business Central 2023 release wave 1, version 22.1.
+
+<sup>9</sup><a name="9"></a>Introduced in Business Central 2023 release wave 2, version 23.0.
