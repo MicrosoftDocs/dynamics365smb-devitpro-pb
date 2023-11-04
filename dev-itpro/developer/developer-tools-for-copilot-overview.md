@@ -53,7 +53,7 @@ The toolkit introduces the following features:
 - Comprehensive guides and code samples
 
 - Effective monitoring through Power BI
-- 
+
 ## Data governance
 
 Azure OpenAI Service is currently available in select countries/regions. Customers and partners connecting to Azure OpenAI service within their region don't need any extra setup, configuration, or consent. However, when connecting to Azure OpenAI service outside the environment's region, administrators must first approve data movement across regions before any Copilot features can be utilized in Business Central.
