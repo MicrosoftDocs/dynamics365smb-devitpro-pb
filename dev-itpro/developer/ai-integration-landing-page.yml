@@ -27,7 +27,7 @@ metadata:
 landingContent:
 
 # Card
-  - title: CARD TITLE
+  - title: Get started
     linkLists:
     - linkListType: get-started
       links:
@@ -42,14 +42,5 @@ landingContent:
         - text: 
           url: 
 
-# Card
-  - title: CARD TITLE
-    linkLists:
-    - linkListType: overview
-      links:
-        - text: 
-          url: 
-        - text: 
-          url: 
 
 # Remove all comments in this template before you sign off or merge to the main branch
