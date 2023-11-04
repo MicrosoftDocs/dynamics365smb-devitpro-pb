@@ -77,4 +77,4 @@ if Format(MyTime) = Format(MyTime2) then
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[Standard time formats](../../devenv-format-property.md#standard-time-formats.md)
+[Standard time formats](../../devenv-format-property.md#standard-time-formats)
