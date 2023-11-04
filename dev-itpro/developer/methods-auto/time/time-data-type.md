@@ -63,7 +63,7 @@ The [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] undefined time is repre
 
 Due to SQL rounding every 8 milliseconds, two identically entered times might differ in their milliseconds portion and thus would fail in an equation. 
 
-To compare until seconds precision only, you can use a procedure similar to the CompareDateTime method from the [Type Helper codeunit](../../../../../../application/base-application/codeunit/base-application-codeunit-type-helper.md).
+To compare until seconds precision only, you can use a procedure similar to the CompareDateTime method from the [Type Helper codeunit](https://learn.microsoft.com/en-us/dynamics365/business-central/application/base-application/codeunit/base-application-codeunit-type-helper).
 
 Alternatively, use the [Format method](../system/system-format-joker-integer-integer-method.md) to cut off the milliseconds portion, as shown in the following example:
 ```al
