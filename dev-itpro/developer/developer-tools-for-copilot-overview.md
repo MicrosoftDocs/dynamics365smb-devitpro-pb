@@ -32,8 +32,7 @@ The following table outlines the primary intended uses and characteristics of th
 |-|-|
 |Deployment|Business Central online|
 |AI|Generative AI to assist human with complex cognitive tasks|
-|Interaction mode |<br><br>Nonconversational.<br><br>Integrated into business functionality
-with input and output<br><br>Human review required|
+|Interaction mode |Non-conversational, integrated into business functionality with input and output. Human review required|
 
 ## Features
 
