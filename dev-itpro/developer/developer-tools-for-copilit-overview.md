@@ -17,11 +17,33 @@ ms.custom: bap-template #Required; don't change.
 <!--H1. Required. Set expectations for what the content covers, so customers know the content meets their needs. H1 format is # What is {subject}?-->
 # What is Developer Tools for Copilot?
 
-<!--Introductory paragraph. Required. Lead with a light intro that describes what the article covers. Answer the fundamental questions, "why would I want to know this and what is the business value?". Keep it short.-->
-<!--add your intro paragraph here-->
+Azure OpenAI Service offers powerful, generative AI models that our partners can now leverage to deliver a rich ecosystem of AI-powered extensions for Business Central. With only a few lines of AL code, developers can enhance their solutions with generative AI that feels seamlessly integrated into the Business Central user experience and can be delivered as a natural part of their add-ons or customizations.
 
-<!--H2s. Required. Give each H2 a heading that sets expectations for the content that follows. Follow the H2 headings with a sentence about how the section contributes to the whole.-->
-## Section heading
+
+The tools enable you to desing and implement AI solutiuon in a coordance with Responsible AI principles. 
+- Draw attention: Highlight the presence of your AI-powered features using the new Sparkle action image.
+- Keep admins in control: Help customers discover and govern your features by plugging into new administrative screens.
+## Features
+
+The first version of the Copilot toolkit offers:
+
+- AI module
+
+   The System.AI namespace in the system application to connect to Azure OpenAI Service and tap into models such as GPT from your AL code.
+
+- PromptDialog page type
+
+   Creating generative AI experiences that with the look and feel Copilot, including signature visuals, and built-in safety controls for customers.
+- Manage your subscription: Bring your own Azure AI key that powers your AI story.
+
+- Guides and code samples 
+- Monitoring and usage tracking in Power BI.
+- 
+## Data governance
+
+Azure OpenAI Service is currently available in select countries and regions. Customers and partners connecting to Azure OpenAI service within their region won't require any additional setup, configuration or consent. When connecting to Azure OpenAI service outside of the environment's region, admins must first consent to data movement across regions before any Copilot features can be used in Business Central.
+
+From Update 23.1, environments deployed within the EU boundary won't be required to consent to data movement, but environment administrators can opt out at any time.
 
 <!--add your content here-->
 
