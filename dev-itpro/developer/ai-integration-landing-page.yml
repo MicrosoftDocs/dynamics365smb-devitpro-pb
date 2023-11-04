@@ -26,9 +26,9 @@ metadata:
 landingContent:
 
 # Card
-  - title: Get started
+  - title: Overview
     linkLists:
-    - linkListType: Overview
+    - linkListType: overview
       links:
       - text: What is Developer tools for Copilot
         url: developer-tools-for-copilot-overview.md

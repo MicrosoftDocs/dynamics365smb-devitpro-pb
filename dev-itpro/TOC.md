@@ -1305,7 +1305,7 @@
 ## Integrating with external systems
 ### [Business events (preview)](developer/business-events-overview.md)
 ## Integrating AI using Developer Tools for Copilot
-### [Integrating AI using Developer Tools for Copilot](developer/ai-integration-landing-page)
+### [Integrating AI using Developer Tools for Copilot](developer/ai-integration-landing-page.md)
 ### [What is Developer Tools for Copilot](developer/developer-tools-for-copilot-overview.md)
 ## Integrating with Microsoft Dataverse
 ### [Custom integration with Dataverse](administration/administration-custom-cds-integration.md)
