@@ -17,23 +17,25 @@ ms.custom: bap-template #Required; don't change.
 <!--H1. Required. Set expectations for what the content covers, so customers know the content meets their needs. H1 format is # What is {subject}?-->
 # What is Developer Tools for Copilot?
 
-Azure OpenAI Service offers powerful, generative AI models that our partners can now leverage to deliver a rich ecosystem of AI-powered extensions for Business Central. With only a few lines of AL code, developers can enhance their solutions with generative AI that feels seamlessly integrated into the Business Central user experience and can be delivered as a natural part of their add-ons or customizations.
+Azure OpenAI Service offers powerful, generative AI models that our partners can now leverage to deliver a rich ecosystem of AI-powered extensions for Business Central. The Developer Tools for Copilot is a toolkit that provides AL developers a quick and convenient way to leverage the Azure OpenAI Service from AL code. Using the toolkit, developers can enhance their extensions and solutions with generative AI that's seamlessly integrated into the Business Central user experience and can be delivered as a natural part of their add-ons or customizations.
+
 
 
 The tools enable you to desing and implement AI solutiuon in a coordance with Responsible AI principles. 
 - Draw attention: Highlight the presence of your AI-powered features using the new Sparkle action image.
 - Keep admins in control: Help customers discover and govern your features by plugging into new administrative screens.
+
 ## Features
 
-The first version of the Copilot toolkit offers:
+The toolkit offers the following features:
 
-- AI module
+- AI module in the system application 
 
-   The System.AI namespace in the system application to connect to Azure OpenAI Service and tap into models such as GPT from your AL code.
+   The System.AI namespace in the system application enables extensions to connect to Azure OpenAI Service and use models such as GPT from your AL code.
 
 - PromptDialog page type
 
-   Creating generative AI experiences that with the look and feel Copilot, including signature visuals, and built-in safety controls for customers.
+   The PromptDialog page provides the user-interface for creating generative AI experiences, It gives users an unified experience with copilot across Business Central, including signature visuals, and built-in safety controls for customers.
 - Manage your subscription: Bring your own Azure AI key that powers your AI story.
 
 - Guides and code samples 

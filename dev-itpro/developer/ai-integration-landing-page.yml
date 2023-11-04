@@ -9,17 +9,16 @@
 # Metadata notes: https://review.docs.microsoft.com/en-us/help/contribute/metadata-overview?branch=main
 
 title: Integrating AI using Developer Tools for Copilot
-summary: 
+summary: Build AL extensions that include Copilot and generative AI experiences.
 
 metadata:
-  title: 
-  description: 
-  author: 
-  ms.author: 
-  ms.date: 
+  title: Integrating AI using Developer Tools for Copilot
+  description: Build AL extensions that include Copilot and generative AI experiences.
+  author: jswymer
+  ms.author: jswymer
+  ms.date: 11/04/2023
   ms.topic: landing-page # DON'T CHANGE
-  ms.prod:  # Use ms.prod for on-premises products, ms.service for cloud services; remove the one you don't use
-  ms.subservice:  # Required if you provide a value for ms.service
+  ms.service:  dynamics365-business-central
   ms.custom: bap-template #Required; don't change.
 
 # linkListType: concept | deploy | download | get-started | how-to-guide | overview | reference | sample | video | whats-new
@@ -29,18 +28,10 @@ landingContent:
 # Card
   - title: Get started
     linkLists:
-    - linkListType: get-started
+    - linkListType: Overview
       links:
-      - text: 
-        url: 
-      - text: 
-        url: 
-      - text: 
-        url: 
-    - linkListType: learn
-      links:
-        - text: 
-          url: 
+      - text: What is Developer tools for Copilot
+        url: developer-tools-for-copilot-overview.md
 
 
 # Remove all comments in this template before you sign off or merge to the main branch
