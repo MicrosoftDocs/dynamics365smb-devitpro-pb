@@ -57,9 +57,24 @@ The following shows what the message windows display accordingly on a computer w
 
 Microsoft SQL Server stores information about both date and time in columns of the DATETime type. [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] uses only the time part and inserts a constant value for the date: 01-01-1754.  
   
-The [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] undefined time is represented by the same value as an undefined date. The undefined date is represented by the earliest valid DateTime in SQL Server, which is 01-01-1753 00:00:00:000.  
+The [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] undefined time is represented by the same value as an undefined date. The undefined date is represented by the earliest valid DateTime in SQL Server, which is 01-01-1753 00:00:00:000.
+
+## Comparing time values
+
+Due to SQL rounding every 8 milliseconds, two identically entered times might differ in their milliseconds portion and thus would fail in an equation. 
+
+To compare until seconds precision only, you can use a procedure similar to the CompareDateTime method from the [Type Helper codeunit](../../../../../../application/base-application/codeunit/base-application-codeunit-type-helper.md).
+
+Alternatively, use the [Format method](../system/system-format-joker-integer-integer-method.md) to cut off the milliseconds portion, as shown in the following example:
+```al
+MyTime := 115900T;
+MyTime2 := 115900T;
+if Format(MyTime) = Format(MyTime2) then
+    Message('The times are identical.');
+``` 
   
 ## See Also
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
+[Standard time formats](../../devenv-format-property.md#standard-time-formats.md)
