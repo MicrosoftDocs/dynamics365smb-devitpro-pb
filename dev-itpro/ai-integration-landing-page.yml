@@ -1,0 +1,55 @@
+### YamlMime:Landing
+
+# This template provides the basic structure of a landing page
+# See [Write a landing page](write-a-landing-page.md) in the contributor guide for detailed information
+# To provide feedback on this template contact [bace feedback team](mailto:templateswg@microsoft.com)
+
+# Remove all comments and capitalized text in this template before you sign off or merge to the main branch
+
+# Metadata notes: https://review.docs.microsoft.com/en-us/help/contribute/metadata-overview?branch=main
+
+title: Integrating AI using Developer Tools for Copilot
+summary: 
+
+metadata:
+  title: 
+  description: 
+  author: 
+  ms.author: 
+  ms.date: 
+  ms.topic: landing-page # DON'T CHANGE
+  ms.prod:  # Use ms.prod for on-premises products, ms.service for cloud services; remove the one you don't use
+  ms.subservice:  # Required if you provide a value for ms.service
+  ms.custom: bap-template #Required; don't change.
+
+# linkListType: concept | deploy | download | get-started | how-to-guide | overview | reference | sample | video | whats-new
+
+landingContent:
+
+# Card
+  - title: Get Started
+    linkLists:
+    - linkListType: overview
+      links:
+      - text: What are Developer Tools for Copilot
+        url: 
+      - text: 
+        url: 
+      - text: 
+        url: 
+    - linkListType: learn
+      links:
+        - text: 
+          url: 
+
+# Card
+  - title: CARD TITLE
+    linkLists:
+    - linkListType: overview
+      links:
+        - text: 
+          url: 
+        - text: 
+          url: 
+
+# Remove all comments in this template before you sign off or merge to the main branch
