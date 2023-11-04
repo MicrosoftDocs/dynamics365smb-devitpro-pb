@@ -19,11 +19,12 @@ ms.custom: bap-template #Required; don't change.
 
 Azure OpenAI Service offers powerful, generative AI models that our partners can now leverage to deliver a rich ecosystem of AI-powered extensions for Business Central. The Developer Tools for Copilot is a toolkit that provides AL developers a quick and convenient way to leverage the Azure OpenAI Service from AL code. Using the toolkit, developers can enhance their extensions and solutions with generative AI that's seamlessly integrated into the Business Central user experience and can be delivered as a natural part of their add-ons or customizations.
 
+Using the toolkit has the following benefits:
 
-
-The tools enable you to desing and implement AI solutiuon in a coordance with Responsible AI principles. 
-- Draw attention: Highlight the presence of your AI-powered features using the new Sparkle action image.
-- Keep admins in control: Help customers discover and govern your features by plugging into new administrative screens.
+- Design solutions in accordance with Responsible AI principles. 
+- Unified Copilot experience.
+- Common guard rails​
+- Quicker to market
 
 ## Features
 
