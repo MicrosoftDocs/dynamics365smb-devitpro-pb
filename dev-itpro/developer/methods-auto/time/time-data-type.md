@@ -61,16 +61,19 @@ The [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] undefined time is repre
 
 ## Comparing time values
 
-Due to SQL rounding every 8 milliseconds, two identically entered times might differ in their milliseconds portion and thus would fail in an equation. 
-
-To compare until seconds precision only, you can use a procedure similar to the CompareDateTime method from the [Type Helper codeunit](https://learn.microsoft.com/dynamics365/business-central/application/base-application/codeunit/base-application-codeunit-type-helper).
-
-Alternatively, use the [Format method](../system/system-format-joker-integer-integer-method.md) to cut off the milliseconds portion, as shown in the following example:
+As the T-SQL datetime type has a precision that goes down to the nearest 0, 3, or 7 milliseconds, two identically entered times might differ in their milliseconds portion. This could return false in the following equation:
 ```al
-MyTime := 115900T;
-MyTime2 := 115900T;
-if Format(MyTime) = Format(MyTime2) then
-    Message('The times are identical.');
+ResultBoolean := TimeA = TimeB;
+```
+
+To circumvent the rounding issue, we can apply a tolerance of under 10 milliseconds:
+```al
+ResultBoolean := Abs(TimeA - TimeB) < 10;
+```
+
+Alternatively, we use the [Format method](../system/system-format-joker-integer-integer-method.md) to neglect the milliseconds portion completely:
+```al
+ResultBoolean := Format(TimeA) = Format(TimeB);
 ``` 
   
 ## See Also
