@@ -17,14 +17,19 @@ ms.custom: bap-template #Required; don't change.
 <!--H1 - Required. This should match the title you entered in the metadata. Set expectations for what the content covers, so customers know the content meets their needs. Should NOT begin with a verb.-->
 # Build the AI experience 
 
-<!--Introductory paragraph - Required. Lead with a light intro that describes what the article covers. Answer the fundamental "What is X and how will learning this help me accomplish Y?" question. A good lead is a sentence in the form, "X is a (type of) Y that does Z." Keep this paragraph short.-->
-<!--add your intro paragraph here-->
+In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is similar across Business Central. The main component of the implementation is a [PromptDialog])type page. This page type is a multi-functional page type that creates a unified Copilit experience for entering data, generating AI-powered content, and saving or discarding results.
 
-<!--H2s - Required. Give each H2 a heading that sets expectations for the content that follows. Follow H2 headings with a sentence about how the section contributes to the whole.-->
-## Section heading
+##  Overview
 
-1. Launch the experience
-2. The promptdialogpage opens
+Understand
+
+
+
+heading
+
+
+1. User starts Copilot from a page or Launch the experience
+1. The promptdialogpage opens
 1. User enters propmts
 1. Generates content
 1. Results shown
@@ -38,7 +43,7 @@ With this task, you add code to run the PromptDialog page. This is similar to th
 ```al
 action(GenerateCopilot)
 {
-    Caption = 'Describe To Copilot';
+    Caption = 'Draft with Copilot';
     Image = Sparkle;
 
     trigger OnAction()
@@ -48,7 +53,7 @@ action(GenerateCopilot)
 }
 ```
 
-Set the image property to Sparkle to indicate that the action is associated with Copilot. The Sparkle image is a recognized image across Microsoft products.
+Set the [Image property](properties/devenv-image-property.md) to `Sparkle`, which is the recognized image across Microsoft products used to indicate that the action is associated with Copilot. 
 
 ## Build the PromptDialog page
 
