@@ -19,20 +19,14 @@ ms.custom: bap-template #Required; don't change.
 
 In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is similar across Business Central. The main component of the implementation is a [PromptDialog])type page. This page type is a multi-functional page type that creates a unified Copilit experience for entering data, generating AI-powered content, and saving or discarding results.
 
-##  Overview
-
-Understand
+## Design pattern
 
 
-
-heading
-
-
-1. User starts Copilot from a page or Launch the experience
-1. The promptdialogpage opens
-1. User enters propmts
-1. Generates content
-1. Results shown
+1. User opens the Promptdialog page to start the experience, for example, be selecting an action on another page.
+1. The page opens to display a prompt are, where users can provide input, for example, text.
+1. User starts the generation by AI by selecting a system action called Generate.
+1. Resulting AI-generated content is returned and displayed in the Promptdialog page, arranged as defined by the page layout.
+1. The user can review 
 1. 
 1. 
 
@@ -58,9 +52,11 @@ Set the [Image property](properties/devenv-image-property.md) to `Sparkle`, whic
 ## Build the PromptDialog page
 
 1. Create a page of the type PromptDialog.
-1. Add the prompt area where users add text used by AI to generate results.
+1. Add the prompt area where users add text that's used by AI to generate results.
 1. Add a system action to generate results with Copilot.
-1. 
+1. Add a content area to display the results
+1. Add a data caption expression to the page.
+1. Add save and discard
 
 ```al
 page 54320 "Copilot Job Proposal"
@@ -80,7 +76,7 @@ layout
             ShowCaption = false;
             MultiLine = true;
         }
-    }
+    }
     area(Content)
     {
         field("Job Short Description"; JobDescription)
@@ -97,6 +93,13 @@ layout
         }
     }
 
+    area(PromptOptions)
+        {
+            field(Tone; Tone) {}
+            field(TextFormat; TextFormat) {}
+            field(Emphasis; Emphasis){}
+        }
+}
 actions
 {
     area(SystemActions)
@@ -110,8 +113,38 @@ actions
             end;
         }
     }
+        systemaction(Regenerate)
+        {
+            Caption = 'Regenerate';
+            ToolTip = 'Regenerate the Job proposed by Dynamics 365 Copilot.';
+            trigger OnAction()
+            begin
+                RunGeneration();
+            end;
+        }
+        systemaction(OK)
+        {
+            Caption = 'Save it';
+            ToolTip = 'Save the proposed Job.';
+        }
+        systemaction(Cancel)
+        {
+            Caption = 'Throw it away';
+            ToolTip = 'Throw away the proposed Job.';
+        }
+}
+
+trigger OnQueryClosePage(CloseAction: Action): Boolean
+var
+    SaveCopilotJobProposal: Codeunit "Save Copilot Job Proposal";
+begin
+    if CloseAction = CloseAction::OK then
+        SaveCopilotJobProposal.Save(CustomerNo, CopilotJobProposal);
+end;
 }
 ```
+
+
 
 ## Next steps
 
