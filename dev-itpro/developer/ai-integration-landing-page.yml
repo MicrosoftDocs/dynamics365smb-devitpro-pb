@@ -41,5 +41,12 @@ landingContent:
       links:
       - text: Build the user experience
         url: ai-build-experience.md
+# Card
+  - title: Reference
+    linkLists:
+    - linkListType: reference
+      links:
+      - text: System.AI module
+        url: ai-build-experience.md
 
 # Remove all comments in this template before you sign off or merge to the main branch
