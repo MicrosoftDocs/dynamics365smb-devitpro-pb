@@ -1,5 +1,5 @@
 ---
-title: Concept topic template #Required; page title displayed in search results. Don't enclose in quotation marks.
+title: Concept article template #Required; page title displayed in search results. Don't enclose in quotation marks.
 description: Concept description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
 author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
 ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
@@ -19,16 +19,27 @@ ms.custom: bap-template #Required; don't change.
 
 In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is similar across Business Central. The main component of the implementation is a [PromptDialog])type page. This page type is a multi-functional page type that creates a unified Copilit experience for entering data, generating AI-powered content, and saving or discarding results.
 
-## Design pattern
+## Design flow
+
+The essential UI flow for a Copilot experience is a follows:
+
+|In UI|In AL code|||
+|-|-|-|-|
+|1|User starts the Copilot experience, for example, by selecting an action on a page.|Promptdialog type page is run. |||
+|2|A page opens where users then provide input, for example, like descriptive text |The `prompt` area of the Promptdialog page defines what the user can input, which typically consists of one or more editable fields|||
+|3|User selects a button to start generating content with Copilot|A system action |A system action starts the AI generation process||
+|4|The AI-generated content is returned and displayed page|The `content` area of the Promptdialog page defines the layout of AI-generated content on the page.|
+|5|User select to save or discard the results bu using actions at the bottom of the page |A system action for saving and one for discarding work with a trigger respect the user's choice, and close the page- ||  
 
 
+<!--
 1. User opens the Promptdialog page to start the experience, for example, be selecting an action on another page.
-1. The page opens to display a prompt are, where users can provide input, for example, text.
+1. The page opens to display a prompt area, where users can provide input, for example, text.
 1. User starts the generation by AI by selecting a system action called Generate.
 1. Resulting AI-generated content is returned and displayed in the Promptdialog page, arranged as defined by the page layout.
 1. The user can review 
 1. 
-1. 
+1. -->
 
 ## Launch experience
 
@@ -50,6 +61,8 @@ action(GenerateCopilot)
 Set the [Image property](properties/devenv-image-property.md) to `Sparkle`, which is the recognized image across Microsoft products used to indicate that the action is associated with Copilot. 
 
 ## Build the PromptDialog page
+
+The basic 
 
 1. Create a page of the type PromptDialog.
 1. Add the prompt area where users add text that's used by AI to generate results.
@@ -124,7 +137,7 @@ actions
         }
         systemaction(OK)
         {
-            Caption = 'Save it';
+            Caption = 'Keep it';
             ToolTip = 'Save the proposed Job.';
         }
         systemaction(Cancel)
