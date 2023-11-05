@@ -32,13 +32,14 @@ landingContent:
       links:
       - text: What is Developer tools for Copilot
         url: developer-tools-for-copilot-overview.md
-
+      - text: Is your offering a Copilot?
+        url: developer-tools-for-copilot-overview.md
 # Card
   - title: Build the experience
     linkLists:
     - linkListType: how-to-guide
       links:
-      - text: Design the user experience
+      - text: Build the user experience
         url: ai-build-experience.md
 
 # Remove all comments in this template before you sign off or merge to the main branch
