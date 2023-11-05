@@ -33,7 +33,7 @@ landingContent:
       - text: What is Developer tools for Copilot
         url: developer-tools-for-copilot-overview.md
       - text: Is your offering a Copilot?
-        url: developer-tools-for-copilot-overview.md
+        url: ai-extend-copilot-overview.md
 # Card
   - title: Build the experience
     linkLists:
