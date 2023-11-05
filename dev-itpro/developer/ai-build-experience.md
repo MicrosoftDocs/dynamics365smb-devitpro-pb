@@ -19,16 +19,16 @@ ms.custom: bap-template #Required; don't change.
 
 In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is similar across Business Central. The main component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md))type page. This page type is a multi-functional page type that creates a unified Copilot experience for users to enter data, generate AI-powered content, and save or discarding results.
 
-## Design flow
+## Design overview and flow
 
-The essential UI flow for a Copilot experience is as follows:
+The essential UI design and flow for a Copilot experience is follows:
 
-|In UI|In AL code|||
-|-|-|-|-|
-|1|User starts the Copilot experience, for example, by selecting an action on a page.|Promptdialog type page is run. |||
-|2|A page opens where users then provide input, for example, like descriptive text |The `prompt` area of the Promptdialog page defines what the user can input, which typically consists of one or more editable fields|||
-|3|User selects a button to start generating content with Copilot|A system action |A system action starts the AI generation process||
-|4|The AI-generated content is returned and displayed page|The `content` area of the Promptdialog page defines the layout of AI-generated content on the page.|
+|In UI|In AL code|Learn more|
+|-|-|-|
+|1|User starts the Copilot experience, for example, by selecting an action on a page.|Promptdialog type page is run. |[Launch experience](#launch-experience)|
+|2|A page opens where users can provide input, for example, like descriptive text |The `prompt` area of the Promptdialog page defines what the user can input, which typically consists of one or more editable fields|[Create PromptDialog type page](#create-promptdialog-type-page)<br><br>[Add prompt area](#add-the-prompt-area)|
+|3|User selects a button to start generating content with Copilot|A system action `Generate` starts the AI generation process.|[Add the prompt area](#add-a-system-action-to-start-ai-generation)|
+|4|The AI-generated content is returned and displayed in a page|The `content` area of the Promptdialog page defines the layout of AI-generated content on the page.|[Add content area](#add-a-content-area)|
 |5|User select to save or discard the results by using actions at the bottom of the page |A system action for saving and one for discarding work with a trigger respect the user's choice, and close the page- ||  
 
 
@@ -64,10 +64,33 @@ Set the [Image property](properties/devenv-image-property.md) to `Sparkle`, whic
 
 The basic 
 
-1. Create a page of the type PromptDialog.
-1. Add the prompt area where users add text used by AI to generate results.
+
+### Create PromptDialog type page
+
+
+```al
+page 54320 "Copilot Job Proposal"
+{
+    Caption = 'Draft new job with Copilot';
+    PageType = PromptDialog;
+    Extensible = false;
+    IsPreview = true;
+
+...
+```
+
+
+### Add the prompt area
+
+In is task, you where users add text used by AI to generate results.
+
+### Add a system action to start AI generation
+
 1. Add a system action to generate results with Copilot.
-1. Add a content area to display the results
+
+### Add a content area
+
+Add a content area to display the results
 1. Add a data caption expression to the page.
 1. Add save and discard
 
