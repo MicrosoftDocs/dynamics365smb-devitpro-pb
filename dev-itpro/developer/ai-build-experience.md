@@ -15,7 +15,7 @@ ms.custom: bap-template #Required; don't change.
 <!--This template provides the basic structure of a concept article. See [Write a concept article](write-a-concept-article.md) in the contributor guide. To provide feedback on this template contact [bace feedback team](mailto:templateswg@microsoft.com).-->
 
 <!--H1 - Required. This should match the title you entered in the metadata. Set expectations for what the content covers, so customers know the content meets their needs. Should NOT begin with a verb.-->
-# Build the AI experience 
+# Build a Copilot experience 
 
 In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is similar across Business Central. The main component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md))type page. This page type is a multi-functional page type that creates a unified Copilot experience for users to enter data, generate AI-powered content, and save or discarding results.
 
@@ -60,9 +60,8 @@ action(GenerateCopilot)
 
 Set the [Image property](properties/devenv-image-property.md) to `Sparkle`, which is the recognized image across Microsoft products used to indicate that the action is associated with Copilot. 
 
-## Build the PromptDialog page
+## Build the PromptDialog page for Copilot
 
-The basic 
 
 
 ### Create PromptDialog type page
@@ -77,22 +76,57 @@ page 54320 "Copilot Job Proposal"
     IsPreview = true;
 
 ...
+}
 ```
-
 
 ### Add the prompt area
 
-In is task, you where users add text used by AI to generate results.
+In this task, you define where users can add input that will used by AI to generate results.
+
+```al
+layout
+{
+    area(Prompt) 
+    {
+        field(ProjectDescription; UserInput)
+        {
+            ShowCaption = false;
+            MultiLine = true;
+        }
+    }
+```
 
 ### Add a system action to start AI generation
 
-1. Add a system action to generate results with Copilot.
+The platform includes a system action called Add a system action to generate results with Copilot.
+
+```al
+actions
+{
+    area(SystemActions)
+    {
+        systemaction(Generate)
+        {
+            Caption = 'Generate';
+            trigger OnAction()
+            begin
+                RunGeneration();
+            end;
+        }
+        ...
+    }
+}
+```
 
 ### Add a content area
 
 Add a content area to display the results
 1. Add a data caption expression to the page.
 1. Add save and discard
+
+
+### Example
+
 
 ```al
 page 54320 "Copilot Job Proposal"
