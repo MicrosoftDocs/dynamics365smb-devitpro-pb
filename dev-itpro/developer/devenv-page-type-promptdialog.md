@@ -36,6 +36,11 @@ Use the `IsPreview` property to indicate to your customers that you're using the
 ```al
 page 50100 MyCopilotPage
 {
+    Caption = 'Draft new job with Copilot';
+
+    // Show the natural language user input as caption
+    DataCaptionExpression = UserInput;
+
     PageType = PromptDialog;
     PromptMode = Prompt; // Specify the starting prompt mode. Default value is Prompt.
     IsPreview = true;
@@ -48,7 +53,9 @@ page 50100 MyCopilotPage
     layout
     {
         area(Prompt) 
-        { /*The input to copilot. Accepts any control.*/ 
+        { 
+
+            /*The input to copilot. Accepts any control.*/ 
 
             field(ProjectDescription; UserInput)
             {    
@@ -57,7 +64,22 @@ page 50100 MyCopilotPage
             }
         }
 
-        area(Content) { /*The output of copilot. Accepts any control.*/ }
+        area(Content) 
+        { 
+            /*The output of copilot. Accepts any control.*/ 
+
+            field("Job Short Description"; JobDescription)
+            {...}
+
+            field("Job Full Details"; JobFullDescription)
+            {...}
+
+            field(CustomerNameField; CustomerName)
+            {...}        
+    
+            part(ProposalDetails; "Copilot Job Proposal Subpart")        
+            [...]
+        }
 
         area(PromptOptions) { /*The input options. Only accepts option fields.*/ }
     }
