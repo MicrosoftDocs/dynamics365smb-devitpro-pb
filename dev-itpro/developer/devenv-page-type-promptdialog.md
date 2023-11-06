@@ -81,7 +81,21 @@ page 50100 MyCopilotPage
             [...]
         }
 
-        area(PromptOptions) { /*The input options. Only accepts option fields.*/ }
+        area(PromptOptions) 
+        { 
+            /*The input options. Only accepts option fields.*/ 
+            
+            field(Tone; Tone)
+            {...}
+    
+            field(TextFormat; TextFormat)
+            {...}
+        
+            field(Emphasis; Emphasis)
+            {...}
+
+
+        }
     }
 
     actions
