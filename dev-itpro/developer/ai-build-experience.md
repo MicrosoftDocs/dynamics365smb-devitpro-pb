@@ -28,7 +28,7 @@ The essential UI design and flow for a Copilot experience is follows:
 |1|User starts the Copilot experience, for example, by selecting an action on a page.|Promptdialog type page is run. |[Launch experience](#launch-experience)|
 |2|A page opens where users can provide input, for example, like descriptive text |The `prompt` area of the Promptdialog page defines what the user can input, which typically consists of one or more editable fields|[Create PromptDialog type page](#create-promptdialog-type-page)<br><br>[Add prompt area](#add-the-prompt-area)|
 |3|User selects a button to start generating content with Copilot|A system action `Generate` starts the AI generation process.|[Add the prompt area](#add-a-system-action-to-start-ai-generation)|
-|4|The AI-generated content is returned and displayed in a page|The `content` area of the Promptdialog page defines the layout of AI-generated content on the page.|[Add content area](#add-a-content-area)|
+|4|The AI-generated content is returned and displayed in a page|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Add content area](#add-a-content-area)|
 |5|User select to save or discard the results by using actions at the bottom of the page |A system action for saving and one for discarding work with a trigger respect the user's choice, and close the page- ||  
 
 
