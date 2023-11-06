@@ -36,11 +36,11 @@ landingContent:
         url: ai-extend-copilot-overview.md
 
 # Card
-  - title: Get started with Azure Open AI
+  - title: Get started
     linkLists:
     - linkListType: get-started
       links:
-      - text: Build the user experience
+      - text: Get setup with Azure OpenAI Service
         url: ai-dev-tools-get-started.md
 # Card
   - title: Build the experience
