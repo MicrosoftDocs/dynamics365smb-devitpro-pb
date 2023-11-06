@@ -18,17 +18,6 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] runtime 12.1, you can add a
 
 Typing the shortcut `tpage` and then choose the **Page of type Prompt Dialog** will create the basic layout for a `PromptDialog` page object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-
-## Developer tools 
-
-Tools for generative AI features
-Prototype with less code, consistency of the UI
-Built-in safety controls for customers
-
-
-
-
-
 ## Properties of the PromptDialog page type
 
 The `PromptDialog` page type has a number of specific properties that characterizes the dialog. The `PageType` property must be set to `PromptDialog`. The `PromptMode` property value is by default `Prompt`, which is the starting prompt mode. The `PromptMode` property can be changed at runtime. The other options are `Generate`, which will trigger generating the output of the copilot interaction, and `Content`, which will show the output of the copilot interaction.
