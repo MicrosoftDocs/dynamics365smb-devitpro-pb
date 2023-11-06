@@ -42,11 +42,11 @@ landingContent:
       - text: Build the user experience
         url: ai-build-experience.md
 # Card
-  - title: Reference
+  - title: Videos
     linkLists:
-    - linkListType: reference
+    - linkListType: video
       links:
-      - text: System.AI module
-        url: ai-build-experience.md
+      - text: Designing and developing generative AI experiences for your extensions
+        url: https://go.microsoft.com/fwlink/?linkid=2251051
 
 # Remove all comments in this template before you sign off or merge to the main branch

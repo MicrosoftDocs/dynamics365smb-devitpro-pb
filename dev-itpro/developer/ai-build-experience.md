@@ -45,9 +45,9 @@ The essential UI design and flow for a Copilot experience is follows:
 ## Build the PromptDialog page for Copilot
 
 
-
 ### Create PromptDialog type page
 
+The PromptDialog type page provides Copilot and responsible AI capabilities to the UI that's consistent across Microsoft. You create the page like any other page, except consider the following properties:
 
 ```al
 page 54320 "Copilot Job Proposal"
@@ -61,9 +61,15 @@ page 54320 "Copilot Job Proposal"
 }
 ```
 
+|Property|Description and value|
+|-||
+|[PageType](properties/devenv-pagetype-property.md)|Set to to `PromptDialog`.|
+|[Extensible](properties/devenv-extensible-property.md)|Set to `false` to ensure that extensions for other providers don't interfere with the experience you're providing customers|
+|IsPreview|This property is used to specify whether your feature is in preview or generally available. Setting this property to `true` communicates to users that the feature is in preview, which means that it's available to try out and provide feedback, but the functionality is subject to change. When you feel the feature is ready, you can change this value to `false` to communicate that the feature is generally available. We recommend that most new Copilot experiences start in preview. |
+
 ### Add the prompt area
 
-In this task, you define where users can add input that will used by AI to generate results.
+In this task, you define a prompt area on PromptDialog page where users can add input that will used by AI to generate results. Adding the prompt area is similar to the way you add content areas on other page types. Except, you add the prompt area by using an `area(Prompt)` control in the `layout` control of the page:
 
 ```al
 layout
@@ -78,9 +84,13 @@ layout
     }
 ```
 
+The example uses a single field that allows the user to type natural language text in an unstructured format. But you can also include more fields, group, and parts for a more structured input.
+
+
+
 ### Add a system action to start AI generation
 
-The platform includes a system action called Add a system action to generate results with Copilot.
+In this task, you add action to the PromptDialog page that users select to start generating output with Copilot. The button appears on when the prompt area is  the. The platform includes a system action called Add a system action to generate results with Copilot.
 
 ```al
 actions
