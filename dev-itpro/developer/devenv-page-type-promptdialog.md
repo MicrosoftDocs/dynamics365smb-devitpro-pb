@@ -100,11 +100,40 @@ page 50100 MyCopilotPage
             }
 
             systemaction(Ok)
+            {   
+                // The Caption and Tooltip of system actions can be modified.
+                Caption = 'Keep it'; 
+                ToolTip = 'Save the job proposal';
+            }
+
+            systemaction(Cancel)
             {
-                Caption = 'Keep it'; // The Caption and Tooltip of system actions can be modified.
+                // The Caption and Tooltip of system actions can be modified.
+                Caption = 'Throw away'; 
+                ToolTip = 'Throw away the job proposal and start over';
+            }
+
+            systemaction(Regenerate)
+            {    
+                Caption = 'Regenerate';
+                ToolTip = 'Regenerate the job proposal';
+                
+                trigger OnAction()
+                begin
+                    RunGeneration();
+                end;
             }
         }
     }
+
+    // Respect the user's choice
+    trigger OnQueryClosePage(CloseAction: Action): Boolean 
+    var SaveCopilotJobProposal: Codeunit "Save Copilot Job Proposal";
+    begin
+        if CloseAction = CloseAction::OK then
+            SaveCopilotJobProposal.Save(CustomerNo, CopilotJobProposal);
+    end;
+
 
     trigger OnInit()
     begin
