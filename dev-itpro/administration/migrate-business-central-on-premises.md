@@ -60,6 +60,9 @@ The cloud migration process transfers business data from one or more companies i
 
 In general, data is migrated table by table. Depending on their size, tables may also be combined and migrated together for performance reasons. In either case, the success and failure of the migration is tracked for each table. For instance, tables fail to migrate if they can't be found, or if the schema doesn't match between the cloud and the on-premises tables. If a table fails to migrate, the error will be captured, and the migration moves on to the next table until completed.  
 
+> [!NOTE]
+> In the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], data is compressed using the SQL Server data compression feature. This means that the data size in your on-premises database might not match the data size when migrated to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service. For more information on estimating the compressed size of your data, see [Estimating the data size in your Business Central online tenant](./cloud-migration-estimate-compressed-data-size.md). 
+
 Data migration can be run multiple times. The data migration time varies depending on factors such as the amount of data to migrate, your SQL Server configuration, and your connection speeds. The initial migration takes the longest amount of time to complete because all data is migrating. After the initial migration, only changes in data will be migrated, resulting in faster iterations. It's not necessary to run the migration process more than once. But if users are still using the on-premises system, you must run at least one more migration to ensure all data is moved to the cloud before transacting in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
 To learn more about data migration, go to [Data replication](migration-data-replication.md).
