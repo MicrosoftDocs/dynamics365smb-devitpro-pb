@@ -17,7 +17,7 @@ ms.custom: bap-template #Required; don't change.
 <!--H1 - Required. This should match the title you entered in the metadata. Set expectations for what the content covers, so customers know the content meets their needs. Should NOT begin with a verb.-->
 # Build a Copilot experience 
 
-In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is similar across Business Central. The main component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md))type page. This page type is a multi-functional page type that creates a unified Copilot experience for users to enter data, generate AI-powered content, and save or discarding results.
+In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is similar across Business Central. The main component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md) type page. This page type is a multi-functional page type that creates a unified Copilot experience for users to enter data, generate AI-powered content, and save or discarding results.
 
 ## Design overview and flow
 
@@ -27,7 +27,7 @@ The essential UI design and flow for a Copilot experience is follows:
 |-|-|-|-|
 |1|User starts the Copilot experience, for example, by selecting an action on a page.|An `action` control runs the Promptdialog type page. |[Launch experience](#launch-experience)|
 |2|A Promptdialog page opens |[Create PromptDialog type page](#create-promptdialog-type-page)|
-|3|The user enters information that will be used by Copilot to generate results. |The `prompt` area of the Promptdialog page defines what the user can input, which typically consists of one or more editable fields|[Create PromptDialog type page](#create-promptdialog-type-page)<br><br>[Add prompt area](#add-the-prompt-area)|
+|3|The user enters information that Copilot uses to generate results. |The `prompt` area of the Promptdialog page defines what the user can input, which typically consists of one or more editable fields|[Create PromptDialog type page](#create-promptdialog-type-page)<br><br>[Add prompt area](#add-the-prompt-area)|
 |4|User selects a button to start generating content with Copilot|A system action `Generate` starts the AI generation process.|[Add the generate action](#add-a-system-action-to-start-ai-generation)|
 |5|The AI-generated content is returned and displayed in a page|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Add content area](#add-a-content-area)|
 |6|User select to save or discard the results by using actions at the bottom of the page |A system action for saving and one for discarding work with a trigger respect the user's choice, and close the page||  
@@ -42,10 +42,7 @@ The essential UI design and flow for a Copilot experience is follows:
 1. 
 1. -->
 
-## Build the PromptDialog page for Copilot
-
-
-### Create PromptDialog type page
+## Create PromptDialog type page
 
 The PromptDialog type page provides Copilot and responsible AI capabilities to the UI that's consistent across Microsoft. You create the page like any other page, except consider the following properties:
 
@@ -63,7 +60,7 @@ page 54320 "Copilot Job Proposal"
 
 |Property|Description and value|
 |-||
-|[PageType](properties/devenv-pagetype-property.md)|Set to to `PromptDialog`.|
+|[PageType](properties/devenv-pagetype-property.md)|Set to `PromptDialog`.|
 |[Extensible](properties/devenv-extensible-property.md)|Set to `false` to ensure that extensions for other providers don't interfere with the experience you're providing customers|
 |IsPreview|This property is used to specify whether your feature is in preview or generally available. Setting this property to `true` communicates to users that the feature is in preview, which means that it's available to try out and provide feedback, but the functionality is subject to change. When you feel the feature is ready, you can change this value to `false` to communicate that the feature is generally available. We recommend that most new Copilot experiences start in preview. |
 
@@ -84,11 +81,9 @@ layout
     }
 ```
 
-The example uses a single field that allows the user to type natural language text in an unstructured format. But you can also include more fields, group, and parts for a more structured input.
+The example uses a single field that allows the user to type natural language text in an unstructured format. But you can also include more fields, groups, and parts for a more structured input.
 
-
-
-### Add a system action to start AI generation
+## Add a system action to start AI generation
 
 In this task, you add action to the PromptDialog page that users select to start generating output with Copilot. The button appears on when the prompt area is  the. The platform includes a system action called Add a system action to generate results with Copilot.
 
@@ -110,18 +105,18 @@ actions
 }
 ```
 
-### Add a content area
+## Add a content area
 
 Add a content area to display the results
 1. Add a data caption expression to the page.
 1. Add save and discard
 
 
-### Example
+## Example
 
 
 ```al
-page 54320 "Copilot Job Proposal"
+page 50100 "Copilot Job Proposal"
 {
     Caption = 'Draft new job with Copilot';
     PageType = PromptDialog;
@@ -224,6 +219,7 @@ action(GenerateCopilot)
 ```
 
 Set the [Image property](properties/devenv-image-property.md) to `Sparkle`, which is the recognized image across Microsoft products used to indicate that the action is associated with Copilot. 
+
 
 
 ## Next steps
