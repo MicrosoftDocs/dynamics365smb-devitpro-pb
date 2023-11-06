@@ -15,10 +15,7 @@ ms.custom: bap-template #Required; don't change.
 <!--This template provides the basic structure of a concept article. See [Write a concept article](write-a-concept-article.md) in the contributor guide. To provide feedback on this template contact [bace feedback team](mailto:templateswg@microsoft.com).-->
 
 <!--H1 - Required. This should match the title you entered in the metadata. Set expectations for what the content covers, so customers know the content meets their needs. Should NOT begin with a verb.-->
-# Extending Copilot with customer generative AI 
-
-
-### Is your offering a copilot
+# Is your offering a copilot?
 
 An offering meets the engineering criteria to be a Copilot if the answers to all the below are ‘yes’ by GA.
 
