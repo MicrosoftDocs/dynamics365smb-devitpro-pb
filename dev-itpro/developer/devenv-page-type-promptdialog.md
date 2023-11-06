@@ -22,6 +22,10 @@ Typing the shortcut `tpage` and then choose the **Page of type Prompt Dialog** w
 
 The `PromptDialog` page type has a number of specific properties that characterizes the dialog. The `PageType` property must be set to `PromptDialog`. The `PromptMode` property value is by default `Prompt`, which is the starting prompt mode. The `PromptMode` property can be changed at runtime. The other options are `Generate`, which will trigger generating the output of the copilot interaction, and `Content`, which will show the output of the copilot interaction.
 
+## Areas of the PromptDialog page type
+
+The `PromptDialog` page type has three areas, which are `Prompt`, `Content`, and `PromptOptions`. The `Prompt` area is the input to copilot, and accepts any control. The `Content` area is the output of copilot, and accepts any control. The `PromptOptions` area is the input options, and only accepts option fields.
+
 ## Example
 
 The following example describes a page, which is a PromptDialog page, set with the `PromptDialog` option. The `Extensible = false;` is a mandatory setting, to ensure that the page is not extended so that customers can trust the AI experience implemented.
@@ -43,7 +47,15 @@ page 50100 MyCopilotPage
 
     layout
     {
-        area(Prompt) { /*The input to copilot. Accepts any control.*/ }
+        area(Prompt) 
+        { /*The input to copilot. Accepts any control.*/ 
+
+            field(ProjectDescription; UserInput)
+            {    
+                ShowCaption = false;
+                MultiLine = true;
+            }
+        }
 
         area(Content) { /*The output of copilot. Accepts any control.*/ }
 
