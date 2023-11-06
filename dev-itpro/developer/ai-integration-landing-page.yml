@@ -34,6 +34,14 @@ landingContent:
         url: developer-tools-for-copilot-overview.md
       - text: Is your offering a Copilot?
         url: ai-extend-copilot-overview.md
+
+# Card
+  - title: Get started with Azure Open AI
+    linkLists:
+    - linkListType: get-started
+      links:
+      - text: Build the user experience
+        url: ai-dev-tools-get-started.md
 # Card
   - title: Build the experience
     linkLists:

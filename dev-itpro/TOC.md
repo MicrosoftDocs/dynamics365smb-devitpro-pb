@@ -1310,7 +1310,7 @@
 ### [What is Developer Tools for Copilot](developer/developer-tools-for-copilot-overview.md)
 ### [Extending Copilot with custom generative AI](developer/ai-extend-copilot-overview.md)
 ### Build a Copilot experience
-#### [Design the AI  ]
+#### [Design AI inetgartion]()
 #### [Design the user experience](developer/ai-extend-copilot-overview.md)
 ## Integrating with Microsoft Dataverse
 ### [Custom integration with Dataverse](administration/administration-custom-cds-integration.md)
