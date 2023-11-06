@@ -69,9 +69,11 @@ page 50100 MyCopilotPage
             // Pre-defined system actions (Generate, Regenerate, Attach, Ok, or Cancel). Can only use system actions on this page.
             systemaction(Generate)
             {
+                Caption = 'Generate'; 
                 trigger OnAction()
                 begin
                     // The code triggering the copilot interaction.
+                    RunGeneration();
                 end;
             }
 
