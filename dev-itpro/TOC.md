@@ -1312,7 +1312,7 @@
 ### [Get started with Azure OpenAI Service](ai-dev-tools-get-started.md)
 ### Build a Copilot experience
 #### Integrate AI in code using the AI module
-#### [Design the user experience](developer/ai-extend-copilot-overview.md)
+#### [Design the user experience](developer/ai-build-experience.md)
 ## Integrating with Microsoft Dataverse
 ### [Custom integration with Dataverse](administration/administration-custom-cds-integration.md)
 ### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
