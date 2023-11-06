@@ -20,6 +20,26 @@ The developer tools are using the Azure OpenAI service and are intended to assis
 
 With the developer tools for generative AI, you can write prototypes with less code, and you can create consistency of the UI. The tools also include built-in safety controls for customers.
 
+## Implementing generative AI with your Business Central extension
+
+Image type `Sparkle`, which is a new image type, is used to display the signature visuals of the generative AI experience. The `Sparkle` image type is used in the `PromptDialog` page type, which is a new page type. For more information, see [The PromptDialog page type](devenv-page-type-promptdialog.md).
+
+
+```al
+...     
+action(GenerateCopilot)
+{
+    Caption = 'Describe to Copilot';
+    Image = Sparkle;
+
+    trigger OnAction()
+    begin
+        Page.RunModal(Page::"Copilot Job Proposal");
+    end;
+}
+...
+```
+
 
 
 ## See also

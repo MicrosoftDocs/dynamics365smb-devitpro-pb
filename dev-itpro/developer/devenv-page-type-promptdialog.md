@@ -24,6 +24,11 @@ The `PromptDialog` page type has a number of specific properties that characteri
 
 ## Example
 
+The following example describes a page, which is a PromptDialog page, set with the `PromptDialog` option. The `Extensible = false;` is a mandatory setting, to ensure that the page is not extended so that customers can trust the AI experience implemented.
+
+Use the `IsPreview` property to indicate to your customers that you're using the feature in preview, and that the feature might change in the future as you gather feedback. The `IsPreview` property is by default set to `false`.
+
+
 ```al
 page 50100 MyCopilotPage
 {
