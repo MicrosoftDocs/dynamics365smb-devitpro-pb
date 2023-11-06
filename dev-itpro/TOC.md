@@ -1308,9 +1308,10 @@
 ## Integrating AI using Developer Tools for Copilot
 ### [Integrating AI using Developer Tools for Copilot](developer/ai-integration-landing-page.yml)
 ### [What is Developer Tools for Copilot](developer/developer-tools-for-copilot-overview.md)
-### [Extending Copilot with custom generative AI](developer/ai-extend-copilot-overview.md)
+### [Is your offering a Copilot](developer/ai-extend-copilot-overview.md)
+### [Get started with Azure OpenAI Service](ai-dev-tools-get-started.md)
 ### Build a Copilot experience
-#### [Design AI inetgartion]()
+#### Integrate AI in code using the AI module
 #### [Design the user experience](developer/ai-extend-copilot-overview.md)
 ## Integrating with Microsoft Dataverse
 ### [Custom integration with Dataverse](administration/administration-custom-cds-integration.md)
