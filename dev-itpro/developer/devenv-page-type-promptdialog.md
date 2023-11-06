@@ -85,15 +85,11 @@ page 50100 MyCopilotPage
         { 
             /*The input options. Only accepts option fields.*/ 
             
-            field(Tone; Tone)
-            {...}
+            field(Tone; Tone)  {}
     
-            field(TextFormat; TextFormat)
-            {...}
+            field(TextFormat; TextFormat)  {}
         
-            field(Emphasis; Emphasis)
-            {...}
-
+            field(Emphasis; Emphasis)  {}
 
         }
     }
