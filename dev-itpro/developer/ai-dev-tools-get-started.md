@@ -21,7 +21,12 @@ ms.custom: bap-template #Required; don't change.
 <!--add your intro paragraph here-->
 
 <!--Prerequisites. Optional. If you need prerequisites, make them your first H2 in a how-to guide. Use clear language and use a list format.-->
-## Request 
+
+## Prerequisite
+
+- Azure subscription
+
+## Request Access to Azure OpenAI Service 
 
 <!--add your content here-->
 
