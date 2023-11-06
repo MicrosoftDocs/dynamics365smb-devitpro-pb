@@ -25,11 +25,12 @@ The essential UI design and flow for a Copilot experience is follows:
 
 ||In UI|In AL code|Learn more|
 |-|-|-|-|
-|1|User starts the Copilot experience, for example, by selecting an action on a page.|Promptdialog type page is run. |[Launch experience](#launch-experience)|
-|2|A page opens where users can provide input, for example, like descriptive text |The `prompt` area of the Promptdialog page defines what the user can input, which typically consists of one or more editable fields|[Create PromptDialog type page](#create-promptdialog-type-page)<br><br>[Add prompt area](#add-the-prompt-area)|
-|3|User selects a button to start generating content with Copilot|A system action `Generate` starts the AI generation process.|[Add the prompt area](#add-a-system-action-to-start-ai-generation)|
-|4|The AI-generated content is returned and displayed in a page|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Add content area](#add-a-content-area)|
-|5|User select to save or discard the results by using actions at the bottom of the page |A system action for saving and one for discarding work with a trigger respect the user's choice, and close the page- ||  
+|1|User starts the Copilot experience, for example, by selecting an action on a page.|An `action` control runs the Promptdialog type page. |[Launch experience](#launch-experience)|
+|2|A Promptdialog page opens |[Create PromptDialog type page](#create-promptdialog-type-page)|
+|3|The user enters information that will be used by Copilot to generate results. |The `prompt` area of the Promptdialog page defines what the user can input, which typically consists of one or more editable fields|[Create PromptDialog type page](#create-promptdialog-type-page)<br><br>[Add prompt area](#add-the-prompt-area)|
+|4|User selects a button to start generating content with Copilot|A system action `Generate` starts the AI generation process.|[Add the generate action](#add-a-system-action-to-start-ai-generation)|
+|5|The AI-generated content is returned and displayed in a page|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Add content area](#add-a-content-area)|
+|6|User select to save or discard the results by using actions at the bottom of the page |A system action for saving and one for discarding work with a trigger respect the user's choice, and close the page||  
 
 
 <!--
@@ -40,25 +41,6 @@ The essential UI design and flow for a Copilot experience is follows:
 1. The user can review 
 1. 
 1. -->
-
-## Launch experience
-
-With this task, you add code to run the PromptDialog page. This task is done similar to the way you start any page. The following code uses an action: 
-
-```al
-action(GenerateCopilot)
-{
-    Caption = 'Draft with Copilot';
-    Image = Sparkle;
-
-    trigger OnAction()
-    begin
-        Page.RunModal(Page::"Copilot Job Proposal");
-    end;
-}
-```
-
-Set the [Image property](properties/devenv-image-property.md) to `Sparkle`, which is the recognized image across Microsoft products used to indicate that the action is associated with Copilot. 
 
 ## Build the PromptDialog page for Copilot
 
@@ -214,6 +196,24 @@ end;
 }
 ```
 
+## Launch experience
+
+With this task, you add code to run the PromptDialog page. This task is done similar to the way you start any page. The following code uses an action: 
+
+```al
+action(GenerateCopilot)
+{
+    Caption = 'Draft with Copilot';
+    Image = Sparkle;
+
+    trigger OnAction()
+    begin
+        Page.RunModal(Page::"Copilot Job Proposal");
+    end;
+}
+```
+
+Set the [Image property](properties/devenv-image-property.md) to `Sparkle`, which is the recognized image across Microsoft products used to indicate that the action is associated with Copilot. 
 
 
 ## Next steps
