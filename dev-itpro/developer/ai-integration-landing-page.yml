@@ -47,8 +47,11 @@ landingContent:
     linkLists:
     - linkListType: how-to-guide
       links:
+      - text: Build the AI experience in AL
+        url: ai-build-capability-in-al.md
       - text: Build the user experience
         url: ai-build-experience.md
+      
 # Card
   - title: Videos
     linkLists:
@@ -56,5 +59,6 @@ landingContent:
       links:
       - text: Designing and developing generative AI experiences for your extensions
         url: https://go.microsoft.com/fwlink/?linkid=2251051
+        
 
 # Remove all comments in this template before you sign off or merge to the main branch
