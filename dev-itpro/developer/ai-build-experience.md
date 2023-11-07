@@ -17,7 +17,7 @@ ms.custom: bap-template #Required; don't change.
 <!--H1 - Required. This should match the title you entered in the metadata. Set expectations for what the content covers, so customers know the content meets their needs. Should NOT begin with a verb.-->
 # Build a Copilot experience 
 
-In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is similar across Business Central. The fundamental component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md) type page. This page type is a multi-mode page type that creates a unified Copilot experience for users to enter data, generate AI-powered content, preview, and finally save or discard results.
+In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is similar across Business Central. The fundamental component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md) type page. This page type is a multi-mode page type that creates a unified Copilot experience for users to enter data, generate AI-powered content, preview and revise, and finally save or discard results.
 
 ## Design overview and flow
 
