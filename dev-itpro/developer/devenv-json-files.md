@@ -13,7 +13,7 @@ ms.author: solsen
 
 # JSON files
 
-When you start a new AL project, two JSON files; the `app.json` file and the `launch.json` file are generated automatically. The `app.json` file contains information about the extension that you're building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often, the `app.json` file is referred to as the manifest. This article describes the `app.json` file settings in the [App.json file](devenv-json-files.md#appjson-file) section. 
+When you start a new AL project, two JSON files; the `app.json` file and the `launch.json` file are generated automatically. The `app.json` file contains information about the extension that you're building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often, the `app.json` file is referred to as the manifest. This article describes the `app.json` file settings in the [App.json file](devenv-json-files.md#appjson-file) section.
 
 For information about the `launch.json` file see the article [Launch JSON file](devenv-json-launch-file.md).
 
@@ -25,7 +25,7 @@ For information about the `launch.json` file see the article [Launch JSON file](
 
 ## App.json file
 
-The following table describes the settings in the `app.json` file. To see an example `app.json` file, go to [Business Central Performance Toolkit](https://github.com/microsoft/ALAppExtensions/blob/main/Modules/DevTools/BusinessCentralPerformanceToolkit/app.json).
+The following table describes the settings in the `app.json` file. To see an example `app.json` file, go to [Business Central Performance Toolkit](https://github.com/microsoft/BCApps/blob/main/src/Tools/Performance%20Toolkit/App/app.json).
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
@@ -74,4 +74,4 @@ The following table describes the settings in the `app.json` file. To see an exa
 [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
-[App Key Vaults](devenv-app-key-vault-overview.md)
+[App Key Vaults](devenv-app-key-vault-overview.md)  
