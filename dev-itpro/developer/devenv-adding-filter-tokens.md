@@ -1,5 +1,6 @@
 ---
-title: "Adding Custom Filter Tokens"
+title: Adding Custom Filter Tokens
+description: Learn how to use filter tokens to save time when you filter data in lists.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
