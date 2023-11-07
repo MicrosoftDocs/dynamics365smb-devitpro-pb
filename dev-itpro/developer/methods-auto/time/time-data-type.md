@@ -55,14 +55,14 @@ The following shows what the message windows display accordingly on a computer w
 
 ## SQL Server
 
-Microsoft SQL Server stores information about both date and time in columns of the DATETime type. [!INCLUDE [prod_short](developer/includes/prod_short.md)] uses only the time part and inserts a constant value for the date: 01-01-1754.  
+Microsoft SQL Server stores information about both date and time in columns of the DATETime type. [!INCLUDE [prod_short](../../includes/prod_short.md)] uses only the time part and inserts a constant value for the date: 01-01-1754.  
   
-The [!INCLUDE [prod_short](developer/includes/prod_short.md)] undefined time is represented by the same value as an undefined date. The undefined date is represented by the earliest valid DateTime in SQL Server, which is 01-01-1753 00:00:00:000.
+The [!INCLUDE [prod_short](../../includes/prod_short.md)] undefined time is represented by the same value as an undefined date. The undefined date is represented by the earliest valid DateTime in SQL Server, which is 01-01-1753 00:00:00:000.
 
 ## Comparing time values
 
 The comparison of time values does not work if you compare the time value before writing to the database with the time value that was written to the database.
-The cause of the problem is that in [!INCLUDE [prod_short](developer/includes/prod_short.md)] DateTime and Time values are rounded by SQL Server (see [datetime in Transact-SQL](https://learn.microsoft.com/sql/t-sql/data-types/datetime-transact-sql)). This means that a DateTime or Time value can change just because it was written to the database, and the comparison with the original value then runs on error.
+The cause of the problem is that in [!INCLUDE [prod_short](../../includes/prod_short.md)] DateTime and Time values are rounded by SQL Server (see [datetime in Transact-SQL](https://learn.microsoft.com/sql/t-sql/data-types/datetime-transact-sql)). This means that a DateTime or Time value can change just because it was written to the database, and the comparison with the original value then runs on error.
 
 For comparison of two time values, a procedure like the following should be used:
 
