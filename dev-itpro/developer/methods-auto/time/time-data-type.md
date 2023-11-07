@@ -55,29 +55,45 @@ The following shows what the message windows display accordingly on a computer w
 
 ## SQL Server
 
-Microsoft SQL Server stores information about both date and time in columns of the DATETime type. [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] uses only the time part and inserts a constant value for the date: 01-01-1754.  
+Microsoft SQL Server stores information about both date and time in columns of the DATETime type. [!INCLUDE [prod_short](developer/includes/prod_short.md)] uses only the time part and inserts a constant value for the date: 01-01-1754.  
   
-The [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] undefined time is represented by the same value as an undefined date. The undefined date is represented by the earliest valid DateTime in SQL Server, which is 01-01-1753 00:00:00:000.
+The [!INCLUDE [prod_short](developer/includes/prod_short.md)] undefined time is represented by the same value as an undefined date. The undefined date is represented by the earliest valid DateTime in SQL Server, which is 01-01-1753 00:00:00:000.
 
 ## Comparing time values
 
-As the T-SQL datetime type has a precision that goes down to the nearest 0, 3, or 7 milliseconds, two identically entered times might differ in their milliseconds portion. This could return false in the following equation:
-```al
-ResultBoolean := TimeA = TimeB;
-```
+The comparison of time values does not work if you compare the time value before writing to the database with the time value that was written to the database.
+The cause of the problem is that in [!INCLUDE [prod_short](developer/includes/prod_short.md)] DateTime and Time values are rounded by SQL Server (see [datetime in Transact-SQL](https://learn.microsoft.com/sql/t-sql/data-types/datetime-transact-sql)). This means that a DateTime or Time value can change just because it was written to the database, and the comparison with the original value then runs on error.
 
-To circumvent the rounding issue, we can apply a tolerance of under 10 milliseconds:
-```al
-ResultBoolean := Abs(TimeA - TimeB) < 10;
-```
+For comparison of two time values, a procedure like the following should be used:
 
-Alternatively, we use the [Format method](../system/system-format-joker-integer-integer-method.md) to neglect the milliseconds portion completely:
 ```al
-ResultBoolean := Format(TimeA) = Format(TimeB);
-``` 
+procedure CompareTime(TimeA: Time; TimeB: Time): Integer
+begin
+    // Compares the specified Time values for equality within a small threshold.
+    // Returns 1 if TimeA > TimeB, -1 if TimeB > TimeA, and 0 if they are equal.
+
+    // The threshold must be used to compensate for the varying levels of precision
+    // when storing DateTime values. An example of this is the T-SQL datetime type,
+    // which has a precision that goes down to the nearest 0, 3, or 7 milliseconds.
+
+    case true of
+        TimeA = TimeB:
+            exit(0);
+        TimeA = 0T:
+            exit(-1);
+        TimeB = 0T:
+            exit(1);
+        Abs(TimeA - TimeB) < 10:
+            exit(0);
+        TimeA > TimeB:
+            exit(1);
+        else
+            exit(-1);
+    end;
+end;
+```
   
 ## See Also
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[Standard time formats](../../devenv-format-property.md#standard-time-formats)
