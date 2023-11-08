@@ -57,7 +57,6 @@
       "search.audienceType": "admin, developer",
       "breadcrumb_path": "/dynamics365/business-central/dev-itpro/breadcrumb/toc.json",
       "ms.service": "dynamics365-business-central",
-      "extendBreadcrumb": true,
       "recommendations": "true"
     },
     "fileMetadata": {
