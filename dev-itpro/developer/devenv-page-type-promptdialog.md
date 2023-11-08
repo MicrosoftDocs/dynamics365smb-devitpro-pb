@@ -20,7 +20,9 @@ Typing the shortcut `tpage` and then choose the **Page of type Prompt Dialog** w
 
 ## Properties of the PromptDialog page type
 
-The `PromptDialog` page type has a number of specific properties that characterizes the dialog. The `PageType` property must be set to `PromptDialog`. The `PromptMode` property value is by default `Prompt`, which is the starting prompt mode. The `PromptMode` property can be changed at runtime. The other options are `Generate`, which will trigger generating the output of the copilot interaction, and `Content`, which will show the output of the copilot interaction.
+The `PromptDialog` page type has a number of specific properties that characterizes the dialog. The `PageType` property must be set to `PromptDialog`. The `PromptMode` property value is by default `Prompt`, which is the starting prompt mode. The `PromptMode` property can be changed at runtime. The other options are `Generate`, which will trigger generating the output of the copilot interaction, and `Content`, which will show the output of the copilot interaction. 
+
+To find links to the properties related to the `PromptDialog` page type, see the [See also](devenv-page-type-promptdialog.md#see-also) section in this article.
 
 ## Areas of the PromptDialog page type
 
@@ -157,3 +159,9 @@ page 50100 MyCopilotPage
 
 [Page types and layouts](devenv-page-types-and-layouts.md)  
 [Page object](devenv-page-object.md)  
+[PageType property](properties/devenv-pagetype-property.md)  
+[PromptMode property](properties/devenv-romptmode-property.md)  
+[IsPreview property](properties/devenv-ispreview-property.md)  
+[SourceTable property](properties/devenv-sourcetable-property.md)  
+[SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md)  
+[Extensible property](properties/devenv-extensible-property.md)  
