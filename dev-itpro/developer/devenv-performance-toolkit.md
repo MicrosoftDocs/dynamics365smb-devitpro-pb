@@ -414,7 +414,8 @@ In [!INCLUDE [prod_short](../includes/prod_short.md)], you can check the status 
 It's possible to run BCPT scenario runs in AL-Go for GitHub. For more information, see [Workflow: Create new Performance Test App](https://github.com/microsoft/AL-Go/blob/main/RELEASENOTES.md#new-workflow-create-new-performance-test-app).
 
 ### Using BCPT to produce a large test database
-When running BCPT suites, it is possible to pick which company to run your BCPT suites in. You can utilize this to have BCPT produce a test database with companies with small, medium, or large data sizes. Once you have such a database, you can take a backup (or take a container snapshot if you use Docker). Then restore the database prior to running test suites in the future (or just use this to run manual tests on different data sizes).
+
+When running BCPT suites, it's possible to pick which company to run your BCPT suites in. You can utilize this to have BCPT produce a test database with companies that have small, medium, or large data sizes. Once you have such a database, you can take a backup (or take a container snapshot if you use Docker). Then, restore the database prior to running test suites in the future (or just use this to run manual tests on different data sizes).
 
 ## Analyze the results
 
