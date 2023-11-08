@@ -25,7 +25,7 @@ Denotes a time ranging from 00:00:00.000 to 23:59:59.999. An undefined or blank 
 
 The displayed text format of the time is determined by your Regional and Language Options in Windows.  
   
-The following are examples of valid assignments of times to a Time variable *MyTime*. Time must be set by specifying hours, minutes, and seconds. 
+The following are examples of valid assignments of times to a Time variable *MyTime*. Time must be set by specifying hours, minutes, and seconds. Milliseconds are optional.
   
 ```al
 MyTime := 0T;  
@@ -55,9 +55,9 @@ The following shows what the message windows display accordingly on a computer w
 
 ## SQL Server
 
-Microsoft SQL Server stores information about both date and time in columns of the DATETime type. [!INCLUDE [prod_short](../../includes/prod_short.md)] uses only the time part and inserts a constant value for the date: 01-01-1754.  
+Microsoft SQL Server stores information about both date and time in columns of the datetime type. [!INCLUDE [prod_short](../../includes/prod_short.md)] uses only the time part and inserts a constant value for the date: 01-01-1754.  
   
-The [!INCLUDE [prod_short](../../includes/prod_short.md)] undefined time is represented by the same value as an undefined date. The undefined date is represented by the earliest valid DateTime in SQL Server, which is 01-01-1753 00:00:00:000.
+The [!INCLUDE [prod_short](../../includes/prod_short.md)] undefined time is represented by the same value as an undefined date. The undefined date is represented by the earliest valid datetime in SQL Server, which is 01-01-1753 00:00:00:000.
 
 ## Comparing time values
 
