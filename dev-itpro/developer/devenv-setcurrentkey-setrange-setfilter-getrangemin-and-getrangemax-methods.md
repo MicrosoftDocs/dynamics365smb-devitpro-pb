@@ -1,5 +1,5 @@
 ---
-title: "SetCurrentKey, SetRange, SetFilter, GetRangeMin, GetRangeMax Methods"
+title: "SetRange, SetFilter, GetRangeMin, GetRangeMax Methods"
 description: Describes methods that set limits on the value of one or more specified fields, so that only a subset of the records are displayed, modified, deleted, and so on. 
 ms.custom: na
 ms.date: 04/01/2021
@@ -10,11 +10,9 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# SetCurrentKey, SetRange, SetFilter, GetRangeMin, and GetRangeMax Methods
+# Filtering records with the SetRange, SetFilter, GetRangeMin, and GetRangeMax Methods
 
-The following methods are used to filter records in a table:  
-
-- SetCurrentKey  
+The following methods can be used to filter records in a table:  
 
 - SetRange  
 
@@ -26,29 +24,6 @@ The following methods are used to filter records in a table:
 
  These methods are some of the most commonly used AL methods. They set limits on the value of one or more specified fields, so that only a subset of the records are displayed, modified, deleted, and so on.  
 
-## SetCurrentKey Method
-
-SetCurrentKey sorts the contents of the table on the provided fields and selects the key that contains the specified fields if possible. 
-
- SetCurrentKey has the following syntax.  
-
-```AL
-[Ok :=] Record.SetCurrentKey(Field1, [Field2],...)  
-```  
-
- When you use SetCurrentKey the following rules apply:  
-
--   Inactive fields are ignored. Only active keys are scanned.  
-
--   When searching for a key, the first occurrence of the specified fields is selected. This means the following:  
-
-    -   If you specify only one field as a parameter when you call SetCurrentKey, the key that is actually selected may consist of more than one field.  
-
-    -   If the field that you specify is the first component of several keys, the key that is selected may not be the key that you expect.  
-
-    -   If no keys can be found that include the fields that you specify, the return value is FALSE. If you do not test the return value, a run-time error occurs. If you do test the return value, the program will continue to run even though no key was found.  
-
- For more information about this method, see [SetCurrentKey Method (Record)](methods-auto/record/record-SetCurrentKey-method.md).
 
 ## SetRange Method  
  SetRange sets a simple filter on a field.  
