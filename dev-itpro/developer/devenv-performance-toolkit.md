@@ -16,7 +16,7 @@ ms.author: bholtorf
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-The Performance Toolkit extension is built for Independent Solution Vendors (ISVs) and Value Added Resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prod_short](includes/prod_short.md)] for their customers. Because things change between released versions, it's important that ISVs and VARs can test the performance of their solutions to ensure that new versions don't introduce performance regressions when the volume of users grows. To help, the Performance Toolkit lets developers simulate workloads in realistic scenarios to compare performance between builds of their solutions.
+The Performance Toolkit extension (BCPT) is built for Independent Solution Vendors (ISVs) and Value Added Resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prod_short](includes/prod_short.md)] for their customers. Because things change between released versions, it's important that ISVs and VARs can test the performance of their solutions to ensure that new versions don't introduce performance regressions when the volume of users grows. To help, the Performance Toolkit lets developers simulate workloads in realistic scenarios to compare performance between builds of their solutions.
 
 The Performance Toolkit extension helps answer questions such as, "Does my solution for [!INCLUDE[prod_short](includes/prod_short.md)] support X number of users doing this, that, and the other thing at the same time?"
 
