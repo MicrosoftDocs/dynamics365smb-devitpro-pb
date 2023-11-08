@@ -315,7 +315,7 @@ There are three ways to run BCPT suites.
 * By using the Visual Studio Code extension or PowerShell scripts.
 * By using AL-Go for GitHub. For more information, see [Workflow: Create new Performance Test App](https://github.com/microsoft/AL-Go/blob/main/RELEASENOTES.md#new-workflow-create-new-performance-test-app)
 
-> [!NOTE] Choose a company to run BCPT suites in 
+> [!NOTE] 
 > When running BCPT suites, it is possible to pick which company to run your BCPT suites in. This can be an effective strategy when running performance tests against different data sizes.
 
 ### Known limitations
