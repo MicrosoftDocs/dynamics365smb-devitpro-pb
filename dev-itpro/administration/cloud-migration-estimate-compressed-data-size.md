@@ -24,58 +24,58 @@ CREATE PROCEDURE estimate_page_compressed_table_sizes
 AS 
 SET NOCOUNT ON
 BEGIN
-DECLARE 
-@table_name sysname;
-
+DECLARE @table_name sysname;
+ 
 CREATE TABLE #compressed_table_report (
-table_name sysname,
-index_id int,
-partition_number int,
-size_with_current_compression_setting bigint,
-size_with_requested_compression_setting bigint,
-sample_size_with_current_compression_setting bigint,
-sample_size_with_requested_compression_setting bigint
+	table_name sysname,
+	schema_name nvarchar(max),
+	index_id int,
+	partition_number int,
+	size_with_current_compression_setting bigint,
+	size_with_requested_compression_setting bigint,
+	sample_size_with_current_compression_setting bigint,
+	sample_size_with_requested_compression_setting bigint
 );
-
+ 
 DECLARE tables_cur cursor for 
-SELECT table_name
-FROM sys.tables
-// adjust this part if you want to restrict the tables in the calculation
-// WHERE table_name in ('table name 1', 'table name 2', 'table name 3') 
+SELECT name
+  FROM sys.tables
+-- adjust this part if you want to restrict the tables in the calculation
+-- WHERE table_name in ('table name 1', 'table name 2', 'table name 3') 
 ;
-
+ 
 OPEN tables_cur;
-
+ 
 FETCH NEXT FROM tables_cur INTO @table_name
 WHILE @@Fetch_Status = 0 
 BEGIN
     INSERT INTO #compressed_table_report
     EXEC sp_estimate_data_compression_savings
-        @schema_name = 'dbo', // Business Central use the dbo schema
+        @schema_name = 'dbo', -- Business Central use the dbo schema
         @object_name = @table_name,
         @index_id = NULL,
         @partition_number = NULL,
         @data_compression = 'PAGE'
-    ; 
-
+    ;
+ 
     FETCH NEXT FROM tables_cur INTO @table_name
 END;
-
+ 
 CLOSE tables_cur;
 DEALLOCATE tables_cur;
-
+ 
 SELECT table_name
-, avg(size_with_current_compression_setting) as avg_size_with_current_compression_setting
-, avg(size_with_requested_compression_setting) as avg_size_with_requested_compression_setting
-, avg(size_with_current_compression_setting - size_with_requested_compression_setting) AS avg_size_saving
-FROM #compressed_table_report
-GROUP BY table_name
-ORDER BY avg_size_saving DESC 
+     , avg(size_with_current_compression_setting) as avg_size_with_current_compression_setting_KB
+     , avg(size_with_requested_compression_setting) as avg_size_with_requested_compression_setting_KB
+     , avg(size_with_current_compression_setting - size_with_requested_compression_setting) AS avg_size_saving_KB
+  FROM #compressed_table_report
+ GROUP BY table_name
+ ORDER BY avg_size_saving_KB DESC 
 ;
-
+ 
 DROP TABLE #compressed_table_report
 ;
-
+ 
 END
 SET NOCOUNT OFF
 GO
@@ -86,6 +86,7 @@ When running the stored procedure, do this
 ```SQL
 USE <tenant database> // change to your database
 GO
+
 EXEC estimate_page_compressed_table_sizes
 GO
 ```
