@@ -85,6 +85,8 @@ begin
             exit(1);
         Abs(TimeA - TimeB) < 10:
             exit(0);
+        Abs(TimeA - TimeB) = 86399999:
+            exit(0);
         TimeA > TimeB:
             exit(1);
         else
