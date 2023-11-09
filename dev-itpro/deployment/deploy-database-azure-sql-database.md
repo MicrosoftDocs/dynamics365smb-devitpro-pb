@@ -185,6 +185,10 @@ When comparing the performance of Azure SQL database and a SQL Server deployed t
 - Azure SQL database is a scalable and intelligent service that includes features such as high-availability, backups, automatic index tuning, security vulnerability assessment, and advanced threat detection. When choosing a pricing tier for running your production database, make sure that you compare Azure SQL database to a similar setup for SQL Server on a virtual machine (including the cost of administration and maintenance).
 - The performance of an Azure SQL database is correlated to the price you pay for usage, and new pricing models evolve over time. Use the scalability options within the service to change the database performance tier for your installation as your workload changes over time.
 
+## Integrating directly on SQL Server objects
+[!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
+
+
 ## See Also
 
 [Installation Considerations for Microsoft SQL Server](installation-considerations-for-microsoft-sql-server.md)  
