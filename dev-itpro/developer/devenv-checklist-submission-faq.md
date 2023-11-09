@@ -79,7 +79,7 @@ We don't run a manual validation of the apps anymore. Instead, we rely on you to
 
 Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation on all [!INCLUDE[prod_short](../includes/prod_short.md)] environments from the AppSource marketplace.
 
-Selected customers can also install the Preview version of the extensions in your submission after the "Preview creation" step. In order to trigger the install, customers must use the URL `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` where `[TenantID]` is the Microsoft Entra ID of their environment, `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission. For more information about AppSource app preview, refer to the dedicated section below.
+Selected customers can also install the Preview version of the extensions in your submission after the "Preview creation" step. In order to trigger the install, customers must receive and use the URL `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` where `[TenantID]` is the Microsoft Entra ID of their environment, `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission. For more information about AppSource app preview, refer to the dedicated section below.
 
 ### When should I include my library apps as part of my submission?
 
@@ -145,11 +145,20 @@ Preview support is now enabled for all submissions of [!INCLUDE[prod_short](../i
 
 ### On which environments can I install preview versions?
 
-Preview versions can be installed on Sandbox environments running on [!INCLUDE[prod_short](../includes/prod_short.md)] 2023 release wave 2, or newer.
+Preview versions can be installed on Sandbox environments running on [!INCLUDE[prod_short](../includes/prod_short.md)] 2023 release wave 2 CU 3 (version 23.3), or newer.
 
 ### How can I install preview versions for selected customers?
 
-Selected customers can install the preview version of the extensions in your submission after the "Preview creation" step of the submission flow in Partner Center. In order to trigger the install, customers must use the URL `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` where `[TenantID]` is the Microsoft Entra ID of their environment, `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission. For more information about AppSource app preview, refer to the dedicated section below.
+Selected customers can install the preview version of the extensions in your submission after the "Preview creation" step of the submission flow in Partner Center. In order to trigger the install, customers must receive and use the URL `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` where `[TenantID]` is the Microsoft Entra ID of their environment, `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
+
+After the "Preview creation", a preview listing of the offer is available in the AppSource marketplace. However, installing the corresponding preview version of the extension from the preview listing is not supported and the URL above must be used instead.
+
+### How can I see if customers are using my preview versions?
+
+If you are using Azure Application Insights for your extension, you can see which customers installed it as a preview version by selecting signals `LC0010` and `LC0022` where the custom dimension `extensionAvailability` is set to `Preview`. You can also see which customers used a preview key when installing your extensions by filtering on the custom dimension `extensionPreviewKeyProvided`. For more information, see [Analyzing Extension Lifecycle Trace Telemetry](../administration/telemetry-extension-lifecycle-trace.md).
+
+> [!NOTE]  
+> If you see some extensions installed with `extensionAvailability` set to `Public` even if `extensionPreviewKeyProvided` is set to `True`, this means that the customers used the preview key they received after you selected `Go Live` in Partner Center to make the extension public.
 
 ### Is the preview key per submission or per offer?
 

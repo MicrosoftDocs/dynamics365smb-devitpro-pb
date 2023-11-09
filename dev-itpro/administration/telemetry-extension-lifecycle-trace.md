@@ -445,6 +445,8 @@ Occurs when an extension installs successfully on a tenant.
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionVersion|Specifies the version of the extension that was installed.|
+| extensionAvailability|Specifies whether the availability of an AppSource extension:<ul><li>**Public** - The version is public and can be installed on any environment.</li><li>**Preview** - The version is in preview and can be installed on selected Sandbox environments using a preview key provided by the AppSource publisher.</li>|
+| extensionPreviewKeyProvided|Specifies whether a preview key was specified when installing the extension. A preview key is required to install preview versions.|
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
@@ -503,6 +505,8 @@ Occurs when an extension failed to install on a tenant.
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionVersion|Specifies the version of the extension that was installed.|
 |failureReason|Specifies the error that occurred when the extension was installed.|
+| extensionAvailability|Specifies whether the availability of an AppSource extension:<ul><li>**Public** - The version is public and can be installed on any environment.</li><li>**Preview** - The version is in preview and can be installed on selected Sandbox environments using a preview key provided by the AppSource publisher.</li>|
+| extensionPreviewKeyProvided|Specifies whether a preview key was specified when installing the extension. A preview key is required to install preview versions.|
 | result|**Failed**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
@@ -641,6 +645,8 @@ Occurs when an extension updates successfully on the service. <!--The update ope
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionVersion|Specifies the new version of the extension being upgraded.|
 | extensionVersionFrom|Specifies the old version of the extension being upgraded.|
+| extensionAvailability|Specifies whether the availability of an AppSource extension:<ul><li>**Public** - The version is public and can be installed on any environment.</li><li>**Preview** - The version is in preview and can be installed on selected Sandbox environments using a preview key provided by the AppSource publisher.</li>|
+| extensionPreviewKeyProvided|Specifies whether a preview key was specified when installing the extension. A preview key is required to install preview versions.|
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
@@ -681,6 +687,8 @@ Occurs when an extension failed to update on the service. <!--The update operati
 | extensionVersionFrom|Specifies the old version of the extension being upgraded.|
 | failureReason|Specifies the error that occurred during upgrade.|
 | result|**Failure**|
+| extensionAvailability|Specifies whether the availability of an AppSource extension:<ul><li>**Public** - The version is public and can be installed on any environment.</li><li>**Preview** - The version is in preview and can be installed on selected Sandbox environments using a preview key provided by the AppSource publisher.</li>|
+| extensionPreviewKeyProvided|Specifies whether a preview key was specified when installing the extension. A preview key is required to install preview versions.|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
