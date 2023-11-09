@@ -900,10 +900,10 @@
 
 ## AL platform
 ### [Overview](developer/devenv-platform-overview.md)
+### [System and application reference documentation](/dynamics365/business-central/application/)
 <!-- (Job queue, printing, task scheduler, telemetry, Keyvault, .NET interop, AL HttpClient, Azure functions) -->
 ### Using the system application
 #### [Overview of the system application](developer/devenv-system-application-overview.md)
-#### [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 
 #### Creating new modules in the system application
 ##### [Module architecture](developer/devenv-blueprint.md)
