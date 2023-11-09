@@ -3,7 +3,7 @@ title: Performance Toolkit extension
 description: Test your extensions for performance regressions during the development process for Business Central apps. 
 author: bholtorf
 ms.custom: bap-template
-ms.date: 09/19/2023
+ms.date: 10/24/2023
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.tgt_pltfrm: na
@@ -48,6 +48,9 @@ In the following table, you find examples of scenarios for each persona where th
 | Project manager | Before go-live, ensure that the system scales with the expected number of users and what they're supposed to do in the system. | 1. Together with the project sponsor on the customer side, identify the key scenarios that must be tested <br> 2. Copy the production environment to a sandbox. <br> 3. Set up telemetry on the environment (to get clean data, set up a new Application Insights resource for this test only) <br> 4a. Install and configure the BCPT AL extension with the scenarios you need and in the expected use pattern. <br> 4b. Set up scenarios as part of a devops pipeline (maybe work on automating parts of this process for easier repeatability). <br> 5. Run the scenarios <br> 6. Install and configure the Power BI app on telemetry.  Look at the results in Performance report. <br> 7. Consider setting up alerts on regressions. |
 | Project manager | Test how multiple apps work together under pressure | Similar to the go-live scenario, but here you need to make sure that apps are installed in the environment. | 
 | Supporter | Analyze performance issues due to locking or deadlocks | Similar to the developer scenario for concurrency testing. If you're lucky, scenario codeunits are already available on GitHub. |
+
+> [!TIP]
+> Get started with [understanding busines processes here](/dynamics365/guidance/business-processes/overview), and learn about [roles in Dynamics 365 here](/dynamics365/guidance/roles/overview).
 
 ## How can I answer the question "Can Business Central handle a specific load for prospect customer"?
 

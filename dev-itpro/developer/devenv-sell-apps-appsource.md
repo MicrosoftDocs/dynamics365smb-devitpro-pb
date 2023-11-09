@@ -4,7 +4,7 @@ description: Learn how to enable tranactability in AppSource for Business Centra
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: bap-template
-ms.date: 07/03/2023
+ms.date: 10/30/2023
 ms.reviewer: na
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -28,13 +28,24 @@ It's also recommended to create a dummy app where you can learn and play with fu
 
 ## The process of enabling transactability
 
-The following steps outline the process of enabling transactability for your app, assuming that you already have an existing offer in AppSource. If you don't have an existing offer in AppSource, read more here [Create a Saas Offer](/partner-center/marketplace/create-new-saas-offer). Having assured any transition period for your app by setting up side-by-side support, you can enable transactability for your app. The following outlines the steps to take:
+The following steps outline the process of enabling transactability for your app, assuming that you already have an existing offer in AppSource. If you don't have an existing offer in AppSource, read more here [Create a Dynamics 365 Business Central offer](/partner-center/marketplace/dynamics-365-business-central-offer-setup). Having assured any transition period for your app by setting up side-by-side support, you can enable transactability for your app. The following outlines the steps to take:
 
 - In Partner Center, on your existing offer, under **Setup details**, select the option called **Would you like to sell through Microsoft?**, choose the **Yes, I would like to sell through Microsoft and have Microsoft host transactions on my behalf** option to opt into transactability.  
+
+![<!--alt text start -->Opting in to sell offer through Microsoft in Partner Center<!--alt text end -->](media/opt-into-transact-small.png "Opting in to sell offer through Microsoft in Partner Center")
+
 - Once you have enabled transactability, you can define plans for your offer. In Partner Center, on your offer, select the **Plan overview** tab, and then choose **Add plan**. For more information, see [Plans](devenv-sell-apps-appsource.md#plans).
+
+![<!--alt text start -->Sample transact app with plans in AppSource<!--alt text end -->](media/plans-small.png "Sample transact app with plans in AppSource")
+
 - When you have defined the plans, you can map these plans to functionality in your app. You do this by creating entitlements in your app, which map the license to object entitlements. For more information, see [Mapping plans to functionality in your app](devenv-sell-apps-appsource.md#mapping-plans-to-functionality-in-your-app). 
 - Having opted into transactability, defined plans, and mapped these plans to functionality in your app by using entitlements, you can now publish your app. Your app goes through the AppSource validation process, and once it's published, users can purchase your app directly in AppSource.
+
+![<!--alt text start -->Sample transact app with plans in AppSource<!--alt text end -->](media/converttemperatureappsource-small.png "Sample transact app with plans in AppSource")
+
 - When customers buy your app, they get a license for the plan, and they can go to the Microsoft 365 admin center, and then choose **Licenses**, and then they can see the license for the app, which they can assign to users. For more information, see [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+
+![<!--alt text start -->Once app plans have been purchased, install and assign licenses in Microsoft 365 admin center<!--alt text end -->](media/manage-licenses-small.png "Once app plans have been purchased, install and assign licenses in Microsoft 365 admin center")
 
 ## Plans
 
@@ -62,3 +73,5 @@ The side-by-side support is the ability to fall back to custom licensing for exi
 
 [FAQ about the Microsoft commercial marketplace](/partner-center/marketplace/marketplace-faq-publisher-guide)  
 [Entitlement object](devenv-entitlement-object.md)  
+[Sell Business Central apps through AppSource - release plan](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/sell-business-central-apps-through-appsource)  
+[Create a Dynamics 365 Business Central offer](/partner-center/marketplace/dynamics-365-business-central-offer-setup)
