@@ -156,11 +156,18 @@ If you submit a new version 1.5.0.0 with the `application` property set to 21.0.
 
 ## What kind of changes can't be part of a hotfix?
 
-Since the AppSourceCop will validate for breaking changes, you can modify the content of your procedure. However, you can't add new AL objects (pages, reports, codeunits, etc.) or new elements (procedure, actions, fields, etc.) to your hotfix app's public API unless they're also part of the next version selected for the validation, or they're obsolete pending (except for table and table fields).
+Since the AppSourceCop will validate for breaking changes, you cannot add code that contains breaking changes with the previous and next version selected for validation. This includes, among others, removing non-obsolete objects, removing table fields, reducing the accessibility of an object. 
+
+As part of a hotfix, you also cannot add new AL objects (pages, reports, codeunits, etc.) or new elements (procedure, actions, fields, etc.) that contribute to your extension's public API unless they're also part of the next version selected for the validation, or they're obsolete pending (except for table and table fields).
 
 ### Example 1 - How to add procedures in hotfixes
 
-Let's consider that you have versions 1.0.0.0 and 2.0.0.0 of your app in AppSource, with 1.0.0.0 that targets [!INCLUDE [prod_short](includes/prod_short.md)] version 22.0 and 2.0.0.0 that targets [!INCLUDE [prod_short](includes/prod_short.md)] version 23.0.
+Let's consider that you have the following versions of your app publicly available in AppSource:
+
+| Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
+| ------- | ---- |
+| 1.0.0.0 | 21.0 |
+| 2.0.0.0 | 22.0 |
 
 Version 1.0.0.0 of your app is defined as follows:
 ```al
@@ -196,7 +203,12 @@ However, you aren't allowed to define a new procedure `procedure MyNewPublicProc
 
 ### Example 2 - How to add AL objects in hotfixes
 
-Let's consider that you have versions 1.0.0.0 and 2.0.0.0 of your app in AppSource, with 1.0.0.0 that targets [!INCLUDE [prod_short](includes/prod_short.md)] version 22.0 and 2.0.0.0 that targets [!INCLUDE [prod_short](includes/prod_short.md)] version 23.0.
+Let's consider that you have the following versions of your app publicly available in AppSource:
+
+| Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
+| ------- | ---- |
+| 1.0.0.0 | 21.0 |
+| 2.0.0.0 | 22.0 |
 
 Version 1.0.0.0 of your app is defined as follows:
 ```al
@@ -232,7 +244,13 @@ However, you aren't allowed to define a new procedure `codeunit 1000002 MyNewPub
 > [!IMPORTANT]  
 > This example demonstrates the impact of obsoleting and removing objects within the same release. The technical validation of AppSource submission does not enforce a specific timeline when deprecating code, but we recommend following the approach documented in [Microsoft Timeline for Deprecating Code in Business Central](devenv-deprecation-timeline.md)
 
-Let's consider now that you have versions 1.0.0.0, 2.0.0.0, and 2.1.0.0 of your app in AppSource, with 1.0.0.0 that targets [!INCLUDE [prod_short](includes/prod_short.md)] version 22.0, and 2.0.0.0 and 2.1.0.0  that both target [!INCLUDE [prod_short](includes/prod_short.md)] version 23.0.
+Let's consider that you have the following versions of your app publicly available in AppSource:
+
+| Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
+| ------- | ---- |
+| 1.0.0.0 | 21.0 |
+| 2.0.0.0 | 22.0 |
+| 2.1.0.0 | 22.0 |
 
 Version 1.0.0.0 of your app is defined as follows:
 ```al
