@@ -70,7 +70,7 @@ Use the appropriate notation for different data types with filter expressions.
 
 Nested function calls in filter clauses are supported in $schemaversion=2.1 and later. However, the following filters aren't supported in nested function calls: Indexof, replace, trim, concat, round, floor, and ceiling. 
 
-For earlier schema versions, filter clause expressions like `contains(tolower(field), 'some')` don't return the expected results - in this case a partial case-insensitive text search - but will instead either throw an error or return an undefined result.
+For earlier schema versions, filter clause expressions like `contains(tolower(field), 'some')` don't return the expected results - in this case a partial case-insensitive text search - but instead either throws an error or returns an undefined result.
 
 ## See also
 
