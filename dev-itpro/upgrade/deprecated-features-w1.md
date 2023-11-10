@@ -1,6 +1,6 @@
 ---
 title: Deprecated Features in the Base App
-description: Describes the features that have been moved, removed, or replaced in the W1 version. 
+description: Describes the features that have been moved, removed, or replaced in the W1 version.
 author: brentholtorf
 ms.author: bholtorf
 ms.date: 08/23/2023
@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Deprecated Features in the Base App
 
-This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
+This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
@@ -39,7 +39,7 @@ If you're a developer and want to learn more about how to extend G/L entry aggre
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced|The legacy Exchange Rates Adjustment Report is being replaced by a new capability that increases extensibility and makes it easier to comply with local and industry-specific requirements. It also gives you more control over exchange rate adjustments with a posting preview and how dimension values are post when you adjust exchange rate, and better reporting. To learn more about the new capabilities, go do [Adjusting Exchange Rates](/dynamics365/business-central/finance-how-update-currencies#adjusting-exchange-rates).
-<!--If you're a developer and want to learn more about how to use the new extensible exchange rates, go to <add link to output of related documentation deliverable on exchange rates adjustment extensiblitiy-->.  
+<!--If you're a developer and want to learn more about how to use the new extensible exchange rates, go to <add link to output of related documentation deliverable on exchange rates adjustment extensiblitiy-->.
 
 ## Changes in 2023 release wave 1
 
@@ -197,8 +197,9 @@ Some features are available only under specific circumstances, or not at all int
 [Deprecated Features in the Swiss Version](deprecated-features-ch.md)  
 [Deprecated Features in the UK Version](deprecated-features-uk.md)  
 [Deprecated Features in the United States Version](deprecated-features-us.md)  
-[Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](deprecated-fields.md)
+[Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](deprecated-fields.md)  
 [Deprecated Tables](deprecated-tables.md)  
-[AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)  
+[ALAppExtensions repository (legacy)](https://github.com/microsoft/ALAppExtensions)  
+[BCApps repository (substitute for ALAppExtensions)](https://github.com/microsoft/BCApps)  
 [Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
-[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  
