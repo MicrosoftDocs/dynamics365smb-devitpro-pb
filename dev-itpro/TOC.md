@@ -678,6 +678,7 @@
 ##### [Pages overview](developer/devenv-pages-overview.md)
 ##### [Page object](developer/devenv-page-object.md)
 ##### [Page extension object](developer/devenv-page-ext-object.md)
+##### [PromptDialog object](developer/devenv-page-type-promptdialog.md)
 ##### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
 ##### List pages
@@ -967,11 +968,11 @@
 #### [Extending security model](developer/devenv-permissionset-ext-object.md)
 #### [Extending tables](developer/devenv-table-ext-object.md)
 ### Extending the system application
-#### [System application reference](/dynamics365/business-central/application/system-application)
+#### [System application reference](/dynamics365/business-central/application)
 #### [Contributing to the Business Central open source system application](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md)
 #### [Get started creating or modifying modules](developer/devenv-getting-started.md)
 ### Extending the base application
-#### [Base application reference](/dynamics365/business-central/application/base-application)
+#### [Base application reference](/dynamics365/business-central/application)
 #### [The Microsoft_Application.app file](developer/devenv-application-app-file.md)
 #### [Publishing a code-customized base application](developer/devenv-publish-code-customization.md)
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
