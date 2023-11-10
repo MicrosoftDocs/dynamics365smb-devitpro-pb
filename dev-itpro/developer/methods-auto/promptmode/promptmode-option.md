@@ -1,6 +1,6 @@
 ---
-title: "UICop Warning AW0016"
-description: "The Rich Text Editor field must reside alone within a FastTab group."
+title: "PromptMode System Option"
+description: "Specifies the current mode of a PromptDialog page."
 ms.author: solsen
 ms.custom: na
 ms.date: 10/25/2023
@@ -13,14 +13,19 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# UICop Warning AW0016
-Rich Text Editor fields are only allowed while alone in a FastTab group.
+# PromptMode Option Type
+> **Version**: _Available or changed with runtime version 12.1._
 
-## Description
-The Rich Text Editor field must reside alone within a FastTab group.
+Specifies the current mode of a PromptDialog page.
+
+## Members
+|  Member  |  Description  |
+|----------------|---------------|
+|Prompt|Prompting the user for input for the copilot interaction.|
+|Generate|Generating the output of the copilot interaction.|
+|Content|Showing the output of the copilot interaction.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[UICop Analyzer](uicop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

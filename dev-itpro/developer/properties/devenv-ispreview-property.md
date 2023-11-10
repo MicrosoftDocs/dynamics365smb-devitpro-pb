@@ -1,6 +1,6 @@
 ---
-title: "UICop Warning AW0016"
-description: "The Rich Text Editor field must reside alone within a FastTab group."
+title: "IsPreview Property"
+description: "Specifies if the page is available as part of a preview release."
 ms.author: solsen
 ms.custom: na
 ms.date: 10/25/2023
@@ -13,14 +13,15 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# UICop Warning AW0016
-Rich Text Editor fields are only allowed while alone in a FastTab group.
+# IsPreview Property
+> **Version**: _Available or changed with runtime version 12.1._
 
-## Description
-The Rich Text Editor field must reside alone within a FastTab group.
+Specifies if the page is available as part of a preview release.
+
+## Applies to
+-   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[UICop Analyzer](uicop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
