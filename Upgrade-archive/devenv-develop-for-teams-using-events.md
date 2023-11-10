@@ -23,7 +23,7 @@ This article explains how to use events to customize the fields shown in a Teams
 <!--
 
 |OnBeforeGetPageSummary|This is ideal for overriding all data for a Card by specifying a custom set of key-value pairs that will be displayed. The platform will not attempt to select any list of fields or their corresponding values if you subscribe to this event.|-->
-The events are part of the [Page Summary Provider](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Page%20Summary%20Provider/README.md) module of the Microsoft System Application.
+The events are part of the [Page Summary Provider](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Page%20Summary%20Provider) module of the Microsoft System Application.
 
 > [!NOTE]
 > In most cases, we recommend you set the `Brick` field group instead of using events to define card content. This ensures a consistent experience across the Business Central Web client, mobile devices, and Teams.
@@ -151,7 +151,7 @@ begin
     if PageId <> Page::"Vendor Card" then
         exit;
 
-    // Remove Balance Due  details 
+    // Remove Balance Due  details
     FieldList.Remove(Vendor.FieldNo("Balance Due (LCY)"));
     FieldList.Remove(Vendor.FieldNo("Balance (LCY)"));
 

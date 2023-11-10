@@ -13,7 +13,9 @@ ms.author: jswymer
 
 # Analyzing Field Monitoring Telemetry
 
-[!INCLUDE[2020_releasewave2-17-1-later](../includes/2020_releasewave2-17-1-later.md)] 
+[!INCLUDE[2020_releasewave2-17-1-later](../includes/2020_releasewave2-17-1-later.md)]
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 Keeping sensitive data secure and private is a core concern for most businesses. To add a layer of security, you can monitor important fields when someone changes a value. For example, you might want to know if someone changes your company's IBAN number.
 
@@ -58,7 +60,7 @@ The following table explains other custom dimensions that are common to all fiel
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alDataClassification|**SystemMetadata**|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|

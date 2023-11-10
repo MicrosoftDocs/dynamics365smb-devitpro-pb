@@ -362,7 +362,7 @@ end;
 
 ```
 
-During the custom uncoupling process, codeunit Int. Rec. Uncouple Invoke (ID 5357) raises and publishes events. You can add code that subscribes to these events so that you can add custom logic at different stages of the uncoupling process. The following list describes the events that are published by codeunit Int. Rec. Uncouple Invoke. 
+During the custom uncoupling process, codeunit Int. Rec. Uncouple Invoke (ID 5357) raises and publishes events. You can add code that subscribes to these events so that you can add custom logic at different stages of the uncoupling process. The following list describes some of the events that are published by codeunit Int. Rec. Uncouple Invoke. For a complete list of events, refer to [CodeUnit Int. Rec. Uncouple Invoke reference](/dynamics365/business-central/application/base-application/codeunit/base-application-codeunit-int.-rec.-uncouple-invoke#events).
 
 * **OnBeforeUncoupleRecord** - Occurs before remove coupling, and can be used to change data before uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnBeforeUncoupleRecord. The event resets the company ID on the uncoupled tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 * **OnAfterUncoupleRecord** - Occurs after coupling is removed, and can be used to change data after uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnAfterUncoupleRecord. The event removes couplings to the contacts linked to the uncoupled customers and vendors.
@@ -509,7 +509,7 @@ When synchronizing data, some tables may require custom code to successfully syn
 
 You can either use the standard transformation rules on page **Integration Field Mapping List** (ID 5361) or you can transform data programmatically. For more information, see [Transformation Rules](/dynamics365/business-central/across-how-to-set-up-data-exchange-definitions#transformation-rules).
 
-During synchronization, codeunit **Integration Table Synch.** (ID 5335) raises and publishes certain events. We can add code that subscribes to these events so that we can add custom logic at different stages of the synchronization process. The following table describes the events that are published by codeunit **Integration Table Synch.**.  
+During synchronization, codeunit **Integration Record Synch. Invoke** (ID 5345) raises and publishes certain events. We can add code that subscribes to these events so that we can add custom logic at different stages of the synchronization process. The following table describes some of the events that are published by codeunit **Integration Record Synch. Invoke**. For a complete list of published events, refer to [CodeUnit Integration Rec. Synch. Invoke reference](/dynamics365/business-central/application/base-application/codeunit/base-application-codeunit-integration-rec.-synch.-invoke#events). 
 
 |Event|Description|  
 |-----|-----------|  
@@ -523,7 +523,7 @@ During synchronization, codeunit **Integration Table Synch.** (ID 5335) raises a
 |**OnBeforeModifyRecord**|Occurs before modifying an existing destination record, and can be used to validate or change data before modification.|  
 |**OnAfterModifyRecord**|Occurs after an existing destination record is modified, and can be used to do post-modify operations such as updating related data.|  
 
-The following table describes the events that are published by codeunit **Integration Record Synch. (ID 5336)**.
+The following table describes some of the events that are published by codeunit **Integration Record Synch.** (ID 5336). For a complete list of published events, refer to [CodeUnit Integration Record Synch. reference](/dynamics365/business-central/application/base-application/codeunit/base-application-codeunit-integration-record-synch.#events).
 
 |Event|Description|  
 |-----|-----------|  
@@ -553,7 +553,7 @@ For more information on base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]
 Let us explore another scenario. If we added an **Industry** field to the **Contact** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and now want to include the field in our integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 > [!TIP]
-> Sample code that customizes an integration between a contact in [!INCLUDE[prod_short](../includes/prod_short.md)] and a contact in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] by adding a new field is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/CDSCustomContactIntegration) repository. 
+> Sample code that customizes an integration between a contact in [!INCLUDE[prod_short](../includes/prod_short.md)] and a contact in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] by adding a new field is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/DataverseCustomContactIntegration) repository. 
 
 ### To create the integration table extension for table "CRM Contact" (ID 5342)
 

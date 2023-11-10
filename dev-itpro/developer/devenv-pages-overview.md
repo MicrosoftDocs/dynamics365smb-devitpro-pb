@@ -52,7 +52,7 @@ Which page type you choose depends on the application task that you want to supp
 |[CardPart](devenv-designing-cardparts.md)|A Card Part page is used in a FactBox on another page to view or edit additional fields associated with a selected entity in the page.|
 |[List](devenv-designing-list-pages.md)|A List page displays content from a table in a list format.|
 |[ListPart](devenv-designing-listparts.md)|Similar to a List page, a List Part page displays content from a table in a list format. The difference is that you use the List part page as another page in a FactBox or as a part of the Role Center page.|
-|[ListPlus](devenv-designing-listparts.md)|A ListPlus page displays content from a table in a list format. The difference from a List page is that the main content is a ListPart, not a Repeater group as the List has it.|
+|[ListPlus](devenv-page-types-and-layouts.md#listplus-page-layouts)|A ListPlus page displays content from a table in a list format. The difference from a List page is that the main content is a ListPart, not a Repeater group as the List has it.|
 |[Document](devenv-designing-card-pages.md)|A Document page usually consists of two separate pages combined into one, with one page nested in the other. A Document page is suitable for use when you want to display data from two tables that are linked together.|
 |[WorkSheet](devenv-page-types-and-layouts.md#worksheet-page-layouts)|You use a Worksheet page type for creating worksheet or journal task pages.|
 |ConfirmationDialog|You use the ConfirmationDialog page to display messages or prompt users with a confirmation before they continue with the task that they are working on.|

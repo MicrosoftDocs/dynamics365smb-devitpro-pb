@@ -1,6 +1,6 @@
 ---
-title: Move an environment to another Azure Active Directory organization
-description: You can move a Business Central environment to another Azure Active Directory tenant. Start in the Business Central admin center.
+title: Move an environment to another Microsoft Entra organization
+description: You can move a Business Central environment to another Microsoft Entra tenant. Start in the Business Central admin center.
 author: jswymer
 ms.topic: conceptual
 ms.devlang: na
@@ -11,25 +11,27 @@ ms.date: 04/01/2021
 ms.author: jswymer
 ---
 
-# Move an Environment to another Azure Active Directory organization
+# Move an Environment to another Microsoft Entra organization
 
-In some cases, the Azure Active Directory (Azure AD) organization (also known as the Azure AD tenant) of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, such as the following:
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
+In some cases, the Microsoft Entra organization (also known as the Microsoft Entra tenant) of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, such as the following:
 
 - Business entities merge.
 - An acquisition takes place.
-- The customer decides to use one Azure AD tenant in a specific region and stop using Azure AD tenants they created in other regions.
-- The environment was mistakenly created by the reselling partner for the wrong Azure AD tenant.
+- The customer decides to use one Microsoft Entra tenant in a specific region and stop using Microsoft Entra tenants they created in other regions.
+- The environment was mistakenly created by the reselling partner for the wrong Microsoft Entra tenant.
 
-In all such cases, the customers want to preserve the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments they created for the original Azure AD tenants, and link them to the new ones instead. Microsoft Support can move an environment from one Azure AD tenant to another, based on a support request.
+In all such cases, the customers want to preserve the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments they created for the original Microsoft Entra tenants, and link them to the new ones instead. Microsoft Support can move an environment from one Microsoft Entra tenant to another, based on a support request.
 
 ## Request to move an environment
 
 As a partner, you can submit a support request to Microsoft Support by following the guidance at [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). When submitting these support requests, you must provide the following information:
 
-- Proof of your delegated admin rights in both Azure AD tenants
+- Proof of your delegated admin rights in both Microsoft Entra tenants
 - Confirmation from the customer that the environment move is authorized by them
 
-You can request to move one or more environments. For Microsoft to do the move, you'll need to provide information about the source and destination Azure AD tenants, such as:
+You can request to move one or more environments. For Microsoft to do the move, you'll need to provide information about the source and destination Microsoft Entra tenants, such as:
 
 - Environments name, type and country
 - Source tenant ID and domain
@@ -43,10 +45,10 @@ Once the move is completed, your environments will appear in your new tenant.
 
 ## Considerations
 
-- Environment data will remain unchanged during the move operation. The exact same environment will be linked to a specified Azure AD tenant.
+- Environment data will remain unchanged during the move operation. The exact same environment will be linked to a specified Microsoft Entra tenant.
 - The country, Azure region, and type of the environment (production or sandbox) will remain the same, and can't be changed during this operation.
 - The operation will involve a downtime period for the environment being moved (typically not exceeding 2 hours). So the operation needs to be coordinated with the customer and Microsoft Support.
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Support doesn't provide help with moving the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscriptions, domains, and other resources between the Azure AD tenants. Your support representative or account manager will assist you in contacting billing to cancel or credit your previous subscription, if needed.
+- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Support doesn't provide help with moving the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscriptions, domains, and other resources between the Microsoft Entra tenants. Your support representative or account manager will assist you in contacting billing to cancel or credit your previous subscription, if needed.
 
 ## Before you request your environment to be moved
 
@@ -58,7 +60,7 @@ Once the move is completed, your environments will appear in your new tenant.
 
 ## After the environment has been moved
 
-- Users may have been added to the environment prior to the move operation, while it was still connected to the old Azure AD tenant. If so, these users won't be migrated to the new Azure AD tenant. You'll need to recreate the users on the target tenant if you still want them. You can add multiple user accounts at once [using Excel spreadsheet or other file saved in CSV format](/microsoft-365/enterprise/add-several-users-at-the-same-time). After the users are created on the target Azure AD tenant, assign them the required roles or licenses and [import these users into the moved environment](/dynamics365/business-central/ui-how-users-permissions).
+- Users may have been added to the environment prior to the move operation, while it was still connected to the old Microsoft Entra tenant. If so, these users won't be migrated to the new Microsoft Entra tenant. You'll need to recreate the users on the target tenant if you still want them. You can add multiple user accounts at once [using Excel spreadsheet or other file saved in CSV format](/microsoft-365/enterprise/add-several-users-at-the-same-time). After the users are created on the target Microsoft Entra tenant, assign them the required roles or licenses and [import these users into the moved environment](/dynamics365/business-central/ui-how-users-permissions).
 
   > [!NOTE] 
   > User personalizations will be lost.

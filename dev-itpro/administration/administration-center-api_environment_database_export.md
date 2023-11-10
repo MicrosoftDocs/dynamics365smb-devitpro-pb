@@ -13,18 +13,20 @@ ms.date: 01/03/2023
 
 # Environment Database Export
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Allows for the export of an environment's Azure database. Databases are exported to an Azure Storage account provided by you. There is a limit to the number of exports that can be done within a month as shown by the 'metrics' endpoint below.
 
 ### Required In-Product Permissions for Exporting an Environment Database
 
-To use the `exports` endpoint, you must have the **D365 BACKUP/RESTORE** permission set assigned to your Business Central user account or authorized AAD App.
+To use the `exports` endpoint, you must have the **D365 BACKUP/RESTORE** permission set assigned to your Business Central user account or authorized Microsoft Entra app.
 
 ## Get Export Metrics
 
 Gets information about the number of exports allowed per month and the amount remaining.
 
 ```
-GET /admin/v2.17/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
+GET /admin/v2.19/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
 ```
 
 ### Route Parameters
@@ -56,7 +58,7 @@ Starts the export of an environment's database to a provided Azure storage accou
 
 ```
 Content-Type: application/json
-POST /admin/v2.17/exports/applications/{applicationFamily}/environments/{environmentName}
+POST /admin/v2.19/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -90,7 +92,7 @@ POST /admin/v2.17/exports/applications/{applicationFamily}/environments/{environ
 Gets information about the exports that have been done within a provided time frame, for which environment, and by which user.
 
 ```
-POST /admin/v2.17/exports/history?start={startTime}&end={endTime}
+POST /admin/v2.19/exports/history?start={startTime}&end={endTime}
 ```
 
 ### Query parameters

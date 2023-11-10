@@ -48,7 +48,6 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/items
 Content-type: application/json
 
 {
-    "id": "fca5738a-44e3-ea11-bb43-000d3a2feca1",
     "number": "1896-S",
     "displayName": "ATHENS Desk",
     "type": "Inventory",
@@ -56,16 +55,15 @@ Content-type: application/json
     "itemCategoryCode": "TABLE",
     "blocked": false,
     "gtin": "",
-    "inventory": 4,
     "unitPrice": 1000.8,
     "priceIncludesTax": false,
     "unitCost": 780.7,
     "taxGroupId": "9f196a90-44e3-ea11-bb43-000d3a2feca1",
     "taxGroupCode": "FURNITURE",
     "baseUnitOfMeasureId": "5ca6738a-44e3-ea11-bb43-000d3a2feca1",
-    "baseUnitOfMeasureCode": "PCS",
-    "lastModifiedDateTime": "2020-08-21T00:24:19.347Z"
-} 
+    "baseUnitOfMeasureCode": "PCS"
+
+}
 ```
 
 **Response**
@@ -80,10 +78,28 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "number": "1896-S",
-  "displayName": "ATHENS Desk",
-  "lastModifiedDateTime": "2015-11-09T02:14:32Z"
+    "id": "fca5738a-44e3-ea11-bb43-000d3a2feca1",
+    "number": "1896-S",
+    "displayName": "ATHENS Desk",
+    "displayName2": "",
+    "type": "Inventory",
+    "itemCategoryId": "e21a6a90-44e3-ea11-bb43-000d3a2feca1",
+    "itemCategoryCode": "TABLE",
+    "blocked": false,
+    "gtin": "",
+    "inventory": 0,
+    "unitPrice": 1000.8,
+    "priceIncludesTax": false,
+    "unitCost": 780.7,
+    "taxGroupId": "9f196a90-44e3-ea11-bb43-000d3a2feca1",
+    "taxGroupCode": "FURNITURE",
+    "baseUnitOfMeasureId": "5ca6738a-44e3-ea11-bb43-000d3a2feca1",
+    "baseUnitOfMeasureCode": "PCS",
+    "generalProductPostingGroupId": "019b8ec1-d83d-ee11-be71-6045bde9cbf2",
+    "generalProductPostingGroupCode": "RETAIL",
+    "inventoryPostingGroupId": "039e8ec1-d83d-ee11-be71-6045bde9cbf2",
+    "inventoryPostingGroupCode": "RESALE",
+    "lastModifiedDateTime": "2020-08-21T00:24:19.347Z"
 }
 ```
 

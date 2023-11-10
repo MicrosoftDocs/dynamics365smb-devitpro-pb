@@ -1,8 +1,9 @@
 ---
-title: Field Groups
+title: Field groups
 description: A field group defines the fields to display in a DropDown control in Dynamics 365 Business Central. 
+ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2021
+ms.date: 09/20/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +11,7 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# Field Groups (DropDown Controls)
+# Field groups (DropDown controls)
 
 A field group in table or table extension objects defines the fields to display in a drop-down control on pages that use the table. 
 
@@ -59,9 +60,6 @@ In order to add fields to a field group, you create a table extension and specif
 
 You add a field to include in a drop-down control by using the `DropDown` field group name in the keyword.
 
-> [!NOTE]  
-> Adding a *new* fieldgroup to a table extension is not possible.
-
 The following example illustrates how to add the field 
 
 ```AL
@@ -107,11 +105,18 @@ pageextension 50101 ShipToAddressExercise extends "Ship-to Address"
 }
 ```
 
+## Adding new field groups
+
+[!INCLUDE[2023-releasewave2](../includes/2023-releasewave2.md)]
+
+It's always possible to add fields to the two predefined field groups, `DropDown` and `Brick`. If they aren't defined on the target table, they'll be dynamically created and will contain only the fields specified in the `addlast` controls.
+
+The ordering of the fields will then be determined by the order in which extensions are loaded by the server, while removing any duplicate fields.
+
 <!--
 ## Define fields to display in tile view
 
 To specify which fields are included in a tile for a record in a list page object, you use the `Brick` field group name. The following example defines the `Brick` field group that includes two fields of a table object:
-
 
 ```
 table 50101 MyTable

@@ -12,26 +12,26 @@ author: KennieNP
 ---
 
 # Extensibility overview
-AL developers can extend the functionality of Business Central in several ways. They can extend tables, enumerations, application areas, pages, reports, code flows and the security model. They can also contribute directly to the base application in the open source projects for the system application modules. 
+AL developers can extend the functionality of Business Central in several ways. They can extend tables, enumerations, application areas, pages, reports, code flows and the security model. They can also contribute directly to the base application in the open source projects for the system application modules.
 
-This article provides an overview of the extensibility options available to AL developers in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] including examples on how to extend various features, such as extending item charges, best price calculations, and data archiving. 
+This article provides an overview of the extensibility options available to AL developers in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] including examples on how to extend various features, such as extending item charges, best price calculations, and data archiving.
 
-## Extending AL objects
-The AL object model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports many different ways for developers to extend objects in an app. 
+## Extending AL objects and artifacts
+The AL object model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports many different ways for developers to extend objects and artifacts in an app.
 
-1. **Extending Tables**: AL developers can add new fields to existing tables or modify the properties of existing fields. This allows for customization of data structures to fit specific business needs.
+1. **Extending Code Flows**: Codeunits contain AL code that can be reused across the application. Developers can subscribe to events in base app codeunits and write custom logic to extend the application's functionality. See [Extending AL code flows: events](devenv-event-types.md).
 
-2. **Extending Enumerations**: Enumerations, or Enums, are lists of constants that represent a set of values. Developers can extend existing Enums or create new ones to cater to unique business requirements.
+2. **Extending Tables**: AL developers can add new fields to existing tables or modify the properties of existing fields. This allows for customization of data structures to fit specific business needs. See [Extending AL objects: tables](devenv-table-ext-object.md).
 
-3. **Extending Application Areas**: Application areas help control the visibility of UI elements based on licensing and configuration. Developers can extend these areas to tailor the user interface according to business needs.
+3. **Extending Pages**: Pages are the main way to display data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Developers can add or modify fields, actions, and layout of existing pages or create new ones. See [Extending AL objects: pages](devenv-page-ext-object.md).
 
-4. **Extending Pages**: Pages are the main way to display data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Developers can add or modify fields, actions, and layout of existing pages or create new ones.
+4. **Extending Reports**: Reports provide a structured view of data and are essential for analysis and decision-making. Developers can extend existing reports by adding data items or columns, modifying request pages, or adding new layouts. See [Extending AL objects: reports](devenv-report-ext-object.md).
 
-5. **Extending Reports**: Reports provide a structured view of data and are essential for analysis and decision-making. Developers can extend existing reports by adding data items or columns, modifying request pages, or adding new layouts.
+5. **Extending the Security Model**: Permission sets define what actions a user can perform in Business Central. Developers can create new permission sets or extend existing ones to ensure users have appropriate access rights. See [Extending AL objects: security model](devenv-permissionset-ext-object.md).
 
-6. **Extending Code Flows**: Codeunits contain AL code that can be reused across the application. Developers can subscribe to events in base app codeunits and write custom logic to extend the application's functionality.
+6. **Extending Enumerations**: Enumerations, or Enums, are lists of constants that represent a set of values. Developers can extend existing Enums or create new ones to cater to unique business requirements. See [Extending AL objects: enumerations](devenv-extensible-enums.md).
 
-7. **Extending the Security Model**: Permission sets define what actions a user can perform in Business Central. Developers can create new permission sets or extend existing ones to ensure users have appropriate access rights.
+7. **Extending Application Areas**: Application areas help control the visibility of UI elements based on licensing and configuration. Developers can extend these areas to tailor the user interface according to business needs. See [Extending AL objects: application areas](devenv-extending-application-areas.md).
 
 > [!NOTE]  
 > Extending API pages and queries is not currently possible in Business Central.
@@ -45,13 +45,13 @@ The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application cons
 
 ### Contributing to the Business Central open source System Application
 
-If you want to contribute code to the Business Central open source System Application, you need to determine the type of contribution: 
+If you want to contribute code to the Business Central open source System Application, you need to determine the type of contribution:
 1. Small bug fixes, product improvements, or customer conveniences; or
 2. New capabilities or larger changes to the existing application platform.
 
-For more information about making contributions, go to [Contributing to the Business Central open source System Application](https://github.com/microsoft/ALAppExtensions/blob/main/CONTRIBUTING.md).
+For more information about making contributions, go to [Contributing to the Business Central open source System Application](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md).
 
-To learn more about the System Application, its module architecture, and how to modify or create new modules, go to [Creating new modules in the system application](devenv-blueprint.md). 
+To learn more about the System Application, its module architecture, and how to modify or create new modules, go to [Creating new modules in the system application](devenv-blueprint.md).
 
 ### Extending the Business Central base application
 
@@ -87,17 +87,17 @@ These resources provide a comprehensive overview of the extensibility options av
 
 
 ## See Also
-Extending AL objects
-* [Extending AL objects: application areas](devenv-extending-application-areas.md)
-* [Extending AL objects: enumerations](devenv-extensible-enums.md)
+Extending AL objects and artifacts
+* [Extending application areas](devenv-extending-application-areas.md)
+* [Extending enumerations](devenv-extensible-enums.md)
 * [Extending AL code flows: events](devenv-event-types.md)
-* [Extending AL objects: pages](devenv-page-ext-object.md)
-* [Extending AL objects: reports](devenv-report-ext-object.md)
-* [Extending AL objects: security model](devenv-permissionset-ext-object.md)
-* [Extending AL objects: tables](devenv-table-ext-object.md)
+* [Extending pages](devenv-page-ext-object.md)
+* [Extending reports](devenv-report-ext-object.md)
+* [Extending the security model](devenv-permissionset-ext-object.md)
+* [Extending tables](devenv-table-ext-object.md)
 
 Extending the base application
-* [Contributing to the Business Central open source System Application](https://github.com/microsoft/ALAppExtensions/blob/main/CONTRIBUTING.md)
+* [Contributing to the Business Central open source System Application](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md)
 * [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 * [The Microsoft_Application.app file](devenv-application-app-file.md)
 * [Publishing a code-customized base application](devenv-publish-code-customization.md)

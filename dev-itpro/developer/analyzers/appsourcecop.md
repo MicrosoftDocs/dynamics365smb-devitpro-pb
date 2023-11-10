@@ -3,7 +3,7 @@ title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/18/2023
+ms.date: 10/25/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +26,8 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0004](appsourcecop-as0004.md)|Fields must not change type, since dependent extensions may break|Upgrade|Error|
 |[AS0005](appsourcecop-as0005.md)|Fields must not change name|Upgrade|Error|
 |[AS0006](appsourcecop-as0006.md)|Tables that have been published must not change name.|Upgrade|Error|
+|[AS0007](appsourcecop-as0007.md)|Objects that have been published must not change namespace.|Upgrade|Error|
+|[AS0008](appsourcecop-as0008.md)|Defining reserved namespaces is not allowed.|Configuration|Error|
 |[AS0009](appsourcecop-as0009.md)|Key fields must not be changed|Upgrade|Error|
 |[AS0010](appsourcecop-as0010.md)|Keys must not be deleted|Upgrade|Error|
 |[AS0011](appsourcecop-as0011.md)|An affix is required|Extensibility|Error|
@@ -127,7 +129,14 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0113](appsourcecop-as0113.md)|Permission set extensions should not include wildcard permissions.|Extensibility|Warning|
 |[AS0114](appsourcecop-as0114.md)|The name of an external business event cannot be changed.|Upgrade|Error|
 |[AS0115](appsourcecop-as0115.md)|The obsolete state cannot change directly from 'No' to 'Removed'.|Upgrade|Error|
+|[AS0116](appsourcecop-as0116.md)|Source application for the moved object cannot be found.|Upgrade|Warning|
+|[AS0117](appsourcecop-as0117.md)|Application object is moved without the use of PendingMove.|Upgrade|Warning|
 |[AS0118](appsourcecop-as0118.md)|The length of a field part of the primary key cannot change.|Upgrade|Error|
+|[AS0119](appsourcecop-as0119.md)|The value of the MovedTo property in the source object does not match the destination AppId.|Upgrade|Warning|
+|[AS0120](appsourcecop-as0120.md)|The value of the MovedFrom property in the destination object does not match the source AppId.|Upgrade|Warning|
+|[AS0121](appsourcecop-as0121.md)|When an application object is moved the name must remain the same.|Upgrade|Error|
+|[AS0122](appsourcecop-as0122.md)|Source object for the moved object cannot be found in the package with the given AppId.|Upgrade|Warning|
+|[AS0123](appsourcecop-as0123.md)|A key cannot be declared as clustered on an existing table.|Upgrade|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

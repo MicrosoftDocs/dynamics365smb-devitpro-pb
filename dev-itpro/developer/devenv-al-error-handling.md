@@ -1,6 +1,6 @@
 ---
-title: "AL Error Handling"
-description: "Error handling in AL for Business Central"
+title: "AL error handling"
+description: Deal with unexpected situations that occur when code is run in AL for Business Central
 ms.custom: na
 ms.date: 02/09/2022
 ms.reviewer: na
@@ -10,15 +10,15 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# AL Error Handling
+# AL error handling
 
 The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. This section contains articles about using these methods in AL to handle errors that occur during code execution, while making sure that your application has a consistent user interface. 
 
 The following articles introduce error handling in AL:
 
-- [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md)  
-- [Collecting Errors](devenv-error-collection.md)  
-- [Progress Windows, Message, Error, and Confirm Methods](devenv-progress-windows-message-error-and-confirm-methods.md)
+- [Handling errors using Try Methods](devenv-handling-errors-using-try-methods.md)  
+- [Collecting errors](devenv-error-collection.md)  
+- [Progress Windows, Message, Error, and Confirm methods](devenv-progress-windows-message-error-and-confirm-methods.md)
 
 ## Error handling methods in AL
 
@@ -53,7 +53,19 @@ For examples of different error handling strategies, see the following table:
 | Catch errors/exceptions that are thrown during .NET framework interoperability operations (on-premises only). | [Handling .NET Exceptions using Try Methods](devenv-handling-errors-using-try-methods.md)|
 | Log an error that happens within a database transaction (that rollback) | Either log the error in a new session using a background session, or use Session.LogMessage to log the error to telemetry. | 
 
+## Guidelines for error messages
+
+[!INCLUDE[error_message_guidelines](includes/include-error-message-guidelines.md)]
+
+To read more about guidelines for error messages, see [User experience guidelines for errors](devenv-error-handling-guidelines.md).
+
+
 ## See also
 
-[AL Control Statements](devenv-al-control-statements.md)  
-[AL Development Environment](devenv-reference-overview.md)
+[Error message quality telemetry](../administration/telemetry-error-message-voting-trace.md)   
+[Error method telemetry](../administration/telemetry-error-method-trace.md)  
+[Permission error telemetry](../administration/telemetry-permission-error-trace.md)   
+[Understanding the error dialog](devenv-error-dialog.md)   
+[AL control statements](devenv-al-control-statements.md)   
+[AL development environment](devenv-reference-overview.md)   
+[User experience guidelines for errors](devenv-error-handling-guidelines.md)

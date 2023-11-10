@@ -12,6 +12,8 @@ ms.reviewer: jswymer
 
 # Report a performance issue
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 When a customer has a situation where performance is problematic, you might need to raise a support ticket, see how to do that here: [Escalate Support Issues to Microsoft](raise-support-case.md).
 
 > [!TIP]
@@ -44,7 +46,7 @@ If the issue can be reproduced, do the following tasks:
 1. Go to the _Help and Support_ page (see [The Help and Support page in the Business Central company](manage-technical-support.md#helpsupport)).
 2. Note down the time (in UTC timezone).
 3. Enable additional logging (Find it under _Report a Problem_).
-4. Note down the Session ID, Azure AD tenant ID, and Environment name.
+4. Note down the Session ID, Microsoft Entra tenant ID, and Environment name.
 5. Enable the in-client Performance Profiler, see [In-Client Performance Profiler Overview](performance-profiler-overview.md) for details.
 6. Reproduce the issue.
 7. Download the profile file.
@@ -52,7 +54,7 @@ If the issue can be reproduced, do the following tasks:
 When creating the support request, provide this information:
 
 * Time (in UTC timezone) when additional logging was enabled
-* Session ID, Azure AD tenant ID, and Environment name
+* Session ID, Microsoft Entra tenant ID, and Environment name
 * Performance profile file
 * Optionally, screenshots of error screens because they contain useful operation IDs that help us track down the issue.
 * Optionally, screen recordings of the issue. A recording is only a supplement to having a performance profile file.

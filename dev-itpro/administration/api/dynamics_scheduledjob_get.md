@@ -14,6 +14,8 @@ ms.author: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Get scheduledJob
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Retrieves the properties and relationships of a scheduled job object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
 ## HTTP request
@@ -57,7 +59,7 @@ Here is an example of the response.
     "id" : "26066f96-8775-eb11-bb56-000d3a298ab3",
     "category" : "APIUSERJOB",
     "status" : "In Progress",
-    "description" : "Create new users from Azure AD API job",
+    "description" : "Create new users from Microsoft Entra API job",
     "errorMessage" : ""
 }
 ```

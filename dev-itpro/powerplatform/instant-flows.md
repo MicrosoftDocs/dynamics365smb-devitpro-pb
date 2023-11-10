@@ -25,9 +25,11 @@ There are two approaches to creating instant flows, as described in this section
 
 ### Instant flows that use the "For a selected record" trigger 
 
-You create these flows by using the "For a selected record (V3)" trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. They're designed to run on records in a page, although they don't have to. For users, these flows are available from the **Automate** action group on most list, card, and document pages. They allow users to run the flow in the context of a specific [!INCLUDE[prod_short](../includes/prod_short.md)] record&mdash;without leaving the page. This approach is recommended for flows related to [!INCLUDE[prod_short](../includes/prod_short.md)] data.
+You create these flows by using the "For a selected record (V3)" trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. They're designed to run on records in a page, although they don't have to. For users, these flows are available from the **Automate** action group on most list, card, and document pages. They allow users to run the flow in the context of a specific [!INCLUDE[prod_short](../includes/prod_short.md)] record&mdash;without leaving the page. This approach is recommended for flows related to [!INCLUDE[prod_short](../includes/prod_short.md)] data. 
 
-:::image type="content" source="../developer/media/power-automate-action-intro.png" alt-text="Shows the Automate action in the action bar with expanded actions.":::
+:::image type="content" source="../developer/media/power-automate-instant-menu.svg" alt-text="Shows the Automate action in the action bar with expanded actions.":::
+
+<!--:::image type="content" source="../developer/media/power-automate-action-intro.png" alt-text="Shows the Automate action in the action bar with expanded actions.":::-->
 
 You can choose to make the flow available in the **Automate** action group for all environments, companies, and pages or only a specific environment, company, or pages.
 
@@ -102,7 +104,7 @@ Complete the following steps:
 
    1. Sign in to [Business Central](https://businesscentral.microsoft.com).
    2. Open the list, card, or document page.
-   3. In the action bar, select **Automate** > **Power Automate** > **Create a Flow** > **Create from blank**.
+   3. In the action bar, select **Automate** > **Power Automate** > **Create action based on a flow** > **Create from blank**.
 
     You're automatically signed in to Power Automate.
 
@@ -175,13 +177,13 @@ To create an instant flow from a template, complete the following steps:
 
    1. Sign in to [Business Central](https://businesscentral.microsoft.com).
    2. Open the list, card, or document page.
-   3. In the action bar, select **Automate** > **Power Automate** > **Create a Flow**.
-   4. The **Create flow** page opens and lists all the available Business Central templates related to the page. Select the template you want.
+   3. In the action bar, select **Automate** > **Power Automate** > **Create action based on a flow**.
+   4. The **Create a flow** page opens and lists all the available Business Central templates related to the page. Select the template you want.
 
       > [!TIP]
       > When you select a template, an introductory page explaining the template appears, letting you continue or go back.
       >
-      > By default, the **Create flow** page is filtered to list only those templates that create flows that will appear in the **Automate** action group. If you want a template that's not shown or want to find out what other templates are available, select **Filtered templates** > **All templates** to clear the filter or use the **Search templates...** box. If you clear the filter, the **Create flow** page will list all Power Automate templates regardless of whether they connect to Business Central. So, remember that only flows that use the "For a selected record (V3)" trigger will be available from the **Automate** action group in Business Central.
+      > By default, the **Create a flow** page is filtered to list only those templates that create flows that will appear in the **Automate** action group. If you want a template that's not shown or want to find out what other templates are available, select **Filtered templates** > **All templates** to clear the filter or use the **Search templates...** box. If you clear the filter, the **Create a flow** page will list all Power Automate templates regardless of whether they connect to Business Central. So, remember that only flows that use the "For a selected record (V3)" trigger will be available from the **Automate** action group in Business Central.
 
    # [From Power Automate](#tab/pa)
 
@@ -232,6 +234,8 @@ The following table includes the most common problems that prevent instant flows
 |The user isn't the owner of the flow. |Share ownership of the flow with the user. For more information, see [Share a cloud flow](/power-automate/create-team-flows).|[!INCLUDE[prod_short](../includes/prod_short.md)] only supports displaying flows owned by the current user; flows shared as "Run-only" can't be displayed.|
 |The flow isn't in the Power Platform environment that Business Central is connected to|<ul><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 21 and earlier, create flows in the default Power Platform environment.</li><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 22 and later, run the **Power Automate Environment** assisted setup guide and select the environment where the flow is stored.</li></ul>|[!INCLUDE[prod_short](../includes/prod_short.md)] connects to a specific Power Platform environment.|
 |The flow that was shared with you but with read-only permissions|Ask the owner of the flow to add you as an owner of the flow. For more information, see [Share a flow in Power Automate](/power-automate/create-team-flows).|Flows shared to users as read-only don't appear in the **Automate** action group for the users.  |
+|Using service-to-service (S2S) authentication||S2S authentication isn't currently supported by the Business Central connector. This limitation also applies to Power Automate, Azure Logic Apps, and Power Apps. Partners interested in such scenarios must rely on the OData connector for now.|
+
 
 ## Next steps
 

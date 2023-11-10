@@ -14,6 +14,8 @@ ms.custom: bap-template
 
 [!INCLUDE[general_preview](includes/general_preview.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Integrating with Dataverse enables Business Central to interact with other apps in its ecosystem through business events. This article gives an introduction to the new business events feature, the prerequisites and step-by-step instructions to preview it, and its current limitations/future improvements.
 
 ## Introduction
@@ -315,7 +317,7 @@ Request: POST https://webhook.site/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
 This request contains the following data:
 
-- `initiatingUserAADObjectId`: The Azure Active Directory object ID of user who initiated this business event
+- `initiatingUserAADObjectId`: The Microsoft Entra object ID of user who initiated this business event
 - `timestamp`: The timestamp when this business event occurred (UTC)
 - `companyName`: The name of company where this business event occurred
 - `companyId`: The GUID of company where this business event occurred

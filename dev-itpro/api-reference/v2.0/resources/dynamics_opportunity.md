@@ -30,13 +30,6 @@ Represents an opportunity in [!INCLUDE[prod_short](../../../includes/prod_short.
 |[POST opportunity](../api/dynamics_opportunity_create.md)|opportunity|Creates a opportunity object.|
 |[PATCH opportunity](../api/dynamics_opportunity_update.md)|opportunity|Updates a opportunity object.|
 
-
-## Navigation
-
-| Navigation |Return Type| Description |
-|:----------|:----------|:-----------------|
-|[contact](dynamics_contact.md)|contact |Gets the contact of the opportunity.|
-
 ## Properties
 
 | Property           | Type   |Description     |

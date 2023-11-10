@@ -11,6 +11,8 @@ ms.date: 06/13/2022
 ---
 # Features not implemented in on-premises deployments of [!INCLUDE[prod_long](includes/prod_long.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article lists features that are available in [!INCLUDE[prod_short](includes/prod_short.md)] but not in on-premises deployments. The article is divided into two sections:
 
 - The first section lists features that are available under specific circumstances in on-premises deployments.  
@@ -22,13 +24,13 @@ The following features aren't available in all on-premises deployments because t
 
 |**Feature**  |**Description**  |
 |---------|---------|
-|Read/write data with Excel add-in  |The Excel add-in that enables update of data requires Azure Active Directory as the authentication mechanism.   |
-|Excel financial reports | The Excel add-in that is used with the predefined Excel-based financial reports requires Azure Active Directory as the authentication mechanism.  |
-|Coversheets for contact management |The integration with Word to create the coversheets requires Azure Active Directory as the authentication mechanism. |
-|Built-in Power BI reports and charts |The integration with Power BI requires Azure Active Directory as the authentication mechanism. |
-|Built-in Power Automate Management |You can use the built-in workflows in on-premises deployments of [!INCLUDE[prod_short](includes/prod_short.md)], provided that you connect to Power Automate using Azure Active Directory as the authentication mechanism. This can be done using the Azure Active Directory Assisted Setup guide in Business Central. Microsoft Azure and Microsoft Power Automate require Azure Active Directory authentication; however, your Business Central on-premises deployment does not have to use Azure Active Directory as the general authentication mechanism.|
+|Read/write data with Excel add-in  |The Excel add-in that enables update of data requires Microsoft Entra ID as the authentication mechanism.   |
+|Excel financial reports | The Excel add-in that is used with the predefined Excel-based financial reports requires Microsoft Entra ID as the authentication mechanism.  |
+|Coversheets for contact management |The integration with Word to create the coversheets requires Microsoft Entra ID as the authentication mechanism. |
+|Built-in Power BI reports and charts |The integration with Power BI requires Microsoft Entra ID as the authentication mechanism. |
+|Built-in Power Automate Management |You can use the built-in workflows in on-premises deployments of [!INCLUDE[prod_short](includes/prod_short.md)], provided that you connect to Power Automate using Microsoft Entra ID as the authentication mechanism. This can be done using the Microsoft Entra ID Assisted Setup guide in Business Central. Microsoft Azure and Microsoft Power Automate require Microsoft Entra authentication; however, your Business Central on-premises deployment does not have to use Microsoft Entra ID as the general authentication mechanism.|
 |Built-in web services |A number pages and queries are exposed as web services. However, the default endpoint must be manually updated before the web services can be consumed. |
-|Outlook add-in  |The Outlook add-in requires Dynamics NAV User/Password or Azure Active Directory as the authentication mechanism. |
+|Outlook add-in  |The Outlook add-in requires Dynamics NAV User/Password or Microsoft Entra ID as the authentication mechanism. |
 |Standard REST API | [!INCLUDE[prod_short](includes/prod_short.md)] contains new standard REST APIs. However, on-premises deployments can't be reached through Microsoft Graph or the common endpoint, `https://api.businesscentral.dynamics.com/v1.0/api/beta`. Instead, you must connect directly to the on-premises deployment, just as when you connect to web services. |
 |Sales and Inventory Forecast|This functionality requires an [Azure Machine Learning](/azure/machine-learning/) subscription.|
 |Image Analyzer|This functionality requires an [Computer Vision](/azure/cognitive-services/computer-vision/) service.|

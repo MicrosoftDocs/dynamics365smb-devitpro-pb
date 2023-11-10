@@ -12,10 +12,12 @@ ms.author: solsen
 
 # Enable key vault access for your AppSource app during development and/or test
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 For AppSource apps, if you want to enable key vault access for your app as described in [Using App Key Vaults with Business Central Extensions](../developer/devenv-app-key-vault-overview.md), you can add the access to this key vault in your local development environment or your pipelines (for running tests) by adding three secrets to either the GitHub repo or your key vault. Based on the walkthrough [Setting up App Key Vaults for Business Central On-premises](../administration/setup-app-key-vault-onprem.md) you must create three secrets:
 
-- A `KeyVaultClientId`, which is the Client ID for the Azure AD App with access to the key vault.
-- A `KeyVaultCertificateUrl`, pointing to a certificate, which gives you access to the Azure AD App.
+- A `KeyVaultClientId`, which is the Client ID for the Microsoft Entra app with access to the key vault.
+- A `KeyVaultCertificateUrl`, pointing to a certificate, which gives you access to the Microsoft Entra app.
 - A `KeyVaultCertificatePassword`, which is the password for this certificate.
 
 If you enable key vault access for apps, it isn't enough to just add the secrets, you also have to add information in the `.AL-Go\settings.json` file that this app uses this key vault. Add these three settings:

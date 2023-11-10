@@ -14,6 +14,8 @@ ms.author: solsen
 
 # Manage Tenant-Specific Notifications
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 You can get notified of administrative events that occur on environments in a [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant. For example, we send notifications when a major update is available for environments, when an environment update has succeeded or failed, or when extensions require changes to be compatible with an upcoming update. When these and other similar events occur on the tenant, an email is sent to the notification recipients for the tenant.  
 
 > [!NOTE]  
@@ -77,7 +79,7 @@ This Logic App runs a query that returns any failed environment updates ever num
 
 ##### Example: Post adaptive cards in Teams for each available environment update
 
-This Logic App queries Application Insights every number of minutes (specified in the deployment) and posts an adaptive card to a specified Microsoft Teams channel for each environment that has an update available. Based on the user's choice, the Logic App will call the Business Central admin center API using an authorized service-to-service Azure Active Directory app (configuration details specified in the deployment). The adaptive card gives the user four choices:  
+This Logic App queries Application Insights every number of minutes (specified in the deployment) and posts an adaptive card to a specified Microsoft Teams channel for each environment that has an update available. Based on the user's choice, the Logic App will call the Business Central admin center API using an authorized service-to-service Microsoft Entra app (configuration details specified in the deployment). The adaptive card gives the user four choices:  
 
 - Schedule the update as soon as possible ("Run Now"), and allow the update to start outside of the update window for the environment  
 - Reschedule the update to a specified other day  
@@ -119,7 +121,7 @@ The following table illustrates how we communicate about the different environme
 |Environment Started/Stopped|![check mark for feature](../developer/media/check.png)|         |         |         |
 |Environment Copy |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
 |Environment Restore |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|Environment AAD Tenant Move |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
+|Environment Microsoft Entra tenant Move |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
 |Cancel Session |![check mark for feature](../developer/media/check.png) |         |         |         |
 |Database Export |![check mark for feature](../developer/media/check.png) |         |         |         |Export History Page
 |Environment Setting Change <sup>[\[3\]](#3) |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)

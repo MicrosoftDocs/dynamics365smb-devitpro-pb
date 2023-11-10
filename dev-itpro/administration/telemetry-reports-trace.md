@@ -15,6 +15,8 @@ ms.service: dynamics365-business-central
 
 [!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Report telemetry gathers data about which reports are run on the environment. It provides information about whether the report succeeded, failed, or was canceled. For each report, it tells you how long it ran, how many SQL statements it executed, and how many rows it consumed.
 
 You use this data to gather statistics on report usage, find failures in reports, or to help identify slow-running reports.
@@ -54,7 +56,7 @@ The custom dimensions that are of particular interest for this operation include
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
@@ -197,7 +199,7 @@ The following table explains the general dimensions of the **Failed report gener
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
@@ -292,7 +294,7 @@ The following table explains the general dimensions of the **Cancellation report
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
@@ -402,7 +404,7 @@ The following table explains the general dimensions of the **Report cancelled bu
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
@@ -488,7 +490,7 @@ The following table explains the CustomDimensions included in report generation 
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |sqlExecutes|Specifies the number of SQL statements that the request executed. ||
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. ||
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. ||
 |companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used at time of execution. ||
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.||
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).||
@@ -510,7 +512,7 @@ Report cancellation
 
 Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|

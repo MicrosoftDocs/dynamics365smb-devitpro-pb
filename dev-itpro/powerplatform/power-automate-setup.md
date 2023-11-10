@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 This article describes how you can set up Power Automate integration for Business Central users. The instructions explain how you can control access to the Power Automate features that let users create and run instant flows from inside the Business Central client. These features are available in the **Automation** action group on the most list, card, and document pages in the action bar .
 
-:::image type="content" source="../developer/media/power-automate-action-intro.png" alt-text="Shows the Automate action in the action bar with expanded actions.":::
+:::image type="content" source="../developer/media/power-automate-menu.svg" alt-text="Shows the Automate action in the action bar with expanded actions.":::
 
 As an administrator, you can hide the **Automation** action group and its actions from all users or individual users.
 
@@ -28,9 +28,11 @@ By default, all users have access to the Power Automate features. The features a
 
  :::image type="content" source="../developer/media/power-automate-action.png" alt-text="Shows the Automate item in the action bar.":::
 
-But before users can access the features, they must agree to privacy notice. Users can agree to the terms by selecting the **Automate** > **Get Started with Power Automate** action and running the **Set Up Power Automate** assisted setup. Agreeing to the terms turns on the Power Automate features for the user, activates the **Create Flows** and **Manage Flows** actions.
+But before users can access the features, they must agree to privacy notice. Users can agree to the terms by selecting the **Automate** > **Get Started with Power Automate** action and running the **Set Up Power Automate** assisted setup. Agreeing to the terms turns on the Power Automate features for the user, activates the following actions in the **Automation** action group: 
 
-- The **Create Flows** action lets users create a new Power Automate instant flow directly inside Business Central from scratch or from a template.
+- The **Create approval flow** action lets users create a new request approval flow from a template or scratch. This action is only available on card and document type pages.
+- The **Create automated flow** action lets users create a new automated flow from a template or scratch.
+- The **Create action based on a flow** action lets users create a new Power Automate instant flow from scratch or from a template. The new flow is added as an action in the **Automation** action group.
 - The **Manage Flows** action signs users in to Power Automate, where they can create, edit, and test both automated and instant flows.
 
 As an administrator, you can change this behavior and control which users can access Power BI features. There are two levels of controlling access. The first level is done by a system permission that you assign to users. The next level is turning the Power Automate features on or off using on the privacy notice agreement.
@@ -78,7 +80,7 @@ Get the telemetry app at [https://aka.ms/bctelemetryreport](https://aka.ms/bctel
 
 ## Next steps
 
-The next step is to set up flows. For more information, see [Set Up Automated Flows](automate-workflows.md) and [Set Up Instant Flows](instant-flows.md).
+The next step is to set up flows. For more information, see [Create automated flows](automate-workflows.md) and [Create instant flows](instant-flows.md).
 
 ## See also
 

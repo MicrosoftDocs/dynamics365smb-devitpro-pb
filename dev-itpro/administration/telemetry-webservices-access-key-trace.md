@@ -15,6 +15,8 @@ ms.author: jswymer
 
 **APPLIES TO:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2, version 17.3, and later
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] emits telemetry data about the success or failure of authenticating web service access keys on web service requests. 
 
 [!INCLUDE[webservice_key_deprecated](../includes/web-service-key-deprecated.md)]
@@ -42,10 +44,10 @@ The following table explains the custom dimensions included in the trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that was run by request.|
 |authenticationStatus|**Succeeded**|
-|authenticationType|Specifies whether the service uses NavUserPassword or AccessControl (Azure AD) authentication.|
+|authenticationType|Specifies whether the service uses NavUserPassword or AccessControl  authentication.|
 |category|Specifies the service type. Values include: **Api**, **ODataV4**, **ODataV3**, and **SOAP**.|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
@@ -80,10 +82,10 @@ The following table explains the custom dimensions included in the trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that was run by request.|
 |authenticationStatus|**Failed**|
-|authenticationType|Specifies whether the service uses NavUserPassword or AccessControl (Azure AD) authentication.|
+|authenticationType|Specifies whether the service uses NavUserPassword or AccessControl  authentication.|
 |category|Specifies the service type. Values include: **Api**, **ODataV4**, **ODataV3**, and **SOAP**.|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
