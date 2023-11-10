@@ -16,9 +16,9 @@ The Microsoft commercial marketplace offers a wide variety of apps from Microsof
 
 ## Before you begin
 
-You can only add apps that are available on AppSource to your collection. That is, you cannot host your own app and add it to the list.
+You can only add apps that are available on AppSource to your collection. That is, you can't host your own app and add it to the list.
 
-You need to update the **app.json** file with the dependency of the **Recommended Apps** per-tenant extension.
+You must update the **app.json** file with the dependency of the **Recommended Apps** per-tenant extension.
 
 ```JSON
   {
