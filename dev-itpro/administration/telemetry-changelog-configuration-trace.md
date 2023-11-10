@@ -3,34 +3,31 @@ title: Analyzing Changelog Configuration Changes Telemetry
 description: Learn about the telemetry for monitoring changes to changelog configuration in Business Central  
 author: kennienp
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.service: dynamics365-business-central
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
 ms.date: 10/23/2023
 ms.author: kepontop
+ms.reviewer: jswymer
 ---
 
-# Analyzing Changelog Configuration Changes Telemetry
+# Analyzing changelog configuration changes telemetry
 
 **INTRODUCED IN:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2, version 23.0. 
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] change log feature lets you track direct modifications a user makes to data in the database. You specify each table and field that you want the system to log, and then you activate the change log. The change log is based on changes that are made to data in the tables that you track. 
+The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] changelog feature lets you track direct modifications a user makes to data in the database. You specify each table and field that you want the system to log, and then you activate the changelog. The changelog is based on changes that are made to data in the tables that you track. 
 
-For more information about the change log feature, see [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes).
+For more information about the changelog feature, see [Auditing changes in Business Central](/dynamics365/business-central/across-log-changes).
 
-
-Telemetry is logged for the following changes to the configuration of the change log:
+Telemetry is logged for the following changes to the configuration of the changelog:
 - When a field is added to be tracked in the changelog.
 - When changelog configuration for a field is changed.
 - When a field is removed for being tracked in the changelog.
 
-
 ## <a name="added"></a>Field added to changelog configuration
 
-Occurs when a field is added to be tracked in the changelog
+Occurs when a field is added to be tracked in the changelog.
 
 ### General dimensions
 
@@ -51,12 +48,13 @@ Occurs when a field is added to be tracked in the changelog
 |alTableCaption| Specifies the name of the table where the changed field is included. |
 |alFieldNumber | Specifies the ID of the field to be logged. |
 |alFieldCaption| Specifies the name of the field to be logged.|
-|alLogInsertion| Is insertions logged? (**Yes** or **No**) |
-|alLogModification| Is data modifications logged? (**Yes** or **No**) |
-|alLogDeletion| Is deletions logged? (**Yes** or **No**)|
+|alLogInsertion| Are insertions logged? (**Yes** or **No**) |
+|alLogModification| Are data modifications logged? (**Yes** or **No**) |
+|alLogDeletion| Are deletions logged? (**Yes** or **No**)|
 
 
 ### Sample KQL code (field added)
+
 This KQL code can help you get started analyzing change log telemetry for added fields or if you want to alert on these changes.
 
 ```kql
@@ -108,12 +106,12 @@ Occurs when changelog configuration for a field is changed.
 |alTableCaption| Specifies the name of the table where the changed field is included. |
 |alFieldNumber | Specifies the ID of the field to be logged. |
 |alFieldCaption| Specifies the name of the field to be logged.|
-|alLogInsertion| Is insertions logged? (**Yes** or **No**) |
-|alLogInsertionOld| Was insertions logged before? (**Yes** or **No**) |
-|alLogModification| Is data modifications logged? (**Yes** or **No**) |
-|alLogModificationOld| Was data modifications logged before? (**Yes** or **No**) |
-|alLogDeletion| Is deletions logged? (**Yes** or **No**)|
-|alLogDeletionOld| Was deletions logged before? (**Yes** or **No**)|
+|alLogInsertion| Are insertions logged? (**Yes** or **No**) |
+|alLogInsertionOld| Were insertions logged before? (**Yes** or **No**) |
+|alLogModification| Are data modifications logged? (**Yes** or **No**) |
+|alLogModificationOld| Were data modifications logged before? (**Yes** or **No**) |
+|alLogDeletion| Are deletions logged? (**Yes** or **No**)|
+|alLogDeletionOld| Were deletions logged before? (**Yes** or **No**)|
 
 
 ### Sample KQL code (field logging changed)
