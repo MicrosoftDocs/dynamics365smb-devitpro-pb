@@ -53,10 +53,7 @@ With more AI capabilities rolling out with Wave 2, we’ve published new, on-dem
 - [Introducing: Bank account reconciliation assistance (feature is in preview from Update 23.1)](https://app.hopin.com/events/business-central-launch-event-3502b259-fc5c-44f8-9448-1e07e075819e/replay/UmVjb3JkaW5nVXBsb2FkOjcyNDE=)
 - [What’s new: Designing and developing generative AI experiences for your extensions (toolkit available with insider builds)](https://app.hopin.com/events/business-central-launch-event-3502b259-fc5c-44f8-9448-1e07e075819e/replay/UmVjb3JkaW5nVXBsb2FkOjcyMzk=)
  
- To access recordings on demand from the Business Central Launch Event, register for free at: https://aka.ms/BCLE.
-
-### Did you join the Business Central Launch Event?   
-If not, you have until end of January 2024 to watch the opening session and consume 35 what's new videos made by the Microsoft engineering team. Register and watch the videos: [aka.ms/BCLE](https://aka.ms/BCLE).  
+ To access recordings on-demand from the Business Central Launch Event, register for free at: https://aka.ms/BCLE. There is a total of 35 what's new sessions created by the Microsoft engineering team.
 
 ### Upcoming Business Central Office Hours Calls
 
