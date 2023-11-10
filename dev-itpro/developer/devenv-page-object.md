@@ -1,5 +1,5 @@
 ---
-title: "Page Object"
+title: Page object
 description: "Description of the page object in AL for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Page Object
+# Page object
 
 Pages are the main way to display and organize visual data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. They are the primary object that a user will interact with and have a different behavior based on the type that you choose. Pages are designed independently of the device they are to be rendered on, and in this way the same page can be reused across phone, tablet, and web clients. 
 

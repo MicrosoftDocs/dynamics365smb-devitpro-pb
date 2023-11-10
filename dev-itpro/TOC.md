@@ -70,12 +70,13 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
-### [Update 22.5](whatsnew/whatsnew-update-22-5.md)
-### [Update 22.4](whatsnew/whatsnew-update-22-4.md)
-### [Update 22.3](whatsnew/whatsnew-update-22-3.md)
-### [Update 22.2](whatsnew/whatsnew-update-22-2.md)
-### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
+### [Update 23.1](whatsnew/whatsnew-update-23-1.md)
 ### Updates for earlier major versions
+#### [Update 22.5](whatsnew/whatsnew-update-22-5.md)
+#### [Update 22.4](whatsnew/whatsnew-update-22-4.md)
+#### [Update 22.3](whatsnew/whatsnew-update-22-3.md)
+#### [Update 22.2](whatsnew/whatsnew-update-22-2.md)
+#### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
 #### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
 #### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
 #### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
@@ -227,6 +228,7 @@
 #### [App key vault secret telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Authorization telemetry](administration/telemetry-authorization-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
+#### [Changelog configuration telemetry](administration/telemetry-changelog-configuration-trace.md)
 #### [Client action telemetry](administration/telemetry-client-action-trace.md)
 #### [Cloud migration telemetry](administration/telemetry-cloud-migration-trace.md)
 #### [Company lifecycle telemetry](administration/telemetry-company-lifecycle-trace.md)
@@ -241,6 +243,7 @@
 #### [Error method telemetry](administration/telemetry-error-method-trace.md)
 #### [Extension lifecycle telemetry](administration/telemetry-extension-lifecycle-trace.md)
 #### [Extension update telemetry](administration/telemetry-extension-update-trace.md)
+#### [Extension upload Validation](administration/telemetry-pte-upload-validation-trace.md)
 #### [Feature management telemetry](administration/telemetry-feature-management-trace.md)
 #### [Feature telemetry](administration/telemetry-feature-telemetry.md)
 #### [Field monitoring telemetry](administration/telemetry-field-monitoring-trace.md)
@@ -679,6 +682,7 @@
 ##### [Pages overview](developer/devenv-pages-overview.md)
 ##### [Page object](developer/devenv-page-object.md)
 ##### [Page extension object](developer/devenv-page-ext-object.md)
+##### [PromptDialog object](developer/devenv-page-type-promptdialog.md)
 ##### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
 ##### List pages
@@ -737,11 +741,12 @@
 ##### [Control add-in style guide](developer/devenv-control-addin-style.md)
 
 #### Developing for the Business Central mobile app
-##### [Introducing the Business Central mobile app](developer/devenv-introducing-business-central-mobile-app.md)
-##### [Deciding on your tablet and phone strategy](developer/devenv-deciding-on-tablet-and-phone-strategy.md)
-##### [Get started developing for the Business Central mobile app](developer/devenv-getting-started-developing-business-central-mobile-app.md)
-##### [Designing for different screen sizes on tablet and phone](developer/devenv-designing-different-screen-sizes-tablet-and-phone.md)
-##### [Differences and limitations when developing pages for the mobile app](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)
+##### [Introducing the Business Central mobile app](developer/devenv-introducing-business-central-mobile-app.md)  
+##### [Deciding on your tablet and phone strategy](developer/devenv-deciding-on-tablet-and-phone-strategy.md)  
+##### [Get started developing for the Business Central mobile app](developer/devenv-getting-started-developing-business-central-mobile-app.md)  
+##### [Designing for different screen sizes on tablet and phone](developer/devenv-designing-different-screen-sizes-tablet-and-phone.md)  
+##### [Differences and limitations when developing pages for the mobile app](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
+##### [Add barcode scanning to the mobile app](developer/devenv-mobile-app-barcode-scanning.md)
 ##### [Opening the Business Central tablet or phone client from a browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ##### [Example: Developing a sales rep role center for the tablet client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)
 
@@ -900,10 +905,10 @@
 
 ## AL platform
 ### [Overview](developer/devenv-platform-overview.md)
+### [System and application reference documentation](/dynamics365/business-central/application/)
 <!-- (Job queue, printing, task scheduler, telemetry, Keyvault, .NET interop, AL HttpClient, Azure functions) -->
 ### Using the system application
 #### [Overview of the system application](developer/devenv-system-application-overview.md)
-#### [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 
 #### Creating new modules in the system application
 ##### [Module architecture](developer/devenv-blueprint.md)
@@ -968,11 +973,11 @@
 #### [Extending security model](developer/devenv-permissionset-ext-object.md)
 #### [Extending tables](developer/devenv-table-ext-object.md)
 ### Extending the system application
-#### [System application reference](/dynamics365/business-central/application/system-application)
+#### [System application reference](/dynamics365/business-central/application)
 #### [Contributing to the Business Central open source system application](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md)
 #### [Get started creating or modifying modules](developer/devenv-getting-started.md)
 ### Extending the base application
-#### [Base application reference](/dynamics365/business-central/application/base-application)
+#### [Base application reference](/dynamics365/business-central/application)
 #### [The Microsoft_Application.app file](developer/devenv-application-app-file.md)
 #### [Publishing a code-customized base application](developer/devenv-publish-code-customization.md)
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
@@ -1433,9 +1438,9 @@
 #### [2023 release wave 2 on-premises updates](deployment/update-versions-23.md)
 #### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
-#### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
-#### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
 #### Versions no longer updated
+##### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
+##### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
 ##### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
 ##### [2021 release wave 1 on-premises updates](deployment/update-versions-18.md)
 ##### [2020 release wave 2 on-premises updates](deployment/update-versions-17.md)

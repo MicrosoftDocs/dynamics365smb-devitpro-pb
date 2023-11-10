@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: bholtorf
-ms.date: 10/01/2021
+ms.date: 11/08/2023
 ---
 
 # Overview of the System Application
@@ -19,7 +19,7 @@ The System Application contains modules that interact with the [!INCLUDE[d365fin
 
 This topic provides an overview of the modules in the System Application.
 
-For an overview of system application reference documentation, see [Module System Application](/dynamics365/business-central/application/reference/system%20application/).
+For an overview of system and application reference documentation, see [System and Base Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application).
 
 > [!Note]
 > The modules in the System Application represent a significant change in what's happening under the hood in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. We are aware that the changes we have made will introduce breaking changes, so we have made a list of those that we know about, which includes suggestions for solutions. To view the breaking changes list, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md).<br><br>We will continue to enhance the System Application in future releases. If you find something you think we should add, visit our [Dynamics 365 Application Ideas](https://aka.ms/bcideas) page. If you want us to improve something, go to the [BCApps](https://github.com/microsoft/BCApps) repository and submit a pull request for it.
