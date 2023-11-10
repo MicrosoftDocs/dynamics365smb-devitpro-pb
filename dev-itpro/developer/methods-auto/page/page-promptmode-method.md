@@ -42,7 +42,13 @@ The prompt mode used for the page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This method is used when creating a generative AI dialog in [!INCLUDE [prod_short](../includes/prod_short.md)]. For more information, see [The PromptDialog object](../devenv-page-type-promptdialog.md).
+
 ## See Also
+
 [Page Data Type](page-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
