@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: 
 ms.topic: overview
 ms.collection: 
-ms.date: 10/25/2023
+ms.date: 11/10/2023
 ms.custom: bap-template
 ---
 
@@ -26,7 +26,7 @@ To find links to the properties related to the `PromptDialog` page type, see the
 
 ## Areas of the PromptDialog page type
 
-The `PromptDialog` page type has three areas, which are `Prompt`, `Content`, and `PromptOptions`. The `Prompt` area is the input to copilot, and accepts any control. The `Content` area is the output of copilot, and accepts any control. The `PromptOptions` area is the input options, and only accepts option fields.
+The `PromptDialog` page type has three areas, which are `Prompt`, `Content`, and `PromptOptions`. The `Prompt` area is the input to copilot, and accepts any control, except repeater controls. The `Content` area is the output of copilot, and accepts any control, except repeater controls. The `PromptOptions` area is the input options, and only accepts option fields.
 
 ## Example
 
