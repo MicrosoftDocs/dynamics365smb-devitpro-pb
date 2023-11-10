@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 10/05/2023
+ms.date: 10/23/2023
 ms.custom: bap-template
 ---
 
@@ -26,6 +26,9 @@ The latest cumulative update listed includes new hotfixes and regulatory, plus h
 We recommend that you install the latest cumulative update.
 
 ## Available updates for Business Central April 2019
+
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
+
 
 The following table lists the cumulative updates released for the Spring 2019 release of Business Central (version 14). The cumulative updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description. 
 
