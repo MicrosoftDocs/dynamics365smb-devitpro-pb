@@ -36,9 +36,9 @@ Building collections requires some development. To make that easier, [!INCLUDE[p
 * **Recommended Apps List** page
 * **Recommended App Card** page
 * **Recommended Apps** table
-* **Recommend Apps** codeunit
+* **Recommended Apps** codeunit
 
-You must use the **Recommend Apps** codeunit to build collections. The following table provides an overview of the methods in the codeunit. You can copy the information for the parameters from the listing for the app on AppSource.
+You must use the **Recommended Apps** codeunit to build collections. The following table provides an overview of the methods in the codeunit. You can copy the information for the parameters from the listing for the app on AppSource.
 
 |Method  |Description  |
 |---------|---------|
