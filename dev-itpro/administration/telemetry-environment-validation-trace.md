@@ -40,7 +40,7 @@ or
         Environment diagnostic reported (LC0227)
 ```
 
-## Environment validation started (LC0220)
+## <a name="environment-validation-started"></a>Environment validation started (LC0220)
 
 Occurs when a new validation attempt is started for the environment.
 
@@ -48,7 +48,7 @@ Occurs when a new validation attempt is started for the environment.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment validation started: environment {environmentName} target build version  {targetVersion}** <br /><br /> `{environmentName}` indicates the name of the environment.<br /><br /> `{targetVersion}` indicates the new version that the environment is validated against.|
+|message|**Environment validation started: environment {environmentName} target build version {targetVersion}** <br /><br /> `{environmentName}` indicates the name of the environment.<br /><br /> `{targetVersion}` indicates the new version that the environment is validated against.|
 
 ### Custom dimensions
 
@@ -61,7 +61,7 @@ Occurs when a new validation attempt is started for the environment.
 |targetVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-validation-target-version.md)]|
 
 
-## Extension validation started (LC0224)
+## <a name="extension-validation-started"></a>Extension validation started (LC0224)
 
 Occurs for each extension in the environment.
 
@@ -69,7 +69,7 @@ Occurs for each extension in the environment.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Extension validation started: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
+|message|**Extension validation started: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the id of the extension.|
 
 ### Custom dimensions
 
@@ -85,7 +85,7 @@ Occurs for each extension in the environment.
 |extensionVersion|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-version.md)]|
 
 
-## Extension validation completed successfully (LC0225)
+## <a name="extension-validation-completed-successfully"></a>Extension validation completed successfully (LC0225)
 
 Occurs if the extension validated successfully on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -93,7 +93,7 @@ Occurs if the extension validated successfully on the next major of [!INCLUDE[pr
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Extension validation completed successfully: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
+|message|**Extension validation completed successfully: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the id of the extension.|
 
 ### Custom dimensions
 
@@ -109,12 +109,71 @@ Occurs if the extension validated successfully on the next major of [!INCLUDE[pr
 |extensionVersion|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-version.md)]|
 |targetVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-validation-target-version.md)]|
 
-## <a name="extension-validation-reported"></a>Extension Validation diagnostic reported (LC0210)
-Occurs if a problem occurs when validating the extension on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-[!INCLUDE[LC0210](../includes/telemetry-LC0210.md)]
+## <a name="extension-validation-diagnostic-reported"></a>Extension Validation diagnostic reported (LC0210)
 
-## Extension validation completed with failures (LC0226)
+Occurs if something was not right when validating the extension on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Validation diagnostic reported: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the id of the extension.|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|eventId|**LC0210**|
+|environmentId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|extensionName|Specifies the name of the extension that was to be validated.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
+|extensionVersion|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-version.md)]|
+|diagnosticCode|[!INCLUDE[diagnosticCode](../includes/include-telemetry-dimension-diagnostics-code.md)]|
+|diagnosticMessage|[!INCLUDE[diagnosticMessage](../includes/include-telemetry-dimension-diagnostics-message.md)]|
+|diagnosticSeverity|[!INCLUDE[diagnosticSeverity](../includes/include-telemetry-dimension-diagnostics-severity.md)]|
+|diagnosticSourceLocation|[!INCLUDE[diagnosticSourceLocation](../includes/include-telemetry-dimension-diagnostics-location.md)]|
+|diagnosticSourcePath|[!INCLUDE[diagnosticSourcePath](../includes/include-telemetry-dimension-diagnostics-sourcepath.md)]|
+|submissionOperationId|[!INCLUDE[submissionOperationId](../includes/include-telemetry-dimension-diagnostics-submission-operation-id.md)]|
+
+
+
+### Sample KQL code (Extension Validation diagnostic reported)
+
+This KQL code can help you get started analyzing validation failures for an app on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
+
+```kql
+// Extension Validation diagnostic reported (LC0210)
+traces 
+| where customDimensions has "LC0210"
+| where customDimensions.eventId == "LC0210"
+| where timestamp > ago(30d) // adjust as needed
+| project timestamp
+// which environment is being validated
+, aadTenantId = customDimensions.environmentId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType 
+// which extension/app is being validated
+, extensionId = customDimensions.extensionId
+, extensionPublisher = customDimensions.extensionPublisher
+, extensionVersion = customDimensions.extensionVersion
+, extensionName = customDimensions.extensionName
+, mainExtension = customDimensions.mainExtension 
+// validation info
+, diagnosticSourceLocation = customDimensions.diagnosticSourceLocation
+, diagnosticMessage = customDimensions.diagnosticMessage
+, diagnosticSourcePath = customDimensions.diagnosticSourcePath
+, diagnosticCode = customDimensions.diagnosticCode
+, diagnosticSeverity = customDimensions.diagnosticSeverity
+, submissionOperationId = customDimensions.submissionOperationId
+```
+
+
+
+## <a name="extension-validation-completed-with-failures"></a>Extension validation completed with failures (LC0226)
 
 Occurs if the extension validated with one or more failures on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -122,7 +181,7 @@ Occurs if the extension validated with one or more failures on the next major of
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Extension validation completed with failures: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
+|message|**Extension validation completed with failures: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the id of the extension.|
 
 ### Custom dimensions
 
@@ -166,7 +225,7 @@ traces
 ```
 
 
-## Environment validation request completed successfully (LC0222)
+## <a name="environment-validation-request-completed-successfully"></a>Environment validation request completed successfully (LC0222)
 
 Occurs if all extensions in the environment validated successfully on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -188,7 +247,7 @@ Occurs if all extensions in the environment validated successfully on the next m
 
 
 
-## Environment validation completed with failures (LC0223)
+## <a name="environment-validation-request-completed-with-failures"></a>Environment validation completed with failures (LC0223)
 
 Occurs if one or more extensions in the environment failed to validate on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -210,7 +269,9 @@ Occurs if one or more extensions in the environment failed to validate on the ne
 |failureReason|The overall reason that the environment failed to validate on the new major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|
 |targetVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-validation-target-version.md)]|
 
-## Environment diagnostic reported (LC0227)
+
+
+## <a name="environment-diagnostic-reported"></a>Environment diagnostic reported (LC0227)
 
 Occurs if an extension validated with a diagnostic on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -218,7 +279,7 @@ Occurs if an extension validated with a diagnostic on the next major of [!INCLUD
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Validation diagnostic reported: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
+|message|**Validation diagnostic reported: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the id of the extension.|
 
 ### Custom dimensions
 
@@ -269,6 +330,7 @@ traces
 , diagnosticSourceLocation = customDimensions.diagnosticSourceLocation
 , diagnosticCode = customDimensions.diagnosticCode
 ```
+
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
