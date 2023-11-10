@@ -102,8 +102,8 @@ Occurs when an extension compiles successfully on the service. An extension comp
 | eventId|**LC0020**|
 |extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md).|
 |extensionCompilationResult |**Compilation succeeded without errors or warnings.**|
-| extensionName|Specifies the name of the extension that was compiled.|
-| extensionId|Specifies the ID of the extension that was compiled.|
+|extensionName|Specifies the name of the extension that was compiled.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionPublishedAs|Specifies whether the compiled extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
@@ -152,7 +152,7 @@ Occurs when an extension failed to compile on the service. An extension compiles
 |extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md).|
 |extensionCompilationResult |Specifies details about the error that occurred during compilation.|
 | extensionName|Specifies the name of the extension that failed to compile.|
-| extensionId|Specifies the ID of the extension that failed to compile.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
@@ -179,10 +179,9 @@ Occurs when an extension published successfully on the service. <!--For on-premi
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**LC0014**|
-| extensionId|Specifies the ID of the extension that was published.|
 | extensionIsRad|Specifies whether the extension that was RAD published. **True** indicates the extension was RAD published. **False** indicates normal publishing. <br /><br />RAD (Rapid Application Development) publishing is done from the AL development environment. RAD publishing is a partial publishing operation that only publishes objects application objects that have changed during development. For more information, see [Work with Rapid Application Development](../developer/devenv-rad-publishing.md).|
 | extensionName|Specifies the name of the extension that published.|
-| extensionId|Specifies the ID of the extension that published.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
@@ -215,10 +214,9 @@ Occurs when an extension failed publish on the service. <!--For on-premises, an 
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**LC0015**|
-| extensionId|Specifies the ID of the extension that was published.|
 | extensionIsRad|Specifies whether the extension that was RAD published. **True** indicates the extension was RAD published. **False** indicates normal publishing. <br /><br />RAD (Rapid Application Development) publishing is done from the AL development environment. RAD publishing only is a partial publishing operation that only publishes objects application objects that have changed during development. For more information, see [Work with Rapid Application Development](../developer/devenv-rad-publishing.md).|
 | extensionName|Specifies the name of the extension that published.|
-| extensionId|Specifies the ID of the extension that published.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
@@ -247,9 +245,8 @@ Occurs when an extension was unpublished successfully on the service. <!--An ext
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**LC0018**|
-| extensionId|Specifies the ID of the extension that was unpublished.|
 | extensionName|Specifies the name of the extension that was unpublished.|
-| extensionId|Specifies the ID of the extension that was unpublished.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
@@ -282,7 +279,7 @@ Occurs when an extension fails to unpublish on the service.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**LC0019**|
-| extensionId|Specifies the ID of the extension that failed to unpublish.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the extension that failed to unpublish.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
@@ -340,7 +337,7 @@ Occurs when an extension synchronizes successfully on the tenant.
 |Dimension|Description or value|
 |---------|-----|
 | eventId|**LC0012**|
-| extensionId|Specifies the ID of the extension that was synchronized.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the extension that was synchronized.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
@@ -375,7 +372,7 @@ Occurs when an extension fails to synchronize on the tenant.
 |Dimension|Description or value|
 |---------|-----|
 | eventId|**LC0013**|
-| extensionId|Specifies the ID of the extension that failed to synchronize.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the extension that failed to synchronize.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
@@ -407,7 +404,7 @@ Occurs when an extension was already synchronized on the tenant. Added in versio
 |Dimension|Description or value|
 |---------|-----|
 | eventId|**LC0056**|
-| extensionId|Specifies the ID of the extension that failed to synchronize.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the extension that failed to synchronize.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
@@ -439,7 +436,7 @@ Occurs when an extension installs successfully on a tenant.
 |Dimension|Description or value|
 |---------|-----|
 | eventId|**LC0010**|
-| extensionId|Specifies the ID of the extension that was installed.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the extension that was installed.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
@@ -468,7 +465,7 @@ Occurs when an extension is installed because another extension that depends on 
 |Dimension|Description or value|
 |---------|-----|
 | eventId|**LC0026**|
-| extensionId|Specifies the ID of the extension that was installed.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the extension that was installed.|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionVersion|Specifies the version of the extension that was installed.|
@@ -496,7 +493,7 @@ Occurs when an extension failed to install on a tenant.
 |Dimension|Description or value|
 |---------|-----|
 | eventId|**LC0011**|
-| extensionId|Specifies the ID of the extension that failed to uninstall.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the extension that failed to uninstall.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
@@ -527,7 +524,7 @@ Occurs when an extension is successfully uninstalled from a tenant.
 |---------|-----|
 | eventId|**LC0016**|
 |doNotSaveData|Specifies whether the uninstall operation was run with option not to save the data in database table fields that are added by the extension. When using the Uninstall-NAVApp cmdlet, this condition is set with the -DoNotSaveData switch parameter.|
-| extensionId|Specifies the ID of the extension that was uninstalled.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the extension that was uninstalled.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
@@ -563,7 +560,7 @@ Occurs when an extension is uninstalled because an extension that it's dependent
 |---------|-----|
 | eventId|**LC0027**|
 |doNotSaveData|Specifies whether the uninstall operation on the parent extension was run with option not to save the data in database table fields that are added by the extension. When using the Uninstall-NAVApp cmdlet, this condition is set with the -DoNotSaveData switch parameter.|
-| extensionId|Specifies the ID of the dependent extension that was uninstalled.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the dependent extension that was uninstalled.|
 | extensionPublisher|Specifies the dependent extension's publisher.|
 | extensionVersion|Specifies the version of the dependent extension was uninstalled.|
@@ -594,7 +591,7 @@ Occurs when an extension failed to uninstall on a tenant.
 |doNotSaveData|Specifies whether the uninstall operation was run with option not to save the data in database table fields that are added by the extension. When using the Uninstall-NAVApp cmdlet, this condition is set with the -DoNotSaveData switch parameter.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-| extensionId|Specifies the ID of the extension that failed to uninstall.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the extension that failed to uninstall.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
@@ -636,7 +633,7 @@ Occurs when an extension updates successfully on the service. <!--The update ope
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0022**|
 | extensionCulture|Specifies the language version for which the extension that was upgraded. The value is a language culture name, such as **en-US** or **da-DK**. If a language wasn't specified when the extension was installed, then en-US is used by default. |
-| extensionId|Specifies the ID of the extension that failed to uninstall.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the extension that was being upgraded.|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionVersion|Specifies the new version of the extension being upgraded.|
@@ -674,7 +671,7 @@ Occurs when an extension failed to update on the service. <!--The update operati
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0023**|
 | extensionCulture|Specifies the language version for which the extension that was upgraded. The value is a language culture name, such as **en-US** or **da-DK**. If a language wasn't specified when the extension was installed, then en-US is used by default. |
-| extensionId|Specifies the ID of the extension that failed to uninstall.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the extension that was being upgraded.|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionVersion|Specifies the new version of the extension being upgraded.|
