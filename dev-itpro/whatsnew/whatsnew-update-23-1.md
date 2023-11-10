@@ -17,7 +17,7 @@ Would you like to know what has changed in update 23.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5032755). Downloads for on-premises are coming soon&mdash;stayed tuned at [aka.ms/BCYammer](https://aka.ms/BCYammer).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5032755). (Download link for on-premises are coming soon&mdash;stayed tuned at [aka.ms/BCYammer](https://aka.ms/BCYammer)).
 
 ## Feature changes
 
