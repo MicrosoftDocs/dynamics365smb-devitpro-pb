@@ -4,6 +4,7 @@
 |App key vault secrets |Provides information about the retrieval of secrets from Azure Key Vaults by extensions.|![check mark for feature.](../developer/media/check.png)<sup>[\[1\]](#1)|![check mark for feature](../developer/media/check.png)<sup>[\[1\]](#1)|![check mark for feature](../developer/media/check.png)|[See...](../administration/telemetry-extension-key-vault-trace.md) |
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|![check mark for feature.](../developer/media/check.png)|![check mark for feature.](../developer/media/check.png)||[See...](../administration/telemetry-authorization-trace.md) |
 |Azure Function Integration<sup>[\[6\]](#6)</sup>|Provides information about requests to Azure Functions from Business Central|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-azure-function-integration-trace.md) |
+|Changelog configuration changes<sup>[\[9\]](#9)</sup>|Provides information about changes to the configuration of the change log.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-changelog-configuration-trace.md) |
 |Client actions<sup>[\[7\]](#7)</sup>|Provides information about usage of client features.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-client-action-trace.md) |
 |Cloud migration<sup>[\[8\]](#8)</sup>|Provides information about cloud migration setup, replication runs, and data upgrade|![check mark for feature.](../developer/media/check.png)|||[See...](../administration/telemetry-cloud-migration-trace.md)
 |Company lifecycle|Provides information about creating, copying, and deleting of companies.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-company-lifecycle-trace.md) |
@@ -61,4 +62,5 @@
   
 <sup>8</sup><a name="8"></a>Introduced in Business Central 2023 release wave 1, version 22.1.
 
-<sup>9</sup><a name="9"></a>Introduced in Business Central 2023 release wave 2, version 23.0.
+<sup>9</sup><a name="9"></a>Introduced in Business Central 2023 release wave 2, version 23.
+
