@@ -77,12 +77,12 @@ tableextension 50100 CustomerExercise extends Customer
 }
 ```
 
-> [!NOTE]
-> If the field you are adding to the DropDown has `Visibility = false` on the underlying lookup page, it will not show up in the DropDown. 
+> [!NOTE]  
+> If the field you're adding to the DropDown has `Visibility = false` on the underlying lookup page, it will not show up in the DropDown. 
 
-For example, We want to add the "Address 2" field to the Ship-to Address DropDown. 
-The underlying lookup page is the Ship-To Address List, where Address 2 Visibility = false. 
-The following example illustrates the code changes needed in order to add the "Address 2" field to the Ship-To Address DropDown fieldgroup.
+For example, if we want to add the "Address 2" field to the Ship-to Address DropDown, the following code illustrates the changes needed to add the "Address 2" field to the Ship-To Address DropDown fieldgroup.
+The underlying lookup page is the Ship-To Address List, where Address 2 has the `Visibility` property set to `false`. 
+
 
 ```AL
 tableextension 50101 ShipToAddressExercise extends "Ship-to Address"
