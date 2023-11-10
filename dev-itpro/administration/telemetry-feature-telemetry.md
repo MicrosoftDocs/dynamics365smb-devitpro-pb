@@ -1,6 +1,6 @@
 ---
 title: Feature telemetry
-description: Learn about the telemetry that you can emit from features in Business Central.  
+description: Learn about the telemetry that you can emit from features in Business Central.
 author: bholtorf
 ms.topic: conceptual
 ms.devlang: na
@@ -56,13 +56,13 @@ There are three kinds of events that a feature can log through the Feature Telem
 
 `FeatureTelemetry.<LogUsage|LogError|LogUptake>(...)`
 
-* `LogUsage` should be called when the feature is successfully used by a user. 
+* `LogUsage` should be called when the feature is successfully used by a user.
 * `LogError` should be called when an error must be explicitly sent to telemetry. For example, after a call to a try function, when `Codeunit.Run` returned false, when sending an http response error message, and so on.
 * `LogUptake` should be called when a user changes the uptake state of a feature. There are four uptake states for features:
-  * `Undiscovered`  
-  * `Discovered`  
-  * `Set up`  
-  * `Used`  
+  * `Undiscovered` 
+  * `Discovered` 
+  * `Set up` 
+  * `Used` 
 
 > [!NOTE]
 > Tracking the uptake status of a feature may make database transactions. If `LogUptake` is called from within a try function, the `PerformWriteTransactionsInASeparateSession` parameter should be set to `True`.
@@ -244,17 +244,17 @@ This event is logged if more than one telemetry logger has been registered for p
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises solutions that do not use Microsoft Entra authentication, this value is **common**.|
 |alCallerAppName     | The name of the extension that emitted telemetry.      |
 |alCallerAppPublisher     | The name of the extension that emitted telemetry.      |
-|alCallerAppVersion     | The name of the extension that emitted telemetry.      | 
+|alCallerAppVersion     | The name of the extension that emitted telemetry.      |
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments). This dimension isn't included for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises environments.|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments).|
 |eventId     | **AL0000G7J**        |
 
-### Sample KQL code 
+### Sample KQL code
 This KQL code can help you get started analyzing if an app has registered more than one telemetry logger.
 
 ```kql
 // More than one telemetry logger has been registered for publisher <publisher>
-// The owner of the app needs to fix this if they want telemetry from the Feature Telemetry system module 
+// The owner of the app needs to fix this if they want telemetry from the Feature Telemetry system module
 traces
 | where timestamp > ago(7d) // change as needed
 | where customDimensions has 'AL0000G7J'
@@ -269,7 +269,7 @@ traces
 , appVersion = customDimensions.alCallerAppVersion
 ```
 
- 
+
 ## <a name="nologger"></a>No telemetry logger has been registered for publisher {publisher}
 This event is logged if no telemetry logger has been registered for publisher.
 
@@ -286,17 +286,17 @@ This event is logged if no telemetry logger has been registered for publisher.
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**.|
 |alCallerAppName     | The name of the extension that emitted telemetry.      |
 |alCallerAppPublisher     | The name of the extension that emitted telemetry.      |
-|alCallerAppVersion     | The name of the extension that emitted telemetry.      | 
+|alCallerAppVersion     | The name of the extension that emitted telemetry.      |
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments). This dimension isn't included for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises environments.|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments).|
 |eventId     | **AL0000G7K**        |
 
-### Sample KQL code 
+### Sample KQL code
 This KQL code can help you get started analyzing if no telemetry logger has been registered for an app.
 
 ```kql
 // An app from the publisher <publisher> sends telemetry, but there is no registered telemetry logger for this publisher.
-// The owner of the app must fix this if they want telemetry from the Feature Telemetry system module 
+// The owner of the app must fix this if they want telemetry from the Feature Telemetry system module
 traces
 | where timestamp > ago(7d) // change as needed
 | where customDimensions has 'AL0000G7K'
@@ -318,6 +318,6 @@ traces
 [Enable Telemetry in Business Central](telemetry-enable-application-insights.md)  
 [Feature Telemetry sample code](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)  
 [System Application Overview](../developer/devenv-system-application-overview.md)  
-[Feature Telemetry System Application Documentation](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)  
-[Feature Telemetry Codeunit Reference Documentation](/dynamics365/business-central/application/reference/system%20application/codeunit/system_application_codeunit_feature_telemetry)   
+[Feature Telemetry System Application Documentation](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)  
+[Feature Telemetry Codeunit Reference Documentation](/dynamics365/business-central/application/reference/system%20application/codeunit/system_application_codeunit_feature_telemetry)  
 [Feature Management Telemetry](telemetry-feature-management-trace.md)  

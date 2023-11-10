@@ -41,6 +41,10 @@ The following articles describe how to optimize performance in [!INCLUDE[prod_lo
 Azure SQL Database and Azure SQL Managed Instance provide tools for collecting metrics and diagnostic information to monitor your database and improve its performance. For more information, see
 [Azure SQL Database and Azure SQL Managed Instance monitoring and performance tuning](/azure/azure-sql/database/monitoring-tuning-index). 
 
+## Integrating directly on SQL Server objects
+[!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
+
+
 ## See Also  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)   
 [Microsoft SQL Server documentation](/sql/sql-server/)  

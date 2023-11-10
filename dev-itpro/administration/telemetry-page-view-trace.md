@@ -12,7 +12,7 @@ ms.author: jswymer
 ---
 # Analyzing Page View Telemetry
 
-**INTRODUCED IN:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1, version 16.3. Available in extension telemetry from version 18.0. Available in on-premises environments from version 21.0. 
+**INTRODUCED IN:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1, version 16.3. Available in extension telemetry from version 18.0. Available in on-premises environments from version 21.0. Query telemetry available from version 23.0.
 
 Page view telemetry gathers data about the pages that users open in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client. Each page view tells you how long it took to open the page, information about the user's environment, and more.
 
@@ -73,6 +73,92 @@ All fields are documented here: [Application Insights PageViews Schema](/azure/a
 |pageType|Specifies the type of page, such as **Card**, **List**, **Document**, and more. For a complete list of page types and descriptions, see [Page Types and Layouts](../developer/devenv-page-types-and-layouts.md).|
 |refUri|Specifies the URI of the page.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
+
+### Sample KQL code (page views)
+
+This KQL code can help you get started analyzing which pages users use:
+
+```kql
+// Page views (normal pages)
+pageViews
+| where timestamp > ago(7d) // adjust as needed
+| where customDimensions.pageDataSourceType != 'Query'
+| parse kind=regex client_Browser with browserName:string ' ' browserVersion:string
+| project timestamp
+// in which environment/company did it happen
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+// in which extension/app
+, appId = customDimensions.appId
+, appName = customDimensions.appName
+, appPublisher = customDimensions.appPublisher
+, appVersion = customDimensions.appVersion
+// in which object
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+// which client (browser, tablet, phone, ...)
+, clientType = customDimensions.clientType
+// device info
+, deviceLocale = customDimensions.deviceLocale
+, deviceScreenResolution = customDimensions.deviceScreenResolution
+// page details
+, designerLevel = customDimensions.designerLevel
+, expandedFastTabs = customDimensions.expandedFastTabs
+, factboxExpanded = customDimensions.factboxExpanded
+, hostType = customDimensions.hostType
+, pageIsModal = customDimensions.pageIsModal
+, pageMode = customDimensions.pageMode
+, pageType = customDimensions.pageType
+, refUri = customDimensions.refUri
+// all of this data is not stored in customDimensions
+, browserName = iff(browserName=='Edg', 'Edge', browserName)
+, browserVersion = browserVersion
+, clientBrowser = client_Browser
+, clientOS = client_OS
+, durationInMs = duration
+, location = client_CountryOrRegion
+```
+
+## Query opened
+
+Occurs when a query has been opened in the client.
+
+**INTRODUCED IN:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2, version 23.0.
+
+### Custom dimensions
+
+Query usage telemetry use the same dimensions as normal page views. The only difference is that the custom dimension pageDataSourceType is set to the value **Query**.
+
+### Sample KQL code (query usage)
+
+This KQL code can help you get started analyzing which queries users use to analyze data:
+
+```kql
+// Page views (for queries)
+pageViews
+| where timestamp > ago(7d) // adjust as needed
+| where customDimensions.pageDataSourceType == 'Query'
+| project timestamp
+// in which environment/company did it happen
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+// in which extension/app
+, appId = customDimensions.appId
+, appName = customDimensions.appName
+, appPublisher = customDimensions.appPublisher
+, appVersion = customDimensions.appVersion
+// in which object
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = 'Query'
+// copy KQL code on client type, device info, page details etc. from the KQL sample code on normal page views above
+```
+
 
 ## See also
 
