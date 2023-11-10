@@ -17,7 +17,7 @@ Would you like to know what has changed in update 23.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5032755) and the downloads [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5032755) and the downloads [here](https://aka.ms/BCDownload) (when available. Stay tuned at [aka.ms/BCYammer](https://aka.ms/BCYammer)).
 
 ## Feature changes
 
