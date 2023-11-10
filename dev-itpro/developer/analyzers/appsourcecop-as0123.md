@@ -1,6 +1,6 @@
 ---
-title: "UICop Warning AW0016"
-description: "The Rich Text Editor field must reside alone within a FastTab group."
+title: "AppSourceCop Error AS0123"
+description: "A key cannot be declared as clustered on an existing table."
 ms.author: solsen
 ms.custom: na
 ms.date: 10/25/2023
@@ -13,14 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# UICop Warning AW0016
-Rich Text Editor fields are only allowed while alone in a FastTab group.
+# AppSourceCop Error AS0123
+A key cannot be declared as clustered on an existing table.
 
 ## Description
-The Rich Text Editor field must reside alone within a FastTab group.
+A key cannot be declared as clustered on an existing table.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[UICop Analyzer](uicop.md)  
+[AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
