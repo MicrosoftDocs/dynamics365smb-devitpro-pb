@@ -28,7 +28,7 @@ It can be used both on-premises and in the cloud to add security for accessing M
 
 Conditional Access in Microsoft Entra ID provides a more granular control of MFA through policies that specify specific Cloud applications that require MFA. When creating Conditional Access policies, consider the following information:
 
-- For Business Central online, you can't select Business Central as a Cloud app. The only way to include Business Central is to select  **All Cloud Apps** for the policy.
+- For Business Central online, you can select Dynamics 365 Business Central as a Cloud app to apply access policies to.
 
 - For Business Central on-premises, you assign Business Central as a Cloud App by selecting the Microsoft Entra app registration that's used for Business Central authentication.
 
