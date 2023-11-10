@@ -183,7 +183,7 @@ page 50100 MyCopilotPage
 [Page types and layouts](devenv-page-types-and-layouts.md)  
 [Page object](devenv-page-object.md)  
 [PageType property](properties/devenv-pagetype-property.md)  
-[PromptMode property](properties/devenv-romptmode-property.md)  
+[PromptMode property](properties/devenv-promptmode-property.md)  
 [IsPreview property](properties/devenv-ispreview-property.md)  
 [SourceTable property](properties/devenv-sourcetable-property.md)  
 [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md)  
