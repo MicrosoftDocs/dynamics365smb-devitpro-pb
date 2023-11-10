@@ -1,5 +1,5 @@
 ---
-title: The PromptDialog page type
+title: The PromptDialog object
 description: Business Central
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -10,7 +10,7 @@ ms.date: 11/10/2023
 ms.custom: bap-template
 ---
 
-# The PromptDialog page type
+# The PromptDialog object
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] runtime 12.1, you can add a new page type `PromptDialog`, which allows you to integrate copilot capabilities into your custom scenarios. Use the `PromptDialog` to create generative AI experiences with the copilot look and feel, which includes signature visuals, and built-in safety controls for customers. The `PromptDialog` page has a specific page syntax, which includes new area and action controls, as described in the code sample in this article.
 
