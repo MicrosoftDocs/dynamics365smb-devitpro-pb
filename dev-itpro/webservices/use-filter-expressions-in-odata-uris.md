@@ -52,7 +52,6 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
 |ceiling|`$filter=ceiling(FDecimal) eq 1`||  
 
 
-
 >[!Note]
 > There is a special filter, `journals.templateDisplayName` which returns default journals if a user hasn't defined the filter criteria.
 
@@ -69,7 +68,9 @@ Use the appropriate notation for different data types with filter expressions.
 
 ## Nested function calls
 
-Nested function calls in filter clauses aren't supported in the current OData implementation. This means that filter clause expressions like `contains(tolower(field), 'some')` don't return the expected results - in this case a partial case-insensitive text search - but will instead either throw an error or return an undefined result.
+Nested function calls in filter clauses are supported in $schemaversion=2.1 and later. However, the following filters aren't supported in nested function calls: Indexof, replace, trim, concat, round, floor, and ceiling. 
+
+For earlier schema versions, filter clause expressions like `contains(tolower(field), 'some')` don't return the expected results - in this case a partial case-insensitive text search - but will instead either throw an error or return an undefined result.
 
 ## See also
 
