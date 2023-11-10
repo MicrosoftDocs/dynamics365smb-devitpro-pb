@@ -3,7 +3,7 @@ title: "Time Data Type"
 description: "Denotes a time ranging from 00:00:00.000 to 23:59:59.999."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 11/10/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -61,8 +61,8 @@ The [!INCLUDE [prod_short](../../includes/prod_short.md)] undefined time is repr
 
 ## Comparing time values
 
-The comparison of time values does not work if you compare the time value before writing to the database with the time value that was written to the database.
-The cause of the problem is that in [!INCLUDE [prod_short](../../includes/prod_short.md)] DateTime and Time values are rounded by SQL Server (see [datetime in Transact-SQL](https://learn.microsoft.com/sql/t-sql/data-types/datetime-transact-sql)). This means that a DateTime or Time value can change just because it was written to the database, and the comparison with the original value then runs on error.
+The comparison of time values doesn't work if you compare the time value before writing to the database with the time value that was written to the database.
+The cause of the problem is that in [!INCLUDE [prod_short](../../includes/prod_short.md)] DateTime and Time values are rounded by SQL Server (see [datetime in Transact-SQL](/sql/t-sql/data-types/datetime-transact-sql)). This means that a DateTime or Time value can change just because it was written to the database, and the comparison with the original value then runs on error.
 
 For comparison of two time values, a procedure like the following should be used:
 
