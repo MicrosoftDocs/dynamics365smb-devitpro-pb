@@ -17,7 +17,7 @@ ms.author: solsen
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-The entitlement object in [!INCLUDE [prod_short](includes/prod_short.md)] describes which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased or the role that they have in Microsoft Entra ID. 
+The entitlement object in [!INCLUDE [prod_short](includes/prod_short.md)] describes which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased or the role that they have in Microsoft Entra ID.
 
 An entitlement consists of a number of [PermissionSet objects](devenv-permissionset-object.md) put together to constitute a set of meaningful permissions for a user. An entitlement can only include permission set objects, which reference the objects that are included within the same app. This is to ensure that the entitlements included with one app can't alter or redefine the entitlements included with another app. Being entitled defines the maximum permissions a user is entitled to. Actual permissions are the intersection between the permissions the user is entitled to and the permissions the user is assigned.
 
@@ -27,7 +27,7 @@ Entitlements can only be used with the online version of [!INCLUDE [prod_short](
 > With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitlements can be used to support transactability for AppSource apps by binding entitlements to offers. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 <!--
 > [!NOTE]  
-> In the current version of [!INCLUDE [prod_short](includes/prod_short.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. 
+> In the current version of [!INCLUDE [prod_short](includes/prod_short.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases.
 -->
 
 ## Snippet support
@@ -95,7 +95,7 @@ entitlement BC_PerUserServicePlan
     Id = '1a2aaaaa-3aa4-5aa6-789a-a1234567aaaa';
 
     ObjectEntitlements = "D365 BASIC";
-   
+
 }
 ```
 
@@ -105,7 +105,7 @@ For scenarios when the user isn't licensed through entitlements mapping to AppSo
 
 ```al
 entitlement BC_Unlicensed
-{    
+{
     Type = Unlicensed;
     ObjectEntitlements = "Custom license";
 }
@@ -172,10 +172,10 @@ procedure CheckingForEntitlementsUsingPermissions()
     procedure CheckingForOtherAppEntitlements()
     begin
         if (NavApp.IsEntitled('Delegated Admin agent - Partner', '63ca2fa4-4f03-4f2b-a480-172fef340d3f')) then
-            Message('User is assigned the delegated admin agent entitlement defined in the system app: https://github.com/microsoft/ALAppExtensions/blob/main/Modules/System/Entitlements/DelegatedAdminagentPartner.Entitlement.al')
+            Message('User is assigned the delegated admin agent entitlement defined in the system app: https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/Entitlements/DelegatedAdminagentPartner.Entitlement.al')
         else
             if (NavApp.IsEntitled('Dynamics 365 Business Central Essentials', '63ca2fa4-4f03-4f2b-a480-172fef340d3f')) then
-                Message('User is assigned the essentials entitlement defined in the system app: https://github.com/microsoft/ALAppExtensions/blob/main/Modules/System/Entitlements/Dynamics365BusinessCentralEssentials.Entitlement.al');
+                Message('User is assigned the essentials entitlement defined in the system app: https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/Entitlements/Dynamics365BusinessCentralEssentials.Entitlement.al');
     end;
 ...
 ```
@@ -186,7 +186,7 @@ An example of an entitlement where `Type` is `Group`. This supports scenarios wh
 
 ```al
 entitlement BC_Group
-{    
+{
     Type = Group;
     Id = '1a2aaaaa-3aa4-5aa6-789a-a1234567aaaa';
 }
