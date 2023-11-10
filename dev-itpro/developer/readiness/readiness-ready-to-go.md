@@ -101,6 +101,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/BCPublisher)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] technology samples: [aka.ms/BCTech](https://aka.ms/BCTech)
+- [!INCLUDE [prod_short](../includes/prod_short.md)] open source sample apps: [aka.ms/BCSamples](https://aka.ms/BCSamples)
 - Maintain your app(s): [Maintain Your App](../app-maintain.md)
 - Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: [github.com/microsoft/al/issues](https://github.com/microsoft/al/issues)
 - Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
@@ -109,6 +110,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Build solutions that link to [!INCLUDE [prod_short](../includes/prod_short.md)] mobile app: [aka.ms/BCProtocol](https://aka.ms/BCProtocol)
 - Troubleshoot issues with [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCTroubleshoot](https://aka.ms/bctroubleshoot)
 - Browse the images/icons available for the action bar: [aka.ms/BCIcons](https://aka.ms/BCIcons)
+- Find the documentation for the latest Business Central APIs to access your Business data: [aka.ms/BCAPI](https://aka.ms/BCAPI)
+- Learn how to develop your own API to use Business Central data in other products: [aka.ms/BCCustomAPI](https://aka.ms/BCCustomAPI)
 
 ## Developing apps for AppSource
 
