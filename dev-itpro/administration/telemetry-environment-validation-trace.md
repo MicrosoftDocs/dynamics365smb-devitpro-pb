@@ -15,7 +15,7 @@ ms.service: dynamics365-business-central
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-Non-compatible 3rd party apps (per-tenant extensions) can block upgrades to next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] if they cannot compile on that version. In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, we proactively validate all environments regularly against the next release. If an environment is not ready to be updated, then we send an email to the administrator and starting from September 2023, we also emit telemetry on these validations. 
+Non-compatible, partner apps (per-tenant extensions) can block upgrades to next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] if they can't compile on that version. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service proactively validates all environments regularly against the next release. If an environment isn't ready to be updated, then it sends an email to the administrator and, starting from September 2023, emits telemetry on these validations. 
 
 With this telemetry, partners can monitor environments for the customers and setup alerts so that they know up front which customers will need help prior to updating to the next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -69,7 +69,7 @@ Occurs for each extension in the environment.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Extension validation started: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the id of the extension.|
+|message|**Extension validation started: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
 
 ### Custom dimensions
 
@@ -93,7 +93,7 @@ Occurs if the extension validated successfully on the next major of [!INCLUDE[pr
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Extension validation completed successfully: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the id of the extension.|
+|message|**Extension validation completed successfully: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
 
 ### Custom dimensions
 
@@ -109,12 +109,10 @@ Occurs if the extension validated successfully on the next major of [!INCLUDE[pr
 |extensionVersion|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-version.md)]|
 |targetVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-validation-target-version.md)]|
 
-
 ## <a name="extension-validation-reported"></a>Extension Validation diagnostic reported (LC0210)
-Occurs if something was not right when validating the extension on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+Occurs if a problem occurs when validating the extension on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 [!INCLUDE[LC0210](../includes/telemetry-LC0210.md)]
-
 
 ## Extension validation completed with failures (LC0226)
 
@@ -124,7 +122,7 @@ Occurs if the extension validated with one or more failures on the next major of
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Extension validation completed with failures: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the id of the extension.|
+|message|**Extension validation completed with failures: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
 
 ### Custom dimensions
 
@@ -212,8 +210,6 @@ Occurs if one or more extensions in the environment failed to validate on the ne
 |failureReason|The overall reason that the environment failed to validate on the new major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|
 |targetVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-validation-target-version.md)]|
 
-
-
 ## Environment diagnostic reported (LC0227)
 
 Occurs if an extension validated with a diagnostic on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
@@ -222,7 +218,7 @@ Occurs if an extension validated with a diagnostic on the next major of [!INCLUD
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Validation diagnostic reported: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the id of the extension.|
+|message|**Validation diagnostic reported: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
 
 ### Custom dimensions
 
@@ -273,9 +269,6 @@ traces
 , diagnosticSourceLocation = customDimensions.diagnosticSourceLocation
 , diagnosticCode = customDimensions.diagnosticCode
 ```
-
-
-
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
