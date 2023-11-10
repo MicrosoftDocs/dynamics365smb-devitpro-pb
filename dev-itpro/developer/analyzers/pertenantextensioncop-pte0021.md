@@ -1,6 +1,6 @@
 ---
-title: "UICop Warning AW0016"
-description: "The Rich Text Editor field must reside alone within a FastTab group."
+title: "PerTenantExtensionCop Error PTE0021"
+description: "The namespace must be different from System and Microsoft."
 ms.author: solsen
 ms.custom: na
 ms.date: 10/25/2023
@@ -13,14 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# UICop Warning AW0016
-Rich Text Editor fields are only allowed while alone in a FastTab group.
+# PerTenantExtensionCop Error PTE0021
+Defining reserved namespaces is not allowed.
 
 ## Description
-The Rich Text Editor field must reside alone within a FastTab group.
+The namespace must be different from System and Microsoft.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[UICop Analyzer](uicop.md)  
+[PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

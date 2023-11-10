@@ -3,7 +3,7 @@ title: "PageType Property"
 description: "Sets the type of page to create."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
+ms.date: 10/25/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,6 +41,7 @@ Sets the type of page to create.
 |**ReportProcessingOnly**|runtime version 1.0|Only report processing.|
 |**XmlPort**|runtime version 1.0|XmlPort page.|
 |**HeadlinePart**|runtime version 1.0|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
+|**PromptDialog**|runtime version 12.1|Dialog that prompts the user for input and shows the output of a copilot interaction.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
