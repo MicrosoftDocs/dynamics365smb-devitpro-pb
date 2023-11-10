@@ -3,11 +3,10 @@ title: "Using Filter Expressions in OData URIs"
 description: Learn how to use filter expressions in OData URIs to limit the results returned in a document.
 author: jswymer
 ms.author: jswymer
-ms.custom: na
-ms.date: 09/27/2022
+ms.custom: bap-template
+ms.date: 11/10/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ---
 # Using Filter Expressions in OData URIs
@@ -29,7 +28,8 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
 
 |Definition|Example and explanation|Equivalent AL expression|  
 |----------------|-----------------------------|---------------------------------|  
-|Select a range of values|`$filter=Entry_No gt 610 and Entry_No lt 615`<br /><br /> Query on GLEntry service. Returns entry numbers 611 through 614.|..|  
+|Select a range of values|`$filter=Entry_No gt 610 and Entry_No lt 615`<br /><br /> Query on GLEntry service. Returns entry numbers 611 through 614.|..|
+|In a list of values|`$filter=EntryNo in (610, 612, 614)`<br /><br /> Query that returns entry numbers 610, 612, and 614||  
 |And|`$filter=Country_Region_Code eq 'ES' and Payment_Terms_Code eq '14 DAYS'`<br /><br /> Query on Customer service. Returns customers in Spain where Payment\_Terms\_Code=**14 DAYS**.|&|  
 |Or|`$filter= Country_Region_Code eq 'ES' or Country_Region_Code eq 'US'`<br /><br /> Query on Customer service. Returns customers in Spain and the United States.<br /><br /> **Alert:** You can use OR operators to apply different filters on the same field. However, you can't use OR operators to apply filters on two different fields.|&#124;|  
 |Less than|`$filter=Entry_No lt 610`<br /><br /> Query on GLEntry service. Returns entry numbers that are less than 610.|\<|  
@@ -50,6 +50,7 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
 |round|`$filter=round(FDecimal) eq 1`||  
 |floor|`$filter=floor(FDecimal) eq 0`||  
 |ceiling|`$filter=ceiling(FDecimal) eq 1`||  
+
 
 
 >[!Note]
