@@ -1,5 +1,5 @@
 ---
-title:  Analyzing Environment Validation Telemetry 
+title:  Analyzing environment validation telemetry 
 description: Learn about the environment validation telemetry in Business Central.
 author: KennieNP
 ms.author: kepontop
@@ -9,17 +9,18 @@ ms.date: 10/27/2023
 ms.custom: bap-template
 ms.service: dynamics365-business-central
 ---
-# Analyzing Environment Validation Telemetry
+
+# Analyzing environment validation telemetry
 
 [!INCLUDE[component](../developer/includes/online_only.md)]
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-Non-compatible 3rd party apps (per-tenant extensions) can block upgrades to next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] if they cannot compile on that version. In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, we proactively validate all environments regularly against the next release. If an environment is not ready to be updated, then we send an email to the administrator and starting from September 2023, we also emit telemetry on these validations. 
+Noncompatible third party apps (per-tenant extensions) can block upgrades to next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] if they can't compile on that version. In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, we proactively validate all environments regularly against the next release. If an environment isn't ready to be updated, then we send an email to the administrator and starting from September 2023, we also emit telemetry on these validations. 
 
-With this telemetry, partners can monitor environments for the customers and setup alerts so that they know up front which customers will need help prior to updating to the next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+With this telemetry, partners can monitor environments for the customers and setup alerts so that they know up front which customers need help prior to updating to the next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-Failed operations result in a trace log entry that includes a reason for the failure.
+Failed operations result in a tracelog entry that includes a reason for the failure.
 
 The validation flow is as follows:
 
@@ -69,7 +70,7 @@ Occurs for each extension in the environment.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Extension validation started: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the id of the extension.|
+|message|**Extension validation started: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
 
 ### Custom dimensions
 
@@ -112,7 +113,7 @@ Occurs if the extension validated successfully on the next major of [!INCLUDE[pr
 
 ## Extension Validation diagnostic reported (LC0210)
 
-Occurs if something was not right when validating the extension on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+Occurs if something wasn't right when validating the extension on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ### General dimensions
 
@@ -293,7 +294,7 @@ Occurs if an extension validated with a diagnostic on the next major of [!INCLUD
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 |extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
 |extensionVersion|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-version.md)]|
-|mainExtension|Specifies the name of an extension that the validated extension has taken a dependancy n.|
+|mainExtension|Specifies the name of an extension that the validated extension has taken a dependency n.|
 |diagnosticCode|[!INCLUDE[diagnosticCode](../includes/include-telemetry-dimension-diagnostics-code.md)]|
 |diagnosticMessage|[!INCLUDE[diagnosticMessage](../includes/include-telemetry-dimension-diagnostics-message.md)]|
 |diagnosticSeverity|[!INCLUDE[diagnosticSeverity](../includes/include-telemetry-dimension-diagnostics-severity.md)]|
