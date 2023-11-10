@@ -3,7 +3,7 @@ title: "Variant Data Type"
 description: "Represents an AL variable object."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 10/25/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -60,6 +60,7 @@ The following methods are available on instances of the Variant data type.
 |[IsObjectType()](variant-isobjecttype-method.md)|Indicates whether an AL variant contains an ObjectType variable.|
 |[IsOption()](variant-isoption-method.md)|Indicates whether an AL variant contains an Option variable.|
 |[IsOutStream()](variant-isoutstream-method.md)|Indicates whether an AL variant contains an OutStream variable.|
+|[IsPromptMode()](variant-ispromptmode-method.md)|Indicates whether an AL variant contains a PromptMode variable.|
 |[IsRecord()](variant-isrecord-method.md)|Indicates whether an AL variant contains a Record variable.|
 |[IsRecordId()](variant-isrecordid-method.md)|Indicates whether an AL variant contains a RecordId variable.|
 |[IsRecordRef()](variant-isrecordref-method.md)|Indicates whether an AL variant contains a RecordRef variable.|

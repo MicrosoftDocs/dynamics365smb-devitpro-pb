@@ -3,7 +3,7 @@ title: "Page Data Type"
 description: "Contains a number of simpler elements called controls."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 10/25/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,6 +45,7 @@ The following methods are available on instances of the Page data type.
 |[GetRecord(var Record)](page-getrecord-method.md)|Gets the current record of the page.|
 |[LookupMode([Boolean])](page-lookupmode-method.md)|Gets or sets the default lookup mode for the page.|
 |[ObjectId([Boolean])](page-objectid-method.md)|Returns a string in the "Page xxx" format, where xxx is the caption or ID of the application object.|
+|[PromptMode([PromptMode])](page-promptmode-method.md)|The mode of a PromptDialog page that prompts the user for input and shows the output of a copilot interaction.|
 |[Run()](page-run--method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
 |[RunModal()](page-runmodal--method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[SaveRecord()](page-saverecord-method.md)|Saves the current record as if performed by the client. If the record does not exist it is inserted, otherwise it is modified.|

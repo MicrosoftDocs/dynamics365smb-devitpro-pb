@@ -5,7 +5,7 @@ author: jswymer #Required; your GitHub user alias, with correct capitalization.
 ms.author: jswymer #Required; your Microsoft alias; optional team alias.
 ms.reviewer: jswymer #Required; Microsoft alias of content publishing team member.
 ms.service: dynamics365-business-central
-ms.topic: conceptual 
+ms.topic: conceptual
 ms.date: 11/23/2022
 ms.custom: bap-template
 ---
@@ -28,10 +28,10 @@ As an AL developer, you can add or remove recommended content by subscribing to 
 [IntegrationEvent(false, false)]
 internal procedure OnAfterGetPageActions(PageId: Integer; IncludeViews: Boolean; var ItemsJsonArray: JsonArray)
 begin
-end; 
+end;
 ```
 
-The event provides the ID of the current user's roles center and the `ItemsJsonArray` object. The `ItemsJsonArray` object contains information about the pages that will show up in the recommended content list, including the caption and URL for the page and any of its views. The following code snippet shows an example of content inside the `ItemsJsonArray`: 
+The event provides the ID of the current user's roles center and the `ItemsJsonArray` object. The `ItemsJsonArray` object contains information about the pages that will show up in the recommended content list, including the caption and URL for the page and any of its views. The following code snippet shows an example of content inside the `ItemsJsonArray`:
 
 ```json
 {
@@ -50,7 +50,7 @@ The event provides the ID of the current user's roles center and the `ItemsJsonA
 }
 ```
 
-This event is published by codeunit 2915 "Page Action Provider", which is part of the **Page Action Provider** module of the system application. For more information about this module, see [ALAppExtensions GitHub repo](https://github.com/microsoft/ALAppExtensions/blob/main/Modules/System/Page%20Action%20Provider/README.md).
+This event is published by codeunit 2915 "Page Action Provider", which is part of the **Page Action Provider** module of the system application. For more information about this module, see [BCApps repository](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Page%20Action%20Provider).
 
 ## Add or remove
 
