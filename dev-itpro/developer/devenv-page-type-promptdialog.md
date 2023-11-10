@@ -32,7 +32,7 @@ The `PromptDialog` page type has three areas, which are `Prompt`, `Content`, and
 
 The following example describes a page, which is a PromptDialog page, set with the `PromptDialog` option. The `Extensible = false;` is a mandatory setting, to ensure that the page isn't extended so that customers can trust the AI experience implemented.
 
-Use the `IsPreview` property to indicate to your customers that you're using the feature in preview, and that the feature might change in the future as you gather feedback. The `IsPreview` property is by default set to `false`.
+Use the `IsPreview` property to indicate to your customers that you're using the feature in preview, and that the feature might change in the future as you gather feedback. The `IsPreview` property adds a specific note in the UI to indicate that the feature is in preview. It's by default set to `false`. 
 
 
 ```al
@@ -69,7 +69,7 @@ page 50100 MyCopilotPage
         area(Prompt) 
         { 
 
-            /* The input to copilot. Accepts any control. */ 
+            /* The input to copilot. Accepts any control, except repeater controls. */ 
 
             field(ProjectDescription; UserInput)
             {    
@@ -83,7 +83,7 @@ page 50100 MyCopilotPage
 
         area(Content) 
         { 
-            /* The output of copilot. Accepts any control. */ 
+            /* The output of copilot. Accepts any control, except repeater controls. */ 
 
             field("Job Short Description"; JobDescription)
             {...}
@@ -125,6 +125,8 @@ page 50100 MyCopilotPage
             systemaction(Generate)
             {
                 Caption = 'Generate'; 
+                ToolTip = 'Generate using copilot';
+
                 trigger OnAction()
                 begin
                     // The code triggering the copilot interaction.
