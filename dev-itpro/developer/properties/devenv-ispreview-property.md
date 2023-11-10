@@ -22,6 +22,15 @@ Specifies if the page is available as part of a preview release.
 -   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## Remarks
+
+The `IsPreview` property displays a note in the UI that the page is available as part of a preview release. The default value is `false`. This property is used when the `PageType` property is set to `PromptDialog`. For more information, see [The PromptDialog object](../devenv-page-type-promptdialog.md).
+
+## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[The PromptDialog object](../devenv-page-type-promptdialog.md)  
+[PromptMode property](devenv-promptmode-property.md)  
+[PageType property](devenv-pagetype-property.md)

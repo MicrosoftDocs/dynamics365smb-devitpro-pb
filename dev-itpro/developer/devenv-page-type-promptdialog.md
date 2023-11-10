@@ -16,7 +16,7 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] runtime 12.1, you can add a
 
 ## Snippet support
 
-Typing the shortcut `tpage` and then choose the **Page of type Prompt Dialog** creates the basic layout for a `PromptDialog` page object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `tpage` and then choose the **Page of type Prompt Dialog**, which creates the basic layout for a `PromptDialog` page object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Properties of the PromptDialog page type
 
