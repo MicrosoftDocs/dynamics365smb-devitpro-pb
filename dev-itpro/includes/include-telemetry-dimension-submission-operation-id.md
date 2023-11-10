@@ -1,1 +1,1 @@
-A GUID identifier for the validation attempt.
+A unique identifier (GUID) for the validation attempt.
