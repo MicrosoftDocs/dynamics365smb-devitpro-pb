@@ -6,11 +6,13 @@ ms.author: sawinark
 ms.reviewer: jswymer
 ms.topic: overview
 ms.collection: 
-ms.date: 11/13/2023
+ms.date: 05//2023
 ms.custom: bap-template
 ---
 
-# Business events on Business Central
+# Business events on Business Central (preview)
+
+[!INCLUDE[general_preview](includes/general_preview.md)]
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
