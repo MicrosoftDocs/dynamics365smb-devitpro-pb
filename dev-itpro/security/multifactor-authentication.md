@@ -1,17 +1,15 @@
 ---
-title: Multifactor authentication 
+title: Multi-factor authentication for Business Central
 description: This article explains how to add multi-factor authentication when your solution uses Microsoft Entra ID as authentication mechanism.
 author: jswymer
-ms.custom: na
+ms.custom: bap-template
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 04/01/2021
-
+ms.date: 04/01/2023
 ---
-# Multi-Factor Authentication for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]  
+# Multi-Factor Authentication for Business Central  
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
