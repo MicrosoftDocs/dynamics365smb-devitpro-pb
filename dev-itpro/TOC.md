@@ -1362,7 +1362,7 @@
 <!-- Microsoft Power Platform -->
 <!-- end Microsoft Power Platform -->
 ## Integrating with other Dynamics 365 applications
-### [Integrate with Dynamics 365 sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
+### [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
 <!-- Microsoft Teams -->
 ## Integrating with Microsoft Teams
 ### [Overview](developer/devenv-develop-for-teams.md)
