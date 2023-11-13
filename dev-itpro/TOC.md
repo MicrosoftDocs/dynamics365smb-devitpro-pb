@@ -1310,28 +1310,37 @@
 ### [Service-to-Service authentication](administration/automation-apis-using-s2s-authentication.md)
 <!-- CDS -->
 ## Integrating with external systems
-### [Business events (preview)](developer/business-events-overview.md)
+### [Data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
+### [Business events](developer/business-events-overview.md)
 ## Integrating with Microsoft Dataverse
-### [Custom integration with Dataverse](administration/administration-custom-cds-integration.md)
-### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
-### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
-### Dataverse API
+### Data synchronization
+#### [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)
+#### [Custom synchronization with Dataverse](administration/administration-custom-cds-integration.md)
+#### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
+#### [AL Proxy Table Generator for data sync](developer/devenv-al-table-proxy-generator.md)
+#### Dataverse API
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-#### [Business Central Dataverse API](api-dataverse/dynamics-dataverse-api.md)
-#### [Company](api-dataverse/resources/dynamics_company.md)
-##### [Get company](api-dataverse/api/dynamics_company_get.md)
-#### [Dataverse entity change](api-dataverse/resources/dynamics_dataverseentitychange.md)
-##### [Get dataverse entity change](api-dataverse/api/dynamics_dataverseentitychange_get.md)
-##### [Create dataverse entity change](api-dataverse/api/dynamics_dataverseentitychange_create.md)
-#### [Subscriptions](api-dataverse/resources/dynamics_subscriptions.md)
-##### [Get subscriptions](api-dataverse/api/dynamics_subscriptions_get.md)
-##### [Delete subscriptions](api-dataverse/api/dynamics_subscriptions_delete.md)
-##### [Create subscriptions](api-dataverse/api/dynamics_subscriptions_create.md)
-##### [Update subscriptions](api-dataverse/api/dynamics_subscriptions_update.md)
+##### [Business Central Dataverse API](api-dataverse/dynamics-dataverse-api.md)
+##### [Company](api-dataverse/resources/dynamics_company.md)
+###### [Get company](api-dataverse/api/dynamics_company_get.md)
+##### [Dataverse entity change](api-dataverse/resources/dynamics_dataverseentitychange.md)
+###### [Get dataverse entity change](api-dataverse/api/dynamics_dataverseentitychange_get.md)
+###### [Create dataverse entity change](api-dataverse/api/dynamics_dataverseentitychange_create.md)
+##### [Subscriptions](api-dataverse/resources/dynamics_subscriptions.md)
+###### [Get subscriptions](api-dataverse/api/dynamics_subscriptions_get.md)
+###### [Delete subscriptions](api-dataverse/api/dynamics_subscriptions_delete.md)
+###### [Create subscriptions](api-dataverse/api/dynamics_subscriptions_create.md)
+###### [Update subscriptions](api-dataverse/api/dynamics_subscriptions_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end CDS -->
 <!-- Microsoft Power Automate -->
+### Data visualization
+#### [Integrate with Microsoft Dataverse via virtual tables](powerplatform/powerplat-overview.md)
+#### [Table modelling for virtual tables](powerplatform/powerplat-entity-modeling.md)
+#### [Application lifecycle management for solutions that use virtual tables](powerplatform/powerplat-app-lifecycle-management.md)
+#### [Business Central and Dataverse admin reference for virtual tables](powerplatform/powerplat-admin-reference.md)
+#### [FAQ for virtual tables](powerplatform/powerplat-faq.md)
 ## Integrating with Microsoft Power Apps
 ### [Overview](powerplatform/power-apps-overview.md)
 ### [Application lifecycle management](powerplatform/power-apps-alm.md)
@@ -1344,19 +1353,16 @@
 ### [Create instant flows](powerplatform/instant-flows.md)
 ### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
+## Integrating with Microsoft Power Pages
 ## Integrating with Microsoft Power BI
 ### [Extract data from Business Central](developer/devenv-extract-data.md)
 ### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 ### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
-## Integrating with Microsoft Power Platform
-### [Microsoft Power Platform integration with Business Central](powerplatform/powerplat-overview.md)
-### [Table modeling](powerplatform/powerplat-entity-modeling.md)
-### [Application lifecycle management for solutions that use virtual tables](powerplatform/powerplat-app-lifecycle-management.md)
-### [Business Central and Microsoft Dataverse admin reference](powerplatform/powerplat-admin-reference.md)
-### [FAQ](powerplatform/powerplat-faq.md)
 <!-- end Microsoft Power Platform -->
+## Integrating with other Dynamics 365 applications
+#### [Integrate with Dynamics 365 sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
 <!-- Microsoft Teams -->
 ## Integrating with Microsoft Teams
 ### [Overview](developer/devenv-develop-for-teams.md)
