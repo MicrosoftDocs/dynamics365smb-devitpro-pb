@@ -1311,7 +1311,7 @@
 <!-- CDS -->
 ## Integrating with external systems
 ### [Data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
-### [Business events](developer/business-events-overview.md)
+### [Business events (preview)](developer/business-events-overview.md)
 ## Integrating with Microsoft Dataverse
 ### Data synchronization
 #### [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)
@@ -1353,7 +1353,7 @@
 ### [Create instant flows](powerplatform/instant-flows.md)
 ### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
-## Integrating with Microsoft Power Pages
+<!--## Integrating with Microsoft Power Pages (preview) -->
 ## Integrating with Microsoft Power BI
 ### [Extract data from Business Central](developer/devenv-extract-data.md)
 ### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
