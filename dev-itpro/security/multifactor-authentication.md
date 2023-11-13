@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 04/01/2023
+ms.date: 11/13/2023
 ---
 # Multifactor authentication for Business Central  
 
