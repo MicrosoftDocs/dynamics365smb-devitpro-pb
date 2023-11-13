@@ -1,8 +1,8 @@
 ---
-title: "Microsoft Power Platform integration with Business Central"
-description: "Integration of Power Platform with Business Central"
+title: "Microsoft Power Platform integration with Business Central via virtual tables"
+description: "Integration of Power Platform with Business Central via virtual tables"
 ms.custom: na
-ms.date: 06/02/2021
+ms.date: 11/13/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,9 +10,7 @@ ms.topic: overview
 author: solsen
 ---
 
-# Microsoft Power Platform Integration with Business Central
-
-[!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
+# Microsoft Power Platform integration with Business Central via virtual tables
 
 > [!IMPORTANT]  
 > This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/dynamics365/released-versions/dynamics-365ce#all-version-availability).
@@ -42,21 +40,18 @@ Since the virtual tables depend on APIs exposed on [!INCLUDE[prod_short](../deve
 
 There are known limitations with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables including:
 
-- Flows aren't triggered for virtual tables. Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] has no way to signal [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] about data change events.
 - Virtual tables can't be used in Charts. [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]s doesn't support virtual tables being using in Charts.
-- Virtual tables can't be customized on [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], for example, adding new columns. All modifications to virtual tables must happen in the API exposed on [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. But custom APIs can be developed and consumed as virtual tables.  
 - Attachment and Images/Pictures aren't supported for virtual tables.
-- BLOB to multiline support isn't supported in the preview.
+- BLOB to multiline support isn't supported.
 - Advanced search has some limitations. Each query designed translates to an OData query against [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. 
   * The following predicates aren't supported: **Does Not Equal**, **Does Not Contain**, **Does Not Begin With**, **Does Not End With**, **Does Not Contain Data**, and **Contains Data**.
   * Combining **And** and **Or** groups across columns.
   * Filtering on related tables.
-- PowerApp Portals aren't supported with Virtual Tables in current preview.
 
-## See Also
+## See also
 
 [Table Modeling](powerplat-entity-modeling.md)  
 [Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
 [Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference](powerplat-admin-reference.md)  
 [FAQ](powerplat-faq.md)  
-[Developing a Custom API](../developer/devenv-develop-custom-api.md)
+[Developing a Custom API](../developer/devenv-develop-custom-api.md)  

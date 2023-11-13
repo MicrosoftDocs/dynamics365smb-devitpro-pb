@@ -16,7 +16,7 @@ ms.service: dynamics365-business-central
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-Noncompatible third party apps (per-tenant extensions) can block upgrades to next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] if they can't compile on that version. In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, we proactively validate all environments regularly against the next release. If an environment isn't ready to be updated, then we send an email to the administrator and starting from September 2023, we also emit telemetry on these validations. 
+Non-compatible, partner apps (per-tenant extensions) can block upgrades to next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] if they can't compile on that version. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service proactively validates all environments regularly against the next release. If an environment isn't ready to be updated, then the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service sends an email to the administrator and, starting from September 2023, emits telemetry on these validations. 
 
 With this telemetry, partners can monitor environments for the customers and setup alerts so that they know up front which customers need help prior to updating to the next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -41,7 +41,7 @@ or
         Environment diagnostic reported (LC0227)
 ```
 
-## Environment validation started (LC0220)
+## <a name="environment-validation-started"></a>Environment validation started (LC0220)
 
 Occurs when a new validation attempt is started for the environment.
 
@@ -49,7 +49,7 @@ Occurs when a new validation attempt is started for the environment.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment validation started: environment {environmentName} target build version  {targetVersion}** <br /><br /> `{environmentName}` indicates the name of the environment.<br /><br /> `{targetVersion}` indicates the new version that the environment is validated against.|
+|message|**Environment validation started: environment {environmentName} target build version {targetVersion}** <br /><br /> `{environmentName}` indicates the name of the environment.<br /><br /> `{targetVersion}` indicates the new version that the environment is validated against.|
 
 ### Custom dimensions
 
@@ -62,7 +62,7 @@ Occurs when a new validation attempt is started for the environment.
 |targetVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-validation-target-version.md)]|
 
 
-## Extension validation started (LC0224)
+## <a name="extension-validation-started"></a>Extension validation started (LC0224)
 
 Occurs for each extension in the environment.
 
@@ -86,7 +86,7 @@ Occurs for each extension in the environment.
 |extensionVersion|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-version.md)]|
 
 
-## Extension validation completed successfully (LC0225)
+## <a name="extension-validation-completed-successfully"></a>Extension validation completed successfully (LC0225)
 
 Occurs if the extension validated successfully on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -111,7 +111,7 @@ Occurs if the extension validated successfully on the next major of [!INCLUDE[pr
 |targetVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-validation-target-version.md)]|
 
 
-## Extension Validation diagnostic reported (LC0210)
+## <a name="extension-validation-diagnostic-reported"></a>Extension Validation diagnostic reported (LC0210)
 
 Occurs if something wasn't right when validating the extension on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -174,7 +174,7 @@ traces
 
 
 
-## Extension validation completed with failures (LC0226)
+## <a name="extension-validation-completed-with-failures"></a>Extension validation completed with failures (LC0226)
 
 Occurs if the extension validated with one or more failures on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -226,7 +226,7 @@ traces
 ```
 
 
-## Environment validation request completed successfully (LC0222)
+## <a name="environment-validation-request-completed-successfully"></a>Environment validation request completed successfully (LC0222)
 
 Occurs if all extensions in the environment validated successfully on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -248,7 +248,7 @@ Occurs if all extensions in the environment validated successfully on the next m
 
 
 
-## Environment validation completed with failures (LC0223)
+## <a name="environment-validation-request-completed-with-failures"></a>Environment validation completed with failures (LC0223)
 
 Occurs if one or more extensions in the environment failed to validate on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -272,7 +272,7 @@ Occurs if one or more extensions in the environment failed to validate on the ne
 
 
 
-## Environment diagnostic reported (LC0227)
+## <a name="environment-diagnostic-reported"></a>Environment diagnostic reported (LC0227)
 
 Occurs if an extension validated with a diagnostic on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -331,8 +331,6 @@ traces
 , diagnosticSourceLocation = customDimensions.diagnosticSourceLocation
 , diagnosticCode = customDimensions.diagnosticCode
 ```
-
-
 
 ## See also
 
