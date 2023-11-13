@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.date: 10/26/2023
+ms.date: 11/13/2023
 ms.author: solsen
 ---
 
@@ -19,8 +19,11 @@ To join Microsoft in the world of GitHub and Markdown, there are terminology and
 
 We have two GitHub repos that you can contribute to:
 
-- [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)
-- [MicrosoftDocs/dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb) 
+- [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)  
+  This repo contains the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] business functionality content that is published [here](/dynamics365/business-central/welcome).
+
+- [MicrosoftDocs/dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb)  
+  This repo contains the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] developer and IT Pro content that is published [here](/dynamics365/business-central/dev-itpro/).
 
 In the following, we'll use the *MicrosoftDocs/dynamics365smb-docs* repo as an example.
 
