@@ -1,5 +1,5 @@
 ---
-title: "SetRange, SetFilter, GetRangeMin, GetRangeMax Methods"
+title: Filtering records with the SetRange, SetFilter, GetRangeMin, and GetRangeMax methods
 description: Describes methods that set limits on the value of one or more specified fields, so that only a subset of the records are displayed, modified, deleted, and so on. 
 ms.custom: na
 ms.date: 04/01/2021
@@ -10,7 +10,7 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# Filtering records with the SetRange, SetFilter, GetRangeMin, and GetRangeMax Methods
+# Filtering records with the SetRange, SetFilter, GetRangeMin, and GetRangeMax methods
 
 The following methods can be used to filter records in a table:  
 
