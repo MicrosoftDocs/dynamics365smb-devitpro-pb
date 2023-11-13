@@ -1,5 +1,5 @@
 ---
-title: Page Types and Layouts
+title: Page types and layouts
 description: Understanding page types to be able to create good user experience in Business Central.
 author: jacobwj
 ms.custom: bap-template
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: dynamics365-business-central
 ---
 
-# Page Types and Layouts
+# Page types and layouts
 
 Understanding how [!INCLUDE[prod_short](includes/prod_short.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface.
 
@@ -37,6 +37,7 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`CardPart`|A page that is embedded in another page, such as in a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
 |`ListPart`|A page that is embedded in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table. Can have fields above or below the repeater.|
 |`HeadlinePart`|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|Single entity|Single group of fields representing headlines.|
+|`PromptDialog`|A page that enables creating generative AI experiences with the copilot look and feel|Single or collection||
 
 ### The two principal categories of page types
 
