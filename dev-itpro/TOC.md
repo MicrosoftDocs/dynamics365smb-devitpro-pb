@@ -368,6 +368,7 @@
 #### Prepare
 ##### [Upgrade to Business Central v14](upgrade/Upgrade-Considerations.md#online)
 ##### [Plan cloud migration](administration/cloud-migration-plan-prepare.md)
+##### [Estimate data size in online tenant](administration/cloud-migration-estimate-compressed-data-size.md)
 ##### [Prerequisites for cloud migration](administration/cloud-migration-prerequisites.md)
 ##### [Align SQL table definitions](administration/migration-align-table-definitions.md)
 ##### [Clean data for cloud migration](administration/migration-clean-data.md)
