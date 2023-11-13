@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Power Platform integration with Business Central via virtual tables"
-description: "Integration of Power Platform with Business Central via virtual tables"
+title: Microsoft Power Platform integration with Business Central via virtual tables
+description: Learn about integration of Power Platform with Business Central via virtual tables.
 ms.custom: na
 ms.date: 11/13/2023
 ms.reviewer: solsen
