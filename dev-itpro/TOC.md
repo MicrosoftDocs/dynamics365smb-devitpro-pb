@@ -1337,7 +1337,7 @@
 <!-- Microsoft Power Automate -->
 ### Data virtualization
 #### [Integrate with Microsoft Dataverse via virtual tables](powerplatform/powerplat-overview.md)
-#### [Table modelling for virtual tables](powerplatform/powerplat-entity-modeling.md)
+#### [Table modeling for virtual tables](powerplatform/powerplat-entity-modeling.md)
 #### [Application lifecycle management for solutions that use virtual tables](powerplatform/powerplat-app-lifecycle-management.md)
 #### [Business Central and Dataverse admin reference for virtual tables](powerplatform/powerplat-admin-reference.md)
 #### [FAQ for virtual tables](powerplatform/powerplat-faq.md)
