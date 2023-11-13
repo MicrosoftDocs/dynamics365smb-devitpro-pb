@@ -10,14 +10,15 @@ ms.date: 11/06/2023
 ms.custom: bap-template
 ---
 
-# Estimating the data size in your [!INCLUDE[prod_short](../includes/prod_short.md)] online tenant
-In the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], data is compressed using the SQL Server data compression feature. This means that the data size in your on-premises database might not match the data size when migrated to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service.
+# Estimating the data size in your Business Central online tenant
+
+In the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], data is compressed using the SQL Server data compression feature. As a consequence, the data size in your on-premises database might not match the data size when migrated to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service.
 
 Currently, all tables in the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are compressed with **CompressionType** set to **Page**.
 
 [!INCLUDE[evaluate_table_compression](../includes/include_evaluate_table_compression.md)]
 
-If you want to estimate the compressed size of all or some tables in your database, you can create (and possibly modify) the following stored procedure 
+If you want to estimate the compressed size of all or some tables in your database, you can create (and possibly modify) the following stored procedure:
 
 ```SQL
 CREATE PROCEDURE estimate_page_compressed_table_sizes
