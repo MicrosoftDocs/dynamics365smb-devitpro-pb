@@ -1,6 +1,6 @@
 ---
-title: Multi-factor authentication for Business Central
-description: This article explains how to add multi-factor authentication when your solution uses Microsoft Entra ID as authentication mechanism.
+title: Multifactor authentication for Business Central
+description: This article explains how to add multifactor authentication when your solution uses Microsoft Entra ID as authentication mechanism.
 author: jswymer
 ms.custom: bap-template
 ms.reviewer: na
@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2023
 ---
-# Multi-Factor Authentication for Business Central  
+# Multifactor authentication for Business Central  
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-When using Microsoft Entra authentication with [!INCLUDE[prod_short](../developer/includes/prod_short.md)], we recommend you take advantage of Microsoft Entra Multi-Factor Authentication (MFA). MFA further safeguards access to the application and data. It delivers single sign-on authentication through a range of verification options, like:
+When using Microsoft Entra authentication with [!INCLUDE[prod_short](../developer/includes/prod_short.md)], we recommend you take advantage of Microsoft Entra multifactor authentication (MFA). MFA further safeguards access to the application and data. It delivers single sign-on authentication through a range of verification options, like:
 
 - Phone call
 - Text message
 - Mobile app notification
 - One-time password
 
-It can be used both on-premises and in the cloud to add security for accessing Microsoft online services, remote access applications, and more. For more information, see the [Azure Multi-Factor Authentication documentation](/azure/active-directory/authentication/concept-mfa-howitworks).
+It can be used both on-premises and in the cloud to add security for accessing Microsoft online services, remote access applications, and more. For more information, see the [How it works: Microsoft Entra multifactor authentication](/azure/active-directory/authentication/concept-mfa-howitworks).
 
 ## Conditional access support
 
