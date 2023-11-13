@@ -3,7 +3,7 @@ title: "Update 23.1 for Microsoft Dynamics 365 Business Central 2023 Release Wav
 description: Get an overview of new and changed capabilities in the 23.1 update of Business Central online, which is part of 2023 release wave 2.
 ms.author: a-enielsson
 ms.custom: na
-ms.date: 10/25/2023
+ms.date: 11/13/2023
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -17,7 +17,7 @@ Would you like to know what has changed in update 23.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5032755). (Download link for on-premises is coming soon&mdash;stayed tuned on [Yammer](https://aka.ms/BCYammer)).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5032755)  and the downloads [here](https://aka.ms/BCDownload). <!--(Download link for on-premises is coming soon&mdash;stayed tuned on [Yammer](https://aka.ms/BCYammer)).-->
 
 ## Feature changes
 
