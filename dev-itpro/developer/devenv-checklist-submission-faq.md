@@ -252,6 +252,9 @@ No, it isn't required to use an EV code-signing certificate. Standard code-signi
 
 Yes, you can reuse the same code-signing certificate for multiple extensions. Code-signing certificates have a validity period defined over time.
 
+### What certificate format is accepted?
+Currently we accept only `.pfx` certificates. However, if you have other certificate format please check with your certificate provider to provide you `.pfx` or transform your certificate to `.pfx`. Steps how to perform such transformation can easily be found online. 
+
 ## Questions about names, affixes, and ID ranges
 
 In the following, you can read about how affixes and ID ranges are assigned.
