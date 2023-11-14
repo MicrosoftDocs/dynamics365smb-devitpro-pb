@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 10/24/2023
+ms.date: 11/14/2023
 ms.custom: bap-template
 ---
 
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 A `hotfix` is generally the submission of a new version of an AppSource app outside the planned scheduling, whether the hotfix applies to the latest major, latest minor app, or a previous version. 
 
-However, for AppSource apps, the term `hotfix` is used to refer to the submission of a new version which isn't the latest version of the app. For example, if you have version 2.0.0.0 of your app available in AppSource and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered a hotfix because 1.5.0.0 won't be the latest version available.
+However, for AppSource apps, the term `hotfix` is used to refer to the submission of a new version, which isn't the latest version of the app. For example, if you have version 2.0.0.0 of your app available in AppSource and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered a hotfix because 1.5.0.0 isn't the latest version available.
 
 > [!IMPORTANT]  
 > When you submit a hotfix, don't update the version of your offer in Partner Center to match the hotfix version submitted because the version shown in Partner Center on the AppSource marketplace listing shows the latest version.
@@ -37,9 +37,9 @@ Let's consider that you have the following versions of your app publicly availab
 | 1.0.0.0 | 21.0 |
 | 2.0.0.0 | 22.0 |
 
-You are now submitting a new version 1.5.0.0 with the `application` property set to 21.0.0.0. 
+You're now submitting a new version 1.5.0.0 with the `application` property set to 21.0.0.0. 
 
-On their upgrade to the next major, your customers on [!INCLUDE [prod_short](includes/prod_short.md)] version 21 who will be running version 1.5.0.0 would then be upgraded to version 2.0.0.0 which targets [!INCLUDE [prod_short](includes/prod_short.md)] 22.0, so version 1.5.0.0 will be validated for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 21.0 (included) to 22.0 (excluded).
+On their upgrade to the next major, your customers on [!INCLUDE [prod_short](includes/prod_short.md)] version 21 who will be running version 1.5.0.0 would then be upgraded to version 2.0.0.0, which targets [!INCLUDE [prod_short](includes/prod_short.md)] 22.0, so version 1.5.0.0 will be validated for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 21.0 (included) to 22.0 (excluded).
 
 ### Example 2 - Multiple versions targeting the next release
 
@@ -51,9 +51,9 @@ Let's consider that you have the following versions of your app publicly availab
 | 2.0.0.0 | 22.0 |
 | 3.0.0.0 | 22.0 |
 
-You are now submitting a new version 1.5.0.0 with the `application` property set to 21.0.0.0. 
+You're now submitting a new version 1.5.0.0 with the `application` property set to 21.0.0.0. 
 
-On their upgrade to the next major, your customers on [!INCLUDE [prod_short](includes/prod_short.md)] version 21 who will be running version 1.5.0.0 would then be upgraded to version 3.0.0.0 which targets [!INCLUDE [prod_short](includes/prod_short.md)] 22.0, so version 1.5.0.0 will be validated for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 21.0 (included) to 22.0 (excluded).
+On their upgrade to the next major, your customers on [!INCLUDE [prod_short](includes/prod_short.md)] version 21 who will be running version 1.5.0.0 would then be upgraded to version 3.0.0.0, which targets [!INCLUDE [prod_short](includes/prod_short.md)] 22.0, so version 1.5.0.0 is validated for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 21.0 (included) to 22.0 (excluded).
 
 ### Example 3 - Multiple versions targeting the next releases
 
@@ -65,11 +65,11 @@ Let's consider that you have the following versions of your app publicly availab
 | 2.0.0.0 | 22.0 |
 | 3.0.0.0 | 23.0 |
 
-You are now submitting a new version 1.5.0.0 with the `application` property set to 21.0.0.0.
+You're now submitting a new version 1.5.0.0 with the `application` property set to 21.0.0.0.
 
-On their upgrade to the next major, your customers on [!INCLUDE [prod_short](includes/prod_short.md)] version 21 who will be running version 1.5.0.0 would then be upgraded to version 2.0.0.0 which targets [!INCLUDE [prod_short](includes/prod_short.md)] 22.0, so version 1.5.0.0 will be validated for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 21.0 (included) to 22.0 (excluded).
+On their upgrade to the next major, your customers on [!INCLUDE [prod_short](includes/prod_short.md)] version 21 who will be running version 1.5.0.0 would then be upgraded to version 2.0.0.0, which targets [!INCLUDE [prod_short](includes/prod_short.md)] 22.0, so version 1.5.0.0 is validated for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 21.0 (included) to 22.0 (excluded).
 
-### Example 4 - Submitting a HF with application equal to the next versions
+### Example 4 - Submitting a hotfix with application equal to the next versions
 
 Let's consider that you have the following versions of your app publicly available in AppSource:
 
@@ -78,17 +78,17 @@ Let's consider that you have the following versions of your app publicly availab
 | 1.0.0.0 | 21.0 |
 | 2.0.0.0 | 22.0 |
 
-You are now submitting a new version 1.5.0.0 with the `application` property set to 22.0.0.0.
+You're now submitting a new version 1.5.0.0 with the `application` property set to 22.0.0.0.
 
 The technical validation will fail with an error message similar to `The submission must target at least one existing release of Business Central.`, because it would validate version 1.5.0.0 for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 22.0 (included) to 22.0 (excluded). 
 
 Instead, you should submit a new latest version 2.1.0.0 or 3.0.0.0.
 
-Note that, if it passed validation, version 1.5.0.0 would not be available to any customers anyway, because:
+Note that, if it passed validation, version 1.5.0.0 wouldn't be available to any customers anyway, because:
 - customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 21.0 won't be able to upgrade to this version because of the target [!INCLUDE [prod_short](includes/prod_short.md)] version,
-- customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 22.0 will get version 2.0.0.0 which is higher.
+- customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 22.0 will get version 2.0.0.0, which is higher.
 
-### Example 5 - Submitting a HF with application higher than the next versions
+### Example 5 - Submitting a hotfix with application higher than the next versions
 
 Let's consider that you have the following versions of your app publicly available in AppSource:
 
@@ -98,15 +98,15 @@ Let's consider that you have the following versions of your app publicly availab
 | 2.0.0.0 | 22.0 |
 | 3.0.0.0 | 23.0 |
 
-You are now submitting a new version 1.5.0.0 with the `application` property set to 23.0.0.0.
+You're now submitting a new version 1.5.0.0 with the `application` property set to 23.0.0.0.
 
-The technical validation will fail with an error message similar to `The submission must target at least one existing release of Business Central.`, because it would validate version 1.5.0.0 for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 23.0 (included) to 22.0 (excluded). 
+The technical validation fails with an error message similar to `The submission must target at least one existing release of Business Central.`, because it would validate version 1.5.0.0 for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 23.0 (included) to 22.0 (excluded). 
 
 Instead, you should submit a new latest version 3.1.0.0 or 4.0.0.0.
 
-Note that, if it passed validation, version 1.5.0.0 would not be available to any customers anyway, because:
+Note that, if it passed validation, version 1.5.0.0 wouldn't be available to any customers anyway, because:
 - customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 21.0 and 22.0 won't be able to upgrade to this version because of the target [!INCLUDE [prod_short](includes/prod_short.md)] version,
-- customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 23.0 will get version 3.0.0.0 which is higher.
+- customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 23.0 will get version 3.0.0.0, which is higher.
 
 ## What is the extra validation done for a hotfix submission?
 
@@ -121,7 +121,7 @@ Let's consider that you have the following versions of your app publicly availab
 | 1.0.0.0 | 22.0 |
 | 2.0.0.0 | 23.0 |
 
-If you submit a new version 1.5.0.0 with the `application` property set to 22.0.0.0, the technical validation will verify that:
+If you submit a new version 1.5.0.0 with the `application` property set to 22.0.0.0, the technical validation verifies that:
 - There are no breaking changes between 1.0.0.0 and 1.5.0.0, and that
 - There are no breaking changes between 1.5.0.0 and 2.0.0.0.
 
@@ -135,7 +135,7 @@ Let's consider that you have the following versions of your app publicly availab
 | 2.0.0.0 | 23.0 |
 | 3.0.0.0 | 23.0 |
 
-If you submit a new version 1.5.0.0 with the `application` property set to 22.0.0.0, the technical validation will verify that:
+If you submit a new version 1.5.0.0 with the `application` property set to 22.0.0.0, the technical validation verifies that:
 - There are no breaking changes between 1.0.0.0 and 1.5.0.0, and that
 - There are no breaking changes between 1.5.0.0 and 3.0.0.0.
 
@@ -150,15 +150,15 @@ Let's consider that you have the following versions of your app publicly availab
 | 2.1.0.0 | 22.0 |
 | 3.0.0.0 | 23.0 |
 
-If you submit a new version 1.5.0.0 with the `application` property set to 21.0.0.0, the technical validation will verify that:
+If you submit a new version 1.5.0.0 with the `application` property set to 21.0.0.0, the technical validation verifies that:
 - There are no breaking changes between 1.0.0.0 and 1.5.0.0, and that
 - There are no breaking changes between 1.5.0.0 and 2.1.0.0.
 
 ## What kind of changes can't be part of a hotfix?
 
-Since the AppSourceCop will validate for breaking changes, you cannot add code that contains breaking changes with the previous and next version selected for validation. This includes, among others, removing non-obsolete objects, removing table fields, reducing the accessibility of an object. 
+Since the AppSourceCop will validate for breaking changes, you can't add code that contains breaking changes with the previous and next version selected for validation. This includes, among others, removing nonobsolete objects, removing table fields, reducing the accessibility of an object. 
 
-As part of a hotfix, you also cannot add new AL objects (pages, reports, codeunits, etc.) or new elements (procedure, actions, fields, etc.) that contribute to your extension's public API unless they're also part of the next version selected for the validation, or they're obsolete pending.
+As part of a hotfix, you also can't add new AL objects (pages, reports, codeunits, etc.) or new elements (procedure, actions, fields, etc.) that contribute to your extension's public API unless they're also part of the next version selected for the validation, or they're obsolete pending.
 
 > [!NOTE]  
 > Tables and table fields can be added as part of a hotfix only if they are also defined in the next version selected for the validation. If they are not defined in the next version, introducing them as obsolete pending or obsolete removed will also not work.
