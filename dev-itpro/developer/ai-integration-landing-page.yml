@@ -53,12 +53,15 @@ landingContent:
       - text: AI module (System.AI)
         url: ai-build-capability-in-al.md
 # Card
-  - title: Videos
+  - title: Demos and samples 
     linkLists:
     - linkListType: video
       links:
       - text: Designing and developing generative AI experiences
         url: https://go.microsoft.com/fwlink/?linkid=2251051
-        
+    - linkListType: sample
+      links:
+      - text: BCTech 
+        url: https://github.com/microsoft/BCTech/tree/master/samples/AzureOpenAI    
 
 # Remove all comments in this template before you sign off or merge to the main branch
