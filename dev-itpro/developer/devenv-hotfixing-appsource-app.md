@@ -24,7 +24,7 @@ However, for AppSource apps, the term `hotfix` is used to refer to the submissio
 
 ## Against which releases is a hotfix submission validated?
 
-When you submit a hotfix of your AppSource app, the service will automatically detect among the existing versions, which is the next version of your app that your customers will be upgraded to when their environment is upgraded to the next major/minor. The service will then validate your submission up to the [!INCLUDE [prod_short](includes/prod_short.md)] release for which this extension is available. 
+When you submit a hotfix of your AppSource app, the service will automatically detect among the existing versions, which is the next version of your app that your customers will be upgraded to when their environment is upgraded to the next major/minor. The service then validates your submission up to the [!INCLUDE [prod_short](includes/prod_short.md)] release for which this extension is available. 
 
 The minimum release targeted by the submission is computed based on the `application` property similar to any other submission.
 
@@ -80,13 +80,13 @@ Let's consider that you have the following versions of your app publicly availab
 
 You're now submitting a new version 1.5.0.0 with the `application` property set to 22.0.0.0.
 
-The technical validation will fail with an error message similar to `The submission must target at least one existing release of Business Central.`, because it would validate version 1.5.0.0 for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 22.0 (included) to 22.0 (excluded). 
+The technical validation fails with an error message similar to `The submission must target at least one existing release of Business Central.`, because it would validate version 1.5.0.0 for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 22.0 (included) to 22.0 (excluded). 
 
 Instead, you should submit a new latest version 2.1.0.0 or 3.0.0.0.
 
 Note that, if it passed validation, version 1.5.0.0 wouldn't be available to any customers anyway, because:
-- customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 21.0 won't be able to upgrade to this version because of the target [!INCLUDE [prod_short](includes/prod_short.md)] version,
-- customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 22.0 will get version 2.0.0.0, which is higher.
+- customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 21.0 aren't able to upgrade to this version because of the target [!INCLUDE [prod_short](includes/prod_short.md)] version,
+- customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 22.0 get version 2.0.0.0, which is higher.
 
 ### Example 5 - Submitting a hotfix with application higher than the next versions
 
@@ -105,8 +105,8 @@ The technical validation fails with an error message similar to `The submission 
 Instead, you should submit a new latest version 3.1.0.0 or 4.0.0.0.
 
 Note that, if it passed validation, version 1.5.0.0 wouldn't be available to any customers anyway, because:
-- customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 21.0 and 22.0 won't be able to upgrade to this version because of the target [!INCLUDE [prod_short](includes/prod_short.md)] version,
-- customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 23.0 will get version 3.0.0.0, which is higher.
+- customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 21.0 and 22.0 aren't able to upgrade to this version because of the target [!INCLUDE [prod_short](includes/prod_short.md)] version,
+- customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 23.0 get version 3.0.0.0, which is higher.
 
 ## What is the extra validation done for a hotfix submission?
 
@@ -276,7 +276,7 @@ codeunit 1000000 MyCodeunitFromV1
 
 Version 2.1.0.0 of your app is defined without MyCodeunitFromV1.
 
-If you submit a new version 1.5.0.0, it will be validated for breaking changes with version 1.0.0.0 and version 2.1.0.0.
+If you submit a new version 1.5.0.0, it's validated for breaking changes with version 1.0.0.0 and version 2.1.0.0.
 Independently of your changes, since MyCodeunitFromV1 was removed from version 2.1.0.0, it must now be marked as ObsoletePending in version 1.5.0.0.
 
 ## See also
