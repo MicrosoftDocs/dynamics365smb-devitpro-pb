@@ -26,22 +26,17 @@ metadata:
 landingContent:
 
 # Card
-  - title: Overview
+  - title: Get started
     linkLists:
     - linkListType: overview
       links:
       - text: What is Developer tools for Copilot
         url: developer-tools-for-copilot-overview.md
-      - text: Is your offering a Copilot?
+      - text: What is considered a Copilot offering?
         url: ai-extend-copilot-overview.md
-
-# Card
-  - title: Get started
-    linkLists:
-    - linkListType: get-started
-      links:
       - text: Get setup with Azure OpenAI Service
         url: ai-dev-tools-get-started.md
+
 # Card
   - title: Build the experience
     linkLists:
@@ -51,13 +46,16 @@ landingContent:
         url: ai-build-capability-in-al.md
       - text: Build the user experience
         url: ai-build-experience.md
-      
+    - linkListType: reference
+      links:
+      - text: AI module (System.AI)
+        url: ai-build-capability-in-al.md
 # Card
   - title: Videos
     linkLists:
     - linkListType: video
       links:
-      - text: Designing and developing generative AI experiences for your extensions
+      - text: Designing and developing generative AI experiences
         url: https://go.microsoft.com/fwlink/?linkid=2251051
         
 
