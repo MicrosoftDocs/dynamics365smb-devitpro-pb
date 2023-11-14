@@ -70,12 +70,13 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
-### [Update 22.5](whatsnew/whatsnew-update-22-5.md)
-### [Update 22.4](whatsnew/whatsnew-update-22-4.md)
-### [Update 22.3](whatsnew/whatsnew-update-22-3.md)
-### [Update 22.2](whatsnew/whatsnew-update-22-2.md)
-### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
+### [Update 23.1](whatsnew/whatsnew-update-23-1.md)
 ### Updates for earlier major versions
+#### [Update 22.5](whatsnew/whatsnew-update-22-5.md)
+#### [Update 22.4](whatsnew/whatsnew-update-22-4.md)
+#### [Update 22.3](whatsnew/whatsnew-update-22-3.md)
+#### [Update 22.2](whatsnew/whatsnew-update-22-2.md)
+#### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
 #### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
 #### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
 #### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
@@ -227,6 +228,7 @@
 #### [App key vault secret telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Authorization telemetry](administration/telemetry-authorization-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
+#### [Changelog configuration telemetry](administration/telemetry-changelog-configuration-trace.md)
 #### [Client action telemetry](administration/telemetry-client-action-trace.md)
 #### [Cloud migration telemetry](administration/telemetry-cloud-migration-trace.md)
 #### [Company lifecycle telemetry](administration/telemetry-company-lifecycle-trace.md)
@@ -235,11 +237,13 @@
 #### [Database lock timeout telemetry](administration/telemetry-database-locks-trace.md)
 #### [Database wait statistics telemetry](administration/telemetry-database-wait-statistics-trace.md)
 #### [Email telemetry](administration/telemetry-email-trace.md)
-#### [Environment lifecycle telemetry](administration/telemetry-environment-lifecycle-trace.md)
+#### [Environment lifecycle telemetry](administration/telemetry-environment-lifecycle-trace.md) 
+#### [Environment validation telemetry](administration/telemetry-environment-validation-trace.md) 
 #### [Error message quality telemetry](administration/telemetry-error-message-voting-trace.md)
 #### [Error method telemetry](administration/telemetry-error-method-trace.md)
 #### [Extension lifecycle telemetry](administration/telemetry-extension-lifecycle-trace.md)
 #### [Extension update telemetry](administration/telemetry-extension-update-trace.md)
+#### [Extension upload Validation](administration/telemetry-pte-upload-validation-trace.md)
 #### [Feature management telemetry](administration/telemetry-feature-management-trace.md)
 #### [Feature telemetry](administration/telemetry-feature-telemetry.md)
 #### [Field monitoring telemetry](administration/telemetry-field-monitoring-trace.md)
@@ -364,6 +368,7 @@
 #### Prepare
 ##### [Upgrade to Business Central v14](upgrade/Upgrade-Considerations.md#online)
 ##### [Plan cloud migration](administration/cloud-migration-plan-prepare.md)
+##### [Estimate data size in online tenant](administration/cloud-migration-estimate-compressed-data-size.md)
 ##### [Prerequisites for cloud migration](administration/cloud-migration-prerequisites.md)
 ##### [Align SQL table definitions](administration/migration-align-table-definitions.md)
 ##### [Clean data for cloud migration](administration/migration-clean-data.md)
@@ -678,6 +683,7 @@
 ##### [Pages overview](developer/devenv-pages-overview.md)
 ##### [Page object](developer/devenv-page-object.md)
 ##### [Page extension object](developer/devenv-page-ext-object.md)
+##### [PromptDialog object](developer/devenv-page-type-promptdialog.md)
 ##### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
 ##### List pages
@@ -736,11 +742,12 @@
 ##### [Control add-in style guide](developer/devenv-control-addin-style.md)
 
 #### Developing for the Business Central mobile app
-##### [Introducing the Business Central mobile app](developer/devenv-introducing-business-central-mobile-app.md)
-##### [Deciding on your tablet and phone strategy](developer/devenv-deciding-on-tablet-and-phone-strategy.md)
-##### [Get started developing for the Business Central mobile app](developer/devenv-getting-started-developing-business-central-mobile-app.md)
-##### [Designing for different screen sizes on tablet and phone](developer/devenv-designing-different-screen-sizes-tablet-and-phone.md)
-##### [Differences and limitations when developing pages for the mobile app](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)
+##### [Introducing the Business Central mobile app](developer/devenv-introducing-business-central-mobile-app.md)  
+##### [Deciding on your tablet and phone strategy](developer/devenv-deciding-on-tablet-and-phone-strategy.md)  
+##### [Get started developing for the Business Central mobile app](developer/devenv-getting-started-developing-business-central-mobile-app.md)  
+##### [Designing for different screen sizes on tablet and phone](developer/devenv-designing-different-screen-sizes-tablet-and-phone.md)  
+##### [Differences and limitations when developing pages for the mobile app](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
+##### [Add barcode scanning to the mobile app](developer/devenv-mobile-app-barcode-scanning.md)
 ##### [Opening the Business Central tablet or phone client from a browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ##### [Example: Developing a sales rep role center for the tablet client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)
 
@@ -967,11 +974,11 @@
 #### [Extending security model](developer/devenv-permissionset-ext-object.md)
 #### [Extending tables](developer/devenv-table-ext-object.md)
 ### Extending the system application
-#### [System application reference](/dynamics365/business-central/application/system-application)
+#### [System application reference](/dynamics365/business-central/application)
 #### [Contributing to the Business Central open source system application](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md)
 #### [Get started creating or modifying modules](developer/devenv-getting-started.md)
 ### Extending the base application
-#### [Base application reference](/dynamics365/business-central/application/base-application)
+#### [Base application reference](/dynamics365/business-central/application)
 #### [The Microsoft_Application.app file](developer/devenv-application-app-file.md)
 #### [Publishing a code-customized base application](developer/devenv-publish-code-customization.md)
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
@@ -1303,28 +1310,37 @@
 ### [Service-to-Service authentication](administration/automation-apis-using-s2s-authentication.md)
 <!-- CDS -->
 ## Integrating with external systems
+### [Data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
 ### [Business events (preview)](developer/business-events-overview.md)
 ## Integrating with Microsoft Dataverse
-### [Custom integration with Dataverse](administration/administration-custom-cds-integration.md)
-### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
-### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
-### Dataverse API
+### Data synchronization
+#### [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)
+#### [Custom synchronization with Dataverse](administration/administration-custom-cds-integration.md)
+#### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
+#### [AL Proxy Table Generator for data sync](developer/devenv-al-table-proxy-generator.md)
+#### Dataverse API
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-#### [Business Central Dataverse API](api-dataverse/dynamics-dataverse-api.md)
-#### [Company](api-dataverse/resources/dynamics_company.md)
-##### [Get company](api-dataverse/api/dynamics_company_get.md)
-#### [Dataverse entity change](api-dataverse/resources/dynamics_dataverseentitychange.md)
-##### [Get dataverse entity change](api-dataverse/api/dynamics_dataverseentitychange_get.md)
-##### [Create dataverse entity change](api-dataverse/api/dynamics_dataverseentitychange_create.md)
-#### [Subscriptions](api-dataverse/resources/dynamics_subscriptions.md)
-##### [Get subscriptions](api-dataverse/api/dynamics_subscriptions_get.md)
-##### [Delete subscriptions](api-dataverse/api/dynamics_subscriptions_delete.md)
-##### [Create subscriptions](api-dataverse/api/dynamics_subscriptions_create.md)
-##### [Update subscriptions](api-dataverse/api/dynamics_subscriptions_update.md)
+##### [Business Central Dataverse API](api-dataverse/dynamics-dataverse-api.md)
+##### [Company](api-dataverse/resources/dynamics_company.md)
+###### [Get company](api-dataverse/api/dynamics_company_get.md)
+##### [Dataverse entity change](api-dataverse/resources/dynamics_dataverseentitychange.md)
+###### [Get dataverse entity change](api-dataverse/api/dynamics_dataverseentitychange_get.md)
+###### [Create dataverse entity change](api-dataverse/api/dynamics_dataverseentitychange_create.md)
+##### [Subscriptions](api-dataverse/resources/dynamics_subscriptions.md)
+###### [Get subscriptions](api-dataverse/api/dynamics_subscriptions_get.md)
+###### [Delete subscriptions](api-dataverse/api/dynamics_subscriptions_delete.md)
+###### [Create subscriptions](api-dataverse/api/dynamics_subscriptions_create.md)
+###### [Update subscriptions](api-dataverse/api/dynamics_subscriptions_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end CDS -->
 <!-- Microsoft Power Automate -->
+### Data virtualization
+#### [Integrate with Microsoft Dataverse via virtual tables](powerplatform/powerplat-overview.md)
+#### [Table modeling for virtual tables](powerplatform/powerplat-entity-modeling.md)
+#### [Application lifecycle management for solutions that use virtual tables](powerplatform/powerplat-app-lifecycle-management.md)
+#### [Business Central and Dataverse admin reference for virtual tables](powerplatform/powerplat-admin-reference.md)
+#### [FAQ for virtual tables](powerplatform/powerplat-faq.md)
 ## Integrating with Microsoft Power Apps
 ### [Overview](powerplatform/power-apps-overview.md)
 ### [Application lifecycle management](powerplatform/power-apps-alm.md)
@@ -1337,19 +1353,16 @@
 ### [Create instant flows](powerplatform/instant-flows.md)
 ### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
+<!--## Integrating with Microsoft Power Pages (preview) -->
 ## Integrating with Microsoft Power BI
 ### [Extract data from Business Central](developer/devenv-extract-data.md)
 ### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 ### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
-## Integrating with Microsoft Power Platform
-### [Microsoft Power Platform integration with Business Central](powerplatform/powerplat-overview.md)
-### [Table modeling](powerplatform/powerplat-entity-modeling.md)
-### [Application lifecycle management for solutions that use virtual tables](powerplatform/powerplat-app-lifecycle-management.md)
-### [Business Central and Microsoft Dataverse admin reference](powerplatform/powerplat-admin-reference.md)
-### [FAQ](powerplatform/powerplat-faq.md)
 <!-- end Microsoft Power Platform -->
+## Integrating with other Dynamics 365 applications
+### [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
 <!-- Microsoft Teams -->
 ## Integrating with Microsoft Teams
 ### [Overview](developer/devenv-develop-for-teams.md)
@@ -1432,9 +1445,9 @@
 #### [2023 release wave 2 on-premises updates](deployment/update-versions-23.md)
 #### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
-#### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
-#### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
 #### Versions no longer updated
+##### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
+##### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
 ##### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
 ##### [2021 release wave 1 on-premises updates](deployment/update-versions-18.md)
 ##### [2020 release wave 2 on-premises updates](deployment/update-versions-17.md)
