@@ -49,9 +49,13 @@ landingContent:
     - linkListType: reference
       links:
       - text: PromptDialog page object
-        url: devenv-page-type-promptdialog
+        url: devenv-page-type-promptdialog.md
+      - text: PromptMode property
+        url: /properties/devenv-promptmode-property.md
+      - text: IsPreview property
+        url: /properties/devenv-ispreview-property.md        
       - text: AI module (System.AI)
-        url: ai-build-capability-in-al.md
+        url: /dynamics365/business-central/application/system-application/module/system-application
 # Card
   - title: Demos and samples 
     linkLists:
