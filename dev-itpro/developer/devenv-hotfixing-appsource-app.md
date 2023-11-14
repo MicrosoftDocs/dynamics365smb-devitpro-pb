@@ -158,7 +158,10 @@ If you submit a new version 1.5.0.0 with the `application` property set to 21.0.
 
 Since the AppSourceCop will validate for breaking changes, you cannot add code that contains breaking changes with the previous and next version selected for validation. This includes, among others, removing non-obsolete objects, removing table fields, reducing the accessibility of an object. 
 
-As part of a hotfix, you also cannot add new AL objects (pages, reports, codeunits, etc.) or new elements (procedure, actions, fields, etc.) that contribute to your extension's public API unless they're also part of the next version selected for the validation, or they're obsolete pending (except for table and table fields).
+As part of a hotfix, you also cannot add new AL objects (pages, reports, codeunits, etc.) or new elements (procedure, actions, fields, etc.) that contribute to your extension's public API unless they're also part of the next version selected for the validation, or they're obsolete pending.
+
+> [!NOTE]  
+> Tables and table fields can be added as part of a hotfix only if they are also defined in the next version selected for the validation. If they are not defined in the next version, introducing them as obsolete pending or obsolete removed will also not work.
 
 ### Example 1 - How to add procedures in hotfixes
 
