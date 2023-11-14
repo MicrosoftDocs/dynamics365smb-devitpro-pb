@@ -48,6 +48,8 @@ landingContent:
         url: ai-build-experience.md
     - linkListType: reference
       links:
+      - text: PromptDialog page object
+        url: devenv-page-type-promptdialog
       - text: AI module (System.AI)
         url: ai-build-capability-in-al.md
 # Card
