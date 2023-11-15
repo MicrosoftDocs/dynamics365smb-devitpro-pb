@@ -48,10 +48,10 @@ The System.AI namespace provides a number of objects that you can use to build t
 |-------|-------------|---------|
 |Azure OpenAI |Codeunit| Provides functionality for using the Azure OpenAI API.|
 |AOAI Operation Response|Codeunit|Monitors the status and result of an operation.|
-|AOAI Chat Messages|Codeunit||
+|AOAI Chat Messages|Codeunit|Helper functions for the AOAI Chat Message table|
 |AOAI Model Type| Codeunit |The supported model types for Azure OpenAI|
-|AOAI Text Completion Params| Codeunit||
-|AOAI Chat Completion Params| Codeunit||
+|AOAI Text Completion Params| Codeunit|Represents the Completion parameters used by the API.|
+|AOAI Chat Completion Params| Codeunit|Represents the Chat Completion parameters used by the API.|
 |||
 |||
 
