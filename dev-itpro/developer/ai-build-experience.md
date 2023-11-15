@@ -15,9 +15,19 @@ ms.custom: bap-template #Required; don't change.
 <!--This template provides the basic structure of a concept article. See [Write a concept article](write-a-concept-article.md) in the contributor guide. To provide feedback on this template contact [bace feedback team](mailto:templateswg@microsoft.com).-->
 
 <!--H1 - Required. This should match the title you entered in the metadata. Set expectations for what the content covers, so customers know the content meets their needs. Should NOT begin with a verb.-->
-# Build a Copilot experience 
+# Build a Copilot experience using the PromptDialog
 
-In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is similar across Business Central. The fundamental component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md) type page. This page type is a multi-mode page type that creates a unified Copilot experience for users to enter data, generate AI-powered content, preview and revise, and finally save or discard results.
+In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is similar across Business Central. The fundamental component of Copilot, from the user-interface perspective, is the [PromptDialog](devenv-page-type-promptdialog.md) type page. 
+
+<!--
+The PromptDialog page type is a *multi-mode* page type that creates flow for user to enter data, generate AI-powered content, preview and revise, and finally save or discard results. The PromptDialog page type is built on the pillars of responsible AI principles, emphasizing human interaction and ethical AI usage. -->
+
+The PromptDialog page type is an innovative page type designed for creating copilot experiences that are intuitive and interactive, but also assists users in making informed decisions about the AI-generated output. Following the principles of responsible AI, promotes human interaction and ethical AI usage. Within the confines of a single page in the UI, the PromptDialog page type creates a comprehensive flow where users can provide input, view the subsequent output, and revise it as needed. The user can then choose to save their work or discard it. 
+
+
+[Watch the video](https://go.microsoft.com/fwlink/?linkid=2250609)
+
+<!-- The PromptDialog page type is a new feature in Business Central. It's designed to create Copilot experiences, offering an interactive and user-friendly interface. Following the principles of responsible AI, it emphasizes human interaction and ethical use of AI. The page type allows users to input data, review AI-generated output, and make necessary changes. All actions, including saving or discarding work, can be done within a single page object.-->
 
 ## Design overview and flow
 
@@ -25,7 +35,7 @@ The essential UI design and flow for a Copilot experience is follows:
 
 ||In UI|In AL code|Learn more|
 |-|-|-|-|
-|1|User starts the Copilot experience, for example, by selecting an action on a page.|An `action` control runs the Promptdialog type page. |[Launch experience](#launch-experience)|
+|1|User starts the Copilot experience, for example, by selecting an action on a page.|An `action` control on a page runs the Promptdialog type page. |[Launch experience](#launch-experience)|
 |2|A Promptdialog page opens |[Create PromptDialog type page](#create-promptdialog-type-page)|
 |3|The user enters information that Copilot uses to generate results. |The `prompt` area of the Promptdialog page defines what the user can input, which typically consists of one or more editable fields|[Create PromptDialog type page](#create-promptdialog-type-page)<br><br>[Add prompt area](#add-the-prompt-area)|
 |4|User selects a button to start generating content with Copilot|A system action `Generate` starts the AI generation process.|[Add the generate action](#add-a-system-action-to-start-ai-generation)|
