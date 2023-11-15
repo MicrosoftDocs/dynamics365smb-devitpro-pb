@@ -22,6 +22,8 @@ Typing the shortcut `tpage` and then choose the **Page of type Prompt Dialog**, 
 
 The `PromptDialog` page type has many specific properties that characterize the dialog. The `PageType` property must be set to `PromptDialog`. The `PromptMode` property value is by default `Prompt`, which is the starting prompt mode. The `PromptMode` property can be changed at runtime. The other options are `Generate`, which triggers generating the output of the copilot interaction, and `Content`, which shows the output of the copilot interaction. You can programmatically set this property by setting the variable `CurrPage.PromptMode` before the page is opened. 
 
+When designing a copilot experience, consistency in the UI is important. For the `PromptDialog` page type, the `Image` property should be set to `Image = Sparkle;`. If there are multiple copilot options to choose from in the UI, the `Image` property can be set to `Image = SparkleFilled;` to make a specific action more prominent.
+
 To find links to the properties related to the `PromptDialog` page type, see the [See also](devenv-page-type-promptdialog.md#see-also) section in this article.
 
 ## Areas of the PromptDialog page type
@@ -158,6 +160,8 @@ page 50100 MyCopilotPage
                     RunGeneration();
                 end;
             }
+
+        
         }
     }
 
