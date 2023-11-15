@@ -32,6 +32,9 @@ The following methods are available on the NumberSequence data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## See Also  
+[Using Number Sequences](../../devenv-number-sequences.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
