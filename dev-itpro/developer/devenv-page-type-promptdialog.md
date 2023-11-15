@@ -20,9 +20,14 @@ Typing the shortcut `tpage` and then choose the **Page of type Prompt Dialog**, 
 
 ## Properties of the PromptDialog page type
 
-The `PromptDialog` page type has many specific properties that characterize the dialog. The `PageType` property must be set to `PromptDialog`. The `PromptMode` property value is by default `Prompt`, which is the starting prompt mode. The `PromptMode` property can be changed at runtime. The other options are `Generate`, which triggers generating the output of the copilot interaction, and `Content`, which shows the output of the copilot interaction. You can programmatically set this property by setting the variable `CurrPage.PromptMode` before the page is opened. 
+The `PromptDialog` page type has some specific properties that characterize the dialog and must be set for this specific experience.
 
-When designing a copilot experience, consistency in the UI is important. For the `PromptDialog` page type, the `Image` property should be set to `Image = Sparkle;`. If there are multiple copilot options to choose from in the UI, the `Image` property can be set to `Image = SparkleFilled;` to make a specific action more prominent. To view a list of images, see [Available icons](https://aka.ms/bcicons).
+|Property|Description|
+|--------|-----------|
+|`PageType` | The `PageType` property must be set to `PromptDialog` for this specific page type.|
+|`PromptMode` |The `PromptMode` property value is by default `Prompt`, which is the starting prompt mode. The `PromptMode` property can be changed at runtime. The other options are; <br> - `Generate`, which triggers generating the output of the copilot interaction, and <br>- `Content`, which shows the output of the copilot interaction.<br> You can programmatically set this property by setting the variable `CurrPage.PromptMode` before the page is opened.|
+|`IsPreview` | The `IsPreview` property adds a specific note in the UI to indicate that the feature is in preview. It's by default set to `false`.|
+|`Image`| To identify and ensure consistency in the UI for a generative AI experience, the `Image` property for the action invoking it, should be set to `Sparkle`. If there are multiple copilot options to choose from in the UI, the `Image` property can be set to `Image = SparkleFilled;` to make a specific action more prominent. To view a list of images, see [Available icons](https://aka.ms/bcicons). |
 
 To find links to the properties related to the `PromptDialog` page type, see the [See also](devenv-page-type-promptdialog.md#see-also) section in this article.
 
