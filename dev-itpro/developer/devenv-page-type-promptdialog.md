@@ -141,6 +141,24 @@ page 50100 MyCopilotPage
                 end;
             }
 
+            // Adds an action to allow attaching a file, which is used as input for the copilot interaction.
+
+            systemaction(Attach)
+            {
+                Caption = 'Attach a file';
+                ToolTip = 'Attach a file describing the job.';
+                
+                trigger OnAction()
+                var
+                    InStr: InStream;
+                    Filename: Text;
+                begin
+                    UploadIntoStream(‘Select a file...', '', ‘All files (*.*)|*.*', Filename, InStr);
+                    if not (Filename = '') then begin
+                    ...
+                end;
+            }
+
             systemaction(Ok)
             {   
                 // The Caption and Tooltip of system actions can be modified.
@@ -193,6 +211,7 @@ page 50100 MyCopilotPage
 [Page object](devenv-page-object.md)  
 [PageType property](properties/devenv-pagetype-property.md)  
 [PromptMode property](properties/devenv-promptmode-property.md)  
+[Image property](properties/devenv-image-property.md)  
 [IsPreview property](properties/devenv-ispreview-property.md)  
 [SourceTable property](properties/devenv-sourcetable-property.md)  
 [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md)  
