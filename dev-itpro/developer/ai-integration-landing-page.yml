@@ -49,16 +49,23 @@ landingContent:
     - linkListType: reference
       links:
       - text: PromptDialog page object
-        url: devenv-page-type-promptdialog
+        url: devenv-page-type-promptdialog.md
+      - text: PromptMode property
+        url: /properties/devenv-promptmode-property.md
+      - text: IsPreview property
+        url: /properties/devenv-ispreview-property.md        
       - text: AI module (System.AI)
-        url: ai-build-capability-in-al.md
+        url: /dynamics365/business-central/application/system-application/module/system-application
 # Card
-  - title: Videos
+  - title: Demos and samples 
     linkLists:
     - linkListType: video
       links:
       - text: Designing and developing generative AI experiences
         url: https://go.microsoft.com/fwlink/?linkid=2251051
-        
+    - linkListType: sample
+      links:
+      - text: BCTech 
+        url: https://github.com/microsoft/BCTech/tree/master/samples/AzureOpenAI    
 
 # Remove all comments in this template before you sign off or merge to the main branch
