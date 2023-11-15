@@ -25,25 +25,35 @@ The AI module is available in the System Application, in the System.AI namespace
 
 The AI module can be used in any AL extension and provides the following capabilities:
 
+- Support for text generation like GPT-3, chatbots, and embeddings
 - Ease of control and viewing the copilot capabilities in the environment
-- Telemetry
-- Tracking a capability’s registration/usages/errors and more
+- Telemetry on a capability’s registration/usages/errors and more
 
 ## Prerequisites
 
 To build an AI capability in AL, you need the following:
 
-- An Azure OpenAI Resource URL, such as `https://[resourcename].openai.azure.com/`
-- The Azure Deployment Name
-- 
-MyGPT3.5
-Azure OpenAI API key
+- An Azure OpenAI Resource URL, such as: `https://[resourcename].openai.azure.com/`
+- The Azure Deployment Name 
+    - MyGPT3.5
+- An Azure OpenAI API key
 
-- 
+For more information, see [Get started with Azure OpenAI Service](ai-dev-tools-get-started.md).
 
 ## Building an AI capability
 
+The System.AI namespace provides a number of objects that you can use to build the AI capability. The following table lists some of these objects and their purpose. For more information, see [System reference](/dynamics365/business-central/application/system/module/system).
 
+|Object | Object type | Purpose |
+|-------|-------------|---------|
+|Azure OpenAI |Codeunit| Provides functionality for using the Azure OpenAI API.|
+|AOAI Operation Response|Codeunit|Monitors the status and result of an operation.|
+|AOAI Chat Messages|Codeunit||
+|AOAI Model Type| Codeunit |The supported model types for Azure OpenAI|
+|AOAI Text Completion Params| Codeunit||
+|AOAI Chat Completion Params| Codeunit||
+|||
+|||
 
 <!--add your content here-->
 
