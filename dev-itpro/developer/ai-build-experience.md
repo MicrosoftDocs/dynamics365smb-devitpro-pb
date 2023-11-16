@@ -33,6 +33,8 @@ The PromptDialog page type is an innovative page type designed for creating copi
 
 The essential UI design and flow for a Copilot experience is follows:
 
+[![Upgrade path on Business Central application.](media/prompt-dialog-flow-v2.svg)](media/prompt-dialog-flow-v2.svg#lightbox)
+
 ||In UI|In AL code|Learn more|
 |-|-|-|-|
 |1|User starts the Copilot experience, for example, by selecting an action on a page.|An `action` control on a page runs the Promptdialog type page. |[Launch experience](#launch-experience)|
