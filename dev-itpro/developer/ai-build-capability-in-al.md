@@ -96,6 +96,28 @@ codeunit 54310 "Secrets And Capabilities Setup"
 }
 ```
 
+### Saving the authorization
+
+When the prerequisites are met, and you have retrieved an endpoint URL, an Azure OpenAI deployment, and an Azure OpenAI API key, you must save the authorization information. The following example shows how to save the authorization information by calling the the `Azure OpenAI` codeunit. The `SetAuthorization` procedure saves the authorization information in the `IsolatedStorage` object. An alternative to the `IsolatedStorage` object is to use the AppSource Key Vault. For more information, see []().
+
+```al
+local procedure SetAuthorization(var AzureOpenAI: Codeunit "Azure OpenAI")
+var
+    Endpoint: Text;
+    Deployment: Text;
+    [NonDebuggable]
+    Apikey: Text;
+begin
+    IsolatedStorage.Get('Endpoint', Endpoint);
+    IsolatedStorage.Get('Deployment', Deployment);
+    IsolatedStorage.Get('Apikey', Apikey);
+
+    AzureOpenAI.SetAuthorization(Enum::"AOAI Model Type"::"Chat Completions", Endpoint, Deployment, Apikey);
+end;
+
+
+```
+
 
 <!--add your content here-->
 
