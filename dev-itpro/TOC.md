@@ -7,7 +7,7 @@
 ### [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Scenarios for Contoso Coffeee demo data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Scenarios for Contoso Coffee demo data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Develop
 ### [The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)
