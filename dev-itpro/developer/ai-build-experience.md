@@ -1,21 +1,16 @@
 ---
-title: Concept article template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: Concept description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: conceptual #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+title: Build a Copilot user experience with the PromptDialog page
+description: Learn how to use the PromptDialog page type ti create a copilot experience in the client.
+author: jswymer 
+ms.author: jswymer 
+ms.reviewer: jswymer 
+ms.topic: conceptual
+ms.collection: 
 ms.date: 11/04/2023
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
-
-<!--This template provides the basic structure of a concept article. See [Write a concept article](write-a-concept-article.md) in the contributor guide. To provide feedback on this template contact [bace feedback team](mailto:templateswg@microsoft.com).-->
-
-<!--H1 - Required. This should match the title you entered in the metadata. Set expectations for what the content covers, so customers know the content meets their needs. Should NOT begin with a verb.-->
-# Build a Copilot experience using the PromptDialog
+# Build a Copilot user experience with the PromptDialog page
 
 In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is similar across Business Central. The fundamental component of Copilot, from the user-interface perspective, is the [PromptDialog](devenv-page-type-promptdialog.md) type page. 
 
@@ -235,7 +230,6 @@ action(GenerateCopilot)
 ```
 
 Set the [Image property](properties/devenv-image-property.md) to `Sparkle`, which is the recognized image across Microsoft products used to indicate that the action is associated with Copilot. 
-
 
 
 ## Next steps
