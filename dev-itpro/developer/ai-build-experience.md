@@ -33,7 +33,7 @@ The PromptDialog page type is an innovative page type designed for creating copi
 
 The essential UI design and flow for a Copilot experience is follows:
 
-[![Upgrade path on Business Central application.](media/prompt-dialog-flow-v2.svg)](media/prompt-dialog-flow-v2.svg#lightbox)
+[![Shows a flow of a copilot with the prompt dialog page type](media/prompt-dialog-flow-v2.svg)](media/prompt-dialog-flow-v2.svg#lightbox)
 
 ||In UI|In AL code|Learn more|
 |-|-|-|-|
