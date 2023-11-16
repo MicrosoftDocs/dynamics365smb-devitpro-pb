@@ -56,6 +56,45 @@ The System.AI namespace provides a number of objects that you can use to build t
 |||
 
 
+### Registering an AI capability
+
+A new AI capability must be registered with the AI module. You begin by adding an enumextension of the **Copilot Capability** enum. The following example shows how to register a new capability for drafting a job.
+
+```al
+enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
+{
+    value(54300; “Draft a job")
+    {
+        Caption = ‘Draft a Job';
+    }
+}
+```
+
+Next, you add a codeunit that registers the capability. The following example shows how to register the capability for drafting a job in a codeunit of the type `install`, which ensures that the capability is registered already at the time of installation, so that it is discoverable and ready to use.
+
+```al
+codeunit 54310 "Secrets And Capabilities Setup"
+{
+    Subtype = Install;
+    InherentEntitlements = X;
+    InherentPermissions = X;
+    Access = Internal;
+ 
+    trigger OnInstallAppPerDatabase()
+    begin
+        RegisterCapability();
+    end;
+
+    local procedure RegisterCapability()
+    var
+        CopilotCapability: Codeunit "Copilot Capability";
+        LearnMoreUrlTxt: Label 'https://example.com/DraftaJob', Locked = true;
+    begin
+        if not CopilotCapability.IsCapabilityRegistered(Enum::"Copilot Capability"::“Draft a Job") then
+            CopilotCapability.RegisterCapability(Enum::"Copilot Capability"::“Draft a Job",   Enum::"Copilot Availability"::"Generally Available", LearnMoreUrlTxt);
+    end;
+}
+```
 
 <!--add your content here-->
 
