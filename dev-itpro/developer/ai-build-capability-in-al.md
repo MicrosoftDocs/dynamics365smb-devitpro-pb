@@ -44,7 +44,7 @@ For more information, see [Get started with Azure OpenAI Service](ai-dev-tools-g
 
 The System.AI namespace provides a number of objects that you can use to build the AI capability. The following table lists some of these objects and their purpose. For more information, see [System reference](/dynamics365/business-central/application/system/module/system).
 
-|Object | Object type | Purpose |
+|Object | Object type | Purpose | 
 |-------|-------------|---------|
 |Azure OpenAI |Codeunit| Provides functionality for using the Azure OpenAI API.|
 |AOAI Operation Response|Codeunit|Monitors the status and result of an operation.|
@@ -54,6 +54,8 @@ The System.AI namespace provides a number of objects that you can use to build t
 |AOAI Chat Completion Params| Codeunit|Represents the Chat Completion parameters used by the API.|
 |||
 |||
+
+
 
 <!--add your content here-->
 
