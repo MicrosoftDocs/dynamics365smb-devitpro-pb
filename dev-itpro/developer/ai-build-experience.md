@@ -75,9 +75,13 @@ page 54320 "Copilot Job Proposal"
 |[Extensible](properties/devenv-extensible-property.md)|Set to `false` to ensure that extensions for other providers don't interfere with the experience you're providing customers|
 |IsPreview|This property is used to specify whether your feature is in preview or generally available. Setting this property to `true` communicates to users that the feature is in preview, which means that it's available to try out and provide feedback, but the functionality is subject to change. When you feel the feature is ready, you can change this value to `false` to communicate that the feature is generally available. We recommend that most new Copilot experiences start in preview. |
 
-### Add the prompt area
+### Create the prompt mode 
 
-In this task, you define a prompt area on PromptDialog page where users can add input that will used by AI to generate results. Adding the prompt area is similar to the way you add content areas on other page types. Except, you add the prompt area by using an `area(Prompt)` control in the `layout` control of the page:
+In this task, you define the screen of the PromptDialog page where users can add input that used by AI generation logic for producing results. The prompt mode supports natural language input, like free text fields, and structured input, like field groups and parts. The example uses a single field that allows the user to type natural language text in an unstructured format
+
+![Shows the prompt mode of the PromptFialog type page](media/promptdialog-prompt-mode-example.svg)
+
+The prompt mode is defined by adding an area to the page, similar to way you'd add content areas on other page types. Except, you add an `area(Prompt)` control within `layout` of the page:
 
 ```al
 layout
@@ -92,7 +96,6 @@ layout
     }
 ```
 
-The example uses a single field that allows the user to type natural language text in an unstructured format. But you can also include more fields, groups, and parts for a more structured input.
 
 ## Add a system action to start AI generation
 
