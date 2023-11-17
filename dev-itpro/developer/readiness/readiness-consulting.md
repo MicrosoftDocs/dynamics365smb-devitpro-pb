@@ -47,4 +47,4 @@ To learn more about Microsoft AppSource consulting services offerings select the
 - [AppSource Consulting Offerings](https://appsource.microsoft.com/marketplace/consulting-services?country=US&page=1)  
 - [Partner Eligibility](https://smp-cdn-prod.azureedge.net/documents/Microsoft%20AppSource%20Partner%20Listing%20Guidelines.pdf)  
 - [Partner Nomination Form](https://appsource.microsoft.com/partners/list-consulting-service)  
-- [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog)
+- [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
