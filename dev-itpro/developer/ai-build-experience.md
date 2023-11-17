@@ -79,7 +79,7 @@ page 54320 "Copilot Job Proposal"
 
 In this task, you define the screen of the PromptDialog page where users can add input that used by AI generation logic for producing results. The prompt mode supports natural language input, like free text fields, and structured input, like field groups and parts. The example uses a single field that allows the user to type natural language text in an unstructured format.
 
-![Shows the prompt mode of the PromptFialog type page](media/promptdialog-prompt-mode-example.svg)
+![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-example.svg)
 
 The prompt mode is defined by adding an area to the page, similar to way you'd add content areas on other page types. Except, you add an `area(Prompt)` control within `layout` of the page:
 
@@ -100,7 +100,12 @@ You're AI logic might not require a prompt mode, so this area is optional.
 
 ## Add a system action to start AI generation
 
-In this task, you add action to the PromptDialog page that users select to start generating output with Copilot. The button appears on when the prompt area is  the. The platform includes a system action called Add a system action to generate results with Copilot.
+In this task, you add action to the PromptDialog page that users select to start generating output with Copilot. The button appears on when the prompt area is  the. 
+
+![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-generate.svg)
+
+
+The platform includes a system action called Add a system action to generate results with Copilot.
 
 ```al
 actions
