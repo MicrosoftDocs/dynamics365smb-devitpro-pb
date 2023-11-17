@@ -1,8 +1,8 @@
 ---
 title: Build an AI capability in AL
-description: Concept description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
+description: Integrate with Azure OpenAI Service through the AI module of Business Central.
+author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.reviewer: 
 ms.topic: conceptual
 ms.collection: get-started
@@ -12,10 +12,7 @@ ms.custom: bap-template
 
 # Build an AI capability in AL
 
-This article explains how to integrate with Azure OpenAI Service through the AI module of [!INCLUDE [prod_short](includes/prod_short.md)]. It covers how to register the capability and how to use the AI module to call the Azure OpenAI Service.
-
-<!-- Covers our System app module for AI including which models, how to get set up with AOAI key/endpoints, prompting, registering capabilities, simple sample code, link out to bigger example extension. Basically Darricks’ BCLE content.-->
-
+This article explains how to integrate with Azure OpenAI Service through the AI module of [!INCLUDE [prod_short](includes/prod_short.md)]. It covers how to register the capability and how to use the AI module to call the Azure OpenAI Service API and generate text.
 
 ## Overview of the AI module
 
