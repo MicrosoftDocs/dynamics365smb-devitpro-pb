@@ -68,4 +68,17 @@ landingContent:
       - text: BCTech 
         url: https://github.com/microsoft/BCTech/tree/master/samples/AzureOpenAI    
 
+# Card
+  - title: Resources 
+    linkLists:
+    - linkListType: overview
+      links:
+      - text: Copilot & AI capabilities in Business Central
+        url: https://aka.ms/bcAI
+      - text: Microsoft Responsible AI 
+        url: https://aka.ms/RAI
+      - text: Azure AI Studio for quick experimentation 
+        url: https://aka.ms/OAIstudio
+
+
 # Remove all comments in this template before you sign off or merge to the main branch
