@@ -80,11 +80,11 @@ Let's consider that you have the following versions of your app publicly availab
 
 You're now submitting a new version 1.5.0.0 with the `application` property set to 22.0.0.0.
 
-The technical validation fails with an error message similar to `The submission must target at least one existing release of Business Central.`, because it would validate version 1.5.0.0 for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 22.0 (included) to 22.0 (excluded). 
+The technical validation should then validate version 1.5.0.0 for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 22.0 (included) to 22.0 (excluded) which is not possible. In this case, the technical validation ignores the upper limit and validates the submission for all releases of [!INCLUDE [prod_short](includes/prod_short.md)].
 
-Instead, you should submit a new latest version 2.1.0.0 or 3.0.0.0.
+Submitting a version which is not the latest for the targeted [!INCLUDE [prod_short](includes/prod_short.md)] is not recommended. Instead, you should submit a new latest version 2.1.0.0 or 3.0.0.0.
 
-Note that, if it passed validation, version 1.5.0.0 wouldn't be available to any customers anyway, because:
+Note that version 1.5.0.0 wouldn't be available to any customers, except when using Admin APIs, because:
 - customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 21.0 aren't able to upgrade to this version because of the target [!INCLUDE [prod_short](includes/prod_short.md)] version,
 - customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 22.0 get version 2.0.0.0, which is higher.
 
@@ -100,11 +100,11 @@ Let's consider that you have the following versions of your app publicly availab
 
 You're now submitting a new version 1.5.0.0 with the `application` property set to 23.0.0.0.
 
-The technical validation fails with an error message similar to `The submission must target at least one existing release of Business Central.`, because it would validate version 1.5.0.0 for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 23.0 (included) to 22.0 (excluded). 
+The technical validation should then validate version 1.5.0.0 for all [!INCLUDE [prod_short](includes/prod_short.md)] releases from 23.0 (included) to 22.0 (excluded) which is not possible. In this case, the technical validation ignores the upper limit and validates the submission for all releases of [!INCLUDE [prod_short](includes/prod_short.md)].
 
-Instead, you should submit a new latest version 3.1.0.0 or 4.0.0.0.
+Submitting a version which is not the latest for the targeted [!INCLUDE [prod_short](includes/prod_short.md)] is not recommended. Instead, you should submit a new latest version 3.1.0.0 or 4.0.0.0.
 
-Note that, if it passed validation, version 1.5.0.0 wouldn't be available to any customers anyway, because:
+Note that version 1.5.0.0 wouldn't be available to any customers, except when using Admin APIs, because:
 - customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 21.0 and 22.0 aren't able to upgrade to this version because of the target [!INCLUDE [prod_short](includes/prod_short.md)] version,
 - customers running on [!INCLUDE [prod_short](includes/prod_short.md)] version 23.0 get version 3.0.0.0, which is higher.
 
