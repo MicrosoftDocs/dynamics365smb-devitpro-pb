@@ -52,13 +52,10 @@ The System.AI namespace provides a number of objects that you can use to build t
 |AOAI Model Type| Codeunit |The supported model types for Azure OpenAI|
 |AOAI Text Completion Params| Codeunit|Represents the Completion parameters used by the API.|
 |AOAI Chat Completion Params| Codeunit|Represents the Chat Completion parameters used by the API.|
-|||
-|||
-
 
 ### Registering an AI capability
 
-A new AI capability must be registered with the AI module. You begin by adding an enumextension of the **Copilot Capability** enum. The following example shows how to register a new capability for drafting a job.
+A new AI capability must be registered with the AI module. Every extension must register with the Copilot Capability codeunit, and if the capability isn't registered with the extension, which is using it, an error will be thrown. You begin by adding an enumextension of the **Copilot Capability** enum. The following example shows how to register a new capability for drafting a job.
 
 ```al
 enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
@@ -114,8 +111,52 @@ begin
 
     AzureOpenAI.SetAuthorization(Enum::"AOAI Model Type"::"Chat Completions", Endpoint, Deployment, Apikey);
 end;
+```
 
+### Generation
 
+Next, you can use the `Azure OpenAI` codeunit to generate text. The following `CopilotJob` codeunit shows how to generate text. 
+
+The `Generate` procedure takes a prompt as a parameter and returns the generated text. 
+The `SetAuthorization` procedure sets the authorization information as described in the previous section.
+The `SetParameters` procedure sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature...
+The `SetCopilotCapability` procedure sets the capability for the generation. 
+The `IsolatedStorage.Get` procedure gets the metaprompt from the `IsolatedStorage` object.
+The `SetPrimarySystemMessage` procedure then sets the primary system message. 
+The `AddUserMessage` procedure adds a user message. 
+The `GenerateChatCompletion` procedure generates the chat completion based on the user message and input parameters. 
+The `IsSuccess` procedure checks if the operation was successful. 
+The `GetLastMessage` procedure returns the last message.
+
+```al
+codeunit 54334 "CopilotJob"
+{
+    procedure Generate(Prompt: Text): Text
+    var
+        AzureOpenAI: Codeunit "Azure OpenAI";
+        AOAIOperationResponse: Codeunit "AOAI Operation Response";
+        AOAIChatCompletionParams: Codeunit "AOAI Chat Completion Params";
+        AOAIChatMessages: Codeunit "AOAI Chat Messages";
+        Metaprompt: Text;
+        Result: Text;
+    begin
+        SetAuthorization(AzureOpenAI);
+        SetParameters(AOAIChatCompletionParams);
+        AzureOpenAI.SetCopilotCapability(Enum::"Copilot Capability"::“Draft a Job");
+        IsolatedStorage.Get('DescribeJobMetaprompt', Metaprompt);
+        AOAIChatMessages.SetPrimarySystemMessage(Metaprompt);
+        AOAIChatMessages.AddUserMessage(Prompt);
+        AzureOpenAI.GenerateChatCompletion(AOAIChatMessages, AOAIChatCompletionParams, AOAIOperationResponse);
+        if AOAIOperationResponse.IsSuccess() then
+            Result := AOAIChatMessages.GetLastMessage();
+        exit(Result);
+    end;
+    local procedure SetParameters(var AOAIChatCompletionParams: Codeunit "AOAI Chat Completion Params")
+    begin
+        AOAIChatCompletionParams.SetMaxTokens(2500);
+        AOAIChatCompletionParams.SetTemperature(0);
+    end;
+}
 ```
 
 
