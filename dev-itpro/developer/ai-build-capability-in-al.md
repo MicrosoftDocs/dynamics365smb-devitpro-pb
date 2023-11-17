@@ -35,11 +35,20 @@ To build an AI capability in AL, you need the following:
     - MyGPT3.5
 - An Azure OpenAI API key
 
-For more information, see [Get started with Azure OpenAI Service](ai-dev-tools-get-started.md).
+For more information, see [Get started with Azure OpenAI Service](ai-dev-tools-get-started.md). For more information about registering for Azure OpenAI Service, see [Azure OpenAI Service](/azure/ai-services/openai/).
 
 ## Building an AI capability
 
 The System.AI namespace provides a number of objects that you can use to build the AI capability. The following table lists some of these objects and their purpose. For more information, see [System reference](/dynamics365/business-central/application/system/module/system).
+
+In the Copilot namespace, you'll find the following objects:
+
+|Object | Object type | Purpose |
+|-------|-------------|---------|
+|Copilot Capability|Codeunit|Used to register, modify, and delete Copilot capabilities|
+|Copilot Capability|Enum|Defines the capabilities that can be registered.|
+
+In the Azure OpenAI namespace, you'll find the following objects:
 
 |Object | Object type | Purpose | 
 |-------|-------------|---------|
@@ -52,9 +61,9 @@ The System.AI namespace provides a number of objects that you can use to build t
 
 ### Registering an AI capability
 
-A new AI capability must be registered with the AI module. Every extension must register with the `Copilot Capability` codeunit, and if the capability isn't registered with the extension, which is using it, an error will be thrown. The registered capability will show up in the **Copilot and AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)]. The capability can also be deactivated from this page. 
+A new AI capability must be registered with the AI module. Every extension must register with the `Copilot Capability` codeunit, and if the capability isn't registered with the extension, which is using it, an error will be thrown. The registered capability will show up in the **Copilot and AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)]. The capability can be deactivated from this page, but doesn't change the registration of the capability.
 
-To register the capability, you add an enumextension of the **Copilot Capability** enum. The following example shows how to register a new capability for drafting a job.
+To register the capability, you add an `enumextension` of the **Copilot Capability** enum. The following example shows how to register a new capability for drafting a job.
 
 ```al
 enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
