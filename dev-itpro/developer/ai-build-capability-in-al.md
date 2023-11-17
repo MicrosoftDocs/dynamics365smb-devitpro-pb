@@ -79,7 +79,7 @@ enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
 }
 ```
 
-Next, you add a codeunit that registers the capability. The codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The following example shows how to register the capability for drafting a job in a codeunit of the type `install`. The `RegisterCapability` procedure registers the capability if it isn't already registered.
+Next, you add a codeunit that registers the capability. The codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The following example shows how to register the capability for drafting a job. The `RegisterCapability` procedure registers the capability if it isn't already registered and registers it as generally available. The `LearnMoreUrlTxt` parameter is optional and can be used to provide a link in the **Copilot and AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)] to provide more information about the capability.
 
 ```al
 codeunit 54310 "Secrets And Capabilities Setup"
@@ -100,7 +100,9 @@ codeunit 54310 "Secrets And Capabilities Setup"
         LearnMoreUrlTxt: Label 'https://example.com/DraftaJob', Locked = true;
     begin
         if not CopilotCapability.IsCapabilityRegistered(Enum::"Copilot Capability"::“Draft a Job") then
-            CopilotCapability.RegisterCapability(Enum::"Copilot Capability"::“Draft a Job", Enum::"Copilot Availability"::"Generally Available", LearnMoreUrlTxt);
+            CopilotCapability.RegisterCapability(
+            Enum::"Copilot Capability"::“Draft a Job", 
+            Enum::"Copilot Availability"::"Generally Available", LearnMoreUrlTxt);
     end;
 }
 ```
