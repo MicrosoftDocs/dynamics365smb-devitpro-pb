@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Build an AI capability in AL
 
-This article explains how to integrate with Azure OpenAI Service through the AI module of [!INCLUDE [prod_short](includes/prod_short.md)]. It covers how to register the capability and how to use the AI module to call the Azure OpenAI Service API and generate text.
+This article explains how to integrate with Azure OpenAI Service through the AI module of [!INCLUDE [prod_short](includes/prod_short.md)]. It covers how to register the capability and how to use the AI module to call the Azure OpenAI Service API and generate text. 
 
 ## Overview of the AI module
 
@@ -35,7 +35,7 @@ To build an AI capability in AL, you need the following:
     - MyGPT3.5
 - An Azure OpenAI API key
 
-For more information, see [Get started with Azure OpenAI Service](ai-dev-tools-get-started.md). For more information about registering for Azure OpenAI Service, see [Azure OpenAI Service](/azure/ai-services/openai/).
+For more information, see [Get started with Azure OpenAI Service](ai-dev-tools-get-started.md).
 
 ## Building an AI capability
 
@@ -55,8 +55,8 @@ In the Azure OpenAI namespace, you'll find the following objects:
 |-------|-------------|---------|
 |Azure OpenAI |Codeunit| Provides functionality for using the Azure OpenAI API.|
 |AOAI Operation Response|Codeunit|Monitors the status and result of an operation.|
-|AOAI Model Type| Enum |The supported model types for Azure OpenAI|
-|AOAI Chat Messages|Codeunit|Helper functions for the AOAI Chat Message table|
+|AOAI Model Type| Enum |The supported model types for Azure OpenAI; `Embeddings`, `Text Completions`, and `Chat Completions`.|
+|AOAI Chat Messages|Codeunit|Helper functions for the AOAI Chat Message table. This is where you set your own metaprompt. For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt).|
 |AOAI Text Completion Params| Codeunit|Optional parameters that can be modified for text generation.|
 |AOAI Chat Completion Params| Codeunit|Optional parameters that can be modified for chat generation.|
 |AOAI Chat Roles|Enum|The chat roles available for chat generation; `User`, `System`, and `Assistant`.|
@@ -136,7 +136,8 @@ The `SetParameters` procedure sets the parameters that define the max number of 
 
 The `SetCopilotCapability` procedure sets the capability for the generation. 
 The `IsolatedStorage.Get` procedure gets the metaprompt from the `IsolatedStorage` object.
-The `SetPrimarySystemMessage` procedure then sets the primary system message. 
+The `SetPrimarySystemMessage` procedure then sets metaprompt as the primary system message. For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt).
+
 The `AddUserMessage` procedure adds a user message. 
 The `GenerateChatCompletion` procedure generates the chat completion based on the user message and input parameters. 
 The `IsSuccess` procedure checks if the operation was successful. 
