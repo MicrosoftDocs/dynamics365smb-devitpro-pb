@@ -55,7 +55,9 @@ The System.AI namespace provides a number of objects that you can use to build t
 
 ### Registering an AI capability
 
-A new AI capability must be registered with the AI module. Every extension must register with the Copilot Capability codeunit, and if the capability isn't registered with the extension, which is using it, an error will be thrown. You begin by adding an enumextension of the **Copilot Capability** enum. The following example shows how to register a new capability for drafting a job.
+A new AI capability must be registered with the AI module. Every extension must register with the `Copilot Capability` codeunit, and if the capability isn't registered with the extension, which is using it, an error will be thrown. The registered capability will show up in the **Copilot and AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)]. The capability can also be deactivated from this page. 
+
+To register the capability, you add an enumextension of the **Copilot Capability** enum. The following example shows how to register a new capability for drafting a job.
 
 ```al
 enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
@@ -119,7 +121,9 @@ Next, you can use the `Azure OpenAI` codeunit to generate text. The following `C
 
 The `Generate` procedure takes a prompt as a parameter and returns the generated text. 
 The `SetAuthorization` procedure sets the authorization information as described in the previous section.
+
 The `SetParameters` procedure sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is defined as what sampling temperature to use, and can be set to a number between 0 and 2. Higher values means that the model will take more risks. 0 (argmax sampling) can be set for generation with a well-defined answer, whereas 0.9 will allow for more creative applications. For more information, see [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
+
 The `SetCopilotCapability` procedure sets the capability for the generation. 
 The `IsolatedStorage.Get` procedure gets the metaprompt from the `IsolatedStorage` object.
 The `SetPrimarySystemMessage` procedure then sets the primary system message. 
