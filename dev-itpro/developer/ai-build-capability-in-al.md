@@ -119,7 +119,7 @@ Next, you can use the `Azure OpenAI` codeunit to generate text. The following `C
 
 The `Generate` procedure takes a prompt as a parameter and returns the generated text. 
 The `SetAuthorization` procedure sets the authorization information as described in the previous section.
-The `SetParameters` procedure sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature...
+The `SetParameters` procedure sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is defined as what sampling temperature to use, and can be set to a number between 0 and 2. Higher values means that the model will take more risks. 0 (argmax sampling) can be set for generation with a well-defined answer, whereas 0.9 will allow for more creative applications. For more information, see [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
 The `SetCopilotCapability` procedure sets the capability for the generation. 
 The `IsolatedStorage.Get` procedure gets the metaprompt from the `IsolatedStorage` object.
 The `SetPrimarySystemMessage` procedure then sets the primary system message. 
@@ -161,7 +161,7 @@ codeunit 54334 "CopilotJob"
 
 ### Metaprompt
 
-The metaprompt is a prompt that is used to define the model’s profile, capabilities, and limitations for the implementation of your scenario. It's used to improve the performance of language models and to provide a better user experience. The metaprompt defines the output format of the model and provides examples to demonstrate the intended behavior of the model. The metaprompt also provides additional behavioral guardrails to ensure that the model doesn't generate undesirable content.
+The metaprompt is a prompt that is used to define the model’s profile, capabilities, and limitations for the implementation of your scenario. It's used to improve the performance of language models and to provide a better user experience. The metaprompt defines the output format of the model and provides examples to demonstrate the intended behavior of the model. The metaprompt also provides additional behavioral guardrails to ensure that the model doesn't generate undesirable content. For more information, see [System message framework and template recommendations for Large Language Models (LLMs)](/azure/ai-services/openai/concepts/system-message).
 
 
 
