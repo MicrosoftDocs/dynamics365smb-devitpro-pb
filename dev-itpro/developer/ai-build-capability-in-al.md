@@ -59,7 +59,7 @@ In the Azure OpenAI namespace, you'll find the following objects:
 |AOAI Chat Messages|Codeunit|Helper functions for the AOAI Chat Message table. This is where you set your own metaprompt. For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt).|
 |AOAI Text Completion Params| Codeunit|Optional parameters that can be modified for text generation.|
 |AOAI Chat Completion Params| Codeunit|Optional parameters that can be modified for chat generation.|
-|AOAI Chat Roles|Enum|The chat roles available for chat generation; `User`, `System`, and `Assistant`.|
+|AOAI Chat Roles|Enum|The chat roles available for chat generation; `User`, `System`, and `Assistant`. `User` defines when the enduser inputs text to the chat, `System` defines guiding the system, for example, by giving a metaprompt, and `Assistant` defines when the model returns output.|
 
 For more information, see [System reference](/dynamics365/business-central/application/system/module/system).
 
@@ -79,7 +79,7 @@ enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
 }
 ```
 
-Next, you add a codeunit that registers the capability. The following example shows how to register the capability for drafting a job in a codeunit of the type `install`. Registering at installation time, ensures that the capability is discoverable and ready to use. The `RegisterCapability` procedure registers the capability if it isn't already registered.
+Next, you add a codeunit that registers the capability. The codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The following example shows how to register the capability for drafting a job in a codeunit of the type `install`. The `RegisterCapability` procedure registers the capability if it isn't already registered.
 
 ```al
 codeunit 54310 "Secrets And Capabilities Setup"
