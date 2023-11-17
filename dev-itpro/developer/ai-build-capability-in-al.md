@@ -39,13 +39,14 @@ For more information, see [Get started with Azure OpenAI Service](ai-dev-tools-g
 
 ## Building an AI capability
 
-The System.AI namespace provides a number of objects that you can use to build the AI capability. The following table lists some of these objects and their purpose. For more information, see [System reference](/dynamics365/business-central/application/system/module/system).
+The System.AI namespace provides a number of objects that you can use to build the AI capability. The following tables lists some of these objects and their purpose. 
 
 In the Copilot namespace, you'll find the following objects:
 
 |Object | Object type | Purpose |
 |-------|-------------|---------|
-|Copilot Capability|Codeunit|Used to register, modify, and delete Copilot capabilities|
+|Copilot Capability|Codeunit|Used to register, modify, and delete Copilot capabilities.|
+|Copilot Availability|Enum|The availability of the Copilot Capability; it can either be in preview or generally available.|
 |Copilot Capability|Enum|Defines the capabilities that can be registered.|
 
 In the Azure OpenAI namespace, you'll find the following objects:
@@ -54,10 +55,13 @@ In the Azure OpenAI namespace, you'll find the following objects:
 |-------|-------------|---------|
 |Azure OpenAI |Codeunit| Provides functionality for using the Azure OpenAI API.|
 |AOAI Operation Response|Codeunit|Monitors the status and result of an operation.|
+|AOAI Model Type| Enum |The supported model types for Azure OpenAI|
 |AOAI Chat Messages|Codeunit|Helper functions for the AOAI Chat Message table|
-|AOAI Model Type| Codeunit |The supported model types for Azure OpenAI|
-|AOAI Text Completion Params| Codeunit|Represents the Completion parameters used by the API.|
-|AOAI Chat Completion Params| Codeunit|Represents the Chat Completion parameters used by the API.|
+|AOAI Text Completion Params| Codeunit|Optional parameters that can be modified for text generation.|
+|AOAI Chat Completion Params| Codeunit|Optional parameters that can be modified for chat generation.|
+|AOAI Chat Roles|Enum|The chat roles available for chat generation; `User`, `System`, and `Assistant`.|
+
+For more information, see [System reference](/dynamics365/business-central/application/system/module/system).
 
 ### Registering an AI capability
 
