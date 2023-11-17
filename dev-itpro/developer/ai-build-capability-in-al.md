@@ -109,7 +109,14 @@ codeunit 54310 "Secrets And Capabilities Setup"
 
 ### Saving the authorization
 
-When the prerequisites are met, and you have retrieved an endpoint URL, an Azure OpenAI deployment, and an Azure OpenAI API key, you must save the authorization information. The following example shows how to save the authorization information by calling the the `Azure OpenAI` codeunit. The `SetAuthorization` procedure saves the authorization information in the `IsolatedStorage` object. An alternative to the `IsolatedStorage` object is to use the AppSource Key Vault. For more information, see []().
+When the prerequisites are met, and you have retrieved an endpoint URL, an Azure OpenAI deployment, and an Azure OpenAI API key, you must save the authorization information.
+
+> [!NOTE]  
+> It's recommended to create a page, from which you can type in these three keys, so that you're not hardcoding any values.
+
+The following example shows how to save the authorization information by calling the the `Azure OpenAI` codeunit. The `SetAuthorization` procedure saves the authorization information in the `IsolatedStorage` object.
+
+An alternative to using the `IsolatedStorage` object, if you're building an AppSource app, is to use the AppSource Key Vault. For more information, see [Setting up App Key Vaults for Business Central Online](../administration/setup-app-key-vault.md).
 
 ```al
 local procedure SetAuthorization(var AzureOpenAI: Codeunit "Azure OpenAI")
@@ -134,7 +141,7 @@ Next, you can use the `Azure OpenAI` codeunit to generate text. The following `C
 The `Generate` procedure takes a prompt as a parameter and returns the generated text. 
 The `SetAuthorization` procedure sets the authorization information as described in the previous section.
 
-The `SetParameters` procedure sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is defined as what sampling temperature to use, and can be set to a number between 0 and 2. Higher values means that the model will take more risks. 0 (argmax sampling) can be set for generation with a well-defined answer, whereas 0.9 will allow for more creative applications. For more information, see [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
+The `SetParameters` procedure sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is defined as what sampling temperature to use, and can be set to a number between 0 and 2. Higher values means that the model will take more risks. This example sets it to 0, which will output a well-defined answer. For more information, see [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
 
 The `SetCopilotCapability` procedure sets the capability for the generation. 
 The `IsolatedStorage.Get` procedure gets the metaprompt from the `IsolatedStorage` object.
@@ -178,8 +185,26 @@ codeunit 54334 "CopilotJob"
 
 ### Metaprompt
 
-The metaprompt is a prompt that is used to define the model’s profile, capabilities, and limitations for the implementation of your scenario. It's used to improve the performance of language models and to provide a better user experience. The metaprompt defines the output format of the model and provides examples to demonstrate the intended behavior of the model. The metaprompt also provides additional behavioral guardrails to ensure that the model doesn't generate undesirable content. For more information, see [System message framework and template recommendations for Large Language Models (LLMs)](/azure/ai-services/openai/concepts/system-message).
+The *metaprompt* is a prompt that is used to define the model’s profile, capabilities, and limitations for the implementation of your scenario. It's used to improve the performance of language models and to provide a better user experience. The metaprompt defines the output format of the model and provides examples to demonstrate the intended behavior of the model. The metaprompt also provides additional behavioral guardrails to ensure that the model doesn't generate undesirable content. For more information, see [System message framework and template recommendations for Large Language Models (LLMs)](/azure/ai-services/openai/concepts/system-message). For guidance on reponsible AI, see [Responsible AI](ai-responsible-ai.md).
 
+<!-- 
+The following illustrates an example of a metaprompt, which describes 
+
+
+“You are an AI assistant in Business Central that helps the user draft project tasks in the following XML format.
+ <project>
+   <description></description>
+   <tasks>
+       <task>
+           <description></description>
+           <startDate></startDate>
+           <endDate></endDate>
+           <resourceRole></resourceRole>
+       </task>
+   </tasks>
+</project>
+If the user asks you a question you don’t know the answer to, say so.” 
+-->
 
 
 <!--add your content here-->
