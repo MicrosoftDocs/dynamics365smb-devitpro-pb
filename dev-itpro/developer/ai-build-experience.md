@@ -36,9 +36,9 @@ The following diagram illustrates the PromptDialog page type within the basic co
 
 ||In UI|In AL code|Learn more|
 |-|-|-|-|
-|1|User starts the Copilot experience, for example, by selecting an action on a page.|An `action` control on a page runs the Promptdialog type page. |[Launch experience](#launch-experience)|
-|2|A Promptdialog page opens |[Create PromptDialog type page](#create-promptdialog-type-page)|
-|3|The user enters information that Copilot uses to generate results. |The `prompt` area of the Promptdialog page defines what the user can input, which typically consists of one or more editable fields|[Create PromptDialog type page](#create-promptdialog-type-page)<br><br>[Add prompt area](#add-the-prompt-area)|
+|1|User starts the Copilot experience by selecting an action on a page.|An `action` control on a page runs the Promptdialog type page|[Launch experience](#launch-experience)|
+|2|A Promptdialog page opens ||[Create PromptDialog type page](#create-promptdialog-type-page)
+|3|User enters information that Copilot uses to generate results. |The `prompt` area of the Promptdialog page defines what the user can input, which typically consists of one or more editable fields|[Create PromptDialog type page](#create-promptdialog-type-page)<br><br>[Add prompt area](#add-the-prompt-area)|
 |4|User selects a button to start generating content with Copilot|A system action `Generate` starts the AI generation process.|[Add the generate action](#add-a-system-action-to-start-ai-generation)|
 |5|The AI-generated content is returned and displayed in a page|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Add content area](#add-a-content-area)|
 |6|User select to save or discard the results by using actions at the bottom of the page |A system action for saving and one for discarding work with a trigger respect the user's choice, and close the page||  
@@ -77,7 +77,7 @@ page 54320 "Copilot Job Proposal"
 
 ### Create the prompt mode 
 
-In this task, you define the screen of the PromptDialog page where users can add input that used by AI generation logic for producing results. The prompt mode supports natural language input, like free text fields, and structured input, like field groups and parts. The example uses a single field that allows the user to type natural language text in an unstructured format
+In this task, you define the screen of the PromptDialog page where users can add input that used by AI generation logic for producing results. The prompt mode supports natural language input, like free text fields, and structured input, like field groups and parts. The example uses a single field that allows the user to type natural language text in an unstructured format.
 
 ![Shows the prompt mode of the PromptFialog type page](media/promptdialog-prompt-mode-example.svg)
 
@@ -96,6 +96,7 @@ layout
     }
 ```
 
+You're AI logic might not require a prompt mode, so this area is optional. 
 
 ## Add a system action to start AI generation
 
