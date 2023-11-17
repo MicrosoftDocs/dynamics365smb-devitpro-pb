@@ -159,6 +159,11 @@ codeunit 54334 "CopilotJob"
 }
 ```
 
+### Metaprompt
+
+The metaprompt is a prompt that is used to define the model’s profile, capabilities, and limitations for the implementation of your scenario. It's used to improve the performance of language models and to provide a better user experience. The metaprompt defines the output format of the model and provides examples to demonstrate the intended behavior of the model. The metaprompt also provides additional behavioral guardrails.
+
+
 
 <!--add your content here-->
 
