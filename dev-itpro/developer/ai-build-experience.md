@@ -80,13 +80,16 @@ page 54320 "Copilot Job Proposal"
 
 ## Design the prompt mode 
 
-In this task, you define the screen of the PromptDialog page where users can add input that used by AI generation logic for producing results. The prompt mode supports natural language input, like free text fields, and structured input, like field groups and parts. The example uses a single field that allows the user to type natural language text in an unstructured format.
+In this task, you define the screen of the PromptDialog page where users can add input that used by AI generation logic for producing results. The prompt area supports natural language input (like free text fields) and structured input (like field groups and page parts). The example uses a single field that allows the user to type natural language text in an unstructured format.
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.svg)
 
+
+The prompt are is optional because not all AI logic designs might not required it. Also, you might need a prompt  mode, but it doesn't have to be the first mode presented to the user in the copilot experience.
+
 ### Add the prompt area
 
-The promThe prompt mode is defined by adding an area to the page, similar to way you'd add content areas on other page types. Except, you add an `area(Prompt)` control within `layout` of the page:
+The prompt area is where users can provide input to the AI generation. The prompt mode is defined by adding an area to the page, similar to way you'd add content areas on other page types. Except, you add an `area(Prompt)` control within `layout` of the page:
 
 ```al
 layout
@@ -101,7 +104,31 @@ layout
     }
 ```
 
-You're AI logic might not require a prompt mode, so this area is optional. 
+## Add a file attachment action
+
+In this task, you add action to the PromptDialog page that enables users to select a file to upload in the prompt area.  
+
+![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-attach.svg)
+
+The platform includes a system action called Generate. Add a system action to generate results with Copilot.
+
+```al
+actions
+{
+    area(SystemActions)
+    {
+        systemaction(Generate)
+        {
+            Caption = 'Generate';
+            trigger OnAction()
+            begin
+                RunGeneration();
+            end;
+        }
+        ...
+    }
+}
+```
 
 ## Add a generate action
 
@@ -128,7 +155,7 @@ actions
     }
 }
 ```
-## Add preference options
+### Add preference options
 
 In this task, you add actions to the PromptDialog page that enable users to set style preferences to influence the output. 
 
@@ -154,7 +181,9 @@ actions
 }
 ```
 
-### 
+### Design the content mode
+
+
 ## Add a content area
 
 Add a content area to display the results
