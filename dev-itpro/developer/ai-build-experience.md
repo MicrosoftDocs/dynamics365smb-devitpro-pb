@@ -1,6 +1,6 @@
 ---
 title: Build a Copilot user experience with the PromptDialog page
-description: Learn how to use the PromptDialog page type ti create a copilot experience in the client.
+description: Learn how to use the PromptDialog page type to create a copilot experience in the client.
 author: jswymer 
 ms.author: jswymer 
 ms.reviewer: jswymer 
@@ -17,7 +17,7 @@ In this article, you learn how to create the user interface for your AI solution
 <!--
 The PromptDialog page type is a *multi-mode* page type that creates flow for user to enter data, generate AI-powered content, preview and revise, and finally save or discard results. The PromptDialog page type is built on the pillars of responsible AI principles, emphasizing human interaction and ethical AI usage. -->
 
-The PromptDialog page type is an innovative page type designed for creating copilot experiences that are intuitive and interactive, but also assists users in making informed decisions about the AI-generated output. Following the principles of responsible AI, it promotes human interaction and ethical AI usage. Within the confines of a single page in the UI, the PromptDialog page type creates a comprehensive flow where users can provide input, view the subsequent output, and revise it as needed. The user can then choose to save their work or discard it. 
+The PromptDialog page type is an innovative page type designed for creating copilot experiences that are intuitive and interactive, but also assists users in making informed decisions about the AI-generated output. Following the principles of responsible AI, it promotes human interaction and ethical AI usage. Within a single page object, the PromptDialog page type creates a comprehensive flow in the UI, where users can provide input, view the subsequent output, and revise it as needed. The user can then choose to save their work or discard it. 
 
 
 <!-- The PromptDialog page type is a new feature in Business Central. It's designed to create Copilot experiences, offering an interactive and user-friendly interface. Following the principles of responsible AI, it emphasizes human interaction and ethical use of AI. The page type allows users to input data, review AI-generated output, and make necessary changes. All actions, including saving or discarding work, can be done within a single page object.-->
@@ -36,12 +36,12 @@ The following diagram illustrates the PromptDialog page type within the basic co
 
 ||In UI|In AL code|Learn more|
 |-|-|-|-|
-|1|User starts the Copilot experience by selecting an action on a page.|An `action` control on a page runs the Promptdialog type page|[Launch experience](#launch-experience)|
-|2|A Promptdialog page opens ||[Create PromptDialog type page](#create-promptdialog-type-page)
-|3|User enters information that Copilot uses to generate results. |The `prompt` area of the Promptdialog page defines what the user can input, which typically consists of one or more editable fields|[Create PromptDialog type page](#create-promptdialog-type-page)<br><br>[Add prompt area](#add-the-prompt-area)|
+|1|User starts the Copilot experience by selecting an action on a page.|An `action` control on a page runs the PromptDialog type page|[Launch experience](#launch-experience)|
+|2|The PromptDialog page opens in the prompt mode, where users can enter input|The PromptDialog page is defined by setting the PageType property to `PromptDailog`.|[Create PromptDialog type page](#create-promptdialog-type-page)
+|3|User enters information that Copilot uses to generate results. |The `prompt` area of the PromptDialog page defines what the user can input, which typically consists of one or more editable fields|[Create PromptDialog type page](#create-promptdialog-type-page)<br><br>[Add prompt area](#add-the-prompt-area)|
 |4|User selects a button to start generating content with Copilot|A system action `Generate` starts the AI generation process.|[Add the generate action](#add-a-system-action-to-start-ai-generation)|
 |5|The AI-generated content is returned and displayed in a page|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Add content area](#add-a-content-area)|
-|6|User select to save or discard the results by using actions at the bottom of the page |A system action for saving and one for discarding work with a trigger respect the user's choice, and close the page||  
+|6|User chooses to save or discard the results by using actions at the bottom of the page |A system action for saving and one for discarding work with a trigger respect the user's choice, and close the page||  
 
 
 <!--
@@ -70,18 +70,23 @@ page 54320 "Copilot Job Proposal"
 ```
 
 |Property|Description and value|
-|-||
+|-|-|
 |[PageType](properties/devenv-pagetype-property.md)|Set to `PromptDialog`.|
 |[Extensible](properties/devenv-extensible-property.md)|Set to `false` to ensure that extensions for other providers don't interfere with the experience you're providing customers|
-|IsPreview|This property is used to specify whether your feature is in preview or generally available. Setting this property to `true` communicates to users that the feature is in preview, which means that it's available to try out and provide feedback, but the functionality is subject to change. When you feel the feature is ready, you can change this value to `false` to communicate that the feature is generally available. We recommend that most new Copilot experiences start in preview. |
+|IsPreview|This property is used to specify whether your feature is in preview or generally available. Setting this property to `true` applies a **Preview** label on the all display modes of the PromptDialog type page, as illustrated in the following figure. The **Preview** label communicates to users that the feature is available to try out and provide feedback, but the functionality is subject to change. When you feel the feature is ready, you can change this value to `false` to communicate that the feature is generally available. We recommend that most new Copilot experiences start in preview. |
 
-### Create the prompt mode 
+![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode.svg)
+
+
+## Design the prompt mode 
 
 In this task, you define the screen of the PromptDialog page where users can add input that used by AI generation logic for producing results. The prompt mode supports natural language input, like free text fields, and structured input, like field groups and parts. The example uses a single field that allows the user to type natural language text in an unstructured format.
 
-![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-example.svg)
+![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.svg)
 
-The prompt mode is defined by adding an area to the page, similar to way you'd add content areas on other page types. Except, you add an `area(Prompt)` control within `layout` of the page:
+### Add the prompt area
+
+The promThe prompt mode is defined by adding an area to the page, similar to way you'd add content areas on other page types. Except, you add an `area(Prompt)` control within `layout` of the page:
 
 ```al
 layout
@@ -98,14 +103,38 @@ layout
 
 You're AI logic might not require a prompt mode, so this area is optional. 
 
-## Add a system action to start AI generation
+## Add a generate action
 
-In this task, you add action to the PromptDialog page that users select to start generating output with Copilot. The button appears on when the prompt area is  the. 
+In this task, you add action to the PromptDialog page that users select to start generating output with Copilot and AI. 
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-generate.svg)
 
+The platform includes a system action called Generate. Add a system action to generate results with Copilot.
 
-The platform includes a system action called Add a system action to generate results with Copilot.
+```al
+actions
+{
+    area(SystemActions)
+    {
+        systemaction(Generate)
+        {
+            Caption = 'Generate';
+            trigger OnAction()
+            begin
+                RunGeneration();
+            end;
+        }
+        ...
+    }
+}
+```
+## Add preference options
+
+In this task, you add actions to the PromptDialog page that enable users to set style preferences to influence the output. 
+
+![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-options.svg)
+
+The platform includes a system action called Generate. Add a system action to generate results with Copilot.
 
 ```al
 actions
@@ -125,6 +154,7 @@ actions
 }
 ```
 
+### 
 ## Add a content area
 
 Add a content area to display the results
