@@ -175,17 +175,14 @@ The options appear as buttons in the UI to the right of the system actions. You 
 ```al
 actions
 {
-    area(SystemActions)
-    {
-        systemaction(Generate)
-        {
-            Caption = 'Generate';
-            trigger OnAction()
-            begin
-                RunGeneration();
-            end;
-        }
-        ...
+    area(PromptOptions) 
+    {          
+        field(Tone; Tone)  {}
+    
+        field(TextFormat; TextFormat)  {}
+    
+        field(Emphasis; Emphasis)  {}
+    
     }
 }
 ```
