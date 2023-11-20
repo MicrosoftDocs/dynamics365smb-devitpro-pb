@@ -34,11 +34,12 @@ landingContent:
         url: developer-tools-for-copilot-overview.md
       - text: What is considered a Copilot offering?
         url: ai-extend-copilot-overview.md
-      - text: Get setup with Azure OpenAI Service
-        url: ai-dev-tools-get-started.md
       - text: Responsible AI transparency note for developer tools
         url: ../ai/transparency-note-dev-tools-for-copilot.md
-
+    - linkListType: how-to-guide
+      links:
+      - text: Get setup with Azure OpenAI Service
+        url: ai-dev-tools-get-started.md
 
 # Card
   - title: Build the experience
@@ -82,6 +83,7 @@ landingContent:
         url: https://aka.ms/RAI
       - text: Azure AI Studio for quick experimentation 
         url: https://aka.ms/OAIstudio
-
+      - text: Microsoft Azure Learning courses on responsible AI
+        url: /ai/
 
 # Remove all comments in this template before you sign off or merge to the main branch
