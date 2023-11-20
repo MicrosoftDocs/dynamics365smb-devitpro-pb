@@ -1312,14 +1312,14 @@
 ## Integrating with external systems
 ### [Data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
 ### [Business events (preview)](developer/business-events-overview.md)
-## Integrating AI using Developer Tools for Copilot
-### [Integrating AI using Developer Tools for Copilot](developer/ai-integration-landing-page.yml)
-### [What is Developer Tools for Copilot](developer/developer-tools-for-copilot-overview.md)
-### [What is considered a Copilot offering](developer/ai-extend-copilot-overview.md)
+## Integrating AI using developer tools for copilot
+### [Overview](developer/ai-integration-landing-page.yml)
+### [What is developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
+### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
 ### [Get setup with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### Build a Copilot experience
 #### [Build AI capability in app](developer/ai-build-capability-in-al.md)
-#### [Design the user experience](developer/ai-build-experience.md)
+#### [Design the Copilot user experience](developer/ai-build-experience.md)
 ## Integrating with Microsoft Dataverse
 ### Data synchronization
 #### [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)
