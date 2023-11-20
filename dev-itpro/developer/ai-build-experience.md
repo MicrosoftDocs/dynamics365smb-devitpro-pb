@@ -31,7 +31,7 @@ The PromptDialog page type has three different display modes to accommodate the 
 
 The following diagram illustrates the PromptDialog page type within the basic copilot flow. Your flow might vary. 
   
-[![Shows a flow of a copilot with the prompt dialog page type](media/prompt-dialog-flow-v2.svg)](media/prompt-dialog-flow-v2.svg#lightbox)
+[![Shows a flow of a copilot with the prompt dialog page type](media/prompt-dialog-flow-v3.svg)](media/prompt-dialog-flow-v3.svg#lightbox)
 
 ||In UI|In AL code|Learn more|
 |-|-|-|-|
