@@ -197,10 +197,11 @@ The content mode shows the AI-generated output. It enables users to review outpu
 
 ### Add a content area
 
-In this task, you define the area of the content that displays results of the AI generation. To define this area, you add an `area(Content)` control to the `layout`, then add one or more data fields.
+In this task, you define the area of the content that displays results of the AI generation.
 
-![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-input.svg)
+![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-output-area.svg)
 
+To define this area, you add an `area(Content)` control to the `layout`, then add one or more data fields. You can structure and arrange fields in groups and page parts. You can't user repeater control. 
 
 ```al
 layout
@@ -215,7 +216,6 @@ layout
     }
 }
 ```
-
 
 ### Add a save and discard action
 
