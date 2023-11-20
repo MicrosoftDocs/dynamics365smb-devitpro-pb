@@ -62,8 +62,8 @@ page 54320 "Copilot Job Proposal"
     Caption = 'Draft new job with Copilot';
     PageType = PromptDialog;
     Extensible = false;
+    PromptMode = Prompt;
     IsPreview = true;
-    PromptMode = Content|Generate|Prompt;
 ...
 }
 ```
@@ -79,13 +79,11 @@ page 54320 "Copilot Job Proposal"
 
 ## Design the prompt mode 
 
-In this task, you define the screen of the PromptDialog page where users can add input that used by AI generation logic for producing results. The prompt area supports natural language input (like free text fields) and structured input (like field groups and page parts). The example uses a single field that allows the user to type natural language text in an unstructured format.
-
-The prompt area is optional because not all AI logic designs might not required it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the copilot experience. 
+In this task, you define the screen of the PromptDialog page where users can add input that used by AI generation logic for producing results. The prompt area is optional because not all AI logic designs might not required it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the copilot experience. 
 
 ### Add the prompt area
 
-The prompt area is where users can provide input to the AI generation.
+The prompt area is where users can provide input to the AI generation. The prompt area supports natural language input (like free text fields) and structured input (like field groups and page parts). The example uses a single field that allows the user to type natural language text in an unstructured format.
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.svg)
 
@@ -96,7 +94,7 @@ layout
 {
     area(Prompt) 
     {
-        field(ProjectDescription; UserInput)
+        field(input; UserInput)
         {
             ShowCaption = false;
             MultiLine = true;
@@ -159,31 +157,34 @@ actions
         end;
     end;
     }
-
 }
 ```
 
 ### Add preference options
 
-In this task, you add actions to the PromptDialog page that enable users to set style preferences to influence the AI-generated output. 
+In this task, you add actions to the PromptDialog page that enable users to set style preferences to influence the AI-generated output. The options appear as buttons in the UI to the right of the system actions.
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-options.svg)
 
-The options appear as buttons in the UI to the right of the system actions. You can You can add up to  includes a system action called Generate. Add a system action to generate results with Copilot.
+You add the options by using in a `area(PromptOptions)` control with the `actions` control. Each option is defined by a field using the `field` control. Only fields of the [option data type](methods-auto/option/option-data-type.md) are supported.
 
 ```al
 actions
 {
     area(PromptOptions) 
     {          
-        field(Tone; Tone)  {}
-    
-        field(TextFormat; TextFormat)  {}
-    
-        field(Emphasis; Emphasis)  {}
-    
+        field(tone; Tone)
+        {
+        }
+        field(format; Format)
+        {
+        }
+        field(emphasis; Emphasis)
+        {
+        }
     }
 }
+
 ```
 
 ## Design the content mode
