@@ -19,7 +19,6 @@ The PromptDialog page type is a *multi-mode* page type that creates flow for use
 
 The PromptDialog page type is an innovative page type designed for creating copilot experiences that are intuitive and interactive, but also assists users in making informed decisions about the AI-generated output. Following the principles of responsible AI, it promotes human interaction and ethical AI usage. Within a single page object, the PromptDialog page type creates a comprehensive flow in the UI, where users can provide input, view the subsequent output, and revise it as needed. The user can then choose to save their work or discard it. 
 
-
 <!-- The PromptDialog page type is a new feature in Business Central. It's designed to create Copilot experiences, offering an interactive and user-friendly interface. Following the principles of responsible AI, it emphasizes human interaction and ethical use of AI. The page type allows users to input data, review AI-generated output, and make necessary changes. All actions, including saving or discarding work, can be done within a single page object.-->
 
 ## Design overview and flow
@@ -73,8 +72,8 @@ page 54320 "Copilot Job Proposal"
 |-|-|
 |[PageType](properties/devenv-pagetype-property.md)|Set to `PromptDialog`.|
 |[Extensible](properties/devenv-extensible-property.md)|Set to `false` to ensure that extensions for other providers don't interfere with the experience you're providing customers|
-|[IsPreview](properties/devenv-ispreview-property.md]|This property is used to specify whether your feature is in preview or generally available. Setting this property to `true` applies a **Preview** label on the all display modes of the PromptDialog type page, as illustrated in the following figure. The **Preview** label communicates to users that the feature is available to try out and provide feedback, but the functionality is subject to change. When you feel the feature is ready, you can change this value to `false` to communicate that the feature is generally available. We recommend that most new Copilot experiences start in preview. |
 |[PromptMode](properties/devenv-promptmode-property.md)|Specifies which mode you want to page to display when it first opens. The default is `Prompt`. You can programmatically set this property by setting the variable `CurrPage.PromptMode` before the page is opened.|
+|[IsPreview](properties/devenv-ispreview-property.md)|This property is used to specify whether your feature is in preview or generally available. Setting this property to `true` applies a **Preview** label on the all display modes of the PromptDialog type page, as illustrated in the following figure. The **Preview** label communicates to users that the feature is available to try out and provide feedback, but the functionality is subject to change. When you feel the feature is ready, you can change this value to `false` to communicate that the feature is generally available. We recommend that most new Copilot experiences start in preview. |
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode.svg)
 
