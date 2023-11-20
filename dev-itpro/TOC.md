@@ -1314,7 +1314,7 @@
 ## Integrating AI using Developer Tools for Copilot
 ### [Integrating AI using Developer Tools for Copilot](developer/ai-integration-landing-page.yml)
 ### [What is Developer Tools for Copilot](developer/developer-tools-for-copilot-overview.md)
-### [Is your offering a Copilot](developer/ai-extend-copilot-overview.md)
+### [What is considered a Copilot offering](developer/ai-extend-copilot-overview.md)
 ### [Get started with Azure OpenAI Service](ai-dev-tools-get-started.md)
 ### Build a Copilot experience
 #### [Build AI capability in app](developer/ai-build-capability-in-al.md)
