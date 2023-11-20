@@ -136,21 +136,12 @@ end;
 
 ### Generation
 
-Next, you can use the `Azure OpenAI` codeunit to generate text. The following `CopilotJob` codeunit shows how to generate text. 
+Next, you can use the `Azure OpenAI` codeunit to generate text. The following `CopilotJob` codeunit shows how to generate text from a prompt. The codeunit contains the following elements:
 
-The `Generate` procedure takes a prompt as a parameter and returns the generated text. 
-The `SetAuthorization` procedure sets the authorization information as described in the previous section.
+The `Generate` procedure takes a prompt as a parameter and returns the generated text. It calls the other procedures to set up the authorization, parameters, and capability for the generation. The `SetAuthorization` sets the authorization information as described in the previous section. It uses the `AzureOpenAI` object to set the endpoint and key for the service.
+The `SetParameters` sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is a number between 0 and 2 that controls how risky the model is when generating text. Higher values mean more creativity, but also more errors. Lower values mean more accuracy, but also more boring text. This example sets the temperature to 0, which will output a well-defined answer. For more information, see [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
+The `SetCopilotCapability` call sets the capability for the generation. It uses the `IsolatedStorage` object to get the metaprompt from the storage. The metaprompt is a special message that tells the model what kind of text to generate. For example, if you want to generate code, you can use a metaprompt like "Write some code that does X". For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt). Then, the `AddUserMessage` call adds a user message to the chat history. The user message is what you want to generate text from. Next, the `GenerateChatCompletion` call generates the chat completion based on the user message and input parameters. It uses the `AzureOpenAI` object to call the service and get the response. The `IsSuccess` checks if the operation was successful, and finally, the `GetLastMessage` call returns the last message from the chat history. The last message is the generated text that you want to use.
 
-The `SetParameters` procedure sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is defined as what sampling temperature to use, and can be set to a number between 0 and 2. Higher values means that the model will take more risks. This example sets it to 0, which will output a well-defined answer. For more information, see [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
-
-The `SetCopilotCapability` procedure sets the capability for the generation. 
-The `IsolatedStorage.Get` procedure gets the metaprompt from the `IsolatedStorage` object.
-The `SetPrimarySystemMessage` procedure then sets metaprompt as the primary system message. For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt).
-
-The `AddUserMessage` procedure adds a user message. 
-The `GenerateChatCompletion` procedure generates the chat completion based on the user message and input parameters. 
-The `IsSuccess` procedure checks if the operation was successful. 
-The `GetLastMessage` procedure returns the last message.
 
 ```al
 codeunit 54334 "CopilotJob"
