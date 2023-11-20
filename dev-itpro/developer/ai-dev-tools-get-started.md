@@ -35,6 +35,5 @@ This article explains the tasks you or an admin must complete so that you can st
 
 ## Next steps
 
-[Build AI capability in AL](ai-build-capability-in-al.md)  
-
-[Build the copilot user experience](ai-build-experience.md)  
+- [Build AI capability in AL](ai-build-capability-in-al.md)  
+- [Build the copilot user experience](ai-build-experience.md)  
