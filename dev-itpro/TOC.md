@@ -1752,6 +1752,7 @@
 ##### [Installing a minor update](upgrade/upgrading-cumulative-update.md)
 ### [Some known issues](upgrade/known-issues.md)
 ## [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
-
+# Responsible AI
+## [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 <!-- end upgrade -->
 <!--on-prem ends-->
