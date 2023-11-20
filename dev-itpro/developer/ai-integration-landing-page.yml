@@ -37,7 +37,7 @@ landingContent:
       - text: Get setup with Azure OpenAI Service
         url: ai-dev-tools-get-started.md
       - text: Responsible AI transparency note for developer tools
-        url: ../ai/transparency-note-dev-tools-for-copilot.md)ai-dev-tools-get-started.md
+        url: ../ai/transparency-note-dev-tools-for-copilot.md
 
 
 # Card
