@@ -77,13 +77,22 @@ landingContent:
     linkLists:
     - linkListType: overview
       links:
-      - text: Copilot & AI capabilities in Business Central
-        url: https://aka.ms/bcAI
       - text: Microsoft Responsible AI 
         url: https://aka.ms/RAI
       - text: Azure AI Studio for quick experimentation 
         url: https://aka.ms/OAIstudio
       - text: Microsoft Azure Learning courses on responsible AI
         url: /ai/
+# Card
+  - title: Get inspiration from Copilot in Business Central
+    linkLists:
+    - linkListType: overview
+      links:
+      - text: Copilot & AI capabilities in Business Central
+        url: https://aka.ms/bcAI
+      - text: Marketing text suggestions 
+        url: /dynamics365/business-central/ai-overview
+      - text: Bank account reconciliation assist
+        url: /dynamics365/business-central/bank-reconciliation-with-copilot
 
 # Remove all comments in this template before you sign off or merge to the main branch
