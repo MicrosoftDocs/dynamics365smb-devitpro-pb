@@ -170,7 +170,7 @@ In this task, you add actions to the PromptDialog page that enable users to set 
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-options.svg)
 
-The options appears as buttons in the UI to the right of the system actions. You can You can add up to  includes a system action called Generate. Add a system action to generate results with Copilot.
+The options appear as buttons in the UI to the right of the system actions. You can You can add up to  includes a system action called Generate. Add a system action to generate results with Copilot.
 
 ```al
 actions
