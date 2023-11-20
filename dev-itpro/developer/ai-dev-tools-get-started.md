@@ -1,53 +1,28 @@
 ---
-title: How-to topic template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: How-to description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: how-to #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+title: Get setup with Azure OpenAI Service
+description: Learn how to get setup with Azure OpenAI Service
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: how-to
+ms.collection: get-started
 ms.date: 11/06/2023
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
+# Get setup with Azure OpenAI Service
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+This article explains the tasks you or an admin must complete so that you can start integrating Azure OpenAI Service in your extensions to create a copilot experiences in Business Central.
 
-<!--This template provides the basic structure of a how-to article. See [Write a how-to topic](write-a how-to.md) in the contributor guide. To provide feedback on this template contact [bace feedback](mailto:templateswg@microsoft.com).-->
+1. Get an Azure subscription. You can sign up for paid plan or start for free. [Learn more](https://azure.microsoft.com)
+1. Request access to Azure OpenAI Service for your subscription.
 
-<!--H1. Required. Pick an H1 that clearly conveys the task the user will complete.-->
-# Get started with Azure OpenAI Service
-
-<!--Introductory paragraph. Required. Lead with a light intro that describes, in customer-friendly language, what the customer will learn, or do, or accomplish. Answer the fundamental "why would I want to do this?" question. Keep it short.-->
-<!--add your intro paragraph here-->
-
-<!--Prerequisites. Optional. If you need prerequisites, make them your first H2 in a how-to guide. Use clear language and use a list format.-->
-
-## Get an Azure subscription
-
-- Azure subscription
-
-
-## Request Access to Azure OpenAI Service 
-
-<!--add your content here-->
-
-<!--H2s. Required. A how-to article explains how to do a task. The bulk of each H2 should be a procedure.-->
-
-## Get an Azure OpenAI API key
-
-
-## Create an Azure OpenAI Resource
-
-
-<!--Intro paragraph-->
-<!--Step 1-->
-<!--Step 2-->
-<!--Step n-->
-
-<!--Next steps. Optional. Provide no more than three next steps. Include some context so the customer can determine why they would click the link.-->
-
-
+   Currently, access to this service is granted only by application. To apply for access to Azure OpenAI Service, complete the form at [aka.ms/OAIapply](aka.ms/OAIapply). 
+1. Get an Azure OpenAI API key
+1. Get permissions to create Azure OpenAI resources and to deploy models. [Learn more](/azure/ai-services/openai/how-to/role-based-access-control)
+1. Create and deploy an Azure OpenAI Service resource. [Learn more](/azure/ai-services/openai/how-to/create-resource).
 
 ## Next steps
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+[Build AI capability in AL](ai-build-capability-in-al.md)  
+
+[Build the copilot user experience](ai-build-experience.md)  
