@@ -137,9 +137,13 @@ end;
 
 Next, you can use the `Azure OpenAI` codeunit to generate text. The following `CopilotJob` codeunit shows how to generate text from a prompt. The codeunit contains the following elements:
 
-The `Generate` procedure takes a prompt as a parameter and returns the generated text. It calls the other procedures to set up the authorization, parameters, and capability for the generation. The `SetAuthorization` sets the authorization information as described in the previous section. It uses the `AzureOpenAI` object to set the endpoint and key for the service.
+The `Generate` procedure takes a prompt as a parameter and returns the generated text. It calls the other procedures to set up the authorization, parameters, and capability for the generation. The `SetAuthorization` sets the authorization information as described in the previous section, and uses the `AzureOpenAI` object to set the endpoint and key for the service.
+
 The `SetParameters` sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is a number between 0 and 2 that controls how risky the model is when generating text. Higher values mean more creativity, but also more errors. Lower values mean more accuracy, but also more boring text. This example sets the temperature to 0, which outputs a well-defined answer. For more information, see [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
-The `SetCopilotCapability` call sets the capability for the generation. It uses the `IsolatedStorage` object to get the metaprompt from the storage. The metaprompt is a special message that tells the model what kind of text to generate. For example, if you want to generate code, you can use a metaprompt like "Write some code that does X". For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt). Then, the `AddUserMessage` call adds a user message to the chat history. The user message is what you want to generate text from. Next, the `GenerateChatCompletion` call generates the chat completion based on the user message and input parameters. It uses the `AzureOpenAI` object to call the service and get the response. The `IsSuccess` checks if the operation was successful, and finally, the `GetLastMessage` call returns the last message from the chat history. The last message is the generated text that you want to use.
+
+The `SetCopilotCapability` call sets the capability for the generation. It uses the `IsolatedStorage` object to get the metaprompt from the storage. The metaprompt is a special message that tells the model what kind of text to generate. For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt). 
+
+Then, the `AddUserMessage` call adds a user message to the chat history. The user message is what you want to generate text from. Next, the `GenerateChatCompletion` call generates the chat completion based on the user message and input parameters. It uses the `AzureOpenAI` object to call the service and get the response. The `IsSuccess` method checks if the operation was successful, and finally, the `GetLastMessage` call returns the last message from the chat history. The last message is the generated text that you want to use.
 
 
 ```al
@@ -175,9 +179,9 @@ codeunit 54334 "CopilotJob"
 
 ### Metaprompt
 
-The *metaprompt* is a prompt that is used to define the model’s profile, capabilities, and limitations for the implementation of your scenario. It's used to improve the performance of language models and to provide a better user experience. The metaprompt defines the output format of the model and provides examples to demonstrate the intended behavior of the model. The metaprompt also provides other behavioral guardrails to ensure that the model doesn't generate undesirable content. For more information, see [System message framework and template recommendations for Large Language Models (LLMs)](/azure/ai-services/openai/concepts/system-message). For guidance on responsible AI, see [Responsible AI](ai-responsible-ai.md).
+A *metaprompt* is a prompt that is used to define the model’s profile, capabilities, and limitations for the implementation of your scenario. It's used to improve the performance of language models and to provide a better user experience. The metaprompt defines the output format of the model and provides examples to demonstrate the intended behavior of the model. The metaprompt also provides other behavioral guardrails to ensure that the model doesn't generate undesirable content. For more information, see [System message framework and template recommendations for Large Language Models (LLMs)](/azure/ai-services/openai/concepts/system-message). For guidance on responsible AI, see [Responsible AI](ai-responsible-ai.md).
 
 
 ## Next steps
 
-Next, you can build the interface for handling the generation. For more information, see [Design the user experience](ai-build-experience.md).
+When you have registered the AI capability, authorized through Azure OpenAI, and written code that generates text based on the metaprompt and the user input, you can now build the interface for handling the user input and generated output. For more information, see [Design the user experience](ai-build-experience.md).
