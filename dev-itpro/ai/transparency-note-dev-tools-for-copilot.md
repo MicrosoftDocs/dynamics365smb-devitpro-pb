@@ -144,6 +144,64 @@ We encourage partners to leverage the toolkit in their innovative solutions or a
 
    We strongly recommend seeking legal advice from a specialist to understand the laws and regulations applicable to your use case. You are responsible for complying with all laws and regulations, including privacy, security, accessibility, and AI safety. 
 
-## Next steps
+## Limitations 
+
+### General limitations for AI models 
+
+It is important to understand that while AI systems are incredibly valuable tools, they are non-deterministic. This means that perfect accuracy of any generated content, suggestions or insights is not possible. Failure to understand this limitation can lead to over-reliance on the system and unmerited decisions that can impact any stakeholders including customers, their customers, and partners. Ensuring that any output of the AI model is weighted against human judgement and logic can help mitigate this risk. 
+
+### Limitations for specific industries, products and topics  
+
+### Language and country/region limitations  
+
+The toolkit itself does not impose limits on the set of languages or environment localizations in which your AI feature is available. Similarly, the toolkit does not define or limit which Azure OpenAI Service endpoints you deploy and connect to. Partner developers fully control these aspects of their AI features, and are responsible for ensuring both quality and compliance. 
+
+#### About language 
+
+Large Language Models are trained on large volumes of data in different languages, but the overall corpus of data is not evenly distributed across all world languages. This means your specific use case may be more successful in some languages than others. We recommend that partners verify language quality independently for each use case, to determine which languages each use case will be made available. Language availability is regulated in some countries such as Canada: we recommend seeking appropriate legal and professional advice from a specialist to understand the laws and regulations applicable to your choice of languages. 
+
+#### About Azure OpenAI Service endpoints 
+
+Business Central includes an administrative screen for Copilot that provides customer admins with transparency and control over generative AI features in their specific environment. Business Central does not distinguish between partner or Microsoft-built features in terms of how they connect to Azure OpenAI Service outside of the customer’s compliance boundary. You are responsible for ensuring that you deploy Azure OpenAI Service endpoints in the same regions as Microsoft, so that customer admins have a simple mechanism to provide their consent for data to flow beyond the compliance boundary where applicable. 
+
+## System guard rails 
+
+The Microsoft cloud runs on trust. Our fundamental promise to our customers is that their data is their data: it is not used to train foundation AI models to the benefit of others, and it is protected by the most comprehensive enterprise compliance and security controls that they govern. Furthermore, Microsoft’s AI systems are built on Responsible AI principles of fairness, reliability, safety, privacy, security, inclusiveness, transparency and accountability. When using the toolkit to implement and deploy your use cases, you have an opportunity to exhibit these same values. 
+
+To reduce time and effort to build responsible use cases, the toolkit provides numerous, built-in safeguards that reduce risk and impact to customers, their customers and partners. However, each use case may come with unique challenges depending on the nature of that use case, the affected stakeholders, and how AI is applied. You are responsible for assessing and mitigating risks for your use cases. 
+
+### Working Responsible AI into your workflow 
+
+We recommend that partners adopt a similar process and criteria to the [Microsoft Responsible AI Standard](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE5cmFl) as a structured mechanism to build use cases responsibly. For example, you should 
+
+- **Assess** the impact of your AI feature using the [Microsoft Responsible AI Impact Assessment Template](https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2022/06/Microsoft-RAI-Impact-Assessment-Template.pdf). 
+- **Review** the assessment with diverse stakeholders and SMEs. 
+- **Mitigate** any identified risks by adjusting your use case requirements, design, implementation and documentation after understand which mitigations are already provided by the toolkit. 
+- **Measure** whether your mitigations are successful at reducing or deflecting risk. 
+
+### Best practices for responsible AI 
+
+## Evaluation of the toolkit 
+
+### Evaluation methods and results 
+
+The toolkit is reviewed and tested throughout Microsoft's development lifecycle and is designed to meet the requirements outlined in the [Microsoft Responsible AI Standard](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE5cmFl) that sets the bar for Microsoft's AI products and features. Evaluating success of the toolkit was primarily conducted through early adoption of the technology by select partner developers, as well as rigorous red team test exercises with hundreds of example prompts to verify that built-in guard rails are able to mitigate risk. 
+
+Early adoption of the toolkit by select partner developers across different skill levels indicates that the toolkit is successful in reducing effort and delivering a seamless experience as intended, with the user experience successfully drawing user attention towards review of generated content. 
+
+Prompt guard rails indicate a high (>95%) success rate at deflecting risks such as harmful content and prompt injection. 
+
+## Learn more about responsible AI 
+
+[Microsoft AI principles](https://www.microsoft.com/en-us/ai/responsible-ai) 
+
+[Microsoft responsible AI resources](https://www.microsoft.com/en-us/ai/tools-practices) 
+
+[Microsoft Azure Learning courses on responsible AI](/ai/)
+
+## Learn more about Developer Tools for Copilot in Business Central 
+
+[Developer tools for copilot in Business Central](../developer/ai-integration-landing-page.yml)  
+
 
 <!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
