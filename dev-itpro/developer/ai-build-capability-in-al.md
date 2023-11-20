@@ -31,11 +31,10 @@ The AI module can be used in any AL extension and provides the following capabil
 To build an AI capability in AL, you need the following:
 
 - An Azure OpenAI Resource URL, such as: `https://[resourcename].openai.azure.com/`
-- The Azure Deployment Name 
-    - MyGPT3.5
+- The Azure Deployment Name, such as: MyGPT3.5
 - An Azure OpenAI API key
 
-For more information, see [Get started with Azure OpenAI Service](ai-dev-tools-get-started.md).
+For more information on how to obtain this, see [aka.ms/oaiapply](https://aka.ms/oaiapply) for requesting access and [Get started with Azure OpenAI Service](ai-dev-tools-get-started.md) to help get started.
 
 ## Building an AI capability
 
@@ -111,10 +110,10 @@ codeunit 54310 "Secrets And Capabilities Setup"
 
 When the prerequisites are met, and you have retrieved an endpoint URL, an Azure OpenAI deployment, and an Azure OpenAI API key, you must save the authorization information.
 
-> [!NOTE]  
+> [!TIP]  
 > It's recommended to create a page, from which you can type in these three keys, so that you're not hardcoding any values.
 
-The following example shows how to save the authorization information by calling the `Azure OpenAI` codeunit. The `SetAuthorization` procedure saves the authorization information in the `IsolatedStorage` object.
+The following example shows how to save the authorization information by calling the `Azure OpenAI` codeunit. The `SetAuthorization` procedure saves the authorization information in the `IsolatedStorage` object, which provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions.
 
 An alternative to using the `IsolatedStorage` object, if you're building an AppSource app, is to use the AppSource Key Vault. For more information, see [Setting up App Key Vaults for Business Central Online](../administration/setup-app-key-vault.md).
 
