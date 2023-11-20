@@ -13,13 +13,18 @@ ms.custom: bap-template
 
 This article explains the tasks you or an admin must complete so that you can start integrating Azure OpenAI Service in your extensions to create a copilot experiences in Business Central.
 
-1. Get an Azure subscription. You can sign up for paid plan or start for free. [Learn more](https://azure.microsoft.com)
+1. Get an Azure subscription. You can sign up for paid plan or start for free.
+
+   [Learn more](https://azure.microsoft.com)
 1. Request access to Azure OpenAI Service for your subscription.
 
    Currently, access to this service is granted only by application. To apply for access to Azure OpenAI Service, complete the form at [aka.ms/OAIapply](https://aka.ms/OAIapply). 
-1. Get an Azure OpenAI API key
-1. Get permissions to create Azure OpenAI resources and to deploy models. [Learn more](/azure/ai-services/openai/how-to/role-based-access-control)
-1. Create and deploy an Azure OpenAI Service resource. [Learn more](/azure/ai-services/openai/how-to/create-resource).
+1. Get permissions to create Azure OpenAI resources and deploy models.
+
+   [Learn more](/azure/ai-services/openai/how-to/role-based-access-control)
+1. Create and deploy an Azure OpenAI Service resource.
+
+   [Learn more](/azure/ai-services/openai/how-to/create-resource).
 
 ## Next steps
 
