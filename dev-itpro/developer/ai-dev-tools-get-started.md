@@ -11,7 +11,7 @@ ms.custom: bap-template
 ---
 # Get setup with Azure OpenAI Service
 
-This article explains the tasks you or an admin must complete so that you can start integrating Azure OpenAI Service in your extensions to create copilot experiences in Business Central.
+This article explains the tasks that must be completed so that you can start integrating Azure OpenAI Service in your extensions to create copilot experiences in Business Central.
 
 1. Get an Azure subscription. You can sign up for paid plan or start for free.
 
