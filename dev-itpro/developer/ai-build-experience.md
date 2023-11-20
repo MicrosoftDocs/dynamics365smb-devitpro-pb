@@ -100,6 +100,7 @@ layout
             MultiLine = true;
         }
     }
+}
 ```
 
 Within `area(Prompt)`, you can add one or more fields, groups, and page parts. 
@@ -189,14 +190,82 @@ actions
 
 ## Design the content mode
 
+The content mode shows the AI-generated output. It enables users to review output, then choose to regenerate, save, or discard it. 
+
+![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode.svg)
+
 
 ### Add a content area
 
-Add a content area to display the results
-1. Add a data caption expression to the page.
-1. Add save and discard
+In this task, you define the area of the content that displays results of the AI generation. To define this area, you add an `area(Content)` control to the `layout`, then add one or more data fields.
+
+![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-input.svg)
 
 
+```al
+layout
+{
+    area(Content)
+    {
+        field(generatedOutput; Output)
+        {
+            ShowCaption = false;
+            MultiLine = true;
+        }
+    }
+}
+```
+
+
+### Add a save and discard action
+
+In this task, you define the area of the content that displays results of the AI generation. To define this area, you add an `area(Content)` control to the `layout`, then add one or more data fields.
+
+![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-save.svg)
+
+```al
+layout
+{
+    area(Content)
+    {
+        field(generatedOutput; Output)
+        {
+            ShowCaption = false;
+            MultiLine = true;
+        }
+    }
+}
+```
+
+
+### Add a regenerate action
+
+In this task, you add an action to the PromptDialog page that enables users to generate the results again directly from the content mode.   
+
+![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-regen.svg)
+
+
+To include this action, add a `systemaction(Regenerate)` control to the `area(SystemActions)`.
+
+```al
+actions
+{
+    area(SystemActions)
+    {
+
+        systemaction(Regenerate)
+        {
+            Caption = 'Regenerate';
+
+            trigger OnAction()
+            begin
+                RunGenerate();
+            end;
+        }
+    }
+}
+
+```
 
 ## Launch experience
 
