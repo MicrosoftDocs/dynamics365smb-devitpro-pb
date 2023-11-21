@@ -18,13 +18,10 @@ You use filter expressions in OData URIs to limit the results in a returned docu
  To add a filter to an OData URI, add `$filter=` to the end of the name of the published web service. For example, the following URI filters the **City** field in the **Customer** page to return all customers who are located in Miami:  
 
 ```  
-https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer?$filter=City eq 'Miami'  
+https://localhost:7048/BC230/OData/Company('CRONUS International Ltd.')/Customer?$filter=City eq 'Miami'  
 ```  
 
- The following table shows the filters that are supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] OData web services and their equivalent AL filter expressions. All examples are based either on page 21, Customer \(published as **Customer**\), or on page 20, General Ledger Entry \(published as **GLEntry**\).  
-
-> [!NOTE]  
-> For filters that don't have equivalent AL expressions, the closest available AL approximation is used, as determined by the platform. For instance, tolower and toupper disable case sensitivity in comparisons, and substring gets turned into . wildcard operators), or report an error if there is no AL approximation (for instance if you perform or over different fields, e.g. field1 eq 1 or field2 eq 2). The  we pick the closest available AL approximation (for instance, tolower and toupper disable case sensitivity in comparisons, and substring gets turned into . wildcard operators), or report an error if there is no AL approximation (for instance if you perform or over different fields, e.g. field1 eq 1 or field2 eq 2).This is because filters that don't have equivalent AL expressions are processed on the [!INCLUDE[server](../developer/includes/server.md)] tier, and filters that have equivalent AL expressions are processed on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database tier.  
+The following table shows the filters that are supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] OData web services and their equivalent AL filter expressions. All examples are based either on page 21, Customer \(published as **Customer**\), or on page 20, General Ledger Entry \(published as **GLEntry**\).  
 
 |Definition|Example and explanation|Equivalent AL expression|  
 |----------------|-----------------------------|---------------------------------|  
@@ -59,19 +56,23 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
 > [!NOTE]  
 > You can learn more about setting the filters that are specific to AL language by checking out [Enter criteria in Filters](../developer/devenv-entering-criteria-in-filters.md) article.
 
+### Filters without equivalent AL expressions
+
+For filters that don't have equivalent AL expressions, the platform uses the closest available AL approximation. For example, `tolower` and `toupper` disable case sensitivity in comparisons, and `substring` gets turned into `*` wild card operators.
+
+If there's no AL approximation, an error is reported. For example, an error can occur if you perform `Or` over different fields, like `field1 eq 1 or field2 eq 2`.
+
 ## Referencing different data types in Filter expressions
 
 Use the appropriate notation for different data types with filter expressions.  
 
-- String values must be delimited by single quotation marks.  
+- Delimit string values by single quotation marks.  
 
 - Numeric values require no delimiters.
 
 ## Nested function calls
 
-Nested function calls in filter clauses are supported in $schemaversion=2.1 and later. However, the following filters aren't supported in nested function calls: Indexof, replace, trim, concat, round, floor, and ceiling. 
-
-For earlier schema versions, filter clause expressions like `contains(tolower(field), 'some')` don't return the expected results - in this case a partial case-insensitive text search - but instead either throws an error or returns an undefined result.
+Nested function calls in filter clauses are supported in `$schemaversion=2.1` and later. Nested function calls aren't supported in earlier schema versions, which means that filter clause expressions like `contains(tolower(field), 'some')` don't return the expected results. In this case, a partial case-insensitive text search - but instead either throws an error or returns an undefined result.
 
 ## See also
 
