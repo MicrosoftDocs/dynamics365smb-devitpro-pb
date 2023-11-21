@@ -50,7 +50,7 @@ You can use SetCurrentKey to hint a sort order to the [!INCLUDE[prod_short](../.
 
 When you use SetCurrentKey, the following rules apply:  
 
-- You cannot do SetCurrentKey on:
+- You can't use SetCurrentKey on:
   - FlowFilter fields
   - Nested FlowFields
   - FlowFields on ExternalSQL tables
