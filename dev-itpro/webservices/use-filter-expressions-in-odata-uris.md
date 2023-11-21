@@ -24,7 +24,7 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
  The following table shows the filters that are supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] OData web services and their equivalent AL filter expressions. All examples are based either on page 21, Customer \(published as **Customer**\), or on page 20, General Ledger Entry \(published as **GLEntry**\).  
 
 > [!NOTE]  
-> For filters that don't have equivalent AL expressions, the platform  closest available AL approximation is used. For instance, tolower and toupper disable case sensitivity in comparisons, and substring gets turned into . wildcard operators), or report an error if there is no AL approximation (for instance if you perform or over different fields, e.g. field1 eq 1 or field2 eq 2). The  we pick the closest available AL approximation (for instance, tolower and toupper disable case sensitivity in comparisons, and substring gets turned into . wildcard operators), or report an error if there is no AL approximation (for instance if you perform or over different fields, e.g. field1 eq 1 or field2 eq 2).This is because filters that don't have equivalent AL expressions are processed on the [!INCLUDE[server](../developer/includes/server.md)] tier, and filters that have equivalent AL expressions are processed on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database tier.  
+> For filters that don't have equivalent AL expressions, the closest available AL approximation is used by the platform. For instance, tolower and toupper disable case sensitivity in comparisons, and substring gets turned into . wildcard operators), or report an error if there is no AL approximation (for instance if you perform or over different fields, e.g. field1 eq 1 or field2 eq 2). The  we pick the closest available AL approximation (for instance, tolower and toupper disable case sensitivity in comparisons, and substring gets turned into . wildcard operators), or report an error if there is no AL approximation (for instance if you perform or over different fields, e.g. field1 eq 1 or field2 eq 2).This is because filters that don't have equivalent AL expressions are processed on the [!INCLUDE[server](../developer/includes/server.md)] tier, and filters that have equivalent AL expressions are processed on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database tier.  
 
 |Definition|Example and explanation|Equivalent AL expression|  
 |----------------|-----------------------------|---------------------------------|  
@@ -40,17 +40,18 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
 |endswith|`$filter=endswith(VAT_Bus_Posting_Group,'RT')`<br /><br /> Query on Customer service. Returns all customers with VAT\_Bus\_Posting\_Group values that end in 'RT'.|\*|  
 |startswith|`$filter=startswith(Name, 'S')`<br /><br /> Query on Customer service. Returns all customers names beginning with 'S'.|\*|  
 |contains|`$filter=contains(Name, 'urn')`<br /><br /> Query on Customer service. Returns customer records for customers with names containing the string “urn”.||  
-|indexof|`$filter=indexof(Location_Code, 'BLUE') eq 0`<br /><br /> Query on Customer service. Returns customer records for customers having a location code beginning with the string BLUE.||  
-|replace|`$filter=replace(City, 'Miami', 'Tampa') eq 'CODERED'`||  
 |substring|`$filter=substring(Location_Code, 5) eq 'RED'`<br /><br /> Query on Customer service. Returns true for customers with the string RED in their location code starting as position 5.||  
 |tolower|`$filter=tolower(Location_Code) eq 'code red'`||  
 |toupper|`$filter=toupper(FText) eq '2ND ROW'`||  
-|trim|`$filter=trim(FCode) eq 'CODE RED'`||  
+
+<!--
+|indexof|`$filter=indexof(Location_Code, 'BLUE') eq 0`<br /><br /> Query on Customer service. Returns customer records for customers having a location code beginning with the string BLUE.||
+|replace|`$filter=replace(City, 'Miami', 'Tampa') eq 'CODERED'`||
 |concat|`$filter=concat(concat(FText, ', '), FCode) eq '2nd row, CODE RED'`||  
 |round|`$filter=round(FDecimal) eq 1`||  
 |floor|`$filter=floor(FDecimal) eq 0`||  
-|ceiling|`$filter=ceiling(FDecimal) eq 1`||  
-
+|ceiling|`$filter=ceiling(FDecimal) eq 1`|| 
+|trim|`$filter=trim(FCode) eq 'CODE RED'`||       -->
 
 >[!Note]
 > There is a special filter, `journals.templateDisplayName` which returns default journals if a user hasn't defined the filter criteria.
