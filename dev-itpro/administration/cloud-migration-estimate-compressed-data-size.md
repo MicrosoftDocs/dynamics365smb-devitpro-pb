@@ -18,6 +18,7 @@ Currently, all tables in the online version of [!INCLUDE[prod_short](../develope
 
 [!INCLUDE[evaluate_table_compression](../includes/include_evaluate_table_compression.md)]
 
+
 If you want to estimate the compressed size of all or some tables in your database, you can create (and possibly modify) the following stored procedure:
 
 ```SQL
@@ -82,6 +83,7 @@ SET NOCOUNT OFF
 GO
 ```
 
+
 When running the stored procedure, do this
 
 ```SQL
@@ -91,6 +93,7 @@ GO
 EXEC estimate_page_compressed_table_sizes
 GO
 ```
+
 
 As mentioned above, the stored procedure `sp_estimate_data_compression_savings` fails if the table has columns with `&` in the name. With this query you can find the table names that should be excluded in definition of the stored procedure `estimate_page_compressed_table_sizes`.
 
@@ -108,7 +111,7 @@ SELECT t.name AS table_name,
 
 ## Next steps
 
-- [Using table partitioning and data compression in Business Central](./using-sql-partitioning-and-compression.md)  
+- [Understand data compression in Business Central](./using-sql-partitioning-and-compression.md)  
 - [Check prerequisites](cloud-migration-prerequisites.md)  
 - [Optimizing cloud migration performance](migration-optimize-replication.md)  
 - [Run data migration setup](migration-setup.md)
