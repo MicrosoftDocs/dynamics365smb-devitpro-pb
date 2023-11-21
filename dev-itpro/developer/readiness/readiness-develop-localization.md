@@ -96,4 +96,4 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 [The SMB Opportunity for App Publishers](opportunity-app-publisher.md)  
 [Get Started as a Reseller of Business Central Online](../../administration/get-started-online.md)  
 [Countries and Translations Supported](../../compliance/apptest-countries-and-translations.md)  
-[Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog)
+[Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)  
