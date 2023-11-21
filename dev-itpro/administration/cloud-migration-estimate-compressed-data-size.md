@@ -42,8 +42,11 @@ CREATE TABLE #compressed_table_report (
 DECLARE tables_cur cursor for 
 SELECT name
   FROM sys.tables
--- adjust this part if you want to restrict the tables in the calculation
--- WHERE table_name in ('table name 1', 'table name 2', 'table name 3') 
+-- uncomment and adjust this part if you want to only include some tables in the calculation
+-- WHERE name IN ('table name 1', 'table name 2', 'table name 3') 
+--
+-- uncomment and adjust this part if you want to restrict the tables in the calculation
+-- WHERE name NOT IN ('table name 1', 'table name 2', 'table name 3') 
 ;
  
 OPEN tables_cur;
