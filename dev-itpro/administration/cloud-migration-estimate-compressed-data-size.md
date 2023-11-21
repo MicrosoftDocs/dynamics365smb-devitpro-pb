@@ -86,8 +86,7 @@ SET NOCOUNT OFF
 GO
 ```
 
-
-When running the stored procedure, do this
+To run the stored procedure, execute the following commands:
 
 ```SQL
 USE <tenant database> // change to your database
@@ -98,7 +97,7 @@ GO
 ```
 
 
-As mentioned above, the stored procedure `sp_estimate_data_compression_savings` fails if the table has columns with `&` in the name. With this query you can find the table names that should be excluded in definition of the stored procedure `estimate_page_compressed_table_sizes`.
+The stored procedure `sp_estimate_data_compression_savings` fails if the table has columns with `&` in the name. With the following query, you can find the table names that should be excluded in definition of the stored procedure `estimate_page_compressed_table_sizes`.
 
 ```SQL
 SELECT t.name AS table_name,
