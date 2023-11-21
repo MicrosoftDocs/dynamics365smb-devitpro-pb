@@ -1008,7 +1008,9 @@
 #### [Control add-in style guide](developer/devenv-control-addin-style.md)
 #### [Control add-in best practices](developer/devenv-control-addin-bestpractices.md)
 
-### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
+### Embedding Power BI
+#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+#### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
 
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
@@ -1354,9 +1356,16 @@
 <!-- Microsoft Power BI -->
 <!--## Integrating with Microsoft Power Pages (preview) -->
 ## Integrating with Microsoft Power BI
-### [Extract data from Business Central](developer/devenv-extract-data.md)
-### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
-### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
+### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+#### Administrator
+##### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview.md)
+##### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup.md)
+#### Report creator
+##### [Get started: Build Power BI reports](/dynamics365/business-central/across-how-use-financials-data-source-powerbi.md)
+##### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox.md)
+##### [Extract data from Business Central](/dynamics365/business-central/developer/devenv-extract-data.md)
+##### [Power BI dataset load performance](/dynamics365/business-central/webservices/web-service-pbi-performance.md)
+##### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 <!-- end Microsoft Power Platform -->
