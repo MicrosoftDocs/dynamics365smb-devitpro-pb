@@ -92,6 +92,19 @@ EXEC estimate_page_compressed_table_sizes
 GO
 ```
 
+As mentioned above, the stored procedure `sp_estimate_data_compression_savings` fails if the table has columns with `&` in the name. With this query you can find the table names that should be excluded in definition of the stored procedure `estimate_page_compressed_table_sizes`.
+
+```SQL
+SELECT t.name AS table_name,
+     , ind.name AS index_name,
+     , col.name AS column_ame
+  FROM sys.indexes ind 
+ INNER JOIN sys.index_columns ic ON ind.object_id = ic.object_id AND ind.index_id = ic.index_id 
+ INNER JOIN sys.columns col ON ic.object_id = col.object_id AND ic.column_id = col.column_id 
+ INNER JOIN sys.tables t ON ind.object_id = t.object_id 
+ WHERE col.name LIKE '%&%'
+```
+
 
 ## Next steps
 
