@@ -1,12 +1,11 @@
 ---
-title: "Number Sequences"
-description: "This topic describes how to create and use number sequences in AL code in Dynamics 365 Business Central." 
+title: Number Sequences in Business Central
+description: This article describes how to create and use number sequences in AL code in Dynamics 365 Business Central. 
 author: jswymer
-ms.custom: na
-ms.date: 10/27/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bab-template
+ms.date: 11/21/2023
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: jswymer
 ---
