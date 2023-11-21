@@ -1358,14 +1358,14 @@
 ## Integrating with Microsoft Power BI
 ### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
 #### Administrator
-##### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview.md)
-##### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup.md)
+##### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview)
+##### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup)
 #### Report creator
-##### [Get started: Build Power BI reports](/dynamics365/business-central/across-how-use-financials-data-source-powerbi.md)
-##### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox.md)
-##### [Extract data from Business Central](/dynamics365/business-central/developer/devenv-extract-data.md)
-##### [Power BI dataset load performance](/dynamics365/business-central/webservices/web-service-pbi-performance.md)
-##### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
+##### [Get started: Build Power BI reports](/dynamics365/business-central/across-how-use-financials-data-source-powerbi)
+##### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
+##### [Extract data from Business Central](/dynamics365/business-central/developer/devenv-extract-data)
+##### [Power BI dataset load performance](/dynamics365/business-central/webservices/web-service-pbi-performance)
+##### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts)
 <!-- end Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 <!-- end Microsoft Power Platform -->
