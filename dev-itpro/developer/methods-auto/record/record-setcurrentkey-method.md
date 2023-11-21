@@ -208,7 +208,7 @@ SELECT Field1, Field2, Field3, Field4, Field5
 
 Assume that you have the **MyTable** table as defined in the previous example.
 
-The following example illustrates the behavior of SetCurrentKey if no keys can be found and if the SetCurrentKey was using a field that isn't supported in SetCurrentKey (in this case a field of type Blob).
+The following example illustrates the behavior of SetCurrentKey if no keys can be found and if the SetCurrentKey was using a field that isn't supported in SetCurrentKey (in this case, a field of data type Blob).
 
 ```AL
     procedure MyDataProcNoKeyFound()
