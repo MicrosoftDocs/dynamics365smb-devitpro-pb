@@ -10,7 +10,7 @@ ms.date: 11/17/2023
 ms.custom: bap-template 
 ---
 
-# Change the way data is replicated to Business Central online
+# Change how data is replicated to Business Central online
 
 The functionality to change the replication properties is used if you want to include or exclude the specific tables from cloud migration. You can also change the way how the data is replicated, either to replace the full table with the data from the On-premises table or to update and insert only the missing records.
 
