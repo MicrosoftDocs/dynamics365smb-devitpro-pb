@@ -1363,9 +1363,9 @@
 ### Report creator
 #### [Get started: Build Power BI reports](/dynamics365/business-central/across-how-use-financials-data-source-powerbi)
 #### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
-#### [Extract data from Business Central](developer/devenv-extract-data.md)
-#### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
-#### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
+### [Extract data from Business Central](developer/devenv-extract-data.md)
+### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
+### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 <!-- end Microsoft Power Platform -->
