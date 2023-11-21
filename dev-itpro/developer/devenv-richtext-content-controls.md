@@ -67,7 +67,7 @@ table 50100 MyTable
         OutStream: OutStream;
     begin
         Rec.RichTextBlob.CreateOutStream(OutStream);
-        Output.WriteText(RichText);
+        OutStream.WriteText(RichText);
         Rec.Modify();
     end;
 }
