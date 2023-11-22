@@ -64,7 +64,7 @@ The toolkit allows developers to build generative AI features integrated into Bu
 
    This a flexible, in-app UI window that’s designed for generative AI features that have distinct inputs and outputs. It exhibits the signature Microsoft AI visual elements, and Responsible AI controls such as the “AI generated” disclaimer.  
 
-   <!--A screenshot of a computer-->
+   ![Shows the prompt mode of the PromptDialog type page](../developer/media/promptdialog-content-mode.svg)
 
 - Guidance 
 
