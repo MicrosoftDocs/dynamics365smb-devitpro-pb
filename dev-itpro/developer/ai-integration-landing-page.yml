@@ -44,11 +44,15 @@ landingContent:
 # Card
   - title: Build the experience
     linkLists:
+    - linkListType: overview
+      links: 
+      - text: Developing generative AI experiences for extensions
+        url: ai-build-experience-overview.md
     - linkListType: how-to-guide
       links:
       - text: Build the AI experience in AL
         url: ai-build-capability-in-al.md
-      - text: Build the user experience
+      - text: Build the Copilot user experience
         url: ai-build-experience.md
     - linkListType: reference
       links:
