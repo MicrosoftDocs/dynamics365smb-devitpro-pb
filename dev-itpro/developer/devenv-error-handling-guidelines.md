@@ -129,6 +129,8 @@ To write error messages that are simple and feel human, consider using contracti
 - Never form a contraction from a noun and a verb, such as Microsoft’s developing many new cloud services.
 - Avoid ambiguous or awkward contractions, such as there’d, it’ll, and they’d.
 
+### Microsoft’s voice guidelines
+For more guidelines on how to communicate to the user in a way they understand, see [Microsoft's brand voice: Above all, simple and human](https://learn.microsoft.com/style-guide/brand-voice-above-all-simple-human).
 
 
 ## See also
