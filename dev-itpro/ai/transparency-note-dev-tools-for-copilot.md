@@ -74,7 +74,7 @@ The toolkit allows developers to build generative AI features integrated into Bu
 
    End-users can choose to provide feedback on generative output that is then visible to partners and to Microsoft through the standard telemetry-based PowerBI report, along with statistics around usage and adoption. The feedback mechanism is a like and dislike button at the top of the page, which leads to the option to provide a reason before submitting.  
   
-   <!--A screenshot of a computer-->
+   ![Shows the feedback dialog for copilot](../developer/media/ai-copilot-feedback.svg)
 
 - Feature governance  
 
