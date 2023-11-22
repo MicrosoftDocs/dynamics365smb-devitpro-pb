@@ -20,7 +20,7 @@ For advice on how to design error dialogs that users understand, see [User exper
 ## Unblocking users with actionable errors
 [!INCLUDE [actionable-errors-overview](includes/include-actionable-errors-overview.md)]
 
-##<a name="fix-it-actions"></a> Error messages with Fix-it actions 
+## <a name="fix-it-actions"></a> Error messages with Fix-it actions 
 
 [!INCLUDE [actionable-errors-fix-it-actions](includes/include-actionable-errors-fix-it-actions.md)]
 
@@ -48,7 +48,7 @@ If the user experience that the field cannot be validated, they will see the fol
 
 :::image type="content" source="media/validation-error-fixit.png" alt-text="Validation error with fix-it action":::
 
-##<a name="show-it-actions"></a> Error messages with Show-it actions
+## <a name="show-it-actions"></a> Error messages with Show-it actions
 The following AL code illustrates how to setup an error dialog with a Show-it action.
 
 ```AL
