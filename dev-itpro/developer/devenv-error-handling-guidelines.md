@@ -63,6 +63,9 @@ An error dialog consists of the following elements:
 
 Use the guidelines below to remove friction for the users and positively impact the user experience, even when an error occurs.
 
+For more guidelines, follow Microsoft’s voice guidelines [Microsoft's brand voice: Above all, simple and human](https://learn.microsoft.com/style-guide/brand-voice-above-all-simple-human).
+
+
 ### Titles
 The title of an error dialog is the first thing the user sees. Use the title to describe what’s wrong and enable the user to quickly scan the meaning.
 
@@ -79,11 +82,14 @@ In the body of the error dialog, use positive cases (telling what the user can d
 ### Button labels
 If you can, use a Fix-it action or a Show-it action. 
 
+For Fix-it actions, consider 
 - Fix-it actions are often phrased: “Set value to...”. 
   - Such as: “Set value to 10”, “Set Status to Open”, or “Set value to HOME”.
 - Fix-it action tooltips are often phrased: “Sets the value...”.
 - Value states are capitalized such as: Yes, Open, Released. Avoid signs for values such as = ,“”, ().
 
+
+For Show-it actions, consider 
 - Show-it actions are phrased: “Show...”.
   - Such as: “Show User Setup”, “Show Items list” or “Show Item 70062”. 
 - Show-it action tooltips are often phrased: “Opens page:..”.
@@ -123,7 +129,7 @@ To write error messages that are simple and feel human, consider using contracti
 - Never form a contraction from a noun and a verb, such as Microsoft’s developing many new cloud services.
 - Avoid ambiguous or awkward contractions, such as there’d, it’ll, and they’d.
 
-For more guidelines, follow Microsoft’s voice guidelines [Microsoft's brand voice: Above all, simple and human](https://learn.microsoft.com/style-guide/brand-voice-above-all-simple-human).
+
 
 ## See also
 [Microsoft’s voice guidelines](https://learn.microsoft.com/style-guide/brand-voice-above-all-simple-human)   
