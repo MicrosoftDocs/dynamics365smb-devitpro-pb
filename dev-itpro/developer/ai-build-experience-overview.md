@@ -17,11 +17,11 @@ ms.custom: bap-template #Required; don't change.
 <!--H1. Required. Pick an H1 that clearly conveys the task the user will complete.-->
 # Designing and developing generative AI experiences for your extensions
 
-Creating a Copilot in Business Central extension involves three main tasks: getting set up with Azure OpenAI, using the AI module in the Business Central system application, and designing the Copilot user interface. With these steps completed, you well on your way to creating a powerful and effective Copilot that can assist users with generating content and making their work easier and more efficient.
+Creating a copilot in Business Central extension involves three main tasks: getting set up with Azure OpenAI, building the AI capability using system application, and designing the copilot user interface. 
 
 ![Shows the tasks in the generative-AI development](media/dev-generative-ai-overview.svg)
 
-Let's take a closer look at each of these tasks.
+With these steps completed, you well on your way to creating a powerful and effective Copilot that can assist users with generating content and making their work easier and more efficient. Let's take a closer look at each of these tasks.
 
 ## Getting set up with Azure OpenAI
 
