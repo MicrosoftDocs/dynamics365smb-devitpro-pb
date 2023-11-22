@@ -1353,8 +1353,8 @@
 ### [Create automated flows](powerplatform/automate-workflows.md)
 ### [Create instant flows](powerplatform/instant-flows.md)
 ### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
+## [Integrating with Microsoft Power Pages (preview)](developer/power-pages-on-virtual-tables-overview.md)
 <!-- Microsoft Power BI -->
-<!--## Integrating with Microsoft Power Pages (preview) -->
 ## Integrating with Microsoft Power BI
 ### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
 ### Administrator
