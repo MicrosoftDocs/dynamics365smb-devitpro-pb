@@ -1,20 +1,15 @@
 ---
-title: How-to article template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: How-to description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: how-to #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+title: Introduction to developing generative AI experiences for your extensions
+description: Learn about the basic tasks to creating a copilot for your solution.
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: how-to 
+ms.collection:
 ms.date: 11/22/2023
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
-
-<!--This template provides the basic structure of a how-to article. See [Write a how-to topic](write-a how-to.md) in the contributor guide. To provide feedback on this template contact [bace feedback](mailto:templateswg@microsoft.com).-->
-
-<!--H1. Required. Pick an H1 that clearly conveys the task the user will complete.-->
 # Introduction to developing generative AI experiences for your extensions
 
 Creating a copilot in Business Central extension involves three main tasks: getting set up with Azure OpenAI, building the AI capability using system application, and designing the copilot user interface. 
