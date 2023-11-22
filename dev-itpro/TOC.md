@@ -1319,7 +1319,7 @@
 ### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
 ### [Get setup with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### Build a Copilot experience
-#### [Introduction](developer/developer/ai-build-capability-in-al.md)
+#### [Introduction](developer/ai-build-experience-overview.md)
 #### [Build AI capability in app](developer/ai-build-capability-in-al.md)
 #### [Design the copilot user experience](developer/ai-build-experience.md)
 ## Integrating with Microsoft Dataverse
