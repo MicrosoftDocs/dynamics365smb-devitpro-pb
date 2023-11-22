@@ -38,17 +38,15 @@ For more information, see |[Error messages with Show-it actions](devenv-actionab
 
 Error messages are meant to unblock users. The primary purpose of the error dialog is to alert users to the fact that something has gone wrong and that they need to take action to continue. 
 
-### Error dialog content
-
-Error dialogs should answer the following questions:
+_Error dialogs_ should answer the following questions:
 
 **Title:** [What went wrong]  
 **Body content:** [Why, if relevant] + [How to fix it]  
 **Button label:** [Clear action]  
 
-### Validation errors content
 
-Validation errors should answer the following questions:
+
+_Validation errors_ should answer the following questions:
 
 **Title (if needed):** [What went wrong]  
 **Body content:** [How to fix it]  
