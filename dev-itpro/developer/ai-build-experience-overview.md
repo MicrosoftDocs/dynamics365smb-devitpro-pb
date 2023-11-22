@@ -31,12 +31,13 @@ As a prerequisite to get started with creating a Copilot in Business Central, yo
 
 The AI module of the Business Central system application provides the API for communicating with Azure OpenAI. In this task, you use the AI module to define the application logic to request, retrieve, and save AI-generated content from the Azure OpenAI service.
 
-
-
-### Designing the Copilot user interface
+## Designing the copilot user interface
 
 In this task, you design the Copilot user interface by using a PromptDialog type page, The enables users to input their requirements, start the generation process, review the output, and save it. The PromptDialog page can be customized to suit the needs of your specific extension and can include fields for user input, buttons for initiating the generation process, and fields for displaying the generated content.
 
+## Next steps
 
-
+- [Get setup with Azure OpenAI Service](ai-dev-tools-get-started.md)
+- [Build AI capability in app](ai-build-capability-in-al.md)
+- [Design the Copilot user experience](ai-build-experience.md)
 
