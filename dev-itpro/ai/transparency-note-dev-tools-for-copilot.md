@@ -95,7 +95,7 @@ The following table provides additional details about the intended use:
  
 ||Intended use|
 |-|-|
-|AI models |The toolkit APIs connect to Azure OpenAI Service models for Large Language Models and embeddings. |
+|AI models |The toolkit APIs connect to Azure OpenAI Service models for Large Language Models with text completion, chat completion, and embeddings. |
 |Typical use case |Ideal for specialized, single-task processes that have a well-defined problem or outcome. |
 |User interaction |<ul><li>Windowed task inside Business Central (as opposed to alongside or outside Business Central).</li><li>Non-conversational (not a multi-turn chatbot interaction pattern).</li><li> User inputs and system outputs may be structured, such as well-defined fields.</li><li> User inputs and system outputs may be unstructured, such as freeform text.</li></ul> |
 |Distribution|Features built using the toolkit are distributed as part of Business Central extensions. |
@@ -117,9 +117,17 @@ We encourage partners to leverage the toolkit in their innovative solutions or a
 
    The toolkit is not intended for use with any other AI platforms other than Azure OpenAI Service.  
 
+- Use cases that maximize use of tokens
+
+   For some AI models, Business Central offers built-in safeguards that automatically add system prompts to your own prompt, resulting in the use of additional tokens. For example, when using Large Language Model chat completion or text completion, your prompt and completion cannot utilize the maximum number of tokens, such as 16000 tokens for a 16000 token model. The tokens automatically added to your prompt by Business Central also have financial impact and the Azure token consumption costs are part of your operating expenses through your Azure OpenAI Service key.
+
 - Financial impact
 
-   Because your AI features are attached to your Azure OpenAI Service key, you are responsible for the operating costs of Azure OpenAI resources throughout development, testing and when your customers use the feature in production or sandbox environments. For example, an AI feature that provides a handful of monthly suggestions to business owners will likely consume fewer resources and cost less. In contrast, an AI feature that generates a daily, 2-page project summary for each employee will likely consume more resources and cost more. 
+   Because your AI features are attached to your Azure OpenAI Service key, you are responsible for the operating costs of Azure OpenAI resources throughout development, testing and when your customers use the feature in production or sandbox environments. For example, an AI feature that provides a handful of monthly suggestions to business owners will likely consume fewer resources and cost less. In contrast, an AI feature that generates a daily, 2-page project summary for each employee will likely consume more resources and cost more.
+
+- Use with Embed Apps 
+
+   Some of our community partners build industry solutions through the Embed App Program. While such solutions are able to utilize the toolkit to develop generative AI solutions, only some of the built-in guard rails are available to embed apps. For example, Business Central will not append prompts to your prompts to mitigate risks and you must implement these safeguards yourself.  
 
 - Use for non-AI use cases or non-business use cases
 
@@ -147,17 +155,37 @@ We encourage partners to leverage the toolkit in their innovative solutions or a
 
 ### General limitations for AI models 
 
-It is important to understand that while AI systems are incredibly valuable tools, they are non-deterministic. This means that perfect accuracy of any generated content, suggestions or insights is not possible. Failure to understand this limitation can lead to over-reliance on the system and unmerited decisions that can impact any stakeholders including customers, their customers, and partners. Ensuring that any output of the AI model is weighted against human judgement and logic can help mitigate this risk. 
+It is important to understand that while AI systems are incredibly valuable tools, they are non-deterministic. This means that perfect accuracy of any generated content, suggestions or insights is not possible. Failure to understand this limitation can lead to over-reliance on the system and unmerited decisions that can impact any stakeholders including customers, their customers, and partners. Ensuring that any output of the AI model is weighted against human judgement and logic can help mitigate this risk.   
 
-### Limitations for specific industries, products and topics  
+
+### Limitations for specific industries, products, and topics  
+
+The toolkit includes built-in safety mechanisms that prevent the undesirable generation of harmful content, such as sexually explicit content or incitement of violence. Sometimes, our customers operate in industries, sell products and services, or work with processes that naturally overlap with what is typically considered undesirable in other contexts, or work with data that may trigger these safeguards. The toolkit may not perform as well in these cases. For example,  
+
+- an AI feature that generates project plans for testing of weapons may not be able to generate complete plans. 
+- an AI feature for a customer selling child psychology services may not be able to operate the feature.  
+
+Microsoft does not provide a mechanism for partners or customers to remove these specific safeguards or add topics to any inclusion list at this time. The list of impacted topics are: 
+
+- Topics covering offensive material that may hurt or impact all or specific demographics, minorities or children. 
+- Adult material and sexually explicit topics. 
+- Gambling. 
+- Drugs and harmful substances. 
+- Violence, physical and emotional harm. 
+
+These safeguards and limitations do not impact embed apps. 
 
 ### Language and country/region limitations  
 
-The toolkit itself does not impose limits on the set of languages or environment localizations in which your AI feature is available. Similarly, the toolkit does not define or limit which Azure OpenAI Service endpoints you deploy and connect to. Partner developers fully control these aspects of their AI features, and are responsible for ensuring both quality and compliance. 
+The toolkit itself does not determine limits on the set of languages or environment localizations in which your AI feature is available. Similarly, the toolkit does not define or limit which Azure OpenAI Service endpoints you deploy and connect to. Partner developers fully control these aspects of their AI features, and are responsible for ensuring both quality and compliance. 
 
-#### About language 
+#### About languages and Large Language Models 
 
-Large Language Models are trained on large volumes of data in different languages, but the overall corpus of data is not evenly distributed across all world languages. This means your specific use case may be more successful in some languages than others. We recommend that partners verify language quality independently for each use case, to determine which languages each use case will be made available. Language availability is regulated in some countries such as Canada: we recommend seeking appropriate legal and professional advice from a specialist to understand the laws and regulations applicable to your choice of languages. 
+Large Language Models are trained on large volumes of data in different languages, but the overall corpus of data is not evenly distributed across all world languages. This means your specific use case may be more successful in some languages than others. We recommend that partners verify language quality independently for each use case, to determine which languages each use case will be made available, and clearly documented supported languages. Language availability is regulated in some countries such as Canada: we recommend seeking appropriate legal and professional advice from a specialist to understand the laws and regulations applicable to your choice of languages. 
+
+#### Language of prompts 
+
+Business Central's built-in safeguards are designed to work with prompts that are in English language. The effectiveness of these safeguards may be lower when either the prompts you author in AL, or the data you include with your prompts, or the end-user written prompts you include with your prompt to Azure OpenAI Service are not in the English language. 
 
 #### About Azure OpenAI Service endpoints 
 
@@ -167,9 +195,9 @@ Business Central includes an administrative screen for Copilot that provides cus
 
 The Microsoft cloud runs on trust. Our fundamental promise to our customers is that their data is their data: it is not used to train foundation AI models to the benefit of others, and it is protected by the most comprehensive enterprise compliance and security controls that they govern. Furthermore, Microsoft’s AI systems are built on Responsible AI principles of fairness, reliability, safety, privacy, security, inclusiveness, transparency and accountability. When using the toolkit to implement and deploy your use cases, you have an opportunity to exhibit these same values. 
 
-To reduce time and effort to build responsible use cases, the toolkit provides numerous, built-in safeguards that reduce risk and impact to customers, their customers and partners. However, each use case may come with unique challenges depending on the nature of that use case, the affected stakeholders, and how AI is applied. You are responsible for assessing and mitigating risks for your use cases. 
+To reduce time and effort to build responsible use cases, the toolkit provides numerous, built-in safeguards that reduce risk and impact to customers, their customers and partners. However, each use case may come with unique challenges depending on the nature of that use case, the affected stakeholders, and how AI is applied. You are responsible for assessing and mitigating risks for your use cases. In some cases, resting on system safeguards may be insufficient. 
 
-### Working Responsible AI into your workflow 
+### Working Responsible AI into your development practices 
 
 We recommend that partners adopt a similar process and criteria to the [Microsoft Responsible AI Standard](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE5cmFl) as a structured mechanism to build use cases responsibly. For example, you should 
 
@@ -180,6 +208,28 @@ We recommend that partners adopt a similar process and criteria to the [Microsof
 
 ### Best practices for responsible AI 
 
+This section contains a non-exhaustive list of typical risks associated with Large Language Models, along with hints to where you can invest in additional mitigation if that risk is applicable to your use case. 
+
+
+|Risk, if applicable to your use case |Mitigations provided by the toolkit for chat|Mitigations provided by the toolkit for text completions |Considerations or example mitigations you could invest in |
+|-|-|-|-|
+|Harmful content |Yes* |Yes* |<ul><li>Post-processing of generated content <li></li>Raise content filtering severity in Azure OpenAI Service</li></ul> |
+|Transparency|Yes|Yes|<ul><li>Provide transparency documentation about AI impact and link to it from your PromptDialog.<li></li>Label the feature as Preview initially to set clear expectations with your customers.</li></ul>|
+|Overreliance|Yes|Yes|<ul><li>Include suggestive terms like “suggestion”, or “draft” to indicate generative output<li></li>Only transmit or commit generated content to the database when the user chooses Keep it in the Prompt Dialog.<li></li>Make output fields editable so that users can correct and adjust. </li></ul>|
+|Impact to security and privacy |Yes|Yes||
+|Generation of third-party or copyrighted material|Moderate*|Limited ||
+|Advice in highly regulated domains or misuse for influencing political process |Limited|Limited||
+|Stereotyping, demeaning, over or underrepresenting social groups |Moderate* |Limited||
+|Quality disparity across demographics|Limited|Limited|<ul><li>Assess quality of the user case in each language and prevent access depending on user language if quality is poor.<li></li>Make the use of AI optional where possible.</li></ul> |
+|Fabrication and ungrounded content |Limited|Limited|<ul><li>Provide context with your prompts in the form of trustworthy data from the Business Central database.<li></li>Post-processing of generated content. </li></ul> |
+|Lack of provenance for generated content |Limited|Limited||
+|Intelligibility |Limited|Limited||
+|Prompt exposure, injection |Yes* |None|<ul><li>Secure your prompts, such as using Azure Key Vault<li></li><li>Specify that prompt strings are not viewable to the Business Central debugger.</li><li>Append your own protective metaprompts when using text completion.</li></ul>|
+|Generation of malware or incorrect code |Moderate*  |Limited|<ul><li>Secure your prompts, such as using Azure Key Vault<li></li><li>Specify that prompt strings are not viewable to the Business Central debugger.</li><li>Append your own protective metaprompts when using text completion.</li></ul>|
+|Misuse for API building  |None |None|<ul><li>void using the AI module separately from the PromptDialog </li><li>Prevent extensibility of your Prompt Dialog by setting the appropriate AL property on the page.</li></ul>|
+
+* These risk mitigations are not available for embed apps. Partners must implement their own safeguards. 
+
 ## Evaluation of the toolkit 
 
 ### Evaluation methods and results 
@@ -189,6 +239,7 @@ The toolkit is reviewed and tested throughout Microsoft's development lifecycle 
 Early adoption of the toolkit by select partner developers across different skill levels indicates that the toolkit is successful in reducing effort and delivering a seamless experience as intended, with the user experience successfully drawing user attention towards review of generated content. 
 
 Prompt guard rails indicate a high (>95%) success rate at deflecting risks such as harmful content and prompt injection. 
+
 
 ## Learn more about responsible AI 
 
