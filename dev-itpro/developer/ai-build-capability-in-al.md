@@ -113,7 +113,7 @@ When the prerequisites are met, and you have retrieved an endpoint URL, an Azure
 > [!TIP]  
 > It's recommended to create a page, from which you can type in these three keys, so that you're not hardcoding any values.
 
-The following example shows how to save the authorization information by calling the `Azure OpenAI` codeunit. The `SetAuthorization` procedure saves the authorization information in the `IsolatedStorage` object, which provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions. The ApiKey variable is defined as `NonDebuggable`, which means that it won't be available to the debugger for inspection.
+The following example shows how to save the authorization information by calling the `Azure OpenAI` codeunit. The `SetAuthorization` procedure saves the authorization information in the `IsolatedStorage` object, which provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions. The ApiKey variable is defined as `NonDebuggable`, which means that it isn't available to the debugger for inspection.
 
 An alternative to using the `IsolatedStorage` object, if you're building an AppSource app, is to use the AppSource Key Vault. For more information, see [Setting up App Key Vaults for Business Central Online](../administration/setup-app-key-vault.md).
 
@@ -179,9 +179,9 @@ codeunit 54334 "CopilotJob"
 
 ### Metaprompt
 
-A *metaprompt* is a prompt that is used to define the model’s profile, capabilities, and limitations for the implementation of your scenario. It's used to improve the performance of language models and to provide a better user experience. The metaprompt defines the output format of the model and provides examples to demonstrate the intended behavior of the model. The metaprompt also provides other behavioral guardrails to ensure that the model doesn't generate undesirable content. For more information, see [System message framework and template recommendations for Large Language Models (LLMs)](/azure/ai-services/openai/concepts/system-message). For guidance on responsible AI, see [Responsible AI](ai-responsible-ai.md).
+A *metaprompt* is a prompt used to define the model’s profile, capabilities, and limitations for the implementation of your scenario. It's used to improve the performance of language models and to provide a better user experience. The metaprompt defines the output format of the model and provides examples to demonstrate the intended behavior of the model. The metaprompt also provides other behavioral guardrails to ensure that the model doesn't generate undesirable content. For more information, see [System message framework and template recommendations for Large Language Models (LLMs)](/azure/ai-services/openai/concepts/system-message). For guidance on responsible AI, see [Responsible AI](ai-responsible-ai.md).
 
 
 ## Next steps
 
-When you have registered the AI capability, authorized through Azure OpenAI, and written code that generates text based on the metaprompt and the user input, you can now build the interface for handling the user input and generated output. For more information, see [Design the user experience](ai-build-experience.md).
+When you've registered the AI capability, authorized through Azure OpenAI, and written code that generates text based on the metaprompt and the user input, you can now build the interface for handling the user input and generated output. For next steps, see [Design the user experience](ai-build-experience.md).
