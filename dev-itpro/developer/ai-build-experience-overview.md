@@ -15,7 +15,7 @@ ms.custom: bap-template #Required; don't change.
 <!--This template provides the basic structure of a how-to article. See [Write a how-to topic](write-a how-to.md) in the contributor guide. To provide feedback on this template contact [bace feedback](mailto:templateswg@microsoft.com).-->
 
 <!--H1. Required. Pick an H1 that clearly conveys the task the user will complete.-->
-# Designing and developing generative AI experiences for your extensions
+# Introduction to developing generative AI experiences for your extensions
 
 Creating a copilot in Business Central extension involves three main tasks: getting set up with Azure OpenAI, building the AI capability using system application, and designing the copilot user interface. 
 
