@@ -36,17 +36,19 @@ For more information, see |[Error messages with Show-it actions](devenv-actionab
 
 ## Error message best practices - what to say?
 
-Error messages are meant to unblock users. The primary purpose of the error dialog is to alert users to the fact that something has gone wrong and that they need to take action to continue. 
+Error messages are meant to unblock users. The primary purpose of the error dialog is to alert users to the fact that something has gone wrong and that they need to take action to continue. There are essentially two different types of error situations that a user can experience:
+1. Error dialogs
+2. Validation errors
 
-_Error dialogs_ should answer the following questions:
+### Error message best practices (Error dialogs)
+Error dialogs should answer the following questions:
 
 **Title:** [What went wrong]  
 **Body content:** [Why, if relevant] + [How to fix it]  
 **Button label:** [Clear action]  
 
-
-
-_Validation errors_ should answer the following questions:
+### Error message best practices (Validation errors)
+Validation errors should answer the following questions:
 
 **Title (if needed):** [What went wrong]  
 **Body content:** [How to fix it]  
