@@ -46,7 +46,7 @@ landingContent:
     linkLists:
     - linkListType: overview
       links: 
-      - text: Introduction
+      - text: Introduction 
         url: ai-build-experience-overview.md
     - linkListType: how-to-guide
       links:
