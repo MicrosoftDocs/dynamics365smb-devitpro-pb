@@ -61,11 +61,12 @@ begin
 end;
 ```  
 
-> [!NOTE]  
-> The first parameter in WordXmlPart is an integer that is the object ID of the report. To code robustly, never supply the object ID directly in your code. Instead, use the :: operator as illustrated in the example above. With this technique, if the report does not exist, you'll get a compile time error instead of a runtime error. 
-
-
 [!INCLUDE[example-2](../../includes/include-wordxmlpart-example-2.md)]
+
+
+> [!NOTE]  
+> The first parameter in WordXmlPart is an integer which represents the object ID of the report. To code robustly, never supply the object ID directly in your code. Instead, use the :: operator as illustrated in the example above. With this technique, if the report does not exist, you'll get a compile time error instead of a runtime error. 
+
 
 ## See Also
 [Report Data Type](report-data-type.md)  
