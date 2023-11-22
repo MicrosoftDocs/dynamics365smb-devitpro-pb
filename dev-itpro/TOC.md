@@ -1008,7 +1008,9 @@
 #### [Control add-in style guide](developer/devenv-control-addin-style.md)
 #### [Control add-in best practices](developer/devenv-control-addin-bestpractices.md)
 
-### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
+### Embedding Power BI
+#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+#### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
 
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
@@ -1362,6 +1364,13 @@
 <!-- Microsoft Power BI -->
 <!--## Integrating with Microsoft Power Pages (preview) -->
 ## Integrating with Microsoft Power BI
+### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+### Administrator
+#### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview)
+#### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup)
+### Report creator
+#### [Get started: Build Power BI reports](/dynamics365/business-central/across-how-use-financials-data-source-powerbi)
+#### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
 ### [Extract data from Business Central](developer/devenv-extract-data.md)
 ### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 ### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)

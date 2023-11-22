@@ -3,7 +3,7 @@ title: "PromptMode Property"
 description: "Specifies the current mode of a PromptDialog page."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/25/2023
+ms.date: 11/17/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,9 +25,9 @@ Specifies the current mode of a PromptDialog page.
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Content**|runtime version 1.0|Prompting the user for input for the copilot interaction.|
+|**Content**|runtime version 1.0|Showing the output of the copilot interaction.|
 |**Generate**|runtime version 1.0|Generating the output of the copilot interaction.|
-|**Prompt**|runtime version 1.0|Showing the output of the copilot interaction.|
+|**Prompt**|runtime version 1.0|Prompting the user for input for the copilot interaction.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

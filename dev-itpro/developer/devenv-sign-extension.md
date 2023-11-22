@@ -27,7 +27,7 @@ The signing of an app package file must be performed on a computer that has [!IN
 
 1. Prepare your computer for signing. 
 2. Make sure that you sign the .app file on a Microsoft Windows computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed.
-3. Copy the certificate that you purchased from a third-party certificate authority to a folder on the computer. The example uses a pfx version of the certificate. If the certificate you purchased isn't in a pfx format, create a [PFX file](https://uk.godaddy.com/help/windows-install-codedriver-signing-certificate-and-create-pfx-file-2698). The file path for the sample command is `C:\Certificates\MyCert.pfx`. (Optionally, create your own certificate for local test or development purposes using the [Self-signed certificate](#self-signed-certificate) information).
+3. Copy the certificate that you purchased from a third-party certificate authority to a folder on the computer. The example uses a pfx version of the certificate. If the certificate you purchased isn't in a pfx format, create a pfx file. The file path for the sample command is `C:\Certificates\MyCert.pfx`. (Optionally, create your own certificate for local test or development purposes using the [Self-signed certificate](#self-signed-certificate) information).
 4. Install a signing tool such as [SignTool](/dotnet/framework/tools/signtool-exe) or [SignCode](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537364(v=vs.85)) to the computer. The sample command will use SignTool.
 5. Copy your extensions .app file to the computer if it's not already on the computer. The file path for the sample command is `C:\NAV\Proseware.app`.
 6. Run the command to sign the .app file.  
@@ -73,4 +73,5 @@ If the Certification Path has only one entry then the file isn't signed correctl
 ## See Also
 [Get Started with AL](devenv-get-started.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)    
-[AL Development Environment](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)   
+[Questions about code-singing validation](devenv-checklist-submission-faq.md#questions-about-code-signing-validation)
