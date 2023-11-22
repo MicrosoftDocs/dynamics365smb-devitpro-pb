@@ -49,11 +49,6 @@ If the user experience that the field cannot be validated, they will see the fol
 :::image type="content" source="media/validation-error-fixit.png" alt-text="Validation error with fix-it action":::
 
 ## <a name="show-it-actions"></a> Error messages with Show-it actions
-The following AL code illustrates how to setup an error dialog with a Show-it action.
-
-```AL
-// TODO
-```
 
 [!INCLUDE [actionable-errors-show-it-actions](includes/include-actionable-errors-show-it-actions.md)]
 
