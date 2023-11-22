@@ -18,6 +18,7 @@ Currently, all tables in the online version of [!INCLUDE[prod_short](../develope
 
 [!INCLUDE[evaluate_table_compression](../includes/include_evaluate_table_compression.md)]
 
+
 If you want to estimate the compressed size of all or some tables in your database, you can create (and possibly modify) the following stored procedure:
 
 ```SQL
@@ -41,8 +42,11 @@ CREATE TABLE #compressed_table_report (
 DECLARE tables_cur cursor for 
 SELECT name
   FROM sys.tables
--- adjust this part if you want to restrict the tables in the calculation
--- WHERE table_name in ('table name 1', 'table name 2', 'table name 3') 
+-- uncomment and adjust this part if you want to only include some tables in the calculation
+-- WHERE name IN ('table name 1', 'table name 2', 'table name 3') 
+--
+-- uncomment and adjust this part if you want to restrict the tables in the calculation
+-- WHERE name NOT IN ('table name 1', 'table name 2', 'table name 3') 
 ;
  
 OPEN tables_cur;
@@ -82,7 +86,7 @@ SET NOCOUNT OFF
 GO
 ```
 
-When running the stored procedure, do this
+To run the stored procedure, execute the following commands:
 
 ```SQL
 USE <tenant database> // change to your database
@@ -93,9 +97,23 @@ GO
 ```
 
 
+The stored procedure `sp_estimate_data_compression_savings` fails if the table has columns with `&` in the name. With the following query, you can find the table names that should be excluded in definition of the stored procedure `estimate_page_compressed_table_sizes`.
+
+```SQL
+SELECT t.name AS table_name,
+     , ind.name AS index_name,
+     , col.name AS column_ame
+  FROM sys.indexes ind 
+ INNER JOIN sys.index_columns ic ON ind.object_id = ic.object_id AND ind.index_id = ic.index_id 
+ INNER JOIN sys.columns col ON ic.object_id = col.object_id AND ic.column_id = col.column_id 
+ INNER JOIN sys.tables t ON ind.object_id = t.object_id 
+ WHERE col.name LIKE '%&%'
+```
+
+
 ## Next steps
 
-- [Using table partitioning and data compression in Business Central](./using-sql-partitioning-and-compression.md)  
+- [Understand data compression in Business Central](./using-sql-partitioning-and-compression.md)  
 - [Check prerequisites](cloud-migration-prerequisites.md)  
 - [Optimizing cloud migration performance](migration-optimize-replication.md)  
 - [Run data migration setup](migration-setup.md)
