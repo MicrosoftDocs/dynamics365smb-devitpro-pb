@@ -35,10 +35,10 @@ The following diagram illustrates the PromptDialog page type within the basic co
 
 ||In UI|In AL code|Learn more|
 |-|-|-|-|
-|1|User starts the Copilot experience by selecting an action on a page.|An `action` control on a page runs the PromptDialog type page|[Launch experience](#launch-experience)|
-|2|The PromptDialog page opens in the prompt mode, where users can enter input|The PromptDialog page is defined by setting the PageType property to `PromptDailog`.|[Create PromptDialog type page](#create-promptdialog-type-page)
-|3|User enters information that Copilot uses to generate results. |The `prompt` area of the PromptDialog page defines what the user can input, which typically consists of one or more editable fields|[Create PromptDialog type page](#create-promptdialog-type-page)<br><br>[Add prompt area](#add-the-prompt-area)|
-|4|User selects a button to start generating content with Copilot|A system action `Generate` starts the AI generation process.|[Add the generate action](#add-a-system-action-to-start-ai-generation)|
+|1|User starts the copilot experience by selecting an action on a page.|An `action` control on a page runs the PromptDialog type page|[Launch experience](#launch-experience)|
+|2|The PromptDialog page opens in the prompt mode, where users can enter input|The PromptDialog page is defined by setting the PageType property to `PromptDailog`.|[Create PromptDialog type page](#create-promptdialog-type-page) 
+|3|User enters information that Copilot uses to generate results. |The `prompt` area of the PromptDialog page defines what the user can input, which typically consists of one or more editable fields|[Add prompt area](#add-the-prompt-area)|
+|4|User selects a button to start generating content with AI|A system action `Generate` starts the AI generation process.|[Add the generate action](#add-a-system-action-to-start-ai-generation)|
 |5|The AI-generated content is returned and displayed in a page|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Add content area](#add-a-content-area)|
 |6|User chooses to save or discard the results by using actions at the bottom of the page |A system action for saving and one for discarding work with a trigger respect the user's choice, and close the page||  
 

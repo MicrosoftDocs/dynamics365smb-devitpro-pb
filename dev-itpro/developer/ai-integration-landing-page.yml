@@ -46,7 +46,7 @@ landingContent:
     linkLists:
     - linkListType: overview
       links: 
-      - text: Developing generative AI experiences for extensions
+      - text: Introduction 
         url: ai-build-experience-overview.md
     - linkListType: how-to-guide
       links:
