@@ -80,8 +80,7 @@ The toolkit allows developers to build generative AI features integrated into Bu
 
    Developers have a convenient way to funnel generative AI features into a single admin screen where customer admins can gain an overview of AI features available on that specific environment, manage compliance such as data movement across compliance boundaries, and also deactivate specific AI features that their organization isn’t ready to use.  
 
-   <!--A screenshot of a computer-->
-
+   [![Shows the Business Central role center and the checklist for Copilot](../developer/media/copilot-and-ai-capabilties-page.svg)](../developer/media/copilot-and-ai-capabilties-page.svg#lightbox)
 ### Use cases 
 
 #### Intended uses 
