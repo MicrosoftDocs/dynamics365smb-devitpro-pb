@@ -113,7 +113,7 @@ When the prerequisites are met, and you have retrieved an endpoint URL, an Azure
 > [!TIP]  
 > It's recommended to create a page, from which you can type in these three keys, so that you're not hardcoding any values.
 
-The following example shows how to save the authorization information by calling the `Azure OpenAI` codeunit. The `SetAuthorization` procedure saves the authorization information in the `IsolatedStorage` object, which provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions.
+The following example shows how to save the authorization information by calling the `Azure OpenAI` codeunit. The `SetAuthorization` procedure saves the authorization information in the `IsolatedStorage` object, which provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions. The ApiKey variable is defined as `NonDebuggable`, which means that it won't be available to the debugger for inspection.
 
 An alternative to using the `IsolatedStorage` object, if you're building an AppSource app, is to use the AppSource Key Vault. For more information, see [Setting up App Key Vaults for Business Central Online](../administration/setup-app-key-vault.md).
 
