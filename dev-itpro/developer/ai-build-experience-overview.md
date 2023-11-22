@@ -10,7 +10,7 @@ ms.date: 11/22/2023
 ms.custom: bap-template
 ---
 
-# Introduction to developing generative AI experiences for your extensions
+# Developing generative AI experiences overview
 
 Creating a copilot in Business Central extension involves three main tasks: getting set up with Azure OpenAI, building the AI capability using system application, and designing the copilot user interface. 
 
