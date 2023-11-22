@@ -1319,9 +1319,9 @@
 ### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
 ### [Get setup with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### Build a Copilot experience
-#### [Introduction](developer/ai-build-capability-in-al.md)
+#### [Introduction](developer/developer/ai-build-capability-in-al.md)
 #### [Build AI capability in app](developer/ai-build-capability-in-al.md)
-#### [Design the Copilot user experience](developer/ai-build-experience.md)
+#### [Design the copilot user experience](developer/ai-build-experience.md)
 ## Integrating with Microsoft Dataverse
 ### Data synchronization
 #### [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)
