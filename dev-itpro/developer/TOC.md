@@ -550,6 +550,7 @@
 #### [AL0811](diagnostics/diagnostic-al811.md)
 #### [AL0812](diagnostics/diagnostic-al812.md)
 #### [AL0813](diagnostics/diagnostic-al813.md)
+#### [AL0817](diagnostics/diagnostic-al817.md)
 #### [AL0999](diagnostics/diagnostic-al999.md)
 #### [AL1001](diagnostics/diagnostic-al1001.md)
 #### [AL1002](diagnostics/diagnostic-al1002.md)

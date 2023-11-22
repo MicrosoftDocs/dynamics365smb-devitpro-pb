@@ -1,17 +1,16 @@
 ---
-title: "Number Sequences"
-description: "This topic describes how to create number sequences in AL code in Dynamics 365 Business Central." 
+title: Number sequences in Business Central
+description: This article describes how to create and use number sequences in AL code in Dynamics 365 Business Central. 
 author: jswymer
-ms.custom: na
-ms.date: 10/27/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bab-template
+ms.date: 11/21/2023
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: jswymer
 ---
 
-# Number Sequences in [!INCLUDE[prod_short](includes/prod_short.md)]
+# Number sequences in [!INCLUDE[prod_short](includes/prod_short.md)]
 
 [!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
  
@@ -40,7 +39,8 @@ To create and manage number sequences, you use the `NumberSequence` data type an
 |[Next(String[, Boolean])](methods-auto/numbersequence/numbersequence-next-method.md)|Retrieves the next value from the number sequence.|
 |[Current(String[, Boolean])](methods-auto/numbersequence/numbersequence-current-method.md)|Gets the current value from the number sequence, without doing any increment. The value is retrieved out of transaction. The value will not be returned on transaction rollback.|
 
-### Examples
+### Examples (creating and deleting NumberSequence objects)
+The following AL examples show how you can create and delete NumberSequence objects (and the corresponding sequence objects in SQL).
 
 ```AL
 // Creates a NumberSequence object that starts with the value '0' and increments by '1'​
@@ -56,10 +56,15 @@ NumberSequence.Insert('StartsWithZeroIncrementTenSequence', 0, 10);
 NumberSequence.Insert('MyCompanySequence', 0, 1, true); ​
 ​
 // Verifies whether a specific NumberSequence object exists, and if so, deletes it
-
 if NumberSequence.Exists('MySequence', true) then
-    NumberSequence.Delete('MySequence',true);​
-​
+    NumberSequence.Delete('MySequence',true);​​
+```
+
+
+### Examples (using NumberSequence objects)
+The following AL examples show how you can use NumberSequence objects in your AL code to generate numbers.
+
+```AL
 // Gets and returns the current value in a NumberSequence object
 number := NumberSequence.Current('MySequence',true);​
 

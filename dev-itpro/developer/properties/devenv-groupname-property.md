@@ -1,9 +1,9 @@
 ---
 title: "GroupName Property"
-description: "If the entitlement type is ConcurrentUserServicePlan, the GroupName determines which AAD group that users with this entitlement should be members of."
+description: "If the entitlement type is ConcurrentUserServicePlan, the GroupName determines which Microsoft Entra group that users with this entitlement should be members of."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/25/2023
+ms.date: 11/17/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # GroupName Property
 > **Version**: _Available or changed with runtime version 7.0._
 
-If the entitlement type is ConcurrentUserServicePlan, the GroupName determines which AAD group that users with this entitlement should be members of.
+If the entitlement type is ConcurrentUserServicePlan, the GroupName determines which Microsoft Entra group that users with this entitlement should be members of.
 
 ## Applies to
 -   Entitlement

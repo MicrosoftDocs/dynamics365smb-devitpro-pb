@@ -74,7 +74,7 @@ You will now see the generated report in preview mode.
 
 > [!NOTE]  
 > If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line:
-  
+
 >```json
 >"al.compilationOptions": {
 >    "generateReportLayout": true
@@ -82,6 +82,16 @@ You will now see the generated report in preview mode.
 >```
 
 [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
+
+## Report labels in RDL layouts
+
+[!INCLUDE [report_labels](includes/include-report-labels.md)]
+
+> [!NOTE]  
+> Report labels defined in the report object are available as parameters in RDL. 
+
+For more information about labels, see [Working with labels](devenv-using-labels.md).
+
 
 ## See Also
 
