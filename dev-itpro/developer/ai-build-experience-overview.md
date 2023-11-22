@@ -29,7 +29,7 @@ As a prerequisite to get started with creating a Copilot in Business Central, yo
 
 ## Building AI capability using the AI module of system application
 
-The AI module of the Business Central system application provides the API for communicating with Azure OpenAI. In this task, you use the AI module to define the application logic to request, retrieve, and save AI-generated content from the Azure OpenAI service.
+The AI module of the Business Central system application provides the API for communicating with Azure OpenAI. In this task, you use the AI module to define the application logic to request and retrieve AI-generated content from the Azure OpenAI service.
 
 ## Designing the copilot user interface
 
