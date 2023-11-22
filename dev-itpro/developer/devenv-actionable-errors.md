@@ -14,7 +14,7 @@ ms.service: dynamics365-business-central
 
 This article describes how to handle error dialogs in AL code, specifically how to use the error handling framework to provide recommended actions to users to resolve errors more effectively. 
 
-Please look into the article [User experience guidelines for errors](devenv-error-handling-guidelines.md) for advice on 
+For advice on how to design error dialogs that users understand, see [User experience guidelines for errors](devenv-error-handling-guidelines.md). 
 
 
 ## Unblocking users with actionable errors
