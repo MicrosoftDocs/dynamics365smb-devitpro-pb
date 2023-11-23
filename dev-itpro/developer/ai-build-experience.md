@@ -212,25 +212,45 @@ layout
 }
 ```
 
-### Add a save and discard action
+### Add a save and discard action 
 
-In this task, you define the area of the content that displays results of the AI generation. To define this area, you add an `area(Content)` control to the `layout`, then add one or more data fields.
+In this task, you add actions to the content mode that enable users to save or discard the AI-generated proposal. In accordance with responsible AI, it's important to respect the user's choice.
+
+![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-save.svg)
+
+1. Add the code that saves or discards using either the [OnQueryClosePage](triggers-auto/page/devenv-onqueryclosepage-page-trigger.md) or the value returned from the page.runmodal.
+
+   ```al
+   trigger OnQueryClosePage(CloseAction: Action): Boolean
+   var
+       SaveCopilotJobProposal: Codeunit "Save Copilot Job Proposal";
+    begin
+        if CloseAction = CloseAction::OK then
+            SaveCopilotJobProposal.Save(CustomerNo, CopilotJobProposal);
+    end;
+   ```
+
+1. To define this area, you add an `area(Content)` control to `layout`, then add one or more data fields.
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-save.svg)
 
 ```al
-layout
+actions
 {
-    area(Content)
-    {
-        field(generatedOutput; Output)
-        {
-            ShowCaption = false;
-            MultiLine = true;
-        }
-    }
+    systemaction(OK)
+    {
+        Caption = 'Keep it';
+        ToolTip = 'Save the proposal.';
+    }
+    systemaction(Cancel)
+    {
+        Caption = 'Discard';
+        ToolTip = 'Throw away the proposal.';
+    }
+
 }
 ```
+
 
 
 ### Add a regenerate action
@@ -240,7 +260,7 @@ In this task, you add an action to the PromptDialog page that enables users to g
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-regen.svg)
 
 
-To include this action, add a `systemaction(Regenerate)` control to the `area(SystemActions)`.
+To include this action, add a `systemaction(Regenerate)` control to `area(SystemActions)`.
 
 ```al
 actions
