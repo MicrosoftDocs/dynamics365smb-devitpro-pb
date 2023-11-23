@@ -376,14 +376,16 @@ end;
 }
 ```
 
+<!--
 ## Notes
 
 If the DataCaptionExpression has no value, the caption property is used. 
 
 System actions on promptdialog in prompt mode is always: Generate, Attach, options
 
-System actions order on promptdialog in Content mode is always: OK, Regenerate, Cancel, options. Regardless fo order in AL.
+System actions order on promptdialog in Content mode is always: OK, Regenerate, Cancel, options. Regardless fo order in AL.-->
 
-## Next steps
+## See also
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+[Integrating AI using developer tools for copilot](ai-integration-landing-page.yml)
+
