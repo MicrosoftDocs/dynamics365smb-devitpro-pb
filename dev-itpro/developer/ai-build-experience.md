@@ -40,6 +40,7 @@ The following diagram illustrates the PromptDialog page type within the basic co
 
 
 
+
 <!--
 1. User opens the Promptdialog page to start the experience, for example, be selecting an action on another page.
 1. The page opens to display a prompt area, where users can provide input, for example, text.
