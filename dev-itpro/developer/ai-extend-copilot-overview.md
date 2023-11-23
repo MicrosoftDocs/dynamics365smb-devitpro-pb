@@ -49,7 +49,7 @@ AI might suggest actions with undesirable or harmful side effects due to inadequ
 - When taking action on user's behalf, copilot provides a preview AI generated results.
 - When showing generated information, copilot indicates that the information is AI generated amd states the confidence level; allowing users to make information decisions.
 - Users have way to completely discard, or undo, the results. 
-- Users can provide feedback about the quality of the 
+- Users can provide feedback about the quality of the results. 
 
 
 ## Next steps
