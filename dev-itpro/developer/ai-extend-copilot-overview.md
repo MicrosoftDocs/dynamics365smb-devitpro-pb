@@ -1,5 +1,5 @@
 ---
-title: Is your offering a copilot?
+title: What is a copilot?
 description: Learn what is considered to be a copilot.
 author: jswymer
 ms.author: jswymer 
