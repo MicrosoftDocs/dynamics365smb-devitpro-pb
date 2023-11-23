@@ -12,19 +12,17 @@ ms.custom: bap-template
 
 # What is a copilot?
 
-At Microsoft, *copilot* refers to a category of large language model-based, generative AI interaction. A copilot empowers people to be smarter, more productive, more 
-creative, and connected to the people and things around them.
+At Microsoft, the term *copilot* refers to a category of large language model-based, generative AI interaction. A copilot empowers users to be smarter, more productive, more creative, and more connected to the people and things around them.
 
-This article explains the essential characteristics of a copilot, which your offering must include to be considered a copilot in Business Central. Using the developer tools for copilot  helps you meet the criteria. 
+This article explains the essential characteristics of a copilot and what your offering must include to be considered a copilot in Business Central. By using the developer tools for copilot, you can meet the necessary criteria.
 
 ## LLM-based
 
-The experience is an interactive, chat-based generative AI agent built on a large language model (LLM) or other state-of-the-art foundational model.
+A copilot experience is an interactive, chat-based generative AI agent built on a large language model (LLM) or other state-of-the-art foundational model. This means that the copilot uses advanced natural language processing to understand user input and generate responses that are tailored to the user's specific needs
 
 ## Responds to natural language to empower users to achieve tasks
 
-The experience responds to natural language to empower users to achieve tasks that would otherwise require substantial cognitive load or creativity, and time. Examples of ways AI and copilot can support users:
-
+One of the key features of a copilot is its ability to respond to natural language input from users. Copilot should help users accomplish complex tasks that would otherwise require substantial cognitive load, creativity, and time. For example, copilot can assist users with the following tasks:
 <!--
    - Generate content
    - Command product functionality
@@ -44,12 +42,14 @@ The experience responds to natural language to empower users to achieve tasks th
 
 ## Manages generative AI risks through human-in-the-loop pattern
 
-AI might suggest actions with undesirable or harmful side effects due to inadequate or erroneous input, incorrect interpretation of input, or flawed inference. AI mights provide incorrect, offensive, or inappropriate statements and claims due to inadequate or erroneous input, incorrect. Copilot must mitigate or reduce these risks. Human oversight, also known as human-in-the-loop (HITL), is essential to reducing these risks.  
+While copilot can be a powerful tool for productivity and creativity, it's important to manage the risks associated with generative AI. AI might suggest actions with undesirable or harmful side effects due to inadequate or erroneous input, incorrect interpretation of input, or flawed inference. Also, AI might provide incorrect, offensive, or inappropriate statements and claims.
 
-- When taking action on user's behalf, copilot provides a preview AI generated results.
-- When showing generated information, copilot indicates that the information is AI generated amd states the confidence level; allowing users to make information decisions.
-- Users have way to completely discard, or undo, the results. 
-- Users can provide feedback about the quality of the results. 
+Copilot must mitigate or reduce these risks by incorporating human oversight, also known as human-in-the-loop (HITL), into the experience. To reduce the risk of undesirable or harmful side effects, copilot supports the following:
+
+- A preview of AI-generated results before taking action on the user's behalf.
+- When showing generated information, copilot indicates that the information is AI-generated and states the confidence level, allowing users to make informed decisions. 
+- Users have the option to completely discard or undo the results.
+- Users can provide feedback about the quality of the results.
 
 
 ## Next steps
