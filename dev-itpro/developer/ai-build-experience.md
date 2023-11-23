@@ -201,7 +201,7 @@ In this task, you define the area of the content that displays results of the AI
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-output-area.svg)
 
-To define this area, you add an `area(Content)` control to the `layout`, then add one or more data fields. You can structure and arrange fields in groups and page parts. You can't user repeater control. 
+To define this area, you add an `area(Content)` control to the `layout`, then add one or more data fields. You can structure and arrange fields in groups and page parts. You can't use a repeater control. 
 
 ```al
 layout
