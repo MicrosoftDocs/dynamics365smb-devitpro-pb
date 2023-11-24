@@ -81,7 +81,6 @@ By specifying HTTP request header `Data-Access-Intent`, it's possible to overrid
 
 [!INCLUDE[database_access_intent_note](../includes/include-database-access-intent-note.md)]
 
-
 ### Possible header values
 
 |Value|Description|
