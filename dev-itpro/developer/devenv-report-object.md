@@ -39,6 +39,11 @@ In the following, you can read about properties of the different layout types.
 | RDL | Pro-developer layout experience (not for end-users.) <br> Mostly needed for document reports. Use this layout type when you need pixel-perfect outputs for printing. <br> Supports printing from the request page. | 
 | Word | Low-code layout experience. Some expert end-users can work with XML and tags. <br> Mostly needed for document reports. <br> Supports printing from the request page.  | 
 
+## Report labels
+
+[!INCLUDE [report_labels](includes/include-report-labels.md)]
+
+For more information about labels, see [Working with labels](devenv-using-labels.md).
 
 ## Snippet support
 

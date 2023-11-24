@@ -1,12 +1,11 @@
 ---
-title: "NumberSequence Data Type"
-description: "Is a complex data type for creating and managing number sequences in the database."
+title: NumberSequence Data Type
+description: NumberSequence a complex data type for creating and managing number sequences in the database.
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 11/21/2023
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -32,6 +31,9 @@ The following methods are available on the NumberSequence data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## See Also  
-[Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Using number sequences](../../devenv-number-sequences.md)  
+[Get atarted with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  

@@ -1,5 +1,6 @@
 ---
 title: "Extending Price Calculations"
+description: "How you extend the price calculations in Dynamics 365 Business Central."
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -147,7 +148,7 @@ Now we'll subscribe to the 'OnCopyFromSalesPrice' event to copy data from "Sales
 codeunit 50012 "Copy DocumentNo to Price List"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::CopyFromToPriceListLine, 'OnCopyFromSalesPrice', '', false, false)]
-    procedure CopyFromSalesPriceHandler(var SalesPrice: Record "Sales Price"; var PriceListLine: Record "Price List Line");
+    procedure CopyFromSalesPriceHandler(var SalesPrice: Record "Sales Price"; var PriceListLine: Record "Price List Line")
     begin
         PriceListLine."Document No." := SalesPrice."Document No.";
     end;
@@ -421,13 +422,13 @@ The calculation that links these three new fields is based on the following even
 codeunit 50004 "Attached Price Mgt."
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Price Calculation Buffer Mgt.", 'OnAfterSetFilters', '', false, false)]
-    procedure OnAfterSetFilters(var PriceListLine: Record "Price List Line"; AmountType: Enum "Price Amount Type"; var PriceCalculationBuffer: Record "Price Calculation Buffer"; ShowAll: Boolean);
+    procedure OnAfterSetFilters(var PriceListLine: Record "Price List Line"; AmountType: Enum "Price Amount Type"; var PriceCalculationBuffer: Record "Price Calculation Buffer"; ShowAll: Boolean)
     begin
         PriceListLine.SetRange("Attach To Item No.", PriceCalculationBuffer."Attach To Item No.");
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterFillBuffer', '', false, false)]
-    procedure OnAfterFillBuffer(var PriceCalculationBuffer: Record "Price Calculation Buffer"; SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line");
+    procedure OnAfterFillBuffer(var PriceCalculationBuffer: Record "Price Calculation Buffer"; SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line")
     begin
         PriceCalculationBuffer."Attach To Item No." := FindItemToAttachToInLine(SalesLine);
     end;
@@ -571,7 +572,7 @@ The following codeunit shows a sample implementation.
 codeunit 50001 "Fixed Asset Price Calc."
 {
     [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnBeforeUpdateUnitPrice', '', false, false)]
-    local procedure OnBeforeUpdateUnitPrice(var SalesLine: Record "Sales Line"; xSalesLine: Record "Sales Line"; CalledByFieldNo: Integer; CurrFieldNo: Integer; var Handled: Boolean);
+    local procedure OnBeforeUpdateUnitPrice(var SalesLine: Record "Sales Line"; xSalesLine: Record "Sales Line"; CalledByFieldNo: Integer; CurrFieldNo: Integer; var Handled: Boolean)
     begin
         if SalesLine.Type = SalesLine.Type::"Fixed Asset" then begin
             UpdateUnitPriceByField(SalesLine, xSalesLine, CalledByFieldNo, CurrFieldNo);
@@ -580,7 +581,7 @@ codeunit 50001 "Fixed Asset Price Calc."
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterGetAssetType', '', false, false)]
-    local procedure OnAfterGetAssetType(SalesLine: Record "Sales Line"; var AssetType: Enum "Price Asset Type");
+    local procedure OnAfterGetAssetType(SalesLine: Record "Sales Line"; var AssetType: Enum "Price Asset Type")
     begin
         if SalesLine.Type = SalesLine.Type::"Fixed Asset" then
             AssetType := AssetType::"Fixed Asset";
@@ -721,7 +722,7 @@ The following example shows how.
 codeunit 50004 "Location Source Price Calc."
 {
     [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnValidateLocationCodeOnAfterSetOutboundWhseHandlingTime', '', false, false)]
-    local procedure OnValidateLocationCodeOnAfterSetOutboundWhseHandlingTime(var SalesLine: Record "Sales Line");
+    local procedure OnValidateLocationCodeOnAfterSetOutboundWhseHandlingTime(var SalesLine: Record "Sales Line")
     begin
         UpdateUnitPriceByLocationCode(SalesLine);
     end;
@@ -800,7 +801,7 @@ codeunit 50005 "Hierarchical Price Calc."
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Price Calculation Mgt.", 'OnFindSupportedSetup', '', false, false)]
-    local procedure OnFindSupportedSetup(var TempPriceCalculationSetup: Record "Price Calculation Setup");
+    local procedure OnFindSupportedSetup(var TempPriceCalculationSetup: Record "Price Calculation Setup")
     begin
         TempPriceCalculationSetup.Init();
         TempPriceCalculationSetup.Method := TempPriceCalculationSetup.Method::Hierarchical;
@@ -813,7 +814,7 @@ codeunit 50005 "Hierarchical Price Calc."
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterAddSources', '', false, false)]
-    local procedure OnAfterAddSources(SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line"; PriceType: Enum "Price Type"; var PriceSourceList: Codeunit "Price Source List");
+    local procedure OnAfterAddSources(SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line"; PriceType: Enum "Price Type"; var PriceSourceList: Codeunit "Price Source List")
     begin
         if SalesLine."Price Calculation Method" = "Price Calculation Method"::Hierarchical then
             SetHierarchicalSourceList(SalesHeader, SalesLine, PriceSourceList);

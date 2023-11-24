@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 10/25/2023
+ms.date: 11/17/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -695,6 +695,7 @@ author: SusanneWindfeldPedersen
 |[AL0812](diagnostic-al812.md)|The control '{0}' cannot be declared in the 'PromptOptions' area because it is not a page field of type 'Option'.|Error|
 |[AL0813](diagnostic-al813.md)|The property '{0}' can only be specified when the property '{1}' has a value of '{2}' if the runtime version is '{3}' or higher.|Error|
 |[AL0816](diagnostic-al816.md)|The property '{0}' cannot be set if the property '{1}' is set to '{2}'.|Warning (Future Error)|
+|[AL0817](diagnostic-al817.md)|Controls of type '{0}' are not allowed in the '{1}' area for pages of type '{2}'.|Error|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|
