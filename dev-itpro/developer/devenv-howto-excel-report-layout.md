@@ -41,6 +41,7 @@ Every Excel layout file must have a worksheet called _Data_. This worksheet has 
 For more information about the data contract, see [Understanding Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report#understanding-excel-layouts).
 
 ### Excel layout data contract in 2023 release wave 2 and later versions
+[!INCLUDE[2023_releasewave2](../includes/2023_releasewave2.md)]
 
 The [ExcelLayoutMultipleDataSheets property](properties/devenv-excellayoutmultipledatasheets-property.md) allows you to work with reports that render multiple worksheets for the report data when the dataset has multiple data items. By setting the property to `true`, the AL runtime generates an Excel worksheet for each data item and place its data there. Otherwise, if the property is `false`, which is the default, a single sheet is used for all data (as described in the previous section).
 
@@ -52,16 +53,20 @@ With data in multiple worksheets, the report layout can now easily include data 
 [!INCLUDE[2023_releasewave2](../includes/2023_releasewave2.md)]
 
 Starting from version 23.3, the [!INCLUDE[prod_short](../includes/prod_short.md)] server adds three system worksheets that you can use for easier layouts and for creating translatable Excel layouts:
-- __TranslationData__ 
-- __CaptionData__  
-- __Aggregated Metadata__ 
+- TranslationData 
+- CaptionData
+- Aggregated Metadata
 
 All data in these worksheets are organized in Excel tables from which you can reference individual fields using Excel table formulas.
 
-#### TranslationData worksheet definition (table TranslationData) 
-This worksheet contains data that you can use in your layouts to provide multi-language strings which do not exist as captions in the report object. When the [!INCLUDE[prod_short](../includes/prod_short.md)] server generates the Excel report, it can use data from the _TranslationData_ table as part of translating strings to the users language. 
 
-The table __TranslationData__ has three columns __CaptionKey__, __Language__ and __Value__: 
+Notice: all three worksheets are hidden by default.
+
+
+#### TranslationData worksheet definition (table TranslationData) 
+The _TranslationData_ worksheet contains data that you can use in your layouts to provide multi-language strings that don't exist as captions in the report object. When the [!INCLUDE[prod_short](../includes/prod_short.md)] server generates the Excel report, it can use data from the _TranslationData_ table as part of translating strings to the users language. 
+
+The data in the _TranslationData_ worksheet is located in the Excel table __TranslationData__ with three columns __CaptionKey__, __Language__ and __Value__: 
 
 |Column|Description|
 |------|-----------|
@@ -69,32 +74,28 @@ The table __TranslationData__ has three columns __CaptionKey__, __Language__ and
 |Language| The language of the string, such as 'en-US' or 'da-DK'.|
 |Value| The string in the language specified by the Language column.|
 
-*Notice that this sheet is hidden by default.*
 
 #### CaptionData worksheet definition (table __CaptionData__)
-This worksheet contains data from column captions and report labels specified in the AL report object. When the [!INCLUDE[prod_short](../includes/prod_short.md)] server generates the Excel report, it can use data from the __CaptionData__ table as part of translating strings to the users language. 
+The _CaptionData_ worksheet contains data from column captions and report labels specified in the AL report object. When the [!INCLUDE[prod_short](../includes/prod_short.md)] server generates the Excel report, it can use data from the __CaptionData__ table as part of translating strings to the users language. 
 
 Column captions are generated for all dataset fields with 'IncludeCaption=true'.
 
-The table __CaptionData__ has two columns __CaptionKey__ and __Value__: 
+The data in the _CaptionData_ worksheet is located in the Excel table __CaptionData__ with two columns __CaptionKey__ and __Value__: 
 
 |Column|Description|
 |------|-----------|
 |CaptionKey| Includes field caption names for all dataset fields with 'IncludeCaption=true' as well as label names in the labes section of the report. Values from the CaptionKey column can be used in the layout enclosed in $ characters (read more about how translations work below).| 
 |Value| The string in the language specified by the user when running the report. Data in this column is inserted by the [!INCLUDE[prod_short](../includes/prod_short.md)] server when it generates the Excel report. Do not add data here manually. |
 
-*Notice that this sheet is hidden by default.*
 
 #### Aggregated medatadata sheet definition
-This worksheet contains data from the report AL metadata, request metadata, request page options and filters. Each type of data is available in its own Excel table:
+The _Aggregated medatadata_ worksheet contains data from the report AL metadata, request metadata, request page options and filters. Each type of data is available in its own Excel table:
 
 - ReportMetadataValues
 - ReportRequestValues
 - ReportRequestPageValues
 - ReportFilterValues
 
-
-*Notice that this sheet is hidden by default.*
 
 ##### ReportMetadataValues table
 The ReportMetadataValues table contains metadata from the report object.
@@ -145,15 +146,17 @@ There will be one row for each active filter defined on the request page |
 
 
 ### Translating Excel sheets in 2023 release wave 2 and later versions
+[!INCLUDE[2023_releasewave2](../includes/2023_releasewave2.md)]
+
 Starting in version 23.3, you can create Excel layouts that works for multiple languages. 
 
 There are two ways to translate strings:
-- Using report captions and labels
-- Using per-layout translation texts 
+- Using report captions and labels or per-layout translation texts with Excel lookup functions, or
+- Using '\$tag\$' substitution.
 
 If strings are available in field captions or labels in the report object, you can  use Excel cell lookups to the data in the __CaptionData__ table. This table is  populated by the [!INCLUDE[prod_short](../includes/prod_short.md)] server when the report is generated and contains the caption strings for fields and report labels  from the report object. The same technique can be used with the __TranslationData__ table that holds per-layout translation texts. For these texts, use the _Format Region_ field from the __ReportRequestValues__ table in your Excel lookups.
 
-It is possible to use '\$tag\$' substitution in selected elements in layout worksheets. At report generation time, the [!INCLUDE[prod_short](../includes/prod_short.md)] server replaces '\$tag\$' with the corresponding value defined in the __TranslationData__ or __CaptionData__ tables. If a tag exists in both tables, data from the __TranslationData__ table takes precedence. The tag name is case sensitive and unmatched elements will be left unmodified.
+It is also possible to use '\$tag\$' substitution for Excel elements in your  worksheets. At report generation time, the [!INCLUDE[prod_short](../includes/prod_short.md)] server replaces '\$tag\$' with the corresponding value defined in the __TranslationData__ or __CaptionData__ tables. If a tag exists in both tables, data from the __TranslationData__ table takes precedence. The tag name is case sensitive and unmatched elements will be left unmodified.
 
 The following Excel elements can be translated:
 - Chart title
