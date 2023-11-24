@@ -47,6 +47,8 @@ For reports, API pages, and queries, the Business Central server can use read-on
 
 From the client, the property value can be overwritten by using page **9880 Database Access Intent List** page.
 
+[!INCLUDE[database_access_intent_note](../includes/include-database-access-intent-note.md)]
+
 ## See Also  
 
 [Using Read Scale-Out for Better Performance](../../administration/database-read-scale-out-overview.md)  

@@ -79,6 +79,9 @@ For more information, see [Using OData Transactional $batch Requests](../webserv
 
 By specifying HTTP request header `Data-Access-Intent`, it's possible to override data access intent of the API page or query that has been defined with [DataAccessIntent property](properties/devenv-dataaccessintent-property.md). 
 
+[!INCLUDE[database_access_intent_note](../includes/include-database-access-intent-note.md)]
+
+
 ### Possible header values
 
 |Value|Description|
