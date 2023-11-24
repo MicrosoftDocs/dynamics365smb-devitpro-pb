@@ -4,7 +4,7 @@ description: How to create a functioning Rich Text Editor using ExtendedDataType
 author: EmilDamsbo
 ms.author: solsen
 ms.custom: na
-ms.date: 09/25/2023
+ms.date: 11/24/2023
 ms.reviewer: solsen
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 [!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
 
-The Rich Text feature in !INCLUDE [prod_short] is designed to handle multimedia content, such as social media posts, email bodies, quick annotations, file contents, or any field that requires a mix of text, tables, links, and images. It's best suited for cases where the user needs to author, view, or modify unstructured information and requires a moderate amount of space to work comfortably. The rich text control enables rich multimedia content editing. With that you get a multiline textbox with a rich toolbar, corresponding keyboard shortcuts, and the ability to author or paste in pictures, tables, and formatted text. A typical use case of a Rich Text Editor is the email editor. They require significant screen space to function correctly and fill the available horizontal space and stretch vertically up to a limit. The control includes a toolbar and shortcuts for formatting text (for example, for changing the font or font size), making text italic, bold, and more. There's also the option to add tables, images, and hyperlinks.
+The Rich Text feature in [!INCLUDE [prod_short](includes/prod_short.md)] is designed to handle multimedia content, such as social media posts, email bodies, quick annotations, file contents, or any field that requires a mix of text, tables, links, and images. It's best suited for cases where the user needs to author, view, or modify unstructured information and requires a moderate amount of space to work comfortably. The rich text control enables rich multimedia content editing. With that you get a multiline textbox with a rich toolbar, corresponding keyboard shortcuts, and the ability to author or paste in pictures, tables, and formatted text. A typical use case of a Rich Text Editor is the email editor. They require significant screen space to function correctly and fill the available horizontal space and stretch vertically up to a limit. The control includes a toolbar and shortcuts for formatting text (for example, for changing the font or font size), making text italic, bold, and more. There's also the option to add tables, images, and hyperlinks.
 The following image shows an example of the Rich Text Editor containing multiple different types of text formatting.
 
 ![Shows an example of the Rich Text Editor containing multiple different types of text formatting.](../developer/media/RichTextEditorExample.png)
@@ -67,7 +67,7 @@ table 50100 MyTable
         OutStream: OutStream;
     begin
         Rec.RichTextBlob.CreateOutStream(OutStream);
-        Output.WriteText(RichText);
+        OutStream.WriteText(RichText);
         Rec.Modify();
     end;
 }
@@ -131,4 +131,4 @@ page 50100 MyPage
 [Blob data type](methods-auto/blob/blob-data-type.md)  
 [BigText data type](methods-auto/bigtext/bigtext-data-type.md)  
 [Text data type](methods-auto/text/text-data-type.md)  
-[ExtendedDataType Property](properties/extendeddatatype-property.md)  
+[ExtendedDataType Property](properties/devenv-extendeddatatype-property.md)   
