@@ -203,5 +203,5 @@ In the new codeunit, add a subscriber to the **OnAssignItemCharges** event.
 ## See Also
 
 [Extending Application Areas](devenv-extending-application-areas.md)  
-[Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module)  
+[Module System Application](/dynamics365/business-central/application/system-application/module/system-application  
 [Module Base Application](/dynamics365/business-central/application/reference/base%20application/)  
