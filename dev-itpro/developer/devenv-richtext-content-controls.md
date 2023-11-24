@@ -131,4 +131,4 @@ page 50100 MyPage
 [Blob data type](methods-auto/blob/blob-data-type.md)  
 [BigText data type](methods-auto/bigtext/bigtext-data-type.md)  
 [Text data type](methods-auto/text/text-data-type.md)  
-[ExtendedDataType Property](properties/extendeddatatype-property.md)  
+[ExtendedDataType Property](properties/devenv-extendeddatatype-property.md)   
