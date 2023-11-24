@@ -30,6 +30,8 @@ The following diagram illustrates the PromptDialog page type and its different m
 
 [![Shows a flow of a copilot with the prompt dialog page type](media/prompt-dialog-flow-v3.svg)](media/prompt-dialog-flow-v3.svg#lightbox)
 
+The following gives an overview of the typical flow from the user's perspective and how it's achieved in AL code.
+
 ||In UI|In AL code|Learn more|
 |-|-|-|-|
 |1|User starts the copilot experience by selecting an action on a page.|An `action` control on a page runs the PromptDialog type page|[Launch experience](#launch-experience)|
@@ -113,7 +115,7 @@ layout
 }
 ```
 
-Within `area(Prompt)`, you can add one or more fields, groups, and page parts. The `Prompt` are supports all `area()` controls except the`repeater` control.
+Within `area(Prompt)`, you can add one or more fields, groups, and page parts. `Prompt` supports all `area()` controls except the`repeater` control.
 
 ### Add a generate action
 
@@ -415,14 +417,15 @@ end;
 
 ## Enable proposal history capability
 
-While using copilot, users will typically regenerate one or more times to get different proposals. It's useful that they can scroll back an forth through a history of the different proposal. To accommodate this capability, you can set up version carousel at the top of the PromptDialog page.
+While using copilot, users will typically regenerate one or more times to get different proposals. It's useful that they can scroll back and forth through a history of the different proposals. To accommodate this capability, you can set up version carousel at the top of the PromptDialog page.
 
 ![Shows the version control in content mode of the PromptDialog type page](media/promptdialog-content-mode-versions.svg)
 
-This capability requires that the PromptDialog page uses a temporary source table. Unlike with other page types, the source table represents instance of a copilot proposal. It  can include both the user inputs and the AI-generated results. 
+This capability requires that the PromptDialog page uses a temporary source table. Unlike with other page types, the source table represents an instance of a copilot proposal. It can include both user inputs and the AI-generated results. 
 
-You should design the capability to insert a new record each time the user regenerates a suggestion (before the page is closed and the suggestion saved). This way, the Business Central web client will show a new
-    // history control, that allows the user to go back and forth between the different suggestions that Copilot provided, and choose the best one to save.
+You should design the capability to insert a new record each time the user regenerates, before the page is closed. When in place, the control appears on th PromptDialog page whenever users generate more that one proposal. After the user closes the copilot, for example by saving or discarding the results, the version history is deleted. 
+
+
     
     SourceTable = TempInputData;
     SourceTableTemporary = true;
