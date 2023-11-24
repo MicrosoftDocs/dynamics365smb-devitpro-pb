@@ -48,6 +48,125 @@ Each of the multiple sheets is named #DataItemName, where DataItemName is the na
 
 With data in multiple worksheets, the report layout can now easily include data models defined with the PowerPivot feature in Excel.
 
+### System Excel sheets
+[!INCLUDE[2023_releasewave2](../includes/2023_releasewave2.md)]
+
+Starting from version 23.3, the [!INCLUDE[prod_short](../includes/prod_short.md)] server adds three system worksheets that you can use for easier layouts and for creating translatable Excel layouts:
+- __TranslationData__ 
+- __CaptionData__  
+- __Aggregated Metadata__ 
+
+All data in these worksheets are organized in Excel tables from which you can reference individual fields using Excel table formulas.
+
+#### TranslationData worksheet definition (table TranslationData) 
+This worksheet contains data that you can use in your layouts to provide multi-language strings which do not exist as captions in the report object. When the [!INCLUDE[prod_short](../includes/prod_short.md)] server generates the Excel report, it can use data from the _TranslationData_ table as part of translating strings to the users language. 
+
+The table __TranslationData__ has three columns __CaptionKey__, __Language__ and __Value__: 
+
+|Column|Description|
+|------|-----------|
+|CaptionKey| An unique name that can be used in the layout enclosed in $ characters (read more about how translations work below).| 
+|Language| The language of the string, such as 'en-US' or 'da-DK'.|
+|Value| The string in the language specified by the Language column.|
+
+*Notice that this sheet is hidden by default.*
+
+#### CaptionData worksheet definition (table __CaptionData__)
+This worksheet contains data from column captions and report labels specified in the AL report object. When the [!INCLUDE[prod_short](../includes/prod_short.md)] server generates the Excel report, it can use data from the __CaptionData__ table as part of translating strings to the users language. 
+
+Column captions are generated for all dataset fields with 'IncludeCaption=true'.
+
+The table __CaptionData__ has two columns __CaptionKey__ and __Value__: 
+
+|Column|Description|
+|------|-----------|
+|CaptionKey| Includes field caption names for all dataset fields with 'IncludeCaption=true' as well as label names in the labes section of the report. Values from the CaptionKey column can be used in the layout enclosed in $ characters (read more about how translations work below).| 
+|Value| The string in the language specified by the user when running the report. Data in this column is inserted by the [!INCLUDE[prod_short](../includes/prod_short.md)] server when it generates the Excel report. Do not add data here manually. |
+
+*Notice that this sheet is hidden by default.*
+
+#### Aggregated medatadata sheet definition
+This worksheet contains data from the report AL metadata, request metadata, request page options and filters. Each type of data is available in its own Excel table:
+
+- ReportMetadataValues
+- ReportRequestValues
+- ReportRequestPageValues
+- ReportFilterValues
+
+
+*Notice that this sheet is hidden by default.*
+
+##### ReportMetadataValues table
+The ReportMetadataValues table contains metadata from the report object.
+
+| Column Key              | Description |
+|----------------------- | ----------- |
+|Extension ID | The unique id (GUID) of the app/extension for the report. |
+|Extension Name | The name of the app/extension for the report. |
+|Extension Publisher | The name of the publisher of the app/extension for the report. |
+|Extension Version | The version of the app/extension for the report.|
+|Object ID | The object ID of the report. |
+|Object Name | The object name of the report.|
+|About This Report Title | The _about this report title_ as declared in the Request Page setup in the AL report. |
+|About This Report Text | The _about this report text_ as declared in the Request Page setup in the AL report. |
+|Report help link | Help link (if setup) in the extension and report object.|
+
+
+##### ReportRequestValues table
+The ReportRequestValues table contains metadata from the report request (the report invocation that created the document).
+
+| Column Key              | Description |
+|----------------------- | ----------- |
+
+| Tenant Id | Contains the Entra/AAD tenant ID of the environment. |
+| Environment name | The name of the environment. Might be empty for on-premises installations. |
+| Environment type | The environment type (Production or sandbox). Might be empty for on-premises installations. |
+| Company name | The company name that the user was operating in when running the report. |
+| Company Id | The Company ID (GUID). |
+| User name | The user who ran the report. |
+| User Id | The user ID associated to 'User name'. |
+| Date | The data and time of the report invocation. |
+| Language | The application language identified (LCID, Windows language identifier).|
+| Format Region | The Format Region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
+
+
+##### ReportRequestPageValues table
+The ReportRequestPageValues table contains metadata from the report request page when the report request was issued.
+
+The table ReportRequestPageValues__ has two columns __Request Page Option__  __Request Page Option Value__. It contains all Key-Value pairs of entries from request page options.
+
+##### ReportFilterValues table
+The ReportFilterValues table contains metadata from the report request page when the report request was issued.
+
+The table ReportFilterValues__ has two columns __Filter__ and __Filter Value. It contains all Key-Value pairs of filters from the request page.
+
+The actual filter format is '\<DataItemName\>::\<Source Table Caption\>::\<FilterGroup\>::\<Field Caption\>'. 
+
+There will be one row for each active filter defined on the request page |
+
+
+### Translating Excel sheets in 2023 release wave 2 and later versions
+Starting in version 23.3, you can create Excel layouts that works for multiple languages. 
+
+There are two ways to translate strings:
+- Using report captions and labels
+- Using per-layout translation texts 
+
+If strings are available in field captions or labels in the report object, you can  use Excel cell lookups to the data in the __CaptionData__ table. This table is  populated by the [!INCLUDE[prod_short](../includes/prod_short.md)] server when the report is generated and contains the caption strings for fields and report labels  from the report object. The same technique can be used with the __TranslationData__ table that holds per-layout translation texts. For these texts, use the _Format Region_ field from the __ReportRequestValues__ table in your Excel lookups.
+
+It is possible to use '\$tag\$' substitution in selected elements in layout worksheets. At report generation time, the [!INCLUDE[prod_short](../includes/prod_short.md)] server replaces '\$tag\$' with the corresponding value defined in the __TranslationData__ or __CaptionData__ tables. If a tag exists in both tables, data from the __TranslationData__ table takes precedence. The tag name is case sensitive and unmatched elements will be left unmodified.
+
+The following Excel elements can be translated:
+- Chart title
+- Sheet name
+- Pivot table name
+- Pivot field name
+- Slicer name
+- Text data in a cell
+
+Worksheet references with translation tags will be updated in cell formulas as well to maintain proper data references in the final document.
+
+
 ### Validating an Excel layout
 
 When importing an Excel layout as part of an app or when a user uploads an Excel layout file, [!INCLUDE[server](includes/server.md)] does the following operations:
