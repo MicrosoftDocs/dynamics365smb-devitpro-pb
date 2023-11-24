@@ -34,8 +34,8 @@ The following diagram illustrates the PromptDialog page type and its different m
 |2|The PromptDialog page opens in the prompt mode, where users can provide input.|The PromptDialog page is defined by setting the PageType property to `PromptDialog`.|[Create PromptDialog type page](#create-promptdialog-type-page) |
 |3|User enters information that copilot uses to generate results. |The `prompt` area of the PromptDialog page defines what the user can input, which typically consists of one or more fields.|[Design the prompt mode](#design-the-prompt-mode)|
 |4|User selects a button to start generating content with AI|The system action `Generate` calls the procedure that starts the AI generation process.|[Add the generate action](#add-a-generate-action)|
-|5|The generation mode appears while the results are being generated.|||
-|7|The content mode appears and displays the AI-generated proposal for review by the user.|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Add content area](#add-a-content-area)|
+|5|The generation mode appears while the results are being generated.|Handled automatically by the platform.||
+|7|The content mode appears and displays the AI-generated proposal for review by the user.|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Design the content mode](#design-the-content-mode)|
 |8|User chooses to save or discard the proposal by using actions at the bottom of the page |A system action for saving and one for discarding trigger the logic to handle the content with respect the user's choice, and the prompt dialog page closes.|[Add save and discard actions](#add-a-content-area)| 
 
 <!--
@@ -140,6 +140,8 @@ actions
 }
 ```
 
+Use the [OnAction()](triggers-auto/action/devenv-onaction-action-trigger.md) to call generative AI code, in this case the `RunGeneration()` procedure.
+
 ### Add a file attachment action
 
 In this task, you add action to the PromptDialog page that enables users to select a file to upload in the prompt area. The content of the file can provide input to the AI generation.
@@ -203,7 +205,7 @@ actions
 
 The content mode shows the AI-generated output. It enables users to review output, then choose to regenerate, save, or discard it. 
 
-![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode.svg)
+<!--![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode.svg)-->
 
 
 ### Add a content area
@@ -234,7 +236,7 @@ In this task, you add actions to the content mode that enable users to save or d
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-save.svg)
 
-1. In the `actions` control, add a system action `OK` for saving proposals and `Cancel` for discarding proposals. Use the Caption property to specify the text you want to use for the actions. 
+1. In the `actions` control, add a system action `OK` for saving proposals and `Cancel` for discarding proposals.
 
     ```al
     actions
@@ -254,6 +256,8 @@ In this task, you add actions to the content mode that enable users to save or d
         }
     }
     ```
+
+    Use the Caption property to specify the text that you want to use for the actions. Choose text that is concise but best communicates what the action does. For example, if the OK action inserts a row in list, then perhaps **Insert** is a better label than **Keep it**. 
 
 1. Add the code that saves or discards the proposal using either the [OnQueryClosePage](triggers-auto/page/devenv-onqueryclosepage-page-trigger.md) or the value returned from the [RunModal](methods-auto/page/page-runmodal--method.md).
 
@@ -294,6 +298,7 @@ actions
 }
 
 ```
+
 
 ## Launch experience
 
