@@ -319,7 +319,10 @@ action(GenerateCopilot)
 }
 ```
 
-Set the [Image property](properties/devenv-image-property.md) to `Sparkle`, which is the recognized image across Microsoft products used to indicate that the action is associated with Copilot. 
+Set the [Image property](properties/devenv-image-property.md) to either `Sparkle` or `SparkleFilled`.  These images are recognized across Microsoft products to indicate that the action is associated with copilot. 
+
+
+
 
 ## Example
 
@@ -410,9 +413,20 @@ end;
 }
 ```
 
-## Add version  of versions
+## Enable proposal history capability
 
-You 
+While using copilot, users will typically regenerate one or more times to get different proposals. It's useful that they can scroll back an forth through a history of the different proposal. To accommodate this capability, you can set up version carousel at the top of the PromptDialog page.
+
+![Shows the version control in content mode of the PromptDialog type page](media/promptdialog-content-mode-versions.svg)
+
+This capability requires that the PromptDialog page uses a temporary source table. Unlike with other page types, the source table represents instance of a copilot proposal. It  can include both the user inputs and the AI-generated results. 
+
+You should design the capability to insert a new record each time the user regenerates a suggestion (before the page is closed and the suggestion saved). This way, the Business Central web client will show a new
+    // history control, that allows the user to go back and forth between the different suggestions that Copilot provided, and choose the best one to save.
+    
+    SourceTable = TempInputData;
+    SourceTableTemporary = true;
+
 <!--
 ## Notes
 
