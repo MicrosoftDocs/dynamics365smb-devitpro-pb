@@ -4,7 +4,7 @@ description: How to create a functioning Rich Text Editor using ExtendedDataType
 author: EmilDamsbo
 ms.author: solsen
 ms.custom: na
-ms.date: 09/25/2023
+ms.date: 11/24/2023
 ms.reviewer: solsen
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -67,7 +67,7 @@ table 50100 MyTable
         OutStream: OutStream;
     begin
         Rec.RichTextBlob.CreateOutStream(OutStream);
-        Output.WriteText(RichText);
+        OutStream.WriteText(RichText);
         Rec.Modify();
     end;
 }
