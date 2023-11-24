@@ -34,8 +34,6 @@ To learn more, go to [Get setup with Azure OpenAI Service](ai-dev-tools-get-star
 
 ## Building AI capability using the AI module of system application
 
-The AI module of the Business Central system application provides the API for communicating with Azure OpenAI. In this task, you use the AI module to define the application logic to request and retrieve AI-generated content from the Azure OpenAI service.
-
 The AI module of the Business Central system application provides the API for communicating with Azure OpenAI. In this task, you use the AI module to define the application logic in AL code to request and retrieve AI-generated content from the Azure OpenAI service. 
 
 To learn more, go to [Build AI capability in app](ai-build-capability-in-al.md).
