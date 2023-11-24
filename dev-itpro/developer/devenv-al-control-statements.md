@@ -379,7 +379,7 @@ The *`<List>`* variable must be of the List, XmlNodeList, XmlAttributeCollection
 
 The following code example iterates through a list of customer names and returns each customer name in a message.
 ```AL  
-procedure PrintCustomerNames(customerNames : List of [Text]);
+procedure PrintCustomerNames(customerNames : List of [Text])
 var
     customerName : Text;
 begin

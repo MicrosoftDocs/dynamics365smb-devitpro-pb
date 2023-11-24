@@ -73,7 +73,7 @@ codeunit 50100 "Item Ch. Assign by Fairy Dust"
 In the new codeunit, add functions to distribute the charges over the item lines.
 
 ```AL
-    local procedure AssignByFairyDust(var ItemChargeAssignmentPurch: Record "Item Charge Assignment (Purch)"; Currency: Record Currency; TotalQtyToAssign: Decimal; TotalAmtToAssign: Decimal);
+    local procedure AssignByFairyDust(var ItemChargeAssignmentPurch: Record "Item Charge Assignment (Purch)"; Currency: Record Currency; TotalQtyToAssign: Decimal; TotalAmtToAssign: Decimal)
     var
         TempItemChargeAssgntPurch: Record "Item Charge Assignment (Purch)" temporary;
         LineArray: array[2] OF Decimal;
@@ -122,7 +122,7 @@ In the new codeunit, add functions to distribute the charges over the item lines
         TempItemChargeAssgntPurch.DeleteAll(false);
     end;
 
-    procedure GetItemValues(TempItemChargeAssgntPurch: Record "Item Charge Assignment (Purch)" temporary; var DecimalArray: Array[2] OF Decimal);
+    procedure GetItemValues(TempItemChargeAssgntPurch: Record "Item Charge Assignment (Purch)" temporary; var DecimalArray: Array[2] of Decimal)
     var
         PurchaseLine: Record "Purchase Line";
         PurchRcptLine: Record "Purch. Rcpt. Line";
@@ -184,7 +184,7 @@ In the new codeunit, add a subscriber to the **OnAssignItemCharges** event.
 
 ```AL
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Charge Assgnt. (Purch.)", 'OnAssignItemCharges', '', false, false)]
-    local procedure AssignByFairyDustOnAssignItemCharges(SelectionTxt: Text; var ItemChargeAssignmentPurch: Record "Item Charge Assignment (Purch)"; Currency: Record Currency; PurchaseHeader: Record "Purchase Header"; TotalQtyToAssign: Decimal; TotalAmtToAssign: Decimal; VAR ItemChargesAssigned: Boolean);
+    local procedure AssignByFairyDustOnAssignItemCharges(SelectionTxt: Text; var ItemChargeAssignmentPurch: Record "Item Charge Assignment (Purch)"; Currency: Record Currency; PurchaseHeader: Record "Purchase Header"; TotalQtyToAssign: Decimal; TotalAmtToAssign: Decimal; var ItemChargesAssigned: Boolean)
     begin
         // if item charges are already assigned, exit
         if ItemChargesAssigned then
