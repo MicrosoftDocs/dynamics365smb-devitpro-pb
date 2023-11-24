@@ -25,9 +25,9 @@ The method in the example below, will take a name, and return the first customer
 /// <param name="Name">Name filter</param> 
 /// <returns>First customer</returns> 
 
-procedure GetCustomerByName(Name: Text): record Customer
+procedure GetCustomerByName(Name: Text): Record Customer
 var
-    Customer: record Customer;
+    Customer: Record Customer;
 begin
     Customer.SetFilter(Name, '@' + Name + '*');
     Customer.FindFirst();
@@ -38,7 +38,7 @@ end;
 It's also possible to use a named return value. Internally, the exit-statement as seen in the example above causes an assignment to an allocated return value. The assignment will have a small performance cost based on the type. Since the record type is treated as a value-type, it's better.  
 
 ```al
-procedure GetCustomerByName(Name: Text) Customer: record Customer; 
+procedure GetCustomerByName(Name: Text) Customer: Record Customer
 begin 
    Customer.SetFilter(Name, '@' + Name + '*'); 
    Customer.FindFirst(); 
