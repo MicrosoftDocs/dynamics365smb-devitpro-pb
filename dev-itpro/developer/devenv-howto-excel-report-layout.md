@@ -117,7 +117,6 @@ The ReportRequestValues table contains metadata from the report request (the rep
 
 | Column Key              | Description |
 |----------------------- | ----------- |
-
 | Tenant Id | Contains the Entra/AAD tenant ID of the environment. |
 | Environment name | The name of the environment. Might be empty for on-premises installations. |
 | Environment type | The environment type (Production or sandbox). Might be empty for on-premises installations. |
