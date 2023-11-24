@@ -23,7 +23,7 @@ You can print a report that uses different paper trays to print different letter
 3.  Add a new procedure, which has ID 75 in codeunit 1. The following code example shows how the **GetPaperTrayForReport** procedure can be used to set paper tray in report 110.  
   
     ```  
-    PROCEDURE GetPaperTrayForReport@75(ReportID@1000 : Integer; VAR FirstPage@1001 : Integer; VAR DefaultPage@1002 : Integer; VAR LastPage@1003 : Integer)  
+    PROCEDURE GetPaperTrayForReport@75(ReportID@1000 : Integer; var FirstPage@1001 : Integer; var DefaultPage@1002 : Integer; var LastPage@1003 : Integer)  
     BEGIN   
         IF ReportID = 110 THEN BEGIN   
             FirstPage := 1;   
