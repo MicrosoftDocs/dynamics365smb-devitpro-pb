@@ -24,7 +24,7 @@ The PromptDialog page type has three different display modes to accommodate the 
 - The *generate mode* appears while the platform connects to the Azure OpenAI Service and content is being generated, functioning as a kind of progress bar for the user. This mode doesn't require any added logic on your part, because its behavior is controlled by the platform. Its UI is limited to a caption, a link to terms of use, and an action to stop generating.  
 - The *content mode* is used to display the AI-generated results and is initiated automatically after the *generate mode* allowing the user to review the content, regenerate, save or discard the results. 
 
-The following diagram illustrates the PromptDialog page type and its different modes within the essential copilot flow. Your flow might vary depending on your design choices, like whether to use a prompt mode and which mode displays when the PromptDialog page opens.
+The following diagram illustrates the PromptDialog page type and its different modes within the fundamental copilot flow. Your flow might vary depending on your design choices, like whether to use a prompt mode and which mode displays when the PromptDialog page opens.
 
 [![Shows a flow of a copilot with the prompt dialog page type](media/prompt-dialog-flow-v3.svg)](media/prompt-dialog-flow-v3.svg#lightbox)
 
@@ -67,7 +67,7 @@ page 50100 "Copilot Job Proposal"
 |-|-|
 |[PageType](properties/devenv-pagetype-property.md)|Set to `PromptDialog`.|
 |[Extensible](properties/devenv-extensible-property.md)|Set to `false` to ensure that extensions for other providers don't interfere with the experience you're providing customers|
-|[PromptMode](properties/devenv-promptmode-property.md)|Specifies which mode you want to page to display when it first opens. The default is `Prompt`. You can programmatically set this property by setting the variable `CurrPage.PromptMode` before the page is opened.|
+|[PromptMode](properties/devenv-promptmode-property.md)|Specifies which mode you want to page to display when it first opens. The default is `Prompt`. For more information, go to [Specify the mode in which the PromptDialog opens](#specify-the-mode-in-which-the-promptdialog-opens).|
 |[IsPreview](properties/devenv-ispreview-property.md)|This property is used to specify whether your feature is in preview or generally available. Setting this property to `true` applies a **Preview** label on the all display modes of the PromptDialog type page, as illustrated in the following figure. The **Preview** label communicates to users that the feature is available to try out and provide feedback, but the functionality is subject to change. When you feel the feature is ready, you can change this value to `false` to communicate that the feature is generally available. We recommend that most new Copilot experiences start in preview. |
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode.svg)
