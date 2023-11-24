@@ -33,7 +33,7 @@ When you start a new project, an `app.json` file is generated automatically, whi
 ```
 
 > [!NOTE]  
-> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it's generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above. You can always override this for your AppSource aåå or per-tenant extension by changing the setting.
+> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it's generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above. You can always override this for your AppSource app or per-tenant extension by changing the setting.
 
 > [!IMPORTANT]  
 > The **AL: Go!** template sets the `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile` options in the `resourceExposurePolicy` setting to `true`. 
