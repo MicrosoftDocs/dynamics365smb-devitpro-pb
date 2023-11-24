@@ -2,13 +2,12 @@
 # [New and planned](whatsnew/overview.md)
 # Get started
 ## Learn
-### [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Discover all aka.ms links related to Business Central](developer/readiness/readiness-bcall.yml)
 ### [Resources for partners](developer/readiness/readiness-ready-to-go.md)
 ### [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Scenarios for Contoso Coffeee demo data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Scenarios for Contoso Coffee demo data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Develop
 ### [The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)
@@ -421,7 +420,7 @@
 ### Ready to Go
 #### [The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)
 #### [Get started with building apps](developer/readiness/get-started.md)
-#### [The Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### AppSource validation
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
@@ -1009,7 +1008,9 @@
 #### [Control add-in style guide](developer/devenv-control-addin-style.md)
 #### [Control add-in best practices](developer/devenv-control-addin-bestpractices.md)
 
-### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
+### Embedding Power BI
+#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+#### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
 
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
@@ -1355,6 +1356,13 @@
 <!-- Microsoft Power BI -->
 <!--## Integrating with Microsoft Power Pages (preview) -->
 ## Integrating with Microsoft Power BI
+### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+### Administrator
+#### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview)
+#### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup)
+### Report creator
+#### [Get started: Build Power BI reports](/dynamics365/business-central/across-how-use-financials-data-source-powerbi)
+#### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
 ### [Extract data from Business Central](developer/devenv-extract-data.md)
 ### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 ### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
