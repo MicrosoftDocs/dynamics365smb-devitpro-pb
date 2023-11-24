@@ -111,7 +111,7 @@ layout
 }
 ```
 
-Within `area(Prompt)`, you can add one or more fields, groups, and page parts. 
+Within `area(Prompt)`, you can add one or more fields, groups, and page parts. The `Prompt` are supports all `area()` controls except the`repeater` control.
 
 ### Add a generate action
 
@@ -142,7 +142,7 @@ actions
 
 ### Add a file attachment action
 
-In this task, you add action to the PromptDialog page that enables users to select a file to upload in the prompt area. The content of the file can provide input to the AI generation.  
+In this task, you add action to the PromptDialog page that enables users to select a file to upload in the prompt area. The content of the file can provide input to the AI generation.
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-attach.svg)
 
@@ -212,7 +212,7 @@ In this task, you define the area of the content that displays results of the AI
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-output-area.svg)
 
-To define this area, you add an `area(Content)` control to the `layout`, then add one or more data fields. You can structure and arrange fields in groups and page parts. You can't use a repeater control. 
+To define this area, you add an `area(Content)` control to the `layout`, then add one or more data fields. You can structure and arrange fields in groups and page parts. Like the `Prompt` area, the `Content` supports all controls except  `repeater`. 
 
 ```al
 layout
