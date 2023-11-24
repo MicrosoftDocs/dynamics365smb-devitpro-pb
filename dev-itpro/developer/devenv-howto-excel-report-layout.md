@@ -88,7 +88,7 @@ The data in the _CaptionData_ worksheet is located in the Excel table __CaptionD
 |Value| The string in the language specified by the user when running the report. Data in this column is inserted by the [!INCLUDE[prod_short](../includes/prod_short.md)] server when it generates the Excel report. Do not add data here manually. |
 
 
-#### Aggregated medatadata sheet definition
+#### Aggregated medatadata sheet definition (multiple tables)
 The _Aggregated medatadata_ worksheet contains data from the report AL metadata, request metadata, request page options and filters. Each type of data is available in its own Excel table:
 
 - ReportMetadataValues
@@ -98,7 +98,7 @@ The _Aggregated medatadata_ worksheet contains data from the report AL metadata,
 
 
 ##### ReportMetadataValues table
-The ReportMetadataValues table contains metadata from the report object.
+The _ReportMetadataValues_ table contains metadata from the report object.
 
 | Column Key              | Description |
 |----------------------- | ----------- |
@@ -114,7 +114,7 @@ The ReportMetadataValues table contains metadata from the report object.
 
 
 ##### ReportRequestValues table
-The ReportRequestValues table contains metadata from the report request (the report invocation that created the document).
+The _ReportRequestValues_ table contains metadata from the report request (the report invocation that created the document).
 
 | Column Key              | Description |
 |----------------------- | ----------- |
@@ -131,14 +131,14 @@ The ReportRequestValues table contains metadata from the report request (the rep
 
 
 ##### ReportRequestPageValues table
-The ReportRequestPageValues table contains metadata from the report request page when the report request was issued.
+The _ReportRequestPageValues_ table contains metadata from the report request page when the report request was issued.
 
-The table ReportRequestPageValues__ has two columns __Request Page Option__  __Request Page Option Value__. It contains all Key-Value pairs of entries from request page options.
+The table has two columns __Request Page Option__  __Request Page Option Value__. It contains all Key-Value pairs of entries from request page options.
 
 ##### ReportFilterValues table
-The ReportFilterValues table contains metadata from the report request page when the report request was issued.
+The _ReportFilterValues_ table contains metadata from the report request page when the report request was issued.
 
-The table ReportFilterValues__ has two columns __Filter__ and __Filter Value. It contains all Key-Value pairs of filters from the request page.
+The table has two columns **Filter** and **Filter Value**. It contains all Key-Value pairs of filters from the request page.
 
 The actual filter format is '\<DataItemName\>::\<Source Table Caption\>::\<FilterGroup\>::\<Field Caption\>'. 
 
