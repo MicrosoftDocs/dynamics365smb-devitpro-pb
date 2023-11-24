@@ -87,7 +87,7 @@ codeunit 50103 MySubscribingCodeunit
 <!--
 ```
 [IntegrationEvent(false, false)]
-procedure OnAddressLineChanged(line : Text[100]);
+procedure OnAddressLineChanged(line : Text[100])
 begin
 end;
 ``` 

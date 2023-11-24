@@ -260,7 +260,7 @@ enumextension 50101 "Extended Stock Calculations" extends "Shpfy Stock Calculati
 }
 codeunit 50101 "Shpfy Stock Calc. Inventory" implements "Shpfy Stock Calculation"
 {
-    procedure GetStock(var Item: Record Item): decimal;
+    procedure GetStock(var Item: Record Item): decimal
     begin
         Item.Calcfields(Inventory);
         exit(Item.Inventory);
@@ -284,7 +284,7 @@ enumextension 50102 "Extended Stock Calculations" extends "Shpfy Stock Calculati
 }
 codeunit 50102 "Shpfy Stock Calc. Free Invent" implements "Shpfy Stock Calculation"
 {
-    procedure GetStock(var Item: Record Item): decimal;
+    procedure GetStock(var Item: Record Item): decimal
     begin
         Item.Calcfields(Inventory, "Reserved Qty. on Inventory");
         exit(Item.Inventory - Item."Reserved Qty. on Inventory");
@@ -308,7 +308,7 @@ enumextension 50103 "Extended Stock Calculations" extends "Shpfy Stock Calculati
 }
 codeunit 50103 "Shpfy Stock Calc. Proj at Date" implements "Shpfy Stock Calculation"
 {
-    procedure GetStock(var Item: Record Item): decimal;
+    procedure GetStock(var Item: Record Item): decimal
     var
         CompanyInfo: Record "Company Information";
         ItemAvailabilityFormsMgt: codeunit "Item Availability Forms Mgt";
@@ -338,7 +338,7 @@ enumextension 50104 "Extended Stock Calculations" extends "Shpfy Stock Calculati
 }
 codeunit 50104 "Shpfy Stock Calc. AvailPick" implements "Shpfy Stock Calculation"
 {
-    procedure GetStock(var Item: Record Item): decimal;
+    procedure GetStock(var Item: Record Item): decimal
     var
         Location: Record Location;
         TempWhseWorksheetLine: Record "Whse. Worksheet Line" temporary;
@@ -469,7 +469,7 @@ The following example shows how to use the GTIN field to map imported products t
 codeunit 50108 "Shpfy Product Import Mapping"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnBeforeFindMapping', '', false, false)]
-    procedure BeforeFindMapping(Direction: enum "Shpfy Mapping Direction"; var ShopifyProduct: Record "Shpfy Product"; var ShopifyVariant: Record "Shpfy Variant"; var Item: Record Item; ItemVariant: Record "Item Variant"; var Handled: Boolean);
+    procedure BeforeFindMapping(Direction: enum "Shpfy Mapping Direction"; var ShopifyProduct: Record "Shpfy Product"; var ShopifyVariant: Record "Shpfy Variant"; var Item: Record Item; ItemVariant: Record "Item Variant"; var Handled: Boolean)
     var
         FindItem: Record Item;
     begin

@@ -24,7 +24,7 @@ This article describes how to use the OnAfterSetupPrinters event to specify what
     codeunit 50102 HandlePrintAction
     {
         [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterDocumentPrintReady', '', true, true)]
-        procedure OnDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean);
+        procedure OnDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean)
             var
                 
             begin
@@ -84,7 +84,7 @@ The following codeunit sends a report by email to a printer when a user chooses 
 codeunit 50109 SendReportByEmail
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterDocumentPrintReady', '', true, true)]
-    procedure OnDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean);
+    procedure OnDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean)
     var
         SMTPMailSetup: Record "SMTP Mail Setup";
         SMTPMail: Codeunit "SMTP Mail";

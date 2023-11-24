@@ -56,7 +56,7 @@ The Dictionary data type does not support holding instantiated records. For this
 In the following example, the variable `counter` represents the Dictionary data type to store a value representing the number of occurrences for each character in the `customerName`. Using the `Get` method, you get the number of occurrences for the character at position `i`. If `i` returns **false**, it means there is no value associated with that character, so you add the value 1. If `i` returns **true**, it means the value already exists, so you add `c + 1` to the value. The `Add` method adds the {key:value} pair to the Dictionary.
 
 ```al
-procedure CountCharactersInCustomerName(customerName: Text; var counter: Dictionary of [Char, Integer]);
+procedure CountCharactersInCustomerName(customerName: Text; var counter: Dictionary of [Char, Integer])
 var
     i : Integer;
     c : Integer;

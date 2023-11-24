@@ -33,7 +33,7 @@ Specifies a SessionSettingsHandler method, which handles RequestSessionUpdate st
 > **Version**: _Available or changed with runtime version 3.0._
 ```AL
 [SessionSettingsHandler]
-procedure SessionSettingsHandler(var SessionSettings: SessionSettings) : Boolean;
+procedure SessionSettingsHandler(var SessionSettings: SessionSettings) : Boolean
 ```
 > [!IMPORTANT]
 > The above signature requires the SessionSettingsHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).

@@ -73,7 +73,7 @@ The following code creates codeunit that publishes the `OnAddressLineChanged` ev
 codeunit 50100 MyPublishers
 {
     [IntegrationEvent(false, false)]
-    procedure OnAddressLineChanged(line: Text[100]);
+    procedure OnAddressLineChanged(line: Text[100])
     begin
     end;
 }
@@ -88,7 +88,7 @@ codeunit 50101 MySubscribers
     EventSubscriberInstance = Manual;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 'OnAddressLineChanged', '', true, true)]
-    procedure CheckAddressLine(line: Text[100]);
+    procedure CheckAddressLine(line: Text[100])
     begin
         if (STRPOS(line, '+') > 0) then begin
             MESSAGE('Can''t use a plus sign (+) in the address [' + line + ']');

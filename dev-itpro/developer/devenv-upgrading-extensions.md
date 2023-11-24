@@ -196,7 +196,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 
     ```AL
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Upgrade Tag", 'OnGetPerCompanyUpgradeTags', '', false, false)]
-    local procedure OnGetPerCompanyTags(var PerCompanyUpgradeTags: List of [Code[250]]);
+    local procedure OnGetPerCompanyTags(var PerCompanyUpgradeTags: List of [Code[250]])
     begin
         PerCompanyUpgradeTags.Add(UpgradeTagValue);
     end;
@@ -288,7 +288,7 @@ codeunit 50101 "ABC Upgrade Tag Definitions"
 {
     // Register the new upgrade tag for new companies when they are created.
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Upgrade Tag", 'OnGetPerCompanyUpgradeTags', '', false, false)]
-    local procedure OnGetPerCompanyTags(var PerCompanyUpgradeTags: List of [Code[250]]);
+    local procedure OnGetPerCompanyTags(var PerCompanyUpgradeTags: List of [Code[250]])
     begin
         PerCompanyUpgradeTags.Add(GetABCShoeSizeUpgradeTag());
     end;

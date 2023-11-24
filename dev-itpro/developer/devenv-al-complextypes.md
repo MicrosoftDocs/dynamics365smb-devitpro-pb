@@ -25,7 +25,7 @@ The method in the example below, will take a name, and return the first customer
 /// <param name="Name">Name filter</param> 
 /// <returns>First customer</returns> 
 
-procedure GetCustomerByName(Name: Text): record Customer;
+procedure GetCustomerByName(Name: Text): record Customer
 var
     Customer: record Customer;
 begin
@@ -69,7 +69,7 @@ It doesn't only work for user-defined types like records, codeunits, etc., but a
 /// Returns a bing-ready HttpClient 
 /// </summary> 
 /// <returns>Bing HttpClient</returns> 
-procedure GetBingClient() Result: HttpClient;
+procedure GetBingClient() Result: HttpClient
 begin
     Result.SetBaseAddress('https://www.bing.com');
 end;
@@ -88,7 +88,7 @@ end;
 /// Get the response from www.bing.com as an html-string.  
 /// </summary> 
 /// <returns>string with html</returns> 
-procedure GetBingHtml() Result: Text;
+procedure GetBingHtml() Result: Text
 begin
     GetBingResponse().Content().ReadAs(Result);
 end;

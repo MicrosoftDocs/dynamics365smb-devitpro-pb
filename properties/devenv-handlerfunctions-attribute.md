@@ -54,7 +54,7 @@ The following is some important information about handler methods:
 ```AL
 [Test]
 [HandlerFunctions('SendNotificationHandler')]
-procedure MyTestFunction();
+procedure MyTestFunction()
 begin
     ...
 end

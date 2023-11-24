@@ -53,7 +53,7 @@ Clear(JsonToken)
 ## Example
 This example shows how to read JSON data from a string into a JsonToken variable.
 ```
-local procedure ReadJson(data : Text) result : JsonToken;
+local procedure ReadJson(data : Text) result : JsonToken
 begin
     result.ReadFrom(data);    
 end;

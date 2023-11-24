@@ -96,7 +96,7 @@ trigger OnRun()
 In the following example, the variable `CustomerNames` is a list of Text values which represent customer names. The procedure `WorkWithListOfCustomers` displays how one would work with the List data type. The `Add` method is used to add the string `'John'` to the `CustomerNames` list. The `Contains` method is used to check whether the list contains the specified value, in this case, the string `'John'`. We continue by using the Message procedure to display a relevant message. 
 
 ```al
-procedure WorkWithListOfCustomers();
+procedure WorkWithListOfCustomers()
 var
     customerNames : List of [Text];
 begin

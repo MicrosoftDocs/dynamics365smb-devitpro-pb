@@ -130,7 +130,7 @@ In this example, you will use the [VALIDATE method](methods-auto/record/record-v
 3. Add a local method to the codeunit that iterates through the records of the **Customer** table and replicates data to the new field (**ABC - ShoeSize**). 
 
     ```AL
-    local procedure HandleFreshInstall();
+    local procedure HandleFreshInstall()
     begin
         if CustomerRec.FINDSET() then
             repeat

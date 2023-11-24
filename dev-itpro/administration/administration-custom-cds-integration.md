@@ -218,7 +218,7 @@ Now use the table to create a page for coupling [!INCLUDE[prod_short](../include
 
     ```al
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Setup Defaults", 'OnAddEntityTableMapping', '', false, false)]
-        local procedure HandleOnAddEntityTableMapping(var TempNameValueBuffer: Record "Name/Value Buffer" temporary);
+        local procedure HandleOnAddEntityTableMapping(var TempNameValueBuffer: Record "Name/Value Buffer" temporary)
         var
             CRMSetupDefaults: Codeunit "CRM Setup Defaults";
         begin

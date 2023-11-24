@@ -65,7 +65,7 @@ This example publishes an integration type event by using the OnAddressLineChang
 codeunit 50105 MyEventPublisher
 {
     [IntegrationEvent(false, false)]
-    procedure OnAddressLineChanged(line : Text[100]);
+    procedure OnAddressLineChanged(line : Text[100])
     begin
     end;
 }

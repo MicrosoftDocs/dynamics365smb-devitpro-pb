@@ -82,7 +82,7 @@ Your MyWorkflowEvents.codeunit.al file now looks like this:
 ```AL
 codeunit 50101 MyWorkflowEvents
 {
-    procedure MyWorkflowEventCode(): code[128];
+    procedure MyWorkflowEventCode(): code[128]
     begin
     end;
 }
@@ -221,7 +221,7 @@ The codeunit now looks something like this:
 ```AL
 codeunit 50103 MyWorkflowResponses
 {
-    procedure MyWorkflowResponseCode(): code[128];
+    procedure MyWorkflowResponseCode(): code[128]
     begin
     end;
 

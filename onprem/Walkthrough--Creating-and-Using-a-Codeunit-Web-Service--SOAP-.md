@@ -31,7 +31,7 @@ codeunit 50110 Letters
 
     end;
 
-    procedure Capitilize(inputstring: Text[250]) outputstring: Text[250];
+    procedure Capitilize(inputstring: Text[250]) outputstring: Text[250]
     var
         myInt: Integer;
     begin

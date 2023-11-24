@@ -59,7 +59,7 @@ This example publishes a business type event by using the OnAddressLineChanged m
 
 ```AL
 [BusinessEvent(false)] 
-procedure OnAddressLineChanged(line : Text[100]);
+procedure OnAddressLineChanged(line : Text[100])
 begin    
 end;
 ```  

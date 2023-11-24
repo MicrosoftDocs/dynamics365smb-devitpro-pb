@@ -43,7 +43,7 @@ A record instance that has been previously loaded with fields can be reset to a 
 The following code shows a way to load only a single field from the **Item** table for computing the arithmetic mean.
 
 ```AL
-procedure ComputeArithmeticMean(): Decimal;
+procedure ComputeArithmeticMean(): Decimal
 var
     Item: Record Item;
     SumTotal: Decimal;

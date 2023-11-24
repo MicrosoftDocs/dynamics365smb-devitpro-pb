@@ -21,7 +21,7 @@ AL test methods on test codeunits. A test method is a method that has the [Test 
   
 ```AL
 [ModalPageHandler]
-procedure ModalPageHandler(var Page: TestPage);
+procedure ModalPageHandler(var Page: TestPage)
 ```    
   
 ## Remarks

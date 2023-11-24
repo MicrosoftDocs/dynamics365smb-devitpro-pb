@@ -26,7 +26,7 @@ codeunit 50105 MyReportTesting
     
     [Test]
     [HandlerFunctions('RemittanceAdviceJournalRequestPageHandler')]
-    procedure TestingReports();
+    procedure TestingReports()
     var
         XmlParameters: Text;
         LibraryReportDataset: Codeunit "Library - Report Dataset";
@@ -41,7 +41,7 @@ codeunit 50105 MyReportTesting
     end;
 
     [RequestPageHandler]
-    procedure RemittanceAdviceJournalRequestPageHandler(var RemittanceAdviceJournal: TestRequestPage 399);
+    procedure RemittanceAdviceJournalRequestPageHandler(var RemittanceAdviceJournal: TestRequestPage 399)
     begin
         // Empty handler used to close the request page. We use default settings. 
     end;

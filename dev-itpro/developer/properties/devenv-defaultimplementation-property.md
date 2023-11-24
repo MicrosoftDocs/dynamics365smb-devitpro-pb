@@ -59,7 +59,7 @@ pageextension 50130 CustListExt extends "Customer List"
 
 interface IFoo
 {
-    procedure Foo();
+    procedure Foo()
 }
 
 codeunit 50145 ErrorFooImpl implements IFoo

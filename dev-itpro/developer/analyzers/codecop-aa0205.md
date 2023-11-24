@@ -30,14 +30,14 @@ var
     x: Integer;
     z: Integer;
 
-procedure Proc1();
+procedure Proc1()
 var
 begin
     Proc2(z);
     x := z;
 end;
 
-procedure Proc2(z: Integer);
+procedure Proc2(z: Integer)
 var
 begin
     z := 10;
@@ -50,14 +50,14 @@ var
     x: Integer;
     z: Integer;
 
-procedure Proc1();
+procedure Proc1()
 var
 begin
     Proc2(z);
     x := z;
 end;
 
-procedure Proc2(var z: Integer);
+procedure Proc2(var z: Integer)
 var
 begin
     z := 10;

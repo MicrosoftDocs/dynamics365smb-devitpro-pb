@@ -21,7 +21,7 @@ AL methods on codeunits.
   
 ```AL
 [Normal]
-procedure Normal();
+procedure Normal()
 ```    
   
 ## Remarks
