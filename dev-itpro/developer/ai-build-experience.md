@@ -76,7 +76,7 @@ page 50100 "Copilot Job Proposal"
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode.svg)
 
-## Specify the mode in which the PromptDialog opens
+### Specify the mode in which the PromptDialog opens
 
 By default, the PromptDialog page opens in the prompt mode. But in some scenarios, this behavior might not be desired. Consider [marketing text suggestions with Copilot](/dynamics365/business-central/ai-overview) from Business Central. This Copilot experience includes a prompt mode, which is used for changing item attributes. However, when users start the copilot experience, it opens directly in the generate mode. 
 
