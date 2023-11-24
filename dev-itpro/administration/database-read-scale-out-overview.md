@@ -54,7 +54,6 @@ In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online servic
 
 [!INCLUDE[database_access_intent_note](../includes/include-database-access-intent-note.md)]
 
-
 ## FAQ about read scale-out
 
 #### Which objects are supported?
