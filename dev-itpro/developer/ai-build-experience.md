@@ -56,7 +56,7 @@ The following gives an overview of the typical flow from the user's perspective 
 You create the page like any other page, except consider the following properties:
 
 ```al
-page 50100 "Copilot Job Proposal"
+page 50100 "My copilot"
 {
     Caption = 'Draft with my copilot';
     PageType = PromptDialog;
