@@ -305,10 +305,11 @@ actions
 
 ## Customize the caption
 
-By default, the page caption in all modes of the PromptDialog page is determined by the page's Caption property. By using the [DataCaptionExpression property](properties/devenv-datacaptionexpression-property.md), you can change the caption dynamically. For example, you can display a different caption when the page is in the content and generate mode than in the prompt mode.
+By default, the page caption in all modes of the PromptDialog page is determined by the page's Caption property. By using the [DataCaptionExpression property](properties/devenv-datacaptionexpression-property.md), you can change the caption dynamically. This property enables you to display a different caption when the page is in the content and generate mode than in the prompt mode.
 
 ![Shows the caption next to the edit button in PromptDialog type page](media/promptdialog-content-mode-caption.svg)
 
+A useful pattern is to show the input that was made by the user before before the AI generation is done. 
 
 ```al
 
