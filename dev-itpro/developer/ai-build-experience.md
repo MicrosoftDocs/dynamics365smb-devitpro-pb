@@ -58,7 +58,7 @@ You create the page like any other page, except consider the following propertie
 ```al
 page 50100 "Copilot Job Proposal"
 {
-    Caption = 'Draft new job with copilot';
+    Caption = 'Draft with my copilot';
     PageType = PromptDialog;
     Extensible = false;
     PromptMode = Prompt;
@@ -303,6 +303,48 @@ actions
 
 ```
 
+## Customize the caption
+
+By default, the page caption in all modes of the PromptDialog page is determined by the page's Caption property. By using the [DataCaptionExpression property](properties/devenv-datacaptionexpression-property.md), you can change the caption dynamically. For example, you can display a different caption when the page is in the content and generate mode than in the prompt mode.
+
+![Shows the caption next to the edit button in PromptDialog type page](media/promptdialog-content-mode-caption.svg)
+
+
+```al
+
+page 50100 My Copilot"
+{
+    Caption = 'Draft with my copilot';
+    DataCaptionExpression = UserInput;
+    PageType = PromptDialog;
+    Extensible = false;
+
+```
+
+## Enable proposal history capability
+
+While using copilot, users will typically regenerate one or more times to get different proposals. It's useful that they can scroll back and forth through a history of the different proposals. To accommodate this capability, you can set up version carousel at the top of the PromptDialog page.
+
+![Shows the version control in content mode of the PromptDialog type page](media/promptdialog-content-mode-versions.svg)
+
+This capability requires that the PromptDialog page uses a temporary source table. Unlike with other page types, the source table represents an instance of a copilot proposal. It can include both user inputs and the AI-generated results. 
+
+You should design the capability to insert a new record each time the user regenerates, before the page is closed. When in place, the control appears on th PromptDialog page whenever users generate more that one proposal. After the user closes the copilot, for example by saving or discarding the results, the version history is deleted. 
+
+
+```al
+page 50100 "Copilot Job Proposal"
+{
+    Caption = 'Draft new job with copilot';
+    PageType = PromptDialog;
+    Extensible = false;
+    PromptMode = Prompt;
+    IsPreview = true;
+    SourceTable = TempInputData;
+    SourceTableTemporary = true;
+...
+}
+```  
 
 ## Launch experience
 
@@ -321,7 +363,7 @@ action(GenerateCopilot)
 }
 ```
 
-Set the [Image property](properties/devenv-image-property.md) to either `Sparkle` or `SparkleFilled`.  These images are recognized across Microsoft products to indicate that the action is associated with copilot. 
+Set the [Image property](properties/devenv-image-property.md) to either `Sparkle` or `SparkleFilled`.  These images are recognized across Microsoft products to indicate that the action is associated with copilot.
 
 
 
@@ -414,22 +456,6 @@ begin
 end;
 }
 ```
-
-## Enable proposal history capability
-
-While using copilot, users will typically regenerate one or more times to get different proposals. It's useful that they can scroll back and forth through a history of the different proposals. To accommodate this capability, you can set up version carousel at the top of the PromptDialog page.
-
-![Shows the version control in content mode of the PromptDialog type page](media/promptdialog-content-mode-versions.svg)
-
-This capability requires that the PromptDialog page uses a temporary source table. Unlike with other page types, the source table represents an instance of a copilot proposal. It can include both user inputs and the AI-generated results. 
-
-You should design the capability to insert a new record each time the user regenerates, before the page is closed. When in place, the control appears on th PromptDialog page whenever users generate more that one proposal. After the user closes the copilot, for example by saving or discarding the results, the version history is deleted. 
-
-
-    
-    SourceTable = TempInputData;
-    SourceTableTemporary = true;
-
 <!--
 ## Notes
 
