@@ -56,9 +56,9 @@ The following gives an overview of the typical flow from the user's perspective 
 You create the page like any other page, except consider the following properties:
 
 ```al
-page 50100 "Copilot Job Proposal"
+page 50100 "My copilot"
 {
-    Caption = 'Draft new job with copilot';
+    Caption = 'Draft with my copilot';
     PageType = PromptDialog;
     Extensible = false;
     PromptMode = Prompt;
@@ -78,7 +78,7 @@ page 50100 "Copilot Job Proposal"
 
 ### Specify the mode in which the PromptDialog opens
 
-By default, the PromptDialog page opens in the prompt mode. But in some scenarios, this behavior might not be desired. Consider [marketing text suggestions with Copilot](/dynamics365/business-central/ai-overview) from Business Central. This Copilot experience includes a prompt mode, which is used for changing item attributes. However, when users start the copilot experience, it opens directly in the generate mode. 
+By default, the PromptDialog page opens in the prompt mode. But in some scenarios, this behavior might not be desired. For example, consider [marketing text suggestions with Copilot](/dynamics365/business-central/ai-overview) from Business Central. This copilot experience includes a prompt mode, which is used for changing item attributes. However, when users start the copilot, it opens directly in the generate mode. 
 
 There are two ways to change the mode that PromptDialog page opens. One way is to use PromptMode property, as previously mentioned. The other way to change the mode at runtime, for example, by using the [OnInit](triggers-auto/page/devenv-oninit-page-trigger.md):
 
@@ -303,6 +303,49 @@ actions
 
 ```
 
+## Customize the caption
+
+By default, the page caption in all modes of the PromptDialog page is determined by the page's Caption property. By using the [DataCaptionExpression property](properties/devenv-datacaptionexpression-property.md), you can change the caption dynamically. This property enables you to display a different caption when the page is in the content and generate mode than in the prompt mode.
+
+![Shows the caption next to the edit button in PromptDialog type page](media/promptdialog-content-mode-caption.svg)
+
+A useful pattern is to show the input that was made by the user before before the AI generation is done. 
+
+```al
+
+page 50100 My Copilot"
+{
+    Caption = 'Draft with my copilot';
+    DataCaptionExpression = UserInput;
+    PageType = PromptDialog;
+    Extensible = false;
+
+```
+
+## Enable proposal history capability
+
+While using copilot, users will typically regenerate one or more times to get different proposals. It's useful that they can scroll back and forth through a history of the different proposals. To accommodate this capability, you can set up version carousel at the top of the PromptDialog page.
+
+![Shows the version control in content mode of the PromptDialog type page](media/promptdialog-content-mode-versions.svg)
+
+This capability requires that the PromptDialog page uses a temporary source table. Unlike with other page types, the source table represents an instance of a copilot proposal. It can include both user inputs and the AI-generated results. 
+
+You should design the capability to insert a new record each time the user regenerates, before the page is closed. When in place, the control appears on th PromptDialog page whenever users generate more that one proposal. After the user closes the copilot, for example by saving or discarding the results, the version history is deleted. 
+
+
+```al
+page 50100 "Copilot Job Proposal"
+{
+    Caption = 'Draft new job with copilot';
+    PageType = PromptDialog;
+    Extensible = false;
+    PromptMode = Prompt;
+    IsPreview = true;
+    SourceTable = TempInputData;
+    SourceTableTemporary = true;
+...
+}
+```  
 
 ## Launch experience
 
@@ -321,7 +364,7 @@ action(GenerateCopilot)
 }
 ```
 
-Set the [Image property](properties/devenv-image-property.md) to either `Sparkle` or `SparkleFilled`.  These images are recognized across Microsoft products to indicate that the action is associated with copilot. 
+Set the [Image property](properties/devenv-image-property.md) to either `Sparkle` or `SparkleFilled`.  These images are recognized across Microsoft products to indicate that the action is associated with copilot.
 
 
 
@@ -414,22 +457,6 @@ begin
 end;
 }
 ```
-
-## Enable proposal history capability
-
-While using copilot, users will typically regenerate one or more times to get different proposals. It's useful that they can scroll back and forth through a history of the different proposals. To accommodate this capability, you can set up version carousel at the top of the PromptDialog page.
-
-![Shows the version control in content mode of the PromptDialog type page](media/promptdialog-content-mode-versions.svg)
-
-This capability requires that the PromptDialog page uses a temporary source table. Unlike with other page types, the source table represents an instance of a copilot proposal. It can include both user inputs and the AI-generated results. 
-
-You should design the capability to insert a new record each time the user regenerates, before the page is closed. When in place, the control appears on th PromptDialog page whenever users generate more that one proposal. After the user closes the copilot, for example by saving or discarding the results, the version history is deleted. 
-
-
-    
-    SourceTable = TempInputData;
-    SourceTableTemporary = true;
-
 <!--
 ## Notes
 
