@@ -39,8 +39,8 @@ The following gives an overview of the typical flow from the user's perspective 
 |3|User enters information that copilot uses to generate results. |The `prompt` area of the PromptDialog page defines what the user can input, which typically consists of one or more fields.|[Design the prompt mode](#design-the-prompt-mode)|
 |4|User selects a button to start generating content with AI|The system action `Generate` calls the procedure that starts the AI generation process.|[Add the generate action](#add-a-generate-action)|
 |5|The generation mode appears while the results are being generated.|Handled automatically by the platform.||
-|7|The content mode appears and displays the AI-generated proposal for review by the user.|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Design the content mode](#design-the-content-mode)|
-|8|User chooses to save or discard the proposal by using actions at the bottom of the page |A system action for saving and one for discarding trigger the logic to handle the content with respect the user's choice, and the prompt dialog page closes.|[Add save and discard actions](#add-a-content-area)| 
+|6|The content mode appears and displays the AI-generated proposal for review by the user.|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Design the content mode](#design-the-content-mode)|
+|7|User chooses to save or discard the proposal by using actions at the bottom of the page |A system action for saving and one for discarding trigger the logic to handle the content with respect the user's choice, and the prompt dialog page closes.|[Add save and discard actions](#add-a-content-area)| 
 
 <!--
 1. User opens the Promptdialog page to start the experience, for example, be selecting an action on another page.
