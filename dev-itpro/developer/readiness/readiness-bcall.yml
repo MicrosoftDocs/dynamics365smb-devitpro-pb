@@ -91,9 +91,7 @@ landingContent:
           - text: aka.ms/BCReseller
             url: https://aka.ms/BCReseller
           - text: aka.ms/BCCustomerStories
-            url: https://aka.ms/BCCustomerStories
-          - text: aka.ms/BCExam
-            url: https://aka.ms/BCExam  
+            url: https://aka.ms/BCCustomerStories 
           - text: aka.ms/BCConcierge
             url: https://aka.ms/BCConcierge  
                     
