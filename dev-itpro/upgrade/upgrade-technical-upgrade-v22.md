@@ -2,7 +2,7 @@
 title: "Technical Upgrade to Version 22"
 description: Describes how to do a technical upgrade from Business Central V19, V20, V21 to V22
 ms.custom: na
-ms.date: 03/24/2023
+ms.date: 11/27/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -63,7 +63,7 @@ $CustomerLicense = "The file path and name of the customer license"
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-4. Copy the contents of the **NavEwsWrapper**, and the entire **Timeline** and **PingPong** add-in folders from the version 20 server instance installation to the same folder the new version 22 server instance. For the **Timeline** and **PingPong**, you'll have to add the folders because they're not included in the version 22 server add-ins folder. Replace existing files when prompted.
+4. If upgrading from version 20, copy the contents of the **NavEwsWrapper**, and the entire **Timeline** and **PingPong** add-in folders from the version 20 server instance installation to the same folder the new version 22 server instance. For the **Timeline** and **PingPong**, you'll have to add the folders because they're not included in the version 22 server add-ins folder. Replace existing files when prompted.
 
    By default, the **Add-ins** folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\<server instance>\Service\Add-ins. You'll have to stop the v21 server instance to copy the files.
 
@@ -156,7 +156,7 @@ This task runs a technical upgrade on the application database. A technical upgr
 
     ```powershell
     DatabaseServer      : .\BCDEMO
-    DatabaseName        : Demo Database BC (20-0)
+    DatabaseName        : Demo Database BC (21-0)
     DatabaseCredentials :
     DatabaseLocation    :
     Collation           :
