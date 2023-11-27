@@ -45,6 +45,7 @@ If you don't meet these mandatory requirements, your extension fails validation.
 |The extension submitted must not be a runtime package.|[Creating Runtime Packages](devenv-creating-runtime-packages.md)|
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
 |The extension submitted must specify the `Application` manifest property.|The `Application` manifest property is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](#against-which-releases-of-business-central-is-your-submission-validated)|
+|The extension submitted should have unique `AppId`.| Every extension should have unique `AppId` and it is not allowed to submit PTEs and AppSource apps with the same `AppId`.
 
 ## Technical validation performed by the Business Central services
 
