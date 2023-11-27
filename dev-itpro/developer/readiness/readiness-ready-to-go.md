@@ -17,7 +17,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Register for the [!INCLUDE [prod_short](../includes/prod_short.md)] Launch Event on [aka.ms/BCLE](https://aka.ms/BCLE)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
-- Move to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMForPartners)
+- AIM to the future wiht Microsoft! Move your customers to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMForPartners)
 
 ## Latest release and updates  
 
