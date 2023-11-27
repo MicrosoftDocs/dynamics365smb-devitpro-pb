@@ -3,7 +3,7 @@ title: "Create a New Module in the System Application"
 description: Learn how to create a new module in the System Application.
 author: bholtorf
 ms.custom: na
-ms.date: 07/29/2021
+ms.date: 11/23/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -221,9 +221,9 @@ You can now go to your Github fork and open a pull request in the BCApps reposit
 ## See also
 
 [Create a .NET Wrapper Module](devenv-create-a-wrapper-module.md)  
-[Become a Contributor to Business Central](https://blogs.msdn.microsoft.com/nav/2018/08/28/become-a-contributor-to-business-central/)  
-["Git" going with extensions](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions)  
-[Walkthrough: Contributing to an extension on GitHub](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github)  
-[Getting Started with Modules](devenv-getting-started.md)  
-[Create a New Module in the System Application](devenv-new-module.md)  
-[Module Architecture](devenv-blueprint.md)  
+[Getting Started with Modules](devenv-getting-started.md)    
+[Create a New Module in the System Application](devenv-new-module.md)    
+[Module Architecture](devenv-blueprint.md)    
+["Git" going with extensions (requires login)](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions)    
+[Walkthrough: Contributing to an extension on GitHub (requires login)](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github)   
+[Become a Contributor to Business Central](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/08/28/become-a-contributor-to-business-central/)   
