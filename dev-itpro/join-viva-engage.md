@@ -16,7 +16,7 @@ The partner community on Viva Engage is your unique opportunity as a partner to 
 
 ## How to join Viva Engage
 
-To join the partner community on Viva Engage, you must be an member of the Microsoft Partner Network (MPN) and have a valid MPN ID.   
+Before you can join the partner community on Viva Engage, you must be an member of the [Microsoft Partner Network (MPN) with valid MPN ID. [Learn more about becoming a partner](https://partner.microsoft.com/en-us/partnership).   
 
 Once you have an MPN ID, you can join Viva Engage in one of the following two ways:
 
