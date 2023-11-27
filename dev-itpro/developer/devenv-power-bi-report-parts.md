@@ -332,7 +332,7 @@ pageextension 50101 SalesOrdersPwrBiExt extends "Sales Orders"
 }
 ```
 
-## Pin a specific Power Bi element to page part
+## Pin a specific Power BI element to page part
 
 The framework enables you to display a specific report, report visual, scorecard, dashboard, or dashboard tile, preventing users from switching to other elements or modifying visuals. For example, you can add a part that displays a single report visual, like the one shown in the following figure. Notice that the menu doesn't include the **Select reports**, **Next**, and **Previous** actions, which helps prevent users from accessing other reports:
 

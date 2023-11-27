@@ -204,7 +204,7 @@ The following example shows how you can implement each method in the interface.
 - **Send:** Send an e-document to an external service.
 
     ```AL
-    procedure Send(var EDocument: Record "E-Document"; var TempBlob: Codeunit "Temp Blob"; var IsAsync: Boolean; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage);
+    procedure Send(var EDocument: Record "E-Document"; var TempBlob: Codeunit "Temp Blob"; var IsAsync: Boolean; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage)
     var
         // Record that hold integration setup
         ExampleIntegration: Record "Example - Test Integration";
@@ -228,7 +228,7 @@ The following example shows how you can implement each method in the interface.
 - **SendBatch:** Send a batch of e-documents to an external service.
 
     ```AL
-    procedure SendBatch(var EDocuments: Record "E-Document"; var TempBlob: Codeunit "Temp Blob"; var IsAsync: Boolean; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage);
+    procedure SendBatch(var EDocuments: Record "E-Document"; var TempBlob: Codeunit "Temp Blob"; var IsAsync: Boolean; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage)
     var
         // Record that hold integration setup
         ExampleIntegration: Record "Example - Test Integration";
@@ -252,7 +252,7 @@ The following example shows how you can implement each method in the interface.
 - **GetResponse:** Get the response of an asynchronous send request.
 
     ```AL
-    procedure GetResponse(var EDocument: Record "E-Document"; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage): Boolean;
+    procedure GetResponse(var EDocument: Record "E-Document"; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage): Boolean
     var
         // Record that hold integration setup
         ExampleIntegration: Record "Example - Test Integration";
@@ -273,7 +273,7 @@ The following example shows how you can implement each method in the interface.
 - **GetApproval:** Check whether a document is approved or rejected.
 
     ```AL
-    procedure GetResponse(var EDocument: Record "E-Document"; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage): Boolean;
+    procedure GetResponse(var EDocument: Record "E-Document"; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage): Boolean
     var
         // Record that hold integration setup
         ExampleIntegration: Record "Example - Test Integration";
@@ -294,7 +294,7 @@ The following example shows how you can implement each method in the interface.
 - **GetApproval:** Check whether a document is approved or rejected.
 
     ```AL
-    procedure GetApproval(var EDocument: Record "E-Document"; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage): Boolean;
+    procedure GetApproval(var EDocument: Record "E-Document"; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage): Boolean
     var
         // Record that hold integration setup
         ExampleIntegration: Record "Example - Test Integration";
@@ -315,7 +315,7 @@ The following example shows how you can implement each method in the interface.
 - **Cancel:** Send a cancel request for an e-document.
 
     ```AL
-    procedure Cancel(var EDocument: Record "E-Document"; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage): Boolean;
+    procedure Cancel(var EDocument: Record "E-Document"; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage): Boolean
     var
         // Record that hold integration setup
         ExampleIntegration: Record "Example - Test Integration";
@@ -336,7 +336,7 @@ The following example shows how you can implement each method in the interface.
 - **ReceiveDocument:** Receive an e-document from an external service.
 
     ```AL
-    procedure ReceiveDocument(var TempBlob: Codeunit "Temp Blob"; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage);
+    procedure ReceiveDocument(var TempBlob: Codeunit "Temp Blob"; var HttpRequest: HttpRequestMessage; var HttpResponse: HttpResponseMessage)
     var
         // Record that hold integration setup
         ExampleIntegration: Record "Example - Test Integration";

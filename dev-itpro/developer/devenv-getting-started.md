@@ -31,7 +31,7 @@ Want to improve an existing module? For more information, see [Change a module](
 
 ## System application reference documentation
 
-For an overview of the system application reference documentation, see [Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module).
+For an overview of the system application reference documentation, see [Module System Application](/dynamics365/business-central/application/system-application/module/system-application).
 
 ## Have an issue?
 Please open an [issue](https://github.com/microsoft/BCApps/issues/new).
