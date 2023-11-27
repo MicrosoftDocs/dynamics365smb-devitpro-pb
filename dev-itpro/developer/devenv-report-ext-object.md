@@ -152,7 +152,8 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 
-Report extension triggers
+
+Report extension triggers   
 [OnPostReport (Report Extension) Trigger](triggers-auto/reportextension/devenv-onpostreport-reportextension-trigger.md)  
 [OnPreReport (Report Extension) Trigger](triggers-auto/reportextension/devenv-onprereport-reportextension-trigger.md)  
 [OnAfterAfterGetRecord (Report Extension Data Set Modify) Trigger](triggers-auto/reportextensiondatasetmodify/devenv-onafteraftergetrecord-reportextensiondatasetmodify-trigger.md)  
