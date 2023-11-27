@@ -80,6 +80,8 @@ landingContent:
             url: https://aka.ms/BCUniversalCode
           - text: aka.ms/BCCapabilities
             url: https://aka.ms/BCCapabilities
+          - text: aka.ms/AIMforPartners
+            url: https://aka.ms/AIMForPartners
       - linkListType: get-started
         links:
           - text: aka.ms/BCPartnerPortal
@@ -168,6 +170,8 @@ landingContent:
             url: https://aka.ms/BCAndGP
           - text: aka.ms/BCCloudMigrationYammer
             url: https://aka.ms/bccloudmigrationyammer
+          - text: aka.ms/AIMforPartners
+            url: https://aka.ms/AIMForPartners
 
   - title: Telemetry and performance
     linkLists:
