@@ -65,7 +65,7 @@ A parameter is one or more variables or expressions that are sent to the method 
 For example, the following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
 
 ```AL
- procedure MyMethod(MyCustomer : Record Customer; var MyDimension : ARRAY [2] OF Boolean)
+ procedure MyMethod(MyCustomer : Record Customer; var MyDimension : List of [Boolean])
 ```
 
 This example also illustrates how parameters can be *passed by value* or *passed by reference*. The `MyCustomer` parameter is passed by value, and the `MyDimension` parameter is passed by reference in the example above. For more information, see the section [Parameters](devenv-al-methods.md#Parameters) below.
@@ -139,22 +139,31 @@ method(Optional1, Optional2)
   
 ## Example 2  
 
-ABS is an example of an AL method that has a fixed number of parameters (1).  
+`Abs` is an example of an AL method that has a fixed number of parameters (1).  
   
 ```AL
-Value := -1033; //A negative integer value  
-PositiveValue := ABS(Value); //Calculate the positive value 1033  
+var
+    Value: Integer;
+    PositiveValue: Integer;
+begin
+    Value := -1033; //A negative integer value  
+    PositiveValue := Abs(Value); //Calculate the positive value 1033  
+end
 ```  
   
 ## Example 3  
 
-The method `DMY2DATE` is an example of a method that can be called by using a variable number of parameters.  
+The method `DMY2Date` is an example of a method that can be called by using a variable number of parameters.  
   
 ```AL
-NewDate := DMY2DATE(5, 11, 1992); //Returns the date November 5, 1992  
+var
+    NewDate: Date;
+begin
+    NewDate := DMY2Date(5, 11, 1992); // Returns the date November 5, 1992  
+end
 ```  
   
-Depending on the use of the `DMY2DATE` method, one, two, or three parameters can be passed to the method because the second and third parameters are optional. When the second and third parameters are not used, values from the system date are used as default values.  
+Depending on the use of the `DMY2Date` method, one, two, or three parameters can be passed to the method because the second and third parameters are optional. When the second and third parameters are not used, values from the system date are used as default values.  
   
 ## Example 4  
 
@@ -174,6 +183,15 @@ if (MyMethod(Param1)) then
 else  
   <Statement2>  
 ```
+
+### Example 6  
+This example also illustrates how parameters can be *passed by value* or *passed by reference*. The following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
+
+```AL
+procedure MyMethod(MyCustomer : Record Customer; var MyDimension : List of [Boolean])
+```
+
+The `MyCustomer` parameter is passed by value, and the `MyDimension` parameter is passed by reference.
 
 ## See Also
 
