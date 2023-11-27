@@ -170,6 +170,8 @@ landingContent:
             url: https://aka.ms/BCAndGP
           - text: aka.ms/BCCloudMigrationYammer
             url: https://aka.ms/bccloudmigrationyammer
+      - linkListType: get-started
+        links:
           - text: aka.ms/AIMforPartners
             url: https://aka.ms/AIMForPartners
 
