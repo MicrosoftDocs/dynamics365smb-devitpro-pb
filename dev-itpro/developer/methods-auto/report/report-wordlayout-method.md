@@ -64,7 +64,7 @@ begin
 end;
 ```
 
-If the report is known when you write the code, the safest way to runtime errors is to use the scope (::) operator to reference the report object. This way you will get a compile time error if the report does not exist. The example below illustrates how to call WordLayout on the report MyReport using this technique:
+If the report is known when you write the code, the safest way to runtime errors is to use the scope (::) operator to reference the report object. This way you'll get a compile time error if the report doesn't exist. The example illustrates how to call WordLayout on the report MyReport using this technique:
 
 ```AL
 var
