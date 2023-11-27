@@ -2,7 +2,7 @@
 title: "Technical Upgrade to Version 23"
 description: Describes how to do a technical upgrade from Business Central V19, V20, V21, V22 to V23
 ms.custom: bap-template
-ms.date: 08/14/2023
+ms.date: 11/27/2023
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -63,9 +63,9 @@ $CustomerLicense = "The file path and name of the customer license"
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-4. Copy the contents of the **NavEwsWrapper**, and the entire **Timeline** and **PingPong** add-in folders from the version 20 server instance installation to the same folder the new version 23 server instance. For the **Timeline** and **PingPong**, you'll have to add the folders because they're not included in the version 23 server add-ins folder. Replace existing files when prompted.
+4. If you're upgrading from v20, copy the contents of the **NavEwsWrapper**, and the entire **Timeline** and **PingPong** add-in folders from the version 20 server instance installation to the same folder the new version 23 server instance. For the **Timeline** and **PingPong**, you'll have to add the folders because they're not included in the version 23 server add-ins folder. Replace existing files when prompted.
 
-   By default, the **Add-ins** folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\<server instance>\Service\Add-ins. You'll have to stop the v21 server instance to copy the files.
+   By default, the **Add-ins** folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\<server instance>\Service\Add-ins. You'll have to stop the server instance to copy the files.
 
     > [!IMPORTANT]
     > This step is important, otherwise you won't be about to recompile the Business Central system application and base application. If you don't repair these extension, you'll get errors when you try to install them or mount the tenant.
@@ -157,7 +157,7 @@ This task runs a technical upgrade on the application database. A technical upgr
 
     ```powershell
     DatabaseServer      : .\BCDEMO
-    DatabaseName        : Demo Database BC (20-0)
+    DatabaseName        : Demo Database BC (22-0)
     DatabaseCredentials :
     DatabaseLocation    :
     Collation           :
