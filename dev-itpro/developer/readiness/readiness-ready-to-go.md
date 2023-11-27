@@ -55,6 +55,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Online or in-person training and coaching for [!INCLUDE [prod_short](../includes/prod_short.md)]. Contact an ISV Development Center: [aka.ms/ISVDevCenter](https://aka.ms/ISVDevCenter)
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode)
 - Get technical to land large customer implementations and close deals: [aka.ms/BCConcierge](https://aka.ms/BCConcierge)  
+- The AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
 
 ## Go to market
 
