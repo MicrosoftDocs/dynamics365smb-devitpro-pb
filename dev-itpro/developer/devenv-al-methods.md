@@ -173,7 +173,7 @@ You can assign the return value of a method to a variable.
 ReturnVal := MyMethod(Param1);  
 ```  
   
-### Example 5  
+## Example 5  
 
 In this example, `MyMethod` returns a Boolean value. You can use the return value in a conditional statement.  
   
@@ -184,7 +184,7 @@ else
   <Statement2>  
 ```
 
-### Example 6  
+## Example 6  
 This example also illustrates how parameters can be *passed by value* or *passed by reference*. The following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
 
 ```AL
