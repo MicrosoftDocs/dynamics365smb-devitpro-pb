@@ -57,10 +57,10 @@ Starting from version 23.3, the [!INCLUDE[prod_short](../includes/prod_short.md)
 - CaptionData
 - Aggregated Metadata
 
-All data in these worksheets are organized in Excel tables from which you can reference individual fields using Excel table formulas.
+All data in these worksheets is organized in Excel tables from which you can reference individual fields using Excel table formulas.
 
-
-Notice: all three worksheets are hidden by default.
+> [!NOTE]  
+> All three worksheets are hidden by default.
 
 
 #### TranslationData worksheet definition (table TranslationData) 
