@@ -83,7 +83,7 @@ page 50100 "My copilot"
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode.svg)
 
-This is the first step in creating the the PromptDialog type page. The sections that follow explain the different modes and the UI elements that comprise the modes. 
+This is the first step in creating the PromptDialog type page. The sections that follow explain the different modes and the UI elements that comprise the modes. 
 
 ## Specify the mode in which the PromptDialog opens
 
@@ -97,7 +97,9 @@ begin
     CurrPage.PromptMode := PromptMode::Generate;
 end;
 ```
-Note that in both cases described above, the trigger defined for the `systemaction(Generate)` control will automatically be invoked.
+
+In both cases, the trigger defined for the `systemaction(Generate)` control will automatically be invoked.
+
 ## Design the prompt mode 
 
 In this task, you define the screen of the PromptDialog page where users can add input that's used by AI generation logic for producing results. The prompt area is optional because not all AI designs required it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the copilot experience. 
@@ -125,6 +127,9 @@ layout
 ```
 
 Within `area(Prompt)`, you can add one or more fields, groups, and page parts. `Prompt` supports all `area()` controls except the`repeater` control.
+
+> [!NOTE]
+> The code example is a special case where the first field on the PromptDialog page is shown as a multiline input with `ShowCaption=false`. In this case, the page caption serves as the caption for the input field. For accessibility and usability reasons, other fields on the page should continue to have their captions visible.
 
 ### Add a generate action
 
