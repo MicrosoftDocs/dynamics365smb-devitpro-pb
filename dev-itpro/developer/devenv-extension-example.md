@@ -448,7 +448,7 @@ codeunit 50105 RewardsInstallCode
     end;
 
     // Insert the GOLD, SILVER, BRONZE reward levels
-    procedure InsertDefaultRewards();
+    procedure InsertDefaultRewards()
     begin
         InsertRewardLevel('GOLD', 'Gold Level', 20);
         InsertRewardLevel('SILVER', 'Silver Level', 10);
@@ -456,7 +456,7 @@ codeunit 50105 RewardsInstallCode
     end;
 
     // Create and insert a reward level in the "Reward" table.
-    procedure InsertRewardLevel(ID : Code[30]; Description : Text[250]; Discount : Decimal);
+    procedure InsertRewardLevel(ID : Code[30]; Description : Text[250]; Discount : Decimal)
     var
         Reward : Record Reward;
     begin
