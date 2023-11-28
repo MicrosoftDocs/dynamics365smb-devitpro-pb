@@ -16,7 +16,7 @@ ms.custom: bap-template #Required; don't change.
 
 Data virtualization is part of the fabric of the tools to integrate Business Central online with Microsoft Dataverse, see [a review of Business Central & Dataverse integration](https://github.com/microsoft/d365bcdv/blob/main/Review%20of%20Business%20Central%20and%20Dataverse%20integration.pdf).  It allows users with Business Central licenses and entitlements to access data stored in Business Central online by performing (**C**reate/**R**ead/**U**pdate/**D**elete) API operations on Business Central tables that are available as virtual tables in Dataverse.  
 
-![Screenshot](../../../../images/virtual-table-inbound-interaction.png)
+![Screenshot](/media/virtual-table-inbound-interaction.png)
 
 These licensed users are considered as internal users to the organizations or companies that purchase the licenses. They're in employee-like relationships with the companies and perform business processes on the companies' behalf. They can access data stored in Business Central online using Power Apps and Power Automate, which operate on virtual tables in Dataverse.
 
@@ -72,13 +72,13 @@ To connect your Business Central environment to a Dataverse environment, in whic
 1. Select **Settings** icon > **Assisted setup** > **Set up a connection to Dataverse** to open the **Dataverse Connection Setup** assisted setup guide.  
 1. Turn on the **Enable virtual tables and events** switch and then select **Next**.
 
-   ![Screenshot](../../../../images/dataverse-connection-setup.png)
+   ![Screenshot](media/dataverse-connection-setup.png)
 
 1. Review the terms and conditions, If you want to accept, turn on the **I accept** switch, and then select **Next**.
 1. Specify your Dataverse environment URL, sign in as an administrator user, and then select  **Next**.
 1. Install the *Business Central Virtual Table* app from AppSource, and then select the **Finish** button.
 
-   ![Screenshot](../../../../images/virtual-table-plugin.png)
+   ![Screenshot](media/virtual-table-plugin.png)
 
 ## <a name="s2s"></a>Assign permission sets to anonymous and authenticated external users
 
@@ -92,7 +92,7 @@ Because external users have no Business Central license or entitlements, we've c
    - *Power Pages Anonymous External Users* for accessing data stored in Business Central online via Power Pages on behalf of anonymous external users.
    - *Power Pages Authenticated External Users* for accessing data stored in Business Central online via Power Pages on behalf of authenticated external users.
 
-   ![Screenshot](../../../../images/power-pages-microsoft-entra-applications.png)
+   ![Screenshot](media/power-pages-microsoft-entra-applications.png)
 
 1. Open the *Power Pages Anonymous External Users* card, select *Enabled* for the **State** property, and assign permission sets with the appropriate scope for anonymous external users, for example read-only for certain tables and LOGIN permission set as a minimum.
 
