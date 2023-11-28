@@ -380,7 +380,8 @@ action(GenerateCopilot)
 }
 ```
 
-Set the [Image property](properties/devenv-image-property.md) to either `Sparkle` or `SparkleFilled`.  These images are recognized across Microsoft products to indicate that the action is associated with copilot.
+Set the [Image property](properties/devenv-image-property.md) to either `Sparkle` ![Shows the copilot sparkle icon](media/copilot-sparkle.png)
+or `SparkleFilled` ![Shows the copilot sparkle filled icon](media/copilot-sparkle-filled.png).  These images are recognized across Microsoft products to indicate that the action is associated with copilot.
 
 
 
