@@ -49,9 +49,9 @@ Specifies which record to use in the report. Any filters that have been applied 
 
 ## Remarks  
 You can use the SaveAsPdf method on the global Report object and on instances of a Report variable.
-If, at design time, you do not know the specific report that you want to run, then use this method (the static one) and specify the report object ID in the *Number* parameter. If you do know which report you want to run, then use the instance method [Report.SaveAsPdf(FileName: Text)](./report-saveaspdf-method.md).
+If, at design time, you do not know the specific report that you want to run, then use this method (the static one) and specify the report object ID in the *Number* parameter. If you do know which report you want to run, then use the instance method [Report.SaveAsPdf(FileName: Text)](./reportinstance-saveaspdf-method.md).
 
-When you call **SaveAsPDF**, the report is generated and saved to "*FileName*." A **Saving to PDF** window shows the status of the process. Note that the request page will not be shown.  
+When you call **SaveAsPDF**, the report is generated and saved to the file specified in "*FileName*." A **Saving to PDF** window shows the status of the process. Note that the request page will not be shown.  
 
 [!INCLUDE[report_download_file](../../includes/include-report-download-file.md)]
 

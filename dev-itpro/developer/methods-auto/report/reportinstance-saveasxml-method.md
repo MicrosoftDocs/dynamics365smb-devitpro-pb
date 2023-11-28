@@ -46,7 +46,7 @@ The path and name of the file that you want to save the query to.
 ## Remarks  
 You can use the SaveAsXML method on the global Report object and on Report variables. If, at design time, you do not know the specific report that you want to run, then use the static version of the SaveAsXml method, see [Report.SaveAsXml(Integer, Text [, var Record])](./report-saveasxml-method.md).  
 
-When you call the SaveAsXML method, the report is generated and saved to "*FileName*." The request page is not shown.  
+When you call the SaveAsXML method, the report is generated and saved to the file specified in "*FileName*." The request page is not shown.  
 
 [!INCLUDE[report_download_file](../../includes/include-report-download-file.md)]
 

@@ -49,15 +49,16 @@ Specifies which record to use in the report. Any filters that have been applied 
 
 ## Remarks  
 You can use the SaveAsXml method on the global Report object and on instances of a Report variable.
-If, at design time, you do not know the specific report that you want to run, then use this method (the static one) and specify the report object ID in the *Number* parameter. If you do know which report you want to run, then use the instance method [Report.SaveAsXml(FileName: Text)](./report-saveasxml-method.md).
+If, at design time, you do not know the specific report that you want to run, then use this method (the static one) and specify the report object ID in the *Number* parameter. If you do know which report you want to run, then use the instance method [Report.SaveAsXml(FileName: Text)](./reportinstance-saveasxml-method.md).
 
-When you call the SaveAsXML method, the report is generated and saved to "*FileName*." The request page is not shown.  
+When you call the SaveAsXML method, the report is generated and saved to the file specified in "*FileName*." The request page is not shown.  
 
 ### Error conditions  
 The method can fail in the following four ways:
-- If the report you specify in "*Number*" does not exist,
-[!INCLUDE[report_saveas_error_list](../../includes/include-report-saveas-error-list.md)]
-
+- [!INCLUDE[report_saveas_error_list_report_not_exists](../../includes/include-report-saveas-error-list-report-not-exists.md)]
+- [!INCLUDE[report_saveas_error_list_folder_not_exists](../../includes/include-report-saveas-error-list-folder-not-exists.md)]
+- [!INCLUDE[report_saveas_error_list_file_used](../../includes/include-report-saveas-error-list-file-used.md)]
+- [!INCLUDE[report_saveas_error_list_file_permission](../../includes/include-report-saveas-error-list-file-permission.md)]
 If the report you specify does not exist, then a run-time error occurs.  
 
 [!INCLUDE[io_errors](../../includes/include-io-errors.md)]

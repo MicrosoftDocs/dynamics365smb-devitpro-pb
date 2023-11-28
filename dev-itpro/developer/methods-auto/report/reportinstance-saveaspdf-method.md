@@ -46,7 +46,7 @@ The path and name of the file that you want to save the report as.
 ## Remarks  
 The SaveAsPdf method can be used on the Report data type and on Report variables. When you are programming the SaveAsPdf method, if you do not know the specific report that you want to run, then use the static version of the SaveAsPdf method, see [Report.SaveAsPdf(Integer, Text [, var Record])](./report-saveaspdf-method.md).  
 
-When you call **SaveAsPDF**, the report is generated and saved to "*FileName*." A **Saving to PDF** window shows the status of the process. Note that the request page will not be shown.  
+When you call **SaveAsPDF**, the report is generated and saved to the file specified in "*FileName*." A **Saving to PDF** window shows the status of the process. Note that the request page will not be shown.  
 
 [!INCLUDE[report_download_file](../../includes/include-report-download-file.md)]
 

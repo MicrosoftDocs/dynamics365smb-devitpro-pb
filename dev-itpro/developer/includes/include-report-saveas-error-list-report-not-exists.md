@@ -1,1 +1,1 @@
-If the report you specify in "*Number*" does not exist,
+If no report exists with an object id as specified in "*Number*".

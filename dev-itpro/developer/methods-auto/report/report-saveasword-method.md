@@ -49,9 +49,9 @@ Specifies which record to use in the report. Any filters that have been applied 
 
 ## Remarks  
 You can use the SaveAsWord method on the global Report object and on instances of a Report variable.
-If, at design time, you do not know the specific report that you want to run, then use this method (the static one) and specify the report object ID in the *Number* parameter. If you do know which report you want to run, then use the instance method [Report.SaveAsWord(FileName: Text)](./report-saveasword-method.md).
+If, at design time, you do not know the specific report that you want to run, then use this method (the static one) and specify the report object ID in the *Number* parameter. If you do know which report you want to run, then use the instance method [Report.SaveAsWord(FileName: Text)](./reportinstance-saveasword-method.md).
 
-When you call the SaveAsWord method, the report is generated and saved to "*FileName*." The request page is not shown.  
+When you call the SaveAsWord method, the report is generated and saved to the file specified in "*FileName*." The request page is not shown.  
 
 [!INCLUDE[report_download_file](../../includes/include-report-download-file.md)]
 

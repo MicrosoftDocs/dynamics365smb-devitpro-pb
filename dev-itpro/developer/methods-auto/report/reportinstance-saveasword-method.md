@@ -46,7 +46,7 @@ The path and the name of the file that you want to save the report as. The path 
 ## Remarks  
 The SaveAsWord method can be used on the Report data type and on Report variables. When you are programming the SaveAsWord method, if you do not know the specific report that you want to run, then use the static version of the SaveAsWord method, see [Report.SaveAsWord(Integer, Text [, var Record])](./report-saveasword-method.md).  
 
-When you call the SaveAsWord method, the report is generated and saved to "*FileName*." The request page is not shown.  
+When you call the SaveAsWord method, the report is generated and saved to the file specified in "*FileName*." The request page is not shown.  
 
 [!INCLUDE[report_download_file](../../includes/include-report-download-file.md)]
 

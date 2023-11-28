@@ -46,7 +46,7 @@ The path and the name of the file that you want to save the report as. The path 
 ## Remarks  
 You can use the SaveAsExcel method on the global Report object and on instances of a Report variable. If, at design time, you do not know the specific report that you want to run, then use the static version of the method: [Report.SaveAsExcel(Integer, Text [, var Record])](./report-saveasexcel-method.md). 
 
-When you call the SaveAsExcel method, the report is generated and saved to "*FileName*." The request page is not shown. 
+When you call the SaveAsExcel method, the report is generated and saved to the file specified in "*FileName*." The request page is not shown. 
 
 [!INCLUDE[report_download_file](../../includes/include-report-download-file.md)]
 
