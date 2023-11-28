@@ -100,7 +100,7 @@ Because external users have no Business Central license or entitlements, we incl
 
 1. Open the **Power Pages Authenticated External Users** card, set the **State** field to **Enabled**, and assign permission sets with the appropriate scope for authenticated external users, for example read-write for certain tables and LOGIN permission set as a minimum.
 
-   <!--![Screenshot](media/power-pages-microsoft-entra-application-for-authenticated-access.png)-->
+   ![Screenshot](media/power-pages-microsoft-entra-application-for-authenticated-access.png)
 
 ## <a name="visible"></a>Make virtual Business Central tables visible on Dataverse
 
