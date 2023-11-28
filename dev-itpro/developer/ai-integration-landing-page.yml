@@ -30,9 +30,9 @@ landingContent:
     linkLists:
     - linkListType: overview
       links:
-      - text: What is Developer tools for Copilot
+      - text: What is developer tools for copilot
         url: developer-tools-for-copilot-overview.md
-      - text: What is considered a Copilot offering?
+      - text: What is considered a copilot offering?
         url: ai-extend-copilot-overview.md
       - text: Responsible AI transparency note for developer tools
         url: ../ai/transparency-note-dev-tools-for-copilot.md
@@ -81,11 +81,11 @@ landingContent:
     linkLists:
     - linkListType: overview
       links:
-      - text: Microsoft Responsible AI 
+      - text: Microsoft responsible AI 
         url: https://aka.ms/RAI
       - text: Azure AI Studio for quick experimentation 
         url: https://aka.ms/OAIstudio
-      - text: Microsoft Azure Learning courses on responsible AI
+      - text: Microsoft Azure learning courses on responsible AI
         url: /ai/
 # Card
   - title: Get inspiration from Copilot in Business Central
