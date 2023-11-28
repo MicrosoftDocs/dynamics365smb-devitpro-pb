@@ -1,8 +1,8 @@
 ---
 title: Power Pages on virtual tables 
 description: How-to description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: jswymer #Required; your GitHub user alias, with correct capitalization.
-ms.author: jswymer #Required; your Microsoft alias; optional team alias.
+author: swinarko  #Required; your GitHub user alias, with correct capitalization.
+ms.author: swinarko 
 ms.reviewer: jswymer #Required; Microsoft alias of content publishing team member.
 ms.topic: how-to #Required; don't change.
 ms.collection: 
