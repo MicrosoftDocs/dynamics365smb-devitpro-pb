@@ -52,7 +52,11 @@ When you call the SaveAsXML method, the report is generated and saved to "*FileN
 
 ### Error conditions  
 The method can fail in the following three ways:
-[!INCLUDE[report_saveas_error_list](../../includes/include-report-saveas-error-list.md)]
+- [!INCLUDE[report_saveas_error_list_folder_not_exists](../../includes/include-report-saveas-error-list-folder-not-exists.md)]
+- [!INCLUDE[report_saveas_error_list_file_used](../../includes/include-report-saveas-error-list-file-used.md)]
+- [!INCLUDE[report_saveas_error_list_file_permission](../../includes/include-report-saveas-error-list-file-permission.md)]
+If the report you specify does not exist, then a run-time error occurs.  
+
 
 [!INCLUDE[io_errors](../../includes/include-io-errors.md)]
 

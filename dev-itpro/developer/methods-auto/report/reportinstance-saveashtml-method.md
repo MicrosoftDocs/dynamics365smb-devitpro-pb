@@ -55,8 +55,10 @@ When you call the SaveAsHTML method, the report is generated and saved to "FileN
 
 ### Error conditions  
 The method can fail in the following four ways:
-- If the default layout of the report is not of type Word,
-[!INCLUDE[report_saveas_error_list](../../includes/include-report-saveas-error-list.md)]
+- [!INCLUDE[report_saveas_error_list_layout_not_word](../../includes/include-report-saveas-error-list-layout-not-word.md)]
+- [!INCLUDE[report_saveas_error_list_folder_not_exists](../../includes/include-report-saveas-error-list-folder-not-exists.md)]
+- [!INCLUDE[report_saveas_error_list_file_used](../../includes/include-report-saveas-error-list-file-used.md)]
+- [!INCLUDE[report_saveas_error_list_file_permission](../../includes/include-report-saveas-error-list-file-permission.md)]
 
 Reports that use an RDLC or Excel layout when run cannot be saved in the HTML format. A runtime error will occur if SaveAsHTML is used on such a report layout.
 

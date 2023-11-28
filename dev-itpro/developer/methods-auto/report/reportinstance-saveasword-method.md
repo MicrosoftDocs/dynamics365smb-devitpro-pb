@@ -52,7 +52,10 @@ When you call the SaveAsWord method, the report is generated and saved to "*File
 
 ### Error conditions  
 The method can fail in the following three ways:
-[!INCLUDE[report_saveas_error_list](../../includes/include-report-saveas-error-list.md)]
+- [!INCLUDE[report_saveas_error_list_folder_not_exists](../../includes/include-report-saveas-error-list-folder-not-exists.md)]
+- [!INCLUDE[report_saveas_error_list_file_used](../../includes/include-report-saveas-error-list-file-used.md)]
+- [!INCLUDE[report_saveas_error_list_file_permission](../../includes/include-report-saveas-error-list-file-permission.md)]
+
 
 [!INCLUDE[io_errors](../../includes/include-io-errors.md)]
 

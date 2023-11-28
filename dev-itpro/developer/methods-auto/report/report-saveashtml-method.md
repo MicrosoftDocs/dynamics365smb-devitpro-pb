@@ -59,9 +59,13 @@ When you call the SaveAsHtml method, the report is generated and saved to "FileN
 
 ### Error conditions  
 The method can fail in the following five ways:
-- If the report you specify in "*Number*" does not exist,
-- If the default layout of the report is not of type Word,
-[!INCLUDE[report_saveas_error_list](../../includes/include-report-saveas-error-list.md)]
+- [!INCLUDE[report_saveas_error_list_report_not_exists](../../includes/include-report-saveas-error-list-report-not-exists.md)]
+- [!INCLUDE[report_saveas_error_list_layout_not_word](../../includes/include-report-saveas-error-list-layout-not-word.md)]
+- [!INCLUDE[report_saveas_error_list_folder_not_exists](../../includes/include-report-saveas-error-list-folder-not-exists.md)]
+- [!INCLUDE[report_saveas_error_list_file_used](../../includes/include-report-saveas-error-list-file-used.md)]
+- [!INCLUDE[report_saveas_error_list_file_permission](../../includes/include-report-saveas-error-list-file-permission.md)]
+
+
 
 If the report you specify does not exist, then a run-time error occurs.  
 
