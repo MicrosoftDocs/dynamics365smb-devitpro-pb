@@ -24,16 +24,16 @@ Business Central 2023 release wave 1, version 23.1, introduced Power Pages on vi
 
 External users are typically users from the customer or vendor organizations of companies that purchase Business Central licenses.  In some commerce or collaboration scenarios, these users might need to participate in processes that involve data stored in Business Central online, such as customer onboarding, vendor bidding, and so on&mdash;even if they aren’t Business Central users. This new feature enables those companies to build business-to-business (B2B) portals using Power Pages that serve their customers and vendors, so external users can have anonymous and authenticated access to data stored in Business Central online.  
 
-Anonymous access via Power Pages allows external users to perform API operations on Business Central tables without signing in. Authenticated access via Power Pages requires external users to sign in to perform API operations on Business Central tables or rows that are accessible to them.  Business Central admins can select only the necessary API operations, tables, and rows to be enabled for anonymous and authenticated access by external users. Additionally, this feature also enables authenticated access via Power Pages for internal and existing Business Central users, similar to authenticated access via Power Apps and Power Automate. 
+Anonymous access via Power Pages allows external users to perform API operations on Business Central tables without signing in. Authenticated access via Power Pages requires external users to sign in to perform API operations on Business Central tables or rows that are accessible to them. Business Central admins can select only the necessary API operations, tables, and rows to be enabled for anonymous and authenticated access by external users. Additionally, this feature also enables authenticated access via Power Pages for internal and existing Business Central users, similar to authenticated access via Power Apps and Power Automate. 
 
-This article highlights the new feature of Power Pages on virtual tables, the prerequisites and step-by-step instructions to preview it, as well as its current limitations/future improvements.
+This article highlights the new feature of Power Pages on virtual tables, the prerequisites and step-by-step instructions to preview it, and its current limitations/future improvements.
 
 ## Prerequisites and step-by-step instructions
 
 To preview the new feature of Power Pages on virtual tables, complete the following tasks:
 
 1. Create or upgrade a Business Central environment with *Dynamics 365 Business Central 2023 Wave 2 Release* (version 23.1 or later).
-1. In Business Central, use the assisted setup to connect your Business Central environment to a Dataverse environment, in which you want to make your Business Central tables available as virtual tables.  This will guide you to install the *Business Central Virtual Table* plugin from AppSource.
+1. In Business Central, use the assisted setup to connect your Business Central environment to a Dataverse environment, in which you want to make your Business Central tables available as virtual tables.  This guides you to install the *Business Central Virtual Table* plugin from AppSource.
 
    For more information, go to [Connect Business Central online to Dataverse](#connect) in this article.
 1. In Business Central, admins can assign permission sets to the built-in app and service-to-service (S2S) users that will access data stored in Business Central online via Power Pages on behalf of anonymous and authenticated external users.  
@@ -198,20 +198,22 @@ To create pages for authenticated access of external users, follow these steps:
    ![Screenshot](media/power-pages-authenticated-preview.png)
 
 ## <a name="internal"></a>Enable authenticated access for internal users via Power Pages
+
 To create pages for authenticated access of internal users, follow the same steps as [Enable anonymous access for external users via Power Pages](#anonymous)/[Enable authenticated access for external users via Power Pages](#authenticated) sections above and add **Administrators** role.  This enables internal users to sign in to your portal with their Microsoft Entra user identity and *Business Central Virtual Table* plugin will personify them using *Dynamics 365 Business Central for Virtual Tables* app/S2S user to access data stored in Business Central online.
 
 ## <a name="editlist"></a>Enable edit mode on Power Pages lists
+
 To enable edit mode on Power Pages lists, follow these steps:
 1. On [Power Pages maker portal](https://make.powerpages.microsoft.com/), select the **Edit** button for your portal, **...** button below **Set up** section, and **Power Pages Management** option that opens Power Pages Management portal in another tab.
 1. On Power Pages Management portal, select the **Basic Forms** section and **+ New** button.
 1. Enter a descriptive display name for the **Name** property, for example *YourAlias Sales Order Basic Form*, and *id* for the **Record ID Parameter Name** property.
 1. Select *Sales Order (dyn365bc_salesorder_v2_0)* for the **Table Name** property, *Information* for the **Form Name** property, *Edit* for the **Mode** property, *Query String* for the **Record Source Type** property, your portal name for the **Website** property, and **Save** button.
 
-   ![Screenshot](../../../../images/power-pages-basic-form.png)
+   ![Screenshot](media/images/power-pages-basic-form.png)
    
 1. Select the **List** section, **All Sales Orders** list, **Options** tab, **+ Edit** button in **Grid configuration** section, *Basic Form* for the **Target Type** property, *YourAlias Sales Order Basic Form* for the **Basic Form** property, and **Save** button.
 
-   ![Screenshot](../../../../images/power-pages-basic-form-list.png)
+   ![Screenshot](media/power-pages-basic-form-list.png)
    
 1. Since the default sales order form has been designed to include a subgrid of sales order lines, authenticated users also need to be assigned all except **Delete** permissions to access the virtual Business Central *Sales Order Line* table.
 
@@ -223,6 +225,7 @@ To enable edit mode on Power Pages lists, follow these steps:
    ![Screenshot](media/power-pages-authenticated-preview-edit-list.png)
 
 ## <a name="editsubgrid"></a>Enable edit mode on Power Pages subgrids
+
 To enable edit mode on Power Pages subgrids, follow these steps:
 1. On [Power Pages maker portal](https://make.powerpages.microsoft.com/), select the **Edit** button for your portal, **...** button below **Set up** section, and **Power Pages Management** option that opens Power Pages Management portal in another tab.
 1. On Power Pages Management portal, select the **Basic Forms** section and **+ New** button.
@@ -238,6 +241,7 @@ To enable edit mode on Power Pages subgrids, follow these steps:
    ![Screenshot](media/power-pages-authenticated-preview-edit-subgrid.png)
 
 ## Current limitations and future improvements
+
 These are the current limitations for Power Pages on virtual tables that will be removed/improved in the near future:
 1. Anonymous access for external users via Power Pages supports read-only for now.
 1. Authenticated access for external users via Power Pages supports only lookups to customers/vendors of Business Central company configured in the virtual table global settings for now.
