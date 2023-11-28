@@ -16,7 +16,7 @@ ms.custom: bap-template #Required; don't change.
 
 Data virtualization is part of the fabric of the tools to integrate Business Central online with Microsoft Dataverse. To learn more about Dataverse integration, consult [Business Central & Dataverse integration](https://github.com/microsoft/d365bcdv/blob/main/Review%20of%20Business%20Central%20and%20Dataverse%20integration.pdf). Data virtualization allows users with Business Central licenses and entitlements to access data stored in Business Central online by performing (**C**reate/**R**ead/**U**pdate/**D**elete) API operations on Business Central tables that are available as virtual tables in Dataverse.  
 
-![Screenshot](/media/virtual-table-inbound-interaction.png)
+![Screenshot](media/virtual-table-inbound-interaction.png)
 
 These licensed users are considered as internal users to the organizations or companies that purchase the licenses. They're in employee-like relationships with the companies and perform business processes on the companies' behalf. They can access data stored in Business Central online using Power Apps and Power Automate, which operate on virtual tables in Dataverse.
 
