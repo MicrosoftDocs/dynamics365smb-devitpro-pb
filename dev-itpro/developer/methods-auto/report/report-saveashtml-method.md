@@ -48,15 +48,14 @@ Specifies which record to use in the report. Any filters that have been applied 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-The SaveAsHTML method uses the logic in the codeunit **9651 Document Report Mgt.** code unit to handle the format transformation.  
-  
 You can use the SaveAsHTML method on the global Report object and on instances of a Report variable.
 If, at design time, you do not know the specific report that you want to run, then use this method (the static one) and specify the report object ID in the *Number* parameter. If you do know which report you want to run, then use the instance method [Report.SaveAsHTML(FileName: Text)](./reportinstance-saveashtml-method.md).
 
 When you call the SaveAsHtml method, the report is generated and saved to the file specified in "*FileName*." The request page is not shown. 
 
-
 [!INCLUDE[report_download_file](../../includes/include-report-download-file.md)]
+
+Prior to version 23.0, the SaveAsHTML method uses the logic in the codeunit **9651 Document Report Mgt.** code unit to handle the format transformation. From version 23.0, the platform handles everything. 
 
 ### Error conditions  
 The method can fail in the following five ways:

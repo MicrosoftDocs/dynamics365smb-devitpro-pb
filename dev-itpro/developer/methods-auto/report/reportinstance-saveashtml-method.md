@@ -45,13 +45,13 @@ The folder path and name of the file that you want to save the report as. The pa
 
 ## Remarks
 
-The SaveAsHTML method uses the logic in the codeunit **9651 Document Report Mgt.** code unit to handle the format transformation.  
-
 The SaveAsHTML method can be used on the Report data type and on Report variables. When you are programming the SaveAsHTML method, if you do not know the specific report that you want to run, then use the static version of the SaveAsHTML method, see [Report.SaveAsHtml(Integer, Text [, var Record])](./report-saveashtml-method.md).  
 
 When you call the SaveAsHTML method, the report is generated and saved to the file specified in "*FileName*." The request page is not shown.  
 
 [!INCLUDE[report_download_file](../../includes/include-report-download-file.md)]
+
+Prior to version 23.0, the SaveAsHTML method uses the logic in the codeunit **9651 Document Report Mgt.** code unit to handle the format transformation. From version 23.0, the platform handles everything. 
 
 ### Error conditions  
 The method can fail in the following four ways:
