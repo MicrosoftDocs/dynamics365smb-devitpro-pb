@@ -23,10 +23,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 - [Business Central virtual tables fully supported on Microsoft Dataverse](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/business-central-virtual-tables-fully-supported-dataverse) 
 - [Get marketing text suggestions with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/get-marketing-text-suggestions-copilot)
-- [Complete bank account reconciliation faster with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/complete-bank-account-reconciliation-faster-copilot)
-- [Extend general ledger posting aggregations](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)
-- [Include or exclude tables from cloud migration](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/include-or-exclude-tables-cloud-migration)
-- [Use actions to go to or fix errors inline](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/use-actions-navigate-or-fix-errors-inline-validation-dialog)
 
 
 ## Localization updates
@@ -41,36 +37,27 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2023 release wave 2 (release from October 2023 through March 2024), find the link to the release plan [here](https://aka.ms/BCReleasePlan).
 
-## Upgrade to 23.1
+## Upgrade to 23.2
 
 Please note that new customers will automatically get the latest builds of Business Central (23.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
-### New Copilot content at the Business Central Launch Event  
-With more AI capabilities rolling out with Wave 2, we’ve published new, on-demand content covering three topics (note: you need to be logged in to the portal, before you can access the links below):
-- [What's new: Marketing text suggestions (feature is generally available with Update 23.1)](https://app.hopin.com/events/business-central-launch-event-3502b259-fc5c-44f8-9448-1e07e075819e/replay/UmVjb3JkaW5nVXBsb2FkOjcyNDM=)
-- [Introducing: Bank account reconciliation assistance (feature is in preview from Update 23.1)](https://app.hopin.com/events/business-central-launch-event-3502b259-fc5c-44f8-9448-1e07e075819e/replay/UmVjb3JkaW5nVXBsb2FkOjcyNDE=)
-- [What’s new: Designing and developing generative AI experiences for your extensions (toolkit available with insider builds)](https://app.hopin.com/events/business-central-launch-event-3502b259-fc5c-44f8-9448-1e07e075819e/replay/UmVjb3JkaW5nVXBsb2FkOjcyMzk=)
- 
- To access recordings on-demand from the Business Central Launch Event, register for free at: https://aka.ms/BCLE. There is a total of 35 what's new sessions created by the Microsoft engineering team.
+### Business Central videos on YouTube  
+Follow along as we're posting Business Central Launch Event sessions to the new YouTube channel. All videos will be added to the channel by December 31, 2023. Subscribe now and watch the videos: [aka.ms/BCYouTube](https://aka.ms/BCYouTube). Find the rest of the launch event videos on: [aka.ms/BCLE](https://aka.ms/BCLE).
 
 ### Upcoming Business Central Office Hours Calls
 
 During November, we will host the following calls, which you can already register for today:
 
-- **November 14:** Cloud Migration
-- **November 21:** Mobile app and barcode scanning
+- **December 5:** Mobile app and barcode scanning
+- **January 9:** AL-Go for GitHub
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
 Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
 ### Automatically update AppSource apps with minor updates  
 You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the Release Plan for more details.
-
-### Follow our new YouTube channel  
-We're excited to announce that we're on YouTube now! Follow along as we're posting how to videos, Business Central Launch Event sessions, and much more! 
-Subscribe now: [aka.ms/BCYouTube](https://aka.ms/BCYouTube).
 
 ### Discover all partner related resources on aka.ms/BCAll
 If you’re a partner and you’re looking for relevant resources, you can find them in this article: aka.ms/BCAll. 
