@@ -96,11 +96,11 @@ Because external users have no Business Central license or entitlements, we've c
 
 1. Open the *Power Pages Anonymous External Users* card, select *Enabled* for the **State** property, and assign permission sets with the appropriate scope for anonymous external users, for example read-only for certain tables and LOGIN permission set as a minimum.
 
-   ![Screenshot](../../../../images/power-pages-microsoft-entra-application-for-anonymous-access.png)
+   ![Screenshot](media/power-pages-microsoft-entra-application-for-anonymous-access.png)
 
 1. Open the *Power Pages Authenticated External Users* card, select *Enabled* for the **State** property, and assign permission sets with the appropriate scope for authenticated external users, for example read-write for certain tables and LOGIN permission set as a minimum.
 
-   ![Screenshot](../../../../images/power-pages-microsoft-entra-application-for-authenticated-access.png)
+   ![Screenshot](media/power-pages-microsoft-entra-application-for-authenticated-access.png)
 
 ## <a name="visible"></a>Make virtual Business Central tables visible on Dataverse
 
@@ -108,11 +108,11 @@ To make virtual Business Central tables visible on Dataverse, follow these steps
 
 1. In [Power Apps maker portal](https://make.powerapps.com/), select the **Apps** section, and launch the *Business Central Configuration* app.
 
-   ![Screenshot](../../../../images/power-apps-business-central-configuration.png)
+   ![Screenshot](media/power-apps-business-central-configuration.png)
 
 1. In the *Business Central Configuration* app, select the **Available Tables** section, virtual Business Central tables to be made visible, such as *Customer*/*Item*/*Sales Order*/*Sales Invoice*/*Sales Shipment*/*Vendor* tables, **Edit** button, **Visible** check box, and **Save** button.
 
-   ![Screenshot](../../../../images/power-apps-business-central-configuration-available-tables.png)
+   ![Screenshot](media/power-apps-business-central-configuration-available-tables.png)
 
 ## <a name="lookup"></a>Add lookup columns on Dataverse Contact table
 
@@ -134,7 +134,7 @@ Since Power Pages authentication is linked to Dataverse *Contact* table, externa
 
 1. Select the **Apps** section, and launch the *Business Central Configuration* app.
 
-   ![Screenshot](../../../../images/power-apps-business-central-configuration.png)
+   ![Screenshot](media/power-apps-business-central-configuration.png)
 
 1. On the *Business Central Configuration* app, select the **Table Relations** section, and **+ New** button.
 1. On the **General** tab, enter the appropriate property values.  For example, to create a synthetic relation between the native Dataverse *Contact* table and virtual Business Central *Sales Order* table, enter a descriptive display name for the **Relation Name** property, for example *dyn365bc_contact2salesorder*, *contact* for the **Native Table** property, the schema name of your key for the **Native Table Key** property, for example *cr7b3_bccustomerkey*, and *dyn365bc_salesorder_v2_0* for the **Virtual Table** property.
