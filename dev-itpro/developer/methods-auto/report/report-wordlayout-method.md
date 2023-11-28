@@ -64,6 +64,26 @@ begin
 end;
 ```
 
+If the report is known when you write the code, the safest way to runtime errors is to use the scope (::) operator to reference the report object. This way you'll get a compile time error if the report doesn't exist. The example illustrates how to call WordLayout on the report MyReport using this technique:
+
+```AL
+var
+    layoutAsStream: InStream;
+    result: Boolean;
+begin
+    // if MyReport does not exist, then Report::MyReport will fail at compile time
+    result := Report.WordLayout(Report::MyReport, layoutAsStream);
+
+    if result then begin
+        // use the layout that now is available in the stream
+    end
+    else
+        // handle that no Excel layout exists for that report
+    ;
+end;
+```
+
+
 ## See Also
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
