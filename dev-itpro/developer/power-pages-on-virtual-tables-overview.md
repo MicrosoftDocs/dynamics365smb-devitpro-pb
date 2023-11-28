@@ -26,26 +26,26 @@ External users are typically users from the customer or vendor organizations of 
 
 Anonymous access via Power Pages allows external users to perform API operations on Business Central tables without signing in. Authenticated access via Power Pages requires external users to sign in to perform API operations on Business Central tables or rows that are accessible to them. Business Central admins can select only the necessary API operations, tables, and rows to be enabled for anonymous and authenticated access by external users. Additionally, this feature also enables authenticated access via Power Pages for internal and existing Business Central users, similar to authenticated access via Power Apps and Power Automate. 
 
-This article highlights the new feature of Power Pages on virtual tables, the prerequisites and step-by-step instructions to preview it, and its current limitations/future improvements.
+This article highlights the new feature of Power Pages on virtual tables, the prerequisites and step-by-step instructions to preview it, its current limitations, and future improvements.
 
 ## Prerequisites and step-by-step instructions
 
 To preview the new feature of Power Pages on virtual tables, complete the following tasks:
 
-1. Create or upgrade a Business Central environment with *Dynamics 365 Business Central 2023 Wave 2 Release* (version 23.1 or later).
-1. In Business Central, use the assisted setup to connect your Business Central environment to a Dataverse environment, in which you want to make your Business Central tables available as virtual tables.  This guides you to install the *Business Central Virtual Table* plugin from AppSource.
+1. Create or upgrade a Business Central environment with Dynamics 365 Business Central 2023 release Wave 2 (version 23.1 or later).
+1. In Business Central, use the assisted setup gudie to connect your Business Central environment to a Dataverse environment in which you want to make your Business Central tables available as virtual tables. This guides you to install the **Business Central Virtual Table** app from AppSource.
 
    For more information, go to [Connect Business Central online to Dataverse](#connect) in this article.
 1. In Business Central, admins can assign permission sets to the built-in app and service-to-service (S2S) users that will access data stored in Business Central online via Power Pages on behalf of anonymous and authenticated external users.  
    
    For more information, go to [Assign permission sets to anonymous and authenticated external users](#s2s) in this article.
-1. On Power Apps maker portal, launch the *Business Central Configuration* app to select virtual Business Central tables, such as *Customer*/*Item*/*Sales Order*/*Sales Invoice*/*Sales Shipment*/*Vendor* tables, and make them visible.
+1. In Power Apps maker portal, launch the *Business Central Configuration* app to select virtual Business Central tables, such as *Customer*/*Item*/*Sales Order*/*Sales Invoice*/*Sales Shipment*/*Vendor* tables, and make them visible.
 
    For more information, go to [Make virtual Business Central tables visible on Dataverse](#visible) in this article.
-1. On Power Apps maker portal, open the native Dataverse *Contact* table and add lookup columns to the virtual Business Central *Customer*/*Vendor* tables.
+1. In Power Apps maker portal, open the native Dataverse *Contact* table and add lookup columns to the virtual Business Central *Customer*/*Vendor* tables.
 
    For more information, go to [Add lookup columns on Dataverse Contact table](#lookup) in this article.
-1. On the *Business Central Configuration* app, create synthetic relations between the native Dataverse *Contact* table and virtual Business Central tables, such as *Sales Order*/*Sales Invoice*/*Sales Shipment* tables.
+1. In the **Business Central Configuration** app, create synthetic relations between the native Dataverse **Contact** table and virtual Business Central tables, such as **Sales Order**, **Sales Invoice**, and **Sales Shipment**.
 
    For more information, go to [Create synthetic relations for Dataverse Contact table](#synthetic) in this article.
 1. In Power Pages maker portal, create pages for anonymous access of external users.
