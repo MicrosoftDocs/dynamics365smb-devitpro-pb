@@ -20,9 +20,10 @@ Would you like to know what has changed in update 23.2? Below you'll find an ove
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5032755) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
-
-- [Business Central virtual tables fully supported on Microsoft Dataverse](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/business-central-virtual-tables-fully-supported-dataverse) 
-- [Get marketing text suggestions with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/get-marketing-text-suggestions-copilot)
+- [Transfer environments between Microsoft Entra tenants](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/transfer-environments-between-entra-tenants)
+- [Improved update release processes](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/improved-update-release-processes) 
+- [Improved data upgrade troubleshooting for Dynamics GP migration](dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/improved-data-upgrade-troubleshooting-dynamic-gp-migration)
+- [VAT posting in General Ledger setup](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/vat-posting-general-ledger-setup)
 
 
 ## Localization updates
