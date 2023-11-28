@@ -155,6 +155,8 @@ actions
 
 Use the [OnAction()](triggers-auto/action/devenv-onaction-action-trigger.md) to call generative AI code, in this case the `RunGeneration()` procedure.
 
+This trigger will be invoked when the user clicks the button or when the page is opened in generate mode.
+
 ### Add a file attachment action
 
 In this task, you add action to the PromptDialog page that enables users to select a file to upload in the prompt area. The content of the file can provide input to the AI generation.
