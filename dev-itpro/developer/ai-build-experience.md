@@ -346,7 +346,7 @@ While using copilot, users will typically regenerate one or more times to get di
 
 This capability requires that the PromptDialog page uses a temporary source table. Unlike with other page types, the source table represents an instance of a copilot proposal. It can include both user inputs and the AI-generated results. 
 
-You should design the capability to insert a new record each time the user regenerates, before the page is closed. When in place, the control appears on th PromptDialog page whenever users generate more that one proposal. After the user closes the copilot, for example by saving or discarding the results, the version history is deleted. 
+You should design the capability to insert a new record each time content is generated. When in place, the control appears on the PromptDialog page whenever the source table contains multiple records. After the user closes the copilot, for example by saving or discarding the results, the version history is deleted. 
 
 
 ```al
