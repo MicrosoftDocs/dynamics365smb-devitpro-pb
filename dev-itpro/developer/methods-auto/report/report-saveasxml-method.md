@@ -48,66 +48,40 @@ Specifies which record to use in the report. Any filters that have been applied 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use the SaveAsXML method on the global Report object and on Report variables. If, at design time, you do not know the specific report that you want to run, then use the global Report object and specify the report number in the *Number* parameter. If you know which report you want to run, then create a Report variable, set the **Subtype** of the variable to a specific report, and then use this variable when you call the SaveAsXML method.  
+You can use the SaveAsXml method on the global Report object and on instances of a Report variable.
+If, at design time, you do not know the specific report that you want to run, then use this method (the static one) and specify the report object ID in the *Number* parameter. If you do know which report you want to run, then use the instance method [Report.SaveAsXml(FileName: Text)](./report-saveasxml-method.md).
 
- When you call the SaveAsXML method, the report is generated and saved to "*FileName*." The request page is not shown.  
+When you call the SaveAsXML method, the report is generated and saved to "*FileName*." The request page is not shown.  
 
- If the destination folder that you specify in *FileName* does not exist, then you get the following error:  
+### Error conditions  
+The method can fail in the following four ways:
+- If the report you specify in "*Number*" does not exist,
+[!INCLUDE[report_saveas_error_list](../../includes/include-report-saveas-error-list.md)]
 
- **The specified path is invalid.**  
+If the report you specify does not exist, then a run-time error occurs.  
 
- If the file that you specify in *FileName* is being used, then you get the following error:  
+[!INCLUDE[io_errors](../../includes/include-io-errors.md)]
 
- **An I/O exception occurred during the operation.**  
-
- If the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] does not have permission to write to the file that you specify in *FileName*, then you get the following error:  
-
- **Either the caller does not have the required permission or the specified path is read-only.**  
-
- To resolve this issue, verify that the service account that is running the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance has write permissions on the path.  
+[!INCLUDE[report_download_file](../../includes/include-report-download-file.md)]
 
 ## Example  
- This example shows how to use the SaveAsXML method to save a report as an .xml file on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)], and then download the file to a  computer that is running the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)]. 
- 
-```  
+This example shows how to use the static SaveAsXml method in a safe way (where no errors occur).
+
+```al 
 var
-    TempFile: File;
-    Name: Text[250];
-    NewStream: InStream;
-    ToFile: Text[250];
-    ReturnValue: Boolean;
+    FileNameAndPath: Text[250];
 begin
-    // Specify that TempFile is opened as a binary file.  
-    TempFile.TextMode(False);  
-    // Specify that you can write to TempFile.  
-    TempFile.WriteMode(True);  
-    Name := 'C:\Temp\TempReport.xml';  
-    // Create and open TempFile.  
-    TempFile.Create(Name);  
-    // Close TempFile so that the SaveAsXML method can write to it.  
-    TempFile.Close;  
-    
-    Report.SaveAsXML(406,Name);  
-    
-    TempFile.Open(Name);  
-    TempFile.CreateInStream(NewStream);  
-    ToFile := 'Report.xml';  
-    
-    // Transfer the content from the temporary file on
-    // server to a file on the client.  
-    ReturnValue := DownloadFromStream(  
-      NewStream,  
-      'Save file to client',  
-      '',  
-      'Excel File *.xml| *.xml',  
-      ToFile);  
-    
-    // Close the temporary file.  
-    TempFile.Close();  
+    // setup that FileNameAndPath is valid to write to
+
+    // Note that by using the scope operator (::), you catch at compile time if MyReport does not exist
+    Report.SaveAsXml(Report::MyReport, FileNameAndPath);
 end;
 ```  
 
- You can create an action on a page and set the action to run this code. When you run the action, the **Export File** dialog box opens. Choose **Save** to save the file to the client.  
+[!INCLUDE[report_save_as_example](../../includes/include-report-saveas-example.md)]
+
+
+You can create an action on a page and set the action to run this code. When you run the action, the **Export File** dialog box opens. Choose **Save** to save the file to the client.  
 
 
 ## See Also

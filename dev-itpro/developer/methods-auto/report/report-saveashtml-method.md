@@ -48,14 +48,45 @@ Specifies which record to use in the report. Any filters that have been applied 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The SaveAsHTML method uses the logic in the codeunit **9651 Document Report Mgt.** code unit to handle the format transformation.  
+The SaveAsHTML method uses the logic in the codeunit **9651 Document Report Mgt.** code unit to handle the format transformation.  
   
- The SaveAsHTML method can be used on the Report data type and on Report variables. When you are programming the SaveAsHTML method, if you do not know the specific report that you want to run, then use the global Report object and specify the report number in the *Number* parameter. If you know which report you want to run, then create a Report variable, set the **Subtype** of the variable to a specific report, and then use this variable when you call the SaveAsHTML method.  
-  
- When you call the SaveAsXML method, the report is generated and saved to "FileName." The request page is not shown.  
-  
- Reports that use an RDLC layout when run cannot be saved in the HTML format. A runtime error will occur if SaveAsHTML is used on an RDLC report.  
-  
+You can use the SaveAsHTML method on the global Report object and on instances of a Report variable.
+If, at design time, you do not know the specific report that you want to run, then use this method (the static one) and specify the report object ID in the *Number* parameter. If you do know which report you want to run, then use the instance method [Report.SaveAsHTML(FileName: Text)](./report-saveashtml-method.md).
+
+When you call the SaveAsHtml method, the report is generated and saved to "FileName." The request page is not shown.  
+
+[!INCLUDE[report_download_file](../../includes/include-report-download-file.md)]
+
+### Error conditions  
+The method can fail in the following five ways:
+- If the report you specify in "*Number*" does not exist,
+- If the default layout of the report is not of type Word,
+[!INCLUDE[report_saveas_error_list](../../includes/include-report-saveas-error-list.md)]
+
+If the report you specify does not exist, then a run-time error occurs.  
+
+Reports that use an RDLC or Excel layout when run cannot be saved in the HTML format. A runtime error will occur if SaveAsHTML is used on such a report layout.
+
+[!INCLUDE[io_errors](../../includes/include-io-errors.md)]
+
+## Example  
+This example shows how to use the static version of SaveAsHtml method in a safe way (where no errors occur).
+
+```al 
+var
+    FileNameAndPath: Text[250];
+begin
+    // setup that FileNameAndPath is valid to write to
+
+    // Check if the default layout of MyReport is of type Word
+
+    // Note that by using the scope operator (::), you catch at compile time if MyReport does not exist
+    Report.SaveAsHtml(Report::MyReport, FileNameAndPath);
+end;
+```  
+
+[!INCLUDE[report_save_as_example](../../includes/include-report-saveas-example.md)]
+
 
 ## See Also
 [Report Data Type](report-data-type.md)  

@@ -1,0 +1,1 @@
+For a full example that shows how to use any of the SaveAs* methods (Report.SaveAsExcel, Report.SaveAsHtml, Report.SaveAsPDF, Report.SaveAsWord, or Report.SaveAsXML) to generate the report in the [!INCLUDE[prod_short](prod_short.md)] server and then download the file to the server, see [Report.SaveAsExcel(FileName: Text)](../methods-auto/report/report-saveasexcel-method.md).  
