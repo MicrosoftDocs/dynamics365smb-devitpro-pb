@@ -120,7 +120,7 @@ Because Power Pages authentication is linked to Dataverse **Contact** table, ext
 1. On [Power Apps maker portal](https://make.powerapps.com/), select the **Tables** section, *Contact* table, **Columns** icon, and **+ New column** button.
 1. Enter a descriptive display name for the lookup column, for example *BC Customer*/*BC Vendor*, select *Lookup* for the **Data type** property, *Customer*/*Vendor* for the **Related table** property, and the **Save** button.
 
-   ![Screenshot](../../../../images/power-apps-contact-table-add-lookup-columns.png)
+   ![Screenshot](media/power-apps-contact-table-add-lookup-columns.png)
 
 ## <a name="synthetic"></a>Create synthetic relations for Dataverse Contact table
 
@@ -130,7 +130,7 @@ Since Power Pages authentication is linked to Dataverse *Contact* table, externa
 1. Enter a descriptive display name for your key, for example *bccustomerkey*/*bcvendorkey*, select 
 *BC Customer*/*BC Vendor* for the **Columns** property, and the **Save** button.  If multiple contacts are associated with one customer/vendor, you can select more columns, such as *Business Phone*/*Email*, to show only rows in virtual Business Central tables that are associated with the specific signed-in contacts.
 
-   ![Screenshot](../../../../images/power-apps-contact-table-add-keys.png)
+   ![Screenshot](media/power-apps-contact-table-add-keys.png)
 
 1. Select the **Apps** section, and launch the *Business Central Configuration* app.
 
@@ -139,43 +139,46 @@ Since Power Pages authentication is linked to Dataverse *Contact* table, externa
 1. On the *Business Central Configuration* app, select the **Table Relations** section, and **+ New** button.
 1. On the **General** tab, enter the appropriate property values.  For example, to create a synthetic relation between the native Dataverse *Contact* table and virtual Business Central *Sales Order* table, enter a descriptive display name for the **Relation Name** property, for example *dyn365bc_contact2salesorder*, *contact* for the **Native Table** property, the schema name of your key for the **Native Table Key** property, for example *cr7b3_bccustomerkey*, and *dyn365bc_salesorder_v2_0* for the **Virtual Table** property.
 
-   ![Screenshot](../../../../images/power-apps-business-central-configuration-table-relations-general.png)
+   ![Screenshot](media/power-apps-business-central-configuration-table-relations-general.png)
 
 1. On the **Mappings** tab, enter the schema names of **Native columns** that map to those of **Virtual columns**.  For example, *cr7b3_bccustomerkey* that maps to *dyn365bc_customer_customerid*.
 
-   ![Screenshot](../../../../images/power-apps-business-central-configuration-table-relations-mappings.png)
+   ![Screenshot](media/power-apps-business-central-configuration-table-relations-mappings.png)
 
 1. Select the **Save & Close** button.
 
 ## <a name="anonymous"></a>Enable anonymous access for external users via Power Pages
+
 To create pages for anonymous access of external users, follow these steps:
+
 1. On [Power Pages maker portal](https://make.powerpages.microsoft.com/), create a new B2B portal by selecting a template from the **Templates** section, and select the **Done** button.
 1. Select the **Edit** button for your portal.
 1. Select the **+ Page** button, enter a descriptive display name for your page, for example *BC Items* for a page showing the virtual Business Central *Item* table, and select the **Add** button.
    
-   ![Screenshot](../../../../images/power-pages-add-page.png)
+   ![Screenshot](media/power-pages-add-page.png)
    
 1. Drag & drop *BC Items* under the **Pages** section.
 1. Select the **List** item and **+ New list** button.
 
-   ![Screenshot](../../../../images/power-pages-add-list.png)
+   ![Screenshot](media/power-pages-add-list.png)
    
 1. Search and select the virtual Business Central *Item* table.
 1. Select the **All Items** view and **Done** button.
 
-   ![Screenshot](../../../../images/power-pages-add-list2.png)
+   ![Screenshot](media/power-pages-add-list2.png)
    
 1. Select the **Permission** button, **All Items** permission, and **Global access** type.
 1. Add the **Read** permission and **Anonymous Users** role.  This enables external users to visit your portal without signing in and *Business Central Virtual Table* plugin will use *Power Pages Anonymous External Users* app/S2S user to access data stored in Business Central online on their behalf.
 
-   ![Screenshot](../../../../images/power-pages-add-anonymous-permission.png)
+   ![Screenshot](media/power-pages-add-anonymous-permission.png)
    
 1. Select the **Save** and **Sync** buttons.
 1. Select the **Preview** button to check that external users can see the *Item* table from Business Central without signing in.
 
-   ![Screenshot](../../../../images/power-pages-anonymous-preview.png)
+   ![Screenshot](media/power-pages-anonymous-preview.png)
 
 ## <a name="authenticated"></a>Enable authenticated access for external users via Power Pages
+
 To create pages for authenticated access of external users, follow these steps:
 1. On [Power Pages maker portal](https://make.powerpages.microsoft.com/), create a new B2B portal by selecting a template from the **Templates** section, and select the **Done** button.
 1. Select the **Edit** button for your portal.
@@ -187,12 +190,12 @@ To create pages for authenticated access of external users, follow these steps:
 1. Select the **Permission** button, **All Sales Orders** permission, **Contact access** type, and a synthetic relation between the native Dataverse *Contact* table and virtual Business Central *Sales Order* table, for example *dyn365bc_contact2salesorder*.
 1. Add all except **Delete** permissions and **Authenticated Users** role.  This enables external users to sign in to your portal with their contact user identity and *Business Central Virtual Table* plugin will use *Power Pages Authenticated External Users* app/S2S user to access data stored in Business Central online on their behalf.
 
-   ![Screenshot](../../../../images/power-pages-add-authenticated-permission.png)
+   ![Screenshot](media/images/power-pages-add-authenticated-permission.png)
    
 1. Select the **Save** and **Sync** buttons.
 1. Select the **Preview** button to check that external users can see the **Sales Order** table from Business Central after signing in.
 
-   ![Screenshot](../../../../images/power-pages-authenticated-preview.png)
+   ![Screenshot](media/power-pages-authenticated-preview.png)
 
 ## <a name="internal"></a>Enable authenticated access for internal users via Power Pages
 To create pages for authenticated access of internal users, follow the same steps as [Enable anonymous access for external users via Power Pages](#anonymous)/[Enable authenticated access for external users via Power Pages](#authenticated) sections above and add **Administrators** role.  This enables internal users to sign in to your portal with their Microsoft Entra user identity and *Business Central Virtual Table* plugin will personify them using *Dynamics 365 Business Central for Virtual Tables* app/S2S user to access data stored in Business Central online.
@@ -212,12 +215,12 @@ To enable edit mode on Power Pages lists, follow these steps:
    
 1. Since the default sales order form has been designed to include a subgrid of sales order lines, authenticated users also need to be assigned all except **Delete** permissions to access the virtual Business Central *Sales Order Line* table.
 
-   ![Screenshot](../../../../images/power-pages-add-authenticated-permission2.png)
+   ![Screenshot](media/power-pages-add-authenticated-permission2.png)
 
 1. Select the **Save** and **Sync** buttons.
 1. Select the **Preview** button to check that external users can edit the Sales Order lists from Business Central after signing in.
 
-   ![Screenshot](../../../../images/power-pages-authenticated-preview-edit-list.png)
+   ![Screenshot](media/power-pages-authenticated-preview-edit-list.png)
 
 ## <a name="editsubgrid"></a>Enable edit mode on Power Pages subgrids
 To enable edit mode on Power Pages subgrids, follow these steps:
@@ -227,12 +230,12 @@ To enable edit mode on Power Pages subgrids, follow these steps:
 1. Select *Sales Order Line (dyn365bc_salesorderline_v2_0)* for the **Table Name** property, *Information* for the **Form Name** property, *Edit* for the **Mode** property, *Query String* for the **Record Source Type** property, your portal name for the **Website** property, and **Save** button.
 1. Select *YourAlias Sales Order Basic Form*, **Basic Form Metadata** tab, **+ New Basic Form Metadata** button, *Subgrid* for the **Type** property, *Subgrid_new_1* for the **Subgrid Name** property, **+ Edit** button in **Grid configuration** section, *Basic Form* for the **Target Type** property, and *YourAlias Sales Order Line Basic Form* for the **Basic Form** property.
 
-   ![Screenshot](../../../../images/power-pages-basic-form-metadata.png)
+   ![Screenshot](media/power-pages-basic-form-metadata.png)
    
 1. Select the **Save** and **Sync** buttons.
 1. Select the **Preview** button to check that external users can edit the Sales Order Line subgrids linked to Sales Order lists from Business Central after signing in.
 
-   ![Screenshot](../../../../images/power-pages-authenticated-preview-edit-subgrid.png)
+   ![Screenshot](media/power-pages-authenticated-preview-edit-subgrid.png)
 
 ## Current limitations and future improvements
 These are the current limitations for Power Pages on virtual tables that will be removed/improved in the near future:
