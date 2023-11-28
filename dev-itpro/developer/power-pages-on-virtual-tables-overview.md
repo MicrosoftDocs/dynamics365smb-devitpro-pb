@@ -13,7 +13,7 @@ ms-service: dynamics365-business-central
 
 # Power Pages on virtual tables (preview)
 
-[!INCLUDE[general_preview](includes/general_preview.md)]
+[!INCLUDE[public_preview_disclaimer](includes/public_preview_disclaimer.md)]
 
 Data virtualization is part of the fabric of the tools to integrate Business Central online with Microsoft Dataverse. To learn more about Dataverse integration, consult [Business Central & Dataverse integration](https://github.com/microsoft/d365bcdv/blob/main/Review%20of%20Business%20Central%20and%20Dataverse%20integration.pdf). Data virtualization allows users with Business Central licenses and entitlements to access data stored in Business Central online by performing (**C**reate/**R**ead/**U**pdate/**D**elete) API operations on Business Central tables that are available as virtual tables in Dataverse.  
 
