@@ -17,7 +17,7 @@ Would you like to know what has changed in update 23.2? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5032755) and the downloads [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5033775) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
 - [Improved data upgrade troubleshooting for Dynamics GP migration](dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/improved-data-upgrade-troubleshooting-dynamic-gp-migration)
