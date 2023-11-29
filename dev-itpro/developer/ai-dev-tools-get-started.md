@@ -9,7 +9,7 @@ ms.collection: get-started
 ms.date: 11/06/2023
 ms.custom: bap-template
 ---
-# Get setup with Azure OpenAI Service
+# Get set up with Azure OpenAI Service
 
 This article explains the tasks that must be completed so that you can start integrating Azure OpenAI Service in your extensions to create copilot experiences in Business Central.
 

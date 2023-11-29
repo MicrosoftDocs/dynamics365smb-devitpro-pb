@@ -12,8 +12,8 @@ title: Integrating AI using Developer Tools for Copilot
 summary: Build AL extensions that include Copilot and generative AI experiences.
 
 metadata:
-  title: Integrating AI using Developer Tools for Copilot
-  description: Build AL extensions that include Copilot and generative AI experiences.
+  title: Integrating AI using the developer tools for copilot
+  description: Build AL extensions that include copilot and generative AI experiences.
   author: jswymer
   ms.author: jswymer
   ms.date: 11/04/2023
@@ -30,7 +30,7 @@ landingContent:
     linkLists:
     - linkListType: overview
       links:
-      - text: What is developer tools for copilot
+      - text: What are the developer tools for copilot
         url: developer-tools-for-copilot-overview.md
       - text: What is considered a copilot offering?
         url: ai-extend-copilot-overview.md
@@ -38,7 +38,7 @@ landingContent:
         url: ../ai/transparency-note-dev-tools-for-copilot.md
     - linkListType: how-to-guide
       links:
-      - text: Get setup with Azure OpenAI Service
+      - text: Get set up with Azure OpenAI Service
         url: ai-dev-tools-get-started.md
 
 # Card
@@ -99,4 +99,4 @@ landingContent:
       - text: Bank account reconciliation assist
         url: /dynamics365/business-central/bank-reconciliation-with-copilot
 
-# Remove all comments in this template before you sign off or merge to the main branch
+

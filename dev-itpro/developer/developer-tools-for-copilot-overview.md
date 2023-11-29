@@ -10,12 +10,7 @@ ms.date: 11/04/2023
 ms.custom: bap-template #Required; don't change.
 ---
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
-
-<!--This template provides the basic structure of a service/product overview article. See [Write an overview](write-an-overview.md) in the contributor guide. To provide feedback on this template contact [bace feedback team](mailto:templateswg@microsoft.com).-->
-
-<!--H1. Required. Set expectations for what the content covers, so customers know the content meets their needs. H1 format is # What is {subject}?-->
-# What is Developer Tools for Copilot?
+# What are the developer tools for copilot?
 
 Azure OpenAI Service offers robust, generative AI models that our partners can now utilize to foster a rich ecosystem of AI-powered extensions for Business Central. Developer Tools for Copilot is a specialized toolkit that allows AL developers to easily integrate Azure OpenAI Service into AL code. This toolkit enables developers to enrich their extensions and solutions with generative AI, creating a seamless integration into the Business Central user experience, and allowing for a natural implementation into their add-ons or customizations.
 
@@ -26,7 +21,7 @@ The advantages of using this toolkit include:
 
 ## Intent
 
-The following table outlines the primary intended uses and characteristics of the Developer Tools for Copilot:
+The following table outlines the primary intended uses and characteristics of the developer tools for copilot:
 
 |Characteristic|Intended use|
 |-|-|
@@ -58,11 +53,9 @@ The toolkit introduces the following features:
 
 Azure OpenAI Service is currently available in select countries/regions. Customers and partners connecting to Azure OpenAI service within their region don't need any extra setup, configuration, or consent. However, when connecting to Azure OpenAI service outside the environment's region, administrators must first approve data movement across regions before any Copilot features can be utilized in Business Central.
 
-Starting from Update 23.1, environments deployed within the EU boundary won't require consent to data movement. Nevertheless, environment administrators retain the option to opt out at any time.
+Starting from update 23.1, environments deployed within the EU boundary won't require consent to data movement. Nevertheless, environment administrators retain the option to opt out at any time.
 
-<!--add your content here-->
 
-<!--Next steps Required. Provide at least one next step and no more than three. Include some context so the customer can determine why they would click the link.-->
 ## Next steps
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+[Get set up with Azure OpenAI Service](ai-dev-tools-get-started.md)
