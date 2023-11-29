@@ -16,7 +16,7 @@ This article explains how to integrate with Azure OpenAI Service through the AI 
 
 ## Overview of the AI module
 
-The AI module of [!INCLUDE [prod_short](includes/prod_short.md)] integrates with Azure OpenAI Service and provides a set of AL objects that you can use to build AI capabilities. The AI module is designed for LLMs and supports text generation like GPT-3, chatbots, and embeddings. It doesn't support image generation like DALL-E or transcribing speech to text like Whisper. 
+The AI module of [!INCLUDE [prod_short](includes/prod_short.md)] integrates with Azure OpenAI Service and provides a set of AL objects that you can use to build AI capabilities. The AI module is designed for LLMs and supports text generation like GPT, chatbots, and embeddings. It doesn't support image generation like DALL-E or transcribing speech to text like Whisper. 
 
 The AI module is available in the System Application, in the System.AI namespace. For reference documentation, see [System and Base Application Reference](/dynamics365/business-central/application).
 
