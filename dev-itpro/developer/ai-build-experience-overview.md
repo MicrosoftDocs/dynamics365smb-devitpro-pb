@@ -30,7 +30,7 @@ To develop an effective copilot, you'll need to work with each of these componen
 
 Before you can get started with creating a copilot in Business Central, you must apply for access to Azure OpenAI Service. Once you're approved, you can create an Azure OpenAI resource in the Azure portal. From this resource, you get your API key and deployment name.
 
-To learn more, go to [Get setup with Azure OpenAI Service](ai-dev-tools-get-started.md).
+To learn more, go to [Get set up with Azure OpenAI Service](ai-dev-tools-get-started.md).
 
 ## Building AI capability using the AI module of system application
 
@@ -42,7 +42,7 @@ To learn more, go to [Build AI capability in app](ai-build-capability-in-al.md).
 
 The copilot user interface is an essential component of any copilot experience. In this task, you design the copilot user interface by using a PromptDialog type page. This page enables users to input their requirements, start the generation process, review the output, and save it. The PromptDialog page can be customized to suit the needs of your specific extension and can include fields for user input, buttons for initiating the generation process, and fields for displaying the generated content.
 
-To learn more, go to [Design the Copilot user experience](ai-build-experience.md).
+To learn more, go to [Design the copilot user experience](ai-build-experience.md).
 
 ## See also
 
