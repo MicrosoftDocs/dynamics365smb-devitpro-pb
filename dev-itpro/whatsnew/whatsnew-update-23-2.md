@@ -20,8 +20,6 @@ Would you like to know what has changed in update 23.2? Below you'll find an ove
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5032755) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
-- [Transfer environments between Microsoft Entra tenants](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/transfer-environments-between-entra-tenants)
-- [Improved update release processes](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/improved-update-release-processes) 
 - [Improved data upgrade troubleshooting for Dynamics GP migration](dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/improved-data-upgrade-troubleshooting-dynamic-gp-migration)
 - [VAT posting in General Ledger setup](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/vat-posting-general-ledger-setup)
 
@@ -44,8 +42,8 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-### Business Central videos on YouTube  
-Follow along as we're posting Business Central Launch Event sessions to the new YouTube channel. All videos will be added to the channel by December 31, 2023. Subscribe now and watch the videos: [aka.ms/BCYouTube](https://aka.ms/BCYouTube). Find the rest of the launch event videos on: [aka.ms/BCLE](https://aka.ms/BCLE).
+### Business Central Launch Event videos on YouTube  
+Follow along as we're posting Business Central Launch Event sessions to the new YouTube channel. All 35 videos will be added to the channel by December 31, 2023. Subscribe now and watch the videos: [aka.ms/BCYouTube](https://aka.ms/BCYouTube). Find the rest of the launch event videos on: [aka.ms/BCLE](https://aka.ms/BCLE).
 
 ### Upcoming Business Central Office Hours Calls
 
