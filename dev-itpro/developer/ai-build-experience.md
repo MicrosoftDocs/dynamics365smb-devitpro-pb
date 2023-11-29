@@ -340,7 +340,7 @@ page 50100 My Copilot"
 
 ## Enable proposal history capability
 
-While using copilot, users will typically regenerate one or more times to get different proposals. It's useful that they can scroll back and forth through a history of the different proposals. To accommodate this capability, you can set up version carousel at the top of the PromptDialog page.
+When using copilot, a user might have more than one generated output available. This situation can happen when copilot provides several versions of an output from start, or when the user chooses to regenerate the output. It can be beneficial to provide users with a way to scroll back and forth through a history of the different proposals. To accommodate this capability, you can set up version carousel at the top of the PromptDialog page.
 
 ![Shows the version control in content mode of the PromptDialog type page](media/promptdialog-content-mode-versions.svg)
 
