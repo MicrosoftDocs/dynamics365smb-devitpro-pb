@@ -160,7 +160,7 @@ actions
 
 Use the [OnAction()](triggers-auto/action/devenv-onaction-action-trigger.md) to call generative AI code, in this case the `RunGeneration()` procedure.
 
-This trigger will be invoked when the user clicks the button or when the page is opened in generate mode.
+This trigger is invoked when the user selects the button or when the page is opened in generate mode.
 
 ### Add a file attachment action
 
@@ -257,7 +257,7 @@ In this task, you add actions to the content mode that enable users to save or d
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-save.svg)
 
 
-There are two system actions that control the behavior: `systemaction(OK)` for saving and `systemaction(Cancel)` for discarding. These actions appear in the UI by default without you having to add them. In this case, `systemaction(OK)` has the caption **Keep it** and `systemaction(Cancel)` has the caption **Discard**. 
+There are two system actions that control the behavior: `systemaction(OK)` for saving and `systemaction(Cancel)` for discarding. These actions appear in the UI by default without you having to add any code. In this case, `systemaction(OK)` has the caption **Keep it** and `systemaction(Cancel)` has the caption **Discard**. However, you do have to add code that handles the content based on which action the user chooses. 
 
 1. This step is optional and only required if you want use captions other than **Keep it** and **Discard**. In the `actions` control, add a system action `OK` for saving proposals and `Cancel` for discarding proposals.
 
@@ -291,7 +291,7 @@ There are two system actions that control the behavior: `systemaction(OK)` for s
         begin
             if CloseAction = CloseAction::OK then
                 SaveCopilotJobProposal.Save(CustomerNo, CopilotJobProposal);
-         end;
+        end;
     ```
 
 ### Add a regenerate action
@@ -328,7 +328,7 @@ By default, the page caption in all modes of the PromptDialog page is determined
 
 ![Shows the caption next to the edit button in PromptDialog type page](media/promptdialog-content-mode-caption.svg)
 
-A useful pattern is to show the input that was made by the user before before the AI generation is done. 
+A useful pattern is to show the input that was made by the user before the AI generation is done. 
 
 ```al
 
@@ -386,7 +386,7 @@ action(GenerateCopilot)
 Set the [Image property](properties/devenv-image-property.md) to either `Sparkle` ![Shows the copilot sparkle icon](media/copilot-sparkle.png)
 or `SparkleFilled` ![Shows the copilot sparkle filled icon](media/copilot-sparkle-filled.png). These images are recognized across Microsoft products to indicate that the action is associated with copilot.
 
-In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific copilot. For example, if there's multiple copilot actions on a page, you may want to emphasize one copilot action over the others.  
+In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific copilot. For example, if there's multiple copilot actions on a page, you might want to emphasize one copilot action over the others.  
 
 
 ## Example
