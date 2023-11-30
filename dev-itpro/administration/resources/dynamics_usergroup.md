@@ -19,6 +19,8 @@ Represents an user group in [!INCLUDE[d365fin_long_md](../../includes/d365fin_lo
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE [prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
 
+> [!NOTE]  
+> User groups are replaced with https://learn.microsoft.com/en-us/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/manage-user-permissions-using-security-groups and will be deprecated in version 25. See security group APIs (administration/resources/dynamics_securitygroups).
 
 ## Methods
 
