@@ -58,7 +58,7 @@ In the Azure OpenAI namespace, you find the following objects:
 |AOAI Chat Messages|Codeunit|Helper functions for the AOAI Chat Message table. This is where you set your own metaprompt. For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt).|
 |AOAI Text Completion Params| Codeunit|Optional parameters that can be modified for text generation.|
 |AOAI Chat Completion Params| Codeunit|Optional parameters that can be modified for chat generation.|
-|AOAI Chat Roles|Enum|The chat roles available for chat generation; `User`, `System`, and `Assistant`. `User` defines when the end-user inputs text to the chat, `System` defines guiding the system, for example, by giving a metaprompt, and `Assistant` defines when the model returns output.|
+|AOAI Chat Roles|Enum|The chat roles available for chat generation; `User`, `System`, and `Assistant`. `User` defines when the end user inputs text to the chat, `System` defines guiding the system, for example, by giving a metaprompt, and `Assistant` defines when the model returns output.|
 
 For more information, see [System reference](/dynamics365/business-central/application/system/module/system).
 
@@ -139,7 +139,7 @@ Next, you can use the `Azure OpenAI` codeunit to generate text. The following `C
 
 The `Generate` procedure takes a prompt as a parameter and returns the generated text. It calls the other procedures to set up the authorization, parameters, and capability for the generation. The `SetAuthorization` sets the authorization information as described in the previous section, and uses the `AzureOpenAI` object to set the endpoint and key for the service.
 
-The `SetParameters` sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is a number between 0 and 2 that controls how risky the model is when generating text. Higher values mean more creativity, but also more errors. Lower values mean more accuracy, but also more boring text. This example sets the temperature to 0, which outputs a well-defined answer. For more information, see [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
+The `SetParameters` sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is a number between 0 and 2 that controls how creative the model is when generating text. Higher values mean more creativity, but also more errors. Lower values mean more accuracy, but also more boring text. This example sets the temperature to 0, which outputs a well-defined answer. For more information, see [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
 
 The `SetCopilotCapability` call sets the capability for the generation. It uses the `IsolatedStorage` object to get the metaprompt from the storage. The metaprompt is a special message that tells the model what kind of text to generate. For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt). 
 
