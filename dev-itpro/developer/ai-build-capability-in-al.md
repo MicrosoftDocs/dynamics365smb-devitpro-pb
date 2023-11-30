@@ -44,21 +44,21 @@ In the Copilot namespace, you find the following objects:
 
 |Object | Object type | Purpose |
 |-------|-------------|---------|
-|Copilot Capability|Codeunit|Used to register, modify, and delete Copilot capabilities.|
-|Copilot Availability|Enum|The availability of the Copilot Capability; it can either be in preview or generally available.|
-|Copilot Capability|Enum|Defines the capabilities that can be registered.|
+|[Copilot Capability]()|Codeunit|Used to register, modify, and delete Copilot capabilities.|
+|[Copilot Availability]()|Enum|The availability of the Copilot Capability; it can either be in preview or generally available.|
+|[Copilot Capability]()|Enum|Defines the capabilities that can be registered.|
 
 In the Azure OpenAI namespace, you find the following objects:
 
 |Object | Object type | Purpose | 
 |-------|-------------|---------|
-|Azure OpenAI |Codeunit| Provides functionality for using the Azure OpenAI API.|
-|AOAI Operation Response|Codeunit|Monitors the status and result of an operation.|
-|AOAI Model Type| Enum |The supported model types for Azure OpenAI; `Embeddings`, `Text Completions`, and `Chat Completions`.|
-|AOAI Chat Messages|Codeunit|Helper functions for the AOAI Chat Message table. This is where you set your own metaprompt. For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt).|
-|AOAI Text Completion Params| Codeunit|Optional parameters that can be modified for text generation.|
-|AOAI Chat Completion Params| Codeunit|Optional parameters that can be modified for chat generation.|
-|AOAI Chat Roles|Enum|The chat roles available for chat generation; `User`, `System`, and `Assistant`. `User` defines when the end user inputs text to the chat, `System` defines guiding the system, for example, by giving a metaprompt, and `Assistant` defines when the model returns output.|
+|[Azure OpenAI]() |Codeunit| Provides functionality for using the Azure OpenAI API.|
+|[AOAI Operation Response]()|Codeunit|Monitors the status and result of an operation.|
+|[AOAI Model Type]()| Enum |The supported model types for Azure OpenAI; `Embeddings`, `Text Completions`, and `Chat Completions`.|
+|[AOAI Chat Messages]()|Codeunit|Helper functions for the AOAI Chat Message table. This is where you set your own metaprompt. For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt).|
+|[AOAI Text Completion Params]()| Codeunit|Optional parameters that can be modified for text generation.|
+|[AOAI Chat Completion Params]()| Codeunit|Optional parameters that can be modified for chat generation.|
+|[AOAI Chat Roles]()|Enum|The chat roles available for chat generation; `User`, `System`, and `Assistant`. `User` defines when the end user inputs text to the chat, `System` defines guiding the system, for example, by giving a metaprompt, and `Assistant` defines when the model returns output.|
 
 For more information, see [System reference](/dynamics365/business-central/application/system/module/system).
 
