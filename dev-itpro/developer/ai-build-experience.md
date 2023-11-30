@@ -252,11 +252,14 @@ layout
 
 ### Add a save and discard action 
 
-In this task, you add actions to the content mode that enable users to save or discard the AI-generated proposal. In accordance with responsible AI, it's important to respect the user's choice.
+In this task, you add actions to the content mode that enable users to save or discard the AI-generated proposal. Don't save AI-generated proposals to the database until the user chooses to do so. In accordance with responsible AI, to respect the user's choice.
 
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-save.svg)
 
-1. In the `actions` control, add a system action `OK` for saving proposals and `Cancel` for discarding proposals.
+
+There are two system actions that control the behavior: `systemaction(OK)` for saving and `systemaction(Cancel)` for discarding. These actions appear in the UI by default without you having to add them. In this case, `systemaction(OK)` has the caption **Keep it** and `systemaction(Cancel)` has the caption **Discard**. 
+
+1. This step is optional and only required if you want use captions other than **Keep it** and **Discard**. In the `actions` control, add a system action `OK` for saving proposals and `Cancel` for discarding proposals.
 
     ```al
     actions
@@ -265,19 +268,19 @@ In this task, you add actions to the content mode that enable users to save or d
         {
             systemaction(OK)
             {
-                Caption = 'Keep it';
+                Caption = 'Save';
                 ToolTip = 'Save the proposal.';
              }
             systemaction(Cancel)
             {
-                Caption = 'Discard';
+                Caption = 'Cancel';
                 ToolTip = 'Throw away the proposal.';
             }
         }
     }
     ```
 
-    Use the Caption property to specify the text that you want to use for the actions. Choose text that is concise but best communicates what the action does. For example, if the OK action inserts a row in list, then perhaps **Insert** is a better label than **Keep it**. 
+    Use the Caption property to specify the text that you want to use for the actions. Choose text that is concise but best communicates what the action does. For example, if the OK action inserts a row in list, then perhaps **Insert** is a better than **Keep it**. 
 
 1. Add the code that saves or discards the proposal using either the [OnQueryClosePage](triggers-auto/page/devenv-onqueryclosepage-page-trigger.md) or the value returned from the [RunModal](methods-auto/page/page-runmodal--method.md).
 
