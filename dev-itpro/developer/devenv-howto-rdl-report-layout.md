@@ -112,7 +112,10 @@ This [Microsoft Learn Article](https://learn.microsoft.com/en-us/previous-versio
 - Text formatting (bold, italics, underline, strikethrough)
 - List handling
 
-Any other HTML markup tags will be ignored during report processing (ex. images). If the HTML is not well formed, the placeholder will be rendered as plain text. Unfortunately things like font colors and emojis are not processed for your report layout. 
+Any other HTML markup tags will be ignored during report processing (ex. images and tables). If the HTML is not well formed, the placeholder will be rendered as plain text. Unfortunately things like font colors and emojis are not processed for your report layout. 
+
+> [!NOTE]
+> If the HTML exceeds the size of the page, it will not trigger a page break and continue onto the next page. This means your HTML will be truncated.
 
 ## See Also
 
