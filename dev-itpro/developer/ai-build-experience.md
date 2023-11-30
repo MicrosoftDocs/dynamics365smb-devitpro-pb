@@ -257,7 +257,7 @@ In this task, you add actions to the content mode that enable users to save or d
 ![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-save.svg)
 
 
-There are two system actions that control the behavior: `systemaction(OK)` for saving and `systemaction(Cancel)` for discarding. These actions appear in the UI by default without you having to add any code. In this case, `systemaction(OK)` has the caption **Keep it** and `systemaction(Cancel)` has the caption **Discard**. However, you do have to add code that handles the content based on which action the user chooses. 
+There are two system actions that control the behavior: `systemaction(OK)` for saving and `systemaction(Cancel)` for discarding. These actions appear in the UI by default without you having to add any code where `systemaction(OK)` has the caption **Keep it** and `systemaction(Cancel)` has the caption **Discard**. However, you do have to add code that handles the content based on which action the user chooses. 
 
 1. This step is optional and only required if you want use captions other than **Keep it** and **Discard**. In the `actions` control, add a system action `OK` for saving proposals and `Cancel` for discarding proposals.
 
