@@ -105,7 +105,7 @@ Rich Text is stored as HTML within the database. In order to display the formatt
 4. Select ```OK``` to close the Placeholder Properties window.
 
 There are limitations imposed by the SQL Reporting Engine as to what HTML markup elements are processed. 
-This [Microsoft Learn Article](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008/cc645967(v=sql.100)?redirectedfrom=MSDN) states that the following tags will be processed:
+This [Microsoft Learn Article](https://learn.microsoft.com/previous-versions/sql/sql-server-2008/cc645967(v=sql.100)?redirectedfrom=MSDN) states that the following tags will be processed:
 - Hyperlinks
 - Fonts
 - Header, style and block elements
