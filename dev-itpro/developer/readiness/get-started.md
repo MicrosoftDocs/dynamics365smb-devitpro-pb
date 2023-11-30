@@ -49,7 +49,7 @@ The relevant contract can be requested through your local Regional Operations Ce
 
 - [mbscon@microsoft.com](mailto:mbscon@microsoft.com) if you're based in Europe, the Middle East, or Africa.
 
-- [aka.ms/PLOIntake]( https://aka.ms/PLOIntake) if you're based in the Americas – to request access [REQUEST ACCESS](https://idwebelements.microsoft.com/GroupManagement.aspx?Group=PLOPortalAccess&Operation=join).
+- [aka.ms/PLOIntake](https://aka.ms/PLOIntake) if you're based in the Americas – to request access [REQUEST ACCESS](https://idwebelements.microsoft.com/GroupManagement.aspx?Group=PLOPortalAccess&Operation=join).
 
 - [mbslques@microsoft.com](mailto:mbslques@microsoft.com) if you're based in the Asia Pacific region.
 
