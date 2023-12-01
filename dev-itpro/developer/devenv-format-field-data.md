@@ -37,6 +37,7 @@ table 18 Customer
 
 fields
     {
+        ...
         field(19; "Budgeted Amount"; Decimal)
         {
             AutoFormatExpression = Rec."Currency Code";
@@ -46,6 +47,7 @@ fields
         {
             AutoFormatType = 1;
         }
+        ...
     }
 }
 ```
@@ -66,11 +68,12 @@ page 50142 MyCustomer
             {
                 field("My Budgeted Amount"; Rec."Budgeted Amount")
                 {
-                    AutoFormatType = 2; // this will override the formatting defined on the field definition in the table 
+                    // this will override the formatting defined on the field definition in the table 
+                    AutoFormatType = 2; 
                 }
                 field("Credit limit"; Rec."Credit Limit (LCY)")
                 {
-                    // this will enherit the formatting from the field definition in the table 
+                    // here, you enherit the formatting from the field definition in the table 
                 }
             }
         }
@@ -91,11 +94,12 @@ report 50143 MyCustomerReport
         ...
         column("My Budgeted Amount"; "Budgeted Amount")
         {
-            // this will enherit the formatting from the field definition in the table 
+            // here, you enherit the formatting from the field definition in the table 
         }
         column("Credit limit"; "Credit Limit (LCY)")
         {
-            AutoFormatType = 2; // this will override the formatting defined on the field definition in the table
+            // this will override the formatting defined on the field definition in the table
+            AutoFormatType = 2; 
         }
         ...
     }

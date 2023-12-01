@@ -69,9 +69,7 @@ When a report with an Excel layout is run, [!INCLUDE[server](includes/server.md)
 ## Formatting data in Excel layouts
 [!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
 
-Specifically for Excel layouts, there are many ways to control formatting of data elements in Excel. 
-
-For more information on how to format data in Excel, see 
+Specifically for Excel layouts, there are many ways to control formatting of data elements directly in Excel. For more examples on how to format data in Excel, see 
 
 - [Formatting dates in Excel](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e)
 - [Formatting numbers in Excel](https://support.microsoft.com/en-us/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)
