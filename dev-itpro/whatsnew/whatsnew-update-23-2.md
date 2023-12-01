@@ -35,9 +35,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 | Denmark | E-invoicing with Nemhandel | Companies can use e-invoicing with Nemhandel connected via certified access points. Both OIOUBL and PEPPOL formats are supported. This functionality is extension of new E-documents framework. |
 | Denmark | Enforcing digital vouchers | Companies can choose to enable blocking of document or journal posting if the attachment is not provided to keep full audit trail. Administrator can set different rules for different types of documents. In Denmark, this feature will enforce mandatory attachment for Purchase and Sales documents from July 1st based on new bookkeeping act. |
 | Denmark | E-Documents Connector with External Endpoints | New app has been built on a top of new E-documents framework. Now users can add the endpoint(s) and connect with 3rd party access point service providers, after getting credentials from them. |
-| Denmark | PEPPOL format in E-documents | New app has been built on a top of new E-documents framework. Now users can add the endpoint(s) and connect with 3rd party access point service providers, after getting credentials from them.
-|
-
+| Denmark | PEPPOL format in E-documents | New app has been built on a top of new E-documents framework. Now users can add the endpoint(s) and connect with 3rd party access point service providers, after getting credentials from them.|
 
 ## Release Plan
 
@@ -45,7 +43,7 @@ If you want to get a comprehensive overview of what's new and planned for Busine
 
 ## Upgrade to 23.2
 
-Please note that new customers will automatically get the latest builds of Business Central (23.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
+Please note that new customers will automatically get the latest builds of Business Central (23.2). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
