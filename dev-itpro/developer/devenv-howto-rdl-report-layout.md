@@ -96,7 +96,7 @@ For more information about labels, see [Working with labels](devenv-using-labels
 
 [!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
 
-Specifically for RDL layouts, there are many ways to control formatting of data elements in the RDL language. For more information on how to format data in RDL, see [Format paginated report items](https://learn.microsoft.com/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs)
+Specifically for RDL layouts, there are many ways to control formatting of data elements in the RDL language. For more information on how to format data in RDL, see [Format paginated report items](/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs)
 
 ## Using rich text (HTML) content in RDL layouts
 
@@ -111,7 +111,7 @@ Rich Text is stored as HTML within the database. In order to display the formatt
 3. On the `General` tab, select `HTML - Interpret HTML tags as style` radio button.
 4. Select `OK` to close the Placeholder Properties window.
 
-There are limitations imposed by the SQL Reporting Engine as to what HTML markup elements are processed. This [Microsoft Learn article](https://learn.microsoft.com/previous-versions/sql/sql-server-2008/cc645967(v=sql.100)?redirectedfrom=MSDN) states that the following tags will be processed:
+There are limitations imposed by the SQL Reporting Engine as to what HTML markup elements are processed. This [Microsoft Learn article](/previous-versions/sql/sql-server-2008/cc645967(v=sql.100)?redirectedfrom=MSDN) states that the following tags will be processed:
 
 - Hyperlinks
 - Fonts
