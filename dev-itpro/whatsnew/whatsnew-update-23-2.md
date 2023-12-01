@@ -28,8 +28,14 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-| Spain | Non-Deductible and partly deductible VAT update | Adding global non-deductible VAT feature to the Spanish localization to keep compliant with VAT reporting and SII requirements.|
-| Spain | Overdue Balance report update | New requirements for Vendor - Overdue Balance report (10748) in the Spanish version where we added Amounts (Volumen Monetario) and Number of invoices (Numero de facturas) information.|
+| Denmark | Notification and registration with Nemhandel | Based on new bookkeeping act, companies will be notified if they are not registered with Nemhandel with the link for registration. Companies must populate their CVR number in the Registration Number field on the Company Information page. This functionality will be run by default from January 1st. |
+| Denmark | E-submission of VAT return | Companies can use electronical submission of VAT returns through the connection with Skattestyrelsen via their APIs. To use this feature, companies must populate their CVR number in the Registration Number field on the Company Information page.|
+| Denmark | N | .|
+| Denmark | N | .|
+| Denmark | N | .|
+| Denmark | N | .|
+| Denmark | N | .|
+| Denmark | N | .|
 
 
 ## Release Plan
@@ -51,6 +57,7 @@ During November, we will host the following calls, which you can already registe
 
 - **December 5:** Mobile app and barcode scanning
 - **January 9:** AL-Go for GitHub
+- **January 23:** How we secure your data in Business Central (2024 update)
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
 Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
