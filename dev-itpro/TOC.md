@@ -767,13 +767,13 @@
 #### [Using request pages with reports](developer/devenv-request-pages-for-reports.md)
 #### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### Report layouts
-##### [About report and document layouts](ui-manage-report-layouts.md)
-##### [Get started create layouts](ui-get-started-layouts.md)
+##### [About report and document layouts](/dynamics365/business-central/ui-manage-report-layouts)
+##### [Get started create layouts](/dynamics365/business-central/ui-get-started-layouts)
 ##### [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts)
 ##### [Adding barcodes to report layouts](developer/devenv-report-add-barcodes.md)
 ##### Excel, Word, and RDL report layouts
 ###### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)
-###### [Working with Excel layouts](/dynamics365/business-central/ui-excel-report-layouts.md)
+###### [Working with Excel layouts](/dynamics365/business-central/ui-excel-report-layouts)
 ###### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
 ###### [Working with Word layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout.md)
 ###### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)

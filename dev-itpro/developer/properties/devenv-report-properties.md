@@ -152,8 +152,8 @@ This article lists properties of the report object.
 -->
 
 ## See Also  
-[Report datatype (AL Language Reference)](developer/methods-auto/report/report-data-type.md)   
-
+[Report datatype (AL Language Reference)](../methods-auto/report/report-data-type.md)   
+[Report, Report Dataitem, and Report Extension Properties (AL Language Reference)](../properties/devenv-report-property-overview.md)   
 [Properties](devenv-properties.md)  
 [Table and Table Extension Properties](devenv-table-properties.md)  
 [Page and Page Extenstion Properties Overview](devenv-page-property-overview.md)
