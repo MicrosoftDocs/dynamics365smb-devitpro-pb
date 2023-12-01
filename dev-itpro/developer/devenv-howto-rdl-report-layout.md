@@ -92,37 +92,43 @@ You'll now see the generated report in preview mode.
 
 For more information about labels, see [Working with labels](devenv-using-labels.md).
 
-## Using rich text (HTML) content in RDL layouts
-If you have created a [Rich Text content control](devenv-richtext-content-controls.md) you can display the text on an RDL report. This means that you can display multi-line formatted text, emphasize important points, and have clickable hyperlinks.
-
-Rich Text is stored as HTML within the database. In order to display the formatted HTML you need to change the ```Placeholder Properties``` within your RDL.
-
-1. After adding the field to your report layout that contains the Rich Text, left click on the field so that the ```<Expr>``` tag is highlighted.
-
-2. Right click on the highlighted ```<Expr>``` tag and choose ```Placeholder Properties...```
-
-3. On the ```General``` tab, select ```HTML - Interpret HTML tags as style``` radio button.
-4. Select ```OK``` to close the Placeholder Properties window.
-
-There are limitations imposed by the SQL Reporting Engine as to what HTML markup elements are processed. 
-This [Microsoft Learn Article](https://learn.microsoft.com/previous-versions/sql/sql-server-2008/cc645967(v=sql.100)?redirectedfrom=MSDN) states that the following tags will be processed:
-- Hyperlinks
-- Fonts
-- Header, style and block elements
-- Text formatting (bold, italics, underline, strikethrough)
-- List handling
-
-Any other HTML markup tags will be ignored during report processing (ex. images and tables). If the HTML is not well formed, the placeholder will be rendered as plain text. Unfortunately things like font colors and emojis are not processed for your report layout. 
-
-> [!NOTE]
-> If the HTML exceeds the size of the page, it will not trigger a page break and continue onto the next page. This means your HTML will be truncated.
-
 ## Formatting data in RDL layouts
 
 [!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
 
 Specifically for RDL layouts, there are many ways to control formatting of data elements in the RDL language. For more information on how to format data in RDL, see [Format paginated report items](https://learn.microsoft.com/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs)
 
+## Using rich text (HTML) content in RDL layouts
+
+If you've created a [Rich Text content control](devenv-richtext-content-controls.md), you can display the text on an RDL report. This means that you can display multi-line formatted text, emphasize important points, and have clickable hyperlinks.
+
+Rich Text is stored as HTML within the database. In order to display the formatted HTML, you need to change the `Placeholder Properties` within your RDL.
+
+1. After adding the field to your report layout that contains the Rich Text, left-click on the field so that the `<Expr>` tag is highlighted.
+
+2. Right-click on the highlighted `<Expr>` tag and select `Placeholder Properties...`.
+
+3. On the `General` tab, select `HTML - Interpret HTML tags as style` radio button.
+4. Select `OK` to close the Placeholder Properties window.
+
+There are limitations imposed by the SQL Reporting Engine as to what HTML markup elements are processed. This [Microsoft Learn article](https://learn.microsoft.com/previous-versions/sql/sql-server-2008/cc645967(v=sql.100)?redirectedfrom=MSDN) states that the following tags will be processed:
+
+- Hyperlinks
+- Fonts
+- Header, style and block elements
+- Text formatting (bold, italics, underline, strikethrough)
+- List handling
+
+Any other HTML markup tags will be ignored during report processing (for example, images and tables). If the HTML isn't well formed, the placeholder will be rendered as plain text. Unfortunately things like font colors and emojis aren't processed for your report layout. 
+
+> [!NOTE]
+> If the HTML exceeds the size of the page, it will not trigger a page break and continue onto the next page. This means your HTML will be truncated.
+
+## Contributors
+
+*This article is maintained by Microsoft. Some content was originally written by the following contributors.*
+
+* [Tonya Bricco-Meske](https://www.linkedin.com/in/tonyabriccomeske/) | Senior Developer
 
 ## See also
 
