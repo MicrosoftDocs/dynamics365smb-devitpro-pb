@@ -757,8 +757,10 @@
 #### [Report object](developer/devenv-report-object.md)
 #### [Report extension object](developer/devenv-report-ext-object.md)
 #### [Report extension example](developer/devenv-report-ext-example.md)
-#### [Report datatype (AL Language Reference)](developer/methods-auto/report/report-data-type.md)
-#### [Report datatype (AL Language Reference)](developer/methods-auto/report/report-data-type.md)
+#### AL Language Reference (reports)
+##### [Report datatype (AL Language Reference)](developer/methods-auto/report/report-data-type.md)
+##### [Report object properties (AL Language Reference)](developer/properties/devenv-report-properties.md)
+##### [Report, Report Dataitem, and Report Extension Properties (AL Language Reference)](developer/properties/devenv-report-property-overview.md)
 #### [Defining a report dataset](developer/devenv-report-dataset.md)
 #### Formatting report data
 ##### [Formatting field values in report datasets](developer/devenv-format-report-field-data.md)
@@ -780,7 +782,7 @@
 ###### [Working with RDLC layouts](/dynamics365/business-central/ui-rdlc-report-layouts)
 ##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
 ##### [Defining a custom report render](developer/devenv-report-custom-render.md)
-##### Changing the look of externally-facing documents (for users and administrators)
+##### Changing layouts (for users and administrators)
 ###### [Set the layout used by a report](/dynamics365/business-central/ui-set-report-layout)
 ###### [Define document layouts for customers and vendors](/dynamics365/business-central/ui-define-customer-vendor-document-layouts)
 ##### Legacy layout features
