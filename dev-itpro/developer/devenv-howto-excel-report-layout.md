@@ -3,7 +3,7 @@ title: Creating an Excel layout report
 description: Describes the steps involved in creating a report that uses an Excel layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 06/16/2023
+ms.date: 12/01/2023
 ms.reviewer: kepontop
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -42,7 +42,7 @@ For more information about the data contract, see [Understanding Excel layouts](
 
 ### Excel layout data contract in 2023 release wave 2 and later versions
 
-The [ExcelLayoutMultipleDataSheets property](properties/devenv-excellayoutmultipledatasheets-property.md) allows you to work with reports that render multiple worksheets for the report data when the dataset has multiple data items. By setting the property to `true`, the AL runtime generates an Excel worksheet for each data item and place its data there. Otherwise, if the property is `false`, which is the default, a single sheet is used for all data (as described in the previous section).
+The [ExcelLayoutMultipleDataSheets property](properties/devenv-excellayoutmultipledatasheets-property.md) allows you to work with reports that render multiple worksheets for the report data when the dataset has multiple data items. By setting the property to `true`, the AL runtime generates an Excel worksheet for each data item and places its data there. Otherwise, if the property is `false`, which is the default, a single sheet is used for all data (as described in the previous section).
 
 Each of the multiple sheets is named #DataItemName, where DataItemName is the name given to the dataitem in the report design. When new empty Excel layouts are added to the report, the property is used to determine the sheet structure.
 

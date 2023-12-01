@@ -16,11 +16,13 @@ ms.author: kepontop
 It's often useful to format data in the report dataset to reduce the complexity of the report layout. For example, if a decimal field in a table has precision of five digits, the same level of precision might not be needed in the report. Or maybe you want to format dates or currencies in a different way in the report as they appear on the page in [!INCLUDE[prod_short](./includes/prod_short.md)].
 
 In this article, we explain  
+
 * how to format decimal values,
 * how to format date, boolean, and enum values, and
 * how to control regional formats for Date/DateTime/Time and decimal values.
 
 ## Formatting decimal values
+
 When a field of type Decimal is defined on a table, it's possible to set the properties **AutoFormatType** and **AutoFormatExpr** to control how this field is shown on pages and reports. You can also change the precision using the **DecimalPlaces** property.
 
 If you don't want to use the format defined on the field on the table, you can override these properties on the field in the dataset. 
