@@ -64,11 +64,6 @@ Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOf
 ### Automatically update AppSource apps with minor updates  
 You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the Release Plan for more details.
 
-### Discover all partner related resources on aka.ms/BCAll
-If you’re a partner and you’re looking for relevant resources, you can find them in this article: aka.ms/BCAll. 
- 
-### Discover all user related resources on aka.ms/BCUsers
-If you’re a user and you’re looking for relevant resources, you can find them in this article: aka.ms/BCUsers.  
 
 ### Features becoming mandatory soon  
 Following features may have potentially disruptive effect on extensions and apps you have installed in the future, when they become mandatory. These features are now optional to use and can be enabled in the [Feature Management](https://dynamics.microsoft.com/en-us/business-central/signin/?ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2F%3Fpage%3D2610%26noSignUpCheck%3D1) page. 
@@ -82,7 +77,8 @@ Extending Currency Exchange Rate Adjustments.
 
 Work with your partner to update extensions and apps you have installed before above features become mandatory. To view complete list of optional features and features that are becoming mandatory, go to [aka.ms/BCFeatureMgmt]https://aka.ms/BCFeatureMgmt
 
-
-### Looking for an aka.ms link?
-
-Are you looking for an aka.ms link, but simply can't find it? Remember that you can find all aka.ms links on [aka.ms/BCLinks](https://aka.ms/BCLinks). Don't forget to bookmark it!
+### Discover all partner related resources on aka.ms/BCAll
+If you’re a partner and you’re looking for relevant resources, you can find them in this article: aka.ms/BCAll. 
+ 
+### Discover all user related resources on aka.ms/BCUsers
+If you’re a user and you’re looking for relevant resources, you can find them in this article: aka.ms/BCUsers.  
