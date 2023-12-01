@@ -14,11 +14,11 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# Report, Report Fields, and Report Extension Properties
+# Report, Report Dataitem, and Report Extension Properties
 
-This topic lists properties that apply to the [report object](../devenv-report-object.md), report fields, and [report extension object](../devenv-report-ext-object.md).
+This topic lists properties that apply to the [report object](../devenv-report-object.md), [report dataitem](../devenv-report-dataset.md) , and [report extension object](../devenv-report-ext-object.md).
 
-## Object Properties
+## Report Object Properties
 
 The following properties all apply to the Report object, only some of these properties can be set for a Report extension object as specified below. This list is sorted alphabetically by property name. For Report properties sorted by method on a Report, see [Properties](devenv-properties.md).
 
