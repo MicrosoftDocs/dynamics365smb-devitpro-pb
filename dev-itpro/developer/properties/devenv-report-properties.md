@@ -1,5 +1,5 @@
 ---
-title: Report Properties
+title: Report Object Properties
 description: This topic lists report properties that apply to controls of a report object.
 ms.custom: na
 ms.date: 04/01/2021
@@ -10,7 +10,7 @@ ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 
-# Report Properties
+# Report object properties
 
 This article lists properties of the report object.  
 
@@ -152,6 +152,8 @@ This article lists properties of the report object.
 -->
 
 ## See Also  
+[Report datatype (AL Language Reference)](developer/methods-auto/report/report-data-type.md)   
+
 [Properties](devenv-properties.md)  
 [Table and Table Extension Properties](devenv-table-properties.md)  
 [Page and Page Extenstion Properties Overview](devenv-page-property-overview.md)

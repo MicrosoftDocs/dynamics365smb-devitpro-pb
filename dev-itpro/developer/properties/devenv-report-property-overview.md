@@ -1,5 +1,5 @@
 ---
-title: "Report, Report Fields, and Report Extension Properties"
+title: "Report, Report Dataitem, and Report Extension Properties"
 description: "This topic lists properties that apply to the [report object](../devenv-report-object.md), report fields, and [report extension object](../devenv-report-ext-object.md)."
 ms.author: solsen
 ms.custom: na
@@ -87,6 +87,10 @@ The following properties all apply to the Report object, only some of these prop
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
+[Report datatype (AL Language Reference)](../methods-auto/report/report-data-type.md)   
+[Report object properties (AL Language Reference)](devenv-report-properties.md)   
+[Report overview](../devenv-reports.md)   
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
