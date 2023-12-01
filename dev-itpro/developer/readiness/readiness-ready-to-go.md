@@ -72,6 +72,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Learn about onboarding experiences in [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)
 - Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
 - Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys)
+- Download the keyboard shortcut PDF: [aka.ms/BCKeyboardShortcutsPDF](https://aka.ms/BCKeyboardShortcutsPDF)
 
 ## Reporting and business intelligence  
 
