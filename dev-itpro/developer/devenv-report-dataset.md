@@ -32,7 +32,7 @@ Typically, data items and columns correspond to fields in a table. When the repo
 You can also extend a dataset from an existing report, to add more columns for example. For more information, see [Report Extension Object](devenv-report-ext-object.md).
 
 ## Formatting field values in report datasets
-It is often useful to format data in the report dataset to reduce the complexity of the report layout. For example, if a decimal field in a table has a precision of five digits, the same level of precision might not be needed in the report. Or maybe you want to format dates or currencies in a different way in the report as they appear on the page in [![prod_short](./includes/prod_short.md)].
+It is often useful to format data in the report dataset to reduce the complexity of the report layout. For example, if a decimal field in a table has a precision of five digits, the same level of precision might not be needed in the report. Or maybe you want to format dates or currencies in a different way in the report as they appear on the page in [!INCLUDE[prod_short](./includes/prod_short.md)].
 
 For more information, see [Formatting field values in report datasets](devenv-format-report-field-data.md).
 

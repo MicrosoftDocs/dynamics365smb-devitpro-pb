@@ -1,6 +1,6 @@
 ---
 title: "Formatting field values in report datasets"
-description: ""
+description: "Learn how to format data in report datasets."
 author: KennieNP
 ms.custom: na
 ms.date: 12/01/2021
@@ -12,7 +12,7 @@ ms.author: kepontop
 ---
 
 # Formatting field values in report datasets
-It is often useful to format data in the report dataset to reduce the complexity of the report layout. For example, if a decimal field in a table has a precision of five digits, the same level of precision might not be needed in the report. Or maybe you want to format dates or currencies in a different way in the report as they appear on the page in [![prod_short](./includes/prod_short.md)].
+It is often useful to format data in the report dataset to reduce the complexity of the report layout. For example, if a decimal field in a table has a precision of five digits, the same level of precision might not be needed in the report. Or maybe you want to format dates or currencies in a different way in the report as they appear on the page in [!INCLUDE[prod_short](./includes/prod_short.md)].
 
 In this article, we explain  
 * how to format decimal values,
@@ -30,7 +30,7 @@ For more information about how to use **AutoFormatType** and **AutoFormatExpr** 
 ## Formatting date, boolean, and enum values
 As described above, formatting of fields of type Decimal can be done using properties. But you might also want to format fields of other datatypes such as Date, Boolean, or Enum in your report dataset. To achieve this, you can simply use the Format method directly when specifying the field from the table in your dataitem columns. See an example below on how to do this.
 
-For more information on how to use Format method for formatting dates, times, booleans, enums and more, see [Formatting values, dates, and time](devenv-format-property).
+For more information on how to use Format method for formatting dates, times, booleans, enums and more, see [Formatting values, dates, and time](devenv-format-property.md).
 
 
 ### Example

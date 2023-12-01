@@ -1,5 +1,6 @@
 ---
 title: "Formatting the Data in a Field"
+description: "Learn how to format data in a field, either on the table level or on the page/report level."
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na

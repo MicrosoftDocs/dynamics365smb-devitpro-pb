@@ -67,7 +67,7 @@ When a report with an Excel layout is run, [!INCLUDE[server](includes/server.md)
 4. Provides the merged Excel workbook to the user for download or view in Excel online if enabled by the tenant administrator. For more information about viewing Excel outputs in Excel online, visit [Save Excel workbooks and report files in OneDrive](/dynamics365/business-central/across-onedrive-overview#save-excel-workbooks-and-report-files-in-onedrive).
 
 ## Formatting data in Excel layouts
-[![formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
+[!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
 
 Specifically for Excel layouts, there are many ways to control formatting of data elements in Excel. 
 
