@@ -1,0 +1,1 @@
+It is often desirable to format data in a report in a different way than how the same data appears in tables, queries, or pages. For example, if a decimal field in a table has a precision of five digits, the same level of precision might not be needed in the report. 

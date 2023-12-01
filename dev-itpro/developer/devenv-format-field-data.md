@@ -21,7 +21,87 @@ This article describes how you can format the decimal values that appear in fiel
 
 When a field is used on a page or report, you can set the **AutoFormatType** and **AutoFormatExpr** properties directly on the page field or report field \(column\), or you can set them on the underlying table field. If you specify the properties on the table field, then the format applies wherever the field is used. Specifying the properties on the page or report field will only apply the format to the specific page or report. If you specify the properties on the table field and the page or report field, then the settings on the page or report field take precedence.  
 
+
 When you use the **AutoFormatType** and **AutoFormatExpression** properties to format a field, two events are raised by the system codeunit **45 Auto Format**: OnResolveAutoFormat and OnAfterResolveAutoFormat.
+
+### Example
+The following example illustrates how **AutoFormatType** and **AutoFormatExpr** are defined on a field of type Decimal in the `Customer` table. It then shows how these properties are overridden on a page and a report that build on top of the `Customer` table.
+
+Assume that the `Customer` table has two fields `Budgeted Amount` and `Credit Limit (LCY)` of type Decimal and that these fields a formatting defined using **AutoFormatType** and **AutoFormatExpr**.
+
+```AL
+table 18 Customer
+{
+... 
+
+fields
+    {
+        field(19; "Budgeted Amount"; Decimal)
+        {
+            AutoFormatExpression = Rec."Currency Code";
+            AutoFormatType = 1;
+        }
+        field(20; "Credit Limit (LCY)"; Decimal)
+        {
+            AutoFormatType = 1;
+        }
+    }
+}
+```
+
+When definining a page `MyCustomer` on top of the `Customer` table, you can decide to override or keep the formatting that was defined on the table level:
+
+```AL
+page 50142 MyCustomer
+{
+     SourceTable = Customer;
+     ...
+
+     layout
+     {
+        area(content)
+        {
+            group(General)
+            {
+                field("My Budgeted Amount"; Rec."Budgeted Amount")
+                {
+                    AutoFormatType = 2; // this will override the formatting defined on the field definition in the table 
+                }
+                field("Credit limit"; Rec."Credit Limit (LCY)")
+                {
+                    // this will enherit the formatting from the field definition in the table 
+                }
+            }
+        }
+     }
+}
+```
+
+Similarly, when definining a report `MyCustomerReport` using data from the `Customer` table, you can also decide to override or keep the formatting on fields that was defined on the table level:
+
+```AL
+report 50143 MyCustomerReport
+{
+
+...
+
+    dataitem(CustomerDataItem; Customer)
+    { 
+        ...
+        column("My Budgeted Amount"; "Budgeted Amount")
+        {
+            // this will enherit the formatting from the field definition in the table 
+        }
+        column("Credit limit"; "Credit Limit (LCY)")
+        {
+            AutoFormatType = 2; // this will override the formatting defined on the field definition in the table
+        }
+        ...
+    }
+...
+}
+```
+
 
 ## Setting up data formatting
 

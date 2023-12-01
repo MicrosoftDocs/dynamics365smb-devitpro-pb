@@ -92,6 +92,14 @@ You will now see the generated report in preview mode.
 
 For more information about labels, see [Working with labels](devenv-using-labels.md).
 
+## Formatting data in RDL layouts
+[![formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
+
+Specifically for RDL layouts, there are many ways to control formatting of data elements in the RDL lanuage. 
+
+For more information on how to format data in RDL, see [Format paginated report items](https://learn.microsoft.com/en-gb/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs)
+
+
 
 ## See Also
 

@@ -66,6 +66,17 @@ When a report with an Excel layout is run, [!INCLUDE[server](includes/server.md)
 3. Inserts the data into the _Data_ table in the _Data_ worksheet in the Excel layout file.
 4. Provides the merged Excel workbook to the user for download or view in Excel online if enabled by the tenant administrator. For more information about viewing Excel outputs in Excel online, visit [Save Excel workbooks and report files in OneDrive](/dynamics365/business-central/across-onedrive-overview#save-excel-workbooks-and-report-files-in-onedrive).
 
+## Formatting data in Excel layouts
+[![formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
+
+Specifically for Excel layouts, there are many ways to control formatting of data elements in Excel. 
+
+For more information on how to format data in Excel, see 
+
+- [Formatting dates in Excel](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e)
+- [Formatting numbers in Excel](https://support.microsoft.com/en-us/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)
+
+
 ## Drillthrough to Business Central from an Excel layout
 
 With drillthrough in an Excel layout, you can create hyperlinks back into [!INCLUDE[prod_short](../includes/prod_short.md)] from Excel cells. When the report user selects the cell, they drillthrough to the target page to get details that are filtered to that context. To implement a drillthrough link, you need to know which page to open, and also construct which filters to apply to that page. You filter the data that is displayed in the page by using the filter URL parameter. The filter parameter lets you display specific records from the underlying table of the page.
