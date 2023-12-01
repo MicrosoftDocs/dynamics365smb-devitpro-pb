@@ -3,7 +3,7 @@ title: "List Data Type"
 description: "Represents a strongly typed list of ordered objects that can be accessed by index."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2022
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Represents a strongly typed list of ordered objects that can be accessed by inde
 
 
 
+## Instance methods
 The following methods are available on instances of the List data type.
 
 |Method name|Description|

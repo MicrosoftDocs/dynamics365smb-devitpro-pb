@@ -3,7 +3,7 @@ title: "TaskScheduler Data Type"
 description: "Is a complex data type for creating and managing tasks in the task scheduler, which runs codeunits at scheduled times."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Is a complex data type for creating and managing tasks in the task scheduler, which runs codeunits at scheduled times.
 
 
+## Static methods
 The following methods are available on the TaskScheduler data type.
 
 
