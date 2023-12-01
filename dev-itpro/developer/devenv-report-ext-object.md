@@ -1,9 +1,9 @@
 ---
-title: "Report Extension Object"
-description: "The report extension object in AL for Business Central allows you to create an extension of an existing report."
+title: Report extension object
+description: The report extension object in AL for Business Central allows you to create an extension of an existing report.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.topic: article
 ms.author: solsen
 ---
 
-# Report Extension Object
+# Report extension object
 
 [!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
 
@@ -21,9 +21,9 @@ With the report extension object, you can extend existing report objects, simila
 - Adding new data items
 - Adding trigger implementations
 - Adding to request pages
-- Adding additional report layouts, either to reflect new fields that are added with an extension, or simply adding new report layouts on an existing report dataset.
+- Adding more report layouts, either to reflect new fields that are added with an extension, or simply adding new report layouts on an existing report dataset.
 
-For a report to be extended, the `Extensible` property must be set to `true`, which is the default value. The value `true` which means that reports by default can be extended, unless they explicitly have the `Extensible` property set to `false`. For more information, see [Extensible Property](properties/devenv-extensible-property.md).
+For a report to be extended, the `Extensible` property must be set to `true`, which is the default value. The value `true`, which means that reports by default can be extended, unless they explicitly have the `Extensible` property set to `false`. For more information, see [Extensible Property](properties/devenv-extensible-property.md).
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
@@ -32,11 +32,11 @@ For a report to be extended, the `Extensible` property must be set to `true`, wh
 
 From [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 1, report extensions can have one or more layouts defined. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md). The report layout of an existing report can't be extended, but new layouts can be added. To use an existing report as a starting point, you can download the layout from [!INCLUDE [prod_short](../includes/prod_short.md)] and include it in the extension project. 
 
-Layouts that are included in a report extension will show up in [!INCLUDE [prod_short](../includes/prod_short.md)] as additional layouts to the report. Layout from a report extension will **not automatically** be used when the extension is deployed. To use one of the new report layouts, go to the **Report Layouts** page in [!INCLUDE [prod_short](../includes/prod_short.md)], and then choose the layout for the report in question as the new **Default Layout**.
+Layouts that are included in a report extension shows up in [!INCLUDE [prod_short](../includes/prod_short.md)] as more layouts to the report. Layout from a report extension are **not automatically** used when the extension is deployed. To use one of the new report layouts, go to the **Report Layouts** page in [!INCLUDE [prod_short](../includes/prod_short.md)], and then choose the layout for the report in question as the new **Default Layout**.
 
 ## Snippet support
 
-Typing the shortcut `treportext` will create the basic layout for a report extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `treportext` creates the basic layout for a report extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
@@ -152,8 +152,7 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 
-
-Report extension triggers   
+Report extension triggers  
 [OnPostReport (Report Extension) Trigger](triggers-auto/reportextension/devenv-onpostreport-reportextension-trigger.md)  
 [OnPreReport (Report Extension) Trigger](triggers-auto/reportextension/devenv-onprereport-reportextension-trigger.md)  
 [OnAfterAfterGetRecord (Report Extension Data Set Modify) Trigger](triggers-auto/reportextensiondatasetmodify/devenv-onafteraftergetrecord-reportextensiondatasetmodify-trigger.md)  
