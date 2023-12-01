@@ -1,15 +1,16 @@
 ---
-title: "Formatting the Data in a Field"
+title: "Formatting the data in a field"
 description: "Learn how to format data in a field, either on the table level or on the page/report level."
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
-# Formatting Decimal Values in Fields
+
+# Formatting decimal values in fields
 
 This article describes how you can format the decimal values that appear in fields on table, pages and reports. For example, you can change how the data appears in a Cue on the Role Center page. To format data, you use a combination of the [AutoFormatType Property](properties/devenv-AutoFormatType-Property.md), [AutoFormatExpression Property](properties/devenv-AutoFormatExpression-Property.md), and [DecimalPlaces Property](properties/devenv-DecimalPlaces-Property.md) of the field. These properties work together to enable you to specify the following:  
   
@@ -26,9 +27,10 @@ When a field is used on a page or report, you can set the **AutoFormatType** and
 When you use the **AutoFormatType** and **AutoFormatExpression** properties to format a field, two events are raised by the system codeunit **45 Auto Format**: OnResolveAutoFormat and OnAfterResolveAutoFormat.
 
 ### Example
+
 The following example illustrates how **AutoFormatType** and **AutoFormatExpr** are defined on a field of type Decimal in the `Customer` table. It then shows how these properties are overridden on a page and a report that build on top of the `Customer` table.
 
-Assume that the `Customer` table has two fields `Budgeted Amount` and `Credit Limit (LCY)` of type Decimal and that these fields a formatting defined using **AutoFormatType** and **AutoFormatExpr**.
+Assume that the `Customer` table has two fields `Budgeted Amount` and `Credit Limit (LCY)` of type Decimal and that these fields are formatted on the table using **AutoFormatType** and **AutoFormatExpr**.
 
 ```AL
 table 18 Customer
@@ -52,7 +54,7 @@ fields
 }
 ```
 
-When definining a page `MyCustomer` on top of the `Customer` table, you can decide to override or keep the formatting that was defined on the table level:
+When defining a page `MyCustomer` on top of the `Customer` table, you can decide to override or keep the formatting that was defined on the table level:
 
 ```AL
 page 50142 MyCustomer
@@ -73,7 +75,7 @@ page 50142 MyCustomer
                 }
                 field("Credit limit"; Rec."Credit Limit (LCY)")
                 {
-                    // here, you enherit the formatting from the field definition in the table 
+                    // here, you inherit the formatting from the field definition in the table 
                 }
             }
         }
@@ -81,7 +83,7 @@ page 50142 MyCustomer
 }
 ```
 
-Similarly, when definining a report `MyCustomerReport` using data from the `Customer` table, you can also decide to override or keep the formatting on fields that was defined on the table level:
+Similarly, when defining a report `MyCustomerReport` using data from the `Customer` table, you can also decide to override or keep the formatting on fields that was defined on the table level:
 
 ```AL
 report 50143 MyCustomerReport
@@ -94,7 +96,7 @@ report 50143 MyCustomerReport
         ...
         column("My Budgeted Amount"; "Budgeted Amount")
         {
-            // here, you enherit the formatting from the field definition in the table 
+            // here, you inherit the formatting from the field definition in the table 
         }
         column("Credit limit"; "Credit Limit (LCY)")
         {
@@ -110,19 +112,19 @@ report 50143 MyCustomerReport
 
 ## Setting up data formatting
 
-The settings for the **AutoFormatType**, **AutoFormatExpression**, and **DecimalPlaces** properties will depend on the type of data that is displayed, for example, this could be currency amounts, unit amounts, simple decimals, or ratios. For the most part, the **AutoFormatType** property is the primary setting, which in turn determines the options for setting the **DecimalPlaces** and **AutoFormatExpr** properties.  
+The settings for the **AutoFormatType**, **AutoFormatExpression**, and **DecimalPlaces** properties depend on the type of data that is displayed, for example, this could be currency amounts, unit amounts, simple decimals, or ratios. Usually, the **AutoFormatType** property is the primary setting, which in turn determines the options for setting the **DecimalPlaces** and **AutoFormatExpr** properties.  
 
-If the **AutoFormatType** is not set or is set to an incorrect property value, then the default setting is used, regardless of whether the **AutoFormatExpression** or **DecimalValues** properties are set. The default setting uses `AutoFormatType = 1` and `AutoFormatExpression = ''`.
+If the **AutoFormatType** isn't set or is set to an incorrect property value, then the default setting is used, regardless of whether the **AutoFormatExpression** or **DecimalValues** properties are set. The default setting uses `AutoFormatType = 1` and `AutoFormatExpression = ''`.
   
-The following tables describes how to set each of the properties to achieve the format that you want.
+The following tables describe how to set each of the properties to achieve the format that you want.
 
 ## Setting the DecimalPlaces property
 
-With the following set up, the **AutoFormatExpression** property is ignored.
+With the following setup, the **AutoFormatExpression** property is ignored.
   
 |AutoFormatType Property|DecimalPlaces Property|Usage Description|  
 |---------------------------|--------------------------|---------------------------|
-|0|Set to the number of decimal places that you want to display for the value.|Use this configuration when you want to format the decimal value according the Standard Format 0 (which is the default format) with a specific number of decimal places.<br /><br /> For example, if the value is a US decimal `-76543.21` and you set the **DecimalPlaces** property to `0`, then the value appears as **76,543**. The properties will look like this:<br /><br />`AutoFormatType = 0;`<br />`DecimalPlaces = 0;`|
+|0|Set to the number of decimal places that you want to display for the value.|Use this configuration when you want to format the decimal value according to the Standard Format 0 (which is the default format) with a specific number of decimal places.<br /><br /> For example, if the value is a US decimal `-76543.21` and you set the **DecimalPlaces** property to `0`, then the value appears as **76,543**. The properties look like this:<br /><br />`AutoFormatType = 0;`<br />`DecimalPlaces = 0;`|
 
 ## Setting the AutoFormatExpression property
 
@@ -130,10 +132,10 @@ With the following setup, the **DecimalPlaces** property is ignored.
 
 |AutoFormatType Property|AutoFormatExpression Property|Usage Description|  
 |---------------------------|---------------------------|----------------------|  
-|1|Set to return a currency code, such as USD or IDR. The blank currency code `''` denotes LCY and is the default value. |Use this configuration when you want to format the data as an amount. For example, a sales order will use two decimals when the currency is defined as US dollar and no decimals when the currency is defined as IDR \(Indonesian rupiah\). For example:<br /><br />`AutoFormatType = 1;`<br />`AutoFormatExpression = 'IDR';`|  
+|1|Set to return a currency code, such as USD or IDR. The blank currency code `''` denotes LCY and is the default value. |Use this configuration when you want to format the data as an amount. For example, a sales order uses two decimals when the currency is defined as US dollar and no decimals when the currency is defined as IDR \(Indonesian rupiah\). For example:<br /><br />`AutoFormatType = 1;`<br />`AutoFormatExpression = 'IDR';`|  
 |2|Set to return a currency code such as USD or IDR. The blank currency code `''` denotes LCY and is the default value.|This is similar to the previous configuration where the **AutoFormatType** property is set to `1`, except you use this configuration when you want to format the data as a unit amount.|  
-|10|Set to the property according to the following syntax:<br /><br /> `'[SubType][,<currencycode or expression>[,<PrefixedText>]]'`<br /><br /> `SubType` can be `1`, `2`, another number, or omitted: <br /><br /> `1` sets the value to an amount type (see 1 above). `2` sets the value to a unit amount type (see 2 above). The syntax for these two settings is: <br /><br /> `'SubType,<currencycode[,<PrefixedText>]'`<br /><br /> If you omit the subtype or use a number other than 1 or 2, the syntax is: <br> <br> `'<CustomNumber>, <expression>[,<PrefixedText>]'`<br /><br /> where `<expression>` sets the precision and one of the standard formats. For more information, see [Standard Formats](#StandardFormats).<br /><br />|Use SubType `1` to add the currency symbol and use the amount type precision. You use SubType `2` for unit amount precision. For example, set the property to `'1,USD'` to add the **$** symbol, like **$543.21**.<br><br />`AutoFormatType = 10;`<br />`AutoFormatExpression = '1,USD';` <br /><br />If you omit the SubType, you can use this configuration to customize the format based on one of the standard formats. This option enables you to specify characters before and after the decimal value, such as currency signs **$** and percent **%**. <br><br> For example, if you want to prefix the decimal value with a **$**, include a thousand separator, and have a maximum of two decimal places, such as **$76,453.21**, then you can set the properties to:  <br /><br />`AutoFormatType = 10;`<br />`AutoFormatExpression = '$<precision, 2:2><standard format, 0>'`<br><br> If you want to display the decimal value as a percentage, then you can add `%` at the end of the setting. For example: <br /><br />`AutoFormatType = 10;`<br />`AutoFormatExpression = '<precision, 1:1><standard format,0>%'`<br><br> When you include a `%` at the end of the setting, then the decimal value is assumed to be the ratio, and the decimal value will be multiplied by 100. For example, a value of 0.98 will be formatted to **98%**.|
-|11|Set the property to the standard format as explained below. For example: <br><br>`'<Precision,3:3><Standard Format,0>'`|Use this option when you want full control over the formatting. The format string will be applied exactly as specified in the AutoFormatExpr property.|  
+|10|Set to the property according to the following syntax:<br /><br /> `'[SubType][,<currencycode or expression>[,<PrefixedText>]]'`<br /><br /> `SubType` can be `1`, `2`, another number, or omitted: <br /><br /> `1` sets the value to an amount type (see 1 above). `2` sets the value to a unit amount type (see 2 above). The syntax for these two settings is: <br /><br /> `'SubType,<currencycode[,<PrefixedText>]'`<br /><br /> If you omit the subtype or use a number other than one or 2, the syntax is: <br> <br> `'<CustomNumber>, <expression>[,<PrefixedText>]'`<br /><br /> where `<expression>` sets the precision and one of the standard formats. For more information, see [Standard Formats](#StandardFormats).<br /><br />|Use SubType `1` to add the currency symbol and use the amount type precision. You use SubType `2` for unit amount precision. For example, set the property to `'1,USD'` to add the **$** symbol, like **$543.21**.<br><br />`AutoFormatType = 10;`<br />`AutoFormatExpression = '1,USD';` <br /><br />If you omit the SubType, you can use this configuration to customize the format based on one of the standard formats. This option enables you to specify characters before and after the decimal value, such as currency signs **$** and percent **%**. <br><br> For example, if you want to prefix the decimal value with a **$**, include a thousand separator, and have a maximum of two decimal places, such as **$76,453.21**, then you can set the properties to:  <br /><br />`AutoFormatType = 10;`<br />`AutoFormatExpression = '$<precision, 2:2><standard format, 0>'`<br><br> If you want to display the decimal value as a percentage, then you can add `%` at the end of the setting. For example: <br /><br />`AutoFormatType = 10;`<br />`AutoFormatExpression = '<precision, 1:1><standard format,0>%'`<br><br> When you include a `%` at the end of the setting, then the decimal value is assumed to be the ratio, and the decimal value will be multiplied by 100. For example, a value of 0.98 will be formatted to **98%**.|
+|11|Set the property to the standard format as explained below. For example: <br><br>`'<Precision,3:3><Standard Format,0>'`|Use this option when you want full control over the formatting. The format string is applied exactly as specified in the AutoFormatExpr property.|  
 
 <!--
 The following table describes how to set each of the properties to achieve the format that you want. 
@@ -148,7 +150,7 @@ The following table describes how to set each of the properties to achieve the f
 -->
 ## Precision
 
-The precision determines the minimum and maximum number of decimal points for values. The precision takes the format `<precision,minimum:maximum>`. For example, `<precision,minimum:maximum>` sets the data with a minimum of 2 and a maximum of 3 decimal places.
+The precision determines the minimum and maximum number of decimal points for values. The precision takes the format `<precision,minimum:maximum>`. For example, `<precision,minimum:maximum>` sets the data with a minimum of 2 and a maximum of three decimal places.
 
 ##  <a name="StandardFormats"></a> Standard formats
 
