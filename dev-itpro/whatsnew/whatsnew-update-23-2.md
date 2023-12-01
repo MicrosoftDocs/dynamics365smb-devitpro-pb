@@ -30,12 +30,13 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 |-------------|--------------|--------------|
 | Denmark | Notification and registration with Nemhandel | Based on new bookkeeping act, companies will be notified if they are not registered with Nemhandel with the link for registration. Companies must populate their CVR number in the Registration Number field on the Company Information page. This functionality will be run by default from January 1st. |
 | Denmark | E-submission of VAT return | Companies can use electronical submission of VAT returns through the connection with Skattestyrelsen via their APIs. To use this feature, companies must populate their CVR number in the Registration Number field on the Company Information page.|
-| Denmark | N | .|
-| Denmark | N | .|
-| Denmark | N | .|
-| Denmark | N | .|
-| Denmark | N | .|
-| Denmark | N | .|
+| Denmark | Suspending company deleting | Based on new bookkeeping act, companies cannot delete production data. All production companies (Production environment only) already registered with Nemhandel cannot be deleted from the system.|
+| Denmark | Import SAF-T file | Companies can import SAF-T files and keep the attached in the system if required.|
+| Denmark | E-invoicing with Nemhandel | Companies can use e-invoicing with Nemhandel connected via certified access points. Both OIOUBL and PEPPOL formats are supported. This functionality is extension of new E-documents framework. |
+| Denmark | Enforcing digital vouchers | Companies can choose to enable blocking of document or journal posting if the attachment is not provided to keep full audit trail. Administrator can set different rules for different types of documents. In Denmark, this feature will enforce mandatory attachment for Purchase and Sales documents from July 1st based on new bookkeeping act. |
+| Denmark | E-Documents Connector with External Endpoints | New app has been built on a top of new E-documents framework. Now users can add the endpoint(s) and connect with 3rd party access point service providers, after getting credentials from them. |
+| Denmark | PEPPOL format in E-documents | New app has been built on a top of new E-documents framework. Now users can add the endpoint(s) and connect with 3rd party access point service providers, after getting credentials from them.
+|
 
 
 ## Release Plan
