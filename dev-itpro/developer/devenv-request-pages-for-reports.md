@@ -44,8 +44,9 @@ Defining the `RequestFilterFields` property in the `dataitem()` part of the repo
 ```AL
 report 50103 "Customer List"
 {
-    CaptionML = ENU = 'Customer List';
-    RDLCLayout = 'Customer List Report.rdl'; // if Word use WordLayout property
+    // report properties
+    ...
+
     dataset
     {
         dataitem(Customer; Customer)
@@ -72,7 +73,9 @@ For data items and table elements whose source table contains calculated fields,
 
 ## Defining a `requestpage` section
 
-On reports, in addition to defining the filter options by setting the `RequestFilterFields` property, you can add a `requestpage` section. In this section, you can set the [SaveValues](properties/devenv-savevalues-property.md) property to `true` in order to save the values that the end user enters on the request page. When the report is run again, the end user will have the option to use previously defined filters. You can also add a `layout` to the request page, specifying an **Options** section to perform checks.
+On reports, in addition to defining the filter options by setting the `RequestFilterFields` property, you can add a `requestpage` section. In this section, you can set the [SaveValues](properties/devenv-savevalues-property.md) property to `true` in order to save the values that the end user enters on the request page. When the report is run again, the end user will have the option to use previously defined filters. 
+
+You can also add a `layout` to the request page, specifying an **Options** section to perform checks.
 
 > [!NOTE]  
 > You can use the `SaveValues` property together with the [AllowScheduling](properties/devenv-allowscheduling-property.md) property to set up the request page to support multiple previews. When both properties are `true`, users can preview the report from the request page as many times as the like, without having the request page close. This capability lets users change filters, see what the generated report will look like, and then try again. If either property is set to **false**, the report won't support multiple previews and the request page closes once the user previews the report. In this case, the request page includes a **Preview and Close** button instead of **Preview**.
@@ -145,6 +148,10 @@ Starting with Business Central 2023 release wave 1 (version 22), you can set the
 * Request page-level configuration of report-specific article
 
 For more information about configuring context-sensitive help, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md). 
+
+## Saving settings on the request page
+When running reports, users can use one or more *saved settings* that they can apply to the report from the request page. For more information on this topic, see [Manage Saved Settings for Reports and Batch jobs](/dynamics365/business-central/reports-saving-reusing-settings.md)
+
 
 ## Request page and preview triggers and operations
 
