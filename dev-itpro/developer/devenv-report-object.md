@@ -50,6 +50,13 @@ report ObjectId ReportName
 }
 ```
 
+## Snippet support
+
+Typing the shortcut `treport` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
+[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
+
 ## Report layouts
 You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are three types of report layouts; client report definition, also called RDL layouts, Word layouts, and Excel layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word and are based on a Word document that includes a custom XML part representing the report dataset. Excel layouts are created in Excel based on the report dataset, utilizing the Excel capabilities such as sliders, diagrams, charts, pivot tables, and PowerQuery. One report can contain multiple report layout definitions. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
 
@@ -67,11 +74,6 @@ In the following, you can read about properties of the different layout types.
 
 For more information about labels, see [Working with labels](devenv-using-labels.md).
 
-## Snippet support
-
-Typing the shortcut `treport` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
-
-[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Report example
 
