@@ -12,7 +12,19 @@ ms.topic: conceptual
 
 # Substituting Reports
 
-In versions prior to [!INCLUDE[prod_short](includes/prod_short.md)] 2021 release wave 1 extensibility is not supported for report objects. Therefore, if you want to make any changes to the dataset or the layout of a base application report, you must create a new version of the report and apply the changes on the new object. Then you can override the base report with your own customized version by subscribing to the **OnAfterSubstituteReport** event published by **Codeunit 44 – ReportManagement**. From [!INCLUDE[prod_short](includes/prod_short.md)] 2021 release wave 1, report extensi
+In versions prior to [!INCLUDE[prod_short](includes/prod_short.md)] [!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)], extensibility is not supported for report objects. Therefore, if you want to make any changes to the dataset or the layout of a base application report, you must create a new version of the report and apply the changes on the new object. Then you can override the base report with your own customized version by subscribing to the **OnAfterSubstituteReport** event published by **Codeunit 44 – ReportManagement**. 
+
+From [!INCLUDE[prod_short](includes/prod_short.md)] [!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)], it is possible to extend reports. With a report extension object, you can extend existing report objects, similar to how you extend tables and pages. With report extensions, you can extend an existing report by:
+
+- Adding columns to existing data items in the report dataset
+- Adding new data items
+- Adding trigger implementations
+- Adding to request pages
+- Adding more report layouts, either to reflect new fields that are added with an extension, or simply adding new report layouts on an existing report dataset.
+
+Using a report extension, you might not need to use the report substitution feature.
+
+For more information on report extensibility, see [Report extension object](./devenv-report-ext-object.md).
 
 ## How to substitute a report for another report
 
