@@ -56,6 +56,18 @@ Typing the shortcut `treport` will create the basic layout for a report object w
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
+## Report properties
+You can control the way the AL runtime and client works on the report by setting properties on the report object. Some popular properties are 
+
+- AdditionalSearchTerms (helps users when searching for the report in Tell-Me search),
+- Caption (the report title as shown on request pages, Tell-me search, Report/Role explorer, and when users book the report to their role centers),
+- UsageCategory (determines how the report is shown in Report/Role explorer), 
+- AllowScheduling (allows the report to be run in the background), 
+- DataAccessIntent (allows the AL runtime to read data from a secondary database, if present).
+
+
+For a list of all properties that you can set on the report object, see the AL language reference article [Report, Report Fields, and Report Extension Properties](properties/devenv-report-property-overview)
+
 
 ## Report layouts
 You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are three types of report layouts; client report definition, also called RDL layouts, Word layouts, and Excel layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word and are based on a Word document that includes a custom XML part representing the report dataset. Excel layouts are created in Excel based on the report dataset, utilizing the Excel capabilities such as sliders, diagrams, charts, pivot tables, and PowerQuery. One report can contain multiple report layout definitions. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
