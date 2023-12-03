@@ -94,9 +94,7 @@ The following example is a report that prints the list of customers. The report 
 ```AL
 report 50103 "Customer List"
 {
-  CaptionML=ENU='Customer List';
-  DefaultLayout = RDLC; // if Word use WordLayout property
-  RDLCLayout = 'MyRDLReport.rdl';
+  Caption = 'Customer List';
 
   dataset
   {
@@ -260,8 +258,28 @@ report 50103 "Customer List"
 
   labels
   {
-      LabelName = 'Label Text', Comment = 'Foo', MaxLength = 999, Locked = true;
+      Label1 = 'Label Text', Comment = 'Foo', MaxLength = 999, Locked = true;
   }
+
+  rendering 
+  {
+    layout(LayoutExcelPivot)
+    {
+      Type = Excel;
+      Caption = 'Customer list (analyze)';
+      Summary = 'Customer list for analysis in Excel';
+      LayoutFile = 'CustomerListExcel.xlsx';
+    }
+
+    layout(CustomerListPrintLayout)
+    {
+      Type = RDLC;
+      Caption = 'Customer list (print)';
+      Summary = 'Customer list in print layout';
+      LayoutFile = 'CustomerListRDL.rdl';
+    }
+  } 
+
 
   trigger OnPreReport();
   var
