@@ -66,7 +66,7 @@ You can control the way the AL runtime and client works on the report by setting
 - DataAccessIntent (allows the AL runtime to read data from a secondary database, if present).
 
 
-For a list of all properties that you can set on the report object, see the AL language reference article [Report, Report Fields, and Report Extension Properties](properties/devenv-report-property-overview)
+For a list of all properties that you can set on the report object, see the AL language reference article [Report, Report Fields, and Report Extension Properties](properties/devenv-report-property-overview.md)
 
 
 ## Report layouts
