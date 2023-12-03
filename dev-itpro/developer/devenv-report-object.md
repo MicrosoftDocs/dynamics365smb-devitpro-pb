@@ -95,6 +95,10 @@ The following example is a report that prints the list of customers. The report 
 report 50103 "Customer List"
 {
   Caption = 'Customer List';
+  AdditionalSearchTerms = 'Sales, Sold';
+  UsageCategory = ReportsAndAnalysis;
+  AllowScheduling = true;
+  DataAccessIntent = ReadOnly;
 
   dataset
   {
