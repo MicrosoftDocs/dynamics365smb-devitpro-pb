@@ -28,6 +28,28 @@ If you want to modify an existing report, for example, add new columns, add to t
 
 [!INCLUDE[intelli_shortcut](includes/query_as_a_report_datasource.md)]
 
+## Report syntax
+A report object consists of properties, a dataset section and optionally sections for request page, layouts, and code. The order of where sections appear matter, the following example illustrates the ordering:
+
+```AL
+report ObjectId ReportName
+{
+    // report properties such as 
+    UsageCategory = ReportsAndAnalysis;
+    ApplicationArea = All;
+
+    dataset {}
+   
+    // requestpage section is optional  
+    requestpage {} 
+
+    // rendering section is optional, but recommended for reports that have a layout
+    rendering {} 
+    
+    // optionally, add AL code here
+}
+```
+
 ## Report layouts
 You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are three types of report layouts; client report definition, also called RDL layouts, Word layouts, and Excel layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word and are based on a Word document that includes a custom XML part representing the report dataset. Excel layouts are created in Excel based on the report dataset, utilizing the Excel capabilities such as sliders, diagrams, charts, pivot tables, and PowerQuery. One report can contain multiple report layout definitions. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
 
