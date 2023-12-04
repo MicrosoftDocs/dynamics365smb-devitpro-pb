@@ -37,23 +37,21 @@ We strongly advise that you don't modify **Permissions** related tables, because
 
    :::image type="content" source="../developer/media/cloud-migration-change-replication.svg" alt-text="Shows a screenshot of the page for changing how table data replicates for to the cloud.":::
 
- Each table is listed by its name, company, and ID, plus the following fields that specify the how its data will be migrated: 
+   Each table is listed by its name, company, and ID, plus the following fields that specify the how its data will be migrated: 
  
    |Field|Description|
    |-|-|
-   |Replicate data|If this check box is selected, then the table and its data are included in the migration to the online tenant. If this check box is cleared, the table and its data are excluded from the cloud migration  | 
+   |Replicate data|If this check box is selected, then the table and its data are included in the migration to the online tenant. If this check box is cleared, the table and its data are excluded from the cloud migration., | 
    |Preserve the cloud data|If the check box is selected, then a delta sync is done between the on-premises and online table. Data already in the online table remains and only changes in the on-premises table from the last sync are replicated online.|
 
-
-
-1. To filter the list and find specific tables, use the **Company Name** and **Table Name** fields 
+   Use the **Company Name** and **Table Name** fields to filter the list and find specific tables.
 
    |Field|Description|
    |-|-|
    |Company Name|Select the company you want to filter on or select *All** to filter on all companies that are included in the cloud migration. Select **Per database tables** to filter on only tenant-level tables that on aren't specific to a company.|
    |Table Name|Find tables whose names contain the text that you enter, making it easier to find the related tables.|
 
-1. To change how data is replicated for tables, select thuse the following actions
+1. To change how data is replicated for a table, select the table in the list, then thuse the following actions
 
 
 
