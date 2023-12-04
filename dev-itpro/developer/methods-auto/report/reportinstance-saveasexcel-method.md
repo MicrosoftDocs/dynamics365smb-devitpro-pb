@@ -44,29 +44,29 @@ The path and the name of the file that you want to save the report as. The path 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use the SaveAsExcel method on the global Report object and on Report variables. If, at design time, you do not know the specific report that you want to run, then use the global Report object and specify the report number in the *Number* parameter. If you do know which report you want to run, then create a Report variable, set the Subtype of the variable to a specific report, and use this variable when you call the SaveAsExcel method.  
+You can use the SaveAsExcel method on the global Report object and on instances of a Report variable. If, at design time, you do not know the specific report that you want to run, then use the static version of the method: [Report.SaveAsExcel(Integer, Text [, var Record])](./report-saveasexcel-method.md). 
 
- When you call the SaveAsExcel method, the report is generated and saved to "*FileName*." The request page is not shown.  
+When you call the SaveAsExcel method, the report is generated and saved to the file specified in "*FileName*." The request page is not shown. 
 
- If the destination folder that you specify in *FileName* does not exist, then you get the following error:  
+[!INCLUDE[report_download_file](../../includes/include-report-download-file.md)]
 
- **The specified path is invalid.**  
+### Error conditions  
+The method can fail in the following three ways:
+- [!INCLUDE[report_saveas_error_list_folder_not_exists](../../includes/include-report-saveas-error-list-folder-not-exists.md)]
+- [!INCLUDE[report_saveas_error_list_file_used](../../includes/include-report-saveas-error-list-file-used.md)]
+- [!INCLUDE[report_saveas_error_list_file_permission](../../includes/include-report-saveas-error-list-file-permission.md)]
 
- If the file that you specify in *FileName* is being used, then you get the following error:  
 
- **An I/O exception occurred during the operation.**  
-
- If the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] process does not have permission to write to the file that you specify in *FileName*, then you get the following error:  
-
- **Either the caller does not have the required permission or the specified path is read-only.**  
+[!INCLUDE[io_errors](../../includes/include-io-errors.md)]
 
 ## Example  
- This example shows how to use the SaveAsExcel method to save the Excel workbook to the  [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and then download the file to a  computer that is running the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] application. 
+This example shows how to use the SaveAsExcel method to generate the report in the [!INCLUDE[prod_short](../../includes/prod_short.md)] server and then download the Excel workbook file to the server.
  
-```  
+```AL
 var
+    MyReport: Report MyReport
     TempFile: File;
-    Name: Text[250];
+    FileNameAndPath: Text[250];
     NewStream: InStream;
     ToFile: Text[250];
     ReturnValue: Boolean;
@@ -75,17 +75,20 @@ begin
     TempFile.TextMode(False);  
     // Specify that you can write to TempFile.  
     TempFile.WriteMode(True);  
-    Name := 'C:\Temp\TempReport.xls';  
+
+    FileNameAndPath := 'C:\Temp\TempReport.xlsx';  
+
     // Create and open TempFile.  
-    TempFile.Create(Name);  
+    TempFile.Create(FileNameAndPath);  
     // Close TempFile so that the SaveAsExcel method can write to it.  
     TempFile.Close;  
     
-    Report.SaveAsExcel(406,Name);  
+    MyReport.SaveAsExcel(FileNameAndPath);  
     
-    TempFile.Open(Name);  
+    TempFile.Open(FileNameAndPath);  
     TempFile.CreateInStream(NewStream);  
-    ToFile := 'Report.xls';  
+
+    ToFile := 'MyReport.xlsx';  
     
     // Transfer the content from the temporary file on the  
     // server to a file on the client.  
@@ -93,15 +96,16 @@ begin
       NewStream,  
       'Save file to client',  
       '',  
-      'Excel File *.xls| *.xls',  
-      ToFile);  
+      'Excel File *.xlsx| *.xlsx',  
+      ToFile
+    );  
     
     // Close the temporary file.  
     TempFile.Close();  
 end;
 ```  
 
- You can create an action on a page and set the action to run this code. When you run the action, the **Export File** dialog box opens. Choose **Save** to save the file to the client.  
+You can create an action on a page and set the action to run this code. When you run the action, the **Export File** dialog box opens. Choose **Save** to save the file to the client.  
 
 ## See Also
 [Report Data Type](report-data-type.md)  
