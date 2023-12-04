@@ -111,15 +111,6 @@ requestpage
                 }
             }
         }
-
-        trigger OnOpenPage()
-        begin
-            if PostingDateReq = 0D then
-                PostingDateReq := WorkDate;
-        end;
-
-        var
-            PostingDateReq: Date;
     }
 ...
 ```
