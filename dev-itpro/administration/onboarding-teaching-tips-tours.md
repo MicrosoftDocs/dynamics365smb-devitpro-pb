@@ -112,7 +112,7 @@ Reports must be documented because they help users take data-driven decisions an
 
 The following illustration shows a report request page teaching tip that explains what the report is about. The teaching tip renders in the lower left corner.  
 
-:::image align="center" type="content" source="../media/onboarding-teaching-tip-report.png" alt-text="A report in Business Central with a request page teaching tip at the lower left corner.":::
+:::image type="content" source="../media/onboarding-teaching-tip-report.png" alt-text="A report in Business Central with a request page teaching tip at the lower left corner.":::
 
 
 ## <a name="flow"></a> Teaching tips flow
