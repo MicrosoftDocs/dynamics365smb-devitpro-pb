@@ -90,6 +90,8 @@ The following methods are available on instances of the Report data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## See Also  
-[Report Object](../../devenv-report-object.md)  
+[Report object properties (AL Language Reference)](../../properties/devenv-report-properties.md)   
+[Report, Report Dataitem, and Report Extension Properties (AL Language Reference)](../../properties/devenv-report-property-overview.md)   
+[Report overview](../../devenv-reports.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
