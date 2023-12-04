@@ -89,8 +89,8 @@ The following properties all apply to the Report object, only some of these prop
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## See Also  
-[Report datatype (AL Language Reference)](../methods-auto/report/report-data-type.md)   
-[Report object properties (AL Language Reference)](devenv-report-properties.md)   
+[Report datatype (AL language reference)](../methods-auto/report/report-data-type.md)   
+[Report object properties (AL language reference)](devenv-report-properties.md)   
 [Report overview](../devenv-reports.md)   
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting started with AL](../devenv-get-started.md)  
+[Developing extensions](../devenv-dev-overview.md)  
