@@ -3,7 +3,7 @@ title: "Report Data Type"
 description: "Is used to display, print, or process information from a database."
 ms.author: solsen
 ms.custom: na
-ms.date: 01/23/2023
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Is used to display, print, or process information from a database.
 
 
+## Static methods
 The following methods are available on the Report data type.
 
 
@@ -43,6 +44,7 @@ The following methods are available on the Report data type.
 |[WordLayout(Integer, InStream)](report-wordlayout-method.md)|Gets the Word report layout that is used on a report and returns it as a data stream.|
 |[WordXmlPart(Integer [, Boolean])](report-wordxmlpart-method.md)|Returns the report data structure as structured XML that is compatible with Microsoft Word custom XML parts. The method has an instance call and a static call. The following code shows the syntax of the WORDXMLPART function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
 
+## Instance methods
 The following methods are available on instances of the Report data type.
 
 |Method name|Description|
