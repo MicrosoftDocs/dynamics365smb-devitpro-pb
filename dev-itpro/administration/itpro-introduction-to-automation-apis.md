@@ -39,7 +39,7 @@ Content-type: application/json
 The {companyId} must be the ID of a valid company on the tenant. Issue a [GET automationCompany](api/dynamics_automationCompany_get.md) request to fetch existing companies. 
 
 > [!NOTE]  
-> The company which is created will not be initialized.
+> The company, which is created won't be initialized.
 
 To rename a company, issue a [PATCH automationCompanies](/dynamics365/business-central/dev-itpro/administration/resources/dynamics_automationcompany).
 
@@ -248,4 +248,5 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 [User group](resources/dynamics_usergroup.md)  
 [User group member](resources/dynamics_usergroupmember.md)  
 [User group permission](resources/dynamics_usergrouppermission.md)  
-[User permission](resources/dynamics_userpermission.md)
+[User permission](resources/dynamics_userpermission.md)  
+[Control Access to Business Central Using Security Groups](/dynamics365/business-central/ui-security-groups)  
