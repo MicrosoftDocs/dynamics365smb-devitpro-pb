@@ -92,7 +92,7 @@ Viktor will now add labels to the report. You define the labels in the `label` p
 ## Making the report discoverable and understandable
 The [!INCLUDE[prod_short](includes/prod_short.md)] client includes the **Tell me** feature that lets users find objects by entering search terms. Victor wants the new report to be discoverable to users in **Tell me**, so he sets the [UsageCategory property](./properties/devenv-usagecategory-property.md) on the report. 
 
-He also adds a request page section specifying the [AboutTitle Property](./properties/devenv-abouttitle-property.md) and the [AboutText Property](./properties/devenv-abouttext-property.md) to help explain the logic behind the report for his users. 
+He then adds a request page section specifying the [AboutTitle Property](./properties/devenv-abouttitle-property.md) and the [AboutText Property](./properties/devenv-abouttext-property.md) to help explain the logic behind the report for his users. This adds a teaching tip on the report.
 
 To help users understand how to use the report, Viktor also adds a help link to the 
 [ContextSensitiveHelpPage property](./properties/devenv-contextsensitivehelppage-property.md) in case the user selects the *Learn more* links in the UI of [!INCLUDE[prod_short](includes/prod_short.md)]. He also checks if the [contextSensitiveHelpUrl](../help/context-sensitive-help.md) property has been defined in the app.json (it has).
