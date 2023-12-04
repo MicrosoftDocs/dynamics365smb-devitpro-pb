@@ -1,9 +1,9 @@
 ---
-title: "Report Dataset"
-description: "The dataset determines the data extracted to print or display the information from the database."
+title: Report dataset
+description: The dataset determines the data extracted to print or display the information from the database.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Defining a Report Dataset
+# Defining a report dataset
 
 You use a report object in the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] to define the data model, or dataset, of a report. The dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. For more information, see [Report Object](devenv-report-object.md).
 
@@ -31,6 +31,13 @@ Typically, data items and columns correspond to fields in a table. When the repo
 
 You can also extend a dataset from an existing report, to add more columns for example. For more information, see [Report Extension Object](devenv-report-ext-object.md).
 
+## Formatting field values in report datasets
+
+It's often useful to format data in the report dataset to reduce the complexity of the report layout. For example, if a decimal field in a table has precision of five digits, the same level of precision might not be needed in the report. Or maybe you want to format dates or currencies in a different way in the report as they appear on the page in [!INCLUDE[prod_short](./includes/prod_short.md)].
+
+For more information, see [Formatting field values in report datasets](devenv-format-report-field-data.md).
+
+
 ## Using a query in a dataset definition
 
 Instead of building the report dataset directly from tables, you can also use a query object. To achieve this, you must
@@ -39,11 +46,11 @@ Instead of building the report dataset directly from tables, you can also use a 
 - Use an Integer in the data item definition
 - Add OnPreDataItem and OnAfterGetRecord triggers 
 
-See an example of how to do this below.
+See an example of how to do this in the next section.
 
 ## Snippet support
 
-Typing the shortcut `treport` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code. 
+Typing the shortcut `treport` creates the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code. 
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
