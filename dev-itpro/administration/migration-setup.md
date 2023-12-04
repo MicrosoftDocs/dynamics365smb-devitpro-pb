@@ -122,6 +122,6 @@ If you run into problems with the setup, go to [Cloud migration setup troublesho
 
 ## Next steps
 
-- [Change how data is replicated to Business Central online](cloud-migration-change-replication.md)
+- [Change how data is replicated to Business Central online](cloud-migration-change-replication.md) (optional)
 - Once the setup guide is complete and data migration is activated, the initial data migration ready to be run from the **Cloud Migration Management** page whenever you want. Go to [Run Data Migration](migration-data-replication.md).
 
