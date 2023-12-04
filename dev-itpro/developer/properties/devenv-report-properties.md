@@ -1,8 +1,8 @@
 ---
-title: Report Object Properties
+title: Report object properties
 description: This topic lists report properties that apply to controls of a report object.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/04/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -152,8 +152,8 @@ This article lists properties of the report object.
 -->
 
 ## See Also  
-[Report datatype (AL Language Reference)](../methods-auto/report/report-data-type.md)   
-[Report, Report Dataitem, and Report Extension Properties (AL Language Reference)](../properties/devenv-report-property-overview.md)   
+[Report datatype (AL language reference)](../methods-auto/report/report-data-type.md)   
+[Report, report data item, and report extension properties (AL language reference)](../properties/devenv-report-property-overview.md)   
 [Properties](devenv-properties.md)  
-[Table and Table Extension Properties](devenv-table-properties.md)  
-[Page and Page Extenstion Properties Overview](devenv-page-property-overview.md)
+[Table and table extension properties](devenv-table-properties.md)  
+[Page and page extenstion properties overview](devenv-page-property-overview.md)
