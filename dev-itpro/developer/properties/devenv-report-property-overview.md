@@ -1,5 +1,5 @@
 ---
-title: "Report, Report Dataitem, and Report Extension Properties"
+title: "Report, report data item, and report extension properties"
 description: "This topic lists properties that apply to the [report object](../devenv-report-object.md), report fields, and [report extension object](../devenv-report-ext-object.md)."
 ms.author: solsen
 ms.custom: na
