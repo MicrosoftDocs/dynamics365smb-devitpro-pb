@@ -789,7 +789,7 @@
 ###### [Create and modify custom report layouts](/dynamics365/business-central/ui-how-create-custom-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ###### [Import and export custom report layouts](/dynamics365/business-central/ui-how-import-and-export-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ###### [Update custom report layouts](/dynamics365/business-central/ui-update-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
-###### [Set the layout used by a report](/dynamics365/business-central/ui-how-change-layout-currently-used-report)
+###### [Set the layout used by a report](/dynamics365/business-central/ui-how-change-layout-currently-used-report?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 #### [Report triggers and operations](developer/devenv-report-triggers.md)
 #### [Substituting a report](developer/devenv-substituting-reports.md)
