@@ -25,7 +25,6 @@ The following methods are available on the Database data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[AlterKey(KeyRef, Boolean)](database-alterkey-method.md)|Alter a table's key in SQL, either disabling or enabling it. Any alteration only pertains to the current transaction and will be reverted at the end of the current transaction. Any alteration will fail if it's called on System or non-SQL based tables. Disabling clustered or unique keys is also not supported and will fail at runtime.|
 |[ChangeUserPassword(Text, Text)](database-changeuserpassword-method.md)|Changes the password for the current user.|
 |[CheckLicenseFile(Integer)](database-checklicensefile-method.md)|Checks a key in the license file of the system.|
 |[Commit()](database-commit-method.md)|Ends the current write transaction.|
