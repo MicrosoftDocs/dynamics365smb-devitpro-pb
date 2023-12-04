@@ -20,27 +20,27 @@ In this article, you learn how to use the **Change how the data is replicated** 
 
 ## Considerations before you start
 
-This is an expert feature. Using this functionality can lead to incorrectly replicated data or losing access to the tenant. The defaults were defined after careful consideration. Make sure that you fully understand the application functionality that you want to change, so that you include or exclude all related tables. 
+This is an expert feature. Using this functionality can lead to incorrectly replicated data or losing access to the tenant. The default settings were defined after careful consideration. Make sure that you fully understand the application functionality that you want to change so that you include or exclude all related tables. 
 
 We strongly advise that you don't modify **Permissions** related tables, because **Permissions** from on-premises and online aren't compatible. We recommend setting up the permissions again by using the online permission sets. Replicating permissions can lead to losing access or to some application features not working properly. If you lose access, delete and create the environment again or use point-in-time restore to the point before replication.
 
 ## Prerequisite
 
+- [Run cloud migration setup](migration-setup.md)
 
 ## Change how data is replicated 
 
-1. Search for and open the **Cloud Migration Management** page
-2. Select **More Options** > **Actions ** > **Change how the data is replicated**.
-3. On the page you can change the way the data is replicated
- 
-  |Field|Description|
-  |-|-|
-  |Include in migration|The table is replicated to the online tenant 
-  |Exclude from migration|The table isn't replicated to the online tenant, which means that no data will be copied. Action can be used on multiple records.|
-  |Preserve data action||
-  |||
+1. Search for and open the **Cloud Migration Management** page.
+2. In the action bar of the **Cloud Migration Management** page, select **...** (Show the rest) >  **More options** > **Actions** > **Change how the data is replicated**.
 
-Include in migration will make sure that the table is replicated to SaaS, Exclude from migration means that no data will be copied. Action can be used on multiple records. 
+   The **Select tables to migrate** page opens to display the tables that are included in the migration for the companies you chose to include in the cloud migration setup. Each table is listed by its name, company, and ID, plus the following fields that specify the how its data will be migrated: 
+ 
+   |Column|Description|
+   |-|-|
+   |Replicate data|If this check box is selected, then the table and its data are replicated to the online tenant. If this check box is cleared, the table and its data aren't replicated. | 
+   |Preserve the cloud data|If the check box is selected, then a delta sync is done between the on-premises and online table. Data already in the online table remains and only differences from the on-premises table is replicated online.|
+
+3. to Include in migration will make sure that the table is replicated to SaaS, Exclude from migration means that no data will be copied. Action can be used on multiple records. 
 Preserve data action will keep the data in the database, if the value is set to false then it will delete the SaaS table before making the initial replication from SaaS. Action can be used on the multiple records
 Reset to default will reset all changes for the selected records to their initial values. 
 Show history can show you the history of changes done with the timestamps so you can see when the change to the properties was made
