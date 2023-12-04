@@ -29,7 +29,8 @@ If you want to modify an existing report, for example, add new columns, add to t
 [!INCLUDE[intelli_shortcut](includes/query_as_a_report_datasource.md)]
 
 ## Report syntax
-A report object consists of properties, a dataset section and optionally sections for request page, layouts, and code. The order of where sections appear matter, the following example illustrates the ordering:
+
+A report object consists of properties, a dataset section, and optionally sections for request page, layouts, and code. The order in which the sections appear matters. The following example illustrates the ordering:
 
 ```AL
 report ObjectId ReportName
@@ -57,9 +58,9 @@ Typing the shortcut `treport` will create the basic layout for a report object w
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Report properties
-You can control the way the AL runtime and client works on the report by setting properties on the report object. Some popular properties are 
+You can control the way the AL runtime and client work on the report by setting properties on the report object. Some popular properties are:
 
-- AdditionalSearchTerms (helps users when searching for the report in Tell-Me search),
+- AdditionalSearchTerms - helps users when searching for the report in Tell Me search. 
 - Caption (the report title as shown on request pages, Tell-me search, Report/Role explorer, and when users book the report to their role centers),
 - UsageCategory (determines how the report is shown in Report/Role explorer), 
 - AllowScheduling (allows the report to be run in the background), 
