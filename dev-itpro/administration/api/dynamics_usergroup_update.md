@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 12/03/2023
 ms.author: solsen
 ---
 
@@ -15,7 +15,7 @@ ms.author: solsen
 # Update userGroup
 
 > [!NOTE]  
-> User groups are replaced with https://learn.microsoft.com/en-us/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/manage-user-permissions-using-security-groups and will be deprecated in version 25. See security group APIs (administration/resources/dynamics_securitygroups).
+> User groups are replaced with [security groups](../../upgrade/deprecated-features-user-groups.md) and will be deprecated in version 25. For more information, see [security group APIs](../resources/dynamics_securitygroups.md).
 
 Updates the properties of an user group object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 

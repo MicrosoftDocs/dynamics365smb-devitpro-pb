@@ -3,7 +3,7 @@ title: "Introduction to automation APIs"
 description: APIs used to hydrate a Dynamics 365 Business Central tenant. Using the automation APIs, companies can be created, extensions installed, permissions assigned, and RapidStart packages applied.
 author: henrikwh
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/03/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

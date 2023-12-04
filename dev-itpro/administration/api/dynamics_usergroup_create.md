@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/05/2021
+ms.date: 12/03/2023
 ms.author: solsen
 ---
 
@@ -15,7 +15,7 @@ ms.author: solsen
 # Create userGroup
 
 > [!NOTE]  
-> User groups are replaced with [security groups](../upgrade/deprecated-features-user-groups) and will be deprecated in version 25. For more information, see [security group APIs](administration/resources/dynamics_securitygroups).
+> User groups are replaced with [security groups](../../upgrade/deprecated-features-user-groups.md) and will be deprecated in version 25. For more information, see [security group APIs](../resources/dynamics_securitygroups.md).
 
 Creates a user group in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
