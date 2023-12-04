@@ -24,7 +24,8 @@ This walkthrough shows you how to design a report from the [!INCLUDE[d365_dev_lo
 - Adding fields to a data item.  
 - Defining properties for the data items.  
 - Adding labels to a report.  
-- Design a client report definition (RDL) report layout in Visual Studio 2019.  
+- Making the report discoverable and understandable.  
+- Design a client report definition (RDL) report layout in Visual Studio.  
 - Setting filters to hide empty rows and fields in a report.  
 - Building and running a report.  
 
@@ -58,7 +59,7 @@ The following illustration shows an example of the second page of the report.
 
 Viktor starts by creating an empty report object by using the AL Language extension in Visual Studio Code. You can use the shortcut `treport` to create the basic layout for a report object.
 
-Viktor sets the [DefaultLayout Property](properties/devenv-defaultlayout-property.md) to **RDLC** to specify that an RDL layout will be used for the report and the [RDLCLayout Property](properties/devenv-rdlclayout-property.md) to `'MyRDLReport.rdl'`, the name of the rdl file that will be used for the layout.
+Viktor defines layout properties in the rendering section of the report, one for a printable version using an RDL layout, and one for a version for analysis using an Excel layout.
 
 Viktor will now design the dataset to display customers and their transaction details. This is defined within the `dataset` part of the report object. 
 
@@ -88,22 +89,27 @@ Finally, Viktor sets the [PrintOnlyIfDetail Property](properties/devenv-printonl
 
 Viktor will now add labels to the report. You define the labels in the `label` part of the report. These labels will be used later as captions.  
 
+## Making the report discoverable and understandable
+The [!INCLUDE[prod_short](includes/prod_short.md)] client includes the **Tell me** feature that lets users find objects by entering search terms. Victor wants the new report to be discoverable to users in **Tell me**, so he sets the [UsageCategory property](./properties/devenv-usagecategory-property.md) on the report. 
+
+He also adds a request page section specifying the [AboutTitle Property](./properties/devenv-abouttitle-property.md) and the [AboutText Property](./properties/devenv-abouttext-property.md) to help explain the logic behind the report for his users. 
+
+To help users understand how to use the report, Viktor also adds a help link to the 
+[ContextSensitiveHelpPage property](./properties/devenv-contextsensitivehelppage-property.md) in case the user selects the *Learn more* links in the UI of [!INCLUDE[prod_short](includes/prod_short.md)]. He also checks if the [contextSensitiveHelpUrl](../help/context-sensitive-help.md) property has been defined in the app.json (it has).
+
+## AL code for this example
+
 The following code exemplifies the code that Viktor has written for the report.
 
 ```AL
 report 50101 "Report for Multiple Tables"
 {
-    //Make the report searchable from Tell me under the Administration category.
-    UsageCategory = Administration;
+    // Make the report searchable from Tell me under the Reports and Analysis category.
+    UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
-    // Use an RDL layout.
-    DefaultLayout = RDLC;
-    // Specify the name of the file that the report will use for the layout.
-    RDLCLayout = 'MyRDLReport.rdl';
 
     dataset
     {
-
         dataitem(Customer; Customer)
         {
             // Sort the table view based on the "No." field.
@@ -123,26 +129,23 @@ report 50101 "Report for Multiple Tables"
             column(Name_Customer; Name)
             {
                 IncludeCaption = true;
-
             }
 
             column(Phone_Customer; "Phone No.")
             {
                 IncludeCaption = true;
-
             }
 
             column(Address_Customer; Address)
             {
                 IncludeCaption = true;
-
             }
 
             column(EMail_Customer; "E-Mail")
             {
                 IncludeCaption = true;
-
             }
+
             dataitem(CustLedger; "Cust. Ledger Entry")
             {
 
@@ -154,127 +157,108 @@ report 50101 "Report for Multiple Tables"
                 column(EntryNo_CustLedgerEntry; "Entry No.")
                 {
                     IncludeCaption = true;
-
                 }
+                
                 column(CustomerNo_CustLedgerEntry; "Customer No.")
                 {
                     IncludeCaption = true;
-
                 }
+
                 column(PostingDate_CustLedgerEntry; "Posting Date")
                 {
                     IncludeCaption = true;
-
                 }
+
                 column(DocumentType_CustLedgerEntry; "Document Type")
                 {
                     IncludeCaption = true;
-
                 }
 
                 column(DocumentNo_CustLedgerEntry; "Document No.")
                 {
                     IncludeCaption = true;
-
                 }
 
                 column(Description_CustLedgerEntry; Description)
                 {
                     IncludeCaption = true;
-
                 }
 
                 column(CurrencyCode_CustLedgerEntry; "Currency Code")
                 {
                     IncludeCaption = true;
-
                 }
 
                 column(Amount_CustLedgerEntry; Amount)
                 {
                     IncludeCaption = true;
-
                 }
 
                 column(OriginalAmtLCY_CustLedgerEntry; "Original Amt. (LCY)")
                 {
                     IncludeCaption = true;
-
                 }
 
                 column(RemainingAmtLCY_CustLedgEntry; "Remaining Amt. (LCY)")
                 {
                     IncludeCaption = true;
-
                 }
 
 
                 dataitem(DetCustLedger; "Detailed Cust. Ledg. Entry")
                 {
-
                     DataItemTableView = sorting("entry no.");
                     DataItemLink = "Cust. Ledger Entry No." = field("Entry No."), "Customer No." = field("Customer No.");
 
                     column(EntryNo_DetailedCustLedgEntry; "Entry No.")
                     {
                         IncludeCaption = true;
-
                     }
 
                     column(EntryType_DetailedCustLedgEntry; "Entry Type")
                     {
                         IncludeCaption = true;
-
                     }
 
                     column(PostingDate_DetailedCustLedgEntry; "Posting Date")
                     {
                         IncludeCaption = true;
-
                     }
 
                     column(DocumentType_DetailedCustLedgEntry; "Document Type")
                     {
                         IncludeCaption = true;
-
                     }
 
                     column(DocumentNo_DetailedCustLedgEntry; "Document No.")
                     {
                         IncludeCaption = true;
-
                     }
 
                     column(AmountLCY_DetailedCustLedgEntry; "Amount (LCY)")
                     {
                         IncludeCaption = true;
-
                     }
 
                     column(TransactionNo_DetailedCustLedgEntry; "Transaction No.")
                     {
                         IncludeCaption = true;
-
                     }
 
                     column(JournalBatchName_DetailedCustLedgEntry; "Journal Batch Name")
                     {
                         IncludeCaption = true;
-
                     }
 
                     column(DebitAmountLCY_DetailedCustLedgEntry; "Debit Amount (LCY)")
                     {
                         IncludeCaption = true;
-
                     }
 
                     column(CreditAmountLCY_DetailedCustLedgEntry; "Credit Amount (LCY)")
                     {
                         IncludeCaption = true;
-
                     }
-
                 }
             }
 
@@ -286,31 +270,26 @@ report 50101 "Report for Multiple Tables"
                 column(DocumentType_SalesHeader; "Document Type")
                 {
                     IncludeCaption = true;
-
                 }
 
                 column(No_SalesHeader; "No.")
                 {
                     IncludeCaption = true;
-
                 }
 
                 column(PostingDate_SalesHeader; "Posting Date")
                 {
                     IncludeCaption = true;
-
                 }
 
                 column(PricesIncludingVAT_SalesHeader; "Prices Including VAT")
                 {
                     IncludeCaption = true;
-
                 }
 
                 column(Amount_SalesHeader; Amount)
                 {
                     IncludeCaption = true;
-
                 }
             }
 
@@ -323,6 +302,35 @@ report 50101 "Report for Multiple Tables"
         Sales_Document_Caption = 'Sales Documents';
         Total_Caption = 'Total';
     }
+
+    requestpage
+    {
+        SaveValues = true;
+
+        AboutTitle = 'Sales by customer report';
+        AboutText = 'This is our new sales report. Use it to follow up with customers on their engagement with us.';
+
+        // Remember to also set contextSensitiveHelpUrl in the app.json
+        ContextSensitiveHelpPage = 'our-app/sales-reports';
+    }
+
+    rendering
+    {
+        layout(RDLCLayout)
+        {
+            Type = RDLC;
+            LayoutFile = './MyRDLReport.rdl';
+            Caption = 'Customer Sales Report (for print)';
+            Summary = 'Layout for the Customer Sales Report that has been optimized for print.';
+        }
+        layout(ExcelLayout)
+        {
+            Type = Excel;
+            LayoutFile = './MyRDLReport.xlsx';
+            Caption = 'Customer Sales Report (for analysis)';
+            Summary = 'Layout for the Customer Sales Report that has been optimized for analysis in Excel.';
+        }
+    }
 }
 ```  
 
@@ -330,7 +338,7 @@ report 50101 "Report for Multiple Tables"
 
 Next, Viktor will design an RDL layout for the report by using Visual Studio Report Designer. Viktor will set properties for the report and the report elements, format the report, and then add the data to the report.  
 
-#### To design the RDL layout for the report
+### To design the RDL layout for the report
 
 1. Build the extension (Ctrl+Shift+B) to generate the `MyRDLReport.rdl` file, and then open the file with Visual Studio 2019.
 
@@ -353,7 +361,7 @@ Next, Viktor will design an RDL layout for the report by using Visual Studio Rep
 
      Viktor will set the properties of the **List** control to hold the dataset, group the data by Customer No. and set up how the groups should be displayed.  
 
-#### To set the list control properties  
+### To set the list control properties  
 
 1. Select the **List** control, right-click the shaded border to the left of the **List** control, and then choose **Tablix Properties**.  
 
@@ -367,7 +375,7 @@ Next, Viktor will design an RDL layout for the report by using Visual Studio Rep
 
 Viktor is now ready to add the customer data. The table will display one customer at a time, therefore Viktor must put all the fields into table header rows. The table data and footer rows will be disabled.  
 
-#### To add customer data  
+### To add customer data  
 
 1.  From the **Toolbox** pane, drag a **Table** control into the **List** control and resize the table to about the half the width of the list control. This table will contain the customer data.  
 
@@ -540,7 +548,7 @@ Viktor will now add the data for the customer ledger entries and detailed ledger
 
      Viktor will now hide all empty cells and add the totals to the footer row. To hide empty cells Viktor will add a filter that selects rows that have \[EntryNo\] value that is greater than zero.  
 
-#### To hide empty cells and add totals  
+### To hide empty cells and add totals  
 
 1.  Select the first row, right-click the shaded border to the left of the row, choose **Row Group**, and then choose **Group Properties**.  
 
@@ -634,7 +642,7 @@ The next step is to add the data from the **Sales Header** table.
 
      Viktor will now set a filter that hides empty rows.  
 
-#### To set a filter hide empty row  
+### To set a filter hide empty row  
 
 1.  Select any row from this table, right-click the shaded border to the left of the table, and then choose **Tablix Properties**.  
 
@@ -660,9 +668,13 @@ Viktor will run the report to view how it looks like. For this, do the following
 
      If you choose the **Preview** button on the request page, the report will be displayed with the RLD layout created.
 
+## Other tasks to consider
 Viktor can now add advanced features to the report such as displaying the company name and logo on every page on the report. Viktor might also want to add features that enable users to apply filters on the request page.  
+
+To make the report fully discoverable for users, Victor might also add actions that runs the report to pages such as the customer list and also add links to the report to appropriate role centers.
 
 ## See Also  
 [Report Overview](devenv-reports.md)  
 [Defining a Report Dataset](devenv-report-dataset.md)  
+[Using request pages with reports](devenv-request-pages-for-reports.md)   
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)
