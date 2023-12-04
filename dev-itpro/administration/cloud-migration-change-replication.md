@@ -41,29 +41,16 @@ We strongly advise that you don't modify **Permissions** related tables, because
  
    |Field|Description|How to change|
    |-|-|-|
-   |Replicate data|If this check box is selected, then the table and its data are included in the migration to the online tenant. If this check box is cleared, the table and its data are excluded from the Include in cloud migration. | To include a table in the cloud migration, select the table in the list, then select **Include in migration** action. To exclude a table, select the table in the list, select the arrowhead next to the **Include in migration** action, then select **Exclude from migration**.|
-   |Preserve the cloud data|If the check box is selected, then a delta sync is done between the on-premises and online table. Data already in the online table remains and only changes in the on-premises table from the last sync are replicated online. If the checnkbox is cleared, the all data in table in the cloud will be deleted before copying the data from on-premises database.|To preserve data in the table in the cloud, select the table in the list, then select the **Preserve data** action. To delete the data in the table in the cloud during replication, select the table in the list, select the arrowhead next to the **Preserve data** action, then select **Clear data before migration**.|
+   |Replicate data|If this check box is selected, then the table and its data are included in the migration to the online tenant. If this check box is cleared, the table and its data are excluded from cloud migration. | To include a table in the cloud migration, select the table in the list, then select **Include in migration** action. To exclude a table, select the table in the list, select the arrowhead next to the **Include in migration** action, then select **Exclude from migration**. Use the <kbd>Shift</kbd> key to change more than one table at a time.|
+   |Preserve the cloud data|If the check box is selected, then a delta sync is done between the on-premises and online table. Data already in the online table remains and only changes in the on-premises table from the last sync are replicated online. If the checnkbox is cleared, the all data in table in the cloud will be deleted before copying the data from on-premises database.|To preserve data in the table in the cloud, select the table in the list, then select the **Preserve data** action. To delete the data in the table in the cloud during replication, select the table in the list, select the arrowhead next to the **Preserve data** action, then select **Clear data before migration**. Use the <kbd>Shift</kbd> key to change more than one table at a time.|
 
-   To change the settings for a table, use the 
-
-   Use the **Company Name** and **Table Name** fields to filter the list and find specific tables.
+   Use the **Company Name** and **Table Name** fields to filter the list and help you find specific tables.
 
    |Field|Description|
    |-|-|
    |Company Name|Select the company you want to filter on or select *All** to filter on all companies that are included in the cloud migration. Select **Per database tables** to filter on only tenant-level tables that on aren't specific to a company.|
    |Table Name|Find tables whose names contain the text that you enter, making it easier to find the related tables.|
 
-1. To change how data is replicated for a table, select the table in the list, then thuse the following actions
-
-
-
-
-Preserve data action will keep the data in the database, if the value is set to false then it will delete the SaaS table before making the initial replication from SaaS. Action can be used on the multiple records
-Reset to default will reset all changes for the selected records to their initial values. 
-Show history can show you the history of changes done with the timestamps so you can see when the change to the properties was made
-Table name field will allow you to filter to the tables that contain a part of the value typed, so it is easy to find the related tables
-Company name can set the filter for the selected company
-
 ## Next steps
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+[Run and manage data replication](migrate-data-replication-run.md)  
