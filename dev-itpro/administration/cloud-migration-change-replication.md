@@ -31,16 +31,33 @@ We strongly advise that you don't modify **Permissions** related tables, because
 ## Change how data is replicated 
 
 1. Search for and open the **Cloud Migration Management** page.
-2. In the action bar of the **Cloud Migration Management** page, select **...** (Show the rest) >  **More options** > **Actions** > **Change how the data is replicated**.
+1. In the action bar of the **Cloud Migration Management** page, select **...** (Show the rest) >  **More options** > **Actions** > **Change how the data is replicated**.
 
-   The **Select tables to migrate** page opens to display the tables that are included in the migration for the companies you chose to include in the cloud migration setup. Each table is listed by its name, company, and ID, plus the following fields that specify the how its data will be migrated: 
+1. The **Select tables to migrate** page opens to display the tables that are included in the migration for the companies you chose to include in the cloud migration setup.
+
+   :::image type="content" source="../developer/media/cloud-migration-change-replication.svg" alt-text="Shows a screenshot of the page for changing how table data replicates for to the cloud.":::
+
+ Each table is listed by its name, company, and ID, plus the following fields that specify the how its data will be migrated: 
  
-   |Column|Description|
+   |Field|Description|
    |-|-|
-   |Replicate data|If this check box is selected, then the table and its data are replicated to the online tenant. If this check box is cleared, the table and its data aren't replicated. | 
-   |Preserve the cloud data|If the check box is selected, then a delta sync is done between the on-premises and online table. Data already in the online table remains and only differences from the on-premises table is replicated online.|
+   |Replicate data|If this check box is selected, then the table and its data are included in the migration to the online tenant. If this check box is cleared, the table and its data are excluded from the cloud migration  | 
+   |Preserve the cloud data|If the check box is selected, then a delta sync is done between the on-premises and online table. Data already in the online table remains and only changes in the on-premises table from the last sync are replicated online.|
 
-3. to Include in migration will make sure that the table is replicated to SaaS, Exclude from migration means that no data will be copied. Action can be used on multiple records. 
+
+
+1. To filter the list and find specific tables, use the **Company Name** and **Table Name** fields 
+
+   |Field|Description|
+   |-|-|
+   |Company Name|Select the company you want to filter on or select *All** to filter on all companies that are included in the cloud migration. Select **Per database tables** to filter on only tenant-level tables that on aren't specific to a company.|
+   |Table Name|Find tables whose names contain the text that you enter, making it easier to find the related tables.|
+
+1. To change how data is replicated for tables, select thuse the following actions
+
+
+
+
 Preserve data action will keep the data in the database, if the value is set to false then it will delete the SaaS table before making the initial replication from SaaS. Action can be used on the multiple records
 Reset to default will reset all changes for the selected records to their initial values. 
 Show history can show you the history of changes done with the timestamps so you can see when the change to the properties was made
