@@ -15,14 +15,13 @@ ms.author: solsen
 # Create userGroup
 
 > [!NOTE]  
-> User groups are replaced with https://learn.microsoft.com/en-us/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/manage-user-permissions-using-security-groups and will be deprecated in version 25. See security group APIs (administration/resources/dynamics_securitygroups).
+> User groups are replaced with [security groups](../upgrade/deprecated-features-user-groups) and will be deprecated in version 25. For more information, see [security group APIs](administration/resources/dynamics_securitygroups).
 
 Creates a user group in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
-
 
 ```
 POST /microsoft/automation/v2.0/companies({companyId})/userGroups
