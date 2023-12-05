@@ -3,7 +3,7 @@ title: "Using request pages with reports"
 description: "Introducing how to work with request pages with Business Central reports."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/31/2023
+ms.date: 12/05/2023
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -22,9 +22,9 @@ A request page is a page that is run before the report starts to execute. Reques
 |[AboutTitleML Property](properties/devenv-abouttitleml-property.md)|Specifies the multi-language version of the title for a teaching tip on the report. |
 |[AboutText Property](properties/devenv-abouttext-property.md)|Specifies the text for a teaching tip on the report. |
 |[AboutTextML Property](properties/devenv-abouttextml-property.md)|Specifies the multi-language version of the text for a teaching tip on the report. |
-|[ContextSensitiveHelpPage Property](properties/devenv-contextsensitivehelppage-property.md)| Specifies the help topic to show when the user presses Help in the UI. Note that the help server on which this help topic is located, must be defined in the app.json file. |
+|[ContextSensitiveHelpPage Property](properties/devenv-contextsensitivehelppage-property.md)| Specifies the help article to show when the user presses Help in the UI. The help server on which this help article is located, must be defined in the app.json file. |
 
-By default, a request page is displayed, unless the [UseRequestPage](properties/devenv-userequestpage-property.md) is set to `false`; then the report will immediately run. In this case, end users can't cancel the report. It's still possible to cancel the report, but some pages may print.
+By default, a request page is displayed, unless the [UseRequestPage](properties/devenv-userequestpage-property.md) is set to `false`; then the report immediately runs. In this case, end users can't cancel the report. It's still possible to cancel the report, but some pages might print.
 
 By default, without having set anything else, a request page will always display the following buttons:
 
@@ -64,7 +64,7 @@ By default, for every data item in the report, a FastTab for defining filters an
 
 If a `DataItemTableView` or `SourceTableView` isn't defined, then end users can select a sort column and sort order at runtime.
 
-In a complex report that uses data from several tables, the functionality may depend on a specific key and sort order. Design your reports so that end-users can't change the sort order in a way that affects their functionality.
+In a complex report that uses data from several tables, the functionality might depend on a specific key and sort order. Design your reports so that end-users can't change the sort order in a way that affects their functionality.
 
 For data items and table elements whose source table contains calculated fields, such as amounts and quantities, the **Filter totals by:** section is automatically included on the request page, which allows you to adjust various dimensions that influence calculations.
 
@@ -73,7 +73,7 @@ For data items and table elements whose source table contains calculated fields,
 
 ## Defining a `requestpage` section
 
-On reports, in addition to defining the filter options by setting the `RequestFilterFields` property, you can add a `requestpage` section. In this section, you can set the [SaveValues](properties/devenv-savevalues-property.md) property to `true` in order to save the values that the end user enters on the request page. When the report is run again, the end user will have the option to use previously defined filters. 
+On reports, in addition to defining the filter options by setting the `RequestFilterFields` property, you can add a `requestpage` section. In this section, you can set the [SaveValues](properties/devenv-savevalues-property.md) property to `true` in order to save the values that the end user enters on the request page. When the report is run again, the end user has the option to use previously defined filters. 
 
 You can also add a `layout` to the request page, specifying an **Options** section to perform checks.
 
@@ -123,7 +123,7 @@ The primary purpose of a teaching tip is to increase the user's chance of succes
 
 Both of these properties (or their equivalent multi-language versions) must be defined on the request page for the teaching tip to appear.
 
-With teaching tips, you can help explain logic that is relevant to the report therefore allowing users to get on with a reporting task right away without blocking them. After users dismiss a teaching tip, they can choose or hover over the report title in the request page. This action will reopen the teaching tip.
+With teaching tips, you can help explain logic that is relevant to the report therefore allowing users to get on with a reporting task right away without blocking them. After users dismiss a teaching tip, they can choose or hover over the report title in the request page. This action reopens the teaching tip.
 
 [!INCLUDE[aboutTeachingTips](includes/include-about-teaching-tips.md)]
 
@@ -141,7 +141,7 @@ Starting with Business Central 2023 release wave 1 (version 22), you can set the
 For more information about configuring context-sensitive help, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md). 
 
 ## Saving settings on the request page
-When running reports, users can use one or more *saved settings* that they can apply to the report from the request page. For more information on this topic, see [Manage Saved Settings for Reports and Batch jobs](/dynamics365/business-central/reports-saving-reusing-settings.md)
+When running reports, users can use one or more *saved settings* that they can apply to the report from the request page. For more information on this article, see [Manage Saved Settings for Reports and Batch jobs](/dynamics365/business-central/reports-saving-reusing-settings.md)
 
 
 ## Request page and preview triggers and operations
