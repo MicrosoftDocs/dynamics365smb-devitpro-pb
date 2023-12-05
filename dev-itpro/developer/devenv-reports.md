@@ -40,7 +40,7 @@ After you have developed a report and before you make it available for users, yo
 - ensure that users can find it, 
 - ensure that users know how to use it. 
 
-
+<br>
 Another option is to extend the functionality of an existing report with a [Report Extension Object](devenv-report-ext-object.md) by adding columns to the existing report dataset, adding new data items, adding to the request page, or adding a new layout.
 
 
