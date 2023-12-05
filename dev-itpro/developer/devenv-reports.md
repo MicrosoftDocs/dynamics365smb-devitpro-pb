@@ -32,13 +32,16 @@ Creating a report involves three tasks:
 First, you create a report object and design the dataset. The dataset determines the data that is extracted or calculated from the [!INCLUDE[prod_short](../includes/prod_short.md)] database tables that can be used in the report. 
 
 
-When the dataset has been designed, you design the visual layout of the report. There are three types of report layouts that you can create: layouts using report definition language (RDL), Word report layouts, and Excel report layouts. Another option is to extend the functionality of an existing report with a [Report Extension Object](devenv-report-ext-object.md) by adding columns to the existing report dataset, adding new data items, adding to the request page, or adding a new layout.
+When the dataset has been created, you then design the visual layout of the report. There are three types of report layouts that you can create: layouts using report definition language (RDL), Word report layouts, and Excel report layouts. Each type of layout caters for different user needs - Excel is used for analytical reports, Word layouts are for document reports, and RDL is for advanced scenarios (both for document and analytical reports).
 
 
 After you have developed a report and before you make it available for users, you need to consider _discoverability_ for the report, such as
 - how users can discover that the report exists, 
 - ensure that users can find it, 
 - ensure that users know how to use it. 
+
+
+Another option is to extend the functionality of an existing report with a [Report Extension Object](devenv-report-ext-object.md) by adding columns to the existing report dataset, adding new data items, adding to the request page, or adding a new layout.
 
 
 ## Getting started
