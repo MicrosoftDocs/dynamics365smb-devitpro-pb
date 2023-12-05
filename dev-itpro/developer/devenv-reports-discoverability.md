@@ -68,7 +68,7 @@ For more information, see [Adding help links to your reports](devenv-request-pag
 [Adding links to the navigation menu on the role center](devenv-adding-menus-to-navigation-pane.md)   
 [Adding actions to a page (prior to version 2022 release wave 2)](devenv-adding-actions-to-a-page.md)   
 [Promoted Actions (version 2022 release wave 2 and later)](devenv-promoted-actions.md)   
-[Adding teaching tips to your reports](devenv-request-pages-for-reportsmd#adding-teaching-tips-to-your-reports)   
+[Adding teaching tips to your reports](devenv-request-pages-for-reports.md#adding-teaching-tips-to-your-reports)   
 [Adding help links to your reports](devenv-request-pages-for-reports.md#adding-help-links-to-your-reports)  
 [Reports Overview](devenv-reports.md)  
 [Report Design Overview](devenv-report-design-overview.md)  
