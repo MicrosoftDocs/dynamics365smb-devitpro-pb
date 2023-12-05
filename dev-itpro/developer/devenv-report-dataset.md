@@ -54,7 +54,11 @@ Typing the shortcut `treport` creates the basic layout for a report object when 
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
-## Example: Using tables to define a report dataset
+## Testing the dataset
+[!INCLUDE [send-report-excel](includes/send-report-excel.md)]
+
+
+## Example: Joining tables to define a report dataset
 
 The following example adds the `Customer` table as the data item and the `CustomerName` and `CompanyName` as fields of a column to the report. It then adds a secondary dataitem with data from the `Cust. Ledger Entry` table and joins the two.
 
@@ -115,7 +119,62 @@ dataitem(Customer; Customer)
 }
 ```
 
-[!INCLUDE [send-report-excel](includes/send-report-excel.md)]
+## Example: Define a report dataset with multiple top-level dataitems 
+The following example adds the `Cust. Ledger Entry` table as a top-level data item. It then add dimension data as a second top-level data item.
+
+```AL
+// Example of how to have two top-level dataitems in a report dataset.
+dataset
+{
+    dataitem(CustLedger; "Cust. Ledger Entry")
+    {
+        column(EntryNo_CustLedgerEntry; "Entry No.")
+        {
+            IncludeCaption = true;
+        }
+        column(CustomerNo_CustLedgerEntry; "Customer No.")
+        {
+            IncludeCaption = true;
+        }
+        column(PostingDate_CustLedgerEntry; "Posting Date")
+        {
+            IncludeCaption = true;
+        }
+        column(DocumentType_CustLedgerEntry; "Document Type")
+        {
+            IncludeCaption = true;
+        }
+        column(DocumentNo_CustLedgerEntry; "Document No.")
+        {
+            IncludeCaption = true;
+        }
+        column(GlobalDim1Code_CustLedgerEntry; "Global Dimension 1 Code")
+        {
+            IncludeCaption = true;
+        }
+        column(GlobalDim2Code_CustLedgerEntry; "Global Dimension 2 Code")
+        {
+            IncludeCaption = true;
+        }
+    }
+    dataitem(Dimensions; "Dimension Set Entry")
+    {
+        column(EntryNo_CustLedgerEntry; "Dimension Code")
+        {
+            IncludeCaption = true;
+        }
+        column(EntryNo_CustLedgerEntry; "Dimension Value Code")
+        {
+            IncludeCaption = true;
+        }
+        column(EntryNo_CustLedgerEntry; "Dimension Value ID")
+        {
+            IncludeCaption = true;
+        }
+    }
+}
+```
+
 
 
 ## Example: Using a query to define a report dataset
