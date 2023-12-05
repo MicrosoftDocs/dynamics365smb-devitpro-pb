@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 11/30/2023
 ms.custom: bap-template
 ---
 
@@ -31,7 +31,8 @@ The following table lists the Business Central 22 versions and the minimum versi
 ----------|----------|
 |22.0 to 22.5|[23.0](https://www.microsoft.com/en-us/download/details.aspx?id=105617)  |
 |[22.6](https://support.microsoft.com/help/5031951) |[23.1](https://support.microsoft.com/help/5032755)|
-|[22.7](https://support.microsoft.com/help/5032754)<sup>[\[1\]](#1)</sup> |23.2 |
+|[22.7](https://support.microsoft.com/help/5032754)|[23.2](https://support.microsoft.com/help/5033775)|
+|[22.8](https://support.microsoft.com/help/5033776)<sup>[\[1\]](#1)</sup> |23.3|
 
 To view a list of all available updates for Business Central 2023 Release Wave 1, go to [Released Updates for Microsoft Dynamics 365 Business Central 2023 Release Wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-1-37e2d08e-6f61-4522-90ba-1cea59d8de51). 
 
@@ -52,7 +53,8 @@ The following table lists the Business Central 21 versions and the minimum versi
 |[21.10](https://support.microsoft.com/help/5029764)|[22.5](https://support.microsoft.com/help/5031031)|23.0|
 |[21.11](https://support.microsoft.com/help/5031030)|[22.6](https://support.microsoft.com/help/5031951)| 23.0|
 |[21.12](https://support.microsoft.com/help/5031950)|[22.7](https://support.microsoft.com/help/5032754)| [23.1](https://support.microsoft.com/help/5032755)|
-|[21.13](https://support.microsoft.com/help/5032753)<sup>[\[1\]](#1)</sup>|22.8 |23.2 |
+|[21.13](https://support.microsoft.com/help/5032753)|[22.8](https://support.microsoft.com/help/5033776)|[23.2](https://support.microsoft.com/help/5033775)|
+|[21.14](https://support.microsoft.com/help/5033777)<sup>[\[1\]](#1)</sup>|22.9 |23.3|
 
 To view a list of all available updates for Business Central 2022 Release Wave 2, go to [Released Updates for Microsoft Dynamics 365 Business Central 2022 Release Wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2022-release-wave-2-8efa5bbb-3cd5-4445-ba3a-0752694bf46f). 
 
