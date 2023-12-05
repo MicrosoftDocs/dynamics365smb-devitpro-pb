@@ -26,7 +26,7 @@ A request page is a page that is run before the report starts to execute. Reques
 
 By default, a request page is displayed, unless the [UseRequestPage](properties/devenv-userequestpage-property.md) is set to `false`; then the report immediately runs. In this case, end users can't cancel the report. It's still possible to cancel the report, but some pages might print.
 
-By default, without having set anything else, a request page will always display the following buttons:
+By default, without having set anything else, a request page always displays the following buttons:
 
 - Send to
 - Print
@@ -56,7 +56,7 @@ report 50103 "Customer List"
 ```
 
 > [!NOTE]  
-> It's recommended to add columns that the end users of the report will frequently set filters on.
+> It's recommended to add columns that the end users of the report frequently set filters on.
 
 For more information about the report object, see [Report Object](devenv-report-object.md).
 
