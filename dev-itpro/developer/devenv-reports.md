@@ -39,8 +39,11 @@ The following table includes links to help you get started with designing the re
 |Learn how to create a report using a Word layout|[Creating a Word Layout Report](devenv-howto-report-layout.md)| 
 |Learn how to create a report using an RDL layout report.|[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)|
 |Learn about creating a report based on an Excel layout.|[Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)|
-|Learn how to create a report using a customer defined layout type.|[Creating a custom Layout Report](devenv-report-custom-render.md)|
 |Learn how to define multiple report layouts for one report.|[Defining Multiple Report Layouts](devenv-multiple-report-layouts.md)|
+|Learn how to use request pages with reports.| [Using request pages with reports](devenv-request-pages-for-reports.md) |
+|Learn how to help users discover the report.|[Report discoverability overview](developer/devenv-reports-discoverability.md) |
+
+
 
 ## See Also
 

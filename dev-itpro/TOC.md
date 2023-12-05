@@ -767,7 +767,6 @@
 ##### [Formatting decimal values in report fields](developer/devenv-format-field-data.md)
 ##### [Localizing the report data formatting and caption strings](developer/devenv-report-localization.md)
 #### [Using request pages with reports](developer/devenv-request-pages-for-reports.md)
-#### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### Report layouts
 ##### [About report layouts](/dynamics365/business-central/ui-manage-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Get started creating layouts](/dynamics365/business-central/ui-get-started-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -791,6 +790,9 @@
 ###### [Update custom report layouts](/dynamics365/business-central/ui-update-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ###### [Set the layout used by a report](/dynamics365/business-central/ui-how-change-layout-currently-used-report?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
+#### Report discoverability
+##### [Report discoverability overview](developer/devenv-reports-discoverability.md)
+##### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### [Report triggers and operations](developer/devenv-report-triggers.md)
 #### [Substituting a report](developer/devenv-substituting-reports.md)
 #### [Testing a report](developer/devenv-testing-reports.md)

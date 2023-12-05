@@ -43,7 +43,7 @@ You can specify other words or phrases that can help users find a page or report
 > [!NOTE]  
 > For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[webserverinstance](includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called `UseAdditionalSearchTerms` that enables or disables the use of additional search terms by the **Tell me**. For more information, see [Configuring [!INCLUDE[webserver](includes/webserver.md)] Instances](../administration/configure-web-server.md#Settings).
 
-## Example
+## Example (adding a page to Tell-me)
 The following example creates a `SimpleItemList` page and sets a `UsageCategory` property to the page, so that the `SimpleItemList` page is discoverable through search using the **Tell me** feature. Also, the example sets the   `AdditionalSearchTerms` property to add two search terms for the page. 
 
 ```AL
@@ -70,6 +70,19 @@ page 50210 SimpleItemList
     } 
 } 
 ```
+
+## Example (adding a report to Tell-me)
+The following example creates a `Customer List` report and sets a `UsageCategory` property to the page, so that the report is discoverable through search using the **Tell me** feature. Also, the example sets the `AdditionalSearchTerms` property to add two search terms for the page. 
+
+```AL
+report 50103 "Customer List"
+{
+  AdditionalSearchTerms = 'Sales, Sold';
+  UsageCategory = ReportsAndAnalysis;
+  ...
+}
+```
+
 
 ## Optional settings
 In addition to making a page or report searchable, you can control the access of an object by providing **Read**, **Insert**, **Modify**, **Delete**, and **Execute** (RIMDX) permissions by adding the [AccessByPermission property](properties/devenv-accessbypermission-property.md). Likewise, control the application area access on the specified object by adding the [ApplicationArea Property](properties/devenv-applicationarea-property.md). 
