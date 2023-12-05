@@ -24,7 +24,22 @@ Reports can also be used to process data without printing or displaying content.
 
 ## Creating reports
 
-Creating a report involves two primary tasks. First, you create a report object and design the dataset. The dataset determines the data that is extracted or calculated from the [!INCLUDE[prod_short](../includes/prod_short.md)] database tables that can be used in the report. After the dataset has been designed, you design the visual layout of the report. There are three types of report layouts that you can create: layouts using report definition language (RDL), Word report layouts, and Excel report layouts. Another option is to extend the functionality of an existing report with a [Report Extension Object](devenv-report-ext-object.md) by adding columns to the existing report dataset, adding new data items, adding to the request page, or adding a new layout.
+Creating a report involves three tasks: 
+1. design the dataset,
+2. design the visual layout(s),
+3. ensure users can discover and understand how to use the report.
+
+First, you create a report object and design the dataset. The dataset determines the data that is extracted or calculated from the [!INCLUDE[prod_short](../includes/prod_short.md)] database tables that can be used in the report. 
+
+
+When the dataset has been designed, you design the visual layout of the report. There are three types of report layouts that you can create: layouts using report definition language (RDL), Word report layouts, and Excel report layouts. Another option is to extend the functionality of an existing report with a [Report Extension Object](devenv-report-ext-object.md) by adding columns to the existing report dataset, adding new data items, adding to the request page, or adding a new layout.
+
+
+After you have developed a report and before you make it available for users, you need to consider _discoverability_ for the report, such as
+- how users can discover that the report exists, 
+- ensure that users can find it, 
+- ensure that users know how to use it. 
+
 
 ## Getting started
 
