@@ -3,7 +3,7 @@ title: "HttpRequestMessage Data Type"
 description: "Represents an HTTP request message."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/06/2023
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Represents an HTTP request message.
 
 
 
+## Instance methods
 The following methods are available on instances of the HttpRequestMessage data type.
 
 |Method name|Description|

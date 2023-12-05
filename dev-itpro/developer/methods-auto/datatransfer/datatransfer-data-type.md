@@ -3,7 +3,7 @@ title: "DataTransfer Data Type"
 description: "A structure building bulk transfer of data between tables."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ A structure building bulk transfer of data between tables.
 
 
 
+## Instance methods
 The following methods are available on instances of the DataTransfer data type.
 
 |Method name|Description|

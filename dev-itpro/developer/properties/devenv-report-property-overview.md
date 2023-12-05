@@ -1,5 +1,5 @@
 ---
-title: "Report, Report Fields, and Report Extension Properties"
+title: "Report, report data item, and report extension properties"
 description: "This topic lists properties that apply to the [report object](../devenv-report-object.md), report fields, and [report extension object](../devenv-report-ext-object.md)."
 ms.author: solsen
 ms.custom: na
@@ -14,11 +14,11 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# Report, Report Fields, and Report Extension Properties
+# Report, Report Dataitem, and Report Extension Properties
 
-This topic lists properties that apply to the [report object](../devenv-report-object.md), report fields, and [report extension object](../devenv-report-ext-object.md).
+This topic lists properties that apply to the [report object](../devenv-report-object.md), [report dataitem](../devenv-report-dataset.md) , and [report extension object](../devenv-report-ext-object.md).
 
-## Object Properties
+## Report Object Properties
 
 The following properties all apply to the Report object, only some of these properties can be set for a Report extension object as specified below. This list is sorted alphabetically by property name. For Report properties sorted by method on a Report, see [Properties](devenv-properties.md).
 
@@ -87,6 +87,10 @@ The following properties all apply to the Report object, only some of these prop
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Report datatype (AL language reference)](../methods-auto/report/report-data-type.md)   
+[Report object properties (AL language reference)](devenv-report-properties.md)   
+[Report overview](../devenv-reports.md)   
+[Getting started with AL](../devenv-get-started.md)  
+[Developing extensions](../devenv-dev-overview.md)  
