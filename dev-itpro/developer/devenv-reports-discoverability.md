@@ -10,7 +10,7 @@ ms.author: kepontop
 ---
 
 # Report discoverability
-After you have developed a report and before you make it available for users, you need to consider how they can discover that the report exists, that they can find it, and that they know how to use it. [![prod_short](./includes/prod_short.md)] comes with a variety of features that you can use to make that happen, such as Tell-me search, actions on role centers and pages, Report/Role explorer, teaching tips, and context-specific help. In this article, you can learn how to use all of them to maximize the user experience for your reports.
+After you have developed a report and before you make it available for users, you need to consider how they can discover that the report exists, that they can find it, and that they know how to use it. [![prod_short](includes/prod_short.md)] comes with a variety of features that you can use to make that happen, such as Tell-me search, actions on role centers and pages, Report/Role explorer, teaching tips, and context-specific help. In this article, you can learn how to use all of them to maximize the user experience for your reports.
 
 
 ## Adding reports to Tell Me
@@ -28,13 +28,13 @@ For more information, see [Adding links to the navigation menu on the role cente
 ## Adding reports to Report/Role explorer
 When pages/reports have been added to role centers, they also become available in the Report/Role explorer overviews.
 
-For more information about the Report/Role explorer, see [Finding Reports with the Role Explorer](/dynamics365/business-central/ui-role-explorer.md).
+For more information about the Report/Role explorer, see [Finding Reports with the Role Explorer](/dynamics365/business-central/ui-role-explorer).
 
 
 ## Adding reports to pages
 All pages in [!INCLUDE[prod_short](includes/prod_short.md)] allow you to have actions that run your report. Before putting an report action on a page you should think about the business processes that the report supports. Creating these actions can make it easier for the user to perform their daily tasks, such as getting a sales order overview or analyzing the inventory.  
 
-Prior to version 2022 release wave 2, see this article for more information: [Adding actions to a page](developer/devenv-adding-actions-to-a-page.md).
+Prior to version 2022 release wave 2, see this article for more information: [Adding actions to a page](devenv-adding-actions-to-a-page.md).
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](devenv-promoted-actions.md).
 
@@ -56,7 +56,7 @@ For more information, see [Adding help links to your reports](devenv-request-pag
 ## See Also
 [Adding reports to Tell Me](devenv-al-menusuite-functionality.md)   
 [Adding links to the navigation menu on the role center](devenv-adding-menus-to-navigation-pane.md)   
-[Adding actions to a page (prior to version 2022 release wave 2)](developer/devenv-adding-actions-to-a-page.md).
+[Adding actions to a page (prior to version 2022 release wave 2)](devenv-adding-actions-to-a-page.md).
 [Promoted Actions (version 2022 release wave 2 and later)](devenv-promoted-actions.md).
 [Adding teaching tips to your reports](devenv-request-pages-for-reports.md#adding-teaching-tips-to-your-reports)
 [Adding help links to your reports](devenv-request-pages-for-reports.md#adding-help-links-to-your-reports)
