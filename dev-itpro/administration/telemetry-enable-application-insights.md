@@ -1,8 +1,7 @@
 ---
 title: Enable Sending Telemetry to Application Insights
 description: Learn how you can get richer telemetry by connecting your Business Central with Application Insights for telemetry. 
-ms.custom: na
-ms.reviewer: na
+ms.reviewer: kepontop
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
