@@ -12,7 +12,7 @@ ms.custom: bap-template #Required; don't change.
 
 # What are the developer tools for copilot?
 
-Azure OpenAI Service offers robust, generative AI models that our partners can now utilize to foster a rich ecosystem of AI-powered extensions for Business Central. Developer Tools for Copilot is a specialized toolkit that allows AL developers to easily integrate Azure OpenAI Service into AL code. This toolkit enables developers to enrich their extensions and solutions with generative AI, creating a seamless integration into the Business Central user experience, and allowing for a natural implementation into their add-ons or customizations.
+Azure OpenAI Service offers robust, generative AI models that our partners can now utilize to foster a rich ecosystem of AI-powered extensions for Business Central. Developer Tools for Copilot is a specialized toolkit that allows AL developers to easily integrate Azure OpenAI Service into AL code. This toolkit enables developers to enrich their extensions and solutions with generative AI, creating a seamless integration into the Business Central user experience, and allowing for a straightforward implementation into their add-ons or customizations.
 
 The advantages of using this toolkit include:
 - Designing Solutions that adhere to Responsible AI principles.
