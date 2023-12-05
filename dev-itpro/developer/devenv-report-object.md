@@ -28,6 +28,46 @@ If you want to modify an existing report, for example, add new columns, add to t
 
 [!INCLUDE[intelli_shortcut](includes/query_as_a_report_datasource.md)]
 
+## Report syntax
+
+A report object consists of properties, a dataset section, and optionally sections for request page, layouts, and code. The order in which the sections appear matters. The following example illustrates the ordering:
+
+```AL
+report ObjectId ReportName
+{
+    // report properties such as 
+    UsageCategory = ReportsAndAnalysis;
+    ApplicationArea = All;
+
+    dataset {}
+   
+    // requestpage section is optional  
+    requestpage {} 
+
+    // rendering section is optional, but recommended for reports that have a layout
+    rendering {} 
+    
+    // optionally, add AL code here
+}
+```
+
+## Snippet support
+
+Typing the shortcut `treport` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
+[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
+## Report properties
+You can control the way the AL runtime and client work on the report by setting properties on the report object. Some popular properties are:
+
+- [AdditionalSearchTerms](properties/devenv-additionalsearchterms-property.md) - helps users when searching for the report in Tell Me search. 
+- [Caption](properties/devenv-caption-property.md) - specifies the report title as shown on request pages, Tell-me search, report/role explorer, and when users bookmark the report to their role centers.
+- [UsageCategory](properties/devenv-usagecategory-property.md) - determines how the report is shown in report/role explorer. 
+- [AllowScheduling](properties/devenv-allowscheduling-property.md) - allows the report to be run in the background.  
+- [DataAccessIntent](properties/devenv-dataaccessintent-property.md) - allows the AL runtime to read data from a secondary database, if present.
+
+For a list of all properties that you can set on the report object, see the AL language reference article [Report, Report Fields, and Report Extension Properties](properties/devenv-report-property-overview.md).
+
 ## Report layouts
 You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are three types of report layouts; client report definition, also called RDL layouts, Word layouts, and Excel layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word and are based on a Word document that includes a custom XML part representing the report dataset. Excel layouts are created in Excel based on the report dataset, utilizing the Excel capabilities such as sliders, diagrams, charts, pivot tables, and PowerQuery. One report can contain multiple report layout definitions. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
 
@@ -45,11 +85,6 @@ In the following, you can read about properties of the different layout types.
 
 For more information about labels, see [Working with labels](devenv-using-labels.md).
 
-## Snippet support
-
-Typing the shortcut `treport` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
-
-[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Report example
 
@@ -58,9 +93,11 @@ The following example is a report that prints the list of customers. The report 
 ```AL
 report 50103 "Customer List"
 {
-  CaptionML=ENU='Customer List';
-  DefaultLayout = RDLC; // if Word use WordLayout property
-  RDLCLayout = 'MyRDLReport.rdl';
+  Caption = 'Customer List';
+  AdditionalSearchTerms = 'Sales, Sold';
+  UsageCategory = ReportsAndAnalysis;
+  AllowScheduling = true;
+  DataAccessIntent = ReadOnly;
 
   dataset
   {
@@ -224,8 +261,28 @@ report 50103 "Customer List"
 
   labels
   {
-      LabelName = 'Label Text', Comment = 'Foo', MaxLength = 999, Locked = true;
+      Label1 = 'Label Text', Comment = 'Foo', MaxLength = 999, Locked = true;
   }
+
+  rendering 
+  {
+    layout(LayoutExcelPivot)
+    {
+      Type = Excel;
+      Caption = 'Customer list (analyze)';
+      Summary = 'Customer list for analysis in Excel';
+      LayoutFile = 'CustomerListExcel.xlsx';
+    }
+
+    layout(CustomerListPrintLayout)
+    {
+      Type = RDLC;
+      Caption = 'Customer list (print)';
+      Summary = 'Customer list in print layout';
+      LayoutFile = 'CustomerListRDL.rdl';
+    }
+  } 
+
 
   trigger OnPreReport();
   var
