@@ -20,7 +20,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes
 - [Improved data upgrade troubleshooting for Dynamics GP migration](dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/improved-data-upgrade-troubleshooting-dynamic-gp-migration)
-- [Easily integrate generative AI with your AL solutions](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/easily-integrate-generative-ai-al-solutions)
+- [Easily integrate generative AI with your AL solutions](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/easily-integrate-generative-ai-al-solutions) is now unlocked on Business Central online
 - [VAT posting in General Ledger setup](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/vat-posting-general-ledger-setup)
 
 
