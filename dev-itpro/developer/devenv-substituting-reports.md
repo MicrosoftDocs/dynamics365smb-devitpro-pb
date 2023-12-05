@@ -1,20 +1,20 @@
 ---
-title: "Substituting Reports"
-description: "How to substitute reports for other reports."
+title: Substituting reports
+description: How to substitute reports for other reports.
 author: blrobl
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/05/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 
-# Substituting Reports
+# Substituting reports
 
-In versions prior to [!INCLUDE[prod_short](includes/prod_short.md)] 2021 release wave 1, extensibility is not supported for report objects. Therefore, if you want to make any changes to the dataset or the layout of a base application report, you must create a new version of the report and apply the changes on the new object. Then you can override the base report with your own customized version by subscribing to the **OnAfterSubstituteReport** event published by **Codeunit 44 – ReportManagement**. 
+In versions prior to [!INCLUDE[prod_short](includes/prod_short.md)] 2021 release wave 1, extensibility isn't supported for report objects. Therefore, if you want to make any changes to the dataset or the layout of a base application report, you must create a new version of the report and apply the changes on the new object. Then you can override the base report with your own customized version by subscribing to the **OnAfterSubstituteReport** event published by **Codeunit 44 – ReportManagement**. 
 
-From [!INCLUDE[prod_short](includes/prod_short.md)] 2021 release wave 1, it is possible to extend reports. With a report extension object, you can extend existing report objects, similar to how you extend tables and pages. With report extensions, you can extend an existing report by:
+From [!INCLUDE[prod_short](includes/prod_short.md)] 2021 release wave 1, it's possible to extend reports. With a report extension object, you can extend existing report objects, similar to how you extend tables and pages. With report extensions, you can extend an existing report by:
 
 - Adding columns to existing data items in the report dataset
 - Adding new data items
@@ -28,7 +28,7 @@ For more information on report extensibility, see [Report extension object](./de
 
 ## How to substitute a report for another report
 
-To substitute a report, you create a method and subscribe it to the **OnAfterSubstituteReport** event, as shown in the code below. The `OnSubstituteReport` method replaces the report specified by the `ReportId` with the one given by the `NewReportId` parameter. In this example the `"Customer - List"` report will be substituted for `"My New Customer - List"`.
+To substitute a report, you create a method and subscribe it to the **OnAfterSubstituteReport** event, as shown in the code below. The `OnSubstituteReport` method replaces the report specified by the `ReportId` with the one given by the `NewReportId` parameter. In this example, the `"Customer - List"` report is substituted for `"My New Customer - List"`.
 
 ```AL
 codeunit 50100 "Substitute Report"
@@ -71,11 +71,11 @@ For more information about raising events, see [Raising Events](devenv-raising-e
 
 ## Good practices
 
-- Consider using the same caption for both reports, given by the [Caption Property](properties/devenv-caption-property.md). Consequently, any links and action captions that lead to the report will match the report itself. This is also relevant for bookmarks linked to a report, since they maintain the caption of the original report, even if it has been substituted for one with another caption.
+- Consider using the same caption for both reports, given by the [Caption Property](properties/devenv-caption-property.md). So, any links and action captions that lead to the report will match the report itself. This is also relevant for bookmarks linked to a report, since they maintain the caption of the original report, even if it's substituted for one with another caption.
 
 <!-- - Consider hiding the original report from the TellMe window if it is no longer valuable to all users. You can do this by setting the original report to [UsageCategory Property](properties/devenv-usagecategory-property.md) to **None**. -->
 
-- Consider enhancing the code of the subscriber method to check if the report has already been replaced with another extension. This is done by comparing the `ReportId` and `NewReportId` parameters before making the change, such that if the value of the `NewReportId` parameter is different from the value of the `ReportId` parameter and different from -1, it means that the report has already been substituted for another subscriber of the **OnAfterSubstituteReport** event.
+- Consider enhancing the code of the subscriber method to check if the report is already replaced with another extension. This is done by comparing the `ReportId` and `NewReportId` parameters before making the change, such that if the value of the `NewReportId` parameter is different from the value of the `ReportId` parameter and different from -1, it means that the report is already substituted for another subscriber of the **OnAfterSubstituteReport** event.
 
 > [!IMPORTANT]  
 > Make sure that if a report is called on code, you use a compatible report to replace it to avoid run time errors.
