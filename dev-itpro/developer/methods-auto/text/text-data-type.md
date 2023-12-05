@@ -3,7 +3,7 @@ title: "Text Data Type"
 description: "Denotes a text string."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Denotes a text string.
 
 
+## Static methods
 The following methods are available on the Text data type.
 
 
@@ -41,6 +42,7 @@ The following methods are available on the Text data type.
 |[StrSubstNo(Text [, Any,...])](text-strsubstno-method.md)|Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you provide as optional parameters.|
 |[UpperCase(Text)](text-uppercase-method.md)|Converts all letters in a string to uppercase.|
 
+## Instance methods
 The following methods are available on instances of the Text data type.
 
 |Method name|Description|

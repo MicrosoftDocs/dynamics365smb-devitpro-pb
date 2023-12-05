@@ -3,7 +3,7 @@ title: "TestAction Data Type"
 description: "Represents a test action on a page."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Represents a test action on a page.
 
 
 
+## Instance methods
 The following methods are available on instances of the TestAction data type.
 
 |Method name|Description|
