@@ -3,7 +3,7 @@ title: "Notification Data Type"
 description: "Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Business Central Web client."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Provides a programmatic way to send non-intrusive information to the user interf
 
 
 
+## Instance methods
 The following methods are available on instances of the Notification data type.
 
 |Method name|Description|
