@@ -10,7 +10,12 @@ ms.author: kepontop
 ---
 
 # Report discoverability
-After you have developed a report and before you make it available for users, you need to consider how they can discover that the report exists, that they can find it, and that they know how to use it. [!INCLUDE[prod_short](includes/prod_short.md)] comes with a variety of features that you can use to make that happen, such as Tell-me search, actions on role centers and pages, Report/Role explorer, teaching tips, and context-specific help. In this article, you can learn how to use all of them to maximize the user experience for your reports.
+After you have developed a report and before you make it available for users, you need to consider _discoverability_ for the report, such as
+- how users can discover that the report exists, 
+- ensure that users can find it, 
+- ensure that users know how to use it. 
+
+[!INCLUDE[prod_short](includes/prod_short.md)] comes with a variety of features that you can use to make that happen, such as Tell-me search, actions on role centers and pages, Report/Role explorer, teaching tips, and context-specific help. In this article, you can learn how to use all of them to maximize the user experience for your reports.
 
 
 ## Adding reports to Tell Me
