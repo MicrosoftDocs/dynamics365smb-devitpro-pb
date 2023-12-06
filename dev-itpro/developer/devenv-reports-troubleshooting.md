@@ -24,7 +24,21 @@ A report in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can fail
 3. when rendering the report with a layout
 4. in any of the OnAfterDocument* triggers
 
+## Troubleshooting report datasets and layouts
+If a report layout is not working as expected, you might need to investigate if the issue is in the dataset. 
 
+### Troubleshooting RDL report layouts
+When developing and debugging an RDL report layout, it can be useful to get a copy of the report dataset in the XML format used by the RDL engine. 
+
+[!INCLUDE [send-report-xml](../developer/includes/send-report-xml.md)]
+
+### Troubleshooting Excel/Word report layouts
+When developing and debugging an Excel/Word report layout, it can be useful to get a copy of the report dataset in Excel to see the actual data values in there. 
+
+[!INCLUDE [send-report-excel](../developer/includes/send-report-excel.md)]
+
+
+## Troubleshooting report AL code
 When looking at the AL stacktrace from a report error message, it might not be obvious in which of these components the error was triggered. This is especially true for code failing in event subscribers on report events. 
 
 You can troubleshoot report errors using a debugger or with telemetry:
@@ -47,7 +61,7 @@ For more information, see [Report telemetry](../administration/telemetry-reports
 
 ## Reporting exceptions
 
-In the following table, we list some common report exceptions and suggestions to how to fix them.
+In the following table, we list some common report exceptions thrown by the [!INCLUDE[prod_short](includes/prod_short.md)] server and suggestions to how to fix them. 
 
 The different exceptions in the table are grouped by severity
 * **Error** (this is likely an error in the report or the code around the report invocation).
