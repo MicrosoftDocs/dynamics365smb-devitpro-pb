@@ -27,8 +27,10 @@ A report in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can fail
 
 When looking at the AL stacktrace from a report error message, it might not be obvious in which of these components the error was triggered. This is especially true for code failing in event subscribers on report events. 
 
+You can troubleshoot report errors using a debugger or with telemetry:
+- if the error occurs when running AL code, the most effective way to troubleshoot might be to attach a debugger
+- if the error occurs in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform or if you want to investigate an error that was reported by a user a few days ago, the most effective way to troubleshoot the report error is use telemetry. Report telemetry has information not available in the AL stacktrace, namely the [!INCLUDE[prod_short](includes/prod_short.md)] server exception that triggered the error. 
 
-The most effective way to troubleshoot report errors is to enable telemetry. Report telemetry has information not available in the AL stacktrace, namely the [!INCLUDE[prod_short](includes/prod_short.md)] server exception that triggered the error. 
 
 In the paragraphs below, you can read more about report error telemetry and how to use that to identify the cause and possible solutions/mitigations for report errors.
 
