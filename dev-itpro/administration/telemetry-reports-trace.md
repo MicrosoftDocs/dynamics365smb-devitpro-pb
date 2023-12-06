@@ -106,11 +106,26 @@ The documentFormat dimension shows the output of the generated report as a resul
 |Value|Description|
 |-----|-----------|
 |None|There was no output, for example, the user canceled.|
-|Rdlc|The output was a .rdlc file type.|
+|Pdf|The output was a .pdf file type.|
+|Xml|The outout was a .xml file type.|
 |Word|The output was a .docx file type.|
+|Html|The output was a .html file type.|
 |Excel|The output was a .xlsx file type that included the layout and dataset.|
 |ExcelDataset|The output was a .xlsx file type that contained the dataset only.|
 |Custom|The output was an custom file type.|
+|ProcessingOnly|The action was for processing report without any kind of layout.|
+
+### <a name=layoutType></a>layoutType
+
+The layoutType shows the layout type that was used to generate the report in the current action. The action can be taken from the report request page, for example, from the **Send To** menu,  or from AL code.
+
+|Value|Description|
+|-----|-----------|
+|None|There was no layout specified.|
+|Rdlc|The layout was a .rdlc file type.|
+|Word|The layout was a .docx file type.|
+|Excel|The layout was a .xlsx file type.|
+|Custom|The layout was an custom file type.|
 |ProcessingOnly|The action was for processing report without any kind of layout.|
 
 ### Sample KQL code (successful report generation - usage)
