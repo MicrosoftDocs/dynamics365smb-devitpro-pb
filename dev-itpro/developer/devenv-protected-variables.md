@@ -1,5 +1,5 @@
 ---
-title: "Protected Variables"
+title: Protected variables
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -9,7 +9,7 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# Protected Variables
+# Protected variables
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 

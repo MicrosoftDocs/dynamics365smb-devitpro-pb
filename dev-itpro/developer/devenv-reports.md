@@ -8,6 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 
 # Reports overview

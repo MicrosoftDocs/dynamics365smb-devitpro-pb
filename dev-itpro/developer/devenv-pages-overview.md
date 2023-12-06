@@ -1,6 +1,6 @@
 ---
-title: "Pages Overview"
-description: "Pages are the main way to display and organize data." 
+title: Pages overview
+description: Pages are the main way to display and organize data.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
@@ -11,7 +11,7 @@ ms.topic: overview
 ms.author: solsen
 ---
 
-# Pages Overview
+# Pages overview
 
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], pages are the main way to display and organize data. Pages are the primary object that a user will interact with and have a different behavior based on the type of page that you choose. Pages are designed independently of the device they are to be rendered on, and in this way the same page can be reused across phone, tablet, and web clients.
 

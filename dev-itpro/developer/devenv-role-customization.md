@@ -1,5 +1,5 @@
 ---
-title: "Customizing the User Interface for User Roles"
+title: Customizing the user interface for user roles
 description: "Description of how to customize the User Interface in Business Central by using user roles."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Customizing the User Interface for User Roles
+# Customizing the user interface for user roles
 
 The strength of [!INCLUDE[prod_short](includes/prod_short.md)] is its role-tailored experience that helps users focus on the work that is important to them. [!INCLUDE[prod_short](includes/prod_short.md)] offers several features for developers, application administrators, and end-users, that can be used to customize the the pages that users work with in the client. These features customize the pages on different layers, as illustrated in the following figure. Some customization is done in AL extensions, while others can be done from the client.
 

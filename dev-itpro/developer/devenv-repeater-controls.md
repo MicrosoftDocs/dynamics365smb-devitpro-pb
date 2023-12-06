@@ -1,5 +1,5 @@
 ---
-title: Work with Repeater Controls
+title: Work with repeater controls
 description: A repeater is a control used to define a list of records from the source table of a page.
 author: jswymer
 ms.author: jswymer
@@ -9,7 +9,8 @@ ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ---
-# Working with Repeater Controls
+
+# Working with repeater controls
 
 A repeater control is used to define a list of records from the source table of a page. Records are displayed as rows and columns, where each row is a record and each column is a field.
 

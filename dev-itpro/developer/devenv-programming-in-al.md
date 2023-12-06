@@ -7,12 +7,15 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 
 # Programming in AL
+
 AL is the programming language that is used for manipulating data such as retrieving, inserting, and modifying records in a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database. It controls the execution of the various application objects, such as pages, reports, or codeunits.
 
 With AL, you can create business rules to ensure that the data, which is stored in the database is meaningful and consistent with the way customers do business. Through AL programming, you can:
+
 - Add new data or transfer data from one table to another, for example, from a journal table to a ledger table.
 - Combine data from multiple tables into one report or display it on one page.
 
