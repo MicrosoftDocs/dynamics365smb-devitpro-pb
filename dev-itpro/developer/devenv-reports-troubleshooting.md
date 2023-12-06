@@ -85,49 +85,49 @@ The different exceptions in the table are grouped by severity
 ### <a name=NavCSideRecordNotFoundException></a>NavCSideRecordNotFoundException
 The NavCSideRecordNotFoundException error typically occurs when the server tries to access a record that doesn’t exist. This can happen in a report if the report is trying to access data from a table, but the specific record it’s looking for doesn’t exist in that table, or if the user is not allowed to access that record.
 
-**Suggested solution (NavCSideRecordNotFoundException)**
+#### Suggested solution (NavCSideRecordNotFoundException)
 Here are some potential solutions:<br> Check the data: Make sure the data the report is trying to access actually exists in the database.<br> Check the report code: There might be an issue with how the report is trying to access the data. You might need to modify the report code to correctly handle cases where a record doesn’t exist.<br><br>
 
-#### <a name=NavNCLDialogException></a>NavNCLDialogException
+### <a name=NavNCLDialogException></a>NavNCLDialogException
 The NavNCLDialogException error happens when a error funtion has been called in the report. 
 
-**Suggested solution (NavNCLDialogException)**
+#### Suggested solution (NavNCLDialogException)
 The error messages will in most cases provide the necessary information to mitigate the problem. If not, you need a developer to debug the report or the code running the report. If the report was supplied by Microsoft or an ISV, then create a support request.<br><br>
 
-### <a name=NavNCLReportResultEmptyException></a>NavNCLReportResultEmptyException
+#### <a name=NavNCLReportResultEmptyException></a>NavNCLReportResultEmptyException
 When the report dataset does not have any data, we show a dialog to the user.
 
-#### Suggested solution (NavNCLReportResultEmptyException)
+##### Suggested solution (NavNCLReportResultEmptyException)
 This is not an error per se, but if you do not see any successful renderings of the report, you might have a bug in the AL code that generates the dataset. The typical root cause for this error is incorrect filters on the request page that result in an empty data set.<br><br>
 
-### <a name=NavCSideException></a>NavCSideException
+#### <a name=NavCSideException></a>NavCSideException
 There is an error in the report code (likely in the code generating the dataset) or in the code running the report.
 
-#### Suggested solution (NavCSideException)
+##### Suggested solution (NavCSideException)
 You need a developer to debug the report or the code running the report. If the report was supplied by Microsoft or an ISV, then create a support request.<br><br>
 
 ### <a name=NavTestFieldException></a>NavTestFieldException
 This happens when the TESTFIELD function test a value in a field and it does not match the expected value.
 
-#### Suggested solution (NavTestFieldException)
+**Suggested solution (NavTestFieldException)**<br>
 This is not an error per se, but if you do not see any successful renderings of the report, you might have a bug in the AL code for the request page.<br><br>
 
 ### <a name=XmlException></a>XmlException
 This typically happens if there is an error in a Word layout
 
-#### Suggested solution (XmlException)
+**Suggested solution (XmlException)**<br>
 You need a developer to debug the Word report layout. If the layout was supplied by Microsoft or an ISV, then create a support request.<br><br>
 
-### <a name=NavNCLStringLengthExceededException></a>NavNCLStringLengthExceededException
+#### <a name=NavNCLStringLengthExceededException></a>NavNCLStringLengthExceededException
 This can happen when you assign an unlimited string to a string with a fixed length. The error will occur if the source string is longer than the allocated length in the target.
 
-#### Suggested solution (NavNCLStringLengthExceededException)
+**Suggested solution (NavNCLStringLengthExceededException)**<br>
 You need a developer to debug the report or the code running the report. If the report was supplied by Microsoft or an ISV, then create a support request.<br><br>
 
-### <a name=NavCSideDuplicateKeyException></a>NavCSideDuplicateKeyException
+#### <a name=NavCSideDuplicateKeyException></a>NavCSideDuplicateKeyException
 The report code is trying to insert data into a table and there is already data there with the supplied key (either primary or unique)
 
-#### Suggested solution (NavCSideDuplicateKeyException)
+**Suggested solution (NavCSideDuplicateKeyException)**<br>
 You need a developer to debug the report or the code running the report. If the report was supplied by Microsoft or an ISV, then create a support request.<br><br>
 
 ### <a name=Canceled></a>Canceled
