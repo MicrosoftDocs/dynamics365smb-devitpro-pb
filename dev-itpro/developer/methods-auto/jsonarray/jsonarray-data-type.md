@@ -3,7 +3,7 @@ title: "JsonArray Data Type"
 description: "Is a container for any well-formed JSON array."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Is a container for any well-formed JSON array. A default JsonArray contains an e
 
 
 
+## Instance methods
 The following methods are available on instances of the JsonArray data type.
 
 |Method name|Description|
