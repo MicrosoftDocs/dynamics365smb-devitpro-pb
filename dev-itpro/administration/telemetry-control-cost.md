@@ -30,7 +30,7 @@ To control data ingestion cost, consider the following practice when setting up 
 
 For more information, see [Cost optimization in Azure Monitor](/azure/azure-monitor/best-practices-cost) and [Set daily cap on Log Analytics workspace](/azure/azure-monitor/logs/daily-cap).
 
-#### Video example
+#### Video guidance
 
 The following video shows how to enable cost control strategies for telemetry.
 

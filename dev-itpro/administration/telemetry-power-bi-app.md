@@ -142,12 +142,6 @@ After the app is installed, you can connect it to an Azure Application Insights 
     > [!NOTE]  
     > Keep the **Authentication method** set to **OAuth2**. If you get the error *The OAuth authentication method isn't supported for this data source*, check if the application ID is correct; that's usually the root cause for that error.
 
-### Video example
-
-The following video shows how to connect Power BI telemetry apps to read your telemetry data.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fIjn]
-
 ## Configure an app after initial setup
 
 Once an app is installed, you can use its workspace, such as **Dynamics 365 Business Central Usage** to change the app configuration, for example, to connect to a different Application Insights resource or change how many days back the data goes. Follow these steps:
@@ -189,6 +183,12 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
 
 > [!NOTE]
 > If you turn off scheduled refresh and go back to the app, it will remove the Application ID and you have to enter it again.
+
+### Video guidance
+
+The following video shows how to connect Power BI telemetry apps to read your telemetry data.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fIjn]
 
 ## Install, share, and update apps
 

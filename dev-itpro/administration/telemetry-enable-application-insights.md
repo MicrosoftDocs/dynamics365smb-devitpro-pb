@@ -48,7 +48,7 @@ This article describes how to set up sending telemetry data to [!INCLUDE[appinsi
         > [!NOTE]
         > Transition to using connection strings for data ingestion in Application Insights by **31 March 2025**. On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end. After that date, your [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources will continue to receive data, but Microsoft no longer provide updates or customer support for instrumentation key–based global ingestion. 
 
-### Video example
+### Video guidance
 
 The following video summarizes how to store [!INCLUDE [prod_short](../includes/prod_short.md)] telemetry in Azure Application Insights.
 
@@ -64,7 +64,7 @@ The way you enable [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)
 
 For [!INCLUDE [prod_short](../includes/prod_short.md)] online, you can enable telemetry on environments either from the admin center or by using the the admin center API.  To use the admin center, complete the following steps. For information about using the admin center API, go to [Put AppInsights key](administration-center-api_environment_settings.md#put-appinsights-key).
 
-#### Video example
+#### Video guidance
 
 The following video shows how to enable telemetry for online environments.
 
