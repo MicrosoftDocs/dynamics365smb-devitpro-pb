@@ -1,5 +1,5 @@
 ---
-title: "Getting Started Developing Connect Apps for Dynamics 365 Business Central"
+title: Getting Started Developing Connect Apps for Dynamics 365 Business Central
 description: Learn how to get started developing a Connect app 
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.collection: get-started
 ---
 
-# Getting Started Developing Connect Apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
+# Getting started developing Connect apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -46,7 +46,7 @@ Now that we have the username and password, we can connect and authenticate, whi
 
 ## Setting up Microsoft Entra ID based authentication
 
-Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
+Sign in to the [Azure portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
 
 1. Follow the instructions in the [Integrating applications with Microsoft Entra ID](/azure/active-directory/develop/quickstart-register-app) article. The next steps elaborate on some of the specific settings you must enable.
 2. On the **API permissions** page for your app, select the **Add a permission** button. 
@@ -59,7 +59,7 @@ Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d3
 6. From the **Certificates & secrets** page, in the **Client secrets** section, choose **New client secret**:
     - Type a key description (of instance app secret),
     - Select a key duration of either In 1 year, In 2 years, or Never Expires.
-    - When you press the Add button, the key value will be displayed, copy, and save the value in a safe location.
+    - When you press the Add button, the key value is displayed, copy, and save the value in a safe location.
 
     > [!NOTE]  
     > You'll need this key later to configure the project in Visual Studio. This key value will not be displayed again, nor retrievable by any other means, so record it as soon as it is visible from the Azure portal.
@@ -71,7 +71,7 @@ You have now set up the Microsoft Entra ID based authentication. Next, you can g
 In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with basic authentication. 
 
 1. First, in Postman, set up a `GET` call to the base API URL.  
-    - When you call the base API URL, you'll get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation.
+    - When you call the base API URL, you get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation.
 
     - Since we're using basic authentication, we need to include the user's domain in the URL, for example, call `GET https://api.businesscentral.dynamics.com/v2.0/<your tenant domain>/<environment name>/api/v2.0`.
         > [!NOTE]  
@@ -86,19 +86,19 @@ In this `Hello World` example, we're going over the basic steps required to retr
 In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with Microsoft Entra authentication.
 
 1. First, in Postman, set up a `GET` call to the base API URL.
-    - When you call the base API URL, you'll get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation, for example, call `GET https://api.businesscentral.dynamics.com/v2.0/environment name/api/v2.0`
+    - When you call the base API URL, you get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation, for example, call `GET https://api.businesscentral.dynamics.com/v2.0/environment name/api/v2.0`
 2. On the **Authorization** tab in Postman, select **OAuth 2.0** in the **Type** and then choose **Get New Access Token**. 
 3. In the **GET NEW ACCESS TOKEN** window, enter the following information as specified below:
     - In the **Token name** field, choose a descriptive name.
     - In the **Grant type** field, choose **Authorization Code**.
-    - In the **Callback URL** field, specify the URL specified as the sign-on URL/Reply URL in the Azure Portal.
+    - In the **Callback URL** field, specify the URL specified as the sign-on URL/Reply URL in the Azure portal.
     - In the **Auth URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
     - In the **Access Token URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/token?resource=https://api.businesscentral.dynamics.com`.
-    - In the **Client ID** field, enter the Application ID from the registered app in Azure Portal.
+    - In the **Client ID** field, enter the Application ID from the registered app in Azure portal.
     - In the **Scope** field, 
     - In the **Client Secret** field, enter the key generated under **Keys** that you copied in step 6 in the [Setting up Microsoft Entra ID based authentication](#setting-up-microsoft-entra-id-based-authentication).
     - In the **Client Authentication** field, choose the **Send client credentials in body** option.
-4. Choose the **Get New Access Token** button. The first time you sign in, you'll get prompted for consent.
+4. Choose the **Get New Access Token** button. The first time you sign in, you get prompted for consent.
 5. Scroll down and choose **Use token** button.  
 An Authorization request header is now added containing the Bearer token.
 6. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.

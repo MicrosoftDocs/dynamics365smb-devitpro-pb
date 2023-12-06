@@ -9,7 +9,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
-ms.collection: get-started
 ---
 
 # Building an advanced sample extension

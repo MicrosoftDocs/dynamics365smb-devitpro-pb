@@ -8,6 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
 # Extensible Enums

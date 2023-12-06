@@ -8,6 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
+ms.collection: get-started
 ---
 
 # Building your first sample extension with extension objects, install code, and upgrade code
