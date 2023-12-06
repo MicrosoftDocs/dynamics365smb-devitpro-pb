@@ -28,7 +28,9 @@ A report in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can fail
 When looking at the AL stacktrace from a report error message, it might not be obvious in which of these components the error was triggered. This is especially true for code failing in event subscribers on report events. 
 
 
-The most effective way to troubleshoot report errors is to enable telemetry. In the paragraphs below, you can read more about report error telemetry and how to use that to identify the cause and possible solutions/mitigations for report errors.
+The most effective way to troubleshoot report errors is to enable telemetry. Report telemetry has information not available in the AL stacktrace, namely the [!INCLUDE[prod_short](includes/prod_short.md)] server exception that triggered the error. 
+
+In the paragraphs below, you can read more about report error telemetry and how to use that to identify the cause and possible solutions/mitigations for report errors.
 
 ## Reporting telemetry
 
@@ -45,10 +47,13 @@ For more information, see [Report telemetry](../administration/telemetry-reports
 
 In the following table, we list some common report exceptions and suggestions to how to fix them.
 
-The different areas are grouped by severity
-* Error (this is likely an error in the report or the code around the report).
-* TransientError (this error was likely due to a transient issue in the infrastructure running [!INCLUDE[prod_short](includes/prod_short.md)] and can likely be resolved by a retry).
-* Warning (this is likely not an error in the report as such. The issue can likely be resolved by fixing something in the environment, such as changing the permissions for a user/role).
+The different exceptions in the table are grouped by severity
+* **Error** (this is likely an error in the report or the code around the report invocation).
+* **TransientError** (this error was likely due to a transient issue in the infrastructure running [!INCLUDE[prod_short](includes/prod_short.md)] and can likely be resolved by a retry).
+* **Warning** (this is likely not an error in the report as such. The issue can likely be resolved by fixing something in the environment, such as changing the permissions for a user/role).
+
+<br>
+
 
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -80,13 +85,13 @@ The different areas are grouped by severity
 ### <a name=NavCSideRecordNotFoundException></a>NavCSideRecordNotFoundException
 The NavCSideRecordNotFoundException error typically occurs when the server tries to access a record that doesn’t exist. This can happen in a report if the report is trying to access data from a table, but the specific record it’s looking for doesn’t exist in that table, or if the user is not allowed to access that record.
 
-#### Suggested solution (NavCSideRecordNotFoundException)
+**Suggested solution (NavCSideRecordNotFoundException)**
 Here are some potential solutions:<br> Check the data: Make sure the data the report is trying to access actually exists in the database.<br> Check the report code: There might be an issue with how the report is trying to access the data. You might need to modify the report code to correctly handle cases where a record doesn’t exist.<br><br>
 
-### <a name=NavNCLDialogException></a>NavNCLDialogException
+#### <a name=NavNCLDialogException></a>NavNCLDialogException
 The NavNCLDialogException error happens when a error funtion has been called in the report. 
 
-#### Suggested solution (NavNCLDialogException)
+**Suggested solution (NavNCLDialogException)**
 The error messages will in most cases provide the necessary information to mitigate the problem. If not, you need a developer to debug the report or the code running the report. If the report was supplied by Microsoft or an ISV, then create a support request.<br><br>
 
 ### <a name=NavNCLReportResultEmptyException></a>NavNCLReportResultEmptyException
