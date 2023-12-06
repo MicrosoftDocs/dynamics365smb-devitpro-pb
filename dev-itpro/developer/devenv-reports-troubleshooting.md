@@ -14,11 +14,19 @@ ms.date: 10/02/2023
 
 If reports fail to generate or if they take too long time to generate, you might need to investigate why. This article contains strategies for analyzing report telemetry to find possible root cases for such errors or slow performance.
 
+## Ways a report can fail
+As described in the article about the [Report Object](devenv-report-object.md), a report has code for its dataset, typically a layout used for rendering a document (Excel, Word, or PDF), and a request page. When running the report, your AL code might call methods on the report object (static or on the report instance) and/or run code in triggers/event subscribers on report events.
+
+
 A report in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can fail in either of these phases
 1. in the request page
 2. when generating the report dataset
 3. when rendering the report with a layout
 4. in any of the OnAfterDocument* triggers
+
+
+When looking at the AL stacktrace from a report error message, it might not be obvious in which of these components the error was triggered. This is especially true for code failing in event subscribers on report events. 
+
 
 The most effective way to troubleshoot report errors is to enable telemetry. In the paragraphs below, you can read more about report error telemetry and how to use that to identify the cause and possible solutions/mitigations for report errors.
 
@@ -26,7 +34,7 @@ The most effective way to troubleshoot report errors is to enable telemetry. In 
 
 [!INCLUDE[report_telemetry_intro](../includes/include-report-telemetry-intro.md)]
 
-When you run a report, either from the UI, in a background sessions, or from a web service call, it might fail. The failure can either be in the AL code of the report or in the layout. When a report fails to generate, you get an RT0006 event in telemetry and the `result` column in the customDimensions will include the title of the exception that was thrown by the service or the AL code.
+When you run a report, either from the UI, in a background sessions, or from a web service call, it might fail. The failure can either be in the AL code of the report or in the layout. When a report fails to generate, you get an RT0006 event in telemetry and the `result` column in the customDimensions will include the title of the exception that was thrown by the service or the AL code. 
 
 
 [!INCLUDE[telemetry_error_kql](../includes/include-report-telemetry-error-kql.md)]
@@ -35,8 +43,12 @@ For more information, see [Report telemetry](../administration/telemetry-reports
 
 ## Reporting exceptions
 
+In the following table, we list some common report exceptions and suggestions to how to fix them.
 
-In the following table, we list some common report exceptions and suggestions to how to fix them:
+The different areas are grouped by severity
+* Error (this is likely an error in the report or the code around the report).
+* TransientError (this error was likely due to a transient issue in the infrastructure running [!INCLUDE[prod_short](includes/prod_short.md)] and can likely be resolved by a retry).
+* Warning (this is likely not an error in the report as such. The issue can likely be resolved by fixing something in the environment, such as changing the permissions for a user/role).
 
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -60,8 +72,6 @@ In the following table, we list some common report exceptions and suggestions to
 |NavCSideSQLLockTimeoutException|Warning|[Read more](#NavCSideSQLLockTimeoutException)|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
-
 
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
