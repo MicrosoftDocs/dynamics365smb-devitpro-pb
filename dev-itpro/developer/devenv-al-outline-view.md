@@ -6,6 +6,7 @@ ms.custom: na
 ms.date: 09/29/2023
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
 # AL outline view

@@ -1,6 +1,6 @@
 ---
-title: "Keyboard Shortcuts in Visual Studio Code"
-description: "List of keyboard shortcuts for the new development environment (Visual Studio Code)."
+title: Keyboard Shortcuts for AL in Visual Studio Code
+description: List of keyboard shortcuts for the new development environment (Visual Studio Code).
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
@@ -9,9 +9,10 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
-# Keyboard Shortcuts in Visual Studio Code
+# Keyboard shortcuts for AL in Visual Studio Code
 
 The following table provides an overview of some of the shortcut key combinations that you can use when you are working in Visual Studio Code. For a complete overview, see [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings).
 

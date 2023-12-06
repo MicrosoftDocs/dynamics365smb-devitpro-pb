@@ -1,7 +1,7 @@
 ---
 author: SusanneWindfeldPedersen
-title: "Building an Advanced Sample Extension"
-description: "Includes code for an advanced example extension using Business Central and AL in Visual Studio Code."
+title: Building an Advanced Sample Extension
+description: Includes code for an advanced example extension using Business Central and AL in Visual Studio Code.
 ms.custom: na
 ms.date: 12/29/2022
 ms.reviewer: na
@@ -9,9 +9,10 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
-# Building an Advanced Sample Extension
+# Building an advanced sample extension
 
 It's required to submit tests with your extension in order to pass validation. This walkthrough builds an advanced sample extension, which is used as the foundation for writing a test, which you can read about in the [Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md) article. If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). 
 

@@ -8,6 +8,7 @@ ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.date: 09/21/2023
 ms.custom: bap-template
+ms.collection: get-started
 ---
 
 # AL Explorer

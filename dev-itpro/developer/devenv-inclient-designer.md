@@ -1,6 +1,6 @@
 ---
-title: "Using Designer"
-description: "Description of how Designer works and is integrated with the AL development experience."
+title: Using Designer
+description: Description of how Designer works and is integrated with the AL development experience.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -8,6 +8,7 @@ ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.date: 10/14/2022
 ms.custom: bap-template
+ms.collection: get-started
 ---
 
 # Using Designer

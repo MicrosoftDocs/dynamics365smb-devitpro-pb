@@ -9,6 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 
 # AL Simple Statements

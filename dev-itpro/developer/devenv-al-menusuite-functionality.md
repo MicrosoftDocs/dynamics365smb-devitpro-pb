@@ -6,6 +6,7 @@ ms.custom: na
 ms.date: 12/05/2023
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
 # Adding pages and reports to Tell me
