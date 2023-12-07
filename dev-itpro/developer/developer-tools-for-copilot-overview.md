@@ -19,6 +19,16 @@ The advantages of using this toolkit include:
 - Creating a unified Copilot experience.
 - Accelerating time to market.
 
+
+## Benefits 
+
+With Business Central's flexible development platform, developers can implement AI from scratch using any AI platform, model or APIs. However, building upon the toolkit provides numerous benefits to both partners and customers. 
+
+|Stakeholder|Benefits|
+|-|-|
+|Partners|<ul><li>Rapidly build prototypes to validate ideas within your team or with customers.</li><li>Attractive visual design with signature Microsoft Copilot experience that is seamless in Business Central's UI. </li><li>Build upon Microsoft's expertise in responsible AI to improve the safety of your features. </li><li>Reduced time and effort to bring your idea to market, resulting in new monetization and compete opportunities. </li></ul>|
+|Customers|<ul><li>Seamlessness and consistency of experience across Copilot capabilities from different software vendors.</li><li>Safer Business Central capabilities, developed responsibly  </li><li>Centralized place to discover and control generative AI features from Microsoft and partners. </li></ul>|
+
 ## Intent
 
 The following table outlines the primary intended uses and characteristics of the developer tools for copilot:
