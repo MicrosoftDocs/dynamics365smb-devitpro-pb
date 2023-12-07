@@ -48,8 +48,17 @@ We strongly advise against modifying **Permissions** related tables because **Pe
    |Company Name|Select the company you want to filter on or select *All** to filter on all companies that are included in the cloud migration. Select **Per database tables** to filter on only tenant-level tables that on aren't specific to a company.|
    |Table Name|Find tables whose names contain the text that you enter, making it easier to find the related tables.|
 
-   
-   To view a history of changes done with the timestamps so you can see when the change to the properties was made
+## View tables that aren't using default settings
+
+To get a list of tables that have had the  **Replicate data** or **Preserve the cloud data** fields changed from the default settings, select the **View changed records** action.    
+
+## Reset to default settings
+
+To revert a table to the default **Replicate data** or **Preserve the cloud data** settings, select the table in the list and then select the **Reset to default** action.
+
+## View a history of all data replication changes
+
+To view a history of all changes that have been made to **Replicate data** or **Preserve the cloud data** fields on tables, select the **Show history** action. 
 
 ## Next steps
 
