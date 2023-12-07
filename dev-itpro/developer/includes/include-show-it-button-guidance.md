@@ -1,4 +1,3 @@
-For Show-it actions, consider 
 - Show-it actions are phrased: “Show...”.
   - Such as: “Show User Setup”, “Show Items list” or “Show Item 70062”. 
 - Show-it action tooltips are often phrased: “Opens page:..”.

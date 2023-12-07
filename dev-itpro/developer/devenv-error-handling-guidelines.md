@@ -90,10 +90,13 @@ The title of an error dialog is the first thing the user sees. Use the title to 
 In the body of the error dialog, use positive cases (telling what the user can do) where possible. Sometimes you need to tell what you can’t do, but for validation errors space is limited, so focus on the solution.
 
 ### Button labels (for Fix-it and Show-it actions)
-If you can, use a Fix-it action or a Show-it action. 
+When you need to use error dialogs, where possible use a Fix-it action or a Show-it action. To achieve consistency in the user experience of such error dialogs, please consider following these guidelines for button labels.
 
+For Fix-it actions, consider 
 [!INCLUDE [fix-it-button-guidance](includes/include-fix-it-button-guidance.md)]
 
+
+For Show-it actions, consider 
 [!INCLUDE [show-it-button-guidance](includes/include-show-it-button-guidance.md)]
 
 ### Error messages

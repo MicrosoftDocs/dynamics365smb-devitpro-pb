@@ -3,6 +3,7 @@ With [!INCLUDE [prod_short](prod_short.md)] 2023 release wave 2, the error handl
 * [Show-it](../devenv-error-handling-guidelines.md#error-messages-with-show-it-actions--when-to-use-them) actions are recommended for scenarios when the system can identify the location where the error may be fixed by the user.
 
 Here are some quick guidelines on when to use each type of error message and its accompanying recommended actions. However, it's essential to begin by considering whether the error could have been avoided in the first place.
+
 | Error type | Description |
 |------------|-------------|
 |Task dialogs |	Task dialogs are used when an error can be mitigated by the user choosing between two (sometimes three) different options to continue their task without encountering an error.|
