@@ -375,8 +375,8 @@
 #### Set up cloud migration
 ##### [Cloud migration setup overview](administration/migration-setup-overview.md)
 ##### [Define migration table mappings](administration/migration-table-mapping.md)
-##### [Change how data is replicated](administration/cloud-migration-change-replication.md)
 ##### [Run cloud migration setup](administration/migration-setup.md)
+##### [Change how data is replicated](administration/cloud-migration-change-replication.md)
 ##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
 #### Replicate data
 ##### [Data replication overview](administration/migration-data-replication.md)
