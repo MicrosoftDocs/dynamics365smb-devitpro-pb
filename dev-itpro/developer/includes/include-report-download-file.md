@@ -1,0 +1,2 @@
+> [!NOTE]  
+> The *FileName* parameter specifies a location on the computer that is running [!INCLUDE[prod_short](./prod_short.md)]. If you call this method from a client, such as from an action on a page, then use the [File.Download](../methods-auto/file/file-download-method.md) method to download the .pdf file from the computer that is running the [!INCLUDE[prod_short](./prod_short.md)] server to the computer that is running the client.
