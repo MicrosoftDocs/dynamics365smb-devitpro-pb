@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Report Design Overview
 
-A report is composed of the following items:  
+A report in [!INCLUDE[prod_long](includes/prod_long.md)] is composed of the following items:  
 
 - A report object
 - A report dataset
@@ -21,7 +21,7 @@ A report is composed of the following items:
 - A request page
 - Properties, triggers, and code 
 
-You design a report by first defining the dataset, and then designing the visual layout.  
+You design a report by first defining the dataset, then designing the visual layout, and finally a request page.
 
 ## Report object  
 
@@ -29,18 +29,18 @@ You create a report object in the [!INCLUDE[d365_dev_long_md](includes/d365_dev_
 
 ## Report dataset
 
-In order to define the underlying data model, you use the report dataset. A report dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fine_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. You build the report dataset by adding data items and columns. For more information, see [Report Dataset](devenv-report-dataset.md). You can also extend a dataset from an existing report, to add more columns for example. For more information, see [Report Extension Object](devenv-report-ext-object.md).
+In order to define the underlying data model, you use the report dataset. A report dataset determines the data that is extracted or calculated from the [!INCLUDE[prod_short](includes/prod_short.md)] database tables that can be used in a report. You build the report dataset by adding data items and columns. For more information, see [Report Dataset](devenv-report-dataset.md). You can also extend a dataset from an existing report, to add more columns for example. For more information, see [Report Extension Object](devenv-report-ext-object.md).
 
 [!INCLUDE[intelli_shortcut](includes/query_as_a_report_datasource.md)]
 
 ## Report layouts  
 
-The visual layout determines the content and format of a report when it is viewed and printed. You build the layout of a report by arranging data items and columns and specifying the general format, such as text font and size. A report that is viewed, printed, or saved from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] client must have a report layout. 
+The visual layout determines the content and format of a report when it is viewed and printed. You build the layout of a report by arranging data items and columns and specifying the general format, such as text font and size. A report that is viewed, printed, or saved from a [!INCLUDE[prod_short](includes/prod_short.md)] client must have a report layout. 
 
 There are three types of report layouts: Excel report layouts, Word report layouts, and layouts using report definition language (RDL). You can also extend an existing report, for example, to add a new layout. For more information, see [Report Extension Object](devenv-report-ext-object.md).
 
 > [!NOTE]  
-> The layout in a *report extension* will not automatically be used when the report extension is deployed. To use the report extension layout, in [!INCLUDE [prod_short](../includes/prod_short.md)], go to the **Report Layout Selection** page to choose to use the new layout for the report in question by choosing it from the **Custom Layout Description** drop-down box.
+> The layout in a *report extension* will not automatically be used when the report extension is deployed. To use the report extension layout, in [!INCLUDE [prod_short](includes/prod_short.md)], go to the **Report Layout Selection** page to choose to use the new layout for the report in question by choosing it from the **Custom Layout Description** drop-down box.
 
 ### Excel report layout
 
