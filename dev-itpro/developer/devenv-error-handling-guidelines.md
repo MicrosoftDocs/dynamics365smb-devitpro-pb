@@ -1,8 +1,8 @@
 ---
 title: User experience guidelines for errors
 description: Describes how to handle error dialogs in AL code.
-author: SusanneWindfeldPedersen, samirdal, kennienp
-ms.author: solsen
+author: samirdal
+ms.author: samirdal
 ms.reviewer: solsen
 ms.service: dynamics365-business-central
 ms.topic: conceptual
