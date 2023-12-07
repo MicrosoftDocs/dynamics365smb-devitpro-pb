@@ -1337,7 +1337,7 @@
 ### [Business events (preview)](developer/business-events-overview.md)
 ## Integrating AI using developer tools for copilot
 ### [Overview](developer/ai-integration-landing-page.yml)
-### [What is developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
+### [What are developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
 ### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
 ### [Get setup with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### Build a Copilot experience
