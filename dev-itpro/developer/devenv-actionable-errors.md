@@ -5,8 +5,8 @@ ms.custom: bap-template
 ms.date: 11/21/2023
 ms.reviewer: na
 ms.topic: conceptual
-author: kennienp
-ms.author: samirdal, kepontop
+author: kennienp, samirdal
+ms.author: samirdal
 ms.service: dynamics365-business-central
 ---
 
