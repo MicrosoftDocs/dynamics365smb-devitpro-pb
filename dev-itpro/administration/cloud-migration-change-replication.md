@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to 
 ms.collection: 
-ms.date: 11/17/2023
+ms.date: 12/07/2023
 ms.custom: bap-template 
 ---
 
@@ -17,7 +17,7 @@ In this article, you learn how to use the **Change how the data is replicated** 
 
 ## Considerations before you start
 
-This is an expert feature that can lead to incorrectly replicated data or losing access to the tenant. The default settings were defined after careful consideration. Make sure you fully understand the application functionality you want to change so that you include or exclude all related tables.
+This feature is an expert feature that can lead to incorrectly replicated data or losing access to the tenant. The default settings were defined after careful consideration. Make sure you fully understand the application functionality you want to change so that you include or exclude all related tables.
 
 We strongly advise against modifying **Permissions** related tables because **Permissions** from on-premises and online aren't compatible. We recommend setting up the permissions again by using the online permission sets. Replicating permissions can lead to losing access or to some application features not working properly. If you lose access, delete and create the environment again or use point-in-time restore to the point before replication.
 
@@ -38,8 +38,8 @@ We strongly advise against modifying **Permissions** related tables because **Pe
  
    |Field|Description|How to change this setting|
    |-|-|-|
-   |Replicate data| If this check box is selected, then the table and its data are included in the migration to the online tenant. If this check box is cleared, the table and its data are excluded from cloud migration. |To include a table in the cloud migration, select the table in the list, then select the **Include in migration** action. To exclude a table, select the table in the list, select the arrowhead next to the **Include in migration** action, then select **Exclude from migration**. <br><br>**TIP:** Use the <kbd>Shift</kbd> and <kbd>Crtl</kbd> keys when selecting tables to change multiple tables at once.
-   |Preserve the cloud data|If the check box is selected, then data already included in records of the online table remains. Only records in the on-premises table that are missing in in the online table are copied. If the check box is cleared, the all data in table in the cloud will be deleted before copying the data from on-premises database.|To preserve data in the table in the cloud, select the table in the list, then select the **Preserve data** action. To delete the data in the online table during cloud replication, select the table in the list, select the arrowhead next to the **Preserve data** action, then select **Clear data before migration** (this will clear the **Preserve the cloud data** check box). Clear data before migration**<br><br>**TIP:** Use the <kbd>Shift</kbd> and <kbd>Ctrl</kbd> key when selecting tables to change multiple tables at once.|
+   |Replicate data| If this checkbox is selected, then the table and its data are included in the migration to the online tenant. If this checkbox is cleared, the table and its data are excluded from cloud migration. |To include a table in the cloud migration, select the table in the list, then select the **Include in migration** action. To exclude a table, select the table in the list, select the arrowhead next to the **Include in migration** action, then select **Exclude from migration**. <br><br>**TIP:** Use the <kbd>Shift</kbd> and <kbd>Ctrl</kbd> keys when selecting tables to change multiple tables at once.
+   |Preserve the cloud data|If the checkbox is selected, then data already included in records of the online table remains. Only records in the on-premises table that are missing in the online table are copied. If the checkbox is cleared, the all data in table in the cloud is deleted before copying the data from on-premises database.|To preserve data in the table in the cloud, select the table in the list, then select the **Preserve data** action. To delete the data in the online table during cloud replication, select the table in the list, select the arrowhead next to the **Preserve data** action, then select the **Clear data before migration** action (this action clears the **Preserve the cloud data** checkbox). Clear data before migration**<br><br>**TIP:** Use the <kbd>Shift</kbd> and <kbd>Ctrl</kbd> key when selecting tables to change multiple tables at once.|
 
    Use the **Company Name** and **Table Name** fields to filter the list and help you find specific tables.
 
@@ -50,15 +50,15 @@ We strongly advise against modifying **Permissions** related tables because **Pe
 
 ## View tables that aren't using default settings
 
-To get a list of tables that have had the  **Replicate data** or **Preserve the cloud data** fields changed from the default settings, select the **View changed records** action.    
+To get a list of tables for which the **Replicate data** or **Preserve the cloud data** fields aren't using the default settings, select the **View changed records** action.    
 
 ## Reset to default settings
 
-To revert a table to the default **Replicate data** or **Preserve the cloud data** settings, select the table in the list and then select the **Reset to default** action.
+To revert a table to the default **Replicate data** or **Preserve the cloud data** settings, select the table in the list and then select the **Reset to default** action. 
 
-## View a history of all data replication changes
+## View a history of changes to replication settings
 
-To view a history of all changes that have been made to **Replicate data** or **Preserve the cloud data** fields on tables, select the **Show history** action. 
+To view a history of all changes made to the **Replicate data** or **Preserve the cloud data** fields on tables, select the **Show history** action. 
 
 ## Next steps
 
