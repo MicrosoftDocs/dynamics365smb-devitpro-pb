@@ -1,33 +1,32 @@
 ---
-title: Overview article template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: Overview description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: overview #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
-ms.date: 11/04/2023
-ms.custom: bap-template #Required; don't change.
+title: What are the developer tools for copilot?
+description: Get an overview of the toolkit from Business central for building copilots in your extensions.
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer 
+ms.topic: overview
+ms.collection: get-started
+ms.date: 12/07/2023
+ms.custom: bap-template 
 ---
 
 # What are the developer tools for copilot?
 
-Azure OpenAI Service offers robust, generative AI models that our partners can now utilize to foster a rich ecosystem of AI-powered extensions for Business Central. Developer Tools for Copilot is a specialized toolkit that allows AL developers to easily integrate Azure OpenAI Service into AL code. This toolkit enables developers to enrich their extensions and solutions with generative AI, creating a seamless integration into the Business Central user experience, and allowing for a straightforward implementation into their add-ons or customizations.
+Azure OpenAI Service offers robust, generative AI models that our partners can now utilize to foster a rich ecosystem of AI-powered extensions for Business Central. Developer tools for copilot make up a specialized toolkit that allows AL developers to easily integrate Azure OpenAI Service into AL code. This toolkit enables developers to enrich their extensions and solutions with generative AI, creating a seamless integration into the Business Central user experience, and allowing for a straightforward implementation into their add-ons or customizations.
+
+## Benefits 
 
 The advantages of using this toolkit include:
 - Designing Solutions that adhere to Responsible AI principles.
 - Creating a unified Copilot experience.
 - Accelerating time to market.
 
-
-## Benefits 
-
-With Business Central's flexible development platform, developers can implement AI from scratch using any AI platform, model or APIs. However, building upon the toolkit provides numerous benefits to both partners and customers. 
+With Business Central's flexible development platform, developers can implement AI from scratch using any AI platform, model, or API. However, building upon the toolkit provides numerous benefits to both partners and customers. 
 
 |Stakeholder|Benefits|
 |-|-|
 |Partners|<ul><li>Rapidly build prototypes to validate ideas within your team or with customers.</li><li>Attractive visual design with signature Microsoft Copilot experience that is seamless in Business Central's UI. </li><li>Build upon Microsoft's expertise in responsible AI to improve the safety of your features. </li><li>Reduced time and effort to bring your idea to market, resulting in new monetization and compete opportunities. </li></ul>|
-|Customers|<ul><li>Seamlessness and consistency of experience across Copilot capabilities from different software vendors.</li><li>Safer Business Central capabilities, developed responsibly  </li><li>Centralized place to discover and control generative AI features from Microsoft and partners. </li></ul>|
+|Customers|<ul><li>Seamlessness and consistency of experience across copilot capabilities from different software vendors.</li><li>Safer Business Central capabilities, developed responsibly  </li><li>Centralized place to discover and control generative AI features from Microsoft and partners. </li></ul>|
 
 ## Intent
 
