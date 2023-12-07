@@ -5,7 +5,7 @@ ms.custom: bap-template
 ms.date: 11/21/2023
 ms.reviewer: na
 ms.topic: conceptual
-author: kennienp, samirdal
+author: samirdal
 ms.author: samirdal
 ms.service: dynamics365-business-central
 ---
@@ -19,14 +19,6 @@ For advice on how to design error dialogs that users understand, see [User exper
 
 ## Unblocking users with actionable errors
 [!INCLUDE [actionable-errors-overview](includes/include-actionable-errors-overview.md)]
-
-## Guidance for button labels (for Fix-it and Show-it actions)
-
-To achieve consistency in the user experience of Fix-it and Show-it actions, please consider following these guidelines for button labels:
-
-[!INCLUDE [fix-it-button-guidance](includes/include-fix-it-button-guidance.md)]
-
-[!INCLUDE [show-it-button-guidance](includes/include-show-it-button-guidance.md)]
 
 ## <a name="fix-it-actions"></a> Error messages with Fix-it actions 
 
@@ -56,6 +48,13 @@ If the user experience that the field cannot be validated, they will see the fol
 
 :::image type="content" source="media/validation-error-fixit.png" alt-text="Validation error with fix-it action":::
 
+### Guidance for button labels for Fix-it actions
+
+To achieve consistency in the user experience of Fix-it actions, please consider following these guidelines for button labels:
+
+[!INCLUDE [fix-it-button-guidance](includes/include-fix-it-button-guidance.md)]
+
+
 ## <a name="show-it-actions"></a> Error messages with Show-it actions
 
 [!INCLUDE [actionable-errors-show-it-actions](includes/include-actionable-errors-show-it-actions.md)]
@@ -77,6 +76,14 @@ If the user experience the error, they will see the following error dialog
 If the user experience that the field cannot be validated, they will see the following dialog
 
 :::image type="content" source="media/validation-error-showit.png" alt-text="Validation error with show-it action":::
+
+### Guidance for button labels for Show-it actions
+
+To achieve consistency in the user experience of Show-it actions, please consider following these guidelines for button labels:
+
+[!INCLUDE [show-it-button-guidance](includes/include-show-it-button-guidance.md)]
+
+
 
 ## Error messages with multiple actions - how to use them?
 
