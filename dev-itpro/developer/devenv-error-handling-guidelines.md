@@ -26,7 +26,7 @@ In this article, you can learn how to use actionable errors to provide recommend
 [!INCLUDE [actionable-errors-fix-it-actions](includes/include-actionable-errors-fix-it-actions.md)]
 
 
-An error message with Fix-it actions looks like this:
+<br>An error message with a Fix-it action looks like this:
 :::image type="content" source="media/error-dialog-fixit.png" alt-text="Error dialog with fix-it action":::
 
 For more information, see [Error messages with Fix-it actions](devenv-actionable-errors.md#fix-it-actions)
@@ -36,7 +36,7 @@ For more information, see [Error messages with Fix-it actions](devenv-actionable
 [!INCLUDE [actionable-errors-show-it-actions](includes/include-actionable-errors-show-it-actions.md)]
 
 
-An error message with Show-it actions looks like this:
+<br>An error message with a Show-it action looks like this:
 :::image type="content" source="media/error-dialog-showit.png" alt-text="Error dialog with show-it action":::
 
 

@@ -24,6 +24,13 @@ For advice on how to design error dialogs that users understand, see [User exper
 
 [!INCLUDE [actionable-errors-fix-it-actions](includes/include-actionable-errors-fix-it-actions.md)]
 
+### Guidance for button labels for Fix-it actions
+
+To achieve consistency in the user experience of Fix-it actions, please consider following these guidelines for button labels:
+
+[!INCLUDE [fix-it-button-guidance](includes/include-fix-it-button-guidance.md)]
+
+
 ### Example (error dialog with a Fix-it action)
 The following AL code illustrates how to setup an error dialog with a Fix-it action.
 
@@ -48,17 +55,16 @@ If the user experience that the field cannot be validated, they will see the fol
 
 :::image type="content" source="media/validation-error-fixit.png" alt-text="Validation error with fix-it action":::
 
-### Guidance for button labels for Fix-it actions
-
-To achieve consistency in the user experience of Fix-it actions, please consider following these guidelines for button labels:
-
-[!INCLUDE [fix-it-button-guidance](includes/include-fix-it-button-guidance.md)]
-
 
 ## <a name="show-it-actions"></a> Error messages with Show-it actions
 
 [!INCLUDE [actionable-errors-show-it-actions](includes/include-actionable-errors-show-it-actions.md)]
 
+### Guidance for button labels for Show-it actions
+
+To achieve consistency in the user experience of Show-it actions, please consider following these guidelines for button labels:
+
+[!INCLUDE [show-it-button-guidance](includes/include-show-it-button-guidance.md)]
 
 ### Example (error dialog with a Show-it action)
 The following AL code illustrates how to setup an error dialog with a Show-it action.
@@ -76,14 +82,6 @@ If the user experience the error, they will see the following error dialog
 If the user experience that the field cannot be validated, they will see the following dialog
 
 :::image type="content" source="media/validation-error-showit.png" alt-text="Validation error with show-it action":::
-
-### Guidance for button labels for Show-it actions
-
-To achieve consistency in the user experience of Show-it actions, please consider following these guidelines for button labels:
-
-[!INCLUDE [show-it-button-guidance](includes/include-show-it-button-guidance.md)]
-
-
 
 ## Error messages with multiple actions - how to use them?
 
