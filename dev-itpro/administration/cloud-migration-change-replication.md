@@ -54,7 +54,7 @@ To get a list of tables for which the **Replicate data** or **Preserve the cloud
 
 ## Reset to default settings
 
-To revert a table to the default **Replicate data** or **Preserve the cloud data** settings, select the table in the list and then select the **Reset to default** action. 
+To revert a table to the default **Replicate data** and **Preserve the cloud data** settings, select the table in the list and then select the **Reset to default** action. 
 
 ## View a history of changes to replication settings
 
