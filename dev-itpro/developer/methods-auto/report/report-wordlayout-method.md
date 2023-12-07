@@ -55,16 +55,15 @@ var
     result: Boolean;
 begin
     result := Report.WordLayout(ObjectId, layoutAsStream);
-    if result then begin
+    if result then
         // use the layout that now is available in the stream
-    end
     else
         // handle that no object exists with that id or that no Excel layout exists for that report
     ;
 end;
 ```
 
-If the report is known when you write the code, the safest way to runtime errors is to use the scope (::) operator to reference the report object. This way you'll get a compile time error if the report doesn't exist. The example illustrates how to call WordLayout on the report MyReport using this technique:
+If the report is known when you write the code, the safest way to avoid runtime errors is to use the scope (::) operator to reference the report object. This way you'll get a compile time error if the report doesn't exist. The example illustrates how to call WordLayout on the report MyReport using this technique:
 
 ```AL
 var
@@ -74,9 +73,8 @@ begin
     // if MyReport does not exist, then Report::MyReport will fail at compile time
     result := Report.WordLayout(Report::MyReport, layoutAsStream);
 
-    if result then begin
+    if result then
         // use the layout that now is available in the stream
-    end
     else
         // handle that no Excel layout exists for that report
     ;
