@@ -1,6 +1,6 @@
 ---
 title: "Report.SaveAs(Integer, Text, ReportFormat, var OutStream [, RecordRef]) Method"
-description: "Runs a specific report without a request page and saves the report as a PDF, Excel, Word, HTML, or XML file."
+description: "Runs a specific report without a request page and saves the report as a PDF, Excel, Word, HTML, or XML file. (static method)"
 ms.author: solsen
 ms.custom: na
 ms.date: 03/02/2023
@@ -61,6 +61,29 @@ For a simple example that illustrates how to use the SaveAs method, see example 
 
 > [!NOTE]  
 > By default, when a report uses an RDL report layout at runtime, fonts are embedded in the generated PDF. You can specify whether fonts are embedded in the PDF for RDL reports by changing the **Report PDF Font Embedding** setting in the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance configuration or changing the **PDFFontEmbedding** property in report objects. <!--NAV For more information, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md) and [PDFFontEmbedding Property](../properties/devenv-PDF-FontEmbedding-Property.md).-->  
+
+### Error conditions  
+The method can fail in the following two ways:
+- [!INCLUDE[report_saveas_error_list_report_not_exists](../../includes/include-report-saveas-error-list-report-not-exists.md)]
+- If the string of request page parameters as XML specified in "*Parameters*" cannot be parsed as valid request page data.
+
+If the report you specify does not exist, then a run-time error occurs.  
+
+## Example (robust coding)
+This example shows how to use the static SaveAs method in a safe way (where no errors occur).
+
+```AL 
+var
+    RequestPageParameters: Text;
+    Format: ReportFormat;
+    Stream: OutStream;
+begin
+    // setup RequestPageParameters, Format, and Stream variables
+
+    // Note that by using the scope operator (::), you catch at compile time if MyReport does not exist
+    Report.SaveAs(Report::MyReport, RequestPageParameters, Format, Stream);
+end;
+``` 
 
 ## See Also
 [Report Data Type](report-data-type.md)  
