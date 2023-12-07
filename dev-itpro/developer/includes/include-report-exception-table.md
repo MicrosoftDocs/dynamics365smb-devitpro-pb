@@ -20,7 +20,6 @@
 |NavEntitlementPermissionException|Warning|[Read more](#NavEntitlementPermissionException)|
 |NavFilterException|Error/Warning|[Read more](#NavFilterException)|
 |NavNCLArgumentException|Error|[Read more](#NavNCLArgumentException)|
-|NavNCLArgumentOutOfRangeException||[Read more](#NavNCLArgumentOutOfRangeException)|
 |NavNCLCallbackNotAllowedException|Error|[Read more](#NavNCLCallbackNotAllowedException)|
 |NavNCLConversionCastException|Error|[Read more](#NavNCLConversionCastException)|
 |NavNCLDateInvalidException|Error|[Read more](#NavNCLDateInvalidException)|
@@ -30,18 +29,13 @@
 |NavNCLEvaluateException|Error|[Read more](#NavNCLEvaluateException)|
 |NavNCLFieldNotFoundException|Error|[Read more](#NavNCLFieldNotFoundException)|
 |NavNclHttpRequestException|Error|[Read more](#NavNclHttpRequestException)|
-|NavNCLIncompatibleConnectionIntentException||[Read more](#NavNCLIncompatibleConnectionIntentException)|
 |NavNCLInvalidPathException|Error|[Read more](#NavNCLInvalidPathException)|
 |NavNCLMissingFileNameException|Error|[Read more](#NavNCLMissingFileNameException)|
-|NavNCLNotSupportedTypeException||[Read more](#NavNCLNotSupportedTypeException)|
-|NavNCLOutsidePermittedRangeException||[Read more](#NavNCLOutsidePermittedRangeException)|
 |NavNCLRecordNotOpenedException|Error|[Read more](#NavNCLRecordNotOpenedException)|
 |NavNCLReportDefinitionInvalidException|Error|[Read more](#NavNCLReportDefinitionInvalidException)|
 |NavNCLReportNoLayoutException|Error|[Read more](#NavNCLReportNoLayoutException)|
 |NavNCLReportResultEmptyException|Warning|[Read more](#NavNCLReportResultEmptyException)|
-|NavNCLReportSourceExpressionException||[Read more](#NavNCLReportSourceExpressionException)|
 |NavNCLStringLengthExceededException|Error|[Read more](#NavNCLStringLengthExceededException)|
-|NavNCLTableIdMismatchException||[Read more](#NavNCLTableIdMismatchException)|
 |NavNCLXmlException|Error|[Read more](#NavNCLXmlException)|
 |NavOfficeDocumentRenderMaxRowsExceededException|Error|[Read more](#NavOfficeDocumentRenderMaxRowsExceededException)|
 |NavPermissionException|Warning|[Read more](#NavPermissionException)|

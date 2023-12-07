@@ -128,12 +128,6 @@ Invalid parameter has been passed on to an AL runtime method.
 **Suggested solution**<br>
 You need a developer to debug the report. If the report was supplied by Microsoft or an ISV, then create a support request.<br><br>
 
-### <a name=NavNCLArgumentOutOfRangeException></a>NavNCLArgumentOutOfRangeException
-
-
-**Suggested solution**<br>
-<br><br>
-
 ### <a name=NavNCLCallbackNotAllowedException></a>NavNCLCallbackNotAllowedException
 The report is running in the background or triggered from a webservice and the code is trying to open UI from any function in AL that requires the client , for example confirmation, a file upload, opening a page etc. 
 
@@ -188,12 +182,6 @@ The NavNclHttpRequestException error in AL code for Microsoft Dynamics 365 Busin
 **Suggested solution**<br>
 An error in (third-party) extension code being called from report triggers. You need a developer to debug the report code. If the report was supplied by Microsoft or an ISV, then create a support request.<br><br>
 
-### <a name=NavNCLIncompatibleConnectionIntentException></a>NavNCLIncompatibleConnectionIntentException
-
-
-**Suggested solution**<br>
-<br><br>
-
 ### <a name=NavNCLInvalidPathException></a>NavNCLInvalidPathException
 This typically happens in processing-only reports. Some typical scenarios are code that tries to read or write a file using an invalid path (OnPrem) or a path outside of the users allowed temp area (SaaS).
 
@@ -205,18 +193,6 @@ This typically happens in processing-only reports
 
 **Suggested solution**<br>
 First check the parameters on the request page. Could be a missing file name in field that does not have a proper field validation. You might need a developer to debug the report code or the code running the report<br><br>
-
-### <a name=NavNCLNotSupportedTypeException></a>NavNCLNotSupportedTypeException
-
-
-**Suggested solution**<br>
-<br><br>
-
-### <a name=NavNCLOutsidePermittedRangeException></a>NavNCLOutsidePermittedRangeException
-
-
-**Suggested solution**<br>
-<br><br>
 
 ### <a name=NavNCLRecordNotOpenedException></a>NavNCLRecordNotOpenedException
 AL runtime error caused by programming errror when the code does not open a record reference before use.
@@ -242,23 +218,11 @@ When the report dataset does not have any data, we show a dialog to the user.
 **Suggested solution**<br>
 This is not an error per se, but if you do not see any successful renderings of the report, you might have a bug in the AL code that generates the dataset. The typical root cause for this error is incorrect filters on the request page that result in an empty data set.<br><br>
 
-### <a name=NavNCLReportSourceExpressionException></a>NavNCLReportSourceExpressionException
-
-
-**Suggested solution**<br>
-<br><br>
-
 ### <a name=NavNCLStringLengthExceededException></a>NavNCLStringLengthExceededException
 This can happen when you assign an unlimited string to a string with a fixed length. The error will occur if the source string is longer than the allocated length in the target.
 
 **Suggested solution**<br>
 You need a developer to debug the report or the code running the report. If the report was supplied by Microsoft or an ISV, then create a support request.<br><br>
-
-### <a name=NavNCLTableIdMismatchException></a>NavNCLTableIdMismatchException
-
-
-**Suggested solution**<br>
-<br><br>
 
 ### <a name=NavNCLXmlException></a>NavNCLXmlException
 This typically happens if there is an error in the XML of the request page
