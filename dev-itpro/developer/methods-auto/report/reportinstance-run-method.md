@@ -35,24 +35,24 @@ An instance of the [Report](report-data-type.md) data type.
 
 After you define the *Report* variable, you can run this method or the [RunModal Method \(Report\)](reportinstance-runmodal-method.md) on the variable. With the Run method, the variable is automatically cleared after the method is executed. With the RunModal method, the variable is not automatically cleared. 
 
-Use Run method or the RunModal method if you know at design time the exact report that you want to run. Otherwise, use the [Report.Run Method](report-run-method.md) or [Report.RunModal Method](report-runmodal-method.md).  
+Use Run method or the RunModal method if you know at design time the exact report that you want to run. Otherwise, use the static methods [Report.Run Method](report-run-method.md) or [Report.RunModal Method](report-runmodal-method.md). 
   
-If the report you specify does not exist, then a compile error occurs.  
 
 
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
   
 ## Example  
 
-```  
+```AL
 var
     CustomerRec: Record Customer;
-    SomeReport: Report "Salesperson - Sales Statistics";
+    SalesReport: Report "Salesperson - Sales Statistics";
 begin
     CustomerRec.SetCurrentKey("No.");  
     CustomerRec.SetFilter("Salesperson Code", 'JR|PS');  
-    SomeReport.SetTableView(CustomerRec);  
-    SomeReport.Run;
+    SalesReport.SetTableView(CustomerRec);  
+    
+    SalesReport.Run();
 end;
 ```  
 
