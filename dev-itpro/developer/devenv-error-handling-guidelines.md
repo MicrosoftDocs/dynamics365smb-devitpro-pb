@@ -97,7 +97,7 @@ For Fix-it actions, consider
 For Show-it actions, consider 
 [!INCLUDE [show-it-button-guidance](includes/include-show-it-button-guidance.md)]
 
-### Error messages - do this
+### Error message voice guidelines - do this
 When writing error messages, consider using these overall rules of thumb:
 
 - Use the word problem instead of error, issue, or technical problem. 
@@ -109,7 +109,17 @@ When writing error messages, consider using these overall rules of thumb:
   - The user must get help from a support representative.  
   - A product or service fails. 
 
-### Error messages - avoid this
+
+### Error messages voice guidelines - use contractions
+To write error messages that are simple and feel human, consider using contractions:
+
+- Use common contractions, such as it’s, you’re, that's, and don’t, to create a friendly, informal tone.
+- Don't mix contractions and their spelled-out equivalents in UI text. For example, don’t use can’t and cannot in the same UI.
+- Never form a contraction from a noun and a verb, such as Microsoft’s developing many new cloud services.
+- Avoid ambiguous or awkward contractions, such as there’d, it’ll, and they’d.
+
+
+### Error messages voice guidelines - avoid this
 Users see your program from the functionality it provides, not how it is constructed. Therefore, you should avoid words and phrases such as
 
 - “There has been an error” or “An error has occurred”  
@@ -122,13 +132,6 @@ Remember these rules of thumb
 - Avoid robotic language and signs such as = “ ()
 - Avoid long how-to or instructional guidance in error. That content lives on docs.microsoft.com or in your documentation.
 
-### Use contractions
-To write error messages that are simple and feel human, consider using contractions:
-
-- Use common contractions, such as it’s, you’re, that's, and don’t, to create a friendly, informal tone.
-- Don't mix contractions and their spelled-out equivalents in UI text. For example, don’t use can’t and cannot in the same UI.
-- Never form a contraction from a noun and a verb, such as Microsoft’s developing many new cloud services.
-- Avoid ambiguous or awkward contractions, such as there’d, it’ll, and they’d.
 
 ### Microsoft’s voice guidelines
 For more guidelines on how to communicate to the user in a way they understand, see [Microsoft's brand voice: Above all, simple and human](https://learn.microsoft.com/style-guide/brand-voice-above-all-simple-human).
