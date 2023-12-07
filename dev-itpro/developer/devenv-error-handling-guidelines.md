@@ -1,7 +1,7 @@
 ---
 title: User experience guidelines for errors
 description: Describes how to handle error dialogs in AL code.
-author: SusanneWindfeldPedersen
+author: SusanneWindfeldPedersen, samirdal, kennienp
 ms.author: solsen
 ms.reviewer: solsen
 ms.service: dynamics365-business-central
@@ -25,11 +25,15 @@ In this article, you can learn how to use actionable errors to provide recommend
 
 [!INCLUDE [actionable-errors-fix-it-actions](includes/include-actionable-errors-fix-it-actions.md)]
 
+:::image type="content" source="media/error-dialog-fixit.png" alt-text="Error dialog with fix-it action":::
+
 For more information, see |[Error messages with Fix-it actions](devenv-actionable-errors.md#fix-it-actions)
 
 ## Error messages with Show-it actions – when to use them?
 
 [!INCLUDE [actionable-errors-show-it-actions](includes/include-actionable-errors-show-it-actions.md)]
+
+:::image type="content" source="media/error-dialog-showit.png" alt-text="Error dialog with show-it action":::
 
 For more information, see |[Error messages with Show-it actions](devenv-actionable-errors.md#show-it-actions)
 
@@ -57,7 +61,7 @@ Validation errors should answer the following questions:
 
 ## Error message voice guidelines – how to say it?
 An error dialog consists of the following elements:
-- a title
+- a title (if needed)
 - a body (with the error message)
 - one or more buttons
 
@@ -79,22 +83,12 @@ The title of an error dialog is the first thing the user sees. Use the title to 
 
 In the body of the error dialog, use positive cases (telling what the user can do) where possible. Sometimes you need to tell what you can’t do, but for validation errors space is limited, so focus on the solution.
 
-### Button labels
+### Button labels (for Fix-it and Show-it actions)
 If you can, use a Fix-it action or a Show-it action. 
 
-For Fix-it actions, consider 
-- Fix-it actions are often phrased: “Set value to...”. 
-  - Such as: “Set value to 10”, “Set Status to Open”, or “Set value to HOME”.
-- Fix-it action tooltips are often phrased: “Sets the value...”.
-- Value states are capitalized such as: Yes, Open, Released. Avoid signs for values such as = ,“”, ().
+[!INCLUDE [fix-it-button-guidance](includes/include-fix-it-button-guidance.md)]
 
-
-For Show-it actions, consider 
-- Show-it actions are phrased: “Show...”.
-  - Such as: “Show User Setup”, “Show Items list” or “Show Item 70062”. 
-- Show-it action tooltips are often phrased: “Opens page:..”.
-  - Note: Avoid using “Open” for the button label, as it can be confused with opening the status of the document. Instead use “Show” and use the tooltip to write out “Opens Page:...”.
-- Captions are capitalized, such as: Item, Direct Posting and G/L Account.
+[!INCLUDE [show-it-button-guidance](includes/include-show-it-button-guidance.md)]
 
 ### Error messages
 When writing error messages, consider using these overall rules of thumb:

@@ -6,7 +6,7 @@ ms.date: 11/21/2023
 ms.reviewer: na
 ms.topic: conceptual
 author: kennienp
-ms.author: kepontop
+ms.author: samirdal, kepontop
 ms.service: dynamics365-business-central
 ---
 
@@ -19,6 +19,14 @@ For advice on how to design error dialogs that users understand, see [User exper
 
 ## Unblocking users with actionable errors
 [!INCLUDE [actionable-errors-overview](includes/include-actionable-errors-overview.md)]
+
+## Guidance for button labels (for Fix-it and Show-it actions)
+
+To achieve consistency in the user experience of Fix-it and Show-it actions, please consider following these guidelines for button labels:
+
+[!INCLUDE [fix-it-button-guidance](includes/include-fix-it-button-guidance.md)]
+
+[!INCLUDE [show-it-button-guidance](includes/include-show-it-button-guidance.md)]
 
 ## <a name="fix-it-actions"></a> Error messages with Fix-it actions 
 
