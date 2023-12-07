@@ -71,12 +71,10 @@ An error dialog consists of the following elements:
 - a body (with the error message)
 - one or more buttons
 
-Use the guidelines below to remove friction for the users and positively impact the user experience, even when an error occurs.
-
-For more guidelines, follow Microsoft’s voice guidelines [Microsoft's brand voice: Above all, simple and human](https://learn.microsoft.com/style-guide/brand-voice-above-all-simple-human).
+Use the guidelines below to remove friction for the users and positively impact the user experience, even when an error occurs. For more guidelines, follow Microsoft’s voice guidelines [Microsoft's brand voice: Above all, simple and human](https://learn.microsoft.com/style-guide/brand-voice-above-all-simple-human).
 
 
-### Titles
+### Error message titles
 The title of an error dialog is the first thing the user sees. Use the title to describe what’s wrong and enable the user to quickly scan the meaning.
 
 - Be concise and describe the issue, not the action to take.
@@ -85,11 +83,11 @@ The title of an error dialog is the first thing the user sees. Use the title to 
 - Not all validation errors need a title.  
 - Keep in mind the relation between the title and the recommended actions. Actions should always respond to the title if there's one. 
 
-### Body content
+### Error message body content
 
 In the body of the error dialog, use positive cases (telling what the user can do) where possible. Sometimes you need to tell what you can’t do, but for validation errors space is limited, so focus on the solution.
 
-### Button labels (for Fix-it and Show-it actions)
+### Error message button labels (for Fix-it and Show-it actions)
 When you need to use error dialogs, where possible use a Fix-it action or a Show-it action. To achieve consistency in the user experience of such error dialogs, please consider following these guidelines for button labels.
 
 For Fix-it actions, consider 
@@ -99,7 +97,7 @@ For Fix-it actions, consider
 For Show-it actions, consider 
 [!INCLUDE [show-it-button-guidance](includes/include-show-it-button-guidance.md)]
 
-### Error messages
+### Error messages - do this
 When writing error messages, consider using these overall rules of thumb:
 
 - Use the word problem instead of error, issue, or technical problem. 
@@ -111,7 +109,7 @@ When writing error messages, consider using these overall rules of thumb:
   - The user must get help from a support representative.  
   - A product or service fails. 
 
-### Avoid these words and phrases
+### Error messages - avoid this
 Users see your program from the functionality it provides, not how it is constructed. Therefore, you should avoid words and phrases such as
 
 - “There has been an error” or “An error has occurred”  
