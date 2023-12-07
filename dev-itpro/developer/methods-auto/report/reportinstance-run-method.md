@@ -1,6 +1,6 @@
 ---
 title: "Report.Run() Method"
-description: "Loads and executes the report that you specify."
+description: "Loads and executes the report that you specify (instance method)."
 ms.author: solsen
 ms.custom: na
 ms.date: 03/24/2022
