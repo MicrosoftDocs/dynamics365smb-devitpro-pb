@@ -2,11 +2,10 @@
 title: Report Design Overview
 description: Design a report by defining the dataset and designing the layout. Report object is composed of dataset, layout, request page, properties, triggers and code.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 12/08/2023
+ms.reviewer: jswymer
+ms.service: ynamocs365-business-central
 ms.topic: overview
 ms.author: solsen
 ---
@@ -68,12 +67,12 @@ With report triggers, you can control how the reporting feature works in [!INCLU
 ## See Also  
 
 [Reports](devenv-reports.md)  
-[Report Object](devenv-report-object.md)  
-[Report Extension Object](devenv-report-ext-object.md)  
-[Report Dataset](devenv-report-dataset.md)   
+[Report object](devenv-report-object.md)  
+[Report extension object](devenv-report-ext-object.md)  
+[Report dataset](devenv-report-dataset.md)   
 [Using request pages with reports](devenv-request-pages-for-reports.md)  
-[Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)   
-[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
-[Creating a Word Layout Report](devenv-howto-report-layout.md)   
-[Report, Report Fields, and Report Extension Properties](properties/devenv-report-property-overview.md)   
-[Report Triggers and Runtime Operations](devenv-report-triggers.md)
+[Creating an Excel layout report](devenv-howto-excel-report-layout.md)   
+[Creating an RDL layout report](devenv-howto-rdl-report-layout.md)  
+[Creating a Word layout report](devenv-howto-report-layout.md)   
+[Report, report fields, and report extension properties](properties/devenv-report-property-overview.md)   
+[Report triggers and runtime operations](devenv-report-triggers.md)  
