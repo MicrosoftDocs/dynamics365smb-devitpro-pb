@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: 
 ms.topic: conceptual
 ms.collection: get-started
-ms.date: 11/15/2023
+ms.date: 12/08/2023
 ms.custom: bap-template
 ---
 
@@ -16,13 +16,13 @@ This article explains how to integrate with Azure OpenAI Service through the AI 
 
 ## Overview of the AI module
 
-The AI module of [!INCLUDE [prod_short](includes/prod_short.md)] integrates with Azure OpenAI Service and provides a set of AL objects that you can use to build AI capabilities. The AI module is designed for LLMs and supports text generation like GPT, chatbots, and embeddings. It doesn't support image generation like DALL-E or transcribing speech to text like Whisper. 
+The AI module of [!INCLUDE [prod_short](includes/prod_short.md)] integrates with Azure OpenAI Service and provides a set of AL objects that you can use to build AI capabilities. The AI module is designed for LLMs and supports test and embeddings generation. It doesn't support image generation like DALL-E or transcribing speech to text like Whisper. 
 
 The AI module is available in the System Application, in the System.AI namespace. For reference documentation, see [System and Base Application Reference](/dynamics365/business-central/application).
 
 The AI module can be used in any AL extension and provides the following capabilities:
 
-- Support for text generation like GPT-3, chatbots, and embeddings
+- Support for test and embeddings generation
 - Ease of control and viewing the copilot capabilities in the environment
 - Telemetry on a capability’s registration/usages/errors and more
 
@@ -40,7 +40,7 @@ For more information on how to obtain this, see [aka.ms/oaiapply](https://aka.ms
 
 The System.AI namespace provides many objects that you can use to build the AI capability. The following tables list some of these objects and their purpose. 
 
-In the Copilot namespace, you find the following objects:
+Under Copilot you find the following objects:
 
 |Object | Object type | Purpose |
 |-------|-------------|---------|
@@ -48,7 +48,7 @@ In the Copilot namespace, you find the following objects:
 |Copilot Availability|Enum|The availability of the Copilot Capability; it can either be in preview or generally available.|
 |Copilot Capability|Enum|Defines the capabilities that can be registered.|
 
-In the Azure OpenAI namespace, you find the following objects:
+Under Azure OpenAI you find the following objects:
 
 |Object | Object type | Purpose | 
 |-------|-------------|---------|
@@ -64,7 +64,7 @@ For more information, see [System reference](/dynamics365/business-central/appli
 
 ### Registering an AI capability
 
-A new AI capability must be registered with the AI module. Every extension must register with the `Copilot Capability` codeunit, and if the capability isn't registered with the extension, which is using it, an error is thrown. The registered capability shows up in the **Copilot and AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)]. The capability can be deactivated from this page, but doesn't change the registration of the capability.
+A new AI capability must be registered with the AI module. Every extension must register with the `Copilot Capability` codeunit, and if the capability isn't registered with the extension, which is using it, an error is thrown. The registered capability shows up in the **Copilot & AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)]. The capability can be deactivated from this page, but doesn't change the registration of the capability.
 
 To register the capability, you add an `enumextension` of the **Copilot Capability** enum. The following example shows how to register a new capability for drafting a job.
 
@@ -78,7 +78,7 @@ enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
 }
 ```
 
-Next, you add a codeunit that registers the capability. The codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The following example shows how to register the capability for drafting a job. The `RegisterCapability` procedure registers the capability if it isn't already registered and registers it as generally available. The `LearnMoreUrlTxt` parameter is optional and can be used to provide a link in the **Copilot and AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)] to provide more information about the capability.
+Next, you add a codeunit that registers the capability. Here the codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The codeunit could also be of the type `Upgrade`. The following example shows how to register the capability for drafting a job. The `RegisterCapability` procedure registers the capability if it isn't already registered and registers it as generally available. The `LearnMoreUrlTxt` parameter is optional and can be used to provide a link in the **Copilot & AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)] to provide more information about the capability.
 
 ```al
 codeunit 54310 "Secrets And Capabilities Setup"
