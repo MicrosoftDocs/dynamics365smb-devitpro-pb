@@ -1,6 +1,6 @@
 ---
 title: Reporting in Business Central
-description: Introducing how to make Business Central reports discoverable by users.
+description: Introducing the options you have for creating Business Central reports.
 author: KennieNP
 ms.custom: na
 ms.date: 12/05/2023
