@@ -3,9 +3,9 @@ title: "Report.RunModal(Integer [, Boolean] [, Boolean] [, var Record]) Method"
 description: "Loads and executes the report that you specify (static method)."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 12/08/2023
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -64,21 +64,21 @@ begin
 end;
 ```
 
-## Example 1
+## Example 2
 This example shows how to run a report. This example displays the request window and sends the report to the printer selected through the Printer Selection table.  
 
 ```al
 Report.RunModal(1001);  
 ```  
 
-## Example 2
+## Example 3
 This example shows how to run a report. This example skips the request window, starts the report immediately, and sends the report to the printer that is selected in the Printer Selection table.  
 
 ```al
 Report.RunModal(1001, False);  
 ```  
 
-## Example 3
+## Example 4
 This example shows how to run a report. This example skips the request window and starts the report immediately. It sends the report to the system printer instead of the printer that is selected in the Printer Selection table.  
 
 ```al
