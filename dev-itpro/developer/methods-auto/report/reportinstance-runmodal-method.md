@@ -59,7 +59,7 @@ end;
 ```  
 
 ## See Also
-[Report.RunModal (static) Method](report-runmodal-method.md)
+[Report.RunModal (static) Method](report-runmodal-method.md)  
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  
