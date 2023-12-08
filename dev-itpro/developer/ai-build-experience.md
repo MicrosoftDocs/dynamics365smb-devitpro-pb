@@ -87,7 +87,7 @@ This is the first step in creating the PromptDialog type page. The sections that
 
 ## Specify the mode in which the PromptDialog opens
 
-By default, the PromptDialog page opens in the prompt mode. But in some scenarios, this behavior might not be desired. For example, consider [marketing text suggestions with Copilot](/dynamics365/business-central/ai-overview) from Business Central. This copilot experience includes a prompt mode, which is used for changing item attributes. However, when users start the copilot, it opens directly in the generate mode, then to the content mode. In the content mode, Users can open the prompt mode to change the input if they like. 
+By default, the PromptDialog page opens in the prompt mode. But in some scenarios, this behavior might not be desired. For example, consider [marketing text suggestions with Copilot](/dynamics365/business-central/ai-overview) from Business Central. This copilot experience includes a prompt mode, which is used for changing item attributes. However, when users start the copilot, it opens directly in the generate mode, then moves to the content mode. In the content mode, users have the option to open the prompt mode to change the input to AI, this case the item attributes, if they like. 
 
 There are two ways to change the mode that PromptDialog page opens. One way is to use PromptMode property, as previously mentioned. The other way to change the mode at runtime, for example, by using the [OnInit](triggers-auto/page/devenv-oninit-page-trigger.md):
 
