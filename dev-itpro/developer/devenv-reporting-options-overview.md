@@ -31,6 +31,8 @@ For more information about creating a report based on an Excel layout, see [Crea
 
 Power BI is a cloud-based service that allows users to connect to Business Central data and create interactive dashboards and reports. Power BI can handle large amounts of data and perform complex calculations and transformations. Power BI also offers various visualizations, such as maps, gauges, slicers, and KPIs. Power BI is suitable for users who need to *explore and analyze data across multiple sources or dimensions*, or who want to *share their insights* with others online or on mobile devices.
 
+Power BI reports can be embedded in Business Central pages in two ways. One way is to use the **Power BI Report** part in on a page to make reports readily visible on the page when it's opened and typically linked to a specific record on the page. The other way is to embed a report in a separate page that opens from an action that the user selects on the page, which enables reports to display in a larger screen area because they're not limited by the dimensions of the part. For more information, see [Embed Power BI reports in pages](devenv-power-bi-report-parts.md).
+
 ## Choosing the technology and method
 
 Depending on the role and the need of the user in an organization, one of these methods might be more appropriate than the other. For example, a CFO might prefer Power BI to get a high-level overview of the business performance and trends, while an accountant might prefer report objects to get detailed information on transactions and balances. A sales manager might prefer Excel to create forecasts and budgets based on historical data.
