@@ -29,8 +29,7 @@ For more information about creating a report based on an Excel layout, see [Crea
 
 ## Analyze data on lists and queries
 
-Another option is to analyze data from list pages and queries using the data analysis mode. The data analysis mode enables you to analyze data directly from the page, without having to run a report or switch another application like Excel. It provides an interactive and versatile way to calculate, summarize, and examine data. Instead of running reports using different options and filters, you can add multiple tabs that represent different tasks or views on the data. Examples could be "My customers", "Follow up items", "Recently added vendors", "Sales statistics", or any other view you can imagine.
-
+Another option is to analyze data from list pages and queries using the data analysis mode. The data analysis mode enables you to analyze data directly from the page, without having to run a report or switch another application like Excel. It provides an interactive and versatile way to calculate, summarize, and examine data. For more information, see [Analyze Data on Lists and Queries](/dynamics365/business-central/analysis-mode).
 
 ## Power BI reports
 
