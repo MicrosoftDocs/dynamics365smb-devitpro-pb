@@ -11,39 +11,40 @@ ms.author: kepontop
 
 # Reporting options in Business Central
 
-[!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, introduces three ways to create reports: reports that are based on report objects in AL, report based on Power BI, and reports based on Excel. Each of these methods has its own advantages and disadvantages, depending on the type of data analysis and the role of the user. In this article, we introduce these three methods and how they can be used differently in an organization. For more information about how to create reports, see [Creating reports](devenv-reports.md).
+[!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, introduces three ways to create reports: reports that are based on report objects in AL, report based on Power BI, and reports based on Excel. Each of these methods has its own advantages and disadvantages, depending on the type of data analysis and the role of the user. In this article, we introduce these three methods and how they can be used differently in an organization. 
 
 ## Report objects in Business Central
 
-Report objects offer the traditional way of creating analytical reports, processing only reports, and printable documents in Business Central. They're written in AL code and can be customized by partners or developers. Report objects can display data in various formats, such as tables, charts, or matrices. They can also have filters, sorting, grouping, and totaling options. Report objects are *suitable for users who need to access specific data sets or predefined reports* within Business Central. They can be printed or exported to PDF or Word.
+Report objects offer the traditional way of creating analytical reports, processing only reports, and printable documents in Business Central. They're written in AL code and can be customized by partners or developers. Report objects can display data in various formats, such as tables, charts, or matrices. They can also have filters, sorting, grouping, and totaling options. Report objects are *suitable for users who need to access specific data sets or predefined reports* within Business Central. They can be printed or exported to PDF or Word. For more information to understand the report structure and designing the layout for a report, see [Report Object](devenv-report-object.md).
 
 ## Excel reports 
 
-Excel is a familiar tool that many users already use for data analysis and reporting. Excel can connect to Business Central data using the Excel add-in or OData web services. Excel can perform calculations, formatting, filtering, sorting, and charting on the data. Excel is *suitable for users who need to manipulate or format data in a flexible way*, or who want to create custom reports or templates.
+Excel is a familiar tool that many users already use for data analysis and reporting. Excel can connect to Business Central data using the Excel add-in or OData web services. Excel can perform calculations, formatting, filtering, sorting, and charting on the data. Excel is *suitable for users who need to manipulate or format data in a flexible way*, or who want to create custom reports or templates. For more information about creating a report based on an Excel layout, see [Creating an Excel Layout Report](devenv-howto-excel-report-layout.md).
 
 ## Power BI reports
 
 Power BI is a cloud-based service that allows users to connect to Business Central data and create interactive dashboards and reports. Power BI can handle large amounts of data and perform complex calculations and transformations. Power BI also offers various visualizations, such as maps, gauges, slicers, and KPIs. Power BI is suitable for users who need to *explore and analyze data across multiple sources or dimensions*, or who want to *share their insights* with others online or on mobile devices.
 
-## When to use which method
+## Choosing the technology and method
 
 Depending on the role and the need of the user in an organization, one of these methods might be more appropriate than the other. For example, a CFO might prefer Power BI to get a high-level overview of the business performance and trends, while an accountant might prefer report objects to get detailed information on transactions and balances. A sales manager might prefer Excel to create forecasts and budgets based on historical data.
 
-The following table illustrates the differences between the three methods.
+Reports based on report objects are the native reports in Business Central that respect the security model, work on live data, allow you to pivot data, and share data with others. These reports also have a request page that lets you specify filters and options before running the report.
+Excel reports export data from Business Central to Excel, where you can use the familiar features of Excel to analyze and present the data. They also respect the security model, work on live data, allow you to pivot data, and share data with others. Additionally, they offer slicers and visuals to enhance the report.
+Power BI reports Power BI to create interactive dashboards and data stories based on Business Central data. They require a new security model and a data refresh to get the latest data. They aren't suitable for pivoting data, but they offer slices, KPIs, and visuals to explore and communicate the data. And they also allow you to share the data with others.
+
+The following table sums up some of the main differences between the three types of analyzing and slicing data.
 
 |Characteristic| Report object| Excel| Power BI|
 |--------|--------------|------|---------|
 |Security model preserved|Yes|Yes|No|
-|Work on live data|Yes|Yes|No|
+|Works on live data|Yes|Yes|No|
 |Allows you to pivot data|Yes|Yes|No|
 |Share data|Yes|Yes|Yes|
-|Guide the user with a request page|Yes|Yes|No|
-|Slices, KPIs, visuals|No|No|Yes|
+|Guides the user with a request page|Yes|Yes|No|
+|Slices and visualizes data|No|No|Yes|
 |Curated data stories|No|No|Yes|
 
-- Report objects: These are the native reports in Business Central that respect the security model, work on live data, allow you to pivot data, and share data with others. They also have a request page that lets you specify filters and options before running the report.
-- Excel reports: These are reports that export data from Business Central to Excel, where you can use the familiar features of Excel to analyze and present the data. They also respect the security model, work on live data, allow you to pivot data, and share data with others. Additionally, they offer slicers and visuals to enhance the report.
-- Power BI reports: These are reports that use Power BI to create interactive dashboards and data stories based on Business Central data. They require a new security model and a data refresh to get the latest data. They are not suitable for pivoting data, but they offer slices, KPIs, and visuals to explore and communicate the data. They also allow you to share the data with others.
 
 
 ## See also
