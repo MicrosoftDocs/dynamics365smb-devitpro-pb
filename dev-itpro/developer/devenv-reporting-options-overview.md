@@ -11,7 +11,7 @@ ms.author: kepontop
 
 # Analyzing, pivoting, and sharing data in Business Central
 
-[!INCLUDE [prod_short](includes/prod_short.md)] comes with three options to provide reporting on data: reports based on report objects in AL, reports based on Power BI, and reports based on Excel. Each of these methods has its own advantages and disadvantages, depending on the type of data analysis and the role of the user. In this article, we introduce these three methods and how they can be used differently in an organization. 
+[!INCLUDE [prod_short](includes/prod_short.md)] comes with different options for providing reporting on data. Each of these methods has its own advantages and disadvantages, depending on the type of data analysis and the role of the user. In this article, we introduce these three methods and how they can be used differently in an organization. 
 
 ## Report objects in Business Central
 
@@ -29,7 +29,8 @@ For more information about creating a report based on an Excel layout, see [Crea
 
 ## Analyze data on lists and queries
 
-content to be added
+Another option is to analyze data from list pages and queries using the data analysis mode. The data analysis mode enables you to analyze data directly from the page, without having to run a report or switch another application like Excel. It provides an interactive and versatile way to calculate, summarize, and examine data. Instead of running reports using different options and filters, you can add multiple tabs that represent different tasks or views on the data. Examples could be "My customers", "Follow up items", "Recently added vendors", "Sales statistics", or any other view you can imagine.
+
 
 ## Power BI reports
 
