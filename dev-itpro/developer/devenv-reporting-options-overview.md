@@ -3,7 +3,7 @@ title: Analyzing, pivoting, and sharing data in Business Central
 description: Introducing the options you have for creating Business Central reports that analyze, pivot, and share data.
 author: KennieNP
 ms.custom: na
-ms.date: 12/05/2023
+ms.date: 12/08/2023
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: kepontop
@@ -15,11 +15,17 @@ ms.author: kepontop
 
 ## Report objects in Business Central
 
-Report objects offer the traditional way of creating analytical reports, processing only reports, and printable documents in Business Central. They're written in AL code and can be customized by partners or developers. Report objects can display data in various formats, such as tables, charts, or matrices. They can also have filters, sorting, grouping, and totaling options. Report objects are *suitable for users who need to access specific data sets or predefined reports* within Business Central. They can be printed or exported to PDF or Word. For more information to understand the report structure and designing the layout for a report, see [Report Object](devenv-report-object.md).
+Report objects offer the traditional way of creating analytical reports, processing only reports, and printable documents in Business Central. They're written in AL code and can be customized by partners or developers. Report objects can display data in various formats, such as tables, charts, or matrices. They can also have filters, sorting, grouping, and totaling options. Report objects are *suitable for users who need to access specific data sets or predefined reports* within Business Central. They can be printed or exported to PDF or Word.
+
+For more information to understand the report structure and designing the layout for a report, see [Report Object](devenv-report-object.md).
 
 ## Excel reports 
 
-Excel is a familiar tool that many users already use for data analysis and reporting. Excel can connect to Business Central data using the Excel add-in or OData web services. Excel can perform calculations, formatting, filtering, sorting, and charting on the data. Excel is *suitable for users who need to manipulate or format data in a flexible way*, or who want to create custom reports or templates. For more information about creating a report based on an Excel layout, see [Creating an Excel Layout Report](devenv-howto-excel-report-layout.md).
+Excel is a familiar tool that many users already use for data analysis and reporting. Excel can connect to Business Central data using the Excel add-in or OData web services. Excel can perform calculations, formatting, filtering, sorting, and charting on the data. Excel is *suitable for users who need to manipulate or format data in a flexible way*, or who want to create custom reports or templates. 
+
+Excel report layouts allow you to create a basic report that prints a dataset and leaves it up to the end user to further modify it by using the full palette of capabilities in Excel such as sliders, diagrams, charts, pivot tables, and PowerQuery to design the report. This offers flexibility and freedom for the end user, being able to change the look and feel of a report, adding more views, filtering, and sorting on data. Such a layout designed by the end user, can be imported and used as a new layout. 
+
+For more information about creating a report based on an Excel layout, see [Creating an Excel Layout Report](devenv-howto-excel-report-layout.md).
 
 ## Power BI reports
 
@@ -44,7 +50,7 @@ The following table sums up some of the main differences between the three types
 |Guides the user with a request page|Yes|Yes|No|
 |Slices and visualizes data|No|No|Yes|
 |Curated data stories|No|No|Yes|
-
+|Optimized for print|Yes|No|No|
 
 
 ## See also
@@ -59,6 +65,3 @@ The following table sums up some of the main differences between the three types
 [Creating an Excel layout report](devenv-howto-excel-report-layout.md)  
 [Defining multiple report layouts](devenv-multiple-report-layouts.md)  
 [Utilizing Read Scale-Out for better performance](../administration/database-read-scale-out-overview.md)  
-
-
-
