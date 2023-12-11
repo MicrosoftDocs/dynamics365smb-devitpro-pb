@@ -18,7 +18,7 @@ This article explains the essential characteristics of a copilot and what your o
 
 ## LLM-based
 
-A copilot experience is an interactive, chat-based generative AI agent built on a large language model (LLM) or other state-of-the-art foundational model. This means that the copilot uses advanced natural language processing to understand user input and generate responses that are tailored to the user's specific needs
+A copilot experience is an interactive agent built on a large language model (LLM) or other state-of-the-art foundational model. This means that the copilot may use advanced natural language processing either to understand user input or to generate responses that are tailored to the user's specific needs. Copilot capabilities may also call upon other machine learning models to get tasks done.
 
 ## Responds to natural language to empower users to achieve tasks
 
