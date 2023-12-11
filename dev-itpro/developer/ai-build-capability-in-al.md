@@ -12,19 +12,27 @@ ms.custom: bap-template
 
 # Build an AI capability in AL
 
-This article explains how to integrate with Azure OpenAI Service through the AI module of [!INCLUDE [prod_short](includes/prod_short.md)]. It covers how to register the capability and how to use the AI module to call the Azure OpenAI Service API and generate text. 
+Your extensions can enhance copilot in [!INCLUDE [prod_short](includes/prod_short.md)] with one or more features known as copilot capabilities. This article explains how to register a new capability, and how to integrate with the Azure OpenAI Service API to generate text through the AI module of [!INCLUDE [prod_short](includes/prod_short.md)] centered around an example of a copilot capability to draft a project plan.
 
 ## Overview of the AI module
 
-The AI module of [!INCLUDE [prod_short](includes/prod_short.md)] integrates with Azure OpenAI Service and provides a set of AL objects that you can use to build AI capabilities. The AI module is designed for LLMs and supports test and embeddings generation. It doesn't support image generation like DALL-E or transcribing speech to text like Whisper. 
+The AI module of [!INCLUDE [prod_short](includes/prod_short.md)] integrates with Azure OpenAI Service and provides a set of AL objects that you can use to build AI capabilities. The AI module is designed for Large Language Models (LLMs) such as GPT. It doesn't support image generation like DALL-E or transcribing speech to text like Whisper. 
 
 The AI module is available in the System Application, in the System.AI namespace. For reference documentation, see [System and Base Application Reference](/dynamics365/business-central/application).
 
 The AI module can be used in any AL extension and provides the following capabilities:
 
-- Support for test and embeddings generation
-- Ease of control and viewing the copilot capabilities in the environment
-- Telemetry on a capability’s registration/usages/errors and more
+- Support for text completion, chat completion, and embeddings
+- Discoverability of your AI capability alongside other capabilities.
+- An enabler for AI transparency, control and data governance for customers.
+- Built-in prompt guard rails to build AI responsibly.
+- Usage insights about your AI capability through telemetry.
+
+> [!NOTE]  
+> Chat completion is a feature of LLMs that generates responses in a sequenced thread, and is an alternative to text completion prompt engineering. It's not the same as Copilot chat in [!INCLUDE [prod_short](includes/prod_short.md)]. The upcoming preview of Chat with Copilot won't be extensible and the AI module can't be used to influence chat. For more information, see [Chat with Copilot](https://learn.microsoft.com/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/chat-copilot).
+
+> [!TIP]  
+> To see the AI module in action, try the example extension available at [BCTech on GitHub](https://aka.ms/BCStartCodingWithAI).
 
 ## Prerequisites
 
@@ -64,7 +72,7 @@ For more information, see [System reference](/dynamics365/business-central/appli
 
 ### Registering an AI capability
 
-A new AI capability must be registered with the AI module. Every extension must register with the `Copilot Capability` codeunit, and if the capability isn't registered with the extension, which is using it, an error is thrown. The registered capability shows up in the **Copilot & AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)]. The capability can be deactivated from this page, but doesn't change the registration of the capability.
+A new AI capability must be registered with the AI module. Every extension must register with the `Copilot Capability` codeunit, and if the capability isn't registered with the extension, which is using it, an error is thrown. The registered capability shows up in the **Copilot & AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)]. The capability can be deactivated from this page, but doesn't change the registration of the capability. All capabilities are active by default, and customer administrators can deactivate the capability from this page at any time.
 
 To register the capability, you add an `enumextension` of the **Copilot Capability** enum. The following example shows how to register a new capability for drafting a job.
 
@@ -78,7 +86,7 @@ enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
 }
 ```
 
-Next, you add a codeunit that registers the capability. Here the codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The codeunit could also be of the type `Upgrade`. The following example shows how to register the capability for drafting a job. The `RegisterCapability` procedure registers the capability if it isn't already registered and registers it as generally available. The `LearnMoreUrlTxt` parameter is optional and can be used to provide a link in the **Copilot & AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)] to provide more information about the capability.
+Next, you add a codeunit that registers the capability. Here the codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The codeunit could also be of the type `Upgrade`. The following example shows how to register the capability for drafting a job. The `RegisterCapability` procedure registers the capability if it isn't already registered and registers it as generally available. The `LearnMoreUrlTxt` parameter is optional and can be used to provide a link in the **Copilot & AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)] to provide more information for customer administrators to learn more about the purpose and safety of your capability.
 
 ```al
 codeunit 54310 "Secrets And Capabilities Setup"
@@ -105,6 +113,8 @@ codeunit 54310 "Secrets And Capabilities Setup"
     end;
 }
 ```
+
+Regarding the `"Copilot Availability"`, you can choose `Preview` for the first release of your capability to signal to your customers that the capability is ready for production, but subject to change and welcoming their feedback.
 
 ### Saving the authorization
 
@@ -134,11 +144,11 @@ end;
 
 ### Generation
 
-Next, you can use the `Azure OpenAI` codeunit to generate text. The following `CopilotJob` codeunit shows how to generate text from a prompt. The codeunit contains the following elements:
+Next, you can use the `Azure OpenAI` codeunit to generate text. The following `CopilotJob` codeunit shows how to generate text from a prompt and creates drafts for a project plan. The codeunit contains the following elements:
 
 The `Generate` procedure takes a prompt as a parameter and returns the generated text. It calls the other procedures to set up the authorization, parameters, and capability for the generation. The `SetAuthorization` sets the authorization information as described in the previous section, and uses the `AzureOpenAI` object to set the endpoint and key for the service.
 
-The `SetParameters` sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is a number between 0 and 2 that controls how creative the model is when generating text. Higher values mean more creativity, but also more errors. Lower values mean more accuracy, but also more boring text. This example sets the temperature to 0, which outputs a well-defined answer. For more information, see [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
+The `SetParameters` sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is a number between 0 and 2 that controls how creative the model is when generating text. Higher values are typically ideal for creative use cases, while lower values result in more deterministic and consistent completion. This example sets the temperature to 0, which outputs a well-defined answer. For more information, see [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
 
 The `SetCopilotCapability` call sets the capability for the generation. The `SetPrimarySystemMessage` call uses the `IsolatedStorage` object to get the metaprompt from the storage. The primary system message will be included in all chat histories unlike regular system messages. The metaprompt is a special message that tells the model what kind of text to generate. For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt). 
 
@@ -184,3 +194,9 @@ A *metaprompt* is a prompt used to define the model’s profile, capabilities, a
 ## Next steps
 
 When you've registered the AI capability, authorized through Azure OpenAI, and written code that generates text based on the metaprompt and the user input, you can now build the interface for handling the user input and generated output. For next steps, see [Design the user experience](ai-build-experience.md).
+
+## See also
+
+[Get started with Azure OpenAI Service](ai-dev-tools-get-started.md)  
+[Design the user experience](ai-build-experience-overview.md)  
+
