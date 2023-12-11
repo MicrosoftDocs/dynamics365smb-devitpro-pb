@@ -17,7 +17,7 @@ Azure OpenAI Service offers robust, generative AI models that our partners can n
 ## Benefits 
 
 The advantages of using this toolkit include:
-- Designing Solutions that adhere to Responsible AI principles.
+- Designing solutions that adhere to Responsible AI principles.
 - Creating a unified Copilot experience.
 - Accelerating time to market.
 
