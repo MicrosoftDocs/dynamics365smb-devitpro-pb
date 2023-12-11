@@ -10,7 +10,7 @@ ms.date: 12/07/2023
 ms.custom: bap-template
 ---
 
-# Transparency note for developer tools for copilot in Business Central  
+# Transparency note: Developer tools for copilot in Business Central  
 
 ## What is a Transparency Note? 
 
