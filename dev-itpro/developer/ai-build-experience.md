@@ -39,7 +39,7 @@ The following diagram illustrates the PromptDialog page type and its different m
 
 The following table gives an overview of the typical flow from the user's perspective and how it's achieved in AL code.
 
-||In UI|In AL code|Learn more|
+|Step|In UI|In AL code|Learn more|
 |-|-|-|-|
 |1|User starts the copilot experience by selecting an action on a page.|An `action` control on a page runs the PromptDialog type page|[Launch experience](#launch-experience)|
 |2|The PromptDialog page opens in the prompt mode, where users can provide input.|The PromptDialog page is defined by setting the PageType property to `PromptDialog`.|[Create PromptDialog type page](#create-promptdialog-type-page) |
