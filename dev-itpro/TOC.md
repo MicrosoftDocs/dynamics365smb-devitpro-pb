@@ -1339,6 +1339,7 @@
 ### [Overview](developer/ai-integration-landing-page.yml)
 ### [What are developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
 ### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
+### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Get setup with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### Build a Copilot experience
 #### [Introduction](developer/ai-build-experience-overview.md)
