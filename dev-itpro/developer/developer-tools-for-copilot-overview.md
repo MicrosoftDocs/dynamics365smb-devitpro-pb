@@ -25,7 +25,7 @@ With Business Central's flexible development platform, developers can implement 
 
 |Stakeholder|Benefits|
 |-|-|
-|Partners|<ul><li>Rapidly build prototypes to validate ideas within your team or with customers.</li><li>Attractive visual design with signature Microsoft Copilot experience that is seamless in Business Central's UI. </li><li>Build upon Microsoft's expertise in responsible AI to improve the safety of your features. </li><li>Reduced time and effort to bring your idea to market, resulting in new monetization and compete opportunities. </li></ul>|
+|Partners|<ul><li>Quicker path to delivering generative AI to your customers in production.</li><li>Attractive visual design with signature Microsoft Copilot experience that is seamless in Business Central's UI. </li><li>Build upon Microsoft's expertise in responsible AI to improve the safety of your features. </li><li>Reduced time and effort to bring your idea to market, resulting in new monetization and compete opportunities.</li><li>Rapidly build prototypes to validate ideas within your team or with customers.</li></ul>|
 |Customers|<ul><li>Seamlessness and consistency of experience across copilot capabilities from different software vendors.</li><li>Safer Business Central capabilities, developed responsibly  </li><li>Centralized place to discover and control generative AI features from Microsoft and partners. </li></ul>|
 
 ## Intent
