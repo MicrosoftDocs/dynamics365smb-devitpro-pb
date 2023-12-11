@@ -1,5 +1,5 @@
 ---
-title: What is a copilot?
+title: What is considered a copilot offering?
 description: Learn whether your AI idea or feature is a match for Copilot in Business Central
 author: jswymer
 ms.author: jswymer 
