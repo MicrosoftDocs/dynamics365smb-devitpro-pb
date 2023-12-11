@@ -1,6 +1,6 @@
 ---
 title: What is a copilot?
-description: Learn what is considered to be a copilot.
+description: Learn whether your AI idea or feature is a match for Copilot in Business Central
 author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer
