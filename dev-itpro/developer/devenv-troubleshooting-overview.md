@@ -50,6 +50,7 @@ Use profiling combined with debugging in sandboxes, or snapshot debugging in pro
 ## Troubleshooting with telemetry
 
 Telemetry can be used for troubleshooting things after they happened and it is possible to analyze patterns across sessions.
+- Ask the user to enable additional logging, see [Resources for Help and Support](/dynamics365/business-central/product-help-and-support#troubleshooting)
 - Enable telemetry and query telemetry data in [Azure Application Insights](../administration/telemetry-overview.md)
 - Find telemetry data on the type of issue you are troubleshooting in [Available telemetry](../administration/telemetry-available-telemetry.md) 
 - Use [Power BI](../administration/telemetry-power-bi-app.md) to analyze errors and performance issues
