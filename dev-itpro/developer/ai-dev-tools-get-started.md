@@ -1,6 +1,6 @@
 ---
 title: Get setup with Azure OpenAI Service
-description: Learn how to get setup with Azure OpenAI Service
+description: Learn about the tasks that must be completed so that you can start integrating Azure OpenAI Service in your extensions to create copilot experiences in Business Central
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
