@@ -1339,6 +1339,7 @@
 ### [Overview](developer/ai-integration-landing-page.yml)
 ### [What are developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
 ### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
+### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Get setup with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### Build a Copilot experience
 #### [Introduction](developer/ai-build-experience-overview.md)
@@ -1785,6 +1786,6 @@
 ### [Some known issues](upgrade/known-issues.md)
 ## [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 # Responsible AI
-## [Transparency note for developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
+## [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 <!-- end upgrade -->
 <!--on-prem ends-->

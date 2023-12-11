@@ -215,3 +215,12 @@ We recommend that partners adopt a similar process and criteria to the [Microsof
 
 [Developer tools for Copilot in Business Central](../developer/ai-integration-landing-page.yml)  
 
+## About this document 
+
+© 2023 Microsoft Corporation. All rights reserved. This document is provided "as-is" and for informational purposes only. Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. Some examples are for illustration only and are fictitious. No real association is intended or inferred. 
+
+This document is not intended to be, and should not be construed as providing legal advice. The jurisdiction in which you’re operating may have various regulatory or legal requirements that apply to your AI system. Consult a legal specialist if you are uncertain about laws or regulations that might apply to your system, especially if you think those might impact these recommendations. Be aware that not all of these recommendations and resources will be appropriate for every scenario, and conversely, these recommendations and resources may be insufficient for some scenarios. 
+
+Published: December 2023
+
+Last updated: December 2023 
