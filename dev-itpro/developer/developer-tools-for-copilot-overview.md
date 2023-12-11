@@ -52,7 +52,7 @@ The toolkit introduces the following features:
 
 - Management
 
-   Apply your own Azure AI key to tell your unique AI story.
+   Apply your partner Azure AI key for control over your Azure resources, consumption and billing.
 
 - Comprehensive guides and code samples
 
