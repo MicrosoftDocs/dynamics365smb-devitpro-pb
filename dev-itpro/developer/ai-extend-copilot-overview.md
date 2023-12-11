@@ -10,7 +10,7 @@ ms.date: 11/05/2023
 ms.custom: bap-template 
 ---
 
-# What is a copilot?
+# What is considered a copilot offerring?
 
 At Microsoft, the term *copilot* refers to a category of large language model-based, generative AI interaction. A copilot empowers users to work smarter, be more productive, more creative, and more connected to the people and things around them.
 
