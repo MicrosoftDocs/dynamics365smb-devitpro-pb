@@ -62,9 +62,6 @@ The toolkit introduces the following features:
 
 Azure OpenAI Service is currently available in select countries/regions. Customers and partners connecting to Azure OpenAI service within their region don't need any extra setup, configuration, or consent. However, when connecting to Azure OpenAI service outside the environment's region, administrators must first approve data movement across regions before any Copilot features can be utilized in Business Central.
 
-Starting from update 23.1, environments deployed within the EU boundary won't require consent to data movement. Nevertheless, environment administrators retain the option to opt out at any time.
-
-
 ## Next steps
 
 [Get set up with Azure OpenAI Service](ai-dev-tools-get-started.md)
