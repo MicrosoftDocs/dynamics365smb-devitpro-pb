@@ -20,25 +20,15 @@ This article explains the essential characteristics of a copilot and what your o
 
 A copilot experience is an interactive agent built on a large language model (LLM) or other state-of-the-art foundational model. This means that the copilot may use advanced natural language processing either to understand user input or to generate responses that are tailored to the user's specific needs. Copilot capabilities may also call upon other machine learning models to get tasks done.
 
-## Responds to natural language to empower users to achieve tasks
+## Responds to natural language for empowering users to achieve tasks
 
 One of the key features of a copilot is its ability to respond to natural language input from users. Copilot should help users accomplish complex tasks that would otherwise require substantial cognitive load, creativity, and time. For example, copilot can assist users with the following tasks:
-<!--
-   - Generate content
-   - Command product functionality
-   - Provide answers and summaries
-   - Provide suggestions and notifications
-   - Enhance collaboration
--->
    - Simplify or solve complex tasks
    - Prioritize and plan tasks
    - Support communication and relationships with people
    - Get better, more in-depth, or more nuanced insights
    - Get quicker insights for immediate tasks
    - Understand relationships, patterns, and trends
-   - Be proactively alerted of important tasks or insights
-
-<!--3. If this experience will support extensibility: does it use the plugins standard for interoperability—defined by OpenAI and used by Bing Chat, Microsoft 365 Chat, Azure OpenAIService, and others?-->
 
 ## Manages generative AI risks through human-in-the-loop pattern
 
