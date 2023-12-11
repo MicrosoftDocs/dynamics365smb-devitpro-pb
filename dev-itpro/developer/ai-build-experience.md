@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer 
 ms.topic: conceptual
 ms.collection: 
-ms.date: 11/04/2023
+ms.date: 12/11/2023
 ms.custom: bap-template
 ---
 
@@ -108,7 +108,7 @@ In this task, you define the screen of the PromptDialog page where users can add
 
 The prompt area is where users can provide input to the AI generation. The prompt area supports natural language input (like free text fields) and structured input (like field groups and page parts). The example uses a single field that allows the user to type natural language text in an unstructured format.
 
-![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.svg)
+![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.svg)
 
 The prompt area is defined by adding an `area` control to the `layout` of the page, similar to way you'd add content areas on other page types. Except, you use the syntax `area(Prompt)`: 
 
@@ -135,7 +135,7 @@ Within `area(Prompt)`, you can add one or more fields, groups, and page parts. `
 
 In this task, you add action to the PromptDialog page that users select to start generating output with Copilot and AI. 
 
-![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-generate.svg)
+![Shows a screenshot that highlights the generate action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-generate.svg)
 
 The `PromptDialog` page type supports several *system actions* that appear as buttons in the UI. You add these actions in the `actions` control on the page, like you would any other action. Except you define the system actions by first adding an `area(SystemActions)` control, then using the `systemaction()`control to define the specific action. In this case, you use a `systemaction(Generate)` control. 
 
@@ -166,7 +166,7 @@ This trigger is invoked when the user selects the button or when the page is ope
 
 In this task, you add action to the PromptDialog page that enables users to select a file to upload in the prompt area. The content of the file can provide input to the AI generation.
 
-![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-attach.svg)
+![Shows a screenshot that highlights the file attachment action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-attach.svg)
 
 Like the system action for generating AI, there's also a system action for attaching a file. In this case, you use a `systemaction(Attach)` control.
 
@@ -198,7 +198,7 @@ actions
 
 In this task, you add actions to the PromptDialog page that enable users to set style preferences to influence the AI-generated output. The options appear as buttons in the UI to the right of the system actions.
 
-![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-options.svg)
+![Shows a screenshot that highlights the preference option actions in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-options.svg)
 
 You add the options by using in a `area(PromptOptions)` control with the `actions` control. Each option is defined by a field using the `field` control. Only fields of the [option data type](methods-auto/option/option-data-type.md) are supported.
 
@@ -225,14 +225,14 @@ actions
 
 The content mode shows the AI-generated output. It enables users to review output, then choose to regenerate, save, or discard it. 
 
-<!--![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode.svg)-->
+<!--![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)-->
 
 
 ### Add a content area
 
 In this task, you define the area of the content that displays results of the AI generation.
 
-![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-output-area.svg)
+![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode-output-area.svg)
 
 To define this area, you add an `area(Content)` control to the `layout`, then add one or more data fields. You can structure and arrange fields in groups and page parts. Like the `Prompt` area, the `Content` area supports all controls except  `repeater`. 
 
@@ -254,7 +254,7 @@ layout
 
 In this task, you add actions to the content mode that enable users to save or discard the AI-generated proposal. Don't save AI-generated proposals to the database until the user chooses to do so. In accordance with responsible AI, to respect the user's choice.
 
-![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-save.svg)
+![Shows a screenshot of the save and discard actions in the content mode of the PromptDialog type page](media/promptdialog-content-mode-save.svg)
 
 
 There are two system actions that control the behavior: `systemaction(OK)` for saving and `systemaction(Cancel)` for discarding. These actions appear in the UI by default without you having to add any code where `systemaction(OK)` has the caption **Keep it** and `systemaction(Cancel)` has the caption **Discard**. However, you do have to add code that handles the content based on which action the user chooses. 
@@ -298,7 +298,7 @@ There are two system actions that control the behavior: `systemaction(OK)` for s
 
 In this task, you add an action to the PromptDialog page that enables users to generate the results again directly from the content mode.   
 
-![Shows the prompt mode of the PromptDialog type page](media/promptdialog-content-mode-regen.svg)
+![Shows a screenshot of the regenerate action in the content mode of the PromptDialog type page](media/promptdialog-content-mode-regen.svg)
 
 To include this action, add a `systemaction(Regenerate)` control to `area(SystemActions)`.
 
