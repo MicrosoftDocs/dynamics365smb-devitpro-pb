@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # What is a copilot?
 
-At Microsoft, the term *copilot* refers to a category of large language model-based, generative AI interaction. A copilot empowers users to be smarter, more productive, more creative, and more connected to the people and things around them.
+At Microsoft, the term *copilot* refers to a category of large language model-based, generative AI interaction. A copilot empowers users to work smarter, be more productive, more creative, and more connected to the people and things around them.
 
 This article explains the essential characteristics of a copilot and what your offering must include to be considered a copilot in Business Central. By using the developer tools for copilot, you can meet the necessary criteria.
 
