@@ -71,8 +71,8 @@ landingContent:
         url: https://go.microsoft.com/fwlink/?linkid=2251051
     - linkListType: sample
       links:
-      - text: BCTech 
-        url: https://github.com/microsoft/BCTech/tree/master/samples/AzureOpenAI    
+      - text: Sample extension in BCTech GitHub repo  
+        url: https://aka.ms/BCStartCodingWithAI    
 
 # Card
   - title: Resources 
