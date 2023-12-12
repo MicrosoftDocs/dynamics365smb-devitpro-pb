@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/05/2021
+ms.date: 12/03/2023
 ms.author: solsen
 ---
 
@@ -14,12 +14,14 @@ ms.author: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Create userGroup
 
+> [!NOTE]  
+> User groups are replaced with [security groups](../../upgrade/deprecated-features-user-groups.md) and will be deprecated in version 25. For more information, see [security group APIs](../resources/dynamics_securitygroups.md) and [Control Access to Business Central Using Security Groups](/dynamics365/business-central/ui-security-groups).
+
 Creates a user group in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
-
 
 ```
 POST /microsoft/automation/v2.0/companies({companyId})/userGroups
