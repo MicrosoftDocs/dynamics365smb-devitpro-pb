@@ -75,7 +75,6 @@ You might experience a long running data upgrade because of the API upgrade. In 
 
 There are two ways to skip the API data upgrade during cloud migration. One way is disable it as part of the on-premises upgrade process. The other way is to disable using cloud migration management in the Business Central online environment.
 
-
 ### From the online environment 
 
 1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
