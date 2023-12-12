@@ -58,7 +58,7 @@ You typically set this property when you are create new pages, but you can chang
 
 The exception is the value *API*. Pages of this type are used to generate web service endpoints and cannot be shown in the user interface. For an overview of supported page types, see [Pages Overview](../devenv-pages-overview.md).
 
-When the **PageType** property is set to **PromptDialog**, you must also set the **PromptMode** property to specify the current mode of the page. For more information, see [PromptMode Property](devenv-promptmode-property.md). For more information about the **PromptDialog** page type, see [The PromptDialog object](../devenv-page-type-promptdialog.md).
+When the **PageType** property is set to **PromptDialog**, you must also set the **PromptMode** property to specify the current mode of the page. For more information, see [PromptMode Property](devenv-promptmode-property.md). For more information about the **PromptDialog** page type, see [PromptDialog page type](../devenv-page-type-promptdialog.md).
 
 ## See Also  
 
