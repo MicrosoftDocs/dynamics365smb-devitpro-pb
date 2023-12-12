@@ -144,5 +144,5 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 -->
 ## See Also
 
-[Working with API Rate Limits](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits)  
+[Working with API Rate Limits](../api-reference/v2.0/dynamics-rate-limits.md)  
 [Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use)

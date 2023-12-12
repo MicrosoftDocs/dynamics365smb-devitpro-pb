@@ -69,6 +69,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 23.2](whatsnew/whatsnew-update-23-2.md)
 ### [Update 23.1](whatsnew/whatsnew-update-23-1.md)
 ### Updates for earlier major versions
 #### [Update 22.5](whatsnew/whatsnew-update-22-5.md)
@@ -376,6 +377,7 @@
 ##### [Cloud migration setup overview](administration/migration-setup-overview.md)
 ##### [Define migration table mappings](administration/migration-table-mapping.md)
 ##### [Run cloud migration setup](administration/migration-setup.md)
+##### [Change how data is replicated](administration/cloud-migration-change-replication.md)
 ##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
 #### Replicate data
 ##### [Data replication overview](administration/migration-data-replication.md)
@@ -1457,7 +1459,7 @@
 <!-- deployment -->
 ## Deployment
 ### [Deployment overview](deployment/deployment.md)
-### [features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
+### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System requirements
 #### [2023 release wave 2](deployment/system-requirements-business-central-v23.md)
 #### [2023 release wave 1](deployment/system-requirements-business-central-v22.md)
