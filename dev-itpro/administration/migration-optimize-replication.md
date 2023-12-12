@@ -83,54 +83,48 @@ Invoke the company name that you want to disable invoke "Disable API Data Upgrad
 Repeat this process for every company where you want to disable the API data upgrade.
 
 
-### 
+### If you are running upgrade On-Premise
 
-If you are running upgrade On-Premise
 You can use the following SQL query to skip upgrade for a single company
 
-DECLARE @UpgTag nvarchar(250);
-
-SET @UpgTag = UPPER('MS-469217-DisableAPIDataUpgrade-20230411')
-
-INSERT INTO [dbo].[Upgrade Tags$63ca2fa4-4f03-4f2b-a480-172fef340d3f](Tag, [Tag Timestamp],[Skipped Upgrade], Company)
-
-VALUES(
-
-UPPER(@UpgTag),
-
-'1753-01-01 00:00:00.000',
-
-1,
-
-UPPER('SetCompanyName'))
+```sql
+DECLARE @UpgTag nvarchar(250);  
+SET @UpgTag = UPPER('MS-469217-DisableAPIDataUpgrade-20230411')  
+  
+INSERT INTO [dbo].[Upgrade Tags$63ca2fa4-4f03-4f2b-a480-172fef340d3f] (Tag, [Tag Timestamp], [Skipped Upgrade], Company)  
+VALUES (  
+    UPPER(@UpgTag),  
+    '1753-01-01 00:00:00.000',  
+    1,  
+    UPPER('SetCompanyName')  
+);  
+```
 
 You can use the following SQL query to skip upgrade for all companies
 
-DECLARE @UpgTag nvarchar(250);
+```sql
+DECLARE @UpgTag nvarchar(250);  
+  
+SET @UpgTag = UPPER('MS-469217-DisableAPIDataUpgrade-20230411')  
+  
+INSERT INTO [dbo].[Upgrade Tags$63ca2fa4-4f03-4f2b-a480-172fef340d3f] (Tag, [Tag Timestamp], [Skipped Upgrade], Company)  
+SELECT  
+    UPPER(@UpgTag),  
+    'SetDate',  
+    1,  
+    UPPER([Name])  
+FROM  
+    Company   
+WHERE  
+    UPPER([Name]) NOT IN (  
+        SELECT [Company]   
+        FROM [Upgrade Tags$63ca2fa4-4f03-4f2b-a480-172fef340d3f]   
+        WHERE Tag = UPPER(@UpgTag)  
+    )
+``` 
 
-SET @UpgTag = UPPER('MS-469217-DisableAPIDataUpgrade-20230411')
+## Completing API upgrade after going live
 
-INSERT INTO [dbo].[Upgrade Tags$63ca2fa4-4f03-4f2b-a480-172fef340d3f](Tag, [Tag Timestamp],[Skipped Upgrade], Company)
-
-SELECT
-
-UPPER(@UpgTag),
-
-'SetDate',
-
-1,
-
-UPPER([Name])
-
-FROM
-
-Company where
-
-UPPER([Name]) NOT IN (Select [Company] from [Upgrade Tags$63ca2fa4-4f03-4f2b-a480-172fef340d3f] WHERE Tag = UPPER(@UpgTag))
-
- 
-
-Completing API upgrade after going live
 Go to the cloud migration management page and invoke the action 'Manage API Upgrade'. On the 'API upgrade overview' page that opens for each company that is marked as upgrade disabled, invoke the link to open the page in that company. Select all records, invoke the action reset and then with all records selected invoke the "Schedule Upgrades" action. Start the job queue entry that opens. Repeat the same steps for each of the companies you have skipped.
 
 You can check the status on the API Upgrade overview page and restart the job queue if it fails, it will continue at the point where it has stopped. It is safe to run the job queue as it will commit and release the locks, it should not cause any performance degradation.
