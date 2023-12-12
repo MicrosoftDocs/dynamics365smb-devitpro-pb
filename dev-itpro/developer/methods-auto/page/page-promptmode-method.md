@@ -45,7 +45,7 @@ The prompt mode used for the page.
 
 ## Remarks
 
-This method is used when creating a generative AI dialog in [!INCLUDE [prod_short](../../includes/prod_short.md)]. For more information, see [The PromptDialog object](../devenv-page-type-promptdialog.md).
+This method is used when creating a generative AI dialog in [!INCLUDE [prod_short](../../includes/prod_short.md)]. For more information, see [The PromptDialog page type](../devenv-page-type-promptdialog.md).
 
 ## See Also
 

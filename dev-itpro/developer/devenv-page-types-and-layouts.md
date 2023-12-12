@@ -37,7 +37,7 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`CardPart`|A page that is embedded in another page, such as in a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
 |`ListPart`|A page that is embedded in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table. Can have fields above or below the repeater.|
 |`HeadlinePart`|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|Single entity|Single group of fields representing headlines.|
-|`PromptDialog`|A page that enables creating generative AI experiences with the copilot look and feel|Single or collection||
+|`PromptDialog`|A page that enables creating generative AI experiences with the copilot look and feel|Single or collection. For more information, see [The PromptDialog page type](devenv-page-type-promptdialog.md).||
 
 ### The two principal categories of page types
 
