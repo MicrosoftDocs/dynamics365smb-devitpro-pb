@@ -22,7 +22,7 @@ Deletes a security group from [!INCLUDE[prod_short](../../includes/prod_short.md
 Replaces the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
 
 ```
-DELETE microsoft/automation/companies({companyId})/securityGroups({securityGroupId})
+DELETE microsoft/automation/v2.0/companies({companyId})/securityGroups({securityGroupId})
 ```
 
 ## Request headers
@@ -48,7 +48,7 @@ If successful, this method returns ```204 No Content``` response code and delete
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
-DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/securityGroups({id})
+DELETE https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/securityGroups({securityGroupId})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 **Response**
