@@ -76,7 +76,10 @@ If you experience the long running upgrade due to the API upgrade, you can skip 
 
 ### Data upgrade in online
 
-To skip the API upgrade go to the cloud migration management page and invoke the action 'Manage API Upgrade'. On the 'API upgrade overview' page that opens you can manage the API upgrade per company.
+1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
+2. Search for and open the **Cloud Migration Management** page.
+3. Select the **Manage API Upgrade**. 
+4. On **API upgrade overview** page,  opens you can manage the API upgrade per company.
 
 Invoke the company name that you want to disable invoke "Disable API Data Upgrades".
 
