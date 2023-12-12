@@ -124,7 +124,7 @@ If-Match:*
 ### Assign user permissions and user groups
 
 > [!NOTE]  
-> User groups are replaced with https://learn.microsoft.com/en-us/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/manage-user-permissions-using-security-groups and will be deprecated in version 25. See security group APIs (administration/resources/dynamics_securitygroups).
+> User groups are replaced with [Security groups](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/manage-user-permissions-using-security-groups) and will be deprecated in version 25. For more information, see [security group APIs](resources/dynamics_securitygroup.md).
 
 To assign users to a user group, issue a [POST request](api/dynamics_usergroupmember_create.md) against the **userGroupMembers** entity. See the example below.
 

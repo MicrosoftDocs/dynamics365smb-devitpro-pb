@@ -15,7 +15,7 @@ ms.author: solsen
 # Delete userGroup
 
 > [!NOTE]  
-> User groups are replaced with [security groups](../../upgrade/deprecated-features-user-groups.md) and will be deprecated in version 25. For more information, see [security group APIs](../resources/dynamics_securitygroups.md) and [Control Access to Business Central Using Security Groups](/dynamics365/business-central/ui-security-groups).
+> User groups are replaced with [security groups](../../upgrade/deprecated-features-user-groups.md) and will be deprecated in version 25. For more information, see [security group APIs](../resources/dynamics_securitygroup.md) and [Control Access to Business Central Using Security Groups](/dynamics365/business-central/ui-security-groups).
 
 Deletes a user group from [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
