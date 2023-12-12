@@ -24,7 +24,7 @@ var
   from: Record FromTable;
   to: Record ToTable;
 begin
-  if from.Find() then
+  if from.FindSet() then
     repeat
       to.SmallCodeField := from.SmallCodeField;
       to.IntField := from.IntField;
