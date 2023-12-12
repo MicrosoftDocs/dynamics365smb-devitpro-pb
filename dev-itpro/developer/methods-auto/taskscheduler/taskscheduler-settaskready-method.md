@@ -41,6 +41,9 @@ Sets a task that runs a codeunit to the ready state. The task will not run unles
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
+Scheduled tasks are shown in the "Scheduled Tasks" page in the client. 
+
+For more information about the task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
 
 
 ## Example  
