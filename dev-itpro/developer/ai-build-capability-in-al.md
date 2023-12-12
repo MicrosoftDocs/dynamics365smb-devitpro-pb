@@ -118,10 +118,7 @@ Regarding the `"Copilot Availability"`, you can choose `Preview` for the first r
 
 ### Saving the authorization
 
-When the prerequisites are met, and you have retrieved an endpoint URL, an Azure OpenAI deployment, and an Azure OpenAI API key, you must save the authorization information.
-
-> [!TIP]  
-> It's recommended to create a page, from which you can type in these three keys, so that you're not hardcoding any values.
+When the prerequisites are met, and you have retrieved an endpoint URL, an Azure OpenAI deployment, and an Azure OpenAI API key, you must save the authorization information and make sure that you're not hardcoding any values.
 
 The following example shows how to save the authorization information by calling the `Azure OpenAI` codeunit. The `SetAuthorization` procedure saves the authorization information in the `IsolatedStorage` object, which provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions. The ApiKey variable is defined as `SecretText`, which means that it isn't available to the debugger for inspection.
 
