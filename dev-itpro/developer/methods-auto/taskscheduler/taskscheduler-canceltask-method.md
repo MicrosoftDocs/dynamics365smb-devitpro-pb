@@ -37,14 +37,26 @@ Specifies the unique identifier of the task. The unique identifier is returned b
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- Scheduled tasks are recorded in table **2000000175 Scheduled Task**. CancelTask removes the task entry from the table.  
+## Remarks
+Scheduled tasks are shown in the "Scheduled Tasks" page in the client. The `TaskScheduler.CancelTask` method removes the task entry from the page (the implementation is different for the on-premises version compared to the online version of [!INCLUDE[prod_short](../../includes/prod_short.md)]).  
 
- CancelTask can only cancel pending tasks. It cannot cancel a task that is in process. To see an example of CancelTask in use, refer to AL code of table **472 Job Queue Entry**.  
+Note that `TaskScheduler.CancelTask` can only cancel pending tasks. 
 
- For more information about tasks and TaskScheduler data type methods, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
+For more information about the task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
+
+## Example
+This example shows how to use `TaskScheduler.CancelTask` to force cancel a task.
+
+```AL
+procedure CancelTasks(ScheduledTaskId: Guid)
+begin
+    TaskScheduler.CancelTask(ScheduledTaskId); // Force cancel task 
+end;
+```
+
 
 ## See Also
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
+[Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

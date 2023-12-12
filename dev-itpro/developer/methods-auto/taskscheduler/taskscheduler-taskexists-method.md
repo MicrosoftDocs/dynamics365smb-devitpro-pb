@@ -38,11 +38,32 @@ The unique identifier of the task. The unique identifier is returned by the CREA
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- Scheduled tasks are recorded in table **2000000175 Scheduled Task**. To see an example of TaskExists in use, refer to AL code of table **472 Job Queue Entry**.  
+Scheduled tasks are shown in the "Scheduled Tasks" page in the client. The `TaskScheduler.TaskExists` method looks up if the task exists on the page (the implementation is different for the on-premises version compared to the online version of [!INCLUDE[prod_short](../../includes/prod_short.md)]).  
 
- For more information about tasks and TaskScheduler data type methods, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
+[!NOTE]
+> It is also possible to use `ScheduledTask.Get` on a record instance of type `ScheduledTask` to query for existance of a task. This method requires the user to have Read access to the `ScheduledTask` table, whereas the `TaskScheduler.TaskExists` method does not require the user to have access to the `ScheduledTask` table.
+
+For more information about the task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
+
+## Example
+This example shows how to use `TaskScheduler.TaskExists` to be able to safely later in the code flow  run code that assumes that the task exists.
+
+```AL
+procedure DoSomethingOnATask(ScheduledTaskId: Guid)
+begin
+    if not TaskScheduler.TaskExists(ScheduledTaskId) then 
+    begin
+        // handle error
+    end;
+
+    // code can now assume that tasks exists
+
+    ...
+end;
+```
 
 ## See Also
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
+[Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
