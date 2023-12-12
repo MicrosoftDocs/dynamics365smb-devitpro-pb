@@ -383,7 +383,9 @@
 ##### [Data replication overview](administration/migration-data-replication.md)
 ##### [Run data replication](administration/migrate-data-replication-run.md)
 ##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
-#### [Run data upgrade](administration/migration-data-upgrade.md)
+#### Upgrade data
+##### [Run data upgrade](administration/migration-data-upgrade.md)
+##### [Skip API data upgrade](administration/migrate-skip-api-data-upgrade.md)
 #### [Complete cloud migration](administration/migration-finish.md)
 ### Migrate from Dynamics NAV
 #### [Migrate from Dynamics NAV to Business Central online](administration/migrate-nav.md)

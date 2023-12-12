@@ -102,6 +102,4 @@ You can check the status of job queue entries on the **API Upgrade Overview** pa
 
 ## Next steps
 
-[Check prerequisites](cloud-migration-prerequisites.md)  
-
-[Cloud migration setup](migration-setup-overview.md)  
+[Run data upgrade](migration-data-upgrade.md)  
