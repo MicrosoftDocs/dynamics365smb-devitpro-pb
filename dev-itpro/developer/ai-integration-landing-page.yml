@@ -1,0 +1,100 @@
+### YamlMime:Landing
+
+# This template provides the basic structure of a landing page
+# See [Write a landing page](write-a-landing-page.md) in the contributor guide for detailed information
+# To provide feedback on this template contact [bace feedback team](mailto:templateswg@microsoft.com)
+
+# Remove all comments and capitalized text in this template before you sign off or merge to the main branch
+
+# Metadata notes: https://review.docs.microsoft.com/en-us/help/contribute/metadata-overview?branch=main
+
+title: Integrating AI using Developer Tools for Copilot
+summary: Build AL extensions that include Copilot and generative AI experiences.
+
+metadata:
+  title: Integrating AI using the developer tools for copilot
+  description: Build AL extensions that include copilot and generative AI experiences.
+  author: jswymer
+  ms.author: jswymer
+  ms.date: 11/04/2023
+  ms.topic: landing-page # DON'T CHANGE
+  ms.service:  dynamics365-business-central
+  ms.custom: bap-template #Required; don't change.
+
+# linkListType: concept | deploy | download | get-started | how-to-guide | overview | reference | sample | video | whats-new
+
+landingContent:
+
+# Card
+  - title: Get started
+    linkLists:
+    - linkListType: overview
+      links:
+      - text: What are the developer tools for copilot
+        url: developer-tools-for-copilot-overview.md
+      - text: What is considered a copilot offering?
+        url: ai-extend-copilot-overview.md
+      - text: Responsible AI transparency note for developer tools
+        url: ../ai/transparency-note-dev-tools-for-copilot.md
+    - linkListType: how-to-guide
+      links:
+      - text: Get set up with Azure OpenAI Service
+        url: ai-dev-tools-get-started.md
+
+# Card
+  - title: Build a copilot experience
+    linkLists:
+    - linkListType: overview
+      links: 
+      - text: Introduction 
+        url: ai-build-experience-overview.md
+    - linkListType: how-to-guide
+      links:
+      - text: Build the copilot capability in AL
+        url: ai-build-capability-in-al.md
+      - text: Build the copilot user experience
+        url: ai-build-experience.md
+    - linkListType: reference
+      links:
+      - text: PromptDialog page type
+        url: devenv-page-type-promptdialog.md
+      - text: PromptMode property
+        url: properties/devenv-promptmode-property.md      
+      - text: AI module (System.AI)
+        url: /dynamics365/business-central/application/system-application/module/system-application
+# Card
+  - title: Demos and samples 
+    linkLists:
+    - linkListType: video
+      links:
+      - text: Designing and developing generative AI experiences
+        url: https://go.microsoft.com/fwlink/?linkid=2251051
+    - linkListType: sample
+      links:
+      - text: Sample extension in BCTech GitHub repo  
+        url: https://aka.ms/BCStartCodingWithAI    
+
+# Card
+  - title: Resources 
+    linkLists:
+    - linkListType: overview
+      links:
+      - text: Microsoft responsible AI 
+        url: https://aka.ms/RAI
+      - text: Azure AI Studio for quick experimentation 
+        url: https://aka.ms/OAIstudio
+      - text: Microsoft Azure learning courses on responsible AI
+        url: /ai/
+# Card
+  - title: Get inspiration from Copilot in Business Central
+    linkLists:
+    - linkListType: overview
+      links:
+      - text: Copilot & AI capabilities in Business Central
+        url: https://aka.ms/bcAI
+      - text: Marketing text suggestions 
+        url: /dynamics365/business-central/ai-overview
+      - text: Bank account reconciliation assist
+        url: /dynamics365/business-central/bank-reconciliation-with-copilot
+
+
