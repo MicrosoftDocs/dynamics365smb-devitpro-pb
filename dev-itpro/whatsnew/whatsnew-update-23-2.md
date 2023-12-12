@@ -19,7 +19,7 @@ Would you like to know what has changed in update 23.2? Below you'll find an ove
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5033775) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
-- [Improved data upgrade troubleshooting for Dynamics GP migration](dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/improved-data-upgrade-troubleshooting-dynamic-gp-migration)
+- [Improved data upgrade troubleshooting for Dynamics GP migration](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/improved-data-upgrade-troubleshooting-dynamic-gp-migration)
 - [Easily integrate generative AI with your AL solutions](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/easily-integrate-generative-ai-al-solutions) is now unlocked on Business Central online
 - [VAT posting in General Ledger setup](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/vat-posting-general-ledger-setup)
 
