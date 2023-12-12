@@ -9,7 +9,7 @@ ms.custom: bap-template
 author: jswymer
 ---
 
-## Skip API data upgrade in cloud migration
+# Skip API data upgrade in cloud migration
 
 When running the data upgrade during cloud migration, you can experience a long running upgrade because of the API upgrade. To prevent this condition, you can skip the API data upgrade during cloud migration, and then run it after going live on the tenant. Skipping the API data upgrade is done on per-company basis, and the only consequence is that the company starts using APIs later after you schedule the upgrade.
 
