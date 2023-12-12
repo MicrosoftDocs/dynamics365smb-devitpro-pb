@@ -74,7 +74,7 @@ For more information, see [System reference](/dynamics365/business-central/appli
 
 A new AI capability must be registered with the AI module. Every extension must register with the `Copilot Capability` codeunit, and if the capability isn't registered with the extension, which is using it, an error is thrown. The registered capability shows up in the **Copilot & AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)]. The capability can be deactivated from this page, but doesn't change the registration of the capability. All capabilities are active by default, and customer administrators can deactivate the capability from this page at any time.
 
-To register the capability, you add an `enumextension` of the **Copilot Capability** enum. The following example shows how to register a new capability for drafting a job.
+To register the capability, you add an `enumextension` of the **Copilot Capability** enum. The following example shows how to register a new capability for drafting a project plan.
 
 ```al
 enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
@@ -86,7 +86,7 @@ enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
 }
 ```
 
-Next, you add a codeunit that registers the capability. Here the codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The codeunit could also be of the type `Upgrade`. The following example shows how to register the capability for drafting a job. The `RegisterCapability` procedure registers the capability if it isn't already registered and registers it as generally available. The `LearnMoreUrlTxt` parameter is optional and can be used to provide a link in the **Copilot & AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)] to provide more information for customer administrators to learn more about the purpose and safety of your capability.
+Next, you add a codeunit that registers the capability. Here the codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The codeunit could also be of the type `Upgrade`. The following example shows how to register the capability for drafting a project plan. The `RegisterCapability` procedure registers the capability if it isn't already registered and registers it as generally available. The `LearnMoreUrlTxt` parameter is optional and can be used to provide a link in the **Copilot & AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)] to provide more information for customer administrators to learn more about the purpose and safety of your capability.
 
 ```al
 codeunit 54310 "Secrets And Capabilities Setup"
