@@ -1,6 +1,6 @@
 ---
 title: Build a Copilot user experience with the PromptDialog page
-description: Learn how to use the PromptDialog page type to create a copilot experience in the client.
+description: Learn how to use PromptDialog page type to create a copilot experience in the client.
 author: jswymer 
 ms.author: jswymer 
 ms.reviewer: jswymer 
@@ -14,11 +14,11 @@ ms.custom: bap-template
 
 In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is consistent across Business Central. The fundamental component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md) type page. 
 
-The PromptDialog page type is designed for creating copilot experiences that assist users in making informed decisions about the AI-generated output. Within a single page object, the PromptDialog page type creates a comprehensive flow in the UI, where users can provide input, view the subsequent output, and revise it as needed. The user can then choose to save their work or discard it.
+PromptDialog page type is designed for creating copilot experiences that assist users in making informed decisions about the AI-generated output. Within a single page object, PromptDialog page type creates a comprehensive flow in the UI, where users can provide input, view the subsequent output, and revise it as needed. The user can then choose to save their work or discard it.
 
 ## Design overview and flow
 
-The PromptDialog page type has three different display modes to accommodate the flow for generating AI content: 
+PromptDialog page type has three different display modes to accommodate the flow for generating AI content: 
 
 |Mode|Description|
 |-|-|
@@ -33,7 +33,7 @@ The PromptDialog page type has three different display modes to accommodate the 
 
 ### Fundamental flow
 
-The following diagram illustrates the PromptDialog page type and its different modes within the fundamental copilot flow. Your flow might vary depending on your design choices, like whether to use a prompt mode and which mode displays when the PromptDialog page opens.
+The following diagram illustrates PromptDialog page type and its different modes within the fundamental copilot flow. Your flow might vary depending on your design choices, like whether to use a prompt mode and which mode displays when the PromptDialog page opens.
 
 [![Shows a flow of a copilot with the prompt dialog page type](media/prompt-dialog-flow-v3.svg)](media/prompt-dialog-flow-v3.svg#lightbox)
 
