@@ -1341,7 +1341,7 @@
 ### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
 ### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Get setup with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
-### Build a Copilot experience
+### Build a copilot experience
 #### [Introduction](developer/ai-build-experience-overview.md)
 #### [Build a copilot capability in app](developer/ai-build-capability-in-al.md)
 #### [Design the copilot user experience](developer/ai-build-experience.md)
