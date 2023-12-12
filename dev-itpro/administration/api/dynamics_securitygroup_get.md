@@ -15,16 +15,16 @@ ms.author: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Get securityGroups
 
-Retrieves the properties and relationships of a security group object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Retrieves the properties and relationships of a security group object for [!INCLUDE[prod_short](../../includes/prod_short.md)].
 
 ## HTTP request
 
-Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+Replace the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
+
 ```
-GET businesscentralPrefix/companies({id})/securityGroups({id})
+GET /microsoft/automation/v2.0/companies({companyId})/securityGroups({securityGroupId})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|

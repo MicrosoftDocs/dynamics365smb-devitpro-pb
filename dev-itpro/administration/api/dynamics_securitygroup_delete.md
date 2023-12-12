@@ -15,16 +15,16 @@ ms.author: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Delete securityGroups
 
-Deletes a security group from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Deletes a security group from [!INCLUDE[prod_short](../../includes/prod_short.md)].
 
 ## HTTP request
 
-Replaces the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
+Replaces the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
+
 ```
-DELETE businesscentralPrefix/companies({id})/securityGroups({id})
+DELETE microsoft/automation/companies({companyId})/securityGroups({securityGroupId})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
