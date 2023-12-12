@@ -15,10 +15,10 @@ ms.author: solsen
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-Represents a security group in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Represents a security group in [!INCLUDE[prod_short](../../includes/prod_short.md)].
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 
@@ -33,7 +33,7 @@ Represents a security group in [!INCLUDE[prod_short](../../../includes/prod_shor
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[securityGroupMembers](dynamics_securitygroupmember.md)|securityGroupMembers |Gets the securitygroupmembers of the securityGroup.|
-|[userPermissions](dynamics_userpermission.md)|userPermissions |Gets the userpermissions of the securityGroup.|
+|[userPermissions](dynamics_userpermission.md)|userPermissions |Gets the user permissions of the securityGroup.|
 
 ## Properties
 
