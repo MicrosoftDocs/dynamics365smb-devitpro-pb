@@ -42,7 +42,7 @@ landingContent:
         url: ai-dev-tools-get-started.md
 
 # Card
-  - title: Build the experience
+  - title: Build a copilot experience
     linkLists:
     - linkListType: overview
       links: 
@@ -50,7 +50,7 @@ landingContent:
         url: ai-build-experience-overview.md
     - linkListType: how-to-guide
       links:
-      - text: Build the AI experience in AL
+      - text: Build the copilot capability in AL
         url: ai-build-capability-in-al.md
       - text: Build the copilot user experience
         url: ai-build-experience.md
