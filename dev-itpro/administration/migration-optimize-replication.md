@@ -71,19 +71,28 @@ Use an SQL Server instance installed with a copy of the source database and is o
 
 ## Skip API data upgrade
 
-If you experience the long running upgrade due to the API upgrade, you can skip it and run it after going live. The only consequence is that the company will start using APIs a bit later.
+You might experience a long running data upgrade because of the API upgrade. In this case, you can skip the API data upgrade on a company basis during the cloud migration process, and then run it afterwards going live on the tenant. The only consequence is that the company will start using APIs a bit later.
+
+There are two ways to skip the API data upgrade during cloud migration. One way is disable it as part of the on-premises upgrade process. The other way is to disable using cloud migration management in the Business Central online environment.
 
 
-### Data upgrade in online
+### From the online environment 
 
 1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
-2. Search for and open the **Cloud Migration Management** page.
-3. Select the **Manage API Upgrade**. 
-4. On **API upgrade overview** page,  opens you can manage the API upgrade per company.
+1. Search for and open the **Cloud Migration Management** page.
+1. Select the **Manage API Upgrade** action to open the **API upgrade overview** page. 
+1. To disable the API data upgrade for a company, do the following steps:
 
-Invoke the company name that you want to disable invoke "Disable API Data Upgrades".
+   1. On the **API upgrade overview** page, select the company in the **Company Name** column.
 
-Repeat this process for every company where you want to disable the API data upgrade.
+      The **API Data Upgrade List** opens in a new browser tab. 
+      
+   1. On the **API Data Upgrade List** page, select **Disable API Data Upgrades** > **OK**.
+  
+      You can close the **API Data Upgrade List** tab after you make the selection. 
+1. Repeat the previous step for each company you want to disable the API data upgrade.
+
+   To show the changes  you've made, refresh (<kbd>F5</kbd>) the **API upgrade overview** page.
 
 
 ### If you are running upgrade On-Premise
@@ -127,6 +136,24 @@ WHERE
 ``` 
 
 ## Completing API upgrade after going live
+
+
+1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
+1. Search for and open the **Cloud Migration Management** page.
+1. Select the **Manage API Upgrade** action to open the **API upgrade overview** page. 
+1. To disable the API data upgrade for a company, do the following steps:
+
+   1. On the **API upgrade overview** page, select the company in the **Company Name** column.
+
+      The **API Data Upgrade List** opens in a new browser tab. 
+      
+   1. On the **API Data Upgrade List** page, select **Disable API Data Upgrades** > **OK**.
+  
+      You can close the **API Data Upgrade List** tab after you make the selection. 
+1. Repeat the previous step for every company where you want to disable the API data upgrade.
+
+   To show the changes  you've made, refresh (<kbd>F5</kbd>) the **API upgrade overview** page.
+
 
 Go to the cloud migration management page and invoke the action 'Manage API Upgrade'. On the 'API upgrade overview' page that opens for each company that is marked as upgrade disabled, invoke the link to open the page in that company. Select all records, invoke the action reset and then with all records selected invoke the "Schedule Upgrades" action. Start the job queue entry that opens. Repeat the same steps for each of the companies you have skipped.
 
