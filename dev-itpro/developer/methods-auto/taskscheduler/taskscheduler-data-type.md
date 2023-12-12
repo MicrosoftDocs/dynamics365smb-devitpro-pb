@@ -34,7 +34,8 @@ The following methods are available on the TaskScheduler data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
-[Task Scheduler](../../devenv-task-scheduler.md)   
+[Task Scheduler Overview](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -62,15 +62,14 @@ Specifies the timeout of the created session. If not specified a default timeout
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-This version of the `TaskScheduler.CreateTask` method has the same semantics as the version without a timeout parameter.
-
-For more information and usage examples, see [CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId])](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md).
+This version of the `TaskScheduler.CreateTask` method has the same semantics as the version without a timeout parameter. For more information and usage examples, see [CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId])](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md).
 
 
 
 ## See Also
 [CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId])](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md)   
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
+[Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Configuring Business Central Server - Default Task Scheduler Session Timeout](../../../administration/configure-server-instance.md#Task)
