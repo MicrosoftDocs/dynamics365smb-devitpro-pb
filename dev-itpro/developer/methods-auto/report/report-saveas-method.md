@@ -57,7 +57,7 @@ The RecordRef that refers to the table in which you want to find a record.
 
 You typically use this method together with the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) method. The `RunRequestPage` method runs a report request page without actually running the report, but instead, it returns the parameters that are set on the request page as a string. You can then call the `SaveAs` method to get the parameter string and save the report to a file of the specified format.  
 
-For a simple example that illustrates how to use the `SaveAs` method, see example in the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) method article. 
+For a simple example that illustrates how to use the `SaveAs` method, see the example in the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) method article. 
 
 > [!NOTE]  
 > By default, when a report uses an RDL report layout at runtime, fonts are embedded in the generated PDF. You can specify whether fonts are embedded in the PDF for RDL reports by changing the **Report PDF Font Embedding** setting in the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance configuration or changing the **PDFFontEmbedding** property in report objects. 
