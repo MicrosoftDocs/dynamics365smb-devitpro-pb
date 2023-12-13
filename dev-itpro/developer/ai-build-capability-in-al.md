@@ -68,7 +68,7 @@ Under Azure OpenAI you find the following objects:
 |AOAI Chat Completion Params| Codeunit|Optional parameters that can be modified for chat generation.|
 |AOAI Chat Roles|Enum|The chat roles available for chat generation; `User`, `System`, and `Assistant`. `User` defines when the end user inputs text to the chat, `System` defines guiding the system, for example, by giving a metaprompt, and `Assistant` defines when the model returns output.|
 
-For more information, see [System reference](/dynamics365/business-central/application/system/module/system).
+For more information, see [System application reference](/dynamics365/business-central/application/system-application/module/system-application).
 
 ### Registering an AI capability
 
