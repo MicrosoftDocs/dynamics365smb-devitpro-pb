@@ -50,9 +50,9 @@ landingContent:
         url: ai-build-experience-overview.md
     - linkListType: how-to-guide
       links:
-      - text: Build the copilot capability in AL
+      - text: Build copilot capability in AL
         url: ai-build-capability-in-al.md
-      - text: Build the copilot user experience
+      - text: Build copilot user experience
         url: ai-build-experience.md
     - linkListType: reference
       links:
