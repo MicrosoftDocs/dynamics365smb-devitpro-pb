@@ -61,7 +61,7 @@ landingContent:
       - text: PromptMode property
         url: properties/devenv-promptmode-property.md      
       - text: AI module (System.AI)
-        url: /dynamics365/business-central/application/system-application/module/system-application
+        url: /dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-completion-params
 # Card
   - title: Demos and samples 
     linkLists:
