@@ -41,7 +41,7 @@ Represents the type of the client executing the operation.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remark
-Some of these client types does not allow AL code that interacts with the user, such as Dialog.Open, Dialog.Update, Window.Open, Window.Update, or System.Error.
+Some of these client types does not allow AL code that interacts with the user, such as using methods Dialog.Open, Dialog.Update, Window.Open, Window.Update, or System.Error.
 
 If the same codeunit needs to run both in the UI but also in the background (in a scheduled task or with a job queue entry) or in a web service call (SOAP/OData/API), then use `if GuiAllowed() then` calls to encapsulate AL code that interact with the user. For more information, see [System.GuiAllowed() Method](../system/system-guiallowed-method.md).
 
