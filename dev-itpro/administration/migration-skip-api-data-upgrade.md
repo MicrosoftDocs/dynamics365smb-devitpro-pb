@@ -33,7 +33,7 @@ Before you can do this task, you have to cloud migration setup and data replicat
       You can close the **API Data Upgrade List** tab after you make the selection. 
 1. Repeat the previous step for each company you want to disable the API data upgrade.
 
-   Refresh (<kbd>F5</kbd>) the **API upgrade overview** page to update the page to the changes you made.
+   The **API upgrade overview** page doesn't show the changes until it's refreshed (select (<kbd>F5</kbd>).
 
 
 ### Skip from on-premises upgrade
@@ -82,7 +82,7 @@ WHERE
 1. Search for and open the **Cloud Migration Management** page.
 1. Select the **Manage API Upgrade** action to open the **API Upgrade overview** page. 
 
-   Companies that haven't had the API upgraded have the **API Upgrade Status** set to **Disabled**.
+   Companies that weren't upgraded have the **API Upgrade Status** of **Disabled**.
     
 1. To run the API data upgrade for a company, do the following steps:
 
