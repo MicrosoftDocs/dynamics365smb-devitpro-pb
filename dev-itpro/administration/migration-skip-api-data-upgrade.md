@@ -36,7 +36,7 @@ Before you can do this task, you have to cloud migration setup and data replicat
    The **API upgrade overview** page doesn't show the changes until it's refreshed (select (<kbd>F5</kbd>).
 
 
-### Skip from on-premises upgrade
+## Skip from on-premises upgrade
 
 You can use the following SQL query to skip upgrade for a single company:
 
