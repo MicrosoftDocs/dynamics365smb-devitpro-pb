@@ -690,9 +690,9 @@
 ##### [Pages overview](developer/devenv-pages-overview.md)
 ##### [Page object](developer/devenv-page-object.md)
 ##### [Page extension object](developer/devenv-page-ext-object.md)
-##### [PromptDialog object](developer/devenv-page-type-promptdialog.md)
 ##### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
+##### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
 ##### List pages
 ###### [Designing list pages](developer/devenv-designing-list-pages.md)
 ###### [Sample list page](developer/devenv-simple-list-page-example.md)
@@ -1343,6 +1343,16 @@
 ## Integrating with external systems
 ### [Data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
 ### [Business events (preview)](developer/business-events-overview.md)
+## Integrating AI using developer tools for copilot
+### [Overview](developer/ai-integration-landing-page.yml)
+### [What are developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
+### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
+### [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
+### [Get setup with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
+### Build a copilot experience
+#### [Introduction](developer/ai-build-experience-overview.md)
+#### [Build the copilot capability in AL](developer/ai-build-capability-in-al.md)
+#### [Build copilot user experience](developer/ai-build-experience.md)
 ## Integrating with Microsoft Dataverse
 ### Data synchronization
 #### [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)
@@ -1783,6 +1793,7 @@
 ##### [Installing a minor update](upgrade/upgrading-cumulative-update.md)
 ### [Some known issues](upgrade/known-issues.md)
 ## [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
-
+# Responsible AI
+## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
 <!-- end upgrade -->
 <!--on-prem ends-->
