@@ -282,6 +282,7 @@
 ### [Overview](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+### [Apicategoryroutes](administration/resources/dynamics_apicategoryroutes.md)
 ### [Automation company](administration/resources/dynamics_automationcompany.md)
 #### [Get automation company](administration/api/dynamics_automationcompany_get.md)
 #### [Delete automation company](administration/api/dynamics_automationcompany_delete.md)
@@ -306,6 +307,11 @@
 #### [Get permission set](administration/api/dynamics_permissionset_get.md)
 ### [Scheduled job](administration/resources/dynamics_scheduledjob.md)
 #### [Get scheduled job](administration/api/dynamics_scheduledjob_get.md)
+### [Security group](administration/resources/dynamics_securitygroup.md)
+#### [Get security group](administration/api/dynamics_securitygroup_get.md)
+#### [Delete security group](administration/api/dynamics_securitygroup_delete.md)
+### [Security group member](administration/resources/dynamics_securitygroupmember.md)
+#### [Get security group member](administration/api/dynamics_securitygroupmember_get.md)
 ### [User](administration/resources/dynamics_user.md)
 #### [Get user](administration/api/dynamics_user_get.md)
 #### [Update user](administration/api/dynamics_user_update.md)
