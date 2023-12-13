@@ -29,7 +29,7 @@ The AI module can be used in any AL extension and provides the following capabil
 - Usage insights about your AI capability through telemetry.
 
 > [!NOTE]  
-> Chat completion is a feature of LLMs that generates responses in a sequenced thread, and is an alternative to text completion prompt engineering. It's not the same as Copilot chat in [!INCLUDE [prod_short](includes/prod_short.md)]. The upcoming preview of Chat with Copilot won't be extensible and the AI module can't be used to influence chat. For more information, see [Chat with Copilot](https://learn.microsoft.com/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/chat-copilot).
+> Chat completion is a feature of LLMs that generates responses in a sequenced thread, and is an alternative to text completion prompt engineering. It's not the same as Copilot chat in [!INCLUDE [prod_short](includes/prod_short.md)]. The upcoming preview of Chat with Copilot won't be extensible and the AI module can't be used to influence chat. For more information, see [Chat with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/chat-copilot).
 
 > [!TIP]  
 > To see the AI module in action, try the example extension available at [BCTech on GitHub](https://aka.ms/BCStartCodingWithAI).
