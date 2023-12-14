@@ -12,9 +12,11 @@ ms.custom: bap-template
 
 # User experience guidelines for errors
 
-Improving error handling and error messages reduces friction for the users and highly impacts the user experience. Clear, informative error messages help users understand what went wrong and how to correct it, reducing frustration, and improving user satisfaction. 
+This article guides you on leveraging actionable errors to offer users recommended actions for more effective error resolution. It covers the key questions that error dialogs and validation errors should address, along with recommended voice guidelines for writing impactful error messages.
 
-In this article, you can learn how to use actionable errors to provide recommended actions to users to resolve errors more effectively, what questions error dialogs and validation errors should answer, and recommended voice guidelines for error messages.
+
+## Why should you deliver great error messages?
+Improving error handling and error messages reduces friction for the users and highly impacts the user experience. Clear, informative error messages help users understand what went wrong and how to correct it, reducing frustration, and improving user satisfaction. 
 
 
 ## Unblocking users with actionable errors
@@ -26,8 +28,17 @@ In this article, you can learn how to use actionable errors to provide recommend
 [!INCLUDE [actionable-errors-fix-it-actions](includes/include-actionable-errors-fix-it-actions.md)]
 
 
-<br>An error message with a Fix-it action looks like this:
+<br>Example of an error message with a Fix-it action:
+
 :::image type="content" source="media/error-dialog-fixit.png" alt-text="Error dialog with fix-it action":::
+
+
+
+<br>Example of a validation error dialog with a Fix-it action:
+
+:::image type="content" source="media/validation-error-fixit.png" alt-text="Validation error with fix-it action":::
+
+
 
 For more information, see [Error messages with Fix-it actions](devenv-actionable-errors.md#fix-it-actions)
 
@@ -36,9 +47,14 @@ For more information, see [Error messages with Fix-it actions](devenv-actionable
 [!INCLUDE [actionable-errors-show-it-actions](includes/include-actionable-errors-show-it-actions.md)]
 
 
-<br>An error message with a Show-it action looks like this:
+<br>Example of an error dialog with a Show-it:
+
 :::image type="content" source="media/error-dialog-showit.png" alt-text="Error dialog with show-it action":::
 
+
+<br>Example of an validation dialog with a Show-it:
+
+:::image type="content" source="media/validation-error-showit.png" alt-text="Validation error with show-it action":::
 
 
 For more information, see [Error messages with Show-it actions](devenv-actionable-errors.md#show-it-actions)

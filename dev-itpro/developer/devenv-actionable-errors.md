@@ -43,6 +43,8 @@ If the user experience the error, they will see the following error dialog
 :::image type="content" source="media/error-dialog-fixit.png" alt-text="Error dialog with fix-it action":::
 
 
+
+
 ### Example (validation error with a Fix-it action)
 
 The following AL code illustrates how to setup field validation with a Fix-it action.
