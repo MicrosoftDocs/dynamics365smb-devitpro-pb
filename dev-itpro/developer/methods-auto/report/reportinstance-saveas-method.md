@@ -53,16 +53,22 @@ The RecordRef that refers to the table in which you want to find a record.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- You typically use this method together with the [RunRequestPage Method](../report/reportinstance-runrequestpage-method.md) method. The RunRequestPage method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the SaveAs method to get the parameter string and save the report to a file of the specified format.  
+## Remarks
 
- For a simple example that illustrates how to use the SaveAs method, see example in the [RunRequestPage Method](../report/reportinstance-runrequestpage-method.md) method topic.  
+You typically use this method together with the [RunRequestPage Method](../report/reportinstance-runrequestpage-method.md) method. The `RunRequestPage` method runs a report request page without actually running the report, but instead, it returns the parameters that are set on the request page as a string. You can then call the SaveAs method to get the parameter string and save the report to a file of the specified format.  
+
+For a simple example that illustrates how to use the `SaveAs` method, see the example in the [RunRequestPage Method](../report/reportinstance-runrequestpage-method.md) method topic.  
 
 > [!NOTE]  
->  By default, when a report uses an RDL report layout at runtime, fonts are embedded in the generated PDF. You can specify whether fonts are embedded in the PDF for RDL reports by changing the **Report PDF Font Embedding** setting in the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance configuration or changing the **PDFFontEmbedding** property in report objects. <!--NAV For more information, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md) and [PDFFontEmbedding Property](../properties/devenv-PDF-FontEmbedding-Property.md).-->  
+> By default, when a report uses an RDL report layout at runtime, fonts are embedded in the generated PDF. You can specify whether fonts are embedded in the PDF for RDL reports by changing the **Report PDF Font Embedding** setting in the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance configuration or changing the **PDFFontEmbedding** property in report objects.
 
+### Error conditions
 
-## See Also
+The method can fail in the following ways:
+- If the string of request page parameters as XML specified in "*Parameters*" can't be parsed as valid request page data.
+
+## See also
+
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
