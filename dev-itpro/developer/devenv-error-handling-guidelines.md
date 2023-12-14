@@ -64,9 +64,7 @@ For more information, see [Error messages with Show-it actions](devenv-actionabl
 
 ## <a name="error_message_best_practices"></a>Error message best practices - what to say?
 
-Error messages are meant to unblock users. The primary purpose of the error dialog is to alert users to the fact that something has gone wrong and that they need to take action to continue. There are essentially two different types of error situations that a user can experience:
-1. Error dialogs
-2. Validation errors
+Error messages are meant to unblock users. The primary purpose of the error dialog is to alert users to the fact that something has gone wrong and that they need to take action to continue. In the following, you will find best practices for what to say in an error dialog versus in an in-line validation error situation.
 
 ### Error message best practices (Error dialogs)
 Error dialogs should answer the following questions:
@@ -84,13 +82,7 @@ Validation errors should answer the following questions:
 
 
 ## Error message voice guidelines – how to say it?
-An error dialog consists of the following elements:
-- a title (if needed)
-- a body (with the error message)
-- one or more buttons
-
-Use the guidelines below to remove friction for the users and positively impact the user experience, even when an error occurs. For more guidelines, follow Microsoft’s voice guidelines [Microsoft's brand voice: Above all, simple and human](https://learn.microsoft.com/style-guide/brand-voice-above-all-simple-human).
-
+Use the guidelines below to remove friction for the users and positively impact the user experience, even when an error occurs. 
 
 ### Error message titles
 The title of an error dialog is the first thing the user sees. Use the title to describe what’s wrong and enable the user to quickly scan the meaning.
