@@ -18,6 +18,8 @@ This article guides you on leveraging actionable errors to offer users recommend
 ## Why should you deliver great error messages?
 Improving error handling and error messages reduces friction for the users and highly impacts the user experience. Clear, informative error messages help users understand what went wrong and how to correct it, reducing frustration, and improving user satisfaction. 
 
+For guidance on how to formulate good error messages, see [Error message best practices - what to say?](#error_message_best_practices) below.
+
 
 ## Unblocking users with actionable errors
 
@@ -60,7 +62,7 @@ For more information, see [Error messages with Fix-it actions](devenv-actionable
 For more information, see [Error messages with Show-it actions](devenv-actionable-errors.md#show-it-actions)
 
 
-## Error message best practices - what to say?
+## <a name="error_message_best_practices"></a>Error message best practices - what to say?
 
 Error messages are meant to unblock users. The primary purpose of the error dialog is to alert users to the fact that something has gone wrong and that they need to take action to continue. There are essentially two different types of error situations that a user can experience:
 1. Error dialogs
@@ -136,9 +138,9 @@ To write error messages that are simple and feel human, consider using contracti
 
 
 ### Error messages voice guidelines - avoid this
-Users see your program from the functionality it provides, not how it is constructed. Therefore, you should avoid words and phrases such as
+Users see your program from the functionality it provides, not how it is constructed. Therefore, as a developer, you should avoid words and phrases such as
 
-- “There has been an error” or “An error has occurred”  
+- “There has been an error” or “An error has occurred”
 - “Error,” “Failed,” “Denied,” or “Invalid”
 - "Hmmm ..." or "Oops ..." or "Whoops"
 - Developer error codes like “WDGeneralNetworkError Error 500”. If you need to include a code, hide it under “details”. 
