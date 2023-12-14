@@ -17,6 +17,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Register for the [!INCLUDE [prod_short](../includes/prod_short.md)] Launch Event on [aka.ms/BCLE](https://aka.ms/BCLE)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
+- AIM to the future with Microsoft! Move your customers to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMForPartners)
 
 ## Latest release and updates  
 
@@ -54,6 +55,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Online or in-person training and coaching for [!INCLUDE [prod_short](../includes/prod_short.md)]. Contact an ISV Development Center: [aka.ms/ISVDevCenter](https://aka.ms/ISVDevCenter)
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode)
 - Get technical to land large customer implementations and close deals: [aka.ms/BCConcierge](https://aka.ms/BCConcierge)  
+- The AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
 
 ## Go to market
 
@@ -72,6 +74,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Learn about onboarding experiences in [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)
 - Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
 - Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys)
+- Download the keyboard shortcut PDF: [aka.ms/BCKeyboardShortcutsPDF](https://aka.ms/BCKeyboardShortcutsPDF)
 
 ## Reporting and business intelligence  
 
@@ -91,6 +94,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online: [aka.ms/BCMigrations](https://aka.ms/BCMigrations)  
 - Use migration tooling: [Migrate Data](../../administration/migrate-data.md) 
 - Community group for questions and information about managing migrations to Business Central online: [aka.ms/BCCloudMigrationYammer](https://aka.ms/bccloudmigrationyammer)
+- AIM to the future with Microsoft! Move your customers to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMForPartners)
 
 ## Getting support
 
