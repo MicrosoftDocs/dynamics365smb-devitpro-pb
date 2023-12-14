@@ -17,7 +17,7 @@ There are two ways to skip the API data upgrade during cloud migration. One way 
 
 ## Skip from the online environment
 
-Before you can do this task, you have to cloud migration setup and data replication. <!-- I disabled it before data rep, but after data rep, it was enabled again>
+Before you can do this task, you have to cloud migration setup and data replication. <!-- I disabled it before data rep, but after data rep, it was enabled again-->
 
 1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
 1. Search for and open the **Cloud Migration Management** page.
