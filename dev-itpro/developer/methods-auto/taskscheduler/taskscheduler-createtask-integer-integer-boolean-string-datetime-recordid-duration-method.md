@@ -3,7 +3,7 @@ title: "TaskScheduler.CreateTask(Integer, Integer, Boolean, Text, DateTime, Reco
 description: "Adds a task to ensure that a codeunit is not run before the specified time. (duration version)"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
+ms.date: 12/15/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -61,12 +61,12 @@ Specifies the timeout of the created session. If not specified a default timeout
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
+## Remarks
+
 This version of the `TaskScheduler.CreateTask` method has the same semantics as the version without a timeout parameter. For more information and usage examples, see [CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId])](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md).
 
+## See also
 
-
-## See Also
 [CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId])](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md)   
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
 [Task Scheduler](../../devenv-task-scheduler.md)   
