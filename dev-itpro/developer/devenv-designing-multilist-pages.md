@@ -9,6 +9,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: mikebc
+ROBOTS: NOINDEX
 ---
 # Designing pages having multiple lists.
 
