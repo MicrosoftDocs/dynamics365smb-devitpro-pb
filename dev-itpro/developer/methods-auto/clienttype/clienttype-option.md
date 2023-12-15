@@ -40,7 +40,7 @@ Represents the type of the client executing the operation.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remark
+## Remarks
 
 Some of these client types don't allow AL code that interacts with the user, such as using the methods `Dialog.Open`, `Dialog.Update`, `Window.Open`, `Window.Update`, or `System.Error`.
 
