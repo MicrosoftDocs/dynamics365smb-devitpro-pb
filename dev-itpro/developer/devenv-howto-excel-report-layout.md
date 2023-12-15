@@ -3,7 +3,7 @@ title: Creating an Excel layout report
 description: Describes the steps involved in creating a report that uses an Excel layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 12/01/2023
+ms.date: 12/15/2023
 ms.reviewer: kepontop
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -68,11 +68,13 @@ When a report with an Excel layout is run, [!INCLUDE[server](includes/server.md)
 
 
 ### Changing the data contract after adding new columns to the report dataset
-If you add new columns to the report dataset after you have created Excel layouts, the data contracts in the layouts do not get updated automatically. But you do not need to re-create the layouts from scratch, you can simply add the new columns manually to the header line in the data contract worksheet(s). 
 
-For a report developer working with AL code, maybe the simplest way to get the new column names is from the AL code for the report object. For a report developer working just in Excel, the simplest way to get the new column names is to run the report in Business Central and on the request page, then choose the **Microsoft Excel Document (data only)** option. This will give you an Excel workbook with all the columns in the data contract.
+If you add new columns to the report dataset after you've created Excel layouts, the data contracts in the layouts don't get updated automatically. But you don't need to recreate the layouts from scratch, you can simply add the new columns manually to the header line in the data contract worksheet(s). 
+
+For a report developer working with AL code, maybe the simplest way to get the new column names is from the AL code for the report object. For a report developer working just in Excel, the simplest way to get the new column names is to run the report in [!INCLUDE[prod_short](../includes/prod_short.md)] and on the request page, then choose the **Microsoft Excel Document (data only)** option. This will give you an Excel workbook with all the columns in the data contract.
 
 ## Formatting data in Excel layouts
+
 [!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
 
 Specifically for Excel layouts, there are many ways to control formatting of data elements directly in Excel. For more examples on how to format data in Excel, see 
