@@ -27,7 +27,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 |Specification|Requirement|
 |------|-----|  
 |Supported browsers|<ul><li>New Microsoft Edge, latest version</li><li>Google Chrome for Windows, latest version</li><li>Mozilla Firefox for Windows, latest version</li><li>Safari for macOS, latest version</li></ul>Cookies and JavaScript must be enabled in the browser.|
-|Additional information|We recommend that you use a stable channel version of a web browser as it is the most reliable and stable version that has undergone extensive testing and bug fixing. This ensures that you have the best experience and are less likely to encounter any issues while using the web client.| 
+|Additional information|We recommend that you use a stable channel version of a web browser as it's the most reliable and stable version that has undergone extensive testing and bug fixing. This ensures that you have the best experience and are less likely to encounter any issues while using the web client.| 
 
 ##  <a name="DynNAVApp"></a> [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)]
 
