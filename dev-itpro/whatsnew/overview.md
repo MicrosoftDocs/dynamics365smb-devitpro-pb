@@ -29,6 +29,7 @@ Learn more about what's new or changed in recent releases in the links in the fo
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
+|23.2|Application Build 23.2 Platform Build 23.0|December 2023|[Update 23.2 for Microsoft Dynamics 365 Business Central online 2023 release wave 2](whatsnew-update-23-2.md)|
 |23.1|Application Build 23.1 Platform Build 23.0|November 2023|[Update 23.1 for Microsoft Dynamics 365 Business Central online 2023 release wave 2](whatsnew-update-23-1.md)|
 |22.5|Application Build 22.5.x, Platform Build 22.0.|September 2023|[Update 22.5 for Microsoft Dynamics 365 Business Central online 2023 release wave 1](whatsnew-update-22-5.md)|
 |22.4|Application Build 22.4.59535, Platform Build 22.0.59520|August 2023|[Update 22.4 for Microsoft Dynamics 365 Business Central online 2023 release wave 1](whatsnew-update-22-4.md)|
