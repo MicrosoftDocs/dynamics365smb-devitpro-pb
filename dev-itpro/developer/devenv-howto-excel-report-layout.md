@@ -26,6 +26,11 @@ When designing an Excel layout, you need to know the following information:
 - How the layout file is validated when importing it into [!INCLUDE[prod_short](../includes/prod_short.md)].
 - How the [!INCLUDE[prod_short](../includes/prod_short.md)] server merges the layout with data when running the report.
 
+### Changing the data contract after adding new columns to the report dataset
+If you add new columns to the report dataset after you have created Excel layouts, the data contracts in the layouts do not get updated automatically. But you do not need to re-create the layouts from scratch, you can simply add the new columns manually to the header line in the data contract worksheet(s). 
+
+For a report developer working with AL code, maybe the simplest way to get the new column names is from the AL code for the report object. For a report developer working just in Excel, the simplest way to get the new column names is to run the report in Business Central and on the request page, then choose the **Microsoft Excel Document (data only)** option. This will give you an Excel workbook with all the columns in the data contract.
+
 ### Excel layout data contract in 2023 release wave 1 and earlier versions
 
 Every Excel layout file must have a worksheet called _Data_. This worksheet has one purpose: defining which metadata fields from the the dataset definition of the report object the layout uses, which is sometimes also called the _data contract_ between the layout file and the report dataset definition. The data contract consists of the following rules:
