@@ -29,7 +29,7 @@ The AI module can be used in any AL extension and provides the following capabil
 - Usage insights about your AI capability through telemetry.
 
 > [!NOTE]  
-> Chat completion is a feature of LLMs that generates responses in a sequenced thread, and is an alternative to text completion prompt engineering. It's not the same as Copilot chat in [!INCLUDE [prod_short](includes/prod_short.md)]. The upcoming preview of Chat with Copilot won't be extensible and the AI module can't be used to influence chat. For more information, see [Chat with Copilot](https://learn.microsoft.com/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/chat-copilot).
+> Chat completion is a feature of LLMs that generates responses in a sequenced thread, and is an alternative to text completion prompt engineering. It's not the same as Copilot chat in [!INCLUDE [prod_short](includes/prod_short.md)]. The upcoming preview of Chat with Copilot won't be extensible and the AI module can't be used to influence chat. For more information, see [Chat with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/chat-copilot).
 
 > [!TIP]  
 > To see the AI module in action, try the example extension available at [BCTech on GitHub](https://aka.ms/BCStartCodingWithAI).
@@ -52,23 +52,23 @@ Under Copilot you find the following objects:
 
 |Object | Object type | Purpose |
 |-------|-------------|---------|
-|Copilot Capability|Codeunit|Used to register, modify, and delete Copilot capabilities.|
-|Copilot Availability|Enum|The availability of the Copilot Capability; it can either be in preview or generally available.|
-|Copilot Capability|Enum|Defines the capabilities that can be registered.|
+|[Copilot Capability](/dynamics365/business-central/application/system-application/codeunit/system.ai.copilot-capability)|Codeunit|Used to register, modify, and delete Copilot capabilities.|
+|[Copilot Availability](/dynamics365/business-central/application/system-application/enum/system.ai.copilot-availability)|Enum|The availability of the Copilot Capability; it can either be in preview or generally available.|
+|[Copilot Capability](/dynamics365/business-central/application/system/enum/system.ai.copilot-capability)|Enum|Defines the capabilities that can be registered.|
 
 Under Azure OpenAI you find the following objects:
 
 |Object | Object type | Purpose | 
 |-------|-------------|---------|
-|Azure OpenAI |Codeunit| Provides functionality for using the Azure OpenAI API.|
-|AOAI Operation Response|Codeunit|Monitors the status and result of an operation.|
-|AOAI Model Type| Enum |The supported model types for Azure OpenAI; `Embeddings`, `Text Completions`, and `Chat Completions`.|
-|AOAI Chat Messages|Codeunit|Helper functions for the AOAI Chat Message table. This is where you set your own metaprompt. For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt).|
-|AOAI Text Completion Params| Codeunit|Optional parameters that can be modified for text generation.|
-|AOAI Chat Completion Params| Codeunit|Optional parameters that can be modified for chat generation.|
-|AOAI Chat Roles|Enum|The chat roles available for chat generation; `User`, `System`, and `Assistant`. `User` defines when the end user inputs text to the chat, `System` defines guiding the system, for example, by giving a metaprompt, and `Assistant` defines when the model returns output.|
+|[Azure OpenAI](/dynamics365/business-central/application/system-application/codeunit/system.ai.azure-openai)|Codeunit| Provides functionality for using the Azure OpenAI API.|
+|[AOAI Operation Response](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-operation-response)|Codeunit|Monitors the status and result of an operation.|
+|[AOAI Model Type](/dynamics365/business-central/application/system-application/enum/system.ai.aoai-model-type)| Enum |The supported model types for Azure OpenAI; `Embeddings`, `Text Completions`, and `Chat Completions`.|
+|[AOAI Chat Messages](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages)|Codeunit|Helper functions for the AOAI Chat Message table. This is where you set your own metaprompt. For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt).|
+|[AOAI Text Completion Params](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-text-completion-params)| Codeunit|Optional parameters that can be modified for text generation.|
+|[AOAI Chat Completion Params](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-completion-params)| Codeunit|Optional parameters that can be modified for chat generation.|
+|[AOAI Chat Roles](/dynamics365/business-central/application/system-application/enum/system.ai.aoai-chat-roles)|Enum|The chat roles available for chat generation; `User`, `System`, and `Assistant`. `User` defines when the end user inputs text to the chat, `System` defines guiding the system, for example, by giving a metaprompt, and `Assistant` defines when the model returns output.|
 
-For more information, see [System reference](/dynamics365/business-central/application/system/module/system).
+For more information, see [System application reference](/dynamics365/business-central/application/system-application/module/system-application).
 
 ### Registering an AI capability
 
