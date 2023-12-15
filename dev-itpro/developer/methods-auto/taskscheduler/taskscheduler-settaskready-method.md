@@ -43,6 +43,8 @@ Sets a task that runs a codeunit to the ready state. The task will not run unles
 ## Remarks  
 Scheduled tasks are shown in the "Scheduled Tasks" page in the client. 
 
+If no task exists with the provided task Guid provided to `TaskScheduler.SetTaskReady`, then the method will return false (no runtime error will occur). 
+
 For more information about the task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
 
 

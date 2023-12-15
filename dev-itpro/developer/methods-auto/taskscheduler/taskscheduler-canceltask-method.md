@@ -42,6 +42,8 @@ Scheduled tasks are shown in the "Scheduled Tasks" page in the client. The `Task
 
 Note that `TaskScheduler.CancelTask` can only cancel pending tasks. 
 
+If no task exists with the provided task Guid provided to `TaskScheduler.CancelTask`, then the method will return false (no runtime error will occur). 
+
 For more information about the task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
 
 ## Example
