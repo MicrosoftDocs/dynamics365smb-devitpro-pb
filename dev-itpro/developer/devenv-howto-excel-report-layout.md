@@ -26,11 +26,6 @@ When designing an Excel layout, you need to know the following information:
 - How the layout file is validated when importing it into [!INCLUDE[prod_short](../includes/prod_short.md)].
 - How the [!INCLUDE[prod_short](../includes/prod_short.md)] server merges the layout with data when running the report.
 
-### Changing the data contract after adding new columns to the report dataset
-If you add new columns to the report dataset after you have created Excel layouts, the data contracts in the layouts do not get updated automatically. But you do not need to re-create the layouts from scratch, you can simply add the new columns manually to the header line in the data contract worksheet(s). 
-
-For a report developer working with AL code, maybe the simplest way to get the new column names is from the AL code for the report object. For a report developer working just in Excel, the simplest way to get the new column names is to run the report in Business Central and on the request page, then choose the **Microsoft Excel Document (data only)** option. This will give you an Excel workbook with all the columns in the data contract.
-
 ### Excel layout data contract in 2023 release wave 1 and earlier versions
 
 Every Excel layout file must have a worksheet called _Data_. This worksheet has one purpose: defining which metadata fields from the the dataset definition of the report object the layout uses, which is sometimes also called the _data contract_ between the layout file and the report dataset definition. The data contract consists of the following rules:
@@ -70,6 +65,12 @@ When a report with an Excel layout is run, [!INCLUDE[server](includes/server.md)
 2. Loads the Excel layout file.
 3. Inserts the data into the _Data_ table in the _Data_ worksheet in the Excel layout file.
 4. Provides the merged Excel workbook to the user for download or view in Excel online if enabled by the tenant administrator. For more information about viewing Excel outputs in Excel online, visit [Save Excel workbooks and report files in OneDrive](/dynamics365/business-central/across-onedrive-overview#save-excel-workbooks-and-report-files-in-onedrive).
+
+
+### Changing the data contract after adding new columns to the report dataset
+If you add new columns to the report dataset after you have created Excel layouts, the data contracts in the layouts do not get updated automatically. But you do not need to re-create the layouts from scratch, you can simply add the new columns manually to the header line in the data contract worksheet(s). 
+
+For a report developer working with AL code, maybe the simplest way to get the new column names is from the AL code for the report object. For a report developer working just in Excel, the simplest way to get the new column names is to run the report in Business Central and on the request page, then choose the **Microsoft Excel Document (data only)** option. This will give you an Excel workbook with all the columns in the data contract.
 
 ## Formatting data in Excel layouts
 [!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
