@@ -34,7 +34,7 @@ To disable cloud migration, complete the following steps:
 > [!NOTE]
 > The integration runtime remains installed on your on-premise machine. However, if it's not used for cloud migration within a couple of weeks, its cloud registration is automatically cleaned up. If you want to migrate data again, you must go through the cloud migration setup again and may also need to re-install the Self-hosted Integration Runtime.
 
-## Step 2 Set up users and permissions in Business Central
+## Step 2 Set up users and permissions
 
 User accounts and permissions in Business Central on-premises aren't migrated to the online. To give on-premises users access to the new online tenant, each user needs the following permissions:
 
@@ -56,13 +56,11 @@ If any data or transactions are dependent on a specific on-premises user account
 > [!IMPORTANT]
 > User mappings can only be done once per environment, so it's recommended to do this task as a one of the last step. You can copy to a sandbox and test the changes there so it doesn't affect the production environment.
 
-### To map on-premises users to online
+### Map on-premises users to online accounts
 
 1. Go to the **Cloud Migration Management** page and select the **Define user mappings** action. 
-
-2. Use the **Define User Mappings** page to match on-premises user accounts, shown in the **On-premises User** field, with online user accounts by filling in the **Cloud User** field. 
-3. When ready, select **OK** to start the update. 
-
+1. Use the **Define User Mappings** page to match on-premises user accounts, shown in the **On-premises User** field, with online user accounts by filling in the **Cloud User** field. 
+1. When ready, select **OK** to start the update. 
 
 ### Technical details
 
@@ -72,4 +70,6 @@ If any data or transactions are dependent on a specific on-premises user account
 ## Step 4 Reconfigure the Dynamics 365 Sales connection
 
 If you're integrating with Dynamics 365 Sales, you have to set up the connection again. For more information, see [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).
+
+
 
