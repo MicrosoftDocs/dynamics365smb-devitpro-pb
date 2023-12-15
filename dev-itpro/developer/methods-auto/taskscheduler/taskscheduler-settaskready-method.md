@@ -3,7 +3,7 @@ title: "TaskScheduler.SetTaskReady(Guid [, DateTime]) Method"
 description: "Sets a task that runs a codeunit to the ready state."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/15/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,16 +40,17 @@ Sets a task that runs a codeunit to the ready state. The task will not run unles
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
-Scheduled tasks are shown in the "Scheduled Tasks" page in the client. 
+## Remarks
 
-If no task exists with the provided task Guid provided to `TaskScheduler.SetTaskReady`, then the method will return false (no runtime error will occur). 
+Scheduled tasks are shown in the **Scheduled Tasks** page in the client. 
+
+If no task exists with the task GUID provided to `TaskScheduler.SetTaskReady`, then the method will return false (no runtime error will occur). 
 
 For more information about the task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
 
+## Example
 
-## Example  
- The following example creates a task not in IsReady state, does some more work, and then uses the SetTaskReady method to set the task to ready but also only start at a later specified time (task ready time + 60 seconds + up to 3 seconds of random time).  
+The following example creates a task, which isn't in `IsReady` state, then it does some more work, and finally it uses the `SetTaskReady` method to set the task to ready, but also to start at a later specified time (task ready time + 60 seconds + up to 3 seconds of random time).  
  
 ```al
 var
@@ -65,7 +66,8 @@ begin
 end;
 ```  
 
-## See Also
+## See also
+
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
