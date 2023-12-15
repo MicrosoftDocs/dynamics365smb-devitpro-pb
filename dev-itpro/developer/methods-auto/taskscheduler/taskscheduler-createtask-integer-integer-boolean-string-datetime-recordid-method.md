@@ -3,7 +3,7 @@ title: "TaskScheduler.CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTi
 description: "Adds a task to ensure that a codeunit is not run before the specified time."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
+ms.date: 12/15/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,22 +56,54 @@ Specifies the recordID of the record that you want to run the task on.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## Remarks  
-Scheduled tasks are recorded in table **2000000175 Scheduled Task**.  For more information about tasks and task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
 
-## Example  
-The following example schedules a task to run the **Job Queue Dispatcher** and uses codeunit **Job Queue Error Handler** as the failure codeunit. 
+## Remarks
 
-```al
+Scheduled tasks are shown in the **Scheduled Tasks** page in the client. The `TaskScheduler.CreateTask` method creates a task and if the operation is successful, the task appears on the page (the implementation is different for the on-premises version compared to the online version of [!INCLUDE[prod_short](../../includes/prod_short.md)]).  
+
+If one or both of the codeunits provided to `TaskScheduler.CreateTask` don't exist, then the method will throw an error at runtime.
+
+> [!NOTE]  
+> The first two parameters in `TaskScheduler.CreateTask` are integers, which represent the object IDs of codeunits. To code robustly, never supply the object ID directly in your code as numbers. Instead, use the :: operator as illustrated in the example above. With this technique, if any of the codeunits don't exist, you'll get a compile time error instead of a runtime error. 
+
+The `TaskScheduler.CreateTask` method also has a version that allows you to set a timeout parameter. For more information, see [CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration)](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-duration-method.md)
+
+For more information about the task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
+
+## Example (create a task to run now)
+
+The following example schedules a task to run the **MyCodeunit** codeunit right now (when resources are available) in the current company and use the codeunit **MyErrorhandlerCodeunit** as the failure codeunit. 
+
+```AL
 var
     JobQueueEntry: Record "Job Queue Entry";
 begin
-    TaskScheduler.CreateTASK(CodeUnit::"Job Queue Dispatcher", CodeUnit::"Job Queue Error Handler", True, CompanyName, CurrentDateTime + 1000 + Random(3000), JobQueueEntry.RecordID);  
+    TaskScheduler.CreateTask(CodeUnit::MyCodeunit, CodeUnit::MyErrorhandlerCodeunit);  
 end;
 ```  
 
+## Example (create a task to run after a specified point in time)
 
-## See Also
+The following example schedules a task to run the **MyCodeunit** codeunit after a specified point in time (60 seconds + a random part of up to three seconds) and when resources are available. It runs in the current company and use the codeunit **MyErrorhandlerCodeunit** as the failure codeunit. 
+
+```AL
+var
+    JobQueueEntry: Record "Job Queue Entry";
+begin
+    TaskScheduler.CreateTask(
+        CodeUnit::MyCodeunit, 
+        CodeUnit::MyErrorhandlerCodeunit, 
+        true, 
+        CompanyName, 
+        CurrentDateTime + 60*1000 + Random(3000)
+    );  
+end;
+```  
+
+## See also
+
+[CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration)](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-duration-method.md)   
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
+[Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
