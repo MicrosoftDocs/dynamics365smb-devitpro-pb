@@ -3,7 +3,7 @@ title: "CompanyProperty Data Type"
 description: "Provides language support for company properties."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Provides language support for company properties.
 
 
+## Static methods
 The following methods are available on the CompanyProperty data type.
 
 
