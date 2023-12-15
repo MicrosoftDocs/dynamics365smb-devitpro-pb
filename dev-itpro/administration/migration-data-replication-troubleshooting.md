@@ -29,30 +29,6 @@ Refer to previous issue.
 
 Refer to previous issue.
 
-## Exception of type 'System.OutOfMemoryException' was thrown 
-
-Cause:
-
-An out of memory errors usually happen for tables with large fields (for example, images in **Tenant Media** table) when they're copied in bulk. 
-
-Resolution:
-
-Try to redirect such tables to a full copy path instead. For example, alter the on-premises stored procedure `'dbo.IsFullCopyTable'` by inserting a block like:
-
-```sgl
-IF @SqlTableName = 'Tenant Media'
-    BEGIN
-        SET @IsFullCopy = 1
-        RETURN
-    END
-```
-
-Then trigger a new migration run.
-
-## A task failed with out of memory
-
-Refer to previous issue.
-
 ## The specified row delimiter is incorrect. Cannot detect a row after parse 100 MB data.
 
 Cause:

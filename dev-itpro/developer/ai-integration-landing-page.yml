@@ -9,7 +9,7 @@
 # Metadata notes: https://review.docs.microsoft.com/en-us/help/contribute/metadata-overview?branch=main
 
 title: Integrating AI using Developer Tools for Copilot
-summary: Build AL extensions that include Copilot and generative AI experiences.
+summary: Build AL extensions that include copilot and generative AI experiences.
 
 metadata:
   title: Integrating AI using the developer tools for copilot
@@ -50,9 +50,9 @@ landingContent:
         url: ai-build-experience-overview.md
     - linkListType: how-to-guide
       links:
-      - text: Build the copilot capability in AL
+      - text: Build copilot capability in AL
         url: ai-build-capability-in-al.md
-      - text: Build the copilot user experience
+      - text: Build copilot user experience
         url: ai-build-experience.md
     - linkListType: reference
       links:
@@ -61,7 +61,7 @@ landingContent:
       - text: PromptMode property
         url: properties/devenv-promptmode-property.md      
       - text: AI module (System.AI)
-        url: /dynamics365/business-central/application/system-application/module/system-application
+        url: /dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-completion-params
 # Card
   - title: Demos and samples 
     linkLists:

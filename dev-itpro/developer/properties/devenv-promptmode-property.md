@@ -1,6 +1,6 @@
 ---
 title: "PromptMode Property"
-description: "Specifies the current mode of a PromptDialog page."
+description: "Specifies the current mode of a PromptDialog page type."
 ms.author: solsen
 ms.custom: na
 ms.date: 11/17/2023

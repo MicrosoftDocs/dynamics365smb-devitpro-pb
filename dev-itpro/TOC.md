@@ -282,6 +282,7 @@
 ### [Overview](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+### [Apicategoryroutes](administration/resources/dynamics_apicategoryroutes.md)
 ### [Automation company](administration/resources/dynamics_automationcompany.md)
 #### [Get automation company](administration/api/dynamics_automationcompany_get.md)
 #### [Delete automation company](administration/api/dynamics_automationcompany_delete.md)
@@ -306,6 +307,11 @@
 #### [Get permission set](administration/api/dynamics_permissionset_get.md)
 ### [Scheduled job](administration/resources/dynamics_scheduledjob.md)
 #### [Get scheduled job](administration/api/dynamics_scheduledjob_get.md)
+### [Security group](administration/resources/dynamics_securitygroup.md)
+#### [Get security group](administration/api/dynamics_securitygroup_get.md)
+#### [Delete security group](administration/api/dynamics_securitygroup_delete.md)
+### [Security group member](administration/resources/dynamics_securitygroupmember.md)
+#### [Get security group member](administration/api/dynamics_securitygroupmember_get.md)
 ### [User](administration/resources/dynamics_user.md)
 #### [Get user](administration/api/dynamics_user_get.md)
 #### [Update user](administration/api/dynamics_user_update.md)
@@ -383,7 +389,9 @@
 ##### [Data replication overview](administration/migration-data-replication.md)
 ##### [Run data replication](administration/migrate-data-replication-run.md)
 ##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
-#### [Run data upgrade](administration/migration-data-upgrade.md)
+#### Upgrade data
+##### [Run data upgrade](administration/migration-data-upgrade.md)
+##### [Skip API data upgrade](administration/migrate-skip-api-data-upgrade.md)
 #### [Complete cloud migration](administration/migration-finish.md)
 ### Migrate from Dynamics NAV
 #### [Migrate from Dynamics NAV to Business Central online](administration/migrate-nav.md)
@@ -1341,12 +1349,12 @@
 ### [Overview](developer/ai-integration-landing-page.yml)
 ### [What are developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
 ### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
-### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
+### [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Get setup with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### Build a copilot experience
 #### [Introduction](developer/ai-build-experience-overview.md)
-#### [Build a copilot capability in app](developer/ai-build-capability-in-al.md)
-#### [Design the copilot user experience](developer/ai-build-experience.md)
+#### [Build the copilot capability in AL](developer/ai-build-capability-in-al.md)
+#### [Build copilot user experience](developer/ai-build-experience.md)
 ## Integrating with Microsoft Dataverse
 ### Data synchronization
 #### [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)
@@ -1788,6 +1796,6 @@
 ### [Some known issues](upgrade/known-issues.md)
 ## [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 # Responsible AI
-## [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
+## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
 <!-- end upgrade -->
 <!--on-prem ends-->
