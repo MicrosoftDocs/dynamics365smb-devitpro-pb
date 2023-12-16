@@ -123,6 +123,7 @@ A task can fail under the various conditions, like:
 The task scheduler is designed to automatically rerun main and failure codeunits when certain exceptions occur, instead of just failing on the first attempt. Exceptions that cause the system to rerun a codeunit are referred to as *retriable exceptions*. Whether an exception is retriable depends on whether the exception occurs in the main or failure codeunit and if you're using Business Central online or on-premises.
 
 
+[!INCLUDE[gui_allowed](includes/include-gui-allowed.md)]
 
 ### Retriable exceptions in the main codeunit
 
