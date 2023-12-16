@@ -38,7 +38,7 @@ Developers planning to create [!INCLUDE[prod_short](../developer/includes/prod_s
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports API and OData web services in addition to the SOAP web services that have been available since [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)]. 
 
-[!INCLUDE[gui_allowed](includes/include-gui-allowed.md)]
+[!INCLUDE[gui_allowed](../developer/includes/include-gui-allowed.md)]
 
 ### API Web Services  
 The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] API stack have been optimized for performance and is the preferred way to integrate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] also comes with an extensive list of built-in APIs that requires no code and minimal setup to use. You can also develop your own custom APIs using the AL object types API pages and API queries.
