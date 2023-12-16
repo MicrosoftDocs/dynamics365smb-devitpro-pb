@@ -60,6 +60,40 @@ Here's a general overview of the process:
             - It will stay in **Error** state if the **Maximum No. of Attempts** value has been exceeded and it's not a recurring job.
             - It will be rescheduled if the **Maximum No. of Attempts** value hasn't been exceeded and it's a recurring job.
 
+## Running codeunits with the job queue
+
+When running a codeunit with the job queue, you need to declare the `OnRun()` trigger, as this defines the code which the underlaying task scheduler will run. The same applies for the failure codeunit.
+
+```AL
+codeunit 50142 MyCodeunitToBeRunFromTheJobQueue
+{
+    trigger OnRun()
+    var
+        // declare your variables
+    begin
+        // code to be run. Probably calling other methods
+    end;
+```
+
+If you define the TableNo property and set it to "Job Queue Entry" on the codeunit, then you'll be able to access the parameter string defined on the job queue entry from the codeunit. 
+
+```AL
+codeunit 50143 MyCodeunitToBeRunFromTheJobQueueNowWithParameters
+{
+    TableNo = "Job Queue Entry";
+
+    trigger OnRun()
+    var
+        // declare your variables
+    begin
+        if Rec."Parameter String" <> '' then
+        begin
+            // code to be run. Probably calling other methods
+        end
+    end;
+}
+```
+
 ## About job queue sessions and permissions
 
 The session runs using the same user/credentials that are used when calling AL code. The user that is used is the user that sets the job to ready state. The user must have appropriate permissions to run the job queue and any other objects that are associated with the operation of the specified object.
