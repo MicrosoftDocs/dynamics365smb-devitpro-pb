@@ -34,7 +34,33 @@ To disable cloud migration, complete the following steps:
 > [!NOTE]
 > The integration runtime remains installed on your on-premise machine. However, if it's not used for cloud migration within a couple of weeks, its cloud registration is automatically cleaned up. If you want to migrate data again, you must go through the cloud migration setup again and may also need to re-install the Self-hosted Integration Runtime.
 
-## Step 2 Set up users and permissions
+## <a name="API"></a> Step 2 Run API data upgrade
+
+This step is only required if you skipped the API data upgrade during the cloud migration.
+
+1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
+1. Search for and open the **Cloud Migration Management** page.
+1. Select the **Manage API Upgrade** action to open the **API Upgrade overview** page. 
+
+   Companies that weren't upgraded have the **API Upgrade Status** of **Disabled**.
+    
+1. To run the API data upgrade for a company, do the following steps:
+
+   1. On the **API upgrade overview** page, select the company name.
+
+      The **API Data Upgrade List** opens in a new browser tab. 
+      
+   1. On the **API Data Upgrade List** page, select all entities, and then select **Reset** > **"Schedule Upgrades** > **Yes**.
+
+      A job queues entry is created and opened.
+   
+   1. Schedule the job queue entry to run. [Learn more](/dynamics365/business-central/admin-job-queues-schedule-tasks).
+  
+1. Repeat the previous step for each company you want to run the API data upgrade.
+
+You can check the status of job queue entries on the **API Upgrade Overview** page and restart a job queue entry if it fails. When you restart a job queue entry, it continues at the point where it stopped. It's safe to rerun the job queue entry because it commits and releases any locks and shouldn't cause any performance degradation.
+
+## Step 3 Set up users and permissions
 
 User accounts and permissions in Business Central on-premises aren't migrated to the online. To give on-premises users access to the new online tenant, each user needs the following permissions:
 
@@ -49,7 +75,7 @@ User accounts and permissions in Business Central on-premises aren't migrated to
    > [!TIP]
    > You can go directly to setting up permission sets from the **Cloud Ready Checklist** page by selecting **Permission Sets**.
 
-## Step 3 Define user mappings
+## Step 4 Define user mappings
 
 If any data or transactions are dependent on a specific on-premises user account, then you must map the on-premises user account to an online user account. 
 
@@ -67,7 +93,7 @@ If any data or transactions are dependent on a specific on-premises user account
 - The users are copied from the on-premises database from both **User** and **User Property** tables to the buffer table. If you're using custom SQL scripts to move the data, be sure to include **User Property** table. If this table isn't included, then no data is copied.
 - Not all tables are included in the rename process. Codeunit 418 **User Management** is used to rename the records that don't have the table relationship property set. Some tables, like **Change Log Entry**, aren't supported for this functionality, because they're too large. These tables are excluded from the rename process. 
 
-## Step 4 Reconfigure the Dynamics 365 Sales connection
+## Step 5 Reconfigure the Dynamics 365 Sales connection
 
 If you're integrating with Dynamics 365 Sales, you have to set up the connection again. For more information, see [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).
 
