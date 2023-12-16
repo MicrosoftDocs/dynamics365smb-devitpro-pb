@@ -78,7 +78,7 @@ WHERE
 
 ## Complete API data upgrade after going live
 
-When you're finished with the cloud migration, you must run the API data upgrade as described [](migration-finish.md#api).
+When you're finished with the cloud migration, you must run the API data upgrade as described [Run API data upgrade](migration-finish.md#api).
 
 <!--
 1. Search for and open the **Cloud Migration Management** page.
