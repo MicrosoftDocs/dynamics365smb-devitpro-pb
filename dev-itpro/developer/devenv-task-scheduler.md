@@ -122,6 +122,8 @@ A task can fail under the various conditions, like:
 
 The task scheduler is designed to automatically rerun main and failure codeunits when certain exceptions occur, instead of just failing on the first attempt. Exceptions that cause the system to rerun a codeunit are referred to as *retriable exceptions*. Whether an exception is retriable depends on whether the exception occurs in the main or failure codeunit and if you're using Business Central online or on-premises.
 
+
+
 ### Retriable exceptions in the main codeunit
 
 If you're running [!INCLUDE[prod_short](includes/prod_short.md)] online, the service controls which exceptions are retriable. With [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, you can specify retriable exceptions by configuring the **Execution Retry Exceptions** (TaskSchedulerExecutionRetryExceptions) setting on the [!INCLUDE[server](includes/server.md)] instance. The **Execution Retry Exceptions** setting is semicolon-separated list of exceptions in a format: `Exception1;Exception2;Exception3`. If you want to specify error code of the exception, use the following format instead: `Exception1:ErrorCode1;Exception2:ErrorCode2.`

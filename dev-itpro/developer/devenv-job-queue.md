@@ -75,6 +75,8 @@ codeunit 50142 MyCodeunitToBeRunFromTheJobQueue
     end;
 ```
 
+[!INCLUDE[gui_allowed](includes/include-gui-allowed.md)]
+
 
 If you want to do multiple things with a single codeunit using the job queue, consider using a parameter. To achieve this, define the TableNo property and set it to "Job Queue Entry" on the codeunit, then you'll be able to access the parameter string defined on the job queue entry from the codeunit. 
 
@@ -94,6 +96,8 @@ codeunit 50143 MyCodeunitToBeRunFromTheJobQueueNowWithParameters
     end;
 }
 ```
+
+
 
 ## About job queue sessions and permissions
 
