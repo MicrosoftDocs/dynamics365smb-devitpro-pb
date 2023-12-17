@@ -59,8 +59,7 @@ Each background session has the same impact on resources as a regular user sessi
 
 ### Dialog box behavior
 
-[!INCLUDE[dialog_exceptions_in_non_ui_sessions]](../../includes/include-dialog-exceptions-in-non-ui-sessions.md)
-
+[!INCLUDE[dialog_exceptions_in_non_ui_sessions](../../../includes/include-dialog-exceptions-in-non-ui-sessions.md)
  
 
 ## Example
