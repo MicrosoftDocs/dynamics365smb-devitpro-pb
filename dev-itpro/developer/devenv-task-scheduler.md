@@ -136,7 +136,7 @@ Because failure codeunits are designed for error situations, expect for a select
   
 ### AL methods that throw non-retriable exceptions in background sessions
 
-When running codeunits as scheduled tasks, you must make sure that the AL code does not assume the ability to interact with a user through the UI. You can use the [GUIALLOWED Method](../developer/methods-auto/library.md) to suppress UI interactions. 
+When running codeunits as scheduled tasks, you must make sure that the AL code does not assume the ability to interact with a user through the UI. You can use the [GuiAllowed Method](../developer/methods-auto/system/system-guiallowed-method.md) to suppress UI interactions. 
 
 [!INCLUDE[callback_exception_no_ui_note](../includes/include-callback-exception-no-ui-note.md)]
 

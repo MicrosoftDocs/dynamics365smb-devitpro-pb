@@ -28,7 +28,7 @@ For more information, see [Troubleshooting OData/API calls](dynamics-error-codes
 
 
 ## See also
-[Handling UI Interaction in web service endpoints](handling-ui-interaction-when-working-with-web-Services.md)
+[Handling UI Interaction in web service endpoints](handling-ui-interaction-when-working-with-web-Services.md)   
 [Web Services Best Practices](Web-Services-Best-Practices.md)  
 [Web service telemetry](web-service-telemetry.md)   
 [Troubleshooting OData/API calls](dynamics-error-codes.md)   
