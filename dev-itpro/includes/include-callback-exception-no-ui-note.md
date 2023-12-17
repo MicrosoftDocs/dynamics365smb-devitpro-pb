@@ -1,0 +1,2 @@
+> [!NOTE]  
+>  The server returns the following exception when trying to invoke a dialog UI through a web service call or in a background session: **NavNCLCallbackNotAllowedException: Callback functions are not allowed.** 

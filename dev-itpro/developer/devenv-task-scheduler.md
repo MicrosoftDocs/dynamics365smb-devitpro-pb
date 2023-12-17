@@ -129,9 +129,18 @@ The task scheduler is designed to automatically rerun main and failure codeunits
 
 If you're running [!INCLUDE[prod_short](includes/prod_short.md)] online, the service controls which exceptions are retriable. With [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, you can specify retriable exceptions by configuring the **Execution Retry Exceptions** (TaskSchedulerExecutionRetryExceptions) setting on the [!INCLUDE[server](includes/server.md)] instance. The **Execution Retry Exceptions** setting is semicolon-separated list of exceptions in a format: `Exception1;Exception2;Exception3`. If you want to specify error code of the exception, use the following format instead: `Exception1:ErrorCode1;Exception2:ErrorCode2.`
 
-### Retriable exceptions in the main codeunit
+### Retriable exceptions in the failure codeunit
 
 Because failure codeunits are designed for error situations, expect for a selected few, almost all exceptions while running failure codeunits are retriable. It doesn't matter if you're using [!INCLUDE[prod_short](includes/prod_short.md)] online or on-premises. Even with on-premises, you can't specify retriable exceptions, like you can for main codeunits.
+
+  
+### AL methods that throw non-retriable exceptions in background sessions
+
+When running codeunits as scheduled tasks, you must make sure that the AL code does not assume the ability to interact with a user through the UI. You can use the [GUIALLOWED Method](../developer/methods-auto/library.md) to suppress UI interactions. 
+
+[!INCLUDE[callback_exception_no_ui_note](../includes/include-callback-exception-no-ui-note.md)]
+
+[!INCLUDE[callback_exceptions_no_ui](../includes/include-callback-exceptions-no-ui.md)]
 
 ## About task sessions and permissions
 
