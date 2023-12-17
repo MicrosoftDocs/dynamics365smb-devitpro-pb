@@ -21,4 +21,6 @@ Other AL methods that you should not use in web service endpoints or background 
   
 - File.Download
   
+
+ 
 You should also avoid operations on client-side Automation and .NET Framework interoperability objects. 

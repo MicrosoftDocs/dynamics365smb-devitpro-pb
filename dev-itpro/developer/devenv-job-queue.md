@@ -99,7 +99,7 @@ codeunit 50143 MyCodeunitToBeRunFromTheJobQueueNowWithParameters
 
 ### AL methods that throw non-retriable exceptions in job queue entries
 
-When running codeunits in the job queue, you must make sure that the AL code does not assume the ability to interact with a user through the UI. You can use the [GUIALLOWED Method](../developer/methods-auto/library.md) to suppress UI interactions. 
+When running codeunits in the job queue, you must make sure that the AL code does not assume the ability to interact with a user through the UI. You can use the [GuiAllowed Method](../developer/methods-auto/system/system-guiallowed-method.md) to suppress UI interactions. 
 
 [!INCLUDE[callback_exception_no_ui_note](../includes/include-callback-exception-no-ui-note.md)]
 
