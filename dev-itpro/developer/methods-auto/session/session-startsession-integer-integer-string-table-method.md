@@ -1,6 +1,6 @@
 ---
 title: "Session.StartSession(var Integer, Integer [, Text] [, var Record]) Method"
-description: "Starts a session without a UI and runs the specified codeunit."
+description: "Starts a session without a UI and runs the specified codeunit (sessionID version)."
 ms.author: solsen
 ms.custom: na
 ms.date: 03/24/2022
@@ -60,6 +60,7 @@ Each background session has the same impact on resources as a regular user sessi
 ### Dialog box behavior
 
 [!INCLUDE[dialog_exceptions_in_non_ui_sessions]](../../../includes/include-dialog-exceptions-in-non-ui-sessions.md)
+  
 
 ## Example
 
