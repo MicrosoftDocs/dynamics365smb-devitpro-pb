@@ -1,9 +1,9 @@
 ---
 title: "Report.Run(Integer [, Boolean] [, Boolean] [, var Record]) Method"
-description: "Loads and executes the report that you specify."
+description: "Loads and executes the report that you specify (static method)."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
+ms.date: 12/18/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Loads and executes the report that you specify.
 
 ## Syntax
 ```AL
- Report.Run(Number: Integer [, RequestWindow: Boolean] [, SystemPrinter: Boolean] [, var Record: Record])
+Report.Run(Number: Integer [, RequestWindow: Boolean] [, SystemPrinter: Boolean] [, var Record: Record])
 ```
 ## Parameters
 *Number*  
@@ -46,15 +46,25 @@ Specifies which record to use in the report. Any filters that are attached to th
 
 ## Remarks  
 
-Use this method, or the [Report.RunModal Method](report-runmodal-method.md), if you do not know the specific report that you want to run when you are designing your application. If you do know the specific report that you want to run, then you can use the [Run Method](reportinstance-run-method.md) or the [RunModal Method](reportinstance-runmodal-method.md). 
+Use this method, or the [Report.RunModal Method](report-runmodal-method.md), if you don't know the specific report that you want to run when you're designing your application. If you do know the specific report that you want to run, then you can use the [Run Method](reportinstance-run-method.md) or the [RunModal Method](reportinstance-runmodal-method.md). 
   
-If the report you specify does not exist, then a compile error occurs.  
+If the report you specify doesn't exist, then a runtime error occurs.  
 
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
-  
+
+## Example: Using `Report::<object ID>` syntax
+
+As mentioned previously, the `Report.Run` method throws a runtime error if no report with the supplied object ID exists. If you know the report object, a safe way to call `Report.Run` is to use the `Report::<object identifier>` syntax because the compiler will tell you if the report object doesn't exist.  
+
+```AL
+begin
+    Report.Run(Report::MyReport);
+end;
+```
+
 ## Example 1
 
- This example shows how to run a report. This example displays the request window and sends the report to the printer that is selected in the Printer Selection table.  
+This example shows how to run a report. This example displays the request window and sends the report to the printer that's selected in the `Printer Selection` table.  
 
 ```al
 Report.Run(1001);  
@@ -62,7 +72,7 @@ Report.Run(1001);
 
 ## Example 2
 
- This example shows how to run a report. This example skips the request window, starts the report immediately, and sends the report to the printer that is selected in the Printer Selection table.  
+This example shows how to run a report. This example skips the request window, starts the report immediately, and sends the report to the printer that's selected in the `Printer Selection` table.  
 
 ```al
 Report.Run(1001, False);  
@@ -70,7 +80,7 @@ Report.Run(1001, False);
 
 ## Example 3
 
- This example shows how to run a report. This example skips the request window and starts the report immediately. It sends the report to the system printer instead of the printer that is selected in the Printer Selection table.  
+This example shows how to run a report. This example skips the request window and starts the report immediately. It sends the report to the system printer instead of the printer that is selected in the `Printer Selection` table.  
 
 ```al
 Report.Run(1001, False, True);  
@@ -78,7 +88,7 @@ Report.Run(1001, False, True);
 
 ## Example 4
 
- This example shows how to run a report for which you specify a record. This example displays the request window and sends the report to the system printer.
+This example shows how to run a report for which you specify a record. This example displays the request window and sends the report to the system printer.
  
 ```al
 var
@@ -90,7 +100,8 @@ begin
 end;
 ```   
 
-## See Also
+## See also
+
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
