@@ -1,9 +1,9 @@
 ---
 title: "TaskScheduler.CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration) Method"
-description: "Adds a task to ensure that a codeunit is not run before the specified time."
+description: "Adds a task to ensure that a codeunit is not run before the specified time. (duration version)"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
+ms.date: 12/15/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -61,11 +61,15 @@ Specifies the timeout of the created session. If not specified a default timeout
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
-Scheduled tasks are recorded in table **2000000175 Scheduled Task**.  For more information about tasks and task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
+## Remarks
 
-## See Also
+This version of the `TaskScheduler.CreateTask` method has the same semantics as the version without a timeout parameter. For more information and usage examples, see [CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId])](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md).
+
+## See also
+
+[CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId])](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md)   
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
+[Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Configuring Business Central Server - Default Task Scheduler Session Timeout](../../../administration/configure-server-instance.md#Task)

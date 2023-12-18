@@ -69,6 +69,95 @@ Update statistics and reorganize indexes on all tables on the source database. F
 
 Use an SQL Server instance installed with a copy of the source database and is only used for cloud migration.
 
+## Skip API data upgrade
+
+You might experience a long running data upgrade because of the API upgrade. In this case, you can skip the API data upgrade on a company basis during the cloud migration process, and then run it afterwards going live on the tenant. The only consequence is that the company will start using APIs a bit later.
+
+There are two ways to skip the API data upgrade during cloud migration. One way is disable it as part of the on-premises upgrade process. The other way is to disable using cloud migration management in the Business Central online environment.
+
+### From the online environment 
+
+1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
+1. Search for and open the **Cloud Migration Management** page.
+1. Select the **Manage API Upgrade** action to open the **API upgrade overview** page. 
+1. To disable the API data upgrade for a company, do the following steps:
+
+   1. On the **API upgrade overview** page, select the company in the **Company Name** column.
+
+      The **API Data Upgrade List** opens in a new browser tab. 
+      
+   1. On the **API Data Upgrade List** page, select **Disable API Data Upgrades** > **OK**.
+  
+      You can close the **API Data Upgrade List** tab after you make the selection. 
+1. Repeat the previous step for each company you want to disable the API data upgrade.
+
+   To show the changes  you've made, refresh (<kbd>F5</kbd>) the **API upgrade overview** page.
+
+
+### If you are running upgrade On-Premise
+
+You can use the following SQL query to skip upgrade for a single company
+
+```sql
+DECLARE @UpgTag nvarchar(250);  
+SET @UpgTag = UPPER('MS-469217-DisableAPIDataUpgrade-20230411')  
+  
+INSERT INTO [dbo].[Upgrade Tags$63ca2fa4-4f03-4f2b-a480-172fef340d3f] (Tag, [Tag Timestamp], [Skipped Upgrade], Company)  
+VALUES (  
+    UPPER(@UpgTag),  
+    '1753-01-01 00:00:00.000',  
+    1,  
+    UPPER('SetCompanyName')  
+);  
+```
+
+You can use the following SQL query to skip upgrade for all companies
+
+```sql
+DECLARE @UpgTag nvarchar(250);  
+  
+SET @UpgTag = UPPER('MS-469217-DisableAPIDataUpgrade-20230411')  
+  
+INSERT INTO [dbo].[Upgrade Tags$63ca2fa4-4f03-4f2b-a480-172fef340d3f] (Tag, [Tag Timestamp], [Skipped Upgrade], Company)  
+SELECT  
+    UPPER(@UpgTag),  
+    'SetDate',  
+    1,  
+    UPPER([Name])  
+FROM  
+    Company   
+WHERE  
+    UPPER([Name]) NOT IN (  
+        SELECT [Company]   
+        FROM [Upgrade Tags$63ca2fa4-4f03-4f2b-a480-172fef340d3f]   
+        WHERE Tag = UPPER(@UpgTag)  
+    )
+``` 
+
+## Completing API upgrade after going live
+
+
+1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
+1. Search for and open the **Cloud Migration Management** page.
+1. Select the **Manage API Upgrade** action to open the **API upgrade overview** page. 
+1. To disable the API data upgrade for a company, do the following steps:
+
+   1. On the **API upgrade overview** page, select the company in the **Company Name** column.
+
+      The **API Data Upgrade List** opens in a new browser tab. 
+      
+   1. On the **API Data Upgrade List** page, select **Disable API Data Upgrades** > **OK**.
+  
+      You can close the **API Data Upgrade List** tab after you make the selection. 
+1. Repeat the previous step for every company where you want to disable the API data upgrade.
+
+   To show the changes  you've made, refresh (<kbd>F5</kbd>) the **API upgrade overview** page.
+
+
+Go to the cloud migration management page and invoke the action 'Manage API Upgrade'. On the 'API upgrade overview' page that opens for each company that is marked as upgrade disabled, invoke the link to open the page in that company. Select all records, invoke the action reset and then with all records selected invoke the "Schedule Upgrades" action. Start the job queue entry that opens. Repeat the same steps for each of the companies you have skipped.
+
+You can check the status on the API Upgrade overview page and restart the job queue if it fails, it will continue at the point where it has stopped. It is safe to run the job queue as it will commit and release the locks, it should not cause any performance degradation.
+
 ## Next steps
 
 [Check prerequisites](cloud-migration-prerequisites.md)  

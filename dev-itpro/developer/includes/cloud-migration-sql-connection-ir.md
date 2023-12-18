@@ -10,7 +10,7 @@ If the product you selected requires an SQL connection, the **Define your SQL da
 
 - **SQL connection**
 
-  Specify **SQL Server** if the database is installed locally on an SQL Server instance. Specify **Azure SQL** if the database is an Azure SQL Database database.
+  Specify **SQL Server** if the database is installed locally on an SQL Server instance. Specify **Azure SQL** if the database is an Azure SQL Database database. The **Azure SQL** doesn't apply to Dynamics GP, because it's not supported.
  
 <!-- 
   > [!IMPORTANT]
@@ -31,7 +31,7 @@ If the product you selected requires an SQL connection, the **Define your SQL da
   > [!IMPORTANT]
   > In the second connection string format, don't forget to add the **space** in *User Id* parameter as it's mandatory and can throw an error if it's missing.
 
-  A connection string to an Azure SQL database typically look likes this:
+  For a Business Central database hosted on Azure SQL Database, a connection string typically looks like this:
 
     `Server=tcp:{ServerName}.database.windows.net,1433;Initial Catalog={DatabaseName};Persist Security Info=False;User ID={SQLUserName};Password={SQLUserPassword};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;`
 
