@@ -10,7 +10,8 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ---
-# Web Services Best Practices
+
+# Web services best practices
 
 This article provides recommendations that you can implement to make your web services applications faster and easier to understand and maintain.  
   
