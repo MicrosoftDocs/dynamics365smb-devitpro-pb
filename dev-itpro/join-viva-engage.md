@@ -18,7 +18,7 @@ The partner community on Viva Engage is your unique opportunity as a partner to 
 
 Before you can join the partner community on Viva Engage, you must be a member of the Microsoft Partner Network (MPN) with valid MPN ID. [Learn more](../administration/get-started-online?branch=yammer#step-1-become-a-partner).   
 
-Once you have an MPN ID, you can join Viva Engage in one of the following two ways:
+Once you have an MPN ID, you can join Viva Engage using either of the following ways:
 
 - Navigate to [aka.ms/BCVivaEngage](https://aka.ms/BCVivaEngage) and request access.
 - Send an email to dyn365bep@microsoft.com and remember to include your MPN ID and the associated email address. 
