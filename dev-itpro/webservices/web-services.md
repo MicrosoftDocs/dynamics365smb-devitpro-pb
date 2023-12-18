@@ -1,5 +1,5 @@
 ---
-title: SOAP and ODATA Web Services
+title: SOAP and ODATA web services
 description: Compare the features of APIs, SOAP, and OData web services and know how to create and maintain these services. 
 author: jswymer
 ms.custom: na
@@ -8,9 +8,10 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 04/01/2021
+ms.date: 12/18/2023
 ---
-# [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web Services
+
+# [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports three types of web services: API, SOAP, and OData. Web services are a lightweight, industry-standard way to make application functionality available to various external systems and users. Developers can create and publish functionality as web services, where they expose pages, codeunits, or queries, and even enhance a page web service by using an extension codeunit. When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] objects are published as web services, they're immediately available on the network.  
 
@@ -18,17 +19,19 @@ ms.date: 04/01/2021
 
 [!INCLUDE[webservice_key_deprecated](../includes/web-service-key-deprecated.md)]
 
-## Web Service Telemetry
-All calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are logged to partner telemetry. Telemetry enables you to monitor which endpoints are being used and the category of the web service, like SOAP, OData, or API. You can also see possible failures, which are tracked in the HTTP status codes for the calls.
+## Web service telemetry
 
-For more information, see 
-- [Web Service Telemetry](web-service-telemetry.md)
-- [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md),
+All calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are logged to partner telemetry. Telemetry enables you to monitor, which endpoints are being used and the category of the web service, like SOAP, OData, or API. You can also see possible failures, which are tracked in the HTTP status codes for the calls.
+
+For more information web service telemetry, see:
+
+- [Web Service Telemetry](web-service-telemetry.md)  
+- [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md),  
 - [Analyzing Web Service Access Key Telemetry](../administration/telemetry-webservices-access-key-trace.md)
 
-## Comparing APIs, SOAP and OData Web Services
+## Comparing APIs, SOAP, and OData Web Services
 
-Developers planning to create [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services may need to decide which type of web service is better suited to their needs. The following table shows the types of web service applications that you can create for the web service protocols.  
+Developers planning to create [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services might need to decide which type of web service is better suited to their needs. The following table shows the types of web service applications that you can create for the web service protocols.  
 
 |Object|SOAP web services|OData web services|API web service|   
 |-|-----------------------|------------------------|------------------------|  
@@ -52,7 +55,7 @@ OData is supported in PowerQuery, a data-analysis built into Microsoft Excel tha
   
  The extensions to the Atom Publishing Protocol defined in the AtomPub extensions to the OData protocol documentation \(which you can download [here](https://go.microsoft.com/fwlink/?LinkID=262184)\) describe how REST-based data services can enable resources, identified using URIs and defined in an abstract data model \(EDM\), to be published and edited by web clients within corporate networks and across the Internet using simple HTTP messages.  
   
-In addition to the AtomPub format, the OData implementation in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] also supports the JSON format, a somewhat less verbose format that may perform better in low-bandwidth environments.  
+In addition to the AtomPub format, the OData implementation in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] also supports the JSON format, a less verbose format that might perform better in low-bandwidth environments.  
 
 ### SOAP Web Services  
  SOAP web services allow full flexibility for building operation-centric services. They provide industry standard interoperability. The most common type of messaging pattern in SOAP is the Remote Procedure Call \(RPC\), where one network node \(the client\) sends a request message to another node \(the server\), and the server sends a response message to the client.
@@ -76,14 +79,14 @@ Codeunit web services provide you with the most control and flexibility. When a 
 ### Web Services and Regional Settings  
  Data is formatted according to the value of the **Services Language** setting for the relevant [!INCLUDE[server](../developer/includes/server.md)] instance. The default value is **en-us**. This means that [!INCLUDE[server](../developer/includes/server.md)] interprets all incoming data as the specified culture, such as dates and amounts.  
 
- If you know that the **Services Language** setting is always en-us, for example, your code can be based on that assumption. In a multilanguage environment, you will see more predictable transformations of data if data that is transmitted through web services is in a consistent culture.  
+ If you know that the **Services Language** setting is always en-us, for example, your code can be based on that assumption. In a multilanguage environment, you see more predictable transformations of data if data that is transmitted through web services is in a consistent culture.  
 
- Similarly, you can use the **ServicesOptionFormat** setting to specify how [!INCLUDE[server](../developer/includes/server.md)] must understand option values. If you set the **ServicesOptionFormat** setting to *OptionString*, [!INCLUDE[server](../developer/includes/server.md)] understand option values as the *name* of the option value, which is always en\-us. If you set the setting to *OptionCaption*, web service data will be interpreted in the language specified by the **Services Language** setting.  
+ Similarly, you can use the **ServicesOptionFormat** setting to specify how [!INCLUDE[server](../developer/includes/server.md)] must understand option values. If you set the **ServicesOptionFormat** setting to *OptionString*, [!INCLUDE[server](../developer/includes/server.md)] understand option values as the *name* of the option value, which is always en\-us. If you set the setting to *OptionCaption*, web service data is interpreted in the language specified by the **Services Language** setting.  
 
 ## Web Services in Multitenant Deployments  
  If your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution is used in a multitenant deployment architecture, you must make sure that any code that generates or consumes a web service specifies the relevant tenant. Web services are set up in the application, but typically you want to consume company-specific and tenant-specific data.  
 
- If you use the GETURL method, the generated URL will automatically apply to the user's tenant ID. For more information, see [GETURL Method](../developer/methods-auto/system/system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md).
+ If you use the GETURL method, the generated URL is automatically applied to the user's tenant ID. For more information, see [GETURL Method](../developer/methods-auto/system/system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md).
 
  The URL for accessing a web service in a multitenant deployment must specify the tenant ID in one of two ways: As a query parameter, or as a host name. If you use host names for tenants, the host name must be specified as an alternative ID.  
 
@@ -94,14 +97,15 @@ https://localhost:7048/BC130/OData/Company('CRONUS-International-Ltd.')/Customer
 ```  
 For more information, see [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md).  
 
-## See Also  
- [Publish a Web Service](publish-web-service.md)   
- [Web Services Overview](web-services.md)   
- [SOAP Web Service URIs](SOAP-Web-Service-URIs.md)   
- [Using SystemService to Find Companies](use-systemservice-to-find-companies.md)   
- [Basic Page Operations](Basic-Page-Operations.md)   
- [Web Services Best Practices](Web-Services-Best-Practices.md)
- [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md)
- [Analyzing Web Service Access Key Telemetry](../administration/telemetry-webservices-access-key-trace.md)
- [Configuring Business Central Server](../administration/configure-server-instance.md)
+## See also
+
+[Publish a Web Service](publish-web-service.md)   
+[Web Services Overview](web-services.md)   
+[SOAP Web Service URIs](SOAP-Web-Service-URIs.md)   
+[Using SystemService to Find Companies](use-systemservice-to-find-companies.md)   
+[Basic Page Operations](Basic-Page-Operations.md)   
+[Web Services Best Practices](Web-Services-Best-Practices.md)
+[Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md)
+[Analyzing Web Service Access Key Telemetry](../administration/telemetry-webservices-access-key-trace.md)
+[Configuring Business Central Server](../administration/configure-server-instance.md)
   
