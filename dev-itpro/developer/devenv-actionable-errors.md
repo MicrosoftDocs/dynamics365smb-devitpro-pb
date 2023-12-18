@@ -81,6 +81,13 @@ If the user experience the error, they will see the following error dialog
 
 ### Example (validation error with one Show-it action)
 
+The following AL code illustrates how to setup a validation error dialog with a Show-it action.
+
+```AL
+// TODO
+```
+
+
 If the user experience that the field cannot be validated, they will see the following dialog
 
 :::image type="content" source="media/validation-error-showit.png" alt-text="Validation error with show-it action":::
