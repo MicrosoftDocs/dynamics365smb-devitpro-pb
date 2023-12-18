@@ -35,7 +35,16 @@ To achieve consistency in the user experience of Fix-it actions, please consider
 The following AL code illustrates how to setup an error dialog with a Fix-it action.
 
 ```AL
-// TODO
+var 
+    dimension: Text[30];
+    vendorCode: Text[30];
+    error: ErrorInfo;
+begin
+    error.Title('The line dimension value isn't valid');
+    error.Message(StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', dimension, vendorCode));
+    error.DetailedMessage('Add some text to help the person troubleshooting this error.');
+    error.AddAction('Set value to blank', Codeunit::FixitCodeunitID, FixitCodeunitIDMethodName);
+end
 ```
 
 If the user experience the error, they will see the following error dialog
