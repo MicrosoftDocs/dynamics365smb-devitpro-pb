@@ -38,12 +38,15 @@ The following AL code illustrates how to setup an error dialog with a Fix-it act
 var 
     dimension: Text[30];
     vendorCode: Text[30];
-    error: ErrorInfo;
+    FixitErrorInfo: ErrorInfo;
 begin
-    error.Title('The line dimension value isn't valid');
-    error.Message(StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', dimension, vendorCode));
-    error.DetailedMessage('Add some text to help the person troubleshooting this error.');
-    error.AddAction('Set value to blank', Codeunit::FixitCodeunitID, FixitCodeunitIDMethodName);
+    // setup the error info object
+    FixitErrorInfo.Title('The line dimension value isn't valid');
+    FixitErrorInfo.Message(StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', dimension, vendorCode));
+    FixitErrorInfo.DetailedMessage('Add some text to help the person troubleshooting this error.');
+    FixitErrorInfo.AddAction('Set value to blank', Codeunit::FixitCodeunit, FixitCodeunitMethodName);
+    
+    Error(FixitErrorInfo);
 end
 ```
 
@@ -52,14 +55,41 @@ If the user experience the error, they will see the following error dialog
 :::image type="content" source="media/error-dialog-fixit.png" alt-text="Error dialog with fix-it action":::
 
 
-
-
 ### Example (validation error with a Fix-it action)
 
-The following AL code illustrates how to setup field validation with a Fix-it action.
+The following AL code illustrates how to setup field validation with a Fix-it action. 
 
+<!-- the code example is copied from SalesLine.Table.al and adjusted to docs -->
 ```AL
-// TODO
+    ... 
+        field(17; "Qty. to Invoice"; Decimal)
+        {
+            // field properties
+
+            trigger OnValidate()
+            var
+                CannotInvoiceErrorInfo: ErrorInfo;
+            begin
+                // some calculations here
+
+                if 
+                (
+                    // some logic not met
+                )
+                then begin
+                    // setup the error info object
+                    CannotInvoiceErrorInfo.Title := 'Qty. to Invoice isn''t valid';
+                    CannotInvoiceErrorInfo.Message := StrSubstNo('You cannot invoice more than %1 units.', MaxQtyToInvoice());
+                    CannotInvoiceErrorInfo.RecordId := Rec.RecordId;
+                    CannotInvoiceErrorInfo.AddAction(StrSubstNo('Set value to %1', MaxQtyToInvoice()), Codeunit::FixitCodeunit, FixitCodeunitMethodName);
+
+                    Error(CannotInvoiceErrorInfo);
+                end;
+
+                // maybe more validation logic here
+            end;
+        }
+    ...
 ```
 
 If the user experience that the field cannot be validated, they will see the following dialog
@@ -80,8 +110,32 @@ To achieve consistency in the user experience of Show-it actions, please conside
 ### Example (error dialog with a Show-it action)
 The following AL code illustrates how to setup an error dialog with a Show-it action.
 
+<!-- the code example is copied from GetSourceDocuments.Report.al and adjusted to docs -->
 ```AL
-// TODO
+procedure ShowShipmentDialog()
+var
+    ErrorNoLinesToCreate: ErrorInfo;
+begin
+    // some business logic 
+
+    if (
+        // some condition not met
+    ) begin
+        // maybe some business logic here 
+
+        ErrorNoLinesToCreate.Title := 'There are no new warehouse shipment lines to create';
+        ErrorNoLinesToCreate.Message := 'This usually happens when warehouse shipment lines [...]'; 
+
+        ErrorNoLinesToCreate.PageNo := Page::"Warehouse Shipment List";
+        ErrorNoLinesToCreate.AddNavigationAction('Show open lines');,
+
+        Error(ErrorNoLinesToCreate);
+
+        // maybe more business logic here 
+    end;
+
+    // some more business logic here
+
 ```
 
 If the user experience the error, they will see the following error dialog
@@ -93,7 +147,35 @@ If the user experience the error, they will see the following error dialog
 The following AL code illustrates how to setup a validation error dialog with a Show-it action.
 
 ```AL
-// TODO
+... 
+field(59; "Gen. Prod. Posting Group"; Code[20])
+{
+    // field properties
+
+    trigger OnValidate()
+    var
+        CheckIfFieldIsEmpty: Boolean;
+        FieldEmptyErrorInfo: ErrorInfo;
+    begin
+        CheckIfFieldIsEmpty := // calculate if true or false        
+
+        if (CheckIfFieldIsEmpty)
+        then begin
+            // setup the error info object
+
+            FieldEmptyErrorInfo.Message := StrSubstNo('Gen. Prod. Posting Group must have a value in item: %1. It can''t be zero or empty.', ItemNo);
+            CannotInvoiceErrorInfo.RecordId := ItemRec.RecordId;
+
+            CannotInvoiceErrorInfo.AddNavigationAction(StrSubstNo('Show Item %1', ItemNo));
+            ChangeNotAllowedErrorInfo.PageNo(Page::"Item Card");
+
+            Error(CannotInvoiceErrorInfo);
+        end;
+
+        // maybe more validation logic here
+    end;
+}
+...
 ```
 
 
