@@ -41,28 +41,33 @@ The GUID that you want to check whether it is null.
 
 ## Remarks
 
-The Guid data type is useful when you want to uniquely identify data so that it can be exchanged with external applications. For example, if you want to transfer an item catalog to an external application, you add a Guid field to the record in the table and use it as the primary reference when you communicate with the external application. A Guid is a 16-byte binary data type that can be logically grouped into the following subgroups: 4byte-2byte-2byte-2byte-6byte.  
+A Guid is a 16-byte binary data type that can be logically grouped into the following subgroups: 4byte-2byte-2byte-2byte-6byte.  
   
+The Guid data type is useful when you want to uniquely identify data so that it can be exchanged with external applications. For example, if you want to transfer an item catalog to an external application, you add a Guid field to the record in the table and use it as the primary reference when you communicate with the external application. 
+
 ## Example
 
-The following example initializes two variables named validGuid and nullGuid. The validGuid variable is assigned a valid Guid value, and the nullGuid variable is assigned a null GUID that consists of only zeros. The IsNullGuid method determines whether the Guid that is contained in the *validGuid* parameter is null. In this case, the Guid is not null so a message that states that the Guid is not null is displayed and the value is displayed. The method then checks the *nullGuid* parameter. This time, a message that states that the Guid is null is displayed because the Guid is a null Guid that consists of only zeros. 
+The following example initializes two variables named validGuid and nullGuid. The validGuid variable is assigned a valid Guid value, and the nullGuid variable is assigned a null GUID that consists of only zeros. The IsNullGuid method determines whether the Guid that is contained in the *validGuid* variable is null. In this case, the Guid validGuid is not null so a message that states that the Guid is not null is displayed and the value is displayed. The method then checks the *nullGuid* parameter. This time, a message that states that the Guid is null is displayed because the Guid is a null Guid that consists of only zeros. 
  
 ```al
 var
     validGuid: Guid;
     nullGuid: Guid;
-    Text000: Label 'The Guid is null';
-    Text0001: Label 'The Guid is not null.\\';
-    Text0002: Label 'The value is %1.';
+    unInitializedGuid: Guid;
 begin
     validGuid := '{FC841BE6-0ADA-46C4-A6A9-142AEC211613}';  
     nullGuid  := '{00000000-0000-0000-0000-000000000000}';        
+
     if IsNullGuid(validGuid) then  
-      Message(Text000)  
+      Message('The Guid is null');  
     else   
-      Message(Text001 + Text002, validGuid);  
+      Message('The Guid is not null.\\' + StrSubstNo('The value is %1.', validGuid));  
+
     if IsNullGuid(nullGuid) then  
-      Message(Text000);  
+      Message('The Guid is null');  
+
+    if IsNullGuid(unInitializedGuid) then  
+      Message('The Guid is null');  
 end;
 ```  
 
