@@ -65,6 +65,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Discover useful resources for partners: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
 - Transact capability for [!INCLUDE [prod_short](../includes/prod_short.md)] Apps on Microsoft AppSource: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
 - Find the capability guide: [aka.ms/BCCapabilities](https://aka.ms/BCCapabilities)
+- Find Dynamics 365 icons and guidelines on usage: [aka.ms/Dynamics365Icons](https://aka.ms/Dynamics365Icons)
 
 ## Customer onboarding and resources
 
