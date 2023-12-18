@@ -3,7 +3,7 @@ title: "System.IsNullGuid(Guid) Method"
 description: "Indicates whether a value has been assigned to a GUID."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/18/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,13 +41,13 @@ The GUID that you want to check whether it is null.
 
 ## Remarks
 
-A Guid is a 16-byte binary data type that can be logically grouped into the following subgroups: 4byte-2byte-2byte-2byte-6byte.  
+A GUID is a 16-byte binary data type that can be logically grouped into the following subgroups: 4byte-2byte-2byte-2byte-6byte.  
   
-The Guid data type is useful when you want to uniquely identify data so that it can be exchanged with external applications. For example, if you want to transfer an item catalog to an external application, you add a Guid field to the record in the table and use it as the primary reference when you communicate with the external application. 
+The GUID data type is useful when you want to uniquely identify data so that it can be exchanged with external applications. For example, if you want to transfer an item catalog to an external application, you add a GUID field to the record in the table and use it as the primary reference when you communicate with the external application. 
 
 ## Example
 
-The following example initializes two variables named validGuid and nullGuid. The validGuid variable is assigned a valid Guid value, and the nullGuid variable is assigned a null GUID that consists of only zeros. The IsNullGuid method determines whether the Guid that is contained in the *validGuid* variable is null. In this case, the Guid validGuid is not null so a message that states that the Guid is not null is displayed and the value is displayed. The method then checks the *nullGuid* parameter. This time, a message that states that the Guid is null is displayed because the Guid is a null Guid that consists of only zeros. 
+The following example initializes two variables named `validGuid` and `nullGuid`. The `validGuid` variable is assigned a valid GUID value, and the `nullGuid` variable is assigned a null GUID that consists of only zeros. The `IsNullGuid` method determines whether the GUID that's contained in the `validGuid` variable is null. In this case, the GUID `validGuid` isn't null so a message that states that the GUID isn't null is displayed and the value is displayed. The method then checks the `nullGuid` parameter. This time, a message that states that the GUID is null, is displayed because the GUID is a null GUID that consists of only zeros. 
  
 ```al
 var
@@ -59,19 +59,19 @@ begin
     nullGuid  := '{00000000-0000-0000-0000-000000000000}';        
 
     if IsNullGuid(validGuid) then  
-      Message('The Guid is null');  
+      Message('The GUID is null');  
     else   
-      Message('The Guid is not null.\\' + StrSubstNo('The value is %1.', validGuid));  
+      Message('The GUID isn't null.\\' + StrSubstNo('The value is %1.', validGuid));  
 
     if IsNullGuid(nullGuid) then  
-      Message('The Guid is null');  
+      Message('The GUID is null');  
 
     if IsNullGuid(unInitializedGuid) then  
-      Message('The Guid is null');  
+      Message('The GUID is null');  
 end;
 ```  
 
-## See Also
+## See also
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
