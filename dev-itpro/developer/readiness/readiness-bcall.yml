@@ -82,6 +82,8 @@ landingContent:
             url: https://aka.ms/BCCapabilities
           - text: aka.ms/AIMforPartners
             url: https://aka.ms/AIMForPartners
+          - text: aka.ms/Dynamics365Icons
+            url: https://aka.ms/Dynamics365Icons
       - linkListType: get-started
         links:
           - text: aka.ms/BCPartnerPortal
