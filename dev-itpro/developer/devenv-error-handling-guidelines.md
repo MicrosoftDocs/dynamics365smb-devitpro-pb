@@ -131,17 +131,18 @@ To write error messages that are simple and feel human, consider using contracti
 
 ### Error messages voice guidelines - avoid this
 
-Users see your program from the functionality it provides, not how it is constructed. Therefore, as a developer, you should avoid words and phrases such as
+In error situations, it's crucial to show users we’re on their side. Utilize plain language and steer clear of the following words and phrases:
 
 - “There has been an error” or “An error has occurred” 
 - “Error,” “Failed,” “Denied,” or “Invalid” 
 - "Hmmm ..." or "Oops ..." or "Whoops" 
 - Developer error codes like “WDGeneralNetworkError Error 500”. If you need to include a code, hide it under “details” 
 
+
 Remember these rules of thumb
 - Don't overwhelm the user with technical terms
 - Avoid robotic language and characters such as  `=`, `"`, and `()`
-- Avoid long how-to or instructional guidance in error. That content lives on docs.microsoft.com or in your documentation.
+- Avoid long how-to or instructional guidance in errors. That content lives on docs.microsoft.com or in your documentation.
 
 
 ### Microsoft’s voice guidelines
