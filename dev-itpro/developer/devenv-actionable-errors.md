@@ -42,9 +42,17 @@ var
 begin
     // setup the error info object
     FixitErrorInfo.Title('The line dimension value isn''t valid');
-    FixitErrorInfo.Message(StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', dimension, vendorCode));
-    FixitErrorInfo.DetailedMessage('Add some text to help the person troubleshooting this error.');
-    FixitErrorInfo.AddAction('Set value to blank', Codeunit::FixitCodeunit, FixitCodeunitMethodName);
+    FixitErrorInfo.Message(
+        StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', dimension, vendorCode)
+    );
+    FixitErrorInfo.DetailedMessage(
+        'Add some text to help the person troubleshooting this error.'
+    );
+    FixitErrorInfo.AddAction(
+        'Set value to blank', 
+        Codeunit::FixitCodeunit, 
+        FixitCodeunitMethodName
+    );
     
     Error(FixitErrorInfo);
 end
