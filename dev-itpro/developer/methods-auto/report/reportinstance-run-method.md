@@ -3,7 +3,7 @@ title: "Report.Run() Method"
 description: "Loads and executes the report that you specify (instance method)."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/18/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,11 +33,9 @@ An instance of the [Report](report-data-type.md) data type.
 
 ## Remarks  
 
-After you define the *Report* variable, you can run this method or the [RunModal Method \(Report\)](reportinstance-runmodal-method.md) on the variable. With the Run method, the variable is automatically cleared after the method is executed. With the RunModal method, the variable is not automatically cleared. 
+After you define the *Report* variable, you can run this method or the [RunModal Method \(Report\)](reportinstance-runmodal-method.md) on the variable. With the `Run` method, the variable is automatically cleared after the method is run. With the `RunModal` method, the variable isn't automatically cleared. 
 
-Use Run method or the RunModal method if you know at design time the exact report that you want to run. Otherwise, use the static methods [Report.Run Method](report-run-method.md) or [Report.RunModal Method](report-runmodal-method.md). 
-  
-
+Use the `Run` method or the `RunModal` method if you know at design time the exact report that you want to run. Otherwise, use the static methods [Report.Run Method](report-run-method.md) or [Report.RunModal Method](report-runmodal-method.md). 
 
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
   
@@ -56,7 +54,8 @@ begin
 end;
 ```  
 
-## See Also
+## See also
+
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
