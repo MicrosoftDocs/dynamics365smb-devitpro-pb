@@ -227,7 +227,7 @@ To track whether an industry group is coupled to an industry code in [!INCLUDE[c
 1. Add a boolean field called **Coupled to CRM** to your [!INCLUDE[prod_short](../includes/prod_short.md)] table. 
 
  > [!IMPORTANT]  
- > The name of the new field must be **Coupled to CRM**. <!--Shouldn't this be "Sales?"-->
+ > The name of the new field must contain **Coupled to CRM**, it can have a prefix or a suffix like "My_Coupled To CRM".
 
 3. Add a control that shows the **Coupled to CRM** field on the list page. There are no naming requirements for the control.
 
