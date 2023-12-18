@@ -24,6 +24,10 @@ Once you start the data upgrade on an environment, all client connections are te
 
 Inform any active Business Central online users to finish what they're doing and sign out.
 
+### Avoid long running data upgrades
+
+When running the data upgrade during cloud migration, you can experience that it takes a long time to complete. You can speed up the data upgrade by temporarily skipping API upgrade. To learn more, go to [Skip API data upgrade](migration-skip-api-data-upgrade.md).
+
 ## Run data upgrade
 
 1. Search for and open the **Cloud Migration Management** page.
@@ -48,6 +52,7 @@ Inform any active Business Central online users to finish what they're doing and
 On the **Environment Operations** page, select the **Failed** status for the data upgrade operation to open a pane that displays the full stack trace for the error.
 
 You can then fix the errors and try run the upgrade again. You can rerun the cloud migration setup or data replication to replicate more data. 
+
 
 <!--
 Alternatively, you can start the cloud migration in another environment, or you can restore the current environment from a backup from a point in time before the data upgrade. Or, delete all companies in the current environment and start the migration again.

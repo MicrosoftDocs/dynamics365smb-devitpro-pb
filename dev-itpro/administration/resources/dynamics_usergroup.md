@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 12/03/2023
 ms.author: solsen
 ---
 
@@ -19,6 +19,8 @@ Represents an user group in [!INCLUDE[d365fin_long_md](../../includes/d365fin_lo
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE [prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
 
+> [!NOTE]  
+> User groups are replaced with [security groups](../../upgrade/deprecated-features-user-groups.md) and will be deprecated in version 25. For more information, see [security group APIs](../resources/dynamics_securitygroup.md) and [Control Access to Business Central Using Security Groups](/dynamics365/business-central/ui-security-groups).
 
 ## Methods
 

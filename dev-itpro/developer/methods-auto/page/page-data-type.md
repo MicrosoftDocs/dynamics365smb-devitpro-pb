@@ -3,7 +3,7 @@ title: "Page Data Type"
 description: "Contains a number of simpler elements called controls."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/25/2023
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Contains a number of simpler elements called controls. Controls are used to display information to the user or receive information from the user.
 
 
+## Static methods
 The following methods are available on the Page data type.
 
 
@@ -32,6 +33,7 @@ The following methods are available on the Page data type.
 |[RunModal(Integer, Record, FieldRef)](page-runmodal-integer-table-fieldref-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[SetBackgroundTaskResult(Dictionary of [Text, Text])](page-setbackgroundtaskresult-method.md)|Sets the page background task result as a dictionary. When the task is completed, the OnPageBackgroundCompleted trigger will be invoked on the page with this result dictionary.|
 
+## Instance methods
 The following methods are available on instances of the Page data type.
 
 |Method name|Description|
