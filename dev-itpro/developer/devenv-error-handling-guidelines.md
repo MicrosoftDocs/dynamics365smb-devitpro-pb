@@ -49,12 +49,12 @@ For more information, see [Error messages with Fix-it actions](devenv-actionable
 [!INCLUDE [actionable-errors-show-it-actions](includes/include-actionable-errors-show-it-actions.md)]
 
 
-<br>Example of an error dialog with a Show-it:
+<br>Example of an error dialog with a Show-it action:
 
 :::image type="content" source="media/error-dialog-showit.png" alt-text="Error dialog with show-it action":::
 
 
-<br>Example of an validation dialog with a Show-it:
+<br>Example of an validation dialog with a Show-it action:
 
 :::image type="content" source="media/validation-error-showit.png" alt-text="Validation error with show-it action":::
 
