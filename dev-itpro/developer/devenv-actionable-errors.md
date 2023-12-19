@@ -77,12 +77,13 @@ field(17; "Qty. to Invoice"; Decimal)
     trigger OnValidate()
     var
         CannotInvoiceErrorInfo: ErrorInfo;
+        CheckField: Boolean;
     begin
         // some calculations here
-        if 
-        (
-            // some logic not met
-        )
+
+        CheckField := // calculate if true or false
+
+        if (CheckField)
         then begin
             // setup the error info object
             CannotInvoiceErrorInfo.Title := 'Qty. to Invoice isn''t valid';
@@ -126,12 +127,14 @@ The following AL code illustrates how to setup an error dialog with a Show-it ac
 procedure ShowShipmentDialog()
 var
     ErrorNoLinesToCreate: ErrorInfo;
+    SomeCheckCondition: Boolean;
 begin
     // some business logic 
 
-    if (
-        // some condition not met
-    ) begin
+    SomeCheckCondition := // calculate if true or false        
+
+    if (SomeCheckCondition)
+    begin
         // maybe some business logic here 
 
         // setup the error info object
@@ -251,18 +254,23 @@ field(4; "Account No."; Code[20])
     var
         PendingApprovalErrorInfo: ErrorInfo;
     begin
-        PendingApprovalErrorInfo.Message := 'You can''t modify a record pending approval. Add a comment or reject the approval to modify the record.';
+        SomeCheckCondition := // calculate if true or false        
 
-        PendingApprovalErrorInfo.PageNo := Page::"Comments";
-        PendingApprovalErrorInfo.AddNavigationAction('Show comments');
+        if (SomeCheckCondition)
+        then begin        
+            PendingApprovalErrorInfo.Message := 'You can''t modify a record pending approval. Add a comment or reject the approval to modify the record.';
 
-        PendingApprovalErrorInfo.AddAction(
-            'Reject approval'
-            Codeunit::SecondFixitCodeunit, 
-            SecondFixitCodeunitMethodName
-        );
+            PendingApprovalErrorInfo.PageNo := Page::"Comments";
+            PendingApprovalErrorInfo.AddNavigationAction('Show comments');
 
-        Error(PendingApprovalErrorInfo);
+            PendingApprovalErrorInfo.AddAction(
+                'Reject approval'
+                Codeunit::SecondFixitCodeunit, 
+                SecondFixitCodeunitMethodName
+            );
+
+            Error(PendingApprovalErrorInfo);
+        end;
     end;
 }
 ```
