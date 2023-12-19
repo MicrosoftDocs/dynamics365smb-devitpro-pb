@@ -241,8 +241,30 @@ If the user experience the error, they will see the following error dialog
 
 The following AL code illustrates how to setup field validation with two actions.
 
+
 ```AL
-// TODO
+field(4; "Account No."; Code[20])
+{
+    // maybe some field properties
+
+    trigger OnValidate()
+    var
+        PendingApprovalErrorInfo: ErrorInfo;
+    begin
+        PendingApprovalErrorInfo.Message := 'You can''t modify a record pending approval. Add a comment or reject the approval to modify the record.';
+
+        PendingApprovalErrorInfo.PageNo := Page::"Comments";
+        PendingApprovalErrorInfo.AddNavigationAction('Show comments');
+
+        PendingApprovalErrorInfo.AddAction(
+            'Reject approval'
+            Codeunit::SecondFixitCodeunit, 
+            SecondFixitCodeunitMethodName
+        );
+
+        Error(PendingApprovalErrorInfo);
+    end;
+}
 ```
 
 Here the Show-it action shows the related Comments table, and the Fix-it action rejects the approval.
@@ -259,7 +281,15 @@ When there isn’t any known solution to recommend, the error dialog has one pri
 The following AL code illustrates how to setup an error dialog with no actions (this is also the standard behaviour of the Error method)
 
 ```AL
-// TODO
+var
+    ErrorDialogNoActions: ErrorInfo;
+begin
+    // setup the error info object
+    ErrorDialogNoActions.Title := 'The ''Starting Date'' isn''t valid';
+    ErrorDialogNoActions.Message := 'The ''Starting Date'' must be the first date of an accounting period. Try changing the date to first date of the month.'; 
+
+    Error(ErrorDialogNoActions);
+end;
 ```
 
 If the user experience the error, they will see the following error dialog
