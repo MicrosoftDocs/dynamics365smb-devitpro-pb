@@ -45,9 +45,8 @@ begin
     FixitErrorInfo.Message(
         StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', dimension, vendorCode)
     );
-    FixitErrorInfo.DetailedMessage(
-        'Add some text to help the person troubleshooting this error.'
-    );
+    FixitErrorInfo.DetailedMessage('Add some text to help the person troubleshooting this error.');
+
     FixitErrorInfo.AddAction(
         'Set value to blank', 
         Codeunit::FixitCodeunit, 
@@ -89,6 +88,8 @@ field(17; "Qty. to Invoice"; Decimal)
             CannotInvoiceErrorInfo.Title := 'Qty. to Invoice isn''t valid';
             CannotInvoiceErrorInfo.Message := 
                 StrSubstNo('You cannot invoice more than %1 units.', MaxQtyToInvoice());
+            CannotInvoiceErrorInfo.DetailedMessage('Add some text to help the person troubleshooting this error.');
+
             CannotInvoiceErrorInfo.RecordId := Rec.RecordId;
             CannotInvoiceErrorInfo.AddAction(
                 StrSubstNo('Set value to %1', MaxQtyToInvoice()), 
@@ -140,6 +141,8 @@ begin
         // setup the error info object
         ErrorNoLinesToCreate.Title := 'There are no new warehouse shipment lines to create';
         ErrorNoLinesToCreate.Message := 'This usually happens when warehouse shipment lines [...]'; 
+        ErrorNoLinesToCreate.DetailedMessage('Add some text to help the person troubleshooting this error.');
+
         ErrorNoLinesToCreate.PageNo := Page::"Warehouse Shipment List";
         ErrorNoLinesToCreate.AddNavigationAction('Show open lines');,
 
@@ -178,6 +181,8 @@ field(59; "Gen. Prod. Posting Group"; Code[20])
             // setup the error info object
             FieldEmptyErrorInfo.Message := 
                 StrSubstNo('Gen. Prod. Posting Group must have a value in item: %1. It can''t be zero or empty.', ItemNo);
+            FieldEmptyErrorInfo.DetailedMessage('Add some text to help the person troubleshooting this error.');
+
             CannotInvoiceErrorInfo.RecordId := ItemRec.RecordId;
             CannotInvoiceErrorInfo.AddNavigationAction(
                 StrSubstNo('Show Item %1', ItemNo)
@@ -217,6 +222,8 @@ begin
     // setup the error info object
     ErrorDialogWithTwoActions.Title := 'The line dimension value isn''t valid';
     ErrorDialogWithTwoActions.Message := StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', DimensionCode, VendorCode); 
+    ErrorDialogWithTwoActions.DetailedMessage('Add some text to help the person troubleshooting this error.');
+
     ErrorNoLinesToCreate.AddAction(
         'Set value to blank'
         Codeunit::FirstFixitCodeunit, 
@@ -259,7 +266,8 @@ field(4; "Account No."; Code[20])
         if (SomeCheckCondition)
         then begin        
             PendingApprovalErrorInfo.Message := 'You can''t modify a record pending approval. Add a comment or reject the approval to modify the record.';
-
+            PendingApprovalErrorInfo.DetailedMessage('Add some text to help the person troubleshooting this error.');
+            
             PendingApprovalErrorInfo.PageNo := Page::"Comments";
             PendingApprovalErrorInfo.AddNavigationAction('Show comments');
 
@@ -295,6 +303,7 @@ begin
     // setup the error info object
     ErrorDialogNoActions.Title := 'The ''Starting Date'' isn''t valid';
     ErrorDialogNoActions.Message := 'The ''Starting Date'' must be the first date of an accounting period. Try changing the date to first date of the month.'; 
+    ErrorDialogNoActions.DetailedMessage('Add some text to help the person troubleshooting this error.');
 
     Error(ErrorDialogNoActions);
 end;
