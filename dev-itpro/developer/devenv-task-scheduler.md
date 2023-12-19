@@ -2,7 +2,7 @@
 title: Task scheduler
 description: Learn about scheduled tasks and how the task scheduler works.
 ms.custom: na
-ms.date: 10/04/2023
+ms.date: 12/18/2023
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -49,7 +49,7 @@ Here's a general overview of the process:
 
     1. The company is opened and the scheduled task in the table **2000000175 Scheduled Task** is validated.
 
-       If any error occurs during this phase, the task fails unless there's a failure codeunit. In which case, the failure code will run. 
+       If any error occurs during this phase, the task fails unless there's a failure codeunit. In which case, the failure code runs. 
     2. The task's main codeunit is run:
 
        - If main codeunit runs successfully, it's removed from table **2000000175 Scheduled Task**.
@@ -62,7 +62,7 @@ Here's a general overview of the process:
 
         - If the exception is retriable, the main codeunit is rerun following the main path.
 
-           This retry flow continues in the same session until the task succeeds or until the maximum number of retries is exceeded, then it fails. The session is then deleted. To understand when the task will be retried, see [Retry Intervals](#retrycycle).
+           This retry flow continues in the same session until the task succeeds or until the maximum number of retries is exceeded, then it fails. The session is then deleted. To understand when the task is retried, see [Retry Intervals](#retrycycle).
         - If the exception isn't retriable and there's no failure codeunit, the task fails.
         - If the exception isn't retriable and there's a failure codeunit, the current session is terminated. A new session is started, and the failure codeunit runs in this session, following the main path.
 
@@ -78,15 +78,15 @@ The following diagram illustrates the flow in detail.
 
 ### <a name="retrycycle"></a>Retry intervals
 
-When a task's main codeunit or failure codeunit enters the retry flow, it will be rerun at approximately the following intervals as long as the error persists. The number of retires and the intervals are different for [!INCLUDE[prod_short](includes/prod_short.md)] online and on-premises.
+When a task's main codeunit or failure codeunit enters the retry flow, it is rerun at approximately the following intervals as long as the error persists. The number of retires and the intervals are different for [!INCLUDE[prod_short](includes/prod_short.md)] online and on-premises.
 
 **Online**
 
-A codeunit will be retried up to 99 times, according to the following intervals:
+A codeunit is retried up to 99 times, according to the following intervals:
 
 |Retry attempt|Wait time (minutes) after previous attempt|
 |-------------|---------|
-|1 and 2|.5|
+|1 and 2|0.5|
 |3 and 4|1|
 |5 and 6|2|
 |7 and 8|3|
@@ -94,7 +94,7 @@ A codeunit will be retried up to 99 times, according to the following intervals:
 
 **On-premises**
 
-A codeunit will be retried up to nine times, according to the following intervals:
+A codeunit is retried up to nine times, according to the following intervals:
 
 |Retry attempt|Wait time (minutes) after previous attempt|
 |-------------|---------|
@@ -122,13 +122,25 @@ A task can fail under the various conditions, like:
 
 The task scheduler is designed to automatically rerun main and failure codeunits when certain exceptions occur, instead of just failing on the first attempt. Exceptions that cause the system to rerun a codeunit are referred to as *retriable exceptions*. Whether an exception is retriable depends on whether the exception occurs in the main or failure codeunit and if you're using Business Central online or on-premises.
 
+
+[!INCLUDE[gui_allowed](includes/include-gui-allowed.md)]
+
 ### Retriable exceptions in the main codeunit
 
 If you're running [!INCLUDE[prod_short](includes/prod_short.md)] online, the service controls which exceptions are retriable. With [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, you can specify retriable exceptions by configuring the **Execution Retry Exceptions** (TaskSchedulerExecutionRetryExceptions) setting on the [!INCLUDE[server](includes/server.md)] instance. The **Execution Retry Exceptions** setting is semicolon-separated list of exceptions in a format: `Exception1;Exception2;Exception3`. If you want to specify error code of the exception, use the following format instead: `Exception1:ErrorCode1;Exception2:ErrorCode2.`
 
-### Retriable exceptions in the main codeunit
+### Retriable exceptions in the failure codeunit
 
 Because failure codeunits are designed for error situations, expect for a selected few, almost all exceptions while running failure codeunits are retriable. It doesn't matter if you're using [!INCLUDE[prod_short](includes/prod_short.md)] online or on-premises. Even with on-premises, you can't specify retriable exceptions, like you can for main codeunits.
+
+  
+### AL methods that throw nonretriable exceptions in background sessions
+
+When running codeunits as scheduled tasks, you must make sure that the AL code doesn't assume the ability to interact with a user through the UI. You can use the [GuiAllowed Method](../developer/methods-auto/system/system-guiallowed-method.md) to suppress UI interactions. 
+
+[!INCLUDE[callback_exception_no_ui_note](../includes/include-callback-exception-no-ui-note.md)]
+
+[!INCLUDE[callback_exceptions_no_ui](../includes/include-callback-exceptions-no-ui.md)]
 
 ## About task sessions and permissions
 
@@ -150,7 +162,7 @@ The session runs by using the same user/credentials that are used when calling A
 
 ### Task scheduler telemetry in Azure Application Insights
 
-You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry traces to an [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] resource in Azure. Once set up, telemetry data will be sent to the resource as scheduled task moves through the flow. For more information, see:
+You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry traces to an [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] resource in Azure. Once set up, telemetry data is sent to the resource as scheduled task moves through the flow. For more information, see:
 
 [Enable Sending Telemetry to Application Insights](../administration/telemetry-enable-application-insights.md) 
 
