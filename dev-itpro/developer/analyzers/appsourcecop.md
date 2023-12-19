@@ -171,7 +171,7 @@ The `name`, `publisher`, `version` properties are used for specifying a previous
 
 The `mandatoryAffixes` property specifies strings that must be prepended or appended to the names of all new objects, extension objects and fields. By using these affixes, you can prevent clashes between objects added by your extension and objects added by other extensions.
 
-The `supportedCountries` property specifies the codes that correspond to the countries for which the product allows AppSource submissions. For more information, see [Availability and supported Countries/Regions and Translations](../../compliance/apptest-countries-and-translations.md)
+The `supportedCountries` property specifies the codes that correspond to the countries/regions for which the product allows AppSource submissions. For more information, see [Availability and supported Countries/Regions and Translations](../../compliance/apptest-countries-and-translations.md)
 
 The properties `obsoleteTagVersion`, `obsoleteTagPattern`, and `obsoleteTagPatternDescription` can be used to enable additional validation on object obsoletion. These are not required for AppSource submissions.
 
