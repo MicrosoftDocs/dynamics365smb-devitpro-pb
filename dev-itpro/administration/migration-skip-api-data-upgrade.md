@@ -76,7 +76,7 @@ WHERE
     )
 ```
 
-## Complete API data upgrade after going live
+## Completing API data upgrade after going live
 
 When you're finished with the cloud migration, run the API data upgrade as described [Run API data upgrade](migration-finish.md#api).
 

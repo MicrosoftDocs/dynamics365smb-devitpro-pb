@@ -36,7 +36,7 @@ To disable cloud migration, complete the following steps:
 
 ## <a name="API"></a> Step 2 Run API data upgrade
 
-This step is only required if you skipped the API data upgrade during the cloud migration.
+This step is only required if you skipped the API data upgrade during the cloud migration. [Learn more about skipping API data upgrade](migration-skip-api-data-upgrade.md). 
 
 1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
 1. Search for and open the **Cloud Migration Management** page.
