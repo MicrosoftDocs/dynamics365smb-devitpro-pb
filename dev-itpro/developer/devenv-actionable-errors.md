@@ -69,35 +69,38 @@ The following AL code illustrates how to setup field validation with a Fix-it ac
 
 <!-- the code example is copied from SalesLine.Table.al and adjusted to docs -->
 ```AL
-    ... 
-        field(17; "Qty. to Invoice"; Decimal)
-        {
-            // field properties
+... 
+field(17; "Qty. to Invoice"; Decimal)
+{
+    // maybe some field properties
 
-            trigger OnValidate()
-            var
-                CannotInvoiceErrorInfo: ErrorInfo;
-            begin
-                // some calculations here
+    trigger OnValidate()
+    var
+        CannotInvoiceErrorInfo: ErrorInfo;
+    begin
+        // some calculations here
+        if 
+        (
+            // some logic not met
+        )
+        then begin
+            // setup the error info object
+            CannotInvoiceErrorInfo.Title := 'Qty. to Invoice isn''t valid';
+            CannotInvoiceErrorInfo.Message := 
+                StrSubstNo('You cannot invoice more than %1 units.', MaxQtyToInvoice());
+            CannotInvoiceErrorInfo.RecordId := Rec.RecordId;
+            CannotInvoiceErrorInfo.AddAction(
+                StrSubstNo('Set value to %1', MaxQtyToInvoice()), 
+                Codeunit::FixitCodeunit, 
+                FixitCodeunitMethodName
+            );
 
-                if 
-                (
-                    // some logic not met
-                )
-                then begin
-                    // setup the error info object
-                    CannotInvoiceErrorInfo.Title := 'Qty. to Invoice isn''t valid';
-                    CannotInvoiceErrorInfo.Message := StrSubstNo('You cannot invoice more than %1 units.', MaxQtyToInvoice());
-                    CannotInvoiceErrorInfo.RecordId := Rec.RecordId;
-                    CannotInvoiceErrorInfo.AddAction(StrSubstNo('Set value to %1', MaxQtyToInvoice()), Codeunit::FixitCodeunit, FixitCodeunitMethodName);
-
-                    Error(CannotInvoiceErrorInfo);
-                end;
-
-                // maybe more validation logic here
-            end;
-        }
-    ...
+            Error(CannotInvoiceErrorInfo);
+        end;
+        // maybe more validation logic here
+    end;
+}
+...
 ```
 
 If the user experience that the field cannot be validated, they will see the following dialog
@@ -158,7 +161,7 @@ The following AL code illustrates how to setup a validation error dialog with a 
 ... 
 field(59; "Gen. Prod. Posting Group"; Code[20])
 {
-    // field properties
+    // maybe some field properties
 
     trigger OnValidate()
     var
@@ -200,7 +203,17 @@ Error messages can have up to two recommended actions. In this section, we show 
 The following AL code illustrates how to setup an error dialog with two actions.
 
 ```AL
-// TODO
+var
+    ErrorDialogWithTwoActions: ErrorInfo;
+begin
+    ErrorDialogWithTwoActions.Title := '';
+    ErrorDialogWithTwoActions.Message := ''; 
+
+        ErrorNoLinesToCreate.PageNo := Page::"Warehouse Shipment List";
+        ErrorNoLinesToCreate.AddNavigationAction('Show open lines');,
+
+    Error(ErrorDialogWithTwoActions);
+end;
 ```
 
 In this error dialog case, the recommended Fix-it action sets the value to blank, meaning that it clears out the field value. 
