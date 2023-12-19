@@ -134,9 +134,9 @@ begin
     ) begin
         // maybe some business logic here 
 
+        // setup the error info object
         ErrorNoLinesToCreate.Title := 'There are no new warehouse shipment lines to create';
         ErrorNoLinesToCreate.Message := 'This usually happens when warehouse shipment lines [...]'; 
-
         ErrorNoLinesToCreate.PageNo := Page::"Warehouse Shipment List";
         ErrorNoLinesToCreate.AddNavigationAction('Show open lines');,
 
@@ -173,11 +173,12 @@ field(59; "Gen. Prod. Posting Group"; Code[20])
         if (CheckIfFieldIsEmpty)
         then begin
             // setup the error info object
-
-            FieldEmptyErrorInfo.Message := StrSubstNo('Gen. Prod. Posting Group must have a value in item: %1. It can''t be zero or empty.', ItemNo);
+            FieldEmptyErrorInfo.Message := 
+                StrSubstNo('Gen. Prod. Posting Group must have a value in item: %1. It can''t be zero or empty.', ItemNo);
             CannotInvoiceErrorInfo.RecordId := ItemRec.RecordId;
-
-            CannotInvoiceErrorInfo.AddNavigationAction(StrSubstNo('Show Item %1', ItemNo));
+            CannotInvoiceErrorInfo.AddNavigationAction(
+                StrSubstNo('Show Item %1', ItemNo)
+            );
             ChangeNotAllowedErrorInfo.PageNo(Page::"Item Card");
 
             Error(CannotInvoiceErrorInfo);
@@ -205,12 +206,24 @@ The following AL code illustrates how to setup an error dialog with two actions.
 ```AL
 var
     ErrorDialogWithTwoActions: ErrorInfo;
+    DimensionCode: Code[20];
+    VendorCode: Code[20];
 begin
-    ErrorDialogWithTwoActions.Title := '';
-    ErrorDialogWithTwoActions.Message := ''; 
+    // set values for DimensionCode, VendorCode variables
 
-        ErrorNoLinesToCreate.PageNo := Page::"Warehouse Shipment List";
-        ErrorNoLinesToCreate.AddNavigationAction('Show open lines');,
+    // setup the error info object
+    ErrorDialogWithTwoActions.Title := 'The line dimension value isn''t valid';
+    ErrorDialogWithTwoActions.Message := StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', DimensionCode, VendorCode); 
+    ErrorNoLinesToCreate.AddAction(
+        'Set value to blank'
+        Codeunit::FirstFixitCodeunit, 
+        FirstFixitCodeunitMethodName
+    );
+    ErrorNoLinesToCreate.AddAction(
+        'OK'
+        Codeunit::SecondFixitCodeunit, 
+        SecondFixitCodeunitMethodName
+    );
 
     Error(ErrorDialogWithTwoActions);
 end;
