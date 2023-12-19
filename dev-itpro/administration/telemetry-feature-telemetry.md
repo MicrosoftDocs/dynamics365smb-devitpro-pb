@@ -273,7 +273,7 @@ traces
 ## <a name="nologger"></a>No telemetry logger has been registered for publisher {publisher}
 This event is logged if no telemetry logger has been registered for publisher.
 
-See section [Register the feature telemetry module in an app](#register-the-feature-telemetry-module-in-an-app) on how to create telemetry logger.
+For more information on how to create a telemetry logger, see section [Register the feature telemetry module in an app](#register-the-feature-telemetry-module-in-an-app).
 
 ### General dimensions
 
