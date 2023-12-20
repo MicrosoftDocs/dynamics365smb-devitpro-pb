@@ -18,11 +18,20 @@ The task scheduler enables you to control when certain operations or processes (
 
 [!INCLUDE[async_note](includes/include-async-note.md)]
 
+## When to use scheduled tasks in AL
+
+Here's a few scenarios where you might want to use a scheduled task
+
+- From AL, you can schedule code to run either using the task scheduler or by enqueuing a job queue entry. If you want users to be able to change the scheduling, use the job queue.
+- Sometimes in AL code, you want to change company and run code there. Maybe instead you can could schedule a task to run the code in the other company?
+- If something is not urgent/time critical (e.g. can run at a lower priority), consider running it with a task.
+
+
 ## Create and manage scheduled tasks in AL
 
 A scheduled task is basically a codeunit that runs logic in a background session at a specific time. Optionally, you can create a second codeunit that contains the logic to handle the task if an error occurs for any reason. This codeunit is referred to as a *failure codeunit*.
 
-In AL code, you create and manage the tasks by using the AL methods that are available for the [TASKSCHEDULER](methods-auto/taskscheduler/taskscheduler-data-type.md) data type. 
+In AL code, you create and manage the tasks by using the AL methods that are available for the [TaskScheduler](methods-auto/taskscheduler/taskscheduler-data-type.md) data type. 
 
 |Method|Description|For more information, see...|  
 |--------------|-----------------|-------------------------------|  
@@ -155,6 +164,11 @@ The session runs by using the same user/credentials that are used when calling A
 
 [!INCLUDE[task_job_queue_performance](../includes/include-task-job-queue-performance.md)]
 
+## Operational limits for the task scheduler
+
+The [!INCLUDE[prod_short](includes/prod_short.md)] service has limits on how long time a background session can run and how many tasks your can run in parallel with the task scheduler. 
+
+For more information, see [Asynchronous task limits](../administration/operational-limits-online.md#Task).
 
 ## Monitor and troubleshoot
 
