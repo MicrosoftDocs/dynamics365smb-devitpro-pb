@@ -41,6 +41,9 @@ Any variable or expression to be inserted in String. You can insert up to 10 val
 
 The window is automatically sized to hold the longest line of text and total number of lines. By calling the method with an **empty** string the execution of AL code ends without displaying a message. 
 
+> [!NOTE]
+> Consider using the newer version of the `Dialog.Error` method [Dialog.Error(ErrorInfo) Method](dialog-error-errorinfo-method.md) to use many of the newer features in error dialogs, such as (hidden) detailed error messages for the person who need to troubleshoot, error message titles, and support for actionable errors.
+
 ## Guidelines for error messages
 
 [!INCLUDE[error_message_guidelines](../../includes/include-error-message-guidelines.md)]
@@ -56,21 +59,25 @@ var
     Text001: Label 'Placeholder message.';   
 begin 
     AccountNo := 1230;  
+
     // The execution stops when the error statement is executed  
     // and all following statements will never be executed.  
     Error(Text000, AccountNo);  
+
     Message(Text001); // This line is not executed.  
 end;
 ```  
 
 The error window displays the following:  
 
-**Finance Account 1230  must not be blocked.**  
+**Finance Account 1230 must not be blocked.**  
 
 The `Error` method causes execution of AL code to stop. [Message Method](../../methods-auto/dialog/dialog-message-method.md) is never executed.  
 
 ## See Also
+[Dialog.Error(ErrorInfo) Method](dialog-error-errorinfo-method.md)   
+[Error handling overview](../../devenv-al-error-handling.md)  
+[Analyzing Error Method Telemetry](../../../administration/telemetry-error-method-trace.md)   
 [Dialog Data Type](dialog-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[Analyzing Error Method Telemetry](../../../administration/telemetry-error-method-trace.md)

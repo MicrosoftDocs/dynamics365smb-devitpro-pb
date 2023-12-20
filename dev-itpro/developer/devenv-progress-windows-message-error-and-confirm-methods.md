@@ -72,13 +72,28 @@ message(Text001,"No.",SalesHeader2."No.");
 
 ## Error method  
 
-The [Error Method)](methods-auto/dialog/dialog-error-errorinfo-method.md) is similar to the `Message` method except that when the user has acknowledged the message from an `Error` method, execution ends. The `Error` method is also similar to the FieldError method. For more information, see [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](devenv-CALCFIELDS-CALCSUMS-FIELDError-FIELDNAME-INIT-TESTFIELD-and-VALIDATE-Methods.md).  
+The [Error Method](methods-auto/dialog/dialog-error-errorinfo-method.md) is similar to the `Message` method except that when the user has acknowledged the message from an `Error` method, AL execution ends. The `Error` method is also similar to the FieldError method. For more information on the `FieldError method`, see [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](devenv-CALCFIELDS-CALCSUMS-FIELDError-FIELDNAME-INIT-TESTFIELD-and-VALIDATE-Methods.md).  
 
-The `Error` method has the following syntax.  
+The `Error` method has the following syntax:
 
-```AL 
-Error(String [, Value1, ...]);  
+```AL
+procedure MyProc()
+var
+    MyErrorInfo: ErrorInfo;
+begin
+    // setup ErrorInfo
+    MyErrorInfo.Title('Error message title that the user sees.');
+    MyErrorInfo.Message('Error message the user sees.');
+    MyErrorInfo.DetailedMessage('(Hidden) error details for the person who need to troubleshoot.');
+    // add more properties for ErrorInfo depending on the scenario
+
+    Error(MyErrorInfo);
+
+    // no more AL code runs after the Error method
+end;
 ```  
+
+For more information about error handling in AL, see [Error handling overview](devenv-al-error-handling.md).
 
 ## Confirm method  
 
@@ -105,4 +120,5 @@ The `false` parameter in the `confirm` statement means that `No` is the default.
 
 ## See Also  
 
+[Error handling overview](devenv-al-error-handling.md)   
 [Dialog Data Type](methods-auto/dialog/dialog-data-type.md)  

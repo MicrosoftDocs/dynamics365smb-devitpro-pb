@@ -1,11 +1,3 @@
-We recommend the following guidelines for error messages:  
+Improving error handling and error messages reduces friction for the users and highly impacts the user experience. Clear, informative error messages help users understand what went wrong and how to correct it, reducing frustration, and improving user satisfaction. 
 
-- Describe what is wrong and how to solve the problem.  
-
-- Write a short descriptive message. Do not use more words than necessary.  
-
-- Always end the error message with a period.  
-
-- Use a text constant for the text of the message.  
-
-For more information, see [Progress Windows, Message, Error, and Confirm Methods]( ../devenv-progress-windows-message-error-and-confirm-methods.md).  
+For guidance on how to formulate good error messages, see [Error message best practices - what to say?](../devenv-error-handling-guidelines.md#error_message_best_practices).
