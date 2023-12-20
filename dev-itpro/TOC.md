@@ -618,11 +618,12 @@
 #### [Actionable errors](developer/devenv-actionable-errors.md)
 #### [Collecting errors](developer/devenv-error-collection.md)
 #### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md)
-#### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
-#### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md)
-#### LogInternalError method (on-premises only)
-##### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md)
-##### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md)
+#### AL Language Reference (errors)
+##### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
+##### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md)
+##### LogInternalError method (on-premises only)
+###### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md)
+###### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md)
 
 ### Formatting values
 #### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
