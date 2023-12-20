@@ -1,6 +1,6 @@
 ---
 title: "Dialog.Error(Text [, Any,...]) Method"
-description: "Displays an error message and ends the execution of AL code."
+description: "Displays an error message and ends the execution of AL code (joker version)."
 ms.author: solsen
 ms.custom: na
 ms.date: 03/02/2023
