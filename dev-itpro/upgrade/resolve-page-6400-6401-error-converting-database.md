@@ -1,20 +1,20 @@
 ---
-title: "Page 6400 and 6401 Errors "
+title: "Page 6400 and 6401 errors "
 description: "Explains how to resolve the compilation errors that you get forPage 6400 and 6401 when converting a database from Dynamics NAV to Business Central."
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/18/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
-# Resolving Page 6400 and 6401 Compilation Errors 
+# Resolving page 6400 and 6401 compilation errors 
 This article explains how to resolve the compilation error that you get for page **6400 Flow Selector** and page **6401 Flow Template Selector** when converting a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to  [!INCLUDE[prodhort](../developer/includes/prod_short.md)].
 
 ## Resolution
 
-The resolution requires that you make changes to codeunit 6400, as well as pages 6400 and 6401.
+The resolution requires that you make changes to codeunit 6400, and pages 6400 and 6401.
 
 1. In codeunit **6400 Flow Service Management**, make the following changes:
 
@@ -30,7 +30,7 @@ The resolution requires that you make changes to codeunit 6400, as well as pages
 
    3. Add two global functions, one called **GetAzureADGraphhResourceUrl** and the other called **GetMicrosoftGraphhResourceUrl**. 
    
-      These will replace the existing function **GetFlowGraphResourceUrl**.
+      These replace the existing function **GetFlowGraphResourceUrl**.
     
       For each function, set the **FunctionVisibility** property to **External** and specify a **Text** type return value. 
           
@@ -71,6 +71,6 @@ The resolution requires that you make changes to codeunit 6400, as well as pages
     
 
 
-## See Also  
+## See also  
  [Converting a Database](Converting-a-Database.md)  
  [Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2018-Database.md)  
