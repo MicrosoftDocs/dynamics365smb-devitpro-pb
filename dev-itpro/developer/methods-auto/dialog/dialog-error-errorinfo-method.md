@@ -59,9 +59,9 @@ begin
     
     if IsBlocked then
     begin
-        // setup ErrorInfo object
-        DoNotBlockErrorInfo.Message = 'Finance Account 1230 must not be blocked.');
-        DoNotBlockErrorInfo.DetailedMessage = 'Some additional information that can help the person troubleshooting this issue.');
+        // Setup ErrorInfo object
+        DoNotBlockErrorInfo.Message('Finance Account 1230 must not be blocked.');
+        DoNotBlockErrorInfo.DetailedMessage('Some additional information that can help the person troubleshooting this issue.');
         // Add more properties for ErrorInfo depending on the scenario
         //   Maybe add a title to the error message 
         //   Maybe make the error message actionable (add fix-it or show-it actions)
