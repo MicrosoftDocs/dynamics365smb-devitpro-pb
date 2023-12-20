@@ -23,6 +23,9 @@ Decreasing the length of a field is not allowed. This might break the upgrade of
 
 ## Remarks
 
+> [!IMPORTANT]  
+> If the field is part of the primary key, this is validated by [AS0118](appsourcecop-as0118.md).
+
 The changes validated by this rule aren't allowed because they are destructive changes for the sync engine.
 These changes might also break the runtime of dependent extensions.
 
