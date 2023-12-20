@@ -58,7 +58,7 @@ For examples of different error handling strategies, see the following table:
 
 Improving error handling and error messages reduces friction for the users and highly impacts the user experience. Clear, informative error messages help users understand what went wrong and how to correct it, reducing frustration, and improving user satisfaction. 
 
-For guidance on how to formulate good error messages, see [Error message best practices - what to say?](#error_message_best_practices).
+For guidance on how to formulate good error messages, see [Error message best practices - what to say?](devenv-error-handling-guidelines#error_message_best_practices).
 
 
 ## Error telemetry
@@ -85,7 +85,7 @@ There are three types of telemetry data emitted about errors
 [User experience guidelines for errors](devenv-error-handling-guidelines.md)  
 [Actionable errors](devenv-actionable-errors.md)   
 [Collecting errors](devenv-error-collection.md)   
-[Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md)   
+[Handling errors using Try methods](devenv-handling-errors-using-try-methods.md)   
 [Error message quality telemetry](../administration/telemetry-error-message-voting-trace.md)   
 [Error method telemetry](../administration/telemetry-error-method-trace.md)  
 [Permission error telemetry](../administration/telemetry-permission-error-trace.md)   
