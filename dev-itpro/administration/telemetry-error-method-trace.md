@@ -68,10 +68,50 @@ The following table explains other custom dimensions that are common to all erro
 {"telemetrySchemaVersion":"0.2","componentVersion":"20.0.36501.0","environmentType":"Production","aadTenantId":"common","component":"Dynamics 365 Business Central Server","companyName":"CRONUS International Ltd.","eventId":"RT0030","clientType":"WebClient","alObjectType":"System","alObjectId":"0","alErrorMessage":"The metadata object Report 50100 was not found.","failureReason":"MetadataNotFound"}
 
 -->
-## See also
 
-[Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
+### Sample KQL code (error dialogs)
+
+This KQL code can help you get started analyzing which error dialogs users see:
+
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where customDimensions.eventId == 'RT0030'
+| project timestamp
+// in which environment/company did it happen
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+// in which extension/app
+, extensionId = customDimensions.extensionId
+, extensionName = customDimensions.extensionName
+, extensionVersion = customDimensions.extensionVersion
+, extensionPublisher = customDimensions.extensionPublisher
+// in which object
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+// which user got the error
+, usertelemetryId = case(
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry id was introduced in the platform in version 20.0
+, 'N/A'
+)
+// error information
+, clientType = customDimensions.clientType
+, errorMessageInUsersLanguage = customDimensions.alErrorMessage
+, errorMessageInEnglish = customDimensions.alEnglishLanguageDiagnosticsMessage // This dimension was introduced in Business Central 2023 release wave 1, version 21.4.
+, alStackTrace = customDimensions.alStackTrace
+, failureReason = customDimensions.failureReason
+```
+
+
+## Understanding the error dialog
+To effectively help users mitigate any issues they might encounter, you should learn more about the different parts of the error dialog, including how to interpret the AL stack trace. For more information, see [Understanding the error dialog](../developer/devenv-error-dialog.md).
+
+## See also
+[Dialog.Error Method](../developer/methods-auto/dialog/dialog-error-errorinfo-method.md) 
+[Dialog.Error Method](../developer/methods-auto/dialog/dialog-error-string-joker-method.md)  
+[Understanding the error dialog](../developer/devenv-error-dialog.md)   
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
-[Dialog.Error Method](../developer/methods-auto/dialog/dialog-error-errorinfo-method.md)  
-[Dialog.Error Method](../developer/methods-auto/dialog/dialog-error-string-joker-method.md)
