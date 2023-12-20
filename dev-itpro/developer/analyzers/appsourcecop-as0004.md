@@ -3,7 +3,7 @@ title: "AppSourceCop Error AS0004"
 description: "Fields must not change type."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 12/20/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,12 +21,41 @@ Fields must not change type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+> [!NOTE]  
+> This rule validates all fields independently of their Accessibility or ObsoleteState, because they are used when synchronizing the schema defined in the extension to the database.
+
+## Remarks
+
 The validation of the length of table fields was previously done with [AS0004](appsourcecop-as0004.md) and has now been split into two different rules:
 - [AS0080](appsourcecop-as0080.md) - which validates against decreasing the length of fields
 - [AS0086](appsourcecop-as0086.md) - which validates against increasing the length of fields
 
-> [!NOTE]  
-> This rule validates all fields independently of their Accessibility or ObsoleteState, because they are used when synchronizing the schema defined in the extension to the database.
+## Example
+
+Version 1.0 of the app:
+
+```al
+table 50 MyTable
+{
+    fields
+    {
+        field(1; Identifier; Integer) { }
+    }
+}
+```
+
+Version 2.0 of the app:
+```al
+table 50 MyTable
+{
+    fields
+    {
+        field(1; Identifier; Text) { }
+    }
+}
+```
+
+The data type of the field `Identifier` was changed from `Integer` to `Text`, which isn't allowed and will trigger this rule.
 
 ## See Also
 

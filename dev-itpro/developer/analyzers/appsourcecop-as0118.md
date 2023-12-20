@@ -3,7 +3,7 @@ title: "AppSourceCop Error AS0118"
 description: "Modifying the length of a field part of the primary key is not allowed."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/18/2023
+ms.date: 12/20/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -72,9 +72,10 @@ table 50100 MyTable
 In version 2.0, the type of the field `MyField` has changed from `Text[50]` to `Text[25]`. Because this is a breaking change, if version 1.0 was installed on a tenant, it won't be possible to synchronize and upgrade the version 2.0 of the extension. Moreover, if a dependent extension uses this field, this change of length can lead to runtime exceptions.
 
 > [!NOTE]  
-> When no primary key is explictly defined in the table definition, the first field is used as the primary key.
+> When no primary key is explicitly defined in the table definition, the first field is used as the primary key.
 
-## See Also  
+## See also 
+
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
