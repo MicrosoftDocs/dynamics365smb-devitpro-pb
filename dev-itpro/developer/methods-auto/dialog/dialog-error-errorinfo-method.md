@@ -82,7 +82,7 @@ The `Error` method causes execution of AL code to stop. [Message Method](../../m
 
 ## See Also
 [Error handling overview](../../devenv-al-error-handling.md)  
-[Analyzing Error Method Telemetry](../../../administration/telemetry-error-method-trace.md)   
-[Dialog Data Type](dialog-data-type.md)  
-[Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Analyzing Error method telemetry](../../../administration/telemetry-error-method-trace.md)   
+[Dialog data type](dialog-data-type.md)  
+[Get started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  
