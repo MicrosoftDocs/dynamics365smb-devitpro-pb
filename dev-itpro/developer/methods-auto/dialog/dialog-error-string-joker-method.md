@@ -2,11 +2,8 @@
 title: "Dialog.Error(Text [, Any,...]) Method"
 description: "Displays an error message and ends the execution of AL code (joker version)."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 12/20/2023
+ms.reviewer: jswymer
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -42,7 +39,7 @@ Any variable or expression to be inserted in String. You can insert up to 10 val
 The window is automatically sized to hold the longest line of text and total number of lines. By calling the method with an **empty** string the execution of AL code ends without displaying a message. 
 
 > [!NOTE]
-> Consider using the newer version of the `Dialog.Error` method [Dialog.Error(ErrorInfo) Method](dialog-error-errorinfo-method.md) to use many of the newer features in error dialogs, such as (hidden) detailed error messages for the person who need to troubleshoot, error message titles, and support for actionable errors.
+> Consider using the newer version of the `Dialog.Error` method [Dialog.Error(ErrorInfo) Method](dialog-error-errorinfo-method.md) to use many of the newer features in error dialogs, such as (hidden) detailed error messages for the person who needs to troubleshoot, error message titles, and support for actionable errors.
 
 ## Guidelines for error messages
 
@@ -75,9 +72,9 @@ The error window displays the following:
 The `Error` method causes execution of AL code to stop. [Message Method](../../methods-auto/dialog/dialog-message-method.md) is never executed.  
 
 ## See Also
-[Dialog.Error(ErrorInfo) Method](dialog-error-errorinfo-method.md)   
+[Dialog.Error(ErrorInfo) method](dialog-error-errorinfo-method.md)   
 [Error handling overview](../../devenv-al-error-handling.md)  
-[Analyzing Error Method Telemetry](../../../administration/telemetry-error-method-trace.md)   
-[Dialog Data Type](dialog-data-type.md)  
-[Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Analyzing Error method telemetry](../../../administration/telemetry-error-method-trace.md)   
+[Dialog data type](dialog-data-type.md)  
+[Get started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  
