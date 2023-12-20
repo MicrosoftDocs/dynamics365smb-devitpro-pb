@@ -45,7 +45,7 @@ For AppSource and Microsoft apps:
 - From the **Extension Management** page in [!INCLUDE[prod_short](../includes/prod_short.md)], you can navigate to the AppSource embed view, locate the app, and install it. For more information, see [Installing and Uninstalling Extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall).
 
 > [!NOTE]  
-> The AppSource offer listing contains the list of supported countries. You must verify that the app is available for the country/region of your environment. If it isn't available for the country/region of your environment, the installation will fail.
+> The AppSource offer listing contains the list of supported countries/regions. You must verify that the app is available for the country/region of your environment. If it isn't available for the country/region of your environment, the installation will fail.
 
 For apps provided by Embed ISVs, installation is handled by the Embed ISV partner.
 

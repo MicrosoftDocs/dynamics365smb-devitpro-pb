@@ -85,7 +85,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps?$filter=storageLocation 
 
 The `country` entity represents a country that an `app` is available in.  
 A country is represented by its ISO 3166-1 alpha-2 (2-letter) country code.  
-Specific versions of Business Central Apps can be made available for specific countries.
+Specific versions of Business Central Apps can be made available for specific countries/regions.
 
 ### Properties
 
@@ -96,9 +96,9 @@ Specific versions of Business Central Apps can be made available for specific co
 
 ### Available Endpoints
 
-### List countries
+### List countries/regions
 
-Lists all countries the specified `app` has been made available in.
+Lists all countries/regions the specified `app` has been made available in.
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries
 ```
@@ -107,7 +107,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries
 
 |Type|Name|Description|Schema|
 |---|---|---|---|
-|path|appId|The ID of the app to list the countries for.|string (uuid)|
+|path|appId|The ID of the app to list the countries/regions for.|string (uuid)|
 
 #### Example Request
 
