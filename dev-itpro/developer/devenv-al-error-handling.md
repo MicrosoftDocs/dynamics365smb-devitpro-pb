@@ -59,13 +59,35 @@ For examples of different error handling strategies, see the following table:
 
 To read more about guidelines for error messages, see [User experience guidelines for errors](devenv-error-handling-guidelines.md).
 
+## Error telemetry
+
+When a user gets an error dialog while working in [!INCLUDE[prod_shoirt](../includes/prod_short.md)], a telemetry signal is emitted, which can be logged in an [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] resource. 
+
+This telemetry data let's you identify and analyze where and why the error occurs. You can also set up alerts in [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] to get notified if many users experience errors.
+
+There are three types of telemetry data emitted about errors
+
+- Error message quality
+- Error dialogs shown to users
+- Permission errors 
+
+
+| If you want to...| Then look at this telemetry |
+|------------------|---------------------------- |
+| Understand if users understand the error messages they see | [Error message quality telemetry](../administration/telemetry-error-message-voting-trace.md) |
+| Understand which error dialogs users see and where in the AL code the error is raised | [Error method telemetry](../administration/telemetry-error-method-trace.md) |
+| Understand when users get error dialogs about lack of permissions | [Permission error telemetry](../administration/telemetry-permission-error-trace.md) |
+
 
 ## See also
 
+[Understanding the error dialog](devenv-error-dialog.md)   
+[User experience guidelines for errors](devenv-error-handling-guidelines.md)  
+[Actionable errors](devenv-actionable-errors.md)   
+[Collecting errors](devenv-error-collection.md)   
+[Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md)   
 [Error message quality telemetry](../administration/telemetry-error-message-voting-trace.md)   
 [Error method telemetry](../administration/telemetry-error-method-trace.md)  
 [Permission error telemetry](../administration/telemetry-permission-error-trace.md)   
-[Understanding the error dialog](devenv-error-dialog.md)   
 [AL control statements](devenv-al-control-statements.md)   
 [AL development environment](devenv-reference-overview.md)   
-[User experience guidelines for errors](devenv-error-handling-guidelines.md)

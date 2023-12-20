@@ -17,9 +17,9 @@ ms.author: jswymer
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-When a user gets an error dialog while working in Business Central, a telemetry signal is emitted, which can be logged in an Application Insights resource. 
+When a user gets an error dialog while working in [!INCLUDE[prod_shoirt](../includes/prod_short.md)], a telemetry signal is emitted, which can be logged in an [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] resource. 
 
-This telemetry data let's you identify and analyze calls to the ERROR method from AL code. You can also set up alerts in Azure Monitor to get notified if many users experience errors.
+This telemetry data let's you identify and analyze calls to the Error method from AL code. You can also set up alerts in [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] to get notified if many users experience errors.
 
 ## Error dialog displayed
 
