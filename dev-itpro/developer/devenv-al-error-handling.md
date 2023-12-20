@@ -61,9 +61,7 @@ To read more about guidelines for error messages, see [User experience guideline
 
 ## Error telemetry
 
-When a user gets an error dialog while working in [!INCLUDE[prod_shoirt](../includes/prod_short.md)], a telemetry signal is emitted, which can be logged in an [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] resource. 
-
-This telemetry data let's you identify and analyze where and why the error occurs. You can also set up alerts in [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] to get notified if many users experience errors.
+When a user gets an error dialog while working in [!INCLUDE[prod_shoirt](../includes/prod_short.md)], a telemetry signal is emitted, which can be logged in an [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] resource. This telemetry data let's you identify and analyze where and why the error occurs. You can also set up alerts in [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] to get notified if many users experience errors.
 
 There are three types of telemetry data emitted about errors
 
@@ -74,9 +72,9 @@ There are three types of telemetry data emitted about errors
 
 | If you want to...| Then look at this telemetry |
 |------------------|---------------------------- |
-| Understand if users understand the error messages they see | [Error message quality telemetry](../administration/telemetry-error-message-voting-trace.md) |
-| Understand which error dialogs users see and where in the AL code the error is raised | [Error method telemetry](../administration/telemetry-error-method-trace.md) |
-| Understand when users get error dialogs about lack of permissions | [Permission error telemetry](../administration/telemetry-permission-error-trace.md) |
+| Understand if users understand the error messages they see. | [Error message quality telemetry](../administration/telemetry-error-message-voting-trace.md) |
+| Understand which error dialogs users see and where in the AL code the error is raised. | [Error method telemetry](../administration/telemetry-error-method-trace.md) |
+| Understand when users get error dialogs about lack of permissions. | [Permission error telemetry](../administration/telemetry-permission-error-trace.md) |
 
 
 ## See also
