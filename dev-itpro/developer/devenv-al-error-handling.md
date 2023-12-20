@@ -16,8 +16,9 @@ The AL language has many error handling features, which can help you deal with u
 
 The following articles introduce error handling in AL:
 
-- [Handling errors using Try Methods](devenv-handling-errors-using-try-methods.md)  
-- [Collecting errors](devenv-error-collection.md)  
+- [Actionable errors](devenv-actionable-errors.md) 
+- [Collecting errors](devenv-error-collection.md) 
+- [Handling errors using Try Methods](devenv-handling-errors-using-try-methods.md)   
 - [Progress Windows, Message, Error, and Confirm methods](devenv-progress-windows-message-error-and-confirm-methods.md)
 
 ## Error handling methods in AL
@@ -55,13 +56,14 @@ For examples of different error handling strategies, see the following table:
 
 ## Guidelines for error messages
 
-[!INCLUDE[error_message_guidelines](includes/include-error-message-guidelines.md)]
+Improving error handling and error messages reduces friction for the users and highly impacts the user experience. Clear, informative error messages help users understand what went wrong and how to correct it, reducing frustration, and improving user satisfaction. 
 
-To read more about guidelines for error messages, see [User experience guidelines for errors](devenv-error-handling-guidelines.md).
+For guidance on how to formulate good error messages, see [Error message best practices - what to say?](#error_message_best_practices) below.
+
 
 ## Error telemetry
 
-When a user gets an error dialog while working in [!INCLUDE[prod_shoirt](../includes/prod_short.md)], a telemetry signal is emitted, which can be logged in an [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] resource. This telemetry data let's you identify and analyze where and why the error occurs. You can also set up alerts in [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] to get notified if many users experience errors.
+When a user gets an error dialog while working in [!INCLUDE[prod_short](../includes/prod_short.md)], a telemetry signal is emitted, which can be logged in an [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] resource. This telemetry data let's you identify and analyze where and why the error occurs. You can also set up alerts in [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] to get notified if many users experience errors.
 
 There are three types of telemetry data emitted about errors
 
