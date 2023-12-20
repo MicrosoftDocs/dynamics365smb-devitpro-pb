@@ -2,11 +2,8 @@
 title: "Dialog.Error(ErrorInfo) Method"
 description: "Displays an error message and ends the execution of AL code."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 12/20/2023
+ms.reviewer: jswymer
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -58,7 +55,7 @@ var
     DoNotBlockErrorInfo: ErrorInfo;
     IsBlocked: Boolean;
 begin
-    IsBlocked := // some logic that determines if the account is blocked
+    IsBlocked := // Some logic that determines whether the account is blocked
     
     if IsBlocked then
     begin
@@ -71,7 +68,7 @@ begin
 
         Error(DoNotBlockErrorInfo);
 
-        // code execution stops here
+        // Code execution stops here
         Message('This line will never run');
     end;
 end;
