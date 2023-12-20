@@ -2,10 +2,8 @@
 title: "Progress Windows, Message, Error, and Confirm Methods"
 description: "Using specialized methods in AL for Business Central to display messages and gather input from the user."
 ms.custom: na
-ms.date: 09/28/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 12/20/2023
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -84,7 +82,7 @@ begin
     // setup ErrorInfo
     MyErrorInfo.Title('Error message title that the user sees.');
     MyErrorInfo.Message('Error message the user sees.');
-    MyErrorInfo.DetailedMessage('(Hidden) error details for the person who need to troubleshoot.');
+    MyErrorInfo.DetailedMessage('(Hidden) error details for the person who needs to troubleshoot.');
     // add more properties for ErrorInfo depending on the scenario
 
     Error(MyErrorInfo);
@@ -121,4 +119,4 @@ The `false` parameter in the `confirm` statement means that `No` is the default.
 ## See Also  
 
 [Error handling overview](devenv-al-error-handling.md)   
-[Dialog Data Type](methods-auto/dialog/dialog-data-type.md)  
+[Dialog data type](methods-auto/dialog/dialog-data-type.md)  
