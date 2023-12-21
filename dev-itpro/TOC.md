@@ -622,6 +622,7 @@
 ##### [Structuring namespaces in AL](developer/devenv-namespaces-structure.md)
 
 ### Error handling
+#### [Failure modelling and robust coding practices](developer/devenv-robust-coding-practices.md) 
 #### [Error handling](developer/devenv-al-error-handling.md)
 #### [Understanding the error dialog](developer/devenv-error-dialog.md)
 #### [User experience guidelines for errors](developer/devenv-error-handling-guidelines.md)
