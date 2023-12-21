@@ -150,6 +150,8 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
     Stop-NAVServerInstance -ServerInstance $OldBcServerInstance
     ```
 
+8. [!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
+
 ## Task 4: Convert application database to version 22
 
 This task runs a technical upgrade on the application database to convert it to the version 22 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements. The conversion adds the system symbols for the version to the database, so you don't have to manually publish the Systems extension, as you had to do with early releases.

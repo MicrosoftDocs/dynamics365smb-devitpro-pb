@@ -4,13 +4,15 @@ description: Learn how to control the cost of Business Central provides telemetr
 author: kennieNP
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 11/13/2022
+ms.date: 12/05/2023
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.custom: bac-template
 ---
 # Controlling Telemetry Cost
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 [!INCLUDE[telemetryCost](../includes/include-telemetry-cost.md)]
 
@@ -19,12 +21,20 @@ ms.custom: bac-template
 [!INCLUDE[telemetryControlCost](../includes/include-telemetry-control-cost.md)]
 
 ### Data ingestion cost strategies
-To control data ingestion cost, consider the following practice when setting up telemetry
+
+To control data ingestion cost, consider the following practice when setting up telemetry:
+
 1. Set a daily cap on how much data that can be ingested (and what you are willing to pay for)
 2. Set up an alert when daily cap is reached (so that you know that you do not get all data)
 3. Use sampling or Data Collection Rules to adjust data ingestion
 
 For more information, see [Cost optimization in Azure Monitor](/azure/azure-monitor/best-practices-cost) and [Set daily cap on Log Analytics workspace](/azure/azure-monitor/logs/daily-cap).
+
+#### Video guidance
+
+The following video shows how to enable cost control strategies for telemetry.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fxZ7]
 
 ### Calculating the cost of data ingestion
 
@@ -76,7 +86,7 @@ To help you get started with setting up Data Collection Rules, we've added many 
 
 - How to filter out one or more events (I don't need these events, no need to pay for them)
 - How to only filter part of an event (I only want to see events when something fails or I only want 10 percent of these events)
-- How to filter on Azure AD tenant (I'm an ISV and I want to start slowly on telemetry, so only enabling it for a few customers)
+- How to filter on Microsoft Entra tenant (I'm an ISV and I want to start slowly on telemetry, so only enabling it for a few customers)
 - How to filter on environment type (I'm an ISV and I only want data from production environments)
 - How to filter on app dimensions (I'm a VAR and this app/publisher is too noisy)
 

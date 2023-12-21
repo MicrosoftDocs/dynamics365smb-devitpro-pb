@@ -3,7 +3,7 @@ title: "HttpContent Data Type"
 description: "Represents an HTTP entity body and content headers."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,15 +20,19 @@ Represents an HTTP entity body and content headers.
 
 
 
+## Instance methods
 The following methods are available on instances of the HttpContent data type.
 
 |Method name|Description|
 |-----------|-----------|
 |[Clear()](httpcontent-clear-method.md)|Sets the HttpContent object to a default value. The content contains an empty string and empty headers.|
 |[GetHeaders(var HttpHeaders)](httpcontent-getheaders-method.md)|Gets the HTTP content headers as defined in RFC 2616.|
+|[IsSecretContent()](httpcontent-issecretcontent-method.md)|Returns if the content is secret. If it is secret it can be read only as a SecretText.|
+|[ReadAs(var SecretText)](httpcontent-readas-secrettext-method.md)|Reads the content into the provided secure text.|
 |[ReadAs(var Text)](httpcontent-readas-text-method.md)|Reads the content into the provided text.|
 |[ReadAs(var InStream)](httpcontent-readas-instream-method.md)|Reads the content into the provided text.|
 |[WriteFrom(Text)](httpcontent-writefrom-text-method.md)|Sets HttpContent content to the provided text or stream.|
+|[WriteFrom(SecretText)](httpcontent-writefrom-secrettext-method.md)|Sets HttpContent content to the provided SecretText.|
 |[WriteFrom(InStream)](httpcontent-writefrom-instream-method.md)|Sets HttpContent content to the provided text or stream.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

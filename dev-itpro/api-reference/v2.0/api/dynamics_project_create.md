@@ -47,7 +47,6 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/projects
 Content-type: application/json
 
 {
-    "id": "22d7a1c5-bde4-ea11-bbf2-00155df3a615",
     "number": "DEERFIELD, 8 WP",
     "displayName": "Setting up Eight Work Areas"
 }

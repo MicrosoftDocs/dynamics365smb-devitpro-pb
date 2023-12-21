@@ -93,9 +93,9 @@ We recommend you to use RapidStart packages to populate the new companies with t
 
 ## Exporting application and tenant databases
 
-You export the databases to BACPAC format by using the `Export-BCContainerDatabasesAsBacpac` command from the [BcContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper).
+You export the databases to .bacpac and .dacpac format by using the `Export-BCContainerDatabasesAsBacpac` command adding the `-includeDacPac` flag from the [BcContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper).
 
-We strongly recommend using this command for creating the BACPAC files you're planning to deploy to the Business Central service. To simplify exporting the data, the command also does a number of clean-up steps on the databases. It cleans up sessions, database connection, list of tenants, imported license, and more. It also verifies that the schemas of the application and tenant databases are synchronized, which is essential for deployment. We keep enhancing this command with more cleanup and validation steps as we discover BACPAC-related issues with deployments. So, remember to update the BcContainerHelper PowerShell module for every new iteration.
+We strongly recommend using this command for creating the .bacpac and .dacpac files you're planning to deploy to the Business Central service. To simplify exporting the data, the command also does a number of clean-up steps on the databases. It cleans up sessions, database connection, list of tenants, imported license, and more. It also verifies that the schemas of the application and tenant databases are synchronized, which is essential for deployment. We keep enhancing this command with more cleanup and validation steps as we discover .dacpac-related issues with deployments. So, remember to update the BcContainerHelper PowerShell module for every new iteration.
 
 ## Providing deployment instructions in the manifest.json
 
@@ -103,7 +103,7 @@ The manifest.json file, supplied within the deployment package, contains importa
 
 |Setting|Type|Description|
 |----|----|-----------|
-|manifestSchemaVersion |String, `<major>.<minor>` |Schema version of the manifest. Current manifest schema version is 3.0. |
+|manifestSchemaVersion |String, `<major>.<minor>` |Schema version of the manifest. Current manifest schema version is 4.0. |
 | id |GUID |Unique ID of the Embed solution. Used for informational purposes, not used in the runtime. As a best practice it's recommended to use the Id of your main app in this field.|
  | name |String |Short marketing name of the app. Used for informational purposes, not used in the runtime.  |
 |description |String |Short marketing description of the app. Used for informational purposes, not used in the runtime. |
@@ -140,8 +140,8 @@ The manifest.json file, supplied within the deployment package, contains importa
 
 |Setting|Type|Description|
 |----|----|-----------|
-| applicationBacpacPath| String  |Path to the application database (.bacpac) included with the deployment package. |
-| tenantTemplateBacpacPath| String|Path to the tenant template database (.bacpac) included with the deployment package. |
+| applicationDacpacPath| String |Path to the application database (.dacpac) included with the deployment package. |
+| tenantTemplateDacpacPath| String|Path to the tenant template database (.dacpac) included with the deployment package. |
 
 #### "links"
 
@@ -196,8 +196,8 @@ Sample of the manifest.json file.
     }
   },
   "databases": {
-    "applicationBacpacPath": "databases/app.bacpac",
-    "tenantTemplateBacpacPath": "databases/tenant.bacpac"
+    "applicationDacpacPath": "app.dacpac",
+    "tenantTemplateDacpacPath": "tenant.dacpac"
   },
   "links": {
     "baseHelpUrl": "https://help.fabrikam.com/help/",

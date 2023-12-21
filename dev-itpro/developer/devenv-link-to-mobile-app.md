@@ -11,6 +11,9 @@ author: jswymer
 ms.author: jswymer
 ---
 # Linking to the Dynamics 365 Business Central App
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The protocol handler for the [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] lets you construct a URL for starting the app on a device, such as a phone or tablet. You can then distribute this URL by e-mail or from a Web page to the users.  
   
 The [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] URL is based on the *ms-businesscentral* URI scheme, which is registered automatically when the app is installed. Invoking a URL based on this scheme will start the app with the provided parameters.  
@@ -44,7 +47,7 @@ The following table describes the parameters for the main part of the URL, which
 |Parameter|Description| Example |
 |---------|-----------|---------|
 |hostname|Domain name for the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] solution or IP address of the computer/server that hosts it. This is required for an ISV Embed solution. For standard Business Central, you use `businesscentral.dynamics.com` or you can omit this parameter.| `ms-businesscentral://businesscentral.dynamics.com/`<br /><br />`ms-businesscentral:///`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/`| 
-|aadtenantid|The unique identifier for an Azure Active Directory (AAD) tenant. The value can be formatted as a GUID or domain name. This is useful to those who work across multiple AAD organizations, such as delegated administrators, support personnel or external accountants, because it allows explicitly targeting an AAD tenant. If this is omitted, you will be directed to the primary AAD tenant or the same AAD tenant that you are currently signed in to.|`ms-businesscentral://businesscentral.mysolution.com/mysolutionaadtenant.onmicrosoft.com`|
+|aadtenantid|The unique identifier for a Microsoft Entra tenant. The value can be formatted as a GUID or domain name. This is useful to those who work across multiple Microsoft Entra ID organizations, such as delegated administrators, support personnel or external accountants, because it allows explicitly targeting a Microsoft Entra tenant. If this is omitted, you will be directed to the primary Microsoft Entra tenant or the same Microsoft Entra tenant that you are currently signed in to.|`ms-businesscentral://businesscentral.mysolution.com/mysolutionaadtenant.onmicrosoft.com`|
 |sandbox|Specifies that the URL should target the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox environment instead of a production environment.|`ms-businesscentral:/businesscentral.dynamics.com/sandbox/`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/sandbox/`|  
 
 

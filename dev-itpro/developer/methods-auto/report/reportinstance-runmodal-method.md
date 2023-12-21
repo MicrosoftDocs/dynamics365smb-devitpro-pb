@@ -1,6 +1,6 @@
 ---
 title: "Report.RunModal() Method"
-description: "Loads and executes the report that you specify."
+description: "Loads and executes the report that you specify (instance method)."
 ms.author: solsen
 ms.custom: na
 ms.date: 03/24/2022
@@ -36,9 +36,8 @@ After you define the *Report* variable, you can run this method or the [Run Meth
 
 Use the RunModal method or the Run method if you know at design time the exact report you want to run. Otherwise, use the [Report.RunModal Method](report-runmodal-method.md) or [Report.Run Method](report-run-method.md).  
   
- If the report you specify does not exist, then a compile error occurs.  
   
- The request page is run modally when you use this method. 
+The request page is run modally when you use this method. 
 
 
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
@@ -48,18 +47,19 @@ Use the RunModal method or the Run method if you know at design time the exact r
 ```al 
 var
     CustomerRec: Record Customer;
-    SomeReport: Report "Chart of Accounts";
+    SalesReport: Report "Chart of Accounts";
 begin
     …  
     Clear(CustomerRec);  
-    CustomerRec.SetRecFilter;  
-    SomeReport.XXX; // Any user-defined method.  
-    SomeReport.SetTableView(CustomerRec);  
-    SomeReport.RunModal();
+    CustomerRec.SetRecFilter; 
+
+    SalesReport.SetTableView(CustomerRec);  
+    SalesReport.RunModal();
 end;  
 ```  
 
 ## See Also
+[Report.RunModal (static) Method](report-runmodal-method.md)  
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  

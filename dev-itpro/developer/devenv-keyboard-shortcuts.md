@@ -1,6 +1,6 @@
 ---
-title: "Keyboard Shortcuts"
-description: "List of keyboard shortcuts for the new development environment."
+title: "Keyboard Shortcuts in Visual Studio Code"
+description: "List of keyboard shortcuts for the new development environment (Visual Studio Code)."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Keyboard Shortcuts
+# Keyboard Shortcuts in Visual Studio Code
 
 The following table provides an overview of some of the shortcut key combinations that you can use when you are working in Visual Studio Code. For a complete overview, see [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings).
 
@@ -22,8 +22,8 @@ The following table provides an overview of some of the shortcut key combination
 |**Ctrl+Shift+P**|Show All Commands|
 |**Alt+F6**|Download source code|
 |**Alt+A Alt+L**|AL Go! Generates a HelloWorld project|
-|**Ctrl+Shift+B**|Package|
-|**F5**|Publish|  
+|**Ctrl+Shift+B**|Compile and Package|
+|**F5**|Compile, Package, and Publish|  
 |**Ctrl+F5**|Build and publish without debugging. **Note:** The keyboard shortcut has a different meaning when debugging.|
 |**F6**|Publish and open Designer|
 |**Ctrl+F2**|Update the compiler used by the service tier(s)|

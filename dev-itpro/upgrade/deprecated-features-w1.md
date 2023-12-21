@@ -1,20 +1,45 @@
 ---
 title: Deprecated Features in the Base App
-description: describes the features that have been moved, removed, or replaced in the W1 version 
-author: bholtorf
-ms.custom: na
-ms.date: 12/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+description: Describes the features that have been moved, removed, or replaced in the W1 version.
+author: brentholtorf
+ms.author: bholtorf
+ms.date: 08/23/2023
+ms.reviewer: jswymer
 ms.topic: conceptual
+ms.custom: bap-template
 ---
 
 # Deprecated Features in the Base App
 
-This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
+This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
+## Changes in 2023 release wave 2
+
+The following features are marked as `obsolete:pending` in 2023 release wave 2.
+
+### Legacy time sheets experience
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| You can use time sheets in Business Central to track absence, and to track time and resources that are spent on a project. In 2021 Release Wave 1 we introduced a new experience where we converted time sheet pages to document pages (instead of worksheets). Using document pages lets you access time sheets on mobile devices. We're making the legacy experience obsolete in 2023 Wave 2 (to be removed in 2024 Wave 2) and enabling the new experience as the default for all new customers. To learn about the replacement feature, go to [Use Time Sheets](/dynamics365/business-central/projects-how-use-time-sheets). |
+
+### G/L entry aggregations when posting invoices
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced|The **Invoice Post. Buffer** table is replaced by the use of the **Invoice Posting** interface. The replacement helps resolve extensibility issues for the legacy **Invoice Post. Buffer** table. You can now use your own implementation of G/L invoice posting.
+If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to [Extending G/L Entry Aggregations When Posting Invoices](/dynamics365/business-central/dev-itpro/developer/devenv-invoice-posting-example).|
+
+### Exchange Rates Adjustment report
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced|The legacy Exchange Rates Adjustment Report is being replaced by a new capability that increases extensibility and makes it easier to comply with local and industry-specific requirements. It also gives you more control over exchange rate adjustments with a posting preview and how dimension values are post when you adjust exchange rate, and better reporting. To learn more about the new capabilities, go do [Adjusting Exchange Rates](/dynamics365/business-central/finance-how-update-currencies#adjusting-exchange-rates).
+<!--If you're a developer and want to learn more about how to use the new extensible exchange rates, go to <add link to output of related documentation deliverable on exchange rates adjustment extensiblitiy-->.
 
 ## Changes in 2023 release wave 1
 
@@ -30,7 +55,7 @@ The following features are marked as `obsolete:pending` in 2023 release wave 1.
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced | User groups let administrators manage permissions for groups of users who have the same or similar roles in the business. For example, you might create a user group for your sales department, and one for your purchasers. To make it a bit easier for administrators to manage permissions, we're replacing user groups and adding the ability to group users directly on permission sets. On the **Permission Sets** page, use the **Users** FactBox to assign the set to users.<br><br> To make it easier to reuse sets of users across other Dynamics 365 apps, we've also introduced optional security groups. Administrators can link [!INCLUDE [prod_short](../includes/prod_short.md)] security groups to their counterparts in Azure Active Directory or Windows Active Directory. The link let's administrators manage group memberships in Active Directory. In terms of managing permissions, security groups work in the same way as user groups. To learn more about the new security groups, go to [Control Access Using Security Groups](/dynamics365/business-central/ui-security-groups).  |
+|Replaced | User groups let administrators manage permissions for groups of users who have the same or similar roles in the business. For example, you might create a user group for your sales department, and one for your purchasers. To make it a bit easier for administrators to manage permissions, we're replacing user groups and adding the ability to group users directly on permission sets. On the **Permission Sets** page, use the **Users** FactBox to assign the set to users.<br><br> To make it easier to reuse sets of users across other Dynamics 365 apps, we've also introduced optional security groups. Administrators can link [!INCLUDE [prod_short](../includes/prod_short.md)] security groups to their counterparts in Microsoft Entra ID or Windows Active Directory. The link let's administrators manage group memberships in Active Directory. In terms of managing permissions, security groups work in the same way as user groups. To learn more about the new security groups, go to [Control Access Using Security Groups](/dynamics365/business-central/ui-security-groups).<br><br>If you have an extension that relies on user groups, and you'd like to explore examples of how to update it to use permission sets or [!INCLUDE [prod_short](../developer/includes/prod_short.md)] security groups, go to [Migrate from User Groups to Permission Sets or Security Groups](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-user-groups). |
 
 ## Changes in 2022 release wave 2
 
@@ -45,6 +70,12 @@ The following features are marked as `obsolete:pending` in 2023 release wave 1.
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced | The SharePoint connection setup feature used for OneDrive integration is obsolete and will be removed in 2023 release wave 2 (version 23). In its place, version 21 offers a new guided setup to configure OneDrive integration for system and application features. Learn more about the new setup at [Managing OneDrive Integration with Business Central](/dynamics365/business-central/admin-onedrive-integration).<br><br>The deprecation means that the  **Microsoft SharePoint Connection Setup** page (9551 Document Service Config) is marked as `obsolete:pending`. However, the platform APIs (in codeunit 9510 Document Service Management) and the document service table that make the legacy functionality possible aren't being deprecated. So any partner solutions that use the APIs directly are unaffected by this change.<br><br>Existing customers who are upgrading to version 21, and eventually version 22, can continue to use the legacy SharePoint/Onedrive integration. But we highly recommend that you transition them to the newer OneDrive integration because it's the path going forward. Switching to the newer OneDrive integration setup is a one-way operation, meaning you can't revert to the legacy setup after you've made the switch.<br><br> We aspire to resume work on SharePoint integration at a later date.|
+
+### Bank Reconciliation Worksheet and Deposits in North American versions (US, CA, MX)
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced | We're standardizing the features for reconciling bank accounts and making cash deposits, so that more country versions can benefit from them. For more information, see [Standardizing the bank reconciliation process in North American versions](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/standardizing-bank-reconciliation-process-north-american-versions). The current features will still allow you to view posted bank reconciliations done through the Bank Rec. Worksheet page, and posted deposits done through the Deposits features, but you can't use these features to create new entries. In October 2023, you must use the Bank Reconciliation page for bank reconciliations. The Bank Rec. Worksheet page won't be available.|
 
 ## Changes in 2022 release wave 1
 
@@ -61,12 +92,6 @@ The following feature is marked as `obsolete:pending` in 2022 release wave 1.
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced | We have consolidated settings for setting up intercompany capabilities on a single page, and have added a new feature for automatically accepting intercompany transactions in general journals. The current **Intercompany Setup** page (page 621) is replaced with a new **Intercompany Setup** page (page 653). |
-
-### Bank Reconciliation Worksheet and Deposits in North American versions (US, CA, MX)
-
-|Moved, Removed, or Replaced? |    Why?|
-|-----------------------------|-----|
-|Replaced | We're standardizing the features for reconciling bank accounts and making cash deposits, so that more country versions can benefit from them. For more information, see [Standardizing the bank reconciliation process in North American versions](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/standardizing-bank-reconciliation-process-north-american-versions). The current features will still allow you to view posted bank reconciliations done through the Bank Rec. Worksheet page, and posted deposits done through the Deposits features, but you can't use these features to create new entries. In April 2023, you must use the Bank Reconciliation page for bank reconciliations. The Bank Rec. Worksheet page won't be available.|
 
 ## Changes in 2021 release wave 2
 
@@ -172,8 +197,9 @@ Some features are available only under specific circumstances, or not at all int
 [Deprecated Features in the Swiss Version](deprecated-features-ch.md)  
 [Deprecated Features in the UK Version](deprecated-features-uk.md)  
 [Deprecated Features in the United States Version](deprecated-features-us.md)  
-[Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](deprecated-fields.md)
+[Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](deprecated-fields.md)  
 [Deprecated Tables](deprecated-tables.md)  
-[AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)  
+[ALAppExtensions repository (legacy)](https://github.com/microsoft/ALAppExtensions)  
+[BCApps repository (substitute for ALAppExtensions)](https://github.com/microsoft/BCApps)  
 [Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
-[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  

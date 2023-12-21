@@ -3,7 +3,7 @@ title: "UICop Analyzer"
 description: "UICop is an analyzer that enforces rules that must be respected by extensions meant to customize the Web Client."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2022
+ms.date: 10/25/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,6 +35,7 @@ UICop is an analyzer that enforces rules that must be respected by extensions me
 |[AW0013](uicop-aw0013.md)|Groups containing promoted actions should not be hidden.|WebClient|Warning|
 |[AW0014](uicop-aw0014.md)|Groups containing ActionRef targets should not be hidden.|WebClient|Warning|
 |[AW0015](uicop-aw0015.md)|Actions with scope repeater must be promoted.|WebClient|Warning|
+|[AW0016](uicop-aw0016.md)|Rich Text Editor fields are only allowed while alone in a FastTab group.|WebClient|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

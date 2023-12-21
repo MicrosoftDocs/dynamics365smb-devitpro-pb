@@ -13,9 +13,9 @@ author: jswymer
 
 [!INCLUDE [online_only](includes/online_only.md)]
 
-In this article, you'll learn how to customize the fields that display on a Teams card. You customize the fields by using a field groups control on the source table or using events. You can also combine these two methods to achieve the results that you want.  
+In this article, you'll learn how to customize the fields that display on a Teams card. You customize the fields by using a field groups control on the source table or using events. You can also combine these two methods to achieve the results that you want.
 
-## Extend Teams cards by using field groups 
+## Extend Teams cards by using field groups
 
 This section explains how to customize the fields that display on Teams card by setting metadata in [!INCLUDE [prod_short](includes/prod_short.md)] page and table objects.
 
@@ -151,7 +151,7 @@ Business Central offers the following events for customizing the fields and data
 |OnAfterGetSummaryFields|Use this event to specify a custom set of fields from the same table as the record. Using this method you can add more fields than are those fields specified by the  `Brick` field group on the source table. For example, you could add fields that are added to the source table by a table extension.|
 |OnAfterGetPageSummary |Use this event to modify fields and their values that are already selected for the card by the platform. For example, you could change the captions or value of a field.|
 
-The events are part of the [Page Summary Provider](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Page%20Summary%20Provider/README.md) module of the Microsoft System Application.
+The events are part of the [Page Summary Provider](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Page%20Summary%20Provider) module of the Microsoft System Application.
 
 > [!NOTE]
 > In most cases, we recommend you set the `Brick` field group instead of using events to define card content. This ensures a consistent experience across the Business Central Web client, mobile devices, and Teams.
@@ -174,7 +174,7 @@ The OnBeforeGetPageSummary event subscription has the following syntax:
 
 ```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnBeforeGetPageSummary', '', false, false)]
-local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray; var Handled: Boolean);
+local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray; var Handled: Boolean)
 ```
 
 #### Parameters
@@ -239,7 +239,7 @@ The OnAfterGetSummaryFields event lets you add or remove from the set of fields 
 
 ```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetSummaryFields', '', false, false)]
-local procedure OnAfterGetSummaryFields(PageId: Integer; RecId: RecordId; var FieldList: List of [Integer]);
+local procedure OnAfterGetSummaryFields(PageId: Integer; RecId: RecordId; var FieldList: List of [Integer])
 ```
 
 #### Parameters
@@ -279,7 +279,7 @@ begin
     if PageId <> Page::"Vendor Card" then
         exit;
 
-    // Remove Balance Due  details 
+    // Remove Balance Due  details
     FieldList.Remove(Vendor.FieldNo("Balance Due (LCY)"));
     FieldList.Remove(Vendor.FieldNo("Balance (LCY)"));
 
@@ -301,7 +301,7 @@ This event allows you to modify, add, or remove fields included in the card thro
 
 ```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetPageSummary', '', false, false)]
-local procedure OnAfterGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray);
+local procedure OnAfterGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray)
 ```
 
 #### Parameters

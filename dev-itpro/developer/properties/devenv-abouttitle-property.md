@@ -3,7 +3,7 @@ title: "AboutTitle Property"
 description: "Sets the large-font title that appears in a teaching tip in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/04/2022
+ms.date: 09/06/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Sets the large-font title that appears in a teaching tip in the UI.
 
 ## Applies to
 -   Page Custom Action
+-   Query
 -   Page
 -   Page Action
 -   Page Action Group
@@ -46,10 +47,7 @@ Sets the large-font title that appears in a teaching tip in the UI.
   - The control teaching tip is displayed for actions and action groups on the primary page. It is not displayed for other uses of actions, such as actions on page parts, action tiles, actions displayed in the footer of a `NavigatePage`, RoleCenter navigation menus, or actions displayed in the menu for a record in a list.
   - If the page object is a part that is embedded on the hosting page or in a FactBox, the control teaching tip becomes part of the tour on the hosting page. If the part is hosted on a Role Center, then the teaching tip is not displayed. 
 
-> [!NOTE]  
-> This property is ignored on Request pages, as reports are not yet supported.
-
-For more information about designing teaching tips and tours, see [Teaching tips and in-app tours for onboarding users](../../administration/onboarding-teaching-tips-tours.md). 
+[!INCLUDE[aboutTeachingTips](../includes/include-about-teaching-tips.md)]
 
 ## Example
 
@@ -58,7 +56,7 @@ AboutTitle = 'About sales invoices';
 ```
 
 ## See Also  
-
+[Teaching tips and in-app tours for onboarding users](../../administration/onboarding-teaching-tips-tours.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [AboutText Property](devenv-abouttext-property.md)

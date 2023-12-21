@@ -10,13 +10,16 @@ ms.author: kepontop
 ms.date: 07/03/2023
 ---
 
-# OData/API client prformance
+# OData/API client performance
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports OData web services (APIs and pages exposed as OData endpoints) to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the client). This article focuses on client performance.
 
 ## Using data access intent read-only
 
 By specifying the HTTP header `Data-Access-Intent: ReadOnly` for GET requests, you can instruct Business Central to run requests against a replica of the database, which can lead to improved performance. To learn more, see [Specifying Data Access Intent for GET requests](../developer/devenv-connect-apps-tips.md#DataAccessIntent).
+
+[!INCLUDE[database_access_intent_note](../includes/include-database-access-intent-note.md)]
+
 
 ## Using OData transaction `$batch`
 

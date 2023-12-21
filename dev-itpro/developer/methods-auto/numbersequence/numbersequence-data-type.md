@@ -3,7 +3,7 @@ title: "NumberSequence Data Type"
 description: "Is a complex data type for creating and managing number sequences in the database."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Is a complex data type for creating and managing number sequences in the database.
 
 
+## Static methods
 The following methods are available on the NumberSequence data type.
 
 
@@ -30,8 +31,10 @@ The following methods are available on the NumberSequence data type.
 |[Insert(Text [, BigInteger] [, BigInteger] [, Boolean])](numbersequence-insert-method.md)|Creates a number sequence in the database, with the given parameters.|
 |[Next(Text [, Boolean])](numbersequence-next-method.md)|Retrieves the next value from the number sequence.|
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## See Also  
-[Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Using number sequences](../../devenv-number-sequences.md)  
+[Get atarted with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  

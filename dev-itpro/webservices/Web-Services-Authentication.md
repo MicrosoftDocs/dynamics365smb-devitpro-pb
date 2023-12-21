@@ -11,6 +11,8 @@ author: jswymer
 ---
 # Web Services Authentication
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 When users send a request for a web service, they're authenticated according to the credential type that is configured for [!INCLUDE[server](../developer/includes/server.md)]. To access a web service, users must provide valid credentials for the credential type being used. If [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Windows credential type, then users are automatically authenticated against the Windows account that their computer is running under. In this case, they aren't prompted for their credentials. For other credential types, users are prompted to enter a user name and password.
 
 [!INCLUDE[webservice_key_deprecated](../includes/web-service-key-deprecated.md)]
@@ -24,7 +26,7 @@ The following table shows the main difference between basic authentication with 
 |-----|-----------------------------------------|-------|
 | User | Linked to an interactive user account| Supports both interactive and non-interactive accounts|
 | License | Always needs a licensed user | No license required for service-to-service integrations |
-| Security server | Business Central manages security | Security managed by Azure Active Directory |
+| Security server | Business Central manages security | Security managed by Microsoft Entra ID |
 | Multi-factor authentication | No multi-factor authentication support | Fully supports multi-factor authentication |
 | Secret validity | Password exposed in HTTP request (no expiration date) | HTTP requests contain a short-lived access token |
 

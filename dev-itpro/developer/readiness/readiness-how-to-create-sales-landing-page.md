@@ -1,14 +1,14 @@
 ---
 title: "How to create an effective sales landing page"
 description: "Guideline on creating an effective Sales Landing page for your app"
-author: v-liober
+author: a-emniel
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 ---
 
-# Guideline on Creating an Effective Sales Landing Page for Your App
+# Guideline on creating an effective sales landing page for your app
 
 ## Building a landing page that drives a successful buying transaction
 

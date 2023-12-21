@@ -13,6 +13,8 @@ author: jswymer
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article explains how to develop extensions to send custom telemetry trace signals to Azure Application Insights for viewing and analyzing.
 
 You can add AL code in extensions to emit messages about activities or operations that users do within the application. At runtime, the messages can be picked up by an Application Insights resource, which you set up beforehand. In Application Insights, the custom telemetry events are stored in the *traces* table.   
@@ -40,7 +42,7 @@ To create a custom telemetry trace signal, use a LOGMESSAGE method in AL code wh
 
 There are two variations of the LOGMESSAGE method. The difference is that one method uses a dictionary object to define custom dimensions for the trace signal. The other method includes two overloads so you don't have to construct a dictionary. You can use these methods in any object, trigger, or method. The methods have the following signatures:  
 
-#### Using a dictionary
+### Using a dictionary
 
 The LOGMESSAGE method for using a dictionary for dimensions has the following signature:
 
@@ -48,7 +50,7 @@ The LOGMESSAGE method for using a dictionary for dimensions has the following si
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, CustomDimensions: Dictionary of [Text, Text])
 ```
 
-#### Using dimension overloads
+### Using dimension overloads
 
 The LOGMESSAGE method for using dimension overloads has the following signature:
 
@@ -56,7 +58,7 @@ The LOGMESSAGE method for using dimension overloads has the following signature:
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
 ```
 
-#### Setting the parameters
+### Setting the parameters
 
 Use the parameters to build the dimensions, or columns, that will show for the trace in Application Insights. `Message` and `Verbosity` will appear as general dimensions. All other parameters appear as custom dimensions. 
 
@@ -76,7 +78,7 @@ Use the parameters to build the dimensions, or columns, that will show for the t
 > [!NOTE]
 > In Application Insights, the name of custom dimension will be prefixed with `al`. For example, if the dimension string you define in code is `result`, then in the trace logged in Application Insights, the name appears as `alresult`.
 
-##### Default CustomDimensions
+### Default CustomDimensions
 
 The following table explains CustomDimensions that are automatically included in ALMessage traces that are sent to Application Insights.
 
@@ -84,7 +86,7 @@ The following table explains CustomDimensions that are automatically included in
  -->
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alCallerAppName|Specifies the name of the extension that emitted the telemetry signal to Application Insights. This is typically the base application.|
 |alCallerAppPublishser|Specifies the publisher of the extension that emitted the telemetry signal to Application Insights. This is typically the publisher of the base application, which is `Microsoft`.|
 |alCallerAppVersion|Specifies the version number of the extension that emitted the telemetry signal to Application Insights. This is typically the version of the base application.|
@@ -104,6 +106,14 @@ The following table explains CustomDimensions that are automatically included in
 | extensionVersion|Specifies the version of the compiled extension.|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
+
+## Best practices for designing telemetry event 
+When the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] product team designed the partner telemetry feature, we build the following characteristics into it: 
+* Telemetry event definitions must treated as an API. Changing custom dimensions is a breaking change (someone might have built reporting or alerting on top of it).
+* Telemetry events must be discoverable in docs. If you see someting in telemetry, it should be easy to learn more about it in documentation. We added the custom dimension eventId because of this. It is good practice to keep eventIds unique, also across apps/extensions. 
+* Documented: each telemetry event has good documentation, preferably with guidance on how to react on this event.
+* Actionable (if possible): before we add a new telemetry event, we ask "what can a customer/partner do with this?" If no good answers come to mind, we do not add the event. 
+
 
 ## Examples
 

@@ -101,6 +101,7 @@ landingContent:
             url: devenv-al-methods.md
           - text: Triggers
             url: triggers-auto/devenv-triggers.md
+          - text: Events
             url: devenv-events-in-al.md
           - text: Attributes
             url: attributes/devenv-method-attributes.md
@@ -116,12 +117,12 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links: 
+          - text: What's new in 2023 release wave 2 
+            url: https://learn.microsoft.com/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/development
           - text: What's new in 2023 release wave 1
             url: https://learn.microsoft.com/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/development
           - text: What's new in 2022 release wave 2
             url: https://learn.microsoft.com/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/development
-          - text: What's new in 2022 release wave 1 
-            url: https://learn.microsoft.com/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/development
       - linkListType: reference
         links:
           - text: AL language changelog

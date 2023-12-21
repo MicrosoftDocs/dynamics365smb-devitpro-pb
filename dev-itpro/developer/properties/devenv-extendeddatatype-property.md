@@ -3,7 +3,7 @@ title: "ExtendedDatatype Property"
 description: "Sets the extended data type of a control."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
+ms.date: 11/24/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,6 +33,8 @@ Sets the extended data type of a control.
 |**Ratio**|runtime version 1.0|The text is handled as a progress bar. This is not supported on the Web client.|
 |**Masked**|runtime version 1.0|Displays the value as dots. This will only have effect on fields, where the user can enter and display textual data (including numbers, time, date etc.)|
 |**Person**|runtime version 1.0|The client handles the field as media representing a person and will display this in the signature rounded styling. When the media field is empty, a silhouette of a person is shown.|
+|**Barcode**|runtime version 12.0|The phone and tablet clients handle the field as a code and will provide the option to set the field value using a barcode scanner.|
+|**RichContent**|runtime version 12.0|The client handles the field as a rich text field, which allows for styling and formatting. To enable a rich text field, the field must have the MultiLine property set to `true` and must reside alone within a FastTab group.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -51,6 +53,9 @@ By applying special meaning or semantics to a field, the value of the table fiel
 
 The value of this property on a page control overrides the same property on a table field.
 
+With [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 2, you can use the `RichContent` option to enable a rich text field. To enable a rich text field, the field must have the [Multiline property](devenv-multiline-property.md) set to `true` and it must reside alone within a FastTab group. For an example of creating a rich text editor, see [Creating a rich text editor](../devenv-richtext-content-controls.md).
+
 ## See Also
 
-[Properties](devenv-properties.md)
+[Properties](devenv-properties.md)  
+[Creating a rich text editor](../devenv-richtext-content-controls.md)

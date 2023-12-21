@@ -1,14 +1,13 @@
 ---
 title: The SMB opportunity for app publishers 
 description: Learn about the business opportunity we see for software companies in the SMB space if you build your solution on Dynamics 365 Business Central.
-author: solsen
-
+author: SusanneWindfeldPedersen
 ms.topic: conceptual
 ms.date: 05/30/2022
 ms.author: kurtju
 ---
 
-# The SMB Opportunity for App Publishers
+# The SMB opportunity for app publishers
 
 Our mission is to empower every individual and every organization on the planet to achieve more. Particularly, focusing on those 78 million small and mid-sized businesses (SMB) worldwide that passionately want more resiliency in their tech intensity and their capability of transforming products and services to face the challenges in the marketplace. To embrace the constant change and grow, every organization must have a business application that breaks down the silos of data, processes, and workflow in their operations. This insight enables employees to respond to daily challenges and opportunities with agility. Market research shows that the business applications opportunity for software companies in the SMB space is predicted to be 51 billion dollars by 2025. As a developer, you want to make sure you bet on the winning platform. The BizApps market growth in this area is 17%; however [!INCLUDE[prod_short](../includes/d365fin_md.md)] platform growth is increasing at 47%!  
 

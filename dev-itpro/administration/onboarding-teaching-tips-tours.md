@@ -12,7 +12,7 @@ ms.author: soalex
 
 A key element in educating users about [!INCLUDE [prod_short](../includes/prod_short.md)] pages and concepts is the *tour*. A tour is a sequence of *teaching tips*.  
 
-Teaching tips can be defined at the page level, the *page teaching tip*, and be followed by teaching tips at the control level, the *control teaching tips*. Both types of teaching tips are defined by the .AL properties **AboutTitle** and **AboutText**, and an extension can overwrite teaching tips in the default version.
+Teaching tips can be defined at the page level, the *page teaching tip*, and be followed by teaching tips at the control level, the *control teaching tips*. Both types of teaching tips are defined by the .AL properties **AboutTitle** and **AboutText** (or their multi-language versions), and an extension can overwrite teaching tips in the default version.
 
 ## Page teaching tips
 
@@ -28,7 +28,7 @@ Teaching tips can be defined at the page level, the *page teaching tip*, and be 
 
 - Allow users to get on with a task right away without blocking them.
 
-- A teaching tip can be defined for any page in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], except the role centers, dialogs, and request pages for reports.
+- A teaching tip can be defined for any page (including request pages for reports) in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], except the role centers, and dialogs.
 
 - After users dismiss a teaching tip and tour, they can choose or hover over the page title. This action will reopen the teaching tip, and the user can retake the tour, for example.
 
@@ -104,6 +104,16 @@ When adding teaching tips, consider the following limitations:
 ### How FactBox teaching tips fit into tours
 
 The teaching tips for FactBoxes become part of the tour on the hosting page. For more information, see [Teaching tips flow](#flow).
+
+## Teaching tips for reports
+You can add teaching tips for report request pages just like normal pages by using the **AboutTitle** and **AboutText** properties in AL.
+
+Reports must be documented because they help users take data-driven decisions and are therefore key for users to run their business processes. With teaching tips, you can help explain logic that is relevant to the report therefore allowing users to get on with their reporting task right away without blocking them. After users dismiss a teaching tip, they can choose or hover over the report title in the request page. This action will reopen the teaching tip.
+
+The following illustration shows a report request page teaching tip that explains what the report is about. The teaching tip renders in the lower left corner.  
+
+:::image type="content" source="../media/onboarding-teaching-tip-report.png" alt-text="A report in Business Central with a request page teaching tip at the lower left corner.":::
+
 
 ## <a name="flow"></a> Teaching tips flow
 
@@ -189,7 +199,7 @@ For more information about tooltips, see [Help users get unblocked](../user-assi
 
 ## Best practices for teaching tips and tours
 
-- Not all pages in [!INCLUDE [prod_short](../includes/prod_short.md)] need teaching tips and tours. Use teaching tips where they provide value.
+- Not all pages and reports in [!INCLUDE [prod_short](../includes/prod_short.md)] need teaching tips and tours. Use teaching tips where they provide value.
 
 - A teaching tip says *what can be done* (outcome), not *how to do it* (steps)
 
@@ -225,4 +235,7 @@ For more information about tooltips, see [Help users get unblocked](../user-assi
 [Guidelines for tooltip text](../user-assistance.md#guidelines-for-tooltip-text)  
 [Onboarding experiences in Business Central](onboarding-experiences.md)  
 [AboutTitle Property](../developer/properties/devenv-abouttitle-property.md)  
+[AboutTitleML Property](../developer/properties/devenv-abouttitleml-property.md)   
 [AboutText Property](../developer/properties/devenv-abouttext-property.md)  
+[AboutTextML Property](../developer/properties/devenv-abouttextml-property.md)   
+

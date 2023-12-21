@@ -22,7 +22,7 @@ Standard functionality in Business Central makes it easy for users to store, man
 
 In the application code, the document sharing and OneDrive capabilities are divided between the system application and the base application. The system application provides that platform working with document sharing services&mdash;the base application makes it specific to OneDrive. As an AL developer, you can use the system and base applications to extend the OneDrive capabilities. Or even target another document sharing service.
 
-> [!NOTE]
+> [!NOTE]  
 > The **Share** action was introduced in Business Central 2022 release wave 1.
 
 ## System application
@@ -56,8 +56,7 @@ The `OnRun()` trigger and `Share(var DocumentSharingRec: Record "Document Sharin
 
 - `OnUploadDocument(var DocumentSharing: Record "Document Sharing" temporary; var Handled: Boolean)` for uploading when the document to the service.
 
-For more information about the API, see [Document Sharing Module](https://github.com/microsoft/ALAppExtensions/blob/main/Modules/System/Document%20Sharing/README.md) in the microsoft/
-ALAppExtensions repo on GitHub.
+For more information about the API, see [Document Sharing Module](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Document%20Sharing) in the [BCApps repository](https://github.com/microsoft/BCApps)
 
 ## Base application
 
@@ -70,7 +69,7 @@ The core to the base application functionality for OneDrive integration is codeu
 
 [ ![Shows the document service management codeunit.](media/document-service-mgt-cu-v2.png) ](media/document-service-mgt-cu.png)
 
-The base application is used to specify the URL of the document to be opened in OneDrive. The document information is stored as record in the **Document Sharing** table. Documents can be stored and passed to OneDrive as either BLOB or Media data types. 
+The base application is used to specify the URL of the document to be opened in OneDrive. The document information is stored as record in the **Document Sharing** table. Documents can be stored and passed to OneDrive as either BLOB or Media data types.
 
 Codeunit **9510 Document Service Management** includes four procedures that run the **Document Sharing** codeunit of the system application to start the document flow for either opening the document in OneDrive or sharing the document with other in OneDrive:
 
@@ -101,7 +100,7 @@ The following diagram illustrates the interaction between the system and base ap
 
 The following example extends the **Posted Sales Invoice** page of the base application to include an actions to open and share a PDF version of a sales invoice in OneDrive.
 
-> [!NOTE]  
+> [!NOTE]
 > With [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](devenv-promoted-actions.md).
 
 
@@ -204,7 +203,7 @@ pageextension 50100 PostedSalesInvExt extends "Posted Sales Invoice"
 
 No. You can just use the system application. In this case, you'll have to create a codeunit, similar **9510 Document Service Management**, that handles the storage of documents and passing them to the online service. The codeunit should subscribe to the events raised by codeunit **9560 Document Sharing**.
 
-<!-- 
+<!--
 ### Can I replace OneDrive with SharePoint as the target?
 
 Yes, programmatically.
@@ -233,6 +232,6 @@ Yes, when you set record on the Document Sharing temporary table. But we'll prov
 
 [Business Central and OneDrive for Business Integration](/dynamics365/business-central/across-onedrive-overview)  
 [Overview of the System Application](devenv-system-application-overview.md)  
-[Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module)  
+[Module System Application](/dynamics365/business-central/application/system-application/module/system-application)  
 [Module Base Application](/dynamics365/business-central/application/reference/base%20application/)  
 [Extending Application Areas](devenv-extending-application-areas.md)  

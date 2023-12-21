@@ -15,6 +15,8 @@ ms.author: jswymer
 
 [!INCLUDE[2020_releasewave1](../../includes/2020_releasewave1.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 ## Entities
 
 ## App
@@ -23,7 +25,7 @@ ms.author: jswymer
 
 The `app` entity represents a Business Central App that has been registered with the service and so it can be managed via the API. The `app` entity contains some basic metadata about the app, such as:
 - its ID
-- the Azure Active Directory Tenant ID of the publisher's organization
+- the Microsoft Entra tenant ID of the publisher's organization
 - which Azure location the respective .app files and other metadata should be stored in.
 
 > [!NOTE]
@@ -35,7 +37,7 @@ The `app` entity represents a Business Central App that has been registered with
 |---|---|---|
 |**ID**|The ID of the app. The ID must remain the same across all app versions.|string (uuid)|
 |**publisher**|The publisher's name.|string|
-|**publisherAadTenantId**|The ID of the Azure Active Directory tenant that represents the publisher's organization.|string (uuid)|
+|**publisherAadTenantId**|The ID of the Microsoft Entra tenant that represents the publisher's organization.|string (uuid)|
 |**publisherContactEmail**|The publisher's contact e-mail address.|string|
 |**storageLocation**|The Azure location in which data related to this app should be stored.|string|
 |**_etag**|The entity tag that contains a value unique to the entity's current state.|string|
@@ -197,7 +199,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 
 ### Description
 
-The `principal` entity represents an Azure Active Directory user or application that has some level of access to an `app`.  
+The `principal` entity represents a Microsoft Entra ID user or application that has some level of access to an `app`.  
 Principal can have different roles that determine which actions they're allowed to do.
 The currently supported roles are:
 - `Owner` - Owners are allowed to do all available actions on all entities.
@@ -207,8 +209,8 @@ The currently supported roles are:
 ### Properties
 |Name|Description|Schema|
 |---|---|---|
-|**aadTenantId**|The ID of the Azure Active Directory Tenant the principal belongs to.|string (uuid)|
-|**id**|The ID of Azure Active Directory user/application.|string (uuid)|
+|**aadTenantId**|The ID of the Microsoft Entra tenant the principal belongs to.|string (uuid)|
+|**id**|The ID of Microsoft Entra ID user/application.|string (uuid)|
 |**roles**|The list of roles the principal has assigned.|string[]|
 |**type**|The principal type.|enum (User, Application)|
 |**_etag**|The entity tag that contains a value unique to the entity's current state.|string|
@@ -669,7 +671,7 @@ Represents a customer's `environment` that has a specific `version` of an `app` 
 
 |Name|Description|Schema|
 |---|---|---|
-|**aadTenantId**|The ID of the customer's Azure Active Directory tenant.|string (uuid)|
+|**aadTenantId**|The ID of the customer's Microsoft Entra tenant.|string (uuid)|
 |**appId**|The ID of the installed app.|string (uuid)|
 |**applicationFamily**|The environment's application family.|string|
 |**countryCode**|The country code the environment belongs to.|string|
@@ -733,7 +735,7 @@ It is also not possible to apply a hotfix to an already installed application ve
 |**completedOn**|Date and time (UTC) when the hotfix was applied.|string (date-time)|
 |**countryCode**|The country code.|string|
 |**createdOn**|Date and time (UTC) when the hotfix request was created.|string (date-time)|
-|**environmentAadTenantId**|The ID of the customer's Azure Active Directory tenant.|string (uuid)|
+|**environmentAadTenantId**|The ID of the customer's Microsoft Entra tenant.|string (uuid)|
 |**environmentApplicationFamily**|The environment's application family.|string|
 |**environmentName**|The environment's name.|string|
 |**errorMessage**|The error message provided when the hotfix was unable to be applied.|string|

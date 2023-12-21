@@ -21,11 +21,11 @@ Creates a customer return reason in [!INCLUDE[prod_short](../../../includes/prod
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
+
 ```
-POST businesscentralPrefix/companies({id})/customerReturnReasons({id})
+POST businesscentralPrefix/companies({id})/customerReturnReasons
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
@@ -42,37 +42,35 @@ In the request body, supply a JSON representation of a **customerReturnReason** 
 
 If successful, this method returns ```201 Created``` response code and a **customerReturnReason** object in the response body.
 
-
 ## Example
 
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values -->
+
 ```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/customerReturnReasons({id})
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/customerReturnReasons
 Content-type: application/json
 {
-    "id" : "",
-    "code" : "",
-    "description" : ""
+  "code": "VARIANT",
+  "description": "Incorrect item variant"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here is an example of the response.
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
+
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
 {
-    "id" : "",
-    "code" : "",
-    "description" : ""
+    "id": "6ea22bf6-a449-ee11-ad0b-a1422c0f7f1f",
+    "code": "VARIANT",
+    "description": "Incorrect item variant"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  

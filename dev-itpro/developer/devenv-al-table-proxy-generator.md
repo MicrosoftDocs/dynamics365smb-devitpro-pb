@@ -13,8 +13,6 @@ ms.author: solsen
 
 # AL Table Proxy Generator
 
-
-
 The **AL Table Proxy Generator** tool can be used to generate one or more tables for integration with Microsoft Dataverse. When one or more tables are present in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], but not in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the tool can be run to generate integration or proxy tables for the specified table or tables.
 
 An integration or proxy table is a table that represents a table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The integration table includes fields that correspond to columns in the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table. The integration table acts as a link or connector between the [!INCLUDE[prod_short](includes/prod_short.md)] table and the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table.  

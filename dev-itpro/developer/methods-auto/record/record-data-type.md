@@ -3,7 +3,7 @@ title: "Record Data Type"
 description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Is a complex data type.
 
 
 
+## Instance methods
 The following methods are available on instances of the Record data type.
 
 |Method name|Description|
@@ -93,6 +94,7 @@ The following methods are available on instances of the Record data type.
 |[SecurityFiltering([SecurityFilter])](record-securityfiltering-method.md)|Gets or sets how security filters are applied to the record.|
 |[SetAscending(Any, Boolean)](record-setascending-method.md)|Sets the sort order for the records returned. Use this method after you have set the keys to sort after, using SETCURRENTKEY. The default sort order is ascending. You can use SETASCENDING to change the sort order to descending for a specific field, while the other fields in the specified key are sorted in ascending order.|
 |[SetAutoCalcFields([Any,...])](record-setautocalcfields-method.md)|Sets the FlowFields that you specify to be automatically calculated when the record is retrieved from the database.|
+|[SetBaseLoadFields()](record-setbaseloadfields-method.md)|Sets that only fields for the base table to be initially loaded when the record is retrieved from its data source. This will overwrite fields previously selected for initial load.|
 |[SetCurrentKey(Any [, Any,...])](record-setcurrentkey-method.md)|Selects a key for a table.|
 |[SetFilter(Any, Text [, Any,...])](record-setfilter-method.md)|Assigns a filter to a field that you specify.|
 |[SetLoadFields([Any,...])](record-setloadfields-method.md)|Sets the fields to be initially loaded when the record is retrieved from its data source. This will overwrite fields previously selected for initial load.|

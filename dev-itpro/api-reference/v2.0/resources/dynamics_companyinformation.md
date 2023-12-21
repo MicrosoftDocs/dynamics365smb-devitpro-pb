@@ -28,13 +28,6 @@ Represents a company information in [!INCLUDE[prod_short](../../../includes/prod
 |[GET companyInformation](../api/dynamics_companyinformation_get.md)|companyInformation|Gets a company information object.|
 |[PATCH companyInformation](../api/dynamics_companyinformation_update.md)|companyInformation|Updates a company information object.|
 
-
-## Navigation
-
-| Navigation |Return Type| Description |
-|:----------|:----------|:-----------------|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the companyInformation.|
-
 ## Properties
 
 | Property           | Type   |Description     |

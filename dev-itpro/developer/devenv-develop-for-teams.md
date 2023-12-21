@@ -13,6 +13,8 @@ ms.author: jswymer
 
 [!INCLUDE [online_only](includes/online_only.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [Microsoft Teams](https://www.microsoft.com/microsoft-365/microsoft-teams) is a Microsoft 365 product that lets you connect with others, collaborate seamlessly and simplify work. [!INCLUDE [prod_short](includes/prod_short.md)] offers an app that connects Microsoft Teams to your business data in [!INCLUDE [prod_short](includes/prod_short.md)] so users can quickly share details across team members and respond faster to inquiries. This article gives you an overview of what you can do as developer to customize displaying Business Central data and Teams channels and chats.
 
 ## Introduction to the Business Central app for Teams
@@ -87,7 +89,7 @@ For more information, go to [Create Business Central tabs for Teams](devenv-deve
 
 ## Preparing your environment for development and testing
 
-Developing for Teams integration is similar to other development activities in [!INCLUDE [prod_short](includes/prod_short.md)]. It requires Visual Studio Code, installed with the AL language extension, and knowledge of the AL language. However, because the [!INCLUDE [prod_short](includes/prod_short.md)] app for Teams only supports [!INCLUDE [prod_short](includes/prod_short.md)] online, you must deploy your extensions to an online sandbox to test the implementation. The sandbox must also be deployed to an Azure AD tenant that has access to Microsoft Teams through one of the supported Microsoft 365 plans. For more information about sandboxes, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
+Developing for Teams integration is similar to other development activities in [!INCLUDE [prod_short](includes/prod_short.md)]. It requires Visual Studio Code, installed with the AL language extension, and knowledge of the AL language. However, because the [!INCLUDE [prod_short](includes/prod_short.md)] app for Teams only supports [!INCLUDE [prod_short](includes/prod_short.md)] online, you must deploy your extensions to an online sandbox to test the implementation. The sandbox must also be deployed to a Microsoft Entra tenant that has access to Microsoft Teams through one of the supported Microsoft 365 plans. For more information about sandboxes, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
 
 ## See Also
 [FAQ for Teams Integration](devenv-dev-faq-teams.md)  

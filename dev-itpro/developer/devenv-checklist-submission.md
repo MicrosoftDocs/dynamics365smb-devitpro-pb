@@ -1,6 +1,6 @@
 ---
-title: "Technical Validation Checklist"
-description: Describing the steps you must go through to successfully submit your app to AppSource using AppSourceCop.
+title: Technical validation checklist
+description: Describes the steps you must go through to successfully submit your app to AppSource using AppSourceCop for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 02/28/2023
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.author: freddyk
 ---
 
-# Technical Validation
+# Technical validation
 
 Below you find a checklist of all requirements that you **must meet before submitting** an extension for validation. You also find a description of how the [!INCLUDE [prod_short](includes/prod_short.md)] Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
 
@@ -45,6 +45,7 @@ If you don't meet these mandatory requirements, your extension fails validation.
 |The extension submitted must not be a runtime package.|[Creating Runtime Packages](devenv-creating-runtime-packages.md)|
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
 |The extension submitted must specify the `Application` manifest property.|The `Application` manifest property is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](#against-which-releases-of-business-central-is-your-submission-validated)|
+|The extension submitted should have a unique `AppId`.| Every extension should have a unique `AppId` and it's not allowed to submit PTEs and AppSource apps with the same `AppId`. Also see [Constraints on extension types](devenv-extension-types-and-scope.md#constraints-on-extension-types).
 
 ## Technical validation performed by the Business Central services
 

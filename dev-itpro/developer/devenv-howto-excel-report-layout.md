@@ -3,7 +3,7 @@ title: Creating an Excel layout report
 description: Describes the steps involved in creating a report that uses an Excel layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 06/16/2023
+ms.date: 12/15/2023
 ms.reviewer: kepontop
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -26,7 +26,7 @@ When designing an Excel layout, you need to know the following information:
 - How the layout file is validated when importing it into [!INCLUDE[prod_short](../includes/prod_short.md)].
 - How the [!INCLUDE[prod_short](../includes/prod_short.md)] server merges the layout with data when running the report.
 
-### Excel layout data contract
+### Excel layout data contract in 2023 release wave 1 and earlier versions
 
 Every Excel layout file must have a worksheet called _Data_. This worksheet has one purpose: defining which metadata fields from the the dataset definition of the report object the layout uses, which is sometimes also called the _data contract_ between the layout file and the report dataset definition. The data contract consists of the following rules:
 
@@ -39,6 +39,14 @@ Every Excel layout file must have a worksheet called _Data_. This worksheet has 
 > When developing Excel layouts, you can add demo data to the _Data_ worksheet to make it easier to see the end result when the report is rendered with the layout. The data is removed when importing it to [!INCLUDE[prod_short](../includes/prod_short.md)] but if you include Excel layouts in an app/extension, you might want to keep the demo data there for easier troubleshooting later.
 
 For more information about the data contract, see [Understanding Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report#understanding-excel-layouts).
+
+### Excel layout data contract in 2023 release wave 2 and later versions
+
+The [ExcelLayoutMultipleDataSheets property](properties/devenv-excellayoutmultipledatasheets-property.md) allows you to work with reports that render multiple worksheets for the report data when the dataset has multiple data items. By setting the property to `true`, the AL runtime generates an Excel worksheet for each data item and places its data there. Otherwise, if the property is `false`, which is the default, a single sheet is used for all data (as described in the previous section).
+
+Each of the multiple sheets is named #DataItemName, where DataItemName is the name given to the dataitem in the report design. When new empty Excel layouts are added to the report, the property is used to determine the sheet structure.
+
+With data in multiple worksheets, the report layout can now easily include data models defined with the PowerPivot feature in Excel.
 
 ### Validating an Excel layout
 
@@ -58,6 +66,23 @@ When a report with an Excel layout is run, [!INCLUDE[server](includes/server.md)
 3. Inserts the data into the _Data_ table in the _Data_ worksheet in the Excel layout file.
 4. Provides the merged Excel workbook to the user for download or view in Excel online if enabled by the tenant administrator. For more information about viewing Excel outputs in Excel online, visit [Save Excel workbooks and report files in OneDrive](/dynamics365/business-central/across-onedrive-overview#save-excel-workbooks-and-report-files-in-onedrive).
 
+
+### Changing the data contract after adding new columns to the report dataset
+
+If you add new columns to the report dataset after you've created Excel layouts, the data contracts in the layouts don't get updated automatically. But you don't need to recreate the layouts from scratch, you can simply add the new columns manually to the header line in the data contract worksheet(s). 
+
+For a report developer working with AL code, maybe the simplest way to get the new column names is from the AL code for the report object. For a report developer working just in Excel, the simplest way to get the new column names is to run the report in [!INCLUDE[prod_short](../includes/prod_short.md)] and on the request page, then choose the **Microsoft Excel Document (data only)** option. This will give you an Excel workbook with all the columns in the data contract.
+
+## Formatting data in Excel layouts
+
+[!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
+
+Specifically for Excel layouts, there are many ways to control formatting of data elements directly in Excel. For more examples on how to format data in Excel, see 
+
+- [Formatting dates in Excel](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e)
+- [Formatting numbers in Excel](https://support.microsoft.com/en-us/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)
+
+
 ## Drillthrough to Business Central from an Excel layout
 
 With drillthrough in an Excel layout, you can create hyperlinks back into [!INCLUDE[prod_short](../includes/prod_short.md)] from Excel cells. When the report user selects the cell, they drillthrough to the target page to get details that are filtered to that context. To implement a drillthrough link, you need to know which page to open, and also construct which filters to apply to that page. You filter the data that is displayed in the page by using the filter URL parameter. The filter parameter lets you display specific records from the underlying table of the page.
@@ -66,11 +91,13 @@ For more information, see [Web URL syntax](devenv-web-client-urls.md).
 
 ## Using fonts in Excel layouts
 
-The online version of Business Central contains preinstalled fonts on the servers that can be used when generating reports. You can use any of these fonts in your layout.
+[!INCLUDE[using_fonts](../includes/include-excel-word-layouts-fonts.md)]
 
-For more information, see [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts).
+## Using Office document themes in Excel layouts
 
-## Create a simple Excel layout report
+[!INCLUDE[using_office_themes](../includes/include-excel-word-layouts-themes.md)]
+
+## Example: Create a simple Excel layout report
 
 The following steps show how to create a basic report based on an Excel layout. The example also illustrates how compilation triggers a starter template for the Excel layout. If an existing layout is referenced with the `LayoutFile` property, the layout is validated based on the schema of the report dataset. 
 
@@ -126,6 +153,7 @@ It's possible to specify multiple layouts for a report. For more information, se
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md)  
 [ExcelLayout Property](properties/devenv-excellayout-property.md)  
+[ExcelLayoutMultipleDataSheets Property](properties/devenv-ExcelLayoutMultipleDataSheets-property.md)   
 [LayoutFile Property](properties/devenv-layoutfile-property.md)  
 [Save Excel workbooks and report files in OneDrive](/dynamics365/business-central/across-onedrive-overview#save-excel-workbooks-and-report-files-in-onedrive)  
 [Understanding Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report#understanding-excel-layouts)  
