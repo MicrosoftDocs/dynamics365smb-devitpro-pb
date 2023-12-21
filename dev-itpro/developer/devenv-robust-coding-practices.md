@@ -45,9 +45,9 @@ When you have a good list of failure modes, it is time to think about remidiatio
 
 ## Using robust coding practices to reason handle possible error situations
 
-A robust coding practice is a state of mind for you as a developer. Apart from coding for the happy path, you also reason over failure modes and how to deal with ways your code and other peoples code can fail. 
+Robust coding practices is a state of mind for you as a developer. Apart from coding for the happy path, you also reason over failure modes and how to deal with ways that your code and other peoples code can fail. 
 
-These five principles might help you starting to make your code robust towards failures:
+These five principles might help you get started making your code more robust towards failures:
 
 1. Don't trust any code you did not write.
 2. Don't trust consumers of your code.
@@ -96,7 +96,14 @@ For more information, see [Error handling strategies](devenv-al-error-handling.m
 
 ### Principle: Offer graceful degradations
 
-TBA
+If your code is using an external component, you might want to design for situations where that component is temporarily unavailable. If this is the case, can you make your code being still functional but just not offer the full experience for the users? 
+
+Here are some examples of how you use this principle in practice:
+
+- Your code calls a cloud-based AI forecasting model. If that model is unavailable, could you offer a lower-quality but still functioning regression model programmed in AL?
+- Your code sends files or data to a cloud-based service for further processing there. If that service is unavailable, could you store data/files in the database and then try connecting later?
+- Your code reads files or data from a cloud-based service for further processing in AL. If that service is unavailable, could allow users to upload data/files manually until the service becomes available again?
+
 
 ### Principle: Hide your internal data structures
 
