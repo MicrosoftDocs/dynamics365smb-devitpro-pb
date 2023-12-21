@@ -141,11 +141,11 @@ Remember these rules of thumb:
 
 ### Microsoft’s voice guidelines
 
-For more guidelines on how to communicate to the user in a way they understand, see [Microsoft's brand voice: Above all, simple and human](https://learn.microsoft.com/style-guide/brand-voice-above-all-simple-human).
+For more guidelines on how to communicate to the user in a way they understand, see [Microsoft's brand voice: Above all, simple and human](/style-guide/brand-voice-above-all-simple-human).
 
 ## See also
 
-[Microsoft’s voice guidelines](https://learn.microsoft.com/style-guide/brand-voice-above-all-simple-human)   
+[Microsoft’s voice guidelines](/style-guide/brand-voice-above-all-simple-human)   
 [Actionable errors](devenv-actionable-errors.md)   
 [Understanding the error dialog](devenv-error-dialog.md)  
 [Dialog.Error(ErrorInfo) Method](methods-auto/dialog/dialog-error-errorinfo-method.md)  
