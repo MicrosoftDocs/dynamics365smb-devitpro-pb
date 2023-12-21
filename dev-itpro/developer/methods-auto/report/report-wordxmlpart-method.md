@@ -55,6 +55,14 @@ The report data structure as structured XML that is compatible with Microsoft Wo
 
 [!INCLUDE[example-1](../../includes/include-wordxmlpart-example-1.md)]
 
+```AL
+var
+    ReportAsXmlString: Text;
+begin
+    ReportAsXmlString := MyReport.WordXmlPart(Report::MyReport);  
+end;
+```  
+
 [!INCLUDE[example-2](../../includes/include-wordxmlpart-example-2.md)]
 
 > [!NOTE]  
