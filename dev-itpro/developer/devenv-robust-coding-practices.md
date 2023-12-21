@@ -76,7 +76,7 @@ For more information, see [Error handling strategies](devenv-al-error-handling.m
 Primarily, anticipate that your code might encounter issues from other peoples code, and adopt a defensive programming approach to identify these issues at the earliest. Respond to failures in a manner that shields users from an overload of technical error messages.
 
 
-### Don't trust consumers of your code (that might include yourself)
+### Principle: Don't trust consumers of your code (that might include yourself)
 
 Just like you might not know the full extend of the BC developer documentation, consider the possibility that the programmer that calls your code may not have access to or be familiar with the manual pages or documentation for that. Aim to write your code in a way that it can gracefully handle any incorrect, unexpected, or malformed inputs or parameters. The definition of reasonable error handling will depend on the situation. For instance, if an error message is displayed to a user, ensure that it is self-explanatory and does not necessitate the user to refer to a manual for understanding the error. If an error code is returned to the caller (perhaps from a codeunit method), ensure that the error codes are clear and detailed. Moreover, as soon as an issue is detected, take immediate corrective action or maybe fail the method. This prevents the error from further propagation up the AL stack trace.
 
@@ -94,18 +94,18 @@ One of the key reasons to adhere to this principle is that the individual invoki
 For more information, see [Error handling strategies](devenv-al-error-handling#error-handling-strategies).
 
 
-### Offer graceful degradations
+### Principle: Offer graceful degradations
 
 TBA
 
-### Hide your internal data structures
+### Principle: Hide your internal data structures
 
 Concealing internal data structures enhances your program’s modularity. For example, if you want to change a collection representation from arrays to lists in your code, a well-designed and information-concealed interface would not require changes in the calling program. But if this information hiding is neglected, changing the representation might break the functioning programs.
 
 Take extra care protecting elements in your code that need to stay consistent across calls. For instance, a shared variable or data in a setup table. If users of your code can access these directly, they could unintentionally or intentionally alter the data, leading to function failures. 
 
 
-### Assume the improbable
+### Principle: Assume the improbable
 
 When doing fault modelling, you might discover failure modes that can occur but with very low probability. When your code runs at scale (in many customer installations or sometimes in high concurrency), over time, some of these improbable failures will very likely occur. Reason about how your code will react to those and implement error handling accordingly. 
 
