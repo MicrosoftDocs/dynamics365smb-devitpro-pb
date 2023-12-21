@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 11/30/2023
 ms.custom: bap-template
 ---
 
@@ -22,12 +22,13 @@ You should always install the latest update.
 
 ## Available updates for Business Central 2023 release wave 1
 
-The following table lists the updates that have been released for 2023 release wave 1 of Business Central (version 22). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
+The following table lists the updates that have been released for 2023 release wave 1 of Business Central (version 22). The updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5033776](https://support.microsoft.com/help/5033776)|Update 22.8| December 2023|Application Build 22.8</br>Platform Build 22.0.  |
 |[5032754](https://support.microsoft.com/help/5032754)|Update 22.7| November 2023|Application Build 22.7.61690</br>Platform Build 22.0.61627  |
 |[5031951](https://support.microsoft.com/help/5031951)|Update 22.6| October 2023|Application Build 22.6.60909</br>Platform Build 22.0.60864  |
 |[5031031](https://support.microsoft.com/help/5031031)|Update 22.5| September 2023|Application Build 22.5.60134</br>Platform Build 22.0.59966  |

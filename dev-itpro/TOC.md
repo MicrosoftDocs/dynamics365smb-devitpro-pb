@@ -69,6 +69,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 23.2](whatsnew/whatsnew-update-23-2.md)
 ### [Update 23.1](whatsnew/whatsnew-update-23-1.md)
 ### Updates for earlier major versions
 #### [Update 22.5](whatsnew/whatsnew-update-22-5.md)
@@ -281,6 +282,7 @@
 ### [Overview](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+### [Apicategoryroutes](administration/resources/dynamics_apicategoryroutes.md)
 ### [Automation company](administration/resources/dynamics_automationcompany.md)
 #### [Get automation company](administration/api/dynamics_automationcompany_get.md)
 #### [Delete automation company](administration/api/dynamics_automationcompany_delete.md)
@@ -305,6 +307,11 @@
 #### [Get permission set](administration/api/dynamics_permissionset_get.md)
 ### [Scheduled job](administration/resources/dynamics_scheduledjob.md)
 #### [Get scheduled job](administration/api/dynamics_scheduledjob_get.md)
+### [Security group](administration/resources/dynamics_securitygroup.md)
+#### [Get security group](administration/api/dynamics_securitygroup_get.md)
+#### [Delete security group](administration/api/dynamics_securitygroup_delete.md)
+### [Security group member](administration/resources/dynamics_securitygroupmember.md)
+#### [Get security group member](administration/api/dynamics_securitygroupmember_get.md)
 ### [User](administration/resources/dynamics_user.md)
 #### [Get user](administration/api/dynamics_user_get.md)
 #### [Update user](administration/api/dynamics_user_update.md)
@@ -376,12 +383,15 @@
 ##### [Cloud migration setup overview](administration/migration-setup-overview.md)
 ##### [Define migration table mappings](administration/migration-table-mapping.md)
 ##### [Run cloud migration setup](administration/migration-setup.md)
+##### [Change how data is replicated](administration/cloud-migration-change-replication.md)
 ##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
 #### Replicate data
 ##### [Data replication overview](administration/migration-data-replication.md)
 ##### [Run data replication](administration/migrate-data-replication-run.md)
 ##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
-#### [Run data upgrade](administration/migration-data-upgrade.md)
+#### Upgrade data
+##### [Run data upgrade](administration/migration-data-upgrade.md)
+##### [Skip API data upgrade](administration/migration-skip-api-data-upgrade.md)
 #### [Complete cloud migration](administration/migration-finish.md)
 ### Migrate from Dynamics NAV
 #### [Migrate from Dynamics NAV to Business Central online](administration/migrate-nav.md)
@@ -685,9 +695,9 @@
 ##### [Pages overview](developer/devenv-pages-overview.md)
 ##### [Page object](developer/devenv-page-object.md)
 ##### [Page extension object](developer/devenv-page-ext-object.md)
-##### [PromptDialog object](developer/devenv-page-type-promptdialog.md)
 ##### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
+##### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
 ##### List pages
 ###### [Designing list pages](developer/devenv-designing-list-pages.md)
 ###### [Sample list page](developer/devenv-simple-list-page-example.md)
@@ -760,20 +770,42 @@
 #### [Report object](developer/devenv-report-object.md)
 #### [Report extension object](developer/devenv-report-ext-object.md)
 #### [Report extension example](developer/devenv-report-ext-example.md)
-#### [Report datatype](developer/methods-auto/report/report-data-type.md)
+#### AL Language Reference (reports)
+##### [Report datatype (AL Language Reference)](developer/methods-auto/report/report-data-type.md)
+##### [Report object properties (AL Language Reference)](developer/properties/devenv-report-properties.md)
+##### [Report, Report Dataitem, and Report Extension Properties (AL Language Reference)](developer/properties/devenv-report-property-overview.md)
 #### [Defining a report dataset](developer/devenv-report-dataset.md)
-#### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
+#### Formatting report data
+##### [Formatting field values in report datasets](developer/devenv-format-report-field-data.md)
+##### [Formatting decimal values in report fields](developer/devenv-format-field-data.md)
+##### [Localizing the report data formatting and caption strings](developer/devenv-report-localization.md)
 #### [Using request pages with reports](developer/devenv-request-pages-for-reports.md)
-#### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### Report layouts
-##### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
-##### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
-##### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)
+##### [About report layouts](/dynamics365/business-central/ui-manage-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Get started creating layouts](/dynamics365/business-central/ui-get-started-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### Excel, Word, and RDL report layouts
+###### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)
+###### [Working with Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
+###### [Working with Word layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
+###### [Working with RDLC layouts](/dynamics365/business-central/ui-rdlc-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Adding barcodes to report layouts](developer/devenv-report-add-barcodes.md)
 ##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
 ##### [Defining a custom report render](developer/devenv-report-custom-render.md)
-##### [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts)
-##### [Adding barcodes to report layouts](developer/devenv-report-add-barcodes.md)
+##### Changing layouts (for users and administrators)
+###### [Set the layout used by a report](/dynamics365/business-central/ui-set-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Define document layouts for customers and vendors](/dynamics365/business-central/ui-define-customer-vendor-document-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### Legacy layout features
+###### [Create and modify custom report layouts](/dynamics365/business-central/ui-how-create-custom-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Import and export custom report layouts](/dynamics365/business-central/ui-how-import-and-export-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Update custom report layouts](/dynamics365/business-central/ui-update-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Set the layout used by a report](/dynamics365/business-central/ui-how-change-layout-currently-used-report?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Walkthrough: Designing a report from multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
+#### Report discoverability
+##### [Report discoverability overview](developer/devenv-reports-discoverability.md)
+##### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### [Report triggers and operations](developer/devenv-report-triggers.md)
 #### [Substituting a report](developer/devenv-substituting-reports.md)
 #### [Testing a report](developer/devenv-testing-reports.md)
@@ -1316,6 +1348,16 @@
 ## Integrating with external systems
 ### [Data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
 ### [Business events (preview)](developer/business-events-overview.md)
+## Integrating AI using developer tools for copilot
+### [Overview](developer/ai-integration-landing-page.yml)
+### [What are developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
+### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
+### [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
+### [Get setup with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
+### Build a copilot experience
+#### [Introduction](developer/ai-build-experience-overview.md)
+#### [Build the copilot capability in AL](developer/ai-build-capability-in-al.md)
+#### [Build copilot user experience](developer/ai-build-experience.md)
 ## Integrating with Microsoft Dataverse
 ### Data synchronization
 #### [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)
@@ -1356,8 +1398,8 @@
 ### [Create automated flows](powerplatform/automate-workflows.md)
 ### [Create instant flows](powerplatform/instant-flows.md)
 ### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
+## [Integrating with Microsoft Power Pages (preview)](developer/power-pages-on-virtual-tables-overview.md)
 <!-- Microsoft Power BI -->
-<!--## Integrating with Microsoft Power Pages (preview) -->
 ## Integrating with Microsoft Power BI
 ### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
 ### Administrator
@@ -1438,7 +1480,7 @@
 <!-- deployment -->
 ## Deployment
 ### [Deployment overview](deployment/deployment.md)
-### [features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
+### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System requirements
 #### [2023 release wave 2](deployment/system-requirements-business-central-v23.md)
 #### [2023 release wave 1](deployment/system-requirements-business-central-v22.md)
@@ -1756,6 +1798,7 @@
 ##### [Installing a minor update](upgrade/upgrading-cumulative-update.md)
 ### [Some known issues](upgrade/known-issues.md)
 ## [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
-
+# Responsible AI
+## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
 <!-- end upgrade -->
 <!--on-prem ends-->

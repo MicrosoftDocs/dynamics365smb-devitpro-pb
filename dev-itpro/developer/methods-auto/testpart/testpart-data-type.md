@@ -3,7 +3,7 @@ title: "TestPart Data Type"
 description: "Represents a variable type that can be used to test Page Application Objects of type Part."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Represents a variable type that can be used to test Page Application Objects of 
 
 
 
+## Instance methods
 The following methods are available on instances of the TestPart data type.
 
 |Method name|Description|
