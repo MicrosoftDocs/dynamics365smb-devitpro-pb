@@ -91,7 +91,7 @@ Here are some examples of how you use this principle in practice:
 One of the key reasons to adhere to this principle is that the individual invoking your code could very well be... you. It’s common to forget the intricate details of your own program after a week or so. This could lead to potential errors such as incorrect function calls or providing invalid input. By following this principle, you’re essentially safeguarding your code against such issues. This approach to programming, where you anticipate and prevent possible issues, is often referred to as defensive programming. It’s a proactive measure to ensure the robustness of your code against errors, both from within and outside the program. It’s like putting a safety net to catch any unforeseen or unexpected errors that might occur during the execution of the program. This way, even if you forget the specifics of your code, this safety net will help prevent major issues or crashes. It’s a strategy that not only helps in maintaining the code but also in enhancing its overall reliability and efficiency.
 
 
-For more information, see [Error handling strategies](devenv-al-error-handling#error-handling-strategies).
+For more information, see [Error handling strategies](devenv-al-error-handling.md#error-handling-strategies).
 
 
 ### Principle: Offer graceful degradations
