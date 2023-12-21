@@ -2,7 +2,7 @@
 title: "AL error handling"
 description: Deal with unexpected situations that occur when code is run in AL for Business Central
 ms.custom: na
-ms.date: 02/09/2022
+ms.date: 12/21/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ The following articles introduce error handling in AL:
 
 - [Actionable errors](devenv-actionable-errors.md) 
 - [Collecting errors](devenv-error-collection.md) 
-- [Handling errors using Try Methods](devenv-handling-errors-using-try-methods.md)   
+- [Handling errors using Try methods](devenv-handling-errors-using-try-methods.md)   
 - [Progress Windows, Message, Error, and Confirm methods](devenv-progress-windows-message-error-and-confirm-methods.md)
 
 ## Error handling methods in AL
