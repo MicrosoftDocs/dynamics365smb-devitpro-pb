@@ -155,7 +155,6 @@ pageextension 50000 MyPageExtension extends MyPage
 {
     Caption = 'Extension Page';
 }
-
 ```
 
 has `<trans-unit id>` for the page extension corresponding to `PageExtension 1716690578 - Property 2879900210`, then if you want to change the caption on the page, you must use the ID `Page 2931038265 - Property 2879900210`, which is the `<trans-unit id>` of the original property.

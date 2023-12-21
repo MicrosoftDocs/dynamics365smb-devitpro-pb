@@ -54,10 +54,10 @@ The following example opens table 18 \(Customer\) as a RecordRef variable that i
 > You can use the name of the table instead of the table number to open the table by using the following syntax: 
 
 ```al
-Recref.Open\(DATABASE::Customer\)
+RecRef.Open(DATABASE::Customer)
 ```
 
-```
+```al
 var
     Recref: RecordRef;
     MyFieldRef: FieldRef;

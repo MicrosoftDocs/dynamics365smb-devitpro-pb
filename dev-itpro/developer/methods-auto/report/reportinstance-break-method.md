@@ -41,7 +41,7 @@ An instance of the [Report](report-data-type.md) data type.
 
 ## Example  
 
-```  
+```al
 var
     MyVar: Integer;
     Text000: Label "The variable is now %1.";

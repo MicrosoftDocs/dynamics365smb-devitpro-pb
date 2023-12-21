@@ -41,7 +41,6 @@ codeunit 50110 Letters
     var
         myInt: Integer;
 }
-
 ```
 
   
