@@ -1,7 +1,7 @@
 ---
 title: Failure modelling and robust coding practices
 description: Describes how to reason over errors and handle them in code.
-author: kepontop
+author: KennieNP
 ms.author: kepontop
 ms.reviewer: solsen
 ms.service: dynamics365-business-central
@@ -70,7 +70,7 @@ Here are some examples of how you use this principle in practice:
 - Have the compiler help you where possible instead of getting errors at runtime. When calling AL methods that take object ID parameters, try calling them using the scope operator `::` (e.g. Codeunit::"Job Queue Dispatcher") and not using literal integer values (e.g. 448). In case objects are renumbered or are not available, you will get a compile error and not a runtime error.
 - When calling external web service calls, check the HTTP status code.
 
-For more information, see [Error handling strategies](devenv-al-error-handling#error-handling-strategies).
+For more information, see [Error handling strategies](devenv-al-error-handling.md#error-handling-strategies).
 
 
 Primarily, anticipate that your code might encounter issues from other peoples code, and adopt a defensive programming approach to identify these issues at the earliest. Respond to failures in a manner that shields users from an overload of technical error messages.
@@ -84,7 +84,7 @@ Here are some examples of how you use this principle in practice:
 
 - Sanitize and validate all input from parameters to your AL methods. In particular, if you need to do type conversions, check that the conversion succeeded.
 - Where possible, return a boolean status code from your AL methods to help callers of your code write robust code.
-- When your code calls external services, consider implementing or using resilience patterns such as Retry, Circuit breaker, and Attempt timeout. For more information, see [Build resilient HTTP apps: Key development patterns](https://learn.microsoft.com/dotnet/core/resilience/http-resilience?tabs=dotnet-cli).
+- When your code calls external services, consider implementing or using resilience patterns such as Retry, Circuit breaker, and Attempt timeout. For more information, see [Build resilient HTTP apps: Key development patterns](/dotnet/core/resilience/http-resilience?tabs=dotnet-cli).
 - When developing web service APIs, the AL runtime will provide resilience protections such as rate limits and timeouts. But you could still consider implementing or using resilience patterns such as Circuit breaker.
 
 
