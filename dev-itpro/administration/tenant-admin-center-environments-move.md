@@ -66,12 +66,16 @@ An environment transfer is initiated by an internal administrator in the [!INCLU
 > [!IMPORTANT]
 > Pending transfers can be cancelled by internal administrators until the transfer starts, i.e. as long as the transfer has not been accepted on the destination tenant or the scheduled time for the transfer is in the future.
 
+## Transfer auditing
+Environment transfers create two distinct operations that can be audited on the Operations page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. The **Transfer Request** operation is created upon initiating a transfer in the source tenant and is only visible in the source tenant. The **Transfer to Microsoft Entra tenant** operation is created once a transfer is accepted in the destination tenant and lives in the tenant where the environment is located; before the transfer is executed this operation can be found in the source tenant, and after the environment has transferred the operation can be found in the destination tenant.
+
 ## Considerations
 
 - Environment data will remain unchanged during the move operation. The exact same environment will be linked to a specified Microsoft Entra tenant.
 - The country, Azure region, and type of the environment (Production or Sandbox) will remain the same, and can't be changed during this operation.
 - The operation will involve a downtime period for the environment being transferred (typically not exceeding 2 hours).
 - The operation does not move subscriptions, domains, and other resources between the Microsoft Entra tenants. Ensure the destination tenant has a paid Business Central user subscription and sufficient environment quota before accepting the transfer.
+- If you rename an environment upon acceptance in the destination tenant to avoid duplicate environment names in your tenant no Rename operation will be created on the Operations page in the Admin Center. Rather, the **Transfer to Microsoft Entra tenant** Operation will include the source and destination environment names.
 
 ## See also
 
