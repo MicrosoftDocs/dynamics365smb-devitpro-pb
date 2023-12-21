@@ -40,7 +40,7 @@ An instance of the [Report](report-data-type.md) data type.
 ## Example  
  The following example shows how to use the Skip method to skip processing the current record if the balance field of the record is zero. Processing of records will continue until a record that has a balance of 0 is encountered.
 
-```  
+```al
 var
     Balance: Decimal;
 begin

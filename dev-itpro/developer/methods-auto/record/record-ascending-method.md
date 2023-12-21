@@ -61,7 +61,6 @@ codeunit 50111 IsAscending
         Message(Text000, IsAscending);
     end;
 }
-
 ```
   
 ## Example 2
@@ -82,7 +81,6 @@ codeunit 50111 IsAscending
         Message(Text000, IsAscending);
     end;
 }
-
 ```  
 
 ## See Also

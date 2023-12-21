@@ -57,8 +57,7 @@ codeunit 10 Stringifier
         else 
             Exit(''); 
     end; 
-} 
-
+}
 ```
 
 In the second code snippet, we overload the ToString procedure for Text, Date and Integer. At this point, it is not possible for a caller to call a ToString method with a different type other than Integer, Date, or Text. This will catch the bug above at compile time. 

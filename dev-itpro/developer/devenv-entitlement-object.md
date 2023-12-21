@@ -204,7 +204,7 @@ entitlement BC_SpecificApplication
 }
 ```
 
-An example of an entitlement where `Type` is `ApplicationScope`. This supports scenarios when it should be possilbe have Microsoft Entra application access to the AppSource app with transact support and no need to buy a license. The `id` property is the scope assigned to the Microsoft Entra application. For more information, see [Using Service-to-Service (S2S) Authentication](../administration/automation-apis-using-s2s-authentication.md).
+An example of an entitlement where `Type` is `ApplicationScope`. This supports scenarios when it should be possible to have Microsoft Entra application access to the AppSource app with transact support and no need to buy a license. The `id` property is the scope assigned to the Microsoft Entra application. For more information, see [Using Service-to-Service (S2S) Authentication](../administration/automation-apis-using-s2s-authentication.md).
 
 ```al
 entitlement BC_ApplicationWithAPIRWScope

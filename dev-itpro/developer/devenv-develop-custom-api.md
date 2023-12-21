@@ -227,9 +227,9 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
 7. Now, repeat the steps 1-6 for **API Car Brand** page.
 8. You can define an **API Car Model** part on the **API Car Brand** page. Make sure to use the SystemId field when defining the SubPageLink. This will generate the **ReferentialConstraints** property in the metadata as below:  
 
-    ```
+    ```xml
     <NavigationProperty Name="carModels" Type="Collection(Microsoft.NAV.carModel)" Partner="carBrand" ContainsTarget="true">
-    <ReferentialConstraint Property="id" ReferencedProperty="brandId"/>
+        <ReferentialConstraint Property="id" ReferencedProperty="brandId"/>
     </NavigationProperty>
     ```
 
@@ -305,10 +305,10 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
 > ```
 >This will change the **NavigationalProperty** in the metadata from a Collection to an object as shown below:
 > 
->```
+>```xml
 ><NavigationProperty Name="carModel" Type="Microsoft.NAV.carModel" ContainsTarget="true">
->            <ReferentialConstraint Property="id" ReferencedProperty="brandId"/>
->        </NavigationProperty>
+>       <ReferentialConstraint Property="id" ReferencedProperty="brandId"/>
+></NavigationProperty>
 >```
 
 ## Using carBrand and carModel APIs
