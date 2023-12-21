@@ -64,7 +64,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 
     }
 }
-
 ```
 
 This next code example extends the **Customer Card** page with a promoted action that triggers opening a specific Power Automate template wizard directly. The `FlowTemplateId` property specifies, which template wizard to open.
@@ -94,7 +93,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 
     }
 }
-
 ```
 
 This third code example likewise extends the **Customer Card** page with a promoted action, this time it triggers opening the Power Automate template gallery wizard for the user to create a new Flow from a selection of templates. The `FlowTemplateCategoryName` property sets the category used to filter the list of Power Automate templates shown in the template gallery.
@@ -124,7 +122,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 
     }
 }
-
 ```
 
 ## See Also  

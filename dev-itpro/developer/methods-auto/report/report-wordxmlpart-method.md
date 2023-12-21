@@ -47,22 +47,15 @@ The report data structure as structured XML that is compatible with Microsoft Wo
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
+## Remarks
+
 [!INCLUDE[WordXmlPart](../../includes/include-wordxmlpart-info.md)]
 
 ## Example  
+
 [!INCLUDE[example-1](../../includes/include-wordxmlpart-example-1.md)]
 
-```AL
-var
-    ReportAsXmlString: Text;
-begin
-    ReportAsXmlString := MyReport.WordXmlPart(Report::MyReport);  
-end;
-```  
-
 [!INCLUDE[example-2](../../includes/include-wordxmlpart-example-2.md)]
-
 
 > [!NOTE]  
 > The first parameter in WordXmlPart is an integer which represents the object ID of the report. To code robustly, never supply the object ID directly in your code. Instead, use the :: operator as illustrated in the example above. With this technique, if the report does not exist, you'll get a compile time error instead of a runtime error. 

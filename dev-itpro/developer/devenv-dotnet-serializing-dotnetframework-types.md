@@ -116,8 +116,7 @@ The following code example demonstrates a custom serialization object that imple
            get { return this.serializedStringField; }  
            set { this.serializedStringField = value; }  
       }  
- }  
-
+ }
 ```  
 
 3.  Build the project.  
@@ -164,7 +163,6 @@ codeunit 50101 SerializationSample
             Message(‘Server data has been serialized to the client object.’);
     end;
 }
-
 ``` 
 
 The line that contains assignment of the **ServerObject** to the **ClientObject** causes the serialization process to run. When completed, the message **Server data has been serialized to the client object** appears, which verifies that the server object has been transferred to the client object.  
