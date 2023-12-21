@@ -1,8 +1,8 @@
 ---
-title: "Actionable errors"
+title: Actionable errors
 description: Learn how to write AL code that returns error dialogs where users might unblock themselves.
 ms.custom: bap-template
-ms.date: 11/21/2023
+ms.date: 12/21/2023
 ms.reviewer: na
 ms.topic: conceptual
 author: samirdal
@@ -26,13 +26,13 @@ For advice on how to design error dialogs that users understand, see [User exper
 
 ### Guidance for button labels for Fix-it actions
 
-To achieve consistency in the user experience of Fix-it actions, please consider following these guidelines for button labels:
+To achieve consistency in the user experience of Fix-it actions, consider following these guidelines for button labels:
 
 [!INCLUDE [fix-it-button-guidance](includes/include-fix-it-button-guidance.md)]
 
-
 ### Example (error dialog with a Fix-it action)
-The following AL code illustrates how to setup an error dialog with a Fix-it action.
+
+The following AL code illustrates how to set up an error dialog with a Fix-it action.
 
 ```AL
 var 
@@ -57,14 +57,14 @@ begin
 end
 ```
 
-If the user experience the error, they will see the following error dialog
+If the user experience the error they see the following error dialog
 
 :::image type="content" source="media/error-dialog-fixit.png" alt-text="Error dialog with fix-it action":::
 
 
 ### Example (validation error with a Fix-it action)
 
-The following AL code illustrates how to setup field validation with a Fix-it action. 
+The following AL code illustrates how to set up field validation with a Fix-it action. 
 
 <!-- the code example is copied from SalesLine.Table.al and adjusted to docs -->
 ```AL
@@ -105,7 +105,7 @@ field(17; "Qty. to Invoice"; Decimal)
 ...
 ```
 
-If the user experience that the field cannot be validated, they will see the following dialog
+If the user experience that the field can't be validated, they see the following dialog
 
 :::image type="content" source="media/validation-error-fixit.png" alt-text="Validation error with fix-it action":::
 
@@ -116,12 +116,12 @@ If the user experience that the field cannot be validated, they will see the fol
 
 ### Guidance for button labels for Show-it actions
 
-To achieve consistency in the user experience of Show-it actions, please consider following these guidelines for button labels:
+To achieve consistency in the user experience of Show-it actions, consider following these guidelines for button labels:
 
 [!INCLUDE [show-it-button-guidance](includes/include-show-it-button-guidance.md)]
 
 ### Example (error dialog with a Show-it action)
-The following AL code illustrates how to setup an error dialog with a Show-it action.
+The following AL code illustrates how to set up an error dialog with a Show-it action.
 
 <!-- the code example is copied from GetSourceDocuments.Report.al and adjusted to docs -->
 ```AL
@@ -155,13 +155,13 @@ begin
 
 ```
 
-If the user experience the error, they will see the following error dialog
+If the user experience the error they see the following error dialog
 
 :::image type="content" source="media/error-dialog-showit.png" alt-text="Error dialog with show-it action":::
 
 ### Example (validation error with one Show-it action)
 
-The following AL code illustrates how to setup a validation error dialog with a Show-it action.
+The following AL code illustrates how to set up a validation error dialog with a Show-it action.
 
 ```AL
 ... 
@@ -199,7 +199,7 @@ field(59; "Gen. Prod. Posting Group"; Code[20])
 ```
 
 
-If the user experience that the field cannot be validated, they will see the following dialog
+If the user experience that the field can't be validated, they see the following dialog
 
 :::image type="content" source="media/validation-error-showit.png" alt-text="Validation error with show-it action":::
 
@@ -209,7 +209,7 @@ Error messages can have up to two recommended actions. In this section, we show 
 
 ### Example (error dialog with two actions)
 
-The following AL code illustrates how to setup an error dialog with two actions.
+The following AL code illustrates how to set up an error dialog with two actions.
 
 ```AL
 var
@@ -243,13 +243,13 @@ In this error dialog case, the recommended Fix-it action sets the value to blank
 
 Notice the error dialog has two actions. In error cases both buttons are styled equally as secondary buttons, to allow users to consider the most suitable way to get unblocked for their case. 
 
-If the user experience the error, they will see the following error dialog
+If the user experience the error they see the following error dialog
 
 :::image type="content" source="media/error-dialog-multiple.png" alt-text="Error dialog with multiple actions":::
 
 ### Example (validation error with two promoted actions)
 
-The following AL code illustrates how to setup field validation with two actions.
+The following AL code illustrates how to set up field validation with two actions.
 
 
 ```AL
@@ -287,14 +287,15 @@ Here the Show-it action shows the related Comments table, and the Fix-it action 
 
 Users can also get unblocked by refreshing the page or copying the error details for sharing and troubleshooting.
 
-If the user experience that the field cannot be validated, they will see the following dialog
+If the user experience that the field can't be validated, they see the following dialog
 
 :::image type="content" source="media/validation-error-multiple.png" alt-text="Validation error with multiple  actions":::
 
 ## Error messages with no actions (final resort)
+
 When there isn’t any known solution to recommend, the error dialog has one primary OK button. Users can copy and share the full error details needed for troubleshooting and support.
 
-The following AL code illustrates how to setup an error dialog with no actions (this is also the standard behaviour of the Error method)
+The following AL code illustrates how to set up an error dialog with no actions (which is also the standard behavior of the `Error` method)
 
 ```AL
 var
@@ -309,7 +310,7 @@ begin
 end;
 ```
 
-If the user experience the error, they will see the following error dialog
+If the user experience the error they see the following error dialog
 
 :::image type="content" source="media/error-dialog-nosolution.png" alt-text="Error dialog with no solution":::
 

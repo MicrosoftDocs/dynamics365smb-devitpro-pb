@@ -1,5 +1,5 @@
 ---
-title:  Error Method Trace Telemetry
+title:  Error method trace telemetry
 description: Learn about the Error method telemetry in Business Central  
 author: jswymer
 ms.service: dynamics365-business-central
@@ -8,10 +8,11 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 03/28/2023
+ms.date: 12/21/2023
 ms.author: jswymer
 ---
-# Analyzing Error Method Telemetry
+
+# Analyzing error method telemetry
 
 [!INCLUDE[2022_releasewave1.md](../includes/2022_releasewave1.md)]
 
@@ -19,11 +20,11 @@ ms.author: jswymer
 
 When a user gets an error dialog while working in [!INCLUDE[prod_shoirt](../includes/prod_short.md)], a telemetry signal is emitted, which can be logged in an [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] resource. 
 
-This telemetry data let's you identify and analyze calls to the Error method from AL code. You can also set up alerts in [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] to get notified if many users experience errors.
+This telemetry data let's you identify and analyze calls to the `Error` method from AL code. You can also set up alerts in [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] to get notified if many users experience errors.
 
 ## Error dialog displayed
 
-Occurs when the Error method is called and displays a dialog to the user.
+Occurs when the `Error` method is called and displays a dialog to the user.
 
 ### General dimensions
 
@@ -105,11 +106,12 @@ traces
 , failureReason = customDimensions.failureReason
 ```
 
-
 ## Understanding the error dialog
+
 To effectively help users mitigate any issues they might encounter, you should learn more about the different parts of the error dialog, including how to interpret the AL stack trace. For more information, see [Understanding the error dialog](../developer/devenv-error-dialog.md).
 
 ## See also
+
 [Dialog.Error Method](../developer/methods-auto/dialog/dialog-error-errorinfo-method.md) 
 [Dialog.Error Method](../developer/methods-auto/dialog/dialog-error-string-joker-method.md)  
 [Understanding the error dialog](../developer/devenv-error-dialog.md)   
