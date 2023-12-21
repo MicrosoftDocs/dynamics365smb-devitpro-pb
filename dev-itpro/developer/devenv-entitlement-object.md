@@ -51,7 +51,7 @@ entitlement "Delegated Admin agent - Partner"
 
     Id = '00000000-0000-0000-0000-000000000007';
 
-    ObjectEntitlement = MyApp_PartnerFullAccessPermissionSet;
+    ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
 
 }
 
@@ -65,7 +65,7 @@ entitlement "Delegated Helpdesk agent - Partner"
 
     Id = '00000000-0000-0000-0000-000000000008';
 
-    ObjectEntitlement = MyApp_PartnerFullAccessPermissionSet;
+    ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
 
 }
 
@@ -79,7 +79,7 @@ entitlement "Dynamics 365 Admin - Partner"
 
     Id = '00000000-0000-0000-0000-000000000009';
 
-    ObjectEntitlement = MyApp_PartnerFullAccessPermissionSet;
+    ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
 
 }
 ```
