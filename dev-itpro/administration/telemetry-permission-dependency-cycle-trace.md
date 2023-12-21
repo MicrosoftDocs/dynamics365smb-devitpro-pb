@@ -1,23 +1,22 @@
 ---
-title: Analyzing Permission Dependency Cycle Trace Telemetry
+title: Analyzing permission dependency cycle trace telemetry
 description: Learn about the permission dependency cycle trace  telemetry in Business Central  
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keywords: administration, dependency cycle, permission set, telemetry
-ms.date: 12/21/2022
+ms.date: 12/20/2023
 ms.author: jswymer
-
 ---
-# Analyzing Permission Dependency Cycle Trace Telemetry
+# Analyzing permission dependency cycle trace telemetry
 
 [!INCLUDE[2022_releasewave1.md](../includes/2022_releasewave1.md)]
 
-A permission dependency cycle occurs when a permission set depends on itself, which can happen when you build permissions sets that include other permission sets. For example, suppose you create a permission set Y that includes permission set X. If you then try modify permission set X to include permission set Y, you'll create a dependency cycle. When you create a permission dependency cycle in the Business Central client, you'll get an error similar to the following message:
+A permission dependency cycle occurs when a permission set depends on itself, which can happen when you build permissions sets that include other permission sets. For example, suppose you create a permission set Y that includes permission set X. If you then try modify permission set X to include permission set Y, you create a dependency cycle. When you create a permission dependency cycle in the Business Central client, you get an error similar to the following message:
 
 **The permission set [XX] has a circular reference on path [XX]->[YY]->[XX].**
 
-This telemetry data let's you identify and analyze permission problems that users may experience in Business Central.
+This telemetry data let's you identify and analyze permission problems that users might experience in Business Central.
 
 ## Dependency cycle discovered in permission sets
 
@@ -54,7 +53,7 @@ Occurs when there's permission set dependency cycle in the application.
 
 ## See also
 
-[ Composing Permission Sets](../developer/devenv-permissionset-composing.md)  
+[Composing Permission Sets](../developer/devenv-permissionset-composing.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
