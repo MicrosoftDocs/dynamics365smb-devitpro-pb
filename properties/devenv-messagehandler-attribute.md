@@ -21,7 +21,7 @@ AL test methods on test codeunits. A test method is a method that has the [Test 
   
 ```AL
 [MessageHandler]
-procedure MessageHandler(Message : Text[1024]);
+procedure MessageHandler(Message : Text[1024])
 ```    
 
 ## Remarks

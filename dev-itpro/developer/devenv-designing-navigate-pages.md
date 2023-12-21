@@ -196,7 +196,7 @@ This section describes the basic tasks for creating an assisted setup. It gives 
     var
         ToDoRec: Record "To-do";
 
-    local procedure StoreRecordVar();
+    local procedure StoreRecordVar()
     begin
         ToDoRec.TransferFields(Rec, true);
         ToDoRec.Insert();
@@ -263,7 +263,7 @@ begin
     LoadTopBanners();
 end;
 
-local procedure LoadTopBanners();
+local procedure LoadTopBanners()
 begin
     if MediaRepositoryStandard.Get('AssistedSetup-NoText-400px.png', Format(CurrentClientType())) and
         MediaRepositoryDone.Get('AssistedSetupDone-NoText-400px.png', Format(CurrentClientType()))
@@ -615,7 +615,7 @@ page 50111 ToDoAssistedSetup
         FinishActionEnabled := true
     end;
 
-    local procedure ResetControls();
+    local procedure ResetControls()
     begin
         FinishEnable := false;
         BackEnable := true;
@@ -626,13 +626,13 @@ page 50111 ToDoAssistedSetup
 
     end;
 
-    local procedure StoreRecordVar();
+    local procedure StoreRecordVar()
     begin
         ToDoRec.TransferFields(Rec, true);
         ToDoRec.Insert();
     end;
 
-    local procedure LoadTopBanners();
+    local procedure LoadTopBanners()
     begin
         if MediaRepositoryStandard.Get('AssistedSetup-NoText-400px.png', Format(CurrentClientType())) and
             MediaRepositoryDone.Get('AssistedSetupDone-NoText-400px.png', Format(CurrentClientType()))

@@ -76,7 +76,7 @@ This example creates the codeunit **50100 MyPublishers** to publish an integrati
 codeunit 50100 MyPublishers
 {
     [IntegrationEvent(false, false)]
-    procedure OnAddressLineChanged(line : Text[100]);
+    procedure OnAddressLineChanged(line : Text[100])
     begin  
     end;
 }

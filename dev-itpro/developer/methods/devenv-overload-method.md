@@ -31,22 +31,22 @@ In the first code snippet, a **ToString** procedure is implemented. This takes a
 ```AL
 codeunit 10 Stringifier 
 { 
-    local procedure TextToString(value : Text) : Text; 
+    local procedure TextToString(value : Text) : Text
     begin 
         Exit(value); 
     end; 
  
-    local procedure DateToString(value : Date) : Text; 
+    local procedure DateToString(value : Date) : Text
     begin 
         Exit(Format(value)); 
     end; 
  
-    local procedure IntegerToString(value : Integer) : Text; 
+    local procedure IntegerToString(value : Integer) : Text
     begin 
         Exit(Format(value)); 
     end; 
  
-    procedure ToString(value: Variant) : Text; 
+    procedure ToString(value: Variant) : Text
     begin 
         if value.IsInteger then 
             Exit(IntegerToString(value)) 
@@ -66,17 +66,17 @@ In the second code snippet, we overload the ToString procedure for Text, Date an
 ```AL
 codeunit 10 StringifierWithOverloads 
 { 
-    procedure ToString(value : Text) : Text; 
+    procedure ToString(value : Text) : Text
     begin 
         Exit(value); 
     end; 
  
-    procedure ToString(value : Date) : Text; 
+    procedure ToString(value : Date) : Text
     begin 
         Exit(Format(value)); 
     end; 
  
-    procedure ToString(value : Integer) : Text; 
+    procedure ToString(value : Integer) : Text
     begin 
         Exit(Format(value)); 
     end; 

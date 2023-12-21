@@ -49,13 +49,13 @@ A method can be a *local* method or *global* method. A local method can only be 
 To declare a local method, start the declaration with `local`: 
 
 ```AL
-local procedure Mymethod();
+local procedure Mymethod()
 ```
 
 To declare a global method, *omit* `local`:
 
 ```AL
- procedure Mymethod();
+ procedure Mymethod()
 ```
 
 ### Parameters (optional)

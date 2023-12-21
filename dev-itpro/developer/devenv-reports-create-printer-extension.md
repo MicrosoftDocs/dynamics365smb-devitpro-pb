@@ -44,7 +44,7 @@ This section describes how to use the OnAfterSetupPrinters event to set up a pri
     codeunit 50100 SetupPrinter
     {
         [EventSubscriber(ObjectType::Codeunit, Codeunit::"ReportManagement", 'OnAfterSetupPrinters', '', true, true)]
-        procedure OnSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
+        procedure OnSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject])
         var
             
         begin
@@ -63,7 +63,7 @@ This section describes how to use the OnAfterSetupPrinters event to set up a pri
     codeunit 50100 SetupPrinter
     {
         [EventSubscriber(ObjectType::Codeunit, Codeunit::"ReportManagement", 'OnAfterSetupPrinters', '', true, true)]
-        procedure OnSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
+        procedure OnSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject])
         var
             Payload: JsonObject;
             PaperTrays: JsonArray;
@@ -134,7 +134,7 @@ The following example illustrates how to create a payload by using the ReadFrom 
 codeunit 50101 SetupPrinter2
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"ReportManagement", 'OnAfterSetupPrinters', '', true, true)]
-    procedure SetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
+    procedure SetupPrinters(var Printers: Dictionary of [Text[250], JsonObject])
     var
         Payload: JsonObject;
     begin
@@ -274,7 +274,7 @@ This section describes how to subscribe to the OnAfterDocumentPrintReady event. 
     codeunit 50102 HandlePrintAction
     {
         [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterDocumentPrintReady', '', true, true)]
-        procedure OnDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean);
+        procedure OnDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean)
         var
             
         begin
@@ -293,7 +293,7 @@ This section describes how to subscribe to the OnAfterDocumentPrintReady event. 
     codeunit 50102 SendReportByEmail
     {
         [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterDocumentPrintReady', '', true, true)]
-        procedure OnDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean);
+        procedure OnDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean)
         var
             SMTPMailSetup: Record "SMTP Mail Setup";
             SMTPMail: Codeunit "SMTP Mail";
@@ -339,7 +339,7 @@ This section describes how to subscribe to the OnAfterDocumentPrintReady event. 
     codeunit 50101 SendReportByEmail
     {
         [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterDocumentPrintReady', '', true, true)]
-        procedure OnDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean);
+        procedure OnDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean)
         var
             SMTPMail: Codeunit "SMTP Mail";
             PrinterNameToken: JsonToken;

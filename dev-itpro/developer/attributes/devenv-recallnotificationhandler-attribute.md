@@ -33,7 +33,7 @@ Specifies that the method is a RecallNotificationHandler method, which handles R
 > **Version**: _Available or changed with runtime version 1.0._
 ```AL
 [RecallNotificationHandler([HandlerIsOptional: Boolean])]
-procedure RecallNotificationHandler(var TheNotification: Notification) : Boolean;
+procedure RecallNotificationHandler(var TheNotification: Notification) : Boolean
 ```
 > [!IMPORTANT]
 > The above signature requires the RecallNotificationHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).

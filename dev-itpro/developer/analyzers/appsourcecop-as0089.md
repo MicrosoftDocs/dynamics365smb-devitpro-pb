@@ -49,14 +49,14 @@ Version 1.0 of the extension:
 ```AL
 interface FOO_IExampleInterface
 {
-    procedure ExampleProcedure() : Text;
+    procedure ExampleProcedure() : Text
 }
 ```
 In version 2.0 of the extension: 
 ```AL
 interface FOO_IMyInterface
 {
-    procedure ExampleProcedure() : Text;
+    procedure ExampleProcedure() : Text
 }
 ```
 The page customization `FOO_IExampleInterface` has been renamed, this will trigger rule AS0089.
@@ -66,13 +66,13 @@ Version 2.0 of the extension:
 ```AL
 interface FOO_IMyInterface
 {
-    procedure ExampleProcedure(): Text;
+    procedure ExampleProcedure(): Text
     ObsoleteState = Pending;
     ObsoleteReason = 'Use FOO_IExampleInterface instead.';
 }
 interface FOO_IExampleInterface
 {
-    procedure SomeProcedure(): Text;
+    procedure SomeProcedure(): Text
 }
 ```
 In version 3.0 of the extension, `FOO_IMyInterface` has been deleted. This is okay, because `FOO_IMyInterface` previously had been marked with `ObsoleteState = Pending` informing developers to use "FOO_IExampleInterface" instead.

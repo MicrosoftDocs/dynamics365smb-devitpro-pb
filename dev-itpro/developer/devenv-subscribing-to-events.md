@@ -78,7 +78,7 @@ codeunit 50101 MySubscribers
     EventSubscriberInstance = StaticAutomatic;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 'OnAddressLineChanged', '', true, true)]
-    procedure CheckAddressLineOnAddressLineChanged(line : Text[100]);
+    procedure CheckAddressLineOnAddressLineChanged(line : Text[100])
     begin
         if (StrPos(line, '+') > 0) then begin
             Message('Can''t use a plus sign (+) in the address [' + line + ']');

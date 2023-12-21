@@ -76,7 +76,7 @@ You use handler methods to automate tests by handling instances when user intera
 ```AL
 [Test]
 [HandlerFunctions('SendNotificationHandler,MessageHandler')]
-procedure MyTestFunction();
+procedure MyTestFunction()
 begin
     ...
 end

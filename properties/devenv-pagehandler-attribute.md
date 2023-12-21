@@ -21,14 +21,14 @@ AL methods on test codeunits. A test codeunit is a codeunit that has the [SubTyp
   
 ```AL
 [PageHandler]
-procedure PageHandler(var MappingPage: TestPage 1214);
+procedure PageHandler(var MappingPage: TestPage 1214)
 ```    
 
 ## Remarks
 
 The **PageHandler** method is called when a non-modal page is invoked in the code. 
 
-The **PageHandler** attribute requires that the method where it is applied has the signature `procedure PageHandler(var MappingPage: TestPage 1214);`. The parameter variable, *TestPage* is the specific page in this case.
+The **PageHandler** attribute requires that the method where it is applied has the signature `procedure PageHandler(var MappingPage: TestPage 1214)`. The parameter variable, *TestPage* is the specific page in this case.
 
 ## See Also
 

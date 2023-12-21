@@ -29,7 +29,7 @@ You subscribe to the OnAfterSetupPrinters event to set up different printers tha
 
 ```AL
 [IntegrationEvent(false, false)]
-local procedure OnAfterSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
+local procedure OnAfterSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject])
 ```
 
 The *Printers* parameter is a [Dictionary of [Text, Text]](methods-auto/dictionary/dictionary-data-type.md) type that includes a collection of key-value pairs that define different printer setups. The key specifies a name for the printer. The value is a JSON object that specifies settings supported by the printer. The settings include information like paper size, paper trays, default copies, and more. The JSON object is referred to as the *payload*.
@@ -48,7 +48,7 @@ The OnAfterDocumentPrintReady event is also a global integration event that is p
 
 ```AL
 IntegrationEvent(false, false)]
-local procedure OnAfterDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean);
+local procedure OnAfterDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean)
 ```
 
 The event is raised when the use selects the **Print** action on the request page of a report. Two parameters of interest are *DocumentStream* and *ObjectPayload*. *DocumentStream* is an Upstream object that contains the report data to be printed. The *ObjectPayload* is a JsonObject type object that combines the printer payload and report metadata. The report metadata includes information like the company name, MIME type, views, and more. This combination is referred to as the *report payload*. 

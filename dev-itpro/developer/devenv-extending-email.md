@@ -192,14 +192,14 @@ The first step is to implement the `Email View Policy` interface.
 interface "Email View Policy"​
 
 {​
-    procedure GetSentEmails(var SentEmails: Record "Sent Email" temporary);​
-    procedure GetOutboxEmails(var OutboxEmails: Record "Email Outbox" temporary);​
-    procedure GetSentEmails(SourceTableId: Integer; var SentEmails: Record "Sent Email" temporary);​
-    procedure GetOutboxEmails(SourceTableId: Integer; var OutboxEmails: Record "Email Outbox" temporary);​
-    procedure GetSentEmails(SourceTableId: Integer; SourceSystemId: Guid; var SentEmails: Record "Sent Email" temporary);​
-    procedure GetOutboxEmails(SourceTableId: Integer; SourceSystemId: Guid; var OutboxEmails: Record "Email Outbox" temporary);​
-    procedure HasAccess(SentEmail: Record "Sent Email"): Boolean;​
-    procedure HasAccess(OutboxEmail: Record "Email Outbox"): Boolean;​
+    procedure GetSentEmails(var SentEmails: Record "Sent Email" temporary)
+    procedure GetOutboxEmails(var OutboxEmails: Record "Email Outbox" temporary)
+    procedure GetSentEmails(SourceTableId: Integer; var SentEmails: Record "Sent Email" temporary)
+    procedure GetOutboxEmails(SourceTableId: Integer; var OutboxEmails: Record "Email Outbox" temporary)
+    procedure GetSentEmails(SourceTableId: Integer; SourceSystemId: Guid; var SentEmails: Record "Sent Email" temporary)
+    procedure GetOutboxEmails(SourceTableId: Integer; SourceSystemId: Guid; var OutboxEmails: Record "Email Outbox" temporary)
+    procedure HasAccess(SentEmail: Record "Sent Email"): Boolean
+    procedure HasAccess(OutboxEmail: Record "Email Outbox"): Boolean
 }
 
 ```
@@ -245,13 +245,13 @@ The first step is to implement the `Email Connector` interface.
 interface "Email Connector"​
 
 {​
-    procedure Send(EmailMessage: Codeunit "Email Message"; AccountId: Guid);​
-    procedure GetAccounts(var Accounts: Record "Email Account");​
-    procedure ShowAccountInformation(AccountId: Guid);​
+    procedure Send(EmailMessage: Codeunit "Email Message"; AccountId: Guid)
+    procedure GetAccounts(var Accounts: Record "Email Account")
+    procedure ShowAccountInformation(AccountId: Guid)
     procedure RegisterAccount(var EmailAccount: Record "Email Account"): Boolean​
     procedure DeleteAccount(AccountId: Guid): Boolean​
-    procedure GetLogoAsBase64(): Text;​
-    procedure GetDescription(): Text[250];​
+    procedure GetLogoAsBase64(): Text
+    procedure GetDescription(): Text[250]
 }
 
 ```

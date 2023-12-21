@@ -54,7 +54,7 @@ Clear(JsonToken)
 This example shows how to read JSON data from a stream into a JsonToken variable.
 
 ```
-local procedure ReadJson(source : InStream) result : JsonToken;
+local procedure ReadJson(source : InStream) result : JsonToken
 begin
     result.ReadFrom(source);    
 end;

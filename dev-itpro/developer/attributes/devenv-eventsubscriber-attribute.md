@@ -83,7 +83,7 @@ This example publishes an integration type event by using the **OnAddressLineCha
 codeunit 50105 MyEventPublisher
 {
     [IntegrationEvent(false, false)]
-    procedure OnAddressLineChanged(line : Text[100]);
+    procedure OnAddressLineChanged(line : Text[100])
     begin
     end;
 }

@@ -48,7 +48,7 @@ interface "IAddressProvider"
 codeunit 50200 CompanyAddressProvider implements IAddressProvider
 {
 
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
     var
         ExampleAddressLbl: Label 'Company address \ Denmark 2800';
         
@@ -60,7 +60,7 @@ codeunit 50200 CompanyAddressProvider implements IAddressProvider
 codeunit 50201 PrivateAddressProvider implements IAddressProvider
 {
 
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
     var
         ExampleAddressLbl: Label 'My Home address \ Denmark 2800';
 
