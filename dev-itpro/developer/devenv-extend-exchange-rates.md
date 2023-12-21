@@ -26,7 +26,7 @@ This section describes the objects that the implementation used before 2023 rele
 
 ### Before 2023 release wave 2
 
-* **Report 595 Adjust Exchange Rates** runs as batch job that does all processing, calculations, and posting. This report also lets you print details about adjustments for selected countries, such as Austria, Germany, and Switzerland. There isn't a preview option, so you can only check the posted entries after you run the report. The report creates the following entries:
+* **Report 595 Adjust Exchange Rates** runs as batch job that does all processing, calculations, and posting. This report also lets you print details about adjustments for selected countries/regions, such as Austria, Germany, and Switzerland. There isn't a preview option, so you can only check the posted entries after you run the report. The report creates the following entries:
 
   * G/L entries
   * Detailed customer and vendor ledger entries for exchange rate gains and losses

@@ -50,7 +50,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Get started as a partner (reselling [!INCLUDE [prod_short](../includes/prod_short.md)]): [aka.ms/BCReseller](https://aka.ms/BCReseller)
 - Essential partner resources (marketing material): [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)  
 - Browse all [!INCLUDE [prod_short](../includes/prod_short.md)] learning courses: [aka.ms/BCLearn](https://aka.ms/BCLearn)
-- Supported countries, regions, and languages: [aka.ms/BCCountries](https://aka.ms/BCCountries)
+- Supported countries/regions, regions, and languages: [aka.ms/BCCountries](https://aka.ms/BCCountries)
 - Join the conversation on Yammer for partners: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))
 
 - Online or in-person training and coaching for [!INCLUDE [prod_short](../includes/prod_short.md)]. Contact an ISV Development Center: [aka.ms/ISVDevCenter](https://aka.ms/ISVDevCenter)

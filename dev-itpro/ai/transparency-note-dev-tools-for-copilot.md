@@ -134,7 +134,7 @@ We encourage partners to leverage the toolkit in their innovative solutions or a
    - The use or misuse of an AI feature that determines eligibility for education may infringe upon human rights.
    - The use or misuse of an AI feature that ranks individuals’ access to social housing may have consequential impact to their life opportunities.
 
-   Sensitive use cases require increased attention throughout their development lifecycle and may carry additional effort to satisfy any of your organization’s policies or regulations in the countries, regions or industries in which they will be deployed.
+   Sensitive use cases require increased attention throughout their development lifecycle and may carry additional effort to satisfy any of your organization’s policies or regulations in the countries, regions, or industries in which they will be deployed.
 
 - Seek appropriate legal and professional advice
 
