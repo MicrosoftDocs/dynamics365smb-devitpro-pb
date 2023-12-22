@@ -33,7 +33,6 @@ Represents a purchase receipt line in [!INCLUDE[prod_short](../../../includes/pr
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[purchaseReceipt](dynamics_purchasereceipt.md)|purchaseReceipt |Gets the purchasereceipt of the purchaseReceiptLine.|
-|[account](dynamics_account.md)|account |Gets the account of the purchaseReceiptLine.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the purchaseReceiptLine.|
 
 ## Properties
