@@ -76,7 +76,7 @@ Validation errors should answer the following questions:
 
 Use the following guidelines to remove friction for the users and positively affect the user experience, even when an error occurs. 
 
-### Error message titles
+### <a name="error-message-titles"></a> Error message titles
 
 The title of an error dialog is the first thing the user sees. Use the title to describe what’s wrong and enable the user to quickly scan the meaning.
 
