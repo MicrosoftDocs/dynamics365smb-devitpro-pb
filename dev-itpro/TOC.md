@@ -628,6 +628,11 @@
 #### [Actionable errors](developer/devenv-actionable-errors.md)
 #### [Collecting errors](developer/devenv-error-collection.md)
 #### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md)
+#### Error telemetry
+##### [Error message quality telemetry](administration/telemetry-error-message-voting-trace.md)
+##### [Error method telemetry](administration/telemetry-error-method-trace.md)
+##### [Feature (error) telemetry](administration/telemetry-feature-telemetry.md)
+##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
 #### AL Language Reference (errors)
 ##### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
 ##### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md)
