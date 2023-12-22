@@ -86,7 +86,7 @@ The title of an error dialog is the first thing the user sees. Use the title to 
 - Not all validation errors need a title.  
 - Keep in mind the relation between the title and the recommended actions. Actions should always respond to the title if there's one. 
 
-### Error message body content
+### <a name="error-message-body"></a> Error message body content
 
 In the body of the error dialog, use positive cases (telling what the user can do) where possible. Sometimes you need to tell what you can’t do, but for validation errors space is limited, so focus on the solution.
 
