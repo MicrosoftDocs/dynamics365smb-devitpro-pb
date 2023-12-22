@@ -57,7 +57,6 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "dateTimeOffset",
   "expirationDateTime": "dateTimeOffset"
 }
-
 ```
 
 ## See also

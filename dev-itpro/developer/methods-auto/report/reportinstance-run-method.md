@@ -41,7 +41,7 @@ Use the `Run` method or the `RunModal` method if you know at design time the exa
   
 ## Example  
 
-```AL
+```al
 var
     CustomerRec: Record Customer;
     SalesReport: Report "Salesperson - Sales Statistics";
