@@ -50,7 +50,7 @@ If you call `ErrorInfo.AddAction` and codeunit exists with the provided *Codeuni
 
 If possible, call `ErrorInfo.AddAction` using Codeunit::CodeunitName and not the literal integer for the object ID of the codeunit. In case of a renumbering of the codeunit or if the codeunit was removed, then you will get a compile-time error and not a runtime error.
 
-To see a code example with an error dialog with a Fix-it action, see [Error messages with Show-it actions](../../devenv-actionable-errors#show-it-actions).
+To see a code example with an error dialog with a Fix-it action, see [Error messages with Show-it actions](../../devenv-actionable-errors.md#show-it-actions).
 
 ## See Also
 
