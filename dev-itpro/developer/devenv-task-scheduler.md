@@ -23,8 +23,8 @@ The task scheduler enables you to control when certain operations or processes (
 Here's a few scenarios where you might want to use a scheduled task
 
 - From AL, you can schedule code to run either using the task scheduler or by enqueuing a job queue entry. If you want users to be able to change the scheduling, use the job queue.
-- Sometimes in AL code, you want to change company and run code there. Maybe instead you can could schedule a task to run the code in the other company?
-- If something is not urgent/time critical (e.g. can run at a lower priority), consider running it with a task.
+- Sometimes in AL code, you want to change company and run code there. Maybe instead you can schedule a task to run the code in the other company?
+- If something isn't urgent/time critical (for example, can run at a lower priority), consider running it with a task.
 
 
 ## Create and manage scheduled tasks in AL
@@ -87,7 +87,7 @@ The following diagram illustrates the flow in detail.
 
 ### <a name="retrycycle"></a>Retry intervals
 
-When a task's main codeunit or failure codeunit enters the retry flow, it is rerun at approximately the following intervals as long as the error persists. The number of retires and the intervals are different for [!INCLUDE[prod_short](includes/prod_short.md)] online and on-premises.
+When a task's main codeunit or failure codeunit enters the retry flow, it's rerun at approximately the following intervals as long as the error persists. The number of retires and the intervals are different for [!INCLUDE[prod_short](includes/prod_short.md)] online and on-premises.
 
 **Online**
 
