@@ -281,7 +281,7 @@ To enable edit mode on Power Pages subgrids, complete the following steps:
    - *Subgrid* for the **Type** field
    - *Subgrid_new_1* for the **Subgrid Name** field
 
-1. Sselect the **+ Edit** button in **Grid configuration** section.
+1. Select the **+ Edit** button in **Grid configuration** section.
 1. Select the appropriate field values as follows:
 
    - *Basic Form* for the **Target Type** field
