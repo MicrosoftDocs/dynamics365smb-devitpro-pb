@@ -75,7 +75,7 @@ The following methods are available on instances of the Text data type.
 The **Text** data type is a value type, such that every time you use a method on it, you create a new string object in memory. This requires a new allocation of space. In situations where you need to perform repeated modifications to a string, the overhead associated with creating a **Text** data type can be costly.  
 
 > [!NOTE]  
-> The **Text** data type in AL uses the same encoding as .NET strings. For more information, see [String class (.NET)](/dotnet/api/system.string?view=net-8.0).
+> The **Text** data type in AL uses the same encoding as .NET strings. For more information, see [String class (.NET)](/dotnet/api/system.string?view=net-8.0&preserve-view=true).
 
 The [TextBuilder Data Type](../textbuilder/textbuilder-data-type.md) is a reference type, which holds a pointer elsewhere in memory. For performance reasons, we recommend you to use it when you want to modify a string without creating a new object. For example, using [TextBuilder Data Type](../textbuilder/textbuilder-data-type.md)  can boost performance when concatenating many strings together in a loop.
 

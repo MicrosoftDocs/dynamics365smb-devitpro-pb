@@ -77,7 +77,7 @@ A UTF-16 encoded file will typically be larger than the same file encoded with U
 UTF-16 is incompatible with ASCII so that it will not understand files written in ASCII format.  
 
 > [!NOTE]  
-> The [Text data type](methods-auto/text/text-data-type.md) in AL uses UTF-16 encoding, the same encoding as .NET strings. For more information, see [String class (.NET)](/dotnet/api/system.string?view=net-8.0).
+> The [Text data type](methods-auto/text/text-data-type.md) in AL uses UTF-16 encoding, the same encoding as .NET strings. For more information, see [String class (.NET)](/dotnet/api/system.string?view=net-8.0&preserve-view=true).
 
   
 ### Windows format
