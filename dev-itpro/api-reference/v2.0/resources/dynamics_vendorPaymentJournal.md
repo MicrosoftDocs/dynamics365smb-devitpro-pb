@@ -35,7 +35,6 @@ Represents a vendor payment journal in [!INCLUDE[prod_short](../../../includes/p
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[account](dynamics_account.md)|account |Gets the account of the vendorPaymentJournal.|
 |[vendorPayments](dynamics_vendorpayment.md)|vendorPayments |Gets the vendorpayments of the vendorPaymentJournal.|
 
 ## Properties
