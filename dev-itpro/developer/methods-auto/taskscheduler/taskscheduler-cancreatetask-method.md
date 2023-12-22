@@ -38,7 +38,7 @@ Ok :=   TaskScheduler.CanCreateTask()
 
 The `TaskScheduler.CanCreateTask` checks if tasks are allowed to be created by the user/app of the current session. 
 
-For more information about the task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
+For more information about the task scheduler, see [Using the Task Scheduler](../../devenv-task-scheduler.md). 
 
 ## Example
 
@@ -49,7 +49,7 @@ procedure CreateTask()
 begin
     if not CanCreateTask() then 
     begin
-        // handle error
+        // handle the error
     end;
 
     // code can now assume that tasks can be created
@@ -61,6 +61,6 @@ end;
 ## See Also
 
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
-[Task Scheduler](../../devenv-task-scheduler.md)   
+[Using the Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

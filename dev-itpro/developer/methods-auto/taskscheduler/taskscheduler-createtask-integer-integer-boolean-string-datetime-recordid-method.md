@@ -68,15 +68,13 @@ If one or both of the codeunits provided to `TaskScheduler.CreateTask` don't exi
 
 The `TaskScheduler.CreateTask` method also has a version that allows you to set a timeout parameter. For more information, see [CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration)](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-duration-method.md)
 
-For more information about the task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
+For more information about the task scheduler, see [Using the Task Scheduler](../../devenv-task-scheduler.md). 
 
 ## Example (create a task to run now)
 
 The following example schedules a task to run the **MyCodeunit** codeunit right now (when resources are available) in the current company and use the codeunit **MyErrorhandlerCodeunit** as the failure codeunit. 
 
 ```AL
-var
-    JobQueueEntry: Record "Job Queue Entry";
 begin
     TaskScheduler.CreateTask(CodeUnit::MyCodeunit, CodeUnit::MyErrorhandlerCodeunit);  
 end;
@@ -87,8 +85,6 @@ end;
 The following example schedules a task to run the **MyCodeunit** codeunit after a specified point in time (60 seconds + a random part of up to three seconds) and when resources are available. It runs in the current company and use the codeunit **MyErrorhandlerCodeunit** as the failure codeunit. 
 
 ```AL
-var
-    JobQueueEntry: Record "Job Queue Entry";
 begin
     TaskScheduler.CreateTask(
         CodeUnit::MyCodeunit, 
@@ -103,7 +99,7 @@ end;
 ## See also
 
 [CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration)](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-duration-method.md)   
-[TaskScheduler Data Type](taskscheduler-data-type.md)  
-[Task Scheduler](../../devenv-task-scheduler.md)   
+[TaskScheduler Data Type](taskscheduler-data-type.md)     
+[Using the Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
