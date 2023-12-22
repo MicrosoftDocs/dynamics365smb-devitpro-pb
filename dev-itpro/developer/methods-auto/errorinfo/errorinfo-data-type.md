@@ -75,7 +75,7 @@ The different properties in the `ErrorInfo` data type are used in different ways
 |[RecordId([RecordId])](errorinfo-recordid-method.md)| Make the error actionable and add a fix-it action to the error message. For more information, see [Actionable errors](../../devenv-actionable-errors.md). |
 |[SystemId([Guid])](errorinfo-systemid-method.md)| Make the error actionable and add a show-it action to the error message. For more information, see [Actionable errors](../../devenv-actionable-errors.md). |
 |[TableId([Integer])](errorinfo-tableid-method.md)|Specifies the table ID that the error relates to.|
-|[Title([Text])](errorinfo-title-method.md)| Add a title to the error message. Not so used for validation errors. |
+|[Title([Text])](errorinfo-title-method.md)| Add a title to the error message. Not recommended for validation errors. |
 
 
 ## See Also

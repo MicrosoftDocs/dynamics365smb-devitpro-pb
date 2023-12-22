@@ -47,7 +47,15 @@ The text that appears as the tooltip of the action in the error UI.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The semantics of this method is the same as the version without a Description parameter. See [AddAction(Text, Integer, Text)](errorinfo-addaction-string-integer-string-method.md) for more information.
+
 ## See Also
+
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[Actionable errors](../../devenv-actionable-errors.md)  
+[Error handling](../../devenv-al-error-handling.md)   
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

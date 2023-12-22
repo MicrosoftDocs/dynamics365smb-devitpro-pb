@@ -43,7 +43,19 @@ The name of the method in the Codeunit, which is specified by the CodeunitID par
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+If you call `ErrorInfo.AddAction` and codeunit exists with the provided *CodeunitID* or no method called *MethodName* exists in that codeunit, then a runtime error will occur.
+
+If possible, call `ErrorInfo.AddAction` using Codeunit::CodeunitName and not the literal integer for the object ID of the codeunit. In case of a renumbering of the codeunit or if the codeunit was removed, then you will get a compile-time error and not a runtime error.
+
+To see a code example with an error dialog with a Fix-it action, see [Error messages with Show-it actions](../../devenv-actionable-errors#show-it-actions).
+
 ## See Also
+
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[Actionable errors](../../devenv-actionable-errors.md)  
+[Error handling](../../devenv-al-error-handling.md)   
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
