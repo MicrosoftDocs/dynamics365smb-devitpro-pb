@@ -103,7 +103,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
     But if there are dependencies on the Base Application this will give an error. To solve this, you must unpublish all the applications with dependencies on the Base Application. This is easier to do using a script that recursively removes the dependencies. Use Windows PowerShell ISE to create a new script with the following lines of code:
 
-    ```
+    ```powershell
     function UnpublishAppAndDependencies($ServerInstance, $ApplicationName)
     {
          Get-NAVAppInfo -ServerInstance $ServerInstance | Where-Object { 
@@ -133,7 +133,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 14. Import a license with rights to publish the extension. For example:
 
-    ```
+    ```powershell
     Import-NAVServerLicense -ServerInstance BC -LicenseFile "C:\Users\mylicense.BCLicense"
     ```
 

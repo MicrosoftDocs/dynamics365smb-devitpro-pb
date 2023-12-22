@@ -116,7 +116,7 @@ First, create a codeunit that has a local method `MyTrymethod`, and add the foll
 Then, add the following code on the `OnRun` trigger and `MyTrymethod` method.
 
 **OnRun()**
-```
+```al
 IF MyTrymethod THEN
   MESSAGE(Text000, d1, d2, result)
 ELSE
@@ -124,7 +124,7 @@ ELSE
 ```
 
 **LOCAL MyTrymethod()**
-```
+```al
 d1 := 3;
 d2 := 0;
 result := divide.Divide(d1,d2);
@@ -135,7 +135,7 @@ When you run this codeunit, an error occurs because you are not allowed to divid
 <!-- 
 The following example illustrates the use of a try method together with codeunit 1291 **DotNet Exception Handler** to handle .NET Framework Interoperability exceptions. The code is in text file format and has been simplified for illustration. The `CallTryPostingDotNet` method runs the try method `TryPostSomething` in a conditional statement to catch .NET Framework Interoperability exceptions. Errors other than `IndexOutOfRangeException` type are re-thrown.  
 
-```  
+```al
 [Trymethod]  
 PROCEDURE TryPostingSomething@1();  
 BEGIN  

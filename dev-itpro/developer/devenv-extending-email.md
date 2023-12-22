@@ -46,16 +46,13 @@ The following diagram shows the relationship between the objects for email scena
 The following code example shows how to extend the `Email Scenario` enum by adding a new scenario named **BC LE Scenario**. After you extend the enum, the new BC LE option is available in the Email Scenario field. You can assign the scenario to accounts on the **Email Scenarios** page, or by using the `EmailScenario.SetEmailAccount()` method.
 
 ```al
-
 enumextension 50100 BCLEScenario extends "Email Scenario"​
-
 {​
     value(999888; BCLEScenario)​
     {​
         Caption = 'BC LE Scenario';​
     }​
 }​
-
 ```
 
 ```al
@@ -79,9 +76,7 @@ The email address book lookup is what you use to choose email accounts in [!INCL
 The following code example shows how to extend the `Email Address Entity` enum by adding a **BCLE Entity** option. The BCLE entity has an email address that we want to be able to access.
 
 ```al
-
 enumextension 50110 "BCLE - Address Book" extends "Email Address Entity"​
-
 {​
     value(50110; "BCLE Entity")​
     {​
@@ -104,7 +99,6 @@ internal procedure OnGetSuggestedAddresses(TableId: Integer; SystemId: Guid; var
 
 [IntegrationEvent(false, false)]​
 internal procedure OnLookupAddressFromEntity(Entity: Enum "Email Address Entity"; var Address: Record "Email Address Lookup"; var IsHandled: Boolean)
-
 ```
 
 ```al
@@ -188,9 +182,7 @@ Email view policies give you control over the email messages that a user can acc
 The first step is to implement the `Email View Policy` interface.
 
 ```al
-
 interface "Email View Policy"​
-
 {​
     procedure GetSentEmails(var SentEmails: Record "Sent Email" temporary);​
     procedure GetOutboxEmails(var OutboxEmails: Record "Email Outbox" temporary);​
@@ -201,15 +193,12 @@ interface "Email View Policy"​
     procedure HasAccess(SentEmail: Record "Sent Email"): Boolean;​
     procedure HasAccess(OutboxEmail: Record "Email Outbox"): Boolean;​
 }
-
 ```
 
 Next, we'll extend the `Email View Policy` enum by adding a **BE LE View Policy** option.
 
 ```al
-
 enumextension 50108 "BC LE View Policy" extends "Email View Policy"​
-
 {​
     value(50108; "BC LE View Policy")​
     {​
@@ -217,7 +206,6 @@ enumextension 50108 "BC LE View Policy" extends "Email View Policy"​
         Implementation = "Email View Policy" = BCLEViewPolicy;​
     }​
 }
-
 ```
 
 The last step is to assign the email view policies to users. For more information, see [Set Up View Policies](/dynamics365/business-central/admin-how-setup-email#set-up-view-policies).
@@ -241,9 +229,7 @@ All email accounts use a connector, and the accounts contain the information nee
 The first step is to implement the `Email Connector` interface.
 
 ```al
-
 interface "Email Connector"​
-
 {​
     procedure Send(EmailMessage: Codeunit "Email Message"; AccountId: Guid);​
     procedure GetAccounts(var Accounts: Record "Email Account");​
@@ -253,12 +239,10 @@ interface "Email Connector"​
     procedure GetLogoAsBase64(): Text;​
     procedure GetDescription(): Text[250];​
 }
-
 ```
 Next, we'll extend the `Email Connector` enum by adding an **SMTP** option.
 
 ```al
-
 {​
     value(2147483647; SMTP)​
     {​
@@ -266,7 +250,6 @@ Next, we'll extend the `Email Connector` enum by adding an **SMTP** option.
         Implementation = "Email Connector" = "SMTP Connector Impl.";​
     }​
 }
-
 ```
 
 The last step is to create a page where we can view or create an email account. For more information, see [Pages Overview](devenv-pages-overview.md).

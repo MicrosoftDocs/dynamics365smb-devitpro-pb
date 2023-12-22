@@ -140,8 +140,7 @@ table 50101 "Activation Code Information"
             Clustered = true; 
         } 
     } 
-} 
-
+}
 ``` 
 
 #### Customer Rewards Mgt. Setup table object 
@@ -520,8 +519,7 @@ page 50100 "Customer Rewards Wizard"
         NextEnabled: Boolean; 
         ActivateEnabled: Boolean; 
         EnableCustomerRewards: Boolean; 
-} 
-
+}
 ``` 
 
 #### Rewards Level List page object
