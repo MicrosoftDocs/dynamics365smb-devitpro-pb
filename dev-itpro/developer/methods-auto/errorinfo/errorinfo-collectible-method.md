@@ -42,7 +42,24 @@ The current collectible of the ErrorInfo.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example 
+
+```AL
+procedure myProc( MyErrorInfo: ErrorInfo )
+var 
+    IsErrorCollectable: Boolean;
+begin
+    IsErrorCollectable := MyErrorInfo.Collectible();
+
+    // do something 
+end
+```
+
 ## See Also
+
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[Collecting Errors](../../devenv-error-collection.md)  
+[AL error handling](../../devenv-al-error-handling.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

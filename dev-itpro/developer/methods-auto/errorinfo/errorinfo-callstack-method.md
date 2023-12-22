@@ -61,5 +61,6 @@ For an elaborate example, see the ErrorMessageManagement codeunit in the system 
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Collecting Errors](../../devenv-error-collection.md)  
+[AL error handling](../../devenv-al-error-handling.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
