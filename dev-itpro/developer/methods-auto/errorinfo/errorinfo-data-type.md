@@ -77,7 +77,6 @@ The different properties in the `ErrorInfo` data type are used in different ways
 |[TableId([Integer])](errorinfo-tableid-method.md)|Specifies the table ID that the error relates to.|
 |[Title([Text])](errorinfo-title-method.md)| Add a title to the error message. Not so used for validation errors. |
 
-For more information, see [Collecting errors](../../devenv-error-collection.md).  
 
 ## See Also
 
