@@ -181,7 +181,7 @@ To create pages for anonymous access of external users, complete the following s
 1. Search and select the virtual Business Central **Item** table.
 1. Select the **All Items** view, and then select **Done**.
 
-   ![Screenshot of adding a list in Power Pages maker portal](media/power-pages-add-list2.png)
+   ![Screenshot of adding a list view in Power Pages maker portal](media/power-pages-add-list2.png)
    
 1. Select the **Permission** button, **All Items** permission, and then select **Global access** type.
 1. Add the **Read** permission and **Anonymous Users** role. This step enables external users to visit your portal without signing in and the **Business Central Virtual Table** app will use **Power Pages Anonymous External Users** app/S2S user to access data stored in Business Central online on their behalf.
@@ -208,7 +208,7 @@ To create pages for authenticated access of external users, complete the followi
 1. Select a synthetic relation between the native Dataverse **Contact** table and virtual Business Central **Sales Order** table, for example *dyn365bc_contact2salesorder*.
 1. Add all except **Delete** permissions and **Authenticated Users** role. This step enables external users to sign in to your portal with their contact user identity and the **Business Central Virtual Table** app will use **Power Pages Authenticated External Users** app/S2S user to access data stored in Business Central online on their behalf.
 
-   ![Screenshot of adding authenticated permissions in Power Pages maker portal](media/power-pages-add-authenticated-permission.png)
+   ![Screenshot of adding authenticated permissions to access sales orders in Power Pages maker portal](media/power-pages-add-authenticated-permission.png)
    
 1. Select the **Save** button, and then select **Sync**.
 1. Select the **Preview** button to check that external users can see the **Sales Order** table from Business Central after signing in.
@@ -251,7 +251,7 @@ To enable edit mode on Power Pages lists, complete the following steps:
    
 1. Because the default sales order form has been designed to include a subgrid of sales order lines, authenticated users also need to be assigned all except **Delete** permissions to access the virtual Business Central **Sales Order Line** table.
 
-   ![Screenshot of adding authenticated permissions in Power Pages maker portal](media/power-pages-add-authenticated-permission2.png)
+   ![Screenshot of adding authenticated permissions to access sales order lines in Power Pages maker portal](media/power-pages-add-authenticated-permission2.png)
 
 1. Select the **Save** button, and then select **Sync**.
 1. Select the **Preview** button to check that external users can edit sales order lists from Business Central after signing in.
