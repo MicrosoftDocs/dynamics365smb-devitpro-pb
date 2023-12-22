@@ -332,7 +332,7 @@ traces
 
 ## See also
 
-[Error handling](devenv-al-error-handling.md)   
+[Error handling](../developer/devenv-al-error-handling.md)   
 [Feature Telemetry sample code](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)  
 [System Application Overview](../developer/devenv-system-application-overview.md)  
 [Feature Telemetry System Application Documentation](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)  
