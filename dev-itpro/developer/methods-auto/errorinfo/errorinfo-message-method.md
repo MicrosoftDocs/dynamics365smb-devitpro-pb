@@ -47,7 +47,7 @@ The current message of the ErrorInfo.
 
 Set the **Message** property on error dialogs that are presented to the user. For advice on how to use the title to describe what’s wrong and enable the user to quickly scan the meaning of the error, see [User experience guidelines for errors](../../devenv-error-handling-guidelines.md#error-message-body).  
 
-You setting the Message property on error dialogs required. For more information on how to express error messages, see [Error message best practices - what to say?](../../devenv-error-handling-guidelines.md#error_message_best_practices).
+Setting the Message property on error dialogs is required. For more information on how to express error messages, see [Error message best practices - what to say?](../../devenv-error-handling-guidelines.md#error_message_best_practices).
 
 
 ## Example 
