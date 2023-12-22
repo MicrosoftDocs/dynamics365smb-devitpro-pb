@@ -76,7 +76,7 @@ If a feature logs uptake, there should be calls to register the `Discovered`, `S
 * `Used` should be registered when a user attempts to use the feature (note the difference with LogUsage, which should be called only if the feature is used successfully).
 
 > [!NOTE]
-> Tracking the uptake status of a feature may make database transactions. If `LogUptake` is called from within a try function, the `PerformWriteTransactionsInASeparateSession` parameter should be set to `True`.
+> Tracking the uptake status of a feature might make database transactions. If `LogUptake` is called from within a try function, the `PerformWriteTransactionsInASeparateSession` parameter should be set to `True`.
 
 Calling `LogUptake` when the uptake state is `Undiscovered` resets the uptake state of the feature. The telemetry from this call will be used to calculate the values in the uptake funnel of the feature.
 
