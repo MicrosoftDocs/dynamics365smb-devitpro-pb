@@ -46,6 +46,9 @@ codeunit 50101 "Sample Telemetry Logger" implements "Telemetry Logger"
 }
 ```
 
+> [!NOTE]
+> If you fail to setup a "Telemetry Logger" codeunit, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server logs an event to your telemetry. For more information, see [Error telemetry for the app publisher](#loggererrors) below.
+
 ## Using the FeatureTelemetry codeunit (log usage, errors, or uptake)
 
 It's easy to use the Feature Telemetry codeunit. For example, to register the usage of a feature, you can just use the `FeatureTelemetry.LogUsage(<tag>, <feature name>, <event name>);` method. After the telemetry is emitted, you can aggregate and display the data. For example, you can use the **Feature Usage** Power BI report. The report is available on our [BCTech](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/AL/FeatureTelemetry/Feature%20Usage.pbix) GitHub repository.
@@ -240,7 +243,7 @@ traces
 ```
 
 
-## Error telemetry for the app publisher
+## <a name="loggererrors"></a>Error telemetry for the app publisher
 When you use the feature telemetry module in your app, it's important to register exactly one telemetry logger. If you fail to do so, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server logs an event to your telemetry.
 
 ### <a name="multipleloggers"></a>More than one telemetry logger has been registered for publisher {publisher}
