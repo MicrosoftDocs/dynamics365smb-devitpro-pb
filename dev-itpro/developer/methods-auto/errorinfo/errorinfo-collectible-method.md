@@ -43,7 +43,7 @@ The current collectible of the ErrorInfo.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example (get Collectible property)
+## Example (get the Collectible property)
 
 ```AL
 procedure myProc( MyErrorInfo: ErrorInfo )
@@ -56,7 +56,7 @@ begin
 end
 ```
 
-## Example (set Collectible property)
+## Example (set the Collectible property)
 
 ```AL
 procedure myProc( MyErrorInfo: ErrorInfo )
