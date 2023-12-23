@@ -43,18 +43,32 @@ The current collectible of the ErrorInfo.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example 
+## Example (get Collectible property)
 
 ```AL
 procedure myProc( MyErrorInfo: ErrorInfo )
 var 
-    IsErrorCollectable: Boolean;
+    IsErrorCollectible: Boolean;
 begin
-    IsErrorCollectable := MyErrorInfo.Collectible();
+    IsErrorCollectible := MyErrorInfo.Collectible();
 
     // do something 
 end
 ```
+
+## Example (set Collectible property)
+
+```AL
+procedure myProc( MyErrorInfo: ErrorInfo )
+var 
+begin
+    // set MyErrorInfo to be collectible
+    MyErrorInfo.Collectible( true );
+
+    // do something 
+end
+```
+
 
 ## See Also
 
