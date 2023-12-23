@@ -43,6 +43,32 @@ The current verbosity of the ErrorInfo.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Example (get the Verbosity property)
+
+```AL
+procedure myProc( MyErrorInfo: ErrorInfo )
+var 
+    ErrorVerbosity: Verbosity;
+begin
+    ErrorVerbosity := MyErrorInfo.Verbosity();
+
+    // do something 
+end
+```
+
+## Example (set the Verbosity property)
+
+```AL
+procedure myProc( MyErrorInfo: ErrorInfo )
+var 
+begin
+    // set MyErrorInfo to be a critical error
+    MyErrorInfo.Verbosity( Verbosity::Critical );
+
+    // do something 
+end
+```
+
 ## See Also
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
