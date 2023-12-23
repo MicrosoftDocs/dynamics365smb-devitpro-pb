@@ -45,7 +45,7 @@ The current page number of the ErrorInfo.
 
 ## Remark 
 
-You use the `PageNo` property when also using a show-t action with the `AddNavigationAction` property. The `PageNo` then specifies where the action takes the user when activated.
+You use the `PageNo` property when also using a show-it action with the `AddNavigationAction` property. The `PageNo` then specifies where the action takes the user when activated.
 
 ## Example (set the PageNo property)
 
