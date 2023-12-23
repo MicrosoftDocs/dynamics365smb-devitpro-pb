@@ -42,9 +42,11 @@ The current record ID of the ErrorInfo.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also
 
-[Collecting Errors](../../devenv-error-collection.md)  
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[Collecting Errors](../../devenv-error-collection.md)  
+[Error handling](../../devenv-al-error-handling.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

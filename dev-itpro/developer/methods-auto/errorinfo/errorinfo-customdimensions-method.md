@@ -45,7 +45,12 @@ The current custom dimensions of the ErrorInfo.
 
 ## Remark
 
-You can use the `CustomDimensions` dictionary to transfer data from the code where an error message is shown to the user to the codeunit and method(s) executed by fix-it actions. For more information about how to develop actionable errors, see [Actionable errors](../../devenv-actionable-errors.md).
+You can use the `CustomDimensions` dictionary to transfer data from the code where an error message is shown to the user to the codeunit and method(s) executed by fix-it actions or where you handle collected errors. 
+
+For more information about how to develop actionable errors, see [Actionable errors](../../devenv-actionable-errors.md). 
+
+For more information about how to handle multiple collected errors, see [Collecting errors](../../devenv-error-collection.md).
+
 
 ## Example (get the CustomDimensions dictionary)
 
@@ -87,6 +92,7 @@ end
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Actionable errors](../../devenv-actionable-errors.md)  
+[Collecting errors](../../devenv-error-collection.md)  
 [Error handling](../../devenv-al-error-handling.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
