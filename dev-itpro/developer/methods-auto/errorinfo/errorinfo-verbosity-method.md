@@ -59,13 +59,15 @@ end
 ## Example (set the Verbosity property)
 
 ```AL
-procedure myProc( MyErrorInfo: ErrorInfo )
 var 
+    MyErrorInfo: ErrorInfo
 begin
+    // setup the error info object: Define Message, DetailedMessage etc.
+
     // set MyErrorInfo to be a critical error
     MyErrorInfo.Verbosity( Verbosity::Critical );
 
-    // do something 
+    Error(MyErrorInfo);
 end
 ```
 

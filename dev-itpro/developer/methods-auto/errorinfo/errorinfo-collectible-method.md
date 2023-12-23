@@ -59,13 +59,15 @@ end
 ## Example (set the Collectible property)
 
 ```AL
-procedure myProc( MyErrorInfo: ErrorInfo )
 var 
+    MyErrorInfo: ErrorInfo;
 begin
-    // set MyErrorInfo to be collectible
-    MyErrorInfo.Collectible( true );
+    // setup the error info object: Define Message, DetailedMessage etc.
 
-    // do something 
+    // set MyErrorInfo to be collectible
+    MyErrorInfo.Collectible(true);
+
+    Error(MyErrorInfo);    
 end
 ```
 
