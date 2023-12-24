@@ -52,6 +52,14 @@ If the report you specify doesn't exist, then a runtime error occurs.
 
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
 
+
+## Printing
+
+The parameter `SystemPrinter` is only used for on-premises scenarios (print on server). Here, the [!INCLUDE[prod_short](../../includes/prod_short.md)] server will use the default printer on the server if you use SystemPrinter=true, otherwise it will use printer selection. 
+
+For the online version of [!INCLUDE[prod_short](../../includes/prod_short.md)], users can use printer extension and browser print.
+
+
 ## Example: Using `Report::<object ID>` syntax
 
 As mentioned previously, the `Report.Run` method throws a runtime error if no report with the supplied object ID exists. If you know the report object, a safe way to call `Report.Run` is to use the `Report::<object identifier>` syntax because the compiler will tell you if the report object doesn't exist.  
