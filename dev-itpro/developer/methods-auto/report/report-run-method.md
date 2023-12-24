@@ -1,6 +1,6 @@
 ---
 title: "Report.Run(Integer [, Boolean] [, Boolean] [, var Record]) Method"
-description: "Loads and executes the report that you specify (static method)."
+description: "Loads and executes the report that you specify (static method with printer parameter)."
 ms.author: solsen
 ms.custom: na
 ms.date: 12/18/2023
