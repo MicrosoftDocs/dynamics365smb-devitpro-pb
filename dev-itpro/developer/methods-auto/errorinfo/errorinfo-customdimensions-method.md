@@ -55,7 +55,7 @@ For more information about how to handle multiple collected errors, see [Collect
 ## Example (get the CustomDimensions dictionary)
 
 ```AL
-procedure myProc( MyErrorInfo: ErrorInfo )
+procedure myErrorHandlerProc( MyErrorInfo: ErrorInfo )
 var 
     TheCustomDimensions: Dictionary of [Text, Text];
 begin

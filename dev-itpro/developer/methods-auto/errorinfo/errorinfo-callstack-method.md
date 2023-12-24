@@ -45,7 +45,7 @@ When using the collectable errors feature, you might need the `ErrorInfo.Callsta
 ## Example 
 
 ```AL
-procedure myProc( MyErrorInfo: ErrorInfo )
+procedure myErrorHandlerProc( MyErrorInfo: ErrorInfo )
 var 
     stackTrace: Text[2048];
 begin

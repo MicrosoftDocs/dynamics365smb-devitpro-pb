@@ -46,7 +46,7 @@ The current verbosity of the ErrorInfo.
 ## Example (get the Verbosity property)
 
 ```AL
-procedure myProc( MyErrorInfo: ErrorInfo )
+procedure myErrorHandlerProc( MyErrorInfo: ErrorInfo )
 var 
     ErrorVerbosity: Verbosity;
 begin

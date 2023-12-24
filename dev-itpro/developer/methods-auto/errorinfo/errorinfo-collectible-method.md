@@ -46,7 +46,7 @@ The current collectible of the ErrorInfo.
 ## Example (get the Collectible property)
 
 ```AL
-procedure myProc( MyErrorInfo: ErrorInfo )
+procedure myErrorHandlerProc( MyErrorInfo: ErrorInfo )
 var 
     IsErrorCollectible: Boolean;
 begin
