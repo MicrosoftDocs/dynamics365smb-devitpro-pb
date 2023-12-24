@@ -75,10 +75,12 @@ var
 begin
     // setup the error info object: Define Message, DetailedMessage etc.
 
-    MyRecordId := // set the variable to the record ID you want to transfer
-    MyErrorInfo.RecordId(MyRecordId);
+    // setup identifiers for the fix-it action codeunit (or for the AL runtime in case of a show-it action)
+    MyErrorInfo.RecordId := MyTableRec.RecordId;
+    MyErrorInfo.SystemId := MyTableRec.SystemId;
+    MyErrorInfo.TableId := Database::"MyTable";
 
-    // setup actions for the error info object
+    // setup show-it or fix-it action(s) for the error info object
 
     Error(MyErrorInfo);
 end
