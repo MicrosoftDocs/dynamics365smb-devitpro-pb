@@ -61,7 +61,7 @@ var
 begin
     TheRecordId := MyErrorInfo.RecordId();
 
-    // do something with the data
+    // do something with the data (now you can get the table number of the row or a record ref to the row)
 end
 ```
 
