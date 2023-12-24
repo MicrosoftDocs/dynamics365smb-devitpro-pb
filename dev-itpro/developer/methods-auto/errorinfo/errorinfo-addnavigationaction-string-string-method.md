@@ -1,6 +1,6 @@
 ---
 title: "ErrorInfo.AddNavigationAction([Text] [, Text]) Method"
-description: "Adds a navigation action for the error."
+description: "Adds a navigation action for the error (description version)."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/02/2023

@@ -71,16 +71,16 @@ end
 
 var 
     MyErrorInfo: ErrorInfo;
-    MyRecordId: RecordId;
+    MyTableRec: Record "MyTable";
 begin
     // setup the error info object: Define Message, DetailedMessage etc.
 
-    // setup identifiers for the fix-it action codeunit (or for the AL runtime in case of a show-it action)
+    // set identifiers for the fix-it action codeunit (or for the AL runtime in case of a show-it action)
     MyErrorInfo.RecordId := MyTableRec.RecordId;
     MyErrorInfo.SystemId := MyTableRec.SystemId;
     MyErrorInfo.TableId := Database::"MyTable";
 
-    // setup show-it or fix-it action(s) for the error info object
+    // setup fix-it or show-it action(s) for the error info object
 
     Error(MyErrorInfo);
 end
