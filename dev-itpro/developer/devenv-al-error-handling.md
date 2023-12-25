@@ -16,10 +16,11 @@ The AL language has many error handling features, which can help you deal with u
 
 The following articles introduce error handling in AL:
 
+- [User experience guidelines for errors](devenv-error-handling-guidelines.md)  
 - [Actionable errors](devenv-actionable-errors.md) 
 - [Collecting errors](devenv-error-collection.md) 
 - [Handling errors using Try methods](devenv-handling-errors-using-try-methods.md)   
-- [Progress Windows, Message, Error, and Confirm methods](devenv-progress-windows-message-error-and-confirm-methods.md)
+
 
 ## Error handling methods in AL
 
@@ -52,7 +53,7 @@ For examples of different error handling strategies, see the following table:
 | Do bulk validations in AL and not show an error dialog for each of them to the user. | [Collecting Errors](devenv-error-collection.md) |
 | Catch errors raised by other AL methods| [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md) | 
 | Catch errors/exceptions that are thrown during .NET framework interoperability operations (on-premises only). | [Handling .NET Exceptions using Try Methods](devenv-handling-errors-using-try-methods.md)|
-| Log an error that happens within a database transaction (that rollback) | Either log the error in a new session using a background session, or use Session.LogMessage to log the error to telemetry. | 
+| Log an error that happens within a database transaction (that rollback) | Either log the error in a new session using a background session, or log the error to telemetry (see [LogMessage](./methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md) or [Telemetry.LogError](../administration/telemetry-feature-telemetry.md#LogError) ). | 
 
 ## Guidelines for error messages
 
@@ -86,6 +87,7 @@ There are three types of telemetry data emitted about errors
 [Actionable errors](devenv-actionable-errors.md)   
 [Collecting errors](devenv-error-collection.md)   
 [Handling errors using Try methods](devenv-handling-errors-using-try-methods.md)   
+[Telemetry.LogError](../administration/telemetry-feature-telemetry.md#LogError)  
 [Error message quality telemetry](../administration/telemetry-error-message-voting-trace.md)   
 [Error method telemetry](../administration/telemetry-error-method-trace.md)  
 [Permission error telemetry](../administration/telemetry-permission-error-trace.md)   
