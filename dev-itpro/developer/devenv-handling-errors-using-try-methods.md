@@ -52,7 +52,7 @@ To create a try method, add a method in the AL code of an object such as a codeu
 
 In test and upgrade codeunits, you can only use a try method on a normal method type.-->  
 
-## Example 1 
+## Example
 
 The following simple example illustrates how the try method works. First, create a codeunit that has a local method `MyTrymethod`. Add the following code on the `OnRun` trigger and `MyTrymethod` method.
 
