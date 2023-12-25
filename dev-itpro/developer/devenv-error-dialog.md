@@ -129,6 +129,24 @@ You can then use the stack trace to identify:
 2. Where the error happened (the top of the stack trace)
 
 
+## Error message telemetry
+
+When a user gets an error dialog while working in [!INCLUDE[prod_shoirt](../includes/prod_short.md)], a telemetry signal is also emitted, which can be logged in an [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] resource. This telemetry data let's you identify and analyze calls to the `Error` method from AL code. You can also set up alerts in [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] to get notified if many users experience errors.
+
+For more information, see [Error method trace telemetry](../administration/telemetry-error-method-trace.md).
+
+
+
+The error dialog also include a yes or no question as to whether the message was helpful, similar to the following illustration:
+
+![Shows the error dialog and the voting actions, Yes and No, about the helpfulness of the message.](../developer/media/error-voting.png )
+
+If a user selects either **Yes** or **No**, a signal is emitted and recorded in [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)]. This information can help partners and developers get insight into error messages that users find hard to understand. They can then follow up with the customer to help out.
+
+For more information, see [Analyzing Error Message Quality Telemetry](../administration/telemetry-error-message-voting-trace.md).
+
+
+
 ## See also
 
 [Error message quality telemetry](../administration/telemetry-error-message-voting-trace.md)   
