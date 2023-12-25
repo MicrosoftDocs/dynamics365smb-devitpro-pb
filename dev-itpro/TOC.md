@@ -634,7 +634,7 @@
 ##### [Feature (error) telemetry](administration/telemetry-feature-telemetry.md)
 ##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
 #### AL Language Reference (errors)
-##### [Collecting Errors API](devenv-error-collection-api.md?toc=/dynamics365/business-central/dev-itpro/toc.json) 
+##### [Collecting Errors API](developer/devenv-error-collection-api.md?toc=/dynamics365/business-central/dev-itpro/toc.json) 
 ##### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### LogInternalError method (on-premises only)
