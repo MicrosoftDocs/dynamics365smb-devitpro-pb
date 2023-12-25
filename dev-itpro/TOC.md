@@ -634,11 +634,12 @@
 ##### [Feature (error) telemetry](administration/telemetry-feature-telemetry.md)
 ##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
 #### AL Language Reference (errors)
-##### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
-##### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md)
+##### [Collecting Errors API](devenv-error-collection-api.md?toc=/dynamics365/business-central/dev-itpro/toc.json))
+##### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json))
+##### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json))
 ##### LogInternalError method (on-premises only)
-###### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md)
-###### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md)
+###### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json))
+###### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json))
 
 ### Formatting values
 #### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
