@@ -20,7 +20,7 @@ The following articles introduce error handling in AL:
 - [Actionable errors](devenv-actionable-errors.md) 
 - [Collecting errors](devenv-error-collection.md) 
 - [Handling errors using Try methods](devenv-handling-errors-using-try-methods.md)   
-
+- [Understanding the error dialog](devenv-error-dialog.md)   
 
 ## Error handling methods in AL
 
@@ -53,7 +53,9 @@ For examples of different error handling strategies, see the following table:
 | Do bulk validations in AL and not show an error dialog for each of them to the user. | [Collecting Errors](devenv-error-collection.md) |
 | Catch errors raised by other AL methods| [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md) | 
 | Catch errors/exceptions that are thrown during .NET framework interoperability operations (on-premises only). | [Handling .NET Exceptions using Try Methods](devenv-handling-errors-using-try-methods.md)|
+| Handle errors happening in Page Background Tasks | The `OnPageBackgroundTaskError` trigger of the page. For more information, see [Handling errors (in Page Background Tasks)](devenv-page-background-tasks#handling-errors). | 
 | Log an error that happens within a database transaction (that rollback) | Either log the error in a new session using a background session, or log the error to telemetry (see [LogMessage](./methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md) or [Telemetry.LogError](../administration/telemetry-feature-telemetry.md#LogError) ). | 
+
 
 ## Guidelines for error messages
 
@@ -62,7 +64,7 @@ Improving error handling and error messages reduces friction for the users and h
 For guidance on how to formulate good error messages, see [Error message best practices - what to say?](devenv-error-handling-guidelines.md#error_message_best_practices).
 
 
-## Error telemetry
+## Error telemetry (emitted by the AL runtime)
 
 When a user gets an error dialog while working in [!INCLUDE[prod_short](../includes/prod_short.md)], a telemetry signal is emitted, which can be logged in an [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] resource. This telemetry data let's you identify and analyze where and why the error occurs. You can also set up alerts in [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] to get notified if many users experience errors.
 
@@ -78,6 +80,13 @@ There are three types of telemetry data emitted about errors
 | Understand if users understand the error messages they see. | [Error message quality telemetry](../administration/telemetry-error-message-voting-trace.md) |
 | Understand which error dialogs users see and where in the AL code the error is raised. | [Error method telemetry](../administration/telemetry-error-method-trace.md) |
 | Understand when users get error dialogs about lack of permissions. | [Permission error telemetry](../administration/telemetry-permission-error-trace.md) |
+
+
+## Error telemetry (emit your own)
+
+You can emit your own telemetry about error situations by using the Telemetry AL module. Using this module, you can simplify the way you monitor the health of your app and also monitor the uptake and usage of application features. 
+
+For more information, see [Telemetry.LogError](../administration/telemetry-feature-telemetry.md#LogError).
 
 
 ## See also

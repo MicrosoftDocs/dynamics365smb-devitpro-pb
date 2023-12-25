@@ -82,7 +82,7 @@ Calling `LogUptake` when the uptake state is `Undiscovered` resets the uptake st
 
 If `LogUptake` is called from a try function, the `PerformWriteTransactionsInASeparateSession` parameter should be set to `true`.
 
-## Log errors
+## <a name="LogError"></a> Log errors
 
 You call `LogError` when an error must be explicitly sent to telemetry. For example, after a call to a try function, when `Codeunit.Run` returned false, when sending an http response error message, and so on.
 
