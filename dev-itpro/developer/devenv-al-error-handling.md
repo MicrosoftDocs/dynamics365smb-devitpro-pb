@@ -96,6 +96,7 @@ For more information, see [Telemetry.LogError](../administration/telemetry-featu
 [Actionable errors](devenv-actionable-errors.md)   
 [Collecting errors](devenv-error-collection.md)   
 [Handling errors using Try methods](devenv-handling-errors-using-try-methods.md)   
+[Handling errors (in Page Background Tasks)](devenv-page-background-tasks.md#handling-errors)  
 [Telemetry.LogError](../administration/telemetry-feature-telemetry.md#LogError)  
 [Error message quality telemetry](../administration/telemetry-error-message-voting-trace.md)   
 [Error method telemetry](../administration/telemetry-error-method-trace.md)  
