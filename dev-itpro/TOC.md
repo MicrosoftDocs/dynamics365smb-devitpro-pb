@@ -861,8 +861,8 @@
 ##### [Session.StartSession](developer/methods-auto/session/session-startsession-integer-integer-string-table-method.md)
 ##### [Session.StopSession](developer/methods-auto/session/session-stopsession-method.md)
 ##### [TaskScheduler Data Type](developer/methods-auto/taskscheduler/taskscheduler-data-type.md)
-##### [Codeunit "Job Queue Management"](/dynamics365/business-central/application/base-application/codeunit/system.threading.job-queue-management.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
-##### [Codeunit "Job Queue Dispatcher"](/dynamics365/business-central/application/base-application/codeunit/system.threading.job-queue-dispatcher.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Codeunit "Job Queue Management"](/dynamics365/business-central/application/base-application/codeunit/system.threading.job-queue-management?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Codeunit "Job Queue Dispatcher"](/dynamics365/business-central/application/base-application/codeunit/system.threading.job-queue-dispatcher?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
 
 ### Developing APIs
