@@ -775,10 +775,6 @@
 #### [Report object](developer/devenv-report-object.md)
 #### [Report extension object](developer/devenv-report-ext-object.md)
 #### [Report extension example](developer/devenv-report-ext-example.md)
-#### AL Language Reference (reports)
-##### [Report datatype (AL Language Reference)](developer/methods-auto/report/report-data-type.md)
-##### [Report object properties (AL Language Reference)](developer/properties/devenv-report-properties.md)
-##### [Report, Report Dataitem, and Report Extension Properties (AL Language Reference)](developer/properties/devenv-report-property-overview.md)
 #### [Defining a report dataset](developer/devenv-report-dataset.md)
 #### Formatting report data
 ##### [Formatting field values in report datasets](developer/devenv-format-report-field-data.md)
@@ -816,6 +812,15 @@
 #### [Testing a report](developer/devenv-testing-reports.md)
 #### [Report performance](developer/devenv-report-performance.md)
 #### [Report telemetry](administration/telemetry-reports-trace.md)
+#### How users work with reports
+##### [Run and print reports](/dynamics365/business-central/ui-work-report?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Specify a default printer](/dynamics365/business-central/ui-specify-printer-selection-reports?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Schedule a report to run](/dynamics365/business-central/ui-work-report#ScheduleReport?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Manage saved settings](/dynamics365/business-central/reports-saving-reusing-settings?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### AL Language Reference (reports)
+##### [Report datatype (AL Language Reference)](developer/methods-auto/report/report-data-type.md)
+##### [Report object properties (AL Language Reference)](developer/properties/devenv-report-properties.md)
+##### [Report, Report Dataitem, and Report Extension Properties (AL Language Reference)](developer/properties/devenv-report-property-overview.md)
 
 
 ### [Events](developer/devenv-events-in-al.md)
