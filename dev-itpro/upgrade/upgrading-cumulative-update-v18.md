@@ -2,7 +2,7 @@
 title: Install a version 18 update
 description: This article describes the tasks required for getting the monthly version 18 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 09/01/2021
+ms.date: 12/28/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -489,7 +489,7 @@ If the old solution used third-party extensions, and you still want to use them,
 
 As an alternative, if you have the source for these extensions, you can build and compile a new version of the extension in the AL development environment. Then, you upgrade to the new version as described in the previous task.
 
-## Post Upgrade
+## Post upgrade
 
 ### <a name="controladdins"></a>Upgrade control add-ins
 
@@ -546,9 +546,9 @@ Import-NAVServerLicense -ServerInstance $BcServerInstance -LicenseFile $Customer
 Restart-NAVServerInstance -ServerInstance $BcServerInstance
 ```
 
-## See Also
+## See also
 
-[Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-16.md)  
+[Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-17.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  

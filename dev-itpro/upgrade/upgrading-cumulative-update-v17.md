@@ -2,7 +2,7 @@
 title: Install a version 17 update
 description: This article describes the tasks required for getting the monthly version 17 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/27/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - System Application extension
 
-    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When using the Microsoft Base Application, your solution uses the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
+    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When using the Microsoft Base Application, your solution uses the System Application. With a custom Base Application, your solution might or might not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
 
 - Base application extension
 
@@ -236,7 +236,7 @@ Also, to ensure that the existing published extensions work on the new platform,
 
 ## <a name="UploadLicense"></a>Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
-To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). You'll have to restart the server instance afterwards:
+To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). You have to restart the server instance afterwards:
 
 ```powershell
 Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
@@ -282,7 +282,7 @@ Compile all published extensions against the new platform.
 
 1. (Multitenant only) Mount the tenant to the new Business Central Server instance.
 
-    You'll have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
+    You have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
  
 2. Synchronize the tenant.
   
@@ -404,7 +404,7 @@ Follow these steps if your existing solution uses the Microsoft Base Application
 
     Replace `<extension version>` with the exact version of the published Base Application.
 
-    With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID. This process can take several minutes.
+    With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names are suffixed with the base app extension ID. This process can take several minutes.
 3. Run the data upgrade on the Base Application.
 
     To run the data upgrade, use the [Start-NavAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
@@ -417,7 +417,7 @@ Follow these steps if your existing solution uses the Microsoft Base Application
 
 ### Upgrade custom Base Application
 
-With a custom Base Application, you may want the new application features and hotfixes in the Microsoft Base Application. If so, you'll have to merge the modifications made in the Microsoft Base Application into your custom Base Application. Then, create a new version of your custom Base Application.
+With a custom Base Application, you might want the new application features and hotfixes in the Microsoft Base Application. If so, you have to merge the modifications made in the Microsoft Base Application into your custom Base Application. Then, create a new version of your custom Base Application.
 
 The source code for the new Microsoft Base Application version is in the **Base Application.Source.zip** file. This file is on the installation media (DVD), in the **Applications\BaseApp\Source** folder. You can compare this source code with the source code of the previous Microsoft Base Application and your custom application source. Then merge the code into a new custom application version.
 
@@ -481,7 +481,7 @@ If the old solution used third-party extensions, and you still want to use them,
 
 As an alternative, if you have the source for these extensions, you can build and compile a new version of the extension in the AL development environment. Then, you upgrade to the new version as described in the previous task.
 
-## Post Upgrade
+## Post upgrade
 
 ### <a name="controladdins"></a>Upgrade control add-ins
 
@@ -519,7 +519,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 
 This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version.  The **Help and Support** page in the client displays an application version, such as 16.1.2345.6. This version number isn't updated automatically when you install an update.
 
-However, the [!INCLUDE[server](../developer/includes/server.md)] includes a configuration setting called **Solution Version Extension** (SolutionVersionExtension). This setting lets you specify an extension whose version number will show as the Application Version on the client's **Help and Support** page. Typically, you'd use the extension considered to be your solution's base application. You set **Solution Version Extension** to ID of the extension. For example, if your solution uses the Microsoft Base Application, set the value to `437dbf0e-84ff-417a-965d-ed2bb9650972`.
+However, the [!INCLUDE[server](../developer/includes/server.md)] includes a configuration setting called **Solution Version Extension** (SolutionVersionExtension). This setting lets you specify an extension whose version number shows as the Application Version on the client's **Help and Support** page. Typically, you'd use the extension considered to be your solution's base application. You set **Solution Version Extension** to ID of the extension. For example, if your solution uses the Microsoft Base Application, set the value to `437dbf0e-84ff-417a-965d-ed2bb9650972`.
 
 You can set **Solution Version Extension** by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet of the [!INCLUDE[admin shell](../developer/includes/adminshell.md)].
 
@@ -533,16 +533,16 @@ For more information about how to configure a server instance, see [Configuring 
 
 ### Import the customer license
 
-Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. You'll have to restart the server instance afterwards.
+Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. You have to restart the server instance afterwards.
 
 ```powershell
 Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
 Restart-NAVServerInstance -ServerInstance <server instance name>
 ```
 
-## See Also
+## See also
 
-[Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-16.md)  
+[Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-17.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  

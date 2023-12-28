@@ -2,7 +2,7 @@
 title: Install a version 15 update
 description: This article describes the tasks required for getting the monthly version 15 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/28/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ The application includes AL extensions that define the objects and code that mak
 
     As a minimum, the solution always includes the Base Application. The Base Application contains the objects (such as table, pages, codeunits, and reports) that define the business logic and functionality of the solution. The Base Application can be either the Microsoft Base Application or a customized Base Application. The Microsoft Base Application is the standard application that is on the installation media (DVD). A customized Base Application is an application that includes customized code.
 
-    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When using the Microsoft Base Application, your solution uses the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
+    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When using the Microsoft Base Application, your solution uses the System Application. With a custom Base Application, your solution might or might not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
 - Extensions
 
     Extensions add functionality and features to the Base Application or System Application. Extensions can be either Microsoft extensions or third-party extensions. Microsoft extensions are available on the DVD. Third-party extensions are extensions developed by your organization or by another organization, like an ISV.
@@ -225,7 +225,7 @@ Also, to ensure that the existing published extensions work on the new platform,
 
 ## <a name="UploadLicense"></a>Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
-To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). You'll have to restart the server instance afterwards:
+To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). You have to restart the server instance afterwards:
 
 ```powershell
 Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
@@ -236,7 +236,7 @@ For more information, see [Uploading a License File for a Specific Database](../
 
 ## Publish the new system symbols
 
-Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment. Or, it's also on the installation media (DVD) in the ModernDev\program files\Microsoft Dynamics NAV\150\AL Development Environment folder.
+Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you install the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment. Or, it's also on the installation media (DVD) in the ModernDev\program files\Microsoft Dynamics NAV\150\AL Development Environment folder.
 
 ```
 Publish-NAVApp -ServerInstance <server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
@@ -270,7 +270,7 @@ Compile all published extensions against the new platform.
 
 1. (Multitenant only) Mount the tenant to the new Business Central Server instance.
 
-    You'll have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
+    You have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
  
 2. Synchronize the tenant.
   
@@ -294,7 +294,7 @@ To upgrade the control add-ins, do the following steps:
 4. Locate and select the .zip file for the control add-in and choose **Open**.
 
     The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
-5. After you've imported all the new control add-in versions, restart Business Central Server instance.
+5. After you import all the new control add-in versions, restart Business Central Server instance.
 
 > [!NOTE]
 > At this point, if you want to update the application, you can skip the next step and proceed [APPLICATION](#Application).
@@ -397,7 +397,7 @@ Follow these steps if your existing solution uses the Microsoft Base Application
     ```
     Replace `<extension version>` with the exact version of the published Base Application.
 
-    With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID. This process can take several minutes.
+    With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names are suffixed with the base app extension ID. This process can take several minutes.
 3. Run the data upgrade on the Base Application.
 
     To run the data upgrade, use the [Start-NavAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
@@ -410,11 +410,11 @@ Follow these steps if your existing solution uses the Microsoft Base Application
 
 ### Upgrade custom Base Application
 
-With a custom Base Application, you may want the new application features and hotfixes in the Microsoft Base Application. If so, you'll have to merge the modifications made in the Microsoft Base Application into your custom Base Application. Then, create a new version of your custom Base Application.
+With a custom Base Application, you might want the new application features and hotfixes in the Microsoft Base Application. If so, you have to merge the modifications made in the Microsoft Base Application into your custom Base Application. Then, create a new version of your custom Base Application.
 
 The source code for the new Microsoft Base Application version is in the **Base Application.Source.zip** file. This file is on the installation media (DVD), in the **Applications\BaseApp\Source** folder. You can compare this source code with the source code of the previous Microsoft Base Application and your custom application source. Then merge the code into a new custom application version.
 
-After you've created the new version of your custom application, you publish it to the application server instance. Then, you synchronize and run the data upgrade on the tenants.
+After you create the new version of your custom application, you publish it to the application server instance. Then, you synchronize and run the data upgrade on the tenants.
 
 ##  <a name="AddExtensions"></a>Upgrade Microsoft extensions
 
@@ -506,11 +506,11 @@ As an alternative, if you have the source for these extensions, you can build an
 
 (Optional) This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version.  
 
-On the **Help and Support** page in the client, you'll see an application version, such as 15.1.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version number isn't updated automatically when you install an update. If you want the application version to reflect the version of the update or your own version, you change it manually as described here.
+On the **Help and Support** page in the client, you see an application version, such as 15.1.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version number isn't updated automatically when you install an update. If you want the application version to reflect the version of the update or your own version, you change it manually as described here.
 
 We recommend setting the value to application build number for the version 15 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
 
-1. Run the [Set-NAVApplication cmldet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
+1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
     ```
     Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <new application version> -Force
@@ -537,7 +537,7 @@ We recommend setting the value to application build number for the version 15 up
 
 ### Import the customer license
 
-Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. You'll have to restart the server instance afterwards.
+Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. You have to restart the server instance afterwards.
 
 ```powershell
 Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
@@ -586,9 +586,9 @@ This step is not required for the application at runtime, but it will be needed 
     Publish-NAVApp -ServerInstance <server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
     ```
 -->
-## See Also
+## See also
 
-[Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-15.md)  
+[Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-17.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  

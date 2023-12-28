@@ -565,7 +565,7 @@ Restart-NAVServerInstance -ServerInstance <server instance name>
 
 ## See Also
 
-[Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-16.md)  
+[Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-17.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
