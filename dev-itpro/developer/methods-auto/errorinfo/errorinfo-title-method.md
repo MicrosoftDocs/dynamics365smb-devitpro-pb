@@ -47,7 +47,7 @@ The current title of the ErrorInfo.
 
 Set the **Title** property on error dialogs that are presented to the user to provide a more informative issue description. For advice on how to use the title to describe what’s wrong and enable the user to quickly scan the meaning of the error, see [User experience guidelines for errors](../../devenv-error-handling-guidelines.md#error-message-titles).  
 
-You are not required to set a title for error dialogs. For example, you might not want to add it for validation error messages. For more information, see
+You aren't required to set a title for error dialogs. For example, you might not want to add it for validation error messages. For more information, see
 [Error message best practices - what to say?](../../devenv-error-handling-guidelines.md#error_message_best_practices).
 
 
@@ -59,7 +59,7 @@ var
     vendorCode: Text[30];
     MyErrorInfo: ErrorInfo;
 begin
-    // setup the error info object
+    // set up the error info object
     MyErrorInfo.Title('The line dimension value isn''t valid');
     MyErrorInfo.Message(
         StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', dimension, vendorCode)
