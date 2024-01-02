@@ -512,7 +512,6 @@
 
 ## AL language
 ### [A tour of the AL language](developer/devenv-programming-in-al.md)
-### [FAQ for AL developers](developer/devenv-dev-faq.md)
 
 ### Program building blocks
 #### [System-defined variables](developer/devenv-system-defined-variables.md)
