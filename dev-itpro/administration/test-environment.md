@@ -12,6 +12,8 @@ ms.date: 04/01/2021
 ---
 # Preparing Test Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 As a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] reselling partner, you might want to have an environment that you can use for testing or pre-sales demonstrations. You can create such environments based on free 30 day trials, or you can set up a dedicated environment if you have a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] subscription yourself.  
 
 ## Test environments based on a 30 day trial
@@ -47,7 +49,7 @@ This type of environment can be useful if you want to run benchmark tests, for e
     In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can create new production and sandbox environments for the test customer.
 
     > [!TIP]
-    > Always include the domain or the Azure Active Directory ID of the customer in the URL when you login as a *delegated admin*. This way, you always know exactly which customer you are trying to access.
+    > Always include the domain or the Microsoft Entra ID of the customer in the URL when you login as a *delegated admin*. This way, you always know exactly which customer you are trying to access.
 
 5. Access [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as the local user that you created in step 2.
 
@@ -72,5 +74,6 @@ About two months before a major update, you can try out new functionality in pre
 [Prepare for major updates with preview environments](preview-environments.md)  
 [Administration of Business Central Online](tenant-administration.md)  
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/Deployment.md)  
-[Get Started as a Reseller of Business Central Online](get-started-online.md)  
+[Get Started as a Reseller of Business Central online](get-started-online.md)  
 [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products)  
+[Performance in Business Central Online](../performance/performance-online.md)   

@@ -9,7 +9,10 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
-# Resolving Codeunit 9010 Compilation Error 
+# Resolving Codeunit 9010 Compilation Error
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article explains how to resolve the compilation error that you get for codeunit **9010 Azure AD User Management** when converting a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to  [!INCLUDE[prodhort](../developer/includes/prod_short.md)].
 
 ## Resolution
@@ -49,7 +52,7 @@ FOREACH GraphUser IN Graph.GetUsers(50) DO
 Replace the current code with the following code. For example, you can save the code to a .txt file, then import the file and compile the codeunit.
 
 ```
-OBJECT Codeunit 9010 Azure AD User Management
+OBJECT Codeunit 9010 Microsoft Entra ID User Management
 {
   OBJECT-PROPERTIES
   {
@@ -80,8 +83,8 @@ OBJECT Codeunit 9010 Azure AD User Management
       ClientTypeManagement@1006 : Codeunit 4;
       Graph@1000 : DotNet "'Microsoft.Dynamics.Nav.AzureADGraphClient, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Dynamics.Nav.AzureADGraphClient.GraphQuery";
       IsInitialized@1003 : Boolean;
-      UserDoesNotObjectIdSetErr@1004 : TextConst '@@@="%1 =  The specified User Security ID";ENU=The user with the security ID %1 does not have a valid object ID in Azure Active Directory.';
-      CouldNotFindGraphUserErr@1005 : TextConst '@@@="%1 = The specified object id";ENU=An Azure Active Directory user with the object ID %1 was not found.';
+      UserDoesNotObjectIdSetErr@1004 : TextConst '@@@="%1 =  The specified User Security ID";ENU=The user with the security ID %1 does not have a valid object ID in Microsoft Entra ID.';
+      CouldNotFindGraphUserErr@1005 : TextConst '@@@="%1 = The specified object id";ENU=a Microsoft Entra ID user with the object ID %1 was not found.';
       IsTest@1002 : Boolean;
 
     [Internal]
@@ -266,7 +269,7 @@ OBJECT Codeunit 9010 Azure AD User Management
               AddToTempPlan(ServicePlanIdValue,AssignedPlan.ServicePlanName,TempPlan);
           END;
 
-      // If there are no Azure AD Plans, loop through Azure AD Roles
+      // If there are no Microsoft Entra ID Plans, loop through Microsoft Entra roles
       IF ISNULL(GraphUser.AssignedPlans) THEN
         FOREACH DirectoryRole IN GraphUser.Roles DO BEGIN
           EVALUATE(IsSystemRole,FORMAT(DirectoryRole.IsSystem));
@@ -618,7 +621,7 @@ OBJECT Codeunit 9010 Azure AD User Management
       AzureADMgtSetup@1000 : Record 6303;
     BEGIN
       IF AzureADMgtSetup.GET THEN
-        EXIT(AzureADMgtSetup."Azure AD User Mgt. Codeunit ID" = CODEUNIT::"Azure AD User Management");
+        EXIT(AzureADMgtSetup."Microsoft Entra ID User Mgt. Codeunit ID" = CODEUNIT::"Microsoft Entra ID User Management");
 
       EXIT(TRUE);
     END;

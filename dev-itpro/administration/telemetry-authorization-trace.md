@@ -15,6 +15,8 @@ ms.author: jswymer
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Authorization telemetry provides information about the authorization of users (or services) when trying to sign in to Business Central. This telemetry data can help you identify problems a user (or a service) might experience when signing in. 
 
 Authorization signals are emitted in two stages of sign-in. The first stage is the initial authorization, before the CompanyOpen trigger is run. In this stage, the system verifies that the user account is enabled in the tenant and has the correct entitlements. The telemetry data includes:
@@ -47,7 +49,7 @@ Occurs when a user has been successfully authorized. This data is not emitted fo
 |Dimension|Description or value|
 |---------|-----|
 |authorizationStatus|**Succeeded**|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
@@ -89,9 +91,9 @@ Occurs when a user sign-in has failed authorization. This data is not emitted fo
 <!--
 |operation_Name|**Authorization Failed (Pre Open Company)**||
 
-{"aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","Component version":"15.0.40494.0","guestUser":"False","Telemetry schema version":"0.2","failureReason":"The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.","authorizationStatus":"Failed","component":"Dynamics 365 Business Central Server","environmentType":"Production","telemetrySchemaVersion":"0.2","Environment type":"Production","Component":"Dynamics 365 Business Central Server","Environment name":"Production","environmentName":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Component, Telemetry schema version","componentVersion":"15.0.40494.0"}
+{"aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","Component version":"15.0.40494.0","guestUser":"False","Telemetry schema version":"0.2","failureReason":"The user was successfully authenticated in Microsoft Entra ID but the user account is disabled in Business Central.","authorizationStatus":"Failed","component":"Dynamics 365 Business Central Server","environmentType":"Production","telemetrySchemaVersion":"0.2","Environment type":"Production","Component":"Dynamics 365 Business Central Server","Environment name":"Production","environmentName":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Component, Telemetry schema version","componentVersion":"15.0.40494.0"}
 
-{"Telemetry schema version":"0.2","telemetrySchemaVersion":"0.2","authorizationStatus":"Failed","Component version":"15.0.40494.0","Environment name":"Production","componentVersion":"15.0.40494.0","Environment type":"Production","environmentName":"Production","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Component, Telemetry schema version","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","guestUser":"False","failureReason":"The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central."}
+{"Telemetry schema version":"0.2","telemetrySchemaVersion":"0.2","authorizationStatus":"Failed","Component version":"15.0.40494.0","Environment name":"Production","componentVersion":"15.0.40494.0","Environment type":"Production","environmentName":"Production","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Component, Telemetry schema version","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","guestUser":"False","failureReason":"The user was successfully authenticated in Microsoft Entra ID but the user account is disabled in Business Central."}
 -->
 
 ### Custom dimensions
@@ -105,7 +107,7 @@ Occurs when a user sign-in has failed authorization. This data is not emitted fo
 |userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).|
 
 <!--
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
@@ -116,7 +118,7 @@ Occurs when a user sign-in has failed authorization. This data is not emitted fo
 
 ## <a name="authorizationfailures"></a> Troubleshooting (Pre Open Company) authorization failures
 
-### The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.
+### The user was successfully authenticated in Microsoft Entra ID but the user account is disabled in Business Central.
 
 This message occurs when the user's account is valid, but the account is disabled. If you open the user account in Business Central, you'll see the **State** field is set to **Disabled**.
 
@@ -124,11 +126,11 @@ This message occurs when the user's account is valid, but the account is disable
 
 Enable the user account by setting the **State** field to **Enabled**. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions).
 
-### A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.
+### A user successfully authenticated in Microsoft Entra ID but the user does not have any entitlements in Business Central.
 
 This message occurs if the user has an account, but the account hasn't been assigned any entitlements.
 
-Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user can use, according to their Azure Active Directory role or license. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/)
+Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user can use, according to their Microsoft Entra role or license. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/)
 
 *Resolution*
 
@@ -140,7 +142,7 @@ Entitlements are assigned to the user account in the Microsoft 365 admin center 
 
 ### The user is not a direct/indirect member of the security group associated with the environment, or the group does not exist, hence restricting the user access to the environment
 
-In Azure Active Directory (Azure AD), you can create security that include users that you want to give access to your environments. Then, from the Business Central Admin center, you can associate the groups with your environments. This error occurs if the user who tries to sign in isn't a member of the security group, or the security group assigned to the environment doesn't exist in Azure AD. For more information, see [Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md).
+In Microsoft Entra ID, you can create security that include users that you want to give access to your environments. Then, from the Business Central Admin center, you can associate the groups with your environments. This error occurs if the user who tries to sign in isn't a member of the security group, or the security group assigned to the environment doesn't exist in Microsoft Entra ID. For more information, see [Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md).
 
 ## Authorization Succeeded (Open Company)
 
@@ -164,7 +166,7 @@ Occurs when the company has opened successfully. This data is emitted both for o
 |Dimension|Description or value|
 |---------|-----|
 |authorizationStatus|**Success**|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that opened the session, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
 |component|**Dynamics 365 Business Central Server**.|
@@ -250,7 +252,7 @@ This message indicates that the tenant has been locked by Microsoft, typically f
 
 For help with resolving this issue, read the following articles or contact Microsoft Support: 
 
-- [Troubleshoot account lockout problems with an Azure AD Domain Services managed domain](/azure/active-directory-domain-services/troubleshoot-account-lockout)
+- [Troubleshoot account lockout problems with a Microsoft Entra ID Domain Services managed domain](/azure/active-directory-domain-services/troubleshoot-account-lockout)
 
 - ["It looks like your account has been blocked" error when signing in to Microsoft 365](/office365/troubleshoot/access-management/account-blocked-error-when-sign-in)
 
@@ -282,6 +284,10 @@ This message occurs when AL code causes an error during the OnOpenCompany trigge
 *Resolution*
 
 Because AL code can trigger any type of error, the resolution will depend on the executed AL code. See the **failureReason** dimension for a callstack to determine where the error occurred.
+
+## Troubleshooting (Open Company) login performance
+[!INCLUDE[login_performance](../includes/include-telemetry-login-performance.md)])
+
 
 ## See also
 

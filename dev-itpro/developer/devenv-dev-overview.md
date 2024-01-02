@@ -61,6 +61,12 @@ Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md
 > [!NOTE]
 > If you have previous experience working with the C/SIDE development environment and need an overview of some of the changes between the two development environments, see [Differences in the Development Environments](devenv-differences.md).
 
+## Extending the functionality of Business Central
+You can extend the functionality of Business Central in several ways: you can extend tables, enumerations, application areas, pages, reports, code flows and the security model directly in AL. But you can also contribute directly to the base application in the open source projects for the system application modules. 
+
+For more information on the extensibility options available to AL developers in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] including examples on how to extend various features, such as extending item charges, best price calculations, and data archiving, see [Extensibility overview](devenv-extensibility-overview.md).
+
+
 ## Designer
 
 Designer works in the client and allows you to design pages using drag and drop components. Designer lets you build extensions in the client itself by rearranging fields, adding fields, and previewing your changes in page design. For more information, see [Using Designer](devenv-inclient-designer.md).

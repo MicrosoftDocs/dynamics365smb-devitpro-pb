@@ -13,6 +13,8 @@ ms.author: jswymer
 
 # Managing Sessions in the Admin Center
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 For each environment in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can use the **Manage Sessions** page to view information about active sessions on an environment and cancel selected sessions.
 
 To open the page, select **Manage Sessions**. Use the **Show session details** check box to show more or fewer details.
@@ -39,5 +41,5 @@ To restart an environment that is causing problems for you, go to the **Manage S
 [Updating Environments](tenant-admin-center-update-management.md)  
 [Rename Environments](tenant-admin-center-environments-rename.md)  
 [Restoring an Environment](tenant-admin-center-backup-restore.md)  
-[Move an Environment to another Azure Active Directory organization](tenant-admin-center-environments-move.md)  
+[Move an Environment to another Microsoft Entra organization](tenant-admin-center-environments-move.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  

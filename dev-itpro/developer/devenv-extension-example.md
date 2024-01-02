@@ -1,7 +1,7 @@
 ---
-author: jswymer
 title: "Building your first sample extension that uses new objects and extension objects"
 description: "Includes code for an example extension, complete with new objects, extension objects, and install and upgrade code."
+author: jswymer
 ms.custom: na
 ms.date: 05/19/2022
 ms.reviewer: na
@@ -10,9 +10,9 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 
-# Building your first Sample Extension with Extension Objects, Install Code, and Upgrade Code
+# Building your first sample extension with extension objects, install code, and upgrade code
 
-This walkthrough will guide you step by step to create a sample extension in AL. New objects and extension objects will be added to the base application for a simple reward feature for customers. Every section of this exercise includes code that serves for installing, customizing, or upgrading this sample extension. The final result can be published and installed on your tenants.
+This walkthrough guides you step by step to create a sample extension in AL. New objects and extension objects are added to the base application for a simple reward feature for customers. Every section of this exercise includes code that serves for installing, customizing, or upgrading this sample extension. The final result can be published and installed on your tenants.
 
 ## About this walkthrough
 
@@ -32,7 +32,7 @@ This walkthrough covers the following tasks:
 
 ## Prerequisites
 
-To complete this walkthrough, you'll need:
+To complete this walkthrough, you need:
 
 - The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant.
 
@@ -44,7 +44,7 @@ For more information on how to get started with your first extension for [!INCLU
 
 ## Rewards extension overview
 
-This extension enables the ability to assign one of the three reward levels to customers: GOLD, SILVER, and BRONZE. Each reward level can be assigned a discount percentage. Different types of objects available within the AL development environment will build the foundation of the user interface, allowing the user to edit the information. If you look for another option to update the layout of a page, you can use the Designer drag-and-drop interface. Additionally, this exercise contains the install code that will create the base for the reward levels. The upgrade code is run to upgrade the extension to a newer version and it will change the BRONZE level to ALUMINUM. By following all the steps of this walkthrough, you can publish the extension on your tenant and create a possible new feature for your customers.  
+This extension enables the ability to assign one of the three reward levels to customers: GOLD, SILVER, and BRONZE. Each reward level can be assigned a discount percentage. Different types of objects available within the AL development environment builds the foundation of the user interface, allowing the user to edit the information. If you look for another option to update the layout of a page, you can use the Designer drag-and-drop interface. Additionally, this exercise contains the install code that creates the base for the reward levels. The upgrade code is run to upgrade the extension to a newer version and it changes the BRONZE level to ALUMINUM. By following all the steps of this walkthrough, you can publish the extension on your tenant and create a possible new feature for your customers.  
 
 ## Reward table object
 
@@ -111,7 +111,7 @@ For more information about table properties, see [Table Properties](properties/d
 
 ## Reward card page object
 
-The following code adds a new page **50101 Reward Card** for viewing and editing the different reward levels that are stored in the new **Reward** table. Pages are the primary object that a user will interact with and have a different behavior based on the type of page that you choose. The **Reward Card** page is of type Card and it's used to view and edit one record or entity from the **Reward** table. 
+The following code adds a new page **50101 Reward Card** for viewing and editing the different reward levels that are stored in the new **Reward** table. Pages are the primary object that a user interacts with and have a different behavior based on the type of page that you choose. The **Reward Card** page is of type Card and it's used to view and edit one record or entity from the **Reward** table. 
 
 > [!TIP]  
 > Use the snippet `tpage, Page` to create the basic structure for the page object.
@@ -211,7 +211,7 @@ page 50102 "Reward List"
 }
 ```
 
-After you've created the objects, update the `startupObjectId` in the `launch.json` file to `50102`, which is the ID of the **Reward List** page and select the <kbd>Ctrl</kbd>+<kbd>F5</kbd>  shortcut to see the new page in your sandbox environment. You'll be asked to sign in to your [!INCLUDE [prod_short](includes/prod_short.md)], if you haven't already done so.  
+After you've created the objects, update the `startupObjectId` in the `launch.json` file to `50102`, which is the ID of the **Reward List** page and select the <kbd>Ctrl</kbd>+<kbd>F5</kbd> shortcut to see the new page in your sandbox environment. You are asked to sign in to your [!INCLUDE [prod_short](includes/prod_short.md)], if you haven't already done so.  
 
 > [!TIP]  
 > Information about your sandbox environment and other environments is stored as configurations in the `launch.json` file. For more information, see [JSON Files](devenv-json-files.md).  
@@ -220,7 +220,7 @@ After you've created the objects, update the `startupObjectId` in the `launch.js
 
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Designer works in the browser and allows modifying the current page. It enables users to add existing table fields, move fields around, or remove fields from the page. Users can make changes to display the information they need, where they need it by using drag-and-drop components. 
  
-To show how Designer changes the design of a page, you begin by adding one field to the **Reward** table. This field will be used later to exemplify the Designer's properties. 
+To show how Designer changes the design of a page, you begin by adding one field to the **Reward** table. This field is used later to exemplify the Designer's properties. 
 
 ```AL
 field(4;"Minimum Purchase";Decimal)
@@ -230,8 +230,7 @@ field(4;"Minimum Purchase";Decimal)
 }
 ```
 
-From this point, changes to the **Reward Card** page can be done either manually by adding the code below in Visual Studio Code or by using Designer's functions to add the same field. Both ways lead to the same results, but using Designer speeds up the process. 
-
+From this point, changes to the **Reward Card** page can be done either manually by adding the following code in Visual Studio Code or by using Designer's functions to add the same field. Both ways lead to the same results, but using Designer speeds up the process. 
 
 ```AL
 field("Minimum Purchase";"Minimum Purchase")
@@ -293,7 +292,6 @@ tableextension 50103 "Customer Ext" extends Customer
         }
     }
 }
-
 ```
 
 > [!NOTE]
@@ -350,7 +348,7 @@ At this point, reward levels can be created and assigned to customers. To view r
 
 ## Help links
 
-This sample app is relatively straightforward, but we want users of your app to be able to get help instantly and learn more in the process of using it. Just like [!INCLUDE [prod_short](includes/prod_short.md)] has Help readily available for users, you'll configure your app to get context-sensitive links to Help, and then apply tooltips to the fields in your pages.  
+This sample app is relatively straightforward, but we want users of your app to be able to get help instantly and learn more in the process of using it. Just like [!INCLUDE [prod_short](includes/prod_short.md)] has Help readily available for users, you configure your app to get context-sensitive links to Help, and then apply tooltips to the fields in your pages.  
 
 ### Configure context-sensitive links to Help
 
@@ -416,7 +414,7 @@ ToolTip = 'Specifies the level of reward that the customer has at this point.';
 }
 ```
 
-Now, if you deploy the app, you'll be able to read the tooltip text for the **Reward ID** field, and if you choose the *Learn more* link or select <kbd>Ctrl</kbd>+<kbd>F1</kbd>, a new browser tab opens the equivalent of `https://mysite.com/documentation/sales-rewards`.  
+Now, if you deploy the app, you are able to read the tooltip text for the **Reward ID** field, and if you choose the *Learn more* link or select <kbd>Ctrl</kbd>+<kbd>F1</kbd>, a new browser tab opens the equivalent of `https://mysite.com/documentation/sales-rewards`.  
 
 ![Customer card extension tool tip example.](media/help/CustomerCardExt_TooltipHelp.png)
 
@@ -448,7 +446,7 @@ codeunit 50105 RewardsInstallCode
     end;
 
     // Insert the GOLD, SILVER, BRONZE reward levels
-    procedure InsertDefaultRewards();
+    procedure InsertDefaultRewards()
     begin
         InsertRewardLevel('GOLD', 'Gold Level', 20);
         InsertRewardLevel('SILVER', 'Silver Level', 10);
@@ -456,7 +454,7 @@ codeunit 50105 RewardsInstallCode
     end;
 
     // Create and insert a reward level in the "Reward" table.
-    procedure InsertRewardLevel(ID : Code[30]; Description : Text[250]; Discount : Decimal);
+    procedure InsertRewardLevel(ID : Code[30]; Description : Text[250]; Discount : Decimal)
     var
         Reward : Record Reward;
     begin
@@ -474,7 +472,7 @@ For more information about install code, see [Writing Extension Install Code](de
 
 ## Upgrade code
 
-When you upgrade an extension to a newer version, any modifications, which are required to support the upgrade in the existing data must be written in an upgrade codeunit. In this example, the following upgrade codeunit contains code that changes the BRONZE reward level to ALUMINUM level in customer records. The upgrade codeunit will apply the changes when you run the [Start-NAVAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet in terminal.
+When you upgrade an extension to a newer version, any modifications, which are required to support the upgrade in the existing data must be written in an upgrade codeunit. In this example, the following upgrade codeunit contains code that changes the BRONZE reward level to ALUMINUM level in customer records. The upgrade codeunit applies the changes when you run the [Start-NAVAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet in terminal.
 
 
 > [!IMPORTANT]  

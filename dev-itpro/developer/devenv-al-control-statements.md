@@ -1,6 +1,6 @@
 ---
-title: "AL Control Statements"
-description: "Compound, conditional, and repetitive control statements in AL for Business Central"
+title: AL control statements
+description: Compound, conditional, and repetitive control statements in AL for Business Central.
 ms.custom: na
 ms.date: 03/15/2023
 ms.reviewer: na
@@ -10,15 +10,15 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# AL Control Statements
+# AL control statements
 
 AL code consists of one or more statements, which are executed sequentially in a top-down order. However, you'll often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do so, you use control structures.  
 
 The control structures in AL are divided into the following main groups, as described in this article:  
 
-- [AL Compound Statements](devenv-al-control-statements.md#al-compound-statements)  
-- [AL Conditional Statements](devenv-al-control-statements.md#al-conditional-statements)  
-- [AL Repetitive Statements](devenv-al-control-statements.md#al-repetitive-statements)  
+- [AL compound statements](devenv-al-control-statements.md#al-compound-statements)  
+- [AL conditional statements](devenv-al-control-statements.md#al-conditional-statements)  
+- [AL repetitive statements](devenv-al-control-statements.md#al-repetitive-statements)  
 
 > [!NOTE]  
 > In the following sections, conventions for how to structure and align AL code are presented to introduce best practices. In many cases, the structure isn't necessary to get the code to compile, but rather to improve readability.
@@ -44,7 +44,7 @@ The begin-end structure is also called a *block*. Blocks can be useful to refer 
 
 When begin follows, then, else, or do should be on the same line and preceded by one space character.  
 
-### Example  
+### Example 1
 
 ```AL
 if (x = y) and (a = b) then begin  
@@ -53,7 +53,7 @@ if (x = y) and (a = b) then begin
 end;   
 ```  
 
-### Example  
+### Example 2
 
 ```AL
 if (xxx = yyyyyyyyyy) and   
@@ -117,7 +117,7 @@ Reading several nested if-then-else statements can be confusing but generally, a
 
 - If the last statement in the `then` part of an `if-then-else` statement is an `exit` or an `error`, don't continue with an `else` statement.  
 
-#### Example  
+#### Example
 
 ```AL 
 if x = y then  
@@ -126,7 +126,7 @@ else
     x := -x - 1;  
 ```  
 
-#### Example  
+#### Example
 
 ```AL  
 if (xxxxxxxxxx = yyy) and   
@@ -137,7 +137,7 @@ else
     y := b;  
 ```  
 
-#### Example  
+#### Example
 
 ```AL 
 if x <> y then  
@@ -157,7 +157,7 @@ else begin
 end;  
 ```  
 
-#### Example  
+#### Example
 The following example shows an if-then statement without the optional else statement.  
 
 ```AL 
@@ -165,7 +165,7 @@ if Amount < 1000 then
     Total := Total + Amount;  
 ```  
 
-#### Example  
+#### Example
 The following example shows a nested if-then-else statement.  
 
 ```AL 
@@ -379,7 +379,7 @@ The *`<List>`* variable must be of the List, XmlNodeList, XmlAttributeCollection
 
 The following code example iterates through a list of customer names and returns each customer name in a message.
 ```AL  
-procedure PrintCustomerNames(customerNames : List of [Text]);
+procedure PrintCustomerNames(customerNames : List of [Text])
 var
     customerName : Text;
 begin

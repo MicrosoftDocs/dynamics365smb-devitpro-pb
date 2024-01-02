@@ -3,7 +3,7 @@ title: "ExternalBusinessEvent Attribute"
 description: "Specifies that the method is published as an external business event."
 ms.author: solsen
 ms.custom: na
-ms.date: 01/23/2023
+ms.date: 06/07/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Specifies that the method is published as an external business event.
 ## Syntax
 
 ```AL
-[ExternalBusinessEvent(Name: Text, DisplayName: Text, Description: Text, Category: enum)]
+[ExternalBusinessEvent(Name: Text, DisplayName: Text, Description: Text, Category: enum [, Version: Text])]
 ```
 
 ### Arguments
@@ -47,6 +47,10 @@ Specifies a description of the external business event.
 *Category*  
 &emsp;Type: [enum](../methods-auto/anyenum/anyenum-data-type.md)  
 Specifies the category of the event.  
+
+*[Optional] Version*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Specifies a version for the external business event.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

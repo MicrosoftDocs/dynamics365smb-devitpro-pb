@@ -3,7 +3,7 @@ title: "Data Types and Methods in AL"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 02/28/2023
+ms.date: 10/25/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -79,6 +79,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[RecordRef](recordref/recordref-data-type.md)|References a record in a table.|
 |[Report](report/report-data-type.md)|Is used to display, print, or process information from a database.|
 |[RequestPage](requestpage/requestpage-data-type.md)|Is a page that is run before the report starts to execute. Request pages enable end-users to specify options and filters for a report.|
+|[SecretText](secrettext/secrettext-data-type.md)|Denotes a secret text string, which is non-debuggable.|
 |[Session](session/session-data-type.md)|Represents a Microsoft Dynamics Business Central session.|
 |[SessionInformation](sessioninformation/sessioninformation-data-type.md)|Is a complex data type for exposing Session information into AL.|
 |[SessionSettings](sessionsettings/sessionsettings-data-type.md)|Is a complex data type for passing user personalization settings for a client session as an object. The object contains properties that correspond to the fields in the system table **2000000073 User Personalization**, including: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. You can use the AL methods of the SessionSettings data type to get, set, and send the user personalization settings for the current client session.|
@@ -134,6 +135,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[ObjectType](objecttype/objecttype-option.md)|The different types of objects.|
 |[PageBackgroundTaskErrorLevel](pagebackgroundtaskerrorlevel/pagebackgroundtaskerrorlevel-option.md)|Specifies how an error in the page background task appears in the client.|
 |[PermissionObjectType](permissionobjecttype/permissionobjecttype-option.md)|The different types of objects that can have different permissions assigned.|
+|[PromptMode](promptmode/promptmode-option.md)|Specifies the current mode of a PromptDialog page.|
 |[ReportFormat](reportformat/reportformat-option.md)|Specifies the format of the report.|
 |[ReportLayoutType](reportlayouttype/reportlayouttype-option.md)|Represents the type of a report layout.|
 |[SecurityFilter](securityfilter/securityfilter-option.md)|Specifies how security filters are applied to the record.|

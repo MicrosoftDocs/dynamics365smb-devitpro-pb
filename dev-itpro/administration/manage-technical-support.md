@@ -6,11 +6,13 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/25/2022
+ms.date: 12/15/2023
 ms.author: jswymer
 ---
 
 # Managing technical support
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 When users report a problem with [!INCLUDE [prod_short](../developer/includes/prod_short.md)], superusers or the internal administrator can often find a solution. The internal administrator can find technical information in the **Help and Support** page, and they can then escalate relevant issues to the reselling partner.  
 
@@ -90,7 +92,7 @@ This section provides an overview of the most useful tools for troubleshooting t
     Open the **Database Locks** page in [!INCLUDE [prod_short](../includes/prod_short.md)] to view existing locks in this tenant's database. You can often see which where the code is tht caused the problem.  
 - Additional logging per session
 
-    You can enable more logging that can help you troubleshoot in the current session. For example, if you're concerned if a specific report or other process might be the reason for database locks, go to the **Help and Support** page and enable more logging. Then, run the process that you're concerned about, and then analyze the logs. For more information, see [Analyzing long running operations in Application Insights](telemetry-long-running-sql-query-trace.md).
+    You can enable more logging that can help you troubleshoot in the current session. For example, if you're concerned if a specific report or other process might be the reason for database locks, go to the **Help and Support** page and enable more logging. For more information, see [Resources for Help and Support - Troubleshooting](/dynamics365/business-central/product-help-and-support#troubleshooting). Then, run the process that you're concerned about, and then analyze the logs. For more information, see [Analyzing long running SQL operations in Application Insights](telemetry-long-running-sql-query-trace.md).
 - Debug your app or pre-tenant extension  
 
     With Visual Studio Code and the AL Language extension, you get an integrated debugger to help you inspect your code to verify that your application can run as expected. For more information, see [Debugging in AL](../developer/devenv-debugging.md).
@@ -112,9 +114,9 @@ For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, a user 
 
 For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, internal and delegated administrators also have access to this information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. You can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to easily navigate to the different environments in a tenant, and you can create sandbox environments that can help troubleshoot any issues reported by users. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
-#### Azure Active Directory tenant
+#### Microsoft Entra tenant
 
-When the internal administrator wants to contact the partner for support, then the **Help and Support** page encourages them to include information about their Azure Active Directory tenant ID in the email. This information is shown in the **Troubleshooting** section at the bottom of the **Help and Support** page.  
+When the internal administrator wants to contact the partner for support, then the **Help and Support** page encourages them to include information about their Microsoft Entra tenant ID in the email. This information is shown in the **Troubleshooting** section at the bottom of the **Help and Support** page.  
 
 The delegated administrator can use that to identify the tenant in the Partner Center and in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] for troubleshooting.  
 

@@ -1,5 +1,5 @@
 ---
-title: Report Generation Telemetry Trace | Microsoft Docs
+title: Report Generation Telemetry | Microsoft Docs
 description: Learn about the report telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
@@ -15,9 +15,11 @@ ms.service: dynamics365-business-central
 
 [!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Report telemetry gathers data about which reports are run on the environment. It provides information about whether the report succeeded, failed, or was canceled. For each report, it tells you how long it ran, how many SQL statements it executed, and how many rows it consumed.
 
-You use this data to gather statistics on report usage or to help identify slow-running reports.
+You use this data to gather statistics on report usage, find failures in reports, or to help identify slow-running reports.
 
 > [!TIP]
 > The time spent to run a report consists of two parts: generating the dataset and rendering the report (applying the layout). In report telemetry, you get two durations: serverExecutionTime and totalTime. The former is roughly the time it takes for the server to generate the dataset. To calculate the rendering time, simply subtract serverExecutionTime from totalTime: renderingTime = totalTime - serverExecutionTime.
@@ -54,7 +56,7 @@ The custom dimensions that are of particular interest for this operation include
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
@@ -84,6 +86,7 @@ The custom dimensions that are of particular interest for this operation include
 
 <sup><a name=1>1</a></sup>From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
 
+
 ### <a name=reportAction></a>reportAction
 
 The reportAction dimension shows actions taken to generate a report. The action can be taken from the report request page, for example, from the **Send To** menu,  or from AL code.
@@ -112,6 +115,71 @@ The documentFormat dimension shows the output of the generated report as a resul
 |Custom|The output was an custom file type.|
 |ProcessingOnly|The action was for processing report without any kind of layout.|
 
+### Sample KQL code (successful report generation - usage)
+
+This KQL code can help you get started analyzing which reports users run:
+
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where operation_Name == "Success report generation" // Note that in a later version of the schema, this field will not be used 
+     or customDimensions.eventId == 'RT0006'          // introduced in version 16.1
+| where customDimensions.result == "Success"
+| project timestamp
+// in which environment/company did it happen
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+// in which extension/app
+, extensionId = customDimensions.extensionId
+, extensionName = customDimensions.extensionName
+, extensionVersion = customDimensions.extensionVersion
+, extensionPublisher = customDimensions.extensionPublisher
+// in which object
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+// what did the user do
+, documentFormat = customDimensions.documentFormat   // documentFormat dimension added in version 20.0
+, LayoutAppId = customDimensions.layoutAppId         // layout dimensions added in version 20.0
+, LayoutName = customDimensions.layoutName           // layout dimensions added in version 20.0
+, LayoutType = customDimensions.layoutType           // layout dimensions added in version 20.0
+, reportAction = customDimensions.reportAction       // reportAction dimension added in version 20.0
+, reportingEngine = customDimensions.reportingEngine // reportingEngine dimension was added in version 17.3
+// which user ran the report
+, usertelemetryId = case(
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry id was introduced in the platform in version 20.0
+, 'N/A'
+)
+```
+
+
+If you want to summarize the data, keep the columns you want to group by in the _project_ part of the KQL query above, and add a _summarize_ command:
+
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where operation_Name == "Success report generation" // Note that in a later version of the schema, this field will not be used 
+     or customDimensions.eventId == 'RT0006'          
+| where customDimensions.result == "Success"
+| project timestamp
+, alObjectName = customDimensions.alObjectName
+, LayoutType = customDimensions.layoutType           
+, reportAction = customDimensions.reportAction       
+// calculate report count by ReportName, ReportAction (save/preview/download/...), and LayoutType (Word/Excel/RDLC/...)
+| summarize ReportCount=count() 
+by ReportName = tostring(customDimensions.alObjectName)
+, ReportAction = tostring(customDimensions.reportAction)
+, LayoutType = tostring(customDimensions.layoutType)
+```
+
+
+### Sample KQL code (successful report generation - all dimensions)
+
+[!INCLUDE[report-success-kql](../includes/include-telemetry-report-success-kql.md)]
+
+
 ## Failed report generation
 
 This operation occurs when the report dataset couldn't be generated because of an error.
@@ -131,7 +199,7 @@ The following table explains the general dimensions of the **Failed report gener
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
@@ -165,6 +233,48 @@ The following table explains the general dimensions of the **Failed report gener
 
 When a report fails to generate, the `result` column in the CustomDimensions will include the title of the exception that was thrown by the service or the AL code.  
 
+### Sample KQL code (failed report generation)
+
+This KQL code can help you get started analyzing report failures:
+
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where operation_Name == "Failed report generation" // Note that in a later version of the schema, this field will not be used 
+  or customDimensions.eventId == 'RT0006'            // introduced in version 16.1
+| where customDimensions.result <> "Success"
+| project timestamp
+// in which environment/company did it happen
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+// in which extension/app
+, extensionId = customDimensions.extensionId
+, extensionName = customDimensions.extensionName
+, extensionVersion = customDimensions.extensionVersion
+, extensionPublisher = customDimensions.extensionPublisher
+// in which object
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+// what did the user do
+, documentFormat = customDimensions.documentFormat   // documentFormat dimension added in version 20.0
+, LayoutAppId = customDimensions.layoutAppId         // layout dimensions added in version 20.0
+, LayoutName = customDimensions.layoutName           // layout dimensions added in version 20.0
+, LayoutType = customDimensions.layoutType           // layout dimensions added in version 20.0
+, reportAction = customDimensions.reportAction       // reportAction dimension added in version 20.0
+, reportingEngine = customDimensions.reportingEngine // reportingEngine dimension was added in version 17.3
+// which user ran the report
+, usertelemetryId = case(
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry id was introduced in the platform in version 20.0
+, 'N/A'
+)
+// what happened
+, alStackTrace = customDimensions.alStackTrace
+, failureReason = customDimensions.result
+```
+
 ## Cancellation report generation
 
 This operation occurs when the report dataset generation was canceled. There are various conditions that can cancel a report. The **Cancellation report generation** operation emits different trace messages for each condition.
@@ -184,7 +294,7 @@ The following table explains the general dimensions of the **Cancellation report
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
@@ -201,6 +311,53 @@ The following table explains the general dimensions of the **Cancellation report
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
+
+### Sample KQL code (cancelled report generation)
+
+This KQL code can help you get started analyzing report that were cancelled by users or the platform.
+
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where operation_Name == "Cancellation report generation" // Note that in a later version of the schema, this field will not be used   
+     or customDimensions.eventId == "RT0007" // introduced in version 16.1
+| project timestamp
+// in which environment/company did it happen
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+// in which extension/app
+, extensionId = customDimensions.extensionId
+, extensionName = customDimensions.extensionName
+, extensionVersion = customDimensions.extensionVersion
+, extensionPublisher = customDimensions.extensionPublisher
+// in which object
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+// what did the user do
+, documentFormat = customDimensions.documentFormat   // documentFormat dimension added in version 20.0
+, LayoutAppId = customDimensions.layoutAppId         // layout dimensions added in version 20.0
+, LayoutName = customDimensions.layoutName           // layout dimensions added in version 20.0
+, LayoutType = customDimensions.layoutType           // layout dimensions added in version 20.0
+, reportAction = customDimensions.reportAction       // reportAction dimension added in version 20.0
+, reportingEngine = customDimensions.reportingEngine // reportingEngine dimension was added in version 17.3
+// which user ran the report
+, usertelemetryId = case(
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry ID was introduced in the platform in version 20.0
+, 'N/A'
+)
+// why was the report cancelled
+, cancelReason = tostring( customDimensions.cancelReason )
+// 
+, cancelReasonLong = case(
+  message has "The number of processed rows exceeded", "MaxRowsExceeded"
+, message has "The action took longer to complete", "MaxTimeExceeded"
+, message has "Received a cancellation request from the user", "UserCancelled"
+, "Unknown reason"
+)
+```
 
 ### <a name="reportcancellation"></a>Analyzing report cancellations
 
@@ -247,7 +404,7 @@ The following table explains the general dimensions of the **Report cancelled bu
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
@@ -266,6 +423,47 @@ The following table explains the general dimensions of the **Report cancelled bu
 |extensionPublisher|Specifies the name of the extension publisher that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
+
+
+### Sample KQL code (cancelled report generation where commit occurred)
+
+This KQL code can help you get started analyzing report that were cancelled by users or the platform but where a database commit occurred. 
+
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where customDimensions.eventId == 'RT0011'
+| project timestamp
+// in which environment/company did it happen
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+// in which extension/app
+, extensionId = customDimensions.extensionId
+, extensionName = customDimensions.extensionName
+, extensionVersion = customDimensions.extensionVersion
+, extensionPublisher = customDimensions.extensionPublisher
+// in which object
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+// what did the user do
+, documentFormat = customDimensions.documentFormat   // documentFormat dimension added in version 20.0
+, LayoutAppId = customDimensions.layoutAppId         // layout dimensions added in version 20.0
+, LayoutName = customDimensions.layoutName           // layout dimensions added in version 20.0
+, LayoutType = customDimensions.layoutType           // layout dimensions added in version 20.0
+, reportAction = customDimensions.reportAction       // reportAction dimension added in version 20.0
+, reportingEngine = customDimensions.reportingEngine // reportingEngine dimension was added in version 17.3
+// which user ran the report
+, usertelemetryId = case(
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry ID was introduced in the platform in version 20.0
+, 'N/A'
+)
+// why was the report cancelled
+, cancelReason = tostring( customDimensions.cancelReason )
+, alStackTrace = customDimensions.alStackTrace
+```
 
 
 
@@ -292,7 +490,7 @@ The following table explains the CustomDimensions included in report generation 
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |sqlExecutes|Specifies the number of SQL statements that the request executed. ||
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. ||
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. ||
 |companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used at time of execution. ||
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.||
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).||
@@ -314,7 +512,7 @@ Report cancellation
 
 Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|

@@ -3,7 +3,7 @@ title: "HttpRequestMessage Data Type"
 description: "Represents an HTTP request message."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Represents an HTTP request message.
 
 
 
+## Instance methods
 The following methods are available on instances of the HttpRequestMessage data type.
 
 |Method name|Description|
@@ -27,8 +28,10 @@ The following methods are available on instances of the HttpRequestMessage data 
 |[Content([HttpContent])](httprequestmessage-content-method.md)|Gets or sets the contents of the HTTP message.|
 |[GetHeaders(var HttpHeaders)](httprequestmessage-getheaders-method.md)|Gets a reference to the collection of HTTP request headers.|
 |[GetRequestUri()](httprequestmessage-getrequesturi-method.md)|Gets the URI used for the HTTP request.|
+|[GetSecretRequestUri()](httprequestmessage-getsecretrequesturi-method.md)|Gets the secret URI used for the HTTP request.|
 |[Method([Text])](httprequestmessage-method-method.md)|Gets or sets the method type as defined in the HTTP standard.|
 |[SetRequestUri(Text)](httprequestmessage-setrequesturi-method.md)|Sets the URI used for the HTTP request.|
+|[SetSecretRequestUri(SecretText)](httprequestmessage-setsecretrequesturi-method.md)|Sets the secret URI used for the HTTP request.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -3,7 +3,7 @@ title: "Report Object"
 description: "The report object in AL for Business Central allows to create a new report."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/31/2022
+ms.date: 09/04/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,22 +15,76 @@ ms.author: solsen
 
 Reports are used to print or display information from a database. You can use a report to structure and summarize information, and to print documents, such as sales quotes and invoices.
 
-Creating a report consists of two primary tasks; the first task is to create the underlying data model and the next is to define the visual layout that displays the data. The report object defines the underlying data model and specifies which database tables and fields to pull data from. When the report is run, that data is displayed in a specified layout; the visual layout, which determines the content and format of a report when it's viewed and printed. 
+The report object is typically used for one of the following three different scenarios: 
+- analytical reports, where the output is meant for online consumption of data. 
+- document reports, where the output is meant for print. 
+- processing-only reports, where there's no output. In this case, the report object is typically used with a request page to let the user set filters/options for the operation.
+
+Creating a report consists of two primary tasks; the first task is to create the underlying data model, and for analytical and document reports, the second task is to define the visual layout that displays the data. The report object defines the underlying data model and specifies, which database tables and fields to pull data from. When the report is run, that data is displayed in a specified layout; the visual layout, which determines the content and format of a report when it's viewed and printed. 
 
 For more information about defining database tables and fields, see [Defining a Report Dataset](devenv-report-dataset.md). For more information about the Report data type, see [Report Data Type](methods-auto/report/report-data-type.md).
-
-You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are three types of report layouts; client report definition, also called RDL layouts, Word layouts, and Excel layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word. Word layouts are based on a Word document that includes a custom XML part representing the report dataset. Excel layouts are created in Excel based on the report dataset, utilizing the Excel capabilities such as sliders, diagrams, charts, pivot tables, and PowerQuery. One report can contain multiple report layout definitions. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
 
 If you want to modify an existing report, for example, add new columns, add to the request page, or add a new layout, you can create a report extension instead. For more information, see [Report Extension Object](devenv-report-ext-object.md).
 
 [!INCLUDE[intelli_shortcut](includes/query_as_a_report_datasource.md)]
 
+## Report syntax
+
+A report object consists of properties, a dataset section, and optionally sections for request page, layouts, and code. The order in which the sections appear matters. The following example illustrates the ordering:
+
+```AL
+report ObjectId ReportName
+{
+    // report properties such as 
+    UsageCategory = ReportsAndAnalysis;
+    ApplicationArea = All;
+
+    dataset {}
+   
+    // requestpage section is optional  
+    requestpage {} 
+
+    // rendering section is optional, but recommended for reports that have a layout
+    rendering {} 
+    
+    // optionally, add AL code here
+}
+```
 
 ## Snippet support
 
 Typing the shortcut `treport` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
+## Report properties
+You can control the way the AL runtime and client work on the report by setting properties on the report object. Some popular properties are:
+
+- [AdditionalSearchTerms](properties/devenv-additionalsearchterms-property.md) - helps users when searching for the report in Tell Me search. 
+- [Caption](properties/devenv-caption-property.md) - specifies the report title as shown on request pages, Tell-me search, report/role explorer, and when users bookmark the report to their role centers.
+- [UsageCategory](properties/devenv-usagecategory-property.md) - determines how the report is shown in report/role explorer. 
+- [AllowScheduling](properties/devenv-allowscheduling-property.md) - allows the report to be run in the background.  
+- [DataAccessIntent](properties/devenv-dataaccessintent-property.md) - allows the AL runtime to read data from a secondary database, if present.
+
+For a list of all properties that you can set on the report object, see the AL language reference article [Report, Report Fields, and Report Extension Properties](properties/devenv-report-property-overview.md).
+
+## Report layouts
+You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are three types of report layouts; client report definition, also called RDL layouts, Word layouts, and Excel layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word and are based on a Word document that includes a custom XML part representing the report dataset. Excel layouts are created in Excel based on the report dataset, utilizing the Excel capabilities such as sliders, diagrams, charts, pivot tables, and PowerQuery. One report can contain multiple report layout definitions. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
+
+In the following, you can read about properties of the different layout types. 
+
+| Layout type | Properties |
+|---------------------------------|-------------|
+| Excel | No-code layout experience for end-users. <br> Primary layout type for analytical reports. <br> Does not support printing from the request page. | 
+| RDL | Pro-developer layout experience (not for end-users.) <br> Mostly needed for document reports. Use this layout type when you need pixel-perfect outputs for printing. <br> Supports printing from the request page. | 
+| Word | Low-code layout experience. Some expert end-users can work with XML and tags. <br> Mostly needed for document reports. <br> Supports printing from the request page.  | 
+
+## Report labels
+
+[!INCLUDE [report_labels](includes/include-report-labels.md)]
+
+For more information about labels, see [Working with labels](devenv-using-labels.md).
+
 
 ## Report example
 
@@ -39,9 +93,11 @@ The following example is a report that prints the list of customers. The report 
 ```AL
 report 50103 "Customer List"
 {
-  CaptionML=ENU='Customer List';
-  DefaultLayout = RDLC; // if Word use WordLayout property
-  RDLCLayout = 'MyRDLReport.rdl';
+  Caption = 'Customer List';
+  AdditionalSearchTerms = 'Sales, Sold';
+  UsageCategory = ReportsAndAnalysis;
+  AllowScheduling = true;
+  DataAccessIntent = ReadOnly;
 
   dataset
   {
@@ -183,8 +239,17 @@ report 50103 "Customer List"
 
   requestpage
   {
-    SaveValues=true;
-    ContextSensitiveHelpPage = 'my-feature';
+    SaveValues = true;
+
+    // These properties control the title and content of the teaching tip.
+    AboutTitle = 'Awesome report';
+    AboutText = 'This is an awesome report. Use it to be awesome';
+    // Use the multi-language versions AboutTitleML and AboutTextML if you need that.
+
+    // This property defines the help page for this report.
+    // Remember to also set contextSensitiveHelpUrl in the app.json
+    ContextSensitiveHelpPage = 'my-feature.html';
+
     layout
     {
     }
@@ -196,8 +261,28 @@ report 50103 "Customer List"
 
   labels
   {
-      LabelName = 'Label Text', Comment = 'Foo', MaxLength = 999, Locked = true;
+      Label1 = 'Label Text', Comment = 'Foo', MaxLength = 999, Locked = true;
   }
+
+  rendering 
+  {
+    layout(LayoutExcelPivot)
+    {
+      Type = Excel;
+      Caption = 'Customer list (analyze)';
+      Summary = 'Customer list for analysis in Excel';
+      LayoutFile = 'CustomerListExcel.xlsx';
+    }
+
+    layout(CustomerListPrintLayout)
+    {
+      Type = RDLC;
+      Caption = 'Customer list (print)';
+      Summary = 'Customer list in print layout';
+      LayoutFile = 'CustomerListRDL.rdl';
+    }
+  } 
+
 
   trigger OnPreReport();
   var
@@ -220,7 +305,6 @@ report 50103 "Customer List"
     Customer_Currency_CodeCaptionLbl : Label 'Currency Code';
     Total_LCY_CaptionLbl : Label 'Total (LCY)';
 }
-
 ```
 
 [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
@@ -232,12 +316,14 @@ It's possible to schedule a report to run at your desired date and time by using
 ## See also
 
 [Report Extension Object](devenv-report-ext-object.md)  
+[Using request pages with reports](devenv-request-pages-for-reports.md)  
+[Report datatype](methods-auto/report/report-data-type.md)  
+[Report Properties](properties/devenv-report-properties.md)  
+[How users can schedule a report](/dynamics365/business-central/ui-work-report#ScheduleReport.md)  
+[AllowScheduling Property](../developer/properties/devenv-allowscheduling-property.md)   
+[Defining a Report Dataset](devenv-report-dataset.md)  
 [Request Pages](devenv-request-pages.md)  
-[Report Properties](../developer/properties/devenv-report-properties.md)  
+[Adding Help Links from Reports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
+[Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
-[Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[Page Properties](properties/devenv-page-property-overview.md)  
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  

@@ -13,11 +13,13 @@ author: jswymer
 
 # Preparing Dynamics NAV or Dynamics 365 Business Central for Upcoming Changes to Browser Cookie Policy
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The web is constantly evolving to improve the user experience, security, and privacy. Upcoming releases of some browsers expected early calendar year 2020 include a change in how cookies are handled. This change affects federated authentication flows and cross-domain hosting scenarios when using these browsers. The change can potentially affect users' ability to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] or Dynamics NAV in one or more of the following situations:
 
 - When using the Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] Outlook Add-In.
 - Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] as a SharePoint app.
-- Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] is using Azure Active Directory authentication.
+- Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] is using Microsoft Entra authentication.
 - Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] is embedded in an iframe as part of another web site.
 
 ## Which browsers are impacted by the change
@@ -55,7 +57,7 @@ To prevent disruption, you must upgrade the platform for your version of Dynamic
 |Dynamics 365 Business Central 2019 Release Wave 2|[15.2](https://support.microsoft.com/help/4533389/update-15-1-for-microsoft-dynamics-365-business-central-2019-release-w)|
 
 > [!NOTE]
-> Currently, Chrome 80 implements a temporary mitigation to allow LAX+Post requests in a 2 minute window. This should be enough to make Azure AD authentication work. However, this mitigation will be removed at some point. For more information from Chrome, see [SameSite Updates](https://www.chromium.org/updates/same-site).
+> Currently, Chrome 80 implements a temporary mitigation to allow LAX+Post requests in a 2 minute window. This should be enough to make Microsoft Entra authentication work. However, this mitigation will be removed at some point. For more information from Chrome, see [SameSite Updates](https://www.chromium.org/updates/same-site).
 
 
 ### Additional changes required to load balancer configuration
@@ -102,7 +104,7 @@ In Chrome 80 Beta or older Chrome versions where **Cookies without SameSite must
 In the short-term, the Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] store apps for tablet and phone shouldn't be affected. However, there's evidence from each of the major browsers that their new security policies will eventually also roll out to the technology that our mobile apps rely on. We recommend you minimize risk and take action as outlined in this article.
 
 **Are Control Add-Ins affected?**  
-Custom control add-ins sometimes rely on [!INCLUDE[prod_short](../includes/prod_short.md)]'s authentication with Azure AD. Whether this is impacted by the cookie policy changes is highly dependent on your implementation to handle Azure AD. We recommend you minimize risk and take action as outlined in this article.
+Custom control add-ins sometimes rely on [!INCLUDE[prod_short](../includes/prod_short.md)]'s authentication with Microsoft Entra ID. Whether this is impacted by the cookie policy changes is highly dependent on your implementation to handle Microsoft Entra ID. We recommend you minimize risk and take action as outlined in this article.
 
 **Is the Dynamics NAV Windows Client affected?**  
-The Dynamics NAV Windows client may be configured to authenticate using Azure AD. In this case, the change in cookie policy has no effect on access to the Windows client.
+The Dynamics NAV Windows client may be configured to authenticate using Microsoft Entra ID. In this case, the change in cookie policy has no effect on access to the Windows client.

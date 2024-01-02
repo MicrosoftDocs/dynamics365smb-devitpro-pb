@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL0758"
 description: "The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/20/2023
+ms.date: 08/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

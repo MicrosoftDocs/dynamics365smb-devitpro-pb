@@ -12,6 +12,8 @@ author: jswymer
 
 # Web Client URL
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 There are several parameters that you can add to the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL to manipulate what is displayed in the client. For example, you can open a specific company, target a specific page, report, or table. The following URL displays page **9305 Sales Order List** for the [!INCLUDE[demoname](includes/demoname_md.md)] company:
 
 ```
@@ -86,7 +88,7 @@ The following table describes the parameters of the URL for displaying a page.
 |---------------|---------------------------------------|
 |`https`|Specifies the Internet protocol to use. Only `https` is supported.|
 |`hostname`|Specifies the hostname for [!INCLUDE[d365fin_md](includes/d365fin_md.md)], for example, `businesscentral.dynamics.com`. |
-|`<aadtenantid>`|Specifies the unique identifier for an Azure Active Directory (AAD) tenant. The value can be formatted as a GUID or domain name. It's useful to people who work across multiple AAD organizations, such as delegated administrators, support personnel, or external accountants. It allows explicitly targeting an AAD tenant. If this parameter is omitted, you'll be directed to the primary AAD tenant or the same AAD tenant that you're currently signed in to.|
+|`<aadtenantid>`|Specifies the unique identifier for a Microsoft Entra tenant. The value can be formatted as a GUID or domain name. It's useful to people who work across multiple Microsoft Entra organizations, such as delegated administrators, support personnel, or external accountants. It allows explicitly targeting a Microsoft Entra tenant. If this parameter is omitted, you'll be directed to the primary Microsoft Entra tenant or the same Microsoft Entra tenant that you're currently signed in to.|
 |`<environmentname>`|(online only) Specifies the display name of sandbox or production environment to target.|
 |`company`|The name of the company in [!INCLUDE[d365fin_md](includes/d365fin_md.md)] that you want to target.<br /><br /> If you only have one company, then you can omit this parameter.|
 |`page`|Opens a page object.|

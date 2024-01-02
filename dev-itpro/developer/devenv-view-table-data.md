@@ -77,8 +77,7 @@ In the `launch.json` file for the project, set the `"startupObjectType"` paramet
             "startupObjectId": 18
         }
     ]
-} 
-
+}
 ```
 
 For more information about the `launch.json` file, see [Launch JSON file](devenv-json-launch-file.md).

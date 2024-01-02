@@ -14,6 +14,8 @@ ms.custom: bap-template
 
 [!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Web services telemetry gathers data about SOAP, OData, and API requests through the service. It provides information like the request's endpoint, time to complete, the SQL statements run, and more.  
 
 ## General dimensions
@@ -33,7 +35,7 @@ The following table explains the custom dimensions included in a **Web Services 
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that was run by request.<sup>[\[1\]](#1)</sup>|
 |alObjectName|Specifies the name of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
 |alObjectType|Specifies the type of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
@@ -65,6 +67,47 @@ The following table explains the custom dimensions included in a **Web Services 
  
 <sup>4</sup><a name="4"></a>This HTTP status code was introduced in Business Central 2023 release wave 1, version 22.2.
 
+### HTTP headers
+For privacy and security reasons, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] maintains a list of HTTP headers that are allowed to be emitted to telemetry. 
+
+The following HTTP headers are emitted to telemetry (if set in the request):
+
+* Accept
+* Accept-Charset
+* Accept-Encoding
+* Accept-Language
+* Allow
+* client-request-id
+* Connection
+* Content-Encoding
+* Content-Language
+* Content-Length
+* Content-Type
+* Data-Access-Intent
+* Expect
+* If-Match
+* isolation
+* odata-isolation
+* OData-MaxVersion
+* OData-Version
+* postman-token
+* Prefer
+* request-id
+* return-client-request-id
+* Transfer-Encoding
+* User-Agent
+* x-forwarded-host
+* x-forwarded-path
+* x-forwarded-port
+* x-forwarded-proto
+
+<!-- internal note
+allowed HTTP headers are defined in the HeadersAllowedForTelemetry data structure in the partial class StringExtensions 
+-->
+
+## Who is calling web services endpoints
+
+[!INCLUDE[who_is_calling](../includes/include-webservices-telemetry-who-is-calling.md)]
 
 ## Analyze web service call performance using telemetry
 
@@ -124,7 +167,7 @@ If you want to analyze web service call telemetry from the usage of the Microsof
 [MicrosoftConnectorUsage.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/HelperQueries/MicrosoftConnectorUsage.kql) might be useful.
  
 ## See also
-[Monitoring and Analyzing Telemetry](telemetry-overview.md)
+[Monitoring and Analyzing Telemetry](telemetry-overview.md)   
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
-[Writing efficient Web Services](../performance/performance-developer.md#writing-efficient-web-services)
-[API Limits](/dynamics-nav/api-reference/v1.0/dynamics-current-limits)
+[Writing efficient Web Services](../performance/performance-developer.md#writing-efficient-web-services)   
+[API Limits](/dynamics-nav/api-reference/v1.0/dynamics-current-limits)   

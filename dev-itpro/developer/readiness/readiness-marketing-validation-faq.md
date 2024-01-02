@@ -1,22 +1,22 @@
 ---
-title: "Marketing Validation FAQ"
+title: "Marketing validation FAQ"
 description: "The marketing validation FAQ for Business Central apps"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 09/26/2023
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Marketing Validation FAQ
+# Marketing validation FAQ
  
-## Where do I state the countries, editions and languages that my offer supports?  
+## Where do I state the countries/regions, editions and languages that my offer supports?  
 
-You're required to state the countries, editions and languages that your offer supports in the bottom of your offer’s description text. You can use the following format:  
+You're required to state the countries/regions, editions and languages that your offer supports in the bottom of your offer’s description text. You can use the following format:  
 **Supported Editions:**  
     The app supports the Essentials and Premium Editions of Microsoft Dynamics 365 Business Central.  
-**Supported Countries:**  
+**Supported Countries/regions:**  
     Canada, Mexico and United States  
 **Supported Languages:**
     This app is available in English (United States) and Spanish (Mexico). 
@@ -48,6 +48,12 @@ You're required to submit two distinct pages for support and help that is, they 
 ## Can I use the Microsoft Dynamics 365 Business Central logo?  
 
 No, you can't use the [!INCLUDE[prod_short](../includes/prod_short.md)] logo, as it’s a Microsoft trademarked logo. However, you can use the “Get it from Microsoft AppSource” badge, which you can find [here](https://appsource.microsoft.com/blogs/new-get-it-from-badging-for-microsoft-appsource-and-azure-marketplace-available-in-the-marketing-resources-guide). 
+
+## Can we speed up or avoid Marketing validation?  
+
+Marketing validation is a manual process that is required for new offers or when the marketing details change on existing offers. As a publisher there is no way you can impact how fast the marketing validation process takes. 
+
+However, since marketing validation now only happens when marketing details are added or changed, you can ensure that you don't make such changes if it's important for you to get the submission through as quickly as possible, for example, when releasing a hotfix. Once that hotfix has passed the submit process and gone live, you can then submit a new version with required marketing details updated, and await the validation process.
 
 ## See Also
 

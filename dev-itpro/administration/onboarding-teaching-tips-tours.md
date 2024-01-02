@@ -106,9 +106,14 @@ When adding teaching tips, consider the following limitations:
 The teaching tips for FactBoxes become part of the tour on the hosting page. For more information, see [Teaching tips flow](#flow).
 
 ## Teaching tips for reports
-You can add teaching tips for report request pages just like normal pages by using the **AboutTitle** and **AboutText** properties is AL.
+You can add teaching tips for report request pages just like normal pages by using the **AboutTitle** and **AboutText** properties in AL.
 
-Reports are rarely documented for users which is a shame because reports help users take data-driven decisions and are therefore key for them to run their business processes. With teaching tips, you can help explain logic that is relevant to the report therefore allowing users to get on with their reporting task right away without blocking them. After users dismiss a teaching tip, they can choose or hover over the report title in the request page. This action will reopen the teaching tip.
+Reports must be documented because they help users take data-driven decisions and are therefore key for users to run their business processes. With teaching tips, you can help explain logic that is relevant to the report therefore allowing users to get on with their reporting task right away without blocking them. After users dismiss a teaching tip, they can choose or hover over the report title in the request page. This action will reopen the teaching tip.
+
+The following illustration shows a report request page teaching tip that explains what the report is about. The teaching tip renders in the lower left corner.  
+
+:::image type="content" source="../media/onboarding-teaching-tip-report.png" alt-text="A report in Business Central with a request page teaching tip at the lower left corner.":::
+
 
 ## <a name="flow"></a> Teaching tips flow
 

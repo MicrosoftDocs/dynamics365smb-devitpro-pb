@@ -7,7 +7,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 12/15/2023
 ms.author: jswymer
 ---
 
@@ -15,9 +15,9 @@ ms.author: jswymer
 
 [!INCLUDE[2021_releasewave2.md](../includes/2021_releasewave2.md)]
 
-Task scheduler telemetry gathers information about the execution of scheduled tasks. The data gives insight into what happens in background sessions that are coming from scheduled tasks. It provides information that lets you troubleshoot failures. The data can also help you determine whether tasks would be better scheduled for off hours to limit the load on the service.  
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-For an overview of task scheduler and to understand the flow related to these traces, see [Task Scheduler](../developer/devenv-task-scheduler.md).
+[!INCLUDE[task_scheduler_telemetry](../includes/include-telemetry-task-scheduler.md)]
 
 > [!NOTE]
 > In this article, *main codeunit* refers to the codeunit that's run by the TaskScheduler.CreateTask method.
@@ -26,7 +26,7 @@ Each scheduled task is assigned a unique identifier (ID), which is included in e
 
 ## Task created
 
-Occurs when a task was created by a TaskScheduler.CreateTask method call in AL code.
+Occurs when a task was created by a `TaskScheduler.CreateTask` method call in AL code.
 
 ### General dimensions
 
@@ -44,7 +44,7 @@ The following table explains the general dimensions of this trace.
 -->
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|--------------------|
 |eventId|**LC0040**|
 |codeunitObjectId|Specifies the ID of the task's main codeunit.|
 |failureCodeunitObjectId|Specifies the ID of the task's failure codeunit. **0** indicates that there's no failure codeunit.|
@@ -59,7 +59,7 @@ The following table explains other custom dimensions that are common to all task
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company in which the task was run.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
@@ -180,7 +180,7 @@ The following table explains the general dimensions of this trace.
 
 ## Task failed
 
-Occurs when the execution of task's main codeunit or failure codeunit fails because of an exception.
+Occurs when the execution of task's main codeunit or failure codeunit fails because of an exception thrown by the AL runtime.
 
 ### General dimensions
 
@@ -216,6 +216,40 @@ The following table explains the general dimensions of this trace.
 |timeout|Specifies the timeout that was set on the task. The time has the format hh:mm:ss.sssssss.|
 |totalTime|Specifies the amount of time it took to create the company. The time has the format hh:mm:ss.sssssss.|
 |[See common custom dimensions](#other)||
+
+### Analyzing report generation failures
+
+When a task fails, the `failureReason` column in the CustomDimensions will include the name of the exception that was thrown by the AL runtime.  
+
+### Sample KQL code (failed tasks)
+
+This KQL code can help you get started analyzing task failures:
+
+```kql
+// Task failed
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where customDimensions has 'LC0045' // for performance 
+| where customDimensions.eventId == 'LC0045'
+| project timestamp
+// in which environment/company did it happen
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+// what codeunit to run
+, codeunitObjectId = customDimensions.codeunitObjectId
+, failureCodeunitObjectId = customDimensions.failureCodeunitObjectId
+// task info
+, formatId = customDimensions.formatId
+, isReady = customDimensions.isReady
+, languageId = customDimensions.languageId
+, notBefore = customDimensions.notBefore
+, taskId = customDimensions.taskId
+, timeout = customDimensions.timeout
+// execution info
+, failureReason = customDimensions.failureReason // this contains the name of the exception thrown by the AL runtime
+```
 
 ## Task completed
 
@@ -295,7 +329,13 @@ The following table explains the general dimensions of this trace.
 |totalTime|Specifies the amount of time it took to run the codeunit. The time has the format hh:mm:ss.sssssss.|
 |[See common custom dimensions](#other)||
 
-## See also
+## Task scheduler and performance
 
-[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[!INCLUDE[task_job_queue_performance](../includes/include-task-job-queue-performance.md)]
+
+
+## See also
+[Task Scheduler](../developer/devenv-task-scheduler.md)   
+[Telemetry overview](telemetry-overview.md)  
+[Enabling Telemetry](telemetry-enable-application-insights.md)  
+[Alert on Telemetry](telemetry-alert.md)  

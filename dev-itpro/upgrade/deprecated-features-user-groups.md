@@ -13,6 +13,8 @@ ms.custom: bap-template
 
 [!INCLUDE [2023_releasewave1](../includes/2023_releasewave1.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The recent improvements to permission set features and the introduction of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] security groups made user groups redundant. Therefore, to streamline permission management, we've deprecated user groups.
 
 This article provides developers with examples of how they can update their extensions to accommodate the change.
@@ -262,7 +264,7 @@ If you extend the user group functionality by adding actions, fields, or control
 
 ## Deprecated objects 
 
-The following objects are deprecated.
+The following objects are deprecated. To make these objects easy to find in the code, we've added a `[220_UserGroups]` tag to the obsolete reason.
 
 |Name  |Object type  |
 |---------|---------|

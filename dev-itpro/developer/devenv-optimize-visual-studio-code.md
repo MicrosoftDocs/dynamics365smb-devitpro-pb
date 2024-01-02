@@ -1,6 +1,6 @@
 ---
-title: "Optimize Visual Studio Code Editing and Building Performance"
-description: "Explains how yo configure Visual Studio Code to get better performance when editing and building AL projects"
+title: Optimize Visual Studio code editing and building performance
+description: Explains how yo configure Visual Studio Code to get better performance when editing and building AL projects.
 author: jswymer
 ms.custom: na
 ms.date: 06/22/2022
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: jswymer
 ---
 
-# Optimize Visual Studio Code for AL Development
+# Optimize Visual Studio Code for AL development
 
 Visual Studio Code is built to handle many smaller dependent projects instead of one large project. However, as the base application isn't yet split into modules or components that allow managing the code in smaller projects, we recommend the following performance optimizations.
 

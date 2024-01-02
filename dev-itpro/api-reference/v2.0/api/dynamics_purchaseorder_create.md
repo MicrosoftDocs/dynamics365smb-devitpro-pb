@@ -50,18 +50,14 @@ If successful, this method returns ```201 Created``` response code and a **purch
 Here is an example of the request.
 
 ```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseOrders({id})
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseOrders
 Content-type: application/json
 {
-   "id": "5d115c9c-44e3-ea11-bb43-000d3a2feca1",
-   "number": "108001",
    "orderDate": "2021-01-01",
    "postingDate": "2021-01-01",
    "dueDate": "2021-01-01",
-   "vendorId" : "",
+   "vendorId": "",
    "vendorNumber": "20000",
-   "vendorName": "First Up Consultants",
-   "payToName": "First Up Consultants",
    "payToVendorId": "Evan McIntosh",
    "payToVendorNumber": "20000",
    "shipToName": "First Up Consultants",
@@ -78,31 +74,19 @@ Content-type: application/json
    "shipToCountry": "US",
    "shipToState": "IL",
    "shipToPostCode": "61236",
-   "payToAddressLine1": "100 Day Drive",
-   "payToAddressLine2": "",
-   "payToCity": "Chicago",
-   "payToCountry": "US",
-   "payToState": "IL",
-   "payToPostCode": "61236",
-   "currencyId" : "00000000-0000-0000-0000-000000000000",
+   "currencyId": "00000000-0000-0000-0000-000000000000",
    "currencyCode": "USD",
-   "pricesIncludeTax" : false,
-   "paymentTermsId" : "04a5738a-44e3-ea11-bb43-000d3a2feca1",
-   "shipmentMethodId" : "93f5638a-55e3-jk22-aa32-211d3a2fdce5",
-   "purchaser" : "First Up Consultants",
-   "requestedReceiptDate" : "2021-01-01",
-   "discountAmount" : 0,
-   "discountAppliedBeforeTax" : true,
-   "totalAmountExcludingTax": 3122.8,
-   "totalTaxAmount": 187.37,
-   "totalAmountIncludingTax": 3310.17,
-   "fullyReceived" : true,
-   "status" : "In Review",
-   "lastModifiedDateTime": "2021-01-01"
+   "pricesIncludeTax": false,
+   "paymentTermsId": "04a5738a-44e3-ea11-bb43-000d3a2feca1",
+   "shipmentMethodId": "93f5638a-55e3-jk22-aa32-211d3a2fdce5",
+   "purchaser": "First Up Consultants",
+   "requestedReceiptDate": "2021-01-01",
+   "discountAmount": 0
 }
 ```
 
 **Response**
+
 Here is an example of the response.
 
 ```json
@@ -114,7 +98,7 @@ Content-type: application/json
    "orderDate": "2021-01-01",
    "postingDate": "2021-01-01",
    "dueDate": "2021-01-01",
-   "vendorId" : "",
+   "vendorId": "",
    "vendorNumber": "20000",
    "vendorName": "First Up Consultants",
    "payToName": "First Up Consultants",
@@ -140,21 +124,21 @@ Content-type: application/json
    "payToCountry": "US",
    "payToState": "IL",
    "payToPostCode": "61236",
-   "currencyId" : "00000000-0000-0000-0000-000000000000",
+   "currencyId": "00000000-0000-0000-0000-000000000000",
    "currencyCode": "USD",
-   "pricesIncludeTax" : false,
-   "paymentTermsId" : "04a5738a-44e3-ea11-bb43-000d3a2feca1",
-   "shipmentMethodId" : "93f5638a-55e3-jk22-aa32-211d3a2fdce5",
-   "purchaser" : "First Up Consultants",
-   "requestedReceiptDate" : "2021-01-01",
-   "discountAmount" : 0,
-   "discountAppliedBeforeTax" : true,
-   "totalAmountExcludingTax": 3122.8,
-   "totalTaxAmount": 187.37,
-   "totalAmountIncludingTax": 3310.17,
-   "fullyReceived" : true,
-   "status" : "In Review",
-   "lastModifiedDateTime": "2021-01-01"
+   "pricesIncludeTax": false,
+   "paymentTermsId": "04a5738a-44e3-ea11-bb43-000d3a2feca1",
+   "shipmentMethodId": "93f5638a-55e3-jk22-aa32-211d3a2fdce5",
+   "purchaser": "First Up Consultants",
+   "requestedReceiptDate": "2021-01-01",
+   "discountAmount": 0,
+   "discountAppliedBeforeTax": false,
+   "totalAmountExcludingTax": 0,
+   "totalTaxAmount": 0,
+   "totalAmountIncludingTax": 0,
+   "fullyReceived": false,
+   "status": "Draft",
+   "lastModifiedDateTime": "2021-01-01T00:26:53.793Z"
 }
 ```
 

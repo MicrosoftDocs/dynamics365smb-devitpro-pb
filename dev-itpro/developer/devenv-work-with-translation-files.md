@@ -1,14 +1,14 @@
 ---
-title: "Working with Translation Files"
+title: "Working with translation files"
 description: "How to work with translations, multilanguage, and XLIFF files in Business Central"
 ms.custom: na
-ms.date: 05/24/2022
+ms.date: 09/05/2023
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ---
 
-# Working with Translation Files
+# Working with translation files
 
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is multi-language enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], this is done using XLIFF files, which is a standardized format used for computer-based translations.  
 
@@ -19,7 +19,7 @@ For an overview of how translations are applied, see [Translations Overview](dev
 
 ## Generating the XLIFF file
 
-To add a new language to the extension that you've built, first, you must enable the generation of XLIFF files. The XLIFF file extension is .xlf. The generated XLIFF file contains the strings that are specified in properties such as **Caption**, **CaptionML**, and **Tooltip**.
+To add a new language to the extension that, you've built, first, you must enable the generation of XLIFF files. The XLIFF file extension is .xlf. The generated XLIFF file contains the strings that are specified in properties such as **Caption**, **CaptionML**, and **Tooltip**.
 
 > [!NOTE]  
 > To submit an app to AppSource, you must use XLIFF translation files.
@@ -34,11 +34,13 @@ In the app.json file of your extension, add the following line:
 > If the **Incremental Build** setting is enabled in the **AL Language extension configuration** then all translations will be ignored, even though the `"features": [ "TranslationFile" ]` setting is specified in the `app.json` file. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 > The same is true when using **RAD** publishing, all translations will also be ignored. For more information, see [Work with Rapid Application Development](devenv-rad-publishing.md).
 
-Now, when you run the build command (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) in Visual Studio Code, a `\Translations` folder will be generated and populated with the .xlf file that contains all the labels, label properties, and report labels that you're using in the extension. The generated .xlf file can now be translated.
+Now, when you run the build command (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) in Visual Studio Code, a `\Translations` folder is generated and populated with the .xlf file that contains all the labels, label properties, and report labels that you're using in the extension. The generated .xlf file can now be translated.
 
 > [!IMPORTANT]  
 > The **ML** versions of properties are **not** included in the .xlf file:  
 >
+> - [AboutTitleML](properties/devenv-abouttitleml-property.md)  
+> - [AboutTextML](properties/devenv-abouttextml-property.md)  
 > - [CaptionML](properties/devenv-captionml-property.md)
 > - [ConstValueML](./properties/devenv-properties.md)
 > - [InstructionalTextML](properties/devenv-instructionaltextml-property.md)
@@ -52,7 +54,7 @@ Now, when you run the build command (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kb
 > [!IMPORTANT]  
 > Make sure to rename the translation file before building the extension next time, as it'll be overwritten.
 
-By setting the `GenerateCaptions` flag in the app.json file, you specify that you want to generate captions based on the object name for pages, tables, reports, XMLports, request pages, and table fields. If the object already has a `Caption` property set, that value will be used. For the table fields, the `OptionCaption` is used. The syntax is as follows:
+By setting the `GenerateCaptions` flag in the app.json file, you specify that you want to generate captions based on the object name for pages, tables, reports, XMLports, and request pages. If the object already has a `Caption` property set, that value is used. For the table fields, the `OptionCaption` is used. The syntax is as follows:
 
 ```json
   "features": [ "TranslationFile", "GenerateCaptions" ]
@@ -153,7 +155,6 @@ pageextension 50000 MyPageExtension extends MyPage
 {
     Caption = 'Extension Page';
 }
-
 ```
 
 has `<trans-unit id>` for the page extension corresponding to `PageExtension 1716690578 - Property 2879900210`, then if you want to change the caption on the page, you must use the ID `Page 2931038265 - Property 2879900210`, which is the `<trans-unit id>` of the original property.

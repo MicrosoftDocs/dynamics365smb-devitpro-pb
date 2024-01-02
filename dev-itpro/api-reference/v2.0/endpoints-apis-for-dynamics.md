@@ -14,6 +14,8 @@ ms.author: solsen
 
 # Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE[prod_short](../../includes/prod_short.md)] on-premises and online expose an API that makes it possible to integrate with other services. To enable integration with these APIs, you must go through a few steps to enable the access first. For more information about these steps, see [Enabling APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md).
 
 ## Accessing the endpoints
@@ -30,7 +32,7 @@ Once you have the API access enabled, you can write code that integrates your we
 |**Usage**|Production|Production|Production|
 |**Endpoint**|`https://`<br>`graph.microsoft.com`<br>`/beta/financials/`| `https://`<br>`api.businesscentral.dynamics.com/`<br> `v2.0/<environment name>/api/v2.0`  <br><br>  Example:<br> `https://`<br>`api.businesscentral.dynamics.com/`<br> `v2.0/production/api/v2.0` |`https://`<br>`api.businesscentral.dynamics.com/`<br>`v2.0/<user domain name>/<environment name>/api/v2.0`<br><br> Example:<br> `https://`<br>`api.businesscentral.dynamics.com/`<br> `v2.0/cronus.com/sandbox/api/v2.0`|
 |**Availability**|Always enabled|Always enabled|Always enabled|
-|**Authentication**|Azure Active Directory<br> (AAD)|Azure Active Directory<br> (AAD)|Azure Active Directory<br> (AAD)|
+|**Authentication**|Microsoft Entra ID<br>|Microsoft Entra ID<br>|Microsoft Entra ID<br>|
 |**API/Data access**|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|
 |**API update cycle**|Monthly|Monthly|Monthly|
 |**Development instance**|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|

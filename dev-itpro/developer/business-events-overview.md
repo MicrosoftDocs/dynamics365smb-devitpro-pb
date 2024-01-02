@@ -6,13 +6,15 @@ ms.author: sawinark
 ms.reviewer: jswymer
 ms.topic: overview
 ms.collection: 
-ms.date: 05/31/2023
+ms.date: 11/13/2023
 ms.custom: bap-template
 ---
 
 # Business events on Business Central (preview)
 
 [!INCLUDE[general_preview](includes/general_preview.md)]
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 Integrating with Dataverse enables Business Central to interact with other apps in its ecosystem through business events. This article gives an introduction to the new business events feature, the prerequisites and step-by-step instructions to preview it, and its current limitations/future improvements.
 
@@ -41,16 +43,16 @@ To preview the new feature of business events on Business Central, do the follow
 
    - On version 22.0 or 22.1, you have to build an extension that implements the *Dynamics 365 Business Central* catalog of sample business events. Go to step 2.
    - On v22.2 or later, the *Dynamics 365 Business Central* catalog of sample business events is built in. Go to step 3.
-1. On v22.0 or 22.1, get the source files published in preview section of the [microsoft/bc365bcdv GitHub repo](https://github.com/microsoft/d365bcdv/tree/main/samples/Business%20Events/Private%20Preview), and then build and install an extension that implements our sample business events.
+1. On v22.0 or 22.1, get the source files published in preview section of the [microsoft/bc365bcdv GitHub repo](https://github.com/microsoft/d365bcdv/tree/main/samples/Business%20Events/Preview), and then build and install an extension that implements our sample business events.
 
-   Follow the instructions in [Build and install an extension for sample business events](https://github.com/microsoft/d365bcdv/tree/main/samples/Business%20Events/Private%20Preview#build-and-install-an-extension-for-sample-business-events) of the README.md
+   Follow the instructions in [Build and install an extension for sample business events](https://github.com/microsoft/d365bcdv/tree/main/samples/Business%20Events/Preview#build-and-install-an-extension-for-sample-business-events) of the README.md
 
    > [!TIP]
    > This repo is being prepared as a one-stop-shop for Business Central and Dataverse integration.
 
 1. In Business Central, use the **Dataverse Connection Setup** assisted setup guide to connect your Business Central environment to the Dataverse environment on which you want to submit subscriptions and receive notifications of business events.
 
-   This assisted setup guides you to install the *Business Central Virtual Table (Preview)* app from AppSource that enables business event subscriptions/notifications on your Dataverse environment.
+   This assisted setup guides you to install the *Business Central Virtual Table* app from AppSource that enables business event subscriptions/notifications on your Dataverse environment.
 
    > [!IMPORTANT]
    > Make sure that you install the latest version that supports business events (**1.023093.3 or higher**).
@@ -118,7 +120,7 @@ To connect your Business Central environment to a Dataverse environment on which
 
 1.	Review the relevant terms and conditions. If you agree to the terms, turn on the **I accept** switch and then select **Next**.
 1.	Specify your Dataverse environment URL, sign in as an administrator user, and select **Next**.
-1.	Install the **Business Central Virtual Table (Preview)** app from [AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
+1.	Install the **Business Central Virtual Table** app from [AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
 
     This app enables business event subscriptions and notifications on your Dataverse environment. Make sure that you install the latest version that supports business events (**1.023093.3 or later**).
 
@@ -210,7 +212,7 @@ Business Central exposes specific APIs for business events that can be used to:
 - Query Business Central catalog for business event definitions
 - Submit business event subscriptions w/ your own notification URL
 
-The *Business Central Virtual Table (Preview)* app uses the same APIs to query Business Central catalog and submit subscriptions of business events for Power Automate flows.
+The *Business Central Virtual Table* app uses the same APIs to query Business Central catalog and submit subscriptions of business events for Power Automate flows.
 
 ### Query Business Central catalog of business events
 
@@ -315,7 +317,7 @@ Request: POST https://webhook.site/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
 This request contains the following data:
 
-- `initiatingUserAADObjectId`: The Azure Active Directory object ID of user who initiated this business event
+- `initiatingUserAADObjectId`: The Microsoft Entra object ID of user who initiated this business event
 - `timestamp`: The timestamp when this business event occurred (UTC)
 - `companyName`: The name of company where this business event occurred
 - `companyId`: The GUID of company where this business event occurred

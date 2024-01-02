@@ -3,7 +3,7 @@ title: "ObsoleteState Property"
 description: "Marks whether the object will be deprecated."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
+ms.date: 08/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,8 +21,8 @@ Marks whether the object will be deprecated.
 ## Applies to
 -   Page Action Ref
 -   Page Custom Action
--   Table Field
 -   Table
+-   Table Field
 -   Table Key
 -   Codeunit
 -   Enum Type
@@ -33,7 +33,6 @@ Marks whether the object will be deprecated.
 -   Page Part
 -   Page System Part
 -   Page Chart Part
--   Page Field
 -   Page Group
 -   Page Label
 -   Query
@@ -44,6 +43,7 @@ Marks whether the object will be deprecated.
 -   Report Column
 -   Request Page
 -   Xml Port
+-   Page Field
 -   Page Action Area
 -   Page Area
 -   Page

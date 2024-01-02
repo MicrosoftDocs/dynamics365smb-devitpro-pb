@@ -1,12 +1,12 @@
 ---
-title: "Cumulative updates for the Spring 2019 version"
-description: "Learn about the cumulative updates for Dynamics 365 Business Central Spring 2019 on-premises deployments."
+title: Cumulative updates for the Spring 2019 version
+description: Learn about the cumulative updates for Dynamics 365 Business Central Spring 2019 on-premises deployments.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 08/09/2023
+ms.date: 10/23/2023
 ms.custom: bap-template
 ---
 
@@ -27,12 +27,17 @@ We recommend that you install the latest cumulative update.
 
 ## Available updates for Business Central April 2019
 
-The following table lists the cumulative updates released for the Spring 2019 release of Business Central (version 14). The cumulative updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description. 
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
+
+
+The following table lists the cumulative updates released for the Spring 2019 release of Business Central (version 14). The cumulative updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description. 
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5031948](https://support.microsoft.com/help/5031948)|Cumulative Update 52|October 2023|Application Build 14.53.50097</br>Platform Build 14.0.50094|
+|[5031028](https://support.microsoft.com/help/5031028)|Cumulative Update 51|September 2023|Application Build 14.52.50053</br>Platform Build 14.0.50051|
 |[5029762](https://support.microsoft.com/help/5029762)|Cumulative Update 50|August 2023|Application Build 14.51.50001</br>Platform Build 14.0.49994|
 |[5029054](https://support.microsoft.com/help/5029054)|Cumulative Update 49|July 2023|Application Build 14.50.49975</br>Platform Build 14.0.49970|
 |[5027889](https://support.microsoft.com/help/5027889)|Cumulative Update 48|June 2023|Application Build 14.49.49909</br>Platform Build 14.0.49902|

@@ -3,7 +3,7 @@ title: "Variant Data Type"
 description: "Represents an AL variable object."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Represents an AL variable object. The AL variant data type can contain many AL d
 
 
 
+## Instance methods
 The following methods are available on instances of the Variant data type.
 
 |Method name|Description|
@@ -41,6 +42,7 @@ The following methods are available on instances of the Variant data type.
 |[IsDateTime()](variant-isdatetime-method.md)|Indicates whether an AL variant contains a DateTime variable.|
 |[IsDecimal()](variant-isdecimal-method.md)|Indicates whether an AL variant contains a Decimal variable.|
 |[IsDefaultLayout()](variant-isdefaultlayout-method.md)|Indicates whether an AL variant contains a DefaultLayout variable.|
+|[IsDictionary()](variant-isdictionary-method.md)|Indicates whether an AL variant contains a Dictionary variable.|
 |[IsDotNet()](variant-isdotnet-method.md)|Indicates whether an AL variant contains a DotNet variable.|
 |[IsDuration()](variant-isduration-method.md)|Indicates whether an AL variant contains a Duration variable.|
 |[IsExecutionMode()](variant-isexecutionmode-method.md)|Indicates whether an AL variant contains an ExecutionMode variable.|
@@ -54,10 +56,12 @@ The following methods are available on instances of the Variant data type.
 |[IsJsonObject()](variant-isjsonobject-method.md)|Indicates whether an AL variant contains a JsonObject variable.|
 |[IsJsonToken()](variant-isjsontoken-method.md)|Indicates whether an AL variant contains a JsonToken variable.|
 |[IsJsonValue()](variant-isjsonvalue-method.md)|Indicates whether an AL variant contains a JsonValue variable.|
+|[IsList()](variant-islist-method.md)|Indicates whether an AL variant contains a List variable.|
 |[IsNotification()](variant-isnotification-method.md)|Indicates whether an AL variant contains a Notification variable.|
 |[IsObjectType()](variant-isobjecttype-method.md)|Indicates whether an AL variant contains an ObjectType variable.|
 |[IsOption()](variant-isoption-method.md)|Indicates whether an AL variant contains an Option variable.|
 |[IsOutStream()](variant-isoutstream-method.md)|Indicates whether an AL variant contains an OutStream variable.|
+|[IsPromptMode()](variant-ispromptmode-method.md)|Indicates whether an AL variant contains a PromptMode variable.|
 |[IsRecord()](variant-isrecord-method.md)|Indicates whether an AL variant contains a Record variable.|
 |[IsRecordId()](variant-isrecordid-method.md)|Indicates whether an AL variant contains a RecordId variable.|
 |[IsRecordRef()](variant-isrecordref-method.md)|Indicates whether an AL variant contains a RecordRef variable.|

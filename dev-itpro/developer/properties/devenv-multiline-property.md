@@ -3,7 +3,7 @@ title: "MultiLine Property"
 description: "Sets the value that indicates whether a field can display multiple lines of text."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 11/24/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,11 @@ Sets the value that indicates whether a field can display multiple lines of text
 ```AL
 MultiLine = true;
 ```
-  
+
+## Remarks
+
+With [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 2, you can use the `RichContent` option on the [ExtendedDataType property](devenv-extendeddatatype-property.md) to enable a rich text field. To enable a rich text field, the field must have the Multiline property set to `true` and it must reside alone within a FastTab group. For an example of creating a rich text editor, see [Creating a rich text editor](../devenv-richtext-content-controls.md).
+
 ## See Also
 
 [Properties](devenv-properties.md)

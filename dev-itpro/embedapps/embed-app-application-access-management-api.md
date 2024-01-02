@@ -12,6 +12,8 @@ ms.date: 08/24/2023
 ---
 # Application Access Management API
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 As a **Delegated Global Administrator** or as a **Delegated Dynamics 365 Administrator**, you can manage access to application families available in the service. The application family is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or [!INCLUDE[embedapp](../developer/includes/embedapp.md)] applications that may be provisioned through the service. 
 
 > [!NOTE]

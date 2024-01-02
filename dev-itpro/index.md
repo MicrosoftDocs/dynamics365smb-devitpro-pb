@@ -2,7 +2,7 @@
 title: "Development and Administration for Business Central"
 description: Learn how to extend, manage, and customize Dynamics 365 Business Central
 author: solsen
-ms.date: 04/01/2021
+ms.date: 09/29/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

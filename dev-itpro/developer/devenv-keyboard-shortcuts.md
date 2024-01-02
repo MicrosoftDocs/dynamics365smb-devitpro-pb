@@ -1,6 +1,6 @@
 ---
-title: "Keyboard Shortcuts"
-description: "List of keyboard shortcuts for the new development environment."
+title: "Keyboard Shortcuts in Visual Studio Code"
+description: "List of keyboard shortcuts for the new development environment (Visual Studio Code)."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Keyboard Shortcuts
+# Keyboard Shortcuts in Visual Studio Code
 
 The following table provides an overview of some of the shortcut key combinations that you can use when you are working in Visual Studio Code. For a complete overview, see [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings).
 
@@ -21,9 +21,9 @@ The following table provides an overview of some of the shortcut key combination
 |-----------------|-------|
 |<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>|Show All Commands|
 |<kbd>Alt</kbd>+<kbd>F6</kbd>|Download source code|
-|<kbd>Alt</kbd>+<kbd>A Alt</kbd>+<kbd>L</kbd>|AL Go! Generates a HelloWorld project|
-|<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>|Package|
-|<kbd>F5</kbd>|Publish|  
+|<kbd>Alt</kbd>+<kbd>A</kbd>+<kbd>L</kbd>|AL Go! Generates a HelloWorld project|
+|<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>|Compile and Package|
+|<kbd>F5</kbd>|Compile, Package, and Publish (with debugging)|  
 |<kbd>Ctrl</kbd>+<kbd>F5</kbd>|Build and publish without debugging. **Note:** The keyboard shortcut has a different meaning when debugging.|
 |<kbd>F6</kbd>|Publish and open Designer|
 |<kbd>Ctrl</kbd>+<kbd>F2</kbd>|Update the compiler used by the service tier(s)|

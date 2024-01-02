@@ -14,6 +14,8 @@ author: EmmaNielsson
 
 # Update 20.3 for Microsoft Dynamics 365 Business Central online 2022 release wave 1
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Would you like to know what has changed in update 20.3? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we've gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
@@ -30,7 +32,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-|W1 | Extended text functionality for VAT clauses | In some situations and countries, VAT Clauses can take more than allowed number of characters. Because of that Extended Texts logic is implemented in the VAT Clauses and this extended text can be shown on the sales invoice. |
+|W1 | Extended text functionality for VAT clauses | In some situations and countries/regions, VAT Clauses can take more than allowed number of characters. Because of that Extended Texts logic is implemented in the VAT Clauses and this extended text can be shown on the sales invoice. |
 | Germany | Enhancements to Business Data Export file (GDPdU / GoDB) | Export file will use table and field names instead of captions. Also table and field names won't be limited to 20 characters and it will show full name, with blanks, dots, etc.|
 
 ## Release Plan  
@@ -53,7 +55,7 @@ On Wednesday June 29, 2022, Microsoft began rolling out a fix for all Business C
 In October 2021, we announced a new partnership with Shopify to help our customers create a better shopping experience. The partnership was designed to better connect the easy-to-use commerce and merchant experience of Shopify with the comprehensive business management capabilities of Microsoft Dynamics 365 Business Central. The Shopify connector is now available for Business Central online at no extra cost. Existing customers that have been upgraded to 20.1 or later automatically get the Shopify extension installed. If they don't need the app, it can be uninstalled by following [this guidance](/dynamics365/business-central/ui-extensions-install-uninstall#uninstall-an-extension). Read the [blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2022/05/26/dynamics-365-business-central-now-includes-a-shopify-connector/), the [FAQ](/dynamics365/business-central/shopify/shopify-faq), watch the [on-demand session](https://aka.ms/BCShopifySession), learn how to [get started](/dynamics365/business-central/shopify/get-started) and view the listing on [Shopify App Store](https://apps.shopify.com/dynamics-365-business-central?surface_detail=global-erp-partners&surface_inter_position=1&surface_intra_position=1&surface_type=collection).
 
 **Action required by July 2022 for Excel Add-in**  
-Starting in July 2022, Microsoft will roll out an update to the Excel add-in that further secures the connection to Business Central. The update requires that you modify your organization's Azure Active Directory (Azure AD) configuration so that users can continue using the add-in. This issue impacts all Business Central on-premises deployments that use the Excel add-in. Learn more [here](/dynamics365/business-central/dev-itpro/administration/update-excel-addin-configuration).
+Starting in July 2022, Microsoft will roll out an update to the Excel add-in that further secures the connection to Business Central. The update requires that you modify your organization's Microsoft Entra ID configuration so that users can continue using the add-in. This issue impacts all Business Central on-premises deployments that use the Excel add-in. Learn more [here](/dynamics365/business-central/dev-itpro/administration/update-excel-addin-configuration).
 
 **Business Central newsletter for partners**  
 Starting June 2022, we're doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).

@@ -1,17 +1,19 @@
 ---
-title: Analyzing Profile Configuration Lifecycle Telemetry
+title: Analyzing profile configuration lifecycle telemetry
 description: Learn about the telemetry for configuration profiles using the in-client designer.  
 author: jswymer
 ms.author: jswymer
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 10/04/2022
+ms.date: 12/18/2023
 ms.custom: bap-template
 ---
 
-# Analyzing Profile Configuration Lifecycle Telemetry
+# Analyzing profile configuration lifecycle telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2022 release wave 2, version 21.0, and later
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 From the [!INCLUDE[web](../developer/includes/webclient.md)], users can do various operations on profiles, like, import/export, create, copy, and remove. To learn more about these operations, see [Manage User Profiles](/dynamics365/business-central/admin-users-profiles-roles) and [Customize Pages for Profiles](/dynamics365/business-central/ui-personalization-manage).
 
@@ -23,7 +25,7 @@ The following table explains custom dimensions that are common to all profile co
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |companyName|The name of the company where the operation is applied. Added in version 20.0. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|

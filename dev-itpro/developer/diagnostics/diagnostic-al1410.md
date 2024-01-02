@@ -1,9 +1,9 @@
 ---
 title: "Compiler Designer Customization Warning AL1410"
-description: "The target {0} {1} for the extension object is not found."
+description: "The target {0} '{1}' for the extension object is not found."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
+ms.date: 08/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,8 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The target {0} {1} for the extension object is not found.
+The target {0} '{1}' for the extension object is not found.
+
 
 ## Description
 Cannot resolve the referenced target of a page customization or the target of a profile extension.  

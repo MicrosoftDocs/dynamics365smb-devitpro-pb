@@ -95,7 +95,3 @@ You can always add more breakpoints while debugging.
 [Debugging](devenv-debugging.md)  
 [Snapshot Debugging](devenv-snapshot-debugging.md)  
 [JSON Files](devenv-json-files.md)  
-[EnableLongRunningSQLStatements Property](./properties/devenv-properties.md)  
-[EnableSQLInformationDebugger Property](./properties/devenv-properties.md)  
-[LongrunningSQLStatementsThreshold Property](./properties/devenv-properties.md)  
-[NumberOfSQLStatements Property](./properties/devenv-properties.md)

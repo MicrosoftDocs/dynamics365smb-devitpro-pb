@@ -109,7 +109,6 @@ page 46 "Sales Order Subform"
         }
     }
 }
-
 ```
 
 ## See Also  

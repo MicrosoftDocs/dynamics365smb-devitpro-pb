@@ -15,6 +15,8 @@ ms.author: jswymer
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2, version 17.2, and later
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Permission changes telemetry gathers data about the following operations on permission sets: 
 
 - A user-defined permission set was added or removed
@@ -50,7 +52,7 @@ The following table explains additional custom dimensions that are common to all
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alCategory|**AL PermissionSet**|
 |alDataClassification|**SystemMetadata**|
 |alObjectId|**1351**, which is the ID of the system application codeunit that subscribes to the telemetry events.|

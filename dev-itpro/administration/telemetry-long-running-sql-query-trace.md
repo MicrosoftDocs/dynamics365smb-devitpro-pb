@@ -13,6 +13,8 @@ ms.author: jswymer
 
 # Analyzing Long Running Operation (SQL Query) Telemetry
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Any SQL query that takes longer than 750 milliseconds to execute will be sent to your Azure Application Insights resource. This enables you to focus on tuning SQL queries that take too long to execute (maybe one or more tables miss an index or maybe some filters are missing). It also reduces the ingestion of data into the Azure Application Insights resource to save cost of having telemetry.
 
 If you want to capture all SQL queries for a short period of time for a given session, you can enable **Additional logging** from the **Help & Support** page. This lets you analyze queries that take a short time to run but happen very frequently. For Business Central online, additional logging is available on production environments running version 17.4 or later. For Business Central on-premises, additional logging is available on environments running version 18.6 or later.
@@ -82,7 +84,7 @@ This table describes the different dimensions of a **Long Running Operation (SQL
 |companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used at time of execution. |
 |extensionId|Specifies the AppID of the extension.|
 |eventId|**RT0005**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID when using Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID when using Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as Background or Web. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |alObjectId|The type of the AL object that executed the SQL statement.|
 |component|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance name and the platform version.|

@@ -15,7 +15,21 @@ When you create a new report, there are two main tasks. First, you define the re
 
 Later in this article you can read more how to enable multiple report layouts. For more information, see [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
 
-## Create a Word layout report
+## Formatting data in Word layouts
+[!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
+
+Specifically for Word layouts, there is no way to control formatting of data elements in Word. Therefore, you need to do the formatting in the report dataset. For more information, see [Formatting field values in report datasets](devenv-format-report-field-data.md).
+
+
+## Using fonts in Word layouts
+
+[!INCLUDE[using_fonts](../includes/include-excel-word-layouts-fonts.md)]
+
+## Using Office document themes in Word layouts
+
+[!INCLUDE[using_office_themes](../includes/include-excel-word-layouts-themes.md)]
+
+## Example: Create a Word layout report
 
 The following example extends the Customer List page with a trigger that runs the report as soon as the Customer List page is opened.
 
@@ -82,6 +96,7 @@ You'll now see the generated report in preview mode.
 >```
 
 [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
+
 
 ## Enabling the Microsoft Word rendering engine
 
