@@ -36,7 +36,7 @@ The text string that appears as the caption of the action in the error UI. The s
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remark 
+## Remarks
 
 You use the `AddNavigationAction` property to implement a show-it action on the error dialog. For more information about how to develop actionable errors, see [Actionable errors](../../devenv-actionable-errors.md). 
 
