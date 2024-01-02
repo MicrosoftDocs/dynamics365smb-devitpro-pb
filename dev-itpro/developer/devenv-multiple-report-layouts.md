@@ -67,7 +67,7 @@ reportextension 50102 EmpReportExt extends "Employee - List"
 }
 ```
 
-If one or more of the layouts do not exist, they will be generated when pressing **Ctrl+Shift+P**, and then choosing **AL: Package**. The layouts will appear in your project in the right pane of Visual Studio Code. The generated reports contain the dataset from the report, and you can modify and model the reports in each of the layout types as you want.
+If one or more of the layouts do not exist, they will be generated when selecting <kbd>Ctrl+</kbd>Shift</kbd>+<kbd>P</kbd>, and then choosing **AL: Package**. The layouts will appear in your project in the right pane of Visual Studio Code. The generated reports contain the dataset from the report, and you can modify and model the reports in each of the layout types as you want.
 
 Creating layouts in Excel, RDL, or Word is further described in the topics shown under [See also](devenv-multiple-report-layouts.md#see-also).
 
