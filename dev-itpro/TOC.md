@@ -510,7 +510,7 @@
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
 
 
-## AL language
+## Working with the AL language
 ### [A tour of the AL language](developer/devenv-programming-in-al.md)
 
 ### Program building blocks
