@@ -55,12 +55,12 @@ table 50 MyTable
 {
     fields
     {
-        field(1; Identifier; Text) { }
+        field(1; Identifier; Text[30]) { }
     }
 }
 ```
 
-The data type of the field `Identifier` was changed from `Integer` to `Text`, which isn't allowed and will trigger this rule.
+The data type of the field `Identifier` was changed from `Integer` to `Text[30]`, which isn't allowed and will trigger this rule.
 
 ## See Also
 

@@ -3,7 +3,7 @@ title: "AppSourceCop Error AS0118"
 description: "Modifying the length of a field part of the primary key is not allowed."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/20/2023
+ms.date: 01/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ Reverting the change will fix this diagnostic.
 
 ## Code examples triggering the rule
 
-### Example - Decreasing the length of a field, which is part of the primary key
+### Example 1 - Decreasing the length of a field, which is part of the primary key
 
 Version 1.0 of the extension:
 
@@ -74,7 +74,7 @@ In version 2.0, the type of the field `MyField` has changed from `Text[50]` to `
 > [!NOTE]  
 > When no primary key is explicitly defined in the table definition, the first field is used as the primary key.
 
-### Example 2 - increasing the length of a field, which is part of the primary key
+### Example 2 - Increasing the length of a field, which is part of the primary key
 
 Version 1.0 of the extension:
 ```AL
