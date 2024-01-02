@@ -52,7 +52,6 @@ Here is a JSON representation of the automationCompany.
   "displayName": "string",
   "businessProfileId": "string",
 }
-
 ```
 
 ## See Also 

@@ -74,6 +74,7 @@ codeunit 50142 MyCodeunitToBeRunFromTheJobQueue
     begin
         // code to be run. Probably calling other methods
     end;
+}
 ```
 
 [!INCLUDE[gui_allowed](includes/include-gui-allowed.md)]

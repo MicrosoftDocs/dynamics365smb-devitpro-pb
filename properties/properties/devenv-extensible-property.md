@@ -34,7 +34,7 @@ table 50111 MyTable
     DataClassification = CustomerContent;
     Extensible = true;
     ...
-
+}
 ```
 
 ## See Also

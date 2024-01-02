@@ -35,7 +35,6 @@ Body:
    "sqlServerType":"{SqlServerType}",
    "sqlConnectionString":"{SqlConnectionString}"
 }
-
 ```
 
 In the JSON example above, `productId` can be one of following values:  
@@ -111,7 +110,7 @@ The response will be like this for each of the companies:
 
 To include the company into the cloud migration you should issue following request:
 
-```json
+```http
 PATCH  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies ({CompanyId})
 Authorization: Bearer {token}
 Content-type: application/json
@@ -119,14 +118,13 @@ If-Match: etag
  {
       "replicate": true
 }
-
 ```
 
 To exclude the company, issue the same request with a false value.
 
 Once the companies are marked for replication you can create them by running the following request:
 
-```json
+```http
 POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies({AnyCompanyId}) /Microsoft.NAV.createCompaniesMarkedForReplication
 
 Authorization: Bearer {token}

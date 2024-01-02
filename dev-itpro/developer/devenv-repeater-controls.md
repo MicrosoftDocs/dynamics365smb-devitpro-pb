@@ -129,7 +129,6 @@ pagecustomization MyCustomization customizes "Customer List"
         }
     }
 }
-
 ```
 
 ## See Also

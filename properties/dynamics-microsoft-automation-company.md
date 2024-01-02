@@ -53,7 +53,6 @@ Here is a JSON representation of the **company**.
     "displayName": "CRONUS USA, Inc.",
     "businessProfileId": ""
 }
-
 ```
 
 ## See Also 
