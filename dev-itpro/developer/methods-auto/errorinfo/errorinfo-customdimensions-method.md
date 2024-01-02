@@ -43,13 +43,11 @@ The current custom dimensions of the ErrorInfo.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remark
+## Remarks
 
 You can use the `CustomDimensions` dictionary to transfer data from the code where an error message is shown to the user to the codeunit and method(s) executed by fix-it actions or where you handle collected errors. 
 
-For more information about how to develop actionable errors, see [Actionable errors](../../devenv-actionable-errors.md). 
-
-For more information about how to handle multiple collected errors, see [Collecting errors](../../devenv-error-collection.md).
+For more information about how to develop actionable errors, see [Actionable errors](../../devenv-actionable-errors.md). For more information about how to handle multiple collected errors, see [Collecting errors](../../devenv-error-collection.md).
 
 
 ## Example (get the CustomDimensions dictionary)
