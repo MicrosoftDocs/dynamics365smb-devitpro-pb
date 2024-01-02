@@ -510,7 +510,7 @@
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
 
 
-## Working with the AL language
+## Programming in the AL language
 ### [A tour of the AL language](developer/devenv-programming-in-al.md)
 
 ### Program building blocks
@@ -910,8 +910,8 @@
 #### [Implementing camera in AL](developer/devenv-implement-camera-al.md)
 #### [Implementing location in AL](developer/devenv-implement-location-al.md)
 
-<!-- AL programming -->
-## AL programming
+<!-- The AL programming language -->
+## The AL programming language
 ### [Overview](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)
 ### [FAQ for developing in AL](developer/devenv-dev-faq.md)
