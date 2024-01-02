@@ -1,8 +1,8 @@
 ---
-title: "Upgrading Version 15 Base Application to Version 17"
+title: "Upgrading version 15 Base Application to version 17"
 description: Describes how to upgrade an unmodified Business Central 15 application to version 17
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/18/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.author: jswymer
 author: jswymer
 ---
 
-# Upgrading Version 15 Base Application to Version 17
+# Upgrading version 15 Base Application to version 17
 
 Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 solution that uses the Microsoft System and Base applications.
 
@@ -106,7 +106,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 3. Install Business Central version 17 components.
 
-    You'll keep version 15 installed to complete some steps in the upgrade process. When you install version 17, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or you must stop the version 15.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You keep version 15 installed to complete some steps in the upgrade process. When you install version 17, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or you must stop the version 15.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -141,7 +141,7 @@ When you installed version 17 in **Task 2**, a version 17 [!INCLUDE[server](../d
     ```powershell
     Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName DatabaseName -KeyValue "<database name>"
     ```
-    In a single tenant deployment, this command will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+    In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
 2. Disable task Scheduler on the server instance for purposes of upgrade.
 
@@ -171,7 +171,7 @@ When you installed version 17 in **Task 2**, a version 17 [!INCLUDE[server](../d
 
 ## Task 6: Publish symbols and extensions
 
-In this task, you'll publish the platform symbols and extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft extensions and third-party extensions that were used on your old deployment.
+In this task, you publish the platform symbols and extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft extensions and third-party extensions that were used on your old deployment.
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
@@ -239,7 +239,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension name>
     ```
 
-    For example, to recompile all extensions that are not published by Microsoft, you could run the following command:
+    For example, to recompile all extensions that aren't published by Microsoft, you could run the following command:
 
     ```powershell  
     Get-NAVAppInfo -ServerInstance <server instance> | Where-Object {$_.Publisher -notlike 'Microsoft'} | Repair-NAVApp
@@ -249,7 +249,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 ## Task 7: Synchronize tenant
 
-You'll synchronize the tenant's database schema with any schema changes in the application database and extensions. If you have a multitenant deployment, do these steps for each tenant.
+You synchronize the tenant's database schema with any schema changes in the application database and extensions. If you have a multitenant deployment, do these steps for each tenant.
 
 1. (Multitenant only) Mount the tenant to the version 15 server instance.
 
@@ -330,7 +330,7 @@ Run the data upgrade on extensions in order of dependency.
 
     1. Install **Application** extension (when comping from 15.2 and earlier only). 
 
-        You'll have to install the **Application** extension first, otherwise you can't upgrade Microsoft extensions.
+        You have to install the **Application** extension first, otherwise you can't upgrade Microsoft extensions.
 
         ```powershell
         Install-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Application"
@@ -369,7 +369,7 @@ To upgrade the control add-ins from the client, do the following steps:
 4. Locate and select the .zip file for the control add-in and choose **Open**.
 
     The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
-5. After you've imported all the new control add-in versions, restart Business Central Server instance.
+5. After you import all the new control add-in versions, restart Business Central Server instance.
 
 Alternatively, you can use the [Set-NAVAddin cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navaddin) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For example, the following commands update the control add-ins installed by default. Modify the commands to suit:
 
@@ -394,7 +394,7 @@ At this point, the upgrade is complete, and you can open the client.
 ## Post-upgrade tasks
 
 1. Enable task scheduler on the server instance.
-2. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
+2. (Multitenant only) For tenants other than the tenant that you used for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
 3. If you want to use data encryption as before, enable it.
 
    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
@@ -405,7 +405,7 @@ At this point, the upgrade is complete, and you can open the client.
 
     (Optional) This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version.  
 
-    On the **Help and Support** page in the client, you'll see an application version, such as 15.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
+    On the **Help and Support** page in the client, you see an application version, such as 15.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
 
     We recommend setting the value to application build number for the version 17 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/help/4549687).
 
@@ -444,7 +444,7 @@ At this point, the upgrade is complete, and you can open the client.
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
 
-## See Also  
+## See also  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

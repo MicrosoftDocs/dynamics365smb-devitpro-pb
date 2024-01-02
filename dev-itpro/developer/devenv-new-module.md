@@ -84,7 +84,6 @@ We'll start by creating a new folder named **XmlWriter** in the **System** folde
         "target":  "OnPrem",
         "contextSensitiveHelpUrl":  "/dynamics365/business-central/"
     }
-
 ```
 > [!NOTE]
 > After we finish developing our module, we will need to update the app.json file to ensure that the **versions** and **idRanges** are correct. We can easily verify the version by checking the app.json in other modules in the System Application. The idRanges must reflect the IDs used in the module.
@@ -93,7 +92,7 @@ Next, create the **src** folder under **System/XmlWriter**. This folder will con
 
 After adding the implementation functions, the implementation codeunit will look as follows.
 
-```
+```al
     codeunit 1484 "XmlWriter Impl"
     {
         Access = Internal;
@@ -121,13 +120,12 @@ After adding the implementation functions, the implementation codeunit will look
             StringWriter: DotNet StringWriter;
             XmlTextWriter: DotNet XmlTextWriter;
     }
-
 ````
 Now that we have created our implementation codeunit, we must add public functions in a facade codeunit with the functionality that we want to expose. Because the functions are public, we must ensure that these are tested and documented. To do this, we need to create a facade codeunit. In this example, we'll name the codeunit **XmlWriter.Codeunit.al**. The functions call the corresponding functions in the implementation codeunit.
 
 The following is an example of the facade codeunit named **XmlWriter.Codeunit.al** that includes public functions and documentation.
 
-```
+```al
 
     /// <summary>
     /// Provides helper functions for System.Xml.XmlWriter
@@ -206,7 +204,6 @@ We will add the following new file under **System Tests/XmlWriter/src**, **XmlWr
             Assert.ExpectedError('A call to System.Xml.XmlTextWriter.WriteEndDocument failed with this message: Document does not have a root element.');
         end;
     }
-
 ```
 
 After running the tests successfully, changes are complete.

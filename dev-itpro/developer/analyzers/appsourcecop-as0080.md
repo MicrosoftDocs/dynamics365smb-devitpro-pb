@@ -3,7 +3,7 @@ title: "AppSourceCop Error AS0080"
 description: "Decreasing the length of a field is not allowed."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/20/2023
+ms.date: 12/22/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Fields must not decrease in length
 
 ## Description
-Decreasing the length of a field is not allowed. This might break the upgrade of existing installations and dependent extensions. If the field part of the primary key, the field length cannot change.
+Decreasing the length of a field is not allowed. This might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
