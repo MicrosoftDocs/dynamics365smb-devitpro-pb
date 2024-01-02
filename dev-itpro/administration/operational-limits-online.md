@@ -19,34 +19,35 @@ To ensure the availability and quality of Business Central services, there are l
 > Telemetry is gathered on some of the operations that have a limit. The telemetry provides insight into operations for which limits were exceeded. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md).
 
 <!--
-For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can't change these limits, but it's useful to be aware of them. For on-premises installation, you can adjust most of the limits by configuring the [!INCLUDE[server](../developer/includes/server.md)].-->
+For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can't change these limits, but it's useful to be aware of them. For on-premises installation, you can adjust most of the limits by configuring the [!INCLUDE[server](../developer/includes/server.md)].
+-->
 
 ##  <a name="ClientServices"></a> Client connection limits
   
-|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |Reconnect period|The time during which a client can reconnect to the service after being disconnected.|  10 minutes|
-<!-- these settings are per node. We should not expose these to partners 
+
+<!-- These settings are per node. We should not expose these to partners 
 |Max concurrent calls|The maximum number of concurrent client calls that can be active.|1000|  
 |Max concurrent connections|The maximum number of concurrent client connections that the service accepts. |500|
-|Max number of orphaned connections|Th maximum number of orphaned connections to be kept alive at the same time for the time that is specified by **ReconnectPeriod**.<br /><br /> A connection is orphaned when the client is involuntarily disconnected from service.<br /><br /> You can also use **MaxValue** as a value to indicate no limit.o| 20|
+|Max number of orphaned connections|The maximum number of orphaned connections to be kept alive at the same time for the time that is specified by **ReconnectPeriod**.<br /><br /> A connection is orphaned when the client is involuntarily disconnected from service.<br /><br /> You can also use **MaxValue** as a value to indicate no limit.o| 20|
 -->
 
-
-
-<!-- no limit
+<!-- No limit
 |Operation timeout|The maximum time for the service to return a call from the client.||  
 -->
+
 ##  <a name="DataHandling"></a> Data handling limits
   
-|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |Max items in object graph|The maximum number of objects to serialize or deserialize.|  10,000|
 |Max file size|The maximum size of files that can be uploaded to or downloaded from the service.|350 MB|
 |Maximum stream read size|The maximum number of bytes that can be read from a stream (InStream object) in a single AL read operation. Examples include READ or InStream.READTEXT method calls. This setting pertains to UTF-8 and UTF-16 text encoding; not MS-DOS encoding. |1,000,000 bytes|
 
 <!--
-|Max data rows allowed to send to excel|The maximum number of rows that can be included in an Excel document generated from a list type page <br /><br /> **Note:** This setting only pertains to list type pages in the client. For other pages types, the limit on rows is configured in the client.| |    
+|Max data rows allowed to send to Excel|The maximum number of rows that can be included in an Excel document generated from a list type page <br /><br /> **Note:** This setting only pertains to list type pages in the client. For other page types, the limit on rows is configured in the client.| |    
 |Data cache size|The contextual size of the data cache.| 9| 
 |Chunk size|The default size for a chunk of data that is transferred between the service and clients| 28 KB| 
 |Compression threshold|The threshold in memory consumption at which the service starts compressing datasets| 64 KB|
@@ -54,34 +55,41 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 
 ##  <a name="Database"></a> Database limits
   
-|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Value|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Value|  
 |---------|--------------------------------------------------------------------------------|------|
 |Search timeout|The time (in seconds) that a search operation on lists in the client continues before it's stopped. When the limit is reached, the following message displays in the client: **Searching for rows took long and was stopped. Try to search or filter using different criteria.**|10 seconds|
 |SQL command timeout|The contextual time-out for a SQL command.|30 minutes|
 |SQL connection idle timeout|The time that a SQL connection can remain idle before being closed.|5 minutes|
-|SQL connection timeout|The time to wait for the service to connect to the database. When the time is exceeded, the attempt is canceled and an error occurs. This setting also applies to begin, rollback, and commit of transactions.|1.5 minutes|
-|Long running SQL query threshold|The amount of time that an SQL query can run before a warning telemetry event occurs. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.|1000 ms|
+|SQL connection timeout|The time to wait for the service to connect to the database. When the time is exceeded, the attempt is canceled and an error occurs. This setting also applies to the beginning, rollback, and commit of transactions.|1.5 minutes|
+|Long-running SQL query threshold|The amount of time that an SQL query can run before a warning telemetry event occurs. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.|1000 ms|
 
 <!--
-|SQL bulk import batch size|Specifies how many SQL memory chunks that a data import must be distributed across.| 448|
+|SQL bulk import batch size|Specifies how many SQL memory chunks a data import must be distributed across.| 448|
 -->
-## <a name="Task"></a>Asynchronous task limits
 
-|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
-|---------|--------------------------------------------------------------------------------|------|
+## <a name="Task"></a>Asynchronous task limits (per environment)
+
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
+|-------|--------------------------------------------------------------------------------|-----|
 |Background sessions default wait timeout|The maximum amount of time that background sessions will wait to be processed.|8 hours|
-|Background sessions max concurrent|The maximum number of background sessions per tenant that the server instance can actively process at the same time. Requests that exceed the limit will wait in the queue until a slot becomes available.| 10|
-|Background sessions max queued|The maximum number of background sessions per tenant that can be waiting to be processed.|100|
+|Background sessions max concurrent|The maximum number of background sessions per environment that the server instance can actively process at the same time. Requests that exceed the limit will wait in the queue until a slot becomes available.|10|
+|Background sessions max queued|The maximum number of background sessions per environment that can be waiting to be processed.|100|
 |ChildSessionsMaxConcurrency|The maximum number of child sessions that can run concurrently per parent session. When the value is exceeded, additional child sessions will be queued and run when a slot becomes available as other child sessions are finished.|5|
 |Child sessions max queue length|The maximum number of child sessions that can be queued per parent session. If the value is exceeded, an error occurs.|100|
-|  Maximum concurrent running scheduled tasks  | The maximum number of tasks that can run simultaneously for an environment.<br /><br />If there are many jobs running at the same time, you might experience that the response time for clients gets slower. If the value is too low, it might take longer for scheduled tasks to process.|3|
+|Maximum concurrent running scheduled tasks|The maximum number of tasks that could simultaneously run in an environment was set to 3 in the past. To increase throughput, this per-environment limit has now been changed to a per-user limit |See the current [per-user limit](#TaskUser).|
 |Maximum session recursion depth|The maximum number of nested sessions that can be created before reaching infinite recursion. If the limit is exceeded, a runtime error occurs with the message: **Excessive recursive session creation detected, original session ID: \[id\], current session ID: \[id\].**|14|
-|  Page background task default timeout |The default amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. This limit is used when no timeout is provided when the page background task is enqueued.|2 minutes|
-|  Page background task max timeout | The maximum amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. If a page background task is enqueued with a timeout greater than this limit, this limit is ignored.|10 minutes|
+|Page background task default timeout|The default amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. This limit is used when no timeout is provided when the page background task is enqueued.|2 minutes|
+|Page background task max timeout|The maximum amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. If a page background task is enqueued with a timeout greater than this limit, this limit is ignored.|10 minutes|
+
+## <a name="TaskUser"></a>Asynchronous task limits (per user)
+
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
+|-------|--------------------------------------------------------------------------------|-----|
+|Maximum concurrent running scheduled tasks|The maximum number of tasks that can be simultaneously run by a user. The more users you have in your environment, the more tasks you can simultaneously run in it, as long as we can continuously scale our resources. If there are many tasks running at the same time and we couldn't sufficiently scale our resources, you might experience delays in running your tasks.|5, see [frequently asked questions on per-user limits](#FAQUser).|
 
 ## <a name="Reports"></a>Report limits
 
-|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |Default max documents | The maximum number of documents that can be merged in a report using a Word layout. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using [MaximumDocumentCount property](../developer/properties/devenv-maximumdocumentcount-property.md) of a report. Client users can do the same when running a report from the report request page|200|
 |Max documents | The maximum number of documents that can be merged in a report using a Word layout. If exceeded, the report will be canceled.|500|
@@ -92,14 +100,14 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 
 ## Query limits
 
-|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 | Max execution timeout | The maximum execution time that it can take to generate a query. If exceeded, the query will be canceled.|30 minutes|
 | Max rows | The maximum number of rows that can be processed in a query. If exceeded, the query will be canceled.|1,000,000|
 
 ## Company limit (per environment)
 
-|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 | Max companies | The maximum number of companies that can be contained in one environment.|300|
 
@@ -108,30 +116,31 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 >
 > If you already have more than 300 companies in one environment, distribute them across more environments to avoid problems later.
 
-##  <a name="ODataServices"></a> OData request limits (per environment)
+## <a name="ODataServices"></a> OData request limits (per environment)
   
-|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
-|---------|--------------------------------------------------------------------------------|------|
-|Max body size| The maximum request body size. |  350 megabytes|
-|Max concurrent requests|The maximum number of OData V4 requests the server instance can actively process at the same time. Requests that come in when the  the limit is exceeded, will wait in a queue until a time slot becomes available. The request waits in the server request queue until timeout (currently 8 minutes), where an HTTP response code `503 - Service Temporarily Unavailable` is returned. |5|
-|Max connections|The maximum number of simultaneous OData requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
-|Max page size|The maximum number of entities returned per OData request.|  20,000 entities per request|
-|Max batch size|The maximum number of operations in an OData $batch request.| 100 operations per batch|
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
+|-------|--------------------------------------------------------------------------------|-----|
+|Max body size|The maximum request body size.|350 megabytes|
+|Max concurrent requests|The maximum number of OData V4 requests the server instance can actively process at the same time. Requests that come in when the limit is exceeded will wait in a queue until a time slot becomes available. The request waits in the server request queue until timeout (currently 8 minutes), where an HTTP response code `503 - Service Temporarily Unavailable` is returned.|5|
+|Max connections|The maximum number of simultaneous OData requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100|
+|Max page size|The maximum number of entities returned per OData request.|20,000 entities per request|
+|Max batch size|The maximum number of operations in an OData $batch request.|100 operations per batch|
 |Max request queue size|The maximum number of pending OData V4 requests waiting to be processed. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|95|
 |Rate|The number of OData requests per minute that are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br />300 requests/minute<br /><br />Production<br />- 600 requests/minute| 
-|Operation timeout|The maximum amount of time that the service gives a single OData request. When the limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.<br /><br />After 8 minutes, the session is canceled. |8 minutes|
+|Operation timeout|The maximum amount of time that the service gives a single OData request. When the limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.<br /><br />After 8 minutes, the session is canceled.|8 minutes|
 |Max number of webhook subscriptions|The maximum number of Webhook subscriptions. |200|
 
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
 -->
+
 ##  <a name="SOAPServices"></a> SOAP request limits (per environment)
 
-|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
-|---------|--------------------------------------------------------------------------------|------|
-|Max concurrent requests|The maximum number of SOAP requests the server instance can actively process at the same time. Requests that come in when the limit is exceeded, will wait in a queue until a time slot becomes available. The request waits in the server request queue until timeout (currently 8 minutes), where an HTTP response code `503 - Service Temporarily Unavailable` is returned .|5|
-|Max connections|The maximum number of simultaneous SOAP requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a `429 (Too Many Requests)` error occurs.|100 |
-|Max message size|The maximum permitted size of a SOAP web service requests|65,536 KB|
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
+|-------|--------------------------------------------------------------------------------|-----|
+|Max concurrent requests|The maximum number of SOAP requests the server instance can actively process at the same time. Requests that come in when the limit is exceeded, will wait in a queue until a time slot becomes available. The request waits in the server request queue until timeout (currently 8 minutes), where an HTTP response code `503 - Service Temporarily Unavailable` is returned.|5|
+|Max connections|The maximum number of simultaneous SOAP requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a `429 (Too Many Requests)` error occurs.|100|
+|Max message size|The maximum permitted size of a SOAP web service request|65,536 KB|
 |Max request queue size|The maximum number of pending SOAP requests waiting to be processed. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|95|
 |Rate|Specifies how many SOAP requests per minute are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br /> 300 requests/minute<br /><br />Production:<br />600 requests/minute|
 |Operation timeout|The maximum amount of time that the service gives to a single SOAP request. When the limit is exceeded, HTTP response code `408 - Request Timeout` is returned.|8 minutes|
@@ -142,6 +151,19 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
 -->
+
+## <a name="FAQUser"></a>Frequently asked questions on per-user limits
+
+This section includes frequently asked questions on per-user limits. If you have questions that are not answered, please post them in the **Feedback** section below by submitting feedback about this page.
+
+### How do these limits apply to how many requests or other resource consumption units a user is entitled to each day?
+
+These operational limits control "how fast" you can consume resources simultaneously or in short periods (per second/minute) and are not related to entitlement quotas that control "how much" you can consume resources in longer periods (per day/week/month). At present, we haven't set definite entitlement quotas, but will do so soon.
+
+### Are limits applied differently for application users?
+
+No. These operational limits are applied to all users in the same way.
+
 ## See Also
 
 [Working with API Rate Limits](../api-reference/v2.0/dynamics-rate-limits.md)  
