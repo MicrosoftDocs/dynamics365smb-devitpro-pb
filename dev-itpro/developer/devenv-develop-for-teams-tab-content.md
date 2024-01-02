@@ -71,7 +71,7 @@ codeunit 50100 UpdateRecommendedContent
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Action Provider", 'OnAfterGetPageActions', '', true, true)]
-    local procedure AddMyPageToRecommendedContent(PageId: Integer; IncludeViews: Boolean; var ItemsJsonArray: JsonArray);
+    local procedure AddMyPageToRecommendedContent(PageId: Integer; IncludeViews: Boolean; var ItemsJsonArray: JsonArray)
     begin
         AddRecommendedPage(ItemsJsonArray, 'My page', GetUrl(ClientType::Web, CompanyName, ObjectType::Page, Page::MyPage));
     end;

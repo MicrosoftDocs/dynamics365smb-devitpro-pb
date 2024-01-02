@@ -193,6 +193,32 @@ entitlement BC_Group
 
 ```
 
+## Entitlement example - Microsoft Entra application access
+An example of an entitlement where `Type` is `Application`. This supports scenarios when a vendor has to have access to the AppSource app with transact support and no need to buy a license. The `id` property is the client ID of the Microsoft Entra application. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+
+```al
+entitlement BC_SpecificApplication
+{
+    Type = Application;
+    Id = '1a2aaaaa-3aa4-5aa6-789a-a1234567aaaa';
+}
+```
+
+An example of an entitlement where `Type` is `ApplicationScope`. This supports scenarios when it should be possible to have Microsoft Entra application access to the AppSource app with transact support and no need to buy a license. The `id` property is the scope assigned to the Microsoft Entra application. For more information, see [Using Service-to-Service (S2S) Authentication](../administration/automation-apis-using-s2s-authentication.md).
+
+```al
+entitlement BC_ApplicationWithAPIRWScope
+{
+    Type = ApplicationScope;
+    Id = 'API.ReadWrite.All';
+}
+entitlement BC_ApplicationWithAutomationScope
+{
+    Type = ApplicationScope;
+    Id = 'Automation.ReadWrite.All';
+}
+```
+
 ## See also
 
 [Developing Extensions](devenv-dev-overview.md)  

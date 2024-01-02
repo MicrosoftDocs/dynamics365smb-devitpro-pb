@@ -3,7 +3,7 @@ title: Creating an Excel layout report
 description: Describes the steps involved in creating a report that uses an Excel layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 06/16/2023
+ms.date: 12/15/2023
 ms.reviewer: kepontop
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -42,7 +42,7 @@ For more information about the data contract, see [Understanding Excel layouts](
 
 ### Excel layout data contract in 2023 release wave 2 and later versions
 
-The [ExcelLayoutMultipleDataSheets property](properties/devenv-excellayoutmultipledatasheets-property.md) allows you to work with reports that render multiple worksheets for the report data when the dataset has multiple data items. By setting the property to `true`, the AL runtime generates an Excel worksheet for each data item and place its data there. Otherwise, if the property is `false`, which is the default, a single sheet is used for all data (as described in the previous section).
+The [ExcelLayoutMultipleDataSheets property](properties/devenv-excellayoutmultipledatasheets-property.md) allows you to work with reports that render multiple worksheets for the report data when the dataset has multiple data items. By setting the property to `true`, the AL runtime generates an Excel worksheet for each data item and places its data there. Otherwise, if the property is `false`, which is the default, a single sheet is used for all data (as described in the previous section).
 
 Each of the multiple sheets is named #DataItemName, where DataItemName is the name given to the dataitem in the report design. When new empty Excel layouts are added to the report, the property is used to determine the sheet structure.
 
@@ -65,6 +65,23 @@ When a report with an Excel layout is run, [!INCLUDE[server](includes/server.md)
 2. Loads the Excel layout file.
 3. Inserts the data into the _Data_ table in the _Data_ worksheet in the Excel layout file.
 4. Provides the merged Excel workbook to the user for download or view in Excel online if enabled by the tenant administrator. For more information about viewing Excel outputs in Excel online, visit [Save Excel workbooks and report files in OneDrive](/dynamics365/business-central/across-onedrive-overview#save-excel-workbooks-and-report-files-in-onedrive).
+
+
+### Changing the data contract after adding new columns to the report dataset
+
+If you add new columns to the report dataset after you've created Excel layouts, the data contracts in the layouts don't get updated automatically. But you don't need to recreate the layouts from scratch, you can simply add the new columns manually to the header line in the data contract worksheet(s). 
+
+For a report developer working with AL code, maybe the simplest way to get the new column names is from the AL code for the report object. For a report developer working just in Excel, the simplest way to get the new column names is to run the report in [!INCLUDE[prod_short](../includes/prod_short.md)] and on the request page, then choose the **Microsoft Excel Document (data only)** option. This will give you an Excel workbook with all the columns in the data contract.
+
+## Formatting data in Excel layouts
+
+[!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
+
+Specifically for Excel layouts, there are many ways to control formatting of data elements directly in Excel. For more examples on how to format data in Excel, see 
+
+- [Formatting dates in Excel](https://support.microsoft.com/en-us/office/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e)
+- [Formatting numbers in Excel](https://support.microsoft.com/en-us/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)
+
 
 ## Drillthrough to Business Central from an Excel layout
 

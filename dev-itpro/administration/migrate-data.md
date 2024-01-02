@@ -38,7 +38,7 @@ To run cloud migration, Business Central on-premises deployment and Business Cen
 
 * Customer has a [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant  
 
-  * The on-premises solution must use SQL Server 2016 SP1 or later  
+  * The on-premises solution must use SQL Server 2016 or later  
   * The database must have compatibility level 130 or higher  
   * Update statistics and reorganize indexes on all tables on the source database  
   

@@ -110,7 +110,7 @@ page 50110 PageName
                     action("My Report")
                     {
                         ApplicationArea = All;
-                        RunObject = page "Customer Card";
+                        RunObject = report "My Report";
                     }
                 }
             }

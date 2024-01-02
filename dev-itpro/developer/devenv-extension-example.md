@@ -232,7 +232,6 @@ field(4;"Minimum Purchase";Decimal)
 
 From this point, changes to the **Reward Card** page can be done either manually by adding the following code in Visual Studio Code or by using Designer's functions to add the same field. Both ways lead to the same results, but using Designer speeds up the process. 
 
-
 ```AL
 field("Minimum Purchase";"Minimum Purchase")
 {
@@ -293,7 +292,6 @@ tableextension 50103 "Customer Ext" extends Customer
         }
     }
 }
-
 ```
 
 > [!NOTE]
@@ -448,7 +446,7 @@ codeunit 50105 RewardsInstallCode
     end;
 
     // Insert the GOLD, SILVER, BRONZE reward levels
-    procedure InsertDefaultRewards();
+    procedure InsertDefaultRewards()
     begin
         InsertRewardLevel('GOLD', 'Gold Level', 20);
         InsertRewardLevel('SILVER', 'Silver Level', 10);
@@ -456,7 +454,7 @@ codeunit 50105 RewardsInstallCode
     end;
 
     // Create and insert a reward level in the "Reward" table.
-    procedure InsertRewardLevel(ID : Code[30]; Description : Text[250]; Discount : Decimal);
+    procedure InsertRewardLevel(ID : Code[30]; Description : Text[250]; Discount : Decimal)
     var
         Reward : Record Reward;
     begin
