@@ -1,22 +1,22 @@
 ---
-title: "Replacement for Codeunit 1"
+title: "Replacement for codeunit 1"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 01/02/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
-# Codeunit 1 Replacement
+# Codeunit 1 replacement
 
 With [!INCLUDE[prod_short](../developer/includes/prod_short.md)], codeunit **1 Application Management** has been removed and replaced with system codeunits and management codeunits. However, for technical upgrades from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], you must import the replacement codeunit 1 that is provided in this article into your application database. For more information about the codeunit 1 removal and what it means, see [Transitioning From Codeunit 1](transition-from-codeunit1.md). 
 
 
 
-## Codeunit 1 Replacement Codeunit
+## Codeunit 1 replacement Codeunit
 
-Copy the code to a text editor, and save it as a .txt file type. You will use this during a technical upgrade.
+Copy the code to a text editor, and save it as a .txt file type. You'll use this during a technical upgrade.
 
 ```
 OBJECT Codeunit 1 ApplicationManagement
@@ -1013,7 +1013,7 @@ OBJECT Codeunit 1 ApplicationManagement
 
 ```
 
-## See Also  
- [Converting a Database](Converting-a-Database.md)  
- [Resolving Compilation Errors When Converting a Dynamics NAV  Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2018-Database.md)  
- [Exporting and Importing Objects](../cside/cside-import-objects.md)
+## See also  
+ [Converting a Database](Converting-a-Database.md)    
+ [Resolving Compilation Errors When Converting a Dynamics NAV  Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2018-Database.md)    
+ [Exporting and Importing Objects](../cside/cside-import-objects.md)  
