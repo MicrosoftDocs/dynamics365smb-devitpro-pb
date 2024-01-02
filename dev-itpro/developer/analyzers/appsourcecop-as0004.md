@@ -3,7 +3,7 @@ title: "AppSourceCop Error AS0004"
 description: "Fields must not change type."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/20/2023
+ms.date: 01/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,8 +27,13 @@ Fields must not change type.
 ## Remarks
 
 The validation of the length of table fields was previously done with [AS0004](appsourcecop-as0004.md) and has now been split into two different rules:
+
 - [AS0080](appsourcecop-as0080.md) - which validates against decreasing the length of fields
 - [AS0086](appsourcecop-as0086.md) - which validates against increasing the length of fields
+
+## How to fix this diagnostic?
+
+To fix this diagnostic, you must obsolete the field by mark the field as [Obsolete Pending](../properties/devenv-obsoletestate-property.md) and then introduce a new field.
 
 ## Example
 
