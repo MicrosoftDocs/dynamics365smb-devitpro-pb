@@ -1,5 +1,5 @@
 ---
-title: "Comparing and Merging Application Object Source Files"
+title: "Comparing and merging application object source files"
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
-# Comparing and Merging Application Object Source Files
+# Comparing and merging application object source files
 When you create or modify application objects, you use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], and you import and export objects as .fob files. But you can also export objects as text files and use other tools, such as the [!INCLUDE[devshell](../developer/includes/devshell.md)], to make general changes to the objects. For example, you can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to merge changes from an upgrade with your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution.  
 
 >[!NOTE]
@@ -18,7 +18,7 @@ When you create or modify application objects, you use the [!INCLUDE[nav_dev_lon
 
  The application merge utilities that are available in the [!INCLUDE[devshell](../developer/includes/devshell.md)] install when you choose the **Developer** option in [!INCLUDE[nav_setup](../developer/includes/nav_setup_md.md)], or if you add the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to another installation option.  
 
-## Comparing and Merging Application Objects  
+## Comparing and merging application objects  
  [!INCLUDE[prod_short](../developer/includes/prod_short.md)] includes [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets that help you apply changes to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solutions. You can use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] cmdlets to modify application object source files in the [!INCLUDE[devshell](../developer/includes/devshell.md)], or by importing the Microsoft.Dynamics.NAV.Model.Tools.psd1 module into the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] Integrated Scripting Environment \(ISE\).  
 
  When Microsoft releases a new version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you want to upgrade your solution. Similarly, you want to update your solution with cumulative updates and other smaller changes to the application. Each time you want to update your solution, you have to compare the original version to the new version, and then you have to apply the difference to your own solution. Or you compare the new version to your own solution and merge the changes into your solution. In both cases, you compare different versions of application objects to calculate and apply the difference. The Merge-NAVApplicationObject cmdlet compares the changes that have been made to application objects between two sets of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application objects, and applies the difference to a third set of application objects, the target of the merge. The result of the application object merge is a fourth set of application objects that make up your new, updated solution.  
@@ -63,7 +63,7 @@ When you create or modify application objects, you use the [!INCLUDE[nav_dev_lon
 
  When you merge application changes by running the Merge-NAVApplicationObject cmdlet or the Update-NAVApplicationObject cmdlet, the differences are applied automatically if possible. However, when conflicts are detected, they are captured in **CONFLICT** files that clearly identify where two parties such as you and Microsoft have changed the same object or parts of it. For more information, see [Handling Merge Conflicts](Handling-Merge-Conflicts.md).  
 
-### Scenario: Updating your Solution to the Next Cumulative Update  
+### Scenario: Updating your solution to the next cumulative update  
  In the following example, you have built a solution that is based on [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)], **MySolution**. Microsoft then releases [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Cumulative Update 1 that includes hotfixes and two regulatory features for your country/region. To help you apply the cumulative update to your solution, you use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] cmdlets. The cmdlets calculate the modifications that Microsoft made between the original release and the cumulative update, and apply these to your solution. Then, you must manually resolve any conflicts, such as both you and Microsoft modified a report object or a table. You must also validate the automatically applied modifications through testing and maybe code review. The following table describes the three versions of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application that you want to compare and merge.  
 
 |Version|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
@@ -77,7 +77,7 @@ When you create or modify application objects, you use the [!INCLUDE[nav_dev_lon
 > [!TIP]  
 >  The use of TARGET as the name of the folder in the sample scripts and in the *–TargetPath* cmdlet parameters indicates the most common direction of the merge: You apply external modifications to a target solution. However, there are scenarios where it makes sense to swap the versions that you specify as MODIFIED and TARGET, such as when you upgrade from version to version. Since the processing is so fast, typically just a few minutes, it is recommended that you try out both options. For the smoother experience, place the set of application objects with the fewest modifications in MODIFIED.  
 
-## See Also  
+## See also  
  [Merge Application Changes](merge-application-changes.md)   
  [Compare and Update Application Object Source Files](compare-update-application-object-source-files.md)   
  [Handling Merge Conflicts](Handling-Merge-Conflicts.md)   
