@@ -76,9 +76,11 @@ WHERE
     )
 ```
 
-## Complete API data upgrade after going live
+## Completing API data upgrade after going live
 
-1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
+When you're finished with the cloud migration, run the API data upgrade as described [Run API data upgrade](migration-finish.md#api).
+
+<!--
 1. Search for and open the **Cloud Migration Management** page.
 1. Select the **Manage API Upgrade** action to open the **API Upgrade overview** page. 
 
@@ -98,7 +100,7 @@ WHERE
   
 1. Repeat the previous step for each company you want to run the API data upgrade.
 
-You can check the status of job queue entries on the **API Upgrade Overview** page and restart a job queue entry if it fails. When you restart a job queue entry, it continues at the point where it stopped. It's safe to rerun the job queue entry because it commits and releases any locks and shouldn't cause any performance degradation.
+You can check the status of job queue entries on the **API Upgrade Overview** page and restart a job queue entry if it fails. When you restart a job queue entry, it continues at the point where it stopped. It's safe to rerun the job queue entry because it commits and releases any locks and shouldn't cause any performance degradation.-->
 
 ## Next steps
 
