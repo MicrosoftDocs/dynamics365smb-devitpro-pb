@@ -23,6 +23,8 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Granular administration as Dynamics 365 Business Central Administrator](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights)
 - [Detect invalid cloud migration configurations with proactive warnings](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/detect-invalid-cloud-migration-configurations-proactive-warnings)
 - [Access worksheet pages from mobile phones](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/access-worksheet-pages-mobile-phones) 
+- [Translatable Excel layouts](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/translatable-excel-layouts)
+- [Make use of static and runtime metadata available in Excel layouts](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/make-use-static-runtime-metadata-excel-layouts)
 - Generic Microsoft Graph API Wrapper
 - Add Azure File Services API module
 
