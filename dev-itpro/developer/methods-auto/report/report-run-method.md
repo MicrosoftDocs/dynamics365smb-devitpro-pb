@@ -55,10 +55,9 @@ If the report you specify doesn't exist, then a runtime error occurs.
 
 ## Printing
 
-The parameter `SystemPrinter` is only used for on-premises scenarios (print on server). Here, the [!INCLUDE[prod_short](../../includes/prod_short.md)] server will use the default printer on the server if you use SystemPrinter=true, otherwise it will use printer selection. 
+The parameter `SystemPrinter` is only used for on-premises scenarios (print on server). Here, the [!INCLUDE[prod_short](../../includes/prod_short.md)] server will use the default printer on the server if you use `SystemPrinter = true`, otherwise it uses the printer selection. 
 
 For the online version of [!INCLUDE[prod_short](../../includes/prod_short.md)], users can use printer extension and browser print.
-
 
 ## Example: Using `Report::<object ID>` syntax
 
