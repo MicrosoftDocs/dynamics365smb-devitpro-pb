@@ -134,14 +134,14 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds the 10-minute execution time.|10 minutes|
 -->
 
-## <a name="ODataServicesUser"></a>OData request limits (per user)
+## <a name="ODataServicesUser"></a>OData request limits (per user, will be set in the future)
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |-------|--------------------------------------------------------------------------------|-----|
 |Max concurrent requests|The maximum number of OData V4 requests that can be processed at the same time. Requests that come in when this limit is exceeded will wait in a queue until a time slot becomes available. They wait in the queue until they time out after 8 minutes, where an HTTP response code `503 - Service Temporarily Unavailable` is returned. The more users you have in your environment, the more requests can be simultaneously processed in it, as long as we can continuously scale our resources. If there are many requests being processed at the same time and we couldn't sufficiently scale our resources, you might experience delays/throttling in processing your requests.|5, see [frequently asked questions on per-user limits](#FAQsUser).|
 |Max connections|The maximum number of simultaneous OData V4 requests, including processed and queued requests. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|100, see [frequently asked questions on per-user limits](#FAQsUser).|
 |Max request queue size|The maximum number of queued OData V4 requests waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|95, see [frequently asked questions on per-user limits](#FAQsUser).|
-|Rate|The maximum number of OData V4 requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. The more users you have in your environment, the more requests can be submitted to it, as long as we can continuously scale our resources. If there are many requests being submitted at the same time and we couldn't sufficiently scale our resources, you might experience throttling in submitting your requests.|6000 requests in the previous 5-minute sliding window, see [frequently asked questions on per-user limits](#FAQsUser).| 
+|Rate|The maximum number of OData V4 requests that can be submitted within a 5-minute sliding window. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. The more users you have in your environment, the more requests can be submitted to it, as long as we can continuously scale our resources. If there are many requests being submitted around the same time and we couldn't sufficiently scale our resources, you might experience throttling in submitting your requests.|6000, see [frequently asked questions on per-user limits](#FAQsUser).| 
 
 ## <a name="SOAPServices"></a>SOAP request limits (per environment)
 
