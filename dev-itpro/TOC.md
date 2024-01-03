@@ -627,7 +627,7 @@
 #### [User experience guidelines for errors](developer/devenv-error-handling-guidelines.md)
 #### [Actionable errors](developer/devenv-actionable-errors.md)
 #### [Collecting errors](developer/devenv-error-collection.md)
-#### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md)
+#### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### Error telemetry
 ##### [Error message quality telemetry](administration/telemetry-error-message-voting-trace.md)
 ##### [Error method telemetry](administration/telemetry-error-method-trace.md)
@@ -888,11 +888,19 @@
 ###### [Permission set](administration/resources/dynamics_permissionset.md)
 ###### [Get permission set](administration/api/dynamics_permissionset_get.md)
 
+
 ### Running things in the background
 #### [Overview](developer/devenv-async-overview.md)
 #### [Page background tasks](developer/devenv-page-background-tasks.md)
 #### [Task scheduler](developer/devenv-task-scheduler.md)
 #### [Job queue](developer/devenv-job-queue.md)
+#### AL language reference (background processing)
+##### [Session.StartSession](developer/methods-auto/session/session-startsession-integer-integer-string-table-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Session.StopSession](developer/methods-auto/session/session-stopsession-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [TaskScheduler Data Type](developer/methods-auto/taskscheduler/taskscheduler-data-type.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Codeunit "Job Queue Management"](/dynamics365/business-central/application/base-application/codeunit/system.threading.job-queue-management?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Codeunit "Job Queue Dispatcher"](/dynamics365/business-central/application/base-application/codeunit/system.threading.job-queue-dispatcher?toc=/dynamics365/business-central/dev-itpro/toc.json)
+
 
 ### Developing APIs
 #### [Overview](developer/devenv-api.md)
