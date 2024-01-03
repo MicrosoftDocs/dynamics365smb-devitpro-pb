@@ -1,15 +1,15 @@
 ---
-title: Creating and Altering Business Central Databases in CSIDE
+title: Creating and altering Business Central databases in CSIDE
 description: Create a new database in the development environment and by using the New-NAVDatabase cmdlet in the Administration Shell. 
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/29/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---
-# Creating and Altering [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Databases
+# Creating and altering [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Databases
 
 [!INCLUDE[2019_Spring](../includes/2019_Spring.md)]
 
@@ -18,7 +18,7 @@ You can create new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] d
 >[!NOTE]
 > [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
 
-When you create a database you must specify the SQL Server instance for the database and the authentication type.  
+When you create a database, you must specify the SQL Server instance for the database and the authentication type.  
 
 <!-- 
 ### To download symbols
@@ -52,7 +52,7 @@ Open the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)] as an admi
 
 5.  In the **Password** field, enter your password if you have selected **Database Server Authentication**.  
 
-6.  To set the network type to be used when connecting to the server, choose the **Advanced** tab and select the net type from the drop down list box in the **Net Type** field. However, it is not usually necessary to change the network type from the default setting. The **Default** net type setting allows [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to connect to a server using the default client network type assigned by SQL Server. You can change the net type with the Client Network Utility, which is part of the SQL Server Client Utilities, if they have been installed on the client computer.  
+6.  To set the network type to be used when connecting to the server, choose the **Advanced** tab and select the net type from the drop-down list box in the **Net Type** field. However, it isn't necessary to change the network type from the default setting. The **Default** net type setting allows [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to connect to a server using the default client network type assigned by SQL Server. You can change the net type with the Client Network Utility, which is part of the SQL Server Client Utilities, if they have been installed on the client computer.  
 
 7.  Choose **OK** to connect to the server and open the **New Database** window.  
 
@@ -64,7 +64,7 @@ Open the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)] as an admi
  
     <!--From the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], on the **Tools** menu, choose **Sync. Schema For All Tables**, and then **With Validation**.  For more information, see [Synchronizing Table Schemas](Synchronizing-Table-Schemas.md).-->
 
-    You cannot use the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] in this case. You must use the [Sync-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], for example:
+    You can't use the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] in this case. You must use the [Sync-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], for example:
 
     ```
     Sync-NAVTenant -ServerInstance BC140 
@@ -75,37 +75,37 @@ Open the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)] as an admi
 
  After you have created the database, you can enter program objects and company data. Before you can create company data, you must import some basic data from another [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. The imported data must at least include **Data Common to All Companies** and **Application Objects**. <!-- For more information, see [Exporting and Importing Companies and Other Data](Exporting-and-Importing-Companies-and-Other-Data.md).-->  
 
-## Alter a Database
+## Alter a database
 
-The changes will not take effect until you restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
+The changes won't take effect until you restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
 > [!NOTE]  
 >  You cannot alter a database by using the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] if the database is deployed on Azure SQL Database.
   
-## Database Files Tab
+## Database files tab
 
 Increases the size of the database by either increasing the size of one or more of the database files or adding new data files to the database.  
   
- If you use secondary data files, then you must increase the size of the primary data file only when the catalog that it contains has become too large. When the catalog has become too large, new SQL Server objects, such as tables, cannot be created until you increase the size of the primary data file.  
+ If you use secondary data files, then you must increase the size of the primary data file only when the catalog that it contains has become too large. When the catalog has become too large, new SQL Server objects, such as tables, can't be created until you increase the size of the primary data file.  
   
- When you use secondary data files, you cannot create more space for storing [!INCLUDE[navnow](../developer/includes/navnow_md.md)] data by just increasing the size of the primary data file. You can create more space for storing data by increasing the size of the secondary data files that contain [!INCLUDE[navnow](../developer/includes/navnow_md.md)] information. You can also add new secondary data files in order to store more data.  
+ When you use secondary data files, you can't create more space for storing [!INCLUDE[navnow](../developer/includes/navnow_md.md)] data by just increasing the size of the primary data file. You can create more space for storing data by increasing the size of the secondary data files that contain [!INCLUDE[navnow](../developer/includes/navnow_md.md)] information. You can also add new secondary data files in order to store more data.  
   
  To open this window, on the **File** menu, choose **Database**, choose **Alter**, and then choose the **Database Files** tab.  
   
 > [!NOTE]  
 >  The first data file that is listed on the **Database Files** tab is the primary file.  
 
-## Transaction Log Files Tab
+## Transaction log files tab
 
 Increases the size of the existing transaction log files or adds new files to enable more transactions to be performed in the database. The transaction log grows as new transactions are performed in the database. SQL Server truncates the log after it performs a successful database or transaction log backup.  
   
  To open this window, on the **File** menu, choose **Database**, choose **Alter**, and then choose the **Transaction Log Files** tab.  
   
- You can also delete existing transaction log files that are empty. The first transaction log file that is listed is the primary file. You cannot delete the primary transaction log file.
+ You can also delete existing transaction log files that are empty. The first transaction log file that is listed is the primary file. You can't delete the primary transaction log file.
 
-## Collation Tab
+## Collation tab
 
-You use this tab to set the collation when you are creating a new database.
+You use this tab to set the collation when you're creating a new database.
 
 > [!IMPORTANT]
 > Do not use this tab to change the collation of an existing database. To change the collation, you must create a new database that uses the correct collation, and then export the data from the old database and import it to the new database. For more information, see [Changing Collation of Existing Database](../cside/cside-change-database-collation.md).
@@ -126,56 +126,56 @@ The **Language** drop-down list displays the friendly name of the language, not 
   
 If you set the **Validate Collation** check box, then collation languages that run with a different non-Unicode code page from your system non-Unicode code page are filtered out of the **Language** drop-down list. An example scenario of when you might want to choose a collation language that has a different code page from your system code page is if you want to prepare a Japanese database on a Danish computer.
   
-## Options Tab
+## Options tab
 
 Specifies database options that you set when you created the database. For example, you must select the **Single User** option before you perform any database tests. You must clear this option when the tests are completed.  
   
  To open this window, on the **File** menu, choose **Database**, choose **Alter**, and then choose the **Options** tab.  
   
-### Access Section  
+### Access section  
   
 |[!INCLUDE[bp_tablefield](../developer/includes/bp_tablefield_md.md)]|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |---------------------------------|---------------------------------------|  
-|**Single user**|Specifies that only one user can access the database at a time. You can use this setting when you are performing administrative functions such as testing or restoring the database. By limiting access to the database to one user, you make sure that the database is not changed when you are testing it.<br /><br /> **Important:** Clear this check box when you are finished to give other users to access the database.|  
+|**Single user**|Specifies that only one user can access the database at a time. You can use this setting when you're performing administrative functions such as testing or restoring the database. By limiting access to the database to one user, you make sure that the database isn't changed when you're testing it.<br /><br /> **Important:** Clear this check box when you're finished to give other users to access the database.|  
   
-### Settings Section  
+### Settings section  
   
 |[!INCLUDE[bp_tablefield](../developer/includes/bp_tablefield_md.md)]|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |---------------------------------|---------------------------------------|  
-|**Recovery Model**|Determines the kind of information that is written to the transaction log and therefore the kind of recovery model that you want to use in this database.<br /><br /> **Note:** The **Full** and **Bulk-logged** recovery models are similar, and many users of the **Full** recovery model will use the **Bulk-logged** recovery model occasionally.<br /><br /> [!INCLUDE[bp_tableoption](../developer/includes/bp_tableoption_md.md)]: <br />                        **Bulk-logged**<br /><br /> [!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]:<br /><br /> The transaction log will contain only limited information about certain large-scale or bulk copy operations. The **Bulk-logged** recovery model provides protection against media failure combined with the best performance and the minimal use of log space for certain large-scale or bulk copy operations.<br /><br /> The backup strategy for bulk-logged recovery consists of:<br /><br /> \* Database backups.<br /><br /> \* Differential backups \(optional\).<br /><br /> [!INCLUDE[bp_tableoption](../developer/includes/bp_tableoption_md.md)]: <br />                        **Full**<br /><br /> [!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]:<br /><br /> The details of every transaction are stored in the transaction log. This information can be used when you apply transaction log backups. The **Full** recovery model uses database backups and transaction log backups to provide complete protection against media failure. If one or more data files are damaged, media recovery can restore all the committed transactions. Incomplete transactions are rolled back.<br /><br /> Full recovery lets you recover the database to the point of failure or to a specific point in time. All operations are fully logged to guarantee that the database is recoverable. This includes bulk operations such as SELECT INTO, CREATE INDEX, and bulk loading data.<br /><br /> The backup strategy for full recovery consists of:<br /><br /> \* Database backups.<br /><br /> \* Differential backups \(optional\).<br /><br /> \* Transaction log backups.<br /><br /> [!INCLUDE[bp_tableoption](../developer/includes/bp_tableoption_md.md)]: <br />                      **Simple**<br /><br /> [!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]:<br /><br /> The database can be recovered to the point at which the last backup was made. However, you cannot restore the database to the point of failure or to a specific point in time. To do that, select either the **Full** or **Bulk-logged** recovery model.<br /><br /> The backup strategy for simple recovery consists of:<br /><br /> \* Database backups.<br /><br /> \* Differential backups \(optional\).|  
-|**ANSI NULL default**|Specifies whether the database default NULL settings for column definitions and user-defined data types are to be applied. When you select this option, all user-defined data types or columns that have not been explicitly defined as NOT NULL are set to allow NULL entries. Columns that have been defined by using constraints follow the constraint rules, regardless of this setting.|  
-|**Recursive triggers**|Specifies recursive trigger settings. Triggers can have direct recursion or indirect recursion. Direct recursion occurs when a trigger occurs and performs an action that causes the same trigger to be fired again. Indirect recursion occurs when a trigger occurs and performs an action that causes a trigger on another table to occur. This second trigger updates the original table which causes the first trigger to occur again.|  
+|**Recovery Model**|Determines the kind of information that is written to the transaction log and therefore the kind of recovery model that you want to use in this database.<br /><br /> **Note:** The **Full** and **Bulk-logged** recovery models are similar, and many users of the **Full** recovery model will use the **Bulk-logged** recovery model occasionally.<br /><br /> [!INCLUDE[bp_tableoption](../developer/includes/bp_tableoption_md.md)]: <br />                        **Bulk-logged**<br /><br /> [!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]:<br /><br /> The transaction log contains only limited information about certain large-scale or bulk copy operations. The **Bulk-logged** recovery model provides protection against media failure combined with the best performance and the minimal use of log space for certain large-scale or bulk copy operations.<br /><br /> The backup strategy for bulk-logged recovery consists of:<br /><br /> \* Database backups.<br /><br /> \* Differential backups \(optional\).<br /><br /> [!INCLUDE[bp_tableoption](../developer/includes/bp_tableoption_md.md)]: <br />                        **Full**<br /><br /> [!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]:<br /><br /> The details of every transaction are stored in the transaction log. This information can be used when you apply transaction log backups. The **Full** recovery model uses database backups and transaction log backups to provide complete protection against media failure. If one or more data files are damaged, media recovery can restore all the committed transactions. Incomplete transactions are rolled back.<br /><br /> Full recovery lets you recover the database to the point of failure or to a specific point in time. All operations are fully logged to guarantee that the database is recoverable. This includes bulk operations such as SELECT INTO, CREATE INDEX, and bulk loading data.<br /><br /> The backup strategy for full recovery consists of:<br /><br /> \* Database backups.<br /><br /> \* Differential backups \(optional\).<br /><br /> \* Transaction log backups.<br /><br /> [!INCLUDE[bp_tableoption](../developer/includes/bp_tableoption_md.md)]: <br />                      **Simple**<br /><br /> [!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]:<br /><br /> The database can be recovered to the point at which the last backup was made. However, you can't restore the database to the point of failure or to a specific point in time. To do that, select either the **Full** or **Bulk-logged** recovery model.<br /><br /> The backup strategy for simple recovery consists of:<br /><br /> \* Database backups.<br /><br /> \* Differential backups \(optional\).|  
+|**ANSI NULL default**|Specifies whether the database default NULL settings for column definitions and user-defined data types are to be applied. When you select this option, all user-defined data types or columns that haven't been explicitly defined as NOT NULL are set to allow NULL entries. Columns that have been defined by using constraints follow the constraint rules, regardless of this setting.|  
+|**Recursive triggers**|Specifies recursive trigger settings. Triggers can have direct recursion or indirect recursion. Direct recursion occurs when a trigger occurs and performs an action that causes the same trigger to be fired again. Indirect recursion occurs when a trigger occurs and performs an action that causes a trigger on another table to occur. This second trigger updates the original table, which causes the first trigger to occur again.|  
 |**Torn page detection**|Enables SQL Server to detect incomplete input/output operations that have been caused by power failures or other system outages.|  
 |**Auto shrink**|Specifies whether SQL Server can periodically shrink data files and transaction log files.|  
 
-## Integration Tab
+## Integration tab
 Specifies database settings that determine how [!INCLUDE[navnow](../developer/includes/navnow_md.md)] integrates with SQL Server and external tools.  
   
  To open this window, on the **File** menu, choose **Database**, choose **Alter**, and then choose the **Integration** tab.  
   
-### Objects Options  
+### Objects options  
   
 |[!INCLUDE[bp_tablefield](../developer/includes/bp_tablefield_md.md)]|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |---------------------------------|---------------------------------------|  
-|**Convert Identifiers**|Defines characters that you want to map to the underscore character in the names of all SQL Server objects, such as tables, columns, and constraints. If these characters occur in tables or fields in [!INCLUDE[navnow](../developer/includes/navnow_md.md)], then they are converted to underscores in the SQL Server names.<br /><br /> When the conversion is complete, you must close and reopen the database before you can use the new identifiers.|  
+|**Convert Identifiers**|Defines characters that you want to map to the underscore character in the names of all SQL Server objects, such as tables, columns, and constraints. If these characters occur in tables or fields in [!INCLUDE[navnow](../developer/includes/navnow_md.md)], then they're converted to underscores in the SQL Server names.<br /><br /> When the conversion is complete, you must close and reopen the database before you can use the new identifiers.|  
   
-### License Options  
+### License options  
   
 |[!INCLUDE[bp_tablefield](../developer/includes/bp_tablefield_md.md)]|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |---------------------------------|---------------------------------------|  
-|**Save license in database**|Specifies that the license file is uploaded and stored in the database instead of on the server. This is useful if you are hosting several databases with separate license files on the same server.| 
+|**Save license in database**|Specifies that the license file is uploaded and stored in the database instead of on the server. This is useful if you're hosting several databases with separate license files on the same server.| 
 
-## Advanced Tab
+## Advanced tab
 Specifies how locking is handled in the database and specifies the start ID for elements on new objects.  
   
-### Locking Options
+### Locking options
   
 |[!INCLUDE[bp_tablefield](../developer/includes/bp_tablefield_md.md)]|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |---------------------------------|---------------------------------------|  
 |**Lock timeout**|Specifies whether a session waits to place a lock on a resource that has already been locked by another session.<br /><br /> If you clear this field, then the session waits indefinitely.|  
 |**Timeout duration \(sec\)**|Specifies the maximum length of time that a session waits to place a lock on a resource that has already been locked by another session. The default value is 10 seconds.|  
   
-### Designer Options  
+### Designer options  
   
 |[!INCLUDE[bp_tablefield](../developer/includes/bp_tablefield_md.md)]|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |---------------------------------|---------------------------------------|  
