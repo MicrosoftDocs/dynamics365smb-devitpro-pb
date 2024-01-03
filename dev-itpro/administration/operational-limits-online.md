@@ -67,7 +67,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |SQL bulk import batch size|Specifies how many SQL memory chunks a data import must be distributed across.| 448|
 -->
 
-## <a name="Tasks"></a>Asynchronous task limits (per environment)
+## <a name="Task"></a>Asynchronous task limits (per environment)
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |-------|--------------------------------------------------------------------------------|-----|
@@ -76,12 +76,12 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Background sessions max queued|The maximum number of background sessions that can be queued, waiting to be processed. When this limit is exceeded, an error occurs.|100|
 |Child sessions max concurrency|The maximum number of child sessions per parent session that can be processed at the same time. Child sessions that come in when this limit is exceeded will wait in a queue until a time slot becomes available.|5|
 |Child sessions max queue length|The maximum number of child sessions per parent session that can be queued, waiting to be processed. When this limit is exceeded, an error occurs.|100|
-|Maximum concurrently running scheduled tasks|The maximum number of tasks that could simultaneously run in an environment was set to 3 in the past. To increase throughput, this per-environment limit has now been changed to a per-user limit |See the current [per-user limit](#TasksUser).|
+|Maximum concurrently running scheduled tasks|The maximum number of tasks that could simultaneously run in an environment was set to 3 in the past. To increase throughput, this per-environment limit has now been changed to a per-user limit |See the current [per-user limit](#TaskUser).|
 |Maximum session recursion depth|The maximum number of nested sessions that can be created before being considered excessive recursion. When this limit is exceeded, an error occurs with the following message: **Excessive recursive session creation detected, original session ID: \[id\], current session ID: \[id\].**|14|
 |Page background task default timeout|The default amount of time in minutes for a page background task to run before being canceled. A timeout value can also be provided when page background tasks are enqueued at run-time. This limit is used if no timeout value is provided.|2|
 |Page background task max timeout|The maximum amount of time in minutes for a page background task to run before being canceled. A timeout value can also be provided when page background tasks are enqueued at run-time. Timeout values greater than this limit will be ignored.|10|
 
-## <a name="TasksUser"></a>Asynchronous task limits (per user)
+## <a name="TaskUser"></a>Asynchronous task limits (per user)
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |-------|--------------------------------------------------------------------------------|-----|
