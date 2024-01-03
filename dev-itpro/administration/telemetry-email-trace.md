@@ -1,17 +1,17 @@
 ---
-title: Analyzing Email Trace Telemetry 
+title: Analyze email trace telemetry 
 description: Learn about the email telemetry in Business Central  
 author: kennienp
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 07/26/2023
+ms.date: 01/02/2024
 ms.reviewer: jswymer
 ms.author: kepontop
 ms.service: dynamics365-business-central
 ms.custom: bap-template
 ---
 
-# Analyzing Email Telemetry
+# Analyze email telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2, update 17.2, and later
 
@@ -22,8 +22,8 @@ Email telemetry gathers data about the following operations:
 
 From [!INCLUDE[prod_short](../includes/prod_short.md)] 2023 release wave 1, update 23.2, and later, the following operations are also emitted to telemetry:
 
-- Authentication to a SMTP server succeded/failed
-- Connection to a SMTP server succeded/failed
+- Authentication to an SMTP server succeded/failed
+- Connection to an SMTP server succeded/failed
 
 
 <!--Today, partners can test email setup during setup (click a test button). If settings change on SMTP side later, they don't get notified before something stops working. -->
@@ -224,7 +224,7 @@ traces
 
 ## Sample KQL code for alerting on SMTP failures
 
-Use this KQL code if you want to setup alerts on SMTP failures, either failures authenticating/connecting to SMTP servers or failures on sending emails.
+Use this KQL code if you want to set up alerts on SMTP failures, either failures authenticating/connecting to SMTP servers or failures on sending emails.
 
 ```kql
 traces
@@ -253,6 +253,6 @@ traces
 
 ## See also
 
-[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[Monitoring and Analyzing Telemetry](telemetry-overview.md)    
+[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)    
 [Alert on Telemetry](telemetry-alert.md)   
