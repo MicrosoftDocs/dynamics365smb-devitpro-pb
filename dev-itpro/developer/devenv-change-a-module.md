@@ -22,7 +22,7 @@ This article provides an overview of how to change an existing module.
 
 Your changes must follow the guidelines for module architecture. For more information, see [Module Architecture](devenv-blueprint.md). When changing an existing module, don't introduce breaking changes, that is, make sure that you don't break existing functionality. Existing tests must still pass, and you should add new tests for the functionality that you change or add.
 
-### Set up Visual Studio code for module development
+### Set up Visual Studio Code for module development
 
 Open the **launch.json**, file and update the **server**, **serverInstance**, and **authentication** settings, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
 
