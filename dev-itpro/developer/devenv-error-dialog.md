@@ -2,7 +2,7 @@
 title: Understanding the error dialog
 description: Understand the different parts the error dialog to be able to help mitigate issues for users 
 ms.custom: bap-template
-ms.date: 10/04/2023
+ms.date: 01/03/2024
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -17,6 +17,7 @@ The AL language has many error handling features, which can help you deal with u
 ## Visual elements of the error dialog (2022 release wave 2 and earlier)
 
 In versions 21 and earlier, the error dialog consists of the following four parts:
+
 1. A title (optionally)
 2. A message directed to the user
 3. A **How to report this issue** part that includes a **Copy information to clipboard** action
@@ -125,9 +126,9 @@ Consider the following AL stack trace:
 The first operation in the stack is found in the bottom line: the _Match Confidence - OnDrillDown"(Trigger)_ from the "Payment Reconciliation Journal" page (object ID 1290) residing in the app _Base Application_ by the publisher _Microsoft_. This line is where execution started. The error happened in the operation in the top of the stack: _ValidateEntryNotApplied_ in the "Payment Application Proposal" table (object 1293) residing in the app _Base Application_ by the publisher _Microsoft_.
 
 You can then use the stack trace to identify:
+
 1. What the user was doing (the bottom of the stack trace)
 2. Where the error happened (the top of the stack trace)
-
 
 ## Error message telemetry
 
@@ -135,17 +136,13 @@ When a user gets an error dialog while working in [!INCLUDE[prod_shoirt](../incl
 
 For more information, see [Error method trace telemetry](../administration/telemetry-error-method-trace.md).
 
-
-
-The error dialog also include a yes or no question as to whether the message was helpful, similar to the following illustration:
+The error dialog also includes a yes or no question as to whether the message was helpful, similar to the following illustration:
 
 ![Shows the error dialog and the voting actions, Yes and No, about the helpfulness of the message.](../developer/media/error-voting.png )
 
 If a user selects either **Yes** or **No**, a signal is emitted and recorded in [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)]. This information can help partners and developers get insight into error messages that users find hard to understand. They can then follow up with the customer to help out.
 
 For more information, see [Analyzing Error Message Quality Telemetry](../administration/telemetry-error-message-voting-trace.md).
-
-
 
 ## See also
 
