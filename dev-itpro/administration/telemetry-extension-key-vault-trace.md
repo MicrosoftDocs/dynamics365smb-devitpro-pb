@@ -10,7 +10,7 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 12/29/2023
 ms.author: jswymer
 ---
-# Analyze a App key vault secret trace telemetry
+# Analyze an app key vault secret trace telemetry
 
 [!INCLUDE[prod_short](../includes/2020_releasewave2.md)]
 
