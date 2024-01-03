@@ -42,9 +42,33 @@ The current page number of the ErrorInfo.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remark 
+
+You use the `PageNo` property when also using a show-it action with the `AddNavigationAction` property. The `PageNo` then specifies where the action takes the user when activated.
+
+## Example (set the PageNo property)
+
+```AL
+
+var 
+    MyErrorInfo: ErrorInfo;
+    TheCustomDimensions: Dictionary of [Text, Text];
+begin
+    // setup the error info object: Define Message, DetailedMessage etc.
+
+    // setup show-it action(s) for the error info object
+    ChangeNotAllowedErrorInfo.PageNo(PAGE::"MyPage");
+    ChangeNotAllowedErrorInfo.AddNavigationAction('Some caption');
+
+    Error(MyErrorInfo);
+end
+```
+
 ## See Also
 
-[Collecting Errors](../../devenv-error-collection.md)  
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[Actionable errors](../../devenv-actionable-errors.md)  
+[Error handling](../../devenv-al-error-handling.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
