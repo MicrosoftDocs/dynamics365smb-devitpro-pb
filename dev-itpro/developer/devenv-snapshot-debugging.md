@@ -35,9 +35,9 @@ In the following sections, you can read more about how to initialize, view the s
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
-|**F7**|Start a snapshot debugging session|
-|**Shift+F7**|List all available snapshots|
-|**Alt+F7**|Finish a snapshot debugging session|
+|<kbd>F7</kbd>|Start a snapshot debugging session|
+|<kbd>Shift</kbd>+<kbd>F7</kbd>|List all available snapshots|
+|<kbd>Alt</kbd>+<kbd>F7</kbd>|Finish a snapshot debugging session|
 
 ## Initialize a snapshot debugging session
 
@@ -55,7 +55,7 @@ Choose whether to run the session on a cloud service or locally. The configurati
 |`snapshotVerbosity`| Determines how much execution context to be recorded. If **SnapPoint** is specified, then only methods that hit a snappoint will be recorded.|
 |`tenant`| The Microsoft Entra tenant ID for the tenant to connect to. Specify this if your target is a different tenant from the user's own Microsoft Entra tenant, for example when running as a delegated admin.|
 
-When a configuration is defined, a snapshot debugging session can be initialized by pressing **Ctrl+Shift+P**, and then selecting **AL:Initialize Snapshot Debugging** or by pressing **F7**.
+When a configuration is defined, a snapshot debugging session can be initialized by selecting <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then selecting **AL:Initialize Snapshot Debugging** or by selecting <kbd>F7</kbd>.
 
 > [!NOTE]  
 > If you're going to use the snapshot for profiling the code, you must enable the configuration parameter called `executionContext`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).
@@ -78,7 +78,7 @@ Once a snapshot debugging session is initialized, the snapshot debugging session
 
 ## Status of a snapshot debugging session
 
-Clicking on the status bar icon or pressing **Shift+F7**  will bring up a list of all available snapshots.  
+Clicking on the status bar icon or selecting <kbd>Shift</kbd>+<kbd>F7</kbd>  will bring up a list of all available snapshots.  
 The status list will show the state of a snapshot-debugged session. 
 
 A snapshot debugging session can be in one of the three states:
@@ -90,7 +90,7 @@ A snapshot debugging session can be in one of the three states:
 
 ## Stop a snapshot debugging session
 
-You can stop a snapshot debugging session by pressing **Alt+F7**. This brings up all snapshot sessions that have been started. Choosing one will close the session debugging on the server and download the snapshot file. 
+You can stop a snapshot debugging session by selecting <kbd>Alt</kbd>+<kbd>F7</kbd>. This brings up all snapshot sessions that have been started. Choosing one will close the session debugging on the server and download the snapshot file. 
 
 > [!IMPORTANT]  
 > The snapshot file can contain customer privacy data and must therefore be handled according to the privacy and compliance policies. The file should be deleted when it's not needed anymore.
@@ -124,7 +124,7 @@ Symbols download is using the **snapshotInitialize** debug configuration setting
 There are two user actions that will start snapshot debugging:
 
 - Creating a new launch debug configuration and specifying the snapshot file name in the `snapshotFileName` configuration setting. This is the only setting that is needed besides the type, request, and name. 
-- Choosing the status icon or by pressing **Shift+F7** and selecting a finished snapshot-debugged session. 
+- Choosing the status icon or by selecting <kbd>Shift</kbd>+<kbd>F7</kbd> and selecting a finished snapshot-debugged session. 
 
 Once a snapshot debugging session starts in Visual Studio Code, code execution will stop at the first snappoint. AL exceptions will be treated as snappoints, with the only difference that they can't be removed by the user actions. Other snappoints are regular breakpoints that can be removed or readded by the user actions. If no snappoints are specified in the first recorded methods; the first line is the entry breakpoint. 
 
@@ -149,11 +149,11 @@ Snapshot debugging is almost the same as a regular debugging with the difference
 |--|
 |Breakpoints can be added or removed and they'll be hit if the breakpoint is in the execution context of a recorded state. This means that if you walk the execution stack for a breakpoint and the next stepped line is reached, then the code will break on the breakpoint. |
 |A snappoint is a breakpoint in Visual Studio Code that is set when creating a snapshot. They don't, however, stop execution of code like when using regular debugging. Snappoints instruct execution to log the state at the breakpoint for later offline inspection.|
-|You can always navigate through all the breakpoints with **Continue** (F5). The order may not be the same as the execution order on the [!INCLUDE[prod_short](includes/prod_short.md)] server. This is because some calls on the server are AL calls with non-walkable stacks. Some are direct server calls on the server like triggers. A snapshot debugging session on the [!INCLUDE[prod_short](includes/prod_short.md)] server can only record AL calls and walk AL stack traces.|
+|You can always navigate through all the breakpoints with **Continue** (<kbd>F5</kbd>). The order may not be the same as the execution order on the [!INCLUDE[prod_short](includes/prod_short.md)] server. This is because some calls on the server are AL calls with non-walkable stacks. Some are direct server calls on the server like triggers. A snapshot debugging session on the [!INCLUDE[prod_short](includes/prod_short.md)] server can only record AL calls and walk AL stack traces.|
 |This is also true when stepping. The rule of thumb is that breakpoints within the reach are hit first, and if there are none; the next line is hit. Breakpoints on triggers may not always qualify as code within reach.|
 |Variable data is only shown on snappoints.|
 |If there are no frames available, snapshot debugging will stop.|
-|Stepping out of triggers with no recorded stack information will move execution to the first recorded method's first line. This may be far from the user's execution of interest. For example, stepping out from an `OnOpenPage` trigger with a snappoint may land on deep inside base code execution where recording has started. Navigating with **F5** will start over breakpoint resolution, thus this is an exit strategy from a scenario like this.|
+|Stepping out of triggers with no recorded stack information will move execution to the first recorded method's first line. This may be far from the user's execution of interest. For example, stepping out from an `OnOpenPage` trigger with a snappoint may land on deep inside base code execution where recording has started. Navigating with <kbd>F5</kbd> will start over breakpoint resolution, thus this is an exit strategy from a scenario like this.|
 |A snappoint may resolve as a non-reachable breakpoint if there was no execution state on the server hitting the snappoint.|
 |A snapshot debugger session with a [!INCLUDE[prod_short](includes/prod_short.md)] server will be closed if not attached to after 30 minutes.|
 |If a snapshot debugger session is started, it has to be finished after 10 minutes.|

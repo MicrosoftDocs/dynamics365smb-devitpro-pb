@@ -16,7 +16,7 @@ The **Outline** view is enabled by default and shows the symbol tree of the curr
 
 ![Outline view.](media/outlineview.png "Outline view in Visual Studio Code")
 
-You manage the look and feel of the **Outline** view by defining settings that are all enabled by default. To modify settings, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration** you'll find the settings that are available for the AL Language extension for the `settings.json` file.
+You manage the look and feel of the **Outline** view by defining settings that are all enabled by default. To modify settings, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration** you'll find the settings that are available for the AL Language extension for the `settings.json` file.
 
 + `outline.icons` - Outline elements displayed with icons
 + `outline.problems.enabled` - Show errors and warnings on outline elements

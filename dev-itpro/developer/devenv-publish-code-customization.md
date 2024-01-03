@@ -137,7 +137,7 @@ Make sure to have the following prerequisites installed to be able to follow the
     Import-NAVServerLicense -ServerInstance BC -LicenseFile "C:\Users\mylicense.BCLicense"
     ```
 
-15. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
+15.   Select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to publish the modified Base Application as an extension from Visual Studio Code.
 
 The Base Application is now published with the small customization of bolding the text in the **Name** field on the **Customer Card** page.
 
