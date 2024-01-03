@@ -67,7 +67,7 @@ To set up a Docker container sandbox using an existing sandbox environment, foll
 
     This name is only used internally in your envirorment for identification purposes.
 8. Set the `$accept_eula = ''` variable to `'$true'`.
-9. Press F5 to run the script.
+9. Select <kbd>F5</kbd>to run the script.
 
     The console pane displays the progress of the script. When the script has completed successfully, information like in the following example displays:
     ```
@@ -103,7 +103,7 @@ After the container sandbox is set up, you must set up Visual Studio Code for ex
 
 1. In Visual Studio Code, go to **Extensions**, and install the AL Language extension from the Marketplace.
     You now have the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] enabled.
-2. In Visual Studio Code, press **Ctrl+Shift+P** and then choose **AL Go!**.
+2. In Visual Studio Code, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and then choose **AL Go!**.
 3. Choose where to create the project, and then choose the **Your own server** option.
 4. Open the generated `launch.json` file, update the `"server"` setting with the value of the `Dev. Server` parameter and the `"serverInstance"` setting with the value of the `Dev. ServerInstance` to reflect the container you created. For example:
 
