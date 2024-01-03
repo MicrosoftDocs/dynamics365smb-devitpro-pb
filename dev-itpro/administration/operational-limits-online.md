@@ -71,21 +71,21 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |-------|--------------------------------------------------------------------------------|-----|
-|Background sessions default wait timeout|The maximum amount of time that background sessions will wait to be processed.|8 hours|
-|Background sessions max concurrent|The maximum number of background sessions per environment that the server instance can actively process at the same time. Requests that exceed the limit will wait in the queue until a slot becomes available.|10|
-|Background sessions max queued|The maximum number of background sessions per environment that can be waiting to be processed.|100|
-|ChildSessionsMaxConcurrency|The maximum number of child sessions that can run concurrently per parent session. When the value is exceeded, additional child sessions will be queued and run when a slot becomes available as other child sessions are finished.|5|
-|Child sessions max queue length|The maximum number of child sessions that can be queued per parent session. If the value is exceeded, an error occurs.|100|
-|Maximum concurrent running scheduled tasks|The maximum number of tasks that could simultaneously run in an environment was set to 3 in the past. To increase throughput, this per-environment limit has now been changed to a per-user limit |See the current [per-user limit](#TasksUser).|
-|Maximum session recursion depth|The maximum number of nested sessions that can be created before reaching infinite recursion. If the limit is exceeded, a runtime error occurs with the message: **Excessive recursive session creation detected, original session ID: \[id\], current session ID: \[id\].**|14|
-|Page background task default timeout|The default amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. This limit is used when no timeout is provided when the page background task is enqueued.|2 minutes|
-|Page background task max timeout|The maximum amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. If a page background task is enqueued with a timeout greater than this limit, this limit is ignored.|10 minutes|
+|Background sessions default wait timeout|The maximum amount of time in hours for a background session to wait before being processed.|8|
+|Background sessions max concurrency|The maximum number of background sessions that can be processed at the same time. Background sessions that come in when this limit is exceeded will wait in a queue until a time slot becomes available.|10|
+|Background sessions max queued|The maximum number of background sessions that can be queued, waiting to be processed. When this limit is exceeded, an error occurs.|100|
+|Child sessions max concurrency|The maximum number of child sessions per parent session that can be processed at the same time. Child sessions that come in when this limit is exceeded will wait in a queue until a time slot becomes available.|5|
+|Child sessions max queue length|The maximum number of child sessions per parent session that can be queued, waiting to be processed. When this limit is exceeded, an error occurs.|100|
+|Maximum concurrently running scheduled tasks|The maximum number of tasks that could simultaneously run in an environment was set to 3 in the past. To increase throughput, this per-environment limit has now been changed to a per-user limit |See the current [per-user limit](#TasksUser).|
+|Maximum session recursion depth|The maximum number of nested sessions that can be created before being considered excessive recursion. When this limit is exceeded, an error occurs with the following message: **Excessive recursive session creation detected, original session ID: \[id\], current session ID: \[id\].**|14|
+|Page background task default timeout|The default amount of time in minutes for a page background task to run before being canceled. A timeout value can also be provided when page background tasks are enqueued at run-time. This limit is used if no timeout value is provided.|2|
+|Page background task max timeout|The maximum amount of time in minutes for a page background task to run before being canceled. A timeout value can also be provided when page background tasks are enqueued at run-time. Timeout values greater than this limit will be ignored.|10|
 
 ## <a name="TasksUser"></a>Asynchronous task limits (per user)
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |-------|--------------------------------------------------------------------------------|-----|
-|Maximum concurrent running scheduled tasks|The maximum number of tasks that can be simultaneously run by a user. The more users you have in your environment, the more tasks you can simultaneously run in it, as long as we can continuously scale our resources. If there are many tasks running at the same time and we couldn't sufficiently scale our resources, you might experience delays in running your tasks.|5, see [frequently asked questions on per-user limits](#FAQsUser).|
+|Maximum concurrently running scheduled tasks|The maximum number of tasks that can be simultaneously run by a user. The more users you have in your environment, the more tasks you can simultaneously run in it, as long as we can continuously scale our resources. If many tasks are running at the same time and we couldn't sufficiently scale our resources, you might experience delays in running your tasks.|5, see [frequently asked questions on per-user limits](#FAQsUser).|
 
 ## <a name="Reports"></a>Report limits
 
@@ -120,14 +120,14 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |-------|--------------------------------------------------------------------------------|-----|
-|Max body size|The maximum request body size.|350 megabytes|
+|Max body size|The maximum request body size in MB.|350|
 |Max concurrent requests|The maximum number of OData V4 requests that can be processed at the same time. Requests that come in when this limit is exceeded will wait in a queue until a time slot becomes available. They wait in the queue until they time out after 8 minutes, where an HTTP response code `503 - Service Temporarily Unavailable` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|5, see the future [per-user limit](#ODataServicesUser).|
 |Max connections|The maximum number of simultaneous OData V4 requests, including processed and queued requests. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|100, see the future [per-user limit](#ODataServicesUser).|
-|Max page size|The maximum number of entities that can be returned for an OData V4 request.|20,000 entities per request|
-|Max batch size|The maximum number of operations in an OData V4 $batch request.|100 operations per batch|
-|Max request queue size|The maximum number of queued OData V4 requests waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|95, see the future [per-user limit](#ODataServicesUser).|
-|Rate|The maximum number of OData V4 requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|Sandbox: 300 requests per minute, Production: 600 requests per minute, see the future [per-user limit](#ODataServicesUser).| 
-|Operation timeout|The maximum amount of time allocated to an OData V4 request. When this limit is exceeded, an HTTP response code `408 - Request Timeout` is returned and the relevant session is canceled.|8 minutes|
+|Max page size|The maximum number of entities that can be returned for an OData V4 request.|20,000|
+|Max batch size|The maximum number of operations in an OData V4 $batch request.|100|
+|Max request queue size|The maximum number of queued OData V4 requests, waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|95, see the future [per-user limit](#ODataServicesUser).|
+|Rate|The maximum number of OData V4 requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|Sandbox: 300, Production: 600, see the future [per-user limit](#ODataServicesUser).| 
+|Operation timeout|The maximum amount of time in minutes allocated to an OData V4 request. When this limit is exceeded, an HTTP response code `408 - Request Timeout` is returned and the relevant session is canceled.|8|
 |Max number of webhook subscriptions|The maximum number of webhook subscriptions.|200|
 
 <!--
@@ -138,10 +138,10 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |-------|--------------------------------------------------------------------------------|-----|
-|Max concurrent requests|The maximum number of OData V4 requests that can be processed at the same time. Requests that come in when this limit is exceeded will wait in a queue until a time slot becomes available. They wait in the queue until they time out after 8 minutes, where an HTTP response code `503 - Service Temporarily Unavailable` is returned. The more users you have in your environment, the more requests can be simultaneously processed in it, as long as we can continuously scale our resources. If there are many requests being processed at the same time and we couldn't sufficiently scale our resources, you might experience delays/throttling in processing your requests.|5, see [frequently asked questions on per-user limits](#FAQsUser).|
+|Max concurrent requests|The maximum number of OData V4 requests that can be processed at the same time. Requests that come in when this limit is exceeded will wait in a queue until a time slot becomes available. They wait in the queue until they time out after 8 minutes, where an HTTP response code `503 - Service Temporarily Unavailable` is returned. The more users you have in your environment, the more requests you can simultaneously process in it, as long as we can continuously scale our resources. If many requests are being processed at the same time and we couldn't sufficiently scale our resources, you might experience delays/throttling in processing your requests.|5, see [frequently asked questions on per-user limits](#FAQsUser).|
 |Max connections|The maximum number of simultaneous OData V4 requests, including processed and queued requests. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|100, see [frequently asked questions on per-user limits](#FAQsUser).|
-|Max request queue size|The maximum number of queued OData V4 requests waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|95, see [frequently asked questions on per-user limits](#FAQsUser).|
-|Rate|The maximum number of OData V4 requests that can be submitted within a 5-minute sliding window. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. The more users you have in your environment, the more requests can be submitted to it, as long as we can continuously scale our resources. If there are many requests being submitted around the same time and we couldn't sufficiently scale our resources, you might experience throttling in submitting your requests.|6000, see [frequently asked questions on per-user limits](#FAQsUser).| 
+|Max request queue size|The maximum number of queued OData V4 requests, waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|95, see [frequently asked questions on per-user limits](#FAQsUser).|
+|Rate|The maximum number of OData V4 requests that can be submitted within a 5-minute sliding window. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. The more users you have in your environment, the more requests you can submit to it around the same time, as long as we can continuously scale our resources. If many requests are being submitted around the same time and we couldn't sufficiently scale our resources, you might experience throttling in submitting your requests.|6000, see [frequently asked questions on per-user limits](#FAQsUser).| 
 
 ## <a name="SOAPServices"></a>SOAP request limits (per environment)
 
@@ -149,13 +149,13 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |-------|--------------------------------------------------------------------------------|-----|
 |Max concurrent requests|The maximum number of SOAP requests that can be processed at the same time. Requests that come in when this limit is exceeded will wait in a queue until a time slot becomes available. They wait in the queue until they time out after 8 minutes, where an HTTP response code `503 - Service Temporarily Unavailable` is returned.|5|
 |Max connections|The maximum number of simultaneous SOAP requests, including processed and queued requests. When the limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|100|
-|Max message size|The maximum size of a SOAP request.|65,536 KB|
-|Max request queue size|The maximum number of queued SOAP requests waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|95|
-|Rate|The maximum number of SOAP requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|Sandbox: 300 requests per minute, Production: 600 requests per minute|
-|Operation timeout|The maximum amount of time allocated to a SOAP request. When this limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.|8 minutes|
+|Max message size|The maximum size in KB of a SOAP request.|65,536|
+|Max request queue size|The maximum number of queued SOAP requests, waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|95|
+|Rate|The maximum number of SOAP requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|Sandbox: 300, Production: 600|
+|Operation timeout|The maximum amount of time in minutes allocated to a SOAP request. When this limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.|8|
 
 > [!TIP]  
-> Throttling will happen when many requests are issued at the same time. If requests are taking a long time to complete, throttling might also occur due to the request queue being filled up. To optimize throughput, ensure to use APIs or OData over SOAP, as they execute faster. 
+> Throttling could occur when many requests are submitted and handled (processed/queued) around the same time and they're taking a long time to complete. To optimize throughput, please use API or OData instead of SOAP, as they execute faster. 
 
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
