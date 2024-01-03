@@ -19,9 +19,12 @@ Would you like to know what has changed in update 23.2? Below you'll find an ove
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5033775) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
-- [Improved data upgrade troubleshooting for Dynamics GP migration](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/improved-data-upgrade-troubleshooting-dynamic-gp-migration)
-- [Easily integrate generative AI with your AL solutions](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/easily-integrate-generative-ai-al-solutions) is now unlocked on Business Central online
-- [VAT posting in General Ledger setup](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/vat-posting-general-ledger-setup)
+- [E-invoicing with NemHandel in Denmark](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/e-invoicing-nemhandel-denmark)
+- [Granular administration as Dynamics 365 Business Central Administrator](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights)
+- [Detect invalid cloud migration configurations with proactive warnings](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/detect-invalid-cloud-migration-configurations-proactive-warnings)
+- [Access worksheet pages from mobile phones](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/access-worksheet-pages-mobile-phones) 
+- Generic Microsoft Graph API Wrapper
+- Add Azure File Services API module
 
 
 ## Localization updates
