@@ -627,7 +627,7 @@
 #### [User experience guidelines for errors](developer/devenv-error-handling-guidelines.md)
 #### [Actionable errors](developer/devenv-actionable-errors.md)
 #### [Collecting errors](developer/devenv-error-collection.md)
-#### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md)
+#### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### Error telemetry
 ##### [Error message quality telemetry](administration/telemetry-error-message-voting-trace.md)
 ##### [Error method telemetry](administration/telemetry-error-method-trace.md)
