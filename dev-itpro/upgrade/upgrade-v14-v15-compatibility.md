@@ -57,6 +57,7 @@ The following table lists the Business Central 21 versions and the minimum versi
 |[21.13](https://support.microsoft.com/help/5032753)|[22.8](https://support.microsoft.com/help/5033776)|[23.2](https://support.microsoft.com/help/5033775)|
 |[21.14](https://support.microsoft.com/help/5033777)|[22.9](https://support.microsoft.com/help/5034719) |[23.3](https://support.microsoft.com/help/5034720)|
 |[21.15](https://support.microsoft.com/help/5033777)<sup>[\[1\]](#1)</sup>|22.10 |23.4|
+
 To view a list of all available updates for Business Central 2022 Release Wave 2, go to [Released Updates for Microsoft Dynamics 365 Business Central 2022 Release Wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2022-release-wave-2-8efa5bbb-3cd5-4445-ba3a-0752694bf46f). 
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
