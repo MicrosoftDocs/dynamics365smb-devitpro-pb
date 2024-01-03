@@ -1,8 +1,8 @@
 ---
-title: "Technical Upgrade from Version 17 to Version 18"
+title: "Technical upgrade from version 17 to version 18"
 description: Describes how to do a technical upgrade from Business Central 17 to 18
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/27/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
-# Technical Upgrade to Version 18
+# Technical upgrade to version 18
 
 Use this process to upgrade any of the following versions to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 platform (version 18). This process won't upgrade the application to the latest version.
 
@@ -97,7 +97,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 2. Install version 18 components.
 
-    You'll keep version 17 installed for now. When you install version 18, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 17.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You keep version 17 installed for now. When you install version 18, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 17.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -105,7 +105,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 <!-- this i think only required coming from 16 and earlier, ahh maybe not -->
 
-The Dynamics Online Connect add-in was been deprecated in version 17. As a result, it has been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, when doing a technical upgrade, it is still required for the old System Application. To meet this requirement, copy the **Add-ins\Connect** folder of the version 17 server installation to the **Add-ins** folder of the version 18 server installation.
+The Dynamics Online Connect add-in was been deprecated in version 17. As a result, it has been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, when doing a technical upgrade, it's still required for the old System Application. To meet this requirement, copy the **Add-ins\Connect** folder of the version 17 server installation to the **Add-ins** folder of the version 18 server installation.
 
 ## Task 4: Convert the version 17.0 application database
 
@@ -199,7 +199,7 @@ Compile all published extensions against the new platform.
 
 1. (Multitenant only) Mount the tenant to the new Business Central Server instance.
 
-    You'll have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
+    You have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
  
 2. Synchronize the tenant.
   
@@ -304,7 +304,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 
-## See Also
+## See also
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Business Central Compatibility matrix](upgrade-v14-v15-compatibility.md)

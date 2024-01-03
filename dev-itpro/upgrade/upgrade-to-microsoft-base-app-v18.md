@@ -1,8 +1,8 @@
 ---
-title:  "Upgrading Customized C/AL Application to Microsoft Base Application for version 18" 
-description: Describes how to do a upgrade from a customized Business Central 14 to Microsoft Base Application for version 18
+title:  "Upgrading customized C/AL application to Microsoft Base Application for version 18" 
+description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 18
 ms.custom: na
-ms.date: 07/29/2021
+ms.date: 01/02/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -83,11 +83,11 @@ The first step, and the largest step, is to create extensions for the customizat
 - Create extensions for the target platform **7.0 Business Central 2021 release wave 1**.
 - Include dependencies for the Microsoft System, Base, and Application extensions for version 18.0.0.0.
 
-For example, if your application includes custom tables, then create extensions that include table objects and logic for the custom tables. If the application includes custom fields on system or base application tables, create extensions that include table extension objects to cover the custom fields. As part of this upgrade process, the data currently stored in custom tables or fields will be migrated from the existing tables to the new ones defined in the extensions.
+For example, if your application includes custom tables, then create extensions that include table objects and logic for the custom tables. If the application includes custom fields on system or base application tables, create extensions that include table extension objects to cover the custom fields. As part of this upgrade process, the data currently stored in custom tables or fields are migrated from the existing tables to the new ones defined in the extensions.
 
-Also, be aware that in version 18, several base application tables are now temporary tables. This change may affect the upgrade. For more information, see [Known Issues - Tables changed to temporary may prevent synchronizing new base application version](known-issues.md#temptables).
+Also, be aware that in version 18, several base application tables are now temporary tables. This change might affect the upgrade. For more information, see [Known Issues - Tables changed to temporary might prevent synchronizing new base application version](known-issues.md#temptables).
 
-## Task 4: Create empty System, Base, and customization extensions
+## Task 4: Create empty system, base, and customization extensions
 
 For the interim phase of migrating tables and data to extensions, you create empty extension versions for:
 
@@ -144,7 +144,7 @@ The only file in the extension project that is required is an app.json. You can 
 
     > [!NOTE]
     > For customization extensions, the version number must be lower than the final version for publication. Otherwise, you can't run upgrade on the extension later.
-4. Build and compile the extension package. To build the extension package, press Ctrl+Shift+B.
+4. Build and compile the extension package. To build the extension package, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
 > [!TIP]
 > This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in **Task 14**. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not not include upgrade code.
@@ -235,7 +235,7 @@ You'll create two versions of this extension. The first version contains the tab
 
 10. Build the extension package for the first version.
 
-    To build the extension package, press Ctrl+Shift+B. This step creates an .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
+    To build the extension package, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>. This step creates an .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
 
 ### Create the second version
 
@@ -280,7 +280,7 @@ You'll create two versions of this extension. The first version contains the tab
 4. Increase the `version` in the app.json file.
 5. Build the extension package for the second version.
 
-    To build the extension package, press Ctrl+Shift+B.
+    To build the extension package, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
 ## DATA UPGRADE
 
@@ -370,7 +370,7 @@ In this step, you configure the version 18 server instance. In particular, you c
     Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName DatabaseName -KeyValue "<database name>"
     ```
 
-    In a single tenant deployment, this command will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+    In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
 2. Configure the `DestinationAppsForMigration` setting of the server instance to table migration extension.
 
@@ -816,13 +816,13 @@ Don't stop the [!INCLUDE[server](../developer/includes/server.md)] instance unti
         > This is a required step. For more information, see [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) in the business functionality content.
     - Once the setup of certificate authentication is done, choose **Cloud Migration**, and then choose **Rebuild Coupling Table**.  
 
-        This will schedule the rebuilding of the coupling table and will open the corresponding job queue entry, so you can monitor its progress and restart it if it ends up in error state.  
+        This schedules the rebuilding of the coupling table and will open the corresponding job queue entry, so you can monitor its progress and restart it if it ends up in error state.  
 
         > [!NOTE]
         > The step for rebuilding the coupling table is not needed if you have performed cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] version 15 or later.
 
-## See Also  
+## See also  
 
-[Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
-[Upgrading to Business Central](upgrading-to-business-central.md)  
-[Sign an APP Package File](../developer/devenv-sign-extension.md)  
+[Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)    
+[Upgrading to Business Central](upgrading-to-business-central.md)    
+[Sign an APP Package File](../developer/devenv-sign-extension.md)    
