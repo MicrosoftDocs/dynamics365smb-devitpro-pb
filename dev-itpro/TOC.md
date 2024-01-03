@@ -865,8 +865,8 @@
 #### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
 -->
 
-
-### [Handling security overview](security/security-application.md)
+### Handling security
+#### [Handling security overview](security/security-application.md)
 
 #### [Isolated storage](developer/devenv-isolated-storage.md)
 #### [Protecting sensitive values with the SecretText data type](developer/devenv-secret-text.md)
