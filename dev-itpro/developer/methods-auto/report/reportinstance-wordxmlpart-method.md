@@ -47,12 +47,14 @@ A string representation of the report data structure as structured XML that is c
 
 
 ## Remarks  
+
 [!INCLUDE[WordXmlPart](../../includes/include-wordxmlpart-info.md)]
 
-## Example  
+## Example
+
 [!INCLUDE[example-1](../../includes/include-wordxmlpart-example-1.md)]
 
-```AL
+```al
 var
     ReportAsXmlString: Text;
     MyReport: Report Report6;

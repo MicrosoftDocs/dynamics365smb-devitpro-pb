@@ -53,7 +53,6 @@ keys
         Clustered = true;
     }
 }
-
 ```
 
 ## See Also  

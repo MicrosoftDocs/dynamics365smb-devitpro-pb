@@ -105,8 +105,8 @@ OBJECT Codeunit 90000 MyTestPermissionsTestRunner
     END.
   }
 }
-
 ```
+
 ## See Also  
 [OnBeforeTestRun](trigger-onbeforetestrun.md)  
 [OnAfterTestRun](trigger-onaftertestrun.md)  

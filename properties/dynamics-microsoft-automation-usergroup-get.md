@@ -36,7 +36,6 @@ Here is a JSON representation of the userGroup.
     "defaultProfileID": "ACCOUNTANT PORTAL",
     "assignToAllNewUsers": false
 }
-
 ```
 
 ## See Also 

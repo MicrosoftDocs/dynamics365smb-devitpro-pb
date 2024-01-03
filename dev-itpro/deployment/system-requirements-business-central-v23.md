@@ -4,7 +4,7 @@ description: This article provides the specifications of minimum hardware and so
 ms.custom: bap-template
 ms.service: dynamics365-business-central
 ms.topic: overview
-ms.date: 08/22/2023
+ms.date: 12/04/2023
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -25,6 +25,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 |Specification|Requirement|
 |------|-----|  
 |Supported browsers|<ul><li>New Microsoft Edge, latest version</li><li>Google Chrome for Windows, latest version</li><li>Mozilla Firefox for Windows, latest version</li><li>Safari for macOS, latest version</li></ul>Cookies and JavaScript must be enabled in the browser. |
+|Additional information|We recommend that you use a stable channel version of a web browser as it's the most reliable and stable version that has undergone extensive testing and bug fixing. This ensures that you have the best experience and are less likely to encounter any issues while using the web client.| 
 
 ##  <a name="DynNAVApp"></a> [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)]
 
@@ -82,7 +83,7 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 |Specification|Requirement|  
 |-----|-----|  
 |Supported operating systems|<ul><li>Windows 11 Pro, Enterprise, or Education \(64-bit edition, version 22H2 and later.\)</li><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\)</li><li>Windows Server 2022 (Datacenter, Standard)</li><li>Windows Server 2019 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).<!--Windows Server 2019 ends mainstream support Jan 9, 2024; remove this for 2024rw1. Windows Server 2022 ends mainstream support Oct 13, 2026; so need remove this for 2026w2.-->|
-|Hardware resources|<ul><li>Hard disk space: 2 GB</li><li>Memory:<br /> 8 GB for running application only<br />16 GB for publishing small extensions (<1000 objects) to server<br />32-64 GB for publishing large extensions (>1000 objects) to server</li>**Note** The memory for publishing extensions is recommended to ensure extensions publish in a reasonable amount of time. Publishing extensions with less memory is possible but it will take longer.</ul>|  
+|Hardware resources|<ul><li>Hard disk space: 2 GB</li><li>Memory:<br /> 8 GB for running application only<br />16 GB for publishing small extensions (<1000 objects) to server<br />32-64 GB for publishing large extensions (>1000 objects) to server</li>**Note** The memory for publishing extensions is recommended to ensure extensions publish in a reasonable amount of time. Publishing extensions with less memory is possible but it takes longer.</ul>|  
 |[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Foundation.<br />For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, see [Microsoft Dynamics 365 for Sales Integration Requirements](system-requirement-business-central.md#CRM).|  
 |Additional software|<ul><li>Microsoft .NET 6.0</li><li>Microsoft .NET Framework 4.8 (required for report rendering and [!INCLUDE[adminshell](../developer/includes/adminshell.md)])</li></ul>.|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>Microsoft .NET Windows Server Hosting 6.0.15</li><li>Microsoft .NET 6.0</li><li>Microsoft .NET Framework 4.8</li><li>Windows Identity Foundation*.</li><li>Report Builder for SQL Server 2019.<br><br> If Report Builder for SQL Server 2016 is already installed, it will be updated to Report Builder for SQL Server 2019.</li></ul></li></ul>|  
@@ -105,7 +106,7 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 |Specification|Requirement|  
 |----|-----|  
 |Hardware resources|For more information, see [Hardware and Software Requirements for Installing SQL Server](https://go.microsoft.com/fwlink/?LinkId=622999). From this page, you can also access requirements for other versions of SQL Server.|  
-|Database| Business Central supports database compatibility level 150 and 160 on SQL Server, Azure SQL Database, and Azure SQL Managed Instance. See [ALTER DATABASE (Transact-SQL) Compatibility Level](/sql/t-sql/statements/alter-database-transact-sql-compatibility-level?view=sql-server-ver15&preserve-view=true) for details on SQL Server Database compatibility levels.<br> Note that if you use nonclustered column store (NCCI) indexes and deploy to Azure SQL Database, then the performance tier most be S3 or higher.<!-- SQL Server 2019 has Mainstream End Date on Feb 28, 2025 (so need to remove this compat level for 2025w1)-->|  
+|Database| Business Central supports database compatibility level 150 and 160 on SQL Server, Azure SQL Database, and Azure SQL Managed Instance. See [ALTER DATABASE (Transact-SQL) Compatibility Level](/sql/t-sql/statements/alter-database-transact-sql-compatibility-level?view=sql-server-ver15&preserve-view=true) for details on SQL Server Database compatibility levels.<br> If you use nonclustered column store (NCCI) indexes and deploy to Azure SQL Database, then the performance tier must be S3 or higher.<!-- SQL Server 2019 has Mainstream End Date on Feb 28, 2025 (so need to remove this compat level for 2025w1)-->|  
 |Service Packs and Cumulative Updates| Unless explicitly stated, all released Service Packs and Cumulative Updates of the above Microsoft SQL Server versions are supported. it's recommended to always be on the latest released Service Pack and Cumulative Update.|
 |Additional information|[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>SQL Server 2019 Express \(64-bit edition\).<br>If the operating system on the target computer doesn't support SQL Server 2019 Express, Setup displays a pre-requisite warning. In this case, you should exit Setup. Then, update the operating system on the computer to one that does support SQL Server 2019 Express and run Setup again.</li><li>Report Builder for SQL Server 2019.<br><br> If Report Builder for SQL Server 2016 is already installed, it will be updated to Report Builder for SQL Server 2019.</li></ul>|  
 

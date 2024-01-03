@@ -389,7 +389,9 @@
 ##### [Data replication overview](administration/migration-data-replication.md)
 ##### [Run data replication](administration/migrate-data-replication-run.md)
 ##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
-#### [Run data upgrade](administration/migration-data-upgrade.md)
+#### Upgrade data
+##### [Run data upgrade](administration/migration-data-upgrade.md)
+##### [Skip API data upgrade](administration/migration-skip-api-data-upgrade.md)
 #### [Complete cloud migration](administration/migration-finish.md)
 ### Migrate from Dynamics NAV
 #### [Migrate from Dynamics NAV to Business Central online](administration/migrate-nav.md)
@@ -623,12 +625,20 @@
 #### [Error handling](developer/devenv-al-error-handling.md)
 #### [Understanding the error dialog](developer/devenv-error-dialog.md)
 #### [User experience guidelines for errors](developer/devenv-error-handling-guidelines.md)
-#### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md)
+#### [Actionable errors](developer/devenv-actionable-errors.md)
 #### [Collecting errors](developer/devenv-error-collection.md)
-#### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
-#### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md)
-#### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md)
-#### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md)
+#### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md)
+#### Error telemetry
+##### [Error message quality telemetry](administration/telemetry-error-message-voting-trace.md)
+##### [Error method telemetry](administration/telemetry-error-method-trace.md)
+##### [Feature (error) telemetry](administration/telemetry-feature-telemetry.md)
+##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
+#### AL Language Reference (errors)
+##### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
+##### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md)
+##### LogInternalError method (on-premises only)
+###### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md)
+###### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md)
 
 ### Formatting values
 #### [Formatting decimal values in fields](developer/devenv-format-field-data.md)

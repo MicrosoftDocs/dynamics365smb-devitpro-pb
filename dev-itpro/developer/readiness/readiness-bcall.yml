@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Discover all aka.ms links related to Business Central
-summary: Are you looking for an aka.ms link? Look no further.
+summary: Are you looking for an aka.ms link? Look no further - and bookmark this site as aka.ms/BCLinks.
 
 metadata:
   title: Find all aka.ms links related to Business Central
@@ -82,6 +82,8 @@ landingContent:
             url: https://aka.ms/BCCapabilities
           - text: aka.ms/AIMforPartners
             url: https://aka.ms/AIMForPartners
+          - text: aka.ms/Dynamics365Icons
+            url: https://aka.ms/Dynamics365Icons
       - linkListType: get-started
         links:
           - text: aka.ms/BCPartnerPortal
