@@ -44,7 +44,7 @@ The request page is run modally when you use this method.
   
 ## Example  
 
-```AL  
+```al 
 var
     CustomerRec: Record Customer;
     SalesReport: Report "Chart of Accounts";

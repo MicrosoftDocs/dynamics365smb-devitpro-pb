@@ -77,7 +77,7 @@ The `FromFilter` parameter must follow this pattern:
 
 This example uses a text file:
 
-```  
+```al
 Upload('Upload file','C:\','Text file (*.txt)|*.txt','Test.txt',varTest);  
 ```  
 

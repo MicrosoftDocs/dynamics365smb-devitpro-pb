@@ -46,7 +46,7 @@ Scheduled tasks are shown in the **Scheduled Tasks** page in the client.
 
 If no task exists with the task GUID provided to `TaskScheduler.SetTaskReady`, then the method will return false (no runtime error will occur). 
 
-For more information about the task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
+For more information about the task scheduler, see [Using the Task Scheduler](../../devenv-task-scheduler.md). 
 
 ## Example
 
@@ -69,5 +69,6 @@ end;
 ## See also
 
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
+[Using the Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

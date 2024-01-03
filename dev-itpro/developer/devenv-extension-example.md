@@ -51,7 +51,7 @@ This extension enables the ability to assign one of the three reward levels to c
 The following code adds a new table **50100 Reward** for storing the reward levels for customers. The table consists of three fields: **Reward ID**, **Description**, and **Discount Percentage**. For example, the **Description** field must contain a value of type text and it can't exceed the limit of 250 characters. The second field contains three properties that are used to set the range of the discount percentage assigned to every customer. Properties can be created for every field, depending on the scope. 
 
 > [!TIP]  
-> Type `ttable` followed by the **Tab** key. This snippet will create a basic layout for a table object.
+> Type `ttable` followed by the <kbd>Tab</kbd> key. This snippet will create a basic layout for a table object.
 
 ```AL
 table 50100 Reward
@@ -211,7 +211,7 @@ page 50102 "Reward List"
 }
 ```
 
-After you've created the objects, update the `startupObjectId` in the `launch.json` file to `50102`, which is the ID of the **Reward List** page and select the **Ctrl+F5** shortcut to see the new page in your sandbox environment. You are asked to sign in to your [!INCLUDE [prod_short](includes/prod_short.md)], if you haven't already done so.  
+After you've created the objects, update the `startupObjectId` in the `launch.json` file to `50102`, which is the ID of the **Reward List** page and select the <kbd>Ctrl</kbd>+<kbd>F5</kbd> shortcut to see the new page in your sandbox environment. You are asked to sign in to your [!INCLUDE [prod_short](includes/prod_short.md)], if you haven't already done so.  
 
 > [!TIP]  
 > Information about your sandbox environment and other environments is stored as configurations in the `launch.json` file. For more information, see [JSON Files](devenv-json-files.md).  
@@ -232,7 +232,6 @@ field(4;"Minimum Purchase";Decimal)
 
 From this point, changes to the **Reward Card** page can be done either manually by adding the following code in Visual Studio Code or by using Designer's functions to add the same field. Both ways lead to the same results, but using Designer speeds up the process. 
 
-
 ```AL
 field("Minimum Purchase";"Minimum Purchase")
 {
@@ -240,7 +239,7 @@ field("Minimum Purchase";"Minimum Purchase")
 }
 ```
 
-Using the **F6** key shortcut in Visual Studio Code launches the browser and enters Designer. You can also use Designer from the [!INCLUDE[prod_short](includes/prod_short.md)] client, by selecting ![Settings icon.](media/settings_icon_small.png) **Designer**.
+Using the <kbd>F6</kbd> key shortcut in Visual Studio Code launches the browser and enters Designer. You can also use Designer from the [!INCLUDE[prod_short](includes/prod_short.md)] client, by selecting ![Settings icon.](media/settings_icon_small.png) **Designer**.
 
 > [!NOTE]  
 > Every time you start designing, you create a new extension and the changes you make in Designer will apply to all users.
@@ -251,9 +250,9 @@ To add the same fields and customize the **Reward Card** page, follow the next s
 - Enter Designer mode from the UI and select **More** from the Designer bar. 
 - Select **Field** from the Designer bar to show the list of available fields. 
 - Drag the **Minimum Purchase** field from the list onto the page in the **Reward group**. 
-- Choose the **Reward** in the group caption to enable the value to be edited. Change the caption to **Info** and press **Enter**.
+- Choose the **Reward** in the group caption to enable the value to be edited. Change the caption to **Info** and select <kbd>Enter</kbd>.
 
-After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the **Alt+F6** key shortcut from Visual Studio Code. You can also uninstall the extension from the **Extension Management** page. You can find the **Extension Management** page by choosing the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon and typing the page name.
+After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the <kbd>Alt</kbd>+<kbd>F6</kbd> key shortcut from Visual Studio Code. You can also uninstall the extension from the **Extension Management** page. You can find the **Extension Management** page by choosing the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon and typing the page name.
 
 For more information about Designer, see [Designer](devenv-inclient-designer.md).  
 
@@ -293,7 +292,6 @@ tableextension 50103 "Customer Ext" extends Customer
         }
     }
 }
-
 ```
 
 > [!NOTE]
@@ -346,7 +344,7 @@ pageextension 50104 "Customer Card Ext" extends "Customer Card"
 }
 ```
 
-At this point, reward levels can be created and assigned to customers. To view recent changes in the code, update the `startupObjectId` value in the launch.json file to `21`. Then, select the **Ctrl+F5** key or **Run Without Debugging** from the **Run** menu to open the page.
+At this point, reward levels can be created and assigned to customers. To view recent changes in the code, update the `startupObjectId` value in the launch.json file to `21`. Then, select the <kbd>Ctrl</kbd>+<kbd>F5</kbd>  key or **Run Without Debugging** from the **Run** menu to open the page.
 
 ## Help links
 
@@ -416,7 +414,7 @@ ToolTip = 'Specifies the level of reward that the customer has at this point.';
 }
 ```
 
-Now, if you deploy the app, you are able to read the tooltip text for the **Reward ID** field, and if you choose the *Learn more* link or press **Ctrl+F1**, a new browser tab opens the equivalent of `https://mysite.com/documentation/sales-rewards`.  
+Now, if you deploy the app, you are able to read the tooltip text for the **Reward ID** field, and if you choose the *Learn more* link or select <kbd>Ctrl</kbd>+<kbd>F1</kbd>, a new browser tab opens the equivalent of `https://mysite.com/documentation/sales-rewards`.  
 
 ![Customer card extension tool tip example.](media/help/CustomerCardExt_TooltipHelp.png)
 
