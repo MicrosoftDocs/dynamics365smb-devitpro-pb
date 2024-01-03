@@ -45,9 +45,9 @@ The current detailed message of the ErrorInfo.
 
 ## Remarks
 
-The detailed message is not shown to the end user, but is included in the **Copy details** part of the error dialog. For more information about the **Copy details** part of the error dialog, see [Understanding the error dialog](../../devenv-error-dialog.md).  
+The detailed message isn't shown to the end user, but is included in the **Copy details** part of the error dialog. For more information about the **Copy details** part of the error dialog, see [Understanding the error dialog](../../devenv-error-dialog.md).  
 
-You are not required to set a detailed message for error dialogs. But it might be helpful to add more technical information here to help a person who needs to troubleshoot the issue. 
+You aren't required to set a detailed message for error dialogs. But it might be helpful to add more technical information here to help a person who needs to troubleshoot the issue. 
 
 ## Example 
 
@@ -57,7 +57,7 @@ var
     vendorCode: Text[30];
     MyErrorInfo: ErrorInfo;
 begin
-    // setup the error info object
+    // set up the error info object
     MyErrorInfo.Message(
         StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', dimension, vendorCode)
     );

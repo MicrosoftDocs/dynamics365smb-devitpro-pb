@@ -53,12 +53,12 @@ The **AddAction** method accepts four parameters:
 - **Method Name**, which is the name of the method in the codeunit specified by the CodeunitID parameter, that you want to run for the action.
 - **Tooltip**, which is the text string that appears as the tooltip of the action in the error UI.
 
-If you call `ErrorInfo.AddAction` and codeunit exists with the provided *CodeunitID* or no method called *MethodName* exists in that codeunit, then a runtime error will occur.
+If you call `ErrorInfo.AddAction` and codeunit exists with the provided *CodeunitID* or no method called *MethodName* exists in that codeunit, then a runtime error occurs.
 
-If possible, call `ErrorInfo.AddAction` using Codeunit::CodeunitName and not the literal integer for the object ID of the codeunit. In case of a renumbering of the codeunit or if the codeunit was removed, then you will get a compile-time error and not a runtime error.
-
+If possible, call `ErrorInfo.AddAction` using Codeunit::CodeunitName and not the literal integer for the object ID of the codeunit. If there is a renumbering of the codeunit or if the codeunit was removed, then you get a compile-time error and not a runtime error.
 
 ## Example
+
 In the following example from the [!INCLUDE[prod_short](../../../includes/prod_short.md)] base app, you can see how an error message can be annotated with actions that the user can do to get unblocked.
 
 ```AL

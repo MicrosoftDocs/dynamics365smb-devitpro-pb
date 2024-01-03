@@ -42,7 +42,7 @@ The text that appears as the tooltip of the action in the error UI.
 
 ## Remarks
 
-The semantics of this method is the same as the version without a Description parameter. See [ErrorInfo.AddNavigationAction([Text])](./errorinfo-addnavigationaction-string-method.md) for more information.
+The semantics of this method is the same as the version without a Description parameter. For more information, see [ErrorInfo.AddNavigationAction([Text])](./errorinfo-addnavigationaction-string-method.md).
 
 ## See Also
 

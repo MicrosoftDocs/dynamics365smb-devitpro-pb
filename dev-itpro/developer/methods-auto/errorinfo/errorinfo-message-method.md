@@ -58,7 +58,7 @@ var
     vendorCode: Text[30];
     MyErrorInfo: ErrorInfo;
 begin
-    // setup the error info object
+    // set up the error info object
     MyErrorInfo.Message(
         StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', dimension, vendorCode)
     );
