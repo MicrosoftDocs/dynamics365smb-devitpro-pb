@@ -1,9 +1,9 @@
 ---
 title: "ErrorInfo.DetailedMessage([Text]) Method"
-description: "Specifies a detailed error message (not shown to the user)."
+description: "Specifies a detailed error message."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 01/03/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

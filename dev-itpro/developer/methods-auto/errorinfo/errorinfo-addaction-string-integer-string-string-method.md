@@ -1,9 +1,9 @@
 ---
 title: "ErrorInfo.AddAction(Text, Integer, Text, Text) Method"
-description: "Specifies an action for the error (tooltip version)."
+description: "Specifies an action for the error."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 01/03/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
