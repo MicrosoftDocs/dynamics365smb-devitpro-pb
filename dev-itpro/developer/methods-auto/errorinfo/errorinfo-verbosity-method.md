@@ -42,7 +42,38 @@ The current verbosity of the ErrorInfo.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example (get the Verbosity property)
+
+```AL
+procedure myErrorHandlerProc( MyErrorInfo: ErrorInfo )
+var 
+    ErrorVerbosity: Verbosity;
+begin
+    ErrorVerbosity := MyErrorInfo.Verbosity();
+
+    // do something 
+end
+```
+
+## Example (set the Verbosity property)
+
+```AL
+var 
+    MyErrorInfo: ErrorInfo
+begin
+    // setup the error info object: Define Message, DetailedMessage etc.
+
+    // set MyErrorInfo to be a critical error
+    MyErrorInfo.Verbosity( Verbosity::Critical );
+
+    Error(MyErrorInfo);
+end
+```
+
 ## See Also
+
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[AL error handling](../../devenv-al-error-handling.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
