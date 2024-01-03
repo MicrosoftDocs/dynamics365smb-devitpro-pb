@@ -817,10 +817,10 @@
 ##### [Specify a default printer](/dynamics365/business-central/ui-specify-printer-selection-reports?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Schedule a report to run](/dynamics365/business-central/ui-work-report#ScheduleReport?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Manage saved settings](/dynamics365/business-central/reports-saving-reusing-settings?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### AL Language Reference (reports)
-##### [Report datatype (AL Language Reference)](developer/methods-auto/report/report-data-type.md)
-##### [Report object properties (AL Language Reference)](developer/properties/devenv-report-properties.md)
-##### [Report, Report Dataitem, and Report Extension Properties (AL Language Reference)](developer/properties/devenv-report-property-overview.md)
+#### AL language reference (reports)
+##### [Report datatype](developer/methods-auto/report/report-data-type.md)
+##### [Report object properties](developer/properties/devenv-report-properties.md)
+##### [Report, report data item, and report extension properties](developer/properties/devenv-report-property-overview.md)
 
 
 ### [Events](developer/devenv-events-in-al.md)
