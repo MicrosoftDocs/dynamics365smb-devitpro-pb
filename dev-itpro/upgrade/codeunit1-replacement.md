@@ -14,7 +14,7 @@ With [!INCLUDE[prod_short](../developer/includes/prod_short.md)], codeunit **1 A
 
 
 
-## Codeunit 1 replacement Codeunit
+## Codeunit 1 replacement codeunit
 
 Copy the code to a text editor, and save it as a .txt file type. You'll use this during a technical upgrade.
 
