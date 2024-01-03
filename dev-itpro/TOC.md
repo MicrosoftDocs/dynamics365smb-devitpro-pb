@@ -944,7 +944,8 @@
 #### [Permissionset object](developer/devenv-permissionset-object.md)
 #### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
 
-### [Preprocessor directives in AL](developer/directives/devenv-directives-in-al.md)
+### Preprocessor directives in AL
+#### [Preprocessor directives](developer/directives/devenv-directives-in-al.md)
 #### [Region directive](developer/directives/devenv-directive-region.md)
 #### [Pragma directive](developer/directives/devenv-directive-pragma.md)
 
