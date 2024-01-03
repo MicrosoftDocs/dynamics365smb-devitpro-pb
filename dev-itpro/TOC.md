@@ -857,7 +857,7 @@
 #### [Page background tasks](developer/devenv-page-background-tasks.md)
 #### [Task scheduler](developer/devenv-task-scheduler.md)
 #### [Job queue](developer/devenv-job-queue.md)
-#### AL Language Reference (background processing)
+#### AL language reference (background processing)
 ##### [Session.StartSession](developer/methods-auto/session/session-startsession-integer-integer-string-table-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Session.StopSession](developer/methods-auto/session/session-stopsession-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [TaskScheduler Data Type](developer/methods-auto/taskscheduler/taskscheduler-data-type.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
