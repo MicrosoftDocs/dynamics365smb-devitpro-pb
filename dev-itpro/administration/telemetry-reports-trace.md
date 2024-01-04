@@ -17,9 +17,7 @@ ms.service: dynamics365-business-central
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-Report telemetry gathers data about which reports are run on the environment. It provides information about whether the report succeeded, failed, or was canceled. For each report, it tells you how long it ran, how many SQL statements it executed, and how many rows it consumed.
-
-You use this data to gather statistics on report usage, find failures in reports, or to help identify slow-running reports.
+[!INCLUDE[report_telemetry_intro](../includes/include-report-telemetry-intro.md)]
 
 > [!TIP]
 > The time spent to run a report consists of two parts: generating the dataset and rendering the report (applying the layout). In report telemetry, you get two durations: serverExecutionTime and totalTime. The former is roughly the time it takes for the server to generate the dataset. To calculate the rendering time, simply subtract serverExecutionTime from totalTime: renderingTime = totalTime - serverExecutionTime.
@@ -108,11 +106,26 @@ The documentFormat dimension shows the output of the generated report as a resul
 |Value|Description|
 |-----|-----------|
 |None|There was no output, for example, the user canceled.|
-|Rdlc|The output was a .rdlc file type.|
+|Pdf|The output was a .pdf file type.|
+|Xml|The outout was a .xml file type.|
 |Word|The output was a .docx file type.|
+|Html|The output was a .html file type.|
 |Excel|The output was a .xlsx file type that included the layout and dataset.|
 |ExcelDataset|The output was a .xlsx file type that contained the dataset only.|
 |Custom|The output was an custom file type.|
+|ProcessingOnly|The action was for processing report without any kind of layout.|
+
+### <a name=layoutType></a>layoutType
+
+The layoutType shows the layout type that was used to generate the report in the current action. The action can be taken from the report request page, for example, from the **Send To** menu,  or from AL code.
+
+|Value|Description|
+|-----|-----------|
+|None|There was no layout specified.|
+|Rdlc|The layout was a .rdlc file type.|
+|Word|The layout was a .docx file type.|
+|Excel|The layout was a .xlsx file type.|
+|Custom|The layout was an custom file type.|
 |ProcessingOnly|The action was for processing report without any kind of layout.|
 
 ### Sample KQL code (successful report generation - usage)
@@ -231,7 +244,7 @@ The following table explains the general dimensions of the **Failed report gener
 
 ### Analyzing report generation failures
 
-When a report fails to generate, the `result` column in the CustomDimensions will include the title of the exception that was thrown by the service or the AL code.  
+When a report fails to generate, the `result` column in the CustomDimensions for the event RT0006 will include the title of the exception that was thrown by the service or the AL code. 
 
 ### Sample KQL code (failed report generation)
 
