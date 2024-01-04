@@ -1,6 +1,6 @@
 ---
-title: Simple Card Page Example
-description: "Provides AL code for a simple card type page"
+title: Simple card page example
+description: Provides AL code for a simple card type page.
 author: jswymer
 ms.custom: na
 ms.date: 04/01/2021
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: jswymer
 ---
 
-# Simple Card Page Code Example
+# Simple card page code example
 
 The AL code in this article creates a simple card page that displays records from an existing table.
 
@@ -120,7 +120,8 @@ page 50112 SampleCustomerCard
 }
 ```
 
-## See Also
+## See also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  

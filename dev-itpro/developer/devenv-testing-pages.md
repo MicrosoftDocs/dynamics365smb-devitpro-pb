@@ -1,6 +1,6 @@
 ---
-title: "Testing Pages"
-description: This article explains the Testing Pages, their purpose and use.
+title: Test pages
+description: This article explains the Test pages, their purpose and use.
 ms.custom: na
 ms.date: 08/12/2022
 ms.reviewer: na
@@ -12,35 +12,28 @@ caps.latest.revision: 32
 author: jswymer
 ---
 
-# Testing Pages
+# Test pages
 
 You use test page objects to simulate user interactions with the application. You can:  
   
--   View or change the value of a field on a test page.  
-  
--   View the data on page parts.  
-  
--   View or change the value of a field on a subpage.  
-  
--   Filter the data on a test page.  
-  
--   Perform any actions that are available on the page.  
-  
--   Navigate to different records.  
-
+- View or change the value of a field on a test page.  
+- View the data on page parts.  
+- View or change the value of a field on a subpage.  
+- Filter the data on a test page.  
+- Perform any actions that are available on the page.  
+- Navigate to different records.  
 
 You can create and open a test page in the following ways:  
   
 - Declare a test page variable and then write AL code to open the test page by using one of the following methods:  
   
-  -   [OpenNew Method \(TestPage\)](methods-auto/testpage/testpage-opennew-method.md)  
+  - [OpenNew Method \(TestPage\)](methods-auto/testpage/testpage-opennew-method.md)  
   
-  -   [OpenEdit Method \(TestPage\)](methods-auto/testpage/testpage-openedit-method.md)  
+  - [OpenEdit Method \(TestPage\)](methods-auto/testpage/testpage-openedit-method.md)  
   
-  -   [OpenView Method \(TestPage\)](methods-auto/testpage/testpage-openview-method.md)  
+  - [OpenView Method \(TestPage\)](methods-auto/testpage/testpage-openview-method.md)  
   
 - Create a **PageHandler** or **ModalPageHandler** method that has a test page parameter. 
-  
 - Write AL code to trap a call to open a test page by using the [Trap Method \(TestPage\)](methods-auto/testpage/testpage-trap-method.md).  
 
 > [!NOTE]
@@ -49,7 +42,7 @@ You can create and open a test page in the following ways:
 > [!NOTE]  
 > Test methods and code on test pages run on the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Server instance, even though they simulate client interactions.  
  
- For more information about the AL methods that you use on a test page, see [TestPage Data Type](methods-auto/testpage/testpage-data-type.md).  
+For more information about the AL methods that you use on a test page, see [TestPage Data Type](methods-auto/testpage/testpage-data-type.md).  
 
 ## Access fields on test pages
 
@@ -72,7 +65,7 @@ if CustomerCard."No.".Value <> CustomerCard."Sales Hist. Sell-to FactBox"."No.".
   
 ```  
 
-## Filtering data on test pages
+## Filter data on test pages
 
 To filter the data that can be accessed on a test page, you use AL methods corresponding to the [TestFilter Data Type](methods-auto/testfilter/testfilter-data-type.md) instances. For example, to filter the customers on the `Customer List` page based on a range of values in the `No.` field, you can write the following code.  
   
@@ -80,7 +73,7 @@ To filter the data that can be accessed on a test page, you use AL methods corre
 CustomerList.Filter.SetFilter("No.", '20000..30000');  
 ```  
   
-## Invoking actions on test pages
+## Invoke actions on test pages
 
 Any action that is available on a page is also available on the test page that mimics the original page. You access page actions by using the dot notation and the [Invoke Method](methods-auto/testaction/testaction-invoke-method.md). 
 
@@ -90,23 +83,15 @@ These are instances of the [TestAction Data Type](methods-auto/testaction/testac
 
 To simulate moving to different items on a list page or to different records on a card page, you can use one of the following navigation methods:  
   
--   [Next Method \(TestPage\)](methods-auto/testpage/testpage-next-method.md)  
-  
--   [Previous Method \(TestPage\)](methods-auto/testpage/testpage-previous-method.md) 
-  
--   [First Method \(TestPage\)](methods-auto/testpage/testpage-first-method.md)   
-  
--   [Last Method \(TestPage\)](methods-auto/testpage/testpage-last-method.md)  
-  
--   [GoToRecord Method \(TestPage\)](methods-auto/testpage/testpage-gotorecord-method.md) )  
-  
--   [GoToKey Method \(TestPage\)](methods-auto/testpage/testpage-gotokey-method.md)   
-  
--   [FindFirstField Method \(TestPage\)](methods-auto/testpage/testpage-findfirstfield-method.md)   
-  
--   [FindNextField Method \(TestPage\)](methods-auto/testpage/testpage-findnextfield-method.md)   
-  
--   [FindPreviousField Method \(TestPage\)](methods-auto/testpage/testpage-findpreviousfield-method.md)   
+- [Next Method \(TestPage\)](methods-auto/testpage/testpage-next-method.md)  
+- [Previous Method \(TestPage\)](methods-auto/testpage/testpage-previous-method.md)  
+- [First Method \(TestPage\)](methods-auto/testpage/testpage-first-method.md)  
+- [Last Method \(TestPage\)](methods-auto/testpage/testpage-last-method.md)  
+- [GoToRecord Method \(TestPage\)](methods-auto/testpage/testpage-gotorecord-method.md)  
+- [GoToKey Method \(TestPage\)](methods-auto/testpage/testpage-gotokey-method.md)  
+- [FindFirstField Method \(TestPage\)](methods-auto/testpage/testpage-findfirstfield-method.md)  
+- [FindNextField Method \(TestPage\)](methods-auto/testpage/testpage-findnextfield-method.md)  
+- [FindPreviousField Method \(TestPage\)](methods-auto/testpage/testpage-findpreviousfield-method.md)  
   
 ## See Also
 

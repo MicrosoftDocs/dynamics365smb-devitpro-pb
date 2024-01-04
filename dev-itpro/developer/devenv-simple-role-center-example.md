@@ -1,5 +1,5 @@
 ---
-title: Simple Role Center Example
+title: Simple Role Center example
 description: "Provides AL code for a simple role center"
 author: blrobl
 ms.custom: na
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: brobledodiaz
 ---
 
-# Simple Role Center Code Example
+# Simple Role Center code example
 
 The AL code in this article creates a simple Role Center customized for users assigned to a new profile. 
 
@@ -149,7 +149,8 @@ profile MyProfile
 }
 ```
 
-## See Also
+## See also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  

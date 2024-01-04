@@ -62,5 +62,5 @@ Any changes done in the handler above will result in the `XmlParameters` being c
 ## See Also
 
 [Reports Overview](devenv-reports.md)  
-[Testing Pages](devenv-testing-pages.md)  
+[Test pages](devenv-testing-pages.md)  
 [Test Codeunits and Test Methods](devenv-test-codeunits-and-test-methods.md)

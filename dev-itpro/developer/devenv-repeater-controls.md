@@ -10,7 +10,7 @@ ms.service: dynamics365-business-central
 ms.topic: conceptual
 ---
 
-# Working with repeater controls
+# Work with repeater controls
 
 A repeater control is used to define a list of records from the source table of a page. Records are displayed as rows and columns, where each row is a record and each column is a field.
 
@@ -132,7 +132,7 @@ pagecustomization MyCustomization customizes "Customer List"
 }
 ```
 
-## See Also
+## See also
 
 [Pages Overview](devenv-pages-overview.md)  
 [Designing List Pages](devenv-designing-list-pages.md)  

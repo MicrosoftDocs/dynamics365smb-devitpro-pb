@@ -1,5 +1,5 @@
 ---
-title: Simple List Page Example
+title: Simple list page example
 description: "Provides AL code for a simple list type page"
 author: jswymer
 ms.custom: na
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: jswymer
 ---
 
-# Simple List Page Code Example
+# Simple list page code example
 
 The AL code in this article creates a simple list page that displays records from an existing table.
 
@@ -119,7 +119,8 @@ page 50111 SampleCustomerList
 }
 ```
 
-## See Also
+## See also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  

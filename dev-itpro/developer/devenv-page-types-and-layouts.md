@@ -57,7 +57,7 @@ In [!INCLUDE[prod_short](includes/prod_short.md)], entity-oriented pages are use
 The `CardPart` page type is an entity-oriented page type for inclusion in another page, for example, in a FactBox.
 
 > [!IMPORTANT]  
-> Because entity-oriented pages represent a *single* entity, such as a customer or an item, don't use a `Repeater` group in the construction of entity-oriented pages. If you do, some of the repeater's features may not work properly, and it may not get the expected size. However, an entity-oriented page *can* embed a `ListPart` part page that, in turn, contains a repeater control. Learn more about how to user repeater controls [Working with Repeater Controls](devenv-repeater-controls.md).
+> Because entity-oriented pages represent a *single* entity, such as a customer or an item, don't use a `Repeater` group in the construction of entity-oriented pages. If you do, some of the repeater's features may not work properly, and it may not get the expected size. However, an entity-oriented page *can* embed a `ListPart` part page that, in turn, contains a repeater control. Learn more about how to user repeater controls [Work with repeater controls](devenv-repeater-controls.md).
 >
 > If you currently have an entity-oriented page that uses a repeater, in most cases, you can just change the page type from `Card` to `List`, or `CardPart` to `ListPart`. In some cases, it is more complicated. For example, if the page has actions that act on the grid or variables that are used in the grid.
 
