@@ -82,7 +82,6 @@ The following request body contains three inner requests. The first two requests
               }
        ]
 }
-
 ```
 
 ## Response

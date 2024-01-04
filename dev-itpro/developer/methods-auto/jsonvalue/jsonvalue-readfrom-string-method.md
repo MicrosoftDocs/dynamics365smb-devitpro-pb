@@ -53,7 +53,7 @@ Clear(JsonValue)
 ## Example
 This example shows how to read JSON data from a string into a JsonValue variable.
 
-```
+```al
 local procedure ReadJson(data : Text) result : JsonValue;
 begin
     result.ReadFrom(data);    

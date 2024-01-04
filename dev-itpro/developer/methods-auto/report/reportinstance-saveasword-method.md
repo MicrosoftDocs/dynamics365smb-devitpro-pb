@@ -59,10 +59,11 @@ The method can fail in the following three ways:
 
 [!INCLUDE[io_errors](../../includes/include-io-errors.md)]
 
-## Example  
+## Example
+
 This example shows how to use the static SaveAsWord method in a safe way (where no errors occur).
 
-```AL 
+```al
 var
     FileNameAndPath: Text[250];
     MyReportInstance: Report::MyReport

@@ -53,7 +53,7 @@ The following example extends the Customer List page with a trigger that runs th
         WordLayout = 'MyWordReport.docx';
     }
     ```
-2. Build the extension (**Ctrl+Shift+B**) to generate the MyWordReport.docx file.
+2. Build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) to generate the MyWordReport.docx file.
 3. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code to the report. For more information about defining a dataset, see [Report Dataset](devenv-report-dataset.md).  
     ```AL
     report 50124 MyWordReport
@@ -73,7 +73,7 @@ The following example extends the Customer List page with a trigger that runs th
         } 
     }
     ```
-4. Build the extension (**Ctrl+Shift+B**).
+4. Build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>).
 5. Open the generated report layout file in Word.
 6. In Word, edit the layout using the **XML Mapping Pane** on the **Developer** tab.  
     > [!NOTE]  
@@ -82,7 +82,7 @@ The following example extends the Customer List page with a trigger that runs th
 8. Right-click on the **Customer** table, and in **Insert Content Control**, select **Repeating** to add the repeater data item.
 9. Right-click on the **Name** field and in **Insert Content Control**, select **Plain Text** to add the column as a text box.
 10. Save the report layout when you're done and then close it.
-11. Back in Visual Studio Code, press **Ctrl+F5** to compile and run the report.  
+11. Back in Visual Studio Code, select <kbd>Ctrl</kbd>+<kbd>F5</kbd>  to compile and run the report.  
 
 You'll now see the generated report in preview mode.
 

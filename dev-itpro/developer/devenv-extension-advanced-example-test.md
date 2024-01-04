@@ -111,7 +111,7 @@ In order to install the Application Test Toolkit:
 1. Open the BCContainerHelper prompt found on the Desktop. You see a list of functions that you can run on the container.
 2. Run the `Import-TestToolkitToBCContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
 
-```
+```powershell
 Import-TestToolkitToBCContainer -containerName <name-of-container> 
 ```
 
@@ -313,8 +313,7 @@ Finally, to verify that the customer got the correct reward points and level, we
 There are many more areas that we look at in the sample test. See the full codeunit below for the rest of the tests. 
 
 ```AL
-codeunit 50103 "Customer Rewards Test" 
-
+codeunit 50103 "Customer Rewards Test"
 { 
     // [FEATURE] [Customer Rewards] 
 
@@ -965,10 +964,9 @@ codeunit 50103 "Customer Rewards Test"
     begin 
     end; 
 } 
-
 ``` 
 
-At this point you can publish and run your tests on your tenant by pressing Ctrl+F5. 
+At this point you can publish and run your tests on your tenant by selecting <kbd>Ctrl</kbd>+<kbd>F5</kbd>. 
 
 ## Run the tests
 
@@ -1006,7 +1004,7 @@ procedure SetDefaultCustomerRewardsExtMgtCodeunit();
 ``` 
 Now, anytime the **SetDefaultCustomerRewardsExtMgtCodeunit** method in the install codeunit is run, the **Customer Rewards Ext. Mgt. Codeunit ID** in the **Customer Rewards Mgt. Setup** table is set to 0. 
 
-Press Ctrl+F5 to publish the updated tests to your tenant and then run them.
+  Select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to publish the updated tests to your tenant and then run them.
 ![Publish Test.](media/PublishTest.png)
 
 The test TestOnInstallLogic should now have a Failure result with the error message:  

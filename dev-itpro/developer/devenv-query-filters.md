@@ -136,8 +136,7 @@ query 50100 "Customer_Sales_Quantity"
             }
         }
     }
-} 
-
+}
 ```
 
 In an SQL SELECT statement, filters on a column or filter row that don't apply an aggregate method, as with the `Location_Code` filter row in the example, would correspond to a WHERE clause. Filters on a columns or filter rows that do apply a totals method, as with the `Quantity` column in the example, would correspond to a HAVING clause. For more information, see [Equivalent SQL SELECT Statements for Query Filters](devenv-query-filters.md#SQL).  
@@ -195,7 +194,7 @@ If you're familiar with SQL, then it is helpful to know how filtering in [!INCLU
 
 The following example shows the corresponding SQL SELECT statement for the previous data item filter example that links the `Customer` and `Sales Line` tables and filters on the `Quantity` field.  
 
-```  
+```sql
 SELECT Customer."No.", Customer.Name, "Sales Line".Quantity  
 FROM Customer LEFT OUTER JOIN "Sales Line"  
 ON Customer."No." = "Sales Line".Sell-to Customer No.  
@@ -204,7 +203,7 @@ WHERE "Sales Line"."Quantity" > 10
 
 The following example shows the corresponding SQL SELECT statement for the previous column and filter row example that links the `Customer` and `Sales Line `tables and filters on the `Location Code` field and the total sum of the `Quantity` field.  
 
-```  
+```sql
 SELECT Customer."No.", Customer.Name, SUM("Sales Line".Quantity) as Qty  
 FROM Customer LEFT OUTER JOIN "Sales Line"  
   ON Customer."No." = "Sales Line".Sell-to Customer No.  
