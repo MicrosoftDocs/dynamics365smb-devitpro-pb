@@ -1,5 +1,5 @@
 ---
-title: Sandbox Environments for Dynamics 365 Business Central Development
+title: Sandbox environments for Dynamics 365 Business Central development
 description: Overview of the differences between the offered sandbox environments for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -41,7 +41,7 @@ The following table outlines the most important capabilities on the offered deve
 |From File|Available.|Available.|
 |From Visual Studio Code|Available.|Available.|
 
-## Getting started
+## Get started
 
 Based on the overview above and the requirements for your development environment, you can get started with a sandbox by following the links below:
 
@@ -49,7 +49,7 @@ Based on the overview above and the requirements for your development environmen
 + [Online Sandbox with Production Data](../administration/tenant-admin-center.md)  
 + [Container Sandbox](devenv-get-started-container-sandbox.md)  
 
-## See Also
+## See also
 
 [Get Started with AL](devenv-get-started.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)  
