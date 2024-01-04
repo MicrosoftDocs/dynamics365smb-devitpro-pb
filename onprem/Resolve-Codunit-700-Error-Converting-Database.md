@@ -396,7 +396,6 @@ OBJECT Codeunit 700 Page Management
     END.
   }
 }
-
 ```
 
 ## See Also  

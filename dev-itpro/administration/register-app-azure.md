@@ -14,6 +14,8 @@ ms.service: dynamics365-business-central
 
 > **APPLIES TO** [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online is automatically configured for integration with other online services.
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article describes how to set up [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises to use services that are based on Microsoft Azure. There are several services that you can integrate with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, like Cortana Intelligence and Power BI. Before using the services, you have to register Business Central on-premises in Microsoft Entra ID and give it access to the services. For example, the [Sales and Inventory Forecast](/dynamics365/business-central/ui-extensions-sales-forecast) extension requires that you specify an API key and API URI. Other services require similar information.
 
 > [!NOTE]
@@ -21,21 +23,21 @@ This article describes how to set up [!INCLUDE [prod_short](../developer/include
 
 ## Prerequisites
 
-- a Microsoft Entra tenant.
+- A Microsoft Entra tenant.
 
-   You'll need a tenant on Microsoft Entra ID that has at least one user. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant).
+   You need a tenant on Microsoft Entra ID that has at least one user. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant).
 
    If the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] deployment is using Microsoft Entra authentication, then you already have a tenant with users. See [Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Microsoft Entra ID](authenticating-users-with-azure-active-directory.md).
 
-   If your deployment uses NavUserPassword authentication, you'll need the credentials (sign in email and password) of a user account later in this article.
+   If your deployment uses NavUserPassword authentication, you need the credentials (sign in email and password) of a user account later in this article.
 
 - An Azure portal account
 
-    You'll need an account for accessing the Azure portal. In most cases, this account is the same as your Business Central account. You'll use this account to access Azure Active AD tenant via the Azure portal. The account must have application administrator permissions to create and manage app registrations.
+    You need an account for accessing the Azure portal. In most cases, this account is the same as your Business Central account. You use this account to access Microsoft Entra tenant via the Azure portal. The account must have application administrator permissions to create and manage app registrations.
 
 ## Register an application in Microsoft Entra ID
 
-The first task is to use Azure portal to register an application for Business Central on your Microsoft Entra tenant. As part of the registration, you'll also give the relevant services access to the application. The purpose of registration is to ensure [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises and the services know each other's Microsoft Entra ID details.
+The first task is to use Azure portal to register an application for Business Central on your Microsoft Entra tenant. As part of the registration, you also give the relevant services access to the application. The purpose of registration is to ensure [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises and the services know each other's Microsoft Entra ID details.
 
 > [!TIP]
 > The following steps describe how to register a new application. However, if you're using Microsoft Entra authentication, you already have a registered application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. So instead of registering a new application, you can use the existing application. But if you do, make sure you modify it based on the information in the steps that follow.
@@ -50,7 +52,7 @@ The first task is to use Azure portal to register an application for Business Ce
         |-------|-----------|
         |Name|Specify a name for your Business Central on-premises solution, such as *Business Central on-premises* or *Azure Services for Business Central on-premises*. |
         |Supported account types| Select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)**<br /><br />**Note:** [!INCLUDE [prod_short](../developer/includes/prod_short.md)] doesn't require the organization to be multitenant, not even if this field is set to multitenant. |
-        |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC200/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC200/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Microsoft Entra ID.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC200/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
+        |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://localhost/BC230/OAuthLanding.htm` `https://MyServer/BC230/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC230/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Microsoft Entra ID.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address of the computer you're working on. For example, even though the actual URL might be `https://MyServer:443/BC230/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
 
         When completed, an **Overview** displays in the portal for the new application.
 
@@ -73,7 +75,7 @@ The first task is to use Azure portal to register an application for Business Ce
     |All|Microsoft Graph | User.Read|Delegated|Sign in and read user profile|
     |[Business Central add-in for Excel](/dynamics365/business-central/admin-deploy-excel-addin)|[Business Central app registration name]|[Business Central app permission name]|Delegated|Allows users of the add-in for Excel to access the OData web services to read and write data.|
     |[Business Central Add-in for Outlook](Setting-up-Office-Add-Ins-Outlook-Inbox.md)|Microsoft Graph | EWS.AccessAsUser.All|Delegated|Gives the Business Central add-in for Outlook permission to mailbox data in Microsoft 365 (Exchange Online) or Exchange Server.|
-    |[Exchange Contact Sync](/dynamics365/business-central/admin-synchronize-outlook-contacts)|Office 365 Exchange Online| Contacts.ReadWrite|Delegated|Allows the app to create, read, update, and delete user contacts.<br><br> **TIP** To find Office 365 Exchange Online, type it the the search box on the **APIs my organization uses** tab.|
+    |[Exchange Contact Sync](/dynamics365/business-central/admin-synchronize-outlook-contacts)|Office 365 Exchange Online| Contacts.ReadWrite|Delegated|Allows the app to create, read, update, and delete user contacts.<br><br> **TIP** To find Office 365 Exchange Online, type it the search box on the **APIs my organization uses** tab.|
     ||| EWS.AccessAsUser.All|Delegated|Allows the app to have the same access to mailboxes as the signed-in user via Exchange Web Services.|
     |[OneDrive Integration](/dynamics365/business-central/admin-onedrive-integration)<sup>[\[1\]](#1)</sup>|SharePoint|AllSites.FullControl |Delegated|Have full control of all site collections|
     |||User.ReadWrite.All|Delegated|Read and write user profiles|
@@ -87,13 +89,13 @@ The first task is to use Azure portal to register an application for Business Ce
 
 4. Configure consent on each API permission according to your organizations policies.
 
-   Consent is a process where users or admins authorize an application to access a resource, like a user's profile or mailbox, depending on the service. When a user attempts to sign in to the registered app for the first time, the app will request permission, and the user will have to accept to continue. As an admin, you can consent on behalf of all users, so they don't have to. To learn more, go to [More on API permissions and admin consent](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#more-on-api-permissions-and-admin-consent) and [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview).
+   Consent is a process where users or admins authorize an application to access a resource, like a user's profile or mailbox, depending on the service. When a user attempts to sign in to the registered app for the first time, the app requests permission, and the user must accept to continue. As an admin, you can consent on behalf of all users, so they don't have to. To learn more, go to [More on API permissions and admin consent](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#more-on-api-permissions-and-admin-consent) and [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview).
 
 5. If this is a new registered app, and not an update to an existing one, go to the next task to set it up in Business Central.
 
 ## Set up the registered application in Business Central
 
-After you create the application registration, the next task is to configure the Business Central tenant to use it. You'll need the following information about the application registration: redirect URL, application (client) ID, and client secret.
+After you create the application registration, the next task is to configure the Business Central tenant to use it. You need the following information about the application registration: redirect URL, application (client) ID, and client secret.
 
 > [!NOTE]
 > Don't complete this task for configuring OneDrive integration with Business Central 2022 release wave 1 (version 20) and earlier. Instead, see [Configuring Business Central On-Premises for OneDrive](/dynamics365/business-central/admin-onedrive-integration-onpremises#set-up-the-connection-in--version-19-and-20) in the business functionality help.
@@ -138,6 +140,10 @@ After authorizing the Azure service, you get a message similar to the following 
 
 This issue indicates there's a problem with the configuration of the Azure registered application used by the service. The problem is typically caused by incorrect values for either the **Redirect URL**, **Application ID**, or **Key** fields in the application registration. A common problem deals with the redirect URLs. Make sure the **Redirect URL** matches the redirect URL in the Azure portal and the URL of the Web client. To fix this issue, run the **Set Up Microsoft Entra ID** assisted setup and compare the values with the app registration in Azure.
 
+## Problem consenting to the Microsoft Entra (Azure) services for initial connection
+
+While consenting to the services for the initial connection, you keep getting prompted to consent instead of connecting, there may be a problem with the reply URL that used in the **Set up your Microsoft Entra accounts** assisted setup guide. The first part of the reply URL, before `OAuthLanding.htm`, should exactly match what appears in your browser URL when you open the Business Central web client. For example, if the browser URL is `https://localhost/BC230` on your computer, then the reply URL you provide must be `https://localhost/BC230/OAuthLanding.htm`. The reply URL must also be included in the app you registered in Microsoft Entra ID previously in this article. 
+ 
 ## See Also
 
 [Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  

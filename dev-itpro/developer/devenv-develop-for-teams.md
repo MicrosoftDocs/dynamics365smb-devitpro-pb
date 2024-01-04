@@ -13,6 +13,8 @@ ms.author: jswymer
 
 [!INCLUDE [online_only](includes/online_only.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [Microsoft Teams](https://www.microsoft.com/microsoft-365/microsoft-teams) is a Microsoft 365 product that lets you connect with others, collaborate seamlessly and simplify work. [!INCLUDE [prod_short](includes/prod_short.md)] offers an app that connects Microsoft Teams to your business data in [!INCLUDE [prod_short](includes/prod_short.md)] so users can quickly share details across team members and respond faster to inquiries. This article gives you an overview of what you can do as developer to customize displaying Business Central data and Teams channels and chats.
 
 ## Introduction to the Business Central app for Teams

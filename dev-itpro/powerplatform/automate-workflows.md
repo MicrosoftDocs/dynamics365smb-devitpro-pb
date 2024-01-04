@@ -45,7 +45,7 @@ The following figure illustrates the flow that you create.
 
 Complete the following steps:
 
-1. Sign in to [Power Automate](https://powerautomate.com) or select the actions **Automate**> **Power Automate** > **Manage Flows** from a page in [!INCLUDE[prod_short](../includes/prod_short.md)].
+1. Sign in to [Power Automate](https://powerautomate.com) or, from a page in [!INCLUDE[prod_short](../includes/prod_short.md)], select **Automate**> **Power Automate** > **Create automated flow** or **Manage Flows**.
 2. On the left side, select **Create**, then choose to create by starting from blank or starting from connector:
 
    # [Starting from blank](#tab/blank)
@@ -146,16 +146,36 @@ Microsoft also provides automated flow templates that you can use to build your 
 
 ### Get started
 
-1. Sign in to [Power Automate](https://powerautomate.com) or from a page in [!INCLUDE[prod_short](../includes/prod_short.md)], select the actions **Automate**> **Power Automate** > **Manage Flows**.
-2. Select **Create** from the left side.
-3. Under **Starting from a template**, select **All templates**.
-4. In the search, type *business central* to get a list of all the available automated flow templates in the results.
-5. Select template to open the flow.
-6. Make changes to the flow, for example, by adding or changing steps. There are typically a few parameters that you need to fill in before saving the flow as one of your own.
+1. Add a new flow from [!INCLUDE[prod_short](../includes/prod_short.md)] or Power Automate:
+
+   # [From Business Central](#tab/bc)
+
+   In this way, you work only in Business Central, but you have the option during the setup to open the flow in Power Automate.
+
+   1. Sign in to [Business Central](https://businesscentral.microsoft.com).
+   2. Open the list, card, or document page.
+   3. In the action bar, select **Automate** > **Power Automate** > **Create automated flow**.
+   4. The **Create a flow** page opens and lists all the available Business Central templates related to the page. Select the template you want.
+
+      > [!TIP]
+      > When you select a template, an introductory page explaining the template appears, letting you continue or go back.
+      >
+      > By default, the **Create a flow** page is filtered to list only those templates that create automated flows. If you want a template that's not shown or want to find out what other templates are available, select **Filtered templates** > **All templates** to clear the filter or use the **Search templates...** box.
+
+   # [From Power Automate](#tab/pa)
+
+   1. Sign in to [Power Automate](https://powerautomate.com).
+   2. Select **Create** from the left side.
+   3. Under **Starting from a template**, select **All templates**.
+   4. In the search, type *business central* to get a list of all the available automated flow templates in the results.
+   5. Select template to open the flow.
+
+   ---
+1. Make changes to the flow, for example, by adding or changing steps. There are typically a few parameters that you need to fill in before saving the flow as one of your own.
 
    > [!NOTE]
    > Because each step in the flow is independent of the next, you may have to define the environment and company multiple times
-7. Select **Save** when done.
+1. Select **Save** when done.
 
 
 <!--

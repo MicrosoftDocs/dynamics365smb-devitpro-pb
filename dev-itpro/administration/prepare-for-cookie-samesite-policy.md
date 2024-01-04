@@ -1,8 +1,8 @@
 ---
-title: Cookie Samesite policy
+title: Cookie samesite policy
 description: Deploy and administer the Web server to support the latest in browser cookie-handling policies.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/29/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,11 +11,13 @@ ms.author: jswymer
 author: jswymer
 ---
 
-# Preparing Dynamics NAV or Dynamics 365 Business Central for Upcoming Changes to Browser Cookie Policy
+# Preparing Dynamics NAV or Dynamics 365 Business Central for upcoming changes to browser cookie policy
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 The web is constantly evolving to improve the user experience, security, and privacy. Upcoming releases of some browsers expected early calendar year 2020 include a change in how cookies are handled. This change affects federated authentication flows and cross-domain hosting scenarios when using these browsers. The change can potentially affect users' ability to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] or Dynamics NAV in one or more of the following situations:
 
-- When using the Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] Outlook Add-In.
+- When using the Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] Outlook add-in.
 - Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] as a SharePoint app.
 - Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] is using Microsoft Entra authentication.
 - Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] is embedded in an iframe as part of another web site.
@@ -76,7 +78,7 @@ In an IIS web farm, you can do this by adding additional rewrite rules in the sy
 </rule>
 ```
 
-This rule will append the `SameSite=none` attribute to the `ARRAffinity` cookie except for older versions of Safari and iOS browsers that have known limitations with handling `SameSite` attributes.
+This rule appends the `SameSite=none` attribute to the `ARRAffinity` cookie except for older versions of Safari and iOS browsers that have known limitations with handling `SameSite` attributes.
 
 
 ### Testing
@@ -104,5 +106,5 @@ In the short-term, the Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_sh
 **Are Control Add-Ins affected?**  
 Custom control add-ins sometimes rely on [!INCLUDE[prod_short](../includes/prod_short.md)]'s authentication with Microsoft Entra ID. Whether this is impacted by the cookie policy changes is highly dependent on your implementation to handle Microsoft Entra ID. We recommend you minimize risk and take action as outlined in this article.
 
-**Is the Dynamics NAV Windows Client affected?**  
-The Dynamics NAV Windows client may be configured to authenticate using Microsoft Entra ID. In this case, the change in cookie policy has no effect on access to the Windows client.
+**Is the Dynamics NAV Windows client affected?**  
+The Dynamics NAV Windows client might be configured to authenticate using Microsoft Entra ID. In this case, the change in cookie policy has no effect on access to the Windows client.

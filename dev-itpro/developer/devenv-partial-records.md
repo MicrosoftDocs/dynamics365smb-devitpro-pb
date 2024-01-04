@@ -1,16 +1,15 @@
 ---
-title: "Partial Records"
-description: Describes the partial records capability in Business Central
+title: Using partial records
+description: Describes the partial records capability in Business Central.
 ms.author: jswymer
-ms.custom: na
-ms.date: 02/02/2022
+ms.custom: bap-template
+ms.date: 09/27/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 author: jswymer
 ---
-# Using Partial Records
+# Using partial records
 
 [!INCLUDE[d365fin_long_md](../includes/2020_releasewave2.md)]
 
@@ -27,6 +26,7 @@ To accommodate partial record loading, the following methods are available on bo
 |Method|Description|See more|
 |------|-----------|--------|
 |SetLoadFields|Specifies a set of fields to be initially loaded when the record is retrieved from its data source. A call to this method will overwrite any fields that were previously set to load.|[Record.SetLoadFields](methods-auto/record/record-setloadfields-method.md)<br /><br />[RecordRef.SetLoadFields](methods-auto/recordref/recordref-setloadfields-method.md)|
+|SetBaseLoadFields|Adds all fields from the base table to be initially loaded when the record is retrieved from its data source. A call to this method will overwrite any fields that were previously set to load. |[Record.SetBaseLoadFields](methods-auto/record/record-setbaseloadfields-method.md)<br /><br />**Note:** The SetBaseLoadFields method was added in Business Central 2023 release wave 2.|
 |AddLoadFields|Adds fields to the current set of fields to be initially loaded when the record is retrieved from its data source. Subsequent calls to this method won't overwrite fields that were previously selected for loading.|[Record.AddLoadFields](methods-auto/record/record-addloadfields-method.md)<br /><br />[RecordRef.AddLoadFields](methods-auto/recordref/recordref-addloadfields-method.md)|
 
 **Current load methods**

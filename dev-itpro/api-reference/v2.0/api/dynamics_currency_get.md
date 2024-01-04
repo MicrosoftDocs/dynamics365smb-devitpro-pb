@@ -42,7 +42,7 @@ If successful, this method returns a ```200 OK``` response code and a **currenci
 Here is an example of the request.
 
 ```json
-GET https://{businesscentralPrefix}/api/v1.0/companies({id})/currencies({id})
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/currencies({id})
 ```
 
 **Response**

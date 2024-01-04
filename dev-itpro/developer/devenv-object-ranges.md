@@ -1,6 +1,6 @@
 ---
-title: "Object Ranges"
-description: "Description of the object ranges in Business Central."
+title: Object ranges
+description: Description of the object ranges used for licensing in Business Central.
 author: SusanneWindfeldPedersen
 ms.reviewer: na
 ms.suite: na
@@ -10,7 +10,7 @@ ms.author: solsen
 ms.date: 05/23/2022
 ---
 
-# Object Ranges in [!INCLUDE[prod_short](includes/prod_short.md)]
+# Object ranges in [!INCLUDE[prod_short](includes/prod_short.md)]
 
 When you develop an app for [!INCLUDE [prod_short](includes/prod_short.md)] online, you must request an object range in terms of licensing. Development for [!INCLUDE[prod_short](includes/prod_short.md)] is done using Visual Studio Code with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)].  
 

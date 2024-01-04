@@ -1,6 +1,6 @@
 ---
-title: "Differences in the Development Environments"
-description: "Describes the various differences between the old and the new development environment"
+title: Differences in the development environments
+description: Describes the various differences between the C/SIDE and AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 05/23/2022
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Differences in the Development Environments
+# Differences in the development environments
 
 Coming from the Dynamics NAV development environment and C/SIDE, it's good to know about some differences and optimizations between them. The following sections go through some of these changes, but it isn't an exhaustive list.
 
 > [!TIP]  
-> A very useful tool working in Visual Studio Code is IntelliSense, which gives you a list of options in the current context. To activate IntelliSense from anywhere in the code, press **Ctrl+Space**.
+> A very useful tool working in Visual Studio Code is IntelliSense, which gives you a list of options in the current context. To activate IntelliSense from anywhere in the code, select <kbd>Ctrl</kbd>+<kbd>Space</kbd>.
 
 ## General development approach
 

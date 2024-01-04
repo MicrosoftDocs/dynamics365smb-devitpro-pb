@@ -16,6 +16,8 @@ ms.author: jswymer
 
 **INTRODUCED IN:** Business Central 2022 release wave 1, version 20.0
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 The database deadlock telemetry gathers information about deadlocks that happen. Deadlocks can prevent users from completing tasks in the Business Central client. A deadlock occurs when two or more processes block each other because each has locked a database resource. The system terminates and rolls back one of the sessions (known as the deadlock victim), then emits a telemetry signal.
 
 As a partner or developer, this telemetry provides several benefits:

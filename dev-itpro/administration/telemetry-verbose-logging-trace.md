@@ -15,11 +15,13 @@ ms.author: jswymer
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)] 
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users can temporarily set up their environment to emit more verbose telemetry by going to the **Help and Support** page in the client and selecting **Additional Logging**.  They'll typically only do this when asked by a partner or support representative to help troubleshoot problems. This additional logging will continue for 15 minutes or until the user closes the browser or signs out of Business Central&mdash;then it's turned off
 
 A telemetry trace is recorded whenever additional logging is turned on or off.
 
-For information about enabling additional logging, see [Resources for Help and Support](/dynamics365/business-central/product-help-and-support).
+For information about enabling additional logging, see [Resources for Help and Support](/dynamics365/business-central/product-help-and-support#troubleshooting).
 
 ## <a name="enabled"></a>Verbose telemetry enabled for session
 

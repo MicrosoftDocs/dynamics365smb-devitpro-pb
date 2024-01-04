@@ -84,7 +84,7 @@ codeunit 50100 MyInstallCodeunit
             HandleReinstall;
     end;
 
-    local procedure HandleFreshInstall();
+    local procedure HandleFreshInstall()
     begin
         // Do work needed the first time this extension is ever installed for this tenant.
         // Some possible usages:
@@ -92,7 +92,7 @@ codeunit 50100 MyInstallCodeunit
         // - Initial data setup for use
     end;
 
-    local procedure HandleReinstall();
+    local procedure HandleReinstall()
     begin
         // Do work needed when reinstalling the same version of this extension back on this tenant.
         // Some possible usages:

@@ -1,1 +1,3 @@
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 OAuth is an open standard for authorizing access to web services and APIs from native clients and websites in Microsoft Entra ID . In [!INCLUDE[prod_short](prod_short.md)], OAuth is useful when your deployment is configured for Microsoft Entra authentication, either through your own Azure subscription or a Microsoft 365 subscription. OAuth lets users sign in to [!INCLUDE[prod_short](prod_short.md)] web services using their Microsoft 365 or Microsoft Entra credentials. Otherwise, they would have to use their [!INCLUDE[prod_short](prod_short.md)] account credentials (user name and password or web access key).

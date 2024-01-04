@@ -1,7 +1,7 @@
 ---
-title: "Technical Upgrade from Version 15 to Version 16" 
+title: "Technical upgrade from version 15 to version 16" 
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/27/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ ms.author: jswymer
 author: jswymer
 description: Upgrade from Business Central 2019 (v15) to 2020 (v16) with our comprehensive guide. Learn about prerequisites, database preparation, and post-upgrade tasks.
 ---
-# Technical Upgrade from Version 15 to Version 16
+# Technical upgrade from version 15 to version 16
 
 Use this process to upgrade from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15) to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 platform (version 16). This process won't upgrade the application to the latest version.
 
@@ -41,7 +41,7 @@ Use this process to upgrade from [!INCLUDE[prod_short](../developer/includes/pro
 
 2. Install version 16 components.
 
-    You can keep version 15 component installed, but it is not required. If you do, when you install version 16, you must either specify different port numbers for components during installation or stop the version 15.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You can keep version 15 component installed, but it isn't required. If you do, when you install version 16, you must either specify different port numbers for components during installation or stop the version 15.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     <!--
     > [!IMPORTANT]
@@ -51,7 +51,7 @@ Use this process to upgrade from [!INCLUDE[prod_short](../developer/includes/pro
 
 ## Task 2: Rewrite code for obsoleted system tables
 
-In version 16, a number of tables have been deprecated and replaced by new tables. You must rewrite code that uses the deprecated tables to use the new tables. For a list of the deprecated tables and new tables, see [Deprecated Tables](deprecated-tables.md).
+In version 16, many tables have been deprecated and replaced by new tables. You must rewrite code that uses the deprecated tables to use the new tables. For a list of the deprecated tables and new tables, see [Deprecated Tables](deprecated-tables.md).
 
 <!--
 This change introduces several breaking changes. For more information about resolving the changes, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md). To complete this task, you modify your base application AL source, and compile a new extension.
@@ -63,7 +63,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 1. Make backup of the database.
 2. Make sure that you have the extension packages for all published extensions.
 
-    You'll need these packages later to publish and install the extensions again.
+    You need these packages later to publish and install the extensions again.
 
 3. (Single-tenant only) Uninstall all extensions from the old tenants.
 
@@ -182,7 +182,7 @@ Compile all published extensions against the new platform.
 
 1. (Multitenant only) Mount the tenant to the new Business Central Server instance.
 
-    You'll have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
+    You have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
  
 2. Synchronize the tenant.
   
@@ -216,7 +216,7 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
 
 2. (Upgrading from 15.3 and later) Install the Application extension.
 
-    This extension was introduced in 15.3. For more information about it see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+    This extension was introduced in 15.3. For more information about it, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
     ```powershell
     Install-NAVApp -ServerInstance <server instance> -Name "Application" -Version <extension version>
@@ -284,7 +284,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
 
 
-## See Also
+## See also
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Business Central 14.X to 15.X compatibility matrix](upgrade-v14-v15-compatibility.md)

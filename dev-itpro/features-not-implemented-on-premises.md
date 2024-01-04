@@ -11,6 +11,8 @@ ms.date: 06/13/2022
 ---
 # Features not implemented in on-premises deployments of [!INCLUDE[prod_long](includes/prod_long.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article lists features that are available in [!INCLUDE[prod_short](includes/prod_short.md)] but not in on-premises deployments. The article is divided into two sections:
 
 - The first section lists features that are available under specific circumstances in on-premises deployments.  
@@ -51,6 +53,7 @@ The following features aren't intended for use in on-premises deployments. There
 |[!INCLUDE[prod_short](includes/prod_short.md)] app for Microsoft Teams|This app connects Teams to your business data in [!INCLUDE[prod_short](includes/prod_short.md)]. The app can't connect to [!INCLUDE[prod_short](includes/prod_short.md)] on-premises. For more information about [!INCLUDE[prod_short](includes/prod_short.md)] online and Teams, see [Business Central and Microsoft Teams Integration](/dynamics365/business-central/across-teams-overview).|
 |Share to Teams|This feature lets Business Central online users copy a link from a page directly into a Teams conversation. For more information, see [Sharing Business Central Records and Page Links in Microsoft Teams](/dynamics365/business-central/across-working-with-teams). |
 |Connect to Shopify|Online tenants can connect their Shopify store (or stores) with Business Central and maximize their business productivity. The Shopify connector is not supported for on-premises deployments. For more information, see [Get Started with the Shopify Connector](/dynamics365/business-central/shopify/get-started).|
+|Copilot|Copilot in Business Central is available exclusively for Business Central online. Copilot is the AI-powered assistant that helps people across your organization unlock their creativity and automate tedious tasks. For example, see [Marketing text suggestions](/dynamics365/business-central/ai-overview) and [Bank account reconciliation assist](/dynamics365/business-central/bank-reconciliation-with-copilot).|
 
 ## See Also
 

@@ -1,6 +1,6 @@
 ---
 title: Deprecated Features in the Base App
-description: Describes the features that have been moved, removed, or replaced in the W1 version. 
+description: Describes the features that have been moved, removed, or replaced in the W1 version.
 author: brentholtorf
 ms.author: bholtorf
 ms.date: 08/23/2023
@@ -11,9 +11,35 @@ ms.custom: bap-template
 
 # Deprecated Features in the Base App
 
-This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
+This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
+## Changes in 2023 release wave 2
+
+The following features are marked as `obsolete:pending` in 2023 release wave 2.
+
+### Legacy time sheets experience
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| You can use time sheets in Business Central to track absence, and to track time and resources that are spent on a project. In 2021 Release Wave 1 we introduced a new experience where we converted time sheet pages to document pages (instead of worksheets). Using document pages lets you access time sheets on mobile devices. We're making the legacy experience obsolete in 2023 Wave 2 (to be removed in 2024 Wave 2) and enabling the new experience as the default for all new customers. To learn about the replacement feature, go to [Use Time Sheets](/dynamics365/business-central/projects-how-use-time-sheets). |
+
+### G/L entry aggregations when posting invoices
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced|The **Invoice Post. Buffer** table is replaced by the use of the **Invoice Posting** interface. The replacement helps resolve extensibility issues for the legacy **Invoice Post. Buffer** table. You can now use your own implementation of G/L invoice posting.
+If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to [Extending G/L Entry Aggregations When Posting Invoices](/dynamics365/business-central/dev-itpro/developer/devenv-invoice-posting-example).|
+
+### Exchange Rates Adjustment report
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced|The legacy Exchange Rates Adjustment Report is being replaced by a new capability that increases extensibility and makes it easier to comply with local and industry-specific requirements. It also gives you more control over exchange rate adjustments with a posting preview and how dimension values are post when you adjust exchange rate, and better reporting. To learn more about the new capabilities, go do [Adjusting Exchange Rates](/dynamics365/business-central/finance-how-update-currencies#adjusting-exchange-rates).
+<!--If you're a developer and want to learn more about how to use the new extensible exchange rates, go to <add link to output of related documentation deliverable on exchange rates adjustment extensiblitiy-->.
 
 ## Changes in 2023 release wave 1
 
@@ -23,7 +49,7 @@ The following features are marked as `obsolete:pending` in 2023 release wave 1.
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| Businesses in all countries can benefit from the ability to review general ledger entries before posting them. In a future release, we'll deprecate the country-specific feature and replace it with one that's available in all country versions. After the feature is deprecated, you can use it to access previous reviews, but not to do new reviews. We'll archive your data according to local requirements. To learn about the replacement feature, go to [Review Amounts in General Ledger Accounts](/dynamics365/business-central/finance-review-accounts).  |
+|Replaced| Businesses in all countries/regions can benefit from the ability to review general ledger entries before posting them. In a future release, we'll deprecate the country-specific feature and replace it with one that's available in all country versions. After the feature is deprecated, you can use it to access previous reviews, but not to do new reviews. We'll archive your data according to local requirements. To learn about the replacement feature, go to [Review Amounts in General Ledger Accounts](/dynamics365/business-central/finance-review-accounts).  |
 
 ### User groups
 
@@ -59,7 +85,7 @@ The following feature is marked as `obsolete:pending` in 2022 release wave 1.
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Removed | Over the years, XBRL has become more than just tagging your financial statement. It's seen improvements in the level of reporting detail, schemas are more flexible in their design, and ESAF has added customization capabilities. This development has meant that the XBRL implementations in the countries we support are diverse, and often complex. For example, taxonomies with hundreds of schema and linkbase files have become the norm. This complexity has made XBRL reporting a task that is better managed by either dedicated software or by service providers. <br><br> We recommend that you use these service providers. Alternatively, if you have the resources in-house, acquire a dedicated XBRL reporting tool. The XBRL org provides a list of tools and services. For more information, see [Tools and Services](https://www.xbrl.org/the-standard/how/tools-and-services/).<br><br> Currently, we expect to fully remove support for XBRL in 2023 release wave 1.|
+|Removed | Over the years, XBRL has become more than just tagging your financial statement. It's seen improvements in the level of reporting detail, schemas are more flexible in their design, and ESAF has added customization capabilities. This development has meant that the XBRL implementations in the countries/regions we support are diverse, and often complex. For example, taxonomies with hundreds of schema and linkbase files have become the norm. This complexity has made XBRL reporting a task that is better managed by either dedicated software or by service providers. <br><br> We recommend that you use these service providers. Alternatively, if you have the resources in-house, acquire a dedicated XBRL reporting tool. The XBRL org provides a list of tools and services. For more information, see [Tools and Services](https://www.xbrl.org/the-standard/how/tools-and-services/).<br><br> Currently, we expect to fully remove support for XBRL in 2023 release wave 1.|
 
 ### Intercompany Setup page
 
@@ -171,8 +197,9 @@ Some features are available only under specific circumstances, or not at all int
 [Deprecated Features in the Swiss Version](deprecated-features-ch.md)  
 [Deprecated Features in the UK Version](deprecated-features-uk.md)  
 [Deprecated Features in the United States Version](deprecated-features-us.md)  
-[Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](deprecated-fields.md)
+[Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](deprecated-fields.md)  
 [Deprecated Tables](deprecated-tables.md)  
-[AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)  
+[ALAppExtensions repository (legacy)](https://github.com/microsoft/ALAppExtensions)  
+[BCApps repository (substitute for ALAppExtensions)](https://github.com/microsoft/BCApps)  
 [Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
-[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  

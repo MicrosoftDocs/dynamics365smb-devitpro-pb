@@ -1,5 +1,5 @@
 ---
-title: Analyzing Table Index Trace Telemetry
+title: Analyze table index trace telemetry
 description: Learn about the telemetry for changes made to table indexes  
 author: jswymer
 ms.topic: conceptual
@@ -7,15 +7,17 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, table keys, indexes, keys, indexes
-ms.date: 04/14/2021
+ms.date: 12/22/2023
 ms.author: jswymer
 ---
 
-# Analyzing Table Index Trace Telemetry
+# Analyze Table Index Trace Telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 1, version 18.0 and later
 
-The table index trace gathers data when a index is added to, modified, or removed from a base table by a table extension.  
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
+The table index trace gathers data when an index is added to, modified, or removed from a base table by a table extension.  
 
 In AL, an index is defined by a key, which can include one or more table fields. A key in a table extension object can include either fields from the base table or fields from the table extension object itself. A key that includes base tables fields is added as an index on the base table in the SQL database. For more information, see [Table Keys](../developer/devenv-table-keys.md).
 
@@ -45,7 +47,7 @@ Occurs when an index was added or modified on the base table by key in a table e
 | alObjectName | Specifies the name of table that the index was added or changed. |
 | extensionId | Specifies the ID of the extension that added the index. |
 | extensionName | Specifies the name of the extension that added or changed the index. |
-| extensionPublisher | Specifies the publisher of the extension that added added or changed the index. |
+| extensionPublisher | Specifies the publisher of the extension that added or changed the index. |
 | keyMaintainSIFTIndex | Specifies whether the index's [MaintainSIFTIndex property](../developer/properties/devenv-maintainsiftindex-property.md) is  `true` or `false`. |
 | keyMaintainSQLIndex | Specifies whether the index's [MaintainSQLIndex property](../developer/properties/devenv-maintainsqlindex-property.md) is  `true` or `false`. |
 | keyFields | Specifies the table fields that are included in the index. |
@@ -57,7 +59,7 @@ The following table explains other custom dimensions that are common to all tabl
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|

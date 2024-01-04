@@ -1,6 +1,6 @@
 ---
 title: "Session.StartSession(var Integer, Integer [, Text] [, var Record]) Method"
-description: "Starts a session without a UI and runs the specified codeunit."
+description: "Starts a session without a UI and runs the specified codeunit (sessionID version)."
 ms.author: solsen
 ms.custom: na
 ms.date: 03/24/2022
@@ -59,14 +59,8 @@ Each background session has the same impact on resources as a regular user sessi
 
 ### Dialog box behavior
 
-The following table describes how dialog boxes are handled in a background session, which has no UI.  
-
-|Method that creates the dialog box|Behavior|  
-|------------------------------------------|--------------|  
-|[Dialog.Confirm](../dialog/dialog-confirm-method.md)|-   Dialog box is suppressed.<br />-   The following error occurs on the [!INCLUDE[prod_short](../../includes/prod_short.md)] instance: **[!INCLUDE[prod_short](../../includes/prod_short.md)] attempted to issue a client callback to show a confirmation dialog box.**|  
-|[Dialog.Error](../dialog/dialog-error-string-joker-method.md)|-   Dialog box is suppressed.<br />-   AL code execution ends.<br />-   The error is logged to the event log of the [!INCLUDE[prod_short](../../includes/prod_short.md)] instance.<br />-   The error is added to the **Comments** field of the **Session Event** table.|  
-|[Dialog.Message](../dialog/dialog-message-method.md)|-   Dialog box is suppressed.<br />-   The message is recorded in the event log of the computer that is running [!INCLUDE[prod_short](../../includes/prod_short.md)] instance. The log entry has type Information and includes the context of the message.|  
-|[Dialog.Open](../dialog/dialog-open-method.md)|-   Dialog box is suppressed.<br />-   Dialog box text is not displayed or logged.|  
+[!INCLUDE[dialog_exceptions_in_non_ui_sessions](../../../includes/include-dialog-exceptions-in-non-ui-sessions.md)]
+ 
 
 ## Example
 

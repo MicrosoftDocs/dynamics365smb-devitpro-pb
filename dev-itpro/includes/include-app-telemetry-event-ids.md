@@ -1,5 +1,8 @@
 | Event ID | Area | Message |
 |----------|-------------|-----------------|
+|AL0000LA2|Changelog configuration|[Field added to changelog configuration](../administration/telemetry-changelog-configuration-trace.md#added)|
+|AL0000LA1|Changelog configuration|[Field logging changed in changelog configuration](../administration/telemetry-changelog-configuration-trace.md#changed)|
+|AL0000LA3|Changelog configuration|[Field removed from changelog configuration](../administration/telemetry-changelog-configuration-trace.md#removed)|
 |AL0000CTV|Email|[Email sent successfully](../administration/telemetry-email-trace.md#success)|
 |AL0000CTP|Email|[Failed to send email](../administration/telemetry-email-trace.md#failed)|
 |AL0000GKK|Email|[Authenticated to SMTP server](../administration/telemetry-email-trace.md#smtp_auth)|

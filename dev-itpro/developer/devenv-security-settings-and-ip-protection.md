@@ -15,6 +15,8 @@ ms.author: solsen
 
 [!INCLUDE[2022_releasewave2_changed](../includes/2022_releasewave2_changed.md)]
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 When you develop an extension, your code is protected against downloading or debugging by default. Read below about adding Intellectual Property (IP) protection against downloading or debugging into an extension to see the source code in the extensions.
 
 The extension development package provides a pre-configured setting for protection against viewing or downloading the code of the extensions. However, this setting can also be controlled in the manifest; the `app.json` file.
@@ -31,7 +33,7 @@ When you start a new project, an `app.json` file is generated automatically, whi
 ```
 
 > [!NOTE]  
-> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it's generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above. You can always override this for your AppSource aåå or per-tenant extension by changing the setting.
+> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it's generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above. You can always override this for your AppSource app or per-tenant extension by changing the setting.
 
 > [!IMPORTANT]  
 > The **AL: Go!** template sets the `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile` options in the `resourceExposurePolicy` setting to `true`. 

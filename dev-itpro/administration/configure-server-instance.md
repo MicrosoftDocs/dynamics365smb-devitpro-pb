@@ -2,13 +2,16 @@
 title: Microsoft Dynamics 365 Business Central Server Configuration
 description: Configure and modify settings in the Setup or Installed Business Central Server using the Administration Console and PowerShell Cmdlets.
 author: jswymer
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 03/17/2023
+ms.date: 09/05/2023
 ms.author: jswymer
+ms.reviewer: jswymer
+ms.custom: bap-template
 ---
 # Configuring Business Central Server
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 When you run [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Setup and install [!INCLUDE[server](../developer/includes/server.md)], you provide information that is then used as the configuration for the default [!INCLUDE[server](../developer/includes/server.md)] instance. This information is stored in a configuration file for the server instance called CustomSetting.config. The default location of the CustomSettings.config file is *[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Service*. 
 
@@ -28,7 +31,7 @@ You configure the default instance of [!INCLUDE[server](../developer/includes/se
 
 After you specify an installation option or customize your component list, the **Specify parameters** pane is displayed in Setup. The list of parameters that you see depends on which components you've selected for configuration. Setup provides a short description for each parameter. 
 
-## Configuring [!INCLUDE[server](../developer/includes/server.md)] After Installation
+## Configuring [!INCLUDE[server](../developer/includes/server.md)] after installation
   
 After you install [!INCLUDE[server](../developer/includes/server.md)], you can change the configuration settings in the CustomSettings.config file of a [!INCLUDE[server](../developer/includes/server.md)] instance in the following ways:  
 
@@ -60,7 +63,7 @@ This section describes all the configuration settings for a [!INCLUDE[server](..
 - The **Setting** column displays the name of the setting as it appears in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 - The **Key Name** column displays the name of the setting as it appears in the CustomSettings.config file. It's also the name for the setting when you run the Set-NAVServerConfiguration cmdlet.
 
-## General Settings
+## General settings
   
 The following table describes fields on the **General** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
@@ -115,7 +118,7 @@ The following table describes fields on the **General** tab in the [!INCLUDE[adm
 |*not available*|PTESymbolReferenceCacheTTLInHours|Specifies the lifespan, in hours, of entries in the PTEn symbol reference cache.<br /><br /> The default value is the recommended value for deployments, so you typically won't change this setting.<br /><br />Default: 24<br /><br />**INTRODUCED IN:** Version 21.0|
 |*not available*|XmlMetadataCacheSize|For internal use only.<br /><br />Default: 500|
 
-##  <a name="Database"></a> Database Settings
+##  <a name="Database"></a> Database settings
   
 The following table describes fields on the **Database** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
@@ -131,11 +134,13 @@ The following table describes fields on the **Database** tab in the [!INCLUDE[ad
 |Disable SQL Query Hint FORCE ORDER|DisableQueryHintForceOrder|Specifies whether the FORCE ORDER Query Hint is used in queries. FORCE ORDER instructs the query optimizer to preserve the join order that is indicated by the query syntax.<br /><br />If you clear the check box (`false`), the FORCE ORDER is used in queries.<br /><br />For more information, see [Configuring Query Hints for Optimizing SQL Server Performance](sql-server-query-hints.md).<br /><br /> Default: FORCE ORDER is disabled \(check box is selected\)<br />Dynamically Updatable: Yes|
 |Disable SQL Query Hint LOOP JOIN|DisablQueryHintLoopJoin|Specifies whether the LOOP JOIN Query Hint is used in queries. LOOP JOIN instructs the query optimizer to use LOOP JOIN for all join operations in the whole query.<br /><br />If you clear the check box (`false`), the LOOP JOIN hint is used in queries.<br /><br />For more information, see [Configuring Query Hints for Optimizing SQL Server Performance](sql-server-query-hints.md).<br /><br /> Default: LOOP JOIN is disabled \(check box is selected\)<br />Dynamically Updatable: Yes|
 |Disable SQL Query OPTIMIZE FOR UNKNOWN|DisableQueryHintOptimizeForUnknown|Specifies whether the OPTIMIZE FOR UNKNOWN Query Hint is used in queries. OPTIMIZE FOR UNKNOWN instructs the query optimizer to use statistical data instead of the initial values for all local variables when the query is compiled and optimized, including parameters created with forced parameterization.<br /><br />If you clear the check box (`false`), the OPTIMIZE FOR UNKNOWN hint is used in queries.<br /><br />For more information, see [Configuring Query Hints for Optimizing SQL Server Performance](sql-server-query-hints.md).<br /><br /> Default: OPTIMIZE FOR UNKNOWN is disabled \(check box is selected\)<br />Dynamically Updatable: Yes|  
+|Degree Of Parallelism For Upgrade|DegreeOfParallelismForUpgrade| Sets the [degrees of parallelism](/sql/database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option) used for rebuilding indexes during upgrades. The setting applies only if the setting is set higher than the database’s MAXDOP setting.<br /><br /> Default: 3 <br />Dynamically Updatable: No <br /><br />**APPLIES TO:** Version 22.7 and later, version 23.1 and later.|
 |Enable Buffered Insert|BufferedInsertEnabled|Specifies whether to buffer rows that are being inserted into a SQL Server database table.<br /><br /> When this parameter is enabled, up to 5 rows will be buffered in the table queue before they are inserted into the table.<br /><br /> To optimize performance in a production environment, you should enable this parameter. In a test environment, you can disable this parameter to help debug failures that occur when you insert rows in an SQL database table. For more information, see [Bulk Inserts](optimize-sql-bulk-inserts.md).<br /><br /> Default: Enabled<br />Dynamically Updatable: No|  
 |Enable Deadlock Monitoring|EnableDeadlockMonitoring|Specifies whether the server will emit data about database deadlocks, which can then be collected in an Azure Application Insights resource. For more information about the telemetry, see [Analyzing Database Deadlock Trace Telemetry](telemetry-database-deadlocks-trace.md).<br /><br />The calculation of data adds load on the SQL database, so we recommend enabling this setting for diagnostic and troubleshooting purposes.<br /><br />Default: Disabled <br />Dynamically Updatable: No<br /><br />**APPLIES TO:** Version 20.0 and later |
 |Enable Encryption on SQL Server Connections|EnableSqlConnectionEncryption|Specifies whether the SQL connect string should request encryption when connecting to SQL Server services.<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|
 |Enable Lock Timeout Monitoring|EnableLockTimeoutMonitoring|Specifies whether database lock timeout monitoring is enabled. When enabled, the server instance will emit telemetry about lock timeouts. The data can then be collected in an Azure Application Insights resource. For more information about the telemetry, see [Analyzing Database Lock Timeout Trace Telemetry](telemetry-database-locks-trace.md).<br /><br />The calculating the data adds load on the SQL database, so we recommend enabling this setting for diagnostic and troubleshooting purposes.<br /><br />Default: Disabled <br />Dynamically Updatable: No<br /><br />**APPLIES TO:** Lock timeout monitoring was introduced in version 16.0. This server setting was added to versions 18.10, 19.4, and all later versions. Before the setting was introduced, lock timeout monitoring was always enabled. |
-|Enable SQL Read-Only Replica Support|EnableSqlReadOnlyReplicaSupport|Specifies whether the server instance is allowed to connect to an SQL Server secondary read-only replica of an Always On availability group.<br /><br />Using read-only replicas helps balance workloads and improve performance. To take advantage of this setting, the database must be set up with read-scale out support. For more information, see [Using Read Scale-Out for Better Performance](database-read-scale-out-overview.md)<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|    
+|Enable SQL Read-Only Replica Support|EnableSqlReadOnlyReplicaSupport|Specifies whether the server instance is allowed to connect to an SQL Server secondary read-only replica of an Always On availability group.<br /><br />Using read-only replicas helps balance workloads and improve performance. To take advantage of this setting, the database must be set up with read-scale out support. For more information, see [Using Read Scale-Out for Better Performance](database-read-scale-out-overview.md)<br /><br /> Default: Not enabled<br />Dynamically Updatable: No| 
+|-|EnableTriStateLocking|Specifies whether AL-based read operations following write operations are done optimistically, instead of being done with a strict consistency level and low levels of concurrency. [Learn more about Tri-state locking](../developer/devenv-tri-state-locking.md)<br /><br /> Default: Enabled (`true`)<br />Dynamically Updatable: No| 
 |Enable Trust of SQL Server Certificate|TrustSQLServerCertificate|Specifies whether [!INCLUDE[server](../developer/includes/server.md)] should trust the SQL Server certificate.<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|
 |Search Timeout|SearchTimeout|Specifies the time (in seconds) that a search operation on lists in the client will continue until it's stopped. When the limit is reached, the following message displays in the client: **Searching for rows is taking too long. Try to search or filter using different criteria.**<br /><br />Time format: hh:mm:ss<br />Default: 00:00:10<br />Dynamically Updatable: Yes|
 |SQL Bulk Import Batch Size|SqlBulkImportBatchSize|Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance, but also lowers the amount of memory that the server instance consumes. If the database is on SQL Server 2016 or later, a low value can lead to large data files. If you don't want to use batching, specify 0.<br /><br /> Default: 448<br />Dynamically Updatable: No|    
@@ -148,7 +153,7 @@ The following table describes fields on the **Database** tab in the [!INCLUDE[ad
 
 \* **APPLIES TO:** Business Central 2020 release wave 2 and later
 
-##  <a name="ClientServices"></a> Client Services Settings
+##  <a name="ClientServices"></a> Client services settings
   
 The following table describes fields on the **Client Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
@@ -161,7 +166,7 @@ The following table describes fields on the **Client Services** tab in the [!INC
 |Exchange Auth. Metadata Location|ExchangeAuthenticationMetadataLocation|Specifies the URLs for the Microsoft Exchange authentication metadata document of the services or authorities that are trusted to sign Exchange identity tokens.<br /><br /> This setting is used for setting up the Office Add-Ins for Outlook. For more information about the Office Add-ins, see [Setting Up the Office Add-Ins for Outlook Integration](Setting-up-Office-Add-Ins-Outlook-Inbox.md)<br /><br />The value is URL that is used to confirm the identity of the signing authority when using Exchange Authentication. The URL is compared to the Exchange authentication metadata document URL in the Exchange identity token. The scheme and host part of the two URLs must match to pass authentication. Paths in the URLs require only a partial match.<br /><br /> With a multitenant server instance, the **Exchange Auth. Metadata Location** setting \(if any\) on the tenant will overrule the value of this setting.<br /><br /> Value:<br />- One or more valid URLs. A URL must include the scheme, such as https:// or https://, and the host name.<br />- Separate multiple URLs with a comma.<br /> - Wildcards \(\*\) in URLs are supported.<br /> Default: https://outlook.office365.com/<br />Dynamically Updatable: No|  
 |Idle Client Timeout|ClientServicesIdleClientTimeout|The interval of time that a [!INCLUDE[server](../developer/includes/server.md)] client session can remain inactive before the session is dropped.<br /><br /> Time interval format: \[dd.\]hh:mm:ss\[.ff\]<br /><br /> Where:<br />dd: days<br /> hh: hours<br /> mm: minutes<br /> ss: seconds<br /> ff: hundredths of a second<br /><br /> Set **Idle Client Timeout** to equal or lower than the **Keep Alive Interval**, to enable **Idle Client Timeout**. You can also use **MaxValue** as a value to indicate no time-out.<br /><br /> Default: MaxValue<br />Dynamically Updatable: Yes|  
 |  Keep Alive Interval  | ClientServicesKeepAliveInterval| Specifies the time interval between keep-alive messages that are sent from the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] to the server instance. This setting is used to keep inactive sessions alive until the time that is specified by the **Idle Client Timeout** setting expires. You should use a time interval that is less than the **Idle Client Timeout** setting, to hold the session constantly alive. For more information, see [Understanding Session Timeouts](understanding-session-timeouts.md).<br /><br />Time interval format: [dd.]hh:mm:ss[.ff] <br /><br />Default: 120 <br />Dynamically Updatable: No | 
-|Max Concurrent Connections|ClientServicesMaxConcurrentConnections|Specifies the maximum number of concurrent client connections that the current [!INCLUDE[server](../developer/includes/server.md)] instance accepts. You can use **MaxValue** as a value to indicate no limit.<br /><br /> Default: 500<br />Dynamically Updatable: No|
+|Max Concurrent Connections|ClientServicesMaxConcurrentConnections|Specifies the maximum number of concurrent client connections that the current [!INCLUDE[server](../developer/includes/server.md)] instance accepts. You can use **MaxValue** as a value to indicate no limit.<br /><br /> Default: 4000<br />Dynamically Updatable: No|
 |Max Items in Object Graph|ClientServicesMaxItemsInObjectGraph|The maximum number of objects to serialize or deserialize.<br /><br /> Default: 512<br />Dynamically Updatable: No|  
 |Max Number of Orphaned Connections|ClientServicesMaxNumberOfOrphanedConnections|Specifies the maximum number of orphaned connections to be kept alive at the same time for the time that is specified by **ReconnectPeriod**.<br /><br /> A connection is orphaned when the client is involuntarily disconnected from [!INCLUDE[server](../developer/includes/server.md)].<br /><br /> You can also use **MaxValue** as a value to indicate no limit.<br /><br /> Default: 20<br />Dynamically Updatable: No| 
 |Max Upload Size|ClientServicesMaxUploadSize|The maximum size of files that can be uploaded to or downloaded from [!INCLUDE[server](../developer/includes/server.md)], in megabytes. Use this setting to avoid out-of-memory errors. <br> If you experience errors when handling files, there are two settings to check: <br> - The Dynamics 365 Business Central service tier setting; in the CustomSettings.config file, check the `ClientServicesMaxUploadSize` setting. <br> - The IIS setting; in IIS Manager, on the Dynamics 365 Business Central instance, select **Request Filtering**, then select **Edit Feature Settings** in the right pane, and in the **Edit Request Filtering Settings** window, modify the **Maximum allowed content length (Bytes)** setting, which has a default value of 30 MB. <br /><br /> Default: 150<br />Dynamically Updatable: No|  
@@ -176,7 +181,7 @@ The following table describes fields on the **Client Services** tab in the [!INC
 |Web Client Base URL|PublicWebBaseUrl|Specifies the root of the URLs that are used to open hyperlinks to pages and reports in the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. For example, you can change the value if you want to change the externally facing endpoint.<br /><br /> The base URL must have the following syntax:<br /><br />`http[s]://[hostname]:[port]/[webserverinstance]`<br /><br />This field maps to the `PublicWebBaseUrl` setting in the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br />Default: The URL of the Web client<br />Dynamically Updatable: No|  
 |Windows Client Base URL|PublicWinBaseUrl|Specifies the root of the URLs that are used to open hyperlinks to pages and reports in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. For example, you can change the value if you want to change the externally facing endpoint.<br /><br /> The base URL must have the following syntax:<br /><br />`DynamicsNAV://[hostname]:[port]/[instance]/`<br /><br /> This field maps to the `PublicWinBaseUrl` setting in the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br />Default: The URL of the Windows client<br />Dynamically Updatable: No|  
 
-##  <a name="SOAPServices"></a> SOAP Services Settings
+##  <a name="SOAPServices"></a> SOAP services settings
   
  The following table describes fields on the **SOAP Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
@@ -195,12 +200,19 @@ The following table describes fields on the **Client Services** tab in the [!INC
 
 \* **APPLIES TO:** Business Central 2020 release wave 2 and later
 
-##  <a name="ODataServices"></a> OData Services Settings
+##  <a name="ODataServices"></a> OData services settings
   
 The following table describes fields on the **OData Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------|--------|-------------------------------------------------------------------|
+||APISubscriptionEnabled|Specifies whether subscriptions are enabled for the API endpoint.<br /><br /> Default: Enabled<br />Dynamically Updatable: No|
+||APISubscriptionExpirtation|Specifies the number of days that an API subscription lasts before it expires.<br /><br /> Default: 3<br />Dynamically Updatable: No|
+||APISubscriptionNotificationUrlTimeout|Specifies the amount of time (in milliseconds) that the notification server has to respond to a verification request.<br /><br /> Default: 5000<br />Dynamically Updatable: No|
+||APISubscriptionSendingNotificationTimeout|Specifies the amount of time (in milliseconds) that the notification server has to respond to a notification message.<br /><br /> Default: 30000<br />Dynamically Updatable: No|
+||APISubscriptionDelayTime|Specifies the amount of time (in milliseconds) that we need to wait before we can start processing notificatoins.<br /><br /> Default: 30000<br />Dynamically Updatable: No|
+||APISubscriptionMaxNoOfNotifications|Specifies the maximum number of notifications that can be delivered per entity.<br /><br /> Default: 1000<br />Dynamically Updatable: No|
+||APISubscriptionMaxNoOfSubscriptions|Specifies the maximum number of subscriptions that can be created per tenant.<br /><br /> Default: 1000<br />Dynamically Updatable: No|
 |Enable Add-in Annotations|ODataEnableExcelAddInAnnotations|Specifies whether Excel add-in annotations should be provided in OData metadata.<br /><br /> Default: Enabled<br />Dynamically Updatable: No|
 |Enable API Services|ApiServicesEnabled|Specifies whether API web services are enabled for this server instance.<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|
 |Enable OData Services|ODataServicesEnabled|Specifies whether OData web services are enabled for this [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br /> Default: Enabled<br />Dynamically Updatable: No|
@@ -226,7 +238,7 @@ The following table describes fields on the **OData Services** tab in the [!INCL
 > [!IMPORTANT]  
 >  The maximum permitted size of an OData web services request is specified by the **Max Message Size** option on the **SOAP Services** tab.  
 
-##  <a name="NASServices"></a> NAS Services Settings
+##  <a name="NASServices"></a> NAS services settings
   
 The following table describes fields on the **NAS Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
@@ -242,7 +254,7 @@ The following table describes fields on the **NAS Services** tab in the [!INCLUD
 |Startup Method|NASServicesStartupMethod|Specifies the method that will be called in the **NASStartupCodeunit**.<br /><br /> Example values:<br /><br />                      **""**<br /> If no start method is specified \(null string\), the OnRun trigger is called.<br /><br />**StartNAS**<br /> NAS services run the StartNAS method in the NAS Startup Codeunit.<br /><br /> Default: <br />Dynamically Updatable: No|  
 
 
-##  <a name="ManagementServices"></a> Management Services Settings
+##  <a name="ManagementServices"></a> Management services settings
   
 The following table describes fields on the **Management Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
@@ -256,7 +268,7 @@ The following table describes fields on the **Management Services** tab in the [
 |*not avialable*|ManagementApiServicesSSLEnabled|Specifies whether SSL (HTTPS) is enabled for the management API services port. <br /><br />Default: Not enabled<br />Dynamically Updatable: No<br /><br />**INTRODUCED IN:** Version 21|
 
 
-## Azure Key Vault Client Identity Tab Settings
+## Azure key vault client identity settings
 
 The following table describes fields on the **Azure Key Vault Client Identity** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
@@ -269,7 +281,7 @@ These settings are used when you want to use Azure Key Vaults to store extension
 |  Client Certificate Thumbprint|AzureKeyVaultClientCertificateThumbprint|  Specifies the thumbprint of the certificate used by the key vault reader application in Azure.<br /><br />Default: My<br />Dynamically Updatable: No|
 |  Client ID  |AzureKeyVaultClientId|  Specifies the application (client) ID of the key vault reader application in Azure. The value is a GUID.<br /><br />Default: 00000000-0000-0000-0000-000000000000 <br />Dynamically Updatable: No |
 
-## <a name="keyvault"></a>Azure Key Vault Extension Secrets Tab Settings
+## <a name="keyvault"></a>Azure key vault extension secrets settings
 
 The following table describes fields on the **Azure Key Vault Extension Secrets** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
@@ -297,7 +309,7 @@ The settings in this tab configure the [!INCLUDE[server](../developer/includes/s
 |  WS-Federation Login Endpoint  | WSFederationLoginEndpoint| Specifies the URL for the federation sign-on page that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] redirects to when configured for single sign-on.<br /><br />You must specify a URL in the following format:<br /><br /> `https://login.microsoftonline.com/[AADTENANTID]/wsfed?wa=wsignin1.0%26wtrealm=...%26wreply=....`<br /><br /> The placeholder [AADTENANTID] represents the GUID of your Microsoft Entra tenant. If the server instance has to support multiple Microsoft Entra tenants, then the **Microsoft Entra tenant ID** parameter that is specified when mounting a tenant replaces the placeholder.<br /><br />Default: <br />Dynamically Updatable: No|
 |  WS-Federation Metadata Location  | ClientServicesFederationMetadataLocation| Specifies the URL for the federation metadata document that describes the configuration information for your Microsoft Entra tenant. The federation metadata document is used to validate the security tokens that the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] receive, and to establish a trust relationship with between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and an application that you've added to Microsoft Entra ID.<br /><br /> You must specify a URL in the following format:<br /><br />`https://login.microsoftonline.com/[AADTENANTID]/FederationMetadata/2007-06/FederationMetadata.xml`<br /><br />The placeholder [AADTENANTID] represents the GUID of your Microsoft Entra tenant. If the server instance has to support multiple Microsoft Entra tenants, then the Microsoft Entra tenant ID parameter that is specified when mounting a tenant replaces the placeholder. <br /><br /> This parameter is relevant only when **Credential Type**, on the **General** tab, is set to **AccessControlService**. For more information, see [Authenticating Users with Microsoft Entra ID](Authenticating-Users-with-Azure-Active-Directory.md).<br /><br />Default: <br />Dynamically Updatable: No<br><br>**APPLIES TO:** Version 21 and earler. Deleted and replaced by the `ADOpenIdMetadataLocation` setting in version 22.0. |  
 
-## <a name="encryption"></a>Data Encryption Settings
+## <a name="encryption"></a>Data encryption settings
 
 The following table describes fields on the **Data Encryption** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
@@ -308,7 +320,7 @@ For more information about data encyrption, see [Data Encryption](../developer/d
 |  Encryption Key Provider  |EncryptionProvider| Specifies where the encryption key used to encrypt data in the database is stored, either **LocalKeyFile** or **AzureKeyVault** values. If you use **AzureKeyVault**, see the **Azure Key Vault Encryption Provider** tab settings. <br /><br />Default: LocalKeyFile<br />Dynamically Updatable: No|
 |  Key URI  | AzureKeyVaultKeyUri| Specifies the URI of the key in the Key Vault encryption provider setup. <br /><br />Default:  <br />Dynamically Updatable: No |
 
-## <a name="Task"></a>Task Scheduler Settings
+## <a name="Task"></a>Task scheduler settings
 
 The following table describes fields on the **Task Scheduler** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
@@ -322,12 +334,12 @@ The task scheduler processes jobs and other processes on a scheduled basis. For 
 |  Maximum Concurrent Running Tasks  | TaskSchedulerMaximumConcurrentRunningTasks| Specifies the maximum number of tasks that can run simultaneously on the server instance.<br /><br />The value that you specify will depend on the hardware (CPUs) of the deployment environment and what you want to prioritize: client performance or scheduled tasks (such as job queue entries). The setting is particularly relevant when the server instance is used for both scheduled tasks and client services. If there are many jobs running at the same time, you might experience that the response time for clients gets slower. In which case, you could decrease the value. However, if the value is too low, it might take longer than desired for scheduled tasks to process. When you've a dedicated server instance for scheduled tasks, this setting is less important with respect to client performance. <br /><br />Default: 10 <br />Dynamically Updatable: Yes|
 |  System Task Start Time  | TaskSchedulerSystemTaskStartTime| Specifies the time of day after which system tasks can start. The time is based on the time zone of the computer that is running the server instance. <br /><br />The value has the format hh:mm:ss.<br /><br />Default: 00:00:00 <br />Dynamically Updatable: Yes|
 |  System Task End Time  | TaskSchedulerSystemTaskEndTime| Specifies the time of day after which system tasks can't start. The time is based on the time zone of the computer that is running the server instance. <br /><br />The value has the format hh:mm:ss.<br /><br />Default: 23:59:59 <br />Dynamically Updatable: Yes|
-|*not available*|MaxTaskSchedulerSessionTimeout|Specifies the maximum amount of time that scheduled tasks can run before thay are canceled. If a scheduled task is created with a timeout that is greater than the `MaxTaskSchedulerSessionTimeout` setting, an error similar to the following error will be returned and the task won't be created: **The scheduled task could not be created because the timeout N exceeds the max timeout value.**<br /><br />The value has the format hh:mm:ss. <br /><br />Default:  23:59:59 <br />Dynamically Updatable: Yes<br /><br />**INTRODUCED IN:** Version 22|
+|*not available*|MaxTaskSchedulerSessionTimeout|Specifies the maximum amount of time that scheduled tasks can run before thay are canceled. If a scheduled task is created with a timeout that is greater than the `MaxTaskSchedulerSessionTimeout` setting, an error similar to the following error will be returned and the task won't be created: **The scheduled task could not be created because the timeout N exceeds the max timeout value.**<br /><br />The value has the format hh:mm:ss. <br /><br />Default:  48:00:00 <br />Dynamically Updatable: Yes<br /><br />**INTRODUCED IN:** Version 22|
 |*not available*|XmlMetadataCacheSize|For internal use only.<br /><br />Default: 500|
 
 
 
-## <a name="PBT"></a>Asynchronous Processing Settings
+## <a name="PBT"></a>Asynchronous processing settings
 
 [!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
 
@@ -347,7 +359,7 @@ The following table describes fields on the **Asynchronous Processing** tab in t
 
 For more information about page background tasks, see [Page Background Tasks](../developer/devenv-page-background-tasks.md).
 
-## <a name="Reports"></a>Reports Settings
+## <a name="Reports"></a>Reports settings
 
 The following table describes fields on the **Reports** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
@@ -370,7 +382,7 @@ The following table describes fields on the **Reports** tab in the [!INCLUDE[adm
 
 \* **APPLIES TO:** Business Central 2020 release wave 2 and later
 
-## Query Settings
+## Query settings
 
 The following table describes fields on the **Query** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
@@ -379,7 +391,7 @@ The following table describes fields on the **Query** tab in the [!INCLUDE[admin
 | Max Execution Timeout | QueryTimeout | Specifies the maximum execution time that it can take to generate a query. If exceeded, the query will be canceled by the server. If you don't want a limit, set the value to **MaxValue**.<br /><br />Timeout format: [dd.]hh:mm:ss[.ff]<br /><br />Default: MaxValue<br />Dynamically Updatable: Yes|
 | Max Rows | QueryMaxRows | Specifies the maximum number of rows that can be processed in a query. If exceeded, the query will be canceled by the server. You can also use MaxValue to indicate no limit. If you don't want a limit, set the value to **MaxValue**.<br /><br />Default: MaxValue<br />Dynamically Updatable: Yes|
 
-## Extensions Settings
+## Extensions settings
 
 The following table describes fields on the **Extensions** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
@@ -390,7 +402,7 @@ The following table describes fields on the **Extensions** tab in the [!INCLUDE[
 |Required Extensions|RequiredExtensions|Specifies a list of required extensions that can't be uninstalled by using the **Extension Management** page in the client. The extensions can still be uninstalled by using the [Uninstall-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].<br /><br />You specify an extension by its AppID (which is a GUID). When you've more than one extension, separate each AppID with a semicolon. The AppID for the BaseApp extension is 437dbf0e-84ff-417a-965d-ed2bb9650972 and System Application extension is 63ca2fa4-4f03-4f2b-a480-172fef340d3f. <br /><br /> Default: Blank or "" (empty string)<br />Dynamically Updatable: Yes<br /><br />**APPLIES TO:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 17.0) and later|
 |Solution Version Extension|SolutionVersionExtension|Specifies the ID of the extension whose version number will show as the Application Version on the client's Help and Support page. Typically, you'd use the extension considered to be your solution's base application. If your solution uses the Microsoft Base Application, set the value to `437dbf0e-84ff-417a-965d-ed2bb9650972`. <br /><br /> Default: 00000000-0000-0000-0000-000000000000<br />Dynamically Updatable: Yes|
 
-## <a name="Development"></a>Development Settings
+## <a name="Development"></a>Development settings
 
 The following table describes fields on the **Development** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
@@ -413,7 +425,7 @@ The following table describes fields on the **Development** tab in the [!INCLUDE
 |Port|DeveloperServicesPort|The listening HTTP port for Microsoft Dynamics NAV Developer web services.<br /><br />Valid range: 1 - 65535<br />Default: 7049<br />Dynamically Updatable: No|
 |*not available*|ForceExtensionAllowedTargetLevel| This setting is only used for Business Central on-premises scenarios using Microsoft Entra ID from Visual Studio Code in which case the setting must be set to `true`.<br> This setting is not available from the UI.<br> Default: `false`. For more information, see [Using Microsoft Entra authentication for Business Central on-premises](../developer/devenv-aad-auth-onprem.md).|
 
-## <a name="Compatibility"></a>Compatibility Settings
+## <a name="Compatibility"></a>Compatibility settings
 
 The following table describes settings that you can adjust for compatibility with other systems. In most cases, we don't recommend that you change these settings from their default values.
 
@@ -435,7 +447,7 @@ The following table describes settings that you can adjust for compatibility wit
 
 [!INCLUDE [admin-tlswarning](../developer/includes/admin-tlswarning.md)]
 
-## <a name="Upgrade"></a>Upgrade Settings
+## <a name="Upgrade"></a>Upgrade settings
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
@@ -446,7 +458,20 @@ The following table describes fields on the **Upgrade** tab in the [!INCLUDE[adm
 |Integration Records Table (ID)|IntegrationRecordsTableId|Specifies the ID of the application table that is used to store integration record IDs. This setting only applies when you upgrade from Business Central Spring 2019 (version 14) to Business Central 2019 release wave 2 (version 15). It ensures that current integration record IDs that are used in the application can be used as-is after upgrade. <br /><br />When a database is upgraded, a **SystemId** column will be added to the **Integration Records** table, and each record in the table will be assigned a **SystemId** value. The base application looks to this column to identify integration records. If you specify the **Integration Records Table (ID)** setting, the data upgrade process will set the **SystemId** to the same value as integration record ID; otherwise, the value is randomly assigned by the system. <br /><br />If you aren't upgrading to the Business Central 2019 release wave 2 base application, you can either skip this upgrade step by setting the value to 0. This is the case, when you've a fully customized application or you're only doing a technical upgrade. Or, if you 're using a different integration record table than **5151 Integration Record**, set the value to ID of your custom integration record table. The custom integration record table must include the following columns as a minimum (with exact naming): Integration ID, Record ID, Table ID. <br /> <br />Default: 5151<br />Dynamically Updatable: Yes|
 |*not available*|DestinationAppsForMigration| Specifies the extensions that Microsoft and 3rd-party extensions have a dependency on. The dependencies typically include the base application, system application, and test application. Only use this setting when upgrading from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019. The setting is used during the data upgrade process. If configured, when an extension is published, the server instance will automatically modify the manifest of the extension to include the required dependencies.<br /> <br />Default: <br />Dynamically Updatable: No|
 
-##  <a name="UsingPowerShell"></a> Using [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to Modify Server Instance Settings
+## <a name="external-events"></a>External event settings 
+
+[!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
+
+The following table describes parameters related to the external business events functionality. [Learn more about business events on Business Central](../developer/business-events-overview.md).
+
+|  Setting  |Key Name|  Description  |
+|-----------|--------|---------------|
+|*not applicable*|ExternalEventsEnabledServiceLevel|Specifies whether the business events functionality is enabled at the server level. When disabled, this functionality can't be enabled at the environment level. However, when enabled, it can be overridden (disabled) at the environment level.<br /> <br />Default: Enabled<br />Dynamically Updatable: No|
+|*not applicable*|ExternalEventsEnabledEnvironmentLevel|Specifies whether the business events functionality is enabled by default at the environment level. This setting can be used in conjunction with the 'EnableExternalEvents' environment setting to override behavior for specific environments. If the server setting 'ExternalEventsEnabledServiceLevel' is disabled, however, this setting is ignored. <br /> <br />Default: Enabled<br />Dynamically Updatable: Yes|
+|*not available*|ExternalEventsActivityLogRetentionDays| Specifies the number of days records in the **External Event Activity Log** table are retained.<br /> <br />Default: 7<br />Dynamically Updatable: No|
+|*not available*|ExternalEventsActivityLogCleanupBatchSize| Specifies maximum number of records to remove from the **External Event Activity Log** table during cleanup as a part of a single transaction.<br /> <br />Default: 50000<br />Dynamically Updatable: No|
+
+##  <a name="UsingPowerShell"></a> Using [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to modify server instance settings
   
 The [!INCLUDE[adminshell](../developer/includes/adminshell.md)] includes several `Set-` cmdlets that enable you to create and modify [!INCLUDE[server](../developer/includes/server.md)] instances.
 

@@ -15,13 +15,15 @@ ms.author: jswymer
 
 [!INCLUDE[2022_releasewave1.md](../includes/2022_releasewave1.md)]
 
-When a user gets an error dialog about lack of permissions while working in Business Central, a telemetry signal is emitted. This signal can be logged in an Application Insights resource.
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
+When a user gets an error dialog about lack of permissions while working in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], a telemetry signal is emitted. This signal can be logged in an Application Insights resource.
 
 This telemetry data let's you identify and analyze permission problems that users may experience in Business Central.
 
 ## Permission Error Shown
 
-Occurs when a user gets a permissions-related error message in Business Central when they try to do an operation in the application.
+Occurs when a user gets a permissions-related error message in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] when they try to do an operation in the application.
 
 ### General dimensions
 

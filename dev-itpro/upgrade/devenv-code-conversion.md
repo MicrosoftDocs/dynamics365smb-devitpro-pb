@@ -9,6 +9,8 @@ ms.author: jswymer
 ---
 # Code Conversion from C/AL to AL
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article explains how to convert a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (version 14) C/AL code-customized on-premises solution to AL code.
 
 You'll use this procedure as part of the upgrade process when going from version 14 to a later version, from 18 to 20.
@@ -303,7 +305,7 @@ In this task, you'll create an AL project in Visual Studio code that you'll use 
 
     You might also have to remove references to `SessionList` in ChangeGlobalDimensions.Codeunit.al.
     
-11. Build and compile your project (press Ctrl+Shift+B).
+11. Build and compile your project (select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>).
 
     The AL compiler will issue errors for constructs that aren't valid. Fix any errors that occur, and build again.
 
@@ -543,7 +545,7 @@ When your converted solutions compile to an app, you can deploy and run it. You 
 
 - PowerShell cmdlets as described in [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md), or  
 
-- Publish from within Visual Studio Code by defining the server configuration in launch.json and publish with **Ctrl+F5**. 
+- Publish from within Visual Studio Code by defining the server configuration in launch.json and publish with <kbd>Ctrl</kbd>+<kbd>F5</kbd> . 
 
 ### Publishing to a Docker AL Preview image
 We recently released a Docker AL Preview image as part of the Insider program, containing the BaseApp published as an extension. You can use this to deploy your own modified AL application.
@@ -556,7 +558,7 @@ We recently released a Docker AL Preview image as part of the Insider program, c
 
     - Using the PowerShell cmdlets as described in [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md). 
 
-    - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with **Ctrl+F5**. 
+    - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with <kbd>Ctrl</kbd>+<kbd>F5</kbd> . 
 -->
 ## See Also
 [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md)  

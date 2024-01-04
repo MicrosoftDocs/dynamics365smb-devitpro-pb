@@ -1,6 +1,6 @@
 ---
-title: "Create Runtime Packages for Business Central On-Premises"
-description: "How to create runtime packages used for distribution of extensions."
+title: Create runtime packages for Business Central on-premises
+description: Describes how you can create runtime packages used for distribution of extensions for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 06/03/2022
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Create Runtime Packages for Business Central On-Premises
+# Create runtime packages for Business Central on-premises
 
 If you want to distribute extensions, you can generate runtime packages that don't contain AL code, but only the final artifacts used by the server at runtime. Runtime packages thereby allow you to protect the intellectual property represented by your AL source code. 
 

@@ -1,9 +1,9 @@
 ---
-title: "AL Language extension configuration"
-description: "Description of the settings of the AL Language extension in Business Central."
+title: AL Language extension configuration
+description: Description of the AL Language extension settings in Visual Studio Code for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/28/2023
+ms.date: 08/30/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ The following table describes the user and workspace settings for the AL Languag
 |Browser|Specifies the browser in which to open the [!INCLUDE[prod_short](includes/prod_short.md)] client when launching the application from Visual Studio Code.|
 |Background Code Analysis|Specifies whether the code analysis should be performed in the background. From runtime 11.0, this setting has three different options; <br>`File` (default), which performs analysis in the background<br>`Project`, which forces analysis to be performed on the entire project, with a significant performance penalty - advised only for high-performance machines<br>`None`, which switches off background analysis entirely, so that it'll only run during a full build<br>For more information, see [Code analysis performance configuration](devenv-code-analysis-performance-configuration.md).|
 |Code Analyzers|Sets the list of paths to code analyzers to use for performing code analysis. For example: `"al.codeAnalyzers": ["${AppSourceCop}", "${CodeCop}"]`.|
-|Compilation Options|Specifies the compilation options;  <br>`continueBuildOnError` - specifies if build should continue even if errors are found. The default and recommended value from a performance point of view is `false`. Set the value to `true` to continue building the project, even if errors are found.  It requires `al.incrementalBuild` to be `false`. <br>`delayAfterLastDocumentChange` - specifies the number of milliseconds to wait after the last buffer changes before getting document diagnostics. After changing the value of this option, you must restart Visual Studio Code for it to take effect. Default value is `800`. <br> `delayAfterLastProjectChange` - specifies the number of milliseconds to wait after the last buffer changes before getting complete diagnostics. After changing the value of this option, you must restart Visual Studio Code for it to take effect. Default value is `4000`.  <br> `maxDegreeOfParallelism` - specifies the maximum number of concurrent tasks the compiler should use when compiling the project. Default value is `2`. <br> `parallel` - controls whether to use concurrent builds. Default value is `true`.  <br>`generateReportLayout`- controls whether the compiler will generate Report Layout files when building the package. Default value is `true`.|
+|Compilation Options|Specifies the compilation options;  <br>`continueBuildOnError` - specifies if build should continue even if errors are found. The default and recommended value from a performance point of view is `false`. Set the value to `true` to continue building the project, even if errors are found.  It requires `al.incrementalBuild` to be `false`. <br>`delayAfterLastDocumentChange` - specifies the number of milliseconds to wait after the last buffer changes before getting document diagnostics. After changing the value of this option, you must restart Visual Studio Code for it to take effect. Default value is `800`. <br> `delayAfterLastProjectChange` - specifies the number of milliseconds to wait after the last buffer changes before getting complete diagnostics. After changing the value of this option, you must restart Visual Studio Code for it to take effect. Default value is `4000`.  <br> `maxDegreeOfParallelism` - specifies the maximum number of concurrent tasks the compiler should use when compiling the project. Default value is `2`. <br> `parallel` - controls whether to use concurrent builds. Default value is `true`.  <br>`generateReportLayout`- controls whether the compiler will generate Report Layout files when building the package. Default value is `true`. <br> `outFolder` - Specifies the folder where the compiler should place the resulting .app file. If not specified, the compiler will place the resulting .app file in the project folder.|
 |Editor Services Log Level|Sets the logging verbosity level for the AL Language Editor Services host executable. Possible values are `Verbose`, `Normal`, `Warning`, and `Error`.|
 |Editor Services Path|Specifies the path to the Editor Services host executable.|
 |Enable Code Actions|Specifies whether code actions should be enabled for all source files in the current project. Default is `false`.|
@@ -48,6 +48,9 @@ The following table describes the user and workspace settings for the AL Languag
 |Statement Lens Minimum|Sets the lower limit for the time spent on statement execution expressed in milliseconds. Default value is `500`. Syntax is `"al.statementLensMin": 100`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
 |Use Legacy Runtime|Use the .NET Framework runtime for hosting the language service instead of the .NET Core runtime. Enabling this might result in a reduced level of performance. <br>**Note:** From extension version 11.0 this setting has been deprecated and has no effect.|
 |Generate PermissionSet for Extension Objects | Generate a permission set as an AL object. Syntax is `al.generatePermissionSetForExtensionObjects`. When invoking the command, the developer can choose to create a new permission file or select an existing file to update.|
+|Inlayhints > Function Return Types| Switch on/off inlay hints for implicit return types on method signatures.|
+|Inlayhints > Parameter Names| Switch on/off inlay hints for parameter names.|
+|AL-Go Suggested Folder| Sets the suggested folder when using AL:Go! command. Can be set per user or per workspace.|
 
 ## See Also
 

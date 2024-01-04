@@ -7393,6 +7393,96 @@
     "source_path": "dev-itpro/developer/devenv-calculation-formulas-and-the-calcformula-property.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-calcformula-property",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-add-test-app.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-create-online-dev-env-github.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-create-online-dev-env-vscode.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-create-release-app.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-dependency-app-github.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-enable-keyvault-app-development.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-enabling-telemetry.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-get-started.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-register-cust-prod-env.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-register-sandbox-env.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-settings.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-setup-cicd-existing-app.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-setup-cicd-existing-pte.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-setup-github-runner-performance.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-system-files.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-use-azure-keyvault-for-secrets.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/errorinfo/errorinfo-addaction-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/errorinfo/errorinfo-addaction-string-integer-string-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/errorinfo/errorinfo-addnavigationaction-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/errorinfo/errorinfo-addnavigationaction-string-method",
+    "redirect_document_id": false
    }
   ] 
 }

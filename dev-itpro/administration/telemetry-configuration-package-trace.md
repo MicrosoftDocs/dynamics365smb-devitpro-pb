@@ -1,5 +1,5 @@
 ---
-title: Analyzing Configuration Package Lifecycle Trace Telemetry
+title: Analyzing configuration package lifecycle trace telemetry
 description: Learn about the telemetry for configuration package telemetry for Azure Application Insights.  
 author: jswymer
 ms.topic: conceptual
@@ -7,13 +7,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 12/20/2023
 ms.author: jswymer
 ---
 
-# Analyzing Configuration Package Telemetry
+# Analyzing configuration package telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2, version 17.2, and later
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 Configuration package telemetry gathers data about the following operations on configuration packages:
 
@@ -58,7 +60,7 @@ Occurs when an export operation on a configuration package is started.
 |---------|-----|
 |eventId|**AL0000E3F**|
 |alExecutionId|Specifies the ID of the export operation.|
-|alPackageCode|Specifies the ID of the configuration package being exported.|
+|alPackageCode|Specifies the Code of the configuration package being exported.|
 
 
 ## <a name="exportsuccessful"></a>Configuration package exported successfully
@@ -80,7 +82,7 @@ Occurs when an export operation on a configuration package completes successfull
 |eventId|**AL0000E3G**|
 |alExecutionId|Specifies the ID of the export operation.|
 |alExecutionTimeInMs|Specifies the number of milliseconds it took to complete the export operation.|
-|alPackageCode|Specifies the ID of the configuration package that was exported.|
+|alPackageCode|Specifies the Code of the configuration package that was exported.|
 |[See common custom dimensions](#other)||
 
 
@@ -148,7 +150,7 @@ Occurs when an apply operation on a configuration package is started.
 |---------|-----|
 |eventId|**AL0000E3N**|
 |alExecutionId|Specifies the ID of the apply operation.|
-|alPackageCode|Specifies the ID of the configuration package being applied.|
+|alPackageCode|Specifies the Code of the configuration package being applied.|
 |[See common custom dimensions](#other)||
 
 
@@ -173,7 +175,7 @@ Occurs when an apply operation on a configuration package completes successfully
 |alExecutionTimeInMs|Specifies the number of milliseconds it took to complete the apply operation.|
 |alErrorCount|Specifies the number of errors that occurred when applying the configuration package.|
 |alFieldCount|Specifies the number of fields that were included in the migration table of the applied configuration package. |
-|alPackageCode|Specifies the ID of the configuration package that was applied.|
+|alPackageCode|Specifies the Code of the configuration package that was applied.|
 |alRecordCount|Specifies the number of records that were included in the applied configuration package.|
 |[See common custom dimensions](#other)||
 
@@ -195,7 +197,7 @@ Occurs when a configuration package is deleted successfully.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**AL0000E3P**|
-|alPackageCode|Specifies the ID of the configuration package that was deleted.|
+|alPackageCode|Specifies the Code of the configuration package that was deleted.|
 |[See common custom dimensions](#other)||
 
 

@@ -74,7 +74,7 @@ A POST request sends data to the server for processing. The Content-Type header 
 
         if ContentHeaders.Contains('Content-Encoding') then headers.Remove('Content-Encoding');
         ContentHeaders.Add('Content-Encoding', 'UTF8');
-        
+
         // assume that the json parameter contains the following data
         //
         // {
@@ -117,7 +117,7 @@ The preceding code:
 
 
 ## Example (How to upload a file using multipart/form-data)
-The Content-Type _multipart/form-data_ allows you to post multiple types of data in the same HTTP request and is commonly used for streaming data to an endpoint. 
+The Content-Type _multipart/form-data_ allows you to post multiple types of data in the same HTTP request and is commonly used for streaming data to an endpoint.
 
 To use multipart/form-data with Httpclient, you need to do the following:
 1. Create a _content payload_, including defining the boundary between data elements
@@ -126,7 +126,7 @@ To use multipart/form-data with Httpclient, you need to do the following:
 
 After these steps, your AL code should follows usual practices for Httpclient POST requests.
 
-The methods for adding file content to the content payload differs depending if the file is a text file such as JSON or XML, or if it's a binary file. So we provided two different code examples below, one for each scenario: 
+The methods for adding file content to the content payload differs depending if the file is a text file such as JSON or XML, or if it's a binary file. So we provided two different code examples below, one for each scenario:
 
 ### Example (How to upload a text file using multipart/form-data)
 
@@ -199,11 +199,12 @@ The main reason for the code example being different when dealing with binary da
         MultiPartBody.AppendLine();
         MultiPartBody.AppendLine('--' + Format(Boundary));
         MultiPartBody.AppendLine('Content-Disposition: form-data; name="file"; filename="<add filename here>"');
-        MultiPartBody.AppendLine('Content-Type: application/octet-stream');
+        //add file Content-Type eg. image/jpeg, image/png. If not known, use application/octet-stream.
+        MultiPartBody.AppendLine('Content-Type: <add file Content-Type here>');
         MultiPartBody.AppendLine();
         MultiPartBodyOutStream.WriteText(MultiPartBody.ToText());
 
-        CopyStream(MultiPartBodyOutStream, ContentToBeUploaded); 
+        CopyStream(MultiPartBodyOutStream, ContentToBeUploaded);
 
         MultiPartBody.Clear();
         MultiPartBody.AppendLine('--' + Format(Boundary) + '--');
@@ -232,7 +233,7 @@ The main reason for the code example being different when dealing with binary da
 ```
 
 ### Example (How to upload large files using multipart/form-data)
-Some endpoints have restrictions on the size of files that can be uploaded and hence you might need to split and upload the file in chunks. The system application SharePoint module has an implementation for how to achieve this. For more information, see [SharePoint system application module](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/SharePoint).
+Some endpoints have restrictions on the size of files that can be uploaded and hence you might need to split and upload the file in chunks. The system application SharePoint module has an implementation for how to achieve this. For more information, see [Share Point module](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint).
 
 
 ## Content headers
@@ -248,7 +249,7 @@ Some endpoints have restrictions on the size of files that can be uploaded and h
 
 *This article is maintained by Microsoft. Parts of the examples were originally written by the following contributors.*
 
-* [Michael Megel](https://www.linkedin.com/in/michaelmegel/) | Microsoft MVP 
+* [Michael Megel](https://www.linkedin.com/in/michaelmegel/) | Microsoft MVP
 * [Nikolay Arhangelov](https://www.linkedin.com/in/nikolay-arhangelov/) | Technical Manager
 
 
@@ -256,4 +257,4 @@ Some endpoints have restrictions on the size of files that can be uploaded and h
 [Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  

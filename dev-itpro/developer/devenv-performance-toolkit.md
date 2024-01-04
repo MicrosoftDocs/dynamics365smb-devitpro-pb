@@ -3,10 +3,9 @@ title: Performance Toolkit extension
 description: Test your extensions for performance regressions during the development process for Business Central apps. 
 author: bholtorf
 ms.custom: bap-template
-ms.date: 09/19/2023
+ms.date: 11/17/2023
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
-ms.tgt_pltfrm: na
 ms.search.form: 149000, 149001, 149003, 149004, 149005, 149006, 149007, 149008, 149009
 ms.topic: conceptual
 ms.author: bholtorf
@@ -14,7 +13,9 @@ ms.author: bholtorf
 
 # The Performance Toolkit extension
 
-The Performance Toolkit extension is built for Independent Solution Vendors (ISVs) and Value Added Resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prod_short](includes/prod_short.md)] for their customers. Because things change between released versions, it's important that ISVs and VARs can test the performance of their solutions to ensure that new versions don't introduce performance regressions when the volume of users grows. To help, the Performance Toolkit lets developers simulate workloads in realistic scenarios to compare performance between builds of their solutions.
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
+The Performance Toolkit extension (BCPT) is built for independent solution vendors (ISVs) and value added resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prod_short](includes/prod_short.md)] for their customers. Because things change between released versions, it's important that ISVs and VARs can test the performance of their solutions to ensure that new versions don't introduce performance regressions when the volume of users grows. To help, the Performance Toolkit lets developers simulate workloads in realistic scenarios to compare performance between builds of their solutions.
 
 The Performance Toolkit extension helps answer questions such as, "Does my solution for [!INCLUDE[prod_short](includes/prod_short.md)] support X number of users doing this, that, and the other thing at the same time?"
 
@@ -22,7 +23,7 @@ The extension doesn't answer questions such as, "How many orders can [!INCLUDE[p
 
 ## How can I use the Performance Toolkit?
 
-Once installed and configured, how can you use the tool? We identified four different personas as described in this table:
+Once the Performance Toolkit is installed and configured, how can you use it? We identified four different personas as described in this table:
 
 | Persona | Description |
 | ------- | ----------- |
@@ -42,10 +43,13 @@ In the following table, you find examples of scenarios for each persona where th
 | Account Manager | In presales, be able to answer questions such as "can Business Central handle our scenarios?" | 0. Maybe get some help from your organization to complete steps 1-5 below. Or work on automating parts of this process. <br> 1. Spin up an online Business Central sandbox environment <br> 2. Set up telemetry on the environment (to get clean data, set up a new Application Insights resource for this test only) <br> 3. Install and configure the BCPT AL extension with the scenarios you need and in the expected use pattern. <br> 4. Run the scenarios <br> 5. Install and configure the Power BI app on telemetry.  Look at the results in Performance report. | 
 | Product Owner | Compare performance between builds of your app(s). | 1. Set up telemetry on the app (to get clean data, set up a new Application Insights resource for devops) <br> 2. Have your developers write scenario codeunits for your main scenarios. <br> 3. Run scenarios as part of your Azure Pipelines. <br> 4. Install and configure the Power BI app on app telemetry. Look at the results in Performance report. <br> 5. Consider setting up alerts on regressions. | 
 | Developer | Test concurrency of your code | 1. Set up telemetry on your development environment (to get clean data, set up a new Application Insights resource for your setup) <br> 2. Write a scenario codeunit for your scenario. <br> 3. Run the scenarios in the BCPT Visual Studio Code extension. <br> 4a. Install and configure the Power BI app on app telemetry. Look at the results in Performance report. <br> 4b. If you prefer to analyze with KQL, use that tool instead. | 
-| Operations manager | Test Business Central environments on next version before upgrading customers | 1. Copy the production environment to a sandbox. <br> 2. Set up telemetry on the environment (to get clean data, set up a new Application Insights resource for this test only) <br> 3a. Install and configure the BCPT AL extension with the scenarios you need and in the expected use pattern. <br> 3b. Set up scenarios as part of a devops pipeline. <br>  4. Run the scenarios <br> 5. Install and configure the Power BI app on telemetry.  Look at the results in Performance report. <br> 5. Consider setting up alerts on regressions. | 
+| Operations Manager | Test Business Central environments on next version before upgrading customers | 1. Copy the production environment to a sandbox. <br> 2. Set up telemetry on the environment (to get clean data, set up a new Application Insights resource for this test only) <br> 3a. Install and configure the BCPT AL extension with the scenarios you need and in the expected use pattern. <br> 3b. Set up scenarios as part of a devops pipeline. <br>  4. Run the scenarios <br> 5. Install and configure the Power BI app on telemetry.  Look at the results in Performance report. <br> 5. Consider setting up alerts on regressions. | 
 | Project manager | Before go-live, ensure that the system scales with the expected number of users and what they're supposed to do in the system. | 1. Together with the project sponsor on the customer side, identify the key scenarios that must be tested <br> 2. Copy the production environment to a sandbox. <br> 3. Set up telemetry on the environment (to get clean data, set up a new Application Insights resource for this test only) <br> 4a. Install and configure the BCPT AL extension with the scenarios you need and in the expected use pattern. <br> 4b. Set up scenarios as part of a devops pipeline (maybe work on automating parts of this process for easier repeatability). <br> 5. Run the scenarios <br> 6. Install and configure the Power BI app on telemetry.  Look at the results in Performance report. <br> 7. Consider setting up alerts on regressions. |
 | Project manager | Test how multiple apps work together under pressure | Similar to the go-live scenario, but here you need to make sure that apps are installed in the environment. | 
 | Supporter | Analyze performance issues due to locking or deadlocks | Similar to the developer scenario for concurrency testing. If you're lucky, scenario codeunits are already available on GitHub. |
+
+> [!TIP]
+> Get started with [understanding busines processes here](/dynamics365/guidance/business-processes/overview), and learn about [roles in Dynamics 365 here](/dynamics365/guidance/roles/overview).
 
 ## How can I answer the question "Can Business Central handle a specific load for prospect customer"?
 
@@ -158,19 +162,21 @@ codeunit 50000 "Create Sales Order"
     trigger OnRun();
     var
         Customer: Record Customer;
-        *SalesHeader: Record "Sales Header";*
+        SalesHeader: Record "Sales Header";
     begin
         Customer.FindFirst();
-        *SalesHeader.Init();*
-        *SalesHeader."Document Type" := SalesHeader."Document Type"::Order;*
-        *SalesHeader.Insert(true);*
+        SalesHeader.Init();
+        SalesHeader."Document Type" := SalesHeader."Document Type"::Order;
+        SalesHeader.Insert(true);
         BCPTTestContext.EndScenario('Add Order');
         BCPTTestContext.UserWait();
         BCPTTestContext.StartScenario('Enter Account No.');
-        *SalesHeader.Validate("Sell-to Customer No.", Customer."No.");*
-        *SalesHeader.Modify(true);*
+        SalesHeader.Validate("Sell-to Customer No.", Customer."No.");
+        SalesHeader.Modify(true);
         BCPTTestContext.EndScenario('Enter Account No.');
         BCPTTestContext.UserWait();
+    end;
+}
 ```
 
 To interact with pages and make the tests more realistic, define a codeunit of the subtype **Test** and use [Test Pages](devenv-testing-pages.md). The following code example shows the main difference between normal and test codeunits.
@@ -178,7 +184,7 @@ To interact with pages and make the tests more realistic, define a codeunit of t
 ```al
 codeunit 50000 "Create Sales Order"
 {
-    *Subtype = Test;*
+    Subtype = Test;
 
     var
         BCPTTestContext: Codeunit "BCPT Test Context";
@@ -186,17 +192,19 @@ codeunit 50000 "Create Sales Order"
     trigger OnRun();
     var
         Customer: Record Customer;
-        *SalesOrder: TestPage "Sales Order";*
+        SalesOrder: TestPage "Sales Order";
     begin
         Customer.FindFirst();
-        *SalesOrder.OpenNew();*
-        *SalesOrder."No.".SetValue('');*
+        SalesOrder.OpenNew();
+        SalesOrder."No.".SetValue('');
         BCPTTestContext.EndScenario('Add Order');
         BCPTTestContext.UserWait();
         BCPTTestContext.StartScenario('Enter Account No.');
-        *SalesOrder."Sell-to Customer No.".SetValue(Customer."No.");*
+        SalesOrder."Sell-to Customer No.".SetValue(Customer."No.");
         BCPTTestContext.EndScenario('Enter Account No.');
         BCPTTestContext.UserWait();
+    end;
+}
 ```
 
 > [!TIP]  
@@ -251,9 +259,7 @@ enumextension 50000 "Test Codeunits with Params" extends "BCPT Test Param. Enum"
     {
         Implementation = "BCPT Test Param. Provider" = "Create PO with N Lines";
     }
-    ...
 }
-
 ```
 
 Learn more about writing test scenarios at [Testing the Application Overview](devenv-testing-application.md).
@@ -308,6 +314,8 @@ There are three ways to run BCPT suites.
 * By using the Visual Studio Code extension or PowerShell scripts.
 * By using AL-Go for GitHub. For more information, see [Workflow: Create new Performance Test App](https://github.com/microsoft/AL-Go/blob/main/RELEASENOTES.md#new-workflow-create-new-performance-test-app)
 
+> [!NOTE] 
+> When running BCPT suites, it's possible to pick which company to run your the suites in. This can be an effective strategy when running performance tests against different data sizes.
 
 ### Known limitations
 
@@ -404,6 +412,10 @@ In [!INCLUDE [prod_short](../includes/prod_short.md)], you can check the status 
 
 It's possible to run BCPT scenario runs in AL-Go for GitHub. For more information, see [Workflow: Create new Performance Test App](https://github.com/microsoft/AL-Go/blob/main/RELEASENOTES.md#new-workflow-create-new-performance-test-app).
 
+### Using BCPT to produce a large test database
+
+When running BCPT suites, it's possible to pick which company to run your BCPT suites in. You can utilize this capability to have BCPT produce a test database with companies that have small, medium, or large data sizes. Once you have such a database, you can take a backup (or take a container snapshot if you use Docker). Then, restore the database prior to running test suites in the future (or just use this to run manual tests on different data sizes).
+
 ## Analyze the results
 
 Results show on the **BCPT Suite Lines** FastTab. The following tables describe the fields that show results of the current run, the baseline, and the delta between the two.
@@ -453,7 +465,7 @@ The **Operation** column shows the individual measurements, where the term *Scen
 
 ### Example: Evaluate SQL calls and timing in Single Run mode
 
-This example shows how to use Single Run mode for performance regression testing (PRT) between changes to code, to evaluate SQL calls and timing. While developing a new extension, you often start out with limited code and may want to wait to do a larger benchmark test with simulated concurrent users until you’re closer to having a full, end-to-end scenario. You can use the **Start in Single Run Mode** action to perform a limited test, for example, on a new extension. Single Run mode provides things like a baseline, the ability to run the test in the background, and give you instant feedback.
+This example shows how to use Single Run mode for performance regression testing (PRT) between changes to code, to evaluate SQL calls and timing. While developing a new extension, you often start out with limited code and might want to wait to do a larger benchmark test with simulated concurrent users until you’re closer to having a full, end-to-end scenario. You can use the **Start in Single Run Mode** action to perform a limited test, for example, on a new extension. Single Run mode provides things like a baseline, the ability to run the test in the background, and give you instant feedback.
 
 The data that the runs generate is persisted in the database. If the database is maintained, you can set previous runs as baseline.
 

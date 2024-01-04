@@ -11,6 +11,8 @@ ms.custom: bap-template
 ---
 # Run cloud migration setup
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This article explains how to run the **Cloud Migration Setup** assisted setup guide to configure the components and connection for migrating data from a Business Central on-premises database to Business Central online environment. To learn more about the mechanics behind the **Cloud Migration Setup**, go to [Cloud migration setup overview](migration-setup-overview.md).
 
 [!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process.md)]
@@ -114,8 +116,14 @@ Complete the steps in the wizard to update the runtime service. If the change wa
 > [!CAUTION]
 > If you have mapped users in the first run of the cloud migration setup guide, then do not choose the **Define User Mappings** action again in subsequent runs.
 
+
+If you run into problems with the setup, go to [Cloud migration setup troubleshooting](migration-setup-troubleshooting.md).
+
+
 ## Next steps
 
-- If you run into problems with the setup, go to [Cloud migration setup troubleshooting](migration-setup-troubleshooting.md).
-- Once the setup guide is complete and data migration is activated, the initial data migration ready to be run from the **Cloud Migration Management** page whenever you want. Go to [Run Data Migration](migration-data-replication.md).
+Once the setup guide is complete and data migration is activated, the initial data migration ready to be run from the **Cloud Migration Management** page.
+
+- [Change how data is replicated to Business Central online](cloud-migration-change-replication.md) (advanced, optional)
+- [Run Data Migration](migration-data-replication.md).
 

@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.search.form: 4500, 4503, 4504, 4511, 4512, 
+ms.search.form: 4500, 4503, 4504, 4511, 4512,
 author: brentholtorf
 ms.author: bholtorf
 ms.date: 05/19/2022
@@ -15,12 +15,12 @@ ms.date: 05/19/2022
 # Extend Email Capabilities
 [!INCLUDE [prod_short](includes/prod_short.md)] offers built-in email capabilities that cover the needs of most businesses. You can share documents and information by email directly from [!INCLUDE [prod_short](includes/prod_short.md)].
 
-However, you might have a bright idea for something extra that would benefit your, or your customers', business. For example, you might want to use an email scenario that we don't provide. This article describes how you can extend the key components of our standard email capabilities. 
+However, you might have a bright idea for something extra that would benefit your, or your customers', business. For example, you might want to use an email scenario that we don't provide. This article describes how you can extend the key components of our standard email capabilities.
 
 ## Email architecture overview
-The following diagram shows the key components of the out-of-the-box email capabilities.  
+The following diagram shows the key components of the out-of-the-box email capabilities.
 
-:::image type="content" source="../media/email-architecture-overview.png" alt-text="Overview of the key parts of the email architecture"::: 
+:::image type="content" source="../media/email-architecture-overview.png" alt-text="Overview of the key parts of the email architecture":::
 
 |Component  |Description |
 |---------|---------|
@@ -39,23 +39,20 @@ Email scenarios are processes that involve sending a document. For example, a sa
 * All users always send purchase documents from account B.
 * All users always send warehouse or production documents from account C.
 
-The following diagram shows the relationship between the objects for email scenarios. 
+The following diagram shows the relationship between the objects for email scenarios.
 
-:::image type="content" source="../media/email-scenarios.png" alt-text="The objects for email scenarios."::: 
+:::image type="content" source="../media/email-scenarios.png" alt-text="The objects for email scenarios.":::
 
 The following code example shows how to extend the `Email Scenario` enum by adding a new scenario named **BC LE Scenario**. After you extend the enum, the new BC LE option is available in the Email Scenario field. You can assign the scenario to accounts on the **Email Scenarios** page, or by using the `EmailScenario.SetEmailAccount()` method.
 
 ```al
-
 enumextension 50100 BCLEScenario extends "Email Scenario"​
-
 {​
     value(999888; BCLEScenario)​
     {​
         Caption = 'BC LE Scenario';​
     }​
 }​
-
 ```
 
 ```al
@@ -72,28 +69,26 @@ end;
 ```
 
 ## Email address book lookup
-The email address book lookup is what you use to choose email accounts in [!INCLUDE [prod_short](includes/prod_short.md)] from entities such as customers and vendors. The following diagram shows the relationship between the objects for the email address book lookup. 
+The email address book lookup is what you use to choose email accounts in [!INCLUDE [prod_short](includes/prod_short.md)] from entities such as customers and vendors. The following diagram shows the relationship between the objects for the email address book lookup.
 
 :::image type="content" source="../media/email-address-book-lookup.png" alt-text="The objects for the email address book lookup.":::
 
-The following code example shows how to extend the `Email Address Entity` enum by adding a **BCLE Entity** option. The BCLE entity has an email address that we want to be able to access. 
+The following code example shows how to extend the `Email Address Entity` enum by adding a **BCLE Entity** option. The BCLE entity has an email address that we want to be able to access.
 
 ```al
-
 enumextension 50110 "BCLE - Address Book" extends "Email Address Entity"​
-
 {​
     value(50110; "BCLE Entity")​
     {​
         Caption = 'BCLE Entity';​
     }​
-} 
+}
 
 ```
 After you extend the `Email Address Entity` enum, subscribe to the `OnGetSuggestedAddresses` and `OnLookupAddressFromEntity` events. These events do the following:
 
 * `OnGetSuggestedAddresses` gets email addresses from the records in the table that are related to an email that you are composing and displays them in the address book.
-* `OnLookupAddressFromEntity` opens a modal dialog where you can choose the email addresses to add to the address book. 
+* `OnLookupAddressFromEntity` opens a modal dialog where you can choose the email addresses to add to the address book.
 
 The following examples show how to implement the events.
 
@@ -104,7 +99,6 @@ internal procedure OnGetSuggestedAddresses(TableId: Integer; SystemId: Guid; var
 
 [IntegrationEvent(false, false)]​
 internal procedure OnLookupAddressFromEntity(Entity: Enum "Email Address Entity"; var Address: Record "Email Address Lookup"; var IsHandled: Boolean)
-
 ```
 
 ```al
@@ -188,9 +182,7 @@ Email view policies give you control over the email messages that a user can acc
 The first step is to implement the `Email View Policy` interface.
 
 ```al
-
 interface "Email View Policy"​
-
 {​
     procedure GetSentEmails(var SentEmails: Record "Sent Email" temporary);​
     procedure GetOutboxEmails(var OutboxEmails: Record "Email Outbox" temporary);​
@@ -201,15 +193,12 @@ interface "Email View Policy"​
     procedure HasAccess(SentEmail: Record "Sent Email"): Boolean;​
     procedure HasAccess(OutboxEmail: Record "Email Outbox"): Boolean;​
 }
-
 ```
 
 Next, we'll extend the `Email View Policy` enum by adding a **BE LE View Policy** option.
 
 ```al
-
 enumextension 50108 "BC LE View Policy" extends "Email View Policy"​
-
 {​
     value(50108; "BC LE View Policy")​
     {​
@@ -217,7 +206,6 @@ enumextension 50108 "BC LE View Policy" extends "Email View Policy"​
         Implementation = "Email View Policy" = BCLEViewPolicy;​
     }​
 }
-
 ```
 
 The last step is to assign the email view policies to users. For more information, see [Set Up View Policies](/dynamics365/business-central/admin-how-setup-email#set-up-view-policies).
@@ -232,18 +220,16 @@ A connector is the interface for creating and managing email accounts, and for s
 |SMTP Connector|Use SMTP protocol to send emails.|
 
 > [!Note]
-> The Microsoft 365 Connector and Current User Connector require that the user has a mailbox on the tenant. 
+> The Microsoft 365 Connector and Current User Connector require that the user has a mailbox on the tenant.
 
 All email accounts use a connector, and the accounts contain the information needed to send email messages. The following diagram shows the relationship between the objects for email accounts and connectors.
 
 :::image type="content" source="../media/email-accounts-connectors.png" alt-text="The objects for email accounts and connectors.":::
 
-The first step is to implement the `Email Connector` interface. 
+The first step is to implement the `Email Connector` interface.
 
 ```al
-
 interface "Email Connector"​
-
 {​
     procedure Send(EmailMessage: Codeunit "Email Message"; AccountId: Guid);​
     procedure GetAccounts(var Accounts: Record "Email Account");​
@@ -253,12 +239,10 @@ interface "Email Connector"​
     procedure GetLogoAsBase64(): Text;​
     procedure GetDescription(): Text[250];​
 }
-
 ```
 Next, we'll extend the `Email Connector` enum by adding an **SMTP** option.
 
 ```al
-
 {​
     value(2147483647; SMTP)​
     {​
@@ -266,13 +250,12 @@ Next, we'll extend the `Email Connector` enum by adding an **SMTP** option.
         Implementation = "Email Connector" = "SMTP Connector Impl.";​
     }​
 }
-
 ```
 
-The last step is to create a page where we can view or create an email account. For more information, see [Pages Overview](devenv-pages-overview.md). 
+The last step is to create a page where we can view or create an email account. For more information, see [Pages Overview](devenv-pages-overview.md).
 
 > [!TIP]
-> If you want more details, there are several examples available on the [AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions/tree/main/Apps/W1/Email%20-%20SMTP%20Connector/app). For example, the SMTP Connector is a good implementation to explore.
+> If you want more details, there are several examples available on the [ALAppExtensions repository](https://github.com/microsoft/ALAppExtensions/tree/main/Apps/W1/Email%20-%20SMTP%20Connector/app). For example, the SMTP Connector is a good implementation to explore.
 
 Email Importance Enum
 ```al
@@ -322,7 +305,7 @@ tableextension 50109 "Importance On Outbox" extends "Email Outbox"
 }
 ```
 
-Page extensions on the Email Editor and Email Viewer that allow the Importance field to be viewed and changed. 
+Page extensions on the Email Editor and Email Viewer that allow the Importance field to be viewed and changed.
 ```al
 pageextension 50111 "Importance On Editor" extends "Email Editor"
 {
@@ -399,5 +382,5 @@ pageextension 50110 "Importance On Sent" extends "Sent Emails"
 
 [Overview of the System Application](devenv-system-application-overview.md)  
 [Set Up Email](/dynamics365/business-central/admin-how-setup-email)  
-[Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module)  
+[Module System Application](/dynamics365/business-central/application/system-application/module/system-application)  
 [Module Base Application](/dynamics365/business-central/application/reference/base%20application/)  

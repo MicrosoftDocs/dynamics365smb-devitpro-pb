@@ -3,16 +3,21 @@ title: "Marketing Validation Checklist"
 description: "The marketing checklist for validation of Business Central apps"
 author: a-emniel
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 09/26/2023
 ms.reviewer: solsen
 ms.topic: reference
 ---
 
-# Marketing Validation Checklist
+# Marketing validation checklist
 
 The storefront details on AppSource are the first impression that prospects get regarding your offer. First impressions last, so make sure to invest some time in developing the content on the storefront, so it gives a good impression from the beginning. Failing to do so will jeopardize the hard work you put in, when developing your offer, likely leaving the prospect confused or looking elsewhere. Accordingly, we recommend you put in the time, effort and due diligence when developing this content.
 
 You use Partner Center to submit your offer to AppSource. In the following, you can find information on all the marketing-related items that you need to fill out in Partner Center prior to submitting your app to AppSource. Follow this marketing validation checklist and get your app passed on the first submission. 
+
+> [!TIP]  
+> Marketing validation is a manual process that is required for new offers or when the marketing details change on existing offers. As a publisher there is no way you can impact how fast the marketing validation process takes. 
+> 
+> However, since marketing validation now only happens when marketing details are added or changed, you can ensure that you don't make such changes if it's important for you to get the submission through as quickly as possible, for example, when releasing a hotfix. Once that hotfix has passed the submit process and gone live, you can then submit a new version with required marketing details updated, and then await the validation process.
 
 ## What do I need to know before I begin?
 
@@ -52,7 +57,7 @@ The following section walks you through the marketing-related components, that i
 |-----------|--------------|--------------|
 |Offer name |Enter a descriptive name for the offer. | [Read more](readiness-checklist-b-offername-summary.md#offer-name) |
 |Offer summary|A single sentence summarizing the purpose or function of the offer.| [Read more](readiness-checklist-b-offername-summary.md#offer-summary)|
-|Description text | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your offer (include supported editions, countries, and languages). | [Read more](readiness-checklist-c-offer-description.md)|
+|Description text | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your offer (include supported editions, countries/regions, and languages). | [Read more](readiness-checklist-c-offer-description.md)|
 |Search keywords| Add search keywords to help users find your offer when they search in the marketplace.  | [Read more](readiness-checklist-f-supportedproducts-keywords.md) |
 |Products your app work with |Add specific products that your app works with. | [Read more](readiness-checklist-f-supportedproducts-keywords.md) |
 |Help link|The link to your offer’s learning resources.| [Read more](readiness-checklist-h-help-support.md#help-link)|
@@ -68,7 +73,7 @@ The following section walks you through the marketing-related components, that i
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
-|Markets (countries)|Choose the markets that your app is available in (make sure that it resembles the supported countries paragraph in the description text). | [Read more](readiness-checklist-f-supportedproducts-keywords.md) |
+|Markets (countries/regions)|Choose the markets that your app is available in (make sure that it resembles the supported countries/regions paragraph in the description text). | [Read more](readiness-checklist-f-supportedproducts-keywords.md) |
 |Hide key|The hide key is a token that is used to view the preview of your offer in AppSource before going live.| [Read more](readiness-checklist-f-supportedproducts-keywords.md)|
 
 

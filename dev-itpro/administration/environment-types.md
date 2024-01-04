@@ -13,6 +13,8 @@ ms.author: jswymer
 
 # Production and Sandbox Environments
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 You can create environments of different types. Which type of environment to choose depends on what you need it for.  
 
 > [!TIP]
@@ -91,3 +93,4 @@ For more information, see [Creating New Companies in [!INCLUDE[prod_short](../de
 [Preparing Test Environments](test-environment.md)  
 [Steps to set up a sandbox environment and Visual Studio Code](../developer/devenv-get-started.md#steps-to-set-up-a-sandbox-environment-and-visual-studio-code)  
 [Get started with the Container Sandbox Development Environment](../developer/devenv-get-started-container-sandbox.md)  
+[Performance in Business Central online](../performance/performance-online.md)   

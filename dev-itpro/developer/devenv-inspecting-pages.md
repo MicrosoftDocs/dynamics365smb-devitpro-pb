@@ -1,9 +1,9 @@
 ---
-title: Inspecting Pages
+title: Inspecting pages
 description: "Learn about the structure of a page and its' underlying data."
 author: jswymer
 ms.custom: na
-ms.date: 08/22/2022
+ms.date: 09/15/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: jswymer
 ---
 
-# Inspecting and Troubleshooting Pages
+# Inspecting and troubleshooting pages
 
 The [!INCLUDE[webclient](includes/webclient.md)] includes a page inspection feature that lets you get details about a page. Page inspection provides insight into the page design, the different elements that form the page, and the source behind the data it displays. Page inspection helps you:
 
@@ -22,11 +22,11 @@ The [!INCLUDE[webclient](includes/webclient.md)] includes a page inspection feat
 
 ## Working with Page Inspection
 
-You start page inspection from the **Help & Support** page. Choose the question mark in the top-right corner, choose **Help & Support**, and then choose **Inspect pages and data**. Or, you can just use the keyboard shortcut **Ctrl+Alt+F1**.
+You start page inspection from the **Help & Support** page. Choose the question mark in the top-right corner, choose **Help & Support**, and then choose **Inspect pages and data**. Or, you can just use the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
 
 The **Page inspection** pane opens on the side. The following figure illustrates the **Page Inspection** pane on the **Sales Order** page.
 
-![Page Inspection Pane.](media/page-inspection-example.png)
+![Page Inspection Pane.](media/page-inspection-example-vscode.png)
 
 When the **Page Inspection** pane first opens, it shows information that pertains to the main page object.
 
@@ -45,10 +45,10 @@ The page inspection pane shows the information for the main page or page part, i
 The following sections describe details about what is shown.
 
 > [!NOTE]
-> If you do not see all details described below, you might not have the required permissions. For more information, see [Controlling Access to Page Inspection Details](/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
+> If you don't see all details described below, you might not have the required permissions. For more information, see [Controlling Access to Page Inspection Details](/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
 
 > [!TIP]
-> To copy the values of a field or entity under one of the tabs to the clip board, select the field or entity and press Ctrl+C.
+> To copy the values of a field or entity under one of the tabs to the clip board, select the field or entity and select <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 ### [Page](#tab/page)
 
@@ -71,6 +71,10 @@ The **Page** field shows information about the main page or a selected (highligh
     [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
 - System parts, such as Links or Notes, and parts containing charts.
+
+#### Explore page in Visual Studio Code
+
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can explore the code behind the page in Visual Studio Code to troubleshoot any issues. To do this, select the **Explore in Visual Studio Code** link, which opens the page in Visual Studio Code, where you can inspect the page object and its source table. For more information, see [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md). 
 
 
 ### [Table](#tab/table)
@@ -104,6 +108,9 @@ Each field is shown with the following information:
 - Value of the field.
 - If the field is added by an extension, the name of the extension appears under the value.
 - For Code and Text fields the length of the field is shown as follows: `Text[x]` or `Code[x]`, where `x` is the length of the field.
+
+> [!TIP]
+> To find where a field is used on a page, select the field in the **Table Fields** tab. If it's used on the page, it's highlighted by a green border.
 
 #### What field information isn't shown
 
@@ -167,4 +174,5 @@ The following table describes the different filter types.
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md)
+[Using Designer](devenv-inclient-designer.md)  
+[Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md)

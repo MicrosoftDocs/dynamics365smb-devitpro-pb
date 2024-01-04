@@ -12,12 +12,12 @@ author: KennieNP
 ---
 
 # Extensibility overview
-AL developers can extend the functionality of Business Central in several ways. They can extend tables, enumerations, application areas, pages, reports, code flows and the security model. They can also contribute directly to the base application in the open source projects for the system application modules. 
+AL developers can extend the functionality of Business Central in several ways. They can extend tables, enumerations, application areas, pages, reports, code flows and the security model. They can also contribute directly to the base application in the open source projects for the system application modules.
 
-This article provides an overview of the extensibility options available to AL developers in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] including examples on how to extend various features, such as extending item charges, best price calculations, and data archiving. 
+This article provides an overview of the extensibility options available to AL developers in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] including examples on how to extend various features, such as extending item charges, best price calculations, and data archiving.
 
 ## Extending AL objects and artifacts
-The AL object model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports many different ways for developers to extend objects and artifacts in an app. 
+The AL object model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports many different ways for developers to extend objects and artifacts in an app.
 
 1. **Extending Code Flows**: Codeunits contain AL code that can be reused across the application. Developers can subscribe to events in base app codeunits and write custom logic to extend the application's functionality. See [Extending AL code flows: events](devenv-event-types.md).
 
@@ -45,13 +45,13 @@ The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application cons
 
 ### Contributing to the Business Central open source System Application
 
-If you want to contribute code to the Business Central open source System Application, you need to determine the type of contribution: 
+If you want to contribute code to the Business Central open source System Application, you need to determine the type of contribution:
 1. Small bug fixes, product improvements, or customer conveniences; or
 2. New capabilities or larger changes to the existing application platform.
 
-For more information about making contributions, go to [Contributing to the Business Central open source System Application](https://github.com/microsoft/ALAppExtensions/blob/main/CONTRIBUTING.md).
+For more information about making contributions, go to [Contributing to the Business Central open source System Application](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md).
 
-To learn more about the System Application, its module architecture, and how to modify or create new modules, go to [Creating new modules in the system application](devenv-blueprint.md). 
+To learn more about the System Application, its module architecture, and how to modify or create new modules, go to [Creating new modules in the system application](devenv-blueprint.md).
 
 ### Extending the Business Central base application
 
@@ -97,7 +97,7 @@ Extending AL objects and artifacts
 * [Extending tables](devenv-table-ext-object.md)
 
 Extending the base application
-* [Contributing to the Business Central open source System Application](https://github.com/microsoft/ALAppExtensions/blob/main/CONTRIBUTING.md)
+* [Contributing to the Business Central open source System Application](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md)
 * [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 * [The Microsoft_Application.app file](devenv-application-app-file.md)
 * [Publishing a code-customized base application](devenv-publish-code-customization.md)

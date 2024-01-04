@@ -25,8 +25,10 @@ It's often desirable to offload work from the user session to happen in the back
 - Enable [background posting](/dynamics365/business-central/ui-batch-posting) in areas where your business is using reservations and item tracking using serial and lot numbers
 - [Adjust item costs as a periodic background job](/dynamics365/business-central/finance-adjust-reconcile-inventory-cost-job-queue). Don't adjust automatically. 
 
-> [!TIP]  
-> don't run job queues too frequently.
+
+### Job queues and performance
+
+[!INCLUDE[task_job_queue_performance](../includes/include-task-job-queue-performance.md)]
 
 ## Avoid locking
 
@@ -69,6 +71,10 @@ There's a performance overhead involved in enabling integration on an entity suc
 
 For more information, see [Synchronizing Data in Business Central and Dynamics 365 Sales](/dynamics365/business-central/admin-synchronizing-business-central-and-sales). <!-- change with CDS integration in spring 2020 -->
 
+## Performance effect of enabling change logging on a table
+
+[!INCLUDE[change_logging_performance](../includes/change_logging_performance.md)]
+
 ## Functionality with known performance impact
 
 These areas of the application are known to cause a performance impact and require extra testing with realistic data setup before they're rolled out. 
@@ -79,7 +85,6 @@ These areas of the application are known to cause a performance impact and requi
 - [Dynamic Order tracking](/dynamics365/business-central/design-details-reservation-order-tracking-and-action-messaging)  
 - [Automatic reservation](/dynamics365/business-central/design-details-reservation-order-tracking-and-action-messaging)  
 - [Item tracking and Lot/SN Expiration dates](/dynamics365/business-central/inventory-how-work-item-tracking)  
-- [Change log](/dynamics365/business-central/across-log-changes)  
 
 ## If processing of Sales Order lines is slow
 If you experience that processing of Sales Order lines that contain bill-of-materials (BOMs) is slow, then check if _Stockout Warning_ on the page  _Sales & Receivables Setup_, is set to **true**. If that is the case, then change the value to **false**.

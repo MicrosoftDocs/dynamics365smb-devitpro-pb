@@ -1,6 +1,6 @@
 ---
-title: "Technical Validation Checklist"
-description: Describing the steps you must go through to successfully submit your app to AppSource using AppSourceCop.
+title: Technical validation checklist
+description: Describes the steps you must go through to successfully submit your app to AppSource using AppSourceCop for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 02/28/2023
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.author: freddyk
 ---
 
-# Technical Validation
+# Technical validation
 
 Below you find a checklist of all requirements that you **must meet before submitting** an extension for validation. You also find a description of how the [!INCLUDE [prod_short](includes/prod_short.md)] Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
 
@@ -24,7 +24,7 @@ If you don't meet these mandatory requirements, your extension fails validation.
 |Requirement|Example/Guidance|
 |-----------|----------------|
 |Develop your extension in Visual Studio Code.|[Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)|
-|The app.json file has mandatory properties that you must include. The 'name', 'publisher', and 'version' properties must match the values set in your offer description. Here you can also read more about dependency syntax and multiple countries per a single app syntax.|[Mandatory app.json properties](devenv-json-files.md)|
+|The app.json file has mandatory properties that you must include. The 'name', 'publisher', and 'version' properties must match the values set in your offer description. Here you can also read more about dependency syntax and multiple countries/regions per a single app syntax.|[Mandatory app.json properties](devenv-json-files.md)|
 |Coding of `Date` must follow a specific format (**no longer region-specific**)|Use the format `yyyymmddD`. For example, `20170825D`.|
 |Remote services (including all Web services calls) can use either HTTP or HTTPS. However, HTTP calls are only possible by using the HttpRequest AL type.|[Guidance on HTTP use](devenv-restapi-overview.md)|
 |Only JavaScript based Web client add-ins are supported. The zipping process is handled automatically by the compiler. Include the new AL `controladdin` type, JavaScript sources, and build the app.|[Control Add-Ins](devenv-control-addin-object.md)|
@@ -45,6 +45,7 @@ If you don't meet these mandatory requirements, your extension fails validation.
 |The extension submitted must not be a runtime package.|[Creating Runtime Packages](devenv-creating-runtime-packages.md)|
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
 |The extension submitted must specify the `Application` manifest property.|The `Application` manifest property is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](#against-which-releases-of-business-central-is-your-submission-validated)|
+|The extension submitted should have a unique `AppId`.| Every extension should have a unique `AppId` and it's not allowed to submit PTEs and AppSource apps with the same `AppId`. Also see [Constraints on extension types](devenv-extension-types-and-scope.md#constraints-on-extension-types).
 
 ## Technical validation performed by the Business Central services
 
@@ -69,7 +70,7 @@ For **each country and each release** targeted by your submission, the following
 2. The set of dependencies for your extension is resolved. **Any unresolved dependencies will cause the submission to be rejected. If you include extensions created by Microsoft in your submission, it will also be rejected.**
 
 > [!Note]  
-> You're required to include the dependencies for your extension as part of your submission only if you're submitting a newer version for them. If you don't include them in your submission, they will be downloaded automatically if they are available in [!INCLUDE [prod_short](includes/prod_short.md)] for the targeted countries/regions. If you're making your libraries available in new countries, you should increase the version number.
+> You're required to include the dependencies for your extension as part of your submission only if you're submitting a newer version for them. If you don't include them in your submission, they will be downloaded automatically if they are available in [!INCLUDE [prod_short](includes/prod_short.md)] for the targeted countries/regions. If you're making your libraries available in new countries/regions, you should increase the version number.
 
 3. The set of baselines for your extension is resolved by using the [App Management API](../administration/appmanagement/app-management-api.md).
 4. The extension is compiled against the set of dependencies resolved. If the **compilation fails, the submission is rejected.**
@@ -101,7 +102,7 @@ $validationResults | Write-Host -ForegroundColor Red
 
 All array parameters can also be specified as a comma-separated string. For more information, you can also check this blog post [Run-AlValidation and Run-AlCops](https://freddysblog.com/2020/12/03/run-alvalidation-and-run-alcops/).
 
-Include app and all library apps in both previousApps and apps and also include all countries on which you want to validate.
+Include app and all library apps in both previousApps and apps and also include all countries/regions on which you want to validate.
 
 > [!NOTE]  
 > The Run-AlValidation can't see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
@@ -134,7 +135,7 @@ For more information about the signals sent to telemetry during the technical va
 
 ## Against which releases of Business Central is your submission validated?
 
-Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For example, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission is validated against 18.0, 18.1, 18.2, and 18.3.
+Extensions submitted to the AppSource marketplace are validated for all countries/regions specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For example, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission is validated against 18.0, 18.1, 18.2, and 18.3.
 
 The minimum release for your submission is computed based on the `application` property specified in the app.json of your extension. 
 

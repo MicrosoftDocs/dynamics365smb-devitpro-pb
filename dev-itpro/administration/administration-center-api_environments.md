@@ -13,6 +13,8 @@ ms.date: 02/24/2023
 
 # Environments
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Environments are the instances of the application that have been set up for the tenant. An instance can be of either a production type or a sandbox type. The environment APIs can be used to:
 
 - Get information about the environments currently set up for the tenant
@@ -28,13 +30,13 @@ Environments are the instances of the application that have been set up for the 
 Returns a list of all the environments for the tenant. 
 
 ```
-GET /admin/v2.18/applications/environments
+GET /admin/v2.19/applications/environments
 ```
 
 Returns a list of the environments for the specified application family.
 
 ```
-GET /admin/v2.18/applications/{applicationFamily}/environments
+GET /admin/v2.19/applications/{applicationFamily}/environments
 ```
 
 ### Route Parameters
@@ -76,7 +78,7 @@ Returns a wrapped array of environments.
 Returns the properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}
+GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -119,7 +121,7 @@ Creates a new environment with sample data.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}
+PUT /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -244,14 +246,14 @@ Creates a new environment with a copy of another environment's data.
 
 ```
 Content-Type: application/json
-POST /admin/v2.18/applications/{applicationFamily}/environments/{sourceEnvironmentName}/copy
+POST /admin/v2.19/applications/{applicationFamily}/environments/{sourceEnvironmentName}/copy
 ```
 
 API v2.8 and earlier:
 
 ```
 Content-Type: application/json
-POST /admin/v2.18/applications/{applicationFamily}/environments/{sourceEnvironmentName}
+POST /admin/v2.19/applications/{applicationFamily}/environments/{sourceEnvironmentName}
 ```
 
 ### Route Parameters
@@ -380,7 +382,7 @@ Deletes the specified environment. This operation *soft deletes* the environment
 Warning: A production environment shouldn't be deleted.
 
 ```
-DELETE /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}
+DELETE /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -471,7 +473,7 @@ Returns empty HTTP status code 202 (Accepted).
 Recovers a soft-deleted environment. For more information, about environment deletion and recovery, go to [Delete and recover environments](tenant-admin-center-environments-delete.md#about-deleting-and-recovering-environments).
 
 ```
-POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/recover
+POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/recover
 ```
 
 ### Route Parameters
@@ -518,7 +520,7 @@ Schedules a rename operation on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/rename
+POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/rename
 ```
 
 ### Routing parameters
@@ -566,7 +568,7 @@ Schedules a restore operation an existing environment from a time in the past.
 
 ```
 Content-Type: application/json
-POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/restore
+POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/restore
 ```
 
 ### Routing parameters
@@ -653,7 +655,7 @@ GET applications/{applicationType}/environments/{environmentName}/availableResto
 Returns used storage properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/usedstorage
+GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/usedstorage
 ```
 
 ### Route Parameters
@@ -687,7 +689,7 @@ Returns used storage information of a single environment if exists.
 Returns a list of used storage objects for all the environments.
 
 ```
-GET /admin/v2.18/environments/usedstorage
+GET /admin/v2.19/environments/usedstorage
 ```
 
 ### Response
@@ -710,7 +712,7 @@ Returns a wrapped array of used storage objects.
 Returns different types of quotas and their limits.
 
 ```
-GET /admin/v2.18/environments/quotas
+GET /admin/v2.19/environments/quotas
 ```
 
 ### Response
@@ -739,7 +741,7 @@ Returns quotas object.
 Gets the following operations that occurred on an environment.
 
 ```
-GET /admin/v2.18/applications/{applicationType}/environments/{environmentName}/operations 
+GET /admin/v2.19/applications/{applicationType}/environments/{environmentName}/operations 
 ```
 
 ### Operation types
@@ -756,7 +758,7 @@ Data is returned for the following operation types:
 |EnvironmentAppInstall<sup>1</sup>|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](administration-center-api_app_management.md#install-an-app)|
 |EnvironmentAppUninstall<sup>1</sup>|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](administration-center-api_app_management.md#uninstall-an-app)|
 |EnvironmentRename|Environment was renamed by using the Admin Center|[Rename an Environment](tenant-admin-center-environments-rename.md)<br><br>[Rename Endpoint](#rename-environment)|
-|Modify<sup>5</sup>|Records the following operations:<br />[Set update window](administration-center-api_environment_settings.md#put-update-settings)<br />[Set Application Insights key](administration-center-api_environment_settings.md#put-appinsights-key)<br />[Set security group](administration-center-api_environment_settings.md#set-security-group)<br /> [Clear security group](administration-center-api_environment_settings.md#clear-security-group)<br />[Reschedule update](administration-center-api_reschedule_updates.md#reschedule-update)<br />[Set access with Microsoft 365 licenses](administration-center-api_environment_settings.md#set-access-with-microsoft-365-licenses)<sup>6</sup>|[Manage updates in Admin Center](tenant-admin-center-update-management.md)<br />[Manage access using Microsoft Entra groups in Admin Center](tenant-admin-center-manage-access.md#manage-access-using-azure-active-directory-groups)<br />[Manage access with Microsoft 365 licenses in Admin Center](tenant-admin-center-manage-access.md#manage-access-with-microsoft-365-licenses)|
+|Modify<sup>5</sup>|Records the following operations:<br />[Set update window](administration-center-api_environment_settings.md#put-update-settings)<br />[Set Application Insights key](administration-center-api_environment_settings.md#put-appinsights-key)<br />[Set security group](administration-center-api_environment_settings.md#set-security-group)<br /> [Clear security group](administration-center-api_environment_settings.md#clear-security-group)<br />[Reschedule update](administration-center-api_reschedule_updates.md#reschedule-update)<br />[Set access with Microsoft 365 licenses](administration-center-api_environment_settings.md#set-access-with-microsoft-365-licenses)<sup>6</sup>|[Manage updates in Admin Center](tenant-admin-center-update-management.md)<br />[Manage access using Microsoft Entra groups in Admin Center](tenant-admin-center-manage-access.md#manage-access-using-microsoft-entra-groups)<br />[Manage access with Microsoft 365 licenses in Admin Center](tenant-admin-center-manage-access.md#manage-access-with-microsoft-365-licenses)|
 |MoveToAnotherAadTenant|An environment was moved to another Microsoft Entra organization by using the Admin Center|[Move an Environment](tenant-admin-center-environments-move.md)|
 |PitRestore|Environment was restored by using the Admin Center|[Restoring an Environment](tenant-admin-center-backup-restore.md)|
 |Recover<sup>7</sup>|A deleted environment was recovered.|[Delete and Recover Environments in Admin Center](tenant-admin-center-environments-delete.md#recover-an-environment)<br><br>[Delete Endpoint](#recover-environment)|
@@ -851,7 +853,7 @@ Example `200 OK` response:
 Gets the operations that occurred on all environments.
 
 ```
-GET /admin/v2.18/applications/{applicationType}/environments/operations 
+GET /admin/v2.19/applications/{applicationType}/environments/operations 
 ```
 
 ### Operation types

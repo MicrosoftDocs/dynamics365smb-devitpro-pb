@@ -23,16 +23,24 @@ Sets the object you want to run immediately when the action is activated.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Syntax
+The following example illustrates how to use RunObject on the query object MyQuery (replace the **query** keyword with **page**, **report**, or **codeunit** to use RunObject on these data types)
+
+```AL
+RunObject = query "MyQuery";
+```
 
 ## Remarks  
 
 Use this property to select the object you want to run.  
-  
+
+The following object types are supported: pages, reports, codeunits, and from version 23 also queries.
+
 Use the following properties to set parameters for the object you want to run:  
   
 - [RunPageView Property](devenv-runpageview-property.md)  
 - [RunPageLink Property](devenv-runpagelink-property.md)  
-  
+
 ## See Also
 
 [Properties](devenv-properties.md)  
