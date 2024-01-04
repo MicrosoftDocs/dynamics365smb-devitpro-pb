@@ -4,7 +4,7 @@ description: Learn about the report telemetry in Business Central
 author: jswymer
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 05/31/2023
+ms.date: 01/04/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: bap-template
