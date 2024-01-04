@@ -2,11 +2,9 @@
 title: "Operation Limits in Dynamics 365 Business Central"
 description: "Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments."
 author: jswymer
-ms.custom: na
-ms.date: 03/16/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 01/04/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 ---
@@ -134,7 +132,10 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds the 10-minute execution time.|10 minutes|
 -->
 
-## <a name="ODataServicesUser"></a>OData request limits (per user, will be set in the future)
+## <a name="ODataServicesUser"></a>OData request limits (per user)
+
+> [!NOTE]
+> These limits will be rolled out gradually starting in late December 2023.
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |-------|--------------------------------------------------------------------------------|-----|
