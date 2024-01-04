@@ -121,7 +121,7 @@ For more information, see [Using Key Vault Secrets in Business Central Extension
 
 #### Common mistakes
 
-A common mistake is using the environment Entra ID instead of the user's Entra ID. The resource exposure policy allows delegated admins or guest users to access resources. In this case, the values in the secret **must be the user's Entra ID, not the environment Entra ID**.
+A common mistake is using the environment Microsoft Entra ID instead of the user's Microsoft Entra ID. The resource exposure policy allows delegated admins or guest users to access resources. In this case, the values in the secret **must be the user's Microsoft Entra ID, not the environment Microsoft Entra ID**.
 
 ### The `BC-ResourceExposurePolicy-Overrides` secret
 
