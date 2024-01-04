@@ -96,7 +96,7 @@ For more information, see [Error handling strategies](devenv-al-error-handling.m
 
 ### Principle: Don't trust the environment your code will run in
 
-Remember that you cannot know how a customer will set up permissions for users. Although a user may have access to the entry point of a function he/she may not have access to all tables referenced.Consider adding the `InherentPermissions` attribute to private functions not raising events. Write defensive code that checks for permissions and be very careful when accessing data through RecordRef – particularly in an event subscriber, as you cannot know which table is being passed as argument.
+Remember that you cannot know how a customer will set up permissions for users. Although a user may have access to the entry point of a function he/she may not have access to all tables referenced. Consider adding the `InherentPermissions` attribute to private functions not raising events. Write defensive code that checks for permissions and be very careful when accessing data through RecordRef – particularly in an event subscriber, as you cannot know which table is being passed as argument.
 
 
 ### Principle: Offer graceful degradations
