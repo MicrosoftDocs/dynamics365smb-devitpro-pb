@@ -161,14 +161,10 @@ Here is a JSON representation of the purchaseInvoice resource.
 }
 ```
 
-> [!NOTE]
-> id property value in this API resource might be different than the systemId of the corresponding record because the systemId of the unposted invoices are carried to posted invoices in the API but not in the record. Please use https://{businesscentralPrefix}/microsoft/automate/v1.0/companies({id})/postedPurchaseInvoices({systemId}) route and extract apiId property to map systemId of a posted purchase invoice record to the purchaseInvoice API resource.
+> [!NOTE]  
+> The `id` property value in this API resource might be different than the `systemId` of the corresponding record because the `systemId` of the unposted invoices are carried to posted invoices in the API, but not to the record. Use the `https://{businesscentralPrefix}/microsoft/automate/v1.0/companies({id})/postedPurchaseInvoices({systemId})` route and extract the `apiId` property to map the `systemId` of a posted purchase invoice record to the `purchaseInvoice` API resource.
 
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
-
-## See Also
+## See also
 [GET purchaseInvoice](../api/dynamics_purchaseInvoice_Get.md)  
 [DELETE purchaseInvoice](../api/dynamics_purchaseInvoice_Delete.md)  
 [POST purchaseInvoice](../api/dynamics_purchaseInvoice_Create.md)  
