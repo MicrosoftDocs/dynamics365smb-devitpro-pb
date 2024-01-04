@@ -51,9 +51,10 @@ These five principles might help you get started making your code more robust to
 
 1. Don't trust any code you did not write.
 2. Don't trust consumers of your code.
-3. Offer graceful degradations.
-4. Hide your internal data structures.
-5. Assume the improbable. 
+3. Don't trust the environment your code will run in
+4. Offer graceful degradations.
+5. Hide your internal data structures.
+6. Assume the improbable. 
 
 For more information about robust programming, see [Robustness_(computer_science)](https://en.wikipedia.org/wiki/Robustness_(computer_science)).
 
@@ -92,6 +93,10 @@ One of the key reasons to adhere to this principle is that the individual invoki
 
 
 For more information, see [Error handling strategies](devenv-al-error-handling.md#error-handling-strategies).
+
+### Principle: Don't trust the environment your code will run in
+
+Remember that you cannot know how a customer will set up permissions for users. Although a user may have access to the entry point of a function he/she may not have access to all tables referenced.Consider adding the `InherentPermissions` attribute to private functions not raising events. Write defensive code that checks for permissions and be very careful when accessing data through RecordRef – particularly in an event subscriber, as you cannot know which table is being passed as argument.
 
 
 ### Principle: Offer graceful degradations
