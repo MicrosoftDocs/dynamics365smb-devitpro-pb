@@ -163,7 +163,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 
 ## <a name="FAQsUser"></a>Frequently asked questions on per-user limits
 
-This section includes frequently asked questions on per-user limits. If you have questions that are not answered, please post them in the **Feedback** section below by submitting feedback about this page.
+This section includes frequently asked questions on per-user limits. If you have questions that aren't answered, please submit them using the **This page** option in the **Feedback** section below.
 
 ### How do these limits apply to how many requests or other resource consumption units a user is entitled to each day?
 
