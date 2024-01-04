@@ -34,7 +34,10 @@ Before you can export the file, you must first set up the Azure storage account 
 
 ### Creating the storage account
 
-The first step is to create an Azure standard storage account, if you don't already have one. To set up the export, you must first have a subscription to Microsoft Azure and access to the [Azure portal](https://portal.azure.com). 
+The first step is to create a **Standard general-purpose v2** Azure storage account, if you don't already have one. To set up the export, you must first have a subscription to Microsoft Azure and access to the [Azure portal](https://portal.azure.com).
+
+> [!IMPORTANT]
+> Exporting an environment database to a storage account that is not a **Standard general-purpose v2** Azure storage account, such as V1 or Premium storage accounts, is not supported.
 
 For more information setting up an Azure storage account, see [Create a storage account](/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
 
