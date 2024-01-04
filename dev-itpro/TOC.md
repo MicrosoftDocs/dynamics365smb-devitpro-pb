@@ -633,6 +633,7 @@
 ##### [Error method telemetry](administration/telemetry-error-method-trace.md)
 ##### [Feature (error) telemetry](administration/telemetry-feature-telemetry.md)
 ##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
+
 #### AL Language Reference (errors)
 ##### [Collecting Errors API](developer/devenv-error-collection-api.md?toc=/dynamics365/business-central/dev-itpro/toc.json) 
 ##### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -641,12 +642,17 @@
 ###### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ###### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
+#### Baseapp Reference (errors)
+##### [Codeunit "Error Context Element"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-context-element?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Codeunit "Error Message Handler"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-handler?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Codeunit "Error Message Management"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-management?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Codeunit "Last Error Context Element"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.last-error-context-element?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
-### Formatting data
+
+### Formatting values
 #### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
 #### [Formatting values, dates, and time](developer/devenv-format-property.md)
 #### [File handling and text encoding](developer/devenv-file-handling-and-text-encoding.md)
-
 
 ### Tables and data
 #### [Overview](developer/devenv-tables-overview.md)
