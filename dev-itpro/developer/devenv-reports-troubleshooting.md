@@ -73,20 +73,15 @@ The different exceptions in the table are grouped by the following severities:
 - **TransientError** (this severity was likely due to a transient issue in the infrastructure running [!INCLUDE[prod_short](includes/prod_short.md)] and can likely be resolved by a retry)
 - **Warning** (this severity is likely not an error in the report. The issue can likely be resolved by fixing something in the environment, such as changing the permissions for a user/role)
 
-<br>
-
-
 [!INCLUDE[exception_table](includes/include-report-exception-table.md)]
 
 [!INCLUDE[report_exception_paragraphs](includes/include-report-exception-paragraphs.md)]
-
-
 
 ## Report performance
 
 [!INCLUDE[report_performance](../includes/include-report-performance.md)]
 
-For more information, see [Report performance](devenv-report-performance.md)
+For more information, see [Report performance](devenv-report-performance.md).
 
 ## See also
 
