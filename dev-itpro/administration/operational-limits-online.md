@@ -155,7 +155,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Operation timeout|The maximum amount of time in minutes allocated to a SOAP request. When this limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.|8|
 
 > [!TIP]  
-> Throttling could occur when many requests are submitted and handled (processed/queued) around the same time and they're taking a long time to complete. To optimize throughput, please use API or OData instead of SOAP, as they execute faster. 
+> Throttling could occur when many requests are submitted and handled (processed/queued) around the same time and they're taking a long time to complete. To optimize throughput, use API or OData instead of SOAP, as they execute faster. 
 
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
