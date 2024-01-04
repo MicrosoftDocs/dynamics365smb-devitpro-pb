@@ -22,7 +22,7 @@ Updates of the base application and platform are managed by Microsoft. As an int
 
 The update window for an environment defines the hours during the day for the selected time zone in which the environment can be updated. When an update is rolling out&mdash;monthly or major update&mdash;it will be applied to an environment within the time frame that the update window defines.
 
-This window helps ensure updates are applied outside of the normal business hours of the organization. Every environment has a default update window that's between 8:00 PM and 6:00 AM local time for the environment's country/region. In countries that have multiple time zones, the system sets a time zone that's close to the geographic center of the country/region as default.
+This window helps ensure updates are applied outside of the normal business hours of the organization. Every environment has a default update window that's between 8:00 PM and 6:00 AM local time for the environment's country/region. In countries/regions that have multiple time zones, the system sets a time zone that's close to the geographic center of the country/region as default.
 
 <!--
  The default time zone is set based on the environment localization and may differ from the administrator's time zone in countries that span multiple time zones.

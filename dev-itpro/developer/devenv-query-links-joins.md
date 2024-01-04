@@ -281,13 +281,13 @@ To specify an inner join with an SQL statement, you can do either of the followi
   
 The following two examples show how to create an inner join on the **Salesperson/Purchaser** and **Sales Header** tables with SQL statements. These two statements result in the same dataset.  
   
-```  
+```sql
 SELECT "Salesperson/Purchaser".Name, "Sales Header"."No.", "Sales Header"."Sell-to Customer Name"  
 FROM "Salesperson/Purchaser" INNER JOIN "Sales Header"  
   ON "Salesperson/Purchaser".Code = "Sales Header"."Salesperson Code"  
 ```  
   
-```  
+```sql
 SELECT "Salesperson/Purchaser".Name, "Sales Header"."No.", "Sales Header"."Sell-to Customer Name"  
 FROM "Salesperson/Purchaser", "Sales Header"  
 WHERE "Salesperson/Purchaser".Code = "Sales Header"."Salesperson Code"  
@@ -324,7 +324,7 @@ The record for **Bart** in the Salesperson/Purchaser table does not have a match
   
  The following example shows how to create a left outer join on the **Salesperson/Purchaser** and **Sales Header** tables by using a SQL statement.  
   
-```  
+```sql
 SELECT "Salesperson/Purchaser".Name, "Sales Header"."No.", "Sales Header"."Sell-to Customer Name"  
 FROM "Salesperson/Purchaser" LEFT OUTER JOIN "Sales Header"  
   ON "Salesperson/Purchaser".Code = "Sales Header"."Salesperson Code"  
@@ -361,7 +361,7 @@ To specify a right outer join with an SQL statement, you use the RIGHT OUTER JOI
   
 The following example shows how to create a right outer join on the **Salesperson/Purchaser** and **Sales Header** tables by using a SQL statement.  
   
-```  
+```sql
 SELECT "Salesperson/Purchaser".Name, "Sales Header"."No.", "Sales Header"."Sell-to Customer Name"  
 FROM "Salesperson/Purchaser" RIGHT OUTER JOIN "Sales Header"  
   ON "Salesperson/Purchaser".Code = "Sales Header"."Salesperson Code"  
@@ -400,7 +400,7 @@ The following table shows the resulting dataset for a full outer join between th
   
  The following example shows how to create a full outer join on the **Salesperson/Purchaser** and **Sales Header** tables by using a SQL statement.  
   
-```  
+```sql
 SELECT "Salesperson/Purchaser".Name, "Sales Header"."No.", "Sales Header"."Sell-to Customer Name"  
 FROM "Salesperson/Purchaser" FULL OUTER JOIN "Sales Header"  
   ON "Salesperson/Purchaser".Code = "Sales Header"."Salesperson Code"  
@@ -442,12 +442,12 @@ The following table shows the resulting dataset for a `CrossJoin` between the **
   
  The following examples shows how to create a cross join of the **Salesperson/Purchaser** and **Sales Header** tables by using a SQL statement.  
   
-```  
+```sql
 SELECT "Salesperson/Purchaser".Name, "Sales Header"."No.", "Sales Header"."Sell-to Customer Name"  
 FROM "Salesperson/Purchaser" CROSS JOIN "Sales Header"  
 ```  
   
-```  
+```sql
 SELECT "Salesperson/Purchaser".Name, "Sales Header"."No.", "Sales Header"."Sell-to Customer Name"  
 FROM "Salesperson/Purchaser", "Sales Header"  
 ```

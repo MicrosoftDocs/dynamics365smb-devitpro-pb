@@ -60,10 +60,11 @@ If the report you specify does not exist, then a run-time error occurs.
 
 [!INCLUDE[io_errors](../../includes/include-io-errors.md)]
 
-## Example  
+## Example
+
 This example shows how to use the static SaveAsXml method in a safe way (where no errors occur).
 
-```al 
+```al
 var
     FileNameAndPath: Text[250];
     MyReportInstance: Report MyReport;    

@@ -147,7 +147,6 @@ profile MyProfile
     RoleCenter = MyRoleCenter;
     Caption = 'My profile';
 }
-
 ```
 
 ## See Also

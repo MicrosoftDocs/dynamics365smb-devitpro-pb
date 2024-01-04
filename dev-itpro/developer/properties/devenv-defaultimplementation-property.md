@@ -101,7 +101,6 @@ enum 50135 SomeEnum implements IFoo
         // Nothing specified. Using defaults
     }
 }
-
 ```
 
 ## Remarks

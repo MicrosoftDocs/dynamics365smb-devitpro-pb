@@ -62,7 +62,7 @@ The method can fail in the following three ways:
 ## Example  
 This example shows how to use the SaveAsExcel method to generate the report in the [!INCLUDE[prod_short](../../includes/prod_short.md)] server and then download the Excel workbook file to the server.
  
-```AL
+```al
 var
     MyReport: Report MyReport
     TempFile: File;

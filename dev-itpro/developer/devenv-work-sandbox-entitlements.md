@@ -53,7 +53,7 @@ If you are using `New-BCContainer` to create your [!INCLUDE[d365fin_long_md](inc
 
 Use the switch `assignPremiumPlan` on `New-BCContainer` like this:
 
-```
+```powershell
 New-BCContainer -accept_eula -updateHosts -containerName test -artifactUrl (Get-BCArtifactUrl -country us) -assignPremiumPlan
 ```
 
@@ -61,7 +61,7 @@ This assigns the Premium plan to your default admin user. Internally this just a
 
 To create the test users, you must call the `Setup-BCContainerTestUsers` method:
 
-```
+```powershell
 Setup-BCContainerTestUsers containerName test -tenant default -password $securePassword
 ```
 
@@ -76,7 +76,7 @@ If you are using Docker run to run your containers, you have a little more work 
 
 First of all, you must override the `SetupNavUsers.ps1` by sharing a local folder to `c:\run\my` in the container and place a file called `SetupNavUsers.ps1` in that folder with the following content:
 
-```
+```powershell
 # Invoke default behavior
 . (Join-Path $runPath $MyInvocation.MyCommand.Name)
  

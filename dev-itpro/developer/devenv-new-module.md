@@ -20,7 +20,7 @@ This topic provides an overview of how to create a new module in the System Appl
 1. Familiarity with development in AL. For more information, see [AL Development](./devenv-get-started.md).
 2. Your development environment is ready. For more information, see [Set Up an Environment for Developing a Module](devenv-set-up-an-environment.md).
 > [!NOTE]
-> Your environment must have the correct symbols. Go get those, in Visual Studio Code, press **F1**, and then choose **AL: Download Symbols**. Also, make a note of the **server** and **serverInstance** settings. You will add that information to the launch.json file.
+> Your environment must have the correct symbols. Go get those, in Visual Studio Code, select <kbd>F1>/kbd>, and then choose **AL: Download Symbols**. Also, make a note of the **server** and **serverInstance** settings. You will add that information to the launch.json file.
 
 ## Create a New Module
 
@@ -84,7 +84,6 @@ We'll start by creating a new folder named **XmlWriter** in the **System** folde
         "target":  "OnPrem",
         "contextSensitiveHelpUrl":  "/dynamics365/business-central/"
     }
-
 ```
 > [!NOTE]
 > After we finish developing our module, we will need to update the app.json file to ensure that the **versions** and **idRanges** are correct. We can easily verify the version by checking the app.json in other modules in the System Application. The idRanges must reflect the IDs used in the module.
@@ -93,7 +92,7 @@ Next, create the **src** folder under **System/XmlWriter**. This folder will con
 
 After adding the implementation functions, the implementation codeunit will look as follows.
 
-```
+```al
     codeunit 1484 "XmlWriter Impl"
     {
         Access = Internal;
@@ -121,13 +120,12 @@ After adding the implementation functions, the implementation codeunit will look
             StringWriter: DotNet StringWriter;
             XmlTextWriter: DotNet XmlTextWriter;
     }
-
 ````
 Now that we have created our implementation codeunit, we must add public functions in a facade codeunit with the functionality that we want to expose. Because the functions are public, we must ensure that these are tested and documented. To do this, we need to create a facade codeunit. In this example, we'll name the codeunit **XmlWriter.Codeunit.al**. The functions call the corresponding functions in the implementation codeunit.
 
 The following is an example of the facade codeunit named **XmlWriter.Codeunit.al** that includes public functions and documentation.
 
-```
+```al
 
     /// <summary>
     /// Provides helper functions for System.Xml.XmlWriter
@@ -206,7 +204,6 @@ We will add the following new file under **System Tests/XmlWriter/src**, **XmlWr
             Assert.ExpectedError('A call to System.Xml.XmlTextWriter.WriteEndDocument failed with this message: Document does not have a root element.');
         end;
     }
-
 ```
 
 After running the tests successfully, changes are complete.

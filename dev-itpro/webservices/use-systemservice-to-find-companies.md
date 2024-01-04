@@ -69,9 +69,9 @@ You can use the SystemService service in a SOAP web service application to retri
   
     ```  
   
-8.  Save \(press Ctrl+F6\) and compile \(press F6\) the **FindingCompanies** application.  
+8.  Save \(select <kbd>Ctrl</kbd>+<kbd>F6</kbd>\) and compile \(select <kbd>F6</kbd>\) the **FindingCompanies** application.  
   
-9. Press F5 to run the application in debug mode.  
+9. Select <kbd>F5</kbd>to run the application in debug mode.  
   
      A list of all companies in the current database is presented in a command session.  
   

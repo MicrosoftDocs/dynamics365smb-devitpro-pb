@@ -38,7 +38,6 @@ codeunit 50113 CreateCustomer
             Cust.ShoeSize := 42;
     end;
 }
-
 ```
 
 ## See Also

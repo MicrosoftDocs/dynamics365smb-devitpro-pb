@@ -90,7 +90,6 @@ codeunit 50110 MyCodeunit
         response.Content().ReadAs(responseText);
     end;
 }
-
 ```
 
 ## See Also

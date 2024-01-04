@@ -57,7 +57,6 @@ permissionset 50134 "Sales Person"
         tabledata "Sales Header" = RIM,
         tabledata "Sales Line" = RIMD;
 }
-
 ```
 
 The following example of a permission set illustrates assigned permissions to run codeunits. With the [IncludedPermissionSets property](properties/devenv-includedpermissionsets-property.md), we specify that the permission set `Sales Person` is also included in `MyPermissionSet`.

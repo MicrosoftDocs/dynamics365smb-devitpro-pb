@@ -2,7 +2,7 @@
 title: Install a version 23 update
 description: This article describes the tasks required for getting the monthly version 23 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 08/14/2023
+ms.date: 12/18/2023
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -506,7 +506,7 @@ If the old solution used third-party extensions, and you still want to use them,
 
 As an alternative, if you have the source for these extensions, you can build and compile a new version of the extension in the AL development environment. Then, you upgrade to the new version as described in the previous task.
 
-## Post Upgrade
+## Post upgrade
 
 ### <a name="controladdins"></a>Upgrade control add-ins
 
@@ -530,10 +530,10 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 [!INCLUDE[upgrade-web-server-instances](../developer/includes/upgrade-web-server-instances.md)]
 
-## See Also
+## See also
 
-[Dynamics 365 Business Central On-Premises 2023 Release Wave 1 Updates](../deployment/update-versions-22.md)  
-[Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v20.md)  
+[Dynamics 365 Business Central On-Premises 2023 Release Wave 1 Updates](../deployment/update-versions-22.md)   
+[Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)   
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
 [Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  

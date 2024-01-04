@@ -1,6 +1,6 @@
 ---
 title: "TextBuilder Data Type"
-description: "Represents a lighweight wrapper for the .Net implementation of StringBuilder."
+description: "Represents a lightweight wrapper for the .Net implementation of StringBuilder."
 ms.author: solsen
 ms.custom: na
 ms.date: 12/01/2023
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # TextBuilder Data Type
 > **Version**: _Available or changed with runtime version 1.0._
 
-Represents a lighweight wrapper for the .Net implementation of StringBuilder.
+Represents a lightweight wrapper for the .Net implementation of StringBuilder.
 
 
 

@@ -118,7 +118,8 @@ The ordering of the fields will then be determined by the order in which extensi
 
 To specify which fields are included in a tile for a record in a list page object, you use the `Brick` field group name. The following example defines the `Brick` field group that includes two fields of a table object:
 
-```
+
+```al
 table 50101 MyTable
 {
     DataClassification = ToBeClassified;

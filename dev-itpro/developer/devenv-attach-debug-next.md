@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 If you don't want to publish and invoke functionality to debug it, you can instead attach a session to a specified server, and await a process to trigger the breakpoint you've set. Then debugging starts when the code that the breakpoint is set on is hit. 
 
 > [!NOTE]  
-> To use the attach functionality, you must make sure that your app is published with **Ctrl+F5** first, or with **Alt+Ctrl+F5** for [RAD](devenv-rad-publishing.md) publishing, before you start the debugging session with **F5**. Creating a new server session from the client can be achieved for example by launching a new client session. Pressing **F5** (Refresh) in a browser may not create a new server session, because it is cached, but if a session is expired and refreshed that will create a new session.
+> To use the attach functionality, you must make sure that your app is published with <kbd>Ctrl</kbd>+<kbd>F5</kbd> first, or with <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>F5</kbd> for [RAD](devenv-rad-publishing.md) publishing, before you start the debugging session with <kbd>F5</kbd>. Creating a new server session from the client can be achieved for example by launching a new client session. Pressing <kbd>F5</kbd> (Refresh) in a browser may not create a new server session, because it is cached, but if a session is expired and refreshed that will create a new session.
 
 > [!IMPORTANT]  
 > Only the user who starts a Visual Studio Code attach session can issue the Web request on the server.
@@ -78,10 +78,10 @@ The `launch.json` file is now populated with the correct attach configuration se
 3. Set `breakOnNext` to specify the client type on which to break.
 4. In your code, set at least one breakpoint using **Run** from the toolbar, choose **New breakpoint**, and then choose which type of breakpoint to add. 
 You can always add more breakpoints while debugging. 
-5. If your most recent app is not yet published, it's important to make sure you publish it pressing **Ctrl+F5**, alternatively **Alt+Ctrl+F5** for RAD publishing. Then, use **F5** to start the attach session.  
+5. If your most recent app is not yet published, it's important to make sure you publish it slecting <kbd>Ctrl</kbd>+<kbd>F5</kbd> , alternatively <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>F5</kbd> for RAD publishing. Then, use <kbd>F5</kbd> to start the attach session.  
     > [!IMPORTANT]  
-    > If you modify the app code during the debugging session, make sure to re-publish the app using **Ctrl+F5**.
-6. After publishing the app, press **F5** to start a debugging session.  
+    > If you modify the app code during the debugging session, make sure to re-publish the app using <kbd>Ctrl</kbd>+<kbd>F5</kbd> .
+6. After publishing the app, select <kbd>F5</kbd> to start a debugging session.  
     > [!NOTE]  
     > If you have more attach configuration settings, you must first select which configuration to start.
 7. Debug and inspect the code. You can add more breakpoints while debugging.

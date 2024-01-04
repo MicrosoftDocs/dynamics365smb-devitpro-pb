@@ -25,7 +25,9 @@ Specifies if the page is available as part of a preview release.
 
 ## Remarks
 
-The `IsPreview` property displays a note in the UI that the page is available as part of a preview release. The default value is `false`. This property is used when the `PageType` property is set to `PromptDialog`. For more information, see [The PromptDialog object](../devenv-page-type-promptdialog.md).
+The `IsPreview` property displays a note in the UI that the page or feature is currently in preview and is subject to change. The default value is `false`. This property is used when the `PageType` property is set to `PromptDialog`. For more information, see [The PromptDialog object](../devenv-page-type-promptdialog.md). 
+
+Setting `IsPreview` to `true` has no further impact across Business Central. It has no relation to the private or public preview programs for any Microsoft products, nor is it exclusive to sandbox environments.
 
 ## See Also
 

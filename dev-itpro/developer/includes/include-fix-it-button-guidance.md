@@ -1,0 +1,4 @@
+- Fix-it actions are often phrased: “Set value to...”. 
+  - Such as: “Set value to 10”, “Set Status to Open”, or “Set value to HOME”.
+- Fix-it action tooltips are often phrased: “Sets the value...”.
+- Value states are capitalized such as: Yes, Open, Released. Avoid signs for values such as = ,“”, ().

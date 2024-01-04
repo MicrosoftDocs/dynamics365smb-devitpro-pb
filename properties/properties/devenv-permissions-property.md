@@ -93,7 +93,6 @@ codeunit 50113 CreateCustomer
         CustLedgerEntry.Insert();
     end;
 }
-
 ```
 
 > [!NOTE]  

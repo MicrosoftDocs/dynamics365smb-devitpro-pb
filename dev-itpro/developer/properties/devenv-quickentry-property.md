@@ -28,7 +28,7 @@ Specifying an expression as the value of the property is not supported.
 
 ## Property Value
  
-**true** specifies that the field has input focus when users move through fields by pressing Enter; **false** specifies the field to be skipped. The default is **true**.
+**true** specifies that the field has input focus when users move through fields by selecting <kbd>Enter</kbd>; **false** specifies the field to be skipped. The default is **true**.
 
 
 > [!NOTE]  
@@ -36,7 +36,7 @@ Specifying an expression as the value of the property is not supported.
 
 ## Remarks  
 
-This property helps accelerate data entry, when using the keyboard, by only focusing on those fields a user typically fills in; skipping those that are rarely filled in. The **QuickEntry** property is respected when users press the Enter key. This behavior differs from using the Tab key, which will sequentially give input focus to all page controls. By using this property, you define a path for entering data, which is beneficial for repetitive data entry tasks.
+This property helps accelerate data entry, when using the keyboard, by only focusing on those fields a user typically fills in; skipping those that are rarely filled in. The **QuickEntry** property is respected when users select the <kbd>Enter</kbd> key. This behavior differs from using the <kbd>Tab</kbd> key, which will sequentially give input focus to all page controls. By using this property, you define a path for entering data, which is beneficial for repetitive data entry tasks.
 
 As a developer, the **QuickEntry** property can also be set by using Designer (see [Using Designer](../devenv-inclient-designer.md)). In the client, users can change the setting for their workspace by using personalization (see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)).
 

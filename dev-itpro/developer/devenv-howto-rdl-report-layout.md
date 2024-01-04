@@ -15,8 +15,7 @@ ms.author: solsen
 
 When you create a new report for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two things you have to consider; defining the report dataset of data items and columns, and then designing the report layout. These steps show you how to create a simple report based on an RDL layout. For more information about the report object, see [Report Object](devenv-report-object.md). And to learn how to extend an existing report, see [Report Extension Object](devenv-report-ext-object.md). 
 
-> [!IMPORTANT]  
-> RDL layouts can result in slower performance with document reports, regarding actions that are related to the user interface (for example. like sending emails) compared to Word layouts. When developing layouts for document reports, we recommend that you design Word layouts instead of RDL. With Word layouts, reports are not impacted by the security constraints on sandbox app domains like they are with RDL layouts. From a service perspective, RDL layouts are not trusted, so they will run in a sandbox app domain that only lives for the current report invocation.
+[!INCLUDE[RDL_layout_performance](includes/include-rdl-performance.md)]
 
 To create and modify RDL report layouts, you use SQL Server Report Builder or Microsoft RDLC Report Designer. For information about required versions of these tools, see [System Requirements](../deployment/system-requirement-business-central.md).
 
@@ -43,7 +42,7 @@ To facilitate testing your report layout, the following simple example extends t
     }
     ```
 
-2. Build the extension (**Ctrl+Shift+B**) to generate the MyRDLReport.rdl file.
+2. Build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) to generate the MyRDLReport.rdl file.
 3. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code to the report:  
 
     ```AL
@@ -64,16 +63,16 @@ To facilitate testing your report layout, the following simple example extends t
     }
     ```
 
-4. Build the extension (**Ctrl+Shift+B**). The `MyRDLReport.rdl` file is created in the root of the current project. 
+4. Build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>). The `MyRDLReport.rdl` file is created in the root of the current project. 
 5. Open the generated report layout file in **Microsoft SQL Server Report Builder**.
 6. Edit the layout by inserting a table. 
 7. Add the **Name** column from the **Datasets** folder into the table and save the .rdl file.
-8. Back in Visual Studio Code, press **Ctrl+F5** to compile and run the report in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].  
+8. Back in Visual Studio Code, select <kbd>Ctrl</kbd>+<kbd>F5</kbd>  to compile and run the report in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].  
 
 You'll now see the generated report in preview mode.
 
 > [!NOTE]  
-> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line:
+> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line:
 
 >```json
 >"al.compilationOptions": {
