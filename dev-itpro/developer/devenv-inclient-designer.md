@@ -98,7 +98,7 @@ For more information about QuickEntry property, from a user perspective, see [Ac
 Designer lets you add actions that link to pages and reports in the navigation bar using the bookmark icon ![bookmark icon.](media/ui_bookmark_icon.png "bookmark icon action bar") on the target page or report. The bookmark icon is also available in the Tell Me window.
 
 > [!NOTE]
-> Bookmarking is only available for pages and reports that are discoverable from Tell Me (search icon on top right). For more information on how to make pages and reports searchable, see [Adding Pages and Reports to Tell me](devenv-al-menusuite-functionality.md).
+> Bookmarking is only available for pages and reports that are discoverable from Tell Me (search icon on top right). For more information on how to make pages and reports searchable, see [Add pages and reports to Tell me](devenv-al-menusuite-functionality.md).
 
 This feature allows the user to efficiently create multiple links and group together the important or commonly used links for a specific profile in the Role Center navigation bar. For more information about bookmarking, see [Bookmark a Link to a Page or Report on Your Role Center](/dynamics365/business-central/ui-bookmarks) in the [!INCLUDE[prod_short](includes/prod_short.md)] Application Help.
 
