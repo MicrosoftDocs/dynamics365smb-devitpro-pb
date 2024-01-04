@@ -57,7 +57,7 @@ In the paragraphs that follow, you can read more about report error telemetry an
 
 [!INCLUDE[report_telemetry_intro](../includes/include-report-telemetry-intro.md)]
 
-When you run a report, either from the UI, in a background sessions, or from a web service call, it might fail. The failure can either be in the AL code of the report or in the layout. When a report fails to generate, you get an RT0006 event in telemetry and the `result` column in the `customDimensions` includes the title of the exception that was thrown by the service or the AL code. 
+When you run a report, either from the UI, in a background session, or from a web service call, it might fail. The failure can either be in the AL code of the report or in the layout. When a report fails to generate, you get an RT0006 event in telemetry and the `result` column in the `customDimensions` includes the title of the exception that was thrown by the service or the AL code. 
 
 [!INCLUDE[telemetry_error_kql](../includes/include-report-telemetry-error-kql.md)]
 
@@ -69,9 +69,9 @@ In the following table, we list some common report exceptions thrown by the [!IN
 
 The different exceptions in the table are grouped by the following severities:
 
-* **Error** (this severity is likely an error in the report or the code around the report invocation)
-* **TransientError** (this severity was likely due to a transient issue in the infrastructure running [!INCLUDE[prod_short](includes/prod_short.md)] and can likely be resolved by a retry)
-* **Warning** (this severity is likely not an error in the report. The issue can likely be resolved by fixing something in the environment, such as changing the permissions for a user/role)
+- **Error** (this severity is likely an error in the report or the code around the report invocation)
+- **TransientError** (this severity was likely due to a transient issue in the infrastructure running [!INCLUDE[prod_short](includes/prod_short.md)] and can likely be resolved by a retry)
+- **Warning** (this severity is likely not an error in the report. The issue can likely be resolved by fixing something in the environment, such as changing the permissions for a user/role)
 
 <br>
 
