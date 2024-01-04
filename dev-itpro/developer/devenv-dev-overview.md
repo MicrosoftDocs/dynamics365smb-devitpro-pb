@@ -53,10 +53,10 @@ Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md
 * Assists you with the creation of appropriate settings and configuration files.
 * Provides code snippets to help create application objects.
 * Gives compiler validation while you code.
-* Provides efficient publishing process. You can publish and see your code running by just pressing **Ctrl+F5**.
+* Provides efficient publishing process. You can publish and see your code running by just selecting <kbd>Ctrl</kbd>+<kbd>F5</kbd> .
 
 > [!NOTE]
-> For some users the **Ctrl+F5** shortcut key may not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** menu in Visual Studio Code.  
+> For some users the <kbd>Ctrl</kbd>+<kbd>F5</kbd>  shortcut key may not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** menu in Visual Studio Code.  
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 

@@ -1,2 +1,2 @@
-> [!NOTE]
-[!INCLUDE[prod_short](../../includes/prod_short.md)] supports multiple ways to run asynchronous (async) operations, such as job queues, scheduled tasks, new sessions, and page background tasks. For more information, see [Async processing overview](../devenv-async-overview.md).    
+> [!NOTE] 
+> [!INCLUDE[prod_short](../../includes/prod_short.md)] supports multiple ways to run asynchronous (async) operations, such as job queues, scheduled tasks, new sessions, and page background tasks. For more information, see [Async processing overview](../devenv-async-overview.md).    

@@ -4,7 +4,7 @@ description: The SecretText data type is designed to protect sensitive values fr
 author: SusanneWindfeldPedersen
 ms.author: sodragon
 ms.custom: bap-template
-ms.date: 09/26/2023
+ms.date: 12/20/2023
 ms.reviewer: na
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -105,7 +105,7 @@ where the following steps may be required:
 2. Adding the credential to the body of a request for the initial log-in.
 3. Adding an API key to the parameters of a request
 
-The AL HttpClient and all the intermediate types required to make a request support methods, which accept the `SecretText` data type, so that the values can be passed directly to the AL runtime without being revealed to the debugger.
+The AL HttpClient and all the intermediate types required to make a request support method, which accept the `SecretText` data type, so that the values can be passed directly to the AL runtime without being revealed to the debugger.
 
 The following code snippet demonstrates how all the before mentioned scenarios can be implemented through these methods.
 

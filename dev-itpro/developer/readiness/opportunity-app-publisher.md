@@ -44,7 +44,7 @@ Learn more about the API to build connect apps: [Getting Started Developing Conn
 
 You can extend the default capabilities in [!INCLUDE[prod_short](../includes/prod_short.md)] to add extra productivity features or industry functionality to fit the needs of your customer base. The possibilities are plentiful.  
 
-In countries, where [!INCLUDE[prod_short](../includes/prod_short.md)] isn't localized by Microsoft, you can extend [!INCLUDE[prod_short](../includes/prod_short.md)] based on local requirements to respond to the regulatory or competitive needs of that market.  
+In countries/regions, where [!INCLUDE[prod_short](../includes/prod_short.md)] isn't localized by Microsoft, you can extend [!INCLUDE[prod_short](../includes/prod_short.md)] based on local requirements to respond to the regulatory or competitive needs of that market.  
 
 Here are a few examples of some apps that extend [!INCLUDE[prod_short](../includes/prod_short.md)]:
 

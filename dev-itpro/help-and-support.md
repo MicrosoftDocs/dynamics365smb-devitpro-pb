@@ -5,7 +5,7 @@ author: edupont04
 ms.reviewer: na
 ms.topic: article
 ms.author: edupont
-ms.date: 07/13/2023
+ms.date: 10/24/2023
 ---
 
 # Resources for Help and Support for [!INCLUDE[prod_long](includes/prod_long.md)]
@@ -57,17 +57,21 @@ If you support [!INCLUDE [prod_short](developer/includes/prod_short.md)] on-prem
 
 [!INCLUDE [ua-github-releases](includes/ua-github-releases.md)]
 
-For more information, see the [On-premises deployments](deployment/configure-help.md#on-premises-deployments) section in the [Configure the Help Experience](deployment/configure-help.md) article.
+Learn more at the [On-premises deployments](deployment/configure-help.md#on-premises-deployments) section in the [Configure the Help Experience](deployment/configure-help.md) article.
 
 ### Customize and extend the user assistance
 
-If you customize or extend [!INCLUDE[prod_short](includes/prod_short.md)], you are expected to also customize the user assistance so that users will have access to content that can help them get started, get unblocked, and learn more. For more information, see [User Assistance Model](user-assistance.md) and [Configure the Help Experience](deployment/configure-help.md).  
+If you customize or extend [!INCLUDE[prod_short](includes/prod_short.md)], you are expected to also customize the user assistance so that users will have access to content that can help them get started, get unblocked, and learn more. Learn more at [User assistance model](user-assistance.md) and [Configure the help experience](deployment/configure-help.md).  
+
+### Dynamics 365 implementation guidance
+
+Microsoft also provides content that can help you get started as a consultant, and you can find resources to help your implementation project. The [Dynamics 365 guidance hub](/dynamics365/guidance/) hosts non-product-specific implementation guidance, including [descriptions of business processes](/dynamics365/guidance/business-processes/overview). Learn more at [What is Dynamics 365 guidance?](/dynamics365/guidance/overview).  
 
 ## Support
 
 As a [!INCLUDE[prod_short](includes/prod_short.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prod_short](includes/prod_short.md)] tenants, and you are the first line of support. You can customize the support experience, and you have access to information that can help you troubleshoot any issues that your customers report.  
 
-For more information, see [Technical Support](technical-support.md).  
+Learn more at [Technical Support](technical-support.md).  
 
 ## Training
 
@@ -94,11 +98,11 @@ This article provides information about the following types of resources:
 
 ### <a name="partner"></a>Get set up as a partner
 
-If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Get Started as a Reseller of Business Central Online](administration/get-started-online.md) and [Get Started with Building Apps](developer/readiness/get-started.md).  
+If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. Learn more at [Get Started as a Reseller of Business Central Online](administration/get-started-online.md) and [Get Started with Building Apps](developer/readiness/get-started.md).  
 
 <!--### <a name="ready2go"></a>Get started with the "Ready to Go" program
 
-The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. For more information, see [The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md).  
+The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. Learn more at [The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md).  
 
 Get an overview of role-specific training material from Microsoft in the [The "Ready to Go" learning catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json).  -->
 
@@ -120,7 +124,6 @@ You can learn about current and coming capabilities through a number of differen
 > |Integrating with Business Central using web services|[learn.microsoft.com/dynamics365/business-central/dev-itpro/webservices/](webservices/web-services.md)|Use this content to learn how to integrate Business Central with other products by using web services.|
 > |Migrate to Business Central online|[learn.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/upgrading-to-business-central-online](upgrade/upgrading-to-business-central-online.md)|Use this content to learn how you can move an on-premises solution to Business Central online.|
 > |Features not implemented in on-premises deployments|[learn.microsoft.com/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises](features-not-implemented-on-premises.md)|Use this content to learn which capabilities in Business Central online are not available in Business Central on-premises deployments.|
-> |The Business Central learning catalog|[learn.microsoft.com/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
 > |Free eLearning|[/learn/dynamics365/business-central](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)|Free [!INCLUDE [prod_short](developer/includes/prod_short.md)] collections and learning paths on Microsoft Learn|
 
 ### <a name="ideas"></a>Share an idea about a new feature you'd like to have
@@ -150,7 +153,7 @@ As a partner, you have different support channels depending on what type of issu
 
 [!INCLUDE [prod_support](includes/prodsupport.md)]
 
-For more information, see [Technical Support for [!INCLUDE[prod_long](developer/includes/prod_long.md)]](technical-support.md).  
+Learn more at [Technical Support for [!INCLUDE[prod_long](developer/includes/prod_long.md)]](technical-support.md).  
 
 ### <a name="github"></a>Engage with us on GitHub
 
@@ -182,7 +185,7 @@ GitHub brings together communities of developers and other contributors to disco
   * Product Help (English US): [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)
   * Developer and administration content: [https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb)
 
-  For more information, see [Contribute to the Help](help/contributor-guide.md).
+  Learn more at [Contribute to the Help](help/contributor-guide.md).
 
 #### <a name="nonproduct"></a>Non-product related questions
 
@@ -194,7 +197,7 @@ On occasion, as a partner, you will run into questions that are not directly rel
 
 Giving prospects access to a pre-configured trial of [!INCLUDE[prod_short](includes/prod_short.md)] is an elegant way to introduce them to [!INCLUDE[prod_short](includes/prod_short.md)]. You can use the standard trial provided by Microsoft, or you can prepare your own including relevant extensions.  
 
-For more information, see [Preparing Demonstration Environments](administration/demo-environment.md).  
+Learn more at [Preparing Demonstration Environments](administration/demo-environment.md).  
 
 ## See also
 

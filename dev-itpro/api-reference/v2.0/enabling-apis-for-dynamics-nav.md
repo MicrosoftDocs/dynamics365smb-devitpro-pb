@@ -19,12 +19,29 @@ ms.author: solsen
 
 ## Enable access to the APIs
 
-1. Open the [Business Central Administration tool](../../administration/administration-tool.md).
-2. Expand the **OData Services** tab, and select the **Enable OData Services** checkbox first, then select the **Enable API Services** checkbox.
-3. Check that the values for the **OData Base URL** and **Port** are entered correctly.  
+1. Open the [!INCLUDE[adminshell](../../developer/includes/adminshell.md)].
+
+   [!INCLUDE[open-admin-shell](../../developer/includes/open-admin-shell.md)]
+1. Run the [Set-NAVServerConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet to enable OData services.
+
+   ```powershell
+   Set-NAVServerConfiguration <BC server instance name> -KeyName ODataServicesEnabled -KeyValue true
+   ```
+1. Run the Set-NAVServerConfiguration cmdlet to enable API Services.
+
+   ```powershell
+   Set-NAVServerConfiguration <BC server instance name> -KeyName ApiServicesEnabled -KeyValue true
+   ```
+1. Check that the values for the `PublicODataBaseUrl` and `ODataServicesPort` parameters are correct.  
     When exposing a web service, you must open the port for other consumers of your web service to access it. You can have your system administrator add the port through Windows Firewall on the computer running [!INCLUDE[prod_short](../../includes/prod_short.md)] server. The default port for OData web services is 7048.
-4. In [!INCLUDE[prod_short](../../includes/prod_short.md)], search for **API Setup** and then choose the related link.
-5. On the **API Setup** page, choose the **Integrate APIs** button.  
+
+   You can verify these settings by running the [Get-NAVServerConfiguration](/powershell/module/microsoft.dynamics.nav.management/get-navserverconfiguration):
+
+   ```powershell
+   Get-NAVServerConfiguration <BC server instance name>
+   ```
+1. In [!INCLUDE[prod_short](../../includes/prod_short.md)], search for **API Setup** and then choose the related link.
+1. On the **API Setup** page, choose the **Integrate APIs** button.  
     This will start a process of populating all the integration tables with records for all APIs. The process can take several minutes.
 
 Depending on where you want to access the APIs from, you must specify the correct endpoint. For more information, see [Endpoints for APIs](endpoints-apis-for-dynamics.md).

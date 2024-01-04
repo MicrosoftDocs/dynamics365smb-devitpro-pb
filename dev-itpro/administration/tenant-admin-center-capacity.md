@@ -24,7 +24,7 @@ To help our customers manage and plan their storage costs on an ongoing basis, t
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administrators can create multiple sandbox and production type environments for various purposes, like:
 
 - Creating more business branches
-- Moving into more countries
+- Moving into more countries/regions
 - Expanding within their current country/region
 - Development
 - Testing changes

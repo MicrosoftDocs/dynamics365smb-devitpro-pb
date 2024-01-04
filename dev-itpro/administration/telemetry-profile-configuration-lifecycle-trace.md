@@ -1,15 +1,15 @@
 ---
-title: Analyzing Profile Configuration Lifecycle Telemetry
+title: Analyzing profile configuration lifecycle telemetry
 description: Learn about the telemetry for configuration profiles using the in-client designer.  
 author: jswymer
 ms.author: jswymer
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 10/04/2022
+ms.date: 12/18/2023
 ms.custom: bap-template
 ---
 
-# Analyzing Profile Configuration Lifecycle Telemetry
+# Analyzing profile configuration lifecycle telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2022 release wave 2, version 21.0, and later
 

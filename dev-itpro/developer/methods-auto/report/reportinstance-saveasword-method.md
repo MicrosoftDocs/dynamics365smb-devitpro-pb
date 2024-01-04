@@ -44,64 +44,39 @@ The path and the name of the file that you want to save the report as. The path 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use the SaveAsWORD method on the global Report object or on Report variables. If, at design time, you do not know the specific report that you want to run, then use the global Report object and specify the report number in the *Number* parameter. If you do know which report you want to run, then create a Report variable, set the Subtype of the variable to a specific report, and use this variable when you call the SaveAsWORD method.  
+The SaveAsWord method can be used on the Report data type and on Report variables. When you are programming the SaveAsWord method, if you do not know the specific report that you want to run, then use the static version of the SaveAsWord method, see [Report.SaveAsWord(Integer, Text [, var Record])](./report-saveasword-method.md).  
 
- When you call the SaveAsWORD method, the report is generated and saved to "*FileName*." The request page is not shown.  
+When you call the SaveAsWord method, the report is generated and saved to the file specified in "*FileName*." The request page is not shown.  
 
- If the destination folder that you specify in *FileName* does not exist, then you get the following error:  
+[!INCLUDE[report_download_file](../../includes/include-report-download-file.md)]
 
- **The specified path is invalid.**  
+### Error conditions  
+The method can fail in the following three ways:
+- [!INCLUDE[report_saveas_error_list_folder_not_exists](../../includes/include-report-saveas-error-list-folder-not-exists.md)]
+- [!INCLUDE[report_saveas_error_list_file_used](../../includes/include-report-saveas-error-list-file-used.md)]
+- [!INCLUDE[report_saveas_error_list_file_permission](../../includes/include-report-saveas-error-list-file-permission.md)]
 
- If the file that you specify in *FileName* is being used, then you get the following error:  
 
- **An I/O exception occurred during the operation.**  
+[!INCLUDE[io_errors](../../includes/include-io-errors.md)]
 
- If the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] process does not have permission to write to the file that you specify in *FileName*, then you get the following error:  
+## Example
 
- **Either the caller does not have the required permission or the specified path is read-only.**  
+This example shows how to use the static SaveAsWord method in a safe way (where no errors occur).
 
-## Example  
- This example shows how to use the SaveAsWORD method to save the Word document on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)], and then download the file to a different computer that is running the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] application. 
- 
-```  
+```al
 var
-    TempFile: File;
-    Name: Text[250];
-    NewStream: InStream;
-    ToFile: Text[250];
-    ReturnValue: Boolean;
+    FileNameAndPath: Text[250];
+    MyReportInstance: Report::MyReport
 begin
-    // Specify that TempFile is opened as a binary file.  
-    TempFile.TextMode(False);  
-    // Specify that you can write to TempFile.  
-    TempFile.WriteMode(True);  
-    Name := 'C:\Temp\TempReport.doc';  
-    // Create and open TempFile.  
-    TempFile.Create(Name);  
-    // Close TempFile so that the SaveAsWORD method can write to it.  
-    TempFile.Close;  
-    
-    Report.SaveAsWORD(406,Name);  
-    
-    TempFile.Open(Name);  
-    TempFile.CreateInStream(NewStream);  
-    ToFile := 'Report.doc';  
-    
-    // Transfer the content from the temporary file on the  
-    // server to a file on the client.  
-    ReturnValue := DownloadFromStream(  
-      NewStream,  
-      'Save file to client',  
-      '',  
-      'Word File *.doc| *.doc',  
-      ToFile);  
-    
-    // Close the temporary file.  
-    TempFile.Close();  
+    // setup that FileNameAndPath is valid to write to
+
+    MyReportInstance.SaveAsWord(FileNameAndPath);
 end;
 ```  
 
- You can create an action on a page and set the action to run this code. When you run the action, the **Export File** dialog box opens. Choose **Save** to save the file to the client.
+[!INCLUDE[report_save_as_example](../../includes/include-report-saveas-example.md)]
+
+You can create an action on a page and set the action to run this code. When you run the action, the **Export File** dialog box opens. Choose **Save** to save the file to the client.
 
 
 ## See Also

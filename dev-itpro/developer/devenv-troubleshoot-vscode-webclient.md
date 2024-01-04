@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ms.topic: overview
 ms.collection: 
-ms.date: 09/13/2023
+ms.date: 12/20/2023
 ms.custom: bap-template
 ---
 
@@ -32,13 +32,13 @@ To open and explore a page from the Page Inspector, do the following:
 1. Locate the page that you want to inspect.
 1. From that page, run the **Page Inspection** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
 1. Choose the **Explore page in Visual Studio Code** link.  
-1. Next, to open a Visual Studio Code instance, you must choose the **Open** button in the **Allow an extension to open this URI?** dialog. If you already have Visual Studio Code running that instance will open.
-1. Then, you must specify, if you want to create a new project, or use an existing project. You will only be asked the first time, and from then on, the Visual Studio Code window that was last active will be used.
+1. Next, to open a Visual Studio Code instance, you must choose the **Open** button in the **Allow an extension to open this URI?** dialog. If you already have Visual Studio Code running that instance opens.
+1. Then, you must specify, if you want to create a new project, or use an existing project. You'll only be asked the first time, and from then on, the Visual Studio Code window that was last active will be used.
 1. Next, you must decide if you want to download symbols.  
     > [!NOTE]  
     > If you specify yes, the app.json file will be updated with the dependent extensions of the page, which are shown on the **Extensions** tab in the **Page Inspection** page, and the symbols will automatically be downloaded. You can specify no, if you're already working on the specific source code files.  
     > If you say no, and don't have the right symbols downloaded, you will not be able to navigate to the object source code.
-1. Now, you are prompted whether to do a snapshot or regular debugging session, or not to debug, but just view the source code.  
+1. Now, you're prompted whether to do a snapshot or regular debugging session, or not to debug, but just view the source code.  
     > [!NOTE]  
     > For production environments, regular debugging isn't supported.
 1. If you want to debug, then set breakpoints and go back to the web client to run the task. When the breakpoint is hit, you can inspect the code in Visual Studio Code.  
@@ -58,8 +58,8 @@ In the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can open 
 To attach the debugger to a session, do the following:
 
 1. Go to the **Help and Support** page, and then choose the **Attach debugger to this session** link under the **Troubleshooting** section.
-1. Next, to open a Visual Studio Code instance, you must choose the **Open** button in the **Allow an extension to open this URI?** dialog. If you already have Visual Studio Code running that instance will open.
-1. Then, you must specify, if you want to create a new project, or use an existing project. You will only be asked the first time, and from then on, the Visual Studio Code window that was last active will be used.
+1. Next, to open a Visual Studio Code instance, you must choose the **Open** button in the **Allow an extension to open this URI?** dialog. If you already have Visual Studio Code running that instance opens.
+1. Then, you must specify, if you want to create a new project, or use an existing project. You'll only be asked the first time, and from then on, the Visual Studio Code window that was last active will be used.
 1. If you want to debug, then set breakpoints and go back to the web client to run the task. When the breakpoint is hit, you can inspect the code in Visual Studio Code.  
     > [!NOTE]  
     > For production environments, regular debugging isn't supported.
@@ -69,9 +69,9 @@ To attach the debugger to a session, do the following:
 - If Visual Studio Code is already open, the last active session is used; otherwise, a new Visual Studio Code session opens. If the AL Language extension isn't installed, the user is asked to install it, and the process ends.
 - When invoked, a new project is created, and a matching launch configuration is created, depending on the current environment being a production or sandbox environment.
 - If the user chooses to debug, Visual Studio Code attaches to the web client process, which it was invoked from and awaits breaking on error.
-- If reusing a project and the source files aren't up to date with the version on the server, the breakpoints will not be hit correctly when debugging. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
+- If reusing a project and the source files aren't up to date with the version on the server, the breakpoints won't be hit correctly when debugging. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
 - When you choose to generate new projects, remember to delete the projects occasionally to not accumulate many unused projects.
-- Running the web client in a browser, you're typically not running the browser as an administrator, which means that Visual Studio Code also doesn't open in administrator mode. So, for example, if Visual Studio Code prompts you for an update, and you choose yes, you'll get an error, because you don't have permissions to update. It's then recommended to shut down Visual Studio Code, and reopen it as an administrator and update it. Then, you can continue debugging.
+- Running the web client in a browser, you're typically not running the browser as an administrator, which means that Visual Studio Code also doesn't open in administrator mode. So, for example, if Visual Studio Code prompts you for an update, and you choose yes, you get an error, because you don't have permissions to update. It's then recommended to shut down Visual Studio Code, and reopen it as an administrator and update it. Then, you can continue debugging.
 
 ## See also
 

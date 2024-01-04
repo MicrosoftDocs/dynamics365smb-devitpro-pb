@@ -8,22 +8,22 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 12/15/2023
 ---
 
 # Telemetry 
 
 Telemetry includes the top-level AL events and any returned errors logged from the service. These events can provide necessary information and errors that can be used to troubleshoot issues happening in the tenant's environment. 
 
-## Get Environment Telemetry
+## Get environment telemetry
 
-Returns the telemetry information for the provided environment and filters. it's recommended that you provide start and end time parameters to return a manageable data set.
+Returns the telemetry information for the provided environment and filters. It's recommended that you provide start and end time parameters to return a manageable data set.
 
 ```
-GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
+GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
 ```
 
-### Route Parameters
+### Route parameters
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
@@ -53,7 +53,7 @@ Returns the telemetry logs and with data column headers.
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
 `applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
@@ -65,7 +65,7 @@ Returns the telemetry logs and with data column headers.
 
    - target: {logCategory} - the provided log category isn't a valid value
 
-## See Also
+## See also
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

@@ -16,7 +16,18 @@ The Microsoft commercial marketplace offers a wide variety of apps from Microsof
 
 ## Before you begin
 
-You can only add apps that are available on AppSource to your collection. That is, you cannot host your own app and add it to the list.  
+You can only add apps that are available on AppSource to your collection. That is, you can't host your own app and add it to the list.
+
+You must update the **app.json** file with the dependency of the **Recommended Apps** per-tenant extension.
+
+```JSON
+  {
+    "id":  "a53a4bb0-aa53-8ff8-77d6-fe3388db0eb8",
+    "name":  "Recommended Apps",
+    "publisher":  "Microsoft",
+    "version":  "23.0.0.0"
+  }
+```
 
 ## Building a collection of recommended apps
 
@@ -25,9 +36,9 @@ Building collections requires some development. To make that easier, [!INCLUDE[p
 * **Recommended Apps List** page
 * **Recommended App Card** page
 * **Recommended Apps** table
-* **Recommend Apps** codeunit
+* **Recommended Apps** codeunit
 
-You must use the **Recommend Apps** codeunit to build collections. The following table provides an overview of the methods in the codeunit. You can copy the information for the parameters from the listing for the app on AppSource.
+You must use the **Recommended Apps** codeunit to build collections. The following table provides an overview of the methods in the codeunit. You can copy the information for the parameters from the listing for the app on AppSource.
 
 |Method  |Description  |
 |---------|---------|

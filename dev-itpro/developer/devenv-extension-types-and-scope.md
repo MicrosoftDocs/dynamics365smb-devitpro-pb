@@ -45,7 +45,7 @@ For AppSource and Microsoft apps:
 - From the **Extension Management** page in [!INCLUDE[prod_short](../includes/prod_short.md)], you can navigate to the AppSource embed view, locate the app, and install it. For more information, see [Installing and Uninstalling Extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall).
 
 > [!NOTE]  
-> The AppSource offer listing contains the list of supported countries. You must verify that the app is available for the country/region of your environment. If it isn't available for the country/region of your environment, the installation will fail.
+> The AppSource offer listing contains the list of supported countries/regions. You must verify that the app is available for the country/region of your environment. If it isn't available for the country/region of your environment, the installation will fail.
 
 For apps provided by Embed ISVs, installation is handled by the Embed ISV partner.
 
@@ -116,7 +116,7 @@ DEV extensions are uninstalled when the sandbox environment is upgraded or reloc
 
 In general, extensions are uniquely defined by their `id`. A specific version of an app is defined by the `id` and `version`, adding `environment` for per-tenant extensions.
 
-- It isn't possible to deploy a **Global app** and a **PTE** with the same `id`. During the upload of a PTE, we're validating that there is not a Global app with the same `id`. Currently, the AppSource validation process allows you to upload an app with the same `id` as an existing PTE to AppSource, but this means that it isn't possible to update the PTE anymore.
+- It isn't possible to deploy a **Global app** and a **PTE** with the same `id`. During the upload of a PTE, we're validating that there is not a Global app with the same `id`. Currently, the AppSource validation process doesn't detect all identity conflicts with PTEs and uploading an app with the same id as an existing PTE to AppSource means that it isn't possible to update the PTE anymore. For more information, see the [Technical validation checklist](devenv-checklist-submission.md#technical-validation-checklist).
 
 - It isn't possible to deploy a **Global app** and a **DEV** extension with the same `id` and `version`. When deploying the DEV version of a Global app from Visual Studio Code to a sandbox environment, for example, for development or troubleshooting, you must make sure that your DEV extension has a different `version` than what is published to AppSource. Similarly, after you're done developing/testing your extension, you should increase the `version` before submitting to AppSource. 
 
