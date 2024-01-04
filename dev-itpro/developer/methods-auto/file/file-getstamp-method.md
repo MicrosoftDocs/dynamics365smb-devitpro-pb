@@ -55,8 +55,8 @@ The time that the file was last written to. Optional.
 ## Example  
  The following example gets the date and time that a file was written to and displays the data in a message box. The code example assumes that you have created the file 'C:\\MyFolder\\MyText.txt'. This example requires that you create the following global variables and text constant.  
 
-```
- var
+```al
+var
     varDate: Date;
     varTime: Time;
     varFileName: Text;

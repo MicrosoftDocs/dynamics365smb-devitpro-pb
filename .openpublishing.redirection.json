@@ -7473,6 +7473,16 @@
     "source_path": "dev-itpro/al-go/algo-use-azure-keyvault-for-secrets.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/errorinfo/errorinfo-addaction-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/errorinfo/errorinfo-addaction-string-integer-string-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/errorinfo/errorinfo-addnavigationaction-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/errorinfo/errorinfo-addnavigationaction-string-method",
+    "redirect_document_id": false
    }
   ] 
 }

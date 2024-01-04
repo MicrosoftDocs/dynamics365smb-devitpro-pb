@@ -1,6 +1,6 @@
 ---
-title: "AppSourceCop Warning AS0119"
-description: "The source symbol's MovedTo property value does not match the destination AppId."
+title: "AppSourceCop Error AS0124"
+description: "Changing the target of an extension object that has been published is not allowed, because this might break the dependent extensions."
 ms.author: solsen
 ms.custom: na
 ms.date: 12/22/2023
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Warning AS0119
-The value of the MovedTo property in the source symbol does not match the destination AppId.
+# AppSourceCop Error AS0124
+Changing an extension object's target is not allowed.
 
 ## Description
-The source symbol's MovedTo property value does not match the destination AppId.
+Changing the target of an extension object that has been published is not allowed, because this might break the dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

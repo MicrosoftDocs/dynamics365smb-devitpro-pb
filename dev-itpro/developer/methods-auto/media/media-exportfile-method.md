@@ -55,8 +55,8 @@ Specifies the full path and name of the file to create for the exported media.
 
 The code iterates over records in the **My Items** table. If a media object is referenced in the *Image* field, the media is exported to a file in the *C:\images* folder. The file is given a name in the format *ItemNN.jpg*, where *NN* is the number assigned to item record in the table, as specified by the **No.** field.
 
-```  
- var
+```al 
+var
     myItemRec: Record "My Items";
     fileName: Text;
     count: Integer;
