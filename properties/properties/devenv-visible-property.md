@@ -55,7 +55,13 @@ When a part, field, action, or view is hidden by setting the **Visible** propert
 
 When the **Visible** property is specified by a Boolean variable, users can choose to hide the control while the Boolean evaluates to true, but cannot forcibly show the control while the control Boolean evaluates to false.
 
+### Loading of Data
+Even if a field on page is hidden by setting the **Visible** property the data to the field will still be loaded.
+> [!NOTE]  
+> Hidden record fields on page that calculates data such as flowfields can still lead to performance issues even if they are hidden. For more information see [Writing efficient pages](../../dev-itpro/performance/performance-developer.md#writing-efficient-pages)
+
 ## See Also  
 
 [Properties](devenv-properties.md)   
-[InDataSet Property](devenv-indataset-property.md)
+[InDataSet Property](devenv-indataset-property.md)   
+[Performance Developer](../../dev-itpro/performance/performance-developer.md)   
