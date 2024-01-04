@@ -149,7 +149,7 @@ The only file in the extension project that's required is an app.json. You can c
     > [!NOTE]
     > For customization extensions, the version number must be lower than the final version for publication. Otherwise, you can't run upgrade on the extension later.
 
-4. Build and compile the extension package. To build the extension package, press Ctrl+Shift+B.
+4. Build and compile the extension package. To build the extension package, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
 > [!TIP]
 > This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in **Task 17**. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not not include upgrade code.
@@ -237,7 +237,7 @@ You'll create two versions of this extension. The first version contains the tab
 
 11. Build the extension package for the first version.
 
-    To build the extension package, press Ctrl+Shift+B. This step creates an .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
+    To build the extension package, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>. This step creates an .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
 
 ### Create the second version - empty
 
@@ -282,7 +282,7 @@ You'll create two versions of this extension. The first version contains the tab
 4. Increase the `version` in the app.json file.
 5. Build the extension package for the second version.
 
-    To build the extension package, press Ctrl+Shift+B.
+    To build the extension package, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
 ## DATA UPGRADE
 <!--

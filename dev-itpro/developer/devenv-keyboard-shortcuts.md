@@ -19,48 +19,48 @@ The following table provides an overview of some of the shortcut key combination
 
 |Keyboard Shortcut| Action|
 |-----------------|-------|
-|**Ctrl+Shift+P**|Show All Commands|
-|**Alt+F6**|Download source code|
-|**Alt+A Alt+L**|AL Go! Generates a HelloWorld project|
-|**Ctrl+Shift+B**|Compile and Package|
-|**F5**|Compile, Package, and Publish|  
-|**Ctrl+F5**|Build and publish without debugging. **Note:** The keyboard shortcut has a different meaning when debugging.|
-|**F6**|Publish and open Designer|
-|**Ctrl+F2**|Update the compiler used by the service tier(s)|
+|<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>|Show All Commands|
+|<kbd>Alt</kbd>+<kbd>F6</kbd>|Download source code|
+|<kbd>Alt</kbd>+<kbd>A</kbd>+<kbd>L</kbd>|AL Go! Generates a HelloWorld project|
+|<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>|Compile and Package|
+|<kbd>F5</kbd>|Compile, Package, and Publish (with debugging)|  
+|<kbd>Ctrl</kbd>+<kbd>F5</kbd>|Build and publish without debugging. **Note:** The keyboard shortcut has a different meaning when debugging.|
+|<kbd>F6</kbd>|Publish and open Designer|
+|<kbd>Ctrl</kbd>+<kbd>F2</kbd>|Update the compiler used by the service tier(s)|
 
 ## Editing in Visual Studio Code
 
 |Keyboard Shortcut| Action|
 |-----------------|-------|
-|**Ctrl+Space**|Look up suggestions for the current object|
-|**Ctrl+X**|Cut|
-|**Ctrl+C**|Copy|
-|**Ctrl+V**|Paste|
-|**Ctrl+F2**|Select all occurrences|
-|**F12**|Go to definition|
-|**Alt+F12**|Peek definition|
-|**Shift+F12**|Show references|
-|**Ctrl+Shift+Space**|Look up parameter hints|
-|**Ctrl+K Ctrl+C**|Add line comment|
-|**Ctrl+K Ctrl+U**|Remove line comment|
-|**Ctrl+Shift+P**|Show all commands|
-|**F2**|Rename (use **Enter** to rename, use **Shift+Enter** to preview)|
-|**Shift+Alt+E**|Look up events and insert event subscriber in code for a selected event.|
+|<kbd>Ctrl</kbd>+<kbd>Space</kbd>|Look up suggestions for the current object|
+|<kbd>Ctrl</kbd>+<kbd>X</kbd>|Cut|
+|<kbd>Ctrl</kbd>+<kbd>C</kbd>|Copy|
+|<kbd>Ctrl</kbd>+<kbd>V</kbd>|Paste|
+|<kbd>Ctrl</kbd>+<kbd>F2</kbd>|Select all occurrences|
+|<kbd>F12</kbd>|Go to definition|
+|<kbd>Alt</kbd>+<kbd>F12</kbd>|Peek definition|
+|<kbd>Shift</kbd>+<kbd>F12</kbd>|Show references|
+|<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd>|Look up parameter hints|
+|<kbd>Ctrl</kbd>+<kbd>K Ctrl</kbd>+<kbd>C</kbd>|Add line comment|
+|<kbd>Ctrl</kbd>+<kbd>K Ctrl</kbd>+<kbd>U</kbd>|Remove line comment|
+|<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>|Show all commands|
+|<kbd>F2</kbd>|Rename (use </kbd>Enter</kbd> to rename, use <kbd>Shift</kbd>+<kbd>Enter</kbd> to preview)|
+|<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>E</kbd>|Look up events and insert event subscriber in code for a selected event.|
 
 ## Errors in Visual Studio Code
 
 |Keyboard Shortcut| Action|
 |-----------------|-------|
-|**F8**|Move to the next error or warning|
-|**Shift+F8**|Move to the previous error or warning|
+|<kbd>F8</kbd>|Move to the next error or warning|
+|<kbd>Shift</kbd>+<kbd>F8</kbd>|Move to the previous error or warning|
 
 ## Compile and publish in Visual Studio Code
 
 |Keyboard Shortcut| Action|
 |-----------------|-------|
-|**Ctrl+Shift+B**|Compile and build the solution|
-|**Ctrl+F5**|Build and deploy|
-|**Shift+Alt+W**| Publish full dependency tree for the active project|
+|<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>|Compile and build the solution|
+|<kbd>Ctrl</kbd>+<kbd>F5</kbd>|Build and deploy|
+|<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>W</kbd>| Publish full dependency tree for the active project|
 
 ## Debugging in Visual Studio Code
 
@@ -68,13 +68,13 @@ For topics on debugging in AL, see [Debugging](devenv-debugging.md) and [Snapsho
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
-|**F5**           |Start debugging session|
-|**Ctrl+F5**|Publish without building. **Note:** The keyboard shortcut has a different meaning when not debugging.|  
-|**Ctrl+Alt+F5**  |Start RAD publishing without debugging|
-|**Alt+F5**      |Start RAD with debugging|
-|**F7**|Start a snapshot debugging session|
-|**Shift+F7**|List all available snapshots|
-|**Alt+F7**|Finish a snapshot debugging session|
+|<kbd>F5</kbd>           |Start debugging session|
+|<kbd>Ctrl</kbd>+<kbd>F5</kbd>|Publish without building. **Note:** The keyboard shortcut has a different meaning when not debugging.|  
+|<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F5</kbd>  |Start RAD publishing without debugging|
+|<kbd>Alt</kbd>+<kbd>F5</kbd>      |Start RAD with debugging|
+|<kbd>F7</kbd>|Start a snapshot debugging session|
+|<kbd>Shift</kbd>+<kbd>F7</kbd>|List all available snapshots|
+|<kbd>Alt</kbd>+<kbd>F7</kbd>|Finish a snapshot debugging session|
 
 ## Profiling in Visual Studio Code
 
@@ -82,11 +82,11 @@ For more information about profiling, see [AL Profiler Overview](devenv-al-profi
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
-|**Enter+Toggle** | Expand and collapse a node. |
-|**Arrow+Left** | Collapse a node. |
-|**Arrow+Right** | Expand a node. |
-|- (minus) | Collapse all nodes.|
-|* (star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
+|<kbd>Enter</kbd> | Expand and collapse a node. |
+|<kbd>Left arrow</kbd> | Collapse a node. |
+|<kbd>Right arrow</kbd> | Expand a node. |
+|<kbd>-</kbd> (minus) | Collapse all nodes.|
+|<kbd>*</kbd> (star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
 
 

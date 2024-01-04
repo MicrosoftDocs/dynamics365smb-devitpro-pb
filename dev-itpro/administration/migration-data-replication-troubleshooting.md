@@ -5,7 +5,7 @@ ms.author: jswymer
 ms.reviewer: jswymer 
 ms.service: dynamics365-business-central
 ms.topic: troubleshooting 
-ms.date: 01/16/2023
+ms.date: 01/02/2024
 ms.custom: bap-template
 ---
 
@@ -18,22 +18,22 @@ This article explains how to fix errors that you might encounter when you run da
 Resolution:
 
 - Make sure that the machine hosting Integration Runtime stays online all the time.
-- Shutting down the Integration Runtime host temporarily can be used to cancel an ongoing migration run, but if the host stays offline for too long, all cloud migration infrastructure may be automatically cleaned up, making resuming migrations impossible.
+- Shutting down the Integration Runtime host temporarily can be used to cancel an ongoing migration run, but if the host stays offline for too long, all cloud migration infrastructure might be automatically cleaned up, making resuming migrations impossible.
 - Make sure to wait before replacing the source database, or restoring it from a backup, until the migration run has completed.
 
 ## A database operation failed with the following error: 'Invalid object name … '
 
 Refer to previous issue.
 
-## A database operation failed with the following error: 'Could not find stored procedure ' … '
+## A database operation failed with the following error: 'Couldn't find stored procedure ' … '
 
 Refer to previous issue.
 
-## The specified row delimiter is incorrect. Cannot detect a row after parse 100 MB data.
+## The specified row delimiter is incorrect. Can't detect a row after parse 100-MB data.
 
 Cause:
 
-This error usually happens for large tables when they're copied table to table. This error happens only if the migration source is a SQL Server database, when the whole table is large and a single field contains a large value. For example, images larger than 20 MB stored in table fields may cause this error.
+This error usually happens for large tables when they're copied table to table. This error happens only if the migration source is a SQL Server database, when the whole table is large and a single field contains a large value. For example, images larger than 20 MB stored in table fields might cause this error.
 
 Resolution:
 

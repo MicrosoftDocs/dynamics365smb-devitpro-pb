@@ -1,17 +1,17 @@
 ---
-title: Extending Currency Exchange Rate Adjustments
+title: Extending currency exchange rate adjustments
 description: Explore opportunities to add capabilities to exchange rate adjustments. 
 author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: ivkoleti
-ms.date: 09/06/2023
+ms.date: 12/28/2023
 ms.topic: conceptual
 ms.custom: bap-template
 ---
 
-# Extending Currency Exchange Rate Adjustments
+# Extending currency exchange rate adjustments
 
-In 2023 release wave 2 we've added new capabilities to the process for adjusting currency exchange rates. This article can help you understand how to extend exchange rate adjustments to comply with the requirements that apply to your business.
+In 2023 release wave 2, we've added new capabilities to the process for adjusting currency exchange rates. This article can help you understand how to extend exchange rate adjustments to comply with the requirements that apply to your business.
 
 You can use [!INCLUDE [prod_short](includes/prod_short.md)] to do business in multiple currencies, so it's important that you can easily and accurately keep your exchange rates up to date.
 
@@ -42,14 +42,14 @@ The new **Exch. Rate. Adjmt. Parameters** table passes parameters from the reque
 * Let's us include table filters in the base implementation.
 * Allows you to extend it with additional business logic. 
  
-We save a detailed history of adjustments in the new **Exch. Rate. Adjmt. Ledger Entry** table, which is linked to each adjustment register. Here, you'll find all of the information you need to export and print a detailed report about adjustments.
+We save a detailed history of adjustments in the new **Exch. Rate. Adjmt. Ledger Entry** table, which is linked to each adjustment register. Here, you find all of the information you need to export and print a detailed report about adjustments.
 
 ## Enable the new feature
 
 When you turn on the new feature, [!INCLUDE [prod_short](includes/prod_short.md)] checks whether you have extensions that subscribe to the legacy events. It also checks whether there are subscribers to the new implementation in the same extension. If there are subscribers to the earlier implementation, but aren't subscribers to the new, you can't enable the feature.
 
-## See Also
+## See also
 
 [Extending Application Areas](devenv-extending-application-areas.md)  
 [Module System Application](/dynamics365/business-central/application/system-application/module/system-application)  
-[Module Base Application](/dynamics365/business-central/application/reference/base%20application/)  
+[Module Base Application](/dynamics365/business-central/application/base-application/module/base-application)

@@ -1,15 +1,15 @@
 ---
-title: Creating and Altering Business Central Databases
+title: Creating and altering Business Central databases
 description: Create a new database by using the New-NAVDatabase cmdlet in the Administration Shell. 
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/29/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
-# Creating Databases in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
+# Creating databases in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
 [!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
 
@@ -38,7 +38,7 @@ If you have a multitenant deployment architecture, you create an application dat
 
 To create an application database, for either a single-tenant or multitenant deployment, you use the [New-NAVApplicationDatabase cmdlet](/powershell/module/microsoft.dynamics.nav.management/new-navapplicationdatabase). This cmdlet is available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. You use the New-NAVApplicationDatabase cmdlet to create either new database or initialize an existing empty database to make it an [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application database.
 
-- If you create a new database, the cmdlet will add a database in SQL Server. The database includes the tables and data required for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application database. The cmdlet creates a master data file (MDF) and log data file (LDF). Using the cmdlet, you can set the database name, the collation, and where to store the data files. Other database options are set for you.
+- If you create a new database, the cmdlet adds a database in SQL Server. The database includes the tables and data required for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application database. The cmdlet creates a master data file (MDF) and log data file (LDF). Using the cmdlet, you can set the database name, the collation, and where to store the data files. Other database options are set for you.
 
 - If you use the cmdlet with an existing database, the cmdlet modifies the existing database to include [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application tables and data. You configure a database beforehand, setting options that aren't done by the cmdlet, such as options for the data files (MDF/NDF/LDF) and their filegroups, [table partitioning](../administration/optimize-sql-data-access.md), and more.
 
@@ -109,7 +109,7 @@ To create an application database, complete the following steps:
     Sync-NAVTenant -ServerInstance BC
     ```
 
-    This step will create the tenant-related tables in the database.
+    This step creates the tenant-related tables in the database.
 
 ## <a name="tenant"></a>Create a tenant database
 
@@ -141,7 +141,7 @@ Complete the followings step to create a new tenant database in a multitenant de
     Sync-NAVTenant -ServerInstance BC -Tenant BCTenant1 -Mode Sync
     ```
 
-    This step will create the tenant-related tables in the database.
+    This step creates the tenant-related tables in the database.
   
 ## Next steps
 

@@ -42,6 +42,8 @@ The current control name of the ErrorInfo.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## See Also
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
