@@ -1,5 +1,5 @@
 ---
-title: Getting Started Developing Connect Apps for Dynamics 365 Business Central
+title: Get started developing Connect apps for Dynamics 365 Business Central
 description: Learn how to get started developing a Connect app 
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.collection: get-started
 ---
 
-# Getting started developing Connect apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
+# Get started developing Connect apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -35,7 +35,8 @@ In the following sections you can read more about setting up the two types of au
 
 APIs can also be explored through the [OpenAPI specification for Business Central](/dynamics-nav/api-reference/v1.0/dynamics-open-api).
 
-## Setting up basic authentication
+## Set up basic authentication
+
 If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the Microsoft Entra ID based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use Microsoft Entra ID/Oauth v2 authentication, see the section [Setting up Microsoft Entra ID based authentication](#setting-up-microsoft-entra-id-based-authentication).
 
 1. To set up basic authentication, log into your tenant, and in the **Search** field, enter **Users** and then select the relevant link.
@@ -44,7 +45,7 @@ If you prefer to set up an environment with basic authentication just to explore
 
 Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#exploring-apis-with-postman-and-basic-authentication) section, we use Postman.
 
-## Setting up Microsoft Entra ID based authentication
+## Set up Microsoft Entra ID based authentication
 
 Sign in to the [Azure portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
 
@@ -66,7 +67,7 @@ Sign in to the [Azure portal](https://portal.azure.com) to register [!INCLUDE[d3
 
 You have now set up the Microsoft Entra ID based authentication. Next, you can go exploring the APIs. Learn more in the [Exploring the APIs with Postman and Microsoft Entra authentication](#exploring-apis-with-postman-and-microsoft-entra-authentication) section.
 
-## Exploring APIs with Postman and basic authentication
+## Explore APIs with Postman and basic authentication
 
 In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with basic authentication. 
 
@@ -81,7 +82,7 @@ In this `Hello World` example, we're going over the basic steps required to retr
 
 3. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
 
-## Exploring APIs with Postman and Microsoft Entra authentication
+## Explore APIs with Postman and Microsoft Entra authentication
 
 In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with Microsoft Entra authentication.
 
@@ -109,7 +110,8 @@ An Authorization request header is now added containing the Bearer token.
    > * Auth URL: https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.businesscentral.dynamics.com 
    > * Client ID: 060af3ac-70c3-4c14-92bb-8a88230f3f38
 
-## Calling an API 
+## Call an API
+
 Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:  
 
 ```json
@@ -133,6 +135,7 @@ All resources, such as customers, invoices etc., live in the context of a parent
 
 
 ## See also
+
 [API Developer Overview](devenv-api.md)
 [Using Filtering With APIs](devenv-connect-apps-filtering.md)  
 [Tips for Working with APIs](devenv-connect-apps-tips.md)   

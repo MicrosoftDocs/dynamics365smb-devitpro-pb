@@ -156,7 +156,7 @@ You can find a couple of suggestions for how to go about this in our blog post, 
 [Resources for Help and Support for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../help-and-support.md)  
 [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Migrate Legacy Help to the Business Central Format](../upgrade/migrate-help.md)  
-[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../developer/devenv-extension-example.md)  
+[Build your first sample extension with extension objects, install code, and upgrade code](../developer/devenv-extension-example.md)  
 [Building an Advanced Sample Extension](../developer/devenv-extension-advanced-example.md)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
 [JSON Files](../developer/devenv-json-files.md)  

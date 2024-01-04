@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Building an advanced sample extension
 
-It's required to submit tests with your extension in order to pass validation. This walkthrough builds an advanced sample extension, which is used as the foundation for writing a test, which you can read about in the [Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md) article. If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). 
+It's required to submit tests with your extension in order to pass validation. This walkthrough builds an advanced sample extension, which is used as the foundation for writing a test, which you can read about in the [Test the advanced sample extension](devenv-extension-advanced-example-test.md) article. If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). 
 
 For information about submitting your app to AppSource, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
 
@@ -905,7 +905,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
 ```
 
 ### Conclusion
-At this point, the Customer Rewards sample extension can be published and installed on your sandbox. To continue writing tests for the sample extension, see [Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md). 
+At this point, the Customer Rewards sample extension can be published and installed on your sandbox. To continue writing tests for the sample extension, see [Test the advanced sample extension](devenv-extension-advanced-example-test.md). 
 
 ## See Also  
 [Developing Extensions](devenv-dev-overview.md)  

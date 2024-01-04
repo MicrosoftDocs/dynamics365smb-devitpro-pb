@@ -111,4 +111,4 @@ To simulate moving to different items on a list page or to different records on 
 ## See Also
 
 [Testing the Application](devenv-testing-pages.md)  
-[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)
+[Test the advanced sample extension](devenv-extension-advanced-example-test.md)

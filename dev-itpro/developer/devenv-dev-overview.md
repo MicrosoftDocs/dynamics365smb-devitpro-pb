@@ -87,7 +87,7 @@ After development and testing are done, you can submit your extension package to
 ## See Also
 
 [Get Started with AL](devenv-get-started.md)  
-[Getting Started Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
+[Get started developing Connect apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [XML Comments in Code](devenv-xml-comments.md)  
