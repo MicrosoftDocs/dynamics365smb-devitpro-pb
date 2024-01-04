@@ -21,7 +21,7 @@ Normally, when an error occurs in a procedure, the procedure stops on the first 
 One use case of the collectible errors feature is for validations of multiple conditions, where you check each condition with a collectible error. Then in the final validation, you can present all errors collected in a single page, instead of stopping the user and present each validation to the user. 
 
 > [!IMPORTANT]
-> Is is recommended that you handle all collectible errors from your AL code. If execution of a  procedure ends with any errors still present in the collected list, the user will see an error dialog with a concatenation of all the messages from the errors present in the collected list. But this "uber" error message will not be easy for the user to understand. See the example below of how to do this.
+> It's recommended that you handle all collectible errors from your AL code. If any errors are present in the collected list when a procedure ends, the user will receive an error dialog that concatenates all the error messages. Refer to the example below to learn more.
 
 
 ## Collectible errors API
@@ -31,7 +31,7 @@ AL includes several methods, properties, and attributes that are designed specif
 
 ## Example 
 
-The following code example illustrates how to use collectable errors. It's built around the `DoPost` codeunit, which sets simple criteria on what can or can't be included in table fields. By itself, this procedure will stop when errors occur. By applying the `ErrorBehavior(ErrorBehavior::Collect)` attribute, the `PostWithErrorCollect ()` and `PostWithErrorCollectCustomUI ()` procedures show you a couple ways to collect and present these errors.
+The following code example illustrates how to use collectible errors. It's built around the `DoPost` codeunit, which sets simple criteria on what can or can't be included in table fields. By itself, this procedure will stop when errors occur. By applying the `ErrorBehavior(ErrorBehavior::Collect)` attribute, the `PostWithErrorCollect ()` and `PostWithErrorCollectCustomUI ()` procedures show you a couple ways to collect and present these errors.
 
 ```AL
 pageextension 50100 CollectingErrorsExt extends "Customer List"
