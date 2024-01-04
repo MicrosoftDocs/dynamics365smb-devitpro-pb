@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 11/18/2022
+ms.date: 12/28/2023
 ms.custom: bap-template
 ---
 
@@ -27,7 +27,7 @@ To add a Business Central tab to a channel or chat, you send a POST request to e
 
 ### For channels
 
-You'll need the ID the team and the channel that you want to add the tab to. 
+You need the ID the team and the channel that you want to add the tab to. 
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{teamId}/channels/{channelId}/tabs
@@ -45,7 +45,7 @@ POST https://graph.microsoft.com/v1.0/teams/{teamId}/channels/{channelId}/tabs
 
 ### For chats
 
-You'll need the ID the chat that you want to add the tab to.
+You need the ID the chat that you want to add the tab to.
 
 ```http
 POST https://graph.microsoft.com/v1.0/chats/{chat-id}/tabs
@@ -63,7 +63,7 @@ POST https://graph.microsoft.com/v1.0/chats/{chat-id}/tabs
 
 ### Composing request body
 
-The request body, also called the payload, follows the request URL and specifies the content of the tab. There are several string properties that you can set. Some are required. The following table describes the properties and any specific values that you must provide.
+The request body also called the payload, follows the request URL and specifies the content of the tab. There are several string properties that you can set. Some are required. The following table describes the properties and any specific values that you must provide.
 
 |Property|Description|Required|
 |--------|----|-------|
@@ -76,7 +76,7 @@ The request body, also called the payload, follows the request URL and specifies
 
 ## Example
 
-This example illustrates how you can add a team, channel, and Business Central tab. You'll add a tab in Teams that displays page 9305 **Sale Orders**. There are several tools that you can use, like AL code, PowerShell, Postman, and more. In this example, you'll use the Graph Explorer. For details about using Graph Explorer, see [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features).
+This example illustrates how you can add a team, channel, and Business Central tab. You add a tab in Teams that displays page 9305 **Sale Orders**. There are several tools that you can use, like AL code, PowerShell, Postman, and more. In this example, you use the Graph Explorer. For details about using Graph Explorer, see [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features).
 
 ### Create team
 
@@ -147,7 +147,7 @@ The next step is to create a channel using the [channels](/graph/api/channel-pos
 
 ### Install the Business Central app for Teams
 
-Complete this step if the Business Central app isn't already installed for the team. The app must be installed in the team, otherwise you'll get an error when you try to add the tab.
+Complete this step if the Business Central app isn't already installed for the team. The app must be installed in the team, otherwise you get an error when you try to add the tab.
 
 1. Start a new query, set the method to **Post** and add the following endpoint URL:
 

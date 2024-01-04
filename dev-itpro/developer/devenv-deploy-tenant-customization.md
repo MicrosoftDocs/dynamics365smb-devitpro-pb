@@ -32,7 +32,7 @@ The extension you are deploying could be the initial release of the customizatio
 6. Choose the **Deploy** button.
 7. The extension will be deployed in the background.  
     To check the status of the deployment, choose **Deployment Status** and then view the status of the extension deployment. Select the row to see additional details.  
-    In the deployment status details there is a **Refresh** button in the actions you must press to retrieve the most recent status and details.
+    In the deployment status details there is a **Refresh** button in the actions you must select to retrieve the most recent status and details.
 8. When the extension has been successfully deployed, choose the **Refresh** button to see the new extension in the list of installed extensions.
 
 ## Extension uniqueness requirements

@@ -15,10 +15,10 @@ ms.author: jswymer
 
 Visual Studio Code is built to handle many smaller dependent projects instead of one large project. However, as the base application isn't yet split into modules or components that allow managing the code in smaller projects, we recommend the following performance optimizations.
 
-Open your `settings.json` file in the project (or global settings if you prefer that) pressing **Ctrl+Shift+P**. Set:
+Open your `settings.json` file in the project (or global settings if you prefer that) selecting <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>. Set:
 
 - `"al.enableCodeAnalysis": false` to turn off code analysis completely, read more here [Using the Code Analysis Tool](../developer/devenv-using-code-analysis-tool.md).
-- `"al.backgroundCodeAnalysis": false` to turn off running code analysis in the background, but code analysis will be enabled when building with **Ctrl+Shift+B**. This is an alternative if analyzers are required with `"al.enableCodeAnalysis": true`.
+- `"al.backgroundCodeAnalysis": false` to turn off running code analysis in the background, but code analysis will be enabled when building with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>. This is an alternative if analyzers are required with `"al.enableCodeAnalysis": true`.
 - `"al.enableCodeActions": false` to turn off AL Code Actions, read more here [AL Code Actions](devenv-code-actions.md).
 - `"al.incrementalBuild": true` to allow the compiler to reuse the existing background compilation for creating the package.
 - `"editor.codeLens": false` to turn off code lens in Visual Studio Code, see [Code Navigation](https://code.visualstudio.com/Docs/editor/editingevolved#_reference-information).

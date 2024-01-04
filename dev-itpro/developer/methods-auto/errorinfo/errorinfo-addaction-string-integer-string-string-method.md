@@ -3,7 +3,7 @@ title: "ErrorInfo.AddAction(Text, Integer, Text, Text) Method"
 description: "Specifies an action for the error."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 01/03/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,15 @@ The text that appears as the tooltip of the action in the error UI.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The semantics of this method is the same as the version without a Description parameter. For more information, see [AddAction(Text, Integer, Text)](errorinfo-addaction-string-integer-string-method.md).
+
 ## See Also
+
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[Actionable errors](../../devenv-actionable-errors.md)  
+[Error handling](../../devenv-al-error-handling.md)   
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

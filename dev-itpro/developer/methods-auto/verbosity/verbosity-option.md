@@ -28,6 +28,7 @@ Represents the security level of events.
 |Verbose|Identifies a detailed trace event.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

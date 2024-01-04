@@ -1,8 +1,7 @@
 ---
-title: "Microsoft's Responsibilities for Apps on Business Central online"
+title: "Microsoft's responsibilities for apps on Business Central online"
 description: Learn about what Microsoft does for your apps and your customers.
 author: jswymer
-
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -12,7 +11,7 @@ ms.author: jswymer
 ms.date: 04/01/2021
 ---
 
-# Microsoft Responsibilities for Apps on Business Central online
+# Microsoft responsibilities for apps on Business Central online
 
 [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online is a cloud service for small to medium-sized businesses that is built on and for Microsoft Azure. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] brings together the business management solution, business intelligence, infrastructure, computing, and database services in a single offering that enables organizations to run horizontal or industry-specific apps from Independent Software Vendors (ISVs), without the hassle of managing infrastructure.
 
@@ -26,7 +25,7 @@ Microsoft responsibilities in the [!INCLUDE[prod_short](../developer/includes/pr
 |Base application and platform|<ul><li>Availability and security</li><li>Diagnostics, patches, updates, hotfixes, and updates</li><li>Monitoring and first-line support for partners building apps</li></ul>| 
 |Lifecyle Services portal (EmbedApp program)|<ul><li>Development, deployment, and support of the portal functionality</li><li>High availability and disaster recovery</li><li>Monitoring, updating and patching</li><li>First-line support for partners</li></ul>|  
 
-## See Also
+## See also
 
 [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md)  
 [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](../developer/app-maintain.md)  
