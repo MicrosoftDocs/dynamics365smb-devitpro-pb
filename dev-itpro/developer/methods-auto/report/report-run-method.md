@@ -1,6 +1,6 @@
 ---
 title: "Report.Run(Integer [, Boolean] [, Boolean] [, var Record]) Method"
-description: "Loads and executes the report that you specify (static method)."
+description: "Loads and executes the report that you specify (static method with printer parameter)."
 ms.author: solsen
 ms.custom: na
 ms.date: 12/18/2023
@@ -51,6 +51,13 @@ Use this method, or the [Report.RunModal Method](report-runmodal-method.md), if 
 If the report you specify doesn't exist, then a runtime error occurs.  
 
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
+
+
+## Printing
+
+The parameter `SystemPrinter` is only used for on-premises scenarios (print on server). Here, the [!INCLUDE[prod_short](../../includes/prod_short.md)] server will use the default printer on the server if you use `SystemPrinter = true`, otherwise it uses the printer selection. 
+
+For the online version of [!INCLUDE[prod_short](../../includes/prod_short.md)], users can use printer extension and browser print.
 
 ## Example: Using `Report::<object ID>` syntax
 
