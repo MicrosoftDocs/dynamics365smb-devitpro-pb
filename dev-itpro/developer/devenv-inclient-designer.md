@@ -49,11 +49,11 @@ Here's a quick overview of capabilities in **Designer**:
 
 ## Start and stop designing
 
-In the [!INCLUDE[prod_short](includes/prod_short.md)] client, you start Designer by choosing ![Settings icon.](media/settings_icon_small.png) icon and then **Design** in the top-right corner of any page and start designing using drag-and-drop components. In Visual Studio Code, you can start Designer by using the **F6** shortcut key, which launches a browser that opens the [!INCLUDE[prod_short](includes/prod_short.md)] client in Designer.
+In the [!INCLUDE[prod_short](includes/prod_short.md)] client, you start Designer by choosing ![Settings icon.](media/settings_icon_small.png) icon and then **Design** in the top-right corner of any page and start designing using drag-and-drop components. In Visual Studio Code, you can start Designer by using the <kbd>F6</kbd> shortcut key, which launches a browser that opens the [!INCLUDE[prod_short](includes/prod_short.md)] client in Designer.
 
 After you're done with the changes, choose **Stop Designing**. You can name the extension and download code to save it for the tenant. Once you're done, the extension is automatically installed. If you choose to download the code, the project will be downloaded as a .zip folder<!--, where the `app.json` file has the main extension as a dependency-->. You extract the files and open the folder from Visual Studio Code, where you can deploy it as you would do with any other extension.
 
-If you choose not to download the code at the end, you can still pull the code using the **Alt+F6** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there. You can find **Extension Management** page by choosing the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon and typing the page name.
+If you choose not to download the code at the end, you can still pull the code using the <kbd>Alt</kbd>+<kbd>F6</kbd> shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there. You can find **Extension Management** page by choosing the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon and typing the page name.
 
 
 ![Work with Designer.](media/designer.gif)
@@ -86,7 +86,7 @@ Fields on non-list type pages, such as card and document type pages, include Des
 
 ## Setting the Quick Entry on fields
 
-You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The **QuickEntry** property determines whether the field is skipped when users press the **Enter** key to navigate through fields on a page. You use Quick Entry to speed up the data entry by keyboard and to focus only on the frequently used fields.
+You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The **QuickEntry** property determines whether the field is skipped when users select the <kbd>Enter</kbd> key to navigate through fields on a page. You use Quick Entry to speed up the data entry by keyboard and to focus only on the frequently used fields.
 
 To set the QuickEntry property from Designer, select the field or column heading, and then choose either **Include in Quick Entry** (sets the **QuickEntry** property to `true`) or **Exclude from Quick Entry** (sets the **QuickEntry** property to `false`).  
 
@@ -119,7 +119,7 @@ Designer lets you make changes to the actions that are defined in the action bar
 > You cannot modify actions that are defined on pages that are shown in parts, such as in FactBoxes or embedded lists. 
 
 > [!TIP]
-> In Designer, to run an action as normal, select the action and press **Ctrl+Click**.
+> In Designer, to run an action as normal, select the action and select <kbd>Ctrl</kbd>+Click.
 
 ### Remove, hide, and show actions and groups
 

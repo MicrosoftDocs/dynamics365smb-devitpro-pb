@@ -1,18 +1,16 @@
 ---
-title: Microsoft Graph Reference  
+title: Microsoft Graph reference  
 description: API documentation for integration with Microsoft Graph
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: get-started
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 12/21/2023
 ms.author: solsen
-
 ---
-# Microsoft graph reference
+
+# Microsoft Graph reference
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
