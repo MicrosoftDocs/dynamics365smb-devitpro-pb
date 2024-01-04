@@ -1085,7 +1085,8 @@
 ### [Get, Find, and Next Methods](devenv-get-find-and-next-methods.md)
 ### [Create Handler Methods](devenv-creating-handler-methods.md)
 ### [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md)
-### [Collecting Errors](devenv-error-collection.md)
+<!-- ### [Collecting Errors](devenv-error-collection.md) -->
+### [Collecting Errors API](devenv-error-collection-api.md)
 ### [Progress Windows, Message, Error, and Confirm Methods](devenv-progress-windows-message-error-and-confirm-methods.md)
 ### [Test Codeunits and Text Methods](devenv-test-codeunits-and-test-methods.md)
 ### [Procedure Overload](methods/devenv-overload-method.md)
