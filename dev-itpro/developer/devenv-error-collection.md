@@ -1,13 +1,12 @@
 ---
-title: "Collecting Errors"
+title: Collecting Errors
 description: Learn how to write AL code that returns more than one error and presents users with more detailed error information.
 ms.custom: bap-template
-ms.date: 06/14/2023
+ms.date: 01/04/2024
 ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
-ms.service: dynamics365-business-central
 ---
 
 # Collecting Errors
@@ -18,10 +17,10 @@ This article explains how to write AL code that captures multiple errors and dis
 
 Normally, when an error occurs in a procedure, the procedure stops on the first error it meets. Using collectable errors essentially postpones error handling to the end of the procedure call. AL code execution won't stop on errors. But instead, it continues until the end and gathers errors as they occur.
 
-One use case of the collectible errors feature is for validations of multiple conditions, where you check each condition with a collectible error. Then in the final validation, you can present all errors collected in a single page, instead of stopping the user and present each validation to the user. 
+One use of the collectible errors feature is for validating multiple conditions, where you check each condition with a collectible error. Then, instead of stopping the user and presenting each validation separately, you present all errors collected in a single page during the final validation. 
 
 > [!IMPORTANT]
-> It's recommended that you handle all collectible errors from your AL code. If any errors are present in the collected list when a procedure ends, the user will receive an error dialog that concatenates all the error messages. Refer to the example below to learn more.
+> It's recommended that you handle all collectible errors from your AL code. Otherwise, if any errors are present in the collected list when a procedure ends, the user will receive an error dialog that concatenates all the error messages. This error dialog can be difficult for users to understand. See the example below for how to handle collectible errors.
 
 
 ## Collectible errors API
