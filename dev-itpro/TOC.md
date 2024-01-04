@@ -509,9 +509,9 @@
 #### [Viewing table data](developer/devenv-view-table-data.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
 
-## AL language
+
+## Programming in the AL language
 ### [A tour of the AL language](developer/devenv-programming-in-al.md)
-### [FAQ for AL developers](developer/devenv-dev-faq.md)
 
 ### Program building blocks
 #### [System-defined variables](developer/devenv-system-defined-variables.md)
@@ -635,11 +635,12 @@
 ##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
 
 #### AL Language Reference (errors)
-##### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
-##### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md)
+##### [Collecting Errors API](developer/devenv-error-collection-api.md?toc=/dynamics365/business-central/dev-itpro/toc.json) 
+##### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### LogInternalError method (on-premises only)
-###### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md)
-###### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md)
+###### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
 #### Baseapp Reference (errors)
 ##### [Codeunit "Error Context Element"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-context-element?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -648,13 +649,14 @@
 ##### [Codeunit "Last Error Context Element"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.last-error-context-element?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
 
-
 ### Formatting values
 #### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
 #### [Formatting values, dates, and time](developer/devenv-format-property.md)
+#### [File handling and text encoding](developer/devenv-file-handling-and-text-encoding.md)
 
 ### Tables and data
 #### [Overview](developer/devenv-tables-overview.md)
+
 #### Defining table structures
 ##### [Tables overview](developer/devenv-tables-overview.md)
 ##### [Table object](developer/devenv-table-object.md)
@@ -662,6 +664,7 @@
 ##### [Table extension object](developer/devenv-table-ext-object.md)
 ##### [Setting relationships between tables](developer/devenv-set-relationships-between-tables.md)
 ##### [Classifying data](developer/devenv-classifying-data.md)
+
 #### Modifying data
 ##### [Insert, Modify, ModifyAll, Delete, and DeleteAll methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
 ##### [Temporary tables](developer/devenv-temporary-tables.md)
@@ -669,32 +672,59 @@
 ###### [Date virtual table](developer/devenv-date-virtual-table.md)
 ###### [Integer virtual table](developer/devenv-integer-virtual-table.md)
 ##### [Retaining table data after publishing](developer/devenv-retaining-data-after-publishing.md)
-##### [Enabling sales tables for extension eevelopment](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
+##### [Enabling sales tables for extension development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ##### [Creating filter pages for tables](developer/devenv-filter-pages-for-filtering-tables.md)
 ##### [Working with media on records](developer/devenv-working-with-media-on-records.md)
+
 #### Reading data
 ##### [Get, Find, and Next methods](developer/devenv-get-find-and-next-methods.md)
 ##### [Record instance isolation level](developer/devenv-read-isolation.md)
 ##### Partial records
 ###### [Using partial records](developer/devenv-partial-records.md)
 ###### [FAQ](developer/devenv-partial-records-faq.md)
-##### Query objects
-###### [Queries overview](developer/devenv-query-overview.md)
-###### [Query object](developer/devenv-query-object.md)
-###### [Linking and joining data items](developer/devenv-query-links-joins.md)
-###### [Filtering](developer/devenv-query-filters.md)
-###### [Aggregating data](developer/devenv-query-totals-grouping.md)
-###### [Retrieving date data](developer/devenv-query-retrieve-date-data.md)
-###### [Using queries instead of record variables](developer/devenv-query-using-instead-record-variables.md)
-###### [Accessing columns of a query dataset](developer/devenv-query-accessing-columns.md)
-###### [Analyze query data using analysis mode](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)
+
+#### Using Query objects
+##### [Queries overview](developer/devenv-query-overview.md)
+##### [Query object](developer/devenv-query-object.md)
+##### [Linking and joining data items](developer/devenv-query-links-joins.md)
+##### [Filtering](developer/devenv-query-filters.md)
+##### [Aggregating data](developer/devenv-query-totals-grouping.md)
+##### [Retrieving date data](developer/devenv-query-retrieve-date-data.md)
+##### [Using queries instead of record variables](developer/devenv-query-using-instead-record-variables.md)
+##### [Accessing columns of a query dataset](developer/devenv-query-accessing-columns.md)
+##### [Analyze query data using analysis mode](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)
+
+#### [Number sequences](developer/devenv-number-sequences.md)
+
+#### FlowFields and FlowFilters
+##### [FlowFields overview](developer/devenv-flowfields.md)
+##### [FlowFilters overview](developer/devenv-flowfilter-overview.md)
+##### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+
+#### Indexing data for performance
+##### Nonclustered Columnstore Indexes (NCCI)
+###### [NCCI overview](developer/devenv-ncci-overview.md)
+###### [NCCI and SQL server](developer/devenv-ncci-and-sql-server.md)
+###### [NCCI tuning and tracing](developer/devenv-ncci-tuning-and-tracing.md)
+###### [NCCI performance](developer/devenv-ncci-performance.md)
+###### [Migrating from SIFT to NCCI](developer/devenv-migrating-from-sift-to-ncci.md)
+##### SumIndexField Technology (SIFT)
+###### [SIFT overview](developer/devenv-sift-technology.md)
+###### [SIFT and SQL server](developer/devenv-sift-and-sql-server.md)
+###### [SIFT tuning and tracing](developer/devenv-sift-tuning-and-tracing.md)
+###### [SIFT performance](developer/devenv-sift-performance.md)
+
+
 #### [Transferring data](developer/devenv-data-transfer.md)
+
 #### Importing and exporting data
 ##### [XMLport overview](developer/devenv-xmlport-overview.md)
 ##### [XMLport object](developer/devenv-xmlport-object.md)
 ##### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)
 ##### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
 ##### [Using request pages with XMLports](developer/devenv-request-pages.md)
+
+
 ### Pages and user interfaces
 #### [Customizing for user roles](developer/devenv-role-customization.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
@@ -847,23 +877,28 @@
 #### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
 -->
 
-### [Handling security overview](security/security-application.md)
+### Handling security
+#### [Handling security overview](security/security-application.md)
+
+#### [Isolated storage](developer/devenv-isolated-storage.md)
+#### [Protecting sensitive values with the SecretText data type](developer/devenv-secret-text.md)
+
 #### [Permission sets and entitlements overview](developer/devenv-entitlements-and-permissionsets-overview.md)
-#### [Permissionset object](developer/devenv-permissionset-object.md)
-#### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
-#### [Composing permission sets](developer/devenv-permissionset-composing.md)
-#### [Permissions on database objects](developer/devenv-permissions-on-database-objects.md)
-#### [Inherent permissions](developer/devenv-inherent-permissions.md)
-#### [Exporting permission sets to XML](developer/devenv-export-permission-sets.md)
-#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
-#### [Entitlement object](developer/devenv-entitlement-object.md)
-#### Permissions telemetry
-##### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
-##### [Permission dependency cycle telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
-##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
-#### Permissions APIs
-##### [Permission set](administration/resources/dynamics_permissionset.md)
-##### [Get permission set](administration/api/dynamics_permissionset_get.md)
+##### [Permissionset object](developer/devenv-permissionset-object.md)
+##### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
+##### [Composing permission sets](developer/devenv-permissionset-composing.md)
+##### [Permissions on database objects](developer/devenv-permissions-on-database-objects.md)
+##### [Inherent permissions](developer/devenv-inherent-permissions.md)
+##### [Exporting permission sets to XML](developer/devenv-export-permission-sets.md)
+##### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+##### [Entitlement object](developer/devenv-entitlement-object.md)
+##### Permissions telemetry
+###### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
+###### [Permission dependency cycle telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
+###### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
+##### Permissions APIs
+###### [Permission set](administration/resources/dynamics_permissionset.md)
+###### [Get permission set](administration/api/dynamics_permissionset_get.md)
 
 
 ### Running things in the background
@@ -891,61 +926,26 @@
 #### [API performance](webservices/web-service-performance.md)
 #### [API telemetry](webservices/web-service-telemetry.md)
 
-
 ### Accessing device capabilities
 #### [Implementing camera in AL](developer/devenv-implement-camera-al.md)
 #### [Implementing location in AL](developer/devenv-implement-location-al.md)
 
-### [Compiler directives](developer/directives/devenv-directives-in-al.md)
-#### [Region directive](developer/directives/devenv-directive-region.md)
-#### [Pragma directive](developer/directives/devenv-directive-pragma.md)
-
-<!-- AL programming -->
-## AL programming
+<!-- The AL programming language -->
+## The AL programming language
 ### [Overview](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)
 ### [FAQ for developing in AL](developer/devenv-dev-faq.md)
 ### [AL simple statements](developer/devenv-al-simple-statements.md)
 ### [AL control statements](developer/devenv-al-control-statements.md)
 ### [AL complex types](developer/devenv-al-complextypes.md)
+### [AL methods](developer/devenv-al-methods.md)
 ### [AL error handling](developer/devenv-al-error-handling.md)
-### [Working with AL methods](developer/devenv-al-methods.md)
-### [System-defined variables](developer/devenv-system-defined-variables.md)
-### [Preprocessor directives in AL](developer/directives/devenv-directives-in-al.md)
-#### [Region directive](developer/directives/devenv-directive-region.md)
-#### [Pragma directive](developer/directives/devenv-directive-pragma.md)
+### [AL code comments](developer/devenv-xml-comments.md)
 ### [Using access modifiers in AL](developer/devenv-using-access-modifiers.md)
-### [XML comments in code](developer/devenv-xml-comments.md)
-### Code analysis
-#### [Using the code analysis tool](developer/devenv-using-code-analysis-tool.md)
-#### [Ruleset for the code analysis tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
-#### [Using the code analysis tools with the ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
-#### [AppSourceCop analyzer rules](developer/analyzers/appsourcecop.md)
-#### [CodeCop analyzer rules](developer/analyzers/codecop.md)
-#### [PerTenantExtensionCop analyzer rules](developer/analyzers/pertenantextensioncop.md)
-#### [UICop analyzer rules](developer/analyzers/uicop.md)
-### [Isolated storage](developer/devenv-isolated-storage.md)
-### [Protecting sensitive values with the SecretText data type](developer/devenv-secret-text.md)
-### [File handling and text encoding](developer/devenv-file-handling-and-text-encoding.md)
-### FlowFields and FlowFilters
-#### [FlowFields overview](developer/devenv-flowfields.md)
-#### [FlowFilters overview](developer/devenv-flowfilter-overview.md)
-#### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
-### Nonclustered Columnstore Indexes (NCCI)
-#### [NCCI overview](developer/devenv-ncci-overview.md)
-#### [NCCI and SQL server](developer/devenv-ncci-and-sql-server.md)
-#### [NCCI tuning and tracing](developer/devenv-ncci-tuning-and-tracing.md)
-#### [NCCI performance](developer/devenv-ncci-performance.md)
-#### [Migrating from SIFT to NCCI](developer/devenv-migrating-from-sift-to-ncci.md)
-### SumIndexField Technology (SIFT)
-#### [SIFT overview](developer/devenv-sift-technology.md)
-#### [SIFT and SQL server](developer/devenv-sift-and-sql-server.md)
-#### [SIFT tuning and tracing](developer/devenv-sift-tuning-and-tracing.md)
-#### [SIFT performance](developer/devenv-sift-performance.md)
-### [Number sequences](developer/devenv-number-sequences.md)
-### [Extensible enums](developer/devenv-extensible-enums.md)
-### [Protected variables](developer/devenv-protected-variables.md)
 ### [Working with labels](developer/devenv-using-labels.md)
+### [System-defined variables](developer/devenv-system-defined-variables.md)
+### [Protected variables](developer/devenv-protected-variables.md)
+
 ### Objects
 #### [Table object](developer/devenv-table-object.md)
 #### [Table extension object](developer/devenv-table-ext-object.md)
@@ -963,6 +963,21 @@
 #### [Entitlement object](developer/devenv-entitlement-object.md)
 #### [Permissionset object](developer/devenv-permissionset-object.md)
 #### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
+
+### Preprocessor directives in AL
+#### [Preprocessor directives](developer/directives/devenv-directives-in-al.md)
+#### [Region directive](developer/directives/devenv-directive-region.md)
+#### [Pragma directive](developer/directives/devenv-directive-pragma.md)
+
+### Code analysis
+#### [Using the code analysis tool](developer/devenv-using-code-analysis-tool.md)
+#### [Ruleset for the code analysis tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
+#### [Using the code analysis tools with the ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
+#### [AppSourceCop analyzer rules](developer/analyzers/appsourcecop.md)
+#### [CodeCop analyzer rules](developer/analyzers/codecop.md)
+#### [PerTenantExtensionCop analyzer rules](developer/analyzers/pertenantextensioncop.md)
+#### [UICop analyzer rules](developer/analyzers/uicop.md)
+
 <!-- end AL programming -->
 
 ## AL platform
