@@ -94,7 +94,7 @@ entitlement BC_PerUserOfferPlan
     Type = PerUserOfferPlan;
     Id = 'MyOfferPlan';
 
-    ObjectEntitlements = "D365 BASIC";
+    ObjectEntitlements = "MyOfferLicensePermission";
 }
 ```
 
