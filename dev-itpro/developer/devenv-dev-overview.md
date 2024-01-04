@@ -70,7 +70,7 @@ For more information on the extensibility options available to AL developers in 
 
 ## Designer
 
-Designer works in the client and allows you to design pages using drag and drop components. Designer lets you build extensions in the client itself by rearranging fields, adding fields, and previewing your changes in page design. For more information, see [Using Designer](devenv-inclient-designer.md).
+Designer works in the client and allows you to design pages using drag and drop components. Designer lets you build extensions in the client itself by rearranging fields, adding fields, and previewing your changes in page design. For more information, see [Use Designer](devenv-inclient-designer.md).
 
 ## Compiling and deploying
 

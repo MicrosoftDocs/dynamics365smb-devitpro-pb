@@ -231,7 +231,7 @@ field(4;"Minimum Purchase";Decimal)
 }
 ```
 
-From this point, changes to the **Reward Card** page can be done either manually by adding the following code in Visual Studio Code or by using Designer's functions to add the same field. Both ways lead to the same results, but using Designer speeds up the process. 
+From this point, changes to the **Reward Card** page can be done either manually by adding the following code in Visual Studio Code or by Use Designer's functions to add the same field. Both ways lead to the same results, but Use Designer speeds up the process. 
 
 ```AL
 field("Minimum Purchase";"Minimum Purchase")

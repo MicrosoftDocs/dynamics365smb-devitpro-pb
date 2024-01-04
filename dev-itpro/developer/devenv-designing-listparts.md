@@ -101,5 +101,5 @@ page 50102 "Customer Card"
 [Adding a FactBox to a page](devenv-adding-a-factbox-to-page.md)   
 [CardPart Pages](devenv-designing-cardparts.md)   
 [AL Development Environment](devenv-reference-overview.md)  
-[Using Designer](devenv-inclient-designer.md) 
+[Use Designer](devenv-inclient-designer.md) 
 

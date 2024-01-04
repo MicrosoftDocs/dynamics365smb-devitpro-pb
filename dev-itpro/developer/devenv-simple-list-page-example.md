@@ -125,4 +125,4 @@ page 50111 SampleCustomerList
 [Actions Overview](devenv-actions-overview.md)  
 [Add pages and reports to Tell me](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  

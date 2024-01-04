@@ -42,7 +42,7 @@ Some other alternative things you can do include:
 
 - Add, move, or hide fields and make adjustments like modifying the column width, directly from the user interface.
 
-  To apply these changes, use the Designer tool. Go to [Using Designer](devenv-inclient-designer.md). If these changes are meant for your own workspace, then you use the Personalize tool. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
+  To apply these changes, use the Designer tool. Go to [Use Designer](devenv-inclient-designer.md). If these changes are meant for your own workspace, then you use the Personalize tool. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
 - Use the filter pane from the page to sort the data and apply filters. Go to [Sorting, Searching, and Filtering](/dynamics365/business-central/ui-enter-criteria-filters).
 - Use the Tile View to display records as tiles (or bricks) instead of as rows and optimize the space and readability of data. For more information on how to customize the tile view, see [Displaying Data as Tiles](devenv-lists-as-tiles.md).
 

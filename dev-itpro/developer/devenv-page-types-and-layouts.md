@@ -239,6 +239,6 @@ Given the size of the screen where the dialog appears, more or less of the page 
 [Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
 [PageType Property](properties/devenv-pagetype-property.md)  
 [Actions Overview](devenv-actions-overview.md)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  
 [Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  

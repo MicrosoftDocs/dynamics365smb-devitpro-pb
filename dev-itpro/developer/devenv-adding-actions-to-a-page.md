@@ -25,7 +25,7 @@ Before putting an action on a page you should think about the business processes
 For more information about different types of actions and where to use them, see [Actions Overview](devenv-actions-overview.md).
 
 > [!TIP]
-> After you have added actions to a page, you can use Designer to alter the actions, like moving an action to or from a promoted category, hiding and action or action group, and more. For more information, see [Using Designer](devenv-inclient-designer.md).
+> After you have added actions to a page, you can use Designer to alter the actions, like moving an action to or from a promoted category, hiding and action or action group, and more. For more information, see [Use Designer](devenv-inclient-designer.md).
 
 
 ## To add Actions to a Page

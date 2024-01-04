@@ -34,7 +34,7 @@ There are different ways to incorporate a list page into that application:
 ### Customizing a list pages from the client
 In the client, users can personalize list pages by rearranging or hiding records or FactBoxes as they like. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
 
-As a developer or administrator, you can use Designer to customize the list page the same way that individual users personalize their own work spaces. The difference is that changes you make are applied to all users. For more information, see [Using Designer](devenv-inclient-designer.md). 
+As a developer or administrator, you can use Designer to customize the list page the same way that individual users personalize their own work spaces. The difference is that changes you make are applied to all users. For more information, see [Use Designer](devenv-inclient-designer.md). 
 
 ## [Structure](#tab/structure)
 
@@ -120,4 +120,4 @@ Using the [Gesture](properties/devenv-gesture-property.md) property, configure t
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  
