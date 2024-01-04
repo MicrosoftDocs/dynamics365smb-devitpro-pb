@@ -1,62 +1,36 @@
 ---
-title: "Collecting Errors"
+title: Collecting Errors
 description: Learn how to write AL code that returns more than one error and presents users with more detailed error information.
 ms.custom: bap-template
-ms.date: 06/14/2023
+ms.date: 01/04/2024
 ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
-ms.service: dynamics365-business-central
 ---
 
 # Collecting Errors
 
 This article explains how to write AL code that captures multiple errors and displays them in the user interface. Referred to as *collectible errors*, this feature can simplify validation scenarios. Specifically, scenarios where users are presented with a list of things to fix.
 
-Normally, when an error occurs in a procedure, the procedure stops on the first error it meets. Using collectable errors essentially postpones error handling to the end of the procedure call. AL code execution won't stop on errors. But  instead, it continues until the end and gathers errors as they occur.
+## How to use the collectible errors feature
+
+Normally, when an error occurs in a procedure, the procedure stops on the first error it meets. Using collectable errors essentially postpones error handling to the end of the procedure call. AL code execution won't stop on errors. But instead, it continues until the end and gathers errors as they occur.
+
+One use of the collectible errors feature is for validating multiple conditions, where you check each condition with a collectible error. Then, instead of stopping the user and presenting each validation separately, you present all errors collected in a single page during the final validation. 
+
+> [!IMPORTANT]
+> It's recommended that you handle all collectible errors from your AL code. Otherwise, if any errors are present in the collected list when a procedure ends, the user will receive an error dialog that concatenates all the error messages. This error dialog can be difficult for users to understand. See the example below for how to handle collectible errors.
+
 
 ## Collectible errors API
 
-AL includes several methods, properties, and attributes that are designed specifically for the collectable errors feature.
-
-### Error information
- 
-The following methods are available on the [ErrorInfo data type](methods-auto/errorinfo/errorinfo-data-type.md) for defining information about errors. These methods can be invoked using property access syntax.
-
-|Method |Description|
-|-------|-----------|
-|[ErrorInfo.Create(String [, Boolean] [, var Record] [, Integer] [, Integer] [, String] [, Verbosity] [, DataClassification] [, Dictionary of [Text, Text]])](methods-auto/errorinfo/errorinfo-create-method.md)|Creates a new ErrorInfo object.|
-|[ErrorInfo.Callstack()](methods-auto/errorinfo/errorinfo-callstack-method.md)|Specifies a callstack where the ErrorInfo was collected.|
-|[ErrorInfo.Collectible([Boolean])](methods-auto/errorinfo/errorinfo-collectible-method.md)|Specifies whether the error is collectible using ErrorBehavior.Collect.|
-|[ErrorInfo.CustomDimensions([Dictionary of [Text, Text]])](methods-auto/errorinfo/errorinfo-customdimensions-method.md)|Set of dimensions, specified as a dictionary that relates to the error.|
-|[ErrorInfo.FieldNo([Integer])](methods-auto/errorinfo/errorinfo-fieldno-method.md)|Specifies the field ID that the error relates to.|
-|[ErrorInfo.PageNo([Integer])](methods-auto/errorinfo/errorinfo-pageno-method.md)|Specifies the page number that the error relates to.|
-|[ErrorInfo.RecordId([RecordId])](methods-auto/errorinfo/errorinfo-recordid-method.md)|Specifies the record ID of the record that the error relates to.|
-|[ErrorInfo.SystemId([Guid])](methods-auto/errorinfo/errorinfo-systemid-method.md)|Specifies the system ID of the record that the error relates to.|
-|[ErrorInfo.TableId([Integer])](methods-auto/errorinfo/errorinfo-tableid-method.md)|Specifies the table ID that the error relates to.|
-
-### Collected errors
-
-The following methods are available on the [System data type](methods-auto/system/system-data-type.md) for handling collected errors. These methods can be invoked using property access syntax.
-
-|Method |Description|
-|-------|-----------|
-|[System.HasCollectedErrors()](methods-auto/system/system-hascollectederrors-method.md)|Gets a value indicating whether errors have been collected in the current error collection scope.|
-|[System.GetCollectedErrors([Boolean])](methods-auto/system/system-getcollectederrors-method.md)|Gets all collected errors in the current collection scope.|
-|[System.ClearCollectedErrors()](methods-auto/system/system-clearcollectederrors-method.md)|Clears all collected errors from the current collection scope.|
-
-> [!IMPORTANT]
-> If you clear the list of collected errors, any changes performed in the database won't be rolled back. So, in most cases, it makes sense to combine the clear operation with an `if Codeunit.Run then …` statement, as shown in the `PostWithErrorCollectCustomUI` procedure of the example.
-
-### Error behavior
-
-The [ErrorBehavior](attributes/devenv-errorbehavior-attribute.md) specifies the behavior of collectable errors inside the method scope. Adding `[ErrorBehavior(ErrorBehavior.Collect)]` to a procedure ​makes it possible to collect and handle errors that are raised in the scope of the procedure.
+AL includes several methods, properties, and attributes that are designed specifically for the collectable errors feature. For an overview of the API, see [Collecting Errors API](devenv-error-collection-api.md).
 
 
 ## Example 
 
-The following code example illustrates how to use collectable errors. It's built around the `DoPost` codeunit, which sets simple criteria on what can or can't be included in table fields. By itself, this procedure will stop when errors occur. By applying the `ErrorBehavior(ErrorBehavior::Collect)` attribute, the `PostWithErrorCollect ()` and `PostWithErrorCollectCustomUI ()` procedures show you a couple ways to collect and present these errors.
+The following code example illustrates how to use collectible errors. It's built around the `DoPost` codeunit, which sets simple criteria on what can or can't be included in table fields. By itself, this procedure will stop when errors occur. By applying the `ErrorBehavior(ErrorBehavior::Collect)` attribute, the `PostWithErrorCollect ()` and `PostWithErrorCollectCustomUI ()` procedures show you a couple ways to collect and present these errors.
 
 ```AL
 pageextension 50100 CollectingErrorsExt extends "Customer List"
@@ -178,3 +152,7 @@ codeunit 50100 DoPost
 [Failure modelling and robust coding practices](devenv-robust-coding-practices.md)  
 [AL error handling](devenv-al-error-handling.md)   
 [AL Simple Statements](devenv-al-simple-statements.md)
+[Collecting Errors API](devenv-error-collection-api.md)   
+[Error handling overview](devenv-al-error-handling.md)  
+[AL Simple Statements](devenv-al-simple-statements.md)  
+
