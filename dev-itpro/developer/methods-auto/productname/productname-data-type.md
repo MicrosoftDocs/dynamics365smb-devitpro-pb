@@ -3,7 +3,7 @@ title: "ProductName Data Type"
 description: "An application can have a full name, marketing name, and short name."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 An application can have a full name, marketing name, and short name. The PRODUCTNAME functions enable you to retrieve these name variations.
 
 
+## Static methods
 The following methods are available on the ProductName data type.
 
 

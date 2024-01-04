@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 09/06/2023
+ms.date: 11/17/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -84,8 +84,8 @@ author: SusanneWindfeldPedersen
 |[AL0164](diagnostic-al164.md)|The trigger '{0}' is already defined.|Error|
 |[AL0165](diagnostic-al165.md)|Triggers cannot be called directly.|Error|
 |[AL0166](diagnostic-al166.md)|Argument {0}: must be a member.|Error|
-|[AL0167](diagnostic-al167.md)|The property '{0}' can only be set if the property '{1}' is set with any of the values of: '{2}'.|Error|
-|[AL0168](diagnostic-al168.md)|The property '{0}' can only be set if the property '{1}' is set.|Error|
+|[AL0167](diagnostic-al167.md)|The {0} '{1}' can only be used if the property '{2}' is set with any of the values of: '{3}'.|Error|
+|[AL0168](diagnostic-al168.md)|The {0} '{1}' can only be used if the property '{2}' is set.|Error|
 |[AL0169](diagnostic-al169.md)|The option value '{0}' is not valid.|Error|
 |[AL0170](diagnostic-al170.md)|An '=' is expected for property {0}.|Error|
 |[AL0171](diagnostic-al171.md)|The property value '{0}' on property '{1}' is not valid.|Error|
@@ -136,7 +136,7 @@ author: SusanneWindfeldPedersen
 |[AL0220](diagnostic-al220.md)|Syntax error, boolean literal expected.|Error|
 |[AL0221](diagnostic-al221.md)|The value '{0}' is not valid. The valid range is {1}..{2}.|Error|
 |[AL0222](diagnostic-al222.md)|The ID '{0}' is not valid. ID's must be greater than zero.|Error|
-|[AL0223](diagnostic-al223.md)|The property '{0}' can only be set if the property '{1}' is set to '{2}'.|Error|
+|[AL0223](diagnostic-al223.md)|The {0} '{1}' can only be used if the property '{2}' is set to '{3}'.|Error|
 |[AL0224](diagnostic-al224.md)|Expression expected.|Error|
 |[AL0227](diagnostic-al227.md)|A key with ID {0} is already defined.|Error|
 |[AL0228](diagnostic-al228.md)|A field group with ID {0} is already defined.|Error|
@@ -465,7 +465,7 @@ author: SusanneWindfeldPedersen
 |[AL0572](diagnostic-al572.md)|I/O operations on the file or folder '{0}' resulted in an exception with the Windows 32 error code '{1}'.|Error|
 |[AL0573](diagnostic-al573.md)|{0} is not valid for client expressions.|Warning (Future Error)|
 |[AL0574](diagnostic-al574.md)|This feature is under development and cannot be used in an extension.|Error|
-|[AL0575](diagnostic-al575.md)|You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'.|Error|
+|[AL0575](diagnostic-al575.md)|You cannot modify the {0} '{1}' because it is defined in the page customization '{2}'.|Error|
 |[AL0576](diagnostic-al576.md)|The profile name '{0}' is not valid because it contains leading or trailing spaces.|Error|
 |[AL0577](diagnostic-al577.md)|The view '{0}' cannot define layout changes because its property '{1}' is not set to false.|Error|
 |[AL0578](diagnostic-al578.md)|The value for the property '{0}' is not valid because its length exceeds {1} characters ({2} characters).|Error|
@@ -608,9 +608,9 @@ author: SusanneWindfeldPedersen
 |[AL0724](diagnostic-al724.md)|An area of type '{0}' is not valid on pages of type '{1}'.|Error|
 |[AL0725](diagnostic-al725.md)|The action type '{0}' is not allowed in area '{1}'.|Error|
 |[AL0726](diagnostic-al726.md)|An identifier, a literal, or an option access is expected as the value of a filter expression.|Error|
-|[AL0727](diagnostic-al727.md)|The property '{0}' can only be set if the property '{1}' is set.|Warning (Future Error)|
-|[AL0728](diagnostic-al728.md)|The property '{0}' can only be set if the property '{1}' is set to '{2}'.|Warning (Future Error)|
-|[AL0729](diagnostic-al729.md)|The property '{0}' can only be set if the property '{1}' is set with any of the values of: '{2}'.|Warning (Future Error)|
+|[AL0727](diagnostic-al727.md)|The {0} '{1}' can only be used if the property '{2}' is set.|Warning (Future Error)|
+|[AL0728](diagnostic-al728.md)|The {0} '{1}' can only be used if the property '{2}' is set to '{3}'.|Warning (Future Error)|
+|[AL0729](diagnostic-al729.md)|The {0} '{1}' can only be used if the property '{2}' is set with any of the values of: '{3}'.|Warning (Future Error)|
 |[AL0730](diagnostic-al730.md)|The field '{0}' cannot be used in a sum index.|Error|
 |[AL0731](diagnostic-al731.md)|The name '{0}' does not exist in the current context.|Warning (Future Error)|
 |[AL0732](diagnostic-al732.md)|Access modifier '{0}' is not allowed for member '{1}' in the context of object type '{2}'.|Error|
@@ -685,12 +685,17 @@ author: SusanneWindfeldPedersen
 |[AL0801](diagnostic-al801.md)|{0} '{1}' is marked to be moved. {2}.|Warning|
 |[AL0802](diagnostic-al802.md)|The parameter '{0}' cannot be of type 'SecretText'.|Error|
 |[AL0803](diagnostic-al803.md)|The parameter '{0}' cannot be used when the property '{1}' has the value '{2}'.|Error|
-|[AL0804](diagnostic-al804.md)|You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'.|Warning (Future Error)|
 |[AL0805](diagnostic-al805.md)|The object ID '{0}' should not be surrounded with quotes.|Warning (Future Error)|
 |[AL0806](diagnostic-al806.md)|The object ID '{0}' should not be surrounded with quotes.|Error|
 |[AL0807](diagnostic-al807.md)|The integer '{0}' should not be used as the name for the object.|Warning|
 |[AL0808](diagnostic-al808.md)|You cannot set the '{0}' property to '{1}' for {2} '{3}' in the page customization '{4}'.|Error|
 |[AL0809](diagnostic-al809.md)|The variable '{0}' is not allowed to be of type 'SecretText' because it is declared as protected.|Error|
+|[AL0810](diagnostic-al810.md)|The name '{0}' cannot be used for a system action. The allowed names in a '{1}' page are: '{2}'.|Error|
+|[AL0811](diagnostic-al811.md)|The trigger '{0}' cannot be defined on the system action named '{1}' in a page of type '{2}'.|Error|
+|[AL0812](diagnostic-al812.md)|The control '{0}' cannot be declared in the 'PromptOptions' area because it is not a page field of type 'Option'.|Error|
+|[AL0813](diagnostic-al813.md)|The property '{0}' can only be specified when the property '{1}' has a value of '{2}' if the runtime version is '{3}' or higher.|Error|
+|[AL0816](diagnostic-al816.md)|The property '{0}' cannot be set if the property '{1}' is set to '{2}'.|Warning (Future Error)|
+|[AL0817](diagnostic-al817.md)|Controls of type '{0}' are not allowed in the '{1}' area for pages of type '{2}'.|Error|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|

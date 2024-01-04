@@ -59,7 +59,7 @@ Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d3
 6. From the **Certificates & secrets** page, in the **Client secrets** section, choose **New client secret**:
     - Type a key description (of instance app secret),
     - Select a key duration of either In 1 year, In 2 years, or Never Expires.
-    - When you press the Add button, the key value will be displayed, copy, and save the value in a safe location.
+    - When you select the Add button, the key value will be displayed, copy, and save the value in a safe location.
 
     > [!NOTE]  
     > You'll need this key later to configure the project in Visual Studio. This key value will not be displayed again, nor retrievable by any other means, so record it as soon as it is visible from the Azure portal.

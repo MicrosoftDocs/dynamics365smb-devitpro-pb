@@ -1,16 +1,16 @@
 ---
-title: Add and Remove Recommended Content for Business Central Tabs
+title: Add and remove recommended content for Business Central tabs
 description: Learn how to add or remove pages listed as recommended content in the Business Central tab configuration window.
 author: jswymer #Required; your GitHub user alias, with correct capitalization.
 ms.author: jswymer #Required; your Microsoft alias; optional team alias.
 ms.reviewer: jswymer #Required; Microsoft alias of content publishing team member.
 ms.service: dynamics365-business-central
-ms.topic: conceptual 
-ms.date: 11/23/2022
+ms.topic: conceptual
+ms.date: 12/22/2023
 ms.custom: bap-template
 ---
 
-# Add and Remove Recommended Content for Business Central Tabs
+# Add and remove recommended content for Business Central tabs
 
 This article describes how to change the recommended content presented to users when setting up a Business Central tab in a Teams channel or chat.
 
@@ -28,10 +28,10 @@ As an AL developer, you can add or remove recommended content by subscribing to 
 [IntegrationEvent(false, false)]
 internal procedure OnAfterGetPageActions(PageId: Integer; IncludeViews: Boolean; var ItemsJsonArray: JsonArray)
 begin
-end; 
+end;
 ```
 
-The event provides the ID of the current user's roles center and the `ItemsJsonArray` object. The `ItemsJsonArray` object contains information about the pages that will show up in the recommended content list, including the caption and URL for the page and any of its views. The following code snippet shows an example of content inside the `ItemsJsonArray`: 
+The event provides the ID of the current user's roles center and the `ItemsJsonArray` object. The `ItemsJsonArray` object contains information about the pages that show up in the recommended content list, including the caption and URL for the page and any of its views. The following code snippet shows an example of content inside the `ItemsJsonArray`:
 
 ```json
 {
@@ -50,7 +50,7 @@ The event provides the ID of the current user's roles center and the `ItemsJsonA
 }
 ```
 
-This event is published by codeunit 2915 "Page Action Provider", which is part of the **Page Action Provider** module of the system application. For more information about this module, see [ALAppExtensions GitHub repo](https://github.com/microsoft/ALAppExtensions/blob/main/Modules/System/Page%20Action%20Provider/README.md).
+This event is published by codeunit 2915 "Page Action Provider", which is part of the **Page Action Provider** module of the system application. For more information about this module, see [BCApps repository](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Page%20Action%20Provider).
 
 ## Add or remove
 
@@ -71,7 +71,7 @@ codeunit 50100 UpdateRecommendedContent
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Action Provider", 'OnAfterGetPageActions', '', true, true)]
-    local procedure AddMyPageToRecommendedContent(PageId: Integer; IncludeViews: Boolean; var ItemsJsonArray: JsonArray);
+    local procedure AddMyPageToRecommendedContent(PageId: Integer; IncludeViews: Boolean; var ItemsJsonArray: JsonArray)
     begin
         AddRecommendedPage(ItemsJsonArray, 'My page', GetUrl(ClientType::Web, CompanyName, ObjectType::Page, Page::MyPage));
     end;
@@ -92,5 +92,5 @@ codeunit 50100 UpdateRecommendedContent
 
 ## See also
 
-[Developing for Microsoft Teams Integration](devenv-develop-for-teams.md)  
+[Developing for Microsoft Teams Integration](devenv-develop-for-teams.md)   
 [Create Business Central tabs for Teams](devenv-develop-for-teams-tabs.md)  

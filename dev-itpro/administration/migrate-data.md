@@ -22,9 +22,6 @@ If you're not already familiar with [!INCLUDE [prod_short](../includes/prod_shor
 
 [!INCLUDE [bc-cloud-products](../includes/bc-cloud-products.md)]
 
-> [!TIP]
-> [!INCLUDE [bc-cloud-nav](../includes/bc-cloud-nav.md)]
-
 If a customer is coming from another product, you can use configuration packages and templates to migrate their data to [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, and then use the cloud migration tool to switch to [!INCLUDE [prod_short](../includes/prod_short.md)] online. For more information, see [Set Up Company Configuration Packages](set-up-standard-company-configuration-packages.md).  
 
 > [!TIP]
@@ -41,7 +38,7 @@ To run cloud migration, Business Central on-premises deployment and Business Cen
 
 * Customer has a [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant  
 
-  * The on-premises solution must use SQL Server 2016 SP1 or later  
+  * The on-premises solution must use SQL Server 2016 or later  
   * The database must have compatibility level 130 or higher  
   * Update statistics and reorganize indexes on all tables on the source database  
   
@@ -387,11 +384,8 @@ The migration process, including the data flow and tasks that must be done to pr
 
 - [Business Central on-premise to online migration](migrate-business-central-on-premises.md)
 - [Dynamics GP on-premise to online migration](migrate-gp-overview.md)
+- [Dynamics NAV to Business Central online](../administration/migrate-nav.md)
 
 ## See also
 
 [FAQ about Migrating to the Cloud from On-Premises Solutions](faq-migrate-data.md)  
-[Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
-[Migrate Dynamics GP Data to the Cloud](migrate-dynamics-gp.md)  
-[Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
-[Managing Capacity](tenant-admin-center-capacity.md)  

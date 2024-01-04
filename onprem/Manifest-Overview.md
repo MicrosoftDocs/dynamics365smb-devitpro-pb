@@ -161,8 +161,7 @@ var map = null;
 function initializeControlAddIn() {  
     var controlAddIn = document.getElementById('controlAddIn');  
     controlAddIn.innerHTML = "Hello World";  
-}  
-
+}
 ```  
 
 ### Sizing the Control Add-in  

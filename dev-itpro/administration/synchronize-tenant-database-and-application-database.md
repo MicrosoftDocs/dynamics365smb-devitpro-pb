@@ -50,7 +50,7 @@ This article describes how to synchronize the business data \(tenant\) database 
     |ServererInstanceName|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance.|
     |TenantId|Specifies the ID of the tenant.|
 
-3.  Press Enter to run the cmdlet.  
+3.  Select <kbd>Enter</kbd> to run the cmdlet.  
 
 ## See Also  
 [Converting a Database.md](../upgrade/Converting-a-Database.md)  

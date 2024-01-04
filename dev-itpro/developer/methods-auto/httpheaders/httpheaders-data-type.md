@@ -3,7 +3,7 @@ title: "HttpHeaders Data Type"
 description: "Is a collection of headers and their values."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/06/2023
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Is a collection of headers and their values.
 
 
 
+## Instance methods
 The following methods are available on instances of the HttpHeaders data type.
 
 |Method name|Description|

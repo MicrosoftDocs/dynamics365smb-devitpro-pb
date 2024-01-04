@@ -55,7 +55,6 @@ codeunit 50132 MySubscriber
 
     end;
 }
-
 ```
  
 ## See Also

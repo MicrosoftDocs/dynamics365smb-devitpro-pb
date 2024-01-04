@@ -47,7 +47,7 @@ This method is like the FieldError Method for the Record data type. For examples
 
 The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The CustomerName variable is initialized with a blank text. `CustomerRecref.Field` creates a FieldRef that is named MyFieldRef for field1 \(No.\) and selects record 30000. Field 2 \(Name\) is then selected for record 30000. If the CustomerName variable is a blank text, then `MyFieldRef.FieldError` is executed and an error message is displayed. The text in Text000 text constant is inserted into the error message that is displayed by [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)]. 
 
-```
+```al
 var
     MyFieldRef: FieldRef;
     CustomerRecref: RecordRef;

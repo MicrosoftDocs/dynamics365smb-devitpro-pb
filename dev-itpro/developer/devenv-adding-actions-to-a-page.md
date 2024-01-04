@@ -3,7 +3,7 @@ title: Adding actions to a page
 description: Create and display actions in the ribbon of all pages and group them together under Actions, Navigate, Reports tabs and preview it in the Windows Client
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/15/2022
+ms.date: 06/30/2023
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -28,7 +28,7 @@ For more information about different types of actions and where to use them, see
 > After you have added actions to a page, you can use Designer to alter the actions, like moving an action to or from a promoted category, hiding and action or action group, and more. For more information, see [Using Designer](devenv-inclient-designer.md).
 
 
-## To add Actions to a Page
+## To add actions to a page
 
 The page actions are displayed on the header section. There are multiple tabs to help navigate to the right item.
   
@@ -45,6 +45,41 @@ In order to add actions to the action bar, you must use the keywords with Anchor
 
 
 <!-- For information about adding actions to a CueGroup control, see [Creating a Cue Based on a FlowField](devenv-creating-a-cue-based-on-a-flowfield.md).  -->
+
+## Declaring a selection-aware action
+
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can use the `Scope` property on an action, to define whether it's enabled for single or multi-row selection in accordance with the descriptions found in [Scope (Action) Property](properties/devenv-scope-action-property.md).
+
+To get started, use the snippet `tactionselectionaware`, which will suggest one of the selection-aware action scopes.
+
+The following example shows how to postpone multiple sales orders by a week using the `Scope=RepeaterSelection`.
+
+```AL
+pageextension 50110 SelectionAwareSOHandling extends "Sales Order List"
+{
+    actions
+    {
+        addfirst(processing)
+        {
+            action("Postpone Selected by 1 Week")
+            {
+                Scope = RepeaterSelection;
+
+                trigger OnAction()
+                var
+                    DueDate: Date;
+                begin
+                    DueDate := Rec."Due Date";
+                    Rec."Due Date" := CalcDate('7D', DueDate);
+                end;
+            }
+        }
+    }
+}
+```
+
+> [!NOTE]
+> The `OnAction` trigger doesn't need to define any iteration, the trigger is called multiple times at runtime, which reduces the amount of logic required per action. 
 
 ### Example
 
@@ -110,7 +145,7 @@ page 50110 PageName
                     action("My Report")
                     {
                         ApplicationArea = All;
-                        RunObject = page "Customer Card";
+                        RunObject = report "My Report";
                     }
                 }
             }
@@ -128,7 +163,7 @@ You can assign different icons for your actions from the [!INCLUDE[d365fin_md](i
 
 ## Set up a keyboard shortcut on an action
 
-You can use the [ShortcutKey](properties/devenv-shortcutkey-property.md) property to add a keyboard shortcut to an action. Pressing the key that you set up with this property provides the same result as selecting the action. For example, the following code adds the shortcut <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>D</kbd> to an action:
+You can use the [ShortcutKey](properties/devenv-shortcutkey-property.md) property to add a keyboard shortcut to an action. Selecting the key that you set up with this property provides the same result as selecting the action. For example, the following code adds the shortcut <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>D</kbd> to an action:
 
 ```AL
 action(DoThisAction)

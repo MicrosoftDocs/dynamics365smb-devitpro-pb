@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Cloud migration prerequisites for Dynamics GP
 
-This article outlines requirements on the Dynamics GP on-premises and online environments for cloud migration. Review this information before you start the cloud migration. 
+This article outlines requirements on the [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] on-premises and online environments for cloud migration. Review this information before you start the cloud migration. 
 
 ## Destination online environment
 
@@ -29,11 +29,11 @@ This article outlines requirements on the Dynamics GP on-premises and online env
   In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], open the environment that you intend to migrate your data to, and then choose the **Apps** action. Make sure that these apps have the latest updates installed:
 
   - Intelligent Cloud Base  
-  - Dynamics GP Intelligent Cloud  
-  - Dynamics GP History SmartLists  
+  - [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] Intelligent Cloud  
+  - [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] History SmartLists  
 
   > [!IMPORTANT]
-  > Migrating from Dynamics GP using the **Cloud Migration Setup** assisted setup guide is currently only supported for the following markets:  
+  > Migrating from [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] using the **Cloud Migration Setup** assisted setup guide is currently only supported for the following markets:  
   >
   > * United States
   > * Canada
@@ -42,7 +42,7 @@ This article outlines requirements on the Dynamics GP on-premises and online env
 
 ## Source on-premises environment
 
-- Dynamics GP version is a supported migration path.
+- [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] version is a supported migration path.
 
   If the solution is based on an older version of the on-premises product, upgrade to the latest supported version.
 
@@ -58,6 +58,15 @@ This article outlines requirements on the Dynamics GP on-premises and online env
 
     > [!IMPORTANT]
     > The login account used for SQL server authentication must have the **sysadmin** role on the server level and **db_owner** role on the database level.
+
+### Is a data upgrade needed?
+
+A cloud migration can be performed either on a live system or from a backup. 
+ 
+- For a migration from a live system, the database is running a production workload and must therefore use a non-developer SKU of SQL Server. This also means that if you are running your [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] production environment on a SQL Server version 2014 or earlier, you need to upgrade the database before starting your cloud migration project. You might want to consider using a Azure SQL Managed Instance resource as a stepping stone because this type of Azure SQL database allows for importing a database backup and also supports most of the on-premises features of SQL Server. 
+ 
+- For a migration from a backup, you can just restore the backup using a SQL Server 2022 (or later) developer edition and run the migration project from there, as long as you don't use that SQL Server for other workloads.
+
 
 ## Other
 

@@ -3,7 +3,7 @@ title: "Record.Insert(Boolean, Boolean) Method"
 description: "Inserts a record into a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
+ms.date: 11/24/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,7 @@ If this parameter is true, the SystemId field of the record is given a value tha
 
 ## Remarks
 
-The inserted record will automatically get assigned a SystemId by the platform. To assign a specific SystemId instead of the one assigned by the platform, use [Insert(Boolean, Boolean)](record-insert-boolean-boolean-method.md) instead.
+The inserted record will automatically get assigned a SystemId by the platform. To assign a specific SystemId instead of the one assigned by the platform, use [Insert(Boolean, Boolean)](record-insert-boolean-method.md) instead.
 
 ## Example
   

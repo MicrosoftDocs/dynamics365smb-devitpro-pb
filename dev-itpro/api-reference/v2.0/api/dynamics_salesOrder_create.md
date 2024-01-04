@@ -103,7 +103,16 @@ Content-type: application/json
     "status": "Draft",
     "lastModifiedDateTime": "2023-09-02T17:38:08.537Z",
     "phoneNumber": "",
-    "email": "robert.townes@contoso.com"
+    "email": "robert.townes@contoso.com",
+    "documentLines": [
+       {
+          "lineType": "Item",
+          "lineNo": 1000,
+          "itemNo": "ITEM001",
+          "quantity": 10,
+          "unitOfMeasureCode": "EA"
+       }
+    ]
 }
 ```
 

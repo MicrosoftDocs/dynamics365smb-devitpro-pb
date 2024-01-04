@@ -51,7 +51,7 @@ Clear(JsonArray)
 ## Example
 This example shows how to read JSON data from a string into a JsonArray variable.
 
-```
+```al
 local procedure ReadJson(data : Text) result : JsonArray;
 begin
     result.ReadFrom(data);    

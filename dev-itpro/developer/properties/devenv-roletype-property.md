@@ -3,7 +3,7 @@ title: "RoleType Property"
 description: "If the entitlement type is Role, the RoleType is used to distinguish between local and delegated assignments of the role."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/06/2023
+ms.date: 11/17/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -3,7 +3,7 @@ title: "HttpResponseMessage Data Type"
 description: "Represents an HTTP response message including the status code and data."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/21/2022
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Represents an HTTP response message including the status code and data.
 
 
 
+## Instance methods
 The following methods are available on instances of the HttpResponseMessage data type.
 
 |Method name|Description|

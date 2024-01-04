@@ -2,9 +2,9 @@ The events _OnCompanyOpen_ and _OnCompanyOpenCompleted_ are raised every time a 
 
 This behavior means that you must design such code in a way that is minimally intrusive, for example, set low timeouts for outgoing web service calls.
 
-One or more of these three things typically are involved in a performance issue on logins
-1. calls to external services
-2. long running SQL calls to the database
+One or more of these operations typically are involved in a performance issue on logins:
+1. Calls to external services
+2. Long running SQL calls to the database
 
 If you have enabled telemetry for your environment or app, you can use this KQL query to analyze how session creation time is delayed by calls to external services.
 

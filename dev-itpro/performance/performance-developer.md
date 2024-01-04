@@ -2,7 +2,7 @@
 title: Performance article for developers
 description: Provides information for developers to help improve performance in Business Central
 ms.custom: bap-tremplate
-ms.date: 09/27/2023
+ms.date: 10/11/2023
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -85,6 +85,10 @@ The **Edit in Excel** feature uses UI pages exposed through OData, which means t
 
 For more information on how to use telemetry to analyze the performance of reports, see [Report performance](../developer/devenv-report-performance.md)
 
+### Stop using report properties **DefaultLayout**, **ExcelLayout**, **RDLLayout**, and **WordLayout**
+
+[!INCLUDE[single_layouts](../developer/includes/include-single-layout-obsolete.md)]
+
 ### Loading data efficiently to Power BI
 
 [!INCLUDE[perf_ws_pbi_patterns](../includes/include-webservices-pbi-performance-patterns.md)]
@@ -124,28 +128,7 @@ Use the `Media` or `Mediaset` data types instead of the `Blob` data type. The `M
 
 ### <a name="runasync"></a>Pattern - Run async (and parallelize)
 
-It's often desirable to offload AL execution from the UI thread to a background session. 
-
-Here are some examples of this pattern:
-
-- Don't let the user wait for batches 
-- Split large tasks into smaller tasks and run them in parallel
-
-There are many different ways to spin up a new task:
-
-- [Job Queue](/dynamics365/business-central/admin-job-queues-schedule-tasks)  
-- [TaskScheduler.CreateTask](../developer/methods-auto/taskscheduler/taskscheduler-data-type.md)  
-- [StartSession](../developer/methods-auto/session/session-startsession-integer-integer-string-table-method.md)  
-- [Page Background Task](../developer/devenv-page-background-tasks.md)  
-
-They come with different characteristics as described in this table:
-
-|Method to start a new task | Properties |
-|---------------------------|------------|
-| Page Background Task      | Can (will) be canceled <br> Read-only <br> Call back to parent session <br> Lightweight |
-| StartSession              | Created immediately <br> Runs on same server <br> Not as controlled as a Page Background Task |
-| Task                      | Queued up <br> Any server in a cluster can start it <br> Survives server restarts <br> No logging | 
-| Job queue                 | Scheduled <br> Recurrence <br> Any server in a cluster can start it <br> Survives server restarts <br> Logging of results |
+[!INCLUDE[async-overview](../includes/include-async-overview.md)]
 
 ### <a name="setbasedmethods"></a>Pattern - Use set-based methods instead of looping
 

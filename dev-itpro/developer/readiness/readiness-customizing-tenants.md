@@ -48,4 +48,4 @@ To learn more about customization, select the following links:
 - [AL Development Environment](../devenv-reference-overview.md)  
 - [Update Lifecycle for Customizations of Business Central Online](../devenv-customization-update-lifecycle.md)
 - [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](../app-maintain.md) 
-- [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog)
+- [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)

@@ -13,7 +13,7 @@ ms.author: solsen
 
 # JSON files
 
-When you start a new AL project, two JSON files; the `app.json` file and the `launch.json` file are generated automatically. The `app.json` file contains information about the extension that you're building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often, the `app.json` file is referred to as the manifest. This article describes the `app.json` file settings in the [App.json file](devenv-json-files.md#appjson-file) section. 
+When you start a new AL project, two JSON files; the `app.json` file and the `launch.json` file are generated automatically. The `app.json` file contains information about the extension that you're building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often, the `app.json` file is referred to as the manifest. This article describes the `app.json` file settings in the [App.json file](devenv-json-files.md#appjson-file) section.
 
 For information about the `launch.json` file see the article [Launch JSON file](devenv-json-launch-file.md).
 
@@ -25,7 +25,7 @@ For information about the `launch.json` file see the article [Launch JSON file](
 
 ## App.json file
 
-The following table describes the settings in the `app.json` file. To see an example `app.json` file, go to [Business Central Performance Toolkit](https://github.com/microsoft/ALAppExtensions/blob/main/Modules/DevTools/BusinessCentralPerformanceToolkit/app.json).
+The following table describes the settings in the `app.json` file. To see an example `app.json` file, go to [Business Central Performance Toolkit](https://github.com/microsoft/BCApps/blob/main/src/Tools/Performance%20Toolkit/App/app.json).
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
@@ -37,7 +37,7 @@ The following table describes the settings in the `app.json` file. To see an exa
 |version|Yes|The version of the app package.|
 |privacyStatement|No, but required for AppSource submission|URL to the privacy statement for the extension.|
 |EULA|No, but required for AppSource submission|URL to the license terms for the extension.|
-|help|No, but required for AppSource submission|URL to an online description of the extension focusing on the help and troubleshooting content. The link is used in AppSource and can be the same as the value of the `contextSensitiveHelpUrl` property. To learn more about *help links*, see [Help and Support Links](../developer/readiness/readiness-checklist-h-help-support.md).|
+|help|No, but required for AppSource submission|URL to an online description of the extension focusing on the help and troubleshooting content. The link is used in AppSource and can be the same as the value of the `contextSensitiveHelpUrl` property. To learn more about *help links*, see [](../developer/readiness/readiness-checklist-h-help-support.md).|
 |url|No, but required for AppSource submission|URL of the extension package. The link is used in [!INCLUDE[prod_short](includes/prod_short.md)], on the **Extension Management** page, as **Website**. This URL can be a link to an advertising page for your app, a page describing the features and additional resources other than troubleshooting and help, or it can be a link for contacting the app support, for example, see [Support Links](../developer/readiness/readiness-checklist-h-help-support.md#support-link).|
 |logo|No, but required for AppSource submission|Relative path to the app package logo from the root of the package.|
 |test|No|Version of the dependent test framework in the format X.Y.U.Z. <br>**Note:** This property is only supported for [!INCLUDE[prod_short](includes/prod_short.md)] version 14 and earlier, where the base app is C/AL.|
@@ -62,7 +62,7 @@ The following table describes the settings in the `app.json` file. To see an exa
 |keyVaultUrls|No|List of URLs of key vaults that from which the extension can retrieve secrets. For example: `"keyVaultUrls": [ "https://myfirstkeyvault.vault.azure.net", "https://mysecondkeyvault.vault.azure.net" ]`. <br><br>For more information, see [App Key Vaults](devenv-app-key-vault-overview.md).|
 |suppressWarnings|No|Specifies that warnings issued by, for example, a specific analyzer rule shouldn't be shown in the **Output** window. Syntax is `"suppressWarnings": [<warning ID>,<warning ID2>,...]`. For example, `"suppressWarnings": [ "AL0458" ]`. It's also possible to use `#pragma` directives for suppressing warnings for specific areas of code. For more information, see [Pragma Warning Directive](directives/devenv-directive-pragma-warning.md) and [Suppressing Warnings](devenv-deprecating-with-statements-overview.md#suppressing-warnings).|
 |resourceExposurePolicy|No|Defines the accessibility of the resources and source code during different operations. The `resourceExposurePolicy` property contains four options for defining access: `applyToDevExtension`, `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile`. All defaults are false. The syntax is `"resourceExposurePolicy": {"applyToDevExtension": true, "allowDebugging": true, "allowDownloadingSource": true, "includeSourceInSymbolFile": true}`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).|
-|source|No|Specifies the properties for source control. The options are: <br> `resposityUrl`, which is the URL of the repository where the source code of the project can be found.<br> `commit`, which is an ID of the source code for the current version of the project, that allows getting back to the commit that triggered building the extension.<br>The `source` setting can dynamically be set as part of build pipelines via command line parameters for the used alc.exe compiler executable. The values passed here will overwrite any values in the app.json source file.|
+|source|No|Specifies the properties for source control. The options are: <br> `repositoryUrl`, which is the URL of the repository where the source code of the project can be found.<br> `commit`, which is an ID of the source code for the current version of the project, that allows getting back to the commit that triggered building the extension.<br>The `source` setting can dynamically be set as part of build pipelines via command line parameters for the used alc.exe compiler executable. The values passed here will overwrite any values in the app.json source file.|
 |build|No|Specifies the properties for building the package. The options are:<br> `by`, which is useful for tracking the build agent/system that orchestrated the build, for example AL-Go for GitHub. <br> `url`, which can be used for the URL to the build system invocation where the build can be found.<br>The `build` setting can dynamically be set as part of build pipelines via command line parameters for the used alc.exe compiler executable. The values passed here will overwrite any values in the app.json source file.|
 
 ## See Also
@@ -74,4 +74,4 @@ The following table describes the settings in the `app.json` file. To see an exa
 [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
-[App Key Vaults](devenv-app-key-vault-overview.md)
+[App Key Vaults](devenv-app-key-vault-overview.md)  

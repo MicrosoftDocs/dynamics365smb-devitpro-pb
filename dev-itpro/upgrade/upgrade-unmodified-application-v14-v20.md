@@ -1,8 +1,8 @@
 ---
-title: "Upgrading Unmodified C/AL Application to Version 20"
+title: "Upgrading unmodified C/AL application to version 20"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 20
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/27/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,9 +10,9 @@ ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
-# Upgrading Unmodified C/AL Application to Version 20
+# Upgrading unmodified C/AL application to version 20
 
-Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new Microsoft System and Base Application extensions. The result will be a fully upgraded Business Central 2022 release wave 1 (version 20) application and platform.
+Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you replace the C/AL base application with the new Microsoft System and Base Application extensions. The result is a fully upgraded Business Central 2022 release wave 1 (version 20) application and platform.
 
  [![Upgrade on unmodified Business Central application.](../developer/media/bc14-to-20-upgrade-unmodified-app.png)](../developer/media/bc14-to-20-upgrade-unmodified-app.png#lightbox)  
 
@@ -81,13 +81,13 @@ $AddinsFolder = "The file path to the Add-ins folder of version 20 server instal
 
 3. Install Business Central version 20 components.
 
-    You'll have to keep version 14 installed to complete some steps in the upgrade process. When you install version 20, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You have to keep version 14 installed to complete some steps in the upgrade process. When you install version 20, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
 ## Task 2: Upgrade permission sets
 
-Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you'll have to go through before and during upgrade.
+Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you have to go through before and during upgrade.
 
 For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
 
@@ -207,7 +207,7 @@ When you installed version 20 in **Task 1**, a version 20 [!INCLUDE[server](../d
     Set-NAVServerConfiguration -ServerInstance $NewBcServerInstance -KeyName DatabaseName -KeyValue $ApplicationDatabase
     ```
 
-    In a single tenant deployment, this command will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+    In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
 2. Configure the server instance for migrate extensions to the use the new base application and system application extensions. 
 
@@ -217,7 +217,7 @@ When you installed version 20 in **Task 1**, a version 20 [!INCLUDE[server](../d
 
     This setting serves the following purposes:
 
-    - When you run the data upgrade on a tenant, the server will run the data upgrade for the base and system application extensions. The base and system applications will be automatically installed on the tenant also.
+    - When you run the data upgrade on a tenant, the server runs the data upgrade for the base and system application extensions. The base and system applications are automatically installed on the tenant also.
     - Lets you republish extensions that haven't been built on version 20. The extensions typically include the third-party extensions that were used in your version 14. When you publish the extensions, the extension manifests are automatically modified with a dependency on the base and system applications.
 
     For more information about this setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).
@@ -261,7 +261,7 @@ For more information, see [Uploading a License File for a Specific Database](../
 
 ## Task 7: Publish extensions
 
-In this task, you'll publish the extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft extensions and third-party extensions that were used on your old deployment.
+In this task, you publish the extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft extensions and third-party extensions that were used on your old deployment.
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
@@ -343,7 +343,7 @@ This step is important, otherwise you might experience issues when you run the d
 
 ## Task 9: Synchronize tenant
 
-In this task, you'll synchronize the tenant's database schema with any schema changes in the application database and extensions.
+In this task, you synchronize the tenant's database schema with any schema changes in the application database and extensions.
 
 If you have a multitenant deployment, do these steps for each tenant.
 
@@ -448,7 +448,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
     1. Install **Application** extension.
 
-        You'll have to install the **Application** extension first, otherwise you can't upgrade Microsoft extensions.
+        You have to install the **Application** extension first, otherwise you can't upgrade Microsoft extensions.
 
         ```powershell
         Install-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Application" -Version $NewVersion
@@ -585,13 +585,13 @@ For more information, see [To export and import a permission set](/dynamics365/b
         > This is a required step. For more information, see [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) in the business functionality content.
     - Once the setup of certificate authentication is done, choose **Cloud Migration**, and then choose **Rebuild Coupling Table**.  
 
-        This will schedule the rebuilding of the coupling table and will open the corresponding job queue entry, so you can monitor its progress and restart it if it ends up in error state.  
+        This schedules the rebuilding of the coupling table and will open the corresponding job queue entry, so you can monitor its progress and restart it if it ends up in error state.  
 
         > [!NOTE]
         > The step for rebuilding the coupling table is not needed if you have performed cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] version 15 or later.
 
 
-## See Also  
+## See also  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
