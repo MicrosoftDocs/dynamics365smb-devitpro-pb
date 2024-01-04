@@ -1,3 +1,4 @@
+<!-- Do not edit this content manually. Currently, this information is generated from an Excel file that defined repost exceptions the exceptions. Contact Kennie Pontoppidan. --> 
 | Exception | Severity | Explanation | 
 | --------- | -------- | ----------- |
 |Canceled|Warning|[Read more](#Canceled)|

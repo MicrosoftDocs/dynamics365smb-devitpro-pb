@@ -22,15 +22,15 @@ traces
 , alObjectName = customDimensions.alObjectName
 , alObjectType = customDimensions.alObjectType
 // what did the user do
-, documentFormat = customDimensions.documentFormat   // documentFormat dimension added in version 20.0
-, LayoutAppId = customDimensions.layoutAppId         // layout dimensions added in version 20.0
-, LayoutName = customDimensions.layoutName           // layout dimensions added in version 20.0
-, LayoutType = customDimensions.layoutType           // layout dimensions added in version 20.0
-, reportAction = customDimensions.reportAction       // reportAction dimension added in version 20.0
+, documentFormat = customDimensions.documentFormat   // documentFormat dimension was added in version 20.0
+, LayoutAppId = customDimensions.layoutAppId         // layoutAppId was added in version 20.0
+, LayoutName = customDimensions.layoutName           // layoutName dimension was added in version 20.0
+, LayoutType = customDimensions.layoutType           // layoutType dimension was added in version 20.0
+, reportAction = customDimensions.reportAction       // reportAction dimension was added in version 20.0
 , reportingEngine = customDimensions.reportingEngine // reportingEngine dimension was added in version 17.3
 // which user ran the report
 , usertelemetryId = case(
-  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry id was introduced in the platform in version 20.0
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // usertelemetryId was added to the platform in version 20.0
 , 'N/A'
 )
 // what happened

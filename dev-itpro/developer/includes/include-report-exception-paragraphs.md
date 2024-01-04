@@ -1,3 +1,4 @@
+<!-- Do not edit this content manually. Currently, this information is generated from an Excel file that defined repost exceptions the exceptions. Contact Kennie Pontoppidan--> 
 ### <a name=Canceled></a>Canceled
 The report was cancelled either by the user or by the platform.
 
