@@ -158,7 +158,7 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
 3. Specify the **Car Model**  table as the source table.
 4. Specify `APIVersion`, `APIPublisher`, `APIGroup`, `EntityName`, and `EntitySetName` for your API page. These properties will affect your custom endpoint: `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/companies(<company id>)/carModel`. For more information, see [Business Central API endpoints](../api-reference/v2.0/endpoints-apis-for-dynamics.md) and [Calling the API](devenv-develop-connect-apps.md#calling-an-api).
 5. Specify `EntityCaption` and `EntitySetCaption`. These two properties are generated in the entityDefinitions `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions` that are localized and translatable. 
-6. Make sure to set the `ODataKeyFields` property to `SystemId`. A SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. For more information, see [System Fields](../developer/devenv-table-system-fields).
+6. Make sure to set the `ODataKeyFields` property to `SystemId`. A SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. For more information, see [System Fields](../developer/devenv-table-system-fields.md).
     ```AL
     page 50101 "API Car Model"
     {

@@ -133,7 +133,7 @@ For more information, see [Web services performance](web-service-performance.md)
 
 Should you need a unique row identifier in your OData or SOAP web service endpoint, then consider adding the SystemId field to the page. The SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. 
 
-For more information, see [System Fields](../developer/devenv-table-system-fields).
+For more information, see [System Fields](../developer/devenv-table-system-fields.md).
 
 
 ## See Also
