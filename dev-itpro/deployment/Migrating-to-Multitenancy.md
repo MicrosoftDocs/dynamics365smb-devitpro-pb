@@ -1,7 +1,7 @@
 ---
-title: "Migrating to Multitenancy"
+title: "Migrating to multitenancy"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 01/03/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,17 +10,17 @@ ms.assetid: 4e96a4ec-3880-400f-bf32-e50fefcf28bc
 caps.latest.revision: 11
 description: Learn how to migrate your Business Central solution to a multitenant deployment for easier maintenance across multiple customers. Step-by-step guide included.
 ---
-# Migrating to Multitenancy
+# Migrating to multitenancy
 
 You can choose to migrate your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution to a multitenant deployment architecture where you maintain a single application that is used by two or more companies that store their data in separate databases.  
   
 This can make maintenance of your solution easier if you support multiple customers with the same application functionality.  
   
-## Tenants and Companies
+## Tenants and companies
 
- When you upgrade your application and the data to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you have a database that has the same number of companies as you had before the upgrade. This database is considered a *tenant*. This does not mean that you have to turn your solution into a multitenant deployment. But it means that you can if you want to.  
+ When you upgrade your application and the data to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you have a database that has the same number of companies as you had before the upgrade. This database is considered a *tenant*. This doesn't mean that you have to turn your solution into a multitenant deployment. But it means that you can if you want to.  
   
- For example, your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment in the earlier version consisted of a database that has 20 companies. In other words, you support 20 companies that all share the same application functionality. In this example, the companies are separate companies that have nothing to do with each other except that they are supported by you in one database. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you can choose to extract the application-wide tables into a separate database and keep the data for all 20 companies in the original database. This becomes a single-tenant business data database. Then, you can choose to split the business data database into one for each company so that you run a truly multitenant environment. The application is stored separately in the application database, and you maintain application functionality centrally. When you modify the application, you make the changes available to one tenant at a time. As a result, if something goes wrong, all other tenants are not affected.  
+ For example, your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment in the earlier version consisted of a database that has 20 companies. In other words, you support 20 companies that all share the same application functionality. In this example, the companies are separate companies that have nothing to do with each other except that they're supported by you in one database. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you can choose to extract the application-wide tables into a separate database and keep the data for all 20 companies in the original database. This becomes a single-tenant business data database. Then, you can choose to split the business data database into one for each company so that you run a truly multitenant environment. The application is stored separately in the application database, and you maintain application functionality centrally. When you modify the application, you make the changes available to one tenant at a time. As a result, if something goes wrong, all other tenants aren't affected.  
   
  Compare this to earlier versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] where a database could contain several companies. These companies could be related or not, but they would all use the same application and write to the same database. Also, when you modified the application, it would affect all companies immediately. So if something went wrong, all companies would be affected.  
   
@@ -29,7 +29,7 @@ This can make maintenance of your solution easier if you support multiple custom
   
  In multitenant deployments of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], permission sets are stored centrally in the application database, so only the administrator of the central application can add, remove, or modify permission sets. Instead, the tenants can use user groups to manage permissions.  
   
-## Migration Process
+## Migration process
 
 If you decide to move to a multitenant architecture, you must complete the following steps:  
   
@@ -43,7 +43,7 @@ If you decide to move to a multitenant architecture, you must complete the follo
   
  If you want to move back to storing application tables and business data in a single database, you can use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Windows PowerShell cmdlets to merge the databases. For more information, see [Merging an Application Database with a Tenant Database](Merging-an-Application-Database-with-a-Tenant-Database.md).  
   
-## See Also
+## See also
   
  [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md)   
  [Creating Tenants from Companies](Creating-Tenants-from-Companies.md)   
