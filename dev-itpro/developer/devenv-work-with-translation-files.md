@@ -34,7 +34,7 @@ In the app.json file of your extension, add the following line:
 > If the **Incremental Build** setting is enabled in the **AL Language extension configuration** then all translations will be ignored, even though the `"features": [ "TranslationFile" ]` setting is specified in the `app.json` file. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 > The same is true when using **RAD** publishing, all translations will also be ignored. For more information, see [Work with Rapid Application Development](devenv-rad-publishing.md).
 
-Now, when you run the build command (**Ctrl+Shift+B**) in Visual Studio Code, a `\Translations` folder is generated and populated with the .xlf file that contains all the labels, label properties, and report labels that you're using in the extension. The generated .xlf file can now be translated.
+Now, when you run the build command (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) in Visual Studio Code, a `\Translations` folder is generated and populated with the .xlf file that contains all the labels, label properties, and report labels that you're using in the extension. The generated .xlf file can now be translated.
 
 > [!IMPORTANT]  
 > The **ML** versions of properties are **not** included in the .xlf file:  
@@ -155,7 +155,6 @@ pageextension 50000 MyPageExtension extends MyPage
 {
     Caption = 'Extension Page';
 }
-
 ```
 
 has `<trans-unit id>` for the page extension corresponding to `PageExtension 1716690578 - Property 2879900210`, then if you want to change the caption on the page, you must use the ID `Page 2931038265 - Property 2879900210`, which is the `<trans-unit id>` of the original property.

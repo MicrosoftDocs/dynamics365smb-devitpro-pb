@@ -1,8 +1,8 @@
 ---
-title: "Upgrading Unmodified C/AL Application to Version 17"
+title: "Upgrading unmodified C/AL application to version 17"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 17
 ms.custom: na
-ms.date: 04/15/2021
+ms.date: 12/27/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,9 +10,9 @@ ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
-# Upgrading Unmodified C/AL Application to Version 17
+# Upgrading unmodified C/AL application to version 17
 
-Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new Microsoft System and Base Application extensions. The result will be a fully upgraded Business Central 2020 release wave 2 (version 17) application and platform.
+Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you replace the C/AL base application with the new Microsoft System and Base Application extensions. The result is a fully upgraded Business Central 2020 release wave 2 (version 17) application and platform.
 
  ![Upgrade on unmodified Business Central application.](../developer/media/bc14-to-17-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
@@ -57,7 +57,7 @@ Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod
 
 3. Install Business Central version 17 components.
 
-    You'll have to keep version 14 installed to complete some steps in the upgrade process. When you install version 17, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You have to keep version 14 installed to complete some steps in the upgrade process. When you install version 17, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -170,7 +170,7 @@ When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../d
     ```powershell
     Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName DatabaseName -KeyValue "<database name>"
     ```
-    In a single tenant deployment, this command will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+    In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 2. Configure the server instance for migrate extensions to the use the new base application and system application extensions. 
 
     ```powershell
@@ -179,7 +179,7 @@ When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../d
 
     This setting serves the following purposes:
 
-    - When you run the data upgrade on a tenant, the server will run the data upgrade for the base and system application extensions. The base and system applications will be automatically installed on the tenant also.
+    - When you run the data upgrade on a tenant, the server runs the data upgrade for the base and system application extensions. The base and system applications are automatically installed on the tenant also.
     - Lets you republish extensions that haven't been built on version 17. The extensions typically include the third-party extensions that were used in your version 14. When you publish the extensions, the extension manifests are automatically modified with a dependency on the base and system applications.
 
     For more information about this setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).
@@ -217,7 +217,7 @@ For more information, see [Uploading a License File for a Specific Database](../
  
 ## Task 6: Publish symbols and extensions
 
-In this task, you'll publish the platform symbols and extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft extensions and third-party extensions that were used on your old deployment.
+In this task, you publish the platform symbols and extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft extensions and third-party extensions that were used on your old deployment.
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
@@ -291,7 +291,7 @@ This step is important, otherwise you might experience issues when you run the d
 
 ## Task 8: Synchronize tenant
 
-In this task, you'll synchronize the tenant's database schema with any schema changes in the application database and extensions.
+In this task, you synchronize the tenant's database schema with any schema changes in the application database and extensions.
 
 If you have a multitenant deployment, do these steps for each tenant.
 
@@ -378,7 +378,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     
     1. Install **Application** extension.
 
-        You'll have to install the **Application** extension first, otherwise you can't upgrade Microsoft extensions.
+        You have to install the **Application** extension first, otherwise you can't upgrade Microsoft extensions.
 
         ```powershell
         Install-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Application"
@@ -437,7 +437,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 
 This task serves two purposes. It ensures that personalization works as expected after upgrade. It's also useful for support purposes and answering a common question about the application version.  
 
-On the **Help and Support** page in the client, you'll see an application version, such as 14.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
+On the **Help and Support** page in the client, you see an application version, such as 14.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
 
 We recommend setting the value to application build number for the version 17 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/help/4549687).
 
@@ -490,7 +490,7 @@ Don't stop the [!INCLUDE[server](../developer/includes/server.md)] instance unti
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
-## See Also  
+## See also  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  

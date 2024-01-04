@@ -1257,7 +1257,6 @@ OBJECT Codeunit 5330 CRM Integration Management
     END.
   }
 }
-
 ```
 
 <!--

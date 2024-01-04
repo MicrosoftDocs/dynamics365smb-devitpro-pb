@@ -54,7 +54,6 @@ Here is a JSON representation of the extension.
     "versionMinor": 0,
     "isInstalled": true
 }
-
 ```
 
 ## See Also 

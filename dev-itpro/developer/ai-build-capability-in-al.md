@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: 
 ms.topic: conceptual
 ms.collection: get-started
-ms.date: 12/08/2023
+ms.date: 12/20/2023
 ms.custom: bap-template
 ---
 
@@ -151,35 +151,42 @@ The `SetCopilotCapability` call sets the capability for the generation. The `Set
 
 Then, the `AddUserMessage` call adds a user message to the chat history. The user message is what you want to generate text from. Next, the `GenerateChatCompletion` call generates the chat completion based on the user message and input parameters. It uses the `AzureOpenAI` object to call the service and get the response. The `IsSuccess` method checks if the operation was successful, and finally, the `GetLastMessage` call returns the last message from the chat history. The last message is the generated text that you want to use.
 
-
 ```al
 codeunit 54334 "CopilotJob"
 {
-    procedure Generate(Prompt: Text): Text
-    var
-        AzureOpenAI: Codeunit "Azure OpenAI";
-        AOAIOperationResponse: Codeunit "AOAI Operation Response";
-        AOAIChatCompletionParams: Codeunit "AOAI Chat Completion Params";
-        AOAIChatMessages: Codeunit "AOAI Chat Messages";
-        Metaprompt: Text;
-        Result: Text;
-    begin
-        SetAuthorization(AzureOpenAI);
-        SetParameters(AOAIChatCompletionParams);
-        AzureOpenAI.SetCopilotCapability(Enum::"Copilot Capability"::“Draft a Job");
-        IsolatedStorage.Get('DescribeJobMetaprompt', Metaprompt);
-        AOAIChatMessages.SetPrimarySystemMessage(Metaprompt);
-        AOAIChatMessages.AddUserMessage(Prompt);
-        AzureOpenAI.GenerateChatCompletion(AOAIChatMessages, AOAIChatCompletionParams, AOAIOperationResponse);
-        if AOAIOperationResponse.IsSuccess() then
-            Result := AOAIChatMessages.GetLastMessage();
-        exit(Result);
-    end;
-    local procedure SetParameters(var AOAIChatCompletionParams: Codeunit "AOAI Chat Completion Params")
-    begin
-        AOAIChatCompletionParams.SetMaxTokens(2500);
-        AOAIChatCompletionParams.SetTemperature(0);
-    end;
+    procedure Generate(Prompt: Text): Text
+    var
+        AzureOpenAI: Codeunit "Azure OpenAI";
+        AOAIOperationResponse: Codeunit "AOAI Operation Response";
+        AOAIChatCompletionParams: Codeunit "AOAI Chat Completion Params";
+        AOAIChatMessages: Codeunit "AOAI Chat Messages";
+        Metaprompt: Text;
+        Result: Text;
+    begin
+        SetAuthorization(AzureOpenAI);
+        SetParameters(AOAIChatCompletionParams);
+        AzureOpenAI.SetCopilotCapability(Enum::"Copilot Capability"::“Draft a Job");
+        IsolatedStorage.Get('DescribeJobMetaprompt', Metaprompt);
+        if AzureOpenAI.ApproximateTokenCount(Metaprompt) + AzureOpenAI.ApproximateTokenCount(Prompt) <= 
+           MaxModelRequestTokens() then 
+           begin 
+              AOAIChatMessages.SetPrimarySystemMessage(Metaprompt);
+              AOAIChatMessages.AddUserMessage(Prompt);
+              AzureOpenAI.GenerateChatCompletion(AOAIChatMessages, AOAIChatCompletionParams, AOAIOperationResponse);
+              if AOAIOperationResponse.IsSuccess() then
+                  Result := AOAIChatMessages.GetLastMessage();
+              exit(Result);
+          end;
+    end;
+    local procedure SetParameters(var AOAIChatCompletionParams: Codeunit "AOAI Chat Completion Params")
+    begin
+        AOAIChatCompletionParams.SetMaxTokens(2500);
+        AOAIChatCompletionParams.SetTemperature(0);
+    end;
+    local procedure MaxModelRequestTokens(): integer
+    begin 
+       exit(1596) // Assuming it's GPT 3.5 Turbo with 4096 max tokens and 2500 is reserved for the output
+    end;
 }
 ```
 

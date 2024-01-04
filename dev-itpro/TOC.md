@@ -625,12 +625,20 @@
 #### [Error handling](developer/devenv-al-error-handling.md)
 #### [Understanding the error dialog](developer/devenv-error-dialog.md)
 #### [User experience guidelines for errors](developer/devenv-error-handling-guidelines.md)
-#### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md)
+#### [Actionable errors](developer/devenv-actionable-errors.md)
 #### [Collecting errors](developer/devenv-error-collection.md)
-#### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
-#### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md)
-#### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md)
-#### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md)
+#### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### Error telemetry
+##### [Error message quality telemetry](administration/telemetry-error-message-voting-trace.md)
+##### [Error method telemetry](administration/telemetry-error-method-trace.md)
+##### [Feature (error) telemetry](administration/telemetry-feature-telemetry.md)
+##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
+#### AL Language Reference (errors)
+##### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
+##### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md)
+##### LogInternalError method (on-premises only)
+###### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md)
+###### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md)
 
 ### Formatting values
 #### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
@@ -767,10 +775,6 @@
 #### [Report object](developer/devenv-report-object.md)
 #### [Report extension object](developer/devenv-report-ext-object.md)
 #### [Report extension example](developer/devenv-report-ext-example.md)
-#### AL Language Reference (reports)
-##### [Report datatype (AL Language Reference)](developer/methods-auto/report/report-data-type.md)
-##### [Report object properties (AL Language Reference)](developer/properties/devenv-report-properties.md)
-##### [Report, Report Dataitem, and Report Extension Properties (AL Language Reference)](developer/properties/devenv-report-property-overview.md)
 #### [Defining a report dataset](developer/devenv-report-dataset.md)
 #### Formatting report data
 ##### [Formatting field values in report datasets](developer/devenv-format-report-field-data.md)
@@ -808,6 +812,15 @@
 #### [Testing a report](developer/devenv-testing-reports.md)
 #### [Report performance](developer/devenv-report-performance.md)
 #### [Report telemetry](administration/telemetry-reports-trace.md)
+#### How users work with reports
+##### [Run and print reports](/dynamics365/business-central/ui-work-report?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Specify a default printer](/dynamics365/business-central/ui-specify-printer-selection-reports?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Schedule a report to run](/dynamics365/business-central/ui-work-report#ScheduleReport?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Manage saved settings](/dynamics365/business-central/reports-saving-reusing-settings?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### AL language reference (reports)
+##### [Report datatype](developer/methods-auto/report/report-data-type.md)
+##### [Report object properties](developer/properties/devenv-report-properties.md)
+##### [Report, report data item, and report extension properties](developer/properties/devenv-report-property-overview.md)
 
 
 ### [Events](developer/devenv-events-in-al.md)
@@ -843,11 +856,19 @@
 ##### [Permission set](administration/resources/dynamics_permissionset.md)
 ##### [Get permission set](administration/api/dynamics_permissionset_get.md)
 
+
 ### Running things in the background
 #### [Overview](developer/devenv-async-overview.md)
 #### [Page background tasks](developer/devenv-page-background-tasks.md)
 #### [Task scheduler](developer/devenv-task-scheduler.md)
 #### [Job queue](developer/devenv-job-queue.md)
+#### AL language reference (background processing)
+##### [Session.StartSession](developer/methods-auto/session/session-startsession-integer-integer-string-table-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Session.StopSession](developer/methods-auto/session/session-stopsession-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [TaskScheduler Data Type](developer/methods-auto/taskscheduler/taskscheduler-data-type.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Codeunit "Job Queue Management"](/dynamics365/business-central/application/base-application/codeunit/system.threading.job-queue-management?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Codeunit "Job Queue Dispatcher"](/dynamics365/business-central/application/base-application/codeunit/system.threading.job-queue-dispatcher?toc=/dynamics365/business-central/dev-itpro/toc.json)
+
 
 ### Developing APIs
 #### [Overview](developer/devenv-api.md)

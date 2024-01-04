@@ -1,18 +1,18 @@
 ---
-title: Compare and Update Application Object Source Files
+title: Compare and update application object source files
 description: Compare the different set of Dynamics NAV application objects using Windows PowerShell cmdlets and apply all or some differences to the target solution.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/21/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
-# Compare and Update Application Object Source Files
+# Compare and update application object source files
 You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to compare different sets of application objects to identify the differences. Then, you can choose to apply all or some of the differences to a target solution.  
   
- We recommend that you use the Merge-NAVApplicationObject cmdlet because it is the faster and easier way to merge objects. However, you can choose to use the Compare-NAVApplicationObject cmdlet and Update-NAVApplicationObject cmdlet to identify the differences before you apply them. Or, for example, when you want to apply the same modifications to multiple applications or similar. The following procedures illustrate how you can use these two cmdlets in combination  
+ We recommend that you use the Merge-NAVApplicationObject cmdlet because it's the faster and easier way to merge objects. However, you can choose to use the Compare-NAVApplicationObject cmdlet and Update-NAVApplicationObject cmdlet to identify the differences before you apply them. Or, for example, when you want to apply the same modifications to multiple applications or similar. The following procedures illustrate how you can use these two cmdlets in combination  
   
  The scenario is based on the following three versions of the application:  
   
@@ -24,7 +24,7 @@ You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to comp
   
  The steps in the following procedures compare the ORIGINAL version to the MODIFIED solution and apply the relevant changes to your TARGET solution. As a result, you have an application that contains your solution with the updates from the MODIFIED application. Alternatively, the MODIFIED solution can be your solution and the TARGET solution can be the new release from Microsoft. The actual versions that you use to set each cmdlet parameter depend on your concrete scenario. However, we recommend that MODIFIED contains the solution with the fewest changes compared to ORIGINAL. The Compare-NAVApplicationObject cmdlet compares two sets of application objects and stores the differences in DELTA files in the specified folder.  
   
- The following procedure assumes that you have exported the relevant application objects to text files. For an example of how to do that, see the **To prepare the application object files** section in the [Merge Application Changes](merge-application-changes.md) topic.  
+ The following procedure assumes that you have exported the relevant application objects to text files. For an example of how to do that, see the **To prepare the application object files** section in the [Merge Application Changes](merge-application-changes.md) article.  
 
 >[!NOTE]
 > [!INCLUDE[devshell](../developer/includes/devshell.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
@@ -39,7 +39,7 @@ You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to comp
     cd c:\upgrade  
     ```  
   
-     In this example, the UPGRADE folder on the C drive contains five folders: ORIGINAL, MODIFIED, TARGET, DELTA, and RESULT. The DELTA and RESULT folders are empty. The ORIGINAL, MODIFIED, and TARGET folders contains one or more text files that contain application objects. You can now run the cmdlet.  
+     In this example, the UPGRADE folder on the C drive contains five folders: ORIGINAL, MODIFIED, TARGET, DELTA, and RESULT. The DELTA and RESULT folders are empty. The ORIGINAL, MODIFIED, and TARGET folders contain one or more text files that contain application objects. You can now run the cmdlet.  
   
 3.  To run the cmdlet to compare all application objects in the ORIGINAL folder to the application objects in the MODIFIED folder, type the following command:  
   
@@ -47,7 +47,7 @@ You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to comp
     Compare-NAVApplicationObject -OriginalPath .\ORIGINAL -ModifiedPath .\MODIFIED -DeltaPath .\DELTA  
     ```  
   
-     This generates a number of DELTA files that describe the difference between ORIGINAL and MODIFIED. You can open the DELTA files in text editors such as Notepad. The following example illustrates how a DELTA file identifies the difference between ORIGINAL and MODIFIED.  
+     This generates many DELTA files that describe the difference between ORIGINAL and MODIFIED. You can open the DELTA files in text editors such as Notepad. The following example illustrates how a DELTA file identifies the difference between ORIGINAL and MODIFIED.  
   
     ```  
     CHANGES  
@@ -98,7 +98,7 @@ You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to comp
   
  You can now import the merged objects into a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. For more information, see [Merge Application Changes](merge-application-changes.md).  
   
-## See Also  
+## See also  
  [Merge Application Changes](merge-application-changes.md)   
  [Handling Merge Conflicts](Handling-Merge-Conflicts.md)   
  [Merging Application Objects using the Example Scripts](Merging-Application-Objects-using-the-Example-Scripts.md)   

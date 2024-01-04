@@ -3,7 +3,7 @@ title: "Consulting"
 description: "Experienced partners can help users get started with confidence by offering quality consulting services designed to deliver predictable outcomes."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/21/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ AppSource consulting services offerings are customer-specific engagements that h
 
 ## How can I, as a user, find the consulting services that my business requires?
 
-As a customer, you can easily search for consulting services offerings for solutions based on [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], Power BI, and Power Apps that are available near you. Review the offer, and request to be contacted by the partner that offers the services that your business require. 
+As a customer, you can easily search for consulting services offerings for solutions based on [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], Power BI, and Power Apps that are available near you. Review the offer, and request to be contacted by the partner that offers the services that your business requires. 
 
 Learn more about the consulting services that are currently offered on AppSource [here](https://appsource.microsoft.com/marketplace/consulting-services?country=US&page=1).
 

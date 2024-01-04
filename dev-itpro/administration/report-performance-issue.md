@@ -3,7 +3,7 @@ title: Report a performance issue
 description: Learn about how to report a performance issue on behalf of your Business Central online customers as the delegated administrator.
 author: kennienp
 ms.topic: conceptual
-ms.date: 05/24/2023
+ms.date: 01/02/2024
 ms.author: kepontop
 ms.service: dynamics365-business-central
 ms.custom: bap-template
@@ -61,16 +61,16 @@ When creating the support request, provide this information:
 
 The following article takes you through creating a support request: [Escalate Support Issues to Microsoft](raise-support-case.md).
 
-## See Also
+## See also
 
-[Escalating Support Issues to Microsoft](raise-support-case.md)  
-[Managing Technical Support](manage-technical-support.md)  
-[Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md)  
-[The Business Central Administration Center](tenant-admin-center.md)  
-[Technical Support for Business Central](../technical-support.md)  
-[Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)  
-[Deployment Overview](../deployment/Deployment.md)  
-[Administration as a partner](tenant-administration.md#administration-as-a-partner)  
-[Administration of Business Central Online](tenant-administration.md)  
-[Administration of Business Central On-Premises](Administration.md)  
-[In-Client Performance Profiler Overview](performance-profiler-overview.md)  
+[Escalating Support Issues to Microsoft](raise-support-case.md)    
+[Managing Technical Support](manage-technical-support.md)    
+[Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md)    
+[The Business Central Administration Center](tenant-admin-center.md)    
+[Technical Support for Business Central](../technical-support.md)    
+[Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)    
+[Deployment Overview](../deployment/Deployment.md)    
+[Administration as a partner](tenant-administration.md#administration-as-a-partner)    
+[Administration of Business Central Online](tenant-administration.md)    
+[Administration of Business Central on-premises](Administration.md)    
+[In-Client Performance Profiler Overview](performance-profiler-overview.md)    

@@ -1,16 +1,16 @@
 ---
-title: Add and Remove Recommended Content for Business Central Tabs
+title: Add and remove recommended content for Business Central tabs
 description: Learn how to add or remove pages listed as recommended content in the Business Central tab configuration window.
 author: jswymer #Required; your GitHub user alias, with correct capitalization.
 ms.author: jswymer #Required; your Microsoft alias; optional team alias.
 ms.reviewer: jswymer #Required; Microsoft alias of content publishing team member.
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 11/23/2022
+ms.date: 12/22/2023
 ms.custom: bap-template
 ---
 
-# Add and Remove Recommended Content for Business Central Tabs
+# Add and remove recommended content for Business Central tabs
 
 This article describes how to change the recommended content presented to users when setting up a Business Central tab in a Teams channel or chat.
 
@@ -31,7 +31,7 @@ begin
 end;
 ```
 
-The event provides the ID of the current user's roles center and the `ItemsJsonArray` object. The `ItemsJsonArray` object contains information about the pages that will show up in the recommended content list, including the caption and URL for the page and any of its views. The following code snippet shows an example of content inside the `ItemsJsonArray`:
+The event provides the ID of the current user's roles center and the `ItemsJsonArray` object. The `ItemsJsonArray` object contains information about the pages that show up in the recommended content list, including the caption and URL for the page and any of its views. The following code snippet shows an example of content inside the `ItemsJsonArray`:
 
 ```json
 {
@@ -92,5 +92,5 @@ codeunit 50100 UpdateRecommendedContent
 
 ## See also
 
-[Developing for Microsoft Teams Integration](devenv-develop-for-teams.md)  
+[Developing for Microsoft Teams Integration](devenv-develop-for-teams.md)   
 [Create Business Central tabs for Teams](devenv-develop-for-teams-tabs.md)  

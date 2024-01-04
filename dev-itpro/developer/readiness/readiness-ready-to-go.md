@@ -40,18 +40,19 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) (Use #BCALHelp on Twitter for quick hints on how to do things) 
 - Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
-- Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCommunity](https://community.dynamics.com/forums/thread/
+- Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCommunity](https://community.dynamics.com/forums/thread/)
 - Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://cloudblogs.microsoft.com/dynamics365/it/)
 - Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm)
-- Join the [!INCLUDE [prod_short](../includes/prod_short.md)] development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
+- Join the [!INCLUDE [prod_short](../includes/prod_short.md)] development group on Viva Engage (Yammer): [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))
 
 ## Partner readiness and programs
 
 - Get started as a partner (reselling [!INCLUDE [prod_short](../includes/prod_short.md)]): [aka.ms/BCReseller](https://aka.ms/BCReseller)
 - Essential partner resources (marketing material): [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)  
 - Browse all [!INCLUDE [prod_short](../includes/prod_short.md)] learning courses: [aka.ms/BCLearn](https://aka.ms/BCLearn)
-- Supported countries, regions, and languages: [aka.ms/BCCountries](https://aka.ms/BCCountries)
-- Join the conversation on Yammer for partners: [aka.ms/BCYammer](https://aka.ms/BCYammer)  
+- Supported countries/regions, regions, and languages: [aka.ms/BCCountries](https://aka.ms/BCCountries)
+- Join the conversation on Yammer for partners: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))
+
 - Online or in-person training and coaching for [!INCLUDE [prod_short](../includes/prod_short.md)]. Contact an ISV Development Center: [aka.ms/ISVDevCenter](https://aka.ms/ISVDevCenter)
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode)
 - Get technical to land large customer implementations and close deals: [aka.ms/BCConcierge](https://aka.ms/BCConcierge)  
@@ -65,6 +66,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Discover useful resources for partners: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
 - Transact capability for [!INCLUDE [prod_short](../includes/prod_short.md)] Apps on Microsoft AppSource: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
 - Find the capability guide: [aka.ms/BCCapabilities](https://aka.ms/BCCapabilities)
+- Find Dynamics 365 icons and guidelines on usage: [aka.ms/Dynamics365Icons](https://aka.ms/Dynamics365Icons)
 
 ## Customer onboarding and resources
 
@@ -93,7 +95,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online: [aka.ms/BCMigrations](https://aka.ms/BCMigrations)  
 - Use migration tooling: [Migrate Data](../../administration/migrate-data.md) 
-- Community group for questions and information about managing migrations to Business Central online: [aka.ms/BCCloudMigrationYammer](https://aka.ms/bccloudmigrationyammer)
+- Community group for questions and information about managing migrations to Business Central online: [aka.ms/BCCloudMigrationYammer](https://aka.ms/bccloudmigrationyammer) ([Learn more](../../join-viva-engage.md))
 - AIM to the future with Microsoft! Move your customers to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMForPartners)
 
 ## Getting support
@@ -109,7 +111,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Maintain your app(s): [Maintain Your App](../app-maintain.md)
 - Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: [github.com/microsoft/al/issues](https://github.com/microsoft/al/issues)
 - Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
-- Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer)
+- Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))
 - Get the latest preview version and give feedback: [aka.ms/Collaborate](https://aka.ms/Collaborate) (learn how you join relevant engagements [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-getting-access-to-preview-bits))
 - Build solutions that link to [!INCLUDE [prod_short](../includes/prod_short.md)] mobile app: [aka.ms/BCProtocol](https://aka.ms/BCProtocol)
 - Troubleshoot issues with [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCTroubleshoot](https://aka.ms/bctroubleshoot)
@@ -123,7 +125,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - AppSource technical checklist: [aka.ms/CheckBeforeYouSubmit](https://aka.ms/CheckBeforeYouSubmit)
 - AppSource technical FAQ: [aka.ms/TechValidationFAQ](https://aka.ms/TechValidationFAQ) 
 - Set up DevOps for your AppSource apps: [aka.ms/AL-Go-AppSource](https://aka.ms/AL-Go-AppSource)
-- Ask your question related to AppSource in the AppSource group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
+- Ask your question related to AppSource in the AppSource group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([New to Yammer?](../../join-viva-engage.md))
+
 - Development of a localization app: [aka.ms/BusinessCentralLocApps](https://aka.ms/businesscentrallocapps) 
 - Transact capability for Business Central Apps on Microsoft AppSource: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
 
