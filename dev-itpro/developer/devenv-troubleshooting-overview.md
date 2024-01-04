@@ -61,12 +61,20 @@ Telemetry can be used for troubleshooting things after they happened and it is p
 ## Troubleshooting guides (TSGs)
 Apart from the troubleshooting tools described above, the following articles describe ways to troubleshoot various areas and features in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
+Cloud migration:
+- [Troubleshoot cloud migration (overview)](../administration/migration-troubleshooting.md)
+- [Troubleshoot cloud migration (setup)](../administration/migration-setup-troubleshooting.md)
+- [Troubleshoot cloud migration (data replication)](../administration/migration-data-replication-troubleshooting.md)
+
+Performance: 
+- [Performance overview](../performance/performance-overview.md)
+- [How to work with a performance problem](../performance/performance-work-perf-problem.md)
+
+Reports: 
+- [Troubleshoot report errors](devenv-reports-troubleshooting.md)
+
 Web services:
 - [Troubleshoot web service errors](../webservices/web-service-troubleshooting.md)
 - [Troubleshooting OData calls](../webservices/dynamics-error-codes.md)
 - [Troubleshooting API calls](../webservices/dynamics-error-codes.md)
 
-Cloud migration:
-- [Troubleshoot cloud migration (overview)](../administration/migration-troubleshooting.md)
-- [Troubleshoot cloud migration (setup)](../administration/migration-setup-troubleshooting.md)
-- [Troubleshoot cloud migration (data replication)](../administration/migration-data-replication-troubleshooting.md)
