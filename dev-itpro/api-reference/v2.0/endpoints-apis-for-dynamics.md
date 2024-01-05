@@ -53,7 +53,7 @@ Once you have the API access enabled, you can write code that integrates your we
 
 When you exchange data through the API, you might have to safe list the IP addresses. 
 
-For more information, see [FAQ: IP addresses or ranges for APIs](../../faq#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
+For more information, see [FAQ: IP addresses or ranges for the Business Central service](../../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
 
 
 ## See Also

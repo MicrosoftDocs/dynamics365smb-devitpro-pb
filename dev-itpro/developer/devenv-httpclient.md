@@ -143,7 +143,8 @@ For more information about certificates, see the [HttpClient.AddCertificate Meth
 
 When you exchange data through external services, you might have to safe list the IP addresses from where the [!INCLUDE[prod_short](includes/prod_short.md)] service is running. 
 
-For more information, see [FAQ: IP addresses or ranges for the [!INCLUDE[prod_short](includes/prod_short.md)] service](../faq#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
+For more information, see [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
+
 
 
 ## Monitor and troubleshoot
