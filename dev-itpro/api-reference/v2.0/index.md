@@ -1,6 +1,6 @@
 ---
-title: "API (V2.0) for Dynamics 365 Business Central"
-description: "Reference content for the API (V2.0) endpoint for integration with Dynamics 365 Business Central."
+title: "API (v2.0) for Dynamics 365 Business Central"
+description: "Reference content for the API (v2.0) endpoint for integration with Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.topic: get-started
 ms.devlang: na

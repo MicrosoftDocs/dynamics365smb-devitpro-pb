@@ -1,6 +1,6 @@
 ---
-title: (v1.0) "API(V1.0) for Dynamics 365 Business Central"
-description: (v1.0) "Reference content for the API(V1.0) endpoint for integration with Dynamics 365 Business Central."
+title: (v1.0) "API (v1.0) for Dynamics 365 Business Central"
+description: (v1.0) "Reference content for the API (v1.0) endpoint for integration with Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.topic: get-started
 ms.devlang: na
@@ -10,7 +10,7 @@ ms.date: 10/30/2019
 ms.author: solsen
 ---
 
-# Welcome to the API(v1.0) for [!INCLUDE[prod_short](../../includes/prod_short.md)]
+# Welcome to the API (v1.0) for [!INCLUDE[prod_short](../../includes/prod_short.md)]
 
 With [!INCLUDE[prod_short](../../includes/prod_short.md)] you can create Connect apps. Connect apps establish a point-to-point connection between Dynamics 365 Business Central and a 3rd party solution or service and is typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. For more information to get started with Connect apps, see [Developing Connect Apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md).
 
