@@ -14,7 +14,7 @@ The Open Data Protocol \(OData\) implementation in [!INCLUDE[prod_short](../deve
 
 ## PATCH and collection properties
 
-PATCH is not possible for collection properties in OData. This is not a limitation Business Central OData but is specified in section 11.4.9.4 of the OData v4 standard.
+PATCH is not possible for collection properties in OData. This is not a limitation imposed by Business Central but is specified in section 11.4.9.4 of the OData v4 standard.
 
 ## Filters
 
