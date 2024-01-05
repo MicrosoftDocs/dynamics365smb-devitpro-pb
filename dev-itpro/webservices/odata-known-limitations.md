@@ -12,6 +12,10 @@ ms.topic: conceptual
 # Known Limitations with Business Central OData
 The Open Data Protocol \(OData\) implementation in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] does not implement all features in the OData specification. On this page you can read more about the known limitations with Business Central OData.
 
+## PATCH and collection properties
+
+PATCH is not possible for collection properties in OData. This is not a limitation Business Central OData but is specified in section 11.4.9.4 of the OData v4 standard.
+
 ## Filters
 
 You can specify filters in OData web services in general that are not supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] , such as using an OR operator to filter on two different fields. In those cases, you will see the following error:  
@@ -36,4 +40,4 @@ If you use Web services that are based on UI pages, you must expect the same beh
 
 ## See Also
 
-[OData Web Services overview](odata-web-services.md)
+[OData Web Services overview](odata-web-services.md)   
