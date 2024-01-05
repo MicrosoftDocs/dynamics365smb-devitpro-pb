@@ -1220,13 +1220,18 @@
 #### [Analyze telemetry with KQL](administration/telemetry-analyze-with-kql.md)
 #### [Alert on telemetry](administration/telemetry-alert.md)
 #### [Using telemetry to investigate performance issues](performance/performance-work-perf-problem.md)
+
 ### Troubleshooting guides (TSGs)
-#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
-#### [Troubleshooting OData calls](webservices/dynamics-error-codes.md)
-#### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
-#### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
+#### Troubleshoot cloud migration
+##### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
 ##### [Troubleshooting cloud migration setup](administration/migration-setup-troubleshooting.md)
 ##### [Troubleshooting data replication](administration/migration-data-replication-troubleshooting.md)
+#### [Troubleshoot report errors](developer/devenv-reports-troubleshooting.md)
+#### Troubleshoot web services
+##### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
+##### [Troubleshooting OData calls](webservices/dynamics-error-codes.md)
+##### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
+
 
 ## [AL language reference](developer/index.md)
 <!-- end AL -->
