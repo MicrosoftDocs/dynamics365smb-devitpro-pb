@@ -1,11 +1,9 @@
 ---
-title: "Managing Time Zones with Web Services"
+title: Managing Time Zones with Web Services
 description: Learn how time zones work with web services
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 01/05/2024
+ms.reviewer: jswtmer
 ms.topic: conceptual
 author: jswymer
 ---
