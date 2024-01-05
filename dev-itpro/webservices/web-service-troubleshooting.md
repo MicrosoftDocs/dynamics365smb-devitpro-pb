@@ -26,6 +26,12 @@ For calls to OData/API endpoints, we offer more details for troubleshooting, as 
 
 For more information, see [Troubleshooting OData/API calls](dynamics-error-codes.md).
 
+## Which IP addresses or ranges does my environment use?
+
+When you exchange data through APIs (incoming calls) or external services (outgoing calls), you might have to safe list the IP addresses from where the [!INCLUDE[prod_short](includes/prod_short.md)] service is running. 
+
+For more information, see [FAQ: IP addresses or ranges for the [!INCLUDE[prod_short](includes/prod_short.md)] service](../faq#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
+
 
 ## See also
 [Handling UI Interaction in web service endpoints](handling-ui-interaction-when-working-with-web-Services.md)   
