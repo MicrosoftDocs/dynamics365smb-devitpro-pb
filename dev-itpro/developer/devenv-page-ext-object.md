@@ -26,7 +26,7 @@ For more information about the Page and Page Extension objects, see [Pages Overv
 > Extension objects can have a name with a maximum length of 30 characters.
 
 > [!IMPORTANT]  
-> The API page type should not be extended by creating a page extension object. Instead, create a new API by adding a [page object](devenv-page-object.md).
+> A page of type _API page_ cannot not be extended by creating a page extension object. Instead, create a new API page by adding a new [page object](devenv-page-object.md).
 
 > [!NOTE]  
 > Modifying actions in Cue groups on page extensions is not supported.

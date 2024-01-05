@@ -17,10 +17,19 @@ With [!INCLUDE[prod_short](../../includes/prod_short.md)] you can create Connect
 > [!TIP]  
 > For inspiration and examples, see the open source [ALAppExtensions](https://github.com/microsoft/ALAppExtensions/tree/main/Apps/W1/APIV2/app/src/pages) repo. Here you'll find examples of API pages written in AL.
 
+## Microsoft APIs Terms of Use
+
 Before you start using the Business Central APIs, please familiarize yourself with the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use).
 
-> [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md).
+## Enabling APIs
+
+For information about enabling APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md).
+
+
+## Extending APIs
+
+[!INCLUDE[extending_APIs_is_not_supported](../../developer/includes/include-extending-APIs-is-not-supported.md)]
+
 
 ## See Also
 
