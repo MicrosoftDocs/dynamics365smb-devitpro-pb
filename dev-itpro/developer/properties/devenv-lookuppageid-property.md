@@ -33,4 +33,4 @@ By default, a lookup provides a list of records in the table. Using this list, u
 ## See Also
 
 [Lookup Property](devenv-lookup-property.md)
-[Performance Developer](../../dev-itpro/performance/performance-developer.md)
+[Performance Developer](../../performance/performance-developer.md)
