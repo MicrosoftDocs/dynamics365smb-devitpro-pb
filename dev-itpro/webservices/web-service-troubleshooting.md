@@ -28,7 +28,7 @@ For more information, see [Troubleshooting OData/API calls](dynamics-error-codes
 
 ## Which IP addresses or ranges does my environment use?
 
-When you exchange data through APIs (incoming calls) or external services (outgoing calls), you might have to safe list the IP addresses from where the [!INCLUDE[prod_short](../includes/prod_short.md)] service is running. 
+When you exchange data through APIs (incoming calls) or external services (outgoing calls), you might have to safelist the IP addresses from where the [!INCLUDE[prod_short](../includes/prod_short.md)] service is running. 
 
 For more information, see [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
 
