@@ -25,7 +25,7 @@ You can write to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
   
  You can use an OData web service in applications where you want users to be able to modify [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. For example, you can show fields from the **Customer** table on a mobile device or in a browser so that a user can create, update, or delete customers in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
 
-### PATCH operations
+### For PATCH operations
 
 PATCH operations requires the 'If-Match' header to be set, either with a retrieved ETag or with '*'.
 
