@@ -27,10 +27,10 @@ You can write to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
 ### For PATCH operations
 
-PATCH operations requires the 'If-Match' header to be set, either with a retrieved ETag or with '*'.
+PATCH operations require the 'If-Match' header to be set, either with a retrieved ETag or with '*'.
 
 > [!NOTE]
-> PATCH is not possible for collection properties in OData. This is not a limitation Business Central OData but is specified in section 11.4.9.4 of the OData v4 standard.
+> PATCH is not possible for collection properties in OData. This is not a limitation imposed by Business Central but is specified in section 11.4.9.4 of the OData v4 standard.
 
 ### Company-Specific and Tenant-Specific OData Calls  
  In your implementation of the web service, you can specify which company in the database that a user can write to in the URIs that expose the web services. Similarly, you can specify the specific tenant that the change applies to if the database handles more than one tenant.  
