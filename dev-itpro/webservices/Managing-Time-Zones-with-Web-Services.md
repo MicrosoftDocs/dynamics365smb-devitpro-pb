@@ -1,19 +1,17 @@
 ---
-title: "Managing Time Zones with Web Services"
+title: Managing Time Zones with Web Services
 description: Learn how time zones work with web services
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 01/05/2024
+ms.reviewer: jswtmer
 ms.topic: conceptual
 author: jswymer
 ---
-# Managing Time Zones with Web Services
-[!INCLUDE[server](../developer/includes/server.md)] provides a **Services Default Time Zone** setting for defining the time zone in which web service calls run. This setting affects both SOAP and OData web services, in addition to NAS Services.  
+# Managing Time Zones with Web Services 
+[!INCLUDE[server](../developer/includes/server.md)] provides a **Services Default Time Zone** setting where an administrator can define the time zone in which web service calls run. This setting affects both APIs, SOAP and OData web services. 
   
-## Time Zone Configuration  
- You can configure the Services Default Time Zone using the [Server Administration Tool](../administration/administration-tool.md), [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview), or by directly editing CustomSettings.config, the configuration file for the relevant [!INCLUDE[server](../developer/includes/server.md)] instance. The following table describes the possible values for the **Services Default Time Zone** setting.  
+## Time Zone Configuration (on-premises) 
+You can configure the Services Default Time Zone using the [Server Administration Tool](../administration/administration-tool.md), [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview), or by directly editing CustomSettings.config, the configuration file for the relevant [!INCLUDE[server](../developer/includes/server.md)] instance. The following table describes the possible values for the **Services Default Time Zone** setting.  
   
 |Value|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-----------|---------------------------------------|  
@@ -21,18 +19,24 @@ author: jswymer
 |Server Time Zone|Specifies that services use the time zone of the computer that is running [!INCLUDE[server](../developer/includes/server.md)].|  
 |*ID of any Windows time zone*|Specifies that services use a Windows time zone as defined in the system registry under HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Time Zones. For example, Romance Standard Time is a valid Windows time zone value.|  
   
- When a web service writes data back to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] , dates and times are based on the setting of the Services Default Time Zone setting. However, the web service consumer can override the setting and specify a different time zone.  
+When a web service writes data back to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] , dates and times are based on the setting of the Services Default Time Zone setting. However, the web service consumer can override the setting and specify a different time zone.  
   
 > [!NOTE] 
 >  [!INCLUDE[server](../developer/includes/server.md)] stores dates and times as UTC. When a web service receives data from [!INCLUDE[server](../developer/includes/server.md)], the time zone is UTC even if the Services Default Time Zone setting is set to a different time zone.  
   
- For example, if the Services Default Time Zone setting is set to **UTC+3**, the following table describes two scenarios where a web service consumer modifies [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data and sends this back to [!INCLUDE[server](../developer/includes/server.md)].  
+For example, if the Services Default Time Zone setting is set to **UTC+3**, the following table describes two scenarios where a web service consumer modifies [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data and sends this back to [!INCLUDE[server](../developer/includes/server.md)].  
   
 |Web service changes the DateTime field to|[!INCLUDE[server](../developer/includes/server.md)] interprets the DateTime value as|[!INCLUDE[server](../developer/includes/server.md)] saves the DateTime value as|  
 |-----------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|  
 |01/01/2014 17:00 UTC+1|01/01/2014 17:00 UTC+1|01/01/2014 16:00 UTC|  
 |01/01/2014 17:00|01/01/2014 17:00 UTC+3|01/01/2014 14:00 UTC|  
   
+## Time Zone Configuration (online) 
+
+For online [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments, the **Services Default Time Zone** setting is always set to `UTC`. For installations in timezone far away from UTC, this might cause confusion because the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client shows a different date than what web services return for the same data. By adjusting your connect app (the one that consumes data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services) to use the same timezone offset as the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, you can mitigate this confusion.
+
+
+
 ## See Also  
 
 [SessionSettings.TimeZone Method](../developer/methods-auto/sessionsettings/sessionsettings-timezone-method.md)  
