@@ -3,7 +3,7 @@ title: (v1.0) "Endpoints for the APIs for Microsoft Dynamics NAV and Microsoft D
 description: (v1.0) "Describing the steps you must go through to enable access to the APIs in on-prem and cloud product versions."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/16/2019
+ms.date: 01/08/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
