@@ -1,2 +1,2 @@
 > [!NOTE]  
-> Extending API pages and queries is not currently possible in Business Central. 
+> Extending API pages and queries isn't currently possible in Business Central. 
