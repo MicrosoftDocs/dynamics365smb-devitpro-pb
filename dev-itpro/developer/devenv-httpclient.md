@@ -2,7 +2,7 @@
 title: Call external services with the HttpClient data type
 description: Learn about how to call external services using the HttpClient datatype.
 ms.custom: bap-template
-ms.date: 07/26/2023
+ms.date: 01/08/2024
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
