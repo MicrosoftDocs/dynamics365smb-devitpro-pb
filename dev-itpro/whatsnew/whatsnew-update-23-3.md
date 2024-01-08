@@ -1,12 +1,11 @@
 ---
 title: Update 23.3 for Microsoft Dynamics 365 Business Central 2023 Release Wave 2
-description: Get an overview of new and changed capabilities in the 23.3 update of Business Central online, which is part of 2023 release wave 3.
+description: Get an overview of new and changed capabilities in the 23.3 update of Business Central online, which is part of 2023 release wave 2.
 ms.author: a-enielsson
-ms.custom: na
+ms.custom: bap-template
 ms.date: 01/03/2023
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: EmmaNielsson
 ---
 
@@ -16,7 +15,7 @@ Would you like to know what has changed in update 23.2? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5033775) and the downloads [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5034720) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
 - [E-invoicing with NemHandel in Denmark](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/e-invoicing-nemhandel-denmark)
@@ -79,7 +78,7 @@ If you're a developer and want to learn more about how to extend G/L entry aggre
 If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to
 Extending Currency Exchange Rate Adjustments. 
 
-Work with your partner to update extensions and apps you have installed before above features become mandatory. To view complete list of optional features and features that are becoming mandatory, go to [aka.ms/BCFeatureMgmt]https://aka.ms/BCFeatureMgmt
+Work with your partner to update extensions and apps you have installed before above features become mandatory. To view complete list of optional features and features that are becoming mandatory, go to [aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt).
 
 ### Discover all partner related resources on aka.ms/BCAll
 
