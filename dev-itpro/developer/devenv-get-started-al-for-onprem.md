@@ -2,7 +2,7 @@
 title: Get started with C/SIDE and AL side-by-side for on-premises
 description: Description of how to get started with the new development environment along with C/SIDE.
 author: SusanneWindfeldPedersen
-ms.date: 06/03/2022
+ms.date: 01/04/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,6 +37,6 @@ To get started with a mixed development environment of C/SIDE and AL, you must f
 > [!NOTE]  
 > Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/al).
 
-## See Also 
-[AL Development Environment](devenv-reference-overview.md)  
+## See also 
+[AL Development Environment](devenv-reference-overview.md)    
 [FAQ for Developing in AL](devenv-dev-faq.md)  
