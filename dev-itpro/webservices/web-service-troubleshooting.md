@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: kepontop
-ms.date: 08/08/2023
+ms.date: 01/08/2024
 ---
 
 # Troubleshooting web service errors
