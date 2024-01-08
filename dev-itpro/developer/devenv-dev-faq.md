@@ -9,9 +9,10 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
-# FAQ for Developing in AL
+# FAQ for developing in AL
 
 This topic contains a number of frequently asked questions and answers to these questions. 
 
