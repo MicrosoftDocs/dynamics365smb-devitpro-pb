@@ -121,8 +121,22 @@ To unpublish a webs service, clear the **Published** check box. This step will m
 > [!IMPORTANT]
 > When you unpublish a web service that is marked for **All Tenants**, other web services that use the same object will be automatically unpublished, even though the **Published** check box is still selected for these web services.
 
+## Tips for UI pages exposed as OData or SOAP web services
+
+### Use API pages/queries instead
+
+Avoid using standard UI pages to expose as web service endpoints. Many things, such as fact boxes, aren't returned in web service results, but use resources to prepare. Instead, define and use API pages/queries for your web service integrations. 
+
+For more information, see [Web services performance](web-service-performance.md).
+
+### Need a unique row identifier?
+
+Should you need a unique row identifier in your OData or SOAP web service endpoint, then consider adding the SystemId field to the page. The SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. 
+
+For more information, see [System Fields](../developer/devenv-table-system-fields.md).
+
+
 ## See Also
 
-[Web Services](web-services.md)
-
+[Web Services](web-services.md)   
 [Web Service Publish Failure Telemetry](web-service-telemetry.md#web-service-publish-failure-telemetry)
