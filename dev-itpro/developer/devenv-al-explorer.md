@@ -15,6 +15,8 @@ ms.collection: get-started
 
 [!INCLUDE [2023_releasewave1](../includes/2023_releasewave1.md)]
 
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
+
 The **AL Explorer** provides a tool that allows you to explore, navigate, and better understand objects in extensions. You can drill down into object details, dependencies, and extension points, without looking at the code. With the **AL Explorer**, you have an overview of high-level structures of extensions that can help you specify new features, or do light troubleshooting.
 
 The **AL Explorer** has four tabs: **OBJECTS**, **EVENTS**, **APIS**, and **EXTENSIBLE ENUMS**. For each of these categories, you can apply filtering for type, module, related table, or namespace, you can set bookmarks, and go to source code. For tables, pages, and report objects, you can choose to run these objects directly from the explorer window, on either a local machine or a tenant. You can get an overview of all objects in a given app scope, for example, a workspace or a selected project, and you can search in object names, and group objects by type.

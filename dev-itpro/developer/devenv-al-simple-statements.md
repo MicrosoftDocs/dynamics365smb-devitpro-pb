@@ -1,5 +1,5 @@
 ---
-title: "AL simple statements"
+title: AL simple statements
 description: Describes the simple, single-line statements in AL for Business Central with examples
 ms.custom: na
 ms.date: 09/21/2022
@@ -12,7 +12,9 @@ author: SusanneWindfeldPedersen
 ms.collection: get-started
 ---
 
-# AL Simple Statements
+# AL simple statements
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 AL simple statements are single-line statements that are executed sequentially and don't alter the flow of code execution. This article explains some of the simple statements in AL.
 

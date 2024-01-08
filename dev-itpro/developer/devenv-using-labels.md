@@ -7,9 +7,12 @@ ms.date: 09/20/2023
 ms.topic: conceptual
 ms.author: brobledodiaz
 author: blrobl
+ms.collection: get-started
 ---
 
 # Working with labels
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 Labels are string constants displayed in the [!INCLUDE[prod_short](includes/prod_short.md)] client that can be translated into multiple languages, such as captions, descriptions, or messages. This way, the user interface can be displayed in different languages. For more information on how translation is carried out in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Multilanguage development](devenv-work-with-translation-files.md).
 

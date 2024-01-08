@@ -13,6 +13,8 @@ ms.collection: get-started
 
 # AL control statements
 
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
+
 AL code consists of one or more statements, which are executed sequentially in a top-down order. However, you'll often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do so, you use control structures.  
 
 The control structures in AL are divided into the following main groups, as described in this article:  

@@ -11,6 +11,8 @@ ms.collection: get-started
 
 # Add pages and reports to Tell me
 
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
+
 The [!INCLUDE[prod_short](includes/prod_short.md)] client includes the **Tell me** feature that lets users find objects by entering search terms. When you add a page or a report in your extension, you most likely want it to be discoverable to users in **Tell me**. In AL, you make a page or report searchable from **Tell me** by setting the [UsageCategory property](properties/devenv-usagecategory-property.md) in code. The **UsageCategory** setting makes the page or reports searchable, and the value chosen for the setting further sub categorizes the item.
 
 ![TellMe.](media/tellmeApril19.png)

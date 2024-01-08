@@ -14,6 +14,8 @@ ms.collection: get-started
 
 # FAQ for developing in AL
 
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
+
 This topic contains a number of frequently asked questions and answers to these questions. 
 
 ## How do I get started?

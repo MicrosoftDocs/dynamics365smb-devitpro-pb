@@ -13,6 +13,8 @@ ms.collection: get-started
 
 # AL methods
 
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
+
 Like other languages, AL methods are a fundamental programming element. A method, also known as a procedure, is a named group of statements that perform an operation or task. Depending on the scope, methods can be run, or *called*, from the same object in which they are declared or from other parts of the application.  
 
 There are two types of methods: system methods (built-in) and user-defined (custom) methods.

@@ -13,6 +13,8 @@ ms.collection: get-started
 
 # Get started with AL
 
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
+
 To start writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you'll need a [!INCLUDE[prod_short](includes/prod_short.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross-platform editor that you'll use for coding and debugging.
 
 ## Steps to set up a sandbox environment and Visual Studio Code
