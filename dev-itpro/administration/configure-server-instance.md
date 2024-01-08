@@ -4,7 +4,7 @@ description: Configure and modify settings in the Setup or Installed Business Ce
 author: jswymer
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 09/05/2023
+ms.date: 01/08/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: bap-template
@@ -187,7 +187,7 @@ The following table describes fields on the **Client Services** tab in the [!INC
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------|--------|-------------------------------------------------------------------|  
-|Enable SOAP Services|SOAPServicesEnabled|Specifies whether SOAP web services are enabled for this server instance.<br /><br /> If SOAP have been turned off, any call to such an endpoint will also return a HTTP status code 405 (so check your server configurations if you see those). <br /><br /> Default: Not enabled<br />Dynamically Updatable: No|  
+|Enable SOAP Services|SOAPServicesEnabled|Specifies whether SOAP web services are enabled for this server instance.<br /><br /> If SOAP has been turned off, any call to such an endpoint will also return a HTTP status code 405 (so check your server configurations if you see those). <br /><br /> Default: Not enabled<br />Dynamically Updatable: No|  
 |Enable SSL|SOAPServicesSSLEnabled|Specifies whether SSL \(https\) is enabled for the SOAP web service port. For more information, see [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|  
 |Max Connections|SOAPMaxConnections|Specifies the maximum number of simultaneous SOAP requests on the server instance (for all tenants). When the limit is exceeded, an error occurs. If you don'tt want a limit, set the value **0**.<br /><br /> Default: 0<br />Dynamically Updatable: Yes|  
 |Max Connections Per Tenant|SOAPMaxConnectionsPerTenant|Specifies the maximum number of simultaneous SOAP requests per tenant. When the limit is exceeded, an error occurs. If you do not want a limit, set the value **0**.<br /><br /> Default: 0<br />Dynamically Updatable: Yes|
