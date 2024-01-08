@@ -7,7 +7,7 @@ ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: 09/27/2023
+ms.date: 01/04/2024
 ---
 
 # Legal resources for Business Central on-premises
@@ -41,14 +41,14 @@ For legal information for Business Central on-premises, see [Legal Information](
 
 ## Lifecycle
 
-- [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](lifecycle-policy-on-premises.md)
+- [Software Lifecycle Policy and Dynamics 365 Business Central on-premises Updates](lifecycle-policy-on-premises.md)
 
 <!--- links-->
 
-## See Also
+## See also
 
-[Legal Resources for Business Central Online](legal.md)  
-[Microsoft Online Service Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products)  
+[Legal Resources for Business Central Online](legal.md)    
+[Microsoft Online Service Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products)    
 [Developer and Administration Help for Microsoft Dynamics 365 Business Central](../index.md)  
 
 
