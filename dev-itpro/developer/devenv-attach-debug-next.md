@@ -40,7 +40,7 @@ If `sessionId` isn't specified, but `userId` is, then the debugger will be attac
 > The debugger is able to connect to *background sessions*, and not *background tasks*.
 
 
-### Example (attach to a web client session)
+## Example (attach to a web client session)
 
 The example below illustrates a configuration for a local server, where you want to debug a web client session.
 
@@ -64,7 +64,7 @@ The example below illustrates a configuration for a local server, where you want
 ...
 ```
 
-### Example (attach to an online sandbox web services session)
+## Example (attach to an online sandbox web services session)
 
 The example below illustrates a configuration for an online sandbox, where you want to debug a web service endpoint.
 
@@ -87,7 +87,7 @@ The example below illustrates a configuration for an online sandbox, where you w
 ...
 ```
 
-## Attach support
+## Supported Attach configurations
 
 The following configurations for attach are supported:
 
@@ -96,7 +96,8 @@ The following configurations for attach are supported:
 |On-premises      | Supported    |     Supported     |   Supported      |
 |Sandbox          | Supported    |     Supported     |   Supported      |
 
-### To start an attach session
+
+## How-To start an attach session
 
 1. In Visual Studio Code, under **Run**, choose **Add configuration**.
 2. Choose whether to attach to a cloud or a local session.  
