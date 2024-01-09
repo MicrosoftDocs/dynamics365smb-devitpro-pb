@@ -32,6 +32,15 @@ When you exchange data through APIs (incoming calls) or external services (outgo
 
 For more information, see [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
 
+## Troubleshooting outgoing calls to external services
+
+[!INCLUDE[allowhttpclientnote](../includes/include-http-allowhttpclient-note.md)]
+
+For more information, see [Call external services with the HttpClient data type](../developer/devenv-httpclient.md).
+
+
+Note that when copying an environment, all extensions/apps in the new environment will have the property **Allow HttpClient Requests** set to false. For more information, see [Environment copies](../administration/tenant-admin-center-environments-copy.md#Environment-copies)
+
 
 ## See also
 [Handling UI Interaction in web service endpoints](handling-ui-interaction-when-working-with-web-Services.md)   
