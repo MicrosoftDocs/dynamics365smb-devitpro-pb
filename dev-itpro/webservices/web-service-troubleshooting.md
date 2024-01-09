@@ -39,7 +39,7 @@ For more information, see [FAQ: IP addresses or ranges for the Business Central 
 For more information, see [Call external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
 
-Note that when copying an environment, all extensions/apps in the new environment will have the property **Allow HttpClient Requests** set to false. For more information, see [Environment copies](../administration/tenant-admin-center-environments-copy.md#Environment-copies)
+Note that when copying an environment, all extensions/apps in the new environment will have the property **Allow HttpClient Requests** set to false. For more information, see [Environment copies](../administration/tenant-admin-center-environments-copy.md#environment-copies)
 
 ## It works in my sandbox but not in production
 
