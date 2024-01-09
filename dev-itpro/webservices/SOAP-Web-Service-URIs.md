@@ -14,6 +14,8 @@ Web service users can discover published web services by pointing a browser or a
 
 [!INCLUDE[on-prem-ws-off-405-note](../includes/include-on-prem-ws-off-405-note.md)]
 
+[!INCLUDE[soap_deprecation](../includes/soap_deprecation_note.md)]
+
 ## URIs for SOAP Web Services (for on-premises)
 To display all published SOAP web services that are exposed by a [!INCLUDE[server](../developer/includes/server.md)] instance, use a URI of the following type:  
   
@@ -45,3 +47,9 @@ You can also use a URI for a codeunit web service, as shown in the following exa
 https://localhost:7047/BC130/WS/CRONUS%20International%20Ltd/Codeunit/Letters  
 ```  
   
+## See Also  
+
+[Web service performance](web-service-performance.md)   
+[Troubleshoot web service errors](web-service-troubleshooting.md)   
+[Web service telemetry](web-service-telemetry.md)   
+[SOAP Web Services](soap-web-services.md)  
