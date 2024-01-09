@@ -29,6 +29,8 @@ ms.author: solsen
 
 Depending on where you want to access the APIs from, you must specify the correct endpoint. For more information, see [Endpoints for APIs](endpoints-apis-for-dynamics.md).
 
+[!INCLUDE[on-prem-ws-off-405-note](../../includes/include-on-prem-ws-off-405-note.md)]
+
 ## See Also
 
 [Developing Connect Apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  

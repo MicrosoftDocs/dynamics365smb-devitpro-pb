@@ -14,6 +14,9 @@ Pages of the type `API` are used to create versioned, webhook-supported, OData v
 
 Pages of the type `API` can be used to develop a custom API. For more information, see [Developing a Custom API](devenv-develop-custom-api.md).
 
+[!INCLUDE[extending_APIs_is_not_supported_note](includes/include-extending-APIs-is-not-supported-note.md)]
+
+
 ## Naming conventions
 
 For the API page type, the following naming conventions exist:

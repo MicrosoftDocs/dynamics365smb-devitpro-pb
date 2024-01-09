@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: kepontop
-ms.date: 08/08/2023
+ms.date: 01/08/2024
 ---
 
 # Troubleshooting web service errors
@@ -25,6 +25,21 @@ For more information, see [Web service telemetry](web-service-telemetry.md).
 For calls to OData/API endpoints, we offer more details for troubleshooting, as these calls also return OData error codes in case of failures. 
 
 For more information, see [Troubleshooting OData/API calls](dynamics-error-codes.md).
+
+## Which IP addresses or ranges does my environment use?
+
+When you exchange data through APIs (incoming calls) or external services (outgoing calls), you might have to safelist the IP addresses from where the [!INCLUDE[prod_short](../includes/prod_short.md)] service is running. 
+
+For more information, see [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
+
+## Troubleshooting outgoing calls to external services
+
+[!INCLUDE[allowhttpclientnote](../includes/include-http-allowhttpclient-note.md)]
+
+For more information, see [Call external services with the HttpClient data type](../developer/devenv-httpclient.md).
+
+
+Note that when copying an environment, all extensions/apps in the new environment will have the property **Allow HttpClient Requests** set to false. For more information, see [Environment copies](../administration/tenant-admin-center-environments-copy.md#Environment-copies)
 
 
 ## See also
