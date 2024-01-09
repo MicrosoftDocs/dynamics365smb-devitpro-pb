@@ -36,10 +36,13 @@ If `sessionId` isn't specified, but `userId` is, then the debugger will be attac
 > [!IMPORTANT]  
 > In case of `userId` being a different user than the user logged into Visual Studio Code, then the user logged into Visual Studio Code must be part of **D365 ATTACH DEBUG** permission set.
 
-The example below illustrates a configuration for a local server.
-
 > [!NOTE]  
 > The debugger is able to connect to *background sessions*, and not *background tasks*.
+
+
+### Example (attach to a web client session)
+
+The example below illustrates a configuration for a local server, where you want to debug a web client session.
 
 ```json
 ...
@@ -57,6 +60,29 @@ The example below illustrates a configuration for a local server.
             "longRunningSqlStatementsThreshold": 500,
             "numberOfSqlStatements": 10,
             "breakOnNext": "WebClient"
+        }
+...
+```
+
+### Example (attach to an online sandbox web services session)
+
+The example below illustrates a configuration for an online sandbox, where you want to debug a web service endpoint.
+
+```json
+...
+{
+            "name": "Attach to online sandbox",
+            "type": "al",
+            "request": "attach",
+            "environmentType": "Sandbox",
+            "environmentName": "MyEnvironment",
+            "breakOnError": true,
+            "breakOnRecordWrite": false,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "breakOnNext": "WebServiceClient"
         }
 ...
 ```
