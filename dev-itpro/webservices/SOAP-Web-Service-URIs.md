@@ -14,6 +14,8 @@ Web service users can discover published web services by pointing a browser or a
 
 [!INCLUDE[on-prem-ws-off-405-note](../includes/include-on-prem-ws-off-405-note.md)]
 
+[!INCLUDE[soap_deprecation](../includes/soap_deprecation_note.md)]
+
 ## URIs for SOAP Web Services (for on-premises)
 To display all published SOAP web services that are exposed by a [!INCLUDE[server](../developer/includes/server.md)] instance, use a URI of the following type:  
   
