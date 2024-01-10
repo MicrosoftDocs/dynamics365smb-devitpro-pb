@@ -1,8 +1,8 @@
 ---
-title: Install the Business Central Mobile App
+title: Install the Business Central Mobile app
 description: Learn about prerequisites for using Business Central on-premises on mobile devices.
 ms.custom: na
-ms.date: 01/28/2022
+ms.date: 01/08/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,11 +12,11 @@ ms.author: jswymer
 author: jswymer
 ---
 
-# Preparing For and Installing the Microsoft Dynamics 365 Business Central App
+# Preparing for and installing the Microsoft Dynamics 365 Business Central app
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-This article describes how to prepare for and install the Business Central App when you have on-premises solution. If you have Business Central online, there's no preparation. For more information, see [Getting Business Central on Your Mobile Device](/dynamics365/business-central/install-mobile-app).
+This article describes how to prepare for and installs the Business Central App when you have on-premises solution. If you have Business Central online, there's no preparation. For more information, see [Getting Business Central on Your Mobile Device](/dynamics365/business-central/install-mobile-app).
 
 The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] App is available for download for devices that use following operating systems (OS):
 
@@ -53,7 +53,7 @@ To install a working [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 > [!IMPORTANT]
 > [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support Microsoft Entra application Proxy, because Application Proxy doesn't fully support web sockets.
 
-## Install the Business Central App
+## Install the Business Central app
 
 1. Go to the download page from links provided in the preceding table, and select **Get**.
 
@@ -74,9 +74,9 @@ To install a working [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
     When completed, the Business Central App will open.
 
-## See Also
+## See also
 
-[Troubleshooting the Business Central Mobile App On-Premises](../developer/devenv-troubleshooting-the-mobile-app.md)  
+[Troubleshooting the Business Central Mobile App on-premises](../developer/devenv-troubleshooting-the-mobile-app.md)  
 [Installing Business Central Using Setup](install-using-setup.md)  
 [Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances](../administration/configure-web-server.md)  
 [Components](product-and-architecture-overview.md)  
