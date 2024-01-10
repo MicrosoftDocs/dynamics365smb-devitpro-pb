@@ -11,7 +11,7 @@ author: EmmaNielsson
 
 # Update 23.3 for Microsoft Dynamics 365 Business Central online 2023 release wave 2
 
-Would you like to know what has changed in update 23.2? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links that you might find interesting.
+Would you like to know what has changed in update 23.3? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links that you might find interesting.
 
 ## Hotfixes
 
