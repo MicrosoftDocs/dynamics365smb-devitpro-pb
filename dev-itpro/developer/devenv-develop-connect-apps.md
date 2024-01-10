@@ -1,5 +1,5 @@
 ---
-title: "Getting Started Developing Connect Apps for Dynamics 365 Business Central"
+title: Get started developing Connect apps for Dynamics 365 Business Central
 description: Learn how to get started developing a Connect app 
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.collection: get-started
 ---
 
-# Getting Started Developing Connect Apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
+# Get started developing Connect apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -35,7 +35,8 @@ In the following sections you can read more about setting up the two types of au
 
 APIs can also be explored through the [OpenAPI specification for Business Central](/dynamics-nav/api-reference/v1.0/dynamics-open-api).
 
-## Setting up basic authentication
+## Set up basic authentication
+
 If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the Microsoft Entra ID based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use Microsoft Entra ID/Oauth v2 authentication, see the section [Setting up Microsoft Entra ID based authentication](#setting-up-microsoft-entra-id-based-authentication).
 
 1. To set up basic authentication, log into your tenant, and in the **Search** field, enter **Users** and then select the relevant link.
@@ -44,9 +45,9 @@ If you prefer to set up an environment with basic authentication just to explore
 
 Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#exploring-apis-with-postman-and-basic-authentication) section, we use Postman.
 
-## Setting up Microsoft Entra ID based authentication
+## Set up Microsoft Entra ID based authentication
 
-Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
+Sign in to the [Azure portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
 
 1. Follow the instructions in the [Integrating applications with Microsoft Entra ID](/azure/active-directory/develop/quickstart-register-app) article. The next steps elaborate on some of the specific settings you must enable.
 2. On the **API permissions** page for your app, select the **Add a permission** button. 
@@ -66,12 +67,12 @@ Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d3
 
 You have now set up the Microsoft Entra ID based authentication. Next, you can go exploring the APIs. Learn more in the [Exploring the APIs with Postman and Microsoft Entra authentication](#exploring-apis-with-postman-and-microsoft-entra-authentication) section.
 
-## Exploring APIs with Postman and basic authentication
+## Explore APIs with Postman and basic authentication
 
 In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with basic authentication. 
 
 1. First, in Postman, set up a `GET` call to the base API URL.  
-    - When you call the base API URL, you'll get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation.
+    - When you call the base API URL, you get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation.
 
     - Since we're using basic authentication, we need to include the user's domain in the URL, for example, call `GET https://api.businesscentral.dynamics.com/v2.0/<your tenant domain>/<environment name>/api/v2.0`.
         > [!NOTE]  
@@ -81,24 +82,24 @@ In this `Hello World` example, we're going over the basic steps required to retr
 
 3. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
 
-## Exploring APIs with Postman and Microsoft Entra authentication
+## Explore APIs with Postman and Microsoft Entra authentication
 
 In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with Microsoft Entra authentication.
 
 1. First, in Postman, set up a `GET` call to the base API URL.
-    - When you call the base API URL, you'll get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation, for example, call `GET https://api.businesscentral.dynamics.com/v2.0/environment name/api/v2.0`
+    - When you call the base API URL, you get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation, for example, call `GET https://api.businesscentral.dynamics.com/v2.0/environment name/api/v2.0`
 2. On the **Authorization** tab in Postman, select **OAuth 2.0** in the **Type** and then choose **Get New Access Token**. 
 3. In the **GET NEW ACCESS TOKEN** window, enter the following information as specified below:
     - In the **Token name** field, choose a descriptive name.
     - In the **Grant type** field, choose **Authorization Code**.
-    - In the **Callback URL** field, specify the URL specified as the sign-on URL/Reply URL in the Azure Portal.
+    - In the **Callback URL** field, specify the URL specified as the sign-on URL/Reply URL in the Azure portal.
     - In the **Auth URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
     - In the **Access Token URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/token?resource=https://api.businesscentral.dynamics.com`.
-    - In the **Client ID** field, enter the Application ID from the registered app in Azure Portal.
+    - In the **Client ID** field, enter the Application ID from the registered app in Azure portal.
     - In the **Scope** field, 
     - In the **Client Secret** field, enter the key generated under **Keys** that you copied in step 6 in the [Setting up Microsoft Entra ID based authentication](#setting-up-microsoft-entra-id-based-authentication).
     - In the **Client Authentication** field, choose the **Send client credentials in body** option.
-4. Choose the **Get New Access Token** button. The first time you sign in, you'll get prompted for consent.
+4. Choose the **Get New Access Token** button. The first time you sign in, you get prompted for consent.
 5. Scroll down and choose **Use token** button.  
 An Authorization request header is now added containing the Bearer token.
 6. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
@@ -109,7 +110,8 @@ An Authorization request header is now added containing the Bearer token.
    > * Auth URL: https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.businesscentral.dynamics.com 
    > * Client ID: 060af3ac-70c3-4c14-92bb-8a88230f3f38
 
-## Calling an API 
+## Call an API
+
 Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:  
 
 ```json
@@ -133,6 +135,7 @@ All resources, such as customers, invoices etc., live in the context of a parent
 
 
 ## See also
+
 [API Developer Overview](devenv-api.md)
 [Using Filtering With APIs](devenv-connect-apps-filtering.md)  
 [Tips for Working with APIs](devenv-connect-apps-tips.md)   

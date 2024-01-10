@@ -8,11 +8,14 @@ ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.date: 09/21/2023
 ms.custom: bap-template
+ms.collection: get-started
 ---
 
 # AL Explorer
 
 [!INCLUDE [2023_releasewave1](../includes/2023_releasewave1.md)]
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 The **AL Explorer** provides a tool that allows you to explore, navigate, and better understand objects in extensions. You can drill down into object details, dependencies, and extension points, without looking at the code. With the **AL Explorer**, you have an overview of high-level structures of extensions that can help you specify new features, or do light troubleshooting.
 

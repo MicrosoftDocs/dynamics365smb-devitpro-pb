@@ -8,6 +8,7 @@ ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: jswymer
+ms.collection: get-started
 ---
 
 # Number sequences in [!INCLUDE[prod_short](includes/prod_short.md)]

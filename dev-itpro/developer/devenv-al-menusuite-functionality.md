@@ -1,14 +1,17 @@
 ---
-title: Adding Pages and Reports to Tell me
+title: Add pages and reports to Tell me
 description: Description of how you use AL to add pages and reports so that they're discoverable through search in the client.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 12/05/2023
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
-# Adding pages and reports to Tell me
+# Add pages and reports to Tell me
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 The [!INCLUDE[prod_short](includes/prod_short.md)] client includes the **Tell me** feature that lets users find objects by entering search terms. When you add a page or a report in your extension, you most likely want it to be discoverable to users in **Tell me**. In AL, you make a page or report searchable from **Tell me** by setting the [UsageCategory property](properties/devenv-usagecategory-property.md) in code. The **UsageCategory** setting makes the page or reports searchable, and the value chosen for the setting further sub categorizes the item.
 
@@ -16,7 +19,7 @@ The [!INCLUDE[prod_short](includes/prod_short.md)] client includes the **Tell me
 
 **Tell me** finds pages and reports by searching the captions that are specified on page and report objects by the [CaptionML property](properties/devenv-caption-property.md).
 
-## Working with the UsageCategory property
+## Work with the UsageCategory property
 
 When you create a [Page](devenv-page-object.md) or a [Report](devenv-report-object.md), you add the [UsageCategory Property](properties/devenv-usagecategory-property.md). If the **UsageCategory** is set to **None**, or if you don't specify **UsageCategory**, the page or report doesn't show up when you search in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 
@@ -37,14 +40,14 @@ The values for the **UsageCategory** property are listed in the table. The sub c
 |History         |The page or report is listed as **Archive** under the **Reports and Analysis** category.|
 |Administration  |The page or report is listed as **Administration** under the **Pages and Tasks** category.|
 
-## Adding more search terms
+## Add more search terms
 
 You can specify other words or phrases that can help users find a page or report by using the [AdditionalSearchTerms](../developer/properties/devenv-additionalsearchterms-property.md) and [AdditionalSearchTermsML](../developer/properties/devenv-additionalsearchtermsml-property.md) properties. If the page or report is searchable by **Tell me** (that is, the **UsageCategory** property is set a value other than `None`), the search terms specified by these properties are used in addition to the caption of the page or report. These properties are useful when the caption doesn't always reflect what users look for. A good example of this in [!INCLUDE[prod_short](includes/prod_short.md)] is pages and reports associated with **Item**. Users unfamiliar with [!INCLUDE[prod_short](includes/prod_short.md)] might look for 'product' or 'merchandise' instead of 'item'.  
 
 > [!NOTE]  
 > For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[webserverinstance](includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called `UseAdditionalSearchTerms` that enables or disables the use of additional search terms by the **Tell me**. For more information, see [Configuring [!INCLUDE[webserver](includes/webserver.md)] Instances](../administration/configure-web-server.md#Settings).
 
-## Example: Adding a page to Tell me
+## Example: Add a page to Tell me
 
 The following example creates a `SimpleItemList` page and sets a `UsageCategory` property to the page, so that the `SimpleItemList` page is discoverable through search using the **Tell me** feature. Also, the example sets the   `AdditionalSearchTerms` property to add two search terms for the page. 
 
@@ -73,7 +76,7 @@ page 50210 SimpleItemList
 } 
 ```
 
-## Example: adding a report to Tell me
+## Example: Add a report to Tell me
 
 The following example creates a `Customer List` report and sets a `UsageCategory` property to the page, so that the report is discoverable through search using the **Tell me** feature. Also, the example sets the `AdditionalSearchTerms` property to add two search terms for the page. 
 

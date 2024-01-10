@@ -38,7 +38,7 @@ If you don't meet these mandatory requirements, your extension fails validation.
 |Pages and code units that are designed to be exposed as Web services must not generate any UI that would cause an exception in the calling code.|[Web Services Usage](../compliance/apptest-webservices.md)|
 |You're required to register affixes for your publisher name and to use them in your extension.|[Prefix/Suffix Guidelines](../compliance/apptest-prefix-suffix.md)|
 |You're required to register an ID range for your publisher name and to use it in your extension.|[Object Ranges](readiness/get-started.md#requesting-an-object-range)|
-|We strongly recommend you're using automated testing, using the AL Test Toolkit. You aren't required to include the test package with your extension.|[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)|
+|We strongly recommend you're using automated testing, using the AL Test Toolkit. You aren't required to include the test package with your extension.|[Test the advanced sample extension](devenv-extension-advanced-example-test.md)|
 |DataClassification is required for fields of all tables/table extensions. Property must be set to other than `ToBeClassified`.|[Classifying Data](devenv-classifying-data.md)|
 |You must use the Profile object to add profiles instead of inserting them into the **Profiles** table.|[Profile Object](devenv-profile-object.md)|
 |Use `addfirst` and `addlast` for placing your actions on Business Central pages. This eliminates breaking your app due to Business Central core changes.|[Placing Actions and Controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls)|

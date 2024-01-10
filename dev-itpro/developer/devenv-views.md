@@ -23,7 +23,7 @@ A view offers:
 Views are defined directly in code, on the list page that they modify. The defined view or views are available to the user through **Filter Pane** on a page and appear in the sequence that they're defined in code.
 
 > [!NOTE]  
-> `allowDebugging` does not apply to views. Views defined in an extension with `allowDebugging` set to `false` can still be copied using Designer.
+> `allowDebugging` does not apply to views. Views defined in an extension with `allowDebugging` set to `false` can still be copied Use Designer.
 
 ## Snippet support
 
