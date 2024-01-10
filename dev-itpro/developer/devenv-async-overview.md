@@ -20,7 +20,7 @@ To ensure the availability and quality of [!INCLUDE[prod_short](includes/prod_sh
 
 ## Operational Limits for Business Central on-premises  
 
-For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises environments, you can control limits for operations related to sessions, such as how many child or background sessions, or scheduled tasks that can run at the same time. For more information, see [Operational Limits for Business Central Online](../administration/configure-server-instance.md).
+For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises environments, you can control limits for operations related to sessions, such as how many child or background sessions, or scheduled tasks that can run at the same time. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
 
 
 ## See also
