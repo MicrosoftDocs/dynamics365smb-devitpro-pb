@@ -29,12 +29,16 @@ An environment transfer is initiated by an internal administrator in the [!INCLU
 3. Select **Transfer Environments**
 4. Select the environments to be transferred, specify the Entra tenant ID of the destination tenant, optionally select a date and time at which the chosen environment(s) should transfer to the destination, and confirm
 
+After creating a transfer on the source tenant you can review the status on the **Pending outgoing transfers** list.
+
 > [!IMPORTANT]
-> An environment transfer must be accepted in the destination Entra tenant before the transfer can start. If you do not specify a transfer time when initiating a transfer on the source tenant, the transfer will start immediately upon acceptance of the transfer in the destination tenant. If you do specify a time when initiating a transfer on the source tenant the transfer will not start before the chosen time even if the transfer is accepted on the destination tenant before the chosen time. If the transfer is accepted on the destination tenant after the time chosen on the source tenant the transfer will run immediately upon acceptance in the destination tenant.
+> An environment transfer must be accepted in the destination Entra tenant **within 8 hours** of creating the transfer on the source tenant. If you do not specify a transfer time when initiating a transfer on the source tenant, the transfer will start immediately upon acceptance of the transfer in the destination tenant. If you do specify a time when initiating a transfer on the source tenant the transfer will not start before the chosen time even if the transfer is accepted on the destination tenant before the chosen time. If the transfer is accepted on the destination tenant after the time chosen on the source tenant the transfer will run immediately upon acceptance in the destination tenant.
 >
-> Transfer requests are valid for two weeks. It is not possible to choose a date and time on the source tenant that is more than two weeks in the future, and it is not possible to accept a transfer on the destination tenant more than two weeks after the transfer was initiated on the source tenant.
+> Transfer requests are valid for two weeks; it is not possible to choose a date and time on the source tenant that is more than two weeks in the future.
 
 ## Accept transfer on destination tenant
+
+To confirm the transfer it has to be accepted on the destination tenant **within 8 hours** of creating the request on the source tenant.
 
 1. Ensure the destination tenant has at least one paid user license and sufficient environment and storage quota available to receive the new environments
 2. Authenicated as an internal administrator, navigate to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] in the source Entra tenant
@@ -47,15 +51,7 @@ An environment transfer is initiated by an internal administrator in the [!INCLU
 > [!IMPORTANT]
 > You can only transfer environments if you have environment quota available for the environments you're transferring in the destination tenant and if the destination tenant has at least one paid user license. Ensure there is sufficient available environment quota before accepting a transfer.
 >
-> If a transfer is scheduled to take place at a time in the future you must ensure that the destination tenant has environment quota available at the time for which the transfer is scheduled; accepting a transfer does not reserve the quota for the accepted environment(s) and the transfer will fail if quota is no longer available when the transfer starts.
-
-## After the environment has been moved
-
-- Users may have been added to the environment prior to the move operation, while it was still connected to the old Microsoft Entra tenant. If so, these users won't be migrated to the new Microsoft Entra tenant. You'll need to recreate the users on the target tenant if you still want them. You can add multiple user accounts at once [using Excel spreadsheet or other file saved in CSV format](/microsoft-365/enterprise/add-several-users-at-the-same-time). After the users are created on the target Microsoft Entra tenant, assign them the required roles or licenses and [import these users into the moved environment](/dynamics365/business-central/ui-how-users-permissions).
-
-  > [!NOTE] 
-  > User personalizations will be lost.
-- You might need to reconfigure some add-ins, external applications, and settings after the tenant-to-tenant migration. Some examples include the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Outlook add-in, Excel add-in, Power BI, Power Apps, Power Automate connectors, Dataverse, user personalizations, and more.
+> If a transfer is scheduled to take place at a time in the future you must ensure that the destination tenant has environment quota available at the time for which the transfer is scheduled; accepting a transfer does not reserve the quota for the accepted environment(s) and the transfer will fail if environment quota is no longer available when the transfer starts.
 
 ## Cancel a pending transfer from source tenant
 
@@ -65,6 +61,15 @@ An environment transfer is initiated by an internal administrator in the [!INCLU
 
 > [!IMPORTANT]
 > Pending transfers can be cancelled by internal administrators until the transfer starts, i.e. as long as the transfer has not been accepted on the destination tenant or the scheduled time for the transfer is in the future.
+
+## After the environment has been moved
+
+- Users may have been added to the environment prior to the move operation, while it was still connected to the old Microsoft Entra tenant. If so, these users won't be migrated to the new Microsoft Entra tenant. You'll need to recreate the users on the target tenant if you still want them. You can add multiple user accounts at once [using Excel spreadsheet or other file saved in CSV format](/microsoft-365/enterprise/add-several-users-at-the-same-time). After the users are created on the target Microsoft Entra tenant, assign them the required roles or licenses and [import these users into the moved environment](/dynamics365/business-central/ui-how-users-permissions).
+
+  > [!NOTE] 
+  > User personalizations will be lost.
+- You might need to reconfigure some add-ins, external applications, and settings after the tenant-to-tenant migration. Some examples include the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Outlook add-in, Excel add-in, Power BI, Power Apps, Power Automate connectors, Dataverse, user personalizations, and more.
+- External integrations may have to be updated to reflect the new environment url, including the new Entra Tenant ID.
 
 ## Transfer auditing
 Environment transfers create two distinct operations that can be audited on the Operations page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. The **Transfer Request** operation is created upon initiating a transfer in the source tenant and is only visible in the source tenant. The **Transfer to Microsoft Entra tenant** operation is created once a transfer is accepted in the destination tenant and lives in the tenant where the environment is located; before the transfer is executed this operation can be found in the source tenant, and after the environment has transferred the operation can be found in the destination tenant.
