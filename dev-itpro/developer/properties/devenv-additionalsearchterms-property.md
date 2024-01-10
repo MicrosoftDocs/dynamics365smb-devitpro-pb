@@ -81,7 +81,7 @@ page 50100 MyItems
 
 ## See Also
 
-[Adding Pages and Reports to Tell me](../devenv-al-menusuite-functionality.md)  
+[Add pages and reports to Tell me](../devenv-al-menusuite-functionality.md)  
 [Properties](devenv-properties.md)   
 [Page Object](../devenv-page-object.md)  
 [Report Object](../devenv-report-object.md)  

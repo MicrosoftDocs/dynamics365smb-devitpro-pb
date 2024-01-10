@@ -13,6 +13,8 @@ ms.collection: get-started
 
 # Get started with AL
 
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
+
 To start writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you'll need a [!INCLUDE[prod_short](includes/prod_short.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross-platform editor that you'll use for coding and debugging.
 
 ## Steps to set up a sandbox environment and Visual Studio Code
@@ -88,13 +90,13 @@ To prohibit a user from publishing, just remove the user from the **EXTEND. MGT.
 
 ## Next steps
 
-Now that you have the tools and the `HelloWorld` example up and running, you might want to create a small sample app in AL. This walkthrough guides you to create an app adding objects, code, and publishing the app to your tenant. For more information, see [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](devenv-extension-example.md).
+Now that you have the tools and the `HelloWorld` example up and running, you might want to create a small sample app in AL. This walkthrough guides you to create an app adding objects, code, and publishing the app to your tenant. For more information, see [Build your first sample extension with extension objects, install code, and upgrade code](devenv-extension-example.md).
 
 ## See Also
 
 [AL Development Environment](devenv-reference-overview.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  
 [Syntax](devenv-syntax.md)  
-[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](devenv-extension-example.md)  
+[Build your first sample extension with extension objects, install code, and upgrade code](devenv-extension-example.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  
 [XML Comments in Code](devenv-xml-comments.md)

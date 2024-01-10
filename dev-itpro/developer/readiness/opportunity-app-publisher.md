@@ -38,7 +38,7 @@ Connect your existing online service with the [!INCLUDE[prod_short](../includes/
 
 - [Scaptify](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.scapta%7CAID.50395b48-f7b6-4445-96df-6faaa8c96deb%7CPAPPID.96da1317-c2e8-42ec-aa19-216e33d0da19?tab=Overview), which connects your Shopify store with Business Central  
 
-Learn more about the API to build connect apps: [Getting Started Developing Connect Apps](../devenv-develop-connect-apps.md)  
+Learn more about the API to build connect apps: [Get started developing Connect apps](../devenv-develop-connect-apps.md)  
 
 ### Add-on
 

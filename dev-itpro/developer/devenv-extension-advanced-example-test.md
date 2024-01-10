@@ -1,5 +1,5 @@
 ---
-title: Testing the advanced sample extension
+title: Test the advanced sample extension
 description: Includes test code for the advanced example extension.
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Testing the advanced sample extension
+# Test the advanced sample extension
 
 It's required to submit tests with your extension in order to pass validation. This walkthrough builds on the advanced sample extension, which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). This walkthrough goes through how you develop the test for the sample CustomerRewards extension.
 
@@ -26,7 +26,7 @@ For more information, see [Get started with the Container Sandbox Development En
 - [Visual Studio Code](https://code.visualstudio.com/Download)   
 - The [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al) for Visual Studio Code
 
-## Identifying the areas of the extension that need to be tested 
+## Identify the areas of the extension that need to be tested 
 
 Before writing tests for your extension, you need to identify all the areas of the extension that need to be tested.  
 
@@ -53,7 +53,7 @@ In the sample test, we consider the following:
 
 - Each test also verifies that the extension works for a user that doesn't have SUPER permissions. 
 
-## Writing the tests
+## Write the tests
 
 We first create a new project (CustomerRewardsTest) for the tests. You're required to separate the CustomerRewards extension and the tests into separate projects.  
 
@@ -123,7 +123,8 @@ Without further configuration, the Import-TestToolkitToBCContainer and New-BCCon
 
 - `-includeTestLibrariesOnly` installs the Test Framework and the Test Libraries only. Beside the Test Framework, this option includes functionality that is shared between base application tests.
 
-## Describing your tests 
+## Describe your tests
+
 To help you design the relevant tests for your functionality, you can write scenarios that outline what you want to test, and you can write test criteria in the GIVEN-WHEN-THEN format. By adding comments based on feature, scenario, and GIVEN-WHEN-THEN, you add structure to your test code and make tests readable. 
 
 The following sections provide an overview of the tags that we recommend you to use. 

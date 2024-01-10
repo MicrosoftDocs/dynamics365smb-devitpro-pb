@@ -9,11 +9,14 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
 # AL Language extension configuration
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 The AL Language extension has many settings that can be defined for a specific user or for a workspace. To activate the settings, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration**, you'll find the settings that are available for the AL Language extension. If a setting is not available through the UI, you can edit it directly in the `settings.json` file. For tips on how to optimize Visual Studio Code, see [Optimizing Visual Studio Code for AL Development](devenv-optimize-visual-studio-code.md).
 

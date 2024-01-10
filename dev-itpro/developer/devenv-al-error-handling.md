@@ -8,9 +8,12 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 
 # AL error handling
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. This section contains articles about using these methods in AL to handle errors that occur during code execution, while making sure that your application has a consistent user interface. 
 
