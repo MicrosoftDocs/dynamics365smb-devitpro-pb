@@ -1,10 +1,10 @@
 ---
-title: "Debugging"
-description: "Overview of debugging in AL"
+title: Debugging in AL
+description: Overview of debugging in AL.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 06/28/2022
-ms.reviewer: na
+ms.custom: bap-template
+ms.date: 01/10/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -138,7 +138,7 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 
 ## <a name="DebugWS"></a>Debugging web services
 
-It is possible to debug code executed from web service endpoints, both pages and codeunits exposed as OData/SOAP, and API pages/queries. To do so, simply set the `breakOnNext` setting to `WebServiceClient` and trigger the web service endpoint from Postman or your web service client code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
+It's possible to debug code executed from web service endpoints, both pages and codeunits exposed as OData/SOAP, and API pages/queries. To do so, simply set the `breakOnNext` setting to `WebServiceClient` and trigger the web service endpoint from Postman or your web service client code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
 
 ## NonDebuggable attribute
 
