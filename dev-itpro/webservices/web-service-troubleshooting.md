@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: kepontop
-ms.date: 01/08/2024
+ms.date: 01/10/2024
 ---
 
 # Troubleshooting web service errors
@@ -39,11 +39,11 @@ For more information, see [FAQ: IP addresses or ranges for the Business Central 
 For more information, see [Call external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
 
-Note that when copying an environment, all extensions/apps in the new environment will have the property **Allow HttpClient Requests** set to false. For more information, see [Environment copies](../administration/tenant-admin-center-environments-copy.md#environment-copies)
+When copying an environment, all extensions/apps in the new environment will have the property **Allow HttpClient Requests** set to **false**. For more information, see [Environment copies](../administration/tenant-admin-center-environments-copy.md#environment-copies).
 
 ## It works in my sandbox but not in production
 
-The environment for a web service endpoint can change how it works. If you see a difference in how it works in your sandbox compared to production, here are some things you could check:
+The environment for a web service endpoint can change how it works. If you see a difference in how it works in your sandbox compared to production, here are some things you can check:
 
 - Does the user calling the web service endpoint exist in both environments?
 - Is the user active in both environments?
