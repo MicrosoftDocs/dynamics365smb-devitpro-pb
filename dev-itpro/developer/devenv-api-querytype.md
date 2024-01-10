@@ -14,6 +14,8 @@ Queries of the type `API` are used to generate web service endpoints and this ty
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
+[!INCLUDE[extending_APIs_is_not_supported_note](includes/include-extending-APIs-is-not-supported-note.md)]
+
 ## Example of the API query type
 
 The following query example publishes an API available at:

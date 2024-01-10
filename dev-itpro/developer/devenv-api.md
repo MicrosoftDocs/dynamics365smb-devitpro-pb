@@ -19,6 +19,7 @@ RESTful web services are typically created to interchange data between [!INCLUDE
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with an extensive list of built-in APIs that requires no code and minimal setup to use. You can also develop your own custom APIs using the AL object types _API pages_ and _API queries._ This article helps you get started developing your own APIs.
 
+[!INCLUDE[extending_APIs_is_not_supported_note](includes/include-extending-APIs-is-not-supported-note.md)]
 
 ## Creating APIs
 

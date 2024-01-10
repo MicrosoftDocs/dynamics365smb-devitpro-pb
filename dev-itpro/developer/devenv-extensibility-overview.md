@@ -35,8 +35,8 @@ The AL object model in [!INCLUDE[prod_short](../developer/includes/prod_short.md
 
 7. **Extending Application Areas**: Application areas help control the visibility of UI elements based on licensing and configuration. Developers can extend these areas to tailor the user interface according to business needs. See [Extending AL objects: application areas](devenv-extending-application-areas.md).
 
-> [!NOTE]  
-> Extending API pages and queries is not currently possible in Business Central.
+
+[!INCLUDE[extending_APIs_is_not_supported_note](includes/include-extending-APIs-is-not-supported-note.md)]
 
 ## Extending the Business Central application
 

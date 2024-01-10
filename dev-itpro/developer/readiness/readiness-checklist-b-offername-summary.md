@@ -1,14 +1,14 @@
 ---
-title: "Offer Name and Offer Summary"
+title: "Offer name and offer summary"
 description: "Guidelines on offer name and offer summary"
 author: a-emniel
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 01/02/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 ---
 
-# Offer Name and Offer Summary
+# Offer name and offer summary
 
 
 ## Offer name
@@ -50,7 +50,7 @@ When creating a name for your offer, you can use the following two naming struct
 
 
 ## Offer Summary
- The summary is the first paragraph that the prospect reads, as it will appear on your app's search page. Therefore; make sure that it's clear and concise.
+ The summary is the first paragraph that the prospect reads, as it appears on your app's search page. Therefore; make sure that it's clear and concise.
 
 **How to create a good and concise summary?** 
 - The summary should be max. 25 words or 100 characters including spaces.

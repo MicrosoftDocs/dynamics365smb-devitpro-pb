@@ -1,8 +1,8 @@
 ---
-title: "Change a module in the system application"
+title: "Change a module in the System Application"
 description: "This article provides steps and examples of how to change a module in the System Application."
 ms.custom: na
-ms.date: 12/29/2023
+ms.date: 01/03/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ ms.topic: conceptual
 author: bholtorf
 ---
 
-# Change a module in the system application
+# Change a module in the System Application
 This article provides an overview of how to change an existing module.
 
 ## Requirements
@@ -20,6 +20,7 @@ This article provides an overview of how to change an existing module.
 > [!NOTE]
 > Your environment must have the correct symbols. Go get those, in Visual Studio Code, select <kbd>F1</kbd>, and then choose **AL: Download Symbols**. Also, make a note of the **server** and **serverInstance** settings. You will add that information to the launch.json file.
 
+Your changes must follow the guidelines for module architecture. For more information, see [Module Architecture](devenv-blueprint.md). When changing an existing module, don't introduce breaking changes, that is, make sure that you don't break existing functionality. Existing tests must still pass, and you should add new tests for the functionality that you change or add.
 Your changes must follow the guidelines for module architecture. For more information, see [Module Architecture](devenv-blueprint.md). When changing an existing module, don't introduce breaking changes, that is, make sure that you don't break existing functionality. Existing tests must still pass, and you should add new tests for the functionality that you change or add.
 
 ### Set up Visual Studio Code for module development
@@ -226,6 +227,7 @@ After verifying that the tests pass, we'll add the following tests to the **Syst
 ```
 
 ### Commit and push changes, and open a pull request
+
 To submit your changes, follow these steps:
 
 1. To commit your changes, run the **git commit -m "Your message"** command.
@@ -233,8 +235,9 @@ To submit your changes, follow these steps:
 
 You can now go to your GitHub fork and open a pull request in the BCApps repository.
 
+ 
 ## See also
-[Become a contributor](https://blogs.msdn.microsoft.com/nav/2018/08/28/become-a-contributor-to-business-central/)  
-[Git going with extensions](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions)  
-[Walkthrough: Contributing to an extension on GitHub](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github)  
+[Become a contributor](https://blogs.msdn.microsoft.com/nav/2018/08/28/become-a-contributor-to-business-central/)    
+["Git" going with extensions (requires sign in)](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions)    
+[Walkthrough: Contributing to an extension on GitHub (requires sign in)](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github)    
 [Create a new module](devenv-new-module.md)  
