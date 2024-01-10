@@ -1,13 +1,12 @@
 ---
 title: "Attach and debug next"
 description: "Attach to a session on a specified server and debug for Web API sessions."
-ms.custom: na
-ms.date: 02/28/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: babp-template
+ms.date: 01/10/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.author: solsen
 ---
 
 # Attach and debug next
@@ -42,7 +41,7 @@ If `sessionId` isn't specified, but `userId` is, then the debugger will be attac
 
 ## Example (attach to a web client session)
 
-The example below illustrates a configuration for a local server, where you want to debug a web client session.
+The following example illustrates a configuration for a local server, where you want to debug a web client session.
 
 ```json
 ...
@@ -66,7 +65,7 @@ The example below illustrates a configuration for a local server, where you want
 
 ## Example (attach to an online sandbox web services session)
 
-The example below illustrates a configuration for an online sandbox, where you want to debug a web service endpoint.
+The following example illustrates a configuration for an online sandbox, where you want to debug a web service endpoint.
 
 ```json
 ...
@@ -97,7 +96,7 @@ The following configurations for attach are supported:
 |Sandbox          | Supported    |     Supported     |   Supported      |
 
 
-## How-To start an attach session
+## How to start an attach session
 
 1. In Visual Studio Code, under **Run**, choose **Add configuration**.
 2. Choose whether to attach to a cloud or a local session.  
