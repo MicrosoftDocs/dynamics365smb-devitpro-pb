@@ -30,7 +30,7 @@ For more information, see [Troubleshooting OData/API calls](dynamics-error-codes
 
 *Debugging* is the process (and art) of finding and correcting errors. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you get an integrated debugger to help you inspect your code and verify that it works as expected.
 
-For information on how to debug code executed from web service endpoints, see [Debugging web services](../developer/devenv-debugging.md#debugging-web-services).
+For information about how to debug code executed from web service endpoints, see [Debugging web services](../developer/devenv-debugging.md#debugging-web-services).
 
 ## Which IP addresses or ranges does my environment use?
 
