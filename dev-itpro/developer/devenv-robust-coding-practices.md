@@ -6,7 +6,7 @@ ms.author: kepontop
 ms.reviewer: solsen
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 12/21/2023
+ms.date: 01/11/2024
 ms.custom: bap-template
 ---
 
@@ -40,8 +40,7 @@ When doing failure modeling, you should think about the unhappy (code) path, and
 
 You don't need to create failure models for all components in your extension/app, try to focus on things that are outside your control.
 
-When you have a good list of failure modes, it's time to think about remediation of them. How does your code react in case any of these failures occur? Maybe you can implement a retry strategy before resorting to showing an error, maybe you can implement actionable error messages that allow the user to unblock themselves, or maybe you choose to ignore handling the failure. 
-
+When you have a good list of failure modes, it's time to think about remediation of them. How does your code react in case any of these failures occur? Maybe you can implement a retry strategy before resorting to showing an error, maybe you can implement actionable error messages that allow the user to unblock themselves, or maybe you choose to ignore handling the failure.
 
 ## Using robust coding practices to reason handle possible error situations
 
@@ -49,14 +48,14 @@ Robust coding practices are a state of mind for you as a developer. Apart from c
 
 These five principles might help you get started making your code more robust towards failures:
 
-1. Don't trust any code you didn't write.
-2. Don't trust consumers of your code.
+1. Don't trust any code you didn't write
+2. Don't trust consumers of your code
 3. Don't trust the environment your code runs in
-4. Offer graceful degradations.
-5. Hide your internal data structures.
-6. Assume the improbable. 
+4. Offer graceful degradations
+5. Hide your internal data structures
+6. Assume the improbable
 
-For more information about robust programming, see [Robustness_(computer_science)](https://en.wikipedia.org/wiki/Robustness_(computer_science)).
+For more information about robust programming, see [Robustness (computer_science)](https://en.wikipedia.org/wiki/Robustness_(computer_science)).
 
 
 ### Principle: Don't trust any code you didn't write
@@ -66,16 +65,14 @@ Whenever you call something from your code, such as an AL method in a codeunit, 
 Here are some examples of how you use this principle in practice:
 
 - For AL methods that implements a boolean return code, check for that with an IF statement. 
-- For AL methods that returns a result in an output parameter (using the var keyword), check that the result is sound. 
-- For AL methods without a boolean return code, can you run them as a TRY method?
-- Have the compiler help you where possible instead of getting errors at runtime. When calling AL methods that take object ID parameters, try calling them using the scope operator `::` (for example, Codeunit::"Job Queue Dispatcher") and not using literal integer values (for example, 448). In case objects are renumbered or aren't available, you'll get a compile error and not a runtime error.
+- For AL methods that returns a result in an output parameter (using the `var` keyword), check that the result is sound. 
+- For AL methods without a boolean return code, can you run them as a `Try` method?
+- Have the compiler help you where possible instead of getting errors at runtime. When calling AL methods that take object ID parameters, try calling them using the scope operator `::` (for example, `Codeunit::"Job Queue Dispatcher"`) and not using literal integer values (for example, 448). In case objects are renumbered or aren't available, you'll get a compile error and not a runtime error.
 - When calling external web service calls, check the HTTP status code.
 
 For more information, see [Error handling strategies](devenv-al-error-handling.md#error-handling-strategies).
 
-
 Primarily, anticipate that your code might encounter issues from other peoples code, and adopt a defensive programming approach to identify these issues at the earliest. Respond to failures in a manner that shields users from an overload of technical error messages.
-
 
 ### Principle: Don't trust consumers of your code (that might include yourself)
 
@@ -88,8 +85,7 @@ Here are some examples of how you use this principle in practice:
 - When your code calls external services, consider implementing or using resilience patterns such as Retry, Circuit breaker, and Attempt timeout. For more information, see [Build resilient HTTP apps: Key development patterns](/dotnet/core/resilience/http-resilience?tabs=dotnet-cli).
 - When developing web service APIs, the AL runtime provides resilience protections such as rate limits and timeouts. But you could still consider implementing or using resilience patterns such as Circuit breaker.
 
-One of the key reasons to adhere to this principle is that the individual invoking your code could very well be yourself. It’s common to forget the intricate details of your own program after a week or so. This could lead to potential errors such as incorrect function calls or providing invalid input. By following this principle, you’re essentially safeguarding your code against such issues. This approach to programming, where you anticipate and prevents possible issues, is often referred to as defensive programming. It’s a proactive measure to ensure the robustness of your code against errors, both from within and outside the program. It’s like putting a safety net to catch any unforeseen or unexpected errors that might occur during the execution of the program. This way, even if you forget the specifics of your code, this safety net helps prevent major issues or crashes. It’s a strategy that not only helps in maintaining the code but also in enhancing its overall reliability and efficiency.
-
+One of the key reasons to adhere to this principle is that the individual invoking your code could very well be yourself. It’s common to forget the intricate details of your own program after a week or so. This could lead to potential errors such as incorrect function calls or providing non-valid input. By following this principle, you’re essentially safeguarding your code against such issues. This approach to programming, where you anticipate and prevents possible issues, is often referred to as defensive programming. It’s a proactive measure to ensure the robustness of your code against errors, both from within and outside the program. It’s like putting a safety net to catch any unforeseen or unexpected errors that might occur during the execution of the program. This way, even if you forget the specifics of your code, this safety net helps prevent major issues or crashes. It’s a strategy that not only helps in maintaining the code, but also in enhancing its overall reliability and efficiency.
 
 For more information, see [Error handling strategies](devenv-al-error-handling.md#error-handling-strategies).
 
@@ -107,13 +103,11 @@ Here are some examples of how you use this principle in practice:
 - Your code sends files or data to a cloud-based service for further processing there. If that service is unavailable, could you store data/files in the database and then try connecting later?
 - Your code reads files or data from a cloud-based service for further processing in AL. If that service is unavailable, could allow users to upload data/files manually until the service becomes available again?
 
-
 ### Principle: Hide your internal data structures
 
 Concealing internal data structures enhances your program’s modularity. For example, if you want to change a collection representation from arrays to lists in your code, a well-designed and information-concealed interface wouldn't require changes in the calling program. But if this information hiding is neglected, changing the representation might break the functioning programs.
 
 Take extra care protecting elements in your code that need to stay consistent across calls. For instance, a shared variable or data in a setup table. If users of your code can access these directly, they could unintentionally or intentionally alter the data, leading to function failures. 
-
 
 ### Principle: Assume the improbable
 
@@ -121,7 +115,7 @@ When doing fault modeling, you might discover failure modes that can occur but w
 
 Here are some examples of how you use this principle in practice:
 
-- If you don't handle the error, consider at least to log this to telemetry using Telemetry.LogError or a raw Session.LogMessage call. That way, you can always query for affect over time and across customer installations and maybe revisit the choice of error handling in case the error happens more frequently than what you initially expected.
+- If you don't handle the error, consider at least to log this to telemetry using `Telemetry.LogError` or a raw `Session.LogMessage` call. That way, you can always query for affect over time and across customer installations and maybe revisit the choice of error handling in case the error happens more frequently than what you initially expected.
 
 ## See also
 
