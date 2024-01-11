@@ -6,7 +6,7 @@ ms.author: magram
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 01/02/2023
+ms.date: 01/08/2024
 ms.custom: bap-template
 ---
 
@@ -46,7 +46,7 @@ end;
 
 ## Using record instance isolation level
 
-With the introduction of record instance isolation level, it's possible to explicitly select the isolation level for reads on a record instance. Record instance isolation level will override the transaction's isolation level for a given table. It's possible to both heighten and lower the isolation level, with the effect being localized to the record instance instead of lasting for the entire length of the transaction.
+With the introduction of record instance isolation level, it's possible to explicitly select the isolation level for reads on a record instance. Record instance isolation level overrides the transaction's isolation level for a given table. It's possible to both heighten and lower the isolation level, with the effect being localized to the record instance instead of lasting for the entire length of the transaction.
 
 The following example shows AL code with SQL isolation level hints annotated on database reads, with record instance isolation level used to override the transaction's isolation level.
 
@@ -104,7 +104,7 @@ end;
 
 ## Temporarily lowering the isolation level
 
-It isn't possible inside a transaction to determine the current isolation level used in the transaction. If previously executed code has triggered a higher isolation level, counting on the entire table will require locks on the entire table. With record instance isolation level, for example, you could get an estimated record count without locking everyone else out from making changes to the table.
+It isn't possible inside a transaction to determine the current isolation level used in the transaction. If previously executed code has triggered a higher isolation level, counting on the entire table requires locks on the entire table. With record instance isolation level, for example, you could get an estimated record count without locking everyone else out from making changes to the table.
 
 ```al
 local procedure GetEstimatedCount(tableno: Integer) : Integer

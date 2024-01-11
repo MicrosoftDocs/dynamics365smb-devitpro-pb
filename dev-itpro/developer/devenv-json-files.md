@@ -9,9 +9,12 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
 # JSON files
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 When you start a new AL project, two JSON files; the `app.json` file and the `launch.json` file are generated automatically. The `app.json` file contains information about the extension that you're building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often, the `app.json` file is referred to as the manifest. This article describes the `app.json` file settings in the [App.json file](devenv-json-files.md#appjson-file) section.
 

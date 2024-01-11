@@ -106,7 +106,7 @@ DEV extensions can only exist in sandbox environments. For more information, see
 
 ### How to install
 
-For information on how to install, see [Using Designer](devenv-inclient-designer.md) and [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md).
+For information on how to install, see [Use Designer](devenv-inclient-designer.md) and [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md).
 
 ### Behavior on upgrade
 

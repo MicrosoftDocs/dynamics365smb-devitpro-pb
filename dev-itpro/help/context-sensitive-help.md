@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
-ms.date: 09/01/2023
+ms.date: 01/03/2024
 ---
 
 # Configure context-sensitive help
@@ -112,7 +112,7 @@ You can use the [ContextSensitiveHelpPage property](../developer/properties/deve
 
 Your target website is expected to have a default page that will display if no other page is appropriate. For every page where *ContextSensitiveHelpPage* isn't set, this default help page will be shown.  
 
-For page extensions, the value of the *ContextSensitiveHelpPage* property will apply only to the controls that the page extension adds to the extended page objects. For example, if your page extension adds two new controls to the base application's Customer Card page, then the *Learn more* links in the tooltips for those two controls will go to the help page that you've specified. The *Learn more* links in the rest of the controls will go to the default help that is specified in the base application. This way, multiple apps can extend the same page object and each apply their own content-sensitive help link without overwriting the context-sensitive links for other apps.  
+For page extensions, the value of the *ContextSensitiveHelpPage* property applies only to the controls that the page extension adds to the extended page objects. For example, if your page extension adds two new controls to the base application's Customer Card page, then the *Learn more* links in the tooltips for those two controls will go to the help page that you've specified. The *Learn more* links in the rest of the controls will go to the default help that is specified in the base application. This way, multiple apps can extend the same page object and each apply their own content-sensitive help link without overwriting the context-sensitive links for other apps.  
 
 > [!NOTE]  
 > The app.json file also contains a *help* property that is used by AppSource to specify the link that describes the app or solution.  
@@ -155,7 +155,7 @@ You can find a couple of suggestions for how to go about this in our blog post, 
 [User Assistance Model](../user-assistance.md)  
 [Resources for Help and Support for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../help-and-support.md)  
 [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
-[Migrate Legacy Help to the Business Central Format](../upgrade/migrate-help.md)  
+[Migrate Legacy Help to the Business Central Format](../upgrade/migrate-help.md)    
 [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../developer/devenv-extension-example.md)  
 [Building an Advanced Sample Extension](../developer/devenv-extension-advanced-example.md)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  

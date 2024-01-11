@@ -8,9 +8,10 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: esbenk
+ms.collection: get-started
 ---
 
-# AL Complex Types
+# AL complex types
 
 [!INCLUDE[2021_releasewave1.md](../includes/2021_releasewave1.md)]
 

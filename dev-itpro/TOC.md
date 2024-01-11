@@ -412,8 +412,8 @@
 ## Get started
 ### [Welcome to AL](developer/devenv-landing.yml)
 ### [Get started with AL](developer/devenv-get-started.md)
-### [Building your first sample extension with extension objects, install code, and upgrade code](developer/devenv-extension-example.md)
-### [Using Designer](developer/devenv-inclient-designer.md)
+### [Build your first sample extension with extension objects, install code, and upgrade code](developer/devenv-extension-example.md)
+### [Use Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard shortcuts](developer/devenv-keyboard-shortcuts.md)
 ### [AL Home](developer/devenv-al-home.md)
 ### [AL Explorer](developer/devenv-al-explorer.md)
@@ -634,6 +634,7 @@
 ##### [Error method telemetry](administration/telemetry-error-method-trace.md)
 ##### [Feature (error) telemetry](administration/telemetry-feature-telemetry.md)
 ##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
+
 #### AL Language Reference (errors)
 ##### [Collecting Errors API](developer/devenv-error-collection-api.md?toc=/dynamics365/business-central/dev-itpro/toc.json) 
 ##### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -642,12 +643,17 @@
 ###### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ###### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
+#### Baseapp Reference (errors)
+##### [Codeunit "Error Context Element"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-context-element?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Codeunit "Error Message Handler"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-handler?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Codeunit "Error Message Management"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-management?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Codeunit "Last Error Context Element"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.last-error-context-element?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
-### Formatting data
+
+### Formatting values
 #### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
 #### [Formatting values, dates, and time](developer/devenv-format-property.md)
 #### [File handling and text encoding](developer/devenv-file-handling-and-text-encoding.md)
-
 
 ### Tables and data
 #### [Overview](developer/devenv-tables-overview.md)
@@ -845,6 +851,7 @@
 #### [Substituting a report](developer/devenv-substituting-reports.md)
 #### [Testing a report](developer/devenv-testing-reports.md)
 #### [Report performance](developer/devenv-report-performance.md)
+#### [Troubleshooting report errors](developer/devenv-reports-troubleshooting.md)
 #### [Report telemetry](administration/telemetry-reports-trace.md)
 #### How users work with reports
 ##### [Run and print reports](/dynamics365/business-central/ui-work-report?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -1097,7 +1104,7 @@
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
 ### [Walkthrough: Building an advanced sample extension](developer/devenv-extension-advanced-example.md)
-### [Walkthrough: Testing the advanced sample extension](developer/devenv-extension-advanced-example-test.md)
+### [Walkthrough: Test the advanced sample extension](developer/devenv-extension-advanced-example-test.md)
 ### Best practices
 #### [Overview](compliance/apptest-bestpracticesforalcode.md)
 #### AL code
@@ -1118,7 +1125,7 @@
 #### Testing
 ##### [Testing your extension](compliance/apptest-testingyourextension.md)
 ##### [Building an advanced sample extension](developer/devenv-extension-advanced-example.md)
-##### [Testing the advanced sample extension](developer/devenv-extension-advanced-example-test.md)
+##### [Test the advanced sample extension](developer/devenv-extension-advanced-example-test.md)
 #### Performance
 ##### [Performance developer guide](performance/performance-developer.md)
 ##### [Analyzing performance](performance/performance-work-perf-problem.md)
@@ -1214,13 +1221,18 @@
 #### [Analyze telemetry with KQL](administration/telemetry-analyze-with-kql.md)
 #### [Alert on telemetry](administration/telemetry-alert.md)
 #### [Using telemetry to investigate performance issues](performance/performance-work-perf-problem.md)
+
 ### Troubleshooting guides (TSGs)
-#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
-#### [Troubleshooting OData calls](webservices/dynamics-error-codes.md)
-#### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
-#### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
+#### Troubleshoot cloud migration
+##### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
 ##### [Troubleshooting cloud migration setup](administration/migration-setup-troubleshooting.md)
 ##### [Troubleshooting data replication](administration/migration-data-replication-troubleshooting.md)
+#### [Troubleshoot report errors](developer/devenv-reports-troubleshooting.md)
+#### Troubleshoot web services
+##### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
+##### [Troubleshooting OData calls](webservices/dynamics-error-codes.md)
+##### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
+
 
 ## [AL language reference](developer/index.md)
 <!-- end AL -->

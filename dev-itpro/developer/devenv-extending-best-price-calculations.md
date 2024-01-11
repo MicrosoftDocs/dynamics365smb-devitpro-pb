@@ -835,6 +835,6 @@ Now we'll create a sales order for customer 10000, and add a line for item 1900-
 
 ## See Also
 
-[Module System Application](/dynamics365/business-central/application/system-application/module/system-application)  
-[Module Base Application](/dynamics365/business-central/application/reference/base%20application/)  
+[Module System Application](/dynamics365/business-central/application/system-application/module/system-application)    
+[Module Base Application](/dynamics365/business-central/application/base-application/module/base-application)    
 [Extending Application Areas](devenv-extending-application-areas.md)

@@ -1,13 +1,12 @@
 ---
 title: "Attach and debug next"
 description: "Attach to a session on a specified server and debug for Web API sessions."
-ms.custom: na
-ms.date: 02/28/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: babp-template
+ms.date: 01/10/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.author: solsen
 ---
 
 # Attach and debug next
@@ -36,10 +35,13 @@ If `sessionId` isn't specified, but `userId` is, then the debugger will be attac
 > [!IMPORTANT]  
 > In case of `userId` being a different user than the user logged into Visual Studio Code, then the user logged into Visual Studio Code must be part of **D365 ATTACH DEBUG** permission set.
 
-The example below illustrates a configuration for a local server.
-
 > [!NOTE]  
 > The debugger is able to connect to *background sessions*, and not *background tasks*.
+
+
+## Example (attach to a web client session)
+
+The following example illustrates a configuration for a local server, where you want to debug a web client session.
 
 ```json
 ...
@@ -61,7 +63,30 @@ The example below illustrates a configuration for a local server.
 ...
 ```
 
-## Attach support
+## Example (attach to an online sandbox web services session)
+
+The following example illustrates a configuration for an online sandbox, where you want to debug a web service endpoint.
+
+```json
+...
+{
+            "name": "Attach to online sandbox",
+            "type": "al",
+            "request": "attach",
+            "environmentType": "Sandbox",
+            "environmentName": "MyEnvironment",
+            "breakOnError": true,
+            "breakOnRecordWrite": false,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "breakOnNext": "WebServiceClient"
+        }
+...
+```
+
+## Supported Attach configurations
 
 The following configurations for attach are supported:
 
@@ -70,7 +95,8 @@ The following configurations for attach are supported:
 |On-premises      | Supported    |     Supported     |   Supported      |
 |Sandbox          | Supported    |     Supported     |   Supported      |
 
-### To start an attach session
+
+## How to start an attach session
 
 1. In Visual Studio Code, under **Run**, choose **Add configuration**.
 2. Choose whether to attach to a cloud or a local session.  

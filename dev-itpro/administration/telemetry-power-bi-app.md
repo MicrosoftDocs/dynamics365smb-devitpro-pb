@@ -166,9 +166,14 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
    - Timezone (the Business Central platform emits telemetry in the UTC time zone. By setting a Timezone, all visuals that show telemetry by hour of day will adjust to show data in the configured time zone).
    - Whether the app should refresh data (the default is every night around midnight); this option is hidden under **Advanced**.
 
-   For the environment app, you can also define:
+   For the **environment usage app**, you can also define:
 
    - an include list of environments so that only data for these environments is loaded. The format for this parameter is `{"include":[{"AAD tenant id":"<aad tenant id 1>","Name":"<environment name 1>"}, {"AAD tenant id":"<aad tenant id 2>","Name":"<environment name 2>"}]}`
+
+   For the **app usage app**, you can also define:
+
+   - an include list of apps so that only data for these apps is loaded. The format for this parameter is `{"include":[{"appId":"<app id 2>"},{"appId":"<app id 2>"}]}`
+
 
 4. When done making changes, you have to refresh the dataset to update the data shown in the app.
 

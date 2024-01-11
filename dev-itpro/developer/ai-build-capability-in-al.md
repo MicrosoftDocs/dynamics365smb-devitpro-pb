@@ -178,11 +178,13 @@ codeunit 54334 "CopilotJob"
               exit(Result);
           end;
     end;
+
     local procedure SetParameters(var AOAIChatCompletionParams: Codeunit "AOAI Chat Completion Params")
     begin
         AOAIChatCompletionParams.SetMaxTokens(2500);
         AOAIChatCompletionParams.SetTemperature(0);
     end;
+
     local procedure MaxModelRequestTokens(): integer
     begin 
        exit(1596) // Assuming it's GPT 3.5 Turbo with 4096 max tokens and 2500 is reserved for the output

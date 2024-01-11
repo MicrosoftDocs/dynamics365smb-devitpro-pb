@@ -1,6 +1,6 @@
 ---
-title: "Building your first sample extension that uses new objects and extension objects"
-description: "Includes code for an example extension, complete with new objects, extension objects, and install and upgrade code."
+title: Build your first sample extension that uses new objects and extension objects
+description: Includes code for an example extension, complete with new objects, extension objects, and install and upgrade code.
 author: jswymer
 ms.custom: na
 ms.date: 05/19/2022
@@ -8,9 +8,10 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
+ms.collection: get-started
 ---
 
-# Building your first sample extension with extension objects, install code, and upgrade code
+# Build your first sample extension with extension objects, install code, and upgrade code
 
 This walkthrough guides you step by step to create a sample extension in AL. New objects and extension objects are added to the base application for a simple reward feature for customers. Every section of this exercise includes code that serves for installing, customizing, or upgrading this sample extension. The final result can be published and installed on your tenants.
 
@@ -230,7 +231,7 @@ field(4;"Minimum Purchase";Decimal)
 }
 ```
 
-From this point, changes to the **Reward Card** page can be done either manually by adding the following code in Visual Studio Code or by using Designer's functions to add the same field. Both ways lead to the same results, but using Designer speeds up the process. 
+From this point, changes to the **Reward Card** page can be done either manually by adding the following code in Visual Studio Code or by Use Designer's functions to add the same field. Both ways lead to the same results, but Use Designer speeds up the process. 
 
 ```AL
 field("Minimum Purchase";"Minimum Purchase")
@@ -510,7 +511,7 @@ codeunit 50106 RewardsUpgradeCode
 ```
 For more information about writing and running upgrade code, see [Upgrading Extension](devenv-upgrading-extensions.md).  
 
-## Instrumenting your app with telemetry
+## Instrument your app with telemetry
 
 [!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. Create an Application Insights resource in Azure if you don't have one. For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource). Now, add the Application Insights connection string to the extension manifest (app.json file):
 
@@ -529,7 +530,7 @@ This walkthrough showed how an extension can be developed. The main AL objects a
 > [!TIP]  
 > To try building a more advanced Customer Rewards sample extension, see [Building an Advanced Sample Extension](devenv-extension-advanced-example.md).
 
-## See Also
+## See also
 
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  
