@@ -17,8 +17,10 @@ ms.collection: get-started
 
 The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. This section contains articles about using these methods in AL to handle errors that occur during code execution, while making sure that your application has a consistent user interface. 
 
-The following articles introduce error handling in AL:
+The following articles discuss the different aspects of error handling in AL:
 
+- [Failure modeling and robust coding practices](devenv-robust-coding-practices.md)  
+- [Understanding the error dialog](devenv-error-dialog.md)   
 - [User experience guidelines for errors](devenv-error-handling-guidelines.md)  
 - [Actionable errors](devenv-actionable-errors.md) 
 - [Collecting errors](devenv-error-collection.md) 
@@ -94,6 +96,7 @@ For more information, see [Telemetry.LogError](../administration/telemetry-featu
 
 ## See also
 
+[Failure modeling and robust coding practices](devenv-robust-coding-practices.md)  
 [Understanding the error dialog](devenv-error-dialog.md)   
 [User experience guidelines for errors](devenv-error-handling-guidelines.md)  
 [Actionable errors](devenv-actionable-errors.md)   
