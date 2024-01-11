@@ -14,21 +14,20 @@ ms.date: 08/23/2022
 ms.author: jswymer
 ---
 
-# Migrate Dynamics GP Data to the Cloud
+# Configure Dynamics GP company data migration
 
-An assisted setup guide in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can help you migrate data from Dynamics GP. You can migrate data from Dynamics GP 2015 and later versions of Dynamics GP. For more information, see [System requirements](faq-migrate-data.md#system-requirements).  
+<!--An assisted setup guide in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can help you migrate data from Dynamics GP. You can migrate data from Dynamics GP 2015 and later versions of Dynamics GP. For more information, see [System requirements](faq-migrate-data.md#system-requirements).  
 
 > [!IMPORTANT]
 > Migrating from Dynamics GP using the **Cloud Migration Setup** assisted setup guide is currently only supported for the following markets: United States, Canada, United Kingdom, Australia.
 
 The end-to-end process is described [here](migrate-data.md). In this article, we talk about background information and things to take into consideration.  
 
-As part of the Business Central 21.1 release, company settings for data migration have been moved from the Cloud Migration Setup Wizard and placed in a new GP Company Migration Configuration page.  This page allows for improved ease of use by allowing you to make global settings for all companies selected to migrate with the ability to update at a company level if necessary.  You can access the GP Company Migration Configuration page from Migration Management.
+<!--As part of the Business Central 21.1 release--> The company settings for data migration have been moved from the Cloud Migration Setup Wizard and placed in a new GP Company Migration Configuration page. This page allows for improved ease of use by allowing you to make global settings for all companies selected to migrate with the ability to update at a company level if necessary.  You can access the GP Company Migration Configuration page from Migration Management.
 
 In addition to the GP Company Migration Configuration page you can select which modules you would like migrated from GP to Business Central. You will be able to select from the following modules to migrate: Accounts Payable, Accounts Receivable, Bank, Open Purchase Orders and Inventory.
 
 *Note: General Ledger information will always be migrated.*  
-
 
 ## Dynamics GP data
 
