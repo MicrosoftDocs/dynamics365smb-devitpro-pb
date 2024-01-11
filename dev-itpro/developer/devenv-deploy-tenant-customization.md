@@ -63,4 +63,4 @@ In some cases, a customer's production environment that includes a per-tenant ex
 [Get Started with AL](devenv-get-started.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  

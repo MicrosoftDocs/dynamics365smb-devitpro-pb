@@ -135,7 +135,7 @@ If you want to customize or extend the Microsoft Help, you can fork our public r
 [User Assistance Model](../user-assistance.md)  
 [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Migrate Legacy Help to the Business Central Format](../upgrade/migrate-help.md)  
-[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../developer/devenv-extension-example.md)  
+[Build your first sample extension with extension objects, install code, and upgrade code](../developer/devenv-extension-example.md)  
 [Building an Advanced Sample Extension](../developer/devenv-extension-advanced-example.md)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
 [Resources for Help and Support](../help-and-support.md)  

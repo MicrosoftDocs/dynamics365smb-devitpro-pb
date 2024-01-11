@@ -7,11 +7,14 @@ ms.date: 01/10/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
 # Debugging in AL
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 *Debugging* is the process of finding and correcting errors. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you get an integrated debugger to help you inspect your code and verify that your application can run as expected. You can start a debugging session by pressing <kbd>F5</kbd>. For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging). 
 

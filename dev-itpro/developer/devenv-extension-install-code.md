@@ -110,4 +110,4 @@ codeunit 50100 MyInstallCodeunit
 [Get Started with AL](devenv-get-started.md)  
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
-[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](devenv-extension-example.md)
+[Build your first sample extension with extension objects, install code, and upgrade code](devenv-extension-example.md)

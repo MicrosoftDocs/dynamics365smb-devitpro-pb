@@ -12,11 +12,13 @@ author: KennieNP
 ---
 
 # Extensibility overview
+
 AL developers can extend the functionality of Business Central in several ways. They can extend tables, enumerations, application areas, pages, reports, code flows and the security model. They can also contribute directly to the base application in the open source projects for the system application modules.
 
 This article provides an overview of the extensibility options available to AL developers in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] including examples on how to extend various features, such as extending item charges, best price calculations, and data archiving.
 
 ## Extending AL objects and artifacts
+
 The AL object model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports many different ways for developers to extend objects and artifacts in an app.
 
 1. **Extending Code Flows**: Codeunits contain AL code that can be reused across the application. Developers can subscribe to events in base app codeunits and write custom logic to extend the application's functionality. See [Extending AL code flows: events](devenv-event-types.md).
@@ -35,7 +37,6 @@ The AL object model in [!INCLUDE[prod_short](../developer/includes/prod_short.md
 
 
 [!INCLUDE[extending_APIs_is_not_supported_note](includes/include-extending-APIs-is-not-supported-note.md)]
-
 
 ## Extending the Business Central application
 

@@ -1,5 +1,5 @@
 ---
-title: API Developer Overview
+title: API developer overview
 description: Use APIs to expose information from the database into versioned, OData v4 enabled REST web services.
 ms.custom: na
 ms.date: 07/13/2023
@@ -8,9 +8,13 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 
-# API Development Overview
+# API development overview
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
+
 RESTful web services are typically created to interchange data between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and external systems. The acronym REST stands for REpresentational State Transfer. Any coding language capable of calling REST APIs can be used to use this feature. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] API stack have been optimized for performance and is the preferred way to integrate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with an extensive list of built-in APIs that requires no code and minimal setup to use. You can also develop your own custom APIs using the AL object types _API pages_ and _API queries._ This article helps you get started developing your own APIs.
@@ -18,10 +22,11 @@ RESTful web services are typically created to interchange data between [!INCLUDE
 [!INCLUDE[extending_APIs_is_not_supported_note](includes/include-extending-APIs-is-not-supported-note.md)]
 
 ## Creating APIs
+
 When creating an API, you need to consider how the API is intended to be used: 
+
 * If you need to read and write data, use a page of the type `API`
 * If you just need to read data, possibly from multiple tables, use a query of the type `API`
-
 
 The two approaches come with different characteristics as described in this table:
 
