@@ -1,11 +1,11 @@
 ---
 title: "Resources for Help and Support"
 description: Learn about resources for support and product Help for Business Central if you are reselling partner or a developer.
-author: edupont04
+author: jswymer
 ms.reviewer: na
 ms.topic: article
-ms.author: edupont
-ms.date: 10/24/2023
+ms.author: jswymer
+ms.date: 01/11/2024
 ---
 
 # Resources for Help and Support for [!INCLUDE[prod_long](includes/prod_long.md)]
