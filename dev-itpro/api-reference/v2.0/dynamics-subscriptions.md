@@ -128,7 +128,7 @@ The change type is indicated by the `"changeType"` parameter:
 
   > [!TIP]
   > - You can subscribe to integration event `OnGetDelayTime` in codeunit `API Webhook Notification Mgt.` to change the delay time. Keep in mind that the delay time is in millisecconds.
-  > - You can subscribe to integration event `OnGetMaxNumberOfNotifications` in codeuneit `API Webhook Notification Send` to change the notification threshold for collection.
+  > - You can subscribe to integration event `OnGetMaxNumberOfNotifications` in codeunit `API Webhook Notification Send` to change the notification threshold for collection.
 
 <!--
   > [!IMPORTANT]
