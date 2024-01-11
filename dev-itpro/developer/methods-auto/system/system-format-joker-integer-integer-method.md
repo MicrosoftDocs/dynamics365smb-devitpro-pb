@@ -58,7 +58,7 @@ The *FormatNumber* parameter specifies the format that you want to use. The basi
 - <*Integer*><*Decimals*><*Sign,1*> is Format 4  
 
 
-For more information about *FormatNumber*, see [Formatting Values, Dates, and Time](../../devenv-format-property.md)).
+For more information, see [Formatting Values, Dates, and Time](../../devenv-format-property.md)).
 
 ## See also
 
