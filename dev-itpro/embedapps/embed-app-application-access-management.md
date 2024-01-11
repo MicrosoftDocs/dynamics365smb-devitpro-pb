@@ -1,5 +1,5 @@
 ---
-title: Application Access Management
+title: Application access management
 description: Learn how application access management works as an Embed App ISV and VAR.
 author: jswymer
 ms.topic: conceptual
@@ -7,9 +7,9 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: application, tenant, management, access, API
-ms.date: 04/01/2021
+ms.date: 01/02/2024
 ---
-# Application Access Management for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)]
+# Application access management for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)]
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -36,7 +36,7 @@ Follow these steps to provide your VARs with access to the Application Access Ma
 
 - Prepare the VAR for the change
 
-    Once you enable application access management in your LCS project, any existing customers already using your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] will be blocked from access to their [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environments and will be unable to create new [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environments if the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] has not already been enabled on their tenant. Make sure to  coordinate enabling the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] on customer tenants with your VARs before you enable the application access management setting in your LCS project.
+    Once you enable application access management in your LCS project, any existing customers already using your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] will be blocked from access to their [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environments and will be unable to create new [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environments if the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] hasn't already been enabled on their tenant. Make sure to  coordinate enabling the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] on customer tenants with your VARs before you enable the application access management setting in your LCS project.
 
 - Get the VAR's CSP organizational ID (Microsoft ID). You'll need this ID for registration.
 
@@ -61,7 +61,7 @@ Once a VAR is registered, they can start to enable and disable the [!INCLUDE[emb
 
 ### Disabling and enabling application access management
 
-In your LCS project, you can specify that VARs can or cannot approve customers without having to remove VARs from the list. This capability is useful if you need to temporarily allow access to all VARs and all customers. For example, suppose a VAR is registered but they're not ready to use the API yet.
+In your LCS project, you can specify that VARs can or can't approve customers without having to remove VARs from the list. This capability is useful if you need to temporarily allow access to all VARs and all customers. For example, suppose a VAR is registered but they're not ready to use the API yet.
 
 > [!IMPORTANT]
 > If you specify that VARs cannot approve customers, even if the VARs are still listed on the **Manage VARs access** page, the environment access settings made by VARs for their customers will be ignored. The existing access settings will be enforced again once you allow the VARs to approve customers again and save the changes.
@@ -98,8 +98,8 @@ With application access management enabled, the typical process for getting cust
 
     `https://[application family].bc.dynamics.com/[Customer Microsoft Entra tenant ID]/Production`
 
-## See Also
+## See also
 
-[Application Access Management API](embed-app-application-access-management-api.md)  
-[Using Application Family](../deployment/embed-app-using-application-family.md)
-[Managing an Business Central Embed App in Microsoft Lifecycle Services](../deployment/embed-app-lifecycle-services.md)
+[Application Access Management API](embed-app-application-access-management-api.md)    
+[Using Application Family](../deployment/embed-app-using-application-family.md)  
+[Managing an Business Central Embed App in Microsoft Lifecycle Services](../deployment/embed-app-lifecycle-services.md)  

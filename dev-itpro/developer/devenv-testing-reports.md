@@ -1,20 +1,22 @@
 ---
-title: Testing Reports
+title: Test reports
 description: How to validate if a report produces correct data
-author: ailie13
+author: solsen
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
 ms.date: 04/01/2021
 ---
 
-# Testing Reports
+# Test reports
+
 Testing your report requires you to run it and to verify the data output. This practice helps you ensure that your customers are presented with complete and accurate data.  
 
-Before extensions, the output of a report was saved to a file, but extensions deployed to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] cannot access the file system and therefore must save the output of a report to a stream. Codeunit 131007 `Library - Report Dataset` offers a high-level API for running and testing the output of reports that does not require direct access to the file system.
+Before extensions, the output of a report was saved to a file, but extensions deployed to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can't access the file system and therefore must save the output of a report to a stream. Codeunit 131007 `Library - Report Dataset` offers a high-level API for running and testing the output of reports that doesn't require direct access to the file system.
 
 ## Example
-The following example shows how to initialize the codeunit 131007 `Library - Report Dataset` by using the `RunReportAndLoad` method. This method is preferred as it will run the report and initialize the `Library - Report DataSet` codeunit. To verify the output, call either the `AssertElementWithValueExists` or the `AssertElementWithValueNotExist` method. The other methods in the library should work as well if they do not contain “Tag” in the name. `RUNREQUESTPAGE` and `[RequestPageHandler]` are optional and you can use them when you want to open the request page. 
+
+The following example shows how to initialize the codeunit 131007 `Library - Report Dataset` by using the `RunReportAndLoad` method. This method is preferred as it runs the report and initialize the `Library - Report DataSet` codeunit. To verify the output, call either the `AssertElementWithValueExists` or the `AssertElementWithValueNotExist` method. The other methods in the library should work as well if they don't contain “Tag” in the name. `RUNREQUESTPAGE` and `[RequestPageHandler]` are optional and you can use them when you want to open the request page. 
 
 > [!TIP]  
 > If you want to run the report separately and load the data from the input stream manually, you can use the `LoadDataFromInstream` method.
@@ -48,7 +50,7 @@ codeunit 50105 MyReportTesting
 }
 ```
 
-Any changes done in the handler above will result in the `XmlParameters` being changed and applied automatically when the report runs. Examples of the implementation in the existing tests are in `Codeunit 133770` and `Codeunit 134141`.
+Any changes done in the handler above results in the `XmlParameters` being changed and applied automatically when the report runs. Examples of the implementation in the existing tests are in `Codeunit 133770` and `Codeunit 134141`.
 
 ## Remarks
 
@@ -62,5 +64,5 @@ Any changes done in the handler above will result in the `XmlParameters` being c
 ## See Also
 
 [Reports Overview](devenv-reports.md)  
-[Testing Pages](devenv-testing-pages.md)  
+[Test pages](devenv-testing-pages.md)  
 [Test Codeunits and Test Methods](devenv-test-codeunits-and-test-methods.md)

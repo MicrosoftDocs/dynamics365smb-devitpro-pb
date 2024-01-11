@@ -1,15 +1,15 @@
 ---
-title: Upgrading Customized C/AL Application to Microsoft Base Application for version 20
+title: Upgrading customized C/AL application to Microsoft Base Application for version 20
 description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 20.
 ms.topic: article
 ms.service: dynamics365-business-central
 author: jswymer
 ms.author: jswymer
-ms.date: 04/11/2023
+ms.date: 01/03/2024
 
 ---
 
-# Upgrading Customized C/AL Application to Microsoft Base Application version 20
+# Upgrading customized C/AL application to Microsoft Base Application version 20
 
 This article describes how to upgrade a customized version 14 application to a version 20 solution that uses the Microsoft system and base applications.
 
@@ -85,7 +85,7 @@ The first step, and the largest step, is to create extensions for the customizat
 
 For example, if your application includes custom tables, then create extensions that include table objects and logic for the custom tables. If the application includes custom fields on system or base application tables, create extensions that include table extension objects to cover the custom fields. As part of this upgrade process, the data currently stored in custom tables or fields will be migrated from the existing tables to the new ones defined in the extensions.
 
-Also, be aware that since version 18, several base application tables are now temporary tables. This change may affect the upgrade. For more information, see [Known Issues - Tables changed to temporary may prevent synchronizing new base application version](known-issues.md#temptables).
+Also, be aware that since version 18, several base application tables are now temporary tables. This change might affect the upgrade. For more information, see [Known Issues - Tables changed to temporary might prevent synchronizing new base application version](known-issues.md#temptables).
 
 
 ## Task 4: Create empty System, Base, and customization extensions
@@ -157,7 +157,7 @@ The only file in the extension project that's required is an app.json. You can c
 
 In this step, you create an extension that consists only of the non-system table objects from your custom base application. The table objects will only include the properties and field definitions. They won't include AL code on triggers or methods. This extension is an interim extension used only during the upgrade. 
 
-You'll create two versions of this extension. The first version contains the table objects. The second version, is an empty extension that contains a migrate.json file.
+You'll create two versions of this extension. The first version contains the table objects. The second version is an empty extension that contains a migrate.json file.
 
 ### Create the first version - tables only
 
@@ -728,12 +728,12 @@ For more information, see [To export and import a permission set](/dynamics365/b
         > This is a required step. For more information, see [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) in the business functionality content.
     - Once the setup of certificate authentication is done, choose **Cloud Migration**, and then choose **Rebuild Coupling Table**.  
 
-        This will schedule the rebuilding of the coupling table and will open the corresponding job queue entry, so you can monitor its progress and restart it if it ends up in error state.  
+        This schedules the rebuilding of the coupling table and will open the corresponding job queue entry, so you can monitor its progress and restart it if it ends up in error state.  
 
         > [!NOTE]
         > The step for rebuilding the coupling table is not needed if you have performed cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] version 15 or later.
 
-## See Also  
+## See also  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  

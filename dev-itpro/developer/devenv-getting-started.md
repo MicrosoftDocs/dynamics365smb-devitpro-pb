@@ -12,6 +12,8 @@ ms.collection: get-started
 
 # Get started with modules in the System Application
 
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
+
 This topic provides information about requirements for working with modules in the System Application.
 
 ## AL

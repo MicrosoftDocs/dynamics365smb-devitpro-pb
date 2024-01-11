@@ -42,7 +42,7 @@ Importance = Additional;
 
 You use this property to control the amount of information that is visible on a page. It is useful on pages that have a large number of fields, where you can display the most important fields by default, but users have the option to show more as needed.  
 
-As a developer, the **Importance** property can also be set also by using Designer (see [Using Designer](../devenv-inclient-designer.md)). In the client, users can change the setting for their workspace by using personalization (see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
+As a developer, the **Importance** property can also be set also by Use Designer (see [Use Designer](../devenv-inclient-designer.md)). In the client, users can change the setting for their workspace by using personalization (see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
 
 ## See Also
 

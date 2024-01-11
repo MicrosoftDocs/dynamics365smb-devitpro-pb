@@ -9,9 +9,12 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
 # Syntax
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 The syntax of the AL language is designed to assist in building business applications for [!INCLUDE [prod_short](includes/prod_short.md)].
 

@@ -2,13 +2,12 @@
 title: Prepare for major updates with preview environments
 description: Learn how to use preview sandboxes to help prepare for the next major update of Business Central online.
 author: jswymer
-
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 01/06/2022
+ms.date: 01/08/2024
 ms.author: jswymer
 ---
 
@@ -45,13 +44,13 @@ We need your feedback on the preview! Let us know about your experiences with th
 
 1. Browse to [aka.ms/collaborate](https://aka.ms/collaborate)
 
-2. If you have not registered before, complete the registration form to access Collaborate (discover the steps [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-a-how-your-global-administrator-must-register-for-collaborate))
+2. If you haven't registered before, complete the registration form to access Collaborate (discover the steps [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-a-how-your-global-administrator-must-register-for-collaborate))
 
 3. Choose **Engagements**, and then choose the **Join** action
 
 4. Under the **Ready! for Dynamics 365 Business Central** program, find the latest preview version in the list of available engagements, and then choose the **Join** action
 
-Once you have joined the preview engagement, you can submit your feedback by filling in the form. You must specify if you are reporting a technical issue, a translation issue, or a documentation issue. The default severity is set to 3, which is the normal severity for most defects and means that the system is not crashing and users are not blocked from doing their work, but you can change that. When we have triaged your issue, you can see changes in Collaborate. 
+Once you have joined the preview engagement, you can submit your feedback by filling in the form. You must specify if you're reporting a technical issue, a translation issue, or a documentation issue. The default severity is set to 3, which is the normal severity for most defects and means that the system isn't crashing and users aren't blocked from doing their work, but you can change that. When we have triaged your issue, you can see changes in Collaborate. 
 
 For every public preview, we create a "Public preview" group on [Yammer](https://aka.ms/BCYammer). Make sure to join it and feel free to provide your feedback here as well. 
 
@@ -60,11 +59,11 @@ For every public preview, we create a "Public preview" group on [Yammer](https:/
 
 ## Guidelines for how to get started
 
-The newly created preview sandbox environment contains demonstration company data. Trying the preview on a copy of your current production data is not yet supported; nor is testing the upgrade from your current version to the preview. However, you can use the newly created sandbox environment for exploring and learning the new product capabilities. You can also use the preview environment to validate that any per-tenant extensions are still working as expected.
+The newly created preview sandbox environment contains demonstration company data. Trying the preview on a copy of your current production data isn't yet supported; nor is testing the upgrade from your current version to the preview. However, you can use the newly created sandbox environment for exploring and learning the new product capabilities. You can also use the preview environment to validate that any per-tenant extensions are still working as expected.
 
-If you run your tests on a preview environment one month before the announced major release of Business Central, it is more likely that the coming updates of your production environments will go smoother. This way, you, your customers, and your code are better prepared for the official release.
+If you run your tests on a preview environment one month before the announced major release of Business Central, it's more likely that the coming updates of your production environments go smoother. This way, you, your customers, and your code are better prepared for the official release.
 
-We expect to update the preview version only if we discover critical issues before the major update is generally available for production environments. Apart from these potential fixes, we do not expect any further changes to the product between the preview and the official release. You can start your testing and learning activities immediately, without waiting for the official release.
+We expect to update the preview version only if we discover critical issues before the major update is generally available for production environments. Apart from these potential fixes, we don't expect any further changes to the product between the preview and the official release. You can start your testing and learning activities immediately, without waiting for the official release.
 
 > [!NOTE] 
 > You will be able to test the update on a copy of your production data in a sandbox environment when we release the new update in production in April or October, respectively. When the official release becomes available, you can continue your tests on that version. You will no longer be able to create new preview sandboxes.

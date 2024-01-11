@@ -7,9 +7,9 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Finland, local functionality
-ms.date: 12/19/2023
+ms.date: 10/08/2024
 ms.author: jswymer
--
+---
 
 # Deprecated features in the Finnish version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]
 This topic lists and describes the local functionality for Finland that has been removed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], made available from a new page or report, or replaced by a new feature.

@@ -23,4 +23,4 @@ ROBOTS: NOINDEX
 [Designing ListParts](devenv-designing-listparts.md)  
 [FactBoxes](devenv-adding-a-factbox-to-page.md)    
 [Page Extension Object](devenv-page-ext-object.md)    
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  
