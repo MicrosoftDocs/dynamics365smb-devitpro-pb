@@ -65,7 +65,7 @@ For the *Length* parameter, the following rules apply:
 
    If *Value* exceeds *Length* characters, then *String* is truncated to *Length* characters.
 
-For the *FormatString* parameter, see [Formatting Values, Dates, and Time](../../devenv-format-property.md) for more information.
+For more information, see [Formatting Values, Dates, and Time](../../devenv-format-property.md).
 
 ## Example 1
 
