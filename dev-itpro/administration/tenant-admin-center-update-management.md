@@ -53,7 +53,7 @@ To schedule an update date:
 2. Choose the **Update Settings** action, and then choose the **Set update date** action.
 3. In the **Schedule Environment Update** pane, specify the update date.
     > [!NOTE]
-    > You can choose to ignore the environment's update window when scheduling a specific update by switching **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets it start immediately, and it lets large upgrades run for longer than 24 hours if required.
+    > You can choose to ignore the environment's update window when scheduling a specific update by switching **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets it start immediately, and it lets large upgrades run for longer than 24 hours if required. It is not possible to cancel a running update, so it is not recommended to use this setting for updates on environments that must be available for users again by a certain time.
 
 4. Choose **Schedule Update**.
 
@@ -65,8 +65,6 @@ For updates that tenant administrators can schedule, a notification is sent to a
 
 > [!IMPORTANT]
 > [!INCLUDE [admin-notifications](../includes/admin-notifications.md)]
-
-For versions earlier than 2021 release wave 1, admins can't schedule the monthly minor updates. Until such environments are updated to version 18.0 and later, the update is applied to tenant environments as it becomes available. No notifications are sent to tenant administrators prior to the update. Notifications are sent only after the update is applied.  
 
 ## Environments that can't get updated
 
