@@ -95,11 +95,11 @@ For more information, see [Error handling strategies](devenv-al-error-handling.m
 
 ### Principle: Don't trust the environment your code runs in
 
-Remember that you can't know how a customer sets up permissions for users. Although, a user might have access to the entry point of a function they might not have access to all tables referenced. Consider adding the `InherentPermissions` attribute to private functions not raising events. Write defensive code that checks for permissions and be very careful when accessing data through `RecordRef` – particularly in an event subscriber, as you can't know, which table is being passed as argument.
+Remember that you can't know how a customer sets up permissions for users. Although, a user might have access to the entry point of a function they might not have access to all tables referenced. Consider adding the `InherentPermissions` attribute to private functions not raising events. Write defensive code that checks for permissions and be careful when accessing data through `RecordRef` – particularly in an event subscriber, as you can't know, which table is being passed as argument.
 
 ### Principle: Offer graceful degradations
 
-If your code is using an external component, you might want to design for situations where that component is temporarily unavailable. If this is the case, can you make your code being still functional but just not offer the full experience for the users? 
+If your code is using an external component, you might want to design for situations where that component is temporarily unavailable. If so, can you make your code still functional but not offer the full experience for the users?
 
 Here are some examples of how you use this principle in practice:
 
@@ -110,23 +110,22 @@ Here are some examples of how you use this principle in practice:
 
 ### Principle: Hide your internal data structures
 
-Concealing internal data structures enhances your program’s modularity. For example, if you want to change a collection representation from arrays to lists in your code, a well-designed and information-concealed interface would not require changes in the calling program. But if this information hiding is neglected, changing the representation might break the functioning programs.
+Concealing internal data structures enhances your program’s modularity. For example, if you want to change a collection representation from arrays to lists in your code, a well-designed and information-concealed interface wouldn't require changes in the calling program. But if this information hiding is neglected, changing the representation might break the functioning programs.
 
 Take extra care protecting elements in your code that need to stay consistent across calls. For instance, a shared variable or data in a setup table. If users of your code can access these directly, they could unintentionally or intentionally alter the data, leading to function failures. 
 
 
 ### Principle: Assume the improbable
 
-When doing fault modeling, you might discover failure modes that can occur but with very low probability. When your code runs at scale (in many customer installations or sometimes in high concurrency), over time, some of these improbable failures will very likely occur. Reason about how your code will react to those and implement error handling accordingly. 
+When doing fault modeling, you might discover failure modes that can occur but with low probability. When your code runs at scale (in many customer installations or sometimes in high concurrency), over time, some of these improbable failures will likely occur. Reason about how your code reacts to those and implement error handling accordingly. 
 
 Here are some examples of how you use this principle in practice:
 
-- If you don't handle the error, consider at least to log this to telemetry using Telemetry.LogError or a raw Session.LogMessage call. That way, you can always query for impact over time and across customer installations and maybe revisit the choice of error handling in case the error happens more frequently than what you initially expected.
-
-
+- If you don't handle the error, consider at least to log this to telemetry using Telemetry.LogError or a raw Session.LogMessage call. That way, you can always query for affect over time and across customer installations and maybe revisit the choice of error handling in case the error happens more frequently than what you initially expected.
 
 ## See also
-[Actionable errors](devenv-actionable-errors.md)    
+
+[Actionable errors](devenv-actionable-errors.md)   
 [Collecting errors](devenv-error-collection.md)  
 [Dialog.Error(ErrorInfo) Method](methods-auto/dialog/dialog-error-errorinfo-method.md)  
 [User experience guidelines for errors](devenv-error-handling-guidelines.md)   

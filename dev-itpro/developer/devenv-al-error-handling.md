@@ -19,7 +19,7 @@ The AL language has many error handling features, which can help you deal with u
 
 The following articles discuss the different aspects of error handling in AL:
 
-- [Failure modelling and robust coding practices](devenv-robust-coding-practices.md)  
+- [Failure modeling and robust coding practices](devenv-robust-coding-practices.md)  
 - [Understanding the error dialog](devenv-error-dialog.md)   
 - [User experience guidelines for errors](devenv-error-handling-guidelines.md)  
 - [Actionable errors](devenv-actionable-errors.md) 
@@ -96,7 +96,7 @@ For more information, see [Telemetry.LogError](../administration/telemetry-featu
 
 ## See also
 
-[Failure modelling and robust coding practices](devenv-robust-coding-practices.md)  
+[Failure modeling and robust coding practices](devenv-robust-coding-practices.md)  
 [Understanding the error dialog](devenv-error-dialog.md)   
 [User experience guidelines for errors](devenv-error-handling-guidelines.md)  
 [Actionable errors](devenv-actionable-errors.md)   
