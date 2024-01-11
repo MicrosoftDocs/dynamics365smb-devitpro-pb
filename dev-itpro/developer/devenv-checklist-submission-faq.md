@@ -141,7 +141,7 @@ For questions like what is qualified as a hotfix submission or what kind of chan
 
 ### What should I do to enable Previews of my AppSource offers?
 
-Preview support is now enabled for all submissions of [!INCLUDE[prod_short](../includes/prod_short.md)] offers. It uses the preview key specified on your offer in Partner Center under `Availability > Preview Audience > Hide Key`. Partner Center automatically generates a key when creating a new offer, but you can override it.
+Preview support is now enabled for all submissions of [!INCLUDE[prod_short](../includes/prod_short.md)] offers. It uses the hide key specified on your offer in Partner Center under `Availability > Preview Audience > Hide Key`. Partner Center automatically generates a key when creating a new offer, but you can override it with any string using only lowercase letters and/or numbers.
 
 ### On which environments can I install preview versions?
 
@@ -151,7 +151,7 @@ Preview versions can be installed on Sandbox environments running on [!INCLUDE[p
 
 Selected customers can install the preview version of the extensions in your submission after the "Preview creation" step of the submission flow in Partner Center. In order to trigger the install, customers must receive and use the URL `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` where `[TenantID]` is the Microsoft Entra ID of their environment, `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
 
-After the "Preview creation", a preview listing of the offer is available in the AppSource marketplace. However, installing the corresponding preview version of the extension from the preview listing is not supported and the URL above must be used instead.
+After the "Preview creation", a preview listing of the offer is available in the AppSource marketplace. This preview listing can be accessed from Partner Center by clicking "App source preview" at the "Publisher signoff" step of the submission flow. However, installing the corresponding preview version of the extension from the preview listing is not supported and the URL above must be used instead.
 
 ### How can I see if customers are using my preview versions?
 
@@ -159,6 +159,10 @@ If you are using Azure Application Insights for your extension, you can see whic
 
 > [!NOTE]  
 > If you see some extensions installed with `extensionAvailability` set to `Public` even if `extensionPreviewKeyProvided` is set to `True`, this means that the customers used the preview key they received after you selected `Go Live` in Partner Center to make the extension public.
+
+### How do I go live with my preview version?
+
+You can make your preview version publicly available in the AppSource marketplace by clicking "Go Live" at the "Publisher signoff" step of the submission flow in Partner Center.
 
 ### Is the preview key per submission or per offer?
 
