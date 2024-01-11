@@ -47,7 +47,7 @@ The **Yes** method just retrieves the *Yes* system action, but does not execute 
 
 The following example uses a handler method to confirm the `"Create Order From Sales"` modal test page when invoked in code.
 
-```
+```al
 [ModalPageHandler]
 procedure CreateOrderFromSalesModalPageHandler(var CreateOrderFromSales: TestPage "Create Order From Sales")
 begin

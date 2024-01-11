@@ -47,7 +47,7 @@ By default, the fields that display on a card in Teams are based on the `Brick` 
 
 Use the `Brick` field group to identify a subset of table fields that best summarize a record. Typically, you include fields that allow users to quickly identify the record and give insight about the record at a glance. The following code is snippet of `Brick` field group on a table:
 
-```
+```al
 fieldgroups
 {
     fieldgroup(Brick; field[, field][, field])
@@ -64,7 +64,7 @@ This code example adds a simple table and card page. The `Brick` field group spe
 
 ![Vendor card before OnBeforeGetPageSummary event.](media/teams-card-simple-example.png)
 
-```
+```al
 Table 50100 MyTable
 {
 
@@ -172,9 +172,9 @@ The OnBeforeGetPageSummary event gives you the most control over the fields and 
 
 The OnBeforeGetPageSummary event subscription has the following syntax:
 
-```
+```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnBeforeGetPageSummary', '', false, false)]
-local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray; var Handled: Boolean);
+local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray; var Handled: Boolean)
 ```
 
 #### Parameters
@@ -200,7 +200,7 @@ The following code example uses the OnBeforeGetPageSummary event to change the f
 |------|-----|
 |![Vendor card in Teams before OnBeforeGetPageSummary event.](media/teams-card-vendor-before-1.png)|![Vendor card in Teams after OnBeforeGetPageSummary event](media/teams-card-vendor-after-1.png)|
 
-```
+```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnBeforeGetPageSummary', '', false, false)]
 local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; FieldsJsonArray: JsonArray; var Handled: Boolean)
 var
@@ -237,9 +237,9 @@ The OnAfterGetSummaryFields event lets you add or remove from the set of fields 
 
 #### Syntax
 
-```
+```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetSummaryFields', '', false, false)]
-local procedure OnAfterGetSummaryFields(PageId: Integer; RecId: RecordId; var FieldList: List of [Integer]);
+local procedure OnAfterGetSummaryFields(PageId: Integer; RecId: RecordId; var FieldList: List of [Integer])
 ```
 
 #### Parameters
@@ -270,7 +270,7 @@ The following code example uses the OnAfterGetSummaryFields event to change the 
 |------|-----|
 |![Vendor card before OnAfterGetSummaryFields event.](media/teams-card-vendor-before-1.png)|![Vendor card after OnAfterGetSummaryFields event](media/teams-card-vendor-after-2.png)|
 
-```
+```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetSummaryFields', '', false, false)]
 local procedure OnAfterGetSummaryFields(PageId: Integer; RecId: RecordId; var FieldList: List of [Integer])
 var
@@ -299,9 +299,9 @@ This event allows you to modify, add, or remove fields included in the card thro
 
 #### Syntax
 
-```
+```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetPageSummary', '', false, false)]
-local procedure OnAfterGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray);
+local procedure OnAfterGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray)
 ```
 
 #### Parameters
@@ -326,7 +326,7 @@ The following code example uses the OnAfterGetPageSummary event to change the fi
 |------|-----|
 |![Vendor card before OnAfterGetPageSummary event.](media/teams-card-vendor-before-1.png)|![Vendor card after OnAfterGetPageSummary event](media/teams-card-vendor-after-3.png)|
 
-```
+```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetPageSummary', '', false, false)]
 local procedure OnAfterGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray)
 var

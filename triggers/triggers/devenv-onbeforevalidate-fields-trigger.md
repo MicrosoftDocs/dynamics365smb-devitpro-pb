@@ -42,7 +42,6 @@ tableextension 50111 "CustomerExt" extends Customer
         }
     }
 }
-
 ```
 
 ## See Also  

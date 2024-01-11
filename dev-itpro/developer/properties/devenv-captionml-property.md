@@ -3,7 +3,7 @@ title: "CaptionML Property"
 description: "Sets the string string that displays with the object, control, or other element in user interface for the current language."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/04/2022
+ms.date: 10/25/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,6 +40,7 @@ Sets the string string that displays with the object, control, or other element 
 -   Report Column
 -   Enum Value
 -   Page Custom Action
+-   Page System Action
 -   Page View
 -   Report Layout
 -   Profile

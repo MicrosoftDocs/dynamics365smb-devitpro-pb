@@ -200,9 +200,9 @@ If you decide to code application areas as an extension, there are some aspects 
 
 ## See Also
 
-[Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module)  
-[Module Base Application](/dynamics365/business-central/application/reference/base%20application/)  
-[ApplicationArea Property](properties/devenv-applicationarea-property.md)  
-[ApplicationArea Method](./methods-auto/library.md)  
-[AccessByPermission Property](properties/devenv-accessbypermission-property.md)  
+[Module System Application](/dynamics365/business-central/application/system-application/module/system-application/)    
+[Module Base Application](/dynamics365/business-central/application/base-application/module/base-application)    
+[ApplicationArea Property](properties/devenv-applicationarea-property.md)    
+[ApplicationArea Method](./methods-auto/library.md)    
+[AccessByPermission Property](properties/devenv-accessbypermission-property.md)    
 [Properties](properties/devenv-properties.md)

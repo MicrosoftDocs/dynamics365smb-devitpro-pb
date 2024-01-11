@@ -66,7 +66,6 @@ codeunit 50101 MyAccountFilterTokenSimple
     end;
 
 }
-
 ```
 To try it out in the client, open the `Charts of Accounts` page, filter on **No.** field, and type in a substring that starts the same way with the chosen token word, like **%MYTO**.
 

@@ -3,7 +3,7 @@ title: "Data Types and Methods in AL"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 10/25/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -135,6 +135,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[ObjectType](objecttype/objecttype-option.md)|The different types of objects.|
 |[PageBackgroundTaskErrorLevel](pagebackgroundtaskerrorlevel/pagebackgroundtaskerrorlevel-option.md)|Specifies how an error in the page background task appears in the client.|
 |[PermissionObjectType](permissionobjecttype/permissionobjecttype-option.md)|The different types of objects that can have different permissions assigned.|
+|[PromptMode](promptmode/promptmode-option.md)|Specifies the current mode of a PromptDialog page.|
 |[ReportFormat](reportformat/reportformat-option.md)|Specifies the format of the report.|
 |[ReportLayoutType](reportlayouttype/reportlayouttype-option.md)|Represents the type of a report layout.|
 |[SecurityFilter](securityfilter/securityfilter-option.md)|Specifies how security filters are applied to the record.|

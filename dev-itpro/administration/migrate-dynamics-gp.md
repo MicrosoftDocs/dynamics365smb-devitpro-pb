@@ -149,7 +149,7 @@ Here is an example of what you might see when you run a diagnostic run:
 
 Starting with 2020 release wave 2, organizations in Australia can migrate from Dynamics GP to an Australian version of [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
-The process to run the migration in an Australian [!INCLUDE [prod_short](../includes/prod_short.md)] online is the same as running a migration in the other supported countries. However, there is some setup that needs to be done before the migration can be run. To make the changes to the setup, you must run through the cloud migration wizard. When the wizard setup is complete, and companies are fully set up, you must log into the companies that you are planning to migrate and make the following changes
+The process to run the migration in an Australian [!INCLUDE [prod_short](../includes/prod_short.md)] online is the same as running a migration in the other supported countries/regions. However, there is some setup that needs to be done before the migration can be run. To make the changes to the setup, you must run through the cloud migration wizard. When the wizard setup is complete, and companies are fully set up, you must log into the companies that you are planning to migrate and make the following changes
 
 * Transactions
 

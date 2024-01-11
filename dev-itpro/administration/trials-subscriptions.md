@@ -71,7 +71,7 @@ If an organization decides to stop using [!INCLUDE [prod_short](../includes/prod
 > [!WARNING]
 > The subscription is deleted immediately and can not be reactivated.
 
-For more information, see [Suspend or cancel a subscription](/partner-center/create-a-new-subscription#suspend-or-cancel-a-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center content.  
+For partners cancelling a subscription on their customer's behalf, see [Suspend or cancel a subscription](/partner-center/create-a-new-subscription#suspend-or-cancel-a-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center content.
 
 ## <a name="expire"></a>Data and access when a trial or subscription ends
 

@@ -64,11 +64,9 @@ Here is a JSON representation of the customerPaymentJournal resource.
     "balancingAccountNumber": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## See also
 
-
-## See Also
 [GET customerPaymentJournal](../api/dynamics_customerPaymentJournal_Get.md)  
 [DELETE customerPaymentJournal](../api/dynamics_customerPaymentJournal_Delete.md)  
 [POST customerPaymentJournal](../api/dynamics_customerPaymentJournal_Create.md)  

@@ -1,8 +1,8 @@
 ---
-title: "Monitoring Business Central Server Using Performance Counters"
+title: "Monitoring Business Central server using performance counters"
 description: Learn how to use performance counters to monitor Business Central Server instances
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/28/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: b6ca81a4-62f2-4806-b2d8-3c0a0e969a46
 caps.latest.revision: 6
 ---
-# Monitoring Business Central Server Using Performance Counters
+# Monitoring Business Central server using performance counters
 Performance counters provide information about how well [!INCLUDE[server](../developer/includes/server.md)] is operating. By using monitoring tools such as Windows Performance Monitor <!-- remove temporarily until we determine support for this and System Center Operations Manager,--> you can use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] performance counters to collect data on [!INCLUDE[server](../developer/includes/server.md)] instances, and then use the data to identify conditions that are affecting performance and make adjustments.  
 
  [!INCLUDE[prod_short](../developer/includes/prod_short.md)] also provides a Data Collector Set template that you can use to easily create Data Collector Sets that contain all the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] performance counters.  
 
-## In This Section  
+## In this section  
 
 -   [Business Central Performance Counters](performance-counters.md)  
 

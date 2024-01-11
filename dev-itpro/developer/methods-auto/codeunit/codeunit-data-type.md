@@ -3,7 +3,7 @@ title: "Codeunit Data Type"
 description: "Is a container for AL code that you can use from other application objects."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Is a container for AL code that you can use from other application objects.
 
 
+## Static methods
 The following methods are available on the Codeunit data type.
 
 
@@ -26,6 +27,7 @@ The following methods are available on the Codeunit data type.
 |-----------|-----------|
 |[Run(Integer [, var Record])](codeunit-run-method.md)|Loads and runs the unit of AL code you specify. To use this method, you can specify a table associated with the codeunit when you defined the codeunit properties. This allows you to pass a variable with the method. The transaction that the codeunit contains is always committed due to the Boolean return value.|
 
+## Instance methods
 The following methods are available on instances of the Codeunit data type.
 
 |Method name|Description|

@@ -85,7 +85,7 @@ dotnet
 You can now use the `Microsoft.Dynamics.Nav.Client.PingPong` from AL, just as you use a native control add-in.
 
 
-```
+```al
 page 50100 MyPage
 {
     layout

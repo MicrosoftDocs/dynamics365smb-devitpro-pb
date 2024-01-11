@@ -3,7 +3,7 @@ title: "PageType Property"
 description: "Sets the type of page to create."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
+ms.date: 10/25/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,6 +41,7 @@ Sets the type of page to create.
 |**ReportProcessingOnly**|runtime version 1.0|Only report processing.|
 |**XmlPort**|runtime version 1.0|XmlPort page.|
 |**HeadlinePart**|runtime version 1.0|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
+|**PromptDialog**|runtime version 12.1|Dialog that prompts the user for input and shows the output of a copilot interaction.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -56,6 +57,8 @@ PageType = List;
 You typically set this property when you are create new pages, but you can change it at any time. The value for the **PageType** property specifies the Page layout.
 
 The exception is the value *API*. Pages of this type are used to generate web service endpoints and cannot be shown in the user interface. For an overview of supported page types, see [Pages Overview](../devenv-pages-overview.md).
+
+When the **PageType** property is set to **PromptDialog**, you must also set the **PromptMode** property to specify the current mode of the page. For more information, see [PromptMode Property](devenv-promptmode-property.md). For more information about the **PromptDialog** page type, see [PromptDialog page type](../devenv-page-type-promptdialog.md).
 
 ## See Also  
 

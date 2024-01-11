@@ -3,7 +3,7 @@ title: "Query Data Type"
 description: "Enables you to retrieve data from multiple tables and combine the data in single dataset."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Enables you to retrieve data from multiple tables and combine the data in single dataset.
 
 
+## Static methods
 The following methods are available on the Query data type.
 
 
@@ -29,6 +30,7 @@ The following methods are available on the Query data type.
 |[SaveAsXml(Integer, Text)](query-saveasxml-integer-string-method.md)|Saves the resulting data set of a query as an .xml file.|
 |[SaveAsXml(Integer, OutStream)](query-saveasxml-integer-outstream-method.md)|Saves the resulting data set of a query as an .xml file.|
 
+## Instance methods
 The following methods are available on instances of the Query data type.
 
 |Method name|Description|

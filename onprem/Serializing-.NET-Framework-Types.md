@@ -33,8 +33,7 @@ In Microsoft .NET Framework, *serialization* is the process of converting an obj
 public class MyObject  
 {  
     code   
-}  
-
+}
 ```  
 
  This method requires that you have access to the source code of the .NET Framework assembly.  

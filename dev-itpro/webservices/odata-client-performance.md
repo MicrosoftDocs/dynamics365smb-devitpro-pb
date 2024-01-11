@@ -18,6 +18,9 @@ ms.date: 07/03/2023
 
 By specifying the HTTP header `Data-Access-Intent: ReadOnly` for GET requests, you can instruct Business Central to run requests against a replica of the database, which can lead to improved performance. To learn more, see [Specifying Data Access Intent for GET requests](../developer/devenv-connect-apps-tips.md#DataAccessIntent).
 
+[!INCLUDE[database_access_intent_note](../includes/include-database-access-intent-note.md)]
+
+
 ## Using OData transaction `$batch`
 
 Use OData transaction `$batch` requests where relevant. They can reduce the number of requests the client needs to do when errors occur. 

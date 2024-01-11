@@ -91,7 +91,7 @@ codeunit 70000001 MyExtensionUpgrade
 > Typing the shortcut `ttrigger` in Visual Studio Code will create the basic structure for a trigger.
 
 ## Build the extension package
-Press Ctrl+Shift+B to compile and build the extension complete with the application objects and upgrade codeunit.
+Select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to compile and build the extension complete with the application objects and upgrade codeunit.
 
 ## Run the upgrade
 The final task of the conversion is to publish the V2 extension, and run the data upgrade. The following steps use an example that upgrades a V1 extension that is called 'ProsewareStuff' and has the version '1.5.0.0.'. The V1 extension is published, installed, and populated with data. The V2 extension has the same name (and ID), but it has the version '1.5.1.0'. The [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance is called 'DynamicsNAV', and there is only one tenant.
@@ -100,7 +100,7 @@ The steps use the [!INCLUDE[nav_admin_md](includes/nav_admin_md.md)].
 
 1. Uninstall the V1 extension.
 
-    ```
+    ```powershell
     Uninstall-NAVApp -ServerInstance NAV -Name ProsewareStuff -Version 1.5.0.0
     ```
     This removes the tables from the SQL Server database and archives extension data.
@@ -109,27 +109,27 @@ The steps use the [!INCLUDE[nav_admin_md](includes/nav_admin_md.md)].
     > The V1 extension must be uninstalled before upgrading it to a V2 extension. 
 
 2. Publish the V2 extension. This example assumes the extension is not signed.
-    ```
+    ```powershell
     Publish-NAVApp -ServerInstance DynamicsNAV -Path .\ProswareStuff_1.5.1.0.app -SkipVerification
     ```
     This validates the extension syntax against server instance, and stages it for syncing.
 
 3. Synchronize the V2 extension with the database.
 
-    ```
+    ```powershell
     Sync-NAVApp -ServerInstance NAV -Name ProswareStuff -Version 1.5.1.0
     ```
     This adds tables from V2 extension to SQL database.
 
 4. Run the upgrade process to handle archived data from the V1 extension. 
-    ```
+    ```powershell
     Start-NAVAppDataUpgrade -ServerInstance NAV -Name ProswareStuff -Version 1.5.1.0
     ```
     This runs the upgrade logic defined by the upgrade codeunit in the extension, and installs the new V2 extension.
 
 5. (optional) Unpublish the V1 extension.
 
-    ```
+    ```powershell
     Unpublish-NAVApp -ServerInstance NAV -Name ProswareStuff -Version 1.5.0.0
     ```
     This removes the unused extension package from server.

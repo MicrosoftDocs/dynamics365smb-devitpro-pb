@@ -3,7 +3,7 @@ title: "HttpClient Data Type"
 description: "Provides a data type for sending HTTP requests and receiving HTTP responses from a resource identified by a URI."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/06/2023
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Provides a data type for sending HTTP requests and receiving HTTP responses from
 
 
 
+## Instance methods
 The following methods are available on instances of the HttpClient data type.
 
 |Method name|Description|

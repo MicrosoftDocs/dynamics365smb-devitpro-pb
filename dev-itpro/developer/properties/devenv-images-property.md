@@ -3,7 +3,7 @@ title: "Images Property"
 description: "Specifies the list of images to include in the control add-in."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 11/15/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ You can specify multiple files within the same path string by using a combinatio
 
 The Images property specifies image resources that are referenced by the control add-in scripts. Any specified images must be of a supported web format and extension, such as .PNG or .GIF. 
 
-Images can be either external resources referenced using a URL or can be embedded within the extension. Embedded images must be added to the extension project folder in Visual Studio Code and referenced using a relative path. At runtime, the path to an embedded can be obtained using the [GETIMAGERESOURCE](../methods/devenv-getimageresource-method.md) method. Unlike scripts and stylesheets, images are loaded on demand when they're first used in code. Since images are stored in the application after the extension is deployed, it's recommended to keep the number of image files and combined image size to a minimum. 
+Images can be either external resources referenced using a URL or can be embedded within the extension. Embedded images must be added to the extension project folder in Visual Studio Code and referenced using a relative path. At runtime, the path to an embedded can be obtained using the [GetImageResource method](../methods/devenv-getimageresource-method.md) method. Unlike scripts and stylesheets, images are loaded on demand when they're first used in code. Since images are stored in the application after the extension is deployed, it's recommended to keep the number of image files and combined image size to a minimum. 
 
 ## Example
 

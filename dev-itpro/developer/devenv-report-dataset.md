@@ -1,9 +1,9 @@
 ---
-title: "Report Dataset"
-description: "The dataset determines the data extracted to print or display the information from the database."
+title: Report dataset
+description: The dataset determines the data extracted to print or display the information from the database.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Defining a Report Dataset
+# Defining a report dataset
 
 You use a report object in the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] to define the data model, or dataset, of a report. The dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. For more information, see [Report Object](devenv-report-object.md).
 
@@ -31,6 +31,13 @@ Typically, data items and columns correspond to fields in a table. When the repo
 
 You can also extend a dataset from an existing report, to add more columns for example. For more information, see [Report Extension Object](devenv-report-ext-object.md).
 
+## Formatting field values in report datasets
+
+It's often useful to format data in the report dataset to reduce the complexity of the report layout. For example, if a decimal field in a table has precision of five digits, the same level of precision might not be needed in the report. Or maybe you want to format dates or currencies in a different way in the report as they appear on the page in [!INCLUDE[prod_short](./includes/prod_short.md)].
+
+For more information, see [Formatting field values in report datasets](devenv-format-report-field-data.md).
+
+
 ## Using a query in a dataset definition
 
 Instead of building the report dataset directly from tables, you can also use a query object. To achieve this, you must
@@ -39,15 +46,19 @@ Instead of building the report dataset directly from tables, you can also use a 
 - Use an Integer in the data item definition
 - Add OnPreDataItem and OnAfterGetRecord triggers 
 
-See an example of how to do this below.
+See an example of how to do this in the next section.
 
 ## Snippet support
 
-Typing the shortcut `treport` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code. 
+Typing the shortcut `treport` creates the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code. 
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
-## Example: Using tables to define a report dataset
+## Testing the dataset
+[!INCLUDE [send-report-excel](includes/send-report-excel.md)]
+
+
+## Example: Joining tables to define a report dataset
 
 The following example adds the `Customer` table as the data item and the `CustomerName` and `CompanyName` as fields of a column to the report. It then adds a secondary dataitem with data from the `Cust. Ledger Entry` table and joins the two.
 
@@ -108,7 +119,62 @@ dataitem(Customer; Customer)
 }
 ```
 
-[!INCLUDE [send-report-excel](includes/send-report-excel.md)]
+## Example: Define a report dataset with multiple top-level dataitems 
+The following example adds the `Cust. Ledger Entry` table as a top-level data item. It then add dimension data as a second top-level data item.
+
+```AL
+// Example of how to have two top-level dataitems in a report dataset.
+dataset
+{
+    dataitem(CustLedger; "Cust. Ledger Entry")
+    {
+        column(EntryNo_CustLedgerEntry; "Entry No.")
+        {
+            IncludeCaption = true;
+        }
+        column(CustomerNo_CustLedgerEntry; "Customer No.")
+        {
+            IncludeCaption = true;
+        }
+        column(PostingDate_CustLedgerEntry; "Posting Date")
+        {
+            IncludeCaption = true;
+        }
+        column(DocumentType_CustLedgerEntry; "Document Type")
+        {
+            IncludeCaption = true;
+        }
+        column(DocumentNo_CustLedgerEntry; "Document No.")
+        {
+            IncludeCaption = true;
+        }
+        column(GlobalDim1Code_CustLedgerEntry; "Global Dimension 1 Code")
+        {
+            IncludeCaption = true;
+        }
+        column(GlobalDim2Code_CustLedgerEntry; "Global Dimension 2 Code")
+        {
+            IncludeCaption = true;
+        }
+    }
+    dataitem(Dimensions; "Dimension Set Entry")
+    {
+        column(EntryNo_CustLedgerEntry; "Dimension Code")
+        {
+            IncludeCaption = true;
+        }
+        column(EntryNo_CustLedgerEntry; "Dimension Value Code")
+        {
+            IncludeCaption = true;
+        }
+        column(EntryNo_CustLedgerEntry; "Dimension Value ID")
+        {
+            IncludeCaption = true;
+        }
+    }
+}
+```
+
 
 
 ## Example: Using a query to define a report dataset

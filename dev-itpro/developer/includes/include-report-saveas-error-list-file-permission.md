@@ -1,0 +1,1 @@
+If the [!INCLUDE[prod_short](../../includes/prod_short.md)] server process does not have permission to write to the file specified in *FileName*.

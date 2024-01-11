@@ -3,7 +3,7 @@ title: "EventSubscriberInstance Property"
 description: "Specifies how event subscriber functions in a codeunit are bound to the codeunit instance and the events that they subscribe to."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
+ms.date: 11/24/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,7 @@ EventSubscriberInstance = StaticAutomatic|Manual;
 
 ## Remarks
 
-The bindings are always considered static on the event publisher side. For example, if you bind instance *A* of a given subscriber codeunit, all instances of publisher application objects will start calling the event subscribers. You can't design it so that a specific instance of publisher table *X* calls only a specific instance of subscriber codeunit *A*. You can, however, achieve the same by using/storing some global state on the subscriber.  
+**StaticAutomatic** is the default value for this property. The bindings are always considered static on the event publisher side. For example, if you bind instance *A* of a given subscriber codeunit, all instances of publisher application objects will start calling the event subscribers. You can't design it so that a specific instance of publisher table *X* calls only a specific instance of subscriber codeunit *A*. You can, however, achieve the same by using/storing some global state on the subscriber.  
 
 ### StaticAutomatic binding
 
@@ -46,19 +46,21 @@ If the subscriber codeunit is defined as single instance (as specified by the [S
 
 If the codeunit isn't declared as single instance, each event subscriber will be run in its own codeunit instance. When an event gets raised, a codeunit instance is created for each event subscriber method that subscribes to the event. The individual codeunit instances are immediately disposed after its event subscriber is run.
 
-**Note:**  With this setting, you can't call the [BINDSUBSCRIPTION Method](../methods-auto/session/session-bindsubscription-method.md) or [UNBINDSUBSCRIPTION Method](../methods-auto/session/session-unbindsubscription-method.md) for any events in this codeunit; otherwise, an error occurs.
+> [!NOTE]  
+> With this setting, you can't call the [BindSubscription method](../methods-auto/session/session-bindsubscription-method.md) or [UnBindSubscription method](../methods-auto/session/session-unbindsubscription-method.md) for any events in this codeunit; otherwise, an error occurs.
 
 ### Manual binding
 
-This setting enables you to control which event subscriber instances are called when an event is raised. With this setting, you can essentially activate event subscribers on demand. If the **BINDSUBSCRIPTION** method isn't called, then nothing will happen when the event is raised.
+This setting enables you to control which event subscriber instances are called when an event is raised. With this setting, you can essentially activate event subscribers on demand. If the **BindSubscription** method isn't called, then nothing will happen when the event is raised.
 
- The binding of event subscribers to events is manual. To establish the binding, you must call the **BINDSUBSCRIPTION** method to pass an instance of an event subscriber codeunit. Only then will the event subscribers be called.
+ The binding of event subscribers to events is manual. To establish the binding, you must call the **BindSubscription** method to pass an instance of an event subscriber codeunit. Only then will the event subscribers be called.
 
-You stop the event subscriber calls by either calling the **UNBINDSUBSCRIPTION** method or by letting the previously bound instance go out of scope. For example, you declare a local variable, call **BINDSUBSCRIPTION**, and then eventually exit the method that declares the local variable. All bindings on the instance are automatically unbound.
+You stop the event subscriber calls by either calling the **UnBindSubscription** method or by letting the previously bound instance go out of scope. For example, you declare a local variable, call **BindSubscription**, and then eventually exit the method that declares the local variable. All bindings on the instance are automatically unbound.
 
-By controlling the instance of the subscriber codeunit, you control the lifespan. If you store the instance on a single instance codeunit global variable, you're effectively creating a binding that lasts the whole session. However, it's still only bound for the current session. Other sessions must also call **BINDSUBSCRIPTION** to establish the direct binding to the instance of the subscriber codeunit. 
+By controlling the instance of the subscriber codeunit, you control the lifespan. If you store the instance on a single instance codeunit global variable, you're effectively creating a binding that lasts the whole session. However, it's still only bound for the current session. Other sessions must also call **BindSubscription** to establish the direct binding to the instance of the subscriber codeunit. 
 
-**Important**: When you develop on a production solution, you can experience a runtime error if the event subscriber codeunit has been updated by a development operation. For example, you recompiled the codeunit. This situation causes the event subscription codeunit's metadata to become stale and prevents the event subscriber from being called. A message similar to the following message appears in the event log:
+> [!IMPORTANT]  
+> When you develop on a production solution, you can experience a runtime error if the event subscriber codeunit has been updated by a development operation. For example, you recompiled the codeunit. This situation causes the event subscription codeunit's metadata to become stale and prevents the event subscriber from being called. A message similar to the following message appears in the event log:
 
 `A manually bound event subscriber is stale and will no longer be called. This can be caused by the subscriber object being updated by an operation in the development environment.` 
 
@@ -124,7 +126,7 @@ pageextension 50100 MyCustomerExt extends "Customer Card"
 
 On the event publisher side, the bindings are always considered static. For example, if you bind instance *A* of a given subscriber codeunit, all instances of publisher application objects will start calling the event subscribers. You can't design it so that a specific instance of publisher table *X* calls only a specific instance of subscriber codeunit *A*. However, you can achieve the same by using/storing some global state on the subscriber.  
 
-## See Also
+## See also
 
 [BindSubscription Method](../methods-auto/session/session-bindsubscription-method.md)  
 [UnBindSubscription Method](../methods-auto/session/session-unbindsubscription-method.md)  

@@ -75,7 +75,6 @@ codeunit 50112 ChangeCompany
         MyRecord.Delete;  
     end;
 }
-
 ```  
 
 ## See Also

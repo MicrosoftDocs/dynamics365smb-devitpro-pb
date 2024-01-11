@@ -260,8 +260,8 @@ OBJECT Codeunit 827 DO Payment Card Validation
     END.
   }
 }
-
 ```
+
 ## Codeunit 829 DO Payment Trans. Log Mgt.
 ```
 OBJECT Codeunit 829 DO Payment Trans. Log Mgt.

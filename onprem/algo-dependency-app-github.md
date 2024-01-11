@@ -27,7 +27,6 @@ The `appDependencyProbingPaths` key in the settings expects a JSON array with th
             "projects": "*"
         }
     ]
-
 ```
 
 The following table describes the settings:

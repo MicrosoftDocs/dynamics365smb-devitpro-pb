@@ -53,7 +53,6 @@ Content-Type:application/json
     "roleId": "SECURITY", 
     "company" : "CRONUS"
 }
-
 ```
 
 **Response**

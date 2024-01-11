@@ -3,7 +3,7 @@ title: "XmlCData Data Type"
 description: "Represents a CData section."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Represents a CData section.
 
 
+## Static methods
 The following methods are available on the XmlCData data type.
 
 
@@ -26,6 +27,7 @@ The following methods are available on the XmlCData data type.
 |-----------|-----------|
 |[Create(Text)](xmlcdata-create-method.md)|Creates an XmlCData node.|
 
+## Instance methods
 The following methods are available on instances of the XmlCData data type.
 
 |Method name|Description|

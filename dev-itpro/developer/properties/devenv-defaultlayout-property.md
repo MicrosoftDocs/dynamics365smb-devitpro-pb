@@ -1,9 +1,9 @@
 ---
 title: "DefaultLayout Property"
-description: "Specifies whether the report uses the built-in Excel, Word, or RDL report layout by default."
+description: "Specifies whether the report uses the built-in RDL or Word report layout by default."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/11/2023
+ms.date: 10/25/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

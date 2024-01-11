@@ -3,7 +3,7 @@ title: "System.Evaluate(var Any, Text [, Integer]) Method"
 description: "Evaluates a string representation of a value into its typical representation."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
+ms.date: 11/24/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -87,7 +87,7 @@ The message window displays the following:
   
 **VarDuration = 2 days 4 hours 3 seconds 717 milliseconds. The return code is: Yes.**  
   
-This example shows that although Value \('010196'\) can be interpreted as both an integer and a date expression, it cannot be interpreted as a Boolean expression. This causes an error, shown in the return code Ok3 \(=False\).  
+This example shows that although Value \('19960101'\) can be interpreted as both an integer and a date expression, it cannot be interpreted as a Boolean expression. This causes an error, shown in the return code Ok3 \(=False\).  
   
 This example also shows that when you evaluate a string as a duration data type, you can use certain words in the string to describe the duration. The following words or abbreviations are supported:  
   

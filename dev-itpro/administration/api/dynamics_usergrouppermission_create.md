@@ -53,7 +53,6 @@ Content-Type:application/json
     "roleId": "D365 COMPANY HUB", 
     "displayName": "D365 COMPANY HUB"
 }
-
 ```
 
 **Response**

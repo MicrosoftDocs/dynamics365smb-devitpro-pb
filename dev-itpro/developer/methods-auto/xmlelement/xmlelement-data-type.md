@@ -3,7 +3,7 @@ title: "XmlElement Data Type"
 description: "Represents an XML element."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Represents an XML element.
 
 
+## Static methods
 The following methods are available on the XmlElement data type.
 
 
@@ -29,6 +30,7 @@ The following methods are available on the XmlElement data type.
 |[Create(Text, Text, Any,...)](xmlelement-create-string-string-joker-method.md)|Creates an XmlElement node.|
 |[Create(Text, Any,...)](xmlelement-create-string-joker-method.md)|Creates an XmlElement node.|
 
+## Instance methods
 The following methods are available on instances of the XmlElement data type.
 
 |Method name|Description|

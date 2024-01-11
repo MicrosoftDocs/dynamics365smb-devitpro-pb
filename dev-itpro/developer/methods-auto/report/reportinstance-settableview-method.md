@@ -47,7 +47,7 @@ The record that has a table view that you want to apply to the page or data item
 ## Example  
  This example is based on the Sales Header table and shows how SETTableView is used for a page object. 
  
-```  
+```al
 var
     SalesHeader: Record "Sales Header";
     SomePage: Page "Sales List";

@@ -1,17 +1,17 @@
 ---
-title: "IsUpdated Operation"
+title: "IsUpdated operation"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/22/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 description: Discover Dynamics 365 Business Central's IsUpdated Operation - check object updates, manage concurrency, and prevent record change failures.
 ---
-# IsUpdated Operation
+# IsUpdated operation
 Checks if an object has been updated since the key was obtained. This operation returns **true** if the object has been updated by any user; otherwise, **false**. Concurrency management prevents a record being changed if it has been subsequently updated. This check proactively prevents that failure.  
   
-## Method Signature  
+## Method signature  
  `bool IsUpdated(string key)`  
   
 ## Parameters  
@@ -30,9 +30,9 @@ Checks if an object has been updated since the key was obtained. This operation 
   
 |SOAP fault message|Description|  
 |------------------------|-----------------|  
-|\[*record name*\] \[*field*\] \[*value*\] does not exist.|Indicates that the record has been deleted by another user or process after it has been retrieved for this operation.|  
+|\[*record name*\] \[*field*\] \[*value*\] doesn't exist.|Indicates that the record has been deleted by another user or process after it has been retrieved for this operation.|  
   
-## Usage Example  
+## Usage example  
   
 ```c#  
 using System;  
@@ -65,5 +65,5 @@ namespace ConsoleApplication
 }  
 ```  
   
-## See Also  
+## See also  
  [Basic Page Operations](Basic-Page-Operations.md)

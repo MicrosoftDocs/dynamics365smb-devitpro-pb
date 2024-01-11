@@ -2,7 +2,7 @@
 title: Upgrade an unmodified application
 description: The article explains how to upgrade an application that has no custom code to Business Central 2019 release wave 2.
 ms.custom: na
-ms.date: 02/09/2023
+ms.date: 01/02/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
-# Upgrading an Unmodified Application to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2019 Release Wave 2
+# Upgrading an unmodified application to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2019 Release Wave 2
 
 Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (referred to as version 14) application that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 base application extension. The result will be a fully upgraded Business Central 2019 release wave 2 (referred to as version 15) application and platform.
 
@@ -30,7 +30,7 @@ Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod
 
    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
 
-   For information about how to do the upgrade, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
+   For information about how to do the upgrade, see [Upgrading to Dynamics 365 Business Central on-premises](upgrading-to-business-central-on-premises.md).
 
 2. Disable data encryption.
 
@@ -166,7 +166,7 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     ```powershell
     Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName DatabaseName -KeyValue "<database name>"
     ```
-    In a single tenant deployment, this command will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+    In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 2. Configure the server instance for migrate extensions to the use the new base application and system application extensions. 
 
     ```powershell
@@ -178,7 +178,7 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     ```-->
     This setting serves the following purposes:
     
-    - When you run the data upgrade on a tenant, the server will run the data upgrade for the base and system application extensions. The base and system applications will be automatically installed on the tenant also.
+    - When you run the data upgrade on a tenant, the server runs the data upgrade for the base and system application extensions. The base and system applications will be automatically installed on the tenant also.
     - Lets you republish extensions that haven't been built on version 15. The extensions typically include the third-party extensions that were used in your version 14. When you publish the extensions, the extension manifests are automatically modified with a dependency on the base and system applications.
 2. Disable task Scheduler on the server instance for purposes of upgrade.
 
@@ -540,6 +540,6 @@ For each extension, run the Install-NAVApp cmdlet:
     ```
 -->
 
-## See Also  
+## See also  
 [Upgrading the Data](Upgrading-the-Data.md)   
 [Upgrading to Business Central](upgrading-to-business-central.md)  

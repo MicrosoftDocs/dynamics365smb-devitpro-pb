@@ -49,7 +49,7 @@ The codeunit that contains the event subscribers.
 ## Example  
  The following sample code illustrates a typical use of the BindSubscription method.  
   
-```  
+```al
 Method MyFunction(….)  
 LocalVar  
   SubScriberCodeunit5000;  

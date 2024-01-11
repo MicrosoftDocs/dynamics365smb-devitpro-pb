@@ -3,7 +3,7 @@ title: "Table, Table Fields, and Table Extension Properties"
 description: "This topic lists properties that apply to the [table object](../devenv-table-object.md), table fields, and [table extension object](../devenv-table-ext-object.md)."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/06/2023
+ms.date: 10/25/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,9 +37,9 @@ The following properties all apply to the Table object, only some of these prope
 |[BlankZero Property](devenv-blankzero-property.md)| True| -Table Field <br />  -Page Field <br /> |
 |[CalcFields Property](devenv-calcfields-property.md)| | -Xml Port Table Element <br />  -Report Data Item <br /> |
 |[CalcFormula Property](devenv-calcformula-property.md)| | -Table Field <br /> |
-|[Caption Property](devenv-caption-property.md)| True| -Table <br />  -Table Field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report Column <br />  -Enum Value <br />  -Page Custom Action <br />  -Page View <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
+|[Caption Property](devenv-caption-property.md)| True| -Table <br />  -Table Field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report Column <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page View <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
 |[CaptionClass Property](devenv-captionclass-property.md)| True| -Table Field <br />  -Page Label <br />  -Page Field <br /> |
-|[CaptionML Property](devenv-captionml-property.md)| True| -Table <br />  -Table Field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report Column <br />  -Enum Value <br />  -Page Custom Action <br />  -Page View <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
+|[CaptionML Property](devenv-captionml-property.md)| True| -Table <br />  -Table Field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report Column <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page View <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
 |[CharAllowed Property](devenv-charallowed-property.md)| | -Table Field <br />  -Page Field <br /> |
 |[ClosingDates Property](devenv-closingdates-property.md)| True| -Table Field <br />  -Page Field <br /> |
 |[Clustered Property](devenv-clustered-property.md)| | -Table Key <br /> |
@@ -53,7 +53,7 @@ The following properties all apply to the Table object, only some of these prope
 |[Description Property](devenv-description-property.md)| True| -Codeunit <br />  -Table Field <br />  -Table Key <br />  -Page <br />  -Page Action <br />  -Page Action Area <br />  -Page Action Group <br />  -Page Area <br />  -Page Field <br />  -Page Group <br />  -Page Label <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Query <br />  -Query Column <br />  -Query Data Item <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Table <br />  -Xml Port <br />  -Xml Port Text Element <br />  -Xml Port Field Element <br />  -Xml Port Table Element <br />  -Xml Port Field Attribute <br />  -Xml Port Text Attribute <br />  -Profile <br /> |
 |[DrillDownPageId Property](devenv-drilldownpageid-property.md)| True| -Table <br />  -Page Field <br /> |
 |[Editable Property](devenv-editable-property.md)| | -Table Field <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Field <br />  -Page Group <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Part <br /> |
-|[Enabled Property](devenv-enabled-property.md)| | -Table Field <br />  -Table Key <br />  -Page Label <br />  -Page Field <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Profile <br /> |
+|[Enabled Property](devenv-enabled-property.md)| | -Table Field <br />  -Table Key <br />  -Page Label <br />  -Page Field <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Profile <br /> |
 |[ExtendedDatatype Property](devenv-extendeddatatype-property.md)| | -Table Field <br />  -Page Field <br /> |
 |[Extensible Property](devenv-extensible-property.md)| | -Report <br />  -Enum Type <br />  -Table <br />  -Page <br /> |
 |[ExternalAccess Property](devenv-externalaccess-property.md)| | -Table Field <br /> |

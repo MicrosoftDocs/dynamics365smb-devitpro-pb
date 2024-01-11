@@ -3,7 +3,7 @@ title: "TaskScheduler.SetTaskReady(Guid [, DateTime]) Method"
 description: "Sets a task that runs a codeunit to the ready state."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/15/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,22 +40,35 @@ Sets a task that runs a codeunit to the ready state. The task will not run unles
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- For more information about tasks and **TaskScheduler** data type methods, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
+## Remarks
 
-## Example  
- The following example creates a task, and then uses the SetTaskReady method to set the task to ready.  
+Scheduled tasks are shown in the **Scheduled Tasks** page in the client. 
+
+If no task exists with the task GUID provided to `TaskScheduler.SetTaskReady`, then the method will return false (no runtime error will occur). 
+
+For more information about the task scheduler, see [Using the Task Scheduler](../../devenv-task-scheduler.md). 
+
+## Example
+
+The following example creates a task, which isn't in `IsReady` state, then it does some more work, and finally it uses the `SetTaskReady` method to set the task to ready, but also to start at a later specified time (task ready time + 60 seconds + up to 3 seconds of random time).  
  
 ```al
 var
     TaskID: GUID;
 begin
-    TaskID := TaskScheduler.CreateTASK(CodeUnit::"Job Queue Dispatcher", CodeUnit::"Job Queue Error Handler");  
-    TaskScheduler.SetTaskReady(taskID);  
+    // Third parameter to TaskScheduler.CreateTask controls IsReady at task creation time
+    TaskID := TaskScheduler.CreateTask(CodeUnit::MyCodeUnit, CodeUnit::MyFailureCodeUnit, false);  
+
+    // do something more work needed before starting the task
+
+    // set the task ready and to start after 
+    TaskScheduler.SetTaskReady(TaskID, CurrentDateTime + 60*1000 + Random(3000));  
 end;
 ```  
 
-## See Also
+## See also
+
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
+[Using the Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

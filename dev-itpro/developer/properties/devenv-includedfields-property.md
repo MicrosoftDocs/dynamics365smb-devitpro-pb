@@ -37,6 +37,8 @@ IncludedFields = Field1,Field2;
 
 You can't use this property on primary keys or clustered secondary keys ([Clustered](devenv-clustered-property.md) property is **true**).
 
+Fields that are part of a **IncludedFields** definition are not used when searching for a matching key with the **Record.SetCurrentKey** method. For more information, see [Record.SetCurrentKey Method](../methods-auto/record/record-setcurrentkey-method.md).
+
 Using this property can improve query performance. For more information, see [Table Keys](../devenv-table-keys.md).
 
 ## See Also

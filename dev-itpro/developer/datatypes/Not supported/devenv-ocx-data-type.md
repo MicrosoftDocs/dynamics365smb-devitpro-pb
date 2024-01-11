@@ -12,8 +12,8 @@ caps.latest.revision: 14
 # OCX Data Type
 References a custom control, such as OCX or ActiveX control.  
   
-## Remarks  
-<!--  
+<!--## Remarks  
+  
 > [!IMPORTANT]  
 >  OCX data types are not supported by [!INCLUDE[nav_web](includes/nav_web_md.md)].  
   

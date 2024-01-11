@@ -3,7 +3,7 @@ title: "Enum Data Type"
 description: "Represents the text content of an element or attribute."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Represents the text content of an element or attribute.
 
 
+## Static methods
 The following methods are available on the Enum data type.
 
 
@@ -28,6 +29,7 @@ The following methods are available on the Enum data type.
 |[Names()](enum-names--method.md)|Gets the value names|
 |[Ordinals()](enum-ordinals--method.md)|Gets the ordinal numbers/ID's for the values|
 
+## Instance methods
 The following methods are available on instances of the Enum data type.
 
 |Method name|Description|

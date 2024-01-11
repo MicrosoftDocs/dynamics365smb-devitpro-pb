@@ -38,11 +38,14 @@ Specifies if a commit must be ignored or throw an error. The options are: Ignore
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-> [!NOTE]  
-> It's only possible to assign a more restrictive commit behavior. That is, if `CommitBehavior::Ignore` is attempted on a method scope, but the method calling the current method, for example, the parent method is actually running with `CommitBehavior::Error`, then the current method will continue running with `CommitBehavior::Error`, even though the `Ignore` attribute was specified.
 
-> [!NOTE]  
-> The `CommitBehavior` only lasts for the method scope. Regardless of whether the method finishes successfully or if an error causes the method to exit prematurely, the `CommitBehavior` reverts to the standard behavior, where `commit` statements will commit to the database.
+## Remarks
+
+- It's only possible to assign a more restrictive commit behavior. That is, if `CommitBehavior::Ignore` is attempted on a method scope, but the method calling the current method, for example, the parent method is actually running with `CommitBehavior::Error`, then the current method will continue running with `CommitBehavior::Error`, even though the `Ignore` attribute was specified.
+
+- The `CommitBehavior` only lasts for the method scope. Regardless of whether the method finishes successfully or if an error causes the method to exit prematurely, the `CommitBehavior` reverts to the standard behavior, where `commit` statements will commit to the database.
+
+- The `CommitBehavior` only applies to explicit commits, not implicit commits done as part of [Codeunit.Run](../methods-auto/codeunit/codeunit-run-method.md). 
 
 ## Example - local method
 

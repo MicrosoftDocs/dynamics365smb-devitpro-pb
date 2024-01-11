@@ -33,9 +33,10 @@ Using the `ExportToNewSyntax` switch for the `Compare-NAVApplicationObject` cmdl
 |Accept wildcard characters |False|
 
 ## Example
-```
+
+```powershell
 Compare-NAVApplicationObject -OriginalPath "C:\PageWith2Controls.txt" -ModifiedPath "C:\PageWith3Controls.txt" -ExportToNewSyntax
- ```
+```
 
 ## See Also
 [The Txt2Al Conversion Tool](devenv-txt2al-tool.md)  
