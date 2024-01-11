@@ -85,11 +85,9 @@ Here is a JSON representation of the vendorPayment resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## See also
 
-
-## See Also
 [GET vendorPayment](../api/dynamics_vendorPayment_Get.md)  
 [DELETE vendorPayment](../api/dynamics_vendorPayment_Delete.md)  
 [POST vendorPayment](../api/dynamics_vendorPayment_Create.md)  
