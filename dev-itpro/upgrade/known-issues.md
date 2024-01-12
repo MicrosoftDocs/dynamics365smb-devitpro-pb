@@ -16,13 +16,13 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
-## Error importing control add-in file from the client
+## Error importing control add-in files from the client
 
 > Applies to: Upgrade to version 23.3
 
 ### Problem
 
-When you try to import an a control add-in file client from the **Control Add-ins** page in the client by using the **Control Add-in Resource** > **Import**, you the follwoing error:
+When you try to import an a control add-in file client from the **Control Add-ins** page in the client by using the **Control Add-in Resource** > **Import**, you get the follwoing error:
 
 ```
 Can't open file`
