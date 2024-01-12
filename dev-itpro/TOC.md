@@ -413,8 +413,8 @@
 ## Get started
 ### [Welcome to AL](developer/devenv-landing.yml)
 ### [Get started with AL](developer/devenv-get-started.md)
-### [Building your first sample extension with extension objects, install code, and upgrade code](developer/devenv-extension-example.md)
-### [Using Designer](developer/devenv-inclient-designer.md)
+### [Build your first sample extension with extension objects, install code, and upgrade code](developer/devenv-extension-example.md)
+### [Use Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard shortcuts](developer/devenv-keyboard-shortcuts.md)
 ### [AL Home](developer/devenv-al-home.md)
 ### [AL Explorer](developer/devenv-al-explorer.md)
@@ -623,6 +623,7 @@
 ##### [Structuring namespaces in AL](developer/devenv-namespaces-structure.md)
 
 ### Error handling
+#### [Failure modeling and robust coding practices](developer/devenv-robust-coding-practices.md) 
 #### [Error handling](developer/devenv-al-error-handling.md)
 #### [Understanding the error dialog](developer/devenv-error-dialog.md)
 #### [User experience guidelines for errors](developer/devenv-error-handling-guidelines.md)
@@ -1104,7 +1105,7 @@
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
 ### [Walkthrough: Building an advanced sample extension](developer/devenv-extension-advanced-example.md)
-### [Walkthrough: Testing the advanced sample extension](developer/devenv-extension-advanced-example-test.md)
+### [Walkthrough: Test the advanced sample extension](developer/devenv-extension-advanced-example-test.md)
 ### Best practices
 #### [Overview](compliance/apptest-bestpracticesforalcode.md)
 #### AL code
@@ -1125,7 +1126,7 @@
 #### Testing
 ##### [Testing your extension](compliance/apptest-testingyourextension.md)
 ##### [Building an advanced sample extension](developer/devenv-extension-advanced-example.md)
-##### [Testing the advanced sample extension](developer/devenv-extension-advanced-example-test.md)
+##### [Test the advanced sample extension](developer/devenv-extension-advanced-example-test.md)
 #### Performance
 ##### [Performance developer guide](performance/performance-developer.md)
 ##### [Analyzing performance](performance/performance-work-perf-problem.md)
