@@ -65,25 +65,9 @@ For the *Length* parameter, the following rules apply:
 
    If *Value* exceeds *Length* characters, then *String* is truncated to *Length* characters.
 
-For the *Format* parameter, see [Formatting Values, Dates, and Time](../../devenv-format-property.md) for more information.
-
-The *FormatNumber* parameter specifies the format that you want to use. The basic options for the Decimal data type are as follows:  
-
-- <*Sign*><*Integer Thousand*><*Decimals*> is Format 0  
-
-- <*Sign*><*Integer*><*Decimals*> is Format 1  
-
-- <*Sign*><*Integer*><*Decimals*><*Comma*,.> is Format 2  
-
-- <*Integer Thousand*><*Decimals*><*Sign,1*> is Format 3  
-
-- <*Integer*><*Decimals*><*Sign,1*> is Format 4  
-
-> [!NOTE]  
-> You cannot use both *FormatNumber* and *FormatStr* at the same time.
+For more information, see [Formatting Values, Dates, and Time](../../devenv-format-property.md).
 
 ## Example 1
-
 
 ```al
 var
@@ -99,17 +83,13 @@ end;
 The Regional and Language settings on the computer on which you run the code affect how the string is displayed. For example, on a computer that has the regional format set to English (United States), the message window displays the following:  
 
 **The formatted value: > 123,456.78-\<**  
-
 **The formatted value: > 123,456.78-\<**  
-
 **The formatted value: > 123,456.78-\<**  
 
 On a computer that has the regional format set to Danish \(Denmark\), the message window displays the following:  
 
 **The formatted value: > 123.456,78-\<**  
-
 **The formatted value: > 123.456,78-\<**  
-
 **The formatted value: > 123.456,78-\<**  
 
 ## Example 2
@@ -128,8 +108,8 @@ The message window displays the following:
 
 **Today is April 15.**  
 
-
 ## See Also
+
 [Formatting Values, Dates, and Time](../../devenv-format-property.md)  
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -12,11 +12,11 @@ author: SusanneWindfeldPedersen
 
 # Formatting values, dates, and time
 
-With the `Format` function in Business Central, you can set the format of the source expression for various data types in AL.  
+With the `Format` method in Business Central, you can set the format of the source expression for various data types in AL.  
   
 ## Remarks  
 
-You can choose to set `Format` to a predefined format, or you can build your own format. For more information, see [Format Method (Integer, Text)](methods-auto/system/system-format-joker-integer-string-method.md).  
+You can choose to set `Format` to a predefined format, or you can build your own format. For more information, see [Format Method (Integer, Text)](methods-auto/system/system-format-joker-integer-string-method.md) and [Format Method (Any [, Integer] [, Integer])](methods-auto/system/system-format-joker-integer-integer-method.md). 
   
 ## Basic settings  
 
@@ -28,10 +28,10 @@ To choose a predefined format, use the syntax: <Standard Format,*X*>, where *X* 
 |1|Standard Display Format 2 (edit)|  
 |2|AL Code Constant Format|  
   
-> [!NOTE]   
+> [!NOTE]  
 > You must enter the `<` and `>` angle brackets, such as `<Standard Format,2>`.  
   
-## Building Formats  
+## Building formats  
 
 You can use `Format` to create your own formats. To create a format, use the following rules:  
   

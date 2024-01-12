@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer 
 ms.topic: conceptual
 ms.collection: 
-ms.date: 12/11/2023
+ms.date: 01/12/2024
 ms.custom: bap-template
 ---
 
@@ -139,7 +139,6 @@ In this task, you add action to the PromptDialog page that users select to start
 
 The `PromptDialog` page type supports several *system actions* that appear as buttons in the UI. You add these actions in the `actions` control on the page, like you would any other action. Except you define the system actions by first adding an `area(SystemActions)` control, then using the `systemaction()`control to define the specific action. In this case, you use a `systemaction(Generate)` control. 
 
-
 ```al
 actions
 {
@@ -150,6 +149,7 @@ actions
             Caption = 'Generate';
             trigger OnAction()
             begin
+                // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
                 RunGeneration();
             end;
         }
@@ -158,9 +158,13 @@ actions
 }
 ```
 
-Use the [OnAction()](triggers-auto/action/devenv-onaction-action-trigger.md) to call generative AI code, in this case the `RunGeneration()` procedure.
+Use the [OnAction()](triggers-auto/action/devenv-onaction-action-trigger.md) to call generative AI code, in this case the `RunGeneration()` procedure. This trigger is invoked when the user selects the button or when the page is opened in generate mode.
 
-This trigger is invoked when the user selects the button or when the page is opened in generate mode.
+The code of the `RunGeneration` procedure, you must implement yourself. This is where you call the copilot API, and get the results back.
+
+For an example on how to implement the `RunGeneration` procedure, see [BCTech samples AzureOpenAI](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Basic_ItemSubstitution/PromptDialog/ItemSubstAIProposal.Page.al#L111). 
+
+For an example on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
 
 ### Add a file attachment action
 
@@ -443,6 +447,7 @@ actions
             Caption = 'Generate';
             trigger OnAction()
             begin
+                // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
                 RunGeneration();
             end;
         }
@@ -453,6 +458,7 @@ actions
             ToolTip = 'Regenerate the Job proposed by Dynamics 365 Copilot.';
             trigger OnAction()
             begin
+                // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
                 RunGeneration();
             end;
         }
