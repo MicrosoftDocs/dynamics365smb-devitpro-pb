@@ -57,6 +57,10 @@ In certain circumstances, you may not want to migrate all data. Here are a coupl
 
 For more information, see [FAQ about Migrating to Business Central Online from On-Premises Solutions](faq-migrate-data.md) and [Troubleshooting Cloud Migration](migration-troubleshooting.md).  
 
+## Estimate the data size in your [!INCLUDE[prod_short](../includes/prod_short.md)] online tenant
+In the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], data is compressed using the SQL Server data compression feature. This means that the data size in your on-premises database might not match the data size when migrated to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service. For more information on estimating the compressed size of your data, see [Estimating the data size in your Business Central online tenant](./cloud-migration-estimate-compressed-data-size.md). 
+
+
 ## Define migration strategy
 
 <!--Ideally, to ensure all data is migrated, you'd stop all users from working in the on-premises environment while you made the migration to online. However, given the time it takes to complete the migration, this downtime typically isn't feasible. So, you want to devise a strategy that provides a stable migration, limits downtime for users, and results in no data loss. There's no exact approach to follow, because of the unknowns that can arise. But in general, the following approach provides a solid basis or starting point for most migrations.-->

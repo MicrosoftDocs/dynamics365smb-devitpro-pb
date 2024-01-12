@@ -34,6 +34,10 @@ You change the compatibility level of the database by using SQL Server Managemen
 > [!NOTE]  
 > The compatibility level for Azure SQL Database is subject to change. Refer to Azure SQL Database documentation for latest compatibility level.
 
+## Integrating directly on SQL Server objects
+[!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
+
+
 ## See Also  
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)    
 [Microsoft SQL Server documentation](/sql/sql-server/)'

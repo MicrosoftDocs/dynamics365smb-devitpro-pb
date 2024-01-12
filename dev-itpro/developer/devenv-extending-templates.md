@@ -26,7 +26,7 @@ This example shows how use configuration templates instead of creating new templ
 > [!NOTE]
 > You are still able to use application code from old template instances until it will be removed. After that, if you still want to use configuration templates you need to copy code to your own objects.
 -->
-```
+```al
 codeunit 50102 ConfigTemplateExtMgt
 {
     trigger OnRun()
@@ -45,9 +45,10 @@ codeunit 50102 ConfigTemplateExtMgt
 ```
 
 ## Example: Verify the fields you added to extend existing primary template table and template card
+
 This example shows how to verify the fields you added to existing templates with a data and template card. You can run this procedure in tests, for example, to ensure that the fields you added on the Customer Card page also exist on the Customer Template Card page.
 
-```
+```al
     procedure CustomerTemplCardControls()
     var
         CustomerCardPageControlField: Record "Page Control Field";
@@ -70,9 +71,10 @@ This example shows how to verify the fields you added to existing templates with
 ```
 
 ## Example: Create a new template for the primary table
+
 This example shows how to create a template for the Resource table, and then use the template to create a new resource. Let's extend the Resource table by adding a new field named **Extension Field**.
 
-```
+```al
 tableextension 50101 ResourceExt extends Resource
 {
     fields
@@ -101,7 +103,7 @@ pageextension 50102 ResourceCardExt extends "Resource Card"
 
 Here's a new template table for resources. <!--Don't understand that sentence, "Note there is one existing in master data field "Resource Group No." and one new field "Extension Field" that also extend the Resource table." -->
 
-```
+```al
 table 50103 "Resource Template"
 {
     fields
@@ -138,7 +140,7 @@ table 50103 "Resource Template"
 
 The following card and list pages for the new template allow you to edit the template, or select it when you create a new resource.
 
-```
+```al
 page 50104 "Resource Template Card"
 {
     PageType = Card;
@@ -209,7 +211,7 @@ page 50105 "Resource Template List"
 
 The following management codeunit runs the template list page for selecting templates when you create a new resource. It also transfers data from the **Extension Field** and **Resource Group No.** fields from the template to the Resource record.
 
-```
+```al
 codeunit 50101 TemplateExtMgt
 {
     SingleInstance = true;

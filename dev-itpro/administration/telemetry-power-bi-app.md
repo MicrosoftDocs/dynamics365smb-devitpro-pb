@@ -5,7 +5,7 @@ author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 01/13/2023
+ms.date: 12/05/2023
 ms.author: jswymer
 ms.custom: bac-template
 ms.service: dynamics365-business-central
@@ -103,6 +103,7 @@ To open the app, from the navigation pane, select **Apps** > **Dynamics 365 Busi
 By default, the app shows sample data in the reports. This sample data enables you to demo the app to prospective customers without having to show data from existing customers.
 
 ### App on App Telemetry
+
 To install or update the app for _app telemetry_, go to [https://aka.ms/bctelemetry-isv-app](https://aka.ms/bctelemetry-isv-app) and select **Get it now**.
 
 You'll first have to sign in to Microsoft AppSource using your Power BI account name and password, if you aren't already signed in. Follow the online instructions to get the app installed in Power BI.
@@ -165,9 +166,14 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
    - Timezone (the Business Central platform emits telemetry in the UTC time zone. By setting a Timezone, all visuals that show telemetry by hour of day will adjust to show data in the configured time zone).
    - Whether the app should refresh data (the default is every night around midnight); this option is hidden under **Advanced**.
 
-   For the environment app, you can also define:
+   For the **environment usage app**, you can also define:
 
    - an include list of environments so that only data for these environments is loaded. The format for this parameter is `{"include":[{"AAD tenant id":"<aad tenant id 1>","Name":"<environment name 1>"}, {"AAD tenant id":"<aad tenant id 2>","Name":"<environment name 2>"}]}`
+
+   For the **app usage app**, you can also define:
+
+   - an include list of apps so that only data for these apps is loaded. The format for this parameter is `{"include":[{"appId":"<app id 2>"},{"appId":"<app id 2>"}]}`
+
 
 4. When done making changes, you have to refresh the dataset to update the data shown in the app.
 
@@ -183,10 +189,22 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
 > [!NOTE]
 > If you turn off scheduled refresh and go back to the app, it will remove the Application ID and you have to enter it again.
 
+### Video guidance
+
+The following video shows how to connect Power BI telemetry apps to read your telemetry data.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fIjn]
+
 ## Install, share, and update apps
 
 From time to time, the app is released in a new improved version via AppSource. To learn how to deal with app updates, see 
 [Install, share, and update template apps in your organization](/power-bi/connect-data/service-template-apps-install-distribute)
+
+### Video example
+
+The following video shows how to change dataset properties for a Power BI telemetry app in Power BI.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fxZ6]
 
 
 ## Share the app with coworkers and others
@@ -224,6 +242,9 @@ In the following table, you'll find examples of scenarios for each persona where
 | Supporter | Customer complains that some users can't sign in. | Go to the Error report and investigate the **Login Errors** page. |
 | Supporter | Customer complains that users get lots of errors when using the system. | Go to the Error report and investigate the _Error Dialogs_, _Permission Errors_, and _Feature Errors_ pages. You can filter pages by Extension Publisher to learn which code path the error is coming from. |
 | Supporter | Customer experiences many locking issues. | Use the _Database Deadlocks_ page in the Error report to examine deadlocks. Use the _Database Lock Timeouts_ page in the Performance report to examine lock time-outs. Use the _Long running SQL queries_ page (filter SQL Statement to "UPDLOCK") to investigate SQL queries that take locks. | 
+
+> [!TIP]
+> Get started with [understanding busines processes here](/dynamics365/guidance/business-processes/overview), and learn about [roles in Dynamics 365 here](/dynamics365/guidance/roles/overview).
 
 ## No-code alerting with Power BI Metrics
 [!INCLUDE[pbimetrics](../includes/include-telemetry-alerting-powerbi-metrics.md)]

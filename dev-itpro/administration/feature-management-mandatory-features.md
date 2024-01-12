@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.date: 08/23/2023
+ms.date: 10/24/2023
 ms.custom: bap-template
 ---
 
@@ -28,11 +28,16 @@ The following features are generally available. However, they aren't turned on b
 
 |Feature  |Description  |
 |---------|---------|
-|[Feature Update: Enable use of new extensible invoice posting engine](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)  |Regulations in different countries and industries, and customer business practices, might require a change to how general ledger entries are aggregated during posting. We remove the dependencies from the Invoice Posting Buffer table in the base application and build an invoice posting component with an interface and an extensible enum for the implementation setup. This refactoring makes the posting process for sales, purchase, and service transactions extensible. Partners can also change the way the posting algorithm aggregates G/L entries—for example, by specific document lines, posting groups, or any tax setup that is required by local legislation. Partners can replace customizations by using the interface for G/L invoice posting, resolve legacy issues for the Invoice Posting Buffer table, and use their own implementation of G/L invoice posting.<br><br>   |
+|[Feature Update: Enable use of new extensible invoice posting engine](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)  |Regulations in different countries/regions and industries, and customer business practices, might require a change to how general ledger entries are aggregated during posting. We remove the dependencies from the Invoice Posting Buffer table in the base application and build an invoice posting component with an interface and an extensible enum for the implementation setup. This refactoring makes the posting process for sales, purchase, and service transactions extensible. Partners can also change the way the posting algorithm aggregates G/L entries—for example, by specific document lines, posting groups, or any tax setup that is required by local legislation. Partners can replace customizations by using the interface for G/L invoice posting, resolve legacy issues for the Invoice Posting Buffer table, and use their own implementation of G/L invoice posting.<br><br>   |
 
 |Feature  |Description  |
 |---------|---------|
 |[Feature Update: Enable use of new extensible exchange rate adjustment, including posting review](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/adjust-exchange-rates-easily-replace-built-in-batch-job)  |**Note:** This feature update will become generally available in the first update for 2023 release wave 2.<br><br>When companies operate in multiple countries or regions, it's important that they can do business and run financial reports in more than one currency. Because exchange rates often change, businesses must periodically update the rates in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. This feature update gives accountants additional control over how they adjust exchange rates. At the same time, it allows partners to extend and customize an exchange rate adjustment to meet the needs of specific industries or markets.  |
+
+|Feature  |Description  |
+|---------|---------|
+|[Feature Update: Enable Tri-State locking in AL](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/performance-gain-reducing-locks-database)  |The tri-state locking feature is aimed at enhancing the performance and concurrency of database transactions. By enabling this feature, AL-based read operations that follow write operations are performed optimistically, rather than with strict consistency and low concurrency. Consequently, users can expect higher levels of concurrency and fewer blocked or failed operations while accessing data. [Learn more about tri-state locking](../developer/devenv-tri-state-locking.md).  |
+
 
 ## Features becoming mandatory in 2023 release wave 2
 
@@ -76,6 +81,14 @@ Coming soon...
 |---------|---------|
 |[Feature Update: Standardized bank reconciliation and deposits.](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/standardizing-bank-reconciliation-process-north-american-versions?branch=main&branchFallbackFrom=pr-en-us-2746)|Bank reconciliation in the North American (NA) versions for the United States, Canada, and Mexico can be done either through the standard **Bank Reconciliation** page or with the **Bank Rec. Worksheet** page, which was missing some of the newer features that the **Bank Reconciliation** page offers. To standardize the bank reconciliation process, we have modified the **Bank Reconciliation** page, added a feature for deposits that is the same as we provide for the NA version today, and added capabilities to allow users to reconcile deposits.|
 
+### Features postponed from becoming mandatory in 2023 Release Wave 2
+
+The change to making these features mandatory is postponed. They aren't turned on by default and must be enabled manually. Use the links to learn more about them in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans.
+
+|Feature  |Expected to be mandatory release wave |
+|---------|---------|
+|[Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)     | 2025 release wave 1        | 
+
 ## Features becoming mandatory in 2023 release wave 1
 
 These features are now mandatory and can no longer be disabled. Use the links to learn more about them in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans.
@@ -116,7 +129,7 @@ The change to making these features mandatory is postponed. They aren't turned o
 |Feature  |Expected to be mandatory release wave |
 |---------|---------|
 |[Use tracking by package number in reservation and tracking system](/dynamics365/business-central/inventory-how-setup-item-tracking)     |  2024 release wave 1       |
-|[Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)     | 2024 release wave 1        |
+|[Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)     |**Note:** This feature was originally scheduled to become mandatory in 2024 release wave 1. It's now expected to become mandatory in 2025 release wave 1.        |
 |[New Microsoft Word report rendering platform](/dynamics365/business-central/dev-itpro/developer/devenv-howto-report-layout)     | 2024 release wave 1        |
 |[Replace Multiple Interest Rate CZ with Finance Charge Interest Rate](/dynamics365/business-central/receivables-collect-outstanding-balances)| 2025 release wave 2 |
 

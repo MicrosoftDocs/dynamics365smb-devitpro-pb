@@ -13,7 +13,7 @@ author: jswymer
 # Installation Considerations for Microsoft SQL Server and [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 This article describes the requirements for installing and configuring Microsoft SQL Server to work with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
-[!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] can run on Microsoft SQL Server and Microsoft Azure SQL Database. For a list of supported editions of SQL Server, see [SQL Server Requirements](system-requirement-business-central.md#SQLReq).  
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] can run on Microsoft SQL Server and Microsoft Azure SQL Database. For a list of supported editions of SQL Server, see [SQL Server Requirements](system-requirement-business-central.md#SQLReq).  
 
 ## Using Microsoft SQL Server
 
@@ -44,7 +44,7 @@ If you are installing Microsoft SQL Server for use with [!INCLUDE[prod_short](..
 
 ### Setup options for Microsoft SQL Server
   
-When you are running Microsoft SQL Server Setup, you must provide additional information. Your responses can affect how you use SQL Server with [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
+When you are running Microsoft SQL Server Setup, you must provide additional information. Your responses can affect how you use SQL Server with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
 #### TempDB database configuration
 
@@ -86,13 +86,13 @@ Startup options can be set by using SQL Server Configuration Manager, see the SQ
 
 We recommend that you use dedicated domain user accounts for the Windows services running your [!INCLUDE[server](../developer/includes/server.md)] instances and your SQL Server instances, instead of a Local System account or the Network Service account.  
 
-The [!INCLUDE[server](../developer/includes/server.md)] account must have privileges on the SQL Server instances and on the Dynamics NAV database(s). See [Provisioning the Server Service Account](provision-server-account.md) for details.
+The [!INCLUDE[server](../developer/includes/server.md)] account must have privileges on the SQL Server instances and on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database(s). See [Provisioning the Server Service Account](provision-server-account.md) for details.
 
 For installations on SQL Server 2014, consider adding the service account for the SQL Server engine to the **Perform Volume Maintenance Tasks** security policy. For SQL Server 2016, it is possible to do this from the installer.
 
 ### Database configurations
 
-After Dynamics NAV has been installed, it is important to check a few settings on the Dynamics NAV database(s). This is especially important for databases, which have been upgraded from previous versions of SQL Server.
+After [!INCLUDE[prod_short](../developer/includes/prod_short.md)] has been installed, it is important to check a few settings on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database(s). This is especially important for databases, which have been upgraded from previous versions of SQL Server.
 
 #### Statistics
 
@@ -122,12 +122,16 @@ You can deploy a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] dat
 
  To optimize performance, we recommend that the [!INCLUDE[server](../developer/includes/server.md)] instance that connects to the database is also deployed on a virtual machine in Azure. Additionally, the virtual machine and SQL Database must be in the same Azure region.  
 
- For development and maintenance work on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] applications, if the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] is installed on the same virtual machine in Azure as the [!INCLUDE[server](../developer/includes/server.md)], then you can connect to the Azure SQL database from the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].  
+ For development and maintenance work on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] applications, if the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is installed on the same virtual machine in Azure as the [!INCLUDE[server](../developer/includes/server.md)], then you can connect to the Azure SQL database from the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].  
 
  For more information, see [Deploying a Business Central Database to Azure SQL Database](deploy-database-azure-sql-database.md).  
 
 ## Data Encryption between [!INCLUDE[server](../developer/includes/server.md)] and SQL Server  
  When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Encrypting Connections to SQL Server](/previous-versions/sql/sql-server-2008-r2/ms189067(v=sql.105)), which is part of SQL Server 2008 Books Online in MSDN library.  
+
+## Integrating directly on SQL Server objects
+[!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
+
 
 ## See Also  
  [Data Access](../administration/optimize-sql-data-access.md)    

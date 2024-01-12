@@ -1,9 +1,9 @@
 ---
-title: "Introduction to automation APIs"
+title: Introduction to automation APIs
 description: APIs used to hydrate a Dynamics 365 Business Central tenant. Using the automation APIs, companies can be created, extensions installed, permissions assigned, and RapidStart packages applied.
 author: henrikwh
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/03/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Introduction to automation APIs
 
-Automation APIs provide capability for automating company setup through APIs. Once the tenants have been created, the automation APIs can be used, in order to hydrate the tenant - to bring the tenant up to a desired state. Usually this involves creating a new company on the tenant, running RapidStart packages, installing extensions, adding users to user groups and assigning permission sets to users.
+Automation APIs provide capability for automating company setup through APIs. Once the tenants are created, the automation APIs can be used, in order to hydrate the tenant - to bring the tenant up to a desired state. Usually this involves creating a new company on the tenant, running RapidStart packages, installing extensions, assigning permission sets to users and managing security groups.
 
 Delegated admin credentials and [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] users with permissions, can call the APIs.
 
@@ -36,10 +36,10 @@ Content-type: application/json
 }
 ```
 
-The {companyId} must be the ID of an valid company on the tenant. Issue a [GET automationCompany](api/dynamics_automationCompany_get.md) request to fetch existing companies. 
+The {companyId} must be the ID of a valid company on the tenant. Issue a [GET automationCompany](api/dynamics_automationCompany_get.md) request to fetch existing companies. 
 
 > [!NOTE]  
-> The company which is created will not be initialized.
+> The company, which is created won't be initialized.
 
 To rename a company, issue a [PATCH automationCompanies](/dynamics365/business-central/dev-itpro/administration/resources/dynamics_automationcompany).
 
@@ -53,7 +53,7 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 Authorization: Bearer {token}
 ```
 
-In the response, status for the import and apply status will be shown, as well as information about the RapidStart package.
+In the response, status for the import and apply status is shown, and information about the RapidStart package.
 
 ### Insert RapidStart
 
@@ -93,7 +93,7 @@ POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/micros
 Authorization: Bearer {token}
 ```
 
-When the RapidStart package is imported it can applied with a [POST on bound action Microsoft.NAV.apply](api/dynamics_configurationpackage_create.md).
+When the RapidStart package is imported, it can be applied with a [POST on bound action Microsoft.NAV.apply](api/dynamics_configurationpackage_create.md).
 
 ```json
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/configurationPackages({packageId})/Microsoft.NAV.apply
@@ -101,13 +101,13 @@ POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/micros
 Authorization: Bearer {token}
 ```
 
-## Managing users, user groups, and permission sets
+## Managing users and permission sets
 
 The automation APIs enable users to be set up in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].
 
 ### Modifying user properties
 
-Get the current user properties by issuing a [GET users](api/dynamics_user_get.md). This will get the UserSecurityId needed on subsequent requests.
+Get the current user properties by issuing a [GET users](api/dynamics_user_get.md). This gets the UserSecurityId needed on subsequent requests.
 
 To modify the user, create a [PATCH user](api/dynamics_user_update.md) request as shown in the example below.
 
@@ -123,6 +123,9 @@ If-Match:*
 
 ### Assign user permissions and user groups
 
+> [!NOTE]  
+> User groups are replaced with [Security groups](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/manage-user-permissions-using-security-groups) and will be deprecated in version 25. For more information, see [security group APIs](resources/dynamics_securitygroup.md).
+
 To assign users to a user group, issue a [POST request](api/dynamics_usergroupmember_create.md) against the **userGroupMembers** entity. See the example below.
 
 ```json
@@ -135,7 +138,7 @@ Authorization: Bearer {token}
 }
 ```
 
-To retrieve the list of user groups issue a [GET userGroups](api/dynamics_usergroup_get.md). This will return the information that you need for the payload above.
+To retrieve the list of user groups issue a [GET userGroups](api/dynamics_usergroup_get.md). This returns the information that you need for the payload above.
 
 Assigning permission sets is identical to adding users to user groups. [GET permissionSet](api/dynamics_permissionset_get.md) returns information about the available permission sets. To assign a permissionSet issue a [POST userPermission](api/dynamics_userpermission_create.md) as shown in the following example.
 
@@ -152,11 +155,11 @@ Removing the permissionSet from the user is done by issuing a [DELETE userPermis
 
 ### Get new users from Office 365
 
-To get new users from Office 365, two bound actions on the **users** endpoint can be used: `Microsoft.NAV.getNewUsersFromOffice365` and `Microsoft.NAV.getNewUsersFromOffice365Async`. Both actions retrieve new users or new user information from the Office 365 portal but former one is designed for delegated admins and it runs synchronous and latter one schedules a background job which makes it asynchronous. `Microsoft.NAV.getNewUsersFromOffice365Async` returns a link to the scheduled job where you can track the progress. You can also track the progress by issuing a [GET scheduledJobs](api/dynamics_scheduledjob_get.md) on the users entity. Note that existing, unchanged users will not be updated with these actions.
+To get new users from Office 365, two bound actions on the **users** endpoint can be used: `Microsoft.NAV.getNewUsersFromOffice365` and `Microsoft.NAV.getNewUsersFromOffice365Async`. Both actions retrieve new users or new user information from the Office 365 portal but former one is designed for delegated admins and it runs synchronous and latter one schedules a background job, which makes it asynchronous. `Microsoft.NAV.getNewUsersFromOffice365Async` returns a link to the scheduled job where you can track the progress. You can also track the progress by issuing a [GET scheduledJobs](api/dynamics_scheduledjob_get.md) on the users entity. Existing, unchanged users won't be updated with these actions.
 
 ## Handling tenant extensions
 
-Add-on extensions which are already published to the tenant can be installed and uninstalled. Per-tenant extensions can be uploaded and installed. To get the list of all extensions on the tenant, issue a [GET extensions](api/dynamics_extension_get.md). This will return the packageId needed for installing and uninstalling extensions.
+Add-on extensions, which are already published to the tenant can be installed and uninstalled. Per-tenant extensions can be uploaded and installed. To get the list of all extensions on the tenant, issue a [GET extensions](api/dynamics_extension_get.md). This returns the packageId needed for installing and uninstalling extensions.
 
 ### Installing and uninstalling published add-on extensions
 
@@ -220,7 +223,7 @@ POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/micros
 Authorization: Bearer {token}
 ```
 
-Uninstalling the extension can be done through the bound action [Microsoft.NAV.uninstall](api/dynamics_extensionupload_create.md), as with the add-on extensions. The bound action Microsoft.NAV.uninstallAndDeleteExtensionData can be used to delete the tables that contain data owned by the extension on uninstall. This action cannot be undone.
+Uninstalling the extension can be done through the bound action [Microsoft.NAV.uninstall](api/dynamics_extensionupload_create.md), as with the add-on extensions. The bound action Microsoft.NAV.uninstallAndDeleteExtensionData can be used to delete the tables that contain data owned by the extension on uninstall. This action can't be undone.
 
 ### Monitoring extension installation progress
 
@@ -230,7 +233,7 @@ To view ongoing extension installation status, issue [GET extensionDeploymentSta
 GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionDeploymentStatus
 ```
 
-## See Also
+## See also
 
 [Automation company](resources/dynamics_automationcompany.md)  
 [Company](resources/dynamics_company.md)  
@@ -245,4 +248,5 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 [User group](resources/dynamics_usergroup.md)  
 [User group member](resources/dynamics_usergroupmember.md)  
 [User group permission](resources/dynamics_usergrouppermission.md)  
-[User permission](resources/dynamics_userpermission.md)
+[User permission](resources/dynamics_userpermission.md)  
+[Control Access to Business Central Using Security Groups](/dynamics365/business-central/ui-security-groups)  

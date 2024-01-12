@@ -58,7 +58,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 
     }
 }
-
 ```
 
 ## See Also  

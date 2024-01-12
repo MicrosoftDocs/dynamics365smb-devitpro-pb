@@ -94,7 +94,7 @@ table 50104 Address
 
     end;
 
-    procedure MyMethod();
+    procedure MyMethod()
     begin
         Message(Msg);
     end;

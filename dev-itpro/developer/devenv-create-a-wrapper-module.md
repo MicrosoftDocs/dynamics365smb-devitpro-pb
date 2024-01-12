@@ -12,7 +12,7 @@ ms.date: 04/01/2021
 ---
 
 # Create a .NET Wrapper Module
-This topic provides a description of how to contribute a .NET wrapper module to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], using the Regex module as an example. The Regex module is published in the [AlAppExtensions](https://github.com/microsoft/ALAppExtensions/) repository, and if you aren't already familiar with the Regex class in .NET, see the [.NET documentation](/dotnet/api/system.text.regularexpressions.regex?view=netcore-3.1).
+This topic provides a description of how to contribute a .NET wrapper module to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], using the Regex module as an example. The Regex module is published in the [BCApps](https://github.com/microsoft/BCApps/) repository, and if you aren't already familiar with the Regex class in .NET, see the [.NET documentation](/dotnet/api/system.text.regularexpressions.regex?view=netcore-3.1).
 
 ## Converting the Regex architecture
 In .NET, the Regex class provides functionality for regular expressions. You can implement the functionality in a similar way as a system module by creating a Regex codeunit that provides an interface and an internal Regex implementation that contains the logic.
@@ -24,7 +24,7 @@ For some methods, you can wrap the .NET method in AL in an internal codeunit and
 
 ```al
 /// <summary>
-/// Provides functionality to use regular expressions to match text, split text, replace text etc.  
+/// Provides functionality to use regular expressions to match text, split text, replace text etc.
 /// </summary>
 codeunit 3960 Regex
 {
@@ -159,14 +159,14 @@ table 3966 "Regex Options"
             DataClassification = SystemMetadata;
             Description = 'Changes the meaning of ^ and $ so they match at the beginning and end respectively of any line.';
         }
-        
-        ... 
+
+        ...
 
         field(10; MatchTimeoutInMs; Integer)
         {
             DataClassification = SystemMetadata;
             Description = 'A time-out interval in milliseconds, to indicate when the matching should time out.';
-            InitValue = -1; // Indicates no time-out 
+            InitValue = -1; // Indicates no time-out
         }
     }
 }

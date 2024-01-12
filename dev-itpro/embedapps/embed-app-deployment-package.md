@@ -103,7 +103,7 @@ The manifest.json file, supplied within the deployment package, contains importa
 
 |Setting|Type|Description|
 |----|----|-----------|
-|manifestSchemaVersion |String, `<major>.<minor>` |Schema version of the manifest. Current manifest schema version is 3.0. |
+|manifestSchemaVersion |String, `<major>.<minor>` |Schema version of the manifest. Current manifest schema version is 4.0. |
 | id |GUID |Unique ID of the Embed solution. Used for informational purposes, not used in the runtime. As a best practice it's recommended to use the Id of your main app in this field.|
  | name |String |Short marketing name of the app. Used for informational purposes, not used in the runtime.  |
 |description |String |Short marketing description of the app. Used for informational purposes, not used in the runtime. |
@@ -140,8 +140,6 @@ The manifest.json file, supplied within the deployment package, contains importa
 
 |Setting|Type|Description|
 |----|----|-----------|
-| applicationBacpacPath| String  |Path to the application database (.bacpac) included with the deployment package. |
-| tenantTemplateBacpacPath| String|Path to the tenant template database (.bacpac) included with the deployment package. |
 | applicationDacpacPath| String |Path to the application database (.dacpac) included with the deployment package. |
 | tenantTemplateDacpacPath| String|Path to the tenant template database (.dacpac) included with the deployment package. |
 
@@ -198,8 +196,8 @@ Sample of the manifest.json file.
     }
   },
   "databases": {
-    "applicationBacpacPath": "databases/app.bacpac",
-    "tenantTemplateBacpacPath": "databases/tenant.bacpac"
+    "applicationDacpacPath": "app.dacpac",
+    "tenantTemplateDacpacPath": "tenant.dacpac"
   },
   "links": {
     "baseHelpUrl": "https://help.fabrikam.com/help/",

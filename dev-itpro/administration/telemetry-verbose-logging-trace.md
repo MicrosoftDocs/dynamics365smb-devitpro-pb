@@ -21,7 +21,7 @@ ms.author: jswymer
 
 A telemetry trace is recorded whenever additional logging is turned on or off.
 
-For information about enabling additional logging, see [Resources for Help and Support](/dynamics365/business-central/product-help-and-support).
+For information about enabling additional logging, see [Resources for Help and Support](/dynamics365/business-central/product-help-and-support#troubleshooting).
 
 ## <a name="enabled"></a>Verbose telemetry enabled for session
 

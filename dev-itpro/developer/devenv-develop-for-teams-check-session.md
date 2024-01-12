@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: how-to
-ms.date: 11/23/2022
+ms.date: 12/19/2023
 ms.custom: bap-template
 ---
 
@@ -18,7 +18,7 @@ This article describes some AL code for getting session and environment informat
 
 You can adapt page objects to display specific content or behave differently when they're run in the context of Teams, in a card details window or tab.
 
-The [CurrentClientType method](methods-auto/session/session-currentclienttype-method.md) will return the value `Teams` when the user session runs in a card details window or in a tab. For example, you can use this method to set the visibility of actions that are useful in the context of collaboration.
+The [CurrentClientType method](methods-auto/session/session-currentclienttype-method.md) returns the value `Teams` when the user session runs in a card details window or in a tab. For example, you can use this method to set the visibility of actions that are useful in the context of collaboration.
 
 ```AL
 if CurrentClientType = ClientType::Teams then  

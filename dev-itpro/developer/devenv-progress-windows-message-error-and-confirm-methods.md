@@ -2,10 +2,8 @@
 title: "Progress Windows, Message, Error, and Confirm Methods"
 description: "Using specialized methods in AL for Business Central to display messages and gather input from the user."
 ms.custom: na
-ms.date: 09/28/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 12/20/2023
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -72,13 +70,28 @@ message(Text001,"No.",SalesHeader2."No.");
 
 ## Error method  
 
-The [Error Method)](methods-auto/dialog/dialog-error-errorinfo-method.md) is similar to the `Message` method except that when the user has acknowledged the message from an `Error` method, execution ends. The `Error` method is also similar to the FieldError method. For more information, see [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](devenv-CALCFIELDS-CALCSUMS-FIELDError-FIELDNAME-INIT-TESTFIELD-and-VALIDATE-Methods.md).  
+The [Error Method](methods-auto/dialog/dialog-error-errorinfo-method.md) is similar to the `Message` method except that when the user has acknowledged the message from an `Error` method, AL execution ends. The `Error` method is also similar to the FieldError method. For more information on the `FieldError method`, see [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](devenv-CALCFIELDS-CALCSUMS-FIELDError-FIELDNAME-INIT-TESTFIELD-and-VALIDATE-Methods.md).  
 
-The `Error` method has the following syntax.  
+The `Error` method has the following syntax:
 
-```AL 
-Error(String [, Value1, ...]);  
+```AL
+procedure MyProc()
+var
+    MyErrorInfo: ErrorInfo;
+begin
+    // setup ErrorInfo
+    MyErrorInfo.Title('Error message title that the user sees.');
+    MyErrorInfo.Message('Error message the user sees.');
+    MyErrorInfo.DetailedMessage('(Hidden) error details for the person who needs to troubleshoot.');
+    // add more properties for ErrorInfo depending on the scenario
+
+    Error(MyErrorInfo);
+
+    // no more AL code runs after the Error method
+end;
 ```  
+
+For more information about error handling in AL, see [Error handling overview](devenv-al-error-handling.md).
 
 ## Confirm method  
 
@@ -105,4 +118,5 @@ The `false` parameter in the `confirm` statement means that `No` is the default.
 
 ## See Also  
 
-[Dialog Data Type](methods-auto/dialog/dialog-data-type.md)  
+[Error handling overview](devenv-al-error-handling.md)   
+[Dialog data type](methods-auto/dialog/dialog-data-type.md)  

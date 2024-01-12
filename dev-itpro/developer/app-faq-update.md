@@ -35,13 +35,11 @@ When you submit your app for validation, we validate it against the latest versi
 
 ## When tenants have their Business Central version upgraded, do apps ever get automatically updated?
 
-For minor releases, we do not auto-update apps. This is because of customer feedback and them not wanting their apps auto updated. The only exception to this is if an app will be broken in a minor release due to changes in the base product. In this case, we configure that app in our service as required. When tenants then get upgraded to that minor release, if they have that app, it then gets updated automatically. This is to avoid the app being broken for the customer.
-
-For major releases, we do auto-update every app on every tenant to the app’s latest available version. We consider major releases to be our "refresh" releases.
+Internal and delegated environment administrators can set the app update cadence for their environment in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)] so apps will automatically update with every major update or with every major and minor update. The only exception in which the app update cadence may be overruled is if an app will be broken in a minor release due to changes in the base product. In this case, we configure that app in our service as required. When tenants then get upgraded to that minor release, if they have that app, it then gets updated automatically. This is to avoid the app being broken for the customer.
 
 ## How do tenants that already have an existing version of my app get my latest updated version?
 
-By uninstalling and reinstalling the app. When doing the reinstall, it calls into our service and finds the latest active version of an app. There is a new **Manage Apps** page in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)] that will soon allow updating of AppSource apps without having to do uninstall and reinstall.
+Internal and delegated environment administrators can view all installed apps and any updates available to them on the **Manage Apps** page in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)]. From that page they can install updates to apps immediately or schedule an app update to take place during the next update window for the environment on which the app is installed. Alternatively, an app can be uninstalled and reinstalled to get the latest version.
 
 ## Do I have to submit an updated version of my app for the major releases?
 

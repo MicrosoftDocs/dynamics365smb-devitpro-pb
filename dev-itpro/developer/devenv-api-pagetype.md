@@ -1,6 +1,6 @@
 ---
-title: "API Page Type"
-description: "Description of the API page type used for exposing web service endpoints."
+title: API page type
+description: Description of the API page type used for exposing web service endpoints.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 11/30/2021
@@ -8,11 +8,14 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# API Page Type
+# API page type
 
 Pages of the type `API` are used to create versioned, webhook-supported, OData v4 enabled REST web services. This type of page cannot be displayed in the user interface, but is intended for building reliable integration services. When creating this page type, you must specify a number of properties that provide information for the web service endpoint. Use the snippet `tpage - Page of type API` to get the right template and the list of these properties automatically filled in. This page type cannot be extended by creating a page extension object. Instead, you must create a new API by adding a page object. 
 
 Pages of the type `API` can be used to develop a custom API. For more information, see [Developing a Custom API](devenv-develop-custom-api.md).
+
+[!INCLUDE[extending_APIs_is_not_supported_note](includes/include-extending-APIs-is-not-supported-note.md)]
+
 
 ## Naming conventions
 

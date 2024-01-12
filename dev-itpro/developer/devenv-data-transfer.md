@@ -24,7 +24,7 @@ var
   from: Record FromTable;
   to: Record ToTable;
 begin
-  if from.Find() then
+  if from.FindSet() then
     repeat
       to.SmallCodeField := from.SmallCodeField;
       to.IntField := from.IntField;
@@ -54,7 +54,7 @@ end;
 
 The DataTransfer object can be used for essentially two operations: 
 
-- Copy data from one or more fields in a table to fields another table. A typical scenario is when you've made a field obsolete.
+- Copy data from one or more fields in a table to fields another table. A typical scenario is when you've made a field obsolete, but also to set default field values (similar to [Record.ModifyAll()](methods-auto/record/record-modifyall-method.md)).
 - Copy data from entire rows in a table to rows in another table. A typical scenario is when you've made a table obsolete.
 
 > [!IMPORTANT]
@@ -155,6 +155,24 @@ The join condition can be specified on arbitrary fields, which leaves the possib
 | 3  | C  | B  | 44 |
 | 4  | D  | B  | 45 |
 
+### Example 2 - replace ModifyAll()
+
+In order to replace a Record.ModifyAll() with the DataTransfer data type, ensure that only one table is set (as both source and destination), apply filters if required, and then specify one or more new field values:
+
+```AL
+local procedure CopyFieldsReplacingModifyAll()
+var
+    dt: DataTransfer;
+    dest: Record Destination;
+begin
+    dt.SetTables(Database::Destination, Database::Destination);
+    dt.AddSourceFilter(dest.FieldNo("Field 1"), '=%1', 'A');
+    dt.AddSourceFilter(dest.FieldNo("Field 2"), '%1..%2', 'B', 'C');
+    dt.AddConstValue(dest."Enum Field"::SomeValue, dest.FieldNo("Enum Field"));
+    dt.CopyFields();
+end;
+```
+
 ## Copy rows
 
 Calling CopyRows on the DataTransfer object inserts a row in the destination table for each matching row in the source table. Fields in the inserted row are populated with values specified by calling AddFieldValue or AddConstantField. Fields not specified by AddFieldValue or AddConstantField are populated with the field's [InitValue](properties/devenv-initvalue-property.md) or the field's default value.
@@ -164,7 +182,7 @@ If the code tries to copy a row from the source table that has the same primary 
 > [!NOTE]
 > Copying the SystemID and [data audit](devenv-table-system-fields.md#audit) fields using CopyRows is supported in Business Central version 21.5 and later.
 
-### Example 2
+### Example 3
 
 To help explain CopyRows, consider an example using sample tables **Source** and **Destination** again. 
 

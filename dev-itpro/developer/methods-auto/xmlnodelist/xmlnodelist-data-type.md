@@ -3,7 +3,7 @@ title: "XmlNodeList Data Type"
 description: "Represents a collection of XML nodes."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Represents a collection of XML nodes.
 
 
 
+## Instance methods
 The following methods are available on instances of the XmlNodeList data type.
 
 |Method name|Description|

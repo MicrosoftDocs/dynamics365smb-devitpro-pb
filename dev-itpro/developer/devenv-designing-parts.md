@@ -98,5 +98,5 @@ Like other page types, you can design a part page to use one or more page backgr
 [Power BI Report Parts](devenv-power-bi-report-parts.md)
 [Page Extension Object](devenv-page-ext-object.md)   
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  
 <!-- [Designing pages with multiple lists](devenv-designing-multilist-pages.md) -->

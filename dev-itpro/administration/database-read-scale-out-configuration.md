@@ -26,7 +26,10 @@ For [!INCLUDE[prod_short.md](../developer/includes/prod_short.md)] on-premises, 
 3. Enable SQL read-only replica support on the [!INCLUDE[server.md](../developer/includes/server.md)] instance.
 
     [!INCLUDE[server.md](../developer/includes/server.md)] includes the **Enable SQL Read-Only Replica Support** (EnableSqlReadOnlyReplicaSupport) setting. This setting isn't enabled by default. For more information, see [Configuring Business Central Server](configure-server-instance.md#Database).
-    
+
+## Integrating directly on SQL Server objects
+[!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
+
 ## See also
 
 [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md)  

@@ -158,7 +158,7 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
 3. Specify the **Car Model**  table as the source table.
 4. Specify `APIVersion`, `APIPublisher`, `APIGroup`, `EntityName`, and `EntitySetName` for your API page. These properties will affect your custom endpoint: `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/companies(<company id>)/carModel`. For more information, see [Business Central API endpoints](../api-reference/v2.0/endpoints-apis-for-dynamics.md) and [Calling the API](devenv-develop-connect-apps.md#calling-an-api).
 5. Specify `EntityCaption` and `EntitySetCaption`. These two properties are generated in the entityDefinitions `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions` that are localized and translatable. 
-6. Make sure to set the `ODataKeyFields` property to `SystemId`. A SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. For more information, see [Table Object](devenv-table-object.md). 
+6. Make sure to set the `ODataKeyFields` property to `SystemId`. A SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. For more information, see [System Fields](../developer/devenv-table-system-fields.md).
     ```AL
     page 50101 "API Car Model"
     {
@@ -227,9 +227,9 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
 7. Now, repeat the steps 1-6 for **API Car Brand** page.
 8. You can define an **API Car Model** part on the **API Car Brand** page. Make sure to use the SystemId field when defining the SubPageLink. This will generate the **ReferentialConstraints** property in the metadata as below:  
 
-    ```
+    ```xml
     <NavigationProperty Name="carModels" Type="Collection(Microsoft.NAV.carModel)" Partner="carBrand" ContainsTarget="true">
-    <ReferentialConstraint Property="id" ReferencedProperty="brandId"/>
+        <ReferentialConstraint Property="id" ReferencedProperty="brandId"/>
     </NavigationProperty>
     ```
 
@@ -305,10 +305,10 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
 > ```
 >This will change the **NavigationalProperty** in the metadata from a Collection to an object as shown below:
 > 
->```
+>```xml
 ><NavigationProperty Name="carModel" Type="Microsoft.NAV.carModel" ContainsTarget="true">
->            <ReferentialConstraint Property="id" ReferencedProperty="brandId"/>
->        </NavigationProperty>
+>       <ReferentialConstraint Property="id" ReferencedProperty="brandId"/>
+></NavigationProperty>
 >```
 
 ## Using carBrand and carModel APIs

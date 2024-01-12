@@ -3,7 +3,7 @@ title: "Dialog Data Type"
 description: "Represents a dialog window."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Represents a dialog window.
 
 
+## Static methods
 The following methods are available on the Dialog data type.
 
 
@@ -32,6 +33,7 @@ The following methods are available on the Dialog data type.
 |[Message(Text [, Any,...])](dialog-message-method.md)|Displays a text string in a message window.|
 |[StrMenu(Text [, Integer] [, Text])](dialog-strmenu-method.md)|Creates a menu window that displays a series of options.|
 
+## Instance methods
 The following methods are available on instances of the Dialog data type.
 
 |Method name|Description|

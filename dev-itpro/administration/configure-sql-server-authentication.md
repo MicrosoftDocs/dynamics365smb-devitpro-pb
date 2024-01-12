@@ -170,7 +170,10 @@ To configure a SQL Server authentication on a [!INCLUDE [server](../developer/in
    For more information, see [Mount or Dismount a Tenant](mount-dismount-tenant.md).  
   
 5. Restart the server instance.
-  
+
+## Integrating directly on SQL Server objects
+[!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
+
 ## See Also
 
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  

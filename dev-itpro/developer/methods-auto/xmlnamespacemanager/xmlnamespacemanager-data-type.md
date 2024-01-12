@@ -3,7 +3,7 @@ title: "XmlNamespaceManager Data Type"
 description: "Represents a namespace manager that can be used to resolve, add and remove namespaces to a collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Represents a namespace manager that can be used to resolve, add and remove names
 
 
 
+## Instance methods
 The following methods are available on instances of the XmlNamespaceManager data type.
 
 |Method name|Description|

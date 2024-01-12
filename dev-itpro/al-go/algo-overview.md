@@ -1,9 +1,9 @@
 ---
-title: "Overview of AL-Go"
-description: "Overview of how to use AL-Go for Business Central."
+title: Overview of AL-Go
+description: Overview of how to use AL-Go for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/27/2022
+ms.date: 10/11/2023
 ms.reviewer: 
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -23,26 +23,7 @@ The template repositories to use as starting point are:
 - To create an **AppSource app**, here's your starting point
 **[https://github.com/microsoft/AL-Go-AppSource](https://github.com/microsoft/AL-Go-AppSource)** is the GitHub repository template for AppSource apps. 
 
-
-The usage scenarios in this section take you through how to get started and how to perform the most common tasks.
-
-- [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](algo-get-started.md)  
-- [Add a Test App to an Existing Project](algo-add-test-app.md)  
-- [Register a Customer Sandbox Environment for Continuous Deployment using S2S](algo-register-sandbox-env.md)  
-- [Create a Release of Your Application](algo-create-release-app.md)  
-- [Register a Customer Production Environment for Manual Deployment](algo-register-cust-prod-env.md)  
-- [Update AL-Go System Files](algo-update-system-files.md)  
-- [Use Azure KeyVault for Secrets with AL-Go](algo-enable-keyvault-app-development.md)  
-- [Create Online Development Environment from Visual Studio Code](algo-create-online-dev-env-vscode.md)  
-- [Create Online Development Environment from GitHub](algo-create-online-dev-env-github.md)  
-- [Set up CI/CD for an Existing Per-Tenant Extension](algo-setup-cicd-existing-pte.md)  
-- [Set up CI/CD for an Existing AppSource App](algo-setup-cicd-existing-app.md)  
-- [Enable KeyVault Access for Your AppSource App during Development and/or Test](algo-enable-keyvault-app-development.md)  
-- [Set up Your Own GitHub Runner to Increase Build Performance](algo-setup-github-runner-performance.md)  
-- [Introducing a Dependency to Another GitHub Repository](algo-dependency-app-github.md)  
-- [Enabling Telemetry for AL-Go Workflows and Actions](algo-enabling-telemetry.md)  
-
-To get information about which settings you can use to control the behavior of AL-Go, see [AL-Go Settings](algo-settings.md)
+To get started with AL-Go, try out the [AL-Go for GitHub Workshop](https://github.com/microsoft/AL-Go/blob/main/Workshop/Index.md). All documentation for AL-Go for GitHub is maintained and updated in the repository. Go to [AL-Go for GitHub](https://github.com/microsoft/AL-Go/blob/main/README.md) to see the latest documentation.
 
 ## See also
 

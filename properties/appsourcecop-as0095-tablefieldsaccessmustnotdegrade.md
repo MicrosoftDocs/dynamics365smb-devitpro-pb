@@ -42,7 +42,6 @@ table 50122 MyTable
         }
     }
 }
-
 ```
 
 Version 2.0 of the extension:
@@ -79,7 +78,6 @@ table 50122 MyTable
         }
     }
 }
-
 ```
 
 Version 2.0 of the extension:

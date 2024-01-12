@@ -326,6 +326,9 @@ Occurs when a job queue entry was cancelled. This telemetry event was introduced
 |eventId|**AL0000KZV**|
 |[See common custom dimensions](#other)||
 
+## Job queues and performance
+
+[!INCLUDE[task_job_queue_performance](../includes/include-task-job-queue-performance.md)]
 
 ## Troubleshooting Job queue issues with telemetry
 

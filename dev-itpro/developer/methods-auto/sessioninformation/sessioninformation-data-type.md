@@ -3,7 +3,7 @@ title: "SessionInformation Data Type"
 description: "Is a complex data type for exposing Session information into AL."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Is a complex data type for exposing Session information into AL.
 
 
+## Static methods
 The following methods are available on the SessionInformation data type.
 
 

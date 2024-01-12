@@ -3,7 +3,7 @@ title: "RecordId Data Type"
 description: "Contains the table number and the primary key of a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Contains the table number and the primary key of a table.
 
 
 
+## Instance methods
 The following methods are available on instances of the RecordId data type.
 
 |Method name|Description|

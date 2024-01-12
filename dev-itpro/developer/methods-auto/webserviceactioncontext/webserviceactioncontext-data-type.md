@@ -3,7 +3,7 @@ title: "WebServiceActionContext Data Type"
 description: "Represents an AL WebServiceActionContext."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Represents an AL WebServiceActionContext.
 
 
 
+## Instance methods
 The following methods are available on instances of the WebServiceActionContext data type.
 
 |Method name|Description|

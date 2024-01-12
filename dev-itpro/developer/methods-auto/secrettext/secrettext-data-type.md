@@ -3,7 +3,7 @@ title: "SecretText Data Type"
 description: "Denotes a secret text string, which is non-debuggable."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 12/01/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ author: SusanneWindfeldPedersen
 Denotes a secret text string, which is non-debuggable.
 
 
+## Static methods
 The following methods are available on the SecretText data type.
 
 
@@ -26,6 +27,7 @@ The following methods are available on the SecretText data type.
 |-----------|-----------|
 |[SecretStrSubstNo(Text [, SecretText,...])](secrettext-secretstrsubstno-method.md)|Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you provide as optional parameters.|
 
+## Instance methods
 The following methods are available on instances of the SecretText data type.
 
 |Method name|Description|
@@ -35,5 +37,5 @@ The following methods are available on instances of the SecretText data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

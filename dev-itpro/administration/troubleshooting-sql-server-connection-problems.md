@@ -67,6 +67,10 @@ If Windows Firewall is running on the computer running SQL Server, then you must
 
 When using a named database instance for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and [!INCLUDE[server](../developer/includes/server.md)] and the SQL server are on separate computers, then SQL Browser Service must be running on the SQL Server. For more information, see [Start SQL Browser Service](/sql/database-engine/configure-windows/start-stop-pause-resume-restart-sql-server-services).  
 
+## Integrating directly on SQL Server objects
+[!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
+
+
 ## See Also  
 
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)

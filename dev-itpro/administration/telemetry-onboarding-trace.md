@@ -1,28 +1,28 @@
 ---
-title: Analyzing Onboarding Telemetry 
+title: Analyzing onboarding telemetry 
 description: Learn about the onboarding telemetry in Business Central  
 author: brentholtorf
 ms.topic: conceptual
 ms.search.keywords: telemetry, onboarding
-ms.date: 04/01/2023
+ms.date: 12/21/2023
 ms.author: kepontop
 ms.service: dynamics365-business-central
 ms.reviewer: brentholtorf
 ms.custom: bap-template
 ---
 
-# Analyzing Onboarding Telemetry
+# Analyzing onboarding telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2023 release wave 1, update 22.1, and later
 
 Onboarding telemetry gathers data about the following operations: 
 
-- Onboarding was started by a user in a company
-- Onboarding criteria was completed by a user in a company
+- Onboarding started by a user in a company
+- Onboarding criteria completed by a user in a company
 
 ## <a name="started"></a>Onboarding Started
 
-Occurs when onboarding was started by a user in a company.
+Occurs when a user initiates onboarding in a company.
 
 ### General dimensions
 
@@ -49,7 +49,7 @@ Occurs when onboarding was started by a user in a company.
 
 ## <a name="CriteriaCompleted"></a>Onboarding Criteria completed
 
-Occurs when an onboarding criteria was completed by a user in a company.
+Occurs when a user completes onboarding criteria in a company.
 
 ### General dimensions
 
@@ -64,7 +64,7 @@ Occurs when an onboarding criteria was completed by a user in a company.
 |---------|-----|
 |aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |alCountryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
-|alCriteria| The onboarding criteria that was completed by the user. |
+|alCriteria| The onboarding criteria that the user completes. |
 |alUserRole|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-user-role.md)]|
 |alIsAdmin|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-is-admin.md)]|
 |alIsEvaluationCompany|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-is-evaluation-company.md)]|

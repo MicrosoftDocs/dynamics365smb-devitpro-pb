@@ -53,12 +53,13 @@ Clear(JsonObject)
 ## Example
 This example shows how to read JSON data from a string into a JsonObject variable.
 
-```
+```al
 local procedure ReadJson(data : Text) result : JsonObject;
 begin
     result.ReadFrom(data);    
 end;
 ```
+
 ## See Also
 [JsonObject Data Type](jsonobject-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

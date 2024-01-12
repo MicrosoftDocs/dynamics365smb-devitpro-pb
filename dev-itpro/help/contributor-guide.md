@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.date: 04/13/2023
+ms.date: 11/13/2023
 ms.author: solsen
 ---
 
@@ -17,18 +17,28 @@ This article describes how to work with our GitHub repos and contribute to the H
 
 To join Microsoft in the world of GitHub and Markdown, there are terminology and tools to get used to. The following list outlines the main steps, but you can find more content, tools, and ideas in the [GitHub documentation](https://help.github.com/en/github) and other forums.
 
+We have two GitHub repos that you can contribute to:
+
+- [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)  
+  This repo contains the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] business functionality content that is published [here](/dynamics365/business-central/welcome).
+
+- [MicrosoftDocs/dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb)  
+  This repo contains the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] developer and IT Pro content that is published [here](/dynamics365/business-central/dev-itpro/).
+
+In the following, we use the *MicrosoftDocs/dynamics365smb-docs* repo as an example.
+
 1. Fork the repo you want to contribute to.
 
-    You can't work directly in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] repos in the MicrosoftDocs GitHub org, such as the dynamics365smb-docs repo. The first thing you need to do is create a fork of the repo under your GitHub account. A fork is a copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/dynamics365smb-docs repo.  
+    You can't work directly in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] repos in the MicrosoftDocs GitHub org. The first thing you need to do is create a fork of the MicrosoftDocs/dynamics365smb-docs repo under your GitHub account. A fork is a copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/dynamics365smb-docs repo.  
 
     Alternatively, you can *clone* the Microsoft repo. This is useful if you don't intend to customize Microsoft's content, for example. But in many cases, *forking* the repo is more preferable.  
 
     Learn more at [Set up your GitHub account](/contribute/get-started-setup-github) and [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide.
 
-    > [!TIP]
+    > [!TIP]  
     > You aren't required to make your GitHub repos public. When you fork a public repo, you can specify whether the repo is public, private, or available only to specific GitHub accounts.
 
-2. Install GitHub Desktop (optional) and clone your forked repo.
+2. Install GitHub Desktop (optional) and clone your forked MicrosoftDocs/dynamics365smb-docs repo.
 
     GitHub Desktop makes is easy to work and collaborate with repos locally from your own desktop. Learn more at [GitHub Desktop](https://desktop.github.com/).  
 
@@ -36,7 +46,7 @@ To join Microsoft in the world of GitHub and Markdown, there are terminology and
 
     The help content is stored in the *business-central* folder of the repo. Articles use a syntax for formatting text called [MarkDig](https://github.com/lunet-io/markdig) Flavored Markdown, which is [CommonMark](https://commonmark.org/) compliant. To learn more about working with Markdown, see [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/).
 
-    If you want to work locally, you can edit using any text editor. Just save the file as an .md type. Here are two good tools that provide you with some nice features, including a preview of how the content will be rendered in HTML:
+    If you want to work locally, you can edit using any text editor. Just save the file as an .md type. Here are two good tools that provide you with some nice features, including a preview of how the content renders in HTML:
 
     - [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -45,7 +55,7 @@ To join Microsoft in the world of GitHub and Markdown, there are terminology and
 
         Atom has spell check and is good for managing many files
 
-Internally at Microsoft, some authors use Code, others use Atom, and for light-weight work, we tend to just edit the content in the browser. You can find more guidance for how to get started with Markdown in the [Docs Contributor Guide](/contribute/). This guide is published by the team that built the learn.microsoft.com site where the Business Central team publishes their docs.
+Internally at Microsoft, some authors use Visual Studio Code, others use Atom, and for light-weight work, we tend to just edit the content in the browser. You can find more guidance for how to get started with Markdown in the [Docs Contributor Guide](/contribute/). This guide is published by the team that built the learn.microsoft.com site where the Business Central team publishes their docs.
 
 For inspiration for how to build your own help website, go to [Quick Start](https://dotnet.github.io/docfx/) in the DocFx user assistance, or visit the [Azure App Service](/azure/app-service/) documentation.
 
@@ -59,12 +69,7 @@ You can use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev
 
 A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides for [!INCLUDE [prod_short](../includes/prod_short.md)]. There's good advice and best practices published in the [Microsoft Docs contributor guide](/contribute/). But this section provides information about how to apply that advice to the [!INCLUDE [prod_short](../includes/prod_short.md)] content.
 
-We have two public GitHub repos that you can contribute to:
-
-- [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)
-- [MicrosoftDocs/dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb)  
-
-For example, you might have a new article that you think would be beneficial, or you might have a correction to an existing article. If you would like to contribute to the [!INCLUDE [prod_short](../includes/prod_short.md)] content on the Microsoft Docs website, you create a *pull request* from your repo to the target repo. The Microsoft team will then review the request and include the changes as appropriate.
+For example, you might have a new article that you think would be beneficial, or you might have a correction to an existing article. If you would like to contribute to the [!INCLUDE [prod_short](../includes/prod_short.md)] content on the Microsoft Docs website, you create a *pull request* from your repo to the target repo. The Microsoft team then reviews the request and include the changes as appropriate.
 
 ### Get started
 
@@ -75,9 +80,9 @@ If you want to suggest a minor (or major) change to an existing article, follow 
 
     Choosing the button takes you to the source file on GitHub. In this example, that's [https://github.com/MicrosoftDocs/dynamics365smb-devitpro/blob/main/dev-itpro/webservices/return-obtain-json-document.md](https://github.com/MicrosoftDocs/dynamics365smb-devitpro/blob/main/dev-itpro/webservices/return-obtain-json-document.md).  
 
-    > [!NOTE]
+    > [!NOTE]  
     > If you aren't signed in with a GitHub account, you'll be prompted to sign in or create a new account. You can't contribute to the [!INCLUDE [prod_short](../includes/prod_short.md)] content without a GitHub account.
-3. In the top right corner of the Markdown file, choose the pencil icon. Depending on who you are, you'll be taken to a fork of Microsoft's repo, or you'll be able to work in a branch at Microsoft's repo.
+3. In the top right corner of the Markdown file, choose the pencil icon. Depending on who you are, you're taken to a fork of Microsoft's repo, or you're able to work in a branch at Microsoft's repo.
 4. Make the relevant changes (and remember to save them!).
 5. Submit a *pull request* to the source repo.
 
@@ -86,6 +91,8 @@ If you want to suggest a minor (or major) change to an existing article, follow 
     :::image type="content" source="../media/contributor-guide-contribute.png" alt-text="The start of a pull request with fork on the right and target to the left.":::
 
 Learn more at [Quick edits to existing documents](/contribute/#quick-edits-to-existing-documents).
+
+If you come across errors or omissions in the developer *reference* content, you can submit a PR to add, for example, a code example, or a note. See more in the [Autogenerated content in the developer and IT Pro content](contributor-guide.md#autogenerated-content-in-the-developer-and-it-pro-content).
 
 ### Get thorough
 
@@ -101,8 +108,51 @@ To create a pull request to the *MicrosoftDocs/dynamics365smb-docs* repo by usin
 
     :::image type="content" source="../media/contributor-guide-contribute.png" alt-text="The start of a pull request with fork on the right and target to the left.":::
 
-> [!TIP]
+> [!TIP]  
 > If you want to request brand new content, as opposed to contributing, we ask you to submit a request of type *Documentation* at [https://aka.ms/bcideas](https://aka.ms/bcideas).
+
+### Autogenerated content in the developer and IT Pro content
+
+Some of the content in the developer and IT Pro help is autogenerated from the product code. This content reflects the source code at the time of the release. You can tell that the content is autogenerated when it contains a note like illustrated with the `CommitBehavior` option type in the [CommitBehavior option type example](contributor-guide.md#commitbehavior-option-type-example). The autogenerated content has a `(START>DO_NOT_EDIT)` and a `(IMPORTANT: END>DO_NOT_EDIT)` section, which contains content that is overwritten when the autogeneration tooling is run. Any change needed to the content should be made in the source code, not in the Markdown file. If you come across an error in the autogenerated content, you can submit an issue on the GitHub repo instead.
+
+But, if you want to add a note, a tip, a remark, or an example, you can do that in the Markdown file after the `(IMPORTANT: END>DO_NOT_EDIT)` section. This is illustrated in the [Example of adding a note to autogenerated content](contributor-guide.md#example-of-adding-a-note-to-autogenerated-content). 
+
+#### CommitBehavior option type example
+
+```
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# CommitBehavior Option Type
+> **Version**: _Available or changed with runtime version 6.0._
+
+Specifies whether commit is allowed within the scope of the method.
+
+## Members
+|  Member  |  Description  |
+|----------------|---------------|
+|Ignore|Ignore commits within the scope of this method.|
+|Error|Throw an error when a commit is attempted within the scope of this method.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+```
+
+#### Example of adding a note to autogenerated content
+
+```
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+
+<auto-generated content>
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+### Remarks
+
+You must set the `CommitBehavior` property to `Ignore` if you want to use the `Commit` method within the scope of the method.
+
+```
 
 ## See also
 

@@ -74,5 +74,6 @@ About two months before a major update, you can try out new functionality in pre
 [Prepare for major updates with preview environments](preview-environments.md)  
 [Administration of Business Central Online](tenant-administration.md)  
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/Deployment.md)  
-[Get Started as a Reseller of Business Central Online](get-started-online.md)  
+[Get Started as a Reseller of Business Central online](get-started-online.md)  
 [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products)  
+[Performance in Business Central Online](../performance/performance-online.md)   

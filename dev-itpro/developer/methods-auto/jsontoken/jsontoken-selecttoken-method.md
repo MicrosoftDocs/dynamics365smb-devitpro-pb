@@ -70,7 +70,7 @@ We assume that the company token contains JSON data similar to the one below.
 }
 ```
 
-```
+```al
 local procedure SelectEmployeeSalary(companyData : JsonToken; employeeId : Text) salary : Decimal;
 var
     query : Text;

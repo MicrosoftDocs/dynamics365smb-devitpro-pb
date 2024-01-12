@@ -35,10 +35,10 @@ codeunit 50142 NoDebuggingOfMethod
         //Make something happen
     end;
 }
-
 ```
 
 Setting the attribute on variables. Each variable must be marked as `[NonDebuggable]`.
+
 ```AL
 codeunit 50143 NoDebuggingOfVar 
 {
@@ -50,7 +50,6 @@ codeunit 50143 NoDebuggingOfVar
         //Make something happen
     end;
 }
-
 ```
   
 ## See Also  

@@ -7,9 +7,12 @@ ms.date: 09/20/2023
 ms.topic: conceptual
 ms.author: brobledodiaz
 author: blrobl
+ms.collection: get-started
 ---
 
 # Working with labels
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 Labels are string constants displayed in the [!INCLUDE[prod_short](includes/prod_short.md)] client that can be translated into multiple languages, such as captions, descriptions, or messages. This way, the user interface can be displayed in different languages. For more information on how translation is carried out in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Multilanguage development](devenv-work-with-translation-files.md).
 
@@ -64,17 +67,7 @@ The **Label** variable names should have an approved suffix. For more informatio
 
 ### Report labels
 
-Report labels are used by RDL and Word report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. For a code example on how to use report labels for an RDL layout, see [Walkthrough: Designing a Report from Multiple Tables](devenv-walktrough-designing-reports-multiple-tables.md).
-
-Report labels are defined inside the `labels` control of a report object, as shown in the following code sample.
-
-```AL
-labels
-{
-  LabelName1 = 'Label Text1', Comment='Foo', MaxLength=999, Locked=true;
-  LabelName2 = 'Label Text2', Comment='Foo', Locked=false;
-} 
-```
+[!INCLUDE [report_labels](includes/include-report-labels.md)]
 
 ### Page labels
 
