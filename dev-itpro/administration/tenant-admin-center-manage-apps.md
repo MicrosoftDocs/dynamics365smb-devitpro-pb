@@ -123,7 +123,7 @@ Sometimes the update could fail because of a transient problem. Select **Retry**
    > When reporting issues to Microsoft Support, always provide the **Operation ID** displayed in the error message. This will help expedite the investigations. 
 
 ## Preview versions of AppSource Apps
-The publisher of an AppSource App may run a preview of a future version of their app or of a new app. Preview versions of apps can only be installed on Sandbox environments using a url including a `PREVIEWKEY` parameter, provided by the app publisher. Preview versions of apps behave differently from Available versions of apps in the following ways:
+The publisher of an AppSource App may run a preview of a future version of an available app or of a new app. Preview versions of apps can only be installed on Sandbox environments using a url including a `PREVIEWKEY` parameter, provided by the app publisher. Preview versions of apps behave differently from Available versions of apps in the following ways:
 
 > [!Note]
 > Preview versions of AppSource apps is supported for Sandbox environments on version 23.0 and higher.
