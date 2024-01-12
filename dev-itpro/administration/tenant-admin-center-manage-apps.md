@@ -136,7 +136,7 @@ The publisher of an AppSource App may run a preview of a future version of their
 - Installed Preview versions will automatically update to the latest publicly available version with the **App Update Cadence** set for the environment if the latest publicly available version is a higher version than the installed Preview version.
 - It is not visible in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] or on the Extension Management page in the environment that an installed version of an app is a preview version. [Extension Lifecycle Trace Telemetry signals](/telemetry-extension-lifecycle-trace.md) **LC0010** and **LC00022** emitted to the Application Insights resource set up for the environment on which the app is being installed include customDimensions `extensionAvailability` and `extensionPreviewKeyProvided` to indicate whether the signal relates to Preview or Public version of an app.
 
-[Learn more about Preview versions of AppSource Apps.](../developer/devenv-checklist-submission-faq.md).
+[Learn more about Preview versions of AppSource Apps](../developer/devenv-checklist-submission-faq.md).
 
 
 ## See also
