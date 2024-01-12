@@ -26,10 +26,11 @@ When you try to import an a control add-in file client from the **Control Add-in
 
 ```
 Can't open file`
-[web clinet URL] can't open files in this folder because it cotains system files`
+
+[URL] can't open files in this folder because it cotains system files`
 ```
 
-`[web client URL]` is the URL the Business Central web client, for example, `http://localhost:8080`.
+`[URL]` is the URL of your Business Central web client, for example, `http://localhost:8080`.
 
 ### Workaround
 
