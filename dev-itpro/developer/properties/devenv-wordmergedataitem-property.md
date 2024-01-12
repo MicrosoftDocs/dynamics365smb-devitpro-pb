@@ -29,7 +29,7 @@ Specifies the root-level DataItem that is used to generate separate reports for 
 WordMergeDataItem = MyDataItem; // MyDataItem must be present as a dataitem in the report dataset
 ```
 
-## Remark
+## Remarks
 
 The `WordMergeDataItem` property is only applied when rendering a report using a Word layout.
 
@@ -39,7 +39,7 @@ When you specify a dataitem in the `WordMergeDataItem` property, the [!INCLUDE[p
 
 The following example is showing how the `WordMergeDataItem` property is used on the "Standard Sales - Invoice" report when rendered with a Word layout.
 
-Here, the Word layout will be applied to each element in the *Header* dataitem. Thus, if you have defined a different first page, page numbers, totals at the end, and similar report design elements in the Word layout, they will be "reset" for each element in the *Header* dataitem.
+Here, the Word layout will be applied to each element in the *Header* dataitem. Thus, if you have defined a different first page, page numbers, totals at the end, and similar report design elements in the Word layout, they'll be "reset" for each element in the *Header* dataitem.
 
 
 ```AL
