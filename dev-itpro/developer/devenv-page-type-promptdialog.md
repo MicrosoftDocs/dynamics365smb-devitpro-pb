@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: 
 ms.topic: overview
 ms.collection: 
-ms.date: 11/10/2023
+ms.date: 01/11/2024
 ms.custom: bap-template
 ---
 
@@ -40,6 +40,12 @@ The `PromptDialog` page type has three areas, which are `Prompt`, `Content`, and
 The following example describes a page, which is a PromptDialog page, set with the `PromptDialog` option. The `Extensible = false;` is a mandatory setting, to ensure that the page isn't extended so that customers can trust the AI experience implemented.
 
 Use the `IsPreview` property to indicate to your customers that you're using the feature in preview, and that the feature might change in the future as you gather feedback. The `IsPreview` property adds a specific note in the UI to indicate that the feature is in preview. It's by default set to `false`. 
+
+The page calls the RunGeneration method, which is a method that *you must implement yourself*. This is where you call the Copilot API, and get the results back. The `RunGeneration` method is called when the user clicks the **Generate** action. The **Generate** action is a system action that can be used on this page type and it's used to trigger the copilot interaction. The **Generate** action is also used to regenerate the suggestion, if the user wants to change the input to copilot.
+
+For an example on how to implement the `RunGeneration` method, see [BCTech samples AzureOpenAI](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Basic_ItemSubstitution/PromptDialog/ItemSubstAIProposal.Page.al#L111). 
+
+For an example on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
 
 
 ```al
@@ -127,7 +133,7 @@ page 50100 MyCopilotPage
             // You can have custom behavior for the main system actions in a PromptDialog page, such as generating a suggestion with copilot, regenerate, or discard 
             // the suggestion. When you develop a Copilot feature, remember: the user should always be in control (the user must confirm anything Copilot suggests 
             // before any change is saved).
-            // This is also the reason why you cannot have a physical SourceTable in a PromptDialog page (you either use a temporary table, or no table).
+            // This is also the reason why you can't have a physical SourceTable in a PromptDialog page (you either use a temporary table, or no table).
 
             systemaction(Generate)
             {
@@ -136,7 +142,7 @@ page 50100 MyCopilotPage
 
                 trigger OnAction()
                 begin
-                    // The code triggering the copilot interaction.
+                    // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
                     RunGeneration();
                 end;
             }
@@ -180,6 +186,7 @@ page 50100 MyCopilotPage
                 
                 trigger OnAction()
                 begin
+                    // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
                     RunGeneration();
                 end;
             }
