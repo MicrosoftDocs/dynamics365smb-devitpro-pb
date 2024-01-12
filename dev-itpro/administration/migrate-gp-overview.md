@@ -36,6 +36,14 @@ The following figure illustrates the main components involved in the data migrat
 
 ### What data is migrated
 
+In general, the cloud migration tool migrates the following data:
+
+- System and company setup, such as fiscal periods, posting periods, worflows flows, and so on.
+- Master data for accounts, customers, vendors, and items
+- Transactional data  
+- Classes for customers, vendors, and items
+- Vendor 1099 
+
 
 
 ### How data is migrated 
@@ -61,6 +69,9 @@ If you don't want data in [!INCLUDE[prod_short](../developer/includes/prod_short
 <!--If your data source is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, several stored procedures will be added to the SQL Server instance that you define. These stored procedures are required to migrate data from your SQL Server database to the Azure SQL server associated with your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant.  -->
 
 The main steps in a migration process are:
+
+<!-- add gp assessment tool for https://bcmigrationassessments.com/ -->
+
 
 1. Have a target environment with a paid subscription  
 2. Determine which data to migrate.
@@ -106,9 +117,13 @@ There are some scenarios where it will be necessary for you to run the cloud mig
 
 The following list highlights a few examples:
 
+<!-- 
 * Multiple companies in on-premises
 
-  One example is if you want to add more companies to the migration, or if you want to change the companies to migrate, run the assisted setup guide again. A more efficient option, though, is to use the **Select Companies to Migrate** action from the **Cloud Migration Management** page.  
+  One example is if you want to add more companies to the migration, or if you want to change the companies to migrate, run the assisted setup guide again. A more efficient option, though, is to use the **Select Companies to Migrate** action from the **Cloud Migration Management** page.  -->
+
+To run multiple times, you nee to run cloud migrat setup agian.
+
 
 * Add tenants to an existing runtime service  
 
@@ -117,12 +132,6 @@ The following list highlights a few examples:
 In both examples, you'll be making updates to an existing runtime service. When you get to the point of the wizard where you can specify an existing runtime services name, open the Microsoft Integration Runtime Service Manager and enter the runtime name in the field in the wizard; you won't be allowed to copy/paste. The runtime service will identify that you're making updates to an existing service and won't create a new one.  
 
 Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline will be created for that tenant. Regenerating an Azure Data Factory (ADF) key may be done using the **Cloud Migration Management** page in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. For more information, see the [Run the assisted setup guide](#run-the-assisted-setup-guide) section.  
-
-> [!TIP]
-> If you are using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the same setup guide is also available in your on-premises solution. You will automatically be redirected to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online to continue the configuration process.
-
-> [!CAUTION]
-> If you have mapped users in the first run of the cloud migration setup guide, then do not choose the **Define User Mappings** action again in subsequent runs.
 
 ## Business Central permission sets
 
