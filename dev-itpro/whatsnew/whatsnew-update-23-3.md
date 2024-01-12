@@ -3,7 +3,7 @@ title: Update 23.3 for Microsoft Dynamics 365 Business Central 2023 Release Wave
 description: Get an overview of new and changed capabilities in the 23.3 update of Business Central online, which is part of 2023 release wave 2.
 ms.author: a-enielsson
 ms.custom: bap-template
-ms.date: 01/03/2023
+ms.date: 01/12/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: EmmaNielsson
@@ -73,8 +73,7 @@ The Invoice Post. Buffer table is replaced by the use of the Invoice Posting int
 If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to [Extending G/L Entry Aggregations](/dynamics365/business-central/dev-itpro/developer/devenv-invoice-posting-example) When Posting Invoices. 
 - New extensible exchange rate adjustment, including posting review feature is generally available with Update 23.0 and becoming mandatory in Update 26.0 (2025 Release Wave 1) The legacy Exchange Rates Adjustment Report is being replaced by a new capability that increases extensibility and makes it easier to comply with local and industry-specific requirements. It also gives you more control over exchange rate adjustments with a posting preview and how dimension values are post when you adjust exchange rate, and better reporting. 
 
-If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to
-Extending Currency Exchange Rate Adjustments. 
+If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to [Extending Currency Exchange Rate Adjustments](/dynamics365/business-central/dev-itpro/developer/devenv-extend-exchange-rates). 
 
 Work with your partner to update extensions and apps you have installed before above features become mandatory. To view complete list of optional features and features that are becoming mandatory, go to [aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt).
 
