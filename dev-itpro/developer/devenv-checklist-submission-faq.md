@@ -180,7 +180,7 @@ For example, if you have version 1.0.0.0 as publicly available in AppSource and 
 
 ### Can the submission for one offer depend on preview versions of libraries from another offer?
 
-Dependencies which are not included in the submission will be downloaded automatically if they're publicly available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries/regions. If you didn't include the dependencies for your app and they are not available or if they are only available as Preview, your submission will fail during the "Automated Application Validation" stage. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
+Dependencies which are not included in the submission will be downloaded automatically if they're publicly available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries/regions. Your submission will fail during the "Automated Application Validation" stage if you didn't include the dependencies for your app and they are not publicly available. The submission will also fail if the dependencies are only available as Preview. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
 
 ## Questions about Azure Application Insights usage during AppSource submissions
 

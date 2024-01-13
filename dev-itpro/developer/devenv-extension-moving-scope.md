@@ -76,6 +76,9 @@ For a definition of the different extension types and their scope, see [Extensio
 
 Publishing an AppSource app to a sandbox environment as a DEV extension is a common scenario when you want to show a preview of your app to a customer or during active development.
 
+> [!NOTE]  
+> From [!INCLUDE[prod_short](../includes/prod_short.md)] 2023 release wave 2, it is possible to install preview of AppSource apps on customer environments without publishing them as DEV extensions. For more information, see [Technical Validation FAQ](../developer/devenv-checklist-submission-faq.md).
+
 ### Identity requirements for publishing an AppSource app as a DEV extension
 
 - DEV extensions should have a different app `id` because there might be other global apps published to your service and they'll collide. If you don't change the app `id`, the app that you've published from Visual Studio Code to a developer sandbox will be automatically unpublished from your environment if another user tries to install the AppSource app in their environment.
