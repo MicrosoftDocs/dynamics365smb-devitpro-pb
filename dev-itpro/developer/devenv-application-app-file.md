@@ -65,13 +65,37 @@ The `app.json` file of the `Microsoft_Application.app` file looks like the follo
 }
 
 ```
-If you have a code-customized base application, the file can be edited to reflect the dependency to this instead. To do so, update the `"dependencies": []` section and change the `"appId":  "437dbf0e-84ff-417a-965d-ed2bb9650972"` to the `appId` of your code-customized base application. You can update the `"name"` and `"publisher"` information to match too.
+Below is an example of a code-customized base application.
+
+```json
+{
+    "id":  "782bdd79-85e1-44d5-b221-0c630bba494a",
+    "name":  "Customized Base Application",
+    "publisher":  "PartnerSolutions",
+    "version":  "15.3.0.0",
+    "propagateDependencies":  true,
+    "logo":  "ExtensionLogo.png",
+    "privacyStatement":  "https://go.microsoft.com/fwlink/?LinkId=724009",
+    "EULA":  "https://go.microsoft.com/fwlink/?linkid=2009120",
+    "help":  "https://go.microsoft.com/fwlink/?linkid=2104024",
+    "url":  "https://go.microsoft.com/fwlink/?LinkId=724011",
+    "screenshots":  [
+
+                    ],
+    "platform":  "15.0.0.0",
+    "showMyCode":  true,
+    "brief":  "Application (W1)"
+}
+
+```
+
+The `Microsoft_Application.app` file can be edited to use the code-customized base application as a dependency. To do so, update the `"dependencies": []` section and change the `"appId":  "437dbf0e-84ff-417a-965d-ed2bb9650972"` to the `appId` of your code-customized base application. You should update the `"name"` and `"publisher"` information to match too. Using the information from the example above, the dependency would look like this.
 
 ```json
 ...
 "dependencies":  [
                          {
-                             "appId":  "<appId of the code-customized base app>",
+                             "appId":  "782bdd79-85e1-44d5-b221-0c630bba494a",
                              "name":  "Customized Base Application",
                              "publisher":  "PartnerSolutions",
                              "version":  "15.3.0.0"
