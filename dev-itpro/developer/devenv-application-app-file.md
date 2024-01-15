@@ -24,7 +24,7 @@ The file name of the reference is `Microsoft_Application.app` and in the app.jso
 > The partner who redefines the application must ensure that extensions that are dependent on the `Application` compile and work. This can be ensured, for example, by not introducing any breaking changes.
 
 > [!IMPORTANT]  
-> If you have modified the `Microsoft_Application.app` file, you can rename the file name, and change information about the `publisher`, but it is important to keep `"name": "Application"` in the extension, which is what is being checked for in terms of symbols references. It is also important to keep the `propagateDependencies` set to `true`. The `version` must be set to the version of the Microsoft base application with which it is compatible. The `id` must be changed to reference the app ID of the code-customized base application.
+> If you have modified the `Microsoft_Application.app` file, you can rename the file name. You should change information about the `publisher` and it is important to keep `"name": "Application"` in the extension, which is what is being checked for in terms of symbols references. It is also important to keep the `propagateDependencies` set to `true`. The `version` must be set to the version of the Microsoft base application with which it is compatible. The `id` must be changed to reference the app ID of the code-customized base application.
 
 ## Changing the app.json file for a code-customized base application
 
@@ -65,12 +65,12 @@ The `app.json` file of the `Microsoft_Application.app` file looks like the follo
 }
 
 ```
-Below is an example of a code-customized base application.
+The `Microsoft_Application.app` file can be edited to use the code-customized base application as a dependency. To do so, update the `"dependencies": []` section and change the `"appId":  "437dbf0e-84ff-417a-965d-ed2bb9650972"` to the `appId` of your code-customized base application. You should update the `"name"` and `"publisher"` information to match too. Here is an example of a modified `Microsoft_Application.app` file using the ifnormation above.
 
 ```json
 {
-    "id":  "782bdd79-85e1-44d5-b221-0c630bba494a",
-    "name":  "Customized Base Application",
+    "id":  "<appId of the Application app>",
+    "name":  "Application",
     "publisher":  "PartnerSolutions",
     "version":  "15.3.0.0",
     "propagateDependencies":  true,
@@ -79,6 +79,20 @@ Below is an example of a code-customized base application.
     "EULA":  "https://go.microsoft.com/fwlink/?linkid=2009120",
     "help":  "https://go.microsoft.com/fwlink/?linkid=2104024",
     "url":  "https://go.microsoft.com/fwlink/?LinkId=724011",
+    "dependencies":  [
+                         {
+                             "appId":  "<appId of the code-customized base app>",
+                             "name":  "Customized Base Application",
+                             "publisher":  "PartnerSolutions",
+                             "version":  "15.3.0.0"
+                         },
+                         {
+                             "appId":  "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+                             "name":  "System Application",
+                             "publisher":  "Microsoft",
+                             "version":  "15.3.0.0"
+                         }
+                     ],
     "screenshots":  [
 
                     ],
@@ -87,22 +101,6 @@ Below is an example of a code-customized base application.
     "brief":  "Application (W1)"
 }
 
-```
-
-The `Microsoft_Application.app` file can be edited to use the code-customized base application as a dependency. To do so, update the `"dependencies": []` section and change the `"appId":  "437dbf0e-84ff-417a-965d-ed2bb9650972"` to the `appId` of your code-customized base application. You should update the `"name"` and `"publisher"` information to match too. Using the information from the example above, the dependency would look like this.
-
-```json
-...
-"dependencies":  [
-                         {
-                             "appId":  "782bdd79-85e1-44d5-b221-0c630bba494a",
-                             "name":  "Customized Base Application",
-                             "publisher":  "PartnerSolutions",
-                             "version":  "15.3.0.0"
-                         },
-                         ...
-                     ],
-...
 ```
 
 ## Up-taking the Application app
