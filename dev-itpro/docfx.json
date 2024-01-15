@@ -76,7 +76,6 @@
         "whatsnew/*.md": "SusanneWindfeldPedersen"
       },
       "ms.service": {
-        "**.*": "dynamics365-business-central",
         "upgrade/*.md": "dynamics-365-op"
       }
     },
