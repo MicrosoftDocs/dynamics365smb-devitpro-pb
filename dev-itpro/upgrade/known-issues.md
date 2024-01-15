@@ -37,7 +37,7 @@ Can't open file`
 You have two options to work around this issue:
 
 - Use the Set-NAVAddin cmdlet of the Business Central Administration Shell as described in [Upgrade control add-ins](upgrading-cumulative-update-v23.md#controladdins). 
-- If you to use the Business Central web client, then copy the file to another folder on your PC, like Documents or Downloads, and try again.
+- If you want to use the Business Central web client, then copy the files to another folder on your PC, like Documents or Downloads, and try again.
 
 ## Removed table fields in the Czech (CZ) base application cause sync errors
 
