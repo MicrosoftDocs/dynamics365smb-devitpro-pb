@@ -65,25 +65,25 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |SQL bulk import batch size|Specifies how many SQL memory chunks a data import must be distributed across.| 448|
 -->
 
-## <a name="Task"></a>Asynchronous task limits (per environment)
+## <a name="Task"></a>Asynchronous task limits
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |-------|--------------------------------------------------------------------------------|-----|
-|Background sessions default wait timeout|The maximum amount of time in hours for a background session to wait before being processed.|8|
-|Background sessions max concurrency|The maximum number of background sessions that can be processed at the same time. Background sessions that come in when this limit is exceeded will wait in a queue until a time slot becomes available.|10|
-|Background sessions max queued|The maximum number of background sessions that can be queued, waiting to be processed. When this limit is exceeded, an error occurs.|100|
+|Background sessions default waiting timeout|The maximum amount of time in hours for a background session to wait before being processed.|8|
+|Background sessions max concurrency|The maximum number of background sessions per environment that can be processed at the same time in a server instance. Background sessions that come in when this limit is exceeded will wait in a queue until a time slot becomes available.|10|
+|Background sessions max queue length|The maximum number of background sessions per environment that can be queued, waiting to be processed in a server instance. When this limit is exceeded, an error occurs.|100|
 |Child sessions max concurrency|The maximum number of child sessions per parent session that can be processed at the same time. Child sessions that come in when this limit is exceeded will wait in a queue until a time slot becomes available.|5|
 |Child sessions max queue length|The maximum number of child sessions per parent session that can be queued, waiting to be processed. When this limit is exceeded, an error occurs.|100|
-|Maximum concurrently running scheduled tasks|The maximum number of tasks that could simultaneously run in an environment was set to 3 in the past. To increase throughput, this per-environment limit has now been changed to a per-user limit |See the current [per-user limit](#TaskUser).|
+|Scheduled tasks max concurrency|The maximum number of scheduled tasks that could simultaneously run in an environment was set to 3 in the past. To increase throughput, this per-environment limit has now been changed to a per-user limit |See the current [per-user limit](#TaskUser).|
 |Maximum session recursion depth|The maximum number of nested sessions that can be created before being considered excessive recursion. When this limit is exceeded, an error occurs with the following message: **Excessive recursive session creation detected, original session ID: \[id\], current session ID: \[id\].**|14|
 |Page background task default timeout|The default amount of time in minutes for a page background task to run before being canceled. A timeout value can also be provided when page background tasks are enqueued at run-time. This limit is used if no timeout value is provided.|2|
 |Page background task max timeout|The maximum amount of time in minutes for a page background task to run before being canceled. A timeout value can also be provided when page background tasks are enqueued at run-time. Timeout values greater than this limit will be ignored.|10|
 
-## <a name="TaskUser"></a>Asynchronous task limits (per user)
+## <a name="TaskUser"></a>Scheduled task limits (per user)
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |-------|--------------------------------------------------------------------------------|-----|
-|Maximum concurrently running scheduled tasks|The maximum number of tasks that can be simultaneously run by a user. The more users you have in your environment, the more tasks you can simultaneously run in it, as long as we can continuously scale our resources. If many tasks are running at the same time and we couldn't sufficiently scale our resources, you might experience delays in running your tasks.|5, see [frequently asked questions on per-user limits](#FAQsUser).|
+|Scheduled tasks max concurrency|The maximum number of scheduled tasks that can be simultaneously run by a user. The more users you have in your environment, the more tasks you can simultaneously run in it, as long as we can continuously scale our resources. If many tasks are running at the same time and we couldn't sufficiently scale our resources, you might experience delays in running your tasks.|5, see [frequently asked questions on per-user limits](#FAQsUser).|
 
 ## <a name="Reports"></a>Report limits
 
@@ -166,13 +166,17 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 
 This section includes frequently asked questions on per-user limits. If you have questions that aren't answered, please submit them using the **This page** option in the **Feedback** section below.
 
-### How do these limits apply to how many requests or other resource consumption units a user is entitled to each day?
+### How do these limits apply to how many tasks, requests, or other resource consumption units a user is entitled to each day?
 
 These operational limits control "how fast" you can consume resources simultaneously or in short periods (per second/minute) and are not related to entitlement quotas that control "how much" you can consume resources in longer periods (per day/week/month). At present, we haven't set definite entitlement quotas, but will do so in the future.
 
 ### Are limits applied differently for application users?
 
 No. These operational limits are applied to all users in the same way.
+
+### Do more users mean more throughput per environment?
+
+Yes, you can increase throughput by distributing your workload across multiple users. The more users you have in your environment, the more resources you can simultaneously consume in it, as long as we can continuously scale our resources. If a lot of resources are consumed at the same time and we couldn't sufficiently scale our resources, you might experience delays/throttling in consuming your resources.
 
 ## See Also
 

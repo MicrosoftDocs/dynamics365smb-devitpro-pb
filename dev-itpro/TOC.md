@@ -510,7 +510,6 @@
 #### [Viewing table data](developer/devenv-view-table-data.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
 
-
 ## Programming in the AL language
 ### [A tour of the AL language](developer/devenv-programming-in-al.md)
 
@@ -520,6 +519,7 @@
 ##### [Simple statements](developer/devenv-al-simple-statements.md)
 ##### [Control statements](developer/devenv-al-control-statements.md)
 #### [Access modifiers](developer/devenv-using-access-modifiers.md)
+#### [AL operators](developer/devenv-al-operators.md)
 #### [Comments](developer/devenv-xml-comments.md)
 
 ### Language elements
