@@ -938,6 +938,11 @@
 ### [Overview](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)
 ### [FAQ for developing in AL](developer/devenv-dev-faq.md)
+### Variables, types, and operators
+#### [AL operators](developer/devenv-al-operators.md)
+#### [Arithmetic operators](developer/devenv-al-arithmetic-operators.md)
+#### [Boolean operators](developer/devenv-al-boolean-operators.md)
+#### [Relational operators](developer/devenv-al-relational-operators.md)
 ### [AL simple statements](developer/devenv-al-simple-statements.md)
 ### [AL control statements](developer/devenv-al-control-statements.md)
 ### [AL complex types](developer/devenv-al-complextypes.md)
