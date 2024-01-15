@@ -5,7 +5,7 @@ author: jswymer
 ms.custom: bab-template
 ms.date: 11/21/2023
 ms.reviewer: jswymer
-ms.service: dynamics-365-business-central
+
 ms.topic: conceptual
 ms.author: jswymer
 ms.collection: get-started

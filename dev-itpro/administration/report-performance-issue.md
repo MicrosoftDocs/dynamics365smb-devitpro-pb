@@ -5,7 +5,7 @@ author: kennienp
 ms.topic: conceptual
 ms.date: 01/02/2024
 ms.author: kepontop
-ms.service: dynamics-365-business-central
+
 ms.custom: bap-template
 ms.reviewer: jswymer
 ---

@@ -4,7 +4,7 @@ description: Learn how to troubleshoot issues with user personalization.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
-ms.service: dynamics-365-business-central
+
 ms.topic: troubleshooting
 ms.date: 12/21/2022
 ms.custom: bap-template

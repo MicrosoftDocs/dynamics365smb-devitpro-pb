@@ -5,7 +5,7 @@ author: andersgMSFT
 ms.author: andersg
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.service: dynamics-365-business-central
+
 ms.date: 04/24/2023
 ms.custom: bap-template
 ---

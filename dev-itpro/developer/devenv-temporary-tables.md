@@ -4,7 +4,7 @@ description: Learn about temporary tables in Business Central
 ms.custom: bap-template
 ms.date: 02/24/2023
 ms.reviewer: solsen
-ms.service: dynamics-365-business-central
+
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.author: solsen

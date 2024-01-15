@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.search.keywords: telemetry, onboarding
 ms.date: 12/21/2023
 ms.author: kepontop
-ms.service: dynamics-365-business-central
+
 ms.reviewer: brentholtorf
 ms.custom: bap-template
 ---

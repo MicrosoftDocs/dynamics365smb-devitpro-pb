@@ -4,7 +4,7 @@ description: Learn how to troubleshoot issues with profile configuration.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
-ms.service: dynamics-365-business-central
+
 ms.topic: troubleshooting
 ms.date: 12/22/2022
 ms.custom: bap-template

@@ -7,7 +7,7 @@ ms.custom: bap-template
 ms.date: 12/08/2022
 ms.topic: conceptual
 ms.author: solsen
-ms.service: dynamics-365-business-central
+
 ---
 
 # Views

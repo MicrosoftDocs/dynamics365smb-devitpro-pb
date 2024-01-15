@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.search.keywords: Power BI, reports, data, data warehouse, etl
 author: kennieNP
 ms.author: kepontop
-ms.service: dynamics-365-business-central
+
 ---
 
 # Extract data from Business Central

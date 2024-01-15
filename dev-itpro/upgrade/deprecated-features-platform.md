@@ -4,7 +4,7 @@ description: Describes the features that have been removed or replaced in the pl
 author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: jswymer
-ms.service: dynamics-365-business-central
+
 ms.topic: conceptual
 ms.date: 01/09/2024
 ms.custom: bap-template

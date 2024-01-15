@@ -4,7 +4,7 @@ description: Learn about scheduled tasks and how the task scheduler works.
 ms.custom: na
 ms.date: 12/18/2023
 ms.reviewer: jswymer
-ms.service: dynamics-365-business-central
+
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer

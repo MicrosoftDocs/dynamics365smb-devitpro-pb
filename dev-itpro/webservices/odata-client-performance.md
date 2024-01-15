@@ -4,7 +4,7 @@ description: Learn about how to develop efficient and fast OData/API clients for
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.service: dynamics-365-business-central
+
 ms.topic: conceptual
 ms.author: kepontop
 ms.date: 07/03/2023

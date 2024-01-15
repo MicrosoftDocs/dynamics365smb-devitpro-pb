@@ -7,7 +7,7 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 05/12/2023
 ms.author: jobulsin
 ms.reviewer: jswymer
-ms.service: dynamics-365-business-central
+
 ms.custom: bap-template
 ---
 

@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ms.search.keywords: cloud, migrate, saas, online
 ms.date: 11/30/2022
 ms.author: jswymer
-ms.service: dynamics-365-business-central
+
 ms.custom: bap-template
 ---
 

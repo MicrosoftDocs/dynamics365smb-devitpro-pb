@@ -4,7 +4,7 @@ description: This article provides recommendations to help you define your cloud
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics-365-business-central
+
 ms.topic: conceptual
 ms.date: 07/26/2023
 ms.custom: bap-template 

@@ -4,7 +4,7 @@ description: Learn about how to troubleshoot Business Central reports
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.service: dynamics-365-business-central
+
 ms.topic: conceptual
 ms.author: kepontop
 ms.date: 01/04/2024

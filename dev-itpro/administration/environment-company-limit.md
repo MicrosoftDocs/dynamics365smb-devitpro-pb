@@ -4,7 +4,7 @@ description: Learn about limitations on environment operations when the environm
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-ms.service: dynamics-365-business-central
+
 ms.date: 01/12/2023
 ms.custom: bap-template
 ---

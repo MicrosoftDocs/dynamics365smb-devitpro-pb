@@ -4,7 +4,7 @@ description: Learn how to set the isolation levels used when querying the Busine
 author: phduck 
 ms.author: magram 
 ms.reviewer: jswymer
-ms.service: dynamics-365-business-central
+
 ms.topic: conceptual
 ms.date: 01/08/2024
 ms.custom: bap-template

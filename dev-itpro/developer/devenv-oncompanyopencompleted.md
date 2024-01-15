@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: dynamics-365-business-central
+
 ms.author: jswymer
 ---
 # Moving from OnCompanyOpen

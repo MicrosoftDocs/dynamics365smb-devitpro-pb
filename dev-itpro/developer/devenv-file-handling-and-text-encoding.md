@@ -4,7 +4,7 @@ description: Understand how files are handled and text is encoded in Business Ce
 ms.custom: bap-template
 ms.date: 12/21/2023
 ms.reviewer: jswymer
-ms.service: dynamics-365-business-central
+
 ms.author: solsen
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

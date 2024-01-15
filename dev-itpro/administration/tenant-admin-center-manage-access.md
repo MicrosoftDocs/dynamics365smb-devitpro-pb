@@ -4,7 +4,7 @@ description: This article describes features in the admin center that help contr
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics-365-business-central
+
 ms.topic: how-to
 ms.date: 11/03/2022
 ms.custom: bap-template

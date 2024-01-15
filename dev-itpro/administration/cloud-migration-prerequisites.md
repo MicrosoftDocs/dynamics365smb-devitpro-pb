@@ -4,7 +4,6 @@ description: This article outlines requirements on the Business Central on-premi
 author: jswymer 
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics-365-business-central
 ms.topic: conceptual
 ms.date: 01/16/2023
 ms.custom: bap-template

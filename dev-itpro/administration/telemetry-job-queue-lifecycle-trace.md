@@ -3,7 +3,7 @@ title: Analyzing Job Queue Lifecycle Trace Telemetry
 description: Learn about the telemetry for job queue entries in Business Central  
 author: kennienp
 ms.topic: conceptual
-ms.service: dynamics-365-business-central
+
 ms.reviewer: jswymer
 ms.custom: bap-template
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry

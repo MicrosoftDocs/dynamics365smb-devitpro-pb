@@ -4,7 +4,7 @@ description: Learn about how to call external services using the HttpClient data
 ms.custom: bap-template
 ms.date: 01/08/2024
 ms.reviewer: jswymer
-ms.service: dynamics-365-business-central
+
 ms.topic: conceptual
 author: kennienp
 ms.author: kepontop
