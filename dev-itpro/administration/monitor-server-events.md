@@ -1,14 +1,11 @@
 ---
 title: "Monitoring Microsoft Dynamics 365 Business Central Server Events"
 description: Read about how you can monitor events on the server that hosts the Business Central server components for on-premises deployments.  
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.assetid: d7d57a32-f65e-4b02-bed8-86f1dfbf2fa8
-caps.latest.revision: 15
 ---
 # Monitoring Business Central Server Events
 You can monitor events on [!INCLUDE[server](../developer/includes/server.md)] to diagnose conditions and troubleshoot problems that affect operation and performance.  
