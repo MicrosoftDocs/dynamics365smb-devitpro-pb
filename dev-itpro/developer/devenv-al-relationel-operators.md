@@ -15,17 +15,17 @@ The relational operators in AL are used to compare expressions.
 
 ## Evaluation rules for relational operators
 
-The following table defines the evaluation rules for relational operators. The rules assume that the data types of the expressions can be compared. For a complete overview of comparable data types, refer to the section [Valid Uses of Relational Operators](#valid-uses-of-relational-operators).  
+The following table defines the evaluation rules for relational operators. The rules assume that the data types of the expressions can be compared. For a complete overview of comparable data types, refer to the section [Valid uses of relational operators](#valid-uses-of-relational-operators).  
 
 |Operator|Operator name|Expression|Resulting date type|  
 |--------|-------------|----------|-------------------|  
-|`>`|Greater than|Expr > Expr|Boolean|  
-|`\<`|Less than|Expr \< Expr|Boolean|  
-|`>=`|Greater than or equal|Expr >= Expr|Boolean|  
-|`\<=`|Less than or equal|Expr \<= Expr|Boolean|  
-|`\<>`|Not equal to|Expr \<> Expr|Boolean|  
-|`=`|Equal to|Expr = Expr|Boolean|  
-|`in`|In range|Expr IN \[Valueset\]|Boolean|  
+|`>`|Greater than|`Expr > Expr`|Boolean|  
+|`\<`|Less than|`Expr \< Expr`|Boolean|  
+|`>=`|Greater than or equal|`Expr >= Expr`|Boolean|  
+|`\<=`|Less than or equal|`Expr \<= Expr`|Boolean|  
+|`\<>`|Not equal to|`Expr \<> Expr`|Boolean|  
+|`=`|Equal to|`Expr = Expr`|Boolean|  
+|`in`|In range|`Expr in [Valueset]`|Boolean|  
 
 > [!NOTE]  
 > When using relational operators, uppercase and lowercase letters in strings are significant. Furthermore, the comparison is based on the built-in character comparison table of the system, that is, not by comparing "true" ASCII characters.  
