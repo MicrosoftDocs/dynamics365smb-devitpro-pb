@@ -4,7 +4,6 @@ description: Describes how to upgrade an unmodified Business Central versions 15
 ms.custom: bap-template
 ms.date: 08/14/2023
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
