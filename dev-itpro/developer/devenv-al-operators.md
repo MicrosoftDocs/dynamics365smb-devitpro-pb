@@ -41,7 +41,7 @@ Arithmetic operators are used to perform arithmetic operations on numeric operan
 |`div`|Integer division|
 |`mod`| Modulus|
 
-Comparison operators are used to compare two values. The result of a comparison is a Boolean value, that is, true or false.
+Comparison operators are used to compare two values. The result of a comparison is a Boolean value, that is, `true` or `false`.
 
 |AL comparison operator | Meaning |
 |:---|:---|
@@ -71,7 +71,7 @@ Compound assignment operators perform an arithmetic operation and assign the res
 |`/=`|Division|
 
 
-The `+` and the `-` operators can be used both as unary and binary operators. The `NOT` operator can only be used as a unary operator. All the other operators are binary.
+The `+` and the `-` operators can be used both as unary and binary operators. The `not` operator can only be used as a unary operator. All the other operators are binary.
 
 Most of the operators can be used on different data types. The action of these operators may depend on the data type of the expression that they are used on.
 
@@ -106,17 +106,17 @@ In this example, the "+" operator is used as a unary operator to indicate sign.
 
 Operators are organized in a hierarchy that determines the order in which the operands in a given expression are evaluated. The following list shows the order of precedence of the AL operators:
 
-1. .(fields in records), [ ] (indexing), () (parentheses), :: (scope)
+1. `.`(fields in records), `[ ]` (indexing), `()` (parentheses), `::` (scope)
 
-2. NOT, - (unary), + (unary)
+2. `not`, `-` (unary), `+` (unary)
 
-3. *,/,DIV, MOD, AND, XOR
+3. `*`, `/`, `div`, `mod`, `and`, `xor`
 
-4. +, -, OR
+4. `+`, `-`, `or`
 
-5. , <. >=, <=, = <>, IN
+5. `>`, `>=`, `<`, `<=`, `=`, `<>`, `in`
 
-6. .. (range)
+6. `..` (range)
 
 ### Example 1
 
