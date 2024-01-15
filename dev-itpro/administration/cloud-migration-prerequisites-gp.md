@@ -35,10 +35,10 @@ This article outlines requirements on the [!INCLUDE [dyn_gp_prod](../includes/dy
   > [!IMPORTANT]
   > Migrating from [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] using the **Cloud Migration Setup** assisted setup guide is currently only supported for the following markets:  
   >
-  > * United States
-  > * Canada
-  > * United Kingdom
-  > * Australia
+  > - United States
+  > - Canada
+  > - United Kingdom
+  > - Australia
 
 ## Source on-premises environment
 
