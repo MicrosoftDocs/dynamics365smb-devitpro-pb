@@ -447,6 +447,7 @@ actions
             Caption = 'Generate';
             trigger OnAction()
             begin
+                // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
                 RunGeneration();
             end;
         }
@@ -457,6 +458,7 @@ actions
             ToolTip = 'Regenerate the Job proposed by Dynamics 365 Copilot.';
             trigger OnAction()
             begin
+                // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
                 RunGeneration();
             end;
         }
