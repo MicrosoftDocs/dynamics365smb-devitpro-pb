@@ -11,7 +11,7 @@ author: KennieNP
 
 # Boolean (logical) operators
 
-Logical operators can only be used with arguments that can be evaluated to Boolean.  
+Logical operators can only be used with arguments that can be evaluated to a boolean.  
 
 ## Boolean operators
 
