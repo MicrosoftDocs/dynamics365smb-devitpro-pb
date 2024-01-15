@@ -27,4 +27,4 @@ As the following table shows, the `not` operator is a unary prefix operator. Thi
 ## See also
 <!-- more links -->
 [Arithmetic operators](devenv-al-arithmetic-operators.md)  
-[Relational operators](devenv-relational-operators.md)
+[Relational operators](devenv-al-relational-operators.md)
