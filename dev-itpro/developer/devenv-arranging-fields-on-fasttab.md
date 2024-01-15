@@ -82,5 +82,5 @@ Using the GridLayout or FixedLayout controls, you can arrange fields in multiple
 ## See Also
 [Arranging Fields Using Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md)  
 [Pages Overview](devenv-pages-overview.md)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  
 [Table in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]](devenv-tables-overview.md)  

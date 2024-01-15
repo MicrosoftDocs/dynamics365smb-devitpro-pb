@@ -6,6 +6,7 @@ ms.custom: na
 ms.date: 08/30/2023
 ms.topic: overview
 ms.author: solsen
+ms.collection: get-started
 ---
 
 # AL Profiler overview

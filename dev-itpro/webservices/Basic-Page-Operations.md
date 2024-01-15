@@ -15,7 +15,7 @@ If you publish a page as a SOAP web service, it has a set of default operations 
 
 [!INCLUDE[avoid_ui_pages_as_ws](../includes/avoid_ui_pages_as_ws_note.md)]
 
-These operations match the actions a user can perform by interacting with a page using the [prod_short](../includes/prod_short.md) client. The same page- and table-based business logic is run.  
+These operations match the actions a user can perform by interacting with a page using the [!INCLUDE [prod_short](../includes/prod_short.md)] client. The same page- and table-based business logic is run.  
 
 The following table lists the operations and provides links to reference pages.  
 
