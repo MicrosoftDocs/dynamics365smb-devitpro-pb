@@ -2,7 +2,7 @@
 title:  Error method trace telemetry
 description: Learn about the Error method telemetry in Business Central  
 author: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

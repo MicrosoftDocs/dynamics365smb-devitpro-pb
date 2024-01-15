@@ -7,7 +7,7 @@ ms.reviewer: solsen
 ms.topic: conceptual
 ms.date: 10/27/2023
 ms.custom: bap-template
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ---
 
 # Analyzing environment validation telemetry

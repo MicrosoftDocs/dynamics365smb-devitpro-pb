@@ -7,7 +7,7 @@ ms.custom: bap-template
 ms.date: 01/26/2023
 ms.reviewer: na
 ms.topic: how-to
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ---
 
 # Register Business Central On-Premises in Microsoft Entra ID for Integrating with Other Services

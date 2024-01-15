@@ -2,7 +2,7 @@
 title: System Requirements for Business Central 2021 Release Wave 2
 description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central version 19 on-premises.
 ms.custom: bap-template
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: overview
 ms.date: 01/10/2022
 author: jswymer

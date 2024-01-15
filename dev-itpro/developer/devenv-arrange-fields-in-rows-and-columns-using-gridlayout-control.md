@@ -4,7 +4,7 @@ description: Fields in a FastTab are arranged automatically. Use Grid control to
 ms.custom: bap-template
 ms.date: 02/06/2023
 ms.reviewer: na
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer

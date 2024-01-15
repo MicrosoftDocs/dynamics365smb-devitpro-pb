@@ -4,7 +4,7 @@ description: This article offers guidance for refactoring the code in your AppSo
 author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: conceptual
 ms.date: 12/08/2022
 ms.custom: bap-template

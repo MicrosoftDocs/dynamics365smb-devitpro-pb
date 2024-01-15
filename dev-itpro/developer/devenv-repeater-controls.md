@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.custom: bap-template
 ms.date: 11/24/2022
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: conceptual
 ---
 

@@ -4,7 +4,7 @@ description: This article explains how to add multifactor authentication when yo
 author: jswymer
 ms.custom: bap-template
 ms.reviewer: na
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 11/13/2023

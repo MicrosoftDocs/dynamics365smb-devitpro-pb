@@ -3,7 +3,7 @@ title: Align SQL Table Definitions
 description: Learn what table properties need to be the same in on-premises and online database for cloud migration to work.
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: conceptual 
 ms.date: 11/25/2022
 ms.custom: bap-template

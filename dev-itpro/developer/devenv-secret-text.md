@@ -6,7 +6,7 @@ ms.author: sodragon
 ms.custom: bap-template
 ms.date: 12/20/2023
 ms.reviewer: na
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: conceptual
 ---
 

@@ -5,7 +5,7 @@ ms.author: solsen
 ms.custom: na
 ms.date: 12/08/2023
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

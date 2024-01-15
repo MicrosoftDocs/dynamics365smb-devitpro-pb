@@ -4,7 +4,7 @@ description: Introducing the action bar for Dynamics 365 Business Central
 author: jacobwj
 ms.author: solsen
 ms.reviewer: solsen
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: conceptual
 ms.date: 03/16/2023
 ms.custom: bap-template

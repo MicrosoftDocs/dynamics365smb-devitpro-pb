@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.search.keywords: Power BI, reports, faq, errors
 author: jswymer
 ms.author: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ---
 # Embed Power BI reports, scorecards, dashboards in pages
 

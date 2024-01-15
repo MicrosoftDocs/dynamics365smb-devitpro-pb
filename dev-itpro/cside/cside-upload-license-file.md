@@ -4,7 +4,7 @@ description: Describes how to upload a Business Central license when you deploy 
 ms.custom: bap-template
 ms.date: 10/10/2023
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: article
 ms.author: jswymer
 author: jswymer

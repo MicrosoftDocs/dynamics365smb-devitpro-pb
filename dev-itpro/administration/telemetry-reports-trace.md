@@ -8,7 +8,7 @@ ms.date: 01/04/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: bap-template
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ---
 
 # Analyzing Report Telemetry

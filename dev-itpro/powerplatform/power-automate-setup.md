@@ -4,7 +4,7 @@ description: Learn how to enable Power Automate for Business Central users.
 author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: how-to 
 ms.date: 05/23/2023
 ms.custom: bap-template 

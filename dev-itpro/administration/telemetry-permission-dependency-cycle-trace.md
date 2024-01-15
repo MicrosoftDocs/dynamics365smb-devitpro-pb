@@ -2,7 +2,7 @@
 title: Analyzing permission dependency cycle trace telemetry
 description: Learn about the permission dependency cycle trace  telemetry in Business Central  
 author: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: conceptual
 ms.search.keywords: administration, dependency cycle, permission set, telemetry
 ms.date: 12/20/2023

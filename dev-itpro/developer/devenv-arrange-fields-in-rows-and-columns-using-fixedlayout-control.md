@@ -4,7 +4,7 @@ description: A fixed control is used to arrange page fields in rows and columns,
 ms.custom: bap-template
 ms.date: 02/06/2023
 ms.reviewer: na
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer

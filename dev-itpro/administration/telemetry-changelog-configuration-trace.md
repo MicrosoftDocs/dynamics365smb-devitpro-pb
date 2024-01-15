@@ -3,7 +3,7 @@ title: Analyzing Changelog Configuration Changes Telemetry
 description: Learn about the telemetry for monitoring changes to changelog configuration in Business Central  
 author: kennienp
 ms.topic: conceptual
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
 ms.date: 10/23/2023
 ms.author: kepontop

@@ -4,7 +4,7 @@ description: Learn about how Business Central emits telemetry about web service 
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: conceptual
 ms.author: kepontop
 ms.date: 06/13/2023

@@ -5,7 +5,7 @@ author: bholtorf
 ms.custom: bap-template
 ms.date: 11/17/2023
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.search.form: 149000, 149001, 149003, 149004, 149005, 149006, 149007, 149008, 149009
 ms.topic: conceptual
 ms.author: bholtorf

@@ -4,7 +4,7 @@ description: An overview of tools and processes that help troubleshoot issues in
 ms.custom: na
 ms.date: 09/11/2023
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: overview
 ms.author: solsen
 author: SusanneWindfeldPedersen

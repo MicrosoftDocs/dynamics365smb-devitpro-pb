@@ -8,7 +8,7 @@ ms. search.keywords: cloud, edge
 ms.search.form: 2502, 4003
 ms.date: 11/30/2022
 ms.author: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.custom: bac-template
 ---
 

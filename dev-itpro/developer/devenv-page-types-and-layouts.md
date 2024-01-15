@@ -7,7 +7,7 @@ ms.date: 11/24/2022
 ms.reviewer: solsen
 ms.author: jswymer
 ms.topic: conceptual
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ---
 
 # Page types and layouts
