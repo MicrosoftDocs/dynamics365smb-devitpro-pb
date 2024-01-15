@@ -48,9 +48,9 @@ This article outlines requirements on the [!INCLUDE [dyn_gp_prod](../includes/dy
 
 - Database
 
-  The database can be hosted on SQL Server or Azure SQL Database.  
+  <!--The database can be hosted on SQL Server or Azure SQL Database.-->  
 
-  An SQL Server database must meet the following requirements:
+  The database can be hosted on SQL Server. The SQL Server database must meet the following requirements:
   - Uses SQL Server 2016 SP1 or later
   - Compatibility level set to 130 or higher
   - TCP/IP is enabled. For more information, refer to [Enable or Disable a Server Network Protocol](/sql/database-engine/configure-windows/enable-or-disable-a-server-network-protocol) in the SQL Server documentation. 
