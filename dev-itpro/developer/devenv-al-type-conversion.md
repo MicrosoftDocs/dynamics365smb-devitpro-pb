@@ -53,13 +53,13 @@ The following example shows the evaluation of a numeric expression.
 integer + decimal  
 ```  
 
-This expression contains two subexpressions of different data types. Before it can add these two subexpressions, the system must convert the leftmost subexpression to decimal.  
+This expression contains two sub expressions of different data types. Before it can add these two sub expressions, the system must convert the leftmost sub expression to decimal.  
 
 ```  
 decimal + decimal  
 ```  
 
-When the leftmost subexpression has been converted, the expression can be evaluated, and the resulting data type will be decimal.  
+When the leftmost sub expression has been converted, the expression can be evaluated, and the resulting data type will be decimal.  
 
 ```  
 decimal + decimal = decimal  
@@ -73,7 +73,7 @@ The following example shows the evaluation of a string expression.
 text + code  
 ```  
 
-This expression contains two subexpressions that must be concatenated. To do this, the system must convert the subexpression of the least general data type \(code\) to the most general data type \(text\).  
+This expression contains two sub expressions that must be concatenated. To do this, the system must convert the sub expression of the least general data type \(code\) to the most general data type \(text\).  
 
 ```  
 text + text  
