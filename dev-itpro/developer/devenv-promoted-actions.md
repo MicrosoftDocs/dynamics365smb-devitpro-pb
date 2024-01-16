@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 
 # Promoted Actions
 
-You can promote actions that are used more often than others and thereby ensure quick access to them. This type of actions is called *promoted actions*. Promoted actions are either placed in the Home menu or in suitable menus named so users know what to expect in each.  
+You can promote actions that are used more often than others and thereby ensure quick access to them. This type of actions is called *promoted actions*. Promoted actions are either placed in the Home menu or in suitable menus and groups named so users know what to expect in each.  
 
 Promoted actions can be used on Card, Document, List, ListPlus, and Worksheet pages to provide quick access to common tasks.
 
