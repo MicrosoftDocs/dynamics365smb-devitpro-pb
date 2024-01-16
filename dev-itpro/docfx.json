@@ -77,6 +77,9 @@
       },
       "ms.service": {
         "upgrade/*.md": "dynamics-365-op"
+      },
+      "ms.collection": {
+        "developer/ai-integration-landing-page.yml"
       }
     },
     "template": [],

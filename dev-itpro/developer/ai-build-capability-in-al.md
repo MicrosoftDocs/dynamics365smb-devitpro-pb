@@ -5,10 +5,10 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: 
 ms.topic: conceptual
-ms.collection: get-started
 ms.date: 12/20/2023
 ms.custom: bap-template
 ms.collection:
+  - get-started
   - bap-ai-copilot
 ---
 
