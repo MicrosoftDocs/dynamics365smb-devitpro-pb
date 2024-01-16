@@ -1,6 +1,6 @@
 ---
-title: "Creating a Word Layout Report"
-description: "Describes the steps involved in creating a report that uses a Word layout."
+title: Creating a Word layout report
+description: Describes the steps involved in creating a report that uses a Word layout.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 01/11/2023
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Creating a Word Layout Report
+# Creating a Word layout report
 
 When you create a new report, there are two main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. These steps will show how to create a report based on a Word layout. For more information about the report object, see [Report object](devenv-report-object.md) and [Report extension object](devenv-report-ext-object.md).
 

@@ -1,6 +1,6 @@
 ---
-title: "Creating an RDL Layout Report"
-description: "Describes the steps involved in creating a report that uses an RDL layout."
+title: Creating an RDL layout report
+description: Describes the steps involved in creating a report that uses an RDL layout.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 12/01/2023
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
  
-# Creating an RDL Layout Report
+# Creating an RDL layout report
 
 When you create a new report for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two things you have to consider; defining the report dataset of data items and columns, and then designing the report layout. These steps show you how to create a simple report based on an RDL layout. For more information about the report object, see [Report Object](devenv-report-object.md). And to learn how to extend an existing report, see [Report Extension Object](devenv-report-ext-object.md). 
 
