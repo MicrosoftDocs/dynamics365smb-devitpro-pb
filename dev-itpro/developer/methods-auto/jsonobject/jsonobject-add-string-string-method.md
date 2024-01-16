@@ -48,6 +48,78 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 ## Remarks
 The operation will fail if the object already contains a property with the given key.
 
+Note that text constants, such as labes or raw text values assigned in the source code, will be transformed by the compiler. All characters that require escaping in C# strings will be prefixed with the backslash symbol ('\\'). These characters include single and double quotes, backslashes, control characters (for example, line feed or tab). For more information, refer to [String escape sequences](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/#string-escape-sequences).
+
+## Example 1
+
+In this example, the newline symbol '\n' is changed to '\\\\n' when the value is added to the JSON object.
+
+```AL
+local procedure AddMultilineTextValue()
+var
+    TextValue: Label 'Multiline\nValue';
+    JObj: JsonObject;
+begin
+    JObj.Add('Key', TextValue);
+end;
+```
+
+When the code above is executed, the variable JObj has the following value.
+```
+{
+    "Key": "Multiline\\nValue"
+}
+```
+
+## Example 2
+
+One way to avoid redundant escaping is to use the [JsonToken.ReadFrom(Text) Method](../jsontoken/jsontoken-readfrom-string-method.md)
+
+In the following example, the text value is assigned to a JsonToken variable, which is than appended to a JsonObject.
+Note the double quotes in the TextValue label.
+
+```AL
+local procedure AddMultilineTextValue()
+var
+    TextValue: Label '"Multiline\nValue"';
+    JTok: JsonToken;
+    JObj: JsonObject;
+begin
+    JTok.ReadFrom(TextValue);
+    JObj.Add('Key', JTok);
+end;
+```
+
+The value of the variable JObj after executing the code of this example is as follows.
+```
+{
+    "Key": "Multiline\nValue"
+}
+```
+
+# Example 3
+
+Another method is to add unescaped control characters to the AL text.
+
+```AL
+local procedure AddMultilineTextValue()
+var
+    Builder: TextBuilder;
+    JObj: JsonObject;
+begin
+    Builder.AppendLine('Multiline');
+    Builder.Append('Value');
+    JObj.Add('Key', Builder.ToText());
+end;
+```
+
+In the example above, `TextBuilder.AppendLine` method adds unescaped characters `0x0D` and `0x0A` at the end of the line, so the resulting JsonObject contains the escaped \r \n values.
+```
+{
+    "Key": "Multiline\r\nValue"
+}
+```
+
 ## See Also
 [JsonObject Data Type](jsonobject-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
