@@ -5,7 +5,8 @@ author: mikebc
 ms.author: jswymer 
 ms.reviewer: jswymer
 ms.topic: FAQ
-ms.collection: 
+ms.collection:
+  - bap-ai-copilot 
 ms.date: 12/07/2023
 ms.custom: bap-template
 ---
