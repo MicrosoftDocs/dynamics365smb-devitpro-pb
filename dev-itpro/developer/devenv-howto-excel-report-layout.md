@@ -73,6 +73,17 @@ If you add new columns to the report dataset after you've created Excel layouts,
 
 For a report developer working with AL code, maybe the simplest way to get the new column names is from the AL code for the report object. For a report developer working just in Excel, the simplest way to get the new column names is to run the report in [!INCLUDE[prod_short](../includes/prod_short.md)] and on the request page, then choose the **Microsoft Excel Document (data only)** option. This will give you an Excel workbook with all the columns in the data contract.
 
+
+## Report labels in Excel layouts
+
+Report labels are used by report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. 
+
+Starting in version 23.3, report labels defined in the report object are available in the `CaptionData` worksheet in Excel. 
+
+
+For more information about labels, see [Report labels](./devenv-report-object.md#report-labels).
+
+
 ## Formatting data in Excel layouts
 
 [!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]

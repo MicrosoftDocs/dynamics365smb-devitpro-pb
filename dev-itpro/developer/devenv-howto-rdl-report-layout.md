@@ -84,12 +84,12 @@ You'll now see the generated report in preview mode.
 
 ## Report labels in RDL layouts
 
-[!INCLUDE [report_labels](includes/include-report-labels.md)]
+Report labels are used by report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. 
 
-> [!NOTE]  
-> Report labels defined in the report object are available as parameters in RDL. 
+Report labels defined in the report object are available as parameters in RDL. 
 
-For more information about labels, see [Working with labels](devenv-using-labels.md).
+For more information about labels, see [Report labels](./devenv-report-object.md#report-labels).
+
 
 ## Formatting data in RDL layouts
 

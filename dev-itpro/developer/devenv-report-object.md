@@ -81,7 +81,26 @@ In the following, you can read about properties of the different layout types.
 
 ## Report labels
 
-[!INCLUDE [report_labels](includes/include-report-labels.md)]
+Report labels are used by report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. 
+
+Report labels are defined inside the `labels` control of a report object, as shown in the following code sample.
+
+```AL
+labels
+{
+  LabelName1 = 'Label Text1', Comment='Foo', MaxLength=999, Locked=true;
+  LabelName2 = 'Label Text2', Comment='Foo', Locked=false;
+} 
+```
+
+
+If possible, you should use report labels for static texts instead of adding labels to report dataitems. This way, you can reduce the size of the dataset and hence speed up the performance of rendering the report. All of the different layout types (Excel, Word, or RDLC) support using label data. For more information, see
+- [Report labels in Excel layouts](./devenv-howto-excel-report-layout.md#report-labels-in-excel-layouts).
+- [Report labels in Word layouts](./devenv-howto-report-layout.md#report-labels-in-word-layouts).
+- [Report labels in RDL layouts](./devenv-howto-rdl-report-layout.md#report-labels-in-rdl-layouts).
+
+
+For a code example on how to use report labels for an RDL layout, see [Walkthrough: Designing a Report from Multiple Tables](../devenv-walktrough-designing-reports-multiple-tables.md).
 
 For more information about labels, see [Working with labels](devenv-using-labels.md).
 
