@@ -8,6 +8,8 @@ ms.topic: conceptual
 
 ms.date: 04/24/2023
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 # Best practices for Power Apps with Business Central (preview)
 
