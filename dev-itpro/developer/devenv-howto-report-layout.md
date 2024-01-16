@@ -11,7 +11,7 @@ ms.author: solsen
 
 # Creating a Word Layout Report
 
-When you create a new report, there are two main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. These steps will show how to create a report based on a Word layout. For more information about the report object, see [Report Object](devenv-report-object.md) and [Report Extension Object](devenv-report-ext-object.md).
+When you create a new report, there are two main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. These steps will show how to create a report based on a Word layout. For more information about the report object, see [Report object](devenv-report-object.md) and [Report extension object](devenv-report-ext-object.md).
 
 Later in this article you can read more how to enable multiple report layouts. For more information, see [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
 
@@ -20,7 +20,7 @@ Later in this article you can read more how to enable multiple report layouts. F
 Report labels are used by report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. 
 
 Report labels defined in the report object are available as in the `Labels` part of the XML Mapping pane in Word.
-![Clip of the XML Mapping pane in word.](/business-central/media/nav_reportlayout_xmlmappingpane.png "NAV_ReportLayout_XMLMappingPane")
+![Clip of the XML Mapping pane in Word.](/business-central/media/nav_reportlayout_xmlmappingpane.png "NAV_ReportLayout_XMLMappingPane")
 
 For more information about labels, see [Report labels](./devenv-report-object.md#report-labels).
 
