@@ -31,7 +31,7 @@ end
 
 The last statement involves one or two type conversions. The rightmost statement involves the evaluation of the expression `CharVar + integerVar` \(char + integer\). In order to evaluate this expression, the first operand \(CharVar\) must be converted from `char` to `integer`. The addition operator then returns an integer result.  
 
-If the type of the leftmost variable is declared as, for example, `Decimal`, the result must be converted from integer to decimal before its value can be assigned to `Sum`. For more information, see [AL variables](devenv-variables.md#assignment-type-conversion).  
+If the type of the leftmost variable is declared as, for example, `Decimal`, the result must be converted from `integer` to `decimal` before its value can be assigned to `Sum`. For more information, see [AL variables](devenv-variables.md#assignment-type-conversion).  
 
 The following examples illustrate the type conversions, which can occur when expressions are evaluated. The following guidelines are used:  
 
@@ -40,7 +40,7 @@ The following examples illustrate the type conversions, which can occur when exp
 
    ![Data types, grouped from most to least general](../media/al-type-conversion.png "AL type conversion")  
 
-- The most general data types include all the possible values from the less general data types; a decimal is more general than an integer, which is more general than a char.  
+- The most general data types include all the possible values from the less general data types; a `decimal` is more general than an `integer`, which is more general than a `char`.  
 - Type conversion can occur in some cases even though two operands have the same type.  
 
 These rules are illustrated by the following examples.  
