@@ -4,7 +4,7 @@ description: Learn how to use the Graph API to programmatically add a Business C
 author: jswymer 
 ms.author: jswymer 
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.date: 12/28/2023
 ms.custom: bap-template

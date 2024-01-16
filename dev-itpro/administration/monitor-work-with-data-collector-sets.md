@@ -1,13 +1,10 @@
 ---
 title: "Working with Data Collector sets"
-ms.custom: na
+ms.custom: bap-template
 ms.date: 01/04/2024
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.assetid: e4a306a8-3a68-4e1f-a31a-bb01663e82c2
-caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
 # Working with Data Collector sets

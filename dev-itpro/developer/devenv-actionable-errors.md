@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.topic: conceptual
 author: samirdal
 ms.author: samirdal
-ms.service: dynamics365-business-central
+
 ---
 
 # Actionable errors
