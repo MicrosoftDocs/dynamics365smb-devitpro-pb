@@ -7,7 +7,6 @@ ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.service: dynamics365-business-central
 ---
 # Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2023 Release Wave 2 Update
 

@@ -4,7 +4,7 @@ description: Understand the different parts the error dialog to be able to help 
 ms.custom: bap-template
 ms.date: 01/03/2024
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 author: kennienp
 ms.author: kepontop

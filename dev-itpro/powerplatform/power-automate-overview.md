@@ -4,7 +4,7 @@ description: This article provides an overview of how Power Automate and Busines
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: overview
 ms.date: 09/27/2023
 ms.custom: bap-template

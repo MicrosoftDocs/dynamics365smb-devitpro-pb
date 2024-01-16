@@ -1,11 +1,10 @@
 ---
 title: Monitoring Business Central Server
 description: This topic provides a list of articles describing the features for monitoring and troubleshooting the Business Central Server.
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 ---
 # Monitoring Business Central Server

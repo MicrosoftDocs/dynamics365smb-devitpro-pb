@@ -1,13 +1,12 @@
 ---
 title: "How to: Use Event Viewer to collect and view trace events"
-ms.custom: na
+ms.custom: bap-template
 ms.date: 01/02/2024
-ms.reviewer: na
+ms.reviewer: jswymer
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.assetid: ddd157e5-069a-44c5-b25b-1e90cb0bf1d0
-caps.latest.revision: 4
+ms.service: dynamics-365-op
 author: SusanneWindfeldPedersen
 ---
 # Enable Business Central debug logs in Event Viewer

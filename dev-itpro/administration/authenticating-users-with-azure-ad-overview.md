@@ -3,8 +3,8 @@ title: Authenticating Business Central Users with Microsoft Entra ID
 description: Get an overview about using Microsoft Entra authentication in Business Central.
 ms.custom: bap-template
 ms.date: 02/09/2023
-ms.reviewer: na
-ms.service: dynamics365-business-central
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer

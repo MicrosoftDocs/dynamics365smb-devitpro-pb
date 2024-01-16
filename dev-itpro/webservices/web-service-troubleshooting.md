@@ -4,7 +4,7 @@ description: Learn about how to troubleshoot Business Central web service errors
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.author: kepontop
 ms.date: 01/10/2024
