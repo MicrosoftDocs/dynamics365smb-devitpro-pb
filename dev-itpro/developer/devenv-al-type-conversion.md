@@ -38,9 +38,7 @@ The following examples illustrate the type conversions, which can occur when exp
 - When asked to evaluate an expression of mixed data types, if it's possible, the system always converts at least one of the operands to a more general data type.  
 - The data types in the two main groups, numbers and strings, can be ranked from "most general" to "least general."  
 
-**TODO: move image**
-
-   ![Data types, grouped from most to least general](media/NAV_ADG_25_Diag_22.png "NAV\_ADG\_25\_Diag\_22")  
+   ![Data types, grouped from most to least general](../media/al-type-conversion.png "AL type conversion")  
 
 - The most general data types include all the possible values from the less general data types; a decimal is more general than an integer, which is more general than a char.  
 - Type conversion can occur in some cases even though two operands have the same type.  
