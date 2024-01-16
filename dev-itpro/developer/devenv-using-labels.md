@@ -1,6 +1,6 @@
 ---
-title: "Working with labels"
-description: "Labels syntax and usage in Business Central."
+title: Working with labels
+description: Labels syntax and usage in Business Central.
 ms.custom: na
 ms.reviewer: solsen
 ms.date: 09/20/2023
