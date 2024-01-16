@@ -93,7 +93,7 @@ Starting this day, you can use the [!INCLUDE[prodadmincenter](../developer/inclu
 When the scheduled update date arrives, the update runs automatically within the update window that you've specified for this environment. All users will be disconnected from this environment, and all attempts to sign in during the update will be blocked with the message `Service is under maintenance`.  
 
 > [!IMPORTANT]
-> The update duration differs per environment. We strongly recommend scheduling the update for a date when it's acceptable that the environment is inaccessible until the end of the it's update window.
+> The update duration differs depending on the environment. We strongly recommend scheduling the update for a date when it would be acceptable for the environment to be inaccessible until the end of its update window.
 
 For more information, see [Set the update window for each environment](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).  
 
