@@ -1,5 +1,5 @@
 ---
-title: Use designer
+title: Use Designer
 description: Description of how Designer works and is integrated with the AL development experience.
 author: jswymer
 ms.author: jswymer
@@ -10,7 +10,7 @@ ms.custom: bap-template
 ms.collection: get-started
 ---
 
-# Use designer
+# Use Designer
 
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code. It provides an easy and convenient way to make immediate changes to your design by dragging and dropping the components on the page.  
 
