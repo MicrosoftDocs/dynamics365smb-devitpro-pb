@@ -100,7 +100,7 @@ If possible, you should use report labels for static texts instead of adding lab
 - [Report labels in RDL layouts](./devenv-howto-rdl-report-layout.md#report-labels-in-rdl-layouts).
 
 
-For a code example on how to use report labels for an RDL layout, see [Walkthrough: Designing a Report from Multiple Tables](../devenv-walktrough-designing-reports-multiple-tables.md).
+For a code example on how to use report labels for an RDL layout, see [Walkthrough: Designing a Report from Multiple Tables](devenv-walktrough-designing-reports-multiple-tables.md).
 
 For more information about labels, see [Working with labels](devenv-using-labels.md).
 
