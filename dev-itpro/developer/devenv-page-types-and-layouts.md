@@ -7,7 +7,8 @@ ms.date: 11/24/2022
 ms.reviewer: solsen
 ms.author: jswymer
 ms.topic: conceptual
-
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Page types and layouts

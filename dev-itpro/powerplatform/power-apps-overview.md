@@ -8,6 +8,8 @@ ms.topic: overview
 
 ms.date: 05/17/2023
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 # Business Central and Power Apps
 
