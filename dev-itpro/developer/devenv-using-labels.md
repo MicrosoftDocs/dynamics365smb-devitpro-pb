@@ -67,7 +67,10 @@ The **Label** variable names should have an approved suffix. For more informatio
 
 ### Report labels
 
-[!INCLUDE [report_labels](includes/include-report-labels.md)]
+Report labels are used by report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. 
+
+For more information about labels, see [Report labels](./devenv-report-object.md#report-labels).
+
 
 ### Page labels
 
