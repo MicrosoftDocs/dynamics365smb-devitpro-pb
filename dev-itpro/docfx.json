@@ -79,7 +79,7 @@
         "upgrade/*.md": "dynamics-365-op"
       },
       "ms.collection": {
-        "developer/ai-integration-landing-page.yml"
+        "developer/ai-integration-landing-page.yml": "bap-ai-copilot"
       }
     },
     "template": [],
