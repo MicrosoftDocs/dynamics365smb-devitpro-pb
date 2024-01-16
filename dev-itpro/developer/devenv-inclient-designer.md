@@ -1,17 +1,17 @@
 ---
-title: Use Designer
+title: Use designer
 description: Description of how Designer works and is integrated with the AL development experience.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 
 ms.topic: conceptual
-ms.date: 10/14/2022
+ms.date: 01/16/2024
 ms.custom: bap-template
 ms.collection: get-started
 ---
 
-# Use Designer
+# Use designer
 
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code. It provides an easy and convenient way to make immediate changes to your design by dragging and dropping the components on the page.  
 
@@ -38,6 +38,8 @@ Here's a quick overview of capabilities in **Designer**:
 |Edit caption        |FastTabs, cards, FactBoxes   |
 |Save extension/download code |general           |
 |Preview design               |general           |
+
+[!INCLUDE[Personalization of the controls](../includes/designer_experience_of_the_controls_Note.md)]|
 
 ## Important points to note
 
