@@ -4,7 +4,7 @@ description: Learn about how performance of Business Central web services (OData
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.author: kepontop
 ms.date: 07/03/2023

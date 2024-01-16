@@ -1,11 +1,10 @@
 ---
 title: "Configuring Business Central Web Server instance"
 description: Learn about the different configuration settings when you deploy the Business Central web server on-premises.
-ms.custom: na
+ms.custom: bap-template
 ms.date: 08/20/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---

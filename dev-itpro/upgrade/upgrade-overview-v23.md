@@ -4,7 +4,7 @@ description: Provides an overview of Business Central 2023 Release Wave 2 upgrad
 ms.custom: bap-template
 ms.date: 08/14/2023
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ms.topic: overview
 ms.author: jswymer
 author: jswymer

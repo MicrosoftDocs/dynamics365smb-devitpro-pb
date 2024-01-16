@@ -4,7 +4,7 @@ description: Learn about AL code for getting session information that you cn use
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: how-to
 ms.date: 12/19/2023
 ms.custom: bap-template

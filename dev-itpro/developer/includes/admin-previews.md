@@ -1,6 +1,6 @@
 ---
 author: solsen
-ms.service: dynamics365-business-central
+
 ms.topic: include
 ms.reviewer: solsen
 ms.date: 01/06/2022
