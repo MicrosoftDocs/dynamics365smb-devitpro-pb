@@ -4,7 +4,7 @@ description: Describes how to reason over errors and handle them in code.
 author: KennieNP
 ms.author: kepontop
 ms.reviewer: solsen
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.date: 01/11/2024
 ms.custom: bap-template

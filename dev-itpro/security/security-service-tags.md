@@ -4,7 +4,7 @@ description: "List of Azure service tags for Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: 
-ms.service: dynamics-365-business-central
+
 ms.topic: conceptual
 ms.date: 01/12/2024
 ms.custom: na

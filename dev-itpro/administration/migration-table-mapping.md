@@ -4,7 +4,7 @@ description: Learn how to use migration table mapping to rename the table during
 author: jswymer 
 ms.author: jswymer 
 ms.reviewer: jswymer 
-ms.service: dynamics365-business-central
+
 ms.topic: how-to
 ms.date: 03/22/2023
 ms.custom: bap-template
