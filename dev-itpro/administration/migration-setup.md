@@ -4,7 +4,7 @@ description: This article explains how to run the Cloud Migration Setup assisted
 author: jswymer
 ms.author: jswymer #Required; your Microsoft alias; optional team alias.
 ms.reviewer: jswymer #Required; Microsoft alias of content publishing team member.
-ms.service: dynamics365-business-central
+
 ms.topic: how-to 
 ms.date: 07/05/2023
 ms.custom: bap-template

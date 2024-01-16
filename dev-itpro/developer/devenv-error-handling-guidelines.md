@@ -4,7 +4,7 @@ description: Describes how to handle error dialogs in AL code.
 author: samirdal
 ms.author: samirdal
 ms.reviewer: solsen
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.date: 12/21/2023
 ms.custom: bap-template

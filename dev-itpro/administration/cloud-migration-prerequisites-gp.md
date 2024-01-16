@@ -4,7 +4,6 @@ description: This article outlines requirements on the Dynamics GP on-premises a
 author: jswymer 
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.date: 01/16/2023
 ms.custom: bap-template
