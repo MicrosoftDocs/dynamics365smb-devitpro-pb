@@ -20,7 +20,7 @@ Later in this article you can read more how to enable multiple report layouts. F
 Report labels are used by report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. 
 
 Report labels defined in the report object are available as in the `Labels` part of the XML Mapping pane in Word.
-![Clip of the XML Mapping pane in Word.](/business-central/media/nav_reportlayout_xmlmappingpane.png "NAV_ReportLayout_XMLMappingPane")
+![Clip of the XML Mapping pane in Word.](/dynamics365/business-central/media/nav_reportlayout_xmlmappingpane.png "NAV_ReportLayout_XMLMappingPane")
 
 For more information about labels, see [Report labels](./devenv-report-object.md#report-labels).
 
