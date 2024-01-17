@@ -7,10 +7,22 @@ ms.reviewer: jswtmer
 ms.topic: conceptual
 author: jswymer
 ---
-# Managing Time Zones with Web Services 
-[!INCLUDE[server](../developer/includes/server.md)] provides a **Services Default Time Zone** setting where an administrator can define the time zone in which web service calls run. This setting affects both APIs, SOAP and OData web services. 
-  
+# Managing Time Zones in Web Services 
+
+For fields of type datetime, the time part of the data need some clarification when the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is located in a different timezone than the connect app (the one that consumes data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services) is located in. 
+
+This article describes how timezones work in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services stack for this type of data.
+
+
+## Time Zone Configuration (online) 
+
+For online [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments, the **Services Default Time Zone** setting is always set to `UTC`. For installations in timezone far away from UTC, this might cause confusion because the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client shows a different date than what web services return for the same data. By adjusting your connect app (the one that consumes data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services) to use the same timezone offset as the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, you can mitigate this confusion.
+
+
+
 ## Time Zone Configuration (on-premises) 
+[!INCLUDE[server](../developer/includes/server.md)] provides a **Services Default Time Zone** setting where an administrator can define the time zone in which web service calls run. This setting affects both APIs, SOAP and OData web services. 
+
 You can configure the Services Default Time Zone using the [Server Administration Tool](../administration/administration-tool.md), [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview), or by directly editing CustomSettings.config, the configuration file for the relevant [!INCLUDE[server](../developer/includes/server.md)] instance. The following table describes the possible values for the **Services Default Time Zone** setting.  
   
 |Value|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
@@ -31,10 +43,6 @@ For example, if the Services Default Time Zone setting is set to **UTC+3**, the 
 |01/01/2014 17:00 UTC+1|01/01/2014 17:00 UTC+1|01/01/2014 16:00 UTC|  
 |01/01/2014 17:00|01/01/2014 17:00 UTC+3|01/01/2014 14:00 UTC|  
   
-## Time Zone Configuration (online) 
-
-For online [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments, the **Services Default Time Zone** setting is always set to `UTC`. For installations in timezone far away from UTC, this might cause confusion because the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client shows a different date than what web services return for the same data. By adjusting your connect app (the one that consumes data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services) to use the same timezone offset as the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, you can mitigate this confusion.
-
 
 
 ## See Also  

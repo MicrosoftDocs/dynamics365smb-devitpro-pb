@@ -1282,7 +1282,7 @@
 ## Web services
 ### [Web services overview](webservices/web-services.md)
 ### [Terms of Use for web services](webservices/webservices-terms-of-use.md)
-### [Managing timezones](webservices/managing-time-zones-with-web-services.md)
+### [Managing timezones in web services](webservices/managing-time-zones-with-web-services.md)
 ### [How-to refactor use of integration records to system fields](developer/devenv-integration-record-refactoring.md)
 ### [Web services best practices](webservices/web-services-best-practices.md)
 ### [Web service performance](webservices/web-service-performance.md)
