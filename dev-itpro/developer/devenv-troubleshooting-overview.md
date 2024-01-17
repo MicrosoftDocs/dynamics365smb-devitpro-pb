@@ -74,7 +74,7 @@ Reports:
 - [Troubleshoot report errors](devenv-reports-troubleshooting.md)
 
 Shopify integration
-- [Troubleshoot the Shopify connector](/dynamics365/business-central/shopify/troubleshoot.md)
+- [Troubleshoot the Shopify connector](/dynamics365/business-central/shopify/troubleshoot)
 
 Web services:
 - [Troubleshoot web service errors](../webservices/web-service-troubleshooting.md)
