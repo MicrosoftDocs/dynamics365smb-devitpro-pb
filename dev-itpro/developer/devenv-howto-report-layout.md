@@ -107,10 +107,10 @@ The following example extends the Customer List page with a trigger that runs th
     ```AL
     pageextension 50100 MyExtension extends "Customer List"
     {
-        trigger OnOpenPage();
-        begin
-            report.Run(Report::MyWordReport);
-        end;
+      trigger OnOpenPage();
+      begin
+        report.Run(Report::MyWordReport);
+      end;
     }
 
     report 50124 MyWordReport
@@ -122,30 +122,29 @@ The following example extends the Customer List page with a trigger that runs th
     ```AL
     report 50124 MyWordReport
     {
-    WordMergeDataItem = Customer; // Set this if you want to iterate the report layout over each customer
+      WordMergeDataItem = Customer; // Set this if you want to iterate the report layout over each customer
+      // Maybe also set other report properties
 
-    // Maybe also set other report properties
-
-    dataset
-    {
+      dataset
+      {
         dataitem(Customer; Customer)
         {
-        column(Name; Name)
-        {
+          column(Name; Name)
+          {
+          }
         }
-        }
-    } 
+      } 
 
-    rendering 
-    {
+      rendering 
+      {
         layout(MyWordLayout)
         {
-        Type = Word;
-        Caption = 'Customer list for print';
-        Summary = 'Customer list in Word that is designed for printing.';
-        LayoutFile = 'MyWordReport.docx';
+          Type = Word;
+          Caption = 'Customer list for print';
+          Summary = 'Customer list in Word that is designed for printing.';
+          LayoutFile = 'MyWordReport.docx';
         }
-    }
+      }
     }
     ```
 4. Build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) to generate the MyWordReport.docx file.
