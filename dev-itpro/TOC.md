@@ -1008,6 +1008,7 @@
 #### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
 <!--#### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)-->
+#### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
 
 ### Using Azure Key Vault for app secrets
@@ -1374,6 +1375,7 @@
 #### [Using OData transactional $batch requests](webservices/use-odata-batch.md)
 #### [Creating and interacting with an OData V4 bound action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 #### [Known OData limitations](webservices/odata-known-limitations.md)
+
 ### SOAP
 #### [Overview](webservices/soap-web-services.md)
 #### [SOAP service URIs](webservices/soap-web-service-uris.md)
