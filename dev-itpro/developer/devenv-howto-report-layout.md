@@ -2,9 +2,9 @@
 title: Creating a Word layout report
 description: Describes the steps involved in creating a report that uses a Word layout.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 01/11/2023
-ms.reviewer: na
+ms.custom: bap-template
+ms.date: 01/17/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -118,12 +118,13 @@ The following example extends the Customer List page with a trigger that runs th
     }
     ```
 2. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code to the report. For more information about defining a dataset, see [Report Dataset](devenv-report-dataset.md).  
+
     ```AL
     report 50124 MyWordReport
     {
-    WordMergeDataItem = Customer; // set this if you want to iterate the report layout over each customer
+    WordMergeDataItem = Customer; // Set this if you want to iterate the report layout over each customer
 
-    // maybe also set other report properties
+    // Maybe also set other report properties
 
     dataset
     {
@@ -147,16 +148,16 @@ The following example extends the Customer List page with a trigger that runs th
     }
     }
     ```
-3. Build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) to generate the MyWordReport.docx file.
-4. Open the generated report layout file in Word.
-5. In Word, edit the layout using the **XML Mapping Pane** on the **Developer** tab.  
+4. Build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) to generate the MyWordReport.docx file.
+5. Open the generated report layout file in Word.
+6. In Word, edit the layout using the **XML Mapping Pane** on the **Developer** tab.  
     > [!NOTE]  
     > If you do not see the Developer tab, go to **Options**, then **Customize Ribbon**, and in the **Main tabs** section, select the **Developer** check box.
-6. In Word, to the right, in the **Custom XML part** lookup, locate the report, and then open the layout.
-7. Right-click on the **Customer** table, and in **Insert Content Control**, select **Repeating** to add the repeater data item.
-8. Right-click on the **Name** field and in **Insert Content Control**, select **Plain Text** to add the column as a text box.
-9. Save the report layout when you're done and then close it.
-10. Back in Visual Studio Code, select <kbd>Ctrl</kbd>+<kbd>F5</kbd>  to compile and run the report.  
+7. In Word, to the right, in the **Custom XML part** lookup, locate the report, and then open the layout.
+8. Right-click on the **Customer** table, and in **Insert Content Control**, select **Repeating** to add the repeater data item.
+9. Right-click on the **Name** field and in **Insert Content Control**, select **Plain Text** to add the column as a text box.
+10. Save the report layout when you're done and then close it.
+11. Back in Visual Studio Code, select <kbd>Ctrl</kbd>+<kbd>F5</kbd>  to compile and run the report.  
 
 You'll now see the generated report in preview mode.
 
