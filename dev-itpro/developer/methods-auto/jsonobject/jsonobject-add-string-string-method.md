@@ -48,7 +48,7 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 ## Remarks
 The operation will fail if the object already contains a property with the given key.
 
-Note that text constants, such as labes or raw text values assigned in the source code, will be transformed by the compiler. All characters that require escaping in C# strings will be prefixed with the backslash symbol ('\\'). These characters include single and double quotes, backslashes, control characters (for example, line feed or tab). For more information, refer to [String escape sequences](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/#string-escape-sequences).
+Note that text constants, such as labes or raw text values assigned in the source code, will be transformed by the compiler. All characters that require escaping in C# strings will be prefixed with the backslash symbol ('\\'). These characters include single and double quotes, backslashes, control characters (for example, line feed or tab). For more information, refer to [String escape sequences](https://learn.microsoft.com/dotnet/csharp/programming-guide/strings/#string-escape-sequences).
 
 ## Example 1
 
@@ -97,7 +97,7 @@ The value of the variable JObj after executing the code of this example is as fo
 }
 ```
 
-# Example 3
+## Example 3
 
 Another method is to add unescaped control characters to the AL text.
 
