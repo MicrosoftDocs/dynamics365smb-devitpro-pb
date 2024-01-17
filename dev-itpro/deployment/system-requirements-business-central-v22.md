@@ -2,7 +2,7 @@
 title: System requirements for Business Central 2023 release Wave 1
 description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central version 22 on-premises.
 ms.custom: bap-template
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ms.topic: overview
 ms.date: 02/28/2023
 author: jswymer

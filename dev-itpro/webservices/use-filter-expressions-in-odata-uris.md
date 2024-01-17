@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.custom: bap-template
 ms.date: 11/10/2023
 ms.reviewer: na
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ---
 # Using Filter Expressions in OData URIs

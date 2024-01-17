@@ -1,6 +1,6 @@
 ---
-title: "Creating a Word Layout Report"
-description: "Describes the steps involved in creating a report that uses a Word layout."
+title: Creating a Word layout report
+description: Describes the steps involved in creating a report that uses a Word layout.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 01/11/2023
@@ -9,25 +9,83 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Creating a Word Layout Report
+# Creating a Word layout report
 
-When you create a new report, there are two main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. These steps will show how to create a report based on a Word layout. For more information about the report object, see [Report Object](devenv-report-object.md) and [Report Extension Object](devenv-report-ext-object.md).
+When you create a new report, there are two main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. These steps will show how to create a report based on a Word layout. For more information about the report object, see [Report object](devenv-report-object.md) and [Report extension object](devenv-report-ext-object.md).
 
 Later in this article you can read more how to enable multiple report layouts. For more information, see [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
+
+## Report labels in Word layouts
+
+Report labels are used by report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. 
+
+Report labels defined in the report object are available as in the `Labels` part of the XML Mapping pane in Word:
+
+![Clip of the XML Mapping pane in Word.](/dynamics365/business-central/media/nav_reportlayout_xmlmappingpane.png "NAV_ReportLayout_XMLMappingPane")
+
+For more information about labels, see [Report labels](./devenv-report-object.md#report-labels).
+
 
 ## Formatting data in Word layouts
 [!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
 
 Specifically for Word layouts, there is no way to control formatting of data elements in Word. Therefore, you need to do the formatting in the report dataset. For more information, see [Formatting field values in report datasets](devenv-format-report-field-data.md).
 
+## How to do totals in Word layouts
+
+Compared to the layout types Excel or RDL, it is not possible to do calculations in a Word layout. If you want to add totals to your report, you need to calculate these in AL variables in the report object and then use a data item based on an Integer table to expose them to the XML Mapping pane in Word.
+
+The following example illustrates how to code this. The example is based on report 1306 "Standard Sales - Invoice" from the base application.
+
+```al
+report 50142 "My Sales Invoice report"
+{
+  // report properties
+
+  dataset
+  {
+    // In some dataitem here, vTotalAmount and vTotalVATBaseLCY are calculated in the OnAfterGetRecord trigger
+
+    ...
+
+    dataitem(Totals; "Integer")
+    {
+      // maybe some dataitem properties here
+
+      column(TotalNetAmount; Format(vTotalAmount, 0, AutoFormat.ResolveAutoFormat("Auto Format"::AmountFormat, Header."Currency Code")))
+      {
+      }
+      column(TotalVATBaseLCY; vTotalVATBaseLCY)
+      {
+      }
+    }
+  }
+
+  // layouts defined here
+  rendering {}
+
+  // labels defined here
+  labels {}
+
+  ...
+
+  protected var
+    vTotalVATBaseLCY: Decimal;
+    vTotalAmount: Decimal
+
+}
+```
+
 
 ## Using fonts in Word layouts
 
 [!INCLUDE[using_fonts](../includes/include-excel-word-layouts-fonts.md)]
 
+
 ## Using Office document themes in Word layouts
 
 [!INCLUDE[using_office_themes](../includes/include-excel-word-layouts-themes.md)]
+
 
 ## Example: Create a Word layout report
 
@@ -127,6 +185,8 @@ else
 ```
 
 For more information about feature management, see [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).
+
+
 ## See Also
 
 [Setting up Hyperlinks in Word Report Layouts](devenv-hyperlinks-in-word-report-layouts.md)  

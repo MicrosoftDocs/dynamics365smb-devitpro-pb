@@ -5,7 +5,9 @@ author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer 
 ms.topic: conceptual
-ms.collection: 
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ms.date: 01/12/2024
 ms.custom: bap-template
 ---
