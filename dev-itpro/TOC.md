@@ -1004,6 +1004,7 @@
 
 ### Calling external services
 #### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
+#### [Supported cipher suites in HTTPS](developer/devenv-supported-cipher-suites.md)  
 #### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
 <!--#### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)-->
@@ -1277,25 +1278,25 @@
 <!-- integration-->
 # Integration
 <!-- web service -->
-## [Refactor integration management](developer/devenv-integration-record-refactoring.md)
 ## Web services
 ### [Web services overview](webservices/web-services.md)
 ### [Terms of Use for web services](webservices/webservices-terms-of-use.md)
-### General
-#### [Publishing a web service](webservices/publish-web-service.md)
-#### [Handling UI interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
-#### [Managing timezones](webservices/managing-time-zones-with-web-services.md)
-#### [Working with static proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
+### [Managing timezones](webservices/managing-time-zones-with-web-services.md)
+### [How-to refactor use of integration records to system fields](developer/devenv-integration-record-refactoring.md)
+### [Web services best practices](webservices/web-services-best-practices.md)
+### [Web service performance](webservices/web-service-performance.md)
+### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
+### [Web service telemetry](webservices/web-service-telemetry.md)
+
+### Web services security
 #### [Authentication](webservices/web-services-authentication.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-service authentication](administration/automation-apis-using-s2s-authentication.md)
-#### [Web service performance](webservices/web-service-performance.md)
-#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
-#### [Web service telemetry](webservices/web-service-telemetry.md)
+#### [How-to restrict access from/to Business Central using firewall and network security group rules](security/security-service-tags.md)
+#### [Supported Cipher Suites in outgoing calls](developer/devenv-supported-cipher-suites.md)
 #### [Walkthrough: Creating a console application that uses OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
-#### [Securing remote connections using certificates](deployment/implement-security-certificates-production-environment.md)
-#### [Supported cipher suites](developer/devenv-supported-cipher-suites.md)
-#### [Best practices](webservices/web-services-best-practices.md)
+#### [Securing remote connections using certificates (on-premises)](deployment/implement-security-certificates-production-environment.md)
+
 ### APIs
 #### [Overview](webservices/api-overview.md)
 #### [API client performance](webservices/odata-client-performance.md)
@@ -1350,6 +1351,11 @@
 #### [Cloud migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
 #### [API Developer Overview](developer/devenv-api.md)
 #### [Getting a list of environments](webservices/api-get-environments.md)
+
+### Exposing pages as OData/SOAP web service endpoints
+#### [Publishing a web service](webservices/publish-web-service.md)
+#### [Handling UI interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
+
 ### OData
 #### [Overview](webservices/odata-web-services.md)
 #### [OData client performance](webservices/odata-client-performance.md)
@@ -1386,7 +1392,9 @@
 ##### [UpdateMultiple](webservices/UpdateMultiple-operation.md)
 #### [Retrieving companies](webservices/use-systemservice-to-find-companies.md)
 #### [Indicating that a value exists in field](webservices/use-properties-to-indicate-field-value.md)
+#### [Working with static proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
 <!-- end web services -->
+
 ## Connect apps
 ### [Developing Connect apps](developer/devenv-develop-connect-apps.md)
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)

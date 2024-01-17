@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 ---
 
-# Refactor Integration Management
+# How-to refactor use of integration records to system fields
 
 In 2023 release wave 1 (version 22.0) Microsoft will remove legacy integration records code from Business Central. The obsoletion was announced in-product in version 15.0. We expect that most AppSource apps or per-tenant extensions for [!INCLUDE [prod_short](../includes/prod_short.md)] already use integration records based on [System Fields](devenv-table-system-fields.md). For those that don't, this article offers guidance for refactoring your code to use system fields rather than integration records.
 
