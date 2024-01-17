@@ -122,7 +122,8 @@ The following example extends the Customer List page with a trigger that runs th
     report 50124 MyWordReport
     {
     WordMergeDataItem = Customer; // set this if you want to iterate the report layout over each customer
-    // set other report properties
+
+    // maybe also set other report properties
 
     dataset
     {
@@ -133,8 +134,6 @@ The following example extends the Customer List page with a trigger that runs th
         }
         }
     } 
-
-    ...
 
     rendering 
     {
