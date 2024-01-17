@@ -1483,6 +1483,11 @@
 ### [Connecting to Azure Key Vault](developer/devenv-app-key-vault-overview.md)
 ### [Azure Key Vault telemetry](administration/telemetry-extension-key-vault-trace.md)
 <!-- end Azure services -->
+## Integrating with Shopify
+### [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started.md)
+### [Troubleshoot the Shopify connector](/dynamics365/business-central/shopify/troubleshoot.md)
+### [FAQ for the Shopify connector](/dynamics365/business-central/shopify/shopify-faq.md)
+### [Walkthrough: Set up and use the Shopify connector](/dynamics365/business-central/shopify/walkthrough-setting-up-and-using-shopify.md)
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->

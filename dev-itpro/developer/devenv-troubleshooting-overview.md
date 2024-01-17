@@ -73,6 +73,9 @@ Performance:
 Reports: 
 - [Troubleshoot report errors](devenv-reports-troubleshooting.md)
 
+Shopify integration
+- [Troubleshoot the Shopify connector](/dynamics365/business-central/shopify/troubleshoot.md)
+
 Web services:
 - [Troubleshoot web service errors](../webservices/web-service-troubleshooting.md)
 - [Troubleshooting OData calls](../webservices/dynamics-error-codes.md)
