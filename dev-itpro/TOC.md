@@ -1006,10 +1006,10 @@
 #### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
 #### [Supported cipher suites in HTTPS](developer/devenv-supported-cipher-suites.md)  
 #### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
-#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
-<!--#### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)-->
 #### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
+#### [AL Language Reference (HttpClient datatype)](developer/methods-auto/httpclient/httpclient-data-type.md)
+<!--#### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)-->
 
 ### Using Azure Key Vault for app secrets
 #### [Overview](developer/devenv-app-key-vault-overview.md)
