@@ -137,13 +137,14 @@ It's possible to include a certificate when calling an external service.
 
 [!INCLUDE[httpclient_cert_note](includes/include-http-cert-note.md)]
 
-For more information about certificates, see the [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-method.md)
+For more information about certificates, see the [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-method.md) and [Supported cipher suites in HTTPS](devenv-supported-cipher-suites.md).
+
 
 ### Which IP addresses or ranges does my environment use?
 
 When you exchange data through external services, you might have to safelist the IP addresses from where the [!INCLUDE[prod_short](includes/prod_short.md)] service is running. 
 
-For more information, see [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
+For more information, see [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use) and [How-to restrict network access from/to Business Central](../security/security-service-tags.md).
 
 
 
@@ -166,6 +167,7 @@ You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry 
 ## See also
 
 [Supported cipher suites in HTTPS](devenv-supported-cipher-suites.md)  
+[How-to restrict network access from/to Business Central](../security/security-service-tags.md)  
 [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md)  
 [HttpContent data type](methods-auto/httpcontent/httpcontent-data-type.md)  
 [Analyzing outgoing web service request telemetry](../administration/telemetry-webservices-outgoing-trace.md)  
