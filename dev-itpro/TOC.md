@@ -1292,7 +1292,7 @@
 #### [Authentication](webservices/web-services-authentication.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-service authentication](administration/automation-apis-using-s2s-authentication.md)
-#### [How-to restrict access from/to Business Central using firewall and network security group rules](security/security-service-tags.md)
+#### [How-to restrict network access from/to Business Central](security/security-service-tags.md)
 #### [Supported Cipher Suites in outgoing calls](developer/devenv-supported-cipher-suites.md)
 #### [Walkthrough: Creating a console application that uses OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
 #### [Securing remote connections using certificates (on-premises)](deployment/implement-security-certificates-production-environment.md)
