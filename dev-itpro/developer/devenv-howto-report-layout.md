@@ -32,9 +32,9 @@ For more information about labels, see [Report labels](./devenv-report-object.md
 Specifically for Word layouts, there is no way to control formatting of data elements in Word. Therefore, you need to do the formatting in the report dataset. For more information, see [Formatting field values in report datasets](devenv-format-report-field-data.md).
 
 
-## How to iterate a Word layout over a dataitem
+## How to iterate a Word layout over a data item
 
-When you specify a dataitem in the `WordMergeDataItem` property, the [!INCLUDE[prod_short](../includes/prod_short.md)] server will do a "Mail merge" between that data item (and the ones below it) and the Word layout when rendering the report using the Word layout. The Word layout will be applied to each element in the specified dataitem. Thus, if you have defined a different first page, page numbers, totals at the end, and similar report design elements in the Word layout, they'll be "reset" for each element in the specified dataitem.
+When you specify a data item in the `WordMergeDataItem` property, the [!INCLUDE[server](../includes/server.md)] will do a "Mail merge" between that data item (and the ones below it) and the Word layout when rendering the report using the Word layout. The Word layout is applied to each element in the specified data item. So, if you've defined a different first page, page numbers, totals at the end, and similar report design elements in the Word layout, they'll be "reset" for each element in the specified data item.
 
 For more information and an example, see [WordMergeDataItem Property](properties/devenv-wordmergedataitem-property.md).
 
