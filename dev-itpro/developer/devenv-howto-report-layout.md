@@ -31,6 +31,14 @@ For more information about labels, see [Report labels](./devenv-report-object.md
 
 Specifically for Word layouts, there is no way to control formatting of data elements in Word. Therefore, you need to do the formatting in the report dataset. For more information, see [Formatting field values in report datasets](devenv-format-report-field-data.md).
 
+
+## How to iterate a Word layout over a dataitem
+
+When you specify a dataitem in the `WordMergeDataItem` property, the [!INCLUDE[prod_short](../includes/prod_short.md)] server will do a "Mail merge" between that data item (and the ones below it) and the Word layout when rendering the report using the Word layout. The Word layout will be applied to each element in the specified dataitem. Thus, if you have defined a different first page, page numbers, totals at the end, and similar report design elements in the Word layout, they'll be "reset" for each element in the specified dataitem.
+
+For more information and an example, see [WordMergeDataItem Property](properties/devenv-wordmergedataitem-property.md).
+
+
 ## How to do totals in Word layouts
 
 Compared to the layout types Excel or RDL, it is not possible to do calculations in a Word layout. If you want to add totals to your report, you need to calculate these in AL variables in the report object and then use a data item based on an Integer table to expose them to the XML Mapping pane in Word.
@@ -107,40 +115,49 @@ The following example extends the Customer List page with a trigger that runs th
 
     report 50124 MyWordReport
     {
-        DefaultLayout = Word;
-        WordLayout = 'MyWordReport.docx';
     }
     ```
-2. Build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) to generate the MyWordReport.docx file.
-3. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code to the report. For more information about defining a dataset, see [Report Dataset](devenv-report-dataset.md).  
+2. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code to the report. For more information about defining a dataset, see [Report Dataset](devenv-report-dataset.md).  
     ```AL
     report 50124 MyWordReport
     {
-        DefaultLayout = Word;
-        WordLayout = 'MyWordReport.docx';
-    
-        dataset
+    WordMergeDataItem = Customer; // set this if you want to iterate the report layout over each customer
+    // set other report properties
+
+    dataset
+    {
+        dataitem(Customer; Customer)
         {
-            dataitem(Customer; Customer)
-            {
-                column(Name; Name)
-                {
-    
-                }
-            }
-        } 
+        column(Name; Name)
+        {
+        }
+        }
+    } 
+
+    ...
+
+    rendering 
+    {
+        layout(MyWordLayout)
+        {
+        Type = Word;
+        Caption = 'Customer list for print';
+        Summary = 'Customer list in Word that is designed for printing.';
+        LayoutFile = 'MyWordReport.docx';
+        }
+    }
     }
     ```
-4. Build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>).
-5. Open the generated report layout file in Word.
-6. In Word, edit the layout using the **XML Mapping Pane** on the **Developer** tab.  
+3. Build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) to generate the MyWordReport.docx file.
+4. Open the generated report layout file in Word.
+5. In Word, edit the layout using the **XML Mapping Pane** on the **Developer** tab.  
     > [!NOTE]  
     > If you do not see the Developer tab, go to **Options**, then **Customize Ribbon**, and in the **Main tabs** section, select the **Developer** check box.
-7. In Word, to the right, in the **Custom XML part** lookup, locate the report, and then open the layout.
-8. Right-click on the **Customer** table, and in **Insert Content Control**, select **Repeating** to add the repeater data item.
-9. Right-click on the **Name** field and in **Insert Content Control**, select **Plain Text** to add the column as a text box.
-10. Save the report layout when you're done and then close it.
-11. Back in Visual Studio Code, select <kbd>Ctrl</kbd>+<kbd>F5</kbd>  to compile and run the report.  
+6. In Word, to the right, in the **Custom XML part** lookup, locate the report, and then open the layout.
+7. Right-click on the **Customer** table, and in **Insert Content Control**, select **Repeating** to add the repeater data item.
+8. Right-click on the **Name** field and in **Insert Content Control**, select **Plain Text** to add the column as a text box.
+9. Save the report layout when you're done and then close it.
+10. Back in Visual Studio Code, select <kbd>Ctrl</kbd>+<kbd>F5</kbd>  to compile and run the report.  
 
 You'll now see the generated report in preview mode.
 
@@ -190,6 +207,7 @@ For more information about feature management, see [Enabling Upcoming Features A
 ## See Also
 
 [Setting up Hyperlinks in Word Report Layouts](devenv-hyperlinks-in-word-report-layouts.md)  
+[WordMergeDataItem Property](properties/devenv-wordmergedataitem-property.md)   
 [Report Design Overview](devenv-report-design-overview.md)  
 [Report Object](devenv-report-object.md)  
 [Report Extension Object](devenv-report-ext-object.md)  
