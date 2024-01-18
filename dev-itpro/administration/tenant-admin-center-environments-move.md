@@ -77,10 +77,11 @@ Environment transfers create two distinct operations that can be audited on the 
 ## Considerations
 
 - Environment data will remain unchanged during the move operation. The exact same environment will be linked to a specified Microsoft Entra tenant.
-- The country, Azure region, and type of the environment (Production or Sandbox) will remain the same, and can't be changed during this operation.
-- The operation will involve a downtime period for the environment being transferred (typically not exceeding 2 hours).
+- The localization, Azure region, and type of the environment (Production or Sandbox) will remain the same, and can't be changed during this operation.
+- The operation will involve a downtime period for the environment being transferred (typically not exceeding 30 minutes).
 - The operation does not move subscriptions, domains, and other resources between the Microsoft Entra tenants. Ensure the destination tenant has a paid Business Central user subscription and sufficient environment quota before accepting the transfer.
 - If you rename an environment upon acceptance in the destination tenant to avoid duplicate environment names in your tenant no Rename operation will be created on the Operations page in the Admin Center. Rather, the **Transfer to Microsoft Entra tenant** Operation will include the source and destination environment names.
+- Environment settings are carried over from the source to the destination tenant. Depending on the nature of the environment transfer settings such as the Application Insights Connection String set up on the environment may need to be changed or removed.
 
 ## See also
 
