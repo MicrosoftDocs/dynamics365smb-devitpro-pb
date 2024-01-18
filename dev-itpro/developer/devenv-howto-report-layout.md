@@ -2,9 +2,9 @@
 title: Creating a Word layout report
 description: Describes the steps involved in creating a report that uses a Word layout.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 01/11/2023
-ms.reviewer: na
+ms.custom: bap-template
+ms.date: 01/11/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: solsen
 ---
