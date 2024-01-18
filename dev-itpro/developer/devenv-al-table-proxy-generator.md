@@ -77,7 +77,7 @@ The following example starts the process for creating a new integration table in
 
 Users are required to register a Microsoft Entra application and provide its client ID and redirect URI as arguments when running the tool.
 
-Application must have user_impersonation permission for Dynamics CRM API. 
+Application must have **user_impersonation** permission for Dynamics CRM API. 
 
 Redirect URI type must be **Public client/native (mobile & desktop).
 
