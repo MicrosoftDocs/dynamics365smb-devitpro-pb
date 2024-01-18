@@ -4,10 +4,9 @@ description: Learn about how to troubleshoot Business Central reports
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-
 ms.topic: conceptual
 ms.author: kepontop
-ms.date: 01/04/2024
+ms.date: 01/18/2024
 ---
 
 # Troubleshooting report errors
@@ -27,7 +26,7 @@ A report in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can fail
 
 ## Report limits
 
-The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many ressources. Examples of limits are 
+The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many resources. Examples of limits are: 
 - The maximum number of rows that can be processed in a report.
 - The maximum number of documents that can be merged in a report using a Word layout.
 - The maximum execution time that it can take to generate a report.
