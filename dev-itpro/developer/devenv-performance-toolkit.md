@@ -397,6 +397,7 @@ RunBCPTTests.ps1 -Environment OnPrem -AuthorizationType Windows -Credential $Cre
 > * `SandboxName` - Specifies the sandbox name. This is necessary only when the environment is either `PROD` or `TIE`. Default is `sandbox`.
 > * `ServiceUrl` - Specifies the base URL of the service. This parameter is used only in `OnPrem` environment. For example, `http://localhost:8080/PerformanceToolkit`.
 > * `ClientId` - Specifies the guid that the [!INCLUDE [prod_short](includes/prod_short.md)] is registered with in Microsoft Entra ID. To set up Microsoft Entra ID, go to [https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess).
+> * `singlerun` - Specifies that you want to run the suite in a signle run mode. This is helpfull if your Docker container or environment is restarted or new.
 
 1. In Visual Studio Code, on the Explorer Pane, choose the script that you want to run.
 2. Choose the type of environment you want to target.
