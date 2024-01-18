@@ -96,6 +96,8 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Default max rows|The maximum number of rows that can be processed in a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using the [MaximumDataSetSize property](../developer/properties/devenv-maximumdatasetsize-property.md) of a report. Client users can do the same when running a report from the report request page.|500,000|
 |Max rows | The maximum number of rows that can be processed in a report. If exceeded, the report will be canceled by the server.|1,000,000|
 
+For more information on report limits, see [Report limits](../developer/devenv-report-object.md#report-limits).
+
 ## Query limits
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
