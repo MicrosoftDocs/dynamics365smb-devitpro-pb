@@ -63,7 +63,7 @@ Specifies what happens to the subscriber method call when the user account that 
 ## Remarks
 
 > [!TIP]
-> Use the **Shift+Alt+E** shortcut in the AL code editor to invoke the list of all [business](devenv-businessevent-attribute.md), [integration](devenv-integrationevent-attribute.md) and [internal](devenv-internalevent-attribute.md) events. Select the one you want to subscribe to and an event subscriber for the event will be inserted.
+> Use the **Shift+Alt+E** shortcut in the AL code editor to invoke the list of all [business](devenv-businessevent-attribute.md), [integration](devenv-integrationevent-attribute.md), and [internal](devenv-internalevent-attribute.md) events. Select the one you want to subscribe to and an event subscriber for the event will be inserted.
 
 The value of the *ObjectType* argument will depend on the type of event: business, integration, and trigger.
 
