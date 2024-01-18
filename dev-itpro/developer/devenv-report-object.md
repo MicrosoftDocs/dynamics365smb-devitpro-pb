@@ -339,9 +339,9 @@ The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits 
 
 If any of these limits are reached, then the report is cancelled. If a report gets cancelled, you get an event in telemetry. For more information, see [Telemetry for report generation cancelled](../administration/telemetry-reports-trace.md#cancellation-report-generation).
 
-For more information on report limits in [!INCLUDE[prod_short](includes/prod_short.md)] and how they are configured in the online service, see [Report limits in Business Central](../administration/operational-limits-online.md#reports).
+For more information on report limits in [!INCLUDE[prod_short](includes/prod_short.md)] and how they are configured in the online service, see [Report limits in Business Central](../administration/operational-limits-online.md#Reports).
 
-For more information on how to configure report limits in [!INCLUDE[prod_short](includes/prod_short.md)] on-premises environments, see [Server settings for reports](../administration/configure-server-instance.md#reports).
+For more information on how to configure report limits in [!INCLUDE[prod_short](includes/prod_short.md)] on-premises environments, see [Server settings for reports](../administration/configure-server-instance.md#Reports).
 
 
 ## See also
