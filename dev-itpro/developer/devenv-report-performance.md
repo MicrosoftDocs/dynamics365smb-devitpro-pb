@@ -1,10 +1,10 @@
 ---
-title: "Report performance"
-description: "Provides information for developers to help improve performance for Business Central reports."
+title: Report performance
+description: Provides information for developers to help improve performance for Business Central reports.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 08/31/2023
-ms.reviewer: na
+ms.custom: bap-template
+ms.date: 01/18/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: kepontop
 ---
@@ -55,9 +55,9 @@ For more information about queries, see [Queries in Business Central](../develop
 
 ## Report limit (maximum execution time that it can take to generate a report)
 
-The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many ressources. For example, there is a limit on the maximum execution time that it can take to generate a report.
+The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many resources. For example, there's a limit on the maximum execution time that it can take to generate a report.
 
-For more information on report limits, see [Report limits](devenv-report-object.md#report-limits)
+For more information on report limits, see [Report limits](devenv-report-object.md#report-limits).
 
 
 ## See Also
