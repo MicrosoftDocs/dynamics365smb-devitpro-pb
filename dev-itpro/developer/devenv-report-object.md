@@ -330,6 +330,20 @@ report 50103 "Customer List"
 
 It's possible to schedule a report to run at your desired date and time by using **AllowScheduling** property. By setting the property to *true*, you'll get the **Schedule** action button to set the date and time for your report. To learn more about scheduling a report, see [AllowScheduling Property](../developer/properties/devenv-allowscheduling-property.md) and [Schedule a report](/dynamics365/business-central/ui-work-report#ScheduleReport).
 
+## Report limits 
+
+The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many ressources. Examples of limits are 
+- The maximum number of rows that can be processed in a report.
+- The maximum number of documents that can be merged in a report using a Word layout.
+- The maximum execution time that it can take to generate a report.
+
+If any of these limits are reached, then the report is cancelled. If a report gets cancelled, you get an event in telemetry. For more information, see [Telemetry for report generation cancelled](../administration/telemetry-reports-trace.md#cancellation-report-generation).
+
+For more information on report limits in [!INCLUDE[prod_short](includes/prod_short.md)] and how they are configured in the online service, see [report_operational_limits](../administration/operational-limits-online.md#report-limits).
+
+For more information on how to configure report limits in [!INCLUDE[prod_short](includes/prod_short.md)] on-premises environments, see [Server settings for reports](../administration/configure-server-instance.md#reports-settings).
+
+
 ## See also
 
 [Report Extension Object](devenv-report-ext-object.md)  

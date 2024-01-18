@@ -53,6 +53,13 @@ For more information about how to use a query in a dataset definition, see [Defi
 For more information about queries, see [Queries in Business Central](../developer/devenv-query-overview.md).
 
 
+## Report limit (maximum execution time that it can take to generate a report)
+
+The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many ressources. For example, there is a limit on the maximum execution time that it can take to generate a report.
+
+For more information on report limits, see [Report limits](devenv-report-object.md#report-limits)
+
+
 ## See Also
 
 [Performance Overview](../performance/performance-overview.md)  

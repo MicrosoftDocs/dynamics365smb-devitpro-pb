@@ -212,6 +212,12 @@ var
 
 ```
 
+## Report limit (maximum number of rows)
+
+The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many ressources. For examples, there is a limit on the maximum number of rows that can be processed in a report.
+
+For more information on report limits, see [Report limits](devenv-report-object.md#report-limits)
+
 
 ## See Also
 

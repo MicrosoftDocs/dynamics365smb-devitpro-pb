@@ -25,6 +25,15 @@ A report in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can fail
 - When rendering the report with a layout
 - In any of the *OnAfterDocument* triggers
 
+## Report limits
+
+The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many ressources. Examples of limits are 
+- The maximum number of rows that can be processed in a report.
+- The maximum number of documents that can be merged in a report using a Word layout.
+- The maximum execution time that it can take to generate a report.
+
+For more information on report limits, see [Report limits](devenv-report-object.md#report-limits)
+
 ## Troubleshooting report datasets and layouts
 
 If a report layout isn't working as expected, you might need to investigate whether the issue is in the dataset. 
