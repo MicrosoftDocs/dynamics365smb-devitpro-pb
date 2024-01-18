@@ -3,7 +3,7 @@ title: Creating a Word layout report
 description: Describes the steps involved in creating a report that uses a Word layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 01/11/2024
+ms.date: 01/17/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: solsen
@@ -30,6 +30,14 @@ For more information about labels, see [Report labels](./devenv-report-object.md
 [!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
 
 Specifically for Word layouts, there is no way to control formatting of data elements in Word. Therefore, you need to do the formatting in the report dataset. For more information, see [Formatting field values in report datasets](devenv-format-report-field-data.md).
+
+
+## How to iterate a Word layout over a data item
+
+When you specify a data item in the `WordMergeDataItem` property, the [!INCLUDE[server](includes/server.md)] will do a "Mail merge" between that data item (and the ones below it) and the Word layout when rendering the report using the Word layout. The Word layout is applied to each element in the specified data item. So, if you've defined a different first page, page numbers, totals at the end, and similar report design elements in the Word layout, they'll be "reset" for each element in the specified data item.
+
+For more information and an example, see [WordMergeDataItem Property](properties/devenv-wordmergedataitem-property.md).
+
 
 ## How to do totals in Word layouts
 
@@ -99,39 +107,47 @@ The following example extends the Customer List page with a trigger that runs th
     ```AL
     pageextension 50100 MyExtension extends "Customer List"
     {
-        trigger OnOpenPage();
-        begin
-            report.Run(Report::MyWordReport);
-        end;
+      trigger OnOpenPage();
+      begin
+        report.Run(Report::MyWordReport);
+      end;
     }
 
     report 50124 MyWordReport
     {
-        DefaultLayout = Word;
-        WordLayout = 'MyWordReport.docx';
     }
     ```
-2. Build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) to generate the MyWordReport.docx file.
-3. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code to the report. For more information about defining a dataset, see [Report Dataset](devenv-report-dataset.md).  
+2. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code to the report. For more information about defining a dataset, see [Report Dataset](devenv-report-dataset.md).  
+
     ```AL
     report 50124 MyWordReport
     {
-        DefaultLayout = Word;
-        WordLayout = 'MyWordReport.docx';
-    
-        dataset
+      WordMergeDataItem = Customer; // Set this if you want to iterate the report layout over each customer
+      // Maybe also set other report properties
+
+      dataset
+      {
+        dataitem(Customer; Customer)
         {
-            dataitem(Customer; Customer)
-            {
-                column(Name; Name)
-                {
-    
-                }
-            }
-        } 
+          column(Name; Name)
+          {
+          }
+        }
+      } 
+
+      rendering 
+      {
+        layout(MyWordLayout)
+        {
+          Type = Word;
+          Caption = 'Customer list for print';
+          Summary = 'Customer list in Word that is designed for printing.';
+          LayoutFile = 'MyWordReport.docx';
+        }
+      }
     }
     ```
-4. Build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>).
+4. Build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) to generate the MyWordReport.docx file.
 5. Open the generated report layout file in Word.
 6. In Word, edit the layout using the **XML Mapping Pane** on the **Developer** tab.  
     > [!NOTE]  
@@ -197,6 +213,7 @@ For more information on report limits, see [Report limits](devenv-report-object.
 ## See Also
 
 [Setting up Hyperlinks in Word Report Layouts](devenv-hyperlinks-in-word-report-layouts.md)  
+[WordMergeDataItem Property](properties/devenv-wordmergedataitem-property.md)   
 [Report Design Overview](devenv-report-design-overview.md)  
 [Report Object](devenv-report-object.md)  
 [Report Extension Object](devenv-report-ext-object.md)  
