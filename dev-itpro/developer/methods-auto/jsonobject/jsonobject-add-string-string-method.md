@@ -3,7 +3,7 @@ title: "JsonObject.Add(Text, Text) Method"
 description: "Adds a new property to a JsonObject."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 01/18/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,7 +48,7 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 ## Remarks
 The operation will fail if the object already contains a property with the given key.
 
-Note that text constants, such as labes or raw text values assigned in the source code, will be transformed by the compiler. All characters that require escaping in C# strings will be prefixed with the backslash symbol ('\\'). These characters include single and double quotes, backslashes, control characters (for example, line feed or tab). For more information, refer to [String escape sequences](https://learn.microsoft.com/dotnet/csharp/programming-guide/strings/#string-escape-sequences).
+Note that text constants, such as labels or raw text values assigned in the source code, will be transformed by the compiler. All characters that require escaping in C# strings will be prefixed with the backslash symbol ('\\'). These characters include single and double quotes, backslashes, control characters (for example, line feed or tab). For more information, refer to [String escape sequences](/dotnet/csharp/programming-guide/strings/#string-escape-sequences).
 
 ## Example 1
 
@@ -64,7 +64,7 @@ begin
 end;
 ```
 
-When the code above is executed, the variable JObj has the following value.
+When the code above is run, the variable `JObj` has the following value.
 ```
 {
     "Key": "Multiline\\nValue"
@@ -73,10 +73,10 @@ When the code above is executed, the variable JObj has the following value.
 
 ## Example 2
 
-One way to avoid redundant escaping is to use the [JsonToken.ReadFrom(Text) Method](../jsontoken/jsontoken-readfrom-string-method.md)
+One way to avoid redundant escaping is to use the [JsonToken.ReadFrom(Text) method](../jsontoken/jsontoken-readfrom-string-method.md)
 
-In the following example, the text value is assigned to a JsonToken variable, which is than appended to a JsonObject.
-Note the double quotes in the TextValue label.
+In the following example, the text value is assigned to a `JsonToken` variable, which is then appended to a `JsonObject`.
+Note the double quotes in the `TextValue` label.
 
 ```AL
 local procedure AddMultilineTextValue()
@@ -90,7 +90,7 @@ begin
 end;
 ```
 
-The value of the variable JObj after executing the code of this example is as follows.
+The value of the variable `JObj` after running the code of this example is as follows.
 ```
 {
     "Key": "Multiline\nValue"
@@ -113,14 +113,14 @@ begin
 end;
 ```
 
-In the example above, `TextBuilder.AppendLine` method adds unescaped characters `0x0D` and `0x0A` at the end of the line, so the resulting JsonObject contains the escaped \r \n values.
+In the example above, `TextBuilder.AppendLine` method adds unescaped characters `0x0D` and `0x0A` at the end of the line, so the resulting JsonObject contains the escaped `\r` `\n` values.
 ```
 {
     "Key": "Multiline\r\nValue"
 }
 ```
 
-## See Also
+## See also
 [JsonObject Data Type](jsonobject-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
