@@ -2,9 +2,9 @@
 title: Creating a Word layout report
 description: Describes the steps involved in creating a report that uses a Word layout.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 01/11/2023
-ms.reviewer: na
+ms.custom: bap-template
+ms.date: 01/11/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -185,6 +185,13 @@ else
 ```
 
 For more information about feature management, see [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).
+
+
+## Report limit - maximum number of documents that can be merged in report
+
+The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many resources. For example, there's a limit on the maximum number of documents that can be merged in a report using a Word layout.
+
+For more information on report limits, see [Report limits](devenv-report-object.md#report-limits).
 
 
 ## See Also
