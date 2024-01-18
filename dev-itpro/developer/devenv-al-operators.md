@@ -39,7 +39,7 @@ Arithmetic operators are used to perform arithmetic operations on numeric operan
 |`*`|Multiplication|
 |`/`|Division|
 |`div`|Integer division|
-|`mod`| Modulus|
+|`mod`|Modulus|
 
 Comparison operators are used to compare two values. The result of a comparison is a Boolean value, that is, `true` or `false`.
 
@@ -78,6 +78,7 @@ Most of the operators can be used on different data types. The action of these o
 ### Example 1
 
 In this example, the "+" operator is used as a binary operator.
+
 ```
 number + number
 ``` 
@@ -106,7 +107,7 @@ In this example, the "+" operator is used as a unary operator to indicate sign.
 
 Operators are organized in a hierarchy that determines the order in which the operands in a given expression are evaluated. The following list shows the order of precedence of the AL operators:
 
-1. `.`(fields in records), `[ ]` (indexing), `()` (parentheses), `::` (scope)
+1. `.`(fields in records), `[ ]` (indexing), `()` (parentheses), `::` (scope), `@` (case-insensitive)
 
 2. `not`, `-` (unary), `+` (unary)
 
@@ -130,7 +131,6 @@ This expression evaluates to 14.
 ```
 (2 + 3) * 4
 ```
-
 This expression evaluates to 20.
 
 ## See also

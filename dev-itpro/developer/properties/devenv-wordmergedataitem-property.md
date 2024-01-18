@@ -35,7 +35,8 @@ The `WordMergeDataItem` property is only applied when rendering a report using a
 
 When you specify a dataitem in the `WordMergeDataItem` property, the [!INCLUDE[prod_short](../includes/prod_short.md)] server will do a "Mail merge" between that data item (and the ones below it) and the Word layout when rendering the report using the Word layout.
 
- ## Example
+
+## Example
 
 The following example is showing how the `WordMergeDataItem` property is used on the "Standard Sales - Invoice" report when rendered with a Word layout.
 
@@ -77,5 +78,7 @@ report 1306 "Standard Sales - Invoice"
 
 ## See Also
 
-[Report](../devenv-reports.md)  
-[RDL Layout Reports](../devenv-howto-rdl-report-layout.md) 
+[Creating a Word layout report](../devenv-howto-report-layout.md)   
+[Working with Word layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)   
+[Report object](../devenv-report-object.md)   
+[Report overview](../devenv-reports.md)  
