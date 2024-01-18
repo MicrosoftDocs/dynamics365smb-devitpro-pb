@@ -26,7 +26,7 @@ Specifies the root-level DataItem that is used to generate separate reports for 
 ## Syntax
 
 ```AL
-WordMergeDataItem = MyDataItem; // MyDataItem must be present as a dataitem in the report dataset
+WordMergeDataItem = MyDataItem; // MyDataItem must be present as a top-level dataitem in the report dataset
 ```
 
 ## Remarks
