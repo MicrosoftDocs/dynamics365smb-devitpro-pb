@@ -1,6 +1,6 @@
 ---
-title: "Report Object"
-description: "The report object in AL for Business Central allows to create a new report."
+title: Report Object
+description: The report object in AL for Business Central allows to create a new report.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/18/2024
@@ -330,7 +330,7 @@ It's possible to schedule a report to run at your desired date and time by using
 
 ## Report limits 
 
-The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many ressources. Examples of limits are 
+The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many resources. Examples of limits are: 
 - The maximum number of rows that can be processed in a report.
 - The maximum number of documents that can be merged in a report using a Word layout.
 - The maximum execution time that it can take to generate a report.
