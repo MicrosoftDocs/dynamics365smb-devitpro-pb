@@ -3,7 +3,7 @@ title: Analyzing Permission Changes Trace Telemetry
 description: Learn about the telemetry for permission changes made in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry

@@ -3,7 +3,7 @@
     description: Specifies Basic Process for Publishing, Synchronizing and Installing the ‘IndiaUpgradeTables’ extension
     author: v-debapd
     ms.topic: article
-    ms.devlang: na
+    ms.devlang: al
     ms.tgt_pltfrm: na
     ms.workload: na
     ms.search.keywords: India, local, IN, English

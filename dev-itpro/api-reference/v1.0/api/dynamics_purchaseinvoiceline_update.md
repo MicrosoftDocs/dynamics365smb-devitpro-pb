@@ -5,7 +5,7 @@ description: (v1.0) Updates a purchase invoice line object in Dynamics 365 Busin
 author: SusanneWindfeldPedersen
 
 ms.topic: reference
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2019

@@ -5,7 +5,7 @@ description: Deletes the default dimensions of the vendor in Dynamics 365 Busine
 author: SusanneWindfeldPedersen
 
 ms.topic: reference
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2021
