@@ -164,7 +164,7 @@ For more information on report limits, see [Report limits](../developer/devenv-r
 |Rate|The maximum number of SOAP requests that can be submitted within a 5-minute sliding window. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. The more users you have in your environment, the more requests you can submit to it around the same time, as long as we can continuously scale our resources. If many requests are being submitted around the same time and we couldn't sufficiently scale our resources, you might experience throttling in submitting your requests.|6000, see [frequently asked questions on per-user limits](#FAQsUser).|
 
 > [!TIP]  
-> Throttling could occur when many requests are submitted and handled (processed/queued) around the same time and they're taking a long time to complete. To optimize throughput, use API or OData instead of SOAP, as they execute faster.  We'll also reduce the throughput for SOAP and [deprecate it](../upgrade/deprecated-features-platform#soap-endpoints-warning) in the future.
+> Throttling could occur when many requests are submitted and handled (processed/queued) around the same time and they're taking a long time to complete. To optimize throughput, use API or OData instead of SOAP, as they execute faster.  We'll also reduce the throughput for SOAP and [deprecate it](../../upgrade/deprecated-features-platform#soap-endpoints-warning) in the future.
 
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
