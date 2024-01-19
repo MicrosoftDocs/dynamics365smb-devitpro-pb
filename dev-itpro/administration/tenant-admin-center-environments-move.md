@@ -74,6 +74,8 @@ To confirm the transfer it has to be accepted on the destination tenant **within
 ## Transfer auditing
 Environment transfers create two distinct operations that can be audited on the Operations page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. The **Transfer Request** operation is created upon initiating a transfer in the source tenant and is only visible in the source tenant. The **Transfer to Microsoft Entra tenant** operation is created once a transfer is accepted in the destination tenant and lives in the tenant where the environment is located; before the transfer is executed this operation can be found in the source tenant, and after the environment has transferred the operation can be found in the destination tenant.
 
+Telemetry signals for the environment transfer operation are emitted to the Application Insights resource to which the environment that is transferred is emitting telemetry. Signals related to this operation are emitted from the moment a transfer is accepted on the destination tenant, see [Environment Lifecycle Telemetry](telemetry-environment-lifecycle-trace.md#environment-transfer-to-different-entra-tenant-operation-scheduled).
+
 ## Considerations
 
 - Environment data will remain unchanged during the move operation. The exact same environment will be linked to a specified Microsoft Entra tenant.
