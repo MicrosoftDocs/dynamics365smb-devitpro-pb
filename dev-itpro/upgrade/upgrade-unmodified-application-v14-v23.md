@@ -2,8 +2,8 @@
 title: "Upgrading Unmodified C/AL Application to version 23"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 23
 ms.custom: bap-template
-ms.date: 08/14/2023
-ms.reviewer: na
+ms.date: 01/18/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -258,7 +258,36 @@ If you've gotten a new [!INCLUDE[prod_short](../developer/includes/prod_short.md
 
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).
 
-## Task 7: Publish extensions
+## Task 7: Synchronize tenant
+
+Synchronize the tenant database with the platform changes in the application database to get it ready for the new extension versions. If you have a multitenant deployment, do these steps for each tenant.
+
+1. (Multitenant only) Mount the tenant to the version 23 server instance.
+
+    To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
+
+    ```powershell
+    Mount-NAVTenant -ServerInstance $NewBcServerInstance -DatabaseName $TenantDatabase -DatabaseServer $DatabaseServer -Tenant $TenantId -AllowAppDatabaseWrite
+    ```
+
+    > [!IMPORTANT]
+    > You must use the same tenant ID for the tenant that was used in the old deployment; otherwise you'll get an error when mounting or syncing the tenant. If you want to use a different ID for the tenant, you can either use the `-AlternateId` parameter now or after upgrading, dismount the tenant, then mount it again using the new ID and the `OverwriteTenantIdInDatabase` parameter.  
+    >  
+    > For upgrade, set the `-AllowAppDatabaseWrite` parameter. After upgrade, you can dismount and mount the tenant again without the parameter if needed.
+
+    At this stage, the tenant state is OperationalWithSyncPending.
+
+2. Synchronize the tenant with the application database.
+
+    Use the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
+
+    ```powershell  
+    Sync-NAVTenant -ServerInstance $NewBcServerInstance -Mode Sync -Tenant $TenantId
+    ```
+
+    With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
+
+## Task 8: Publish extensions
 
 In this task, you'll publish the extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft extensions and third-party extensions that were used on your old deployment.
 
@@ -333,7 +362,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance $NewBcServerInstance -Path "<path to extension>"
     ```
 
-## Task 8: Restart server instance
+## Task 9: Restart server instance
 
 Restart the [!INCLUDE[server](../developer/includes/server.md)] to free up resources for completing the upgrade.
 
@@ -343,9 +372,9 @@ Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
 
 This step is important, otherwise you might experience issues when you run the data upgrade.
 
-## Task 9: Synchronize tenant
+## Task 10: Synchronize tenant with the extensions
 
-In this task, you'll synchronize the tenant's database schema with any schema changes in the application database and extensions.
+In this task, you'll synchronize the tenant's database schema with any schema changes in extensions.
 
 If you have a multitenant deployment, do these steps for each tenant.
 
@@ -425,7 +454,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 > [!TIP]
 > When you synchronize an extension, the extension takes ownership of any tables that it includes. In SQL Server, you'll notice that the table names will be suffixed with the extension ID. For example, Base Application tables will have `437dbf0e-84ff-417a-965d-ed2bb9650972` in the name. In addition, the systemId column is added to application tables that are not already part of an extension.
 
-## Task 10: Upgrade data
+## Task 11: Upgrade data
 
 In this task, you run a data upgrade on tables to handle data changes made by platform and extensions.
 
@@ -488,7 +517,7 @@ If you have a multitenant deployment, do these steps for each tenant.
    > |India Gate Entry|
    > |India Voucher Interface|
 
-3. Install the **_Exclude_ReportLayouts** extension, if you published it earlier in task 7.
+3. Install the **_Exclude_ReportLayouts** extension, if you published it earlier in task 8.
 
     ```powershell
     Install-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "_Exclude_ReportLayouts" -Version $NewVersion
@@ -496,7 +525,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
 4. (Multitenant only) Repeat steps 1 through 3 for each tenant.
 
-## Task 11: Install 3rd-party extensions
+## Task 12: Install 3rd-party extensions
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
@@ -536,13 +565,14 @@ Install-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Vers
    > ```Powershell
    > Unpublish-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version2
    > ```
-## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
+
+## Task 13: <a name="JSaddins"></a>Upgrade control add-ins
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
 At this point, the upgrade is complete, and you can open the client.
 
-## Task 13: Install upgraded permissions sets
+## Task 14: Install upgraded permissions sets
 
 In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or as data.
 
@@ -560,7 +590,7 @@ In this task, you install the custom permission sets that you upgraded earlier i
 
 For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
-## Task 14: Change application version
+## Task 15: Change application version
 
 [!INCLUDE[upgrade-change-application-version](../developer/includes/upgrade-change-application-version.md)]
 
