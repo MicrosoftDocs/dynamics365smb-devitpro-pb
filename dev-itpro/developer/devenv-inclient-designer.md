@@ -38,7 +38,7 @@ Here's a quick overview of capabilities in **Designer**:
 |Save extension/download code |general           |
 |Preview design               |general           |
 
-[!INCLUDE[Personalization of the controls](../includes/designer_experience_of_the_controls_Note.md)]|
+[!INCLUDE[Personalization of the controls](../includes/designer_experience_of_the_controls_note.md)]
 
 ## Important points to note
 
