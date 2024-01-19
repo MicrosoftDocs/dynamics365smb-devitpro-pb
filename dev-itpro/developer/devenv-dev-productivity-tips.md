@@ -14,8 +14,9 @@ ms.date: 01/19/2024
 
 Working in Visual Studio Code and programming in AL for Business Central can be a very productive experience. This article describes some of the productivity tips that can help you get more done when programming in AL.
 
+## Snippets
 
-
+In addition to the inline help of IntelliSense, you have access to various snippets that'll give you a template for a specific object type. Use a code snippet from an .al file by start typing the snippet name. All snippets start with the letter `t`. For example, to get a template for a table, type `ttable` and press `Tab`.
 
 ## Global and workspace launch configuration
 
