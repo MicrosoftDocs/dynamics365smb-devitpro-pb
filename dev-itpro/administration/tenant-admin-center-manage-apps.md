@@ -122,7 +122,7 @@ Sometimes the update could fail because of a transient problem. Select **Retry**
    > [!TIP]
    > When reporting issues to Microsoft Support, always provide the **Operation ID** displayed in the error message. This will help expedite the investigations. 
 
-## Preview versions of AppSource Apps
+## Preview versions of AppSource apps
 
 > [!Note]
 > Preview versions of AppSource apps are supported for Sandbox environments on version 23.0 and higher.
