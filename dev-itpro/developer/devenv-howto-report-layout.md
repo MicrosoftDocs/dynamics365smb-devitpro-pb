@@ -20,20 +20,20 @@ Later in this article you can read more how to enable multiple report layouts. F
 
 If you need your report to change style for different types of content, consider using different *Sections* in your Word layout. Within each section, you can have different formatting, such as page or table layouts, and headers/footers.
 
-Sections are created using section breaks. To start a new section, select where you want it to begin. Then go to **Layout** > **Breaks**. For more information, see [Insert a section break](https://support.microsoft.com/en-us/office/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c) (use CTRL+click to open in a new tab).
+Sections are created using section breaks. To start a new section, select where you want it to begin. Then go to **Layout** > **Breaks**. For more information, see [Insert a section break](https://support.microsoft.com/en-us/office/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c) (use <kbd>Ctrl</kbd>+click to open in a new tab).
 
 > [!TIP]  
-> When working with sections in a layout, it is recommended to turn the display of formatting marks on. This makes it much easier to see in which section of the layout you are working. For more information, see [Show or hide tab marks in Word](https://support.microsoft.com/en-us/office/show-or-hide-tab-marks-in-word-84a53213-5d02-404a-b022-09cae1a3958b) (use CTRL+click to open in a new tab)
+> When working with sections in a layout, it's recommended to turn the display of formatting marks on. This makes it much easier to see in which section of the layout you are working. For more information, see [Show or hide tab marks in Word](https://support.microsoft.com/en-us/office/show-or-hide-tab-marks-in-word-84a53213-5d02-404a-b022-09cae1a3958b) (use <kbd>Ctrl</kbd>+click to open in a new tab)
 
 
 ## Headers and footers in Word layouts
 
 It is common to use headers and/or footers in Word layouts to display general information about the report, such as company logo, or company name and address. To define headers and/or footers, go to **Insert** > **Header** or **Footer**. Note that you can have a different header/footer on the first page of your layout than the rest of the page or section (see tip below). When working with different headers/footers for the first page, consider entering a manual page break (Ctrl+Enter) when designing them. This makes it easier to see the difference in headers/footers (remember to remove the page break again). 
 
-For more information, see [Headers and Footers in Word](https://support.microsoft.com/en-us/office/headers-and-footers-in-word-b693b4fb-0d23-4109-a621-1b828b824454) (use CTRL+click to open in a new tab)
+For more information, see [Headers and Footers in Word](https://support.microsoft.com/en-us/office/headers-and-footers-in-word-b693b4fb-0d23-4109-a621-1b828b824454) (use <kbd>Ctrl</kbd>+click to open in a new tab)
 
 > [!TIP]  
-> It is possible to control the headers and footers for different sections of a document. The formatting you set up extends to each page of the section until another section break is encountered. For more information, see [Configure headers and footers for different sections of a document](https://support.microsoft.com/en-us/office/configure-headers-and-footers-for-different-sections-of-a-document-94332643-a6e9-46aa-ab29-064f1d356db6) (use CTRL+click to open in a new tab)
+> It's possible to control the headers and footers for different sections of a document. The formatting you set up extends to each page of the section until another section break is encountered. For more information, see [Configure headers and footers for different sections of a document](https://support.microsoft.com/en-us/office/configure-headers-and-footers-for-different-sections-of-a-document-94332643-a6e9-46aa-ab29-064f1d356db6) (use <kbd>Ctrl</kbd>+click to open in a new tab)
 
 ## Using watermarks in Word layouts
 
@@ -50,7 +50,7 @@ In case you want to apply different watermarks to different sections, this work-
 1. On the **Home** tab, click **Select** > **Selection Pane**. The Selection pane is used to manage objects in your document: re-order them, show or hide them, and group or ungroup them.
 2. Within the first section, open the header or footer and insert the watermark you want to use. Just use the normal approach. In the Selection pane, the watermark will now show as "PowerPlusWaterMarkObject" for a text object or "WordPictureWaterMark" for a picture object (each name followed by an identifier). Doubleclick on the name to make it editable, and change it to something else (maybe to the watermark text, such as 'Customer copy' or 'Original'). Now Word will not treat the object as a (global) watermark. 
 3. Within each subsequent section, repeat step number 2.
-4. On the **Home** tab, click **Select** > **Selection Pane** to turn off the Selection pane again.
+4. On the **Home** tab, choose **Select** > **Selection Pane** to turn off the Selection pane again.
 
 
 ## Report labels in Word layouts
