@@ -4,7 +4,7 @@ description: Learn about how to escalate technical support cases on behalf of yo
 author: jswymer
 
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/29/2021

@@ -3,7 +3,7 @@ title: Business Central Admin Center API - Available Applications
 description: Learn about the Business Central administration center API for getting information about the applications.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen

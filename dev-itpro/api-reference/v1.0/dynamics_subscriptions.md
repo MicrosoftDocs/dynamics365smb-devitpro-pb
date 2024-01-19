@@ -4,7 +4,7 @@ description: (v1.0) Overview of how to manage subscriptions to Dynamics 365 Busi
 author: SusanneWindfeldPedersen
 
 ms.topic: reference
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2019

@@ -5,7 +5,7 @@ description: Specifies list of deprecated tables
 author: v-debapd
 
 ms.topic: article
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: India, local, IN, English

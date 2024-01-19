@@ -4,7 +4,7 @@ description: An externaleventsubscriptions object in Dynamics 365 Business Centr
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
 ms.topic: reference
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2023
