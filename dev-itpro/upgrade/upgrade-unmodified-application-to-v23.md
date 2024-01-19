@@ -2,7 +2,7 @@
 title: "Upgrading Microsoft System and Base Application to Version 23"
 description: Describes how to upgrade an unmodified Business Central versions 15 through 22 to version 23
 ms.custom: bap-template
-ms.date: 08/14/2023
+ms.date: 01/18/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -148,6 +148,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
     ```powershell
     Stop-NAVServerInstance -ServerInstance $OldBcServerInstance
     ```
+
 8. [!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
 
 ## Task 4: Convert application database to version 23
@@ -164,7 +165,7 @@ This task runs a technical upgrade on the application database to convert it to 
 
     When completed, a message like the following displays in the console:
 
-    ```
+    ```ps
     DatabaseServer      : .\BCDEMO
     DatabaseName        : Demo Database BC (22-0)
     DatabaseCredentials :
@@ -257,7 +258,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     For example:
 
     ```powershell
-    Publish-NAVApp -ServerInstance BC210 -Path "C:\W1DVD\Applications\ReportLayouts\Source\Microsoft__Exclude_ReportLayouts.app"
+    Publish-NAVApp -ServerInstance BC230 -Path "C:\W1DVD\Applications\ReportLayouts\Source\Microsoft__Exclude_ReportLayouts.app"
     ```
 
     > [!NOTE]
