@@ -3,7 +3,7 @@ title: Business Central Admin Center API - Authorized AAD Apps
 description: Learn about the Business Central administration center API for authorizing Microsoft Entra apps.
 author: jobulsin
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen

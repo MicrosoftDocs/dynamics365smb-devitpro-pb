@@ -3,7 +3,7 @@ title: Feature telemetry
 description: Learn about the telemetry that you can emit from features in Business Central.
 author: bholtorf
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive

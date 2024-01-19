@@ -5,7 +5,7 @@ description: (v1.0) Creates a customer payments journal object in Dynamics 365 B
 author: SusanneWindfeldPedersen
 
 ms.topic: reference
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/04/2019

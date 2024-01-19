@@ -4,7 +4,7 @@ description: Learn how the Business Central admin center provides telemetry for 
 author: jswymer
 
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry

@@ -3,7 +3,7 @@ title: Business Central Admin Center API - Notifications
 description: Learn about the Business Central administration center API for setting up notifications.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen

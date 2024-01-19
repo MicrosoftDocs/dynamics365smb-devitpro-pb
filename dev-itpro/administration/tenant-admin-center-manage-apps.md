@@ -3,7 +3,7 @@ title: Managing Apps
 description: Use the Business Central administration center to manage apps used by your tenant environments. 
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, apps, versions, check for updates

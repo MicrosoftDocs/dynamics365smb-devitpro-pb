@@ -3,7 +3,7 @@ title: Application access management
 description: Learn how application access management works as an Embed App ISV and VAR.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: application, tenant, management, access, API

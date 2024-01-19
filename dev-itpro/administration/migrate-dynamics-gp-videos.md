@@ -4,7 +4,7 @@ description: Get some tips and tricks for how to do things in Business Central o
 author: jswymer
 
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: jswymer

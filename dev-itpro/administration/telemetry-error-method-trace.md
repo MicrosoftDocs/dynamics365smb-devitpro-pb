@@ -4,7 +4,7 @@ description: Learn about the Error method telemetry in Business Central
 author: jswymer
 
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry

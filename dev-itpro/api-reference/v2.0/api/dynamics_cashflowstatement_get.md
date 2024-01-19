@@ -3,7 +3,7 @@ title: Get cashFlowStatement
 description: Gets a cash flow statement object in Dynamics 365 Business Central. 
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/30/2021
