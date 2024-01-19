@@ -59,10 +59,14 @@ The environment for a web service endpoint can change how it works. If you see a
 - For pages/codeunits exposed as OData/SOAP, are they exposed the same way in both environments?
 - Are apps/extensions **Allow HttpClient Requests** properties set the same way in both environments?
 - (Only for on-premises) Are API/OData/SOAP enabled the same way in both environments?
+- List all (Page only) API's directly from the Web Client by typing:
+  https://businesscentral.dynamics.com/?table=2000000138 (filter PageType to API)
+
 
 
 ## See also
 
+[Analyzing web service publish failure telemetry](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/telemetry-webservices-publish-failure-trace)
 [Handling UI Interaction in web service endpoints](handling-ui-interaction-when-working-with-web-Services.md)   
 [Web Services Best Practices](Web-Services-Best-Practices.md)  
 [Web service telemetry](web-service-telemetry.md)   
