@@ -17,7 +17,9 @@ Later in this article you can read more how to enable multiple report layouts. F
 
 ## How to layout your report with Word layouts
 
-With Word layouts, you use Word as the editor for the report. Microsoft Word offers a variety of features to help you format and layout your documents. You can customize the margins, page orientation, and line spacing to suit your needs. You can define advanced header/footers, utilize sections to change the layout style in different places of the report layout, and utilize fonts to get just the typography that match your organization.
+With Word layouts, you use Word as the editor for the report. Microsoft Word offers a variety of features to help you format and layout your document reports. You can customize the margins, page orientation, and line spacing to suit your needs. You can define advanced header/footers, utilize sections to change the layout style in different places of the report layout, and utilize fonts to get just the typography that match your organization. 
+
+In the Word report layout, you specify the fields of the report dataset to include on report and how the fields are arranged. You also define the general format of the report, such as text font and size, margins, and background images. You will typically arrange the content of the report by adding tables to the layout. To make general formatting and layout changes, such as changing text font, adding and modifying a table, or removing a data field, just use the basic editing features of Word, like you do with any Word document.
 
 ### Using Hyperlinks in Word Layouts
 
