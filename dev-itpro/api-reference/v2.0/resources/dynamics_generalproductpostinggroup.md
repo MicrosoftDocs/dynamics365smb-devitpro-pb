@@ -3,7 +3,7 @@ title: generalProductPostingGroup resource type
 description: A general product posting group object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/24/2021

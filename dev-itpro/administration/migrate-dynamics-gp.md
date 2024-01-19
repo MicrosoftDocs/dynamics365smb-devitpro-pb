@@ -4,7 +4,7 @@ description: Learn how to migrate to the cloud from Dynamics GP using an assiste
 author: jenolson
 
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: jswymer

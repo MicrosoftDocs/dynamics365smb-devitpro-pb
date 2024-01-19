@@ -3,7 +3,7 @@ title: Delete configurationPackage
 description: Deletes a configuration package object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: article
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2021

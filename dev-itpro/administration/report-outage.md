@@ -3,7 +3,7 @@ title: Report customer outages
 description: Learn about how to report a suspected service outage on behalf of your Business Central online customers as the delegated administrator.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/03/2024

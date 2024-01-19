@@ -3,7 +3,7 @@ title: Get customerReturnReasons
 description: Gets a customer return reason object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/27/2021
