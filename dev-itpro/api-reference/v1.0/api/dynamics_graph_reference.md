@@ -5,7 +5,7 @@ description: (v1.0) API documentation for integration with Microsoft Graph
 author: SusanneWindfeldPedersen
 
 ms.topic: get-started
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2019

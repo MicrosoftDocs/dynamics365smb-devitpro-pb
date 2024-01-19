@@ -3,7 +3,7 @@ title: Get userGroupPermission
 description: Gets a user group permission object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/05/2021

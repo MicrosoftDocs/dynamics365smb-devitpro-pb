@@ -3,7 +3,7 @@ title: Authorization Trace | Microsoft Docs
 description: Learn about the Authorization telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry

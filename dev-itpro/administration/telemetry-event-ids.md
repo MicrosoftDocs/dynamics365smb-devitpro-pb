@@ -3,7 +3,7 @@ title: Telemetry Event IDs in Application Insights | Microsoft Docs
 description: Learn about the event IDs of Business Central events emitted to Azure Application Insights.  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
