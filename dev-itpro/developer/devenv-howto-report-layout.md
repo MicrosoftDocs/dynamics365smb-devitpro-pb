@@ -15,8 +15,17 @@ When you create a new report, there are two main tasks. First, you define the re
 
 Later in this article you can read more how to enable multiple report layouts. For more information, see [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
 
+## How to layout your report with Word layouts
 
-## Using sections in a Word layout
+With Word layouts, you use Word as the editor for the report. Microsoft Word offers a variety of features to help you format and layout your documents. You can customize the margins, page orientation, and line spacing to suit your needs. You can define advanced header/footers, utilize sections to change the layout style in different places of the report layout, and utilize fonts to get just the typography that match your organization.
+
+### Using Hyperlinks in Word Layouts
+
+In a Word report layout, you can set up hyperlinks on text and picture fields, e.g. to add a link on invoice reports that targets the URL of a payment service. This link will then be present when rendering the report as a Word or PDF document. 
+
+For more information, see [Using Hyperlinks in Word Layouts](devenv-hyperlinks-in-word-report-layouts.md)  
+
+### Using sections in a Word layout
 
 If you need your report to change style for different types of content, consider using different *Sections* in your Word layout. Within each section, you can have different formatting, such as page or table layouts, and headers/footers.
 
@@ -26,7 +35,7 @@ Sections are created using section breaks. To start a new section, select where 
 > When working with sections in a layout, it's recommended to turn the display of formatting marks on. This makes it much easier to see in which section of the layout you are working. For more information, see [Show or hide tab marks in Word](https://support.microsoft.com/en-us/office/show-or-hide-tab-marks-in-word-84a53213-5d02-404a-b022-09cae1a3958b) (use <kbd>Ctrl</kbd>+click to open in a new tab)
 
 
-## Headers and footers in Word layouts
+### Headers and footers in Word layouts
 
 It is common to use headers and/or footers in Word layouts to display general information about the report, such as company logo, or company name and address. To define headers and/or footers, go to **Insert** > **Header** or **Footer**. Note that you can have a different header/footer on the first page of your layout than the rest of the page or section (see tip below). When working with different headers/footers for the first page, consider entering a manual page break (Ctrl+Enter) when designing them. This makes it easier to see the difference in headers/footers (remember to remove the page break again). 
 
@@ -35,14 +44,14 @@ For more information, see [Headers and Footers in Word](https://support.microsof
 > [!TIP]  
 > It's possible to control the headers and footers for different sections of a document. The formatting you set up extends to each page of the section until another section break is encountered. For more information, see [Configure headers and footers for different sections of a document](https://support.microsoft.com/en-us/office/configure-headers-and-footers-for-different-sections-of-a-document-94332643-a6e9-46aa-ab29-064f1d356db6) (use <kbd>Ctrl</kbd>+click to open in a new tab)
 
-## Using watermarks in Word layouts
+### Using watermarks in Word layouts
 
 A watermark is text or a picture that sits behind your text and pictures, usually faint or washed-out so that it doesn't interfere with what's on the page. Like headers and footers, a watermark usually appears on all the pages of your document. You define and manage the watermark from the **Design** tab, select **Watermark**.
 
 For more information, see [Watermarks in Word](https://support.microsoft.com/en-us/office/watermarks-in-word-e8317e40-ba36-493f-9cb8-6b93537b14d8) (use CTRL+click to open in a new tab)
 
 
-### Using different watermarks in sections
+#### Using different watermarks in sections
 
 The internal data model in Word only allows one watermark for the entire document. If you try to insert a second watermark, whether in a first page, other pages, or sections, Word will delete or replace the previous watermark. 
 
@@ -51,6 +60,23 @@ In case you want to apply different watermarks to different sections, this work-
 2. Within the first section, open the header or footer and insert the watermark you want to use. Just use the normal approach. In the Selection pane, the watermark will now show as "PowerPlusWaterMarkObject" for a text object or "WordPictureWaterMark" for a picture object (each name followed by an identifier). Doubleclick on the name to make it editable, and change it to something else (maybe to the watermark text, such as 'Customer copy' or 'Original'). Now Word will not treat the object as a (global) watermark. 
 3. Within each subsequent section, repeat step number 2.
 4. On the **Home** tab, choose **Select** > **Selection Pane** to turn off the Selection pane again.
+
+
+### Using fonts in Word layouts
+
+[!INCLUDE[using_fonts](../includes/include-excel-word-layouts-fonts.md)]
+
+Note that fonts do not need to be installed on your machine when working with the layout, you can just mark content and type in the name of the font you want to use. When the report is generated on the server, if the font is installed on the server, then it will be used in the rendered report document.  If the font is not available on the server (or embedded in the layout, see below), then the report will still render, but the font defined in the *Normal* style will be used.
+
+In case your favorite (true-type) font is not installed on the [!INCLUDE[prod_short](includes/prod_short.md)] server, then you can embed it in the layout. For more information, see [Embedding custom fonts](https://support.microsoft.com/en-us/office/benefits-of-embedding-custom-fonts-cb3982aa-ea76-4323-b008-86670f222dbc).
+
+> [!NOTE]
+> Embedding fonts will increase the size of the generated documents.
+
+
+### Using Office document themes in Word layouts
+
+[!INCLUDE[using_office_themes](../includes/include-excel-word-layouts-themes.md)]
 
 
 ## Report labels in Word layouts
@@ -121,17 +147,6 @@ report 50142 "My Sales Invoice report"
 
 }
 ```
-
-
-## Using fonts in Word layouts
-
-[!INCLUDE[using_fonts](../includes/include-excel-word-layouts-fonts.md)]
-
-
-## Using Office document themes in Word layouts
-
-[!INCLUDE[using_office_themes](../includes/include-excel-word-layouts-themes.md)]
-
 
 ## Example: Create a Word layout report
 
@@ -250,7 +265,7 @@ For more information on report limits, see [Report limits](devenv-report-object.
 
 ## See Also
 
-[Setting up Hyperlinks in Word Report Layouts](devenv-hyperlinks-in-word-report-layouts.md)  
+[Using Hyperlinks in Word Layouts](devenv-hyperlinks-in-word-report-layouts.md)  
 [WordMergeDataItem Property](properties/devenv-wordmergedataitem-property.md)   
 [Report Design Overview](devenv-report-design-overview.md)  
 [Report Object](devenv-report-object.md)  
