@@ -3,7 +3,6 @@ title: "Width Property"
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 59701d5d-65f8-42e8-9b1b-8c47709cf4bc

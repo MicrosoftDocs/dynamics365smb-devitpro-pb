@@ -4,7 +4,6 @@ description: Learn how you can configure security filters at different levels in
 author: jswymer
 
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer

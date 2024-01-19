@@ -4,7 +4,6 @@ description: This article describes the tasks required for getting the monthly v
 ms.custom: na
 ms.date: 12/28/2023
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer

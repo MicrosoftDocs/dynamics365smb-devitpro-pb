@@ -4,7 +4,6 @@ description: Describes how UI methods can make web service calls fail.
 ms.custom: na
 ms.date: 12/18/2023
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---

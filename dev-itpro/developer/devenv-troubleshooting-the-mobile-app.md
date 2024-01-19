@@ -4,7 +4,6 @@ description: Learn how to fix issues related to the Business Central on-premises
 ms.custom: na
 ms.date: 01/02/2023
 ms.reviewer: solsen
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: troubleshooting
 author: blrobl

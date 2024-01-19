@@ -5,7 +5,6 @@ author: solsen
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 60509047-8419-4b08-a391-83117489fdee

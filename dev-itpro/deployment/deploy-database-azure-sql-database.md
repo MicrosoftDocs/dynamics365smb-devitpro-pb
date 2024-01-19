@@ -4,7 +4,6 @@ description: Learn how to deploy a Business Central database to Azure SQL Databa
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer

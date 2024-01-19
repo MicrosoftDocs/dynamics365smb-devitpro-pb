@@ -4,7 +4,6 @@ description: "Methods also known as procedures are a fundamental programming ele
 ms.custom: na
 ms.date: 11/16/2021
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

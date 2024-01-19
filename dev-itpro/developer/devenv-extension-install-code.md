@@ -5,7 +5,6 @@ description: "Describes how to add code to run to initialize data when an extens
 ms.custom: na
 ms.date: 02/04/2022
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---

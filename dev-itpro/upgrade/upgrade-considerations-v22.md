@@ -3,7 +3,6 @@ title: General Information and Considerations When Upgrading to Business Central
 description: This article provides tips and considerations to prepare a solution when you're planning to upgrade to Business Central 2023 release wave 1.
 author: jswymer
 ms.custom: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.date: 04/01/2021

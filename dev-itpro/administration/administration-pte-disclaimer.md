@@ -3,7 +3,6 @@ title: Per-tenant Extension (PTE) Disclaimer
 description: Per-tenant Extension (PTE) disclaimer for Business Central
 ms.custom: na
 ms.author: solsen
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

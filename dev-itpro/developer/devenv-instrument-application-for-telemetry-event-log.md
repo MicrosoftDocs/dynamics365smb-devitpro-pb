@@ -4,7 +4,6 @@ description: This topic describes how to add code to application objects that en
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer

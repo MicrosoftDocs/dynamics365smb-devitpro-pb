@@ -4,7 +4,6 @@ description: This topic lists report properties that apply to controls of a repo
 ms.custom: na
 ms.date: 12/04/2023
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

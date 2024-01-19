@@ -4,7 +4,6 @@ description: Get an overview of new and changed capabilities in the 19.2 update 
 ms.custom: na
 ms.date: 12/07/2021
 ms.reviewer: solsen
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: EmmaNielsson

@@ -4,7 +4,6 @@ description: Provides an overview of Business Central 2021 release wave 1 upgrad
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: jswymer

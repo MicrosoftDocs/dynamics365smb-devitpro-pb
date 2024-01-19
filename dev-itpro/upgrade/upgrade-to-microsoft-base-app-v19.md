@@ -4,7 +4,6 @@ description: Describes how to do an upgrade from a customized Business Central 1
 ms.custom: na
 ms.date: 01/03/2024
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer

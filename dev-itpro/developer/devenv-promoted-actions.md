@@ -4,7 +4,6 @@ description: Promoted actions are configured to display on the Home tab for acce
 ms.custom: na
 ms.date: 05/05/2022
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

@@ -4,7 +4,6 @@ description: Learn about how to configure paging in OData requests.
 ms.custom: na
 ms.date: 05/26/2021
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer

@@ -4,7 +4,6 @@ description: "Description of how to get started with the development environment
 author: SusanneWindfeldPedersen
 ms.date: 05/18/2022
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen

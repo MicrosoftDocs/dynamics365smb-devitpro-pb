@@ -4,7 +4,6 @@ description: Explains how to add a page on a page that displays Power BI reports
 ms.custom: na
 ms.date: 05/12/2021
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.search.keywords: Power BI, reports, faq, errors

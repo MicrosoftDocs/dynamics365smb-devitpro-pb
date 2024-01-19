@@ -4,7 +4,6 @@ description: Learn how OData V3 clients can use Atom Publishing Protocol documen
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---

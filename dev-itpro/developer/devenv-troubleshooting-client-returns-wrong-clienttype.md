@@ -4,7 +4,6 @@ description: Learn how to ensure that the correct client type is returned for ea
 ms.custom: na
 ms.date: 12/22/2023
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: troubleshooting
 author: blrobl

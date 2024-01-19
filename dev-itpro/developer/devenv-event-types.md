@@ -4,7 +4,6 @@ description: Dynamics 365 Business Central supports different types of events in
 ms.custom: na
 ms.date: 12/07/2022
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

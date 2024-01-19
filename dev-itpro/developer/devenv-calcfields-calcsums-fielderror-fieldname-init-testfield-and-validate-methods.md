@@ -4,7 +4,6 @@ description: "CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and 
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 22168a6c-9034-4503-bc82-1cae9497762d

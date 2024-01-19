@@ -4,7 +4,6 @@ author: jswymer
 description: Provides an overview of Embed App in Business Central
 ms.custom: na
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: jswymer

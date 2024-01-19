@@ -4,7 +4,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 09/29/2023
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 description: Explore the comprehensive AL Reference Guide for Dynamics 365 Business Central, detailing methods, method attributes, data types, properties, diagnostics, and triggers.

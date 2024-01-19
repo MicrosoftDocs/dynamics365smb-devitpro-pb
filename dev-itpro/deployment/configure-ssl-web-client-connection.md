@@ -4,7 +4,6 @@ description: Learn how to secure data that is transmitted over the internet by e
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 8079f309-e5ca-4d23-a6b9-412892a565ad

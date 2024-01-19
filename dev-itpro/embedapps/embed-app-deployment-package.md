@@ -4,7 +4,6 @@ description: Learn about how to deploy a Business Central Embed app to the Onlin
 author: jswymer
 ms.custom: na
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer

@@ -4,7 +4,6 @@ description: Tables are the objects in which you store and manipulate data, and 
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: solsen

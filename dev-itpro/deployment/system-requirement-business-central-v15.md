@@ -4,7 +4,6 @@ description: This article provides the specifications of minimum hardware and so
 author: jswymer
 ms.custom: na
 ms.reviewer: jswymer
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.date: 01/04/2024

@@ -4,7 +4,6 @@ description: Describes the simple, single-line statements in AL for Business Cen
 ms.custom: na
 ms.date: 09/21/2022
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen

@@ -4,7 +4,6 @@ description: "Relational modeling between Microsoft Dataverse tables used in Bus
 ms.custom: na
 ms.date: 11/13/2023
 ms.reviewer: solsen
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: solsen

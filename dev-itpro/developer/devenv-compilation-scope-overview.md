@@ -4,7 +4,6 @@ description: This article explains the configuration and compilation scope for p
 ms.custom: na
 ms.date: 06/28/2022
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
 author: SusanneWindfeldPedersen

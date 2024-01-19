@@ -4,7 +4,6 @@ description: The article includes replacement code for Page 6401 Flow Selector f
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer

@@ -4,7 +4,6 @@ description: Describes how to use an Azure Key vault with Business Central exten
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer

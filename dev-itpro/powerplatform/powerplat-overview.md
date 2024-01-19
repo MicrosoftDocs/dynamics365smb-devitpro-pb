@@ -4,7 +4,6 @@ description: Learn about integration of Power Platform with Business Central via
 ms.custom: na
 ms.date: 11/13/2023
 ms.reviewer: solsen
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
 author: solsen

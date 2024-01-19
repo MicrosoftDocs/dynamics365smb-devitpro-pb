@@ -4,7 +4,6 @@ description: Get an overview of the tasks required to deploy a Business Central 
 author: jswymer
 ms.custom: na
 ms.reviewer: na
-ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: jswymer
