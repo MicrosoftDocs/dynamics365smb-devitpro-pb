@@ -6,7 +6,6 @@ ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: al
 ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 02/06/2023
 ms.author: solsen
 ---

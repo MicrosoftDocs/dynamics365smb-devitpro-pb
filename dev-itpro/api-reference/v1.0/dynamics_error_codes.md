@@ -8,7 +8,6 @@ author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
 ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 06/19/2019
 ms.author: solsen
 ---

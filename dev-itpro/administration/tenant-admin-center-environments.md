@@ -5,7 +5,6 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
 ms.date: 02/24/2023
 ms.author: jswymer

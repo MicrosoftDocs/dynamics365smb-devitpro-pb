@@ -7,7 +7,6 @@ author: SusanneWindfeldPedersen
 ms.topic: get-started
 ms.devlang: al
 ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/01/2019
 ms.author: solsen
 

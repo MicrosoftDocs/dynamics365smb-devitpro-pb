@@ -4,7 +4,6 @@ description: Learn how it works with trials and subscriptions for Business Centr
 author: jswymer
 
 ms.topic: conceptual
-ms.workload: na
 ms.search.keywords: preview, trial, sandbox, subscription
 ms.search.form: 1803, 1801
 ms.date: 05/25/2022

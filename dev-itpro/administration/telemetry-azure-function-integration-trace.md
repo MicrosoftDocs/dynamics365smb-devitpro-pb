@@ -5,7 +5,6 @@ author: KennieNP
 ms.topic: conceptual
 ms.devlang: al
 ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, telemetry
 ms.date: 08/16/2022
 ms.author: kepontop

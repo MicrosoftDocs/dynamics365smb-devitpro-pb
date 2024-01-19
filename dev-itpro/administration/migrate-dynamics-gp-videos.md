@@ -6,7 +6,6 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.tgt_pltfrm: na
-ms.workload: na
 ms.reviewer: jswymer
 ms. search.keywords: cloud, edge, gp, migration, video
 ms.date: 07/06/2022

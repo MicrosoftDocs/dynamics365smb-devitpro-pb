@@ -4,7 +4,6 @@ description: Learn about how to get started as a reselling partner of Dynamics 3
 author: jswymer
 
 ms.topic: conceptual
-ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 06/03/2022

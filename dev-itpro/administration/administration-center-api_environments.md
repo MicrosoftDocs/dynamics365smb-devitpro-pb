@@ -5,7 +5,6 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.tgt_pltfrm: na
-ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023

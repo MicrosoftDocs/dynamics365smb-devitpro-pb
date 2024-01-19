@@ -5,7 +5,6 @@ author: bholtorf
 ms.topic: conceptual
 ms.devlang: al
 ms.tgt_pltfrm: na
-ms.workload: na
 ms. search.keywords: deprecated, Switzerland, local functionality
 ms.date: 12/19/2023
 ms.author: jswymer

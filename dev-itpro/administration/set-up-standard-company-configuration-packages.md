@@ -5,7 +5,6 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords:
 ms.search.form: 8610, 8613, 8614, 8615, 8620, 8632
 ms.date: 04/07/2022

@@ -6,7 +6,6 @@ ms.topic: conceptual
 ms.reviewer: solsen
 ms.devlang: al
 ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: electronic document, electronic invoice, e-document, e-invoice, customization, development, extend
 ms.search.form: 6103, 6133
 ms.date: 10/05/2023

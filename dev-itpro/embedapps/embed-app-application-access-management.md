@@ -5,7 +5,6 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: application, tenant, management, access, API
 ms.date: 01/02/2024
 ---

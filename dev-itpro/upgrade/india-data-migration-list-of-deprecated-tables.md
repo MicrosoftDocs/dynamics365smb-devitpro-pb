@@ -7,7 +7,6 @@ author: v-debapd
 ms.topic: article
 ms.devlang: al
 ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: India, local, IN, English
 ms.date: 09/13/2021
 ms.author: v-debapd
