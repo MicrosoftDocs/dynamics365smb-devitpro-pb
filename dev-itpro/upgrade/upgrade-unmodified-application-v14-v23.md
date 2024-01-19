@@ -378,31 +378,7 @@ In this task, you'll synchronize the tenant's database schema with any schema ch
 
 If you have a multitenant deployment, do these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant to the version 23 server instance.
-
-    To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
-
-    ```powershell
-    Mount-NAVTenant -ServerInstance $NewBcServerInstance -DatabaseServer $DatabaseServer -DatabaseName $TenantDatabase -Tenant $TenantId -AllowAppDatabaseWrite
-    ```
-
-    > [!IMPORTANT]
-    > You must use the same tenant ID for the tenant that was used in the old deployment; otherwise you'll get an error when mounting or syncing the tenant. If you want to use a different ID for the tenant, you can either use the `-AlternateId` parameter now or after upgrading, dismount the tenant, then mount it again using the new ID and the `OverwriteTenantIdInDatabase` parameter.  
-    >  
-    > For upgrade, set the `-AllowAppDatabaseWrite` parameter. After upgrade, you can dismount and mount the tenant again without the parameter if needed.
-
-    At this stage, the tenant state is OperationalWithSyncPending.
-2. Synchronize the tenant with the application database.
-
-    Use the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
-
-    ```powershell  
-    Sync-NAVTenant -ServerInstance $NewBcServerInstance -Tenant $TenantId -Mode Sync
-    ```
-
-    With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
-
-3. Synchronize the tenant with the **System Application** extension. 
+1. Synchronize the tenant with the **System Application** extension. 
 
     Use the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
@@ -412,7 +388,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
     Replace `<extension version>` with the exact version of the published System Application. To get the version, you can use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
 
-4. Synchronize the tenant with the **Base Application** extension.
+1. Synchronize the tenant with the **Base Application** extension.
 
     ```powershell
     Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Base Application" -Version $NewBcVersion
@@ -420,13 +396,13 @@ If you have a multitenant deployment, do these steps for each tenant.
 
    Replace `<extension version>` with the exact version of the published Base Application.
 
-5. Synchronize the tenant with the **Application** extension.
+1. Synchronize the tenant with the **Application** extension.
 
     ```powershell
     Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Application" -Version $NewBcVersion
     ```
 
-6. Synchronize the tenant with Microsoft and 3rd-party extensions.
+1. Synchronize the tenant with Microsoft and 3rd-party extensions.
 
     For each extension, run the Sync-NAVApp cmdlet:
 
