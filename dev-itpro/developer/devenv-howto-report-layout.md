@@ -21,6 +21,16 @@ With Word layouts, you use Word as the editor for the report. Microsoft Word off
 
 In the Word report layout, you specify the fields of the report dataset to include on report and how the fields are arranged. You also define the general format of the report, such as text font and size, margins, and background images. You will typically arrange the content of the report by adding tables to the layout. To make general formatting and layout changes, such as changing text font, adding and modifying a table, or removing a data field, just use the basic editing features of Word, like you do with any Word document.
 
+Below, you can learn more about various concepts that you might want to use in your Word Layouts:
+
+- [Using Hyperlinks](#using-hyperlinks-in-word-layouts)
+- [Using sections](#using-sections-in-a-word-layout)
+- [Headers and footers](#headers-and-footers-in-word-layouts)
+- [Using watermarks](#using-watermarks-in-word-layouts)
+- [Using fonts](#using-fonts-in-word-layouts)
+- [Using Office document themes](#using-office-document-themes-in-word-layouts)
+
+
 ### Using Hyperlinks in Word Layouts
 
 In a Word report layout, you can set up hyperlinks on text and picture fields, e.g. to add a link on invoice reports that targets the URL of a payment service. This link will then be present when rendering the report as a Word or PDF document. 
