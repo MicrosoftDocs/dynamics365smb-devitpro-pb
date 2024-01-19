@@ -153,6 +153,12 @@ Selected customers can install the preview version of the extensions in your sub
 
 After the "Preview creation", a preview listing of the offer is available in the AppSource marketplace. This preview listing can be accessed from Partner Center by clicking "App source preview" at the "Publisher signoff" step of the submission flow. However, installing the corresponding preview version of the extension from the preview listing is not supported and the URL above must be used instead.
 
+### How can I install preview versions of my library apps for selected customers?
+
+When installing the preview version of an extension, the latest preview version of its dependencies are installed only if the minimum version required is not satisfied by the extensions already installed on the customer environment.
+
+You can ensure that your library apps are installed on your customer's environments by providing them with the install URL documented above using the app ID of your library app, or by increasing the dependency version in the manifest of the main app for your offer.
+
 ### How can I see if customers are using my preview versions?
 
 If you are using Azure Application Insights for your extension, you can see which customers installed it as a preview version by selecting signals `LC0010` and `LC0022` where the custom dimension `extensionAvailability` is set to `Preview`. You can also see which customers used a preview key when installing your extensions by filtering on the custom dimension `extensionPreviewKeyProvided`. For more information, see [Analyzing Extension Lifecycle Trace Telemetry](../administration/telemetry-extension-lifecycle-trace.md).
@@ -178,9 +184,18 @@ Preview versions are validated for breaking changes against the latest publicly 
 
 For example, if you have version 1.0.0.0 as publicly available in AppSource and you submit version 2.0.0.0, then version 2.0.0.0 will be validated for breaking change against version 1.0.0.0. If you do not press "Go Live" for your submission of version 2.0.0.0, and decide to start a new submission with version 2.1.0.0, then version 2.1.0.0 will be validated for breaking change against 1.0.0.0.
 
+> [!NOTE]  
+> Since there can be breaking changes between a preview version that was never made public and the next version of the app, the schema update mode `ForceSync` is used when upgrading **from** a preview version.
+
 ### Can the submission for one offer depend on preview versions of libraries from another offer?
 
 Dependencies which are not included in the submission will be downloaded automatically if they're publicly available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries/regions. Your submission will fail during the "Automated Application Validation" stage if you didn't include the dependencies for your app and they are not publicly available. The submission will also fail if the dependencies are only available as Preview. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
+
+### What happens to preview versions during environment upgrades?
+
+During the upgrade of an environment to the next major, the latest publicly available version of AppSource apps are installed on the customer environment. If there a higher version is available for your preview app, this version will be installed. If the preview version is the highest version, the preview version is preserved.
+
+During the upgrade of an environment to the next minor, AppSource apps versions are preserved unless the environment settings specify to update apps to the latest version available.
 
 ## Questions about Azure Application Insights usage during AppSource submissions
 
