@@ -28,6 +28,10 @@ Add a launch property to a code-workspace or in the settings.json file. This all
 > [!NOTE]  
 > If a local `launch.json` file doesn't contain a valid AL launch configuration, we'll try to find one in the code-workspace first, and then in the `settings.json` files. However, if the launch property is specified in the code-workspace file even without specifying a valid AL configuration, the global `settings.json` file won't be able to override it.
 
+## Git integration
+
+Visual Studio Code has built-in Git integration that makes it easy to manage your code changes. This can be useful when working together on projects with other developers. For more information, see [Git integration](https://code.visualstudio.com/docs/sourcecontrol/overview).
+
 ## See also
 
 [JSON files](devenv-json-files.md)  
