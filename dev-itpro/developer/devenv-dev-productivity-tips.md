@@ -14,9 +14,17 @@ ms.date: 01/19/2024
 
 Working in Visual Studio Code and programming in AL for Business Central can be a very productive experience. This article describes some of the productivity tips that can help you get more done when programming in AL.
 
-## Snippets
+## General Visual Studio Code tips
 
-In addition to the inline help of IntelliSense, you have access to various snippets that'll give you a template for a specific object type. Use a code snippet from an .al file by start typing the snippet name. All snippets start with the letter `t`. For example, to get a template for a table, type `ttable` and press `Tab`.
+### Git integration
+
+Visual Studio Code has built-in Git integration that makes it easy to manage your code changes. This can be useful when working together on projects with other developers. For more information, see [Git integration](https://code.visualstudio.com/docs/sourcecontrol/overview).
+
+## AL Language tips
+
+### AL snippets
+
+In addition to the inline help of IntelliSense, you have access to various snippets that'll give you a template for a specific object type. Use a code snippet from an .al file by start typing the snippet name. All snippets start with the letter `t`. For example, to get a template for a table, type `ttable` and press <kbd>Tab</kbd>.
 
 ## Global and workspace launch configuration
 
@@ -28,9 +36,6 @@ Add a launch property to a code-workspace or in the settings.json file. This all
 > [!NOTE]  
 > If a local `launch.json` file doesn't contain a valid AL launch configuration, we'll try to find one in the code-workspace first, and then in the `settings.json` files. However, if the launch property is specified in the code-workspace file even without specifying a valid AL configuration, the global `settings.json` file won't be able to override it.
 
-## Git integration
-
-Visual Studio Code has built-in Git integration that makes it easy to manage your code changes. This can be useful when working together on projects with other developers. For more information, see [Git integration](https://code.visualstudio.com/docs/sourcecontrol/overview).
 
 ## See also
 
