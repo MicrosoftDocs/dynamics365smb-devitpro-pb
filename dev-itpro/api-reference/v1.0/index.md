@@ -4,7 +4,6 @@ description: (v1.0) "Reference content for the API (v1.0) endpoint for integrati
 author: SusanneWindfeldPedersen
 ms.topic: get-started
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.date: 10/30/2019
 ms.author: solsen
 ---

@@ -5,7 +5,6 @@ author: jswymer
 
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.search.keywords: administration, tenant, admin, environment, notifications
 ms.date: 04/12/2023
 ms.author: solsen

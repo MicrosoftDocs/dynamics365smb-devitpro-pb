@@ -3,7 +3,6 @@ title: "Locking and Unlocking Objects"
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 295f6231-82dd-4265-9942-97e7a3a5ee9f
 caps.latest.revision: 10

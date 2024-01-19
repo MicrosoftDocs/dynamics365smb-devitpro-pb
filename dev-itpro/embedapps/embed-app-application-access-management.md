@@ -4,7 +4,6 @@ description: Learn how application access management works as an Embed App ISV a
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.search.keywords: application, tenant, management, access, API
 ms.date: 01/02/2024
 ---

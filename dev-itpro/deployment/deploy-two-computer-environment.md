@@ -4,7 +4,6 @@ description: Explains how to deploy Business Central on two computers.
 ms.custom: na
 ms.date: 10/13/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---

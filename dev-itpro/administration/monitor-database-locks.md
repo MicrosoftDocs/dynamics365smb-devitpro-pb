@@ -4,7 +4,6 @@ description: Read about database locks for Business Central on-premises.
 ms.custom: bap-template
 ms.date: 04/01/2021
 ms.reviewer: jswymer
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---

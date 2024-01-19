@@ -4,7 +4,6 @@ description: Describes how to upgrade an unmodified Business Central 15, 16, or 
 ms.custom: na
 ms.date: 11/26/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

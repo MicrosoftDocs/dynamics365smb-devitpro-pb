@@ -5,7 +5,6 @@ author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.date: 09/26/2022
 ms.author: solsen
 ---

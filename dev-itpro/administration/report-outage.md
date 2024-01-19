@@ -4,7 +4,6 @@ description: Learn about how to report a suspected service outage on behalf of y
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.date: 01/03/2024
 ms.author: jswymer
 

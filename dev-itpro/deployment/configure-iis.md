@@ -4,7 +4,6 @@ description: Learn to configuration of Internet Information Service that is requ
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 890e4a5b-2f43-4cb8-bc7a-18261eaf8139
 caps.latest.revision: 19

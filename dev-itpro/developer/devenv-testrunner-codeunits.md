@@ -4,7 +4,6 @@ description: This article describes how to create test codeunits and how to crea
 ms.custom: na
 ms.date: 08/12/2022
 ms.reviewer: solsen
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: blrobl
 ---

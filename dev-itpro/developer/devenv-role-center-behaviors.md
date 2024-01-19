@@ -4,7 +4,6 @@ description: This section describes in which areas the Role Center pages have a 
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: blrobl
 ---

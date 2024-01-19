@@ -4,7 +4,6 @@ description: Learn about the technical aspects of the Outlook add-ins so that us
 ms.custom: na
 ms.date: 08/31/2021
 ms.reviewer: jswymer
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---

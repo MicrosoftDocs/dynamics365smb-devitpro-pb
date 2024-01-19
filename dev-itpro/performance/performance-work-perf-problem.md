@@ -4,7 +4,6 @@ description: Troubleshooting process that can help to guide you to find the root
 ms.custom: na
 ms.date: 05/24/2023
 ms.reviewer: solsen
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: KennieNP
 ---

@@ -4,7 +4,6 @@ description: "Sets the value that indicates whether the selected action is eleva
 ms.custom: na
 ms.date: 07/08/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

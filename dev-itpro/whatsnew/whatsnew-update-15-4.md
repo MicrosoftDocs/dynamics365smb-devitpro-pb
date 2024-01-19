@@ -4,7 +4,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 12/19/2023
 ms.reviewer: solsen
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: ManuelaHochstrasser
 ---

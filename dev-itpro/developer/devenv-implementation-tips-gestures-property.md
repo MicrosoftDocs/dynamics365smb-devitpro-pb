@@ -3,7 +3,6 @@ title: "Implementation tips for gestures"
 ms.custom: na
 ms.date: 12/21/2023
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen

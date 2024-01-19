@@ -4,7 +4,6 @@ description: Designing event subscribers in Dynamics 365 Business Central.
 ms.custom: na
 ms.date: 02/27/2023
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

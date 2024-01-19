@@ -4,7 +4,6 @@ description: Deletes a user group permission object in Dynamics 365 Business Cen
 author: SusanneWindfeldPedersen
 ms.topic: article
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.date: 05/05/2021
 ms.author: solsen
 ---

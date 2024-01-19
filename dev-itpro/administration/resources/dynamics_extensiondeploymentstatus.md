@@ -4,7 +4,6 @@ description: An extension deployment status object in Dynamics 365 Business Cent
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.date: 04/01/2021
 ms.author: solsen
 ---

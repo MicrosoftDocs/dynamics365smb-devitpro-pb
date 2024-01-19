@@ -5,7 +5,6 @@ author: jswymer
 
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export, bacpac, backup
 ms.date: 04/15/2021
 ms.author: jswymer

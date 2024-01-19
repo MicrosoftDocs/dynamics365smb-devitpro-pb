@@ -4,7 +4,6 @@ description: Various tips and tricks to improve speed and agility of working wit
 ms.custom: na
 ms.date: 02/09/2023
 ms.reviewer: solsen
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: mikebcMSFT
 ms.author: mikebc

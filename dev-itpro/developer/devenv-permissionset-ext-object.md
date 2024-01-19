@@ -5,7 +5,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 03/09/2023
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: solsen
 ---

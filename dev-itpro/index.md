@@ -4,7 +4,6 @@ description: Learn how to extend, manage, and customize Dynamics 365 Business Ce
 author: solsen
 ms.date: 09/29/2023
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ---
 # Development and Administration for Dynamics 365 Business Central

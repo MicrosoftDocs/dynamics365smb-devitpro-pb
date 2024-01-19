@@ -4,7 +4,6 @@ description: Learn how to let prospects try out a Business Central trial, and ho
 author: jswymer
 ms.custom: na
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 11/29/2023

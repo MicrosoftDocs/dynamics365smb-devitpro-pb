@@ -4,7 +4,6 @@ description: Shows the tables that have been marked as removed in the various ve
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.author: solsen

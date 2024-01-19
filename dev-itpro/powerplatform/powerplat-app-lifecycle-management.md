@@ -4,7 +4,6 @@ description: "Lifecycle management for Microsoft Dataverse tables end-to-end sol
 ms.custom: na
 ms.date: 11/13/2023
 ms.reviewer: solsen
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: solsen
 ---

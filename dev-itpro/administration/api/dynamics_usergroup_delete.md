@@ -4,7 +4,6 @@ description: Deletes a user group object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: article
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.date: 12/03/2023
 ms.author: solsen
 ---

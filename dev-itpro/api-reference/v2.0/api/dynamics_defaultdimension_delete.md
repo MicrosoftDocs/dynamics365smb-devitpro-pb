@@ -4,7 +4,6 @@ description: Deletes the default dimensions of the item in Dynamics 365 Business
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.date: 04/01/2021
 ms.author: solsen
 ---

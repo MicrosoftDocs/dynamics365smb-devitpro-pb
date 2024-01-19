@@ -4,7 +4,6 @@ description: "Using OData to return and obtain a Service Metadata (EDMX) Documen
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 

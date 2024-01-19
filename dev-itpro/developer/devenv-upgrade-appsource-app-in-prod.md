@@ -6,7 +6,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 08/19/2021
 ms.reviewer: solsen
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: freddyk
 ---

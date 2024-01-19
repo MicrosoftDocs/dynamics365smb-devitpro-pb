@@ -4,7 +4,6 @@ description: Learn about how to change the Excel add-in setup so that it works w
 author: jswymer
 ms.author: jswymer
 ms.custom: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.date: 12/29/2023
 ---

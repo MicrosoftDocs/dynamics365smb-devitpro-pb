@@ -4,7 +4,6 @@ description: "The pragma implicitwith instruction on the pragma directive in AL"
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---

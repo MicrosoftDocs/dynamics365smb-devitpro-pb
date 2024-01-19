@@ -4,7 +4,6 @@ description: Learn about the telemetry for monitoring changes to sensitive data 
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
 ms.date: 05/01/2021
 ms.author: jswymer

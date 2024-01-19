@@ -4,7 +4,6 @@ description: Get an overview of the steps required to upgrade from one version o
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

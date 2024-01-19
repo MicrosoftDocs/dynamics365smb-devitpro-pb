@@ -4,7 +4,6 @@ description: Gets a customer object with properties and relationships in Dynamic
  author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.date: 04/01/2021
 ms.author: solsen
 ---

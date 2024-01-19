@@ -4,7 +4,6 @@ description: Learn about the timeline for how updates of Business Central online
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
 ms.date: 01/09/2024
 ms.author: jswymer

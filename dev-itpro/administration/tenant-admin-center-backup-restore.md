@@ -4,7 +4,6 @@ description: Use the Business Central administration center to restore backups o
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
 ms.date: 01/13/2023
 ms.author: jswymer

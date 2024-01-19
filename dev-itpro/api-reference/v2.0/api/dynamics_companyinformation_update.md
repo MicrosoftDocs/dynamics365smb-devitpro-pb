@@ -4,7 +4,6 @@ description: Updates a company information object in Dynamics 365 Business Centr
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.date: 04/01/2021
 ms.author: solsen
 ---

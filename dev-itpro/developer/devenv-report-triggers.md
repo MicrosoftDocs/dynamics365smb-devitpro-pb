@@ -5,7 +5,6 @@ ms.author: jswymer
 ms.custom: na
 ms.date: 05/17/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ms.search.keywords: reports, triggers, trigger flow, sequence
 ---

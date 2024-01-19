@@ -4,7 +4,6 @@ description: This article describes how to upgrade a Per-Tenant Extension that c
 ms.custom: na
 ms.date: 10/25/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen

@@ -4,7 +4,6 @@ description: This article provides tips and considerations to prepare a solution
 author: jswymer
 ms.custom: na
 ms.reviewer: jswymer
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.date: 04/01/2021
 ms.author: jswymer

@@ -5,7 +5,6 @@ author: kennienp
 ms.custom: na
 ms.date: 11/18/2022
 ms.reviewer: solsen
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: kepontop
 ---

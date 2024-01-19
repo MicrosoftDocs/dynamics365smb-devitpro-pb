@@ -3,7 +3,6 @@ title: Plan for Deployment
 description: Get an overview of things you should consider and decide on before deploying
 ms.custom: na
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ms.date: 04/01/2021

@@ -5,7 +5,6 @@ author: bholtorf
 
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms. search.keywords: deprecated, Dutch, NL, Netherlands, local functionality
 ms.date: 04/01/2021
 ms.author: bholtorf

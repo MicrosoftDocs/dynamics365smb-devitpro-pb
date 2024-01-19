@@ -4,7 +4,6 @@ description: Describes how to do a technical upgrade from Business Central V19 t
 ms.custom: na
 ms.date: 03/03/2022
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

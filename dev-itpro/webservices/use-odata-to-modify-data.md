@@ -4,7 +4,6 @@ description: Write to the database using an OData web service that exposes a wri
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 # Using OData Web Services to Modify Data

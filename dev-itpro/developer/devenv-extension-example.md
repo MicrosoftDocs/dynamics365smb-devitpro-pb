@@ -5,7 +5,6 @@ author: jswymer
 ms.custom: na
 ms.date: 05/19/2022
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.collection: get-started
 ---

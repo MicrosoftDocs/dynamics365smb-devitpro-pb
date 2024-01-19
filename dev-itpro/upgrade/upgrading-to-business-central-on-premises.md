@@ -3,7 +3,6 @@ title: "Upgrading to On-Premises v.14"
 description: Gives an overview of the different upgrade paths to On-Premises Spring 2019 from older versions.
 ms.custom: na
 ms.reviewer: jswymer
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

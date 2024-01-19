@@ -3,7 +3,6 @@ title: "LocationOptions Overview"
 ms.custom: na
 ms.date: 12/18/2023
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 author: blrobl
 description: Discover Dynamics365 Business Central Location Options - EnableHighAccuracy, Timeout, MaximumAge & more. Enhance your AL implementation.

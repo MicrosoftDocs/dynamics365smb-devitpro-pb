@@ -5,7 +5,6 @@ description: Learn about deploying demos for Business Central on-premises.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 # Deploying a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Demonstration Environment

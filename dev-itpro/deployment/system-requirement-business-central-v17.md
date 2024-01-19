@@ -2,7 +2,6 @@
 title: System Requirements for Business Central 2020 Release Wave 2
 description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central version 17 on-premises.
 ms.custom: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.date: 04/01/2021
 author: jswymer

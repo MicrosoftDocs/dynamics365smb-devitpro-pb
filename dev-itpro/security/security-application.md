@@ -4,7 +4,6 @@ description: Helps you understand and improve the security of your Business Cent
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---

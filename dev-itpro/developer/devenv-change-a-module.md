@@ -4,7 +4,6 @@ description: "This article provides steps and examples of how to change a module
 ms.custom: na
 ms.date: 01/03/2024
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: bholtorf
 ---

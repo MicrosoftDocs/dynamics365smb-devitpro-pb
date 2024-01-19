@@ -4,7 +4,6 @@ description: Description of how to get started with the new development environm
 author: SusanneWindfeldPedersen
 ms.date: 01/04/2024
 ms.reviewer: jswymer
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started

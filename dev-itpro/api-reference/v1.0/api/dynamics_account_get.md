@@ -5,7 +5,6 @@ author: SusanneWindfeldPedersen
 
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.date: 06/14/2019
 ms.author: solsen
 ---

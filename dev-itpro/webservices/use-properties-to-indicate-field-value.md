@@ -4,7 +4,6 @@ description: "Using properties with Visual Studio to indicate the presence of a 
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 

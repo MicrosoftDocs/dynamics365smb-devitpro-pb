@@ -4,7 +4,6 @@ description: This topic provides a description of how to contribute a .NET wrapp
 author: bholtorf
 ms.custom: na
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: bholtorf
 ms.date: 04/01/2021

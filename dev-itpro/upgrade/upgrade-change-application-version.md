@@ -4,7 +4,6 @@ description: Describes how to increase the application version number stored in 
 ms.custom: na
 ms.date: 04/15/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

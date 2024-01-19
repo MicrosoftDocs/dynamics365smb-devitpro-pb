@@ -4,7 +4,6 @@ description: "Describing how to generate the required scenario document to get y
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/11/2023
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: freddyk
 ---

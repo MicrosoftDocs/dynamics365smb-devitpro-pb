@@ -5,7 +5,6 @@ description: Learn how to upload media, such as an image, to the database for di
 ms.custom: na
 ms.date: 11/08/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

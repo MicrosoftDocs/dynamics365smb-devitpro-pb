@@ -4,7 +4,6 @@ description: A sales order line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.date: 01/03/2022
 ms.author: solsen
 ---

@@ -4,7 +4,6 @@ description: Modify the Database property settings by using the Alter Database w
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---

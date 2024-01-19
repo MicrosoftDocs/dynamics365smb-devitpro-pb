@@ -4,7 +4,6 @@ description: Updates an  apply vendor entry object in Dynamics 365 Business Cent
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.date: 02/01/2023
 ms.author: solsen
 ---

@@ -4,7 +4,6 @@ description: Learn how to migrate from a single-tenant Business Central deployme
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 39a81332-8db1-4e5d-acda-915bf9591880
 author: jswymer

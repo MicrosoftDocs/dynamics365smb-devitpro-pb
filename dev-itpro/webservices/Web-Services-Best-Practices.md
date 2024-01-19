@@ -5,7 +5,6 @@ author: jswymer
 ms.custom: na
 ms.date: 12/18/2023
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ---

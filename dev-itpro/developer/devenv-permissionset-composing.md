@@ -5,7 +5,6 @@ author: jswymer
 ms.custom: na
 ms.date: 09/23/2022
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 ---

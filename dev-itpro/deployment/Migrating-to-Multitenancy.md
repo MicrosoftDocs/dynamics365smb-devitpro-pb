@@ -3,7 +3,6 @@ title: "Migrating to multitenancy"
 ms.custom: na
 ms.date: 01/03/2023
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 4e96a4ec-3880-400f-bf32-e50fefcf28bc
 caps.latest.revision: 11

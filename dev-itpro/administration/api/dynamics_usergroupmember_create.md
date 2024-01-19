@@ -4,7 +4,6 @@ description: Creates an user group member object in Dynamics 365 Business Centra
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.date: 04/01/2021
 ms.author: solsen
 ---

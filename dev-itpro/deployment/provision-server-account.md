@@ -4,7 +4,6 @@ description: The service account is used by Business Central clients to log on t
 ms.custom: na
 ms.date: 10/19/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---

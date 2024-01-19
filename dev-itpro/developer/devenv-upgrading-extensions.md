@@ -5,7 +5,6 @@ description: "Describes how to add code to upgrade data in a new extension versi
 ms.custom: na
 ms.date: 09/17/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 

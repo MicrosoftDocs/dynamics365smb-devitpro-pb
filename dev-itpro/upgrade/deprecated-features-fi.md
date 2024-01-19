@@ -4,7 +4,6 @@ description: We are constantly streamlining and adjusting our app in-step with m
 author: bholtorf
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms. search.keywords: deprecated, Finland, local functionality
 ms.date: 10/08/2024
 ms.author: jswymer

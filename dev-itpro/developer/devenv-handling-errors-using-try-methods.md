@@ -4,7 +4,6 @@ description: Try methods in AL enable you to handle errors that occur in the app
 ms.custom: na
 ms.date: 09/28/2022
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

@@ -4,7 +4,6 @@ description: Learn about the task scheduler telemetry in Business Central
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 12/15/2023
 ms.author: jswymer

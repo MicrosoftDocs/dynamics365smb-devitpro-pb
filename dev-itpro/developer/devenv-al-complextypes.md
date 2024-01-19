@@ -4,7 +4,6 @@ description: With AL complex types, you can return most types from procedures in
 ms.custom: na
 ms.date: 09/29/2023
 ms.reviewer: solsen
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: esbenk
 ms.collection: get-started

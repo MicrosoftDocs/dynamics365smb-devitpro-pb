@@ -4,7 +4,6 @@ description: Learn about the differences between production and sandbox environm
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
 ms.date: 03/03/2022
 ms.author: jswymer

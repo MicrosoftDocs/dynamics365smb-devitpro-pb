@@ -4,7 +4,6 @@ description: Describes methods that set limits on the value of one or more speci
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

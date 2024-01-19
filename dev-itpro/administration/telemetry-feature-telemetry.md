@@ -4,7 +4,6 @@ description: Learn about the telemetry that you can emit from features in Busine
 author: bholtorf
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
 ms.date: 07/13/2023
 ms.author: bholtorf
