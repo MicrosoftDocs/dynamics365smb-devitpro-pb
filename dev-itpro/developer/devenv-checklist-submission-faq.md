@@ -79,7 +79,16 @@ We don't run a manual validation of the apps anymore. Instead, we rely on you to
 
 Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation on all [!INCLUDE[prod_short](../includes/prod_short.md)] environments from the AppSource marketplace.
 
-Selected customers can also install the Preview version of the extensions in your submission after the "Preview creation" step. In order to trigger the install, customers must receive and use the URL `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PreviewKey' IS '[PreviewKey]'&page=2503` where `[TenantID]` is the Microsoft Entra ID of their environment, `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission. For more information about AppSource app preview, refer to the dedicated section below.
+Before going public with the submitted app version, you can test it after the "Preview creation" step, either yourself as a publisher or with select customers. In order to trigger an install of the preview version, customers must receive and use the app preview install URL:
+	
+`https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PreviewKey' IS '[PreviewKey]'&page=2503` 
+	
+where 
+- `[TenantID]` is the Microsoft Entra ID of their environment, 
+- `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
+- `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission. 
+	
+For more information about AppSource app preview, refer to the dedicated section below.
 
 ### When should I include my library apps as part of my submission?
 
@@ -137,9 +146,9 @@ If your submission failed at another stage than "Automated application validatio
 
 For questions like what is qualified as a hotfix submission or what kind of changes can't be part of a hotfix, see [Hotfixing an AppSource app](devenv-hotfixing-appsource-app.md)
 
-## Questions about AppSource app Previews
+## Questions about AppSource app previews
 
-### What should I do to enable Previews of my AppSource offers?
+### What should I do to enable previews of my AppSource apps?
 
 Preview support is now enabled for all submissions of [!INCLUDE[prod_short](../includes/prod_short.md)] offers. It uses the hide key specified on your offer in Partner Center under `Availability > Preview Audience > Hide Key`. Partner Center automatically generates a key when creating a new offer, but you can override it with any string using only lowercase letters and/or numbers.
 
@@ -149,9 +158,16 @@ Preview versions can be installed on Sandbox environments running on [!INCLUDE[p
 
 ### How can I install preview versions for selected customers?
 
-Selected customers can install the preview version of the extensions in your submission after the "Preview creation" step of the submission flow in Partner Center. In order to trigger the install, customers must receive and use the URL `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` where `[TenantID]` is the Microsoft Entra ID of their environment, `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
+Selected customers can install the preview version of the extensions in your submission after the "Preview creation" step of the submission flow in Partner Center. In order to trigger the install, customers must receive and use the preview app install URL:
 
-After the "Preview creation", a preview listing of the offer is available in the AppSource marketplace. This preview listing can be accessed from Partner Center by clicking "App source preview" at the "Publisher signoff" step of the submission flow. However, installing the corresponding preview version of the extension from the preview listing is not supported and the URL above must be used instead.
+`https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` 
+
+where 
+- `[TenantID]` is the Microsoft Entra ID of their environment, 
+- `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
+- `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
+
+After the "Preview creation", a preview listing of the offer is available in the AppSource marketplace. This preview listing can be accessed from Partner Center by clicking "App source preview" at the "Publisher signoff" step of the submission flow. However, installing the corresponding preview version of the extension from the preview listing is not supported and the above mentioned preview app install URL must be used instead.
 
 ### How can I install preview versions of my library apps for selected customers?
 
@@ -189,7 +205,9 @@ For example, if you have version 1.0.0.0 as publicly available in AppSource and 
 
 ### Can the submission for one offer depend on preview versions of libraries from another offer?
 
-Dependencies which are not included in the submission will be downloaded automatically if they're publicly available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries/regions. Your submission will fail during the "Automated Application Validation" stage if you didn't include the dependencies for your app and they are not publicly available. The submission will also fail if the dependencies are only available as Preview. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
+Dependencies which are not included in the submission will be downloaded automatically if they're publicly available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries/regions. 
+
+Your submission will fail during the "Automated Application Validation" stage if you didn't include the dependencies for your app and they are not publicly available. The submission will also fail if the dependencies are only available as Preview and are not included in the submission. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
 
 ### What happens to preview versions during environment upgrades?
 
