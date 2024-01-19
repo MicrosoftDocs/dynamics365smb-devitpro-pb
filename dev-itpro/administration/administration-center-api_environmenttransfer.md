@@ -269,5 +269,5 @@ GET /admin/v2.20/transfers/incoming/{sourceEntraTenantId}
 ## See Also
 
 [The Business Central Administration Center API](administration-center-api.md)  
-[Manage Apps](tenant-admin-center-manage-apps.md)  
+[Transfer Environments](tenant-admin-center-environments-move.md)
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
