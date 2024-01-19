@@ -2,11 +2,9 @@
 title: Report dataset
 description: The dataset determines the data extracted to print or display the information from the database.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 12/01/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 01/18/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -211,6 +209,12 @@ var
     MyQuery: Query "CustomerQuery";
 
 ```
+
+## Report limit - maximum number of rows
+
+The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many resources. For example, there's a limit on the maximum number of rows that can be processed in a report.
+
+For more information on report limits, see [Report limits](devenv-report-object.md#report-limits).
 
 
 ## See Also

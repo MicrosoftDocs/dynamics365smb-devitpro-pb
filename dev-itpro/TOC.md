@@ -69,6 +69,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 23.3](whatsnew/whatsnew-update-23-3.md)
 ### [Update 23.2](whatsnew/whatsnew-update-23-2.md)
 ### [Update 23.1](whatsnew/whatsnew-update-23-1.md)
 ### Updates for earlier major versions
@@ -509,7 +510,6 @@
 #### [Viewing table data](developer/devenv-view-table-data.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
 
-
 ## Programming in the AL language
 ### [A tour of the AL language](developer/devenv-programming-in-al.md)
 
@@ -519,6 +519,7 @@
 ##### [Simple statements](developer/devenv-al-simple-statements.md)
 ##### [Control statements](developer/devenv-al-control-statements.md)
 #### [Access modifiers](developer/devenv-using-access-modifiers.md)
+#### [AL operators](developer/devenv-al-operators.md)
 #### [Comments](developer/devenv-xml-comments.md)
 
 ### Language elements

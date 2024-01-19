@@ -4,7 +4,7 @@ description: Learn about how to troubleshoot Business Central web service errors
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.author: kepontop
 ms.date: 01/10/2024
@@ -25,6 +25,12 @@ For more information, see [Web service telemetry](web-service-telemetry.md).
 For calls to OData/API endpoints, we offer more details for troubleshooting, as these calls also return OData error codes in case of failures. 
 
 For more information, see [Troubleshooting OData/API calls](dynamics-error-codes.md).
+
+## Debugging code called from a web service endpoint
+
+*Debugging* is the process (and art) of finding and correcting errors. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you get an integrated debugger to help you inspect your code and verify that it works as expected.
+
+For information about how to debug code executed from web service endpoints, see [Debugging web services](../developer/devenv-debugging.md#debugging-web-services).
 
 ## Which IP addresses or ranges does my environment use?
 
@@ -61,4 +67,5 @@ The environment for a web service endpoint can change how it works. If you see a
 [Web Services Best Practices](Web-Services-Best-Practices.md)  
 [Web service telemetry](web-service-telemetry.md)   
 [Troubleshooting OData/API calls](dynamics-error-codes.md)   
+[Debugging web services](../developer/devenv-debugging.md#debugging-web-services)    
 [Web Services Overview](web-services.md)  

@@ -9,6 +9,8 @@ ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: bholtorf
 ms.date: 01/08/2024
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Overview of the System Application

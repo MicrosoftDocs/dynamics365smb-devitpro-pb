@@ -4,7 +4,7 @@ description: Describes how to reason over errors and handle them in code.
 author: KennieNP
 ms.author: kepontop
 ms.reviewer: solsen
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.date: 01/11/2024
 ms.custom: bap-template
@@ -46,7 +46,7 @@ When you have a good list of failure modes, it's time to think about remediation
 
 Robust coding practices are a state of mind for you as a developer. Apart from coding for the happy path, you also reason over failure modes and how to deal with ways that your code and other peoples code can fail. 
 
-These five principles might help you get started making your code more robust towards failures:
+These six principles might help you get started making your code more robust towards failures:
 
 1. Don't trust any code you didn't write
 2. Don't trust consumers of your code

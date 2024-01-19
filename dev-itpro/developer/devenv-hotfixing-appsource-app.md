@@ -4,7 +4,7 @@ description: Learn how to hotfix an AppSource app in Dynamics 365 Business Centr
 author: qutreson
 ms.author: solsen
 ms.reviewer: solsen
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.date: 11/14/2023
 ms.custom: bap-template

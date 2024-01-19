@@ -2,11 +2,9 @@
 title: "Security in Business Central (on-premises)"
 description: "Learn about the main aspects of security in your on-premises deployment of Dynamics 365 Business Central."
 author: jswymer
-
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021

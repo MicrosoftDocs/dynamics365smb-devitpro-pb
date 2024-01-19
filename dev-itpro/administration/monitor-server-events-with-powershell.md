@@ -1,11 +1,10 @@
 ---
 title: "Monitoring Business Central Server Events with PowerShell"
 description: Learn how to use PowerShell to monitor Business Central Server instances
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---
