@@ -23,12 +23,88 @@ In the Word report layout, you specify the fields of the report dataset to inclu
 
 With the following sections, you can learn more about various concepts that you might want to use in your Word layouts:
 
+- [Headers and footers](#headers-and-footers-in-word-layouts)  
+- [Using tables to control alignment of text and images](#using-tables-to-control-alignment-of-text-and-images)
+- [Working with pictures](#working-with-pictures-in-word-layouts)
+- [Using the same table style for all tables in the layout](#using-the-same-table-style-for-all-tables-in-the-layout)
 - [Using hyperlinks](#using-hyperlinks-in-word-layouts)  
 - [Using sections](#using-sections-in-a-word-layout)  
-- [Headers and footers](#headers-and-footers-in-word-layouts)  
+- [Changing layout properties such as margins or orientation](#changing-layout-properties-such-as-margins-or-orientation)
 - [Using watermarks](#using-watermarks-in-word-layouts)  
 - [Using fonts](#using-fonts-in-word-layouts)  
 - [Using Office document themes](#using-office-document-themes-in-word-layouts)  
+
+For more information about how to use Word to layout documents, see [Word for Windows training](https://support.microsoft.com/en-us/office/word-for-windows-training-7bcd85e6-2c3d-4c3c-a2a5-5ed8847eae73)
+
+
+### Headers and footers in Word layouts
+
+It is common to use headers and/or footers in Word layouts to display general information about the report, such as company logo, or company name and address. To define headers and/or footers, go to **Insert** > **Header** or **Footer**. Note that you can have a different header/footer on the first page of your layout than the rest of the page or section (see tip below). When working with different headers/footers for the first page, consider entering a manual page break (Ctrl+Enter) when designing them. This makes it easier to see the difference in headers/footers (remember to remove the page break again). 
+
+For more information, see [Headers and Footers in Word](https://support.microsoft.com/en-us/office/headers-and-footers-in-word-b693b4fb-0d23-4109-a621-1b828b824454) (use <kbd>Ctrl</kbd>+click to open in a new tab)
+
+> [!TIP]  
+> It's possible to control the headers and footers for different sections of a document. The formatting you set up extends to each page of the section until another section break is encountered. For more information, see [Configure headers and footers for different sections of a document](https://support.microsoft.com/en-us/office/configure-headers-and-footers-for-different-sections-of-a-document-94332643-a6e9-46aa-ab29-064f1d356db6) (use <kbd>Ctrl</kbd>+click to open in a new tab)
+
+### Using tables to control alignment of text and images
+
+When designing a Word report layout, consider using tables to control alignment of text and images, 
+also for content ouside repeaters. 
+
+Using tables, you can design layouts with lines that have text aligned to 
+both the left, middle, and right in the line. 
+You can also control exactly where on the page text elements are placed (see xxx below).
+
+> [!TIP]  
+> Show the table gridlines so that you see the boundaries of table cells. Remember to hide the gridlines when you're done editing. To show or hide table gridlines, select the table, and then under **Layout** on the **Table** tab, choose **View Gridlines**.
+
+### Working with pictures in Word Layouts
+
+There are at least two things you should consider when adding pictures to your Word layout:
+1. Control how they fit into the layout (do not overflow),
+2. Reduce report file size by compressing the pictures.
+
+#### Control how pictures fit into the layouts
+
+Before inserting a picture, either as a static file in the layout or from the report dataset, 
+you need to ensure that it does not take up space according to its size, but that it is adjusted to the size that you want in your layout. The best way to do this is to encapsulate the picture in a cell in a table, 
+maybe in a 1x1 table introduced only for this purpose. When utilizing this technique, when changing the size of the cell, by default it 
+will still adjust to fit the picture. Therefore, you must also disable the cells ability to change its size dynamically. 
+
+To do this, do as follows:
+
+1. Mark the cell
+2. Under Layout, Set Height and Width in the Cell size menu
+3. In the Table menu, click Properties. On the Table tab, click Positioning and then uncheck the *Automatically resize to fit contents* option
+
+#### Reducing file size by compressing pictures
+When adding pictures directly to your layout, consider reducing the file size by compressing picture sizes.
+With compression options in Word, you can reduce both the file size and picture dimensions based on how you 
+intend to use the picture, such as the quality needed for print or for viewing the document report on screen or 
+attach to an email. You can compress all pictures in the file or just the ones that you select. 
+
+To compress pictures that are part of the layout, do as follows:
+1. With your file open in your Microsoft Office application, select the picture or pictures that you want to compress.
+2. Under Picture Tools, on the Format tab, in the Adjust group, select *Compress picture* button icon Compress Pictures.
+
+For more information, see [Reduce the file size of a picture in Microsoft Office](https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)
+
+For pictures that are part of the report dataset, you need to adjust the size in Business Central.
+
+
+### Using the same table style for all tables in the layout
+
+If your document layout contains multiple tables, consider using table styles to 
+ensure that the formatting of your tables is consistent. In case you need to later on apply changes to table layouts, 
+this will also save you time as the change only needs to be done once. 
+
+To set a default table style, do as follows:
+
+1. Mark the table
+2. Navigate to the Table Design menu 
+3. For the table style you want to use as default, right-click it. 
+4. In the Menu that appears, select Set as Default. A dialog box appears.
+5. Select This document only. Click OK.
 
 
 ### Using hyperlinks in Word layouts
@@ -41,20 +117,23 @@ For more information, see [Using hyperlinks in Word layouts](devenv-hyperlinks-i
 
 If you need your report to change style for different types of content, consider using different *Sections* in your Word layout. Within each section, you can have different formatting, such as page or table layouts, and headers/footers.
 
+> [!NOTE]  
+> Use of section breaks in Word layouts are currently only supported for reports that do not use the WordMergeDataItem property.
+
+
 Sections are created using section breaks. To start a new section, select where you want it to begin. Then go to **Layout** > **Breaks**. For more information, see [Insert a section break](https://support.microsoft.com/en-us/office/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c) (use <kbd>Ctrl</kbd>+click to open in a new tab).
 
 > [!TIP]  
 > When working with sections in a layout, it's recommended to turn the display of formatting marks on. This makes it much easier to see in which section of the layout you are working. For more information, see [Show or hide tab marks in Word](https://support.microsoft.com/en-us/office/show-or-hide-tab-marks-in-word-84a53213-5d02-404a-b022-09cae1a3958b) (use <kbd>Ctrl</kbd>+click to open in a new tab)
 
 
-### Headers and footers in Word layouts
+### Changing layout properties such as margins or orientation
 
-It is common to use headers and/or footers in Word layouts to display general information about the report, such as company logo, or company name and address. To define headers and/or footers, go to **Insert** > **Header** or **Footer**. Note that you can have a different header/footer on the first page of your layout than the rest of the page or section (see tip below). When working with different headers/footers for the first page, consider entering a manual page break (Ctrl+Enter) when designing them. This makes it easier to see the difference in headers/footers (remember to remove the page break again). 
+If you need to change layout properties such as margins, orientation (portrait or landscape), 
+or columns inside your Word layout, then use sections. Your choice of these properties is in scope until the next section break, where they can be overridden.
 
-For more information, see [Headers and Footers in Word](https://support.microsoft.com/en-us/office/headers-and-footers-in-word-b693b4fb-0d23-4109-a621-1b828b824454) (use <kbd>Ctrl</kbd>+click to open in a new tab)
+For more information, see [Change page orientation to landscape or portrait](https://support.microsoft.com/en-us/office/change-page-orientation-to-landscape-or-portrait-9b5ac1af-9998-4a37-962b-a82b689572a9)
 
-> [!TIP]  
-> It's possible to control the headers and footers for different sections of a document. The formatting you set up extends to each page of the section until another section break is encountered. For more information, see [Configure headers and footers for different sections of a document](https://support.microsoft.com/en-us/office/configure-headers-and-footers-for-different-sections-of-a-document-94332643-a6e9-46aa-ab29-064f1d356db6) (use <kbd>Ctrl</kbd>+click to open in a new tab)
 
 ### Using watermarks in Word layouts
 
@@ -89,6 +168,36 @@ In case your favorite (true-type) font isn't installed on the [!INCLUDE[prod_sho
 ### Using Office document themes in Word layouts
 
 [!INCLUDE[using_office_themes](../includes/include-excel-word-layouts-themes.md)]
+
+To make your Word layout "themable", use the standard styles for text and headers. Then the colors and fonts will follow the chosen theme.
+
+For tables, for the table header be respect theme changes, you need to do the following
+1. mark the header row
+2. In the *Table Design* menu, expand the Shading menu in Table Styles
+3. Now pick a theme color
+
+If you use the pre-built Table Styles, you need to manually change the color in the Shading menu for the header color to respect theme changes.
+
+To learn more about templates, themes, and Word styles, see [Differences between templates, themes, and Word styles](https://support.microsoft.com/en-us/office/differences-between-templates-themes-and-word-styles-101c2774-296b-4bb7-b084-2e936f6ee390)
+
+
+### Designing layouts for precision printing
+
+If you need to design Word layouts where placement of design components on the page needs to be very precise, then you can set the their absolute position, both horizontal and vertical. It is possible to set a precision to two decimals of cm/inch.
+
+For tables, you can control their absolute position on the page in Table Properties. In the Tables tab, choose Around for the Text wrapping. Now the Positioning button is unlocked and you can set the horizontal and vertical position of the table. For more information, see [Set or change table properties](https://support.microsoft.com/en-us/office/set-or-change-table-properties-3237de89-b287-4379-8e0c-86d94873b2e0)
+
+
+For text boxes, you can control their absolute position on the page in the *Shape format* menu: Position > More Layout Options (you can also navigate here by right-clicking on the text box). Now you can set the horizontal and vertical position of the text box. For more information, see [Ways to customize a text box](https://support.microsoft.com/en-us/office/ways-to-customize-a-text-box-0570ef01-1f4d-4f37-a787-7be3ce6b6380)
+
+
+> [!TIP]  
+> When designing layouts for precision printing, consider enabling the ruler and gridlines (find them under View > Show). For more information, see [Show the ruler](https://support.microsoft.com/en-us/office/show-the-ruler-dc8a4e0d-209f-43b8-b967-8e65da24d4c7)
+
+
+## Design guidelines for a report dataset designed for Word layouts
+
+With Word layouts, Word is used as the editor for the report. The person designing the layout interacts with the labels, dataitems, and fields from the dataset from the XML Mapping Pane. If you want users to be able to change the layout, consider using friendly names for labels, dataitems, and fields. 
 
 
 ## Report labels in Word layouts
@@ -273,6 +382,13 @@ For more information about feature management, see [Enabling Upcoming Features A
 The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many resources. For example, there's a limit on the maximum number of documents that can be merged in a report using a Word layout.
 
 For more information on report limits, see [Report limits](devenv-report-object.md#report-limits).
+
+
+## Difference between RDLC and Word layouts
+
+If you are switching from developing reports with RDL layouts to using Word layouts, you might need to change your mindset on how you develop reports and their layouts. RDL allows you to dynamically change many properties in the layout. This is not possible in Word. For many logic-related conditions, instead you have to do them in the report dataset in AL and then utilize the methods outlined in this article. 
+
+For reports where you expect customers to adjust the layout or use themes to change the overall look-and-feel of the document, consider using a Word layout over an RDL layout. 
 
 
 ## See Also
