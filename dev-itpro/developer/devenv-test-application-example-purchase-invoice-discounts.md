@@ -4,8 +4,6 @@ description: Example to demonstrate the application testing scenario.
 ms.custom: na
 ms.date: 08/12/2022
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: blrobl
 ---

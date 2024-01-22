@@ -4,8 +4,6 @@ description: Using the Event Recorder, you can record the events that are publis
 ms.custom: na
 ms.date: 01/08/2024
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

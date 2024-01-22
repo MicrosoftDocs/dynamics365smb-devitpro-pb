@@ -4,9 +4,7 @@ description: Gets a cloud migration status detail object in Dynamics 365 Busines
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 03/25/2022
 ms.author: solsen
 ---

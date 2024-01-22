@@ -4,8 +4,6 @@ description: Learn how to use containments and associations with OData for creat
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 # Using Containments and Associations
