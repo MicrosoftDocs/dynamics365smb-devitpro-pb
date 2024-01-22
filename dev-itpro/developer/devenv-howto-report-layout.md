@@ -48,12 +48,9 @@ For more information, see [Headers and Footers in Word](https://support.microsof
 
 ### Using tables to control alignment of text and images
 
-When designing a Word report layout, consider using tables to control alignment of text and images, 
-also for content ouside repeaters. 
+When designing a Word report layout, consider using tables to control alignment of text and images, also for content ouside repeaters. 
 
-Using tables, you can design layouts with lines that have text aligned to 
-both the left, middle, and right in the line. 
-You can also control exactly where on the page text elements are placed (see xxx below).
+Using tables, you can design layouts with lines that have text aligned to both the left, middle, and right in the line. You can also control exactly where on the page text elements are placed (see xxx below).
 
 > [!TIP]  
 > Show the table gridlines so that you see the boundaries of table cells. Remember to hide the gridlines when you're done editing. To show or hide table gridlines, select the table, and then under **Layout** on the **Table** tab, choose **View Gridlines**.
@@ -66,26 +63,20 @@ There are at least two things you should consider when adding pictures to your W
 
 #### Control how pictures fit into the layouts
 
-Before inserting a picture, either as a static file in the layout or from the report dataset, 
-you need to ensure that it does not take up space according to its size, but that it is adjusted to the size that you want in your layout. The best way to do this is to encapsulate the picture in a cell in a table, 
-maybe in a 1x1 table introduced only for this purpose. When utilizing this technique, when changing the size of the cell, by default it 
-will still adjust to fit the picture. Therefore, you must also disable the cells ability to change its size dynamically. 
+Before inserting a picture, either as a static file in the layout or from the report dataset, you need to ensure that it does not take up space according to its size, but that it is adjusted to the size that you want in your layout. The best way to do this is to encapsulate the picture in a cell in a table, maybe in a 1x1 table introduced only for this purpose. Note that when changing the size of a table cell for a picture, by default it will still adjust to fit the picture. Therefore, you must also disable the cells ability to change its size dynamically. 
 
-To do this, do as follows:
+To control the picture size using a table, do as follows:
 
-1. Mark the cell
-2. Under Layout, Set Height and Width in the Cell size menu
-3. In the Table menu, click Properties. On the Table tab, click Positioning and then uncheck the *Automatically resize to fit contents* option
+1. Mark the cell.
+2. Under *Layout*, Set *Height* and *Width* in the Cell size menu.
+3. In the *Table* menu, click *Properties*. On the *Table* tab, click *Positioning* and then uncheck the *Automatically resize to fit contents* option.
 
 #### Reducing file size by compressing pictures
-When adding pictures directly to your layout, consider reducing the file size by compressing picture sizes.
-With compression options in Word, you can reduce both the file size and picture dimensions based on how you 
-intend to use the picture, such as the quality needed for print or for viewing the document report on screen or 
-attach to an email. You can compress all pictures in the file or just the ones that you select. 
+When adding pictures directly to your layout file, such as background images or logos, consider reducing the file size by compressing picture sizes. With compression options in Word, you can reduce both the file size and picture dimensions based on how you intend to use the picture, such as the quality needed for print or for viewing the document report on screen or attach to an email. You can compress all pictures in the file or just the ones that you select. 
 
-To compress pictures that are part of the layout, do as follows:
-1. With your file open in your Microsoft Office application, select the picture or pictures that you want to compress.
-2. Under Picture Tools, on the Format tab, in the Adjust group, select *Compress picture* button icon Compress Pictures.
+To compress pictures that are part of the layout file, do as follows:
+1. When your pictures has been inserted into Word, select the picture or pictures that you want to compress.
+2. Under *Picture Tools*, on the *Format* tab, in the *Adjust* group, select *Compress picture*. Then choose what and how you want to compress and click OK.
 
 For more information, see [Reduce the file size of a picture in Microsoft Office](https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)
 
@@ -96,15 +87,15 @@ For pictures that are part of the report dataset, you need to adjust the size in
 
 If your document layout contains multiple tables, consider using table styles to 
 ensure that the formatting of your tables is consistent. In case you need to later on apply changes to table layouts, 
-this will also save you time as the change only needs to be done once. 
+this will also save you time as such a change only needs to be done once. 
 
 To set a default table style, do as follows:
 
-1. Mark the table
-2. Navigate to the Table Design menu 
+1. Mark the table.
+2. Navigate to the *Table Design* menu.
 3. For the table style you want to use as default, right-click it. 
-4. In the Menu that appears, select Set as Default. A dialog box appears.
-5. Select This document only. Click OK.
+4. In the Menu that appears, select *Set as Default*. A dialog box appears.
+5. Select *This document only*. Click OK.
 
 
 ### Using hyperlinks in Word layouts
@@ -118,7 +109,7 @@ For more information, see [Using hyperlinks in Word layouts](devenv-hyperlinks-i
 If you need your report to change style for different types of content, consider using different *Sections* in your Word layout. Within each section, you can have different formatting, such as page or table layouts, and headers/footers.
 
 > [!NOTE]  
-> Use of section breaks in Word layouts are currently only supported for reports that do not use the WordMergeDataItem property.
+> Use of section breaks in Word layouts are currently only supported for reports that do not use the **WordMergeDataItem** property.
 
 
 Sections are created using section breaks. To start a new section, select where you want it to begin. Then go to **Layout** > **Breaks**. For more information, see [Insert a section break](https://support.microsoft.com/en-us/office/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c) (use <kbd>Ctrl</kbd>+click to open in a new tab).
@@ -172,9 +163,9 @@ In case your favorite (true-type) font isn't installed on the [!INCLUDE[prod_sho
 To make your Word layout "themable", use the standard styles for text and headers. Then the colors and fonts will follow the chosen theme.
 
 For tables, for the table header be respect theme changes, you need to do the following
-1. mark the header row
-2. In the *Table Design* menu, expand the Shading menu in Table Styles
-3. Now pick a theme color
+1. Mark the header row.
+2. In the *Table Design* menu, expand the *Shading* menu in *Table Styles*.
+3. Now pick a theme color.
 
 If you use the pre-built Table Styles, you need to manually change the color in the Shading menu for the header color to respect theme changes.
 
@@ -185,14 +176,14 @@ To learn more about templates, themes, and Word styles, see [Differences between
 
 If you need to design Word layouts where placement of design components on the page needs to be very precise, then you can set the their absolute position, both horizontal and vertical. It is possible to set a precision to two decimals of cm/inch.
 
-For tables, you can control their absolute position on the page in Table Properties. In the Tables tab, choose Around for the Text wrapping. Now the Positioning button is unlocked and you can set the horizontal and vertical position of the table. For more information, see [Set or change table properties](https://support.microsoft.com/en-us/office/set-or-change-table-properties-3237de89-b287-4379-8e0c-86d94873b2e0)
+For tables, you can control their absolute position on the page in *Table Properties*. In the *Tables* tab, choose *Around* for the text wrapping. Now the *Positioning* button is unlocked and you can set the horizontal and vertical position of the table. For more information, see [Set or change table properties](https://support.microsoft.com/en-us/office/set-or-change-table-properties-3237de89-b287-4379-8e0c-86d94873b2e0)
 
 
-For text boxes, you can control their absolute position on the page in the *Shape format* menu: Position > More Layout Options (you can also navigate here by right-clicking on the text box). Now you can set the horizontal and vertical position of the text box. For more information, see [Ways to customize a text box](https://support.microsoft.com/en-us/office/ways-to-customize-a-text-box-0570ef01-1f4d-4f37-a787-7be3ce6b6380)
+For text boxes, you can control their absolute position on the page in the *Shape format* menu: *Position* > *More Layout Options* (you can also navigate here by right-clicking on the text box). Now you can set the horizontal and vertical position of the text box. For more information, see [Ways to customize a text box](https://support.microsoft.com/en-us/office/ways-to-customize-a-text-box-0570ef01-1f4d-4f37-a787-7be3ce6b6380)
 
 
 > [!TIP]  
-> When designing layouts for precision printing, consider enabling the ruler and gridlines (find them under View > Show). For more information, see [Show the ruler](https://support.microsoft.com/en-us/office/show-the-ruler-dc8a4e0d-209f-43b8-b967-8e65da24d4c7)
+> When designing layouts for precision printing, consider enabling the ruler and gridlines (find them under *View* > *Show*). For more information, see [Show the ruler](https://support.microsoft.com/en-us/office/show-the-ruler-dc8a4e0d-209f-43b8-b967-8e65da24d4c7)
 
 
 ## Design guidelines for a report dataset designed for Word layouts
