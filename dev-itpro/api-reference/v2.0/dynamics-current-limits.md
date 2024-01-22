@@ -3,7 +3,7 @@ title: "Current API Limits in Dynamics 365 Business Central"
 description: "Learn about constraints on API calls made via OData or SOAP requests."
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 01/22/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,19 +19,19 @@ This article lists the different limits that are set on OData and SOAP requests.
 
 HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.
 
-## API Rate limits
+## API rate limits
 
 See operational limits for [OData](../../administration/operational-limits-online.md#ODataServices) and [SOAP](../../administration/operational-limits-online.md#SOAPServices) requests.
 
-## Maximum Connections
+## Maximum connections
 
 See operational limits for [OData](../../administration/operational-limits-online.md#ODataServices) and [SOAP](../../administration/operational-limits-online.md#SOAPServices) requests.
 
-## Operation Timeout
+## Operation timeout
 
 See operational limits for [OData](../../administration/operational-limits-online.md#ODataServices) and [SOAP](../../administration/operational-limits-online.md#SOAPServices) requests.
 
-## Request Size
+## Request size
 
 See operational limits for [OData](../../administration/operational-limits-online.md#ODataServices) and [SOAP](../../administration/operational-limits-online.md#SOAPServices) requests.
 
