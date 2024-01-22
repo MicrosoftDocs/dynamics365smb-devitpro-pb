@@ -3,7 +3,7 @@ title: Russian features that are moved, removed, or replaced
 description: We're constantly streamlining and adjusting our app in-step with market developments. Read about the features for Russia that we have moved, removed, or replaced.
 author: AndreiPanko
 ms.topic: article
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Russia, local functionality

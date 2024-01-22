@@ -1,15 +1,16 @@
 ---
-title: Work with Repeater Controls
+title: Work with repeater controls
 description: A repeater is a control used to define a list of records from the source table of a page.
 author: jswymer
 ms.author: jswymer
 ms.custom: bap-template
 ms.date: 11/24/2022
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ---
-# Working with Repeater Controls
+
+# Work with repeater controls
 
 A repeater control is used to define a list of records from the source table of a page. Records are displayed as rows and columns, where each row is a record and each column is a field.
 
@@ -41,7 +42,7 @@ Some other alternative things you can do include:
 
 - Add, move, or hide fields and make adjustments like modifying the column width, directly from the user interface.
 
-  To apply these changes, use the Designer tool. Go to [Using Designer](devenv-inclient-designer.md). If these changes are meant for your own workspace, then you use the Personalize tool. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
+  To apply these changes, use the Designer tool. Go to [Use Designer](devenv-inclient-designer.md). If these changes are meant for your own workspace, then you use the Personalize tool. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
 - Use the filter pane from the page to sort the data and apply filters. Go to [Sorting, Searching, and Filtering](/dynamics365/business-central/ui-enter-criteria-filters).
 - Use the Tile View to display records as tiles (or bricks) instead of as rows and optimize the space and readability of data. For more information on how to customize the tile view, see [Displaying Data as Tiles](devenv-lists-as-tiles.md).
 
@@ -131,7 +132,7 @@ pagecustomization MyCustomization customizes "Customer List"
 }
 ```
 
-## See Also
+## See also
 
 [Pages Overview](devenv-pages-overview.md)  
 [Designing List Pages](devenv-designing-list-pages.md)  

@@ -5,7 +5,7 @@ description: (v1.0) Creates an item category object in Dynamics 365 Business Cen
 author: SusanneWindfeldPedersen
 
 ms.topic: reference
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2019

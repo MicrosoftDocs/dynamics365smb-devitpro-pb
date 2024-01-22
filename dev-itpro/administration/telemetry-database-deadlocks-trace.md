@@ -2,9 +2,9 @@
 title: Database Deadlock Lock Trace Telemetry
 description: Learn about the database deadlock telemetry in Business Central  
 author: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry

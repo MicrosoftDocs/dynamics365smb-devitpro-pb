@@ -37,9 +37,30 @@ The callstack where the ErrorInfo was collected.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+When using the collectable errors feature, you might need the `ErrorInfo.Callstack` method to get AL stack traces for all errors collected while processing the list of errors.
+
+## Example 
+
+```AL
+procedure myErrorHandlerProc( MyErrorInfo: ErrorInfo )
+var 
+    stackTrace: Text[2048];
+begin
+    stackTrace := MyErrorInfo.Callstack();
+
+    // do something 
+end
+```
+
+For an elaborate example, see the ErrorMessageManagement codeunit in the system application.
+
 ## See Also
 
-[Collecting Errors](../../devenv-error-collection.md)  
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[Collecting Errors](../../devenv-error-collection.md)  
+[AL error handling](../../devenv-al-error-handling.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

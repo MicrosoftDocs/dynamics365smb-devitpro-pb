@@ -45,7 +45,7 @@ The `TaskScheduler.CancelTask` method can only cancel pending tasks.
 
 If no task exists with the provided task GUID provided to `TaskScheduler.CancelTask`, then the method returns false (no runtime error occurs). 
 
-For more information about the task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
+For more information about the task scheduler, see [Using the Task Scheduler](../../devenv-task-scheduler.md). 
 
 ## Example
 
@@ -60,7 +60,7 @@ end;
 
 ## See also
 
-[TaskScheduler Data Type](taskscheduler-data-type.md)  
-[Task Scheduler](../../devenv-task-scheduler.md)   
+[TaskScheduler Data Type](taskscheduler-data-type.md)    
+[Using the Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

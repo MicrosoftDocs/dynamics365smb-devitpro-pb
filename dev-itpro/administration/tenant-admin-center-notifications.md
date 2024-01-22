@@ -4,7 +4,7 @@ description: Learn about how an internal admin and a delegated admin can get not
 author: jswymer
 
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, notifications

@@ -25,7 +25,7 @@ Before putting an action on a page you should think about the business processes
 For more information about different types of actions and where to use them, see [Actions Overview](devenv-actions-overview.md).
 
 > [!TIP]
-> After you have added actions to a page, you can use Designer to alter the actions, like moving an action to or from a promoted category, hiding and action or action group, and more. For more information, see [Using Designer](devenv-inclient-designer.md).
+> After you have added actions to a page, you can use Designer to alter the actions, like moving an action to or from a promoted category, hiding and action or action group, and more. For more information, see [Use Designer](devenv-inclient-designer.md).
 
 
 ## To add Actions to a Page
@@ -128,7 +128,7 @@ You can assign different icons for your actions from the [!INCLUDE[d365fin_md](i
 
 ## Set up a keyboard shortcut on an action
 
-You can use the [ShortcutKey](properties/devenv-shortcutkey-property.md) property to add a keyboard shortcut to an action. Pressing the key that you set up with this property provides the same result as selecting the action. For example, the following code adds the shortcut <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>D</kbd> to an action:
+You can use the [ShortcutKey](properties/devenv-shortcutkey-property.md) property to add a keyboard shortcut to an action. Selecting the key that you set up with this property provides the same result as selecting the action. For example, the following code adds the shortcut <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>D</kbd> to an action:
 
 ```AL
 action(DoThisAction)

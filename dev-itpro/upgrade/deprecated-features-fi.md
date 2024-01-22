@@ -3,13 +3,13 @@ title: Finnish features that are moved, removed, or replaced | Microsoft Docs
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for Finland that we have moved, removed, or replaced.
 author: bholtorf
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Finland, local functionality
-ms.date: 12/19/2023
+ms.date: 10/08/2024
 ms.author: jswymer
--
+---
 
 # Deprecated features in the Finnish version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]
 This topic lists and describes the local functionality for Finland that has been removed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], made available from a new page or report, or replaced by a new feature.

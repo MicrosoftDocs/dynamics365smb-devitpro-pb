@@ -4,9 +4,9 @@ description: Learn about the updates for Dynamics 365 Business Central 2022 Rele
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 11/30/2023
+ms.date: 01/11/2024
 ms.custom: bap-template
 ---
 
@@ -28,6 +28,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5034718](https://support.microsoft.com/help/5034718)|Update 21.15| January 2024|Application Build 21.15.62827</br>Platform Build 21.0.62811|
 |[5033777](https://support.microsoft.com/help/5033777)|Update 21.14| December 2023|Application Build 21.14</br>Platform Build 21.0. |
 |[5032753](https://support.microsoft.com/help/5032753)|Update 21.13| November 2023|Application Build 21.13.61695</br>Platform Build 21.0.61679 |
 |[5031950](https://support.microsoft.com/help/5031950)|Update 21.12| October 2023|Application Build 21.12.60908</br>Platform Build 21.0.60867 |

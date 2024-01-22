@@ -5,9 +5,11 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: 
 ms.topic: conceptual
-ms.collection: get-started
 ms.date: 12/20/2023
 ms.custom: bap-template
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ---
 
 # Build the copilot capability in AL
@@ -178,11 +180,13 @@ codeunit 54334 "CopilotJob"
               exit(Result);
           end;
     end;
+
     local procedure SetParameters(var AOAIChatCompletionParams: Codeunit "AOAI Chat Completion Params")
     begin
         AOAIChatCompletionParams.SetMaxTokens(2500);
         AOAIChatCompletionParams.SetTemperature(0);
     end;
+
     local procedure MaxModelRequestTokens(): integer
     begin 
        exit(1596) // Assuming it's GPT 3.5 Turbo with 4096 max tokens and 2500 is reserved for the output

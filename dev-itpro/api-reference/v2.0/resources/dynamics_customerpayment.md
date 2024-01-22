@@ -3,7 +3,7 @@ title: customerPayment resource type
 description: A customer payment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2021
@@ -14,8 +14,6 @@ ms.author: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a customer payment in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -83,11 +81,9 @@ Here is a JSON representation of the customerPayment resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## See also
 
-
-## See Also
 [GET customerPayment](../api/dynamics_customerPayment_Get.md)  
 [DELETE customerPayment](../api/dynamics_customerPayment_Delete.md)  
 [POST customerPayment](../api/dynamics_customerPayment_Create.md)  

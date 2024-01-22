@@ -3,7 +3,7 @@
     description: Specifies India Data Migration Toolkit Overview
     author: v-debapd
     ms.topic: overview
-    ms.devlang: na
+    ms.devlang: al
     ms.tgt_pltfrm: na
     ms.workload: na
     ms.search.keywords: India, local, IN, English

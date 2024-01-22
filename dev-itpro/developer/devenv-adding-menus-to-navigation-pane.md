@@ -72,7 +72,7 @@ pageextension 50120 ExtendNavigationArea extends "Order Processor Role Center"
 }
 ```
 
-You can also enable pages and reports to appear in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] search for a quick navigational support. For more information, see [Adding Pages and Reports to Tell Me](devenv-al-menusuite-functionality.md).
+You can also enable pages and reports to appear in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] search for a quick navigational support. For more information, see [Add pages and reports to Tell me](devenv-al-menusuite-functionality.md).
 
 ## Adding to the navigation bar
 
@@ -164,4 +164,4 @@ addlast(Reporting)
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
-[Adding Pages and Reports to Tell Me](devenv-al-menusuite-functionality.md)  
+[Add pages and reports to Tell me](devenv-al-menusuite-functionality.md)  

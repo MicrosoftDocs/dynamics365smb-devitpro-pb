@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.topic: conceptual
 author: samirdal
 ms.author: samirdal
-ms.service: dynamics365-business-central
+
 ---
 
 # Actionable errors
@@ -316,6 +316,8 @@ If the user experience the error they see the following error dialog
 
 
 ## See Also  
+
+[Failure modeling and robust coding practices](devenv-robust-coding-practices.md)  
 [User experience guidelines for errors](devenv-error-handling-guidelines.md)  
 [Understanding the error dialog](devenv-error-dialog.md)  
 [Dialog.Error(ErrorInfo) Method](methods-auto/dialog/dialog-error-errorinfo-method.md)  

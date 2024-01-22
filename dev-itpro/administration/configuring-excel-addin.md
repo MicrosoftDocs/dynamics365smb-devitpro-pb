@@ -3,9 +3,8 @@ title: "Setting up the Excel Add-In for Editing Data"
 description: Learn about how to configure the Excel add-in so users can edit data in Excel and push back to Business Central.
 author: jswymer
 ms.author: jswymer
-ms.custom: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.service: dynamics-365-op
 ms.topic: conceptual
 ms.date: 05/25/2022
 ---

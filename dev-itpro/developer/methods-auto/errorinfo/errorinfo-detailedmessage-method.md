@@ -3,7 +3,7 @@ title: "ErrorInfo.DetailedMessage([Text]) Method"
 description: "Specifies a detailed error message."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 01/03/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,36 @@ The current detailed message of the ErrorInfo.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The detailed message isn't shown to the end user, but is included in the **Copy details** part of the error dialog. For more information about the **Copy details** part of the error dialog, see [Understanding the error dialog](../../devenv-error-dialog.md).  
+
+You aren't required to set a detailed message for error dialogs. But it might be helpful to add more technical information here to help a person who needs to troubleshoot the issue. 
+
+## Example 
+
+```AL
+var 
+    dimension: Text[30];
+    vendorCode: Text[30];
+    MyErrorInfo: ErrorInfo;
+begin
+    // set up the error info object
+    MyErrorInfo.Message(
+        StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', dimension, vendorCode)
+    );
+    MyErrorInfo.DetailedMessage('Add some text to help the person troubleshooting this error.');
+    // maybe set more properties
+
+    Error(MyErrorInfo);
+end
+```
+
 ## See Also
+
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[Understanding the error dialog](../../devenv-error-dialog.md)  
+[Error handling](../../devenv-al-error-handling.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

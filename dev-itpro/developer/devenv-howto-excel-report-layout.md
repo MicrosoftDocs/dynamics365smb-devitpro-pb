@@ -6,7 +6,6 @@ ms.custom: bap-template
 ms.date: 12/15/2023
 ms.reviewer: kepontop
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -73,6 +72,17 @@ If you add new columns to the report dataset after you've created Excel layouts,
 
 For a report developer working with AL code, maybe the simplest way to get the new column names is from the AL code for the report object. For a report developer working just in Excel, the simplest way to get the new column names is to run the report in [!INCLUDE[prod_short](../includes/prod_short.md)] and on the request page, then choose the **Microsoft Excel Document (data only)** option. This will give you an Excel workbook with all the columns in the data contract.
 
+
+## Report labels in Excel layouts
+
+Report labels are used by report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. 
+
+Starting in version 23.3, report labels defined in the report object are available in the `CaptionData` worksheet in Excel. 
+
+
+For more information about labels, see [Report labels](./devenv-report-object.md#report-labels).
+
+
 ## Formatting data in Excel layouts
 
 [!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
@@ -119,7 +129,7 @@ The example extends the **Contact List** report only by adding a `rendering` sec
     }
     ```
 
-2. Now, press **Ctrl+Shift+P**, and then choose **AL: Package**. The `MyExcelContactList.xlsx` is generated, as you can see in the right pane of Visual Studio Code.  
+2. Now, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **AL: Package**. The `MyExcelContactList.xlsx` will be generated, as you can see in the right pane of Visual Studio Code.  
     > [!TIP]  
     > Another way of generating the data set to build a layout on, is to run a report in Business Central and on the request page, then choose the **Microsoft Excel Document (data only)** option, and you will get the same starting point. Then you can design the layout, save as a new layout, and include in your AL project.
 1. Right-click the generated `MyExcelContactList.xlsx` file, and choose **Reveal in File Explorer**. This step opens File Explorer.
@@ -128,7 +138,7 @@ Excel now opens and you should see the dataset of the Contact List. **Note** tha
 1. In Excel, go to the **Insert** tab, choose **PivotTable**, and then choose **From Table/Range** with the default options of **Data** and **New worksheet**. Choose the **OK** button.
 1. From the **PivotTable Fields** pane to the right, choose a suitable number of fields to add to the report.
 1. Save the report and close the Excel window.
-1. Back in Visual Studio Code, press **Ctrl+F5** to compile and launch [!INCLUDE [prod_short](includes/prod_short.md)].  
+1. Back in Visual Studio Code, select <kbd>Ctrl</kbd>+<kbd>F5</kbd>  to compile and launch [!INCLUDE [prod_short](includes/prod_short.md)].  
 1. Now, to choose the changed report layout, search for the **Report Layout Selection** page, and then search for the **Contact List** (ID 5050) report. 
 1. In the **Layout Type** column, choose **Excel**, and then choose the **Run Report** from the action bar.
 1. On the request page, choose the **Download** button, and once the report is downloaded, open it.

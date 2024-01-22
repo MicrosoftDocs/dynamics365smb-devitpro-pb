@@ -1,6 +1,6 @@
 ---
-title: "Profile Object"
-description: "Description of the page object."
+title: Profile Object
+description: Description of the profile object, which allows you to build an individual experience for each user profile.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Profile Object
+# Profile object
+
 The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to build an individual experience for each user profile. The Profile object performs a validation to check whether the specified role center page exists, and [page customization objects](devenv-page-customization-object.md) exists, when you define a new profile object. On a page customization you can add changes to the page layout, and actions; but you cannot add variables, procedures, or triggers. 
 
 > [!NOTE]  
@@ -21,7 +22,7 @@ The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] a
 > Extension objects can have a name with a maximum length of 30 characters.
 
 > [!NOTE]  
-> The property `allowDebugging`, which is a setting under `resourceExposurePolicy` does not apply to page customizations. Page customizations defined in an extension with `allowDebugging` set to `false` can still be copied using Designer. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).
+> The property `allowDebugging`, which is a setting under `resourceExposurePolicy` does not apply to page customizations. Page customizations defined in an extension with `allowDebugging` set to `false` can still be copied Use Designer. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).
 
 ## Snippet support
 Typing the shortcut `tprofile` will create the basic layout for a profile object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.

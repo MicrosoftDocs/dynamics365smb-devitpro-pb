@@ -51,7 +51,7 @@ entitlement "Delegated Admin agent - Partner"
 
     Id = '00000000-0000-0000-0000-000000000007';
 
-    ObjectEntitlement = MyApp_PartnerFullAccessPermissionSet;
+    ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
 
 }
 
@@ -65,7 +65,7 @@ entitlement "Delegated Helpdesk agent - Partner"
 
     Id = '00000000-0000-0000-0000-000000000008';
 
-    ObjectEntitlement = MyApp_PartnerFullAccessPermissionSet;
+    ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
 
 }
 
@@ -79,23 +79,22 @@ entitlement "Dynamics 365 Admin - Partner"
 
     Id = '00000000-0000-0000-0000-000000000009';
 
-    ObjectEntitlement = MyApp_PartnerFullAccessPermissionSet;
+    ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
 
 }
 ```
 
 ## Entitlement example - per-user plan
 
-An example of an entitlement where `Type` is `PerUserServicePlan`. This type is used to enable transactability for AppSource apps. The `Id` property is used to map the entitlement to the plan in Partner Center, and must contain the **Service ID** for the plan. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+An example of an entitlement where `Type` is `PerUserOfferPlan`. This type is used to enable transactability for AppSource apps. The `Id` property is used to map the entitlement to the plan in Partner Center, and must contain the **Service ID** for the plan. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 ```al
-entitlement BC_PerUserServicePlan
+entitlement BC_PerUserOfferPlan
 {
-    Type = PerUserServicePlan;
-    Id = '1a2aaaaa-3aa4-5aa6-789a-a1234567aaaa';
+    Type = PerUserOfferPlan;
+    Id = 'MyOfferPlan';
 
-    ObjectEntitlements = "D365 BASIC";
-
+    ObjectEntitlements = "MyOfferLicensePermission";
 }
 ```
 

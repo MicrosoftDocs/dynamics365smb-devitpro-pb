@@ -2,9 +2,9 @@
 title: Call external services with the HttpClient data type
 description: Learn about how to call external services using the HttpClient datatype.
 ms.custom: bap-template
-ms.date: 07/26/2023
+ms.date: 01/08/2024
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 author: kennienp
 ms.author: kepontop
@@ -133,24 +133,19 @@ The following example illustrates the error handling you need to setup for handl
 
 It's possible to include a certificate when calling an external service. 
 
-The following example shows how to add a certificate to the HttpClient data type.
+[!INCLUDE[httpclient_cert_example](includes/include-http-cert-example.md)]
 
-```AL
-// This code shows how to use certificates with HttpClient
-procedure AddCertificateToHttpClient(var HttpClient: HttpClient; CertificateCode: Text[6])
-var
-    IsolatedCertificate: Record "Isolated Certificate";
-    CertificateManagement: Codeunit "Certificate Management";
-begin
-    if not IsolatedCertificate.Get(CertificateCode) then
-        exit;
-    HttpClient.AddCertificate(
-        CertificateManagement.GetCertAsBase64String(IsolatedCertificate),
-        CertificateManagement.GetPassword(IsolatedCertificate));
-end;
-```
+[!INCLUDE[httpclient_cert_note](includes/include-http-cert-note.md)]
 
 For more information about certificates, see the [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-method.md)
+
+### Which IP addresses or ranges does my environment use?
+
+When you exchange data through external services, you might have to safelist the IP addresses from where the [!INCLUDE[prod_short](includes/prod_short.md)] service is running. 
+
+For more information, see [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
+
+
 
 ## Monitor and troubleshoot
 

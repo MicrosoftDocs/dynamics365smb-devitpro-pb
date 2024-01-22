@@ -44,7 +44,7 @@ Scheduled tasks are shown in the **Scheduled Tasks** page in the client. The `Ta
 > [!NOTE]  
 > It's also possible to use `ScheduledTask.Get` on a record instance of type `ScheduledTask` to query for existance of a task. This method requires the user to have Read access to the `ScheduledTask` table, whereas the `TaskScheduler.TaskExists` method doesn't require the user to have access to the `ScheduledTask` table.
 
-For more information about the task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
+For more information about the task scheduler, see [Using the Task Scheduler](../../devenv-task-scheduler.md). 
 
 ## Example
 This example shows how to use `TaskScheduler.TaskExists` to be able to safely later in the code flow  run code that assumes that the task exists.
@@ -65,6 +65,6 @@ end;
 
 ## See Also
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
-[Task Scheduler](../../devenv-task-scheduler.md)   
+[Using the Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

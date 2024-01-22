@@ -1,8 +1,8 @@
 ---
-title: "Technical Upgrade From Version 14 to Version 19"
+title: "Technical upgrade From version 14 to version 19"
 description: Describes how to do a technical upgrade from Business Central 14 to 19
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/28/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
-# Technical Upgrade From Version 14 to Version 19
+# Technical upgrade from version 14 to version 19
 
 Use this process when you have a code customized [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 platform (version 19). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
 
@@ -80,7 +80,7 @@ Use this process when you have a code customized [!INCLUDE[prod_short](../develo
 
 4. Copy Dynamics Online Connect add-in.
 
-    The Dynamics Online Connect add-in was deprecated in version 17. As a result, it's been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, for upgrade, the add-in may still be required for the old System Application. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 19 server installation.
+    The Dynamics Online Connect add-in was deprecated in version 17. As a result, it's been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, for upgrade, the add-in might still be required for the old System Application. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 19 server installation.
 
 ## Task 2: Upgrade permission sets
 
@@ -286,7 +286,7 @@ If you have a multitenant deployment, run these steps for each tenant (replacing
     Sync-NAVApp -ServerInstance <BC19 server instance> -Name "Base Application" -Version <extension version> -tenant <tenant ID>
     ```
 
-    With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID.
+    With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names are suffixed with the base app extension ID.
 
 2. Install custom base application extension on the tenant.
 
@@ -409,7 +409,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
 
-## See Also
+## See also
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Business Central 14.X to 15.X compatibility matrix](upgrade-v14-v15-compatibility.md)

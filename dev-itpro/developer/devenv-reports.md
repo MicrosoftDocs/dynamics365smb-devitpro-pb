@@ -8,6 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 
 # Reports overview
@@ -67,8 +68,8 @@ The following table includes links to help you get started with designing the re
 [Report extension object](devenv-report-ext-object.md)  
 [Creating a report](devenv-howto-report-layout.md)  
 [Using request pages with reports](devenv-request-pages-for-reports.md)   
+[Creating an Excel layout report](devenv-howto-excel-report-layout.md)  
 [Creating an RDL layout report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word layout report](devenv-howto-report-layout.md)  
-[Creating an Excel layout report](devenv-howto-excel-report-layout.md)  
 [Defining multiple report layouts](devenv-multiple-report-layouts.md)  
 [Utilizing Read Scale-Out for better performance](../administration/database-read-scale-out-overview.md)  

@@ -5,7 +5,7 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 
 ms.topic: article
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2021
@@ -70,6 +70,8 @@ The error codes in the table below can be divided into the following categories 
 
 ## Troubleshoot failed OData/API calls with HTTP status codes
 When you call a web service endpoint, either a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] API or from AL using Httpclient datatype, you get an HTTP status code as part of the response. All HTTP status codes that start with 4 (sometimes also written 4xx) are classified as client errors, and it's your responsibility to react on these errors and fix them in your code. 
+
+[!INCLUDE[on-prem-ws-off-405-note](../includes/include-on-prem-ws-off-405-note.md)]
 
 For more information, see [Troubleshooting web service errors with HTTP status codes](web-service-troubleshooting.md).
 

@@ -4,7 +4,7 @@ description: Use the Business Central administration center to manage environmen
 author: jswymer
 
 ms.topic: conceptual
-ms.devlang: na
+ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
@@ -52,8 +52,9 @@ To schedule an update date:
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **Name** of the relevant environment to open the environment details.
 2. Choose the **Update Settings** action, and then choose the **Set update date** action.
 3. In the **Schedule Environment Update** pane, specify the update date.
-    > [!NOTE]
-    > You can choose to ignore the environment's update window when scheduling a specific update by switching **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets it start immediately, and it lets large upgrades run for longer than 24 hours if required.
+
+    > [!NOTE]  
+    > You can choose to ignore the environment's update window when scheduling a specific update by switching **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets it start immediately, and it lets large upgrades run for longer than 24 hours if required. Updates that run in this mode won't be automatically cancelled at the end of the update window, so it's not recommended to use this setting for updates on environments that must be available for users again by a certain time.
 
 4. Choose **Schedule Update**.
 
@@ -65,8 +66,6 @@ For updates that tenant administrators can schedule, a notification is sent to a
 
 > [!IMPORTANT]
 > [!INCLUDE [admin-notifications](../includes/admin-notifications.md)]
-
-For versions earlier than 2021 release wave 1, admins can't schedule the monthly minor updates. Until such environments are updated to version 18.0 and later, the update is applied to tenant environments as it becomes available. No notifications are sent to tenant administrators prior to the update. Notifications are sent only after the update is applied.  
 
 ## Environments that can't get updated
 
