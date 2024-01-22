@@ -636,7 +636,7 @@
 ##### [Feature (error) telemetry](administration/telemetry-feature-telemetry.md)
 ##### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
 
-#### AL Language Reference (errors)
+#### AL language reference (errors)
 ##### [Collecting Errors API](developer/devenv-error-collection-api.md?toc=/dynamics365/business-central/dev-itpro/toc.json) 
 ##### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -644,7 +644,7 @@
 ###### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ###### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
-#### Baseapp Reference (errors)
+#### Baseapp reference (errors)
 ##### [Codeunit "Error Context Element"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-context-element?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Codeunit "Error Message Handler"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-handler?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Codeunit "Error Message Management"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-management?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -829,7 +829,7 @@
 ###### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)
 ###### [Working with Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ###### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
-###### [Using Hyperlinks in Word Layouts](developer/devenv-hyperlinks-in-word-report-layouts.md)  
+###### [Using hyperlinks in Word layouts](developer/devenv-hyperlinks-in-word-report-layouts.md)  
 ###### [Working with Word layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ###### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
 ###### [Working with RDLC layouts](/dynamics365/business-central/ui-rdlc-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
