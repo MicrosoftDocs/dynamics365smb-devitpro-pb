@@ -78,12 +78,12 @@ In case you want to apply different watermarks to different sections, this work-
 
 [!INCLUDE[using_fonts](../includes/include-excel-word-layouts-fonts.md)]
 
-Note that fonts do not need to be installed on your machine when working with the layout, you can just mark content and type in the name of the font you want to use. When the report is generated on the server, if the font is installed on the server, then it will be used in the rendered report document.  If the font is not available on the server (or embedded in the layout, see below), then the report will still render, but the font defined in the *Normal* style will be used.
+Note that fonts don't have to be installed on your machine when working with the layout, you can just mark content and type in the name of the font you want to use. When the report is generated on the server, if the font is installed on the server, then it's used in the rendered report document. If the font isn't available on the server or embedded in the layout, then the report still renders, but the font defined in the *Normal* style is used.
 
-In case your favorite (true-type) font is not installed on the [!INCLUDE[prod_short](includes/prod_short.md)] server, then you can embed it in the layout. For more information, see [Embedding custom fonts](https://support.microsoft.com/en-us/office/benefits-of-embedding-custom-fonts-cb3982aa-ea76-4323-b008-86670f222dbc).
+In case your favorite (true-type) font isn't installed on the [!INCLUDE[prod_short](includes/prod_short.md)] server, then you can embed it in the layout. For more information, see [Embedding custom fonts](https://support.microsoft.com/en-us/office/benefits-of-embedding-custom-fonts-cb3982aa-ea76-4323-b008-86670f222dbc).
 
 > [!NOTE]
-> Embedding fonts will increase the size of the generated documents.
+> Embedding fonts increases the size of the generated documents.
 
 
 ### Using Office document themes in Word layouts
@@ -101,8 +101,8 @@ Report labels defined in the report object are available as in the `Labels` part
 
 For more information about labels, see [Report labels](./devenv-report-object.md#report-labels).
 
-
 ## Formatting data in Word layouts
+
 [!INCLUDE[formatting_data_in_layouts](../includes/include-formatting-data-in-layouts.md)]
 
 Specifically for Word layouts, there is no way to control formatting of data elements in Word. Therefore, you need to do the formatting in the report dataset. For more information, see [Formatting field values in report datasets](devenv-format-report-field-data.md).
