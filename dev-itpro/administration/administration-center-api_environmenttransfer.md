@@ -1,5 +1,5 @@
 ---
-title: Business Central Admin Center API - Transfer Environments
+title: Business Central Admin Center API - Transfer environments
 description: Learn about the Business Central administration center API for transferring environments between Entra tenants.
 author: jobulsin
 ms.topic: conceptual
@@ -11,9 +11,9 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 01/19/2024
 ---
 
-# Transfer Environments
+# Transfer environments
 
-Environments can be transferred between Microsoft Entra tenants by internal administrators, for example when multiple Entra tenants are consolidated, when a business is acquired by or merging with another business, or when a partner prepares a demo environment in their tenant that needs to be transferred to the customer tenant for the customer to evaluate.
+Environments can be transferred between Microsoft Entra tenants by internal administrators, for example when multiple Microsoft Entra tenants are consolidated, when a business is acquired by or merging with another business, or when a partner prepares a demo environment in their tenant that needs to be transferred to the customer tenant for the customer to evaluate.
 
 > [!IMPORTANT]
 > All environment transfer operations must be executed by internal administrators; it is not possible to authenticate API calls to the endpoints described on this page as delegated administrator or Microsoft Entra app.
@@ -23,7 +23,7 @@ Environments can be transferred between Microsoft Entra tenants by internal admi
 
 ## Request an environment transfer
 
-Creates a request to transfer an environment to another Entra tenant. 
+Creates a request to transfer an environment to another Microsoft Entra tenant. 
 
 > [!NOTE]  
 > This API call must be authenticated on the source tenant.
@@ -32,18 +32,18 @@ Creates a request to transfer an environment to another Entra tenant.
 POST /admin/v2.20/transfers/outgoing/applications/{applicationFamily}/environments/{environmentName}
 ```
 
-### Route Parameters
+### Route parameters
 
 `applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 `environmentName` - Name of the environment
 
 ### Body
 
-Specifies the Entra tenant ID of the destination tenant and the date and time at which the transfer should run, if accepted on the destination tenant.
+Specifies the Microsoft Entra tenant ID of the destination tenant and the date and time at which the transfer should run, if accepted on the destination tenant.
 
 ```
 {
-    "DestinationEntraTenantId": Guid, //The Entra tenant ID of the destination tenant
+    "DestinationEntraTenantId": Guid, //The Microsoft Entra tenant ID of the destination tenant
     "RunOnUtc": datetime // The date and time at which the transfer should run, if accepted on the destination tenant. Expressed as UTC timestamp.
 }
 ```
@@ -57,14 +57,14 @@ Returns details of the operation created to request the environment transfer.
     "id": Guid, // Guid of the created operation
     "type": string, // Type of the created operation, i.e. "requestTransferToAnotherEntraTenant"
     "status": string, // Status of the created operation, i.e. "queued"
-    "aadTenantId": Guid, // Entra tenant id of the tenant for which the operation was created, the source tenant
+    "aadTenantId": Guid, // Microsoft Entra tenant id of the tenant for which the operation was created, the source tenant
     "createdOn": datetime, // Date and time at which the operation was created, expressed as UTC timestamp
     "createdBy": string, // Email address of the user that created the operation
     "creatorPrincipalType": string, // Authentication type for the created operation, i.e. "user"
     "errorMessage": string, // Error message, if any
     "parameters": {
-        "sourceEntraTenantId": Guid, // Entra tenant ID of the source tenant
-        "destinationEntraTenantId": Guid, // Entra tenant ID of the destination tenant
+        "sourceEntraTenantId": Guid, // Microsoft Entra tenant ID of the source tenant
+        "destinationEntraTenantId": Guid, // Microsoft Entra tenant ID of the destination tenant
         "sourceEnvironmentName": string, // Name of the environment in the source tenant
         "environmentType": string, // Environment type, i.e. "production" or "sandbox"
         "productFamily": string, // Product family of the environment, e.g. "BusinessCentral"
@@ -98,7 +98,7 @@ Specifies the details of the environment for which a transfer is to be accepted.
 {
     "SourceEnvironmentName" : string, // Name of the environment in the source tenant
     "ApplicationFamily" : string, // Name of the Application Family of the environment
-    "SourceEntraTenantId" : Guid, // Entra tenant ID of the source tenant
+    "SourceEntraTenantId" : Guid, // Microsoft Entra tenant ID of the source tenant
     "DestinationEnvironmentName": string // Name the environment will have in the destination tenant
 }
 ```
@@ -112,15 +112,15 @@ Returns the details of the operation created in the destination tenant for the e
     "id": Guid, // ID of the operation created
     "type": string, // Type of the created operation, i.e. "moveToAnotherAadTenant"
     "status": string, // Status of the created operation, i.e. "queued"
-    "aadTenantId": Guid, // Entra tenant ID of the source tenant
+    "aadTenantId": Guid, // Microsoft Entra tenant ID of the source tenant
     "createdOn": datetime, // Date and time at which the operation was created
     "createdBy": string, // Email address of the user that created the transfer request in the source tenant
     "creatorPrincipalType": string, // Authentication type for the created operation, i.e. "user"
     "errorMessage": string, // Error message, if any
     "parameters": {
-        "sourceAadTenantId": Guid, // Entra tenant ID of the source tenant
+        "sourceAadTenantId": Guid, // Microsoft Entra tenant ID of the source tenant
         "sourceEnvironmentName": string, // Environment name of the environment in the source tenant
-        "destinationAadTenantId": Guid, // Entra tenant ID of the destination tenant
+        "destinationAadTenantId": Guid, // Microsoft Entra tenant ID of the destination tenant
         "destinationEnvironmentName": string, // Environment name of the environment in the destination tenant
         "runAt": datetime // // Date and time at which the transfer will run, expressed as UTC timestamp
     },
@@ -141,7 +141,7 @@ Cancels a created transfer request on the source tenant.
 DELETE /admin/v2.20/transfers/outgoing/applications/{applicationFamily}/environments/{environmentName}
 ```
 
-### Route Parameters
+### Route parameters
 
 `applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 `environmentName` - Name of the environment
@@ -155,15 +155,15 @@ Returns the details of the operation that was canceled in the source tenant.
     "id": Guid, // ID of the operation cancelled
     "type": string, // Type of the cancelled operation, i.e. "requestTransferToAnotherEntraTenant"
     "status": string, // Status of the created operation, i.e. "canceled"
-    "aadTenantId": Guid, // Entra tenant id of the tenant for which the operation was created, the source tenant
+    "aadTenantId": Guid, // Microsoft Entra tenant ID of the tenant for which the operation was created, the source tenant
     "createdOn": datetime, // Date and time at which the operation was created, expressed as UTC timestamp
     "completedOn": datetime, // Date and time at which the operation was completed, expressed as UTC timestamp
     "createdBy": string, // Email address of the user that created the operation
     "creatorPrincipalType": string, // Authentication type for the created operation, i.e. "user"
     "errorMessage": string, // Error message, if any
     "parameters": {
-        "sourceEntraTenantId": Guid, // Entra tenant ID of the source tenant
-        "destinationEntraTenantId": Guid, // Entra tenant ID of the destination tenant
+        "sourceEntraTenantId": Guid, // Microsoft Entra tenant ID of the source tenant
+        "destinationEntraTenantId": Guid, // Microsoft Entra tenant ID of the destination tenant
         "sourceEnvironmentName": string, // Environment name of the environment in the source tenant
         "environmentType": string, // Environment type, i.e. "production" or "sandbox"
         "productFamily": string, // Product family of the environment, e.g. "BusinessCentral"
@@ -179,7 +179,7 @@ Returns the details of the operation that was canceled in the source tenant.
 
 ## Get list of outgoing transfers
 
-Get a list of transfer requests on the source tenant that have not yet been completed.
+Get a list of transfer requests on the source tenant that haven't yet been completed.
 
 > [!NOTE]  
 > This API call must be authenticated on the source tenant.
@@ -196,14 +196,14 @@ GET /admin/v2.20/transfers/outgoing
             "id": Guid, // ID of the operation
             "type": string, // Type of the cancelled operation, i.e. "requestTransferToAnotherEntraTenant"
             "status": string, // Status of the created operation, i.e. "queued"
-            "aadTenantId": Guid, // Entra tenant id of the tenant for which the operation was created, the source tenant
+            "aadTenantId": Guid, // Microsoft Entra tenant ID of the tenant for which the operation was created, the source tenant
             "createdOn": datetime, // Date and time at which the operation was created, expressed as UTC timestamp
             "createdBy": string, // Email address of the user that created the operation
             "creatorPrincipalType": string, // Authentication type for the created operation, i.e. "user"
             "errorMessage": string, // Error message, if any
             "parameters": {
-                "sourceEntraTenantId": Guid, // Entra tenant ID of the source tenant
-                "destinationEntraTenantId": Guid, // Entra tenant ID of the destination tenant
+                "sourceEntraTenantId": Guid, // Microsoft Entra tenant ID of the source tenant
+                "destinationEntraTenantId": Guid, // Microsoft Entra tenant ID of the destination tenant
                 "sourceEnvironmentName": string, // Environment name of the environment in the source tenant
                 "environmentType": string, // Environment type, i.e. "production" or "sandbox"
                 "productFamily": string, // Product family of the environment, e.g. "BusinessCentral"
@@ -219,9 +219,9 @@ GET /admin/v2.20/transfers/outgoing
 }
 ```
 
-## Get list of incoming transfers from specified Entra tenant
+## Get list of incoming transfers from the specified Microsoft Entra tenant
 
-Get a list incoming transfers on the destination tenant from a specific source tenant that have not yet been completed.
+Get a list incoming transfers on the destination tenant from a specific source tenant that haven't yet been completed.
 
 > [!NOTE]  
 > This API call must be authenticated on the destination tenant.
@@ -232,7 +232,7 @@ GET /admin/v2.20/transfers/incoming/{sourceEntraTenantId}
 
 ### Route parameters
 
-`sourceEntraTenantId` - Entra tenant ID for the source tenant
+`sourceEntraTenantId` - Microsoft Entra tenant ID for the source tenant
 
 ### Response
 ```
@@ -242,14 +242,14 @@ GET /admin/v2.20/transfers/incoming/{sourceEntraTenantId}
             "id": Guid, // ID of the operation in the source tenant
             "type": string, // Type of the cancelled operation, i.e. "requestTransferToAnotherEntraTenant"
             "status": string, // Status of the created operation, i.e. "queued"
-            "aadTenantId": Guid, // Entra tenant id of the tenant for which the operation was created, the source tenant
+            "aadTenantId": Guid, // Microsoft Entra tenant ID of the tenant for which the operation was created, the source tenant
             "createdOn": datetime, // Date and time at which the operation was created, expressed as UTC timestamp
             "createdBy": string, // Email address of the user that created the operation
             "creatorPrincipalType": string, // Authentication type for the created operation, i.e. "user"
             "errorMessage": string, // Error message, if any
             "parameters": {
-                "sourceEntraTenantId": Guid, // Entra tenant ID of the source tenant
-                "destinationEntraTenantId": Guid, // Entra tenant ID of the destination tenant
+                "sourceEntraTenantId": Guid, // Microsoft Entra tenant ID of the source tenant
+                "destinationEntraTenantId": Guid, // Microsoft Entra tenant ID of the destination tenant
                 "sourceEnvironmentName": string, // Environment name of the environment in the source tenant
                 "environmentType": string, // Environment type, i.e. "production" or "sandbox"
                 "productFamily": string, // Product family of the environment, e.g. "BusinessCentral"
@@ -266,8 +266,8 @@ GET /admin/v2.20/transfers/incoming/{sourceEntraTenantId}
 ```
 
 
-## See Also
+## See also
 
 [The Business Central Administration Center API](administration-center-api.md)  
-[Transfer Environments](tenant-admin-center-environments-move.md)
+[Transfer environments](tenant-admin-center-environments-move.md)
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
