@@ -61,11 +61,11 @@ For more information, see [FAQ about Migrating to Business Central Online from O
 In the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], data is compressed using the SQL Server data compression feature. This means that the data size in your on-premises database might not match the data size when migrated to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service. For more information on estimating the compressed size of your data, see [Estimating the data size in your Business Central online tenant](./cloud-migration-estimate-compressed-data-size.md). 
 
 
-## Minimize migration downtime
+## Plan advanced migration strategies
 
 <!--Ideally, to ensure all data is migrated, you'd stop all users from working in the on-premises environment while you made the migration to online. However, given the time it takes to complete the migration, this downtime typically isn't feasible. So, you want to devise a strategy that provides a stable migration, limits downtime for users, and results in no data loss. There's no exact approach to follow, because of the unknowns that can arise. But in general, the following approach provides a solid basis or starting point for most migrations.-->
 
-It's important to have a solid migration strategy in place to ensure a smooth transition. While it's ideal to stop all users from working in the on-premises environment during migration, this downtime is often not feasible due to the time it takes to complete the migration. To minimize downtime and ensure a successful migration, consider following advanced migration strategy:
+It's important to have a solid migration strategy in place to ensure a smooth transition. While most migrations can run from the on-premises production database with minimal downtime for end users, it may be better to run especially large migrations from a backup of the on-premises database that is deployed as Azure SQL Database to improve migration speeds and minimize performance loss and downtime on the on-premises production database.
 
 1. [Enable Change Tracking](https://learn.microsoft.com/sql/relational-databases/track-changes/enable-and-disable-change-tracking-sql-server) on the on-premises production database for the number of days you expect to have between the first backup to replicate from and the next time you'll back up and replicate; a minimum of three days is enforced. The number of days for which Change Tracking is enabled cannot be changed later without resetting Change Tracking altogether.
 
@@ -86,7 +86,7 @@ It's important to have a solid migration strategy in place to ensure a smooth tr
 > [!IMPORTANT]
 > Ensure the on-premises and cloud environments remain on the same Business Central version they were on when the cloud migration was set up. Do not update the on-premises environment and [reschedule updates](update-rollout-timeline.md#schedule-updates) to the cloud environment to a date after the cloud migration is completed.
 
-Following these steps can help ensure a stable migration that minimizes downtime for users and results in no data loss. However, keep in mind that the migration process can be complex, and issues may arise that require more troubleshooting. It's important to stay flexible and be prepared to adjust your migration strategy as needed to address any problems that arise.
+Keep in mind that the migration process can be complex, and issues may arise that require more troubleshooting. It's important to stay flexible and be prepared to adjust your migration strategy as needed to address any problems that arise.
 
 ## Schedule
 
