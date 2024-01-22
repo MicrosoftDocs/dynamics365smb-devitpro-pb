@@ -3,8 +3,6 @@ title: "SOAP Web Services"
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 description: 'Learn how to use SOAP web services for operation-centric services in Business Central. Note: SOAP is being deprecated, consider OData or APIs.'
 ---

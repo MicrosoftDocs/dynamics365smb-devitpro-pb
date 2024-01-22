@@ -4,8 +4,6 @@ description: "Description of the process of referencing and using .NET types"
 author: solsen
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started

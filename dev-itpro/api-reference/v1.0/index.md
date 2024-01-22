@@ -3,9 +3,7 @@ title: (v1.0) "API (v1.0) for Dynamics 365 Business Central"
 description: (v1.0) "Reference content for the API (v1.0) endpoint for integration with Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.topic: get-started
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 10/30/2019
 ms.author: solsen
 ---

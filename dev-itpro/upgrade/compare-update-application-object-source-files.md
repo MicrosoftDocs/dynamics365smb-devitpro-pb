@@ -4,8 +4,6 @@ description: Compare the different set of Dynamics NAV application objects using
 ms.custom: na
 ms.date: 12/21/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---

@@ -4,9 +4,7 @@ description: Learn about the permission error telemetry in Business Central
 author: jswymer
 
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 07/27/2022
 ms.author: jswymer
