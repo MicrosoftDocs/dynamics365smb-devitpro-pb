@@ -4,8 +4,6 @@ description: Deletes an user permission object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: article
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/01/2021
 ms.author: solsen
 ---

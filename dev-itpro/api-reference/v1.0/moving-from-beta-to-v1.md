@@ -7,8 +7,6 @@ author: SusanneWindfeldPedersen
 
 ms.topic: article
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 02/03/2020
 ms.author: solsen
 ---

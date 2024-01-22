@@ -4,8 +4,6 @@ description: You can move a Business Central environment to another Microsoft En
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, move
 ms.date: 04/01/2021
 ms.author: jswymer

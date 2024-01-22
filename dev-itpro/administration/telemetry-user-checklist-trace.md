@@ -4,8 +4,6 @@ description: Learn about the user checklist telemetry in Business Central
 author: KennieNP
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 07/21/2022
 ms.author: kepontop

@@ -5,8 +5,6 @@ author: sorenfriisalexandersen
 
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms. search.keywords: deprecated, Belgium, local functionality
 ms.date: 04/01/2021
 ms.author: soalex

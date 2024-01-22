@@ -4,8 +4,6 @@ description: Learn how to deploy the Dynamics NAV Client connected to Business C
 ms.custom: na
 ms.date: 12/29/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.search.keywords: NAV Windows client

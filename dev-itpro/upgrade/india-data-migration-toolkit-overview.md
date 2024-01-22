@@ -4,9 +4,7 @@
     author: v-debapd
     ms.topic: overview
     ms.devlang: al
-    ms.tgt_pltfrm: na
-    ms.workload: na
-    ms.search.keywords: India, local, IN, English
+            ms.search.keywords: India, local, IN, English
     ms.search.form: 19010
     ms.date: 02/18/2022
     ms.author: jswymer

@@ -4,8 +4,6 @@ description: Overview of how to manage subscriptions to Dynamics 365 Business Ce
 author: SusanneWindfeldPedersen
 ms.topic: article
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 01/09/2024
 ms.author: solsen
 ---
