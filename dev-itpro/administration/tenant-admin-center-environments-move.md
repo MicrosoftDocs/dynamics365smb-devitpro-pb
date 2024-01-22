@@ -42,7 +42,7 @@ To confirm the transfer it has to be accepted on the destination tenant **within
 
 1. Ensure the destination tenant has at least one paid user license and sufficient environment and storage quota available to receive the new environments
 2. Authenicated as an internal administrator, navigate to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] in the source Entra tenant
-3. In the navigation pane of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments** > **Transfer Environments**
+3. In the navigation pane of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments** > **Environment Transfers**
 4. Select **Receive Environments**
 5. Specify the Entra tenant ID of the source tenant you're accepting an environment transfer from
 6. Select the environment(s) for which you want to accept a transfer and confirm. If a selected environment has a name that already exists in the destination tenant you will be prompted to enter a new name to avoid duplicate environment names. If you are prompted to rename multiple selected environments, you must enter unique names for each selected environment. 
