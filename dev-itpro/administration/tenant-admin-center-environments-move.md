@@ -25,7 +25,7 @@ An environment transfer is initiated by an internal administrator in the [!INCLU
 ## Create transfer on source tenant
 
 1. Authenicated as an internal administrator, navigate to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] in the source Entra tenant
-2. In the navigation pane of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments** > **Transfer Environments**
+2. In the navigation pane of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments** > **Environment Transfers**
 3. Select **Transfer Environments**
 4. Select the environments to be transferred, specify the Entra tenant ID of the destination tenant, optionally select a date and time at which the chosen environment(s) should transfer to the destination, and confirm
 
