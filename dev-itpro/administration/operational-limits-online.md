@@ -154,7 +154,7 @@ For more information on report limits, see [Report limits](../developer/devenv-r
 |Max connections|The maximum number of simultaneous SOAP requests, including processed and queued requests. When the limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|100|
 |Max message size|The maximum size in KB of a SOAP request. When this limit is exceeded, an HTTP response code `413 - Request Entity Too Large` is returned.|65,536|
 |Max request queue size|The maximum number of queued SOAP requests, waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|95|
-|Rate|The maximum number of SOAP requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|Sandbox: 300, Production: 600, see the future [per-user limit](#SOAPServicesUser).| 
+|Rate|The maximum number of SOAP requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|Sandbox: 300, Production: 600<br><br>. Also see [per-user limit](#SOAPServicesUser).| 
 |Operation timeout|The maximum amount of time in minutes allocated to a SOAP request. When this limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.|8|
 
 ## <a name="SOAPServicesUser"></a>SOAP request limits (per user)
