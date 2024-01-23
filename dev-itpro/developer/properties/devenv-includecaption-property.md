@@ -28,7 +28,8 @@ Sets whether to include the caption of a field in the data set of a report.
 
 ## Remarks  
 
-If `IncludeCaption` is set to **True** on a column in a dataitem, then a corresponding label called "{column name}Caption" is included in the dataset. The structure of where labels are available depends on the layout type (Excel, Word, or RDLC). For more information, see [Report labels](../devenv-report-object.md#report-labels).
+If `IncludeCaption` is set to **True** on a column in a dataitem, then a corresponding label called 
+*{column name}Caption* is included in the dataset. The structure of where labels are available depends on the layout type (Excel, Word, or RDLC). For more information, see [Report labels](../devenv-report-object.md#report-labels).
 
 If you want to use the Caption or CaptionML values of a field as a label on a report layout, then you must include the caption in the dataset. If you do not include the caption in the dataset, then in a multilanguage application, you cannot use the multilanguage captions as labels in the report.  
 
