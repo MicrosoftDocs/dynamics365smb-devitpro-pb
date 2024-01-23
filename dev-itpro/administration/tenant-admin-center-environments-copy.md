@@ -4,8 +4,6 @@ description: Learn how to create an environment that is a copy of a production o
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, copy
 ms.date: 11/29/2021
 ms.author: jswymer

@@ -4,8 +4,6 @@ description: "Learn about the internal components of modules in the System Appli
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: bholtorf
 ---

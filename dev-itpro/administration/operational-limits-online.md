@@ -123,7 +123,7 @@ For more information on report limits, see [Report limits](../developer/devenv-r
 |Max body size|The maximum request body size in MB.|350|
 |Max concurrent requests|The maximum number of OData V4 requests that can be processed at the same time. Requests that come in when this limit is exceeded will wait in a queue until a time slot becomes available. They wait in the queue until they time out after 8 minutes, where an HTTP response code `503 - Service Temporarily Unavailable` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|5, see the future [per-user limit](#ODataServicesUser).|
 |Max connections|The maximum number of simultaneous OData V4 requests, including processed and queued requests. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|100, see the future [per-user limit](#ODataServicesUser).|
-|Max page size|The maximum number of entities that can be returned for an OData V4 request.|20,000|
+|Max page size|The maximum number of entities that can be returned for an OData V4 request. When this limit is exceeded, an HTTP response code `413 - Request Entity Too Large` is returned.|20,000|
 |Max batch size|The maximum number of operations in an OData V4 $batch request.|100|
 |Max request queue size|The maximum number of queued OData V4 requests, waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|95, see the future [per-user limit](#ODataServicesUser).|
 |Rate|The maximum number of OData V4 requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|Sandbox: 300, Production: 600, see the future [per-user limit](#ODataServicesUser).| 
@@ -152,13 +152,19 @@ For more information on report limits, see [Report limits](../developer/devenv-r
 |-------|--------------------------------------------------------------------------------|-----|
 |Max concurrent requests|The maximum number of SOAP requests that can be processed at the same time. Requests that come in when this limit is exceeded will wait in a queue until a time slot becomes available. They wait in the queue until they time out after 8 minutes, where an HTTP response code `503 - Service Temporarily Unavailable` is returned.|5|
 |Max connections|The maximum number of simultaneous SOAP requests, including processed and queued requests. When the limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|100|
-|Max message size|The maximum size in KB of a SOAP request.|65,536|
+|Max message size|The maximum size in KB of a SOAP request. When this limit is exceeded, an HTTP response code `413 - Request Entity Too Large` is returned.|65,536|
 |Max request queue size|The maximum number of queued SOAP requests, waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|95|
-|Rate|The maximum number of SOAP requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|Sandbox: 300, Production: 600|
+|Rate|The maximum number of SOAP requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|Sandbox: 300, Production: 600<br><br>. See also [per-user limit](#SOAPServicesUser).| 
 |Operation timeout|The maximum amount of time in minutes allocated to a SOAP request. When this limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.|8|
 
+## <a name="SOAPServicesUser"></a>SOAP request limits (per user)
+
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
+|-------|--------------------------------------------------------------------------------|-----|
+|Rate|The maximum number of SOAP requests that can be submitted within a 5-minute sliding window. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. The more users you have in your environment, the more requests you can submit to the environment around the same time, as long as we can continuously scale our resources. If many requests are being submitted around the same time and we can't sufficiently scale our resources, you might experience throttling in submitting your requests.|6000. See also [frequently asked questions on per-user limits](#FAQsUser).|
+
 > [!TIP]  
-> Throttling could occur when many requests are submitted and handled (processed/queued) around the same time and they're taking a long time to complete. To optimize throughput, use API or OData instead of SOAP, as they execute faster. 
+> Throttling could occur when many requests are submitted and handled (processed/queued) around the same time and they're taking a long time to complete. To optimize throughput, use API or OData instead of SOAP, as they execute faster.  We'll also reduce the throughput for SOAP and [deprecate it](../upgrade/deprecated-features-platform.md#soap-endpoints-warning) in the future.
 
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|

@@ -4,8 +4,6 @@ description: Learn about how to support your Business Central users, both online
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 12/15/2023
 ms.author: jswymer
 ---

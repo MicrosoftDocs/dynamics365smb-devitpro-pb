@@ -4,8 +4,6 @@ description: Streamline your implementation process by using configuration packa
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.form: 1799, 1807, 8632, 1800, 1340, 8610, 8614, 8615, 8620, 8632
 ms.date: 04/07/2022
 ms.author: jswymer
