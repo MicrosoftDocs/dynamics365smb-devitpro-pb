@@ -3,9 +3,7 @@ title: Finnish features that are moved, removed, or replaced | Microsoft Docs
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for Finland that we have moved, removed, or replaced.
 author: bholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms. search.keywords: deprecated, Finland, local functionality
 ms.date: 10/08/2024
 ms.author: jswymer

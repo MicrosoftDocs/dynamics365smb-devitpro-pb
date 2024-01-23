@@ -1,11 +1,10 @@
 ---
 title: Setting up App Key Vaults for Business Central on-premises
 description: Describes how to set up App Key Vault with Business Central on-premises.
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---

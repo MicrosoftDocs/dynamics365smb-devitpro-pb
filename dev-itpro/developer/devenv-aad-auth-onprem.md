@@ -1,11 +1,10 @@
 ---
 title: "Use Microsoft Entra authentication for Business Central on-premises installations"
 description: Using Microsoft Entra ID as authentication on on-premises installations and containers for Business Central for debugging and other purposes
-ms.custom: na
+ms.custom: bap-template
 ms.date: 01/03/2024
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

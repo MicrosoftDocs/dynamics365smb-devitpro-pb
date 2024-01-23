@@ -4,7 +4,7 @@ description: Learn how to use security certificates to help secure connections w
 ms.custom: bap-template
 ms.date: 04/11/2023
 ms.reviewer: na
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ms.topic: how-to
 author: jswymer
 ms.author: jswymer

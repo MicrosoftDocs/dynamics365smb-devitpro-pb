@@ -1,11 +1,10 @@
 ---
 title: "Manage Application and Tenant Databases in a Multitenant Deployment"
 description: Learn about the tasks for managing application and tenant databases for a multitenant deployment
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 ---
 # Multitenant Deployment Setup Guide

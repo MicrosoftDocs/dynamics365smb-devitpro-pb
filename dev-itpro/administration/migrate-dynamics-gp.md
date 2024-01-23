@@ -4,9 +4,7 @@ description: Learn how to migrate to the cloud from Dynamics GP using an assiste
 author: jenolson
 
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.reviewer: jswymer
 ms. search.keywords: cloud, edge, gp, migration
 ms.search.form: 4003

@@ -3,8 +3,6 @@ title: "SourceTableView Property (Pages)"
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 3b99a282-bc11-471c-928c-3b305d94a900
 caps.latest.revision: 8

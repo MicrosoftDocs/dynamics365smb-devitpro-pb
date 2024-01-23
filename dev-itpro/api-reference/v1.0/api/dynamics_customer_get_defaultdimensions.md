@@ -4,9 +4,7 @@ description: (v1.0) Gets a customer default dimensions in Dynamics 365 Business 
 author: SusanneWindfeldPedersen
 
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2019
 ms.author: solsen
 ---

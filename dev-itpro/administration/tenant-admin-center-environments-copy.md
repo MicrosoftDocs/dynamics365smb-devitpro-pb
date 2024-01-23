@@ -3,9 +3,7 @@ title: Copy an environment
 description: Learn how to create an environment that is a copy of a production or sandbox environment.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, copy
 ms.date: 11/29/2021
 ms.author: jswymer
