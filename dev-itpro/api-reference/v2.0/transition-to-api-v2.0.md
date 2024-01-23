@@ -4,7 +4,7 @@ description: "Reference content for transitioning Dynamics 365 Business Central 
 author: OnatBuyukakkus
 ms.topic: get-started
 ms.devlang: al
-ms.date: 20/01/2024
+ms.date: 01/20/2024
 ms.author: onbuyuka
 ---
 
