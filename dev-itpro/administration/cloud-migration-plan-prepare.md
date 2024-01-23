@@ -76,7 +76,7 @@ It's important to have a solid migration strategy in place to ensure a smooth tr
    > [!NOTE]
    > Rather than overwriting the backup, the old backup database can also be deleted. If creating a new backup rather than overwriting an existing backup, ensure the new backup database has the same name as the previous one. If the database name changes, run the Cloud Migration setup in the cloud environment again to point to the new database; the tooling will still attempt to use Change Tracking data if available to avoid replicating all data in the source database.
 6. Repeat steps 2-5 as needed until you reach a state that is suitable for the final migration run.
-7. Stop the usage of the on-premises environment ahead of the final backup of the on-premises production database. Run one final replication from the backup database to replicate the last data before running dta upgrade
+7. Stop the usage of the on-premises environment ahead of the final backup of the on-premises production database. Run one final replication from the backup database to replicate the last data before running data upgrade.
 
    [!INCLUDE [bc-cloud-migrate-replicate-all-before-upgrade.md](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
 8. Run [Data Upgrade](migration-data-upgrade.md) on the cloud environment.
