@@ -1304,6 +1304,7 @@
 #### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
+#### [Transitioning from API v1.0 to API v2.0](api-reference/v2.0/transition-to-api-v2.0.md)
 
 #### Finance reports API
 <!-- START>DO_NOT_EDIT -->

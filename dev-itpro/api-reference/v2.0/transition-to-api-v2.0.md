@@ -1,5 +1,5 @@
 ---
-title: "Transition from API v1.0 to API v2.0"
+title: "Transitioning from API v1.0 to API v2.0"
 description: "Reference content for transitioning Dynamics 365 Business Central v1.0 API to v2.0."
 author: OnatBuyukakkus
 ms.topic: get-started
@@ -8,7 +8,7 @@ ms.date: 20/01/2024
 ms.author: onbuyuka
 ---
 
-# Transition from API v1.0 to API v2.0
+# Transitioning from API v1.0 to API v2.0
 
 Dynamics 365 Business Central API v2.0 includes some major changes from v1.0 for the better. 
 
@@ -166,8 +166,8 @@ This change allows integration utilizing Dynamics 365 Business Central API v2.0 
 
 ## See also
 
-[API (v2.0) Documentation](index.md)
-[API (v1.0) Documentation](../v1.0/index.md)
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
-[Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md)  
-[Developing a Custom API](../../developer/devenv-develop-custom-api.md)
+[API (v2.0) Documentation](index.md)  
+[API (v1.0) Documentation](../v1.0/index.md)  
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)     
+[Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md)   
+[Developing a Custom API](../../developer/devenv-develop-custom-api.md)  
