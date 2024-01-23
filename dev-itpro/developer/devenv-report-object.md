@@ -79,9 +79,11 @@ In the following, you can read about properties of the different layout types.
 
 ## Report labels
 
-Report labels are used by report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. 
+Report labels are used by report layouts as, for example, the heading for a field in a table, the title for a chart, or the title for the report itself. 
 
-Report labels are defined inside the `labels` control of a report object, as shown in the following code sample.
+For texts that are present as captions on table fields in dataset columns, use the [IncludeCaption](properties/devenv-includecaption-property.md) property to have them included in the dataset. For more information, see [IncludeCaption property](properties/devenv-includecaption-property.md). 
+
+You define report labels for static texts that are not present as captions in dataset columns inside the `labels` control of a report object, as shown in the following code sample.
 
 ```AL
 labels
@@ -91,8 +93,7 @@ labels
 } 
 ```
 
-
-If possible, you should use report labels for static texts instead of adding labels to report dataitems. This way, you can reduce the size of the dataset and hence speed up the performance of rendering the report. All of the different layout types (Excel, Word, or RDL) support using label data. For more information, see
+All of the different layout types (Excel, Word, or RDL) support using label data. For more information, see
 - [Report labels in Excel layouts](./devenv-howto-excel-report-layout.md#report-labels-in-excel-layouts).
 - [Report labels in Word layouts](./devenv-howto-report-layout.md#report-labels-in-word-layouts).
 - [Report labels in RDL layouts](./devenv-howto-rdl-report-layout.md#report-labels-in-rdl-layouts).
@@ -346,10 +347,11 @@ For more information on how to configure report limits in [!INCLUDE[prod_short](
 
 [Report Extension Object](devenv-report-ext-object.md)  
 [Using request pages with reports](devenv-request-pages-for-reports.md)  
-[Report datatype](methods-auto/report/report-data-type.md)  
+[Report datatype (AL reference)](methods-auto/report/report-data-type.md)  
 [Report Properties](properties/devenv-report-properties.md)  
 [How users can schedule a report](/dynamics365/business-central/ui-work-report#ScheduleReport.md)  
 [AllowScheduling Property](../developer/properties/devenv-allowscheduling-property.md)   
+[IncludeCaption property](properties/devenv-includecaption-property.md)   
 [Defining a Report Dataset](devenv-report-dataset.md)  
 [Request Pages](devenv-request-pages.md)  
 [Adding Help Links from Reports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
