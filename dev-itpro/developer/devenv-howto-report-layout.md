@@ -109,7 +109,9 @@ For more information, see [Using hyperlinks in Word layouts](devenv-hyperlinks-i
 If you need your report to change style for different types of content, consider using different *Sections* in your Word layout. Within each section, you can have different formatting, such as page or table layouts, and headers/footers.
 
 > [!NOTE]  
-> Use of section breaks in Word layouts are currently only supported for reports that do not use the **WordMergeDataItem** property.
+> Use of section breaks in Word layouts are currently only supported for reports that do not use the **WordMergeDataItem** property. If section breaks are present in a layout used in such a report, then the user will see this error message:
+>
+> `You cannot run the report because the {0} layout contains section breaks that conflict with the sections in the report. Remove the section breaks from the report layout, and then run the report.`
 
 
 Sections are created using section breaks. To start a new section, select where you want it to begin. Then go to **Layout** > **Breaks**. For more information, see [Insert a section break](https://support.microsoft.com/en-us/office/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c) (use <kbd>Ctrl</kbd>+click to open in a new tab).
