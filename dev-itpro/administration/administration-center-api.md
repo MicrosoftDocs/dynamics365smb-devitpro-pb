@@ -3,9 +3,7 @@ title: Business Central Administration Center API
 description: Get introduced to the Business Central administration center API.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 04/24/2023

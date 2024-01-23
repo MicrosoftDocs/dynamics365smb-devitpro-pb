@@ -4,9 +4,7 @@ description: Use the Business Central administration center to manage environmen
 author: jswymer
 
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
 ms.date: 05/31/2022
 ms.author: jswymer

@@ -4,8 +4,6 @@ description: Arrange fields in rows and columns in a gird-like format using the 
 ms.custom: na
 ms.date: 01/15/2024
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

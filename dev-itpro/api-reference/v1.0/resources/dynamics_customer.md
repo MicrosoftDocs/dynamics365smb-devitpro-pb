@@ -4,9 +4,7 @@ description: (v1.0) Represents a customer in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2019
 ms.author: solsen
 ---

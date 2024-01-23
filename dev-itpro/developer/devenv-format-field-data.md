@@ -4,8 +4,6 @@ description: "Learn how to format data in a field, either on the table level or 
 ms.custom: na
 ms.date: 12/01/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -154,7 +152,7 @@ The precision determines the minimum and maximum number of decimal points for va
 
 ##  <a name="StandardFormats"></a> Standard formats
 
-The following table describes the standard formats that are available for the **AutoFormatExpr** property when the **AutoFormatType** property is set to 10.  
+The following table describes the standard formats that are available for the **AutoFormatExpression** property when the **AutoFormatType** property is set to 10.  
   
 |**Standard Format**|**Format Description**|**Europe Decimal Example**|**US Decimal Example**|  
 |-------------------------|----------------------------|--------------------------------|----------------------------|  

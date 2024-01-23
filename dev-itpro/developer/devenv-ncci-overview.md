@@ -4,8 +4,6 @@ description: Provides an introduction to nonclustered columnstore indexes in Bus
 ms.custom: na
 ms.date: 01/28/2022
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
