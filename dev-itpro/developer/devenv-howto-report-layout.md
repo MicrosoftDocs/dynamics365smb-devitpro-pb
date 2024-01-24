@@ -21,7 +21,7 @@ Later in this article you can read more how to enable multiple report layouts. F
 If you want to create a new Word layout from VSCode, do the following 
 
 1. Open the report object in VSCode.
-1. Navigate to the rendering section (or create one).
+1. Navigate to the *rendering* section (or create one).
 1. Add a new layout entry of type Word and set the *LayoutFile* property to a value that is a valid name for a Word file, such as 'MyWordReport.docx'.
 1. Now build the extension (Ctrl+Shift+B) to generate the Word file where the Custom XML part has been added.
 
@@ -109,9 +109,9 @@ If you want to add a table to the report layout where data in each row comes fro
 
 1. Create a table with two rows and a column for each field that you want displayed.
 
-2. In the first row, add text for the headers, either as static text or from labels. This row will be the header in the table.
+2. In the first row, add text for the headers, either as static text or from the `Labels` part of the XML Mapping pane. This row will be the header for the table.
 
-3. The second row will act as a placeholder for the repeating fields. Select the entire row.  
+3. The second row will act as a placeholder for the repeating rows with data fields. Select the entire row.  
   
 4. In the **XML Mapping** pane, right-click the control that corresponds to the report data item that contains the fields that you want repeated, choose **Insert Content Control**, and then choose **Repeating**.  
   
@@ -119,7 +119,7 @@ If you want to add a table to the report layout where data in each row comes fro
  
     a. Place your pointer in a cell.  
   
-    b. In the **XML Mapping** pane, right-click the control that you want to add, choose **Insert Content Control**, and then choose **Plain Text**.  
+    b. In the **XML Mapping** pane, right-click the field that you want to add, choose **Insert Content Control**, and then choose **Plain Text**.  
   
     c. For each field, repeat steps a and b.  
 
@@ -130,7 +130,7 @@ For more information, see [Supporting repeating content](https://learn.microsoft
 > [!TIP]  
 > When you work with a very long table, it will run across multiple pages. It is possible to set up the table so that the table header row appear on each page automatically. To achieve this, do as follows: 
 > 1. Select the header row or rows that you want to repeat on each page. The selection must include the first row of the table.
-> 2. Under Table Tools, on the Layout tab, in the Data group, click Repeat Header Rows.
+> 2. Under *Table Tools*, on the *Layout* tab, in the *Data* group, click *Repeat Header Rows*.
 > 
 > For more information, see [Repeat table header on subsequent pages](https://support.microsoft.com/en-us/office/repeat-table-header-on-subsequent-pages-2ff677e0-3150-464a-a283-fa52794b4b41)
 
@@ -143,11 +143,11 @@ If you want to add a bulleted or numbered list to the report layout where data i
   
 2. In the **XML Mapping** pane, right-click the control that corresponds to the report data item that contains the fields that you want repeated, choose **Insert Content Control**, and then choose **Repeating**.  
 
-3. Inside the content control of the repeater, start the bulleted or numbered list (from Home > Paragraph). This will add a single entry in the list.
+3. Inside the content control of the repeater, start the bulleted or numbered list (from *Home* > *Paragraph*). This will add a single entry in the list.
 
 4. Now add the repeating fields to the list entry as follows:  
  
-    a. Place your pointer in a cell.  
+    a. Place your pointer on the list line.  
   
     b. In the **XML Mapping** pane, right-click the control that you want to add, choose **Insert Content Control**, and then choose **Plain Text**.  
   
@@ -166,9 +166,9 @@ Word supports placing tables within table cells or having multi-level lists. And
 
 Word does not have a programming model such as RDL and hence it is not possible to do sub totals / running totals in the Word layout itself. 
 
-Instead, you can do the work in the dataset by having a dataitem that calculates subtotals per partition and then a nested dataitem with partitioned data. 
+Instead, you can do the work in the dataset by defining a dataitem that calculates subtotals per partition and then a nested dataitem with the partitioned data. 
 
-In the layout, you then add a table that repeat over the top level dataitem and have a nested 
+In the layout, you then add a table that repeat over the top level dataitem and use a nested 
 repeater on the partitioned dataitem.
 
 
@@ -180,20 +180,20 @@ But there are ways to work around this limitation by calculating the conditions 
 
 In the Word layout, you then utilize the fact that Word will not render XML elements without a value.
 
-#### How to hide/show values based on a condition 
+**How to hide/show values based on a condition**
 
 If you want to hide/show a single *value* based on a condition, then make sure that the column in 
 the dataset is set to empty or to a value based on the condition.
 
 In the Word layout, you now just use the the column as-is.
 
-#### How to control text properties based on a condition 
+**How to control text properties based on a condition** 
 
 If you want to show a text and want to control text properties such as color, font, style, or size based on a condition, then add the column twice in the dataset, and set values to empty or to the value based on the condition. Make sure that one of them is empty.
 
 In the Word layout, you now place both columns next to each other, and then set the text properties on each to what you need.
 
-#### How to mimic the BlankZero or BlankNumbers properties 
+**How to mimic the BlankZero or BlankNumbers properties**
 
 If you want to mimic the BlankZero or BlankNumbers properties that exists on table and page fields, 
 then set values to empty or to the value based on the condition (zero or the value you would have used for BlankNumbers) in the dataset. 
@@ -201,11 +201,9 @@ then set values to empty or to the value based on the condition (zero or the val
 In the Word layout, you now just use the the column as-is.
 
 
-#### How to hide a part of the document 
+**How to hide a part of the document based on a condition** 
 
-If you want to hide a part of the document (such as a table or a list) based on a condition, 
-
-then create a dummy dataitem (with an Integer datasource) with a column set to empty or to a value based on the condition. The place the dummy dataitem on top of the dataitem that your table/list repeats over.
+If you want to hide a part of the document (such as a table or a list) based on a condition, then create a dummy dataitem (with an Integer datasource) with a column set to empty or to a value based on the condition. The place the dummy dataitem on top of the dataitem that your table/list repeats over.
 
 In the Word layout, you now use nested repeaters, where the outer repeater is on the dummy dataitem.
 
