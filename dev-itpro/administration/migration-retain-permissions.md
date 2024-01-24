@@ -10,9 +10,11 @@ ms.custom: bap-template
 ---
 # Retain user permissions during and after cloud migration
 
-By default, when you set up cloud migration, the migration engine removes all permission sets assigned to existing online users, except users with the SUPER permission set, and then assigns users the Intelligent Cloud permission set. This change is done to prevent users, other than SUPER users, from making any data modifications.
+By default, once you set up cloud migration, the migration engine removes all permission sets assigned to existing online users, except users with the SUPER permission set, and reassigns users the Intelligent Cloud permission set. This change is done to prevent users, other than SUPER users, from making any data modifications.
 
-If this behavior isn't wanted, you have the following options to keep permissions:
+However, you might want some users to keep their original permissions, for various reasons. For example, you want them to continue working on your data while it's being replicated, or you want to use service-to-servic apps that require specific permissions.
+
+If you want users to keep their permissions during cloud migration, you have the following options:
 
 ## Option 1: Use the Cloud Migration Management page in the client
 
