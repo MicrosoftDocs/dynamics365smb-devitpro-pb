@@ -15,7 +15,18 @@ When you create a new report, there are two main tasks. First, you define the re
 
 Later in this article you can read more how to enable multiple report layouts. For more information, see [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
 
-## How to layout your report with Word layouts
+
+## How to create a new Word layout from Visual Studio Code
+
+If you want to create a new Word layout from Visual Studio Code, do the following 
+
+1. Open the report object in Visual Studio Code.
+1. Navigate to the *rendering* section (or create one).
+1. Add a new layout entry of type Word and set the *LayoutFile* property to a value that is a valid name for a Word file, such as 'MyWordReport.docx'.
+1. Now build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) to generate the Word file that includes the Custom XML part.
+
+
+## How to lay out your report with Word layouts
 
 With Word layouts, you use Word as the editor for the report. Microsoft Word offers various features to help you format and layout your document reports. You can customize the margins, page orientation, and line spacing to suit your needs. You can define advanced header/footers, utilize sections to change the layout style in different places of the report layout, and utilize fonts to get just the typography that matches your organization. 
 
@@ -26,6 +37,11 @@ With the following sections, you can learn more about various concepts that you 
 - [Headers and footers](#headers-and-footers-in-word-layouts)  
 - [Using tables to control alignment of text and images](#using-tables-to-control-alignment-of-text-and-images)
 - [Working with pictures](#working-with-pictures-in-word-layouts)
+- [Using tables to display data from the report dataset (simple repeaters)](#using-tables-to-display-data-from-the-report-dataset-simple-repeaters)
+- [Using lists to display data from the report dataset (simple repeaters)](#using-lists-to-display-data-from-the-report-dataset-simple-repeaters)
+- [Using nested repeaters to display data from nested dataitems in the report dataset](#using-nested-repeaters-to-display-data-from-nested-dataitems-in-the-report-dataset)
+- [Sub totals / running totals](#sub-totals--running-totals)
+- [Conditional formatting](#conditional-formatting)
 - [Using the same table style for all tables in the layout](#using-the-same-table-style-for-all-tables-in-the-layout)
 - [Using hyperlinks](#using-hyperlinks-in-word-layouts)  
 - [Using sections](#using-sections-in-a-word-layout)  
@@ -34,7 +50,7 @@ With the following sections, you can learn more about various concepts that you 
 - [Using fonts](#using-fonts-in-word-layouts)  
 - [Using Office document themes](#using-office-document-themes-in-word-layouts)  
 
-For more information about how to use Word to layout documents, see [Word for Windows training](https://support.microsoft.com/en-us/office/word-for-windows-training-7bcd85e6-2c3d-4c3c-a2a5-5ed8847eae73)
+For more information about how to use Word to lay out documents, see [Word for Windows training](https://support.microsoft.com/en-us/office/word-for-windows-training-7bcd85e6-2c3d-4c3c-a2a5-5ed8847eae73)
 
 
 ### Headers and footers in Word layouts
@@ -55,6 +71,7 @@ Using tables, you can design layouts with lines that have text aligned to both t
 > [!TIP]  
 > Show the table gridlines so that you see the boundaries of table cells. Remember to hide the gridlines when you're done editing. To show or hide table gridlines, select the table, and then under **Layout** on the **Table** tab, choose **View Gridlines**.
 
+
 ### Working with pictures in Word Layouts
 
 There are at least two things you should consider when adding pictures to your Word layout:
@@ -63,7 +80,7 @@ There are at least two things you should consider when adding pictures to your W
 
 #### Control how pictures fit into the layouts
 
-Before inserting a picture, either as a static file in the layout or from the report dataset, you need to ensure that it doesn't take up space according to its size, but that it's adjusted to the size that you want in your layout. The best way to do this is to encapsulate the picture in a cell in a table, maybe in a 1x1 table introduced only for this purpose. When changing the size of a table cell for a picture, by default it still adjusts to fit the picture. Therefore, you must also disable the cells ability to change its size dynamically. 
+When inserting a picture, you need to ensure that it doesn't take up space according to its size, but that it's adjusted to the size that you want in your layout. The best way to do this is to encapsulate the picture in a cell in a table, maybe in a 1x1 table introduced only for this purpose. When you change the size of a table cell for a picture, by default it still adjusts to fit the picture. Therefore, you must also disable the cells ability to change its size dynamically. 
 
 To control the picture size using a table, do as follows:
 
@@ -71,34 +88,131 @@ To control the picture size using a table, do as follows:
 2. Under *Layout*, Set *Height* and *Width* in the Cell size menu.
 3. In the *Table* menu, click *Properties*. On the *Table* tab, click *Positioning* and then uncheck the *Automatically resize to fit contents* option.
 
+Controlling how pictures fit into the layouts is important both for static files in the layout and for pictures inserted from the report dataset.
+
 #### Reducing file size by compressing pictures
 
-When adding pictures directly to your layout file, such as background images or logos, consider reducing the file size by compressing picture sizes. With compression options in Word, you can reduce both the file size and picture dimensions based on how you intend to use the picture, such as the quality needed for print or viewing the document report on screen or attach to an email. You can compress all pictures in the file or just the ones that you select. 
+When adding pictures directly to your layout file, such as background images or logos, consider reducing the file size by compressing picture sizes. With compression options in Word, you can reduce both the file size and picture dimensions based on how you intend to use the picture. For instance, maybe the quality needed for print is different from what is needed when just viewing the document report on screen or attach to an email. You can compress all pictures in the file or just the ones that you select. 
 
 To compress pictures that are part of the layout file, do as follows:
 
-1. When your pictures have been inserted into Word, select the picture or pictures that you want to compress.
+1. When you have inserted your pictures into Word, select the picture or pictures that you want to compress.
 2. Under *Picture Tools*, on the *Format* tab, in the *Adjust* group, select *Compress picture*. Then choose what and how you want to compress and select OK.
 
 For more information, see [Reduce the file size of a picture in Microsoft Office](https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)
 
-For pictures that are part of the report dataset, you need to adjust the size in Business Central.
+For pictures that are part of the report dataset, you need to adjust the size in Business Central. You can use the codeunit 5080 "Image Handler Management" to scale images in AL. 
 
+
+
+### Using tables to display data from the report dataset (simple repeaters)
+
+If you want to add a table to the report layout where data in each row comes from a dataitem from the report dataset, do as follows
+
+1. Create a table with two rows and a column for each field that you want displayed.
+
+2. In the first row, add text for the headers, either as static text or from the `Labels` part of the XML Mapping pane. This row is the header for the table.
+
+3. The second row is the placeholder for the repeating rows with data fields. Select the entire row.  
+  
+4. In the **XML Mapping** pane, right-click the control that corresponds to the report data item that contains the fields that you want repeated, choose **Insert Content Control**, and then choose **Repeating**.  
+  
+5. Add the repeating fields to the row as follows:  
+ 
+    a. Place your pointer in a cell.  
+  
+    b. In the **XML Mapping** pane, right-click the field that you want to add, choose **Insert Content Control**, and then choose **Plain Text**.  
+  
+    c. For each field, repeat steps a and b.  
+
+
+For more information, see [Supporting repeating content](/office/client-developer/word/content-controls-in-word#supporting-repeating-content).
+
+
+> [!TIP]  
+> When you work with a very long table, it'll run across multiple pages. It's possible to set up the table so that the table header row appears on each page automatically. To achieve this, do as follows:
+
+> 1. Select the header row or rows that you want to repeat on each page. The selection must include the first row of the table.
+> 2. Under *Table Tools*, on the *Layout* tab, in the *Data* group, choose *Repeat Header Rows*.
+> 
+> For more information, see [Repeat table header on subsequent pages](https://support.microsoft.com/en-us/office/repeat-table-header-on-subsequent-pages-2ff677e0-3150-464a-a283-fa52794b4b41).
+
+
+### Using lists to display data from the report dataset (simple repeaters)
+
+If you want to add a bulleted or numbered list to the report layout where data in each row comes from a dataitem from the report dataset, do as follows
+
+1. Place the cursor on the place where you want the list to be displayed.
+  
+2. In the **XML Mapping** pane, right-click the control that corresponds to the report data item that contains the fields that you want repeated, choose **Insert Content Control**, and then choose **Repeating**.  
+
+3. Inside the content control of the repeater, start the bulleted or numbered list (from *Home* > *Paragraph*). This adds a single entry in the list.
+
+4. Now add the repeating fields to the list entry as follows:  
+ 
+    a. Place your pointer on the list line.  
+  
+    b. In the **XML Mapping** pane, right-click the control that you want to add, choose **Insert Content Control**, and then choose **Plain Text**.  
+  
+    c. For each field, repeat steps a and b.  
+
+
+For more information, see [Supporting repeating content](/office/client-developer/word/content-controls-in-word#supporting-repeating-content).
+
+
+### Using nested repeaters to display data from nested dataitems in the report dataset
+
+Word supports placing tables within table cells or having multi-level lists. And you can also add a repeater within a repeater. This means that you can have as many levels as needed in your layout, as long as they fit on the page. 
+
+
+### Sub totals / running totals
+
+Word doesn't have a programming model such as RDL and hence it isn't possible to do sub totals/running totals in the Word layout itself. 
+
+Instead, you can do the work in the dataset by defining a dataitem that calculates subtotals per partition and then a nested dataitem with the partitioned data. In the layout, you then add a table that repeat over the top level dataitem and use a nested repeater on the partitioned dataitem.
+
+### Conditional formatting
+
+Word doesn't have a programming model such as RDL and hence it isn't possible to do conditional formatting directly in the Word layout itself. 
+
+But there are ways to work around this limitation by calculating the conditions in AL and add them to the dataset. In the Word layout, you then utilize the fact that Word don't render XML elements without a value. in the following, you can learn more about different ways to do conditional formatting.
+
+
+#### How to hide/show values based on a condition
+
+If you want to hide/show a single *value* based on a condition, then make sure that the column in the dataset is set to empty or to a value based on the condition. 
+
+In the Word layout, you now just use the column as-is.
+
+#### How to control text properties based on a condition
+
+If you want to show a text and want to control text properties such as color, font, style, or size based on a condition, then add the column twice in the dataset, and set values to empty or to the value based on the condition. Make sure that one of them is empty. 
+
+In the Word layout, you now place both columns next to each other, and then set the text properties on each to what you need.
+
+#### How to mimic the BlankZero or BlankNumbers properties
+
+If you want to mimic the BlankZero or BlankNumbers properties that exist on table and page fields, then set values to empty or to the value based on the condition (zero or the value you would have used for BlankNumbers) in the dataset. 
+ 
+In the Word layout, you now just use the column as-is.
+
+#### How to hide a part of the document based on a condition
+
+If you want to hide a part of the document, such as a table or a list, based on a condition, then create a dummy dataitem with an Integer datasource, which contains a column set to empty or to a value based on the condition. Then place the dummy dataitem on top of the dataitem that your table/list repeats over.
+
+In the Word layout, you now use nested repeaters, where the outer repeater is on the dummy dataitem.
 
 ### Using the same table style for all tables in the layout
 
-If your document layout contains multiple tables, consider using table styles to 
-ensure that the formatting of your tables is consistent. In case you need to later on apply changes to table layouts, 
-this will also save you time as such a change only needs to be done once. 
+If your document layout contains multiple tables, consider using table styles to ensure that the formatting of your tables is consistent. In case you need to later on apply changes to table layouts, this will also save you time as such a change only needs to be done once. 
 
 To set a default table style, do as follows:
 
 1. Mark the table.
-2. Navigate to the *Table Design* menu.
+2. Navigate to the **Table Design** menu.
 3. For the table style you want to use as default, right-click it. 
-4. In the Menu that appears, select *Set as Default*. A dialog box appears.
-5. Select *This document only*. Select OK.
-
+4. In the menu that appears, select **Set as Default**. A dialog box appears.
+5. Select **This document only**, and then choose **OK**.
 
 ### Using hyperlinks in Word layouts
 
@@ -139,7 +253,7 @@ For more information, see [Watermarks in Word](https://support.microsoft.com/en-
 
 #### Using different watermarks in sections
 
-The internal data model in Word only allows one watermark for the entire document. If you try to insert a second watermark, whether in a first page, other pages, or sections, Word will delete or replace the previous watermark. 
+The internal data model in Word only allows one watermark for the entire document. If you try to insert a second watermark, whether in a first page, other pages, or sections, Word deletes or replaces the previous watermark. 
 
 In case you want to apply different watermarks to different sections, this work-around might work:
 
@@ -153,7 +267,7 @@ In case you want to apply different watermarks to different sections, this work-
 
 [!INCLUDE[using_fonts](../includes/include-excel-word-layouts-fonts.md)]
 
-Fonts don't have to be installed on your machine when working with the layout, you can just mark content and type in the name of the font you want to use. When the report is generated on the server, if the font is installed on the server, then it's used in the rendered report document. If the font isn't available on the server or embedded in the layout, then the report still renders, but the font defined in the *Normal* style is used.
+Fonts don't have to be installed on your machine when working with the layout. You can just mark content and type in the name of the font you want to use. When the report is generated on the server, if the font is installed on the server, then it's used in the rendered report document. If the font isn't available on the server or embedded in the layout, then the report still renders, but the font defined in the *Normal* style is used.
 
 In case your favorite (true-type) font isn't installed on the [!INCLUDE[prod_short](includes/prod_short.md)] server, then you can embed it in the layout. For more information, see [Embedding custom fonts](https://support.microsoft.com/en-us/office/benefits-of-embedding-custom-fonts-cb3982aa-ea76-4323-b008-86670f222dbc).
 
@@ -166,7 +280,7 @@ In case your favorite (true-type) font isn't installed on the [!INCLUDE[prod_sho
 
 To apply a theme to your Word layout, use the standard styles for text and headers. Then the colors and fonts follow the chosen theme.
 
-For tables, for the table header be respect theme changes, you need to do the following:
+For tables, for the table header be respect theme changes, you need to do this:
 
 1. Mark the header row.
 2. In the *Table Design* menu, expand the *Shading* menu in *Table Styles*.
@@ -385,6 +499,28 @@ For more information on report limits, see [Report limits](devenv-report-object.
 If you're switching from developing reports with RDL layouts to using Word layouts, you might need to change your mindset on how you develop reports and their layouts. RDL allows you to dynamically change many properties in the layout. This isn't possible in Word. For many logic-related conditions, instead you have to do them in the report dataset in AL and then utilize the methods outlined in this article. 
 
 For reports where you expect customers to adjust the layout or use themes to change the overall look-and-feel of the document, consider using a Word layout over an RDL layout. 
+
+
+## How to convert an RDL layout to a Word layout
+
+There's no way to directly convert an RDL layout to a Word layout, but if you want to create a new Word layout based on an RDL layout, then do as follows:
+
+1. Create a new Word layout from Visual Studio Code. This gives you an empty Word document where the Custom XML part has been added.
+1. Get a version of the report RDL layout rendered as a Word document
+    1. From the **Report layouts page**, find the RDL layout you want to base the new Word layout on.
+    1. From the top pane menu, select the **Run Report** action. This opens the request page for the report.
+    1. In the bottom of the request page, select the **Send to...** button. This opens a **Choose file type...** modal dialog.
+    1. Select **Microsoft Word Document** and then choose the **OK** button. This downloads the report rendered as a Word document (where the dataset has been merged with the layout and where the Custom XML part isn't present.). 
+1. Mark all content that you want to base the new layout on from the rendered Word document and copy it to the empty Word layout that you created in step 1.
+1. Now it's time to adjust the Word document to make it a real layout:
+    1. For each table, keep the header and remove all but one row with values. For the latter row, add a repeater from the **XML Mapping** pane. For the header row, add labels/captions from the **XML Mapping** pane.
+    1. For each text not in a table, replace the text with the corresponding content control from the **XML Mapping** pane.
+    1. For each image not in the dataset, encapsulate it with a table to control overflow. Consider resizing it.
+    1. For each image in the dataset, replace the text with the corresponding content control from the **XML Mapping** pane.
+1. You can test the layout either by launching a new session from Visual Studio Code or directly from the **Report layouts page**:
+    1. For the initial test of the new layout, from the **Report layouts page**, find the report you want to add the new Word layout to. From the top pane menu, select the **New** action to upload the layout for the first time.
+    1. For subsequent tests of the new layout, from the **Report layouts page**, find the report you want to add the new Word layout to. From the top pane menu, select the **Replace layout** action to replace the layout with the latest version.
+
 
 ## See also
 
