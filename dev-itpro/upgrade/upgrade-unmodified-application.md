@@ -4,8 +4,6 @@ description: The article explains how to upgrade an application that has no cust
 ms.custom: na
 ms.date: 01/02/2024
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

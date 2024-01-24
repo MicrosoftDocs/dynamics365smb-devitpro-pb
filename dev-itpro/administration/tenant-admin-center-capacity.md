@@ -3,9 +3,7 @@ title: Managing Capacity
 description: Use the Business Central administration center to manage the storage capacity for a tenant. 
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, storage, capacity, quota, limit, database size
 ms.date: 03/08/2022
 ms.author: jswymer

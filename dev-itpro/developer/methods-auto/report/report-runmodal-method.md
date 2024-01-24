@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 12/08/2023
 ms.reviewer: jswymer
 
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

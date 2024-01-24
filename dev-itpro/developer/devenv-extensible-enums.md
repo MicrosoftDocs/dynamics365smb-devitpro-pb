@@ -5,7 +5,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 02/24/2023
 ms.reviewer: na
-ms.suite: na
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started

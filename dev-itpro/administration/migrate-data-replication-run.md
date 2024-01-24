@@ -7,7 +7,6 @@ ms.reviewer: jswymer
 ms.topic: how-to 
 ms.date: 07/23/2023
 ms.custom: bap-template 
-ms-service: dynamics365-business-central
 ---
 
 # Run and manage data replication
