@@ -1,6 +1,6 @@
 ---
-title: "Supported Cipher Suites"
-description: "Lists the cipher suites that are supported for external APIs called from Business Central"
+title: Supported cipher suites
+description: Lists the cipher suites that are supported for external APIs called from Business Central.
 ms.custom: na
 ms.date: 05/19/2021
 ms.topic: conceptual
@@ -8,7 +8,7 @@ author: jswymer
 ms.author: jswymer
 ---
 
-# Supported Cipher Suites in outgoing calls
+# Supported cipher suites in outgoing calls
 
 This article lists the cipher suites that are supported on external APIs that are called from [!INCLUDE[prod_short](includes/prod_short.md)] online.
 

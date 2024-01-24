@@ -1005,7 +1005,7 @@
 
 ### Calling external services
 #### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
-#### [Supported Cipher Suites in HTTPS](developer/devenv-supported-cipher-suites.md)  
+#### [Supported cipher suites in HTTPS](developer/devenv-supported-cipher-suites.md)  
 #### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
@@ -1295,7 +1295,7 @@
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-service authentication](administration/automation-apis-using-s2s-authentication.md)
 #### [How to restrict network access from/to Business Central](security/security-service-tags.md)
-#### [Supported Cipher Suites in outgoing calls](developer/devenv-supported-cipher-suites.md)
+#### [Supported cipher suites in outgoing calls](developer/devenv-supported-cipher-suites.md)
 #### [Walkthrough: Creating a console application that uses OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
 #### [Securing remote connections using certificates (on-premises)](deployment/implement-security-certificates-production-environment.md)
 

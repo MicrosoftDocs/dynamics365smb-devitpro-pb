@@ -142,7 +142,7 @@ It's possible to include a certificate when calling an external service.
 For more information about certificates, see
 
 - [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-method.md) 
-- [Supported Cipher Suites in HTTPS](devenv-supported-cipher-suites.md).
+- [Supported cipher suites in HTTPS](devenv-supported-cipher-suites.md).
 
 ### Which IP addresses or ranges does my environment use?
 
@@ -170,7 +170,7 @@ You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry 
 
 ## See also
 
-[Supported Cipher Suites in HTTPS](devenv-supported-cipher-suites.md)  
+[Supported cipher suites in HTTPS](devenv-supported-cipher-suites.md)  
 [How-to restrict network access from/to Business Central](../security/security-service-tags.md)  
 [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md)  
 [HttpContent data type](methods-auto/httpcontent/httpcontent-data-type.md)  
