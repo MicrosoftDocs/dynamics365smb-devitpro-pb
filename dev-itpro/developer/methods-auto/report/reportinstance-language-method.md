@@ -3,8 +3,8 @@ title: "Report.Language([Integer]) Method"
 description: "Gets or sets the current language setting for the report."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/17/2023
-ms.reviewer: na
+ms.date: 01/24/2024
+ms.reviewer: jswymer
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
