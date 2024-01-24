@@ -70,7 +70,7 @@ It's important to have a solid migration strategy in place to ensure a smooth tr
    > - Long retention periods for change tracking data might cause database resource starvation when high volumes of data are changed on the database, which may lead to reduced database performance and/or loss of the change tracking data. Pick a change tracking period that strikes a balance between migration strategy needs and available resources on the on-premises database.
    > - Don't enable change tracking if you'll be running data upgrade on-premises, because it won't work.
 
-2. [Create a full backup](https://learn.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server) of the on-premises production database. Differential or partial backups aren't supported as they don't include Change Tracking data required for replication runs.
+2. [Create a full backup](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server) of the on-premises production database. Differential or partial backups aren't supported as they don't include Change Tracking data required for replication runs.
 3. Optionally, deploy the backup database to an Azure SQL Database for improved performance. See [Optimizing Cloud Migration Performance](migration-optimize-replication.md).
 4. Complete the usual preparation steps on the backup on-premises database and address any issues that arise. Start the first [replication run](migrate-data-replication-run.md) and address any issues that arise.
 5. Within the change tacking period set up on the on-premises production database in step 1, overwrite the backup database with a new full backup to replicate data that is new or modified since the backup created in step 2.
