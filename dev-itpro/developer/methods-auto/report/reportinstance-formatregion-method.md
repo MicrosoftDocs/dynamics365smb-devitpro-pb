@@ -63,8 +63,8 @@ end;
 
 ## See Also
 
-[Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
 [Report Localization](../../devenv-report-localization.md)  
 [Report.Language](./reportinstance-language-method.md)  
+[Report Data Type](report-data-type.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)   

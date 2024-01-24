@@ -7,7 +7,6 @@ ms.reviewer: jswymer
 ms.topic: how-to 
 ms.date: 12/15/2023
 ms.custom: bap-template 
-ms-service: dynamics365-business-central
 ---
 
 # Complete cloud migration to Business Central online

@@ -8,7 +8,6 @@ ms.topic: conceptual
 ms.collection: get-started
 ms.date: 10/05/2023
 ms.custom: bap-template 
-ms-service: dynamics365-business-central
 ---
 
 <!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
