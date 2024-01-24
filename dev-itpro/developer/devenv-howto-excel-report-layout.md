@@ -77,7 +77,7 @@ For a report developer working with AL code, maybe the simplest way to get the n
 
 Report labels are used by report layouts as, for example, the heading for a field in a table, the title for a chart, or the title for the report itself. 
 
-Starting in version 23.3, report labels defined in the *Labels* section of the report object and captions included on dataitem colums using the [IncludeCaption property](properties/devenv-includecaption-property.md) are available in the `CaptionData` worksheet in Excel. 
+Starting in version 23.3, report labels defined in the *Labels* section of the report object and captions included on dataitem columns using the [IncludeCaption property](properties/devenv-includecaption-property.md) are available in the `CaptionData` worksheet in Excel. 
 
 For more information about labels, see [Report labels](./devenv-report-object.md#report-labels).
 
