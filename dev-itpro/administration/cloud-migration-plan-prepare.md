@@ -65,8 +65,10 @@ It's important to have a solid migration strategy in place to ensure a smooth tr
 
 1. [Enable change tracking](/sql/relational-databases/track-changes/enable-and-disable-change-tracking-sql-server) on the on-premises production database for the expected number of days between the first backup for replication and the next time you'll back up and replicate. A minimum of three days is enforced. The number of days for which change tracking is enabled can't be changed later without resetting change tracking altogether.
 
+
    > [!NOTE]
-   > Long retention periods for change tracking data might cause database resource starvation when high volumes of data are changed on the database, which may lead to reduced database performance and/or loss of the change tracking data. Pick a change tracking period that strikes a balance between migration strategy needs and available resources on the on-premises database.
+   > - Long retention periods for change tracking data might cause database resource starvation when high volumes of data are changed on the database, which may lead to reduced database performance and/or loss of the change tracking data. Pick a change tracking period that strikes a balance between migration strategy needs and available resources on the on-premises database.
+   > - Don't enable change tracking if you'll be running data upgrade on-premises, because it won't work.
 
 2. [Create a full backup](https://learn.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server) of the on-premises production database. Differential or partial backups aren't supported as they don't include Change Tracking data required for replication runs.
 3. Optionally, deploy the backup database to an Azure SQL Database for improved performance. See [Optimizing Cloud Migration Performance](migration-optimize-replication.md).
@@ -80,10 +82,15 @@ It's important to have a solid migration strategy in place to ensure a smooth tr
 
    [!INCLUDE [bc-cloud-migrate-replicate-all-before-upgrade.md](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
 8. Run [Data Upgrade](migration-data-upgrade.md) on the cloud environment.
+
+   This step isn't required if you're on-premises version is the same as Business Central online (that is, both are the most current versions).
+
 9. [Complete the migration](migration-finish.md) and go live on the cloud environment.
 
 > [!IMPORTANT]
 > Ensure the on-premises and cloud environments remain on the same Business Central version they were on when the cloud migration was set up. Do not update the on-premises environment and [reschedule updates](update-rollout-timeline.md#schedule-updates) to the cloud environment to a date after the cloud migration is completed.
+>
+> Avoid modifying the environment after the replication has been enabled. If you need to install or uninstall extensions or delete companies, disable the cloud migration, make the changes, then enable it again.
 
 Keep in mind that the migration process can be complex, and issues might arise that require more troubleshooting. It's important to stay flexible and be prepared to adjust your migration strategy as needed to address any problems that arise.
 
