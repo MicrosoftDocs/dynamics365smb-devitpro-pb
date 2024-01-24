@@ -24,7 +24,7 @@ Sets whether to include the caption of a field in the data set of a report.
 
 ## Property Value  
 
-**True** if the caption should be included in the report dataset; otherwise **false**. The default value is **false**.  
+**True** includes the caption in the report dataset; otherwise **false**. The default value is **false**.  
 
 ## Remarks  
 
