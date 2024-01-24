@@ -36,6 +36,13 @@ It's often useful to format data in the report dataset to reduce the complexity 
 For more information, see [Formatting field values in report datasets](devenv-format-report-field-data.md).
 
 
+## How to include field captions in report datasets
+
+For texts that are present as captions on table fields in dataset columns, use the [IncludeCaption](properties/devenv-includecaption-property.md) property to include them in the dataset. For more information, see [IncludeCaption property](properties/devenv-includecaption-property.md). 
+
+For more information about the use of labels in reports, see [Report labels](./devenv-report-object.md#report-labels). 
+
+
 ## Using a query in a dataset definition
 
 Instead of building the report dataset directly from tables, you can also use a query object. To achieve this, you must
@@ -219,6 +226,7 @@ For more information on report limits, see [Report limits](devenv-report-object.
 
 ## See Also
 
+[IncludeCaption property](properties/devenv-includecaption-property.md)  
 [Report Object](devenv-report-object.md)  
 [Report Extension Object](devenv-report-ext-object.md)  
 [Reports Overview](devenv-reports.md)  
