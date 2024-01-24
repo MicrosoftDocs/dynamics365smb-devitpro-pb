@@ -40,14 +40,16 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Bahrain|Partner|W1|Available|BH|
 |Bangladesh|Partner|W1|Available|BD|
 |Belgium|Microsoft|BE|Available|BE|
+|Belize|Partner|W1|Planned for June 2024|BZ|
 |Bermuda|Partner|W1|Available|BM|
 |Bolivia|Partner|W1|Available|BO|
 |Bosnia and Herzegovina|Partner|W1|Available|BA|
 |Botswana|Partner|W1|Available|BW|
 |British Virgin Islands|Partner|W1|Available|VG|
 |Brunei|Partner|W1|Available|BN|
-|Bulgaria|Partner|W1|Available|BG|
 |Brazil|Partner|W1|Available|BR|
+|Bulgaria|Partner|W1|Available|BG|
+|Burkina Faso|Partner|W1|Planned for June 2024|BF|
 |Cambodia|Partner|W1|Available|KH|
 |Cameroon|Partner|W1|Available|CM|
 |Canada|Microsoft|NA|Available|CA|
@@ -75,9 +77,13 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Fiji|Partner|W1|Available|FJ|
 |Finland|Microsoft|FI|Available|FI|
 |France|Microsoft|FR|Available|FR|
+|French Polynesia|Partner|W1|Planned for June 2024|PF|
+|Gabon|Partner|W1|Planned for June 2024|GA|
+|Gambia|Partner|W1|Planned for June 2024|GM|
 |Georgia|Partner|W1|Available|GE|
 |Germany|Microsoft|DE|Available|DE|
 |Ghana|Partner|W1|Available|GH|
+|Gibraltar|Partner|W1|Planned for June 2024|GI|
 |Greece|Partner|W1|Available|GR|
 |Greenland (Denmark)|Microsoft|W1|Available|DK|
 |Grenada|Partner|W1|Available|GD|
@@ -105,6 +111,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Kenya|Partner|W1|Available|KE|
 |Kosovo|Partner|W1|Available|XK|
 |Kuwait|Partner|W1|Available|KW|
+|Laos|Partner|W1|Planned for June 2024|LA|
 |Latvia|Partner|W1|Available|LV|
 |Lebanon|Partner|W1|Available|LB|
 |Liechtenstein|Partner|CH|Available|LI|
@@ -115,12 +122,16 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Malawi|Partner|W1|Available|MW|
 |Malaysia|Partner|W1|Available|MY|
 |Maldives|Partner|W1|Available|MV|
+|Mali|Partner|W1|Planned for June 2024|ML|
 |Malta|Partner|W1|Available|MT|
+|Marshall Islands|Partner|W1|Planned for June 2024|MH|
 |Mauritius|Partner|W1|Available|MU|
 |Mexico|Microsoft|NA|Available|MX|
 |Micronesia|Partner|W1|Available|FM|
+|Moldova|Partner|W1|Planned for June 2024|MD|
 |Monaco|Partner|FR|Available|MC|
 |Mongolia|Partner|W1|Available|MN|
+|Monserrat|Partner|W1|Planned for June 2024|MS|
 |Montenegro|Partner|W1|Available|ME|
 |Morocco|Partner|W1|Available|MA|
 |Mozambique|Partner|W1|Available|MZ|
@@ -147,6 +158,9 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Qatar|Partner|W1|Available|QA|
 |Romania|Partner|W1|Available|RO|
 |Russia **(on-premises only)**|Microsoft|RU|Available|(Not listed)|
+|Saint Kitts and Nevis|Partner|W1|Planned for June 2024|KN|
+|Saint Lucia|Partner|W1|Planned for June 2024|LC|
+|Saint Vincent and the Grenadines|Partner|W1|Planned for June 2024|VC|
 |Samoa|Partner|W1|Available|WS|
 |San Marino|Partner|IT|Available|SM|
 |Sao Tome & Principe|Partner|W1|Available|SM|
@@ -170,23 +184,28 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Trinidad and Tobago|Partner|W1|Available|TT|
 |Tunisia|Partner|W1|Available|TN|
 |Türkiye|Partner|W1|Available|TR|
+|Turks and Caicos Islands|Partner|W1|Planned for June 2024|TC|
 |Uganda|Partner|W1|Available|UG|
 |Ukraine|Partner|W1|Available|UA|
 |United Arab Emirates|Partner|W1|Available|AE|
 |United Kingdom|Microsoft|GB|Available|GB|
 |United States|Microsoft|NA|Available|US|
+|U.S. Virgin Islands|Partner|W1|Planned for June 2024|VI|
 |Uruguay|Partner|W1|Available|UY|
+|Uzbekistan|Partner|W1|Planned for June 2024|UZ|
 |Vanuatu|Partner|W1|Available|VU|
+|Vatican City|Partner|IT|Planned for June 2024|VA|
 |Vietnam|Partner|W1|Available|VN|
+|Yemen|Partner|W1|Planned for June 2024|YE|
 |Zambia|Partner|W1|Available|ZM|
 |Zimbabwe|Partner|W1|Available|ZW|
 
 > [!NOTE]
 > *1) BaseApp for Sweden will be migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1. Current localization features will be available as apps. Existing users can enable new features through **Feature Management**.*
-> *2) BaseApp for Sweden will be migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 2. Current localization features will be available as apps. Existing users can enable new features through **Feature Management**.*
+> *2) BaseApp for Iceland will be migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 2 (23.3). Current localization features will be available as apps. Existing users can enable new features through **Feature Management**.*
 
 > [!NOTE]  
-> Microsoft will announce new planned countries for [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 2 at the end of August.
+> Microsoft will announce new planned countries for [!INCLUDE [prod_short](../includes/prod_short.md)] 2024 release wave 2 at the end of August.
 
 For a list of the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available, go to [Geographical availability for Dynamics 365](https://dynamics.microsoft.com/en-us/availability-reports/georeport/) report and select [!INCLUDE [prod_long](../developer/includes/prod_long.md)] in the **Product** list.
 
@@ -200,7 +219,7 @@ Due to the nature of the joint effort where Microsoft is providing the internati
 
 To maximize productivity [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] supports many languages.
 It's important to know that language support requires translation of *platform* captions and *application* captions (UI). 
-Translated platform captions are provided by Microsoft for most available languages. Application languages are provided by both Microsoft and partners, depending on the language. 
+Translated platform captions are provided by Microsoft for most of available languages. Application languages are provided by both Microsoft and partners, depending on the language. 
 
 Application languages delivered by Microsoft are provided as language apps that can be installed as needed. These language apps are available on AppSource. Partners can also provide application translation for any platform supported language and for those languages that aren't supported by Microsoft. To use one of those languages, contact the app publisher through AppSource.  
 
@@ -245,6 +264,7 @@ This table gives an overview of supported platform and application languages, an
 |Korean (Korea)|ko-KR|Available|Partner, Available on AppSource||
 |Latvian (Latvia)|lv-LV|Available|Partner, Available on AppSource||
 |Lithuanian (Lithuania)|lt-LT|Available|Partner, Available on AppSource||
+|Macedonian (North Macedonia)|mk-MK|-|Partner, Available on AppSource||
 |Norwegian, Bokmål (Norway)|nb-NO|Available|Microsoft, Available on AppSource||
 |Polish (Poland)|pl-PL|Available|Partner, Available on AppSource||
 |Portuguese (Angola)|pt-AO|-|Partner, Available on AppSource||
