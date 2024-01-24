@@ -130,11 +130,12 @@ For more information, see [Supporting repeating content](https://learn.microsoft
 
 
 > [!TIP]  
-> When you work with a very long table, it will run across multiple pages. It is possible to set up the table so that the table header row appear on each page automatically. To achieve this, do as follows: 
+> When you work with a very long table, it'll run across multiple pages. It's possible to set up the table so that the table header row appears on each page automatically. To achieve this, do as follows:
+
 > 1. Select the header row or rows that you want to repeat on each page. The selection must include the first row of the table.
-> 2. Under *Table Tools*, on the *Layout* tab, in the *Data* group, click *Repeat Header Rows*.
+> 2. Under *Table Tools*, on the *Layout* tab, in the *Data* group, choose *Repeat Header Rows*.
 > 
-> For more information, see [Repeat table header on subsequent pages](https://support.microsoft.com/en-us/office/repeat-table-header-on-subsequent-pages-2ff677e0-3150-464a-a283-fa52794b4b41)
+> For more information, see [Repeat table header on subsequent pages](https://support.microsoft.com/en-us/office/repeat-table-header-on-subsequent-pages-2ff677e0-3150-464a-a283-fa52794b4b41).
 
 
 ### Using lists to display data from the report dataset (simple repeaters)
@@ -156,60 +157,50 @@ If you want to add a bulleted or numbered list to the report layout where data i
     c. For each field, repeat steps a and b.  
 
 
-For more information, see [Supporting repeating content](https://learn.microsoft.com/office/client-developer/word/content-controls-in-word#supporting-repeating-content)
+For more information, see [Supporting repeating content](https://learn.microsoft.com/office/client-developer/word/content-controls-in-word#supporting-repeating-content).
 
 
 ### Using nested repeaters to display data from nested dataitems in the report dataset
 
-Word supports placing tables within table cells or having multi-level lists. And you can also add a repeater within a repeater. This means that you can have as many levels as needed in your layout (if they can fit on the page). 
+Word supports placing tables within table cells or having multi-level lists. And you can also add a repeater within a repeater. This means that you can have as many levels as needed in your layout, as long as they fit on the page. 
 
 
 ### Sub totals / running totals
 
-Word doesn't have a programming model such as RDL and hence it isn't possible to do sub totals / running totals in the Word layout itself. 
+Word doesn't have a programming model such as RDL and hence it isn't possible to do sub totals/running totals in the Word layout itself. 
 
-Instead, you can do the work in the dataset by defining a dataitem that calculates subtotals per partition and then a nested dataitem with the partitioned data. 
-
-In the layout, you then add a table that repeat over the top level dataitem and use a nested 
-repeater on the partitioned dataitem.
-
+Instead, you can do the work in the dataset by defining a dataitem that calculates subtotals per partition and then a nested dataitem with the partitioned data. In the layout, you then add a table that repeat over the top level dataitem and use a nested repeater on the partitioned dataitem.
 
 ### Conditional formatting
 
 Word doesn't have a programming model such as RDL and hence it isn't possible to do conditional formatting directly in the Word layout itself. 
 
-But there are ways to work around this limitation by calculating the conditions in AL and add them to the dataset. In the Word layout, you then utilize the fact that Word don't render XML elements without a value.
-
-Below, you can learn more about different ways to do conditional formatting.
+But there are ways to work around this limitation by calculating the conditions in AL and add them to the dataset. In the Word layout, you then utilize the fact that Word don't render XML elements without a value. in the following, you can learn more about different ways to do conditional formatting.
 
 
-**How to hide/show values based on a condition**
+#### How to hide/show values based on a condition
 
-If you want to hide/show a single *value* based on a condition, then make sure that the column in 
-the dataset is set to empty or to a value based on the condition.
+If you want to hide/show a single *value* based on a condition, then make sure that the column in the dataset is set to empty or to a value based on the condition. 
 
 In the Word layout, you now just use the column as-is.
 
-**How to control text properties based on a condition** 
+#### How to control text properties based on a condition
 
-If you want to show a text and want to control text properties such as color, font, style, or size based on a condition, then add the column twice in the dataset, and set values to empty or to the value based on the condition. Make sure that one of them is empty.
+If you want to show a text and want to control text properties such as color, font, style, or size based on a condition, then add the column twice in the dataset, and set values to empty or to the value based on the condition. Make sure that one of them is empty. 
 
 In the Word layout, you now place both columns next to each other, and then set the text properties on each to what you need.
 
-**How to mimic the BlankZero or BlankNumbers properties**
+#### How to mimic the BlankZero or BlankNumbers properties
 
-If you want to mimic the BlankZero or BlankNumbers properties that exist on table and page fields, 
-then set values to empty or to the value based on the condition (zero or the value you would have used for BlankNumbers) in the dataset. 
+If you want to mimic the BlankZero or BlankNumbers properties that exist on table and page fields, then set values to empty or to the value based on the condition (zero or the value you would have used for BlankNumbers) in the dataset. 
  
 In the Word layout, you now just use the column as-is.
 
+#### How to hide a part of the document based on a condition
 
-**How to hide a part of the document based on a condition** 
-
-If you want to hide a part of the document (such as a table or a list) based on a condition, then create a dummy dataitem (with an Integer datasource) with a column set to empty or to a value based on the condition. The place the dummy dataitem on top of the dataitem that your table/list repeats over.
+If you want to hide a part of the document, such as a table or a list, based on a condition, then create a dummy dataitem with an Integer datasource, which contains a column set to empty or to a value based on the condition. Then place the dummy dataitem on top of the dataitem that your table/list repeats over.
 
 In the Word layout, you now use nested repeaters, where the outer repeater is on the dummy dataitem.
-
 
 ### Using the same table style for all tables in the layout
 
@@ -218,11 +209,10 @@ If your document layout contains multiple tables, consider using table styles to
 To set a default table style, do as follows:
 
 1. Mark the table.
-2. Navigate to the *Table Design* menu.
+2. Navigate to the **Table Design** menu.
 3. For the table style you want to use as default, right-click it. 
-4. In the Menu that appears, select *Set as Default*. A dialog box appears.
-5. Select *This document only*. Select OK.
-
+4. In the menu that appears, select **Set as Default**. A dialog box appears.
+5. Select **This document only**, and then choose **OK**.
 
 ### Using hyperlinks in Word layouts
 
@@ -511,25 +501,25 @@ If you're switching from developing reports with RDL layouts to using Word layou
 For reports where you expect customers to adjust the layout or use themes to change the overall look-and-feel of the document, consider using a Word layout over an RDL layout. 
 
 
-## How to convert an RDLC layout to a Word layout
+## How to convert an RDL layout to a Word layout
 
-There's no way to directly convert an RDLC layout to a Word layout, but if you want to create a new Word layout based on an RDLC layout, then do as follows:
+There's no way to directly convert an RDL layout to a Word layout, but if you want to create a new Word layout based on an RDL layout, then do as follows:
 
 1. Create a new Word layout from Visual Studio Code. This gives you an empty Word document where the Custom XML part has been added.
-1. Get a version of the report RDLC layout rendered as a Word document
-    1. From the *Report layouts page*, find the RDLC layout you want to base the new Word layout on.
-    1. From the top pane menu, click the *Run Report* action. This opens the request page for the report.
-    1. In the bottom of the request page, click the *Send to...* button. This opens a "Choose file type..." modal dialog.
-    1. Pick *Microsoft Word Document* and click *OK*. This downloads the report rendered as a Word document (where the dataset has been merged with the layout and where the Custom XML part isn't present.). 
+1. Get a version of the report RDL layout rendered as a Word document
+    1. From the **Report layouts page**, find the RDL layout you want to base the new Word layout on.
+    1. From the top pane menu, select the **Run Report** action. This opens the request page for the report.
+    1. In the bottom of the request page, select the **Send to...** button. This opens a **Choose file type...** modal dialog.
+    1. Select **Microsoft Word Document** and then choose the **OK** button. This downloads the report rendered as a Word document (where the dataset has been merged with the layout and where the Custom XML part isn't present.). 
 1. Mark all content that you want to base the new layout on from the rendered Word document and copy it to the empty Word layout that you created in step 1.
-1. Now it is time to adjust the Word document to make it a real layout:
+1. Now it's time to adjust the Word document to make it a real layout:
     1. For each table, keep the header and remove all but one row with values. For the latter row, add a repeater from the **XML Mapping** pane. For the header row, add labels/captions from the **XML Mapping** pane.
-    1. For each text not in a table, replace the text with the corresponing content control from the **XML Mapping** pane.
+    1. For each text not in a table, replace the text with the corresponding content control from the **XML Mapping** pane.
     1. For each image not in the dataset, encapsulate it with a table to control overflow. Consider resizing it.
-    1. For each image in the dataset, replace the text with the corresponing content control from the **XML Mapping** pane.
-1. You can test the layout either by lauching a new session from Visual Studio Code or directly from the *Report layouts page*:
-    1. For the initial test of the new layout, from the *Report layouts page*, find the report you want to add the new Word layout to. From the top pane menu, click the *New* action to upload the layout for the first time.
-    1. For subsequent tests of the new layout, from the *Report layouts page*, find the report you want to add the new Word layout to. From the top pane menu, click the *Replace layout* action to replace the layout with the latest version.
+    1. For each image in the dataset, replace the text with the corresponding content control from the **XML Mapping** pane.
+1. You can test the layout either by launching a new session from Visual Studio Code or directly from the **Report layouts page**:
+    1. For the initial test of the new layout, from the **Report layouts page**, find the report you want to add the new Word layout to. From the top pane menu, select the **New** action to upload the layout for the first time.
+    1. For subsequent tests of the new layout, from the **Report layouts page**, find the report you want to add the new Word layout to. From the top pane menu, select the **Replace layout** action to replace the layout with the latest version.
 
 
 ## See also
