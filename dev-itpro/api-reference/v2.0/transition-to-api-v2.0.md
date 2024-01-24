@@ -1,7 +1,9 @@
 ---
-title: "Transitioning from API v1.0 to API v2.0"
-description: "Reference content for transitioning Dynamics 365 Business Central v1.0 API to v2.0."
+title: Transitioning from API v1.0 to API v2.0
+description: Reference content for transitioning Dynamics 365 Business Central v1.0 API to v2.0.
 author: OnatBuyukakkus
+ms.custom: bap-template
+ms.reviewer: solsen
 ms.topic: get-started
 ms.devlang: al
 ms.date: 01/20/2024
@@ -10,11 +12,11 @@ ms.author: onbuyuka
 
 # Transitioning from API v1.0 to API v2.0
 
-Dynamics 365 Business Central API v2.0 includes some major changes from v1.0 for the better. 
+[!INCLUDE [prod_short](../../includes/prod_short.md)] API v2.0 includes some major changes from v1.0 to improve the experience. This article describes these changes and how to transition from v1.0 to v2.0.
 
 ## Schema version
 
-API v2.0 schema version is always set to 2.0 to get the latest features in the Business Central OData stack.
+API v2.0 schema version is always set to 2.0 to get the latest features in the [!INCLUDE [prod_short](../../includes/prod_short.md)] OData stack.
 
 ## Key fields
 
@@ -37,7 +39,7 @@ In v1.0, following resources didn’t use the SystemId as the primary key. Inste
 - trialBalance
 - vendorPurchase
 
-All multipart keys and non-GUID in v2.0 have been replaced with unique GUID keys. API v2.0 entities can be retrieved with the SystemId. SystemId is immutable, platform enforced and indexed. This change improves auditing and API reading performance. It is also possible to create a new record and provide the SystemId in API v2.0.
+All multipart keys and non-GUID in v2.0 have been replaced with unique GUID keys. API v2.0 entities can be retrieved with the `SystemId`. `SystemId` is immutable, platform-enforced and indexed. This change improves auditing and API reading performance. It's also possible to create a new record and provide the `SystemId` in API v2.0.
 
 ## Nested objects
 
@@ -50,12 +52,12 @@ In API v1.0, some properties had [complex types](../v1.0/resources/dynamics_comp
 
 Complex properties allowed returning nested JSON object in the API response. In API v2.0, all complex properties are replaced with first-level properties or navigation properties. This change improves API performance significantly since complex fields were calculated in the runtime and added additional compute time.
 
-The change from complex property to first-level property can be seen in [customer](../v2.0/resources/dynamics_customer.md) resource type. In API v1.0, property ```address``` used ```POSTALADDRESS```. 
+The change from complex property to first-level property can be seen in [customer](../v2.0/resources/dynamics_customer.md) resource type. In API v1.0, property `address` used `POSTALADDRESS`. 
 
-Here is an example of the response from [API v1.0 customer resource](../v1.0/api/dynamics_customer_get.md). ```address``` property can be seen as a complex property.
+Here's an example of the response from [API v1.0 customer resource](../v1.0/api/dynamics_customer_get.md). The `address` property can be seen as a complex property.
 
 > [!NOTE]  
->   The response objects shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response objects shown here might be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 {
@@ -72,7 +74,8 @@ Here is an example of the response from [API v1.0 customer resource](../v1.0/api
   }
 }
 ```
-Here is the first-level property replacement of the ```address``` property in an example response from [API v2.0 customer resource](../v2.0/api/dynamics_customer_get.md).
+
+Here's the first-level property replacement of the `address` property in an example response from [API v2.0 customer resource](../v2.0/api/dynamics_customer_get.md).
 
 ```json
 {
@@ -89,12 +92,13 @@ Here is the first-level property replacement of the ```address``` property in an
 }
 ```
 
-The change from complex property to navigational property can be seen in [item](../v2.0/resources/dynamics_item.md) resource type. In API v1.0, property ```baseUnitOfMeasure``` used ```ITEM-UOM```. 
+The change from complex property to navigational property can be seen in [item](../v2.0/resources/dynamics_item.md) resource type. In API v1.0, property `baseUnitOfMeasure` used `ITEM-UOM`. 
 
-Here is an example of the response from [API v1.0 item resource](../v1.0/api/dynamics_item_get.md). ```baseUnitOfMeasure``` property can be seen as a complex property.
+Here's an example of the response from [API v1.0 item resource](../v1.0/api/dynamics_item_get.md). The `baseUnitOfMeasure` property can be seen as a complex property.
 
 > [!NOTE]  
->   The response objects shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response objects shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 ```json
 {
   "id": "id-value",
@@ -108,7 +112,9 @@ Here is an example of the response from [API v1.0 item resource](../v1.0/api/dyn
   }
 }
 ```
-There is no first-level property replacement of the ```baseUnitOfMeasure``` property in an example response from [API v2.0 item resource](../v2.0/api/dynamics_item_get.md). Instead, the new navigation property replacement ```unitOfMeasure``` represents data from related [unitOfMesure](../v2.0/resources/dynamics_unitOfMeasure.md) resource and may be optionally included in the response object. Navigation properties are included in the response object by ```$expand``` OData parameter.
+
+There's no first-level property replacement of the `baseUnitOfMeasure` property in an example response from [API v2.0 item resource](../v2.0/api/dynamics_item_get.md). Instead, the new navigation property replacement `unitOfMeasure` represents data from related [unitOfMesure](../v2.0/resources/dynamics_unitOfMeasure.md) resource and may be optionally included in the response object. Navigation properties are included in the response object by `$expand` OData parameter.
+
 ```
 GET businesscentralPrefix/companies({id})/items({id})?$expand=unitOfMeasure
 ```
@@ -131,9 +137,9 @@ All navigation properties are documented in [API (v2.0) Documentation](index.md)
 
 ## Relationship multiplicities
 
-In API v1.0, API subpages (navigational properties) were always considered as collections. Therefore, all navigational properties returned a JSON array. In API v2.0 following properties are marked as ```Multiplicity = ZeroOrOne``` meaning a one-to-one relation. These properties return a JSON object in API v2.0.
+In API v1.0, API sub pages (navigational properties) were always considered as collections. Therefore, all navigational properties returned a JSON array. In API v2.0 following properties are marked as `Multiplicity = ZeroOrOne` meaning a one-to-one relation. These properties return a JSON object in API v2.0.
 
-| resource                                                                 | property                   |
+| Resource                                                                 | Property                   |
 |--------------------------------------------------------------------------|----------------------------|
 | [contacts](../v2.0/resources/dynamics_contact.md)                        | contact                    |
 | [contactInformation](../v2.0/resources/dynamics_contactInformation.md)   | contact                    |
@@ -160,14 +166,14 @@ In API v1.0, API subpages (navigational properties) were always considered as co
 
 ## Enums
 
-All properties that were of type option in API v1.0 are converted into enums for API v2.0. These properties were previously exposed as strings, instead now they are strongly typed. Enum values can be accessed from ```metadata``` endpoint, also enum captions can be accessed from ```entityDefinitions``` endpoint.
+All properties that were of type option in API v1.0 are converted into enums for API v2.0. These properties were previously exposed as strings, instead now they are strongly typed. Enum values can be accessed from the `metadata` endpoint, also enum captions can be accessed from the `entityDefinitions` endpoint.
 
-This change allows integration utilizing Dynamics 365 Business Central API v2.0 to determine available values for enum properties, for example displaying dropdown values to the end user.
+This change allows integration utilizing [!INCLUDE [prod_short](../../developer/includes/prod_short.md)] API v2.0 to determine available values for enum properties, for example displaying dropdown values to the end user.
 
 ## See also
 
-[API (v2.0) Documentation](index.md)  
-[API (v1.0) Documentation](../v1.0/index.md)  
+[API (v2.0) documentation](index.md)  
+[API (v1.0) documentation](../v1.0/index.md)  
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)     
 [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md)   
-[Developing a Custom API](../../developer/devenv-develop-custom-api.md)  
+[Developing a custom API](../../developer/devenv-develop-custom-api.md)  
