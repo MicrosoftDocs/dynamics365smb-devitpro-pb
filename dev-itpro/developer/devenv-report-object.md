@@ -81,7 +81,7 @@ In the following, you can read about properties of the different layout types.
 
 Report labels are used by report layouts as, for example, the heading for a field in a table, the title for a chart, or the title for the report itself. 
 
-For texts that are present as captions on table fields in dataset columns, use the [IncludeCaption](properties/devenv-includecaption-property.md) property to have them included in the dataset. For more information, see [IncludeCaption property](properties/devenv-includecaption-property.md). 
+For texts that are present as captions on table fields in dataset columns, use the [IncludeCaption](properties/devenv-includecaption-property.md) property to include them in the dataset. For more information, see [IncludeCaption property](properties/devenv-includecaption-property.md). 
 
 You define report labels for static texts that are not present as captions in dataset columns inside the `labels` control of a report object, as shown in the following code sample.
 
