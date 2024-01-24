@@ -516,7 +516,7 @@ There is no way to directly convert an RDLC layout to a Word layout, but if you 
 
 1. Create a new Word layout from VSCode. This gives you an empty Word document where the Custom XML part has been added.
 1. Get a version of the report RDLC layout rendered as a Word document
-  1. From the *Report layouts page*, find the RDLC layout you want to base the new Word layout on.
+    1. From the *Report layouts page*, find the RDLC layout you want to base the new Word layout on.
   1. From the top pane menu, click the *Run Report* action. This opens the request page for the report.
   1. In the bottom of the request page, click the *Send to...* button. This opens a "Choose file type..." modal dialog.
   1. Pick *Microsoft Word Document* and click *OK*. This downloads the report rendered as a Word document (where the dataset has been merged with the layout and where the Custom XML part is not present.). 
