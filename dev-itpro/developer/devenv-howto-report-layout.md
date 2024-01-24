@@ -124,7 +124,7 @@ If you want to add a table to the report layout where data in each row comes fro
     c. For each field, repeat steps a and b.  
 
 
-For more information, see [Supporting repeating content](https://learn.microsoft.com/en-us/office/client-developer/word/content-controls-in-word#supporting-repeating-content)
+For more information, see [Supporting repeating content](https://learn.microsoft.com/office/client-developer/word/content-controls-in-word#supporting-repeating-content)
 
 
 > [!TIP]  
@@ -154,7 +154,7 @@ If you want to add a bulleted or numbered list to the report layout where data i
     c. For each field, repeat steps a and b.  
 
 
-For more information, see [Supporting repeating content](https://learn.microsoft.com/en-us/office/client-developer/word/content-controls-in-word#supporting-repeating-content)
+For more information, see [Supporting repeating content](https://learn.microsoft.com/office/client-developer/word/content-controls-in-word#supporting-repeating-content)
 
 
 ### Using nested repeaters to display data from nested dataitems in the report dataset
@@ -522,7 +522,7 @@ There is no way to directly convert an RDLC layout to a Word layout, but if you 
     1. In the bottom of the request page, click the *Send to...* button. This opens a "Choose file type..." modal dialog.
     1. Pick *Microsoft Word Document* and click *OK*. This downloads the report rendered as a Word document (where the dataset has been merged with the layout and where the Custom XML part is not present.). 
 1. Mark all content that you want to base the new layout on from the rendered Word document and copy it to the empty Word layout that you created in step 1.
-1. Now it is time to addjust the Word document to make it a real layout:
+1. Now it is time to adjust the Word document to make it a real layout:
     1. For each table, keep the header and remove all but one row with values. For the latter row, add a repeater from the **XML Mapping** pane. For the header row, add labels/captions from the **XML Mapping** pane.
     1. For each text not in a table, replace the text with the corresponing content control from the **XML Mapping** pane.
     1. For each image not in the dataset, encapsulate it with a table to control overflow. Consider resizing it.
