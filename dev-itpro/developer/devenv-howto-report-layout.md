@@ -176,9 +176,10 @@ repeater on the partitioned dataitem.
 
 Word does not have a programming model such as RDL and hence it is not possible to do conditional formatting directly in the Word layout itself. 
 
-But there are ways to work around this limitation by calculating the conditions in AL and add them to the dataset. 
+But there are ways to work around this limitation by calculating the conditions in AL and add them to the dataset. In the Word layout, you then utilize the fact that Word will not render XML elements without a value.
 
-In the Word layout, you then utilize the fact that Word will not render XML elements without a value.
+Below, you can learn more about different ways to do conditional formatting.
+
 
 **How to hide/show values based on a condition**
 
@@ -517,18 +518,18 @@ There is no way to directly convert an RDLC layout to a Word layout, but if you 
 1. Create a new Word layout from VSCode. This gives you an empty Word document where the Custom XML part has been added.
 1. Get a version of the report RDLC layout rendered as a Word document
     1. From the *Report layouts page*, find the RDLC layout you want to base the new Word layout on.
-  1. From the top pane menu, click the *Run Report* action. This opens the request page for the report.
-  1. In the bottom of the request page, click the *Send to...* button. This opens a "Choose file type..." modal dialog.
-  1. Pick *Microsoft Word Document* and click *OK*. This downloads the report rendered as a Word document (where the dataset has been merged with the layout and where the Custom XML part is not present.). 
+    1. From the top pane menu, click the *Run Report* action. This opens the request page for the report.
+    1. In the bottom of the request page, click the *Send to...* button. This opens a "Choose file type..." modal dialog.
+    1. Pick *Microsoft Word Document* and click *OK*. This downloads the report rendered as a Word document (where the dataset has been merged with the layout and where the Custom XML part is not present.). 
 1. Mark all content that you want to base the new layout on from the rendered Word document and copy it to the empty Word layout that you created in step 1.
 1. Now it is time to addjust the Word document to make it a real layout:
-  1. For each table, keep the header and remove all but one row with values. For the latter row, add a repeater from the **XML Mapping** pane. For the header row, add labels/captions from the **XML Mapping** pane.
-  1. For each text not in a table, replace the text with the corresponing content control from the **XML Mapping** pane.
-  1. For each image not in the dataset, encapsulate it with a table to control overflow. Consider resizing it.
-  1. For each image in the dataset, replace the text with the corresponing content control from the **XML Mapping** pane.
-1. When you are ready for the initial test of the new layout, from the *Report layouts page*, find the report you want to add the new Word layout to. From the top pane menu, click the *New* action to upload the layout for the first time.
-1. For subsequent tests of the new layout, from the *Report layouts page*, find the report you want to add the new Word layout to. From the top pane menu, click the *Replace layout* action to replace the layout with the latest version.
-
+    1. For each table, keep the header and remove all but one row with values. For the latter row, add a repeater from the **XML Mapping** pane. For the header row, add labels/captions from the **XML Mapping** pane.
+    1. For each text not in a table, replace the text with the corresponing content control from the **XML Mapping** pane.
+    1. For each image not in the dataset, encapsulate it with a table to control overflow. Consider resizing it.
+    1. For each image in the dataset, replace the text with the corresponing content control from the **XML Mapping** pane.
+1. You can test the layout either by lauching a new session from VSCode or directly from the *Report layouts page*:
+    1. For the initial test of the new layout, from the *Report layouts page*, find the report you want to add the new Word layout to. From the top pane menu, click the *New* action to upload the layout for the first time.
+    1. For subsequent tests of the new layout, from the *Report layouts page*, find the report you want to add the new Word layout to. From the top pane menu, click the *Replace layout* action to replace the layout with the latest version.
 
 
 ## See also
