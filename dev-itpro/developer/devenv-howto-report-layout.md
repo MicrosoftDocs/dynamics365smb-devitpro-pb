@@ -126,7 +126,7 @@ If you want to add a table to the report layout where data in each row comes fro
     c. For each field, repeat steps a and b.  
 
 
-For more information, see [Supporting repeating content](https://learn.microsoft.com/office/client-developer/word/content-controls-in-word#supporting-repeating-content)
+For more information, see [Supporting repeating content](/office/client-developer/word/content-controls-in-word#supporting-repeating-content).
 
 
 > [!TIP]  
@@ -157,7 +157,7 @@ If you want to add a bulleted or numbered list to the report layout where data i
     c. For each field, repeat steps a and b.  
 
 
-For more information, see [Supporting repeating content](https://learn.microsoft.com/office/client-developer/word/content-controls-in-word#supporting-repeating-content).
+For more information, see [Supporting repeating content](/office/client-developer/word/content-controls-in-word#supporting-repeating-content).
 
 
 ### Using nested repeaters to display data from nested dataitems in the report dataset
