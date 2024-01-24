@@ -16,7 +16,7 @@ This article describes how timezones work in the [!INCLUDE[prod_short](../develo
 
 ## Time zone configuration (online) 
 
-For online [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments, the **Services Default Time Zone** setting is always set to `UTC`. For installations in timezone far away from UTC, this might cause confusion because the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client shows a different date than what web services return for the same data. By adjusting your connect app (the one that consumes data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services) to use the same timezone offset as the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, you can mitigate this confusion.
+For online [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments, the **Services Default Time Zone** setting is always set to `UTC`. For installations in time zone far away from UTC, this might cause confusion because the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client shows a different date than what web services return for the same data. By adjusting your connect app (the one that consumes data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services) to use the same time zone offset as the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, you can mitigate this confusion.
 
 ## Time zone configuration (on-premises)
 
