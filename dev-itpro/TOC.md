@@ -1005,10 +1005,12 @@
 
 ### Calling external services
 #### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
+#### [Supported cipher suites in HTTPS](developer/devenv-supported-cipher-suites.md)  
 #### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
-#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
-<!--#### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)-->
+#### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
+#### [AL Language reference (HttpClient datatype)](developer/methods-auto/httpclient/httpclient-data-type.md)
+<!--#### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)-->
 
 ### Using Azure Key Vault for app secrets
 #### [Overview](developer/devenv-app-key-vault-overview.md)
@@ -1278,25 +1280,25 @@
 <!-- integration-->
 # Integration
 <!-- web service -->
-## [Refactor integration management](developer/devenv-integration-record-refactoring.md)
 ## Web services
 ### [Web services overview](webservices/web-services.md)
 ### [Terms of Use for web services](webservices/webservices-terms-of-use.md)
-### General
-#### [Publishing a web service](webservices/publish-web-service.md)
-#### [Handling UI interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
-#### [Managing timezones](webservices/managing-time-zones-with-web-services.md)
-#### [Working with static proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
+### [Managing timezones in web services](webservices/managing-time-zones-with-web-services.md)
+### [How to refactor use of integration records to system fields](developer/devenv-integration-record-refactoring.md)
+### [Web services best practices](webservices/web-services-best-practices.md)
+### [Web service performance](webservices/web-service-performance.md)
+### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
+### [Web service telemetry](webservices/web-service-telemetry.md)
+
+### Web services security
 #### [Authentication](webservices/web-services-authentication.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-service authentication](administration/automation-apis-using-s2s-authentication.md)
-#### [Web service performance](webservices/web-service-performance.md)
-#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
-#### [Web service telemetry](webservices/web-service-telemetry.md)
+#### [How to restrict network access from/to Business Central](security/security-service-tags.md)
+#### [Supported cipher suites in outgoing calls](developer/devenv-supported-cipher-suites.md)
 #### [Walkthrough: Creating a console application that uses OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
-#### [Securing remote connections using certificates](deployment/implement-security-certificates-production-environment.md)
-#### [Supported cipher suites](developer/devenv-supported-cipher-suites.md)
-#### [Best practices](webservices/web-services-best-practices.md)
+#### [Securing remote connections using certificates (on-premises)](deployment/implement-security-certificates-production-environment.md)
+
 ### APIs
 #### [Overview](webservices/api-overview.md)
 #### [API client performance](webservices/odata-client-performance.md)
@@ -1351,6 +1353,11 @@
 #### [Cloud migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
 #### [API Developer Overview](developer/devenv-api.md)
 #### [Getting a list of environments](webservices/api-get-environments.md)
+
+### Exposing pages as OData/SOAP web service endpoints
+#### [Publishing a web service](webservices/publish-web-service.md)
+#### [Handling UI interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
+
 ### OData
 #### [Overview](webservices/odata-web-services.md)
 #### [OData client performance](webservices/odata-client-performance.md)
@@ -1369,6 +1376,7 @@
 #### [Using OData transactional $batch requests](webservices/use-odata-batch.md)
 #### [Creating and interacting with an OData V4 bound action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 #### [Known OData limitations](webservices/odata-known-limitations.md)
+
 ### SOAP
 #### [Overview](webservices/soap-web-services.md)
 #### [SOAP service URIs](webservices/soap-web-service-uris.md)
@@ -1387,7 +1395,9 @@
 ##### [UpdateMultiple](webservices/UpdateMultiple-operation.md)
 #### [Retrieving companies](webservices/use-systemservice-to-find-companies.md)
 #### [Indicating that a value exists in field](webservices/use-properties-to-indicate-field-value.md)
+#### [Working with static proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
 <!-- end web services -->
+
 ## Connect apps
 ### [Developing Connect apps](developer/devenv-develop-connect-apps.md)
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
@@ -1484,6 +1494,11 @@
 ### [Connecting to Azure Key Vault](developer/devenv-app-key-vault-overview.md)
 ### [Azure Key Vault telemetry](administration/telemetry-extension-key-vault-trace.md)
 <!-- end Azure services -->
+## Integrating with Shopify
+### [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started)
+### [Troubleshoot the Shopify connector](/dynamics365/business-central/shopify/troubleshoot)
+### [FAQ for the Shopify connector](/dynamics365/business-central/shopify/shopify-faq)
+### [Walkthrough: Set up and use the Shopify connector](/dynamics365/business-central/shopify/walkthrough-setting-up-and-using-shopify)
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
