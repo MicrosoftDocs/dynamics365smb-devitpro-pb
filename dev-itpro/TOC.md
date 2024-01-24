@@ -1005,11 +1005,11 @@
 
 ### Calling external services
 #### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
-#### [Supported cipher suites in HTTPS](developer/devenv-supported-cipher-suites.md)  
+#### [Supported Cipher Suites in HTTPS](developer/devenv-supported-cipher-suites.md)  
 #### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
-#### [AL Language Reference (HttpClient datatype)](developer/methods-auto/httpclient/httpclient-data-type.md)
+#### [AL Language reference (HttpClient datatype)](developer/methods-auto/httpclient/httpclient-data-type.md)
 <!--#### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)-->
 
 ### Using Azure Key Vault for app secrets
@@ -1284,7 +1284,7 @@
 ### [Web services overview](webservices/web-services.md)
 ### [Terms of Use for web services](webservices/webservices-terms-of-use.md)
 ### [Managing timezones in web services](webservices/managing-time-zones-with-web-services.md)
-### [How-to refactor use of integration records to system fields](developer/devenv-integration-record-refactoring.md)
+### [How to refactor use of integration records to system fields](developer/devenv-integration-record-refactoring.md)
 ### [Web services best practices](webservices/web-services-best-practices.md)
 ### [Web service performance](webservices/web-service-performance.md)
 ### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
@@ -1294,7 +1294,7 @@
 #### [Authentication](webservices/web-services-authentication.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-service authentication](administration/automation-apis-using-s2s-authentication.md)
-#### [How-to restrict network access from/to Business Central](security/security-service-tags.md)
+#### [How to restrict network access from/to Business Central](security/security-service-tags.md)
 #### [Supported Cipher Suites in outgoing calls](developer/devenv-supported-cipher-suites.md)
 #### [Walkthrough: Creating a console application that uses OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
 #### [Securing remote connections using certificates (on-premises)](deployment/implement-security-certificates-production-environment.md)
