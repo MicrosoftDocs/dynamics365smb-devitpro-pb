@@ -84,7 +84,7 @@ You'll now see the generated report in preview mode.
 
 Report labels are used by report layouts as, for example, the heading for a field in a table, the title for a chart, or the title for the report itself. 
 
-Report labels defined in the *Labels* section of the report object and captions included on dataitem colums using the [IncludeCaption property](properties/devenv-includecaption-property.md) are available as parameters in RDL. 
+Report labels defined in the *Labels* section of the report object and captions included on dataitem columns using the [IncludeCaption property](properties/devenv-includecaption-property.md) are available as parameters in RDL. 
 
 For more information about labels, see [Report labels](./devenv-report-object.md#report-labels).
 
