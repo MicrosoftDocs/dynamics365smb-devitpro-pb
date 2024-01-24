@@ -93,7 +93,7 @@ labels
 } 
 ```
 
-All of the different layout types (Excel, Word, or RDL) support using label data. For more information, see
+All of the different layout types (Excel, Word, or RDL) support using label data. For more information, see:
 - [Report labels in Excel layouts](./devenv-howto-excel-report-layout.md#report-labels-in-excel-layouts).
 - [Report labels in Word layouts](./devenv-howto-report-layout.md#report-labels-in-word-layouts).
 - [Report labels in RDL layouts](./devenv-howto-rdl-report-layout.md#report-labels-in-rdl-layouts).
