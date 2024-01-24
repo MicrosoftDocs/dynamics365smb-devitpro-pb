@@ -380,20 +380,19 @@ The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits 
 For more information on report limits, see [Report limits](devenv-report-object.md#report-limits).
 
 
-## Difference between RDLC and Word layouts
+## Difference between RDL and Word layouts
 
 If you're switching from developing reports with RDL layouts to using Word layouts, you might need to change your mindset on how you develop reports and their layouts. RDL allows you to dynamically change many properties in the layout. This isn't possible in Word. For many logic-related conditions, instead you have to do them in the report dataset in AL and then utilize the methods outlined in this article. 
 
 For reports where you expect customers to adjust the layout or use themes to change the overall look-and-feel of the document, consider using a Word layout over an RDL layout. 
 
+## See also
 
-## See Also
-
-[Using Hyperlinks in Word Layouts](devenv-hyperlinks-in-word-report-layouts.md)  
-[WordMergeDataItem Property](properties/devenv-wordmergedataitem-property.md)   
-[Report Design Overview](devenv-report-design-overview.md)  
-[Report Object](devenv-report-object.md)  
-[Report Extension Object](devenv-report-ext-object.md)  
-[Developing a Custom Report Render](devenv-report-custom-render.md)  
-[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
-[Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)  
+[Using hyperlinks in Word layouts](devenv-hyperlinks-in-word-report-layouts.md)  
+[WordMergeDataItem property](properties/devenv-wordmergedataitem-property.md)   
+[Report design overview](devenv-report-design-overview.md)  
+[Report object](devenv-report-object.md)  
+[Report extension object](devenv-report-ext-object.md)  
+[Developing a custom report render](devenv-report-custom-render.md)  
+[Creating an RDL layout report](devenv-howto-rdl-report-layout.md)  
+[Creating an Excel layout report](devenv-howto-excel-report-layout.md)  
