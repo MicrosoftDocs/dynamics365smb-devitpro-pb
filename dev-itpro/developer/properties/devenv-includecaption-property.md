@@ -35,7 +35,7 @@ If you want to use the Caption or CaptionML values of a field as a label on a re
 
 ## Example
 
-In this example, the report has a dataitem based on the Item table. The dataitem has a column *No_Item* based on the field *No.* from the Item table and the caption of this column should be included as a label in the report dataset.
+In this example, the report has a dataitem based on the **Item table**. The dataitem has a column **No_Item** based on the field **No.** from the **Item** table, and the caption of this column should be included as a label in the report dataset.
 
 ```AL
 ...
@@ -50,7 +50,7 @@ dataset
 }
 ```
 
-The corresponding label in the dataset will then be called *No_ItemCaption*
+The corresponding label in the dataset will then be called *No_ItemCaption*.
 
 ## See Also  
 
