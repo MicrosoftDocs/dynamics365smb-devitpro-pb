@@ -39,7 +39,7 @@ In v1.0, following resources didn’t use the SystemId as the primary key. Inste
 - trialBalance
 - vendorPurchase
 
-All multipart keys and non-GUID in v2.0 have been replaced with unique GUID keys. API v2.0 entities can be retrieved with the `SystemId`. `SystemId` is immutable, platform-enforced and indexed. This change improves auditing and API reading performance. It's also possible to create a new record and provide the `SystemId` in API v2.0.
+All multipart keys and non-GUID in v2.0 are replaced with unique GUID keys. API v2.0 entities can be retrieved with the `SystemId`. `SystemId` is immutable, platform-enforced and indexed. This change improves auditing and API reading performance. It's also possible to create a new record and provide the `SystemId` in API v2.0.
 
 ## Nested objects
 
@@ -50,7 +50,7 @@ In API v1.0, some properties had [complex types](../v1.0/resources/dynamics_comp
 - ITEM-UOM
 - DOCUMENTLINEOBJECTDETAILS
 
-Complex properties allowed returning nested JSON object in the API response. In API v2.0, all complex properties are replaced with first-level properties or navigation properties. This change improves API performance significantly since complex fields were calculated in the runtime and added additional compute time.
+Complex properties allowed returning nested JSON object in the API response. In API v2.0, all complex properties are replaced with first-level properties or navigation properties. This change improves API performance significantly since complex fields were calculated in the runtime and added more compute time.
 
 The change from complex property to first-level property can be seen in [customer](../v2.0/resources/dynamics_customer.md) resource type. In API v1.0, property `address` used `POSTALADDRESS`. 
 
@@ -113,7 +113,7 @@ Here's an example of the response from [API v1.0 item resource](../v1.0/api/dyna
 }
 ```
 
-There's no first-level property replacement of the `baseUnitOfMeasure` property in an example response from [API v2.0 item resource](../v2.0/api/dynamics_item_get.md). Instead, the new navigation property replacement `unitOfMeasure` represents data from related [unitOfMesure](../v2.0/resources/dynamics_unitOfMeasure.md) resource and may be optionally included in the response object. Navigation properties are included in the response object by `$expand` OData parameter.
+There's no first-level property replacement of the `baseUnitOfMeasure` property in an example response from [API v2.0 item resource](../v2.0/api/dynamics_item_get.md). Instead, the new navigation property replacement `unitOfMeasure` represents data from related [unitOfMesure](../v2.0/resources/dynamics_unitOfMeasure.md) resource and might be optionally included in the response object. Navigation properties are included in the response object by `$expand` OData parameter.
 
 ```
 GET businesscentralPrefix/companies({id})/items({id})?$expand=unitOfMeasure
@@ -166,7 +166,7 @@ In API v1.0, API sub pages (navigational properties) were always considered as c
 
 ## Enums
 
-All properties that were of type option in API v1.0 are converted into enums for API v2.0. These properties were previously exposed as strings, instead now they are strongly typed. Enum values can be accessed from the `metadata` endpoint, also enum captions can be accessed from the `entityDefinitions` endpoint.
+All properties that were of type option in API v1.0 are converted into enums for API v2.0. These properties were previously exposed as strings, instead now they're strongly typed. Enum values can be accessed from the `metadata` endpoint, also enum captions can be accessed from the `entityDefinitions` endpoint.
 
 This change allows integration utilizing [!INCLUDE [prod_short](../../developer/includes/prod_short.md)] API v2.0 to determine available values for enum properties, for example displaying dropdown values to the end user.
 
