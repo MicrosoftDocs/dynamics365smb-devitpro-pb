@@ -49,6 +49,7 @@ Please note that new customers will automatically get the latest builds of Busin
 
 
 ### Access and administer environments as Dynamics 365 Business Central Administrator
+
 Environments and the Admin Center can now be accessed and administered with the new Microsoft Entra role Dynamics 365 Business Central Administrator. This role improves upon the roles currently supported in that it does not grant access to resources beyond Business Central, giving customers an option to grant internal and delegated administrators access to Business Central without giving access to other resources and services in the tenant.
 
 There are no changes to the access granted to administrators with a Global Administrator or Dynamics 365 Administrator role assigned. Delegated Helpdesk Administrators will soon lose access to the Admin Center; we recommend you replace any use of this role with the Dynamics 365 Business Central Administrator role. If you have accessed your customer environments using this role recently you will soon receive deprecation notifications sent to notification recipients set up in the Admin Center. Read more [here](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights).
