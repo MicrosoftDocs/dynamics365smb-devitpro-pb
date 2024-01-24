@@ -18,6 +18,8 @@ This article explains the process for running the data upgrade as part of cloud 
 
 Data replication has been run on the company or companies that you're migrating to the online environment. For more information, go to [Run data replication](migrate-data-replication-run.md).
 
+[!INCLUDE [cloud-migration-telemetry](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
+
 ## Prepare
 
 Once you start the data upgrade on an environment, all client connections are terminated. You can't reconnect until the upgrade process has completed. Also, hotfixes can't be applied and scheduled tasks can't be run. This behavior means data upgrade is the only process running on the environment, which helps prevent potentials database locks and errors.
