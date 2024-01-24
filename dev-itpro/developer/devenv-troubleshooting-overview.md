@@ -69,7 +69,8 @@ Performance:
 - [Performance overview](../performance/performance-overview.md)
 - [How to work with a performance problem](../performance/performance-work-perf-problem.md)
 
-Reports: 
+Reports and printing: 
+- [Troubleshoot printer errors](./devenv-reports-troubleshoot-printing.md)
 - [Troubleshoot report errors](devenv-reports-troubleshooting.md)
 
 Shopify integration
