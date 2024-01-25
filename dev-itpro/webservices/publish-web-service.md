@@ -95,15 +95,19 @@ You can verify the availability of that web service by using a browser. Or choos
     |----------------------|------------|-------------|  
     |API| See [Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online](../api-reference/v2.0/endpoints-apis-for-dynamics.md)| 
     |OData|https://*Server*:*ODataWebServicePort*/*ServerInstance*/OData/Company\('*CompanyName*'\)|https://localhost:7048/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/OData/Company\('CRONUS International Ltd.'\)|  
+    |OData|https://*Server*:*ODataWebServicePort*/*ServerInstance*/OData/Company\(Id=guid\) | https://localhost:7048/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/OData/Company\(Id=a4bc6898-4591-4cf7-9990-293a0a0d66b7\)|  
     |SOAP|https://*Server*:*SOAPWebServicePort*/*ServerInstance*/WS/*CompanyName*/services/|https://localhost:7047/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/WS/CRONUS International Ltd./services/| 
 
-     The company name is case-sensitive.  
-
+     The company name is case-sensitive. For OData, it is recommended to use the *Company(Id=guid)* syntax as the company id is immutable, whereas the company name can be changed by an administrator.
   
 2.  Review the information that is displayed in the browser. Verify that you can see the name of the web service that you've created.  
   
 When you access a web service, and you want to write data back to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you must specify the company name. You can specify the company as part of the URI as shown in the examples. Or you can specify the company as part of the query parameters. For example, the following URIs point to the same OData web service and are both valid URIs.  
-  
+
+``` (recommended syntax) 
+https://localhost:7048/<serverinstance>/OData/Company(Id=a4bc6898-4591-4cf7-9990-293a0a0d66b7)/Customer  
+```  
+
 ```  
 https://localhost:7048/<serverinstance>/OData/Company('CRONUS International Ltd.')/Customer  
 ```  
