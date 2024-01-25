@@ -25,10 +25,8 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-| X | X | X |
-| X | X | X |
-| X | X | X |
-
+| Spain | Sending multiple documents in SII | Improved feature related with posting lots of documents, where multiple job queue entries trigger and send the same documents to the API, resulting in "Factura Duplicada" error. Now when one job queue entry is executed, it reserves the set of documents and the job queue entry does not consider same documents for sending. |
+| Denmark | VAT E-submission | With new improved feature, customer doesn't need to posses the certificate, as they can use Microsoft default certificate instead of that. |
 
 
 ## Release Plan
