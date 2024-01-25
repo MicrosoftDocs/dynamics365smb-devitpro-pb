@@ -55,9 +55,9 @@ Alternatively, you can access the administration center from the URL, use the fo
 
 Partner organizations can set up a (Granular Delegated Administration Privileges (GDAP))[/partner-center/gdap-introduction] relationship including at least one of the Microsoft Entra roles that grant access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to access their customers' administration centers. [Learn how to set up a GDAP relationship](/partner-center/gdap-obtain-admin-permissions-to-manage-customer).
 
-After the relationship is set up, users in the partner tenant can access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] for the customer's tenant if they're in a security group that's assigned to at least one of the required roles in the active GDAP relationship with these steps:
+After the relationship is set up, users in the partner tenant can access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] for the customer's tenant. However, the users must be in a security group assigned to at least one of the required roles in the active GDAP relationship, which is done by completing these steps:
 
-1. Log into the [Partner Dashboard](https://partnercenter.microsoft.com/dashboard).
+1. Sign in to the [Partner Dashboard](https://partnercenter.microsoft.com/dashboard).
 2. Select the **Customers** link in the navigation pane.
 3. Select the customer tenant that you want to do administrative tasks for.
 4. Select **Service Management**.
@@ -75,7 +75,7 @@ In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], y
 
 ### Cleaning up settings
 
-If your organization decides to switch to another partner, you must make sure that some settings that your current partner made in your [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] are removed. This includes the following settings:
+If your organization decides to switch to another partner, you must make sure that some settings that your current partner made in your [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] are removed. This task includes the following settings:
 
 - Support contact details
 
@@ -87,18 +87,18 @@ If your organization decides to switch to another partner, you must make sure th
     1. In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], on the left side, choose **Notification recipients**
     2. Verify that the list of email addresses are still relevant; if not, then delete or modify the values.
 
-- Application Insights key (if this was set up by the partner)
+- Application Insights key (if set up by the partner)
 
     1. In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment, and then, in the top menu, choose **Application Insights Key**.
     2. Remove the value of the **Instrumentation Key**
 
-- Authorized Microsoft Entra apps (if this was set up by the partner)
+- Authorized Microsoft Entra apps (if set up by the partner)
 
     1. In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], navigate to 'Authorized Microsoft Entra apps' and remove any apps authorized by the partner.
     2. Revoke consent granted to the Microsoft Entra app belonging to the partner from your Microsoft Entra tenant. For more information, [see here](/azure/active-directory/manage-apps/manage-application-permissions).
     3. Removed apps might have extra permissions assigned to execute certain administration operations, such as the **D365 BACKUP/RESTORE** permission. Any apps set up with permissions in Business Central can be disabled from the **Microsoft Entra applications** page. For more information, [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
-When you establish a relationship with a new partner, they'll fill in these fields again.
+When you establish a relationship with a new partner, they fill in these fields again.
 
 
 ## See also
