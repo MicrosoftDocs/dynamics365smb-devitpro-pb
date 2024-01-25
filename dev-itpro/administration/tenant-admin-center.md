@@ -22,8 +22,8 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 > [!div class="mx-imgBorder"]
 > ![Business Central Admin Center.](../developer/media/admin/business_central_admin_center.png)
 
-## Supported Microsoft Entra roles for accessing the admin center
-
+## Supported Microsoft Entra roles for access
+i
 
 Users with the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference) are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments:
 
@@ -31,26 +31,14 @@ Users with the following [Microsoft Entra roles](/entra/identity/role-based-acce
 - [Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator)
 - Dynamics 365 Business Central Administrator
 
-Although the following roles aren'tvrequired to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md) or it's environments, they allow for administration of tools and resources that integrate with [!INCLUDE [prod_short](../developer/includes/prod_short.md)]:
+Although the following roles aren't required to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md) or its environments, they allow for administration of tools and resources that integrate with [!INCLUDE [prod_short](../developer/includes/prod_short.md)]:
 
-- [Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator)
-  
-  Can create and manage all aspects of Power Platform environments.
-- [Service Support Administrator](/entra/identity/role-based-access-control/permissions-reference#service-support-administrator)
-  
-  Can create and manage support requests.
-- [Message Center Reader][/entra/identity/role-based-access-control/permissions-reference#message-center-reader)
-  
-  Can read notifications in (Message Center)[/microsoft-365/admin/manage/message-center?view=o365-worldwide) and sign up for email notifications.
-- [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator)
-  
-  Can create and manage all aspects of enterprise applications and application registration, for example to manage applications that interact with the Business Central and Admin Center APIs.
-- [Conditional Access Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator)
-  
-  Can manage conditional access settings, for example to specify access policies for authentications to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] application.
-- [License Administrator](/entra/identity/role-based-access-control/permissions-reference#license-administrator)
-  
-  Can add, remove, and update license assignments on users and groups.
+- [Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) - create and manage all aspects of Power Platform environments.
+- [Service Support Administrator](/entra/identity/role-based-access-control/permissions-reference#service-support-administrator) - create and manage support requests.
+- [Message Center Reader](/entra/identity/role-based-access-control/permissions-reference#message-center-reader) - read notifications in [Message Center](/microsoft-365/admin/manage/message-center?view=o365-worldwide) and sign up for email notifications.
+- [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator) - create and manage all aspects of enterprise applications and application registration, for example to manage applications that interact with the Business Central and Admin Center APIs.
+- [Conditional Access Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator) - manage conditional access settings, for example to specify access policies for authentications to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] application.
+- [License Administrator](/entra/identity/role-based-access-control/permissions-reference#license-administrator) - add, remove, and update license assignments on users and groups.
 
 ## Internal administrators
 
@@ -65,7 +53,9 @@ Alternatively, you can access the administration center from the URL, use the fo
 
 ## Delegated administrators (Partner users)
 
-Partner organizations can set up a (Granular Delegated Administration Privileges (GDAP))[/partner-center/gdap-introduction] relationship including at least one of the Microsoft Entra roles that grant access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to access their customers' administration centers. Learn how to set up a GDAP relationship (here)[/partner-center/gdap-obtain-admin-permissions-to-manage-customer]. After the relationship has been set up users in the partner tenant can access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] for the customer's tenant if they are in a security group that has been assigned to at least one of the required roles in the active GDAP relationship with these steps:
+Partner organizations can set up a (Granular Delegated Administration Privileges (GDAP))[/partner-center/gdap-introduction] relationship including at least one of the Microsoft Entra roles that grant access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to access their customers' administration centers. [Learn how to set up a GDAP relationship](/partner-center/gdap-obtain-admin-permissions-to-manage-customer).
+
+After the relationship is set up, users in the partner tenant can access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] for the customer's tenant if they're in a security group that's assigned to at least one of the required roles in the active GDAP relationship with these steps:
 
 1. Log into the [Partner Dashboard](https://partnercenter.microsoft.com/dashboard).
 2. Select the **Customers** link in the navigation pane.
@@ -106,9 +96,9 @@ If your organization decides to switch to another partner, you must make sure th
 
     1. In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], navigate to 'Authorized Microsoft Entra apps' and remove any apps authorized by the partner.
     2. Revoke consent granted to the Microsoft Entra app belonging to the partner from your Microsoft Entra tenant. For more information, [see here](/azure/active-directory/manage-apps/manage-application-permissions).
-    3. Removed apps may have additional permissions assigned to execute certain administration operations, such as the **D365 BACKUP/RESTORE** permission. Any apps set up with permissions in Business Central can be disabled from the **Microsoft Entra applications** page. For more information, [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
+    3. Removed apps might have extra permissions assigned to execute certain administration operations, such as the **D365 BACKUP/RESTORE** permission. Any apps set up with permissions in Business Central can be disabled from the **Microsoft Entra applications** page. For more information, [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
-When you establish a relationship with a new partner, they will fill in these fields again.
+When you establish a relationship with a new partner, they'll fill in these fields again.
 
 
 ## See also
