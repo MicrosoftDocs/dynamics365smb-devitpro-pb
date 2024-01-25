@@ -2,7 +2,7 @@
 title: Get cloudMigrationCompanies
 description: Gets a cloud migration company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
+ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
 ms.date: 03/25/2022
