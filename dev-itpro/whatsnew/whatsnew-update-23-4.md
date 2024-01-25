@@ -19,7 +19,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes
 - [AppSource ISV publishers can preview their AppSource apps with select customers](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/appsource-isv-publishers-preview-their-appsource-apps-select-customers)
--
 
 ## Localization updates
 
