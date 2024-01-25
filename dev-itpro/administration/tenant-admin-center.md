@@ -22,28 +22,35 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 > [!div class="mx-imgBorder"]
 > ![Business Central Admin Center.](../developer/media/admin/business_central_admin_center.png)
 
-## Supported (Microsoft Entra roles)[/entra/identity/role-based-access-control/permissions-reference]
+## Supported Microsoft Entra roles for accessing the admin center
 
-Users with the following Microsoft Entra roles are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments:
 
-- (Global Administrator)[/entra/identity/role-based-access-control/permissions-reference#global-administrator]
-- (Dynamics 365 Administrator)[/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator]
+Users with the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference) are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments:
+
+- [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator)
+- [Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator)
 - Dynamics 365 Business Central Administrator
 
-While not required to access the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] or Business Central environments, the following roles allow for administration of tools and resources that integrate with [!INCLUDE [prod_short](../developer/includes/prod_short.md)]:
+Although the following roles aren'tvrequired to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md) or it's environments, they allow for administration of tools and resources that integrate with [!INCLUDE [prod_short](../developer/includes/prod_short.md)]:
 
-- (Power Platform Administrator)[/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator]
-  - Can create and manage all aspects of Power Platform environments.
-- (Service Support Administrator)[/entra/identity/role-based-access-control/permissions-reference#service-support-administrator]
-  - Can create and manage support requests.
-- (Message Center Reader)[/entra/identity/role-based-access-control/permissions-reference#message-center-reader]
-  - Can read notifications in (Message Center)[/microsoft-365/admin/manage/message-center?view=o365-worldwide] and sign up for email notifications.
-- (Cloud Application Administrator)[/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator]
-  - Can create and manage all aspects of enterprise applications and application registration, for example to manage applications that interact with the Business Central and Admin Center APIs.
-- (Conditional Access Administrator)[/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator]
-  - Can manage conditional access settings, for example to specify access policies for authentications to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] application.
-- (License Administrator)[/entra/identity/role-based-access-control/permissions-reference#license-administrator]
-  - Can add, remove, and update license assignments on users and groups.
+- [Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator)
+  
+  Can create and manage all aspects of Power Platform environments.
+- [Service Support Administrator](/entra/identity/role-based-access-control/permissions-reference#service-support-administrator)
+  
+  Can create and manage support requests.
+- [Message Center Reader][/entra/identity/role-based-access-control/permissions-reference#message-center-reader)
+  
+  Can read notifications in (Message Center)[/microsoft-365/admin/manage/message-center?view=o365-worldwide) and sign up for email notifications.
+- [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator)
+  
+  Can create and manage all aspects of enterprise applications and application registration, for example to manage applications that interact with the Business Central and Admin Center APIs.
+- [Conditional Access Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator)
+  
+  Can manage conditional access settings, for example to specify access policies for authentications to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] application.
+- [License Administrator](/entra/identity/role-based-access-control/permissions-reference#license-administrator)
+  
+  Can add, remove, and update license assignments on users and groups.
 
 ## Internal administrators
 
