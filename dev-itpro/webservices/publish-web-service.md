@@ -104,10 +104,12 @@ You can verify the availability of that web service by using a browser. Or choos
   
 When you access a web service, and you want to write data back to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you must specify the company name. You can specify the company as part of the URI as shown in the examples. Or you can specify the company as part of the query parameters. For example, the following URIs point to the same OData web service and are both valid URIs.  
 
-``` (recommended syntax) 
+Recommended syntax:
+``` 
 https://localhost:7048/<serverinstance>/OData/Company(Id=a4bc6898-4591-4cf7-9990-293a0a0d66b7)/Customer  
 ```  
 
+Alternative syntax (also supported):
 ```  
 https://localhost:7048/<serverinstance>/OData/Company('CRONUS International Ltd.')/Customer  
 ```  
