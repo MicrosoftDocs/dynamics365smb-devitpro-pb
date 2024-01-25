@@ -5,7 +5,6 @@ author: qutreson
 ms.custom: na
 ms.date: 08/24/2023
 ms.reviewer: solsen
-ms.suite: na
 ms.topic: conceptual
 ms.author: qutreson
 ---
@@ -251,6 +250,9 @@ No, it isn't required to use an EV code-signing certificate. Standard code-signi
 ### Can I reuse the same code-signing certificate to sign multiple apps?
 
 Yes, you can reuse the same code-signing certificate for multiple extensions. Code-signing certificates have a validity period defined over time.
+
+### Which certificate format is accepted?
+Currently we only accept `.pfx` certificates. However, if you have a different certificate format, check with your certificate provider to provide you `.pfx` file or convert your certificate to `.pfx`. There are resources online, which can help you convert a certificate to `.pfx` format.
 
 ## Questions about names, affixes, and ID ranges
 

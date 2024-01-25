@@ -550,6 +550,7 @@
 #### [AL0811](diagnostics/diagnostic-al811.md)
 #### [AL0812](diagnostics/diagnostic-al812.md)
 #### [AL0813](diagnostics/diagnostic-al813.md)
+#### [AL0817](diagnostics/diagnostic-al817.md)
 #### [AL0999](diagnostics/diagnostic-al999.md)
 #### [AL1001](diagnostics/diagnostic-al1001.md)
 #### [AL1002](diagnostics/diagnostic-al1002.md)
@@ -1035,6 +1036,7 @@
 #### [AS0121](analyzers/appsourcecop-as0121.md)
 #### [AS0122](analyzers/appsourcecop-as0122.md)
 #### [AS0123](analyzers/appsourcecop-as0123.md)
+#### [AS0124](analyzers/appsourcecop-as0124.md)
 ### PerTenantExtensionCop Analyzer Rules
 #### [PTE0001](analyzers/pertenantextensioncop-pte0001.md)
 #### [PTE0002](analyzers/pertenantextensioncop-pte0002.md)
@@ -1083,7 +1085,8 @@
 ### [Get, Find, and Next Methods](devenv-get-find-and-next-methods.md)
 ### [Create Handler Methods](devenv-creating-handler-methods.md)
 ### [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md)
-### [Collecting Errors](devenv-error-collection.md)
+<!-- ### [Collecting Errors](devenv-error-collection.md) -->
+### [Collecting Errors API](devenv-error-collection-api.md)
 ### [Progress Windows, Message, Error, and Confirm Methods](devenv-progress-windows-message-error-and-confirm-methods.md)
 ### [Test Codeunits and Text Methods](devenv-test-codeunits-and-test-methods.md)
 ### [Procedure Overload](methods/devenv-overload-method.md)

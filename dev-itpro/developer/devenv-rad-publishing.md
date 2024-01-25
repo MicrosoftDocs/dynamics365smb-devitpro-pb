@@ -21,7 +21,7 @@ The files that have been changed by the application developer within Visual Stud
 > The `rad.json` file should not be modified.
 
 > [!IMPORTANT]  
-> If you change many files and close Visual Studio Code without a build (**Ctrl+Shift+B**), publish (**Ctrl+F5**, **Ctrl+Shift+F5**) or debug (**F5**, **Shift+F5**), all the RAD changes will be lost. This means that if you, in the next Visual Studio Code session perform a RAD publishing, it'll be done on the latest changes and not on the prior changes. This can lead to an incomplete published package if it succeeds. It's therefore a best practice to do a regular publish. You can always check the RAD file in the code project to see what application objects are going to be changed during publishing.
+> If you change many files and close Visual Studio Code without a build (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>), publish (<kbd>Ctrl</kbd>+<kbd>F5</kbd>, <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F5</kbd>) or debug (<kbd>F5</kbd>, <kbd>Shift</kbd>+<kbd>F5</kbd>), all the RAD changes will be lost. This means that if you, in the next Visual Studio Code session perform a RAD publishing, it'll be done on the latest changes and not on the prior changes. This can lead to an incomplete published package if it succeeds. It's therefore a best practice to do a regular publish. You can always check the RAD file in the code project to see what application objects are going to be changed during publishing.
 
 In scenarios when application IDs are renamed, or refactored it's also a best practice to first do a full publishing, and then a RAD publishing for the consecutive changes. RAD doesn't check for application ID changes and ID changes can occur in a wrongly published application.
 
@@ -33,7 +33,7 @@ A RAD published file won't contain the following files that are normally package
 - Table data
 - Web service definitions  
 
-These files will need to be regenerated with full publishing (**Ctrl+F5**). A RAD file will be deleted as a result of a successful publishing.
+These files will need to be regenerated with full publishing (<kbd>Ctrl</kbd>+<kbd>F5</kbd> ). A RAD file will be deleted as a result of a successful publishing.
 
 > [!NOTE]  
 > If RAD publishing fails, then you must do a full publishing before performing another RAD publishing. The final state of an application must be built using full publishing, and never with RAD publishing.
@@ -47,8 +47,8 @@ There are two commands for starting a RAD-based action.
 
 |Shortcut     |Description|
 |-------------|-----------|
-|Ctrl+Alt+F5  |Start RAD publishing without debugging.|
-|Alt+F5       |Start RAD with debugging.|
+|<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F5</kbd>  |Start RAD publishing without debugging.|
+|<kbd>Alt</kbd>+<kbd>F5</kbd>       |Start RAD with debugging.|
 
 ## See also
 [Developing Extensions in AL](devenv-dev-overview.md)  

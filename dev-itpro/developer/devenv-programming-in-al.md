@@ -3,16 +3,17 @@ title: "Programming in AL"
 ms.custom: na
 ms.date: 09/21/2022
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 
 # Programming in AL
+
 AL is the programming language that is used for manipulating data such as retrieving, inserting, and modifying records in a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database. It controls the execution of the various application objects, such as pages, reports, or codeunits.
 
 With AL, you can create business rules to ensure that the data, which is stored in the database is meaningful and consistent with the way customers do business. Through AL programming, you can:
+
 - Add new data or transfer data from one table to another, for example, from a journal table to a ledger table.
 - Combine data from multiple tables into one report or display it on one page.
 
@@ -64,13 +65,16 @@ We recommend the following guidelines for AL code:
 
 - If you must put code on an object instead of in a codeunit, then put the code as close as possible to the object on which it operates. For example, put code that modifies records in the triggers of the table fields.  
 
-## Reusing code  
+## Reusing code
+
 Reusing code makes developing applications both faster and easier. More importantly, if you organize your AL code as suggested, your applications will be less prone to errors. By centralizing the code, you won't unintentionally create inconsistencies by performing the same calculation in many places, for example, in several triggers that have the same table field as their source expression. If you have to change the code, you could either forget about some of these triggers or make a mistake when you modify one of them.
 
-## See Also
-[Simple Statements](devenv-al-simple-statements.md)  
-[Control Statements](devenv-al-control-statements.md)  
+## See also
+
+[Simple statements](devenv-al-simple-statements.md)  
+[Control statements](devenv-al-control-statements.md)  
 [Methods](devenv-al-methods.md)  
-[System-Defined Variables](devenv-system-defined-variables.md)  
-[Developing Extensions](devenv-dev-overview.md)  
-[Get Started with AL](devenv-get-started.md)
+[System-defined variables](devenv-system-defined-variables.md)  
+[AL operators](devenv-al-operators.md)  
+[Developing extensions](devenv-dev-overview.md)  
+[Get started with AL](devenv-get-started.md)

@@ -4,8 +4,6 @@ description: This article describes how to add code to application objects that 
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -46,7 +44,7 @@ There are two variations of the LOGMESSAGE method. The difference is that one me
 
 The LOGMESSAGE method for using a dictionary for dimensions has the following signature:
 
-```
+```al
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, CustomDimensions: Dictionary of [Text, Text])
 ```
 
@@ -54,7 +52,7 @@ Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataC
 
 The LOGMESSAGE method for using dimension overloads has the following signature:
 
-```
+```al
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
 ```
 

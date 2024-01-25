@@ -4,8 +4,6 @@ description: This article explains how to indent rows in a repeater control to d
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -32,7 +30,7 @@ To demonstrate how indented hierarchy works, we'll use a basic table and page. F
 
 #### Table
 
-```
+```al
 table 50100 MyTable
 {
     fields
@@ -59,7 +57,7 @@ table 50100 MyTable
 
 #### Page
 
-```
+```al
 page 50100 MyPage
 {
     PageType = List;
@@ -110,7 +108,7 @@ In the figure, indentation is applied to the second column. Setting up the fixed
 In this example, you indent records based on the value of the **Indent** column and apply the indentation to **Name** column. You set the IndentationColumn and IndentationControls on the repeater of the page, as shown in the following code:
 
 <!-- 
-```
+```al
 repeater(Control1)
 {
     IndentationColumn = Indent;
@@ -187,7 +185,7 @@ Unlike fixed indented lists, a collapsible hierarchy always indents the left-mos
 In this example, you'll indent records based on the value of the **Indent** column. Records will indent on the **Number** column and parent records will be collapsible. You add the IndentationColumn, ShowAsTree, and TreeInitialState properties to the pages' repeater: 
 
 <!--
-```
+```al
 repeater(Control1)
 {
     IndentationColumn = Indent;

@@ -4,13 +4,14 @@ description: Compound, conditional, and repetitive control statements in AL for 
 ms.custom: na
 ms.date: 03/15/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 
 # AL control statements
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 AL code consists of one or more statements, which are executed sequentially in a top-down order. However, you'll often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do so, you use control structures.  
 
@@ -379,7 +380,7 @@ The *`<List>`* variable must be of the List, XmlNodeList, XmlAttributeCollection
 
 The following code example iterates through a list of customer names and returns each customer name in a message.
 ```AL  
-procedure PrintCustomerNames(customerNames : List of [Text]);
+procedure PrintCustomerNames(customerNames : List of [Text])
 var
     customerName : Text;
 begin

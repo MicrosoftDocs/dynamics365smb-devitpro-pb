@@ -6,8 +6,6 @@ ms.custom: na
 ms.date: 05/25/2023
 ms.reviewer: solsen
 ms.search.forms: 24
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: bholtorf
 ---

@@ -4,7 +4,7 @@ description: Learn about how to develop efficient and fast OData/API clients for
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.author: kepontop
 ms.date: 07/03/2023
@@ -17,6 +17,9 @@ ms.date: 07/03/2023
 ## Using data access intent read-only
 
 By specifying the HTTP header `Data-Access-Intent: ReadOnly` for GET requests, you can instruct Business Central to run requests against a replica of the database, which can lead to improved performance. To learn more, see [Specifying Data Access Intent for GET requests](../developer/devenv-connect-apps-tips.md#DataAccessIntent).
+
+[!INCLUDE[database_access_intent_note](../includes/include-database-access-intent-note.md)]
+
 
 ## Using OData transaction `$batch`
 

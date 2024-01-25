@@ -4,8 +4,6 @@ description: Describe the OnAfterDocumentPrintReady Event in Business Central.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -29,7 +27,7 @@ When a user selects the print action on a report request page
 
 ```AL
 IntegrationEvent(false, false)]
-local procedure OnAfterDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean);
+local procedure OnAfterDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean)
 ```
 
 ## Parameters

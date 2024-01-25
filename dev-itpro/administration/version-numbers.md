@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 03/09/2022
-ms.service: dynamics365-business-central
+
 ms.custom: bap-template
 ---
 # Version numbers in Business Central

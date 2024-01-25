@@ -7,7 +7,7 @@ ms.reviewer: solsen
 ms.topic: conceptual
 ms.date: 11/03/2023
 ms.custom: bap-template
-ms.service: dynamics365-business-central
+
 ---
 # Analyzing Extension Upload Validation Telemetry 
 

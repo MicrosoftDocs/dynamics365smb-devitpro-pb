@@ -4,9 +4,7 @@ description: We are constantly streamlining and adjusting our app in-step with m
 author: ZdenekBicek
 
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms. search.keywords: deprecated, Czech, local functionality
 ms.date: 04/01/2021
 ms.reviewer: jswymer

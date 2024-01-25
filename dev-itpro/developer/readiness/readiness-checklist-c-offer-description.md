@@ -21,7 +21,7 @@ Describe WHY customers would need your product and the value they get from using
 - Benefit based paragraph
 - Benefits in bullet points paragraph
 - Closing Call to action paragraph
-- Supported editions, countries, and languages paragraph
+- Supported editions, countries/regions, and languages paragraph
 
 By including all of these paragraphs, you'll provide prospects with a compelling offer that explains them WHY they need to start using it.
 
@@ -136,46 +136,46 @@ This app supports both the Essential and Premium editions of Microsoft Dynamics 
 
 
 
-## Supported Countries
+## Supported Countries/Regions
 
 | Paragraph| Description |
 |-------------|--------------|
-|Supported Countries | Insert a section in the bottom of your description that clearly states which countries your app is available in. |
+|Supported Countries/regions| Insert a section in the bottom of your description that clearly states which countries/regions your app is available in. |
 
-**Scenario 1: Your offer supports specific countries**:
+**Scenario 1: Your offer supports specific countries/regions**:
 
 
-List the specific countries your offer supports. You can find the list of supported Countries for Microsoft Dynamics 365 Business Central here: ["Country/regional availability and supported languages"](../../compliance/apptest-countries-and-translations.md). 
+List the specific countries/regions your offer supports. You can find the list of supported Countries/Regions for Microsoft Dynamics 365 Business Central here: ["Country/regional availability and supported languages"](../../compliance/apptest-countries-and-translations.md). 
 
 How to structure the content in this paragraph?
 
 - Create a header 4 (it will automatically become bold)
-- Call the header "Supported countries".
-- Include a sentence that lists the countries that your app is available in.
+- Call the header "Supported countries/regions".
+- Include a sentence that lists the countries/regions that your app is available in.
 
 *Example*: 
 
- **Supported Countries**: 
+ **Supported Countries/Regions**: 
   
   Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States 
 
- **Scenario 2: Your offer supports all countries**: 
+ **Scenario 2: Your offer supports all countries/regions**: 
 
-State that you support all countries where Microsoft Dynamics 365 Business Central is available. By doing this, you don't need to update the store listing for every expansion. Remember to test your app on every country you intend to support, as each country’s base code is slightly different from one another. 
+State that you support all countries/regions where Microsoft Dynamics 365 Business Central is available. By doing this, you don't need to update the store listing for every expansion. Remember to test your app on every country you intend to support, as each country’s base code is slightly different from one another. 
 
 How to structure the content in this paragraph?
 
 - Create a header 4 (it will automatically become bold)
-- Call the header "Supported countries".
-- Include a sentence that states your offer supports all countries where Business Central is available
+- Call the header "Supported countries/regions".
+- Include a sentence that states your offer supports all countries/regions where Business Central is available
 
 *Example*:
 
 
- **Supported countries:** 
+ **Supported countries/regions:** 
   
   
-  All countries where Microsoft Dynamics 365 Business Central is available
+  All countries/regions where Microsoft Dynamics 365 Business Central is available
 
 
 ## Supported Languages

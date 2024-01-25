@@ -4,7 +4,6 @@ description: Describes differences and limitations when developing pages for the
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.suite: na
 ms.topic: conceptual
 author: blrobl
 ms.author: brobledodiaz

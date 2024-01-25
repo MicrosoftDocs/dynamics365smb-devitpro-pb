@@ -4,13 +4,12 @@ description: With AL complex types, you can return most types from procedures in
 ms.custom: na
 ms.date: 09/29/2023
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: esbenk
+ms.collection: get-started
 ---
 
-# AL Complex Types
+# AL complex types
 
 [!INCLUDE[2021_releasewave1.md](../includes/2021_releasewave1.md)]
 
@@ -25,9 +24,9 @@ The method in the example below, will take a name, and return the first customer
 /// <param name="Name">Name filter</param> 
 /// <returns>First customer</returns> 
 
-procedure GetCustomerByName(Name: Text): record Customer;
+procedure GetCustomerByName(Name: Text): Record Customer
 var
-    Customer: record Customer;
+    Customer: Record Customer;
 begin
     Customer.SetFilter(Name, '@' + Name + '*');
     Customer.FindFirst();
@@ -38,7 +37,7 @@ end;
 It's also possible to use a named return value. Internally, the exit-statement as seen in the example above causes an assignment to an allocated return value. The assignment will have a small performance cost based on the type. Since the record type is treated as a value-type, it's better.  
 
 ```al
-procedure GetCustomerByName(Name: Text) Customer: record Customer; 
+procedure GetCustomerByName(Name: Text) Customer: Record Customer
 begin 
    Customer.SetFilter(Name, '@' + Name + '*'); 
    Customer.FindFirst(); 
@@ -69,7 +68,7 @@ It doesn't only work for user-defined types like records, codeunits, etc., but a
 /// Returns a bing-ready HttpClient 
 /// </summary> 
 /// <returns>Bing HttpClient</returns> 
-procedure GetBingClient() Result: HttpClient;
+procedure GetBingClient() Result: HttpClient
 begin
     Result.SetBaseAddress('https://www.bing.com');
 end;
@@ -88,7 +87,7 @@ end;
 /// Get the response from www.bing.com as an html-string.  
 /// </summary> 
 /// <returns>string with html</returns> 
-procedure GetBingHtml() Result: Text;
+procedure GetBingHtml() Result: Text
 begin
     GetBingResponse().Content().ReadAs(Result);
 end;

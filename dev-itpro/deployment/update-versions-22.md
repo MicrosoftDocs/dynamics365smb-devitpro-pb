@@ -4,9 +4,9 @@ description: Learn about the updates for Dynamics 365 Business Central 2023 Rele
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 01/11/2024
 ms.custom: bap-template
 ---
 
@@ -22,12 +22,14 @@ You should always install the latest update.
 
 ## Available updates for Business Central 2023 release wave 1
 
-The following table lists the updates that have been released for 2023 release wave 1 of Business Central (version 22). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
+The following table lists the updates that have been released for 2023 release wave 1 of Business Central (version 22). The updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5034719](https://support.microsoft.com/help/5034719)|Update 22.9| January 2024|Application Build 22.9.62830</br>Platform Build 22.0.62805  |
+|[5033776](https://support.microsoft.com/help/5033776)|Update 22.8| December 2023|Application Build 22.8</br>Platform Build 22.0.  |
 |[5032754](https://support.microsoft.com/help/5032754)|Update 22.7| November 2023|Application Build 22.7.61690</br>Platform Build 22.0.61627  |
 |[5031951](https://support.microsoft.com/help/5031951)|Update 22.6| October 2023|Application Build 22.6.60909</br>Platform Build 22.0.60864  |
 |[5031031](https://support.microsoft.com/help/5031031)|Update 22.5| September 2023|Application Build 22.5.60134</br>Platform Build 22.0.59966  |

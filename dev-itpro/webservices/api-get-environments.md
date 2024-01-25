@@ -5,8 +5,6 @@ author: jswymer
 ms.custom: na
 ms.date: 02/10/2022
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: jswymer

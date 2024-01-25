@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 07/07/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -53,7 +51,7 @@ Clear(JsonObject)
 ## Example
 This example shows how to read JSON data from a stream into a JsonObject variable.
 
-```
+```al
 local procedure ReadJson(source : InStream) result : JsonObject;
 begin
     result.ReadFrom(source);    

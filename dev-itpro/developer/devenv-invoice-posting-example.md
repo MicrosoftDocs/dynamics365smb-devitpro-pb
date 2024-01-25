@@ -1,17 +1,15 @@
 ---
-title: "Extending G/L Entry Aggregations When Posting Invoices"
+title: "Extending G/L entry aggregations when posting invoices"
 description: Explore an example of how to extend the posting process for sales, purchase, and service documents.
 ms.custom: na
-ms.date: 09/09/2022
+ms.date: 01/03/2024
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: bholtorf
 ---
 
-# Extending G/L Entry Aggregations When Posting Invoices
+# Extending G/L entry aggregations when posting invoices
 
 > [!IMPORTANT]
 > This feature is currently available only for sandbox environments. Do not use it in production environments.
@@ -25,9 +23,9 @@ Extend the posting process for sales, purchase, and service documents by changin
 >
 > We've removed the dependencies from the Invoice Posting Buffer table in the Base Application and built an Invoice Posting object with an interface and an extensible enum for the implementation setup. For more information, see [The Objects to Use](devenv-invoice-posting-example.md#the-objects-to-use-for-your-extension)
 
-## The Objects to Use for Your Extension
+## The objects to use for your extension
 
-* The **Invoice Posting** interface provides a set of procedures for posting sales, purchase, and service invoices. This interface let's you replace the invoice posting implementation for an extension. 
+* The **Invoice Posting** interface provides a set of procedures for posting sales, purchase, and service invoices. This interface lets's you replace the invoice posting implementation for an extension. 
    > [!NOTE]
    > The legacy implementation is still available in posting codeunits, but are tagged as `obsolete`.
 * The **Sales Invoice Posting**. **Purchase Invoice Posting**, and **Service Invoice Posting** enums are extensible and define the current implementation. 
@@ -54,7 +52,7 @@ enum 815 "Sales Invoice Posting" implements "Invoice Posting"
 ```
 
 * The temporary **Invoice Posting Buffer** table uses the generic key, `Group ID: Text[1000]`. You can use the `BuildPrimaryKey()` method to compose the key from table fields. The `OnAfterBuildPrimaryKey` event can be used to compose the primary key in a different way. 
-* The **Invoice Posting Setup** field on the purchase and service setup tables lets you define the implementation for the (Sales) Invoice Posting codeunit. If you define the value `Invoice Posting (v.19)`, the Base Application will run codeunit 815 Sales Invoice Posting from the Sales-Post codeunit for your customized posting process. 
+* The **Invoice Posting Setup** field on the purchase and service setup tables lets you define the implementation for the (Sales) Invoice Posting codeunit. If you define the value `Invoice Posting (v.19)`, the Base Application runs codeunit 815 Sales Invoice Posting from the Sales-Post codeunit for your customized posting process. 
 
 Typically, you'll only need to add fields to the Invoice Posting Buffer table.
 
@@ -100,13 +98,13 @@ Typically, you'll only need to add fields to the Invoice Posting Buffer table.
     }
     ```
 
-3. Use your extension to set the `Invoice Posting (v.19)` value in the **Invoice Posting Setup** field on the **Sales & Receivables Setup** table. The Invoice Posting Setup field is not available on the Sales & Receivables Setup page to prevent the Invoice Posting interface from being misconfigured.
+3. Use your extension to set the `Invoice Posting (v.19)` value in the **Invoice Posting Setup** field on the **Sales & Receivables Setup** table. The Invoice Posting Setup field isn't available on the Sales & Receivables Setup page to prevent the Invoice Posting interface from being misconfigured.
 
-## Advanced Scenarios
+## Advanced scenarios
 
 In more advanced scenarios, you can create your own implementation codeunit and use it instead of codeunit 815 Sales Post Invoice, implement interface methods, and add your values to the Sales Invoice Posting enum. You can then use any methods for aggregation of G/L entries.
 
-## See Also
+## See also
 [The Microsoft_Application.app File](devenv-application-app-file.md)  
-[Publishing a Code-Customized Base Application for Business Central On-Prem](devenv-publish-code-customization.md)  
+[Publishing a Code-Customized Base Application for Business Central on-premises](devenv-publish-code-customization.md)  
 [Extending Application Areas](devenv-extending-application-areas.md)  

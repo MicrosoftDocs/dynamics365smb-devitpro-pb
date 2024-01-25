@@ -5,8 +5,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 --- 
@@ -94,7 +92,7 @@ table 50104 Address
 
     end;
 
-    procedure MyMethod();
+    procedure MyMethod()
     begin
         Message(Msg);
     end;

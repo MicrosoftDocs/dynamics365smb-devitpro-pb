@@ -4,13 +4,15 @@ description: Learn about known limitations with Business Central OData.
 ms.custom: na
 ms.date: 04/01/2022
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 
 # Known Limitations with Business Central OData
 The Open Data Protocol \(OData\) implementation in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] does not implement all features in the OData specification. On this page you can read more about the known limitations with Business Central OData.
+
+## PATCH and collection properties
+
+PATCH is not possible for collection properties in OData. This is not a limitation imposed by Business Central but is specified in section 11.4.9.4 of the OData v4 standard.
 
 ## Filters
 
@@ -36,4 +38,4 @@ If you use Web services that are based on UI pages, you must expect the same beh
 
 ## See Also
 
-[OData Web Services overview](odata-web-services.md)
+[OData Web Services overview](odata-web-services.md)   

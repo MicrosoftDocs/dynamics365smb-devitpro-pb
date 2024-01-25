@@ -3,10 +3,8 @@ title: "Resource exposure policy setting"
 description: Explains how to set the resource exposure policy for allowing download or debugging into extension to see the source code.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/21/2023
+ms.date: 01/03/2024
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -33,7 +31,7 @@ When you start a new project, an `app.json` file is generated automatically, whi
 ```
 
 > [!NOTE]  
-> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it's generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above. You can always override this for your AppSource aåå or per-tenant extension by changing the setting.
+> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it's generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above. You can always override this for your AppSource app or per-tenant extension by changing the setting.
 
 > [!IMPORTANT]  
 > The **AL: Go!** template sets the `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile` options in the `resourceExposurePolicy` setting to `true`. 
@@ -114,10 +112,14 @@ It's a requirement to enable overriding the resource policy, that you have a key
 > Remember to register *all* apps that should access your key vaults, it's not enough to just add the key vault setting to your `app.json` manifest files.
 
 > [!IMPORTANT]  
-> Resource exposure policy overrides can be used to dynamically grant users of a given Microsoft Entra tenant ID access. The users performing the action, such as debugging, can be delegated admins or a guest user on the target environment. In addition, you must specify the `tenant` property in the `launch.json` file. The `tenant` property must be set to the target tenant ID. For more information, see [JSON Files](devenv-json-launch-file.md#publish-to-cloud-settings).
+> Resource exposure policy overrides can be used to dynamically grant users of a given Microsoft Entra tenant ID access. The users performing the action, such as debugging, **must be delegated admins or a guest user** on the target environment. In addition, you must specify the `tenant` property in the `launch.json` file. The `tenant` property must be set to the target tenant ID. For more information, see [JSON Files](devenv-json-launch-file.md#publish-to-cloud-settings).
 
 For more information, see [Using Key Vault Secrets in Business Central Extensions](devenv-app-key-vault-overview.md) and [Setting up App Key Vaults for Business Central Online](../administration/setup-app-key-vault.md). For [!INCLUDE[prod_short](includes/prod_short.md)] online, the app key vault feature is only supported for AppSource extensions.
 
+
+#### Common mistakes
+
+A common mistake is using the environment Microsoft Entra ID instead of the user's Microsoft Entra ID. The resource exposure policy allows delegated admins or guest users to access resources. In this case, the values in the secret **must be the user's Microsoft Entra ID, not the environment Microsoft Entra ID**.
 
 ### The `BC-ResourceExposurePolicy-Overrides` secret
 

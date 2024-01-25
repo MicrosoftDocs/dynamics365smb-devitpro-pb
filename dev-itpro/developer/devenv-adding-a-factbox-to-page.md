@@ -5,8 +5,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -173,7 +171,7 @@ This applies to desktop, tablet, and phone clients.
 [Pages Overview](devenv-pages-overview.md)   
 [Page and Page Extension Properties Overview](properties/devenv-page-property-overview.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  
 [Arranging Fields on a Fasttab](devenv-arranging-fields-on-fasttab.md)  
 [Actions Overview](devenv-actions-overview.md)
 

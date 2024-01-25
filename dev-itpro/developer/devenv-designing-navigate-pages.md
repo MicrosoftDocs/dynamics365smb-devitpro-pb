@@ -7,7 +7,7 @@ ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ---
 # Designing Assisted Setup Guides
 

@@ -4,14 +4,13 @@ description: Write to the database using an OData web service that exposes a wri
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 # Using OData Web Services to Modify Data
 You can write to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database using an OData web service that exposes a writable page. For example, you can expose a page as an OData web service and implement it in a portal that is based on Microsoft SharePoint Online. Users of the portal can then modify the data.  
   
 ## Modifying Data Using OData Web Services  
+
  If an editable page is exposed as a web service, the data in the underlying table can be accessed and modified by an OData call. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports the following OData operations for modifying data.  
   
 |OData call|Data impact|Triggers run on page and table in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] |  
@@ -24,8 +23,13 @@ You can write to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
   
  You can use an OData web service in applications where you want users to be able to modify [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. For example, you can show fields from the **Customer** table on a mobile device or in a browser so that a user can create, update, or delete customers in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
 
- PATCH operations requires the 'If-Match' header to be set, either with a retrieved ETag or with '*'.
-  
+### For PATCH operations
+
+PATCH operations require the 'If-Match' header to be set, either with a retrieved ETag or with '*'.
+
+> [!NOTE]
+> PATCH is not possible for collection properties in OData. This is not a limitation imposed by Business Central but is specified in section 11.4.9.4 of the OData v4 standard.
+
 ### Company-Specific and Tenant-Specific OData Calls  
  In your implementation of the web service, you can specify which company in the database that a user can write to in the URIs that expose the web services. Similarly, you can specify the specific tenant that the change applies to if the database handles more than one tenant.  
   
@@ -42,5 +46,7 @@ You can write to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
  If no default company can be found based on the criteria, an error message appears.  
   
 ## See Also  
- [OData Web Services](OData-Web-Services.md)   
- [Using OData to Return-Obtain a JSON Document](return-obtain-json-document.md)   
+
+[Known OData limitations](odata-known-limitations.md)   
+[OData Web Services](OData-Web-Services.md)   
+[Using OData to Return-Obtain a JSON Document](return-obtain-json-document.md)   

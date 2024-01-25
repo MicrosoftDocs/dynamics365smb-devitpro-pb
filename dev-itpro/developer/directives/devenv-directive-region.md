@@ -4,8 +4,6 @@ description: "The region directive in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 05/21/2021
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---

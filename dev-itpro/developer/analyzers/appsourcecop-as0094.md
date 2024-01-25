@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 12/07/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -53,7 +51,6 @@ permissionset 50130 MyPermissionSet
     Permissions = 
         tabledata "Floor Manager" = RIMD;
 } 
-
 ```
 
 The `RIMD` access allows access to **R**ead, **I**nsert, **M**odify, and **D**elete entries in the table. This can be modified by adding and removing letters corresponding to the first letter of the permission that you want to (dis)allow. This permission set can then be assigned to users/roles.

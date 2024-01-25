@@ -5,8 +5,6 @@ author: jswymer
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ---
@@ -141,7 +139,7 @@ profileextension BUSINESSMANAGER_1 extends "BUSINESS MANAGER"
 
 <!--And:
 
-```
+```AL
 pagecustomization Configuration3 customizes "Customer List"
 {
   layout
@@ -226,7 +224,7 @@ pagecustomization Configuration3 customizes "Customer List"
 
 Page customizations that are made to extension-based profiles are exported to two types of .al files. The first file includes a `profileextension` object that specifies which profile has been modified and includes references to the page customization object files. The second file type includes a `pagecustomization` object that defines the modification to the page. A separate file is created for each customized page. For example, if you customized the **Customer** page for the **Business Manager** profile that is provided by the Base Application extension, the zip file would contain two files: **ProfileExtension._BUSINESS MANAGER.al** and **PageCustomization._Customer List_.Configuration2.al**. The files will contain code similar to the following:
 
-```
+```AL
 profileextension BUSINESSMANAGER_1 extends "BUSINESS MANAGER"
 {
   Customizations = Configuration3;
@@ -235,7 +233,7 @@ profileextension BUSINESSMANAGER_1 extends "BUSINESS MANAGER"
 
 And:
 
-```
+```AL
 pagecustomization Configuration3 customizes "Customer List"
 {
   layout

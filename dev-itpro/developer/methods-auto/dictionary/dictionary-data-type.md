@@ -3,10 +3,8 @@ title: "Dictionary Data Type"
 description: "Represents an unordered collection of keys and values."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 12/01/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -20,6 +18,7 @@ Represents an unordered collection of keys and values. The Dictionary data type 
 
 
 
+## Instance methods
 The following methods are available on instances of the Dictionary data type.
 
 |Method name|Description|

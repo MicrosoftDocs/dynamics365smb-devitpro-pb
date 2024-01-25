@@ -5,8 +5,9 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: 
 ms.topic: overview
-ms.collection: 
-ms.date: 11/10/2023
+ms.collection:
+  - bap-ai-copilot
+ms.date: 01/11/2024
 ms.custom: bap-template
 ---
 
@@ -20,7 +21,14 @@ Typing the shortcut `tpage` and then choose the **Page of type Prompt Dialog**, 
 
 ## Properties of the PromptDialog page type
 
-The `PromptDialog` page type has many specific properties that characterize the dialog. The `PageType` property must be set to `PromptDialog`. The `PromptMode` property value is by default `Prompt`, which is the starting prompt mode. The `PromptMode` property can be changed at runtime. The other options are `Generate`, which triggers generating the output of the copilot interaction, and `Content`, which shows the output of the copilot interaction. You can programmatically set this property by setting the variable `CurrPage.PromptMode` before the page is opened. 
+The `PromptDialog` page type has some specific properties that characterize the dialog and must be set for this specific experience.
+
+|Property|Description|
+|--------|-----------|
+|`PageType` | The `PageType` property must be set to `PromptDialog` for this specific page type.|
+|`PromptMode` |The `PromptMode` property value is by default `Prompt`, which is the starting prompt mode. The `PromptMode` property can be changed at runtime. The other options are; <br> - `Generate`, which triggers generating the output of the copilot interaction, and <br>- `Content`, which shows the output of the copilot interaction.<br> You can programmatically set this property by setting the variable `CurrPage.PromptMode` before the page is opened.|
+|`IsPreview` | The `IsPreview` property adds a specific note in the UI to indicate that the feature is in preview. It's by default set to `false`.|
+|`Image`| To identify and ensure consistency in the UI for a generative AI experience, the `Image` property for the action invoking it, should be set to `Sparkle`. If there are multiple copilot options to choose from in the UI, the `Image` property can be set to `Image = SparkleFilled;` to make a specific action more prominent. To view a list of images, see [Available icons](https://aka.ms/bcicons). |
 
 To find links to the properties related to the `PromptDialog` page type, see the [See also](devenv-page-type-promptdialog.md#see-also) section in this article.
 
@@ -33,6 +41,12 @@ The `PromptDialog` page type has three areas, which are `Prompt`, `Content`, and
 The following example describes a page, which is a PromptDialog page, set with the `PromptDialog` option. The `Extensible = false;` is a mandatory setting, to ensure that the page isn't extended so that customers can trust the AI experience implemented.
 
 Use the `IsPreview` property to indicate to your customers that you're using the feature in preview, and that the feature might change in the future as you gather feedback. The `IsPreview` property adds a specific note in the UI to indicate that the feature is in preview. It's by default set to `false`. 
+
+The page calls the `RunGeneration` procedure, which *you must implement yourself*. This is where you call the copilot API, and get the results back. The `RunGeneration` method is called when the user clicks the **Generate** action. The **Generate** action is a system action that can be used on this page type and it's used to trigger the copilot interaction. The **Generate** action is also used to regenerate the suggestion, if the user wants to change the input to copilot.
+
+For an example on how to implement the `RunGeneration` procedure, see [BCTech samples AzureOpenAI](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Basic_ItemSubstitution/PromptDialog/ItemSubstAIProposal.Page.al#L111). 
+
+For an example on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
 
 
 ```al
@@ -120,7 +134,7 @@ page 50100 MyCopilotPage
             // You can have custom behavior for the main system actions in a PromptDialog page, such as generating a suggestion with copilot, regenerate, or discard 
             // the suggestion. When you develop a Copilot feature, remember: the user should always be in control (the user must confirm anything Copilot suggests 
             // before any change is saved).
-            // This is also the reason why you cannot have a physical SourceTable in a PromptDialog page (you either use a temporary table, or no table).
+            // This is also the reason why you can't have a physical SourceTable in a PromptDialog page (you either use a temporary table, or no table).
 
             systemaction(Generate)
             {
@@ -129,9 +143,27 @@ page 50100 MyCopilotPage
 
                 trigger OnAction()
                 begin
-                    // The code triggering the copilot interaction.
+                    // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
                     RunGeneration();
                 end;
+            }
+
+            // Adds an action to allow attaching a file, which is used as input for the copilot interaction.
+
+            systemaction(Attach)
+            {
+                Caption = 'Attach a file';
+                ToolTip = 'Attach a file describing the job.';
+                
+                trigger OnAction()
+                var
+                    InStr: InStream;
+                    Filename: Text;
+                begin
+                    UploadIntoStream(‘Select a file...', '', ‘All files (*.*)|*.*', Filename, InStr);
+                    if not (Filename = '') then begin
+                    ...
+                end;
             }
 
             systemaction(Ok)
@@ -155,9 +187,12 @@ page 50100 MyCopilotPage
                 
                 trigger OnAction()
                 begin
+                    // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
                     RunGeneration();
                 end;
             }
+
+        
         }
     }
 
@@ -184,6 +219,7 @@ page 50100 MyCopilotPage
 [Page object](devenv-page-object.md)  
 [PageType property](properties/devenv-pagetype-property.md)  
 [PromptMode property](properties/devenv-promptmode-property.md)  
+[Image property](properties/devenv-image-property.md)  
 [IsPreview property](properties/devenv-ispreview-property.md)  
 [SourceTable property](properties/devenv-sourcetable-property.md)  
 [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md)  

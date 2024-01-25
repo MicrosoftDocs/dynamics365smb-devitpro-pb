@@ -3,10 +3,8 @@ title: "Xmlport Data Type"
 description: "XmlPorts are used to export or import data between an external source and a Microsoft Dynamics Business Central database."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/01/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -19,6 +17,7 @@ author: SusanneWindfeldPedersen
 XmlPorts are used to export or import data between an external source and a Microsoft Dynamics Business Central database.
 
 
+## Static methods
 The following methods are available on the Xmlport data type.
 
 
@@ -28,6 +27,7 @@ The following methods are available on the Xmlport data type.
 |[Import(Integer, var InStream [, var Record])](xmlport-import-method.md)|Reads and parses an incoming XML data stream (XML document).|
 |[Run(Integer [, Boolean] [, Boolean] [, var Record])](xmlport-run-method.md)|Loads and executes the XmlPort that you specify.|
 
+## Instance methods
 The following methods are available on instances of the Xmlport data type.
 
 |Method name|Description|

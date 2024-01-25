@@ -1,25 +1,24 @@
 ---
-title: "Extending the Data Archive Extension"
+title: "Extending the Data Archive extension"
 description: "Overview and examples of how to enable your app to archive data."
 author: bholtorf
-
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: bholtorf
-ms.date: 10/01/2021
+ms.date: 12/21/2023
 ---
 
-# Extending the Data Archive Extension
+# Extending the Data Archive extension
 The [Data Archive](/dynamics365/business-central/admin-archive-data) extension provides a basic framework for archiving and backing up data as part of date compression. When you use date compression you specify a date range and all entries within the range are consolidated into a single entry, and the originals are deleted. For more information, see [Compress Data with Date Compression](/dynamics365/business-central/admin-manage-documents). However, there might be value in keeping that data, so rather than deleting it, you can use the Data Archive extension to archive it for later use.
 
-This article provides an example of how you can use the objects in the Data Archive extension so that your application can also archive data. You'll use the **Data Archive** codeunit, which is available in the System Application. 
+This article provides an example of how you can use the objects in the Data Archive extension so that your application can also archive data. You use the **Data Archive** codeunit, which is available in the System Application. 
 
 The following patterns of use are supported:
 
 * Store individual records by calling the **SaveRecord(Record)** method.
 * Store a record set by calling the **SaveRecords(RecordRef)** method.
-* Start recording deletions by calling the StartSubscriptionToDelete() method in the beginning of your code, and StopSubscriptionToDelete() after records have been deleted. Note that this pattern records *all* deletions, including those that happen in related tables and intermediate tables that might be used in the process (though temporary records are not recorded).
+* Start recording deletions by calling the StartSubscriptionToDelete() method in the beginning of your code, and StopSubscriptionToDelete() after records have been deleted. Note that this pattern records *all* deletions, including those that happen in related tables and intermediate tables that might be used in the process (though temporary records aren't recorded).
 
 > [!NOTE]
 > Recording deletions relies on the global database triggers, so for any deletions that have already been made on the relevant records, and if the change log is not active for that table, you should consider using StartSubscriptionToDelete(**true**) to reset the session. Resetting the session will, however, also reset the state in the object, so we recommend caution when you test or use it.
@@ -101,7 +100,7 @@ The following table lists the methods that the Data Archive codeunit provides.
 |procedure SaveRecords(var RecRef: RecordRef)     | Saves all records within the filters to the currently open archive entry. |
 |procedure StartSubscriptionToDelete()<br> procedure StartSubscriptionToDelete(ResetSession: Boolean)     | Starts subscription to the OnDatabaseDelete trigger and calls SaveRecord with any deleted record. |
 |procedure StopSubscriptionToDelete()     | Stops the subscription to the OnDatabaseDelete trigger. |
-|procedure DataArchiveProviderExists(): Boolean     | Informs the consumer app whether there is a provider for this interface. |
+|procedure DataArchiveProviderExists(): Boolean     | Informs the consumer app whether there's a provider for this interface. |
 
 <!-- REMOVING FOR NOW. CONSIDER ADDING LATER FOR OTHER FIRST PARTY APPS
 ## Application Objects
@@ -128,7 +127,7 @@ The application objects for data archiving are available in the System Applicati
 |DataArchiveExportToCsv.codeunit.al     | 609        | “Data Archive Export to Csv”        |
 -->
 
-## See Also
+## See also
 [The Data Archive Extension](/dynamics365/business-central/admin-archive-data)  
 [The Microsoft_Application.app File](devenv-application-app-file.md)  
 [Extending Application Areas](devenv-extending-application-areas.md)
