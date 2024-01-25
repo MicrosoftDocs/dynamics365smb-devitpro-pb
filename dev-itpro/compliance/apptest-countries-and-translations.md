@@ -3,7 +3,7 @@ title: Country/regional availability and supported languages
 description: Overview of availability and supported languages.
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 06/01/2023
+ms.date: 01/25/2024
 ms.reviewer: kfender
 ms.topic: conceptual
 ms.author: altotovi
@@ -13,7 +13,7 @@ ms.author: altotovi
 
 This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.  
 
-In countries/regions where Microsoft has not delivered a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].
+In countries/regions where Microsoft hasn't delivered a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability. The table also specifies the abbreviation of the relevant country-specific environment that you see in the admin center. Finally, the table and states whether the localization is provided by Microsoft or partner(s).
 
@@ -131,7 +131,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Moldova|Partner|W1|Planned for June 2024|MD|
 |Monaco|Partner|FR|Available|MC|
 |Mongolia|Partner|W1|Available|MN|
-|Monserrat|Partner|W1|Planned for June 2024|MS|
+|Montserrat|Partner|W1|Planned for June 2024|MS|
 |Montenegro|Partner|W1|Available|ME|
 |Morocco|Partner|W1|Available|MA|
 |Mozambique|Partner|W1|Available|MZ|
@@ -219,7 +219,7 @@ Due to the nature of the joint effort where Microsoft is providing the internati
 
 To maximize productivity [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] supports many languages.
 It's important to know that language support requires translation of *platform* captions and *application* captions (UI). 
-Translated platform captions are provided by Microsoft for most of available languages. Application languages are provided by both Microsoft and partners, depending on the language. 
+Translated platform captions are provided by Microsoft for most of the available languages. Application languages are provided by both Microsoft and partners, depending on the language. 
 
 Application languages delivered by Microsoft are provided as language apps that can be installed as needed. These language apps are available on AppSource. Partners can also provide application translation for any platform supported language and for those languages that aren't supported by Microsoft. To use one of those languages, contact the app publisher through AppSource.  
 
@@ -286,7 +286,7 @@ This table gives an overview of supported platform and application languages, an
 > [!NOTE]  
 > Application translations provided by Microsoft cover features in the international version (W1). Local functionality is not translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
 
-## See Also
+## See also
 
-[Rules and Guidelines for AL Code](apptest-overview.md)  
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)
+[Rules and guidelines for AL code](apptest-overview.md)  
+[Checklist for submitting your app](../developer/devenv-checklist-submission.md)
