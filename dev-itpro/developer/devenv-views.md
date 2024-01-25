@@ -24,6 +24,23 @@ Views are defined directly in code, on the list page that they modify. The defin
 > [!NOTE]  
 > `allowDebugging` doesn't apply to views. Views defined in an extension with `allowDebugging` set to `false` can still be copied using Designer.
 
+## Syntax
+
+The following code snippet shows the syntax for defining a view on a page extension object. This view filters the `Approved` field to only show records that have been approved in a list. The code sets the [Caption property](properties/devenv-caption-property.md) to **Approved** and the [Filters property](properties/devenv-filters-property.md) to filter on the `Approved` field. The `Filters` property uses the `where` keyword to define the filter.
+
+```al
+...
+views
+{
+    view(OnlyApproved)
+    {
+        Caption = 'Approved';
+        Filters = where(Approved = const(true));
+    }
+}
+...
+```
+
 ## Snippet support
 
 Typing the shortcut `tview` creates the basic layout for a view when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
