@@ -102,7 +102,7 @@ You can verify the availability of that web service by using a browser. Or choos
   
 2.  Review the information that is displayed in the browser. Verify that you can see the name of the web service that you've created.  
   
-When you access a web service, and you want to write data back to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you must specify the company name. You can specify the company as part of the URI as shown in the examples. Or you can specify the company as part of the query parameters. For example, the following URIs point to the same OData web service and are both valid URIs.  
+When you access a web service, and you want to write data back to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you must specify the company name. You can specify the company as part of the URI as shown in the examples. Or you can specify the company as part of the query parameters. For example, the following URIs point to the same OData web service endpoint and are all valid URIs.  
 
 Recommended syntax:
 ``` 
