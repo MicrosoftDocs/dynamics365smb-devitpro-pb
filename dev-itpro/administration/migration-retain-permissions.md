@@ -23,7 +23,7 @@ If you want users to keep their permissions during cloud migration, you have the
 1. In the action bar, select **...** (Show the rest) > **More options** > **Actions** > **Enable/Disable Removing Permissions from Users**.
 
    - If the message **Setting for Keeping user permissions was set to: Yes.** appears, then permission sets remain. Select **OK**.
-   - If the message **Setting for Keeping user permissions was set to: No.** appears, then permission sets are removed. Select **OK** and repeat this step to change to **Yes**.
+   - If the message **Setting for Keeping user permissions was set to: No.** appears, then users's permission sets are removed and replaced by the **Intelligent Cloud** permission set. Select **OK** and repeat this step to change to **Yes**.
 
 ## Option 2: Use a custom extension
 
