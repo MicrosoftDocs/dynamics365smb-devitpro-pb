@@ -18,7 +18,7 @@ Would you like to know what has changed in update 23.4? Below you'll find an ove
 Find an overview of hotfixes in this [article]() and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
-- 
+- [AppSource ISV publishers can preview their AppSource apps with select customers](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/appsource-isv-publishers-preview-their-appsource-apps-select-customers)
 -
 
 ## Localization updates
