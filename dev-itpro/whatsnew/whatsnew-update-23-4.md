@@ -56,7 +56,8 @@ Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOf
 
 ### Automatically update AppSource apps with minor updates  
 
-You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the Release Plan for more details.
+To view complete list of optional features and features that are becoming mandatory, go to [aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt).
+ You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the Release Plan for more details.
 
 ### Features becoming mandatory soon
 
@@ -68,7 +69,7 @@ If you're a developer and want to learn more about how to extend G/L entry aggre
 
 If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to [Extending Currency Exchange Rate Adjustments](/dynamics365/business-central/dev-itpro/developer/devenv-extend-exchange-rates). 
 
-Work with your partner to update extensions and apps you have installed before above features become mandatory. To view complete list of optional features and features that are becoming mandatory, go to [aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt).
+Work with your partner to update extensions and apps you have installed before above features become mandatory. 
 
 ### Discover all partner related resources on aka.ms/BCAll
 
