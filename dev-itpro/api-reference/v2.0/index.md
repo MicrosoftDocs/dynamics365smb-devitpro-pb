@@ -29,6 +29,11 @@ For information about enabling APIs for [!INCLUDE[prod_short](../../includes/pro
 [!INCLUDE[extending_APIs_is_not_supported](../../developer/includes/include-extending-APIs-is-not-supported.md)]
 
 
+## Transition from API v1.0 to API v2.0
+
+For information about transitioning from API v1.0 to API v2.0 see [Transition from API v1.0 to API v2.0](transition-to-api-v2.0.md).
+
+
 ## See Also
 
 [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use)  
