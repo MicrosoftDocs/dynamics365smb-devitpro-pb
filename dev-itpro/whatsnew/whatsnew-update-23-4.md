@@ -63,11 +63,11 @@ You can see version of Shopify Admin API and the date until API is valid in the 
 
 
 ### Automatically update AppSource apps with minor updates  
-
-To view complete list of optional features and features that are becoming mandatory, go to [aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt).
- You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the Release Plan for more details.
+You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the Release Plan for more details.
 
 ### Features becoming mandatory soon
+
+To view complete list of optional features and features that are becoming mandatory, go to [aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt). 
 
 The following features may have potentially disruptive effect on extensions and apps you have installed in the future, when they become mandatory. These features are now optional to use and can be enabled in the [Feature Management](https://dynamics.microsoft.com/en-us/business-central/signin/?ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2F%3Fpage%3D2610%26noSignUpCheck%3D1) page. 
 - Extending G/L Entry Aggregations When Posting Invoices feature is generally available with Update 23.1 and becoming mandatory in Update 26.0 (2025 Release Wave 1). 
