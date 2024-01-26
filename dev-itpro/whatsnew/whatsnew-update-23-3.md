@@ -47,18 +47,6 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-
-### Access and administer environments as Dynamics 365 Business Central Administrator
-
-Environments and the Admin Center can now be accessed and administered with the new Microsoft Entra role Dynamics 365 Business Central Administrator. This role improves upon the roles currently supported in that it does not grant access to resources beyond Business Central, giving customers an option to grant internal and delegated administrators access to Business Central without giving access to other resources and services in the tenant.
-
-There are no changes to the access granted to administrators with a Global Administrator or Dynamics 365 Administrator role assigned. Delegated Helpdesk Administrators will soon lose access to the Admin Center; we recommend you replace any use of this role with the Dynamics 365 Business Central Administrator role. If you have accessed your customer environments using this role recently you will soon receive deprecation notifications sent to notification recipients set up in the Admin Center. Read more [here](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights).
-
-### Transfer environments between Entra tenants  
-Internal administrators can now transfer environments from one Entra tenant to another. This can be necessary for mergers & acquisitions, when an organization is consolidating multiple Entra tenants into one, or when a partner organization needs to transfer a prepared demo environment to a prospective customer. Release plan is available [here](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/transfer-environments-between-entra-tenants), documentation will be updated [here](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments-move) once this feature is made available over the course of February.
-
-
-
 ### Schedule more tasks by using more users or Microsoft Entra Apps
 
 With this release, we've completed the global rollout of all required changes to all regions of the Business Central service to support increased throughput for operations using scheduled tasks. In the past, the number of scheduled tasks our service could perform in parallel was limited to 3 per environment. This limitation was starting to become a bottleneck for larger customers and larger operational volumes, especially when using automation, running with many companies, or using traffic intensive web portals. We have optimized our service to provide additional scale for these workloads by allowing you to create more scheduled tasks per user (or Microsoft Entra App), rather than having a per-environment limit. To take advantage of this new capability, reconfigure your workloads and integrations to use more users and/or Microsoft Entra Apps, which will create scheduled tasks.
