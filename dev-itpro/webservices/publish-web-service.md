@@ -1,10 +1,10 @@
 ---
 title: "Publish a Web Service"
 description: Explains how to publish page, query, and codeunits as web services.
-ms.custom: na
+ms.custom: bap-template
 author: jswymer
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.date: 01/26/2024
+ms.reviewer: jswyme
 ms.topic: conceptual
 translation.priority.ht: 
   - da-dk
@@ -105,11 +105,13 @@ You can verify the availability of that web service by using a browser. Or choos
 When you access a web service, and you want to write data back to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you must specify the company name or company id. You can specify the company as part of the URI as shown in the examples. Or you can specify the company as part of the query parameters. For example, the following URIs point to the same OData web service endpoint and are all valid URIs.  
 
 Recommended syntax:
+
 ``` 
 https://localhost:7048/<serverinstance>/ODataV4/Company(Id=a4bc6898-4591-4cf7-9990-293a0a0d66b7)/Customer  
 ```  
 
 Alternative syntax (also supported):
+
 ```  
 https://localhost:7048/<serverinstance>/ODataV4/Company('CRONUS International Ltd.')/Customer  
 ```  
