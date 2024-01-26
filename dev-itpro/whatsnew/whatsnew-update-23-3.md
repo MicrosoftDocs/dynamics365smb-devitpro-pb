@@ -54,6 +54,8 @@ Environments and the Admin Center can now be accessed and administered with the 
 
 There are no changes to the access granted to administrators with a Global Administrator or Dynamics 365 Administrator role assigned. Delegated Helpdesk Administrators will soon lose access to the Admin Center; we recommend you replace any use of this role with the Dynamics 365 Business Central Administrator role. If you have accessed your customer environments using this role recently you will soon receive deprecation notifications sent to notification recipients set up in the Admin Center. Read more [here](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights).
 
+### Transfer environments between Entra tenants  
+Internal administrators can now transfer environments from one Entra tenant to another. This can be necessary for mergers & acquisitions, when an organization is consolidating multiple Entra tenants into one, or when a partner organization needs to transfer a prepared demo environment to a prospective customer. Release plan is available [here](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/transfer-environments-between-entra-tenants), documentation will be updated [here](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments-move) once this feature is made available over the course of February.
 
 
 
