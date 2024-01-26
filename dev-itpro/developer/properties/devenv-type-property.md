@@ -4,7 +4,7 @@ ms.custom: na
 ms.date: 02/25/2022
 ms.reviewer: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
+ms.service: dynamics-365-business-central
 author: SusanneWindfeldPedersen
 ---
 
