@@ -4,7 +4,6 @@ description: "Overview of pages in Dynamics 365 Business Central that contain th
 author: jacobwj
 ms.author: solsen
 ms.reviewer: 
-ms.service: dynamics-365-business-central
 ms.topic: conceptual
 ms.date: 11/03/2022
 ms.custom: na
