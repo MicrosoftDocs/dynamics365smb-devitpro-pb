@@ -98,7 +98,7 @@ You can verify the availability of that web service by using a browser. Or choos
     |OData|https://*Server*:*ODataWebServicePort*/*ServerInstance*/OData/Company\(Id=guid\) | https://localhost:7048/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/ODataV4/Company\(Id=a4bc6898-4591-4cf7-9990-293a0a0d66b7\)|  
     |SOAP|https://*Server*:*SOAPWebServicePort*/*ServerInstance*/WS/*CompanyName*/services/|https://localhost:7047/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/WS/CRONUS International Ltd./services/| 
 
-     The company name is case-sensitive. For OData, it is recommended to use the *Company(Id=guid)* syntax as the company id is immutable, whereas the company name can be changed by an administrator.
+     The company name is case-sensitive. For OData, it is recommended to use the *Company(Id=guid)* syntax as the company ID is immutable, whereas the company name can be changed by an administrator.
   
 2.  Review the information that is displayed in the browser. Verify that you can see the name of the web service that you've created.  
   
