@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 01/08/2024
 ms.reviewer: 
 ms.topic: conceptual
-ms.service: dynamics-365-business-central
 ms.author: solsen
 ---
 
