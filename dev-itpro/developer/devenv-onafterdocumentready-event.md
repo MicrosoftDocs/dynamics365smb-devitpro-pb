@@ -5,7 +5,7 @@ ms.custom: na
 ms.date: 03/13/2023
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
+ms.service: dynamics-365-business-central
 author: nhsejth
 ---
 
