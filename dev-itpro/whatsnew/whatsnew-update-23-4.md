@@ -38,8 +38,10 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-### Business Central Launch Event videos on YouTube  
-Follow along as we're posting Business Central Launch Event sessions to the new YouTube channel. All 35 videos will be added to the channel by December 31, 2023. Subscribe now and watch the videos: [aka.ms/BCYouTube](https://aka.ms/BCYouTube). Find the rest of the launch event videos on: [aka.ms/BCLE](https://aka.ms/BCLE).
+### Access and administer environments as Dynamics 365 Business Central Administrator
+Environments and the Admin Center can now be accessed and administered with the new Microsoft Entra role Dynamics 365 Business Central Administrator. This role improves upon the roles currently supported in that it does not grant access to resources beyond Business Central, giving customers an option to grant internal and delegated administrators access to Business Central without giving access to other resources and services in the tenant.
+
+There are no changes to the access granted to administrators with a Global Administrator or Dynamics 365 Administrator role assigned. Delegated Helpdesk Administrators will soon lose access to the Admin Center; we recommend you replace any use of this role with the Dynamics 365 Business Central Administrator role. If you have accessed your customer environments using this role recently you will soon receive deprecation notifications sent to notification recipients set up in the Admin Center. Read more [here](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights).
 
 ### Upcoming Business Central Office Hours Calls
 
