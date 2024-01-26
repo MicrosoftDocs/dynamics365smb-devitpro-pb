@@ -5,7 +5,6 @@ ms.custom: na
 ms.date: 01/03/2024
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: dynamics-365-business-central
 author: bholtorf
 ---
 
