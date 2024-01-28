@@ -181,6 +181,9 @@ This section outlines the general process or phases you go through to migrate da
    <!--If you want to migrate more companies, disable the migration, and start the setup again. Or, use the **Select Companies to Migrate** action from **Cloud Migration Management** page.-->
 
    To get started, go to [Upgrade data](migration-data-upgrade.md).
+
+   [!INCLUDE [cloud-migration-telemetry](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
+
 1. Completion and follow-up
 
    Completion and follow-up are crucial steps in the cloud migration process, as they involve setting up and optimizing your new Business Central online environment. Here are some essential tasks to consider:

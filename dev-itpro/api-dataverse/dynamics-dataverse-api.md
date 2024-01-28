@@ -2,7 +2,6 @@
 title: Business Central Dataverse API
 description: Dataverse API for integration with Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: al
 ms.date: 09/20/2022
