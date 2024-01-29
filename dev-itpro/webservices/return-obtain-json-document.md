@@ -13,7 +13,7 @@ You can publish a page as a web service and consume it using JavaScript Object N
   
 1.  You can build applications that consume and display [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data using JSON. This example assumes that you have registered and published a page web service in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
   
-2.  Start a web browser, like Microsoft Edge. In the **Address** field, enter a URI in this format:  
+2.  Start a supported web browser, such as Microsoft Edge. In the **Address** field, enter a URI in this format:  
   
     ```  
     https://<Server>:<WebServicePort>/<ServerInstance>/ODataV4/<web service>?$format=json  
