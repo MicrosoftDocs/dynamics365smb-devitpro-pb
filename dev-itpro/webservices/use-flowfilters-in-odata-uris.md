@@ -1,9 +1,9 @@
 ---
-title: "How to: Use FlowFilters in OData URIs"
+title: Using FlowFilters in OData URIs
 description: Learn how to use FlowFilter expressions in OData URIs.
-ms.custom: na
-ms.date: 04/11/2023
-ms.reviewer: na
+ms.custom: bap-template
+ms.date: 01/28/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ---
 # Using FlowFilters in OData URIs
@@ -29,7 +29,7 @@ In this procedure, you create and publish a web service from the **Item Card** p
      If [!INCLUDE[server](../developer/includes/server.md)] is running on the local computer and uses the default [!INCLUDE[server](../developer/includes/server.md)] instance and the default OData port, then the address is:  
   
     ```http  
-    https://localhost:7048/BC130/ODataV4/$metadata  
+    https://localhost:7048/BC230/ODataV4/$metadata  
     ```  
   
 3. Examine the metadata that is returned by this URI. At the end of the list is a set of parameters that end in the word `Filter`. This is the list of FlowFilters for the page:  
@@ -49,7 +49,7 @@ In this procedure, you create and publish a web service from the **Item Card** p
 4. Create a URI that returns information for a single item card. For example:  
   
     ```http  
-    https://localhost:7048/BC130/ODataV4/Company('CRONUS-International-Ltd.')/ItemCard('1906-S')  
+    https://localhost:7048/BC230/ODataV4/Company('CRONUS-International-Ltd.')/ItemCard('1906-S')  
     ```  
   
     This is the "ATHENS Mobile Pedestal" item. The value for the *Qty\_on\_Sales\_Order* parameter is 33:  
@@ -61,7 +61,7 @@ In this procedure, you create and publish a web service from the **Item Card** p
 5. Apply a FlowFilter to that item and specify **GREEN** as the value for the **Location\_Filter**:  
   
     ```http  
-    https://localhost:7048/BC130/ODataV4/Company('CRONUS-International-Ltd.')/ItemCard('1906-S')?$filter=Location_Filter eq 'GREEN'  
+    https://localhost:7048/BC230/ODataV4/Company('CRONUS-International-Ltd.')/ItemCard('1906-S')?$filter=Location_Filter eq 'GREEN'  
     ```  
   
     The item is returned as before, the value of the FlowField that has changed. The value for the *Qty\_on\_Sales\_Order* parameter is now 27:  
