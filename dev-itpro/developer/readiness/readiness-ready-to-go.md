@@ -78,7 +78,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## AI innovation and Copilot
 - Integrating AI using Developer Tools for Copilot: [aka.ms/BCStartCodingWithAILearn](https://aka.ms/BCStartCodingWithAILearn)
-- Copilot for Dynamics 365: [learn.microsoft.com/copilot-for-dynamics365](https://learn.microsoft.com/en-us/microsoft-cloud/dev/copilot/copilot-for-dynamics365)
+- Copilot for Dynamics 365: [learn.microsoft.com/copilot-for-dynamics365](/microsoft-cloud/dev/copilot/copilot-for-dynamics365)
 
 ## Reporting and business intelligence  
 
