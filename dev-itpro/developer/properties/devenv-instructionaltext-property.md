@@ -53,6 +53,8 @@ Or, with the parameters:
 InstructionalText = 'Add an entity from your list of contacts. The entity can be a person or a company.', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 100;
 ```
 
+The InstructionalText property on a page field should provide an example value or a short summary of the field's purpose.
+
 ## See also
 
 [Configuring the Help Experience](../../deployment/configure-help.md)  
