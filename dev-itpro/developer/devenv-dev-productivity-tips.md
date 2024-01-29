@@ -25,7 +25,7 @@ In addition to the inline help of IntelliSense, you have access to various snipp
 Code actions can help you fix issues in the code and give you possible corrective actions right next to an error or warning. If actions are available, a light bulb appears next to the error or warning. Examples of code actions are; explicit and implicit `with` statements, interface implementer, and spell check. For more information, see [AL code actions](devenv-code-actions.md). 
 
 
-## User and workspace launch configuration
+## Centralized launch configuration
 
 > [!NOTE]  
 > Introduced with [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1.
@@ -39,8 +39,11 @@ Add a launch property to a code-workspace or in the settings.json file. This all
 
 ### Git integration
 
-Visual Studio Code has built-in Git integration that makes it easy to manage your code changes. This can be useful when working together on projects with other developers. For more information, see [Git integration](https://code.visualstudio.com/docs/sourcecontrol/overview).
+Visual Studio Code has built-in Git integration that makes it easy to manage your code changes. This can be useful when working together on projects with other developers and allows you to manage your Git repos directly from the editor. For more information, see [Git integration](https://code.visualstudio.com/docs/sourcecontrol/overview).
 
+### Command Palette
+
+The Command Palette allows you to search for and run commands in Visual Studio Code. To open the **Command Palette**, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>.
 
 ## See also
 
