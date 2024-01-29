@@ -6,7 +6,7 @@ ms.custom: bap-template
 ms.date: 01/29/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.author: jswymer
+ms.author: sawinark
 ---
 
 # Operational Limits for Business Central Online
