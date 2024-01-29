@@ -3,7 +3,7 @@ title: "Operation Limits in Dynamics 365 Business Central"
 description: "Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments."
 author: jswymer
 ms.custom: bap-template
-ms.date: 01/18/2024
+ms.date: 01/29/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
