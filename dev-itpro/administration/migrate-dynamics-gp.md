@@ -12,7 +12,7 @@ ms.date: 08/23/2022
 ms.author: jswymer
 ---
 
-# Configure Dynamics GP company data migration
+# Configure Dynamics GP company migration
 
 <!--An assisted setup guide in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can help you migrate data from Dynamics GP. You can migrate data from Dynamics GP 2015 and later versions of Dynamics GP. For more information, see [System requirements](faq-migrate-data.md#system-requirements).  
 

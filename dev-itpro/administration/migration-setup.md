@@ -62,25 +62,9 @@ Once the setup guide is complete and data migration is activated, the initial da
 
    For more information about this step, see [Define your SQL database connection](#define-sql-database-connection-and-integration-runtime).
 
-   Select **Next** when done. Once you choose **Next**, a new pipeline is created in the Azure service. When completed successfully, the **Select companies to migrate** page appears.
-
-
- <!--For example, Server=jswymer-vm-2\bcdemo;Database="Demo Database BC (21-0)";User Id=bclogin2;Password=1234;-->
-
-   <!--1. Do one of the following tasks:
-
-   - If you already have a Microsoft integration runtime service instance, you can use the instance by entering its name in the **Integration Runtime Name** box. Then select **Next** and go to step 9. 
-   - If you don't already have an integration runtime, leave **Integration Runtime Name** blank, select **Next**, then go to the next step.-->
-
-<!--
-8. Select **Download the Self-hosted Integration Runtime**, the do these steps to install the integration runtime:
-    1. On the Download Center page that opens, select **Download** > **IntegrationRuntime_<latestversion>.msi** > **Next**. The file is downloaded to your computer.
-    2. Select **Open** file to start the installation. When completed, the **Register Integration Runtime (Self-Hosted)** page opens.
-    3. Go back to the **Cloud Migration Setup** page copy the **Authentication key**.
-    4. Go back to the **Register Integration Runtime (Self-Hosted)** page and paste the key value in authentication key box, then select **Finish**. 
-    5. Go back to **Cloud Migration Setup** and select **Next**.-->
-
-<!-- bc 1. On the **Select companies to migrate** page, select one or more companies from the list or switch on **All Companies**, then select **Next**.-->
+   Select **Next** when done. Once you choose **Next**, a new pipeline is created in the Azure service. When completed successfully, the **Select companies to migrate** page or **GP Company Migration Configuration** page appears.
+    
+    <!-- bc 1. On the **Select companies to migrate** page, select one or more companies from the list or switch on **All Companies**, then select **Next**.-->
 
 1. The next step is to select the companies that you want to migrate. This step is different depnding on your on-premises product:
 
@@ -124,9 +108,7 @@ Complete the steps in the wizard to update the runtime service. If the change wa
 > [!CAUTION]
 > If you have mapped users in the first run of the cloud migration setup guide, then do not choose the **Define User Mappings** action again in subsequent runs.
 
-
 If you run into problems with the setup, go to [Cloud migration setup troubleshooting](migration-setup-troubleshooting.md).
-
 
 ## Next steps
 
