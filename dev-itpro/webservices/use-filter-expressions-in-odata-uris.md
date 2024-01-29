@@ -4,8 +4,8 @@ description: Learn how to use filter expressions in OData URIs to limit the resu
 author: jswymer
 ms.author: jswymer
 ms.custom: bap-template
-ms.date: 11/10/2023
-ms.reviewer: na
+ms.date: 01/28/2024
+ms.reviewer: jswymer
 
 ms.topic: conceptual
 ---
@@ -18,7 +18,7 @@ You use filter expressions in OData URIs to limit the results in a returned docu
  To add a filter to an OData URI, add `$filter=` to the end of the name of the published web service. For example, the following URI filters the **City** field in the **Customer** page to return all customers who are located in Miami:  
 
 ```  
-https://localhost:7048/BC230/OData/Company('CRONUS International Ltd.')/Customer?$filter=City eq 'Miami'  
+https://localhost:7048/BC230/ODataV4/Company('CRONUS International Ltd.')/Customer?$filter=City eq 'Miami'  
 ```  
 
 The following table shows the filters that are supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] OData web services and their equivalent AL filter expressions. All examples are based either on page 21, Customer \(published as **Customer**\), or on page 20, General Ledger Entry \(published as **GLEntry**\).  
@@ -26,7 +26,6 @@ The following table shows the filters that are supported in [!INCLUDE[prod_short
 |Definition|Example and explanation|Equivalent AL expression|  
 |----------------|-----------------------------|---------------------------------|  
 |Select a range of values|`$filter=Entry_No gt 610 and Entry_No lt 615`<br /><br /> Query on GLEntry service. Returns entry numbers 611 through 614.|..|
-|In a list of values|`$filter=EntryNo in (610, 612, 614)`<br /><br /> Query that returns entry numbers 610, 612, and 614||  
 |And|`$filter=Country_Region_Code eq 'ES' and Payment_Terms_Code eq '14 DAYS'`<br /><br /> Query on Customer service. Returns customers in Spain where Payment\_Terms\_Code=**14 DAYS**.|&|  
 |Or|`$filter= Country_Region_Code eq 'ES' or Country_Region_Code eq 'US'`<br /><br /> Query on Customer service. Returns customers in Spain and the United States.<br /><br /> **Alert:** You can use OR operators to apply different filters on the same field. However, you can't use OR operators to apply filters on two different fields.|&#124;|  
 |Less than|`$filter=Entry_No lt 610`<br /><br /> Query on GLEntry service. Returns entry numbers that are less than 610.|\<|  
@@ -41,6 +40,7 @@ The following table shows the filters that are supported in [!INCLUDE[prod_short
 |tolower|`$filter=tolower(Location_Code) eq 'code red'`||  
 |toupper|`$filter=toupper(FText) eq '2ND ROW'`||  
 
+<!-- target for v4 |In a list of values|`$filter=EntryNo in (610, 612, 614)`<br /><br /> Query that returns entry numbers 610, 612, and 614||  -->
 <!--
 |indexof|`$filter=indexof(Location_Code, 'BLUE') eq 0`<br /><br /> Query on Customer service. Returns customer records for customers having a location code beginning with the string BLUE.||
 |replace|`$filter=replace(City, 'Miami', 'Tampa') eq 'CODERED'`||

@@ -2,7 +2,6 @@
 title: Create documentAttachments
 description: Creates a document attachment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: al
 ms.date: 03/08/2023
