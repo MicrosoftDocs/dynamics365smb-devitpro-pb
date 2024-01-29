@@ -42,9 +42,9 @@ In general, the cloud migration tool migrates the following data:
 - Master data for accounts, customers, vendors, and items
 - Transactional data  
 - Classes for customers, vendors, and items
-- Vendor 1099 
+- Vendor 1099
 
-
+The company data that is migrated is configurable as part of the cloud migration setuo. To learn more, see [Configure Dynamics GP company migration](migrate-dynamics-gp.md).
 
 ### How data is migrated 
 
