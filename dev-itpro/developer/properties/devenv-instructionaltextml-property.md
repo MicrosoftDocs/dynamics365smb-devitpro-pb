@@ -36,4 +36,4 @@ To submit an app to AppSource, you must use .xliff translation files. For more i
 ## See Also  
 
 [Properties](devenv-properties.md)
-[Page object](../devenv-page-object.md)  
+[Page object](../devenv-page-object.md)
