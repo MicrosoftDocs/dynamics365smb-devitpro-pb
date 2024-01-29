@@ -383,6 +383,7 @@
 #### Set up cloud migration
 ##### [Cloud migration setup overview](administration/migration-setup-overview.md)
 ##### [Define migration table mappings](administration/migration-table-mapping.md)
+##### [Retain permissions (optional)](administration/migration-retain-permissions.md)
 ##### [Run cloud migration setup](administration/migration-setup.md)
 ##### [Change how data is replicated](administration/cloud-migration-change-replication.md)
 ##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
@@ -423,6 +424,7 @@
 ### [AL code navigation](developer/devenv-al-code-navigation.md)
 ### [AL code actions](developer/devenv-code-actions.md)
 ### [Object ranges](developer/devenv-object-ranges.md)
+### [Developer productivity tips](developer/devenv-dev-productivity-tips.md)
 <!-- ### [object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
 ### [Adding help links from pages, reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
 ### [Working with translation files](developer/devenv-work-with-translation-files.md)
