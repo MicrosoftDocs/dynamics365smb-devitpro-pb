@@ -186,7 +186,7 @@ No. These operational limits are applied to all users in the same way.
 
 Yes, you can increase throughput by distributing your workload across multiple users. The more users you have in your environment, the more resources you can simultaneously consume in it, as long as we can continuously scale our resources. If a lot of resources are consumed at the same time and we couldn't sufficiently scale our resources, you might experience delays/throttling in consuming your resources.
 
-## See Also
+## See also
 
 [Working with API Rate Limits](../api-reference/v2.0/dynamics-rate-limits.md)  
 [Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use)
