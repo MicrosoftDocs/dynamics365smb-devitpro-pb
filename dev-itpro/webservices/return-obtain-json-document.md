@@ -1,5 +1,6 @@
 ---
 title: "How to: Use OData to Return-Obtain a JSON Document"
+description: Learn about how to use OData to obtain a JSON document
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
