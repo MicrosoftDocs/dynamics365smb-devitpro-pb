@@ -5,7 +5,7 @@ author: a-emniel
 ms.topic: conceptual
 ms.reviewer: solsen
 ms.author: kurtju
-ms.date: 11/30/2023
+ms.date: 02/06/2024
 ms.collection: get-started
 ---
 
@@ -47,11 +47,7 @@ To obtain an object range for developing a [!INCLUDE [prod_short](../includes/pr
 
 The relevant contract can be requested through your local Regional Operations Center (ROC) Contracts and Agreements Team below:
 
-- [mbscon@microsoft.com](mailto:mbscon@microsoft.com) if you're based in Europe, the Middle East, or Africa.
-
-- [aka.ms/PLOIntake](https://aka.ms/PLOIntake) if you're based in the Americas – to request access [REQUEST ACCESS](https://idwebelements.microsoft.com/GroupManagement.aspx?Group=PLOPortalAccess&Operation=join).
-
-- [mbslques@microsoft.com](mailto:mbslques@microsoft.com) if you're based in the Asia Pacific region.
+- [partnerlifecycle@microsoft.com](mailto:partnerlifecycle@microsoft.com) for Europe, the Middle East, Africa, Americas, and Asia Pacific region.
 
 ## Step 3: Your unique app specifications
 
