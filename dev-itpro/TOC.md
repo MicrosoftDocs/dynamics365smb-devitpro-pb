@@ -399,7 +399,12 @@
 ### Migrate from Dynamics GP
 #### [End-to-end overview](administration/migrate-gp-overview.md)
 #### [Managing cloud migration](administration/migration-manage.md)
-#### [Prerequisites](administration/cloud-migration-prerequisites-gp.md)
+#### Prepare
+##### [Plan cloud migration](administration/cloud-migration-plan-prepare-gp.md)
+##### [Estimate data size in online tenant](administration/cloud-migration-estimate-compressed-data-size.md)
+##### [Prerequisites](administration/cloud-migration-prerequisites-gp.md)
+##### [Clean data for cloud migration](administration/migration-clean-data.md)
+##### [Optimize cloud migration performance](administration/migration-optimize-replication.md)
 #### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
 #### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
 ### [FAQ](administration/faq-migrate-data.md)
