@@ -24,11 +24,8 @@ In addition to the inline help of IntelliSense, you have access to various snipp
 
 Code actions can help you fix issues in the code and give you possible corrective actions right next to an error or warning. If actions are available, a light bulb appears next to the error or warning. Examples of code actions are; explicit and implicit `with` statements, interface implementer, and spell check. For more information, see [AL code actions](devenv-code-actions.md). 
 
-## Semantic code coloring
 
-Semantic code coloring is a feature that helps you distinguish between different types of code elements. For example, you can easily see the difference between a variable and a field. <!-- For more information, see [Semantic code coloring](devenv-semantic-code-coloring.md). -->
-
-## Global and workspace launch configuration
+## User and workspace launch configuration
 
 > [!NOTE]  
 > Introduced with [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1.
