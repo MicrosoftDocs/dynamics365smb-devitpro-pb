@@ -80,7 +80,15 @@ Once the setup guide is complete and data migration is activated, the initial da
     4. Go back to the **Register Integration Runtime (Self-Hosted)** page and paste the key value in authentication key box, then select **Finish**. 
     5. Go back to **Cloud Migration Setup** and select **Next**.-->
 
-1. On the **Select companies to migrate** page, select one or more companies from the list or switch on **All Companies**, then select **Next**.
+<!-- bc 1. On the **Select companies to migrate** page, select one or more companies from the list or switch on **All Companies**, then select **Next**.-->
+
+1. The next step is to select the companies that you want to migrate. This step is different depnding on your on-premises product:
+
+   - For Business Central on-premises, the **Select companies to migrate** page appears. Select one or more companies from the list or switch on **All Companies**, then select **Next**.
+   - For Dynamics GP, the **GP Company Migration Configuration** page appears. This page allows to make global settings for the companies selected to migrate. For details about using this page, see [Configure Dynamics GP company data migration](migrate-dynamics-gp.md).
+
+   No matter which on-premsies product you're coming from, you can always return the this page to add more companies.
+
 1. Select **Finish** to complete the cloud migration setup.
 
   If you want to open **Cloud Migration Management**, where you can run the migration, select **Yes**.
