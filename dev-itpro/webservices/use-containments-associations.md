@@ -47,7 +47,7 @@ Containments and associations are relationships between pages in [!INCLUDE[prod_
  When you publish a page that has a subpage, you can identify that subpage in the metadata document that is returned for the published page. For example, when you publish page 42, Sales Order, you can access a single record on the page using a URI such as the following:  
   
 ```  
-https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')/SalesOrder(Document_Type='Order',No='101005')/  
+https://localhost:7048/<server instance>/ODataV4/Company('CRONUS-International-Ltd.')/SalesOrder(Document_Type='Order',No='101005')/  
 ```  
   
  The following line in the returned metadata document for the record provides link information for a containment:  
@@ -61,7 +61,7 @@ https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd
  To access the subpage data, use a URI that appends the name of the NavigaionalProperty to the link that was identified in the previous document:  
   
 ```  
-https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')/SalesOrder(Document_Type='Order',No='101005')/SalesOrderSalesLines  
+https://localhost:7048/<server instance>/ODataV4/Company('CRONUS-International-Ltd.')/SalesOrder(Document_Type='Order',No='101005')/SalesOrderSalesLines  
 ```  
   
 ## Using Associations  
@@ -83,14 +83,14 @@ Associations are possible when two published pages are linked. Here is an exampl
  This information provides the necessary information to create a URI to access a record on the Customer List page by using an association:  
   
 ```http 
-https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')  
+https://localhost:7048/<server instance>/ODataV4/Company('CRONUS-International-Ltd.')  
              /SalesOrder(Document_Type='Order',No='101005')/Sell_to_Customer_No_Link  
 ```  
   
  The following URI returns the same information with direct access to the Customer List page:  
   
 ```http
-https://localhost:7048/<server instance>/OData/CustomerList('30000')  
+https://localhost:7048/<server instance>/ODataV4/CustomerList('30000')  
 ```  
   
 ## See Also  

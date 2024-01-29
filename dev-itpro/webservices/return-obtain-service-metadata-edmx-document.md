@@ -26,13 +26,13 @@ The following guidelines have been implemented for EDM.
 2.  Start Windows Internet Explorer. In the **Address** field, enter a URI in this format:  
   
     ```  
-    https://<Server>:<WebServicePort>/<ServerInstance>/OData/$metadata  
+    https://<Server>:<WebServicePort>/<ServerInstance>/ODataV4/$metadata  
     ```  
   
      If [!INCLUDE[server](../developer/includes/server.md)] is running on the local computer and is using the default [!INCLUDE[server](../developer/includes/server.md)] instance and OData port, then the address is:  
   
     ```  
-    https://localhost:7048/<server instance>/OData/$metadata  
+    https://localhost:7048/<server instance>/ODataV4/$metadata  
     ```  
   
      The browser should now show the complete metadata for the page web service that you have published. The beginning of this document looks like this:  

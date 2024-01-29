@@ -15,13 +15,13 @@ You can publish a page as a web service and consume it using JavaScript Object N
 2.  Start Windows Internet Explorer. In the **Address** field, enter a URI in this format:  
   
     ```  
-    https://<Server>:<WebServicePort>/<ServerInstance>/OData/<web service>?$format=json  
+    https://<Server>:<WebServicePort>/<ServerInstance>/ODataV4/<web service>?$format=json  
     ```  
   
     If [!INCLUDE[server](../developer/includes/server.md)] is running on the local computer and is using the default [!INCLUDE[server](../developer/includes/server.md)] instance and OData port, and you have published a web service that is based on page 21 that is called **Customer**, then the address is:  
   
     ```  
-    https://localhost:7048/BC130/OData/Customer?$format=json  
+    https://localhost:7048/BC130/ODataV4/Customer?$format=json  
     ```  
   
      This generates a text file that contains metadata and data from the web service. You can open the file from the browser, or you can save it to disk.  

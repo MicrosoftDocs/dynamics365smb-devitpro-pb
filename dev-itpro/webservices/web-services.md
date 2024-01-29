@@ -91,7 +91,7 @@ Codeunit web services provide you with the most control and flexibility. When a 
  For example, the following URL consumes the **Customer** ODATA web service for a specific tenant:  
 
 ```  
-https://localhost:7048/BC130/OData/Company('CRONUS-International-Ltd.')/Customer?Tenant=Tenant1  
+https://localhost:7048/BC130/ODataV4/Company('CRONUS-International-Ltd.')/Customer?Tenant=Tenant1  
 ```  
 For more information, see [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md).  
 
