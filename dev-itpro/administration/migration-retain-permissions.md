@@ -1,6 +1,6 @@
 ---
 title: Retain permissions
-description: Learn how to keep the permissions assigned to existing online users  so they can continue to work as usual during cloud migration.
+description: Learn how to keep the permissions assigned to existing online users so they can continue to work as usual during cloud migration.
 author: jswymer 
 ms.author: jswymer 
 ms.reviewer: jswymer 

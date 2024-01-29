@@ -400,7 +400,18 @@
 ### Migrate from Dynamics GP
 #### [End-to-end overview](administration/migrate-gp-overview.md)
 #### [Managing cloud migration](administration/migration-manage.md)
-#### [Prerequisites](administration/cloud-migration-prerequisites-gp.md)
+#### Prepare
+##### [Plan cloud migration](administration/cloud-migration-plan-prepare-gp.md)
+##### [Estimate data size in online tenant](administration/cloud-migration-estimate-compressed-data-size.md)
+##### [Move database to Azure Data Lake (optional)](administration\cloud-migration-azure-data-lake-gp.md)
+##### [Prerequisites](administration/cloud-migration-prerequisites-gp.md)
+##### [Optimize cloud migration performance](administration/migration-optimize-replication-gp.md)
+#### Set up cloud migration
+##### [Cloud migration setup overview](administration/migration-setup-overview.md)
+##### [Retain permissions (optional)](administration/migration-retain-permissions.md)
+##### [Run cloud migration setup](administration/migration-setup.md)
+##### [Change how data is replicated](administration/cloud-migration-change-replication.md)
+##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
 #### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
 #### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
 ### [FAQ](administration/faq-migrate-data.md)
