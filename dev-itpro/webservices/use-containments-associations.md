@@ -1,9 +1,9 @@
 ---
 title: "Using Containments and Associations"
 description: Learn how to use containments and associations with OData for creating relationships between pages. 
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.custom: jswymer
+ms.date: 01/28/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ---
 # Using Containments and Associations
@@ -93,5 +93,5 @@ https://localhost:7048/<server instance>/ODataV4/Company('CRONUS-International-L
 https://localhost:7048/<server instance>/ODataV4/CustomerList('30000')  
 ```  
   
-## See Also  
+## See also  
  [OData Web Services](OData-Web-Services.md)
