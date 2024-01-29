@@ -7,7 +7,7 @@ ms.reviewer:
 ms.topic: conceptual
 ms.collection: 
 ms.custom: bap-template 
-ms.date: 01/19/2024
+ms.date: 01/29/2024
 ---
 
 # Developer productivity tips
@@ -28,17 +28,15 @@ Code actions can help you fix issues in the code and give you possible correctiv
 
 Semantic code coloring is a feature that helps you distinguish between different types of code elements. For example, you can easily see the difference between a variable and a field. <!-- For more information, see [Semantic code coloring](devenv-semantic-code-coloring.md). -->
 
-
-
 ## Global and workspace launch configuration
 
 > [!NOTE]  
 > Introduced with [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1.
 
-Add a launch property to a code-workspace or in the settings.json file. This allows for a centralized configuration of projects. Any local `launch.json` file overrides the workspace and global configuration. And a workspace launch configuration overrides the launch configuration specified in the global `settings.json` file.
+Add a launch property to a code-workspace or in the settings.json file. This allows for a centralized configuration of projects. Any local `launch.json` file overrides the user and workspace configuration. And a workspace launch configuration overrides the launch configuration specified in the user `settings.json` file.
 
 > [!NOTE]  
-> If a local `launch.json` file doesn't contain a valid AL launch configuration, we'll try to find one in the code-workspace first, and then in the `settings.json` files. However, if the launch property is specified in the code-workspace file even without specifying a valid AL configuration, the global `settings.json` file won't be able to override it.
+> If a local `launch.json` file doesn't contain a valid AL launch configuration, we'll try to find one in the code-workspace first, and then in the `settings.json` files. However, if the launch property is specified in the code-workspace file even without specifying a valid AL configuration, the user `settings.json` file won't be able to override it.
 
 ## General Visual Studio Code tips
 
