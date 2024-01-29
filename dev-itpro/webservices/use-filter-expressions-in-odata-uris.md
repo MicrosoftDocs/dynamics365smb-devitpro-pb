@@ -4,8 +4,8 @@ description: Learn how to use filter expressions in OData URIs to limit the resu
 author: jswymer
 ms.author: jswymer
 ms.custom: bap-template
-ms.date: 11/10/2023
-ms.reviewer: na
+ms.date: 01/28/2024
+ms.reviewer: jswymer
 
 ms.topic: conceptual
 ---
@@ -18,7 +18,7 @@ You use filter expressions in OData URIs to limit the results in a returned docu
  To add a filter to an OData URI, add `$filter=` to the end of the name of the published web service. For example, the following URI filters the **City** field in the **Customer** page to return all customers who are located in Miami:  
 
 ```  
-https://localhost:7048/BC230/OData/Company('CRONUS International Ltd.')/Customer?$filter=City eq 'Miami'  
+https://localhost:7048/BC230/ODataV4/Company('CRONUS International Ltd.')/Customer?$filter=City eq 'Miami'  
 ```  
 
 The following table shows the filters that are supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] OData web services and their equivalent AL filter expressions. All examples are based either on page 21, Customer \(published as **Customer**\), or on page 20, General Ledger Entry \(published as **GLEntry**\).  
