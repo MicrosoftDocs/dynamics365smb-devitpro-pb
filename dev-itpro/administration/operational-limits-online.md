@@ -1,7 +1,7 @@
 ---
-title: "Operation Limits in Dynamics 365 Business Central"
-description: "Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments."
-author: jswymer
+title: Operation Limits in Dynamics 365 Business Central
+description: Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments.
+author: swinarko
 ms.custom: bap-template
 ms.date: 01/29/2024
 ms.reviewer: jswymer
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: sawinark
 ---
 
-# Operational Limits for Business Central Online
+# Operational limits for Business Central online
 
 To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them.
 
