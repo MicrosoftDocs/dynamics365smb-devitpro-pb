@@ -2,11 +2,11 @@
 title: SOAP and ODATA web services
 description: Compare the features of APIs, SOAP, and OData web services and know how to create and maintain these services. 
 author: jswymer
-ms.custom: na
-ms.reviewer: na
+ms.custom: bap-template
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 12/18/2023
+ms.date: 01/28/2024
 ---
 
 # [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services
@@ -91,7 +91,7 @@ Codeunit web services provide you with the most control and flexibility. When a 
  For example, the following URL consumes the **Customer** ODATA web service for a specific tenant:  
 
 ```  
-https://localhost:7048/BC130/ODataV4/Company('CRONUS-International-Ltd.')/Customer?Tenant=Tenant1  
+https://localhost:7048/BC230/ODataV4/Company('CRONUS-International-Ltd.')/Customer?Tenant=Tenant1  
 ```  
 For more information, see [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md).  
 
