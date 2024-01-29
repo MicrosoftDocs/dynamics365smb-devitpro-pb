@@ -1,9 +1,9 @@
 ---
 title: "How to: Use OData to Return-Obtain a JSON Document"
 description: Learn about how to use OData to obtain a JSON document
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.custom: bap-template
+ms.date: 01/28/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ---
 # Using OData to Return or Obtain a JSON Document
@@ -22,7 +22,7 @@ You can publish a page as a web service and consume it using JavaScript Object N
     If [!INCLUDE[server](../developer/includes/server.md)] is running on the local computer and is using the default [!INCLUDE[server](../developer/includes/server.md)] instance and OData port, and you have published a web service that is based on page 21 that is called **Customer**, then the address is:  
   
     ```  
-    https://localhost:7048/BC130/ODataV4/Customer?$format=json  
+    https://localhost:7048/BC230/ODataV4/Customer?$format=json  
     ```  
   
      This generates a text file that contains metadata and data from the web service. You can open the file from the browser, or you can save it to disk.  
