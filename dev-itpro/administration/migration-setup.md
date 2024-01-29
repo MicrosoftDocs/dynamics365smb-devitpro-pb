@@ -71,7 +71,7 @@ Once the setup guide is complete and data migration is activated, the initial da
    - For Business Central on-premises, the **Select companies to migrate** page appears. Select one or more companies from the list or switch on **All Companies**, then select **Next**.
    - For Dynamics GP, the **GP Company Migration Configuration** page appears. This page allows to make global settings for the companies selected to migrate. For details about using this page, see [Configure Dynamics GP company data migration](migrate-dynamics-gp.md).
 
-   No matter which on-premsies product you're coming from, you can always return the this page to add more companies.
+   No matter which on-premsies product you're coming from, you can always return the page to add more companies.
 
 1. Select **Finish** to complete the cloud migration setup.
 
