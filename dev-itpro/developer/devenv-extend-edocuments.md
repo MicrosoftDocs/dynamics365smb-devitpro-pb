@@ -7,7 +7,7 @@ ms.reviewer: solsen
 ms.devlang: al
 ms.search.keywords: electronic document, electronic invoice, e-document, e-invoice, customization, development, extend
 ms.search.form: 6103, 6133
-ms.date: 10/05/2023
+ms.date: 01/30/2024
 ms.author: altotovi
 ---
 
@@ -267,7 +267,7 @@ The following example shows how you can implement each method in the interface.
         // Parse the response if needed.
     end;
     ```
-
+<!--
 - **GetApproval:** Check whether a document is approved or rejected.
 
     ```AL
@@ -288,6 +288,7 @@ The following example shows how you can implement each method in the interface.
         // Parse the response if needed.
     end;
     ```
+-->
 
 - **GetApproval:** Check whether a document is approved or rejected.
 
@@ -705,7 +706,7 @@ procedure Create(EDocumentService: Record "E-Document Service"; var EDocument: R
 
 ## Missing features
 
-Do you believe that there are any essential features that could make the development of an e-document solution easier? If so, create the idea on aka.ms/BCIdeas, or start the topic on [aka.ms/BCYammer](https://aka.ms/BCYammer), and we'll get back to you.
+Do you believe that there are any essential features that could make the development of an e-document solution easier? If so, create the idea on aka.ms/BCIdeas, or start the article on [aka.ms/BCYammer](https://aka.ms/BCYammer), and we'll get back to you.
 
 ## See also
 
