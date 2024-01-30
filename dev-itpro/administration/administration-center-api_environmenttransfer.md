@@ -44,7 +44,7 @@ Specifies the Microsoft Entra tenant ID of the destination tenant and the date a
 ```
 {
     "DestinationEntraTenantId": Guid, //The Microsoft Entra tenant ID of the destination tenant
-    "RunOnUtc": datetime // The date and time at which the transfer should run, if accepted on the destination tenant. Expressed as UTC timestamp.
+    "RunAt": datetime // The date and time at which the transfer should run, if accepted on the destination tenant. Expressed as UTC timestamp.
 }
 ```
 
