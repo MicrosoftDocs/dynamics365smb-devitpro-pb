@@ -48,12 +48,12 @@ Robust coding practices are a state of mind for you as a developer. Apart from c
 
 These six principles might help you get started making your code more robust towards failures:
 
-1. Don't trust any code you didn't write
-2. Don't trust consumers of your code
-3. Don't trust the environment your code runs in
-4. Offer graceful degradations
-5. Hide your internal data structures
-6. Assume the improbable
+1. [Don't trust any code you didn't write](#principle-dont-trust-any-code-you-didnt-write)
+2. [Don't trust consumers of your code](#principle-dont-trust-consumers-of-your-code-that-might-include-yourself)
+3. [Don't trust the environment your code runs in](#principle-dont-trust-the-environment-your-code-runs-in)
+4. [Offer graceful degradations](#principle-offer-graceful-degradations)
+5. [Hide your internal data structures](#principle-hide-your-internal-data-structures)
+6. [Assume the improbable](#principle-assume-the-improbable)
 
 For more information about robust programming, see [Robustness (computer_science)](https://en.wikipedia.org/wiki/Robustness_(computer_science)).
 
@@ -91,7 +91,16 @@ For more information, see [Error handling strategies](devenv-al-error-handling.m
 
 ### Principle: Don't trust the environment your code runs in
 
-Remember that you can't know how a customer sets up permissions for users. Although, a user might have access to the entry point of a function they might not have access to all tables referenced. Consider adding the `InherentPermissions` attribute to private functions not raising events. Write defensive code that checks for permissions and be careful when accessing data through `RecordRef` – particularly in an event subscriber, as you can't know, which table is being passed as argument.
+Here are some examples of how you use this principle in practice:
+
+[!INCLUDE[prod_short](includes/prod_short.md)] online runs in a multi-tenant environment, where your AL code shares resources with other sessions, both for the AL runtime and for the database. This means that a peak in resource consumption by AL code in a different session (running in your environment or in someone elses) can and will impact the performance of your session. The performance you get on average will differ from the performance you get right now.
+
+Within an [!INCLUDE[prod_short](includes/prod_short.md)], you don't know the behaviour of other apps and how they have customized the system. For instance, some apps will subscribe to events that you also use in your app. You can't assume the order of event subscriber code being run, so other apps might interfere with the same objects or code flows that your app is modifying.
+
+Also remember that you can't know how a customer sets up permissions for users. Although, a user might have access to the entry point of a function they might not have access to all tables referenced. Consider adding the `InherentPermissions` attribute to private functions not raising events. Write defensive code that checks for permissions and be careful when accessing data through `RecordRef` – particularly in an event subscriber, as you can't know, which table is being passed as argument.
+
+
+
 
 ### Principle: Offer graceful degradations
 
