@@ -41,13 +41,15 @@ To develop apps for [!INCLUDE [prod_short](../includes/prod_short.md)], you're r
 
 To obtain an object range for developing a [!INCLUDE [prod_short](../includes/prod_short.md)] app, you must have access to PartnerSource Business Center (PSBC). Either of the following agreements gives you access to PSBC, which is a first step towards getting a development license:
 
-- [An active Partner Registration Agreement](https://businesscenter.mbs.microsoft.com/#contentdetail/MSDpartneragreem) (PRA)
+- [Partner Registration Agreement (PRA)](https://businesscenter.mbs.microsoft.com/#contentdetail/MSDpartneragreem) (PRA)
+- [Solution Provider Agreement (SPA)]<!--(https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram)-->
 
-- [A Registered Solution Program Addendum](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram) (RSPA)
+> [!NOTE]  
+> We're no longer accepting new partner enrollments for the Solution Provider Agreement.
 
 The relevant contract can be requested through your local Regional Operations Center (ROC) Contracts and Agreements Team below:
 
-- [partnerlifecycle@microsoft.com](mailto:partnerlifecycle@microsoft.com) for Europe, the Middle East, Africa, Americas, and Asia Pacific region.
+- [partnerlifecycle@microsoft.com](mailto:partnerlifecycle@microsoft.com) (for all regions).
 
 ## Step 3: Your unique app specifications
 
