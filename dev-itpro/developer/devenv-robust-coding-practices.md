@@ -1,5 +1,5 @@
 ---
-title: Failure modelling and robust coding practices
+title: Failure modeling and robust coding practices
 description: Describes how to reason over errors and handle them in code.
 author: KennieNP
 ms.author: kepontop
@@ -10,13 +10,13 @@ ms.date: 01/11/2024
 ms.custom: bap-template
 ---
 
-# Failure modelling and robust coding practices
+# Failure modeling and robust coding practices
 
 The AL language (and its predecessor C/AL) was designed to make programming of business logic easy. The programmer just needs to code for the "sunshine scenario" or "the happy (code) path", then the AL runtime presents the user with error messages in unexpected things. While it's true that the AL runtime makes sure that the session never crashes, system-provided error messages can never provide the context of your code to the user and they should therefore be seen as a last resort. In many cases, your code can adapt to cater for unexpected things so that the user won't notice and stays on "the happy (code) path".
 
 There are two techniques you can use to make your code more robust towards errors:
 
-1. failure modelling, and
+1. failure modeling, and
 2. robust coding practices
 
 In the following section, we'll introduce both concepts. 
