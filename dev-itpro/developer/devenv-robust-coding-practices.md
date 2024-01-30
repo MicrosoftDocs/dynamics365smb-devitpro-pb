@@ -95,12 +95,9 @@ Here are some examples of how you use this principle in practice:
 
 [!INCLUDE[prod_short](includes/prod_short.md)] online runs in a multi-tenant environment, where your AL code shares resources with other sessions, both for the AL runtime and for the database. This means that a peak in resource consumption by AL code in a different session (running in your environment or in someone elses) can and will impact the performance of your session. The performance you get on average will differ from the performance you get right now.
 
-Within an [!INCLUDE[prod_short](includes/prod_short.md)], you don't know the behaviour of other apps and how they have customized the system. For instance, some apps will subscribe to events that you also use in your app. You can't assume the order of event subscriber code being run, so other apps might interfere with the same objects or code flows that your app is modifying.
+Within a [!INCLUDE[prod_short](includes/prod_short.md)], you don't know the behavior of other apps and how they've customized the system. For example, some apps will subscribe to events that you also use in your app. You can't assume the order of event subscriber code being run, so other apps might interfere with the same objects or code flows that your app is modifying.
 
-Also remember that you can't know how a customer sets up permissions for users. Although, a user might have access to the entry point of a function they might not have access to all tables referenced. Consider adding the `InherentPermissions` attribute to private functions not raising events. Write defensive code that checks for permissions and be careful when accessing data through `RecordRef` – particularly in an event subscriber, as you can't know, which table is being passed as argument.
-
-
-
+Also remember that you can't know how a customer sets up permissions for users. Although, a user might have access to the entry point of a method they might not have access to all tables referenced. Consider adding the `InherentPermissions` attribute to private methods not raising events. Write defensive code that checks for permissions and be careful when accessing data through `RecordRef` – particularly in an event subscriber, as you can't know, which table is being passed as argument.
 
 ### Principle: Offer graceful degradations
 
