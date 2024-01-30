@@ -41,13 +41,13 @@ The current language setting for the report.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remark
+## Remarks
 
 The `Language` integer parameter must point to a valid Windows Language Code Identifier (LCID). For more information, see [Windows Language Code Identifier (LCID) Reference](/openspecs/windows_protocols/ms-lcid/70feba9f-294e-491e-b6eb-56532684c37f). The `Language` codeunit includes the `GetLanguageId` method that can safely return a valid LCID from a language code in the `Language` table. If you call `Report.Language` with an invalid LCID, then a runtime error occurs.
 
-If you have reports that you want to print in the language of the recipient rather than in your own working language, you can add a single line of code in the report to handle this. This functionality is already enabled for most reports in the standard Business Central[!INCLUDE [prod_short](../../includes/prod_short.md)] database. The document is printed in the language that is specified in the **Language Code** field on the **Customer Card** page.
+If you have reports that you want to print in the language of the recipient rather than in your own working language, you can add a single line of code in the report to handle this. This functionality is already enabled for most reports in the standard [!INCLUDE [prod_short](../../includes/prod_short.md)] database. The document is printed in the language that's specified in the **Language Code** field on the **Customer Card** page.
 
-For reports that need the multiple document languages functionality, you must insert the following AL code as the first line in the `OnAfterGetRecord()` trigger on the data item referencing the **Customer** table (notice that that feature isn't limited to the **Customer** table, other data sources provides similar functionality):
+For reports that need the multiple document languages functionality, you must insert the following AL code as the first line in the `OnAfterGetRecord()` trigger on the data item referencing the **Customer** table (notice that the feature isn't limited to the **Customer** table, other data sources provide similar functionality):
 
 `CurrReport.Language := LanguageMgmt.GetLanguageIdOrDefault("Language Code");`
 
@@ -88,8 +88,7 @@ var
 
 ```
 
-## See Also
-
+## See also
 [Windows Language Code Identifier (LCID) Reference](https://learn.microsoft.com/openspecs/windows_protocols/ms-lcid/70feba9f-294e-491e-b6eb-56532684c37f)   
 [Report.FormatRegion](./reportinstance-formatregion-method.md)   
 [Report Localization](../../devenv-report-localization.md)  
