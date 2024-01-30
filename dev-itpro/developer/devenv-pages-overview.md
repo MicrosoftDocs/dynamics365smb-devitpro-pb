@@ -3,7 +3,7 @@ title: Pages overview
 description: Pages are the main way to display and organize data.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 01/30/2024
 ms.reviewer: na
 ms.topic: overview
 ms.author: solsen
@@ -103,7 +103,7 @@ The base application has set the Tooltip property for all controls on (almost) a
 
 ### Instructional text
 
-The base application has applied instructional text to setup guides and certain other types of page objects.   Your extensions are expected to also include instructional text to setup guides for the same reason. Instructional text can also be created for page fields to describe example values or a short summary. For more information, see [InstructionalText Property](../developer/properties/devenv-instructionaltext-property.md).
+The base application has applied instructional text to setup guides and certain other types of page objects. Your extensions are expected to also include instructional text to setup guides for the same reason. Instructional text can also be created for page fields to describe example values or a short summary. For more information, see [InstructionalText Property](../developer/properties/devenv-instructionaltext-property.md).
 
 ### Example
 
@@ -139,7 +139,7 @@ page 50101 "Reward Card"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the impact of the reward on the customer''s price.';
-                    InstructionalText = 'E.g. 7.5 %';
+                    InstructionalText = 'For example, 7.5 %';
                 }
             }
         }
