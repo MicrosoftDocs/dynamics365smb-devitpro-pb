@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 02/05/2022
 ms.reviewer: solsen
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: thpeder
 ---
 
