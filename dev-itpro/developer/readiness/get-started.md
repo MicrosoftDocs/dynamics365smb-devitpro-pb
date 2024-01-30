@@ -63,10 +63,8 @@ Depending on where you deploy your [!INCLUDE [prod_short](../includes/prod_short
 
 You can request an object range by downloading the object range request form [here](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram). After completion, send them to your Regional Operational Center (ROC) for processing:
 
-- [mbscon@microsoft.com](mailto:mbscon@microsoft.com) if you're based in Europe, the Middle East, or Africa.
-
-- [mbsagree@microsoft.com](mailto:mbsagree@microsoft.com) if you're based in the Americas.
-
+- [mbsquery@microsoft.com](mailto:mbsquery@microsoft.com) if you're based in Europe, the Middle East, or Africa.
+- [mbsorder@microsoft.com](mailto:mbsorder@microsoft.com) if you're based in the Americas.
 - [mbslques@microsoft.com](mailto:mbslques@microsoft.com) if you're based in the Asia Pacific region.
 
 ### Downloading your development license file
