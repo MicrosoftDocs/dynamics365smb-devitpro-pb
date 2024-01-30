@@ -50,7 +50,7 @@ Internal administrators can now transfer environments from one Entra tenant to a
 
 ### Upcoming Business Central Office Hours Calls
 
-During November, we'll host the following calls, which you can already register for today:
+During February, we'll host the following calls, which you can already register for today:
 
 - **February 6:** Power Platform and Business Central virtual tables
 - **February 20:** New Danish bookkeeping act - all changes in the localization
