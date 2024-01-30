@@ -5,7 +5,6 @@ ms.custom: na
 ms.date: 12/29/2023
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.search.keywords: NAV Windows client
 author: jswymer
 ---
