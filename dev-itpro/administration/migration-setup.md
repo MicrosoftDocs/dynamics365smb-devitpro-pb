@@ -41,6 +41,8 @@ Once the setup guide is complete and data migration is activated, the initial da
 - Create table mappings if you need to rename a table during the cloud migration or to move a subset of fields to a different table or table extension. For more information, see [Define migration table mappings](migration-table-mapping.md).
 <!-- - Get the SQL connection string for the Business Central on-premises database. For more information, go to [SQL connection string](#define-your-sql-database-connection).-->
 
+- If have any users in already in your Business Central online environment and you want them to be able to work as usual during cloud migration, see [Retain permissions](migration-retain-permissions.md).
+
 > [!TIP]
 > We recommend that you start the migration by running the assisted setup from a company other than the company that you are migrating data to. For example, sign into the demonstration company, CRONUS, and start the process there. This way, you can make sure that all users are logged out of the original company and the target company. This is especially important when you migrate from [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises current version because you can run the migration tool multiple times.
 

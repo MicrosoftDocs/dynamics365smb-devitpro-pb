@@ -400,6 +400,7 @@
 #### [Migrate from Dynamics NAV to Business Central online](administration/migrate-nav.md)
 ### Migrate from Dynamics GP
 #### [End-to-end overview](administration/migrate-gp-overview.md)
+#### [Dynamics GP data migrated to Business Central](administration/migrate-dynamics-gp.md)
 #### [Managing cloud migration](administration/migration-manage.md)
 #### Prepare
 ##### [Plan cloud migration](administration/cloud-migration-plan-prepare-gp.md)
@@ -409,9 +410,9 @@
 ##### [Optimize cloud migration performance](administration/migration-optimize-replication-gp.md)
 #### Set up cloud migration
 ##### [Cloud migration setup overview](administration/migration-setup-overview.md)
-##### [Retain permissions (optional)](administration/migration-retain-permissions.md)
+##### [Retain permissions(optional)](administration/migration-retain-permissions.md)
 ##### [Run cloud migration setup](administration/migration-setup.md)
-##### [Configure Dynamics GP company migration](administration/migrate-dynamics-gp.md)
+##### [Configure Dynamics GP company migration](administration/migrate-gp-configure-companies.md)
 ##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
 #### Replicate data
 ##### [Data replication overview](administration/migration-data-replication.md)
