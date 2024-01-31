@@ -75,7 +75,7 @@ Once the setup guide is complete and data migration is activated, the initial da
 
 1. Select **Finish** to complete the cloud migration setup.
 
-  If you want to open **Cloud Migration Management**, where you can run the migration, select **Yes**.
+   If you want to open **Cloud Migration Management**, where you can run the migration, select **Yes**.
 
 1. If you're migrating from Dynamics GP to the Austarlian version of Business Central online, sign in to each on-premises company that you intend to migrate and make the following changes:
 
@@ -126,4 +126,3 @@ Once the setup guide is complete and data migration is activated, the initial da
 
 - [Change how data is replicated to Business Central online](cloud-migration-change-replication.md) (advanced, optional)
 - [Run Data Migration](migration-data-replication.md).
-
