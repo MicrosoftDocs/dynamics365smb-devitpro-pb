@@ -379,9 +379,9 @@ When you have questions or bugs regarding the self-validation script, or any of 
 
 For more information, see [https://github.com/microsoft/navcontainerhelper/issues](https://github.com/microsoft/navcontainerhelper/issues).
 
-### When do I write on Yammer?
+### When do I write on Viva Engage?
 
-When you have questions on developing and maintaining AppSource apps, on automatically submitting apps to AppSource, or about the validation process, you can ask a question on Yammer. In this group, you find announcements from Microsoft together with discussions around various AppSource-related articles.
+When you have questions on developing and maintaining AppSource apps, on automatically submitting apps to AppSource, or about the validation process, you can ask a question on Viva Engage. In this group, you find announcements from Microsoft together with discussions around various AppSource-related articles.
 
 You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, email dyn365bep@microsoft.com. 
 
