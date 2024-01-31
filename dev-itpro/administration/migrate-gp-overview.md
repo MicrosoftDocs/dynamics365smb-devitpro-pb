@@ -8,11 +8,10 @@ ms. search.keywords: cloud, edge
 ms.search.form: 2502, 4003
 ms.date: 12/14/2023
 ms.author: jswymer
-
 ms.custom: bac-template
 ---
 
-# Dynamics GP on-premises to online migration: End-to-end overview
+# Dynamics GP migration to Business Central online: End-to-end overview
 
 This article provides an overview of how the migration works and the necessary tasks for completing the migration from Dynamics GP on-premises. By gaining an understanding of the data migration basics, you're able to plan and execute a smooth transition to the cloud. 
 
