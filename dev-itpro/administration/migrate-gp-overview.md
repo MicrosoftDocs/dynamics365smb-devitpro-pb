@@ -43,17 +43,15 @@ In general, the cloud migration tool migrates the following data:
 - Transactional data  
 - Classes for customers, vendors, and items
 - Vendor 1099
+- Historical data
 
-The company data that is migrated is configurable as part of the cloud migration setuo. To learn more, see [Configure Dynamics GP company migration](migrate-dynamics-gp.md).
+The company data that is migrated is configurable as part of the cloud migration setup. To learn more, see [Configure Dynamics GP company migration](migrate-dynamics-gp.md).
 
 ### How data is migrated 
 
 Data is migrated table by table, and success and failures are tracked for each table. If a table fails to migrate, the error will be captured, and the migration moves on to the next table until completed. Tables will fail to migrate if they can't be found, or if the schema doesn't match between the cloud and the on-premises tables.  
 
 The initial data migration time can vary depending on factors such as the amount of data to migrate, your SQL Server configuration, and your connection speeds. The initial migration will take the longest amount of time to complete because all data is migrating. After the initial migration, only changes in data will be migrated, so each iteration runs more quickly. You don't need to run the migration process more than once if you don't want to. However, if you're running the migration while users are still using the on-premises system, you must run at least one more migration in order to ensure all data was moved to the cloud before you start transacting in [!INCLUDE [prod_short](../includes/prod_short.md)] online.  
-
-
-
 
 > [!IMPORTANT]
 > [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]
@@ -73,8 +71,13 @@ The main steps in a migration process are:
 <!-- add gp assessment tool for https://bcmigrationassessments.com/ -->
 
 
+1. Assessment
+
+   https://bcmigrationassessments.com/
+https://bcmigrationassessments.com/ 
+1. 
 1. Have a target environment with a paid subscription  
-2. Determine which data to migrate.
+1. Determine which data to migrate.
 
     You can use the migration process to move historical data to Azure Data Lake.
 

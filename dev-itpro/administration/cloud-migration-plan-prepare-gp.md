@@ -12,6 +12,12 @@ ms.custom: bap-template
 
 This article provides recommendations to help you define your cloud migration strategy and get environments and users ready for cloud migration.
 
+## Run migration assessment tool
+
+The migration assessment tool delivers valuable insight into your overall readiness to migrate. It provides migration options based on your needs, and detects potential migration issues based on your Dynamics GP system structure. To get started with the migration tool, go to [https://bcmigrationassessments.com/](https://bcmigrationassessments.com/).
+
+[Learn more about the tool](https://www.enavate.com/gp-to-dynamics-365-business-central-migration-assessment).
+
 ## Determine what data to migrate
 
 The data that's migrated is determined on two levels: per-company and per-extension.
@@ -74,7 +80,7 @@ It's important to have a solid migration strategy in place to ensure a smooth tr
 1. [Create a full backup](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server) of the on-premises production database. Differential or partial backups aren't supported as they don't include Change Tracking data required for replication runs.
 <!--1. Optionally, deploy the backup database to an Azure SQL Database for improved performance. See [Optimizing Cloud Migration Performance](migration-optimize-replication.md).-->
 1. Complete the usual preparation steps on the backup on-premises database and address any issues that arise.
-1. Complete the cloud migration setup, including chosoing the companies to migrate.
+1. Complete the cloud migration setup, including choosing the companies to migrate.
 1. Run the first [replication run](migrate-data-replication-run.md) and address any issues that arise.
 1. Within the change tacking period set up on the on-premises production database in step 1, overwrite the backup database with a new full backup to replicate data that is new or modified since the backup created in step 2.
    > [!NOTE]
