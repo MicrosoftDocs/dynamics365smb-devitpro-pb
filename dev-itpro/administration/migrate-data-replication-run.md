@@ -17,7 +17,7 @@ This article explains how to run data replication to move data from on-premises 
 
 ## Prerequisites
 
-You've set up cloud migration. For more information, go to [Set up cloud migration](migration-setup.md).
+- You've set up cloud migration. For more information, go to [Set up cloud migration](migration-setup.md).
 
 ## Preparation
 
