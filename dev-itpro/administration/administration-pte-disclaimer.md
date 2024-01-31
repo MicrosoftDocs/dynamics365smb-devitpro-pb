@@ -3,11 +3,9 @@ title: Per-tenant Extension (PTE) Disclaimer
 description: Per-tenant Extension (PTE) disclaimer for Business Central
 ms.custom: na
 ms.author: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
-ms.date: 01/03/2024
+ms.date: 01/25/2024
 ---
 
 # Per-Tenant Extension (PTE) Disclaimer
@@ -16,7 +14,7 @@ ms.date: 01/03/2024
 >
 > The publisher of the customized extension must maintain compatibility with new releases of Dynamics 365 Business Central. An extension that isn't compatible with a new release within 90 days of the release will be removed and the tenant upgraded.
 >
-> In the event of any technical issues or concerns related to the per-tenant extension, Microsoft reserves the right to inspect the provided code manually for diagnostic and troubleshooting purposes.
+> In the event of any security, privacy and/or technical issues or errors introduced by the per-tenant extension, Microsoft reserves the right to inspect the provided code manually for diagnostic and troubleshooting purposes. For example, this can happen when compilation of the per-tenant extension fails either due to issues in per-tenant extension code or internal issues in Microsoft components working with this per-tenant extension.
 
 Microsoft holds the right to collect the invocation information or error messages thrown while executing the per-tenant extension code or while the extension is being compiled. The errors might contain, but aren't limited to, the call stack, the name of AL objects or file names, signature of methods, triggers, and events introduced by a per-tenant extension. This information might be kept outside of the geographical boundaries of the environment.
 

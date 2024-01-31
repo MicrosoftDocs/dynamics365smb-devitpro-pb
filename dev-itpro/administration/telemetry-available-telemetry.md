@@ -4,8 +4,6 @@ description: Get an overview of available telemetry in Business Central
 author: jswymer
 ms.topic: overview
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 07/09/2021
 ms.author: jswymer

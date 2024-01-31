@@ -3,7 +3,6 @@ title: Using Table Partitioning and Data Compression
 description: Learn how to use table partitioning and data compression to improve data access performance in Business Central online.
 ms.custom: bap-template
 ms.date: 06/14/2023
-ms.service: "dynamics365-business-central"
 ms.search.keywords: data access,sql,partitioning,constraints
 author: jswymer
 ms.author: jswymer

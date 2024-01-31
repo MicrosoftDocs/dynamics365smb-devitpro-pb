@@ -4,8 +4,6 @@ description: We're constantly streamlining and adjusting our app in-step with ma
 author: AndreiPanko
 ms.topic: article
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms. search.keywords: deprecated, Russia, local functionality
 ms.date: 12/19/2023
 ms.author: andreipa

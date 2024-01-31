@@ -4,8 +4,6 @@ description: Learn about how a VAR or an internal administrator can set update w
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 04/01/2021
 ms.author: jswymer

@@ -4,8 +4,6 @@ description: Create a new database in the development environment and by using t
 ms.custom: na
 ms.date: 12/29/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---

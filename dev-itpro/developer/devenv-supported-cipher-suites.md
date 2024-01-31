@@ -1,16 +1,14 @@
 ---
-title: "Supported Cipher Suites"
-description: "Lists the cipher suites that are supported for external APIs called from Business Central"
+title: Supported cipher suites
+description: Lists the cipher suites that are supported for external APIs called from Business Central.
 ms.custom: na
 ms.date: 05/19/2021
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
 ---
 
-# Supported Cipher Suites
+# Supported cipher suites in outgoing calls
 
 This article lists the cipher suites that are supported on external APIs that are called from [!INCLUDE[prod_short](includes/prod_short.md)] online.
 
@@ -20,7 +18,7 @@ For [!INCLUDE[prod_short](includes/prod_short.md)] to connect to an external API
 
 A cipher suite is used to help secure web service calls made from the [!INCLUDE[prod_short](includes/prod_short.md)] app to an external URL. A cipher suite is a set of algorithms, which typically include:  key exchange, authentication, encryption, and message authentication code (MAC).
 
-## Supported cipher suites
+## Supported cipher suites in HTTPS certificate
 
 |Suite|Protocol|Key exchange algorithm|Authentication algorithm|Encryption algorithm (*cipher*\_*keysize*\_*type*)|MAC algorithm (Hash)|
 |----|--------|----------------------|------------------------------------|----------|----|
@@ -35,6 +33,7 @@ A cipher suite is used to help secure web service calls made from the [!INCLUDE[
 
 ## See Also
 
+[Call external services with the HttpClient data type](devenv-httpclient.md)  
 [HttpClient Data Type](methods-auto/httpclient/httpclient-data-type.md)  
 [Programming in AL](devenv-programming-in-al.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  

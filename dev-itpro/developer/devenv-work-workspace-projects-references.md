@@ -4,8 +4,6 @@ description: "Handling solutions in the AL language that contains multiple proje
 author: SusanneWindfeldPedersen
 ms.date: 12/19/2022
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -98,9 +96,9 @@ To control how dependency publishing is performed on the server, the `launch.jso
 > [!NOTE]  
 > With the `Ignore` setting only **Leaf** will be published against what has already been published on the server for **Middle** and **Base**. If a change has been done on **Base** that would break **Leaf**, even though local compilation would pass, the server compilation will fail in this scenario. The benefit of using this option is to gain publishing time when **Base** is a large project. Assuming that **Base** is published, then **Leaf** and **Middle** will be left untouched on the server. Only runtime errors will reveal if **Base** has broken **Middle** and **Leaf**.
 
-## Global and workspace launch configuration
+## User and workspace launch configuration
 
-With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. For more information, see [Global and workspace launch configuration](devenv-json-launch-file.md#global-and-workspace-launch-configuration).
+With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. For more information, see [User and workspace launch configuration](devenv-json-launch-file.md#user-and-workspace-launch-configuration).
 
 ## Traverse the dependency graph
 

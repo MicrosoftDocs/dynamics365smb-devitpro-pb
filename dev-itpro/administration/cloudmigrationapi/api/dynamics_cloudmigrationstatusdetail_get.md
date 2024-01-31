@@ -2,11 +2,8 @@
 title: Get cloudMigrationStatusDetails
 description: Gets a cloud migration status detail object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/25/2022
 ms.author: solsen
 ---
