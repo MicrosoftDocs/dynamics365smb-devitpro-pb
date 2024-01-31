@@ -10,39 +10,9 @@ ms.search.form: 4003
 ms.date: 08/23/2022
 ms.author: jswymer
 ---
+# Dynamics GP data migrated to Business Central online
 
-# Configure Dynamics GP company migration
-
-<!--An assisted setup guide in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can help you migrate data from Dynamics GP. You can migrate data from Dynamics GP 2015 and later versions of Dynamics GP. For more information, see [System requirements](faq-migrate-data.md#system-requirements).  
-
-> [!IMPORTANT]
-> Migrating from Dynamics GP using the **Cloud Migration Setup** assisted setup guide is currently only supported for the following markets: United States, Canada, United Kingdom, Australia.
-
-The end-to-end process is described [here](migrate-data.md). In this article, we talk about background information and things to take into consideration.  
-
-<!--As part of the Business Central 21.1 release--> The Business Central cloud migration tools for Dynamics GP include the **GP Company Migration Configuration** page. This page allows you to make global settings for all companies selected to migrate with the ability to update at a company level if necessary.
-
-In addition to the GP Company Migration Configuration page you can select which modules you would like migrated from GP to Business Central. You will be able to select from the following modules to migrate: Accounts Payable, Accounts Receivable, Bank, Open Purchase Orders and Inventory.
-
-*Note: General Ledger information will always be migrated.*  
-
-## Prerequisites
-
-You've set up cloud migration. For more information, go to [Run cloud migration setup](migration-setup.md).
-
-## Get started with the GP Company Migration Configuration page
-
-The **GP Company Migration Configuration** page opens automatically when you complete the **Cloud Migration Setup** assisted setup, but you can also open the page from the **Cloud Migration Management** page and selecting the **GP Company Migration Configuration** action.
-
-Use this new page to select the data you want migrated from Dynamics GP to Business Central. The following sections the options on the page. 
-
-## Modules
-
-Select what modules you want to migrate as well as if you only want to migrate master data for specific modules are available. You can select the options at a global level, applying the options to all companies selected to migrate or you can tweak options at a company level in the Per Company fast tab.  
-
-If you select to only migrate master data, records such as Accounts, Customer, Vendors and Items will migrate, however no transactional information from GP will be migrated for the selected module.
-
-When you migrate from Dynamics GP, the following information is migrated from Dynamics GP to Business Central online:
+This articles provides an overview of Dynamics GP data can be migrated to Business Central online by cloud migration tools. You configure the actual data to migrate either globally or per company as part of the cloud migration set up using the **GP Company Migration Configuration** page.
 
 ## Fiscal periods
 
@@ -136,32 +106,8 @@ In the GP Company Migration Configuration page you can select if you want to mig
 
 You can limit the about of data migrated in the snapshot by entering the latest year in GP that you want brought over.  Enter this year in the Oldest GP Year field in the GP Company Migration Configuration page.  
 
-The GP Historical Snapshot will run as a background process after the migration is complete.  The status of the GP Historical Snapshot data can be viewed in Fact boxes in the Cloud Migration Management page.
+The GP Historical Snapshot will run as a background process after the migration is complete. The status of the GP Historical Snapshot data can be viewed in Fact boxes in the Cloud Migration Management page.
 
-<!--
-## Diagnostics run
-
-In the **Cloud Migration Management** page, you can create a diagnostics run to do more data validation/verification before the migration is run so that you can decrease the risk of a failed migration.
-
-The maximum field length is different in Dynamics GP (30) and [!INCLUDE [prod_short](../includes/prod_short.md)] (20), and the diagnostics run checks for issues and shows warnings. The tool also checks item numbers to look for duplicates based on the character limit, and it checks to make sure there are no blank posting accounts that are needed for posting of transactions with the migration.
-
-Here is an example of what you might see when you run a diagnostic run:
-
-:::image type="content" source="../media/gp-migration-diagnostics.png" alt-text="Status of migration run inside Business Central]":::-->
-
-<!--## Migration tool support for Australia
-
-Starting with 2020 release wave 2, organizations in Australia can migrate from Dynamics GP to an Australian version of [!INCLUDE [prod_short](../includes/prod_short.md)] online.
-
-The process to run the migration in an Australian [!INCLUDE [prod_short](../includes/prod_short.md)] online is the same as running a migration in the other supported countries/regions. However, there is some setup that needs to be done before the migration can be run. To make the changes to the setup, you must run through the cloud migration wizard. When the wizard setup is complete, and companies are fully set up, you must log into the companies that you are planning to migrate and make the following changes
-
-* Transactions
-
-  With transactions that are being migrated, we bring over totals on the invoices for the customers so GST information is already included in the transactions. You must turn off the GST and Adjustment Mandatory features in the **General Ledger Setup** page to allow the transactions to post during the migration. After the migration is complete, you can turn both GSP and Adjustment Mandatory back on so that new transactions that are entered in [!INCLUDE [prod_short](../includes/prod_short.md)] online will use this functionality.
-
-* Posting groups
-
-  Within the posting process there is validation to look for a blank VAT business posting group and VAT product posting group. This combination isn't setup by default and is needed for the migration. So add a VAT posting configuration in the **VAT Posting Setup** page with blank values for the **VAT Bus Posting Group** and **VAT Prod. Posting Group** fields.  -->
 
 ## Next steps
 
