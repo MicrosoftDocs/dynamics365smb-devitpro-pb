@@ -1,13 +1,13 @@
 ---
-title: How-to topic template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: How-to description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: how-to #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+title: Configure Dynamics GP company migration
+description: Learn how to specify the Dynamicss GP company data for migrating to Business Central on-premises
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: how-to 
+ms.collection: 
 ms.date: 01/31/2024
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
 
 # Configure Dynamics GP company migration
@@ -35,9 +35,20 @@ The **GP Company Migration Configuration** page opens automatically when you com
 
 Use this new page to select the data you want migrated from Dynamics GP to Business Central. The following sections the options on the page. 
 
+## Modules
 
-## 
+## Master data only
+
+## Disable auto posting
+
+## Classes
+
+## Vendor 1099
+
+## Historical snapshot
+
+## Per company
 
 ## Next steps
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+[Run data replication](migrate-data-replication-run.md) 
