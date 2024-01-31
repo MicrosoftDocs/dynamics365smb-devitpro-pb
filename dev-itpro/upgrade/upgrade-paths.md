@@ -4,7 +4,6 @@ description: Provides an overview of the different upgrade paths for Business Ce
 author: jswymer
 ms.custom: na
 ms.reviewer: na
-ms.suite: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 10/27/2023

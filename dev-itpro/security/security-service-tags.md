@@ -1,5 +1,5 @@
 ---
-title: "Azure security service tags"
+title: Us Azure security service tags
 description: "List of Azure service tags for Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -10,7 +10,7 @@ ms.date: 01/12/2024
 ms.custom: na
 ---
 
-# Azure security service tags
+# Use Azure security service tags to restrict network access from/to Business Central
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 

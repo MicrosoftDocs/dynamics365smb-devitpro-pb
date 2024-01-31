@@ -4,8 +4,6 @@ description: Learn about the telemetry for configuration package telemetry for A
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 12/20/2023
 ms.author: jswymer

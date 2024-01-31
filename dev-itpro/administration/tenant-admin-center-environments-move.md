@@ -4,8 +4,6 @@ description: You can transfer a Business Central environment to another Microsof
 author: jobulsin
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, move
 ms.date: 12/21/2023
 ms.author: jobulsin

@@ -5,8 +5,6 @@ author: jswymer
 
 ms.topic: conceptual
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 12/29/2021
 ms.author: jswymer
 

@@ -7,7 +7,6 @@ ms.topic: how-to #Required; don't change.
 ms.collection: 
 ms.date: 11/22/2023
 ms.custom: bap-template #Required; don't change.
-ms-service: dynamics365-business-central
 ---
 
 # Power Pages on virtual tables (preview)
