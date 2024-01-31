@@ -2,7 +2,6 @@
 title: Migrate Dynamics GP data to the cloud
 description: Learn how to migrate to the cloud from Dynamics GP using an assisted setup guide in Business Central online. Move historical data to Azure Data Lake.
 author: jenolson
-
 ms.topic: conceptual
 ms.devlang: al
 ms.reviewer: jswymer
