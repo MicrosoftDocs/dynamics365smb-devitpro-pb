@@ -66,7 +66,7 @@ This section outlines the general process or phases you go through to migrate da
 
    [Learn more about the tool](https://www.enavate.com/gp-to-dynamics-365-business-central-migration-assessment).
 
-1. Preparation and plaaning
+1. Preparation
 
    The preparation phase helps ensure the migration runs as fast and problem-free. Preparation typically includes these tasks:
 
