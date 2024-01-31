@@ -64,12 +64,15 @@ For more information, see [FAQ about migrating to Business Central online from o
 
 ## Estimate the data size in your [!INCLUDE[prod_short](../includes/prod_short.md)] online tenant
 
-In the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], data is compressed using the SQL Server data compression feature. This condition means that the data size in your on-premises database might not match the data size when migrated to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service. For more information on estimating the compressed size of your data, see [Estimating the data size in your Business Central online tenant](./cloud-migration-estimate-compressed-data-size.md). 
+In the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], data is compressed using the SQL Server data compression feature. This condition means that the data size in your on-premises database might not match the data size when migrated to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service. For more information on estimating the compressed size of your data, see [Estimating the data size in your Business Central online tenant](./cloud-migration-estimate-compressed-data-size.md).
 
-## Plan your migration approach
+## Determine your migration approach
 
-It's important to have a solid migration strategy in place to ensure a smooth transition. Most migrations can run from the on-premises production database with minimal downtime for end users. However, for especially large migrations, it might be better to run migration from a backup of the on-premises database<!--deployed as Azure SQL Database-->. Doing migrations this way improves migration speeds and minimizes performance loss and downtime on the on-premises production database.
+It's important to have a solid migration strategy in place to ensure a smooth transition. Most migrations can run from the on-premises production database with minimal downtime for end users. However, for especially large migrations, it might be better to run migration from a backup of the on-premises database<!--deployed as Azure SQL Database-->. Doing migrations this way improves migration speeds and minimizes performance loss and downtime on the on-premises production database. The following steps outline a typical migration approach.
 
+1. Move Dynamics GP database to Azure Data Lake (optional).
+
+  You can create a copy of the Dynamics GP database in Azure Data Lake so that you have it for future reference after the migration to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online. [Learn more](cloud-migration-azure-data-lake-gp.md).
 1. [Enable change tracking](/sql/relational-databases/track-changes/enable-and-disable-change-tracking-sql-server) on the on-premises production database for the expected number of days between the first backup for replication and the next time you'll back up and replicate. A minimum of three days is enforced. The number of days for which change tracking is enabled can't be changed later without resetting change tracking altogether.
 
    > [!NOTE]
@@ -82,16 +85,14 @@ It's important to have a solid migration strategy in place to ensure a smooth tr
 1. Complete the usual preparation steps on the backup on-premises database and address any issues that arise.
 1. Complete the cloud migration setup, including choosing the companies to migrate.
 1. Run the first [replication run](migrate-data-replication-run.md) and address any issues that arise.
-1. Within the change tacking period set up on the on-premises production database in step 1, overwrite the backup database with a new full backup to replicate data that is new or modified since the backup created in step 2.
+1. Within the change tacking period set up on the on-premises production database in step 2, overwrite the backup database with a new full backup to replicate data that is new or modified since the backup created in step 3.
    > [!NOTE]
    > Rather than overwriting the backup, the old backup database can also be deleted. If creating a new backup rather than overwriting an existing backup, ensure the new backup database has the same name as the previous one. If the database name changes, run the Cloud Migration setup in the cloud environment again to point to the new database; the tooling will still attempt to use Change Tracking data if available to avoid replicating all data in the source database.
-1. Repeat steps 2-5 as needed until you reach a state that is suitable for the final migration run.
+1. Repeat steps 3-6 as needed until you reach a state that is suitable for the final migration run.
 1. Stop the usage of the on-premises environment ahead of the final backup of the on-premises production database. Run one final replication from the backup database to replicate the last data before running data upgrade.
 
    [!INCLUDE [bc-cloud-migrate-replicate-all-before-upgrade.md](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
 1. Run [Data Upgrade](migration-data-upgrade.md) on the cloud environment.
-
-   <!--This step isn't required if you're on-premises version is the same as Business Central online (that is, both are the most current versions).-->
 
 1. [Complete the migration](migration-finish.md) and go live on the cloud environment.
 
