@@ -213,7 +213,7 @@ Your submission fails during the "Automated Application Validation" stage if you
 
 ### What happens to preview versions during environment upgrades?
 
-During the upgrade of an environment to the next major, the latest publicly available version of AppSource apps are installed on the customer environment. If there a higher version is available for your preview app, this version is installed. If the preview version is the highest version, the preview version is preserved.
+During the upgrade of an environment to the next major, the latest publicly available version of AppSource apps are installed on the customer environment. If there is a higher version is available for your preview app, this version is installed. If the preview version is the highest version, the preview version is preserved.
 
 During the upgrade of an environment to the next minor, AppSource apps versions are preserved unless the environment settings specify to update apps to the latest version available.
 
