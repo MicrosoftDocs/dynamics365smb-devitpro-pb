@@ -34,7 +34,7 @@ To disable cloud migration, complete the following steps:
 
 ## <a name="API"></a> Step 2 Run API data upgrade
 
-> **APPLIES TO:** Business Central on-premises only
+> **APPLIES TO:** Migration from Business Central on-premises only
 
 This step is only required if you skipped the API data upgrade during the cloud migration. [Learn more about skipping API data upgrade](migration-skip-api-data-upgrade.md). 
 
@@ -77,7 +77,7 @@ User accounts and permissions in Business Central on-premises aren't migrated to
 
 ## Step 4 Define user mappings
 
-> **APPLIES TO:** Business Central on-premises only
+> **APPLIES TO:** Migration from Business Central on-premises only
 
 If any data or transactions are dependent on a specific on-premises user account, then you must map the on-premises user account to an online user account. 
 
@@ -97,9 +97,6 @@ If any data or transactions are dependent on a specific on-premises user account
 
 ## Step 5 Reconfigure the Dynamics 365 Sales connection
 
-> **APPLIES TO:** Business Central on-premises only
+> **APPLIES TO:** Migration from Business Central on-premises only
 
 If you're integrating with Dynamics 365 Sales, you have to set up the connection again. For more information, see [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).
-
-
-
