@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ms.search.keywords: cloud, migrate, saas, online
 ms.date: 11/30/2022
 ms.author: jswymer
-ms.service: dynamics365-business-central
+
 ms.custom: bap-template
 ---
 
@@ -181,6 +181,9 @@ This section outlines the general process or phases you go through to migrate da
    <!--If you want to migrate more companies, disable the migration, and start the setup again. Or, use the **Select Companies to Migrate** action from **Cloud Migration Management** page.-->
 
    To get started, go to [Upgrade data](migration-data-upgrade.md).
+
+   [!INCLUDE [cloud-migration-telemetry](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
+
 1. Completion and follow-up
 
    Completion and follow-up are crucial steps in the cloud migration process, as they involve setting up and optimizing your new Business Central online environment. Here are some essential tasks to consider:
@@ -217,14 +220,15 @@ With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, se
 
 ### Limited data entry during migration period
 
-We limit the data that you can enter in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online to data that isn't included in data migration from on-premises. Otherwise, any data that was written to the tenant database would be continuously overwritten during the migration process.  
+Once the cloud migration is set up and underway, the data that you can enter in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant is limited to data that isn't included in data migration from on-premises. Otherwise, any data that was written to the tenant database would be continuously overwritten during the migration process.  
 
-To make setting up this read-only tenant more efficient, we created the *Intelligent Cloud* user group and the *Intelligent Cloud* permission set. Once the cloud migration environment is configured, all users without SUPER permissions will be automatically assigned to the *Intelligent Cloud* user group. Only users with SUPER permissions will be allowed to make modifications to the system at this point.  
+To make setting up this read-only tenant more efficient, we created the <!--*Intelligent Cloud* user group and the-->*Intelligent Cloud* permission set. Once the cloud migration environment is configured, existing users in the online tenant that don't have SUPER permissions are automatically assigned to the *Intelligent Cloud* <!--user group--> permission set. Only users with SUPER permissions will be allowed to make modifications to the system at this point. If you add any online users later, make sure you assign them *Intelligent Cloud* permission set. They're not assigned automatically.
 
 > [!NOTE]  
 > Before you configure a connection from on-premises to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, make sure that at least one user in each company is assigned SUPER permissions.  
 
-Users that are reassigned to the *Intelligent Cloud* user group have access to read ALL data by default. If you need to further restrict what data a user should be able to read, the SUPER user can create new user groups and permissions sets and assign users accordingly. It's highly recommended to create any new permissions sets from a copy of the *Intelligent Cloud* permission set and then take away permissions you don't want users to have.  
+Users that are reassigned to the *Intelligent Cloud* <!--user group--> permission set have access to read ALL data by default. If you need to further restrict what data a user should be able to read, the SUPER user can create new user groups and permissions sets and assign users accordingly. It's highly recommended to create any new permissions sets from a copy of the *Intelligent Cloud* permission set and then take away permissions you don't want users to have.  
+
 
 > [!WARNING]
 > If you grant insert, modify or delete permissions to any resource in the application that was set to read-only, it could have a negative impact on the data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. If this occurs, you may have to clear all your data and rerun a full migration to correct this.

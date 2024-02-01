@@ -5,8 +5,6 @@ ms.custom: na
 ms.author: solsen
 ms.date: 03/03/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -45,7 +43,7 @@ For AppSource and Microsoft apps:
 - From the **Extension Management** page in [!INCLUDE[prod_short](../includes/prod_short.md)], you can navigate to the AppSource embed view, locate the app, and install it. For more information, see [Installing and Uninstalling Extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall).
 
 > [!NOTE]  
-> The AppSource offer listing contains the list of supported countries. You must verify that the app is available for the country/region of your environment. If it isn't available for the country/region of your environment, the installation will fail.
+> The AppSource offer listing contains the list of supported countries/regions. You must verify that the app is available for the country/region of your environment. If it isn't available for the country/region of your environment, the installation will fail.
 
 For apps provided by Embed ISVs, installation is handled by the Embed ISV partner.
 
@@ -106,7 +104,7 @@ DEV extensions can only exist in sandbox environments. For more information, see
 
 ### How to install
 
-For information on how to install, see [Using Designer](devenv-inclient-designer.md) and [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md).
+For information on how to install, see [Use Designer](devenv-inclient-designer.md) and [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md).
 
 ### Behavior on upgrade
 

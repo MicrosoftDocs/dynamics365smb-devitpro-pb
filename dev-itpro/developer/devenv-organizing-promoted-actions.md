@@ -4,7 +4,6 @@ description: "Guidelines for which actions to promote in the action bar for Dyna
 author: jacobwj
 ms.author: solsen
 ms.reviewer: 
-ms.service: "dynamics365-business-central"
 ms.topic: conceptual
 ms.date: 11/03/2022
 ms.custom: na

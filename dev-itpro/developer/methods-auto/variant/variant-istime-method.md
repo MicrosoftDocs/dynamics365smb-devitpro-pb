@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 07/07/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -42,7 +40,7 @@ An instance of the [Variant](variant-data-type.md) data type.
 ## Example  
  The following example determines whether an AL variant contains a time variable. The code initializes the MyTime variable with a Time value. The MyTime variable is assigned to the variant variable that is named MyVariant. The **IsTime** method determines whether the variant contains a Time variable and stores the return value in the varResult variable. In this case, the variant contains a Time variable so **Yes** is returned and displayed in a message box. The [IsCode Method (Variant)](variant-iscode-method.md) determines whether the variant contains a Code variable. The return value is **No** because the variant does not contain a code. 
  
-```  
+```al
 var
     MyTime: Time;
     MyVariant: Variant;

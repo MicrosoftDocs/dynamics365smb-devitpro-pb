@@ -1,11 +1,10 @@
 ---
 title: "Synchronize the Tenant Database with the Application Database"
 description: This article describes how to synchronize the business data (tenant) database schema with the application database in a single tenant or multitenant deployment environment
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---
@@ -50,7 +49,7 @@ This article describes how to synchronize the business data \(tenant\) database 
     |ServererInstanceName|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance.|
     |TenantId|Specifies the ID of the tenant.|
 
-3.  Press Enter to run the cmdlet.  
+3.  Select <kbd>Enter</kbd> to run the cmdlet.  
 
 ## See Also  
 [Converting a Database.md](../upgrade/Converting-a-Database.md)  

@@ -1,11 +1,10 @@
 ---
 title: "Monitoring SQL Database Deadlocks"
 description: Read about how you can configure Business Central on-premises to log deadlocks that occur in the SQL database.
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

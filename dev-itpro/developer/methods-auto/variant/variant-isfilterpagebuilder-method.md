@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 07/07/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -42,7 +40,7 @@ An instance of the [Variant](variant-data-type.md) data type.
 ## Example  
  The following example uses the IsFilterPageBuilder method on a filter page object that includes a filter control for the **Date** system table.  
    
-```  
+```al
 var
     varDateItem: Text;
     varFilterPageBuilder: FilterPageBuilder;
@@ -54,7 +52,6 @@ begin
     if not myVariant.IsFilterPageBuilder then   
       ERROR(‘This variant should contain a FilterPageBuilder variable’);  
 end;
-  
 ```  
 
 ## See Also

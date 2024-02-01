@@ -3,14 +3,14 @@ title: "Get started with modules"
 description: "Provides an overview of what you will need to work with modules in the System Application."
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: bholtorf
 ms.collection: get-started
 ---
 
 # Get started with modules in the System Application
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 This topic provides information about requirements for working with modules in the System Application.
 

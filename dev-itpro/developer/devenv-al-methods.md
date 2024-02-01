@@ -4,13 +4,14 @@ description: "Methods also known as procedures are a fundamental programming ele
 ms.custom: na
 ms.date: 11/16/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 
 # AL methods
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 Like other languages, AL methods are a fundamental programming element. A method, also known as a procedure, is a named group of statements that perform an operation or task. Depending on the scope, methods can be run, or *called*, from the same object in which they are declared or from other parts of the application.  
 

@@ -5,13 +5,14 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/14/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
-# FAQ for Developing in AL
+# FAQ for developing in AL
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 This topic contains a number of frequently asked questions and answers to these questions. 
 
@@ -55,9 +56,9 @@ With the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you can find A
 
 For things that are not possible to achieve in AL code, the recommendation is to use Azure Functions to host the DLL or C# code previously embedded and call that service from AL.
 
-## Extensions published from Visual Studio Code or created using Designer have disappeared from a sandbox environment. Why?
+## Extensions published from Visual Studio Code or created Use Designer have disappeared from a sandbox environment. Why?
 
-Extensions that have been published to a sandbox environment from Visual Studio Code or created using Designer are removed when the sandbox environment is updated or relocated within our service. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available.
+Extensions that have been published to a sandbox environment from Visual Studio Code or created Use Designer are removed when the sandbox environment is updated or relocated within our service. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available.
 
 If you have per-tenant extensions (PTEs) installed that depend on extensions published from Visual Studio Code, the per-tenant extensions will be removed too.
 

@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 03/02/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -47,12 +45,14 @@ A string representation of the report data structure as structured XML that is c
 
 
 ## Remarks  
+
 [!INCLUDE[WordXmlPart](../../includes/include-wordxmlpart-info.md)]
 
-## Example  
+## Example
+
 [!INCLUDE[example-1](../../includes/include-wordxmlpart-example-1.md)]
 
-```AL
+```al
 var
     ReportAsXmlString: Text;
     MyReport: Report Report6;

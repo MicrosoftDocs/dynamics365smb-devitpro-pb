@@ -2,10 +2,8 @@
 title: "AL Table Proxy Generator"
 description: "Tool for creating integration or proxy tables for integration with Microsoft Dataverse from Business Central"
 ms.custom: na
-ms.date: 07/16/2021
+ms.date: 01/04/2024
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -43,23 +41,23 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 |Parameter|Description|
 |---------|-----------|
 |*Project*| The AL project folder to create the table(s) in.|
-|*PackageCachePath*| The AL project cache folder for symbols. <br> **Note:** It is important that the latest symbols have been downloaded because these are used for comparison when the tool runs. |
+|*PackageCachePath*| The AL project cache folder for symbols. <br> **Note:** It's important that the latest symbols have been downloaded because these are used for comparison when the tool runs. |
 |*ServiceURI*| The server URL for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. For example, `https://tenant.crm.dynamics.com`.|
-|*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list.<br><br>**Note:** It is important that all related tables are specified too. Related tables are, for example, used for lookups and if the related tables are not found, a lookup will no longer be working. For more information, see the section [Specifying tables](devenv-al-table-proxy-generator.md#specifying-tables). |
+|*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list.<br><br>**Note:** It's important that all related tables are specified too. Related tables are, for example, used for lookups and if the related tables aren't found, a lookup will no longer be working. For more information, see the section [Specifying tables](devenv-al-table-proxy-generator.md#specifying-tables). |
 |*BaseId*| The assigned starting ID for the generated new table(s) in AL. |
 |*TableType*| The table type for the table(s) in AL. The options are `CDS` and `CRM`. <br><br>**Note:** If unspecified, the system looks both for `CDS` and `CRM` tables. |
 
 ## Specifying tables
 
-The `Entities` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* table relationships in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. For more information, see [Table relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all tables that you want created, including the related tables, in the `Entities` parameter separated by commas.
+The `Entities` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify, you need to check the *main* table relationships in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. For more information, see [Table relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all tables that you want created, including the related tables, in the `Entities` parameter separated by commas.
 
 ### Related tables
 
 An example could be, that you want to generate an AL proxy table for the **CDS Worker Address** (cdm_workeraddress). 
  
-If you run the altpgen tool and only specify `cdm_workeraddress`, the tool will not generate the `Worker` lookup field, because no related table `Worker` is specified.
+If you run the altpgen tool and only specify `cdm_workeraddress`, the tool won't generate the `Worker` lookup field, because no related table `Worker` is specified.
 
-If you, in the `Entities` parameter specify `cdm_workeraddress, cdm_worker`, the `Worker` lookup field will be generated. Furthermore, if your *symbols contain* the `cdm_worker` table definition, the `Worker` table will not be created as it's already in your symbols. If your *symbols do not contain* the `cdm_worker` table, the `Worker` table will be created together with the `Worker Address` table.  
+If you specify `cdm_workeraddress, cdm_worker` in the `Entities` parameter, the `Worker` lookup field is generated. Furthermore, if your *symbols contain* the `cdm_worker` table definition, the `Worker` table won't be created as it's already in your symbols. If your *symbols don't contain* the `cdm_worker` table, the `Worker` table will be created together with the `Worker Address` table.  
 
 ## Creating a new integration table
 
@@ -69,6 +67,6 @@ The following example starts the process for creating a new integration table in
 .\altpgen -project:"C:\myprojectpath" -packagecachepath:"C:\mypackagepath" -serviceuri:"https://tenant.crm.dynamics.com" -entities:cdm_worker,cdm_workeraddress -baseid:50000 -tabletype:CDS 
 ```
 
-## See Also
+## See also
 
 [Custom Integration with Microsoft Dataverse](../administration/administration-custom-cds-integration.md)  

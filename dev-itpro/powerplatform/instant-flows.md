@@ -4,7 +4,7 @@ description: Learn how users can run instant flows from inside Business Central 
 author: jswymer
 ms.author: jswymer
 ms.reviewer: na
-ms.service: dynamics365-business-central
+
 ms.topic: how-to 
 ms.date: 05/23/2023
 ms.custom: bap-template 

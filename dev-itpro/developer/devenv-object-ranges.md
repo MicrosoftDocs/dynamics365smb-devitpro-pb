@@ -3,11 +3,10 @@ title: Object ranges
 description: Description of the object ranges used for licensing in Business Central.
 author: SusanneWindfeldPedersen
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ms.date: 05/23/2022
+ms.collection: get-started
 ---
 
 # Object ranges in [!INCLUDE[prod_short](includes/prod_short.md)]

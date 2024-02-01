@@ -4,8 +4,6 @@ description: Learn how to use filter tokens to save time when you filter data in
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: mikebcMSFT
 ---
@@ -66,7 +64,6 @@ codeunit 50101 MyAccountFilterTokenSimple
     end;
 
 }
-
 ```
 To try it out in the client, open the `Charts of Accounts` page, filter on **No.** field, and type in a substring that starts the same way with the chosen token word, like **%MYTO**.
 

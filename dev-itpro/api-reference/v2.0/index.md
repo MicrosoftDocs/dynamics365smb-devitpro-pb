@@ -1,11 +1,9 @@
 ---
-title: "API (V2.0) for Dynamics 365 Business Central"
-description: "Reference content for the API (V2.0) endpoint for integration with Dynamics 365 Business Central."
+title: "API (v2.0) for Dynamics 365 Business Central"
+description: "Reference content for the API (v2.0) endpoint for integration with Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.topic: get-started
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -17,10 +15,24 @@ With [!INCLUDE[prod_short](../../includes/prod_short.md)] you can create Connect
 > [!TIP]  
 > For inspiration and examples, see the open source [ALAppExtensions](https://github.com/microsoft/ALAppExtensions/tree/main/Apps/W1/APIV2/app/src/pages) repo. Here you'll find examples of API pages written in AL.
 
+## Microsoft APIs Terms of Use
+
 Before you start using the Business Central APIs, please familiarize yourself with the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use).
 
-> [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md).
+## Enabling APIs
+
+For information about enabling APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md).
+
+
+## Extending APIs
+
+[!INCLUDE[extending_APIs_is_not_supported](../../developer/includes/include-extending-APIs-is-not-supported.md)]
+
+
+## Transition from API v1.0 to API v2.0
+
+For information about transitioning from API v1.0 to API v2.0 see [Transition from API v1.0 to API v2.0](transition-to-api-v2.0.md).
+
 
 ## See Also
 

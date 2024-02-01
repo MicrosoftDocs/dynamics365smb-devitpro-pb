@@ -37,7 +37,7 @@ You should always test with 100% coverage, or at least as close to 100% as you c
 
 ## Do I have to test on every country that I intend to support with my app?
 
-Yes. If you support multiple countries, test your app on every country. Each country's code base is slightly different from both the base application and other countries. It's critical to make sure that the app publishes, syncs, and installs on every country you support. Because an app installs fine on one country doesn’t mean it will publish/install fine on another. We have seen many times where it passes on one but fails on another during our validation.
+Yes. If you support multiple countries/regions, test your app on every country. Each country's code base is slightly different from both the base application and other countries/regions. It's critical to make sure that the app publishes, syncs, and installs on every country you support. Because an app installs fine on one country doesn’t mean it will publish/install fine on another. We have seen many times where it passes on one but fails on another during our validation.
 
 ## Do you have recommendations on maintenance testing of our apps?
 

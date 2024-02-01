@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 03/02/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -55,8 +53,8 @@ The time that the file was last written to. Optional.
 ## Example  
  The following example gets the date and time that a file was written to and displays the data in a message box. The code example assumes that you have created the file 'C:\\MyFolder\\MyText.txt'. This example requires that you create the following global variables and text constant.  
 
-```
- var
+```al
+var
     varDate: Date;
     varTime: Time;
     varFileName: Text;

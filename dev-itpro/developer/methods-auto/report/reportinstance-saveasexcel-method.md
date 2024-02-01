@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 03/02/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -62,7 +60,7 @@ The method can fail in the following three ways:
 ## Example  
 This example shows how to use the SaveAsExcel method to generate the report in the [!INCLUDE[prod_short](../../includes/prod_short.md)] server and then download the Excel workbook file to the server.
  
-```AL
+```al
 var
     MyReport: Report MyReport
     TempFile: File;

@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 03/02/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -53,12 +51,13 @@ Clear(JsonToken)
 ## Example 
 This example shows how to read JSON data from a stream into a JsonToken variable.
 
-```
+```al
 local procedure ReadJson(source : InStream) result : JsonToken;
 begin
     result.ReadFrom(source);    
 end;
 ```
+
 ## See Also
 [JsonToken Data Type](jsontoken-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

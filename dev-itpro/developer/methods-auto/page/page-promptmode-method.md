@@ -5,10 +5,10 @@ ms.author: solsen
 ms.custom: na
 ms.date: 10/25/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.collection:
+  - bap-ai-copilot
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -45,7 +45,7 @@ The prompt mode used for the page.
 
 ## Remarks
 
-This method is used when creating a generative AI dialog in [!INCLUDE [prod_short](../../includes/prod_short.md)]. For more information, see [The PromptDialog object](../devenv-page-type-promptdialog.md).
+This method is used when creating a generative AI dialog in [!INCLUDE [prod_short](../../includes/prod_short.md)]. For more information, see [PromptDialog page type](../../devenv-page-type-promptdialog.md).
 
 ## See Also
 

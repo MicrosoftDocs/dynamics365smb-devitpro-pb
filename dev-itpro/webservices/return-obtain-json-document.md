@@ -1,10 +1,9 @@
 ---
 title: "How to: Use OData to Return-Obtain a JSON Document"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+description: Learn about how to use OData to obtain a JSON document
+ms.custom: bap-template
+ms.date: 01/28/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ---
 # Using OData to Return or Obtain a JSON Document
@@ -14,16 +13,16 @@ You can publish a page as a web service and consume it using JavaScript Object N
   
 1.  You can build applications that consume and display [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data using JSON. This example assumes that you have registered and published a page web service in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
   
-2.  Start Windows Internet Explorer. In the **Address** field, enter a URI in this format:  
+2.  Start a supported web browser, such as Microsoft Edge. In the **Address** field, enter a URI in this format:  
   
     ```  
-    https://<Server>:<WebServicePort>/<ServerInstance>/OData/<web service>?$format=json  
+    https://<Server>:<WebServicePort>/<ServerInstance>/ODataV4/<web service>?$format=json  
     ```  
   
     If [!INCLUDE[server](../developer/includes/server.md)] is running on the local computer and is using the default [!INCLUDE[server](../developer/includes/server.md)] instance and OData port, and you have published a web service that is based on page 21 that is called **Customer**, then the address is:  
   
     ```  
-    https://localhost:7048/BC130/OData/Customer?$format=json  
+    https://localhost:7048/BC230/ODataV4/Customer?$format=json  
     ```  
   
      This generates a text file that contains metadata and data from the web service. You can open the file from the browser, or you can save it to disk.  

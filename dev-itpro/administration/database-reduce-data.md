@@ -2,8 +2,6 @@
 title: "Keeping Database Size Under the Limit"
 description: Learn about the best ways to reduce data stored in Business Central databases.
 author: jswymer
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021

@@ -4,7 +4,7 @@ description: Learn about the cumulative updates for Dynamics 365 Business Centra
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ms.topic: conceptual
 ms.date: 10/23/2023
 ms.custom: bap-template
@@ -30,7 +30,7 @@ We recommend that you install the latest cumulative update.
 [!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
 
 
-The following table lists the cumulative updates released for the Spring 2019 release of Business Central (version 14). The cumulative updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description. 
+The following table lists the cumulative updates released for the Spring 2019 release of Business Central (version 14). The cumulative updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description. 
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
 

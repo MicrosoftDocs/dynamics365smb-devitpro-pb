@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 12/01/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -90,7 +88,6 @@ codeunit 50110 MyCodeunit
         response.Content().ReadAs(responseText);
     end;
 }
-
 ```
 
 ## See Also

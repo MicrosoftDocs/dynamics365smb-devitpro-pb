@@ -5,8 +5,6 @@ author: solsen
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 60509047-8419-4b08-a391-83117489fdee
 caps.latest.revision: 17
@@ -116,8 +114,7 @@ The following code example demonstrates a custom serialization object that imple
            get { return this.serializedStringField; }  
            set { this.serializedStringField = value; }  
       }  
- }  
-
+ }
 ```  
 
 3.  Build the project.  
@@ -164,7 +161,6 @@ codeunit 50101 SerializationSample
             Message(‘Server data has been serialized to the client object.’);
     end;
 }
-
 ``` 
 
 The line that contains assignment of the **ServerObject** to the **ClientObject** causes the serialization process to run. When completed, the message **Server data has been serialized to the client object** appears, which verifies that the server object has been transferred to the client object.  
@@ -176,5 +172,5 @@ The line that contains assignment of the **ServerObject** to the **ClientObject*
 [Migrating from .NET Framework to .NET Standard](devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)    
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)    
 [Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)

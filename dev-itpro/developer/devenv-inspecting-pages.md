@@ -5,8 +5,6 @@ author: jswymer
 ms.custom: na
 ms.date: 09/15/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ---
@@ -22,7 +20,7 @@ The [!INCLUDE[webclient](includes/webclient.md)] includes a page inspection feat
 
 ## Working with Page Inspection
 
-You start page inspection from the **Help & Support** page. Choose the question mark in the top-right corner, choose **Help & Support**, and then choose **Inspect pages and data**. Or, you can just use the keyboard shortcut **Ctrl+Alt+F1**.
+You start page inspection from the **Help & Support** page. Choose the question mark in the top-right corner, choose **Help & Support**, and then choose **Inspect pages and data**. Or, you can just use the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
 
 The **Page inspection** pane opens on the side. The following figure illustrates the **Page Inspection** pane on the **Sales Order** page.
 
@@ -48,7 +46,7 @@ The following sections describe details about what is shown.
 > If you don't see all details described below, you might not have the required permissions. For more information, see [Controlling Access to Page Inspection Details](/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
 
 > [!TIP]
-> To copy the values of a field or entity under one of the tabs to the clip board, select the field or entity and press Ctrl+C.
+> To copy the values of a field or entity under one of the tabs to the clip board, select the field or entity and select <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 ### [Page](#tab/page)
 
@@ -174,5 +172,5 @@ The following table describes the different filter types.
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  
 [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md)

@@ -5,7 +5,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 02/28/2023
 ms.reviewer: solsen
-ms.suite: na
 ms.topic: conceptual
 ms.author: freddyk
 ---
@@ -24,7 +23,7 @@ If you don't meet these mandatory requirements, your extension fails validation.
 |Requirement|Example/Guidance|
 |-----------|----------------|
 |Develop your extension in Visual Studio Code.|[Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)|
-|The app.json file has mandatory properties that you must include. The 'name', 'publisher', and 'version' properties must match the values set in your offer description. Here you can also read more about dependency syntax and multiple countries per a single app syntax.|[Mandatory app.json properties](devenv-json-files.md)|
+|The app.json file has mandatory properties that you must include. The 'name', 'publisher', and 'version' properties must match the values set in your offer description. Here you can also read more about dependency syntax and multiple countries/regions per a single app syntax.|[Mandatory app.json properties](devenv-json-files.md)|
 |Coding of `Date` must follow a specific format (**no longer region-specific**)|Use the format `yyyymmddD`. For example, `20170825D`.|
 |Remote services (including all Web services calls) can use either HTTP or HTTPS. However, HTTP calls are only possible by using the HttpRequest AL type.|[Guidance on HTTP use](devenv-restapi-overview.md)|
 |Only JavaScript based Web client add-ins are supported. The zipping process is handled automatically by the compiler. Include the new AL `controladdin` type, JavaScript sources, and build the app.|[Control Add-Ins](devenv-control-addin-object.md)|
@@ -38,7 +37,7 @@ If you don't meet these mandatory requirements, your extension fails validation.
 |Pages and code units that are designed to be exposed as Web services must not generate any UI that would cause an exception in the calling code.|[Web Services Usage](../compliance/apptest-webservices.md)|
 |You're required to register affixes for your publisher name and to use them in your extension.|[Prefix/Suffix Guidelines](../compliance/apptest-prefix-suffix.md)|
 |You're required to register an ID range for your publisher name and to use it in your extension.|[Object Ranges](readiness/get-started.md#requesting-an-object-range)|
-|We strongly recommend you're using automated testing, using the AL Test Toolkit. You aren't required to include the test package with your extension.|[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)|
+|We strongly recommend you're using automated testing, using the AL Test Toolkit. You aren't required to include the test package with your extension.|[Test the advanced sample extension](devenv-extension-advanced-example-test.md)|
 |DataClassification is required for fields of all tables/table extensions. Property must be set to other than `ToBeClassified`.|[Classifying Data](devenv-classifying-data.md)|
 |You must use the Profile object to add profiles instead of inserting them into the **Profiles** table.|[Profile Object](devenv-profile-object.md)|
 |Use `addfirst` and `addlast` for placing your actions on Business Central pages. This eliminates breaking your app due to Business Central core changes.|[Placing Actions and Controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls)|
@@ -70,7 +69,7 @@ For **each country and each release** targeted by your submission, the following
 2. The set of dependencies for your extension is resolved. **Any unresolved dependencies will cause the submission to be rejected. If you include extensions created by Microsoft in your submission, it will also be rejected.**
 
 > [!Note]  
-> You're required to include the dependencies for your extension as part of your submission only if you're submitting a newer version for them. If you don't include them in your submission, they will be downloaded automatically if they are available in [!INCLUDE [prod_short](includes/prod_short.md)] for the targeted countries/regions. If you're making your libraries available in new countries, you should increase the version number.
+> You're required to include the dependencies for your extension as part of your submission only if you're submitting a newer version for them. If you don't include them in your submission, they will be downloaded automatically if they are available in [!INCLUDE [prod_short](includes/prod_short.md)] for the targeted countries/regions. If you're making your libraries available in new countries/regions, you should increase the version number.
 
 3. The set of baselines for your extension is resolved by using the [App Management API](../administration/appmanagement/app-management-api.md).
 4. The extension is compiled against the set of dependencies resolved. If the **compilation fails, the submission is rejected.**
@@ -102,7 +101,7 @@ $validationResults | Write-Host -ForegroundColor Red
 
 All array parameters can also be specified as a comma-separated string. For more information, you can also check this blog post [Run-AlValidation and Run-AlCops](https://freddysblog.com/2020/12/03/run-alvalidation-and-run-alcops/).
 
-Include app and all library apps in both previousApps and apps and also include all countries on which you want to validate.
+Include app and all library apps in both previousApps and apps and also include all countries/regions on which you want to validate.
 
 > [!NOTE]  
 > The Run-AlValidation can't see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
@@ -135,7 +134,7 @@ For more information about the signals sent to telemetry during the technical va
 
 ## Against which releases of Business Central is your submission validated?
 
-Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For example, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission is validated against 18.0, 18.1, 18.2, and 18.3.
+Extensions submitted to the AppSource marketplace are validated for all countries/regions specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For example, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission is validated against 18.0, 18.1, 18.2, and 18.3.
 
 The minimum release for your submission is computed based on the `application` property specified in the app.json of your extension. 
 
