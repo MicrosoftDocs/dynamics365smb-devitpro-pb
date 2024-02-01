@@ -12,7 +12,7 @@ author: mikebc
 
 This article describes how you can work with users and configure their devices to improve security.
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > Use this article together with industry standard security practices for securing users and their access to company data.
 
 ## Kiosks and shared devices
