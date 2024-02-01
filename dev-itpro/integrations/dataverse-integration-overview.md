@@ -19,6 +19,7 @@ There are four types of complementary app/system interactions between [!INCLUDE[
 - Data change (**CUD**) events using webhooks.
 - Business events.
 
+
 [![Shows the four interactions with Business Central](../developer/media/four-complementary-interactions.png)](../developer/media/four-complementary-interactions.png#lightbox)
 
 
@@ -42,7 +43,7 @@ Webhooks is a way to get notified if an entity changes in [!INCLUDE[prod_short](
 
 For more information, see [Data change (CUD) events](../api-reference/v2.0/dynamics-subscriptions.md).
 
-## Business events
+## Business events (preview)
 
 Business events provide a mechanism for notifying [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] when actions are done on [!INCLUDE[prod_short](../includes/prod_short.md)].
 
@@ -54,4 +55,4 @@ For more information, see [Business events](../developer/business-events-overvie
 [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)  
 [Integrate with Microsoft Dataverse via virtual tables](../powerplatform/powerplat-overview.md)   
 [Data change (CUD) events](../api-reference/v2.0/dynamics-subscriptions.md)  
-[Business events](../developer/business-events-overview.md)  
+[Business events (preview)](../developer/business-events-overview.md)  

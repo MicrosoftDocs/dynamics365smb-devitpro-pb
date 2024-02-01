@@ -73,7 +73,6 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microso
 
 :::image type="content" source="/dynamics365/business-central/media/power-bi-architecture.png" alt-text="Image alt text." lightbox="/dynamics365/business-central/media/power-bi-architecture.png":::
 
-
 For more information, see [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview).
 
 
