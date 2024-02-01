@@ -19,7 +19,7 @@ There are four types of complementary app/system interactions between [!INCLUDE[
 - Data change (**CUD**) events using webhooks.
 - Business events.
 
-[![Shows the four interactions with Business Central](media/four-complementary-interactions.png)](media/four-complementary-interactions.png#lightbox)
+[![Shows the four interactions with Business Central](/dynamics365/business-central/media/four-complementary-interactions.png)](media/four-complementary-interactions.png#lightbox)
 
 
 ## Data synchronization
