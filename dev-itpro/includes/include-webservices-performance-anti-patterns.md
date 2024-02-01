@@ -9,4 +9,6 @@
 
 - Don't insert child records belonging to same parent in parallel. This condition causes locks on parent and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
 
-- Don't use a deprecated protocol such as SOAP. Instead, utilize newer technology stacks such as OData, or preferably API pages/queries. The latter are up to 10 times faster than using the SOAP protocol. One way to migrate from SOAP towards OData is to utilize OData unbound actions. For more information, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+- Don't use a deprecated protocol such as SOAP. Instead, utilize newer technology stacks such as OData, or preferably API pages/queries. The latter are up to 10 times faster than using the SOAP protocol. 
+
+If you’re using codeunits exposed as a web service via SOAP and it is keeping you from migrating to OData, then unbound actions are equivalent to SOAP exposed codeunits in OData. For more information, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
