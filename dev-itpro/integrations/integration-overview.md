@@ -35,7 +35,8 @@ For more information on how to explore and develop against APIs, see [Developing
 
 ## Business Central connector for Power Platform
 
-A *connector* is a proxy or a wrapper around an API that allows the underlying service to talk to Microsoft Power Platform. For communicating with Power Platform products such as Power Automate, Power Apps, and Logic apps Business Central has its own connector. 
+A *connector* is a proxy or a wrapper around an API that allows the user of the connector to talk to the underlying service. [!INCLUDE[prod_short](../includes/prod_short.md)] has its own connector that allows Power Platform products such as Power Automate, Power Apps, and Logic apps to communicate with 
+[!INCLUDE[prod_short](../includes/prod_short.md)].
 
 For more information, see [Connectors Overview](/connectors/connectors) and [Dynamics 365 Business Central](/connectors/dynamicssmbsaas) in the Power Platform documentation.
 
@@ -92,7 +93,7 @@ There are two ways that a Power BI report, page, or visual can be added to a pag
 - Data synchronization that replicates data between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[dataverse_short](../includes/dataverse_short.md)].
 - Data virtualization with virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] via [!INCLUDE[prod_short](../includes/prod_short.md)] API for (**C**reate/**R**ead/**U**pdate/**D**elete) operations.
 - Data change (**CUD**) events using webhooks.
-- Business events.
+- Business events (preview).
 
 For more information, see [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md).
 
