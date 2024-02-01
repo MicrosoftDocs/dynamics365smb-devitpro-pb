@@ -4,11 +4,11 @@ description: "This article provides an overview of the modules in the System App
 author: bholtorf
 ms.custom: na
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: bholtorf
 ms.date: 01/08/2024
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Overview of the System Application

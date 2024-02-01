@@ -6,7 +6,6 @@ ms.custom: bap-template
 ms.date: 12/15/2023
 ms.reviewer: kepontop
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -72,6 +71,16 @@ When a report with an Excel layout is run, [!INCLUDE[server](includes/server.md)
 If you add new columns to the report dataset after you've created Excel layouts, the data contracts in the layouts don't get updated automatically. But you don't need to recreate the layouts from scratch, you can simply add the new columns manually to the header line in the data contract worksheet(s). 
 
 For a report developer working with AL code, maybe the simplest way to get the new column names is from the AL code for the report object. For a report developer working just in Excel, the simplest way to get the new column names is to run the report in [!INCLUDE[prod_short](../includes/prod_short.md)] and on the request page, then choose the **Microsoft Excel Document (data only)** option. This will give you an Excel workbook with all the columns in the data contract.
+
+
+## Report labels in Excel layouts
+
+Report labels are used by report layouts as, for example, the heading for a field in a table, the title for a chart, or the title for the report itself. 
+
+Starting in version 23.3, report labels defined in the *Labels* section of the report object and captions included on dataitem columns using the [IncludeCaption property](properties/devenv-includecaption-property.md) are available in the `CaptionData` worksheet in Excel. 
+
+For more information about labels, see [Report labels](./devenv-report-object.md#report-labels).
+
 
 ## Formatting data in Excel layouts
 

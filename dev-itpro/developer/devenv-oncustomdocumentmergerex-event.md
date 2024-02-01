@@ -4,10 +4,7 @@ description: Describe the OnCustomDocumentMergerEx Event in Business Central.
 ms.custom: na
 ms.date: 12/20/2023
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 

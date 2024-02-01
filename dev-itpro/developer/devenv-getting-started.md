@@ -3,8 +3,6 @@ title: "Get started with modules"
 description: "Provides an overview of what you will need to work with modules in the System Application."
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: bholtorf
 ms.collection: get-started

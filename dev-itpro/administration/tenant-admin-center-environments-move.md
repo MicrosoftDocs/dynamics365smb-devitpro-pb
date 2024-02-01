@@ -3,9 +3,7 @@ title: Move an environment to another Microsoft Entra organization
 description: You can move a Business Central environment to another Microsoft Entra tenant. Start in the Business Central admin center.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, move
 ms.date: 04/01/2021
 ms.author: jswymer

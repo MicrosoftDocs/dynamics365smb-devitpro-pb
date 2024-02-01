@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
-ms.service: dynamics365-business-central
+
 ---
 
 # Collectible errors API

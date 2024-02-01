@@ -1,13 +1,12 @@
 ---
 title: User Authentication with NavUserPassword
 description: Learn how to set up NAVUserPassword for authenticating users.
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
+ms.service: dynamics-365-op
 ---
 # Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with NavUserPassword
 

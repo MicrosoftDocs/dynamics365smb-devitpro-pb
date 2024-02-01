@@ -4,8 +4,6 @@ description: "How you extend the price calculations in Dynamics 365 Business Cen
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: bholtorf
 ---

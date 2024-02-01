@@ -3,12 +3,11 @@ title: Get started with C/SIDE and AL side-by-side for on-premises
 description: Description of how to get started with the new development environment along with C/SIDE.
 author: SusanneWindfeldPedersen
 ms.date: 01/04/2024
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
+ms.service: dynamics-365-op
 ---
 
 # Get started with C/SIDE and AL for on-premises

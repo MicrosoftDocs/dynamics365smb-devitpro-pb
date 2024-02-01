@@ -3,9 +3,7 @@ title: Major updates and minor updates for Business Central online
 description: Learn about the timeline for how updates of Business Central online rollout. You can prepare for both major updates and minor updates with minimal disruption of your users' productivity.  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
 ms.date: 01/09/2024
 ms.author: jswymer
@@ -93,7 +91,7 @@ Starting this day, you can use the [!INCLUDE[prodadmincenter](../developer/inclu
 When the scheduled update date arrives, the update runs automatically within the update window that you've specified for this environment. All users will be disconnected from this environment, and all attempts to sign in during the update will be blocked with the message `Service is under maintenance`.  
 
 > [!IMPORTANT]
-> The update duration differs per environment. We strongly recommend scheduling the update for a date when it's acceptable that the environment is inaccessible until the end of the it's update window.
+> The update duration differs depending on the environment. We strongly recommend scheduling the update for a date when it would be acceptable for the environment to be inaccessible until the end of its update window.
 
 For more information, see [Set the update window for each environment](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).  
 

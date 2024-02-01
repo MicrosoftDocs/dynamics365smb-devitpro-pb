@@ -1,10 +1,9 @@
 ---
 title: Troubleshooting overview
 description: An overview of tools and processes that help troubleshoot issues in Business Central.
-ms.custom: na
-ms.date: 09/11/2023
+ms.custom: bap-template
+ms.date: 01/18/2024
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
 ms.topic: overview
 ms.author: solsen
 author: SusanneWindfeldPedersen
@@ -70,8 +69,12 @@ Performance:
 - [Performance overview](../performance/performance-overview.md)
 - [How to work with a performance problem](../performance/performance-work-perf-problem.md)
 
-Reports: 
+Reports and printing: 
+- [Troubleshoot printer errors](./devenv-reports-troubleshoot-printing.md)
 - [Troubleshoot report errors](devenv-reports-troubleshooting.md)
+
+Shopify integration
+- [Troubleshoot the Shopify connector](/dynamics365/business-central/shopify/troubleshoot)
 
 Web services:
 - [Troubleshoot web service errors](../webservices/web-service-troubleshooting.md)
