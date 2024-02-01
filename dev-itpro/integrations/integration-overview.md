@@ -10,23 +10,25 @@ ms.date: 02/01/2023
 
 # Integration Overview for Business Central Online
 
-This article is intended to help architects and developers make sound design decisions when they implement integration scenarios to and from BC.
+This article is intended to help architects and developers make sound design decisions when they implement integration scenarios to and from [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 The article describes integration patterns, integration scenarios, and integration solutions. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
 
 
 ## How to expose web service endpoints
 
-All integrations to/from Business Central are done using web services. Business Central supports three types of web services: API, SOAP, and OData. 
+All integrations to/from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: API, SOAP, and OData. 
 
-The recommended way to expose a web service for BC is using the API stack. 
+The recommended way to expose a web service for [!INCLUDE[prod_short](../includes/prod_short.md)] is using the API stack. 
 
 For more information, see [Web services overview](../webservices/web-services.md).
 
 
 ## How to explore and develop against Business Central APIs
 
-When you need to connect to Business Central from another application, you should use APIs, either the ones that ship out of the box or custom APIs. 
+When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] from another application, you should use APIs, either the built-in APIs or custom APIs. 
+
+For more information about built-in APIs, see [REST API overview](../webservices/api-overview.md).
 
 For more information on how to explore and develop against APIs, see [Developing Connect apps](../developer/devenv-develop-connect-apps.md).
 
@@ -40,43 +42,43 @@ For more information, see [Connectors Overview](/connectors/connectors) and [Dyn
 
 ## Integrating Business Central with Microsoft Power Apps
 
-You can integrate BC with Microsoft Power Apps by using the Business Central connector for Power Platform. With Power Apps, you have the flexibility to build the perfect solution for your business domain &mdash; one that uses Business Central data and processes and maximizes your productivity. With Power Apps custom UI, AI builder, and augmented-reality (AR)/mixed-reality (MR) technologies, you can take your business to the next level with cutting-edge innovation and customized UI. 
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Apps by using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Platform. With Power Apps, you have the flexibility to build the perfect solution for your business domain &mdash; one that uses [!INCLUDE[prod_short](../includes/prod_short.md)] data and processes and maximizes your productivity. With Power Apps custom UI, AI builder, and augmented-reality (AR)/mixed-reality (MR) technologies, you can take your business to the next level with cutting-edge innovation and customized UI. 
 
 For more information, see [Integrating with Microsoft Power Apps overview](../powerplatform/power-apps-overview.md)
 
 
 ## Integrating Business Central with Microsoft Power Automate
 
-You can integrate BC with Microsoft Power Automate by using the Business Central connector for Power Platform. With Power Automate, you can set up and use flows to connect business-process tasks performed by different users. System tasks, such as automatic posting, can be included as steps in flows, preceded or followed by user tasks. Requesting and granting approval to create new records are typical flow steps.
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Automate by using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Platform. With Power Automate, you can set up and use flows to connect business-process tasks performed by different users. System tasks, such as automatic posting, can be included as steps in flows, preceded or followed by user tasks. Requesting and granting approval to create new records are typical flow steps.
 
 For more information, see [Integrating with Microsoft Power Automate overview](../powerplatform/power-automate-overview.md)
 
 
 ## Integrating Business Central with Microsoft Power Pages (preview)
 
-You can integrate BC with Microsoft Power Pages by using virtual tables in Dataverse. With Power Pages, you can allow unlicensed external users to access data stored in Business Central online.
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Pages by using virtual tables in Dataverse. With Power Pages, you can allow unlicensed external users to access data stored in [!INCLUDE[prod_short](../includes/prod_short.md)] online.
 
 For more information, see [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md).
 
 
 ## Integrating Business Central with Microsoft Power BI
 
-You can integrate BC with Microsoft Power BI in two ways:
-1. Connect a Power BI semantic model to BC to read data,
-1. Embed a Power BI report, page, or visual in the BC client.
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power BI in two ways:
+1. Connect a Power BI semantic model to [!INCLUDE[prod_short](../includes/prod_short.md)] to read data,
+1. Embed a Power BI report, page, or visual in the [!INCLUDE[prod_short](../includes/prod_short.md)] client.
 
-### How to connect a Power BI semantic model to Business Central to read data
+**How to connect a Power BI semantic model to Business Central to read data**
 
-Business Central integrates with Power BI through a connector using OData. The connector can read data from API pages/queries and from UI pages exposed as OData web services.
+[!INCLUDE[prod_short](../includes/prod_short.md)] integrates with Power BI through a connector using OData. The connector can read data from API pages/queries and from UI pages exposed as OData web services.
 
 For more information, see [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview).
 
 
-### How to embed a Power BI report, page, or visual in the Business Central client
+**How to embed a Power BI report, page, or visual in the Business Central client**
 
-Business Central supports that a Power BI report, page, or visual can be embedded in the Business Central client by using an iframe. 
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports that a Power BI report, page, or visual can be embedded in the Business Central client by using an iframe. 
 
-There are two ways that a Power BI report, page, or visual can be added to a page:
+There are two ways that a Power BI report, page, or visual can be added to a page in the [!INCLUDE[prod_short](../includes/prod_short.md)] client:
 1. A user can embed a a Power BI report, page, or scorecard on pages that include a Power BI part. For more information, see [Working with Power BI Reports in Business Central](/dynamics365/business-central/across-working-with-powerbi).
 1. A developer can programatically add them from AL. For more information, see [Adding Power BI Report parts to pages](../developer/devenv-power-bi-report-parts.md).
 
