@@ -83,7 +83,7 @@ There are two ways that a Power BI report, page, or visual can be added to a pag
 
 ## Built-in: Integrating Business Central with Dataverse
 
-BC has four built-in ways to integrate with [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]: 
+[!INCLUDE[prod_short](../includes/prod_short.md)] has four built-in ways to integrate with [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]: 
 
 - Data synchronization that replicates data between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[dataverse_short](../includes/dataverse_short.md)].
 - Data virtualization with virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] via [!INCLUDE[prod_short](../includes/prod_short.md)] API for (**C**reate/**R**ead/**U**pdate/**D**elete) operations.
@@ -102,34 +102,40 @@ For more information, see [Integrating Business Central with Dynamics 365 Sales]
 
 ## Built-in: Integrating Business Central with Shopify
 
-You can integrate BC with Shopify by installing and configuring the Shopify Connector app. By connecting your Shopify store (or stores) with Business Central, you can maximize your business productivity and manage and view insights from your business and your Shopify store as one unit.
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Shopify by installing and configuring the Shopify Connector app. By connecting your Shopify store (or stores) with [!INCLUDE[prod_short](../includes/prod_short.md)], you can maximize your business productivity and manage and view insights from your business and your Shopify store as one unit.
 
 For more information, see [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started).
 
 
+## Integrating to external systems from AL code: calling external services
 
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with external systems by using the using the *HttpClient* data type in AL code. 
 
-## Integrating to external systems from AL code: call external services
+For more information, see [Integrating to external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
-#### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
 
 ## Integrating to external systems from AL code: copilot
 
-## Integrating AI using developer tools for copilot
-### [Overview](developer/ai-integration-landing-page.yml)
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure Open AI Service to include copilot and generative AI experiences. 
+
+For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
 
 
 ## Integrating to external systems from AL code: Azure services
 
-### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)
-### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
-### [Connecting to Azure Key Vault](developer/devenv-app-key-vault-overview.md)
-### [Azure Key Vault telemetry](administration/telemetry-extension-key-vault-trace.md)
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Functions or Azure Key Vault. 
+
+For more information, see 
+- [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)
+- [Connecting to Azure Key Vault](../developer/devenv-app-key-vault-overview.md)
+
 
 
 ## Integrating to external systems from AL code: Microsoft Teams
-### [Overview](developer/devenv-develop-for-teams.md)
 
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Microsoft Teams. [!INCLUDE [prod_short](includes/prod_short.md)] offers an app that connects Microsoft Teams to the data in [!INCLUDE [prod_short](includes/prod_short.md)] so that users can quickly share details across team members and respond faster to inquiries. 
+
+For more information, see [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md).
 
 
 ## See also
@@ -145,3 +151,9 @@ For more information, see [Get started with the Shopify connector](/dynamics365/
 [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md)  
 [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
 [Integrating Business Central with Shopify](/dynamics365/business-central/shopify/get-started)  
+[Integrating to external services from AL using the HttpClient data type](../developer/devenv-httpclient.md)  
+[Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)
+[Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)  
+[Connecting to Azure Key Vault](../developer/devenv-app-key-vault-overview.md)  
+[Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md)  
+
