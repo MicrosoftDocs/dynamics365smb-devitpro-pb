@@ -25,27 +25,29 @@ There are four types of complementary app/system interactions between [!INCLUDE[
 
 ## Data synchronization
 
-You can synchronize data either to or from one Dynamics 365 business app to another, or in both directions in near-real time, through [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. 
+You can synchronize data either to or from one Dynamics 365 business app to another, or in both directions in near-real time, through [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. This will persist the synchronized data on the destination end of the setup.
 
 For more information, see [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service).
 
 
 ## Data virtualization
 
-Virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] can use [!INCLUDE[prod_short](../includes/prod_short.md)] APIs exposed through API Pages. As seen from [!INCLUDE[dataverse_short](../includes/dataverse_short.md)], these virtual tables acts as regular tables. Makers can now build experiences in customer engagement apps with data directly from [!INCLUDE[prod_short](../includes/prod_short.md)] with full CRUD capability and without copying data to Microsoft Dataverse.
+Virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] can use [!INCLUDE[prod_short](../includes/prod_short.md)] APIs exposed through API Pages. As seen from [!INCLUDE[dataverse_short](../includes/dataverse_short.md)], these virtual tables acts as regular tables. 
+
+Makers can now build experiences in apps built on [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] with live data shown from [!INCLUDE[prod_short](../includes/prod_short.md)] and with full CRUD capability. All data changes are only saved in [!INCLUDE[prod_short](../includes/prod_short.md)], so no data is copied to Microsoft Dataverse. 
 
 For more information, see [Integrate with Microsoft Dataverse via virtual tables](../powerplatform/powerplat-overview.md).   
 
 
 ## Data change events
 
-Webhooks is a way to get notified if an entity changes in [!INCLUDE[prod_short](../includes/prod_short.md)]. For example, you can use webhook notifications to trigger Power Automate flows from events in [!INCLUDE[prod_short](../includes/prod_short.md)]. 
+Webhooks is a way to get notified if an entity exposed to an API changes in [!INCLUDE[prod_short](../includes/prod_short.md)]. For example, you can use webhook notifications to trigger Power Automate flows from events in [!INCLUDE[prod_short](../includes/prod_short.md)]. 
 
 For more information, see [Data change (CUD) events](../api-reference/v2.0/dynamics-subscriptions.md).
 
 ## Business events (preview)
 
-Business events provide a mechanism for notifying [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] when actions are done on [!INCLUDE[prod_short](../includes/prod_short.md)].
+Business events provide a mechanism for notifying [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] when actions are done on [!INCLUDE[prod_short](../includes/prod_short.md)]. As an example, you can use Power Automate to subscribe to [!INCLUDE[prod_short](../includes/prod_short.md)] for its business events and interact with other apps in the Dynamics ecosystem, such as Dynamics 365 Sales or Customer Service, and others built using Power Apps. 
 
 For more information, see [Business events](../developer/business-events-overview.md).
 
