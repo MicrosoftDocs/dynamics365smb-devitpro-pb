@@ -16,7 +16,7 @@ There are four types of complementary app/system interactions between [!INCLUDE[
 
 - Data synchronization that replicates data between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[dataverse_short](../includes/dataverse_short.md)].
 - Data virtualization with virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] via [!INCLUDE[prod_short](../includes/prod_short.md)] API for (**C**reate/**R**ead/**U**pdate/**D**elete) operations.
-- Data change (**CUD**) events using webhooks.
+- Data change ((**C**reate/**U**pdate/**D**elete)) events using webhooks.
 - Business events.
 
 
