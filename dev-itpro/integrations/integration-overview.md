@@ -71,6 +71,9 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microso
 
 [!INCLUDE[prod_short](../includes/prod_short.md)] integrates with Power BI through a connector using OData. The connector can read data from API pages/queries and from UI pages exposed as OData web services.
 
+:::image type="content" source="/dynamics365/business-central/media/power-bi-architecture.png" alt-text="Image alt text." lightbox="/dynamics365/business-central/media/power-bi-architecture.png":::
+
+
 For more information, see [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview).
 
 
