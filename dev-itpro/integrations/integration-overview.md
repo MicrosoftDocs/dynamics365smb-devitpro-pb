@@ -133,7 +133,7 @@ For more information, see
 
 ## Integrating to external systems from AL code: Microsoft Teams
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Microsoft Teams. [!INCLUDE [prod_short](includes/prod_short.md)] offers an app that connects Microsoft Teams to the data in [!INCLUDE [prod_short](includes/prod_short.md)] so that users can quickly share details across team members and respond faster to inquiries. 
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Microsoft Teams. [!INCLUDE [prod_short](../includes/prod_short.md)] offers an app that connects Microsoft Teams to the data in [!INCLUDE [prod_short](../includes/prod_short.md)] so that users can quickly share details across team members and respond faster to inquiries. 
 
 For more information, see [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md).
 

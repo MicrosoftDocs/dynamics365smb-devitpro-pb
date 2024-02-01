@@ -1281,7 +1281,7 @@
 <!-- end performance -->
 <!-- integration-->
 # Integration
-## [Integration overview](integration-overview.md)
+## [Integration overview](./integrations/integration-overview.md)
 <!-- web service -->
 ## Web services
 ### [Web services overview](webservices/web-services.md)
@@ -1476,6 +1476,13 @@
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
 ### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+### Administrator
+#### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview)
+#### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup)
+### Report creator
+#### [Get started: Build Power BI reports](/dynamics365/business-central/across-how-use-financials-data-source-powerbi)
+#### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
+
 ### [Extract data from Business Central](developer/devenv-extract-data.md)
 ### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 ### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
@@ -1484,7 +1491,7 @@
 <!-- Microsoft Power Platform -->
 <!-- end Microsoft Power Platform -->
 
-## [Integrating with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
+## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
 
 <!-- Microsoft Teams -->
 ## Integrating with Microsoft Teams
