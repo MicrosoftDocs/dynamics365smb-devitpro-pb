@@ -15,7 +15,7 @@ Security is an important part of a solution involving web services, both because
 
 This article provides recommendations that you can implement to make your web services applications secure.
 
-For more general information about security in [!INCLUDE[prod_short](../includes/prod_short.md)], see  [Security overview](security/security-and-protection.md).
+For more general information about security in [!INCLUDE[prod_short](../includes/prod_short.md)], see  [Security overview](../security/security-and-protection.md).
 
 
 |To|See|  
