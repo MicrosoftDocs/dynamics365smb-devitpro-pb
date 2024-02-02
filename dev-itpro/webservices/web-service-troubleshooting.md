@@ -77,5 +77,5 @@ The environment for a web service endpoint can change how it works. If you see a
 [Web Services Best Practices](Web-Services-Best-Practices.md)  
 [Web service telemetry](web-service-telemetry.md)   
 [Troubleshooting OData/API calls](dynamics-error-codes.md)   
-[Debugging web services](../developer/devenv-debugging.md#debugging-web-services)    
+[Debugging web services](../developer/devenv-debugging.md#debugging-web-services)  
 [Web Services Overview](web-services.md)  

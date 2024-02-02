@@ -78,7 +78,7 @@ Developers planning to create [!INCLUDE[prod_short](../includes/prod_short.md)] 
 The following table shows how each type of web service is supported in Microsoft connectors.
 
 |Connector      |SOAP web services|OData web services                   |(REST) API web services|   
-|---------------|-----------------|---------------...................---|-----------------------|  
+|---------------|-----------------|-------------------------------------|-----------------------|  
 |Power BI       | No              |Yes (but considered a legacy method) | Yes (recommended) |
 |Power platform | No              | No                                  | Yes |
 
@@ -122,7 +122,7 @@ With SOAP web services, you can publish pages and codeunits as SOAP web service 
 > [!IMPORTANT]
 > SOAP is replaced by OData V4. The support for SOAP endpoints will be removed in a later release. We recommend that you migrate integrations to OData V4 or REST API web services as soon as possible. For codeunits published as SOAP web services, you can replace most of them with a similar OData web service using OData unbound actions. 
 
-For more information about SOAP web services, see [SOAP web service overview](webservices/soap-web-services.md).  
+For more information about SOAP web services, see [SOAP web service overview](soap-web-services.md).  
 
 
 ## Publishing pages, queries, or codeunits as web services  
@@ -202,7 +202,7 @@ For more information, see [Multitenant Deployment Architecture](../deployment/Mu
 [Web Services Best Practices](Web-Services-Best-Practices.md)   
 [OData overview](odata-web-services.md)   
 [REST API web services overview](api-overview.md)  
-[SOAP web service overview](webservices/soap-web-services.md)  
+[SOAP web service overview](soap-web-services.md)  
 [Publish a Web Service](publish-web-service.md)   
 [Multitenant Deployment Architecture (on-premises)](../deployment/Multitenant-Deployment-Architecture.md)   
 [Configuring Business Central Server (on-premises)](../administration/configure-server-instance.md)  
