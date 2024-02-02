@@ -83,6 +83,7 @@ The following table shows how each type of web service is supported in Microsoft
 |Power platform | No              | No                                  | Yes |
 
 
+<br>
 The following table shows the types of objects you use in AL for each type of web service.  
 
 |Object|SOAP web services|OData web services|(REST) API web service|   

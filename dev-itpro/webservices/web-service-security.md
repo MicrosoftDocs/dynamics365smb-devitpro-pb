@@ -11,7 +11,7 @@ ms.author: kepontop
 
 # Web service security
 
-Security is an important part of a solution involving web services, both because the client calling the web service endpoint is likely not delivered by Microsoft and because the interaction between the client and [!INCLUDE[prod_short](../includes/prod_short.md)] is over a network.
+Security is an important part of a solution involving web services, both because the client calling the web service endpoint is likely not delivered by Microsoft and also because the interaction between the client and [!INCLUDE[prod_short](../includes/prod_short.md)] happens over a network.
 
 This article provides recommendations that you can implement to make your web services applications secure.
   
@@ -26,6 +26,10 @@ This article provides recommendations that you can implement to make your web se
 | Learn how to use security certificates to help secure connections with [!INCLUDE[prod_short](../includes/prod_short.md)] (on-premises). | [Securing remote connections using certificates (on-premises)](../deployment/implement-security-certificates-production-environment.md) |
 
 
+For more information about security in [!INCLUDE[prod_short](../includes/prod_short.md)], see  [Security overview](security/security-and-protection.md)
+
+
 ## See also
 
+[Security overview](../security/security-and-protection.md)  
 [Web Services Overview](web-services.md)  
