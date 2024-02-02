@@ -12,6 +12,16 @@ ms.date: 01/10/2024
 
 # Troubleshooting web service errors
 
+Troubleshooting web service errors can be tricky because the root cause of the error can be in multiple places:
+- in the client calling the web service,
+- related to the network between the client and the web service endpoint, or
+- in the code behind the web service endpoint.
+
+Below, you can learn more about different methods and tools that you can use for troubleshooting web service errors.
+
+
+## HTTP status codes
+
 [!INCLUDE[httpStatusErrorCodes](../includes/include-http-status-error-codes.md)]
 
 ## Web service telemetry
@@ -20,9 +30,9 @@ All incoming calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)
 
 For more information, see [Web service telemetry](web-service-telemetry.md).
 
-## Troubleshooting OData/API calls
+## Troubleshooting OData/REST API calls
 
-For calls to OData/API endpoints, we offer more details for troubleshooting, as these calls also return OData error codes in case of failures. 
+For calls to OData/REST API endpoints, we offer more details for troubleshooting, as these calls also return OData error codes in case of failures. 
 
 For more information, see [Troubleshooting OData/API calls](dynamics-error-codes.md).
 

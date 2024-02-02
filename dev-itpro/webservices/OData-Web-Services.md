@@ -19,6 +19,9 @@ OData is used in other Microsoft products and technologies, including the follow
 - Microsoft PowerBI can read data from OData services.
 - Microsoft SharePoint can expose its list-oriented data with OData.  
 
+PowerQuery is a data-analysis built into Microsoft Excel and Power BI that provides enhanced Business Intelligence capabilities. PowerQuery supports sharing and collaboration on user-generated business intelligence solutions in a Microsoft SharePoint Server environment. For more information about PowerQuery, see [https://powerquery.microsoft.com](https://powerquery.microsoft.com).  
+
+
 ## Key concepts and techniques for accessing Business Central data using OData      
 The topics in this section describe the key concepts and techniques for accessing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data from OData applications that are supported by [!INCLUDE[prod_short](../developer/includes/prod_short.md)] .  
   
