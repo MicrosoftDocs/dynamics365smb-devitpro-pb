@@ -2,10 +2,10 @@
 title: Integrating with Microsoft Dataverse
 description: Learn how to integrate Business Central with Microsoft Dataverse
 author: kennienp
-ms.reviewer: na
+ms.reviewer: solsen
 ms.topic: overview
 ms.author: kepontop
-ms.date: 02/01/2023
+ms.date: 02/02/2024
 ---
 
 # Integrating Business Central with Microsoft Dataverse
@@ -25,14 +25,14 @@ There are four types of complementary app/system interactions between [!INCLUDE[
 
 ## Data synchronization
 
-You can synchronize data either to or from one Dynamics 365 business app to another, or in both directions in near-real time, through [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. This will persist the synchronized data on the destination end of the setup.
+You can synchronize data either to or from one Dynamics 365 business app to another, or in both directions in near-real time, through [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. This persists the synchronized data on the destination end of the setup.
 
 For more information, see [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service).
 
 
 ## Data virtualization
 
-Virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] can use [!INCLUDE[prod_short](../includes/prod_short.md)] APIs exposed through API Pages. As seen from [!INCLUDE[dataverse_short](../includes/dataverse_short.md)], these virtual tables acts as regular tables. 
+Virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] can use [!INCLUDE[prod_short](../includes/prod_short.md)] APIs exposed through API Pages. As seen from [!INCLUDE[dataverse_short](../includes/dataverse_short.md)], these virtual tables act as regular tables. 
 
 Makers can now build experiences in apps built on [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] with live data shown from [!INCLUDE[prod_short](../includes/prod_short.md)] and with full CRUD capability. All data changes are only saved in [!INCLUDE[prod_short](../includes/prod_short.md)], so no data is copied to Microsoft Dataverse. 
 

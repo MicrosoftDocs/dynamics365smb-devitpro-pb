@@ -1289,7 +1289,7 @@
 <!-- end performance -->
 <!-- integration-->
 # Integration
-## [Integration overview](./integrations/integration-overview.md)
+## [Integration overview](developer/integration-overview.md)
 <!-- web service -->
 ## Web services
 ### [Web services overview](webservices/web-services.md)
@@ -1435,7 +1435,7 @@
 
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
-### [Overview](integrations/dataverse-integration-overview.md)
+### [Overview](developer/dataverse-integration-overview.md)
 ### Data synchronization
 #### [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)
 #### [Custom synchronization with Dataverse](administration/administration-custom-cds-integration.md)

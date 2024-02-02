@@ -1,14 +1,14 @@
 ---
-title: Integration Overview for Business Central Online
+title: Integration overview for Business Central online
 description: Find links to information about the ways you can integrate Business Central to products and services.
 author: kennienp
-ms.reviewer: na
+ms.reviewer: solsen
 ms.topic: overview
 ms.author: kepontop
-ms.date: 02/01/2023
+ms.date: 02/02/2024
 ---
 
-# Integration Overview for Business Central Online
+# Integration overview for Business Central online
 
 This article is intended to help architects and developers make sound design decisions when they implement integration scenarios to and from [!INCLUDE[prod_short](../includes/prod_short.md)].
 
@@ -43,7 +43,7 @@ For more information, see [Connectors Overview](/connectors/connectors) and [Dyn
 
 ## Integrating Business Central with Microsoft Power Apps
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Apps by using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Platform. With Power Apps, you have the flexibility to build the perfect solution for your business domain &mdash; one that uses [!INCLUDE[prod_short](../includes/prod_short.md)] data and processes and maximizes your productivity. With Power Apps custom UI, AI builder, and augmented-reality (AR)/mixed-reality (MR) technologies, you can take your business to the next level with cutting-edge innovation and customized UI. 
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Apps by using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Platform. With Power Apps, you have the flexibility to build the perfect solution for your business domain&mdash;one that uses [!INCLUDE[prod_short](../includes/prod_short.md)] data and processes and maximizes your productivity. With Power Apps custom UI, AI builder, and augmented-reality (AR)/mixed-reality (MR) technologies, you can take your business to the next level with cutting-edge innovation and customized UI. 
 
 For more information, see [Integrating with Microsoft Power Apps overview](../powerplatform/power-apps-overview.md)
 
@@ -82,7 +82,7 @@ For more information, see [Power BI integration overview](/dynamics365/business-
 [!INCLUDE[prod_short](../includes/prod_short.md)] supports that a Power BI report, page, or visual can be embedded in the Business Central client by using an iframe. 
 
 There are two ways that a Power BI report, page, or visual can be added to a page in the [!INCLUDE[prod_short](../includes/prod_short.md)] client:
-1. A user can embed a a Power BI report, page, or scorecard on pages that include a Power BI part. For more information, see [Working with Power BI Reports in Business Central](/dynamics365/business-central/across-working-with-powerbi).
+1. A user can embed a Power BI report, page, or scorecard on pages that include a Power BI part. For more information, see [Working with Power BI Reports in Business Central](/dynamics365/business-central/across-working-with-powerbi).
 1. A developer can programatically add them from AL. For more information, see [Adding Power BI Report parts to pages](../developer/devenv-power-bi-report-parts.md).
 
 
@@ -100,7 +100,7 @@ For more information, see [Integrating Business Central with Microsoft Dataverse
 
 ## Built-in: Integrating Business Central with Dynamics 365 Sales
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Dynamics 365 Sales by first setting up integration to [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] and then do additional setup from the [!INCLUDE[prod_short](../includes/prod_short.md)] application. Integrating to Dynamics 365 Sales will let users view information from [!INCLUDE[prod_short](../includes/prod_short.md)] while they're working in Dynamics 365 Sales. For example, when preparing a sales quote it could be useful to know whether you have enough inventory to fulfill the order.
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Dynamics 365 Sales by first setting up integration to [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] and then do more setup from the [!INCLUDE[prod_short](../includes/prod_short.md)] application. Integrating to Dynamics 365 Sales lets users view information from [!INCLUDE[prod_short](../includes/prod_short.md)] while they're working in Dynamics 365 Sales. For example, when preparing a sales quote it could be useful to know whether you have enough inventory to fulfill the order.
 
 For more information, see [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
 
@@ -114,7 +114,7 @@ For more information, see [Get started with the Shopify connector](/dynamics365/
 
 ## Integrating to external systems from AL code: calling external services
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with external systems by using the using the *HttpClient* data type in AL code. 
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with external systems by using the *HttpClient* data type in AL code. 
 
 For more information, see [Integrating to external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
@@ -130,9 +130,7 @@ For more information, see [Integrating AI using Developer Tools for Copilot](../
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Functions or Azure Key Vault. 
 
-For more information, see 
-- [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)
-- [Connecting to Azure Key Vault](../developer/devenv-app-key-vault-overview.md)
+For more information, see [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function) and [Connecting to Azure Key Vault](../developer/devenv-app-key-vault-overview.md).
 
 ## Integrating to external systems from AL code: Microsoft Teams
 
