@@ -1295,7 +1295,7 @@
 ### [Web service telemetry](webservices/web-service-telemetry.md)
 
 ### Web services security
-#### [Web service security overview](web-service-security.md)   
+#### [Web service security overview](webservices/web-service-security.md)   
 #### [Authentication](webservices/web-services-authentication.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-service authentication](administration/automation-apis-using-s2s-authentication.md)
