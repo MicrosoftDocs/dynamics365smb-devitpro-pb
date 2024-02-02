@@ -95,6 +95,8 @@ There are two ways that a Power BI report, page, or visual can be added to a pag
 - Data change (**CUD**) events using webhooks.
 - Business events (preview).
 
+[![Shows the four interactions with Business Central](../developer/media/four-complementary-interactions.png)](../developer/media/four-complementary-interactions.png#lightbox)
+
 For more information, see [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md).
 
 
