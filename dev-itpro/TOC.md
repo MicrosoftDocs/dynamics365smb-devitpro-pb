@@ -176,6 +176,7 @@
 #### [Environments](administration/administration-center-api_environments.md)
 #### [Environment database export](administration/administration-center-api_environment_database_export.md)
 #### [Environment outage reporting](administration/administration-center-api_environment_outage_reporting.md)
+#### [Transfer environments](administration/administration-center-api_environmenttransfer.md)
 #### [Environment settings](administration/administration-center-api_environment_settings.md)
 #### [Notifications](administration/administration-center-api_notifications.md)
 #### [Reschedule updates](administration/administration-center-api_reschedule_updates.md)
