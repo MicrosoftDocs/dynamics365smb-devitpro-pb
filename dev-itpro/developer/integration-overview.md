@@ -134,16 +134,14 @@ For more information, see
 - [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)
 - [Connecting to Azure Key Vault](../developer/devenv-app-key-vault-overview.md)
 
-
-
 ## Integrating to external systems from AL code: Microsoft Teams
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Microsoft Teams. [!INCLUDE [prod_short](../includes/prod_short.md)] offers an app that connects Microsoft Teams to the data in [!INCLUDE [prod_short](../includes/prod_short.md)] so that users can quickly share details across team members and respond faster to inquiries. 
 
 For more information, see [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md).
 
-
 ## See also
+
 [Web services overview](../webservices/web-services.md)  
 [Developing Connect apps](../developer/devenv-develop-connect-apps.md)   
 [Business Central connector for Power Platform](/connectors/dynamicssmbsaas)   
@@ -161,4 +159,3 @@ For more information, see [Integrating with Microsoft Teams overview](../develop
 [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)  
 [Connecting to Azure Key Vault](../developer/devenv-app-key-vault-overview.md)  
 [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md)  
-
