@@ -1100,6 +1100,12 @@
 #### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
 
 <!-- end Testing the application -->
+
+<!-- Data analytics and reporting -->
+## Data analytics and reporting
+
+<!-- end Data analytics and reporting -->
+
 <!-- Rules and Guidelines -->
 ## Rules, guidelines, and best practices
 ### [Overview](compliance/apptest-overview.md)
