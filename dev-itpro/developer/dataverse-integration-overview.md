@@ -20,14 +20,14 @@ There are four types of complementary app/system interactions between [!INCLUDE[
 - Business events.
 
 
-[![Shows the four interactions with Business Central](../developer/media/four-complementary-interactions.png)](../developer/media/four-complementary-interactions.png#lightbox)
+[![Shows the four interactions with Business Central](media/four-complementary-interactions.png)](media/four-complementary-interactions.png#lightbox)
 
 
 ## Data synchronization
 
 You can synchronize data either to or from one Dynamics 365 business app to another, or in both directions in near-real time, through [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. This persists the synchronized data on the destination end of the setup.
 
-[![Shows how data synchronization between Business Central and Dataverse works](../developer/media/data-synchronization-between-Business-Central-and-Dataverse)](../developer/media/data-synchronization-between-Business-Central-and-Dataverse#lightbox)
+[![Shows how data synchronization between Business Central and Dataverse works](media/data-synchronization-between-Business-Central-and-Dataverse.png)](media/data-synchronization-between-Business-Central-and-Dataverse.png#lightbox)
 
 
 For more information, see [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service).
