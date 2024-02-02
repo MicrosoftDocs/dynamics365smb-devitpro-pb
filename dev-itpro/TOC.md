@@ -1052,7 +1052,6 @@
 <!-- Data analytics and reporting -->
 ## Data analytics and reporting
 ### [Analyzing, pivoting, and sharing data in Business Central](developer/devenv-reporting-options-overview.md)
-
 <!-- end Data analytics and reporting -->
 
 ## Extensibility
