@@ -1049,6 +1049,11 @@
 #### [Subscribing to events in a .NET Framework type](developer/devenv-dotnet-subscribe-to-events.md)
 #### [Serializing .NET Framework types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 
+<!-- Data analytics and reporting -->
+## Data analytics and reporting
+### [Analyzing, pivoting, and sharing data in Business Central](developer/devenv-reporting-options-overview.md)
+<!-- end Data analytics and reporting -->
+
 ## Extensibility
 ### [Extensibility overview](developer/devenv-extensibility-overview.md)
 ### Extending AL objects
@@ -1100,6 +1105,7 @@
 #### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
 
 <!-- end Testing the application -->
+
 <!-- Rules and Guidelines -->
 ## Rules, guidelines, and best practices
 ### [Overview](compliance/apptest-overview.md)
