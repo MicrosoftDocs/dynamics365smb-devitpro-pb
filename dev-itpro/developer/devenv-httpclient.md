@@ -36,7 +36,7 @@ The following example illustrates ways to prepare the request.
 
         // This shows how you can set or change HTTP content headers in your request
         Content.GetHeaders(ContentHeaders);
-        if ContentHeaders.Contains('Content-Type') then headers.Remove('Content-Type');
+        if ContentHeaders.Contains('Content-Type') then ContentHeaders.Remove('Content-Type');
         ContentHeaders.Add('Content-Type', 'multipart/form-data;boundary=boundary');
 
         // This shows how you can set HTTP request headers in your request
