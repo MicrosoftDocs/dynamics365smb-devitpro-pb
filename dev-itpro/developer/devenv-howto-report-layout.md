@@ -521,6 +521,17 @@ There's no way to directly convert an RDL layout to a Word layout, but if you wa
     1. For the initial test of the new layout, from the **Report layouts page**, find the report you want to add the new Word layout to. From the top pane menu, select the **New** action to upload the layout for the first time.
     1. For subsequent tests of the new layout, from the **Report layouts page**, find the report you want to add the new Word layout to. From the top pane menu, select the **Replace layout** action to replace the layout with the latest version.
 
+## How to convert an existing document design to a Word layout
+
+In implementation projects, a common specification for document layouts is to design them to match  the client’s existing document layouts. There's no way to directly convert a PDF document to a Word layout, but if you want to create a new Word layout based on a PDF document, then do as follows:
+
+1. Get a version of the PDF document as a Word document
+    1. Open Word
+    1. From the **File** menu, select the **Run Report** action. This opens a dialog stating that "Word will now convert your PDF to an editable Word document". Select **OK**. The resulting Word document might not match the PDF 100%, but it is a start.
+    1. If the PDF document was marked as read-only, the resulting Word document will also be read-only. If this is the case, mark all content with <kbd>Ctrl</kbd>+<kbd>a</kbd>, copy to clipboard, create a new Word document, and paste the content in there.
+
+Now, you simply follow the step-by-step guide in the section [How to convert an RDL layout to a Word layout](#how-to-convert-an-rdl-layout-to-a-word-layout), skipping the step *Get a version of the report RDL layout rendered as a Word document*.
+
 
 ## See also
 
