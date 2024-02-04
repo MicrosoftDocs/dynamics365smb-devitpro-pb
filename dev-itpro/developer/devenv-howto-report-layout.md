@@ -527,8 +527,8 @@ In implementation projects, a common specification for document layouts is to de
 
 1. Get a version of the PDF document as a Word document
     1. Open Word
-    1. From the **File** menu, select the **Run Report** action. This opens a dialog stating that "Word will now convert your PDF to an editable Word document". Select **OK**. The resulting Word document might not match the PDF 100%, but it is a start.
-    1. If the PDF document was marked as read-only, the resulting Word document will also be read-only. If this is the case, mark all content with <kbd>Ctrl</kbd>+<kbd>a</kbd>, copy to clipboard, create a new Word document, and paste the content in there.
+    1. From the **File** menu, select the **Open** action and find the PDF document. Select **OK**. This opens a dialog stating that "Word will now convert your PDF to an editable Word document". Select **OK**. The resulting Word document might not match the PDF 100%, but it is a start.
+    1. If the PDF document is read-only, the resulting Word document will also be read-only. If this is the case, mark all content with <kbd>Ctrl</kbd>+<kbd>a</kbd>, copy to clipboard, create a new Word document, and paste the content in there.
 
 Now, you simply follow the step-by-step guide in the section [How to convert an RDL layout to a Word layout](#how-to-convert-an-rdl-layout-to-a-word-layout), skipping the step *Get a version of the report RDL layout rendered as a Word document*.
 
