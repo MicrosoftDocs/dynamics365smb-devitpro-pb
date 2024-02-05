@@ -201,6 +201,8 @@ traces
 , requestTotalTimeMS = ( toreal(totimespan(customDimensions.totalTime))+toreal(totimespan(customDimensions.requestQueueTime)) )/10000
 ```
 
+For a full KQL example of all dimensions in web services telemetry, see [Sample KQL code](#sample-kql-code).
+
 ## Analyze HTTP status codes for web service calls
 
 [!INCLUDE[httpStatusCodes](../includes/include-http-status-error-codes.md)]
