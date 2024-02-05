@@ -61,14 +61,13 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microso
 
 For more information, see [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md).
 
-
 ## Integrating Business Central with Microsoft Power BI
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power BI in two ways:
 1. Connect a Power BI semantic model to [!INCLUDE[prod_short](../includes/prod_short.md)] to read data,
 1. Embed a Power BI report, page, or visual in the [!INCLUDE[prod_short](../includes/prod_short.md)] client.
 
-**How to connect a Power BI semantic model to Business Central to read data**
+### How to connect a Power BI semantic model to Business Central to read data
 
 [!INCLUDE[prod_short](../includes/prod_short.md)] integrates with Power BI through a connector using OData. The connector can read data from API pages/queries and from UI pages exposed as OData web services.
 
@@ -76,8 +75,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microso
 
 For more information, see [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview).
 
-
-**How to embed a Power BI report, page, or visual in the Business Central client**
+### How to embed a Power BI report, page, or visual in the Business Central client
 
 [!INCLUDE[prod_short](../includes/prod_short.md)] supports that a Power BI report, page, or visual can be embedded in the Business Central client by using an iframe. 
 
@@ -99,13 +97,11 @@ There are two ways that a Power BI report, page, or visual can be added to a pag
 
 For more information, see [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md).
 
-
 ## Built-in: Integrating Business Central with Dynamics 365 Sales
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Dynamics 365 Sales by first setting up integration to [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] and then do more setup from the [!INCLUDE[prod_short](../includes/prod_short.md)] application. Integrating to Dynamics 365 Sales lets users view information from [!INCLUDE[prod_short](../includes/prod_short.md)] while they're working in Dynamics 365 Sales. For example, when preparing a sales quote it could be useful to know whether you have enough inventory to fulfill the order.
 
 For more information, see [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
-
 
 ## Built-in: Integrating Business Central with Shopify
 
@@ -113,20 +109,17 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Shopify
 
 For more information, see [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started).
 
-
 ## Integrating to external systems from AL code: calling external services
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with external systems by using the *HttpClient* data type in AL code. 
 
 For more information, see [Integrating to external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
-
 ## Integrating to external systems from AL code: copilot
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure Open AI Service to include copilot and generative AI experiences. 
 
 For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
-
 
 ## Integrating to external systems from AL code: Azure services
 
