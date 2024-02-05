@@ -11,7 +11,7 @@ author: KennieNP
 
 # Arithmetic operators
 
-This article contains examples of how to use the type conversion rules for arithmetic operators. The examples illustrate how the operators should be used and the effect of the type conversion that the AL compiler performs. The examples have been divided into groups corresponding to the data types in AL.  
+This article contains examples of how to use the type conversion rules for arithmetic operators. The examples illustrate how the operators should be used and the effect of the type conversion that the AL compiler performs. The examples are divided into groups corresponding to the data types in AL.  
 
 ## Unary arithmetic operators
 
@@ -24,9 +24,9 @@ PrefixExpression = PrefixOperator Expression
 The following table shows the data types for which the unary operators in AL are defined, and the resulting data types.  
 
 |Unary operator|Option|Integer|Decimal|  
-|--------------------|------------|-------------|-------------|  
-|+|integer|integer|decimal|  
-|-|integer|integer|decimal|  
+|--------------|------|-------|-------|  
+|`+`|integer|integer|decimal|  
+|`-`|integer|integer|decimal|  
 
 
 ## Binary arithmetic operators
@@ -39,21 +39,21 @@ InfixExpression = LeftExpression InfixOperator RightExpression
 
 |Operator|Boolean|Byte|Char|Option|Integer|Decimal|Date|Time|Text|Code|  
 |--|--|--|--|------------|-------------|-------------|----------|----------|----------|----------|  
-|+|No|Yes|Yes|Yes|Yes|Yes|Yes|Yes|Yes|Yes|  
-|-|No|Yes|Yes|Yes|Yes|Yes|Yes|Yes|No|No|  
-|\*|No|Yes|Yes|Yes|Yes|Yes|No|No|No|No|  
-|/|No|Yes|Yes|Yes|Yes|Yes|No|No|No|No|  
-|DIV|No|Yes|Yes|Yes|Yes|Yes|No|No|No|No|  
-|MOD|No|Yes|Yes|Yes|Yes|Yes|No|No|No|No|  
+|`+`|No|Yes|Yes|Yes|Yes|Yes|Yes|Yes|Yes|Yes|  
+|`-`|No|Yes|Yes|Yes|Yes|Yes|Yes|Yes|No|No|  
+|`*`|No|Yes|Yes|Yes|Yes|Yes|No|No|No|No|  
+|`/`|No|Yes|Yes|Yes|Yes|Yes|No|No|No|No|  
+|`DIV`|No|Yes|Yes|Yes|Yes|Yes|No|No|No|No|  
+|`MOD`|No|Yes|Yes|Yes|Yes|Yes|No|No|No|No|  
 
-In the table, Yes means that the operator can take at least one operand \(left, right, or both\) of the given type; **No** means that the operator can't be used with the given type.  
+In the table, `Yes` means that the operator can take at least one operand \(left, right, or both\) of the given type; `No` means that the operator can't be used with the given type.  
 
 The following table defines the valid uses of the binary arithmetic operators, and the resulting data types.  
 
 ### Definition of type conversion rules for the `+` operator  
 
-|The `+`<br /><br /> operator|Boolean|Byte/Char|Option|Integer|Decimal|Date|Time|Text|Code|  
-|-|--|--|------------|-------------|-------------|----------|----------|----------|----------|  
+|The `+` operator|Boolean|Byte/Char|Option|Integer|Decimal|Date|Time|Text|Code|  
+|----------------|--|--|--|--|--|----------|----------|----------|----------|  
 |Boolean||||||||||  
 |Byte/Char||Integer|Integer \(C\)|Integer \(C\)|Decimal \(C\)|||||  
 |Option||Integer|Integer \(C\)|Integer \(C\)|Decimal \(C\)|||||  
@@ -79,8 +79,8 @@ This table illustrates type conversion in integer operator expressions.
 
 |Operator|Name|Expression|Resulting data type|  
 |--------|----|----------|-------------------|  
-|`+`|time addition|time + integer|time|  
-|`-`|time difference|time - time|integer|  
+|`+`|Time addition|Time + Integer|Time|  
+|`-`|Time difference|Time - Time|Integer|  
 
 The time unit is milliseconds. If time is undefined \(0T\), a run-time error occurs.  
 
@@ -90,10 +90,10 @@ This table illustrates type conversion in text and code \(String\) operator expr
 
 |Operator|Name|Expression|Resulting data type|  
 |--------|----|----------|-------------------|  
-|`+`|Concatenation|text + text|text|  
-|`+`|Concatenation|text + code|text|  
-|`+`|Concatenation|code + text|text|  
-|`+`|Concatenation|code + code|code|  
+|`+`|Concatenation|Text + Text|Text|  
+|`+`|Concatenation|Text + Code|Text|  
+|`+`|Concatenation|Code + Text|Text|  
+|`+`|Concatenation|Code + Code|Code|  
 
 ## See also
 <!-- more links -->
