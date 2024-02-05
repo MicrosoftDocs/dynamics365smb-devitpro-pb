@@ -75,6 +75,12 @@ For a full KQL example of all dimensions in web services telemetry, see [Sample 
  
 <sup>4</sup><a name="4"></a>This HTTP status code was introduced in Business Central 2023 release wave 1, version 22.2.
 
+
+## HTTP status codes
+
+[!INCLUDE[httpStatusCodes](../includes/include-http-status-error-codes.md)]
+
+
 ## HTTP headers
 For privacy and security reasons, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] maintains a list of HTTP headers that are allowed to be emitted to telemetry. 
 
@@ -202,10 +208,6 @@ traces
 ```
 
 For a full KQL example of all dimensions in web services telemetry, see [Sample KQL code](#sample-kql-code).
-
-## Analyze HTTP status codes for web service calls
-
-[!INCLUDE[httpStatusCodes](../includes/include-http-status-error-codes.md)]
 
 
 ## Analyze web service call stability using telemetry
