@@ -19,9 +19,9 @@ This article describes type conversions in AL expressions. The examples illustra
 Consider the following statements.
 
 ```al
-CharVar := 15; // A char variable
-integerVar := 56000; // An integer variable
-Sum := CharVar + integerVar;
+charVar := 15;               // A char variable
+integerVar := 56000;         // An integer variable
+Sum := charVar + integerVar;
 ```
 
 The last statement involves one or two type conversions. The rightmost statement involves the evaluation of the expression `CharVar + integerVar (char + integer)`. In order to evaluate this expression, the first operand (CharVar) must be converted from char to integer. The addition operator then returns an integer result.
@@ -46,19 +46,19 @@ These rules are illustrated by the following examples.
 
 The following example shows the evaluation of a numeric expression.
 
-```al
+```
 integer + decimal
 ```
 
 This expression contains two subexpressions of different data types. Before it can add these two subexpressions, the system must convert the leftmost subexpression to decimal.
 
-```al
+```
 decimal + decimal
 ```
 
 When the leftmost subexpression is converted, the expression can be evaluated, and the resulting data type is decimal.
 
-```al
+```
 decimal + decimal = decimal
 ```
 
@@ -66,19 +66,19 @@ decimal + decimal = decimal
 
 The following example shows the evaluation of a string expression.
 
-```al
+```
 text + code
 ```
 
 This expression contains two subexpressions that must be concatenated. To do this, the system must convert the subexpression of the least general data type (code) to the most general data type (text).
 
-```al
+```
 text + text
 ```
 
 When the rightmost subexpression is converted, the expression can be evaluated, and the resulting data type is text.
 
-```al
+```
 text + text = text
 ```
 
