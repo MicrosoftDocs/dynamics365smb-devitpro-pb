@@ -70,14 +70,13 @@ Compound assignment operators perform an arithmetic operation and assign the res
 |`*=`|Multiplication|
 |`/=`|Division|
 
-
 The `+` and the `-` operators can be used both as unary and binary operators. The `not` operator can only be used as a unary operator. All the other operators are binary.
 
 Most of the operators can be used on different data types. The action of these operators may depend on the data type of the expression that they are used on.
 
 ### Example 1
 
-In this example, the "+" operator is used as a binary operator.
+In this example, the `+` operator is used as a binary operator.
 
 ```
 number + number
@@ -87,7 +86,7 @@ This returns the sum of the numbers, that is, a result of type number.
 
 ### Example 2
 
-In this example, the "+" operator is used as a binary operator.
+In this example, the `+` operator is used as a binary operator.
 
 ```
 string + string
@@ -97,7 +96,7 @@ This returns the concatenation of the strings, that is, a result of the type str
 
 ### Example 3
 
-In this example, the "+" operator is used as a unary operator to indicate sign.
+In this example, the `+` operator is used as a unary operator to indicate sign.
 
 ```
 +34545  
@@ -134,3 +133,7 @@ This expression evaluates to 14.
 This expression evaluates to 20.
 
 ## See also
+
+[Arithmetic operators](devenv-al-arithmetic-operators.md)  
+[Boolean operators](devenv-al-boolean-operators.md)  
+[Relational operators](devenv-al-relational-operators.md)  
