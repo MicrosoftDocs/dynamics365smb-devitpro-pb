@@ -950,6 +950,7 @@
 #### [Relational operators](developer/devenv-al-relational-operators.md)  
 #### [AL variables](developer/devenv-al-variables.md)
 #### [System-defined variables](developer/devenv-system-defined-variables.md)
+#### [AL type conversion](developer/devenv-al-type-conversion.md)
 ### [AL simple statements](developer/devenv-al-simple-statements.md)
 ### [AL control statements](developer/devenv-al-control-statements.md)
 ### [AL complex types](developer/devenv-al-complextypes.md)
