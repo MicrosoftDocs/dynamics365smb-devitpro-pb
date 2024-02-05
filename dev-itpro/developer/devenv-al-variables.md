@@ -102,7 +102,7 @@ You can assign values in the following ways:
 
 - By using the assignment operator `:=`, such as `Variable := Expression`. The data type that results from the evaluation of the right side expression must be the same data type as the variable (left operand) or have a data type that can be converted automatically to the data type of the left operand.  
 
-- As parameter assignment, such as `method(Expression)`. The data type that results from the evaluation of the expression must correspond to a specific data type or have a data type that can be converted automatically to the correct data type. For more information about evaluation and type conversion in expressions, see [Type Conversion in AL Expressions](devenv-type-conversion-in-expressions.md).  
+- As parameter assignment, such as `method(Expression)`. The data type that results from the evaluation of the expression must correspond to a specific data type or have a data type that can be converted automatically to the correct data type. For more information about evaluation and type conversion in expressions, see [AL type conversion in expressions](devenv-al-type-conversion-expressions.md).  
 
 Automatic type conversion in assignments occurs when the following events occur:  
 

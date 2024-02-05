@@ -3,7 +3,6 @@ title: Arithmetic operators
 description: Description of the arithmetic operators in AL
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.collection: 
 ms.date: 01/15/2024
 ms.custom: bap-template
 ms.author: solsen

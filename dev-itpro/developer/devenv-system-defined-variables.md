@@ -1,5 +1,6 @@
 ---
 title: System-defined variables
+description: Describes the system-defined variables that are automatically declared and initialized in AL for Business Central.
 ms.custom: na
 ms.date: 02/05/2024
 ms.reviewer: na
