@@ -14,7 +14,6 @@ This article is intended to help architects and developers make sound design dec
 
 The article describes integration patterns, integration scenarios, and integration solutions. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
 
-
 ## How to expose web service endpoints
 
 All integrations to/from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: API, SOAP, and OData. 
@@ -23,7 +22,6 @@ The recommended way to expose a web service for [!INCLUDE[prod_short](../include
 
 For more information, see [Web services overview](../webservices/web-services.md).
 
-
 ## How to explore and develop against Business Central APIs
 
 When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] from another application, you should use APIs, either the built-in APIs or custom APIs. 
@@ -31,7 +29,6 @@ When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] fr
 For more information about built-in APIs, see [REST API overview](../webservices/api-overview.md).
 
 For more information on how to explore and develop against APIs, see [Developing Connect apps](../developer/devenv-develop-connect-apps.md).
-
 
 ## Business Central connector for Power Platform
 
@@ -47,13 +44,11 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microso
 
 For more information, see [Integrating with Microsoft Power Apps overview](../powerplatform/power-apps-overview.md)
 
-
 ## Integrating Business Central with Microsoft Power Automate
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Automate by using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Platform. With Power Automate, you can set up and use flows to connect business-process tasks performed by different users. System tasks, such as automatic posting, can be included as steps in flows, preceded or followed by user tasks. Requesting and granting approval to create new records are typical flow steps.
 
 For more information, see [Integrating with Microsoft Power Automate overview](../powerplatform/power-automate-overview.md)
-
 
 ## Integrating Business Central with Microsoft Power Pages (preview)
 
@@ -64,8 +59,9 @@ For more information, see [Integrating with Microsoft Power Pages (preview)](../
 ## Integrating Business Central with Microsoft Power BI
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power BI in two ways:
-1. Connect a Power BI semantic model to [!INCLUDE[prod_short](../includes/prod_short.md)] to read data,
-1. Embed a Power BI report, page, or visual in the [!INCLUDE[prod_short](../includes/prod_short.md)] client.
+
+- Connect a Power BI semantic model to [!INCLUDE[prod_short](../includes/prod_short.md)] to read data.
+- Embed a Power BI report, page, or visual in the [!INCLUDE[prod_short](../includes/prod_short.md)] client.
 
 ### How to connect a Power BI semantic model to Business Central to read data
 
@@ -82,7 +78,6 @@ For more information, see [Power BI integration overview](/dynamics365/business-
 There are two ways that a Power BI report, page, or visual can be added to a page in the [!INCLUDE[prod_short](../includes/prod_short.md)] client:
 1. A user can embed a Power BI report, page, or scorecard on pages that include a Power BI part. For more information, see [Working with Power BI Reports in Business Central](/dynamics365/business-central/across-working-with-powerbi).
 1. A developer can programatically add them from AL. For more information, see [Adding Power BI Report parts to pages](../developer/devenv-power-bi-report-parts.md).
-
 
 ## Built-in: Integrating Business Central with Dataverse
 
