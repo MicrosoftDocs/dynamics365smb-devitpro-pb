@@ -1,5 +1,5 @@
 ---
-title: AL type conversion
+title: AL type conversion in expressions
 description: Description of how AL types can be converted.
 ms.reviewer: 
 ms.topic: conceptual
@@ -10,11 +10,11 @@ author: SusanneWindfeldPedersen
 ms.collection: get-started
 ---
 
-# AL type conversion
+# AL type conversion in expressions
 
 This article describes type conversions in AL expressions. The examples illustrate how the type conversion rules should be used and the effect of the type conversion that the AL compiler performs. The examples are divided into groups corresponding to the data types in AL.
 
-## AL expression statements and type cConversion
+## AL expression statements and type conversion
 
 Consider the following statements.
 
