@@ -12,6 +12,8 @@ ms.date: 01/10/2024
 
 # Troubleshooting web service errors
 
+## HTTP status codes
+
 [!INCLUDE[httpStatusErrorCodes](../includes/include-http-status-error-codes.md)]
 
 ## Web service telemetry

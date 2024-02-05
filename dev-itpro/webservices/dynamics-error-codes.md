@@ -1,22 +1,45 @@
 ---
-title: Troubleshooting OData/API calls
-description: List of error codes.
+title: Troubleshooting REST API/OData calls
+description: Learn about how to troubleshoot Business Central web service errors of types REST API or OData.
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
 ms.topic: article
 ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
 
-# Troubleshooting OData/API calls
+# Troubleshooting REST API/OData calls
 
-The following table lists the error codes for the various exceptions in the web service response for calls to OData/API endpoints.
+When troubleshooting failed REST API/OData calls, you have a number of tools/techniques available:
+- telemetry 
+- HTTP status codes
+- OData error codes
+- the AL debugger 
 
-## Error code categorization
+## Troubleshoot failed REST API/OData calls with telemetry
 
-The error codes in the table below can be divided into the following categories and described as follows:
+[!INCLUDE [prod_short](../includes/prod_short.md)] telemetry on REST API/OData web service calls have two important dimensions to troubleshoot failed web service calls: *httpStatusCode* and *failureReason*. The *httpStatusCode* dimension stores the HTTP return code provided by the [!INCLUDE[prod_short](../includes/prod_short.md)] server. The *failureReason* dimension stores the exception types described above. These dimensions are not available in telemetry for SOAP calls.
+
+> [!TIP]
+> The custom dimension *category* hold information about the type of endpoint (REST API, OData, or SOAP) being called. 
+
+For more information about web services telemetry, see [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md).
+
+
+## Troubleshoot failed REST API/OData calls with HTTP status codes
+When you call a web service endpoint, either a [!INCLUDE[prod_short](../includes/prod_short.md)] REST API or an OData-enabled page/query/codeunit, you get an HTTP status code as part of the response. All HTTP status codes that start with 4 (sometimes also written 4xx) are classified as client errors, and it's your responsibility to react on these errors and fix them in your code. 
+
+[!INCLUDE[on-prem-ws-off-405-note](../includes/include-on-prem-ws-off-405-note.md)]
+
+For more information, see [Troubleshooting web service errors with HTTP status codes](web-service-troubleshooting.md#http-status-codes).
+
+
+## Error codes for REST API/OData failures
+
+If a call to a REST API or OData endpoint fails, the [!INCLUDE[prod_short](../includes/prod_short.md)] server will return an error code in the response. 
+
+These error codes can be divided into the following categories and described as follows:
 
 |Category|Description|Resolution|
 |--------|-----------|----------|
@@ -26,8 +49,6 @@ The error codes in the table below can be divided into the following categories 
 |Internal_*|Typically this is an internal error in the application on the server or data integrity issue. For example, the Dynamics NAV instance cannot communicate with the SQL Server.|Attempt the operation again. Resolve data issues.|
 |Application_*|Typically an application logic error.|Request is made again with updated data.|
 
-
-## Error codes
 
 |Exception Type |Error Message |Error Code|
 |---------------|--------------|----------|
@@ -66,21 +87,25 @@ The error codes in the table below can be divided into the following categories 
 |NavInvalidCredentialException|The server has rejected the client credentials|Authentication_InvalidCredentials|
 |Any|Any|Unknown|
 
-## Troubleshoot failed OData/API calls with HTTP status codes
-When you call a web service endpoint, either a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] API or from AL using Httpclient datatype, you get an HTTP status code as part of the response. All HTTP status codes that start with 4 (sometimes also written 4xx) are classified as client errors, and it's your responsibility to react on these errors and fix them in your code. 
 
-[!INCLUDE[on-prem-ws-off-405-note](../includes/include-on-prem-ws-off-405-note.md)]
+## Debugging code called from a web service endpoint
 
-For more information, see [Troubleshooting web service errors with HTTP status codes](web-service-troubleshooting.md).
+This topic is covered in the general troubleshooting guide for web services. For more information, see [Debugging code called from a web service endpoint](web-service-troubleshooting.md#debugging-code-called-from-a-web-service-endpoint).
 
-## Troubleshoot failed OData/API calls with telemetry
 
-[!INCLUDE [prod_short](../developer/includes/prod_short.md)] telemetry on web service calls have two important dimensions to troubleshoot failed web service calls: *httpStatusCode* and *failureReason*. The *httpStatusCode* dimension stores the HTTP return code provided by the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. The *failureReason* dimension stores the exception types described above.
+## Which IP addresses or ranges does my environment use?
 
-For more information about web services telemetry, see [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md).
+This topic is covered in the general troubleshooting guide for web services. For more information, see [Which IP addresses or ranges does my environment use?](web-service-troubleshooting.md#which-ip-addresses-or-ranges-does-my-environment-use).
+
+
+## It works in my sandbox but not in production
+
+This topic is covered in the general troubleshooting guide for web services. For more information, see [It works in my sandbox but not in production](web-service-troubleshooting.md#it-works-in-my-sandbox-but-not-in-production).
+
 
 ## See also
 
-[Dynamics 365 Business Central in Graph](/graph/api/resources/dynamics-graph-reference)   
-[Troubleshooting web service errors with HTTP status codes](web-service-troubleshooting.md)     
-[Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md)   
+[Troubleshoot web service errors](web-service-troubleshooting.md)  
+[Web service performance](web-service-performance.md)  
+[Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md) 
+[Web service telemetry](web-service-telemetry.md)  
