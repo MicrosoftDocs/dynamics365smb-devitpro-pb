@@ -13,8 +13,8 @@ ms.author: solsen
 
 When troubleshooting failed REST API/OData calls, you have a number of tools/techniques available:
 - telemetry 
-- HTTP status codes
-- OData error codes
+- HTTP status codes 
+- OData error codes 
 - the AL debugger 
 
 ## Troubleshoot failed REST API/OData calls with telemetry
@@ -24,7 +24,7 @@ When troubleshooting failed REST API/OData calls, you have a number of tools/tec
 > [!TIP]
 > The custom dimension *category* hold information about the type of endpoint (REST API, OData, or SOAP) being called. 
 
-For more information about web services telemetry, see [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md).
+For more information about web services telemetry (including KQL code samples), see [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md).
 
 
 ## Troubleshoot failed REST API/OData calls with HTTP status codes
@@ -35,22 +35,22 @@ When you call a web service endpoint, either a [!INCLUDE[prod_short](../includes
 For more information, see [Troubleshooting web service errors with HTTP status codes](web-service-troubleshooting.md#http-status-codes).
 
 
-## Error codes for REST API/OData failures
+## Error messages and error codes for REST API/OData failures
 
-If a call to a REST API or OData endpoint fails, the [!INCLUDE[prod_short](../includes/prod_short.md)] server will return an error code in the response. 
+If a call to a REST API or OData endpoint fails, the [!INCLUDE[prod_short](../includes/prod_short.md)] server will return an error message and an error code in the response. Error codes can be divided into the following categories and described as follows:
 
-These error codes can be divided into the following categories and described as follows:
-
-|Category|Description|Resolution|
+|If you see an error code like this...|It is because...| Do this to resolve the issue...|
 |--------|-----------|----------|
 |BadRequest_*|Will typically be an error in the forming of the request or an error accessing the service.|Resolve the bug in the forming of the request.|
 |Authentication_*|An error authenticating to the service.|Attempt to use different credentials.|
 |Authorization_*|The authenticated identity does not have the correct permissions.|Attempt operation using different credentials.|
-|Internal_*|Typically this is an internal error in the application on the server or data integrity issue. For example, the Dynamics NAV instance cannot communicate with the SQL Server.|Attempt the operation again. Resolve data issues.|
+|Internal_*|Typically this is an internal error in the application on the server or data integrity issue. For example, the [!INCLUDE[prod_short](../includes/prod_short.md)] server cannot communicate with the SQL Server.|Attempt the operation again. Resolve data issues.|
 |Application_*|Typically an application logic error.|Request is made again with updated data.|
 
 
-|Exception Type |Error Message |Error Code|
+The following table explains how the OData error codes/messages translate to exceptions thrown by the AL runtime.
+
+|AL runtime exception type |OData error message |OData error Code|
 |---------------|--------------|----------|
 |ODataArgumentException|An incompatible property definition<br> already exists for `'Allowed_Companies_0.Name'`|BadRequest_InvalidRequestUrl|
 |ODataNotFoundException|Bad Request - Error in query syntax|BadRequest_NotFound|
