@@ -5,8 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: 
 ms.topic: conceptual
-ms.collection: 
-ms.date: 10/11/2023
+ms.date: 02/05/2024
 ms.custom: bap-template
 ms.collection: get-started
 ---
