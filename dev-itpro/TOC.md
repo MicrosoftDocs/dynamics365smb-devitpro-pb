@@ -1420,7 +1420,7 @@
 
 ## Integrating with external systems using events
 ### [Using webhooks to track data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
-### [Business events](developer/business-events-overview.md)
+### [Business events (preview)](developer/business-events-overview.md)
 
 ## Integrating AI using developer tools for copilot
 ### [Overview](developer/ai-integration-landing-page.yml)
