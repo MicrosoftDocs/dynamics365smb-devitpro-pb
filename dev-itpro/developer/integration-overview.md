@@ -5,7 +5,7 @@ author: kennienp
 ms.reviewer: solsen
 ms.topic: overview
 ms.author: kepontop
-ms.date: 02/02/2024
+ms.date: 02/05/2024
 ---
 
 # Integration overview for Business Central online
