@@ -41,14 +41,14 @@ A valid use of the relational operators is, for example, text compared with text
 |Relational operator|Boolean|Char|Option|Integer|Decimal|Date|Time|Text|Code|  
 |-----------|------|----|----|----|----|---|----|----------|----------|  
 |Boolean|Boolean|||||||||  
-|char||Boolean|Boolean|Boolean|Boolean|||||  
-|option||Boolean|Boolean|Boolean|Boolean|||||  
-|integer||Boolean|Boolean|Boolean|Boolean|||||  
-|decimal||Boolean|Boolean|Boolean|Boolean|||||  
-|date||||||Boolean||||  
-|time|||||||Boolean|||  
-|text||||||||Boolean|Boolean|  
-|code||||||||Boolean|Boolean|  
+|Char||Boolean|Boolean|Boolean|Boolean|||||  
+|Option||Boolean|Boolean|Boolean|Boolean|||||  
+|Integer||Boolean|Boolean|Boolean|Boolean|||||  
+|Decimal||Boolean|Boolean|Boolean|Boolean|||||  
+|Date||||||Boolean||||  
+|Time|||||||Boolean|||  
+|Text||||||||Boolean|Boolean|  
+|Code||||||||Boolean|Boolean|  
 
 ## See also
 
