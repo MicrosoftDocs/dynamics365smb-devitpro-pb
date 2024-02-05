@@ -5,7 +5,9 @@ author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer
 ms.topic: conceptual 
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ms.date: 11/05/2023
 ms.custom: bap-template 
 ---

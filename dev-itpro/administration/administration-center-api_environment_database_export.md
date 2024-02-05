@@ -3,9 +3,7 @@ title: Business Central Admin Center API - Environment Database Export
 description: Learn about the Business Central administration center API for exporting an environment database.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 01/03/2023

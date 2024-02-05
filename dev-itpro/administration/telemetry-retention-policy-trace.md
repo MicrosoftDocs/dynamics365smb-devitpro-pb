@@ -3,9 +3,7 @@ title: Analyzing retention policy trace telemetry
 description: Learn about the telemetry for retention policies in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 12/27/2023
 ms.author: jswymer

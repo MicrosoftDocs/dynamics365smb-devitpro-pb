@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.topic: conceptual
 author: samirdal
 ms.author: samirdal
-ms.service: dynamics365-business-central
+
 ---
 
 # Actionable errors
@@ -224,15 +224,15 @@ begin
     ErrorDialogWithTwoActions.Message := StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', DimensionCode, VendorCode); 
     ErrorDialogWithTwoActions.DetailedMessage('Add some text to help the person troubleshooting this error.');
 
-    ErrorNoLinesToCreate.AddAction(
-        'Set value to blank'
+    ErrorDialogWithTwoActions.AddAction(
+        'Set value to blank',
         Codeunit::FirstFixitCodeunit, 
-        FirstFixitCodeunitMethodName
+        "FirstFixitCodeunitMethodName"
     );
-    ErrorNoLinesToCreate.AddAction(
-        'OK'
+    ErrorDialogWithTwoActions.AddAction(
+        'OK',
         Codeunit::SecondFixitCodeunit, 
-        SecondFixitCodeunitMethodName
+        "SecondFixitCodeunitMethodName"
     );
 
     Error(ErrorDialogWithTwoActions);

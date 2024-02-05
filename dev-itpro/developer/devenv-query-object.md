@@ -4,7 +4,7 @@ description: Description of the AL query object.
 ms.custom: bap-template
 ms.date: 09/24/2023
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

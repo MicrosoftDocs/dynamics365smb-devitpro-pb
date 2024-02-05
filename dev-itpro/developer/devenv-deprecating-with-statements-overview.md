@@ -4,8 +4,6 @@ description: "Rationale and description of why explicit and implicit with statem
 ms.custom: na
 ms.date: 08/15/2022
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 author: esbenk
 ---

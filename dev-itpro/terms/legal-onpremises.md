@@ -2,10 +2,9 @@
 title: "Legal resources for Business Central on-premises"
 description: View a list of links to where you can find legal information that applies to Business Central on-premises deployments.
 author: jswymer
-ms.custom: na
+ms.custom: bap-template
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.service: dynamics-365-op
 ms.topic: article
 ms.date: 01/04/2024
 ---

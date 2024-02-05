@@ -4,7 +4,7 @@ description: Learn about the updates for Dynamics 365 Business Central 2022 Rele
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ms.topic: conceptual
 ms.date: 10/23/2023
 ms.custom: bap-template

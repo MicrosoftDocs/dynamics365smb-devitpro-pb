@@ -4,8 +4,6 @@ ms.custom: na
 ms.author: solsen
 ms.date: 09/04/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

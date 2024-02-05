@@ -5,10 +5,7 @@ ms.author: jswymer
 ms.custom: na
 ms.date: 07/08/2022
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: EmmaNielsson
 ---
 

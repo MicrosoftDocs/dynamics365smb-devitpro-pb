@@ -6,8 +6,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 06/24/2022
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 
@@ -168,8 +166,8 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
         APIPublisher = 'bctech';
         APIGroup = 'demo';
 
-        EntityCaption = 'CarModel';
-        EntitySetCaption = 'CarModels';
+        EntityCaption = 'Car Model';
+        EntitySetCaption = 'Car Models';
         EntityName = 'carModel';
         EntitySetName = 'carModels';
 
@@ -244,8 +242,8 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
         APIPublisher = 'bctech';
         APIGroup = 'demo';
 
-        EntityCaption = 'CarBrand';
-        EntitySetCaption = 'CarBrands';
+        EntityCaption = 'Car Brand';
+        EntitySetCaption = 'Car Brands';
         EntityName = 'carBrand';
         EntitySetName = 'carBrands';
 
@@ -454,6 +452,440 @@ Which will result in following response:
     - Use `EntityCaption` and `EntitySetCaption` properties
     - Use captions for Enums
     - All these localizations can be retrieved through `https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/<API publisher>/<API group>/<API version>/entityDefinitions`
+
+## Replacing ODataEDMType property
+
+[ODataEDMType property](../developer/properties/devenv-odataedmtype-property.md) was used to create nested JSON objects in the API response. Fields using this property were also called complex types. In [API v2.0](../api-reference/v2.0/index.md), all complex types are replaced with first-level properties or navigation properties. Overview of API v2.0 changes are documented [here](../api-reference/v2.0/transition-to-api-v2.0.md).
+
+[ODataEDMType property](../developer/properties/devenv-odataedmtype-property.md) is deprecated and custom API implementations should transition from complex types to first-level properties or navigation properties. This transition will improve API performance significantly since complex fields were calculated in the runtime and added additional compute time.
+
+### ODataEDMType to first-level property
+
+Following example shows an API page with a complex type field using ```ODataEDMType``` ```POSTALADDRESS```.
+
+```
+page 50100 "Customers API"
+{
+    PageType = API;
+
+    APIVersion = 'v1.0';
+    APIPublisher = 'bctech';
+    APIGroup = 'demo';
+
+    EntityCaption = 'Customer';
+    EntitySetCaption = 'Customers';
+    EntityName = 'customer';
+    EntitySetName = 'customers';
+
+    ODataKeyFields = SystemId;
+    SourceTable = Customer;
+
+    Extensible = false;
+    DelayedInsert = true;
+
+    layout
+    {
+        area(content)
+        {
+            repeater(Group)
+            {
+                field(id; Rec.SystemId)
+                {
+                    Caption = 'Id';
+                    Editable = false;
+                }
+                field(number; Rec."No.")
+                {
+                    Caption = 'Number';
+                }
+                field(address; PostalAddressJson)
+                {
+                    Caption = 'Address';
+                    ODataEDMType = 'POSTALADDRESS';
+
+                    trigger OnValidate()
+                    begin
+                        PostalAddressSet := true;
+                    end;
+                }
+            }
+        }
+    }
+
+    actions
+    {
+    }
+
+    trigger OnAfterGetRecord()
+    begin
+        SetCalculatedFields();
+    end;
+
+    trigger OnNewRecord(BelowxRec: Boolean)
+    begin
+        ClearCalculatedFields();
+    end;
+
+    trigger OnInsertRecord(BelowxRec: Boolean): Boolean
+    var
+        Customer: Record Customer;
+        RecordRef: RecordRef;
+    begin
+        Rec.Insert(true);
+        ProcessPostalAddress();
+        Rec.Modify(true);
+        SetCalculatedFields();
+        exit(false);
+    end;
+
+    trigger OnModifyRecord(): Boolean
+    begin
+        ProcessPostalAddress();
+        Rec.Modify(true);
+        SetCalculatedFields();
+    end;
+
+    var
+        PostalAddressJson: Text;
+        PostalAddressSet: Boolean;
+
+    local procedure SetCalculatedFields()
+    var
+        JObject: JsonObject;
+    begin
+        JObject.Add('street', Rec.Address + Rec."Address 2");
+        JObject.Add('city', Rec.City);
+        JObject.Add('state', Rec.County);
+        JObject.Add('countryLetterCode', Rec."Country/Region Code");
+        JObject.Add('postalCode', Rec."Post Code");
+        JObject.WriteTo(PostalAddressJson);
+    end;
+
+    local procedure ClearCalculatedFields()
+    begin
+        Clear(PostalAddressJson);
+        Clear(PostalAddressSet);
+    end;
+
+    local procedure ProcessPostalAddress()
+    var
+        JObject: JsonObject;
+        JToken: JsonToken;
+        Address1: Text[100];
+        Address2: Text[50];
+    begin
+        if not PostalAddressSet then
+            exit;
+
+        JObject.ReadFrom(PostalAddressJson);
+
+        if JObject.Get('street', JToken) then begin
+            SplitStreet(JToken.AsValue().AsText(), Address1, Address2);
+            Rec.Validate(Address, Address1);
+            Rec.Validate("Address 2", Address2);
+        end;
+
+        if JObject.Get('city', JToken) then
+            Rec.Validate(City, JToken.AsValue().AsText());
+
+        if JObject.Get('state', JToken) then
+            Rec.Validate(County, JToken.AsValue().AsText());
+            
+        if JObject.Get('countryLetterCode', JToken) then
+            Rec.Validate("Country/Region Code", JToken.AsValue().AsText());
+
+        if JObject.Get('postalCode', JToken) then
+            Rec.Validate("Post Code", JToken.AsValue().AsText());
+    end;
+}
+```
+
+Removing the complex type field and instead introducing a first-level property will result in following API page. Instead of a complex field that requires a custom logic with slow compute time, several first-level fields are introduced.
+
+```
+page 50100 "Customers API"
+{
+    PageType = API;
+
+    APIVersion = 'v2.0';
+    APIPublisher = 'bctech';
+    APIGroup = 'demo';
+
+    EntityCaption = 'Customer';
+    EntitySetCaption = 'Customers';
+    EntityName = 'customer';
+    EntitySetName = 'customers';
+
+    ODataKeyFields = SystemId;
+    SourceTable = Customer;
+
+    Extensible = false;
+    DelayedInsert = true;
+
+    layout
+    {
+        area(content)
+        {
+            repeater(Group)
+            {
+                field(id; Rec.SystemId)
+                {
+                    Caption = 'Id';
+                    Editable = false;
+                }
+                field(number; Rec."No.")
+                {
+                    Caption = 'Number';
+                }
+                field(addressLine1; Rec.Address)
+                {
+                    Caption = 'Address Line 1';
+                }
+                field(addressLine2; Rec."Address 2")
+                {
+                    Caption = 'Address Line 2';
+                }
+                field(city; Rec.City)
+                {
+                    Caption = 'City';
+                }
+                field(state; Rec.County)
+                {
+                    Caption = 'State';
+                }
+                field(country; Rec."Country/Region Code")
+                {
+                    Caption = 'Country/Region Code';
+                }
+                field(postalCode; Rec."Post Code")
+                {
+                    Caption = 'Post Code';
+                }
+            }
+        }
+    }
+
+    actions
+    {
+    }
+}
+```
+
+### ODataEDMType to navigational property
+
+Following example shows an API page with a complex type field using ```ODataEDMType``` ```Collection(DIMENSION)```.
+
+```
+page 5010 "Journal Lines API"
+{
+    PageType = API;
+
+    APIVersion = 'v1.0';
+    APIPublisher = 'bctech';
+    APIGroup = 'demo';
+
+    EntityCaption = 'Journal Line';
+    EntitySetCaption = 'Journal Lines';
+    EntityName = 'journalLine';
+    EntitySetName = 'journalLines';
+
+    ODataKeyFields = SystemId;
+    SourceTable = "Gen. Journal Line";
+
+    Extensible = false;
+    DelayedInsert = true;
+
+    layout
+    {
+        area(content)
+        {
+            repeater(Group)
+            {
+                field(id; Rec.SystemId)
+                {
+                    Caption = 'Id';
+                    Editable = false;
+                }
+                field(lineNumber; Rec."Line No.")
+                {
+                    Caption = 'Line Number';
+                }
+                field(dimensions; DimensionsJson)
+                {
+                    Caption = 'Dimensions';
+                    ODataEDMType = 'Collection(DIMENSION)';
+
+                    trigger OnValidate()
+                    begin
+                        DimensionsSet := true;
+                    end;
+                }
+            }
+        }
+    }
+
+    actions
+    {
+    }
+
+    trigger OnAfterGetRecord()
+    begin
+        SetCalculatedFields();
+    end;
+
+    trigger OnNewRecord(BelowxRec: Boolean)
+    begin
+        ClearCalculatedFields();
+    end;
+
+    trigger OnInsertRecord(BelowxRec: Boolean): Boolean
+    begin
+        Rec.Insert(true);
+        ProcessDimensions();
+        Rec.Modify(true);
+        SetCalculatedFields();
+        exit(false);
+    end;
+
+    trigger OnModifyRecord(): Boolean
+    var
+        GenJournalLine: Record "Gen. Journal Line";
+    begin
+        ProcessDimensions();
+        Rec.Modify(true);
+        SetCalculatedFields();
+    end;
+
+    var
+        DimensionsJson: Text;
+        DimensionsSet: Boolean;
+
+    local procedure SetCalculatedFields()
+    var
+        DimensionSetEntry: Record "Dimension Set Entry";
+        JArray: JsonArray;
+        JObject: JsonObject;
+    begin
+        DimensionSetEntry.SetRange("Dimension Set ID", DimensionSetId);
+        if not DimensionSetEntry.FindSet() then
+            exit;
+
+        repeat
+            Clear(JObject);
+            DimensionSetEntry.CalcFields("Dimension Name", "Dimension Value Name");
+            JObject.Add('code', DimensionSetEntry."Dimension Code");
+            JObject.Add('displayName', DimensionSetEntry."Dimension Name");
+            JObject.Add('valueCode', DimensionSetEntry."Dimension Value Code");
+            JObject.Add('valueDisplayName', DimensionSetEntry."Dimension Value Name");
+            JArray.Add(JObject);
+        until DimensionSetEntry.Next() = 0;
+
+        JArray.WriteTo(DimensionsJson);
+    end;
+
+    local procedure ClearCalculatedFields()
+    begin
+        Clear(DimensionsJson);
+        Clear(DimensionsSet);
+    end;
+
+    local procedure ProcessDimensions()
+    var
+        Dimension: Record Dimension;
+        TempDimensionSetEntry: Record "Dimension Set Entry" temporary;
+        DimensionManagement: Codeunit "Dimension Management";
+        JArray: JsonArray;
+        JToken1: JsonToken;
+        JToken2: JsonToken;
+        DimensionCode: Code[20];
+        DimensionValueCode: Code[20];
+        NewDimensionSetId: Integer;
+    begin
+        if not DimensionsSet then
+            exit;
+
+        JArray.ReadFrom(DimensionsJson);
+
+        foreach JToken1 in JArray do begin
+            if JToken1.AsObject().Get('code', JToken2) then
+                DimensionCode := JToken1.AsValue().AsText();
+
+            if JToken1.AsObject().Get('valueCode', JToken2) then
+                DimensionValueCode := JToken1.AsValue().AsText();
+
+            if not Dimension.Get(DimensionCode) then
+                Error('Dimension does not exist.');
+
+            TempDimensionSetEntry.Init();
+            TempDimensionSetEntry."Dimension Set ID" := Rec."Dimension Set ID";
+            TempDimensionSetEntry."Dimension Code" := DimensionCode;
+            TempDimensionSetEntry."Dimension Value Code" := DimensionValueCode;
+            TempDimensionSetEntry.Insert(true);
+        end;
+
+        NewDimensionSetId := DimensionManagement.GetDimensionSetID(TempDimensionSetEntry);
+
+        if Rec."Dimension Set ID" <> NewDimensionSetId then begin
+            Rec."Dimension Set ID" := NewDimensionSetId;
+            DimensionManagement.UpdateGlobalDimFromDimSetID(NewDimensionSetId, Rec."Shortcut Dimension 1 Code", Rec."Shortcut Dimension 2 Code");
+        end;
+    end;
+}
+```
+
+Removing the complex type field and instead introducing a navigational property will result in following API page. Instead of a complex field that requires a custom logic with slow compute time, an API page part to corresponding entity is introduced.
+
+```
+page 5010 "Journal Lines API"
+{
+    PageType = API;
+
+    APIVersion = 'v2.0';
+    APIPublisher = 'bctech';
+    APIGroup = 'demo';
+
+    EntityCaption = 'Journal Line';
+    EntitySetCaption = 'Journal Lines';
+    EntityName = 'journalLine';
+    EntitySetName = 'journalLines';
+
+    ODataKeyFields = SystemId;
+    SourceTable = "Gen. Journal Line";
+
+    Extensible = false;
+    DelayedInsert = true;
+
+    layout
+    {
+        area(content)
+        {
+            repeater(Group)
+            {
+                field(id; Rec.SystemId)
+                {
+                    Caption = 'Id';
+                    Editable = false;
+                }
+                field(lineNumber; Rec."Line No.")
+                {
+                    Caption = 'Line Number';
+                }
+                part(dimensionSetLines; "APIV2 - Dimension Set Lines")
+                {
+                    Caption = 'Dimension Set Lines';
+                    EntityName = 'dimensionSetLine';
+                    EntitySetName = 'dimensionSetLines';
+                    SubPageLink = "Parent Id" = field(SystemId), "Parent Type" = const("Journal Line");
+                }
+            }
+        }
+    }
+
+    actions
+    {
+    }
+}
+```
 
 ## Using an API Query Type
 
