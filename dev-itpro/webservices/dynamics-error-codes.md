@@ -41,16 +41,16 @@ If a call to a REST API or OData endpoint fails, the [!INCLUDE[prod_short](../in
 
 |If you see an error code like this...|It is because...| Do this to resolve the issue...|
 |--------|-----------|----------|
-|BadRequest_*|Will typically be an error in the forming of the request or an error accessing the service.|Resolve the bug in the forming of the request.|
+|BadRequest_*|Will typically be an error in the forming of the request or an error accessing the service.|Resolve the bug in the forming of the request. Use the information provided by the AL runtime exception to learn more about the nature of the error.|
 |Authentication_*|An error authenticating to the service.|Attempt to use different credentials.|
 |Authorization_*|The authenticated identity does not have the correct permissions.|Attempt operation using different credentials.|
-|Internal_*|Typically this is an internal error in the application on the server or data integrity issue. For example, the [!INCLUDE[prod_short](../includes/prod_short.md)] server cannot communicate with the SQL Server.|Attempt the operation again. Resolve data issues.|
-|Application_*|Typically an application logic error.|Request is made again with updated data.|
+|Internal_*|Typically this is an internal error in the application on the server or data integrity issue. For example, the [!INCLUDE[prod_short](../includes/prod_short.md)] server cannot communicate with the SQL Server.|Attempt the operation again. Resolve data issues. Use the information provided by the AL runtime exception to learn more about the nature of the error.|
+|Application_*|Typically an application logic error.|Request is made again with updated data. Use the information provided by the AL runtime exception to learn more about the nature of the error.|
 
 
 The following table explains how the OData error codes/messages translate to exceptions thrown by the AL runtime. Note that the same OData error code appears multiple times in the table, each entry with a different AL runtime exception type. The OData error code tells you the type of error as seen from the OData layer, whereas the exception type tells you more about the root cause of the error as seen from the AL runtime.
 
-|AL runtime exception type              | OData error Code | OData error message|
+|AL runtime exception                   | OData error code | OData error message|
 |---------------------------------------|------------------|--------------------|
 |ODataArgumentException                 |BadRequest_InvalidRequestUrl|An incompatible property definition<br> already exists for `'Allowed_Companies_0.Name'`|
 |ODataNotFoundException                 |BadRequest_NotFound|Bad Request - Error in query syntax|
