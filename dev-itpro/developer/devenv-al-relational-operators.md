@@ -20,10 +20,10 @@ The following table defines the evaluation rules for relational operators. The r
 |Operator|Operator name|Expression|Resulting date type|  
 |--------|-------------|----------|-------------------|  
 |`>`|Greater than|`Expr > Expr`|Boolean|  
-|`\<`|Less than|`Expr \< Expr`|Boolean|  
+|`<`|Less than|`Expr < Expr`|Boolean|  
 |`>=`|Greater than or equal|`Expr >= Expr`|Boolean|  
-|`\<=`|Less than or equal|`Expr \<= Expr`|Boolean|  
-|`\<>`|Not equal to|`Expr \<> Expr`|Boolean|  
+|`<=`|Less than or equal|`Expr <= Expr`|Boolean|  
+|`<>`|Not equal to|`Expr <> Expr`|Boolean|  
 |`=`|Equal to|`Expr = Expr`|Boolean|  
 |`in`|In range|`Expr in [Valueset]`|Boolean|  
 
