@@ -6,6 +6,7 @@ ms.date: 01/05/2023
 ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 
 # Protected variables
