@@ -82,7 +82,7 @@ This table illustrates type conversion in integer operator expressions.
 |`+`|Time addition|Time + Integer|Time|  
 |`-`|Time difference|Time - Time|Integer|  
 
-The time unit is milliseconds. If time is undefined \(0T\), a run-time error occurs.  
+The time unit is milliseconds. If time is undefined \(0T\), a runtime error occurs.  
 
 ## Example 2
 

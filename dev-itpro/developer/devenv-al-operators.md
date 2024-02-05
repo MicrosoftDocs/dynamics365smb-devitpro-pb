@@ -30,6 +30,7 @@ These operators are used to perform various operations such as arithmetic, compa
 |`..`|Range|
 |`@`|Case-insensitive|
 
+<br>
 Arithmetic operators are used to perform arithmetic operations on numeric operands. The result of an arithmetic operation is a numeric value.
 
 |AL arithmetic operator | Meaning |
@@ -41,6 +42,7 @@ Arithmetic operators are used to perform arithmetic operations on numeric operan
 |`div`|Integer division|
 |`mod`|Modulus|
 
+<br>
 Comparison operators are used to compare two values. The result of a comparison is a Boolean value, that is, `true` or `false`.
 
 |AL comparison operator | Meaning |
@@ -52,6 +54,7 @@ Comparison operators are used to compare two values. The result of a comparison 
 |`=`|Equal to|
 |`<>`|Not equal to|
 
+<br>
 The logical operators are used on Boolean expressions
 
 |AL logical operator | Meaning |
@@ -61,6 +64,7 @@ The logical operators are used on Boolean expressions
 |`not`|Logical negation|
 |`xor`|Exclusive logical disjunction|
 
+<br>
 Compound assignment operators perform an arithmetic operation and assign the result to the same variable.
 
 |AL compound assignment operator| Meaning|
