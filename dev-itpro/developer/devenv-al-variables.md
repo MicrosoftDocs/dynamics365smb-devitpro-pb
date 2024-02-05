@@ -7,6 +7,7 @@ ms.collection:
 ms.date: 01/15/2024
 ms.custom: bap-template
 author: KennieNP
+ms.author: solsen
 ms.collection: get-started
 ---
 
@@ -92,7 +93,7 @@ The following examples show *incorrect* variable names:
 
 ## Initialization
 
-Variables are automatically initialized before AL code is run. A Boolean variable is set to **false**. Numeric variables are set to the default value zero. Strings (text and code) are initialized to the value '' (an empty string). Date and time variables are set to the undefined time 0T and the undefined date 0D, respectively. Variables of complex data types are also initialized. If a complex data type has multiple components, then each component is initialized to the value that corresponds to the data type for the component.  
+Variables are automatically initialized before AL code is run. A Boolean variable is set to `false`. Numeric variables are set to the default value zero. Strings (text and code) are initialized to the value '' (an empty string). Date and time variables are set to the undefined time 0T and the undefined date 0D, respectively. Variables of complex data types are also initialized. If a complex data type has multiple components, then each component is initialized to the value that corresponds to the data type for the component.  
 
 System-defined variables are automatically handled and initialized. No actions are required by the user before system-defined variables can be used.  
 
