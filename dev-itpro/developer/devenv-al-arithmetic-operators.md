@@ -96,7 +96,7 @@ This table illustrates type conversion in text and code \(String\) operator expr
 |`+`|Concatenation|Code + Code|Code|  
 
 ## See also
-<!-- more links -->
+
 [AL operators](devenv-al-operators.md)  
-[Boolean operators](devenv-al-boolean-operators.md)
-[Relational operators](devenv-al-relational-operators.md)
+[Boolean operators](devenv-al-boolean-operators.md)  
+[Relational operators](devenv-al-relational-operators.md)  

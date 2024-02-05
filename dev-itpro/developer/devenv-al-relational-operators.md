@@ -54,4 +54,4 @@ A valid use of the relational operators is, for example, text compared with text
 
 [AL operators](devenv-al-operators.md)  
 [Arithmetic operators](devenv-al-arithmetic-operators.md)  
-[Boolean operators](devenv-al-boolean-operators.md)
+[Boolean operators](devenv-al-boolean-operators.md)  
