@@ -3,9 +3,7 @@ title: Get userGroup
 description: Gets an user group object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 12/03/2023
 ms.author: solsen
 ---

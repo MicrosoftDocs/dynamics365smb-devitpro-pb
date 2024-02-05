@@ -4,9 +4,8 @@ description: Learn how to enable tranactability in AppSource for Business Centra
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: bap-template
-ms.date: 10/30/2023
+ms.date: 01/31/2024
 ms.reviewer: na
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ---
 
@@ -64,6 +63,10 @@ When the app has been updated with entitlements, it must be published to AppSour
 
 > [!NOTE]  
 > Even if a user has an assigned license (plan) that maps to permission sets through the entitlement for that license, the user must still be granted those permissions inside [!INCLUDE [prod_short](includes/prod_short.md)] to have access. In other words, the license only defines the maximum permission to app functionality paid for, but users with the license might be granted less inside [!INCLUDE [prod_short](includes/prod_short.md)].
+
+## Preview of your app
+
+The publisher of an AppSource app may run a preview for a future version of an already public app, or new app. Preview versions can be installed using a URL including a `PreviewKey` parameter provided by the app publisher, but only in sandbox environments. For more information, see [](../administration/tenant-admin-center-manage-apps.md#preview-versions-of-appsource-apps).
 
 ## Side-by-side support
 

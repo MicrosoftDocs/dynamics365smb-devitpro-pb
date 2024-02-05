@@ -2,9 +2,9 @@
 title: Features not implemented in on-premises deployments
 description: Some features work differently or not at all, depending on whether your Business Central solution is in the cloud or on-premises.
 author: jswymer
-
-ms.custom: na
-ms.reviewer: na
+ms.service: dynamics-365-op
+ms.custom: bap-template
+ms.reviewer: jswymer
 ms.topic: article
 ms.author: jswymer
 ms.date: 06/13/2022

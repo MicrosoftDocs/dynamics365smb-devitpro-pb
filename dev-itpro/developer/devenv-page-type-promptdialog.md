@@ -5,7 +5,8 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: 
 ms.topic: overview
-ms.collection: 
+ms.collection:
+  - bap-ai-copilot
 ms.date: 01/11/2024
 ms.custom: bap-template
 ---

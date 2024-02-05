@@ -4,7 +4,7 @@ description: Learn about how to call external services using the HttpClient data
 ms.custom: bap-template
 ms.date: 01/08/2024
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 author: kennienp
 ms.author: kepontop
@@ -14,7 +14,7 @@ ms.author: kepontop
 
 The [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md) is simply a wrapper on the .NET class HttpClient.  
 
-In this article, you learn how to make HTTP requests using the _HttpClient_ data type and handle responses using the _HttpResponseMessage_ data type. 
+In this article, you learn how to make HTTP requests using the *HttpClient* data type and handle responses using the *HttpResponseMessage* data type. 
 
 ## Set up an external call
 
@@ -87,6 +87,7 @@ The following example shows how to call an external web service from AL. It also
 [!INCLUDE[allowhttpclientnote](../includes/include-http-allowhttpclient-note.md)]
 
 ### Supported HTTP methods
+
 [!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md )]
 
 ## Parsing the result
@@ -125,6 +126,7 @@ The following example illustrates the error handling you need to setup for handl
 [!INCLUDE[httpStatusCodes](../includes/include-http-status-codes.md)]
 
 ### Common HTTP status error codes
+
 [!INCLUDE[httpStatusErrorCodes](../includes/include-http-status-error-codes.md)]
 
 ## Advanced scenarios
@@ -137,15 +139,18 @@ It's possible to include a certificate when calling an external service.
 
 [!INCLUDE[httpclient_cert_note](includes/include-http-cert-note.md)]
 
-For more information about certificates, see the [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-method.md)
+For more information about certificates, see
+
+- [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-method.md) 
+- [Supported cipher suites in HTTPS](devenv-supported-cipher-suites.md).
 
 ### Which IP addresses or ranges does my environment use?
 
 When you exchange data through external services, you might have to safelist the IP addresses from where the [!INCLUDE[prod_short](includes/prod_short.md)] service is running. 
 
-For more information, see [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
-
-
+For more information, see 
+- [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
+- [How-to restrict network access from/to Business Central](../security/security-service-tags.md).
 
 ## Monitor and troubleshoot
 
@@ -165,8 +170,10 @@ You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry 
 
 ## See also
 
+[Supported cipher suites in HTTPS](devenv-supported-cipher-suites.md)  
+[How-to restrict network access from/to Business Central](../security/security-service-tags.md)  
 [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md)  
 [HttpContent data type](methods-auto/httpcontent/httpcontent-data-type.md)  
 [Analyzing outgoing web service request telemetry](../administration/telemetry-webservices-outgoing-trace.md)  
-[Developing Extensions](devenv-dev-overview.md)  
-[Get Started with AL](devenv-get-started.md)  
+[Developing extensions](devenv-dev-overview.md)  
+[Get started with AL](devenv-get-started.md)  

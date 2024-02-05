@@ -2,13 +2,12 @@
 title: "Business Central Administration Shell"
 description: Read about the PowerShell cmdlets managing Business Central Server instances and extensions for on-premises deployments.
 author: jswymer
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 08/31/2022
+ms.service: dynamics-365-op
 ---
 
 # Business Central Administration Shell

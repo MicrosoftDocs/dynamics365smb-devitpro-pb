@@ -7,7 +7,7 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 12/05/2023
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.custom: bac-template
 ---
 # Controlling Telemetry Cost

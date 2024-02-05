@@ -4,7 +4,7 @@ description: Learn about how to tune the performance of Power BI dataset load ti
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.author: kepontop
 ms.date: 08/18/2023

@@ -4,8 +4,6 @@ description: Get an overview of the articles about security in Business Central,
 author: jswymer
 ms.custom: na
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.date: 12/07/2022
 ms.author: jswymer

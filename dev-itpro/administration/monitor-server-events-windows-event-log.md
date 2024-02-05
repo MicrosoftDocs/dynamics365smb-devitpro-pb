@@ -1,14 +1,11 @@
 ---
 title: "Monitoring Business Central Server Events in Event Viewer"
 description: Learn about using event viewer to monitor Business Central Server instances
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.assetid: da2944cc-063d-452d-968c-23b90c547600
-caps.latest.revision: 28
 ---
 # Monitoring Business Central Server Events Using Event Viewer
 Events that occur on the [!INCLUDE[server](../developer/includes/server.md)] instances can be recorded in event logs on the computer that is running [!INCLUDE[server](../developer/includes/server.md)]. You can view the events by using Event Viewer.  

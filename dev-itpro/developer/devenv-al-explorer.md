@@ -4,7 +4,7 @@ description: The AL Explorer for Business Central lets you explore and navigate 
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.date: 09/21/2023
 ms.custom: bap-template

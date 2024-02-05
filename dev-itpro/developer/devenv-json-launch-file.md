@@ -1,12 +1,10 @@
 ---
-title: "Launch JSON file"
-description: "Description of the settings of the launch JSON file for AL in Business Central."
+title: Launch JSON file
+description: Description of the settings of the launch JSON file for AL in Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 08/30/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -22,7 +20,7 @@ The `launch.json` file contains information about the server that the extension 
 - [Attach to the client on the cloud sandbox or on your own server](devenv-json-launch-file.md#attach-configuration-settings)
 - [Initialize a snapshot debugging session on cloud or on your own server](devenv-json-launch-file.md#initialize-snapshot-debugging-settings)
 
-In the following sections, you can find a description of the parameters that are available for each of the configurations. You'll also find a description of how to create a [global or workspace launch configuration file](devenv-json-launch-file.md#global-and-workspace-launch-configuration).
+In the following sections, you can find a description of the parameters that are available for each of the configurations. You'll also find a description of how to create a [user or workspace launch configuration file](devenv-json-launch-file.md#user-and-workspace-launch-configuration).
 
 ## Publishing settings for cloud and local server
 
@@ -218,20 +216,20 @@ The settings for snapshot debugging on your own server are described in the foll
 |profilingType|Yes|Specifies the profiling type to be used. There are two options: <br> `Instrumentation`, which means that if profiling is enabled then all frames executed will be measured for their total time <br>`Sampling`, which means that if profiling is enabled then frames will be collected and aggregated based on a sample interval. This option can only be used with the `executionContext` set to `Profile`. For more information, see [AL Profiler](devenv-al-profiler-overview.md).|
 |profileSamplingInterval|No| Specifies the sampling interval in milliseconds when the `Sampling` profiling type is specified. The default value is 100ms. Options are `50`, `100`, or `150` ms.|
 
-## Global and workspace launch configuration
+## User and workspace launch configuration
 
-With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. This allows for a centralized configuration of projects. A local `launch.json` file overrides the workspace and global configuration. A workspace launch configuration overrides the launch configuration specified in the global `settings.json` file.
+With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. This allows for a centralized configuration of projects. A local `launch.json` file overrides the workspace and user configuration. A workspace launch configuration overrides the launch configuration specified in the user `settings.json` file.
 
 > [!NOTE]  
-> If a local `launch.json` file doesn't contain a valid AL launch configuration, we'll try to find one in the code-workspace first, and then in the `settings.json` files. However, if the launch property is specified in the code-workspace file even without specifying a valid AL configuration, the global `settings.json` file won't be able to override it.
+> If a local `launch.json` file doesn't contain a valid AL launch configuration, we'll try to find one in the code-workspace first, and then in the `settings.json` files. However, if the launch property is specified in the code-workspace file even without specifying a valid AL configuration, the user `settings.json` file won't be able to override it.
 
-## See Also
+## See also
 
 [JSON files](devenv-json-files.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[App Identity](devenv-app-identity.md)  
+[AL development environment](devenv-reference-overview.md)  
+[App identity](devenv-app-identity.md)  
 [Debugging in AL](devenv-debugging.md)  
-[Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md)  
-[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
-[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
+[Resource exposure policy setting](devenv-security-settings-and-ip-protection.md)  
+[AL Language extension configuration](devenv-al-extension-configuration.md)  
+[Configure context-sensitive help](../help/context-sensitive-help.md)  
 [App Key Vaults](devenv-app-key-vault-overview.md)

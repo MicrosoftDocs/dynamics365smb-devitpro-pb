@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms-service: dynamics365-business-central
 ---
 # Embed Business Central Web Client in Other Websites
 

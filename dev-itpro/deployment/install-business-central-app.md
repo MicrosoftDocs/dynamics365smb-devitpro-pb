@@ -4,8 +4,6 @@ description: Learn about prerequisites for using Business Central on-premises on
 ms.custom: na
 ms.date: 01/08/2024
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 caps.latest.revision: 24
 ms.author: jswymer
