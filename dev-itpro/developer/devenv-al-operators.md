@@ -3,11 +3,12 @@ title: AL operators
 description: Describes the operators you can use in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.reviewer: solsen
+ms.reviewer: 
 ms.topic: conceptual
 ms.collection: 
 ms.date: 10/11/2023
 ms.custom: bap-template
+ms.collection: get-started
 ---
 
 # AL operators
