@@ -950,6 +950,7 @@
 #### [Relational operators](developer/devenv-al-relational-operators.md)  
 #### [AL variables](developer/devenv-al-variables.md)
 #### [System-defined variables](developer/devenv-system-defined-variables.md)
+#### [Protected variables](developer/devenv-protected-variables.md)
 #### [AL type conversion in expressions](developer/devenv-al-type-conversion-expressions.md)
 ### [AL simple statements](developer/devenv-al-simple-statements.md)
 ### [AL control statements](developer/devenv-al-control-statements.md)
@@ -959,8 +960,6 @@
 ### [AL code comments](developer/devenv-xml-comments.md)
 ### [Using access modifiers in AL](developer/devenv-using-access-modifiers.md)
 ### [Working with labels](developer/devenv-using-labels.md)
-### [System-defined variables](developer/devenv-system-defined-variables.md)
-### [Protected variables](developer/devenv-protected-variables.md)
 
 ### Objects
 #### [Table object](developer/devenv-table-object.md)
