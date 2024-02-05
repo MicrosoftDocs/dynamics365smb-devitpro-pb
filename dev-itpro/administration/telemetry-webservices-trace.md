@@ -152,7 +152,7 @@ For a full KQL example of all dimensions in web services telemetry, see [Sample 
 
 The custom dimension *category* hold information about the type of endpoint (REST API, OData, or SOAP) being called. 
 
-This KQL code illustrates how you can find which endpoints are being called and which types of endpoints are being used. Such information might be useful, should you want to modernize your use of web services to use REST APIs which is the recommended over using SOAP-based web services or OData web services based on pages. 
+This KQL code illustrates how you can find which endpoints are being called and which types of endpoints are being used. Such information might be useful, should you want to modernize your use of web services to use REST APIs, which is recommended over using SOAP web services or OData web services based on pages. 
 
 ```kql
 // Incoming Web Service Requests - endpoint information
@@ -182,6 +182,24 @@ As a developer, you use the data to learn about conditions that you can change t
 
 For more performance guidelines, see [Web service performance](../webservices/web-service-performance.md)  
 
+
+This KQL code illustrates how you can find the performance characteristics of different endpoints. 
+
+```kql
+// Incoming Web Service Requests - performance information
+traces
+| where timestamp > ago(1d) // change as needed
+| where customDimensions has "RT0008"
+| where customDimensions.eventId == "RT0008"
+| project timestamp
+// endpoint information
+, category = customDimensions.category // API, ODataV3, ODataV4, or SOAP
+, endpoint = customDimensions.endpoint // URI
+// performance data (time is in milliseconds)
+, requestQueueTimeMS = toreal(totimespan(customDimensions.requestQueueTime))/10000
+, executionTimeInMS = toreal(totimespan(customDimensions.serverExecutionTime))/10000 
+, requestTotalTimeMS = ( toreal(totimespan(customDimensions.totalTime))+toreal(totimespan(customDimensions.requestQueueTime)) )/10000
+```
 
 ## Analyze HTTP status codes for web service calls
 
