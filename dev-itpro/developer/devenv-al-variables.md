@@ -134,14 +134,13 @@ This table shows the numeric data types.
 
 This table shows the string data types.  
 
-||**Text expression**|**Code expression**|**BigText expression**|  
-|------|-------------------------|-------------------------|----------------------------|  
-|**Text variable**|Valid but overflow might occur|Valid but overflow might occur|Valid but overflow might occur|  
-|**Code variable**|Valid but overflow might occur|Valid but overflow might occur|Valid but overflow might occur|  
-|**BigText variable**|Valid but overflow might occur|Valid but overflow might occur|Valid but overflow might occur|  
+||**Text expression**|**Code expression**|
+|------|-------------|-------------------|
+|**Text variable**|Valid but overflow might occur|Valid but overflow might occur|  
+|**Code variable**|Valid but overflow might occur|Valid but overflow might occur|
 
 > [!NOTE]  
-> You can assign the `BigText` variable with the `BigText` methods. For more information, see [BigText Data Type](methods-auto/bigtext/bigtext-data-type.md).
+> You can assign a `BigText` variable using the `BigText` methods. For more information, see [BigText Data Type](methods-auto/bigtext/bigtext-data-type.md).
 
 ## See also
 
