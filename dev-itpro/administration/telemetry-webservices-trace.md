@@ -59,7 +59,7 @@ For a full KQL example of all dimensions in web services telemetry, see [Sample 
 |httpHeaders|Introduced in version 16.3. Specifies the http headers set in the request. In version 17.3, a truncated version of the Authorization header was introduced to enable querying for the use of basic or token authorization. For more information, see [HTTP headers](#http-headers). |
 |httpMethod|Introduced in version 16.3. Specifies the HTTP method used in the request. Values include: POST, GET, PUT, PATCH, or DELETE. |
 |queryFilter|Specifies the OData/API filter used in the request.|
-|httpStatusCode |Introduced in version 16.3. Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. For more information, see [Analyze HTTP status codes for web service calls](#analyze-http-status-codes-for-web-service-calls)|
+|httpStatusCode |Introduced in version 16.3. Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. For more information, see [HTTP status codes](#http-status-codes)|
 |requestQueueTime | Specifies the amount of time the request spent in the request queue before it was started by the server.<sup>[\[3\]](#3)</sup> <br /><br />The time has the format hh:mm:ss.sssssss. | 
 |serverExecutionTime|Specifies the amount of time it took the server to complete the request\*\*. The time has the format hh:mm:ss.sssssss. Time spent in the request queue isn't included.|
 |sqlExecutes|Specifies the number of SQL statements that the request executed.<sup>[\[1\]](#1)</sup> <sup>[\[2\]](#2)</sup>|
@@ -224,6 +224,8 @@ For more guidelines on web service call stability, see [Troubleshoot web service
 The custom dimension _httpStatusCode_ is key to understanding unsuccessful web service calls. Any call with an HTTP status code in the 4xx range should be investigated because these calls are likely failing due to a misconfiguration on the web service client (the caller).
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises are configured with various limits on web service requests. For example, there's a request timeout and a maximum connections limit. For online, you can't change these limits, but it's helpful to know what the limits are. See [Current API Limits](/dynamics-nav/api-reference/v1.0/dynamics-current-limits). For on-premises, you change the limits on the Business Central Server instance. See [Configuring Business Central Server](configure-server-instance.md). Web service calls that exceed the timeout limit result in a **408 - Request Timeout**. These calls are recorded in Application Insights with a totalTime that is equal to the timeout threshold.
+
+For more guidelines on HTTP status codes, see [HTTP status codes](#http-status-codes).
 
 
 ### The custom dimension failureReason
