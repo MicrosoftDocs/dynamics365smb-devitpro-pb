@@ -20,7 +20,9 @@ The articles in this section describe the key concepts and techniques for using 
   
 |To|See|  
 |--------|---------|  
+|Learn about ways to improve the performance of API calls | [API client performance](odata-client-performance.md) |  
 |Troubleshoot failed API calls | [Troubleshooting API calls](../api-reference/v2.0/dynamics-error-codes.md) |  
+| Learn about best practices when working with APIs| [Tips for working with APIs](../developer/devenv-connect-apps-tips.md) <br>[Using filters with API calls](../developer/devenv-connect-apps-filtering.md) |  
 |Explore the built-in API for reading Business Central data | [Business Central API (v2.0)](../api-reference/v2.0/index.md) |  
 |Transition from API v1.0 to API v2.0 when reading Business Central data | [Transitioning from API v1.0 to API v2.0](../api-reference/v2.0/transition-to-api-v2.0.md) |  
 |Use APIs to automate tasks on an environment | [Administration API](../administration/itpro-introduction-to-automation-apis.md) |
@@ -34,6 +36,7 @@ The articles in this section describe the key concepts and techniques for using 
 ## See Also
 
 **Using APIs**
+
 [API client performance](odata-client-performance.md)
 [Troubleshooting API calls](dynamics-error-codes.md)
 [Tips for working with APIs](../developer/devenv-connect-apps-tips.md)
@@ -41,6 +44,7 @@ The articles in this section describe the key concepts and techniques for using 
 [Environment list API](api-get-environments.md)
 
 **Built-in APIs**
+
 [Business Central API (v2.0)](../api-reference/v2.0/index.md)  
 [Business Central API (v1.0)](../api-reference/v1.0/index.md)  
 [Transitioning from API v1.0 to API v2.0](../api-reference/v2.0/transition-to-api-v2.0.md)
@@ -49,6 +53,7 @@ The articles in this section describe the key concepts and techniques for using 
 [Cloud Migration API](../administration/cloudmigrationapi/cloud-migration-api-overview.md)  
 
 **Developing custom APIs**
+
 [API Developer Overview](../developer/devenv-api.md)  
 [API Page Type](../developer/devenv-api-pagetype.md)  
 [API Query Type](../developer/devenv-api-querytype.md)  
