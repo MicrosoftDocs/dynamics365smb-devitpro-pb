@@ -61,13 +61,13 @@ You have now set up the Microsoft Entra ID based authentication. Next, you can g
 
 [!INCLUDE[webservice_key_deprecated](../includes/web-service-key-deprecated.md)]
 
-If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the Microsoft Entra ID based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use Microsoft Entra ID/Oauth v2 authentication, see the section [Setting up Microsoft Entra ID based authentication](#setting-up-microsoft-entra-id-based-authentication).
+If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the Microsoft Entra ID based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use Microsoft Entra ID/Oauth v2 authentication, see the section [Setting up Microsoft Entra ID based authentication](#set-up-microsoft-entra-id-based-authentication).
 
 1. To set up basic authentication, log into your tenant, and in the **Search** field, enter **Users** and then select the relevant link.
 2. Select the user to add access for, and on the **User Card** page, in the **Web Service Access Key** field, generate a key.  
 3. Copy the generated key and use it as the password for the username. 
 
-Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#exploring-apis-with-postman-and-basic-authentication) section, we use Postman.
+Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#explore-apis-with-postman-and-basic-authentication) section, we use Postman.
 
 
 ## Explore REST APIs with Postman and Microsoft Entra authentication
