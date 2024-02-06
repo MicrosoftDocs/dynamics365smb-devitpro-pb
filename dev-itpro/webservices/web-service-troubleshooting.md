@@ -4,7 +4,6 @@ description: Learn about how to troubleshoot Business Central web service errors
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-
 ms.topic: conceptual
 ms.author: kepontop
 ms.date: 01/10/2024
@@ -65,9 +64,9 @@ The environment for a web service endpoint can change how it works. If you see a
 
 ## See also
 
-[Handling UI Interaction in web service endpoints](handling-ui-interaction-when-working-with-web-Services.md)   
+[Handling UI Interaction in web service endpoints](handling-ui-interaction-when-working-with-web-Services.md)  
 [Web Services Best Practices](Web-Services-Best-Practices.md)  
-[Web service telemetry](web-service-telemetry.md)   
-[Troubleshooting OData/API calls](dynamics-error-codes.md)   
-[Debugging web services](../developer/devenv-debugging.md#debugging-web-services)    
+[Web service telemetry](web-service-telemetry.md)  
+[Troubleshooting OData/API calls](dynamics-error-codes.md)  
+[Debugging web services](../developer/devenv-debugging.md#debugging-web-services)  
 [Web Services Overview](web-services.md)  
