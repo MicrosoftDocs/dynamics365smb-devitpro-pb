@@ -15,7 +15,7 @@ ms.collection: get-started
 
 A Connect app establishes a point-to-point connection between [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and a third party solution or service and is typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. In the following section, you can read about how you get started exploring the available APIs for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 
-To explore and develop against APIs in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you must first sign up for a trial tenant, and then you have to connect and authenticate. To do that, follow the steps below.
+To explore and develop against REST APIs in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you must first sign up for a trial tenant, and then you have to connect and authenticate. To do that, follow the steps below.
 
 1. Sign up for [Dynamics 365 Business Central](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1).  
 When you have your tenant, you can sign into the UI to play with the product, and [explore the APIs](/dynamics-nav/api-reference/v2.0)
@@ -33,15 +33,6 @@ In the following sections you can read more about setting up the two types of au
 
 APIs can also be explored through the [OpenAPI specification for Business Central](/dynamics-nav/api-reference/v1.0/dynamics-open-api).
 
-## Set up basic authentication
-
-If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the Microsoft Entra ID based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use Microsoft Entra ID/Oauth v2 authentication, see the section [Setting up Microsoft Entra ID based authentication](#setting-up-microsoft-entra-id-based-authentication).
-
-1. To set up basic authentication, log into your tenant, and in the **Search** field, enter **Users** and then select the relevant link.
-2. Select the user to add access for, and on the **User Card** page, in the **Web Service Access Key** field, generate a key.  
-3. Copy the generated key and use it as the password for the username. 
-
-Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#exploring-apis-with-postman-and-basic-authentication) section, we use Postman.
 
 ## Set up Microsoft Entra ID based authentication
 
@@ -65,22 +56,21 @@ Sign in to the [Azure portal](https://portal.azure.com) to register [!INCLUDE[d3
 
 You have now set up the Microsoft Entra ID based authentication. Next, you can go exploring the APIs. Learn more in the [Exploring the APIs with Postman and Microsoft Entra authentication](#exploring-apis-with-postman-and-microsoft-entra-authentication) section.
 
-## Explore APIs with Postman and basic authentication
 
-In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with basic authentication. 
+## Set up basic authentication (only for on-premises)
 
-1. First, in Postman, set up a `GET` call to the base API URL.  
-    - When you call the base API URL, you get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation.
+[!INCLUDE[webservice_key_deprecated](../includes/web-service-key-deprecated.md)]
 
-    - Since we're using basic authentication, we need to include the user's domain in the URL, for example, call `GET https://api.businesscentral.dynamics.com/v2.0/<your tenant domain>/<environment name>/api/v2.0`.
-        > [!NOTE]  
-        > The parameter `<your tenant domain>` is your default Microsoft Entra ID GUID.
-    
-2. On the **Authorization** tab in Postman, select **Basic Auth** in the **Type** and provide the Username and **Web Service Access Key** from above as password. 
+If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the Microsoft Entra ID based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use Microsoft Entra ID/Oauth v2 authentication, see the section [Setting up Microsoft Entra ID based authentication](#setting-up-microsoft-entra-id-based-authentication).
 
-3. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
+1. To set up basic authentication, log into your tenant, and in the **Search** field, enter **Users** and then select the relevant link.
+2. Select the user to add access for, and on the **User Card** page, in the **Web Service Access Key** field, generate a key.  
+3. Copy the generated key and use it as the password for the username. 
 
-## Explore APIs with Postman and Microsoft Entra authentication
+Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#exploring-apis-with-postman-and-basic-authentication) section, we use Postman.
+
+
+## Explore REST APIs with Postman and Microsoft Entra authentication
 
 In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with Microsoft Entra authentication.
 
@@ -107,6 +97,23 @@ An Authorization request header is now added containing the Bearer token.
    > * Callback URL: https://localhost 
    > * Auth URL: https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.businesscentral.dynamics.com 
    > * Client ID: 060af3ac-70c3-4c14-92bb-8a88230f3f38
+
+
+## Explore APIs with Postman and basic authentication (only for on-premises)
+
+In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with basic authentication. 
+
+1. First, in Postman, set up a `GET` call to the base API URL.  
+    - When you call the base API URL, you get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation.
+
+    - Since we're using basic authentication, we need to include the user's domain in the URL, for example, call `GET https://api.businesscentral.dynamics.com/v2.0/<your tenant domain>/<environment name>/api/v2.0`.
+        > [!NOTE]  
+        > The parameter `<your tenant domain>` is your default Microsoft Entra ID GUID.
+    
+2. On the **Authorization** tab in Postman, select **Basic Auth** in the **Type** and provide the Username and **Web Service Access Key** from above as password. 
+
+3. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
+
 
 ## Call an API
 
