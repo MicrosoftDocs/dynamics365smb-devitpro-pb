@@ -110,22 +110,19 @@ For more information, see [Get started with the Shopify connector](/dynamics365/
 
 ## Integrating to external systems from AL code: calling external services
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with external systems by using the *HttpClient* data type in AL code. 
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with external systems by using the *HttpClient* data type in AL code.
 
-[![Shows how AL apps/extensions can call external web services from Business Central](media/httpclient.svg)](media/httpclient.svg#lightbox)
+:::image type="content" source="media/httpclient.svg" alt-text="Shows how AL apps/extensions can call external web services from Business Central" lightbox="media/httpclient.svg":::
 
 For more information, see [Integrating to external services with the HttpClient data type](../developer/devenv-httpclient.md).
-
 
 ## Integrating to external systems from AL code: Azure services
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Functions or Azure Key Vault. 
 
-[![Shows how AL apps/extensions can call Azure services from Business Central](media/connect-to-azure-services.svg)](media/connect-to-azure-services.svg#lightbox)
-
+:::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
 For more information, see [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function) and [Connecting to Azure Key Vault](../developer/devenv-app-key-vault-overview.md).
-
 
 ## Integrating to external systems from AL code: copilot
 
