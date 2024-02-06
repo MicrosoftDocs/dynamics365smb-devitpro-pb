@@ -114,17 +114,20 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 
 For more information, see [Integrating to external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
-## Integrating to external systems from AL code: copilot
-
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure Open AI Service to include copilot and generative AI experiences. 
-
-For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
 
 ## Integrating to external systems from AL code: Azure services
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Functions or Azure Key Vault. 
 
 For more information, see [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function) and [Connecting to Azure Key Vault](../developer/devenv-app-key-vault-overview.md).
+
+
+## Integrating to external systems from AL code: copilot
+
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure Open AI Service to include copilot and generative AI experiences. 
+
+For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
+
 
 ## Integrating to external systems from AL code: Microsoft Teams
 
