@@ -3,10 +3,9 @@ title: Web Service Request Trace
 description: Learn about the web service request telemetry in Business Central  
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 06/19/2023
-ms.author: jswymer
+ms.date: 02/02/2024
+ms.author: kepontop
 ms.reviewer: jswymer
-
 ms.custom: bap-template
 ---
 
@@ -39,7 +38,7 @@ For a full KQL example of all dimensions in web services telemetry, see [Sample 
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|alObjectId|Specifies the ID of the AL object that was run by request.<sup>[\[1\]](#1)</sup>|
+|alObjectId|Specifies the ID of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
 |alObjectName|Specifies the name of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
 |alObjectType|Specifies the type of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
 |category|Specifies the service type. Values include: **API**, **ODataV4**, **ODataV3**, and **SOAP**.|
@@ -75,13 +74,12 @@ For a full KQL example of all dimensions in web services telemetry, see [Sample 
  
 <sup>4</sup><a name="4"></a>This HTTP status code was introduced in Business Central 2023 release wave 1, version 22.2.
 
-
 ## HTTP status codes
 
 [!INCLUDE[httpStatusCodes](../includes/include-http-status-error-codes.md)]
 
-
 ## HTTP headers
+
 For privacy and security reasons, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] maintains a list of HTTP headers that are allowed to be emitted to telemetry. 
 
 The following HTTP headers are emitted to telemetry (if set in the request):
@@ -174,7 +172,6 @@ traces
 
 For a full KQL example of all dimensions in web services telemetry, see [Sample KQL code](#sample-kql-code).
 
-
 ## Analyze web service call performance using telemetry
 
 As a developer, you use the data to learn about conditions that you can change to improve performance. The following table provides some examples:
@@ -187,7 +184,6 @@ As a developer, you use the data to learn about conditions that you can change t
 |High number of requests to endpoints that include Power BI |This condition may indicate excessive Power BI integration.|
 
 For more performance guidelines, see [Web service performance](../webservices/web-service-performance.md)  
-
 
 This KQL code illustrates how you can find the performance characteristics of different endpoints. 
 
@@ -209,15 +205,13 @@ traces
 
 For a full KQL example of all dimensions in web services telemetry, see [Sample KQL code](#sample-kql-code).
 
-
 ## Analyze web service call stability using telemetry
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry on web service calls have two important dimensions to troubleshoot failed web service calls: 
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry on web service calls have two important dimensions to troubleshoot failed web service calls:
 - The custom dimension httpStatusCode
 - The custom dimension failureReason
 
 For more guidelines on web service call stability, see [Troubleshoot web service errors](../webservices/web-service-troubleshooting.md)  
-
 
 ### The custom dimension httpStatusCode
 
@@ -227,13 +221,11 @@ The custom dimension _httpStatusCode_ is key to understanding unsuccessful web s
 
 For more guidelines on HTTP status codes, see [HTTP status codes](#http-status-codes).
 
-
 ### The custom dimension failureReason
 
 The custom dimension _failureReason_ is used to troubleshoot further, mostly error conditions happening in the AL code behind the web service endpoint. 
 
 For more information on error codes for the various exceptions that are logged in the custom dimension _failureReason_, please see [Troubleshooting OData/API calls](../api-reference/v2.0/dynamics-error-codes.md).
-
 
 ### Sample KQL code for analyzing failures in web service calls
 
@@ -253,10 +245,9 @@ traces
 
 For a full KQL example of all dimensions in web services telemetry, see [Sample KQL code](#sample-kql-code).
 
-
 ## Sample KQL code
 
-This KQL code unfolds all information from the custom dimensions in your web service call telemetry. Use the code sample as a starting point for you analysis and comment out sections for details that you do not need. 
+This KQL code unfolds all information from the custom dimensions in your web service call telemetry. Use the code sample as a starting point for you analysis and comment out sections for details that you don'tt need.
 
 ```kql
 // Incoming Web Service Requests
@@ -265,7 +256,7 @@ traces
 | where customDimensions has "RT0008"
 | where customDimensions.eventId == "RT0008"
 // use this line and comment out the two lines on RT0008 above if you have data prior to version 16.1 
-// | where operation_Name == "Web Services Call" // do note that in a later version of the schema, this field will not be used 
+// | where operation_Name == "Web Services Call" // in a later version of the schema, this field will not be used 
 //      or customDimensions.eventId == "RT0008" // starting from version 16.1, the eventId is used to identity signal types
 | project timestamp
 // in which environment did it happen
