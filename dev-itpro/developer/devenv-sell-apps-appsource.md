@@ -40,7 +40,7 @@ The following steps outline the process of enabling transactability for your app
 - When you have defined the plans, you can map these plans to functionality in your app. You do this by creating entitlements in your app, which map the license to object entitlements. For more information, see [Mapping plans to functionality in your app](devenv-sell-apps-appsource.md#mapping-plans-to-functionality-in-your-app). 
 - Having opted into transactability, defined plans, and mapped these plans to functionality in your app by using entitlements, you can now publish your app. Your app goes through the AppSource validation process, and once it's published, users can purchase your app directly in AppSource.
 
-![<!--alt text start -->Sample transact app with plans in AppSource<!--alt text end -->](media/converttemperatureappsource-small.png "Sample transact app in AppSource")
+![<!--alt text start -->Sample transact app in AppSource<!--alt text end -->](media/converttemperatureappsource-small.png "Sample transact app in AppSource")
 
 - When customers buy your app, they get a license for the plan, and they can go to the Microsoft 365 admin center, and then choose **Licenses**, and then they can see the license for the app, which they can assign to users. For more information, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true).
 
