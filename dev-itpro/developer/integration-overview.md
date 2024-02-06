@@ -116,7 +116,6 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 
 For more information, see [Integrating to external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
-
 ## Integrating to external systems from AL code: Azure services
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Functions or Azure Key Vault. 
