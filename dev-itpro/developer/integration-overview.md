@@ -112,6 +112,8 @@ For more information, see [Get started with the Shopify connector](/dynamics365/
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with external systems by using the *HttpClient* data type in AL code.
 
+:::image type="content" source="media/httpclient.svg" alt-text="Shows how AL apps/extensions can call external web services from Business Central" lightbox="media/httpclient.svg":::  
+
 For more information, see [Integrating to external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
 ## Integrating to external systems from AL code: Azure services
