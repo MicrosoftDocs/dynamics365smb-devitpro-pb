@@ -42,7 +42,7 @@ The following steps outline the process of enabling transactability for your app
 
 ![<!--alt text start -->Sample transact app with plans in AppSource<!--alt text end -->](media/converttemperatureappsource-small.png "Sample transact app with plans in AppSource")
 
-- When customers buy your app, they get a license for the plan, and they can go to the Microsoft 365 admin center, and then choose **Licenses**, and then they can see the license for the app, which they can assign to users. For more information, see [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+- When customers buy your app, they get a license for the plan, and they can go to the Microsoft 365 admin center, and then choose **Licenses**, and then they can see the license for the app, which they can assign to users. For more information, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
 ![<!--alt text start -->Once app plans have been purchased, install and assign licenses in Microsoft 365 admin center<!--alt text end -->](media/manage-licenses-small.png "Once app plans have been purchased, install and assign licenses in Microsoft 365 admin center")
 
@@ -66,7 +66,7 @@ When the app has been updated with entitlements, it must be published to AppSour
 
 ## Preview of your app
 
-The publisher of an AppSource app may run a preview for a future version of an already public app, or new app. Preview versions can be installed using a URL including a `PreviewKey` parameter provided by the app publisher, but only in sandbox environments. For more information, see [](../administration/tenant-admin-center-manage-apps.md#preview-versions-of-appsource-apps).
+The publisher of an AppSource app may run a preview for a future version of an already public app, or new app. Preview versions can be installed using a URL including a `PreviewKey` parameter provided by the app publisher, but only in sandbox environments. For more information, see [Preview versions of AppSource apps](../administration/tenant-admin-center-manage-apps.md#preview-versions-of-appsource-apps).
 
 ## Get insights into your app
 
