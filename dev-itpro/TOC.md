@@ -69,6 +69,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 23.4](whatsnew/whatsnew-update-23-4.md)
 ### [Update 23.3](whatsnew/whatsnew-update-23-3.md)
 ### [Update 23.2](whatsnew/whatsnew-update-23-2.md)
 ### [Update 23.1](whatsnew/whatsnew-update-23-1.md)
@@ -175,6 +176,7 @@
 #### [Environments](administration/administration-center-api_environments.md)
 #### [Environment database export](administration/administration-center-api_environment_database_export.md)
 #### [Environment outage reporting](administration/administration-center-api_environment_outage_reporting.md)
+#### [Transfer environments](administration/administration-center-api_environmenttransfer.md)
 #### [Environment settings](administration/administration-center-api_environment_settings.md)
 #### [Notifications](administration/administration-center-api_notifications.md)
 #### [Reschedule updates](administration/administration-center-api_reschedule_updates.md)
@@ -625,7 +627,7 @@
 ##### [Structuring namespaces in AL](developer/devenv-namespaces-structure.md)
 
 ### Error handling
-#### [Failure modeling and robust coding practices](developer/devenv-robust-coding-practices.md) 
+#### [Failure modelling and robust coding practices](developer/devenv-robust-coding-practices.md) 
 #### [Error handling](developer/devenv-al-error-handling.md)
 #### [Understanding the error dialog](developer/devenv-error-dialog.md)
 #### [User experience guidelines for errors](developer/devenv-error-handling-guidelines.md)
@@ -1047,6 +1049,11 @@
 #### [Subscribing to events in a .NET Framework type](developer/devenv-dotnet-subscribe-to-events.md)
 #### [Serializing .NET Framework types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 
+<!-- Data analytics and reporting -->
+## Data analytics and reporting
+### [Analyzing, pivoting, and sharing data in Business Central](developer/devenv-reporting-options-overview.md)
+<!-- end Data analytics and reporting -->
+
 ## Extensibility
 ### [Extensibility overview](developer/devenv-extensibility-overview.md)
 ### Extending AL objects
@@ -1098,6 +1105,7 @@
 #### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
 
 <!-- end Testing the application -->
+
 <!-- Rules and Guidelines -->
 ## Rules, guidelines, and best practices
 ### [Overview](compliance/apptest-overview.md)
@@ -1281,6 +1289,7 @@
 <!-- end performance -->
 <!-- integration-->
 # Integration
+## [Integration overview](developer/integration-overview.md)
 <!-- web service -->
 ## Web services
 ### [Web services overview](webservices/web-services.md)
@@ -1408,10 +1417,11 @@
 ### [API Developer Overview](developer/devenv-api.md)
 ### [Developing a custom API](developer/devenv-develop-custom-api.md)
 ### [Service-to-Service authentication](administration/automation-apis-using-s2s-authentication.md)
-<!-- CDS -->
-## Integrating with external systems
-### [Data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
+
+## Integrating with external systems using events
+### [Using webhooks to track data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
 ### [Business events (preview)](developer/business-events-overview.md)
+
 ## Integrating AI using developer tools for copilot
 ### [Overview](developer/ai-integration-landing-page.yml)
 ### [What are developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
@@ -1422,7 +1432,10 @@
 #### [Introduction](developer/ai-build-experience-overview.md)
 #### [Build the copilot capability in AL](developer/ai-build-capability-in-al.md)
 #### [Build copilot user experience](developer/ai-build-experience.md)
+
+<!-- CDS -->
 ## Integrating with Microsoft Dataverse
+### [Overview](developer/dataverse-integration-overview.md)
 ### Data synchronization
 #### [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)
 #### [Custom synchronization with Dataverse](administration/administration-custom-cds-integration.md)
@@ -1444,6 +1457,7 @@
 ###### [Update subscriptions](api-dataverse/api/dynamics_subscriptions_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end CDS -->
+
 <!-- Microsoft Power Automate -->
 ### Data virtualization
 #### [Integrate with Microsoft Dataverse via virtual tables](powerplatform/powerplat-overview.md)
@@ -1451,18 +1465,22 @@
 #### [Application lifecycle management for solutions that use virtual tables](powerplatform/powerplat-app-lifecycle-management.md)
 #### [Business Central and Dataverse admin reference for virtual tables](powerplatform/powerplat-admin-reference.md)
 #### [FAQ for virtual tables](powerplatform/powerplat-faq.md)
+
 ## Integrating with Microsoft Power Apps
 ### [Overview](powerplatform/power-apps-overview.md)
 ### [Application lifecycle management](powerplatform/power-apps-alm.md)
 ### [Sample apps](powerplatform/power-apps-samples.md)
 ### [Best practices](powerplatform/power-apps-best-practices.md)
+
 ## Integrating with Microsoft Power Automate
 ### [Overview](powerplatform/power-automate-overview.md)
 ### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
 ### [Create automated flows](powerplatform/automate-workflows.md)
 ### [Create instant flows](powerplatform/instant-flows.md)
 ### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
+
 ## [Integrating with Microsoft Power Pages (preview)](developer/power-pages-on-virtual-tables-overview.md)
+
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
 ### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
@@ -1472,14 +1490,17 @@
 ### Report creator
 #### [Get started: Build Power BI reports](/dynamics365/business-central/across-how-use-financials-data-source-powerbi)
 #### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
+
 ### [Extract data from Business Central](developer/devenv-extract-data.md)
 ### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 ### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
+
 <!-- Microsoft Power Platform -->
 <!-- end Microsoft Power Platform -->
-## Integrating with other Dynamics 365 applications
-### [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
+
+## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
+
 <!-- Microsoft Teams -->
 ## Integrating with Microsoft Teams
 ### [Overview](developer/devenv-develop-for-teams.md)

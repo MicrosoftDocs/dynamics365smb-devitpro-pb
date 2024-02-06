@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, copy
-ms.date: 11/29/2021
+ms.date: 01/19/2024
 ms.author: jswymer
 ---
 
@@ -26,6 +26,9 @@ You can create an environment that is a copy of an existing environment, such as
 5. Choose the **Create** action.
 
 When the process starts, you can go to the list of your environments and see the status of the new environment. At first, you'll see the new environment with the state **Preparing**, and then **Active** once the new environment is fully up and running. Further status details of the copy operation can be found on the **Operations** page. The original environment that the new environment is based on remains active.
+
+> [!NOTE]
+> Sandbox environments that have Preview versions of AppSource apps installed can't be copied to a Production environment. Update installed Preview apps to Public versions or uninstall Preview apps before copying a Sandbox environment to a Production environment.
 
 ## Environment copies
 
