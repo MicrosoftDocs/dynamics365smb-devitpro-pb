@@ -1,33 +1,34 @@
 ---
 title: Troubleshooting REST API/OData calls
 description: Learn about how to troubleshoot Business Central web service errors of types REST API or OData.
-documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.topic: article
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 02/06/2024
 ms.author: solsen
 ---
 
 # Troubleshooting REST API/OData calls
 
-When troubleshooting failed REST API/OData calls, you have a number of tools/techniques available:
-- telemetry 
+When troubleshooting failed REST API/OData calls, you have many tools/techniques available to you:
+
+- Telemetry 
 - HTTP status codes 
 - OData error codes 
-- the AL debugger 
+- AL debugger 
 
 ## Troubleshoot failed REST API/OData calls with telemetry
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] telemetry on REST API/OData web service calls have two important dimensions to troubleshoot failed web service calls: *httpStatusCode* and *failureReason*. The *httpStatusCode* dimension stores the HTTP return code provided by the [!INCLUDE[prod_short](../includes/prod_short.md)] server. The *failureReason* dimension stores the exception types described above. These dimensions are not available in telemetry for SOAP calls.
+[!INCLUDE [prod_short](../includes/prod_short.md)] telemetry on REST API/OData web service calls have two important dimensions to troubleshoot failed web service calls: *httpStatusCode* and *failureReason*. The *httpStatusCode* dimension stores the HTTP return code provided by the [!INCLUDE[prod_short](../includes/prod_short.md)] server. The *failureReason* dimension stores the exception types described earlier. These dimensions aren't available in telemetry for SOAP calls.
 
 > [!TIP]
-> The custom dimension *category* hold information about the type of endpoint (REST API, OData, or SOAP) being called. 
+> The custom dimension *category* holds information about the type of endpoint (REST API, OData, or SOAP) being called. 
 
 For more information about web services telemetry (including KQL code samples), see [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md).
 
 
 ## Troubleshoot failed REST API/OData calls with HTTP status codes
+
 When you call a web service endpoint, either a [!INCLUDE[prod_short](../includes/prod_short.md)] REST API or an OData-enabled page/query/codeunit, you get an HTTP status code as part of the response. All HTTP status codes that start with 4 (sometimes also written 4xx) are classified as client errors, and it's your responsibility to react on these errors and fix them in your code. 
 
 [!INCLUDE[on-prem-ws-off-405-note](../includes/include-on-prem-ws-off-405-note.md)]
@@ -37,18 +38,18 @@ For more information, see [Troubleshooting web service errors with HTTP status c
 
 ## Error messages and error codes for REST API/OData failures
 
-If a call to a REST API or OData endpoint fails, the [!INCLUDE[prod_short](../includes/prod_short.md)] server will return an error message and an error code in the response. Error codes can be divided into the following categories and described as follows:
+If a call to a REST API or OData endpoint fails, the [!INCLUDE[prod_short](../includes/prod_short.md)] server returns an error message and an error code in the response. Error codes can be divided into the following categories and described as follows:
 
-|If you see an error code like this...|It is because...| Do this to resolve the issue...|
+|If you see an error code like this...|It is because...| Do the following to resolve the issue...|
 |--------|-----------|----------|
-|BadRequest_*|Will typically be an error in the forming of the request or an error accessing the service.|Resolve the bug in the forming of the request. Use the information provided by the AL runtime exception to learn more about the nature of the error.|
+|BadRequest_*|Is typically an error in the forming of the request or an error accessing the service.|Resolve the bug in the forming of the request. Use the information provided by the AL runtime exception to learn more about the nature of the error.|
 |Authentication_*|An error authenticating to the service.|Attempt to use different credentials.|
-|Authorization_*|The authenticated identity does not have the correct permissions.|Attempt operation using different credentials.|
-|Internal_*|Typically this is an internal error in the application on the server or data integrity issue. For example, the [!INCLUDE[prod_short](../includes/prod_short.md)] server cannot communicate with the SQL Server.|Attempt the operation again. Resolve data issues. Use the information provided by the AL runtime exception to learn more about the nature of the error.|
+|Authorization_*|The authenticated identity doesn't have the correct permissions.|Attempt operation using different credentials.|
+|Internal_*|Typically the error is an internal error in the application on the server or data integrity issue. For example, the [!INCLUDE[prod_short](../includes/prod_short.md)] server can't communicate with the SQL Server.|Attempt the operation again. Resolve data issues. Use the information provided by the AL runtime exception to learn more about the nature of the error.|
 |Application_*|Typically an application logic error.|Request is made again with updated data. Use the information provided by the AL runtime exception to learn more about the nature of the error.|
 
 
-The following table explains how the OData error codes/messages translate to exceptions thrown by the AL runtime. Note that the same OData error code appears multiple times in the table, each entry with a different AL runtime exception type. The OData error code tells you the type of error as seen from the OData layer, whereas the exception type tells you more about the root cause of the error as seen from the AL runtime.
+The following table explains how the OData error codes/messages translate to exceptions thrown by the AL runtime. The same OData error code appears multiple times in the table, each entry with a different AL runtime exception type. The OData error code tells you the type of error as seen from the OData layer, whereas the exception type tells you more about the root cause of the error as seen from the AL runtime.
 
 |AL runtime exception                   | OData error code | OData error message|
 |---------------------------------------|------------------|--------------------|
@@ -90,17 +91,17 @@ The following table explains how the OData error codes/messages translate to exc
 
 ## Debugging code called from a web service endpoint
 
-This topic is covered in the general troubleshooting guide for web services. For more information, see [Debugging code called from a web service endpoint](web-service-troubleshooting.md#debugging-code-called-from-a-web-service-endpoint).
+This article is covered in the general troubleshooting guide for web services. For more information, see [Debugging code called from a web service endpoint](web-service-troubleshooting.md#debugging-code-called-from-a-web-service-endpoint).
 
 
 ## Which IP addresses or ranges does my environment use?
 
-This topic is covered in the general troubleshooting guide for web services. For more information, see [Which IP addresses or ranges does my environment use?](web-service-troubleshooting.md#which-ip-addresses-or-ranges-does-my-environment-use).
+This article is covered in the general troubleshooting guide for web services. For more information, see [Which IP addresses or ranges does my environment use?](web-service-troubleshooting.md#which-ip-addresses-or-ranges-does-my-environment-use).
 
 
 ## It works in my sandbox but not in production
 
-This topic is covered in the general troubleshooting guide for web services. For more information, see [It works in my sandbox but not in production](web-service-troubleshooting.md#it-works-in-my-sandbox-but-not-in-production).
+This article is covered in the general troubleshooting guide for web services. For more information, see [It works in my sandbox but not in production](web-service-troubleshooting.md#it-works-in-my-sandbox-but-not-in-production).
 
 
 ## See also
