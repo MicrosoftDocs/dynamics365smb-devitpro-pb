@@ -15,6 +15,7 @@ When troubleshooting failed REST API/OData calls, you have many tools/techniques
 - Telemetry 
 - HTTP status codes 
 - OData error codes 
+- Postman
 - AL debugger 
 
 ## Troubleshoot failed REST API/OData calls with telemetry
@@ -94,6 +95,13 @@ The following table explains how the OData error codes/messages translate to exc
 This article is covered in the general troubleshooting guide for web services. For more information, see [Debugging code called from a web service endpoint](web-service-troubleshooting.md#debugging-code-called-from-a-web-service-endpoint).
 
 
+## Explore REST APIs with Postman
+
+Postman is a popular tool that developers can use to explore and test REST APIs. When troubleshooting API issues, consider using Postman to interact with the API endpoint to "debug" the API as seen from the web service client point of view. This technique is particularly useful if you are not allowed to debug the AL code for the API endpoint.
+
+For more information, see [Explore REST APIs with Postman and Microsoft Entra authentication](../developer/devenv-develop-connect-apps.md#explore-rest-apis-with-postman-and-microsoft-entra-authentication).
+
+
 ## Which IP addresses or ranges does my environment use?
 
 This article is covered in the general troubleshooting guide for web services. For more information, see [Which IP addresses or ranges does my environment use?](web-service-troubleshooting.md#which-ip-addresses-or-ranges-does-my-environment-use).
@@ -106,6 +114,7 @@ This article is covered in the general troubleshooting guide for web services. F
 
 ## See also
 
+[Explore REST APIs with Postman](../developer/devenv-develop-connect-apps.md#explore-rest-apis-with-postman-and-microsoft-entra-authentication)
 [Troubleshoot web service errors](web-service-troubleshooting.md)  
 [Web service performance](web-service-performance.md)  
 [Analyzing incoming web services request telemetry](../administration/telemetry-webservices-trace.md)  
