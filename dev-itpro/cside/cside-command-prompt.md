@@ -4,8 +4,6 @@ author: jswymer
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 ---
@@ -470,7 +468,7 @@ When importing objects from a fob file, specifies whether the command will also 
 -   **no** or **0** \(default\) - the search index isn't built.
 -   **yes** or **1** – the search index isn't built.
 
- Building the search index makes sure that pages and reports, which are properly configured for search, can be found by the **Tell Me** feature in the client (for more information, see [Adding Pages and Reports to Tell Me](../developer/devenv-al-menusuite-functionality.md). Building the search index will add time to the import operation.
+ Building the search index makes sure that pages and reports, which are properly configured for search, can be found by the **Tell Me** feature in the client (for more information, see [Add pages and reports to Tell me](../developer/devenv-al-menusuite-functionality.md). Building the search index will add time to the import operation.
  
 Setting `suppressbuildsearchindex=yes` can be useful if you're importing several fob files. In which case, for example, you could use `suppressbuildsearchindex=yes` parameter on all `import` commands except the last one. Or, you can skip the search index from the command, and run it afterward from the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] by selecting **Tools** > **Build Object Search Index**.
   

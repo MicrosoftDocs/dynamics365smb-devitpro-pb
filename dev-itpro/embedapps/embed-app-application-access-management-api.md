@@ -4,7 +4,7 @@ description: Learn about the Application Access Management API.
 author: jswymer
 ms.author: jswymer
 ms.topic: conceptual
-ms.service: dynamics365-business-central
+
 ms.custom: bap-template
 ms.reviewer: jswymer
 ms.search.keywords: application, tenant, management, access, API

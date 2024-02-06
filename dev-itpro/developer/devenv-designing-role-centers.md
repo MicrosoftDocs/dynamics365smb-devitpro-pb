@@ -5,8 +5,6 @@ author: jswymer
 ms.custom: na
 ms.date: 08/11/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ---
@@ -125,7 +123,7 @@ To let the users use their associated Role Center, you might need to adjust sett
 
 Users who work across multiple roles can easily switch Role Centers to shift their focus to different tasks. Users can also personalize their Role Centers by rearranging or hiding content as they like. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user). 
 
-As a developer or administrator, you can use Designer to customize a Role Center the same way that individual users personalize their own workspaces. The difference is that changes you make are applied to all users assigned to the Role Center. For more information, see [Using Designer](devenv-inclient-designer.md).
+As a developer or administrator, you can use Designer to customize a Role Center the same way that individual users personalize their own workspaces. The difference is that changes you make are applied to all users assigned to the Role Center. For more information, see [Use Designer](devenv-inclient-designer.md).
 
 
 ## See Also
@@ -134,6 +132,6 @@ As a developer or administrator, you can use Designer to customize a Role Center
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
-[Adding Pages and Reports to Tell Me](devenv-al-menusuite-functionality.md)  
+[Add pages and reports to Tell me](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md)
+[Use Designer](devenv-inclient-designer.md)

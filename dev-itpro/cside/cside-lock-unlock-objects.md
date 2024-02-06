@@ -3,8 +3,6 @@ title: "Locking and Unlocking Objects"
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 295f6231-82dd-4265-9942-97e7a3a5ee9f
 caps.latest.revision: 10
@@ -42,7 +40,7 @@ You can lock an object in Object Designer so that other developers cannot save d
   
     -   On the **File** menu, choose **Lock**.  
   
-    -   Press Ctrl+Alt+L.  
+    -    Select <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+</kbd>L</kbd>.  
 
 ### To unlock an object  
   
@@ -54,7 +52,7 @@ You can lock an object in Object Designer so that other developers cannot save d
   
     -   On the **File** menu, choose **Unlock**.  
   
-    -   Press Ctrl+Alt+U.  
+    -    Select <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+</kbd>U</kbd>.  
   
 ### To force unlock an object  
   
@@ -87,4 +85,4 @@ You can lock an object in Object Designer so that other developers cannot save d
   
     -   On the **File** menu, choose **Unlock**.  
   
-    -   Press Ctrl+Alt+U.   
+    -    Select <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+</kbd>U</kbd>.   

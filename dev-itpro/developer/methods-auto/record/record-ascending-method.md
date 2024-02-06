@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 07/07/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -61,7 +59,6 @@ codeunit 50111 IsAscending
         Message(Text000, IsAscending);
     end;
 }
-
 ```
   
 ## Example 2
@@ -82,7 +79,6 @@ codeunit 50111 IsAscending
         Message(Text000, IsAscending);
     end;
 }
-
 ```  
 
 ## See Also

@@ -3,8 +3,6 @@ title: "Tools for Monitoring Performance Counters and Events"
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 9093c5f4-a594-4b70-90f3-2be0e1c13abd
 caps.latest.revision: 14

@@ -4,13 +4,12 @@ description: With AL complex types, you can return most types from procedures in
 ms.custom: na
 ms.date: 09/29/2023
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: esbenk
+ms.collection: get-started
 ---
 
-# AL Complex Types
+# AL complex types
 
 [!INCLUDE[2021_releasewave1.md](../includes/2021_releasewave1.md)]
 

@@ -5,8 +5,6 @@ author: kennieNP
 
 ms.custom: na
 ms.reviewer: edupont
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: kepontop
 ms.date: 12/21/2021
@@ -24,6 +22,7 @@ The articles in this section describe the key concepts and techniques for using 
 |--------|---------|  
 |Enable built-in API | [Enabling the API for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav.md)|  
 |Explore the built-in API for reading Business Central data | [Business Central API (v2.0)](../api-reference/v2.0/index.md) |  
+|Transition from API v1.0 to API v2.0 when reading Business Central data | [Transitioning from API v1.0 to API v2.0](../api-reference/v2.0/transition-to-api-v2.0.md) |  
 |Develop a custom API for reading Business Central data | [Developing a Custom API](../developer/devenv-develop-custom-api.md) |
 |Troubleshoot failed API calls | [Troubleshooting API calls](../api-reference/v2.0/dynamics-error-codes.md) |  
 |Use APIs to automate tasks on an environment | [Administration API](../administration/itpro-introduction-to-automation-apis.md) |

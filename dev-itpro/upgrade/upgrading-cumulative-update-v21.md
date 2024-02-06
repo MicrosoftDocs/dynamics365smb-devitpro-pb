@@ -2,10 +2,8 @@
 title: Install a version 21 update
 description: This article describes the tasks required for getting the monthly version 21 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 02/09/2023
+ms.date: 01/04/2024
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -30,7 +28,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - System Application extension
 
-    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When using the Microsoft Base Application, your solution uses the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
+    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When using the Microsoft Base Application, your solution uses the System Application. With a custom Base Application, your solution might or might not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
 
 - Base application extension
 
@@ -530,10 +528,10 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 [!INCLUDE[upgrade-web-server-instances](../developer/includes/upgrade-web-server-instances.md)]
 
-## See Also
+## See also
 
-[Dynamics 365 Business Central On-Premises 2022 Release Wave 1 Updates](../deployment/update-versions-20.md)  
-[Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v20.md)  
+[Dynamics 365 Business Central on-premises 2022 Release Wave 1 Updates](../deployment/update-versions-20.md)  
+[Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
 [Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  

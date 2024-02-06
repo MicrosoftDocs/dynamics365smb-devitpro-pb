@@ -3,14 +3,12 @@ title:  App Key Vault Secret Trace Telemetry | Microsoft Docs
 description: Learn about app key vault secret trace telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 12/29/2023
 ms.author: jswymer
 ---
-# Analyzing App Key Vault Secret Trace Telemetry
+# Analyze an app key vault secret trace telemetry
 
 [!INCLUDE[prod_short](../includes/2020_releasewave2.md)]
 

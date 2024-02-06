@@ -4,8 +4,6 @@ description: The service account is used by Business Central clients to log on t
 ms.custom: na
 ms.date: 10/19/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -55,7 +53,7 @@ You enable log on as a service using the Local Security Policy console on the co
 
 1. To open the Local Security Policy console, do one of the following steps:
 
-    - In the search box on the **Start** screen, type secpol.msc, and then press ENTER.
+    - In the search box on the **Start** screen, type secpol.msc, and then select <kbd>Enter</kbd>.
     - From Server Manger or Control panel, open **Administrative Tools**
 2. Expand Local Policy and select **User Rights Assignment**
 3. Right-click **Log on as a service** and select **Properties**.

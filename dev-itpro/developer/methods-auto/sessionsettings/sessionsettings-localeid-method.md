@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 03/02/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -49,7 +47,7 @@ The locale ID in the SessionSettings object corresponds to the **Locale ID** fie
 ## Example
 This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the LocaleId method to set the locale ID to '1033'. Finally, the RequestSessionUpdate method sends a request to the client to abandon the current client session and start a new session that uses the new locale ID. This example requires a SessionSettings data type variable.
 
-```
+```al
 var
   MySessionSettings : SessionSettings;
 begin

@@ -89,8 +89,7 @@ dotnet
     } 
 
     // Other assemblies containing control add ins 
-}  
-
+}
 ```
 
 Save the file with any name and the extension **.al**, for example **mydotnet.al**. Make a note of the path because you will use it in the next step. 

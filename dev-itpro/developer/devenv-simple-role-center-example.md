@@ -1,17 +1,15 @@
 ---
-title: Simple Role Center Example
+title: Simple Role Center example
 description: "Provides AL code for a simple role center"
 author: blrobl
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: brobledodiaz
 ---
 
-# Simple Role Center Code Example
+# Simple Role Center code example
 
 The AL code in this article creates a simple Role Center customized for users assigned to a new profile. 
 
@@ -147,13 +145,13 @@ profile MyProfile
     RoleCenter = MyRoleCenter;
     Caption = 'My profile';
 }
-
 ```
 
-## See Also
+## See also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
-[Adding Pages and Reports to Tell Me](devenv-al-menusuite-functionality.md)  
+[Add pages and reports to Tell me](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md) 
+[Use Designer](devenv-inclient-designer.md) 

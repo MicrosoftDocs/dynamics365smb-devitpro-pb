@@ -5,15 +5,17 @@ author: andersgMSFT
 ms.author: andersg
 ms.reviewer: jswymer
 ms.topic: overview
-ms.service: dynamics365-business-central
+
 ms.date: 05/17/2023
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 # Business Central and Power Apps
 
 [!INCLUDE[general_preview](../developer/includes/general_preview.md)]
 
-With Power Apps, you have the flexibility to build the perfect solution for your business domain&mdash;one that uses Business Central data and processes and maximizes your productivity. With Power Apps customer UI, AI builder, and augmented-reality (AR)/mixed-reality (MR) technologies, you can take your business to the next level with cutting-edge innovation and customized UI. 
+With Power Apps, you have the flexibility to build the perfect solution for your business domain &mdash; one that uses Business Central data and processes and maximizes your productivity. With Power Apps custom UI, AI builder, and augmented-reality (AR)/mixed-reality (MR) technologies, you can take your business to the next level with cutting-edge innovation and customized UI. 
 
 You can use Power Apps whether you're on the go with the mobile app, collaborating with your team inside Teams, or directly it in the browser through a URL.
 

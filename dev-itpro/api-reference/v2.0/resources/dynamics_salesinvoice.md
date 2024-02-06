@@ -3,9 +3,7 @@ title: salesInvoice resource type
 description: A sales invoice object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -204,9 +202,9 @@ Here is a JSON representation of the salesInvoice resource.
     "email": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-
+> [!NOTE]  
+> The `id` property value in this API resource might be different than the `systemId` of the corresponding record because the `systemId` of the unposted invoices are carried to posted invoices in the API, but not to the record. Use the `https://{businesscentralPrefix}/microsoft/automate/v1.0/companies({id})/postedSalesInvoices({systemId})` route and extract the `apiId` property to map the `systemId` of a posted sales invoice record to the `salesInvoice` API resource.
 
 ## See Also
 [GET salesInvoice](../api/dynamics_salesInvoice_Get.md)  

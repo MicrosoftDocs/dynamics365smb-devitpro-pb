@@ -3,7 +3,6 @@ title: General Information and Considerations When Upgrading to Business Central
 description: This article provides tips and considerations to prepare a solution when you're planning to upgrade to Business Central 2023 release wave 2.
 author: jswymer
 ms.custom: bap-template
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.date: 04/01/2021
 ms.author: jswymer

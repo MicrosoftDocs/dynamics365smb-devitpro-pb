@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 10/25/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -89,5 +87,5 @@ field("Reward ID";"Reward ID")
 [Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text)  
 [Configuring the Help Experience](../../deployment/configure-help.md)  
 [ToolTipML Property](devenv-tooltipml-property.md)  
-[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../devenv-extension-example.md)  
+[Build your first sample extension with extension objects, install code, and upgrade code](../devenv-extension-example.md)  
 [Multilanguage Development](../devenv-work-with-translation-files.md)

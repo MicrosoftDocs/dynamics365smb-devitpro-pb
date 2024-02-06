@@ -1,0 +1,1 @@
+If the default layout of the report is not of type Word,

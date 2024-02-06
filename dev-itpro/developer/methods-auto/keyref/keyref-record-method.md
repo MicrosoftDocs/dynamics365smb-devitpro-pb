@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 07/07/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -40,7 +38,7 @@ The RecordRef of the record that is currently selected referenced by the key. If
   
  The table with ID 18 \(the Customer table\) is open with a reference. The [KeyRef Data Type](../library.md) for the record is retrieved by using the [KeyIndex Method \(RecordRef\)](../library.md). The method retrieves the key that has an index of 1 in the record and stores the value in the varKeyRef variable. The varKeyRef variable is then used to return the [RecordRef Data Type](../library.md).
 
-```  
+```al
 var
     RecRef: RecordRef;
     varKeyRef: KeyRef;
@@ -51,7 +49,6 @@ begin
 end;
 ```  
   
-
 ## See Also
 [KeyRef Data Type](keyref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

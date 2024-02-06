@@ -48,7 +48,6 @@ Here is a JSON representation of the userPermissions.
     "displayName": "Dyn. 365-læseadgang, alle",
     "extensionName": ""
 }
-
 ```
 
 <!-- 

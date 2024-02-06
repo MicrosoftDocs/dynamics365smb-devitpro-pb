@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 03/02/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -28,6 +26,7 @@ Represents the security level of events.
 |Verbose|Identifies a detailed trace event.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

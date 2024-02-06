@@ -5,8 +5,6 @@ author: jswymer
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ---
@@ -33,7 +31,7 @@ Both page types are typically associated with list pages (like the customers or 
 
 In the client, users can personalize card pages by rearranging or hiding content as they like. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user). 
 
-As a developer or administrator, you can use Designer to customize a card and document page the same way that individual users personalize their own work spaces. The difference is that changes you make are applied to all users. For more information, see [Using Designer](devenv-inclient-designer.md). 
+As a developer or administrator, you can use Designer to customize a card and document page the same way that individual users personalize their own work spaces. The difference is that changes you make are applied to all users. For more information, see [Use Designer](devenv-inclient-designer.md). 
 
 ## [Structure](#tab/structure)
 
@@ -122,4 +120,4 @@ Only promoted actions will display on mobile devices, so make sure you promote t
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  

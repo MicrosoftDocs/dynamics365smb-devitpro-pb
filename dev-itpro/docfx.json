@@ -56,7 +56,7 @@
       ],
       "search.audienceType": "admin, developer",
       "breadcrumb_path": "/dynamics365/business-central/dev-itpro/breadcrumb/toc.json",
-      "ms.service": "dynamics365-business-central",
+      "ms.service": "dynamics-365-business-central",
       "recommendations": "true"
     },
     "fileMetadata": {
@@ -76,7 +76,10 @@
         "whatsnew/*.md": "SusanneWindfeldPedersen"
       },
       "ms.service": {
-        "**.*": "dynamics365-business-central"
+        "upgrade/*.md": "dynamics-365-op"
+      },
+      "ms.collection": {
+        "developer/ai-integration-landing-page.yml": "bap-ai-copilot"
       }
     },
     "template": [],

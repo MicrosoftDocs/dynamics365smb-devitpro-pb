@@ -1,11 +1,9 @@
 ---
-title: aTesting the application overview
+title: Testing the application overview
 description: Learn about how to use automated tests in Business Central
 ms.custom: na
 ms.date: 08/10/2022
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 author: jswymer
 ---
@@ -68,7 +66,7 @@ There are two types of test pages:
 
 - TestRequestPage, which represents the request page on a report.
 
-You access the page's fields and properties or a field by using the dot notation. You can open and close test pages, do actions on the test page, and navigate around the test page by using AL methods. For more information, see [Testing Pages](devenv-testing-pages.md).
+You access the page's fields and properties or a field by using the dot notation. You can open and close test pages, do actions on the test page, and navigate around the test page by using AL methods. For more information, see [Test pages](devenv-testing-pages.md).
 
 ## UI handlers
 
@@ -150,7 +148,7 @@ We recommend the following best practices for designing your application tests:
 <!-- TO DO: Add articles for the links below-->
 ## See Also
  <!--[Application Test Automation](Application-Test-Automation.md)   -->
-[Testing Pages](devenv-Testing-Pages.md)  
+[Test pages](devenv-Testing-Pages.md)  
 <!--[Testing with Permission Sets](devenv-testing-with-permission-sets.md) -->  
 [Create Handler Methods](devenv-creating-handler-methods.md)  
 [Test Codeunits and Test Methods](devenv-test-codeunits-and-test-methods.md)  

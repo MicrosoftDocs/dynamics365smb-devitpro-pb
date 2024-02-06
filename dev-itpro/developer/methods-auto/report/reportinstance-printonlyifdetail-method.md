@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 10/12/2022
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -49,7 +47,7 @@ The current settings of the PrintOnlyIfDetail property.
 
  The following example is from the OnAfterGetRecord trigger of a report. If the PrintOnlyIfDetail property is true and if a GLEntryPage record exists, given the current filters, then the PageGroupNo is incremented.
  
-```  
+```al
 var
     GLEntryPage: Record "G/L Entry";
     PageGroupNo: Integer;
