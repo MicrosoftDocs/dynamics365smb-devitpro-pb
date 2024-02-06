@@ -14,21 +14,23 @@ This article is intended to help architects and developers make sound design dec
 
 The article describes integration patterns, integration scenarios, and integration solutions. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
 
-## How to expose web service endpoints
+## Integrations to/from Business Central are done with web services
 
-All integrations to/from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: API, SOAP, and OData. 
+All integrations to/from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: REST API, SOAP, and OData. 
 
-The recommended way to expose a web service for [!INCLUDE[prod_short](../includes/prod_short.md)] is using the API stack. 
+[![Shows the three different types of web services in Business Central](media/webservice-stack.svg)](media/webservice-stack.svg#lightbox)
+
+
+The recommended way to expose a web service for [!INCLUDE[prod_short](../includes/prod_short.md)] is using the REST API stack. 
 
 For more information, see [Web services overview](../webservices/web-services.md).
 
-## How to explore and develop against Business Central APIs
+## How to explore and develop against Business Central REST APIs
 
-When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] from another application, you should use APIs, either the built-in APIs or custom APIs. 
+When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] from another application, you should use REST APIs, either the built-in APIs or custom APIs. 
 
-For more information about built-in APIs, see [REST API overview](../webservices/api-overview.md).
+For more information on how to explore and develop against APIs, best practices, and which built-in APIs exist, see [REST API overview](../webservices/api-overview.md).
 
-For more information on how to explore and develop against APIs, see [Developing Connect apps](../developer/devenv-develop-connect-apps.md).
 
 ## Business Central connector for Power Platform
 
@@ -49,11 +51,6 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microso
 
 For more information, see [Integrating with Microsoft Power Automate overview](../powerplatform/power-automate-overview.md)
 
-## Integrating Business Central with Microsoft Power Pages (preview)
-
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Pages by using virtual tables in Dataverse. With Power Pages, you can allow unlicensed external users to access data stored in [!INCLUDE[prod_short](../includes/prod_short.md)] online.
-
-For more information, see [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md).
 
 ## Integrating Business Central with Microsoft Power BI
 
@@ -90,6 +87,14 @@ There are two ways that a Power BI report, page, or visual can be added to a pag
 [![Shows the four interactions with Business Central](media/four-complementary-interactions.png)](media/four-complementary-interactions.png#lightbox)
 
 For more information, see [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md).
+
+
+## Built-in: Integrating Business Central with Microsoft Power Pages (preview)
+
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Pages by using virtual tables in Dataverse. With Power Pages, you can allow unlicensed external users to access data stored in [!INCLUDE[prod_short](../includes/prod_short.md)] online.
+
+For more information, see [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md).
+
 
 ## Built-in: Integrating Business Central with Dynamics 365 Sales
 
