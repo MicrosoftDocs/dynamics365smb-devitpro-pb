@@ -934,6 +934,14 @@
 #### [API performance](webservices/web-service-performance.md)
 #### [API telemetry](webservices/web-service-telemetry.md)
 
+### Calling external services
+#### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
+#### [Supported cipher suites in HTTPS](developer/devenv-supported-cipher-suites.md)  
+#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
+#### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
+#### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
+#### [AL Language reference (HttpClient datatype)](developer/methods-auto/httpclient/httpclient-data-type.md)
+
 ### Accessing device capabilities
 #### [Implementing camera in AL](developer/devenv-implement-camera-al.md)
 #### [Implementing location in AL](developer/devenv-implement-location-al.md)
@@ -1007,13 +1015,6 @@
 #### [Task scheduler](developer/devenv-task-scheduler.md)
 #### [Job queue](developer/devenv-job-queue.md)
 
-### Calling external services
-#### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
-#### [Supported cipher suites in HTTPS](developer/devenv-supported-cipher-suites.md)  
-#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
-#### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
-#### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
-#### [AL Language reference (HttpClient datatype)](developer/methods-auto/httpclient/httpclient-data-type.md)
 <!--#### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)-->
 
 ### Using Azure Key Vault for app secrets
