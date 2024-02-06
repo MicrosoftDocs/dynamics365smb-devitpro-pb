@@ -33,30 +33,7 @@ The articles in this section describe the key concepts and techniques for using 
 |Enable built-in API (for on-premises) | [Enabling the API for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav.md)|  
 
 
-
 ## See Also
 
-**Using APIs**
-
-[API client performance](odata-client-performance.md)  
-[Troubleshooting API calls](dynamics-error-codes.md)  
-[Tips for working with APIs](../developer/devenv-connect-apps-tips.md)  
-[Using filters with API calls](../developer/devenv-connect-apps-filtering.md)  
-[Enabling the API for Dynamics 365 Business Central (on-premises)](../api-reference/v2.0/enabling-apis-for-dynamics-nav.md)   
-
-**Built-in APIs**
-
-[Environment list API](api-get-environments.md)   
-[Business Central API (v2.0)](../api-reference/v2.0/index.md)  
-[Business Central API (v1.0)](../api-reference/v1.0/index.md)  
-[Transitioning from API v1.0 to API v2.0](../api-reference/v2.0/transition-to-api-v2.0.md)  
-[Administration API](../administration/itpro-introduction-to-automation-apis.md)  
-[Admin Center API](../administration/administration-center-api.md)  
-[Cloud Migration API](../administration/cloudmigrationapi/cloud-migration-api-overview.md)  
-
-**Developing custom APIs**
-
-[API Developer Overview](../developer/devenv-api.md)  
-[API Page Type](../developer/devenv-api-pagetype.md)  
-[API Query Type](../developer/devenv-api-querytype.md)  
-[Walk-through: Developing a Custom API](../developer/devenv-develop-custom-api.md)  
+[Web services overview](web-services.md)   
+[Integration overview](../developer/integration-overview.md)  
