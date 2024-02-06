@@ -131,6 +131,8 @@ For more information, see [Connecting to Azure Functions](https://github.com/mic
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure Open AI Service to include copilot and generative AI experiences. 
 
+![Shows the tasks in the generative-AI development](media/dev-generative-ai-overview.svg)
+
 For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
 
 
