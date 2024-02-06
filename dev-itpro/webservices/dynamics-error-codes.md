@@ -114,6 +114,7 @@ This article is covered in the general troubleshooting guide for web services. F
 
 ## See also
 
+[Explore REST APIs with Postman](../developer/devenv-develop-connect-apps.md#explore-rest-apis-with-postman-and-microsoft-entra-authentication)
 [Troubleshoot web service errors](web-service-troubleshooting.md)  
 [Web service performance](web-service-performance.md)  
 [Analyzing incoming web services request telemetry](../administration/telemetry-webservices-trace.md)  
