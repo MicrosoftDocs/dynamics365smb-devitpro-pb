@@ -108,5 +108,5 @@ This article is covered in the general troubleshooting guide for web services. F
 
 [Troubleshoot web service errors](web-service-troubleshooting.md)  
 [Web service performance](web-service-performance.md)  
-[Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md) 
+[Analyzing incoming web services request telemetry](../administration/telemetry-webservices-trace.md)  
 [Web service telemetry](web-service-telemetry.md)  
