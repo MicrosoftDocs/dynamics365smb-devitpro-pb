@@ -112,7 +112,7 @@ For more information, see [Get started with the Shopify connector](/dynamics365/
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with external systems by using the *HttpClient* data type in AL code.
 
-:::image type="content" source="media/httpclient.svg" alt-text="Shows how AL apps/extensions can call external web services from Business Central":::  
+
 
 For more information, see [Integrating to external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
@@ -132,6 +132,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 
 For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
 
+:::image type="content" source="media/httpclient.svg" alt-text="Shows how AL apps/extensions can call external web services from Business Central" lightbox="media/httpclient.svg":::
 
 ## Integrating to external systems from AL code: Microsoft Teams
 
