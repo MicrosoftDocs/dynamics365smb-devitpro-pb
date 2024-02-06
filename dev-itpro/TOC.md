@@ -1313,9 +1313,10 @@
 ### APIs
 #### [Overview](webservices/api-overview.md)
 #### [API client performance](webservices/odata-client-performance.md)
+#### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
 #### [Tips for working with APIs](developer/devenv-connect-apps-tips.md)
 #### [Using filters with API calls](developer/devenv-connect-apps-filtering.md)
-#### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
+#### [Environment list API](webservices/api-get-environments.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
 #### [Transitioning from API v1.0 to API v2.0](api-reference/v2.0/transition-to-api-v2.0.md)
@@ -1364,7 +1365,6 @@
 #### [Admin Center API](administration/administration-center-api.md)
 #### [Cloud migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
 #### [API Developer Overview](developer/devenv-api.md)
-#### [Getting a list of environments](webservices/api-get-environments.md)
 
 ### Exposing pages as OData/SOAP web service endpoints
 #### [Publishing a web service](webservices/publish-web-service.md)
