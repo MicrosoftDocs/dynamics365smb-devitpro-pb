@@ -120,8 +120,7 @@ For more information, see [Integrating to external services with the HttpClient 
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Functions or Azure Key Vault. 
 
-[![Shows how AL apps/extensions can call Azure services from Business Central](media/connect-to-azure-services.svg)](media/connect-to-azure-services.svg#lightbox)
-
+:::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
 For more information, see [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function) and [Connecting to Azure Key Vault](../developer/devenv-app-key-vault-overview.md).
 
