@@ -140,6 +140,8 @@ For more information, see [Integrating AI using Developer Tools for Copilot](../
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Microsoft Teams. [!INCLUDE [prod_short](../includes/prod_short.md)] offers an app that connects Microsoft Teams to the data in [!INCLUDE [prod_short](../includes/prod_short.md)] so that users can quickly share details across team members and respond faster to inquiries. 
 
+[![Teams integration with Business Central.](media/teams-intro-v3.png)](media/teams-intro-v3.png#lightbox)
+
 For more information, see [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md).
 
 ## See also
