@@ -67,7 +67,7 @@ If you prefer to set up an environment with basic authentication just to explore
 2. Select the user to add access for, and on the **User Card** page, in the **Web Service Access Key** field, generate a key.  
 3. Copy the generated key and use it as the password for the username. 
 
-Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#explore-apis-with-postman-and-basic-authentication) section, we use Postman.
+Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#explore-apis-with-postman-and-basic-authentication-only-for-on-premises) section, we use Postman.
 
 
 ## Explore REST APIs with Postman and Microsoft Entra authentication
