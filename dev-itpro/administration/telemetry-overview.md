@@ -28,7 +28,7 @@ Telemetry can be enabled on two different levels:
 
     With the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and later, telemetry can also be enabled on a per-extension basis. Enabling telemetry is done by setting an [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] connection string in the app's manifest (app.json file). At runtime, certain events related to the app/extension are emitted to the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource. This feature targets publishers of per-tenant extensions or Microsoft AppSource apps. It gives extension publishers insight into usage of their apps/extensions and also allows them to find errors and performance issues before partners and customers report them.
 
-:::image type="content" source="media/telemetry-architecture.svg" alt-text="Shows how Environment-level telemetry and App/extension-level telemetry works in Business Central AL" lightbox="media/telemetry-architecture.svg":::
+:::image type="content" source="../developer/media/telemetry-architecture.svg" alt-text="Shows how Environment-level telemetry and App/extension-level telemetry works in Business Central AL" lightbox="../developer/media/telemetry-architecture.svg":::
 
 
 Both for environment-level and app-level telemetry, it's possible to craft custom telemetry messages directly from AL
