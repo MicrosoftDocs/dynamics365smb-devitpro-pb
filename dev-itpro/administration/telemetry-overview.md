@@ -21,18 +21,15 @@ ms.custom: bac-template
 Telemetry can be enabled on two different levels:
 
 - Environment-level telemetry
-
-    Telemetry can be enabled for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment or on-premises [!INCLUDE[server](../developer/includes/server.md)] instance. When enabled on the environment, telemetry is emitted to a single [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource for gathering data on operations that happen on the environment.
-
 - App/extension-level telemetry  
-
-    With the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and later, telemetry can also be enabled on a per-extension basis. Enabling telemetry is done by setting an [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] connection string in the app's manifest (app.json file). At runtime, certain events related to the app/extension are emitted to the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource. This feature targets publishers of per-tenant extensions or Microsoft AppSource apps. It gives extension publishers insight into usage of their apps/extensions and also allows them to find errors and performance issues before partners and customers report them.
 
 :::image type="content" source="../developer/media/telemetry-architecture.svg" alt-text="Shows how Environment-level telemetry and App/extension-level telemetry works in Business Central AL" lightbox="../developer/media/telemetry-architecture.svg":::
 
+When telemetry is enabled on the environment level, telemetry is emitted to a single [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource for gathering data on operations that happen on the environment. It works both for online environments and for on-premises instances.
 
-Both for environment-level and app-level telemetry, it's possible to craft custom telemetry messages directly from AL
-using the [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md). Learn more about AL at [Programming in AL](../developer/devenv-programming-in-al.md).
+With the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and later, telemetry can also be enabled on a per-extension basis. Enabling telemetry is done by setting an [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] connection string in the app's manifest (app.json file). At runtime, certain events related to the app/extension are emitted to the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource. This feature targets publishers of per-tenant extensions or Microsoft AppSource apps. It gives extension publishers insight into usage of their apps/extensions and also allows them to find errors and performance issues before partners and customers report them.
+
+Both for environment-level and app-level telemetry, it's possible to craft custom telemetry messages directly from AL using the [Feature Telemetry* codeunit](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry) in the System Application or by using the [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md) directly.
 
 ## Available telemetry
 
@@ -93,6 +90,7 @@ We have compiled a list of frequently asked questions (FAQ) on telemetry. See [T
 [Analyze Telemetry with KQL](telemetry-analyze-with-kql.md)  
 [Alert on Telemetry](telemetry-alert.md)  
 [Telemetry FAQ](telemetry-faq.md)   
+[Feature Telemetry* codeunit](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)  
 [Custom telemetry with LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)  
 [Working with Administration Tools](administration.md)  
 [Business Central Administration Center](tenant-admin-center.md)  
