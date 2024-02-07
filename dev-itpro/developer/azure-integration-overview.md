@@ -17,7 +17,7 @@ ms.date: 02/07/2024
 Here are some supported integrations between Business Central and Azure services:
 - [!INCLUDE[azure_key_vault](includes/azure-keyvault-name.md)]
 - [!INCLUDE[azure_functions](includes/azure-functions-name.md)]
-
+- Azure Open AI Service
 
 ## [!INCLUDE[azure_key_vault](includes/azure-keyvault-name.md)]
 
@@ -35,6 +35,11 @@ To make it easy to use [!INCLUDE[azure_functions](includes/azure-functions-name.
 When using the *Azure Function* codeunit from the System Application, you get data about the success or failure of function calls in telemetry. For more information, see [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md).
 
 
+## Azure Open AI Service
+
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure Open AI Service to include copilot and generative AI experiences. For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
+
+
 ## See also
 
 [Using Azure Key Vault with apps/extensions](devenv-app-key-vault-overview.md)  
@@ -42,3 +47,4 @@ When using the *Azure Function* codeunit from the System Application, you get da
 [Using Azure Functions with Dynamics 365 Business Central](/learn/modules/use-azure-functions/)  
 [Azure Function codeunit](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)  
 [Azure Function telemetry](../administration/telemetry-azure-function-integration-trace.md)  
+[Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)   
