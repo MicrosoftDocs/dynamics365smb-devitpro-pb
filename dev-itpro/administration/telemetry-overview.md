@@ -32,7 +32,7 @@ With the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 releas
 Both online environments and on-premises instances can emit telemetry to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)].
 
 > [!TIP]
-> As an AL developer, you can craft custom telemetry messages directly from AL using the [Feature Telemetry* codeunit](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry) in the System Application or by using the [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md) directly.
+> As an AL developer, you can craft custom telemetry messages directly from AL using the [Feature Telemetry codeunit](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry) in the System Application or by using the [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md).
 
 ## Available telemetry
 
