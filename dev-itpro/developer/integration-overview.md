@@ -29,6 +29,8 @@ For more information, see [Web services overview](../webservices/web-services.md
 
 When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] from another application, you should use REST APIs, either the built-in APIs or custom APIs. 
 
+[![Shows how the API stack in Business Central](media/api-stack.svg)](media/api-stack.svg#lightbox)
+
 For more information on how to explore and develop against APIs, best practices, and which built-in APIs exist, see [REST API overview](../webservices/api-overview.md).
 
 
