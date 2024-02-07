@@ -122,7 +122,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 
 :::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
-For more information, see [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function) and [Connecting to Azure Key Vault](../developer/devenv-app-key-vault-overview.md).
+For more information, see [Integrating Business Central with Azure services](./azure-integration-overview.md).
 
 ## Integrating to external systems from AL code: copilot
 
@@ -157,6 +157,5 @@ For more information, see [Integrating with Microsoft Teams overview](../develop
 [Integrating Business Central with Shopify](/dynamics365/business-central/shopify/get-started)  
 [Integrating to external services from AL using the HttpClient data type](../developer/devenv-httpclient.md)  
 [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)
-[Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)  
-[Connecting to Azure Key Vault](../developer/devenv-app-key-vault-overview.md)  
+[Integrating Business Central with Azure services](./azure-integration-overview.md)
 [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md)  
