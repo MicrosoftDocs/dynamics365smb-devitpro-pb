@@ -21,7 +21,7 @@ Here are some supported integrations between Business Central and Azure services
 
 ## [!INCLUDE[azure_key_vault](includes/azure-keyvault-name.md)]
 
-If your app/extension need to store and use secrets such as certificates or credentials for external services, it is considered good security practices to store these secrets in [!INCLUDE[azure_key_vault](includes/azure-keyvault-name.md)] and not in the app source code or app package itself. For more information, see [Using Azure Key Vaults with apps/extensions](devenv-app-key-vault-overview.md).
+If your app/extension needs to store and use secrets such as certificates or credentials for external services, it is considered good security practices to store these secrets in [!INCLUDE[azure_key_vault](includes/azure-keyvault-name.md)] and not in the app source code or app package itself. For more information, see [Using Azure Key Vaults with apps/extensions](devenv-app-key-vault-overview.md).
 
 When using [!INCLUDE[azure_key_vault](includes/azure-keyvault-name.md)] from your AL code, you get data about the success or failure of usage in telemetry. For more information, see [Azure Key Vault telemetry](../administration/telemetry-extension-key-vault-trace.md).
 
