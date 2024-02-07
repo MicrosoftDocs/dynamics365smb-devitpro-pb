@@ -9,7 +9,7 @@ ms.topic: overview
 ms.author: solsen
 ---
 
-# AL Development Environment
+# AL development environment
 
 This section describes all of the objects that are available with the AL Language development environment for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 
@@ -57,9 +57,9 @@ This section describes all of the objects that are available with the AL Languag
 |Get an overview of properties in AL grouped by the objects that they support.|[Properties Overview](properties/devenv-properties.md)|
 |Get an overview of triggers in AL grouped by the objects that they support.|[Triggers Overview](triggers-auto/devenv-triggers.md)|
 
-## See Also
+## See also
 
-[Developing Extensions](devenv-dev-overview.md)  
-[Get Started with AL](devenv-get-started.md)  
-[FAQ for Developing in AL](devenv-dev-faq.md)  
-[AL Language Extension Configuration](devenv-al-extension-configuration.md)
+[Developing extensions](devenv-dev-overview.md)  
+[Get started with AL](devenv-get-started.md)  
+[FAQ for developing in AL](devenv-dev-faq.md)  
+[AL Language extension configuration](devenv-al-extension-configuration.md)
