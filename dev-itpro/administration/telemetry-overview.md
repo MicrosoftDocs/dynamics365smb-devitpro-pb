@@ -56,7 +56,7 @@ Check the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] documen
 For more information, go to [Control Telemetry Cost](telemetry-control-cost.md).
 
 ## <a name="view"></a>Viewing telemetry data with Power BI
-To make it simple to analyze Business Central telemetry, we've developed two Power BI apps available from the Microsoft commercial marketplace. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
+To make it simple to analyze Business Central telemetry, we've developed two Power BI apps available from the Microsoft commercial marketplace. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to install.
 
 For more information, go to [Analyze and Monitor Telemetry with Power BI](telemetry-power-bi-app.md).
 
