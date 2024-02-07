@@ -1514,6 +1514,7 @@
 <!-- end Microsoft Teams -->
 <!-- Azure services -->
 ## Integrating with Azure services
+### [Overview](developer/azure-integration-overview.md)
 ### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)
 ### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
 ### [Connecting to Azure Key Vault](developer/devenv-app-key-vault-overview.md)
