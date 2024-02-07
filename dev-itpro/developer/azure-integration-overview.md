@@ -31,7 +31,7 @@ The [!INCLUDE[azure_functions](includes/azure-functions-name.md)] service is com
 
 To make it easy to use [!INCLUDE[azure_functions](includes/azure-functions-name.md)] from [!INCLUDE[prod_short](includes/prod_short.md)], the System Application includes the *Azure Function* codeunit with methods to connect to the service and call functions. For more information, see [Azure Function codeunit](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)  
 
-When using the *Azure Function* codeunit from the System Application, you get data about the success or failure of function calls in telemetry. For more information, see [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md).
+When using the *Azure Function* codeunit from the System Application, you get data about the success or failure of function calls in telemetry. For more information, see [Azure Function telemetry](../administration/telemetry-azure-function-integration-trace.md).
 
 ## Azure Open AI Service
 
