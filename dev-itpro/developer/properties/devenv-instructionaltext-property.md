@@ -3,7 +3,7 @@ title: "InstructionalText Property"
 description: "Sets the string used for instructions in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 02/08/2024
 ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -39,7 +39,7 @@ Sets the maximum length of the specific InstructionalText.
 
 ## Remarks
 
-The default is an empty string, which means there will be no instructions. According to the user assistance model for [!INCLUDE[prod_short](../includes/prod_short.md)], apps are expected to apply instructional text to setup guides and similar pages.  
+The default is an empty string, which means there are no instructions. According to the user assistance model for [!INCLUDE[prod_short](../includes/prod_short.md)], apps are expected to apply instructional text to setup guides and similar pages.  
 
 The following example illustrates how you can apply instructional text in an app:  
 
@@ -53,7 +53,7 @@ Or, with the parameters:
 InstructionalText = 'Add an entity from your list of contacts. The entity can be a person or a company.', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 100;
 ```
 
-The InstructionalText property on a page field should provide an example value or a short summary of the field's purpose.
+The InstructionalText property on a page field should provide an example value or a short summary of the field's purpose to guide the user towards entering the expected value.
 
 ## See also
 
