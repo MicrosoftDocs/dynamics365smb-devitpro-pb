@@ -14,14 +14,13 @@ ms.custom: bap-template #Required; don't change.
 
 In this release we preview the new Page Scripting tool. With this tool, customers and consultants can easily record and replay user acceptance tests directly inside the client.
 
-The page scripting tool is a tool inside the Business Central web client that enables you to record your actions on pages and then replay them afterwards. One important use case is capturing and executing user acceptance tests, which is also the intitial focus of this new tool
+The page scripting tool is a utility in the Business Central web client that enables you to record your actions in the user interface (UI) and then replay them afterwards. One important use case is capturing and executing user acceptance tests, which is also the intitial focus of this new tool
 
 ### What actions are captured
 
 The page scripting tool is focused on capturing actions coming from executing AL. It's not a generic HTML automation tool. Hence it cannot automate, e.g., control add-ins such as charts, embedded Power BI or Power Apps, or anything outside of the Business Central web client experience.
 
 ## Opening the tool
-
 
 The Page Scripting tool is accessed from the **Settings** ![cog wheel](media/settings_icon_small.png) icon settings cog wheel in the web client. It will, however, only appear if the user has permissions to record or replay with the Page Scripting tool
 
