@@ -84,7 +84,7 @@ Before going public with the submitted app version, you can test it after the "P
 	
 where
 
-- `[TenantID]` is the Microsoft Entra ID of their environment, 
+- `[TenantID]` is the Microsoft Entra ID of the customer environment, 
 - `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
 - `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission. 
 	
@@ -160,11 +160,11 @@ Preview versions can be installed on Sandbox environments running on [!INCLUDE[p
 
 Selected customers can install the preview version of the extensions in your submission after the "Preview creation" step of the submission flow in Partner Center. In order to trigger the install, customers must receive and use the preview app install URL:
 
-`https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PREVIEWKEY' IS '[PreviewKey]'&page=2503` 
+`https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PreviewKey' IS '[PreviewKey]'&page=2503` 
 
 where
 
-- `[TenantID]` is the Microsoft Entra ID of their environment, 
+- `[TenantID]` is the Microsoft Entra ID of the customer environment, 
 - `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
 - `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
 
@@ -353,6 +353,21 @@ When changing a `connect` app to an `add-on` app, you should:
 ### How to automatically update my offer using Partner Center submission API?
 
 It's possible to automatically submit apps to AppSource from our DevOps setup by using the [Partner Center Ingestion API](/azure/marketplace/azure-app-apis). For more information, you can also check this blog post [Automatic AppSource Submission of Business Central apps](https://freddysblog.com/2022/09/22/automatic-appsource-submission-of-business-central-apps).
+
+### How do I install an offer with 'Contact Me' listing type on a customer environment?
+
+Offers using 'Contact Me' as listing type cannot be directly installed from the AppSource marketplace. When clicking on 'Contact Me' on the offer listing, the customer will be asked to share their information with Microsoft through your customer relationship management (CRM) system. These customer details, along with the offer name, ID, and marketplace source will be sent to the CRM system, which you've configured for your offer in Partner Center.
+
+Based on this information, you can then build the install URL for you offer and share it with the customer:
+
+`https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]'&page=2503` 
+
+where
+
+- `[TenantID]` is the Microsoft Entra ID of the customers environment, and
+- `[AppID]` is the app ID defined in the manifest of the main extension for this offer.
+
+For more information on listing types, see [App type, contact type, and customer leads](.\readiness\readiness-checklist-e-industries-categories-apptype.md).
 
 ## Channels to ask questions or report issues
 
