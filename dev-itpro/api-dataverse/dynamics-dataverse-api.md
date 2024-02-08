@@ -44,4 +44,6 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 [company resource type](resources/dynamics_company.md)  
 [dataverseEntityChange resource type](resources/dynamics_dataverseentitychange.md)  
 [subscriptions resource type](resources/dynamics_subscriptions.md)  
-[Trigger flows when a row is added, modified, or deleted](/power-automate/dataverse/create-update-delete-trigger)
+[Trigger flows when a row is added, modified, or deleted](/power-automate/dataverse/create-update-delete-trigger)  
+[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
+
