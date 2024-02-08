@@ -356,9 +356,9 @@ It's possible to automatically submit apps to AppSource from our DevOps setup by
 
 ### How do I install an offer with 'Contact Me' listing type on a customer environment?
 
-Offers using 'Contact Me' as listing type cannot be directly installed from the AppSource marketplace. When clicking on 'Contact Me' on the offer listing, the customer will be asked to share their information with Microsoft through your customer relationship management (CRM) system. These customer details, along with the offer name, ID, and marketplace source will be sent to the CRM system, which you've configured for your offer in Partner Center.
+Offers using 'Contact Me' as listing type can't be directly installed from the AppSource marketplace. When choosing 'Contact Me' on the offer listing, the customer will be asked to share their information with Microsoft through your customer relationship management (CRM) system. These customer details, along with the offer name, ID, and marketplace source are sent to the CRM system, which you've configured for your offer in Partner Center.
 
-Based on this information, you can then build the install URL for you offer and share it with the customer:
+Based on this information, you can then build the install URL for your offer and share it with the customer:
 
 `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]'&page=2503` 
 
