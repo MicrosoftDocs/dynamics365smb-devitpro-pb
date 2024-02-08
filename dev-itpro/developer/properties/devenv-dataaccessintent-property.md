@@ -45,7 +45,7 @@ For reports, API pages, and API queries, the Business Central server can use rea
 
 From the client, the property value can be overwritten by using page **9880 Database Access Intent List** page.
 
-When calling a API page or API query, the property value can be overwritten by specifying HTTP request header `Data-Access-Intent`. 
+When calling an API page or API query, the property value can be overwritten by specifying HTTP request header `Data-Access-Intent`. 
 
 [!INCLUDE[database_access_intent_note](../../includes/include-database-access-intent-note.md)]
 
