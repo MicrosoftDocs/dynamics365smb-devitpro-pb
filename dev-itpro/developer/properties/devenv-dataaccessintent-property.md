@@ -41,10 +41,12 @@ DataAccessIntent = ReadOnly|ReadWrite;
 > [!NOTE]
 > It only applies to pages of the type API. For such, The [Editable property](devenv-editable-property.md) must be set to **false**.
 
-For reports, API pages, and queries, the Business Central server can use read-only database replicas on Azure SQL Database and SQL Server. If replicas are enabled, use this property to reduce the load on the primary database. Using **ReadOnly** might also improve performance when viewing objects. **ReadOnly** works as a hint for the server to route the connection to a secondary (read-only) replica, if one is available. When a workload is executed against the replica, insert/delete/modify operations aren't possible. If any of these operations are executed against the replica, an exception is thrown at runtime.
+For reports, API pages, and API queries, the Business Central server can use read-only database replicas on Azure SQL Database and SQL Server. If replicas are enabled, use this property to reduce the load on the primary database. Using **ReadOnly** might also improve performance when viewing objects. **ReadOnly** works as a hint for the server to route the connection to a secondary (read-only) replica, if one is available. When a workload is executed against the replica, insert/delete/modify operations aren't possible. If any of these operations are executed against the replica, an exception is thrown at runtime.
 
 From the client, the property value can be overwritten by using page **9880 Database Access Intent List** page.
- 
+
+When calling an API page or API query, the property value can be overwritten by specifying HTTP request header `Data-Access-Intent`. 
+
 [!INCLUDE[database_access_intent_note](../../includes/include-database-access-intent-note.md)]
 
 ## See Also  
@@ -54,4 +56,4 @@ From the client, the property value can be overwritten by using page **9880 Data
 [Properties](devenv-properties.md)   
 [Page Properties](./devenv-properties.md)  
 [InDataSet Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute)  
-[Specifying Data Access Intent for GET requests](../devenv-connect-apps-tips.md#DataAccessIntent)
+[Specifying Data Access Intent for REST API GET requests](../devenv-connect-apps-tips.md#DataAccessIntent)  
