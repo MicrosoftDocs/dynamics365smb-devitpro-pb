@@ -103,7 +103,7 @@ The base application has set the Tooltip property for all controls on (almost) a
 
 ### Instructional text
 
-The base application has applied instructional text to setup guides and certain other types of page objects. Your extensions are expected to also include instructional text to setup guides for the same reason. Instructional text can also be created for page fields to describe example values or a short summary. For more information, see [InstructionalText Property](../developer/properties/devenv-instructionaltext-property.md).
+The base application has applied instructional text to setup guides, certain other types of page objects, and for page fields. Your extensions are expected to also include instructional text to setup guides for the same reason. Similarly, instructional text is useful to implement on page fields to describe example values or a short summary directly in the field, which guides the user for what to input in that field. For more information, see [InstructionalText Property](../developer/properties/devenv-instructionaltext-property.md).
 
 ### Example
 
