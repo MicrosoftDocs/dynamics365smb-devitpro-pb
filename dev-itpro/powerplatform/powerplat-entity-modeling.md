@@ -200,6 +200,7 @@ Calculated and unmapped fields in [!INCLUDE[prod_short](../developer/includes/pr
 
 ## See Also
 
+[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
 [Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
 [Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference](powerplat-admin-reference.md)  

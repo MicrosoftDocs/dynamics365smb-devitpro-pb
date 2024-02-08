@@ -1,5 +1,6 @@
 ﻿# [Development and administration](index.md)
 # [New and planned](whatsnew/overview.md)
+
 # Get started
 ## Learn
 ### [Discover all aka.ms links related to Business Central](developer/readiness/readiness-bcall.yml)
@@ -413,6 +414,7 @@
 <!-- DEVELOPMENT-->
 # Development
 ## [Development overview](developer/devenv-dev-overview.md)
+
 ## Get started
 ### [Welcome to AL](developer/devenv-landing.yml)
 ### [Get started with AL](developer/devenv-get-started.md)
@@ -447,6 +449,7 @@
 #### [Get started with C/SIDE and AL side-by-side for on-premises](developer/devenv-get-started-al-for-onprem.md)
 #### [Run C/SIDE and AL side-by-side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Create runtime packages for Business Central on-premises](developer/devenv-creating-runtime-packages.md)
+
 ## Development environment
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
 ### Configure the development environment
@@ -734,6 +737,9 @@
 ### Pages and user interfaces
 #### [Customizing for user roles](developer/devenv-role-customization.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
+#### Creating deep links
+##### [Web client URL](developer/devenv-web-client-urls.md)
+##### [Business Central app URL](developer/devenv-link-to-mobile-app.md)
 #### Role centers
 ##### [Designing role centers](developer/devenv-designing-role-centers.md)
 ##### [Sample role center](developer/devenv-simple-role-center-example.md)
@@ -891,6 +897,13 @@
 #### [Isolated storage](developer/devenv-isolated-storage.md)
 #### [Protecting sensitive values with the SecretText data type](developer/devenv-secret-text.md)
 
+#### Using Azure Key Vault for app secrets
+##### [Overview](developer/devenv-app-key-vault-overview.md)
+##### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
+##### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
+##### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
+##### [Analyzing app keyvault telemetry](administration/telemetry-extension-key-vault-trace.md)
+
 #### [Permission sets and entitlements overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 ##### [Permissionset object](developer/devenv-permissionset-object.md)
 ##### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
@@ -934,9 +947,41 @@
 #### [API performance](webservices/web-service-performance.md)
 #### [API telemetry](webservices/web-service-telemetry.md)
 
+### Calling external services
+#### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
+#### [Supported cipher suites in HTTPS](developer/devenv-supported-cipher-suites.md)  
+#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
+#### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
+#### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
+#### [AL Language reference (HttpClient datatype)](developer/methods-auto/httpclient/httpclient-data-type.md)
+
+
+### Instrumenting with telemetry
+#### [Overview](developer/devenv-instrument-application-for-telemetry.md)
+#### [Sending extension telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
+#### [Adding feature usage telemetry](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)
+#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
+#### [Creating custom events for event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
+
+
 ### Accessing device capabilities
 #### [Implementing camera in AL](developer/devenv-implement-camera-al.md)
 #### [Implementing location in AL](developer/devenv-implement-location-al.md)
+
+### Developing printer extensions
+#### [Printer extension overview](developer/devenv-reports-printing.md)
+#### [Creating a printer extension](developer/devenv-reports-create-printer-extension.md)
+<!--#### [Print Setup Payload](developer/devenv-onaftersetupprinters-event.md)-->
+<!--#### [Handling Print Action](developer/devenv-reports-handle-print-action.md)-->
+<!--#### [Report Payload](developer/devenv-onafterdocumentprintready-event.md)-->
+<!--#### [Troubleshooting Print Errors](developer/devenv-reports-troubleshoot-printing.md)-->
+
+### Using .NET (on-premises only)
+#### [Get started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+#### [Migrating from .NET Framework to .NET Standard](developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
+#### [.NET control add-ins](developer/devenv-dotnet-controladdins.md)
+#### [Subscribing to events in a .NET Framework type](developer/devenv-dotnet-subscribe-to-events.md)
+#### [Serializing .NET Framework types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 
 <!-- The AL programming language -->
 ## The AL programming language
@@ -988,66 +1033,17 @@
 
 <!-- end AL programming -->
 
-## AL platform
-### [Overview](developer/devenv-platform-overview.md)
-### [System and application reference documentation](/dynamics365/business-central/application/)
-<!-- (Job queue, printing, task scheduler, telemetry, Keyvault, .NET interop, AL HttpClient, Azure functions) -->
-### Using the system application
-#### [Overview of the system application](developer/devenv-system-application-overview.md)
 
-#### Creating new modules in the system application
-##### [Module architecture](developer/devenv-blueprint.md)
-##### [Get started with modules](developer/devenv-getting-started.md)
-##### [Set up your development environment](developer/devenv-set-up-an-environment.md)
-##### [Create a new module](developer/devenv-new-module.md)
-##### [Create a .NET wrapper module](developer/devenv-create-a-wrapper-module.md)
-##### [Change a module](developer/devenv-change-a-module.md)
+## [System and application reference documentation](/dynamics365/business-central/application/)
+### [Overview of the system application](developer/devenv-system-application-overview.md)
+### Creating new modules in the system application
+#### [Module architecture](developer/devenv-blueprint.md)
+#### [Get started with modules](developer/devenv-getting-started.md)
+#### [Set up your development environment](developer/devenv-set-up-an-environment.md)
+#### [Create a new module](developer/devenv-new-module.md)
+#### [Create a .NET wrapper module](developer/devenv-create-a-wrapper-module.md)
+#### [Change a module](developer/devenv-change-a-module.md)
 
-### Task scheduler and job queue
-#### [Task scheduler](developer/devenv-task-scheduler.md)
-#### [Job queue](developer/devenv-job-queue.md)
-
-### Calling external services
-#### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
-#### [Supported cipher suites in HTTPS](developer/devenv-supported-cipher-suites.md)  
-#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
-#### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
-#### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
-#### [AL Language reference (HttpClient datatype)](developer/methods-auto/httpclient/httpclient-data-type.md)
-<!--#### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)-->
-
-### Using Azure Key Vault for app secrets
-#### [Overview](developer/devenv-app-key-vault-overview.md)
-#### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
-#### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
-#### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
-#### [Analyzing app keyvault telemetry](administration/telemetry-extension-key-vault-trace.md)
-
-### Developing printer extensions
-#### [Printer extension overview](developer/devenv-reports-printing.md)
-#### [Creating a printer extension](developer/devenv-reports-create-printer-extension.md)
-<!--#### [Print Setup Payload](developer/devenv-onaftersetupprinters-event.md)-->
-<!--#### [Handling Print Action](developer/devenv-reports-handle-print-action.md)-->
-<!--#### [Report Payload](developer/devenv-onafterdocumentprintready-event.md)-->
-<!--#### [Troubleshooting Print Errors](developer/devenv-reports-troubleshoot-printing.md)-->
-
-### Creating deep links
-#### [Web client URL](developer/devenv-web-client-urls.md)
-#### [Business Central app URL](developer/devenv-link-to-mobile-app.md)
-
-### Instrumenting with telemetry
-#### [Overview](developer/devenv-instrument-application-for-telemetry.md)
-#### [Sending extension telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
-#### [Adding feature usage telemetry](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)
-#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
-#### [Creating custom events for event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
-
-### Using .NET (on-premises only)
-#### [Get started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
-#### [Migrating from .NET Framework to .NET Standard](developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
-#### [.NET control add-ins](developer/devenv-dotnet-controladdins.md)
-#### [Subscribing to events in a .NET Framework type](developer/devenv-dotnet-subscribe-to-events.md)
-#### [Serializing .NET Framework types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 
 <!-- Data analytics and reporting -->
 ## Data analytics and reporting
@@ -1513,6 +1509,7 @@
 <!-- end Microsoft Teams -->
 <!-- Azure services -->
 ## Integrating with Azure services
+### [Overview](developer/azure-integration-overview.md)
 ### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)
 ### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
 ### [Connecting to Azure Key Vault](developer/devenv-app-key-vault-overview.md)
