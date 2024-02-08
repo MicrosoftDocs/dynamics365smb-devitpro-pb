@@ -16,6 +16,8 @@ RESTful web services are typically created to interchange data between [!INCLUDE
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with an extensive list of built-in APIs that requires no code and minimal setup to use. When using the built-in APIs, please choose the highest API version available. You can also develop your own custom APIs using the AL object types _API pages_ and _API queries._
 
+[![Shows how the API stack in Business Central](../developer/media/api-stack.svg)](../developer/media/api-stack.svg#lightbox)
+
 The articles in this section describe the key concepts and techniques for using APIs with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
   
 |To|See|  
