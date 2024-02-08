@@ -49,6 +49,9 @@ Specifies the scope of the permissions that are assigned (Entitlements, Permissi
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+For information about the permission value syntax, refer to [Permissions property values](../properties/devenv-permissions-property#values).
+
 ## Example 
 
 ```AL
