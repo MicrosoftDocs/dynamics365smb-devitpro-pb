@@ -3,8 +3,10 @@ title: "AutoReplace Property"
 description: "Sets whether imported records automatically replace existing records with the same primary key."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 02/09/2024
 ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -3,8 +3,10 @@ title: "ShowAs Property"
 description: "Specifies how an action group should be rendered"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
+ms.date: 02/09/2024
 ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,8 +25,8 @@ Specifies how an action group should be rendered
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Standard**|runtime version 1.0|Specifies that an action group should be rendered as a standard group.|
-|**SplitButton**|runtime version 1.0|Specifies that an action group should be rendered as a split button.|
+|**Standard**|runtime version 10.0|Specifies that an action group should be rendered as a standard group.|
+|**SplitButton**|runtime version 10.0|Specifies that an action group should be rendered as a split button.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

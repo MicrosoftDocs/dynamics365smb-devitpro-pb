@@ -3,8 +3,10 @@ title: "LayoutFile Property"
 description: "The filename of the report layout file that should be imported with this layout."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 02/09/2024
 ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

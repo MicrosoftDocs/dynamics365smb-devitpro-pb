@@ -3,8 +3,10 @@ title: "Style Property"
 description: "Sets a value that determines how text in a field on a page is formatted."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
+ms.date: 02/09/2024
 ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

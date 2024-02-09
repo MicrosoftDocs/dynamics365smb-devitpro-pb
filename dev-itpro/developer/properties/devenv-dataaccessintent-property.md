@@ -3,8 +3,10 @@ title: "DataAccessIntent Property"
 description: "Sets the data access intent of the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
+ms.date: 02/09/2024
 ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -25,8 +27,8 @@ Sets the data access intent of the page.
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**ReadOnly**|runtime version 1.0|Intent to access records, but not to modify them. Read-only pages are run against a replica of the database leading to improved performance, but preventing modifications to the database records.|
-|**ReadWrite**|runtime version 1.0|Intent to access and modify records.|
+|**ReadOnly**|runtime version 5.0|Intent to access records, but not to modify them. Read-only pages are run against a replica of the database leading to improved performance, but preventing modifications to the database records.|
+|**ReadWrite**|runtime version 5.0|Intent to access and modify records.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

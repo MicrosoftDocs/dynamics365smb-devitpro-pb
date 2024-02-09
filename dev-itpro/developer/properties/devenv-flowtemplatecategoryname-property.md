@@ -3,8 +3,10 @@ title: "FlowTemplateCategoryName Property"
 description: "Sets the category used to filter the list of Power Automate templates shown in the template gallery."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/09/2023
+ms.date: 02/09/2024
 ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

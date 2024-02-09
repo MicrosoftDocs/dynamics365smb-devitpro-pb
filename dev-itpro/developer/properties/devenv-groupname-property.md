@@ -3,8 +3,10 @@ title: "GroupName Property"
 description: "If the entitlement type is ConcurrentUserServicePlan, the GroupName determines which Microsoft Entra group that users with this entitlement should be members of."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2023
+ms.date: 02/09/2024
 ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

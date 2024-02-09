@@ -3,8 +3,10 @@ title: "AboutText Property"
 description: "Sets the body of text that appears in a teaching tip in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/06/2023
+ms.date: 02/09/2024
 ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -18,6 +20,7 @@ Sets the body of text that appears in a teaching tip in the UI.
 
 ## Applies to
 -   Page Custom Action
+-   Page File Upload Action
 -   Query
 -   Page
 -   Page Action

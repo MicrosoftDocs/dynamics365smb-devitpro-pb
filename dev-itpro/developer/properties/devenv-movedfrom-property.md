@@ -3,8 +3,10 @@ title: "MovedFrom Property"
 description: "Specifies the origin extension ID when a table is moved to a new extension."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
+ms.date: 02/09/2024
 ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -18,6 +20,7 @@ Specifies the origin extension ID when a table is moved to a new extension. If t
 
 ## Applies to
 -   Table
+-   Table Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

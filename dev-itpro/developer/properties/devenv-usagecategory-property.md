@@ -3,8 +3,10 @@ title: "UsageCategory Property"
 description: "Sets the department column for a searched page, report, or query in the web client."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/06/2023
+ms.date: 02/09/2024
 ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -25,13 +27,13 @@ Sets the department column for a searched page, report, or query in the web clie
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**None**|runtime version 1.0|The page, report or query is not included in a search.|
-|**Lists**|runtime version 1.0|The page, report or query is listed as **Lists** under the **Pages and Tasks** category.|
-|**Tasks**|runtime version 1.0|The page, report or query is listed as **Tasks** under the **Pages and Tasks** category.|
-|**ReportsAndAnalysis**|runtime version 1.0|The page, report or query is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
-|**Documents**|runtime version 1.0|The page, report or query is listed as **Documents** under the **Reports and Analysis** category.|
-|**History**|runtime version 1.0|The page, report or query is listed as **Archive** under the **Reports and Analysis** category.|
-|**Administration**|runtime version 1.0|The query is listed as **Administration** under the **Pages and Tasks** category.|
+|**None**|runtime version 12.0|The page, report or query is not included in a search.|
+|**Lists**|runtime version 12.0|The page, report or query is listed as **Lists** under the **Pages and Tasks** category.|
+|**Tasks**|runtime version 12.0|The page, report or query is listed as **Tasks** under the **Pages and Tasks** category.|
+|**ReportsAndAnalysis**|runtime version 12.0|The page, report or query is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
+|**Documents**|runtime version 12.0|The page, report or query is listed as **Documents** under the **Reports and Analysis** category.|
+|**History**|runtime version 12.0|The page, report or query is listed as **Archive** under the **Reports and Analysis** category.|
+|**Administration**|runtime version 12.0|The query is listed as **Administration** under the **Pages and Tasks** category.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

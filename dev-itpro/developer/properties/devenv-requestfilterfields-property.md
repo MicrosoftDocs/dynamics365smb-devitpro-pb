@@ -3,8 +3,10 @@ title: "RequestFilterFields Property"
 description: "Sets which fields are automatically included on the tab of the request page that is related to this data item."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 02/09/2024
 ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

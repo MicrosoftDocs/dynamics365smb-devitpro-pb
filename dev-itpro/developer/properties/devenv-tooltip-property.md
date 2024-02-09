@@ -3,8 +3,10 @@ title: "ToolTip Property"
 description: "Sets the string used for the tooltip of an action, a field, a FactBox, or an activity button."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/25/2023
+ms.date: 02/09/2024
 ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -29,6 +31,8 @@ In the client, tooltips appear when you point to the caption of the control.
 -   Page Action Group
 -   Page Custom Action
 -   Page System Action
+-   Page File Upload Action
+-   Table Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

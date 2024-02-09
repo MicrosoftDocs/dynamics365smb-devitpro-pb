@@ -3,8 +3,10 @@ title: "OrderBy Property"
 description: "Sorts table fields in the page view in ascending or descending order."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 02/09/2024
 ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
