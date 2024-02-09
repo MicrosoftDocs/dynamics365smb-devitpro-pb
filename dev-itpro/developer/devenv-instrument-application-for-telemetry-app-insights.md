@@ -1,13 +1,14 @@
 ---
-title: Creating Custom Telemetry Events for Azure Application Insights
+title: Creating custom telemetry events for Azure Application Insights
 description: This article describes how to add code to application objects that enables you to log  telemetry.
 ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.date: 04/01/2024
+ms.reviewer: solsen
 ms.topic: conceptual
 author: jswymer
 ---
-# Creating Custom Telemetry Events for Azure Application Insights
+
+# Creating custom telemetry events for Azure Application Insights
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
@@ -66,16 +67,16 @@ Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataC
 
 ### Setting the parameters
 
-Use the parameters to build the dimensions, or columns, that will show for the trace in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]. `Message` and `Verbosity` will appear as general dimensions. All other parameters appear as custom dimensions. 
+Use the parameters to build the dimensions, or columns, that show for the trace in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]. `Message` and `Verbosity` appear as general dimensions. All other parameters appear as custom dimensions. 
 
 |Parameter|Description|Dimension|
 |---------|-----------|---------------------------------|
-|EventID|A text string that assigns an identifier to the telemetry trace signal. The tag can consist of letters, numbers, and special characters. Try to make your tags unique. For example, use at least 8 characters or a prefix, like Cronus-0001 and Cronus-0002.|eventId|
+|EventID|A text string that assigns an identifier to the telemetry trace signal. The tag can consist of letters, numbers, and special characters. Try to make your tags unique. For example, use at least eight characters or a prefix, like Cronus-0001 and Cronus-0002.|eventId|
 |Message|A text string that specifies the descriptive message for the telemetry trace signal.|message|
 |Verbosity<sup>[*](#*)|An enumeration that specifies the severity level of the telemetry trace signal. The value can be `Critical`, `Error`, `Warning`, `Normal`, or `Verbose`. |severityLevel<br /><br />`4`=`Critical`<br />`3`=`Error`<br />`2`=`Warning`<br />`1`=`Normal` <br />`0`=`Verbose`<br />|
 |DataClassification[*](#*)|A DataClassification data type that assigns a classification to the telemetry trace signal. For more information, see [Data Classifications](devenv-classifying-data.md#DataClassifications).|dataClassification|
 |TelemetryScope|Scope of emitting the telemetry. <ul><li>`extensionpublisher` sends the custom signal only to the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource specified in the extension's app.json file</li><li>`all` sends the custom signal to the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource specified in the extension's app.json file and on the environment. </li></ul> |telemetryScope
-|CustomDimensions|A dictionary of text that defines the custom dimensions for the trace signal in Application Insights. There are several CustomDimensions that will be included in traces by default. See [Default dimensions in CustomDimensions](#default-dimensions-in-customdimensions)|
+|CustomDimensions|A dictionary of text that defines the custom dimensions for the trace signal in Application Insights. There are several CustomDimensions that are included in traces by default. See [Default dimensions in CustomDimensions](#default-dimensions-in-customdimensions)|
 |Dimension1|A text string that specifies the name of the custom dimension.|
 |Value1|A text string that specifies the value of Dimension1.|
 |Dimension2|A text string that specifies the name of the custom dimension.|
@@ -116,36 +117,36 @@ The following table explains the default dimensions that are automatically inclu
 ## Best practices for designing telemetry for your app/extensions
 
 When the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] product team designed the partner telemetry feature, we build the following characteristics into it: 
-* Telemetry event definitions must treated as an API. Changing custom dimensions is a breaking change (someone might have built reporting or alerting on top of it).
-* Telemetry events must be discoverable in docs. If you see someting in telemetry, it should be easy to learn more about it in documentation. We added the custom dimension eventId because of this. It is good practice to keep eventIds unique, also across apps/extensions. 
+* Telemetry event definitions must be treated as an API. Changing custom dimensions is a breaking change (someone might have built reporting or alerting on top of it).
+* Telemetry events must be discoverable in docs. If you see something in telemetry, it should be easy to learn more about it in documentation. We added the custom dimension eventId because of this. It's good practice to keep eventIds unique, also across apps/extensions. 
 * Documented: each telemetry event has good documentation, preferably with guidance on how to react on this event.
-* Actionable (if possible): before we add a new telemetry event, we ask "what can a customer/partner do with this?" If no good answers come to mind, we do not add the event. 
+* Actionable (if possible): before we add a new telemetry event, we ask "what can a customer/partner do with this?" If no good answers come to mind, we don't add the event. 
 
 ### Convention for Message column
 
-Try to use the “Object ActionInPastTense” pattern for the Message part of a LogMessage call. This makes reading the output from a KQL query ordered by timestamp much easier.
+Try to use the “Object ActionInPastTense” pattern for the Message part of a LogMessage call. This makes reading the output from a KQL query ordered by timestamp easier.
 
 Here are some examples from the built-in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry: 
 - Web Service Called 
-- Report cancelled: {report name name}
+- Report canceled: {report name name}
 - Extension published: {Extension name}
 
-Consider also adding some of the dimension values into the message itself. This makes it easier to browse the events by message column alone (no need to open up custom dimensions for every single event to see e.g. which page it was about). 
+Consider also adding some of the dimension values into the message itself. This makes it easier to browse the events by message column alone (no need to open up custom dimensions for every single event to see, e.g.,  which page it was about). 
 
 ### Convention for eventId dimension
 
-It is considered good practice to use unique eventID values for each LogMessage call in your code (also when you use the feature telemetry module from the System Application). When analyzing data from your telemetry, using unique eventIDs makes it very easy for you to identify where in the code the telemetry was emitted from.
+It's considered good practice to use unique eventID values for each LogMessage call in your code (also when you use the feature telemetry module from the System Application). When analyzing data from your telemetry, using unique eventIDs makes it easy for you to identify where in the code the telemetry was emitted from.
 
-Also, consider using a prefix unique to your app/extension. This will help consumers when your events are emitted to per-environment telemetry, where the environment admin might get telemetry data from multiple apps/extensions.
+Also, consider using a prefix unique to your app/extension. This helps consumers when your events are emitted to per-environment telemetry, where the environment admin might get telemetry data from multiple apps/extensions.
 
 
 ### Conventions for dimension names
 
 When logging events to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], [!INCLUDE[prod_short](includes/prod_short.md)] server prefixes the name of custom dimension keys from AL with the string `al`. For example, if the dimension key you define in code is `Result`, then in the event logged in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], the key name appears as `alResult`. 
 
-It is therefore considered good practice to use PascalCasing for your dimension key names. This way, your dimension key names in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] will conform to the standard naming of dimension keys in [!INCLUDE[prod_short](includes/prod_short.md)] telemetry.
+It's therefore considered good practice to use PascalCasing for your dimension key names. This way, your dimension key names in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] conform to the standard naming of dimension keys in [!INCLUDE[prod_short](includes/prod_short.md)] telemetry.
 
-Also, do not use dimension key names with spaces in them. It makes KQL queries more difficult to write. 
+Also, don't use dimension key names with spaces in them. It makes KQL queries more difficult to write. 
 
 
 ## Examples
