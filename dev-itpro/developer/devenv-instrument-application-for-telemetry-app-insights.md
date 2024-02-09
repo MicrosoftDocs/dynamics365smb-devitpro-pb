@@ -159,7 +159,7 @@ begin
   CustDimension.Add('Reason', 'critical error in code');
   LogMessage(
     'MyExt-0002', 
-    'Critical error happened in MyExt module 1', 
+    'Critical error happened: MyExt module 1', 
     Verbosity::Normal, 
     DataClassification::SystemMetadata, 
     TelemetryScope::ExtensionPublisher, // this event will only go to app telemetry
@@ -174,7 +174,7 @@ end;
 begin
   LogMessage(
     'MyExt-0002', 
-    'Critical error happened in MyExt module 1', 
+    'Critical error happened: MyExt module 2', 
     Verbosity::Critical, 
     DataClassification::SystemMetadata, 
     TelemetryScope::ExtensionPublisher, // this event will only go to app telemetry
@@ -186,6 +186,7 @@ end;
 
 ## <a name="*"></a>Conditions on when events are sent
 
+### Using DataClassification for privacy 
 For privacy reasons, events that have a `DataClassification` other than `SystemMetadata` aren't sent to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]. During development of your extension, it's good practice to have a privacy review of the use of LogMessage calls to ensure that customer data isn't mistakenly leaked into [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources. 
 
 ### Diagnostic Trace Level (on-premises only)
