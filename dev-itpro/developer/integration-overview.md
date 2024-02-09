@@ -130,7 +130,7 @@ For more information, see [Integrating to external services with the HttpClient 
 
 ## Integrating to external systems from AL code: Azure services
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Functions or Azure Key Vault. 
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Blob Services, Azure File Services, Azure Functions, or Azure Key Vault. 
 
 :::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
