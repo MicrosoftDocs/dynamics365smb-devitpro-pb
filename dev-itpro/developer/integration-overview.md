@@ -16,12 +16,11 @@ The article describes integration patterns, integration scenarios, and integrati
 
 ## Integrations to/from Business Central are done with web services
 
-All integrations to/from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: REST API, SOAP, and OData. 
+All integrations (except for a few built-in integrations) to/from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: REST API, SOAP, and OData. 
 
 [![Shows the three different types of web services in Business Central](media/webservice-stack.svg)](media/webservice-stack.svg#lightbox)
 
-
-The recommended way to expose a web service for [!INCLUDE[prod_short](../includes/prod_short.md)] is using the REST API stack. 
+The recommended way to use web services for [!INCLUDE[prod_short](../includes/prod_short.md)] is by using the REST API stack. 
 
 For more information, see [Web services overview](../webservices/web-services.md).
 
@@ -38,6 +37,8 @@ For more information on how to explore and develop against APIs, best practices,
 
 A *connector* is a proxy or a wrapper around an API that allows the user of the connector to talk to the underlying service. [!INCLUDE[prod_short](../includes/prod_short.md)] has its own connector that allows Power Platform products such as Power Automate, Power Apps, and Logic apps to communicate with 
 [!INCLUDE[prod_short](../includes/prod_short.md)] through REST APIs (this is another reason for using REST APIs compared to OData/SOAP enabled pages/queries/codeunits).
+
+[![Shows how the Power Platform connector integrates to Business Central](media/power-platform-connector-diagram.svg)](media/power-platform-connector-diagram.svg#lightbox)
 
 For more information, see [Power Platform Connectors Overview](/connectors/connectors) and [Dynamics 365 Business Central Connector](/connectors/dynamicssmbsaas) in the Power Platform documentation.
 
@@ -130,7 +131,7 @@ For more information, see [Integrating to external services with the HttpClient 
 
 ## Integrating to external systems from AL code: Azure services
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Functions or Azure Key Vault. 
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Blob Services, Azure File Services, Azure Functions, or Azure Key Vault. 
 
 :::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
