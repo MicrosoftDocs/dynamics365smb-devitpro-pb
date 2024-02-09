@@ -1696,6 +1696,8 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
+### Business Central 2024 release wave 1
+#### [Overview](upgrade/upgrade-overview-v23.md)
 ### Business Central 2023 release wave 2
 #### [Overview](upgrade/upgrade-overview-v23.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
