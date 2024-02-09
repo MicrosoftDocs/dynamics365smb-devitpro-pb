@@ -23,7 +23,7 @@ There are two different resources where log data can be sent for monitoring and 
 - Event Log (only for on-premises), and
 - Microsoft [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] (both for on-premises and for online). 
 
-By default, the [!INCLUDE[prod_short](includes/prod_short.md)] application is instrumented to emit several system telemetry trace signals to these destinations. Custom telemetry trace signals enable you to send telemetry data from anywhere in the application code to either of these destinations.
+By default, the [!INCLUDE[prod_short](includes/prod_short.md)] server and application is instrumented to emit several system telemetry events to these destinations. Custom telemetry events enable you to send telemetry data from anywhere in the application code to either of these destinations.
 
 The procedure for creating custom telemetry signals is different for each type of resource. Your choice might also depend on whether you're developing for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online or on-premises.
 
@@ -43,7 +43,8 @@ The articles in this section describe the key concepts and techniques for using 
 |--------|---------|  
 | Learn how to enable telemetry in your app/extension. | [Setting up Telemetry in an App/Extension](devenv-application-insights-for-extensions.md) |  
 |Learn how to administer [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], how to analyze telemetry data with Power BI or KQL, and how to setup alerts on telemetry events from your app/extension. | [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md) |
-| Learn how to use the feature usage system module in your app/extension. | [Feature usage telemetry](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry) |  
+|Learn about what data is logged out of the box to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] from your app/extension. | [Data logged to app/extension telemetry](devenv-application-insights-for-extensions-data.md) |
+| Learn how to use the feature usage system module in your app/extension. | [Using Feature telemetry](administration/telemetry-feature-telemetry.md) |
 |Learn how to send custom telemetry events from your app/extension. | [Creating custom telemetry events](devenv-instrument-application-for-telemetry-app-insights.md) |  
 |Learn how to send custom events from your app/extension to the Windows event log (on-premises only). | [Creating custom events for Windows event log (on-premises only)](devenv-instrument-application-for-telemetry-event-log.md) |
 

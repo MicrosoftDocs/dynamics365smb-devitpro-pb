@@ -14,7 +14,14 @@ author: jswymer
 
 This article describes how to set up an extension to send telemetry data to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] for monitoring and analyzing. [!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. For an overview about the telemetry with [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
 
-This feature targets publishers of per-tenant or appsource extensions to give them insight into issues in their extensions before partners and customers report them. Note that you get data for all customers across the install base of the app/extension.
+This feature targets publishers of per-tenant or appsource extensions to give them insight into issues in their extensions before partners and customers report them. Note that you get data for all customers across the install base of the app/extension. 
+
+Setting up telemetry in an App/Extension requires only 2-3 steps.
+
+1. Get an Application Insights resource in Azure.
+1. Add the Application Insights information to the app/extension.
+1. Optionally, add feature telemetry or custom telemetry calls to your AL code.
+
 
 ## Get an Application Insights resource in Azure
 
@@ -47,13 +54,13 @@ Where `<instrumentation key>` is replaced by the key denoted in the connection s
 > [!NOTE]
 > Transition to using connection strings for data ingestion in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] by **31 March 2025**. On 31 March 2025, technical support for instrumentation key–based global ingestion in the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] feature of Azure Monitor will end. After that date, your [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources will continue to receive data, but Microsoft no longer provide updates or customer support for instrumentation key–based global ingestion. 
 
-## Data in app/extension telemetry 
+## Adding feature telemetry or custom telemetry calls to your AL code
 
-For an app/extension that has enabled telemetry, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform will emit telemetry events that happen in the context of the AL code of the  app/extension. For example, you get telemetry events when users interact with pages from your app/extension, when REST APIs from your app/extension are called, or when reports from your app/extension are rendered. You get telemetry events when users get error dialogs raised in pages from your app/extension, and when your AL code consumes excessive resources on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server or database.
+When you have enabled telemetry for your app/extension, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform will emit telemetry events that happen in the context of the AL code of the app/extension. For example, you get telemetry events when users interact with pages from your app/extension, when REST APIs from your app/extension are called, or when reports from your app/extension are rendered. You get telemetry events when users get error dialogs raised in pages from your app/extension, and when your AL code consumes excessive resources on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server or database.
 
-Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers telemetry on the following operations (the column _Extension support_ shows the types of events that are emitted to app/extension telemetry):  
+But you might also want to log your own events to telemetry. The easiest way to do this is to use the feature usage module in the System Application. For more information, see [Using Feature telemetry](administration/telemetry-feature-telemetry.md).
 
-[!INCLUDE[prod_short](../includes/include-telemetry-by-area.md)]
+If you want full control of the structure of the events you send to telemetry, then you can also use the raw Session.LogMessage. For more information, see [Creating custom telemetry events](devenv-instrument-application-for-telemetry-app-insights.md).
 
 
 ## See Also  
@@ -62,4 +69,7 @@ Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers te
 [Publishing and Installing Extensions](devenv-how-publish-and-install-an-extension-v2.md)  
 [JSON Files](devenv-json-files.md)  
 [Instrumenting an application for telemetry](devenv-instrument-application-for-telemetry.md)  
+[Data logged to app/extension telemetry](devenv-application-insights-for-extensions-data.md)  
 [Viewing telemetry data in Azure Application Insights](../administration/telemetry-overview.md)  
+[Using Feature telemetry](administration/telemetry-feature-telemetry.md)  
+[Creating custom telemetry events](devenv-instrument-application-for-telemetry-app-insights.md)  
