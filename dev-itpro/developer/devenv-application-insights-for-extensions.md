@@ -61,13 +61,13 @@ When you have enabled telemetry for your app/extension, the [!INCLUDE[prod_short
 You might also want to log your own events to telemetry. The easiest way to do this is to use the feature usage module in the System Application. For more information, see [Using Feature telemetry](../administration/telemetry-feature-telemetry.md). If you want full control of the structure of the events you send to telemetry, then you can also use the raw Session.LogMessage. For more information, see [Creating custom telemetry events](devenv-instrument-application-for-telemetry-app-insights.md).
 
 
-## See Also  
+## See also  
 
-[Get Started with AL](devenv-get-started.md)  
-[Publishing and Installing Extensions](devenv-how-publish-and-install-an-extension-v2.md)  
-[JSON Files](devenv-json-files.md)  
+[Get started with AL](devenv-get-started.md)  
+[Publishing and installing extensions](devenv-how-publish-and-install-an-extension-v2.md)  
+[JSON files](devenv-json-files.md)  
 [Instrumenting an application for telemetry](devenv-instrument-application-for-telemetry.md)  
 [Data logged to app/extension telemetry](devenv-application-insights-for-extensions-data.md)  
 [Viewing telemetry data in Azure Application Insights](../administration/telemetry-overview.md)  
-[Using Feature telemetry](../administration/telemetry-feature-telemetry.md)  
-[Creating custom telemetry events.](devenv-instrument-application-for-telemetry-app-insights.md)  
+[Using feature telemetry](../administration/telemetry-feature-telemetry.md)  
+[Creating custom telemetry events](devenv-instrument-application-for-telemetry-app-insights.md)  
