@@ -44,7 +44,7 @@ The articles in this section describe the key concepts and techniques for using 
 | Learn how to enable telemetry in your app/extension. | [Setting up Telemetry in an App/Extension](devenv-application-insights-for-extensions.md) |  
 |Learn how to administer [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], how to analyze telemetry data with Power BI or KQL, and how to setup alerts on telemetry events from your app/extension. | [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md) |
 | Learn how to use the feature usage system module in your app/extension. | [Feature usage telemetry](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry) |  
-|Learn how to send custom telemetry events from your app/extension. | [Creating custom telemetry events](developer/devenv-instrument-application-for-telemetry-app-insights.md) |  
+|Learn how to send custom telemetry events from your app/extension. | [Creating custom telemetry events](devenv-instrument-application-for-telemetry-app-insights.md) |  
 |Learn how to send custom events from your app/extension to the Windows event log (on-premises only). | [Creating custom events for Windows event log (on-premises only)](devenv-instrument-application-for-telemetry-event-log.md) |
 
 
