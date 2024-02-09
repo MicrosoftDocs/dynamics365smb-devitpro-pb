@@ -1,2 +1,2 @@
-> [!NOTE]
+> [!TIP]
 > In [!INCLUDE[appinsights](../../includes/azure-appinsights-name.md)], the name of custom dimension will be prefixed with `al`. For example, if the dimension string you define in code is `Result`, then in the trace logged in [!INCLUDE[appinsights](../../includes/azure-appinsights-name.md)], the name appears as `alResult`. It is therefore considered good practice to use PascalCasing for your dimension names. This way, your dimension names in [!INCLUDE[appinsights](../../includes/azure-appinsights-name.md)] will conform to the standard naming of dimensions in [!INCLUDE[prod_short](prod_short.md)] telemetry.

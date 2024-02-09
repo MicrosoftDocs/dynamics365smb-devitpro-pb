@@ -119,7 +119,31 @@ When the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] product tea
 * Documented: each telemetry event has good documentation, preferably with guidance on how to react on this event.
 * Actionable (if possible): before we add a new telemetry event, we ask "what can a customer/partner do with this?" If no good answers come to mind, we do not add the event. 
 
-[!INCLUDE[telemetry_dimension_naming](./includes/include-telemetry-dimension-naming.md)]
+### Convention for Message column
+
+Try to use the “Object ActionInPastTense” pattern for the Message part of a LogMessage call. This makes reading the output from a KQL query ordered by timestamp much easier.
+
+Here are some examples from the built-in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry: 
+- Web Service Called 
+- Report cancelled: {report name name}
+- Extension published: {Extension name}
+
+Consider also adding some of the dimension values into the message itself. This makes it easier to browse the events by message column alone (no need to open up custom dimensions for every single event to see e.g. which page it was about). 
+
+### Convention for eventId dimension
+
+It is considered good practice to use unique eventID values for each LogMessage call in your code (also when you use the feature telemetry module from the System Application). When analyzing data from your telemetry, using unique eventIDs makes it very easy for you to identify where in the code the telemetry was emitted from.
+
+Also, consider using a prefix unique to your app/extension. This will help consumers when your events are emitted to per-environment telemetry, where the environment admin might get telemetry data from multiple apps/extensions.
+
+
+### Conventions for dimension names
+
+In [!INCLUDE[appinsights](../../includes/azure-appinsights-name.md)], the name of custom dimension will be prefixed with `al`. For example, if the dimension string you define in code is `Result`, then in the trace logged in [!INCLUDE[appinsights](../../includes/azure-appinsights-name.md)], the name appears as `alResult`. 
+
+It is therefore considered good practice to use PascalCasing for your dimension names. This way, your dimension names in [!INCLUDE[appinsights](../../includes/azure-appinsights-name.md)] will conform to the standard naming of dimensions in [!INCLUDE[prod_short](prod_short.md)] telemetry.
+
+Also, do not use dimension keys with spaces in them. It makes KQL queries more difficult to write.  
 
 
 ## Examples
@@ -129,11 +153,18 @@ The following code snippets create simple telemetry events from AL. They create 
 **Using a dictionary:**
 ```AL
 var
-    CustDimension: Dictionary of [Text, Text];
+  CustDimension: Dictionary of [Text, Text];
 begin
-    CustDimension.Add('Result', 'failed');
-    CustDimension.Add('Reason', 'critical error in code');
-    LogMessage('MyExt-0001', 'This is a critical error message', Verbosity::Normal, DataClassification::SystemMetadata, TelemetryScope::ExtensionPublisher, CustDimension);
+  CustDimension.Add('Result', 'failed');
+  CustDimension.Add('Reason', 'critical error in code');
+  LogMessage(
+    'MyExt-0002', 
+    'Critical error happened in MyExt module 1', 
+    Verbosity::Normal, 
+    DataClassification::SystemMetadata, 
+    TelemetryScope::ExtensionPublisher, // this event will only go to app telemetry
+    CustDimension
+  );
 end;
 ```
 
@@ -141,7 +172,15 @@ end;
 
 ```AL
 begin
-    LogMessage('MyExt-0001', 'This is a critical error message', Verbosity::Critical, DataClassification::SystemMetadata, TelemetryScope::ExtensionPublisher, 'Result', 'failed', 'Reason', 'critical error in code');
+  LogMessage(
+    'MyExt-0002', 
+    'Critical error happened in MyExt module 1', 
+    Verbosity::Critical, 
+    DataClassification::SystemMetadata, 
+    TelemetryScope::ExtensionPublisher, // this event will only go to app telemetry
+    'Result', 'failed',     
+    'Reason', 'critical error in code'
+  );
 end;
 ```
 
