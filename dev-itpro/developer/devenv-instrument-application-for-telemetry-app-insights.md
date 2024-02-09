@@ -208,12 +208,10 @@ LogMessage('MyExt-0005', 'This is an verbose message', Verbosity::Verbose, DATAC
 ``` 
 -->
 
-## See Also
+## See also
 
-[Using Feature telemetry](../administration/telemetry-feature-telemetry.md)
+[Using feature telemetry](../administration/telemetry-feature-telemetry.md)
 [LogMessage method](methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md)  
 [LogMessage method](methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)  
-[Instrumenting an Application for Telemetry](devenv-instrument-application-for-telemetry.md)  
-[Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md)  
-
-
+[Instrumenting an application for telemetry](devenv-instrument-application-for-telemetry.md)  
+[Monitoring and analyzing telemetry](../administration/telemetry-overview.md)  

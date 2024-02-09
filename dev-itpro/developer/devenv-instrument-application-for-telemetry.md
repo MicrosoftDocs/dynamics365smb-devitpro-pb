@@ -2,11 +2,12 @@
 title: Developing telemetry into your Business Central application
 description: This article describes how to add code to application objects that enables you to gather telemetry.
 ms.custom: na
-ms.date: 05/24/2022
-ms.reviewer: na
+ms.date: 05/24/2024
+ms.reviewer: solsen
 ms.topic: conceptual
 author: jswymer
 ---
+
 # Instrumenting an application with telemetry
 
 This article describes how you can implement telemetry signals in your application for emitting telemetry data. This data can then be collected and visualized for analyzing the application against the desired business goals, troubleshooting, and more.
@@ -42,7 +43,7 @@ The articles in this section describe the key concepts and techniques for using 
 |To|See|  
 |--------|---------|  
 | Learn how to enable telemetry in your app/extension. | [Setting up Telemetry in an App/Extension](devenv-application-insights-for-extensions.md) |  
-|Learn how to administer [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], how to analyze telemetry data with Power BI or KQL, and how to setup alerts on telemetry events from your app/extension. | [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md) |
+|Learn how to administer [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], how to analyze telemetry data with Power BI or KQL, and how to set up alerts on telemetry events from your app/extension. | [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md) |
 |Learn about what data is logged out of the box to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] from your app/extension. | [Data logged to app/extension telemetry](devenv-application-insights-for-extensions-data.md) |
 | Learn how to use the feature usage system module in your app/extension. | [Using Feature telemetry](../administration/telemetry-feature-telemetry.md) |
 |Learn how to send custom telemetry events from your app/extension. | [Creating custom telemetry events](devenv-instrument-application-for-telemetry-app-insights.md) |  
