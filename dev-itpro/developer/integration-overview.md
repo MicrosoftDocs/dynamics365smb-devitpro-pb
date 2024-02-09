@@ -95,6 +95,8 @@ For more information, see [Integrating Business Central with Microsoft Dataverse
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Pages by using virtual tables in Dataverse. With Power Pages, you can allow unlicensed external users to access data stored in [!INCLUDE[prod_short](../includes/prod_short.md)] online.
 
+[![Shows how data virtualization works between Business Central and Dataverse](media/dataverse-virtual-tables.svg)](media/dataverse-virtual-tables.svg#lightbox)
+
 For more information, see [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md).
 
 
