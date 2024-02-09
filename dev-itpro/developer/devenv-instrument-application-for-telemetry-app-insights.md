@@ -139,11 +139,11 @@ Also, consider using a prefix unique to your app/extension. This will help consu
 
 ### Conventions for dimension names
 
-In [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], the name of custom dimension will be prefixed with `al`. For example, if the dimension string you define in code is `Result`, then in the trace logged in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], the name appears as `alResult`. 
+When logging events to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], [!INCLUDE[prod_short](includes/prod_short.md)] server prefixes the name of custom dimension keys from AL with the string `al`. For example, if the dimension key you define in code is `Result`, then in the event logged in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], the key name appears as `alResult`. 
 
-It is therefore considered good practice to use PascalCasing for your dimension names. This way, your dimension names in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] will conform to the standard naming of dimensions in [!INCLUDE[prod_short](includes/prod_short.md)] telemetry.
+It is therefore considered good practice to use PascalCasing for your dimension key names. This way, your dimension key names in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] will conform to the standard naming of dimension keys in [!INCLUDE[prod_short](includes/prod_short.md)] telemetry.
 
-Also, do not use dimension keys with spaces in them. It makes KQL queries more difficult to write.  
+Also, do not use dimension key names with spaces in them. It makes KQL queries more difficult to write. 
 
 
 ## Examples
