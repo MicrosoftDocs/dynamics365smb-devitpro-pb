@@ -29,6 +29,8 @@ For more information, see [Web services overview](../webservices/web-services.md
 
 When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] from another application, you should use REST APIs, either the built-in APIs or custom APIs. 
 
+[![Shows how the API stack in Business Central](media/api-stack.svg)](media/api-stack.svg#lightbox)
+
 For more information on how to explore and develop against APIs, best practices, and which built-in APIs exist, see [REST API overview](../webservices/api-overview.md).
 
 
@@ -108,6 +110,16 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Shopify
 
 For more information, see [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started).
 
+
+## Built-in: Telemetry with Azure Application Insights
+
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Azure Application Insights by enabling the telemetry feature. With telemetry, system owners can look at usage and lifecycle operations of environments/apps, diagnose problems, and analyze operations that affect performance.
+
+:::image type="content" source="../developer/media/telemetry-architecture.svg" alt-text="Shows how Environment-level telemetry and App/extension-level telemetry works in Business Central AL" lightbox="../developer/media/telemetry-architecture.svg":::
+
+For more information, see [Monitoring and Analyzing Telemetry in Azure Application Insights](../administration/telemetry-overview.md).
+
+
 ## Integrating to external systems from AL code: calling external services
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with external systems by using the *HttpClient* data type in AL code.
@@ -118,7 +130,7 @@ For more information, see [Integrating to external services with the HttpClient 
 
 ## Integrating to external systems from AL code: Azure services
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Functions or Azure Key Vault. 
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Blob Services, Azure File Services, Azure Functions, or Azure Key Vault. 
 
 :::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
@@ -155,7 +167,9 @@ For more information, see [Integrating with Microsoft Teams overview](../develop
 [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md)  
 [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
 [Integrating Business Central with Shopify](/dynamics365/business-central/shopify/get-started)  
+[Integrating Business Central with Azure Application Insights](../administration/telemetry-overview.md)
 [Integrating to external services from AL using the HttpClient data type](../developer/devenv-httpclient.md)  
+[Integrating Business Central with Azure services](./azure-integration-overview.md)
 [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)
 [Integrating Business Central with Azure services](./azure-integration-overview.md)
 [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md)  
