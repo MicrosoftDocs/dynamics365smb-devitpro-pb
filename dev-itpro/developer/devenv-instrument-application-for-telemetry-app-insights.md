@@ -139,9 +139,9 @@ Also, consider using a prefix unique to your app/extension. This will help consu
 
 ### Conventions for dimension names
 
-In [!INCLUDE[appinsights](../../includes/azure-appinsights-name.md)], the name of custom dimension will be prefixed with `al`. For example, if the dimension string you define in code is `Result`, then in the trace logged in [!INCLUDE[appinsights](../../includes/azure-appinsights-name.md)], the name appears as `alResult`. 
+In [!INCLUDE[appinsights](includes/azure-appinsights-name.md)], the name of custom dimension will be prefixed with `al`. For example, if the dimension string you define in code is `Result`, then in the trace logged in [!INCLUDE[appinsights](includes/azure-appinsights-name.md)], the name appears as `alResult`. 
 
-It is therefore considered good practice to use PascalCasing for your dimension names. This way, your dimension names in [!INCLUDE[appinsights](../../includes/azure-appinsights-name.md)] will conform to the standard naming of dimensions in [!INCLUDE[prod_short](prod_short.md)] telemetry.
+It is therefore considered good practice to use PascalCasing for your dimension names. This way, your dimension names in [!INCLUDE[appinsights](includes/azure-appinsights-name.md)] will conform to the standard naming of dimensions in [!INCLUDE[prod_short](includes/prod_short.md)] telemetry.
 
 Also, do not use dimension keys with spaces in them. It makes KQL queries more difficult to write.  
 
@@ -184,13 +184,14 @@ begin
 end;
 ```
 
-## <a name="*"></a>Conditions on filtering events to be sent
+## <a name="*"></a>Conditions on when events are sent
 
-- For privacy reasons, events that have a `DataClassification` other than `SystemMetadata` aren't sent to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]. During development of your extension, it's good practice to have a privacy review of the use of LogMessage calls to ensure that customer data isn't mistakenly leaked into [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources. 
+For privacy reasons, events that have a `DataClassification` other than `SystemMetadata` aren't sent to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]. During development of your extension, it's good practice to have a privacy review of the use of LogMessage calls to ensure that customer data isn't mistakenly leaked into [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources. 
 
-- For [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises, the **Diagnostic Trace Level** setting on the [!INCLUDE[server](includes/server.md)] instance controls which signals are sent, based on their severity level.
+### Diagnostic Trace Level (on-premises only)
+For [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises, the **Diagnostic Trace Level** setting on the [!INCLUDE[server](includes/server.md)] instance controls which signals are sent, based on their severity level.
 
-    If the **Diagnostic Trace Level** is set to **Warning** for example, then **Normal** and **Verbose** signals won't be sent to Application Insights. For more information, see [Configuring Business Central Server - General](../administration/configure-server-instance.md#general-settings).
+If the **Diagnostic Trace Level** is set to **Warning** for example, then **Normal** and **Verbose** signals won't be sent to Application Insights. For more information, see [Configuring Business Central Server - General](../administration/configure-server-instance.md#general-settings).
 
 
 <!--
