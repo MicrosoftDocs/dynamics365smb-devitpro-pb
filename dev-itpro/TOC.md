@@ -958,10 +958,14 @@
 
 ### Instrumenting with telemetry
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
-#### [Sending extension telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
-#### [Adding feature usage telemetry](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)
-#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
-#### [Creating custom events for event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
+#### [Setting up Telemetry in an App/Extension](developer/devenv-application-insights-for-extensions.md)
+#### [Using Feature telemetry](administration/telemetry-feature-telemetry.md)
+#### [Creating custom telemetry events](developer/devenv-instrument-application-for-telemetry-app-insights.md)
+#### [Creating custom events for Windows event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
+#### Reference documentation (telemetry)
+##### [Feature usage (System Application)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)
+##### [LogMessage method](developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md)  
+##### [LogMessage method](developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)  
 
 
 ### Accessing device capabilities

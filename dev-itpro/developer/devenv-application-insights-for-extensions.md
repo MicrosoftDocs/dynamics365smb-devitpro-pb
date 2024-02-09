@@ -1,5 +1,5 @@
 ---
-title: Sending Extension Telemetry to Azure Application Insights 
+title: Setting up Telemetry in an App/Extension 
 description: Describes how to configure an extension to send telemetry data to Azure Application Insights. 
 ms.custom: na
 ms.date: 04/01/2021
@@ -8,7 +8,7 @@ ms.topic: conceptual
 author: jswymer
 ---
 
-# Sending App/Extension Telemetry to Azure Application Insights
+# Setting up Telemetry in an App/Extension 
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
@@ -24,7 +24,7 @@ The [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource is a
 
 ## Add the Application Insights information to the app/extension
 
-The next step is to add the `"applicationInsightsConnectionString"` setting the extension's app.json as shown:
+The next step is to enable telemetry in your app/extension. You do this by adding the `"applicationInsightsConnectionString"` setting to the extension's app.json as shown:
 
 ```json
 "applicationInsightsConnectionString": "<connection string>"
@@ -48,14 +48,18 @@ Where `<instrumentation key>` is replaced by the key denoted in the connection s
 > Transition to using connection strings for data ingestion in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] by **31 March 2025**. On 31 March 2025, technical support for instrumentation key–based global ingestion in the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] feature of Azure Monitor will end. After that date, your [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources will continue to receive data, but Microsoft no longer provide updates or customer support for instrumentation key–based global ingestion. 
 
 ## Data in app/extension telemetry 
+
+For an app/extension that has enabled telemetry, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform will emit telemetry events that happen in the context of the AL code of the  app/extension. For example, you get telemetry events when users interact with pages from your app/extension, when REST APIs from your app/extension are called, or when reports from your app/extension are rendered. You get telemetry events when users get error dialogs raised in pages from your app/extension, and when your AL code consumes excessive resources on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server or database.
+
 Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers telemetry on the following operations (the column _Extension support_ shows the types of events that are emitted to app/extension telemetry):  
 
 [!INCLUDE[prod_short](../includes/include-telemetry-by-area.md)]
 
 
 ## See Also  
+
 [Get Started with AL](devenv-get-started.md)  
 [Publishing and Installing Extensions](devenv-how-publish-and-install-an-extension-v2.md)  
-[JSON Files](devenv-json-files.md)
-[Viewing telemetry data in Application Insights](../administration/telemetry-overview.md)  
-[LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)  
+[JSON Files](devenv-json-files.md)  
+[Instrumenting an application for telemetry](devenv-instrument-application-for-telemetry.md)  
+[Viewing telemetry data in Azure Application Insights](../administration/telemetry-overview.md)  
