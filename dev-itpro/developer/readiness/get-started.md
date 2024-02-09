@@ -5,7 +5,7 @@ author: a-emniel
 ms.topic: conceptual
 ms.reviewer: solsen
 ms.author: kurtju
-ms.date: 11/30/2023
+ms.date: 02/06/2024
 ms.collection: get-started
 ---
 
@@ -41,17 +41,15 @@ To develop apps for [!INCLUDE [prod_short](../includes/prod_short.md)], you're r
 
 To obtain an object range for developing a [!INCLUDE [prod_short](../includes/prod_short.md)] app, you must have access to PartnerSource Business Center (PSBC). Either of the following agreements gives you access to PSBC, which is a first step towards getting a development license:
 
-- [An active Partner Registration Agreement](https://businesscenter.mbs.microsoft.com/#contentdetail/MSDpartneragreem) (PRA)
+- [Partner Registration Agreement (PRA)](https://businesscenter.mbs.microsoft.com/#contentdetail/MSDpartneragreem) (PRA)
+- Solution Provider Agreement (SPA)<!--(https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram)-->
 
-- [A Registered Solution Program Addendum](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram) (RSPA)
+> [!NOTE]  
+> We're no longer accepting new partner enrollments for the Solution Provider Agreement.
 
 The relevant contract can be requested through your local Regional Operations Center (ROC) Contracts and Agreements Team below:
 
-- [mbscon@microsoft.com](mailto:mbscon@microsoft.com) if you're based in Europe, the Middle East, or Africa.
-
-- [aka.ms/PLOIntake](https://aka.ms/PLOIntake) if you're based in the Americas – to request access [REQUEST ACCESS](https://idwebelements.microsoft.com/GroupManagement.aspx?Group=PLOPortalAccess&Operation=join).
-
-- [mbslques@microsoft.com](mailto:mbslques@microsoft.com) if you're based in the Asia Pacific region.
+- [partnerlifecycle@microsoft.com](mailto:partnerlifecycle@microsoft.com) (for all regions).
 
 ## Step 3: Your unique app specifications
 
@@ -65,10 +63,8 @@ Depending on where you deploy your [!INCLUDE [prod_short](../includes/prod_short
 
 You can request an object range by downloading the object range request form [here](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram). After completion, send them to your Regional Operational Center (ROC) for processing:
 
-- [mbscon@microsoft.com](mailto:mbscon@microsoft.com) if you're based in Europe, the Middle East, or Africa.
-
-- [mbsagree@microsoft.com](mailto:mbsagree@microsoft.com) if you're based in the Americas.
-
+- [mbsquery@microsoft.com](mailto:mbsquery@microsoft.com) if you're based in Europe, the Middle East, or Africa.
+- [mbsorder@microsoft.com](mailto:mbsorder@microsoft.com) if you're based in the Americas.
 - [mbslques@microsoft.com](mailto:mbslques@microsoft.com) if you're based in the Asia Pacific region.
 
 ### Downloading your development license file
