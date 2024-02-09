@@ -11,15 +11,15 @@ author: jswymer
 
 This article describes how you can implement telemetry signals in your application for emitting telemetry data. This data can then be collected and visualized for analyzing the application against the desired business goals, troubleshooting, and more.
 
-## Telemetry overview
+## Event logging vs. Telemetry
 
 One aspect of *event logging* is the data collection about the working and deployment infrastructure of an application to diagnose conditions and troubleshoot problems that affect its operation and performance. For example, this type of event logging includes [!INCLUDE[server](includes/server.md)] events and events from SQL Server. For on-premises installations, the Windows event log has traditionally been the place where such data was logged and analyzed.
 
 A newer aspect of logging is *telemetry*, which is the collection of data about how your application works in production. Telemetry can tell you about specific activities that users perform within the application in the production environment. Telemetry also helps troubleshooting in those situations where you aren't able to reproduce the conditions experienced by the user or have no access to the user's environment. Telemetry can be divided into different categories, like: telemetry for usage, telemetry for errors, telemetry for performance, and telemetry for lifecycle events.
 
-## Telemetry resources
+## Resources where telemetry can be logged
 
-There are two different resources where telemetry trace signals can be sent for monitoring and analyzing: 
+There are two different resources where log data can be sent for monitoring and analyzing: 
 - Event Log (only for on-premises), and
 - Microsoft [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] (both for on-premises and for online). 
 
