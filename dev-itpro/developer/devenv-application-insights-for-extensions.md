@@ -58,9 +58,7 @@ Where `<instrumentation key>` is replaced by the key denoted in the connection s
 
 When you have enabled telemetry for your app/extension, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform will emit telemetry events that happen in the context of the AL code of the app/extension. For example, you get telemetry events when users interact with pages from your app/extension, when REST APIs from your app/extension are called, or when reports from your app/extension are rendered. You get telemetry events when users get error dialogs raised in pages from your app/extension, and when your AL code consumes excessive resources on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server or database.
 
-But you might also want to log your own events to telemetry. The easiest way to do this is to use the feature usage module in the System Application. For more information, see [Using Feature telemetry](administration/telemetry-feature-telemetry.md).
-
-If you want full control of the structure of the events you send to telemetry, then you can also use the raw Session.LogMessage. For more information, see [Creating custom telemetry events](devenv-instrument-application-for-telemetry-app-insights.md).
+You might also want to log your own events to telemetry. The easiest way to do this is to use the feature usage module in the System Application. For more information, see [Using Feature telemetry](../administration/telemetry-feature-telemetry.md). If you want full control of the structure of the events you send to telemetry, then you can also use the raw Session.LogMessage. For more information, see [Creating custom telemetry events](devenv-instrument-application-for-telemetry-app-insights.md).
 
 
 ## See Also  
@@ -71,5 +69,5 @@ If you want full control of the structure of the events you send to telemetry, t
 [Instrumenting an application for telemetry](devenv-instrument-application-for-telemetry.md)  
 [Data logged to app/extension telemetry](devenv-application-insights-for-extensions-data.md)  
 [Viewing telemetry data in Azure Application Insights](../administration/telemetry-overview.md)  
-[Using Feature telemetry](administration/telemetry-feature-telemetry.md)  
+[Using Feature telemetry](../administration/telemetry-feature-telemetry.md)  
 [Creating custom telemetry events](devenv-instrument-application-for-telemetry-app-insights.md)  
