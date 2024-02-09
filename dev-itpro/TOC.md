@@ -1507,9 +1507,12 @@
 ### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
+
 <!-- Azure services -->
 ## Integrating with Azure services
 ### [Overview](developer/azure-integration-overview.md)
+### [Connecting to Azure Blob Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Blob%20Services%20API)  
+### [Connecting to Azure File Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20File%20Services%20API)  
 ### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)
 ### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
 ### [Connecting to Azure Key Vault](developer/devenv-app-key-vault-overview.md)
