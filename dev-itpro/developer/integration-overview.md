@@ -16,12 +16,11 @@ The article describes integration patterns, integration scenarios, and integrati
 
 ## Integrations to/from Business Central are done with web services
 
-All integrations to/from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: REST API, SOAP, and OData. 
+All integrations (except for a few built-in integrations) to/from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: REST API, SOAP, and OData. 
 
 [![Shows the three different types of web services in Business Central](media/webservice-stack.svg)](media/webservice-stack.svg#lightbox)
 
-
-The recommended way to expose a web service for [!INCLUDE[prod_short](../includes/prod_short.md)] is using the REST API stack. 
+The recommended way to use web services for [!INCLUDE[prod_short](../includes/prod_short.md)] is by using the REST API stack. 
 
 For more information, see [Web services overview](../webservices/web-services.md).
 
@@ -96,8 +95,6 @@ For more information, see [Integrating Business Central with Microsoft Dataverse
 ## Built-in: Integrating Business Central with Microsoft Power Pages (preview)
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Pages by using virtual tables in Dataverse. With Power Pages, you can allow unlicensed external users to access data stored in [!INCLUDE[prod_short](../includes/prod_short.md)] online.
-
-[![Shows how data virtualization works between Business Central and Dataverse](media/dataverse-virtual-tables.svg)](media/dataverse-virtual-tables.svg#lightbox)
 
 For more information, see [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md).
 
