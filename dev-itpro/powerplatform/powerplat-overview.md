@@ -28,6 +28,9 @@ To work with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual
 ## Virtual tables for Business Central
 
 Open Data Protocol (OData) APIs exposed through API Pages in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can be consumed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and virtual tables can be generated. 
+
+:::image type="content" source="../developer/media/dataverse-virtual-tables.svg#lightbox" alt-text="Shows how data virtualization works between Business Central and Dataverse":::
+
 Virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] acts as regular tables and therefore also in Power Platform. Makers can now build experiences in customer engagement apps with data directly from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with full CRUD capability and without copying to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and apply all the logic already residing in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ### Using Custom APIs as basis for virtual tables

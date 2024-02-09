@@ -17,6 +17,9 @@ ms.collection:
 
 With Power Apps, you have the flexibility to build the perfect solution for your business domain &mdash; one that uses Business Central data and processes and maximizes your productivity. With Power Apps custom UI, AI builder, and augmented-reality (AR)/mixed-reality (MR) technologies, you can take your business to the next level with cutting-edge innovation and customized UI. 
 
+[![Shows how the Power Platform connector integrates to Business Central](../developer/media/power-platform-connector-diagram.svg)](../developer/media/power-platform-connector-diagram.svg#lightbox)
+
+
 You can use Power Apps whether you're on the go with the mobile app, collaborating with your team inside Teams, or directly it in the browser through a URL.
 
 With the latest release, we're rolling out a set of tools and sample apps in preview for you to try out. These tools and samples will help you get started building your own apps and make your Power Apps development more effective.

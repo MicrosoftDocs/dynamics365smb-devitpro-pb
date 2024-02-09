@@ -39,6 +39,8 @@ For more information on how to explore and develop against APIs, best practices,
 A *connector* is a proxy or a wrapper around an API that allows the user of the connector to talk to the underlying service. [!INCLUDE[prod_short](../includes/prod_short.md)] has its own connector that allows Power Platform products such as Power Automate, Power Apps, and Logic apps to communicate with 
 [!INCLUDE[prod_short](../includes/prod_short.md)] through REST APIs (this is another reason for using REST APIs compared to OData/SOAP enabled pages/queries/codeunits).
 
+[![Shows how the Power Platform connector integrates to Business Central](media/power-platform-connector-diagram.svg)](media/power-platform-connector-diagram.svg#lightbox)
+
 For more information, see [Power Platform Connectors Overview](/connectors/connectors) and [Dynamics 365 Business Central Connector](/connectors/dynamicssmbsaas) in the Power Platform documentation.
 
 ## Connector: Integrating Business Central with Microsoft Power Apps
@@ -94,6 +96,8 @@ For more information, see [Integrating Business Central with Microsoft Dataverse
 ## Built-in: Integrating Business Central with Microsoft Power Pages (preview)
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Pages by using virtual tables in Dataverse. With Power Pages, you can allow unlicensed external users to access data stored in [!INCLUDE[prod_short](../includes/prod_short.md)] online.
+
+[![Shows how data virtualization works between Business Central and Dataverse](media/dataverse-virtual-tables.svg)](media/dataverse-virtual-tables.svg#lightbox)
 
 For more information, see [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md).
 
