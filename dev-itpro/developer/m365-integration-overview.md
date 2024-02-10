@@ -121,8 +121,11 @@ For more information, see [Integrating with Microsoft Teams overview](../develop
 
 [!INCLUDE[m365_word](includes/m365-word-name.md)] is used in [!INCLUDE [prod_short](../includes/prod_short.md)] in the following scenarios:
 
-1. If an organization wants to change the layout of their outgoing documents such as quotes, sales orders, or sales invoices, a power user can use Word as the design tool changing the layout. For more information, see [Using Word Templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout).
-1. To can make it easy to mass communicate in print or email, you can Word templates in [!INCLUDE [prod_short](../includes/prod_short.md)] to merge data from entities such as contacts, customers, and vendors with a Word mail merge document. For more information, see [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge).
+First, if an organization wants to change the layout of their outgoing documents such as quotes, sales orders, or sales invoices, a power user can use Word as the design tool changing the layout. For more information, see [Using Word Templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout).
+
+:::image type="content" source="/dynamics365/business-central/media/word-layout.png" alt-text="Shows how AL apps/extensions can call Azure or Microsoft services from Business Central" lightbox="/dynamics365/business-central/media/word-layout.png":::
+
+Second, to can make it easy to mass communicate in print or email, you can Word templates in [!INCLUDE [prod_short](../includes/prod_short.md)] to merge data from entities such as contacts, customers, and vendors with a Word mail merge document. For more information, see [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge).
 
 
 ## See also
