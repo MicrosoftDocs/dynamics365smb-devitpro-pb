@@ -1504,7 +1504,7 @@
 <!-- Microsoft M365 -->
 ## Integrating with Microsoft 365
 ### [Overview](developer/m365-integration-overview.md)
-### [Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Integrating with Onedrive for Business](/dynamics365/business-central/across-onedrive-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
 <!-- Microsoft Teams -->
 ### Integrating with Microsoft Teams

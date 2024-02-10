@@ -8,11 +8,14 @@ ms.author: kepontop
 ms.date: 02/10/2024
 ---
 
-# Integrating Business Central with Microsoft 365 
+# Integrating Business Central with [!INCLUDE[m365](includes/m365-name.md)]
 
-[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to Microsoft 365.
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)].
 
-Here are some supported integrations between Business Central and Microsoft 365:
+Something something [!INCLUDE[m365](includes/m365-name.md)].
+
+
+Here are some supported integrations between Business Central and [!INCLUDE[m365](includes/m365-name.md)]:
 
 - [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)]
 - [!INCLUDE[m365_teams](includes/m365-teams-name.md)]
