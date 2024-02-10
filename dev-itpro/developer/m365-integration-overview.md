@@ -115,7 +115,7 @@ For more information, see [Integrating with Microsoft Teams overview](../develop
 ## See also
 
 [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel)  
-[Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)
+[Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  
 [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
 [Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview)  
 [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook)  
