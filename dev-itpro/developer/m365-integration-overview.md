@@ -32,12 +32,16 @@ Here are some supported integrations between [!INCLUDE [prod_short](../includes/
 
 ## Using [!INCLUDE[m365_excel](includes/m365-excel-name.md)] with [!INCLUDE [prod_short](../includes/prod_short.md)]
 
-[!INCLUDE[m365_excel](includes/m365-word-name.md)] is used in [!INCLUDE [prod_short](../includes/prod_short.md)] in the following scenarios:
+[!INCLUDE[m365_excel](includes/m365-excel-name.md)] is used in [!INCLUDE [prod_short](../includes/prod_short.md)] in the following scenarios:
 
-1. With pages that display a list of records in rows and columns, like a list of customers, sale orders, or invoices, you can export the list to Microsoft Excel, and view it there. 
-Depending on the page, you have two options: Either *Open in Excel*, which opens the data as read-only, or *Edit in Excel*, which allows you to save changes back to BC. For more information, see [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel).
-1. Power users can use Excel as the design tool for the layout of analytical reports. These reports can the be run by any user that has access to them.
-Reports with Excel layouts. For more information, see [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)
+1. Viewing and/or editing [!INCLUDE [prod_short](../includes/prod_short.md)] data in Excel.
+1. To support analytical reporting.
+
+With pages that display a list of records in rows and columns, like a list of customers, sale orders, or invoices, you can export the list to [!INCLUDE[m365_excel](includes/m365-excel-name.md)], and view it there. Depending on the page, you have two options: Either *Open in Excel*, which opens the data as read-only, or *Edit in Excel*, which allows you to save changes back to BC. For more information, see [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel).
+
+:::image type="content" source="/dynamics365/business-central/media/excel-layout-2.png" alt-text="Shows an example of an Excel layout" lightbox="/dynamics365/business-central/media/excel-layout-2.png":::
+
+Power users can use Excel as the design tool for the layout of analytical reports. These reports can the be run by any user that has access to them. For more information, see [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)
 
 
 > [!TIP]
@@ -80,6 +84,9 @@ With [!INCLUDE [prod_short](../includes/prod_short.md)], you can manage business
 1. Contact insights. This add-in lets you look up [!INCLUDE [prod_short](../includes/prod_short.md)] customer or vendor information in [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)] emails and calendar appointments. It also lets you create and send emails including [!INCLUDE [prod_short](../includes/prod_short.md)] business documents, such a sales quote or invoice to a contact.
 
 1. Document view. When a business document is sent in an email, the add-in provides a direct link from email to the actual business document in [!INCLUDE [prod_short](../includes/prod_short.md)].
+
+:::image type="content" source="/dynamics365/business-central/media/outlook-attach-files.png" alt-text="Shows how to add attachments from an email to records in Business Central" lightbox="/dynamics365/business-central/media/outlook-attach-files.png":::
+
 
 For more information, see [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook).
 
