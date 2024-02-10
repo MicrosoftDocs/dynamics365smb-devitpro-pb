@@ -1513,7 +1513,7 @@
 #### Tabs
 ##### [Add Business Central tabs](developer/devenv-develop-for-teams-tabs.md)
 ##### [Add and remove recommended content](developer/devenv-develop-for-teams-tab-content.md)
-#### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.#md)
+##### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 #### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 
