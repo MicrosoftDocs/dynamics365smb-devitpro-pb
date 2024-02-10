@@ -70,3 +70,4 @@ There are two ways that a Power BI report, page, or visual can be added to a pag
 [Integrating with Microsoft Power BI](/dynamics365/business-central/admin-powerbi-overview)  
 [How users can embed Power BI Reports in Business Central](/dynamics365/business-central/across-working-with-powerbi)  
 [How AL developers can add Power BI Reports to pages](../developer/devenv-power-bi-report-parts.md)  
+[Business Central integrations overview](../developer/integration-overview.md)   
