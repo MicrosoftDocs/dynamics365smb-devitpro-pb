@@ -72,6 +72,9 @@ When [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-n
 - The *Open in Excel* and *Edit in Excel* actions on list pages will automatically copy the Excel file to OneDrive, then open it in Excel Online. 
 - Sending a report to an Excel or Word file will automatically copy the file to OneDrive, then open it in Excel or Word online. 
 
+:::image type="content" source="/dynamics365/business-central/media/one-drive-attachments-w-outline.png" alt-text="The Open in OneDrive and Share actions for attachments" lightbox="/dynamics365/business-central/media/connect-to-azure-services.svg":::
+
+
 For more information, see [Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview).
 
 With [!INCLUDE[prod_short](../includes/prod_short.md)] online, the connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and OneDrive is automatically configured, and the OneDrive features are readily available to users by default. With [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises, it requires more set. For more information, see [Managing OneDrive Integration with Business Central](/dynamics365/business-central/admin-onedrive-integration).
