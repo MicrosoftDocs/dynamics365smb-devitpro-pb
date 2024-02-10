@@ -17,12 +17,27 @@ Something something [!INCLUDE[m365](includes/m365-name.md)].
 
 Here are some supported integrations between Business Central and [!INCLUDE[m365](includes/m365-name.md)]:
 
+- [!INCLUDE[m365_excel](includes/m365-excel-name.md)]
 - [!INCLUDE[m365_graph](includes/m365-graph-name.md)]
 - [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)]
 - [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)]
 - [!INCLUDE[m365_sharepoint](includes/m365-sharepoint-name.md)]
 - [!INCLUDE[m365_teams](includes/m365-teams-name.md)]
 - [!INCLUDE[m365_word](includes/m365-word-name.md)]
+
+
+## Using [!INCLUDE[m365_excel](includes/m365-excel-name.md)] with [!INCLUDE [prod_short](../includes/prod_short.md)]
+
+[!INCLUDE[m365_excel](includes/m365-word-name.md)] is used in [!INCLUDE [prod_short](../includes/prod_short.md)] in the following scenarios:
+
+1. With pages that display a list of records in rows and columns, like a list of customers, sale orders, or invoices, you can export the list to Microsoft Excel, and view it there. 
+Depending on the page, you have two options: Either *Open in Excel*, which opens the data as read-only, or *Edit in Excel*, which allows you to save changes back to BC. For more information, see [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel).
+1. Power users can use Excel as the design tool for the layout of analytical reports. These reports can the be run by any user that has access to them.
+Reports with Excel layouts. For more information, see [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)
+
+
+> [!TIP]
+> If you also enable integration to [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)], Excel workbooks from [!INCLUDE [prod_short](../includes/prod_short.md)] are opened in your browser by using Excel for the web. 
 
 
 ## Integrating to [!INCLUDE[m365_graph](includes/m365-graph-name.md)] (from AL code)
@@ -99,6 +114,8 @@ For more information, see [Integrating with Microsoft Teams overview](../develop
 
 ## See also
 
+[Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel)  
+[Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)
 [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
 [Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview)  
 [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook)  
