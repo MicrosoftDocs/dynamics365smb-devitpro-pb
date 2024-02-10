@@ -1,30 +1,48 @@
 ---
-title: How-to topic template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: How-to description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: how-to #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+title: Use page scripting tool for acceptance testing (preview)
+description: Learn how to use the page scripting tool in the Business Central web client to record and replay your interaction with the user interface (UI).
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: how-to
+ms.collection: 
 ms.date: 02/07/2024
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template 
 ---
 
-# Use Page Scripting tool user acceptance testing (preview)
+# Use page scripting tool for acceptance testing (preview)
 
-In this release we preview the new Page Scripting tool. With this tool, customers and consultants can easily record and replay user acceptance tests directly inside the client.
+The page scripting tool in the Business Central web client lets you record your interaction with the user interface (UI), such as opening pages, selecting actions, filling in fields, and so on. You can then replay the recording to automatically replicate the exact same actions in the UI that were done during recording. As the recording is replayed, you receive real-time status feedback on whether an action succeeds or fails.
 
-The page scripting tool is a utility in the Business Central web client that enables you to record your actions in the user interface (UI) and then replay them afterwards. One important use case is capturing and executing user acceptance tests, which is also the intitial focus of this new tool
+The primary use of the page scripting tool is for testing business processes and scenarios in the application and validating they continue to work as expected after changes or updates to the application. This testing is often referred to as user acceptance testing (UAT). The page scripting tool makes the testing easier and faster because it eliminates the need to manually walk through each scenario in the UI.
 
-### What actions are captured
+## What interactions are captured?
 
-The page scripting tool is focused on capturing actions coming from executing AL. It's not a generic HTML automation tool. Hence it cannot automate, e.g., control add-ins such as charts, embedded Power BI or Power Apps, or anything outside of the Business Central web client experience.
+The page scripting tool captures any user interactions that run AL source code.  It doesn't capture interactions within UI embedded in Business Central but the executed code isn't AL and outside of the realm of Business Central, such as control add-ins, embedded Power BI reports, or Power Apps.
 
-## Opening the tool
+## Prerequisites
 
-The Page Scripting tool is accessed from the **Settings** ![cog wheel](media/settings_icon_small.png) icon settings cog wheel in the web client. It will, however, only appear if the user has permissions to record or replay with the Page Scripting tool
+## Get started with page scripting tool
 
-When you open the Page Scripting tool, it will ask you whether to start a new recording, or to open an existing one to inspect or replay it.
+You can start the page scripting tool from any page, but we recommennd that to start from the role center.
+
+1. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon.
+
+   The **Page Scripting** pane opens on the right side. 
+
+1. In the **Page Scripting** pane, select the **Start new** button in the middel of the pane or the **New recording** icon in the control bar at the top.
+
+   Recording starts. as indicated by red circle in control bar.
+1. Do the task as you typically would.
+
+   As you interact with the application, the actions you do are added in sequence to the **Page Scripting** pane.
+
+1. If you want to pause the recording select the **Stop** button in the control bar. To resume recording, select the **Start recording** button.
+1. When you are done, select the **Stop** button.
+
+   - If you want to play back the recording. select the **Play** button.
+1. I
+In this section, you will learn about other actions that you can perform while you're recording a business process, to take full advantage of Task recorder's capabilities.
 
 ## Record
 
