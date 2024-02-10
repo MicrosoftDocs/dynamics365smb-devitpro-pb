@@ -61,6 +61,15 @@ There are two ways that a Power BI report, page, or visual can be added to a pag
 1. A developer can programatically add them from AL. For more information, see [Adding Power BI Report parts to pages](../developer/devenv-power-bi-report-parts.md).
 
 
+## Integrating Business Central with Microsoft Power Pages (preview)
+
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Pages by using virtual tables in Dataverse. With Power Pages, you can allow unlicensed external users to access data stored in [!INCLUDE[prod_short](../includes/prod_short.md)] online.
+
+[![Shows how data virtualization works between Business Central and Dataverse](../developer/media/dataverse-virtual-tables.svg)](../developer/media/dataverse-virtual-tables.svg#lightbox)
+
+For more information, see [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md).
+
+
 ## See also
 
 [Business Central connector for Power Platform](/connectors/dynamicssmbsaas)   
