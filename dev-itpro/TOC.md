@@ -1501,16 +1501,24 @@
 
 ## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
 
+<!-- Microsoft M365 -->
+## Integrating with Microsoft 365
+### [Overview](developer/m365-integration-overview.md)
+### [Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+
 <!-- Microsoft Teams -->
-## Integrating with Microsoft Teams
-### [Overview](developer/devenv-develop-for-teams.md)
-### [Extend Teams cards](developer/devenv-develop-for-teams-cards.md)
-### Tabs
-#### [Add Business Central tabs](developer/devenv-develop-for-teams-tabs.md)
-#### [Add and remove recommended content](developer/devenv-develop-for-teams-tab-content.md)
-### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
-### [FAQ](developer/devenv-dev-faq-teams.md)
+### Integrating with Microsoft Teams
+#### [Overview](developer/devenv-develop-for-teams.md)
+#### [Extend Teams cards](developer/devenv-develop-for-teams-cards.md)
+#### Tabs
+##### [Add Business Central tabs](developer/devenv-develop-for-teams-tabs.md)
+##### [Add and remove recommended content](developer/devenv-develop-for-teams-tab-content.md)
+#### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.#md)
+#### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
+
+<!-- end Microsoft M365 -->
+
 
 <!-- Azure services -->
 ## Integrating with Azure services
