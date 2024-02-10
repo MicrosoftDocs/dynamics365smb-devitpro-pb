@@ -1505,6 +1505,12 @@
 ## Integrating with Microsoft 365
 ### [Overview](developer/m365-integration-overview.md)
 ### [Integrating with Onedrive for Business](/dynamics365/business-central/across-onedrive-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
+### [Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Integrating with SharePoint (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint)  
 
 <!-- Microsoft Teams -->
 ### Integrating with Microsoft Teams
@@ -1516,6 +1522,9 @@
 ##### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 #### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
+
+### [Using Word Templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 
 <!-- end Microsoft M365 -->
 
