@@ -10,12 +10,16 @@ ms.date: 02/10/2024
 
 # Integrating Business Central with [!INCLUDE[m365](includes/m365-name.md)]
 
-[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)].
-
-Something something [!INCLUDE[m365](includes/m365-name.md)].
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)], augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
 
 
-Here are some supported integrations between Business Central and [!INCLUDE[m365](includes/m365-name.md)]:
+## Integrating to [!INCLUDE[m365](includes/m365-name.md)]
+
+!!! This section will be moved to the integrations overview article !!!
+
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)], augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
+
+Here are some supported integrations between [!INCLUDE [prod_short](../includes/prod_short.md)] and [!INCLUDE[m365](includes/m365-name.md)]:
 
 - [!INCLUDE[m365_excel](includes/m365-excel-name.md)]
 - [!INCLUDE[m365_graph](includes/m365-graph-name.md)]
@@ -42,7 +46,7 @@ Reports with Excel layouts. For more information, see [Using Excel to design ana
 
 ## Integrating to [!INCLUDE[m365_graph](includes/m365-graph-name.md)] (from AL code)
 
-Connect to and work with the [!INCLUDE[m365_graph](includes/m365-graph-name.md)] with just a few lines of AL code. The module works as a wrapper of the [!INCLUDE[m365_graph](includes/m365-graph-name.md)] REST API. 
+You can connect to and work with the [!INCLUDE[m365_graph](includes/m365-graph-name.md)] with just a few lines of AL code. The module works as a wrapper of the [!INCLUDE[m365_graph](includes/m365-graph-name.md)] REST API. 
 
 :::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure or Microsoft services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
@@ -56,11 +60,13 @@ For more information, see [Microsoft Graph (System Application reference)](https
 
 ## Integrating to [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)]
 
-[!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)] is a cloud storage service that is included in Microsoft 365. [!INCLUDE[prod_short](../includes/prod_short.md)] makes it easy to store, manage, and share files with other people through OneDrive. When [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)] is enabled in [!INCLUDE[prod_short](../includes/prod_short.md)], additional functionality becomes available such as 
+[!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)] is a cloud storage service that is included in Microsoft 365. [!INCLUDE[prod_short](../includes/prod_short.md)] makes it easy to store, manage, and share files with other people through OneDrive. 
 
-- *Open in OneDrive* and *Share* actions are available on most pages where files are available, such as the Report Inbox or where files are attached to records. 
-- The Open in Excel and Edit in Excel actions on list pages will automatically copy the Excel file to OneDrive, then open it in Excel Online. 
-- Sending a report to an Excel or Word file will automatically copy the file to OneDrive, then open it in the Excel or Word online. 
+When [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)] is enabled in [!INCLUDE[prod_short](../includes/prod_short.md)], additional functionality becomes available such as 
+
+- New actions *Open in OneDrive* and *Share* actions are now available on most pages where files are available, such as the Report Inbox or where files are attached to records. 
+- The *Open in Excel* and *Edit in Excel* actions on list pages will automatically copy the Excel file to OneDrive, then open it in Excel Online. 
+- Sending a report to an Excel or Word file will automatically copy the file to OneDrive, then open it in Excel or Word online. 
 
 For more information, see [Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview).
 
@@ -71,12 +77,9 @@ With [!INCLUDE[prod_short](../includes/prod_short.md)] online, the connection be
 
 With [!INCLUDE [prod_short](../includes/prod_short.md)], you can manage business interactions with your customers and vendors, directly in [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)]. By installing the [!INCLUDE [prod_short](../includes/prod_short.md)] add-in for [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)], you get the following two capabilities:
 
-1. Contact insights
-    This add-in lets you look up [!INCLUDE [prod_short](../includes/prod_short.md)] customer or vendor information in [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)] emails and calendar appointments. It also lets you create and send emails including [!INCLUDE [prod_short](../includes/prod_short.md)] business documents, such a sales quote or invoice to a contact.
+1. Contact insights. This add-in lets you look up [!INCLUDE [prod_short](../includes/prod_short.md)] customer or vendor information in [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)] emails and calendar appointments. It also lets you create and send emails including [!INCLUDE [prod_short](../includes/prod_short.md)] business documents, such a sales quote or invoice to a contact.
 
-1. Document view
-
-    When a business document is sent in an email, the add-in provides a direct link from email to the actual business document in [!INCLUDE [prod_short](../includes/prod_short.md)].
+1. Document view. When a business document is sent in an email, the add-in provides a direct link from email to the actual business document in [!INCLUDE [prod_short](../includes/prod_short.md)].
 
 For more information, see [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook).
 
