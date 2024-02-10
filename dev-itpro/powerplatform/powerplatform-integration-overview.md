@@ -24,13 +24,13 @@ A *connector* is a proxy or a wrapper around an API that allows the user of the 
 
 For more information, see [Power Platform Connectors Overview](/connectors/connectors) and [Dynamics 365 Business Central Connector](/connectors/dynamicssmbsaas) in the Power Platform documentation.
 
-## Connector: Integrating Business Central with Microsoft Power Apps
+## Integrating Business Central with Microsoft Power Apps
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Apps by using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Platform. With Power Apps, you have the flexibility to build the perfect solution for your business domain&mdash;one that uses [!INCLUDE[prod_short](../includes/prod_short.md)] data and processes and maximizes your productivity. With Power Apps custom UI, AI builder, and augmented-reality (AR)/mixed-reality (MR) technologies, you can take your business to the next level with cutting-edge innovation and customized UI. 
 
 For more information, see [Integrating with Microsoft Power Apps overview](../powerplatform/power-apps-overview.md)
 
-## Connector: Integrating Business Central with Microsoft Power Automate
+## Integrating Business Central with Microsoft Power Automate
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Automate by using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Platform. With Power Automate, you can set up and use flows to connect business-process tasks performed by different users. System tasks, such as automatic posting, can be included as steps in flows, preceded or followed by user tasks. Requesting and granting approval to create new records are typical flow steps.
 
@@ -44,7 +44,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microso
 - Connect a Power BI semantic model to [!INCLUDE[prod_short](../includes/prod_short.md)] to read data.
 - Embed a Power BI report, page, or visual in the [!INCLUDE[prod_short](../includes/prod_short.md)] client.
 
-### Connector: How to connect a Power BI semantic model to Business Central to read data
+### How to connect a Power BI semantic model to Business Central to read data
 
 [!INCLUDE[prod_short](../includes/prod_short.md)] integrates with Power BI through a connector using OData. The connector can read data from API pages/queries and from UI pages exposed as OData web services.
 
