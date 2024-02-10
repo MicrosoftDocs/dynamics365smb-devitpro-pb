@@ -119,7 +119,7 @@ For more information, see [Integrating with Microsoft Teams overview](../develop
 [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
 [Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview)  
 [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook)  
-[Integrating with SharePoint (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint)
+[Integrating with SharePoint (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint)  
 [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md)   
 [Using Word Templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout)  
 [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge)  
