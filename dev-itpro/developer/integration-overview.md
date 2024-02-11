@@ -33,26 +33,22 @@ When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] fr
 For more information on how to explore and develop against APIs, best practices, and which built-in APIs exist, see [REST API overview](../webservices/api-overview.md).
 
 
-## Integrating Business Central with Power Platform
+<!-- ## Integrating Business Central with Power Platform
 
 !!! Pending merge of Power Platform overview page !!!
 
-
-[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)], augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to Power Platform. Enabling integrations to Power Platform augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
 
 :::image type="content" source="media/powerplatform-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/powerplatform-integrations.svg":::
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] integrates to the following [!INCLUDE[m365](includes/m365-name.md)] products and services:
+[!INCLUDE [prod_short](../includes/prod_short.md)] integrates to the following Power Platform products and services:
 
-- [!INCLUDE[m365_excel](includes/m365-excel-name.md)]
-- [!INCLUDE[m365_graph](includes/m365-graph-name.md)]
-- [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)]
-- [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)]
-- [!INCLUDE[m365_sharepoint](includes/m365-sharepoint-name.md)]
-- [!INCLUDE[m365_teams](includes/m365-teams-name.md)]
-- [!INCLUDE[m365_word](includes/m365-word-name.md)]
+- Power BI
+- Power Automate
+- Power Apps
+- Power Pages
 
-For more information, see [Integrating Business Central with Microsoft 365](m365-integration-overview.md). 
+For more information, see [Integrating Business Central with Microsoft 365](m365-integration-overview.md).  -->
 
 
 ## Business Central connector for Power Platform
@@ -101,7 +97,7 @@ There are two ways that a Power BI report, page, or visual can be added to a pag
 1. A developer can programatically add them from AL. For more information, see [Adding Power BI Report parts to pages](../developer/devenv-power-bi-report-parts.md).
 
 
-## Integrating Business Central with Dynamics Dataverse and apps
+<!-- ## Integrating Business Central with Dynamics Dataverse and apps
 
 !!! To replace the existing two sections (DV + Sales) !!!
 
@@ -115,7 +111,7 @@ There are two ways that a Power BI report, page, or visual can be added to a pag
 - Dynamics 365 Sales
 
 For more information, see [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md) and [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).  
-
+ -->
 
 
 ## Built-in: Integrating Business Central with Dataverse
