@@ -36,7 +36,7 @@ Power users can use Excel as the design tool for the layout of analytical report
 
 You can connect to and work with the [!INCLUDE[m365_graph](includes/m365-graph-name.md)] with just a few lines of AL code. The module works as a wrapper of the [!INCLUDE[m365_graph](includes/m365-graph-name.md)] REST API. 
 
-:::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure or Microsoft services from Business Central" lightbox="media/connect-to-azure-services.svg":::
+:::image type="content" source="media/connect-to-m365-services.svg" alt-text="Shows how AL apps/extensions can call Azure or Microsoft services from Business Central" lightbox="media/connect-to-m365-services.svg":::
 
 As an AL developer, you can use the module to do the following tasks:
 - Create a [!INCLUDE[m365_graph](includes/m365-graph-name.md)] authorization.
