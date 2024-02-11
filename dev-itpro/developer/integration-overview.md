@@ -33,6 +33,28 @@ When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] fr
 For more information on how to explore and develop against APIs, best practices, and which built-in APIs exist, see [REST API overview](../webservices/api-overview.md).
 
 
+## Integrating Business Central with Power Platform
+
+!!! Pending merge of Power Platform overview page !!!
+
+
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)], augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
+
+:::image type="content" source="media/powerplatform-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/powerplatform-integrations.svg":::
+
+[!INCLUDE [prod_short](../includes/prod_short.md)] integrates to the following [!INCLUDE[m365](includes/m365-name.md)] products and services:
+
+- [!INCLUDE[m365_excel](includes/m365-excel-name.md)]
+- [!INCLUDE[m365_graph](includes/m365-graph-name.md)]
+- [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)]
+- [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)]
+- [!INCLUDE[m365_sharepoint](includes/m365-sharepoint-name.md)]
+- [!INCLUDE[m365_teams](includes/m365-teams-name.md)]
+- [!INCLUDE[m365_word](includes/m365-word-name.md)]
+
+For more information, see [Integrating Business Central with Microsoft 365](m365-integration-overview.md). 
+
+
 ## Business Central connector for Power Platform
 
 A *connector* is a proxy or a wrapper around an API that allows the user of the connector to talk to the underlying service. [!INCLUDE[prod_short](../includes/prod_short.md)] has its own connector that allows Power Platform products such as Power Automate, Power Apps, and Logic apps to communicate with 
@@ -165,14 +187,6 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 
 For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
 
-
-## Integrating to external systems from AL code: Microsoft Teams
-
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Microsoft Teams. [!INCLUDE [prod_short](../includes/prod_short.md)] offers an app that connects Microsoft Teams to the data in [!INCLUDE [prod_short](../includes/prod_short.md)] so that users can quickly share details across team members and respond faster to inquiries. 
-
-[![Teams integration with Business Central.](media/teams-intro-v3.png)](media/teams-intro-v3.png#lightbox)
-
-For more information, see [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md).
 
 ## See also
 
