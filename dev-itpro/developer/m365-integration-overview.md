@@ -23,10 +23,16 @@ In this article, we introduce some of these additional features.
 
 :::image type="content" source="media/connect-to-excel.svg" alt-text="Shows how AL apps/extensions can call Azure or Microsoft services from Business Central" lightbox="media/connect-to-excel.svg":::
 
+With pages that display a list of records in rows and columns, like a list of customers, sale orders, or invoices, users can export the list to [!INCLUDE[m365_excel](includes/m365-excel-name.md)], and view it there. Depending on the page, two options exists: 
+- *Open in Excel*, where the [!INCLUDE [prod_short](../includes/prod_short.md)] platform produces an Excel workbook with the data as read-only.
+- *Edit in Excel*, which use the [!INCLUDE [prod_short](../includes/prod_short.md)] add-in for Excel. The Excel add-in reads data from [!INCLUDE [prod_short](../includes/prod_short.md)] using the page exposed as an OData web service endpoint. Any data updates are also done through this web service endpoint.
 
-With pages that display a list of records in rows and columns, like a list of customers, sale orders, or invoices, you can export the list to [!INCLUDE[m365_excel](includes/m365-excel-name.md)], and view it there. Depending on the page, you have two options: Either *Open in Excel*, which opens the data as read-only, or *Edit in Excel*, which allows you to save changes back to BC. For more information, see [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel).
+For more information, see [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel).
 
-Power users can use Excel as the design tool for the layout of analytical reports. These reports can the be run by any user that has access to them. For more information, see [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)
+
+Power users can use Excel as the design tool for the layout of analytical reports and then upload the Excel layout workbook to [!INCLUDE [prod_short](../includes/prod_short.md)]. These reports can the be run by any user that has access to them. When generating the Excel report, the [!INCLUDE [prod_short](../includes/prod_short.md)] server merges the Excel layout workbook with data and sends the resulting Excel workbook to the user as a downloaded file. 
+
+For more information, see [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)
 
 
 > [!TIP]
