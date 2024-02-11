@@ -21,9 +21,10 @@ In this article, we introduce some of these additional features.
 1. Viewing and/or editing [!INCLUDE [prod_short](../includes/prod_short.md)] data in Excel.
 1. To support analytical reporting.
 
-With pages that display a list of records in rows and columns, like a list of customers, sale orders, or invoices, you can export the list to [!INCLUDE[m365_excel](includes/m365-excel-name.md)], and view it there. Depending on the page, you have two options: Either *Open in Excel*, which opens the data as read-only, or *Edit in Excel*, which allows you to save changes back to BC. For more information, see [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel).
+:::image type="content" source="media/connect-to-excel.svg" alt-text="Shows how AL apps/extensions can call Azure or Microsoft services from Business Central" lightbox="media/connect-to-excel.svg":::
 
-:::image type="content" source="/dynamics365/business-central/media/excel-layout-2.png" alt-text="Shows an example of an Excel layout" lightbox="/dynamics365/business-central/media/excel-layout-2.png":::
+
+With pages that display a list of records in rows and columns, like a list of customers, sale orders, or invoices, you can export the list to [!INCLUDE[m365_excel](includes/m365-excel-name.md)], and view it there. Depending on the page, you have two options: Either *Open in Excel*, which opens the data as read-only, or *Edit in Excel*, which allows you to save changes back to BC. For more information, see [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel).
 
 Power users can use Excel as the design tool for the layout of analytical reports. These reports can the be run by any user that has access to them. For more information, see [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)
 
