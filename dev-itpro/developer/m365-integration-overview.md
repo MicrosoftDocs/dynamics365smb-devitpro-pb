@@ -109,13 +109,20 @@ For more information, see [Integrating with Microsoft Teams overview](../develop
 
 ## Using [!INCLUDE[m365_word](includes/m365-word-name.md)] with [!INCLUDE [prod_short](../includes/prod_short.md)]
 
-[!INCLUDE[m365_word](includes/m365-word-name.md)] is used in [!INCLUDE [prod_short](../includes/prod_short.md)] in the following scenarios:
+Power users in [!INCLUDE [prod_short](../includes/prod_short.md)] can use [!INCLUDE[m365_word](includes/m365-word-name.md)] for the following scenarios:
 
-1. If an organization wants to change the layout of their outgoing documents such as quotes, sales orders, or sales invoices, a power user can use Word as the design tool changing the layout. For more information, see [Using Word Templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout).
-1. To can make it easy to mass communicate in print or email, power users can use mail merge commands in Word and hence use Word as the design tool to create the layout of the message. They can can then upload the Word document to [!INCLUDE [prod_short](../includes/prod_short.md)]. When running the campaign, the [!INCLUDE [prod_short](../includes/prod_short.md)] platform merges data from entities such as contacts, customers, and vendors with the template to produce the final documents to send to clients. For more information, see [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge).
 
+1. To change the layout of their outgoing documents
+1. To can make it easy to mass communicate in print or email
 
 :::image type="content" source="media/connect-to-word.svg" alt-text="Shows how Business Central integrates to Outlook" lightbox="media/connect-to-word.svg":::
+
+
+If an organization wants to change the layout of their outgoing documents such as quotes, sales orders, or sales invoices, a power user can use Word as the design tool changing the layout. For more information, see [Using Word Templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout).
+
+
+To make it easy to mass communicate in print or email, power users can use mail merge commands in Word and hence use Word as the design tool to create the layout of the message. They can can then upload the Word document to [!INCLUDE [prod_short](../includes/prod_short.md)]. When running the campaign, the [!INCLUDE [prod_short](../includes/prod_short.md)] platform merges data from entities such as contacts, customers, and vendors with the template to produce the final documents to send to clients. For more information, see [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge).
+
 
 
 
