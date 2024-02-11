@@ -110,6 +110,8 @@ For more information, see [Integrating Business Central with Dynamics 365 Sales]
 
 [!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)], augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
 
+:::image type="content" source="media/m365-integrations-2.svg" alt-text="Shows how Business Central integrates to Excel" lightbox="media/m365-integrations-2.svg":::
+
 Here are some supported integrations between [!INCLUDE [prod_short](../includes/prod_short.md)] and [!INCLUDE[m365](includes/m365-name.md)]:
 
 - [!INCLUDE[m365_excel](includes/m365-excel-name.md)]
