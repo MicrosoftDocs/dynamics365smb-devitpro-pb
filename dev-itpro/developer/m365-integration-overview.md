@@ -66,7 +66,8 @@ When [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-n
 
 For more information, see [Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview).
 
-With [!INCLUDE[prod_short](../includes/prod_short.md)] online, the connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and OneDrive is automatically configured, and the OneDrive features are readily available to users by default. With [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises, it requires more set. For more information, see [Managing OneDrive Integration with Business Central](/dynamics365/business-central/admin-onedrive-integration).
+> [!NOTE]
+> With [!INCLUDE[prod_short](../includes/prod_short.md)] online, the connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and OneDrive is automatically configured, and the OneDrive features are readily available to users by default. With [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises, it requires more set. For more information, see [Managing OneDrive Integration with Business Central](/dynamics365/business-central/admin-onedrive-integration).
 
 
 ## Using [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)] with [!INCLUDE [prod_short](../includes/prod_short.md)]
