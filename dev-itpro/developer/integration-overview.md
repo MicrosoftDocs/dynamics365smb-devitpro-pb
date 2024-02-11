@@ -100,6 +100,24 @@ There are two ways that a Power BI report, page, or visual can be added to a pag
 1. A user can embed a Power BI report, page, or scorecard on pages that include a Power BI part. For more information, see [Working with Power BI Reports in Business Central](/dynamics365/business-central/across-working-with-powerbi).
 1. A developer can programatically add them from AL. For more information, see [Adding Power BI Report parts to pages](../developer/devenv-power-bi-report-parts.md).
 
+
+## Integrating Business Central with Dynamics Dataverse and apps
+
+!!! To replace the existing two sections (DV + Sales) !!!
+
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to other Dynamics 365 products and services. Enabling integrations to Dynamics 365 augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
+
+:::image type="content" source="media/dynamics-integrations-overview.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/dynamics-integrations-overview.svg":::
+
+[!INCLUDE [prod_short](../includes/prod_short.md)] integrates to the following Dynamics 365 products and services:
+
+- Microsoft Dataverse
+- Dynamics 365 Sales
+
+For more information, see [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md) and [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).  
+
+
+
 ## Built-in: Integrating Business Central with Dataverse
 
 [!INCLUDE[prod_short](../includes/prod_short.md)] has four built-in ways to integrate with [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]: 
