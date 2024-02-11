@@ -21,7 +21,7 @@ In this article, we introduce some of these additional features.
 1. Viewing and/or editing [!INCLUDE [prod_short](../includes/prod_short.md)] data in Excel.
 1. To support analytical reporting.
 
-:::image type="content" source="media/connect-to-excel.svg" alt-text="Shows how AL apps/extensions can call Azure or Microsoft services from Business Central" lightbox="media/connect-to-excel.svg":::
+:::image type="content" source="media/connect-to-excel.svg" alt-text="Shows how Business Central integrates to Excel" lightbox="media/connect-to-excel.svg":::
 
 With pages that display a list of records in rows and columns, like a list of customers, sale orders, or invoices, users can export the list to [!INCLUDE[m365_excel](includes/m365-excel-name.md)], and view it there. Depending on the page, two options exists: 
 - *Open in Excel*, where the [!INCLUDE [prod_short](../includes/prod_short.md)] platform produces an Excel workbook with the data as read-only.
@@ -30,9 +30,7 @@ With pages that display a list of records in rows and columns, like a list of cu
 For more information, see [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel).
 
 
-Power users can use Excel as the design tool for the layout of analytical reports and then upload the Excel layout workbook to [!INCLUDE [prod_short](../includes/prod_short.md)]. These reports can the be run by any user that has access to them. When generating the Excel report, the [!INCLUDE [prod_short](../includes/prod_short.md)] server merges the Excel layout workbook with data and sends the resulting Excel workbook to the user as a downloaded file. 
-
-For more information, see [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)
+Power users can use Excel as the design tool for the layout of analytical reports and then upload the Excel layout workbook to [!INCLUDE [prod_short](../includes/prod_short.md)]. These reports can the be run by any user that has access to them. When generating the Excel report, the [!INCLUDE [prod_short](../includes/prod_short.md)] server merges the Excel layout workbook with data and sends the resulting Excel workbook to the user as a downloaded file. For more information, see [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)
 
 
 > [!TIP]
@@ -43,7 +41,7 @@ For more information, see [Using Excel to design analytical reports](/dynamics36
 
 You can connect to and work with the [!INCLUDE[m365_graph](includes/m365-graph-name.md)] with just a few lines of AL code. The module works as a wrapper of the [!INCLUDE[m365_graph](includes/m365-graph-name.md)] REST API. 
 
-:::image type="content" source="media/connect-to-m365-services.svg" alt-text="Shows how AL apps/extensions can call Azure or Microsoft services from Business Central" lightbox="media/connect-to-m365-services.svg":::
+:::image type="content" source="media/connect-to-m365-services.svg" alt-text="Shows how Business Central integrates to Microsoft graph" lightbox="media/connect-to-m365-services.svg":::
 
 As an AL developer, you can use the module to do the following tasks:
 - Create a [!INCLUDE[m365_graph](includes/m365-graph-name.md)] authorization.
@@ -63,7 +61,7 @@ When [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-n
 - The *Open in Excel* and *Edit in Excel* actions on list pages will automatically copy the Excel file to OneDrive, then open it in Excel Online. 
 - Sending a report to an Excel or Word file will automatically copy the file to OneDrive, then open it in Excel or Word online. 
 
-:::image type="content" source="media/connect-to-onedrive.svg" alt-text="Shows how AL apps/extensions can call Azure or Microsoft services from Business Central" lightbox="media/connect-to-onedrive.svg":::
+:::image type="content" source="media/connect-to-onedrive.svg" alt-text="Shows how Business Central integrates to Onedrive" lightbox="media/connect-to-onedrive.svg":::
 
 
 For more information, see [Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview).
@@ -79,7 +77,7 @@ With [!INCLUDE [prod_short](../includes/prod_short.md)], you can manage business
 
 1. Document view. When a business document is sent in an email, the add-in provides a direct link from email to the actual business document in [!INCLUDE [prod_short](../includes/prod_short.md)].
 
-:::image type="content" source="/dynamics365/business-central/media/outlook-attach-files.png" alt-text="Shows how to add attachments from an email to records in Business Central" lightbox="/dynamics365/business-central/media/outlook-attach-files.png":::
+:::image type="content" source="media/connect-to-outlook.svg" alt-text="Shows how Business Central integrates to Outlook" lightbox="media/connect-to-outlook.svg":::
 
 
 For more information, see [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook).
