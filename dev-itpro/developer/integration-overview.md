@@ -106,7 +106,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Dynamic
 For more information, see [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
 
 
-## Integrating to [!INCLUDE[m365](includes/m365-name.md)]
+## Built-in: Integrating to [!INCLUDE[m365](includes/m365-name.md)]
 
 [!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)], augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
 
