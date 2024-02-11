@@ -12,7 +12,7 @@ ms.date: 02/10/2024
 
 [!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)], augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
 
-:::image type="content" source="media/m365-integrations.svg" alt-text="Shows how Business Central integrates to Excel" lightbox="media/m365-integrations.svg":::
+:::image type="content" source="media/m365-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/m365-integrations.svg":::
 
 In this article, we introduce some of these additional features.
 
