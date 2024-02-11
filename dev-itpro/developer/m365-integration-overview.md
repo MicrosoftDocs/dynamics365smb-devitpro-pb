@@ -14,24 +14,6 @@ ms.date: 02/10/2024
 
 In this article, we introduce some of these additional features.
 
-
-## Integrating to [!INCLUDE[m365](includes/m365-name.md)]
-
-!!! This section will be moved to the integrations overview article !!!
-
-[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)], augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
-
-Here are some supported integrations between [!INCLUDE [prod_short](../includes/prod_short.md)] and [!INCLUDE[m365](includes/m365-name.md)]:
-
-- [!INCLUDE[m365_excel](includes/m365-excel-name.md)]
-- [!INCLUDE[m365_graph](includes/m365-graph-name.md)]
-- [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)]
-- [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)]
-- [!INCLUDE[m365_sharepoint](includes/m365-sharepoint-name.md)]
-- [!INCLUDE[m365_teams](includes/m365-teams-name.md)]
-- [!INCLUDE[m365_word](includes/m365-word-name.md)]
-
-
 ## Using [!INCLUDE[m365_excel](includes/m365-excel-name.md)] with [!INCLUDE [prod_short](../includes/prod_short.md)]
 
 [!INCLUDE[m365_excel](includes/m365-excel-name.md)] is used in [!INCLUDE [prod_short](../includes/prod_short.md)] in the following scenarios:

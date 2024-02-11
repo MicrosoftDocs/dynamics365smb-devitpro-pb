@@ -105,6 +105,24 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Dynamic
 
 For more information, see [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
 
+
+## Integrating to [!INCLUDE[m365](includes/m365-name.md)]
+
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)], augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
+
+Here are some supported integrations between [!INCLUDE [prod_short](../includes/prod_short.md)] and [!INCLUDE[m365](includes/m365-name.md)]:
+
+- [!INCLUDE[m365_excel](includes/m365-excel-name.md)]
+- [!INCLUDE[m365_graph](includes/m365-graph-name.md)]
+- [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)]
+- [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)]
+- [!INCLUDE[m365_sharepoint](includes/m365-sharepoint-name.md)]
+- [!INCLUDE[m365_teams](includes/m365-teams-name.md)]
+- [!INCLUDE[m365_word](includes/m365-word-name.md)]
+
+For more information, see [Integrating Business Central with Microsoft 365](m365-integration-overview.md). 
+
+
 ## Built-in: Integrating Business Central with Shopify
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Shopify by installing and configuring the Shopify Connector app. By connecting your Shopify store (or stores) with [!INCLUDE[prod_short](../includes/prod_short.md)], you can maximize your business productivity and manage and view insights from your business and your Shopify store as one unit.
@@ -167,10 +185,10 @@ For more information, see [Integrating with Microsoft Teams overview](../develop
 [How AL developers can add Power BI Reports to pages](../developer/devenv-power-bi-report-parts.md)  
 [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md)  
 [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
+[Integrating Business Central with Microsoft 365](m365-integration-overview.md)  
 [Integrating Business Central with Shopify](/dynamics365/business-central/shopify/get-started)  
 [Integrating Business Central with Azure Application Insights](../administration/telemetry-overview.md)
 [Integrating to external services from AL using the HttpClient data type](../developer/devenv-httpclient.md)  
 [Integrating Business Central with Azure services](./azure-integration-overview.md)
 [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)
-[Integrating Business Central with Azure services](./azure-integration-overview.md)
-[Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md)  
+[Integrating Business Central with Azure services](./azure-integration-overview.md)  
