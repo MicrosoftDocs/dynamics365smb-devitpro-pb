@@ -14,47 +14,63 @@ ms.custom: bap-template
 
 The page scripting tool in the Business Central web client lets you record your interaction with the user interface (UI), such as opening pages, selecting actions, filling in fields, and so on. You can then replay the recording to automatically replicate the exact same actions in the UI that were done during recording. As the recording is replayed, you receive real-time status feedback on whether an action succeeds or fails.
 
-The primary use of the page scripting tool is for testing business processes and scenarios in the application and validating they continue to work as expected after changes or updates to the application. This testing is often referred to as user acceptance testing (UAT). The page scripting tool makes the testing easier and faster because it eliminates the need to manually walk through each scenario in the UI.
+A primary use of the page scripting tool is testing business processes and scenarios in the application and validating they continue to work as expected after changes or updates to the application. This testing is often referred to as user acceptance testing (UAT). The page scripting tool makes the testing easier and faster because it eliminates the need to manually walk through each scenario in the UI.
 
-## What interactions are captured?
+## What is captured?
 
-The page scripting tool captures any user interactions that run AL source code.  It doesn't capture interactions within UI embedded in Business Central but the executed code isn't AL and outside of the realm of Business Central, such as control add-ins, embedded Power BI reports, or Power Apps.
+The page scripting tool captures both the user interactions and the resulting actions done by the application. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool, so it can't automate, for example, control add-ins such as charts, embedded Power BI or Power Apps, or anything outside of the Business Central web client experience.
 
 ## Prerequisites
 
+- To record, your user account must have the **tbd** permission set or equivalent permissions.
+- To play back a recording, your user account must have the **tbd** permission set or equivalent permissions.
+
 ## Get started with page scripting tool
 
-You can start the page scripting tool from any page, but we recommennd that to start from the role center.
+Whether you want to record or play back a recording. you can start the page scripting tool from any page <!-- but we recommend that to start from the role center.-->
 
 1. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon.
 
-   The **Page Scripting** pane opens on the right side. 
+   The **Page Scripting** pane opens on the right side.
 
-1. In the **Page Scripting** pane, select the **Start new** button in the middel of the pane or the **New recording** icon in the control bar at the top.
+1. In the **Page Scripting** pane, select the **Start new** button in the pane or the **New recording** icon in the control bar at the top.
 
-   Recording starts. as indicated by red circle in control bar.
-1. Do the task as you typically would.
+   Recording starts, as indicated by solid red circle in the control bar.
+1. Run through the task as you typically would.
 
    As you interact with the application, the actions you do are added in sequence to the **Page Scripting** pane.
 
 1. If you want to pause the recording select the **Stop** button in the control bar. To resume recording, select the **Start recording** button.
 1. When you are done, select the **Stop** button.
 
-   - If you want to play back the recording. select the **Play** button.
-1. I
-In this section, you will learn about other actions that you can perform while you're recording a business process, to take full advantage of Task recorder's capabilities.
+1. To play back the recording right away, select the **Play** button.
+1. To save the recording to file so you run it later or share with someone, select the **Save** icon in the control bar.
+
+The sections that follow explain other capabilities of the page scripting tool for recording and replaying interactions. 
 
 ## Record
 
-To start recording a set of user actions, e.g., a user acceptance test, select "Start new" when opening the tool, or "New > New recording" in the Page Scripting toolbar.
+1. Open the page where you want to start recording.
+1. To start recording, in the **Page Scripting** pane, select the **Start new** button or the **New recording** icon in the control bar at the top.
 
-Once recording has started, as indicated by a solid blinking red circle icon in the toolbar, you can perform the user actions you want to capture in the client. The Page Scripting tool will capture both the user actions as well as the resulting actions, such as pages opening or closing, selections, actions pressed etc.
+   Recording starts, as indicated by the solid red circle in the control bar.
 
-During recording it is possible to delete the last captured step.
+1. Go to the page and run through the steps that you want to record, as you typically would.
 
-To stop the recording of steps, use the Stop button in the toolbar, and to record additional steps, click the round "Start recording" button in the toolbar.
+   As you interact with the application, your actions and the resulting actions done by the application itself are added in sequence to the **Page Scripting** pane.
 
-This example shows some captured steps along with the toolbar, and the recording icon active. <!--alt text start -->Example of recording steps<!--alt text end -->
+1. While recording, you
+
+   - To pause the recording, select the **Stop** button in the control bar.
+
+      While paused, you can ...
+
+   - To resume recording to more actions, select the **Start recording** button.
+
+   - To delete the last captured step, select **...** next to step and then **Delete**.
+
+1. When you're done recording, select the **Stop** button.
+
 
 ## Options for capturing steps
 
@@ -62,43 +78,46 @@ During recording, you can manually insert special steps by right clicking a page
 
 ### Copy to and paste from clipboard
 
-The Page Scripting tool comes with its own clipboard that you can use to copy field values, e.g., to insert these in other fields, in expressions or for validation of results. You can copy to or paste from the clipboard with the right click context menu on a page control during recording.
+The Page Scripting tool comes with its own clipboard that you can use to copy field values, for example, to insert these in other fields, in expressions or for validation of results. You can copy to or paste from the clipboard with the right select context menu on a page control during recording.
 
 ### Paste session info
 
-When recording you have access to session info, such as the user ID. This allows you to, e.g., set filters based the current user. To insert the user id, right click a control in the page, and select Paste > Session Info > User ID. See image above for example.
+When recording you have access to session info, such as the user ID. This allows you to, e.g., set filters based the current user. To insert the user id, right select a control in the page, and select Paste > Session Info > User ID. See image above for example.
 
 ### Validate a given outcome
 
-During the recording you can insert validation steps to check the outcome when playing back. To do this, right click a control, e.g., a field or cue, and select "Validate" in the context menu. This inserts a validation step with the current value. You can change the value that is being validated by finding the validate step in the Page Scripting step list, click the context menu "..." and open the properties.
+During the recording you can insert validation steps to check the outcome when playing back. To do this, right select a control, for example, a field or cue, and select "Validate" in the context menu. This inserts a validation step with the current value. You can change the value that is being validated by finding the validate step in the Page Scripting step list, select the context menu "..." and open the properties.
 
 ### Make some steps conditional
 
 Another option during the recording is to insert a conditional branch step. One example is to only perform some steps if there are no current rows in a list.
 
-To insert a branch of conditional steps, right click a control and select "Add conditonal steps when" and select a desired option.
+To insert a branch of conditional steps, right-click a control and select "Add conditonal steps when" and select a desired option.
 
 After the conditional step has been inserted, you can add additional steps that should be performed if the condition is met.
 
 To end the condition branch, select End scope in the Page Scripting steps list.
 
-The actual condition can be changed by selecing the condition step in the Page Scripting step list, expand the properties, and set the comparison rule and value.
+The actual condition can be changed by selecting the condition step in the Page Scripting step list, expand the properties, and set the comparison rule and value.
 
 <!--alt text start -->Modify comparison rule and value for compare step<!--alt text end -->
 
 ## Edit captured steps
 
-During recording, as well as playback, you can edit a captured step in the Page Scripting tool using the context menu "..." on the step. The options depend on whether in record or playback mode, and the kind of step, but includes showing properties, deleting the step etc. Some of the options are explained in more detail below.
+During recording and playback, you can edit a captured step using the context menu "..." on the step. The editing options for a step depend on whether your recording or playing back a recording and what kind of action the step runs. 
+
+
+ction but includes showing properties, deleting the step etc. Some of the options are explained in more detail below.
 
 ### Properties
 
-Some steps have properties, e.g., conditional steps or validation steps. You can see the properties for a step by selecting the Properties option from the context menu on a step.
+Some steps have properties, for example, conditional steps or validation steps. You can see the properties for a step by selecting the Properties option from the context menu on a step.
 
 ### Using expressions in properties
 
-Values and conditions can use expressions for simple calculations. PowerFX is used as the expression language. There is a link to the PowerFX expression referecen in the UI
+Values and conditions can use expressions for simple calculations. PowerFX is used as the expression language. There's a link to the PowerFX expression reference in the UI.
 
-Besides the PowerFX functions, 3 top level objects are available:
+Besides the PowerFX functions, three top level objects are available:
 
 - Clipboard: access to the current entries copied in this recording
 - Parameters: access to value of any parameters passed to this recording
@@ -111,11 +130,14 @@ Some examples:
 
 ### Handle optional pages
 
-Sometimes a page does not always show in a recorded flow but depends on data or settings. One example could be the confirm shown when closing a sales order. To handle this, you can make the page an optional page, which means that the steps under the page will only be run if the page is shown. To make a page optional, select the recorder step for "Page X was shown" in the Page Scripting step list, select the ... context menu, and choose "Make this an optional page".
+Sometimes a page doesn't always show in a recorded flow but depends on data or settings. One example could be the confirm shown when closing a sales order. To handle this, you can make the page an optional page, which means that the steps under the page will only be run if the page is shown. To make a page optional, select the recorder step for "Page X was shown" in the Page Scripting step list, select the ... context menu, and choose "Make this an optional page".
 
-The steps that happen on that page will be shown indented, to indicate tht here are optional, depending on page being shown.
+The steps that happen on that page will be shown indented, to indicate that here are optional, depending on page being shown.
 
-## Playback
+## Play back a recording
+
+You can play back a recording that you just captured or a recording that was saved in a file.
+
 
 To play a recording, whether just captured or opened from a file, select the Play button in the toolbar
 
@@ -134,6 +156,3 @@ You can save the recording from the toolbar. This will create a YAML file that c
 ## Share a recording
 
 You can also share a recording as a link, just click the share button in the toolbar. The link includes the full recording as well as its playback result. In the example below, we set that the playback has failed halfway.
-
-
-
