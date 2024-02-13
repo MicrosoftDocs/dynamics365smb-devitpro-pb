@@ -16,18 +16,19 @@ The article describes integration patterns, integration scenarios, and integrati
 
 ## Integrations to/from Business Central are done with web services
 
-All integrations to/from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: REST API, SOAP, and OData. 
+All integrations (except for a few built-in integrations) to/from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: REST API, SOAP, and OData. 
 
 [![Shows the three different types of web services in Business Central](media/webservice-stack.svg)](media/webservice-stack.svg#lightbox)
 
-
-The recommended way to expose a web service for [!INCLUDE[prod_short](../includes/prod_short.md)] is using the REST API stack. 
+The recommended way to use web services for [!INCLUDE[prod_short](../includes/prod_short.md)] is by using the REST API stack. 
 
 For more information, see [Web services overview](../webservices/web-services.md).
 
 ## How to explore and develop against Business Central REST APIs
 
 When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] from another application, you should use REST APIs, either the built-in APIs or custom APIs. 
+
+[![Shows how the API stack in Business Central](media/api-stack.svg)](media/api-stack.svg#lightbox)
 
 For more information on how to explore and develop against APIs, best practices, and which built-in APIs exist, see [REST API overview](../webservices/api-overview.md).
 
@@ -36,6 +37,8 @@ For more information on how to explore and develop against APIs, best practices,
 
 A *connector* is a proxy or a wrapper around an API that allows the user of the connector to talk to the underlying service. [!INCLUDE[prod_short](../includes/prod_short.md)] has its own connector that allows Power Platform products such as Power Automate, Power Apps, and Logic apps to communicate with 
 [!INCLUDE[prod_short](../includes/prod_short.md)] through REST APIs (this is another reason for using REST APIs compared to OData/SOAP enabled pages/queries/codeunits).
+
+[![Shows how the Power Platform connector integrates to Business Central](media/power-platform-connector-diagram.svg)](media/power-platform-connector-diagram.svg#lightbox)
 
 For more information, see [Power Platform Connectors Overview](/connectors/connectors) and [Dynamics 365 Business Central Connector](/connectors/dynamicssmbsaas) in the Power Platform documentation.
 
@@ -84,7 +87,7 @@ There are two ways that a Power BI report, page, or visual can be added to a pag
 - Data change (**CUD**) events using webhooks.
 - Business events (preview).
 
-[![Shows the four interactions with Business Central](media/four-complementary-interactions.png)](media/four-complementary-interactions.png#lightbox)
+:::image type="content" source="media/connect-to-dataverse.svg" alt-text="Shows the four interactions of DataVerse with Business Central" lightbox="media/connect-to-dataverse.svg":::
 
 For more information, see [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md).
 
@@ -108,6 +111,16 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Shopify
 
 For more information, see [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started).
 
+
+## Built-in: Telemetry with Azure Application Insights
+
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Azure Application Insights by enabling the telemetry feature. With telemetry, system owners can look at usage and lifecycle operations of environments/apps, diagnose problems, and analyze operations that affect performance.
+
+:::image type="content" source="../developer/media/telemetry-architecture.svg" alt-text="Shows how Environment-level telemetry and App/extension-level telemetry works in Business Central AL" lightbox="../developer/media/telemetry-architecture.svg":::
+
+For more information, see [Monitoring and Analyzing Telemetry in Azure Application Insights](../administration/telemetry-overview.md).
+
+
 ## Integrating to external systems from AL code: calling external services
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with external systems by using the *HttpClient* data type in AL code.
@@ -118,7 +131,7 @@ For more information, see [Integrating to external services with the HttpClient 
 
 ## Integrating to external systems from AL code: Azure services
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Functions or Azure Key Vault. 
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Blob Services, Azure File Services, Azure Functions, or Azure Key Vault. 
 
 :::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
@@ -155,7 +168,9 @@ For more information, see [Integrating with Microsoft Teams overview](../develop
 [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md)  
 [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
 [Integrating Business Central with Shopify](/dynamics365/business-central/shopify/get-started)  
+[Integrating Business Central with Azure Application Insights](../administration/telemetry-overview.md)
 [Integrating to external services from AL using the HttpClient data type](../developer/devenv-httpclient.md)  
+[Integrating Business Central with Azure services](./azure-integration-overview.md)
 [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)
 [Integrating Business Central with Azure services](./azure-integration-overview.md)
 [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md)  
