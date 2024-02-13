@@ -56,7 +56,7 @@ The sections that follow explain other capabilities of the page scripting tool f
 
    The **Page Scripting** pane opens on the right side.
 1. Open the page where you want to start recording.
-1. When you ready to start recording, go to the **Page Scripting** pane, and select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) icon in the control bar at the top.
+1. To start recording, go to the **Page Scripting** pane, and select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) icon in the control bar at the top.
 
    Recording starts, as indicated by the solid red circle in the control bar.
 
@@ -96,11 +96,11 @@ When recording you have access to session info, such as the user ID. This allows
 
 During the recording you can insert validation steps to check the outcome when playing back. To do this, right select a control, for example, a field or cue, and select "Validate" in the context menu. This inserts a validation step with the current value. You can change the value that is being validated by finding the validate step in the Page Scripting step list, select the context menu "..." and open the properties.
 
-### Make some steps conditional
+### Make steps conditional
 
 Another option during the recording is to insert a conditional branch step. One example is to only perform some steps if there are no current rows in a list.
 
-To insert a branch of conditional steps, right-click a control and select "Add conditonal steps when" and select a desired option.
+To insert a branch of conditional steps, right-click a controland select "Add conditonal steps when" and select a desired option.
 
 After the conditional step has been inserted, you can add additional steps that should be performed if the condition is met.
 
