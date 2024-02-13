@@ -22,14 +22,14 @@ The page scripting tool captures both the user interactions and the resulting ac
 
 ## Prerequisites
 
-- To record, your user account must have the **tbd** permission set or equivalent permissions.
-- To play back a recording, your user account must have the **tbd** permission set or equivalent permissions.
+- To record, your user account must have the **PAGESCRIPTING - REC** permission set or equivalent permissions.
+- To play back a recording, your user account must have the ****PAGESCRIPTING - PLAY** permission set or equivalent permissions.
 
 ## Get started with page scripting tool
 
 Whether you want to record or play back a recording. you can start the page scripting tool from any page <!-- but we recommend that to start from the role center.-->
 
-1. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon.
+1. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon > **Page Scripting**.
 
    The **Page Scripting** pane opens on the right side.
 
@@ -50,8 +50,13 @@ The sections that follow explain other capabilities of the page scripting tool f
 
 ## Record
 
+### Get started
+
+1. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon > **Page Scripting**.
+
+   The **Page Scripting** pane opens on the right side.
 1. Open the page where you want to start recording.
-1. To start recording, in the **Page Scripting** pane, select the **Start new** button or the **New recording** icon in the control bar at the top.
+1. When you ready to start recording, go to the **Page Scripting** pane, and select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) icon in the control bar at the top.
 
    Recording starts, as indicated by the solid red circle in the control bar.
 
@@ -70,7 +75,10 @@ The sections that follow explain other capabilities of the page scripting tool f
    - To delete the last captured step, select **...** next to step and then **Delete**.
 
 1. When you're done recording, select the **Stop** button.
+1. To play back the recording right away, select the **Play** button.
 
+   You can replay the recording as long as you don't close the Page
+1. To save the recording to file so you run it later or share with someone, select the **Save** icon in the control bar.
 
 ## Options for capturing steps
 
