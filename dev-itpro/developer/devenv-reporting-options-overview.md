@@ -13,6 +13,30 @@ ms.author: kepontop
 
 [!INCLUDE [prod_short](includes/prod_short.md)] comes with different options for providing reporting on data. Each of these methods has its own advantages and disadvantages, depending on the type of data analysis and the role of the user. In this article, we introduce these three methods and how they can be used differently in an organization. 
 
+## Analytics needs in organizations
+
+When developing analytics solutions for customers, it might help to use a mental model based on personas and their different analytics needs.
+
+:::image type="content" source="media/analytics-personas.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/analytics-personas.svg":::
+
+The model is based on the observation that different roles in an organization has different needs when it comes to data: the higher the role is placed in the org chart, the more data needs to be aggregated for them to do their work. 
+
+Traditionally, most of the analytics needs in BC was implemented by building a report with an RDL layout designed for printing to paper or to a PDF document. In the current technology landscape, users expect that they can design (and consume) analytics online, using tools and technologies such as Power BI, Excel, and in-client data analysis. 
+
+
+
+To the right, we then mapped typical analytical artifacts/features that we would need to provide to support these user roles.
+
+
+So if a customer asks, “Can you build me a report?”
+STOP asking “Sure. How should it be formatted?”
+INSTEAD ask “What do you need to analyze and for what?”
+THEN choose the tool of choice
+Power BI (and embed), or
+Query/List page with Data Analysis, or
+AL report with Excel layout
+
+
 ## Report objects in Business Central
 
 Report objects offer the traditional way of creating analytical reports, processing only reports, and printable documents in [!INCLUDE [prod_short](includes/prod_short.md)]. They're written in AL code and can be customized by partners or developers. Report objects can display data in various formats, such as tables, charts, or matrices. They can also have filters, sorting, grouping, and totaling options. Report objects are *suitable for users who need to access specific data sets or predefined reports* within [!INCLUDE [prod_short](includes/prod_short.md)]. They can be printed or exported to PDF or Word.
