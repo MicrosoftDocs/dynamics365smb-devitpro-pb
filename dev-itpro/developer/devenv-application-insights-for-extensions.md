@@ -16,6 +16,9 @@ This article describes how to set up an extension to send telemetry data to [!IN
 
 This feature targets publishers of per-tenant or appsource extensions to give them insight into issues in their extensions before partners and customers report them. You get data for all customers across the install base of the app/extension. 
 
+:::image type="content" source="media/telemetry-app.svg" alt-text="Shows how app telemetry works in Business Central" lightbox="media/telemetry-app.svg":::
+
+
 Setting up telemetry in an App/Extension requires only 2-3 steps.
 
 1. Get an Application Insights resource in Azure.
