@@ -38,7 +38,7 @@ Whether you want to record or play back a recording. you can start the page scri
    Recording starts, as indicated by solid red circle in the control bar.
 1. Run through the task as you typically would.
 
-   As you interact with the application, the actions you do are added in sequence to the **Page Scripting** pane.
+   As you interact with the application, your actions and  actions you do are added in sequence to the **Page Scripting** pane.
 
 1. If you want to pause the recording select the **Stop** button in the control bar. To resume recording, select the **Start recording** button.
 1. When you are done, select the **Stop** button.
@@ -60,19 +60,20 @@ The sections that follow explain other capabilities of the page scripting tool f
 
    Recording starts, as indicated by the solid red circle in the control bar.
 
-1. Go to the page and run through the steps that you want to record, as you typically would.
+1. Go to the page and run through the task that you want to record, as you typically would.
 
-   As you interact with the application, your actions and the resulting actions done by the application itself are added in sequence to the **Page Scripting** pane.
+   As you interact with the application, your actions and the resulting actions done by the application itself are added in sequence as steps in the **Page Scripting** pane.
 
-1. While recording, you
+1. At anytime during recording, you can pause, resume, or delete the last recorded step.
 
    - To pause the recording, select the **Stop** button in the control bar.
 
       While paused, you can ...
 
-   - To resume recording to more actions, select the **Start recording** button.
+   - To resume recording and continue  actions, select the **Start recording** button.
 
-   - To delete the last captured step, select **...** next to step and then **Delete**.
+   - To delete the last captured step, select **...** next to step and then **Delete**. 
+   - To add a wait time before the next step, select the step > **...** > **Add step** > **Wait**.
 
 1. When you're done recording, select the **Stop** button.
 1. To play back the recording right away, select the **Play** button.
@@ -164,3 +165,7 @@ You can save the recording from the toolbar. This will create a YAML file that c
 ## Share a recording
 
 You can also share a recording as a link, just click the share button in the toolbar. The link includes the full recording as well as its playback result. In the example below, we set that the playback has failed halfway.
+
+## Common
+
+While you're recording and during playback you can click the Close button (X) in the upper-right corner to hide the Page Scripting pane without stopping the recording or playback. You can reopen the Page Scripting pane by clicking the Task recorder button that appears at the top of the page. This button appears only while recording is in progress.
