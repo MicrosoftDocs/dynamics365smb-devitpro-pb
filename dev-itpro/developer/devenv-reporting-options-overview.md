@@ -75,11 +75,14 @@ For more information about creating a report based on an Excel layout, see [Crea
 
 Depending on the role and the need of the user in an organization, one of these methods might be more appropriate than the other. For example, a CFO might prefer Power BI to get a high-level overview of the business performance and trends, while an accountant might prefer report objects to get detailed information on transactions and balances. A sales manager might prefer Excel to create forecasts and budgets based on historical data.
 
-Reports based on report objects are the native reports in [!INCLUDE [prod_short](includes/prod_short.md)] that respect the security model, work on live data, allow you to pivot data, and share data with others. These reports also have a request page that lets you specify filters and options before running the report.
+Power BI reports allows you to create interactive dashboards and data stories based on [!INCLUDE [prod_short](includes/prod_short.md)] data. They require a new security model and a data refresh to get the latest data. They aren't suitable for pivoting data, but they offer slices, KPIs, and visuals to explore and communicate the data. And they also allow you to share the data with others.
 
-Excel reports export data from [!INCLUDE [prod_short](includes/prod_short.md)] to Excel, where you can use the familiar features of Excel to analyze and present the data. They also respect the security model, work on live data, allow you to pivot data, and share data with others. Additionally, they offer slicers and visuals to enhance the report.
+Data analysis on lists and queries are very suitable for ad-hoc analysis because users can easily slice and dice the dataset to their needs. They can define multiple analysis tab definitions on the same dataset and share these definitions with co-workers. With the *data analysis* feature, data never leaves [!INCLUDE [prod_short](includes/prod_short.md)], so the security model is preserved and the "reports" are always showing live data.
 
-Power BI reports Power BI to create interactive dashboards and data stories based on [!INCLUDE [prod_short](includes/prod_short.md)] data. They require a new security model and a data refresh to get the latest data. They aren't suitable for pivoting data, but they offer slices, KPIs, and visuals to explore and communicate the data. And they also allow you to share the data with others.
+Reports based on report objects are the native reports in [!INCLUDE [prod_short](includes/prod_short.md)] that respect the security model, work on live data, allow you to pivot data, and share data with others. These reports also have a request page that lets you specify filters and options before running the report. With Excel layouts, you can use the familiar features of Excel to design and present the data. Reports respect the security model, allow you to pivot data, and share data with others. Additionally, they offer slicers and visuals to enhance the report.
+
+
+The illustration and table below show how the different technology options presented in this article map to the different personas and their analytics scenarios. 
 
 :::image type="content" source="media/analytics-personas-scenarios-tools.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/analytics-personas-scenarios-tools.svg":::
 
