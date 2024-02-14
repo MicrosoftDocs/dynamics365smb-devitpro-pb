@@ -52,17 +52,18 @@ Power BI reports can be embedded in [!INCLUDE [prod_short](includes/prod_short.m
 
 Another option is to let the users analyze data from list pages and queries using the data analysis mode. The data analysis mode enables you to analyze data directly from the page, without having to run a report or switch another application like Excel. It provides an interactive and versatile way to calculate, summarize, and examine data. For more information, see [Analyze Data on Lists and Queries](/dynamics365/business-central/analysis-mode).
 
-As a developer, you should consider if the *analyze data* feature on a list page can fulfill the specified analytics need for the users. If so, maybe this is just the "report" they need. The data source of a list page is a single table, so if the data needed for the analytical need spreads over multiple tables, then this option is not immediately feasible. But if the data can be expressed as a query object, then this might be the artifact you need to implement to XXX. For more information about queries, see [Queries in Business Central](./devenv-query-overview.md).
+As a developer, you should consider if the *analyze data* feature on a list page can fulfill the specified analytics need for the users. If so, maybe this is just the "report" they need. The data source of a list page is a single table, so if the data needed for the analytical need spreads over multiple tables, then this option is not immediately feasible. But if the data can be expressed as a query object, then this might be the only artifact you need to unblock the user. They can then use the *analyze data* feature on the query. For more information about queries, see [Queries in Business Central](./devenv-query-overview.md).
 
-## Report objects in Business Central
 
-Report objects offer the traditional way of creating analytical reports, processing only reports, and printable documents in [!INCLUDE [prod_short](includes/prod_short.md)]. They're written in AL code and can be customized by partners or developers. Report objects can display data in various formats, such as tables, charts, or matrices. They can also have filters, sorting, grouping, and totaling options. Report objects are *suitable for users who need to access specific data sets or predefined reports* within [!INCLUDE [prod_short](includes/prod_short.md)]. They can be printed or exported to PDF or Word.
+## Excel on pages
 
-For more information to understand the report structure and designing the layout for a report, see [Report Object](devenv-report-object.md).
+Excel is a familiar tool that many users already use for data analysis and reporting. Excel can connect to [!INCLUDE [prod_short](includes/prod_short.md)] data using the Excel add-in or APIs/OData web services. Excel can perform calculations, formatting, filtering, sorting, and charting on the data. Excel is *suitable for users who need to manipulate or format data in a flexible way*, or who want to create custom reports or templates. 
+
+
 
 ## Excel reports 
 
-Excel is a familiar tool that many users already use for data analysis and reporting. Excel can connect to [!INCLUDE [prod_short](includes/prod_short.md)] data using the Excel add-in or OData web services. Excel can perform calculations, formatting, filtering, sorting, and charting on the data. Excel is *suitable for users who need to manipulate or format data in a flexible way*, or who want to create custom reports or templates. 
+Report objects offer the traditional way of creating analytical reports, processing only reports, and printable documents in [!INCLUDE [prod_short](includes/prod_short.md)]. They're written in AL code and can be customized by partners or developers. Report objects are *suitable for users who need to access specific data sets or predefined reports* within [!INCLUDE [prod_short](includes/prod_short.md)]. For more information to understand the report structure and designing the layout for a report, see [Report Object](devenv-report-object.md).
 
 Excel report layouts allow you to create a basic report that prints a dataset and leaves it up to the end user to further modify it by using the full palette of capabilities in Excel such as sliders, diagrams, charts, pivot tables, and PowerQuery to design the report. This offers flexibility and freedom for the end user, being able to change the look and feel of a report, adding more views, filtering, and sorting on data. Such a layout designed by the end user, can be imported and used as a new layout. 
 
