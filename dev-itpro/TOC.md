@@ -1054,7 +1054,7 @@
 ### [Analyzing, pivoting, and sharing data in Business Central](developer/devenv-reporting-options-overview.md)
 ### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
 ### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
-### [Analyze Data on Lists and Queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Analyze data on lists and queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 ### [Queries in Business Central](developer/devenv-query-overview.md)  
 ### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)
 ### [Working with Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
