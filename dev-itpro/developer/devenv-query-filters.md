@@ -140,7 +140,7 @@ query 50100 "Customer_Sales_Quantity"
 
 In an SQL SELECT statement, filters on a column or filter row that don't apply an aggregate method, as with the `Location_Code` filter row in the example, would correspond to a WHERE clause. Filters on a columns or filter rows that do apply a totals method, as with the `Quantity` column in the example, would correspond to a HAVING clause. For more information, see [Equivalent SQL SELECT Statements for Query Filters](devenv-query-filters.md#SQL).  
 
-## <a name="setfilter"></a>Filtering using SETFILTER and SetRange methods
+## <a name="setfilter"></a>Filtering using SetFilter and SetRange methods
 
 AL code includes the [SetFilter](methods-auto/record/record-setfilter-method.md) and [SetRange](methods-auto/record/record-setrange-method.md) methods that you can use to apply a filter on a field that is represented as a column or filter row in a query. The **SetFilter** and **SetRange** methods enable you to set filters programmatically on a query at runtime. You use the **SetRange** method to filter on a range of values in a column or filter row. The **SetFilter** method is more versatile than the **SetRange** method and enables you to filter a field based on a filter expression.  
 
