@@ -11,13 +11,13 @@ ms.author: kepontop
 
 # Analyzing, pivoting, and sharing data in Business Central
 
-[!INCLUDE [prod_short](includes/prod_short.md)] comes with different options for providing reporting on data. Each of these methods has its own advantages and disadvantages, depending on the type of data analysis and the role of the user. In this article, we introduce these three methods and how they can be used differently in an organization. 
+[!INCLUDE [prod_short](includes/prod_short.md)] comes with different options for providing reporting on data. Each of these methods has its own advantages and disadvantages, depending on the type of data analysis and the role of the user. In this article, we introduce these methods and how they can be used differently in an organization. 
 
 ## Analytics needs in organizations
 
 When developing analytics solutions for customers, it might help to use a mental model based on  personas described on a very high-level and their different analytics needs.
 
-:::image type="content" source="media/analytics-personas.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/analytics-personas.svg":::
+:::image type="content" source="media/analytics-personas.svg" alt-text="Illustration of different personas for analytics" lightbox="media/analytics-personas.svg":::
 
 The model is based on the observation that different roles in an organization has different needs when it comes to data: the higher the role is placed in the org chart, the more data needs to be aggregated for them to do their work. 
 
@@ -84,7 +84,7 @@ Reports based on report objects are the native reports in [!INCLUDE [prod_short]
 
 The illustration and table below show how the different technology options presented in this article map to the different personas and their analytics scenarios. 
 
-:::image type="content" source="media/analytics-personas-scenarios-tools.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/analytics-personas-scenarios-tools.svg":::
+:::image type="content" source="media/analytics-personas-scenarios-tools.svg" alt-text="Illustration of how different technologies map to different analytics needs for different personas." lightbox="media/analytics-personas-scenarios-tools.svg":::
 
  
 The following table sums up some of the main differences between the three types of analyzing and slicing data.
