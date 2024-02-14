@@ -104,6 +104,6 @@ The following table sums up some of the main differences between the three types
 
 [Embed Power BI reports in pages](devenv-power-bi-report-parts.md)  
 [Analyze Data on Lists and Queries](/dynamics365/business-central/analysis-mode)  
-[Queries in Business Central](./devenv-query-overview.md)  
+[Queries in Business Central](devenv-query-overview.md)  
 [Creating reports](devenv-reports.md)  
 [Creating an Excel layout report](devenv-howto-excel-report-layout.md)  
