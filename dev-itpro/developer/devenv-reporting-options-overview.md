@@ -15,13 +15,13 @@ ms.author: kepontop
 
 ## Analytics needs in organizations
 
-When developing analytics solutions for customers, it might help to use a mental model based on  personas described on a very high-level and their different analytics needs.
+When you develop analytic solutions for customers, it might help to use a mental model based on  personas described on a high-level and their different analytics needs.
 
 :::image type="content" source="media/analytics-personas.svg" alt-text="Illustration of different personas for analytics" lightbox="media/analytics-personas.svg":::
 
-The model is based on the observation that different roles in an organization has different needs when it comes to data: the higher the role is placed in the org chart, the more data needs to be aggregated for them to do their work. 
+The model is based on the observation that different roles in an organization have different needs when it comes to data: the higher the role is placed in the org chart, the more data needs to be aggregated for them to do their work. 
 
-Each of the roles have some preferred/typical ways to consume/analyze data, ways that reflect the level of data aggregation needed in their role as shown in this illustration and table.
+Each of the roles has some preferred/typical ways to consume/analyze data, ways that reflect the level of data aggregation needed in their role as shown in this illustration and table.
 
 :::image type="content" source="media/analytics-personas-scenarios.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/analytics-personas-scenarios.svg":::
 
@@ -31,38 +31,36 @@ Each of the roles have some preferred/typical ways to consume/analyze data, ways
 |Management| Trends, summaries | Managerial reports <br> Ad-hoc analysis     | 
 |Staff     | Detailed data     | Operational reports <br> On-screen task data|
 
-Traditionally, most of the analytics needs in [!INCLUDE [prod_short](includes/prod_short.md)] was implemented by building a report with an RDL layout designed for printing to paper or to a PDF document. In the current technology landscape, users expect that they can design (and consume) analytics online. [!INCLUDE [prod_short](includes/prod_short.md)] comes with at least three technologies that you can use for implementing online analytics to support such user needs:
+Traditionally, most analytic needs in [!INCLUDE [prod_short](includes/prod_short.md)] were implemented by building a report with an RDL layout designed for printing to paper or PDF document. In the current technology landscape, users expect that they can design (and consume) analytics online. [!INCLUDE [prod_short](includes/prod_short.md)] comes with at least three technologies that you can use for implementing online analytics to support such user needs:
 
 1. Power BI (and embed), 
 1. Query/List page with Data Analysis,
 1. AL report with Excel layout
 
-So, if a customer asks, “Can you build me a report?” Stop asking “Sure. How should it be formatted?”
-Instead ask “What do you need to analyze and for what?” and then choose the tool that best supports it.
-
+So, if a customer asks, "Can you build me a report?", stop asking "Sure. How should it be formatted?"
+Instead ask "What do you need to analyze and for what?" and then choose the tool that best supports it.
 
 ## Power BI reports
 
 Power BI is a cloud-based service that allows users to connect to [!INCLUDE [prod_short](includes/prod_short.md)] data and create interactive dashboards and reports. Power BI can handle large amounts of data and perform complex calculations and transformations. Power BI also offers various visualizations, such as maps, gauges, slicers, and KPIs. Power BI is suitable for users who need to *explore and analyze data across multiple sources or dimensions*, or who want to *share their insights* with others online or on mobile devices.
 
-Power BI reports can be embedded in [!INCLUDE [prod_short](includes/prod_short.md)] pages in two ways. One way is to use the **Power BI Report** part in on a page to make reports readily visible on the page when it opens and typically linked to a specific record on the page. The other way is to embed a report in a separate page that opens from an action that the user selects on the page, which enables reports to display in a larger screen area because they're not limited by the dimensions of the part. For more information, see [Embed Power BI reports in pages](devenv-power-bi-report-parts.md).
+Power BI reports can be embedded in [!INCLUDE [prod_short](includes/prod_short.md)] pages in two ways. One way is to use the **Power BI Report** part in on a page to make reports readily visible on the page when it opens. The report is typically linked to a specific record on the page. The other way is to embed a report in a separate page that opens from an action that the user selects on the page. This way enables reports to display in a larger screen area because they're not limited by the dimensions of the part. For more information, see [Embed Power BI reports in pages](devenv-power-bi-report-parts.md).
 
 
 ## Analyze data on lists and queries
 
 Another option is to let the users analyze data from list pages and queries using the data analysis mode. The data analysis mode enables you to analyze data directly from the page, without having to run a report or switch another application like Excel. It provides an interactive and versatile way to calculate, summarize, and examine data. For more information, see [Analyze Data on Lists and Queries](/dynamics365/business-central/analysis-mode).
 
-As a developer, you should consider if the *analyze data* feature on a list page can fulfill the specified analytics need for the users. If so, maybe this is just the "report" they need. The data source of a list page is a single table, so if the data needed for the analytical need spreads over multiple tables, then this option is not immediately feasible. But if the data can be expressed as a query object, then this might be the only artifact you need to unblock the user. They can then use the *analyze data* feature on the query. For more information about queries, see [Queries in Business Central](./devenv-query-overview.md).
+As a developer, consider whether the *analyze data* feature on a list page can fulfill the specified analytics needs of the users. If so, maybe this is just the "report" they need. The data source of a list page is a single table, so if the data needed for the analytical need spreads over multiple tables, then this option isn't immediately feasible. But if the data can be expressed as a query object, then this might be the only artifact you need to unblock the user. They can then use the *analyze data* feature on the query. For more information about queries, see [Queries in Business Central](./devenv-query-overview.md).
 
 
 ## Refreshable Excel workbooks on APIs
 
 Excel is a familiar tool that many users already use for data analysis and reporting. Excel can connect to [!INCLUDE [prod_short](includes/prod_short.md)] data using the Excel add-in or APIs/OData web services. Excel can perform calculations, formatting, filtering, sorting, and charting on the data. Excel is *suitable for users who need to manipulate or format data in a flexible way*, or who want to create custom reports or templates. 
 
-Using Power Query in Excel, you can connect Excel to read data from [!INCLUDE [prod_short](includes/prod_short.md)] APIs. With PowerPivot in Excel, you can create a data model as a basis of the report and then use normal Excel features to layout the data. With this technique, the report becomes refreshable by the users. The downside is that any change to the datamodel in the Excel workbook needs to be distributed to all users, so you need to consider ways to deal with that.
+Using Power Query in Excel, you can connect Excel to read data from [!INCLUDE [prod_short](includes/prod_short.md)] APIs. With PowerPivot in Excel, you can create a data model as a basis of the report and then use normal Excel features to lay out the data. With this technique, the report becomes refreshable by the users. The downside is that any change to the data model in the Excel workbook must be distributed to all users, so you need to consider ways to deal with this situation.
 
-
-## Excel reports 
+## Excel reports
 
 Report objects offer the traditional way of creating analytical reports, processing only reports, and printable documents in [!INCLUDE [prod_short](includes/prod_short.md)]. They're written in AL code and can be customized by partners or developers. Report objects are *suitable for users who need to access specific data sets or predefined reports* within [!INCLUDE [prod_short](includes/prod_short.md)]. For more information to understand the report structure and designing the layout for a report, see [Report Object](devenv-report-object.md).
 
@@ -75,14 +73,14 @@ For more information about creating a report based on an Excel layout, see [Crea
 
 Depending on the role and the need of the user in an organization, one of these methods might be more appropriate than the other. For example, a CFO might prefer Power BI to get a high-level overview of the business performance and trends, while an accountant might prefer report objects to get detailed information on transactions and balances. A sales manager might prefer Excel to create forecasts and budgets based on historical data.
 
-Power BI reports allows you to create interactive dashboards and data stories based on [!INCLUDE [prod_short](includes/prod_short.md)] data. They require a new security model and a data refresh to get the latest data. They aren't suitable for pivoting data, but they offer slices, KPIs, and visuals to explore and communicate the data. And they also allow you to share the data with others.
+Power BI reports allow you to create interactive dashboards and data stories based on [!INCLUDE [prod_short](includes/prod_short.md)] data. They require a new security model and a data refresh to get the latest data. They aren't suitable for pivoting data, but they offer slices, KPIs, and visuals to explore and communicate the data. And they also allow you to share the data with others.
 
-Data analysis on lists and queries are very suitable for ad-hoc analysis because users can easily slice and dice the dataset to their needs. They can define multiple analysis tab definitions on the same dataset and share these definitions with co-workers. With the *data analysis* feature, data never leaves [!INCLUDE [prod_short](includes/prod_short.md)], so the security model is preserved and the "reports" are always showing live data.
+Data analysis on lists and queries are suitable for ad-hoc analysis because users can easily slice and dice the dataset to their needs. They can define multiple analysis tab definitions on the same dataset and share these definitions with coworkers. With the *data analysis* feature, data never leaves [!INCLUDE [prod_short](includes/prod_short.md)], so the security model is preserved and the "reports" are always showing live data.
 
 Reports based on report objects are the native reports in [!INCLUDE [prod_short](includes/prod_short.md)] that respect the security model, work on live data, allow you to pivot data, and share data with others. These reports also have a request page that lets you specify filters and options before running the report. With Excel layouts, you can use the familiar features of Excel to design and present the data. Reports respect the security model, allow you to pivot data, and share data with others. Additionally, they offer slicers and visuals to enhance the report.
 
 
-The illustration and table below show how the different technology options presented in this article map to the different personas and their analytics scenarios. 
+The following illustration and table show how the different technology options presented in this article map to the different personas and their analytics scenarios. 
 
 :::image type="content" source="media/analytics-personas-scenarios-tools.svg" alt-text="Illustration of how different technologies map to different analytics needs for different personas." lightbox="media/analytics-personas-scenarios-tools.svg":::
 
