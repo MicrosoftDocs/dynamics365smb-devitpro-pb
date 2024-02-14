@@ -55,10 +55,11 @@ Another option is to let the users analyze data from list pages and queries usin
 As a developer, you should consider if the *analyze data* feature on a list page can fulfill the specified analytics need for the users. If so, maybe this is just the "report" they need. The data source of a list page is a single table, so if the data needed for the analytical need spreads over multiple tables, then this option is not immediately feasible. But if the data can be expressed as a query object, then this might be the only artifact you need to unblock the user. They can then use the *analyze data* feature on the query. For more information about queries, see [Queries in Business Central](./devenv-query-overview.md).
 
 
-## Excel on pages
+## Excel on pages and APIs
 
 Excel is a familiar tool that many users already use for data analysis and reporting. Excel can connect to [!INCLUDE [prod_short](includes/prod_short.md)] data using the Excel add-in or APIs/OData web services. Excel can perform calculations, formatting, filtering, sorting, and charting on the data. Excel is *suitable for users who need to manipulate or format data in a flexible way*, or who want to create custom reports or templates. 
 
+Using Power Query in Excel, you can connect Excel to read data from [!INCLUDE [prod_short](includes/prod_short.md)] APIs. With PowerPivot in Excel, you can create a data model as a basis of the report and then use normal Excel features to layout the data. With this technique, the report becomes refreshable by the users. The downside is that any change to the datamodel in the Excel workbook needs to be distributed to all users, so you need to consider ways to deal with that.
 
 
 ## Excel reports 
