@@ -83,16 +83,15 @@ Power BI reports Power BI to create interactive dashboards and data stories base
 
 The following table sums up some of the main differences between the three types of analyzing and slicing data.
 
-|Characteristic| Report object| Excel| Power BI|
-|--------|--------------|------|---------|
-|Security model preserved|Yes|Yes|No|
-|Works on live data|Yes|Yes|No|
-|Allows you to pivot data|Yes|Yes|No|
-|Share data|Yes|Yes|Yes|
-|Guides the user with a request page|Yes|Yes|No|
-|Slices and visualizes data|No|No|Yes|
-|Curated data stories|No|No|Yes|
-|Optimized for print|Yes|No|No|
+|Characteristic          | Power BI | Data analysis| Excel on API| Report with Excel layout |
+|------------------------|----------|--------------|-------------|--------------------------|
+|Security model preserved|No        |Yes           |Yes          |Yes                       |
+|Works on live data      |No        |Yes           |Yes (if refreshed) | No                 |
+|Allows you to pivot data|No        |Yes           |Yes          | Yes                      |
+|Share data              |Yes       |Yes           |Yes          | Yes                      |
+|Guides the user with a request page | No | No     | No          | Yes                      |
+|Slices and visualizes data| Yes    |No            |Yes          | Yes                      |
+|Curated data stories    |Yes       |No            |Yes          | Yes                      |
 
 
 ## See also
@@ -102,8 +101,4 @@ The following table sums up some of the main differences between the three types
 [Report extension object](devenv-report-ext-object.md)  
 [Creating a report](devenv-howto-report-layout.md)  
 [Using request pages with reports](devenv-request-pages-for-reports.md)  
-[Creating an RDL layout report](devenv-howto-rdl-report-layout.md)  
-[Creating a Word layout report](devenv-howto-report-layout.md)  
 [Creating an Excel layout report](devenv-howto-excel-report-layout.md)  
-[Defining multiple report layouts](devenv-multiple-report-layouts.md)  
-[Utilizing Read Scale-Out for better performance](../administration/database-read-scale-out-overview.md)  
