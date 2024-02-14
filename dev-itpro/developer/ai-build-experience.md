@@ -235,7 +235,8 @@ By default, the caption of promptdialog page when it's in the generate mode is *
 
 By using the [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) methods, you can customize the caption to give users more specific feedback about what Copilot is doing. Customizing the caption is especially useful if the Copilot consists of multiple steps or takes a long time.
 
-![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.png)
+![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode-custom
+.png)
 
 ```al
 systemaction(Generate)
@@ -249,7 +250,7 @@ systemaction(Generate)
         ProgressDialog.Close();
     end;
 }
-
+```
 
 ## Design the content mode
 
