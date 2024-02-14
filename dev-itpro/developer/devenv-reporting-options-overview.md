@@ -21,13 +21,11 @@ When developing analytics solutions for customers, it might help to use a mental
 
 The model is based on the observation that different roles in an organization has different needs when it comes to data: the higher the role is placed in the org chart, the more data needs to be aggregated for them to do their work. 
 
-Traditionally, most of the analytics needs in BC was implemented by building a report with an RDL layout designed for printing to paper or to a PDF document. In the current technology landscape, users expect that they can design (and consume) analytics online, using tools and technologies such as Power BI, in-client data analysis, and Excel. 
-
-Each of the personas have some typical artifacts/features that they use to to consume/analyze data, features that reflect the level of data aggregation needed in their roles. In the diagram below, you can typical analytical artifacts/features that you as a developer can provide to support these user roles. 
+Each of the personas have some typical artifacts/features that they use to to consume/analyze data, features that reflect the level of data aggregation needed in their roles. In the diagram below, you can typical analytical scenarios that you as a developer need to think about when supporting these user roles. 
 
 :::image type="content" source="media/analytics-personas-scenarios.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/analytics-personas-scenarios.svg":::
 
-[!INCLUDE [prod_short](includes/prod_short.md)] comes with at least three technologies that you can use for implementing things to support the analytics needs for users:
+Traditionally, most of the analytics needs in BC was implemented by building a report with an RDL layout designed for printing to paper or to a PDF document. In the current technology landscape, users expect that they can design (and consume) analytics online. [!INCLUDE [prod_short](includes/prod_short.md)] comes with at least three technologies that you can use for implementing online analytics to support such user needs:
 
 1. Power BI (and embed), 
 1. Query/List page with Data Analysis,
