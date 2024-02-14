@@ -81,6 +81,9 @@ Excel reports export data from [!INCLUDE [prod_short](includes/prod_short.md)] t
 
 Power BI reports Power BI to create interactive dashboards and data stories based on [!INCLUDE [prod_short](includes/prod_short.md)] data. They require a new security model and a data refresh to get the latest data. They aren't suitable for pivoting data, but they offer slices, KPIs, and visuals to explore and communicate the data. And they also allow you to share the data with others.
 
+:::image type="content" source="media/analytics-personas-scenarios-tools.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/analytics-personas-scenarios-tools.svg":::
+
+
 The following table sums up some of the main differences between the three types of analyzing and slicing data.
 
 |Characteristic          | Power BI | Data analysis| Excel on API| Report with Excel layout |
