@@ -47,7 +47,7 @@ The following table gives an overview of the typical flow from the user's perspe
 |2|The PromptDialog page opens in the prompt mode, where users can provide input.|The PromptDialog page is defined by setting the PageType property to `PromptDialog`.|[Create PromptDialog type page](#create-promptdialog-type-page) |
 |3|User enters information that copilot uses to generate results. |The `prompt` area of the PromptDialog page defines what the user can input, which typically consists of one or more fields.|[Design the prompt mode](#design-the-prompt-mode)|
 |4|User selects a button to start generating content with AI|The system action `Generate` calls the procedure that starts the AI generation process.|[Add the generate action](#add-a-generate-action)|
-|5|The generation mode appears while the results are being generated.|Handled automatically by the platform. However, you can customize its caption by calling [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) from the Generate and Regenerate actions. With this capablity, the caption can function as a progress bar for the user.||
+|5|The generation mode appears while the results are being generated.|Handled automatically by the platform. However, you can customize its caption by calling [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) from the Generate and Regenerate actions. With this capablity, the caption can function as a progress bar for the user.|[Customize the genarate mode caption](#customize-the-genarate-mode-caption)|
 |6|The content mode appears and displays the AI-generated proposal for review by the user.|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Design the content mode](#design-the-content-mode)|
 |7|User chooses to save or discard the proposal by using actions at the bottom of the page |A system action for saving and one for discarding trigger the logic to handle the content with respect the user's choice, and the prompt dialog page closes.|[Add save and discard actions](#add-a-content-area)| 
 
@@ -235,10 +235,7 @@ By default, the caption of promptdialog page when it's in the generate mode is *
 
 By using the [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) methods, you can customize the caption at runtime. For example, customize the caption to give users more specific feedback about what Copilot is doing or how it's progressing. Customizing the caption is especially useful if the Copilot consists of multiple steps or takes a long time.
 
-![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode-custom
-.png)
-
-
+The following code example customizes the caption in teh genarate mode by calling `Dialog.Open()` on the `OnAction()` trigger of the `systemaction(Generate)` action.
 
 ```al
 systemaction(Generate)
@@ -248,11 +245,15 @@ systemaction(Generate)
         ProgressDialog: Dialog;
     begin
         ProgressDialog.Open('Making a draft for you...');
-        // 
-        ProgressDialog.Close();
     end;
 }
 ```
+
+The following figure illustrates how the generate mode appear in the UI:
+
+![Shows a screenshot of the custom caption of generate mode in the UI](media/promptdialog-generate-mode-custom.png)
+
+For a more complex example, refer to `RunGeneration()` procedure in the `CopilotJobProposal.Page`of the [Advanced_SuggestJob sample on GitHub](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al).
 
 ## Design the content mode
 
