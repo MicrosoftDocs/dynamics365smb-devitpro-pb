@@ -229,13 +229,13 @@ actions
 
 ## Customize the genarate mode caption
 
-By default, the caption of promptdialog page when it's in the generate mode is **Generating...**.
+By default, the caption of promptdialog page when it's in the generate mode is **Generating...**, as shown in the following figure:
 
 ![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.png)
 
 By using the [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) methods, you can customize the caption at runtime. For example, customize the caption to give users more specific feedback about what Copilot is doing or how it's progressing. Customizing the caption is especially useful if the Copilot consists of multiple steps or takes a long time.
 
-The following code example customizes the caption in teh genarate mode by calling `Dialog.Open()` on the `OnAction()` trigger of the `systemaction(Generate)` action.
+The following code example changes the caption to **Making a draft for you...** by calling `Dialog.Open()` on the `OnAction()` trigger of the `systemaction(Generate)` action:
 
 ```al
 systemaction(Generate)
@@ -249,7 +249,7 @@ systemaction(Generate)
 }
 ```
 
-The following figure illustrates how the generate mode appear in the UI:
+The following figure shows hows the generate mode in the UI:
 
 ![Shows a screenshot of the custom caption of generate mode in the UI](media/promptdialog-generate-mode-custom.png)
 
@@ -260,7 +260,6 @@ For a more complex example, refer to `RunGeneration()` procedure in the `Copilot
 The content mode shows the AI-generated output. It enables users to review output, then choose to regenerate, save, or discard it. 
 
 <!--![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)-->
-
 
 ### Add a content area
 
@@ -284,7 +283,7 @@ layout
 }
 ```
 
-### Add a save and discard action 
+### Add a save and discard action
 
 In this task, you add actions to the content mode that enable users to save or discard the AI-generated proposal. Don't save AI-generated proposals to the database until the user chooses to do so. In accordance with responsible AI, to respect the user's choice.
 
