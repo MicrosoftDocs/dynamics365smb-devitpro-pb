@@ -25,7 +25,7 @@ Each of the roles have some preferred/typical ways to consume/analyze data, ways
 
 :::image type="content" source="media/analytics-personas-scenarios.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/analytics-personas-scenarios.svg":::
 
-| Role     | Data aggregation  | Typical ways to consume/analyze data        | 
+| Role     | Data aggregation  | Typical ways to consume data                | 
 |----------|-------------------| --------------------------------------------|
 |Leadership| Performance data  | KPIs <br> Dashboards <br> Financial reports |
 |Management| Trends, summaries | Managerial reports <br> Ad-hoc analysis     | 
@@ -52,7 +52,7 @@ Power BI reports can be embedded in [!INCLUDE [prod_short](includes/prod_short.m
 
 Another option is to let the users analyze data from list pages and queries using the data analysis mode. The data analysis mode enables you to analyze data directly from the page, without having to run a report or switch another application like Excel. It provides an interactive and versatile way to calculate, summarize, and examine data. For more information, see [Analyze Data on Lists and Queries](/dynamics365/business-central/analysis-mode).
 
-
+As a developer, you should consider if the *analyze data* feature on a list page can fulfill the specified analytics need for the users. If so, maybe this is just the "report" they need. The data source of a list page is a single table, so if the data needed for the analytical need spreads over multiple tables, then this option is not immediately feasible. But if the data can be expressed as a query object, then this might be the artifact you need to implement to XXX. For more information about queries, see [Queries in Business Central](./devenv-query-overview.md).
 
 ## Report objects in Business Central
 
