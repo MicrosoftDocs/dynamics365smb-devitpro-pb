@@ -15,7 +15,7 @@ ms.author: kepontop
 
 ## Analytics needs in organizations
 
-When developing analytics solutions for customers, it might help to use a mental model based on personas and their different analytics needs.
+When developing analytics solutions for customers, it might help to use a mental model based on  personas described on a very high-level and their different analytics needs.
 
 :::image type="content" source="media/analytics-personas.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/analytics-personas.svg":::
 
@@ -23,18 +23,31 @@ The model is based on the observation that different roles in an organization ha
 
 Traditionally, most of the analytics needs in BC was implemented by building a report with an RDL layout designed for printing to paper or to a PDF document. In the current technology landscape, users expect that they can design (and consume) analytics online, using tools and technologies such as Power BI, Excel, and in-client data analysis. 
 
+Each of the personas have some typical artifacts/features that they use to to consume/analyze data, features that reflect the level of data aggregation needed in their roles. In the diagram below, you can see typical analytical artifacts/features that you as a developer need to provide to support these user roles. 
+
+:::image type="content" source="media/analytics-personas.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/analytics-personas.svg":::
+
+[!INCLUDE [prod_short](includes/prod_short.md)] comes with at least three technologies that you can use for implementing things to support the analytics needs for users:
+
+1. Power BI (and embed), 
+1. Query/List page with Data Analysis,
+1. AL report with Excel layout
+
+So, if a customer asks, “Can you build me a report?” Stop asking “Sure. How should it be formatted?”
+Instead ask “What do you need to analyze and for what?” and then choose the tool that best supports it.
 
 
-To the right, we then mapped typical analytical artifacts/features that we would need to provide to support these user roles.
+## Power BI reports
+
+Power BI is a cloud-based service that allows users to connect to [!INCLUDE [prod_short](includes/prod_short.md)] data and create interactive dashboards and reports. Power BI can handle large amounts of data and perform complex calculations and transformations. Power BI also offers various visualizations, such as maps, gauges, slicers, and KPIs. Power BI is suitable for users who need to *explore and analyze data across multiple sources or dimensions*, or who want to *share their insights* with others online or on mobile devices.
+
+Power BI reports can be embedded in [!INCLUDE [prod_short](includes/prod_short.md)] pages in two ways. One way is to use the **Power BI Report** part in on a page to make reports readily visible on the page when it opens and typically linked to a specific record on the page. The other way is to embed a report in a separate page that opens from an action that the user selects on the page, which enables reports to display in a larger screen area because they're not limited by the dimensions of the part. For more information, see [Embed Power BI reports in pages](devenv-power-bi-report-parts.md).
 
 
-So if a customer asks, “Can you build me a report?”
-STOP asking “Sure. How should it be formatted?”
-INSTEAD ask “What do you need to analyze and for what?”
-THEN choose the tool of choice
-Power BI (and embed), or
-Query/List page with Data Analysis, or
-AL report with Excel layout
+## Analyze data on lists and queries
+
+Another option is to let the users analyze data from list pages and queries using the data analysis mode. The data analysis mode enables you to analyze data directly from the page, without having to run a report or switch another application like Excel. It provides an interactive and versatile way to calculate, summarize, and examine data. For more information, see [Analyze Data on Lists and Queries](/dynamics365/business-central/analysis-mode).
+
 
 
 ## Report objects in Business Central
@@ -51,15 +64,6 @@ Excel report layouts allow you to create a basic report that prints a dataset an
 
 For more information about creating a report based on an Excel layout, see [Creating an Excel Layout Report](devenv-howto-excel-report-layout.md).
 
-## Analyze data on lists and queries
-
-Another option is to analyze data from list pages and queries using the data analysis mode. The data analysis mode enables you to analyze data directly from the page, without having to run a report or switch another application like Excel. It provides an interactive and versatile way to calculate, summarize, and examine data. For more information, see [Analyze Data on Lists and Queries](/dynamics365/business-central/analysis-mode).
-
-## Power BI reports
-
-Power BI is a cloud-based service that allows users to connect to [!INCLUDE [prod_short](includes/prod_short.md)] data and create interactive dashboards and reports. Power BI can handle large amounts of data and perform complex calculations and transformations. Power BI also offers various visualizations, such as maps, gauges, slicers, and KPIs. Power BI is suitable for users who need to *explore and analyze data across multiple sources or dimensions*, or who want to *share their insights* with others online or on mobile devices.
-
-Power BI reports can be embedded in [!INCLUDE [prod_short](includes/prod_short.md)] pages in two ways. One way is to use the **Power BI Report** part in on a page to make reports readily visible on the page when it opens and typically linked to a specific record on the page. The other way is to embed a report in a separate page that opens from an action that the user selects on the page, which enables reports to display in a larger screen area because they're not limited by the dimensions of the part. For more information, see [Embed Power BI reports in pages](devenv-power-bi-report-parts.md).
 
 ## Choosing the technology and method
 
