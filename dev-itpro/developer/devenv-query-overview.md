@@ -8,7 +8,7 @@ ms.topic: overview
 author: jswymer
 ---
 
-# Queries in Business Central
+# Queries in [!INCLUDE[prod_short](includes/prod_short.md)]
 
 Queries enable you to retrieve records from one or more tables or data sources and then combine the data into rows and columns in a single dataset. Queries can also perform calculations on data, such as finding the sum or average of all values in a column of the dataset.
 
@@ -21,7 +21,7 @@ There are two types of query objects: normal and API.
 
 ### Query usage scenarios
   
-The following examples show how you can use queries in your [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] application.  
+The following examples show how you can use queries in your [!INCLUDE[prod_short](includes/prod_short.md)] application.  
 
 - Allowing users to analyze data from a query using the *data analysis* mode. For more information, see [Analyze query data using analysis mode](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json).
 
@@ -38,7 +38,6 @@ The following examples show how you can use queries in your [!INCLUDE[d365fin_lo
 - Creating charts that are based on a query instead of a table.  
 
 - Saving the data from a query as an .xml or .csv file. For example, you can use the [Query.SaveAsXml method](methods-auto/query/query-saveasxml-integer-string-method.md) to create an .xml file that contains the resulting dataset of a query. You can use the .xml file to integrate with external applications.  
-
 
 ## Query Data Type
 The query resulting dataset cannot be used directly by other objects such as pages and reports. Instead, you must create a [Query Data Type](methods-auto/query/query-data-type.md) instance and apply methods for handling the data from the query object. You must first call the [Query.Open Method](methods-auto/query/queryinstance-open-method.md) to be able to perform actions such as reading the dataset or setting filters and you must use the [Query.Close Method](methods-auto/query/queryinstance-close-method.md) when you are finished. You can write this code in a codeunit, for example. The following example illustrates how to do this. 
