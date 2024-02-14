@@ -83,7 +83,7 @@ Power BI reports Power BI to create interactive dashboards and data stories base
 
 :::image type="content" source="media/analytics-personas-scenarios-tools.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/analytics-personas-scenarios-tools.svg":::
 
-
+ 
 The following table sums up some of the main differences between the three types of analyzing and slicing data.
 
 |Characteristic          | Power BI | Data analysis| Excel on API| Report with Excel layout |
