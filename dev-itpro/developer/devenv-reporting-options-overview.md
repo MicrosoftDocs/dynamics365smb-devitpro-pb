@@ -21,15 +21,15 @@ When developing analytics solutions for customers, it might help to use a mental
 
 The model is based on the observation that different roles in an organization has different needs when it comes to data: the higher the role is placed in the org chart, the more data needs to be aggregated for them to do their work. 
 
-Each of the roles have some preferred/typical ways to consume/analyze data, ways that reflect the level of data aggregation needed in their role. 
+Each of the roles have some preferred/typical ways to consume/analyze data, ways that reflect the level of data aggregation needed in their role as shown in this illustration and table.
 
 :::image type="content" source="media/analytics-personas-scenarios.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/analytics-personas-scenarios.svg":::
 
-| Role     | Data aggregation  |
-|----------|-------------------|
-|Leadership| Performance data  | 
-|Management| Trends, summaries |
-|Staff     | Detailed data     |
+| Role     | Data aggregation  | Typical ways to consume/analyze data        | 
+|----------|-------------------| --------------------------------------------|
+|Leadership| Performance data  | KPIs <br> Dashboards <br> Financial reports |
+|Management| Trends, summaries | Managerial reports <br> Ad-hoc analysis     | 
+|Staff     | Detailed data     | Operational reports <br> On-screen task data|
 
 Traditionally, most of the analytics needs in [!INCLUDE [prod_short](includes/prod_short.md)] was implemented by building a report with an RDL layout designed for printing to paper or to a PDF document. In the current technology landscape, users expect that they can design (and consume) analytics online. [!INCLUDE [prod_short](includes/prod_short.md)] comes with at least three technologies that you can use for implementing online analytics to support such user needs:
 
