@@ -55,7 +55,7 @@ Another option is to let the users analyze data from list pages and queries usin
 As a developer, you should consider if the *analyze data* feature on a list page can fulfill the specified analytics need for the users. If so, maybe this is just the "report" they need. The data source of a list page is a single table, so if the data needed for the analytical need spreads over multiple tables, then this option is not immediately feasible. But if the data can be expressed as a query object, then this might be the only artifact you need to unblock the user. They can then use the *analyze data* feature on the query. For more information about queries, see [Queries in Business Central](./devenv-query-overview.md).
 
 
-## Excel on pages and APIs
+## Refreshable Excel workbooks on APIs
 
 Excel is a familiar tool that many users already use for data analysis and reporting. Excel can connect to [!INCLUDE [prod_short](includes/prod_short.md)] data using the Excel add-in or APIs/OData web services. Excel can perform calculations, formatting, filtering, sorting, and charting on the data. Excel is *suitable for users who need to manipulate or format data in a flexible way*, or who want to create custom reports or templates. 
 
@@ -66,7 +66,7 @@ Using Power Query in Excel, you can connect Excel to read data from [!INCLUDE [p
 
 Report objects offer the traditional way of creating analytical reports, processing only reports, and printable documents in [!INCLUDE [prod_short](includes/prod_short.md)]. They're written in AL code and can be customized by partners or developers. Report objects are *suitable for users who need to access specific data sets or predefined reports* within [!INCLUDE [prod_short](includes/prod_short.md)]. For more information to understand the report structure and designing the layout for a report, see [Report Object](devenv-report-object.md).
 
-Excel report layouts allow you to create a basic report that prints a dataset and leaves it up to the end user to further modify it by using the full palette of capabilities in Excel such as sliders, diagrams, charts, pivot tables, and PowerQuery to design the report. This offers flexibility and freedom for the end user, being able to change the look and feel of a report, adding more views, filtering, and sorting on data. Such a layout designed by the end user, can be imported and used as a new layout. 
+Excel report layouts allow you to create a basic report that generates a dataset and possibly leaves it up to the end user to further modify it by using the full palette of capabilities in Excel such as sliders, diagrams, charts, pivot tables, and maybe even PowerQuery and PowerPivot to design the report. This offers flexibility and freedom for the end user, being able to change the look and feel of a report, adding more views, filtering, and sorting on data. Such a layout designed by the end user, can be imported and used as a new layout. 
 
 For more information about creating a report based on an Excel layout, see [Creating an Excel Layout Report](devenv-howto-excel-report-layout.md).
 
