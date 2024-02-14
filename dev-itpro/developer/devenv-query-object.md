@@ -79,6 +79,9 @@ When you have specified the dataitem and column elements, you create links betwe
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
+> [!IMPORTANT]  
+>  You cannot run a query that gets data from both the application database and the business data database. This also applies to single-tenant deployments so that you do not have to rewrite queries if you decide to export the application. For a description of which tables are considered part of the application database, see [Separating Application Data from Business Data](../deployment/Separating-Application-Data-from-Business-Data.md).
+
 
 ## Snippet support
 Typing the shortcut `tquery` will create the basic layout for a Query object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
@@ -166,11 +169,6 @@ query 50102 "Top Customer Overview"
     }
 }
 ```
-
-
-
-> [!IMPORTANT]  
->  You cannot run a query that gets data from both the application database and the business data database. This also applies to single-tenant deployments so that you do not have to rewrite queries if you decide to export the application. For a description of which tables are considered part of the application database, see [Separating Application Data from Business Data](../deployment/Separating-Application-Data-from-Business-Data.md).
 
 
 ## View and analyze query data
