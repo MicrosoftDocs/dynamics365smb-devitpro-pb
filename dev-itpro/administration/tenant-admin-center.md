@@ -23,7 +23,6 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 > ![Business Central Admin Center.](../developer/media/admin/business_central_admin_center.png)
 
 ## Supported Microsoft Entra roles for access
-i
 
 Users with the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference) are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments:
 
