@@ -12,9 +12,12 @@ ms.date: 01/12/2024
 ms.custom: bap-template
 ---
 
-# Build copilot user experience with the prompt dialog page type
+# Build copilot user experience with the prompt dialog page
 
-In this article, you learn how to create the user interface for your AI solution that provides users with a copilot experience that is consistent across Business Central. The fundamental component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md) type page. 
+In this article, you learn how to create the user interface (UI) for your AI solution that provides users with a copilot experience that is consistent across Business Central. To learn more about the underluing code that 
+## Prompt dialog page introduction
+
+The fundamental component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md) type page. 
 
 PromptDialog page type is designed for creating copilot experiences that assist users in making informed decisions about the AI-generated output. Within a single page object, the PromptDialog page type creates a comprehensive flow in the UI, where users can provide input, view the subsequent output, and revise it as needed. The user can then choose to save their work or discard it.
 
@@ -88,7 +91,7 @@ end;
 
 In both cases, the trigger defined for the `systemaction(Generate)` control is automatically invoked.
 
-## Design the prompt mode 
+## Design the prompt mode
 
 In this task, you define the screen of the PromptDialog page where users can add input that's used by AI generation logic for producing results. The prompt area is optional because not all AI designs required it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the copilot experience. 
 
