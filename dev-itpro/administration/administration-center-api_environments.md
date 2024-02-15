@@ -375,9 +375,7 @@ Returns HTTP status code 201 (Created) with newly copied environment.
 
 ## Delete environment
 
-Deletes the specified environment. This operation *soft deletes* the environment, which means it's retained for seven days during which time it can be recovered. For more information, about environment deletion and recovery, go to [Delete and recover environments](tenant-admin-center-environments-delete.md#about-deleting-and-recovering-environments). If the specified environment has the status `Creating Failed` or `Removing Failed`, the environment won't be retained for seven days and will be permanently deleted immediately (*hard delete*).
-
-Warning: A production environment shouldn't be deleted.
+Deletes the specified environment. This operation *soft deletes* the environment, which means it's retained for fourteen days during which time it can be recovered. For more information, about environment deletion and recovery, go to [Delete and recover environments](tenant-admin-center-environments-delete.md#about-deleting-and-recovering-environments). If the specified environment has the status `Creating Failed` or `Removing Failed`, the environment won't be retained and will be permanently deleted immediately (*hard delete*).
 
 ```
 DELETE /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}
