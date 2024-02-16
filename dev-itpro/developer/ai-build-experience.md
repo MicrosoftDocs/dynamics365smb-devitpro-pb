@@ -351,9 +351,9 @@ By default, the `Caption` property of the PromptDialog page determines UI captio
 
 ![Shows the caption next to the edit button in PromptDialog type page](media/promptdialog-content-mode-caption.svg)
 
-A useful pattern for the caption is use the prompt input that was provided before the AI generation is done. For example Business Central's marketing text suggestions with Copilot uses the pattern.
+A useful pattern for the caption is to use the prompt input that was provided before the AI generation is done. The Business Central's marketing text suggestions with Copilot uses the pattern.
 
-The following code uses the `DataCaptionExpression` property in our example to set the caption to the text the user provides in the prompt area:
+The following code adds the `DataCaptionExpression` property to our example to set the caption to the text the user provides in the prompt area:
 
 ```al
 page 50100 "My copilot"
