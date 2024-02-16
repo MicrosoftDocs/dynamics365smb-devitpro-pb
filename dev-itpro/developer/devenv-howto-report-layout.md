@@ -80,7 +80,7 @@ There are at least two things you should consider when adding pictures to your W
 
 #### Control how pictures fit into the layouts
 
-When inserting a picture, you need to ensure that it doesn't take up space according to its size, but that it's adjusted to the size that you want in your layout. The best way to do this is to encapsulate the picture in a cell in a table, maybe in a 1x1 table introduced only for this purpose. When you change the size of a table cell for a picture, by default it still adjusts to fit the picture. Therefore, you must also disable the cells ability to change its size dynamically. 
+When inserting a picture, ensure that it doesn't take up space according to its size, but that it's adjusted to the size that you want in your layout. The best way to do this is to encapsulate the picture in a cell in a table, maybe in a 1x1 table introduced only for this purpose. When you change the size of a table cell for a picture, by default it still adjusts to fit the picture. Therefore, you must also disable the cells ability to change its size dynamically. 
 
 To control the picture size using a table, do as follows:
 
@@ -204,7 +204,7 @@ In the Word layout, you now use nested repeaters, where the outer repeater is on
 
 ### Using the same table style for all tables in the layout
 
-If your document layout contains multiple tables, consider using table styles to ensure that the formatting of your tables is consistent. In case you need to later on apply changes to table layouts, this will also save you time as such a change only needs to be done once. 
+If your document layout contains multiple tables, consider using table styles to ensure that the formatting of your tables is consistent. In case you need to later on apply changes to table layouts, styles save you time because changes only need to be done once.
 
 To set a default table style, do as follows:
 
@@ -466,7 +466,7 @@ The rendering of Word reports is controlled by an application feature key. Enabl
 For more information about the custom render, see [Developing a Custom Report Render](devenv-report-custom-render.md).-->
 
 > [!NOTE]  
-> Application rendering is obsolete and will be deprecated in a future release. It is recommended to stay on the old platform if you have extensions that use custom Word layouts and therefore cannot use the new platform, for example, because of dependencies on the `OnBeforeMergeDocument` or `OnBeforeMergeWordDocument` events.
+> Application rendering is obsolete and will be deprecated in a future release. It's recommended to stay on the old platform if you have extensions that use custom Word layouts and therefore cannot use the new platform, for example, because of dependencies on the `OnBeforeMergeDocument` or `OnBeforeMergeWordDocument` events.
 
 The following AL snippet can be used in code to implement rendering differentiation in extensions.
 
@@ -520,6 +520,17 @@ There's no way to directly convert an RDL layout to a Word layout, but if you wa
 1. You can test the layout either by launching a new session from Visual Studio Code or directly from the **Report layouts page**:
     1. For the initial test of the new layout, from the **Report layouts page**, find the report you want to add the new Word layout to. From the top pane menu, select the **New** action to upload the layout for the first time.
     1. For subsequent tests of the new layout, from the **Report layouts page**, find the report you want to add the new Word layout to. From the top pane menu, select the **Replace layout** action to replace the layout with the latest version.
+
+## How to convert an existing document design to a Word layout
+
+In implementation projects, a common specification for document layouts is to design them to match  the client’s existing document layouts. There's no way to directly convert a PDF document to a Word layout, but if you want to create a new Word layout based on a PDF document, then do as follows:
+
+1. Get a version of the PDF document as a Word document as follows:
+   1. Open Word.
+   1. From the **File** menu, select the **Open** action and find the PDF document. Select **OK**. This opens a dialog stating that "Word will now convert your PDF to an editable Word document". Select **OK**. The resulting Word document might not match the PDF 100%, but it's a start.
+   1. If the PDF document is read-only, the resulting Word document is also read-only. In this case, mark all content by selecting <kbd>Ctrl</kbd>+<kbd>a</kbd>, copy to clipboard, create a new Word document, and paste the content in the new Word document.
+
+1. Follow the step-by-step guide in the section [How to convert an RDL layout to a Word layout](#how-to-convert-an-rdl-layout-to-a-word-layout), skipping the step *Get a version of the report RDL layout rendered as a Word document*.
 
 
 ## See also

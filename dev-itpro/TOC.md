@@ -1,5 +1,6 @@
 ﻿# [Development and administration](index.md)
 # [New and planned](whatsnew/overview.md)
+
 # Get started
 ## Learn
 ### [Discover all aka.ms links related to Business Central](developer/readiness/readiness-bcall.yml)
@@ -69,6 +70,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 23.4](whatsnew/whatsnew-update-23-4.md)
 ### [Update 23.3](whatsnew/whatsnew-update-23-3.md)
 ### [Update 23.2](whatsnew/whatsnew-update-23-2.md)
 ### [Update 23.1](whatsnew/whatsnew-update-23-1.md)
@@ -175,6 +177,7 @@
 #### [Environments](administration/administration-center-api_environments.md)
 #### [Environment database export](administration/administration-center-api_environment_database_export.md)
 #### [Environment outage reporting](administration/administration-center-api_environment_outage_reporting.md)
+#### [Transfer environments](administration/administration-center-api_environmenttransfer.md)
 #### [Environment settings](administration/administration-center-api_environment_settings.md)
 #### [Notifications](administration/administration-center-api_notifications.md)
 #### [Reschedule updates](administration/administration-center-api_reschedule_updates.md)
@@ -383,6 +386,7 @@
 #### Set up cloud migration
 ##### [Cloud migration setup overview](administration/migration-setup-overview.md)
 ##### [Define migration table mappings](administration/migration-table-mapping.md)
+##### [Retain permissions (optional)](administration/migration-retain-permissions.md)
 ##### [Run cloud migration setup](administration/migration-setup.md)
 ##### [Change how data is replicated](administration/cloud-migration-change-replication.md)
 ##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
@@ -410,6 +414,7 @@
 <!-- DEVELOPMENT-->
 # Development
 ## [Development overview](developer/devenv-dev-overview.md)
+
 ## Get started
 ### [Welcome to AL](developer/devenv-landing.yml)
 ### [Get started with AL](developer/devenv-get-started.md)
@@ -423,6 +428,7 @@
 ### [AL code navigation](developer/devenv-al-code-navigation.md)
 ### [AL code actions](developer/devenv-code-actions.md)
 ### [Object ranges](developer/devenv-object-ranges.md)
+### [Developer productivity tips](developer/devenv-dev-productivity-tips.md)
 <!-- ### [object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
 ### [Adding help links from pages, reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
 ### [Working with translation files](developer/devenv-work-with-translation-files.md)
@@ -443,6 +449,7 @@
 #### [Get started with C/SIDE and AL side-by-side for on-premises](developer/devenv-get-started-al-for-onprem.md)
 #### [Run C/SIDE and AL side-by-side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Create runtime packages for Business Central on-premises](developer/devenv-creating-runtime-packages.md)
+
 ## Development environment
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
 ### Configure the development environment
@@ -623,7 +630,7 @@
 ##### [Structuring namespaces in AL](developer/devenv-namespaces-structure.md)
 
 ### Error handling
-#### [Failure modeling and robust coding practices](developer/devenv-robust-coding-practices.md) 
+#### [Failure modelling and robust coding practices](developer/devenv-robust-coding-practices.md) 
 #### [Error handling](developer/devenv-al-error-handling.md)
 #### [Understanding the error dialog](developer/devenv-error-dialog.md)
 #### [User experience guidelines for errors](developer/devenv-error-handling-guidelines.md)
@@ -730,6 +737,9 @@
 ### Pages and user interfaces
 #### [Customizing for user roles](developer/devenv-role-customization.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
+#### Creating deep links
+##### [Web client URL](developer/devenv-web-client-urls.md)
+##### [Business Central app URL](developer/devenv-link-to-mobile-app.md)
 #### Role centers
 ##### [Designing role centers](developer/devenv-designing-role-centers.md)
 ##### [Sample role center](developer/devenv-simple-role-center-example.md)
@@ -887,6 +897,13 @@
 #### [Isolated storage](developer/devenv-isolated-storage.md)
 #### [Protecting sensitive values with the SecretText data type](developer/devenv-secret-text.md)
 
+#### Using Azure Key Vault for app secrets
+##### [Overview](developer/devenv-app-key-vault-overview.md)
+##### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
+##### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
+##### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
+##### [Analyzing app keyvault telemetry](administration/telemetry-extension-key-vault-trace.md)
+
 #### [Permission sets and entitlements overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 ##### [Permissionset object](developer/devenv-permissionset-object.md)
 ##### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
@@ -930,9 +947,45 @@
 #### [API performance](webservices/web-service-performance.md)
 #### [API telemetry](webservices/web-service-telemetry.md)
 
+### Calling external services
+#### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
+#### [Supported cipher suites in HTTPS](developer/devenv-supported-cipher-suites.md)  
+#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
+#### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
+#### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
+#### [AL Language reference (HttpClient datatype)](developer/methods-auto/httpclient/httpclient-data-type.md)
+
+### Instrumenting with telemetry
+#### [Overview](developer/devenv-instrument-application-for-telemetry.md)
+#### [Setting up telemetry in an app/extension](developer/devenv-application-insights-for-extensions.md)
+#### [Data logged to app/extension telemetry](developer/devenv-application-insights-for-extensions-data.md)
+#### [Using feature telemetry](administration/telemetry-feature-telemetry.md)
+#### [Creating custom telemetry events](developer/devenv-instrument-application-for-telemetry-app-insights.md)
+#### [Creating custom events for Windows event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
+#### Reference documentation (telemetry)
+##### [Feature usage (System Application)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)
+##### [LogMessage method](developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md)  
+##### [LogMessage method](developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)  
+
+
 ### Accessing device capabilities
 #### [Implementing camera in AL](developer/devenv-implement-camera-al.md)
 #### [Implementing location in AL](developer/devenv-implement-location-al.md)
+
+### Developing printer extensions
+#### [Printer extension overview](developer/devenv-reports-printing.md)
+#### [Creating a printer extension](developer/devenv-reports-create-printer-extension.md)
+<!--#### [Print Setup Payload](developer/devenv-onaftersetupprinters-event.md)-->
+<!--#### [Handling Print Action](developer/devenv-reports-handle-print-action.md)-->
+<!--#### [Report Payload](developer/devenv-onafterdocumentprintready-event.md)-->
+<!--#### [Troubleshooting Print Errors](developer/devenv-reports-troubleshoot-printing.md)-->
+
+### Using .NET (on-premises only)
+#### [Get started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+#### [Migrating from .NET Framework to .NET Standard](developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
+#### [.NET control add-ins](developer/devenv-dotnet-controladdins.md)
+#### [Subscribing to events in a .NET Framework type](developer/devenv-dotnet-subscribe-to-events.md)
+#### [Serializing .NET Framework types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 
 <!-- The AL programming language -->
 ## The AL programming language
@@ -984,66 +1037,28 @@
 
 <!-- end AL programming -->
 
-## AL platform
-### [Overview](developer/devenv-platform-overview.md)
-### [System and application reference documentation](/dynamics365/business-central/application/)
-<!-- (Job queue, printing, task scheduler, telemetry, Keyvault, .NET interop, AL HttpClient, Azure functions) -->
-### Using the system application
-#### [Overview of the system application](developer/devenv-system-application-overview.md)
 
-#### Creating new modules in the system application
-##### [Module architecture](developer/devenv-blueprint.md)
-##### [Get started with modules](developer/devenv-getting-started.md)
-##### [Set up your development environment](developer/devenv-set-up-an-environment.md)
-##### [Create a new module](developer/devenv-new-module.md)
-##### [Create a .NET wrapper module](developer/devenv-create-a-wrapper-module.md)
-##### [Change a module](developer/devenv-change-a-module.md)
+## [System and application reference documentation](/dynamics365/business-central/application/)
+### [Overview of the system application](developer/devenv-system-application-overview.md)
+### Creating new modules in the system application
+#### [Module architecture](developer/devenv-blueprint.md)
+#### [Get started with modules](developer/devenv-getting-started.md)
+#### [Set up your development environment](developer/devenv-set-up-an-environment.md)
+#### [Create a new module](developer/devenv-new-module.md)
+#### [Create a .NET wrapper module](developer/devenv-create-a-wrapper-module.md)
+#### [Change a module](developer/devenv-change-a-module.md)
 
-### Task scheduler and job queue
-#### [Task scheduler](developer/devenv-task-scheduler.md)
-#### [Job queue](developer/devenv-job-queue.md)
 
-### Calling external services
-#### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
-#### [Supported cipher suites in HTTPS](developer/devenv-supported-cipher-suites.md)  
-#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
-#### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
-#### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
-#### [AL Language reference (HttpClient datatype)](developer/methods-auto/httpclient/httpclient-data-type.md)
-<!--#### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)-->
-
-### Using Azure Key Vault for app secrets
-#### [Overview](developer/devenv-app-key-vault-overview.md)
-#### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
-#### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
-#### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
-#### [Analyzing app keyvault telemetry](administration/telemetry-extension-key-vault-trace.md)
-
-### Developing printer extensions
-#### [Printer extension overview](developer/devenv-reports-printing.md)
-#### [Creating a printer extension](developer/devenv-reports-create-printer-extension.md)
-<!--#### [Print Setup Payload](developer/devenv-onaftersetupprinters-event.md)-->
-<!--#### [Handling Print Action](developer/devenv-reports-handle-print-action.md)-->
-<!--#### [Report Payload](developer/devenv-onafterdocumentprintready-event.md)-->
-<!--#### [Troubleshooting Print Errors](developer/devenv-reports-troubleshoot-printing.md)-->
-
-### Creating deep links
-#### [Web client URL](developer/devenv-web-client-urls.md)
-#### [Business Central app URL](developer/devenv-link-to-mobile-app.md)
-
-### Instrumenting with telemetry
-#### [Overview](developer/devenv-instrument-application-for-telemetry.md)
-#### [Sending extension telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
-#### [Adding feature usage telemetry](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)
-#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
-#### [Creating custom events for event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
-
-### Using .NET (on-premises only)
-#### [Get started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
-#### [Migrating from .NET Framework to .NET Standard](developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
-#### [.NET control add-ins](developer/devenv-dotnet-controladdins.md)
-#### [Subscribing to events in a .NET Framework type](developer/devenv-dotnet-subscribe-to-events.md)
-#### [Serializing .NET Framework types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
+<!-- Data analytics and reporting -->
+## Data analytics and reporting
+### [Analyzing, pivoting, and sharing data in Business Central](developer/devenv-reporting-options-overview.md)
+### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
+### [Analyze data on lists and queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Queries in Business Central](developer/devenv-query-overview.md)  
+### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)
+### [Working with Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
+<!-- end Data analytics and reporting -->
 
 ## Extensibility
 ### [Extensibility overview](developer/devenv-extensibility-overview.md)
@@ -1096,6 +1111,7 @@
 #### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
 
 <!-- end Testing the application -->
+
 <!-- Rules and Guidelines -->
 ## Rules, guidelines, and best practices
 ### [Overview](compliance/apptest-overview.md)
@@ -1279,6 +1295,7 @@
 <!-- end performance -->
 <!-- integration-->
 # Integration
+## [Integration overview](developer/integration-overview.md)
 <!-- web service -->
 ## Web services
 ### [Web services overview](webservices/web-services.md)
@@ -1302,9 +1319,10 @@
 ### APIs
 #### [Overview](webservices/api-overview.md)
 #### [API client performance](webservices/odata-client-performance.md)
+#### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
 #### [Tips for working with APIs](developer/devenv-connect-apps-tips.md)
 #### [Using filters with API calls](developer/devenv-connect-apps-filtering.md)
-#### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
+#### [Environment list API](webservices/api-get-environments.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
 #### [Transitioning from API v1.0 to API v2.0](api-reference/v2.0/transition-to-api-v2.0.md)
@@ -1353,7 +1371,6 @@
 #### [Admin Center API](administration/administration-center-api.md)
 #### [Cloud migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
 #### [API Developer Overview](developer/devenv-api.md)
-#### [Getting a list of environments](webservices/api-get-environments.md)
 
 ### Exposing pages as OData/SOAP web service endpoints
 #### [Publishing a web service](webservices/publish-web-service.md)
@@ -1406,10 +1423,11 @@
 ### [API Developer Overview](developer/devenv-api.md)
 ### [Developing a custom API](developer/devenv-develop-custom-api.md)
 ### [Service-to-Service authentication](administration/automation-apis-using-s2s-authentication.md)
-<!-- CDS -->
-## Integrating with external systems
-### [Data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
+
+## Integrating with external systems using events
+### [Using webhooks to track data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
 ### [Business events (preview)](developer/business-events-overview.md)
+
 ## Integrating AI using developer tools for copilot
 ### [Overview](developer/ai-integration-landing-page.yml)
 ### [What are developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
@@ -1420,7 +1438,10 @@
 #### [Introduction](developer/ai-build-experience-overview.md)
 #### [Build the copilot capability in AL](developer/ai-build-capability-in-al.md)
 #### [Build copilot user experience](developer/ai-build-experience.md)
+
+<!-- CDS -->
 ## Integrating with Microsoft Dataverse
+### [Overview](developer/dataverse-integration-overview.md)
 ### Data synchronization
 #### [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)
 #### [Custom synchronization with Dataverse](administration/administration-custom-cds-integration.md)
@@ -1442,6 +1463,7 @@
 ###### [Update subscriptions](api-dataverse/api/dynamics_subscriptions_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end CDS -->
+
 <!-- Microsoft Power Automate -->
 ### Data virtualization
 #### [Integrate with Microsoft Dataverse via virtual tables](powerplatform/powerplat-overview.md)
@@ -1449,18 +1471,22 @@
 #### [Application lifecycle management for solutions that use virtual tables](powerplatform/powerplat-app-lifecycle-management.md)
 #### [Business Central and Dataverse admin reference for virtual tables](powerplatform/powerplat-admin-reference.md)
 #### [FAQ for virtual tables](powerplatform/powerplat-faq.md)
+
 ## Integrating with Microsoft Power Apps
 ### [Overview](powerplatform/power-apps-overview.md)
 ### [Application lifecycle management](powerplatform/power-apps-alm.md)
 ### [Sample apps](powerplatform/power-apps-samples.md)
 ### [Best practices](powerplatform/power-apps-best-practices.md)
+
 ## Integrating with Microsoft Power Automate
 ### [Overview](powerplatform/power-automate-overview.md)
 ### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
 ### [Create automated flows](powerplatform/automate-workflows.md)
 ### [Create instant flows](powerplatform/instant-flows.md)
 ### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
+
 ## [Integrating with Microsoft Power Pages (preview)](developer/power-pages-on-virtual-tables-overview.md)
+
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
 ### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
@@ -1470,14 +1496,17 @@
 ### Report creator
 #### [Get started: Build Power BI reports](/dynamics365/business-central/across-how-use-financials-data-source-powerbi)
 #### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
+
 ### [Extract data from Business Central](developer/devenv-extract-data.md)
 ### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 ### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
+
 <!-- Microsoft Power Platform -->
 <!-- end Microsoft Power Platform -->
-## Integrating with other Dynamics 365 applications
-### [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
+
+## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
+
 <!-- Microsoft Teams -->
 ## Integrating with Microsoft Teams
 ### [Overview](developer/devenv-develop-for-teams.md)
@@ -1488,8 +1517,12 @@
 ### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
+
 <!-- Azure services -->
 ## Integrating with Azure services
+### [Overview](developer/azure-integration-overview.md)
+### [Connecting to Azure Blob Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Blob%20Services%20API)  
+### [Connecting to Azure File Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20File%20Services%20API)  
 ### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)
 ### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
 ### [Connecting to Azure Key Vault](developer/devenv-app-key-vault-overview.md)
