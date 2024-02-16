@@ -99,7 +99,7 @@ In this task, you define the screen of the PromptDialog page where users can add
 
 The prompt area is where users can provide input to the AI generation. The prompt area supports natural language input (like free text fields) and structured input (like field groups and page parts). The example uses a single field that allows the user to type natural language text in an unstructured format.
 
-![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.svg)
+[![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.svg)](media/promptdialog-prompt-mode-prompt-area.svg#lightbox)
 
 The prompt area is defined by adding an `area` control to the `layout` of the page, similar to way you'd add content areas on other page types. Except you use the syntax `area(Prompt)`:
 
@@ -126,7 +126,7 @@ Within `area(Prompt)`, you can add one or more fields, groups, and page parts. `
 
 In this task, you add action to the PromptDialog page that users select to start generating output with Copilot and AI. 
 
-![Shows a screenshot that highlights the generate action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-generate.svg)
+[![Shows a screenshot that highlights the generate action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-generate.svg)](media/promptdialog-prompt-mode-generate.svg#lightbox)
 
 The `PromptDialog` page type supports several *system actions* that appear as buttons in the UI. You add these actions in the `actions` control on the page like you would any other action. Except you define the system actions by first adding an `area(SystemActions)` control, then using the `systemaction()`control to define the specific action. In this case, you use a `systemaction(Generate)` control. 
 
@@ -161,7 +161,7 @@ For an example on building an AI capability, see [Build the copilot capability i
 
 In this task, you add action to the PromptDialog page that enables users to select a file to upload in the prompt area. The content of the file can provide input to the AI generation.
 
-![Shows a screenshot that highlights the file attachment action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-attach.svg)
+[![Shows a screenshot that highlights the file attachment action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-attach.svg)](media/promptdialog-prompt-mode-attach.svg#lightbox)
 
 Like the system action for generating AI, there's also a system action for attaching a file. In this case, you use a `systemaction(Attach)` control.
 
@@ -193,7 +193,8 @@ actions
 
 In this task, you add actions to the PromptDialog page that enable users to set style preferences to influence the AI-generated output. The options appear as buttons in the UI to the right of the system actions.
 
-![Shows a screenshot that highlights the preference option actions in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-options.svg)
+[![Shows a screenshot that highlights the preference option actions in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-options.svg)](media/promptdialog-prompt-mode-options.svg#lightbox)
+
 
 You add the options by using in a `area(PromptOptions)` control with the `actions` control. Each option is defined by a field using the `field` control. Only fields of the [option data type](methods-auto/option/option-data-type.md) are supported.
 
@@ -218,9 +219,9 @@ actions
 
 ## Customize the generate mode caption
 
-By default, the caption of PromptDialog page when it's in the generate mode is **Generating...**, as shown in the following figure:
+By default, the caption of PromptDialog page when it's in the generate mode is **Generating** as shown in the following figure:
 
-![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.png)
+[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.png)](media/promptdialog-generate-mode.png#lightbox)
 
 You can customize the caption by using the [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) methods. Customizing the caption enables you to give users more specific feedback about what Copilot is doing or how it's progressing. This is especially useful if the Copilot consists of multiple steps or takes a long time.
 
@@ -240,7 +241,7 @@ systemaction(Generate)
 
 The following figure shows the customized generate mode in the UI:
 
-![Shows a screenshot of the custom caption of generate mode in the UI](media/promptdialog-generate-mode-custom.png)
+[![Shows a screenshot of the custom caption of generate mode in the UI](media/promptdialog-generate-mode-custom.png)](media/promptdialog-generate-mode-custom.png#lightbox)
 
 For a more complex example, refer to `RunGeneration()` procedure in the `CopilotJobProposal.Page`of the [Advanced_SuggestJob sample on GitHub](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al).
 
@@ -256,9 +257,9 @@ If the PromptDialog page has a prompt area (`area(Prompt)`), then an edit prompt
 
 In this task, you define the area of the content that displays results of the AI generation.
 
-![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode-output-area.svg)
+[![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode-output-area.svg)](media/promptdialog-content-mode-output-area.svg#lightbox)
 
-To define this area, you add an `area(Content)` control to the `layout`, then add one or more data fields. You can structure and arrange fields in groups and page parts. Like the `Prompt` area, the `Content` area supports all controls except  `repeater`. 
+To define this area, you add an `area(Content)` control to the `layout`, then add one or more data fields. You can structure and arrange fields in groups and page parts. Like the `Prompt` area, the `Content` area supports all controls except  `repeater`.
 
 ```al
 layout
@@ -278,7 +279,7 @@ layout
 
 In this task, you add actions to the content mode that enable users to save or discard the AI-generated proposal. Don't save AI-generated proposals to the database until the user chooses to do so. In accordance with responsible AI, to respect the user's choice.
 
-![Shows a screenshot of the save and discard actions in the content mode of the PromptDialog type page](media/promptdialog-content-mode-save.svg)
+[![Shows a screenshot of the save and discard actions in the content mode of the PromptDialog type page](media/promptdialog-content-mode-save.svg)](media/promptdialog-content-mode-save.svg#lightbox)
 
 There are two system actions that control the behavior: `systemaction(OK)` for saving and `systemaction(Cancel)` for discarding. These actions appear in the UI by default without you having to add any code where `systemaction(OK)` has the caption **Keep it** and `systemaction(Cancel)` has the caption **Discard**. However, you do have to add code that handles the content based on which action the user chooses. 
 
@@ -319,9 +320,9 @@ There are two system actions that control the behavior: `systemaction(OK)` for s
 
 ### Add a regenerate action
 
-In this task, you add an action to the PromptDialog page that enables users to generate the results again directly from the content mode.   
+In this task, you add an action to the PromptDialog page that enables users to generate the results again directly from the content mode.
 
-![Shows a screenshot of the regenerate action in the content mode of the PromptDialog type page](media/promptdialog-content-mode-regen.svg)
+[![Shows a screenshot of the regenerate action in the content mode of the PromptDialog type page](media/promptdialog-content-mode-regen.svg)](media/promptdialog-content-mode-regen.svg#lightbox)
 
 To include this action, add a `systemaction(Regenerate)` control to `area(SystemActions)`.
 
@@ -349,7 +350,7 @@ actions
 
 By default, the `Caption` property of the PromptDialog page determines UI caption in prompt and content modes of the PromptDialog page. By using the [DataCaptionExpression property](properties/devenv-datacaptionexpression-property.md), you can change the caption dynamically. This property enables you to display a different caption in the content than in the prompt mode.
 
-![Shows the caption next to the edit button in PromptDialog type page](media/promptdialog-content-mode-caption.svg)
+[![Shows the caption next to the edit button in PromptDialog type page](media/promptdialog-content-mode-caption.svg)](media/promptdialog-content-mode-caption.svg#lightbox)
 
 A useful pattern for the caption is to use the prompt input that was provided before the AI generation is done. The Business Central's marketing text suggestions with Copilot uses the pattern.
 
@@ -372,7 +373,7 @@ page 50100 "My copilot"
 
 A user might get more than one generated output when using copilot. This situation can happen when copilot provides several versions of an output from start, or when the user chooses to regenerate the output. It can be beneficial to provide users with a way to scroll back and forth through a history of the different proposals. To accommodate this capability, you can set up version carousel at the top of the PromptDialog page.
 
-![Shows the version control in content mode of the PromptDialog type page](media/promptdialog-content-mode-versions.svg)
+[![Shows the version control in content mode of the PromptDialog type page](media/promptdialog-content-mode-versions.svg)](media/promptdialog-content-mode-versions.svg#lightbox)
 
 This capability requires that the PromptDialog page uses a temporary source table. Unlike with other page types, the source table represents an instance of a copilot proposal. It can include both user inputs and the AI-generated results. 
 
