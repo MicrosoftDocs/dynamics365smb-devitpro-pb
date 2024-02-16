@@ -216,8 +216,8 @@ actions
         }
     }
 }
-
 ```
+
 ## Design the content mode
 
 The content mode shows the AI-generated output. It enables users to review output, then choose to regenerate, save, or discard it.
@@ -406,7 +406,7 @@ end
 
 There are various ways to use the `Dialog.Open()`and `Dialog.Update()` to change the generate mode's caption. For example, you can call the methods directly from the `OnAction()` trigger of `Generate` and `Regenerate` actions. Or you can call the methods from the procedure that generates the results (for purposes of this article, the `RunGeneration()` procedure).
 
-For example, consider the following code snippets that change the caption to **Creating a draft for you...** when generating the first draft with copilot and **Revising the draft for you...** when regenerating a draft. 
+For example, consider the following code snippets that change the caption to **Creating a draft for you...** when generating the first draft with copilot and **Revising the draft for you...** when regenerating a draft.
 
 ```al
 systemaction(Generate)
@@ -426,7 +426,6 @@ systemaction(Regenerate)
         RunGenerate(CopilotRegeneratingTxt);
     end;
 }
-
 ```
 
 ```al
@@ -440,7 +439,7 @@ begin
 end;
 ```
 
-The following figure shows the customized generate mode in the UI:
+The following figure shows the customized generate mode caption in the UI for the **Generate** action is selected:
 
 [![Shows a screenshot of the custom caption of generate mode in the UI](media/promptdialog-generate-mode-custom.png)](media/promptdialog-generate-mode-custom.png#lightbox)
 
