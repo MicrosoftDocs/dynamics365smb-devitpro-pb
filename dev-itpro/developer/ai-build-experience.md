@@ -101,7 +101,7 @@ The prompt area is where users can provide input to the AI generation. The promp
 
 ![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.svg)
 
-The prompt area is defined by adding an `area` control to the `layout` of the page, similar to way you'd add content areas on other page types. Except you use the syntax `area(Prompt)`: 
+The prompt area is defined by adding an `area` control to the `layout` of the page, similar to way you'd add content areas on other page types. Except you use the syntax `area(Prompt)`:
 
 ```al
 layout
@@ -224,7 +224,7 @@ By default, the caption of PromptDialog page when it's in the generate mode is *
 
 You can customize the caption by using the [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) methods. Customizing the caption enables you to give users more specific feedback about what Copilot is doing or how it's progressing. This is especially useful if the Copilot consists of multiple steps or takes a long time.
 
-The following code example changes the caption to **Making a draft for you...** by calling `Dialog.Open()` on the `OnAction()` trigger of the `systemaction(Generate)` action:
+The following code example changes the caption to **Creating a draft for you...** by calling `Dialog.Open()` on the `OnAction()` trigger of the `systemaction(Generate)` action:
 
 ```al
 systemaction(Generate)
@@ -233,7 +233,7 @@ systemaction(Generate)
     var
         ProgressDialog: Dialog;
     begin
-        ProgressDialog.Open('Making a draft for you...');
+        ProgressDialog.Open('Creating a draft for you...');
     end;
 }
 ```
@@ -246,9 +246,11 @@ For a more complex example, refer to `RunGeneration()` procedure in the `Copilot
 
 ## Design the content mode
 
-The content mode shows the AI-generated output. It enables users to review output, then choose to regenerate, save, or discard it. 
+The content mode shows the AI-generated output. It enables users to review output, then choose to regenerate, save, or discard it.
 
 <!--![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)-->
+
+If the PromptDialog page has a prompt area (`area(Prompt)`), then an edit prompt ![Shows the prompt edit icon](media/prompt-edit.png) button appears in the upper-left corner of the page when it's in the content mode. This edit button let's users to open the prompt area to provide new input or modify input.
 
 ### Add a content area
 
@@ -343,23 +345,27 @@ actions
 
 ```
 
-## Customize the caption 
+### Customize the caption in content mode
 
-By default, the `Caption` property of the PromptDialog page determines UI caption in prompt and content modes of the PromptDialog page. By using the [DataCaptionExpression property](properties/devenv-datacaptionexpression-property.md), you can change the caption dynamically. This property enables you to display a different caption when the page is in the content and generate mode than in the prompt mode.
+By default, the `Caption` property of the PromptDialog page determines UI caption in prompt and content modes of the PromptDialog page. By using the [DataCaptionExpression property](properties/devenv-datacaptionexpression-property.md), you can change the caption dynamically. This property enables you to display a different caption in the content than in the prompt mode.
 
 ![Shows the caption next to the edit button in PromptDialog type page](media/promptdialog-content-mode-caption.svg)
 
-A useful pattern is to show the input that was made by the user before the AI generation is done.
+A useful pattern for the caption is use the prompt input that was provided before the AI generation is done. For example Business Central's marketing text suggestions with Copilot uses the pattern.
+
+The following code uses the `DataCaptionExpression` property in our example to set the caption to the text the user provides in the prompt area:
 
 ```al
-
-page 50100 My Copilot"
+page 50100 "My copilot"
 {
     Caption = 'Draft with my copilot';
-    DataCaptionExpression = UserInput;
     PageType = PromptDialog;
     Extensible = false;
-
+    PromptMode = Prompt;
+    IsPreview = true;
+    DataCaptionExpression = UserInput;
+...
+}
 ```
 
 ## Enable proposal history capability
