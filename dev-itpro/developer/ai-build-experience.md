@@ -22,14 +22,6 @@ The fundamental component of Copilot from the user-interface perspective is the 
 
 > [!VIDEO media/Copilot-UI.mp4]
 
-
-tttt
-
-
-
-
-![VIDEO](media/Copilot-UI.mp4)
-
 ## Design overview and flow
 
 PromptDialog page type has three different display modes to accommodate the flow for generating AI content: 
