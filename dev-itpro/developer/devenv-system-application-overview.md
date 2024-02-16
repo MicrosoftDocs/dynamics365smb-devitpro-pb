@@ -214,3 +214,4 @@ Publish-BCContainerApp -containerName $containerName `
 
 ## See also
 [BCApps](https://github.com/microsoft/BCApps)  
+[BCApps reference documentation](https://microsoft.github.io/BCApps/#reference-documentation)
