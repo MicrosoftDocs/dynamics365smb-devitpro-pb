@@ -369,7 +369,7 @@ page 50100 "My copilot"
 
 ## Customize the generate mode caption
 
-By default, the caption of PromptDialog page when it's in the generate mode is **Generating** as shown in the following figure:
+By default, the caption of PromptDialog page when it's in the generate mode is **Generating**, as illustrated in the following figure:
 
 [![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.png)](media/promptdialog-generate-mode.png#lightbox)
 
