@@ -688,7 +688,7 @@
 #### Reading data
 ##### [Get, Find, and Next methods](developer/devenv-get-find-and-next-methods.md)
 ##### [Record instance isolation level](developer/devenv-read-isolation.md)
-##### [Using Read Scale-Out for Better Performance](administration/database-read-scale-out-overview.md)
+##### [Using read scale-out for better performance](administration/database-read-scale-out-overview.md)
 ##### Partial records
 ###### [Using partial records](developer/devenv-partial-records.md)
 ###### [FAQ](developer/devenv-partial-records-faq.md)
