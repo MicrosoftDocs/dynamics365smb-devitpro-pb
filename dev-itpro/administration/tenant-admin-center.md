@@ -30,7 +30,7 @@ Users with the following [Microsoft Entra roles](/entra/identity/role-based-acce
 - [Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator)
 - Dynamics 365 Business Central Administrator
 
-Although the following roles aren't required to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md) or its environments, they allow for administration of tools and resources that integrate with [!INCLUDE [prod_short](../developer/includes/prod_short.md)]:
+Although the following roles aren't required to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] or its environments, they allow for administration of tools and resources that integrate with [!INCLUDE [prod_short](../developer/includes/prod_short.md)]:
 
 - [Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) - create and manage all aspects of Power Platform environments.
 - [Service Support Administrator](/entra/identity/role-based-access-control/permissions-reference#service-support-administrator) - create and manage support requests.
