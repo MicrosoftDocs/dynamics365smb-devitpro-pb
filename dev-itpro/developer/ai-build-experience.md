@@ -20,7 +20,9 @@ In this article, you learn how to create the user interface (UI) for your AI sol
 
 The fundamental component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md) type page. The PromptDialog page is designed for creating copilot experiences that assist users in making informed decisions about the AI-generated output. Within a single page object, the PromptDialog page type creates a comprehensive flow in the UI, where users can provide input, view the subsequent output, and revise it as needed. The user can then choose to save their work or discard it.
 
+<!--
 > [!VIDEO media/Copilot-UI.mp4]
+-->
 
 ## Design overview and flow
 
@@ -226,8 +228,9 @@ By default, the caption of PromptDialog page when it's in the generate mode is *
 
 You can customize the caption by using the [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) methods. Customizing the caption enables you to give users more specific feedback about what Copilot is doing or how it's progressing. This is especially useful if the Copilot consists of multiple steps or takes a long time.
 
-The following code example changes the caption to **Creating a draft for you...** by calling `Dialog.Open()` on the `OnAction()` trigger of the `systemaction(Generate)` action:
+The following code snippet changes the caption to **Creating a draft for you...** by calling `Dialog.Open()` from the `RunGenration()` procedure, which is run from the `systemaction(Generate)` and `systemaction(Regenerate)`actions:
 
+<!--
 ```al
 systemaction(Generate)
 {
@@ -238,6 +241,18 @@ systemaction(Generate)
         ProgressDialog.Open('Creating a draft for you...');
     end;
 }
+```
+-->
+
+```al
+local procedure RunGeneration()
+var
+    GenerateModeProgress: Dialog;
+    ...
+begin
+    GenerateModeProgress.Open('Creating a draft for you...');
+    ...
+end
 ```
 
 The following figure shows the customized generate mode in the UI:
@@ -252,7 +267,7 @@ The content mode shows the AI-generated output. It enables users to review outpu
 
 <!--![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)-->
 
-If the PromptDialog page has a prompt area (`area(Prompt)`), then an edit prompt ![Shows the prompt edit icon](media/prompt-edit.png) button appears in the upper-left corner of the page when it's in the content mode. This edit button let's users to open the prompt area to provide new input or modify input.
+If the PromptDialog page has a prompt area (`area(Prompt)`), then an edit prompt ![Shows the prompt edit icon](media/prompt-edit.png) button appears in the upper-left corner of the page when it's in the content mode. Users can select the edit prompt button to open the prompt area where they can provide new input or modify input.
 
 ### Add a content area
 
@@ -376,19 +391,19 @@ A user might get more than one generated output when using copilot. This situati
 
 [![Shows the version control in content mode of the PromptDialog type page](media/promptdialog-content-mode-versions.svg)](media/promptdialog-content-mode-versions.svg#lightbox)
 
-This capability requires that the PromptDialog page uses a temporary source table. Unlike with other page types, the source table represents an instance of a copilot proposal. It can include both user inputs and the AI-generated results. 
+This capability requires that the PromptDialog page uses a temporary source table. Unlike with other page types, the source table represents an instance of a copilot proposal. It can include both user inputs and the AI-generated results.
 
-You should design the capability to insert a new record each time content is generated. When in place, the control appears on the PromptDialog page whenever the source table contains multiple records. After the user closes the copilot, for example by saving or discarding the results, the version history is deleted. 
-
+You should design the capability to insert a new record each time content is generated. When in place, the control appears on the PromptDialog page whenever the source table contains multiple records. After the user closes the copilot, for example by saving or discarding the results, the version history is deleted.
 
 ```al
-page 50100 "Copilot Job Proposal"
+page 50100 "My copilot"
 {
-    Caption = 'Draft new job with copilot';
+    Caption = 'Draft with copilot';
     PageType = PromptDialog;
     Extensible = false;
     PromptMode = Prompt;
     IsPreview = true;
+    DataCaptionExpression = UserInput;
     SourceTable = TempInputData;
     SourceTableTemporary = true;
 ...
@@ -407,7 +422,7 @@ action(GenerateCopilot)
 
     trigger OnAction()
     begin
-        Page.RunModal(Page::"Copilot Job Proposal");
+        Page.RunModal(Page::"My copilot");
     end;
 }
 ```
@@ -418,7 +433,6 @@ or `SparkleFilled` ![Shows the copilot sparkle filled icon](media/copilot-sparkl
 In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific copilot. For example, if there's multiple copilot actions on a page, you might want to emphasize one copilot action over the others.  
 
 ## Example
-
 
 ```al
 page 50100 "Copilot Job Proposal"
