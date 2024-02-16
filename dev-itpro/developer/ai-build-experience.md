@@ -219,48 +219,6 @@ actions
 }
 
 ```
-
-## Customize the generate mode caption
-
-By default, the caption of PromptDialog page when it's in the generate mode is **Generating** as shown in the following figure:
-
-[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.png)](media/promptdialog-generate-mode.png#lightbox)
-
-You can customize the caption by using the [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) methods. Customizing the caption enables you to give users more specific feedback about what Copilot is doing or how it's progressing. This is especially useful if the Copilot consists of multiple steps or takes a long time.
-
-The following code snippet changes the caption to **Creating a draft for you...** by calling `Dialog.Open()` from the `RunGenration()` procedure, which is run from the `systemaction(Generate)` and `systemaction(Regenerate)`actions:
-
-<!--
-```al
-systemaction(Generate)
-{
-    trigger OnAction()
-    var
-        ProgressDialog: Dialog;
-    begin
-        ProgressDialog.Open('Creating a draft for you...');
-    end;
-}
-```
--->
-
-```al
-local procedure RunGeneration()
-var
-    GenerateModeProgress: Dialog;
-    ...
-begin
-    GenerateModeProgress.Open('Creating a draft for you...');
-    ...
-end
-```
-
-The following figure shows the customized generate mode in the UI:
-
-[![Shows a screenshot of the custom caption of generate mode in the UI](media/promptdialog-generate-mode-custom.png)](media/promptdialog-generate-mode-custom.png#lightbox)
-
-For a more complex example, refer to `RunGeneration()` procedure in the `CopilotJobProposal.Page`of the [Advanced_SuggestJob sample on GitHub](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al).
-
 ## Design the content mode
 
 The content mode shows the AI-generated output. It enables users to review output, then choose to regenerate, save, or discard it.
@@ -410,6 +368,83 @@ page 50100 "My copilot"
 }
 ```  
 
+## Customize the generate mode caption
+
+By default, the caption of PromptDialog page when it's in the generate mode is **Generating** as shown in the following figure:
+
+[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.png)](media/promptdialog-generate-mode.png#lightbox)
+
+You can customize the caption by using the [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) methods. Customizing the caption enables you to give users more specific feedback about what Copilot is doing or how it's progressing. This is especially useful if the Copilot consists of multiple steps or takes a long time.
+
+<!--The following code snippet changes the caption to **Creating a draft for you...** by calling `Dialog.Open()` from the `RunGenration()` procedure, which is run from the `systemaction(Generate)` and `systemaction(Regenerate)`actions:-->
+
+<!--
+```al
+systemaction(Generate)
+{
+    trigger OnAction()
+    var
+        ProgressDialog: Dialog;
+    begin
+        ProgressDialog.Open('Creating a draft for you...');
+    end;
+}
+```
+
+
+```al
+local procedure RunGeneration()
+var
+    GenerateModeProgress: Dialog;
+    ...
+begin
+    GenerateModeProgress.Open('Creating a draft for you...');
+    ...
+end
+
+```
+-->
+
+There are various ways to use the `Dialog.Open()`and `Dialog.Update()` to change the generate mode's caption. For example, you can call the methods directly from the `OnAction()` trigger of `Generate` and `Regenerate` actions. Or you can call the methods from the procedure that generates the results (for this article, the `RunGeneration()` procedure). For example, consider the following code snippets that change the caption to **Creating a draft for you...** when generating the first draft with coplit and **Revising the draft for you...** when regenerating a draft.
+
+```al
+systemaction(Generate)
+{
+    Caption = 'Generate';
+
+    trigger OnAction();
+    begin
+        RunGenerate(CopilotGeneratingTxt);
+    end;
+}
+systemaction(Regenerate)
+{
+    Caption = 'Regenerate';
+    trigger OnAction()
+    begin
+        RunGenerate(CopilotRegeneratingTxt);
+    end;
+}
+
+```
+
+```al
+local procedure RunGenerate(ProgressTxt: Text)
+begin
+    GenerateModeProgress.Open(ProgressTxt);
+    //GenerateModeProgress.Open('Creating a draft for you...');
+    Sleep(3000);
+    generatedOutput := 'This is the output for: ' + userInput;
+
+end;
+```
+
+The following figure shows the customized generate mode in the UI:
+
+[![Shows a screenshot of the custom caption of generate mode in the UI](media/promptdialog-generate-mode-custom.png)](media/promptdialog-generate-mode-custom.png#lightbox)
+
+For a more complex example, refer to `RunGeneration()` procedure in the `CopilotJobProposal.Page`of the [Advanced_SuggestJob sample on GitHub](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al).
+
 ## Launch experience
 
 With this task, you add code to run the PromptDialog page. This task is done similar to the way you start any page. The following code uses an action: 
@@ -443,82 +478,82 @@ page 50100 "Copilot Job Proposal"
     IsPreview = true;
     DataCaptionExpression = UserInput;
 
-layout
-{
-    area(Prompt) 
-    {
-        field(ProjectDescription; UserInput)
-        {
-            ShowCaption = false;
-            MultiLine = true;
-        }
+    layout
+    {
+        area(Prompt) 
+        {
+            field(ProjectDescription; UserInput)
+            {
+                ShowCaption = false;
+                MultiLine = true;
+            }
+        }
+        area(Content)
+        {
+            field("Job Short Description"; JobDescription)
+            {
+            }
+            field("Job Full Details"; JobFullDescription)
+            {
+            }
+            field(CustomerNameField; CustomerName)
+            {
+            }
+            part(ProposalDetails; "Copilot Job Proposal Subpart")
+            {
+            }
+        }
+    
+        area(PromptOptions)
+            {
+                field(Tone; Tone) {}
+                field(TextFormat; TextFormat) {}
+                field(Emphasis; Emphasis){}
+            }
     }
-    area(Content)
-    {
-        field("Job Short Description"; JobDescription)
-        {
+    actions
+    {
+        area(SystemActions)
+        {
+            systemaction(Generate)
+            {
+                Caption = 'Generate';
+                trigger OnAction()
+                begin
+                    // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
+                    RunGeneration();
+                end;
+            }
+            systemaction(Regenerate)
+            {
+                Caption = 'Regenerate';
+                ToolTip = 'Regenerate the Job proposed by Dynamics 365 Copilot.';
+                trigger OnAction()
+                begin
+                    // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
+                    RunGeneration();
+                end;
+            }
+            systemaction(OK)
+            {
+                Caption = 'Keep it';
+                ToolTip = 'Save the proposed Job.';
+            }
+            systemaction(Cancel)
+            {
+                Caption = 'Throw it away';
+                ToolTip = 'Throw away the proposed Job.';
+            }
         }
-        field("Job Full Details"; JobFullDescription)
-        {
-        }
-        field(CustomerNameField; CustomerName)
-        {
-        }
-        part(ProposalDetails; "Copilot Job Proposal Subpart")
-        {
-        }
-    }
+    }
 
-    area(PromptOptions)
-        {
-            field(Tone; Tone) {}
-            field(TextFormat; TextFormat) {}
-            field(Emphasis; Emphasis){}
-        }
-}
-actions
-{
-    area(SystemActions)
-    {
-        systemaction(Generate)
-        {
-            Caption = 'Generate';
-            trigger OnAction()
-            begin
-                // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
-                RunGeneration();
-            end;
-        }
-    }
-        systemaction(Regenerate)
-        {
-            Caption = 'Regenerate';
-            ToolTip = 'Regenerate the Job proposed by Dynamics 365 Copilot.';
-            trigger OnAction()
-            begin
-                // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
-                RunGeneration();
-            end;
-        }
-        systemaction(OK)
-        {
-            Caption = 'Keep it';
-            ToolTip = 'Save the proposed Job.';
-        }
-        systemaction(Cancel)
-        {
-            Caption = 'Throw it away';
-            ToolTip = 'Throw away the proposed Job.';
-        }
-}
-
-trigger OnQueryClosePage(CloseAction: Action): Boolean
-var
-    SaveCopilotJobProposal: Codeunit "Save Copilot Job Proposal";
-begin
-    if CloseAction = CloseAction::OK then
-        SaveCopilotJobProposal.Save(CustomerNo, CopilotJobProposal);
-end;
+    trigger OnQueryClosePage(CloseAction: Action): Boolean
+    var
+        SaveCopilotJobProposal: Codeunit "Save Copilot Job Proposal";
+    begin
+        if CloseAction = CloseAction::OK then
+            SaveCopilotJobProposal.Save(CustomerNo, CopilotJobProposal);
+    end;
 }
 ```
 <!--
