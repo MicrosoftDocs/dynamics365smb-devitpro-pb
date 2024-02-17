@@ -96,7 +96,7 @@ In both cases, the trigger defined for the `systemaction(Generate)` control is a
 
 ## Design the prompt mode
 
-In this task, you define the screen of the PromptDialog page where users can add input that the AI generation logic uses for producing results. The prompt area is optional because not all AI designs required it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the copilot experience. 
+In this task, you define the screen of the PromptDialog page where users can add input that the AI generation logic uses for producing results. The prompt area is optional because not all AI designs required it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the copilot experience.
 
 ### Add the prompt area
 
