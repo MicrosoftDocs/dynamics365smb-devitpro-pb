@@ -1,20 +1,24 @@
 ---
-title: How-to topic template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: How-to description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: how-to #Required; don't change.
+title: Launch copilot experience
+description: Learn how to add an action in the UI that users select to start the copilot experience.
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
 ms.date: 02/17/2024
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
 
 # Launch copilot experience
 
-With this task, you add code to run the PromptDialog page. This task is done similar to the way you start any page. The following code uses an action: 
+In this article, you learn how to add an action in the UI that users select to start the copilot experience. This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your copilot. You also apply a specific image so that users can easily recognize that the action is related to a copilot feature.
+
+## Add an action to run your copilot
+
+The follong code illustartes how to add an action:  
 
 ```al
 action(GenerateCopilot)
