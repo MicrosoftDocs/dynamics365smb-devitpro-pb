@@ -49,6 +49,31 @@ end
 
 There are various ways to use the `Dialog.Open()`and `Dialog.Update()` to change the generate mode's caption. For example, you can call the methods directly from the `OnAction()` trigger of `Generate` and `Regenerate` actions. Or you can call the methods from the procedure that generates the results (for purposes of this article, the `RunGeneration()` procedure).
 
+## Example 1
+
+```al
+systemaction(Generate)
+{
+    trigger OnAction()
+    var
+        GenerateModeProgress: Dialog;
+    begin
+        GenerateModeProgress.Open('Creating a draft for you...');
+    end;
+}
+
+systemaction(Regenerate)
+{
+    trigger OnAction()
+    var
+        GenerateModeProgress: Dialog;
+    begin
+        GenerateModeProgress.Open('Revising the draft...');
+    end;
+}
+
+```
+
 For example, consider the following code snippets that together change the caption to **Creating a draft for you...** when generating the first draft with copilot and **Revising the draft for you...** when regenerating a draft.
 
 ```al
@@ -76,10 +101,12 @@ local procedure RunGenerate(ProgressTxt: Text)
 begin
     GenerateModeProgress.Open(ProgressTxt);
     //GenerateModeProgress.Open('Creating a draft for you...');
-    Sleep(3000);
     generatedOutput := 'This is the output for: ' + userInput;
 
 end;
+
+var
+    GenerateModeProgress: Dialog
 ```
 
 The following figure shows the customized generate mode caption in the UI for the **Generate** action is selected:
