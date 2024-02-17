@@ -16,9 +16,9 @@ ms.custom: bap-template
 
 In this article, you learn how to add an action in the UI that users select to start the copilot experience. This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your copilot. You also apply a specific image so that users can easily recognize that the action is related to a copilot feature.
 
-## Add an action to run your copilot
+## Add an action for your copilot
 
-The follong code illustartes how to add an action:  
+The following code illustrates how to add an action that opens the prompt dialog page for a copilot:  
 
 ```al
 action(GenerateCopilot)
