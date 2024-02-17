@@ -8,10 +8,9 @@ ms.topic: conceptual
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 01/12/2024
+ms.date: 02/17/2024
 ms.custom: bap-template
 ---
-
 # Build copilot user experience
 
 In this article, you learn how to create the user interface (UI) for your AI solution that provides users with a copilot experience that is consistent across Business Central.
@@ -22,7 +21,7 @@ The fundamental component of Copilot from the user-interface perspective is the 
 
 > [!VIDEO media/Copilot-UI.mp4]
 
-## Design overview and flow
+## Prompt dialog modes
 
 PromptDialog page type has three different display modes to accommodate the flow for generating AI content: 
 
@@ -138,6 +137,8 @@ page 50100 "Copilot Job Proposal"
             SaveCopilotJobProposal.Save(CustomerNo, CopilotJobProposal);
     end;
 }
+
+
 ```
 <!--
 ## Notes
@@ -148,7 +149,11 @@ System actions on promptdialog in prompt mode is always: Generate, Attach, optio
 
 System actions order on promptdialog in Content mode is always: OK, Regenerate, Cancel, options. Regardless fo order in AL.-->
 
+## Next steps
+
+- [Create PromptDialog page](copilot-create-promptdialog.md)
+
 ## See also
 
-[Integrating AI using developer tools for copilot](ai-integration-landing-page.yml)
+[Integrating AI using developer tools for copilot](ai-integration-landing-page.yml)  
 
