@@ -1,18 +1,23 @@
 ---
-title: How-to topic template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: How-to description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: how-to #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+title: Create prompt dialog page for copilot 
+description: Learn the first in designing the copilot UI.
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: how-to
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ms.date: 02/17/2024
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
+# Create prompt dialog page for copilot
 
-# Create PromptDialog type page 
+The first in designing the copilot UI is creating a page of the type `PromptDialog`. Once you create the prompt dialog page following this article, you can start building the different display modes of the page needed for your copilot.
 
-You create the page like any other page, except consider the following properties:
+## Create a prompt dialog page
+
+You create prompt dialog page similar any other page, but it has some specific properties to consider as shown in the following code snippet:
 
 ```al
 page 50100 "My copilot"

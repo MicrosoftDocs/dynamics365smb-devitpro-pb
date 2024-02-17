@@ -1,18 +1,20 @@
 ---
-title: How-to topic template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: How-to description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: how-to #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+title: Design content mode of prompt dialog page
+description: Learn how to define the screen of a copilot prompt dialog page that displays the AI-generated output.
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: how-to
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ms.date: 02/17/2024
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template 
 ---
 
-# Design the content mode
+# Design content mode of prompt dialog page
 
-The content mode shows the AI-generated output. It enables users to review output, then choose to regenerate, save, or discard it.
+In this article, you learn how to define the screen of a copilot prompt dialog page that displays the AI-generated output. It enables users to review output, then choose to regenerate, save, or discard it.
 
 <!--![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)-->
 

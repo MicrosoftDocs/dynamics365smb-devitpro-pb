@@ -1,22 +1,29 @@
 ---
-title: How-to topic template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: How-to description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: how-to #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+title: Customize generate mode caption in copilot
+description: Learn how to change the caption progress bar shown in the UI of the prompt dialog page in generate mode.
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: how-to
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ms.date: 02/17/2024
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
 
-# Customize the generate mode caption
+# Customize generate mode caption in copilot
 
+In this article, you learn how to change the caption shown in the UI of the prompt dialog page in generate mode.
 By default, the caption of PromptDialog page when it's in the generate mode is **Generating**, as illustrated in the following figure:
 
 [![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.png)](media/promptdialog-generate-mode.png#lightbox)
 
-You can customize the caption by using the [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) methods. Customizing the caption enables you to give users more specific feedback about what copilot is doing or how it's progressing. This feedback is especially useful if the Copilot consists of multiple steps or takes a long time.
+The caption functions as a kind of progress bar for the user. Customizing the caption enables you to give users more specific feedback about what copilot is doing or how it's progressing. This feedback is especially useful if the Copilot consists of multiple steps or takes a long time.
+
+## How to change the caption
+
+You customize the caption by using the [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) methods. 
 
 <!--The following code snippet changes the caption to **Creating a draft for you...** by calling `Dialog.Open()` from the `RunGenration()` procedure, which is run from the `systemaction(Generate)` and `systemaction(Regenerate)`actions:-->
 
@@ -49,7 +56,7 @@ end
 
 There are various ways to use the `Dialog.Open()`and `Dialog.Update()` to change the generate mode's caption. For example, you can call the methods directly from the `OnAction()` trigger of `Generate` and `Regenerate` actions. Or you can call the methods from the procedure that generates the results (for purposes of this article, the `RunGeneration()` procedure).
 
-## Example 1
+## Example: Directly from the OnAction() trigger
 
 ```al
 systemaction(Generate)
@@ -74,7 +81,10 @@ systemaction(Regenerate)
 
 ```
 
-For example, consider the following code snippets that together change the caption to **Creating a draft for you...** when generating the first draft with copilot and **Revising the draft for you...** when regenerating a draft.
+## Example: Using the RunGeneration() procedure
+
+The following code snippets use the `OnAction()` trigger together with the `RunGeneration()` procedure
+to change the caption to **Creating a draft for you...** when generating the first draft with copilot and **Revising the draft for you...** when regenerating a draft.
 
 ```al
 systemaction(Generate)

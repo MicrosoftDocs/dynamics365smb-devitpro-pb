@@ -1,18 +1,20 @@
 ---
-title: How-to topic template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: How-to description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: how-to #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+title: Design the prompt mode of prompt dialog page
+description: Learn how to define the screen of a copilot prompt dialog page where users can add input that the AI generation logic uses for producing results.
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: how-to
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ms.date: 02/17/2024
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
 
-# Design the copilot prompt mode
+# Design the prompt mode of prompt dialog page
 
-In this task, you define the screen of the PromptDialog page where users can add input that the AI generation logic uses for producing results. The prompt area is optional because not all AI designs required it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the copilot experience.
+In this article, you learn how to define the screen of a copilot prompt dialog page where users can add input that the AI generation logic uses for producing results. The prompt area is optional because not all AI designs required it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the copilot experience.
 
 ## Add the prompt area
 

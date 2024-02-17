@@ -5,7 +5,9 @@ author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
 ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
 ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
 ms.topic: how-to #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ms.date: 02/17/2024
 ms.custom: bap-template #Required; don't change.
 ---
