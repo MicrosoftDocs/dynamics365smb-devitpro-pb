@@ -31,7 +31,7 @@ PromptDialog page type has three different display modes to accommodate the flow
 |generate mode|The mode appears while the platform connects to the Azure OpenAI Service and content is being generated, functioning as a kind of progress bar for the user. This mode doesn't require any added logic on your part, because the platform controls its behavior. Its UI is limited to a caption, a link to terms of use, and an action to stop generating. The caption is customizable.|
 |content mode |This mode is used to display the AI-generated results and is initiated automatically after the *generate mode* allowing the user to review the content, regenerate, save, or discard the results. |
 
-### Fundamental flow
+## Fundamental copilot flow with prompt dialog page
 
 The following diagram illustrates PromptDialog page type and its different modes within the fundamental copilot flow. Your flow might vary depending on your design choices, like whether to use a prompt mode and which mode displays when the PromptDialog page opens.
 
