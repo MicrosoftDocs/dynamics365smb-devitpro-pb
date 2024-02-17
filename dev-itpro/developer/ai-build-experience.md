@@ -43,8 +43,8 @@ The following table gives an overview of the typical flow from the user's perspe
 |Phase|In UI|In AL code|Learn more|
 |-|-|-|-|
 |1|User starts the copilot experience by selecting an action on a page.|An `action` control on a page runs the PromptDialog type page|[Launch experience](copilot-launch-experience.md)|
-|2|The PromptDialog page opens in the prompt mode, where users can provide input.|The PromptDialog page is defined by setting the PageType property to `PromptDialog`.|[Create PromptDialog type page](copilot-create-promptdialog.md)) |
-|3|User enters information that copilot uses to generate results. |The `prompt` area of the PromptDialog page defines what the user can input, which typically consists of one or more fields.|[Design the prompt mode](copilot-design-prompt-mode.md))|
+|2|The PromptDialog page opens in the prompt mode, where users can provide input.|The PromptDialog page is defined by setting the PageType property to `PromptDialog`.|[Create PromptDialog type page](copilot-create-promptdialog.md) |
+|3|User enters information that copilot uses to generate results. |The `prompt` area of the PromptDialog page defines what the user can input, which typically consists of one or more fields.|[Design the prompt mode](copilot-design-prompt-mode.md)|
 |4|User selects a button to start generating content with AI|The system action `Generate` calls the procedure that starts the AI generation process.|[Add the generate action](copilot-design-prompt-mode.md#add-a-generate-action)|
 |5|The generation mode appears while the results are being generated.|Handled automatically by the platform. However, you can customize its caption by calling [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md).|[Customize the genarate mode caption](copilot-customize-generate-mode.md)|
 |6|The content mode appears and displays the AI-generated proposal for review by the user.|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Design the content mode](copilot-design-content-mode.md)|
