@@ -12,7 +12,7 @@ ms.date: 01/12/2024
 ms.custom: bap-template
 ---
 
-# Build copilot user experience with the prompt dialog page
+# Build copilot user experience
 
 In this article, you learn how to create the user interface (UI) for your AI solution that provides users with a copilot experience that is consistent across Business Central.
 
