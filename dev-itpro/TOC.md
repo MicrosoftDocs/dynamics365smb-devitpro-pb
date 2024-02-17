@@ -1440,10 +1440,10 @@
 #### [Build the copilot capability in AL](developer/ai-build-capability-in-al.md)
 #### Build copilot user experience
 ##### [Overview](developer/ai-build-experience.md)
-##### [Create PromptDialog page](developer/copilot-create-promptdialog.md)
-##### [Design copilot prompt mode](developer/copilot-design-prompt-mode.md)
-##### [Design copilot content mode](developer/copilot-design-content-mode.md)
-##### [Customize copilot generate mode](developer/copilot-customize-generate-mode.md)
+##### [Create prompt dialog page](developer/copilot-create-promptdialog.md)
+##### [Design prompt mode](developer/copilot-design-prompt-mode.md)
+##### [Design content mode](developer/copilot-design-content-mode.md)
+##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
 ##### [Launch copilot](developer/copilot-launch-experience.md)
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
