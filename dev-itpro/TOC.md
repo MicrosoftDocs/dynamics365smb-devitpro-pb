@@ -1443,7 +1443,7 @@
 ##### [Create PromptDialog page](developer/copilot-create-promptdialog.md)
 ##### [Design copilot prompt mode](developer/copilot-design-prompt-mode.md)
 ##### [Design copilot content mode](developer/copilot-design-content-mode.md)
-##### [Customize copilot generate mode](developer/copilot-design-generate-mode.md)
+##### [Customize copilot generate mode](developer/copilot-customize-generate-mode.md)
 ##### [Launch copilot](developer/copilot-launch-experience.md)
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
