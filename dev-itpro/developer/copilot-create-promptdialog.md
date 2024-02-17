@@ -13,7 +13,7 @@ ms.custom: bap-template
 ---
 # Create prompt dialog page for copilot
 
-The first in designing the copilot UI is creating a page of the type `PromptDialog`. Once you create the prompt dialog page following this article, you can start building the different display modes of the page needed for your copilot.
+The first step in designing the copilot UI is creating a page of the type `PromptDialog`. Once you create the prompt dialog page following this article, you can start building the different display modes of the page needed for your copilot.
 
 ## Create a prompt dialog page
 
