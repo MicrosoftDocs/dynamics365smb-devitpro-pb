@@ -90,4 +90,6 @@ For a more complex example, refer to `RunGeneration()` procedure in the `Copilot
 
 ## Next steps
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+- [Design copilot prompt mode](copilot-design-prompt-mode.md)
+- [Design copilot content mode](copilot-design-content-mode.md)
+- [Launch copilot](copilot-launch-experience.md) 

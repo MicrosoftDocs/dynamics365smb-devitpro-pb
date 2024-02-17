@@ -136,4 +136,6 @@ actions
 
 ## Next steps
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+- [Design copilot content mode](copilot-design-content-mode.md)
+- [Customize copilot generate mode](copilot-customize-generate-mode.md)
+- [Launch copilot](copilot-launch-experience.md)
