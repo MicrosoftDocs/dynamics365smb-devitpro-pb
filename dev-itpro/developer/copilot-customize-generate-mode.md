@@ -53,9 +53,14 @@ end
 ```
 -->
 
-There are various ways to use the `Dialog.Open()`and `Dialog.Update()` to change the generate mode's caption. For example, you can call the methods directly from the `OnAction()` trigger of `Generate` and `Regenerate` actions. Or you can call the methods from the procedure that generates the results (for purposes of this article, the `RunGeneration()` procedure).
+There are various ways to use the `Dialog.Open()`and `Dialog.Update()` to change the generate mode's caption. Refer to the two examples that follow for inspiration.
 
-## Example: Directly from the OnAction() trigger
+
+For example, you can call the methods directly from the `OnAction()` trigger of `Generate` and `Regenerate` actions. procedure).
+
+## Example: From the OnAction() trigger
+
+The following code example illustrates how to change the generate mode caption directly from the `OnAction()` trigger of `Generate` and `Regenerate` actions:
 
 ```al
 systemaction(Generate)
@@ -80,10 +85,13 @@ systemaction(Regenerate)
 
 ```
 
-## Example: Using the RunGeneration() procedure
+## Example: From the RunGeneration() procedure
 
-The following code snippets use the `OnAction()` trigger together with the `RunGeneration()` procedure
-to change the caption to **Creating a draft for you...** when generating the first draft with copilot and **Revising the draft for you...** when regenerating a draft.
+This example calls the `Dialog.Open()` method from the procedure that generates the results (for purposes of this article, the `RunGeneration()`). The following code snippets use the `OnAction()` trigger together with the `RunGeneration()` procedure
+to change the caption to:
+
+- **Creating a draft for you...** when generating the first draft with copilot.
+- **Revising the draft for you...** when regenerating a draft.
 
 ```al
 systemaction(Generate)
