@@ -37,7 +37,7 @@ In versions 16.0 and earlier, the general dimensions look like this:
 
 ## Custom dimensions
 
-The following table explains the custom dimensions included in a **Web Services Call** trace.
+The following table explains the custom dimensions included in a **Web Services Call** telemetry event.
 
 For a full KQL example of all dimensions in web services telemetry, see [Sample KQL code](#sample-kql-code).
 
@@ -48,7 +48,7 @@ For a full KQL example of all dimensions in web services telemetry, see [Sample 
 |alObjectId|Specifies the ID of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
 |alObjectName|Specifies the name of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
 |alObjectType|Specifies the type of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
-|category|Specifies the service type. Values include: **API**, **ODataV4**, **ODataV3**, and **SOAP**.|
+|category|Specifies the web service type. Values include: **API**, **ODataV4**, **ODataV3**, and **SOAP**.|
 |companyName| The company name in which the request runs. |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
@@ -69,7 +69,7 @@ For a full KQL example of all dimensions in web services telemetry, see [Sample 
 |queryFilter|Specifies the OData/API filter used in the request.|
 |requestQueueTime | Specifies the amount of time the request spent in the request queue before it was started by the server.<sup>[\[3\]](#3)</sup> <br /><br />The time has the format hh:mm:ss.sssssss. | 
 |serverExecutionTime|Specifies the amount of time it took the server to complete the request\*\*. The time has the format hh:mm:ss.sssssss. Time spent in the request queue isn't included.|
-|sqlExecutes|Specifies the number of SQL statements that the request executed.<sup>[\[1\]](#1)</sup> <sup>[\[2\]](#2)</sup>|
+|sqlExecutes|Specifies the number of SQL statements run by the request.<sup>[\[1\]](#1)</sup> <sup>[\[2\]](#2)</sup>|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.<sup>[\[1\]](#1)</sup> <sup>[\[2\]](#2)</sup>|
 |totalTime|Specifies the amount of time it took to process the request.<sup>[\[2\]](#2)</sup> <br /><br />The time has the format hh:mm:ss.sssssss. Time spent in the request queue isn't included. |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
