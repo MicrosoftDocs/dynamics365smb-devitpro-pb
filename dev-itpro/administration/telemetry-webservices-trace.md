@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-Web services telemetry gathers data about SOAP, OData, and REST API requests through the service. It provides information like the request's endpoint, time to complete, the SQL statements run, and more.  
+Web services telemetry gathers data about SOAP, OData, and REST API requests to the service. It provides information like the request's endpoint, time to complete, HTTP status codes, and more.  
 
 ## General dimensions
 
@@ -23,9 +23,16 @@ The following table explains the general dimensions included in an incoming **We
 
 |Dimension|Description or value|
 |---------|-----|
-|operation_Name|**Web Services Call**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
-|message|Version 16.1 and later (depending on the type):<ul><li>**Web service called (API): {endpoint}**</li><li>**Web service called (ODataV4): {endpoint}**</li><li>**Web service called (ODataV3): {endpoint}**</li><li>**Web service called (SOAP): {endpoint}**</li></ul>Before version 16.1:<ul><li>**Received a web service request of type API**</li><li>**Received a web service request of type ODataV4**</li><li>**Received a web service request of type ODataV3**</li><li>**Received a web service request of type SOAP**|
+|message|<ul><li>**Web service called (API): {endpoint}**</li><li>**Web service called (ODataV4): {endpoint}**</li><li>**Web service called (ODataV3): {endpoint}**</li><li>**Web service called (SOAP): {endpoint}**</li></ul>|
 |severityLevel|**1**|
+
+
+In versions 16.0 and earlier, the general dimensions look like this:
+
+|Dimension|Description or value|
+|---------|-----|
+|operation_Name|**Web Services Call**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
+|message| Before version 16.1:<ul><li>**Received a web service request of type API**</li><li>**Received a web service request of type ODataV4**</li><li>**Received a web service request of type ODataV3**</li><li>**Received a web service request of type SOAP**|
 
 
 ## Custom dimensions
