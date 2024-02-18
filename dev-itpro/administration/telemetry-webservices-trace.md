@@ -58,8 +58,8 @@ For a full KQL example of all dimensions in web services telemetry, see [Sample 
 |failureReason | Logged in case of an error in a OData/API request. Contains the exception as seen from the server. <br /><br/>This dimension was introduced in Business Central 2023 release wave 1, version 22.0.|
 |httpHeaders|Introduced in version 16.3. Specifies the http headers set in the request. Not logged for SOAP requests. In version 17.3, a truncated version of the Authorization header was introduced to enable querying for the use of basic or token authorization. For more information, see [HTTP headers](#http-headers). |
 |httpMethod|Introduced in version 16.3. Specifies the HTTP method used in the request. Values include: POST, GET, PUT, PATCH, or DELETE. Not logged for SOAP requests. |
-|queryFilter|Specifies the OData/API filter used in the request.|
 |httpStatusCode |Introduced in version 16.3. Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. Not logged for SOAP requests. For more information, see [HTTP status codes](#http-status-codes)|
+|queryFilter|Specifies the OData/API filter used in the request.|
 |requestQueueTime | Specifies the amount of time the request spent in the request queue before it was started by the server.<sup>[\[3\]](#3)</sup> <br /><br />The time has the format hh:mm:ss.sssssss. | 
 |serverExecutionTime|Specifies the amount of time it took the server to complete the request\*\*. The time has the format hh:mm:ss.sssssss. Time spent in the request queue isn't included.|
 |sqlExecutes|Specifies the number of SQL statements that the request executed.<sup>[\[1\]](#1)</sup> <sup>[\[2\]](#2)</sup>|
