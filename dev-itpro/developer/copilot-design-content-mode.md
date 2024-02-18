@@ -18,7 +18,7 @@ In this article, you learn how to define the copilot screen that displays the AI
 
 ![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)
 
-If the PromptDialog page has a prompt area (`area(Prompt)`), then an edit prompt ![Shows the prompt edit icon](media/prompt-edit.png) button appears in the upper-left corner of the page when it's in the content mode. Users can select the edit prompt button to open the prompt area where they can provide new input or modify input.
+If the PromptDialog page has a prompt area (`area(Prompt)`), then an edit prompt ![Shows the prompt edit icon](media/prompt-edit.png) button appears in the upper-left corner of the page when it's in the content mode. Users can select the edit prompt button to open the [prompt mode](copilot-design-prompt-mode.md) where they can provide new input or modify input.
 
 The content mode UI consists of several elements, which are described in the sections that follow.
 
