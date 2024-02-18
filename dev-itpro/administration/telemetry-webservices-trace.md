@@ -27,6 +27,8 @@ The following table explains the general dimensions included in an incoming **We
 |severityLevel|**1**|
 
 
+## General dimensions (version 16.0 and earlier)
+
 In versions 16.0 and earlier, the general dimensions look like this:
 
 |Dimension|Description or value|
