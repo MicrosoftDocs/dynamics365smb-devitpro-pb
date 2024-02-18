@@ -13,7 +13,9 @@ ms.custom: bap-template
 ---
 # Create prompt dialog page for copilot
 
-The first step in designing the copilot UI is creating a page of the type `PromptDialog`. Once you create the prompt dialog page following this article, you can start building the different display modes of the page needed for your copilot.
+The first step in designing the copilot UI is creating a page of the type `PromptDialog`. Once you create the prompt dialog page following this article, you use it to build the different display modes needed for your copilot, including prompt, generate, and content.
+
+For an overview building the copilot UI, refer to [Build copilot user experience](ai-build-experience.md).
 
 ## Create a prompt dialog page
 
@@ -63,3 +65,5 @@ In both cases, the trigger defined for the `systemaction(Generate)` control is a
 - [Design copilot content mode](copilot-design-content-mode.md)
 - [Customize copilot generate mode](copilot-customize-generate-mode.md)
 - [Launch copilot](copilot-launch-experience.md)
+
+## See also

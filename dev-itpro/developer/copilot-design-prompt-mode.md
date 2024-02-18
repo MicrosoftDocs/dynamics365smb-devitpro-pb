@@ -20,6 +20,12 @@ The following figure illustrates an example of the prompt mode for a copilot. Th
 
 [![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.svg)](media/promptdialog-prompt-mode-prompt-area-no-callout.svg#lightbox)
 
+For an overview building the copilot UI, refer to [Build copilot user experience](ai-build-experience.md).
+
+## Prerequisites
+
+[Create the prompt dialog page](copilot-create-promptdialog.md)
+
 ## Add the prompt area
 
 The prompt area is where users can provide input to the AI generation. The prompt area supports natural language input (like free text fields) and structured input (like field groups and page parts). The example uses a single field that allows the user to type natural language text in an unstructured format.
