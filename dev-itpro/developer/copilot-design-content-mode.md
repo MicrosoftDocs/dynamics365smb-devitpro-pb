@@ -14,11 +14,13 @@ ms.custom: bap-template
 
 # Design content mode of prompt dialog page
 
-In this article, you learn how to define the screen of a copilot prompt dialog page that displays the AI-generated output. It enables users to review output, then choose to regenerate, save, or discard it.
+In this article, you learn how to define the copilot screen that displays the AI-generated output. The screen is defined by the content mode of the PromptDilod page. It enables users to review output, then choose to regenerate, save, or discard it. The following figure illustrates an example of the content mode for a copilot.
 
-<!--![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)-->
+![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)
 
 If the PromptDialog page has a prompt area (`area(Prompt)`), then an edit prompt ![Shows the prompt edit icon](media/prompt-edit.png) button appears in the upper-left corner of the page when it's in the content mode. Users can select the edit prompt button to open the prompt area where they can provide new input or modify input.
+
+The content mode UI consists of several elements, which are described in the sections that follow.
 
 ## Add a content area
 

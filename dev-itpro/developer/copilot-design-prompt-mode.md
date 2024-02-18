@@ -14,7 +14,11 @@ ms.custom: bap-template
 
 # Design the prompt mode of prompt dialog page
 
-In this article, you learn how to define the screen of a copilot prompt dialog page where users can add input that the AI generation logic uses for producing results. The prompt area is optional because not all AI designs required it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the copilot experience.
+In this article, you learn how to design the copolit screen where users can add input that the AI generation logic uses for producing results. The screen is defined by the prompt mode of the PromptDilaog page. The prompt mode is optional because not all AI designs required it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the copilot experience.
+
+The following figure illustrates an example of the prompt mode for a copilot. The prompt mode UI consists of several elements, which are described in the sections that follow.
+
+[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.svg)](media/promptdialog-prompt-mode-prompt-area-no-callout.svg#lightbox)
 
 ## Add the prompt area
 
@@ -74,7 +78,7 @@ Use the [OnAction()](triggers-auto/action/devenv-onaction-action-trigger.md) to 
 
 The code of the `RunGeneration` procedure, you must implement yourself. This procedure is where you call the copilot API, and get the results back.
 
-For an example on how to implement the `RunGeneration` procedure, see [BCTech samples AzureOpenAI](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Basic_ItemSubstitution/PromptDialog/ItemSubstAIProposal.Page.al#L111). 
+For an example on how to implement the `RunGeneration` procedure, see [BCTech samples AzureOpenAI](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Basic_ItemSubstitution/PromptDialog/ItemSubstAIProposal.Page.al#L111).
 
 For an example on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
 
