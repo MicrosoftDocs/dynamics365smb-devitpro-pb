@@ -5,15 +5,12 @@ author: kennienp
 ms.reviewer: solsen
 ms.topic: overview
 ms.author: kepontop
-ms.date: 02/10/2024
+ms.date: 02/19/2024
 ---
 
 # Integrating Business Central with Microsoft Power Platform
 
-Some intro paragraph here about the overall benefits of using Power Platform with BC.
-
-The five paragraphs below is re-use from the overall integrations page. We can do this with include files to minimize double maintenance.
-
+Integrating [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform, offers a solution that enhances business productivity and efficiency. It provides a set of tools that enable you to analyze data, build solutions, automate processes, and create virtual agents. By integrating Microsoft Power Platform with [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you can leverage the data and business logic of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], and benefit from the analytical and automation capabilities of Microsoft Power Platform. This article explains you can integrate [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform.
 
 ## Business Central connector for Power Platform
 
@@ -35,7 +32,6 @@ For more information, see [Integrating with Microsoft Power Apps overview](../po
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Automate by using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Platform. With Power Automate, you can set up and use flows to connect business-process tasks performed by different users. System tasks, such as automatic posting, can be included as steps in flows, preceded or followed by user tasks. Requesting and granting approval to create new records are typical flow steps.
 
 For more information, see [Integrating with Microsoft Power Automate overview](../powerplatform/power-automate-overview.md)
-
 
 ## Integrating Business Central with Microsoft Power BI
 
