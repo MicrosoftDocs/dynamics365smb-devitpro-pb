@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
 ms.topic: how-to 
-ms.date: 07/05/2023
+ms.date: 02/19/2024
 ms.custom: bap-template
 ---
 # Run cloud migration setup for Dynamics GP migration
@@ -31,13 +31,10 @@ Any user running the cloud migration setup flow as delegated administrator must 
 
 > [!TIP]
 > We recommend that you start the migration by running the assisted setup from a company other than the company that you are migrating data to. For example, sign into the demonstration company, CRONUS, and start the process there. This way, you can make sure that all users are logged out of the original company and the target company.
-
-> [!TIP]
-> [!INCLUDE [migrate-limits](../developer/includes/migrate-limits.md)]
+>
+> Be aware of the storage capacity of your online tenant. If you need more storage than the default 80 GB, you can buy additional environments or additional storage capacity. Storage capacity is determined as 80GB + allowances per licensed Essential/Premium user + any storage capacity licenses. To learn more, go to [Managing Capacity](../../administration/tenant-admin-center-capacity.md).
 
 ## Run the cloud migration setup
-
-<!--Does it matter what machine you run the setup, repl, from? If this is the first time running cloud setup should you run it on the machine where SQL db is so IR install?-->
 
 1. [Sign in to the Microsoft 365 tenant](https://admin.microsoft.com) used by [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
@@ -48,26 +45,18 @@ Any user running the cloud migration setup flow as delegated administrator must 
 1. Set **Product** option to the version that matches the on-premises product that you're migrating, then select **Next**.
 1. On the **Define your SQL database connection** page, fill in the information about the SQL database connection and integration runtime.
 
-   For more information about this step, see [Define your SQL database connection](#define-sql-database-connection-and-integration-runtime).
+   For more information about this step, refer to [Define your SQL database connection](#define-sql-database-connection-and-integration-runtime).
 
-   Select **Next** when done. Once you choose **Next**, a new pipeline is created in the Azure service. When completed successfully, the **Select companies to migrate** page appears.
+   Select **Next** when done. Once you choose **Next**, a new pipeline is created in the Azure service.
 
+1. After the pipeline is created, the **Select companies to migrate** page appears. Select one or more companies from the list or switch on **All Companies**, then select **Next**.
 
-   <!--For example, Server=jswymer-vm-2\bcdemo;Database="Demo Database BC (21-0)";User Id=bclogin2;Password=1234;-->
+1. When completed successfully, the **GP Company Migration Configuration** page appears. This page allows you to make global settings for the companies selected for migration in the previous step.
 
-     <!--1. Do one of the following tasks:
+   Select the companies that you want to migrate and then select **Next**.
 
-      - If you already have a Microsoft integration runtime service instance, you can use the instance by entering its name in the **Integration Runtime Name** box. Then select **Next** and go to step 9. 
-   - If you don't already have an integration runtime, leave **Integration Runtime Name** blank, select **Next**, then go to the next step.-->
+   If you want to add or remove companies later, you can return to this page. For more information about using this page, refer to [Configure Dynamics GP company data migration](migrate-gp-configure-companies.md).
 
-   <!--8. Select **Download the Self-hosted Integration Runtime**, the do these steps to install the integration runtime:
-     1. On the Download Center page that opens, select **Download** > **IntegrationRuntime_<latestversion>.msi** > **Next**. The file is downloaded to your computer.
-    2. Select **Open** file to start the installation. When completed, the **Register Integration Runtime (Self-Hosted)** page opens.
-    3. Go back to the **Cloud Migration Setup** page copy the **Authentication key**.
-    4. Go back to the **Register Integration Runtime (Self-Hosted)** page and paste the key value in authentication key box, then select **Finish**. 
-    5. Go back to **Cloud Migration Setup** and select **Next**.-->
-
-1. On the **Select companies to migrate** page, select one or more companies from the list or switch on **All Companies**, then select **Next**.
 1. Select **Finish** to complete the cloud migration setup.
 
   If you want to open **Cloud Migration Management**, where you can run the migration, select **Yes**.
@@ -83,34 +72,15 @@ There are some scenarios where it may be necessary for you to run the cloud migr
 > [!TIP]
 > We recommend that you take a backup of the target environment so that you can easily restore the environment to a specific state and time, should you want to.
 
-The following list highlights a few examples:
+A common scenarion is when you want to add tenants to an existing runtime service. If you're a hosting partner, you may have multiple tenants running on the same integration runtime service. Each tenant is isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the Microsoft Integration Runtime Manager. For more information, see [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime) in the Azure docs.
 
-- Multiple companies in [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises
-
-  One example is if you want to add more companies to the migration, or if you want to change the companies to migrate, run the assisted setup guide again. A more efficient option, though, is to use the **Select Companies to Migrate** action from the **Cloud Migration Management** page.  
-
-- Add tenants to an existing runtime service  
-
-  If you're a hosting partner, you may have multiple tenants running on the same integration runtime service. Each tenant is isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the Microsoft Integration Runtime Manager. For more information, see [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime) in the Azure docs.
-
-In both examples, you're making updates to an existing runtime service. When you get to the point of the assisted setup guide where you can specify an existing runtime services name, open the Microsoft Integration Runtime Service Manager. Then enter the runtime name in the field; you aren't allowed to copy and paste. The runtime service identifies that you're making updates to an existing service and doesn't create a new one.  
+In this sceanrio, you're making updates to an existing runtime service. When you get to the point of the assisted setup guide where you can specify an existing runtime services name, open the Microsoft Integration Runtime Service Manager. Then enter the runtime name in the field; you aren't allowed to copy and paste. The runtime service identifies that you're making updates to an existing service and doesn't create a new one.  
 
 Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline is created for that tenant. Regenerating an Azure Data Factory (ADF) key may be done using the **Cloud Migration Management** page in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. For more information, see [Run the assisted setup guide](migration-setup.md#rerunning-cloud-migration-setup-guide).  
 
-> [!TIP]
-> If you are using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the same setup guide is also available in your on-premises solution. You will automatically be redirected to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online to continue the configuration process.
-
-> [!CAUTION]
-> If you have mapped users in the first run of the cloud migration setup guide, then do not choose the **Define User Mappings** action again in subsequent runs.
-
-
 If you run into problems with the setup, go to [Cloud migration setup troubleshooting](migration-setup-troubleshooting.md).
-
 
 ## Next steps
 
-Once the setup guide is complete and data migration is activated, the initial data migration ready to be run from the **Cloud Migration Management** page.
-
-- [Change how data is replicated to Business Central online](cloud-migration-change-replication.md) (advanced, optional)
-- [Run Data Migration](migration-data-replication.md).
+[Run Data Migration](migration-data-replication.md)
 

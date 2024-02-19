@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 This article explains how to run data replication to move data from on-premises database to your online environment. To learn more about the mechanics behind data replication, go to [Data replication overview](migration-data-replication.md).
 
-[!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process.md)]
+[!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process.md)]. [!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process-gp.md)]
 
 ## Prerequisites
 
@@ -39,7 +39,10 @@ Follow these steps replicate data to the online tenant.
 
 1. Search for and open the **Cloud Migration Management** page.
 
-2. On the **Cloud Migration Management** page, select the **Run data replication** > **Yes**.
+2. On the **Cloud Migration Management** page, select one of the following actions:
+
+   - **Run data replication** > **Yes** of you're migrating from Business Central on-premises.
+   - **Run Migration Now** > **Yes** of you're migrating from Dynamics GP.
 
    This step starts replicating data to the online tenant.
 3. If the data replication starts, you get a message that the cloud migration was successfully started. Select **OK** to continue.
@@ -60,7 +63,6 @@ The **Cloud Migration Management** page gives you access to details about the da
 If errors occur, fix them then rerun the data replication. For information about some of the most common issues, go to [Data replication troubleshooting](migration-data-replication-troubleshooting.md).
 
 When you're ready to run the data replication again, select **Run date replication**. In general, only data that has changed since the last replication is replicated. To learn more, go to [Rerunning data replication](migration-data-replication.md#rerunning-data-replication).
-
 
 ## Stop data replication
 

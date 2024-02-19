@@ -413,16 +413,15 @@
 #### Set up cloud migration
 ##### [Cloud migration setup overview](administration/migration-setup-overview.md)
 ##### [Retain permissions(optional)](administration/migration-retain-permissions.md)
-##### [Run cloud migration setup](administration/migration-setup.md)
+##### [Run cloud migration setup](administration/migration-setup-gp.md)
 ##### [Configure Dynamics GP company migration](administration/migrate-gp-configure-companies.md)
 ##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
 #### Replicate data
 ##### [Data replication overview](administration/migration-data-replication.md)
-##### [Change how data is replicated](administration/cloud-migration-change-replication.md)
 ##### [Run data replication](administration/migrate-data-replication-run.md)
 ##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
 #### Upgrade data
-##### [Run data upgrade](administration/migration-data-upgrade.md)
+##### [Run data upgrade](administration/migration-data-upgrade-gp.md)
 #### [Complete cloud migration](administration/migration-finish.md)
 #### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
 ### [FAQ](administration/faq-migrate-data.md)
