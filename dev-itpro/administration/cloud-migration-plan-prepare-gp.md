@@ -37,27 +37,12 @@ It's important to have a solid migration strategy in place to ensure a smooth tr
 1. Move Dynamics GP database to Azure Data Lake (optional).
 
   You can create a copy of the Dynamics GP database in Azure Data Lake so that you have it for future reference after the migration to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online. [Learn more](cloud-migration-azure-data-lake-gp.md).
-1. [Enable change tracking](/sql/relational-databases/track-changes/enable-and-disable-change-tracking-sql-server) on the on-premises production database for the expected number of days between the first backup for replication and the next time you'll back up and replicate. A minimum of three days is enforced. The number of days for which change tracking is enabled can't be changed later without resetting change tracking altogether.
-
-   > [!NOTE]
-   > Long retention periods for change tracking data might cause database resource starvation when high volumes of data are changed on the database, which may lead to reduced database performance and/or loss of the change tracking data. Pick a change tracking period that strikes a balance between migration strategy needs and available resources on the on-premises database.
-<!--
-   > - Don't enable change tracking if you'll be running data upgrade on-premises, because it won't work.-->
-
 1. [Create a full backup](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server) of the on-premises production database. Differential or partial backups aren't supported as they don't include Change Tracking data required for replication runs.
-<!--1. Optionally, deploy the backup database to an Azure SQL Database for improved performance. See [Optimizing Cloud Migration Performance](migration-optimize-replication.md).-->
 1. Complete the usual preparation steps on the backup on-premises database and address any issues that arise.
 1. Complete the cloud migration setup, including choosing the companies to migrate.
-1. Run the first [replication run](migrate-data-replication-run.md) and address any issues that arise.
-1. Within the change tacking period set up on the on-premises production database in step 2, overwrite the backup database with a new full backup to replicate data that is new or modified since the backup created in step 3.
-   > [!NOTE]
-   > Rather than overwriting the backup, the old backup database can also be deleted. If creating a new backup rather than overwriting an existing backup, ensure the new backup database has the same name as the previous one. If the database name changes, run the Cloud Migration setup in the cloud environment again to point to the new database; the tooling will still attempt to use Change Tracking data if available to avoid replicating all data in the source database.
-1. Repeat steps 3-6 as needed until you reach a state that is suitable for the final migration run.
-1. Stop the usage of the on-premises environment ahead of the final backup of the on-premises production database. Run one final replication from the backup database to replicate the last data before running data upgrade.
-
-   [!INCLUDE [bc-cloud-migrate-replicate-all-before-upgrade.md](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
+1. Run the [replication](migrate-data-replication-run.md) and address any issues that arise.
+1. Stop the usage of the on-premises environment ahead of the final backup of the on-premises production database. 
 1. Run [Data Upgrade](migration-data-upgrade.md) on the cloud environment.
-
 1. [Complete the migration](migration-finish.md) and go live on the cloud environment.
 
 > [!IMPORTANT]
@@ -79,6 +64,6 @@ Keep in mind that the migration process can be complex, and issues might arise t
 
 ## Next steps
 
-- [Check prerequisites](cloud-migration-prerequisites.md)  
+- [Check prerequisites](cloud-migration-prerequisites-gp.md)  
 - [Optimizing cloud migration performance](migration-optimize-replication.md)  
 - [Run data migration setup](migration-setup.md)

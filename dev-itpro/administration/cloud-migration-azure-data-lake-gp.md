@@ -21,7 +21,7 @@ You have an Azure Data Lake Gen2 storage account with access to the storage acco
 
 ## Move to Azure Data Lake
 
-1. Sign in to your [Business Cental online](https://businesscentral.dynamics.com) tenant.
+1. Sign in to your [Business Central online](https://businesscentral.dynamics.com) tenant.
 1. In the upper-right corner, select the :::image type="icon" source="../media/search_small.png" border="false"::: icon, enter **Cloud Migration Management**, and then choose the related link to open the **Cloud Migration Management** page.
 1. In the action bar along the top, select **...** (Show the rest) > **Actions** > **Azure Data Lake**.
 

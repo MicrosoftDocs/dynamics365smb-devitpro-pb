@@ -90,6 +90,13 @@ This section outlines the general process or phases you go through to migrate da
 
    To get started, go to [Set up cloud migration](migration-setup-overview.md).
 
+1. Configure Dynamics GP company migration
+
+   The step is part of the setup phase in whihc you select the companies and data that you want to migrate. 
+
+   To get started, go to [Configure Dynamics GP company migration](migrate-gp-configure-companies.md).
+
+
 1. Data replication
 
    This step migrates data from on-premises to online. It starts when you run the **Run data replication** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online. At the end of the process, you have a copy of the on-premises data in the relevant [!INCLUDE [prod_short](../includes/prod_short.md)] online environment. 

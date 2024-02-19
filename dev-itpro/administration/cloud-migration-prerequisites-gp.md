@@ -28,7 +28,8 @@ This article outlines requirements on the [!INCLUDE [dyn_gp_prod](../includes/dy
   In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], open the environment that you intend to migrate your data to, and then choose the **Apps** action. Make sure that these apps have the latest updates installed:
 
   - Intelligent Cloud Base  
-  - [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] Intelligent Cloud  
+  - [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] Intelligent Cloud 
+  - [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] Intelligent Cloud US (for US clients only)
   - [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] History SmartLists  
 
   > [!IMPORTANT]
@@ -41,7 +42,7 @@ This article outlines requirements on the [!INCLUDE [dyn_gp_prod](../includes/dy
 
 ## Source on-premises environment
 
-- [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] version is a supported migration path.
+- [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] 2015 or later
 
   If the solution is based on an older version of the on-premises product, upgrade to the latest supported version.
 
