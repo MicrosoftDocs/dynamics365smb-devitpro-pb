@@ -82,5 +82,10 @@ If you run into problems with the setup, go to [Cloud migration setup troublesho
 
 ## Next steps
 
-[Run Data Migration](migration-data-replication.md)
+[Run data replication](migration-data-replication.md)
 
+## See also
+
+[Dynamics GP migration to Business Central online: End-to-end overview](migrate-gp-overview.md)  
+[Compare Work in Dynamics GP to Business Central](migrate-dynamics-gp-videos.md)  
+[FAQ about Migrating to Business Central Online from On-Premises Solutions](faq-migrate-data.md)

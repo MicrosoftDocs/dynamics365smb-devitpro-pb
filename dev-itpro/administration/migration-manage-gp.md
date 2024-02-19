@@ -46,6 +46,15 @@ The **Cloud Migration Management** page in the web client is a central hub for m
 |Setup Checklist      |When you're ready to use your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant as your main system, the tables that weren't migrated must be set up or defined as needed. The checklist page shows recommended steps to complete your migration to the cloud.|
 |Azure Data Lake|This option is available if the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant is connected to Dynamics GP. For more information, see [Migrate Dynamics GP to Azure Data Lake](migrate-dynamics-gp.md#lake).|
 
-
 ## Next steps
 
+- [Prepare and plan for cloud migration](cloud-migration-plan-prepare.md)
+- [Run cloud migration setup](migration-setup-gp.md)
+- [Run data migration](migration-data-replication.md)
+- [Run data upgrade](migration-data-upgrade-gp.md)
+- [Complete cloud migration](migration-finish-gp.md)  
+
+## See also
+
+[Dynamics GP migration to Business Central online: End-to-end overview](migrate-gp-overview.md)  
+[FAQ about Migrating to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  

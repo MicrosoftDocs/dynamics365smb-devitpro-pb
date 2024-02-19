@@ -38,4 +38,12 @@ At the end of the migration, you have a completely copy of your Dynamics GP data
 
 ## Next steps
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+- [Run cloud migration setup](migration-setup-gp.md)
+- [Run data migration](migration-data-replication.md)
+- [Run data upgrade](migration-data-upgrade-gp.md)
+- [Complete cloud migration](migration-finish-gp.md)  
+
+## See also
+
+[Dynamics GP migration to Business Central online: End-to-end overview](migrate-gp-overview.md)  
+[FAQ about Migrating to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  

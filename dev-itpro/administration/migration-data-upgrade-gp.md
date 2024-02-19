@@ -40,3 +40,8 @@ Inform any active Business Central online users to finish what they're doing and
 
 [Complete cloud migration](migration-finish-gp.md)  
 
+## See also
+
+[Dynamics GP migration to Business Central online: End-to-end overview](migrate-gp-overview.md)  
+[Compare Work in Dynamics GP to Business Central](migrate-dynamics-gp-videos.md)  
+[FAQ about Migrating to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  
