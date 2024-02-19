@@ -34,6 +34,7 @@ ChangeTrackingAllowed = true;
 
 > [!NOTE]
 > The property **ChangeTrackingAllowed** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**.
+> From Wave 1 2024 setting this property has no effect, as delta links are no longer supported.
 
  
 ## See Also  
