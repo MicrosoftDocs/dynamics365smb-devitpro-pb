@@ -16,51 +16,15 @@ This article provides recommendations to help you define your cloud migration st
 
 The migration assessment tool delivers valuable insight into your overall readiness to migrate. It provides migration options based on your needs, and detects potential migration issues based on your Dynamics GP system structure. To get started with the migration tool, go to [https://bcmigrationassessments.com/](https://bcmigrationassessments.com/).
 
-[Learn more about the tool](https://www.enavate.com/gp-to-dynamics-365-business-central-migration-assessment).
+Learn more about the tool in the article [Should You Migrate from GP to Dynamics 365 Business Central?](https://www.enavate.com/gp-to-dynamics-365-business-central-migration-assessment) or the video [Are You Ready for Business Central](https://www.youtube.com/watch?v=r2gNgQrCgoo&list=PLcakwueIHoT9yVFOV6_BXMVeodPq3lt3o&index=15).
 
 ## Determine what data to migrate
 
-The data that's migrated is determined on two levels: per-company and per-extension.
-
-### Company data
-
-When a company is migrated, data in company-specific tables of base application is migrated, along with company-specific data belonging to other extensions (for information, see the next section).
+The data that's migrated is determined on a per-company basis. When a company is migrated, data in company-specific tables of base application is migrated. 
 
 You can choose to migrate data for all companies or only specific companies. It's recommended to determine which companies to migrate upfront to save time and resources. Keep in mind that the more companies you replicate in a single operation, the longer the migration takes. The cloud migration capabilities are optimized to migrate data in batches of up to 10 companies. If you have more than 250 companies, it's recommended to plan to run the migration in smaller batches. For more information, see [Optimizing cloud migration performance](migration-optimize-replication.md#reduce-the-number-of-companies-migrated).
 
 [!INCLUDE [migrate-limits](../developer/includes/migrate-limits.md)]
-
-> [!NOTE]
-> Per-database tables are always migrated, no matter which companies are selected for a migration run.
-
-<!--
-### Extension data
-
-In general, on-premises data in table objects and table extension objects belonging to an extension is only migrated if the following conditions are met:
-
-- The extension is installed on online environment.
-- The extension's [ReplicateData property](../developer/properties/devenv-replicatedata-property.md) is set to `true`.
-
-Because `true` is the default setting, most extensions that are installed on the [!INCLUDE[prod_short](../includes/prod_short.md)] online environment will have table data migrated.  
-
-In certain circumstances, you might not want to migrate all data. Here are a couple examples:
-
-- The extension is installed in the [!INCLUDE[prod_short](../includes/prod_short.md)] online environment but not in the [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises solution
-
-    In this case, [!INCLUDE[prod_short](../includes/prod_short.md)] attempts to migrate the data but shows a warning. Because the extension isn't installed on-premises, any table related to that extension table isn't migrated, and warning notifications appear in the cloud migration status page.
-
-    If you own the extension, we recommend you set the **ReplicateData** property to *No* on the extension tables. If you don't, and if you want data to migrate, install the extension in both [!INCLUDE[prod_short](../includes/prod_short.md)] online and your on-premises solution. If you don't want data to migrate, uninstall the extension from the [!INCLUDE[prod_short](../includes/prod_short.md)] online environment.  
-
-- The extension references a base table
-
-    This condition can cause your base table to appear empty when you view data in your [!INCLUDE[prod_short](../includes/prod_short.md)] online tenant. In such cases, uninstall the extension from your [!INCLUDE[prod_short](../includes/prod_short.md)] online tenant and then run the cloud migration process again.
-
-    Business Central inserts the default values and records into the table extensions automatically. If there are any problems, you can use the **Repair Companion Table Records** action on the **Cloud Migration Management** page to insert the missing table extension record
-
-> [!TIP]
-> Use the **Cloud Migration Management** page to verify that data migrated correctly. [!INCLUDE [bc-cloud-migrate-tableext](../includes/bc-cloud-migrate-tableext.md)]
-
-For more information, see [FAQ about migrating to Business Central online from on-premises solutions](faq-migrate-data.md) and [Troubleshooting cloud migration](migration-troubleshooting.md).  -->
 
 ## Estimate the data size in your [!INCLUDE[prod_short](../includes/prod_short.md)] online tenant
 

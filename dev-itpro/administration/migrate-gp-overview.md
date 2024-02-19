@@ -63,7 +63,7 @@ This section outlines the general process or phases you go through to migrate da
 
    Before migrating your on-premises deployment to the cloud, it's essential to evaluate its readiness. To help you, we offer the migration assessment tool delivers valuable insight into your overall readiness to migrate. It provides migration options based on your needs, and detects potential migration issues based on your Dynamics GP system structure. To get started with the assessment tool, go to [https://bcmigrationassessments.com/](https://bcmigrationassessments.com/)
 
-   Learn more about the tool from Enavate in the article [Should You Migrate from GP to Dynamics 365 Business Central?](https://www.enavate.com/gp-to-dynamics-365-business-central-migration-assessment) or the video [Are You Ready for Business Central](https://www.youtube.com/watch?v=r2gNgQrCgoo&list=PLcakwueIHoT9yVFOV6_BXMVeodPq3lt3o&index=15).
+   Learn more about the tool in the article [Should You Migrate from GP to Dynamics 365 Business Central?](https://www.enavate.com/gp-to-dynamics-365-business-central-migration-assessment) or the video [Are You Ready for Business Central](https://www.youtube.com/watch?v=r2gNgQrCgoo&list=PLcakwueIHoT9yVFOV6_BXMVeodPq3lt3o&index=15).
 
 1. Preparation
 
