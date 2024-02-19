@@ -403,7 +403,7 @@
 ### Migrate from Dynamics GP
 #### [End-to-end overview](administration/migrate-gp-overview.md)
 #### [Dynamics GP data migrated to Business Central](administration/migrate-dynamics-gp.md)
-#### [Managing cloud migration](administration/migration-manage.md)
+#### [Managing cloud migration](administration/migration-manage-gp.md)
 #### Prepare
 ##### [Plan cloud migration](administration/cloud-migration-plan-prepare-gp.md)
 ##### [Estimate data size in online tenant](administration/cloud-migration-estimate-compressed-data-size.md)
