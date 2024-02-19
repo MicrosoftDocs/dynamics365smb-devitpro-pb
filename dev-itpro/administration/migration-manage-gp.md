@@ -1,0 +1,51 @@
+---
+title:  Managing Dynamics GP cloud migration
+description: Describes the Cloud Migration Management page in Business Central for migrating from Dynamics GP.
+author: jswymer 
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: overview 
+ms.collection: 
+ms.date: 02/19/2024
+ms.custom: bap-template
+---
+
+# Managing Dynamics GP cloud migration
+
+Business Central offers two ways to manage cloud migration: the Business Central web client in the online environment or the cloud migration API. The web client provides a user-friendly interface for managing migration runs and services through the **Cloud Migration Management** page, while the API offers more advanced and automated capabilities. Both options allow users to set up, move data, track progress, and manage migration services.
+
+The following section provides an overview of the **Cloud Migration Management** page. For more information about the cloud management API, refer to [Cloud Migration APIs Overview](cloudmigrationapi/cloud-migration-api-overview.md).
+
+## Cloud Migration Management page
+
+The **Cloud Migration Management** page in the web client is a central hub for managing cloud data migration. This page provides you with the necessary actions and information to manage your migration services and keep track of data migration runs.
+
+![Shows the flow for cloud migration setup ](../developer/media/cloud-migration-replication-completed.png)
+
+- The **Migration Log** gives you the status of all migration runs, including the time they ran and their current progress. 
+- Above the **Migration Log**, fields provide details the number of successfully migrated tables. By selecting a field, you can drill down to view more details and guidance on how to correct any errors.
+- The **Migration Information** tiles show the number of migrated tables and the number of tables that didn't migrate due to warnings or errors. Choose a tile to drill into more details and guidance to correct any errors. There's also a tile that shows tables that aren't migrated due to problems with the data. For example, tables with permissions aren't migrated from on-premises solutions because permissions work differently between online and on-premises.
+
+## Available actions
+
+> [!NOTE]
+> Some actions aren't available until after you've set up cloud migration, and others aren't active for Dynamics GP migration. 
+
+|Action   |Description|
+|---------|---------|
+|Run Migration Now    |Choose this action to start the data migration manually. The migration can also be used for subsequent runs after the initial migration. On subsequent runs, the migration tool will only migrate changes that have happened since the previous migration was run. Change tracking is used to identify what data should be moved in those subsequent runs. However, the migration tool can't run if the target environment is being upgraded. In that case, you must disable cloud migration, upgrade, and then set up cloud migration again.|
+|Run Data Upgrade Now|Choose this action to upgrade data, such as if you're migrating data from an earlier version to the latest version of [!INCLUDE [prod_short](../includes/prod_short.md)].|
+|Refresh Status      |If a migration run is in progress, you can choose to refresh status to update the page. If the run is complete, the status will update using the refresh status action without having to close the window and reopen it.|
+|Reset Cloud Data   |You may run into instances where you need to reset your cloud data. This option will clear all data in your cloud tenant and enable you to start over with data migration. Only run this process if you want to start the migration process all over from the beginning. If you need to clear data in your cloud tenant, and you have connectivity issues that persist for more than 7 days, you must contact customer support. They'll create a ticket to have your tenant data cleared. *Only* run this process if you want to start the data migration all over and bring all data from on-premises to your cloud tenant.|
+|Get Runtime Service Key    |Returns the existing runtime key.|
+|Reset Runtime Service Key    |If at any time you suspect that your Self-Hosted Integration Runtime key is no longer secure, you can choose this option to regenerate a new key. A new key will be generated for you and automatically be updated in the Self-Host Integration Runtime service.|
+|Disable Cloud Migration    |Opens a guide that helps you through a checklist of instructions to disable the cloud migration configuration. Use the guide when you've migrated the data that you want to migrate, or when you want to upgrade the target environment. Once the steps in this process are complete, you can use your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant as your primary solution, or you can upgrade the environment.|
+|Check for Update           |If there have been changes to the migration service, we'll publish the new service. This action will check to see if a new service has been published. The check will display the version of the service you're currently running and then also display the latest service published. Then, you can choose to update your solution. We recommend that you update the solution if a newer version has been published.|
+|Select Companies to Migrate|If your database contains more than one company, use this action to specify which company or companies to run a migration for. For example, you're migrating a large database with multiple companies, so you break down the migration in several runs by including one or a few companies in each migration run. You can see the estimated size of each company|
+|Define User Mappings       |This option is available when you sign in to a particular company that has been migrated. This action  should be done in one of the companies you've migrated. This action gives you a list of the users that were in your on-premises environment, and then gives you a list of your Microsoft 365 users, so that you can map the two together. This process renames the **Name** field on the **User Card** to match the user name in your on-premises solution. It isn't a required step, but if you use some of the processes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that work with the user name, such as time sheets, you may want to map users. Time sheets are visible based on the user name you're logged in as in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Map users only once for each migration. If you run the mapping twice or more, you might run into conflicts. |
+|Setup Checklist      |When you're ready to use your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant as your main system, the tables that weren't migrated must be set up or defined as needed. The checklist page shows recommended steps to complete your migration to the cloud.|
+|Azure Data Lake|This option is available if the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant is connected to Dynamics GP. For more information, see [Migrate Dynamics GP to Azure Data Lake](migrate-dynamics-gp.md#lake).|
+<!--Next steps - Required. Provide at least one next step and no more than three. Include some context so the customer can determine why they would click the link.-->
+## Next steps
+
+<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
