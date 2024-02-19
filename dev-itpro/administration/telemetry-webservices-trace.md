@@ -3,7 +3,7 @@ title: Web Service Request Trace
 description: Learn about the web service request telemetry in Business Central  
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 02/02/2024
+ms.date: 02/19/2024
 ms.author: kepontop
 ms.reviewer: jswymer
 ms.custom: bap-template
