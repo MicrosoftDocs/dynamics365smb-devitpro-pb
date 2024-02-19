@@ -37,7 +37,8 @@ For more information on how to explore and develop against APIs, best practices,
 
 [!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to Power Platform. Enabling integrations to Power Platform augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
 
-:::image type="content" source="media/powerplatform-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/powerplatform-integrations.svg":::
+<!-- to be added when all overview diagrams are ready
+:::image type="content" source="media/powerplatform-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/powerplatform-integrations.svg"::: -->
 
 [!INCLUDE [prod_short](../includes/prod_short.md)] integrates to the following Power Platform products and services:
 - Power Apps
