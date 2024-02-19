@@ -37,7 +37,7 @@ The following figure illustrates the main components involved in the data migrat
 
 In general, the cloud migration tool migrates the following data:
 
-- System and company setup, such as fiscal periods, posting periods, worflows flows, and so on.
+- System and company setup, such as payment terms, shipping method, and sites
 - Master data for accounts, customers, vendors, and items
 - Transactional data  
 - Classes for customers, vendors, and items
@@ -59,12 +59,11 @@ The initial data migration time can vary depending on factors such as the amount
 
 This section outlines the general process or phases you go through to migrate data from on-premises to online.
 
+1. Migration assessment
 
-1. Migration assessment 
+   Before migrating your on-premises deployment to the cloud, it's essential to evaluate its readiness. To help you, we offer the migration assessment tool delivers valuable insight into your overall readiness to migrate. It provides migration options based on your needs, and detects potential migration issues based on your Dynamics GP system structure. To get started with the assessment tool, go to [https://bcmigrationassessments.com/](https://bcmigrationassessments.com/)
 
-   Before migrating your on-premises deployment to the cloud, it's essential to evaluate its readiness. To help you, we offer the migration assessment tool delivers valuable insight into your overall readiness to migrate. It provides migration options based on your needs, and detects potential migration issues based on your Dynamics GP system structure. To get started with the migration tool, go to [https://bcmigrationassessments.com/](https://bcmigrationassessments.com/).
-
-   [Learn more about the tool](https://www.enavate.com/gp-to-dynamics-365-business-central-migration-assessment).
+   Learn more about the tool from Enavate in the article [Should You Migrate from GP to Dynamics 365 Business Central?](https://www.enavate.com/gp-to-dynamics-365-business-central-migration-assessment) or the video [Are You Ready for Business Central](https://www.youtube.com/watch?v=r2gNgQrCgoo&list=PLcakwueIHoT9yVFOV6_BXMVeodPq3lt3o&index=15).
 
 1. Preparation
 
@@ -78,9 +77,9 @@ This section outlines the general process or phases you go through to migrate da
   
    1. Verify prerequisites:
 
-      Prepare your on-premises environment for migration, including ensuring that it meets the prerequisites for migration, such as upgrading to the latest version of Business Central on-premises. This step is crucial in ensuring that your environment is ready for the migration process.
+      Prepare your on-premises environment for migration, which includes ensuring that it meets the prerequisites for migration, such as using GP 2015 or later. This step is crucial in ensuring that your environment is ready for the migration process.
 
-      To get started, go to [Prerequisites](cloud-migration-prerequisites.md).
+      To get started, go to [Prerequisites](cloud-migration-prerequisites-gp.md).
    1. Verify that data is in the best state possible to complete the migration:
 
       This step involves reviewing your data to ensure that it's clean, accurate, and in the best possible state for migration.
@@ -95,13 +94,13 @@ This section outlines the general process or phases you go through to migrate da
 
    This step migrates data from on-premises to online. It starts when you run the **Run data replication** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online. At the end of the process, you have a copy of the on-premises data in the relevant [!INCLUDE [prod_short](../includes/prod_short.md)] online environment. 
 
-   At this point in the process, you can verify whether the migration went well or not, fix any problems, and rerun the replication multiple times if you want to. For example, suppose you ran the assisted setup guide from a test company in a sandbox environment because you worry that many extensions might be problematic. Once the data has been replicated to the sandbox environment, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
+   At this point in the process, you can verify whether the migration went well or not, fix any problems, and rerun the replication multiple times if you want to. Once the data has been replicated to the sandbox environment, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
    To get started, go to [Replicate data](migration-data-replication.md).
 
 1. Data upgrade
 
-   After data replication is complete, the cloud migration might have the status *Upgrade Pending* on the **Cloud Migration Management** page. Data upgrade is typically required when migrating from Business Central version that is earlier than the version used on the target online environment. During data upgrade, the logic required upgrade the platform-related data in database is run. This step starts when you choose the **Run Data Upgrade Now** action in the **Cloud Migration Management** page in [!INCLUDE [prod_short](../includes/prod_short.md)] online for the specific environment.
+   After data replication is complete, the cloud migration might have the status *Upgrade Pending* on the **Cloud Migration Management** page. This step starts when you choose the **Run Data Upgrade Now** action in the **Cloud Migration Management** page in [!INCLUDE [prod_short](../includes/prod_short.md)] online for the specific environment.
 
    <!--Once you have chosen this action, both the **Run Migration Now** and the **Run Data Upgrade Now** action can no longer be used for this company in the environment. If the upgrade has failed, an automatic point-in-time restore is run to revert the tenant to the point before upgrade. You can then fix the errors and try the upgrade again. Alternatively, you can start the cloud migration in another environment, or you can restore the current environment from a backup from a point in time before the data upgrade. Or, delete all companies in the current environment and start the migration again.-->
 
@@ -135,9 +134,7 @@ You manage the cloud migration from [!INCLUDE [prod_short](../includes/prod_shor
 
 Any existing data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online will be overwritten with data from your on-premises solution, or source, once the data replication is run.  
 
-If you don't want data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online to be overwritten, don't configure the connection. <!--The only exception is when you migrate from [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises current version because you can run the migration tool multiple times in that specific scenario.-->
-
-With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, several stored procedures will be added to the SQL Server instance that you define. These stored procedures are required to migrate data from your SQL Server database to the Azure SQL server associated with your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant.  
+If you don't want data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online to be overwritten, don't configure the connection.
 
 ### Limited data entry during migration period
 
