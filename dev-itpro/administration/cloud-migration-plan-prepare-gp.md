@@ -36,7 +36,7 @@ It's important to have a solid migration strategy in place to ensure a smooth tr
 
 1. Move Dynamics GP database to Azure Data Lake (optional).
 
-  You can create a copy of the Dynamics GP database in Azure Data Lake so that you have it for future reference after the migration to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online. [Learn more](cloud-migration-azure-data-lake-gp.md).
+   You can create a copy of the Dynamics GP database in Azure Data Lake so that you have it for future reference after the migration to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online. [Learn more](cloud-migration-azure-data-lake-gp.md).
 1. [Create a full backup](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server) of the on-premises production database. Differential or partial backups aren't supported as they don't include Change Tracking data required for replication runs.
 1. Complete the usual preparation steps on the backup on-premises database and address any issues that arise.
 1. Complete the cloud migration setup, including choosing the companies to migrate.
