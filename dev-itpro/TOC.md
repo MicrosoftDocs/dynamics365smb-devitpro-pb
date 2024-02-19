@@ -406,10 +406,8 @@
 #### [Managing cloud migration](administration/migration-manage-gp.md)
 #### Prepare
 ##### [Plan cloud migration](administration/cloud-migration-plan-prepare-gp.md)
-##### [Estimate data size in online tenant](administration/cloud-migration-estimate-compressed-data-size.md)
 ##### [Move database to Azure Data Lake (optional)](administration\cloud-migration-azure-data-lake-gp.md)
 ##### [Prerequisites](administration/cloud-migration-prerequisites-gp.md)
-##### [Optimize cloud migration performance](administration/migration-optimize-replication-gp.md)
 #### Set up cloud migration
 ##### [Cloud migration setup overview](administration/migration-setup-overview.md)
 ##### [Retain permissions(optional)](administration/migration-retain-permissions.md)

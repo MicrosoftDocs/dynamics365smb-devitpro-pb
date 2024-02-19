@@ -26,10 +26,6 @@ You can choose to migrate data for all companies or only specific companies. It'
 
 [!INCLUDE [migrate-limits](../developer/includes/migrate-limits.md)]
 
-## Estimate the data size in your [!INCLUDE[prod_short](../includes/prod_short.md)] online tenant
-
-In the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], data is compressed using the SQL Server data compression feature. This condition means that the data size in your on-premises database might not match the data size when migrated to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service. For more information on estimating the compressed size of your data, see [Estimating the data size in your Business Central online tenant](./cloud-migration-estimate-compressed-data-size.md).
-
 ## Determine your migration approach
 
 It's important to have a solid migration strategy in place to ensure a smooth transition. Most migrations can run from the on-premises production database with minimal downtime for end users. However, for especially large migrations, it might be better to run migration from a backup of the on-premises database<!--deployed as Azure SQL Database-->. Doing migrations this way improves migration speeds and minimizes performance loss and downtime on the on-premises production database. The following steps outline a typical migration approach.
