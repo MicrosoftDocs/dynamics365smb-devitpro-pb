@@ -1484,7 +1484,7 @@
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end CDS -->
 
-<!-- Microsoft Power Automate -->
+
 ### Data virtualization
 #### [Integrate with Microsoft Dataverse via virtual tables](powerplatform/powerplat-overview.md)
 #### [Table modeling for virtual tables](powerplatform/powerplat-entity-modeling.md)
@@ -1492,37 +1492,43 @@
 #### [Business Central and Dataverse admin reference for virtual tables](powerplatform/powerplat-admin-reference.md)
 #### [FAQ for virtual tables](powerplatform/powerplat-faq.md)
 
-## Integrating with Microsoft Power Apps
-### [Overview](powerplatform/power-apps-overview.md)
-### [Application lifecycle management](powerplatform/power-apps-alm.md)
-### [Sample apps](powerplatform/power-apps-samples.md)
-### [Best practices](powerplatform/power-apps-best-practices.md)
-
-## Integrating with Microsoft Power Automate
-### [Overview](powerplatform/power-automate-overview.md)
-### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
-### [Create automated flows](powerplatform/automate-workflows.md)
-### [Create instant flows](powerplatform/instant-flows.md)
-### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
-
-## [Integrating with Microsoft Power Pages (preview)](developer/power-pages-on-virtual-tables-overview.md)
-
-<!-- Microsoft Power BI -->
-## Integrating with Microsoft Power BI
-### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
-### Administrator
-#### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview)
-#### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup)
-### Report creator
-#### [Get started: Build Power BI reports](/dynamics365/business-central/across-how-use-financials-data-source-powerbi)
-#### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
-
-### [Extract data from Business Central](developer/devenv-extract-data.md)
-### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
-### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
-<!-- end Microsoft Power BI -->
 
 <!-- Microsoft Power Platform -->
+## Integrating with Microsoft Power Platform
+### [Overview](powerplatform/powerplatform-integration-overview.md)
+<!-- Microsoft Power Apps -->
+### Integrating with Microsoft Power Apps
+#### [Overview](powerplatform/power-apps-overview.md)
+#### [Application lifecycle management](powerplatform/power-apps-alm.md)
+#### [Sample apps](powerplatform/power-apps-samples.md)
+#### [Best practices](powerplatform/power-apps-best-practices.md)
+
+<!-- Microsoft Power Automate -->
+### Integrating with Microsoft Power Automate
+#### [Overview](powerplatform/power-automate-overview.md)
+#### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
+#### [Create automated flows](powerplatform/automate-workflows.md)
+#### [Create instant flows](powerplatform/instant-flows.md)
+#### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
+
+<!-- Microsoft Power Pages -->
+### [Integrating with Microsoft Power Pages (preview)](developer/power-pages-on-virtual-tables-overview.md)
+
+<!-- Microsoft Power BI -->
+### Integrating with Microsoft Power BI
+#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+#### Administrator
+##### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview)
+##### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup)
+#### Report creator
+##### [Get started: Build Power BI reports](/dynamics365/business-central/#across-how-use-financials-data-source-powerbi)
+##### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
+
+#### [Extract data from Business Central](developer/devenv-extract-data.md)
+#### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
+#### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
+<!-- end Microsoft Power BI -->
+
 <!-- end Microsoft Power Platform -->
 
 ## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
