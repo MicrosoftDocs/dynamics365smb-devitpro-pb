@@ -13,7 +13,9 @@ ms.custom: bap-template
 
 This article explains how to run data replication to move data from on-premises database to your online environment. To learn more about the mechanics behind data replication, go to [Data replication overview](migration-data-replication.md).
 
-[!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process.md)]. [!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process-gp.md)]
+[!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process.md)]
+
+[!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process-gp.md)]
 
 ## Prerequisites
 
@@ -72,5 +74,12 @@ To stop the currently running data replication, select the **Abandon migration**
 
 ## Next steps
 
-- [Run data upgrade](migration-data-upgrade.md)
-- [Complete cloud migration](migration-finish.md)  
+For Business Central on-premises migration:
+
+- [Run data upgrade for Business Central on-premises](migration-data-upgrade.md)
+- [Complete  Business Central on-premises cloud migration](migration-finish.md)  
+
+For Dynamics GP migration:
+
+- [Run data upgrade for Dynamics GP](migration-data-upgrade-gp.md)
+- [Complete Dynamics GPcloud migration](migration-finish-gp.md)

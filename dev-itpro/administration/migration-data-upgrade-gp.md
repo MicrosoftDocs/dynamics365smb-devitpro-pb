@@ -38,5 +38,5 @@ Inform any active Business Central online users to finish what they're doing and
 
 ## Next steps
 
-[Complete cloud migration](migration-finish.md)  
+[Complete cloud migration](migration-finish-gp.md)  
 

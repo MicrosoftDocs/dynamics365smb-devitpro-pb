@@ -422,7 +422,7 @@
 ##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
 #### Upgrade data
 ##### [Run data upgrade](administration/migration-data-upgrade-gp.md)
-#### [Complete cloud migration](administration/migration-finish.md)
+#### [Complete cloud migration](administration/migration-finish-gp.md)
 #### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
 ### [FAQ](administration/faq-migrate-data.md)
 ### [Troubleshoot](administration/migration-troubleshooting.md)
