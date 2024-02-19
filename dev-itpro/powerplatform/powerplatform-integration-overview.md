@@ -10,12 +10,11 @@ ms.date: 02/19/2024
 
 # Integrating Business Central with Microsoft Power Platform
 
-Integrating [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform, offers a solution that enhances business productivity and efficiency. It provides a set of tools that enable you to analyze data, build solutions, automate processes, and create virtual agents. By integrating Microsoft Power Platform with [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you can leverage the data and business logic of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], and benefit from the analytical and automation capabilities of Microsoft Power Platform. This article explains you can integrate [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform.
+Integrating [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform, offers a solution that enhances business productivity and efficiency. It provides a set of tools that enable you to analyze data, build solutions, automate processes, and create virtual agents. By integrating Microsoft Power Platform with [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you can apply the data and business logic of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], and benefit from the analytical and automation capabilities of Microsoft Power Platform. This article explains you can integrate [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform.
 
 ## Business Central connector for Power Platform
 
-A *connector* is a proxy or a wrapper around an API that allows the user of the connector to talk to the underlying service. [!INCLUDE[prod_short](../includes/prod_short.md)] has its own connector that allows Power Platform products such as Power Automate, Power Apps, and Logic apps to communicate with 
-[!INCLUDE[prod_short](../includes/prod_short.md)] through REST APIs (this is another reason for using REST APIs compared to OData/SOAP enabled pages/queries/codeunits).
+A *connector* is a proxy or a wrapper around an API that allows the user of the connector to talk to the underlying service. [!INCLUDE[prod_short](../includes/prod_short.md)] has its own connector that allows Power Platform products such as Power Automate, Power Apps, and Logic apps to communicate with [!INCLUDE[prod_short](../includes/prod_short.md)] through REST APIs (this is another reason for using REST APIs compared to OData/SOAP enabled pages/queries/codeunits).
 
 [![Shows how the Power Platform connector integrates to Business Central](../developer/media/power-platform-connector-diagram.svg)](../developer/media/power-platform-connector-diagram.svg#lightbox)
 
@@ -53,8 +52,9 @@ For more information, see [Power BI integration overview](/dynamics365/business-
 [!INCLUDE[prod_short](../includes/prod_short.md)] supports that a Power BI report, page, or visual can be embedded in the Business Central client by using an iframe. 
 
 There are two ways that a Power BI report, page, or visual can be added to a page in the [!INCLUDE[prod_short](../includes/prod_short.md)] client:
+
 1. A user can embed a Power BI report, page, or scorecard on pages that include a Power BI part. For more information, see [Working with Power BI Reports in Business Central](/dynamics365/business-central/across-working-with-powerbi).
-1. A developer can programatically add them from AL. For more information, see [Adding Power BI Report parts to pages](../developer/devenv-power-bi-report-parts.md).
+1. A developer can programmatically add them from AL. For more information, see [Adding Power BI Report parts to pages](../developer/devenv-power-bi-report-parts.md).
 
 
 ## Integrating Business Central with Microsoft Power Pages (preview)
@@ -64,7 +64,6 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microso
 [![Shows how data virtualization works between Business Central and Dataverse](../developer/media/dataverse-virtual-tables.svg)](../developer/media/dataverse-virtual-tables.svg#lightbox)
 
 For more information, see [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md).
-
 
 ## See also
 
