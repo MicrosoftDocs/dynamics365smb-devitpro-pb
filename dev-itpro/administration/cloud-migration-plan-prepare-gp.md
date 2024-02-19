@@ -1,11 +1,11 @@
 ---
-title: Prepare and plan for cloud migration from Business Central on-premises
-description: This article provides recommendations to help you define your cloud migration strategy and get environments and users ready for cloud migration.
+title: Prepare and plan for cloud migration from Dynamics GP
+description: This article provides recommendations to help you define your cloud migration strategy and get environments and users ready for Dynamics GP cloud migration.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.date: 01/23/2024
+ms.date: 02/19/2024
 ms.custom: bap-template 
 ---
 # Prepare and plan for cloud migration from Dynamics GP
