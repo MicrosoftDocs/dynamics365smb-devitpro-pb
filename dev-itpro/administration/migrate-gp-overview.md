@@ -96,7 +96,6 @@ This section outlines the general process or phases you go through to migrate da
 
    To get started, go to [Configure Dynamics GP company migration](migrate-gp-configure-companies.md).
 
-
 1. Data replication
 
    This step migrates data from on-premises to online. It starts when you run the **Run data replication** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online. At the end of the process, you have a copy of the on-premises data in the relevant [!INCLUDE [prod_short](../includes/prod_short.md)] online environment. 
@@ -109,10 +108,6 @@ This section outlines the general process or phases you go through to migrate da
 
    After data replication is complete, the cloud migration might have the status *Upgrade Pending* on the **Cloud Migration Management** page. This step starts when you choose the **Run Data Upgrade Now** action in the **Cloud Migration Management** page in [!INCLUDE [prod_short](../includes/prod_short.md)] online for the specific environment.
 
-   <!--Once you have chosen this action, both the **Run Migration Now** and the **Run Data Upgrade Now** action can no longer be used for this company in the environment. If the upgrade has failed, an automatic point-in-time restore is run to revert the tenant to the point before upgrade. You can then fix the errors and try the upgrade again. Alternatively, you can start the cloud migration in another environment, or you can restore the current environment from a backup from a point in time before the data upgrade. Or, delete all companies in the current environment and start the migration again.-->
-
-   <!--If you want to migrate more companies, disable the migration, and start the setup again. Or, use the **Select Companies to Migrate** action from **Cloud Migration Management** page.-->
-
    To get started, go to [Upgrade data](migration-data-upgrade.md).
 
    [!INCLUDE [cloud-migration-telemetry](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
@@ -124,7 +119,7 @@ This section outlines the general process or phases you go through to migrate da
    1. Optimize your Business Central online environment:
 
       Configure the system to meet your business needs. This task may include setting up security, customizing forms and reports, and integrating with other systems. By taking the time to optimize your new environment, you can ensure that it meets your specific requirements and works seamlessly with your existing systems.
-   1. Set up user access
+   1. Set up user access:
 
       Grant access to your new Business Central online system for all relevant users. This task includes creating new user accounts, setting up permissions, and defining roles and responsibilities.
    1. Go live:
