@@ -20,7 +20,7 @@ The following section provides an overview of the **Cloud Migration Management**
 
 The **Cloud Migration Management** page in the web client is a central hub for managing cloud data migration. This page provides you with the necessary actions and information to manage your migration services and keep track of data migration runs.
 
-![Shows the flow for cloud migration setup ](../developer/media/cloud-migration-replication-completed.png)
+<!--![Shows the flow for cloud migration setup ](../developer/media/cloud-migration-replication-completed.png)-->
 
 - The **Migration Log** gives you the status of all migration runs, including the time they ran and their current progress. 
 - Above the **Migration Log**, fields provide details the number of successfully migrated tables. By selecting a field, you can drill down to view more details and guidance on how to correct any errors.
