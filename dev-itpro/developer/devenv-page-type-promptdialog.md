@@ -36,6 +36,12 @@ To find links to the properties related to the `PromptDialog` page type, see the
 
 The `PromptDialog` page type has three areas, which are `Prompt`, `Content`, and `PromptOptions`. The `Prompt` area is the input to copilot, and accepts any control, except repeater controls. The `Content` area is the output of copilot, and accepts any control, except repeater controls. The `PromptOptions` area is the input options, and only accepts option fields.
 
+### Actions in the PromptDialog page
+
+Unlike other page types, `PromptDialog` pages can only specify two action areas, `SystemActions` and `PromptGuide`. The `SystemActions` area only allows defining a fixed set of actions only supported by this page type, called system actions. These are `Generate`, `Regenerate`, `Attach`, `Ok` and `Cancel`. 
+
+The `PromptGuide` action area represents a list of pre-defined text prompt "guides", which users can select to use as input to generate content, rather than creating their own prompt from scratch. The prompt guide menu is only rendered in the web client when the `PromptMode` of the `PromtpDialog` page is set to `Prompt`.
+
 ## Example
 
 The following example describes a page, which is a PromptDialog page, set with the `PromptDialog` option. The `Extensible = false;` is a mandatory setting, to ensure that the page isn't extended so that customers can trust the AI experience implemented.
@@ -190,9 +196,19 @@ page 50100 MyCopilotPage
                     // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
                     RunGeneration();
                 end;
+            }      
+        }
+        area(Prompting)
+        {
+            action(OrderFromDescription)
+            {
+                Caption = ‘Order from description’;
+                trigger OnAction()
+                    UserInput := 'The prompt is set in the NL field';
+                    // Update the page to show the inserted prompt. 
+                    CurrPage.Update();
+                begin
             }
-
-        
         }
     }
 
