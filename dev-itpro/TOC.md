@@ -1665,6 +1665,7 @@
 #### [Development cmdlets for extensions](/powershell/module/microsoft.dynamics.nav.apps.tools)
 ### Configuring user authentication
 #### [Authentication and credential types](administration/users-credential-types.md)
+#### [How to setup Multifactor Authentication (MFA)](security/multifactor-authentication.md)
 #### Authenticating with Microsoft Entra ID
 ##### [Overview](administration/authenticating-users-with-azure-ad-overview.md)
 ##### [Configure Microsoft Entra authentication with OpenID Connect](administration/authenticating-users-with-azure-ad-openid-connect.md)

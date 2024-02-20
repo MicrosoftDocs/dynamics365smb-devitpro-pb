@@ -26,7 +26,9 @@ Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod
 
 <!-- [User Authentication](user-security.md#user-authentication)  -->
 
-[Authentication and Credential Types](../administration/users-credential-types.md)
+[How to give get Business Central Access with Microsoft 365 Licenses](/dynamics365/business-central/admin-access-with-m365-license)
+
+[Authentication and Credential Types (on-premises only)](../administration/users-credential-types.md)
 
 [Multifactor Authentication](multifactor-authentication.md)<!--note from editor: "Multifactor" is never hyphenated, via Microsoft Writing Style Guide.-->
 
