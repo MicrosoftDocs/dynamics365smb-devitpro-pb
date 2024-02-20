@@ -30,7 +30,7 @@ Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod
 
 [Authentication and Credential Types (on-premises only)](../administration/users-credential-types.md)
 
-[Multifactor Authentication](multifactor-authentication.md)<!--note from editor: "Multifactor" is never hyphenated, via Microsoft Writing Style Guide.-->
+[Setting up Multifactor Authentication (MFA)](multifactor-authentication.md)<!--note from editor: "Multifactor" is never hyphenated, via Microsoft Writing Style Guide.-->
 
 The authentication method configured for Business Central Server is also used to access web services. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md).
 
