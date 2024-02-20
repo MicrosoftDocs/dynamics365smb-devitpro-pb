@@ -1,10 +1,10 @@
 ---
-title: "Extensibility overview"
-description: "How you can extend functionality in Dynamics 365 Business Central."
+title: Extensibility overview
+description: How you can extend functionality in Dynamics 365 Business Central.
 ms.author: kepontop
 ms.custom: na
 ms.date: 10/09/2023
-ms.reviewer: na
+ms.reviewer: solsen
 ms.topic: conceptual
 author: KennieNP
 ---
