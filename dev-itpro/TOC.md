@@ -1535,6 +1535,19 @@
 ### [Connecting to Azure Key Vault](developer/devenv-app-key-vault-overview.md)
 ### [Azure Key Vault telemetry](administration/telemetry-extension-key-vault-trace.md)
 <!-- end Azure services -->
+
+<!-- Infrastructure services -->
+## Integrating with infrastructure services
+### [Overview](developer/infrastructure-integration-overview.md) 
+### [Manage users and licenses with Microsoft Entra](/dynamics365/business-central/ui-how-users-permissions#manage-users-and-licenses-in-online-tenants)  
+### [Setup Multi-Factor Authentication (MFA) with Microsoft Entra](../security/multifactor-authentication.md)  
+### [Control Access to Business Central Using with Microsoft Entra Security Groups](/dynamics365/business-central/ui-security-groups)  
+### [Restrict network access from/to Business Central Azure security service tags](../security/security-service-tags)  
+### [Integrating Business Central with Azure Application Insights](../administration/telemetry-overview.md)   
+### [Integrating Business Central with Microsoft 365 Universal Print](/dynamics365/business-central/admin-printer-setup-universal-print)  
+### [Integration overview for Business Central online](integration-overview.md)  
+<!-- end Infrastructure services -->
+
 ## Integrating with Shopify
 ### [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started)
 ### [Troubleshoot the Shopify connector](/dynamics365/business-central/shopify/troubleshoot)

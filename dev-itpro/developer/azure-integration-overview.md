@@ -60,7 +60,7 @@ When using [!INCLUDE[azure_key_vault](includes/azure-keyvault-name.md)] from you
 
 ## [!INCLUDE[azure_virtual_network](includes/azure-virtual-network-name.md)]
 
-Within the [!INCLUDE[azure_virtual_network](includes/azure-virtual-network-name.md)] service, you can use a service tag for [prod_short](includes/prod_short.md)] to restrict network access from/to [!INCLUDE [prod_short](includes/prod_short.md)] using firewall and network security group rules.
+Within the [!INCLUDE[azure_virtual_network](includes/azure-virtual-network-name.md)] service, you can use a service tag for [!INCLUDE[prod_short](includes/prod_short.md)] to restrict network access from/to [!INCLUDE [prod_short](includes/prod_short.md)] using firewall and network security group rules.
 
 For more information, see [Use Azure security service tags to restrict network access from/to Business Central](../security/security-service-tags).
 
