@@ -12,7 +12,7 @@ ms.custom:
 
 # Extension objects overview
 
-This article provides an overview of the different extension objects that you can write to extend base application functionality in [!INCLUDE [prod_short](includes/prod_short.md)]. Extension objects can extend tables, pages, reports, business logic in codeunits, and enums. The following table lists the different extension objects that you can create in AL.
+This article provides an overview of the different extension objects that you can write to extend base application functionality in [!INCLUDE [prod_short](includes/prod_short.md)]. Extension objects can extend tables, pages, reports, business logic in codeunits, and enums. With an extension object you can, for example, add new fields, actions, and layout to an existing page, or add data items, columns, request pages, and layouts to an existing report. You can add new methods to an existing codeunit to run additional business logic, and you can add new values to an existing enumeration. The following table lists the different extension objects that you can create in AL.
 
 | Object type | Description |
 |-------------|-------------|
@@ -22,6 +22,8 @@ This article provides an overview of the different extension objects that you ca
 |[Codeunit extension](codeunit-ext-object.md) | Add new functions to an existing codeunit. |
 |[Enum extension](extensible-enums.md) | Add new values to an existing enumeration. |
 |[Permission set extension](permissionset-ext-object.md) | Add new permissions to an existing permission set. |
+
+
 
 
 
