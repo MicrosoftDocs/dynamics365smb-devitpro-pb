@@ -410,7 +410,7 @@
 ##### [Prerequisites](administration/cloud-migration-prerequisites-gp.md)
 #### Set up cloud migration
 ##### [Cloud migration setup overview](administration/migration-setup-overview.md)
-##### [Retain permissions(optional)](administration/migration-retain-permissions.md)
+##### [Retain permissions (optional)](administration/migration-retain-permissions.md)
 ##### [Run cloud migration setup](administration/migration-setup-gp.md)
 ##### [Configure Dynamics GP company migration](administration/migrate-gp-configure-companies.md)
 ##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)

@@ -16,6 +16,8 @@ This article explains tasks you do in the final phase of cloud migration&mdash;t
 > [!TIP]
 > To keep track of which of task you've done, use the [Post Migration Checklist](https://businesscentral.dynamics.com/?page=4020) page to check off tasks as you go along. To open the checklist, go to **Cloud Migration Setup** page then select **Actions** > **Setup checklist**.
 
+[!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process-gp.md)]
+
 ## Step 1: Disable the cloud migration
 
 Once you migrate the desired data to [!INCLUDE [prod_short](../includes/prod_short.md)] online, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This step is important because each time someone runs the migration, outstanding documents (like for vendors and inventory items) and other changes made in the online target company are overwritten.
