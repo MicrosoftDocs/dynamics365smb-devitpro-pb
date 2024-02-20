@@ -23,6 +23,8 @@ You've set up cloud migration. For more information, go to [Run cloud migration 
 The **GP Company Migration Configuration** page opens automatically when you complete the **Cloud Migration Setup** assisted setup, but you can also open the page from the **Cloud Migration Management** page and selecting the **GP Company Migration Configuration** action.
 
 ![Shows GP company migration configuration page](../developer/media/gp-company-migration-configuration.svg)
+
+
 Use this new page to select the data you want migrated from Dynamics GP to Business Central. The following sections the options on the page. 
 
 ## Modules
