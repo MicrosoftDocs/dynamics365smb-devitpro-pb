@@ -22,7 +22,7 @@ Learn more about the tool in the article [Should You Migrate from GP to Dynamics
 
 The data that's migrated is determined on a per-company basis. When a company is migrated, data in company-specific tables of base application is migrated. 
 
-You can choose to migrate data for all companies or only specific companies. It's recommended to determine which companies to migrate upfront to save time and resources. Keep in mind that the more companies you replicate in a single operation, the longer the migration takes. The cloud migration capabilities are optimized to migrate data in batches of up to 10 companies. If you have more than 250 companies, it's recommended to plan to run the migration in smaller batches. For more information, see [Optimizing cloud migration performance](migration-optimize-replication.md#reduce-the-number-of-companies-migrated).
+You can choose to migrate data for all companies or only specific companies. It's recommended to determine which companies to migrate upfront to save time and resources. Keep in mind that the more companies you replicate in a single operation, the longer the migration takes.
 
 [!INCLUDE [migrate-limits](../developer/includes/migrate-limits.md)]
 
