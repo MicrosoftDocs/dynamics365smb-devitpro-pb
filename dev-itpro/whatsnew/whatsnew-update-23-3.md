@@ -43,7 +43,7 @@ If you want to get a comprehensive overview of what's new and planned for Busine
 
 ## Upgrade to 23.3
 
-Please note that new customers will automatically get the latest builds of Business Central (23.2). If you're an existing partner/customer, you'll receive an email notification as soon as your environment has been upgraded.
+Please note that new customers will automatically get the latest builds of Business Central (23.3). If you're an existing partner/customer, you'll receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 

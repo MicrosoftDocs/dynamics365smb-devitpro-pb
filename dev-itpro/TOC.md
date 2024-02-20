@@ -688,6 +688,7 @@
 #### Reading data
 ##### [Get, Find, and Next methods](developer/devenv-get-find-and-next-methods.md)
 ##### [Record instance isolation level](developer/devenv-read-isolation.md)
+##### [Using read scale-out for better performance](administration/database-read-scale-out-overview.md)
 ##### Partial records
 ###### [Using partial records](developer/devenv-partial-records.md)
 ###### [FAQ](developer/devenv-partial-records-faq.md)
@@ -955,13 +956,17 @@
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
 #### [AL Language reference (HttpClient datatype)](developer/methods-auto/httpclient/httpclient-data-type.md)
 
-
 ### Instrumenting with telemetry
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
-#### [Sending extension telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
-#### [Adding feature usage telemetry](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)
-#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
-#### [Creating custom events for event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
+#### [Setting up telemetry in an app/extension](developer/devenv-application-insights-for-extensions.md)
+#### [Data logged to app/extension telemetry](developer/devenv-application-insights-for-extensions-data.md)
+#### [Using feature telemetry](administration/telemetry-feature-telemetry.md)
+#### [Creating custom telemetry events](developer/devenv-instrument-application-for-telemetry-app-insights.md)
+#### [Creating custom events for Windows event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
+#### Reference documentation (telemetry)
+##### [Feature usage (System Application)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)
+##### [LogMessage method](developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md)  
+##### [LogMessage method](developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)  
 
 
 ### Accessing device capabilities
@@ -1048,6 +1053,12 @@
 <!-- Data analytics and reporting -->
 ## Data analytics and reporting
 ### [Analyzing, pivoting, and sharing data in Business Central](developer/devenv-reporting-options-overview.md)
+### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
+### [Analyze data on lists and queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Queries in Business Central](developer/devenv-query-overview.md)  
+### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)
+### [Working with Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!-- end Data analytics and reporting -->
 
 ## Extensibility
@@ -1454,7 +1465,7 @@
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end CDS -->
 
-<!-- Microsoft Power Automate -->
+
 ### Data virtualization
 #### [Integrate with Microsoft Dataverse via virtual tables](powerplatform/powerplat-overview.md)
 #### [Table modeling for virtual tables](powerplatform/powerplat-entity-modeling.md)
@@ -1462,37 +1473,43 @@
 #### [Business Central and Dataverse admin reference for virtual tables](powerplatform/powerplat-admin-reference.md)
 #### [FAQ for virtual tables](powerplatform/powerplat-faq.md)
 
-## Integrating with Microsoft Power Apps
-### [Overview](powerplatform/power-apps-overview.md)
-### [Application lifecycle management](powerplatform/power-apps-alm.md)
-### [Sample apps](powerplatform/power-apps-samples.md)
-### [Best practices](powerplatform/power-apps-best-practices.md)
-
-## Integrating with Microsoft Power Automate
-### [Overview](powerplatform/power-automate-overview.md)
-### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
-### [Create automated flows](powerplatform/automate-workflows.md)
-### [Create instant flows](powerplatform/instant-flows.md)
-### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
-
-## [Integrating with Microsoft Power Pages (preview)](developer/power-pages-on-virtual-tables-overview.md)
-
-<!-- Microsoft Power BI -->
-## Integrating with Microsoft Power BI
-### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
-### Administrator
-#### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview)
-#### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup)
-### Report creator
-#### [Get started: Build Power BI reports](/dynamics365/business-central/across-how-use-financials-data-source-powerbi)
-#### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
-
-### [Extract data from Business Central](developer/devenv-extract-data.md)
-### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
-### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
-<!-- end Microsoft Power BI -->
 
 <!-- Microsoft Power Platform -->
+## Integrating with Microsoft Power Platform
+### [Overview](powerplatform/powerplatform-integration-overview.md)
+<!-- Microsoft Power Apps -->
+### Integrating with Microsoft Power Apps
+#### [Overview](powerplatform/power-apps-overview.md)
+#### [Application lifecycle management](powerplatform/power-apps-alm.md)
+#### [Sample apps](powerplatform/power-apps-samples.md)
+#### [Best practices](powerplatform/power-apps-best-practices.md)
+
+<!-- Microsoft Power Automate -->
+### Integrating with Microsoft Power Automate
+#### [Overview](powerplatform/power-automate-overview.md)
+#### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
+#### [Create automated flows](powerplatform/automate-workflows.md)
+#### [Create instant flows](powerplatform/instant-flows.md)
+#### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
+
+<!-- Microsoft Power Pages -->
+### [Integrating with Microsoft Power Pages (preview)](developer/power-pages-on-virtual-tables-overview.md)
+
+<!-- Microsoft Power BI -->
+### Integrating with Microsoft Power BI
+#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+#### Administrator
+##### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview)
+##### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup)
+#### Report creator
+##### [Get started: Build Power BI reports](/dynamics365/business-central/#across-how-use-financials-data-source-powerbi)
+##### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
+
+#### [Extract data from Business Central](developer/devenv-extract-data.md)
+#### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
+#### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
+<!-- end Microsoft Power BI -->
+
 <!-- end Microsoft Power Platform -->
 
 ## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
