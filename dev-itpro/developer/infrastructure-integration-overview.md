@@ -35,7 +35,7 @@ You can use [!INCLUDE[microsoft_entra_name](includes/m365-entra-name.md)] to do 
 
 An Azure service tag represents a group of IP addresses from/to which traffic from a specific service may come, which allows you to set up firewalls for a specific service to allow only traffic from certain services. The **Dynamics365BusinessCentral** service tag enables administrators to restrict access from/to [!INCLUDE [prod_short](includes/prod_short.md)] using firewall and network security group rules.
 
-For more information, see [Use Azure security service tags to restrict network access from/to Business Central](../security/security-service-tags).
+For more information, see [Use Azure security service tags to restrict network access from/to Business Central](../security/security-service-tags.md).
 
 
 ## Get usage, error, and performance telemetry with [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]
@@ -65,7 +65,7 @@ For more information, see [Set Up Universal Print Printers](/dynamics365/busines
 [Manage users and licenses with Microsoft Entra](/dynamics365/business-central/ui-how-users-permissions#manage-users-and-licenses-in-online-tenants)  
 [Setup Multi-Factor Authentication (MFA) with Microsoft Entra](../security/multifactor-authentication.md)  
 [Control Access to Business Central Using with Microsoft Entra Security Groups](/dynamics365/business-central/ui-security-groups)  
-[Restrict network access from/to Business Central Azure security service tags](../security/security-service-tags)  
+[Restrict network access from/to Business Central Azure security service tags](../security/security-service-tags.md)  
 [Integrating Business Central with Azure Application Insights](../administration/telemetry-overview.md)   
 [Integrating Business Central with Microsoft 365 Universal Print](/dynamics365/business-central/admin-printer-setup-universal-print)  
 [Integration overview for Business Central online](integration-overview.md)  

@@ -73,7 +73,7 @@ When using [!INCLUDE[azure_key_vault](includes/azure-keyvault-name.md)] from you
 
 Within the [!INCLUDE[azure_virtual_network](includes/azure-virtual-network-name.md)] service, you can use a service tag for [!INCLUDE[prod_short](includes/prod_short.md)] to restrict network access from/to [!INCLUDE [prod_short](includes/prod_short.md)] using firewall and network security group rules.
 
-For more information, see [Use Azure security service tags to restrict network access from/to Business Central](../security/security-service-tags).
+For more information, see [Use Azure security service tags to restrict network access from/to Business Central](../security/security-service-tags.md).
 
 
 ## Azure Open AI Service
@@ -89,5 +89,5 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 [Azure Function telemetry](../administration/telemetry-azure-function-integration-trace.md)  
 [Using Azure Key Vault with apps/extensions](devenv-app-key-vault-overview.md)  
 [Azure Key Vault telemetry](../administration/telemetry-extension-key-vault-trace.md)  
-[Azure Virtual Networks: Restrict network access from/to Business Central with Azure security service tags](../security/security-service-tags)  
+[Azure Virtual Networks: Restrict network access from/to Business Central with Azure security service tags](../security/security-service-tags.md)  
 [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)  
