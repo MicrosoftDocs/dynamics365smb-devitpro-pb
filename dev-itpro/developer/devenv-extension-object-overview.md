@@ -31,12 +31,12 @@ The following table lists the different extension objects that you can create in
 > [!NOTE]
 > This feature is available with runtime 13.0 and later.
 
-To achieve separation of concerns in large apps, extension objects can from runtime 13.0 exist in the same app as their target. This means that you can have multiple extensions to the same target in the same app. For table extensions in the same app as their target, the fields and keys will be moved to the base table to prevent SQL-joins at runtime.
+Starting from runtime 13.0, large applications can achieve a separation of concerns by allowing extension objects to exist within the same app as their target. This enables the creation of multiple extensions for a single target within the same app. When table extensions reside in the same app as their target, their fields and keys are transferred to the base table, eliminating the need for SQL-joins at runtime.
 
-Since extension objects from a given app are applied on the target following the extension object ID, the following compiler validation are introduced with runtime 13.0:
+With runtime 13.0, extension objects from a specific app are applied to the target based on the extension object ID. This introduces the following new compiler validations:
 
-* The base object can't reference members from extension objects.
-* Extension objects can reference members from other extension objects in the same app only if the other extension object has a lower object ID.
+* Base objects are prohibited from referencing members from extension objects.
+* An extension object can only reference members from other extension objects within the same app if the other extension object has a lower object ID.
 
 ## See also
 
