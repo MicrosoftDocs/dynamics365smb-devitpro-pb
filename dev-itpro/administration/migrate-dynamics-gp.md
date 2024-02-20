@@ -91,7 +91,7 @@ You can choose to migrate all checkbooks from Dynamics GP or only active checkbo
 
 ## GP Historical Snapshot
 
-In the GP Company Migration Configuration page you can select if you want to migrate historical information from GP into Business Central. This data will be visible in listpages found under the corresponding entities and navigating to GP Detail Snapshot. You can indicate if you want to migrate GL detail, Receivables, Payables, Sales Order Processing, Purchase Order Receipts and Inventory transactions.  The data is stored in extension tables in Business Central.  Data stored in those tables can be used in Power BI reports, Power Apps or other 3rd party reporting tools.   The tables containing the GP Historical Snapshot data are as follows:
+In the GP Company Migration Configuration page you can select if you want to migrate historical information from GP into Business Central. This data will be visible in listpages found under the corresponding entities and navigating to GP Detail Snapshot. You can indicate if you want to migrate GL detail, Receivables, Payables, Sales Order Processing, Purchase Order Receipts and Inventory transactions. The data is stored in extension tables in Business Central.  Data stored in those tables can be used in Power BI reports, Power Apps or other 3rd party reporting tools. The tables containing the GP Historical Snapshot data are as follows:
 
 - Hist. G/L Account
 - Hist. Gen. Journal Line
