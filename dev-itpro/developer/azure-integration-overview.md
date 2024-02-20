@@ -20,6 +20,7 @@ Here are some supported integrations between Business Central and Azure services
 - [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)]
 - [!INCLUDE[azure_functions](includes/azure-functions-name.md)]
 - [!INCLUDE[azure_key_vault](includes/azure-keyvault-name.md)]
+- [!INCLUDE[azure_virtual_network](includes/azure-virtual-network-name.md)]
 - Azure Open AI Service
 
 ## [!INCLUDE[azure_blob_services](includes/azure-blob-services-name.md)]
@@ -56,6 +57,14 @@ If your app/extension needs to store and use secrets, such as certificates or cr
 
 When using [!INCLUDE[azure_key_vault](includes/azure-keyvault-name.md)] from your AL code, you get data about the success or failure of usage in telemetry. For more information, see [Azure Key Vault telemetry](../administration/telemetry-extension-key-vault-trace.md).
 
+
+## [!INCLUDE[azure_virtual_network](includes/azure-virtual-network-name.md)]
+
+Within the [!INCLUDE[azure_virtual_network](includes/azure-virtual-network-name.md)] service, you can use a service tag for [prod_short](includes/prod_short.md)] to restrict network access from/to [!INCLUDE [prod_short](includes/prod_short.md)] using firewall and network security group rules.
+
+For more information, see [Use Azure security service tags to restrict network access from/to Business Central](../security/security-service-tags).
+
+
 ## Azure Open AI Service
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure Open AI Service to include copilot and generative AI experiences. For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
@@ -65,8 +74,9 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 [Azure Blob Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Blob%20Services%20API)  
 [Azure File Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20File%20Services%20API)  
 [Azure Function codeunit](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)  
+[Using Azure Functions with Dynamics 365 Business Central](/learn/modules/use-azure-functions/)  
 [Azure Function telemetry](../administration/telemetry-azure-function-integration-trace.md)  
 [Using Azure Key Vault with apps/extensions](devenv-app-key-vault-overview.md)  
 [Azure Key Vault telemetry](../administration/telemetry-extension-key-vault-trace.md)  
-[Using Azure Functions with Dynamics 365 Business Central](/learn/modules/use-azure-functions/)  
+[Restrict network access from/to Business Central Azure security service tags](../security/security-service-tags)  
 [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)  
