@@ -1264,6 +1264,7 @@
 ### [Security overview](security/security-and-protection.md)
 ### [Tips for business users](security/security-users.md)
 ### [Application](security/security-application.md)
+### [How to setup Multifactor Authentication (MFA)](security/multifactor-authentication.md)
 ### [Online](security/security-online.md)
 ### [On-premises](security/security-onpremises.md)
 ### [Data security](security/data-security.md)
@@ -1665,7 +1666,6 @@
 #### [Development cmdlets for extensions](/powershell/module/microsoft.dynamics.nav.apps.tools)
 ### Configuring user authentication
 #### [Authentication and credential types](administration/users-credential-types.md)
-#### [How to setup Multifactor Authentication (MFA)](security/multifactor-authentication.md)
 #### Authenticating with Microsoft Entra ID
 ##### [Overview](administration/authenticating-users-with-azure-ad-overview.md)
 ##### [Configure Microsoft Entra authentication with OpenID Connect](administration/authenticating-users-with-azure-ad-openid-connect.md)
