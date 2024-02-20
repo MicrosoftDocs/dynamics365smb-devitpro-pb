@@ -1541,10 +1541,10 @@
 ## Integrating with infrastructure services
 ### [Overview](developer/infrastructure-integration-overview.md) 
 ### [Manage users and licenses with Microsoft Entra](/dynamics365/business-central/ui-how-users-permissions#manage-users-and-licenses-in-online-tenants?toc=/dynamics365/business-central/dev-itpro/toc.json)  
-### [Setup Multi-Factor Authentication (MFA) with Microsoft Entra](../security/multifactor-authentication.md)  
+### [Setup Multi-Factor Authentication (MFA) with Microsoft Entra](security/multifactor-authentication.md)  
 ### [Control Access to Business Central Using with Azure Security Groups](/dynamics365/business-central/ui-security-groups?toc=/dynamics365/business-central/dev-itpro/toc.json)  
-### [Restrict network access from/to Business Central Azure security service tags](../security/security-service-tags)  
-### [Integrating Business Central with Azure Application Insights](../administration/telemetry-overview.md)   
+### [Restrict network access from/to Business Central Azure security service tags](security/security-service-tags)  
+### [Integrating Business Central with Azure Application Insights](administration/telemetry-overview.md)   
 ### [Integrating Business Central with Microsoft 365 Universal Print](/dynamics365/business-central/admin-printer-setup-universal-print?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 <!-- end Infrastructure services -->
 
