@@ -28,11 +28,14 @@ The following sections the options on the page.
 
 ## Modules
 
-Use the **Modules** section to choose the specific modules you want to migrate data from to Business Central. All modules are selected for migration by default. For example, if you don't want to migrate data for payables, turn off the **Payables** switch. In this case, the **Open Sales Orders** switch is because oepn sales orders are dependant on vendors whihc are part of the payables module.
+Use the **Modules** section to choose the specific modules you want to migrate data from to Business Central. By default, all modules are selected for migration. If you don't want to migrate data for a mdoule, turn off its swicth. For example, if you don't want to migrate data for payables, turn off the **Payables** switch. Note that yn this case, the **Open Sales Orders** switch is automatically turned off because the open sales orders module relies on vendors which are part of the payables module.
 
 ## Master data only
 
-Master data represents the core information about entities, like general ledgers and inventory.     
+Use the **Master data only** section to specify those modules for which you only want to migrate master data. For example, if you only want to migrrate bank information and bank transactions, turn on the **Bank** switch.
+
+By default, both master data and transactional data for the selected modules are migrated. Master data represents the core information that about entities that changes infrequently, for example, like information about a bank. Transactional data captures specific activities or events for an entity, like bank deposits and withdrawals
+
  
 ## Disable auto posting
 
