@@ -16,12 +16,23 @@ ms.date: 02/07/2024
 
 Here are some supported integrations between Business Central and Azure services:
 
+- [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]
 - [!INCLUDE[azure_blob_services](includes/azure-blob-services-name.md)]
 - [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)]
 - [!INCLUDE[azure_functions](includes/azure-functions-name.md)]
 - [!INCLUDE[azure_key_vault](includes/azure-keyvault-name.md)]
 - [!INCLUDE[azure_virtual_network](includes/azure-virtual-network-name.md)]
 - Azure Open AI Service
+
+
+## [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]
+
+You can integrate [!INCLUDE[prod_short](includes/prod_short.md)] with [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] by enabling the telemetry feature. With telemetry, system owners can look at usage and lifecycle operations of environments/apps, diagnose problems, and analyze operations that affect performance.
+
+:::image type="content" source="media/telemetry-architecture.svg" alt-text="Shows how Environment-level telemetry and App/extension-level telemetry works in Business Central AL" lightbox="media/telemetry-architecture.svg":::
+
+For more information, see [Monitoring and Analyzing Telemetry in Azure Application Insights](../administration/telemetry-overview.md).
+
 
 ## [!INCLUDE[azure_blob_services](includes/azure-blob-services-name.md)]
 
@@ -78,5 +89,5 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 [Azure Function telemetry](../administration/telemetry-azure-function-integration-trace.md)  
 [Using Azure Key Vault with apps/extensions](devenv-app-key-vault-overview.md)  
 [Azure Key Vault telemetry](../administration/telemetry-extension-key-vault-trace.md)  
-[Restrict network access from/to Business Central Azure security service tags](../security/security-service-tags)  
+[Azure Virtual Networks: Restrict network access from/to Business Central with Azure security service tags](../security/security-service-tags)  
 [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)  
