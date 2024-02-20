@@ -18,20 +18,22 @@ The Business Central cloud migration tools for Dynamics GP include the **GP Comp
 
 You've set up cloud migration. For more information, go to [Run cloud migration setup](migration-setup-gp.md).
 
-## Get started with the GP Company Migration Configuration page
+## Get started
 
 The **GP Company Migration Configuration** page opens automatically when you complete the **Cloud Migration Setup** assisted setup, but you can also open the page from the **Cloud Migration Management** page and selecting the **GP Company Migration Configuration** action.
 
 ![Shows GP company migration configuration page](../developer/media/gp-company-migration-configuration.svg)
 
-
 Use this new page to select the data you want migrated from Dynamics GP to Business Central. The following sections the options on the page. 
 
 ## Modules
-In addition to the GP Company Migration Configuration page you can select which modules you would like migrated from GP to Business Central. You will be able to select from the following modules to migrate: Accounts Payable, Accounts Receivable, Bank, Open Purchase Orders and Inventory.
+
+Use the **Modules** section to choose the specific modules you want to migrate data from to Business Central. All modules are selected for migration by default. For example, if you don't want to migrate data for payables, turn off the **Payables** switch. In this case, the **Open Sales Orders** switch is because oepn sales orders are dependant on vendors whihc are part of the payables module.
 
 ## Master data only
 
+Master data represents the core information about entities, like general ledgers and inventory.    
+ 
 ## Disable auto posting
 
 ## Classes
