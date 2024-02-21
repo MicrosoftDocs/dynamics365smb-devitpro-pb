@@ -28,7 +28,7 @@ The **GP Company Migration Configuration** page opens automatically when you com
 
 ![Shows GP company migration configuration page](../developer/media/gp-company-migration-configuration.svg)
 
-Once you have the **GP Company Migration Configuration** open, you can start to configure what data you to migrate by using the different sections of the page. The page enables you to configure the migration globally for all companies that you chose to migrate (using the upper sections of the page) or on a per-company basis using the **Per-company** section.
+Once you have the **GP Company Migration Configuration** open, you can start to configure what data you to migrate by using the different sections of the page. The page enables you to configure the migration globally for all companies that you chose to migrate (using the upper sections of the page) or on a per-company basis using the **Per Company** section.
 
 You don't have to make any changes on this page. However, we do recommend that you review the default settings. If you're satisfied with the default settings, you can close the page and continue the migration process.
 
@@ -44,7 +44,7 @@ The steps in this section configure the data migration globally for all companie
 
    Use the **Modules** section to choose the specific modules you want to migrate data from to Business Central. By default, all modules are selected for migration. If you don't want to migrate data for a module, turn off its switch. For example, if you don't want to migrate data for payables, turn off the **Payables** switch. In this case, the **Open Sales Orders** switch is automatically turned off because the open sales orders module relies on vendors, which are part of the payables module.
 
-   If you-re migrating the Remember to set the 
+   If you're migrating the General Ledger module, be sure to go the the **Per Company** section and specify the **Oldest GL Year** field. The year and all future years will be migrated to Business Central. 
 1. Choose whether to migrate master data only for modules.
 
    Use the **Master data only** section to specify those modules for which you only want to migrate master data. For example, if you only want to migrate bank information and bank transactions, turn on the **Bank** switch.
@@ -78,9 +78,9 @@ The steps in this section configure the data migration globally for all companie
 
 Use the **Per company** section to set the data migration settings separately for each company when you're migrating more than one company. You can specify the same settings as you can globally, plus a couple more. By default, each company uses the global settings.
 
+- **Oldest GL Year** field
 
-
-Account summary transactions are generated and posted for open and history years that were set up in Dynamics GP. The summary amounts are created based on the fiscal periods set up in Dynamics GP. In the GP Company Migration Configuration page, you can select the oldest historical year you want migrated to Business Central. For example, if 2019, 2020, and 2021 are historical years in Dynamics GP, you could select that the oldest historical year you want migrated is 2020. Summary transactions for 2019 wouldn't be migrated to Business Central.
+   Account summary transactions are generated and posted for open and history years that were set up in Dynamics GP. The summary amounts are created based on the fiscal periods set up in Dynamics GP. In the GP Company Migration Configuration page, you can select the oldest historical year you want migrated to Business Central. For example, if 2019, 2020, and 2021 are historical years in Dynamics GP, you could select that the oldest historical year you want migrated is 2020. Summary transactions for 2019 wouldn't be migrated to Business Central.
 
 ## Next steps
 
