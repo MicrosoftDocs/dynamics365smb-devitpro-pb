@@ -53,7 +53,7 @@ The steps in this section configure the data migration globally for all companie
 
 1. Choose whether to disable auto posting for migrated transactions.
 
-   By default, the migration process automatically posts migrated transactions in batches based on the type. Use the **Disable auto posting** section to specify transactions that you don't want posted automatically. To disable auto posting, turn off the switch for batch. 
+   By default, the migration process automatically posts migrated transactions in batches based on the type. Use the **Disable auto posting** section to specify transactions that you don't want posted automatically. To disable auto posting, turn off the switch for batch.
 
    Disabling auto posting is useful if you wanted to modify transactions before they're posted. For example, if you wanted to adjust some general ledger accounts before they're posted, turn off the **Account batches** switch.
 
