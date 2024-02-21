@@ -3,7 +3,7 @@ title: Web Service Request Trace
 description: Learn about the web service request telemetry in Business Central  
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 02/02/2024
+ms.date: 02/19/2024
 ms.author: kepontop
 ms.reviewer: jswymer
 ms.custom: bap-template
@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-Web services telemetry gathers data about SOAP, OData, and REST API requests through the service. It provides information like the request's endpoint, time to complete, the SQL statements run, and more.  
+Web services telemetry gathers data about SOAP, OData, and REST API requests to the service. It provides information like the request's endpoint, time to complete, HTTP status codes, and more.  
 
 ## General dimensions
 
@@ -23,14 +23,23 @@ The following table explains the general dimensions included in an incoming **We
 
 |Dimension|Description or value|
 |---------|-----|
-|operation_Name|**Web Services Call**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
-|message|Version 16.1 and later (depending on the type):<ul><li>**Web service called (API): {endpoint}**</li><li>**Web service called (ODataV4): {endpoint}**</li><li>**Web service called (ODataV3): {endpoint}**</li><li>**Web service called (SOAP): {endpoint}**</li></ul>Before version 16.1:<ul><li>**Received a web service request of type API**</li><li>**Received a web service request of type ODataV4**</li><li>**Received a web service request of type ODataV3**</li><li>**Received a web service request of type SOAP**|
+|message|<ul><li>**Web service called (API): {endpoint}**</li><li>**Web service called (ODataV4): {endpoint}**</li><li>**Web service called (ODataV3): {endpoint}**</li><li>**Web service called (SOAP): {endpoint}**</li></ul>|
 |severityLevel|**1**|
+
+
+### General dimensions (version 16.0 and earlier)
+
+In versions 16.0 and earlier, the general dimensions look like this:
+
+|Dimension|Description or value|
+|---------|-----|
+|operation_Name|**Web Services Call**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
+|message| Before version 16.1:<ul><li>**Received a web service request of type API**</li><li>**Received a web service request of type ODataV4**</li><li>**Received a web service request of type ODataV3**</li><li>**Received a web service request of type SOAP**|
 
 
 ## Custom dimensions
 
-The following table explains the custom dimensions included in a **Web Services Call** trace.
+The following table explains the custom dimensions included in a **Web Services Call** telemetry event.
 
 For a full KQL example of all dimensions in web services telemetry, see [Sample KQL code](#sample-kql-code).
 
@@ -41,7 +50,8 @@ For a full KQL example of all dimensions in web services telemetry, see [Sample 
 |alObjectId|Specifies the ID of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
 |alObjectName|Specifies the name of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
 |alObjectType|Specifies the type of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
-|category|Specifies the service type. Values include: **API**, **ODataV4**, **ODataV3**, and **SOAP**.|
+|category|Specifies the web service type. Values include: **API**, **ODataV4**, **ODataV3**, and **SOAP**.|
+|companyName| The company name in which the request runs. |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
@@ -54,14 +64,14 @@ For a full KQL example of all dimensions in web services telemetry, see [Sample 
 |extensionName|Specifies the name of the app/extension that the object belongs to.|
 |extensionVersion|Specifies the version of the app/extension that the object belongs to.|
 |extensionPublisher|Specifies the publisher of the app/extension that the object belongs to.|
-|failureReason | Logged in case of an error in a OData/API call. Contains the exception as seen from the server. <br /><br/>This dimension was introduced in Business Central 2023 release wave 1, version 22.0.|
-|httpHeaders|Introduced in version 16.3. Specifies the http headers set in the request. In version 17.3, a truncated version of the Authorization header was introduced to enable querying for the use of basic or token authorization. For more information, see [HTTP headers](#http-headers). |
-|httpMethod|Introduced in version 16.3. Specifies the HTTP method used in the request. Values include: POST, GET, PUT, PATCH, or DELETE. |
+|failureReason | Logged in case of an error in a OData/API request. Contains the exception as seen from the server. <br /><br/>This dimension was introduced in Business Central 2023 release wave 1, version 22.0.|
+|httpHeaders|Introduced in version 16.3. Specifies the http headers set in the request. Not logged for SOAP requests. In version 17.3, a truncated version of the Authorization header was introduced to enable querying for the use of basic or token authorization. For more information, see [HTTP headers](#http-headers). |
+|httpMethod|Introduced in version 16.3. Specifies the HTTP method used in the request. Values include: POST, GET, PUT, PATCH, or DELETE. Not logged for SOAP requests. |
+|httpStatusCode |Introduced in version 16.3. Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. Not logged for SOAP requests. For more information, see [HTTP status codes](#http-status-codes)|
 |queryFilter|Specifies the OData/API filter used in the request.|
-|httpStatusCode |Introduced in version 16.3. Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. For more information, see [HTTP status codes](#http-status-codes)|
 |requestQueueTime | Specifies the amount of time the request spent in the request queue before it was started by the server.<sup>[\[3\]](#3)</sup> <br /><br />The time has the format hh:mm:ss.sssssss. | 
 |serverExecutionTime|Specifies the amount of time it took the server to complete the request\*\*. The time has the format hh:mm:ss.sssssss. Time spent in the request queue isn't included.|
-|sqlExecutes|Specifies the number of SQL statements that the request executed.<sup>[\[1\]](#1)</sup> <sup>[\[2\]](#2)</sup>|
+|sqlExecutes|Specifies the number of SQL statements run by the request.<sup>[\[1\]](#1)</sup> <sup>[\[2\]](#2)</sup>|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.<sup>[\[1\]](#1)</sup> <sup>[\[2\]](#2)</sup>|
 |totalTime|Specifies the amount of time it took to process the request.<sup>[\[2\]](#2)</sup> <br /><br />The time has the format hh:mm:ss.sssssss. Time spent in the request queue isn't included. |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
