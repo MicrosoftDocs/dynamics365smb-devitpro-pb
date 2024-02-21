@@ -37,7 +37,7 @@ The following table includes links to help you understand authentication in [!IN
 |To      |See      | 
 |--------|---------| 
 | Learn about user session authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. | [Authentication in Business Central](./security-application.md#authentication) |
-| Learn about webservice session authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP based webservice endpoints. | [Authentication with OAuth](../webservices/authenticate-web-services-using-oauth.md) <br> [Web Services Authentication (on-premises)](../webservices/web-services-authentication.md) <br> [Service-to-service authentication](../administration/automation-apis-using-s2s-authentication.md) |
+| Learn about webservice session authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP based webservice endpoints. | [Authentication with OAuth](../webservices/authenticate-web-services-using-oauth.md) <br><br> [Web Services Authentication (on-premises)](../webservices/web-services-authentication.md) <br><br> [Service-to-service authentication](../administration/automation-apis-using-s2s-authentication.md) |
 
 
 ## Authorization for AL developers
@@ -53,7 +53,7 @@ The following table includes links to help you understand authorization in [!INC
 | Learn how entitlements can be used to support transactability for AppSource apps | [Supporting transactability for AppSource apps](../developer/devenv-entitlement-object.md#supporting-transactability-for-appsource-apps)
 | Learn how user permissions work in the application in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. | [User permissions in the application](./user-security.md#user-permissions-in-the-application) |
 | Learn how to implement and extend permission sets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. | [Permission sets and entitlements overview](../developer/devenv-entitlements-and-permissionsets-overview.md) |
-| Learn how to control access to data on the database, company, table, or record level using permissions. | [Data Security](data-security.md?tabs=database-level) <br> [Permissions on database objects](../developer/devenv-permissions-on-database-objects.md)|
+| Learn how to control access to data on the database, company, table, or record level using permissions. | [Data Security](data-security.md?tabs=database-level) <br><br> [Permissions on database objects](../developer/devenv-permissions-on-database-objects.md)|
 | Learn how to use permissions to control visibility of UI elements. | [Removing Elements from the User Interface According to Permissions](../administration/hide-ui-elements.md) |
 
 
@@ -66,7 +66,7 @@ The following table includes links to help you understand auditing in [!INCLUDE[
 |To      |See      | 
 |--------|---------| 
 | See an overview of a users permissions. | [Authorization Assessment](/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)|
-| Monitor permission changes and stability with telemetry. | [Permission changes telemetry](../administration/telemetry-permission-changes-trace.md) <br> [Permission dependency cycle telemetry](../administration/telemetry-permission-dependency-cycle-trace.md) <br> [Permission error telemetry](../administration/telemetry-permission-error-trace.md) |
+| Monitor permission changes and stability with telemetry. | [Permission changes telemetry](../administration/telemetry-permission-changes-trace.md) <br><br> [Permission dependency cycle telemetry](../administration/telemetry-permission-dependency-cycle-trace.md) <br><br> [Permission error telemetry](../administration/telemetry-permission-error-trace.md) |
 
 
 ## Encryption of data and secrets management for AL developers
@@ -79,7 +79,7 @@ The following table includes links to help you understand encryption in [!INCLUD
 |--------|---------| 
 | Understand encryption at rest for data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. | [Data isolation and encryption (online)](./security-online.md#data-isolation-and-encryption)  <br><br> [Data isolation and encryption (on-premises)](../developer/devenv-encrypting-data.md) |
 | Learn how to encrypt data in transit when calling external services from AL. | [Supported cipher suites in HTTPS](../developer/devenv-supported-cipher-suites.md) |
-| Learn how to encrypt data in transit when calling [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP based webservice endpoints. | [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only supports HTTPS for webservice endpoints. <br><br> For on-premises installations, see [Configuring SSL (on-premises)](../deployment/configure-ssl-web-client-connection) |
+| Learn how to encrypt data in transit when calling [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP based webservice endpoints. | [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only supports HTTPS for webservice endpoints. <br><br> For on-premises installations, see [Configuring SSL (on-premises)](../deployment/configure-ssl-web-client-connection.md) |
 | To learn how to use the Isolated Storage feature to provide data isolation between extensions. | [Isolated storage](../developer/devenv-isolated-storage.md) |
 | To learn how to encrypt data in memory (to protect sensitive data from being exposed through the AL debugger when doing regular or snapshot debugging, or when an administrator takes a memory dump of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server process). |[Protecting sensitive values with the SecretText data type](../developer/devenv-secret-text.md)|
 | To safely store secrets for your app and retrieve them from AL. | [Using Azure Key Vault for app secrets](../developer/devenv-app-key-vault-overview.md) |
