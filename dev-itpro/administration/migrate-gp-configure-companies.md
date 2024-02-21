@@ -24,7 +24,7 @@ You complete this task after you set up cloud migration and before you replicate
 
 ## Get started
 
-The **GP Company Migration Configuration** page opens automatically when you complete the **Cloud Migration Setup** assisted setup. You can also open the page searching for and opening the **Cloud Migration Management** page and then selecting the **GP Company Migration Configuration** action.
+The **GP Company Migration Configuration** page opens automatically when you complete the **Cloud Migration Setup** assisted setup. You can also open the page by searching for and opening the **Cloud Migration Management** page and then selecting the **GP Company Migration Configuration** action.
 
 ![Shows GP company migration configuration page](../developer/media/gp-company-migration-configuration.svg)
 
