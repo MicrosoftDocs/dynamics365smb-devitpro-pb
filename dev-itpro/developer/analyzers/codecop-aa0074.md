@@ -3,7 +3,7 @@ title: "CodeCop Warning AA0074"
 description: "TextConst and Label variable names should have a suffix (an approved three-letter suffix: Msg, Tok, Err, Qst, Lbl, Txt) describing usage."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 02/21/2024
 ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,7 +30,8 @@ TextConst and Label variable names should have a suffix (an approved three-lette
 |Lbl                  |Label, Caption |
 |Txt                  |Text |
 
-Note that Tok is generally used for short tokens such as "GET", "PUT", "HTTPS" etc. Furthermore the variable name should align with the label itself, I.E. GetTok, PutTok and HttpsTok. Generally these tokens should also be locked.
+> [!NOTE]  
+> The `Tok` suffix is generally used for short tokens such as "GET", "PUT", "HTTPS" etc. Furthermore, the variable name should align with the label itself, for example, `GetTok`, `PutTok` and `HttpsTok`. In general, these tokens should have the `Locked = true;` set so that they're not translated.
 
 ## Example
 
@@ -39,7 +40,8 @@ Note that Tok is generally used for short tokens such as "GET", "PUT", "HTTPS" e
 GetTok: Label 'GET', Locked = true;
 ```
 
-## See Also  
+## See also
+
 [CodeCop Analyzer](codecop.md)  
-[Get Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Get started with AL](../devenv-get-started.md)  
+[Developing extensions](../devenv-dev-overview.md)  
