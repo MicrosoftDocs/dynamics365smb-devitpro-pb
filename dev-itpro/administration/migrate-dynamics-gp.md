@@ -12,7 +12,7 @@ ms.author: jswymer
 ---
 # Dynamics GP data migrated to Business Central online
 
-This articles provides an overview of Dynamics GP data can be migrated to Business Central online by cloud migration tools. You configure the actual data to migrate either globally or per company as part of the cloud migration set up using the **GP Company Migration Configuration** page.
+This articles provides an overview of the Dynamics GP data that can be migrated to Business Central online by cloud migration tools. You configure the actual data to migrate either globally or per company as part of the cloud migration set up using the **GP Company Migration Configuration** page.
 
 ## Fiscal periods
 
@@ -20,7 +20,7 @@ The *fiscal periods setup* in Dynamics GP will be migrated to Business Central a
 
 ## Chart of Accounts master records
 
-The account number in Business Central will be mapped from the main account segment from Dynamics GP. Remaining account segments are then defined as [dimensions](/dynamics365/business-central/finance-dimensions/) in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. The GP Company Migration Configuration asks the user to enter a segment for *Global Dimension 1* and *Global Dimension 2*. If your chart of accounts in Dynamics GP has more than 2 segments outside of the main segment, the other segments are automatically set up as shortcut dimensions (3-8). You can verify the setup in the **General Ledger Setup** page in Business Central.
+The account number in Business Central will be mapped from the main account segment from Dynamics GP. Remaining account segments are then defined as [dimensions](/dynamics365/business-central/finance-dimensions/) in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. The GP Company Migration Configuration asks you to enter a segment for *Global Dimension 1* and *Global Dimension 2*. If your chart of accounts in Dynamics GP has more than 2 segments outside of the main segment, the other segments are automatically set up as shortcut dimensions (3-8). You can verify the setup in the **General Ledger Setup** page in Business Central.
 
 Let us look at an example of an account from Dynamics GP, using the year 2022 as an example:
 

@@ -12,11 +12,11 @@ ms.custom: bap-template
 
 # Configure Dynamics GP company migration
 
-The Business Central cloud migration tools for Dynamics GP include the **GP Company Migration Configuration** page. This page allows you to make global settings for all companies selected to migrate with the ability to update at a company level if necessary.
+The Business Central cloud migration tools for Dynamics GP include the **GP Company Migration Configuration** page. This page allows you to make global settings for all companies selected to migrate with the ability to update at a company level if necessary. For more information about the data that can be migrated, see [Dynamics GP data migrated to Business Central online](migrate-dynamics-gp.md).
 
 You complete this task after you set up cloud migration and before you replicate data.
 
- [!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process-gp.md)]
+[!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process-gp.md)]
 
 ## Prerequisites
 
@@ -32,17 +32,19 @@ Once you have the **GP Company Migration Configuration** open, you can start to 
 
 You don't have to make any changes on this page. However, we do recommend that you review the default settings. If you're satisfied with the default settings, you can close the page and continue the migration process.
 
-## Configure the migration globally
+## Configure migration globally
 
 The steps in this section configure the data migration globally for all companies that you chose to migrate cloud migration setup. If you're migrating more than one company, you can specify the [configuration on a per-company basis](#configure-data-migration-per-company).
 
 1. Set the dimensions.
 
-   Select the **Set All Dimensions** to assign dimensions for all companies. Then select the two segments from Dynamics GP that want to use as the global dimensions in Business Central. The remaining segments are automatically set up as shortcut dimensions. [Learn more about dimensions in Business Central](/dynamics365/business-central/finance-dimensions).
+   Select the **Set All Dimensions** action to assign dimensions for all companies. Then select the two segments from Dynamics GP that want to use as the global dimensions in Business Central. The remaining segments are automatically set up as shortcut dimensions. [Learn more about dimensions in Business Central](/dynamics365/business-central/finance-dimensions).
+
 1. Choose the modules to migrate.
 
    Use the **Modules** section to choose the specific modules you want to migrate data from to Business Central. By default, all modules are selected for migration. If you don't want to migrate data for a module, turn off its switch. For example, if you don't want to migrate data for payables, turn off the **Payables** switch. In this case, the **Open Sales Orders** switch is automatically turned off because the open sales orders module relies on vendors, which are part of the payables module.
 
+   If you-re migrating the Remember to set the 
 1. Choose whether to migrate master data only for modules.
 
    Use the **Master data only** section to specify those modules for which you only want to migrate master data. For example, if you only want to migrate bank information and bank transactions, turn on the **Bank** switch.
@@ -67,14 +69,18 @@ The steps in this section configure the data migration globally for all companie
 
    Use the **historical snapshots** section to specify historical transactions that you want migrated to Business Central. The selected transactions are migrated to extension tables in Business Central. User in the Business Central client can then view the data from specific GP list pages.
 
-   To migrate historical transactions, turn on the **Enable/Disable All Transactions** switch and then turn on the switch for transaction type you want to migrate, like **GL Transactions** and AR **Transactions**.
+   To migrate historical transactions, do the following steps.
+   1. Turn on the **Enable/Disable All Transactions** switch.
+   1. Turn on the switch for each transaction type you want to migrate, like **GL Transactions** and AR **Transactions**.
+   1. Go to the **Per company** section and set **Oldest Snapshot Year** field the earliest year in GP that you want migrated.
 
 ## Configure migration per company
 
-Use the **Per company** section to set the data migration setting separately for each company. You can specify the same settings as you can do globally. In fact, the global settings are used on each company by default.
+Use the **Per company** section to set the data migration settings separately for each company when you're migrating more than one company. You can specify the same settings as you can globally, plus a couple more. By default, each company uses the global settings.
 
-The 
 
+
+Account summary transactions are generated and posted for open and history years that were set up in Dynamics GP. The summary amounts are created based on the fiscal periods set up in Dynamics GP. In the GP Company Migration Configuration page, you can select the oldest historical year you want migrated to Business Central. For example, if 2019, 2020, and 2021 are historical years in Dynamics GP, you could select that the oldest historical year you want migrated is 2020. Summary transactions for 2019 wouldn't be migrated to Business Central.
 
 ## Next steps
 
