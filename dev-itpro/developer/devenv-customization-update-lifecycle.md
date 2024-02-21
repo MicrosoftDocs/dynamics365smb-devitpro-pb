@@ -25,7 +25,7 @@ An automated service validates all tenant customizations before an update is mar
 If the validation service discovers any tenant customizations that are not compatible with the update, an email notification is sent to the tenant administrators listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Managing Tenant Notifications](../administration/tenant-admin-center-notifications.md).
 
 > [!IMPORTANT]
-> At least one email address must be specified as a notification recipient to receive the update notifications. If you do not speciy an email address, you will not be notified of updates and other changes to the tenant.
+> At least one email address must be specified as a notification recipient to receive the update notifications. If you do not specify an email address, you will not be notified of updates and other changes to the tenant.
 
 The email notification provides information on the incompatible extension, detail on which properties must be updated, and steps to bring the extension into compatibility.
 
