@@ -893,6 +893,7 @@
 -->
 
 ### Handling security
+#### [Security for AL developers](security/security-developers.md)
 #### [Handling security overview](security/security-application.md)
 
 #### [Isolated storage](developer/devenv-isolated-storage.md)
@@ -921,6 +922,10 @@
 ##### Permissions APIs
 ###### [Permission set](administration/resources/dynamics_permissionset.md)
 ###### [Get permission set](administration/api/dynamics_permissionset_get.md)
+##### System application reference (permissions)
+###### [Codeunit 'User Permissions'](dynamics365/business-central/application/system-application/codeunit/system.security.user.user-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Page 'Effective Permissions'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Page 'Effective Permissions By Set'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions-by-set?toc=/dynamics365/business-central/dev-itpro/toc.json) 
 
 
 ### Running things in the background
