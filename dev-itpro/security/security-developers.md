@@ -10,7 +10,7 @@ author: kennienp
 
 # Business Central security for AL developers
 
-This section helps you understand and improve the security of your Business Central app regardless of where it's hosted. In the sections listed below, you'll find guidance and recommended practices related to authentication, authorization, and auditing, in addition to data encryption and secure development practices that can be applied to any Business Central app.
+This section helps you understand and improve the security of your Business Central app regardless of where it's hosted. In the sections listed below, you'll find guidance and recommended security best practices related to your app development lifecycle, for authentication, authorization, and auditing, and also for data encryption and secrets management.
 
 
 ## Security development lifecycle
@@ -42,9 +42,9 @@ The following table includes links to help you understand authentication in [!IN
 
 ## Authorization for AL developers
 
-After a session is authenticated, authorization determines which areas the user of the session can access, such as code they can run, pages and reports they can open, and the permissions they have on associated data. 
+After a session is authenticated, the authorization step determines which areas the user of the session can access, such as code they can run, pages and reports they can open, and the permissions they have on associated data. 
 
-The following table includes links to help you understand authorization in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+The following table includes links to help you understand authorization in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from the developer point of view.
 
 
 |To      |See      | 
@@ -66,10 +66,10 @@ The following table includes links to help you understand auditing in [!INCLUDE[
 |To      |See      | 
 |--------|---------| 
 | See an overview of a users permissions. | [Authorization Assessment](/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)|
-| Monitor permission changes and stability with telemetry. | [Permission changes telemetry](../administration/telemetry-permission-changes-trace.md) <br> [Permission dependency cycle telemetry](administration/telemetry-permission-dependency-cycle-trace.md) <br> [Permission error telemetry](administration/telemetry-permission-error-trace.md) |
+| Monitor permission changes and stability with telemetry. | [Permission changes telemetry](../administration/telemetry-permission-changes-trace.md) <br> [Permission dependency cycle telemetry](../administration/telemetry-permission-dependency-cycle-trace.md) <br> [Permission error telemetry](../administration/telemetry-permission-error-trace.md) |
 
 
-## Encryption of data and secrets for AL developers
+## Encryption of data and secrets management for AL developers
 
 Sensitive data in your application needs to be incrypted at rest, in transit, and in memory, and your app secrets should always be stored and processed in a safe manner.
 
@@ -77,9 +77,9 @@ The following table includes links to help you understand encryption in [!INCLUD
 
 |To      |See      | 
 |--------|---------| 
-| Understand encryption at rest for data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. | [Data isolation and encryption (online)](./security-online.md#data-isolation-and-encryption)  <br> [Data isolation and encryption (on-premises)](../developer/devenv-encrypting-data.md) |
-| Learn how to encrypt data in transit when calling external services from AL. | [Supported cipher suites in HTTPS](developer/devenv-supported-cipher-suites.md) |
-| Learn how to encrypt data in transit when calling [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP based webservice endpoints. | [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only supports HTTPS for webservice endpoints. <br> For on-premises installations, see [Configuring SSL (on-premises)](../deployment/configure-ssl-web-client-connection) |
+| Understand encryption at rest for data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. | [Data isolation and encryption (online)](./security-online.md#data-isolation-and-encryption)  <br><br> [Data isolation and encryption (on-premises)](../developer/devenv-encrypting-data.md) |
+| Learn how to encrypt data in transit when calling external services from AL. | [Supported cipher suites in HTTPS](../developer/devenv-supported-cipher-suites.md) |
+| Learn how to encrypt data in transit when calling [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP based webservice endpoints. | [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only supports HTTPS for webservice endpoints. <br><br> For on-premises installations, see [Configuring SSL (on-premises)](../deployment/configure-ssl-web-client-connection) |
 | To learn how to use the Isolated Storage feature to provide data isolation between extensions. | [Isolated storage](../developer/devenv-isolated-storage.md) |
 | To learn how to encrypt data in memory (to protect sensitive data from being exposed through the AL debugger when doing regular or snapshot debugging, or when an administrator takes a memory dump of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server process). |[Protecting sensitive values with the SecretText data type](../developer/devenv-secret-text.md)|
 | To safely store secrets for your app and retrieve them from AL. | [Using Azure Key Vault for app secrets](../developer/devenv-app-key-vault-overview.md) |

@@ -49,7 +49,7 @@ When developing an app, entitlements and permission sets are handled as objects 
 
 The [!INCLUDE [prod_short](includes/prod_short.md)] System Application includes a number of objects that can help you when working with permissions:
 
-- [Codeunit 'User Permissions'](dynamics365/business-central/application/system-application/codeunit/system.security.user.user-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
+- [Codeunit 'User Permissions'](/dynamics365/business-central/application/system-application/codeunit/system.security.user.user-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
 - [Page 'Effective Permissions'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
 - [Page 'Effective Permissions By Set'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions-by-set?toc=/dynamics365/business-central/dev-itpro/toc.json) 
 
@@ -112,7 +112,7 @@ Permission sets and permissions [included with apps in XML format](devenv-export
 [Entitlement Object](devenv-entitlement-object.md)  
 [PermissionSet Object](devenv-permissionset-object.md)  
 [PermissionSet Extension Object](devenv-permissionset-ext-object.md)   
-[Codeunit 'User Permissions'](dynamics365/business-central/application/system-application/codeunit/system.security.user.user-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+[Codeunit 'User Permissions'](/dynamics365/business-central/application/system-application/codeunit/system.security.user.user-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 [Page 'Effective Permissions'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 [Page 'Effective Permissions By Set'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions-by-set?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 

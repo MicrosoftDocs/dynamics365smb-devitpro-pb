@@ -85,33 +85,3 @@ The Microsoft Security Development Lifecycle (SDL) is a software development pro
 [Security Tips for Business Users](security-users.md)  
 [Online Security](security-online.md)  
 [On-Premises Security](security-onpremises.md)  
-
-
-
-
-#### [Isolated storage](developer/devenv-isolated-storage.md)
-#### [Protecting sensitive values with the SecretText data type](developer/devenv-secret-text.md)
-
-#### Using Azure Key Vault for app secrets
-##### [Overview](developer/devenv-app-key-vault-overview.md)
-##### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
-##### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
-##### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
-##### [Analyzing app keyvault telemetry](administration/telemetry-extension-key-vault-trace.md)
-
-#### [Permission sets and entitlements overview](developer/devenv-entitlements-and-permissionsets-overview.md)
-##### [Permissionset object](developer/devenv-permissionset-object.md)
-##### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
-##### [Composing permission sets](developer/devenv-permissionset-composing.md)
-##### [Permissions on database objects](developer/devenv-permissions-on-database-objects.md)
-##### [Inherent permissions](developer/devenv-inherent-permissions.md)
-##### [Exporting permission sets to XML](developer/devenv-export-permission-sets.md)
-##### [Upgrading permission sets](upgrade/upgrade-permissions.md)
-##### [Entitlement object](developer/devenv-entitlement-object.md)
-##### Permissions telemetry
-###### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
-###### [Permission dependency cycle telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
-###### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
-##### Permissions APIs
-###### [Permission set](administration/resources/dynamics_permissionset.md)
-###### [Get permission set](administration/api/dynamics_permissionset_get.md)
