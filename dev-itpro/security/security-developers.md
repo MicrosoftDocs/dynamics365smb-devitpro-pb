@@ -54,7 +54,7 @@ The following table includes links to help you understand authorization in [!INC
 | Learn how user permissions work in the application in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. | [User permissions in the application](./user-security.md#user-permissions-in-the-application) |
 | Learn how to implement and extend permission sets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. | [Permission sets and entitlements overview](../developer/devenv-entitlements-and-permissionsets-overview.md) |
 | Learn how to control access to data on the database, company, table, or record level using permissions. | [Data Security](data-security.md?tabs=database-level) <br><br> [Permissions on database objects](../developer/devenv-permissions-on-database-objects.md)|
-| Learn how to use permissions to control visibility of UI elements. | [Removing Elements from the User Interface According to Permissions](../administration/hide-ui-elements.md) |
+| Learn how to use permissions to control visibility of UI elements. | [Using permissions to hide  elements in the User Interface](../administration/hide-ui-elements.md) |
 
 
 ## Auditing for AL developers
