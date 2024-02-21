@@ -490,6 +490,10 @@ Yes, BCPT works on on-premises/local sandboxes and on online sandboxes.
 
 Yes, it's possible to run BCPT scenario runs in AL-Go for GitHub. See https://github.com/microsoft/AL-Go/blob/main/RELEASENOTES.md#new-workflow-create-new-performance-test-app:~:text=New%20workflow%3A%20Create%20new%20Performance%20Test%20App.
 
+### Can you set test isolation in BCPT codeunits?
+
+No, with BCPT you cannot set the test isolation property. All data generated/modified by test codeunits are stored in the database. 
+
 ### Do you have sample code for scenarios?
 
 Yes, to get you started quickly, open source scenario code is available here: https://github.com/microsoft/ALAppExtensions/tree/main/Other/Tests/BCPT-SampleTests.
