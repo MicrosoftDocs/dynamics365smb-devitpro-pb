@@ -10,10 +10,10 @@ author: kennienp
 
 # Business Central security for AL developers
 
-This section helps you understand and improve the security of your Business Central app regardless of where it's hosted. In the sections listed below, you'll find guidance and recommended security best practices related to your app development lifecycle, what you as an AL developer need to know about authentication, authorization, auditing, and data encryption and secrets management.
+This article helps you understand and improve the security of your Business Central app regardless of where it's hosted. In the sections listed below, you'll find guidance and recommended security best practices related to your app development lifecycle, and what you as an AL developer need to know about authentication, authorization, auditing, and data encryption and secrets management.
 
 
-## Security development lifecycle
+## Security development lifecycle (SDL)
 
 The Microsoft Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software and address security compliance requirements while reducing development cost. 
 
