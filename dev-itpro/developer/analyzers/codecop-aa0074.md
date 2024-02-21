@@ -30,11 +30,13 @@ TextConst and Label variable names should have a suffix (an approved three-lette
 |Lbl                  |Label, Caption |
 |Txt                  |Text |
 
+Note that Tok is generally used for short tokens such as "GET", "PUT", "HTTPS" etc. Furthermore the variable name should align with the label itself, I.E. GetTok, PutTok and HttpsTok. Generally these tokens should also be locked.
+
 ## Example
 
 ```AL
-// TextConst suffixed with Tok for Token
-MethodGetTok : TextConst ENU = 'GET';
+// Label suffixed with Tok for Token
+GetTok: Label 'GET', Locked = true;
 ```
 
 ## See Also  
