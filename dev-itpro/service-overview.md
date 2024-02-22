@@ -74,6 +74,7 @@ Administrators can set a maintenance window in which Microsoft can update each e
 
 An exception to this type of schedule is the continuous updates to the underlying service. The service components apply to multiple environments, such as all tenants in a region. So Microsoft schedules those updates to a time when traffic is lower in each region, typically during the evening or night. Typically, users don't notice service updates. [!INCLUDE [prod_short](includes/prod_short.md)] manages traffic so that people working in [!INCLUDE [prod_short](includes/prod_short.md)] aren't affected.  
 
+<!--
 ## Service operations
 
 [!INCLUDE[prod_short](includes/prod_short.md)] runs globally in many Microsoft Azure datacenters. All parts of the infrastructure and services are continually monitored and optimized to deliver the best possible experience. Most service operations and optimizations happen without users being aware of them. In some situations, user interaction is needed, like reconnecting to [!INCLUDE[prod_short](includes/prod_short.md)] or refreshing the browser. Users will be notified directly in the browser if any action is required on their part. Users are asked to take action before the optimizations are applied on the service. This way, they can continue to work without further interruptions. Service operations happen all day, every day, to always provide best experience.
@@ -170,7 +171,7 @@ Scaling this deployment model to handle exponential service growth is accomplish
 
 * **Feature Management/Exposure Control**: [!INCLUDE [prod_short](includes/prod_short.md)] applies a comprehensive framework for selectively exposing new features to customers. Feature exposure is independent of deployment cadences. It allows code for new scenarios to be deployed in a disabled state until it has passed all quality bars. Also, new features can be exposed to a subset of the overall [!INCLUDE [prod_short](includes/prod_short.md)] population as an extra validation step prior to enabling them globally. If an issue is detected, the [!INCLUDE [prod_short](includes/prod_short.md)] feature management service lets you disable features in seconds, without waiting for more time-consuming deployment rollback operations.  
 
-These features have enabled the [!INCLUDE [prod_short](includes/prod_short.md)] team to improve the success rate of deployments while absorbing a high year-over-year growth in monthly deployments.  
+These features have enabled the [!INCLUDE [prod_short](includes/prod_short.md)] team to improve the success rate of deployments while absorbing a high year-over-year growth in monthly deployments.  -->
 
 ## See also
 
