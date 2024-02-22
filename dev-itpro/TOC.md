@@ -1285,6 +1285,7 @@
 <!-- end security -->
 ## Service overview
 ### [Service overview](service-overview.md)
+### [Service scalability](service-scalability.md.md)
 ### [Service operations](service-operations.md)
 <!-- begin performance -->
 # Performance
