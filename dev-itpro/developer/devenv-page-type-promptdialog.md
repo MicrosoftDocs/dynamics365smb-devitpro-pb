@@ -202,12 +202,13 @@ page 50100 MyCopilotPage
         {
             action(OrderFromDescription)
             {
-                Caption = ‘Order from description’;
+                Caption ='Order from description';
                 trigger OnAction()
+                begin
                     UserInput := 'The prompt is set in the NL field';
                     // Update the page to show the inserted prompt. 
                     CurrPage.Update();
-                begin
+                end;
             }
         }
     }
