@@ -7,7 +7,7 @@ ms.reviewer:
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 01/11/2024
+ms.date: 02/21/2024
 ms.custom: bap-template
 ---
 
@@ -38,9 +38,13 @@ The `PromptDialog` page type has three areas, which are `Prompt`, `Content`, and
 
 ### Actions in the PromptDialog page
 
-Unlike other page types, `PromptDialog` pages can only specify two action areas, `SystemActions` and `PromptGuide`. The `SystemActions` area only allows defining a fixed set of actions only supported by this page type, called system actions. These are `Generate`, `Regenerate`, `Attach`, `Ok` and `Cancel`. 
+Unlike other page types, `PromptDialog` pages can only specify two action areas; `SystemActions` and `PromptGuide`. The `SystemActions` area only allow you to define a fixed set of actions called system actions, which are only supported by this page type. These system actions are `Generate`, `Regenerate`, `Attach`, `Ok` and `Cancel`. See the following the [Example section](#example) in this article for more information on how to use these system actions.
 
-The `PromptGuide` action area represents a list of pre-defined text prompt "guides", which users can select to use as input to generate content, rather than creating their own prompt from scratch. The prompt guide menu is only rendered in the web client when the `PromptMode` of the `PromtpDialog` page is set to `Prompt`.
+<!-- image here -->
+
+The `PromptGuide` action area represents a list of predefined text prompt "guides", which users can select to use as input to generate content, rather than creating their own prompt from scratch. The prompt guide menu is only rendered in the web client when the `PromptMode` of the `PromptDialog` page is set to `Prompt`.
+
+<!-- image here -->
 
 ## Example
 
@@ -53,7 +57,6 @@ The page calls the `RunGeneration` procedure, which *you must implement yourself
 For an example on how to implement the `RunGeneration` procedure, see [BCTech samples AzureOpenAI](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Basic_ItemSubstitution/PromptDialog/ItemSubstAIProposal.Page.al#L111). 
 
 For an example on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
-
 
 ```al
 page 50100 MyCopilotPage
@@ -149,7 +152,7 @@ page 50100 MyCopilotPage
 
                 trigger OnAction()
                 begin
-                    // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
+                    // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this logic yourself. 
                     RunGeneration();
                 end;
             }
@@ -193,7 +196,7 @@ page 50100 MyCopilotPage
                 
                 trigger OnAction()
                 begin
-                    // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
+                    // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this logic yourself. 
                     RunGeneration();
                 end;
             }      
@@ -202,13 +205,12 @@ page 50100 MyCopilotPage
         {
             action(OrderFromDescription)
             {
-                Caption ='Order from description';
+                Caption = ‘Order from description’;
                 trigger OnAction()
-                begin
                     UserInput := 'The prompt is set in the NL field';
                     // Update the page to show the inserted prompt. 
                     CurrPage.Update();
-                end;
+                begin
             }
         }
     }
