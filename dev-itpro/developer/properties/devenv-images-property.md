@@ -21,7 +21,7 @@ Specifies the list of images to include in the control add-in.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Property Values
+## Property values
 
 A list of comma-separated strings that represents paths to image files. The default is blank, with no images being used by the control add-in. 
 
@@ -49,7 +49,7 @@ Starting from runtime 13, you can store control add-in resources in a location r
 
 When the system needs to locate these resources, it follows a specific search order; first, it looks for the resources in a location relative to the root of the project. If the resources aren't found there, it then searches in a location relative to the source file of the control add-in. 
 
-The following example shows the two options for organizing control add-in resources:
+The following example shows the two options for organizing control add-in resources; scripts, images, and stylesheets. For the file `MyControlAddIn.al`, the resources are organized in two different ways.
 
 ### Organizing resources example
 
@@ -59,6 +59,7 @@ For the file `MyControlAddIn.al`.
 controladdin MyControlAddIn
 {
     Scripts = './js/myscript.js';
+    Images = './images/myimage.png';
     StyleSheets = 'css/mystyle.css';
     ...
 }
@@ -73,6 +74,8 @@ The resources are relative to the project root:
 [resources]
     [js]
         myscript.js
+    [png]
+        myimage.png
     [css]
         mystyle.css
 app.json
@@ -86,9 +89,11 @@ The resources are relative to the control add-in source:
     MyControlAddIn.al
     [resources]
         [js]
-            MyScript.js
+            myscript.js
+        [png]
+            myimage.png
         [css]
-            MyStyle.css
+            mystyle.css
 app.json
 ```
 
