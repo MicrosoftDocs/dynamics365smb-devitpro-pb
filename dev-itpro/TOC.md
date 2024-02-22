@@ -1283,7 +1283,9 @@
 ## Compliance
 ### [Compliance overview](/dynamics365/business-central/compliance/compliance-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!-- end security -->
-## [Service overview](service-overview.md)
+## Service overview
+### [Service overview](service-overview.md)
+### [Service operations](service-operations.md)
 <!-- begin performance -->
 # Performance
 ## [Performance overview](performance/performance-overview.md)
