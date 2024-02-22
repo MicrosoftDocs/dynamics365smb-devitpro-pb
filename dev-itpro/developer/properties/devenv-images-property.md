@@ -59,7 +59,7 @@ For the file `MyControlAddIn.al`.
 controladdin MyControlAddIn
 {
     Scripts = './js/myscript.js';
-    Images = './images/myimage.png';
+    Images = './png/myimage.png';
     StyleSheets = 'css/mystyle.css';
     ...
 }
