@@ -132,6 +132,20 @@ Here are some supported integrations between Business Central and fundamental se
 For more information, see [Integrating Business Central with infrastructure services](integration-infrastructure-overview.md).
 
 
+## Integrating Business Central with infrastructure services
+
+[!INCLUDE[prod_short](../includes/prod_short.md)] integrates to a few fundamental infrastructure services for operations such as authentication, authorization, auditing, telemetry, and printing.
+
+Here are some supported integrations between Business Central and fundamental services:
+
+- Authentication and authorization: [!INCLUDE[microsoft_entra_name](includes/m365-entra-name.md)]
+- Network security: [!INCLUDE[azure_security_service_tags_name](includes/azure-security-service-tags-name.md)]
+- Telemetry: [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]
+- Local printers: [!INCLUDE[m365_universal_print](../includes/universal-print-name.md)]
+
+For more information, see [Integrating Business Central with infrastructure services](integration-infrastructure-overview.md).
+
+
 ## Integrating AI by extending Copilot in Business Central
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure Open AI Service to extend Copilot in Business Central with new generative AI capabilities.
@@ -139,6 +153,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 ![Shows the tasks in the generative-AI development](media/dev-generative-ai-overview.svg)
 
 For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
+
 
 
 

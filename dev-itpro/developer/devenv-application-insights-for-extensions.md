@@ -12,9 +12,11 @@ author: jswymer
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
-This article describes how to set up an extension to send telemetry data to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] for monitoring and analyzing. [!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. For an overview about the telemetry with [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
+This article describes how to set up an extension to send telemetry data to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] for monitoring and analyzing. For each environment where the app/extension is installed, [!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. 
 
-This feature targets publishers of per-tenant or appsource extensions to give them insight into issues in their extensions before partners and customers report them. You get data for all customers across the install base of the app/extension. 
+The app telemetry feature targets publishers of per-tenant or appsource extensions to give them insight into issues in their extensions before partners and customers report them. You get data for all customers across the install base of the app/extension. 
+
+:::image type="content" source="media/telemetry-app.svg" alt-text="Shows how app telemetry works in Business Central" lightbox="media/telemetry-app.svg":::
 
 Setting up telemetry in an App/Extension requires only 2-3 steps.
 
