@@ -92,7 +92,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 
 :::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
-For more information, see [Integrating Business Central with Azure services](./azure-integration-overview.md).
+For more information, see [Integrating Business Central with Azure services](./integration-azure-overview.md).
 
 
 ## Integrating Business Central with infrastructure services
@@ -106,7 +106,7 @@ Here are some supported integrations between Business Central and fundamental se
 - Telemetry: [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]
 - Local printers: [!INCLUDE[m365_universal_print](../includes/universal-print-name.md)]
 
-For more information, see [Integrating Business Central with infrastructure services](infrastructure-integration-overview.md).
+For more information, see [Integrating Business Central with infrastructure services](integration-infrastructure-overview.md).
 
 
 ## Integrating to external systems from AL code: copilot
@@ -142,7 +142,6 @@ For more information, see [Integrating with Microsoft Teams overview](../develop
 [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
 [Integrating Business Central with Shopify](/dynamics365/business-central/shopify/get-started)  
 [Integrating to external services from AL using the HttpClient data type](../developer/devenv-httpclient.md)  
-[Integrating Business Central with Azure services](./azure-integration-overview.md)
+[Integrating Business Central with Azure services](./integration-azure-overview.md)
 [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)
-[Integrating Business Central with Azure services](./azure-integration-overview.md)
 [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md)  
