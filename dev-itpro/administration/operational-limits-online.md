@@ -186,6 +186,10 @@ No. These operational limits are applied to all users in the same way.
 
 Yes, you can increase throughput by distributing your workload across multiple users. The more users you have in your environment, the more resources you can simultaneously consume in it, as long as we can continuously scale our resources. If a lot of resources are consumed at the same time and we couldn't sufficiently scale our resources, you might experience delays/throttling in consuming your resources.
 
+### Why are my OData/SOAP requests throttled when the current per-user speed/rate limits are much higher than the previous per-environment speed/rate limits?
+
+Your OData/SOAP requests will be throttled if they exceed the current per-user speed/rate limits that are strictly enforced.  They might not have been throttled in the past even if they had exceeded the previous per-environment speed/rate limits, because those limits weren't strictly enforced and served as recommendations/warnings for you to implement a retry logic with cool off period that should already be in place, see [Working with API Rate Limits](../api-reference/v2.0/dynamics-rate-limits.md).
+
 ## See also
 
 [Working with API Rate Limits](../api-reference/v2.0/dynamics-rate-limits.md)  
