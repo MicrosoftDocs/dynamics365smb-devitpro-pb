@@ -12,12 +12,13 @@ ms.date: 02/23/2024
 
 This article is intended to help architects and developers make sound design decisions when they implement integration scenarios to and from [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-:::image type="content" source="media/all-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/all-integrations-overview.svg":::
+<!-- :::image type="content" source="media/all-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/all-integrations-overview.svg"::: -->
 
 The article describes integration patterns, integration scenarios, and integration solutions. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
 
 > [!NOTE]
 > Some integrations require a separate subscription or license. Please consult the documentation for that subscription for requirements and details.
+
 
 ## Integrations to/from Business Central are done with web services
 
@@ -28,6 +29,7 @@ Most integrations (except for a few built-in integrations) to/from [!INCLUDE[pro
 The recommended way to use web services for [!INCLUDE[prod_short](../includes/prod_short.md)] is by using the REST API stack. 
 
 For more information, see [Web services overview](../webservices/web-services.md).
+
 
 ## How to explore and develop against Business Central REST APIs
 
@@ -132,20 +134,6 @@ Here are some supported integrations between Business Central and fundamental se
 For more information, see [Integrating Business Central with infrastructure services](integration-infrastructure-overview.md).
 
 
-## Integrating Business Central with infrastructure services
-
-[!INCLUDE[prod_short](../includes/prod_short.md)] integrates to a few fundamental infrastructure services for operations such as authentication, authorization, auditing, telemetry, and printing.
-
-Here are some supported integrations between Business Central and fundamental services:
-
-- Authentication and authorization: [!INCLUDE[microsoft_entra_name](includes/m365-entra-name.md)]
-- Network security: [!INCLUDE[azure_security_service_tags_name](includes/azure-security-service-tags-name.md)]
-- Telemetry: [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]
-- Local printers: [!INCLUDE[m365_universal_print](../includes/universal-print-name.md)]
-
-For more information, see [Integrating Business Central with infrastructure services](integration-infrastructure-overview.md).
-
-
 ## Integrating AI by extending Copilot in Business Central
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure Open AI Service to extend Copilot in Business Central with new generative AI capabilities.
@@ -153,7 +141,6 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 ![Shows the tasks in the generative-AI development](media/dev-generative-ai-overview.svg)
 
 For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
-
 
 
 
