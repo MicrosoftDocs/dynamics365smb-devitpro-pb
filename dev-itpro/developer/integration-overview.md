@@ -12,6 +12,8 @@ ms.date: 02/23/2024
 
 This article is intended to help architects and developers make sound design decisions when they implement integration scenarios to and from [!INCLUDE[prod_short](../includes/prod_short.md)].
 
+:::image type="content" source="media/all-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/all-integrations-overview.svg":::
+
 The article describes integration patterns, integration scenarios, and integration solutions. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
 
 ## Integrations to/from Business Central are done with web services
@@ -37,16 +39,15 @@ For more information on how to explore and develop against APIs, best practices,
 
 [!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to Power Platform. Enabling integrations to Power Platform augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with more features. 
 
-<!-- to be added when all overview diagrams are ready
-:::image type="content" source="media/powerplatform-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/powerplatform-integrations.svg"::: -->
-
 [!INCLUDE [prod_short](../includes/prod_short.md)] integrates to the following Power Platform products and services:
 - Power Apps
 - Power Automate
 - Power BI
 - Power Pages
 
-For more information, see [Integrating Business Central with Microsoft 365](../powerplatform/powerplatform-integration-overview.md).
+:::image type="content" source="media/powerplatform-integrations.svg" alt-text="Shows how Business Central integrates to Power Platform" lightbox="media/powerplatform-integrations.svg"::: 
+
+For more information, see [Integrating Business Central with Power Platform](../powerplatform/powerplatform-integration-overview.md).
 
 
 ## Built-in: Integrating Business Central with Dataverse
