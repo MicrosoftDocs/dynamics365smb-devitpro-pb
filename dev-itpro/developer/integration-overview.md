@@ -33,50 +33,21 @@ When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] fr
 For more information on how to explore and develop against APIs, best practices, and which built-in APIs exist, see [REST API overview](../webservices/api-overview.md).
 
 
-## Business Central connector for Power Platform
+## Integrating Business Central with Power Platform
 
-A *connector* is a proxy or a wrapper around an API that allows the user of the connector to talk to the underlying service. [!INCLUDE[prod_short](../includes/prod_short.md)] has its own connector that allows Power Platform products such as Power Automate, Power Apps, and Logic apps to communicate with 
-[!INCLUDE[prod_short](../includes/prod_short.md)] through REST APIs (this is another reason for using REST APIs compared to OData/SOAP enabled pages/queries/codeunits).
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to Power Platform. Enabling integrations to Power Platform augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
 
-[![Shows how the Power Platform connector integrates to Business Central](media/power-platform-connector-diagram.svg)](media/power-platform-connector-diagram.svg#lightbox)
+<!-- to be added when all overview diagrams are ready
+:::image type="content" source="media/powerplatform-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/powerplatform-integrations.svg"::: -->
 
-For more information, see [Power Platform Connectors Overview](/connectors/connectors) and [Dynamics 365 Business Central Connector](/connectors/dynamicssmbsaas) in the Power Platform documentation.
+[!INCLUDE [prod_short](../includes/prod_short.md)] integrates to the following Power Platform products and services:
+- Power Apps
+- Power Automate
+- Power BI
+- Power Pages
 
-## Connector: Integrating Business Central with Microsoft Power Apps
+For more information, see [Integrating Business Central with Microsoft 365](../powerplatform/powerplatform-integration-overview.md).
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Apps by using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Platform. With Power Apps, you have the flexibility to build the perfect solution for your business domain&mdash;one that uses [!INCLUDE[prod_short](../includes/prod_short.md)] data and processes and maximizes your productivity. With Power Apps custom UI, AI builder, and augmented-reality (AR)/mixed-reality (MR) technologies, you can take your business to the next level with cutting-edge innovation and customized UI. 
-
-For more information, see [Integrating with Microsoft Power Apps overview](../powerplatform/power-apps-overview.md)
-
-## Connector: Integrating Business Central with Microsoft Power Automate
-
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Automate by using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Platform. With Power Automate, you can set up and use flows to connect business-process tasks performed by different users. System tasks, such as automatic posting, can be included as steps in flows, preceded or followed by user tasks. Requesting and granting approval to create new records are typical flow steps.
-
-For more information, see [Integrating with Microsoft Power Automate overview](../powerplatform/power-automate-overview.md)
-
-
-## Integrating Business Central with Microsoft Power BI
-
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power BI in two ways:
-
-- Connect a Power BI semantic model to [!INCLUDE[prod_short](../includes/prod_short.md)] to read data.
-- Embed a Power BI report, page, or visual in the [!INCLUDE[prod_short](../includes/prod_short.md)] client.
-
-### Connector: How to connect a Power BI semantic model to Business Central to read data
-
-[!INCLUDE[prod_short](../includes/prod_short.md)] integrates with Power BI through a connector using OData. The connector can read data from API pages/queries and from UI pages exposed as OData web services.
-
-:::image type="content" source="/dynamics365/business-central/media/power-bi-architecture.svg" alt-text="Image alt text." lightbox="/dynamics365/business-central/media/power-bi-architecture.svg":::
-
-For more information, see [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview).
-
-### How to embed a Power BI report, page, or visual in the Business Central client
-
-[!INCLUDE[prod_short](../includes/prod_short.md)] supports that a Power BI report, page, or visual can be embedded in the Business Central client by using an iframe. 
-
-There are two ways that a Power BI report, page, or visual can be added to a page in the [!INCLUDE[prod_short](../includes/prod_short.md)] client:
-1. A user can embed a Power BI report, page, or scorecard on pages that include a Power BI part. For more information, see [Working with Power BI Reports in Business Central](/dynamics365/business-central/across-working-with-powerbi).
-1. A developer can programatically add them from AL. For more information, see [Adding Power BI Report parts to pages](../developer/devenv-power-bi-report-parts.md).
 
 ## Built-in: Integrating Business Central with Dataverse
 
@@ -90,13 +61,6 @@ There are two ways that a Power BI report, page, or visual can be added to a pag
 :::image type="content" source="media/connect-to-dataverse.svg" alt-text="Shows the four interactions of DataVerse with Business Central" lightbox="media/connect-to-dataverse.svg":::
 
 For more information, see [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md).
-
-
-## Built-in: Integrating Business Central with Microsoft Power Pages (preview)
-
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Pages by using virtual tables in Dataverse. With Power Pages, you can allow unlicensed external users to access data stored in [!INCLUDE[prod_short](../includes/prod_short.md)] online.
-
-For more information, see [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md).
 
 
 ## Built-in: Integrating Business Central with Dynamics 365 Sales
