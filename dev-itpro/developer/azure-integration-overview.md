@@ -48,7 +48,7 @@ For more information, see [Azure Blob Services API](https://github.com/microsoft
 
 ## [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)]
 
-Use [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)] to take advantage of a fully-managed file share service in the cloud. The [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)] API module provides you with all the procedures you need to manage your [!INCLUDE[azure_files](includes/azure-files-name.md)] in [!INCLUDE[prod_short](includes/prod_short.md)]. [!INCLUDE[azure_files](includes/azure-files-name.md)] offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol, Network File System (NFS) protocol, and [!INCLUDE[azure_files](includes/azure-files-name.md)] REST API.
+Use [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)] to take advantage of a fully managed file share service in the cloud. The [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)] API module provides you with all the procedures you need to manage your [!INCLUDE[azure_files](includes/azure-files-name.md)] in [!INCLUDE[prod_short](includes/prod_short.md)]. [!INCLUDE[azure_files](includes/azure-files-name.md)] offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol, Network File System (NFS) protocol, and [!INCLUDE[azure_files](includes/azure-files-name.md)] REST API.
 
 The [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)] API module uses the REST API to provide you with all the procedures you need to manage your [!INCLUDE[azure_files](includes/azure-files-name.md)] in [!INCLUDE[prod_short](includes/prod_short.md)]. Azure file shares can be mounted by cloud or on-premises deployments for easy access to your [!INCLUDE[prod_short](includes/prod_short.md)] files. For directories in Azure File Share Services, use AL to list, create, delete, and rename them. For files in the directories, use AL to create, delete, upload, download, copy, and rename them. 
 
@@ -90,4 +90,4 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 [Using Azure Key Vault with apps/extensions](devenv-app-key-vault-overview.md)  
 [Azure Key Vault telemetry](../administration/telemetry-extension-key-vault-trace.md)  
 [Azure Virtual Networks: Restrict network access from/to Business Central with Azure security service tags](../security/security-service-tags.md)  
-[Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)  
+[Integrating AI using developer tools for Copilot](../developer/ai-integration-landing-page.yml)  
