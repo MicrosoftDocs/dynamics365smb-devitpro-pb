@@ -5,16 +5,16 @@ author: kennienp
 ms.reviewer: solsen
 ms.topic: overview
 ms.author: kepontop
-ms.date: 02/07/2024
+ms.date: 02/23/2024
 ---
 
 # Integrating Business Central with Azure services
 
-[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to Azure services from AL apps/extensions, both build into the AL runtime and from codeunits in the System Application. All integrations from AL code are implemented using the HttpClient datatype.
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to Azure services from AL apps/extensions, both build into the AL runtime and from codeunits in the System Application. All integrations from AL code are implemented using the [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md).
 
 :::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
-Here are some supported integrations between Business Central and Azure services:
+Here are some supported integrations between [!INCLUDE[prod_short](../includes/prod_short.md)] and Azure services:
 
 - [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]
 - [!INCLUDE[azure_blob_services](includes/azure-blob-services-name.md)]
@@ -48,7 +48,7 @@ For more information, see [Azure Blob Services API](https://github.com/microsoft
 
 ## [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)]
 
-Use [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)] to take advantage of a fully managed file share service in the cloud. The [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)] API module provides you with all the procedures you need to manage your [!INCLUDE[azure_files](includes/azure-files-name.md)] in [!INCLUDE[prod_short](includes/prod_short.md)]. [!INCLUDE[azure_files](includes/azure-files-name.md)] offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol, Network File System (NFS) protocol, and [!INCLUDE[azure_files](includes/azure-files-name.md)] REST API.
+Use [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)] to take advantage of a fully-managed file share service in the cloud. The [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)] API module provides you with all the procedures you need to manage your [!INCLUDE[azure_files](includes/azure-files-name.md)] in [!INCLUDE[prod_short](includes/prod_short.md)]. [!INCLUDE[azure_files](includes/azure-files-name.md)] offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol, Network File System (NFS) protocol, and [!INCLUDE[azure_files](includes/azure-files-name.md)] REST API.
 
 The [!INCLUDE[azure_file_services](includes/azure-file-services-name.md)] API module uses the REST API to provide you with all the procedures you need to manage your [!INCLUDE[azure_files](includes/azure-files-name.md)] in [!INCLUDE[prod_short](includes/prod_short.md)]. Azure file shares can be mounted by cloud or on-premises deployments for easy access to your [!INCLUDE[prod_short](includes/prod_short.md)] files. For directories in Azure File Share Services, use AL to list, create, delete, and rename them. For files in the directories, use AL to create, delete, upload, download, copy, and rename them. 
 
