@@ -20,6 +20,8 @@ An environment transfer is initiated by an internal administrator in the [!INCLU
 > [!IMPORTANT]
 > All environment transfer operations must be executed by internal administrators; this feature cannot be used by delegated administrators.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1htxY ]
+
 ## Create transfer on source tenant
 
 1. Authenicated as an internal administrator, navigate to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] in the source Entra tenant
