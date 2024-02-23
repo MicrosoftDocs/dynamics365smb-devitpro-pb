@@ -1530,7 +1530,8 @@
 
 <!-- Azure services -->
 ## Integrating with Azure services
-### [Overview](developer/azure-integration-overview.md)
+### [Overview](developer/integration-azure-overview.md)
+### [Integrating Business Central with Azure Application Insights](administration/telemetry-overview.md) 
 ### [Connecting to Azure Blob Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Blob%20Services%20API)  
 ### [Connecting to Azure File Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20File%20Services%20API)  
 ### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)
@@ -1538,6 +1539,18 @@
 ### [Connecting to Azure Key Vault](developer/devenv-app-key-vault-overview.md)
 ### [Azure Key Vault telemetry](administration/telemetry-extension-key-vault-trace.md)
 <!-- end Azure services -->
+
+<!-- Infrastructure services -->
+## Integrating with infrastructure services
+### [Overview](developer/integration-infrastructure-overview.md) 
+### [Manage users and licenses with Microsoft Entra](/dynamics365/business-central/ui-how-users-permissions#manage-users-and-licenses-in-online-tenants?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Set up multi-factor authentication (MFA) with Microsoft Entra](security/multifactor-authentication.md)  
+### [Control access to Business Central with Azure Security Groups](/dynamics365/business-central/ui-security-groups?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Restrict network access from/to Business Central Azure security service tags](security/security-service-tags.md)  
+### [Integrating Business Central with Azure Application Insights](administration/telemetry-overview.md)   
+### [Integrating Business Central with Microsoft 365 Universal Print](/dynamics365/business-central/admin-printer-setup-universal-print?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+<!-- end Infrastructure services -->
+
 ## Integrating with Shopify
 ### [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started)
 ### [Troubleshoot the Shopify connector](/dynamics365/business-central/shopify/troubleshoot)
