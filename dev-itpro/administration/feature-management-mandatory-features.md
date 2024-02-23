@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.date: 10/24/2023
+ms.date: 02/15/2024
 ms.custom: bap-template
 ms.collection:
   - bap-ai-copilot
@@ -61,19 +61,8 @@ Coming soon...
 
 |Feature  |Description  |
 |---------|---------|
-|[Feature Preview: Create AI-powered product descriptions with Copilot](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/drive-sales-ai-generated-product-descriptions) | Great products deserve great marketing, but authoring compelling product descriptions for dozens or even hundreds of similar products for your online store requires time, skill, and creativity. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] accelerates time to market with AI-generated product descriptions, right from where you manage your inventory. We've streamlined the end-to-end process, starting from uploading a picture to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], to AI-powered suggestions for marketing copy based on your product attributes such as color and material, to publishing that to your online store with just a few clicks. |
-
-|Feature  |Description  |
-|---------|---------|
 |[Feature: Enable using Form 1096 to transmit paper Tax Forms to the IRS in the United States](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/irs-1096-form-united-states)  |Form 1096 is used to transmit paper forms 1097, 1098, 1099, 3921, 3922, 5498, and W-2G to the IRS. You can now run the Form 1096 report and send it to the IRS if this is required for them. Because [!INCLUDE [prod_short](../developer/includes/prod_short.md)] reports only Form 1099, the new Form 1096 is related only to any already transmitted 1099 paper forms.  |
 
-|Feature  |Description  |
-|---------|---------|
-|[Feature Update: Legacy list views are hidden](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/legacy-list-views-are-hidden)  | Legacy views are list views that were created by developers in previous versions of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] by placing them on the role center page. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] displays legacy views side by side with modern views directly on the list page, but legacy views offer a degraded experience and fewer options compared to modern views.|
-
-|Feature  |Description  |
-|---------|---------|
-|[Feature Update: Auto-save with every field change](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)  | [!INCLUDE [prod_short](../developer/includes/prod_short.md)] immediately saves changes to individual fields as soon as you tab away from the field or set focus to another element on the page, instead of only saving when the page is closed. Changes are saved to the database without any noticeable impact to performance. |
 
 |Feature  |Description  |
 |---------|---------|
@@ -86,6 +75,18 @@ Coming soon...
 ### Features postponed from becoming mandatory in 2023 Release Wave 2
 
 The change to making these features mandatory is postponed. They aren't turned on by default and must be enabled manually. Use the links to learn more about them in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans.
+
+|Feature  |Description  |Expected to be mandatory release wave |
+|---------|---------|-|
+|[Feature: Create AI-powered product descriptions with Copilot](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/drive-sales-ai-generated-product-descriptions) | Great products deserve great marketing, but authoring compelling product descriptions for dozens or even hundreds of similar products for your online store requires time, skill, and creativity. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] accelerates time to market with AI-generated product descriptions, right from where you manage your inventory. We've streamlined the end-to-end process, starting from uploading a picture to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], to AI-powered suggestions for marketing copy based on your product attributes such as color and material, to publishing that to your online store with just a few clicks. |2024 release wave 1 |
+
+|Feature  |Description  |Expected to be mandatory release wave |
+|---------|---------|-|
+|[Feature Update: Legacy list views are hidden](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/legacy-list-views-are-hidden)  | Legacy views are list views that were created by developers in previous versions of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] by placing them on the role center page. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] displays legacy views side by side with modern views directly on the list page, but legacy views offer a degraded experience and fewer options compared to modern views.|2024 release wave 1 |
+
+|Feature  |Description  |Expected to be mandatory release wave |
+|---------|---------|-|
+|[Feature Update: Auto-save with every field change](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)  | [!INCLUDE [prod_short](../developer/includes/prod_short.md)] immediately saves changes to individual fields as soon as you tab away from the field or set focus to another element on the page, instead of only saving when the page is closed. Changes are saved to the database without any noticeable impact to performance. |2024 release wave 2 |
 
 |Feature  |Expected to be mandatory release wave |
 |---------|---------|

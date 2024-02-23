@@ -35,7 +35,7 @@ Telemetry for [!INCLUDE[prod_short](includes/prod_short.md)] can be defined in t
 
 When you create a custom telemetry trace signal, you can specify the *scope* of the event. The telemetry scope determines if the event is only sent to the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource specified in the extension's app.json or if the event is also sent to the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource of the environment where the extension is installed.
 
-<!-- INCLUDE DIAGRAM HERE -->
+:::image type="content" source="media/telemetry-scope.svg" alt-text="Shows how the scope property  works in Business Central app telemetry" lightbox="media/telemetry-scope.svg":::
 
 > [!NOTE]
 > Having [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources configured in your app.json is not required to define custom telemetry events in AL code. 
