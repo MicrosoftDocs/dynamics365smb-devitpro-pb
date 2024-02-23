@@ -119,7 +119,7 @@ Power users in [!INCLUDE [prod_short](../includes/prod_short.md)] can use [!INCL
 1. To change the layout of their outgoing documents
 1. To make it easy to mass communicate in print or email
 
-:::image type="content" source="media/connect-to-word.svg" alt-text="Shows how Business Central integrates to Outlook" lightbox="media/connect-to-word.svg":::
+:::image type="content" source="media/connect-to-word.svg" alt-text="Shows how Business Central integrates to Word" lightbox="media/connect-to-word.svg":::
 
 
 If an organization wants to change the layout of their outgoing documents such as quotes, sales orders, or sales invoices, a power user can use Word as the design tool changing the layout. When generating the document report, the [!INCLUDE [prod_short](../includes/prod_short.md)] server merges the Word layout with data and sends the resulting PDF document to the user as a downloaded file (or to a printer). For more information, see [Using Word for Document Report Layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout).
