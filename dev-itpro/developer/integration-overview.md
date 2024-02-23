@@ -5,7 +5,7 @@ author: kennienp
 ms.reviewer: solsen
 ms.topic: overview
 ms.author: kepontop
-ms.date: 02/05/2024
+ms.date: 02/23/2024
 ---
 
 # Integration overview for Business Central online
@@ -35,7 +35,7 @@ For more information on how to explore and develop against APIs, best practices,
 
 ## Integrating Business Central with Power Platform
 
-[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to Power Platform. Enabling integrations to Power Platform augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to Power Platform. Enabling integrations to Power Platform augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with more features. 
 
 <!-- to be added when all overview diagrams are ready
 :::image type="content" source="media/powerplatform-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/powerplatform-integrations.svg"::: -->
@@ -97,11 +97,11 @@ For more information, see [Integrating Business Central with Azure services](./i
 
 ## Integrating Business Central with infrastructure services
 
-[!INCLUDE[prod_short](../includes/prod_short.md)] integrate to a few fundamental infrastructure services for operations such as authentication, authoriation, auditing, telemetry, and printing.
+[!INCLUDE[prod_short](../includes/prod_short.md)] integrates to a few fundamental infrastructure services for operations such as authentication, authorization, auditing, telemetry, and printing.
 
 Here are some supported integrations between Business Central and fundamental services:
 
-- Authentication and Authorization: [!INCLUDE[microsoft_entra_name](includes/m365-entra-name.md)]
+- Authentication and authorization: [!INCLUDE[microsoft_entra_name](includes/m365-entra-name.md)]
 - Network security: [!INCLUDE[azure_security_service_tags_name](includes/azure-security-service-tags-name.md)]
 - Telemetry: [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]
 - Local printers: [!INCLUDE[m365_universal_print](../includes/universal-print-name.md)]
@@ -143,5 +143,5 @@ For more information, see [Integrating with Microsoft Teams overview](../develop
 [Integrating Business Central with Shopify](/dynamics365/business-central/shopify/get-started)  
 [Integrating to external services from AL using the HttpClient data type](../developer/devenv-httpclient.md)  
 [Integrating Business Central with Azure services](./integration-azure-overview.md)
-[Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)
+[Integrating AI using developer tools for Copilot](../developer/ai-integration-landing-page.yml)
 [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md)  
