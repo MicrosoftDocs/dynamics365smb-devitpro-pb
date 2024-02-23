@@ -166,7 +166,7 @@
 ### [Rename environments](administration/tenant-admin-center-environments-rename.md)
 ### [Export databases](administration/tenant-admin-center-database-export.md)
 ### [Restore an environment](administration/tenant-admin-center-backup-restore.md)
-### [Move an environment to another Microsoft Entra organization](administration/tenant-admin-center-environments-move.md)
+### [Transfer environments to another Microsoft Entra organization](administration/tenant-admin-center-environments-move.md)
 ### [Delete environments](administration/tenant-admin-center-environments-delete.md)
 ### [Environment telemetry](administration/tenant-admin-center-telemetry.md)
 ### Admin Center API
@@ -688,6 +688,7 @@
 #### Reading data
 ##### [Get, Find, and Next methods](developer/devenv-get-find-and-next-methods.md)
 ##### [Record instance isolation level](developer/devenv-read-isolation.md)
+##### [Using read scale-out for better performance](administration/database-read-scale-out-overview.md)
 ##### Partial records
 ###### [Using partial records](developer/devenv-partial-records.md)
 ###### [FAQ](developer/devenv-partial-records-faq.md)
@@ -892,18 +893,8 @@
 -->
 
 ### Handling security
-#### [Handling security overview](security/security-application.md)
-
-#### [Isolated storage](developer/devenv-isolated-storage.md)
-#### [Protecting sensitive values with the SecretText data type](developer/devenv-secret-text.md)
-
-#### Using Azure Key Vault for app secrets
-##### [Overview](developer/devenv-app-key-vault-overview.md)
-##### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
-##### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
-##### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
-##### [Analyzing app keyvault telemetry](administration/telemetry-extension-key-vault-trace.md)
-
+#### [Security for AL developers](security/security-developers.md)
+#### [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl)
 #### [Permission sets and entitlements overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 ##### [Permissionset object](developer/devenv-permissionset-object.md)
 ##### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
@@ -920,6 +911,18 @@
 ##### Permissions APIs
 ###### [Permission set](administration/resources/dynamics_permissionset.md)
 ###### [Get permission set](administration/api/dynamics_permissionset_get.md)
+##### System application reference (permissions)
+###### [Codeunit 'User Permissions'](/dynamics365/business-central/application/system-application/codeunit/system.security.user.user-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Page 'Effective Permissions'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Page 'Effective Permissions By Set'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions-by-set?toc=/dynamics365/business-central/dev-itpro/toc.json) 
+#### [Isolated storage](developer/devenv-isolated-storage.md)
+#### [Protecting sensitive values with the SecretText data type](developer/devenv-secret-text.md)
+#### Using Azure Key Vault for app secrets
+##### [Overview](developer/devenv-app-key-vault-overview.md)
+##### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
+##### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
+##### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
+##### [Analyzing app keyvault telemetry](administration/telemetry-extension-key-vault-trace.md)
 
 
 ### Running things in the background
@@ -1052,6 +1055,12 @@
 <!-- Data analytics and reporting -->
 ## Data analytics and reporting
 ### [Analyzing, pivoting, and sharing data in Business Central](developer/devenv-reporting-options-overview.md)
+### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
+### [Analyze data on lists and queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Queries in Business Central](developer/devenv-query-overview.md)  
+### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)
+### [Working with Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!-- end Data analytics and reporting -->
 
 ## Extensibility
@@ -1257,6 +1266,7 @@
 ### [Security overview](security/security-and-protection.md)
 ### [Tips for business users](security/security-users.md)
 ### [Application](security/security-application.md)
+### [Setting up Multifactor Authentication (MFA)](security/multifactor-authentication.md)
 ### [Online](security/security-online.md)
 ### [On-premises](security/security-onpremises.md)
 ### [Data security](security/data-security.md)
@@ -1458,7 +1468,7 @@
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end CDS -->
 
-<!-- Microsoft Power Automate -->
+
 ### Data virtualization
 #### [Integrate with Microsoft Dataverse via virtual tables](powerplatform/powerplat-overview.md)
 #### [Table modeling for virtual tables](powerplatform/powerplat-entity-modeling.md)
@@ -1466,72 +1476,62 @@
 #### [Business Central and Dataverse admin reference for virtual tables](powerplatform/powerplat-admin-reference.md)
 #### [FAQ for virtual tables](powerplatform/powerplat-faq.md)
 
-## Integrating with Microsoft Power Apps
-### [Overview](powerplatform/power-apps-overview.md)
-### [Application lifecycle management](powerplatform/power-apps-alm.md)
-### [Sample apps](powerplatform/power-apps-samples.md)
-### [Best practices](powerplatform/power-apps-best-practices.md)
-
-## Integrating with Microsoft Power Automate
-### [Overview](powerplatform/power-automate-overview.md)
-### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
-### [Create automated flows](powerplatform/automate-workflows.md)
-### [Create instant flows](powerplatform/instant-flows.md)
-### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
-
-## [Integrating with Microsoft Power Pages (preview)](developer/power-pages-on-virtual-tables-overview.md)
-
-<!-- Microsoft Power BI -->
-## Integrating with Microsoft Power BI
-### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
-### Administrator
-#### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview)
-#### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup)
-### Report creator
-#### [Get started: Build Power BI reports](/dynamics365/business-central/across-how-use-financials-data-source-powerbi)
-#### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
-
-### [Extract data from Business Central](developer/devenv-extract-data.md)
-### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
-### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
-<!-- end Microsoft Power BI -->
 
 <!-- Microsoft Power Platform -->
+## Integrating with Microsoft Power Platform
+### [Overview](powerplatform/powerplatform-integration-overview.md)
+<!-- Microsoft Power Apps -->
+### Integrating with Microsoft Power Apps
+#### [Overview](powerplatform/power-apps-overview.md)
+#### [Application lifecycle management](powerplatform/power-apps-alm.md)
+#### [Sample apps](powerplatform/power-apps-samples.md)
+#### [Best practices](powerplatform/power-apps-best-practices.md)
+
+<!-- Microsoft Power Automate -->
+### Integrating with Microsoft Power Automate
+#### [Overview](powerplatform/power-automate-overview.md)
+#### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
+#### [Create automated flows](powerplatform/automate-workflows.md)
+#### [Create instant flows](powerplatform/instant-flows.md)
+#### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
+
+<!-- Microsoft Power Pages -->
+### [Integrating with Microsoft Power Pages (preview)](developer/power-pages-on-virtual-tables-overview.md)
+
+<!-- Microsoft Power BI -->
+### Integrating with Microsoft Power BI
+#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+#### Administrator
+##### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview)
+##### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup)
+#### Report creator
+##### [Get started: Build Power BI reports](/dynamics365/business-central/#across-how-use-financials-data-source-powerbi)
+##### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
+
+#### [Extract data from Business Central](developer/devenv-extract-data.md)
+#### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
+#### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
+<!-- end Microsoft Power BI -->
+
 <!-- end Microsoft Power Platform -->
 
 ## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
 
-<!-- Microsoft M365 -->
-## Integrating with Microsoft 365
-### [Overview](developer/m365-integration-overview.md)
-### [Integrating with Onedrive for Business](/dynamics365/business-central/across-onedrive-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel?toc=/dynamics365/business-central/dev-itpro/toc.json)  
-### [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report?toc=/dynamics365/business-central/dev-itpro/toc.json)  
-### [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
-### [Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)  
-### [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook?toc=/dynamics365/business-central/dev-itpro/toc.json)  
-### [Integrating with SharePoint (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint)  
-
 <!-- Microsoft Teams -->
-### Integrating with Microsoft Teams
-#### [Overview](developer/devenv-develop-for-teams.md)
-#### [Extend Teams cards](developer/devenv-develop-for-teams-cards.md)
-#### Tabs
-##### [Add Business Central tabs](developer/devenv-develop-for-teams-tabs.md)
-##### [Add and remove recommended content](developer/devenv-develop-for-teams-tab-content.md)
-##### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
-#### [FAQ](developer/devenv-dev-faq-teams.md)
+## Integrating with Microsoft Teams
+### [Overview](developer/devenv-develop-for-teams.md)
+### [Extend Teams cards](developer/devenv-develop-for-teams-cards.md)
+### Tabs
+#### [Add Business Central tabs](developer/devenv-develop-for-teams-tabs.md)
+#### [Add and remove recommended content](developer/devenv-develop-for-teams-tab-content.md)
+### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
+### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
-
-### [Using Word Templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)  
-### [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge?toc=/dynamics365/business-central/dev-itpro/toc.json)  
-
-<!-- end Microsoft M365 -->
-
 
 <!-- Azure services -->
 ## Integrating with Azure services
-### [Overview](developer/azure-integration-overview.md)
+### [Overview](developer/integration-azure-overview.md)
+### [Integrating Business Central with Azure Application Insights](administration/telemetry-overview.md) 
 ### [Connecting to Azure Blob Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Blob%20Services%20API)  
 ### [Connecting to Azure File Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20File%20Services%20API)  
 ### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)
@@ -1539,6 +1539,18 @@
 ### [Connecting to Azure Key Vault](developer/devenv-app-key-vault-overview.md)
 ### [Azure Key Vault telemetry](administration/telemetry-extension-key-vault-trace.md)
 <!-- end Azure services -->
+
+<!-- Infrastructure services -->
+## Integrating with infrastructure services
+### [Overview](developer/integration-infrastructure-overview.md) 
+### [Manage users and licenses with Microsoft Entra](/dynamics365/business-central/ui-how-users-permissions#manage-users-and-licenses-in-online-tenants?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Set up multi-factor authentication (MFA) with Microsoft Entra](security/multifactor-authentication.md)  
+### [Control access to Business Central with Azure Security Groups](/dynamics365/business-central/ui-security-groups?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Restrict network access from/to Business Central Azure security service tags](security/security-service-tags.md)  
+### [Integrating Business Central with Azure Application Insights](administration/telemetry-overview.md)   
+### [Integrating Business Central with Microsoft 365 Universal Print](/dynamics365/business-central/admin-printer-setup-universal-print?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+<!-- end Infrastructure services -->
+
 ## Integrating with Shopify
 ### [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started)
 ### [Troubleshoot the Shopify connector](/dynamics365/business-central/shopify/troubleshoot)
