@@ -1,6 +1,6 @@
 ---
-title: Integrating with Microsoft 365 
-description: Learn how to integrate Business Central with Microsoft 365.
+title: Integrating with Office apps and Microsoft 365 
+description: Learn how to integrate Business Central with Office apps and Microsoft 365.
 author: kennienp
 ms.reviewer: solsen
 ms.topic: overview
@@ -8,9 +8,9 @@ ms.author: kepontop
 ms.date: 02/10/2024
 ---
 
-# Integrating Business Central with [!INCLUDE[m365](includes/m365-name.md)]
+# Integrating Business Central with Office apps [!INCLUDE[m365](includes/m365-name.md)]
 
-[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)], augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)], augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features, and also augments [!INCLUDE[m365](includes/m365-name.md)] apps with new features so that users can stay in the flow of work and get access to the right data at the right time from the app they prefer working with. Along with built-in integration, [!INCLUDE [prod_short](../includes/prod_short.md)] offers additional ways for you to integrate with [!INCLUDE[m365](includes/m365-name.md)] apps using APIs.
 
 :::image type="content" source="media/m365-integrations-detail.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/m365-integrations-detail.svg":::
 
@@ -22,12 +22,13 @@ In this article, we introduce some of these additional features.
 
 1. Viewing and/or editing [!INCLUDE [prod_short](../includes/prod_short.md)] data in Excel.
 1. To support analytical reporting.
+1. Developers can write AL code and use the System app module to create or read Excel files.
 
 :::image type="content" source="media/connect-to-excel.svg" alt-text="Shows how Business Central integrates to Excel" lightbox="media/connect-to-excel.svg":::
 
 With pages that display a list of records in rows and columns, like a list of customers, sale orders, or invoices, users can export the list to [!INCLUDE[m365_excel](includes/m365-excel-name.md)], and view it there. Depending on the page, two options exists: 
 - *Open in Excel*, where the [!INCLUDE [prod_short](../includes/prod_short.md)] platform produces an Excel workbook with the data as read-only.
-- *Edit in Excel*, which use the [!INCLUDE [prod_short](../includes/prod_short.md)] add-in for Excel. The Excel add-in reads data from [!INCLUDE [prod_short](../includes/prod_short.md)] using the page exposed as an OData web service endpoint. Any data updates are also done through this web service endpoint.
+- *Edit in Excel*, which use the [!INCLUDE [prod_short](../includes/prod_short.md)] add-in for Excel. The Excel add-in reads data from [!INCLUDE [prod_short](../includes/prod_short.md)] using the page exposed as an OData web service endpoint. Any writes back to [!INCLUDE [prod_short](../includes/prod_short.md)] are also done through this web service endpoint.
 
 For more information, see [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel).
 
@@ -57,7 +58,7 @@ For more information, see [Microsoft Graph (System Application reference)](https
 
 [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)] is a cloud storage service that is included in Microsoft 365. [!INCLUDE[prod_short](../includes/prod_short.md)] makes it easy to store, manage, and share files with other people through OneDrive. 
 
-When [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)] is enabled in [!INCLUDE[prod_short](../includes/prod_short.md)], additional functionality becomes available such as 
+When [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)] is enabled in [!INCLUDE[prod_short](../includes/prod_short.md)] by an administrator, additional functionality becomes available such as 
 
 - New actions *Open in OneDrive* and *Share* actions are now available on most pages where files are available, such as the Report Inbox or where files are attached to records. 
 - The *Open in Excel* and *Edit in Excel* actions on list pages will automatically copy the Excel file to OneDrive, then open it in Excel Online. 
@@ -65,11 +66,12 @@ When [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-n
 
 :::image type="content" source="media/connect-to-onedrive.svg" alt-text="Shows how Business Central integrates to Onedrive" lightbox="media/connect-to-onedrive.svg":::
 
-
-For more information, see [Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview).
+Developers can also write AL code to integrate with OneDrive and add actions such as Open, Share or Edit to their own pages whenever files are used. For more information, see [Extending Document Sharing and OneDrive for Business Integration](devenv-extending-document-sharing-onedrive.md).
 
 > [!NOTE]
 > With [!INCLUDE[prod_short](../includes/prod_short.md)] online, the connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and OneDrive is automatically configured, and the OneDrive features are readily available to users by default. With [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises, it requires more set. For more information, see [Managing OneDrive Integration with Business Central](/dynamics365/business-central/admin-onedrive-integration).
+
+For more information, see [Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview).
 
 
 ## Using [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)] with [!INCLUDE [prod_short](../includes/prod_short.md)]
@@ -115,7 +117,7 @@ Power users in [!INCLUDE [prod_short](../includes/prod_short.md)] can use [!INCL
 
 
 1. To change the layout of their outgoing documents
-1. To can make it easy to mass communicate in print or email
+1. To make it easy to mass communicate in print or email
 
 :::image type="content" source="media/connect-to-word.svg" alt-text="Shows how Business Central integrates to Outlook" lightbox="media/connect-to-word.svg":::
 
@@ -133,7 +135,8 @@ To make it easy to mass communicate in print or email, power users can use mail 
 [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel)  
 [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  
 [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
-[Integrating with Onedrive for Business overview](/dynamics365/business-central/across-onedrive-overview)  
+[Integrating with Onedrive for Business overview (for administrators)](/dynamics365/business-central/across-onedrive-overview)  
+[Extending Document Sharing and OneDrive for Business Integration (for developers)](devenv-extending-document-sharing-onedrive.md)  
 [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook)  
 [Integrating with SharePoint (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint)  
 [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md)   
