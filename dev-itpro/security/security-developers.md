@@ -1,17 +1,16 @@
 ---
-title: "Business Central security for AL developers"
-description: Helps you understand and improve the security of your Business Central apps.
+title: Business Central security for AL developers
+description: Understand and improve the security of your Business Central apps written in AL.
 ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.date: 02/23/2024
+ms.reviewer: solsne
 ms.topic: conceptual
 author: kennienp
 ---
 
 # Business Central security for AL developers
 
-This article helps you understand and improve the security of your Business Central app regardless of where it's hosted. In the sections listed below, you'll find guidance and recommended security best practices related to your app development lifecycle, and what you as an AL developer need to know about authentication, authorization, auditing, and data encryption and secrets management.
-
+This article helps you understand and improve the security of your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] app regardless of where it's hosted. In the following sections, you find guidance and recommended security best practices related to your app development lifecycle, and to what you as an AL developer need to know about authentication, authorization, auditing, and data encryption and secrets management.
 
 ## Security development lifecycle (SDL)
 
@@ -26,23 +25,23 @@ For more information, see [Security Development Lifecycle](https://www.microsoft
 
 ![Security overview.](../developer/media/security-overview.png "Security overview")
 
-From AL, you can only impact the license and permission checks in the authorization layer. If you develop integrations with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP based webservice endpoints, you also need to know how to deal with authentication for webservice sessions.
+From AL, you can only affect the license and permission checks in the authorization layer. If you develop integrations with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP based web service endpoints, you also need to know how to deal with authentication for web service sessions.
 
 ## Authentication for AL developers
 
-Before a session can be created for a user in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server, the session must be authenticated as a valid user in the system. Business Central (on-premises) supports several authentication methods, such as Windows and Microsoft Entra ID . Business Central online deployments use Microsoft Entra ID only. 
+Before a session can be created for a user in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server, the session must be authenticated as a valid user in the system. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (on-premises) supports several authentication methods, such as Windows and Microsoft Entra ID. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online deployments use Microsoft Entra ID only. 
 
 The following table includes links to help you understand authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 |To      |See      | 
 |--------|---------| 
 | Learn about user session authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. | [Authentication in Business Central](./security-application.md#authentication) |
-| Learn about webservice session authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP based webservice endpoints. | [Authentication with OAuth](../webservices/authenticate-web-services-using-oauth.md) <br><br> [Web Services Authentication (on-premises)](../webservices/web-services-authentication.md) <br><br> [Service-to-service authentication](../administration/automation-apis-using-s2s-authentication.md) |
+| Learn about web service session authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP based web service endpoints. | [Authentication with OAuth](../webservices/authenticate-web-services-using-oauth.md) <br><br> [Web Services Authentication (on-premises)](../webservices/web-services-authentication.md) <br><br> [Service-to-service authentication](../administration/automation-apis-using-s2s-authentication.md) |
 
 
 ## Authorization for AL developers
 
-After a session is authenticated, the authorization step determines which areas the user of the session can access, such as code they can run, pages and reports they can open, and the permissions they have on associated data. 
+After a session is authenticated, the authorization step determines which areas the user of the session can access, such as code they can run, pages, and reports they can open, and the permissions they have on associated data. 
 
 The following table includes links to help you understand authorization in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from the developer point of view.
 
@@ -71,7 +70,7 @@ The following table includes links to help you understand auditing in [!INCLUDE[
 
 ## Encryption of data and secrets management for AL developers
 
-Sensitive data in your application needs to be incrypted at rest, in transit, and in memory, and your app secrets should always be stored and processed in a safe manner.
+Sensitive data in your application needs to be encrypted at rest, in transit, and in memory, and your app secrets should always be stored and processed in a safe manner.
 
 The following table includes links to help you understand encryption in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as seen from the developer point of view.
 
@@ -79,12 +78,12 @@ The following table includes links to help you understand encryption in [!INCLUD
 |--------|---------| 
 | Understand encryption at rest for data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. | [Data isolation and encryption (online)](./security-online.md#data-isolation-and-encryption)  <br><br> [Data isolation and encryption (on-premises)](../developer/devenv-encrypting-data.md) |
 | Learn how to encrypt data in transit when calling external services from AL. | [Supported cipher suites in HTTPS](../developer/devenv-supported-cipher-suites.md) |
-| Learn how to encrypt data in transit when calling [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP based webservice endpoints. | [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only supports HTTPS for webservice endpoints. <br><br> For on-premises installations, see [Configuring SSL (on-premises)](../deployment/configure-ssl-web-client-connection.md) |
+| Learn how to encrypt data in transit when calling [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP based web service endpoints. | [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only supports HTTPS for web service endpoints. <br><br> For on-premises installations, see [Configuring SSL (on-premises)](../deployment/configure-ssl-web-client-connection.md) |
 | To learn how to use the Isolated Storage feature to provide data isolation between extensions. | [Isolated storage](../developer/devenv-isolated-storage.md) |
 | To learn how to encrypt data in memory (to protect sensitive data from being exposed through the AL debugger when doing regular or snapshot debugging, or when an administrator takes a memory dump of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server process). |[Protecting sensitive values with the SecretText data type](../developer/devenv-secret-text.md)|
 | To safely store secrets for your app and retrieve them from AL. | [Using Azure Key Vault for app secrets](../developer/devenv-app-key-vault-overview.md) |
 
 
-## See Also  
+## See also  
 
-[General security overview](security-and-protection.md)   
+[General security overview](security-and-protection.md)  
