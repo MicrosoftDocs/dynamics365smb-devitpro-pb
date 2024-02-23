@@ -126,6 +126,17 @@ You can specify the same or another key when creating more tenants:
 New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
 ```
 
+## Troubleshooting setup of telemetry
+
+If you have setup telemetry but do not get any data in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], then take a look at these common mistakes that others have done.
+
+1. Check that you have used the correct [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] connection string. 
+1. Check that you enabled telemetry in the correct environment.
+1. (only for on-premises) Check that network traffic from BC to AI is not blocked by firewall or some software that is filtering outgoing calls to the ingestion endpoint. 
+1. (only for on-premises) Similar to checking network traffic, check if you block DNS to lookup Azure resources. 
+1. (only for on-premises) Did you restart NSTs after enabling telemetry?
+
+
 ## Assign a telemetry ID to users
 
 To help troubleshooting problems experienced by a given Business Central user, you can assign the user a random ID that will be included in traces logged in Application Insights. This ID is a special GUID that's only used for telemetry. It will appear in the `user_Id` column in certain events, but not all. Specifically, it's used only in telemetry that the Business Central service/server emits in the context of a user session. So, for example, telemetry that the Business Central Web server emits won't include this ID.
