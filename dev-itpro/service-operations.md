@@ -110,13 +110,7 @@ These features have enabled the [!INCLUDE [prod_short](includes/prod_short.md)] 
 
 ## See also
 
-[FAQ for Dynamics 365 Business Central](faq.yml)  
-[Administration of Business Central Online](administration/tenant-administration.md)  
-[Technical Support for Business Central](technical-support.md)  
-[Escalating support issues to Microsoft](administration/manage-technical-support.md#escalating-support-issues-to-microsoft)  
-[Data and access when a trial or subscription ends](administration/tenant-administration.md#expire)  
-[Azure global infrastructure](https://azure.microsoft.com/global-infrastructure)  
-[Azure reliability](https://azure.microsoft.com/features/reliability/)  
-[Microsoft Service Trust](https://servicetrust.microsoft.com/)  
+[Service overview](service-overview.md)  
+[Service operations](service-operations.md)  
 
 [!INCLUDE [footer-banner](includes/footer-banner.md)]
