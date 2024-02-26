@@ -40,6 +40,7 @@ Historical data also shows a very high degree of database scaling efficiency. 99
 ## Business continuity and disaster recovery (BCDR)
 
 Business Central Online financially guarantees 99,9% up-time for its paid production environments, where customers are entitled to financial compensation if the service does not deliver on this promise. Built-in redundancy implemented on many levels of the service, automated failover and rollback mechanisms, rigid and granular backup policy, as well as historical data, show that it has been able to consistently maintain this level of availability. Read how Business Central Online supports business continuity here.  -->
+
 ## Throughput  
 
 Within a typical working week, the service manages over 2B API calls, close to 1B UI interactions and nearly 4B server sessions.
