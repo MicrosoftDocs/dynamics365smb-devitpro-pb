@@ -3,7 +3,7 @@ title: Operation Limits in Dynamics 365 Business Central
 description: Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments.
 author: swinarko
 ms.custom: bap-template
-ms.date: 01/29/2024
+ms.date: 02/26/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: sawinark
@@ -185,6 +185,10 @@ No. These operational limits are applied to all users in the same way.
 ### Do more users mean more throughput per environment?
 
 Yes, you can increase throughput by distributing your workload across multiple users. The more users you have in your environment, the more resources you can simultaneously consume in it, as long as we can continuously scale our resources. If a lot of resources are consumed at the same time and we couldn't sufficiently scale our resources, you might experience delays/throttling in consuming your resources.
+
+### Why are my OData/SOAP requests throttled when the current per-user speed/rate limits are much higher than the previous per-environment speed/rate limits?
+
+Your OData/SOAP requests will be throttled if they exceed the current per-user speed/rate limits that are strictly enforced. They might not have been throttled in the past even if they exceeded the previous per-environment speed/rate limits, because those limits weren't strictly enforced. They served as recommendations or warnings for you to implement a retry logic with a cool off period that should already be in place. For more information, see [Working with API Rate Limits](../api-reference/v2.0/dynamics-rate-limits.md).
 
 ## See also
 

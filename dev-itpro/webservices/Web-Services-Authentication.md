@@ -7,6 +7,7 @@ ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---
+
 # Web Services Authentication
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
