@@ -88,7 +88,7 @@ Get an overview of new and upcoming changes in the [Dynamics 365 release plans](
 
 [Scalability](service-scalability.md)  
 [Service operations](service-operations.md)  
-
+  
 [FAQ for Dynamics 365 Business Central](faq.yml)  
 [Administration of Business Central Online](administration/tenant-administration.md)  
 [Technical Support for Business Central](technical-support.md)  
