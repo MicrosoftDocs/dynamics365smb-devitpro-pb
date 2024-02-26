@@ -12,12 +12,11 @@ ms.custom: bap-template #Required; don't change.
 
 # Scalability
 
-In the rapidly evolving landscape of technology-driven businesses, finding a business management solution that seamlessly adapts to your organization's growth is paramount. Modern SMBs are looking for a solution that doesn't just meet but anticipates the evolving needs of businesses in today's dynamic marketplace.
-Microsoft Dynamics 365 Business Central Online is a cloud-based ERP software solution for small and mid-sized organizations. It was launched in April 2018 and has since onboarded more than 30K customers working in professional services, consumer goods, manufacturing, retail, health, hospitality, transport and logistics, finance, and dozens more industries. It has become a mature, battle-tested solution that understands the intricacies of modern business operations in the areas of security, scalability, performance, resilience, and high availability. Business Central is running globally in 174 countries, out of 21 Microsoft Azure regions.
+In the rapidly evolving landscape of technology-driven businesses, finding a business management solution that seamlessly adapts to your organization's growth is paramount. Modern SMBs are looking for a solution that doesn't just meet but anticipates the evolving needs of businesses in today's dynamic marketplace. Microsoft Dynamics 365 Business Central Online is a cloud-based ERP software solution for small and mid-sized organizations. It was launched in April 2018 and has since onboarded more than 30K customers working in professional services, consumer goods, manufacturing, retail, health, hospitality, transport and logistics, finance, and dozens more industries. It has become a mature, battle-tested solution that understands the intricacies of modern business operations in the areas of security, scalability, performance, resilience, and high availability. Business Central is running globally in 174 countries, out of 21 Microsoft Azure regions.
 
 The team that develops the Business Central product itself is the same team responsible for running and managing the Business Central Online service. It has first-hand knowledge of all its components.
 
-The service is built from the ground up as a multi-tenant service, comprised of multiple microservices running on the Microsoft Azure cloud ecosystem. It’s built on leading technologies such as React, TypeScript, .NET Core, Azure OpenAI, Microsoft Entra, Azure Functions, Containers, Load Balancers, Virtual Machine Scale Sets, Cosmos DBs, Key Vaults, Service Bus, Traffic Managers, SignalR, Web Sockets, and many more.
+The service is built from the ground up as a multi-tenant service, comprised of multiple microservices running on the Microsoft Azure cloud ecosystem. It's built on leading technologies such as React, TypeScript, .NET Core, Azure OpenAI, Microsoft Entra, Azure Functions, Containers, Load Balancers, Virtual Machine Scale Sets, Cosmos DBs, Key Vaults, Service Bus, Traffic Managers, SignalR, Web Sockets, and many more.
 
 <!-- image Diagram schematically depicting scalability elements of BC service-->
 
@@ -37,10 +36,10 @@ During only 0.19% (or 2 minutes and 20 seconds) of these 1,200 minutes, the user
 
 Historical data also shows a very high degree of database scaling efficiency. 99.85% of all databases had enough resources and never exceeded safe thresholds. Only 0.05% of databases were running above the safe thresholds for longer than 1% of the time. Business Central team is constantly monitoring these metrics and tuning the scaling and balancing algorithms to get even better results.  
 
-Business continuity and disaster recovery (BCDR)
+<!-->
+## Business continuity and disaster recovery (BCDR)
 
-Business Central Online financially guarantees 99,9% up-time for its paid production environments, where customers are entitled to financial compensation if the service does not deliver on this promise. Built-in redundancy implemented on many levels of the service, automated failover and rollback mechanisms, rigid and granular backup policy, as well as historical data, show that it has been able to consistently maintain this level of availability. Read how Business Central Online supports business continuity here.  
-
+Business Central Online financially guarantees 99,9% up-time for its paid production environments, where customers are entitled to financial compensation if the service does not deliver on this promise. Built-in redundancy implemented on many levels of the service, automated failover and rollback mechanisms, rigid and granular backup policy, as well as historical data, show that it has been able to consistently maintain this level of availability. Read how Business Central Online supports business continuity here.  -->
 ## Throughput  
 
 Within a typical working week, the service manages over 2B API calls, close to 1B UI interactions and nearly 4B server sessions.
