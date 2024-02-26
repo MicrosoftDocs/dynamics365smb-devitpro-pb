@@ -134,7 +134,7 @@ If you set up telemetry but don't get any data in [!INCLUDE[appinsights](../incl
 1. Check that you enabled telemetry in the correct environment.
 1. (Only for on-premises) Check that network traffic from [!INCLUDE [prod_short](../includes/prod_short.md)]  to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] isn't blocked by a firewall or some software that is filtering outgoing calls to the ingestion endpoint. 
 1. (Only for on-premises) Similar to checking network traffic, check if you block DNS to lookup Azure resources. 
-1. (Only for on-premises) Did you restart [!INCLUDE [server](../includes/server.md)] unstances after enabling telemetry?
+1. (Only for on-premises) Did you restart [!INCLUDE [server](../developer/includes/server.md)] unstances after enabling telemetry?
 
 
 ## Assign a telemetry ID to users
