@@ -1,16 +1,16 @@
 ---
 title: Service operations
-description: Concept description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: conceptual #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+description: Learn about the operations done to keep Business Central optimized and reliable.
+author: dmc-dk
+ms.author: dmitrych 
+ms.reviewer: jswymer 
+ms.topic: conceptual 
+ms.collection: 
 ms.date: 02/22/2024
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
 
-# Service operations and reliability engineering
+# Service operations
 
 [!INCLUDE[prod_short](includes/prod_short.md)] runs globally in many Microsoft Azure datacenters. All parts of the infrastructure and services are continually monitored and optimized to deliver the best possible experience. Most service operations and optimizations happen without users being aware of them. In some situations, user interaction is needed, like reconnecting to [!INCLUDE[prod_short](includes/prod_short.md)] or refreshing the browser. Users will be notified directly in the browser if any action is required on their part. Users are asked to take action before the optimizations are applied on the service. This way, they can continue to work without further interruptions. Service operations happen all day, every day, to always provide best experience.
 

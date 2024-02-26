@@ -1,29 +1,15 @@
 ---
-title: Concept topic template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: Concept description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: conceptual #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+title: Business Central Online Scalability
+description: Leran about Business Central Online ability to provide resource elasticity through real-time data driven auto-scaling and dynamic load distribution to support these needs.
+author: dmc-dk
+ms.author: dmitrych 
+ms.reviewer: jswymer
+ms.topic: conceptual 
+ms.collection: 
 ms.date: 02/22/2024
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
-
-# Scalability
-
-In the rapidly evolving landscape of technology-driven businesses, finding a business management solution that seamlessly adapts to your organization's growth is paramount. Modern SMBs are looking for a solution that doesn't just meet but anticipates the evolving needs of businesses in today's dynamic marketplace. Microsoft Dynamics 365 Business Central Online is a cloud-based ERP software solution for small and mid-sized organizations. It was launched in April 2018 and has since onboarded more than 30K customers working in professional services, consumer goods, manufacturing, retail, health, hospitality, transport and logistics, finance, and dozens more industries. It has become a mature, battle-tested solution that understands the intricacies of modern business operations in the areas of security, scalability, performance, resilience, and high availability. Business Central is running globally in 174 countries, out of 21 Microsoft Azure regions.
-
-The team that develops the Business Central product itself is the same team responsible for running and managing the Business Central Online service. It has first-hand knowledge of all its components.
-
-The service is built from the ground up as a multi-tenant service, comprised of multiple microservices running on the Microsoft Azure cloud ecosystem. It's built on leading technologies such as React, TypeScript, .NET Core, Azure OpenAI, Microsoft Entra, Azure Functions, Containers, Load Balancers, Virtual Machine Scale Sets, Cosmos DBs, Key Vaults, Service Bus, Traffic Managers, SignalR, Web Sockets, and many more.
-
-[![Diagram depicting depicting scalability elements of Business Central service.](developer/media/scalability.png)](developer/media/scalability.png#lightbox) 
-
-
-Azure SQL Database, Microsoft's cloud-based relational database service, is used as the best-of-breed service for transactional workloads of Business Central. Azure SQL Database is always running on the latest stable version of the SQL Server database engine and patched OS, with 99.99% availability. Working behind the scenes, it provides Business Central with the following benefits: high availability, rich business continuity and disaster recovery options, backup and restore options, advanced performance analyses and tuning capabilities, schema management, efficient resource utilization, dynamic scalability features to accommodate fluctuating workloads, robust security protocols to safeguard sensitive data, and much more.  
-
-## Scalability
+# Business Central Online Scalability
 
 Business Central Online manages diverse customers of different sizes and complexity, with load patterns fluctuating based on the time of the day, seasonality, the number of active users, active external integrations, and various other factors. One of the key strengths of Business Central Online is its ability to provide resource elasticity through real-time data driven auto-scaling and dynamic load distribution to support these needs.
 
