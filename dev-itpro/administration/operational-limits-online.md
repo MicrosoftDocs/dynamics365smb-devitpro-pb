@@ -3,7 +3,7 @@ title: Operation Limits in Dynamics 365 Business Central
 description: Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments.
 author: swinarko
 ms.custom: bap-template
-ms.date: 01/29/2024
+ms.date: 02/26/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: sawinark
@@ -188,7 +188,7 @@ Yes, you can increase throughput by distributing your workload across multiple u
 
 ### Why are my OData/SOAP requests throttled when the current per-user speed/rate limits are much higher than the previous per-environment speed/rate limits?
 
-Your OData/SOAP requests will be throttled if they exceed the current per-user speed/rate limits that are strictly enforced.  They might not have been throttled in the past even if they had exceeded the previous per-environment speed/rate limits, because those limits weren't strictly enforced and served as recommendations/warnings for you to implement a retry logic with cool off period that should already be in place, see [Working with API Rate Limits](../api-reference/v2.0/dynamics-rate-limits.md).
+Your OData/SOAP requests will be throttled if they exceed the current per-user speed/rate limits that are strictly enforced. They might not have been throttled in the past even if they exceeded the previous per-environment speed/rate limits, because those limits weren't strictly enforced. They served as recommendations or warnings for you to implement a retry logic with a cool off period that should already be in place. For more information, see [Working with API Rate Limits](../api-reference/v2.0/dynamics-rate-limits.md).
 
 ## See also
 
