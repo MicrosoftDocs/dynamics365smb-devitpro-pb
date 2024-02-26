@@ -18,7 +18,8 @@ The team that develops the Business Central product itself is the same team resp
 
 The service is built from the ground up as a multi-tenant service, comprised of multiple microservices running on the Microsoft Azure cloud ecosystem. It's built on leading technologies such as React, TypeScript, .NET Core, Azure OpenAI, Microsoft Entra, Azure Functions, Containers, Load Balancers, Virtual Machine Scale Sets, Cosmos DBs, Key Vaults, Service Bus, Traffic Managers, SignalR, Web Sockets, and many more.
 
-<!-- image Diagram schematically depicting scalability elements of BC service-->
+[![Diagram depicting depicting scalability elements of Business Central service.](../developer/media/scalability.png)](../developer/media/scalability.png#lightbox) 
+
 
 Azure SQL Database, Microsoft's cloud-based relational database service, is used as the best-of-breed service for transactional workloads of Business Central. Azure SQL Database is always running on the latest stable version of the SQL Server database engine and patched OS, with 99.99% availability. Working behind the scenes, it provides Business Central with the following benefits: high availability, rich business continuity and disaster recovery options, backup and restore options, advanced performance analyses and tuning capabilities, schema management, efficient resource utilization, dynamic scalability features to accommodate fluctuating workloads, robust security protocols to safeguard sensitive data, and much more.  
 
