@@ -3,9 +3,7 @@ title: "FileUploadRowAction Property"
 description: "Specifies the File Upload Action to be invoked when a file is uploaded to the row."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/09/2024
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

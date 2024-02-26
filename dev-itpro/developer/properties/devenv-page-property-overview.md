@@ -3,9 +3,7 @@ title: "Page, Page Fields, and Page Extension Properties"
 description: "This topic lists properties that apply to the [page object](../devenv-page-object.md), page fields, and [page extension object](../devenv-page-ext-object.md)."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/09/2024
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -90,7 +88,7 @@ The following properties all apply to the Page object, only some of these proper
 |[Importance Property](devenv-importance-property.md)| True| -Page Label <br />  -Page Field <br /> |
 |[IndentationColumn Property](devenv-indentationcolumn-property.md)| True| -Page Group <br /> |
 |[IndentationControls Property](devenv-indentationcontrols-property.md)| True| -Page Group <br /> |
-|[InFooterBar Property](devenv-infooterbar-property.md)| True| -Page Action <br /> |
+|[InFooterBar Property](devenv-infooterbar-property.md)| True| -Page Action <br />  -Page File Upload Action <br /> |
 |[InherentEntitlements Property](devenv-inherententitlements-property.md)| | -Query <br />  -Report <br />  -Xml Port <br />  -Table <br />  -Codeunit <br />  -Page <br /> |
 |[InherentPermissions Property](devenv-inherentpermissions-property.md)| | -Query <br />  -Report <br />  -Xml Port <br />  -Table <br />  -Codeunit <br />  -Page <br /> |
 |[InsertAllowed Property](devenv-insertallowed-property.md)| | -Page <br />  -Request Page <br /> |

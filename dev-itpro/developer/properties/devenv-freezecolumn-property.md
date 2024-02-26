@@ -3,9 +3,7 @@ title: "FreezeColumn Property"
 description: "Specifies the columns in a list that remain in view on a page, even when you scroll right."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/09/2024
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

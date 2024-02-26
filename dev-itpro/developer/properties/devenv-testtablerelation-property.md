@@ -3,9 +3,7 @@ title: "TestTableRelation Property"
 description: "Sets whether to include this field when evaluating field relations between primary and secondary indexes."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/09/2024
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

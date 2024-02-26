@@ -3,9 +3,7 @@ title: "DefaultNamespace Property"
 description: "Specifies the default namespace for both the IMPORT function (XmlPort) and EXPORT function (XmlPort) functions."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/09/2024
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
