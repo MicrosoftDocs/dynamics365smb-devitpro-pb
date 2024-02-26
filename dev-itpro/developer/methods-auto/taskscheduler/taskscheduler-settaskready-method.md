@@ -3,8 +3,8 @@ title: "TaskScheduler.SetTaskReady(Guid [, DateTime]) Method"
 description: "Sets a task that runs a codeunit to the ready state."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/15/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -25,6 +25,7 @@ Sets a task that runs a codeunit to the ready state. The task will not run unles
 *Task*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
   
+
 *[Optional] NotBefore*  
 &emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
   

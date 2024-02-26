@@ -3,8 +3,8 @@ title: "NavApp.IsUnlicensed([Guid]) Method"
 description: "Determines if the current user is assigned the Unlicensed entitlement type for the application."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

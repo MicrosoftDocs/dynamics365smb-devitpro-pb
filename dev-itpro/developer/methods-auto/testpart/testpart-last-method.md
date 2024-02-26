@@ -3,8 +3,8 @@ title: "TestPart.Last() Method"
 description: "Sets the current row of the test page as the last row in the data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +21,6 @@ Sets the current row of the test page as the last row in the data set.
 ```AL
 [Ok := ]  TestPart.Last()
 ```
-
 ## Parameters
 *TestPart*  
 &emsp;Type: [TestPart](testpart-data-type.md)  
