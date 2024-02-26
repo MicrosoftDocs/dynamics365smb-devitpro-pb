@@ -1,6 +1,6 @@
 ---
-title: Online Scalability
-description: Learn about Business Central Online ability to provide resource elasticity through real-time data driven auto-scaling and dynamic load distribution to support these needs.
+title: Service scalability for Business Central online
+description: Learn about Business Central online ability to provide resource elasticity through real-time data driven auto-scaling and dynamic load distribution to support these needs.
 author: dmc-dk
 ms.author: dmitrych 
 ms.reviewer: jswymer
@@ -9,9 +9,9 @@ ms.collection:
 ms.date: 02/22/2024
 ms.custom: bap-template
 ---
-# Scalability 
+# Service scalability for Business Central online
 
-Business Central Online manages diverse customers of different sizes and complexity, with load patterns fluctuating based on the time of the day, seasonality, the number of active users, active external integrations, and various other factors. One of the key strengths of Business Central Online is its ability to provide resource elasticity through real-time data driven auto-scaling and dynamic load distribution to support these needs.
+Business Central online manages diverse customers of different sizes and complexity, with load patterns fluctuating based on the time of the day, seasonality, the number of active users, active external integrations, and various other factors. One of the key strengths of Business Central online is its ability to provide resource elasticity through real-time data driven auto-scaling and dynamic load distribution to support these needs.
 
 Telemetry shows that 99,81% of the execution time (measured by the user session minutes) is performed on the compute nodes with ample resources.  
 
@@ -26,7 +26,7 @@ Historical data also shows a very high degree of database scaling efficiency. 99
 <!--
 ## Business continuity and disaster recovery (BCDR)
 
-Business Central Online financially guarantees 99,9% up-time for its paid production environments, where customers are entitled to financial compensation if the service does not deliver on this promise. Built-in redundancy implemented on many levels of the service, automated failover and rollback mechanisms, rigid and granular backup policy, as well as historical data, show that it has been able to consistently maintain this level of availability. Read how Business Central Online supports business continuity here.  -->
+Business Central online financially guarantees 99,9% up-time for its paid production environments, where customers are entitled to financial compensation if the service does not deliver on this promise. Built-in redundancy implemented on many levels of the service, automated failover and rollback mechanisms, rigid and granular backup policy, as well as historical data, show that it has been able to consistently maintain this level of availability. Read how Business Central online supports business continuity here.  -->
 
 ## Throughput  
 
@@ -36,7 +36,7 @@ ERP processes are typically complex and varied, employing diverse configurations
 
 In the context of Business Central, these needs may, for example, involve creating and posting documents, handling web service calls, managing UI interactions, overseeing scheduled tasks, and many other activities. Business Central helps customers and partners get even higher throughput, by following the best practices described in the online documentation at <https://aka.ms/bcperformance> and supported by a broad range of tools and telemetry.
 
-The following are real-life examples of such workloads measured per single environment, for a selection of customers already running in Business Central Online.
+The following are real-life examples of such workloads measured per single environment, for a selection of customers already running in Business Central online.
 
 Disclaimer: The volumes presented in this document should be seen as a sample selection of what the service handles today. They are neither the highest measurements observed in the service nor the limits of what the service can handle.
 <!-- image-->
@@ -70,9 +70,9 @@ For more information, see [Posting Documents and Journals](/dynamics365/business
 
 ## Users  
 
-Business Central customers exhibit considerable variability in the number of users working with the product. Business Central Online does not have a fixed operational limit on the number of users.  
+Business Central customers exhibit considerable variability in the number of users working with the product. Business Central online does not have a fixed operational limit on the number of users.  
 
-While most Business Central Online customers are running with 20-30 users, there are thousands of customers which surpass 100 users, and also customers running with well over 1,000 users, underscoring the system's adaptability to diverse user demands and organizational sizes. In 2023, Business Central online experienced 105% YoY growth of the number of customers with more than 100 paid users. 
+While most Business Central online customers are running with 20-30 users, there are thousands of customers which surpass 100 users, and also customers running with well over 1,000 users, underscoring the system's adaptability to diverse user demands and organizational sizes. In 2023, Business Central online experienced 105% YoY growth of the number of customers with more than 100 paid users. 
 
 Multi-country or international SMB organizations, with representative branches and offices running in different countries around the world, may have many thousands of users registered in their Microsoft Entra tenant. However, Business Central's geographically distributed multi-tenant service deploys database and compute resources in the Azure region close to or directly within the country selected by the administrators for a specific Business Central environment. Therefore, users of these organizations, working with one environment will not compete for resources with users working in another environment (in another or the same country). It is therefore very common for larger organizations to scale their operations by adding more Business Central environments.
 
@@ -128,11 +128,11 @@ for more information, see [Schedule jobs to run automatically](/dynamics365/busi
 
 ## Storage  
 
-In Business Central online, customers are provided with a default storage quota that is shared by all environments associated with a customer's Microsoft Entra ID, with per-user quota added to it. There is a possibility of buying more capacity if needed, however, there is no operational limit for database size. While most databases in Business Central Online fleet are less than 100GB, many databases exceed the 100GB mark, and some databases are notably larger, going above 1TB of compressed data. Many of the large databases come from the customers migrating from on-premises solutions to Business Central online. In January 2024 alone, telemetry shows many cases of customers migrating databases of >250GB, with some measuring up to 500-600GB of data. 
+In Business Central online, customers are provided with a default storage quota that is shared by all environments associated with a customer's Microsoft Entra ID, with per-user quota added to it. There is a possibility of buying more capacity if needed, however, there is no operational limit for database size. While most databases in Business Central online fleet are less than 100GB, many databases exceed the 100GB mark, and some databases are notably larger, going above 1TB of compressed data. Many of the large databases come from the customers migrating from on-premises solutions to Business Central online. In January 2024 alone, telemetry shows many cases of customers migrating databases of >250GB, with some measuring up to 500-600GB of data. 
 
 ## Conclusion  
 
-Microsoft Dynamics 365 Business Central Online is a modern, global, robust, and scalable solution for small and mid-sized organizations, providing resource elasticity to support current and future demands of modern businesses.
+Microsoft Dynamics 365 Business Central online is a modern, global, robust, and scalable solution for small and mid-sized organizations, providing resource elasticity to support current and future demands of modern businesses.
 
 ## See also
 
