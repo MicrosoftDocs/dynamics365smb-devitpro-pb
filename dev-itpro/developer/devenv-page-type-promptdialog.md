@@ -34,15 +34,23 @@ To find links to the properties related to the `PromptDialog` page type, see the
 
 ## Areas of the PromptDialog page type
 
-The `PromptDialog` page type has three areas, which are `Prompt`, `Content`, and `PromptOptions`. The `Prompt` area is the input to copilot, and accepts any control, except repeater controls. The `Content` area is the output of copilot, and accepts any control, except repeater controls. The `PromptOptions` area is the input options, and only accepts option fields.
+The `PromptDialog` page type has the following area types that characterize the dialog.
+
+|Area |Description|
+|-----|-----------|
+|`Prompt` | The `Prompt` area is the input to copilot, and accepts any control, except repeater controls.|
+|`Content` | The `Content` area is the output of copilot, and accepts any control, except repeater controls.|
+|`PromptOptions` | The `PromptOptions` area is the input options, and only accepts option fields.|
+
 
 ### Actions in the PromptDialog page
 
-Unlike other page types, `PromptDialog` pages can only specify two action areas; `SystemActions` and `PromptGuide`. The `SystemActions` area only allow you to define a fixed set of actions called system actions, which are only supported by this page type. These system actions are `Generate`, `Regenerate`, `Attach`, `Ok` and `Cancel`. See the following the [Example section](#example) in this article for more information on how to use these system actions.
+Unlike other page types, `PromptDialog` pages can only specify two action areas; `SystemActions` and `PromptGuide`. 
 
-<!-- image here -->
-
-The `PromptGuide` action area represents a list of predefined text prompt "guides", which users can select to use as input to generate content, rather than creating their own prompt from scratch. The prompt guide menu is only rendered in the web client when the `PromptMode` of the `PromptDialog` page is set to `Prompt`.
+|Action|Description|
+|------|-----------|
+|`SystemActions` | The `SystemActions` area only allow you to define a fixed set of actions called system actions, which are only supported by this page type. These system actions are `Generate`, `Regenerate`, `Attach`, `Ok` and `Cancel`.|
+|`PromptGuide` | The `PromptGuide` action area represents a list of predefined text prompt "guides", which users can select to use as input to generate content, rather than creating their own prompt from scratch. The prompt guide menu is only rendered in the web client when the `PromptMode` of the `PromptDialog` page is set to `Prompt`.|
 
 <!-- image here -->
 
