@@ -893,18 +893,8 @@
 -->
 
 ### Handling security
-#### [Handling security overview](security/security-application.md)
-
-#### [Isolated storage](developer/devenv-isolated-storage.md)
-#### [Protecting sensitive values with the SecretText data type](developer/devenv-secret-text.md)
-
-#### Using Azure Key Vault for app secrets
-##### [Overview](developer/devenv-app-key-vault-overview.md)
-##### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
-##### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
-##### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
-##### [Analyzing app keyvault telemetry](administration/telemetry-extension-key-vault-trace.md)
-
+#### [Security for AL developers](security/security-developers.md)
+#### [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl)
 #### [Permission sets and entitlements overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 ##### [Permissionset object](developer/devenv-permissionset-object.md)
 ##### [Permissionset extension object](developer/devenv-permissionset-ext-object.md)
@@ -921,6 +911,18 @@
 ##### Permissions APIs
 ###### [Permission set](administration/resources/dynamics_permissionset.md)
 ###### [Get permission set](administration/api/dynamics_permissionset_get.md)
+##### System application reference (permissions)
+###### [Codeunit 'User Permissions'](/dynamics365/business-central/application/system-application/codeunit/system.security.user.user-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Page 'Effective Permissions'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Page 'Effective Permissions By Set'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions-by-set?toc=/dynamics365/business-central/dev-itpro/toc.json) 
+#### [Isolated storage](developer/devenv-isolated-storage.md)
+#### [Protecting sensitive values with the SecretText data type](developer/devenv-secret-text.md)
+#### Using Azure Key Vault for app secrets
+##### [Overview](developer/devenv-app-key-vault-overview.md)
+##### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
+##### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
+##### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
+##### [Analyzing app keyvault telemetry](administration/telemetry-extension-key-vault-trace.md)
 
 
 ### Running things in the background
@@ -1264,6 +1266,7 @@
 ### [Security overview](security/security-and-protection.md)
 ### [Tips for business users](security/security-users.md)
 ### [Application](security/security-application.md)
+### [Setting up Multifactor Authentication (MFA)](security/multifactor-authentication.md)
 ### [Online](security/security-online.md)
 ### [On-premises](security/security-onpremises.md)
 ### [Data security](security/data-security.md)
@@ -1530,7 +1533,8 @@
 
 <!-- Azure services -->
 ## Integrating with Azure services
-### [Overview](developer/azure-integration-overview.md)
+### [Overview](developer/integration-azure-overview.md)
+### [Integrating Business Central with Azure Application Insights](administration/telemetry-overview.md) 
 ### [Connecting to Azure Blob Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Blob%20Services%20API)  
 ### [Connecting to Azure File Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20File%20Services%20API)  
 ### [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)
@@ -1538,6 +1542,18 @@
 ### [Connecting to Azure Key Vault](developer/devenv-app-key-vault-overview.md)
 ### [Azure Key Vault telemetry](administration/telemetry-extension-key-vault-trace.md)
 <!-- end Azure services -->
+
+<!-- Infrastructure services -->
+## Integrating with infrastructure services
+### [Overview](developer/integration-infrastructure-overview.md) 
+### [Manage users and licenses with Microsoft Entra](/dynamics365/business-central/ui-how-users-permissions#manage-users-and-licenses-in-online-tenants?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Set up multi-factor authentication (MFA) with Microsoft Entra](security/multifactor-authentication.md)  
+### [Control access to Business Central with Azure Security Groups](/dynamics365/business-central/ui-security-groups?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+### [Restrict network access from/to Business Central Azure security service tags](security/security-service-tags.md)  
+### [Integrating Business Central with Azure Application Insights](administration/telemetry-overview.md)   
+### [Integrating Business Central with Microsoft 365 Universal Print](/dynamics365/business-central/admin-printer-setup-universal-print?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+<!-- end Infrastructure services -->
+
 ## Integrating with Shopify
 ### [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started)
 ### [Troubleshoot the Shopify connector](/dynamics365/business-central/shopify/troubleshoot)

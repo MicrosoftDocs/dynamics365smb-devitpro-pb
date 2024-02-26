@@ -5,12 +5,14 @@ author: kennienp
 ms.reviewer: solsen
 ms.topic: overview
 ms.author: kepontop
-ms.date: 02/05/2024
+ms.date: 02/23/2024
 ---
 
 # Integration overview for Business Central online
 
 This article is intended to help architects and developers make sound design decisions when they implement integration scenarios to and from [!INCLUDE[prod_short](../includes/prod_short.md)].
+
+:::image type="content" source="media/all-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/all-integrations-overview.svg":::
 
 The article describes integration patterns, integration scenarios, and integration solutions. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
 
@@ -35,10 +37,9 @@ For more information on how to explore and develop against APIs, best practices,
 
 ## Integrating Business Central with Power Platform
 
-[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to Power Platform. Enabling integrations to Power Platform augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to Power Platform. Enabling integrations to Power Platform augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with more features. 
 
-<!-- to be added when all overview diagrams are ready
-:::image type="content" source="media/powerplatform-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/powerplatform-integrations.svg"::: -->
+:::image type="content" source="media/powerplatform-integrations.svg" alt-text="Shows how Business Central integrates to Power Platform" lightbox="media/powerplatform-integrations.svg"::: 
 
 [!INCLUDE [prod_short](../includes/prod_short.md)] integrates to the following Power Platform products and services:
 - Power Apps
@@ -46,7 +47,7 @@ For more information on how to explore and develop against APIs, best practices,
 - Power BI
 - Power Pages
 
-For more information, see [Integrating Business Central with Microsoft 365](../powerplatform/powerplatform-integration-overview.md).
+For more information, see [Integrating Business Central with Power Platform](../powerplatform/powerplatform-integration-overview.md).
 
 
 ## Built-in: Integrating Business Central with Dataverse
@@ -69,20 +70,12 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Dynamic
 
 For more information, see [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
 
+
 ## Built-in: Integrating Business Central with Shopify
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Shopify by installing and configuring the Shopify Connector app. By connecting your Shopify store (or stores) with [!INCLUDE[prod_short](../includes/prod_short.md)], you can maximize your business productivity and manage and view insights from your business and your Shopify store as one unit.
 
 For more information, see [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started).
-
-
-## Built-in: Telemetry with Azure Application Insights
-
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Azure Application Insights by enabling the telemetry feature. With telemetry, system owners can look at usage and lifecycle operations of environments/apps, diagnose problems, and analyze operations that affect performance.
-
-:::image type="content" source="../developer/media/telemetry-architecture.svg" alt-text="Shows how Environment-level telemetry and App/extension-level telemetry works in Business Central AL" lightbox="../developer/media/telemetry-architecture.svg":::
-
-For more information, see [Monitoring and Analyzing Telemetry in Azure Application Insights](../administration/telemetry-overview.md).
 
 
 ## Integrating to external systems from AL code: calling external services
@@ -93,13 +86,29 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 
 For more information, see [Integrating to external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
+
 ## Integrating to external systems from AL code: Azure services
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Blob Services, Azure File Services, Azure Functions, or Azure Key Vault. 
 
 :::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
-For more information, see [Integrating Business Central with Azure services](./azure-integration-overview.md).
+For more information, see [Integrating Business Central with Azure services](./integration-azure-overview.md).
+
+
+## Integrating Business Central with infrastructure services
+
+[!INCLUDE[prod_short](../includes/prod_short.md)] integrates to a few fundamental infrastructure services for operations such as authentication, authorization, auditing, telemetry, and printing.
+
+Here are some supported integrations between Business Central and fundamental services:
+
+- Authentication and authorization: [!INCLUDE[microsoft_entra_name](includes/m365-entra-name.md)]
+- Network security: [!INCLUDE[azure_security_service_tags_name](includes/azure-security-service-tags-name.md)]
+- Telemetry: [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]
+- Local printers: [!INCLUDE[m365_universal_print](../includes/universal-print-name.md)]
+
+For more information, see [Integrating Business Central with infrastructure services](integration-infrastructure-overview.md).
+
 
 ## Integrating to external systems from AL code: copilot
 
@@ -118,6 +127,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 
 For more information, see [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md).
 
+
 ## See also
 
 [Web services overview](../webservices/web-services.md)  
@@ -132,9 +142,7 @@ For more information, see [Integrating with Microsoft Teams overview](../develop
 [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md)  
 [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
 [Integrating Business Central with Shopify](/dynamics365/business-central/shopify/get-started)  
-[Integrating Business Central with Azure Application Insights](../administration/telemetry-overview.md)
 [Integrating to external services from AL using the HttpClient data type](../developer/devenv-httpclient.md)  
-[Integrating Business Central with Azure services](./azure-integration-overview.md)
-[Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)
-[Integrating Business Central with Azure services](./azure-integration-overview.md)
+[Integrating Business Central with Azure services](./integration-azure-overview.md)
+[Integrating AI using developer tools for Copilot](../developer/ai-integration-landing-page.yml)
 [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md)  
