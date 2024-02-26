@@ -3,8 +3,8 @@ title: "CodeCop Analyzer"
 description: "CodeCop is an analyzer that enforces the official AL Coding Guidelines."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -85,6 +85,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0231](codecop-aa0231.md)|StrSubstNo or string concatenation must not be used as a parameter in the Error method.|Design|Warning|
 |[AA0232](codecop-aa0232.md)|The FlowField of a table should be indexed.|Design|Info|
 |[AA0233](codecop-aa0233.md)|Use Get(), FindFirst() and FindLast() without Next() method.|Design|Warning|
+|[AA0234](codecop-aa0234.md)|You must write a tooltip in the Tooltip property for all fields on table objects.|Localizability|Warning|
 |[AA0235](codecop-aa0235.md)|When using 'OnInstallAppPerCompany' you should also add 'Company-Initialize'::'OnCompanyInitialize' event subscriber.|Design|Info|
 |[AA0237](codecop-aa0237.md)|The name of non-temporary variables must not be prefixed with Temp.|Readability|Warning|
 |[AA0240](codecop-aa0240.md)|Email and Phone No must not be present in any part of the source code.|Design|Warning|
