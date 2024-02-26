@@ -1,6 +1,6 @@
 ---
-title: General Information and Considerations When Upgrading to Business Central 2023 Release Wave 2
-description: This article provides tips and considerations to prepare a solution when you're planning to upgrade to Business Central 2023 release wave 2.
+title: General Information and Considerations When Upgrading to Business Central
+description: This article provides tips and considerations to prepare a solution when you're planning to upgrade to Business Central 2023 release wave 2 and later.
 author: jswymer
 ms.custom: bap-template
 ms.topic: conceptual
@@ -8,9 +8,9 @@ ms.date: 04/01/2021
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
-# Important Information and Considerations When Upgrading to Business Central 2023 Release wave 2
+# Important Information and Considerations When Upgrading to Business Central
 
-This article provides important information and tips for things to consider when you prepare to upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2, version 23. The information that's relevant for you will depend on which version you're upgrading from, and how much your solution differs from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application.
+This article provides important information and tips for things to consider when you prepare to upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2 (version 23) or 2024 release wave 1 (version 24). The information that's relevant for you will depend on which version you're upgrading from, and how much your solution differs from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application.
 
 ## <a name="online"></a>Migrate from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online
 
