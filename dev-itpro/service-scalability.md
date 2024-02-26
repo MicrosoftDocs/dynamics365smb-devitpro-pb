@@ -1,6 +1,6 @@
 ---
-title: Business Central Online Scalability
-description: Leran about Business Central Online ability to provide resource elasticity through real-time data driven auto-scaling and dynamic load distribution to support these needs.
+title: Online Scalability
+description: Learn about Business Central Online ability to provide resource elasticity through real-time data driven auto-scaling and dynamic load distribution to support these needs.
 author: dmc-dk
 ms.author: dmitrych 
 ms.reviewer: jswymer
@@ -9,7 +9,7 @@ ms.collection:
 ms.date: 02/22/2024
 ms.custom: bap-template
 ---
-# Business Central Online Scalability
+# Scalability 
 
 Business Central Online manages diverse customers of different sizes and complexity, with load patterns fluctuating based on the time of the day, seasonality, the number of active users, active external integrations, and various other factors. One of the key strengths of Business Central Online is its ability to provide resource elasticity through real-time data driven auto-scaling and dynamic load distribution to support these needs.
 
