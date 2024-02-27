@@ -36,7 +36,7 @@ The following operators are supported in breakpoint conditions:
 When you've enabled debugging mode, and found a place in the code where you want to test a condition, you can right-click the margin of the code editor, and then choose **Conditional Breakpoint**. Or, you can right-click on an existing breakpoint and choose **Edit Breakpoint**. In the inline dialog, choose **Expression** and then enter a condition that you want to test.
 
 > [!NOTE]  
-> There are other options in the inline dialog, such as **Hit Count** and **Log Message**. These options are not supported in AL.
+> There are other options in the inline dialog, such as **Hit Count** and **Log Message**. These options aren't supported in AL.
 
 > [!NOTE]  
 > If you clear an existing condition, then that breakpoint is no longer a conditional breakpoint.
