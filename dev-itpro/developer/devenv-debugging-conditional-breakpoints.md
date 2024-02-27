@@ -23,12 +23,13 @@ As part of debugging code, you can set breakpoints and for a certain breakpoint,
 - Text
 
 The following operators are supported in breakpoint conditions:
-
-`=`
-`<>`
-`<`
-`<=`
-`=`
+|Operator|
+|--------|
+|`=`|  
+|`<>`|  
+|`<`|  
+|`<=`|  
+|`=`|  
 
 ## To set a conditional breakpoint
 
