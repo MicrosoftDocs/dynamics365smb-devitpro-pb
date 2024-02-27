@@ -42,19 +42,21 @@ When you've enabled debugging mode, and found a place in the code where you want
 |**Wait for Breakpoint**|None.|
 <!-- check-->
 
-Note
 
-If you clear an existing condition, then that breakpoint is no longer a conditional breakpoint.
+> [!NOTE]  
+> If you clear an existing condition, then that breakpoint is no longer a conditional breakpoint.
 
-Choose OK to close the Debugger Breakpoint List window. A plus sign is added to the red dot that is displayed in the margin.
 
-Example
+## Example
+
 In this example, you want to set a breakpoint to debug an application. This application processes invoices in a loop, but it stops responding on a particular invoice. You set a breakpoint on the first line of code in the loop, and then you set the following condition on the breakpoint.
 
-
-Copy
+```al
 SalesInvoiceHeader."No." = '103007'  
+```
 
-
+When the code execution reaches the breakpoint, the condition is evaluated. If the condition is true, then the code execution breaks at the breakpoint. If the condition is false, then the code execution continues.
 
 ## See also
+
+[Debugging in AL](devenv-debugging.md)  
