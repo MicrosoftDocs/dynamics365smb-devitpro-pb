@@ -64,6 +64,7 @@ Returns a wrapped array of environments.
       "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
       "appInsightsKey": string // The environment's key for Azure Application Insights
       "SoftDeletedOn": datetime // The time at which the environment was soft deleted
+      "HardDeletePendingOn": datetime // The time at which the environment will be permanently deleted
       "DeleteReason": string // The reason why the environment was deleted
       "AppSourceAppsUpdateCadence": string // The cadence at which installed AppSource Apps are automatically updated with environment updates
     }
@@ -108,6 +109,7 @@ Returns a single environment if exists.
   "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
   "appInsightsKey": string // The environment's key for Azure Application Insights
   "SoftDeletedOn": datetime // The time at which the environment was soft deleted
+  "HardDeletePendingOn": datetime // The time at which the environment will be permanently deleted
   "DeleteReason": string // The reason why the environment was deleted
   "AppSourceAppsUpdateCadence": string // The cadence at which installed AppSource Apps are automatically updated with environment updates
 }
@@ -201,9 +203,6 @@ Returns HTTP status code 201 (Created) with newly created environment.
   "platformVersion": string, // The version of the environment's Business Central platform
   "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
   "appInsightsKey": string // The environment's key for Azure Application Insights
-  "SoftDeletedOn": datetime // The time at which the environment was soft deleted
-  "DeleteReason": string // The reason why the environment was deleted
-  "AppSourceAppsUpdateCadence": string // The cadence at which installed AppSource Apps are automatically updated with environment updates
 }
 ```
 
