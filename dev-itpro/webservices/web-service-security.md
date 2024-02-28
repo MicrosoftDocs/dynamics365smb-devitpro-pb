@@ -25,7 +25,7 @@ For more general information about security in [!INCLUDE[prod_short](../includes
 | Learn how to use OAuth by example. | [Walkthrough: Creating a console application that uses OAuth](walkthrough-authenticate-web-services-using-oauth.md) |
 | Use Service-to-Service (S2S) authentication for scenarios where integrations are required to run without any user interaction. | [Service-to-service authentication](../administration/automation-apis-using-s2s-authentication.md) |
 | Use an HTTPS certificate to connect to an external API from AL Httpclient. | [Supported cipher suites in outgoing calls](../developer/devenv-supported-cipher-suites.md) |
-| Use Azure security service tags to restrict network access from/to [!INCLUDE[prod_short](../includes/prod_short.md)] online | [How to restrict network access from/to Business Central online](../security/security-service-tags.md) |
+| Use Azure security service tags to restrict network access to and from [!INCLUDE[prod_short](../includes/prod_short.md)] online | [How to restrict network access from/to Business Central online](../security/security-service-tags.md) |
 | Learn how to use security certificates to help secure connections with [!INCLUDE[prod_short](../includes/prod_short.md)] (on-premises). | [Securing remote connections using certificates (on-premises)](../deployment/implement-security-certificates-production-environment.md) |
 
 
