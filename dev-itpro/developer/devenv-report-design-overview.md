@@ -56,7 +56,7 @@ To create an RDL layout report, you use Visual Studio Report Designer or Microso
 [!INCLUDE[RDL_layout_performance](includes/include-rdl-performance.md)]
 
 ## Report request page
-A request page is a page that is run before the report starts to execute. Request pages enable end users to specify options and filters for the report. The request page is also where you specify teaching tips for your reports, helping the user understand what the report is about and how they can use it. The request page also unlocks context specific help for the report, which will be in the Help pane of [!INCLUDE[prod_short](includes/prod_short.md)].
+A request page is a page that is run before the report starts to execute. Request pages enable end users to specify options and filters for the report. The request page is where you specify teaching tips for your reports, helping the user understand what the report is about and how they can use it. The request page also unlocks context specific help for the report, which will be in the Help pane of [!INCLUDE[prod_short](includes/prod_short.md)].
 
 For more information, see [Using request pages with reports](devenv-request-pages-for-reports.md).
 
