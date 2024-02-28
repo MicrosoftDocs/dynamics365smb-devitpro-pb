@@ -1443,6 +1443,32 @@
 #### [Build the copilot capability in AL](developer/ai-build-capability-in-al.md)
 #### [Build copilot user experience](developer/ai-build-experience.md)
 
+## Integrating Business Central with Office apps and Microsoft 365
+### [Overview](developer/m365-integration-overview.md)
+### Integrating with Microsoft Excel
+#### [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel)  
+#### [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  
+### [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
+### Integrating with Microsoft Onedrive
+#### [Integrating with Onedrive for Business overview (for administrators)](/dynamics365/business-central/across-onedrive-overview)  
+#### [Extending Document Sharing and OneDrive for Business Integration (for developers)](developer/ devenv-extending-document-sharing-onedrive.md)  
+### [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook)  
+### [Integrating with SharePoint (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint)  
+<!-- Microsoft Teams -->
+### Integrating with Microsoft Teams
+#### [Overview](developer/devenv-develop-for-teams.md)
+#### [Extend Teams cards](developer/devenv-develop-for-teams-cards.md)
+#### Tabs
+##### [Add Business Central tabs](developer/devenv-develop-for-teams-tabs.md)
+##### [Add and remove recommended content](developer/devenv-develop-for-teams-tab-content.md)
+#### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
+#### [FAQ](developer/devenv-dev-faq-teams.md)
+<!-- end Microsoft Teams -->
+### Integrating with Microsoft Onedrive
+#### [Using Word Templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout)  
+#### [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge)  
+
+
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
 ### [Overview](developer/dataverse-integration-overview.md)
@@ -1516,17 +1542,6 @@
 <!-- end Microsoft Power Platform -->
 
 ## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
-
-<!-- Microsoft Teams -->
-## Integrating with Microsoft Teams
-### [Overview](developer/devenv-develop-for-teams.md)
-### [Extend Teams cards](developer/devenv-develop-for-teams-cards.md)
-### Tabs
-#### [Add Business Central tabs](developer/devenv-develop-for-teams-tabs.md)
-#### [Add and remove recommended content](developer/devenv-develop-for-teams-tab-content.md)
-### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
-### [FAQ](developer/devenv-dev-faq-teams.md)
-<!-- end Microsoft Teams -->
 
 <!-- Azure services -->
 ## Integrating with Azure services
