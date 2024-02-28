@@ -31,7 +31,6 @@ The following dimensions are available in all events described below and not inc
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 
-
 ## Request sent to Azure function succeeded
 
 Occurs when a request to an Azure function hosted from the URL {alFunctionHost} succeeded.

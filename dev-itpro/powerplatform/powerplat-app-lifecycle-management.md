@@ -57,7 +57,7 @@ The established guidelines and ALM for table development in [!INCLUDE[prod_short
 One [!INCLUDE[prod_short](../developer/includes/prod_short.md)] instance must be linked to a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment for virtual tables. The connection setup information that is required is captured in a virtual table data source for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. This data source is included in the **MicrosoftBusinessCentralERPCatalog** solution.
 
 ## See Also
-
+[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
 [Table Modeling](powerplat-entity-modeling.md)  
 [Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference](powerplat-admin-reference.md)  

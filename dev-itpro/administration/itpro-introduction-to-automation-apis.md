@@ -166,7 +166,7 @@ There are three bound actions available on the **extensions** endpoint: `Microso
 Issue a POST extension using the bound actions. See the example below.
 
 ```json
-POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/2.0/companies({companyId})/extensions({packageId})/Microsoft.NAV.install
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensions({packageId})/Microsoft.NAV.install
 
 Authorization: Bearer {token}
 ```
