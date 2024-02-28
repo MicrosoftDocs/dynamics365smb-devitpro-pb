@@ -115,7 +115,6 @@ In addition to the AtomPub format, the OData implementation in [!INCLUDE[prod_sh
 
 For more information about OData web services, see [Publishing a web service](publish-web-service.md).
 
-
 ## SOAP Web Services  
 
 With SOAP web services, you can publish pages and codeunits as SOAP web service endpoints. The most common type of messaging pattern in SOAP is the Remote Procedure Call \(RPC\). With RPC, one network node \(the client\) sends a request message to another node \(the server\), and the server sends a response message to the client.
