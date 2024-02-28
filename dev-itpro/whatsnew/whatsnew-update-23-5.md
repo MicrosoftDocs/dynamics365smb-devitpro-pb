@@ -51,10 +51,9 @@ Internal administrators can now transfer environments from one Entra tenant to a
 
 ### Upcoming Business Central Office Hours Calls
 
-During February, we'll host the following calls, which you can already register for today:
+During March, we'll host the following call, which you can already register for today:
 
-- **February 6:** Power Platform and Business Central virtual tables
-- **February 20:** New Danish bookkeeping act - all changes in the localization
+- **March 19:** Get data-driven with telemetry
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
 Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
