@@ -69,4 +69,5 @@ The following example starts the process for creating a new integration table in
 
 ## See also
 
+[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Custom Integration with Microsoft Dataverse](../administration/administration-custom-cds-integration.md)  

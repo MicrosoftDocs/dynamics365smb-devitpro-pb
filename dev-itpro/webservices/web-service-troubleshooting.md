@@ -1,10 +1,9 @@
 ---
 title: Troubleshooting web service errors (OData, API, and SOAP)
-description: Learn about how to troubleshoot Business Central web service errors (OData, API, and SOAP)
+description: Learn about how to troubleshoot Business Central web service errors (OData, API, and SOAP).
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-
 ms.topic: conceptual
 ms.author: kepontop
 ms.date: 01/10/2024
@@ -13,11 +12,12 @@ ms.date: 01/10/2024
 # Troubleshooting web service errors
 
 Troubleshooting web service errors can be tricky because the root cause of the error can be in multiple places:
-- in the client calling the web service,
-- related to the network between the client and the web service endpoint, or
-- in the code behind the web service endpoint.
 
-Below, you can learn more about different methods and tools that you can use for troubleshooting web service errors.
+- It can be in the client that's calling the web service.
+- It can be related to the network between the client and the web service endpoint.
+- It can be in the code behind the web service endpoint.
+
+In the following sections, you can learn more about different methods and tools that you can use for troubleshooting web service errors.
 
 
 ## HTTP status codes
@@ -32,7 +32,7 @@ For more information, see [Web service telemetry](web-service-telemetry.md).
 
 ## Troubleshooting OData/REST API calls
 
-For calls to OData/REST API endpoints, we offer more details for troubleshooting, as these calls also return OData error codes in case of failures. 
+For calls to OData/REST API endpoints, we offer more details for troubleshooting because these calls also return OData error codes when failures occur. 
 
 For more information, see [Troubleshooting OData/API calls](dynamics-error-codes.md).
 
@@ -54,8 +54,7 @@ For more information, see [FAQ: IP addresses or ranges for the Business Central 
 
 For more information, see [Call external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
-
-When copying an environment, all extensions/apps in the new environment will have the property **Allow HttpClient Requests** set to **false**. For more information, see [Environment copies](../administration/tenant-admin-center-environments-copy.md#environment-copies).
+When an environment is copied, all extensions/apps in the new environment have the property **Allow HttpClient Requests** set to **false**. For more information, see [Environment copies](../administration/tenant-admin-center-environments-copy.md#environment-copies).
 
 ## It works in my sandbox but not in production
 
@@ -73,7 +72,7 @@ The environment for a web service endpoint can change how it works. If you see a
 
 ## See also
 
-[Handling UI Interaction in web service endpoints](handling-ui-interaction-when-working-with-web-Services.md)   
+[Handling UI Interaction in web service endpoints](handling-ui-interaction-when-working-with-web-Services.md)  
 [Web Services Best Practices](Web-Services-Best-Practices.md)  
 [Web service telemetry](web-service-telemetry.md)   
 [Troubleshooting OData/API calls](dynamics-error-codes.md)   

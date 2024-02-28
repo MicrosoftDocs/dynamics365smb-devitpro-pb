@@ -4,7 +4,7 @@ description: Learn how to enable tranactability in AppSource for Business Centra
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: bap-template
-ms.date: 01/31/2024
+ms.date: 02/06/2024
 ms.reviewer: na
 ms.topic: conceptual
 ---
@@ -40,9 +40,9 @@ The following steps outline the process of enabling transactability for your app
 - When you have defined the plans, you can map these plans to functionality in your app. You do this by creating entitlements in your app, which map the license to object entitlements. For more information, see [Mapping plans to functionality in your app](devenv-sell-apps-appsource.md#mapping-plans-to-functionality-in-your-app). 
 - Having opted into transactability, defined plans, and mapped these plans to functionality in your app by using entitlements, you can now publish your app. Your app goes through the AppSource validation process, and once it's published, users can purchase your app directly in AppSource.
 
-![<!--alt text start -->Sample transact app with plans in AppSource<!--alt text end -->](media/converttemperatureappsource-small.png "Sample transact app with plans in AppSource")
+![<!--alt text start -->Sample transact app in AppSource<!--alt text end -->](media/converttemperatureappsource-small.png "Sample transact app in AppSource")
 
-- When customers buy your app, they get a license for the plan, and they can go to the Microsoft 365 admin center, and then choose **Licenses**, and then they can see the license for the app, which they can assign to users. For more information, see [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+- When customers buy your app, they get a license for the plan, and they can go to the Microsoft 365 admin center, and then choose **Licenses**, and then they can see the license for the app, which they can assign to users. For more information, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true).
 
 ![<!--alt text start -->Once app plans have been purchased, install and assign licenses in Microsoft 365 admin center<!--alt text end -->](media/manage-licenses-small.png "Once app plans have been purchased, install and assign licenses in Microsoft 365 admin center")
 
@@ -59,14 +59,18 @@ Having defined the plans in Partner Center, you must map these to entitlements i
 
 ## Purchasing your app
 
-When the app has been updated with entitlements, it must be published to AppSource and go through the validation process. Once it's been validated, it surfaces in AppSource with the different plans and pricing, allowing customers to purchase directly in the AppSource marketplace. Once licenses have been purchased, they appear in the customers Microsoft 365 admin center, and can be assigned to individual users. For more information, see [Use the Licenses page to assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-licenses-page-to-assign-licenses-to-users).
+When the app has been updated with entitlements, it must be published to AppSource and go through the validation process. Once it's been validated, it surfaces in AppSource with the different plans and pricing, allowing customers to purchase directly in the AppSource marketplace. Once licenses have been purchased, they appear in the customers Microsoft 365 admin center, and can be assigned to individual users. For more information, see [Use the Licenses page to assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true#use-the-licenses-page-to-assign-licenses-to-users).
 
 > [!NOTE]  
 > Even if a user has an assigned license (plan) that maps to permission sets through the entitlement for that license, the user must still be granted those permissions inside [!INCLUDE [prod_short](includes/prod_short.md)] to have access. In other words, the license only defines the maximum permission to app functionality paid for, but users with the license might be granted less inside [!INCLUDE [prod_short](includes/prod_short.md)].
 
 ## Preview of your app
 
-The publisher of an AppSource app may run a preview for a future version of an already public app, or new app. Preview versions can be installed using a URL including a `PreviewKey` parameter provided by the app publisher, but only in sandbox environments. For more information, see [](../administration/tenant-admin-center-manage-apps.md#preview-versions-of-appsource-apps).
+The publisher of an AppSource app may run a preview for a future version of an already public app, or new app. Preview versions can be installed using a URL including a `PreviewKey` parameter provided by the app publisher, but only in sandbox environments. For more information, see [Preview versions of AppSource apps](../administration/tenant-admin-center-manage-apps.md#preview-versions-of-appsource-apps).
+
+## Get insights into your app
+
+Once your app is published, you can get insights into how your app is doing. The commercial marketplace insights tool on Partner Center allows you to access dashboards and reports to analyze data related to your offers, customers, transactions, and other activities on the marketplace. For more information, see [Insights for your app](/partner-center/analytics).
 
 ## Side-by-side support
 

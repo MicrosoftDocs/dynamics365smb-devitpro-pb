@@ -7483,6 +7483,11 @@
     "source_path": "dev-itpro/developer/methods-auto/errorinfo/errorinfo-addnavigationaction-method.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/errorinfo/errorinfo-addnavigationaction-string-method",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-platform-overview.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-reference-overview",
+    "redirect_document_id": false
    }
   ] 
 }
