@@ -14,7 +14,7 @@ ms.date: 02/24/2024
 
 <!--[!INCLUDE [prod_long](includes/prod_long.md)] is a complete enterprise resource planning (ERP) software solution for mid-sized organizations that is fast to implement, easy to configure, and simple to use, both on-premises and online. [Sign up for a trial](/dynamics365/business-central/across-preview) before you decide to move to the cloud. Read this article to learn about the systems that make [!INCLUDE [prod_short](includes/prod_short.md)] online run as a service that you can bet your business on.  -->
 
-In the rapidly evolving landscape of technology-driven businesses, finding a business management solution that seamlessly adapts to your organization's growth is paramount. Modern small and medium businesses (SMBs) are looking for a solution that doesn't just meet but anticipates the evolving needs of businesses in today's dynamic marketplace. [!INCLUDE [prod_long](includes/prod_long.md)] online is a cloud-based ERP software solution for small and mid-sized organizations. It was launched in April 2018 and has since onboarded more than 30-K customers working in professional services, consumer goods, manufacturing, retail, health, hospitality, transport and logistics, finance, and dozens more industries. It has become a mature, battle-tested solution that understands the intricacies of modern business operations in the areas of security, scalability, performance, resilience, and high availability. Business Central is running globally in 174 countries/regions, out of 21 Microsoft Azure regions.
+In the rapidly evolving landscape of technology-driven businesses, finding a business management solution that seamlessly adapts to your organization's growth is paramount. Modern small and medium businesses (SMBs) are looking for a solution that doesn't just meet but anticipates the evolving needs of businesses in today's dynamic marketplace. [!INCLUDE [prod_long](includes/prod_long.md)] online is a cloud-based ERP software solution for small and mid-sized organizations. It was launched in April 2018 and has since onboarded more than 30-K customers working in professional services, consumer goods, manufacturing, retail, health, hospitality, transport and logistics, finance, and dozens more industries. It has become a mature, battle-tested solution that understands the intricacies of modern business operations in the areas of security, scalability, performance, resilience, and high availability. 
 
 The team that develops the Business Central product itself is the same team responsible for running and managing the Business Central online service. It has first-hand knowledge of all its components.
 
@@ -22,11 +22,10 @@ The service is built from the ground up as a multitenant service, comprised of m
 
 ![Diagram depicting depicting scalability elements of Business Central service.](developer/media/scalability.png)
 
-Azure SQL Database, Microsoft's cloud-based relational database service, is used as the best-of-breed service for transactional workloads of Business Central. Azure SQL Database is always running on the latest stable version of the SQL Server database engine and patched OS, with 99.99% availability. Working behind the scenes, it provides Business Central with the following benefits: high availability, rich business continuity and disaster recovery options, backup and restore options, advanced performance analyses and tuning capabilities, schema management, efficient resource utilization, dynamic scalability features to accommodate fluctuating workloads, robust security protocols to safeguard sensitive data, and much more.  
 
 ## Global availability
 
-[!INCLUDE[prod_short](includes/prod_short.md)] online is available in many markets, and new countries/regions go live on a quarterly basis. For more information, see [Countries/regions and Translations Supported](compliance/apptest-countries-and-translations.md).  
+[!INCLUDE[prod_short](includes/prod_short.md)] online is running globally in more than 170 countries/regions, out of 21 Microsoft Azure regions, and new countries/regions go live on a quarterly basis. For more information, see [Countries/regions and Translations Supported](compliance/apptest-countries-and-translations.md).  
 
 For a visual overview of where [!INCLUDE [prod_short](includes/prod_short.md)] online is deployed, see the [Geographical availability](https://dynamics.microsoft.com/availability-reports/georeport/) site.  
 
@@ -52,7 +51,9 @@ Administrators can use the [!INCLUDE [prod_short](includes/prod_short.md)] admin
 
 ### Database and backups
 
-[!INCLUDE [prod_short](includes/prod_short.md)] uses Azure SQL Database as the database technology for its environments. Azure SQL Database is a fully managed relational database service with built-in high availability, backups, and local and regional redundancy. To learn more about how Azure SQL Database keeps workloads running smoothly, go to [High availability for Azure SQL Database](/azure/azure-sql/database/high-availability-sla).
+[!INCLUDE [prod_short](includes/prod_short.md)] uses Azure SQL Database as the database technology for its environments. 
+
+Azure SQL Database, Microsoft's cloud-based relational database service, is used as the best-of-breed service for transactional workloads of Business Central. Azure SQL Database is always running on the latest stable version of the SQL Server database engine and patched OS, with 99.99% availability. Working behind the scenes, it provides Business Central with the following benefits: high availability, rich business continuity and disaster recovery options, local and regional redundancy, backup and restore options, advanced performance analyses and tuning capabilities, schema management, efficient resource utilization, dynamic scalability features to accommodate fluctuating workloads, robust security protocols to safeguard sensitive data, and much more. To learn more about how Azure SQL Database keeps workloads running smoothly, go to [High availability for Azure SQL Database](/azure/azure-sql/database/high-availability-sla).
 
 Azure SQL Database protects [!INCLUDE [prod_short](includes/prod_short.md)] production and sandbox environments by taking automatic backups that it keeps for 28 days. Administrators can use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to restore the environment to any specific point in time in the past 28 days. To learn more about restoring an environment, go to [Restoring an Environment in the Admin Center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-backup-restore).
 
@@ -74,7 +75,11 @@ Each [!INCLUDE [prod_short](includes/prod_short.md)] environment is also protect
 
 [!INCLUDE [service-updates](includes/service-updates.md)]
 
-Administrators can set a maintenance window in which Microsoft can update each environment. For more information, see [Managing Updates in the Business Central Admin Center](administration/tenant-admin-center-update-management.md). Microsoft then schedules updates of the business functionality to be applied during these maintenance windows.  
+New capabilities roll out in release waves that consist of a major and minor updates. Most capabilities are made available in major updates, but some, especially regulatory requirements, become available in minor updates as well.
+
+The major updates are typically made available twice a year, in April and in October. Minor updates roll out every month. Get an overview of the release plans at [https://aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan). 
+
+Administrators can set a maintenance window in which Microsoft can update each environment as well as schedule a specific date for their updates. For more information, see [Managing Updates in the Business Central Admin Center](administration/tenant-admin-center-update-management.md). Microsoft then schedules updates of the business functionality to be applied during these maintenance windows and dates.
 
 An exception to this type of schedule is the continuous updates to the underlying service. The service components apply to multiple environments, such as all tenants in a region. So Microsoft schedules those updates to a time when traffic is lower in each region, typically during the evening or night. Typically, users don't notice service updates. [!INCLUDE [prod_short](includes/prod_short.md)] manages traffic so that people working in [!INCLUDE [prod_short](includes/prod_short.md)] aren't affected.  
 
