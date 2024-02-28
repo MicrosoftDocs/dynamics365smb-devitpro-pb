@@ -44,7 +44,7 @@ For more information on how to explore and develop against APIs, best practices,
 
 [!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)] augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with extra features. It also augments [!INCLUDE[m365](includes/m365-name.md)] apps with new features so that users can stay in the flow of work and get access to the right data at the right time from the app they prefer working with. Along with built-in integration, [!INCLUDE [prod_short](../includes/prod_short.md)] offers more ways for you to integrate with [!INCLUDE[m365](includes/m365-name.md)] apps using APIs.
 
-:::image type="content" source="media/m365-integrations-overview.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/m365-integrations-overview.svg":::
+:::image type="content" source="media/m365-integrations-overview.svg" alt-text="Shows how Business Central integrates to Office" lightbox="media/m365-integrations-overview.svg":::
 
 [!INCLUDE [prod_short](../includes/prod_short.md)] integrates to the following [!INCLUDE[m365](includes/m365-name.md)] products and services:
 
