@@ -1,17 +1,17 @@
 ---
-title: Update 23.4 for Microsoft Dynamics 365 Business Central 2023 Release Wave 2
-description: Get an overview of new and changed capabilities in the 23.4 update of Business Central online, which is part of 2023 release wave 2.
+title: Update 23.5 for Microsoft Dynamics 365 Business Central 2023 Release Wave 2
+description: Get an overview of new and changed capabilities in the 23.5 update of Business Central online, which is part of 2023 release wave 2.
 ms.author: a-enielsson
 ms.custom: bap-template
-ms.date: 01/29/2024
+ms.date: 02/28/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: EmmaNielsson
 ---
 
-# Update 23.4 for Microsoft Dynamics 365 Business Central online 2023 release wave 2
+# Update 23.5 for Microsoft Dynamics 365 Business Central online 2023 release wave 2
 
-Would you like to know what has changed in update 23.4? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links that you might find interesting.
+Would you like to know what has changed in update 23.5? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links that you might find interesting.
 
 ## Hotfixes
 
@@ -32,9 +32,9 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2023 release wave 2 (release from October 2023 through March 2024), find the link to the release plan [here](https://aka.ms/BCReleasePlan).
 
-## Upgrade to 23.4
+## Upgrade to 23.5
 
-Note that new customers will automatically get the latest builds of Business Central (23.4). If you're an existing partner/customer, you'll receive an email notification as soon as your environment has been upgraded.
+Note that new customers will automatically get the latest builds of Business Central (23.5). If you're an existing partner/customer, you'll receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
