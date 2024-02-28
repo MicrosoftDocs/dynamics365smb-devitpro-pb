@@ -22,7 +22,6 @@ The service is built from the ground up as a multitenant service, comprised of m
 
 ![Diagram depicting depicting scalability elements of Business Central service.](developer/media/scalability.png)
 
-
 ## Global availability
 
 [!INCLUDE[prod_short](includes/prod_short.md)] online is running globally in more than 170 countries/regions, out of 21 Microsoft Azure regions, and new countries/regions go live on a quarterly basis. For more information, see [Countries/regions and Translations Supported](compliance/apptest-countries-and-translations.md).  
@@ -51,9 +50,9 @@ Administrators can use the [!INCLUDE [prod_short](includes/prod_short.md)] admin
 
 ### Database and backups
 
-[!INCLUDE [prod_short](includes/prod_short.md)] uses Azure SQL Database as the database technology for its environments. 
+[!INCLUDE [prod_short](includes/prod_short.md)] uses Azure SQL Database as the database technology for its environments.
 
-Azure SQL Database, Microsoft's cloud-based relational database service, is used as the best-of-breed service for transactional workloads of Business Central. Azure SQL Database is always running on the latest stable version of the SQL Server database engine and patched OS, with 99.99% availability. Working behind the scenes, it provides Business Central with the following benefits: high availability, rich business continuity and disaster recovery options, local and regional redundancy, backup and restore options, advanced performance analyses and tuning capabilities, schema management, efficient resource utilization, dynamic scalability features to accommodate fluctuating workloads, robust security protocols to safeguard sensitive data, and much more. To learn more about how Azure SQL Database keeps workloads running smoothly, go to [High availability for Azure SQL Database](/azure/azure-sql/database/high-availability-sla).
+Azure SQL Database, Microsoft's cloud-based relational database service, is used as the best-of-breed service for transactional workloads of Business Central. Azure SQL Database is always running on the latest stable version of the SQL Server database engine and patched OS, with 99.99% availability. Azure SQL Database works behind the scenes to provide Business Central with the following benefits: high availability, rich business continuity and disaster recovery options, local and regional redundancy, backup and restore options, advanced performance analyses and tuning capabilities, schema management, efficient resource utilization, dynamic scalability features to accommodate fluctuating workloads, robust security protocols to safeguard sensitive data, and much more. To learn more about how Azure SQL Database keeps workloads running smoothly, go to [High availability for Azure SQL Database](/azure/azure-sql/database/high-availability-sla).
 
 Azure SQL Database protects [!INCLUDE [prod_short](includes/prod_short.md)] production and sandbox environments by taking automatic backups that it keeps for 28 days. Administrators can use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to restore the environment to any specific point in time in the past 28 days. To learn more about restoring an environment, go to [Restoring an Environment in the Admin Center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-backup-restore).
 
@@ -75,11 +74,11 @@ Each [!INCLUDE [prod_short](includes/prod_short.md)] environment is also protect
 
 [!INCLUDE [service-updates](includes/service-updates.md)]
 
-New capabilities roll out in release waves that consist of a major and minor updates. Most capabilities are made available in major updates, but some, especially regulatory requirements, become available in minor updates as well.
+New capabilities roll out in release waves that consist of a major update and subsequent minor updates. Most capabilities are made available in major updates, but some, especially regulatory requirements, become available in minor updates as well.
 
 The major updates are typically made available twice a year, in April and in October. Minor updates roll out every month. Get an overview of the release plans at [https://aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan). 
 
-Administrators can set a maintenance window in which Microsoft can update each environment as well as schedule a specific date for their updates. For more information, see [Managing Updates in the Business Central Admin Center](administration/tenant-admin-center-update-management.md). Microsoft then schedules updates of the business functionality to be applied during these maintenance windows and dates.
+Administrators can set a maintenance window in which Microsoft can update each environment and schedule a specific date for their updates. For more information, see [Managing Updates in the Business Central Admin Center](administration/tenant-admin-center-update-management.md). Microsoft then schedules updates of the business functionality to be applied during these maintenance windows and dates.
 
 An exception to this type of schedule is the continuous updates to the underlying service. The service components apply to multiple environments, such as all tenants in a region. So Microsoft schedules those updates to a time when traffic is lower in each region, typically during the evening or night. Typically, users don't notice service updates. [!INCLUDE [prod_short](includes/prod_short.md)] manages traffic so that people working in [!INCLUDE [prod_short](includes/prod_short.md)] aren't affected.  
 
