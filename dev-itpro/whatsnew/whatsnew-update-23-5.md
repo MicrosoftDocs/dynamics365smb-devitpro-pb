@@ -45,9 +45,6 @@ Environments and the Admin Center can now be accessed and administered with the 
 
 There are no changes to the access granted to administrators with a Global Administrator or Dynamics 365 Administrator role assigned. Delegated Helpdesk Administrators will soon lose access to the Admin Center; we recommend you replace any use of this role with the Dynamics 365 Business Central Administrator role. If you have accessed your customer environments using this role recently, you'll soon receive deprecation notifications sent to notification recipients set up in the Admin Center. Read more [here](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights).
 
-### Transfer environments between Entra tenants
-
-Internal administrators can now transfer environments from one Entra tenant to another. This can be necessary for mergers & acquisitions, when an organization is consolidating multiple Entra tenants into one, or when a partner organization needs to transfer a prepared demo environment to a prospective customer. Release plan is available [here](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/transfer-environments-between-entra-tenants), documentation will be updated [here](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments-move) once this feature is made available over the course of February.
 
 ### Upcoming Business Central Office Hours Calls
 
@@ -65,17 +62,14 @@ With the previous minor update (23.4), we transitioned to the Shopify Admin API 
 You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the [release plan](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/planned-features) for more details.
 
 ### Features becoming mandatory soon
-To view complete list of optional features and features that are becoming mandatory, go to [aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt). 
+Prepare for features becoming mandatory soon on [aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt).
+Following features may have potentially disruptive effect on extensions and apps you have installed in the future, when they become mandatory. These features are now optional to use and can be enabled in the [Feature Management](https://dynamics.microsoft.com/en-us/business-central/signin/?ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2F%3Fpage%3D2610%26noSignUpCheck%3D1) page. 
 
-When the following features become mandatory in the future, they might potentially have a disruptive effect on extensions and apps you have installed. These features are now optional to use and can be enabled in the [Feature Management](https://dynamics.microsoft.com/en-us/business-central/signin/?ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2F%3Fpage%3D2610%26noSignUpCheck%3D1) page.
-- Extending G/L Entry Aggregations When Posting Invoices feature is generally available with Update 23.1 and becoming mandatory in Update 26.0 (2025 Release Wave 1).
-The Invoice Post. Buffer table is replaced by the use of the Invoice Posting interface. The replacement helps resolve extensibility issues for the legacy Invoice Post. Buffer table. You can now use your own implementation of G/L invoice posting.
-If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to [Extending G/L Entry Aggregations](/dynamics365/business-central/dev-itpro/developer/devenv-invoice-posting-example) When Posting Invoices.
-- New extensible exchange rate adjustment, including posting review feature is generally available with Update 23.0 and becoming mandatory in Update 26.0 (2025 Release Wave 1) The legacy Exchange Rates Adjustment Report is being replaced by a new capability that increases extensibility and makes it easier to comply with local and industry-specific requirements. It also gives you more control over exchange rate adjustments with a posting preview and how dimension values are post when you adjust exchange rate, and better reporting.
-
-If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to [Extending Currency Exchange Rate Adjustments](/dynamics365/business-central/dev-itpro/developer/devenv-extend-exchange-rates).
-
-Work with your partner to update extensions and apps you have installed before above features become mandatory.
+**Extending G/L Entry Aggregations When Posting Invoices** feature is generally available with Update 23.1 and becoming mandatory in Update 26.0 (2025 Release Wave 1). The Invoice Post. Buffer table is replaced by the use of the Invoice Posting interface. The replacement helps resolve extensibility issues for the legacy Invoice Post. Buffer table. You can now use your own implementation of G/L invoice posting. If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to [Extending G/L Entry Aggregations When Posting Invoices](/dynamics365/business-central/dev-itpro/developer/devenv-invoice-posting-example).
+ 
+**New extensible exchange rate adjustment**, including posting review feature is generally available with Update 23.0 and becoming mandatory in Update 26.0 (2025 Release Wave 1) The legacy Exchange Rates Adjustment Report is being replaced by a new capability that increases extensibility and makes it easier to comply with local and industry-specific requirements. It also gives you more control over exchange rate adjustments with a posting preview and how dimension values are post when you adjust exchange rate, and better reporting. 
+If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to [Extending Currency Exchange Rate Adjustments](/dynamics365/business-central/dev-itpro/developer/devenv-extend-exchange-rates). 
+Work with your partner to update extensions and apps you have installed before above features become mandatory. To view complete list of optional features and features that are becoming mandatory, go to [aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt).
 
 ### Discover all partner related resources on aka.ms/BCAll
 
