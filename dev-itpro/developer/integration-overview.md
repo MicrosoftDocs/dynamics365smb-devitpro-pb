@@ -12,7 +12,7 @@ ms.date: 02/23/2024
 
 This article is intended to help architects and developers make sound design decisions when they implement integration scenarios to and from [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-:::image type="content" source="media/all-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/all-integrations.svg":::
+:::image type="content" source="media/all-integrations.svg" alt-text="Shows how Business Central integrates to Microsoft 365" lightbox="media/all-integrations.svg":::
 
 The article describes integration patterns, integration scenarios, and integration solutions. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
 
