@@ -1,10 +1,12 @@
 ---
-title: "OData Web Services"
+title: OData Web Services
 description: Learn about OData web services and how to create and maintain these services. 
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.custom: bap-remplate
+ms.date: 02/28/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
+ms.author: kepontop
+author: kennieP
 ---
 
 # OData Web Services
@@ -19,7 +21,7 @@ OData is used in other Microsoft products and technologies, including the follow
 - Microsoft PowerBI can read data from OData services.
 - Microsoft SharePoint can expose its list-oriented data with OData.  
 
-PowerQuery is a data-analysis built into Microsoft Excel and Power BI that provides enhanced Business Intelligence capabilities. PowerQuery supports sharing and collaboration on user-generated business intelligence solutions in a Microsoft SharePoint Server environment. For more information about PowerQuery, see [https://powerquery.microsoft.com](https://powerquery.microsoft.com).  
+PowerQuery is a data analysis engine built into Microsoft Excel and Power BI that provides enhanced Business Intelligence capabilities. PowerQuery supports sharing and collaboration on user-generated business intelligence solutions in a Microsoft SharePoint Server environment. For more information about PowerQuery, see [https://powerquery.microsoft.com](https://powerquery.microsoft.com).  
 
 
 ## Key concepts and techniques for accessing Business Central data using OData      
