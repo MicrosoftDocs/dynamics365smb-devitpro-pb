@@ -154,7 +154,7 @@ Preview support is now enabled for all submissions of [!INCLUDE[prod_short](../i
 
 ### On which environments can I install preview versions?
 
-Preview versions can be installed on Sandbox environments running on [!INCLUDE[prod_short](../includes/prod_short.md)] 2023 release wave 2 CU 4 (version 23.4), or newer.
+Preview versions can be installed on Sandbox environments running on [!INCLUDE[prod_short](../includes/prod_short.md)] 2023 release wave 2 (version 23.0), or newer.
 
 ### How can I install preview versions for selected customers?
 
