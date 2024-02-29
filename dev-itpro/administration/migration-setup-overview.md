@@ -4,9 +4,8 @@ description: Gives an overview of what happens you set up cloud migration.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-
 ms.topic: conceptual 
-ms.date: 07/26/2023
+ms.date: 02/29/2024
 ms.custom: bap-template
 ---
 # Cloud migration setup overview
@@ -41,7 +40,7 @@ The following steps provide more details of the different phases in the process:
    The replication pipeline is used for copying the data. This pipeline remains idle until you initiate the data replication.
 5. Environment is marked as ready for migration and the preparation pipeline is deleted.
 
-After completing 1 or more replication runs, you run data upgrade, then complete the migration.
+After completing one or more replication runs, you run data upgrade, then complete the migration.
 
 ## Cloud migration setup telemetry
 

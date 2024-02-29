@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.reviewer: jswymer
 ms. search.keywords: cloud, edge
 ms.search.form: 2502, 4003
-ms.date: 12/14/2023
+ms.date: 02/28/2024
 ms.author: jswymer
 ms.custom: bap-template
 ---
@@ -17,7 +17,7 @@ This article provides an overview of how the migration works and the necessary t
 
 ## Understanding cloud migration
 
-Data migration is the process of securely migrating data from an on-premises SQL Server instance to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.  You manage cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] online through a connection to the on-premises database and various components that establish a pipeline for replicating data. The on-premises solution remains the operative environment until you complete the cloud migration. <!--[!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]-->  
+Data migration is the process of securely migrating data from an on-premises SQL Server instance to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. You manage cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] online through a connection to the on-premises database and various components that establish a pipeline for replicating data. The on-premises solution remains the operative environment until you complete the cloud migration. <!--[!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]-->  
 
 ### Components involved
 
@@ -48,7 +48,7 @@ The company data that is migrated is configurable as part of the cloud migration
 
 ### How data is migrated 
 
-Data is migrated table by table, and success and failures are tracked for each table. If a table fails to migrate, the error will be captured, and the migration moves on to the next table until completed. Tables will fail to migrate if they can't be found, or if the schema doesn't match between the cloud and the on-premises tables.  
+Data is migrated table by table, and success and failures are tracked for each table. If a table fails to migrate, the error will be captured, and the migration moves on to the next table until completed. Tables fail to migrate if they can't be found, or if the schema doesn't match between the cloud and the on-premises tables.  
 
 Typically, you first run the migration on as a test on a sandbox environment. Then, when you're ready to go live, you run the migration on the production environment. The data migration time can vary depending on factors such as the amount of data to migrate, your SQL Server configuration, and your connection speeds.
 
@@ -92,7 +92,7 @@ This section outlines the general process or phases you go through to migrate da
 
 1. Configure Dynamics GP company migration
 
-   The step is part of the setup phase in whihc you select the companies and data that you want to migrate. 
+   The step is part of the setup phase in which you select the companies and data that you want to migrate. 
 
    To get started, go to [Configure Dynamics GP company migration](migrate-gp-configure-companies.md).
 
@@ -100,7 +100,7 @@ This section outlines the general process or phases you go through to migrate da
 
    This step migrates data from on-premises to online. It starts when you run the **Run data replication** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online. At the end of the process, you have a copy of the on-premises data in the relevant [!INCLUDE [prod_short](../includes/prod_short.md)] online environment. 
 
-   At this point in the process, you can verify whether the migration went well or not, fix any problems, and rerun the replication multiple times if you want to. Once the data has been replicated to the sandbox environment, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
+   At this point in the process, you can verify whether the migration went well or not, fix any problems, and rerun the replication multiple times if you want to. Once the data replicates to the sandbox environment, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
    To get started, go to [Replicate data](migration-data-replication.md).
 
@@ -118,7 +118,7 @@ This section outlines the general process or phases you go through to migrate da
 
    1. Optimize your Business Central online environment:
 
-      Configure the system to meet your business needs. This task may include setting up security, customizing forms and reports, and integrating with other systems. By taking the time to optimize your new environment, you can ensure that it meets your specific requirements and works seamlessly with your existing systems.
+      Configure the system to meet your business needs. This task might include setting up security, customizing forms and reports, and integrating with other systems. By taking the time to optimize your new environment, you can ensure that it meets your specific requirements and works seamlessly with your existing systems.
    1. Set up user access:
 
       Grant access to your new Business Central online system for all relevant users. This task includes creating new user accounts, setting up permissions, and defining roles and responsibilities.
@@ -134,7 +134,7 @@ By completing these tasks, you can ensure a successful migration to the cloud-ba
 
 You manage the cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] online. But once you start the migration phase, the on-premises solution remains the operative environment until you complete the migration. [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]  
 
-Any existing data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online will be overwritten with data from your on-premises solution, or source, once the data replication is run.  
+Any existing data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is overwritten with data from your on-premises solution, or source, once the data replication is run.  
 
 If you don't want data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online to be overwritten, don't configure the connection.
 
@@ -154,7 +154,7 @@ Users that are reassigned to the *Intelligent Cloud* <!--user group--> permissio
 
 ## See also
 
-[FAQ about Migrating to the Cloud from On-Premises Solutions](faq-migrate-data.md)  
+[FAQ about Migrating to the Cloud from on-premises Solutions](faq-migrate-data.md)  
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 [Migrate Dynamics GP Data to the Cloud](migrate-dynamics-gp.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  

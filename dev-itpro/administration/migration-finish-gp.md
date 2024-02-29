@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer 
 ms.topic: how-to 
-ms.date: 02/9/2024
+ms.date: 02/28/2024
 ms.custom: bap-template 
 ---
 
@@ -20,7 +20,7 @@ This article explains tasks you do in the final phase of cloud migration&mdash;t
 
 ## Step 1: Disable the cloud migration
 
-Once you migrate the desired data to [!INCLUDE [prod_short](../includes/prod_short.md)] online, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This step is important because each time someone runs the migration, outstanding documents (like for vendors and inventory items) and other changes made in the online target company are overwritten.
+Once you migrate the desired data to [!INCLUDE [prod_short](../includes/prod_short.md)] online, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This step is important because each time someone runs the migration, outstanding documents (like for vendors and inventory items), and other changes made in the online target company are overwritten.
 
 When you disable the cloud migration, the cloud migration setup for the environment is deleted. But integration runtime remains. So if you want to migrate data again, you have to first go through the cloud migration setup.
 

@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to 
 ms.collection: 
-ms.date: 01/31/2024
+ms.date: 02/29/2024
 ms.custom: bap-template
 ---
 
@@ -38,11 +38,13 @@ The steps in this section configure the data migration globally for all companie
 
 1. Set the dimensions.
 
-   Select the **Set All Dimensions** action to assign default dimensions for all companies. Then select the two segments from Dynamics GP that want to use as the global dimensions in Business Central. The remaining segments are automatically set up as shortcut dimensions. [Learn more about dimensions in Business Central](/dynamics365/business-central/finance-dimensions).
+   The account number in Business Central is mapped from the main account segment from Dynamics GP. Remaining account segments are then defined as [dimensions](/dynamics365/business-central/finance-dimensions/) in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. The **GP Company Migration Configuration** asks you to enter a segment for *Global Dimension 1* and *Global Dimension 2*. If your chart of accounts in Dynamics GP has more than two segments outside of the main segment, the other segments are automatically set up as shortcut dimensions (3-8). You can verify the setup in the **General Ledger Setup** page in Business Central.
 
-   If you're migrating several companies that they all have the same segments.  If they differ it will fill in only the companies that the selections apply and then down in the Per Company section they will have to manually fill in the segments for the other companies that have different segment names. 
+   To assign default dimensions for companies, select the **Set All Dimensions** action. Then select the two segments from Dynamics GP that want to use as the global dimensions in Business Central. The remaining segments are automatically set up as shortcut dimensions. [Learn more about dimensions in Business Central](/dynamics365/business-central/finance-dimensions).
 
-   You also specify the dimensions separately for each company in the **Per company** section of the page. If they differ it will fill in only the companies that the selections apply and then down in the Per Company section they will have to manually fill in the segments for the other companies that have different segment names. Per company** sectio
+   If you're migrating several companies then only those companies that use two segments from Dynamics GP that your want to use as the global dimensionsIf they differ it will fill in only the companies that the selections apply and then down in the Per Company section they will have to manually fill in the segments for the other companies that have different segment names. 
+
+   You also specify the dimensions separately for each company in the **Per company** section of the page. If they differ it will fill in only the companies that the selections apply and then down in the Per Company section they will have to manually fill in the segments for the other companies that have different segment names.
 
 1. Choose the modules to migrate.
 
@@ -71,7 +73,7 @@ The steps in this section configure the data migration globally for all companie
 
 1. Choose the historical transactions that you want to migrate.
 
-   Use the **historical snapshots** section to specify historical transactions that you want migrated to Business Central. The selected transactions are migrated to extension tables in Business Central. User in the Business Central client can then view the data from specific GP list pages.
+   Use the **historical snapshots** section to specify historical transactions that you want migrated to Business Central. The selected transactions are migrated to extension tables in Business Central. User in the Business Central client can then view the data from specific Dynamics GP list pages.
 
    To migrate historical transactions, do the following steps.
    1. Turn on the **Enable/Disable All Transactions** switch.
@@ -82,7 +84,7 @@ The steps in this section configure the data migration globally for all companie
 
 Use the **Per company** section to set the data migration settings separately for each company when you're migrating more than one company. You can specify the same settings as you can globally, plus a couple more. By default, each company uses the global settings.
 
-Use the following fields to specify how far back in time you want to migrate GL account summary data and historical snapshots:
+Use the following fields to specify how far back in time you want to migrate general ledger (GL) account summary data and historical snapshots:
 
 - **Oldest GL Year** - Use this field to select from which year in the past you want to migrate GL account summary transactions. If the **Oldest GL Year** field is empty, all years are migrated. Account summary transactions are generated and posted for open and history years that are set up in Dynamics GP. The summary amounts are created based on the fiscal periods set up in Dynamics GP. For example, suppose 2019, 2020, 2021, and 2022 are historical years in Dynamics GP, but you only wanted to migrate data from 2021 and later. In this case, you set the **Oldest GL Year** to 2021. As a result, summary transactions for 2019 and 2020 aren't migrated to Business Central.
 

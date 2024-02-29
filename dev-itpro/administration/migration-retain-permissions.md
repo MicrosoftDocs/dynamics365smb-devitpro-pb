@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer 
 ms.topic: how-to
-ms.date: 02/19/2024
+ms.date: 02/29/2024
 ms.custom: bap-template
 ---
 # Retain permissions during cloud migration
@@ -40,10 +40,10 @@ end
 
 ## Next steps
 
-[Run data migration setup](migration-setup.md)
+[Run data migration setup](migration-setup.md).
 
 ## See also
 
 [Dynamics GP migration to Business Central online: End-to-end overview](migrate-gp-overview.md)  
-[Compare Work in Dynamics GP to Business Central](migrate-dynamics-gp-videos.md)  
-[FAQ about Migrating to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  
+[Compare work in Dynamics GP to Business Central](migrate-dynamics-gp-videos.md)  
+[FAQ about migrating to Business Central online from on-premises solutions](faq-migrate-data.md)  
