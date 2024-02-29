@@ -37,6 +37,14 @@ The following methods are available on instances of the Cookie data type.
 
 The `Cookie` data type allows you to efficiently work with HTTP cookies. You can use the `Cookie` data type to send and receive cookies while sending HTTP requests. The `Cookie` data type provides methods to get and set the domain, expiration date, name, path, and value of a cookie. It also provides a method to check if a cookie is `Secure`. You can choose to automatically reuse response cookies in subsequent requests, handle cookies manually, or a mix of both.
 
+The following data types have methods that return or use the `Cookie` data type:
+
+- [HttpClient.UseResponseCookies method](../httpclient/httpclient-useresponsecookies-method.md)  
+- [HttpResponseMessage.GetCookie method](../httpresponsemessage-getcookie-method)  
+- [HttpResponseMessage.GetCookieNames method](../httpresponsemessage/httpresponsemessage-getcookienames-method.md)  
+- [HttpRequestMessage.GetCookie method](../httprequestmessage/httprequestmessage-getcookie-method.md)  
+- [HttpRequestMessage.GetCookieNames method](../httprequestmessage/httprequestmessage-getcookienames-method.md)  
+
 ## See also
 
 [Getting Started with AL](../devenv-get-started.md)  
