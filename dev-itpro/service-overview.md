@@ -56,7 +56,7 @@ Azure SQL Database, Microsoft's cloud-based relational database service, is used
 
 Azure SQL Database protects [!INCLUDE [prod_short](includes/prod_short.md)] production and sandbox environments by taking automatic backups that it keeps for 28 days. Administrators can use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to restore the environment to any specific point in time in the past 28 days. To learn more about restoring an environment, go to [Restoring an Environment in the Admin Center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-backup-restore).
 
-Administrators can also use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to recover deleted production or sandbox environments within seven days of their deletion. To learn more about recovering deleted environments, go to [Recover an environment](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments-delete#recover-an-environment).
+Administrators can also use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to recover deleted production or sandbox environments within 14 days of their deletion. To learn more about recovering deleted environments, go to [Recover an environment](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments-delete#recover-an-environment).
 
 ### High availability through geographical redundancy
 

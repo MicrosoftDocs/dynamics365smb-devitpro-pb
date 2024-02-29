@@ -38,14 +38,14 @@ In the context of Business Central, these needs might, for example, involve crea
 
 The following are real-life examples of such workloads measured per single environment, for a selection of customers already running in Business Central online.
 
-Disclaimer: The volumes presented in this document should be seen as a sample selection of what the service handles today. They're not the highest measurements observed in the service or the limits of what the service can handle.
-<!-- image-->
+> [!IMPORTANT]
+> The volumes presented in this document should be considered as a sample selection of what the service handles today. They're not the highest measurements observed in the service or the limits of what the service can handle.
 
 ### Create sales or purchase orders
 
 Customers in Business Central generate sales and purchase orders through a range of methods, including manual input, automated processes such as synchronization with e-commerce portals, and various other methods like import/export functionalities or integration with Microsoft or non-Microsoft applications.
 
-For more information, see [Posting Documents and Journals](/dynamics365/business-central/ui-post-documents-journals)
+For more information, see [Posting Documents and Journals](/dynamics365/business-central/ui-post-documents-journals).
 
 #### Real-life, per-environment measurements (telemetry for a selection of customers)
 
@@ -74,7 +74,7 @@ Business Central customers exhibit considerable variability in the number of use
 
 While most Business Central online customers are running with 20-30 users, there are thousands of customers that surpass 100 users, and also customers running with well over 1,000 users, underscoring the system's adaptability to diverse user demands and organizational sizes. In 2023, Business Central online experienced 105% YoY growth of the number of customers with more than 100 paid users. 
 
-Multi-country or international SMB organizations, with representative branches and offices running in different countries/regions around the world, might have many thousands of users registered in their Microsoft Entra tenant. However, Business Central's geographically distributed multitenant service deploys database and compute resources in the Azure region close to or directly within the country/region selected by the administrators for a specific Business Central environment. Therefore, users of these organizations working with one environment won't compete for resources with users working in another environment (in another or the same country/region). It's therefore common for larger organizations to scale their operations by adding more Business Central environments.
+Multi-country or international SMB organizations, with representative branches and offices running in different countries/regions around the world, might have many thousands of users registered in their Microsoft Entra tenant. However, Business Central's geographically distributed multitenant service deploys database and compute resources in the Azure region close to or directly within the country/region selected by the administrators for a specific Business Central environment. Therefore, users of these organizations working with one environment don't compete for resources with users working in another environment (in another or the same country/region). It's therefore common for larger organizations to scale their operations by adding more Business Central environments.
 
 In addition to resource governance benefits, organizing different business branches into separate environments has multiple operational advantages. Some examples include independent update cadence, more granular user access and security, using a different set of apps, more granular data backup and restore scope, copying an environment to another one for troubleshooting, and many other advantages.  
 
