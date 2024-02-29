@@ -38,13 +38,11 @@ The steps in this section configure the data migration globally for all companie
 
 1. Set the dimensions.
 
-   The account number in Business Central is mapped from the main account segment from Dynamics GP. Remaining account segments are then defined as [dimensions](/dynamics365/business-central/finance-dimensions/) in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. The **GP Company Migration Configuration** asks you to enter a segment for *Global Dimension 1* and *Global Dimension 2*. If your chart of accounts in Dynamics GP has more than two segments outside of the main segment, the other segments are automatically set up as shortcut dimensions (3-8). You can verify the setup in the **General Ledger Setup** page in Business Central.
+   To assign default dimensions for all companies you're migrating, select the **Set All Dimensions** action. Then select the two segments from Dynamics GP that want to use as the global dimensions in Business Central. The remaining segments are automatically set up as shortcut dimensions. [Learn more about dimensions in Business Central](/dynamics365/business-central/finance-dimensions).
 
-   To assign default dimensions for companies, select the **Set All Dimensions** action. Then select the two segments from Dynamics GP that want to use as the global dimensions in Business Central. The remaining segments are automatically set up as shortcut dimensions. [Learn more about dimensions in Business Central](/dynamics365/business-central/finance-dimensions).
+   When you're migrating several companies then only those companies that use two segments from Dynamics GP are applied the global dimensions. For the companies that use different segments, you must go to the **Per company** section of the page and set the dimensions manually for these companies.
 
-   If you're migrating several companies then only those companies that use two segments from Dynamics GP that your want to use as the global dimensionsIf they differ it will fill in only the companies that the selections apply and then down in the Per Company section they will have to manually fill in the segments for the other companies that have different segment names. 
-
-   You also specify the dimensions separately for each company in the **Per company** section of the page. If they differ it will fill in only the companies that the selections apply and then down in the Per Company section they will have to manually fill in the segments for the other companies that have different segment names.
+   You don't have to use the **Set All Dimensions** action. You can always specify the dimensions separately for each company in the **Per company** section.
 
 1. Choose the modules to migrate.
 

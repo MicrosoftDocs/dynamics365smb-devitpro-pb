@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to 
-ms.date: 07/23/2023
+ms.date: 02/29/2024
 ms.custom: bap-template 
 ---
 
@@ -19,11 +19,11 @@ This article explains how to run data replication to move data from on-premises 
 
 ## Prerequisites
 
-- You've set up cloud migration. For more information, go to [Set up cloud migration](migration-setup.md).
+- You set up cloud migration. For more information, go to [Set up cloud migration](migration-setup.md).
 
 ## Preparation
 
-Before you run the actual data replication, we recommend you do a test, or *diagnostics*, run. With a diagnostics run, no data from the on-premises database is migrated to the online tenant. But it allows you to identify issues and fix them before you run the actual replication to help decrease the risk of a failed migration.
+Before you run the actual data replication, we recommend you do a test, or *diagnostics*, run. With a diagnostic run, no data from the on-premises database is migrated to the online tenant. But it allows you to identify issues and fix them before you run the actual replication to help decrease the risk of a failed migration.
 
 To do a diagnostics run, complete the following steps:
 
@@ -40,7 +40,6 @@ Follow these steps replicate data to the online tenant.
 <!--This task runs the cloud migration that you set up previously, copying data from your on-premises database to your online environment.-->
 
 1. Search for and open the **Cloud Migration Management** page.
-
 2. On the **Cloud Migration Management** page, select one of the following actions:
 
    - **Run data replication** > **Yes** of you're migrating from Business Central on-premises.
@@ -64,7 +63,7 @@ The **Cloud Migration Management** page gives you access to details about the da
 
 If errors occur, fix them then rerun the data replication. For information about some of the most common issues, go to [Data replication troubleshooting](migration-data-replication-troubleshooting.md).
 
-When you're ready to run the data replication again, select **Run date replication**. In general, only data that has changed since the last replication is replicated. To learn more, go to [Rerunning data replication](migration-data-replication.md#rerunning-data-replication).
+When you're ready to run the data replication again, select **Run date replication**. In general, only data changed since the last replication is replicated. To learn more, go to [Rerunning data replication](migration-data-replication.md#rerunning-data-replication).
 
 ## Stop data replication
 
@@ -87,4 +86,4 @@ For Dynamics GP migration:
 ## See also
 
 [Dynamics GP migration to Business Central online: End-to-end overview](migrate-gp-overview.md)  
-[FAQ about Migrating to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  
+[FAQ about migrating to Business Central online from on-premises solutions](faq-migrate-data.md)  
