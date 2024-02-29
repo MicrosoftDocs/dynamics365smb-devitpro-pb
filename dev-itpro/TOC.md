@@ -421,7 +421,7 @@
 #### Upgrade data
 ##### [Run data upgrade](administration/migration-data-upgrade-gp.md)
 #### [Complete cloud migration](administration/migration-finish-gp.md)
-#### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
+#### [Compare work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
 ### [FAQ](administration/faq-migrate-data.md)
 ### [Troubleshoot](administration/migration-troubleshooting.md)
 <!-- end migrate -->
