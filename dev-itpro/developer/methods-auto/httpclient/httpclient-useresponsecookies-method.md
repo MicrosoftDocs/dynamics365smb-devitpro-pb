@@ -33,6 +33,28 @@ True to automatically attach cookies received in the response to all subsequent 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The `HttpClient.UseResponseCookies` method allows you to specify whether the client should automatically attach cookies received in the response to all subsequent requests. If you set the `UseResponseCookies` parameter to `true`, the client automatically attaches cookies received in the response to all subsequent requests. If you set the `UseResponseCookies` parameter to `false`, the client doesn't automatically attach cookies received in the response to all subsequent requests.
+
+```al
+// Example of enabling and disabling cookie caching
+
+local procedure UseResponseCookiesExample()
+var
+    Client: HttpClient;
+begin
+    // Enable cookie caching
+    Client.UseResponseCookies(true);
+
+    // Disable cookie caching
+    Client.UseResponseCookies(false);
+end;
+
+```
+
+
 ## See Also
 [HttpClient Data Type](httpclient-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
