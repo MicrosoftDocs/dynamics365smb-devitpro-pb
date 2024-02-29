@@ -107,17 +107,13 @@ For more information about REST API web services, see [REST API web services ove
 
 With OData web services, you can publish pages, codeunits, and queries as ODataV4 web service endpoints. 
 
-SOAP web services expose a Web Services Description Language (WSDL) document. OData web services expose an Entity Data Model XML (EDMX) document containing metadata for all published web services.  
-  
-The extensions to the Atom Publishing Protocol defined in the AtomPub extensions to the OData protocol documentation \(which you can download [here](https://go.microsoft.com/fwlink/?LinkID=262184)\) describe how REST-based data services can enable resources, identified using URIs and defined in an abstract data model \(EDM\), to be published and edited by web clients within corporate networks and across the Internet using simple HTTP messages.  
-  
-In addition to the AtomPub format, the OData implementation in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] also supports the JSON format, a less verbose format that might perform better in low-bandwidth environments.  
+SOAP web services expose a Web Services Description Language (WSDL) document. OData web services expose an Entity Data Model XML (EDMX) document containing metadata for all published web services. The OData implementation in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] also supports the JSON format, a less verbose format that might perform better in low-bandwidth environments.  
 
 For more information about OData web services, see [Publishing a web service](publish-web-service.md).
 
 ## SOAP Web Services  
 
-With SOAP web services, you can publish pages and codeunits as SOAP web service endpoints. The most common type of messaging pattern in SOAP is the Remote Procedure Call \(RPC\). With RPC, one network node \(the client\) sends a request message to another node \(the server\), and the server sends a response message to the client.
+With SOAP web services, you can publish pages and codeunits as SOAP web service endpoints. The most common type of messaging pattern in SOAP is the Remote Procedure Call (RPC). With RPC, one network node \(the client\) sends a request message to another node \(the server\), and the server sends a response message to the client.
 
 > [!IMPORTANT]
 > SOAP is replaced by OData V4. The support for SOAP endpoints will be removed in a later release. We recommend that you migrate integrations to OData V4 or REST API web services as soon as possible. For codeunits published as SOAP web services, you can replace most of them with a similar OData web service using OData unbound actions. 
