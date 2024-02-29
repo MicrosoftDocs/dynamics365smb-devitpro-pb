@@ -55,7 +55,7 @@ Any user running the cloud migration setup flow as delegated administrator must 
 
    Select the companies that you want to migrate and then select **Next**.
 
-   If you want to add or remove companies later, you can return to this page. For more information about using this page, refer to [Configure Dynamics GP company data migration](migrate-gp-configure-companies.md).
+   If you want to add or remove companies later, you can return to this page. For more information about using this page, see [Configure Dynamics GP company data migration](migrate-gp-configure-companies.md).
 
 1. Select **Finish** to complete the cloud migration setup.
 

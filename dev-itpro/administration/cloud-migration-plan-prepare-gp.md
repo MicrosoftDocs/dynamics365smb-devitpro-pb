@@ -16,7 +16,7 @@ This article provides recommendations to help you define your cloud migration st
 
 The migration assessment tool delivers valuable insight into your overall readiness to migrate. It provides migration options based on your needs, and detects potential migration issues based on your Dynamics GP system structure. To get started with the migration tool, go to [https://bcmigrationassessments.com/](https://bcmigrationassessments.com/).
 
-Learn more about the tool in the article [Should You Migrate from GP to Dynamics 365 Business Central?](https://www.enavate.com/gp-to-dynamics-365-business-central-migration-assessment) or the video [Are You Ready for Business Central](https://www.youtube.com/watch?v=r2gNgQrCgoo&list=PLcakwueIHoT9yVFOV6_BXMVeodPq3lt3o&index=15).
+Learn more about the tool in the video [Are You Ready for Business Central](https://www.youtube.com/watch?v=r2gNgQrCgoo&list=PLcakwueIHoT9yVFOV6_BXMVeodPq3lt3o&index=15).
 
 ## Determine what data to migrate
 

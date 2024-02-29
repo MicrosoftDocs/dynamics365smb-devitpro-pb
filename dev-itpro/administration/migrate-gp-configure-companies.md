@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 The Business Central cloud migration tools for Dynamics GP include the **GP Company Migration Configuration** page. This page allows you to make global settings for all companies selected to migrate with the ability to update at a company level if necessary. For more information about the data that can be migrated, see [Dynamics GP data migrated to Business Central online](migrate-dynamics-gp.md).
 
-You complete this task after you set up cloud migration and before you replicate data.
+Complete this task after you set up cloud migration and before you replicate data.
 
 [!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process-gp.md)]
 
@@ -30,7 +30,7 @@ The **GP Company Migration Configuration** page opens automatically when you com
 
 Once you have the **GP Company Migration Configuration** open, you can start to configure what data you to migrate by using the different sections of the page. The page enables you to configure the migration globally for all companies that you chose to migrate (using the upper sections of the page) or on a per-company basis using the **Per Company** section.
 
-You don't have to make any changes on this page. However, we do recommend that you review the default settings. If you're satisfied with the default settings, you can close the page and continue the migration process.
+You don't necessarily have to make any changes on this page. However, you're required to make changes if there's more than one segment in Dynamics GP because you must indicate which segment to use the global dimensions. And as best practice, you should specify how many years back to migrate data, otherwise the tool migrates all years. Whether or not you make changes, we recommend that you review the default settings before you close the page and continue the migration process.
 
 ## Configure migration globally
 
@@ -42,12 +42,12 @@ The steps in this section configure the data migration globally for all companie
 
 1. Choose the modules to migrate.
 
-   Use the **Modules** section to choose the specific modules you want to migrate data from to Business Central. By default, all modules are selected for migration. If you don't want to migrate data for a module, turn off its switch. For example, if you don't want to migrate data for payables, turn off the **Payables** switch. In this case, the **Open Sales Orders** switch is automatically turned off because the open sales orders module relies on vendors, which are part of the payables module.
+   Use the **Modules** section to choose the specific modules you want to migrate data from to Business Central. By default, all modules are selected for migration. If you don't want to migrate data for a module, turn off its switch. For example, if you don't want to migrate data for payables, turn off the **Payables** switch. In this case, the **Open Purchase Orders** switch is automatically turned off because the open purchase orders module relies on vendors, which are part of the payables module.
 
    If you're migrating the General Ledger module, be sure to go the **Per Company** section and specify the **Oldest GL Year** field. The year and all future years are migrated to Business Central. 
 1. Choose whether to migrate master data only for modules.
 
-   Use the **Master data only** section to specify those modules for which you only want to migrate master data. For example, if you only want to migrate bank information and bank transactions, turn on the **Bank** switch.
+   Use the **Master data only** section to specify those modules for which you only want to migrate master data. For example, if you only want to migration bank account information, turn on the **Bank** switch. Bank transactions aren't migrated in this case.
 
    By default, both master data and transactional data for the selected modules are migrated. Master data represents the core information that about entities that changes infrequently, for example, like information about a bank. Transactional data captures specific activities or events for an entity, like bank deposits and withdrawals.
 
@@ -59,7 +59,7 @@ The steps in this section configure the data migration globally for all companie
 
 1. Choose the inactive record or discontinued items that you want to migrate.
 
-   Use the **Inactive records** section to inactive records or discontinued items that you want to migrate. By default, no inactive records or discontinued items are migrated. Sp, for example, if you wanted to migrate inactive customers, turn on the **Inactive Customers** switch.
+   Use the **Inactive records** section to specify the inactive records or discontinued items that you want to migrate. By default, no inactive records or discontinued items are migrated. So, for example, if you wanted to migrate inactive customers, turn on the **Inactive Customers** switch.
 
 1. Choose the classes that you want to migrate as posting groups.
 
