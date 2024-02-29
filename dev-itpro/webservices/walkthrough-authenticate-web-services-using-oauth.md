@@ -8,7 +8,7 @@ ms.topic: conceptual
 author: jswymer
 ---
 
-# Walkthrough: Creating a console application that use OAuth to Authenticate Business Central Web Services (OData or SOAP)
+# Walkthrough: Creating a console application that use OAuth to Authenticate Business Central Web Services (REST API, OData or SOAP)
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 

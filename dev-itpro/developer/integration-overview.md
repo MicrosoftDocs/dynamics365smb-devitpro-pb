@@ -1,28 +1,35 @@
 ---
-title: Integration overview for Business Central online
+title: Integration overview for Business Central 
 description: Find links to information about the ways you can integrate Business Central to products and services.
 author: kennienp
 ms.reviewer: solsen
 ms.topic: overview
 ms.author: kepontop
-ms.date: 02/05/2024
+ms.date: 02/23/2024
 ---
 
-# Integration overview for Business Central online
+# Integration overview for Business Central
 
 This article is intended to help architects and developers make sound design decisions when they implement integration scenarios to and from [!INCLUDE[prod_short](../includes/prod_short.md)].
 
+:::image type="content" source="media/all-integrations.svg" alt-text="Shows how Business Central integrates to Microsoft 365" lightbox="media/all-integrations.svg":::
+
 The article describes integration patterns, integration scenarios, and integration solutions. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
+
+> [!NOTE]
+> Some integrations require a separate subscription or license. Please consult the documentation for that subscription for requirements and details.
+
 
 ## Integrations to/from Business Central are done with web services
 
-All integrations (except for a few built-in integrations) to/from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: REST API, SOAP, and OData. 
+Most integrations (except for a few built-in integrations) to and from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: REST API, SOAP, and OData. 
 
 [![Shows the three different types of web services in Business Central](media/webservice-stack.svg)](media/webservice-stack.svg#lightbox)
 
 The recommended way to use web services for [!INCLUDE[prod_short](../includes/prod_short.md)] is by using the REST API stack. 
 
 For more information, see [Web services overview](../webservices/web-services.md).
+
 
 ## How to explore and develop against Business Central REST APIs
 
@@ -33,12 +40,30 @@ When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] fr
 For more information on how to explore and develop against APIs, best practices, and which built-in APIs exist, see [REST API overview](../webservices/api-overview.md).
 
 
+## Integrating to Office apps and [!INCLUDE[m365](includes/m365-name.md)]
+
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)] augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with extra features. It also augments [!INCLUDE[m365](includes/m365-name.md)] apps with new features so that users can stay in the flow of work and get access to the right data at the right time from the app they prefer working with. Along with built-in integration, [!INCLUDE [prod_short](../includes/prod_short.md)] offers more ways for you to integrate with [!INCLUDE[m365](includes/m365-name.md)] apps using APIs.
+
+:::image type="content" source="media/m365-integrations-overview.svg" alt-text="Shows how Business Central integrates to Office" lightbox="media/m365-integrations-overview.svg":::
+
+[!INCLUDE [prod_short](../includes/prod_short.md)] integrates to the following [!INCLUDE[m365](includes/m365-name.md)] products and services:
+
+- [!INCLUDE[m365_excel](includes/m365-excel-name.md)]
+- [!INCLUDE[m365_graph](includes/m365-graph-name.md)]
+- [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)]
+- [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)]
+- [!INCLUDE[m365_sharepoint](includes/m365-sharepoint-name.md)]
+- [!INCLUDE[m365_teams](includes/m365-teams-name.md)]
+- [!INCLUDE[m365_word](includes/m365-word-name.md)]
+
+For more information, see [Integrating Business Central with Microsoft 365](m365-integration-overview.md). 
+
+
 ## Integrating Business Central with Power Platform
 
-[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to Power Platform. Enabling integrations to Power Platform augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with additional features. 
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to Power Platform. Enabling integrations to Power Platform augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with more features. 
 
-<!-- to be added when all overview diagrams are ready
-:::image type="content" source="media/powerplatform-integrations.svg" alt-text="Shows how Business Central integrates to M365" lightbox="media/powerplatform-integrations.svg"::: -->
+:::image type="content" source="media/powerplatform-integrations.svg" alt-text="Shows how Business Central integrates to Power Platform" lightbox="media/powerplatform-integrations.svg"::: 
 
 [!INCLUDE [prod_short](../includes/prod_short.md)] integrates to the following Power Platform products and services:
 - Power Apps
@@ -46,7 +71,7 @@ For more information on how to explore and develop against APIs, best practices,
 - Power BI
 - Power Pages
 
-For more information, see [Integrating Business Central with Microsoft 365](../powerplatform/powerplatform-integration-overview.md).
+For more information, see [Integrating Business Central with Power Platform](../powerplatform/powerplatform-integration-overview.md).
 
 
 ## Built-in: Integrating Business Central with Dataverse
@@ -69,20 +94,12 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Dynamic
 
 For more information, see [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
 
+
 ## Built-in: Integrating Business Central with Shopify
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Shopify by installing and configuring the Shopify Connector app. By connecting your Shopify store (or stores) with [!INCLUDE[prod_short](../includes/prod_short.md)], you can maximize your business productivity and manage and view insights from your business and your Shopify store as one unit.
 
 For more information, see [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started).
-
-
-## Built-in: Telemetry with Azure Application Insights
-
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Azure Application Insights by enabling the telemetry feature. With telemetry, system owners can look at usage and lifecycle operations of environments/apps, diagnose problems, and analyze operations that affect performance.
-
-:::image type="content" source="../developer/media/telemetry-architecture.svg" alt-text="Shows how Environment-level telemetry and App/extension-level telemetry works in Business Central AL" lightbox="../developer/media/telemetry-architecture.svg":::
-
-For more information, see [Monitoring and Analyzing Telemetry in Azure Application Insights](../administration/telemetry-overview.md).
 
 
 ## Integrating to external systems from AL code: calling external services
@@ -93,48 +110,49 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 
 For more information, see [Integrating to external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
+
 ## Integrating to external systems from AL code: Azure services
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Blob Services, Azure File Services, Azure Functions, or Azure Key Vault. 
 
 :::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
-For more information, see [Integrating Business Central with Azure services](./azure-integration-overview.md).
+For more information, see [Integrating Business Central with Azure services](./integration-azure-overview.md).
 
-## Integrating to external systems from AL code: copilot
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure Open AI Service to include copilot and generative AI experiences. 
+## Integrating Business Central with infrastructure services
+
+[!INCLUDE[prod_short](../includes/prod_short.md)] integrates to a few fundamental infrastructure services for operations such as authentication, authorization, auditing, telemetry, and printing.
+
+Here are some supported integrations between Business Central and fundamental services:
+
+- Authentication and authorization: [!INCLUDE[microsoft_entra_name](includes/m365-entra-name.md)]
+- Network security: [!INCLUDE[azure_security_service_tags_name](includes/azure-security-service-tags-name.md)]
+- Telemetry: [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]
+- Local printers: [!INCLUDE[m365_universal_print](../includes/universal-print-name.md)]
+
+For more information, see [Integrating Business Central with infrastructure services](integration-infrastructure-overview.md).
+
+
+## Integrating AI by extending Copilot in Business Central
+
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure Open AI Service to extend Copilot in Business Central with new generative AI capabilities.
 
 ![Shows the tasks in the generative-AI development](media/dev-generative-ai-overview.svg)
 
 For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
 
 
-## Integrating to external systems from AL code: Microsoft Teams
-
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Microsoft Teams. [!INCLUDE [prod_short](../includes/prod_short.md)] offers an app that connects Microsoft Teams to the data in [!INCLUDE [prod_short](../includes/prod_short.md)] so that users can quickly share details across team members and respond faster to inquiries. 
-
-[![Teams integration with Business Central.](media/teams-intro-v3.png)](media/teams-intro-v3.png#lightbox)
-
-For more information, see [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md).
 
 ## See also
 
 [Web services overview](../webservices/web-services.md)  
 [Developing Connect apps](../developer/devenv-develop-connect-apps.md)   
-[Business Central connector for Power Platform](/connectors/dynamicssmbsaas)   
-[Integrating with Microsoft Power Apps overview](../powerplatform/power-apps-overview.md)  
-[Integrating with Microsoft Power Automate overview](../powerplatform/power-automate-overview.md)  
-[Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md)  
-[Integrating with Microsoft Power BI](/dynamics365/business-central/admin-powerbi-overview)  
-[How users can embed Power BI Reports in Business Central](/dynamics365/business-central/across-working-with-powerbi)  
-[How AL developers can add Power BI Reports to pages](../developer/devenv-power-bi-report-parts.md)  
+[Integrating Business Central with Office apps and Microsoft 365](m365-integration-overview.md)  
+[Integrating Business Central with Power Platform](../powerplatform/powerplatform-integration-overview.md)  
 [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md)  
 [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
 [Integrating Business Central with Shopify](/dynamics365/business-central/shopify/get-started)  
-[Integrating Business Central with Azure Application Insights](../administration/telemetry-overview.md)
 [Integrating to external services from AL using the HttpClient data type](../developer/devenv-httpclient.md)  
-[Integrating Business Central with Azure services](./azure-integration-overview.md)
-[Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml)
-[Integrating Business Central with Azure services](./azure-integration-overview.md)
-[Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md)  
+[Integrating Business Central with Azure services](./integration-azure-overview.md)   
+[Integrating AI using developer tools for Copilot](../developer/ai-integration-landing-page.yml)  
