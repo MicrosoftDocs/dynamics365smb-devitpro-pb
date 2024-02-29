@@ -38,13 +38,17 @@ The steps in this section configure the data migration globally for all companie
 
 1. Set the dimensions.
 
-   Select the **Set All Dimensions** action to assign dimensions for all companies. Then select the two segments from Dynamics GP that want to use as the global dimensions in Business Central. The remaining segments are automatically set up as shortcut dimensions. [Learn more about dimensions in Business Central](/dynamics365/business-central/finance-dimensions).
+   Select the **Set All Dimensions** action to assign default dimensions for all companies. Then select the two segments from Dynamics GP that want to use as the global dimensions in Business Central. The remaining segments are automatically set up as shortcut dimensions. [Learn more about dimensions in Business Central](/dynamics365/business-central/finance-dimensions).
+
+   If you're migrating several companies that they all have the same segments.  If they differ it will fill in only the companies that the selections apply and then down in the Per Company section they will have to manually fill in the segments for the other companies that have different segment names. 
+
+   You also specify the dimensions separately for each company in the **Per company** section of the page. If they differ it will fill in only the companies that the selections apply and then down in the Per Company section they will have to manually fill in the segments for the other companies that have different segment names. Per company** sectio
 
 1. Choose the modules to migrate.
 
    Use the **Modules** section to choose the specific modules you want to migrate data from to Business Central. By default, all modules are selected for migration. If you don't want to migrate data for a module, turn off its switch. For example, if you don't want to migrate data for payables, turn off the **Payables** switch. In this case, the **Open Purchase Orders** switch is automatically turned off because the open purchase orders module relies on vendors, which are part of the payables module.
 
-   If you're migrating the General Ledger module, be sure to go the **Per Company** section and specify the **Oldest GL Year** field. The year and all future years are migrated to Business Central. 
+   If you're migrating the General Ledger module, be sure to go the **Per Company** section and specify the **Oldest GL Year** field. The year and all future years are migrated to Business Central. If you don't set the **Oldest GL Year** field, all years are migrated.
 1. Choose whether to migrate master data only for modules.
 
    Use the **Master data only** section to specify those modules for which you only want to migrate master data. For example, if you only want to migration bank account information, turn on the **Bank** switch. Bank transactions aren't migrated in this case.
@@ -80,9 +84,9 @@ Use the **Per company** section to set the data migration settings separately fo
 
 Use the following fields to specify how far back in time you want to migrate GL account summary data and historical snapshots:
 
-- **Oldest GL Year** - Use this field to select from which year in the past you want to migrate account summary transactions. Account summary transactions are generated and posted for open and history years that are set up in Dynamics GP. The summary amounts are created based on the fiscal periods set up in Dynamics GP. For example, suppose 2019, 2020, 2021, and 2022 are historical years in Dynamics GP, but you only wanted to migrate data from 2021 and later. In this case, you set the **Oldest GL Year** to 2021. As a result, summary transactions for 2019 and 2020 aren't migrated to Business Central.
+- **Oldest GL Year** - Use this field to select from which year in the past you want to migrate GL account summary transactions. If the **Oldest GL Year** field is empty, all years are migrated. Account summary transactions are generated and posted for open and history years that are set up in Dynamics GP. The summary amounts are created based on the fiscal periods set up in Dynamics GP. For example, suppose 2019, 2020, 2021, and 2022 are historical years in Dynamics GP, but you only wanted to migrate data from 2021 and later. In this case, you set the **Oldest GL Year** to 2021. As a result, summary transactions for 2019 and 2020 aren't migrated to Business Central.
 
-- **Oldest Snapshot Year** - Use this field to select from which year in the past you want to migrate history snapshots.
+- **Oldest Snapshot Year** - Use this field to select from which year in the past you want to migrate history snapshots. If the **Oldest GL Year** field is empty, history snapshots from all years are migrated.
 
 ## Next steps
 

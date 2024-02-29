@@ -27,6 +27,7 @@ The **Cloud Migration Management** page in the web client is a central hub for m
    ![Shows the flow for cloud migration setup ](../developer/media/gp-migration-management.png)
 ## Available actions
 
+
 > [!NOTE]
 > Some actions aren't available until after you've set up cloud migration, and others aren't active for Dynamics GP migration. 
 
