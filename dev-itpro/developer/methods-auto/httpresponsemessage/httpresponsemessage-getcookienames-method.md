@@ -33,7 +33,26 @@ The list of cookie names.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+
+## Remarks
+
+The `HttpResponseMessage.GetCookieNames` method allows you to get the list of cookie names from the response message. 
+
+```al
+// This example shows how to get the list of cookie names from the response message
+
+local procedure GetCookieNamesHttpResponseMessageExample()
+var
+    Response: HttpResponseMessage;
+    CookieNames: List of [Text];
+begin
+    // Get list of cookie names from the response
+    CookieNames := Response.GetCookieNames();
+end;
+```
+
+## See also
+
 [HttpResponseMessage Data Type](httpresponsemessage-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
