@@ -35,7 +35,7 @@ The following methods are available on instances of the Cookie data type.
 
 ## Remarks
 
-The `Cookie` data type allows you to efficiently work with HTTP cookies. You can use the `Cookie` data type to send and receive cookies while sending HTTP requests. The `Cookie` data type provides methods to get and set the domain, expiration date, name, path, and value of a cookie. It also provides a method to check if a cookie is `Secure`.
+The `Cookie` data type allows you to efficiently work with HTTP cookies. You can use the `Cookie` data type to send and receive cookies while sending HTTP requests. The `Cookie` data type provides methods to get and set the domain, expiration date, name, path, and value of a cookie. It also provides a method to check if a cookie is `Secure`. You can choose to automatically reuse response cookies in subsequent requests, handle cookies manually, or a mix of both.
 
 ## See also
 
