@@ -1312,6 +1312,7 @@
 ### [Web service telemetry](webservices/web-service-telemetry.md)
 
 ### Web services security
+#### [Web service security overview](webservices/web-service-security.md)   
 #### [Authentication](webservices/web-services-authentication.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-service authentication](administration/automation-apis-using-s2s-authentication.md)
@@ -1376,16 +1377,11 @@
 #### [Cloud migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
 #### [API Developer Overview](developer/devenv-api.md)
 
-### Exposing pages as OData/SOAP web service endpoints
-#### [Publishing a web service](webservices/publish-web-service.md)
-#### [Handling UI interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
-
 ### OData
 #### [Overview](webservices/odata-web-services.md)
 #### [OData client performance](webservices/odata-client-performance.md)
-#### [Using filters with OData/API calls](developer/devenv-connect-apps-filtering.md)
+#### [Using filters with OData/REST API calls](developer/devenv-connect-apps-filtering.md)
 #### [Troubleshooting OData calls](webservices/dynamics-error-codes.md)
-#### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Return or obtain an AtomPub document](webservices/return-obtain-an-atompub-document.md)
 #### [Return or obtain service metadata EDMX document](webservices/return-obtain-service-metadata-edmx-document.md)
 #### [Return or obtain a JSON document](webservices/return-obtain-json-document.md)
@@ -1396,13 +1392,16 @@
 #### [Using OData on queries set with top number of rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
 #### [Using OData to modify data](webservices/use-odata-to-modify-data.md)
 #### [Using OData transactional $batch requests](webservices/use-odata-batch.md)
-#### [Creating and interacting with an OData V4 bound action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 #### [Known OData limitations](webservices/odata-known-limitations.md)
+
+### Publishing pages and codeunits as OData/SOAP web service endpoints
+#### [Publishing a web service](webservices/publish-web-service.md)
+#### [Handling UI interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
+#### [Creating and interacting with an OData V4 bound action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 
 ### SOAP
 #### [Overview](webservices/soap-web-services.md)
 #### [SOAP service URIs](webservices/soap-web-service-uris.md)
-#### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Basic operations](webservices/basic-page-operations.md)
 ##### [Create](webservices/create-operation.md)
 ##### [CreateMultiple](webservices/CreateMultiple-operation.md)
@@ -1442,6 +1441,32 @@
 #### [Introduction](developer/ai-build-experience-overview.md)
 #### [Build the copilot capability in AL](developer/ai-build-capability-in-al.md)
 #### [Build copilot user experience](developer/ai-build-experience.md)
+
+## Integrating Business Central with Office apps and Microsoft 365
+### [Overview](developer/m365-integration-overview.md)
+### Integrating with Microsoft Excel
+#### [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel)  
+#### [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  
+### [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
+### Integrating with Microsoft Onedrive
+#### [Integrating with Onedrive for Business overview (for administrators)](/dynamics365/business-central/across-onedrive-overview)  
+#### [Extending Document Sharing and OneDrive for Business Integration (for developers)](developer/ devenv-extending-document-sharing-onedrive.md)  
+### [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook)  
+### [Integrating with SharePoint (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint)  
+<!-- Microsoft Teams -->
+### Integrating with Microsoft Teams
+#### [Overview](developer/devenv-develop-for-teams.md)
+#### [Extend Teams cards](developer/devenv-develop-for-teams-cards.md)
+#### Tabs
+##### [Add Business Central tabs](developer/devenv-develop-for-teams-tabs.md)
+##### [Add and remove recommended content](developer/devenv-develop-for-teams-tab-content.md)
+#### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
+#### [FAQ](developer/devenv-dev-faq-teams.md)
+<!-- end Microsoft Teams -->
+### Integrating with Microsoft Onedrive
+#### [Using Word Templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout)  
+#### [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge)  
+
 
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
@@ -1516,17 +1541,6 @@
 <!-- end Microsoft Power Platform -->
 
 ## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
-
-<!-- Microsoft Teams -->
-## Integrating with Microsoft Teams
-### [Overview](developer/devenv-develop-for-teams.md)
-### [Extend Teams cards](developer/devenv-develop-for-teams-cards.md)
-### Tabs
-#### [Add Business Central tabs](developer/devenv-develop-for-teams-tabs.md)
-#### [Add and remove recommended content](developer/devenv-develop-for-teams-tab-content.md)
-### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
-### [FAQ](developer/devenv-dev-faq-teams.md)
-<!-- end Microsoft Teams -->
 
 <!-- Azure services -->
 ## Integrating with Azure services
