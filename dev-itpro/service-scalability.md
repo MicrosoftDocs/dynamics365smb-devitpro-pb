@@ -38,7 +38,7 @@ In the context of Business Central, these needs might, for example, involve crea
 
 The following are real-life examples of such workloads measured per single environment, for a selection of customers already running in Business Central online.
 
-> [!IMPORTANT]
+> [!NOTE]
 > The volumes presented in this document should be considered as a sample selection of what the service handles today. They're not the highest measurements observed in the service or the limits of what the service can handle.
 
 ### Create sales or purchase orders
