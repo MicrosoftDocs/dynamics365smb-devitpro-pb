@@ -1,7 +1,7 @@
 ---
 title: OData Web Services
 description: Learn about OData web services and how to create and maintain these services. 
-ms.custom: bap-remplate
+ms.custom: bap-template
 ms.date: 02/28/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
