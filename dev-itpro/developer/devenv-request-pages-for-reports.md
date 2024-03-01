@@ -144,7 +144,7 @@ Starting with Business Central 2023 release wave 1 (version 22), you can set the
 For more information about configuring context-sensitive help, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md). 
 
 ## Saving settings on the request page
-When running reports, users can use one or more *saved settings* that they can apply to the report from the request page. For more information on this article, see [Manage Saved Settings for Reports and Batch jobs](/dynamics365/business-central/reports-saving-reusing-settings.md)
+When running reports, users can use one or more *saved settings* that they can apply to the report from the request page. For more information on this article, see [Manage Saved Settings for Reports and Batch jobs](/dynamics365/business-central/reports-saving-reusing-settings)
 
 
 ## Request page and preview triggers and operations
