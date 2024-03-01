@@ -1,6 +1,6 @@
 ---
-title: OData/API Webservice Client Performance
-description: Learn about how to develop efficient and fast OData/API webservice clients for Business Central.
+title: OData/API web service client performance
+description: Learn about how to develop efficient and fast OData/API web service clients for Business Central.
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
@@ -10,7 +10,7 @@ ms.author: kepontop
 ms.date: 07/03/2023
 ---
 
-# OData/API webservice client performance
+# OData/API web service client performance
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports web services based on the OData standard (REST APIs and queries/pages/codeunits exposed as OData endpoints) to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the web service client that calls the endpoints). 
 
