@@ -373,7 +373,8 @@
 ### [Introduction](administration/migrate-data.md)
 <!--### [Understand Data Migration](administration/migrate-data-overview.md)-->
 ### Migrate from Business Central on-premises
-#### [End-to-end overview](administration/migrate-business-central-on-premises.md)
+#### Overview
+#### [End-to-end process](administration/migrate-business-central-on-premises.md)
 #### [Managing cloud migration](administration/migration-manage.md)
 #### Prepare
 ##### [Upgrade to Business Central v14](upgrade/Upgrade-Considerations.md#online)
@@ -397,13 +398,16 @@
 #### Upgrade data
 ##### [Run data upgrade](administration/migration-data-upgrade.md)
 ##### [Skip API data upgrade](administration/migration-skip-api-data-upgrade.md)
-#### [Complete cloud migration](administration/migration-finish.md)
+#### Finish cloud migration
+##### [Complete cloud migration](administration/migration-finish.md)
 ### Migrate from Dynamics NAV
 #### [Migrate from Dynamics NAV to Business Central online](administration/migrate-nav.md)
 ### Migrate from Dynamics GP
-#### [End-to-end overview](administration/migrate-gp-overview.md)
-#### [Dynamics GP data migrated to Business Central](administration/migrate-dynamics-gp.md)
-#### [Managing cloud migration](administration/migration-manage-gp.md)
+#### Overview
+##### [End-to-end process](administration/migrate-gp-overview.md)
+##### [Dynamics GP data migrated to Business Central](administration/migrate-dynamics-gp.md)
+##### [Compare work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
+##### [Managing cloud migration](administration/migration-manage-gp.md)
 #### Prepare
 ##### [Plan cloud migration](administration/cloud-migration-plan-prepare-gp.md)
 ##### [Move database to Azure Data Lake (optional)](administration\cloud-migration-azure-data-lake-gp.md)
@@ -420,8 +424,9 @@
 ##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
 #### Upgrade data
 ##### [Run data upgrade](administration/migration-data-upgrade-gp.md)
+#### Finish cloud migration
+##### [Complete cloud migration](administration/migration-finish-gp.md)
 #### [Complete cloud migration](administration/migration-finish-gp.md)
-#### [Compare work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
 ### [FAQ](administration/faq-migrate-data.md)
 ### [Troubleshoot](administration/migration-troubleshooting.md)
 <!-- end migrate -->
