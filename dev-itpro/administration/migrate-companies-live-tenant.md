@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 Migrating Business Central companies from on-premises to an online tenant after [completing cloud migration and going live](migration-finish.md) isn't officially supported. We advise that you move all companies to the tenant before going live. Moving companies into a live tenant can lead to data loss in the live companies. You're not prevented from setting up cloud migration and migrating one or companies to a live tenant. There might be special cases when it's necessary. However, the operation is done at your own risk because we can't necessarily solve data loss problems, so you have to manage them.
 
-The following sections discuss potential risks when migrating a company to a live tenant and how you can minimize them.
+The following sections discuss potential problems when migrating a company to a live tenant and how you can minimize the risks.
 
 ## Permissions are replaced with Intelligent Cloud permissions set
 
