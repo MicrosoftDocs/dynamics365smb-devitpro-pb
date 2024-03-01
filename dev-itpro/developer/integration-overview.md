@@ -24,7 +24,7 @@ The article describes integration patterns, integration scenarios, and integrati
 
 Most integrations (except for a few built-in integrations) to and from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: REST API, SOAP, and OData. 
 
-[![Shows the three different types of web services in Business Central](media/webservice-stack.svg)](media/webservice-stack.svg#lightbox)
+:::image type="content" source="media/webservice-stack.svg" alt-text="Shows the three different types of web services in Business Central" lightbox="media/webservice-stack.svg":::
 
 The recommended way to use web services for [!INCLUDE[prod_short](../includes/prod_short.md)] is by using the REST API stack. 
 
