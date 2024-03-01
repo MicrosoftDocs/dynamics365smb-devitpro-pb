@@ -34,17 +34,17 @@ Upgrade tags must not be replaced. If they are, open a support ticket immediatel
 
 Running upgrade twice on cloud migration should be avoided at any cost as it can update the data twice. Per-Database data is at risk, but also the Per-Company data. With large upgrades, it can spill over into business hours. If you want to move the company into a live tenant, do the upgrade on-premises and then only replicate the data that belongs to the company.
 
-## Number sequences 
+## Number sequences
 
-Cloud migration is automatically copying the Number Sequences from the on-premises database that belongs only to the companies that are under replicate. After the migration, check the number sequences just in case to make sure that the data wasn't replaced. 
+Cloud migration automatically copies the number sequences from the on-premises database that belong only to the companies that are under replicate. After the migration, check the number sequences to make sure that the data wasn't replaced.
 
 ## Modification of data in replicated companies
 
-Since the system is live, users can incidentally log into the companies that are under migration and change the data. There could be cross company jobs that are running on the company, or the external parties could be accessing the system through APIs or other means. 
+Because the system is live, users can incidentally sign in to the companies that are under migration and change the data. There could be cross company jobs that are running on the company, or the external parties could be accessing the system through APIs or other means.
 
-Make sure that you analyze the integrations that are enabled and communicate with the company that more companies are moved to Business Central online.
+Make sure that you analyze the integrations that are enabled and communicate with the organization that more companies are moved to Business Central online.
 
-Test changes in Sandboxes well 
+Test changes in sandbox environments also.
 
 ## Changing schema or installing extensions
 
@@ -54,6 +54,8 @@ Make sure that there are no changes done by installing extensions or copying/del
 
 After migration, be sure to configure the Dataverse mapping and API integrations on the migrated companies again.
 
-## Next steps
+## See also
 
-If you need to migrate companies to a live tenant, [set up cloud migration](migration-setup.md).
+[Prepare and plan for cloud migration](cloud-migration-plan-prepare.md)  
+[Run cloud migration setup](migration-setup.md)  
+[Business Central migration overview](migrate-business-central-on-premise)  
