@@ -374,8 +374,8 @@
 <!--### [Understand Data Migration](administration/migrate-data-overview.md)-->
 ### Migrate from Business Central on-premises
 #### Overview
-#### [End-to-end process](administration/migrate-business-central-on-premises.md)
-#### [Managing cloud migration](administration/migration-manage.md)
+##### [End-to-end process](administration/migrate-business-central-on-premises.md)
+##### [Managing cloud migration](administration/migration-manage.md)
 #### Prepare
 ##### [Upgrade to Business Central v14](upgrade/Upgrade-Considerations.md#online)
 ##### [Plan cloud migration](administration/cloud-migration-plan-prepare.md)
@@ -426,7 +426,6 @@
 ##### [Run data upgrade](administration/migration-data-upgrade-gp.md)
 #### Finish cloud migration
 ##### [Complete cloud migration](administration/migration-finish-gp.md)
-#### [Complete cloud migration](administration/migration-finish-gp.md)
 ### [FAQ](administration/faq-migrate-data.md)
 ### [Troubleshoot](administration/migration-troubleshooting.md)
 <!-- end migrate -->
