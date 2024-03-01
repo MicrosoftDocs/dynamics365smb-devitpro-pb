@@ -1,9 +1,9 @@
 ---
-title: Keyboard Shortcuts for AL in Visual Studio Code
+title: Keyboard shortcuts for AL in Visual Studio Code
 description: List of keyboard shortcuts for the new development environment (Visual Studio Code).
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 03/01/2024
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -12,7 +12,7 @@ ms.collection: get-started
 
 # Keyboard shortcuts for AL in Visual Studio Code
 
-The following table provides an overview of some of the shortcut key combinations that you can use when you are working in Visual Studio Code. For a complete overview, see [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings).
+The following table provides an overview of some of the shortcut key combinations that you can use when you're working in Visual Studio Code. For a complete overview, see [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings).
 
 ## General in Visual Studio Code
 
@@ -63,7 +63,7 @@ The following table provides an overview of some of the shortcut key combination
 
 ## Debugging in Visual Studio Code
 
-For topics on debugging in AL, see [Debugging](devenv-debugging.md) and [Snapshot Debugging](devenv-snapshot-debugging.md).
+For articles on debugging in AL, see [Debugging](devenv-debugging.md) and [Snapshot Debugging](devenv-snapshot-debugging.md).
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
@@ -77,7 +77,7 @@ For topics on debugging in AL, see [Debugging](devenv-debugging.md) and [Snapsho
 
 ## Profiling in Visual Studio Code
 
-For more information about profiling, see [AL Profiler Overview](devenv-al-profiler-overview.md)
+For more information about profiling, see [AL Profiler Overview](devenv-al-profiler-overview.md).
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
@@ -87,10 +87,8 @@ For more information about profiling, see [AL Profiler Overview](devenv-al-profi
 |<kbd>-</kbd> (minus) | Collapse all nodes.|
 |<kbd>*</kbd> (star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
+## See also
 
-
-## See Also
-
-[Developing Extensions](devenv-dev-overview.md)  
-[Get Started with AL](devenv-get-started.md)  
-[AL Development Environment](devenv-reference-overview.md)
+[Developing extensions](devenv-dev-overview.md)  
+[Get started with AL](devenv-get-started.md)  
+[AL development environment](devenv-reference-overview.md)  
