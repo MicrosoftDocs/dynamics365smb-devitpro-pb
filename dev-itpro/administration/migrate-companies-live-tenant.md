@@ -58,4 +58,4 @@ After migration, be sure to configure the Dataverse mapping and API integrations
 
 [Prepare and plan for cloud migration](cloud-migration-plan-prepare.md)  
 [Run cloud migration setup](migration-setup.md)  
-[Business Central migration overview](migrate-business-central-on-premise)  
+[Business Central migration overview](migrate-business-central-on-premises.md)  
