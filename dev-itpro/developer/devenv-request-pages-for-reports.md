@@ -26,12 +26,19 @@ A request page is a page that is run before the report starts to execute. Reques
 
 By default, a request page is displayed, unless the [UseRequestPage](properties/devenv-userequestpage-property.md) is set to `false`; then the report immediately runs. In this case, end users can't cancel the report. It's still possible to cancel the report, but some pages might print.
 
-By default, without having set anything else, a request page always displays the following buttons:
+A request page will have a predefined set of buttons depending on the report type and the current layout.
 
-- Send to
-- Print
-- Preview
-- Cancel
+The standard buttons are 
+
+|          | Rdlc   | Word	 | Excel	| Processing Only |
+| ----     | ----   | -----	 | -----    | --------------- |
+| Ok       |        |   	 |          | x               |
+| Cancel   | x      | x      | x  	    | x               |
+| Preview  | x      | x      |    	    |                 |
+| Print    | x      | x      |    	    |                 |
+| SendTo   | x      | x      | x   	    |                 |
+| Download |        |        | x   	    |                 |
+
 
 Additionally, you can add more options on the request page to allow the end user to filter the data displayed. 
 
@@ -60,11 +67,7 @@ report 50103 "Customer List"
 
 For more information about the report object, see [Report Object](devenv-report-object.md).
 
-By default, for every data item in the report, a FastTab for defining filters and sorting is created on the request page. To remove a FastTab from a request page, don't define any `RequestFilterFields` for the data item and set the [DataItemTableView](properties/devenv-dataitemtableview-property.md) property to define sorting. The request page is displayed, but there's no tab for this data item or table element.
-
-If a `DataItemTableView` or `SourceTableView` isn't defined, then end users can select a sort column and sort order at runtime.
-
-In a complex report that uses data from several tables, the functionality might depend on a specific key and sort order. Design your reports so that end-users can't change the sort order in a way that affects their functionality.
+By default, for every data item in the report, a FastTab for defining filters is shown on the request page. To remove a FastTab from a request page, don't define any RequestFilterFields for the data item and set the DataItemTableView property to define sorting. Then no tab for this data item or table element is displayed on the request page. 
 
 For data items and table elements whose source table contains calculated fields, such as amounts and quantities, the **Filter totals by:** section is automatically included on the request page, which allows you to adjust various dimensions that influence calculations.
 
