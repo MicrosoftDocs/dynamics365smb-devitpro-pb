@@ -32,7 +32,7 @@ Any user running the cloud migration setup flow as delegated administrator must 
 > [!TIP]
 > We recommend that you start the migration by running the assisted setup from a company other than the company that you are migrating data to. For example, sign into the demonstration company, CRONUS, and start the process there. This way, you can make sure that all users are logged out of the original company and the target company.
 >
-> Be aware of the storage capacity of your online tenant. If you need more storage than the default 80 GB, you can buy additional environments or additional storage capacity. Storage capacity is determined as 80GB + allowances per licensed Essential/Premium user + any storage capacity licenses. To learn more, go to [Managing Capacity](../../administration/tenant-admin-center-capacity.md).
+> Be aware of the storage capacity of your online tenant. If you need more storage than the default 80 GB, you can buy additional environments or additional storage capacity. Storage capacity is determined as 80GB + allowances per licensed Essential/Premium user + any storage capacity licenses. To learn more, go to [Managing Capacity](../administration/tenant-admin-center-capacity.md).
 
 ## Run the cloud migration setup
 
