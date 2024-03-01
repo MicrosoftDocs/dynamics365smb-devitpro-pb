@@ -65,6 +65,7 @@ It's important to have a solid migration strategy in place to ensure a smooth tr
 
 1. [Enable change tracking](/sql/relational-databases/track-changes/enable-and-disable-change-tracking-sql-server) on the on-premises production database for the expected number of days between the first backup for replication and the next time you'll back up and replicate. A minimum of three days is enforced. The number of days for which change tracking is enabled can't be changed later without resetting change tracking altogether.
 
+
    > [!NOTE]
    > - Long retention periods for change tracking data might cause database resource starvation when high volumes of data are changed on the database, which may lead to reduced database performance and/or loss of the change tracking data. Pick a change tracking period that strikes a balance between migration strategy needs and available resources on the on-premises database.
    > - Don't enable change tracking if you'll be running data upgrade on-premises, because it won't work.
