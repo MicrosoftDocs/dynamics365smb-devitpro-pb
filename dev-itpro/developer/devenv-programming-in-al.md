@@ -22,7 +22,7 @@ With AL, you can create business rules to ensure that the data, which is stored 
 
 ## Where to write AL code
 
-Almost every object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] contains triggers where you can add your AL code. Triggers exist for the following objects:  
+Almost every object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] contains triggers where you can add your AL code. Triggers exist for the following objects.
 
 - Tables and table extensions
 - Table fields  
