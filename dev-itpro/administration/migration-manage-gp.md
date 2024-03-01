@@ -25,8 +25,8 @@ The **Cloud Migration Management** page in the web client is a central hub for m
 - The **Migration Information** tiles, as illustrated in the following figure, show the number of migrated tables and the number of tables that didn't migrate due to warnings or errors. Select a tile to drill into more details and guidance to correct any errors. There's also a tile that shows tables that aren't migrated due to problems with the data. For example, tables with permissions aren't migrated from on-premises solutions because permissions work differently between online and on-premises.
 
    ![Shows the flow for cloud migration setup ](../developer/media/gp-migration-management.png)
-## Available actions
 
+## Available actions
 
 > [!NOTE]
 > Some actions aren't available until after you've set up cloud migration, and others aren't active for Dynamics GP migration. 
@@ -44,7 +44,7 @@ The **Cloud Migration Management** page in the web client is a central hub for m
 |Disable Cloud Migration    |Opens a guide that helps you through a checklist of instructions to disable the cloud migration configuration. Use the guide after you migrate the data that you want to migrate, or when you want to upgrade the target environment. Once the steps in this process are complete, you can use your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant as your primary solution, or you can upgrade the environment. [Learn more](migration-finish.md)|
 |Check for Update           |If the migration service changed, we publish the new service. This action checks to see whether a new service is available. The check displays the version of the service you're currently running and then also display the latest service published. Then, you can choose to update your solution. We recommend that you update the solution if a newer version is available.|
 |Setup Checklist      |When you're ready to use your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant as your main system, the tables that weren't migrated must be set up or defined as needed. The checklist page shows recommended steps to complete your migration to the cloud.|
-|Azure Data Lake|This option is available if the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant is connected to Dynamics GP. For more information, see [Migrate Dynamics GP to Azure Data Lake](migrate-dynamics-gp.md#lake).|
+|Azure Data Lake|This option is available if the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant is connected to Dynamics GP. For more information, see [Migrate Dynamics GP to Azure Data Lake](cloud-migration-azure-data-lake-gp.md).|
 
 ## Next steps
 

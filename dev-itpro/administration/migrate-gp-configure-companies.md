@@ -34,7 +34,7 @@ You don't necessarily have to make any changes on this page. However, you're req
 
 ## Configure migration globally
 
-The steps in this section configure the data migration globally for all companies that you chose to migrate cloud migration setup. If you're migrating more than one company, you can specify the [configuration on a per-company basis](#configure-data-migration-per-company).
+The steps in this section configure the data migration globally for all companies that you chose to migrate cloud migration setup. If you're migrating more than one company, you can specify the [configuration on a per-company basis](#configure-migration-per-company).
 
 1. Set the dimensions.
 
