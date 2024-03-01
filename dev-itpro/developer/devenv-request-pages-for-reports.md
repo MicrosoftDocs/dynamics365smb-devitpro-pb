@@ -26,9 +26,7 @@ A request page is a page that is run before the report starts to execute. Reques
 
 By default, a request page is displayed, unless the [UseRequestPage](properties/devenv-userequestpage-property.md) is set to `false`; then the report immediately runs. In this case, end users can't cancel the report. It's still possible to cancel the report, but some pages might print.
 
-A request page will have a predefined set of buttons depending on the report type and the current layout.
-
-The standard buttons are 
+A request page has a predefined set of buttons depending on the report type and the current layout. The standard buttons are 
 
 | Button   | Rdlc   | Word	 | Excel	| Processing Only |
 | ----     | ----   | -----	 | -----    | --------------- |
@@ -151,7 +149,7 @@ When running reports, users can use one or more *saved settings* that they can a
 
 The following diagram illustrates the main trigger and operation sequence related to request page invocation and button actions. 
 
-[![Report trigger main flow.](media/report-trigger-main-flow.png)](media/report-trigger-main-flow.png#lightbox)
+:::image type="content" source="media/report-trigger-main-flow.png" alt-text="Shows the report trigger main flow" lightbox="media/report-trigger-main-flow.png":::
 
 For a more detailed discussion on these concepts, see [Report triggers and operations](devenv-report-triggers.md#requestpage)
 
