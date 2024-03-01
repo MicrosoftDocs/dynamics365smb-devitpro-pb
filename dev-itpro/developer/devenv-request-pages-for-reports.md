@@ -30,7 +30,7 @@ A request page will have a predefined set of buttons depending on the report typ
 
 The standard buttons are 
 
-|          | Rdlc   | Word	 | Excel	| Processing Only |
+| Button   | Rdlc   | Word	 | Excel	| Processing Only |
 | ----     | ----   | -----	 | -----    | --------------- |
 | Ok       |        |   	 |          | x               |
 | Cancel   | x      | x      | x  	    | x               |
