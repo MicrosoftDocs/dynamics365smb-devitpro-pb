@@ -12,7 +12,7 @@ ms.date: 07/03/2023
 
 # OData/API webservice client performance
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports OData web services (APIs and pages exposed as OData endpoints) to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the web service client that calls the endpoints). 
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports web services based on the OData standard (REST APIs and queries/pages/codeunits exposed as OData endpoints) to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the web service client that calls the endpoints). 
 
 :::image type="content" source="../developer/media/webservice-stack.svg" alt-text="Shows the three different types of web services in Business Central" lightbox="../developer/media/webservice-stack.svg":::
 
