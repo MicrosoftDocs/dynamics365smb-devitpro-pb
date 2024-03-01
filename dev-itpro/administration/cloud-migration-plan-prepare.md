@@ -25,7 +25,9 @@ You can choose to migrate data for all companies or only specific companies. It'
 [!INCLUDE [migrate-limits](../developer/includes/migrate-limits.md)]
 
 > [!NOTE]
-> Per-database tables are always migrated, no matter which companies are selected for a migration run.
+> - Per-database tables are always migrated, no matter which companies are selected for a migration run.
+>
+> - We advise that you move all companies to the tenant before going live. Moving companies into a live tenant can lead to data loss in the live companies. [Learn more about migrating companies to live tenants](migrate-companies-live-tenant.md)].
 
 ### Extension data
 
