@@ -12,7 +12,6 @@ ms.custom: bap-template
 
 # Change how data is replicated to Business Central online
 
-
 In this article, you learn how to use the **Change how the data is replicated** feature in Business Central online. This feature allows you to include or exclude specific tables from cloud migration and specify whether to replace the full table with data from the on-premises table or to update and insert only the missing records.
 
 ## Considerations before you start
