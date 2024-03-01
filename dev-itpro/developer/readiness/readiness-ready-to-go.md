@@ -4,7 +4,7 @@ description: "Resources for partners contains a set of resources, services, and 
 author: a-emniel
 ms.custom: na
 ms.date: 04/04/2023
-ms.reviewer: na
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -77,8 +77,14 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Download the keyboard shortcut PDF: [aka.ms/BCKeyboardShortcutsPDF](https://aka.ms/BCKeyboardShortcutsPDF)
 
 ## AI innovation and Copilot
+
 - Integrating AI using Developer Tools for Copilot: [aka.ms/BCStartCodingWithAILearn](https://aka.ms/BCStartCodingWithAILearn)
 - Copilot for Dynamics 365: [learn.microsoft.com/copilot-for-dynamics365](/microsoft-cloud/dev/copilot/copilot-for-dynamics365)
+- Business Central pitch deck: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal​)
+- Business Central Copilot playlist on YouTube: [aka.ms/BCYouTube​](https://aka.ms/BCYouTube​)
+- Business Central Under the Hood episode 1: Developing AI in Business Central: [youtube.com]​(https://www.youtube.com/watch?v=jdevJbGgB-k&t=792s)
+- An overview of Copilot in Business Central by Mike Morton (blog): [https://aka.ms/bc-ai​](https://aka.ms/bc-ai​)
+- Dynamics Communities interview with Mike Morton about Business Central Copilot capabilities: [dynamicscommunities.com](https://dynamicscommunities.com/ug/copilot-ug/microsofts-mike-morton-explains-new-copilot-capabilities-inside-business-central/)
 
 ## Reporting and business intelligence  
 
