@@ -184,13 +184,13 @@ No. These operational limits are applied to all users in the same way.
 
 ### Do more users mean more throughput per environment?
 
-Yes, you can increase throughput by distributing/spreading your workload across multiple users. The more users you have in your environment, the more resources you can consume in it at/around the same time, as long as we can continuously scale our resources. If a lot of resources are consumed at/around the same time and we couldn't sufficiently scale our resources, you might experience delays/throttling in consuming your resources.
+Yes, you can increase throughput by distributing and spreading your workload across multiple users. The more users you have in your environment, the more resources you can consume in it at or around the same time, as long as we can continuously scale our resources. If a lot of resources are consumed at/around the same time and we couldn't sufficiently scale our resources, you might experience delays/throttling in consuming your resources.
 
 ### Why are my OData/SOAP requests throttled when the current per-user speed/rate limits are much higher than the previous per-environment speed/rate limits?
 
 Your OData/SOAP requests will be throttled if they exceed the current per-user speed/rate limits that are strictly enforced. They might not have been throttled in the past even if they had exceeded the previous per-environment speed/rate limits, because those limits weren't strictly enforced. They served as recommendations or warnings for you to implement a retry logic with cool-off period that should already be in place. For more information, see [Working with API Rate Limits](../api-reference/v2.0/dynamics-rate-limits.md). 
 
-If your integration is using a single user/service principal to perform a large number of operations, or if it's an interactive client application that uses a single user/service principal to send all OData/SOAP requests to Business Central online, the per-user operational limits can be reached fairly quickly. You can help prevent this situation and maintain/increase your throughput by distributing/spreading your workload in smaller batches across multiple users/service principals.
+If your integration is using a single user/service principal to perform a large number of operations, or if it's an interactive client application that uses a single user/service principal to send all OData/SOAP requests to Business Central online, the per-user operational limits can be reached fairly quickly. You can help prevent this situation and maintain/increase your throughput by distributing or spreading your workload in smaller batches across multiple users/service principals.
 
 ## See also
 
