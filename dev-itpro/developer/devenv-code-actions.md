@@ -1,5 +1,5 @@
 ---
-title: "AL code actions"
+title: AL code actions
 description: Code actions can help you fix code issues either for your project alone or for the entire workspace.
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -11,7 +11,7 @@ ms.collection: get-started
 
 # AL code actions
 
-[!INCLUDE [2022_releasewave2_changed](../includes/2022_releasewave2_changed.md)]
+[!INCLUDE [2024_releasewave1_changed](../includes/2024_releasewave1_changed.md)]
 
 [!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
@@ -32,6 +32,7 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the following code a
 - Set the default value for `ApplicationArea` on a page or a report level and remove all duplicates on field level. This code action can be applied to an object, a document, a project, or a workspace.
 - Convert existing event parameter in event subscribers from string literal to new identifier format. Fix event subscriber on the specific EventSubscriber instance, the active file, the active project, or the whole workspace. This makes it easy and controllable to opt in to the new syntax.
 - Insert `using` statement for a missing namespace. Fix for instance, document, project, or workspace.
+- Move the tooltip from page controls to table fields or clean them up from the page in case of duplicates. For more information, see [Tooltip property](properties/devenv-tooltip-property.md).
 
 ## Examples
 
