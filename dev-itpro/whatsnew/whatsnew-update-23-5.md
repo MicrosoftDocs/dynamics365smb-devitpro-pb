@@ -20,14 +20,15 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 ## Feature changes
 
 - [Improved update release processes](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/improved-update-release-processes)
-- [Control partner access per environment](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/control-partner-access-per-environment)
 
 ## Localization updates
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-| Spain | Sending multiple documents in SII | Improved feature related with posting lots of documents, where multiple job queue entries trigger and send the same documents to the API, resulting in "Factura Duplicada" error. Now when one job queue entry is executed, it reserves the set of documents and the job queue entry doesn't consider same documents for sending. |
-| Denmark | VAT E-submission | With new improved feature, the customer doesn't need to posses the certificate, because they can use Microsoft default certificate instead. |
+| Norway | Migrate Electronic VAT submission solution to the new ID-porten system | IChanges in the new Noweigian ID-porten for Electronic VAT Submissions are updated. Authentication URL and Login URL have been changed and existing users need to update the Electronic VAT setup with the new endpoints. |
+| Mexico | Carta Porte Complement 3.0 update | Carta Porte functionality and schemas in Mexico are updated to the version 3.0 and some new fields, catalogues, and features have been added or changed as new version requires more detailed information for some processes. |
+	
+
 
 ## Release Plan
 
@@ -66,7 +67,7 @@ Prepare for features becoming mandatory soon on [aka.ms/BCFeatureMgmt](https://a
 Following features may have potentially disruptive effect on extensions and apps you have installed in the future, when they become mandatory. These features are now optional to use and can be enabled in the [Feature Management](https://dynamics.microsoft.com/en-us/business-central/signin/?ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2F%3Fpage%3D2610%26noSignUpCheck%3D1) page. 
 
 **Extending G/L Entry Aggregations When Posting Invoices** feature is generally available with Update 23.1 and becoming mandatory in Update 26.0 (2025 Release Wave 1). The Invoice Post. Buffer table is replaced by the use of the Invoice Posting interface. The replacement helps resolve extensibility issues for the legacy Invoice Post. Buffer table. You can now use your own implementation of G/L invoice posting. If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to [Extending G/L Entry Aggregations When Posting Invoices](/dynamics365/business-central/dev-itpro/developer/devenv-invoice-posting-example).
- 
+
 **New extensible exchange rate adjustment**, including posting review feature is generally available with Update 23.0 and becoming mandatory in Update 26.0 (2025 Release Wave 1) The legacy Exchange Rates Adjustment Report is being replaced by a new capability that increases extensibility and makes it easier to comply with local and industry-specific requirements. It also gives you more control over exchange rate adjustments with a posting preview and how dimension values are post when you adjust exchange rate, and better reporting. 
 If you're a developer and want to learn more about how to extend G/L entry aggregations when posting invoices, go to [Extending Currency Exchange Rate Adjustments](/dynamics365/business-central/dev-itpro/developer/devenv-extend-exchange-rates). 
 Work with your partner to update extensions and apps you have installed before above features become mandatory. To view complete list of optional features and features that are becoming mandatory, go to [aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt).
