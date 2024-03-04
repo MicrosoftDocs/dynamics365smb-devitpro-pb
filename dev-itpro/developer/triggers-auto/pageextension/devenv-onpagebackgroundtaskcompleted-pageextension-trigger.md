@@ -20,7 +20,7 @@ Runs after a page background task has successfully completed.
 
 ## Syntax
 ```AL
-trigger OnPageBackgroundTaskCompleted(TaskId: Integer; Results: Dictionary[Text,Text])
+trigger OnPageBackgroundTaskCompleted(TaskId: Integer; Results: Dictionary of [Text, Text])
 begin
     ...
 end;
@@ -33,7 +33,7 @@ end;
 Specifies the ID of the background task that was run. The ID is automatically assigned to the background task when it is created.  
 
 *Results*  
-&emsp;Type: [Dictionary[Text,Text]](../../methods-auto/dictionary/dictionary-text-text-data-type.md)  
+&emsp;Type: [Dictionary of [Text, Text]](../../methods-auto/dictionary/dictionary-data-type.md)  
 Specifies the results of the page background task.  
 
 
