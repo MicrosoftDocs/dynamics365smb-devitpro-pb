@@ -53,10 +53,7 @@ end
 ```
 -->
 
-There are various ways to use the `Dialog.Open()`and `Dialog.Update()` to change the generate mode's caption. Refer to the two examples that follow for inspiration.
-
-
-For example, you can call the methods directly from the `OnAction()` trigger of `Generate` and `Regenerate` actions. procedure).
+There are various ways to use the `Dialog.Open()`and `Dialog.Update()` to change the generate mode's caption. Refer to the following examples for inspiration.
 
 ## Example: From the OnAction() trigger
 
