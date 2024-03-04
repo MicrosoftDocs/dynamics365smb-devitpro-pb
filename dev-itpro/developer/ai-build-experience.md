@@ -156,7 +156,7 @@ System actions order on promptdialog in Content mode is always: OK, Regenerate, 
 
 ## Next steps
 
-- [Create PromptDialog page](copilot-create-promptdialog.md)
+[Create PromptDialog page](copilot-create-promptdialog.md).
 
 ## See also
 
