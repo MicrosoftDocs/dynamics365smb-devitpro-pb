@@ -84,14 +84,14 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Copilot for Dynamics 365: [learn.microsoft.com/copilot-for-dynamics365](/microsoft-cloud/dev/copilot/copilot-for-dynamics365)
 - Business Central pitch deck: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal​)
 - Business Central Copilot playlist on YouTube: [aka.ms/BCYouTube​](https://aka.ms/BCYouTube​)
-- An overview of Copilot in Business Central by Mike Morton (blog): [https://aka.ms/bc-ai​](https://aka.ms/bc-ai​)
+- Copilot in Business Central by Mike Morton (blog): [https://aka.ms/bc-ai​](https://aka.ms/bc-ai​)
 - Dynamics Communities interview with Mike Morton: [dynamicscommunities.com](https://dynamicscommunities.com/ug/copilot-ug/microsofts-mike-morton-explains-new-copilot-capabilities-inside-business-central/)
 
 ### Copilot in Business Central for developers
 
-- Business Central Under the Hood episode 1 - Developing AI in Business Central: [youtube.com]​(https://www.youtube.com/watch?v=jdevJbGgB-k&t=792s)
+- Business Central Under the Hood episode 1 - Developing AI in Business Central: [\[youtube.com\]​(https://www.youtube.com/watch?v=jdevJbGgB-k&t=792s) 
 - How-to guide for developing AI/Copilot solutions for Business Central: [Developing generative AI experiences​](developer/ai-build-experience-overview.md​)
-- Developer tools and resources for Copilot in Business Central: [aka.ms/BCStartCodingWithAILearn](https://aka.ms/BCStartCodingWithAILearn)
+- Developer resources for Copilot in Business Central: [aka.ms/BCStartCodingWithAILearn](https://aka.ms/BCStartCodingWithAILearn)
 
 ## Reporting and business intelligence  
 
