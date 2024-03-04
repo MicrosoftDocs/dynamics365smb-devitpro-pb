@@ -34,7 +34,7 @@ The following operators are supported in breakpoint conditions:
 
 ## To set a conditional breakpoint
 
-When you've enabled debugging mode, and found a place in the code where you want to test a condition, you can right-click the margin of the code editor, and then choose **Conditional Breakpoint**. Or, you can right-click on an existing breakpoint and choose **Edit Breakpoint**. In the inline dialog, choose **Expression** and then enter a condition that you want to test.
+When you've enabled debugging mode, and found a place in the code where you want to test a condition, you can right-click the margin of the code editor, and then choose **Add Conditional Breakpoint**. Or, you can right-click on an existing breakpoint and choose **Edit Breakpoint**. In the inline dialog, choose **Expression** and then enter a condition that you want to test.
 
 > [!NOTE]  
 > There are other options in the inline dialog, such as **Hit Count** and **Log Message**. These options aren't supported in AL.
@@ -44,7 +44,7 @@ When you've enabled debugging mode, and found a place in the code where you want
 
 ## Example
 
-In this example, you want to set a breakpoint to debug an application. This application processes invoices in a loop, but it stops responding on a particular invoice. You set a breakpoint on the first line of code in the loop, and then you set the following condition on the breakpoint.
+In this example, you want to set a breakpoint to debug an application process that loops over a collection of invoices, and stops responding on a particular invoice, for example, on sales invoice no. 103007. To just break for that invoice, you can set a breakpoint on the first line of code in the loop, and set the following condition on the breakpoint.
 
 ```al
 SalesInvoiceHeader."No." = '103007';  
