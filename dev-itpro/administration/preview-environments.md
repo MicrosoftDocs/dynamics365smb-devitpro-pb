@@ -19,7 +19,6 @@ The following figure illustrates the suggested steps for getting a preview of a 
 
 For more information, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md). 
 
-
 ## Practice and test
 
 Once you have the preview, start using it:
@@ -37,6 +36,7 @@ Once you have the preview, start using it:
 Finally, as always, if you have ideas for features you would like to see in future releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
 
 ## Provide feedback on the preview
+
 
 We need your feedback on the preview! Let us know about your experiences with the new version. You can provide feedback on Microsoft Collaborate:
 
