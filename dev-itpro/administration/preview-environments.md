@@ -37,23 +37,16 @@ Finally, as always, if you have ideas for features you would like to see in futu
 
 ## Provide feedback on the preview
 
+We need your feedback on the preview! Let us know about your experiences with the new version. You can provide feedback on Viva Engage (formerly Yammer) as follows:
 
-We need your feedback on the preview! Let us know about your experiences with the new version. You can provide feedback on Microsoft Collaborate:
+1. Browse to [https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=177710096384](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=177710096384).
+2. If you haven't joined the group yet, select **Join group**.
+3. Share your thoughts, ask questions, or seek clarifications on any aspect of the preview release. Just add your comment or question in the **Share something with this group** box and select **Post**. Or feel free to respond to another post.
+4. If you encounter any issues or glitches during your testing, please help us by posting them as bugs. Just include the hashtag `#Bug`in your post along with the following information, if you can:
 
-1. Browse to [aka.ms/collaborate](https://aka.ms/collaborate)
-
-2. If you haven't registered before, complete the registration form to access Collaborate (discover the steps [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-a-how-your-global-administrator-must-register-for-collaborate))
-
-3. Choose **Engagements**, and then choose the **Join** action
-
-4. Under the **Ready! for Dynamics 365 Business Central** program, find the latest preview version in the list of available engagements, and then choose the **Join** action
-
-Once you have joined the preview engagement, you can submit your feedback by filling in the form. You must specify if you're reporting a technical issue, a translation issue, or a documentation issue. The default severity is set to 3, which is the normal severity for most defects and means that the system isn't crashing and users aren't blocked from doing their work, but you can change that. When we have triaged your issue, you can see changes in Collaborate. 
-
-For every public preview, we create a "Public preview" group on [Yammer](https://aka.ms/BCYammer). Make sure to join it and feel free to provide your feedback here as well. 
-
-> [!TIP] 
-> If you get stuck trying to join Collaborate or Yammer, please contact [dyn365bep@microsoft.com](mailto:dyn365bep@microsoft.com) with as many details about the error that you got and other circumstances.
+    - **Description of the problem:** Clearly describe the issue you encountered.
+    - **Repro steps:** Provide step-by-step instructions on how to reproduce the problem.
+    - **Screenshots:** If possible, attach screenshots to help illustrate the issue.
 
 ## Guidelines for how to get started
 
