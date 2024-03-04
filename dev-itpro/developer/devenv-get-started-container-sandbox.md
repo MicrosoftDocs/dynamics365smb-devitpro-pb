@@ -12,7 +12,7 @@ ms.collection: get-started
 
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers a container-based image environment that enables access to the AL development environment. 
 
-You set up a container sandbox by running the **Container Sandbox Environment** page from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You'll have to decide whether you want an Azure-hosted or locally hosted container sandbox. See the next section for details.
+You set up a container sandbox by running the **Container Sandbox Environment** page from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You have to decide whether you want an Azure-hosted or locally hosted container sandbox. See the next section for details.
 
 > [!TIP]
 > [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] also offers an online sandbox. For more information, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
@@ -21,7 +21,7 @@ You set up a container sandbox by running the **Container Sandbox Environment** 
 
 When you set up the container sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilities and use Docker to provide the infrastructure for the container-based application. The difference is:
 
-- With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you sign up for an Azure subscription, and more costs may be incurred for each container sandbox.
+- With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you sign up for an Azure subscription, and more costs might be incurred for each container sandbox.
 - Local hosting requires that your computer is running Windows Desktop, Windows Server 2016, or Windows Server 2019, and you install and configure Docker before setting up the container sandbox.
 
 ## Set up an Azure-hosted container sandbox
@@ -44,12 +44,10 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 
 If not already done, install Docker.
 
-    To install and configure Docker, choose the version of Docker that is appropriate for the host operating system:
+To install and configure Docker, choose the version of Docker that is appropriate for the host operating system:
 
-    - For Windows Desktop, use [Docker Desktop on Windows]( https://hub.docker.com/editions/community/docker-ce-desktop-windows).
-        For more information, see [Install instructions](/virtualization/windowscontainers/quick-start/quick-start-windows-10).
-    - For Windows Server, use [Docker Enterprise Edition](https://hub.docker.com/editions/enterprise/docker-ee-server-windows).
-        For more information, see [Install instructions](/virtualization/windowscontainers/quick-start/quick-start-windows-server).
+- For Windows Desktop, use [Docker Desktop on Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows). For more information, see [Install instructions](/virtualization/windowscontainers/quick-start/quick-start-windows-10).
+- For Windows Server, use [Docker Enterprise Edition](https://hub.docker.com/editions/enterprise/docker-ee-server-windows). For more information, see [Install instructions](/virtualization/windowscontainers/quick-start/quick-start-windows-server).
 
 ### Set up a Docker container sandbox using BCContainerHelper
 
@@ -63,14 +61,13 @@ To set up a Docker container sandbox using an existing sandbox environment, foll
 4. Save the **CreateBCSandbox.ps1** file to your computer.
 5. Run Windows PowerShell ISE as an administrator.
 6. Open the **CreateBCSandbox.ps1** file.
-7. Set the `$containername = ''` variable to the name that you want to give the container, for example `$containername = 'mybc'`.
-
-    This name is only used internally in your envirorment for identification purposes.
+7. Set the `$containername = ''` variable to the name that you want to give the container, for example `$containername = 'mybc'`.  
+  This name is only used internally in your environment for identification purposes.
 8. Set the `$accept_eula = ''` variable to `'$true'`.
-9. Select <kbd>F5</kbd>to run the script.
+9. Select <kbd>F5</kbd> to run the script.
 
     The console pane displays the progress of the script. When the script has completed successfully, information like in the following example displays:
-    ```
+    ```powershell
     ...
     Container IP Address: 172.22.147.63
     Container Hostname  : mybc
@@ -90,7 +87,7 @@ To set up a Docker container sandbox using an existing sandbox environment, foll
 
 10. Write down or copy the following parameter/values from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You need this information later to [set up Visual Studio Code for extension development](#VSCode).
 
-You now have a container sandbox set up on your computer. The following shortcuts have been added to your desktop:
+You now have a container sandbox set up on your computer. The following shortcuts are added to your desktop:
 
 - **\<Container name\> Web Client** - opens the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] for your application in the container.
 - **\<Container name\> PowerShell Prompt** - opens a Windows PowerShell prompt in the container. This gives you access to the [!INCLUDE[navnowg_md](includes/navnow_md.md)] (/powershell/business-central/overview), which you can run against the container sandbox environment. 
