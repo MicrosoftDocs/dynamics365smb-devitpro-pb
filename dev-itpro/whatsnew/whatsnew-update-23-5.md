@@ -20,7 +20,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 ## Feature changes
 
 - [Improved update release processes](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/improved-update-release-processes)
-- [Control partner access per environment](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/control-partner-access-per-environment)
 
 ## Localization updates
 
