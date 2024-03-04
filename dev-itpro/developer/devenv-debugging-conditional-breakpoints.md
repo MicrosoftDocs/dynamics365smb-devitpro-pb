@@ -3,7 +3,7 @@ title: Setting conditional breakpoints
 description: Overview of setting conditional breakpoints in AL.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 02/27/2024
+ms.date: 03/04/2024
 ms.reviewer: 
 ms.topic: conceptual
 ms.author: solsen
@@ -25,11 +25,12 @@ As part of debugging code, you can set [breakpoints](devenv-debugging.md#breakpo
 The following operators are supported in breakpoint conditions:
 |Operator|
 |--------|
-|`=`|  
-|`<>`|  
-|`<`|  
-|`<=`|  
-|`=`|  
+|`=`|
+|`<>`|
+|`<`|
+|`>`|
+|`<=`|
+|`=>`|  
 
 ## To set a conditional breakpoint
 
