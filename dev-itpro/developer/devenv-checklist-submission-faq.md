@@ -131,11 +131,11 @@ Review the Marketing requirements and the [Marketing Validation FAQ](readiness/r
 
 At this stage, your extensions are being published to [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-If this stage failed with the following error message `Automated upload to Business Central of the extensions in the submission has failed. Please retry the operation and contact Partner Center support if it fails again.`, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the section [Channels to ask questions or report issues](#Channels-to-ask-questions-or-report-issues) in this article.
+If this stage failed with the following error message `Automated upload to Business Central of the extensions in the submission has failed. Please retry the operation and contact Partner Center support if it fails again.`, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the section [Channels to ask questions or report issues](#channels-to-ask-questions-or-report-issues) in this article.
 
 ### My app failed at another stage, what do I do next?
 
-If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in section [Channels to ask questions or report issues](#Channels-to-ask-questions-or-report-issues) in this article.
+If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in section [Channels to ask questions or report issues](#channels-to-ask-questions-or-report-issues) in this article.
 
 ## Questions about hotfixing an AppSource app
 
