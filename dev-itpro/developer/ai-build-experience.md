@@ -19,9 +19,9 @@ In this article, you learn how to create the user interface (UI) for your AI sol
 
 The fundamental component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md) type page. The PromptDialog page is designed for creating copilot experiences that assist users in making informed decisions about the AI-generated output. Within a single page object, the PromptDialog page type creates a comprehensive flow in the UI, where users can provide input, view the subsequent output, and revise it as needed. The user can then choose to save their work or discard it.
 
-|Launch|Prompt|Generating|Content|
+|Launch copilot|Prompt - ask for/provide input|Generate - build results |Content - display results|
 |-|-|-|-|
-|[![Shows a flow of a copilot with the palog page type](media/copilot-launch.png)](media/copilot-launch.png#lightbox)|[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.svg)](media/promptdialog-prompt-mode-prompt-area-no-callout.svg#lightbox)|[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.png)](media/promptdialog-generate-mode.png#lightbox)|![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)|
+|[![Shows a flow of a copilot with the palog page type](media/copilot-launch.png)](media/copilot-launch.png#lightbox)|[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.svg)](media/promptdialog-prompt-mode-prompt-area-no-callout.svg#lightbox)|<br><br>[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.png)](media/promptdialog-generate-mode.png#lightbox)|[![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)](media/promptdialog-content-mode.svg#lightbox)|
 
 <!--
 > [!VIDEO media/Copilot-UI.mp4]-->
