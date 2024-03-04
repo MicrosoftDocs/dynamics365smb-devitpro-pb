@@ -44,12 +44,10 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 
 If not already done, install Docker.
 
-    To install and configure Docker, choose the version of Docker that is appropriate for the host operating system:
+To install and configure Docker, choose the version of Docker that is appropriate for the host operating system:
 
-    - For Windows Desktop, use [Docker Desktop on Windows]( https://hub.docker.com/editions/community/docker-ce-desktop-windows).
-        For more information, see [Install instructions](/virtualization/windowscontainers/quick-start/quick-start-windows-10).
-    - For Windows Server, use [Docker Enterprise Edition](https://hub.docker.com/editions/enterprise/docker-ee-server-windows).
-        For more information, see [Install instructions](/virtualization/windowscontainers/quick-start/quick-start-windows-server).
+- For Windows Desktop, use [Docker Desktop on Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows). For more information, see [Install instructions](/virtualization/windowscontainers/quick-start/quick-start-windows-10).
+- For Windows Server, use [Docker Enterprise Edition](https://hub.docker.com/editions/enterprise/docker-ee-server-windows). For more information, see [Install instructions](/virtualization/windowscontainers/quick-start/quick-start-windows-server).
 
 ### Set up a Docker container sandbox using BCContainerHelper
 

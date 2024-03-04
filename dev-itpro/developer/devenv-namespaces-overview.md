@@ -4,7 +4,6 @@ description: Namespaces in AL provide a way to organize your code into logical u
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: overview
-ms.collection: 
 ms.date: 08/28/2023
 ms.custom: bap-template
 ms.collection: get-started
