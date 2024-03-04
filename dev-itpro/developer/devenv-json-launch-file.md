@@ -13,12 +13,18 @@ ms.author: solsen
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-The `launch.json` file contains information about the server that the extension launches on. The `launch.json` file has multiple configuration options available, for example, for snapshot debugging and attach debugging. In Visual Studio Code, you can choose to add a new configuration to the `launch.json` file, by selecting the **Add Configuration** button. The following configuration options are available:
+The `launch.json` file contains information about the server that the extension launches on. The `launch.json` file has multiple configuration options available, for example, for snapshot debugging and attach debugging. In Visual Studio Code, you can choose to add a new configuration to the `launch.json` file, by selecting the **Add Configuration** button. 
 
+:::image type="content" source="media/launch-configuration.png" alt-text="Shows the different configurations available in the lauch.json file for the Business Central development environment" lightbox="media/launch-configuration.png":::
+
+The following configuration options are available:
+
+- [Attach to the client on the cloud sandbox](devenv-json-launch-file.md#attach-configuration-settings)
+- [Attach to the client on your own server](devenv-json-launch-file.md#attach-configuration-settings)
+- [Initialize a snapshot debugging session on cloud sandbox](devenv-json-launch-file.md#initialize-snapshot-debugging-settings)
+- [Initialize a snapshot debugging session on your own server](devenv-json-launch-file.md#initialize-snapshot-debugging-settings)
 - [Publish to Microsoft cloud sandbox](devenv-json-launch-file.md#publish-to-cloud-settings)
 - [Publish to your own server](devenv-json-launch-file.md#publish-to-local-server-settings)
-- [Attach to the client on the cloud sandbox or on your own server](devenv-json-launch-file.md#attach-configuration-settings)
-- [Initialize a snapshot debugging session on cloud or on your own server](devenv-json-launch-file.md#initialize-snapshot-debugging-settings)
 
 In the following sections, you can find a description of the parameters that are available for each of the configurations. You'll also find a description of how to create a [user or workspace launch configuration file](devenv-json-launch-file.md#user-and-workspace-launch-configuration).
 
