@@ -61,9 +61,8 @@ To set up a Docker container sandbox using an existing sandbox environment, foll
 4. Save the **CreateBCSandbox.ps1** file to your computer.
 5. Run Windows PowerShell ISE as an administrator.
 6. Open the **CreateBCSandbox.ps1** file.
-7. Set the `$containername = ''` variable to the name that you want to give the container, for example `$containername = 'mybc'`.
-
-    This name is only used internally in your envirorment for identification purposes.
+7. Set the `$containername = ''` variable to the name that you want to give the container, for example `$containername = 'mybc'`.  
+  This name is only used internally in your environment for identification purposes.
 8. Set the `$accept_eula = ''` variable to `'$true'`.
 9. Select <kbd>F5</kbd> to run the script.
 
