@@ -158,7 +158,7 @@ The option to load a Setup configuration file is on the **Choose an installation
   
      Setup now shows the **Customize the installation** page. It's modified according to the component selection in the configuration file.  
   
-3. Modify the list of components to install or choose **Next** to continue to the **Specify parameters** page.   
+3. Modify the list of components to install or choose **Next** to continue to the **Specify parameters** page.
   
 4. Configure these settings or choose **Apply** to accept these values and continue.
 
