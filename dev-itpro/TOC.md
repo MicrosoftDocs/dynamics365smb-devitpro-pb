@@ -1116,6 +1116,7 @@
 ##### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
 ##### [Extending Currency Exchange Rate Adjustments](developer/devenv-extend-exchange-rates.md)
 ##### [Extending e-documents functionality](developer/devenv-extend-edocuments.md)
+##### [Add drop zones for uploading multiple files](developer/devenv-extending-drop-zones.md)
 
 ### Using events
 #### [Event types](developer/devenv-event-types.md)
