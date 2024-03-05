@@ -7,13 +7,13 @@ ms.reviewer:
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 02/21/2024
+ms.date: 03/05/2024
 ms.custom: bap-template
 ---
 
 # The PromptDialog object
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] runtime 12.1, you can add a new page type `PromptDialog`, which allows you to integrate copilot capabilities into your custom scenarios. Use the `PromptDialog` to create generative AI experiences with the copilot look and feel, which includes signature visuals, and built-in safety controls for customers. The `PromptDialog` page has a specific page syntax, which includes new area and action controls, as described in the code sample in this article.
+With [!INCLUDE [prod_short](includes/prod_short.md)] runtime 12.1, you can add a new page type `PromptDialog`, which allows you to integrate copilot capabilities into your custom scenarios. Use the `PromptDialog` to create generative AI experiences with the copilot look and feel, which includes signature visuals, and built-in safety controls for customers. The `PromptDialog` page has a specific page syntax, which includes specific area and action controls, as described in the code sample in this article.
 
 ## Snippet support
 
@@ -34,14 +34,13 @@ To find links to the properties related to the `PromptDialog` page type, see the
 
 ## Areas of the PromptDialog page type
 
-The `PromptDialog` page type has the following area types that characterize the dialog.
+The `PromptDialog` page type has the following layout area types that characterize the dialog.
 
 |Area |Description|
 |-----|-----------|
 |`Prompt` | The `Prompt` area is the input to copilot, and accepts any control, except repeater controls.|
 |`Content` | The `Content` area is the output of copilot, and accepts any control, except repeater controls.|
 |`PromptOptions` | The `PromptOptions` area is the input options, and only accepts option fields.|
-
 
 ### Actions in the PromptDialog page
 
