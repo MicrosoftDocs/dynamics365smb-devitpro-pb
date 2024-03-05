@@ -28,13 +28,34 @@ The following configuration options are available:
 
 In the following sections, you can find a description of the parameters that are available for each of the configurations. You'll also find a description of how to create a [user or workspace launch configuration file](devenv-json-launch-file.md#user-and-workspace-launch-configuration).
 
-## Publishing settings for cloud and local server
 
-The following table describes the settings in the `launch.json` file. The `launch.json` file has two configurations depending on whether the extension is published to a local server or to the cloud.
+## Publish to local server settings
 
-### Publish to local server settings
+Here is an example of a configuration file for publishing to a local server.
 
-The settings for publishing to a local server are described in the following table.
+``` json
+{
+    "name": "Publish: Your own server",        // maybe change the configuration name
+    "type": "al",
+    "request": "launch",
+    "environmentType": "OnPrem",
+    "server": "http://bcserver",               // change this to point to your instance URI
+    "serverInstance": "BC",                    // change this to point to your instance
+    "authentication": "UserPassword",          // change this to your auth setup
+    "startupObjectId": 22,                     // change this to your choice of startup object
+    "breakOnError": "All",
+    "breakOnRecordWrite": "None",
+    "launchBrowser": true,
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500, 
+    "numberOfSqlStatements": 10,
+    "tenant": "default",                       // change this to point to your tenant
+    "usePublicURLFromServer": true
+}
+```
+
+The following table describes the settings in the `launch.json` file for publishing to a local server.
 
 <!-- NEW -->
 |Setting|Mandatory|Value|
@@ -103,9 +124,9 @@ The settings for publishing to a local server are described in the following tab
 |usePublicURLFromServer|No|Specifies whether to override the NST setting and instead use the host provided in the `launch.json` server property. When set to `false`, the `PublicWebBaseURL` server (NST) setting will be overridden with the server parameter of the `launch.json` when launching the browser using that specific launch configuration. <br>**Note:**<br>This option only affects launching debug sessions to on-premise servers.<br> When set to `true`, the `PublicWebBaseURL` server setting will be used.|
 -->
 
-### Publish to cloud settings
+## Publish to cloud settings
 
-The settings for publishing to a cloud sandbox are described in the following table.
+The following table describes the settings in the `launch.json` file for publishing to a cloud sandbox.
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
