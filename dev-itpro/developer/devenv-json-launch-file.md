@@ -3,7 +3,7 @@ title: Launch JSON file
 description: Description of the settings of the launch JSON file for AL in Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/30/2023
+ms.date: 03/05/2024
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -31,7 +31,7 @@ In the following sections, you can find a description of the parameters that are
 
 ## Publish to local server settings (launch.json)
 
-Here is an example of a configuration file for publishing to a local server.
+Here's an example of a configuration file for publishing to a local server.
 
 ``` json
 {
@@ -126,7 +126,7 @@ The following table describes the settings in the `launch.json` file for publish
 
 ## Publish to cloud settings (launch.json)
 
-Here is an example of a configuration file for publishing to a cloud sandbox.
+Here's an example of a configuration file for publishing to a cloud sandbox.
 
 ``` json
 {
@@ -175,7 +175,7 @@ The following table describes the settings in the `launch.json` file for publish
 
 The attach configuration is used for specific debugging scenarios where you don't want to publish and invoke functionality to debug it. For more information, see [Attach and debug next](devenv-attach-debug-next.md).
 
-Here is an example of a configuration file for attaching to a client on a cloud sandbox.
+Here's an example of a configuration file for attaching to a client on a cloud sandbox.
 
 ``` json
 {
@@ -217,7 +217,7 @@ The following table describes the settings in the `launch.json` file for attachi
 
 The attach configuration is used for specific debugging scenarios where you don't want to publish and invoke functionality to debug it. For more information, see [Attach and debug next](devenv-attach-debug-next.md).
 
-Here is an example of a configuration file for attaching to a client on your own server.
+Here's an example of a configuration file for attaching to a client on your own server.
 
 ``` json
 {
@@ -267,7 +267,7 @@ The settings for attaching to a client on your own server are described in the f
 
 Snapshot debugging allows you to record AL code that runs on the server, and when it has completed, you can debug the recorded *snapshot* in Visual Studio Code. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
 
-Here is an example of a configuration file for snapshot debugging on a cloud production environment.
+Here's an example of a configuration file for snapshot debugging on a cloud production environment.
 
 ``` json
 {
@@ -302,7 +302,7 @@ The following table describes the settings in the `launch.json` file for snapsho
 
 Snapshot debugging allows you to record AL code that runs on the server, and when it has completed, you can debug the recorded *snapshot* in Visual Studio Code. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
 
-Here is an example of a configuration file for snapshot debugging on your own server
+Here's an example of a configuration file for snapshot debugging on your own server
 
 ``` json
 {
