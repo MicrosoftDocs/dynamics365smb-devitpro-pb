@@ -31,7 +31,7 @@ Once you have the preview, start using it:
 
     In rare cases, if you discover any changes required for your per-tenant extension to become compatible with the next release, apply the changes to your app, test it again on a sandbox environment running on a preview version. Then, if tests complete successfully, upload the app into your production environment, setting the **Deploy to** field to *Next major version*. This way, the compatible version of your app will be used when you schedule the upgrade of your production environment to the new major update once it becomes available.
 
-3. Test the quality. If you run into issues related to the preview, please provide [feedback on Collaborate](#provide-feedback-on-the-preview).
+3. Test the quality. If you run into issues related to the preview, please provide [feedback](#provide-feedback-on-the-preview).
 
 Finally, as always, if you have ideas for features you would like to see in future releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
 
