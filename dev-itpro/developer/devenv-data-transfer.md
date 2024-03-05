@@ -1,8 +1,7 @@
 ---
-title: Transferring Data Between Tables using DataTransfer
+title: Transferring data between tables using DataTransfer
 description: Learn about the DataTransfer object type and how to use it to move data between tables.
 author: jswymer
-
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
@@ -10,7 +9,7 @@ ms.author: jswymer
 ms.date: 03/07/2023
 ---
 
-# Transferring Data Between Tables using DataTransfer
+# Transferring data between tables using DataTransfer
 
 > **APPLIES TO:**  Business Central 2022 release wave 2 (version 21.0) and later.
 
@@ -85,6 +84,9 @@ Because DataTransfer operates in bulk and not on a row-by-row basis, row based e
 ## Copy fields
 
 Calling CopyFields on the DataTransfer object will copy selected fields from one table (the source) to another table (the destination). Unless you're copying with the same source and destination table, specifying a join condition is necessary. The join condition specifies how to match rows from the source with rows from the destination table.
+
+> [!NOTE]
+> When using `CopyFields` errors will only occur if there's a mismatch between fields originating from the *same extension*. Fields from different apps don't cause `TransferFields` to fail due to type mismatches. This behavior is to ensure that the addition of new extensions doesn't disrupt the operation of existing code.
 
 ### Example 1
 
