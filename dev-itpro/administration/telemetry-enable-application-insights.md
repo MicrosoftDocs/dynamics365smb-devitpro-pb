@@ -4,7 +4,7 @@ description: Learn how you can get richer telemetry by connecting your Business 
 ms.reviewer: kepontop
 ms.topic: conceptual
 author: jswymer
-ms.date: 12/05/2023
+ms.date: 01/26/2024
 ms.custom: bap-template
 ---
 
@@ -125,6 +125,17 @@ You can specify the same or another key when creating more tenants:
 ```powershell
 New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
 ```
+
+## Troubleshooting telemetry setup
+
+If you set up telemetry but don't get any data in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], then take a look at these common mistakes that others have made.
+
+1. Check that you have used the correct [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] connection string. 
+1. Check that you enabled telemetry in the correct environment.
+1. (Only for on-premises) Check that network traffic from [!INCLUDE [prod_short](../includes/prod_short.md)]  to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] isn't blocked by a firewall or some software that is filtering outgoing calls to the ingestion endpoint. 
+1. (Only for on-premises) Similar to checking network traffic, check if you block DNS to lookup Azure resources. 
+1. (Only for on-premises) Did you restart [!INCLUDE [server](../developer/includes/server.md)] unstances after enabling telemetry?
+
 
 ## Assign a telemetry ID to users
 

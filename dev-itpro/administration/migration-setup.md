@@ -41,6 +41,8 @@ Once the setup guide is complete and data migration is activated, the initial da
 - Create table mappings if you need to rename a table during the cloud migration or to move a subset of fields to a different table or table extension. For more information, see [Define migration table mappings](migration-table-mapping.md).
 <!-- - Get the SQL connection string for the Business Central on-premises database. For more information, go to [SQL connection string](#define-your-sql-database-connection).-->
 
+- If have any users in already in your Business Central online environment and you want them to be able to work as usual during cloud migration, see [Retain permissions](migration-retain-permissions.md).
+
 > [!TIP]
 > We recommend that you start the migration by running the assisted setup from a company other than the company that you are migrating data to. For example, sign into the demonstration company, CRONUS, and start the process there. This way, you can make sure that all users are logged out of the original company and the target company. This is especially important when you migrate from [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises current version because you can run the migration tool multiple times.
 
@@ -62,28 +64,31 @@ Once the setup guide is complete and data migration is activated, the initial da
 
    For more information about this step, see [Define your SQL database connection](#define-sql-database-connection-and-integration-runtime).
 
-   Select **Next** when done. Once you choose **Next**, a new pipeline is created in the Azure service. When completed successfully, the **Select companies to migrate** page appears.
+   Select **Next** when done. Once you choose **Next**, a new pipeline is created in the Azure service. When completed successfully, the **Select companies to migrate** page or **GP Company Migration Configuration** page appears.
 
+    <!-- bc 1. On the **Select companies to migrate** page, select one or more companies from the list or switch on **All Companies**, then select **Next**.-->
 
-   <!--For example, Server=jswymer-vm-2\bcdemo;Database="Demo Database BC (21-0)";User Id=bclogin2;Password=1234;-->
+1. The next step is to select the companies that you want to migrate. This step is different depnding on your on-premises product:
 
-     <!--1. Do one of the following tasks:
+   - For Business Central on-premises, the **Select companies to migrate** page appears. Select one or more companies from the list or switch on **All Companies**, then select **Next**.
+   - For Dynamics GP, the **GP Company Migration Configuration** page appears. This page allows to make global settings for the companies selected to migrate. For details about using this page, see [Configure Dynamics GP company data migration](migrate-dynamics-gp.md).
 
-      - If you already have a Microsoft integration runtime service instance, you can use the instance by entering its name in the **Integration Runtime Name** box. Then select **Next** and go to step 9. 
-   - If you don't already have an integration runtime, leave **Integration Runtime Name** blank, select **Next**, then go to the next step.-->
+   No matter which on-premsies product you're coming from, you can always return the page to add more companies.
 
-   <!--8. Select **Download the Self-hosted Integration Runtime**, the do these steps to install the integration runtime:
-     1. On the Download Center page that opens, select **Download** > **IntegrationRuntime_<latestversion>.msi** > **Next**. The file is downloaded to your computer.
-    2. Select **Open** file to start the installation. When completed, the **Register Integration Runtime (Self-Hosted)** page opens.
-    3. Go back to the **Cloud Migration Setup** page copy the **Authentication key**.
-    4. Go back to the **Register Integration Runtime (Self-Hosted)** page and paste the key value in authentication key box, then select **Finish**. 
-    5. Go back to **Cloud Migration Setup** and select **Next**.-->
-
-1. On the **Select companies to migrate** page, select one or more companies from the list or switch on **All Companies**, then select **Next**.
 1. Select **Finish** to complete the cloud migration setup.
 
-  If you want to open **Cloud Migration Management**, where you can run the migration, select **Yes**.
+   If you want to open **Cloud Migration Management**, where you can run the migration, select **Yes**.
 
+1. If you're migrating from Dynamics GP to the Austarlian version of Business Central online, sign in to each on-premises company that you intend to migrate and make the following changes:
+
+    * Transactions
+    
+      With transactions that are being migrated, we bring over totals on the invoices for the customers so GST information is already included in the transactions. You must turn off the GST and Adjustment Mandatory features in the **General Ledger Setup** page to allow the transactions to post during the migration. After the migration is complete, you can turn both GSP and Adjustment Mandatory back on so that new transactions that are entered in [!INCLUDE [prod_short](../includes/prod_short.md)] online will use this functionality.
+    
+    * Posting groups
+    
+      Within the posting process there is validation to look for a blank VAT business posting group and VAT product posting group. This combination isn't setup by default and is needed for the migration. So add a VAT posting configuration in the **VAT Posting Setup** page with blank values for the **VAT Bus Posting Group** and **VAT Prod. Posting Group** fields. 
+  
 <a name="sql"></a>
 
 [!INCLUDE[cloud-migration-sql-connection-ir](../developer/includes/cloud-migration-sql-connection-ir.md)]
@@ -115,9 +120,7 @@ Complete the steps in the wizard to update the runtime service. If the change wa
 > [!CAUTION]
 > If you have mapped users in the first run of the cloud migration setup guide, then do not choose the **Define User Mappings** action again in subsequent runs.
 
-
 If you run into problems with the setup, go to [Cloud migration setup troubleshooting](migration-setup-troubleshooting.md).
-
 
 ## Next steps
 
@@ -125,4 +128,3 @@ Once the setup guide is complete and data migration is activated, the initial da
 
 - [Change how data is replicated to Business Central online](cloud-migration-change-replication.md) (advanced, optional)
 - [Run Data Migration](migration-data-replication.md).
-
