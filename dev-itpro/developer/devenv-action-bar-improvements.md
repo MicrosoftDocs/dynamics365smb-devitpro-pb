@@ -24,7 +24,7 @@ Users who have *not* been using the modern action bar with earlier releases of [
 
 *Split buttons* are one of the new experiences in the modern action bar. Split buttons are well-known from other Microsoft products as a combination of a button and a menu and are introduced in cases where a common action has related actions with similar effects. This type of control gives quick one-click reach to the first action in a menu via the left button part and access to the related actions via the right dropdown part. 
 
-For example, on document pages that have **Post** and **Release** actions, these are now presented as split buttons. This provides better discoverability and one-click access to these often-used actions. For example, a new split button is created for the actions **Correct**, **Cancel**, and **Create** corrective credit memo. This provides one-click access to Correct, which is the most often used among the three. 
+For instance, on document pages that have **Post** and **Release** actions, these are now presented as split buttons. This provides better discoverability and one-click access to these often-used actions. For example, a new split button is created for the actions **Correct**, **Cancel**, and **Create** corrective credit memo. This provides one-click access to Correct, which is the most often used among the three. 
 
 ## Action tabs open by default
 
