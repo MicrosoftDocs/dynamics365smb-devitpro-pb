@@ -39,7 +39,7 @@ Finally, as always, if you have ideas for features you would like to see in futu
 
 We need your feedback on the preview! Let us know about your experiences with the new version. You can provide feedback on Viva Engage (formerly Yammer) by following these steps:
 
-1. Go to [Public preview](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=177710096384) group on Viva Engage.
+1. Go to [Business Central Public preview group](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=177710096384) on Viva Engage.
 2. If you haven't joined the group yet, select **Join group**. [Learn more about Business Central partner community on Viva Engage](../join-viva-engage.md).
 3. Share your thoughts, ask questions, or seek clarifications on any aspect of the preview release. Just add your comment or question in the **Share something with this group** box and select **Post**. Or feel free to respond to another post.
 4. If you encounter any issues or glitches during your testing, please help us by posting them as bugs. Just include the hashtag `#Bug`in your post along with the following information, if you can:
