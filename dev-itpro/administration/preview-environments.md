@@ -56,10 +56,10 @@ If you run your tests on a preview environment one month before the announced ma
 
 We expect to update the preview version only if we discover critical issues before the major update is generally available for production environments. Apart from these potential fixes, we don't expect any further changes to the product between the preview and the official release. You can start your testing and learning activities immediately, without waiting for the official release.
 
-> [!NOTE] 
+> [!NOTE]
 > You will be able to test the update on a copy of your production data in a sandbox environment when we release the new update in production in April or October, respectively. When the official release becomes available, you can continue your tests on that version. You will no longer be able to create new preview sandboxes.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > The preview version as well as all sandbox environments that are based on it will be removed 30 days after the official release becomes available. 
 
 
