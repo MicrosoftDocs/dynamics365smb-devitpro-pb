@@ -62,14 +62,14 @@ Use the code action to convert *legacy* syntax for promoted actions to the `acti
 
 Alternatively:
 
-1. Open the Settings Page, <kbd>Ctrl</kbd>+<kbd>,</kbd> and choose either **User Settings** or **Workspace Settings** depending on which scope you want the code actions to apply to.
+1. Open the settings page, <kbd>Ctrl</kbd>+<kbd>,</kbd> and choose either **User Settings** or **Workspace Settings** depending on which scope you want the code actions to apply to.
 2. Navigate to **Extensions > AL Language extension configuration**.
 3. Choose the **Enable Code Actions** checkbox. You've now enabled code actions on your project.
 
 ## See Also
 
-[AL Development Environment](devenv-reference-overview.md)  
-[AL Outline View](devenv-al-outline-view.md)  
+[AL development environment](devenv-reference-overview.md)  
+[AL outline view](devenv-al-outline-view.md)  
 [AL Formatter](devenv-al-formatter.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
 
