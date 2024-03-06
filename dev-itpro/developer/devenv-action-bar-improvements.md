@@ -12,7 +12,9 @@ ms.custom: bap-template
 
 # Action bar improvements
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, we’ve organized the action bar menus to keep related actions together and avoid the same action being available in multiple menus. This helps reduce clutter and confusion, especially for users new to [!INCLUDE [prod_short](includes/prod_short.md)]. 
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1, we are finalizing the introduction of a modern action bar.
+
+We’ve organized the action bar menus to keep related actions together and avoid the same action being available in multiple menus. This helps reduce clutter and confusion, especially for users new to [!INCLUDE [prod_short](includes/prod_short.md)]. 
 
 The use of a Navigate menu has been reduced, and, where applicable, its contents merged with the entity menu. The entity menu is the one bearing the name of the entity displayed on a page. Going forward, the Navigate menu will only hold links to pages that aren't directly related to the current record yet useful to quickly navigate to when at a given place. 
 
