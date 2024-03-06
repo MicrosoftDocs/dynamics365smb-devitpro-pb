@@ -4,7 +4,7 @@ description: Namespaces in AL provide a way to organize your code into logical u
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: overview
-ms.date: 08/28/2023
+ms.date: 03/06/2024
 ms.custom: bap-template
 ms.collection: get-started
 ---
@@ -60,8 +60,11 @@ codeunit 10 MyCode
 {
     ...
 }
-
 ```
+
+> [!TIP]
+> With runtime 13, you can use the `editor.foldingImportsByDefault` setting to collapse `using` statements. When set to `true` it collapses all of the `using` statements when a file is opened. Use the **User Settings** or **Workspace Settings** to set the value to `true`.
+
 
 ## Scope
 
