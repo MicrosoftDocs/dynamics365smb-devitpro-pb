@@ -3,7 +3,7 @@ title: Performance Toolkit extension
 description: Test your extensions for performance regressions during the development process for Business Central apps. 
 author: bholtorf
 ms.custom: bap-template
-ms.date: 11/17/2023
+ms.date: 02/21/2024
 ms.reviewer: jswymer
 
 ms.search.form: 149000, 149001, 149003, 149004, 149005, 149006, 149007, 149008, 149009
@@ -489,6 +489,10 @@ Yes, BCPT works on on-premises/local sandboxes and on online sandboxes.
 ### Can I run scenarios in a DevOps pipeline?
 
 Yes, it's possible to run BCPT scenario runs in AL-Go for GitHub. See https://github.com/microsoft/AL-Go/blob/main/RELEASENOTES.md#new-workflow-create-new-performance-test-app:~:text=New%20workflow%3A%20Create%20new%20Performance%20Test%20App.
+
+### Can you set test isolation in BCPT codeunits?
+
+No, with BCPT you can't set the test isolation property. All data generated/modified by test codeunits is stored in the database. 
 
 ### Do you have sample code for scenarios?
 

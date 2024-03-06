@@ -39,7 +39,6 @@ On the page, the **Migration Log** gives you the status of all migration runs, i
 
 <!--Furthermore, there's a tile that highlights tables that weren't migrated due to data-related issues. For example, tables with permissions aren't migrated from on-premises solutions because permissions work differently between online and on-premises.-->
 
-
 The following table provides a brief description of the actions you can take and when to use them. More detailed information on how to use these actions is available in other articles in the help section.
 
 |Action   |Description|
@@ -63,7 +62,6 @@ The following table provides a brief description of the actions you can take and
 |Set up cloud migration|Opens the **Cloud Migration Setup** assisted setup guide to configure the cloud migration. Setting up cloud migration is a necessary step before you can replicate data. For more information, go to [Set up cloud migration](migration-setup-overview.md).|
 |Sanitize tables|Deletes invalid characters in fields of tables of the on-premises database. Invalid characters include lowercase characters and white space characters. Sanitizing data is recommended before you replicate data. For more information, go to [Clean data](migration-clean-data.md). |
 |Enable/disable new UI|Toggles between the legacy and the new user-interface of the **Cloud Migration Management** page. |
-|Azure Data Lake|This option is available if the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant is connected to Dynamics GP. For more information, see [Migrate Dynamics GP to Azure Data Lake](migrate-dynamics-gp.md#lake).|
 
 <!--
 |Disable cloud migration|Opens a guide that helps you through a checklist of instructions to disable the cloud migration configuration. Use the guide when you've migrated the data that you want to migrate, or when you want to upgrade the target environment. Once the steps in this process are complete, you can use your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant as your primary solution, or you can upgrade the environment.|-->

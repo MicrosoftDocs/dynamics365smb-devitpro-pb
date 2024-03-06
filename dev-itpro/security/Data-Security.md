@@ -27,7 +27,10 @@ There are four different levels of security:
   
 - Record  
   
-Graphically, these can be represented as the layers, where the central layer is the records in the database.  
+Graphically, these can be represented as the layers, where the central layer is the records in the database. 
+
+![Security overview.](../developer/media/security-overview.png "Security overview")
+
 
 ## [Database-level security](#tab/database-level)
 

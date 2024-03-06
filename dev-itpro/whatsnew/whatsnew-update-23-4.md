@@ -64,7 +64,7 @@ In the current minor update, we’re transitioning to the Shopify Admin API vers
 
 ### Automatically update AppSource apps with minor updates
 
-You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the Release Plan for more details.
+You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the [release plan](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/planned-features) for more details.
 
 ### Features becoming mandatory soon
 
