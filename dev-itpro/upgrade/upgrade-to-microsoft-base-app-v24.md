@@ -1,6 +1,6 @@
 ---
-title: Upgrading Customized C/AL Application to Microsoft Base Application for version 23
-description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 23.
+title: Upgrading Customized C/AL Application to Microsoft Base Application for version 24
+description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 24.
 ms.topic: article
 author: jswymer
 ms.author: jswymer
@@ -8,11 +8,11 @@ ms.date: 08/14/2023
 
 ---
 
-# Upgrading Customized C/AL Application to Microsoft Base Application version 23
+# Upgrading Customized C/AL Application to Microsoft Base Application version 24
 
-This article describes how to upgrade a customized version 14 application to a version 23 solution that uses the Microsoft system and base applications.
+This article describes how to upgrade a customized version 14 application to a version 24 solution that uses the Microsoft system and base applications.
 
-[![Shows the upgrade of an unmodified Business Central v21 application.](../developer/media/bc14-to-23-cal-upgrade-to-base-app.png)](../developer/media/bc14-to-23-cal-upgrade-to-base-app.png#lightbox) 
+[![Shows the upgrade of an unmodified Business Central v21 application.](../developer/media/bc14-to-24-cal-upgrade-to-base-app.png)](../developer/media/bc14-to-24-cal-upgrade-to-base-app.png#lightbox) 
 
 ## Overview
 
@@ -40,9 +40,9 @@ The process uses two special features for migrating tables and data to extension
 
 ## <a name="prereqs"></a>Prerequisites
 
-1. Your version 14 is compatible with version 23.
+1. Your version 14 is compatible with version 24.
 
-    There are several updates for version 14. The updates have a compatible version 23 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+    There are several updates for version 14. The updates have a compatible version 24 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
 2. The version 14 [!INCLUDE[devshell](../developer/includes/devshell.md)] and [!INCLUDE[adminshell](../developer/includes/adminshell.md)] are installed. 
 
@@ -50,17 +50,17 @@ The process uses two special features for migrating tables and data to extension
 
     During the upgrade, you'll use the txt2al conversion tool to convert existing tables to the AL syntax. You'll need to use a version of txt2al conversion tool that supports the `--tableDataOnly` parameter. This parameter was first introduced in [version 14.12 (cumulative update 11, platform 14.0.41862)](https://support.microsoft.com/help/4549684/cumulative-update-12-for-microsoft-dynamics-365-business-central-april). So if you're upgrading from version 14.11 (cumulative update 10) or earlier, you'll have to download the txt2al conversion tool from a later version 14 update. See [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292/released-cumulative-updates-for-microsoft-dynamics-365-business). 
 
-## Task 1: Install version 23
+## Task 1: Install version 24
 
-1. Download the latest available update for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] (version 23) that is compatible with your version 14.
+1. Download the latest available update for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] (version 24) that is compatible with your version 14.
 
     For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
-2. Before you install version 23, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 23 tools.
+2. Before you install version 24, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 24 tools.
 
-3. Install Business Central version 23 components.
+3. Install Business Central version 24 components.
 
-    You'll have to keep version 14 installed to complete some steps in the upgrade process. When you install version 23, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You'll have to keep version 14 installed to complete some steps in the upgrade process. When you install version 24, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -78,8 +78,8 @@ This section describes how to upgrade the application code. This work involves c
 
 The first step, and the largest step, is to create extensions for the customizations compared to the Microsoft system and base applications. 
 
-- Create extensions for the target platform **12.0 Business Central 2023 release wave 2**.
-- Include dependencies for the Microsoft System, Base, and Application extensions for version 23.0.0.0.
+- Create extensions for the target platform **13.0 Business Central 2024 release wave 1**.
+- Include dependencies for the Microsoft System, Base, and Application extensions for version 24.0.0.0.
 
 For example, if your application includes custom tables, then create extensions that include table objects and logic for the custom tables. If the application includes custom fields on system or base application tables, create extensions that include table extension objects to cover the custom fields. As part of this upgrade process, the data currently stored in custom tables or fields will be migrated from the existing tables to the new ones defined in the extensions.
 
@@ -104,10 +104,10 @@ The only file in the extension project that's required is an app.json. You can c
     The important settings in the app.json file are: `"id"`, `"name"`, `"version"`, `"publisher"`, `"dependencies"`, and `"runtime"`.
 
     - The `id` and `name` must match the value used by Microsoft's extensions.
-    - Set the `version` to any version lower than 23.0.0.0, like 14.0.0.0.
+    - Set the `version` to any version lower than 24.0.0.0, like 14.0.0.0.
     - You'll also have to include the `"publisher"`. You can use your own publisher name or `"Microsoft"`.
     - Remove all other settings. It's important that there are no `"dependencies"` set.
-    - Set the `runtime` to `"12.0"`.
+    - Set the `runtime` to `"11.0"`.
 
     The app.json files for each extension should look similar to following examples:
 
@@ -187,13 +187,13 @@ You'll create two versions of this extension. The first version contains the tab
     > [!NOTE]
     > If the `--tableDataOnly` parameter isn't available, you'll need a later version ot the txt2al conversion tool. See [Prerequisites](#prereqs) for more information.
 
-5. Make sure you have installed the latest AL Extension for Visual Studio Code from the version 23 DVD.
+5. Make sure you have installed the latest AL Extension for Visual Studio Code from the version 24 DVD.
 
    For more information, see [Get Started with AL](../developer/devenv-get-started.md).
 
 6. In Visual Studio Code, create an AL project for table migration extension using the **AL: Go!** command.
 
-   Set the target platform to **12.0 Business Central 2023 release wave 2**.
+   Set the target platform to **12.0 Business Central 2024 release wave 1**.
 7. If present, delete the HelloWorld.al file.
 8. Configure the project's app.json file:
 
@@ -220,7 +220,7 @@ You'll create two versions of this extension. The first version contains the tab
       "logo": "",
       "dependencies": [],
       "screenshots": [],
-      "platform": "23.0.0.0",
+      "platform": "24.0.0.0",
       "idRanges": [  ],
       "resourceExposurePolicy": {
         "applicableToDevExtension": false,
@@ -237,7 +237,7 @@ You'll create two versions of this extension. The first version contains the tab
     }
     ```
 
-9. Create an `.alpackages` folder in the root folder of the project and then copy the version 23 system symbols extension (System.app file) to the folder.
+9. Create an `.alpackages` folder in the root folder of the project and then copy the version 24 system symbols extension (System.app file) to the folder.
 
     The System.app file is located where you installed the AL Development Environment. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\240\AL Development Environment. This package contains the symbols for all the system tables and codeunits.
 
@@ -349,10 +349,10 @@ You'll create two versions of this extension. The first version contains the tab
 
 ## Task 7: Convert version 14 database
 
-This task runs a technical upgrade on the application database. The task converts the database from the version 14 platform to the version 23 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
+This task runs a technical upgrade on the application database. The task converts the database from the version 14 platform to the version 24 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
 [!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
-2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 23 as an administrator.
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 24 as an administrator.
 3. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
 
     ```powershell
@@ -372,9 +372,9 @@ This task runs a technical upgrade on the application database. The task convert
 
 [!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
-## Task 8: Configure version 23 server for DestinationAppsForMigration
+## Task 8: Configure version 24 server for DestinationAppsForMigration
 
-In this step, you configure the version 23 server instance. In particular, you configure it to migrate the table migration extension that you created earlier. The migration is controlled by the `DestinationAppsForMigration` setting for the server instance. For more information about the `DestinationAppsForMigration` setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).
+In this step, you configure the version 24 server instance. In particular, you configure it to migrate the table migration extension that you created earlier. The migration is controlled by the `DestinationAppsForMigration` setting for the server instance. For more information about the `DestinationAppsForMigration` setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).
 
 1. Set the server instance to connect to the application database.
 
@@ -410,7 +410,7 @@ In this step, you configure the version 23 server instance. In particular, you c
 
 ## Task 9: Import License
 
-Import the version 23 partner license. To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense):
+Import the version 24 partner license. To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense):
 
 ```powershell
 Import-NAVServerLicense -ServerInstance <server instance name> -LicenseFile <path>
@@ -448,7 +448,7 @@ In this task, you'll synchronize the tenant's database schema with any schema ch
 
 If you have a multitenant deployment, do these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant to the version 23 server instance.
+1. (Multitenant only) Mount the tenant to the version 24 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
 
