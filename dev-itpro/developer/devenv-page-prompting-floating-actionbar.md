@@ -1,5 +1,5 @@
 ---
-title: Prompting on pages
+title: Prompting using a floating action bar
 description: Business Central
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -11,7 +11,7 @@ ms.date: 03/07/2024
 ms.custom: bap-template
 ---
 
-# Prompting on pages
+# Prompting using a floating action bar
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 and runtime 13 of the AL Language extension for Visual Studio Code, you can create prompt actions to promote AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. A prompt action is a standard action that is rendered in a floating action bar on your pages, and it nudges users to use relevant Copilot built-in features.
 
