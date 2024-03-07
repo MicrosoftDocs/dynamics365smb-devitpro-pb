@@ -44,7 +44,7 @@ The `PromptDialog` page type has the following layout area types that characteri
 
 ### Actions in the PromptDialog page
 
-Unlike other page types, `PromptDialog` pages can only specify two action areas; `SystemActions` and `PromptGuide`. 
+Unlike other page types, `PromptDialog` pages can only specify two action areas; `SystemActions` and `PromptGuide`. The `SystemActions` area defines the copilot experience with options for generating and accepting generated content. The `PromptGuide` adds help to the user by providing predefined text prompt "guides" that users can select to use as input to generate content, rather than having to write that up themselves. The `PromptGuide` menu is only rendered in the web client when the `PromptMode` of the `PromptDialog` page is set to `Prompt`.
 
 |Action|Description|
 |------|-----------|
