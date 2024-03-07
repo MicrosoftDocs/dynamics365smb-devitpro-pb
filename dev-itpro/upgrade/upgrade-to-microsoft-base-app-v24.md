@@ -107,7 +107,7 @@ The only file in the extension project that's required is an app.json. You can c
     - Set the `version` to any version lower than 24.0.0.0, like 14.0.0.0.
     - You'll also have to include the `"publisher"`. You can use your own publisher name or `"Microsoft"`.
     - Remove all other settings. It's important that there are no `"dependencies"` set.
-    - Set the `runtime` to `"11.0"`.
+    - Set the `runtime` to `"13.0"`.
 
     The app.json files for each extension should look similar to following examples:
 
@@ -118,7 +118,7 @@ The only file in the extension project that's required is an app.json. You can c
       "name": "System Application",
       "publisher": "Microsoft",
       "version": "14.0.0.0",
-      "runtime": "12.0",
+      "runtime": "13.0",
       "target": "OnPrem"
     ```
 
@@ -129,7 +129,7 @@ The only file in the extension project that's required is an app.json. You can c
       "name": "Base Application",
       "publisher": "Microsoft",
       "version": "14.0.0.0",
-      "runtime": "12.0",
+      "runtime": "13.0",
       "target": "OnPrem"
     ```
 
@@ -140,7 +140,7 @@ The only file in the extension project that's required is an app.json. You can c
       "name": "<extension name>",
       "publisher": "<extension publisher",
       "version": "<extension version - must be lower than the final version>",
-      "runtime": "12.0",
+      "runtime": "13.0",
       "target": "OnPrem"
     ```
 
@@ -193,7 +193,7 @@ You'll create two versions of this extension. The first version contains the tab
 
 6. In Visual Studio Code, create an AL project for table migration extension using the **AL: Go!** command.
 
-   Set the target platform to **12.0 Business Central 2024 release wave 1**.
+   Set the target platform to **13.0 Business Central 2024 release wave 1**.
 7. If present, delete the HelloWorld.al file.
 8. Configure the project's app.json file:
 
@@ -228,7 +228,7 @@ You'll create two versions of this extension. The first version contains the tab
         "allowDownloadingSource": true,
         "includeSourceInSymbolFile": true
       },
-     "runtime": "12.0",
+     "runtime": "13.0",
      "features": [
         "NoImplicitWith"
       ],

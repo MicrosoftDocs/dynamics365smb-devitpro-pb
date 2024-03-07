@@ -343,6 +343,14 @@ Synchronize the tenant's database schema with any schema changes in the new exte
 
     Replace `$NewBCVersion` with the exact version of the published System Application. To get the version, you can use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
 
+1. Synchronize the tenant with the Business Foundation extension.
+
+    ```powershell
+    Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Business Foundation" -Version $NewBCVersion
+    ```
+
+   Replace `$NewBCVersion` with the exact version of the published Base Application.
+
 1. Synchronize the tenant with the Business Central Base Application extension.
 
     ```powershell
@@ -374,9 +382,9 @@ In this task, you run a data upgrade for extensions.
 
 #### Single tenant
 
-Run the data upgrade on extensions in order of dependency.
+Run the data upgrade/installation on extensions in order of dependency: System Application, Business Foundation, Base Application, Application.
 
-1. Run the data upgrade for the System Application, followed by the Base Application, then Application extension. 
+1. Run the data upgrade for the System Application. 
 
     To run the data upgrade, use the [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
 
@@ -403,7 +411,7 @@ Run the data upgrade on extensions in order of dependency.
     Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "Application" -Version $NewBCVersion
     ```
 
-    This step will automatically install the new versions on the tenant.
+    This step will automatically install the new versions of these extesnions on the tenant.
 
 1. Upgrade the new versions of Microsoft extensions and non-Microsoft extensions.
 
@@ -423,7 +431,7 @@ Start-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Fun
 
 This command will upgrade and install the extensions on the tenant.
 
-## Task 11: Install new Microsoft or reinstall 3rd-party extensions 
+## Task 11: Install new Microsoft or reinstall 3rd-party extensions
 
 Complete this task to install new first-time Microsoft extensions that you may have published in task 8 or any non-Microsoft extensions for which a new version wasn't published. For example, you would do this step for the  **_Exclude_ReportLayouts**  extension if you're upgrading from version 19 or earlier. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
@@ -433,7 +441,7 @@ Install-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Vers
 
 ## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
 
-[!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)] 
+[!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
 ## Task 13: Install upgraded permissions sets
 
