@@ -41,6 +41,21 @@ SignTool sign /f C:\Certificates\MyCert.pfx /p MyPassword /t http://timestamp.ve
 > [!NOTE]  
 > If you are using the BCContainerHelper PowerShell module to run [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on Docker, you can use the function `Sign-BCContainerApp` to perform all the steps above.
 
+## Starting June 1, 2023
+Industry standards will require private keys for standard code signing certificates to be stored on hardware certified as FIPS 140 Level 2, Common Criteria EAL 4+, or equivalent. see [https://knowledge.digicert.com/general-information/new-private-key-storage-requirement-for-standard-code-signing-certificates-november-2022]
+Prequisites are the same as before, meaning you must have Business Central and Windows SDK installed.
+
+## Steps for signing with a Hardware Token
+
+1. Plug your hardware token into your PC.
+2. Sign using the follow snippet
+> [!NOTE]
+> It will prompt you for the password for the hardware token.
+
+```
+signtool.exe sign /sha1 <Your Certificate Thumbprint> /tr http://timestamp.sectigo.com /td sha256 /fd sha256 /n <Company Name As Written on Certificate> "C\BC\MyExtension.app"
+```
+
 ## Self-signed certificate
 
 For testing purposes and on-premises deployments, it's acceptable to create your own self-signed certificate. You can do so using the [New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate) cmdlet in PowerShell on Windows 10 or [MakeCert](/windows/desktop/SecCrypto/makecert).  
