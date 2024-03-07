@@ -31,6 +31,7 @@ Set-NAVAddIn -ServerInstance $NewBcServerInstance -AddinName 'Microsoft.Dynamics
 Set-NAVAddIn -ServerInstance $NewBcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
 ```
 
+<!--
 This failed:
 Set-NAVAddIn -ServerInstance $NewBcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.SocialListening' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'SocialListening\Microsoft.Dynamics.Nav.Client.SocialListening.zip')
 
@@ -46,3 +47,4 @@ At line:1 char:1
     + CategoryInfo          : InvalidData: ([31;1mSet-NAVA...ersion=''[0m
 :String) [Set-NAVAddIn], InvalidOperationException
     + FullyQualifiedErrorId : navId,Microsoft.Dynamics.Nav.Management.SetNAVAddIn
+-->
