@@ -1776,7 +1776,7 @@
 #### [Upgrading reports](upgrade/upgrade-reports.md)
 #### Application and data
 ##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v24.md)
-##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v23.md)
+##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v24.md)
 ##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v24.md)
 ##### Related articles
 ###### [Convert to AL](upgrade/devenv-code-conversion.md)
