@@ -75,8 +75,8 @@ Specifies whether the extension handled the generated artifact successfully.
 Subscribe to the standard event in codeunit ReportManagement. This sample saves the JSON payload to a text file and copies the document stream content to the target stream.
 
 ```AL
-[EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterDocumentReady', '', true, true)]
-local procedure OnAfterDocumentReady(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var TargetStream: OutStream; var Success: Boolean)
+[EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterIntermediateDocumentReady', '', true, true)]
+local procedure OnAfterIntermediateDocumentReady(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var TargetStream: OutStream; var Success: Boolean)
 var
     JsonText: Text;
     JsonFile: File;
