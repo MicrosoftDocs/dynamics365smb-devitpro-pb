@@ -250,3 +250,4 @@ page 50100 MyCopilotPage
 [SourceTable property](properties/devenv-sourcetable-property.md)  
 [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md)  
 [Extensible property](properties/devenv-extensible-property.md)  
+[Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md)
