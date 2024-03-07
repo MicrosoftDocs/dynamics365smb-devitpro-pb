@@ -28,13 +28,14 @@ Your current version doesn't have to be the latest update for the version. Howev
 
 When upgrading your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) solution to version 24, the goal is to move towards a full uptake of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base and system applications, as they are, and migrating code customizations to add-on extensions. There are different upgrade levels that you follow to get to this state, as illustrated in the following figure. We recommend that you refactor to the system application as a minimum.
 
-[![Upgrade path on Business Central application.](../developer/media/bc24-upgrade-paths-v1.svg)](../developer/media/bc24-upgrade-paths-v1.svg#lightbox)
+[![Upgrade path on Business Central application.](../developer/media/bc24-upgrade-paths-v2.svg)](../developer/media/bc24-upgrade-paths-v2.svg#lightbox)
 
+<!--
 ### Technical Upgrade
 
 Although it's recommend to refactor to the system application as a minimum, you can do a technical upgrade only. A technical upgrade changes the database so that it works on the latest Business Central platform. The conversion updates the system tables of the old database to the new schema (data structure). It provides you with the latest platform features and performance enhancements.
 
-When upgrading from version 14, part of the technical upgrade process includes converting your customized base application from C/AL to AL.
+When upgrading from version 14, part of the technical upgrade process includes converting your customized base application from C/AL to AL.-->
 
 ## New and changed features
 

@@ -262,14 +262,6 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
 
     [What is the System Application?](upgrade-overview-v15.md#SystemApplication)
-1. Publish the Business Central base application extension (Microsoft_Base Application.app).
-
-    The **Base Application** extension contains the application business objects. You find the (Microsoft_Base Application.app in the **Applications\BaseApp\Source** folder of installation media (DVD).
-
-    ```powershell
-    Publish-NAVApp -ServerInstance $NewBcServerInstance -Path $BaseAppPath
-    ```
-
 1. Publish the Business Foundation extension (Microsoft_Business Foundation.app).
 
     The **Business Foundation** extension contains the objects and logic that supports number series. You find the Microsoft_Business Foundation.app in the **Applications\BusinessFoundation\Source** folder of installation media (DVD).
