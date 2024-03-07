@@ -211,13 +211,13 @@ When you installed version 24 in **Task 1**, a version 24 [!INCLUDE[server](../d
 2. Configure the server instance for migrate extensions to the use the new base application and system application extensions. 
 
     ```powershell
-    Set-NAVServerConfiguration -ServerInstance $NewBcServerInstance -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"},{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"}]'
+    Set-NAVServerConfiguration -ServerInstance $NewBcServerInstance -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"},{"appId":"f3552374-a1f2-4356-848e-196002525837", "name":"Business Foundation", "publisher": "Microsoft"},{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"}]'
     ```
 
     This setting serves the following purposes:
 
-    - When you run the data upgrade on a tenant, the server will run the data upgrade for the base and system application extensions. The base and system applications will be automatically installed on the tenant also.
-    - Lets you republish extensions that haven't been built on version 24. The extensions typically include the third-party extensions that were used in your version 14. When you publish the extensions, the extension manifests are automatically modified with a dependency on the base and system applications.
+    - When you run the data upgrade on a tenant, the server will run the data upgrade for the system application, business foundation, and base application extensions. These applications will be automatically installed on the tenant also.
+    - Lets you republish extensions that haven't been built on version 24. The extensions typically include the non-Microsoft, partner extensions that were used in your version 14. When you publish the extensions, the extension manifests are automatically modified with a dependency on the base and system applications.
 
     For more information about this setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).
 
@@ -286,6 +286,23 @@ Synchronize the tenant database with the platform changes in the application dat
     ```
 
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
+
+<!-- Got the follwowing error, then just publsihed and synced after publishe:
+
+PS C:\Windows\system32> Sync-NAVTenant -ServerInstance $NewBcServerInstance -Tenant $TenantId -Mode Sync
+Sync-NAVTenant : [31;1mSync-NAVTenant: [0m
+[31;1m[36;1mLine |[0m
+[31;1m[36;1m[36;1m  15 | [0m     $output = [36;1mSync-NAVTenant @cmdletArgs[0m;[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mMissing appid on table extension metadata for table extension Hybrid Activites Cue (part of extension 58623bfa-0559-4bc2-ae1c-0979c29fd9e0) on table 
+Activities Cue[0m
+At line:1 char:1
++ Sync-NAVTenant -ServerInstance $NewBcServerInstance -Tenant $TenantId ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: ([31;1mSync-NAV...ities Cue[0m
+:String) [Sync-NAVTenant], InvalidOperationException
+    + FullyQualifiedErrorId : navId,Microsoft.Dynamics.Nav.Management.SyncNAVTenant>
+-->
 
 ## Task 8: Publish extensions
 
@@ -387,7 +404,7 @@ In this task, you'll synchronize the tenant's database schema with any schema ch
 
 If you have a multitenant deployment, do these steps for each tenant.
 
-1. Synchronize the tenant with the **System Application** extension. 
+1. Synchronize the tenant with the **System Application** extension.
 
     Use the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
@@ -463,7 +480,7 @@ If you have a multitenant deployment, do these steps for each tenant.
         <!--You only need to use the -SkipAppVersionCheck if you didn't increase the application version in Task 5.--> 
     2. To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` and  `–Detailed` switches.
 
-    This step will automatically install the base application and system application on the tenant.
+    This step will automatically install the system application, business foundation, and base application on the tenant.
 
 1. Upgrade the new versions of Microsoft extensions and third-party extensions.
 
