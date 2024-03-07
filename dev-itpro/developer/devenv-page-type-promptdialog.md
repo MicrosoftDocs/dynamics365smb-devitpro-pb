@@ -99,12 +99,13 @@ page 50100 MyCopilotPage
         area(Prompt) 
         { 
 
-            /* The input to copilot. Accepts any control, except repeater controls. */ 
+            /* The input to copilot. Accepts any control, except repeater controls. Using the InstructionalText property to prompt using the prompt guide */ 
 
             field(ProjectDescription; UserInput)
             {    
                 ShowCaption = false;
                 MultiLine = true;
+                InstructionalText = 'Select a prompt guide to get started';
             }
         }
     
@@ -208,18 +209,26 @@ page 50100 MyCopilotPage
                 end;
             }      
         }
-        area(Prompting)
+
+        actions
         {
-            action(OrderFromDescription)
+            // Adding a predefined text prompt "guide" that users can select to use as input to generate content, rather than having to write it themselves.
+
+            area(PromptGuide)
             {
-                Caption = ‘Order from description’;
-                trigger OnAction()
-                    UserInput := 'The prompt is set in the NL field';
-                    // Update the page to show the inserted prompt. 
-                    CurrPage.Update();
-                begin
+                action(OrderFromDescription)
+                {
+                    Caption = 'Order from description';
+
+                    trigger OnAction()
+                    begin
+                        Input := 'The prompt is set in the NL field';
+                        CurrPage.Update();
+                    end;
+                }
+            //..
             }
-        }
+        }    
     }
 
     // Respect the user's choice
