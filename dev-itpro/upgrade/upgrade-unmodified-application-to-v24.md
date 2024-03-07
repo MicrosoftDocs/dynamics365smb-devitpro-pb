@@ -52,6 +52,7 @@ $TenantDatabase = "The name of the Business Central tenant database to be upgrad
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB. In a single-tenant deployment, this is the same as the $TenantDatabase" 
 $DatabaseServer = "The SQL Server instance that hosts the databases. The value has the format server_name\instance_name, For example: localhost\BCDEMO"
 $SystemAppPath = "The file path and name of the System Application extension for the update, for example: C:\DVD\Applications\system application\Source\\Microsoft_System Application.app"
+$BusFoundAppPath = "The file path and name of the Business Foundationn extension for the update, for example: C:\DVD\Applications\BusinessFoundation\Source\Microsoft_Business Foundation.app"
 $BaseAppPath = "The file path and name of the Base Application extension for the update, for example: C:\DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
 $ApplicationAppPath = "The path and file name to the Application application extension for the update, for example: C:\DVD\Applications\Application\Source\Microsoft_Application.app"
 $NewBCVersion = "The version number for the current System, Base, and Application extensions that you'll reinstall, for example: 24.0.24582.0"
@@ -261,7 +262,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
 
     [What is the System Application?](upgrade-overview-v15.md#SystemApplication)
-2. Publish the Business Central base application extension (Microsoft_Base Application.app).
+1. Publish the Business Central base application extension (Microsoft_Base Application.app).
 
     The **Base Application** extension contains the application business objects. You find the (Microsoft_Base Application.app in the **Applications\BaseApp\Source** folder of installation media (DVD).
 
@@ -269,7 +270,23 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance $NewBcServerInstance -Path $BaseAppPath
     ```
 
-3. Publish the Microsoft_Application extension.
+1. Publish the Business Foundation extension (Microsoft_Business Foundation.app).
+
+    The **Business Foundation** extension contains the objects and logic that supports number series. You find the Microsoft_Business Foundation.app in the **Applications\BusinessFoundation\Source** folder of installation media (DVD).
+
+    ```powershell
+    Publish-NAVApp -ServerInstance $NewBcServerInstance -Path $BusFoundAppPath
+    ```
+
+1. Publish the Business Central base application extension (Microsoft_Base Application.app).
+
+    The **Base Application** extension contains the application business objects. You find the (Microsoft_Base Application.app in the **Applications\BaseApp\Source** folder of installation media (DVD).
+
+    ```powershell
+    Publish-NAVApp -ServerInstance $NewBcServerInstance -Path $BaseAppPath
+    ```
+
+1. Publish the Microsoft_Application extension.
 
     For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
@@ -277,7 +294,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance $NewBcServerInstance -Path $ApplicationAppPath
     ```
 
-4. Publish the new versions of Microsoft extensions.
+1. Publish the new versions of Microsoft extensions.
 
     In this step, you publish new versions of Microsoft extensions that were used on your old deployment. You find the extensions in the **Applications** folder of the installation media (DVD).
 
@@ -294,7 +311,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     > [!NOTE]
     > A new extension for report layouts, called **_Exclude_ReportLayouts**, was added in version 20. If you're coming from a version earlier than version 20, make sure to publish and install this extension to get the latest report layout features described at [Get Started Creating Report Layouts](/dynamics365/business-central/ui-get-started-layouts).
 
-5. Publish new versions of non-Microsoft extensions. Be sure to include new extensions that contain custom permission sets as AL objects.
+1. Publish new versions of non-Microsoft extensions. Be sure to include new extensions that contain custom permission sets as AL objects.
 
     If you have new versions of these extensions, built on the Business Central version 24, then publish the new versions.  
 
@@ -302,7 +319,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance $NewBcServerInstance -Path "<path to extension>"
     ```
 
-6. Recompile extensions not built on version 24.
+1. Recompile extensions not built on version 24.
 
     [!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
 
@@ -374,15 +391,29 @@ Run the data upgrade on extensions in order of dependency.
     ```powershell
     Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "System Application" -Version $NewBCVersion
     ```
+
+    This step will automatically install the new system application on the tenant.
+1. Install the Business Foundation extension. The Base Application has a dependency on this app, so it must be installed before you can upgrade the Base Application. 
+
+   To install the  Business Foundation extension, use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
+
+    ```powershell
+    Install-NAVApp -ServerInstance $NewBcServerInstance -Name "Business Foundation" -Version $NewBCVersion
+    ```
+
+1. Run the data upgrade for the Base Application, followed by Application extension.
+
     ```powershell
     Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "Base Application" -Version $NewBCVersion
     ```
+
     ```powershell
     Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "Application" -Version $NewBCVersion
     ```
 
-    This step will automatically install the new system application and base application versions on the tenant.
-2. Upgrade the new versions of Microsoft extensions and non-Microsoft extensions.
+    This step will automatically install the new versions on the tenant.
+
+1. Upgrade the new versions of Microsoft extensions and non-Microsoft extensions.
 
     Upgrade any Microsoft and third-party extension that are used in the old deployment to new versions found on the installation media. The new versions are in the **Application** folder of the DVD. There's a folder for each extension. The extension package (.app file) is in the **Source** folder.
 
