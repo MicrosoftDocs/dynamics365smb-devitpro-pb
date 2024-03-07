@@ -65,6 +65,9 @@ For an example on how to implement the `RunGeneration` procedure, see [BCTech sa
 
 For an example on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
 
+
+<!-- solsen - remember to modify and compile the following example before release -->
+
 ```al
 page 50100 MyCopilotPage
 {
