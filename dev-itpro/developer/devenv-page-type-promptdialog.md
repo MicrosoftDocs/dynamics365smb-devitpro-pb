@@ -210,16 +210,48 @@ page 50100 MyCopilotPage
             }      
         }
 
-        actions
-        {
-            // Adding a predefined text prompt "guide" that users can select to use as input to generate content, rather than having to write it themselves.
+        // The PromptGuide area represents a list of predefined text prompt "guides", which users can select to use as input to generate content, rather than creating their own prompt from scratch.
 
-            area(PromptGuide)
+        area(PromptGuide)
+        {
+
+            action(PromptAction)
             {
-                
-            //..
+                Caption = 'Retrieve the first <number> items of type <type>.';
+                ToolTip = 'Prompt tooltip';
+
+                trigger OnAction()
+                begin
+                    PromptText := 'Retrieve the first <number> items of type <type> from the items list table.';
+                    CurrPage.Update();
+                end;
             }
-        }    
+            group(PromptGroup)
+            {
+                Caption = 'Grouped guides';
+                ToolTip = 'Here are groups of very important prompts.';
+
+                action(PromptInGroup)
+                {
+                    Caption = 'Do something';
+                    trigger OnAction()
+                    begin
+                        PromptText := 'Compute, get, create something, ...';
+                        CurrPage.Update();
+                    end;
+                }
+
+                action(PromptInGroup2)
+                {
+                    Caption = 'Do something else';
+                    trigger OnAction()
+                    begin
+                        PromptText := 'Compute, get, create something, ...';
+                        CurrPage.Update();
+                    end;
+                }
+            }
+        } 
     }
 
     // Respect the user's choice
