@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 10/27/2023
+ms.date: 03/07/2024
 ---
 
 # Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases
