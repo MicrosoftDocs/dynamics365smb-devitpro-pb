@@ -34,7 +34,7 @@ To find links to the properties related to the `PromptDialog` page type, see the
 
 ## Areas of the PromptDialog page type
 
-The `PromptDialog` page type has the following layout area types that characterize the dialog.
+The `PromptDialog` page type has the following layout area types that characterize the dialog. To enable the full copilot experience, you must use the `Prompt`, `Content`, and `PromptOptions` areas. The page must have a `area(Prompt)` with one or more controls that accept user input to have the `PromptDialog` page start with a prompt.)
 
 |Area |Description|
 |-----|-----------|
