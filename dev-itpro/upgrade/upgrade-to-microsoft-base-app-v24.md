@@ -18,7 +18,7 @@ This article describes how to upgrade a customized version 14 application to a v
 
 The upgrade is divided into two sections: Application Upgrade and Data Upgrade. The Application Upgrade section deals with upgrading the application code. For the application upgrade, you'll have to create several extensions. Some of these extensions are only used for upgrade purposes. The Data Upgrade section deals with upgrading the data on tenants - publishing, syncing, and installing extensions. For this scenario, the data upgrade consists of two phases for migrating data from the current tables to extension-based tables. The following figure illustrates the upgrade process.  
 
-[![Shows the upgrade on unmodified Business Central application.](../developer/media/Upgrade-BC14-custom-BC23.png)](../developer/media/Upgrade-BC14-custom-BC23.png#lightbox) 
+[![Shows the upgrade on unmodified Business Central application.](../developer/media/Upgrade-BC14-custom-BC24.svg)](../developer/media/Upgrade-BC14-custom-BC24.svg#lightbox) 
 
 The process uses two special features for migrating tables and data to extensions:
 
@@ -93,7 +93,7 @@ For the interim phase of migrating tables and data to extensions, you create emp
 - Microsoft base application
 - Each new customization extension that includes table or table extension objects for moving out of the existing base application. You don't have to create empty versions for extensions that don't include table changes. For example, the extension only includes a page object and code.
 
-[![Shows the empty extensions for data migration.](../developer/media/Upgrade-BC14-custom-BC23-empty.png)](../developer/media/Upgrade-BC14-custom-BC23-empty.png#lightbox)
+[![Shows the empty extensions for data migration.](../developer/media/Upgrade-BC14-custom-BC24-empty.png)](../developer/media/Upgrade-BC14-custom-BC24-empty.png#lightbox)
 
 The only file in the extension project that's required is an app.json. You can create the empty extension like any other extension by adding an AL project in Visual Studio Code:
 
@@ -158,7 +158,7 @@ In this step, you create an extension that consists only of the non-system table
 
 You'll create two versions of this extension. The first version contains the table objects. The second version, is an empty extension that contains a migrate.json file.
 
-[![Shows the two versions of the table migration extension.](../developer/media/Upgrade-BC14-custom-BC23-table-migration.png)](../developer/media/Upgrade-BC14-custom-BC23-table-migration.png#lightbox)
+[![Shows the two versions of the table migration extension.](../developer/media/Upgrade-BC14-custom-BC24-table-migration.png)](../developer/media/Upgrade-BC14-custom-BC24-table-migration.png#lightbox)
 
 ### Create the first version - tables only
 
