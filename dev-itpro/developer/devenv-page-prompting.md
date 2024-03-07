@@ -15,9 +15,10 @@ ms.custom: bap-template
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 and runtime 13 of the AL Language extension for Visual Studio Code, you can create prompt actions to promote AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. A prompt action is a standard action that is rendered in a floating action bar on your pages, and it nudges users to use relevant Copilot built-in features.
 
-To create a prompt action, you must create a new action in the `actions` property of the page object. The `RunObject` property of the action must be set to a `Page` object that is of type `PromptDialog`. The `RunObject` property cis then set to the object that you want to run. The object that you want to run must be of the type `PromptDialog`.
+To create a prompt action, you must create a new area in the `actions` section of the page object. The area must be set to `area(Prompting)`. You can then create a new action in the area and run a `PromptDialog` object that you want to activate when the action is clicked.
 
-```
+```al
+...
 actions
 {
     area(Prompting)
@@ -28,6 +29,7 @@ actions
         }
     }
 }
+...
 ```
 
 ## See also
