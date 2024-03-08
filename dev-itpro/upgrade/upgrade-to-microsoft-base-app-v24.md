@@ -18,7 +18,7 @@ This article describes how to upgrade a customized version 14 application to a v
 
 The upgrade is divided into two sections: Application Upgrade and Data Upgrade. The Application Upgrade section deals with upgrading the application code. For the application upgrade, you'll have to create several extensions. Some of these extensions are only used for upgrade purposes. The Data Upgrade section deals with upgrading the data on tenants - publishing, syncing, and installing extensions. For this scenario, the data upgrade consists of two phases for migrating data from the current tables to extension-based tables. The following figure illustrates the upgrade process.  
 
-[![Shows the upgrade on unmodified Business Central application.](../developer/media/Upgrade-BC14-custom-BC24.svg)](../developer/media/Upgrade-BC14-custom-BC24.svg#lightbox) 
+[![Shows the upgrade on unmodified Business Central application.](../developer/media/Upgrade-BC14-custom-BC24-v2.svg)](../developer/media/Upgrade-BC14-custom-BC24-v2.svg#lightbox) 
 
 The process uses two special features for migrating tables and data to extensions:
 
@@ -93,7 +93,7 @@ For the interim phase of migrating tables and data to extensions, you create emp
 - Microsoft base application
 - Each new customization extension that includes table or table extension objects for moving out of the existing base application. You don't have to create empty versions for extensions that don't include table changes. For example, the extension only includes a page object and code.
 
-[![Shows the empty extensions for data migration.](../developer/media/Upgrade-BC14-custom-BC24-empty.png)](../developer/media/Upgrade-BC14-custom-BC24-empty.png#lightbox)
+[![Shows the empty extensions for data migration.](../developer/media/Upgrade-BC14-custom-BC24-empty.svg)](../developer/media/Upgrade-BC14-custom-BC24-empty.svg#lightbox)
 
 The only file in the extension project that's required is an app.json. You can create the empty extension like any other extension by adding an AL project in Visual Studio Code:
 
@@ -127,6 +127,17 @@ The only file in the extension project that's required is an app.json. You can c
     ```json
       "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
       "name": "Base Application",
+      "publisher": "Microsoft",
+      "version": "14.0.0.0",
+      "runtime": "13.0",
+      "target": "OnPrem"
+    ```
+
+    **Business Foundation**
+
+    ```json
+      "id": "f3552374-a1f2-4356-848e-196002525837",
+      "name": "Business Foundation",
       "publisher": "Microsoft",
       "version": "14.0.0.0",
       "runtime": "13.0",
@@ -259,6 +270,9 @@ You'll create two versions of this extension. The first version contains the tab
                 "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f"
             },
             {
+                "id": "f3552374-a1f2-4356-848e-196002525837"
+            },
+            {
                 "id": "437dbf0e-84ff-417a-965d-ed2bb9650972"
             },
             {
@@ -271,6 +285,7 @@ You'll create two versions of this extension. The first version contains the tab
     In the example code:
 
     - `63ca2fa4-4f03-4f2b-a480-172fef340d3f` identifies the system application extension
+    - `f3552374-a1f2-4356-848e-196002525837` identifies the business foundation extension
     - `437dbf0e-84ff-417a-965d-ed2bb9650972` identifies the base application extension
     - The last entry is an example that identifies new customization extension. Include an entry for each customization extension for which you created an empty version in **Task 4**. Replace `<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>` with the actual extension ID. Remove this entry if not used.
 
@@ -540,19 +555,22 @@ Publish-NAVApp -ServerInstance <server instance name> -Path "<path to extension 
 Publish the extensions in the following order:
 
 1. Second version of the table migration extension, which is the empty version with the migration.json file.
-2. Microsoft System Application
+1. Microsoft System Application
 
     Publish the Microsoft_System Application.app extension package file that is in the **Applications\System Application\Source** folder of installation media (DVD).  
-3. Microsoft Base Application
+1. Microsoft Business Foundation
+
+    Publish the Microsoft_Business Foindation.app extension package file that is in the **Applications\BusinessFoundation\Source** folder of installation media (DVD).  
+1. Microsoft Base Application
 
     Publish the Microsoft_Base Application.app extension package file that is in the **Applications\BaseApp\Source** folder of installation media (DVD).
 
     > [!NOTE]
     > The other .app files in this folder, like Microsoft_Danish language (Denmark).app, are extensions that add translations for a specific language. By publishing and installing these extensions, you add the capability of showing the base application in another language. These extensions aren't required to complete the upgrade and can be published and installed later.
-4. Application extension.
-5. Customization extensions.
+1. Application extension.
+1. Customization extensions.
 
-6. Microsoft and third-party extensions.
+1. Microsoft and third-party extensions.
 
     The Microsoft extensions are in the **Applications** folder of installation media (DVD).
 
@@ -585,9 +603,10 @@ Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<e
 Synchronize the extensions in the following order:
 
 1. Microsoft System Application
-2. Microsoft Base Application
-3. Microsoft Application
-4. Microsoft and third-party extensions
+1. Microsoft Business Foundation
+1. Microsoft Base Application
+1. Microsoft Application
+1. Microsoft and third-party extensions
 
   > [!NOTE]
   >
@@ -646,9 +665,10 @@ The final step is to upgrade to the new extension versions in the following orde
 Run the data upgrade on the extensions in the following order:
 
 1. Upgrade the Microsoft System Application extension.
-2. Upgrade the Microsoft Base Application extension.
-3. Install the Microsoft Application extension
-4. Upgrade customization extensions, Microsoft, and third-party extensions.
+1. Upgrade the Microsoft Business Foundation extension.
+1. Upgrade the Microsoft Base Application extension.
+1. Install the Microsoft Application extension
+1. Upgrade customization extensions, Microsoft, and third-party extensions.
 
   > [!NOTE]
   >
@@ -672,7 +692,6 @@ Run the data upgrade on the extensions in the following order:
 ## Task 18: Upgrade control add-ins
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
-
 
 ## Task 19: Install upgraded permissions sets
 
