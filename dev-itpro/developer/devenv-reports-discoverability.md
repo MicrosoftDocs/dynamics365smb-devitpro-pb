@@ -37,9 +37,11 @@ For more information, see [Adding links to the navigation menu on the role cente
 
 ## Adding reports to the Report/Role explorer
 
-When pages and reports are added to role centers, they also become available in the Report/Role explorer overviews.
+When pages and reports are added to role centers, they also become available in the Report/Role explorer overviews (if the Report/Role explorer feature is enabled for the roles).
 
-For more information about the Report/Role explorer, see [Finding Reports with the Role Explorer](/dynamics365/business-central/ui-role-explorer).
+To check if the Report/Role explorer feature is enabled for a role, check the **Show in Role Explorer** option on the **Profile (Role)** card. For more information about Report/Role explorer visibility for a role, see [Manage user profiles](/dynamics365/business-central/admin-users-profiles-roles#to-activate-a-profile).
+
+For more information about the Report/Role explorer feature, see [Finding Reports with the Role Explorer](/dynamics365/business-central/ui-role-explorer).
 
 ## Adding reports to pages
 
