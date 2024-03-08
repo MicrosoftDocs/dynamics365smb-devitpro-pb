@@ -17,6 +17,17 @@ This article describes the features that have been moved, removed, or replaced i
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
+## Changes in 2024 release wave 1
+
+The following features are marked as `obsolete:pending` in 2024 release wave 1.
+
+### Excel reports on the Business Manager and Accountant role centres
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| The Excel reports (Balance Sheet, Income Statement, Statement of Cash Flows, Statement of Retained Earnings, VAT Collected, Customer Statements, Aged Accounts Payable, and Aged Accounts Receivable) that are available from the Business Manager and Accountant role centres is being replaced by new reports. The new reports use Excel layouts that allows power users to modify the layouts with Excel and upload the new layouts to [!INCLUDE[prod_short](../includes/prod_short.md)]. The deprecated reports will be hidden from the role centres in 2025 release Wave 1 and will be completely removed from [!INCLUDE[prod_short](../includes/prod_short.md)] in 2026 release wave 1. |
+
+
 ## Changes in 2023 release wave 2
 
 The following features are marked as `obsolete:pending` in 2023 release wave 2.
