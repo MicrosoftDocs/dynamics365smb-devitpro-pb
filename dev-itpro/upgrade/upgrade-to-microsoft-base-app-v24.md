@@ -170,7 +170,7 @@ In this step, you create an extension that consists only of the non-system table
 
 You'll create two versions of this extension. The first version contains the table objects. The second version, is an empty extension that contains a migrate.json file.
 
-[![Shows the two versions of the table migration extension.](../developer/media/Upgrade-BC14-custom-BC24-table-migration.png)](../developer/media/Upgrade-BC14-custom-BC24-table-migration.png#lightbox)
+[![Shows the two versions of the table migration extension.](../developer/media/Upgrade-BC14-custom-BC24-table-migration.svg)](../developer/media/Upgrade-BC14-custom-BC24-table-migration.svg#lightbox)
 
 ### Create the first version - tables only
 
