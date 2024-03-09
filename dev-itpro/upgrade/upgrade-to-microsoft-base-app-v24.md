@@ -85,11 +85,12 @@ For example, if your application includes custom tables, then create extensions 
 
 Also, be aware that since version 18, several base application tables are now temporary tables. This change may affect the upgrade. For more information, see [Known Issues - Tables changed to temporary may prevent synchronizing new base application version](known-issues.md#temptables).
 
-## Task 4: Create empty System, Base, and customization extensions
+## Task 4: Create empty system, business foundation, base, and customization extensions
 
 For the interim phase of migrating tables and data to extensions, you create empty extension versions for:
 
 - Microsoft system application
+- Microsoft business foundation application. This application was introduced in version 24 and contain object for number series.
 - Microsoft base application
 - Each new customization extension that includes table or table extension objects for moving out of the existing base application. You don't have to create empty versions for extensions that don't include table changes. For example, the extension only includes a page object and code.
 
@@ -122,22 +123,22 @@ The only file in the extension project that's required is an app.json. You can c
       "target": "OnPrem"
     ```
 
-    **Base Application**
+    **Business Foundation**
 
     ```json
-      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
-      "name": "Base Application",
+      "id": "f3552374-a1f2-4356-848e-196002525837",
+      "name": "Business Foundation",
       "publisher": "Microsoft",
       "version": "14.0.0.0",
       "runtime": "13.0",
       "target": "OnPrem"
     ```
 
-    **Business Foundation**
+    **Base Application**
 
     ```json
-      "id": "f3552374-a1f2-4356-848e-196002525837",
-      "name": "Business Foundation",
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "name": "Base Application",
       "publisher": "Microsoft",
       "version": "14.0.0.0",
       "runtime": "13.0",
@@ -446,6 +447,7 @@ In this task, you'll publish the extensions configured as DestinationAppsForMigr
 2. Publish the empty versions of the following extensions:
 
     - **System Application** extension
+    - **Business Foundation** extension
     - **Base Application** extension
     - Customization extensions (if any).
 
@@ -624,8 +626,8 @@ Synchronize the extensions in the following order:
   > - India Reports
   > - India Data Migration
 
-5. Customization extensions
-6. Second version of the table migration extension (empty version)
+1. Customization extensions
+1. Second version of the table migration extension (empty version)
 
 > [!IMPORTANT]
 > Synchronize extensions in the order of dependencies. The migration extension must be synchronized last. This step will change table ownership to the system and base application.
@@ -648,13 +650,13 @@ This step removes the temporary tables included in the table migration extension
    Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<table migration extension>" -Version <extension version>
    ```
 
-2. Synchronize the extension by using the clean mode:
+1. Synchronize the extension by using the clean mode:
 
    ```powershell
    Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<table migration extension>" -Version <extension version> -Mode clean
    ```
 
-3. Unpublish the two versions of the table migration extension.
+1. Unpublish the two versions of the table migration extension.
 
 For more information, see [Unpublishing and Uninstalling Extensions](../developer/devenv-unpublish-and-uninstall-extension-v2.md).
 
@@ -687,7 +689,7 @@ Run the data upgrade on the extensions in the following order:
   > - Upgrade the India Data Migration.
 
    For customization extensions, only do this step for those extensions that have an empty version currently installed on the tenant (see **Task 10**). If you have a customization extension for which you didn't create and publish an empty version, complete the next step to install these extensions.
-5. Install remaining customization extensions for which you didn't create and publish an empty version.
+1. Install remaining customization extensions for which you didn't create and publish an empty version.
 
 ## Task 18: Upgrade control add-ins
 
@@ -700,8 +702,8 @@ In this task, you install the custom permission sets that you upgraded earlier i
 ### For permission sets as AL objects
 
 1. Publish the extension or extensions that include the permission sets.
-2. Sync the extensions with the tenant.
-3. Install the extensions on the tenant.
+1. Sync the extensions with the tenant.
+1. Install the extensions on the tenant.
 
 ### For permission sets as data in XML
 
@@ -711,10 +713,10 @@ In this task, you install the custom permission sets that you upgraded earlier i
     Set-NavServerConfiguration -ServerInstance <BC19 server instance> -KeyName "UsePermissionSetsFromExtensions" -KeyValue false
     ```
 
-2. Restart the serve instance.
-3. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
-4. Search for and open the **Permission Sets** page.
-5. Select **Import Permission Sets**, and follow the instructions to import the XML file.
+1. Restart the serve instance.
+1. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
+1. Search for and open the **Permission Sets** page.
+1. Select **Import Permission Sets**, and follow the instructions to import the XML file.
 
 For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
@@ -725,16 +727,16 @@ For more information, see [To export and import a permission set](/dynamics365/b
 ## Post-upgrade tasks
 
 1. [!INCLUDE[delegation-upgrade](../developer/includes/delegation-upgrade.md)]
-2. Uninstall the table migration extension.
-3. Enable task scheduler on the server instance.
-4. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
-5. If you want to use data encryption as before, enable it.
+1. Uninstall the table migration extension.
+1. Enable task scheduler on the server instance.
+1. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
+1. If you want to use data encryption as before, enable it.
 
    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 
-6. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
+1. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
 
     Version 18 introduced a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
 
@@ -743,7 +745,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
     - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).  
-7. Complete the setup of the integration with Dynamics 365 Sales.
+1. Complete the setup of the integration with Dynamics 365 Sales.
 
     If your [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises deployment had an active connection with Dynamics 365 Sales, you must perform the following steps to complete the setup of the connection in [!INCLUDE [prod_short](../includes/prod_short.md)] online:
 
