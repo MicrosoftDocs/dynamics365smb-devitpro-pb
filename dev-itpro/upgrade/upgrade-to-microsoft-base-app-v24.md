@@ -46,6 +46,8 @@ The process uses two special features for migrating tables and data to extension
 
 2. The version 14 [!INCLUDE[devshell](../developer/includes/devshell.md)] and [!INCLUDE[adminshell](../developer/includes/adminshell.md)] are installed. 
 
+   To run the [!INCLUDE[devshell](../developer/includes/devshell.md)], you must have a developer/partner licence that allows you to run the File, Export, and Text system.
+
 3. Get the required version of the txt2al conversion tool.
 
     During the upgrade, you'll use the txt2al conversion tool to convert existing tables to the AL syntax. You'll need to use a version of txt2al conversion tool that supports the `--tableDataOnly` parameter. This parameter was first introduced in [version 14.12 (cumulative update 11, platform 14.0.41862)](https://support.microsoft.com/help/4549684/cumulative-update-12-for-microsoft-dynamics-365-business-central-april). So if you're upgrading from version 14.11 (cumulative update 10) or earlier, you'll have to download the txt2al conversion tool from a later version 14 update. See [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292/released-cumulative-updates-for-microsoft-dynamics-365-business). 
@@ -90,7 +92,7 @@ Also, be aware that since version 18, several base application tables are now te
 For the interim phase of migrating tables and data to extensions, you create empty extension versions for:
 
 - Microsoft system application
-- Microsoft business foundation application. This application was introduced in version 24 and contain object for number series.
+- Microsoft business foundation application. This extension was introduced in version 24 and currently contains objects and logic for number series, which was previously part of the base application. It will contain more functionality in future releases.
 - Microsoft base application
 - Each new customization extension that includes table or table extension objects for moving out of the existing base application. You don't have to create empty versions for extensions that don't include table changes. For example, the extension only includes a page object and code.
 
@@ -221,7 +223,7 @@ You'll create two versions of this extension. The first version contains the tab
     {
       "id": "11111111-aaa-2222-bbbb-333333333333",
       "name": "bc14baseapptablesonly",
-      "publisher": "My publisher",
+      "publisher": "Default Publisher",
       "version": "1.0.0.0",
       "brief": "",
       "description": "",
@@ -232,37 +234,36 @@ You'll create two versions of this extension. The first version contains the tab
       "logo": "",
       "dependencies": [],
       "screenshots": [],
-      "platform": "24.0.0.0",
-      "idRanges": [  ],
+      "platform": "1.0.0.0",
+      "application": "24.0.0.0",
+      "idRanges": [],
       "resourceExposurePolicy": {
-        "applicableToDevExtension": false,
         "allowDebugging": true,
         "allowDownloadingSource": true,
         "includeSourceInSymbolFile": true
       },
-     "runtime": "13.0",
-     "features": [
-        "NoImplicitWith"
+      "runtime": "13.0",
+      "features": [
+        "NoImplicitWith",
       ],
-      "target": "OnPrem",
-      "showMyCode": true
+      "target": "OnPrem"
     }
     ```
 
 9. Create an `.alpackages` folder in the root folder of the project and then copy the version 24 system symbols extension (System.app file) to the folder.
 
-    The System.app file is located where you installed the AL Development Environment. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\240\AL Development Environment. This package contains the symbols for all the system tables and codeunits.
+    The System.app file is located where you installed the AL Development Environment. By default, the folder path is `C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\240\AL Development Environment`. This package contains the symbols for all the system tables and codeunits.
 
 10. Add the AL files for the tables that you converted earlier to the root folder for the project.
 
 11. Build the extension package for the first version.
 
-    To build the extension package, press Ctrl+Shift+B. This step creates an .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
+    To build the extension package, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>. This step creates an .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
 
 ### Create the second version - empty
 
 1. In Visual Studio Code, create a new file called migration.json file and add it to the project's root folder.
-2. In the migration.json, include rules for the Microsoft base application, system application, and your customization extensions.
+2. In the migration.json, include rules for system application, business foundation extension, base application, and your customization extensions.
 
     ```json
     {
@@ -305,7 +306,7 @@ You'll create two versions of this extension. The first version contains the tab
 4. Increase the `version` in the app.json file.
 5. Build the extension package for the second version.
 
-    To build the extension package, press Ctrl+Shift+B.
+    To build the extension package, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
 ## DATA UPGRADE
 
@@ -441,7 +442,7 @@ In this task, you'll publish the extensions configured as DestinationAppsForMigr
 1. Publish the first version of the table migration extension, which is the version that contains the table objects.
 
     ```powershell
-    Publish-NAVApp -ServerInstance <server instance name> -Path "<path to extension .app file>"
+    Publish-NAVApp -ServerInstance <server instance name> -Path "<path to tables only extension version 1.app file>" -SkipVerification
     ```
 
 2. Publish the empty versions of the following extensions:
@@ -451,7 +452,7 @@ In this task, you'll publish the extensions configured as DestinationAppsForMigr
     - **Base Application** extension
     - Customization extensions (if any).
 
-    This step publishes the extensions you created in Task 3. Publish the extensions using the Publish-NAVApp, like in the previous steps. Except if the extensions aren't signed, use the `-SkipVerification` switch parameter.
+    This step publishes the extensions you created in Task 3. Publish the extensions using the Publish-NAVApp, like in the previous steps.
 
 3. Restart the server instance.
 
@@ -504,7 +505,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     > To verify the tenant state, run [Get-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/get-navtenant) cmdlet with the `-ForceRefresh` switch:
     >
     > `Get-NAVTenant <server instance> -Tenant <default> -ForceRefresh`
-4. Synchronize the empty versions of system application, base application, and customization extensions that you published in **Task 10**.
+4. Synchronize the empty versions of system application, business foundation, base application, and customization extensions that you published in **Task 10**.
 
 ## Task 12: Install DestinationAppsForMigration and move tables
 
@@ -530,11 +531,11 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
    Get-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -Detailed
    ```
 
-   The process is complete when you see `State = Operational` in the results.
+   The process is complete when you see `State = Operational` or `State = Completed` in the results.
 
    When completed, the table migration extension will be installed.
 
-3. Install the empty versions of the system, base, and customization extensions that you published in **Task 8**.
+3. Install the empty versions of the system, business foundation, base, and customization extensions that you published in **Task 8**.
 
     To install the extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). 
 
@@ -570,6 +571,8 @@ Publish the extensions in the following order:
     > [!NOTE]
     > The other .app files in this folder, like Microsoft_Danish language (Denmark).app, are extensions that add translations for a specific language. By publishing and installing these extensions, you add the capability of showing the base application in another language. These extensions aren't required to complete the upgrade and can be published and installed later.
 1. Application extension.
+
+    Publish the Microsoft_Application.app extension package file that is in the **Applications\Application\Source** folder of installation media (DVD).
 1. Customization extensions.
 
 1. Microsoft and third-party extensions.
@@ -610,21 +613,21 @@ Synchronize the extensions in the following order:
 1. Microsoft Application
 1. Microsoft and third-party extensions
 
-  > [!NOTE]
-  >
-  > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must synchronize the India extensions.
-  >
-  > - Tax Engine
-  > - India Tax Base
-  > - QR Generator
-  > - India GST
-  > - India Gate Entry
-  > - India TCS
-  > - India TDS
-  > - India Voucher Interface
-  > - Fixed Asset Depreciation for India
-  > - India Reports
-  > - India Data Migration
+    > [!NOTE]
+    >
+    > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must synchronize the India extensions.
+    >
+    > - Tax Engine
+    > - India Tax Base
+    > - QR Generator
+    > - India GST
+    > - India Gate Entry
+    > - India TCS
+    > - India TDS
+    > - India Voucher Interface
+    > - Fixed Asset Depreciation for India
+    > - India Reports
+    > - India Data Migration
 
 1. Customization extensions
 1. Second version of the table migration extension (empty version)
@@ -647,13 +650,13 @@ This step removes the temporary tables included in the table migration extension
 1. Uninstall the second version of the table migration extension.
 
    ```powershell
-   Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<table migration extension>" -Version <extension version>
+   Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<table migration extension - version 2>" -Version <extension version>
    ```
 
 1. Synchronize the extension by using the clean mode:
 
    ```powershell
-   Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<table migration extension>" -Version <extension version> -Mode clean
+   Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<table migration extension - version 2>" -Version <extension version> -Mode clean
    ```
 
 1. Unpublish the two versions of the table migration extension.

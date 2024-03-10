@@ -25,7 +25,6 @@ During Setup, you're presented with various configuration settings. Some setting
 
 There are some components that require other software to run. For example, the database requires SQL Server and the Web client requires IIS. Setup will install several of these prerequisites, like installing SQL Server Express and enabling IIS. You can see which prerequisites Setup installs in the [System Requirements](system-requirement-business-central.md).  
 
-
 ## Downloading [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for installation 
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is available for downloading from Microsoft Support. For each major release, minor updates are published on a regular basis. The downloaded files contain the installation media, which includes the setup.exe file.
