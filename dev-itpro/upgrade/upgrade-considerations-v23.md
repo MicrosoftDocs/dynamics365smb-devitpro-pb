@@ -52,11 +52,11 @@ Learn more about the deprecated features at:
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (v18) introduced a new model for permissions. In previous versions, permission sets and permissions are defined only as data, which means they're stored in the tables of the application and tenant databases. Permission sets and permissions can now be defined in AL code as objects and packaged in extensions. This new model is the recommended model. To learn more, see [Entitlements and Permissions](../developer/devenv-entitlements-and-permissionsets-overview.md).
 
 - If you've already made the transition to the new permissions model in your current solution, then there's no extra work related to permission sets required for upgrade.
-- If you're upgrading solution that hasn't transitioned to the new permissions model, we recommend that you do. However, you can continue using the legacy model. Whichever model you choose, there's permission-related tasks you'll have to complete as part of upgrade. Learn more at [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)
+- If you're upgrading a solution that hasn't transitioned to the new permissions model, we recommend that you do. However, you can continue using the legacy model. Whichever model you choose, there's permission-related tasks you'll have to complete as part of upgrade. Learn more at [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)
 
 ## Report platform
 
-Version 20 introduced a new report rendering model. Previously, report rendering was done by the application. Now, by default, report rendering is done by the platform. In support of this new model, various changes have been made tht affect upgrade from version 19 and earlier. If you're upgrading from version 20, the solution should already include the necessary changes.
+Version 20 introduced a new report rendering model. Previously, report rendering was done by the application. Now, by default, report rendering is done by the platform. In support of this new model, various changes have been made that affect upgrade from version 19 and earlier. If you're upgrading from version 20 or later, the solution should already include the necessary changes.
 
 Learn more at [Upgrading reports](upgrade-reports.md).
 
