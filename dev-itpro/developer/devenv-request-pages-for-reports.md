@@ -2,9 +2,9 @@
 title: "Using request pages with reports"
 description: "Introducing how to work with request pages with Business Central reports."
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 12/05/2023
-ms.reviewer: na
+ms.custom: bap-template
+ms.date: 03/11/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: solsen
 ---
