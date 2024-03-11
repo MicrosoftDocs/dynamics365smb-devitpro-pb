@@ -2,7 +2,11 @@
 > [!NOTE]
 > This feature is available with runtime 13.0 and later and is enabled by default if you're targeting runtime 13.0 and later..
 
-Starting from runtime 13.0, large applications can achieve a separation of concerns by allowing extension objects to exist within the same app as their target. This enables the creation of multiple extensions for a single target within the same app. When table extensions reside in the same app as their target, their fields and keys are transferred to the base table, eliminating the need for SQL-joins at runtime.
+From runtime 13.0 onwards, large applications have the ability to maintain a separation of concerns. This is achieved by permitting extension objects to coexist with their target within the same app. This facilitates the development of multiple extensions for a single target, all within the same app. 
+
+When table extensions live in the same app as their target, their fields and keys are integrated into the base table. This integration eliminates the need for SQL-joins during runtime. 
+
+Permitting extension objects to coexist with their target within the same app is particularly useful for non-disruptive code refactoring within an app. It allows for dividing objects into modules based on specific functionalities, or for preparing to move objects into a separate app in anticipation of future releases.
 
 With runtime 13.0, extension objects from a specific app are applied to the target based on the extension object ID. This introduces the following new compiler validations:
 
