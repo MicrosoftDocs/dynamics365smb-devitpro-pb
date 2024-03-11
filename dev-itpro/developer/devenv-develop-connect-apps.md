@@ -144,8 +144,8 @@ All resources, such as customers, invoices etc., live in the context of a parent
 
 ## See also
 
-[API Developer Overview](devenv-api.md)
-[Using Filtering With APIs](devenv-connect-apps-filtering.md)  
-[Tips for Working with APIs](devenv-connect-apps-tips.md)   
+[API developer overview](devenv-api.md)
+[Using filtering with APIs](devenv-connect-apps-filtering.md)  
+[Tips for working with APIs](devenv-connect-apps-tips.md)   
 [Troubleshooting API calls](../webservices/dynamics-error-codes.md)    
 [API performance](../webservices/web-service-performance.md)   
