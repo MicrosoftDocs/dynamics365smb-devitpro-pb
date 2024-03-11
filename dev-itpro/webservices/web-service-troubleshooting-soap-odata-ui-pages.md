@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting errors on OData/SOAP web services on pages, queries, and codeunits.
+title: Troubleshooting errors in OData/SOAP web services on pages, queries, and codeunits.
 description: Learn about how to troubleshoot Business Central web service errors on OData/SOAP endpoints on pages, queries, and codeunits.
 author: KennieNP
 ms.custom: bap-template
@@ -9,7 +9,7 @@ ms.author: kepontop
 ms.date: 03/11/2024
 ---
 
-# Troubleshooting errors on OData/SOAP web services on pages, queries, and codeunits.
+# Troubleshooting errors in OData/SOAP web services on pages, queries, and codeunits.
 
 Troubleshooting web service errors can be tricky because the root cause of the error can be in multiple places:
 
@@ -24,7 +24,7 @@ In this article, you can learn more about different methods and tools that you c
 
 ## Do not use Microsoft pages as SOAP/OData APIs
 
-The [!INCLUDE[prod_short](../includes/prod_short.md)] application evolves over time and as part if this, changes happen to the user interface. This means that the page structure and fields might also change when interacting with the page from a web service client and it is not something you can depend on being stable over time. 
+The [!INCLUDE[prod_short](../includes/prod_short.md)] application evolves over time and changes happen to the user interface as part of this. This means that the page structure and fields might also change when interacting with the page from a web service client and it is not something you can depend on being stable over time. 
 
 If you require a stable API on a page in the [!INCLUDE[prod_short](../includes/prod_short.md)] application, you have two options:
 

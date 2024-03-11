@@ -24,17 +24,26 @@ In the following sections, you can learn more about different methods and tools 
 
 [!INCLUDE[httpStatusErrorCodes](../includes/include-http-status-error-codes.md)]
 
+
 ## Web service telemetry
 
 All incoming calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services and outgoing calls to external services are logged to partner telemetry. Telemetry enables you to monitor which endpoints are being used and the category of the web service, like SOAP, OData, or API. You can also see possible failures, which are tracked in the HTTP status codes for the calls.
 
 For more information, see [Web service telemetry](web-service-telemetry.md).
 
+
 ## Troubleshooting OData/REST API calls
 
 For calls to OData/REST API endpoints, we offer more details for troubleshooting because these calls also return OData error codes when failures occur. 
 
 For more information, see [Troubleshooting OData/API calls](dynamics-error-codes.md).
+
+## Troubleshooting web service errors in OData/SOAP web services on pages, queries, and codeunits
+
+The [!INCLUDE[prod_short](../includes/prod_short.md)] application evolves over time and changes happen to the user interface as part of this. This means that the page structure and fields might also change when interacting with the page from a web service client and it is not something you can depend on being stable over time. 
+
+For information about errors in OData/SOAP web services on pages, queries, and codeunits, see
+[Troubleshooting errors on OData/SOAP web services on pages, queries, and codeunits](web-service-troubleshooting-soap-odata-ui-pages.md)
 
 ## Debugging code called from a web service endpoint
 
