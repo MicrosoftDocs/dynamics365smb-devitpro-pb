@@ -25,7 +25,9 @@ You can choose to migrate data for all companies or only specific companies. It'
 [!INCLUDE [migrate-limits](../developer/includes/migrate-limits.md)]
 
 > [!NOTE]
-> Per-database tables are always migrated, no matter which companies are selected for a migration run.
+> - Per-database tables are always migrated, no matter which companies are selected for a migration run.
+>
+> - We advise that you move all companies to the tenant before going live. Moving companies into a live tenant can lead to data loss in the live companies. [Learn more about migrating companies to live tenants](migrate-companies-live-tenant.md)].
 
 ### Extension data
 
@@ -64,6 +66,7 @@ In the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.
 It's important to have a solid migration strategy in place to ensure a smooth transition. Most migrations can run from the on-premises production database with minimal downtime for end users. However, for especially large migrations, it might be better to run migration from a backup of the on-premises database deployed as Azure SQL Database. Doing migrations this way improves migration speeds and minimizes performance loss and downtime on the on-premises production database.
 
 1. [Enable change tracking](/sql/relational-databases/track-changes/enable-and-disable-change-tracking-sql-server) on the on-premises production database for the expected number of days between the first backup for replication and the next time you'll back up and replicate. A minimum of three days is enforced. The number of days for which change tracking is enabled can't be changed later without resetting change tracking altogether.
+
 
    > [!NOTE]
    > - Long retention periods for change tracking data might cause database resource starvation when high volumes of data are changed on the database, which may lead to reduced database performance and/or loss of the change tracking data. Pick a change tracking period that strikes a balance between migration strategy needs and available resources on the on-premises database.

@@ -3,9 +3,8 @@ title: Data replication troubleshooting
 description: Troubleshooting article for data replication process in Business Central cloud migration
 ms.author: jswymer 
 ms.reviewer: jswymer 
-
 ms.topic: troubleshooting 
-ms.date: 01/02/2024
+ms.date: 02/29/2024
 ms.custom: bap-template
 ---
 
@@ -51,7 +50,7 @@ In many cases, though, this operation causes out of memory exceptions and timeou
 
 ## Next steps
 
-[Run data replication](migrate-data-replication-run.md)  
+[Run data replication](migrate-data-replication-run.md).  
 
 ## See also
 
