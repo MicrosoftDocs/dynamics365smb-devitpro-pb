@@ -20,7 +20,7 @@ The team that develops the Business Central product itself is the same team resp
 
 The service is built from the ground up as a multitenant service, comprised of multiple microservices running on the Microsoft Azure cloud ecosystem. It's built on leading technologies such as React, TypeScript, .NET Core, Azure OpenAI, Microsoft Entra, Azure Functions, Containers, Load Balancers, Virtual Machine Scale Sets, Cosmos DBs, Key Vaults, Service Bus, Traffic Managers, SignalR, Web Sockets, and many more.
 
-![Diagram depicting depicting scalability elements of Business Central service.](developer/media/scalability.png)
+![Diagram depicting scalability elements of Business Central service.](developer/media/scalability.png)
 
 ## Global availability
 
