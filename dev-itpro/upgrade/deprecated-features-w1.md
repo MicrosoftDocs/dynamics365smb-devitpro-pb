@@ -3,7 +3,7 @@ title: Deprecated Features in the Base App
 description: Describes the features that have been moved, removed, or replaced in the W1 version.
 author: brentholtorf
 ms.author: bholtorf
-ms.date: 08/23/2023
+ms.date: 03/11/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.custom: bap-template
@@ -21,11 +21,11 @@ This article describes the features that have been moved, removed, or replaced i
 
 The following features are marked as `obsolete:pending` in 2024 release wave 1.
 
-### Excel reports on the Business Manager and Accountant role centres
+### Excel reports on the Business Manager and Accountant role centers
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| The Excel reports (Balance Sheet, Income Statement, Statement of Cash Flows, Statement of Retained Earnings, VAT Collected, Customer Statements, Aged Accounts Payable, and Aged Accounts Receivable) that are available from the Business Manager and Accountant role centres is being replaced by new reports. The new reports use Excel layouts that allows power users to modify the layouts with Excel and upload the new layouts to [!INCLUDE[prod_short](../includes/prod_short.md)]. The deprecated reports will be hidden from the role centres in 2025 release Wave 1 and will be completely removed from [!INCLUDE[prod_short](../includes/prod_short.md)] in 2026 release wave 1. |
+|Replaced| The Excel reports (Balance Sheet, Income Statement, Statement of Cash Flows, Statement of Retained Earnings, VAT Collected, Customer Statements, Aged Accounts Payable, and Aged Accounts Receivable) that are available from the Business Manager and Accountant role centers are being replaced by new reports. The new reports use Excel layouts that allow power users to modify the layouts with Excel and upload the new layouts to [!INCLUDE[prod_short](../includes/prod_short.md)]. The deprecated reports will be hidden from the role centers in 2025 release wave 1 and will be completely removed from [!INCLUDE[prod_short](../includes/prod_short.md)] in 2026 release wave 1.|
 
 
 ## Changes in 2023 release wave 2
