@@ -1,6 +1,6 @@
 ---
 title: Service scalability for Business Central online
-description: Learn about Business Central online ability to provide resource elasticity through real-time data driven autoscaling and dynamic load distribution to support these needs.
+description: Learn about Business Central's online ability to provide resource elasticity through real-time, data-driven autoscaling and dynamic load distribution to support these needs.
 author: dmc-dk
 ms.author: dmitrych 
 ms.reviewer: jswymer
@@ -9,11 +9,15 @@ ms.collection:
 ms.date: 02/22/2024
 ms.custom: bap-template
 ---
+
+<!-- In line 39, if "B" means billion, let's write that out as 2 billion, 1 billion, and 4 billion. -->
+
+
 # Service scalability for Business Central online
 
 Microsoft Dynamics 365 Business Central online is a modern, global, robust, and scalable solution for small and mid-sized organizations, providing resource elasticity to support current and future demands of modern businesses.
 
-Business Central online manages diverse customers of different sizes and complexity, with load patterns fluctuating based on the time of the day, seasonality, the number of active users, active external integrations, and various other factors. One of the key strengths of Business Central online is its ability to provide resource elasticity through real-time data driven autoscaling and dynamic load distribution to support these needs.
+Business Central online manages diverse customers of different sizes and complexity, with load patterns fluctuating based on the time of the day, seasonality, the number of active users, active external integrations, and various other factors. One of the key strengths of Business Central online is its ability to provide resource elasticity through real-time, data-driven autoscaling and dynamic load distribution to support these needs.
 
 Telemetry shows that 99.81% of the execution time (measured by the user session minutes) is performed on the compute nodes with ample resources.  
 
@@ -23,20 +27,22 @@ Assume a user works with Business Central for 4 hours daily, Monday through Frid
 
 During only 0.19% (or 2 minutes and 20 seconds) of these 1,200 minutes, the user's session might potentially encounter some slowdowns when running on a compute node that exceeds the expected threshold of available resources.
 
-Historical data also shows a very high degree of database scaling efficiency. 99.85% of all databases had enough resources and never exceeded safe thresholds. Only 0.05% of databases were running above the safe thresholds for longer than 1% of the time. Business Central team is constantly monitoring these metrics and tuning the scaling and balancing algorithms to get even better results.  
+Historical data also shows a very high degree of database scaling efficiency: 99.85% of all databases had enough resources and never exceeded safe thresholds. Only 0.05% of databases were running above the safe thresholds for longer than 1% of the time. The Business Central team is constantly monitoring these metrics and tuning the scaling and balancing algorithms to get even better results.  
 
 <!--
 ## Business continuity and disaster recovery (BCDR)
 
-Business Central online financially guarantees 99,9% up-time for its paid production environments, where customers are entitled to financial compensation if the service does not deliver on this promise. Built-in redundancy implemented on many levels of the service, automated failover and rollback mechanisms, rigid and granular backup policy, as well as historical data, show that it has been able to consistently maintain this level of availability. Read how Business Central online supports business continuity here.  -->
+Business Central online financially guarantees 99.9% up-time for its paid production environments, where customers are entitled to financial compensation if the service does not deliver on this promise. Built-in redundancy implemented on many levels of the service, automated failover and rollback mechanisms, rigid and granular backup policy, as well as historical data, show that it has been able to consistently maintain this level of availability. Read how Business Central online supports business continuity here.  -->
 
 ## Throughput  
 
 Within a typical working week, the service manages over 2B API calls, close to 1B UI interactions, and nearly 4B server sessions.
 
-ERP processes are typically complex and varied, employing diverse configurations, data distribution, extensions, and other parameters. To gauge an online service's capability in handling such workloads, it’s most effective to consider data from similar customers already utilizing the service. Business Central facilitates this by collecting telemetry data in a manner that prioritizes customer privacy—customer information is fully anonymized, and no specific customer data is disclosed. Nevertheless, the collected data offers insights into the statistics and counts of scenarios exercised. It reveals the frequency and scale of various processes and the number of records involved, without possibility of tracing these results to specific customers. This approach allows for a comprehensive understanding of the service's performance without compromising the confidentiality of individual customer data.
+ERP processes are typically complex and varied, employing diverse configurations, data distribution, extensions, and other parameters. To gauge an online service's capability in handling such workloads, it’s most effective to consider data from similar customers already using the service. Business Central facilitates this by collecting telemetry data in a manner that prioritizes customer privacy—customer information is fully anonymized, and no specific customer data is disclosed. 
 
-In the context of Business Central, these needs might, for example, involve creating and posting documents, handling web service calls, managing UI interactions, overseeing scheduled tasks, and many other activities. Business Central helps customers and partners get even higher throughput, by following the best practices described in the online documentation at <https://aka.ms/bcperformance> and supported by a broad range of tools and telemetry.
+Nevertheless, the collected data offers insights into the statistics and counts of scenarios exercised. It reveals the frequency and scale of various processes and the number of records involved, without the possibility of tracing these results to specific customers. This approach allows for a comprehensive understanding of the service's performance without compromising the confidentiality of individual customer data.
+
+In the context of Business Central, these needs might, for example, involve creating and posting documents, handling web service calls, managing UI interactions, overseeing scheduled tasks, and many other activities. Business Central helps customers and partners get even higher throughput, by following the best practices described in the online documentation at [Performance Overview](https://aka.ms/bcperformance) and supported by a broad range of tools and telemetry.
 
 The following are real-life examples of such workloads measured per single environment, for a selection of customers already running in Business Central online.
 
@@ -62,7 +68,7 @@ In Dynamics 365 Business Central, posting sales documents refers to the formal c
 
 For more information, see [Posting Documents and Journals](/dynamics365/business-central/ui-post-documents-journals).
 
-#### Real-life, per-environment measurements (telemetry for a selection of customers): 
+#### Real-life, per-environment measurements (telemetry for a selection of customers) 
 
 - 5,000 sales invoices posted in 1 hour 
 - 2,500 sales invoices posted in 1 hour, with a total of 120,000 lines of Type: Item 
@@ -99,6 +105,7 @@ For more information, see [Operational limits](administration/operational-limits
 In January 2024, telemetry shows that only a small fraction of customers’ API calls (0.32%) are being affected (throttled) by our rate limits.  
 
 In such cases, customers can increase throughput by distributing their web services workloads across multiple users, either named users or Microsoft Entra Applications (depending on the licensing requirements).  
+
 For example, if a customer's e-commerce portal needs to make 42,000 requests per 5-minute window, this could be accomplished by distributing these requests across 7 Microsoft Entra Applications (7 * 6,000 = 42,000 web service requests).
 
 ### Web service calls 
@@ -127,7 +134,7 @@ Job queues in Business Central serve as a mechanism for automating and schedulin
 
 For more information, see [Schedule jobs to run automatically](/dynamics365/business-central/admin-job-queues-schedule-tasks).
 
-#### Real-life, per-environment measurements (telemetry for a selection of customers): 
+#### Real-life, per-environment measurements (telemetry for a selection of customers) 
 
 - 350,000 in one day  
 - 15,000 in one hour (4 per second on average)   
@@ -135,7 +142,7 @@ For more information, see [Schedule jobs to run automatically](/dynamics365/busi
 
 ## Storage  
 
-In Business Central online, customers are provided with a default storage quota that is shared by all environments associated with a customer's Microsoft Entra ID, with per-user quota added to it. There's a possibility of buying more capacity if needed, however, there's no operational limit for database size. While most databases in Business Central online fleet are less than 100 GB, many databases exceed the 100-GB mark, and some databases are notably larger, going above 1 TB of compressed data. Many of the large databases come from the customers migrating from on-premises solutions to Business Central online. In January 2024 alone, telemetry shows many cases of customers migrating databases of >250 GB, with some measuring up to 500-600 GB of data.
+In Business Central online, customers are provided with a default storage quota that is shared by all environments associated with a customer's Microsoft Entra ID, with per-user quota added to it. There's a possibility of buying more capacity if needed; however, there's no operational limit for database size. While most databases in the Business Central online fleet are less than 100 GB, many databases exceed the 100 GB mark, and some databases are notably larger, going above 1 TB of compressed data. Many of the large databases come from the customers migrating from on-premises solutions to Business Central online. In January 2024 alone, telemetry shows many cases of customers migrating databases of >250 GB, with some measuring up to 500-600 GB of data.
 
 [Learn more about storage](administration/tenant-admin-center-capacity.md).
 
