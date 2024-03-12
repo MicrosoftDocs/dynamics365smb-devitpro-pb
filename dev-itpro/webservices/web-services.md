@@ -13,7 +13,7 @@ ms.date: 02/28/2024
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports three types of web services: (REST) API, SOAP, and OData. Web services are a lightweight, industry-standard way to make application functionality available to various external systems and users. You can create and publish functionality as REST API web services for reading and/or writing data back to [!INCLUDE[prod_short](../includes/prod_short.md)]. 
 
-Using REST API web services is the recommended way to develop and consume web services. But you can also publish pages, codeunits, or queries as web services, or enhance a page web service by using an extension codeunit. When you publiah [!INCLUDE[prod_short](../includes/prod_short.md)] objects as web services, they're immediately available on the network.  
+Using REST API web services is the recommended way to develop and consume web services. But you can also publish pages, codeunits, or queries as web services, or enhance a page web service by using an extension codeunit. When you publish [!INCLUDE[prod_short](../includes/prod_short.md)] objects as web services, they're immediately available on the network.  
 
 All [!INCLUDE[prod_short](../includes/prod_short.md)] web services are stateless and don't preserve the values of global variables or single-instance codeunits between calls.  
 
