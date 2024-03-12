@@ -20,6 +20,7 @@ How you sign an app package file depends on when your certificate was issued. On
 
 If your certificate was issued after June 1, 2023, follow the guide on [Sign an app package file with Azure Key Vault](#sign-an-app-package-file-with-azure-key-vault). If your certificate was issues before this date, follow the guide on [Sign an app package file with a pfx file](#sign-an-app-package-file-with-a-pfx-file) or upload your certificate to an Azure Key Vault and follow the guide on [Sign an app package file with Azure Key Vault](#sign-an-app-package-file-with-azure-key-vault).
 
+
 ## Sign an app package file with Azure Key Vault
 
 ### Prerequisites
