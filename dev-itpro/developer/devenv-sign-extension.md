@@ -31,7 +31,7 @@ Before signing your app file please follow the steps below to ensure your key va
 3. **Configure access policies:** [Configure an Azure Key Vault access policy](https://learn.microsoft.com/azure/key-vault/general/assign-access-policy?tabs=azure-portal) for the account that will be used for signing. At minimum, the account needs the following permissions:
     * Cryptographic Operations: Sign
     * Certificate Management Operations: Get
-![AccessPolicies.](media/keyvaultaccesspolicies.png)
+![Shows the access policies page in Azure Key Vault. The access policies are set up with Cryptographic Operations: Sign and Certificate Management Operations: Get permissions.](media/keyvaultaccesspolicies.png)
 
 4. **Upload your certificate to the Key Vault:** The process on getting your certificate into your Azure Key Vault will depend on which Certificate Authority you use. Please consult with your certificate authority on how you can get your codesigning certificate into an Azure Key Vault.
 
@@ -85,7 +85,7 @@ sign code azure-key-vault --help
 
 The signing of an app package file must be performed on a computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed. If you're running [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on Docker for your development environment, that environment will meet this requirement. You must also have the certificate that will be used for signing on the computer. The certificate must include code signing as the intended purpose. It's recommended that you use a certificate purchased from a third-party certificate authority.
 
-![Certificates.](media/certificates.png)
+![Shows a list of certificates in the Windows Certificate Manager Tool.](media/certificates.png)
 
 ### Steps for signing your .app file with a PFX file
 
@@ -128,7 +128,7 @@ If you publish the extension as an app on AppSource, the app package file must b
 
 You can check the validity of your code signing by transferring your signed app file to a Windows device which did not sign it. Right-click on the file and go to Properties, Digital Signatures, and then Details. In this pop-up, choose View Certificate and finally go to Certification Path. It should look similar to the below example (though it's a Microsoft binary file):
 
-![Certificates.](media/CheckRootCA.png)
+![Shows the Digital Signitures window for a signed file with a valid root certificate.](media/CheckRootCA.png)
 
 If the Certification Path has only one entry then the file isn't signed correctly and will be rejected by AppSource technical validation.
 
