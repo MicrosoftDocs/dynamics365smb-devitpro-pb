@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Service operations for Business Central online
 
-[!INCLUDE[prod_short](includes/prod_short.md)] runs globally in many Microsoft Azure datacenters. All parts of the infrastructure and services are continually monitored and optimized to deliver the best possible experience. Most service operations and optimizations happen without users being aware of them. In some situations, user interaction is needed, like reconnecting to [!INCLUDE[prod_short](includes/prod_short.md)] or refreshing the browser. Users will be notified directly in the browser if any action is required on their part. Users are asked to take action before the optimizations are applied on the service. This way, they can continue to work without further interruptions. Service operations happen all day, every day, to always provide best experience.
+[!INCLUDE[prod_short](includes/prod_short.md)] runs globally in many Microsoft Azure datacenters. All parts of the infrastructure and services are continually monitored and optimized to deliver the best possible experience. Most service operations and optimizations happen without users being aware of them. In some situations, user interaction is needed, like reconnecting to [!INCLUDE[prod_short](includes/prod_short.md)] or refreshing the browser. Users will be notified directly in the browser if any action is required on their part. Users are asked to take action before the optimizations are applied on the service. This way, they can continue to work without further interruptions. Service operations happen all day, every day, to always provide the best experience.
 
 ## Service reliability engineering
 
@@ -28,7 +28,7 @@ However, even with these safeguards, live site incidents can and do happen. Live
 
 * Dependent-service issues, such as Microsoft Entra ID, Azure SQL, Storage, virtual machine scale set, Service Fabric, and so on  
 
-* Infrastructure outage, such as a hardware failure or data center failure  
+* Infrastructure outage, such as a hardware failure or datacenter failure  
 
 * Configuration issues for [!INCLUDE [prod_short](includes/prod_short.md)] environments, such as insufficient capacity  
 
@@ -36,7 +36,7 @@ However, even with these safeguards, live site incidents can and do happen. Live
 
 * Customer-specific misconfiguration, such as bad queries or reports, or other types of problematic AL code  
 
-Reducing the incident volume is one way to decrease live site burden and to improve customer satisfaction. However, it isn't always possible to do so. For example, when incident categories are outside the [!INCLUDE [prod_short](includes/prod_short.md)] team's direct control. Also, as the service footprint expands to support rapid growth in usage, the probability of an incident occurring due to external factors increases. High incident counts can happen, even in cases where the [!INCLUDE [prod_short](includes/prod_short.md)] service has minimal service code regressions, and where the service has met or exceeded its Service Level Objective (SLO) for an overall reliability of 99.95%. The [!INCLUDE [prod_short](includes/prod_short.md)] team devotes significant resources to reducing incident costs to a level that is sustainable, by both financial and engineering measures.  
+Reducing the incident volume is one way to decrease live site burden and to improve customer satisfaction. However, it isn't always possible to do so. For example, when incident categories are outside the [!INCLUDE [prod_short](includes/prod_short.md)] team's direct control. Also, as the service footprint expands to support rapid growth in usage, the probability of an incident occurring due to external factors increases. High incident counts can happen, even in cases where the [!INCLUDE [prod_short](includes/prod_short.md)] service has minimal service code regressions, and where the service has met or exceeded its service level objective (SLO) for an overall reliability of 99.95%. The [!INCLUDE [prod_short](includes/prod_short.md)] team devotes significant resources to reducing incident costs to a level that is sustainable, by both financial and engineering measures.  
 
 ## Live site incident process
 
@@ -46,7 +46,7 @@ The following diagram illustrates the main steps in the lifecycle of standard li
 
 :::image type="content" source="media/service-overview-livesite.png" alt-text="Visual showing the live site incident process handling lifecycle.":::
 
-In the first phase, which is the **service monitoring** phase, the development and operations (DevOps) team works with engineers, program managers, and the Senior Leadership Team to define Service Level Indicators (SLIs) and Service Level Objectives (SLOs) for both major scenarios and minor scenarios. These objectives apply to different metrics of the service, including scenario/component reliability, scenario/component performance (latency), and resource consumption. The live site team and product team then craft alerts that monitor Service Level Indicators (SLIs) against agreed upon targets. When violations are detected, an alert is triggered for investigation.  
+In the first phase, which is the **service monitoring** phase, the development and operations (DevOps) team works with engineers, program managers, and the senior leadership team to define service level indicators (SLIs) and service level objectives (SLOs) for both major and minor scenarios. These objectives apply to different metrics of the service, including scenario/component reliability, scenario/component performance (latency), and resource consumption. The live site team and product team then craft alerts that monitor SLIs against agreed-upon targets. When violations are detected, an alert is triggered for investigation.  
 
 In the second phase, which is the **incident response** phase, processes are structured to facilitate the following results:
 
@@ -54,23 +54,26 @@ In the second phase, which is the **incident response** phase, processes are str
 * Analysis of affected service components and workflows  
 * Targeted mitigation of incident impact  
 
-In the final phase, which is the **continuous improvement** phase, the team focuses on completing a post-mortem analysis and resolution of any identified process, monitoring, or configuration or code fixes. Based on overall severity and risk of reoccurrence, the fixes are then prioritized against the team's general engineering backlog.  
+In the final phase, which is the **continuous improvement** phase, the team focuses on completing a post-mortem analysis and resolution of any identified process, monitoring, or configuration or code fixes. Based on overall severity and risk of recurrence, the fixes are then prioritized against the team's general engineering backlog.  
 
 ## Our practices for service monitoring
 
-The [!INCLUDE [prod_short](includes/prod_short.md)] team emphasizes a consistent, data-driven, and customer-centric approach to its live site operations. Defining Service Level Indicators (SLIs) and implementing live site monitoring alerts are part of the approval criteria for enabling any new [!INCLUDE [prod_short](includes/prod_short.md)] feature in production. Product group engineers also include steps for investigation and mitigation of alerts when they occur using a template Troubleshooting Guide (TSG).  
+The [!INCLUDE [prod_short](includes/prod_short.md)] team emphasizes a consistent, data-driven, and customer-centric approach to its live site operations. Defining SLIs and implementing live site monitoring alerts are part of the approval criteria for enabling any new [!INCLUDE [prod_short](includes/prod_short.md)] feature in production. Product group engineers also include steps for investigation and mitigation of alerts when they occur using a template Troubleshooting Guide (TSG).  
 
-One way in which the [!INCLUDE [prod_short](includes/prod_short.md)] team enables exponential service growth is by using a DevOps team. These individuals are skilled with service architecture, automation and incident management practices, and are embedded within incidents to drive end-to-end resolution. The DevOps team uses a rotational model, where engineering leaders from the product group assume an incident manager role for a scheduled number of days. The DevOps team ensures that a consistent group of individuals drive live site improvements and incorporate learnings from previous incidents in future escalations. The DevOps team also assists with large-scale drills that test Business Continuity and Disaster Recovery (BCDR) capabilities of the service.  
+One way in which the [!INCLUDE [prod_short](includes/prod_short.md)] team enables exponential service growth is by using a DevOps team. These individuals are skilled with service architecture, automation and incident management practices, and are embedded within incidents to drive end-to-end resolution. The DevOps team uses a rotational model, where engineering leaders from the product group assume an incident manager role for a scheduled number of days. The DevOps team ensures that a consistent group of individuals drives live site improvements and incorporates learnings from previous incidents in future escalations. The DevOps team also assists with large-scale drills that test Business Continuity and Disaster Recovery (BCDR) capabilities of the service.  
 
 DevOps practices also enforce alert quality in several ways:  
 
 * TSGs include impact analysis and escalation policy  
-
 * Alerts execute for the shortest time possible for faster detection  
-
 * Alerts use reliability thresholds instead of absolute limits to scale clusters of different sizes  
 
 ## Our practices for incident response
+
+
+
+
+
 
 When an automated live site incident is created for [!INCLUDE [prod_short](includes/prod_short.md)], one of the first priorities is to notify customers of potential impact. Azure's target notification time is 15 minutes. That target can be difficult to achieve, depending on the number of teams that are involved and the complexity of the incident. Communications in such cases are at risk of being late or inaccurate due to required manual analysis. Azure Monitoring offers centralized monitoring and alerting solutions that can detect impact to certain metrics within this time window.  
 
