@@ -1,5 +1,5 @@
 ---
-title: REST APIs, OData, and SOAP web services
+title: Compare REST APIs, OData, and SOAP web services in Business Central
 description: Compare the features of REST APIs, SOAP, and OData web services and know how to create and maintain these services. 
 author: kenniep
 ms.custom: bap-template
@@ -11,9 +11,9 @@ ms.date: 02/28/2024
 
 # [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports three types of web services: (REST) API, SOAP, and OData. Web services are a lightweight, industry-standard way to make application functionality available to various external systems and users. Developers can create and publish functionality as REST API web services for reading and/or writing data back to [!INCLUDE[prod_short](../includes/prod_short.md)]. 
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports three types of web services: (REST) API, SOAP, and OData. Web services are a lightweight, industry-standard way to make application functionality available to various external systems and users. You can create and publish functionality as REST API web services for reading and/or writing data back to [!INCLUDE[prod_short](../includes/prod_short.md)]. 
 
-Using REST API web services is the recommended way to develop and consume web services. But apart from REST API web services, it's still possible to publish pages, codeunits, or queries as web services, and even enhance a page web service by using an extension codeunit. When [!INCLUDE[prod_short](../includes/prod_short.md)] objects are published as web services, they're immediately available on the network.  
+Using REST API web services is the recommended way to develop and consume web services. But you can also publish pages, codeunits, or queries as web services, or enhance a page web service by using an extension codeunit. When you publiah [!INCLUDE[prod_short](../includes/prod_short.md)] objects as web services, they're immediately available on the network.  
 
 All [!INCLUDE[prod_short](../includes/prod_short.md)] web services are stateless and don't preserve the values of global variables or single-instance codeunits between calls.  
 
@@ -21,17 +21,17 @@ All [!INCLUDE[prod_short](../includes/prod_short.md)] web services are stateless
 
 ## Web service telemetry, performance, troubleshooting, and security
 
-When working with web service integrations, you need to pay extra attention to the fundamental areas of telemetry, performance, troubleshooting, and security.
+When you work with web service integrations, you need to pay extra attention to the fundamental areas of telemetry, performance, troubleshooting, and security.
 
 ### Web service telemetry
 
-All calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are logged to partner telemetry. Telemetry enables you to monitor which endpoints are being used and the category of the web service, like SOAP, OData, or (REST) API. You can also see possible failures, which are tracked in the HTTP status codes for the calls.
+All calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are logged to partner telemetry. Telemetry helps you to monitor which endpoints are being used and the category of the web service, like SOAP, OData, or (REST) API. You can also see possible failures, which are tracked in the HTTP status codes for the calls.
 
 For more information web service telemetry, see: [Web Service Telemetry](web-service-telemetry.md)  
 
 ### Web service performance
 
-The performance of web services (REST API, OData, or SOAP) is both the responsibility of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server endpoint and the consumer (the client). 
+The performance of web services (REST API, OData, or SOAP) depends on both the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server endpoint and the consumer (the client). 
 
 For more information about web service performance, see [Web service performance](web-service-performance.md).  
 
@@ -40,8 +40,6 @@ For more information about web service performance, see [Web service performance
 Security is an important part of a solution involving web services. One reason is because the client calling the web service endpoint is likely not delivered by Microsoft. Another reason is because the interaction between the client and [!INCLUDE[prod_short](../includes/prod_short.md)] is over a network.
 
 For more information, see [Web service security](web-service-security.md).  
-
-
 ### Troubleshooting web services
 
 Troubleshooting web service errors can be tricky because the root cause of the error can be in multiple places:
@@ -52,17 +50,15 @@ Troubleshooting web service errors can be tricky because the root cause of the e
 
 For more information, see [Troubleshooting web service errors](web-service-troubleshooting.md).  
 
-
 ### Web services best practices
 
 Apart from the articles mentioned previously, you might also want to learn more about best practices when working with web services in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 For more information, see [Web services best practices](web-services-best-practices.md).
 
-
 ## The OData standard
 
-Web services of type REST API and OData are both based on OData version 4. The OData standard is well suited for web service applications that require a uniform, flexible, general purpose interface for exposing create retrieve update delete \(CRUD\) operations on a tabular data model to clients. OData can also be used for applications that are primarily RPC-oriented by using unbound actions. OData supports Representational State Transfer \(REST\)-based data services.
+Web services of type REST API and OData are both based on OData version 4. The OData standard is well suited for web service applications that require a uniform, flexible, general purpose interface for exposing create retrieve update delete \(CRUD\) operations on a tabular data model to clients. You can also use OData for applications that are primarily RPC-oriented by using unbound actions. OData supports Representational State Transfer \(REST\)-based data services.
 
 REST-based data services  enable resources that are identified using Uniform Resource Identifiers \(URIs\) and defined in an abstract data model \(EDM\) to be published and edited by web clients within corporate networks and across the Internet using simple Hypertext Transfer Protocol \(HTTP\) messages. OData services are lightweight, with functionality often referenced directly in the URI.
 
@@ -74,7 +70,7 @@ OData is used in other Microsoft products and technologies, for example:
 
 For more information, see [OData overview](odata-web-services.md).
 
-## Comparing REST APIs, SOAP, and OData Web Services
+## Compare REST APIs, SOAP, and OData web services
 
 Developers planning to create [!INCLUDE[prod_short](../includes/prod_short.md)] web services might need to decide which type of web service is better suited to their needs. 
 
@@ -97,13 +93,13 @@ The following table shows the types of objects you use in AL for each type of we
 
 [!INCLUDE[gui_allowed](../developer/includes/include-gui-allowed.md)]
 
-## REST API Web Services  
+## REST API web services  
 
 The [!INCLUDE[prod_short](../includes/prod_short.md)] API stack is optimized for performance and is the preferred way to integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with external systems. [!INCLUDE[prod_short](../includes/prod_short.md)] also comes with an extensive list of built-in (REST) APIs that requires no code and minimal setup to use. You can also develop your own custom APIs using the AL object types API pages and API queries.
 
 For more information about REST API web services, see [REST API web services overview](api-overview.md).
 
-## OData Web Services  
+## OData web services  
 
 With OData web services, you can publish pages, codeunits, and queries as ODataV4 web service endpoints. 
 
@@ -111,7 +107,7 @@ SOAP web services expose a Web Services Description Language (WSDL) document. OD
 
 For more information about OData web services, see [Publishing a web service](publish-web-service.md).
 
-## SOAP Web Services  
+## SOAP web services  
 
 With SOAP web services, you can publish pages and codeunits as SOAP web service endpoints. The most common type of messaging pattern in SOAP is the Remote Procedure Call (RPC). With RPC, one network node \(the client\) sends a request message to another node \(the server\), and the server sends a response message to the client.
 
@@ -120,7 +116,7 @@ With SOAP web services, you can publish pages and codeunits as SOAP web service 
 
 For more information about SOAP web services, see [SOAP web service overview](soap-web-services.md).  
 
-## Publishing pages, queries, or codeunits as web services  
+## Publish pages, queries, or codeunits as web services  
 
 Before REST APIs were available in [!INCLUDE[prod_short](../includes/prod_short.md)], publishing pages, queries, or codeunits as OData or SOAP based web services was the only way to develop integrations to [!INCLUDE[prod_short](../includes/prod_short.md)]. 
 
@@ -138,10 +134,9 @@ When you expose a page as an OData web service, you can query that data to retur
 
 For more information about page web services, see [Publishing a web service](publish-web-service.md).
 
-
 ### Web services based on a codeunit
 
-Codeunit web services provide you with the most control and flexibility. When a codeunit is exposed as a web service, all functions defined in the codeunit are exposed as operations. Both OData and SOAP can be used with codeunit web services.
+Codeunit web services provide you with the most control and flexibility. When you expose a codeunit as a web service, all functions defined in the codeunit are exposed as operations. Both OData and SOAP can be used with codeunit web services.
 
 For more information about codeunit web services, see [Publishing a web service](publish-web-service.md).
 
@@ -151,13 +146,11 @@ When you expose a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] qu
 
 For more information about query web services, see [Publishing a web service](publish-web-service.md).
 
-## Managing timezones in web services
+## Manage timezones in web services
 
 For fields of type datetime, the time part of the data needs clarification when the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is located in a different timezone than the connect app (the one that consumes data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services).
 
 To learn more about how timezones work in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services stack for this type of data, see [Managing timezones in web services](managing-time-zones-with-web-services.md).
-
-
 
 ## Web Services and Regional Settings (for on-premises)
 
@@ -166,7 +159,6 @@ Data is formatted according to the value of the **Services Language** setting fo
 If you know that the **Services Language** setting is always en-us, for example, your code can be based on that assumption. In a multilanguage environment, you see more predictable transformations of data if data that is transmitted through web services is in a consistent culture.  
 
 Similarly, you can use the **ServicesOptionFormat** setting to specify how [!INCLUDE[server](../developer/includes/server.md)] must understand option values. If you set the **ServicesOptionFormat** setting to *OptionString*, [!INCLUDE[server](../developer/includes/server.md)] understand option values as the *name* of the option value, which is always en\-us. If you set the setting to *OptionCaption*, web service data is interpreted in the language specified by the **Services Language** setting.  
-
 
 ## Web Services in Multitenant Deployments (for on-premises) 
 
@@ -184,16 +176,16 @@ https://localhost:7048/BC230/ODataV4/Company('CRONUS-International-Ltd.')/Custom
 
 For more information, see [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md).  
 
-
 ## See also
-[Web Service Telemetry](web-service-telemetry.md)  
-[Web service performance](web-service-performance.md)  
-[Web service security](web-service-security.md)   
-[Troubleshooting web service errors](web-service-troubleshooting.md)   
-[Web Services Best Practices](Web-Services-Best-Practices.md)   
-[OData overview](odata-web-services.md)   
-[REST API web services overview](api-overview.md)  
-[SOAP web service overview](soap-web-services.md)  
-[Publish a Web Service](publish-web-service.md)   
-[Multitenant Deployment Architecture (on-premises)](../deployment/Multitenant-Deployment-Architecture.md)   
-[Configuring Business Central Server (on-premises)](../administration/configure-server-instance.md)  
+
+- [Web Service Telemetry](web-service-telemetry.md)  
+- [Web service performance](web-service-performance.md)  
+- [Web service security](web-service-security.md)   
+- [Troubleshooting web service errors](web-service-troubleshooting.md)   
+- [Web Services Best Practices](Web-Services-Best-Practices.md)   
+- [OData overview](odata-web-services.md)   
+- [REST API web services overview](api-overview.md)  
+- [SOAP web service overview](soap-web-services.md)  
+- [Publish a Web Service](publish-web-service.md)   
+- [Multitenant Deployment Architecture (on-premises)](../deployment/Multitenant-Deployment-Architecture.md)   
+- [Configuring Business Central Server (on-premises)](../administration/configure-server-instance.md)  
