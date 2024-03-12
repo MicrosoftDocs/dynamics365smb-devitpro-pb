@@ -148,5 +148,5 @@ In Business Central online, customers are provided with a default storage quota 
 
 ## See also
 
-[Service overview](service-overview.md)
-[Service operations](service-operations.md)
+- [Service overview](service-overview.md)
+- [Service operations](service-operations.md)
