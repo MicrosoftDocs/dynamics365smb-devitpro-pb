@@ -1,6 +1,6 @@
 ---
-title: "Table Extension Object"
-description: "Description of the table extension object."
+title: Table extension object
+description: This article describes the table extension object in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
@@ -9,7 +9,8 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Table Extension Object
+# Table extension object
+
 The table extension object allows you to add additional fields or to change some properties on a table provided by the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service. In this way, you can add data to the same table and treat it as a single table. For example, you may want to create a table extension for a retail winter sports store. In your solution you want to have `ShoeSize` as an additional field on the customer table. Adding this as an extension allows you to write code for the customer record and also include values for the `ShoeSize`.
 
 Along with defining other fields, the table extension is where you write trigger code for your additional fields.
@@ -29,22 +30,25 @@ When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_
 > Extending tables from Dynamics 365 for Sales is currently not supported.
 
 ## Using a table extension to add a key to the base table
+
 Just like in the table object, you can define keys for fields added in the table extension. But you can also add keys for fields that only exist on the table you extend, in case you want to extend the keys provided in the base table definition. See [Table Keys](devenv-table-keys.md) for examples on how to define keys in a table extension.
 
 ## Snippet support
+
 Typing the shortcut `ttableext` will create the basic layout for a table extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Properties
 
 Using a table extension allows you to overwrite some properties on fields in the base table. For a list of Table properties, see [Table and Table Extension Properties](properties/devenv-table-properties.md).
 
-## Adding tooltips on table fields
+## Add tooltips on table fields
 
-Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that use the field will automatically enherit the tooltip. 
+Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that uses the field automatically inherits the tooltip. 
 
-For more information, see [Adding tooltips to table and page fields](devenv-adding-tooltips.md).
+For more information, see [Add tooltips to table and page fields](devenv-adding-tooltips.md).
 
 ## Table extension syntax
+
 ```AL
 tableextension Id MyExtension extends MyTargetTable
 {
@@ -92,10 +96,10 @@ tableextension 50115 RetailWinterSportsStore extends Customer
 }
 ```
 
-## See Also
+## See also
 
-[AL Development Environment](devenv-reference-overview.md)  
-[Table Overview](devenv-tables-overview.md)  
-[Table Object](devenv-table-object.md)  
-[Table, Table Fields, and Table Extension Properties](properties/devenv-table-properties.md)  
-[Table Keys](devenv-table-keys.md)
+[AL development environment](devenv-reference-overview.md)  
+[Table overview](devenv-tables-overview.md)  
+[Table object](devenv-table-object.md)  
+[Table, table fields, and table extension properties](properties/devenv-table-properties.md)  
+[Table keys](devenv-table-keys.md)
