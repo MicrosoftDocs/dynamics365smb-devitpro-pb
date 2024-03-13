@@ -390,13 +390,34 @@ You can specify the same relative link for **Reward Card**, **Reward List**, and
 
 To help users navigate the app interface without any confusion and to add more clarity on the app features, you can use tooltips. Just like the base application of [!INCLUDE[prod_long](includes/prod_long.md)] includes tooltips for all controls and actions. For more information, see [Help users get unblocked](../user-assistance.md#help-users-get-unblocked).  
 
-For this walkthrough, add the following tooltip to the properties of the **Reward ID** field on all three pages, *Reward Card*, *Reward List*, and *Customer Card ext*:
+For this walkthrough, you want the following tooltip to appear on all three pages, *Reward Card*, *Reward List*, and *Customer Card ext*.
 
 ```AL
 ToolTip = 'Specifies the level of reward that the customer has at this point.';
 ```
 
-The following example shows the tooltip:
+**Adding tooltips in [!INCLUDE[prod_short](../includes/2024-releasewave1-short.md)] or later**
+
+Starting in [!INCLUDE[prod_short](includes/prod_short.md)] [!INCLUDE[prod_short](../includes/2024-releasewave1-short.md)], you can define tooltips on table fields. 
+
+The following example shows how tooltips are defined on the table level:
+
+```AL
+    // on the Reward table 
+
+    field(1;"Reward ID";Code[30])
+    {
+        DataClassification = ToBeClassified;
+        ToolTip = 'Specifies the level of reward that the customer has at this point.';
+    }
+```
+
+
+**Adding tooltips prior to [!INCLUDE[prod_short](../includes/2024-releasewave1-short.md)]**
+
+Prior to [!INCLUDE[prod_short](includes/prod_short.md)] [!INCLUDE[prod_short](../includes/2024-releasewave1-short.md)], you need to add the tooltip to the properties of the **Reward ID** field on all three pages, *Reward Card*, *Reward List*, and *Customer Card ext*.
+
+The following example shows how tooltips are defined on the page level:
 
 ```AL
 field("Reward ID";"Reward ID")
@@ -405,6 +426,7 @@ ApplicationArea = All;
 ToolTip = 'Specifies the level of reward that the customer has at this point.';
 }
 ```
+
 
 Now, if you deploy the app, you are able to read the tooltip text for the **Reward ID** field, and if you choose the *Learn more* link or select <kbd>Ctrl</kbd>+<kbd>F1</kbd>, a new browser tab opens the equivalent of `https://mysite.com/documentation/sales-rewards`.  
 
