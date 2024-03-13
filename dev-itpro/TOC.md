@@ -1062,7 +1062,6 @@
 
 <!-- end AL programming -->
 
-
 ## [System and application reference documentation](/dynamics365/business-central/application/)
 ### [Overview of the system application](developer/devenv-system-application-overview.md)
 ### Creating new modules in the system application
@@ -1087,6 +1086,7 @@
 
 ## Extensibility
 ### [Extensibility overview](developer/devenv-extensibility-overview.md)
+### [Extension objects overview](developer/devenv-extension-object-overview.md)
 ### Extending AL objects
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
 #### [Extending enumerations](developer/devenv-extensible-enums.md)
