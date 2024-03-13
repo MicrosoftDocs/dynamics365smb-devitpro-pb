@@ -26,17 +26,15 @@ Microsoft regularly ships feature updates to the underlying service and targeted
 
 However, even with these safeguards, live site incidents can and do happen. Live site incidents can be divided into several categories:
 
-* Dependent-service issues, such as Microsoft Entra ID, Azure SQL, Storage, virtual machine scale set, Service Fabric, and so on  
+* Dependent-service issues, such as Microsoft Entra ID, Azure SQL, Storage, virtual machine scale set, Service Fabric, and so on.  
+* Infrastructure outage, such as a hardware failure or datacenter failure.  
+* Configuration issues for [!INCLUDE [prod_short](includes/prod_short.md)] environments, such as insufficient capacity.  
+* Code regressions in [!INCLUDE [prod_short](includes/prod_short.md)] online.  
+* Customer-specific misconfiguration, such as bad queries or reports, or other types of problematic AL code.  
 
-* Infrastructure outage, such as a hardware failure or datacenter failure  
+Reducing the incident volume is one way to decrease live site burden and to improve customer satisfaction. However, it isn't always possible to do so. For example, when incident categories are outside the [!INCLUDE [prod_short](includes/prod_short.md)] team's direct control. Also, as the service footprint expands to support rapid growth in usage, the probability of an incident occurring due to external factors increases. 
 
-* Configuration issues for [!INCLUDE [prod_short](includes/prod_short.md)] environments, such as insufficient capacity  
-
-* Code regressions in [!INCLUDE [prod_short](includes/prod_short.md)] online  
-
-* Customer-specific misconfiguration, such as bad queries or reports, or other types of problematic AL code  
-
-Reducing the incident volume is one way to decrease live site burden and to improve customer satisfaction. However, it isn't always possible to do so. For example, when incident categories are outside the [!INCLUDE [prod_short](includes/prod_short.md)] team's direct control. Also, as the service footprint expands to support rapid growth in usage, the probability of an incident occurring due to external factors increases. High incident counts can happen, even in cases where the [!INCLUDE [prod_short](includes/prod_short.md)] service has minimal service code regressions, and where the service has met or exceeded its service level objective (SLO) for an overall reliability of 99.95%. The [!INCLUDE [prod_short](includes/prod_short.md)] team devotes significant resources to reducing incident costs to a level that is sustainable, by both financial and engineering measures.  
+High incident counts can happen, even in cases where the [!INCLUDE [prod_short](includes/prod_short.md)] service has minimal service code regressions, and where the service has met or exceeded its service level objective (SLO) for an overall reliability of 99.95%. The [!INCLUDE [prod_short](includes/prod_short.md)] team devotes significant resources to reducing incident costs to a level that is sustainable, by both financial and engineering measures.  
 
 ## Live site incident process
 
@@ -46,15 +44,15 @@ The following diagram illustrates the main steps in the lifecycle of standard li
 
 :::image type="content" source="media/service-overview-livesite.png" alt-text="Visual showing the live site incident process handling lifecycle.":::
 
-In the first phase, which is the **service monitoring** phase, the development and operations (DevOps) team works with engineers, program managers, and the senior leadership team to define service level indicators (SLIs) and service level objectives (SLOs) for both major and minor scenarios. These objectives apply to different metrics of the service, including scenario/component reliability, scenario/component performance (latency), and resource consumption. The live site team and product team then craft alerts that monitor SLIs against agreed-upon targets. When violations are detected, an alert is triggered for investigation.  
+In the first phase, **service monitoring**, the development and operations (DevOps) team works with engineers, program managers, and the senior leadership team to define service level indicators (SLIs) and service level objectives (SLOs) for both major and minor scenarios. These objectives apply to different metrics of the service, including scenario/component reliability, scenario/component performance (latency), and resource consumption. The live site team and product team then craft alerts that monitor SLIs against agreed-upon targets. When violations are detected, an alert is triggered for investigation.  
 
-In the second phase, which is the **incident response** phase, processes are structured to facilitate the following results:
+In the second phase, **incident response**, processes are structured to facilitate the following results:
 
-* Prompt and targeted notification to customers  
-* Analysis of affected service components and workflows  
-* Targeted mitigation of incident impact  
+* Prompt and targeted notification to customers.  
+* Analysis of affected service components and workflows.  
+* Targeted mitigation of incident impact.  
 
-In the final phase, which is the **continuous improvement** phase, the team focuses on completing a post-mortem analysis and resolution of any identified process, monitoring, or configuration or code fixes. Based on overall severity and risk of recurrence, the fixes are then prioritized against the team's general engineering backlog.  
+In the final phase, **continuous improvement**, the team focuses on completing a post-mortem analysis and resolution of any identified process, monitoring, or configuration or code fixes. Based on overall severity and risk of recurrence, the fixes are then prioritized against the team's general engineering backlog.  
 
 ## Our practices for service monitoring
 
@@ -64,9 +62,9 @@ One way in which the [!INCLUDE [prod_short](includes/prod_short.md)] team enable
 
 DevOps practices also enforce alert quality in several ways:  
 
-* TSGs include impact analysis and escalation policy  
-* Alerts execute for the shortest time possible for faster detection  
-* Alerts use reliability thresholds instead of absolute limits to scale clusters of different sizes  
+* TSGs include impact analysis and escalation policy.  
+* Alerts execute for the shortest time possible for faster detection.  
+* Alerts use reliability thresholds instead of absolute limits to scale clusters of different sizes.  
 
 ## Our practices for incident response
 
@@ -98,9 +96,7 @@ A feature update then passes through various official deployment rings of [!INCL
 Scaling this deployment model to handle exponential service growth is accomplished in several ways, as the following bullets describe:  
 
 * **Automation**: [!INCLUDE [prod_short](includes/prod_short.md)] deployments are essentially *zero touch* with little to no interaction required by the deployment team. Prebuilt rollout specifications exist for multiple deployment scenarios. Deployment configuration is validated at build-time to avoid unexpected errors during live deployment rollouts.  
-
 * **Incident response process**: Deployment issues are handled like other live site incidents using techniques that are discussed in more detail in the other sections of this article. Engineers analyze issues with a focus on immediate mitigation. They then follow up with manual or automated process changes to prevent recurrence.  
-
 * **Feature management/exposure control**: [!INCLUDE [prod_short](includes/prod_short.md)] applies a comprehensive framework for selectively exposing new features to customers. Feature exposure is independent of deployment cadences. It allows code for new scenarios to be deployed in a disabled state until it has passed all quality bars. Also, new features can be exposed to a subset of the overall [!INCLUDE [prod_short](includes/prod_short.md)] population as an extra validation step prior to enabling them globally. If an issue is detected, the [!INCLUDE [prod_short](includes/prod_short.md)] feature management service lets you disable features in seconds, without waiting for more time-consuming deployment rollback operations.  
 
 These features have enabled the [!INCLUDE [prod_short](includes/prod_short.md)] team to improve the success rate of deployments while absorbing a high year-over-year growth in monthly deployments.  
