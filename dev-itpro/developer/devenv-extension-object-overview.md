@@ -11,7 +11,7 @@ ms.date: 03/11/2024
 
 # Extension objects overview
 
-This article provides an overview of the different extension objects that you can write to extend base application functionality in [!INCLUDE [prod_short](includes/prod_short.md)]. Extension objects can extend tables, pages, reports, and enums. With an extension object you can, for example, add new fields, actions, and layout to an existing page, or add data items, columns, request pages, and layouts to an existing report. And you can add new values to an existing enumeration. 
+This article provides an overview of the different extension objects that you can write to extend base application functionality in [!INCLUDE [prod_short](includes/prod_short.md)]. Extension objects can extend tables, pages, reports, and enums. With an extension object you can, for example, add new fields, actions, and layout to an existing page, or add data items, columns, request pages, and layouts to an existing report. With an enum extension, you can add new values to an existing enumeration. 
 
 For a base object to be extensible, it must be marked with the property `Extensible = true;`. The default value for all objects is that they're extensible. 
 
@@ -31,6 +31,7 @@ The following table lists the different extension objects that you can create in
 
 ## See also
 
+[Extensibility overview](devenv-extensibility-overview.md)
 [Table extension](devenv-table-ext-object.md)  
 [Page extension](devenv-page-ext-object.md)  
 [Report extension](devenv-report-ext-object.md)  
