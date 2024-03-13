@@ -1,5 +1,5 @@
 ---
-title: "Table Object"
+title: "Table object"
 description: "Description of the table object."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: solsen
 --- 
 
-# Table Object
+# Table object
 
 Tables are the core objects used to store data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. No matter how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
 
