@@ -38,6 +38,12 @@ Typing the shortcut `ttableext` will create the basic layout for a table extensi
 
 Using a table extension allows you to overwrite some properties on fields in the base table. For a list of Table properties, see [Table and Table Extension Properties](properties/devenv-table-properties.md).
 
+## Adding tooltips on table fields
+
+Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that use the field will automatically enherit the tooltip. 
+
+For more information, see [Adding tooltips to table and page fields](devenv-adding-tooltips.md).
+
 ## Table extension syntax
 ```AL
 tableextension Id MyExtension extends MyTargetTable
