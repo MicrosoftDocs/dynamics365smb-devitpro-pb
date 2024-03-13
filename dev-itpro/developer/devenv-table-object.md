@@ -62,7 +62,9 @@ table 50104 Address
         field(1; Address; Text[50])
         {
             Description = 'Address retrieved by Service';
+
             // in 2024 release wave 1, you can define tooltips on the table field level
+            // uncomment the Tooltip line below to try it out
             // ToolTip = 'Address retrieved by Service';
         }
         field(2; Locality; Text[30])
