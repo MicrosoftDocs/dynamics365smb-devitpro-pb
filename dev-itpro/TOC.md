@@ -691,7 +691,7 @@
 #### Defining table structures
 ##### [Tables overview](developer/devenv-tables-overview.md)
 ##### [Table object](developer/devenv-table-object.md)
-##### [Adding tooltips to table fields](developer/devenv-adding-tooltips.md)
+##### [Add tooltips to table fields](developer/devenv-adding-tooltips.md)
 ##### [System fields](developer/devenv-table-system-fields.md)
 ##### [Table extension object](developer/devenv-table-ext-object.md)
 ##### [Setting relationships between tables](developer/devenv-set-relationships-between-tables.md)
