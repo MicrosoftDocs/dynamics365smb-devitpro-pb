@@ -185,7 +185,6 @@ page 50102 "Reward List"
                 field("Reward ID"; Rec."Reward ID")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the level of reward that the customer has at this point.';
                 }
 
                 field(Description; Rec.Description)
