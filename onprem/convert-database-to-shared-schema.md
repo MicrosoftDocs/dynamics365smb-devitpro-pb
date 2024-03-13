@@ -4,7 +4,6 @@ description: Explains the shared schema data model and how to convert to it from
 ms.date: 10/01/2018
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2017"
 author: jswymer
 ---
 # Converting a Database to Shared Schema
