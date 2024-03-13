@@ -22,8 +22,8 @@ The following table lists the different extension objects that you can create in
 |[Table extension](devenv-table-ext-object.md) | Add fields to an existing table. |
 |[Page extension](devenv-page-ext-object.md) | Add fields, actions, and layout to an existing page. |
 |[Report extension](devenv-report-ext-object.md) | Add data items, columns, request pages, and layouts to an existing report. |
-|[Enum extension](extensible-enums.md) | Add new values to an existing enumeration. |
-|[Permission set extension](permissionset-ext-object.md) | Add new permissions to an existing permission set. |
+|[Enum extension](devenv-extensible-enums.md) | Add new values to an existing enumeration. |
+|[Permission set extension](devenv-permissionset-ext-object.md) | Add new permissions to an existing permission set. |
 
 ## Extension objects in the same app
 
@@ -35,5 +35,5 @@ The following table lists the different extension objects that you can create in
 [Table extension](devenv-table-ext-object.md)  
 [Page extension](devenv-page-ext-object.md)  
 [Report extension](devenv-report-ext-object.md)  
-[Enum extension](extensible-enums.md)  
-[Permission set extension](permissionset-ext-object.md)
+[Enum extension](devenv-extensible-enums.md)  
+[Permission set extension](devenv-permissionset-ext-object.md)
