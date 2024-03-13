@@ -1,5 +1,5 @@
 ---
-title: "Table Object"
+title: "Table object"
 description: "Description of the table object."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: solsen
 --- 
 
-# Table Object
+# Table object
 
 Tables are the core objects used to store data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. No matter how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
 
@@ -41,6 +41,12 @@ Typing the shortcut `ttable` will create the basic layout for a table object whe
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
+## Adding tooltips on table fields
+
+Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that use the field will automatically enherit the tooltip. 
+
+For more information, see [Adding tooltips to table and page fields](devenv-adding-tooltips.md).
+
 ## Table example
 
 This table stores address information and it has four fields; `Address`, `Locality`, `Town/City`, and `County`.
@@ -56,6 +62,10 @@ table 50104 Address
         field(1; Address; Text[50])
         {
             Description = 'Address retrieved by Service';
+
+            // in 2024 release wave 1, you can define tooltips on the table field level
+            // uncomment the Tooltip line below to try it out
+            // ToolTip = 'Address retrieved by Service';
         }
         field(2; Locality; Text[30])
         {
@@ -109,6 +119,7 @@ The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform will autom
 [AL Development Environment](devenv-reference-overview.md)  
 [Table Overview](devenv-tables-overview.md)  
 [Table Extension Object](devenv-table-ext-object.md)  
+[Adding tooltips to table and page fields](devenv-adding-tooltips.md)  
 [SqlTimestamp Property](properties/devenv-sqltimestamp-property.md)  
 [Table Keys](devenv-table-keys.md)  
 [Table, Table Fields, and Table Extension Properties](properties/devenv-table-properties.md)  
