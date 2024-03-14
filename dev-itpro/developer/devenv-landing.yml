@@ -89,7 +89,7 @@ landingContent:
           - text: Extension lifecycle
             url: devenv-ext-dev-lifecycle-overview.md
           - text: Base and system application reference
-            url: https://learn.microsoft.com/en-us/dynamics365/business-central/application/
+            url: https://learn.microsoft.com/dynamics365/business-central/application/
       - linkListType: concept
         links:
           - text: Data types
@@ -118,12 +118,12 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links: 
+          - text: What's new in 2024 release wave 1
+            url: https://learn.microsoft.com/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/development
           - text: What's new in 2023 release wave 2 
             url: https://learn.microsoft.com/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/development
           - text: What's new in 2023 release wave 1
             url: https://learn.microsoft.com/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/development
-          - text: What's new in 2022 release wave 2
-            url: https://learn.microsoft.com/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/development
       - linkListType: reference
         links:
           - text: AL language changelog
