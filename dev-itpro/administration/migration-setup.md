@@ -67,7 +67,7 @@ Once the setup guide is complete and data migration is activated, the initial da
 
     <!-- bc 1. On the **Select companies to migrate** page, select one or more companies from the list or switch on **All Companies**, then select **Next**.-->
 
-1. In the **Select companies to migrate** page select one or more companies to migrate or switch on **All Companies**, then select **Next**.
+1. On the **Select companies to migrate** page, select one or more companies to migrate or switch on **All Companies**, then select **Next**.
 
    You can always return the page to add more companies.
 
