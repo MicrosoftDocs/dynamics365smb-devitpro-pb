@@ -7,7 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Converting a Database - Technical Upgrade

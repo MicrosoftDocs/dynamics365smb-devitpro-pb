@@ -8,7 +8,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
-ms.prod: "dynamics-nav-2018"
 ---
 # Couple and Synchronize Records Manually in Dynamics NAV
 An integration table mapping associates a [!INCLUDE[navnow_md](includes/navnow_md.md)] table (record type), such as Customer, with a [!INCLUDE[crm_md](includes/crm_md.md)] entity, such as Account. Synchronizing an integration table mapping enables you to synchronize data in all records of the [!INCLUDE[navnow_md](includes/navnow_md.md)] table and [!INCLUDE[crm_md](includes/crm_md.md)] entity that coupled together. Additionally, depending on the configuration of the table mapping, synchronization can create and couple new records in the destination solution for uncoupled records in the source.
