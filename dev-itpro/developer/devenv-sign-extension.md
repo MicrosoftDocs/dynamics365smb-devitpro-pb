@@ -27,22 +27,22 @@ If your certificate was issued after June 1, 2023, follow the guide on [Sign an 
 
 Before signing your app file, follow the next steps to ensure your key vault is set up for code signing.
 
-1. **(Optional) Setting up a service principal:** If the signing operation should be done by a Service Principal, [create a Service Principal in Azure](https://learn.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal).
-2. **Azure Key Vault setup**: [Create an Azure Key Vault](https://learn.microsoft.com/azure/key-vault/general/quick-create-portal) for your code signing certificate if you don't already have one  
-3. **Configure access policies:** [Configure an Azure Key Vault access policy](https://learn.microsoft.com/azure/key-vault/general/assign-access-policy?tabs=azure-portal) for the account that will be used for signing. At minimum, the account needs the following permissions:
+1. **(Optional) Setting up a service principal:** If the signing operation should be done by a Service Principal, [create a Service Principal in Azure](/azure/active-directory/develop/howto-create-service-principal-portal).
+2. **Azure Key Vault setup**: [Create an Azure Key Vault](/azure/key-vault/general/quick-create-portal) for your code signing certificate if you don't already have one  
+3. **Configure access policies:** [Configure an Azure Key Vault access policy](/azure/key-vault/general/assign-access-policy?tabs=azure-portal) for the account that will be used for signing. At minimum, the account needs the following permissions:
     - Cryptographic Operations: Sign
     - Certificate Management Operations: Get
 
     :::image type="content" source="media/keyvaultaccesspolicies.png" alt-text="Shows the access policies page in Azure Key Vault.":::
 
-4. **Upload your certificate to the Key Vault:** The process on getting your certificate into your Azure Key Vault depends on which Certificate Authority you use. Consult with your certificate authority on how you can get your codesigning certificate into an Azure Key Vault. If you're getting certificates from DigiCert or GlobalSign, you might be able to use Azure Key Vaults Certificate Authority integration to [generate certificates directly from Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/certificates/how-to-integrate-certificate-authority).
+4. **Upload your certificate to the Key Vault:** The process on getting your certificate into your Azure Key Vault depends on which Certificate Authority you use. Consult with your certificate authority on how you can get your codesigning certificate into an Azure Key Vault. If you're getting certificates from DigiCert or GlobalSign, you might be able to use Azure Key Vaults Certificate Authority integration to [generate certificates directly from Azure Key Vault](/azure/key-vault/certificates/how-to-integrate-certificate-authority).
 
 > [!NOTE]  
 > Only the Premium SKU of Azure Key Vault supports Hardware Security Modules. If your certificate is issued after June 1st 2023 you will likely need the Premium SKU Azure Key Vault.  
 
 ### Steps for signing your .app file with Azure Key Vault
 
-1. [Install .NET SDK](https://learn.microsoft.com/dotnet/core/install/windows)
+1. [Install .NET SDK](/dotnet/core/install/windows)
 2. Install the .NET Signing Tool by running the following command:
 
 ```powershell
