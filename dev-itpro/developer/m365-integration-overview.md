@@ -9,7 +9,15 @@ ms.date: 02/10/2024
 ---
 
 <!-- Unsure about the title. Online it says "Integrating Business Central with Office apps Microsoft 365". Why is Microsoft 365 stuck on the end like that? -->
-<!-- In line 74, it says "With Business Central on-premises, it requires more set." Should "set" be "settings"? -->
+<!-- In line 82, it says "With Business Central on-premises, it requires more set." Should "set" be "settings"? -->
+<!-- The article has a section on "Integrating to OneDrive for Business". But according to the style guide, the name should be only OneDrive. https://styleguides.azurewebsites.net/Styleguide/Read?id=2869&topicid=47867  -->
+<!-- There are capitalization issues with some of the images in this article:
+- m365-integrations-detail.svg - Onedrive for Business should just be OneDrive (shouldn't have "for Business")
+- connect-to-excel.svg - Excel should be capitalized; Odata should be OData
+- connect-to-m365-services.svg - should be "Azure Functions" and "Azure Key Vault" (this image is used in two places)
+- connect-to-onedrive.svg - should just be OneDrive, not Onedrive for Business; fix capitalization of Excel and OneDrive
+-->
+
 
 # Integrating Business Central with Office apps [!INCLUDE[m365](includes/m365-name.md)]
 
@@ -23,9 +31,9 @@ In this article, we introduce some of these features.
 
 [!INCLUDE[m365_excel](includes/m365-excel-name.md)] is used in [!INCLUDE [prod_short](../includes/prod_short.md)] in the following scenarios:
 
-1. View or edit [!INCLUDE [prod_short](../includes/prod_short.md)] data in Excel.
-1. Support analytical reporting.
-1. Write AL code and use the System app module to create or read Excel files as a developer.
+- View or edit [!INCLUDE [prod_short](../includes/prod_short.md)] data in Excel.
+- Support analytical reporting.
+- Write AL code and use the System app module to create or read Excel files as a developer.
 
 :::image type="content" source="media/connect-to-excel.svg" alt-text="Shows how Business Central integrates to Excel" lightbox="media/connect-to-excel.svg":::
 
@@ -33,9 +41,9 @@ With pages that display a list of records in rows and columns, like a list of cu
 - *Open in Excel*, where the [!INCLUDE [prod_short](../includes/prod_short.md)] platform produces an Excel workbook with the data as read-only.
 - *Edit in Excel*, which uses the [!INCLUDE [prod_short](../includes/prod_short.md)] add-in for Excel. The Excel add-in reads data from [!INCLUDE [prod_short](../includes/prod_short.md)] using the page exposed as an OData web service endpoint. Any writes back to [!INCLUDE [prod_short](../includes/prod_short.md)] are also done through this web service endpoint.
 
-For more information, see [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel).
+For more information, see [Viewing and Editing in Excel From Business Central](/dynamics365/business-central/across-work-with-excel).
 
-Power users can use Excel as the design tool for the layout of analytical reports and then upload the Excel layout workbook to [!INCLUDE [prod_short](../includes/prod_short.md)]. Any user who has access to these reports can run them. When the [!INCLUDE [prod_short](../includes/prod_short.md)] server generates the Excel report, it merges the Excel layout workbook with data and sends the resulting Excel workbook to the user as a downloaded file. For more information, see [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report).
+Power users can use Excel as the design tool for the layout of analytical reports and then upload the Excel layout workbook to [!INCLUDE [prod_short](../includes/prod_short.md)]. Any user who has access to these reports can run them. When the [!INCLUDE [prod_short](../includes/prod_short.md)] server generates the Excel report, it merges the Excel layout workbook with data and sends the resulting Excel workbook to the user as a downloaded file. For more information, see [Working with Microsoft Excel Layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report).
 
 
 > [!TIP]
@@ -86,7 +94,7 @@ With [!INCLUDE [prod_short](../includes/prod_short.md)], you can manage business
 :::image type="content" source="media/connect-to-outlook.svg" alt-text="Shows how Business Central integrates to Outlook" lightbox="media/connect-to-outlook.svg":::
 
 
-For more information, see [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook).
+For more information, see [Get the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook).
 
 
 
@@ -109,7 +117,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps and ext
 
 [![Teams integration with Business Central](media/teams-intro-v3.png)](media/teams-intro-v3.png#lightbox)
 
-For more information, see [Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md).
+For more information, see [Developing for Microsoft Teams Integration](../developer/devenv-develop-for-teams.md).
 
 
 ## Using [!INCLUDE[m365_word](includes/m365-word-name.md)] with [!INCLUDE [prod_short](../includes/prod_short.md)]
@@ -121,7 +129,7 @@ Power users in [!INCLUDE [prod_short](../includes/prod_short.md)] can use [!INCL
 
 :::image type="content" source="media/connect-to-word.svg" alt-text="Shows how Business Central integrates to Word" lightbox="media/connect-to-word.svg":::
 
-If an organization wants to change the layout of its outgoing documents such as quotes, sales orders, or sales invoices, a power user can use Word as the design tool to change the layout. When the [!INCLUDE [prod_short](../includes/prod_short.md)] server generates the document report, it merges the Word layout with data and sends the resulting PDF document to the user as a downloaded file (or to a printer). For more information, see [Using Word for Document Report Layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout).
+If an organization wants to change the layout of its outgoing documents such as quotes, sales orders, or sales invoices, a power user can use Word as the design tool to change the layout. When the [!INCLUDE [prod_short](../includes/prod_short.md)] server generates the document report, it merges the Word layout with data and sends the resulting PDF document to the user as a downloaded file (or to a printer). For more information, see [Work with Word Layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout).
 
 To make it easy to mass communicate in print or email, power users can use mail merge commands in Word to use Word as the design tool to create the layout of the message. They can then upload the Word document to [!INCLUDE [prod_short](../includes/prod_short.md)]. When you run the campaign, the [!INCLUDE [prod_short](../includes/prod_short.md)] platform merges data from entities such as contacts, customers, and vendors with the template to produce the final documents to send to clients. For more information, see [Using Word Templates for Bulk Communication](/dynamics365/business-central/ui-mail-merge).
 
@@ -130,13 +138,13 @@ To make it easy to mass communicate in print or email, power users can use mail 
 
 ## See also
 
-[Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel)  
-[Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  
+[Viewing and Editing in Excel From Business Central](/dynamics365/business-central/across-work-with-excel)  
+[Working with Microsoft Excel Layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  
 [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
-[Integrating with OneDrive for Business overview (for administrators)](/dynamics365/business-central/across-onedrive-overview)  
+[Business Central and OneDrive for Business Integration](/dynamics365/business-central/across-onedrive-overview)  
 [Extending Document Sharing and OneDrive for Business Integration (for developers)](devenv-extending-document-sharing-onedrive.md)  
 [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook)  
 [Integrating with SharePoint (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint)  
-[Integrating with Microsoft Teams overview](../developer/devenv-develop-for-teams.md)   
-[Using Word Templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout)  
-[Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge)  
+[Developing for Microsoft Teams Integration](../developer/devenv-develop-for-teams.md)   
+[Work with Word Layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout)  
+[Use Word Templates for Bulk Communication](/dynamics365/business-central/ui-mail-merge)  
