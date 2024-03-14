@@ -116,7 +116,7 @@ For more information, see [Call external services with the HttpClient data type]
 
 ## Integrating to external systems from AL code: Azure services
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps and extensions with Azure services such as Azure Blob Services, Azure File Services, Azure Functions, or Azure Key Vault. 
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps and extensions with Azure services such as Azure Blob Storage, Azure Files, Azure Functions, or Azure Key Vault. 
 
 :::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps and extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
@@ -139,7 +139,7 @@ For more information, see [Integrating Business Central with infrastructure serv
 
 ## Integrating AI by extending Copilot in Business Central
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps and extensions with the Azure Open AI Service to extend Copilot in Business Central with new generative AI capabilities.
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps and extensions with the Azure OpenAI Service to extend Copilot in Business Central with new generative AI capabilities.
 
 ![Shows the tasks in the generative-AI development](media/dev-generative-ai-overview.svg)
 
