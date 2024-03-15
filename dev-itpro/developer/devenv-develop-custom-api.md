@@ -1,15 +1,15 @@
 ---
-title: "Developing a custom API"
-description: "Developing a custom API in AL for Business Central"
+title: Developing a custom API
+description: Learn how to develop a custom API page by using an AL extension and accessing it to retrieve responses and make updates through the API.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 06/24/2022
+ms.date: 03/14/2024
 ms.reviewer: na
 ms.topic: conceptual
 ---
 
-# Developing a Custom API
+# Developing a custom API
 
 This walkthrough describes how to develop a custom API page by using an AL extension and accessing it to retrieve responses and make updates through the API.
 
@@ -132,7 +132,7 @@ To expose data in an API page, the first thing needed is a source table. In this
     ```
 
 > [!TIP]
-> As it can be seen in field number 5 **"Fuel Type"**, make sure to use Enums instead of Options. When they are used in API pages, Options are generated as type strings in the metadata:
+> As you can see in field number 5 **"Fuel Type"**, make sure to use Enums instead of Options. When these are used in API pages, Options are generated as type strings in the metadata:
 > `<Property Name="fuelType" Type="Edm.String"/>`.
 > <br>Whereas Enums have their own types and all available Enum members are generated in the metadata:
 > `<Property Name="fuelType" Type="Microsoft.NAV.fuelType"/>`.  
@@ -313,7 +313,7 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
 
 Both API pages support create, read, update, and delete operations. If you want to disallow create, update, and delete operations, you can use the **InsertAllowed**, **ModifyAllowed**, and **DeleteAllowed** properties respectively.
 
-Now, we will create a car brand:
+Now, we'll create a car brand:
 
 ```
 POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>)/carBrands
@@ -331,7 +331,7 @@ We can make a `GET` request to retrieve the car brands:
 GET https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>)/carBrands
 ```
 
-Which will result in following response:
+Which results in the following response:
 
 ```
 {
@@ -375,7 +375,7 @@ POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/
 
 ### Example 3
 
-And the navigational property also allows us to do a deep insert; deep insert is the creation of an entity instance and related entity instances, in a single `POST` request. So you can combine car brand and car model creation in a single request as illustrated below:
+And the navigational property also allows us to do a deep insert; deep insert is the creation of an entity instance and related entity instances, in a single `POST` request. So, you can combine car brand and car model creation in a single request as illustrated below:
 
 ``` 
 POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>))/carBrands
@@ -405,7 +405,7 @@ You can also use the navigational property to get car models of a car brand in a
 GET https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>))/carBrands(<car brand id>)?$expand=carModels
 ```
 
-Which will result in following response:
+Which results in following response:
 
 ```
 {
@@ -446,7 +446,7 @@ Which will result in following response:
 1. Use SystemId as the OData key (defined in the `ODataKeyFields` property).
 2. Make sure that all the table fields in TableRelations/SubPageLinks are available in the API pages and make sure to define the relationship multiplicity (1-0/1-1 or 1-N).
     - Doing so enables the platform to generate ReferentialConstraints, that OData consumers can use to understand the relations between entities
-    - The platform will also create bi-directional relationship if possible, allowing consumers to access to the parent by just adding “/parentEntity” in the URI
+    - The platform also creates a bi-directional relationship if possible, allowing consumers to access to the parent by just adding “/parentEntity” in the URI
 3. Use Enumerations.
 4. Make sure to localize your custom API pages:
     - Use `EntityCaption` and `EntitySetCaption` properties
@@ -887,19 +887,20 @@ page 5010 "Journal Lines API"
 }
 ```
 
-## Using an API Query Type
+## Using an API query type
 
 If you need to generate a web service endpoint that joins data between different tables, then consider using an API query object. This type of API cannot be used to display data in the user interface and data can only be read (not updated).
 
-For more information, see [API Query Type](devenv-api-querytype.md)
+For more information, see [API Query Type](devenv-api-querytype.md).
 
-## See Also
-[Get Started with AL](../developer/devenv-get-started.md)  
-[API Page Type](devenv-api-pagetype.md)   
-[API Query Type](devenv-api-querytype.md)   
-[APIPublisher Property](properties/devenv-apipublisher-page-property.md)  
-[APIGroup Property](properties/devenv-apigroup-page-property.md)  
-[APIVersion Property](properties/devenv-apiversion-page-property.md)  
-[EntityName Property](properties/devenv-entityname-property.md)  
-[EntitySetName Property](properties/devenv-entitysetname-property.md)  
-[Developing Extensions](devenv-dev-overview.md)  
+## See also
+
+[Get started with AL](../developer/devenv-get-started.md)  
+[API page type](devenv-api-pagetype.md)   
+[API query type](devenv-api-querytype.md)   
+[APIPublisher property](properties/devenv-apipublisher-page-property.md)  
+[APIGroup property](properties/devenv-apigroup-page-property.md)  
+[APIVersion property](properties/devenv-apiversion-page-property.md)  
+[EntityName property](properties/devenv-entityname-property.md)  
+[EntitySetName property](properties/devenv-entitysetname-property.md)  
+[Developing extensions](devenv-dev-overview.md)  
