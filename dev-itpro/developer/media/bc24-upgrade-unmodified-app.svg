@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1215.4674"
+   height="545.08075"
+   overflow="hidden"
+   version="1.1"
+   id="svg78"
+   sodipodi:docname="bc24-upgrade-unmodified-app.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs78">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath78">
+      <rect
+         style="fill:none"
+         id="rect79"
+         width="1215.4674"
+         height="545.08075"
+         x="26.314243"
+         y="145.9814" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview78"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.5960938"
+     inkscape:cx="613.68574"
+     inkscape:cy="213.95986"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg78" />
+  <g
+     id="g78"
+     clip-path="url(#clipPath78)"
+     transform="translate(-26.314243,-145.9814)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect1" />
+    <path
+       d="M 33,237.335 C 33,190.206 71.2057,152 118.335,152 h 341.33 C 506.794,152 545,190.206 545,237.335 v 362.33 C 545,646.794 506.794,685 459.665,685 H 118.335 C 71.2057,685 33,646.794 33,599.665 Z"
+       stroke="#afabab"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path1" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(58.1545,193)"
+       id="text1">Previous</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(127.315,193)"
+       id="text2">Release</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(189.988,193)"
+       id="text3">Wave</text>
+    <rect
+       x="59.500099"
+       y="327.5"
+       width="472"
+       height="176"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#afabab"
+       id="rect3" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(176.156,409)"
+       id="text4">Microsoft Base Application (AL)</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(267.843,432)"
+       id="text5">V15</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(297.51,432)"
+       id="text6">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(303.176,432)"
+       id="text7">23</text>
+    <rect
+       x="59.500099"
+       y="453.5"
+       width="472"
+       height="48"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#afabab"
+       id="rect7" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(167.06,472)"
+       id="text8">Microsoft System Application (AL)</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(267.846,495)"
+       id="text9">V15</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(297.513,495)"
+       id="text10">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(303.18,495)"
+       id="text11">23</text>
+    <path
+       d="m 593.5,419.5 h 45 v -13 l 26,26 -26,26 v -13 h -45 z"
+       stroke="#afabab"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#afabab"
+       fill-rule="evenodd"
+       id="path11" />
+    <rect
+       x="61.500099"
+       y="201.5"
+       width="108"
+       height="79"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="9, 3"
+       fill="#afabab"
+       id="rect11" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(78.3323,224)"
+       id="text12">Microsoft</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(78.0057,247)"
+       id="text13">Extension</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(87.8523,269)"
+       id="text14">V15</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(117.519,269)"
+       id="text15">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(123.186,269)"
+       id="text16">23</text>
+    <rect
+       x="303.5"
+       y="201.5"
+       width="109"
+       height="79"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="9, 3"
+       fill="#afabab"
+       id="rect16" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(321.553,235)"
+       id="text17">3rd</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(347.133,235)"
+       id="text18">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(352.8,235)"
+       id="text19">party</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(320.246,258)"
+       id="text20">Extension</text>
+    <rect
+       x="180.5"
+       y="201.5"
+       width="108"
+       height="81"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="9, 3"
+       fill="#afabab"
+       id="rect20" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(197.62,225)"
+       id="text21">Microsoft</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(197.293,248)"
+       id="text22">Extension</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(207.14,270)"
+       id="text23">V15</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(236.807,270)"
+       id="text24">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(242.473,270)"
+       id="text25">23</text>
+    <rect
+       x="424.5"
+       y="202.5"
+       width="109"
+       height="79"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="9, 3"
+       fill="#afabab"
+       id="rect25" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(443.201,236)"
+       id="text26">3rd</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(468.781,236)"
+       id="text27">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(474.448,236)"
+       id="text28">party</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(441.895,259)"
+       id="text29">Extension</text>
+    <rect
+       x="59.500099"
+       y="540.5"
+       width="472"
+       height="99"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#afabab"
+       id="rect29" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(238.413,561)"
+       id="text30">System</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(296.606,561)"
+       id="text31">objects</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(262.213,606)"
+       id="text32">Platform</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(267.846,629)"
+       id="text33">V15</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(297.513,629)"
+       id="text34">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(303.18,629)"
+       id="text35">23</text>
+    <path
+       d="M 107,584 H 454.016"
+       stroke="#ffffff"
+       stroke-width="2.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path35" />
+    <rect
+       x="59.500099"
+       y="513.5"
+       width="472"
+       height="17"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#afabab"
+       id="rect35" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(205.193,527)"
+       id="text36">System Symbols</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(330.493,527)"
+       id="text37">V15</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(360.16,527)"
+       id="text38">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(365.826,527)"
+       id="text39">23</text>
+    <rect
+       x="61.500099"
+       y="289.5"
+       width="472"
+       height="27"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#afabab"
+       id="rect39" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(186.188,308)"
+       id="text40">Microsoft Application</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(353.895,308)"
+       id="text41">V15</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(383.562,308)"
+       id="text42">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(389.228,308)"
+       id="text43">23</text>
+    <path
+       d="M 724,237.168 C 724,190.131 762.131,152 809.168,152 h 340.662 c 47.04,0 85.17,38.131 85.17,85.168 V 599.832 C 1235,646.869 1196.87,685 1149.83,685 H 809.168 C 762.131,685 724,646.869 724,599.832 Z"
+       stroke="#afabab"
+       stroke-width="4"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path43" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(746.099,197)"
+       id="text44">202</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(774.599,197)"
+       id="text45">4</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(788.265,197)"
+       id="text46">Release Wave</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(897.472,197)"
+       id="text47">1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(911.139,197)"
+       id="text48">(</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(916.805,197)"
+       id="text49">V24</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(946.472,197)"
+       id="text50">)</text>
+    <rect
+       x="749.5"
+       y="205.5"
+       width="108"
+       height="79"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="9, 3"
+       fill="#afabab"
+       id="rect50" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(766.277,228)"
+       id="text51">Microsoft</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(765.95,251)"
+       id="text52">Extension</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(788.13,273)"
+       id="text53">V24</text>
+    <rect
+       x="991.5"
+       y="205.5"
+       width="109"
+       height="79"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="9, 3"
+       fill="#afabab"
+       id="rect53" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1009.5,239)"
+       id="text54">3rd</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1035.08,239)"
+       id="text55">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1040.74,239)"
+       id="text56">party</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1008.19,262)"
+       id="text57">Extension</text>
+    <rect
+       x="868.5"
+       y="205.5"
+       width="108"
+       height="80"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="9, 3"
+       fill="#afabab"
+       id="rect57" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(885.564,229)"
+       id="text58">Microsoft</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(885.237,252)"
+       id="text59">Extension</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(907.417,274)"
+       id="text60">V24</text>
+    <rect
+       x="1112.5"
+       y="206.5"
+       width="109"
+       height="79"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="9, 3"
+       fill="#afabab"
+       id="rect60" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1131.15,240)"
+       id="text61">3rd</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1156.73,240)"
+       id="text62">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1162.39,240)"
+       id="text63">party</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1129.84,263)"
+       id="text64">Extension</text>
+    <rect
+       x="749.5"
+       y="540.5"
+       width="472"
+       height="99"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#afabab"
+       id="rect64" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(928.706,561)"
+       id="text65">System</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(986.899,561)"
+       id="text66">objects</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(952.505,606)"
+       id="text67">Platform</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(970.472,629)"
+       id="text68">V24</text>
+    <path
+       d="m 797,584 h 347.02"
+       stroke="#ffffff"
+       stroke-width="2.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path68" />
+    <rect
+       x="749.5"
+       y="513.5"
+       width="472"
+       height="17"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#afabab"
+       id="rect68" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(907.819,527)"
+       id="text69">System Symbols</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1033.12,527)"
+       id="text70">V24</text>
+    <rect
+       x="749.5"
+       y="293.5"
+       width="472"
+       height="27"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#afabab"
+       id="rect70" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(886.466,312)"
+       id="text71">Microsoft Application</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1054.17,312)"
+       id="text72">V24</text>
+    <rect
+       x="749.5"
+       y="331.5"
+       width="472"
+       height="47"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#afabab"
+       id="rect72" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(866.137,350)"
+       id="text73">Microsoft Base Application (AL)</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(970.157,373)"
+       id="text74">V24</text>
+    <rect
+       x="749.5"
+       y="450.5"
+       width="472"
+       height="49"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#afabab"
+       id="rect74" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(857.04,469)"
+       id="text75">Microsoft System Application (AL)</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(970.16,492)"
+       id="text76">V24</text>
+    <rect
+       x="749.5"
+       y="392.5"
+       width="472"
+       height="46"
+       stroke="#afabab"
+       stroke-width="3"
+       stroke-miterlimit="8"
+       fill="#afabab"
+       id="rect76" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(805.85,410)"
+       id="text77">Microsoft Business Foundation Application (AL)</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(970.157,433)"
+       id="text78">V24</text>
+  </g>
+</svg>
