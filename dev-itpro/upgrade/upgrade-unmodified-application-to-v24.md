@@ -26,7 +26,7 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 > [!IMPORTANT]
 > See [Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md) to determine which update of version 23 is compatible with your current Business Central version.
 
-[![Upgrade on unmodified Business Central application.](../developer/media/bc24-upgrade-unmodified-app.svg)](../developer/media/bc24-upgrade-unmodified-app.png#lightbox)  
+[![Upgrade on unmodified Business Central application.](../developer/media/bc24-upgrade-unmodified-app.svg)](../developer/media/bc24-upgrade-unmodified-app.svg#lightbox)  
 
 [!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
 
