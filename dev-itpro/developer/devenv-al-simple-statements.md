@@ -2,7 +2,7 @@
 title: AL simple statements
 description: Describes the simple, single-line statements in AL for Business Central with examples
 ms.custom: na
-ms.date: 09/21/2022
+ms.date: 03/01/2024
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -92,6 +92,7 @@ String += "World";
 ```
 
 ## Method statements
+
 You use method statements to run either built-in system methods or user-defined (custom) methods. Method calls may include parameters, which are passed to the method. For more information, see [Calling Methods](devenv-al-methods.md#Callmethod). 
 
 ## AssertError statements
@@ -109,6 +110,7 @@ An error was expected inside an AssertError statement.
 ```  
 
 ### Example
+
 To create a test method to test the result of a failure of a `CheckDate` method that you've defined, you can use the following code. This example requires that you create a method called `CheckDate` to check whether the date is valid for the customized application.  
 
 ```AL  
@@ -218,9 +220,9 @@ with CustLedgEntry do begin
 end;  
 ```  
 
-## See Also
+## See also
 
-[Control Statements](devenv-al-control-statements.md)  
+[Control statements](devenv-al-control-statements.md)  
 [Methods](devenv-al-methods.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
-[AL Essential Methods](devenv-essential-al-methods.md)
+[AL essential methods](devenv-essential-al-methods.md)

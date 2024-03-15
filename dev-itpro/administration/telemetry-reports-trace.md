@@ -136,8 +136,9 @@ This KQL code can help you get started analyzing which reports users run:
 ```kql
 traces
 | where timestamp > ago(60d) // adjust as needed
-| where operation_Name == "Success report generation" // Note that in a later version of the schema, this field will not be used 
-     or customDimensions.eventId == 'RT0006'          // introduced in version 16.1
+| where customDimensions has 'RT0006'
+| where customDimensions.eventId == 'RT0006' 
+// | where operation_Name == "Success report generation" // use this instead of eventId clause for versions 16.0 or earlier
 | where customDimensions.result == "Success"
 | project timestamp
 // in which environment/company did it happen
@@ -174,8 +175,9 @@ If you want to summarize the data, keep the columns you want to group by in the 
 ```kql
 traces
 | where timestamp > ago(60d) // adjust as needed
-| where operation_Name == "Success report generation" // Note that in a later version of the schema, this field will not be used 
-     or customDimensions.eventId == 'RT0006'          
+| where customDimensions has 'RT0006'
+| where customDimensions.eventId == 'RT0006' 
+// | where operation_Name == "Success report generation" // use this instead of eventId clause for versions 16.0 or earlier
 | where customDimensions.result == "Success"
 | project timestamp
 , alObjectName = customDimensions.alObjectName
@@ -254,8 +256,9 @@ This KQL code can help you get started analyzing report failures:
 ```kql
 traces
 | where timestamp > ago(60d) // adjust as needed
-| where operation_Name == "Failed report generation" // Note that in a later version of the schema, this field will not be used 
-  or customDimensions.eventId == 'RT0006'            // introduced in version 16.1
+| where customDimensions has 'RT0006'
+| where customDimensions.eventId == 'RT0006' 
+// | where operation_Name == "Success report generation" // use this instead of eventId clause for versions 16.0 or earlier
 | where customDimensions.result <> "Success"
 | project timestamp
 // in which environment/company did it happen
@@ -333,8 +336,9 @@ This KQL code can help you get started analyzing report that were cancelled by u
 ```kql
 traces
 | where timestamp > ago(60d) // adjust as needed
-| where operation_Name == "Cancellation report generation" // Note that in a later version of the schema, this field will not be used   
-     or customDimensions.eventId == "RT0007" // introduced in version 16.1
+| where customDimensions has 'RT0007'
+| where customDimensions.eventId == 'RT0007' 
+// | where operation_Name == "Success report generation" // use this instead of eventId clause for versions 16.0 or earlier
 | project timestamp
 // in which environment/company did it happen
 , aadTenantId = customDimensions.aadTenantId
@@ -560,8 +564,8 @@ The following code snippet is a CustomDimensions example for a successful report
 -->
 
  
-  
 ## See also
 
+[Report performance](../developer/devenv-report-performance.md)   
+[Troubleshooting report errors](../developer/devenv-reports-troubleshooting.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
