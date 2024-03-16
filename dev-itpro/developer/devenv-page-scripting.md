@@ -145,10 +145,9 @@ Sometimes a page doesn't always show in a recorded flow but depends on data or s
 
 The steps that happen on that page will be shown indented, to indicate that here are optional, depending on page being shown.
 
-## Play a recording
+## Play back a recording
 
-You can play a recording that you just captured, as long as you haven't closed the page scropting tool. You can also play a recording that saved in a file, either by you or someone who shared the file with or a recording sent to you as a link.
-
+You can replay a recording that you just captured, as long as you haven't closed the page scropting tool. You can also play a recording was saved in a file, either by you or someone who shared the file with you. You can lso play back a recording that was shared with you as a link.
 To play a recording, whether just captured or opened from a file, select the Play button in the toolbar
 
 During playback you can:
