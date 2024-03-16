@@ -25,14 +25,13 @@ The page scripting tool captures both the user interactions and the resulting ac
 - To record, your user account must have the **PAGESCRIPTING - REC** permission set or equivalent permissions.
 - To play back a recording, your user account must have the ****PAGESCRIPTING - PLAY** permission set or equivalent permissions.
 
-## Get started with page scripting tool
+## Start the page scripting tool
 
-Whether you want to record or play back a recording. you can start the page scripting tool from any page <!-- but we recommend that to start from the role center.-->
+You can start the page scripting tool from any page. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon > **Page Scripting**.
 
-1. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon > **Page Scripting**.
+The **Page Scripting** pane opens on the right side. Now you ready to start a new recording or play an existing recording.
 
-   The **Page Scripting** pane opens on the right side.
-
+<!--
 1. In the **Page Scripting** pane, select the **Start new** button in the pane or the **New recording** icon in the control bar at the top.
 
    Recording starts, as indicated by solid red circle in the control bar.
@@ -46,36 +45,39 @@ Whether you want to record or play back a recording. you can start the page scri
 1. To play back the recording right away, select the **Play** button.
 1. To save the recording to file so you run it later or share with someone, select the **Save** icon in the control bar.
 
-The sections that follow explain other capabilities of the page scripting tool for recording and replaying interactions. 
+The sections that follow explain other capabilities of the page scripting tool for recording and replaying interactions. -->
 
 ## Record
 
+<!--
 ### Get started
 
 1. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon > **Page Scripting**.
 
-   The **Page Scripting** pane opens on the right side.
+   The **Page Scripting** pane opens on the right side.-->
 1. Open the page where you want to start recording.
-1. To start recording, go to the **Page Scripting** pane, and select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) icon in the control bar at the top.
 
-   Recording starts, as indicated by the solid red circle in the control bar.
+<!--To start recording, go to-->
+1. In the **Page Scripting** pane, select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) icon in the control bar at the top.
 
-1. Go to the page and run through the task that you want to record, as you typically would.
+   The white circle in the control bar turns red to indicate that you're recording.
 
-   As you interact with the application, your actions and the resulting actions done by the application itself are added in sequence as steps in the **Page Scripting** pane.
+1. Go back to the page and run through the task that you want to record, like you typically would.
 
-1. At anytime during recording, you can pause, resume, or delete the last recorded step.
+   As you interact with the application, your interactions actions and the resulting actions done by the application itself are added in sequence as steps in the **Page Scripting** pane.
 
-   - To pause the recording, select the **Stop** button in the control bar.
+1. At anytime during recording, you can pause, resume, or delete the last recorded step by
+
+   - To pause the recording, select the **Stop** button in the control bar of .
 
       While paused, you can ...
 
-   - To resume recording and continue  actions, select the **Start recording** button.
+   - To resume recording and continue  actions, select the **Start recording** button the control bar
 
    - To delete the last captured step, select **...** next to step and then **Delete**. 
    - To add a wait time before the next step, select the step > **...** > **Add step** > **Wait**.
 
-1. When you're done recording, select the **Stop** button.
+1. When you're done recording, select the **Stop** button .
 1. To play back the recording right away, select the **Play** button.
 
    You can replay the recording as long as you don't close the Page
@@ -143,10 +145,9 @@ Sometimes a page doesn't always show in a recorded flow but depends on data or s
 
 The steps that happen on that page will be shown indented, to indicate that here are optional, depending on page being shown.
 
-## Play back a recording
+## Play a recording
 
-You can play back a recording that you just captured or a recording that was saved in a file.
-
+You can play a recording that you just captured, as long as you haven't closed the page scropting tool. You can also play a recording that saved in a file, either by you or someone who shared the file with or a recording sent to you as a link.
 
 To play a recording, whether just captured or opened from a file, select the Play button in the toolbar
 
@@ -158,11 +159,11 @@ During playback you can:
 
 As the steps are played back the tool will record if they completed correctly (green checkmark) or not (red exclamation), as well as the result of any assert steps validating a result.
 
-## Save a recording
+## Save a recording to a file
 
 You can save the recording from the toolbar. This will create a YAML file that can be downloaded, shared, edited, and reopenen for playback.
 
-## Share a recording
+## Share a recording as a link
 
 You can also share a recording as a link, just click the share button in the toolbar. The link includes the full recording as well as its playback result. In the example below, we set that the playback has failed halfway.
 
