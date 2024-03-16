@@ -39,7 +39,7 @@ The following table describes the milestones with example dates for the two rele
 |Last scheduled update date|June 1 |December 1|The last date you can choose to extend your upgrade date to. <!--</br>Starting with 2023 release wave 2, the update window is again 30 days after an update is available, which makes these two dates May 1 and November 1, respectively.-->|
 
 > [!IMPORTANT]
-> For 2023 release wave 2, the update window remains 60 days. Based on feedback, we're currently evaluating longer-term processes for major updates and update windows. New policies might be updated at a later stage, which can include a return to a update window that again is 30 days after an update is available.
+> For 2024 release wave 1, the update window remains 60 days. Based on feedback, we're currently evaluating longer-term processes for major updates and update windows. New policies might be updated at a later stage, which can include a return to a update window that again is 30 days after an update is available.
 >
 >We recommend that you keep any apps and per-tenant extensions ready for upgrade at any given time, and that you actively test compatibility. We encourage everyone to use the time needed to get apps, per-tenant extensions, and processes ready for a shorter update window.
   
