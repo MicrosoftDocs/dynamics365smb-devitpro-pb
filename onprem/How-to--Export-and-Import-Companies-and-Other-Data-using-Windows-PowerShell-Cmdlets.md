@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ---
 # How to: Export and Import Companies and Other Data using Windows PowerShell Cmdlets
 You can export data such as a company or an application from a [!INCLUDE[navnow](includes/navnow_md.md)] database from the [!INCLUDE[nav_shell](includes/nav_shell_md.md)]. You can also use [!INCLUDE[wps_2](includes/wps_2_md.md)] cmdlets to import data into a [!INCLUDE[navnow](includes/navnow_md.md)] database.  
