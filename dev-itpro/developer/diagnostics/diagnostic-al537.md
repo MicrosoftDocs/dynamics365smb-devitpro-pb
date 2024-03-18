@@ -3,8 +3,8 @@ title: "Compiler Error AL0537"
 description: "Declaring views is only supported on pages of type {0}."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Declaring views is only supported on pages of type {0}.
+
 
 ## Description
 Declaring views is only supported on pages, page extensions, and page customization of the type List.  
