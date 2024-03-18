@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ---
 # Web Service Walkthroughs
 The walkthroughs in this section demonstrate how to create simple applications that interact with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] . These walkthroughs may be useful as foundations upon which you can build actual web service client applications.  
