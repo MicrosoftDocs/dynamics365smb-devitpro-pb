@@ -3,8 +3,8 @@ title: "Record.DeleteLinks() Method"
 description: "Deletes all of the links that have been added to a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +21,6 @@ Deletes all of the links that have been added to a record.
 ```AL
  Record.DeleteLinks()
 ```
-
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  

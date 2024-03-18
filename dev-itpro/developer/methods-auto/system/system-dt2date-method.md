@@ -3,8 +3,8 @@ title: "System.DT2Date(DateTime) Method"
 description: "Gets the date part of a DateTime object."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

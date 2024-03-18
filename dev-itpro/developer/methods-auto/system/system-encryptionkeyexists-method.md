@@ -3,8 +3,8 @@ title: "System.EncryptionKeyExists() Method"
 description: "Checks whether an encryption key for the current tenant is present on the server tenant."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,7 +23,6 @@ Ok :=   System.EncryptionKeyExists()
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
-
 
 ## Return Value
 *Ok*  
