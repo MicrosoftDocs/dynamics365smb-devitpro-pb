@@ -4,7 +4,6 @@ description: Explains how to change a tenant from the shared schema data model t
 ms.date: 10/01/2018
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2017"
 author: jswymer
 ---
 # Converting a Tenant From Shared Schema to Separate Schema

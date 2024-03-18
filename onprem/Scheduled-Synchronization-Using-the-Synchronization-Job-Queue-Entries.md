@@ -7,7 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
-ms.prod: "dynamics-nav-2018"
 ---
 # Synchronizing Dynamics NAV and Dynamics 365 for Sales
 With [!INCLUDE[crm_md](includes/crm_md.md)] integration, you can decide whether to synchronize data between [!INCLUDE[crm_md](includes/crm_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)]. Synchronization is the process that makes the data in selected fields of [!INCLUDE[navnow_md](includes/navnow_md.md)] records \(such as customers, contacts, and sales people\) and the equivalent [!INCLUDE[crm_md](includes/crm_md.md)] records \(such as accounts, contacts, and users\) the same. Conceptually, synchronization copies data between [!INCLUDE[crm_md](includes/crm_md.md)] entities and [!INCLUDE[navnow_md](includes/navnow_md.md)] record types \(tables\). Depending on the record type, data can be synchronized from [!INCLUDE[crm_md](includes/crm_md.md)] to [!INCLUDE[navnow_md](includes/navnow_md.md)] and from [!INCLUDE[navnow_md](includes/navnow_md.md)] to [!INCLUDE[crm_md](includes/crm_md.md)]. As users work with data in [!INCLUDE[crm_md](includes/crm_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)], synchronization keeps the data in both systems up\-to\-date.  

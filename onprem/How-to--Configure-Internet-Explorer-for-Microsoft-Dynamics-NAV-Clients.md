@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 0c43029c-6c85-41b4-9107-bbb4f384e357
 caps.latest.revision: 12
 ---
