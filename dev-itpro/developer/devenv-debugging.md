@@ -145,7 +145,7 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 
 ## <a name="DebugWS"></a>Debugging web services
 
-It's possible to debug code executed from web service endpoints, both pages and codeunits exposed as OData/SOAP, and API pages/queries. To do so, simply set the `breakOnNext` setting to `WebServiceClient` and trigger the web service endpoint from Postman or your web service client code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
+It's possible to debug code executed from web service endpoints, both pages and codeunits exposed as OData/SOAP, and API pages/queries. To do so, simply set the `breakOnNext` setting to `WebServiceClient` and trigger the web service endpoint from an API explorer tool or your web service client code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
 
 ## NonDebuggable attribute
 
