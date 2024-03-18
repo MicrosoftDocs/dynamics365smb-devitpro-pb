@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ---
 # Integrating [!INCLUDE[navnow](includes/navnow_md.md)] and Microsoft Office
 [!INCLUDE[navnow](includes/navnow_md.md)] includes several features that work with Microsoft Office products, including Excel, Word, OneNote, Outlook, and SharePoint. Some of the features require only that Office is installed on or accessible from the devices that are running the [!INCLUDE[navnow](includes/navnow_md.md)] clients, whereas other features require additional configuration. Depending on the feature, some configuration tasks are performed on the [!INCLUDE[navnow](includes/navnow_md.md)] deployment environment, such as configuring the [!INCLUDE[nav_server_md](includes/nav_server_md.md)] instance. These tasks are typically done by the system or IT administrator. Other tasks are performed on the application from the [!INCLUDE[navnow](includes/navnow_md.md)] clients, such as configuring user accounts. These tasks are typically done by the business application administrator.
