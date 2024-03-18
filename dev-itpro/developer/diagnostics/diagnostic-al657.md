@@ -3,8 +3,8 @@ title: "Compiler Error AL0657"
 description: "The property {0} is mandatory for ListParts and PageParts."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The property {0} is mandatory for ListParts and PageParts.
+
 
 ## Description
 The properties **EntitySetName** and **EntityName** are mandatory for ListParts and PageParts nested in API pages.  

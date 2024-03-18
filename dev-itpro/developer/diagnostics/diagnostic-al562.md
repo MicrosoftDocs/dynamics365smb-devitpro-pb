@@ -3,8 +3,8 @@ title: "Compiler Warning (Future Error) AL0562"
 description: "The value assigned to the SystemPart type is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The value assigned to the SystemPart type is not valid. Valid values are {0}.
+
 
 ## Description
 The value assigned to the SystemPart type must be Notes, Links, MyNotes or Outlook.  
