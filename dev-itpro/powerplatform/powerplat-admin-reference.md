@@ -4,8 +4,6 @@ description: The admin reference for working with Business Central and Microsoft
 ms.custom: na
 ms.date: 11/13/2023
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: solsen
 ---
@@ -86,6 +84,7 @@ When the solution is exported, it will contain hard dependencies on the virtual 
 
 ## See Also
 
+[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
 [Table Modeling](powerplat-entity-modeling.md)  
 [Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  

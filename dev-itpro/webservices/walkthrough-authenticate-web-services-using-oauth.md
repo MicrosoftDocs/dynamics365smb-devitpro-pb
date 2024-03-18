@@ -4,13 +4,11 @@ description: Learn how to use OAuth to authenticate Business Central web service
 ms.custom: na
 ms.date: 01/25/2022
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
 
-# Walkthrough: Creating a console application that use OAuth to Authenticate Business Central Web Services (OData or SOAP)
+# Walkthrough: Creating a console application that use OAuth to Authenticate Business Central Web Services (REST API, OData or SOAP)
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 

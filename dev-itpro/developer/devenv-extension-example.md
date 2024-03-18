@@ -5,8 +5,6 @@ author: jswymer
 ms.custom: na
 ms.date: 05/19/2022
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.collection: get-started
 ---
@@ -20,15 +18,10 @@ This walkthrough guides you step by step to create a sample extension in AL. New
 This walkthrough covers the following tasks:
 
 - Developing a sample extension with a table, a card page, and a list page.
-
 - Deploying the sample extension to your development sandbox environment.  
-
 - Using the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Designer to modify visual aspects of the extension. 
-
 - Creating extension objects that can be used to modify page and table objects.
-
 - Initializing the database during the installation of the extension.
-
 - Upgrading and preserving data during the upgrade of the extension.
 
 ## Prerequisites
@@ -36,12 +29,10 @@ This walkthrough covers the following tasks:
 To complete this walkthrough, you need:
 
 - The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant.
-
 - Visual Studio Code.
-
 - The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code.
 
-For more information on how to get started with your first extension for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Getting Started](devenv-get-started.md).
+For more information on how to get started with your first extension for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Getting started](devenv-get-started.md).
 
 ## Rewards extension overview
 
@@ -525,16 +516,16 @@ You can configure your extension to send this data to a specific Application Ins
 
 ## Conclusion
 
-This walkthrough showed how an extension can be developed. The main AL objects and extension objects were used to make a structure for reward levels, to store, view, and edit them. The Designer was introduced as an alternative to modify visual components of page objects and to customize them directly from the web interface instead of using code. Up to this point, the table and the page objects were empty, so, we added install codeunit which initialized the **Reward** table with a standard number of reward levels when the extension was installed. We also added an upgrade code section in this exercise to create a complete picture of all processes involved when an extension is built. As a result, a user is enabled to assign one of the three reward levels to a customer and to change this scenario by upgrading the version of the extension.
+This walkthrough showed how an extension can be developed. The main AL objects and extension objects were used to make a structure for reward levels, to store, view, and edit them. The Designer was introduced as an alternative to modify visual components of page objects and to customize them directly from the web interface instead of using code. Up to this point, the table, and the page objects were empty, so, we added install codeunit which initialized the **Reward** table with a standard number of reward levels when the extension was installed. We also added an upgrade code section in this exercise to create a complete picture of all processes involved when an extension is built. As a result, a user is enabled to assign one of the three reward levels to a customer and to change this scenario by upgrading the version of the extension.
 
 > [!TIP]  
 > To try building a more advanced Customer Rewards sample extension, see [Building an Advanced Sample Extension](devenv-extension-advanced-example.md).
 
 ## See also
 
-[Developing Extensions](devenv-dev-overview.md)  
-[Get Started with AL](devenv-get-started.md)  
-[How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
-[Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
-[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
-[Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  
+[Developing extensions](devenv-dev-overview.md)  
+[Get started with AL](devenv-get-started.md)  
+[How to: publish and install an extension](devenv-how-publish-and-install-an-extension-v2.md)  
+<!-- [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  -->
+[Configure context-sensitive help](../help/context-sensitive-help.md)  
+[Sending extension telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  

@@ -4,8 +4,6 @@ description: Explains how to tune and trace nonclustered columnstore indexes in 
 ms.custom: na
 ms.date: 01/28/2022
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---

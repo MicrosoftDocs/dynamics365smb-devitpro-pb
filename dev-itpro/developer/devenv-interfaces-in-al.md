@@ -1,12 +1,10 @@
 ---
 title: Interfaces in AL
-description: Interfaces in AL are syntactical contracts that can be implemented by a non-abstract method.
+description: Interfaces in AL are syntactical contracts that can be implemented by a nonabstract method.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/24/2023
+ms.date: 03/01/2024
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -16,11 +14,11 @@ ms.collection: get-started
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
-An interface in AL is similar to an interface in any other programming language; it's a syntactical contract that can be implemented by a non-abstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface.
+An interface in AL is similar to an interface in any other programming language; it's a syntactical contract that can be implemented by a nonabstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface. 
 
 This allows for writing code that reduces the dependency on implementation details, makes it easier to reuse code, and supports a polymorphic way of calling object methods, which again can be used for substituting business logic.
 
-The interface declares an interface name along with its methods, and codeunits that implement the interface methods, must use the `implements` keyword along with the interface name(s). The interface itself doesn't contain any code, only signatures, and can't itself be called from code, but must be implemented by other objects.
+The interface declares an interface name along with its methods, and codeunits that implement the interface methods, must use the `implements` keyword along with one or more interface names. The interface itself doesn't contain any code, only signatures, and can't itself be called from code, but must be implemented by other objects.
  
 The AL compiler checks to ensure that implementations adhere to assigned interfaces.
 
@@ -150,7 +148,7 @@ page 50200 MyAddressPage
 }
 ```
 
-## See Also
+## See also
 
-[Codeunit Object](devenv-codeunit-object.md)  
-[Extensible Enums](devenv-extensible-enums.md)  
+[Codeunit object](devenv-codeunit-object.md)  
+[Extensible enums](devenv-extensible-enums.md)  

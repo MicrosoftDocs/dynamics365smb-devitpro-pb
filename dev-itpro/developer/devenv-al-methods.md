@@ -1,11 +1,9 @@
 ---
-title: "Working with AL methods"
-description: "Methods also known as procedures are a fundamental programming element in AL for Business Central."
+title: Working with AL methods
+description: Methods also known as procedures are a fundamental programming element in AL for Business Central.
 ms.custom: na
 ms.date: 11/16/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.collection: get-started
@@ -187,7 +185,8 @@ else
   <Statement2>  
 ```
 
-## Example 6  
+## Example 6
+
 This example also illustrates how parameters can be *passed by value* or *passed by reference*. The following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
 
 ```AL
@@ -196,9 +195,9 @@ procedure MyMethod(MyCustomer : Record Customer; var MyDimension : List of [Bool
 
 The `MyCustomer` parameter is passed by value, and the `MyDimension` parameter is passed by reference.
 
-## See Also
+## See also
 
-[Development Overview](devenv-dev-overview.md)  
-[AL Methods](methods-auto/library.md)  
-[AL Simple Statements](devenv-al-simple-statements.md)  
-[AL Control Statements](devenv-al-control-statements.md)  
+[Development overview](devenv-dev-overview.md)  
+[AL methods](methods-auto/library.md)  
+[AL simple statements](devenv-al-simple-statements.md)  
+[AL control statements](devenv-al-control-statements.md)  

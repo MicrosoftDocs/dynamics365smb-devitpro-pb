@@ -4,8 +4,6 @@ description: Explains how to resolve the compilation error that you get for Code
 ms.custom: na
 ms.date: 12/19/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---

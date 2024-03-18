@@ -5,7 +5,6 @@ ms.custom: bap-template
 ms.date: 04/01/2021
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 # Business Central Server Trace Events

@@ -3,9 +3,7 @@ title:  Azure Function Integration Telemetry
 description: Learn about telemetry on Azure Function integrations with Business Central
 author: KennieNP
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, telemetry
 ms.date: 08/16/2022
 ms.author: kepontop
@@ -32,7 +30,6 @@ The following dimensions are available in all events described below and not inc
 |companyName|[!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)]|
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
-
 
 ## Request sent to Azure function succeeded
 

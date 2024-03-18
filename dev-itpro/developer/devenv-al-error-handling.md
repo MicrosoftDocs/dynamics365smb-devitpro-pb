@@ -2,10 +2,8 @@
 title: "AL error handling"
 description: Deal with unexpected situations that occur when code is run in AL for Business Central
 ms.custom: na
-ms.date: 12/21/2023
+ms.date: 03/01/2024
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.collection: get-started

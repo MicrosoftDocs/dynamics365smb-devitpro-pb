@@ -7,7 +7,6 @@ ms.topic: how-to #Required; don't change.
 ms.collection: 
 ms.date: 11/22/2023
 ms.custom: bap-template #Required; don't change.
-ms-service: dynamics365-business-central
 ---
 
 # Power Pages on virtual tables (preview)
@@ -21,6 +20,8 @@ Data virtualization is part of the fabric or tools to integrate Business Central
 These licensed users are considered as internal users to the organizations or companies that purchase the licenses. They're in employee-like relationships with the companies and perform business processes on the companies' behalf. They can access data stored in Business Central online using Power Apps and Power Automate, which operate on virtual tables in Dataverse.
 
 Business Central 2023 release wave 2, version 23.1, introduced Power Pages on virtual tables feature. This feature allows unlicensed external users to access data stored in Business Central online by using Power Pages that operates on virtual tables in Dataverse.  For more info on internal and  external users, consult the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and refer to the **Licensing requirements for external users** and **Multiplexing** sections.
+
+[![Shows how data virtualization works between Business Central and Dataverse](media/dataverse-virtual-tables.svg)](media/dataverse-virtual-tables.svg#lightbox)
 
 External users are typically users from the customer or vendor organizations of companies that purchase Business Central licenses.  In some commerce or collaboration scenarios, these users might need to participate in processes that involve data stored in Business Central online, such as customer onboarding, vendor bidding, and so on&mdash;even if they aren’t Business Central users. This new feature enables those companies to build business-to-business (B2B) portals using Power Pages that serve their customers and vendors, so external users can have anonymous and authenticated access to data stored in Business Central online.  
 

@@ -15,10 +15,10 @@ ms.collection: get-started
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code. It provides an easy and convenient way to make immediate changes to your design by dragging and dropping the components on the page.  
 
 > [!IMPORTANT]  
-> Currently, Designer is only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br> Every time you start designing, you're effectively creating a new extension. Your changes are immediately visible to other users in the sandbox environment.<br> Designer cannot be used by multiple users at the same time in sandboxes.  
+> Currently, Designer is only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br> Every time you start designing, you're effectively creating a new extension. Your changes are immediately visible to other users in the sandbox environment.<br> Designer can't be used by multiple users at the same time in sandboxes.  
 
 > [!NOTE]  
-> Extensions created Use Designer are removed when the sandbox environment is updated or relocated within our service. Thus, you should not rely on using the sandbox environment as a source control for these Designer extensions. Remember to frequently download and backup the Designer extension source. For more information, see [Production and Sandbox Environments](../administration/environment-types.md).
+> Extensions created by using Designer are removed when the sandbox environment is updated or relocated within our service. Thus, you shouldn't rely on using the sandbox environment as a source control for these Designer extensions. Remember to frequently download and backup the Designer extension source. For more information, see [Production and Sandbox Environments](../administration/environment-types.md).
 
 ## Designer capabilities
 
@@ -38,22 +38,22 @@ Here's a quick overview of capabilities in **Designer**:
 |Save extension/download code |general           |
 |Preview design               |general           |
 
-[!INCLUDE[Personalization of the controls](../includes/designer_experience_of_the_controls_Note.md)]|
+[!INCLUDE[Personalization of the controls](../includes/designer_experience_of_the_controls_note.md)]
 
 ## Important points to note
 
 - Every time you start designing, you're effectively creating a new extension. Your changes are immediately visible to other users in the sandbox environment.
-- The changes you make in Designer will apply to **all** users.
+- The changes you make in Designer apply to **all** users.
 - You can't remove specific fields that are bound to a page and a field must belong to an underlying table.
-- You can only add fields, columns, or tiles to its applicable view from list, tall tiles, and wide tiles views. Some components can't be moved using drag-and-drop and are restricted to the view that they are in.
+- You can only add fields, columns, or tiles to its applicable view from list, tall tiles, and wide tiles views. Some components can't be moved using drag-and-drop and are restricted to the view that they're in.
 - You can only add fields/columns, from a predefined list, which is based on the source table. You can't create new ones.
-- In the client, users can change many of these settings for their workspace by using personalization. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).  
+- In the client, users can change many of these settings for their workspace by using personalization. For more information, see [Personalizing your workspace](/dynamics365/business-central/ui-personalization-user).  
 
 ## Start and stop designing
 
 In the [!INCLUDE[prod_short](includes/prod_short.md)] client, you start Designer by choosing ![Settings icon.](media/settings_icon_small.png) icon and then **Design** in the top-right corner of any page and start designing using drag-and-drop components. In Visual Studio Code, you can start Designer by using the <kbd>F6</kbd> shortcut key, which launches a browser that opens the [!INCLUDE[prod_short](includes/prod_short.md)] client in Designer.
 
-After you're done with the changes, choose **Stop Designing**. You can name the extension and download code to save it for the tenant. Once you're done, the extension is automatically installed. If you choose to download the code, the project will be downloaded as a .zip folder<!--, where the `app.json` file has the main extension as a dependency-->. You extract the files and open the folder from Visual Studio Code, where you can deploy it as you would do with any other extension.
+After you're done with the changes, choose **Stop Designing**. You can name the extension and download code to save it for the tenant. Once you're done, the extension is automatically installed. If you choose to download the code, the project is downloaded as a .zip folder<!--, where the `app.json` file has the main extension as a dependency-->. You extract the files and open the folder from Visual Studio Code, where you can deploy it as you would do with any other extension.
 
 If you choose not to download the code at the end, you can still pull the code using the <kbd>Alt</kbd>+<kbd>F6</kbd> shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there. You can find **Extension Management** page by choosing the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon and typing the page name.
 
@@ -78,13 +78,13 @@ You can edit the caption of a FastTab (FastTabs divide key information in separa
 
 ## Set the Importance on a field
 
-Fields on non-list type pages, such as card and document type pages, include Designer options for setting the importance. The following table describes the options for setting the importance in Designer and how it corresponds to the [Importance property](properties/devenv-importance-property.md) in the page code.
+Fields on nonlist type pages, such as card and document type pages, include Designer options for setting the importance. The following table describes the options for setting the importance in Designer and how it corresponds to the [Importance property](properties/devenv-importance-property.md) in the page code.
 
 |Option|Description|Importance property value|
 |----|----|---|
 |**Show under "Show more"**|Sets the field so that it appears only when the user selects **Show more**. |Additional|
-|**Show always**|Sets the field to always display on the page. The field is displayed regardless the user selects **Show more** or **Show less**. The field won't show in the FastTab heading if the FastTab is collapsed.|Standard|
-|**Show when collapsed**|Sets the field to always display on the page. The field is displayed regardless the user selects **Show more** or **Show less**. The fields will also display in the header of the FastTab if the FastTab is collapsed.|Promoted|
+|**Show always**|Sets the field to always display on the page. The field is displayed regardless the user selects **Show more** or **Show less**. The field doesn't show in the FastTab heading if the FastTab is collapsed.|Standard|
+|**Show when collapsed**|Sets the field to always display on the page. The field is displayed regardless the user selects **Show more** or **Show less**. The fields also display in the header of the FastTab if the FastTab is collapsed.|Promoted|
 
 ## Set the Quick Entry on fields
 
@@ -107,7 +107,7 @@ You can also move actions to reorder them in the navigation bar, or move them in
 
 ## Hide and show Parts
 
-Designer lets you hide and unhide part controls in a page directly from the client. When you select the **Hide** option on a part, it will be grayed-out and disappear from the page when you quit Designer mode. Similarly, you can select **Show** on a grayed part control to make it visible again to the user. 
+Designer lets you hide and unhide part controls in a page directly from the client. When you select the **Hide** option on a part, it's grayed-out and disappear from the page when you quit Designer mode. Similarly, you can select **Show** on a grayed part control to make it visible again to the user. 
 
 The extension generated when the user hides or shows a part overrides the [Visible Property](properties/devenv-visible-property.md) in code. For more information on how the **Visible Property** affects the visibility of a control, see [UI Customization and Visibility of Controls](properties/devenv-visible-property.md#ui-customization-and-visibility-of-controls).
 
@@ -129,9 +129,9 @@ Actions and actions groups that are already hidden appear dimmed. To change the 
 
 |Option|What it does|
 |------|------------
-|**Remove**|This option is available for the actions that are shown only in a promoted category. Or actions that are shown in both, promoted category and another action menu.<br /><br /> Choosing **Remove** deletes the action from the selected location so that it no longer appears.<br /><br /> If the action is only shown in the promoted category, it will automatically be shown in the action menu where it's originally defined.<br /><br />You can't remove actions on a Role Center page; you can only hide them.|
-|**Hide**|This option is available for actions or action groups that are currently shown only in an action menu (not in a promoted category). Like **Remove**, choosing **Hide** will make the action or action group disappear from the action bar in the client. However, in Designer, the action or action group appears dimmed.|
-|**Show**|This option appears if the action or action group has been previously hidden (dimmed). Choosing this option will make the action or action group appear in the action bar.|
+|**Remove**|This option is available for the actions that are shown only in a promoted category. Or actions that are shown in both, promoted category and another action menu.<br /><br /> Choosing **Remove** deletes the action from the selected location so that it no longer appears.<br /><br /> If the action is only shown in the promoted category, it's automatically shown in the action menu where it's originally defined.<br /><br />You can't remove actions on a Role Center page; you can only hide them.|
+|**Hide**|This option is available for actions or action groups that are currently shown only in an action menu (not in a promoted category). Like **Remove**, choosing **Hide** makes the action or action group disappear from the action bar in the client. However, in Designer, the action or action group appears dimmed.|
+|**Show**|This option appears if the action or action group has been previously hidden (dimmed). Choosing this option makes the action or action group appear in the action bar.|
 
 ### Move actions and action groups
 
@@ -150,7 +150,7 @@ To move an action or action group, drag and drop it to the wanted location, just
 
 ## Preview design on different display targets
 
-The display type icons let you preview the changes you made on desktop, tablet, and phone clients. This way you can make sure that your design will work on the intended display target(s). You can flip to display tablet and phone designs in portrait and landscape orientation. 
+The display type icons let you preview the changes you made on desktop, tablet, and phone clients. This way you can make sure that your design works on the intended display target(s). You can flip to display tablet and phone designs in portrait and landscape orientation. 
 
 ## Control user access to Designer
 

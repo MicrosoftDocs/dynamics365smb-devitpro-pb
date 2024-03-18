@@ -4,8 +4,6 @@ description: "Frequently asked questions for working with Business Central virtu
 ms.custom: na
 ms.date: 11/13/2023
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: solsen
 ---
@@ -55,6 +53,7 @@ Yes. Here's the order of calls:
 
 ## See Also
 
+[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
 [Table Modeling](powerplat-entity-modeling.md)  
 [Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference](powerplat-admin-reference.md)  

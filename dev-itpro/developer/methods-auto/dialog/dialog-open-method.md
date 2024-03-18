@@ -5,8 +5,6 @@ ms.author: solsen
 ms.custom: na
 ms.date: 03/02/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -44,6 +42,9 @@ Use these optional parameters to specify variables for field1, field2, and so on
 
 ## Remarks
   
+> [!NOTE]  
+> The use of a backslash (\) to initiate a new line is not applicable to progress dialogs that are displayed during the Generation or Regeneration process of a PromptDialog page. For more information, see [The PromptDialog page type](../../devenv-page-type-promptdialog.md).
+
 Dialog windows that are opened by an object are closed when the object terminates.  
   
  Dialog windows are automatically sized to hold the longest line of text and the total number of lines.  

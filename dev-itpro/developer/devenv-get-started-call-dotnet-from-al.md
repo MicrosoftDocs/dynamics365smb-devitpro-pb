@@ -1,19 +1,17 @@
 ---
-title: "Getting started with Microsoft .NET Interoperability from AL"
-description: "Description of the process of referencing and using .NET types"
+title: Get started with Microsoft .NET Interoperability from AL
+description: Description of the process of referencing and using .NET types
 author: solsen
-ms.date: 04/01/2021
+ms.date: 03/01/2024
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
 ---
 
-# Getting started with Microsoft .NET Interoperability from AL
+# Get started with Microsoft .NET Interoperability from AL
 
-You can call .NET type members, including methods, properties, and constructors, from AL code. In this article we will guide you through the process of creating an extension that uses .NET types.
+You can call .NET type members, including methods, properties, and constructors from AL code. In this article, we'll guide you through the process of creating an extension that uses .NET types.
 
 > [!IMPORTANT]  
 > .NET Interoperability is only available on-premise. If you want to use this functionality, you must set the `"target": "OnPrem"` in the `app.json` file. For more information, see [JSON Files](devenv-json-files.md#appjson-file). 
@@ -22,7 +20,7 @@ You can call .NET type members, including methods, properties, and constructors,
 
 ## Enabling .NET Interoperability
 
-.NET interoperability can only be used by applications that target on-premise deployments. See [JSON Files](devenv-json-files.md#appjson-file) for more information on how to set the correct compilation target and [Compilation Scope Overview](devenv-compilation-scope-overview.md).
+.NET interoperability can only be used by applications that target on-premises deployments. See [JSON Files](devenv-json-files.md#appjson-file) for more information on how to set the correct compilation target and [Compilation scope overview](devenv-compilation-scope-overview.md).
 
 ## Declaring a .NET package
 
@@ -37,9 +35,9 @@ dotnet
 }
 ```
 
-It is recommended to have only one package per extension that contains all the .NET types which you will be using.
+It's recommended to have only one package per extension that contains all the .NET types, which you are using.
 
-You continue by adding a declaration of the assembly that you will be referencing. For this example, we will use the `mscorlib` assembly that contains the core .NET types. A **dotnet** package can contain an unlimited number of assembly declarations. The name of the assembly must be the one defined in the assembly's manifest. See the following example snippet.
+You continue by adding a declaration of the assembly that you are referencing. For this example, we use the `mscorlib` assembly that contains the core .NET types. A **dotnet** package can contain an unlimited number of assembly declarations. The name of the assembly must be the one defined in the assembly's manifest. See the following example snippet.
 
 
 ```AL
@@ -63,7 +61,7 @@ By default, the compiler only knows about the location of the `mscorlib` assembl
 > [!NOTE]  
 > Any update to an assembly's code is not automatically detected by the compiler. If an assembly has changed, then you must restart your development environment.
 
-You continue by adding a reference to a type from the referenced assembly. In this example, we will use `System.DateTime` from `mscorlib` and we will give it the alias `MyDateTime`. The type must be referenced using its fully-qualified name. The alias is used for referencing the .NET type from code. If an alias is not provided, the compiler will use the .NET type name. A .NET assembly declaration can contain any number of type declarations. See the example below.
+You continue by adding a reference to a type from the referenced assembly. In this example, we use `System.DateTime` from `mscorlib` and we give it the alias `MyDateTime`. The type must be referenced using its fully qualified name. The alias is used for referencing the .NET type from code. If an alias isn't provided, the compiler uses the .NET type name. A .NET assembly declaration can contain any number of type declarations. See the following example.
 
 ```AL
 dotnet
@@ -76,7 +74,7 @@ dotnet
 ```
 
 ## Using a .NET type from AL code
-From this point on, we can reference the .NET type from AL code using its given alias, as shown in the example below.
+From this point on, we can reference the .NET type from AL code using its given alias, as shown in the following example.
 
 ```AL
 dotnet
@@ -100,15 +98,17 @@ pageextension 50100 CustomerListExt extends "Customer List"
 ```
 
 ## Publishing your extension
-The AL Language extension, including the AL compiler, and the server to which you publish your code are completely decoupled.
-When publishing, the server re-compiles your code and tries to resolve all the references to external assemblies. In order for the compilation to succeed, the server must be able to locate and load all the referenced assemblies and types.
 
-The server will search the global assembly cache (GAC), the **Add-ins** folder, and the **Add-in** table. You must manually install any custom assembly in one of these locations.
+The AL Language extension, including the AL compiler, and the server to which you publish your code are decoupled.
+When publishing, the server recompiles your code and tries to resolve all the references to external assemblies. In order for the compilation to succeed, the server must be able to locate and load all the referenced assemblies and types.
 
-## See Also
-[Get Started with AL](devenv-get-started.md)  
-[.NET Control Add-Ins](devenv-dotnet-controladdins.md)        
-[Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)     
-[Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)  
-[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
+The server searches the global assembly cache (GAC), the **Add-ins** folder, and the **Add-in** table. You must manually install any custom assembly in one of these locations.
+
+## See also
+
+[Get started with AL](devenv-get-started.md)  
+[.NET control add-ins](devenv-dotnet-controladdins.md)        
+[Subscribing to events in a .NET framework type](devenv-dotnet-subscribe-to-events.md)     
+[Serializing .NET framework types](devenv-dotnet-serializing-dotnetframework-types.md)  
+[AL Language Extension configuration](devenv-al-extension-configuration.md)  
 

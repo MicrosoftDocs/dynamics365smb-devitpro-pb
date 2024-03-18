@@ -4,8 +4,6 @@ description: Explains the phases involved in the lifecycle of developing an exte
 ms.custom: na
 ms.date: 04/12/2022
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---

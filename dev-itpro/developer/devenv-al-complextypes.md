@@ -2,10 +2,8 @@
 title: AL complex types
 description: With AL complex types, you can return most types from procedures in AL for Business Central
 ms.custom: na
-ms.date: 09/29/2023
+ms.date: 03/01/2024
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: esbenk
 ms.collection: get-started
@@ -95,10 +93,10 @@ begin
 end;
 ```
 
-## See Also
+## See also
 
 [Programming in AL](devenv-programming-in-al.md)  
-[AL Simple Statements](devenv-al-simple-statements.md)  
+[AL simple statements](devenv-al-simple-statements.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
-[AL Essential Methods](devenv-essential-al-methods.md)  
-[HttpClient Data Type](methods-auto/httpclient/httpclient-data-type.md)
+[AL essential methods](devenv-essential-al-methods.md)  
+[HttpClient data type](methods-auto/httpclient/httpclient-data-type.md)

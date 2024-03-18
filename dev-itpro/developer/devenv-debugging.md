@@ -1,6 +1,6 @@
 ---
 title: Debugging in AL
-description: Overview of debugging in AL.
+description: Debugging in AL with Visual Studio Code and the AL Language extension.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/10/2024
@@ -141,7 +141,7 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 
 ## <a name="DebugWS"></a>Debugging web services
 
-It's possible to debug code executed from web service endpoints, both pages and codeunits exposed as OData/SOAP, and API pages/queries. To do so, simply set the `breakOnNext` setting to `WebServiceClient` and trigger the web service endpoint from Postman or your web service client code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
+It's possible to debug code executed from web service endpoints, both pages and codeunits exposed as OData/SOAP, and API pages/queries. To do so, simply set the `breakOnNext` setting to `WebServiceClient` and trigger the web service endpoint from an API explorer tool or your web service client code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
 
 ## NonDebuggable attribute
 
@@ -151,10 +151,10 @@ The ability to debug certain methods and/or variables can be restricted. For mor
 
 You can use Microsoft Entra ID as the authentication mechanism for [!INCLUDE[prod_short](includes/prod_short.md)] on-premises or containers. For more information, see [Microsoft Entra authentication for Business Central on-premises](devenv-aad-auth-onprem.md).
 
-## See Also
+## See also
 
-[Attach and Debug Next](devenv-attach-debug-next.md)  
+[Attach and debug next](devenv-attach-debug-next.md)  
 [Snapshot debugging](devenv-snapshot-debugging.md)  
-[Developing Extensions](devenv-dev-overview.md)  
-[JSON Files](devenv-json-files.md)  
-[AL Code Navigation](devenv-al-code-navigation.md)  
+[Developing extensions](devenv-dev-overview.md)  
+[JSON files](devenv-json-files.md)  
+[AL code navigation](devenv-al-code-navigation.md)  

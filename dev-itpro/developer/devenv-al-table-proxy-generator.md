@@ -4,8 +4,6 @@ description: "Tool for creating integration or proxy tables for integration with
 ms.custom: na
 ms.date: 01/04/2024
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -83,4 +81,5 @@ Redirect URI type must be **Public client/native (mobile & desktop).
 
 ## See also
 
+[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Custom Integration with Microsoft Dataverse](../administration/administration-custom-cds-integration.md)  

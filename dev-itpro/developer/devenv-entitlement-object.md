@@ -5,8 +5,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 09/27/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: solsen
 ---
@@ -23,8 +21,10 @@ An entitlement consists of a number of [PermissionSet objects](devenv-permission
 
 Entitlements can only be used with the online version of [!INCLUDE [prod_short](includes/prod_short.md)].
 
-> [!NOTE]  
-> With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitlements can be used to support transactability for AppSource apps by binding entitlements to offers. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+## Supporting transactability for AppSource apps
+
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitlements can be used to support transactability for AppSource apps by binding entitlements to offers. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+
 <!--
 > [!NOTE]  
 > In the current version of [!INCLUDE [prod_short](includes/prod_short.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases.

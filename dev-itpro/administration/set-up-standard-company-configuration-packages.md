@@ -3,9 +3,7 @@ title: Set Up Company Configuration Packages
 description: Streamline your implementation process by turning a set of company types you use with most customers into company configuration packages available for reuse.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords:
 ms.search.form: 8610, 8613, 8614, 8615, 8620, 8632
 ms.date: 04/07/2022

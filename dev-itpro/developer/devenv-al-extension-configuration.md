@@ -5,8 +5,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 08/30/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -55,9 +53,9 @@ The following table describes the user and workspace settings for the AL Languag
 |Inlayhints > Parameter Names| Switch on/off inlay hints for parameter names.|
 |AL-Go Suggested Folder| Sets the suggested folder when using AL:Go! command. Can be set per user or per workspace.|
 
-## See Also
+## See also
 
-[AL Development Environment](devenv-reference-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
 [Debugging in AL](devenv-debugging.md)  
-[JSON Files](devenv-json-files.md)  
+[JSON files](devenv-json-files.md)  
 [Working with multiple projects and project references](devenv-work-workspace-projects-references.md)  

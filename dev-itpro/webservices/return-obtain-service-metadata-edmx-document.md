@@ -1,11 +1,9 @@
 ---
 title: "Use OData to Return and Obtain a Service Metadata Document"
 description: "Using OData to return and obtain a Service Metadata (EDMX) Document."
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 01/28/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ---
 
@@ -25,16 +23,16 @@ The following guidelines have been implemented for EDM.
   
 1.  You can obtain service metadata documents for either page or query web services. This example uses a page web service. Register and publish a page web service by using the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. See [Publishing a Web Service](publish-web-service.md)..  
   
-2.  Start Windows Internet Explorer. In the **Address** field, enter a URI in this format:  
+2.  Start a supported web browser, such as Microsoft Edge. In the **Address** field, enter a URI in this format:  
   
     ```  
-    https://<Server>:<WebServicePort>/<ServerInstance>/OData/$metadata  
+    https://<Server>:<WebServicePort>/<ServerInstance>/ODataV4/$metadata  
     ```  
   
      If [!INCLUDE[server](../developer/includes/server.md)] is running on the local computer and is using the default [!INCLUDE[server](../developer/includes/server.md)] instance and OData port, then the address is:  
   
     ```  
-    https://localhost:7048/<server instance>/OData/$metadata  
+    https://localhost:7048/<server instance>/ODataV4/$metadata  
     ```  
   
      The browser should now show the complete metadata for the page web service that you have published. The beginning of this document looks like this:  

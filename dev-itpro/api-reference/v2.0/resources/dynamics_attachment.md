@@ -3,9 +3,7 @@ title: attachment resource type
 description: An attachments object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 09/01/2022
 ms.author: solsen
 ---
