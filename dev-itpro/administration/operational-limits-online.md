@@ -3,7 +3,7 @@ title: Operation Limits in Dynamics 365 Business Central
 description: Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments.
 author: swinarko
 ms.custom: bap-template
-ms.date: 01/29/2024
+ms.date: 02/26/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: sawinark
@@ -126,7 +126,7 @@ For more information on report limits, see [Report limits](../developer/devenv-r
 |Max page size|The maximum number of entities that can be returned for an OData V4 request. When this limit is exceeded, an HTTP response code `413 - Request Entity Too Large` is returned.|20,000|
 |Max batch size|The maximum number of operations in an OData V4 $batch request.|100|
 |Max request queue size|The maximum number of queued OData V4 requests, waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|95, see the future [per-user limit](#ODataServicesUser).|
-|Rate|The maximum number of OData V4 requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|Sandbox: 300, Production: 600, see the future [per-user limit](#ODataServicesUser).| 
+|Speed (rate)|The maximum number of OData V4 requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|Sandbox: 300, Production: 600, see the future [per-user limit](#ODataServicesUser).| 
 |Operation timeout|The maximum amount of time in minutes allocated to an OData V4 request. When this limit is exceeded, an HTTP response code `408 - Request Timeout` is returned and the relevant session is canceled.|8|
 |Max number of webhook subscriptions|The maximum number of webhook subscriptions.|200|
 
@@ -142,7 +142,7 @@ For more information on report limits, see [Report limits](../developer/devenv-r
 |Max connections|The maximum number of simultaneous SOAP requests, including processed and queued requests. When the limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|100|
 |Max message size|The maximum size in KB of a SOAP request. When this limit is exceeded, an HTTP response code `413 - Request Entity Too Large` is returned.|65,536|
 |Max request queue size|The maximum number of queued SOAP requests, waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|95|
-|Rate|The maximum number of SOAP requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|Sandbox: 300, Production: 600, see the future [per-user limit](#SOAPServicesUser).| 
+|Speed (rate)|The maximum number of SOAP requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|Sandbox: 300, Production: 600, see the future [per-user limit](#SOAPServicesUser).| 
 |Operation timeout|The maximum amount of time in minutes allocated to a SOAP request. When this limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.|8|
 
 > [!NOTE]
@@ -155,13 +155,13 @@ For more information on report limits, see [Report limits](../developer/devenv-r
 |Max concurrent requests|The maximum number of OData V4 requests that can be processed at the same time. Requests that come in when this limit is exceeded will wait in a queue until a time slot becomes available. They wait in the queue until they time out after 8 minutes, where an HTTP response code `503 - Service Temporarily Unavailable` is returned. The more users you have in your environment, the more requests you can simultaneously process in it, as long as we can continuously scale our resources. If many requests are being processed at the same time and we couldn't sufficiently scale our resources, you might experience delays/throttling in processing your requests.|5, see [frequently asked questions on per-user limits](#FAQsUser).|
 |Max connections|The maximum number of simultaneous OData V4 requests, including processed and queued requests. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|100, see [frequently asked questions on per-user limits](#FAQsUser).|
 |Max request queue size|The maximum number of queued OData V4 requests, waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|95, see [frequently asked questions on per-user limits](#FAQsUser).|
-|Rate|The maximum number of OData V4 requests that can be submitted within a 5-minute sliding window. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. The more users you have in your environment, the more requests you can submit to it around the same time, as long as we can continuously scale our resources. If many requests are being submitted around the same time and we couldn't sufficiently scale our resources, you might experience throttling in submitting your requests.|6000, see [frequently asked questions on per-user limits](#FAQsUser).| 
+|Speed (rate)|The maximum number of OData V4 requests that can be submitted within a 5-minute sliding window. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. The more users you have in your environment, the more requests you can submit to it around the same time, as long as we can continuously scale our resources. If many requests are being submitted around the same time and we couldn't sufficiently scale our resources, you might experience throttling in submitting your requests.|6000, see [frequently asked questions on per-user limits](#FAQsUser).| 
 
 ## <a name="SOAPServicesUser"></a>SOAP request limits (per user)
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |-------|--------------------------------------------------------------------------------|-----|
-|Rate|The maximum number of SOAP requests that can be submitted within a 5-minute sliding window. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. The more users you have in your environment, the more requests you can submit to the environment around the same time, as long as we can continuously scale our resources. If many requests are being submitted around the same time and we can't sufficiently scale our resources, you might experience throttling in submitting your requests.|6000, see [frequently asked questions on per-user limits](#FAQsUser).|
+|Speed (rate)|The maximum number of SOAP requests that can be submitted within a 5-minute sliding window. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. The more users you have in your environment, the more requests you can submit to the environment around the same time, as long as we can continuously scale our resources. If many requests are being submitted around the same time and we can't sufficiently scale our resources, you might experience throttling in submitting your requests.|6000, see [frequently asked questions on per-user limits](#FAQsUser).|
 
 > [!TIP]  
 > Throttling could occur when many requests are submitted and handled (processed/queued) around the same time and they're taking a long time to complete. To optimize throughput, use API or OData instead of SOAP, as they execute faster.  We'll also reduce the throughput for SOAP and [deprecate it](../upgrade/deprecated-features-platform.md#soap-endpoints-warning) in the future.
@@ -178,13 +178,19 @@ This section includes frequently asked questions on per-user limits. If you have
 
 These operational limits control "how fast" you can consume resources simultaneously or in short periods (per second/minute) and are not related to entitlement quotas that control "how much" you can consume resources in longer periods (per day/week/month). At present, we haven't set definite entitlement quotas, but will do so in the future.
 
-### Are limits applied differently for application users?
+### Are limits applied differently for application users (service principals)?
 
-No. These operational limits are applied to all users in the same way.
+No. These operational limits are applied to all types of users in the same way.
 
 ### Do more users mean more throughput per environment?
 
-Yes, you can increase throughput by distributing your workload across multiple users. The more users you have in your environment, the more resources you can simultaneously consume in it, as long as we can continuously scale our resources. If a lot of resources are consumed at the same time and we couldn't sufficiently scale our resources, you might experience delays/throttling in consuming your resources.
+Yes, you can increase throughput by distributing or spreading your workload across multiple users. The more users you have in your environment, the more resources you can consume in it at or around the same time, as long as we can continuously scale our resources. If a lot of resources are consumed at or around the same time and we couldn't sufficiently scale our resources, you might experience delays or throttling in consuming your resources.
+
+### Why are my OData or SOAP requests throttled when the current per-user speed (rate) limits are much higher than the previous per-environment speed (rate) limits?
+
+Your OData or SOAP requests will be throttled if they exceed the current per-user speed (rate) limits that are strictly enforced. They might not have been throttled in the past even if they had exceeded the previous per-environment speed (rate) limits, because those limits weren't strictly enforced. They served as recommendations or warnings for you to implement a retry logic with cool-off period that should already be in place. For more information, see [Working with API Rate Limits](../api-reference/v2.0/dynamics-rate-limits.md). 
+
+If your integration is using a single user or service principal to perform a large number of operations, or if it's an interactive client application that uses a single user or service principal to send all OData or SOAP requests to Business Central online, the per-user operational limits can be reached fairly quickly. You can help prevent this situation and maintain or increase your throughput by distributing or spreading your workload in smaller batches across multiple users or service principals.  A standard technique is to distribute your requests in a round-robin fashion or rotation through a list of users or service principals.
 
 ## See also
 

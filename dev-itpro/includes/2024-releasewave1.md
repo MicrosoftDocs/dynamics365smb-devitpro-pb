@@ -1,0 +1,1 @@
+> **APPLIES TO:** Business Central 2024 release wave 1 and later
