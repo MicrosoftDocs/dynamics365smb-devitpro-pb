@@ -11,11 +11,11 @@ author: jswymer
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2024 release wave 1
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 Release wave 1 (version 24) is the ninth major release that is fully AL-based. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15) marked the release in which C/AL was replaced by AL. The classic development environment, known as C/SIDE, was deprecated. From an application perspective, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is now extension-based only. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application is delivered as an AL extension. Also, application functionality that isn't related to the business logic has been moved into separate modules. These modules are combined into an extension known as the System Application. This change will influence how you do the upgrade compared to earlier releases.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 Release wave 1 (version 24) is the ninth major release that is fully AL-based. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15) marked the release in which C/AL was replaced by AL. The classic development environment, known as C/SIDE, was deprecated. From an application perspective, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is now extension-based only. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application is delivered as an AL extension. Also, application functionality that isn't related to the business logic has moved into separate modules. These modules are combined into an extension known as the System Application. This change influences how you do the upgrade compared to earlier releases.
 
 ## Upgrade path
 
-Depending on your current version, a direct upgrade to version 24 isn't always possible. You may have to first upgrade to an intermediate version. The following table describes the upgrade paths for supported versions:
+Depending on your current version, a direct upgrade to version 24 isn't always possible. You might have to first upgrade to an intermediate version. The following table describes the upgrade paths for supported versions:
 
 |  Source version  |  Path  |
 |------------|--------------|
@@ -36,7 +36,7 @@ There are several new and changed platform and application features available in
 
 ### Business Foundation extension
 
-Version 24 introduces the *business foundation* part 
+Version 24 introduces the *business foundation* extension. This extension includes objects and code related to number series, which were moved from the base application. The base application now has a dependency on the business foundation extension in addition to the system application. This change affects the upgrade process because the business foundation extension needs to be published and installed on the tenant before the base application.
 
 ## Deprecated features
 
