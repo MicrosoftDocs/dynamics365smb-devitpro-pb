@@ -3,8 +3,8 @@ title: "InstructionalText Property"
 description: "Sets the string used for instructions in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/08/2024
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -19,6 +19,7 @@ Sets the string used for instructions in the UI.
 ## Applies to
 -   Page
 -   Request Page
+-   Page Field
 -   Page Group
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -3,8 +3,8 @@ title: "Compiler Error AL0146"
 description: "The maximum number of array elements is {0}."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The maximum number of array elements is {0}. Actual number is {1}.
+
 
 ## Description
 The number of elements in an array must not exceed 1000000.  

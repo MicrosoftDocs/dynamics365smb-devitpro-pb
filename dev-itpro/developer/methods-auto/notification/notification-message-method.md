@@ -3,8 +3,8 @@ title: "Notification.Message([Text]) Method"
 description: "Specifies the content of the notification."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -37,7 +37,6 @@ Displays a text string in a message window.
 *[Optional] Message*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The message
-      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

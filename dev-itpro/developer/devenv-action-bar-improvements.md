@@ -15,6 +15,8 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1, we are
 
 Users who have already been using the modern action bar will notice a few additional optimizations in its newest version, such as a more compact representation of Search and Analysis Mode, and the introduction of Microsoft Copilot!
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1jUai]
+
 Users who have *not* been using the modern action bar with earlier releases of [!INCLUDE [prod_short](includes/prod_short.md)] will experience that the action bar looks different to what they were used to, and that some of their routines can need adjustment. The reason is that the modern action bar places some actions differently compared to the earlier action bar (now known as the **legacy action bar**) to give more prominence to important actions and reduce the numbers of clicks to access them.
 
 ## Split buttons enhance productivity

@@ -3,8 +3,8 @@ title: "XmlNamespaceManager.PushScope() Method"
 description: "Pushes a namespace scope onto the stack."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +21,6 @@ Pushes a namespace scope onto the stack.
 ```AL
  XmlNamespaceManager.PushScope()
 ```
-
 ## Parameters
 *XmlNamespaceManager*  
 &emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)  
