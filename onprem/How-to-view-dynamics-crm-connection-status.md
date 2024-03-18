@@ -7,7 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
-ms.prod: "dynamics-nav-2018"
 ---
 # How to: View the Dynamics 365 for Sales Connection Status
 When [!INCLUDE[navnow_md](includes/navnow_md.md)] is set up to integrate with [!INCLUDE[crm_md](includes/crm_md.md)], you can view the status of the connection to [!INCLUDE[crm_md](includes/crm_md.md)] to determine whether the connection is working properly, has failed, or is disabled. This can be helpful when troubleshooting problems. If a connection has failed, you can view the errors that caused the connection failure and access the connection setup to try to fix the problem.  
