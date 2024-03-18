@@ -19,7 +19,23 @@ A prompt guide is implemented by using a specific action area on `PromptDialog` 
 
 <!-- image -->
 
-For a complete example of how to implement a prompt guide, see [The PromptDialog page type](devenv-page-type-promptdialog.md).
+The syntax of the `PromptGuide` area is as illustrated in the following example. The PromptGuide is an area specific to the PromptDialog page type, and it's defined in the `actions` section of the page object. The `PromptGuide` area is defined by a list of predefined prompts that are shown to the user when the `PromptDialog` page is opened. The user can select a prompt from the list, and the selected prompt is then used as input to generate content.
+
+```al
+actions
+{
+    area(PromptGuide)
+    {
+        action(MyPromptAction)
+        {
+            Caption = 'How can I...?';
+            ToolTip = 'Ask Copilot for help with a specific task.';
+        }
+    }
+}
+```
+
+For a complete example of how to implement a prompt guide, see [The PromptDialog page type](devenv-page-type-promptdialog.md). For nudging users to use relevant Copilot built-in features, see [Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md).
 
 ## See also
 
