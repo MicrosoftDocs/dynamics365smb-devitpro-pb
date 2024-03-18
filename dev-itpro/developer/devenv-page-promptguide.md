@@ -17,6 +17,10 @@ The prompt guide is a new feature in [!INCLUDE [prod_short](includes/prod_short.
 
 A prompt guide is implemented by using a specific action area on `PromptDialog` pages, called `PromptGuide`. The `PromptGuide` area is then defined by a list of predefined prompts that are shown to the user when the `PromptDialog` page is opened. The user can select a prompt from the list, and the selected prompt is then used as input to generate content. You define these predefined prompts as questions or statements that the user can select from. Examples of predefined prompts could be "How can I...?" or "Show me the latest..." to inspire the user to ask for help or to get the latest information.
 
+<!-- image -->
+
+For a complete example of how to implement a prompt guide, see [The PromptDialog page type](devenv-page-type-promptdialog.md).
+
 ## See also
 
 [The PromptDialog page type](devenv-page-type-promptdialog.md)  

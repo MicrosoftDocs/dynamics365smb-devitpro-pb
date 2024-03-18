@@ -274,6 +274,10 @@ page 50100 MyCopilotPage
 }
 ```
 
+## Nudging users with prompt actions
+
+With the floating action bar, you can create prompt actions to promote AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. A prompt action is a standard action that is rendered in a floating action bar on your pages, and it nudges users to use relevant Copilot built-in features. For more information, see [Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md).
+
 ## See also
 
 [Page types and layouts](devenv-page-types-and-layouts.md)  
