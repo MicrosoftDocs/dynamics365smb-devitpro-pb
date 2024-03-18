@@ -18,7 +18,7 @@ A primary use of the page scripting tool is testing business processes and scena
 
 ## What is captured?
 
-The page scripting tool captures both the user interactions and the resulting actions done by the application. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool, so it can't automate, for example, control add-ins such as charts, embedded Power BI or Power Apps, or anything outside of the Business Central web client experience.
+The page scripting tool captures both the user interactions with the UI and the resulting actions done by the application by its underlying source code. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool, so it can't automate, for example, control add-ins such as charts, embedded Power BI or Power Apps, or anything outside of the Business Central web client experience.
 
 ## Prerequisites
 
@@ -29,7 +29,16 @@ The page scripting tool captures both the user interactions and the resulting ac
 
 You can start the page scripting tool from any page. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon > **Page Scripting**.
 
-The **Page Scripting** pane opens on the right side. Now you ready to start a new recording or play an existing recording.
+The **Page Scripting** pane opens on the right side, as illustrated in the following figure:
+
+![new recording](media/new-recording-icon.svg) 
+
+ Now you ready to start a new recording or play an existing recording.
+
+
+
+
+
 
 <!--
 1. In the **Page Scripting** pane, select the **Start new** button in the pane or the **New recording** icon in the control bar at the top.
