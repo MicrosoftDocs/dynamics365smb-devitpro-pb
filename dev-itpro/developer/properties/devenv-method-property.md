@@ -3,8 +3,8 @@ title: "Method Property"
 description: "Sets either a date method for retrieving the year, month, or day from a date field or a totals method for performing calculations on field values."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

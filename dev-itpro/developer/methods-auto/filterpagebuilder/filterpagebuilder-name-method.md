@@ -3,8 +3,8 @@ title: "FilterPageBuilder.Name(Integer) Method"
 description: "Gets the name of a table filter control that is included on a filter page based on an index number that is assigned to the filter control."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

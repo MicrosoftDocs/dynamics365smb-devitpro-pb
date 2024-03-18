@@ -3,8 +3,8 @@ title: "System.WorkDate([Date]) Method"
 description: "Gets and sets the work date for the current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

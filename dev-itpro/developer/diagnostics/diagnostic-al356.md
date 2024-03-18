@@ -3,8 +3,8 @@ title: "Compiler Error AL0356"
 description: "Cannot modify the {0} '{1}' multiple times."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Cannot modify the {0} '{1}' multiple times.
+
 
 ## Description
 The element cannot be modified multiple times.  
