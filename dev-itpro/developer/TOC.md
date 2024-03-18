@@ -933,6 +933,7 @@
 #### [AA0231](analyzers/codecop-aa0231.md)
 #### [AA0232](analyzers/codecop-aa0232.md)
 #### [AA0233](analyzers/codecop-aa0233.md)
+#### [AA0234](analyzers/codecop-aa0234.md)
 #### [AA0235](analyzers/codecop-aa0235.md)
 #### [AA0237](analyzers/codecop-aa0237.md)
 #### [AA0240](analyzers/codecop-aa0240.md)
@@ -1065,6 +1066,8 @@
 #### [AS0122](analyzers/appsourcecop-as0122.md)
 #### [AS0123](analyzers/appsourcecop-as0123.md)
 #### [AS0124](analyzers/appsourcecop-as0124.md)
+#### [AS0125](analyzers/appsourcecop-as0125.md)
+#### [AS0126](analyzers/appsourcecop-as0126.md)
 ### PerTenantExtensionCop Analyzer Rules
 #### [PTE0001](analyzers/pertenantextensioncop-pte0001.md)
 #### [PTE0002](analyzers/pertenantextensioncop-pte0002.md)
@@ -1087,6 +1090,8 @@
 #### [PTE0019](analyzers/pertenantextensioncop-pte0019.md)
 #### [PTE0020](analyzers/pertenantextensioncop-pte0020.md)
 #### [PTE0021](analyzers/pertenantextensioncop-pte0021.md)
+#### [PTE0022](analyzers/pertenantextensioncop-pte0022.md)
+#### [PTE0023](analyzers/pertenantextensioncop-pte0023.md)
 ### UICop Analyzer Rules
 #### [AW0001](analyzers/uicop-aw0001.md)
 #### [AW0002](analyzers/uicop-aw0002.md)
