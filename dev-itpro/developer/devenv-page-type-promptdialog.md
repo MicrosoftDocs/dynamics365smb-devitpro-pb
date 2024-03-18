@@ -59,15 +59,266 @@ The following example describes a page, which is a PromptDialog page, set with t
 
 Use the `IsPreview` property to indicate to your customers that you're using the feature in preview, and that the feature might change in the future as you gather feedback. The `IsPreview` property adds a specific note in the UI to indicate that the feature is in preview. It's by default set to `false`. 
 
-The page calls the `RunGeneration` procedure, which *you must implement yourself*. This is where you call the copilot API, and get the results back. The `RunGeneration` method is called when the user clicks the **Generate** action. The **Generate** action is a system action that can be used on this page type and it's used to trigger the copilot interaction. The **Generate** action is also used to regenerate the suggestion, if the user wants to change the input to copilot.
+The page is divided into two main areas: `Prompt` and `Content`. 
 
-For an example on how to implement the `RunGeneration` procedure, see [BCTech samples AzureOpenAI](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Basic_ItemSubstitution/PromptDialog/ItemSubstAIProposal.Page.al#L111). 
+In the `Prompt` area, the field `ProjectDescriptionField` is bound to the variable `InputProjectDescription` and is a multiline text field where the user can describe the project they want to create with Copilot.
 
-For an example on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
+The `Content` area contains fields that display the job's short description, full details, and the customer's name. The `CustomerNameField` has two triggers: `OnAssistEdit` and `OnValidate`. The `OnAssistEdit` trigger is used to select a customer from the existing customer records. The `OnValidate` trigger is used to validate the customer name and number. There's also a part named `ProposalDetails` which is used to display the structure of the job proposal.
 
+The `actions` section defines actions that the user can perform on this page. There are several actions defined under the `PromptGuide` area, such as `OrganizeCampaign`, `FurnishOffice`, `SetUpConferenceRooms`, and `OrganizeWorkshop`. Each action sets the `InputProjectDescription` to a predefined text. The `SystemActions` area contains system actions like `Generate`, `OK`, `Cancel`, and `Regenerate`. These actions are used to generate the project structure, save the project, discard the project, and regenerate the project respectively.
 
-<!-- solsen - remember to modify and compile the following example before release -->
+The `OnQueryClosePage` trigger is used to save the job proposal when the page is closed with the `OK` action.
 
+The `RunGeneration` procedure is used to generate the job proposal based on the user's input. It uses the `Generate Job Proposal` codeunit to generate the proposal and updates the fields in the `Content` area with the generated data.
+
+The `FindCustomerNameAndNumber` procedure finds a customer based on the input customer name. It sets a filter on the `Search Name` field of the `Customer` record and tries to find a customer that matches the input name. If a customer is found, it updates the `CustomerName` and `CustomerNo` variables with the customer's name and number.
+
+```al
+page 54320 "Copilot Job Proposal"
+{
+    PageType = PromptDialog;
+    Extensible = false;
+    Caption = 'Draft new project with Copilot';
+    DataCaptionExpression = InputProjectDescription;
+    IsPreview = true;
+
+    layout
+    {
+        // This is the input section that accepts user input to generate content
+
+        area(Prompt) 
+        {
+            field(ProjectDescriptionField; InputProjectDescription)
+            {
+                ApplicationArea = All;
+                ShowCaption = false;
+                MultiLine = true;
+                InstructionalText = 'Describe the project you want to create with Copilot';
+            }
+        }
+        
+        // This is the output section that displays the generated content
+
+        area(Content) 
+        {
+            field("Job Short Description"; JobDescription)
+            {
+                ApplicationArea = All;
+                Caption = 'Project Short Description';
+            }
+            field("Job Full Details"; JobFullDescription)
+            {
+                ApplicationArea = All;
+                MultiLine = true;
+                Caption = 'Details';
+            }
+            field(CustomerNameField; CustomerName)
+            {
+                ApplicationArea = All;
+                Caption = 'Customer Name';
+                ShowMandatory = true;
+
+                trigger OnAssistEdit()
+                var
+                    Customer: Record Customer;
+                begin
+                    if not Customer.SelectCustomer(Customer) then
+                        Clear(Customer);
+
+                    CustomerName := Customer.Name;
+                    CustomerNo := Customer."No.";
+                end;
+
+                trigger OnValidate()
+                begin
+                    FindCustomerNameAndNumber(CustomerName, false);
+                end;
+            }
+            part(ProposalDetails; "Copilot Job Proposal Subpart")
+            {
+                Caption = 'Job structure';
+                ShowFilter = false;
+                ApplicationArea = All;
+                Editable = true;
+                Enabled = true;
+            }
+        }
+    }
+    actions
+    {
+        // This is the prompt guide area which contains the predefined prompts that the user can select to use as input to generate content
+
+        area(PromptGuide)
+        {
+            action(OrganizeCampaign)
+            {
+                ApplicationArea = All;
+                Caption = 'Create a campaign';
+
+                trigger OnAction()
+                begin
+                    InputProjectDescription := 'Campaign on [social media] for [Customer] to [promote education].';
+                end;
+            }
+
+            // Group of actions
+
+            group(Furnishing)
+            {
+                action(FurnishOffice)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Furnish an office';
+
+                    trigger OnAction()
+                    begin
+                        InputProjectDescription := '[Customer] needs to furnish [office] for [4 people].';
+                    end;
+                }
+
+                action(SetUpConferenceRooms)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Set up work areas';
+
+                    trigger OnAction()
+                    begin
+                        InputProjectDescription := 'Design and set up [work areas] for [Customer].';
+                    end;
+                }
+            }
+
+            action(OrganizeWorkshop)
+            {
+                ApplicationArea = All;
+                Caption = 'Organize a workshop';
+
+                trigger OnAction()
+                begin
+                    InputProjectDescription := 'Organize a [workshop] for [Customer] about [sustainability].';
+                end;
+            }
+
+        }
+
+        // This is the system actions area which contains the options for generating and accepting generated content
+
+        area(SystemActions)
+        {
+            systemaction(Generate)
+            {
+                Caption = 'Generate';
+                ToolTip = 'Generate project structure with Dynamics 365 Copilot.';
+
+                trigger OnAction()
+                begin
+                    RunGeneration();
+                end;
+            }
+            systemaction(OK)
+            {
+                Caption = 'Keep it';
+                ToolTip = 'Save the Project proposed by Dynamics 365 Copilot.';
+            }
+            systemaction(Cancel)
+            {
+                Caption = 'Discard it';
+                ToolTip = 'Discard the Project proposed by Dynamics 365 Copilot.';
+            }
+            systemaction(Regenerate)
+            {
+                Caption = 'Regenerate';
+                ToolTip = 'Regenerate the Project proposed by Dynamics 365 Copilot.';
+
+                trigger OnAction()
+                begin
+                    RunGeneration();
+                end;
+            }
+        }
+    }
+
+    trigger OnQueryClosePage(CloseAction: Action): Boolean
+    var
+        SaveCopilotJobProposal: Codeunit "Save Copilot Job Proposal";
+    begin
+        if CloseAction = CloseAction::OK then
+            SaveCopilotJobProposal.Save(CustomerNo, CopilotJobProposal);
+    end;
+
+    // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. 
+
+    local procedure RunGeneration()
+    var
+        GenJobProposal: Codeunit "Generate Job Proposal";
+        InStr: InStream;
+        ProgressDialog: Dialog;
+        Attempts: Integer;
+    begin
+        ProgressDialog.Open(GeneratingTextDialogTxt);
+        GenJobProposal.SetUserPrompt(InputProjectDescription);
+
+        CopilotJobProposal.Reset();
+        CopilotJobProposal.DeleteAll();
+
+        for Attempts := 0 to 3 do
+            if GenJobProposal.Run() then begin
+                GenJobProposal.GetResult(CopilotJobProposal);
+
+                if not CopilotJobProposal.IsEmpty() then begin
+                    CopilotJobProposal.FindFirst();
+
+                    JobDescription := CopilotJobProposal."Job Short Description";
+                    CopilotJobProposal.CalcFields("Job Full Description");
+                    CopilotJobProposal."Job Full Description".CreateInStream(InStr);
+                    InStr.ReadText(JobFullDescription);
+
+                    FindCustomerNameAndNumber(CopilotJobProposal."Job Customer Name", true);
+
+                    CurrPage.ProposalDetails.Page.Load(CopilotJobProposal);
+                    exit;
+                end;
+            end;
+
+        if GetLastErrorText() = '' then
+            Error(SomethingWentWrongErr)
+        else
+            Error(SomethingWentWrongWithLatestErr, GetLastErrorText());
+    end;
+
+    local procedure FindCustomerNameAndNumber(InputCustomerName: Text; Silent: Boolean)
+    var
+        Customer: Record Customer;
+    begin
+        if InputCustomerName <> '' then begin
+            Customer.SetFilter("Search Name", '%1', '*' + UpperCase(InputCustomerName) + '*');
+
+            if not Customer.FindFirst() then
+                if not Silent then
+                    Error(CustomerDoesNotExistErr);
+        end;
+
+        CustomerName := Customer.Name;
+        CustomerNo := Customer."No.";
+    end;
+
+    var
+        GeneratingTextDialogTxt: Label 'Generating with Copilot...';
+        SomethingWentWrongErr: Label 'Something went wrong. Please try again.';
+        SomethingWentWrongWithLatestErr: Label 'Something went wrong. Please try again. The latest error is: %1';
+        CustomerDoesNotExistErr: Label 'Customer does not exist';
+        CustomerNo: Code[20];
+        CopilotJobProposal: Record "Copilot Job Proposal" temporary;
+        JobFullDescription: Text;
+        InputProjectDescription: Text;
+        JobDescription: Text[100];
+        CustomerName: Text[100];
+}
+```
+
+For more information on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
+
+<!--
 ```al
 page 50100 MyCopilotPage
 {
@@ -273,7 +524,7 @@ page 50100 MyCopilotPage
     end;
 }
 ```
-
+-->
 ## Nudging users with prompt actions
 
 With the floating action bar, you can create prompt actions to promote AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. A prompt action is a standard action that is rendered in a floating action bar on your pages, and it nudges users to use relevant Copilot built-in features. For more information, see [Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md).
