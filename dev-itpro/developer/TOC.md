@@ -3242,6 +3242,8 @@
 #### [OnAfterAfterLookup Trigger](triggers-auto/pagefieldextension/devenv-onafterafterlookup-pagefieldextension-trigger.md)
 ### Action Triggers
 #### [OnAction Trigger](triggers-auto/action/devenv-onaction-action-trigger.md)
+### File Upload Action Triggers
+#### [OnAction Trigger](triggers-auto/fileuploadaction/devenv-onaction-fileuploadaction-trigger.md)
 ### Action Extension Triggers
 #### [OnBeforeAction Trigger](triggers-auto/actionextension/devenv-onbeforeaction-actionextension-trigger.md)
 #### [OnAfterAction Trigger](triggers-auto/actionextension/devenv-onafteraction-actionextension-trigger.md)
