@@ -3,8 +3,8 @@ title: "CodeCop Warning AA0225"
 description: "You must specify a caption in the Caption property for Fields that exist on page objects."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

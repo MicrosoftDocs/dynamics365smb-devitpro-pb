@@ -3,8 +3,8 @@ title: "Record.SetAutoCalcFields([Any,...]) Method"
 description: "Sets the FlowFields that you specify to be automatically calculated when the record is retrieved from the database."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

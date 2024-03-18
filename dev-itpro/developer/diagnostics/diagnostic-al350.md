@@ -3,8 +3,8 @@ title: "Compiler Error AL0350"
 description: "The column '{0}' cannot be used multiple times when defining the order of the resulting dataset."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The column '{0}' cannot be used multiple times when defining the order of the resulting dataset.
+
 
 ## Description
 A column cannot be used multiple times when defining the order of the resulting dataset. It can only be selected once the order of the resulting dataset of the query is defined. The selected duplicate columns must be deleted.  
