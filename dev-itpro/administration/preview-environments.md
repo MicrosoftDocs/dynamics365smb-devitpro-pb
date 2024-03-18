@@ -31,7 +31,7 @@ Once you have the preview, start using it:
 
     In rare cases, if you discover any changes required for your per-tenant extension to become compatible with the next release, apply the changes to your app, test it again on a sandbox environment running on a preview version. Then, if tests complete successfully, upload the app into your production environment, setting the **Deploy to** field to *Next major version*. This way, the compatible version of your app will be used when you schedule the upgrade of your production environment to the new major update once it becomes available.
 
-3. Test the quality. If you run into issues related to the preview, please provide [feedback on Collaborate](#provide-feedback-on-the-preview).
+3. Test the quality. If you run into issues related to the preview, please provide feedback as described in the [next section](#provide-feedback-on-the-preview).
 
 Finally, as always, if you have ideas for features you would like to see in future releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
 
@@ -39,8 +39,8 @@ Finally, as always, if you have ideas for features you would like to see in futu
 
 We need your feedback on the preview! Let us know about your experiences with the new version. You can provide feedback on Viva Engage (formerly Yammer) by following these steps:
 
-1. Browse to [https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=177710096384](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=177710096384). 
-2. If you haven't joined the group yet, select **Join group**.
+1. Go to [Business Central Public preview group](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=177710096384) on Viva Engage.
+2. If you haven't joined the group yet, select **Join group**. [Learn more about Business Central partner community on Viva Engage](../join-viva-engage.md).
 3. Share your thoughts, ask questions, or seek clarifications on any aspect of the preview release. Just add your comment or question in the **Share something with this group** box and select **Post**. Or feel free to respond to another post.
 4. If you encounter any issues or glitches during your testing, please help us by posting them as bugs. Just include the hashtag `#Bug`in your post along with the following information, if you can:
 
@@ -56,10 +56,10 @@ If you run your tests on a preview environment one month before the announced ma
 
 We expect to update the preview version only if we discover critical issues before the major update is generally available for production environments. Apart from these potential fixes, we don't expect any further changes to the product between the preview and the official release. You can start your testing and learning activities immediately, without waiting for the official release.
 
-> [!NOTE] 
+> [!NOTE]
 > You will be able to test the update on a copy of your production data in a sandbox environment when we release the new update in production in April or October, respectively. When the official release becomes available, you can continue your tests on that version. You will no longer be able to create new preview sandboxes.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > The preview version as well as all sandbox environments that are based on it will be removed 30 days after the official release becomes available. 
 
 
