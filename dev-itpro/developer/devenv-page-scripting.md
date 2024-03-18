@@ -29,11 +29,11 @@ The page scripting tool captures both the user interactions with the UI and the 
 
 You can start the page scripting tool from any page. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon > **Page Scripting**.
 
-The **Page Scripting** pane opens on the right side, as illustrated in the following figure:
+The **Page Scripting** pane opens on the right side as illustrated in the following figure:
 
-![new recording](media/new-recording-icon.svg) 
+:::image type="content" source="media/page-scripting.svg" alt-text="Shows the page scriptiong pane in Business Central.":::
 
- Now you ready to start a new recording or play an existing recording.
+ Now you ready to start a new recording or play an existing recording. 
 
 
 
