@@ -27,11 +27,11 @@ The page scripting tool captures both the user interactions with the UI and the 
 
 ## Start the page scripting tool
 
-You can start the page scripting tool from any page. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon > **Page Scripting**.
+You can start the page scripting tool from the role centra or any page. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon > **Page Scripting**.
 
-The **Page Scripting** pane opens on the right side as illustrated in the following figure:
+The **Page Scripting** pane opens on the right side, as illustrated in the following figure:
 
-:::image type="content" source="media/page-scripting.svg" alt-text="Shows the page scriptiong pane in Business Central.":::
+:::image type="content" source="media/page-scripting.svg" alt-text="Shows the page scripting pane in Business Central.":::
 
  Now you ready to start a new recording or play an existing recording. 
 
@@ -75,9 +75,9 @@ The sections that follow explain other capabilities of the page scripting tool f
 
    As you interact with the application, your interactions actions and the resulting actions done by the application itself are added in sequence as steps in the **Page Scripting** pane.
 
-1. At anytime during recording, you can pause, resume, or delete the last recorded step by
+1. At any time during recording, you can pause, resume, or delete the last recorded step:
 
-   - To pause the recording, select the **Stop** button in the control bar of .
+   - To pause the recording, select the **Stop** button in the control bar.
 
       While paused, you can ...
 
@@ -94,7 +94,7 @@ The sections that follow explain other capabilities of the page scripting tool f
 
 ## Options for capturing steps
 
-During recording, you can manually insert special steps by right clicking a page control and select an appropriate option. These are explained below.
+During recording, you can manually insert special steps by right clicking a page control and select an appropriate option. These are explained in the following sections.
 
 ### Copy to and paste from clipboard
 
@@ -102,7 +102,7 @@ The Page Scripting tool comes with its own clipboard that you can use to copy fi
 
 ### Paste session info
 
-When recording you have access to session info, such as the user ID. This allows you to, e.g., set filters based the current user. To insert the user id, right select a control in the page, and select Paste > Session Info > User ID. See image above for example.
+When recording you have access to session info, such as the user ID. This allows you to, for example, set filters based the current user. To insert the user ID, right select a control in the page, and select Paste > Session Info > User ID. See image above for example.
 
 ### Validate a given outcome
 
