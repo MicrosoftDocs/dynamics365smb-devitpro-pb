@@ -61,15 +61,17 @@ Use the `IsPreview` property to indicate to your customers that you're using the
 
 The page is divided into two main areas: `Prompt` and `Content`. 
 
-In the `Prompt` area, the field `ProjectDescriptionField` is bound to the variable `InputProjectDescription` and is a multiline text field where the user can describe the project they want to create with Copilot.
+- In the `Prompt` area, the field `ProjectDescriptionField` is bound to the variable `InputProjectDescription` and is a multiline text field where the user can describe the project they want to create with Copilot.
 
-The `Content` area contains fields that display the job's short description, full details, and the customer's name. The `CustomerNameField` has two triggers: `OnAssistEdit` and `OnValidate`. The `OnAssistEdit` trigger is used to select a customer from the existing customer records. The `OnValidate` trigger is used to validate the customer name and number. There's also a part named `ProposalDetails` which is used to display the structure of the job proposal.
+- The `Content` area contains fields that display the job's short description, full details, and the customer's name. The `CustomerNameField` has two triggers: `OnAssistEdit` and `OnValidate`. The `OnAssistEdit` trigger is used to select a customer from the existing customer records. The `OnValidate` trigger is used to validate the customer name and number. There's also a part named `ProposalDetails` which is used to display the structure of the job proposal.
 
-The `actions` section defines actions that the user can perform on this page. There are several actions defined under the `PromptGuide` area, such as `OrganizeCampaign`, `FurnishOffice`, `SetUpConferenceRooms`, and `OrganizeWorkshop`. Each action sets the `InputProjectDescription` to a predefined text. The `SystemActions` area contains system actions like `Generate`, `OK`, `Cancel`, and `Regenerate`. These actions are used to generate the project structure, save the project, discard the project, and regenerate the project respectively.
+The `actions` section defines actions that the user can perform on this page. There are several actions defined under the `PromptGuide` area, such as `OrganizeCampaign`, `FurnishOffice`, `SetUpConferenceRooms`, and `OrganizeWorkshop`. Each action sets the `InputProjectDescription` to a predefined text. 
 
-The `OnQueryClosePage` trigger is used to save the job proposal when the page is closed with the `OK` action.
+The `SystemActions` area contains system actions like `Generate`, `OK`, `Cancel`, and `Regenerate`. These actions generate the project structure, save the project, discard the project, and regenerate the project respectively.
 
-The `RunGeneration` procedure is used to generate the job proposal based on the user's input. It uses the `Generate Job Proposal` codeunit to generate the proposal and updates the fields in the `Content` area with the generated data.
+The `OnQueryClosePage` trigger saves the job proposal when the page is closed with the `OK` action.
+
+The `RunGeneration` procedure generates the job proposal based on the user's input. It uses the `Generate Job Proposal` codeunit to generate the proposal and updates the fields in the `Content` area with the generated data.
 
 The `FindCustomerNameAndNumber` procedure finds a customer based on the input customer name. It sets a filter on the `Search Name` field of the `Customer` record and tries to find a customer that matches the input name. If a customer is found, it updates the `CustomerName` and `CustomerNo` variables with the customer's name and number.
 
