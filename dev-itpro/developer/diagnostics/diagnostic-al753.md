@@ -3,8 +3,8 @@ title: "Compiler Warning (Future Error) AL0753"
 description: "The name of a dataitem cannot be empty because it can cause runtime errors."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/05/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The name of a dataitem cannot be empty because it can cause runtime errors.
+
 
 > [!IMPORTANT]
 > This warning will become an error with Business Central 2024 release wave 1.  

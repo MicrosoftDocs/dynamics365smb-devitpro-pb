@@ -1,10 +1,10 @@
 ---
 title: "Compiler Warning AL0717"
-description: "The property 'TableRelation' or the property 'CalcFormula' is required for the field '{0}' in {1} '{2}' because the field's property 'FieldClass' is set to 'FlowField'."
+description: "The property 'CalcFormula' is required for the field '{0}' in {1} '{2}' because the field's property 'FieldClass' is set to 'FlowField'."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/01/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -15,7 +15,8 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The property 'TableRelation' or the property 'CalcFormula' is required for the field '{0}' in {1} '{2}' because the field's property 'FieldClass' is set to 'FlowField'.
+The property 'CalcFormula' is required for the field '{0}' in {1} '{2}' because the field's property 'FieldClass' is set to 'FlowField'.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

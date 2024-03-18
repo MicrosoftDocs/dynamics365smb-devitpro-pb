@@ -1,9 +1,9 @@
 ---
-title: "Sign an app package file"
-description: "How do you sign an extension developed in the AL language."
+title: Sign an app package file
+description: This article explains how to sign an AL app package file with a pfx file or with Azure Key Vault.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/08/2022
+ms.date: 03/12/2024
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -16,31 +16,33 @@ Code signing is a common practice for many applications. It's the process of dig
 > [!NOTE]  
 > If you want to publish an unsigned extension package in your on-premise environment, you need to explicitly state it by using the - *SkipVerification* parameter on the `Publish-NAVApp` cmdlet. An extension without a valid signature won't be published on AppSource.
 
-How you sign an app package file depends on when your certificate was issued. On June 1st 2023 the industry standards for storing code signing certificates changed. Certificate Authorities now require code signing certificates to be stored on Hardware Security Modules (HSM) or Hardware Tokens that are certified with FIPS 140-2 Level 2 or equivalent. Code signing certificates issued after this date will therefore only be issued via physical USB tokens, into on-premises HSM services or cloud HSM services such as Azure Key Vault.
+How you sign an app package file depends on when your certificate was issued. On June 1, 2023 the industry standards for storing code signing certificates changed. Certificate Authorities now require code signing certificates to be stored on Hardware Security Modules (HSM) or Hardware Tokens that are certified with FIPS 140-2 Level 2 or equivalent. Code signing certificates issued after this date are therefore only issued via physical USB tokens, into on-premises HSM services, or cloud HSM services such as Azure Key Vault.
 
-If your certificate was issued after June 1st 2023, please follow the guide on [Sign an app package file with Azure Key Vault](#sign-an-app-package-file-with-azure-key-vault). If your certificate was issue prior to this date, please follow the guide on [Sign an app package file with a pfx file](#sign-an-app-package-file-with-a-pfx-file) or upload your certificate to an Azure Key Vault and follow the guide on [Sign an app package file with Azure Key Vault](#sign-an-app-package-file-with-azure-key-vault).
+If your certificate was issued after June 1, 2023, follow the guide on [Sign an app package file with Azure Key Vault](#sign-an-app-package-file-with-azure-key-vault). If your certificate was issues before this date, follow the guide on [Sign an app package file with a pfx file](#sign-an-app-package-file-with-a-pfx-file) or upload your certificate to an Azure Key Vault and follow the guide on [Sign an app package file with Azure Key Vault](#sign-an-app-package-file-with-azure-key-vault).
+
 
 ## Sign an app package file with Azure Key Vault
 
 ### Prerequisites
 
-Before signing your app file please follow the steps below to ensure your key vault is set up for code signing.
+Before signing your app file, follow the next steps to ensure your key vault is set up for code signing.
 
-1. **(Optional) Setting up a service principal:** If the signing operation should be done by a Service Principal please [create a Service Principal in Azure](https://learn.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal).
-2. **Azure Key Vault setup**: [Create an Azure Key Vault](https://learn.microsoft.com/azure/key-vault/general/quick-create-portal) for your code signing certificate if you don't already have one  
-3. **Configure access policies:** [Configure an Azure Key Vault access policy](https://learn.microsoft.com/azure/key-vault/general/assign-access-policy?tabs=azure-portal) for the account that will be used for signing. At minimum, the account needs the following permissions:
-    * Cryptographic Operations: Sign
-    * Certificate Management Operations: Get
-![Shows the access policies page in Azure Key Vault. The access policies are set up with Cryptographic Operations: Sign and Certificate Management Operations: Get permissions.](media/keyvaultaccesspolicies.png)
+1. **(Optional) Setting up a service principal:** If the signing operation should be done by a Service Principal, [create a Service Principal in Azure](/azure/active-directory/develop/howto-create-service-principal-portal).
+2. **Azure Key Vault setup**: [Create an Azure Key Vault](/azure/key-vault/general/quick-create-portal) for your code signing certificate if you don't already have one  
+3. **Configure access policies:** [Configure an Azure Key Vault access policy](/azure/key-vault/general/assign-access-policy?tabs=azure-portal) for the account that will be used for signing. At minimum, the account needs the following permissions:
+    - Cryptographic Operations: Sign
+    - Certificate Management Operations: Get
 
-4. **Upload your certificate to the Key Vault:** The process on getting your certificate into your Azure Key Vault will depend on which Certificate Authority you use. Please consult with your certificate authority on how you can get your codesigning certificate into an Azure Key Vault. If you are getting certificates from DigiCert or GlobalSign you may be able to use Azure Key Vaults Certificate Auhority integration to [generate certificates directly from Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/certificates/how-to-integrate-certificate-authority).
+    :::image type="content" source="media/keyvaultaccesspolicies.png" alt-text="Shows the access policies page in Azure Key Vault.":::
+
+4. **Upload your certificate to the Key Vault:** The process on getting your certificate into your Azure Key Vault depends on which Certificate Authority you use. Consult with your certificate authority on how you can get your codesigning certificate into an Azure Key Vault. If you're getting certificates from DigiCert or GlobalSign, you might be able to use Azure Key Vaults Certificate Authority integration to [generate certificates directly from Azure Key Vault](/azure/key-vault/certificates/how-to-integrate-certificate-authority).
 
 > [!NOTE]  
 > Only the Premium SKU of Azure Key Vault supports Hardware Security Modules. If your certificate is issued after June 1st 2023 you will likely need the Premium SKU Azure Key Vault.  
 
 ### Steps for signing your .app file with Azure Key Vault
 
-1. [Install .NET SDK](https://learn.microsoft.com/dotnet/core/install/windows)
+1. [Install .NET SDK](/dotnet/core/install/windows)
 2. Install the .NET Signing Tool by running the following command:
 
 ```powershell
@@ -75,7 +77,7 @@ sign code azure-key-vault --azure-key-vault-url "https://MyKeyvault.vault.azure.
                           "C:/Path/To/File(s)"
 ```
 
-For help using the signing tool:
+For help with using the signing tool:
 
 ```powershell
 sign code azure-key-vault --help
@@ -83,7 +85,7 @@ sign code azure-key-vault --help
 
 ## Sign an app package file with a pfx file
 
-The signing of an app package file must be performed on a computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed. If you're running [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on Docker for your development environment, that environment will meet this requirement. You must also have the certificate that will be used for signing on the computer. The certificate must include code signing as the intended purpose. It's recommended that you use a certificate purchased from a third-party certificate authority.
+The signing of an app package file must be performed on a computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed. If you're running [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on Docker for your development environment, that environment meets this requirement. You must also have the certificate that is used for signing on the computer. The certificate must include code signing as the intended purpose. It's recommended that you use a certificate purchased from a third-party certificate authority.
 
 ![Shows a list of certificates in the Windows Certificate Manager Tool.](media/certificates.png)
 
@@ -124,17 +126,17 @@ Makecert –sk myNewKey –n “CN=Prosewaretest” –r –ss my
 
 ## Code signing for AppSource
 
-If you publish the extension as an app on AppSource, the app package file must be signed using a certificate purchased from a Certification Authority (CA); a self-signed certificate will not be accepted by the technical validation. The CA must have its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to DigiCert and Symantec, see the image below. You don't have to use an EV Code Signing certificate, standard code signing certificates can be used for signing your extensions.
+If you publish the extension as an app on AppSource, the app package file must be signed using a certificate purchased from a Certification Authority (CA); a self-signed certificate won't be accepted by the technical validation. The CA must have its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to DigiCert and Symantec, see the image below. You don't have to use an EV Code Signing certificate, standard code signing certificates can be used for signing your extensions.
 
-You can check the validity of your code signing by transferring your signed app file to a Windows device which did not sign it. Right-click on the file and go to Properties, Digital Signatures, and then Details. In this pop-up, choose View Certificate and finally go to Certification Path. It should look similar to the below example (though it's a Microsoft binary file):
+You can check the validity of your code signing by transferring your signed app file to a Windows device, which didn't sign it. Right-click on the file and go to Properties, Digital Signatures, and then Details. In this pop-up, choose View Certificate and finally go to Certification Path. It should look similar to the below example (though it's a Microsoft binary file):
 
-![Shows the Digital Signitures window for a signed file with a valid root certificate.](media/CheckRootCA.png)
+![Shows the Digital Signatures window for a signed file with a valid root certificate.](media/CheckRootCA.png)
 
-If the Certification Path has only one entry then the file isn't signed correctly and will be rejected by AppSource technical validation.
+If the Certification Path has only one entry, then the file isn't signed correctly and is rejected by AppSource technical validation.
 
-## See Also
+## See also
 
-[Get Started with AL](devenv-get-started.md)  
-[Keyboard Shortcuts](devenv-keyboard-shortcuts.md)
-[AL Development Environment](devenv-reference-overview.md)
+[Get started with AL](devenv-get-started.md)  
+[Keyboard shortcuts](devenv-keyboard-shortcuts.md)
+[AL development environment](devenv-reference-overview.md)
 [Questions about code-singing validation](devenv-checklist-submission-faq.md#questions-about-code-signing-validation)

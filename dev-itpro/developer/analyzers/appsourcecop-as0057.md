@@ -3,8 +3,8 @@ title: "AppSourceCop Hidden AS0057"
 description: "Translations must be provided for all the locales in which the application will be available."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

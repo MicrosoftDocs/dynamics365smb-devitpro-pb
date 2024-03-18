@@ -4,9 +4,8 @@ description: This article explains how to run the Cloud Migration Setup assisted
 author: jswymer
 ms.author: jswymer #Required; your Microsoft alias; optional team alias.
 ms.reviewer: jswymer #Required; Microsoft alias of content publishing team member.
-
 ms.topic: how-to 
-ms.date: 07/05/2023
+ms.date: 03/14/2024
 ms.custom: bap-template
 ---
 # Run cloud migration setup
@@ -64,31 +63,18 @@ Once the setup guide is complete and data migration is activated, the initial da
 
    For more information about this step, see [Define your SQL database connection](#define-sql-database-connection-and-integration-runtime).
 
-   Select **Next** when done. Once you choose **Next**, a new pipeline is created in the Azure service. When completed successfully, the **Select companies to migrate** page or **GP Company Migration Configuration** page appears.
+   Select **Next** when done. Once you choose **Next**, a new pipeline is created in the Azure service. When completed successfully, the **Select companies to migrate** page appears.
 
     <!-- bc 1. On the **Select companies to migrate** page, select one or more companies from the list or switch on **All Companies**, then select **Next**.-->
 
-1. The next step is to select the companies that you want to migrate. This step is different depnding on your on-premises product:
+1. On the **Select companies to migrate** page, select one or more companies to migrate or switch on **All Companies**, then select **Next**.
 
-   - For Business Central on-premises, the **Select companies to migrate** page appears. Select one or more companies from the list or switch on **All Companies**, then select **Next**.
-   - For Dynamics GP, the **GP Company Migration Configuration** page appears. This page allows to make global settings for the companies selected to migrate. For details about using this page, see [Configure Dynamics GP company data migration](migrate-dynamics-gp.md).
-
-   No matter which on-premsies product you're coming from, you can always return the page to add more companies.
+   You can always return the page to add more companies.
 
 1. Select **Finish** to complete the cloud migration setup.
 
    If you want to open **Cloud Migration Management**, where you can run the migration, select **Yes**.
 
-1. If you're migrating from Dynamics GP to the Austarlian version of Business Central online, sign in to each on-premises company that you intend to migrate and make the following changes:
-
-    * Transactions
-    
-      With transactions that are being migrated, we bring over totals on the invoices for the customers so GST information is already included in the transactions. You must turn off the GST and Adjustment Mandatory features in the **General Ledger Setup** page to allow the transactions to post during the migration. After the migration is complete, you can turn both GSP and Adjustment Mandatory back on so that new transactions that are entered in [!INCLUDE [prod_short](../includes/prod_short.md)] online will use this functionality.
-    
-    * Posting groups
-    
-      Within the posting process there is validation to look for a blank VAT business posting group and VAT product posting group. This combination isn't setup by default and is needed for the migration. So add a VAT posting configuration in the **VAT Posting Setup** page with blank values for the **VAT Bus Posting Group** and **VAT Prod. Posting Group** fields. 
-  
 <a name="sql"></a>
 
 [!INCLUDE[cloud-migration-sql-connection-ir](../developer/includes/cloud-migration-sql-connection-ir.md)]
