@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ---
 # How to: Use an Access Key for SOAP and OData Web Service Authentication
 If your solution is configured for NavUserPassword or AccessControlService authentication, then you can configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user accounts to include an access key that can be used instead of a password to authenticate SOAP and OData web service requests. A web service access key is a random 44 character string that is associated with the user account. Because it can only be used for SOAP and OData web services, it does not require the same level of protection as a password.  
