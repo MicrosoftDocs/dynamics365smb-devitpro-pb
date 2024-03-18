@@ -43,6 +43,8 @@ In addition to Power Automate flow, Business Central also offers approval workfl
 
 A *connector* is a proxy or a wrapper around an API that allows the underlying service to talk to Microsoft Power Automate. For communicating with Power Automate, Business Central has its own connector. When you create flows that interact with Business Central, you build the flows using the Business Central connector. To create flows, you don't necessarily need to know the details about the connector and its API, but it helps in some cases. To learn more about connectors and the Business Central connector API, see [Connectors Overview](/connectors/connectors) and [Dynamics 365 Business Central](/connectors/dynamicssmbsaas) in the Power Platform documentation.
 
+[![Shows how the Power Platform connector integrates to Business Central](../developer/media/power-platform-connector-diagram.svg)](../developer/media/power-platform-connector-diagram.svg#lightbox)
+
 The Dynamics 365 Business Central includes several *triggers* and *actions* for building flows. Triggers are events in Business Central that start a flow, like when a record is created or deleted. Starting in 2023 release wave 2, the connector also supports starting flows based on a [business event](../developer/business-events-overview.md) via the [When a business event occurs (V3)](/connectors/dynamicssmbsaas/#when-a-business-event-occurs-(v3)-(preview)) trigger. Actions run an operation after a trigger, like getting a record.
 
 Business Central connector can also initiate actions provided through other connectors. For example, sending an email using Office 365 connector or starting a chat in Teams using the Microsoft Teams connector.
