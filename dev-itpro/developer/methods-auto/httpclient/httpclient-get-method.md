@@ -3,8 +3,8 @@ title: "HttpClient.Get(Text, var HttpResponseMessage) Method"
 description: "Sends a GET request to get the resource identified by the request URL."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -39,6 +39,8 @@ The response received from the remote endpoint.
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
+
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Ways that HttpClient.Get calls can fail
