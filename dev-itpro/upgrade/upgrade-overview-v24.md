@@ -30,18 +30,13 @@ When upgrading your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 
 
 [![Upgrade path on Business Central application.](../developer/media/bc24-upgrade-paths-v2.svg)](../developer/media/bc24-upgrade-paths-v2.svg#lightbox)
 
-<!--
-### Technical Upgrade
-
-Although it's recommend to refactor to the system application as a minimum, you can do a technical upgrade only. A technical upgrade changes the database so that it works on the latest Business Central platform. The conversion updates the system tables of the old database to the new schema (data structure). It provides you with the latest platform features and performance enhancements.
-
-When upgrading from version 14, part of the technical upgrade process includes converting your customized base application from C/AL to AL.-->
-
 ## New and changed features
 
 There are several new and changed platform and application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 1. These changes affect users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2024 Release Wave 1](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/planned-features).
 
-To take advantage of these features, you'll have to do an application code upgrade, not just a technical (platform) upgrade. 
+### Business Foundation extension
+
+Version 24 introduces the *business foundation* part 
 
 ## Deprecated features
 
