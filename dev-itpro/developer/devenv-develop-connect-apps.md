@@ -17,7 +17,6 @@ A Connect app establishes a point-to-point connection between [!INCLUDE[d365fin_
 
 [![Shows how the API stack in Business Central](media/api-stack.svg)](media/api-stack.svg#lightbox)
 
-
 To explore and develop against REST APIs in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you must first sign up for a trial tenant, and then you have to connect and authenticate. To do that, follow the steps below.
 
 1. Sign up for [Dynamics 365 Business Central](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1).  
@@ -30,9 +29,11 @@ When you have your tenant, you can sign into the UI to play with the product, an
         > [!IMPORTANT]  
         > Basic authentication is deprecated with Business Central 2022, release wave 1 for SaaS. For more information, see [Deprecated Features in the Platform - Clients, Server, and Database](../upgrade/deprecated-features-platform.md#accesskeys).
 
-To construct the URL for the environment, the path needs to contain the environment name. To learn how to get a list of environments deployed on the tenant, see [Getting a List of Environments](../webservices/api-get-environments.md). OAuth required for this endpoint. Learn more in the [Exploring the APIs with Postman and Microsoft Entra authentication](#explore-rest-apis-with-postman-and-microsoft-entra-authentication) section.
+To construct the URL for the environment, the path needs to contain the environment name. To learn how to get a list of environments deployed on the tenant, see [Getting a List of Environments](../webservices/api-get-environments.md). OAuth required for this endpoint. 
 
-In the following sections you can read more about setting up the two types of authentication and using both authentication methods in Postman.
+<!-- Learn more in the [Exploring the APIs with Postman and Microsoft Entra authentication](#explore-rest-apis-with-postman-and-microsoft-entra-authentication) section. -->
+
+<!-- In the following sections you can read more about setting up the two types of authentication and using both authentication methods in Postman. -->
 
 APIs can also be explored through the [OpenAPI specification for Business Central](/dynamics-nav/api-reference/v1.0/dynamics-open-api).
 
@@ -57,7 +58,9 @@ Sign in to the [Azure portal](https://portal.azure.com) to register [!INCLUDE[d3
     > [!NOTE]  
     > You'll need this key later to configure the project in Visual Studio. This key value will not be displayed again, nor retrievable by any other means, so record it as soon as it is visible from the Azure portal.
 
-You have now set up the Microsoft Entra ID based authentication. Next, you can go exploring the APIs. Learn more in the [Exploring the APIs with Postman and Microsoft Entra authentication](#explore-apis-with-postman-and-basic-authentication-only-for-on-premises) section.
+You have now set up the Microsoft Entra ID based authentication. Next, you can go exploring the APIs. 
+
+<!-- Learn more in the [Exploring the APIs with Postman and Microsoft Entra authentication](#explore-apis-with-postman-and-basic-authentication-only-for-on-premises) section. -->
 
 
 ## Set up basic authentication (only for on-premises)
@@ -70,9 +73,9 @@ If you prefer to set up an environment with basic authentication just to explore
 2. Select the user to add access for, and on the **User Card** page, in the **Web Service Access Key** field, generate a key.  
 3. Copy the generated key and use it as the password for the username. 
 
-Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#explore-apis-with-postman-and-basic-authentication-only-for-on-premises) section, we use Postman.
+Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Insomnia, Bruno, or Insomnium. <!-- In the [Exploring the APIs with Postman and basic authentication](#explore-apis-with-postman-and-basic-authentication-only-for-on-premises) section, we use Postman. -->
 
-
+<!--
 ## Explore REST APIs with Postman and Microsoft Entra authentication
 
 In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with Microsoft Entra authentication.
@@ -140,12 +143,12 @@ Each resource is uniquely identified through an ID, see the following example of
 The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in parenthesis `()` after the API endpoint. For example, to GET the "CRONUS USA, Inc." company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`.
 
 All resources, such as customers, invoices etc., live in the context of a parent company, of which there can be more than one in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant. Therefore, it's a requirement to provide the company ID in the URL for all resource API calls. To GET all customers in the "CRONUS USA, Inc." company, we must call a GET on the URL `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`.
-
+-->
 
 ## See also
 
-[API Developer Overview](devenv-api.md)
-[Using Filtering With APIs](devenv-connect-apps-filtering.md)  
-[Tips for Working with APIs](devenv-connect-apps-tips.md)   
+[API developer overview](devenv-api.md)
+[Using filtering with APIs](devenv-connect-apps-filtering.md)  
+[Tips for working with APIs](devenv-connect-apps-tips.md)   
 [Troubleshooting API calls](../webservices/dynamics-error-codes.md)    
 [API performance](../webservices/web-service-performance.md)   

@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Troubleshooting: The X.509 certificate CN=accounts.accesscontrol.windows.net is not in the trusted people store
