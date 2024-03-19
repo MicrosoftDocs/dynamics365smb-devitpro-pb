@@ -19,11 +19,11 @@ You can upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] o
 The process consists of two parts:
 
 - Convert nonstandard functionality and customizations to apps and per-tenant extensions. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md).
-- Run the cloud migration tool as described in [Migrate on-premises data to Business Central online](../administration/migrate-data.md), and then switch to use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online going forward.
+- Run the cloud migration tool as described in [Migrate on-premises data to Business Central online](../administration/migrate-data.md), and then swi and latertch to use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online going forward.
 
 ## New and changed application and platform features
 
-There are several new and changed application features available in version 23 for users, administrators, and developers. For an overview of these features, consult:
+There are several new and changed application features available in version 23 and later for users, administrators, and developers. For an overview of these features, consult:
 
 - [What's new and planned for Business Central 2024 release wave 1](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/planned-features)
 - [What's new and planned for Business Central 2023 release wave 2](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/planned-features)
