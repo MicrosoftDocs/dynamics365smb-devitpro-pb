@@ -162,12 +162,12 @@ We recommend that you simplify the user experience by reducing what users see by
 
 - Add a target Help file for context-sensitive Help for the feature that the page object supports
 
-## See Also
+## See also
 
-[Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
-[Actions Overview](devenv-actions-overview.md)  
+[Page, page fields, and page extension properties](properties/devenv-page-property-overview.md)  
+[Actions overview](devenv-actions-overview.md)  
 [Use Designer](devenv-inclient-designer.md)  
-[Page Types and Layouts](devenv-page-types-and-layouts.md)   
-[Adding a Factbox to a Page](devenv-adding-a-factbox-to-page.md)  
-[Designing Role Centers](devenv-designing-role-centers.md)  
-[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
+[Page types and layouts](devenv-page-types-and-layouts.md)   
+[Adding a factbox to a page](devenv-adding-a-factbox-to-page.md)  
+[Designing role centers](devenv-designing-role-centers.md)  
+[Configure context-sensitive help](../help/context-sensitive-help.md)  
