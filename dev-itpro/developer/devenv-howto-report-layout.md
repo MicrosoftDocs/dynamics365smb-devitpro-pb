@@ -455,12 +455,9 @@ You'll now see the generated report in preview mode.
 
 [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
-
-<!-- only applies to v20
-
 ## Enabling the Microsoft Word rendering engine
 
-[!INCLUDE [2022_releasewave1](../includes/2022_releasewave1.md)]
+> **APPLIES TO:** Business Central versions 20, 21, and 22
 
 The rendering of Word reports is controlled by an application feature key. Enabling the key `RenderWordReportsInPlatform` in the **Feature Management** page in Business Central switches the Microsoft Word report rendering to the new platform rendering, which supports multiple layouts and new triggers for **Save** and **Download** actions.
 
