@@ -220,7 +220,7 @@ When you installed version 24 in **Task 1**, a version 24 [!INCLUDE[server](../d
 
 Synchronize the tenant database with the platform changes in the application database to get it ready for the new extension versions. If you have a multitenant deployment, do these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant to the version 23 server instance.
+1. (Multitenant only) Mount the tenant to the version 24 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
 
