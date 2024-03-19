@@ -590,7 +590,7 @@ Synchronize the extensions in the following order:
 1. Microsoft System Application
 1. Microsoft Base Application
 1. Microsoft Application
-1. Customization extensions that must take ownership of fields/tables from the table migration extension. These extensions contain table extension objects that extend tables in the base application.
+1. Customization extensions that must take ownership of fields/tables from the table migration extension. These extensions contain table extension objects that extend base application tables.
 1. Second version of the table migration extension (empty version)
 1. Microsoft and third-party extensions
 
