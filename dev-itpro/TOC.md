@@ -1773,7 +1773,7 @@
 #### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
 #### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
 #### [Upgrade permission sets](upgrade/upgrade-permissions.md)
-#### [Upgrade reports](upgrade/upgrade-reports.md)
+#### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
 #### Upgrade application and data
 ##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v24.md)
 ##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v24.md)
