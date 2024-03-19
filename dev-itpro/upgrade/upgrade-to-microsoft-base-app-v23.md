@@ -78,7 +78,7 @@ This section describes how to upgrade the application code. This work involves c
 
 The first step, and the largest step, is to create extensions for the customizations compared to the Microsoft system and base applications. 
 
-- Create extensions for the target platform **11.0 Business Central 2023 release wave 2**.
+- Create extensions for the target platform **12.0 Business Central 2023 release wave 2**.
 - Include dependencies for the Microsoft System, Base, and Application extensions for version 23.0.0.0.
 
 For example, if your application includes custom tables, then create extensions that include table objects and logic for the custom tables. If the application includes custom fields on system or base application tables, create extensions that include table extension objects to cover the custom fields. As part of this upgrade process, the data currently stored in custom tables or fields will be migrated from the existing tables to the new ones defined in the extensions.
@@ -107,7 +107,7 @@ The only file in the extension project that's required is an app.json. You can c
     - Set the `version` to any version lower than 23.0.0.0, like 14.0.0.0.
     - You'll also have to include the `"publisher"`. You can use your own publisher name or `"Microsoft"`.
     - Remove all other settings. It's important that there are no `"dependencies"` set.
-    - Set the `runtime` to `"11.0"`.
+    - Set the `runtime` to `"12.0"`.
 
     The app.json files for each extension should look similar to following examples:
 
@@ -582,12 +582,17 @@ Synchronize the newly published extensions using the Sync-NAVApp cmdlet like you
 Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<extension name>" -Version <extension version>
 ```
 
+> [!IMPORTANT]
+> Synchronize extensions in the order of dependencies. The migration extension must be synchronized last. This step will change table ownership to the system and base application.
+
 Synchronize the extensions in the following order:
 
 1. Microsoft System Application
-2. Microsoft Base Application
-3. Microsoft Application
-4. Microsoft and third-party extensions
+1. Microsoft Base Application
+1. Microsoft Application
+1. Customization extensions that must take ownership of fields/tables from the table migration extension. These extensions contain table extension objects that extend tables in the base application.
+1. Second version of the table migration extension (empty version)
+1. Microsoft and third-party extensions
 
   > [!NOTE]
   >
@@ -605,11 +610,8 @@ Synchronize the extensions in the following order:
   > - India Reports
   > - India Data Migration
 
-5. Customization extensions
-6. Second version of the table migration extension (empty version)
+1. Other customization extensions.
 
-> [!IMPORTANT]
-> Synchronize extensions in the order of dependencies. The migration extension must be synchronized last. This step will change table ownership to the system and base application.
 
 ## Task 15: Upgrade empty table migration extension
 
