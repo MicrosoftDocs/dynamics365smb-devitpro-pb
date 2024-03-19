@@ -605,12 +605,15 @@ Synchronize the newly published extensions using the Sync-NAVApp cmdlet like you
 Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<extension name>" -Version <extension version>
 ```
 
+
 Synchronize the extensions in the following order:
 
 1. Microsoft System Application
 1. Microsoft Business Foundation
 1. Microsoft Base Application
 1. Microsoft Application
+1. Customization extensions that must take ownership of fields/tables from the table migration extension. These extensions contain table objects or table extension objects that must take ownership of tables or fields included in the first table migration extension version.
+1. Second version of the table migration extension (empty version)
 1. Microsoft and third-party extensions
 
     > [!NOTE]
@@ -629,11 +632,7 @@ Synchronize the extensions in the following order:
     > - India Reports
     > - India Data Migration
 
-1. Customization extensions
-1. Second version of the table migration extension (empty version)
-
-> [!IMPORTANT]
-> Synchronize extensions in the order of dependencies. The migration extension must be synchronized last. This step will change table ownership to the system and base application.
+1. Other customization extensions.
 
 ## Task 15: Upgrade empty table migration extension
 
