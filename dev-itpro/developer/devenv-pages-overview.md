@@ -65,15 +65,16 @@ Which page type you choose depends on the application task that you want to supp
 
 ## Page layout
 
-The page layout of the page object determines what the page will look like and is specified in the `layout` section. The `layout` contains one or more `area` sections that define a certain placement on the page. 
+The page layout of the page object determines what the page will look like and is specified in the `layout` section. The `layout` contains one or more `area` sections that define a certain placement on the page. The `area` sections available depend on the page type that you have chosen.
 
-You can choose between the following `area` categories:
+The following `area` categories are available depending on the page type:
 
 |Area type|Placement on the page|
 |---------|---------------------|
 |`Content`|The content area displays the content of, for example, a RoleCenter or a List page.|
 |`FactBoxes`|The FactBox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
 |`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
+|`Prompt`|The prompt area is used to gather input from the user for a copilot interaction and used on pages of the type `PromptDialog`. For more information, see [PromptDialog page type](devenv-page-type-promptdialog.md).|
   
 ### Page actions
 
