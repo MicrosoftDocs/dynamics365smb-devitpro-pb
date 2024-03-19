@@ -202,7 +202,7 @@ When you installed version 24 in **Task 1**, a version 24 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## Task 6: Import version 23 license
+## Task 6: Import version 24 license
 
 1. Use the [Import-NAVServerLicense](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense) to upload the version 23 license to the database. 
 
