@@ -28,7 +28,7 @@ Your current version doesn't have to be the latest update for the version. Howev
 
 When upgrading your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) solution to version 24, the goal is to move towards a full uptake of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base and system applications, as they are, and migrating code customizations to add-on extensions. There are different upgrade levels that you follow to get to this state, as illustrated in the following figure. We recommend that you refactor to the system application as a minimum.
 
-[![Upgrade path on Business Central application.](../developer/media/bc24-upgrade-paths-v2.svg)](../developer/media/bc24-upgrade-paths-v2.svg#lightbox)
+[![Upgrade path on Business Central application.](../developer/media/bc24-upgrade-paths-v1.svg)](../developer/media/bc24-upgrade-paths-v1.svg#lightbox)
 
 ## New and changed features
 
