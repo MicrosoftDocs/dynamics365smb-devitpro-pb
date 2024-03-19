@@ -10,9 +10,9 @@ author: jswymer
 ---
 # Upgrading reports
 
-[!INCLUDE[2022_releasewave1.md](../includes/2022_releasewave1.md)]
+> **APPLIES TO:** Upgrading to Business Central 2024 release wave 1 (version 24) and later from Business Central version 19 and earlier 
 
-This article discusses changes to the report platform done in Business Central 2022 release wave 1 (version 20) and their effect on upgrading from version 19 and earlier to the later releases.
+This article discusses changes to the report platform done in Business Central 2022 release wave 1 (version 20) and their effect on upgrading from version 19 and earlier to version 24 and later.
 
 ## Report platform changes
 
@@ -26,7 +26,7 @@ Version 20 introduced a new report rendering model. Previously, report rendering
 
 ### New and obsoleted events
 
-This section lists the new and obsoleted events in version 20.
+This section lists the new and obsoleted events in version 24 and later.
 
 #### New events
 
@@ -63,16 +63,6 @@ Codeunit **44 ReportManagement** includes new integration events for processing 
     local procedure OnFetchReportLayoutByCode(ObjectId: Integer; LayoutCode: Text; var TargetStream: OutStream; var IsHandled: Boolean)
     begin
     end;
-    
-    [IntegrationEvent(false, false)]
-    local procedure OnApplicationReportMergeStrategy(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean; var IsHandled: Boolean)
-    begin
-    end;
-
-    [IntegrationEvent(false, false)]
-    local procedure OnWordDocumentMergerAppMode(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean; var IsHandled: Boolean)
-    begin
-    end;
     ```
 
 #### Obsoleted events
@@ -96,6 +86,16 @@ Some events in codeunit **44 ReportManagement** and codeunit **9651 "Document Re
     
     [IntegrationEvent(false, false)]
     local procedure OnAfterHasCustomLayout(ObjectType: Option "Report","Page"; ObjectID: Integer; var LayoutType: Option "None",RDLC,Word,Excel,Custom)
+    begin
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnApplicationReportMergeStrategy(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean; var IsHandled: Boolean)
+    begin
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnWordDocumentMergerAppMode(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean; var IsHandled: Boolean)
     begin
     end;
     ```
@@ -149,15 +149,11 @@ Basically, the following areas can be impacted:
 - Report layout selection with dependencies to the `OnAfterHasCustomLayout` event or design-time temporary selection. The reason is that layout selection logic has been extended because of new layout types.
 - Events on the **Document Management** codeunit related to Word documents as layouts now render in platform by default.
 
-<!--Use the following information to determine what you need to do for your upgrade scenario:-->
-
 When doing a full upgrade (application and platform), you might have to rewrite custom code to use the new events. See [Upgrade of reports with custom layouts](#appupgrade).
 
 > [!NOTE]
 > You have the option to continue to use the application rendering on all or specific reports that depend on Word layouts. In this case, you won't have to make any code changes at this time. For more information, see [Continue using application rendering of Word reports](#continue).
 
-<!-- 
-- (Upgrading to If you're doing a technical upgrade (platform only), you may have to modify codeunit **44 Report Management** of the application to include new event subscribers and integration events. For more information, see [Technical upgrade from 19 and earlier](#techupgrade).-->
 
 The report rendering changes don't affect the upgrade process for RDLC report layouts or built-in Word reports layouts. So if your current Business Central solution doesn't have any custom Word Layouts, then no additional action is required for report upgrade. If it does, read the sections that follow to what you need to do, if anything.
 
@@ -191,20 +187,7 @@ Custom code that uses the `OnAfterHasCustomLayout` event must be reimplemented t
 
 Extensions that depend on the legacy Microsoft Word render by using the `OnMergeDocumentReport` or `OnBeforeMergeDocument` events must be changed to use the new custom report render type and subscribe to `OnCustomDocumentMergerEx` instead.
 
-By subscribing to `OnCustomDocumentMergerEx`, the layouts can be added in the extension by using the `rendering` section in AL code of the report. The layout will then be stored in the platform layout tables.
-
-
-## <a name="continue"></a>Continue using application rendering of Word report layouts
-
-There may be reports that you can't change at this time. In this case, it's possible to keep using the legacy application rendering. There are two ways to use to application rendering on reports: 
-
-- Disable the feature named **Feature: New Microsoft Word report rendering platform**.
- in the **Feature Management** page.
-
-    For more information, see [Enabling the Microsoft Word rendering engine](../developer/devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
-- Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report.
-
-  By subscribing this event, the application selects the rendering engine based on the selected report ID and layout name.
+By subscribing to `OnCustomDocumentMergerEx`, the application can use extension defined report renders featuring layouts stored in the platform layout tables. These layouts must be added as type custom in the reports rendering section. By subscribing to `OnCustomDocumentMergerEx`, the layouts can be added in the extension by using the `rendering` section in AL code of the report. The layout will then be stored in the platform layout tables.
 
 ## See Also  
 

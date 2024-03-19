@@ -13,7 +13,7 @@ ms.author: solsen
 
 When you create a new report, there are two main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. These steps show how to create a report based on a Word layout. For more information about the report object, see [Report object](devenv-report-object.md) and [Report extension object](devenv-report-ext-object.md).
 
-Later in this article you can read more how to enable multiple report layouts. For more information, see [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
+<!-- ony supported in v20 Later in this article you can read more how to enable multiple report layouts. For more information, see [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).--> 
 
 
 ## How to create a new Word layout from Visual Studio Code
@@ -456,14 +456,14 @@ You'll now see the generated report in preview mode.
 [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
 
+<!-- only applies to v20
+
 ## Enabling the Microsoft Word rendering engine
 
 [!INCLUDE [2022_releasewave1](../includes/2022_releasewave1.md)]
 
 The rendering of Word reports is controlled by an application feature key. Enabling the key `RenderWordReportsInPlatform` in the **Feature Management** page in Business Central switches the Microsoft Word report rendering to the new platform rendering, which supports multiple layouts and new triggers for **Save** and **Download** actions.
 
-<!-- 
-For more information about the custom render, see [Developing a Custom Report Render](devenv-report-custom-render.md).-->
 
 > [!NOTE]  
 > Application rendering is obsolete and will be deprecated in a future release. It's recommended to stay on the old platform if you have extensions that use custom Word layouts and therefore cannot use the new platform, for example, because of dependencies on the `OnBeforeMergeDocument` or `OnBeforeMergeWordDocument` events.
@@ -484,8 +484,7 @@ else
     ...
 ```
 
-For more information about feature management, see [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).
-
+For more information about feature management, see [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).-->
 
 ## Report limit - maximum number of documents that can be merged in report
 
