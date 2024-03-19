@@ -36,7 +36,7 @@ There are several new and changed platform and application features available in
 
 ### Business Foundation extension
 
-Version 24 introduces the *business foundation* extension. This extension includes objects and code related to number series, which were moved from the base application. The base application now has a dependency on the business foundation extension in addition to the system application. This change affects the upgrade process because the business foundation extension needs to be published and installed on the tenant before the base application.
+This extension is introduced in version 24 and currently contains objects and logic for number series, which was previously part of the base application. It will contain more functionality in future releases. The base application now has a dependency on the business foundation extension in addition to the system application. This change affects the upgrade process because the business foundation extension needs to be published and installed on the tenant before the base application.
 
 ## Deprecated features
 
