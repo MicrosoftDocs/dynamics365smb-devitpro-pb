@@ -3,8 +3,8 @@ title: "PreviewMode Property"
 description: "Specifies how the report opens when you preview it."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

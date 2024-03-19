@@ -3,8 +3,8 @@ title: "System.Randomize([Integer]) Method"
 description: "Generates a set of random numbers from which the RANDOM method (Integer) will select a random number."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

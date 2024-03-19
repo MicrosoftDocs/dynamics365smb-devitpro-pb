@@ -3,8 +3,8 @@ title: "System.ClearCollectedErrors() Method"
 description: "Clears all collected errors from the current collection scope."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/24/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,7 +23,6 @@ Clears all collected errors from the current collection scope.
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
-
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
