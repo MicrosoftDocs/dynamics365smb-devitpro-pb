@@ -3,7 +3,7 @@ title: Pages overview
 description: Pages are the main way to display and organize data.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 03/19/2024
 ms.reviewer: na
 ms.topic: overview
 ms.author: solsen
@@ -26,7 +26,7 @@ Furthermore, the page has properties. Properties work in the same way for pages 
 
 ## Page metadata
 
-For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object.  
+For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object. IntelliSense can help you explore the options for, which metadata you can set. Press <kbd>Ctrl</kbd>+<kbd>Space</kbd> to activate IntelliSense from everywhere in your code.  
 
 ```AL
 page 50102 PageName
@@ -58,6 +58,7 @@ Which page type you choose depends on the application task that you want to supp
 |[NavigatePage](devenv-designing-navigate-pages.md)|You use a Navigate page type to create an assisted setup guide, also known as a wizard, that leads the user through a sequence of steps for completing a task.|
 |[HeadlinePart](devenv-create-role-center-headline.md)|You use a HeadlinePart page type to display a set of changing headlines on a Role Center.|
 |[API](devenv-api-pagetype.md)|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface. This page type should not be extended by creating a page extension object. Instead, create a new API by adding a page object.|
+|[PromptDialog](devenv-page-type-promptdialog.md) | Pages of this type are used to enable creating generative AI experiences with the copilot look and feel.|
 
 > [!NOTE]  
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 
