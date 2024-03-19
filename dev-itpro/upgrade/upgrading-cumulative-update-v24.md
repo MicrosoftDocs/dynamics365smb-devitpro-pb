@@ -32,7 +32,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - Business Foundation extension
 
-    Version 24 introduces the business foundation extension. This extension includes objects and code related to number series, which were moved from the base application.
+   This extension was introduced in version 24 and currently contains objects and logic for number series, which was previously part of the base application. It will contain more functionality in future releases.
 
 - Base application extension
 
