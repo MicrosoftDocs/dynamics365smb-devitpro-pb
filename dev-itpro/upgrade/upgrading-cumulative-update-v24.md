@@ -30,6 +30,10 @@ The application includes AL extensions that define the objects and code that mak
 
     The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When using the Microsoft Base Application, your solution uses the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
 
+- Business Foundation extension
+
+    Version 24 introduces the business foundation extension. This extension includes objects and code related to number series, which were moved from the base application.
+
 - Base application extension
 
     As a minimum, the solution always includes the Base Application. The Base Application contains the objects (such as table, pages, codeunits, and reports) that define the business logic and functionality of the solution. The Base Application can be either the Microsoft Base Application or a customized Base Application. The Microsoft Base Application is the standard application that is on the installation media (DVD). A customized Base Application is an application that includes customized code.
