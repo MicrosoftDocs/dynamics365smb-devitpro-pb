@@ -67,6 +67,7 @@ This section describes the basic tasks for creating an assisted setup. It gives 
                 field(Field2; "Field2")
                 {
                     ApplicationArea = All;
+                    InstructionalText = '';
                     Caption = '';
                 }
             }
@@ -410,6 +411,7 @@ page 50111 ToDoAssistedSetup
                 field("Description"; Rec.Description)
                 {
                     ApplicationArea = All;
+                    InstructionalText = 'Example of a description';
                     Caption = 'Describe your to-do';
                 }
                 field("Start Time"; Rec."Start Time")
