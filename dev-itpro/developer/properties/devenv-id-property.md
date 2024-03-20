@@ -21,11 +21,6 @@ The ID of the service plan, role, etc. as determined by the type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks
-
-> [!NOTE]  
-> In the current version of [!INCLUDE [prod_short](../../includes/prod_short.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. For more information, see [Entitlement Object](../devenv-entitlement-object.md).
-
 ## See Also
 
 [Get Started with AL](../devenv-get-started.md)  

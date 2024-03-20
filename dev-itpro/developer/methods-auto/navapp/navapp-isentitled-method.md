@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Determines if the current user is entitled to a specific entitlement id for the application.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises.
+> This method always returns false in Business Central on-premises, as entitlements are only used in Business Central Online environments.
 
 ## Syntax
 ```AL
@@ -36,7 +36,7 @@ The ID of the application for which to retrieve information, defaults to the cur
 ## Return Value
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true* if the current user is entitled to the specified entitlement, oterwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
+**true* if the current user is entitled to the specified entitlement, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
