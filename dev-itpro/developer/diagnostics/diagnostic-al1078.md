@@ -3,8 +3,8 @@ title: "Compiler Warning (Future Error) AL1078"
 description: "Key vault URL is not a valid Azure key vault URL."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/05/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Key vault URL is not a valid Azure key vault URL. A valid key vault URL must use HTTPS and point to the Azure key vault domain.
+
 
 > [!IMPORTANT]
 > This warning will become an error with Business Central 2023 release wave 2.  

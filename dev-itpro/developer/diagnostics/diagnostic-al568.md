@@ -3,8 +3,8 @@ title: "Compiler Warning (Future Error) AL0568"
 description: "Groups defined in the action area '{0}' should only contain actions or groups."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Groups defined in the action area '{0}' should only contain actions or groups.
+
 
 ## Description
 Groups defined in an action area should only contain actions or groups.  

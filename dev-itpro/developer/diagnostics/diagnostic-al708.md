@@ -3,8 +3,8 @@ title: "Compiler Error AL0708"
 description: "MimeType values must be less than {0} characters in length."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/01/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 MimeType values must be less than {0} characters in length.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

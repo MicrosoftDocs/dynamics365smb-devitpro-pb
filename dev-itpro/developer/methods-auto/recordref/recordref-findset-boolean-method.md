@@ -3,8 +3,8 @@ title: "RecordRef.FindSet([Boolean]) Method"
 description: "Finds a set of records in a table based on the current key and filter."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -28,7 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *[Optional] ForUpdate*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Set this parameter to false if you do not want to modify any records in the set. Set this parameter to true if you want to modify records in the set. If you set this parameter to true, the LOCKTABLE method (RecordRef) is immediately performed on the table before the records are read.  
+Set this parameter to false if you do not want to modify any records in the set. Set this parameter to true if you want to modify records in the set. If you set this parameter to true, then the records will be read with Updlock.  
 
 
 ## Return Value
