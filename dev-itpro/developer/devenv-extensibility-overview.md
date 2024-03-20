@@ -1,10 +1,10 @@
 ---
-title: "Extensibility overview"
-description: "How you can extend functionality in Dynamics 365 Business Central."
+title: Extensibility overview
+description: How you can extend functionality in Dynamics 365 Business Central.
 ms.author: kepontop
 ms.custom: na
 ms.date: 10/09/2023
-ms.reviewer: na
+ms.reviewer: solsen
 ms.topic: conceptual
 author: KennieNP
 ---
@@ -39,6 +39,7 @@ The AL object model in [!INCLUDE[prod_short](../developer/includes/prod_short.md
 ## Extending the Business Central application
 
 The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application consists of multiple layers
+
 * The System Application, which is a set of open source modules that make it easier to build, maintain, and easily upgrade on-premises and online apps. These modules let you focus on the business logic, and the needs of your users or customers.
 * The Base Application, which is the business logic for the functionality in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -55,12 +56,18 @@ To learn more about the System Application, its module architecture, and how to 
 ### Extending the Business Central base application
 
 For more information on how to get started on extending functionality in the base application by extending AL objects and using events, see:
+
 * [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 * [The Microsoft_Application.app file](devenv-application-app-file.md)
 * [Publishing a code-customized base application](devenv-publish-code-customization.md)
 * [Extending application areas](devenv-extending-application-areas.md)
 
+### Extension objects in the same app
+
+[!INCLUDE [extension-obj-same-app](includes/extension-obj-same-app.md)]
+
 ## Examples
+
 There are numerous examples available that demonstrate how to extend various features in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
 
 - Extending item charges
