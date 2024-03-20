@@ -692,6 +692,7 @@
 #### Defining table structures
 ##### [Tables overview](developer/devenv-tables-overview.md)
 ##### [Table object](developer/devenv-table-object.md)
+##### [Add tooltips to table fields](developer/devenv-adding-tooltips.md)
 ##### [System fields](developer/devenv-table-system-fields.md)
 ##### [Table extension object](developer/devenv-table-ext-object.md)
 ##### [Setting relationships between tables](developer/devenv-set-relationships-between-tables.md)
@@ -775,6 +776,7 @@
 ##### [Pages overview](developer/devenv-pages-overview.md)
 ##### [Page object](developer/devenv-page-object.md)
 ##### [Page extension object](developer/devenv-page-ext-object.md)
+##### [Adding tooltips to page fields](developer/devenv-adding-tooltips.md)
 ##### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
 ##### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
