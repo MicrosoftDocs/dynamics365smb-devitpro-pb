@@ -3,8 +3,8 @@ title: "BigText.Write(OutStream) Method"
 description: "Streams a BigText object to a BLOB field in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

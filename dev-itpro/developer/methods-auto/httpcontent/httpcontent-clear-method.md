@@ -3,8 +3,8 @@ title: "HttpContent.Clear() Method"
 description: "Sets the HttpContent object to a default value."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +21,6 @@ Sets the HttpContent object to a default value. The content contains an empty st
 ```AL
  HttpContent.Clear()
 ```
-
 ## Parameters
 *HttpContent*  
 &emsp;Type: [HttpContent](httpcontent-data-type.md)  

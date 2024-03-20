@@ -3,8 +3,8 @@ title: "RoleType Property"
 description: "If the entitlement type is Role, the RoleType is used to distinguish between local and delegated assignments of the role."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,8 +23,8 @@ If the entitlement type is Role, the RoleType is used to distinguish between loc
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Local**|runtime version 1.0|The user is either a native user or a guest user in the company's Microsoft Entra tenant, and that specific Microsoft Entra role was assigned in the given Microsoft Entra tenant.|
-|**Delegated**|runtime version 1.0|The user has the given Microsoft Entra role in the company's Microsoft Entra tenant via a Delegated Admin relationship with a partner's Microsoft Entra tenant.|
+|**Local**|runtime version 7.0|The user is either a native user or a guest user in the company's Microsoft Entra tenant, and that specific Microsoft Entra role was assigned in the given Microsoft Entra tenant.|
+|**Delegated**|runtime version 7.0|The user has the given Microsoft Entra role in the company's Microsoft Entra tenant via a Delegated Admin relationship with a partner's Microsoft Entra tenant.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -3,8 +3,8 @@ title: "Compiler Error AL0741"
 description: "The permission set '{0}' cannot exclude itself."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/04/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The permission set '{0}' cannot exclude itself.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

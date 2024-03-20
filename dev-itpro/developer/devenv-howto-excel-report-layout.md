@@ -155,12 +155,12 @@ If strings are available in field captions or labels in the report object, you c
 It's also possible to use '\$tag\$' substitution for Excel elements in your worksheets. At report generation time, the [!INCLUDE[prod_short](../includes/prod_short.md)] server replaces '\$tag\$' with the corresponding value defined in the **TranslationData** or **CaptionData** tables. If a tag exists in both tables, data from the **TranslationData** table takes precedence. The tag name is case-sensitive and unmatched elements will be left unmodified.
 
 The following Excel elements can be translated:
-- Chart title
-- Sheet name
-- Pivot table name
-- Pivot field name
-- Slicer name
+- Worksheet name
 - Text data in a cell
+- Chart title
+- Pivot table name (right-click on the pivot table, choose **PivotTable Options**, then add your tag in the **PivotTable Name** field)
+- Pivot field name (right-click on the field in the pivot table, choose **Field Settings**, then add your tag in the **Custom Name** field)
+- Slicer name (right-click on the slicer, choose **Slicer Settings**, then add your tag in the **Caption** field)
 
 Worksheet references with translation tags will be updated in cell formulas as well to maintain proper data references in the final document.
 

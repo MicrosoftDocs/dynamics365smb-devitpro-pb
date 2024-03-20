@@ -502,6 +502,7 @@
 ### Compile, publish, and debug
 #### [Compilation scope overview](developer/devenv-compilation-scope-overview.md)
 #### [Debugging in AL](developer/devenv-debugging.md)
+#### [Conditional breakpoints](developer/devenv-debugging-conditional-breakpoints.md)
 #### [Attach and debug next](developer/devenv-attach-debug-next.md)
 #### [Snapshot debugging](developer/devenv-snapshot-debugging.md)
 #### [Debug upgrade and install code](developer/devenv-debug-upgrade-install-code.md)
@@ -691,6 +692,7 @@
 #### Defining table structures
 ##### [Tables overview](developer/devenv-tables-overview.md)
 ##### [Table object](developer/devenv-table-object.md)
+##### [Add tooltips to table fields](developer/devenv-adding-tooltips.md)
 ##### [System fields](developer/devenv-table-system-fields.md)
 ##### [Table extension object](developer/devenv-table-ext-object.md)
 ##### [Setting relationships between tables](developer/devenv-set-relationships-between-tables.md)
@@ -774,6 +776,7 @@
 ##### [Pages overview](developer/devenv-pages-overview.md)
 ##### [Page object](developer/devenv-page-object.md)
 ##### [Page extension object](developer/devenv-page-ext-object.md)
+##### [Adding tooltips to page fields](developer/devenv-adding-tooltips.md)
 ##### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 #### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
 ##### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
@@ -1062,7 +1065,6 @@
 
 <!-- end AL programming -->
 
-
 ## [System and application reference documentation](/dynamics365/business-central/application/)
 ### [Overview of the system application](developer/devenv-system-application-overview.md)
 ### Creating new modules in the system application
@@ -1087,6 +1089,7 @@
 
 ## Extensibility
 ### [Extensibility overview](developer/devenv-extensibility-overview.md)
+### [Extension objects overview](developer/devenv-extension-object-overview.md)
 ### Extending AL objects
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
 #### [Extending enumerations](developer/devenv-extensible-enums.md)

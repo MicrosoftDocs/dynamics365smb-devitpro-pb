@@ -3,8 +3,8 @@ title: "Compiler Error AL0800"
 description: "The field '{0}' specifies ExtendedDataType '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/02/2023
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

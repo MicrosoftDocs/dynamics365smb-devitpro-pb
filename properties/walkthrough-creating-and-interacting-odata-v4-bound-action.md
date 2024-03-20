@@ -13,6 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Walkthrough: Creating and Interacting With an OData V4 Bound Action
+
 This walkthrough illustrates how you can publish a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] function as an OData V4 web service action. 
 
 ## About This Walkthrough  
@@ -28,7 +29,7 @@ To complete this walkthrough, you will need:
   
 -   [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
   
--   The **Postman** app for testing the web service URI.
+-   An API explorer app for testing the web service URI.
   
 ## Publishing a Function as a Web Service   
 You publish a function as a Web service action by using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] to create the function and the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Windows client or the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web client for publishing the objects the function is for. The tutorial provides an example that will return a location header. A location header would be used to later issue a get request for the resulting object. Refer to the **Return a Value** section for an example that will return a value specified in your function.
@@ -108,7 +109,7 @@ After publishing a web service, verify that the port that web service applicatio
 
 ### To verify availability of a Microsoft Dynamics NAV Web service action
 
-1.	Start **Postman** or another tool that can execute a POST command against the web service URI.
+1.	Start your preferred API explorer tool that can execute a POST command against the web service URI.
 2.	In the **Address** field, enter a URI in this format: `https://<Server>:<WebServicePort>/<ServerInstance>/api/beta/companies(<companyid>)/salesInvoices(<invoiceid>)/Microsoft.NAV.Copy)`.  
 
     - `<Server>` is the name of the computer that is running Business Central Server.
@@ -117,7 +118,7 @@ After publishing a web service, verify that the port that web service applicatio
 
     Example if the default Business Central Server is running on your local computer.
     ```https://localhost:7047/BC130/api/beta/companies(b9248a6e-966d-478c-a25d-d91d28610397)/salesInvoices(8cc52602-3aa4-4256-b2c7-fdfef5248cbf)/Microsoft.NAV.Copy) ```
-3. Postman should now show the web service function that you have published, and perform the action of copying an invoice. 
+3. The API explorer should now show the web service function that you have published, and perform the action of copying an invoice. 
 
 ## Return a value
 
