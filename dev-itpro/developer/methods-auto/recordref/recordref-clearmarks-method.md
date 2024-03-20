@@ -3,8 +3,8 @@ title: "RecordRef.ClearMarks() Method"
 description: "Removes all the marks from a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +21,6 @@ Removes all the marks from a record.
 ```AL
  RecordRef.ClearMarks()
 ```
-
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  

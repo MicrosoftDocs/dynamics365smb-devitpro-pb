@@ -3,8 +3,8 @@ title: "Compiler Error AL0427"
 description: "Field {0} cannot be converted to type {1}."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Field {0} cannot be converted to type {1}.
+
 
 ## Description
 The type of the result of a calculation formula must match the type of the FlowField associated with that CalcFormula.  

@@ -3,8 +3,8 @@ title: "OnBeforePassVariable (Xml Port Text Attribute) Trigger"
 description: "Runs after the source expression has been formatted into a text variable and before the text variable is passed to the XML document."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

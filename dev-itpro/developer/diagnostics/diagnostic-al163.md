@@ -3,8 +3,8 @@ title: "Compiler Error AL0163"
 description: "Wrong signature."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Wrong signature. Correct signature for '{0}' is '{1}'.
+
 
 ## Description
 The signature for the given trigger is wrong. For more information about the correct signature, refer to the trigger's documentation.  
