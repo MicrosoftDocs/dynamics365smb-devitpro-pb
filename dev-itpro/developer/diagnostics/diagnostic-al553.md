@@ -3,8 +3,8 @@ title: "Compiler Error AL0553"
 description: "You cannot add actions of type '{0}' in the action area '{1}' from a page customization."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/04/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 You cannot add actions of type '{0}' in the action area '{1}' from a page customization. You can only add actions of type '{2}'.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

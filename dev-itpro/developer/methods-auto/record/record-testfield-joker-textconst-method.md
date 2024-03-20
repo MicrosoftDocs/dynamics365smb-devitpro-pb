@@ -3,8 +3,8 @@ title: "Record.TestField(Any, TextConst) Method"
 description: "Tests whether the contents of a field match a given value."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -29,6 +29,7 @@ An instance of the [Record](record-data-type.md) data type.
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The field that you want to test.  
+
 *Value*  
 &emsp;Type: [TextConst](../textconst/textconst-data-type.md)  
 The value that you want to compare to Field. The data type of this parameter must match the data type of Field. If you include this optional parameter and the contents of Field do not match, then an error message is displayed. If you omit this parameter and the contents of Field is zero or blank (empty string), then an error message is displayed.  

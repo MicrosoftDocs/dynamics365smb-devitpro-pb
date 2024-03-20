@@ -3,8 +3,8 @@ title: "Compiler Warning AL0640"
 description: "XML comment has badly formed XML -- '{0}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 XML comment has badly formed XML -- '{0}'.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
