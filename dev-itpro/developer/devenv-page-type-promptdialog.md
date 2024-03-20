@@ -51,7 +51,11 @@ Unlike other page types, `PromptDialog` pages can only specify two action areas;
 |`SystemActions` | The `SystemActions` area only allow you to define a fixed set of actions called system actions, which are only supported by this page type. These system actions are `Generate`, `Regenerate`, `Attach`, `Ok` and `Cancel`.|
 |`PromptGuide` | The `PromptGuide` action area represents a list of predefined text prompt "guides", which users can select to use as input to generate content, rather than creating their own prompt from scratch. The prompt guide menu is only rendered in the web client when the `PromptMode` of the `PromptDialog` page is set to `Prompt`.|
 
-<!-- image here -->
+The following illustration shows the `PromptDialog` page with the `Prompt`, `Content`, `SystemActions`, and `PromptGuide` areas in [!INCLUDE [prod_short](includes/prod_short.md)] for the **Analyze Bank Account Reconciliation** prompt dialog. You identify the prompt guide by the ![Prompt guide icon that opens a prompt guide.](media/prompt-guide-icon.png "The prompt guide icon") icon of a prompt dialog page.
+
+
+:::image type="content" source="media/promptdialog-analyze-bank.png" alt-text="Analyze bank account prompt dialog":::
+
 
 ## Example
 
