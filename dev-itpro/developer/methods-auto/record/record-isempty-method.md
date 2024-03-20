@@ -3,8 +3,8 @@ title: "Record.IsEmpty() Method"
 description: "Determines whether a table or a filtered set of records is empty."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,7 +23,6 @@ Empty :=   Record.IsEmpty()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  

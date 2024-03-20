@@ -8,7 +8,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f76ac1a0-9529-4c87-bad2-b468f3f95506
-ms.prod: "dynamics-nav-2018"
 ms.author: solsen
 ---
 # How to: Write Extension Upgrade Code

@@ -3,8 +3,8 @@ title: "System.CodeCoverageLoad() Method"
 description: "Loads the code that has been logged."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,7 +23,6 @@ Loads the code that has been logged.
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
-
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

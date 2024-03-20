@@ -1,10 +1,10 @@
 ---
-title: ExecutionTimeout Property
-description: Sets the maximum time the report will run after which it is automatically terminated.
+title: "ExecutionTimeout Property"
+description: "Sets the maximum time the report will run after which it is automatically terminated."
 ms.author: solsen
-ms.custom: bap-template
-ms.date: 01/18/2024
-ms.reviewer: jswymer
+ms.custom: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
