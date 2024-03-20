@@ -3,8 +3,8 @@ title: "Compiler Warning (Future Error) AL0556"
 description: "The RunObject property value of actions defined in the '{0}' area must only reference objects of type {1}."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The RunObject property value of actions defined in the '{0}' area must only reference objects of type {1}.
+
 
 ## Description
 The **RunObject** property value must only reference objects of type 'Codeunit', 'Page', 'Report', or 'XmlPort'.  

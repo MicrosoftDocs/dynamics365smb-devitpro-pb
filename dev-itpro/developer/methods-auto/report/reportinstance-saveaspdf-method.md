@@ -3,8 +3,8 @@ title: "Report.SaveAsPdf(Text) Method"
 description: "Saves a report as a .pdf file."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

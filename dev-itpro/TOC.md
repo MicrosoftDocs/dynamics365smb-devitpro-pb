@@ -502,6 +502,7 @@
 ### Compile, publish, and debug
 #### [Compilation scope overview](developer/devenv-compilation-scope-overview.md)
 #### [Debugging in AL](developer/devenv-debugging.md)
+#### [Conditional breakpoints](developer/devenv-debugging-conditional-breakpoints.md)
 #### [Attach and debug next](developer/devenv-attach-debug-next.md)
 #### [Snapshot debugging](developer/devenv-snapshot-debugging.md)
 #### [Debug upgrade and install code](developer/devenv-debug-upgrade-install-code.md)
@@ -1062,7 +1063,6 @@
 
 <!-- end AL programming -->
 
-
 ## [System and application reference documentation](/dynamics365/business-central/application/)
 ### [Overview of the system application](developer/devenv-system-application-overview.md)
 ### Creating new modules in the system application
@@ -1087,6 +1087,7 @@
 
 ## Extensibility
 ### [Extensibility overview](developer/devenv-extensibility-overview.md)
+### [Extension objects overview](developer/devenv-extension-object-overview.md)
 ### Extending AL objects
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
 #### [Extending enumerations](developer/devenv-extensible-enums.md)

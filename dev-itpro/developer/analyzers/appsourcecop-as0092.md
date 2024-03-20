@@ -3,8 +3,8 @@ title: "AppSourceCop Warning AS0092"
 description: "The app.json file must specify an Azure Application Insights resource for monitoring operations related to this extension."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
