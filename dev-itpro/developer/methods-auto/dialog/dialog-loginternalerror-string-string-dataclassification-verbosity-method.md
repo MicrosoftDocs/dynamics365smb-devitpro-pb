@@ -3,8 +3,8 @@ title: "Dialog.LogInternalError(Text, Text, DataClassification, Verbosity) Metho
 description: "Log internal errors for telemetry."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Dialog.LogInternalError(Text, Text, DataClassification, Verbosity) Method
-> **Version**: _Available or changed with runtime version 6.0._
+> **Version**: _Available or changed with runtime version 6.0 until version 13.0 where it was deprecated for the following reason: "Consider using 'Session.LogMessage' instead."_
 
 Log internal errors for telemetry.
 

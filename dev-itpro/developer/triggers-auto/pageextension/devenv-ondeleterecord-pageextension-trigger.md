@@ -3,8 +3,8 @@ title: "OnDeleteRecord (Page Extension) Trigger"
 description: "Runs before a record is deleted from the table."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

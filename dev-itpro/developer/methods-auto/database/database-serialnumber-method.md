@@ -3,8 +3,8 @@ title: "Database.SerialNumber() Method"
 description: "Gets a string that contains the serial number of the license file for your system."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

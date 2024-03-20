@@ -3,8 +3,8 @@ title: "Compiler Warning (Future Error) AL0677"
 description: "The member '{0}' in object '{1}' cannot be declared as protected in object type '{2}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The member '{0}' in object '{1}' cannot be declared as protected in object type '{2}'.
+
 
 > [!IMPORTANT]
 > This warning will become an error with Business Central 2022 release wave 2.  

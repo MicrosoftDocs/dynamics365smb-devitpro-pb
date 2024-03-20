@@ -3,8 +3,8 @@ title: "Dictionary.Count() Method"
 description: "Gets the number of key/value pairs contained in the Dictionary."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,7 +23,6 @@ Count :=   Dictionary.Count()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *Dictionary*  
 &emsp;Type: [Dictionary](dictionary-data-type.md)  

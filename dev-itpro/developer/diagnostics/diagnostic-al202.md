@@ -3,8 +3,8 @@ title: "Compiler Error AL0202"
 description: "The {0} FlowField is not an Integer field."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The {0} FlowField is not an Integer field. If a FlowField CalcFormula starts with 'Count', then the FlowField must be an Integer type field.
+
 
 ## Description
 If a FlowField CalcFormula starts with 'Count', then the FlowField must be an Integer type field.  
