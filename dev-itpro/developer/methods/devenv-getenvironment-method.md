@@ -1,14 +1,14 @@
 ---
-title: "GetEnvironment Method"
-description: "The GetEnvironment method in control add-in for Business Central"
+title: GetEnvironment method
+description: The GetEnvironment method in control add-in for Business Central.
 ms.custom: na
-ms.date: 04/01/2022
+ms.date: 03/19/2024
 ms.reviewer: na
 ms.topic: reference
 author: solsen
 ---
 
-# GetEnvironment Method
+# GetEnvironment method
 
 Gets information about the environment that the control add-in is using. For more information, see [Control Add-in Object](../devenv-control-addin-object.md).
 
@@ -60,9 +60,9 @@ environment.OnClosed = function()
   
 ```  
   
-## See Also 
+## See also 
 
-[AL Method Reference](../methods-auto/library.md)  
-[GetImageResource Method](devenv-getimageresource-method.md)   
-[InvokeExtensibilityMethod Method](devenv-invokeextensibility-method.md)   
-[OpenWindow Method](devenv-openwindow-method.md)  
+[AL method reference](../methods-auto/library.md)  
+[GetImageResource method](devenv-getimageresource-method.md)   
+[InvokeExtensibilityMethod method](devenv-invokeextensibility-method.md)   
+[OpenWindow method](devenv-openwindow-method.md)  
