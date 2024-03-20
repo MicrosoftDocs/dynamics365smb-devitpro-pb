@@ -250,6 +250,17 @@ In the following table, you'll find examples of scenarios for each persona where
 [!INCLUDE[pbimetrics](../includes/include-telemetry-alerting-powerbi-metrics.md)]
 
 
+## Troubleshoot the Power BI apps on telemetry data
+
+### I have no data in one page in the report (but I see data in other pages)
+
+If you don't see any data on a page in a report in one of the Power BI apps on telemetry data, but you do see data in other pages, you can get the KQL query that is used to load data for the page in the **Analyze further with KQL** visual on the bottom of the page. Then use any KQL client of your choice to run the KQL query, see [Analyze and Monitor Telemetry with KQL](./telemetry-analyze-with-kql.md). If the query returns an empty result, then you do not have such data in your [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource (so there is not something wrong with the report).
+
+### The OAuth authentication method isn't supported for this data source
+
+When configuring the app, please keep the **Authentication method** set to **OAuth2**. If you get the error *The OAuth authentication method isn't supported for this data source*, check if the application ID is correct; that's usually the root cause for that error.
+
+
 ## See also
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
