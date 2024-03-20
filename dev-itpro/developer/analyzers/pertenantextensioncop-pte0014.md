@@ -3,8 +3,8 @@ title: "PerTenantExtensionCop Warning PTE0014"
 description: "Permission sets should not be defined in XML."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -3,8 +3,8 @@ title: "Compiler Error AL0447"
 description: "The value '{0}' for the property '{1}' cannot be used for '{2}' development."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The value '{0}' for the property '{1}' cannot be used for '{2}' development.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

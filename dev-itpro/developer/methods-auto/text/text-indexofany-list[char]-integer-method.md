@@ -3,8 +3,8 @@ title: "Text.IndexOfAny(List of [Char] [, Integer]) Method"
 description: "Reports the one-based index of the first occurrence in this instance of any character in a specified array of Unicode characters."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

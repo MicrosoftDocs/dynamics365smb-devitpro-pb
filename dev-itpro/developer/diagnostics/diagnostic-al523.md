@@ -1,10 +1,10 @@
 ---
 title: "Compiler Warning (Future Error) AL0523"
-description: "The '{0}' already defines a method called '{1}' with the same parameter types in '{2}'."
+description: "The {0} '{1}' already defines a method called '{2}' with the same parameter types in '{3}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -15,7 +15,11 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The '{0}' already defines a method called '{1}' with the same parameter types in '{2}'.
+The {0} '{1}' already defines a method called '{2}' with the same parameter types in '{3}'.
+
+
+## Description
+A method is defined multiple times.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

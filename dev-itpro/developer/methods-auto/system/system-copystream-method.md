@@ -3,8 +3,8 @@ title: "System.CopyStream(OutStream, InStream [, Integer]) Method"
 description: "Copies the information that is contained in an InStream to an OutStream."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

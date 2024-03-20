@@ -3,8 +3,8 @@ title: "Compiler Error AL0812"
 description: "The control '{0}' cannot be declared in the 'PromptOptions' area because it is not a page field of type 'Option'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

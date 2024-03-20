@@ -3,8 +3,8 @@ title: "MultipleNewLines Property"
 description: "Sets a value that determines whether users can add multiple new lines between records."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
