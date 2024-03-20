@@ -3,8 +3,8 @@ title: "TreeInitialState Property"
 description: "Specifies the initial state of the records in a repeater control which is displayed as a tree structure."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,8 +23,8 @@ Specifies the initial state of the records in a repeater control which is displa
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**ExpandAll**|runtime version 1.0|All records in the tree are expanded.|
-|**CollapseAll**|runtime version 1.0|All records in the tree are collapsed.|
+|**ExpandAll**|runtime version 5.0|All records in the tree are expanded.|
+|**CollapseAll**|runtime version 5.0|All records in the tree are collapsed.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

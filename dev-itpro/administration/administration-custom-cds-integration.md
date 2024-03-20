@@ -71,6 +71,8 @@ In this walkthrough we'll create a table object in the [!INCLUDE[prod_short](../
     -project:<Your AL project folder>
     -packagecachepath:<Your AL project cache folder>
     -serviceuri:<Microsoft Dataverse server URL>
+    -clientid:<Microsoft Entra application client ID>
+    -redirecturi:<Microsoft Entra application redirect URI>
     -entities:cdm_worker
     -baseid:50000
     ```

@@ -3,8 +3,8 @@ title: "File.Upload(Text, Text, Text, Text, var Text) Method"
 description: "Sends a file from the client computer to the server computer."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
