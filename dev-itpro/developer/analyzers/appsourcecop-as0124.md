@@ -3,8 +3,8 @@ title: "AppSourceCop Error AS0124"
 description: "Changing the target of an extension object that has been published is not allowed, because this might break the dependent extensions."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/22/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

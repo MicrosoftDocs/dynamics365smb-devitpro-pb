@@ -3,8 +3,8 @@ title: "Clustered Property"
 description: "Sets a value that indicates whether the key also defines the clustered index in the database."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/09/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

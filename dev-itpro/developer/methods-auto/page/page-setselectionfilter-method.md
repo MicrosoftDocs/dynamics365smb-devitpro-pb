@@ -3,8 +3,8 @@ title: "Page.SetSelectionFilter(var Record) Method"
 description: "Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to marked only."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
