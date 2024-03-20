@@ -3,8 +3,8 @@ title: "JsonToken.AsObject() Method"
 description: "Converts the value in a JsonToken to a JsonObject data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +21,6 @@ Converts the value in a JsonToken to a JsonObject data type.
 ```AL
 Object :=   JsonToken.AsObject()
 ```
-
 ## Parameters
 *JsonToken*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  

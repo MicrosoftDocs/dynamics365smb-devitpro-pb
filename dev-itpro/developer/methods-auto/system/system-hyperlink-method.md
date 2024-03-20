@@ -3,8 +3,8 @@ title: "System.Hyperlink(Text) Method"
 description: "Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
