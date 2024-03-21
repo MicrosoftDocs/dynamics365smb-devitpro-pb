@@ -60,7 +60,7 @@ The sections that follow explain other capabilities of the page scripting tool f
 
 1. Open the page where you want to start recording.
 
-1. In the **Page Scripting** pane, select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) icon in the control bar at the top.
+1. In the **Page Scripting** pane, select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) button in the control bar at the top.
 
    The white circle in the control bar turns red to indicate that you're recording.
 
@@ -68,21 +68,18 @@ The sections that follow explain other capabilities of the page scripting tool f
 
    As you interact with the application, your interactions actions and the resulting actions done by the application itself are added in sequence as steps in the **Page Scripting** pane.
 
-1. At any time during recording, you can pause, resume, or delete the last recorded step:
+1. At any time during recording, you can do the following actions:
 
-   - To pause the recording, select the **Stop** button in the control bar.
-
-      While paused, you can ...
-
-   - To resume recording and continue  actions, select the **Start recording** button the control bar
-
+   - To pause recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button in the control bar.
+   - To resume recording and continue actions, select the **Start recording** ![start recording](media/page-scripting-start-button.png)button the control bar
    - To delete the last captured step, select **...** next to step and then **Delete**. 
    - To add a wait time before the next step, select the step > **...** > **Add step** > **Wait**.
+   - To hide the page scripting pane while still recording, select the 
 
-1. When you're done recording, select the **Stop** button .
+1. When you're done recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button .
 1. To play back the recording right away, select the **Play** button.
 
-   You can replay the recording as long as you don't close the Page
+   You can replay the recording as long as you don't close the page
 1. To save the recording to file so you run it later or share with someone, select the **Save** icon in the control bar.
 
 ## Options for capturing steps
