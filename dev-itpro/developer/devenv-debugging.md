@@ -52,6 +52,10 @@ The following video illustrates that `Customer.dal` is an external file. A break
 
 For more information about **Go to Definition**, see [AL Code Navigation](devenv-al-code-navigation.md). 
 
+### Conditional breakpoints
+
+You can also set a condition on a breakpoint and if the condition evaluates as true, then code execution breaks at the breakpoint. For more information, see [Setting conditional breakpoints](devenv-debugging-conditional-breakpoints.md).
+
 ## Break on errors
 
 Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to `breakOnError`, it stops execution on both errors that are handled in code and unhandled errors.
