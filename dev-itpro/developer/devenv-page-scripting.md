@@ -18,7 +18,7 @@ A primary use of the page scripting tool is testing business processes and scena
 
 ## What is captured?
 
-The page scripting tool captures both the user interactions with the UI and the resulting actions done by the application by its underlying source code. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool. It can't automate, for example, control add-ins, embedded Power BI or Power Apps, or anything outside of the Business Central web client experience.
+The page scripting tool captures both the user interactions with the UI and the resulting actions done by the application by its underlying source code. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool. For example, it can't automate control add-ins, embedded Power BI reports, or anything outside of the Business Central web client experience.
 
 ## Prerequisites
 
@@ -54,6 +54,8 @@ The sections that follow explain other capabilities of the page scripting tool f
 
 ## Record
 
+This section outlines the basic steps to making a recording with the page scripting tool. Sections that follow explain specific details and aspects about recording. 
+  
 1. Open the page where you want to start recording.
 
 1. In the **Page Scripting** pane, select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) button in the control bar at the top.
@@ -68,9 +70,9 @@ The sections that follow explain other capabilities of the page scripting tool f
 
    - To pause recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button in the control bar.
    - To resume recording and continue actions, select the **Start recording** ![start recording](media/page-scripting-start-button.png) button in the control bar.
-   - To delete the last captured step, select **...** next to step and then **Delete**.
-   - To add a wait time before the next step, select the step > **...** > **Add step** > **Wait**.
-   - To hide the page scripting pane while still recording, select the ![Shows the X button the hides the page scripting pane](media/page-scripting-hide-button.png) in the upper right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
+   - To delete the last captured step, select **...** next to the step and then select **Delete**.
+   - To hide the page scripting pane, select the ![Shows the X button the hides the page scripting pane](media/page-scripting-hide-button.png) in the upper right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
+   - To cancel recording and exit the page scripting tool, select ![Shows the X button the hides the page scripting pane](media/page-scripting-hide-button.png).
 
 1. When you're done recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button.
 1. To play back the recording right away, select the **Play** button.
@@ -82,13 +84,16 @@ The sections that follow explain other capabilities of the page scripting tool f
 
 During recording, you can manually insert special steps by right clicking a page control and select an appropriate option. These are explained in the following sections.
 
-### Copy to and paste from clipboard
+### Copy to and paste values from clipboard
 
-The page scripting tool comes with its own clipboard that you can use to copy field values, for example, to insert these in other fields, in expressions or for validation of results. You can copy to or paste from the clipboard with the right select context menu on a page control during recording.
+The page scripting tool comes with its own clipboard that lets you copy values of fields and then paste the values in others fields or expressions, or even use them to validate results. Copy and paste are available from the right-click connect menu on a field.
+
+- To copy a field value to the clipboard, right-click the field and then select **Page Scripting** > **Copy**. The value is saved to the clipboard for pasting later.
+- To paste a field value from the clipboard to another field, select **Page Scripting** > **Paste** > select the value from the list.
 
 ### Paste session info
 
-When recording you have access to session info, such as the user ID. This allows you to, for example, set filters based the current user. To insert the user ID, right select a control in the page, and select Paste > Session Info > User ID. See image above for example.
+When recording, you have access to session information, such as the user ID. This information enables you to, for example, set filters based the current user. To insert the user ID, right select a control in the page, and select Paste > Session Info > User ID. See image above for example.
 
 ### Validate a given outcome
 
@@ -98,15 +103,25 @@ During the recording, you can insert validation steps to check the outcome when 
 
 Another option during the recording is to insert a conditional branch step. One example is to only perform some steps if there are no current rows in a list.
 
-To insert a branch of conditional steps, right-click a controland select "Add conditonal steps when" and select a desired option.
+To insert a branch of conditional steps, right-click a control and select "Add conditional steps when" and select a desired option.
 
-After the conditional step has been inserted, you can add additional steps that should be performed if the condition is met.
+After the conditional step is inserted, you can add more steps that should be performed if the condition is met.
 
 To end the condition branch, select End scope in the Page Scripting steps list.
 
 The actual condition can be changed by selecting the condition step in the Page Scripting step list, expand the properties, and set the comparison rule and value.
 
 <!--alt text start -->Modify comparison rule and value for compare step<!--alt text end -->
+
+### Add a wait step
+
+When recording is eventually played back, it can be convenient to have a time delay after some steps before the next step runs. You add this delay while recording by inserting a wait step immediately after a captured step. You can only add a wait step on the last step listed in the page scripting tool&mdash;you can't insert wait steps between earlier steps.  
+
+To add a wait step:
+
+1. In the **Page Scripting** pane, go to the last step and select **...** > **Add step** > **Wait**.
+1. In the **Wait Time** box, type the number of milliseconds that you want to wait before the next step runs.
+1. Go back to the page and continue the test you're recording.
 
 ## Edit captured steps
 
@@ -138,14 +153,14 @@ Some examples:
 
 Sometimes a page doesn't always show in a recorded flow but depends on data or settings. One example could be the confirm shown when closing a sales order. To handle this, you can make the page an optional page, which means that the steps under the page will only be run if the page is shown. To make a page optional, select the recorder step for "Page X was shown" in the Page Scripting step list, select the ... context menu, and choose "Make this an optional page".
 
-The steps that happen on that page will be shown indented, to indicate that here are optional, depending on page being shown.
+The steps that happen on that page when indented, to indicate that here are optional, depending on page being shown.
 
 ## Play back a recording
 
-You can replay a recording that you just captured, as long as you haven't closed the page scropting tool. You can also play a recording was saved in a file or share as a link
+You can replay a recording that you captured, as long as you haven't closed the page scripting tool. You can also play a recording was saved in a file or share as a link
 
 .
-To play a recording, whether just captured or opened from a file, select the Play button in the toolbar
+To play a recording, whether just captured or opened from a file, select the Play button in the toolbar.
 
 During playback you can:
 
