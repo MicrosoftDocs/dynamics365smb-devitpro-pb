@@ -67,16 +67,16 @@ The sections that follow explain other capabilities of the page scripting tool f
 1. At any time during recording, you can do the following actions.
 
    - To pause recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button in the control bar.
-   - To resume recording and continue actions, select the **Start recording** ![start recording](media/page-scripting-start-button.png) button**Start recording** ![start recording](media/page-scripting-start-button.png) button the control bar.
+   - To resume recording and continue actions, select the **Start recording** ![start recording](media/page-scripting-start-button.png) button in the control bar.
    - To delete the last captured step, select **...** next to step and then **Delete**.
    - To add a wait time before the next step, select the step > **...** > **Add step** > **Wait**.
-   - To hide the page scripting pane while still recording, select the ![Shows the X button the hides the page scripting pane](media/page-scripting-hide-button.png) in the upper right corner. To show it again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
+   - To hide the page scripting pane while still recording, select the ![Shows the X button the hides the page scripting pane](media/page-scripting-hide-button.png) in the upper right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
 
 1. When you're done recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button.
 1. To play back the recording right away, select the **Play** button.
 
    You can replay the recording as long as you don't close the page.
-1. To save the recording to file so you run it later or share with someone, select the **Save** button in the control bar.
+1. To save the recording to file so you run it later or share with someone, select the **Save** button in the control bar. 
 
 ## Options for capturing steps
 
@@ -84,7 +84,7 @@ During recording, you can manually insert special steps by right clicking a page
 
 ### Copy to and paste from clipboard
 
-The Page Scripting tool comes with its own clipboard that you can use to copy field values, for example, to insert these in other fields, in expressions or for validation of results. You can copy to or paste from the clipboard with the right select context menu on a page control during recording.
+The page scripting tool comes with its own clipboard that you can use to copy field values, for example, to insert these in other fields, in expressions or for validation of results. You can copy to or paste from the clipboard with the right select context menu on a page control during recording.
 
 ### Paste session info
 
