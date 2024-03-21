@@ -23,7 +23,7 @@ The page scripting tool captures both the user interactions with the UI and the 
 ## Prerequisites
 
 - To record, your user account must have the **PAGESCRIPTING - REC** permission set or equivalent permissions.
-- To play back a recording, your user account must have the ****PAGESCRIPTING - PLAY** permission set or equivalent permissions.
+- To play back a recording, your user account must have the **PAGESCRIPTING - PLAY** permission set or equivalent permissions.
 
 ## Start the page scripting tool
 
@@ -31,9 +31,9 @@ You can start the page scripting tool from the role centra or any page. In the u
 
 The **Page Scripting** pane opens on the right side, as illustrated in the following figure:
 
-:::image type="content" source="media/page-scripting.svg" alt-text="Shows the page scripting pane in Business Central.":::
+:::image type="content" source="media/page-scripting-2.svg" alt-text="Shows the page scripting pane in Business Central.":::
 
- Now you ready to start a new recording or play an existing recording. 
+Now you ready to start a new recording or play an existing recording. 
 
 
 
@@ -58,15 +58,8 @@ The sections that follow explain other capabilities of the page scripting tool f
 
 ## Record
 
-<!--
-### Get started
-
-1. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon > **Page Scripting**.
-
-   The **Page Scripting** pane opens on the right side.-->
 1. Open the page where you want to start recording.
 
-<!--To start recording, go to-->
 1. In the **Page Scripting** pane, select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) icon in the control bar at the top.
 
    The white circle in the control bar turns red to indicate that you're recording.
