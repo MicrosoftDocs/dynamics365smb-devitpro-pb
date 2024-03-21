@@ -14,11 +14,11 @@ ms.custom: bap-template
 
 The page scripting tool in the Business Central web client lets you record your interactions with the user interface (UI), such as opening pages, selecting actions, filling in fields, and so on. You can then replay the recording to automatically replicate the exact same actions in the UI that were done during recording. As the recording is replayed, you receive real-time status feedback on whether an action succeeds or fails.
 
-A primary use of the page scripting tool is testing business processes and scenarios in the application and validating they continue to work as expected after changes or updates to the application. This testing is often referred to as user acceptance testing (UAT). The page scripting tool makes the testing easier and faster because it eliminates the need to manually walk through each scenario in the UI.
+A primary use of the page scripting tool is testing business processes and scenarios in the application and validating they continue to work as expected after changes or updates to the application. This testing is often referred to as user acceptance testing (UAT). The page scripting tool makes the testing easier and faster because it eliminates the need to manually go through each scenario in the UI.
 
 ## What is captured?
 
-The page scripting tool captures both the user interactions with the UI and the resulting actions done by the application by its underlying source code. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool, so it can't automate, for example, control add-ins such as charts, embedded Power BI or Power Apps, or anything outside of the Business Central web client experience.
+The page scripting tool captures both the user interactions with the UI and the resulting actions done by the application by its underlying source code. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool. It can't automate, for example, control add-ins, embedded Power BI or Power Apps, or anything outside of the Business Central web client experience.
 
 ## Prerequisites
 
@@ -27,17 +27,13 @@ The page scripting tool captures both the user interactions with the UI and the 
 
 ## Start the page scripting tool
 
-You can start the page scripting tool from the role centra or any page. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon > **Page Scripting**.
+You can start the page scripting tool from the role central or any page. In the upper-right corner, select the **Settings** ![cog wheel](media/settings_icon_small.png) icon > **Page Scripting**.
 
 The **Page Scripting** pane opens on the right side, as illustrated in the following figure:
 
 :::image type="content" source="media/page-scripting-2.svg" alt-text="Shows the page scripting pane in Business Central.":::
 
 Now you ready to start a new recording or play an existing recording. 
-
-
-
-
 
 
 <!--
@@ -62,25 +58,25 @@ The sections that follow explain other capabilities of the page scripting tool f
 
 1. In the **Page Scripting** pane, select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) button in the control bar at the top.
 
-   The white circle in the control bar turns red to indicate that you're recording.
+   The **Start recording** ![start recording](media/page-scripting-start-button.png) button in the control bar turns red to indicate that you're recording.
 
 1. Go back to the page and run through the task that you want to record, like you typically would.
 
    As you interact with the application, your interactions actions and the resulting actions done by the application itself are added in sequence as steps in the **Page Scripting** pane.
 
-1. At any time during recording, you can do the following actions:
+1. At any time during recording, you can do the following actions.
 
    - To pause recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button in the control bar.
-   - To resume recording and continue actions, select the **Start recording** ![start recording](media/page-scripting-start-button.png)button the control bar
-   - To delete the last captured step, select **...** next to step and then **Delete**. 
+   - To resume recording and continue actions, select the **Start recording** ![start recording](media/page-scripting-start-button.png) button**Start recording** ![start recording](media/page-scripting-start-button.png) button the control bar.
+   - To delete the last captured step, select **...** next to step and then **Delete**.
    - To add a wait time before the next step, select the step > **...** > **Add step** > **Wait**.
-   - To hide the page scripting pane while still recording, select the 
+   - To hide the page scripting pane while still recording, select the ![Shows the X button the hides the page scripting pane](media/page-scripting-hide-button.png) in the upper right corner. To show it again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
 
-1. When you're done recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button .
+1. When you're done recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button.
 1. To play back the recording right away, select the **Play** button.
 
-   You can replay the recording as long as you don't close the page
-1. To save the recording to file so you run it later or share with someone, select the **Save** icon in the control bar.
+   You can replay the recording as long as you don't close the page.
+1. To save the recording to file so you run it later or share with someone, select the **Save** button in the control bar.
 
 ## Options for capturing steps
 
@@ -96,7 +92,7 @@ When recording you have access to session info, such as the user ID. This allows
 
 ### Validate a given outcome
 
-During the recording you can insert validation steps to check the outcome when playing back. To do this, right select a control, for example, a field or cue, and select "Validate" in the context menu. This inserts a validation step with the current value. You can change the value that is being validated by finding the validate step in the Page Scripting step list, select the context menu "..." and open the properties.
+During the recording, you can insert validation steps to check the outcome when playing back. To do this, right select a control, for example, a field or cue, and select "Validate" in the context menu. This inserts a validation step with the current value. You can change the value that is being validated by finding the validate step in the Page Scripting step list, select the context menu "..." and open the properties.
 
 ### Make steps conditional
 
