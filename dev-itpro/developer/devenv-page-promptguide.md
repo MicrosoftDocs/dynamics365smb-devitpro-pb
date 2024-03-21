@@ -7,13 +7,13 @@ ms.reviewer:
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 03/15/2024
+ms.date: 03/21/2024
 ms.custom: bap-template
 ---
 
 # Prompting using a prompt guide
 
-The prompt guide is a new feature in [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 and runtime 13 of the AL Language extension for Visual Studio Code and is part of the `PromptDialog` page type for [!INCLUDE [prod_short](includes/prod_short.md)] introduced with runtime 12.1.
+The prompt guide is a new feature in [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 and runtime 13 and is part of the `PromptDialog` page type for [!INCLUDE [prod_short](includes/prod_short.md)] introduced with runtime 12.1.
 
 A prompt guide is a predefined list of prompt texts that users can choose from when they open a `PromptDialog` page. The prompt guide helps users by providing one or more predefined prompt texts to use as input to generate content, rather than having to write up a prompt themselves. The user can choose a prompt text from the list, and the selected prompt is then inserted into the prompt input field so that the user can update it before sending to Copilot. Having prompt guides can help users to understand the different ways in which they can phrase their question or instruction to Copilot, reveal different categories of prompts, or inspire different ways of prompting to achieve similar outcomes.
 
@@ -22,11 +22,11 @@ A prompt guide is implemented by using a specific action area on `PromptDialog` 
 There are a couple of things to keep in mind when adding prompt guides to your `PromptDialog` pages:
 
 - Prompt guides are optional but recommended. You can add one or many prompt guides to your prompt dialog as needed.
-- Prompt texts may be organized into groups.
+- Prompt texts might be organized into groups.
 - When a user chooses a prompt text from the guide, this should insert the prompt text into the prompt input box. The prompt text isn't    automatically sent, so that users have the opportunity to first adapt it to their unique needs.
-- Using square brackets in the prompt text can be used to represent placeholders where users will insert their preferred value to complete the prompt.
-- The prompt text shown in the prompt guide menu may be different to the actual text that is inserted into the prompt input box.
-- The AL logic for prompt guides must compute and insert the prompt text into the prompt input. This may include computed values such as dates.
+- Using square brackets in the prompt text can be used to represent placeholders where users insert their preferred value to complete the prompt.
+- The prompt text shown in the prompt guide menu might be different to the actual text that is inserted into the prompt input box.
+- The AL logic for prompt guides must compute and insert the prompt text into the prompt input. This might include computed values such as dates.
 
 ## Syntax
 
