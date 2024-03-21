@@ -321,7 +321,7 @@ page 54320 "Copilot Job Proposal"
 }
 ```
 
-For more information on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
+To see the `Copilot Job Proposal` code example in a complete implementation, go to [aka.ms/BCTech](https://github.com/microsoft/BCTech/blob/master/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al). For more information on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
 
 ## Nudging users with prompt actions
 

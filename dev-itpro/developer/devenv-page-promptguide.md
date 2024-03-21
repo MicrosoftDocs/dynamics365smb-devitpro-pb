@@ -46,7 +46,7 @@ actions
 }
 ```
 
-The prompt guide can have groups of prompts, and each group can have a title. The following example shows how to define a group of prompts with a title.
+The prompt guide can have groups of prompts, and each group can have a title. The following example shows how to define a group of prompts.
 
 ```al
 actions
