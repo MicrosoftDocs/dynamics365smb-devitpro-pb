@@ -31,9 +31,11 @@ Go through the following steps to set up a sandbox environment. Having set up a 
 4) Select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the **User Settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).
 5) Select <kbd>Alt</kbd>+<kbd>A</kbd>, and right after, <kbd>Alt</kbd>+<kbd>L</kbd> to trigger the **AL Go!** command, choose a path to a new empty folder and which version to run. Then choose **Microsoft cloud sandbox** as the server.  
     > [!NOTE]  
-    > If you want to change your configuration at a later point in time, you can choose the **Add Configuration** button on the bottom right side, and then choose one of the available options.  
+    > If you want to change your configuration at a later point in time, you can choose the **Add Configuration** button on the bottom right side, and then choose one of the available options.
+    > [!TIP]
+    > When no folders are opened, the primary side bar for the Visual Studio Code Explorer has a **Create AL Project** button. Clicking this button invokes the `AL:Go` command to create a new project.
 6) Enter the credentials that you provided for the sign-up.
-7)   Select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to deploy and run the extension on your online sandbox tenant.  
+7) Select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to deploy and run the extension on your online sandbox tenant.  
 
 > [!NOTE]  
 > For some users the <kbd>Ctrl</kbd>+<kbd>F5</kbd> shortcut key might not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** dropdown in Visual Studio Code.
