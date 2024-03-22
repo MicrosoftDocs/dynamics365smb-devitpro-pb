@@ -91,7 +91,7 @@ During recording, you can manually insert special steps by right clicking a page
 
 ### Copy and paste control values
 
-The page scripting tool comes with its own clipboard that lets you copy values of controls and then paste the values in others controls or expressions, or even use them to [validate results](#validate-a-control-or-field-value). Copy and paste are available from the right-click context menu on a control.
+The page scripting tool comes with its own clipboard. The clipboard lets you copy values of controls and then paste the values in others controls or expressions, or even use them to [validate results](#validate-a-control-or-field-value). Copy and paste are available from the right-click context menu on a control.
 
 - To copy a control value to the clipboard, right-click the control and then select **Page Scripting** > **Copy**. The value is saved to the clipboard for pasting later.
 - To paste a control value from the clipboard to another control, select **Page Scripting** > **Paste** > select the value from the list. Pasting a value from the clipboard creates an *input* step in the **Page Scripting** pane.
@@ -121,7 +121,7 @@ To add a validation step:
 
 Another option during the recording is to insert conditional steps. During playback, conditional steps are only run if the condition is met. For example, suppose you only want to do some steps if there are no current rows in a list.
 
-When you insert a conditional step, you can choose to base the condition on the control's current value, a value copied to the clipboard, or a value that you define using Power FX.
+When you insert a conditional step, you can choose to base the condition on the control's current value, a value copied to the clipboard, or a value that you define using [Power Fx](#use-expressions-in-properties).
 
 To insert conditional steps:
 
@@ -134,7 +134,7 @@ To insert conditional steps:
 
 1. Return to the page and go through steps that you want run if the condition is met.
 1. When you're finished adding conditional steps, select **End scope** in the **Page Scripting** pane.
-1. If you want to modify the condition, go the conditional step in the **Page Scripting** pane, and then select **...** > **Properties**.  In the **Properties** area, change the **Operator** and **Value** fields to set the comparison rule and value.
+1. If you want to modify the condition, go the conditional step in the **Page Scripting** pane, and then select **...** > **Properties**. In the **Properties** area, change the **Operator** and **Value** fields to set the comparison rule and value.
 
 ### Add a wait step
 
@@ -156,24 +156,29 @@ Some steps, like conditional steps or validation steps, have properties that you
 
 #### Use expressions in properties
 
-Property values and conditions are typically through actions done during recording. However, these values and conditions are represented as Microsoft Power Fx expressions. Power FX is the low-code language used across Microsoft Power Platform. It's a general-purpose, strong-typed, declarative, and functional programming language.
+Property values and conditions are typically through actions done during recording. However, these values and conditions are represented as Microsoft Power Fx expressions. Power Fx is the low-code language used across Microsoft Power Platform. It's a general-purpose, strong-typed, declarative, and functional programming language.
 
 Here are a couple examples:
 
 - To validate that a previously copied value is incremented in a validate step, use the expression: `Clipboard.'SO Processor Activities - ReadyToShip' + 1`.
 - To generate a "random" name to use in an input step, use the expression: `"Customer " & Today()`.
 
-[Learn more about Power FX.](/power-platform/power-fx/overview)
+[Learn more about Power Fx.](/power-platform/power-fx/overview)
 
 ### Handle optional pages
 
-Sometimes a page doesn't always show in a recorded flow but depends on data or settings. One example could be the confirm shown when closing a sales order. To handle this, you can make the page an optional page, which means that the steps under the page will only be run if the page is shown. To make a page optional, select the recorder step for "Page X was shown" in the Page Scripting step list, select the ... context menu, and choose "Make this an optional page".
+Sometimes a page doesn’t always show in a recorded flow because it depends on data or settings. An example is the confirmation dialog shown when closing a sales order. To handle this situation, you can make the page an optional page, which means that the steps under the page only run if the page is shown.
 
-The steps that happen on that page when indented, to indicate that here are optional, depending on page being shown.
+To make a page optional:
+
+1. In the **Page Scripting** pane, locate the recorded step that opens optional page. The step has the similar to **Page X was shown**, where **X** is the name.
+1. On the step, select **...** > **Make this an optional page**.
+
+   The steps that follow the optional page are indented to indicate that they're only run if the page is shown.
 
 ## Play a recording
 
-There are three ways to play back a recording. You can play a recording that you just captured, as long as you haven't closed the page scripting tool, by selecting the **Play** ![play recording](media/page-scripting-play-button.png) button in the control bar. You can also play a recording that was saved to a file or shared as a link.
+There are three ways to play back a recording. You can play a recording that you captured, as long as you don't close the page scripting tool, by selecting the **Play** ![play recording](media/page-scripting-play-button.png) button in the control bar. You can also play a recording that was saved to a file or shared as a link.
 
 - To play a recording saved as a file, select either the **Open** button in the **Page Scripting** pane or the **Open recording** ![open recording button](media/page-scripting-open-recording-button.png) button in the control bar. Locate and open the recording file.
 - To play a recording to have as a link, select the link to open page scripting tool in Business Central.
@@ -197,14 +202,12 @@ You can share a recording or a playback as a link (URL) that you can share with 
 
 ## Best practices and tips
 
-- Start recording from a well-known place, like the role center. Playback will always start from current page. It will not automatically be to ensure that page is opened.
-When selected a value in a grid, it best to filter it down so that the desired value is the first one. 
-Create new entities to use in a test
-I.e., create new customer to use in the new sales order
-Avoids dependencies on data that may not be there
-Break down recording to small parts for easier maintenance
-Recording 1: setup user
-Recording 2: create customer
-Recording 3: create sales order
-Recording 4: post sales order
-
+- Start recording from a well-known place, like the role center. Playback always starts from current page.
+- When you select a value in a grid, filter it so that the desired value is the first one.
+- Create new entities to use in a test hwnever possible. For example, create a new customer to use in the new sales order test.
+- Avoid dependencies on data that might not be available during playback.
+- Break down recording to small parts for easier maintenance, for example:
+  - Recording 1: setup user.
+  - Recording 2: create customer.
+  - Recording 3: create sales order.
+  - Recording 4: post sales order.
