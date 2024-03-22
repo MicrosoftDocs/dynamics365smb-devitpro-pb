@@ -194,7 +194,7 @@ As the steps are played back, the results are recorded next to each step. A gree
 
 ## Save a recording to a file
 
-You can save the recording as YAML file that can be downloaded, shared, edited, and reopened for playback. select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar. 
+You can save the recording as YAML file that can be downloaded, shared, edited, and reopened for playback. To save, select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar.
 
 ## Share a recording as a link
 
