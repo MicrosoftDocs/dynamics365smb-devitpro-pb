@@ -196,6 +196,9 @@ As the steps are played back, the results are recorded next to each step. A gree
 
 You can save the recording as YAML file that can be downloaded, shared, edited, and reopened for playback. To save, select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar.
 
+> [!TIP]
+> To add a description to a recording, select **...** in the **Recording** bar at the top, then type the text in the **Description** field.
+
 ## Share a recording as a link
 
 You can share a recording or a playback as a link (URL) that you can share with others. The link includes the full recording along with the results that occurred during playback. To share a recording as a link, select **Share** ![share recording](media/page-scripting-share-recording-button.png) > **Copy Link** in the control bar.
