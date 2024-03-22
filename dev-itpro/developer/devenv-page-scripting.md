@@ -115,7 +115,7 @@ To add a validation step:
    A validate step is added to the **Page Scripting** pane.
 1. If you want to modify the value to be validated, go to the step, select ***...** > **Properties**. In the **Properties** area, change the **Operator** and **Value** fields as needed.
 
-   ![Shows the properties of a validation step recording](media/page-scripting-validate-step.png)
+   ![Shows the properties of a validation step recording](media/page-scripting-validation-step.png)
 
 ### Make steps conditional
 
