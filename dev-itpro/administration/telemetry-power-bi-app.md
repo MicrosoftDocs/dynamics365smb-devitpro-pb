@@ -1,17 +1,17 @@
 ---
-title: Analyze and Monitor Telemetry with Power BI
+title: Analyze and monitor telemetry with Power BI
 description: Learn how to install, configure, and use the Power BI app on Business Central telemetry data.
 author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 03/19/2024
+ms.date: 03/21/2024
 ms.author: jswymer
 ms.custom: bac-template
 
 ---
 
-# Analyze and Monitor Telemetry with Power BI
+# Analyze and monitor telemetry with Power BI
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
