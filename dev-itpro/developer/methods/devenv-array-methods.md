@@ -1,8 +1,8 @@
 ---
-title: "Array methods"
-description: "Methods of the type array in AL for Business Central"
+title: Array methods
+description: Methods of the type array in AL for Business Central.
 ms.custom: na
-ms.date: 04/20/2023
+ms.date: 03/19/2024
 ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -56,9 +56,9 @@ arrayOfDotNetVariables: array [10] of DotNet String;
 
 The following AL methods for arrays are available:  
 
-[ArrayLen Method](../methods-auto/system/system-arraylen-method.md)  
-[CompressArray Method](../methods-auto/system/system-compressarray-method.md)  
-[CopyArray Method](../methods-auto/system/system-copyarray-method.md)
+[ArrayLen method](../methods-auto/system/system-arraylen-method.md)  
+[CompressArray method](../methods-auto/system/system-compressarray-method.md)  
+[CopyArray method](../methods-auto/system/system-copyarray-method.md)
 
 ## Array of temporary records
 
