@@ -89,7 +89,7 @@ During recording, you can manually insert special steps by right clicking a page
 The page scripting tool comes with its own clipboard that lets you copy values of fields and then paste the values in others fields or expressions, or even use them to validate results. Copy and paste are available from the right-click connect menu on a field.
 
 - To copy a field value to the clipboard, right-click the field and then select **Page Scripting** > **Copy**. The value is saved to the clipboard for pasting later.
-- To paste a field value from the clipboard to another field, select **Page Scripting** > **Paste** > select the value from the list.
+- To paste a field value from the clipboard to another field, select **Page Scripting** > **Paste** > select the value from the list. Pasting a value from the clipboard creates an *input* step in the **Page Scripting** pane.
 
 ### Paste session info (user ID)
 
@@ -99,7 +99,19 @@ An input step with property value `Session.'User ID'` is added in the **Page Scr
 
 ### Validate a given outcome
 
-While recording, you can insert validation steps that check that a control or field has a specific value when the recording is played back. To do this, right select a control, for example, a field or cue, and select "Validate" in the context menu. This inserts a validation step with the current value. You can change the value that is being validated by finding the validate step in the Page Scripting step list, select the context menu "..." and open the properties.
+While recording, you can insert validation steps that assert that a control or field has a specific value when the recording is played back. When you insert a validation step, you can choose to validate against the current value of the contro/field, a value copied to the clipboard, or define your own expression for the value. PowerFX is used as the expression language.
+
+To add a validation step:
+
+1. Right-click the control or field that you want to validate, for example, a field or cue, to open the context menu.
+1. In the content menu, select **Page Scripting** > **Validate** > **Current Value**.
+1. Select **Is** *[current value]* or a value under the **is equal to clipboard entry** (only appears if there you previusly copied a value to the clipboard).
+
+   A validate step is added to the **Page Scripting** pane.
+1. To modify the value that's validated, go to the step, select ***...** > **Properties**.
+1. In the **Properties** area, change the **Operator** and **Value** fields.
+
+   ![Shows hte properties of a validation step recording](media/page-scripting-validate-step.png)
 
 ### Make steps conditional
 
