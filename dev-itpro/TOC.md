@@ -522,6 +522,7 @@
 <!--### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)-->
 #### [Application testing example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
 #### [The performance toolkit extension](developer/devenv-performance-toolkit.md)
+#### [Use page scripting for acceptance testing (preview)](/developer/devenv-page-scripting.md)
 #### [FAQ about testing your Business Central app](developer/app-faq-test.md)
 
 ### Work in sandboxes
