@@ -80,10 +80,10 @@ This section outlines the basic steps to making a recording with the page script
    - To cancel recording and exit the page scripting tool, select ![Shows the X button the hides the page scripting pane](media/page-scripting-hide-button.png).
 
 1. When you're done recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button.
-1. To play back the recording right away, select the **Play** button.
+1. To play back the recording right away, select the **Play** ![play recording](media/page-scripting-play-button.png) button.
 
    You can replay the recording as long as you don't close the page.
-1. To save the recording to file so you run it later or share with someone, select the **Save** button in the control bar.
+1. To save the recording to file so you run it later or share with someone, select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar.
 
 ## Options for capturing steps
 
@@ -177,12 +177,13 @@ Sometimes a page doesn't always show in a recorded flow but depends on data or s
 
 The steps that happen on that page when indented, to indicate that here are optional, depending on page being shown.
 
-## Play back a recording
+## Play a recording
 
-You can replay a recording that you captured, as long as you haven't closed the page scripting tool. You can also play a recording was saved in a file or share as a link
+You can play a recording that you just captured, as long as you haven't closed the page scripting tool, by selecting the **Play** ![play recording](media/page-scripting-play-button.png) button in the control bar.  You can also play a recording that was saved ito a file or shared as a link.
 
-.
-To play a recording, whether just captured or opened from a file, select the Play button in the toolbar.
+- To play a recording saved as a file, select either the **Open** button in the **Page Scripting** pane or the **Open recording** ![open recording button](media/page-scripting-open-recording-button.png) button in the control bar. Locate and open the recording file.
+- To play a recording to have as a link, select the link to open page scripting tool in Business Central.
+
 
 During playback you can:
 
@@ -194,11 +195,11 @@ As the steps are played back the tool will record if they completed correctly (g
 
 ## Save a recording to a file
 
-You can save the recording from the toolbar. This will create a YAML file that can be downloaded, shared, edited, and reopenen for playback.
+You can save the recording as YAML file that can be downloaded, shared, edited, and reopened for playback. select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar. 
 
 ## Share a recording as a link
 
-You can also share a recording as a link, just click the share button in the toolbar. The link includes the full recording as well as its playback result. In the example below, we set that the playback has failed halfway.
+You can share a recording or a playback as a link (URL) that you can share with others. The link includes the full recording along with the results that occurred during playback. To share a recording as a link, select **Share** ![share recording](media/page-scripting-shar-recording-button.png) > **Copy Link** in the control bar.
 
 ## Common
 
