@@ -84,20 +84,22 @@ This section outlines the basic steps to making a recording with the page script
 
 During recording, you can manually insert special steps by right clicking a page control and select an appropriate option. These are explained in the following sections.
 
-### Copy to and paste values from clipboard
+### Copy and paste field values
 
 The page scripting tool comes with its own clipboard that lets you copy values of fields and then paste the values in others fields or expressions, or even use them to validate results. Copy and paste are available from the right-click connect menu on a field.
 
 - To copy a field value to the clipboard, right-click the field and then select **Page Scripting** > **Copy**. The value is saved to the clipboard for pasting later.
 - To paste a field value from the clipboard to another field, select **Page Scripting** > **Paste** > select the value from the list.
 
-### Paste session info
+### Paste session info (user ID)
 
-When recording, you have access to session information, such as the user ID. This information enables you to, for example, set filters based the current user. To insert the user ID, right select a control in the page, and select Paste > Session Info > User ID. See image above for example.
+When recording, you have access to session information, such as the user ID. This information can be used in expressions and conditions.  For example, suppose you have a list page that can be filtered based on the current signed in user. To insert the user ID in a field, like a filter, right-click the field and then select **Page Scripting** > **Paste**> **Session Info** > **User ID**.
+
+An inputstep is added in the **Page Scripting** pane. The step has the a property value `Session.'User ID'`.
 
 ### Validate a given outcome
 
-During the recording, you can insert validation steps to check the outcome when playing back. To do this, right select a control, for example, a field or cue, and select "Validate" in the context menu. This inserts a validation step with the current value. You can change the value that is being validated by finding the validate step in the Page Scripting step list, select the context menu "..." and open the properties.
+While recording, you can insert validation steps that check that a control or field has a specific value when the recording is played back. To do this, right select a control, for example, a field or cue, and select "Validate" in the context menu. This inserts a validation step with the current value. You can change the value that is being validated by finding the validate step in the Page Scripting step list, select the context menu "..." and open the properties.
 
 ### Make steps conditional
 
