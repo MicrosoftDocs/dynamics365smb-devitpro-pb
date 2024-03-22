@@ -20,8 +20,6 @@ A primary use of the page scripting tool is testing business processes and scena
 
 The page scripting tool captures both the user interactions with the UI and the resulting actions done by the application by its underlying source code. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool. For example, it can't automate control add-ins, embedded Power BI reports, or anything outside of the Business Central web client experience.
 
-
-
 ## Prerequisites
 
 - To record, your user account must have the **PAGESCRIPTING - REC** permission set or equivalent permissions.
@@ -67,7 +65,7 @@ This section outlines the basic steps to making a recording with the page script
 
    The **Start recording** ![start recording](media/page-scripting-start-button.png) button in the control bar turns red to indicate that you're recording.
 
-1. Go back to the page and run through the task that you want to record, like you typically would.
+1. Go back to the page and run through the task that you want to recordd.
 
    As you interact with the application, your interactions actions and the resulting actions done by the application itself are added in sequence as steps in the **Page Scripting** pane.
 
@@ -83,28 +81,28 @@ This section outlines the basic steps to making a recording with the page script
 1. To play back the recording right away, select the **Play** ![play recording](media/page-scripting-play-button.png) button.
 
    You can replay the recording as long as you don't close the page.
-1. To save the recording to file so you run it later or share with someone, select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar.
+1. To save the recording to file so you can run it later or share with someone, select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar.
 
 ## Options for capturing steps
 
-During recording, you can manually insert special steps by right clicking a page control and select an appropriate option. These options are explained in the following sections.
+During recording, you can manually insert special steps by right clicking a page control and selecting an appropriate option. These options are explained in the following sections.
 
 ### Copy and paste control values
 
-The page scripting tool comes with its own clipboard that lets you copy values of controls and then paste the values in others controls or expressions, or even use them to [validate results](#validate-a-control-or-field-value). Copy and paste are available from the right-click connect menu on a control.
+The page scripting tool comes with its own clipboard that lets you copy values of controls and then paste the values in others controls or expressions, or even use them to [validate results](#validate-a-control-or-field-value). Copy and paste are available from the right-click context menu on a control.
 
 - To copy a control value to the clipboard, right-click the control and then select **Page Scripting** > **Copy**. The value is saved to the clipboard for pasting later.
 - To paste a control value from the clipboard to another control, select **Page Scripting** > **Paste** > select the value from the list. Pasting a value from the clipboard creates an *input* step in the **Page Scripting** pane.
 
 ### Use session info (user ID)
 
-When recording, you have access to session information, such as the user ID. This information can be used in expressions and conditions.  For example, suppose you have a list page that can be filtered based on the current signed in user. To insert the user ID in a control, like a filter, right-click the control and then select **Page Scripting** > **Paste**> **Session Info** > **User ID**.
+When recording, you have access to session information, such as the user ID. This information can be used in expressions and defining conditions. For example, suppose you have a list page that can be filtered based on the current signed in user. To insert the user ID in a control, like a filter, right-click the control and then select **Page Scripting** > **Paste**> **Session Info** > **User ID**.
 
 An input step with property value `Session.'User ID'` is added in the **Page Scripting** pane.
 
 ### Validate control values
 
-While recording, you can insert validation steps that assert that a control has a specific value when the recording is played back. When you insert a validation step, you can choose to validate against the control's current value, a value copied to the clipboard, or a value that you define using Power FX.
+While recording, you can insert validation steps that assert that a control has a specific value when the recording is played back. When you insert a validation step, you can choose to validate using the control's current value, a value from the clipboard, or a custom value that you define using Power FX.
 
 To add a validation step:
 
