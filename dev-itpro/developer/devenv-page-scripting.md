@@ -16,6 +16,8 @@ The page scripting tool in the Business Central web client lets you record your 
 
 A primary use of the page scripting tool is testing business processes and scenarios in the application and validating they continue to work as expected after changes or updates to the application. This testing is often referred to as user acceptance testing (UAT). The page scripting tool makes the testing easier and faster because it eliminates the need to manually go through each scenario in the UI.
 
+[!INCLUDE[production-ready-preview-dynamics365](includes/production-ready-preview-dynamics365.md)]
+
 ## What is captured?
 
 The page scripting tool captures both the user interactions with the UI and the resulting actions done by the application by its underlying source code. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool. For example, it can't automate control add-ins, embedded Power BI reports, or anything outside of the Business Central web client experience.
@@ -65,7 +67,7 @@ This section outlines the basic steps to making a recording with the page script
 
    The **Start recording** ![start recording](media/page-scripting-start-button.png) button in the control bar turns red to indicate that you're recording.
 
-1. Go back to the page and run through the task that you want to recordd.
+1. Go back to the page and run through the task that you want to record.
 
    As you interact with the application, your interactions actions and the resulting actions done by the application itself are added in sequence as steps in the **Page Scripting** pane.
 
@@ -102,7 +104,7 @@ An input step with property value `Session.'User ID'` is added in the **Page Scr
 
 ### Validate control values
 
-While recording, you can insert validation steps that assert that a control has a specific value when the recording is played back. When you insert a validation step, you can choose to validate using the control's current value, a value from the clipboard, or a custom value that you define using Power FX.
+While recording, you can insert validation steps that assert that a control has a specific value when the recording is played back. When you insert a validation step, you can choose to validate using the control's current value, a value from the clipboard, or a custom value that you define using Power Fx.
 
 To add a validation step:
 
@@ -111,14 +113,15 @@ To add a validation step:
 1. Select **Is** *[current value]* or a value under the **is equal to clipboard entry** (only appears if there you previously copied a value to the clipboard).
 
    A validate step is added to the **Page Scripting** pane.
-1. To modify the value to be validated, go to the step, select ***...** > **Properties**.
-1. In the **Properties** area, change the **Operator** and **Value** fields.
+1. If you want to modify the value to be validated, go to the step, select ***...** > **Properties**. In the **Properties** area, change the **Operator** and **Value** fields as needed.
 
    ![Shows the properties of a validation step recording](media/page-scripting-validate-step.png)
 
 ### Make steps conditional
 
-Another option during the recording is to insert conditional steps. During playback, conditional steps are only run if condition is met. For example, suppose you only want to perform some steps if there are no current rows in a list. When you insert a conditional step, you can choose to validate against the control's current value, a value copied to the clipboard, or a value that you define using Power FX.
+Another option during the recording is to insert conditional steps. During playback, conditional steps are only run if the condition is met. For example, suppose you only want to do some steps if there are no current rows in a list.
+
+When you insert a conditional step, you can choose to base the condition on the control's current value, a value copied to the clipboard, or a value that you define using Power FX.
 
 To insert conditional steps:
 
@@ -129,8 +132,8 @@ To insert conditional steps:
 
    A *conditional branch step* is added to the **Page Scripting** pane, for example, **When rows count is 0**. The **End Scope** button appears at the top of the step list to indicate that the next steps you add are the conditional steps.
 
-1. Return to the page and go through steps that you want to if the condition is met. 
-1. To end the condition branch, select **End scope** in the **Page Scripting** steps list.
+1. Return to the page and go through steps that you want run if the condition is met.
+1. When you're finished adding conditional steps, select **End scope** in the **Page Scripting** pane.
 1. If you want to modify the condition, go the conditional step in the **Page Scripting** pane, and then select **...** > **Properties**.  In the **Properties** area, change the **Operator** and **Value** fields to set the comparison rule and value.
 
 ### Add a wait step
@@ -145,29 +148,22 @@ To add a wait step:
 
 ## Edit captured steps
 
-During recording and playback, you can edit a captured step using the context menu "..." on the step. The editing options for a step depend on whether your recording or playing back a recording and what kind of action the step runs. 
+During recording and playback, you can edit a captured step. The editing options for a step depend on whether your recording or playing back a recording and what kind of action the step runs. This section explains some of the options. 
 
+### Change step properties
 
-ction but includes showing properties, deleting the step etc. Some of the options are explained in more detail below.
+Some steps, like conditional steps or validation steps, have properties that you can modify to change the behavior. To access the properties for a step in the **Page Scripting** pane, select  **...** > **Properties**.  
 
-### Properties
+#### Use expressions in properties
 
-Some steps have properties, for example, conditional steps or validation steps. You can see the properties for a step by selecting the Properties option from the context menu on a step.
+Property values and conditions are typically through actions done during recording. However, these values and conditions are represented as Microsoft Power Fx expressions. Power FX is the low-code language used across Microsoft Power Platform. It's a general-purpose, strong-typed, declarative, and functional programming language.
 
-### Using expressions in properties
+Here are a couple examples:
 
-Values and conditions can use expressions for simple calculations. PowerFX is used as the expression language. There's a link to the PowerFX expression reference in the UI.
+- To validate that a previously copied value is incremented in a validate step, use the expression: `Clipboard.'SO Processor Activities - ReadyToShip' + 1`.
+- To generate a "random" name to use in an input step, use the expression: `"Customer " & Today()`.
 
-Besides the PowerFX functions, three top level objects are available:
-
-- Clipboard: access to the current entries copied in this recording
-- Parameters: access to value of any parameters passed to this recording
-- SessionInfo: session information like current user ID
-
-Some examples:
-
-- To validate that a previously copied value is incremented in a validate step, use the expression " Clipboard.'SO Processor Activities - ReadyToShip' + 1"
-- To generate a "random" name to use in an input step, use the expression "Customer " & Today()
+[Learn more about Power FX.](/power-platform/power-fx/overview)
 
 ### Handle optional pages
 
@@ -177,19 +173,19 @@ The steps that happen on that page when indented, to indicate that here are opti
 
 ## Play a recording
 
-You can play a recording that you just captured, as long as you haven't closed the page scripting tool, by selecting the **Play** ![play recording](media/page-scripting-play-button.png) button in the control bar.  You can also play a recording that was saved ito a file or shared as a link.
+There are three ways to play back a recording. You can play a recording that you just captured, as long as you haven't closed the page scripting tool, by selecting the **Play** ![play recording](media/page-scripting-play-button.png) button in the control bar. You can also play a recording that was saved to a file or shared as a link.
 
 - To play a recording saved as a file, select either the **Open** button in the **Page Scripting** pane or the **Open recording** ![open recording button](media/page-scripting-open-recording-button.png) button in the control bar. Locate and open the recording file.
 - To play a recording to have as a link, select the link to open page scripting tool in Business Central.
 
+During playback, you can do the following operations:
 
-During playback you can:
+- Move a step forward or backward by selecting **Previous** ![previus step button](media/page-scripting-previous-button.png) and **Next** ![next step button](media/page-scripting-next-button.png). When you go back a step, changes made aren't undone though. 
+- Go back to the start by selecting **Rewind** ![rewind button](media/page-scripting-rewind-button.png). 
+- Run to a given step by selecting the step in the **Page Scripting** pane > **...** > **Run to here**.
+- Hide the **Page Scripting** pane by selecting the ![Shows the X button the hides the page scripting pane](media/page-scripting-hide-button.png) in the upper right corner. Playback continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
 
-- Single step forward or backward with the forward and backward buttons in the in the toolbar. When stepping backward, changes will not be undone though, the user would have to correct that
-- Jump back to the beginning
-- Run to a given step. To do this, click the "..." on the step to open the context menu and select "Run to here".
-
-As the steps are played back the tool will record if they completed correctly (green checkmark) or not (red exclamation), as well as the result of any assert steps validating a result.
+As the steps are played back, the results are recorded next to each step. A green circle with a checkmark indicates the step succeeded. A red circle with an exclamation mark indicates that the step failed. 
 
 ## Save a recording to a file
 
@@ -198,7 +194,3 @@ You can save the recording as YAML file that can be downloaded, shared, edited, 
 ## Share a recording as a link
 
 You can share a recording or a playback as a link (URL) that you can share with others. The link includes the full recording along with the results that occurred during playback. To share a recording as a link, select **Share** ![share recording](media/page-scripting-shar-recording-button.png) > **Copy Link** in the control bar.
-
-## Common
-
-While you're recording and during playback you can click the Close button (X) in the upper-right corner to hide the Page Scripting pane without stopping the recording or playback. You can reopen the Page Scripting pane by clicking the Task recorder button that appears at the top of the page. This button appears only while recording is in progress.
