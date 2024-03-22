@@ -20,6 +20,8 @@ A primary use of the page scripting tool is testing business processes and scena
 
 The page scripting tool captures both the user interactions with the UI and the resulting actions done by the application by its underlying source code. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool. For example, it can't automate control add-ins, embedded Power BI reports, or anything outside of the Business Central web client experience.
 
+
+
 ## Prerequisites
 
 - To record, your user account must have the **PAGESCRIPTING - REC** permission set or equivalent permissions.
@@ -52,6 +54,9 @@ Now you ready to start a new recording or play an existing recording.
 
 The sections that follow explain other capabilities of the page scripting tool for recording and replaying interactions. -->
 
+> [!NOTE]
+> In this article, *control* refers to page controls, like fields, cues or filters.
+
 ## Record
 
 This section outlines the basic steps to making a recording with the page scripting tool. Sections that follow explain specific details and aspects about recording. 
@@ -78,54 +83,57 @@ This section outlines the basic steps to making a recording with the page script
 1. To play back the recording right away, select the **Play** button.
 
    You can replay the recording as long as you don't close the page.
-1. To save the recording to file so you run it later or share with someone, select the **Save** button in the control bar. 
+1. To save the recording to file so you run it later or share with someone, select the **Save** button in the control bar.
 
 ## Options for capturing steps
 
-During recording, you can manually insert special steps by right clicking a page control and select an appropriate option. These are explained in the following sections.
+During recording, you can manually insert special steps by right clicking a page control and select an appropriate option. These options are explained in the following sections.
 
-### Copy and paste field values
+### Copy and paste control values
 
-The page scripting tool comes with its own clipboard that lets you copy values of fields and then paste the values in others fields or expressions, or even use them to validate results. Copy and paste are available from the right-click connect menu on a field.
+The page scripting tool comes with its own clipboard that lets you copy values of controls and then paste the values in others controls or expressions, or even use them to [validate results](#validate-a-control-or-field-value). Copy and paste are available from the right-click connect menu on a control.
 
-- To copy a field value to the clipboard, right-click the field and then select **Page Scripting** > **Copy**. The value is saved to the clipboard for pasting later.
-- To paste a field value from the clipboard to another field, select **Page Scripting** > **Paste** > select the value from the list. Pasting a value from the clipboard creates an *input* step in the **Page Scripting** pane.
+- To copy a control value to the clipboard, right-click the control and then select **Page Scripting** > **Copy**. The value is saved to the clipboard for pasting later.
+- To paste a control value from the clipboard to another control, select **Page Scripting** > **Paste** > select the value from the list. Pasting a value from the clipboard creates an *input* step in the **Page Scripting** pane.
 
-### Paste session info (user ID)
+### Use session info (user ID)
 
-When recording, you have access to session information, such as the user ID. This information can be used in expressions and conditions.  For example, suppose you have a list page that can be filtered based on the current signed in user. To insert the user ID in a field, like a filter, right-click the field and then select **Page Scripting** > **Paste**> **Session Info** > **User ID**.
+When recording, you have access to session information, such as the user ID. This information can be used in expressions and conditions.  For example, suppose you have a list page that can be filtered based on the current signed in user. To insert the user ID in a control, like a filter, right-click the control and then select **Page Scripting** > **Paste**> **Session Info** > **User ID**.
 
 An input step with property value `Session.'User ID'` is added in the **Page Scripting** pane.
 
-### Validate a given outcome
+### Validate control values
 
-While recording, you can insert validation steps that assert that a control or field has a specific value when the recording is played back. When you insert a validation step, you can choose to validate against the current value of the contro/field, a value copied to the clipboard, or define your own expression for the value. PowerFX is used as the expression language.
+While recording, you can insert validation steps that assert that a control has a specific value when the recording is played back. When you insert a validation step, you can choose to validate against the control's current value, a value copied to the clipboard, or a value that you define using Power FX.
 
 To add a validation step:
 
-1. Right-click the control or field that you want to validate, for example, a field or cue, to open the context menu.
+1. Right-click the control that you want to validate.
 1. In the content menu, select **Page Scripting** > **Validate** > **Current Value**.
-1. Select **Is** *[current value]* or a value under the **is equal to clipboard entry** (only appears if there you previusly copied a value to the clipboard).
+1. Select **Is** *[current value]* or a value under the **is equal to clipboard entry** (only appears if there you previously copied a value to the clipboard).
 
    A validate step is added to the **Page Scripting** pane.
-1. To modify the value that's validated, go to the step, select ***...** > **Properties**.
+1. To modify the value to be validated, go to the step, select ***...** > **Properties**.
 1. In the **Properties** area, change the **Operator** and **Value** fields.
 
-   ![Shows hte properties of a validation step recording](media/page-scripting-validate-step.png)
+   ![Shows the properties of a validation step recording](media/page-scripting-validate-step.png)
 
 ### Make steps conditional
 
-Another option during the recording is to insert a conditional branch step. One example is to only perform some steps if there are no current rows in a list.
+Another option during the recording is to insert conditional steps. During playback, conditional steps are only run if condition is met. For example, suppose you only want to perform some steps if there are no current rows in a list. When you insert a conditional step, you can choose to validate against the control's current value, a value copied to the clipboard, or a value that you define using Power FX.
 
-To insert a branch of conditional steps, right-click a control and select "Add conditional steps when" and select a desired option.
+To insert conditional steps:
 
-After the conditional step is inserted, you can add more steps that should be performed if the condition is met.
+1. Right-click the control you want to apply the conditional steps to.
 
-To end the condition branch, select End scope in the Page Scripting steps list.
+   If you consider the list example previously mentioned, you right-click a column.
+1. In the context menu, select **Page Scripting** > **Add conditional steps when** and then the desired option. Continuing with the list example, you select **Page Scripting** > **Add conditional steps when** > **Row count** > **is 0**.  
 
-The actual condition can be changed by selecting the condition step in the Page Scripting step list, expand the properties, and set the comparison rule and value.
+   A *conditional branch step* is added to the **Page Scripting** pane, for example, **When rows count is 0**. The **End Scope** button appears at the top of the step list to indicate that the next steps you add are the conditional steps.
 
-<!--alt text start -->Modify comparison rule and value for compare step<!--alt text end -->
+1. Return to the page and go through steps that you want to if the condition is met. 
+1. To end the condition branch, select **End scope** in the **Page Scripting** steps list.
+1. If you want to modify the condition, go the conditional step in the **Page Scripting** pane, and then select **...** > **Properties**.  In the **Properties** area, change the **Operator** and **Value** fields to set the comparison rule and value.
 
 ### Add a wait step
 
