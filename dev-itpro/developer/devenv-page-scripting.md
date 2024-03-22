@@ -95,7 +95,7 @@ The page scripting tool comes with its own clipboard that lets you copy values o
 
 When recording, you have access to session information, such as the user ID. This information can be used in expressions and conditions.  For example, suppose you have a list page that can be filtered based on the current signed in user. To insert the user ID in a field, like a filter, right-click the field and then select **Page Scripting** > **Paste**> **Session Info** > **User ID**.
 
-An inputstep is added in the **Page Scripting** pane. The step has the a property value `Session.'User ID'`.
+An input step with property value `Session.'User ID'` is added in the **Page Scripting** pane.
 
 ### Validate a given outcome
 
