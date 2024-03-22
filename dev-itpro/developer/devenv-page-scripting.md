@@ -198,7 +198,7 @@ You can save the recording as YAML file that can be downloaded, shared, edited, 
 
 ## Share a recording as a link
 
-You can share a recording or a playback as a link (URL) that you can share with others. The link includes the full recording along with the results that occurred during playback. To share a recording as a link, select **Share** ![share recording](media/page-scripting-shar-recording-button.png) > **Copy Link** in the control bar.
+You can share a recording or a playback as a link (URL) that you can share with others. The link includes the full recording along with the results that occurred during playback. To share a recording as a link, select **Share** ![share recording](media/page-scripting-share-recording-button.png) > **Copy Link** in the control bar.
 
 ## Best practices and tips
 
