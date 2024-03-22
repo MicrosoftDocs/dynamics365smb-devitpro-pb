@@ -85,7 +85,7 @@ This section outlines the basic steps to making a recording with the page script
    You can replay the recording as long as you don't close the page.
 1. To save the recording to file so you can run it later or share with someone, select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar.
 
-## Options for capturing steps
+## Options for capturing steps during recording
 
 During recording, you can manually insert special steps by right clicking a page control and selecting an appropriate option. These options are explained in the following sections.
 
@@ -194,3 +194,17 @@ You can save the recording as YAML file that can be downloaded, shared, edited, 
 ## Share a recording as a link
 
 You can share a recording or a playback as a link (URL) that you can share with others. The link includes the full recording along with the results that occurred during playback. To share a recording as a link, select **Share** ![share recording](media/page-scripting-shar-recording-button.png) > **Copy Link** in the control bar.
+
+## Best practices and tips
+
+- Start recording from a well-known place, like the role center. Playback will always start from current page. It will not automatically be to ensure that page is opened.
+When selected a value in a grid, it best to filter it down so that the desired value is the first one. 
+Create new entities to use in a test
+I.e., create new customer to use in the new sales order
+Avoids dependencies on data that may not be there
+Break down recording to small parts for easier maintenance
+Recording 1: setup user
+Recording 2: create customer
+Recording 3: create sales order
+Recording 4: post sales order
+
