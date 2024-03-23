@@ -181,7 +181,7 @@ To make a page optional:
 There are three ways to play back a recording. You can play a recording that you captured, as long as you don't close the page scripting tool, by selecting the **Play** ![play recording](media/page-scripting-play-button.png) button in the control bar. You can also play a recording that was saved to a file or shared as a link.
 
 - To play a recording saved as a file, select either the **Open** button in the **Page Scripting** pane or the **Open recording** ![open recording button](media/page-scripting-open-recording-button.png) button in the control bar. Locate and open the recording file.
-- To play a recording to have as a link, select the link to open page scripting tool in Business Central.
+- To play a recording that you have as a link, select the link to open page scripting tool in Business Central.
 
 During playback, you can do the following operations:
 
