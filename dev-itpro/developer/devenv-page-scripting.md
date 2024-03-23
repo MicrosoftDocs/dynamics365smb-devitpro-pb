@@ -76,8 +76,8 @@ This section outlines the basic steps to making a recording with the page script
    - To pause recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button in the control bar.
    - To resume recording and continue actions, select the **Start recording** ![start recording](media/page-scripting-start-button.png) button in the control bar.
    - To delete the last captured step, select **...** next to the step and then select **Delete**.
-   - To hide the page scripting pane, select the ![Shows the X button the hides the page scripting pane](media/page-scripting-hide-button.png) in the upper right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
-   - To cancel recording and exit the page scripting tool, select ![Shows the X button the hides the page scripting pane](media/page-scripting-hide-button.png).
+   - To hide the page scripting pane, select the upper most ![Shows the X button that hides the page scripting pane](media/page-scripting-hide-button.png) in the top right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
+   - To cancel recording and exit the page scripting tool, select the **Close recording** ![Shows the X button that closes the page scripting pane](media/page-scripting-hide-button.png) button in the **Recording** bar.
 
 1. When you're done recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button.
 1. To play back the recording right away, select the **Play** ![play recording](media/page-scripting-play-button.png) button.
