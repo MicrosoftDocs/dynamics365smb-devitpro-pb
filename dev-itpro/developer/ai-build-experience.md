@@ -1,27 +1,27 @@
 ---
 title: Build a Copilot user experience with the PromptDialog page
-description: Learn how to use PromptDialog page type to create a copilot experience in the client.
+description: Learn how to use PromptDialog page type to create a Copilot experience in the client.
 author: jswymer 
 ms.author: jswymer 
 ms.reviewer: jswymer 
 ms.topic: conceptual
 ms.collection:
   - get-started
-  - bap-ai-copilot
+  - bap-ai-Copilot
 ms.date: 02/17/2024
 ms.custom: bap-template
 ---
-# Build copilot user experience
+# Build Copilot user experience
 
-In this article, you learn how to create the user interface (UI) for your AI solution that provides users with a copilot experience that is consistent across Business Central.
+In this article, you learn how to create the user interface (UI) for your AI solution that provides users with a Copilot experience that is consistent across Business Central.
 
 ## Prompt dialog page introduction
 
-The fundamental component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md) type page. The PromptDialog page is designed for creating copilot experiences that assist users in making informed decisions about the AI-generated output. Within a single page object, the PromptDialog page type creates a comprehensive flow in the UI, where users can provide input, view the subsequent output, and revise it as needed. The user can then choose to save their work or discard it.
+The fundamental component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md) type page. The PromptDialog page is designed for creating Copilot experiences that assist users in making informed decisions about the AI-generated output. Within a single page object, the PromptDialog page type creates a comprehensive flow in the UI, where users can provide input, view the subsequent output, and revise it as needed. The user can then choose to save their work or discard it.
 
-|Launch copilot|Provide input (prompt)| AOAI returns results (generate) |Page shows results (content)|
+|Launch Copilot|Provide input (prompt)| AOAI returns results (generate) |Page shows results (content)|
 |-|-|-|-|
-|[![Shows a flow of a copilot with the palog page type](media/copilot-launch.png)](media/copilot-launch.png#lightbox)|[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.png)](media/promptdialog-prompt-mode-prompt-area-no-callout.png#lightbox)|<br>[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode-small.png)](media/promptdialog-generate-mode.png#lightbox)|[![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)](media/promptdialog-content-mode.svg#lightbox)|
+|[![Shows a flow of a Copilot with the palog page type](media/Copilot-launch.png)](media/Copilot-launch.png#lightbox)|[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.png)](media/promptdialog-prompt-mode-prompt-area-no-callout.png#lightbox)|<br>[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode-small.png)](media/promptdialog-generate-mode.png#lightbox)|[![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)](media/promptdialog-content-mode.svg#lightbox)|
 
 <!--
 > [!VIDEO media/Copilot-UI.mp4]-->
@@ -36,23 +36,23 @@ PromptDialog page type has three different display modes to accommodate the flow
 |generate mode|The mode appears while the platform connects to the Azure OpenAI Service and content is being generated, functioning as a kind of progress bar for the user. This mode doesn't require any added logic on your part, because the platform controls its behavior. Its UI is limited to a caption, a link to terms of use, and an action to stop generating. The caption is customizable.|
 |content mode |This mode is used to display the AI-generated results and is initiated automatically after the *generate mode* allowing the user to review the content, regenerate, save, or discard the results. |
 
-## Fundamental copilot flow with prompt dialog page
+## Fundamental Copilot flow
 
-The following diagram illustrates PromptDialog page type and its different modes within the fundamental copilot flow. Your flow might vary depending on your design choices, like whether to use a prompt mode and which mode displays when the PromptDialog page opens.
+The following diagram illustrates PromptDialog page type and its different modes within the fundamental Copilot flow. Your flow might vary depending on your design choices, like whether to use a prompt mode and which mode displays when the PromptDialog page opens.
 
-[![Shows a flow of a copilot with the prompt dialog page type](media/prompt-dialog-flow-v3.svg)](media/prompt-dialog-flow-v3.svg#lightbox)
+[![Shows a flow of a Copilot with the prompt dialog page type](media/prompt-dialog-flow-v3.svg)](media/prompt-dialog-flow-v3.svg#lightbox)
 
 The following table gives an overview of the typical flow from the user's perspective and how it's achieved in AL code.
 
 |Phase|In UI|In AL code|Learn more|
 |-|-|-|-|
-|1|User starts the copilot experience by selecting an action on a page.|An `action` control on a page runs the PromptDialog type page|[Launch experience](copilot-launch-experience.md)|
-|2|The PromptDialog page opens in the prompt mode, where users can provide input.|The PromptDialog page is defined by setting the PageType property to `PromptDialog`.|[Create PromptDialog type page](copilot-create-promptdialog.md) |
-|3|User enters information that copilot uses to generate results. |The `prompt` area of the PromptDialog page defines what the user can input, which typically consists of one or more fields.|[Design the prompt mode](copilot-design-prompt-mode.md)|
-|4|User selects a button to start generating content with AI|The system action `Generate` calls the procedure that starts the AI generation process.|[Add the generate action](copilot-design-prompt-mode.md#add-a-generate-action)|
-|5|The generation mode appears while the results are being generated.|Handled automatically by the platform. However, you can customize its caption by calling [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md).|[Customize the genarate mode caption](copilot-customize-generate-mode.md)|
-|6|The content mode appears and displays the AI-generated proposal for review by the user.|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Design the content mode](copilot-design-content-mode.md)|
-|7|User chooses to save or discard the proposal by using actions at the bottom of the page |A system action for saving and one for discarding trigger the logic to handle the content with respect the user's choice, and the prompt dialog page closes.|[Add save and discard actions](copilot-design-content-mode.md#add-a-save-and-discard-action)|
+|1|User starts the Copilot experience by selecting an action on a page.|An `action` control on a page runs the PromptDialog type page|[Launch experience](Copilot-launch-experience.md)|
+|2|The PromptDialog page opens in the prompt mode, where users can provide input.|The PromptDialog page is defined by setting the PageType property to `PromptDialog`.|[Create PromptDialog type page](Copilot-create-promptdialog.md) |
+|3|User enters information that Copilot uses to generate results. |The `prompt` area of the PromptDialog page defines what the user can input, which typically consists of one or more fields.|[Design the prompt mode](Copilot-design-prompt-mode.md)|
+|4|User selects a button to start generating content with AI|The system action `Generate` calls the procedure that starts the AI generation process.|[Add the generate action](Copilot-design-prompt-mode.md#add-a-generate-action)|
+|5|The generation mode appears while the results are being generated.|Handled automatically by the platform. However, you can customize its caption by calling [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md).|[Customize the genarate mode caption](Copilot-customize-generate-mode.md)|
+|6|The content mode appears and displays the AI-generated proposal for review by the user.|The `content` area of the PromptDialog page defines the layout of AI-generated content on the page.|[Design the content mode](Copilot-design-content-mode.md)|
+|7|User chooses to save or discard the proposal by using actions at the bottom of the page |A system action for saving and one for discarding trigger the logic to handle the content with respect the user's choice, and the prompt dialog page closes.|[Add save and discard actions](Copilot-design-content-mode.md#add-a-save-and-discard-action)|
 
 ## Code example
 
@@ -107,7 +107,7 @@ page 50100 "Copilot Job Proposal"
                 Caption = 'Generate';
                 trigger OnAction()
                 begin
-                    // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
+                    // The code triggering the Copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
                     RunGeneration();
                 end;
             }
@@ -117,7 +117,7 @@ page 50100 "Copilot Job Proposal"
                 ToolTip = 'Regenerate the Job proposed by Dynamics 365 Copilot.';
                 trigger OnAction()
                 begin
-                    // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
+                    // The code triggering the Copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
                     RunGeneration();
                 end;
             }
@@ -156,9 +156,9 @@ System actions order on promptdialog in Content mode is always: OK, Regenerate, 
 
 ## Next steps
 
-[Create PromptDialog page](copilot-create-promptdialog.md).
+[Create PromptDialog page](Copilot-create-promptdialog.md).
 
 ## See also
 
-[Integrating AI using developer tools for copilot](ai-integration-landing-page.yml)  
+[Integrating AI using developer tools for Copilot](ai-integration-landing-page.yml)  
 
