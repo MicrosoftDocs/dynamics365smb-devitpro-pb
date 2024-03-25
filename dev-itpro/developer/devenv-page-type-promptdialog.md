@@ -1,6 +1,6 @@
 ---
 title: The PromptDialog page type
-description: Business Central
+description: The PromptDialog page type allows you to integrate copilot capabilities into your custom scenarios.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: 
