@@ -116,7 +116,7 @@ codeunit 54310 "Secrets And Capabilities Setup"
 }
 ```
 
-For the `"Copilot Availability"`, you can choose `Preview` for the first release of your capability to signal to your customers that the capability is ready for production, but is subject to change and that you're welcoming their feedback.
+For the `"Copilot Availability"`, you can choose `Preview` for the first release of your capability to signal to your customers that the capability is ready for production, but is subject to change and that you'rewelcoming their feedback.
 
 ### Saving the authorization
 

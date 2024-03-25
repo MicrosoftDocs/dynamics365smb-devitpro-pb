@@ -5,7 +5,7 @@ ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
-author: ManuelaHochstrasser
+author: SusanneWindfeldPedersen
 ---
 
 # Update 15.3 for Microsoft Dynamics 365 Business Central 2019 online release wave 2
