@@ -30,6 +30,8 @@ There are three different supported scenarios for adding barcode scanning to the
 |-|-|-|-|-|-|-|-|
 |UI button on a field|The user scans a barcode by manually selecting a button next to a field|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|
 |Invoke from AL|Based on AL code, the barcode scanning capability is started when something happens, for example, a page opens, or the user selects a custom action on the page. |![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
+|Invoke from AL|Based on AL code, the barcode scanning capability is started when something happens, for example, a page opens, or the user selects a custom action on the page. |![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
+|Invoke from AL|Based on AL code, the barcode scanning capability is started when something happens, for example, a page opens, or the user selects a custom action on the page. |![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
 |Integrate dedicated barcode scanner|Enable the use of professional hardware scanners.||![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
 
 ## Supported barcodes
@@ -95,6 +97,87 @@ pageextension 50101 ItemBarcode extends "Item Card"
 
 With this scenario, you add logic in AL to start the barcode scanning UI when a certain operation occurs or conditions are met. For example, barcode scanning can start when a user selects an action or link. Or, when some semi-automated logic or trigger is invoked (for instance, when a page opens). This scenario uses the same camera-based scanning technology as scenario 1 and returns the scanned barcode value to AL code for further processing.
 
+There are two different ways to develope this scenario. The newest way is to use : using the Business Central contrl add-in `CameraBarcodeScannerProviderAddIn` control add-in or .NET interoperability.
+
+ping this scena
+
+
+
+
+> [!TIP]
+> For a detailed implementation as used in the Business Central base application, refer to source code of the **Item Tracking Lines** page (ItemTrackingLines.Page.al).
+
+```al
+page 50100 "Camera Barcode Scanner"
+{
+    PageType = Card;
+    ApplicationArea = All;
+    Caption = 'Camera Barcode Scanner Sample';
+
+    layout
+    {
+        area(Content)
+        {
+            // Declare the user control based on the CameraBarcodeScannerProviderAddIn control add-in
+            usercontrol(BarcodeControl; CameraBarcodeScannerProviderAddIn) // Step 1
+            {
+                ApplicationArea = All;
+
+                // The ControlAddInReady event is raised when the control add-in is ready to be used. 
+                trigger ControlAddInReady(IsSupported: Boolean)
+                begin
+                    // Set the CameraBarcodeScannerAvailable variable to the value of the IsSupported parameter
+                    CameraBarcodeScannerAvailable := IsSupported; // Step 2
+                end;
+
+                // The BarcodeAvailable event is raised when a barcode is available.    
+                trigger BarcodeAvailable(Barcode: Text; Format: Text)
+                begin
+                    Message(Barcode);// Step 4
+
+                    // Continious scanning                    
+                    // CurrPage.BarcodeControl.RequestBarcodeAsync(); // Step 5
+                end;
+
+                // The BarcodeFailure event is raised on a failure
+                trigger BarcodeFailure(Reason: Enum BarcodeFailure)
+                begin
+                    case Reason of
+                        Reason::Cancel:
+                            Message('Canceled');
+                        Reason::NoBarcode:
+                            Message('No Barcode');
+                        Reason::Error:
+                            Message('Error');
+                    end;
+                end;
+            }
+        }
+    }
+
+    actions
+    {
+        area(Processing)
+        {
+            action(ScanBarcode)
+            {
+                ApplicationArea = All;
+
+                trigger OnAction()
+                begin
+                    // Request a barcode
+                    CurrPage.BarcodeControl.RequestBarcodeAsync(); // Step 3
+                end;
+            }
+        }
+    }
+
+    var
+        CameraBarcodeScannerAvailable: Boolean;
+}
+```
+
+
 The basic steps for implementing this scenario are: 
 
 1. Define the barcode scanner provider by declaring a `DotNet` variable `Microsoft.Dynamics.Nav.Client.Capabilities.CameraBarcodeScannerProvider`.
@@ -104,10 +187,6 @@ The basic steps for implementing this scenario are:
 1. Depending on whether the barcode is scanned successfully, call either the `BarcodeAvailable` or `BarcodeFailure` triggers.
    
 This following code shows an example of how to start the barcode scanning when a page opens.
-
-
-> [!TIP]
-> For a detailed implementation as used in the Business Central base application, refer to source code of the **Item Tracking Lines** page (ItemTrackingLines.Page.al).
 
 ```al
 page 50100 "MyALPage"
