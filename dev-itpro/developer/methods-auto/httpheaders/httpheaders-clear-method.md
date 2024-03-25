@@ -3,8 +3,8 @@ title: "HttpHeaders.Clear() Method"
 description: "Sets the HttpHeaders variable to the default value."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +21,6 @@ Sets the HttpHeaders variable to the default value.
 ```AL
  HttpHeaders.Clear()
 ```
-
 ## Parameters
 *HttpHeaders*  
 &emsp;Type: [HttpHeaders](httpheaders-data-type.md)  

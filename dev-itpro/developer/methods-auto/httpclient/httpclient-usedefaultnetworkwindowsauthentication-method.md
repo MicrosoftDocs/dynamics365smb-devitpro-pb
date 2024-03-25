@@ -3,8 +3,8 @@ title: "HttpClient.UseDefaultNetworkWindowsAuthentication() Method"
 description: "Sets the HttpClient credentials to use the default network credentials for Windows authentication."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,7 +23,6 @@ Sets the HttpClient credentials to use the default network credentials for Windo
 ```AL
 [Result := ]  HttpClient.UseDefaultNetworkWindowsAuthentication()
 ```
-
 ## Parameters
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  

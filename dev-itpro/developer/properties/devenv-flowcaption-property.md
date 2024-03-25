@@ -3,8 +3,8 @@ title: "FlowCaption Property"
 description: "Sets the default caption of the new flow."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/09/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

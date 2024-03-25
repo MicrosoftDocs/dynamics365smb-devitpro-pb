@@ -3,8 +3,8 @@ title: "Compiler Warning (Future Error) AL0775"
 description: "Try methods should not specify an explicit return value, because the value will be discarded."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/20/2023
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -19,7 +19,7 @@ Try methods should not specify an explicit return value, because the value will 
 
 
 > [!IMPORTANT]
-> This warning will become an error with Business Central 2024 release wave 1.  
+> This warning will become an error with Business Central 2024 release wave 2.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

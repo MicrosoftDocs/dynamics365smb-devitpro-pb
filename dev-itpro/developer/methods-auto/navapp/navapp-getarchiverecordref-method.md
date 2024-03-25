@@ -3,8 +3,8 @@ title: "NavApp.GetArchiveRecordRef(Integer, var RecordRef) Method"
 description: "Returns a RecordRef for the specified table."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -25,6 +25,7 @@ Returns a RecordRef for the specified table.
 *TableNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies the table ID.  
+
 *RecordRef*  
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
 Specifies the reference.  
