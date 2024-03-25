@@ -57,7 +57,10 @@ There are various ways to use the `Dialog.Open()`and `Dialog.Update()` to change
 
 ## Example: From the OnAction() trigger
 
-The following code example illustrates how to change the generate mode caption directly from the `OnAction()` trigger of `Generate` and `Regenerate` actions:
+The following code example illustrates how to change the generate mode caption directly from the `OnAction()` trigger of `Generate` and `Regenerate` actions. The code snippets use the `OnAction()` trigger to change the caption to:
+
+- **Creating a draft for you...** when generating the first draft with copilot.
+- **Revising the draft for you...** when regenerating a draft.
 
 ```al
 systemaction(Generate)
@@ -82,13 +85,13 @@ systemaction(Regenerate)
 
 ```
 
+The figure shows the customized generate mode caption in the UI for the **Generate** action is selected:
+
+[![Shows a screenshot of the custom caption of generate mode in the UI](media/promptdialog-generate-mode-custom.png)](media/promptdialog-generate-mode-custom.png#lightbox)
+
 ## Example: From the RunGeneration() procedure
 
-This example calls the `Dialog.Open()` method from the procedure that generates the results (for purposes of this article, the `RunGeneration()`). The following code snippets use the `OnAction()` trigger together with the `RunGeneration()` procedure
-to change the caption to:
-
-- **Creating a draft for you...** when generating the first draft with copilot.
-- **Revising the draft for you...** when regenerating a draft.
+This example does thesame as the previous example except it calls the `Dialog.Open()` method from the procedure that generates the results (for purposes of this article, the `RunGeneration()`). 
 
 ```al
 systemaction(Generate)
@@ -111,6 +114,13 @@ systemaction(Regenerate)
 ```
 
 ```al
+var
+    GenerateModeProgress: Dialog;
+    CopilotGeneratingTxt: Label 'Creating a draft for you...';
+    CopilotRegeneratingTxt: Label 'Revising the draft...';
+```
+
+```al
 local procedure RunGenerate(ProgressTxt: Text)
 begin
     GenerateModeProgress.Open(ProgressTxt);
@@ -123,9 +133,6 @@ var
     GenerateModeProgress: Dialog
 ```
 
-The following figure shows the customized generate mode caption in the UI for the **Generate** action is selected:
-
-[![Shows a screenshot of the custom caption of generate mode in the UI](media/promptdialog-generate-mode-custom.png)](media/promptdialog-generate-mode-custom.png#lightbox)
 
 For a more complex example, refer to `RunGeneration()` procedure in the `CopilotJobProposal.Page`of the [Advanced_SuggestJob sample on GitHub](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al).
 
