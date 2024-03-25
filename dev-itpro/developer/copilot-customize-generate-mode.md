@@ -24,36 +24,7 @@ Customizing the caption enables you to give users more specific feedback about w
 
 You customize the caption by using the [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) methods. 
 
-<!--The following code snippet changes the caption to **Creating a draft for you...** by calling `Dialog.Open()` from the `RunGenration()` procedure, which is run from the `systemaction(Generate)` and `systemaction(Regenerate)`actions:-->
-
-<!--
-```al
-systemaction(Generate)
-{
-    trigger OnAction()
-    var
-        ProgressDialog: Dialog;
-    begin
-        ProgressDialog.Open('Creating a draft for you...');
-    end;
-}
-```
-
-
-```al
-local procedure RunGeneration()
-var
-    GenerateModeProgress: Dialog;
-    ...
-begin
-    GenerateModeProgress.Open('Creating a draft for you...');
-    ...
-end
-
-```
--->
-
-There are various ways to use the `Dialog.Open()`and `Dialog.Update()` to change the generate mode's caption. Refer to the following examples for inspiration.
+There are different ways to use the `Dialog.Open()`and `Dialog.Update()` to change the generate mode's caption. Refer to the following examples for inspiration.
 
 ## Example: From the OnAction() trigger
 
@@ -114,25 +85,20 @@ systemaction(Regenerate)
 ```
 
 ```al
+local procedure RunGenerate(ProgressTxt: Text)
+begin
+    GenerateModeProgress.Open(ProgressTxt);
+    ...
+
+end;
+```
+
+```al
 var
     GenerateModeProgress: Dialog;
     CopilotGeneratingTxt: Label 'Creating a draft for you...';
     CopilotRegeneratingTxt: Label 'Revising the draft...';
 ```
-
-```al
-local procedure RunGenerate(ProgressTxt: Text)
-begin
-    GenerateModeProgress.Open(ProgressTxt);
-    //GenerateModeProgress.Open('Creating a draft for you...');
-    generatedOutput := 'This is the output for: ' + userInput;
-
-end;
-
-var
-    GenerateModeProgress: Dialog
-```
-
 
 For a more complex example, refer to `RunGeneration()` procedure in the `CopilotJobProposal.Page`of the [Advanced_SuggestJob sample on GitHub](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al).
 
