@@ -38,6 +38,8 @@ or `SparkleFilled` ![Shows the copilot sparkle filled icon](media/copilot-sparkl
 
 In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific copilot. For example, if there's multiple copilot actions on a page, you might want to emphasize one copilot action over the others.  
 
+
+
 ## Next steps
 
 - [Design copilot prompt mode](copilot-design-prompt-mode.md)
