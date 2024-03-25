@@ -18,7 +18,7 @@ In this article, you learn how to design the copolit screen where users can add 
 
 The following figure illustrates an example of the prompt mode for a copilot. The prompt mode UI consists of several elements, which are described in the sections that follow.
 
-[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.svg)](media/promptdialog-prompt-mode-prompt-area-no-callout.svg#lightbox)
+[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.png)](media/promptdialog-prompt-mode-prompt-area-no-callout.png#lightbox)
 
 For an overview building the copilot UI, refer to [Build copilot user experience](ai-build-experience.md).
 
@@ -43,6 +43,7 @@ layout
         {
             ShowCaption = false;
             MultiLine = true;
+            InstructionalText = 'Enter the information that you want to give copilot...';
         }
     }
 }
@@ -52,6 +53,8 @@ Within `area(Prompt)`, you can add one or more fields, groups, and page parts. `
 
 > [!NOTE]
 > The code example is a special case where the first field on the PromptDialog page is shown as a multiline input with `ShowCaption=false`. In this case, the page caption serves as the caption for the input field. For accessibility and usability reasons, other fields on the page should continue to have their captions visible.
+
+The 
 
 ## Add a generate action
 
