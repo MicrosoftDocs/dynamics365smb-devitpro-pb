@@ -61,7 +61,7 @@ If the prompt area includes a [text](methods-auto/text/text-data-type.md) field,
 
 #### Requirements
 
-- Placeholder text is only available for text fields, not for numbers, date or time fields, or any other non-text field.
+- Placeholder text is only supported text, fields, not for numbers, date or time fields, or any other non-text field.
 - Placeholder text isn't shown if the field or page is not editable, `Editable=false;`.
 - List pages show the placeholder for fields in the current row.
 
@@ -96,10 +96,6 @@ actions
     }
 }
 ```
-
-
-
-A prompt guide is implemented by using a specific action area on `PromptDialog` pages, called `PromptGuide`. The `PromptGuide` area is then defined by a list of predefined prompts that are shown to the user when the `PromptDialog` page is opened. You define these predefined prompts as questions or statements that the user can select from. Examples of predefined prompts could be "How can I...?" or "Show me the latest..." to inspire the user to ask for help or to get the latest information.
 
 ## Add a generate action
 
