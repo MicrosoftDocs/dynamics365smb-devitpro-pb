@@ -56,8 +56,8 @@ The following table shows the minimum system requirements for the [Business Cent
 
 |Specification|Requirement|  
 |------|-----|  
-|Excel|<ul><li>Sending data to Excel requires Excel 2019, Excel on the web, or Excel mobile app for iOS or Android&trade;.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2019 or Excel on the web.</li></ul>|  
-|Word|<ul><li>Microsoft Office 2019, Word for the web, or Word mobile app for iOS or Android&trade;.</li></ul>|
+|Excel|<ul><li>Sending data to Excel requires Excel 2021, Excel on the web, or Excel mobile app for iOS or Android&trade;.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2021 or Excel on the web.</li></ul>|  
+|Word|<ul><li>Microsoft Office 2021, Word for the web, or Word mobile app for iOS or Android&trade;.</li></ul>|
 |Outlook|Please see [Business Inbox in Microsoft Outlook](system-requirements-business-central-v18.md#BusInboxOutlook).|  
 |Additional software|<ul><li>A third-party telephony or VoIP app such as Microsoft Teams is required for placing calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|  
 
@@ -70,7 +70,7 @@ The following table shows the minimum system requirements for customizing or ext
 |Supported operating systems|<ul><li>Windows Server 2022</li><li>Windows Server 2019</li><li>Windows 11</li><li>Windows 10</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
 |Required software|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL Language extension for Microsoft Dynamics 365 Business Central](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>CPU: four cores minimum</li><li>Memory:<br />16 GB for development only. <br />16 GB for developing and locally deploying small extensions (<1000 objects).<br />32-64 GB for developing and locally deploying large extensions (>1000 objects).</li></ul>|
-|Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2019, or</li><li>Visual Studio 2019 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul></li><li>For creating and editing Word report layouts:<ul><li>Word 2019 or later</li></ul></li></ul>|  
+|Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2019, or</li><li>Visual Studio 2019 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul></li><li>For creating and editing Word report layouts:<ul><li>Word 2021 or later</li></ul></li></ul>|  
 
 For more information, see [Get Started with AL](../developer/devenv-get-started.md).
 
@@ -127,7 +127,7 @@ The following table shows the minimum system requirements for using [!INCLUDE[pr
 
 |Specification|Requirement|  
 |-----|-----|
-|Supported Outlook Applications |<ul><li>Outlook 2019</li><li>Outlook on the web</li></ul>|
+|Supported Outlook Applications |<ul><li>Outlook 2021</li><li>Outlook on the web</li></ul>|
 |Supported Exchange Servers|<ul><li>Exchange Online</li><li>Exchange Server 2019<br />In deployments that use Exchange Server, the Exchange PowerShell endpoint must be accessible by [!INCLUDE[server](../developer/includes/server.md)].</li></ul>|
 |Supported Authentication|<ul><li>The [!INCLUDE[server](../developer/includes/server.md)] must be configured to authenticate users using [NavUserPassword](../administration/authenticating-users-with-navuserpassword.md) or [Microsoft Entra ID](../administration/authenticating-users-with-azure-ad-openid-connect.md).<br /> Also, the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] must be configured for Secure Sockets Layer (SSL).</li></ul>|
 |Supported Browsers|<ul><li>When using Outlook on the web, your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] Requirements.</li></ul>|
