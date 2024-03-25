@@ -9,7 +9,7 @@ ms.search.form: 2500, 2502, 20350
 ms.author: jswymer
 ms.date: 09/22/2022
 ---
-# Prepare Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
+# Prepare demonstration environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
 As a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] reselling partner, you might want to have an environment that you can show prospects as part of pre-sales demonstrations. Depending on your requirements, you have several different options that are described in this article.  
 
