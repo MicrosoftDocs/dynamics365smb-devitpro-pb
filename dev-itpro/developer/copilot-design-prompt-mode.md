@@ -76,7 +76,7 @@ If the prompt area includes a [text](methods-auto/text/text-data-type.md) field,
 
 ## Add prompt guides
 
-A prompt guide is a predefined list of prompt texts that users can choose from by selecting ![Shows the prompt guide button in the prompt dialog type page](media/promptdialog-prompt-mode-prompt-guide-icon.png) in the prompt dialog page.
+A prompt guide is a predefined list of prompt texts that users can choose from by selecting **Prompt gudie** ![Shows the prompt guide button in the prompt dialog type page](media/promptdialog-prompt-mode-prompt-guide-icon.png) on the prompt dialog page.
 
 [![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-guide.png)](media/promptdialog-prompt-mode-prompt-guide.png#lightbox)
 
