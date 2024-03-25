@@ -30,7 +30,7 @@ For an overview building the copilot UI, refer to [Build copilot user experience
 
 The prompt area is where users can provide input to the AI generation. The prompt area supports natural language input (like free text fields) and structured input (like field groups and page parts). The example uses a single field that allows the user to type natural language text in an unstructured format.
 
-[![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.svg)](media/promptdialog-prompt-mode-prompt-area.svg#lightbox)
+[![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.png)](media/promptdialog-prompt-mode-prompt-area.png#lightbox)
 
 The prompt area is defined by adding an `area` control to the `layout` of the page, similar to way you'd add content areas on other page types. Except you use the syntax `area(Prompt)`:
 
@@ -74,8 +74,33 @@ If the prompt area includes a [text](methods-auto/text/text-data-type.md) field,
 - Use placeholder text instead of implementing instructions as captionless fields outside of the input field, to keep your page design compact.
 - Placholder text provides hints about how to fill in a field, where the instruction is only shown while the field is empty. Conversely, field tooltips can explain in moderate detail what the field is about and how it is used, and is available on demand even if the field is not empty.
 
+## Add prompt guides
 
-## 
+A prompt guide is a predefined list of prompt texts that users can choose from by selectng the when they open a `PromptDialog` page. The prompt guide helps users by providing one or more predefined prompt texts to use as input to generate content, rather than having to write up a prompt themselves. The user can choose a prompt text from the list, and the selected prompt is then inserted into the prompt input field so that the user can update it before sending to Copilot. Having prompt guides can help users to understand the different ways in which they can phrase their question or instruction to Copilot, reveal different categories of prompts, or inspire different ways of prompting to achieve similar outcomes.
+
+[![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-guide.png)](media/promptdialog-prompt-mode-prompt-guide.png#lightbox)
+
+A prompt guide is implemented by using a specific action area on `PromptDialog` pages, called `PromptGuide`. The `PromptGuide` area is then defined by a list of predefined prompts that are shown to the user when the `PromptDialog` page is opened. You define these predefined prompts as questions or statements that the user can select from. Examples of predefined prompts could be "How can I...?" or "Show me the latest..." to inspire the user to ask for help or to get the latest information.
+
+
+```al
+actions
+{
+    area(PromptGuide)
+    {
+        action(MyPromptAction)
+        {
+            Caption = 'How can I...?';
+            ToolTip = 'Ask Copilot for help with a specific task.';
+        }
+    }
+}
+```
+
+
+
+A prompt guide is implemented by using a specific action area on `PromptDialog` pages, called `PromptGuide`. The `PromptGuide` area is then defined by a list of predefined prompts that are shown to the user when the `PromptDialog` page is opened. You define these predefined prompts as questions or statements that the user can select from. Examples of predefined prompts could be "How can I...?" or "Show me the latest..." to inspire the user to ask for help or to get the latest information.
+
 ## Add a generate action
 
 In this task, you add action to the PromptDialog page that users select to start generating output with Copilot and AI. 
