@@ -19,7 +19,7 @@ In this article, you learn how to create the user interface (UI) for your AI sol
 
 The fundamental component of Copilot from the user-interface perspective is the [PromptDialog](devenv-page-type-promptdialog.md) type page. The PromptDialog page is designed for creating Copilot experiences that assist users in making informed decisions about the AI-generated output. Within a single page object, the PromptDialog page type creates a comprehensive flow in the UI, where users can provide input, view the subsequent output, and revise it as needed. The user can then choose to save their work or discard it.
 
-|Start Copilot|Provide input (prompt)| AOAI generates results |Show results (content)|
+|Start Copilot >|Provide input (prompt) >|AOAI generates results >|Show results (content)|
 |-|-|-|-|
 |[![Shows a flow of a Copilot with the palog page type](media/Copilot-launch.png)](media/Copilot-launch.png#lightbox)|[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.png)](media/promptdialog-prompt-mode-prompt-area-no-callout.png#lightbox)|[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode-small.png)](media/promptdialog-generate-mode.png#lightbox)|[![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)](media/promptdialog-content-mode.svg#lightbox)|
 
