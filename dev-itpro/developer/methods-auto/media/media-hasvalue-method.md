@@ -3,8 +3,8 @@ title: "Media.HasValue() Method"
 description: "Checks whether a Media data type field in a record has been initialized with a media object and that the specified media object exists in the database."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,7 +23,6 @@ HasValue :=   Media.HasValue()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *Media*  
 &emsp;Type: [Media](media-data-type.md)  

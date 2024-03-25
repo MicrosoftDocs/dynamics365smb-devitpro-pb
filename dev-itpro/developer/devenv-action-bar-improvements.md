@@ -1,52 +1,41 @@
 ---
 title: Action bar improvements
-description: Introducing the action bar for Dynamics 365 Business Central
+description: Introducing the modern action bar in Dynamics 365 Business Central
 author: jacobwj
 ms.author: solsen
-ms.reviewer: solsen
-
+ms.reviewer: jswymer
 ms.topic: conceptual
-ms.date: 03/16/2023
+ms.date: 03/08/2024
 ms.custom: bap-template
 ---
 
 # Action bar improvements
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, we’ve organized the action bar menus to keep related actions together and avoid the same action being available in multiple menus. This helps reduce clutter and confusion, especially for users new to [!INCLUDE [prod_short](includes/prod_short.md)]. 
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1, we are making the modern action bar available and turned on for all users. Since its introduction in release wave 2, 2022, the modern action bar has been the default for *new* customers and is now becoming the default for *all* customers upgrading to release wave 1, 2024.
 
-The use of a Navigate menu has been reduced, and, where applicable, its contents merged with the entity menu. The entity menu is the one bearing the name of the entity displayed on a page. Going forward, the Navigate menu will only hold links to pages that aren't directly related to the current record yet useful to quickly navigate to when at a given place. 
+Users who have already been using the modern action bar will notice a few additional optimizations in its newest version, such as a more compact representation of Search and Analysis Mode, and the introduction of Microsoft Copilot!
 
-Certain actions have been given a more prominent placement in the action bar. This reduces the number of selects to reach often-used actions and makes relevant actions more discoverable. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1jUai]
 
-Split buttons are well-known from other Microsoft products as a combination of a button and a menu and are introduced in [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2 in certain places. This type of control gives you quick one-click reach to the first action in a menu via the left button part and access to other related actions via the right dropdown part. 
+Users who have *not* been using the modern action bar with earlier releases of [!INCLUDE [prod_short](includes/prod_short.md)] will experience that the action bar looks different to what they were used to, and that some of their routines can need adjustment. The reason is that the modern action bar places some actions differently compared to the earlier action bar (now known as the **legacy action bar**) to give more prominence to important actions and reduce the numbers of clicks to access them.
 
-The ways that users can customize menus to suit their purpose and preference are improved with the new action bar. That means earlier limitations to which and where actions could be moved no longer apply, which greatly empowers users in personalizing pages and in configuring profiles. 
+## Split buttons enhance productivity
 
-The improvements listed above are available to current [!INCLUDE [prod_short](includes/prod_short.md)] users as soon as they get the upgrade to release wave 2, 2022. 
+*Split buttons* are one of the new experiences in the modern action bar. Split buttons are well-known from other Microsoft products as a combination of a button and a menu and are introduced in cases where a common action has related actions with similar effects. This type of control gives quick one-click reach to the first action in a menu via the left button part and access to the related actions via the right dropdown part. 
 
-## Optionally available to all customers upgraded to Business Central, Wave 2, 2022 
+For instance, on document pages that have **Post** and **Release** actions, these are now presented as split buttons. This provides better discoverability and one-click access to these often-used actions. For example, a new split button is created for the actions **Correct**, **Cancel**, and **Create** corrective credit memo. This provides one-click access to Correct, which is the most often used among the three. 
 
-In addition to the improvements that are visible to all customers after upgrading to [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the release contains more optimizations of how the action bar supports users in their work. 
+## Action tabs open by default
 
-These extra optimizations are available to all upgraded customers, but not enabled right away with the upgrade. To activate the optimizations for a customer who upgraded to [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the admin enables the **Modern Action Bar** feature in the **Feature Management** page.  
+On document, card, worksheet, and listplus pages, the Process tab is renamed to **Home**, which better aligns with the ribbon terminology that users see in other Microsoft products. 
 
-With the **Modern Action Bar** feature enabled, the following further improvements take effect for all users in a [!INCLUDE [prod_short](includes/prod_short.md)] environment: 
+With document, card, worksheet, and listplus pages that have actions in the Home/Process group, the modern action bar starts in the pinned and opened state. This helps discovering relevant actions in the action bar and provides one-click reach to actions, without first pinning the action bar manually. With document pages that have a Lines subpage, or any other page having a subpage, the subpage's actions are now visible right away, without opening **More options**.
 
-With document, card, worksheet, and listplus pages that have actions in the Home/Process group, the action bar is now presented in the pinned state when opened for the first time. This helps discovering relevant actions in the action bar and provides one-click reach to actions, without first pinning the action bar yourself. 
+## Legacy action bar
 
-With document pages that have a Lines subpage, or any other page having a subpage, the subpage’s actions are now visible right away, without requiring that you select “More options.” 
+While the majority of users are confident with split buttons, and likely know the concept from other software packages, in the rare cases where split buttons or some of the other modern action bar improvements are causing problems for a user, we provide a new personalization option to use the legacy action bar instead.
 
-On document, card, worksheet, and listplus pages, the Process tab is renamed to Home, which better aligns with the ribbon terminology that users see in other Microsoft products. 
-
-On document pages that have **Post** and **Release** actions, these are now presented as split buttons in the **Home** tab. This provides better discoverability and one-click access to these often-used actions. 
-
-On several other pages, certain actions have been grouped into split buttons when the actions are strongly connected by the effect they have. For example, a new split button is created for the actions **Correct**, **Cancel**, and **Create** corrective credit memo. This provides one-click access to Correct, which is the most often used among the three. 
-
-## For customers signing up to Business Central after October 1 
-
-Customers who sign up and start using [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, after October 1 will get the benefit of all the action bar improvements described here, including those optimizations that are optional for upgrading customers. 
-
-Every customer using [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, whether after an upgrade or as a new customer, can choose to disable the Modern Action Bar feature. This is an option that can be used if an extension incompatibility is discovered, or if the user interface changes require time to introduce to users. 
+The Legacy Action Bar toggle is available in users' **My settings** page and reverts the action bar for individual users to the earlier appearance before the modern action bar. Note that we recommend using the modern action bar for the best productivity and that future releases of [!INCLUDE [prod_short](includes/prod_short.md)] may not provide the legacy action bar option.
 
 ## See also
 

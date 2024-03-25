@@ -8,7 +8,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-ms.prod: "dynamics-nav-2018"
 ---
 # Upgrading the Data to [!INCLUDE[nav2018_md](includes/nav2018_md.md)]
 

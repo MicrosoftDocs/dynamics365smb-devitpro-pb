@@ -3,8 +3,8 @@ title: "Compiler Error AL0275"
 description: "'{0}' is an ambiguous reference between '{1}' defined by the extension '{2}' and '{3}' defined by the extension '{4}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 '{0}' is an ambiguous reference between '{1}' defined by the extension '{2}' and '{3}' defined by the extension '{4}'.
+
 
 ## Description
 Ambiguous reference between two symbols.  

@@ -3,8 +3,8 @@ title: "Compiler Error AL0321"
 description: "Variable {0} cannot be included in the data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Variable {0} cannot be included in the data set.
+
 
 ## Description
 Only variables of the type BigInteger,Boolean, Char, Decimal, Integer, Option, Enum, Text and Code can be included in the data set.  

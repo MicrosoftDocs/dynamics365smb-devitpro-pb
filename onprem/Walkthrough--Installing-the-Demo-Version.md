@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 1ad0b37b-6d38-4c92-9ca6-14888864fb6b
 ---
 # Walkthrough: Installing the Demo Version
