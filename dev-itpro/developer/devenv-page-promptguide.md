@@ -23,7 +23,7 @@ There are a couple of things to keep in mind when adding prompt guides to your `
 
 - Prompt guides are optional but recommended. You can add one or many prompt guides to your prompt dialog as needed.
 - Prompt texts might be organized into groups.
-- When a user chooses a prompt text from the guide, this should insert the prompt text into the prompt input box. The prompt text isn't    automatically sent, so that users have the opportunity to first adapt it to their unique needs.
+- When a user chooses a prompt text from the guide, this should insert the prompt text into the prompt input box. The prompt text isn't automatically sent, so that users have the opportunity to first adapt it to their unique needs.
 - Using square brackets in the prompt text can be used to represent placeholders where users insert their preferred value to complete the prompt.
 - The prompt text shown in the prompt guide menu might be different to the actual text that is inserted into the prompt input box.
 - The AL logic for prompt guides must compute and insert the prompt text into the prompt input. This might include computed values such as dates.
