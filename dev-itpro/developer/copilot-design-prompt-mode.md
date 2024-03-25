@@ -98,7 +98,7 @@ actions
 }
 ```
 
-To learn more about designing a prompt guide, consult [Prompting using a prompt guide](devenv-page-promptguide.md).
+[Learn more about prompting using a prompt guide](devenv-page-promptguide.md).
 
 ## Add a generate action
 

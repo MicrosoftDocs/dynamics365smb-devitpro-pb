@@ -38,7 +38,30 @@ or `SparkleFilled` ![Shows the copilot sparkle filled icon](media/copilot-sparkl
 
 In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific copilot. For example, if there's multiple copilot actions on a page, you might want to emphasize one copilot action over the others.  
 
+## Promote the Copilot using a prompt action 
 
+You can create a prompt action to promote your Copilot on pages and encourage users to use it. A prompt action is a standard action that appears under the ![Shows the copilot action icon icon](media/promptdialog-copilot-action-icon.png) in the action bar. The following figure illustrates an example for the **Reconcile with Copilot** action on the **Bank Account Reconciliations** list.
+
+![Shows the copilot action icon clip](media/promptdialog-copilot-action-clip.png)
+
+Prompt actions are only supported on `List`, `ListPage`, `StandardDialog`, and `WorkSheet` page types. To create a prompt action, add an action area called `area(Prompting)` to the page and an `action` that runs the prompt dialog page. 
+
+```al
+...
+actions
+{
+    area(Prompting)
+    {
+        action(MyPromptAction)
+        {
+            RunObject = page "My copilot";
+        }
+    }
+}
+...
+```
+
+[Learn more about prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md).
 
 ## Next steps
 
