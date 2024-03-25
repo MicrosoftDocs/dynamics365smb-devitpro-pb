@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: 
 ms.topic: conceptual
-ms.date: 12/20/2023
+ms.date: 03/25/2024
 ms.custom: bap-template
 ms.collection:
   - get-started
@@ -116,7 +116,7 @@ codeunit 54310 "Secrets And Capabilities Setup"
 }
 ```
 
-Regarding the `"Copilot Availability"`, you can choose `Preview` for the first release of your capability to signal to your customers that the capability is ready for production, but subject to change and welcoming their feedback.
+For the `"Copilot Availability"`, you can choose `Preview` for the first release of your capability to signal to your customers that the capability is ready for production, but is subject to change and that you're welcoming their feedback.
 
 ### Saving the authorization
 
