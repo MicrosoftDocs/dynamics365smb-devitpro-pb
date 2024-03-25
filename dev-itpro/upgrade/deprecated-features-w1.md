@@ -17,6 +17,28 @@ This article describes the features that have been moved, removed, or replaced i
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
+## Changes in 2026 release wave 1
+
+The following features will be removed in 2026 release wave 1.
+
+### API (v1.0) for Business Central (removed)
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| With Business Central you can create Connect apps. Connect apps establish a point-to-point connection between Dynamics 365 Business Central and a 3rd party solution or service and is typically created using standard REST API to interchange data. <br><br>In 2020 Release Wave 2 we introduced a new improved API where all complex properties are replaced with first-level properties or navigation properties. This change significantly improves API performance, as complex fields were previously calculated at runtime. In API v2.0, all multipart keys and non-GUID keys are replaced with unique GUID keys, and entities can be retrieved using the SystemId, which is immutable, platform-enforced, and indexed. This change improves auditing and API reading performance.<br><br>The API (v1.0) will be removed in 2026 Wave 1.<br><br>To learn about the replacement feature, go to [Transitioning from API v1.0 to API v2.0](api-reference/v2.0/transition-to-api-v2.0.md). |
+
+
+## Changes in 2024 release wave 1
+
+The following features are marked as `obsolete:pending` in 2024 release wave 1.
+
+### API (v1.0) for Business Central (warning)
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| With Business Central you can create Connect apps. Connect apps establish a point-to-point connection between Dynamics 365 Business Central and a 3rd party solution or service and is typically created using standard REST API to interchange data. <br><br>In 2020 Release Wave 2 we introduced a new improved API where all complex properties are replaced with first-level properties or navigation properties. This change significantly improves API performance, as complex fields were previously calculated at runtime. In API v2.0, all multipart keys and non-GUID keys are replaced with unique GUID keys, and entities can be retrieved using the SystemId, which is immutable, platform-enforced, and indexed. This change improves auditing and API reading performance.<br><br>We're making the API (v1.0) obsolete in 2024 Wave 1 (to be removed in 2026 Wave 1).<br><br>To learn about the replacement feature, go to [Transitioning from API v1.0 to API v2.0](api-reference/v2.0/transition-to-api-v2.0.md). |
+
+
 ## Changes in 2023 release wave 2
 
 The following features are marked as `obsolete:pending` in 2023 release wave 2.
