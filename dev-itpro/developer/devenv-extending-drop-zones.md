@@ -12,7 +12,7 @@ ms.date: 03/04/2024
 
 The ability to handle multiple file uploads and designate different page parts as file drop zones provides greater flexibility and usability. Developers working on applications or customizations that require multi-file upload functionality add value to organizations by improving productivity and the user experience.
 
-The following example designates a group and field as file drop zones by referecing the `ProductImageUpload` action property. The `FileUploadAction` action's `AllowMultipleFiles` property lets you specify whether an action can handle a single file or multiple files. The `AllowedFileExtensions` property allows developers to specify the file types that people can drag to a drop zone. After you drag one or more files to a group or field on a `HappyDragAndDrop` page, the `OnAction` trigger in the `FileUploadAction` property is called with the list of files.
+The following example designates a group and field as file drop zones by referencing the `ProductImageUpload` action property. The `FileUploadAction` action's `AllowMultipleFiles` property lets you specify whether an action can handle a single file or multiple files. The `AllowedFileExtensions` property allows developers to specify the file types that people can drag to a drop zone. After you drag one or more files to a group or field on a `HappyDragAndDrop` page, the `OnAction` trigger in the `FileUploadAction` property is called with the list of files.
 
 ```AL
 > page 50102 HappyDragAndDropPage
