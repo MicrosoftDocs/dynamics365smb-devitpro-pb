@@ -78,7 +78,7 @@ If the prompt area includes a [text](methods-auto/text/text-data-type.md) field,
 
 A prompt guide is a predefined list of prompt texts that users can choose from by selecting **Prompt gudie** ![Shows the prompt guide button in the prompt dialog type page](media/promptdialog-prompt-mode-prompt-guide-icon.png) on the prompt dialog page.
 
-[![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-guide.png)](media/promptdialog-prompt-mode-prompt-guide.png#lightbox)
+[![Shows the prompt guide of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-guide.png)](media/promptdialog-prompt-mode-prompt-guide.png#lightbox)
 
 The prompt guide saves users time because they don't have to write prompts from scratch, plus it can help them to understand how write prompts to improve results.
 
@@ -98,7 +98,7 @@ actions
 }
 ```
 
-[Learn more about prompting using a prompt guide](devenv-page-promptguide.md).
+[Learn more about pPrompting using a prompt guide](devenv-page-promptguide.md).
 
 ## Add a generate action
 
