@@ -43,7 +43,8 @@ layout
         {
             ShowCaption = false;
             MultiLine = true;
-            InstructionalText = 'Enter the information that you want to give copilot...';
+            // Adds placeholder text.
+            InstructionalText = 'Enter information that describes that you want to give copilot...'; 
         }
     }
 }
@@ -54,7 +55,24 @@ Within `area(Prompt)`, you can add one or more fields, groups, and page parts. `
 > [!NOTE]
 > The code example is a special case where the first field on the PromptDialog page is shown as a multiline input with `ShowCaption=false`. In this case, the page caption serves as the caption for the input field. For accessibility and usability reasons, other fields on the page should continue to have their captions visible.
 
-The 
+### Add placeholder text
+
+If the prompt area includes a [text](methods-auto/text/text-data-type.md) field, you can use the [InstructionalText property](properties/devenv-instructionaltext-property.md) to add placeholder text in the field. The purpose of placeholder text is help users understand what they should enter as a prompt.
+
+#### Requirements
+
+- Placeholder text is only available for text fields, not for numbers, date or time fields, or any other non-text field.
+- Placeholder text isn't shown if the field or page is not editable, `Editable=false;`.
+- List pages show the placeholder for fields in the current row.
+
+#### Design considerations
+
+- Keep the placeholder text short, succinct, and specific to the field, page, or prompt dialog. Don't use entirely generic text like `Enter description here`. Don't use entirely generic text like `Enter description here`. Instead, make the text contextual to the specific field, page or promptdialog ` so that there's real informational value. Don’t repeat what the prompt dialog title says either, but use text that naturally extends what the title says to guide the user along.
+- Don't require the user to use value of InstructionalText property to complete their task. The reason is that the full text might not always be visible depending on screen size, device type, orientation, page layout, and similar.
+- The placeholder text isn't tha same a the *name* or *label* of the field&mdash;it's supplemental information. Don't use the `InstructionalText` property on fields as a replacement for the [Caption property](properties/devenv-caption-property.md).
+- Use placeholder text only when the extra guidance is helpful for users to get started. Overuse of placeholder, such as applying it to all fields on a page, might be distracting and diminish its effectiveness.
+- Use placeholder text instead of implementing instructions as captionless fields outside of the input field, to keep your page design compact.
+- Placholder text provides hints about how to fill in a field, where the instruction is only shown while the field is empty. Conversely, field tooltips can explain in moderate detail what the field is about and how it is used, and is available on demand even if the field is not empty.
 
 ## Add a generate action
 
