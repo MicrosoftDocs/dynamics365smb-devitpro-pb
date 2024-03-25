@@ -19,7 +19,10 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 and run
 
 To create a prompt action, you must create a new area in the `actions` section of the page object. The area must be set to `area(Prompting)`. You can then create a new action in the area and run a `PromptDialog` object that you want to activate when the action is clicked. Only objects of the `PromptDialog` page type can be run from a prompting area.
 
-The following example shows the syntax for how to create a prompt action that runs the **Copilot Marketing Text** page. This piece of AL code can be added to a page where you want to promote the **Copilot Marketing Text** functionality. When the action is clicked, the **Copilot Marketing Text** page is opened in a dialog.
+> [!NOTE]
+> The floating action bar will only show if you have linked a `RunObject` property to the action.
+
+The following example shows the syntax for how to create a prompt action that runs the **Copilot Marketing Text** page. This piece of AL code can be added to a page where you want to promote the **Copilot Marketing Text** functionality. When the action is clicked, the **Copilot Marketing Text** page is opened in a dialog. The user will see a floating action bar on the page. When the users selects **Hide**, the floating action bar will be placed in the action bar instead. It can easily be brought back by clicking **Show in page**.
 
 ```al
 ...
@@ -29,6 +32,7 @@ actions
     {
         action(MyPromptAction)
         {
+            Caption = 'Copilot Marketing Text';
             RunObject = page "Copilot Marketing Text";
         }
     }
