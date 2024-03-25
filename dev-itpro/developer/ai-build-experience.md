@@ -21,7 +21,7 @@ The fundamental component of Copilot from the user-interface perspective is the 
 
 |Launch copilot|Provide input (prompt)| AOAI returns results (generate) |Page shows results (content)|
 |-|-|-|-|
-|[![Shows a flow of a copilot with the palog page type](media/copilot-launch.png)](media/copilot-launch.png#lightbox)|[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.svg)](media/promptdialog-prompt-mode-prompt-area-no-callout.svg#lightbox)|<br>[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode-small.png)](media/promptdialog-generate-mode.png#lightbox)|[![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)](media/promptdialog-content-mode.svg#lightbox)|
+|[![Shows a flow of a copilot with the palog page type](media/copilot-launch.png)](media/copilot-launch.png#lightbox)|[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.png)](media/promptdialog-prompt-mode-prompt-area-no-callout.png#lightbox)|<br>[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode-small.png)](media/promptdialog-generate-mode.png#lightbox)|[![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)](media/promptdialog-content-mode.svg#lightbox)|
 
 <!--
 > [!VIDEO media/Copilot-UI.mp4]-->
