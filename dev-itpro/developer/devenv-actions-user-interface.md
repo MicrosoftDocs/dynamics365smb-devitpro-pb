@@ -1,5 +1,5 @@
 ---
-title: Actions in the User Interface
+title: Actions in the user interface
 description: Guidelines for organizing actions in the action bar for Dynamics 365 Business Central
 author: jacobwj
 ms.author: solsen

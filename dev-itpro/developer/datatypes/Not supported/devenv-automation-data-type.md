@@ -1,29 +1,29 @@
 ---
-title: "Automation Data Type"
+title: Automation data type
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 03/19/2024
 ms.reviewer: na
-ms.topic: conceptual
-ms.assetid: 3d37ff31-161a-4181-898f-fbb2b56234b9
-caps.latest.revision: 22
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
-# Automation Data Type
+
+# Automation data type
+
 Use the Automation data type to reference an automation server.  
 
 ### To use an automation server in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)]
 
-1.  Define a variable of type Automation and give it a name.  
+1. Define a variable of type Automation and give it a name.  
 
-2.  Select the **Subtype** field, and in the **Automation Object List** window that opens, in the **Automation Server** field, get a list of available automation servers.  
+2. Select the **Subtype** field, and in the **Automation Object List** window that opens, in the **Automation Server** field, get a list of available automation servers.  
 
-3.  Select a server and then choose the **OK** button.  
+3. Select a server and then choose the **OK** button.  
 
      In the **Automation Object List** the interfaces of the selected automation server are displayed.  
 
-4.  Select an interface and then choose the **OK** button.  
+4. Select an interface and then choose the **OK** button.  
 
- This procedure has selected the GUID of the automation server, the version number, and the GUID of the interface. It is immediately evaluated into a name such as *\<name of server>*.*\<name of interface>*, as in the following:  
+This procedure has selected the GUID of the automation server, the version number, and the GUID of the interface. It is immediately evaluated into a name such as *\<name of server>*.*\<name of interface>*, as in the following:  
 
 ```  
 'Microsoft Excel X.0 Object Library'.Application  

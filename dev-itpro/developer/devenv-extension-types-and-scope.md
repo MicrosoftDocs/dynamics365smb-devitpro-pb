@@ -1,9 +1,9 @@
 ---
-title: "Extension types and scope"
-description: "Describes the different types of extensions for Business Central and how broad their scope is."
+title: Extension types and scope
+description: Describes the different types of extensions for Business Central and how broad their scope is.
 ms.custom: na
 ms.author: solsen
-ms.date: 03/03/2023
+ms.date: 02/20/2024
 ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
@@ -71,9 +71,9 @@ These apps are unique per environment. Per-tenant extensions are uniquely define
 - You can deploy multiple PTEs with the same `id` and `version`, but different content to multiple environments. This might, however, cause you extra overhead when managing these environments.
 - You control when to publish, install, upgrade, uninstall, or unpublish the app because it's specific to your environment. You may also choose to force sync a PTE.
 - A PTE can have dependencies on Global apps, on other PTEs, or on DEV extensions.
-	
+
 ### Environment types
-	
+
 PTEs can exist in Production and sandbox environments. For more information, see [Production and Sandbox Environments](../administration/environment-types.md).
 	
 ### How to install
@@ -118,7 +118,7 @@ In general, extensions are uniquely defined by their `id`. A specific version of
 
 - It isn't possible to deploy a **Global app** and a **DEV** extension with the same `id` and `version`. When deploying the DEV version of a Global app from Visual Studio Code to a sandbox environment, for example, for development or troubleshooting, you must make sure that your DEV extension has a different `version` than what is published to AppSource. Similarly, after you're done developing/testing your extension, you should increase the `version` before submitting to AppSource. 
 
-## See Also
+## See also
 
-[Developing Extensions](devenv-dev-overview.md)  
-[Get Started with AL](devenv-get-started.md)  
+[Developing extensions](devenv-dev-overview.md)  
+[Get started with AL](devenv-get-started.md)  
