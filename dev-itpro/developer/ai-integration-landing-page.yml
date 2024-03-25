@@ -58,6 +58,10 @@ landingContent:
       links:
       - text: PromptDialog page type
         url: devenv-page-type-promptdialog.md
+      - text: Prompting using a prompt guide
+        url: devenv-page-promptguide.md
+      - text: Prompting using a floating action bar
+        url: devenv-page-prompting-floating-actionbar.md
       - text: PromptMode property
         url: properties/devenv-promptmode-property.md      
       - text: AI module (System.AI)
