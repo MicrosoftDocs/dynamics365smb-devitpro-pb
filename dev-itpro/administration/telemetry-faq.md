@@ -113,6 +113,16 @@ Read more in the article [I know SQL. How do I do that in KQL?](/azure/data-expl
 
 [!INCLUDE[KQLTools](../includes/include-telemetry-kql-tool.md)]
 
+## Can I follow a session in telemetry? 
+
+Yes. See how to do that here: [KQL example - following telemetry events for a session](./telemetry-analyze-with-kql.md#kql-example---following-telemetry-events-for-a-session)
+
+
+## Can I follow telemetry events for a user in telemetry? 
+
+Yes, if a telemetry ID has been assigned to the user. See how to do that here: [KQL example - following telemetry events for a user](./telemetry-analyze-with-kql.md#kql-example---following-telemetry-events-for-a-user)
+
+
 ## Where can I find telemetry sample code?
 
 [!INCLUDE[telemetrySamples](../includes/include-telemetry-samples.md)]

@@ -83,9 +83,7 @@ union pv, tra
 
 ## KQL example - following telemetry events for a user
 
-Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24, the server and the browser components align on the guids logged to the **user_Id** column in the *traces* and *pageViews* tables. This allows you to do advanced troubleshooting such as following what a user does.
-
-To see which user corresponds to the guid logged in the **user_Id** column, see [Assign a telemetry ID to users](./telemetry-enable-application-insights.md#assign-a-telemetry-id-to-users).
+Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24, the server and the browser components align on the guids logged to the **user_Id** column in the *traces* and *pageViews* tables. This allows you to do advanced troubleshooting such as following what a user does. To see which user corresponds to the guid logged in the **user_Id** column, see [Assign a telemetry ID to users](./telemetry-enable-application-insights.md#assign-a-telemetry-id-to-users).
 
 Use this KQL code to query what a user does across sessions:
 
