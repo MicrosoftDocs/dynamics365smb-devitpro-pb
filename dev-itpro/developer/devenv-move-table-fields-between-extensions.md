@@ -16,25 +16,21 @@ As extensions mature or as a consequence of an extension initially created as a 
 
 ## Moving tables between extensions
 
-To prepare moving a table, both the source and destination must contain the implementation of that table. Furthermore, the table must have the same schema and public methods in the source and destination extension. The tables must be identical in both extensions, including the table ID, fields, keys, and triggers. The table must be moved in a staged process to avoid breaking changes. The source table must remain for a period and act as a proxy for downstream dependencies. The compiler will issue a warning to update dependencies to include the destination extension. This proxy only works for a dependent app. This means that prior to moving a table, all dependencies from the source extensions own code must also be obsoleted and moved to the destination extension (or be removed).
+To prepare moving a table, both the source and destination must contain the implementation of the specific table. Furthermore, the table must have the same schema and public methods in the source and destination extension. The tables must be identical in both extensions, including the table ID, fields, keys, and triggers. Then, the table must be moved in a staged process to avoid breaking changes.
 
 In the source table definition, you must add the `MovedTo` property, making sure that it points to the app ID of the destination extension. Likewise, in the destination extension, you must add the `MovedFrom` property, which should point to the app ID of the source extension. When the extensions are published, installed, or upgraded, the platform will handle moving the data ownership for the table from the source to the destination extension.
 
 ### Avoiding breaking changes
 
-To avoid breaking changes from the table move, the source table must remain for a period and act as a proxy for downstream dependencies, and the compiler will issue a warning to update dependencies to include the destination extension. This proxy only works for a dependent app, which means that prior to moving a table, all dependencies from the source extensions own code must also be obsoleted and moved to the destination extension (or be removed).
+To avoid breaking changes from the table move, the source table must remain for a period and act as a proxy for downstream dependencies, and the compiler will issue a warning to update dependencies to include the destination extension. This proxy only works for a dependent extension, which means that prior to moving a table, all dependencies from the source extensions own code must also be obsoleted and moved to the destination extension (or be removed).
 
 Initially, only the full table can be moved, not individual fields. Tables can be moved both up and down the dependency chain.
 
+A move can be a breaking change or a non-breaking change. If a table is moved to one of its own dependencies (aka moving a table down) and the `PropagateDependency` property is set in the manifest, the move isn't a breaking change and this kind of change can be done without preparation in one stage. This means that in one release, the `ObsoleteStage` property can be set to `Moved`.
 
+In other cases where a move can break any of the dependent extensions, the move of a table must be staged, which means that the `ObsoleteStage` property must be set to `PendingMoved` in the first version and can be set to `Moved` in a later version.
 
-
-
-A move can be a breaking change or a non-breaking change. If a table is moved to one of its own dependencies (aka moving a table down) and "PropagateDependency" property is set in the manifest, a move is not a breaking change and this kind of changes can be done without preparation in one stage. This means that in one release, "obsoleteStage" property can be set to Moved.
-
-In other cases where a move can break any of the dependent apps, the move of a table must be staged this means that obsoleteStage property should be set to PendingMoved in the first version and can be set to Moved later.
-
-A move is possible if the source (current owner) allows the move. This can be done by setting the obsoleteStage on the table to Moved and setting the MovedTo property to the app Id of the destination.
+A move is possible if the source (current owner) allows the move. This can be done by setting the `ObsoleteStage` property on the table to `Moved` and by setting the `MovedTo` property to the app ID of the destination extension.
 
 If a table is set to moved out that table is not accessible anymore. The data will be preserved until the new destination takes over the table.
 
