@@ -97,15 +97,14 @@ pageextension 50101 ItemBarcode extends "Item Card"
 
 With this scenario, you add logic in AL to start the barcode scanning UI when a certain operation occurs or conditions are met. For example, barcode scanning can start when a user selects an action or link. Or, when some semi-automated logic or trigger is invoked (for instance, when a page opens). This scenario uses the same camera-based scanning technology as scenario 1 and returns the scanned barcode value to AL code for further processing.
 
-There are two different ways to develope this scenario. The newest way is to use : using the Business Central contrl add-in `CameraBarcodeScannerProviderAddIn` control add-in or .NET interoperability.
+Version 24 introduced a barcode scanning API that's based on control add-ins​ to replace the .NET interoperability-based API. The control add-in API supports Business Central online, which the .NET interoperability-based API doesn't. The .NET interoperability-based API is still supported but the contol add-in API is the recommended way to implement barcode scanning capability going forward.
 
-ping this scena
+> [!IMPORTANT]
+> With the control add-in API, there's no associated UI on the page, meaning no embedded iFrame or visual indicator. Also no scripting or styling functionality is provided.
 
+### Use control add-in API
 
-
-
-> [!TIP]
-> For a detailed implementation as used in the Business Central base application, refer to source code of the **Item Tracking Lines** page (ItemTrackingLines.Page.al).
+The following code example shows how to invoke barcode scanning using the `CameraBarcodeScannerProviderAddIn` control add-in.
 
 ```al
 page 50100 "Camera Barcode Scanner"
@@ -177,6 +176,7 @@ page 50100 "Camera Barcode Scanner"
 }
 ```
 
+### Use .NET-based API (on-premises only)
 
 The basic steps for implementing this scenario are: 
 
@@ -185,8 +185,11 @@ The basic steps for implementing this scenario are:
 1. Create the barcode scanner. For example, this step could inside a page action.
 1. Call the camera action on the device.
 1. Depending on whether the barcode is scanned successfully, call either the `BarcodeAvailable` or `BarcodeFailure` triggers.
-   
+
 This following code shows an example of how to start the barcode scanning when a page opens.
+
+> [!TIP]
+> For a detailed implementation as used in the Business Central base application, refer to source code of the **Item Tracking Lines** page (ItemTrackingLines.Page.al).
 
 ```al
 page 50100 "MyALPage"
@@ -249,8 +252,7 @@ This scenario enables the use of professional hardware barcode scanners, like Ze
 
 A significant benefit of this scenario is that it allows for scanning barcodes and creating documents without the need for user interaction with the UI. When a barcode is scanned, the value is transmitted to the Business Central mobile app and then to the AL code. After AL intercepting an event from the Android device, AL code then processes the decoded barcode.
 
-
-### Prepare barcode scanners 
+### Prepare barcode scanners
 
 For barcode scanners to communicate with the Business Central mobile app, they must be configured to emit Android Intent messages for every scanned barcode. By default, the mobile app is programmed to listen for certain types of messages from the barcode scanners. To enable this communication, you need to adjust the scanner's settings according to the values outlined in the following table:
 
