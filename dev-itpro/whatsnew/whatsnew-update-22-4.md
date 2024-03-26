@@ -1,12 +1,12 @@
 ---
 title: "Update 22.4 for Microsoft Dynamics 365 Business Central 2023 Release Wave 1"
 description: Get an overview of new and changed capabilities in the 22.4 update of Business Central online, which is part of 2023 release wave 1.
-ms.author: a-enielsson
+ms.author: jswymer
 ms.custom: na
 ms.date: 08/07/2023
 ms.reviewer: jswymer
 ms.topic: conceptual
-author: EmmaNielsson
+author: jswymer
 ---
 
 # Update 22.4 for Microsoft Dynamics 365 Business Central online 2023 release wave 1

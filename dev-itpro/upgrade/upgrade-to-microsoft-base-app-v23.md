@@ -585,31 +585,29 @@ Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<e
 Synchronize the extensions in the following order:
 
 1. Microsoft System Application
-2. Microsoft Base Application
-3. Microsoft Application
-4. Microsoft and third-party extensions
+1. Microsoft Base Application
+1. Microsoft Application
+1. Customization extensions that must take ownership of fields/tables from the table migration extension. These extensions contain table objects or table extension objects that must take ownership of tables or fields included in the first table migration extension version.
+1. Second version of the table migration extension (empty version)
+1. Microsoft and third-party extensions
 
-  > [!NOTE]
-  >
-  > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must synchronize the India extensions.
-  >
-  > - Tax Engine
-  > - India Tax Base
-  > - QR Generator
-  > - India GST
-  > - India Gate Entry
-  > - India TCS
-  > - India TDS
-  > - India Voucher Interface
-  > - Fixed Asset Depreciation for India
-  > - India Reports
-  > - India Data Migration
+    > [!NOTE]
+    >
+    > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must synchronize the India extensions.
+    >
+    > - Tax Engine
+    > - India Tax Base
+    > - QR Generator
+    > - India GST
+    > - India Gate Entry
+    > - India TCS
+    > - India TDS
+    > - India Voucher Interface
+    > - Fixed Asset Depreciation for India
+    > - India Reports
+    > - India Data Migration
 
-5. Customization extensions
-6. Second version of the table migration extension (empty version)
-
-> [!IMPORTANT]
-> Synchronize extensions in the order of dependencies. The migration extension must be synchronized last. This step will change table ownership to the system and base application.
+1. Other customization extensions.
 
 ## Task 15: Upgrade empty table migration extension
 
