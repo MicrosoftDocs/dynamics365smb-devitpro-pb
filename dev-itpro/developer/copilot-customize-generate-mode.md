@@ -64,7 +64,7 @@ The following figures illustrate the customized captions in the UI:
 
 ## Example: From the RunGeneration() procedure
 
-This example does changes the content mode caption by calling the `Dialog.Open()` method from the procedure that generates the results (for purposes of this article, the `RunGeneration()`). 
+This example changes the generate mode caption by calling the `Dialog.Open()` method from the procedure that generates the results (for purposes of this article, the `RunGeneration()`). 
 
 ```al
 systemaction(Generate)
