@@ -57,7 +57,7 @@ Within `area(Prompt)`, you can add one or more fields, groups, and page parts. `
 
 ### Add placeholder text
 
-For fields that have the data type [Text](methods-auto/text/text-data-type.md), [BigText](methods-auto/bigtext/bigtext-data-type.md), [Code](methods-auto/code/code-data-type.md), or [GUID](methods-auto/guid/guid-data-type.md) type fields, you can use the [InstructionalText property](properties/devenv-instructionaltext-property.md) to add placeholder text in the field. The purpose of placeholder text is help users understand what they should enter as a prompt. The placeholder text disappears as soon as the user enters text in the field.
+For fields of data type [Text](methods-auto/text/text-data-type.md), [BigText](methods-auto/bigtext/bigtext-data-type.md), [Code](methods-auto/code/code-data-type.md), or [GUID](methods-auto/guid/guid-data-type.md), you can use the [InstructionalText property](properties/devenv-instructionaltext-property.md) to add placeholder text in the field. The purpose of placeholder text is help users understand what they should enter as a prompt. The placeholder text disappears as soon as the user enters text in the field.
 
 > [!NOTE]
 > Placeholder text appears only if the field and page that are editable. It's not shown if the [Editable property](properties/devenv-editable-property.md) of the page or fields is set to `false`.
