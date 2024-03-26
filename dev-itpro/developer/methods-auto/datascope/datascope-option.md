@@ -3,8 +3,8 @@ title: "DataScope System Option"
 description: "Identifies the scope of stored data in the isolated storage."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

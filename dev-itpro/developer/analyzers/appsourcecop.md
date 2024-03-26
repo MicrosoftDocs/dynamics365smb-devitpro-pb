@@ -3,8 +3,8 @@ title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/22/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -136,6 +136,8 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0122](appsourcecop-as0122.md)|Source symbol for the moved symbol cannot be found in the package with the given AppId.|Upgrade|Warning|
 |[AS0123](appsourcecop-as0123.md)|A key cannot be declared as clustered on an existing table.|Upgrade|Error|
 |[AS0124](appsourcecop-as0124.md)|Changing an extension object's target is not allowed.|Upgrade|Error|
+|[AS0125](appsourcecop-as0125.md)|Changes the XLIFF translation ID are not allowed.|Upgrade|Info|
+|[AS0126](appsourcecop-as0126.md)|InternalsVisibleTo should not specifying a different publisher name than the one of this extension.|Extensibility|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

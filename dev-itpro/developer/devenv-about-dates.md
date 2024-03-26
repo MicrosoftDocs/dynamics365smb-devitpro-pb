@@ -1,18 +1,17 @@
 ---
-title: "About Dates in Business Central"
-description: "About dates and time zones in Dynamics 365 Business Central"
+title: About dates in Business Central
+description: About dates and time zones in Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/11/2023
 ms.reviewer: 
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# About Dates in Business Central
+# About dates in Business Central
 
-Working with dates and time zones in [!INCLUDE[prod_short](../includes/prod_short.md)], the following list provides insights on what's good to know.
+When you work with dates and time zones in [!INCLUDE[prod_short](../includes/prod_short.md)], the following list provides insights on what's good to know.
 
 - Every [!INCLUDE[prod_short](../includes/prod_short.md)] user has a timezone specified on the page **User Settings**.
 - When a user logs into [!INCLUDE[prod_short](../includes/prod_short.md)] for the first time, this timezone is set using settings from the browser.
@@ -21,7 +20,7 @@ Working with dates and time zones in [!INCLUDE[prod_short](../includes/prod_shor
 - The **Time Zone** field on the **User Settings** page is in the UI and as such is only known by the client. You can't set a time zone per user on the **User Card** page in Business Central.
 - Web Services connections are running using the UTC timezone and all `DateTime` types transferred in OData include a time zone as well. 
 - The places in [!INCLUDE[prod_short](../includes/prod_short.md)], where you still see `Date` fields are there because these fields don’t represent a timestamp. Instead, they represent a date for financial reporting or similar.
-- `Date` fields are never converted per time zone, a date value stays as it was entered.
+- `Date` fields are never converted per time zone; a date value stays as it was entered.
 - The user enters the posting date in the UI, which represents the date on which this line is posted in the journal.
 
 > [!NOTE]  
@@ -29,5 +28,5 @@ Working with dates and time zones in [!INCLUDE[prod_short](../includes/prod_shor
 
 ## See also
 
-[DateTime Data Type](methods-auto/datetime/datetime-data-type.md)  
-[Date Data Type](methods-auto/date/date-data-type.md)
+[DateTime data type](methods-auto/datetime/datetime-data-type.md)  
+[Date data type](methods-auto/date/date-data-type.md)

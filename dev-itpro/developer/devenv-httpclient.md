@@ -12,6 +12,10 @@ ms.author: kepontop
 
 # Call external services with the HttpClient data type
 
+You can integrate [!INCLUDE[prod_short](includes/prod_short.md)] apps/extensions with external systems by using the *HttpClient* data type in your AL code.
+
+:::image type="content" source="media/httpclient.svg" alt-text="Shows how AL apps/extensions can call external web services from Business Central" lightbox="media/httpclient.svg":::
+
 The [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md) is simply a wrapper on the .NET class HttpClient.  
 
 In this article, you learn how to make HTTP requests using the *HttpClient* data type and handle responses using the *HttpResponseMessage* data type. 
@@ -131,9 +135,18 @@ The following example illustrates the error handling you need to setup for handl
 
 ## Advanced scenarios
 
+### Using cookies
+
+Starting from 2024 release wave 1, you can use server-side cookies when calling an external service using HttpClient This allows you to efficiently send and receive cookies in HTTP requests, unblocking scenarios where third-party endpoints require cookie customization. With the Cookie datatype and AL methods for handling cookies, you can automatically re-use response cookies, handle cookies manually, or a mix of both. 
+
+<!-- Pending merge to main for 2024w1 content
+For more information about server-side cookies, see 
+-->
+
+
 ### Using certificates
 
-It's possible to include a certificate when calling an external service. 
+It's possible to include a certificate when calling an external service using HttpClient. 
 
 [!INCLUDE[httpclient_cert_example](includes/include-http-cert-example.md)]
 

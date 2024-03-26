@@ -18,15 +18,10 @@ This walkthrough guides you step by step to create a sample extension in AL. New
 This walkthrough covers the following tasks:
 
 - Developing a sample extension with a table, a card page, and a list page.
-
 - Deploying the sample extension to your development sandbox environment.  
-
 - Using the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Designer to modify visual aspects of the extension. 
-
 - Creating extension objects that can be used to modify page and table objects.
-
 - Initializing the database during the installation of the extension.
-
 - Upgrading and preserving data during the upgrade of the extension.
 
 ## Prerequisites
@@ -34,12 +29,10 @@ This walkthrough covers the following tasks:
 To complete this walkthrough, you need:
 
 - The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant.
-
 - Visual Studio Code.
-
 - The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code.
 
-For more information on how to get started with your first extension for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Getting Started](devenv-get-started.md).
+For more information on how to get started with your first extension for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Getting started](devenv-get-started.md).
 
 ## Rewards extension overview
 
@@ -192,7 +185,6 @@ page 50102 "Reward List"
                 field("Reward ID"; Rec."Reward ID")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the level of reward that the customer has at this point.';
                 }
 
                 field(Description; Rec.Description)
@@ -345,11 +337,9 @@ pageextension 50104 "Customer Card Ext" extends "Customer Card"
 
 At this point, reward levels can be created and assigned to customers. To view recent changes in the code, update the `startupObjectId` value in the launch.json file to `21`. Then, select the <kbd>Ctrl</kbd>+<kbd>F5</kbd>  key or **Run Without Debugging** from the **Run** menu to open the page.
 
-## Help links
+## Configure context-sensitive links to Help
 
-This sample app is relatively straightforward, but we want users of your app to be able to get help instantly and learn more in the process of using it. Just like [!INCLUDE [prod_short](includes/prod_short.md)] has Help readily available for users, you configure your app to get context-sensitive links to Help, and then apply tooltips to the fields in your pages.  
-
-### Configure context-sensitive links to Help
+This sample app is relatively straightforward, but we want users of your app to be able to get help instantly and learn more in the process of using it. Just like [!INCLUDE [prod_short](includes/prod_short.md)] has Help readily available for users, you configure your app to get context-sensitive links to Help.
 
 At an app level, you can specify where the Help for your functionality is published in the app.json file. Then, for each page in your app, you specify a relevant Help file on your targeted website for that particular page. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 
@@ -393,23 +383,44 @@ page 50102 "Reward List"
 Now, if you run your app, you can see the link to help article for **Reward List** page by pointing over *Reward ID* and choosing **Learn More**. The URL of your targeted website is present in the Help section.
 You can specify the same relative link for **Reward Card**, **Reward List**, and the customization of the **Customer** page, or you can specify different targets. For more information, see [Page-level configuration](../help/context-sensitive-help.md#page-level-configuration).  
 
-### Add tooltips
+## Add tooltips
 
 To help users navigate the app interface without any confusion and to add more clarity on the app features, you can use tooltips. Just like the base application of [!INCLUDE[prod_long](includes/prod_long.md)] includes tooltips for all controls and actions. For more information, see [Help users get unblocked](../user-assistance.md#help-users-get-unblocked).  
 
-For this walkthrough, add the following tooltip to the properties of the **Reward ID** field on all three pages, *Reward Card*, *Reward List*, and *Customer Card ext*:
+For this walkthrough, you want the following tooltip to appear on all three pages, *Reward Card*, *Reward List*, and *Customer Card ext*.
 
 ```AL
 ToolTip = 'Specifies the level of reward that the customer has at this point.';
 ```
 
-The following example shows the tooltip:
+**Adding tooltips in [!INCLUDE[prod_short](../includes/2024-releasewave1-short.md)] or later**
+
+Starting in [!INCLUDE[prod_short](includes/prod_short.md)] [!INCLUDE[prod_short](../includes/2024-releasewave1-short.md)], you can define tooltips on table fields. 
+
+The following example shows how tooltips are defined on the table level:
+
+```AL
+// In [!INCLUDE[prod_short](../includes/2024-releasewave1-short.md)] or later, add tooltips on the Reward table 
+
+field(1;"Reward ID";Code[30])
+{
+    DataClassification = ToBeClassified;
+    ToolTip = 'Specifies the level of reward that the customer has at this point.';
+}
+```
+
+
+**Adding tooltips prior to [!INCLUDE[prod_short](../includes/2024-releasewave1-short.md)]**
+
+Prior to [!INCLUDE[prod_short](includes/prod_short.md)] [!INCLUDE[prod_short](../includes/2024-releasewave1-short.md)], you need to add the tooltip to the properties of the **Reward ID** field on all three pages, *Reward Card*, *Reward List*, and *Customer Card ext*. 
+
+The following example shows how tooltips are defined on the page level:
 
 ```AL
 field("Reward ID";"Reward ID")
 {
-ApplicationArea = All;
-ToolTip = 'Specifies the level of reward that the customer has at this point.';
+    ApplicationArea = All;
+    ToolTip = 'Specifies the level of reward that the customer has at this point.';
 }
 ```
 
@@ -523,16 +534,16 @@ You can configure your extension to send this data to a specific Application Ins
 
 ## Conclusion
 
-This walkthrough showed how an extension can be developed. The main AL objects and extension objects were used to make a structure for reward levels, to store, view, and edit them. The Designer was introduced as an alternative to modify visual components of page objects and to customize them directly from the web interface instead of using code. Up to this point, the table and the page objects were empty, so, we added install codeunit which initialized the **Reward** table with a standard number of reward levels when the extension was installed. We also added an upgrade code section in this exercise to create a complete picture of all processes involved when an extension is built. As a result, a user is enabled to assign one of the three reward levels to a customer and to change this scenario by upgrading the version of the extension.
+This walkthrough showed how an extension can be developed. The main AL objects and extension objects were used to make a structure for reward levels, to store, view, and edit them. The Designer was introduced as an alternative to modify visual components of page objects and to customize them directly from the web interface instead of using code. Up to this point, the table, and the page objects were empty, so, we added install codeunit which initialized the **Reward** table with a standard number of reward levels when the extension was installed. We also added an upgrade code section in this exercise to create a complete picture of all processes involved when an extension is built. As a result, a user is enabled to assign one of the three reward levels to a customer and to change this scenario by upgrading the version of the extension.
 
 > [!TIP]  
 > To try building a more advanced Customer Rewards sample extension, see [Building an Advanced Sample Extension](devenv-extension-advanced-example.md).
 
 ## See also
 
-[Developing Extensions](devenv-dev-overview.md)  
-[Get Started with AL](devenv-get-started.md)  
-[How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
-[Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
-[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
-[Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  
+[Developing extensions](devenv-dev-overview.md)  
+[Get started with AL](devenv-get-started.md)  
+[How to: publish and install an extension](devenv-how-publish-and-install-an-extension-v2.md)  
+<!-- [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  -->
+[Configure context-sensitive help](../help/context-sensitive-help.md)  
+[Sending extension telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  

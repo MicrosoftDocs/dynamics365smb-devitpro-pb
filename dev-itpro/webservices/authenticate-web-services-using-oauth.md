@@ -87,7 +87,7 @@ For more information, please visit [Service-to-Service Authentication](../admini
 
 ## Credentials lifetime
 
-With authentication methods other tha Microsoft Entra ID, like Windows or NavUserPassword, the credentials that users provide are persisted by application and used for as long as they're valid in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, this is different for OAuth, because the security tokens that are used for authentication have a limited lifetime.
+With authentication methods other than Microsoft Entra ID, like Windows or NavUserPassword, the credentials that users provide are persisted by application and used for as long as they're valid in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, this is different for OAuth, because the security tokens that are used for authentication have a limited lifetime.
 
 An authentication result from Microsoft Entra ID, contains two tokens: an access token and an ID token.
 

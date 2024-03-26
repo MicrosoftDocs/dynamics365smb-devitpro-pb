@@ -3,7 +3,7 @@ title: "AL Formatter"
 description: "The AL formatter can help you insert and remove space from AL code."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/01/2024
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -17,7 +17,7 @@ ms.collection: get-started
 The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers users the option to automatically format their source code. This capability increases the usability of the editor by allowing developers to instantly fix the indentation and formatting of their code. The autoformatter analyzes the syntax tree of the AL code that you're formatting. By using rules that are based on the coding and style guidelines for AL, the autoformatter then inserts and removes whitespace from key points in the document to make it more readable.
 
 > [!NOTE]  
-> The rules used by the autoformatter cannot be configured by the user. This limitation is present to allow for a uniform style to be used throughout the community of AL developers.
+> The rules used by the autoformatter can't be configured by the user. This limitation is present to allow for a uniform style to be used throughout the community of AL developers.
 
 ## Invoking AL formatter
 
@@ -29,9 +29,9 @@ To format a range, in an already opened project, open the document that you want
 
 ![Format Selection.](media/format-selection.gif)
 
-## See Also
+## See also
 
-[AL Development Environment](devenv-reference-overview.md)  
-[AL Outline View](devenv-al-outline-view.md)  
-[AL Code Actions](devenv-code-actions.md)  
+[AL development environment](devenv-reference-overview.md)  
+[AL outline view](devenv-al-outline-view.md)  
+[AL code actions](devenv-code-actions.md)  
 

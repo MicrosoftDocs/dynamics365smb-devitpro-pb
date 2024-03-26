@@ -5,9 +5,9 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.collection: 
-ms.date: 10/11/2023
+ms.date: 03/15/2024
 ms.custom: bap-template
+ms.collection: get-started
 ---
 
 # AL operators

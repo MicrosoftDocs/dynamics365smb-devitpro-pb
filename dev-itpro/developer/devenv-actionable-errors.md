@@ -3,11 +3,10 @@ title: Actionable errors
 description: Learn how to write AL code that returns error dialogs where users might unblock themselves.
 ms.custom: bap-template
 ms.date: 12/21/2023
-ms.reviewer: na
+ms.reviewer: solsen
 ms.topic: conceptual
 author: samirdal
 ms.author: samirdal
-
 ---
 
 # Actionable errors
@@ -16,8 +15,8 @@ This article describes how to handle error dialogs in AL code, specifically how 
 
 For advice on how to design error dialogs that users understand, see [User experience guidelines for errors](devenv-error-handling-guidelines.md). 
 
-
 ## Unblocking users with actionable errors
+
 [!INCLUDE [actionable-errors-overview](includes/include-actionable-errors-overview.md)]
 
 ## <a name="fix-it-actions"></a> Error messages with Fix-it actions 
@@ -224,15 +223,15 @@ begin
     ErrorDialogWithTwoActions.Message := StrSubstNo('The dimension value must be blank for the dimension %1 for Vendor %2', DimensionCode, VendorCode); 
     ErrorDialogWithTwoActions.DetailedMessage('Add some text to help the person troubleshooting this error.');
 
-    ErrorNoLinesToCreate.AddAction(
-        'Set value to blank'
+    ErrorDialogWithTwoActions.AddAction(
+        'Set value to blank',
         Codeunit::FirstFixitCodeunit, 
-        FirstFixitCodeunitMethodName
+        "FirstFixitCodeunitMethodName"
     );
-    ErrorNoLinesToCreate.AddAction(
-        'OK'
+    ErrorDialogWithTwoActions.AddAction(
+        'OK',
         Codeunit::SecondFixitCodeunit, 
-        SecondFixitCodeunitMethodName
+        "SecondFixitCodeunitMethodName"
     );
 
     Error(ErrorDialogWithTwoActions);

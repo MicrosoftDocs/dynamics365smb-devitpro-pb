@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
+ms.service: dynamics-365-business-central
 ms.search.keywords: NAV Windows client
 author: jswymer
 ---
