@@ -98,7 +98,7 @@ actions
 }
 ```
 
-[Learn more about pPrompting using a prompt guide](devenv-page-promptguide.md).
+[Learn more about prompt guides](devenv-page-promptguide.md).
 
 ## Add a generate action
 
