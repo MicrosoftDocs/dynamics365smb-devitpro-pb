@@ -40,9 +40,11 @@ See an overview at [Telemetry overview](telemetry-overview.md).
 
 [!INCLUDE[telemetryEventDistribution](../includes/include-telemetry-event-distribution.md)]
 
+
 ## Can I query telemetry from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]?
 
-Yes. See how to do that here: [How can I query telemetry from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]?](./telemetry-analyze-with-kql.md#how-can-i-query-telemetry-from-includeloganalytics)
+Yes. See how to do that here: [How can I query telemetry from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]?](telemetry-analyze-with-kql.md#how-can-i-query-telemetry-from-loganalytics)
+
 
 ## Why do I see _1, _2 in custom dimensions?
 

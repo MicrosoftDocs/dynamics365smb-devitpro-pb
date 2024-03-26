@@ -45,7 +45,7 @@ You can use Kusto queries as the data source in many places. For example:
 
 [!INCLUDE[KQLTools](../includes/include-telemetry-kql-tool.md)]
 
-## How can I query telemetry from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]?
+## How can I query telemetry from Log Analytics?
 
 With workspace-based resources, [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] sends telemetry to a common [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] workspace, providing full access to all the features of [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] while keeping your application, infrastructure, and platform logs in a single consolidated location. This integration allows for common Azure role-based access control across your resources and eliminates the need for cross-app/workspace queries.
 
@@ -55,6 +55,58 @@ This table shows table names for [!INCLUDE[prod_short](../developer/includes/pro
 | --------- | ------------| 
 | traces    | AppTraces |
 | pageViews | AppPageViews |
+
+
+## KQL example - following telemetry events for a session
+
+Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24, the server and the browser components align on the guids logged to the session_Id column in the *traces* and *pageViews* tables. This allows you to do advanced troubleshooting such as following what happens within a session.
+
+Use this KQL code to query what happens in a single session:
+
+```kql
+let _session_Id = 'fea0995e-525d-499a-bc2e-0fd27bfe412b' // change to the guid for the session you want to follow
+;
+let pv = 
+pageViews
+| where session_Id == _session_Id
+| extend message = strcat('Page opened: ', name)
+| project timestamp, session_Id, user_Id, message, clientType='WebClient'
+;
+let tra = 
+traces
+| where session_Id == _session_Id
+| project timestamp, session_Id, user_Id, message, clientType= tostring(customDimensions.clientType)
+;
+union pv, tra
+| order by timestamp asc
+```
+
+## KQL example - following telemetry events for a user
+
+Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24, the server and the browser components align on the guids logged to the user_Id column in the *traces* and *pageViews* tables. This allows you to do advanced troubleshooting such as following what a user does.
+
+
+
+Use this KQL code to query what a user does across sessions:
+
+```kql
+let _session_Id = 'fea0995e-525d-499a-bc2e-0fd27bfe412b' // change to the guid for the session you want to follow
+;
+let pv = 
+pageViews
+| where session_Id == _session_Id
+| extend message = strcat('Page opened: ', name)
+| project timestamp, session_Id, user_Id, message, clientType='WebClient'
+;
+let tra = 
+traces
+| where session_Id == _session_Id
+| project timestamp, session_Id, user_Id, message, clientType= tostring(customDimensions.clientType)
+;
+union pv, tra
+| order by timestamp asc
+```
+
 
 
 ## KQL walkthrough example - understand report usage
