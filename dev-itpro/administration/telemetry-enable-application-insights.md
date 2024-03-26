@@ -139,7 +139,9 @@ If you set up telemetry but don't get any data in [!INCLUDE[appinsights](../incl
 
 ## Assign a telemetry ID to users
 
-To help troubleshooting problems experienced by a given Business Central user, you can assign the user a random ID that will be included in traces logged in Application Insights. This ID is a special GUID that's only used for telemetry. It will appear in the `user_Id` column in certain events, but not all. Specifically, it's used only in telemetry that the Business Central service/server emits in the context of a user session. So, for example, telemetry that the Business Central Web server emits won't include this ID.
+To help troubleshooting problems experienced by a given [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user, you can assign the user a random ID that will be included in traces logged in Application Insights. This ID is a special GUID that's only used for telemetry. It will appear in the `user_Id` column in certain events, but not all. 
+
+Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24, the server and the browser components align on the guids logged to the **user_Id** column in the *traces* and *pageViews* tables. For versions prior to version 24, only events logged by the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server emits in the context of a user session. 
 
 The telemetry ID for a user is initially set by the [!INCLUDE [prod_short](../includes/prod_short.md)] server when the user is created. To change, or clear the telemetry ID on a user, set the **Telemetry ID** field on the **User Card** for the user in Business Central:
 
@@ -156,6 +158,9 @@ The telemetry ID for a user is initially set by the [!INCLUDE [prod_short](../in
 > [!NOTE]
 > We recommend that a telemetry ID is assigned to all users to make it possible to troubleshoot situations that happened in the past using telemetry.
 
+For more information on how to query the user_Id in telemetry, see [KQL example - following telemetry events for a user](./telemetry-analyze-with-kql.md#kql-example---following-telemetry-events-for-a-user).
+
+
 ## Cleaning up settings
 
 If the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource is tied to your partner account, and you end the relationship with a customer where you have set up telemetry based on your account's instrumentation key, you must remove the instrumentation key while you still have access to that customer's [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
@@ -164,8 +169,8 @@ It is also considered good practice to change all user telemetry IDs at the end 
 
 ## See Also
 
-[Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md)  
-[Monitoring Long Running SQL Queries](monitor-long-running-sql-queries-event-log.md)  
-[Environment Telemetry](tenant-admin-center-telemetry.md)  
-[Monitoring and Analyzing With Telemetry](telemetry-overview.md)  
-[Telemetry FAQ](telemetry-faq.md)
+[Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md)   
+[Environment Telemetry](tenant-admin-center-telemetry.md)   
+[Analyze Telemetry with KQL](telemetry-analyze-with-kql.md)   
+[Telemetry FAQ](telemetry-faq.md)   
+[Telemetry overview](telemetry-overview.md)  

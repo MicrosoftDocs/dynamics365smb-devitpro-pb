@@ -59,7 +59,7 @@ This table shows table names for [!INCLUDE[prod_short](../developer/includes/pro
 
 ## KQL example - following telemetry events for a session
 
-Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24, the server and the browser components align on the guids logged to the session_Id column in the *traces* and *pageViews* tables. This allows you to do advanced troubleshooting such as following what happens within a session.
+Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24, the server and the browser components align on the guids logged to the **session_Id** column in the *traces* and *pageViews* tables. This allows you to do advanced troubleshooting such as following what happens within a session.
 
 Use this KQL code to query what happens in a single session:
 
@@ -83,24 +83,24 @@ union pv, tra
 
 ## KQL example - following telemetry events for a user
 
-Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24, the server and the browser components align on the guids logged to the user_Id column in the *traces* and *pageViews* tables. This allows you to do advanced troubleshooting such as following what a user does.
+Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24, the server and the browser components align on the guids logged to the **user_Id** column in the *traces* and *pageViews* tables. This allows you to do advanced troubleshooting such as following what a user does.
 
-
+To see which user corresponds to the guid logged in the **user_Id** column, see [Assign a telemetry ID to users](./telemetry-enable-application-insights.md#assign-a-telemetry-id-to-users).
 
 Use this KQL code to query what a user does across sessions:
 
 ```kql
-let _session_Id = 'fea0995e-525d-499a-bc2e-0fd27bfe412b' // change to the guid for the session you want to follow
+let _user_Id = 'b99ed22a-4681-41e8-b5fc-91c004e1979a' // change to the guid for the user you want to follow
 ;
 let pv = 
 pageViews
-| where session_Id == _session_Id
+| where user_Id == _user_Id
 | extend message = strcat('Page opened: ', name)
 | project timestamp, session_Id, user_Id, message, clientType='WebClient'
 ;
 let tra = 
 traces
-| where session_Id == _session_Id
+| where user_Id == _user_Id
 | project timestamp, session_Id, user_Id, message, clientType= tostring(customDimensions.clientType)
 ;
 union pv, tra
