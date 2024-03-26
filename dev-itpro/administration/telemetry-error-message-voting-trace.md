@@ -34,6 +34,7 @@ The following table explains the general dimensions included in the trace. The t
 |Dimension|Description or value|
 |---------|--------------------|
 |message|**User gave feedback on error message: [OK|Not OK]**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] <br><br>data in user_Id from the User card was introduced in version 24 for page view telemetry.  |
 
 <!-- removed by request |severityLevel|**3**| -->
 

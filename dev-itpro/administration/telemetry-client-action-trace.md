@@ -28,6 +28,7 @@ The pageViews table is a built-in table in Application Insights. Here are some o
 |Field|Description or value|
 |---------|-----|
 |message|**Client action invoked: {Action}**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] <br><br>data in user_Id from the User card was introduced in version 24 for page view telemetry.  |
 
 
 ### Custom dimensions
