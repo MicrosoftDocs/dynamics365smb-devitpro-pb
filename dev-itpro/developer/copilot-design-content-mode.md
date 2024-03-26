@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 # Design content mode of prompt dialog page
 
-In this article, you learn how to define the copilot screen that displays the AI-generated output. The screen is defined by the content mode of the PromptDilod page. It enables users to review output, then choose to regenerate, save, or discard it. The following figure illustrates an example of the content mode for a copilot.
+In this article, you learn how to define the Copilot screen that displays the AI-generated output. The screen is defined by the content mode of the PromptDialog page. It enables users to review output, then choose to regenerate, save, or discard it. The following figure illustrates an example of the content mode for a copilot.
 
 ![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)
 
