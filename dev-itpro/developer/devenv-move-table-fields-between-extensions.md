@@ -13,6 +13,8 @@ ms.custom:
 
 As extensions mature or as a consequence of an extension initially created as a large monolith, the need to break down the extension and transfer the ownership of tables or fields, including data, becomes apparent. Moving tables and fields between extensions improves maintainability, flexibility, and scalability of the extension. This feature introduces a controlled process for releasing and taking ownership of tables as part of the extension upgrade process.
 
+> [!IMPORTANT]
+> This feature is only available to apps developed by Microsoft.
 
 ## Moving tables between extensions
 
@@ -32,14 +34,11 @@ In other cases where a move can break any of the dependent extensions, the move 
 
 A move is possible if the source (current owner) allows the move. This can be done by setting the `ObsoleteStage` property on the table to `Moved` and by setting the `MovedTo` property to the app ID of the destination extension.
 
-If a table is set to moved out that table is not accessible anymore. The data will be preserved until the new destination takes over the table.
+If a table is set to `Moved` that table isn't accessible anymore. The table data will be preserved until the new destination takes over the table.
 
-Additive changes can be applied to a table during a move but any destructive change is not allowed.
+Additive changes can be applied to a table during a move, but any destructive change aren't allowed.
 
-Hostile take-over is not allowed when moving a table, the latest published version of the current app must allow the move. Otherwise this will be considered a hostile takeover and sync of the destination app will fail.
-
-> [!IMPORTANT]
-> This feature is only available to apps developed by Microsoft.
+Hostile take-over isn't allowed when moving a table, the latest published version of the current app must allow the move. Otherwise, this will be considered a hostile takeover and sync of the destination app will fail.
 
 > [!NOTE]
 > The Name and Id of tables can't be changed during a move.
