@@ -40,7 +40,7 @@ page 50100 "My copilot"
 |[PromptMode](properties/devenv-promptmode-property.md)|Specifies which mode you want to page to display when it first opens. The default is `Prompt`. For more information, go to [Specify the mode in which the PromptDialog opens](#specify-the-mode-in-which-the-promptdialog-opens).|
 |[IsPreview](properties/devenv-ispreview-property.md)|This property is used to specify whether your feature is in preview or generally available. Setting this property to `true` applies a **Preview** label on the all display modes of the PromptDialog type page, as illustrated in the following figure. The **Preview** label communicates to users that the feature is available to try out and provide feedback, but the functionality is subject to change. When you feel the feature is ready, you can change this value to `false` to communicate that the feature is generally available. We recommend that most new copilot experiences start in preview. |
 
-![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode.svg)
+![Shows the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode.png)
 
 This step is the first in creating the PromptDialog type page. The sections that follow explain the different modes and the UI elements that comprise the modes. 
 
