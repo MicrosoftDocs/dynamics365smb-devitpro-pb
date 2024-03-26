@@ -41,13 +41,15 @@ Additive changes can be applied to a table during a move, but any destructive ch
 Hostile take-over isn't allowed when moving a table, the latest published version of the current app must allow the move. Otherwise, this will be considered a hostile takeover and sync of the destination app will fail.
 
 > [!NOTE]
-> The Name and Id of tables can't be changed during a move.
+> The Name and ID of tables can't be changed during a move.
 
+## Sample code
 
-Sample code:
+The following sections show the source and destination tables for how to move a table between extensions.
 
-Source app
+### Source extension
 
+```al
 table 50150 BaseTable50150
 
 {
@@ -87,7 +89,11 @@ table 50150 BaseTable50150
     }
 
 }
-Destination App
+```
+
+### Destination extension
+
+```al
 
 table 50150 BaseTable50150
 
@@ -126,7 +132,9 @@ table 50150 BaseTable50150
     }
 
 }
-Moving Fields between extensions:
+```
+
+## Moving fields between extensions
 
 The goal is to allow developers to move fields between extensions. A field can be moved from a base table to a table extension or from a table extension to another table extension.
 
