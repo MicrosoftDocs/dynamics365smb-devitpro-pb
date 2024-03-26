@@ -3,8 +3,8 @@ title: "AppSourceCop Error AS0047"
 description: "The extension name length must not exceed the limit of 200 characters."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/22/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -3,8 +3,8 @@ title: "Compiler Designer Customization Information AL1417"
 description: "The {0} '{1}' cannot be added relatively to '{2}' because '{2}' is missing."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The {0} '{1}' cannot be added relatively to '{2}' because '{2}' is missing. '{1}' is added at a default location instead.
+
 
 ## Description
 The anchor of an add (action or view) cannot be resolved because its declaring extension is not installed anymore. The elements are added into a default location.   

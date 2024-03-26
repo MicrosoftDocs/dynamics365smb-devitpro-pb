@@ -3,7 +3,7 @@ title: "Choosing runtime version in AL"
 description: "How to choose runtime in AL for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 09/05/2023
+ms.date: 03/14/2024
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -41,6 +41,7 @@ The available options for setting the `runtime` in AL are:
 |`10.0`         |Business Central 2022 release wave 2|21.0|
 |`11.0`         |Business Central 2023 release wave 1|22.0|
 |`12.0`         |Business Central 2023 release wave 2|23.0|
+|`13.0`         |Business Central 2024 release wave 1|24.0|
 
 ## Setting the runtime version
 

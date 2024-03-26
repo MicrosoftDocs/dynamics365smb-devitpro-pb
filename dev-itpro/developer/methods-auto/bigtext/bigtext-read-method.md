@@ -3,8 +3,8 @@ title: "BigText.Read(InStream) Method"
 description: "Streams a BigText object that is stored as a BLOB in a table to a BigText variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

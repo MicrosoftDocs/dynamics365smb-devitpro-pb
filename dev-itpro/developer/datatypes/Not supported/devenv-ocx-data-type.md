@@ -3,9 +3,7 @@ title: "OCX Data Type"
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
-ms.topic: conceptual
-ms.assetid: ebeaf3bf-796a-4862-bd1f-f3c3c7ce97fe
-caps.latest.revision: 14
+ms.topic: reference
 ---
 # OCX Data Type
 References a custom control, such as OCX or ActiveX control.  
