@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 The first step in designing the copilot UI is creating a page of the type `PromptDialog`. Once you create the prompt dialog page following this article, you use it to build the different display modes needed for your copilot, including prompt, generate, and content.
 
-For an overview building the copilot UI, refer to [Build copilot user experience](ai-build-experience.md).
+For an overview building of the copilot UI, refer to [Build copilot user experience](ai-build-experience.md).
 
 ## Create a prompt dialog page
 
