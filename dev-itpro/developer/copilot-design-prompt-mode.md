@@ -59,9 +59,11 @@ Within `area(Prompt)`, you can add one or more fields, groups, and page parts. `
 
 For fields that have the data type [Text](methods-auto/text/text-data-type.md), [BigText](methods-auto/bigtext/bigtext-data-type.md), [Code](methods-auto/code/code-data-type.md), or [GUID](methods-auto/guid/guid-data-type.md) type fields, you can use the [InstructionalText property](properties/devenv-instructionaltext-property.md) to add placeholder text in the field. The purpose of placeholder text is help users understand what they should enter as a prompt. The placeholder text disappears as soon as the user enters text in the field.
 
+> [!NOTE]
+> Placeholder text appears only if the field and page that are editable. It's not shown if the [Editable property](properties/devenv-editable-property.md) of the page or fields is set to `false`.
+
 Here are some guidelines for using placeholders:
 
-- Placeholder text appears only if the field and page that are editable. The placeholder isn't shown if the [Editable property](properties/devenv-editable-property.md) on the page or fields is set to `false`.
 - Keep the placeholder text short, succinct, and specific to the field, page, or prompt dialog. Don't use entirely generic text like `Enter description here`. Don't use entirely generic text like `Enter description here`. Instead, make the text contextual to the specific field, page, or prompt dialog so that there's real informational value. Don't repeat what the prompt dialog title says either, but use text that naturally extends what the title says to guide the user along.
 - Don't require the user to use the value of `InstructionalText*  property to complete their task. The reason is that the full text might not always be visible depending on screen size, device type, orientation, page layout, and similar.
 - The placeholder text isn't tha same a the *name* or *label* of the field&mdash;it's supplemental information. Don't use the `InstructionalText` property on fields as a replacement for the [Caption property](properties/devenv-caption-property.md).
