@@ -41,7 +41,8 @@ layout
     {
         field(input; UserInput)
         {
-            ShowCaption = false;
+            ApplicationArea = All;            
+            ShowCaption = false;
             MultiLine = true;
             // Adds placeholder text.
             InstructionalText = 'Enter information that describes that you want to give copilot...'; 
@@ -90,9 +91,19 @@ actions
         {
             Caption = 'How can I...?';
             ToolTip = 'Ask Copilot for help with a specific task.';
+
+            trigger OnAction()
+            begin
+                InputProjectDescription := 'Campaign on [social media] for [Customer] to [promote education].';
+            end;
         }
     }
 }
+
+
+var 
+
+    InputProjectDescription: Text;
 ```
 
 [Learn more about prompt guides](devenv-page-promptguide.md).
