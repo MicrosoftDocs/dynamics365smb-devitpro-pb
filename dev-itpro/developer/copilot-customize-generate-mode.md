@@ -22,7 +22,7 @@ Customizing the caption enables you to give users more specific feedback about w
 
 ## How to change the caption
 
-You customize the caption by using the [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) methods. 
+You customize the caption by using the [Dialog.Open()](methods-auto/dialog/dialog-open-method.md) or [Dialog.Update()](methods-auto/dialog/dialog-update-method.md) methods.
 
 There are different ways to use the `Dialog.Open()`and `Dialog.Update()` to change the generate mode's caption. Refer to the following examples for inspiration.
 
