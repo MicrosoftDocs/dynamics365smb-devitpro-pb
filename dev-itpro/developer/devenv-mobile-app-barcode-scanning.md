@@ -29,10 +29,10 @@ There are three different supported scenarios for adding barcode scanning to the
 |Scenario|Description|Device camera| Dedicated scanner|iOS device|Android device|Online|On-premises|
 |-|-|-|-|-|-|-|-|
 |UI button on a field|The user scans a barcode by manually selecting a button next to a field|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|
-|Invoke from AL|Based on AL code, the barcode scanning capability is started when something happens, for example, a page opens, or the user selects a custom action on the page. |![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
-|Invoke from AL|Based on AL code, the barcode scanning capability is started when something happens, for example, a page opens, or the user selects a custom action on the page. |![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
-|Invoke from AL|Based on AL code, the barcode scanning capability is started when something happens, for example, a page opens, or the user selects a custom action on the page. |![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
-|Integrate dedicated barcode scanner|Enable the use of professional hardware scanners.||![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|
+|Invoke from AL|Based on AL code, the barcode scanning capability is started when something happens, for example, a page opens, or the user selects a custom action on the page. |![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)\*|![Shows a checkbox indicating support](media/check.png)|
+|Integrate dedicated barcode scanner|Enable the use of professional hardware scanners.||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)\*|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)\*|![Shows a checkbox indicating support](media/check.png)|
+
+\* Business Central 2024 release wave 1 (v24) and later
 
 ## Supported barcodes
 
