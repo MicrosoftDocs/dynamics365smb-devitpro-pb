@@ -45,11 +45,11 @@ You can use Kusto queries as the data source in many places. For example:
 
 [!INCLUDE[KQLTools](../includes/include-telemetry-kql-tool.md)]
 
-## How can I query telemetry from [!INCLUDE[appinsights](../includes/azure-loganalytics-name.md)]?
+## How can I query telemetry from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]?
 
 With workspace-based resources, [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] sends telemetry to a common [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] workspace, providing full access to all the features of [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] while keeping your application, infrastructure, and platform logs in a single consolidated location. This integration allows for common Azure role-based access control across your resources and eliminates the need for cross-app/workspace queries.
 
-This table shows table names for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry when queired from [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] and from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] :
+This table shows table names for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry when queried from [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] and from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] :
 
 | Table name in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] | Table name in [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] | 
 | --------- | ------------| 

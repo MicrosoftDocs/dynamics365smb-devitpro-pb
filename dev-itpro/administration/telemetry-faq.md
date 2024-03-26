@@ -40,6 +40,10 @@ See an overview at [Telemetry overview](telemetry-overview.md).
 
 [!INCLUDE[telemetryEventDistribution](../includes/include-telemetry-event-distribution.md)]
 
+## Can I query telemetry from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]?
+
+Yes. See how to do that here: [How can I query telemetry from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]?](./telemetry-analyze-with-kql.md#how-can-i-query-telemetry-from-includeloganalytics)
+
 ## Why do I see _1, _2 in custom dimensions?
 
 Each event has a `customDimensions` column that includes a set of dimensions containing metrics specific to the event. Each of these custom dimensions has a limit of 8000 characters. When logging an event with a dimension exceeding 8000 characters, the  [!INCLUDE[server](../developer/includes/server.md)] adds more overflow dimension keys to the event to contain the excess characters. There can be up to two extra overflow dimension keys, each with a maximum 8000 characters. The overflow dimension keys are named  `<dimension_key_name>_1` and `<dimension_key_name>_2`, where `<dimension_key>` is the name of the original dimension key. So if the custom dimension key is `extensionCompilationDependencyList`, then the overflow dimension keys would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
