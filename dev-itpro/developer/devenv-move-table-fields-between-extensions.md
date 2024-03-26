@@ -43,7 +43,7 @@ Hostile take-over isn't allowed when moving a table, the latest published versio
 > [!NOTE]
 > The Name and ID of tables can't be changed during a move.
 
-## Sample code
+## Sample code for moving tables between extensions
 
 The following sections show the source and destination tables for how to move a table between extensions.
 
@@ -136,33 +136,35 @@ table 50150 BaseTable50150
 
 ## Moving fields between extensions
 
-The goal is to allow developers to move fields between extensions. A field can be moved from a base table to a table extension or from a table extension to another table extension.
+The goal is to allow developers to move fields between extensions. A field can be moved from a base table to a table extension, or from a table extension to another table extension.
 
-When a field is moved from one extensions to another the data will follow the move. This means that the data is preserved during moving fields
+When a field is moved from one extension to another the data will follow the move. This means that the data is preserved during moving fields.
 
-The takeover of a field that is not exist currently will create the field on the table. In this cases there is no data available to move to the destination.
+The takeover of a field that doesn't exist, will create the field on the table. In this case there's no data available to move to the destination.
 
-Each move needs changes in the source extension currently owning the field and the destination which will take over the field. To be able to move a field first the owner of the field must allows a takeover. This will be done by setting the obsolete propery of the field to "Moved" and also needs to set the destination extension Apple ID.
+Each move needs changes in the source extension that owns the field and the destination, which will take over the field. To be able to move a field, the owner of the field must first allow a takeover. This will be done by setting the `Obsolete` property of the field to `Moved` and to set the destination extension app ID.
 
-In this case the field is considered moved out and no other object can take a reference on these fields this field is simply removed from this app but the data will be preserved until this field is taken over. On the other side in in the destination taking over our field is identified by adding the property called "MovedFrom". Where the value of this property is the app ID of the source extension which means if this field already exist on the server it will be taken over by the new extension. Taking over the field where the source does not allow the move is a hostile takeover and it is not allowed in such cases an error will be created during the synchronization of the app. To validate if a move of a field is valid the latest version of the source must allow the feild to be moved to the new destination.
+In this case, the field is considered moved out and no other object can take a reference on this field because it's simply removed from the extension, the data, however, will be preserved until this field is taken over. On the other side in the destination taking over the field, this is identified by adding the `MovedFrom` property. Where the value of this property is the app ID of the source extension, which means if this field already exists on the server, it'll be taken over by the new extension. Taking over the field where the source doesn't allow the move is considered a hostile takeover and it's not allowed. In a case of hostile takeover, an error will be created during the synchronization of the extension. To validate if a move of a field is valid, the latest version of the source must allow the field to be moved to the new destination.
 
-Moving a field can be combined with moving a table so for example a table can be moved to a new extension and some of the fields extracted back to the previous owner of the table. To do so first you need to move the table. In the second step you must search some of the fields to be moved to the new extension which is the previous owner of the table you also need to create a new table extension object in the previous owner and move the fields to that table extension.
+Moving a field can be combined with moving a table. For example, a table can be moved to a new extension and some of the fields extracted back to the previous owner of the table. To do so, you must first move the table. In the second step, you must search some of the fields to be moved to the new extension, which is the previous owner of the table. You must also create a new table extension object in the previous owner extension and move the fields to that table extension.
+
+> [!IMPORTANT]
+> This feature is only available to apps developed by Microsoft.
+
+### Limitations
+
+There are some limitations to moving fields between extensions to be aware of:
+
+- A field, which is part of the primary table key can't be moved.
+- A field, which is part of a table key can't be moved.
+- The Name and ID of the field must stay the same during the move.
+
+## Sample code for moving fields between extensions
 
 
+### Source extension
 
-Important : this feature is available only to the apps developed by Microsoft
-
-Limitations:
-
-A field that is part of the primary key cannot be moved
-
-A field which is part of a key cannot be moved
-
-Name and Id of field should stay the same during the move
-
-Sample code
-
-Source app
+```al
 
 table 50100 BaseTable50100
 
@@ -221,8 +223,11 @@ table 50100 BaseTable50100
     }
 
 }
-Destination:
+```
 
+### Destination extension
+
+```al
 tableextension 50100 TExtension50100 extends BaseTable50100
 
 {
@@ -284,13 +289,15 @@ tableextension 50100 TExtension50100 extends BaseTable50100
     }
 
 }
-Using Move table and fields together
+```
 
-We can move a table to another extension and extract some of the fields to another extension or to the previous owner of the table
+## Moving table and fields together
 
-In this case we have a table which is moved to one of its owners dependency and keeps some of the fields as a table extension. This means that this move is not breaking (if propagate dependency is set in the manifest).
+Another scenario could be to move a table to another extension and extract some of the fields to another extension, or to the previous owner of the table. In this case the table, which is moved to one of its owners dependency, keeps some of the fields as a table extension. This means that the move isn't breaking (if the propagate dependency is set in the manifest).
 
-Source app
+### Source extension
+
+```al
 
 table 50150 BaseTable50150
 
@@ -331,9 +338,9 @@ table 50150 BaseTable50150
     }
 
 }
+```
 
-
-
+```al	
 tableextension 50151 TExtension50151 extends BaseTable50150
 
 {
@@ -361,7 +368,11 @@ tableextension 50151 TExtension50151 extends BaseTable50150
     }
 
 }
-Destination
+```
+
+### Destination extension
+
+```al
 
 table 50150 BaseTable50150
 
@@ -408,10 +419,15 @@ table 50150 BaseTable50150
     }
 
 }
-AppSource cop rules:
 
-Moving a table or a field is a breaking change in most of the cases and should be staged in 2 steps to make sure that all the extensions refrencing the table or the field are fixed before the move is final.
+```
 
-None-breaking changes :
+## AppSourceCop rules
 
-If a table is moved to one of its dependencies and it has "PropagateDependency" in the manifest set to true then this is not a breaking change. In this case the table or the fields are available to all the extensions that depended on this app. Such a move would be done in one step and would be seamless to all other extensions.
+Moving a table or a field is a breaking change in most of the cases and should be staged in 2 steps to make sure that all the extensions referencing the table or the field are fixed before the move is final.
+
+## Non-breaking changes
+
+If a table is moved to one of its dependencies and it has the `PropagateDependency` setting in the manifest set to `true` then this isn't a breaking change. In this case the table or the fields are available to all the extensions that depended on the extension. Such a move can be done in one step and is seamless to all other extensions.
+
+## See also
