@@ -155,7 +155,7 @@
 #### [Preparing test environments](administration/test-environment.md)
 #### [Prepare for major updates with preview environments](administration/preview-environments.md)
 ## Admin center
-### [Administration Center Overview](administration/tenant-admin-center.md)
+### [Administration Center overview](administration/tenant-admin-center.md)
 ### [Manage environments](administration/tenant-admin-center-environments.md)
 ### [Manage access](administration/tenant-admin-center-manage-access.md)
 ### [Manage apps](administration/tenant-admin-center-manage-apps.md)
@@ -522,6 +522,7 @@
 <!--### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)-->
 #### [Application testing example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
 #### [The performance toolkit extension](developer/devenv-performance-toolkit.md)
+#### [Use page scripting for acceptance testing (preview)](developer/devenv-page-scripting.md)
 #### [FAQ about testing your Business Central app](developer/app-faq-test.md)
 
 ### Work in sandboxes
@@ -674,7 +675,7 @@
 ###### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ###### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
-#### Baseapp reference (errors)
+#### Base app reference (errors)
 ##### [Codeunit "Error Context Element"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-context-element?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Codeunit "Error Message Handler"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-handler?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Codeunit "Error Message Management"](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-management?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -868,7 +869,7 @@
 ###### [Using hyperlinks in Word layouts](developer/devenv-hyperlinks-in-word-report-layouts.md)  
 ###### [Working with Word layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ###### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
-###### [Working with RDLC layouts](/dynamics365/business-central/ui-rdlc-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Working with RDL layouts](/dynamics365/business-central/ui-rdlc-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Adding barcodes to report layouts](developer/devenv-report-add-barcodes.md)
 ##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
@@ -900,7 +901,6 @@
 ##### [Report datatype](developer/methods-auto/report/report-data-type.md)
 ##### [Report object properties](developer/properties/devenv-report-properties.md)
 ##### [Report, report data item, and report extension properties](developer/properties/devenv-report-property-overview.md)
-
 
 ### [Events](developer/devenv-events-in-al.md)
 #### [Event types](developer/devenv-event-types.md)
@@ -947,7 +947,7 @@
 ##### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
 ##### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
 ##### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
-##### [Analyzing app keyvault telemetry](administration/telemetry-extension-key-vault-trace.md)
+##### [Analyzing app key vault telemetry](administration/telemetry-extension-key-vault-trace.md)
 
 
 ### Running things in the background
@@ -965,7 +965,7 @@
 
 ### Developing APIs
 #### [Overview](developer/devenv-api.md)
-#### [Walkthrough: developing a custom API](developer/devenv-develop-custom-api.md)
+#### [Walkthrough: Developing a custom API](developer/devenv-develop-custom-api.md)
 #### [API pages](developer/devenv-api-pagetype.md)
 #### [API queries](developer/devenv-api-querytype.md)
 #### [Connecting to and testing APIs](developer/devenv-develop-connect-apps.md)
@@ -981,7 +981,7 @@
 #### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
-#### [AL Language reference (HttpClient datatype)](developer/methods-auto/httpclient/httpclient-data-type.md)
+#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
 
 ### Instrumenting with telemetry
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
@@ -1119,6 +1119,7 @@
 ##### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
 ##### [Extending Currency Exchange Rate Adjustments](developer/devenv-extend-exchange-rates.md)
 ##### [Extending e-documents functionality](developer/devenv-extend-edocuments.md)
+##### [Add drop zones for uploading multiple files](developer/devenv-extending-drop-zones.md)
 
 ### Using events
 #### [Event types](developer/devenv-event-types.md)
@@ -1282,7 +1283,7 @@
 ##### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
 
 
-## [AL language reference](developer/index.md)
+## [AL Language reference](developer/index.md)
 <!-- end AL -->
 <!-- begin security -->
 
@@ -1403,7 +1404,7 @@
 #### [Automation API](administration/itpro-introduction-to-automation-apis.md)
 #### [Admin Center API](administration/administration-center-api.md)
 #### [Cloud migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
-#### [API Developer Overview](developer/devenv-api.md)
+#### [API developer overview](developer/devenv-api.md)
 
 ### OData
 #### [Overview](webservices/odata-web-services.md)
@@ -1451,7 +1452,7 @@
 ### [Developing Connect apps](developer/devenv-develop-connect-apps.md)
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
 ### [Using filters with API calls](developer/devenv-connect-apps-filtering.md)
-### [API Developer Overview](developer/devenv-api.md)
+### [API developer overview](developer/devenv-api.md)
 ### [Developing a custom API](developer/devenv-develop-custom-api.md)
 ### [Service-to-Service authentication](administration/automation-apis-using-s2s-authentication.md)
 
@@ -1464,16 +1465,16 @@
 ### [What are developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
 ### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
 ### [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
-### [Get setup with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
+### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### Build a copilot experience
 #### [Introduction](developer/ai-build-experience-overview.md)
 #### [Build the copilot capability in AL](developer/ai-build-capability-in-al.md)
-#### [Build copilot user experience](developer/ai-build-experience.md)
+#### [Build the copilot user experience](developer/ai-build-experience.md)
 
 ## Integrating Business Central with Office apps and Microsoft 365
 ### [Overview](developer/m365-integration-overview.md)
 ### Integrating with Microsoft Excel
-#### [Using Excel for Viewing and Editing Business Central data](/dynamics365/business-central/across-work-with-excel)  
+#### [Using Excel for viewing and editing Business Central data](/dynamics365/business-central/across-work-with-excel)  
 #### [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  
 ### [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
 ### Integrating with Microsoft Onedrive
@@ -1491,8 +1492,8 @@
 #### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 #### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
-### Integrating with Microsoft Onedrive
-#### [Using Word Templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout)  
+### Integrating with Microsoft OneDrive
+#### [Using Word templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout)  
 #### [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge)  
 
 
@@ -1647,6 +1648,7 @@
 ### [Deployment overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System requirements
+#### [2024 release wave 1](deployment/system-requirements-business-central-v24.md)
 #### [2023 release wave 2](deployment/system-requirements-business-central-v23.md)
 #### [2023 release wave 1](deployment/system-requirements-business-central-v22.md)
 #### [2022 release wave 2](deployment/system-requirements-business-central-v21.md)
@@ -1771,6 +1773,25 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
+### Business Central 2024 release wave 1
+#### [Overview](upgrade/upgrade-overview-v24.md)
+#### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
+#### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrade permission sets](upgrade/upgrade-permissions.md)
+#### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
+#### Upgrade application and data
+##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v24.md)
+##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v24.md)
+##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v24.md)
+#### Related articles
+##### [Convert to AL](upgrade/devenv-code-conversion.md)
+##### Migrating tables and fields between extensions
+###### [Overview](developer/devenv-migrate-table-fields.md)
+###### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+###### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+##### Data migration toolkit - India
+###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
+#### [Installing a minor update](upgrade/upgrading-cumulative-update-v24.md)
 ### Business Central 2023 release wave 2
 #### [Overview](upgrade/upgrade-overview-v23.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
@@ -1840,28 +1861,28 @@
 ##### [From version 18 or 19](upgrade/upgrade-technical-upgrade-v19-to-v21.md)
 ##### [From version 20](upgrade/upgrade-technical-upgrade-v21.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v21.md)
-### Business Central 2022 release wave 1
-#### [Overview](upgrade/upgrade-overview-v20.md)
-#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
-#### [Upgrading reports](upgrade/upgrade-reports.md)
-#### Application and data
-##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v20.md)
-##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v20.md)
-##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v20.md)
-##### Related articles
-###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating tables and fields between extensions
-####### [Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving fables and fields down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-###### Data Migration Toolkit - India
-####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
-#### Technical upgrade
-##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v20.md)
-##### [From version 17, 18, or 19](upgrade/upgrade-technical-upgrade-v20.md)
-#### [Installing a minor update](upgrade/upgrading-cumulative-update-v20.md)
 ### Earlier versions
+#### Business Central 2022 release wave 1
+##### [Overview](upgrade/upgrade-overview-v20.md)
+##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+##### [Upgrading reports](upgrade/upgrade-reports.md)
+##### Application and data
+###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v20.md)
+###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v20.md)
+###### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v20.md)
+###### Related articles
+####### [Convert to AL](upgrade/devenv-code-conversion.md)
+####### Migrating tables and fields between extensions
+######## [Overview](developer/devenv-migrate-table-fields.md)
+######## [Moving fables and fields down](developer/devenv-migrate-table-fields-down.md)
+######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+####### Data Migration Toolkit - India
+######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
+##### Technical upgrade
+###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v20.md)
+###### [From version 17, 18, or 19](upgrade/upgrade-technical-upgrade-v20.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update-v20.md)
 #### Business Central 2021 release wave 2
 ##### [Overview](upgrade/upgrade-overview-v19.md)
 ##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
