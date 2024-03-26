@@ -104,7 +104,7 @@ actions
 
 In this task, you add action to the PromptDialog page that users select to start generating output with Copilot and AI. 
 
-[![Shows a screenshot that highlights the generate action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-generate.svg)](media/promptdialog-prompt-mode-generate.svg#lightbox)
+[![Shows a screenshot that highlights the generate action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-generate.png)](media/promptdialog-prompt-mode-generate.png#lightbox)
 
 The `PromptDialog` page type supports several *system actions* that appear as buttons in the UI. You add these actions in the `actions` control on the page like you would any other action. Except you define the system actions by first adding an `area(SystemActions)` control, then using the `systemaction()`control to define the specific action. In this case, you use a `systemaction(Generate)` control. 
 
@@ -139,7 +139,7 @@ For an example on building an AI capability, see [Build the copilot capability i
 
 In this task, you add action to the PromptDialog page that enables users to select a file to upload in the prompt area. The content of the file can provide input to the AI generation.
 
-[![Shows a screenshot that highlights the file attachment action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-attach.svg)](media/promptdialog-prompt-mode-attach.svg#lightbox)
+[![Shows a screenshot that highlights the file attachment action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-attach.png)](media/promptdialog-prompt-mode-attach.png#lightbox)
 
 Like the system action for generating AI, there's also a system action for attaching a file. In this case, you use a `systemaction(Attach)` control.
 
@@ -171,7 +171,7 @@ actions
 
 In this task, you add actions to the PromptDialog page that enable users to set style preferences to influence the AI-generated output. The options appear as buttons in the UI to the right of the system actions.
 
-[![Shows a screenshot that highlights the preference option actions in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-options.svg)](media/promptdialog-prompt-mode-options.svg#lightbox)
+[![Shows a screenshot that highlights the preference option actions in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-options.png)](media/promptdialog-prompt-mode-options.png#lightbox)
 
 You add the options by using in a `area(PromptOptions)` control with the `actions` control. Each option is defined by a field using the `field` control. Only fields of the [option data type](methods-auto/option/option-data-type.md) are supported.
 
