@@ -65,20 +65,20 @@ For fields of data type [Text](methods-auto/text/text-data-type.md), [BigText](m
 
 Here are some guidelines for using placeholders:
 
-- Keep the placeholder text short, succinct, and specific to the field, page, or prompt dialog. Don't use entirely generic text like `Enter description here`. Don't use entirely generic text like `Enter description here`. Instead, make the text contextual to the specific field, page, or prompt dialog so that there's real informational value. Don't repeat what the prompt dialog title says either, but use text that naturally extends what the title says to guide the user along.
+- Keep the placeholder text short, succinct, and specific to the field, page, or prompt dialog. Don't use entirely generic text like `Enter description here`. Don't use entirely generic text like `Enter description here`. Instead, make the text contextual to the specific field, page, or prompt dialog so that there's real informational value. Don't repeat what the prompt dialog title says, but use text that naturally extends what the title says to guide the user along.
 - Don't require the user to use the value of `InstructionalText*  property to complete their task. The reason is that the full text might not always be visible depending on screen size, device type, orientation, page layout, and similar.
-- The placeholder text isn't tha same a the *name* or *label* of the field&mdash;it's supplemental information. Don't use the `InstructionalText` property on fields as a replacement for the [Caption property](properties/devenv-caption-property.md).
+- The placeholder text isn't the same as the *name* or *label* of the field&mdash;it's supplemental information. Don't use the `InstructionalText` property on fields as a replacement for the [Caption property](properties/devenv-caption-property.md).
 - Use placeholder text only when the extra guidance is helpful for users to get started. Overuse of placeholder, such as applying it to all fields on a page, might be distracting and diminish its effectiveness.
-- Use placeholder text instead of implementing instructions as captionless fields outside of the input field, to keep your page design compact.
-- Placeolder text provides hints about how to fill in a field, where the instruction is only shown while the field is empty. Conversely, field tooltips can explain in moderate detail what the field is about and how it is used, and is available on demand even if the field is not empty.
+- Use placeholder text instead of implementing instructions as "captionless" fields outside of the input field. This practice keeps your page design compact.
+- Placeholder text provides hints about how to fill in a field, where the instruction is only shown while the field is empty. Conversely, field tooltips can explain in moderate detail what the field is about and how to use it, and they're available even if a field isn't empty.
 
 ## Add prompt guides
 
-A prompt guide is a predefined list of prompt texts that users can choose from by selecting **Prompt gudie** ![Shows the prompt guide button in the prompt dialog type page](media/promptdialog-prompt-mode-prompt-guide-icon.png) on the prompt dialog page.
+A prompt guide is a predefined list of prompt texts that users can choose from by selecting **Prompt guide** ![Shows the prompt guide button in the prompt dialog type page](media/promptdialog-prompt-mode-prompt-guide-icon.png) on the prompt dialog page.
 
 [![Shows the prompt guide of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-guide.png)](media/promptdialog-prompt-mode-prompt-guide.png#lightbox)
 
-The prompt guide saves users time because they don't have to write prompts from scratch, plus it can help them to understand how to write prompts to improve results.
+The prompt guide saves users time because they don't have to write prompts from scratch. Plus it can help them to understand how to write prompts to get the results they want.
 
 To create a prompt guide, you add an action area on `PromptDialog` pages, called `PromptGuide`. You then add individual an `action` control for each prompt you want to include in the prompt guide. For example:
 
