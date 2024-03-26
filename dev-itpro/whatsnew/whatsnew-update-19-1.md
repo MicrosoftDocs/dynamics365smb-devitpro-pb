@@ -5,7 +5,7 @@ ms.custom: na
 ms.date: 11/22/2021
 ms.reviewer: solsen
 ms.topic: conceptual
-author: EmmaNielsson
+author: SusanneWindfeldPedersen
 ---
 
 # Update 19.1 for Microsoft Dynamics 365 Business Central online 2021 release wave 2
