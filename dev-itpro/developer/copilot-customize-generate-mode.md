@@ -62,7 +62,7 @@ The figure shows the customized generate mode caption in the UI for the **Genera
 
 ## Example: From the RunGeneration() procedure
 
-This example does thesame as the previous example except it calls the `Dialog.Open()` method from the procedure that generates the results (for purposes of this article, the `RunGeneration()`). 
+This example does changes the content mode caption by calling the `Dialog.Open()` method from the procedure that generates the results (for purposes of this article, the `RunGeneration()`). 
 
 ```al
 systemaction(Generate)
