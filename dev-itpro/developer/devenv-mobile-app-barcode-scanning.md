@@ -102,7 +102,7 @@ Version 24 introduced a barcode scanning API that's based on control add-ins​ 
 > [!IMPORTANT]
 > With the control add-in API, there's no associated UI on the page, meaning no embedded iFrame or visual indicator. Also no scripting or styling functionality is provided.
 
-### Use control add-in API
+### Use the control add-in API
 
 The following code example shows how to invoke barcode scanning using the `CameraBarcodeScannerProviderAddIn` control add-in.
 
