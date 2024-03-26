@@ -40,9 +40,9 @@ In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special
 
 ## Promote copilot using prompt action 
 
-You can create a prompt action to promote your Copilot on pages and encourage users to use it. A prompt action is a standard action that appears under the ![Shows the copilot action icon icon](media/promptdialog-copilot-action-icon.png) in the action bar. The following figure illustrates an example for the **Reconcile with Copilot** action on the **Bank Account Reconciliations** list.
+You can create a prompt action to promote your Copilot on pages and encourage users to use it. A prompt action is a standard action that appears under the ![Shows the copilot action icon icon](media/promptdialog-copilot-action-icon.png) in the action bar. Users select the action to run the Copilot. They can also select the **Show in page** action to floaat the Copilot actions on the page for easy access.  
 
-![Shows the copilot action icon clip](media/promptdialog-copilot-action-clip.png)
+![Shows the copilot action icon clip](media/promptdialog-launch-floating.png)
 
 Prompt actions are only supported on `List`, `ListPage`, `StandardDialog`, and `WorkSheet` page types. To create a prompt action, add an action area called `area(Prompting)` to the page and an `action` that runs the prompt dialog page. 
 
@@ -54,7 +54,29 @@ actions
     {
         action(MyPromptAction)
         {
-            RunObject = page "My copilot";
+            ApplicationArea = All;
+            Caption = 'Run my Copilot';
+            RunObject = page "Copilot Job Proposal";
+        }
+    }
+}
+...
+```
+
+Here's an example if you're extending a list page:
+
+```al
+...
+
+actions
+{
+    addlast(Prompting)
+    {
+        action(MyPromptAction)
+        {
+            ApplicationArea = All;
+            Caption = 'Run my Copilot';
+            RunObject = page "Copilot Job Proposal";
         }
     }
 }
