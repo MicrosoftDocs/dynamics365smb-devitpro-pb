@@ -89,12 +89,12 @@ actions
     {
         action(MyPromptAction)
         {
-            Caption = 'How can I...?';
+            Caption = 'How can I [do this]';
             ToolTip = 'Ask Copilot for help with a specific task.';
 
             trigger OnAction()
             begin
-                InputProjectDescription := 'Campaign on [social media] for [Customer] to [promote education].';
+                InputProjectDescription := 'How can I [do this]';
             end;
         }
     }
