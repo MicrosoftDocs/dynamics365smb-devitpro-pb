@@ -45,6 +45,18 @@ You can use Kusto queries as the data source in many places. For example:
 
 [!INCLUDE[KQLTools](../includes/include-telemetry-kql-tool.md)]
 
+## How can I query telemetry from [!INCLUDE[appinsights](../includes/azure-loganalytics-name.md)]?
+
+With workspace-based resources, [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] sends telemetry to a common [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] workspace, providing full access to all the features of [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] while keeping your application, infrastructure, and platform logs in a single consolidated location. This integration allows for common Azure role-based access control across your resources and eliminates the need for cross-app/workspace queries.
+
+This table shows table names for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry when queired from [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] and from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] :
+
+| Table name in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] | Table name in [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] | 
+| --------- | ------------| 
+| traces    | AppTraces |
+| pageViews | AppPageViews |
+
+
 ## KQL walkthrough example - understand report usage
 
 This walkthrough will guide you step by step to create a kusto (KQL) query to analyze how users use reports in a Business Central environment. You will start with a sample query from the documentation article for report telemetry. Then you will step by step change and refine the query, learning about important KQL operators along the way. The final result will show you data for the most frequently used reports, grouped by the app/extension they are from, what users did with the report (download/preview/print/...), as well as, which layout (Excel/Word/RDLC) that was used.
