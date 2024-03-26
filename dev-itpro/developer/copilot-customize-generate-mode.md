@@ -60,7 +60,7 @@ The following figures illustrate the customized captions in the UI:
 
 [![Shows a screenshot of the custom caption of generate mode in the UI](media/promptdialog-generate-mode-custom.png)](media/promptdialog-generate-mode-custom.png#lightbox)
 
-[![Shows a screenshot of the revising custom caption of generate mode in the UI](media/generate-mode-caption-revising.png)](media/generate-mode-caption-revising.png)#lightbox)
+[![Shows a screenshot of the revising custom caption of generate mode in the UI](media/generate-mode-caption-revising.png)](media/generate-mode-caption-revising.png#lightbox)
 
 ## Example: From the RunGeneration() procedure
 

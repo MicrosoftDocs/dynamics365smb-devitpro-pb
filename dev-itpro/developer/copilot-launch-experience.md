@@ -18,7 +18,7 @@ In this article, you learn how to add an action in the UI that users select to s
 
 ## Add an action for your copilot
 
-The following code illustrates how to add an action that opens the prompt dialog page for a copilot:  
+The following code illustrates how to add an action that opens the prompt dialog page for copilot:  
 
 ```al
 action(GenerateCopilot)
@@ -38,7 +38,7 @@ or `SparkleFilled` ![Shows the copilot sparkle filled icon](media/copilot-sparkl
 
 In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific copilot. For example, if there's multiple copilot actions on a page, you might want to emphasize one copilot action over the others.  
 
-## Promote the Copilot using a prompt action 
+## Promote copilot using prompt action 
 
 You can create a prompt action to promote your Copilot on pages and encourage users to use it. A prompt action is a standard action that appears under the ![Shows the copilot action icon icon](media/promptdialog-copilot-action-icon.png) in the action bar. The following figure illustrates an example for the **Reconcile with Copilot** action on the **Bank Account Reconciliations** list.
 
