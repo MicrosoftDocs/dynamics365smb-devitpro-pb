@@ -6,7 +6,7 @@ ms.custom: na
 ms.date: 09/30/2022
 ms.reviewer: solsen
 ms.topic: conceptual
-author: EmmaNielsson
+author: jswymer
 ---
 
 # Update 20.6 for Microsoft Dynamics 365 Business Central online 2022 release wave 1
