@@ -56,7 +56,7 @@ The barcode scanning capability supports several of the most common 1D and 2D ba
 
 \* Not supported on iOS devices
 
-## Control add-in APIs and .NET-based APIS
+## Control add-in APIs and .NET-based APIs
 
 Version 24 introduced barcode scanning APIs based on control add-ins​ to replace the .NET-based APIs. The control add-in APIs support scenarios 2 and 3 for Business Central online, which the .NET-based APIs don't support. You can still use the .NET-based APIs but the control add-in APIs are the recommended way to implement barcode scanning capability going forward.
 
