@@ -66,7 +66,7 @@ For fields of data type [Text](methods-auto/text/text-data-type.md), [BigText](m
 Here are some guidelines for using placeholders:
 
 - Keep the placeholder text short, succinct, and specific to the field, page, or prompt dialog. Don't use entirely generic text like `Enter description here`. Don't use entirely generic text like `Enter description here`. Instead, make the text contextual to the specific field, page, or prompt dialog so that there's real informational value. Don't repeat what the prompt dialog title says, but use text that naturally extends what the title says to guide the user along.
-- Don't require the user to use the value of `InstructionalText*  property to complete their task. The reason is that the full text might not always be visible depending on screen size, device type, orientation, page layout, and similar.
+- Don't require the user to use the value of `InstructionalText`  property to complete their task. The reason is that the full text might not always be visible depending on screen size, device type, orientation, page layout, and similar.
 - The placeholder text isn't the same as the *name* or *label* of the field&mdash;it's supplemental information. Don't use the `InstructionalText` property on fields as a replacement for the [Caption property](properties/devenv-caption-property.md).
 - Use placeholder text only when the extra guidance is helpful for users to get started. Overuse of placeholder, such as applying it to all fields on a page, might be distracting and diminish its effectiveness.
 - Use placeholder text instead of implementing instructions as "captionless" fields outside of the input field. This practice keeps your page design compact.
