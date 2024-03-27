@@ -1,12 +1,12 @@
 ---
 title: Barcode scanning in mobile app
-description: Learn how to add bar code scanning capability to the Business Central mobile app 
+description: Learn how to add bar code scanning capability to the Business Central mobile app.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.collection: get-started
-ms.date: 10/05/2023
+ms.date: 10/05/2024
 ms.custom: bap-template 
 ---
 
@@ -28,9 +28,9 @@ There are three different supported scenarios for adding barcode scanning to the
 
 |Scenario|Description|Device camera| Dedicated scanner|iOS device|Android device|Online|On-premises|
 |-|-|-|-|-|-|-|-|
-|UI button on a field|The user scans a barcode by manually selecting a button next to a field|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|
-|Invoke from AL|Based on AL code, the barcode scanning capability is started when something happens, for example, a page opens, or the user selects a custom action on the page. |![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)\*|![Shows a checkbox indicating support](media/check.png)|
-|Integrate dedicated barcode scanner|Enable the use of professional hardware scanners.||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)\*|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)\*|![Shows a checkbox indicating support](media/check.png)|
+|1: UI button on a field|The user scans a barcode by manually selecting a button next to a field|![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|
+|2: Invoke from AL|Based on AL code, the barcode scanning capability is started when something happens, for example, a page opens, or the user selects a custom action on the page. |![Shows a checkbox indicating support](media/check.png)||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)\*|![Shows a checkbox indicating support](media/check.png)|
+|3: Integrate dedicated barcode scanner|Enable the use of professional hardware scanners.||![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)\*|![Shows a checkbox indicating support](media/check.png)|![Shows a checkbox indicating support](media/check.png)\*|![Shows a checkbox indicating support](media/check.png)|
 
 \* Business Central 2024 release wave 1 (v24) and later
 
@@ -56,6 +56,13 @@ The barcode scanning capability supports several of the most common 1D and 2D ba
 
 \* Not supported on iOS devices
 
+## Control add-in APIs and .NET-based APIS
+
+Version 24 introduced barcode scanning APIs based on control add-ins​ to replace the .NET-based APIs. With control add-in APIs, scenarios 1 and 2 are supported for Business Central online, which the .NET-based APIs don't. The .NET-based APIs are still supported but the control add-in APIs are the recommended way to implement barcode scanning capability going forward.
+
+> [!IMPORTANT]
+> With the control add-in APIs, there's no associated UI on the page, meaning no embedded iFrame or visual indicator. Also no scripting or styling functionality is provided.
+
 ## Requirements
 
 - The field used for storing scanned barcodes is either [text](methods-auto/text/text-data-type) and [code](methods-auto/code/code-data-type) data type, which are the only two data types that support barcode scanning.
@@ -69,7 +76,6 @@ The simplest way to provide barcode scanning capability in the mobile app is by 
 ![Shows the barcode scanning button an an item card](media/barcode-scanning-button.png)
 
 This scanning is highly efficient and responsive. Once a barcode is scanned, its value is entered in the field on the page, and the focus moves to the next quick-entry field on the page. 
-
 
 To enable the barcode scanning button on a field, set the [ExtendedDatatype](properties/devenv-extendeddatatype-property.md) property to `Barcode`. You can set ExtendedDatatype on either the field in the table or page. The property instructs  the mobile client to display the barcode button when the page is opened on a supported device.
 
@@ -95,14 +101,7 @@ pageextension 50101 ItemBarcode extends "Item Card"
 
 ## Scenario 2: Invoke barcode scanning programmatically from AL
 
-With this scenario, you add logic in AL to start the barcode scanning UI when a certain operation occurs or conditions are met. For example, barcode scanning can start when a user selects an action or link. Or, when some semi-automated logic or trigger is invoked (for instance, when a page opens). This scenario uses the same camera-based scanning technology as scenario 1 and returns the scanned barcode value to AL code for further processing.
-
-Version 24 introduced a barcode scanning API that's based on control add-ins​ to replace the .NET interoperability-based API. The control add-in API supports Business Central online, which the .NET interoperability-based API doesn't. The .NET interoperability-based API is still supported but the contol add-in API is the recommended way to implement barcode scanning capability going forward.
-
-> [!IMPORTANT]
-> With the control add-in API, there's no associated UI on the page, meaning no embedded iFrame or visual indicator. Also no scripting or styling functionality is provided.
-
-### Use the control add-in API
+### Invoke barcode scanning using control add-in API
 
 The following code example shows how to invoke barcode scanning using the `CameraBarcodeScannerProviderAddIn` control add-in.
 
@@ -176,9 +175,11 @@ page 50100 "Camera Barcode Scanner"
 }
 ```
 
-### Use .NET-based API (on-premises only)
+[Inspect the CameraBarcodeScannerProviderAddIn API in BCApps GitHub repo](https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/ControlAddIns/src/CameraBarcodeScannerProviderAddIn.ControlAddIn.al).
 
-The basic steps for implementing this scenario are: 
+### Invoke barcode scanning using .NET-based API (on-premises only)
+
+The basic steps for implementing this scenario are:
 
 1. Define the barcode scanner provider by declaring a `DotNet` variable `Microsoft.Dynamics.Nav.Client.Capabilities.CameraBarcodeScannerProvider`.
 1. Verify the barcode scanner provider exists in context of the client. For example, if the user is working in the Business Central web client, this step returns false.  
@@ -279,8 +280,49 @@ private static final String DEFAULT_DATA_STRING = "com.businesscentral.receive_b
 
 private static final String DEFAULT_DATA_FORMAT = "com.businesscentral.receive_barcode.barcode_format"-->
 
+## Add barcode scanner functionality using control add-in API
 
-## Add barcode scanner functionality to the mobile app
+The following code example shows how to invoke barcode scanning using the `BarcodeScannerProviderAddIn` control add-in.
+
+
+```al
+page 50101 "Barcode Scanner"
+{
+    PageType = Card;
+    ApplicationArea = All;
+    Caption = 'Barcode Scanner Sample';
+
+    layout
+    {
+        area(Content)
+        {
+            // Declare the user control based on the BarcodeScannerProviderAddIn control add-in.
+            usercontrol(BarcodeControl; BarcodeScannerProviderAddIn) // Step 1
+            {
+                ApplicationArea = All;
+
+                // The ControlAddInReady event is raised when the control add-in is ready to be used. 
+                trigger ControlAddInReady(IsSupported: Boolean)
+                begin
+                    // If the barcode scanner is supported, request the barcode scanner.
+                    if IsSupported then // Step 2
+                        CurrPage.BarcodeControl.RequestBarcodeScannerAsync(); // Step 3
+                end;
+
+                // The BarcodeReceived event is raised when a barcode is received from the barcode scanner.
+                trigger BarcodeReceived(Barcode: Text; Format: Text)
+                begin
+                    Message(Barcode); // Step 4
+                end;
+            }
+        }
+    }
+}
+```
+
+[Inspect the BarcodeScannerProviderAddIn API Inspect in BCApps GitHub repo](https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/ControlAddIns/src/BarcodeScannerProviderAddIn.ControlAddIn.al).
+
+### Add barcode scanner functionality using .NET-based API (on-premises only)
 
 In AL an extension, you add code that instructs the mobile app to listen for scanned barcodes. Barcode scanning is set up per page, which means that multiple barcode providers can be registered. However, incoming scanned barcodes are always sent to the current page open in the mobile app.​
 
