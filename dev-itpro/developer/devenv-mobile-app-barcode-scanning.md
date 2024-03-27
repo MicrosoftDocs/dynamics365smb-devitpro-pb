@@ -280,7 +280,7 @@ private static final String DEFAULT_DATA_STRING = "com.businesscentral.receive_b
 
 private static final String DEFAULT_DATA_FORMAT = "com.businesscentral.receive_barcode.barcode_format"-->
 
-## Add barcode scanner functionality using control add-in API
+### Add barcode scanner functionality using control add-in API
 
 The following code example shows how to invoke barcode scanning using the `BarcodeScannerProviderAddIn` control add-in.
 
