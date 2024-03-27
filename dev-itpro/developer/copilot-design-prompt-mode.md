@@ -51,7 +51,7 @@ layout
 }
 ```
 
-Within `area(Prompt)`, you can add one or more fields, groups, and page parts. `Prompt` supports all `area()` controls except the `repeater` control. Instead of a`repeater`, you can use a `ListPart`.
+Within `area(Prompt)`, you can add one or more fields, groups, and page parts. `Prompt` supports all `area()` controls except the `repeater` control. Instead of a `repeater`, you can use a `ListPart` control.
 
 > [!NOTE]
 > The code example is a special case where the first field on the PromptDialog page is shown as a multiline input with `ShowCaption=false`. In this case, the page caption serves as the caption for the input field. For accessibility and usability reasons, other fields on the page should continue to have their captions visible.
