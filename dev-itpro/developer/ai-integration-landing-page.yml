@@ -45,7 +45,7 @@ landingContent:
       - text: About Copilot in Business Central
         url: /dynamics365/business-central/copilot-overview
 # Card
-  - title: Build a copilot experience
+  - title: Extend Copilot experience
     linkLists:
     - linkListType: overview
       links: 
