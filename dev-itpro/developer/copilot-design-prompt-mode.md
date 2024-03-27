@@ -1,4 +1,4 @@
----on th
+---
 title: Design the prompt mode of prompt dialog page
 description: Learn how to define the screen of a copilot prompt dialog page where users can add input that the AI generation logic uses for producing results.
 author: jswymer
