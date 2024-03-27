@@ -148,7 +148,7 @@ A user might get more than one generated output when using copilot. This situati
 
 [![Shows the version control in content mode of the PromptDialog type page](media/promptdialog-content-mode-versions.svg)](media/promptdialog-content-mode-versions.svg#lightbox)
 
-This capability requires that the PromptDialog page uses a temporary source table. Unlike with other page types, the source table represents an instance of a copilot proposal. It can include both user inputs and the AI-generated results.
+This capability requires that the PromptDialog page uses a temporary source table. Unlike with other page types, each record of the source table represents an instance of a copilot proposal. It can include both user inputs and the AI-generated results.
 
 You should design the capability to insert a new record each time content is generated. When in place, the control appears on the PromptDialog page whenever the source table contains multiple records. After the user closes the copilot, for example by saving or discarding the results, the version history is deleted.
 
