@@ -81,7 +81,6 @@ To enable the barcode scanning button on a field, set the [ExtendedDatatype](pro
 
 The following code shows an example that adds a field with a barcode scanning button to the **Item** card page.
 
-
 ```al
 pageextension 50101 ItemBarcode extends "Item Card"
 {
