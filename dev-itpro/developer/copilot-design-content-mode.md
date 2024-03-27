@@ -50,7 +50,7 @@ layout
 
 ## Add a save and discard action
 
-In this task, you add actions to the content mode that enable users to save or discard the AI-generated proposal. Don't save AI-generated proposals to the database until the user chooses to do so. In accordance with responsible AI, to respect the user's choice.
+In this task, you add actions to the content mode that enable users to save or discard the AI-generated proposal. Don't save AI-generated proposals to the database until the user chooses to do so. In accordance with the princples of responsible AI, to respect the user's choice.
 
 [![Shows a screenshot of the save and discard actions in the content mode of the PromptDialog type page](media/promptdialog-content-mode-save.svg)](media/promptdialog-content-mode-save.svg#lightbox)
 
