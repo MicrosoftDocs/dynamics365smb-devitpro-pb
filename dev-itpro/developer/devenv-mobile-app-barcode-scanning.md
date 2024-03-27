@@ -58,7 +58,7 @@ The barcode scanning capability supports several of the most common 1D and 2D ba
 
 ## Control add-in APIs and .NET-based APIS
 
-Version 24 introduced barcode scanning APIs based on control add-ins​ to replace the .NET-based APIs. With control add-in APIs, scenarios 1 and 2 are supported for Business Central online, which the .NET-based APIs don't. The .NET-based APIs are still supported but the control add-in APIs are the recommended way to implement barcode scanning capability going forward.
+Version 24 introduced barcode scanning APIs based on control add-ins​ to replace the .NET-based APIs. The control add-in APIs support scenarios 2 and 3 for Business Central online, which the .NET-based APIs don't support. You can still use the .NET-based APIs but the control add-in APIs are the recommended way to implement barcode scanning capability going forward.
 
 > [!IMPORTANT]
 > With the control add-in APIs, there's no associated UI on the page, meaning no embedded iFrame or visual indicator. Also no scripting or styling functionality is provided.
