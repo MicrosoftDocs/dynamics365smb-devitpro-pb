@@ -80,7 +80,7 @@ A prompt guide is a predefined list of prompt texts that users can choose from b
 
 The prompt guide saves users time because they don't have to write prompts from scratch. Plus, it can help them to understand how to write prompts to get the results they want.
 
-To create a prompt guide, you add an action area on `PromptDialog` pages, called `PromptGuide`. You then add individual an `action` control for each prompt you want to include in the prompt guide. For example:
+To create a prompt guide, you add an action area on `PromptDialog` pages, called `PromptGuide`. You then add an individual `action` control for each prompt you want to include in the prompt guide. For example:
 
 ```al
 actions
