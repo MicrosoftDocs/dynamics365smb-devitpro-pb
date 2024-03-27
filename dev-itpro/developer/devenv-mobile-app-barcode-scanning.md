@@ -65,7 +65,7 @@ Version 24 introduced barcode scanning APIs based on control add-ins​ to repla
 
 ## Requirements
 
-- The field used for storing scanned barcodes is either [text](methods-auto/text/text-data-type) and [code](methods-auto/code/code-data-type) data type, which are the only two data types that support barcode scanning.
+- The field used for storing scanned barcodes is either [text](methods-auto/text/text-data-type.md) and [code](methods-auto/code/code-data-type.md) data type, which are the only two data types that support barcode scanning.
 - Mobile device is using Business Central mobile app version 4.0 or later. To download the latest version, go to [https://aka.ms/bcmobileapp](https://aka.ms/bcmobileapp).
 - Dedicated barcode scanners must be running Android 11 or later. 
 
