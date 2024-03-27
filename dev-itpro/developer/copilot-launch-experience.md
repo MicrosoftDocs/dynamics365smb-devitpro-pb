@@ -40,7 +40,7 @@ In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special
 
 ## Promote copilot using prompt action 
 
-You can create a prompt action to promote your Copilot on pages and encourage users to use it. A prompt action is a standard action that appears under the ![Shows the copilot action icon icon](media/promptdialog-copilot-action-icon.png) in the action bar. Users select the action to run the Copilot. They can also select the **Show in page** action to float the Copilot actions on the page for easy access.  
+You can create a prompt action to promote your Copilot on pages and encourage users to use it. A prompt action is a standard action that appears under the ![Shows the copilot action icon icon](media/promptdialog-copilot-action-icon.png) in the action bar and in the Copilot toolbar that floats on the page for easy access. Users can hide Copilot toolbar by selecting the **Hide** action on the toolbar or **Show in page** in the action bar.
 
 ![Shows the copilot action icon clip](media/promptdialog-launch-floating.png)
 
