@@ -1,4 +1,4 @@
----on th
+---
 title: Design the prompt mode of prompt dialog page
 description: Learn how to define the screen of a copilot prompt dialog page where users can add input that the AI generation logic uses for producing results.
 author: jswymer
@@ -61,12 +61,12 @@ Within `area(Prompt)`, you can add one or more fields, groups, and page parts. `
 For fields of data type [Text](methods-auto/text/text-data-type.md), [BigText](methods-auto/bigtext/bigtext-data-type.md), [Code](methods-auto/code/code-data-type.md), or [GUID](methods-auto/guid/guid-data-type.md), you can use the [InstructionalText property](properties/devenv-instructionaltext-property.md) to add placeholder text in the field. The purpose of placeholder text is help users understand what they should enter as a prompt. The placeholder text disappears as soon as the user enters text in the field.
 
 > [!NOTE]
-> Placeholder text appears only if the field and page that are editable. It's not shown if the [Editable property](properties/devenv-editable-property.md) of the page or fields is set to `false`.
+> Placeholder text appears only if the field and page are editable. It's not shown if the [Editable property](properties/devenv-editable-property.md) of the page or field is set to `false`.
 
 Here are some guidelines for using placeholders:
 
 - Keep the placeholder text short, succinct, and specific to the field, page, or prompt dialog. Don't use entirely generic text like `Enter description here`. Don't use entirely generic text like `Enter description here`. Instead, make the text contextual to the specific field, page, or prompt dialog so that there's real informational value. Don't repeat what the prompt dialog title says, but use text that naturally extends what the title says to guide the user along.
-- Don't require the user to use the value of `InstructionalText*  property to complete their task. The reason is that the full text might not always be visible depending on screen size, device type, orientation, page layout, and similar.
+- Don't require the user to use the value of `InstructionalText`  property to complete their task. The reason is that the full text might not always be visible depending on screen size, device type, orientation, page layout, and similar.
 - The placeholder text isn't the same as the *name* or *label* of the field&mdash;it's supplemental information. Don't use the `InstructionalText` property on fields as a replacement for the [Caption property](properties/devenv-caption-property.md).
 - Use placeholder text only when the extra guidance is helpful for users to get started. Overuse of placeholder, such as applying it to all fields on a page, might be distracting and diminish its effectiveness.
 - Use placeholder text instead of implementing instructions as "captionless" fields outside of the input field. This practice keeps your page design compact.
@@ -80,7 +80,7 @@ A prompt guide is a predefined list of prompt texts that users can choose from b
 
 The prompt guide saves users time because they don't have to write prompts from scratch. Plus, it can help them to understand how to write prompts to get the results they want.
 
-To create a prompt guide, you add an action area on `PromptDialog` pages, called `PromptGuide`. You then add individual an `action` control for each prompt you want to include in the prompt guide. For example:
+To create a prompt guide, you add an action area on `PromptDialog` pages, called `PromptGuide`. You then add an individual `action` control for each prompt you want to include in the prompt guide. For example:
 
 ```al
 actions
