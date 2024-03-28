@@ -20,7 +20,7 @@ Runs when a user uploads files on a page.
 
 ## Syntax
 ```AL
-trigger OnAction(Files: ListOfFileUpload)
+trigger OnAction(Files: List of [FileUpload])
 begin
     ...
 end;
@@ -29,7 +29,7 @@ end;
 ### Parameters
 
 *Files*  
-&emsp;Type: [ListOfFileUpload](../../methods-auto/listoffileupload/listoffileupload-data-type.md)  
+&emsp;Type: [FileUpload](../../methods-auto/fileupload/fileupload-data-type.md)  
 List of the files uploaded.  
 
 
