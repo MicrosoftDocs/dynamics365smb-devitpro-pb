@@ -26,6 +26,12 @@ This article describes the features that are up for removal or that have been re
 |---------|---------|
 |Removed | Direct cloud migration and data upgrade from version Business Central 2019 (v.14.x) is no longer supported. In order to upgrade (or cloud-migrate) data to v.26 or higher, follow one of these paths:<br><ul><li>Pre-v.14 customers > upgrade to v.14 > upgrade to v.25 > upgrade or cloud migrate to v.26</li><li>V.14 to v.24 customers > upgrade to v.25 > upgrade or cloud migrate to v.26 </li></ul>`ObsoleteState = Removed` fields are regularly cleaned up with a cadence of once every five major releases (referred to as the *stepping-stone* release). So after v.25, the next stepping-stone release will be v.30, and so on. |
 
+### <a name="soap-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as a SOAP endpoint (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | A UI page is not an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 26, it is no longer possible to expose a Microsoft page as a SOAP endpoint. If you need to have SOAP integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
+
 ## Changes in 2024 release wave 2 (version 25.0)
 
 ### Direct cloud migration and data upgrade from version Dynamics Business Central 2019 (v.14.x) (warning)
@@ -60,6 +66,11 @@ This article describes the features that are up for removal or that have been re
 |---------|---------|
 |Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it's possible to write to the app database tables from AL. Starting in version 24, this is no longer possible. |
 
+### <a name="soap-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as a SOAP endpoint (warning)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | A UI page is not an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 26, it is no longer possible to expose a Microsoft page as a SOAP endpoint. If you need to have SOAP integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
 
 ## Changes in 2023 release wave 2 (version 23.0)
 
