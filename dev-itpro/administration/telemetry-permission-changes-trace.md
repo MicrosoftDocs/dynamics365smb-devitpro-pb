@@ -135,7 +135,7 @@ traces
 , alPermissionSetId = customDimensions.alPermissionSetId
 // which user did it
 , usertelemetryId = case(
-  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry id was introduced in the platform in version 20.0
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry ID was introduced in the platform in version 20.0
 , 'N/A'
 )
 ```
@@ -184,7 +184,7 @@ traces
 , alNumberOfUserDefinedPermissionSetLinks = customDimensions.alNumberOfUserDefinedPermissionSetLinks
 // which user did it
 , usertelemetryId = case(
-  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry id was introduced in the platform in version 20.0
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry ID was introduced in the platform in version 20.0
 , 'N/A'
 )
 ```
@@ -232,7 +232,7 @@ traces
 , alNumberOfUserDefinedPermissionSetLinks = customDimensions.alNumberOfUserDefinedPermissionSetLinks
 // which user did it
 , usertelemetryId = case(
-  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry id was introduced in the platform in version 20.0
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry ID was introduced in the platform in version 20.0
 , 'N/A'
 )
 ```
@@ -277,7 +277,7 @@ traces
 , alPermissionSetId = customDimensions.alPermissionSetId
 // which user did it
 , usertelemetryId = case(
-  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry id was introduced in the platform in version 20.0
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry ID was introduced in the platform in version 20.0
 , 'N/A'
 )
 ```
@@ -323,7 +323,7 @@ traces
 , alPermissionSetId = customDimensions.alPermissionSetId
 // which user did it
 , usertelemetryId = case(
-  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry id was introduced in the platform in version 20.0
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry ID was introduced in the platform in version 20.0
 , 'N/A'
 )
 ```
@@ -370,7 +370,7 @@ traces
 , alUserGroupId = customDimensions.alUserGroupId
 // which user did it
 , usertelemetryId = case(
-  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry id was introduced in the platform in version 20.0
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry ID was introduced in the platform in version 20.0
 , 'N/A'
 )
 ```
