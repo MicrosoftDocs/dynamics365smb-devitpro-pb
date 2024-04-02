@@ -36,7 +36,7 @@ The pageViews table is a built-in table in Application Insights. Here are some o
 |url|URL of the page view.|
 |name|Name of the page opened in the client |
 |session_id|An identifier for the session. Can be used to create a timeline of page views happening in the session|
-|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] <br><br>data in user_Id from the User card was introduced in version 24 for page view telemetry.  |
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] <br><br>Data in user_Id from the **User** card was introduced in version 24 for page view telemetry.  |
 
 All fields are documented here: [Application Insights PageViews Schema](/azure/azure-monitor/reference/tables/pageviews)
 
