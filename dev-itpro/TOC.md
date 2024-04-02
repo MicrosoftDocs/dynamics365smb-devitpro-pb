@@ -1469,8 +1469,13 @@
 ### Build a copilot experience
 #### [Introduction](developer/ai-build-experience-overview.md)
 #### [Build the copilot capability in AL](developer/ai-build-capability-in-al.md)
-#### [Build the copilot user experience](developer/ai-build-experience.md)
-
+#### Build Copilot user experience
+##### [Overview](developer/ai-build-experience.md)
+##### [Create prompt dialog page](developer/copilot-create-promptdialog.md)
+##### [Design prompt mode](developer/copilot-design-prompt-mode.md)
+##### [Design content mode](developer/copilot-design-content-mode.md)
+##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
+##### [Launch copilot](developer/copilot-launch-experience.md)
 ## Integrating Business Central with Office apps and Microsoft 365
 ### [Overview](developer/m365-integration-overview.md)
 ### Integrating with Microsoft Excel
