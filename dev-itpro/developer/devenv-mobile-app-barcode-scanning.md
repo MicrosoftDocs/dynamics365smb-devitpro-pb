@@ -251,6 +251,7 @@ page 50100 "MyALPage"
 This scenario enables the use of professional hardware barcode scanners, like Zebra or Datalogic, with the mobile app. The design is aimed at enhancing the efficiency of users, like warehouse employees, who need to scan many items in the span of a few seconds. While the user scans a series of items, the system processes the incoming barcodes. <!-- offering greater flexibility to developers.--> <!--It supports hardware barcode scanners, such as Zebra or Datalogic, that run on Android 11 and above. -->
 
 A significant benefit of this scenario is that it allows for scanning barcodes and creating documents without the need for user interaction with the UI. When a barcode is scanned, the value is transmitted to the Business Central mobile app and then to the AL code. After AL intercepting an event from the Android device, AL code then processes the decoded barcode.
+
 ### Prepare barcode scanners
 
 For barcode scanners to communicate with the Business Central mobile app, they must be configured to emit Android Intent messages for every scanned barcode. By default, the mobile app is programmed to listen for certain types of messages from the barcode scanners. To enable this communication, you need to adjust the scanner's settings according to the values outlined in the following table:
@@ -265,7 +266,8 @@ For barcode scanners to communicate with the Business Central mobile app, they m
 
 Consult the manufacturer's guidelines for your specific scanner to learn how to modify these settings. For example, if you're using a Datalogic scanner, you can follow the instructions at [Configuring the Barcode Scanners on Datalogic Terminals To Work With TSL® Mobile Apps](https://www.tsl.com/configuring-datalogic-terminals-to-work-with-tsl-mobile-apps/).
 
-We should add a paragraph mentioning that for barcode scanner devices such as Zebra for example which do not support modification of the intent configuration, we also support passing the intent data strings via AL
+> [!NOTE]
+> With some barcode scanner devices, such as Zebra, you can't modifify the intent configuration. In this case, you can pass the intent data strings via AL.
 
 <!-- 
 
