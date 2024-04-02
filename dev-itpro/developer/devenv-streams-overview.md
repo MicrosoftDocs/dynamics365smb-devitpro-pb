@@ -31,6 +31,7 @@ A stream is an object used for transfering data, so no actual data is not stored
 
 The AL stream object/methods are wrappers over corresponding .NET stream concepts. In C#, you only have one object called Stream. The direction (read/write) is determined by using the Read/Write methods as illustrated in this C# example:
 
+``` C#
 // how to write the content of one stream into another stream in C#
 static void CopyStream(Stream input, Stream output){
     byte[] buffer = new byte[0x1000];
@@ -38,18 +39,26 @@ static void CopyStream(Stream input, Stream output){
     while ((read = input.Read(buffer, 0, buffer.Length)) > 0) 
         output.Write(buffer, 0, read);
 }
+```
 
-In AL, the direction of the data flow is encoded in the two datatypes InStream and OutStream. 
+In AL, the direction of the data flow is encoded in the two datatypes `InStream` and `OutStream`. 
 
 :::image type="content" source="media/streams.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/streams.svg":::
 
 
 The AL runtime also has a built-in method for copying a stream, see 
-System.CopyStream(OutStream: OutStream, InStream: InStream [, BytesToRead: Integer]).
+[System.CopyStream(OutStream: OutStream, InStream: InStream [, BytesToRead: Integer])](methods-auto/system/system-copystream-method.md).
 
 > [!NOTE]
 > 
 > The CopyStream method stems from the C/AL language that was inspired from the Pascal programming language. In Pascal it is common for procedures to follow the direction of assignments, i.e. variable := value (like dest := source). This is the reason why parameters in CopyStream are ordered the way they are.
+
+## Reading data with the InStream datatype
+
+
+
+## Writing data with the OutStream datatype
+
 
 ## Why use streams?
 
