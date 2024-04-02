@@ -41,7 +41,7 @@ static void CopyStream(Stream input, Stream output){
 }
 ```
 
-In AL, the direction of the data flow is encoded in the two datatypes `InStream` and `OutStream`. 
+In AL, the direction of the data flow is instead encoded in the two datatypes `InStream` and `OutStream` and you need to use an AL object to either consume (read) data from a data source using a stream or emit (write) data to a data source using a stream. 
 
 :::image type="content" source="media/streams.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/streams.svg":::
 
@@ -51,7 +51,7 @@ The AL runtime also has a built-in method for copying a stream, see
 
 > [!NOTE]
 > 
-> The CopyStream method stems from the C/AL language that was inspired from the Pascal programming language. In Pascal it is common for procedures to follow the direction of assignments, i.e. variable := value (like dest := source). This is the reason why parameters in CopyStream are ordered the way they are.
+> The CopyStream method stems from the time of the C/AL programming language, which was inspired from the Pascal programming language. In Pascal it is common for procedures to follow the direction of assignments, i.e. variable := value (like dest := source). This is the reason why parameters in CopyStream are ordered the way they are.
 
 ## Reading data with the InStream datatype
 
@@ -69,9 +69,11 @@ The AL runtime also has a built-in method for copying a stream, see
 
 ## Examples of stream support
 
-There are many examples of AL datatypes or objects that support stream, such as 
+There are many AL datatypes or objects that you can use to consume data from streams or emit data to streams. In this table, you can see how.
 
-- HttpClient
+| Data source | Consume data with InStream | Emit data with OutStream |
+| ----------- | -------------------------- | ------------------------ |
+| Web service | HttpClient
 - File (only for on-premises)
 - Blob fields in the database
 - Excel buffer (OpenBookStream)
@@ -98,3 +100,5 @@ Upload/download a file using streams
 
 ## See also
 
+[System.CopyStream(OutStream: OutStream, InStream: InStream [, BytesToRead: Integer])](methods-auto/system/system-copystream-method.md)   
+[Codeunit "Base64 Convert"](/business-central/application/system-application/codeunit/system.text.base64-convert)  
