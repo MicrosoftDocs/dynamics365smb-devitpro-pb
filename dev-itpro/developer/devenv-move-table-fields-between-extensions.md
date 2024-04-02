@@ -3,10 +3,8 @@ title: Moving tables and fields between extensions
 description: Learn how to move tables and fields between extensions in Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.reviewer: 
 ms.topic: conceptual
 ms.date: 03/26/2024
-ms.custom: 
 ---
 
 # Moving tables and fields between extensions
@@ -161,6 +159,7 @@ There are some limitations to moving fields between extensions to be aware of:
 
 ## Sample code for moving fields between extensions
 
+The following sections show the source and destination fields for how to move fields between extensions.
 
 ### Source extension
 
