@@ -421,7 +421,7 @@ table 50150 BaseTable50150
 
 ```
 
-## AppSourceCop rules
+## Breaking changes - AppSourceCop rules
 
 Moving a table or a field is a breaking change in most of the cases and should be staged in 2 steps to make sure that all the extensions referencing the table or the field are fixed before the move is final.
 
