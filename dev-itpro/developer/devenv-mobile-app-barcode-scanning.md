@@ -267,7 +267,7 @@ For barcode scanners to communicate with the Business Central mobile app, they m
 Consult the manufacturer's guidelines for your specific scanner to learn how to modify these settings. For example, if you're using a Datalogic scanner, you can follow the instructions at [Configuring the Barcode Scanners on Datalogic Terminals To Work With TSL® Mobile Apps](https://www.tsl.com/configuring-datalogic-terminals-to-work-with-tsl-mobile-apps/).
 
 > [!NOTE]
-> With some barcode scanner devices, such as Zebra, you can't modifify the intent configuration. In this case, you can pass the intent data strings via AL.
+> With some barcode scanner devices, such as Zebra, you can't modify the intent configuration. In this case, you can pass the intent data strings via AL.
 
 <!-- 
 
