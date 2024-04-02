@@ -47,6 +47,9 @@ In AL, the direction of the data flow is encoded in the two datatypes InStream a
 The AL runtime also has a built-in method for copying a stream, see 
 System.CopyStream(OutStream: OutStream, InStream: InStream [, BytesToRead: Integer]).
 
+> [!NOTE]
+> 
+> The CopyStream method stems from the C/AL language that was inspired from the Pascal programming language. In Pascal it is common for procedures to follow the direction of assignments, i.e. variable := value (like dest := source). This is the reason why parameters in CopyStream are ordered the way they are.
 
 ## Why use streams?
 
