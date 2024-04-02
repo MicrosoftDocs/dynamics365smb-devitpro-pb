@@ -19,7 +19,7 @@ This article describes the features that are up for removal or that have been re
 
 ## Changes in 2025 release wave 1 (version 26.0)
 
-### Direct cloud migration and data upgrade from version Dynamics Business Central 2019 (v.14.x) (removed)
+### Direct cloud migration and data upgrade from version Dynamics Business Central 2019 (v.14.x) (removal)
 
 |Removed or Replaced? |Why?|
 |---------|---------|
