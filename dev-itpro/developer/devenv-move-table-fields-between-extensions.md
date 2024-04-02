@@ -43,7 +43,7 @@ Hostile take-over isn't allowed when moving a table, the latest published versio
 
 ## Sample code for moving tables between extensions
 
-The following sections show the source and destination tables for how to move a table between extensions.
+The following code shows the source and destination tables and how to move a table between extensions.
 
 ### Source extension
 
@@ -54,7 +54,7 @@ table 50150 BaseTable50150
 
     ObsoleteState = Moved;
 
-    MovedTo = 'F0000000-0000-0000-0000-000000000001';
+    MovedTo = 'F0000000-0000-0000-0000-000000000001'; // Specifies the app ID of the destination extension
 
     fields
 
@@ -97,7 +97,7 @@ table 50150 BaseTable50150
 
 {
 
-    MovedFrom = 'f0000000-0000-0000-0000-000000000003';
+    MovedFrom = 'f0000000-0000-0000-0000-000000000003'; // Specifies the app ID of the source extension
 
     fields
 
@@ -163,6 +163,8 @@ The following sections show the source and destination fields for how to move fi
 
 ### Source extension
 
+The following code shows the source extension with the fields that are moved to another extension.
+
 ```al
 
 table 50100 BaseTable50100
@@ -185,7 +187,7 @@ table 50100 BaseTable50100
 
             ObsoleteState = Moved;
 
-            MovedTo = 'F0000000-0000-0000-0000-000000000002';
+            MovedTo = 'F0000000-0000-0000-0000-000000000002'; // Specifies the app ID of the destination extension
 
         }
 
@@ -195,7 +197,7 @@ table 50100 BaseTable50100
 
             ObsoleteState = Moved;
 
-            MovedTo = 'F0000000-0000-0000-0000-000000000002';
+            MovedTo = 'F0000000-0000-0000-0000-000000000002'; // Specifies the app ID of the destination extension
 
         }
 
@@ -205,7 +207,7 @@ table 50100 BaseTable50100
 
             ObsoleteState = Moved;
 
-            MovedTo = 'F0000000-0000-0000-0000-000000000002';
+            MovedTo = 'F0000000-0000-0000-0000-000000000002'; // Specifies the app ID of the destination extension
 
         }
 
@@ -215,7 +217,7 @@ table 50100 BaseTable50100
 
             ObsoleteState = Moved;
 
-            MovedTo = 'F0000000-0000-0000-0000-000000000002';
+            MovedTo = 'F0000000-0000-0000-0000-000000000002'; // Specifies the app ID of the destination extension
 
         }
 
@@ -225,6 +227,8 @@ table 50100 BaseTable50100
 ```
 
 ### Destination extension
+
+The following code shows the destination extension with the fields that are moved from another extension.
 
 ```al
 tableextension 50100 TExtension50100 extends BaseTable50100
@@ -239,7 +243,7 @@ tableextension 50100 TExtension50100 extends BaseTable50100
 
         {
 
-            MovedFrom = 'F0000000-0000-0000-0000-000000000001';
+            MovedFrom = 'F0000000-0000-0000-0000-000000000001'; // Specifies the app ID of the source extension
 
         }
 
@@ -247,7 +251,7 @@ tableextension 50100 TExtension50100 extends BaseTable50100
 
         {
 
-            MovedFrom = 'F0000000-0000-0000-0000-000000000001';
+            MovedFrom = 'F0000000-0000-0000-0000-000000000001'; // Specifies the app ID of the source extension
 
         }
 
@@ -255,7 +259,7 @@ tableextension 50100 TExtension50100 extends BaseTable50100
 
         {
 
-            MovedFrom = 'F0000000-0000-0000-0000-000000000001';
+            MovedFrom = 'F0000000-0000-0000-0000-000000000001'; // Specifies the app ID of the source extension
 
         }
 
@@ -263,7 +267,7 @@ tableextension 50100 TExtension50100 extends BaseTable50100
 
         {
 
-            MovedFrom = 'F0000000-0000-0000-0000-000000000003';
+            MovedFrom = 'F0000000-0000-0000-0000-000000000003'; // Specifies the app ID of the source extension
 
         }
 
@@ -271,7 +275,7 @@ tableextension 50100 TExtension50100 extends BaseTable50100
 
         {
 
-            MovedFrom = 'F0000000-0000-0000-0000-000000000003';
+            MovedFrom = 'F0000000-0000-0000-0000-000000000003'; // Specifies the app ID of the source extension
 
         }
 
@@ -281,7 +285,7 @@ tableextension 50100 TExtension50100 extends BaseTable50100
 
             ObsoleteState = Removed;
 
-            MovedFrom = 'F0000000-0000-0000-0000-000000000001';
+            MovedFrom = 'F0000000-0000-0000-0000-000000000001'; // Specifies the app ID of the source extension
 
         }
 
@@ -296,6 +300,8 @@ Another scenario could be to move a table to another extension and extract some 
 
 ### Source extension
 
+The following code shows the source extension with the table and fields that are moved to another extension.
+
 ```al
 
 table 50150 BaseTable50150
@@ -304,7 +310,7 @@ table 50150 BaseTable50150
 
     ObsoleteState = Moved;
 
-    MovedTo = 'F0000000-0000-0000-0000-000000000001';
+    MovedTo = 'F0000000-0000-0000-0000-000000000001'; // Specifies the app ID of the destination extension
 
     fields
 
@@ -338,6 +344,8 @@ table 50150 BaseTable50150
 
 }
 ```
+
+Some of the fields are moved to another table extension.
 
 ```al	
 tableextension 50151 TExtension50151 extends BaseTable50150
@@ -352,7 +360,7 @@ tableextension 50151 TExtension50151 extends BaseTable50150
 
         {
 
-            MovedFrom = 'F0000000-0000-0000-0000-000000000002';
+            MovedFrom = 'F0000000-0000-0000-0000-000000000002'; // Specifies the app ID of the source extension
 
         }
 
@@ -360,7 +368,7 @@ tableextension 50151 TExtension50151 extends BaseTable50150
 
         {
 
-            MovedFrom = 'F0000000-0000-0000-0000-000000000002';
+            MovedFrom = 'F0000000-0000-0000-0000-000000000002'; // Specifies the app ID of the source extension
 
         }
 
@@ -371,13 +379,15 @@ tableextension 50151 TExtension50151 extends BaseTable50150
 
 ### Destination extension
 
+The following code shows the destination extension with the table and fields that are moved from another extension.
+
 ```al
 
 table 50150 BaseTable50150
 
 {
 
-    MovedFrom = 'f0000000-0000-0000-0000-000000000003';
+    MovedFrom = 'f0000000-0000-0000-0000-000000000003'; // Specifies the app ID of the source extension
 
     fields
 
@@ -401,7 +411,7 @@ table 50150 BaseTable50150
 
             ObsoleteState = Moved;
 
-            MovedTo = 'F0000000-0000-0000-0000-000000000003';
+            MovedTo = 'F0000000-0000-0000-0000-000000000003'; // Specifies the app ID of the destination extension
 
         }
 
@@ -411,7 +421,7 @@ table 50150 BaseTable50150
 
             ObsoleteState = Moved;
 
-            MovedTo = 'F0000000-0000-0000-0000-000000000003';
+            MovedTo = 'F0000000-0000-0000-0000-000000000003'; // Specifies the app ID of the destination extension
 
         }
 
