@@ -78,9 +78,10 @@ Upload/download a file using streams
     Could we provide overload that skips the three parameters that are only used in C/CIDE?
 
 
-Put a note on this somewhere
-Base64 encoding
-https://learn.microsoft.com/en-us/dynamics365/business-central/application/system-application/codeunit/system.text.base64-convert
+> [!TIP]
+>
+> When streaming binary data, you might need to do a Base64 encoding to make it available as a text stream. The System Application has a module for this, see [Codeunit "Base64 Convert"](/business-central/application/system-application/codeunit/system.text.base64-convert).
+
 
 
 ## See also
