@@ -65,7 +65,7 @@ Occurs when a user-defined permission set is created.
 
 ### Sample KQL code (user-defined permission set added)
 
-This KQL code can help you get started analyzing when a sser-defined permission set was added.
+This KQL code can help you get started analyzing when a user-defined permission set was added.
 
 ```kql
 // User-defined permission set added 
