@@ -16,7 +16,7 @@ metadata:
   description: Build AL extensions that include copilot and generative AI experiences.
   author: jswymer
   ms.author: jswymer
-  ms.date: 11/04/2023
+  ms.date: 03/27/2024
   ms.topic: landing-page # DON'T CHANGE
   ms.service:  dynamics365-business-central
   ms.custom: bap-template #Required; don't change.
@@ -30,9 +30,9 @@ landingContent:
     linkLists:
     - linkListType: overview
       links:
-      - text: What are the developer tools for copilot
+      - text: What are the developer tools for Copilot
         url: developer-tools-for-copilot-overview.md
-      - text: What is considered a copilot offering?
+      - text: What is considered a Copilot offering?
         url: ai-extend-copilot-overview.md
       - text: Responsible AI transparency note for developer tools
         url: ../ai/transparency-note-dev-tools-for-copilot.md
@@ -40,7 +40,10 @@ landingContent:
       links:
       - text: Get set up with Azure OpenAI Service
         url: ai-dev-tools-get-started.md
-
+    - linkListType: reference
+      links:
+      - text: About Copilot in Business Central
+        url: /dynamics365/business-central/copilot-overview
 # Card
   - title: Build a copilot experience
     linkLists:
@@ -58,6 +61,10 @@ landingContent:
       links:
       - text: PromptDialog page type
         url: devenv-page-type-promptdialog.md
+      - text: Prompting using a prompt guide
+        url: devenv-page-promptguide.md
+      - text: Prompting using a floating action bar
+        url: devenv-page-prompting-floating-actionbar.md
       - text: PromptMode property
         url: properties/devenv-promptmode-property.md      
       - text: AI module (System.AI)
