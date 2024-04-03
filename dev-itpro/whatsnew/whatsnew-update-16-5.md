@@ -6,6 +6,7 @@ ms.date: 12/20/2023
 ms.reviewer: solsen
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ---
 
 # Update 16.5 for Microsoft Dynamics 365 Business Central online 2020 release wave 1

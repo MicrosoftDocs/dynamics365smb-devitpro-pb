@@ -6,6 +6,7 @@ ms.date: 01/03/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ---
 
 # Update 15.2 for Microsoft Dynamics 365 Business Central 2019 online release wave 2

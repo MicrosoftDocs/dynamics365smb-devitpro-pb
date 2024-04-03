@@ -7,6 +7,7 @@ ms.date: 02/28/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
+ms.custom: evergreen
 ---
 
 # Update 23.5 for Microsoft Dynamics 365 Business Central online 2023 release wave 2
