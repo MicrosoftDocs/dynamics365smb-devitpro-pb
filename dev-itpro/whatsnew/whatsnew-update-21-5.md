@@ -2,7 +2,6 @@
 title: "Update 21.5 for Microsoft Dynamics 365 Business Central 2022 Release Wave 2"
 description: Get an overview of new and changed capabilities in the 21.5 update of Business Central online, which is part of 2022 release wave 2.
 ms.author: jswymer
-ms.custom: na
 ms.date: 03/06/2023
 ms.reviewer: jswymer
 ms.topic: conceptual

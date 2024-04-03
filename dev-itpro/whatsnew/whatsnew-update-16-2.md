@@ -1,7 +1,6 @@
 ---
 title: "Update 16.2 for Microsoft Dynamics 365 Business Central 2020 Release Wave 1"
 ms.author: solsen
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
