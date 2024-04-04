@@ -8,9 +8,6 @@ ms.author: kepontop
 ms.date: 02/23/2024
 ---
 
-<!-- In line 86, is CUD correct or should it be CRUD? -->
-
-
 # Integration overview for Business Central
 
 This article is intended to help architects and developers make sound design decisions when they implement integration scenarios to and from [!INCLUDE[prod_short](../includes/prod_short.md)].
