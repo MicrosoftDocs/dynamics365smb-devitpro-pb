@@ -19,7 +19,7 @@ ms.date: 02/10/2024
 -->
 
 
-# Integrating Business Central with Office apps [!INCLUDE[m365](includes/m365-name.md)]
+# Integrating with Office apps and Microsoft 365
 
 [!INCLUDE[prod_short](../includes/prod_short.md)] supports multiple integrations to [!INCLUDE[m365](includes/m365-name.md)]. Enabling integrations to [!INCLUDE[m365](includes/m365-name.md)] augments the functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] with extra features. It also augments [!INCLUDE[m365](includes/m365-name.md)] apps with new features so that users can stay in the flow of work and get access to the right data at the right time from the app they prefer working with. Along with built-in integration, [!INCLUDE [prod_short](../includes/prod_short.md)] offers more ways for you to integrate with [!INCLUDE[m365](includes/m365-name.md)] apps using API apps.
 
@@ -64,7 +64,7 @@ As an AL developer, you can use the module to do the following tasks:
 For more information, see [Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph).  
 
 
-## Integrating to [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)]
+## Integrating to OneDrive
 
 [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)] is a cloud storage service that is included in Microsoft 365. [!INCLUDE[prod_short](../includes/prod_short.md)] makes it easy to store, manage, and share files with other people through OneDrive. 
 
@@ -76,12 +76,12 @@ When [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-n
 
 :::image type="content" source="media/connect-to-onedrive.svg" alt-text="Shows how Business Central integrates to OneDrive" lightbox="media/connect-to-onedrive.svg":::
 
-Developers can also write AL code to integrate with OneDrive and add actions such as Open, Share, or Edit to their own pages whenever files are used. For more information, see [Extending Document Sharing and OneDrive for Business Integration](devenv-extending-document-sharing-onedrive.md).
+Developers can also write AL code to integrate with OneDrive and add actions such as Open, Share, or Edit to their own pages whenever files are used. For more information, see [Extending Document Sharing and OneDriveIntegration](devenv-extending-document-sharing-onedrive.md).
 
 > [!NOTE]
-> With [!INCLUDE[prod_short](../includes/prod_short.md)] online, the connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and OneDrive is automatically configured, and the OneDrive features are readily available to users by default. With [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises, it requires more set. For more information, see [Managing OneDrive Integration with Business Central](/dynamics365/business-central/admin-onedrive-integration).
+> With [!INCLUDE[prod_short](../includes/prod_short.md)] online, the connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and OneDrive is automatically configured, and the OneDrive features are readily available to users by default. With [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises, it requires more set up. For more information, see [Managing OneDrive Integration with Business Central](/dynamics365/business-central/admin-onedrive-integration).
 
-For more information, see [Business Central and OneDrive for Business Integration](/dynamics365/business-central/across-onedrive-overview).
+For more information, see [Business Central and OneDrive Integration](/dynamics365/business-central/across-onedrive-overview).
 
 
 ## Using [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)] with [!INCLUDE [prod_short](../includes/prod_short.md)]
@@ -141,8 +141,8 @@ To make it easy to mass communicate in print or email, power users can use mail 
 [Viewing and Editing in Excel From Business Central](/dynamics365/business-central/across-work-with-excel)  
 [Working with Microsoft Excel Layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  
 [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
-[Business Central and OneDrive for Business Integration](/dynamics365/business-central/across-onedrive-overview)  
-[Extending Document Sharing and OneDrive for Business Integration (for developers)](devenv-extending-document-sharing-onedrive.md)  
+[Business Central and OneDrive Integration](/dynamics365/business-central/across-onedrive-overview)  
+[Extending Document Sharing and OneDrive Integration (for developers)](devenv-extending-document-sharing-onedrive.md)  
 [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook)  
 [Integrating with SharePoint (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint)  
 [Developing for Microsoft Teams Integration](../developer/devenv-develop-for-teams.md)   
