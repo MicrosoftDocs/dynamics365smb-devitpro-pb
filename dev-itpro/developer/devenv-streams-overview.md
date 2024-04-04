@@ -53,11 +53,75 @@ The AL runtime also has a built-in method for copying a stream, see
 > 
 > The CopyStream method stems from the time of the C/AL programming language, which was inspired from the Pascal programming language. In Pascal it is common for procedures to follow the direction of assignments, i.e. variable := value (like dest := source). This is the reason why parameters in CopyStream are ordered the way they are.
 
+
 ## Reading data with the InStream datatype
 
+The InStream datatype provides a generic stream object with methods that that you can use to read from streams. The datatype also provides methods to change the position in the stream as well as a way to get the size of the data source object without the need to read all of the data.
+
+An instance of the InStream datatype must be attached to a datasource to work, else you will get a runtime error stating that *InStream variable not initialized.*.
+
+``` AL
+trigger OnAction()
+var
+    vInStr: InStream;
+begin
+    // this will trigger a runtime error
+    Message(Format(vInStr.Length()));
+end;
+```
+
+The following example illustrates how to read the content from a Blob field in the database using an InStream object.
+
+``` AL
+procedure ReadTextFromMediaResource(MediaResourcesCode: Code[50]) MediaText: Text
+var
+    MediaResources: Record "Media Resources";
+    TextInStream: InStream;
+begin
+    if not MediaResources.Get(MediaResourcesCode) then
+        exit;
+    MediaResources.CalcFields(Blob);
+
+    // After this call, the TextInStream is ready to stream data from the blob field
+    MediaResources.Blob.CreateInStream(TextInStream, TextEncoding::UTF8);
+
+    TextInStream.Read(MediaText);
+end;
+```
+
+
+For more information, see [InStream datatype (reference documentation)](methods-auto/instream/instream-data-type.md)
 
 
 ## Writing data with the OutStream datatype
+
+The OutStream datatype provides a generic stream object with methods that that you can use to write to resources using streams. 
+
+An instance of the OutStream datatype must be attached to a datasource to work, else you will get a runtime error stating that *InStream variable not initialized.*.
+
+The following example illustrates how to read the content from an uploaded file using an InStream object and then copy the stream content into a blob field using an OutStream object.
+
+``` AL
+procedure InsertBLOBFromFileUpload()
+var
+    FromFilter: Text;
+    File: File;
+    FileInStream: InStream;
+    BLOBOutStream: OutStream;
+    MyTable : Record "Some table";
+begin
+    FromFilter := 'All Files (*.*)|*.*';
+    UploadIntoStream(FromFilter, FileInStream);
+
+    MyTable.Init();
+    MyTable.Blob.CreateOutStream(BLOBOutStream);
+    CopyStream(BLOBOutStream, FileInStream);
+
+    MyTable.Insert(true);
+end;
+```
+
+For more information, see [OutStream datatype (reference documentation)](methods-auto/outstream/outstream-data-type.md)
 
 
 ## Why use streams?
@@ -91,5 +155,7 @@ There are many AL datatypes or objects that you can use to consume data from str
 
 ## See also
 
-[System.CopyStream method](methods-auto/system/system-copystream-method.md)   
-[Codeunit "Base64 Convert"](/business-central/application/system-application/codeunit/system.text.base64-convert)  
+[InStream datatype (AL reference documentation)](methods-auto/instream/instream-data-type.md)   
+[OutStream datatype (AL reference documentation)](methods-auto/outstream/outstream-data-type.md)   
+[System.CopyStream method (AL reference documentation)](methods-auto/system/system-copystream-method.md)   
+[Codeunit "Base64 Convert" (System Application reference documentation)](/business-central/application/system-application/codeunit/system.text.base64-convert)  
