@@ -213,6 +213,7 @@ Occurs when the update was started for the environment.
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
 |eventId|**LC0105**|
+|reason|[!INCLUDE[reason](../includes/include-telemetry-dimension-reason.md)]|
 |ignoreUpdateWindow|[!INCLUDE[ignoreUpdateWindow](../includes/include-telemetry-dimension-ignore-update-window.md)]|
 |initiatedFrom|[!INCLUDE[initiatedFrom](../includes/include-telemetry-dimension-initiated-from.md)]|
 |registeredForUpdateOnOrAfterDateUtc|[!INCLUDE[registeredForUpdateOnOrAfterDateUtc](../includes/include-telemetry-dimension-registered-for-update-on-or-after-date.md)]|
