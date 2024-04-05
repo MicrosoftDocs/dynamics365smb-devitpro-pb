@@ -15,12 +15,16 @@ The AL language in [!INCLUDE [prod_short](includes/prod_short.md)] comes with su
 
 ## What is a stream?
 
-A stream is an abstraction of a sequence of bytes, such as a file, an input/output device, an inter-process communication pipe, or a TCP/IP socket. The stream data types in AL provide a generic view of these different types of input and output, and isolate the programmer from the specific details of the operating system and the underlying devices.
+A stream is an abstraction of a sequence of bytes, such as a file, an input/output device, an inter-process communication pipe, or a TCP/IP socket. The stream data types in AL provide a generic view of these different types of input and output, and isolate the developer from the specific details of the operating system and the underlying devices.
 
 Streams involve three fundamental operations:
-- You can read from streams. Reading is the transfer of data from a stream into a data structure, such as a Text or Blob.
-- You can write to streams. Writing is the transfer of data from a data structure such as Text or Blob into a stream.
-- Streams can support seeking. Seeking refers to querying and modifying the current position within a stream. Seek capability depends on the kind of backing store a stream has. For example, network streams have no unified concept of a current position, and therefore typically don't support seeking.
+
+- You can read from streams  
+    Reading is the transfer of data from a stream into a data structure, such as a Text or Blob.
+- You can write to streams  
+    Writing is the transfer of data from a data structure such as Text or Blob into a stream.
+- Streams can support seeking  
+    Seeking refers to querying and modifying the current position within a stream. Seek capability depends on the kind of backing store a stream has. For example, network streams have no unified concept of a current position, and therefore typically don't support seeking.
 
 A stream is an object used for transferring data, so no actual data isn't stored in the stream. When working with streams in AL, you need three things.
 1. a data source such as a file, a Blob, or an HTTP request
