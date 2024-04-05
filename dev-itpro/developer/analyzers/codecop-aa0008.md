@@ -18,6 +18,12 @@ Function calls should have parenthesis even if they do not have any parameters.
 Use parenthesis in a function call even if the function does not have any parameters.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+> [!NOTE]
+> This rule doesn't give a warning when you use a method call without parenthesis, for example, when using a system method as a parameter in another method.
+
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
