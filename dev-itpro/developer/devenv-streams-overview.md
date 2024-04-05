@@ -126,9 +126,9 @@ For more information, see [OutStream datatype (reference documentation)](methods
 
 ## Why use streams?
 
-- memory
-- performance
-- for BC online - there are no local files
+- Memory efficiency: Streams allow you to work with large amounts of data without loading it all into memory at once.
+- Performance efficiency: Streams allow you to work with data as it becomes available, rather than waiting for all of it to arrive.
+- When working with [!INCLUDE [prod_short](includes/prod_short.md)] online - you can't use the file system directly. Streams provide a way to work with data without having to store it in a file.
 
 
 ## Examples of stream support
