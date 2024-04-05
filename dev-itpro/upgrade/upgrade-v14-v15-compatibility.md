@@ -29,7 +29,7 @@ The following table lists the Business Central 23 versions and the minimum versi
 |Version 23|Version 24|
 ----------|----------|
 |23.0 to 23.5|[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000) |
-|[23.6](https://support.microsoft.com/help/5037541) sup>[\[1\]](#1)</sup> |24.1|
+|[23.6](https://support.microsoft.com/help/5037541)<sup>[\[1\]](#1)</sup> |24.1|
 
 ## Version 22 compatibility
 
