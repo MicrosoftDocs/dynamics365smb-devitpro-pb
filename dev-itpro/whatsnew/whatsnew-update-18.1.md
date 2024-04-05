@@ -2,7 +2,7 @@
 title: "Update 18.1 for Microsoft Dynamics 365 Business Central 2021 Release Wave 1"
 description: Get an overview of new and changed capabilities in the 18.1 update of Business Central online, which is part of 2021 release wave 1.
 ms.author: solsen
-ms.date: 06/04/2021
+ms.date: 04/01/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

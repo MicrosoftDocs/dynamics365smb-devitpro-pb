@@ -1,7 +1,7 @@
 ---
 title: "Update 15.3 for Microsoft Dynamics 365 Business Central 2019 Release Wave 2"
 ms.author: solsen
-ms.date: 04/01/2021
+ms.date: 04/01/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
