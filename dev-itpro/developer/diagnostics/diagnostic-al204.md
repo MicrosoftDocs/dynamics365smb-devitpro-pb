@@ -3,8 +3,8 @@ title: "Compiler Error AL0204"
 description: "Field type {0} is not convertible to field type {1}."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Field type {0} is not convertible to field type {1}.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

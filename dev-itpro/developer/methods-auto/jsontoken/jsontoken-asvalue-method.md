@@ -3,8 +3,8 @@ title: "JsonToken.AsValue() Method"
 description: "Converts the value in a JsonToken to a JsonValue data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +21,6 @@ Converts the value in a JsonToken to a JsonValue data type.
 ```AL
 Value :=   JsonToken.AsValue()
 ```
-
 ## Parameters
 *JsonToken*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  

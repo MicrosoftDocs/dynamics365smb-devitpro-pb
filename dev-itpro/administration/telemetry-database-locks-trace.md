@@ -70,6 +70,8 @@ Occurs when a database lock has timed out for a session.
 ### Sample KQL code
 
 This KQL code can help you get started troubleshooting lock timeouts.
+> [!NOTE]
+> Reminder, as stated in [previous section](#analyzing-database-lock-timeout-trace-telemetry) that if these events can't be found on on-premise installations it is because the `EnableLockTimeoutMonitoring` setting is inactivated.
 
 ```kql
 traces 

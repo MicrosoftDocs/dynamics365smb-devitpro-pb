@@ -7,7 +7,7 @@ ms.service: dynamics-365-op
 ms.topic: how-to
 author: jswymer
 ms.author: jswymer
-ms.custom: bac-template
+ms.custom: bab-template
 ---
 # Configure Business Central Database Authentication
 

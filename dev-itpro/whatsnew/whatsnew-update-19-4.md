@@ -1,11 +1,11 @@
 ---
 title: "Update 19.4 for Microsoft Dynamics 365 Business Central 2021 Release Wave 2"
 description: Get an overview of new and changed capabilities in the 19.4 update of Business Central online, which is part of 2021 release wave 2.
-ms.custom: na
-ms.date: 02/16/2022
+ms.date: 04/01/2024
 ms.reviewer: solsen
 ms.topic: conceptual
-author: EmmaNielsson
+author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ---
 
 # Update 19.4 for Microsoft Dynamics 365 Business Central online 2021 release wave 2

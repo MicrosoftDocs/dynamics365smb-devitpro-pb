@@ -1,8 +1,8 @@
 ---
-title: "Formatting values, dates, and time"
+title: Formatting values, dates, and time
 description: Explains the Format functionality in Business Central.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 03/14/2024
 ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
@@ -33,12 +33,9 @@ To choose a predefined format, use the syntax: <Standard Format,*X*>, where *X* 
 
 You can use `Format` to create your own formats. To create a format, use the following rules:  
   
-- A format property consists of zero or more Chars, Fields, or Attributes.  
-  
-- Fields and Attributes are expressed by using an identifier enclosed in brackets (<>).  
-  
+- A format property consists of zero or more chars, fields, or attributes.  
+- Fields and attributes are expressed by using an identifier enclosed in brackets (<>).  
 - Attributes must contain a comma (,) and a parameter after the identifier.  
-  
 - Fields can optionally take a comma (,) and a FieldLen.  
   
 The following table shows the syntax.  
@@ -256,5 +253,5 @@ For Text and Code, all formats should resemble the following: \<Text>.
   
 ## See Also
 
-[DecimalPlaces Property](properties/devenv-decimalplaces-property.md)  
-[About Dates in Business Central](devenv-about-dates.md)
+[DecimalPlaces property](properties/devenv-decimalplaces-property.md)  
+[About dates in Business Central](devenv-about-dates.md)
