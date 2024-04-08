@@ -20,16 +20,16 @@ Input: "Tell me about the solar system."
 Tokens: 41551 757 922 279 13238 1887 13  
 Number of tokens: 7  
 
-The spacing between the numbers has been added purely for readability.
+(The spacing between the numbers in the above example has been added purely for readability.)
 
-By evaluating the number of tokens it takes for your request, you can determine the following:
+Evaluating the number of tokens in your input is important because it helps you understand the cost of your request and the limitations of the model. By evaluating the number of tokens it takes for your request, you can determine the following:
 
-- Estimating your potential cost of your copilot <Link to AOAI pricing page> 
-- Models have limited context sizes and when you have more data than what fits the context size, you’d want to use this to help split up your generation into multiple generations. 
+- Estimating your potential cost of your copilot <Link to AOAI pricing page>. 
+- Models have limited context sizes and when you have more data than what fits the context size, you’d want to use this to help split up your generation into multiple generations.
 
-## Token counting codeunit
+## Token counting - AOAIToken codeunit
 
-In the Business Central System Application, there is a codeunit that can help you count the number of tokens in your input. The codeunit is located in the following path: BCApps/src/System Application/App/AI/src/Azure OpenAI/AOAIToken.Codeunit.al at main · microsoft/BCApps (github.com) 
+In the [!INCLUDE [prod_short](includes/prod_short.md)] system application, there's a codeunit that can help you count the number of tokens in your input. The codeunit is located in GitHub BCApps repo in the following path: <!-- to be inserted -->.
 
 The AOAIToken codeunit has the following methods:
 
