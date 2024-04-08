@@ -142,8 +142,6 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensi
 
 For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
 
-
-
 ## See also
 
 [Web services overview](../webservices/web-services.md)  
@@ -156,3 +154,5 @@ For more information, see [Integrating AI using Developer Tools for Copilot](../
 [Integrating to external services from AL using the HttpClient data type](../developer/devenv-httpclient.md)  
 [Integrating Business Central with Azure services](./integration-azure-overview.md)   
 [Integrating AI using developer tools for Copilot](../developer/ai-integration-landing-page.yml)  
+[Envestnet Yodlee Bank Feeds extension](/dynamics365/business-central/ui-extensions-yodlee-bank-feeds)  
+[AMC Banking 365 Fundamentals extension](/dynamics365/business-central/ui-extensions-amc-banking)  
