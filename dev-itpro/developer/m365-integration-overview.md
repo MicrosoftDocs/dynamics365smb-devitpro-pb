@@ -5,19 +5,8 @@ author: kennienp
 ms.reviewer: solsen
 ms.topic: overview
 ms.author: kepontop
-ms.date: 02/10/2024
+ms.date: 04/08/2024
 ---
-
-<!-- Unsure about the title. Online it says "Integrating Business Central with Office apps Microsoft 365". Why is Microsoft 365 stuck on the end like that? -->
-<!-- In line 82, it says "With Business Central on-premises, it requires more set." Should "set" be "settings"? -->
-<!-- The article has a section on "Integrating to OneDrive for Business". But according to the style guide, the name should be only OneDrive. https://styleguides.azurewebsites.net/Styleguide/Read?id=2869&topicid=47867  -->
-<!-- There are capitalization issues with some of the images in this article:
-- m365-integrations-detail.svg - Onedrive for Business should just be OneDrive (shouldn't have "for Business")
-- connect-to-excel.svg - Excel should be capitalized; Odata should be OData
-- connect-to-m365-services.svg - should be "Azure Functions" and "Azure Key Vault" (this image is used in two places)
-- connect-to-onedrive.svg - should just be OneDrive, not Onedrive for Business; fix capitalization of Excel and OneDrive
--->
-
 
 # Integrating with Office apps and Microsoft 365
 
