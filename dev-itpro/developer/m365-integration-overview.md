@@ -79,7 +79,7 @@ When [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-n
 Developers can also write AL code to integrate with OneDrive and add actions such as Open, Share, or Edit to their own pages whenever files are used. For more information, see [Extending Document Sharing and OneDriveIntegration](devenv-extending-document-sharing-onedrive.md).
 
 > [!NOTE]
-> With [!INCLUDE[prod_short](../includes/prod_short.md)] online, the connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and OneDrive is automatically configured, and the OneDrive features are readily available to users by default. With [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises, it requires more set up. For more information, see [Managing OneDrive Integration with Business Central](/dynamics365/business-central/admin-onedrive-integration).
+> With [!INCLUDE[prod_short](../includes/prod_short.md)] online, the connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and OneDrive is automatically configured, and the OneDrive features are readily available to users by default. With [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises, it requires more setup. For more information, see [Managing OneDrive Integration with Business Central](/dynamics365/business-central/admin-onedrive-integration).
 
 For more information, see [Business Central and OneDrive Integration](/dynamics365/business-central/across-onedrive-overview).
 
