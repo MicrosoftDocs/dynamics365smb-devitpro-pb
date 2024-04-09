@@ -86,7 +86,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Copilot in Business Central blog: [aka.ms/bc-ai​](https://aka.ms/bc-ai)
 - Copilot in Business Central Q&A : [About Copilot](/dynamics365/business-central/copilot-overview)
 - Dynamics Communities interview with Mike Morton: [dynamicscommunities.com](https://dynamicscommunities.com/ug/copilot-ug/microsofts-mike-morton-explains-new-copilot-capabilities-inside-business-central/)
-- Copilot for Dynamics 365: [learn.microsoft.com/copilot-for-dynamics365](/microsoft-cloud/dev/copilot/copilot-for-dynamics365)
+- Learn about Copilot for Dynamics 365: [Copilot for Dynamics 365](/microsoft-cloud/dev/copilot/copilot-for-dynamics365)
 
 ### Copilot in Business Central for developers
 
