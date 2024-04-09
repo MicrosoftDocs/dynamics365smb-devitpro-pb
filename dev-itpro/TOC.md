@@ -749,8 +749,18 @@
 ###### [SIFT tuning and tracing](developer/devenv-sift-tuning-and-tracing.md)
 ###### [SIFT performance](developer/devenv-sift-performance.md)
 
+#### Streaming data
+##### [Using streams in Business Central](developer/devenv-streams-overview.md)
+##### [Semantics of Line Endings and Zero Terminators for streams](devenv-write-read-methods-line-break-behavior.md)  
+##### AL language reference (streams)
+###### [InStream datatype (AL reference documentation)](developer/methods-auto/instream/instream-data-type.md)   
+###### [OutStream datatype (AL reference documentation)](developer/methods-auto/outstream/outstream-data-type.md)   
+###### [System.CopyStream method (AL reference documentation)](developer/methods-auto/system/system-copystream-method.md)   
+##### Base app reference (streams)
+###### [Codeunit "Base64 Convert"](/business-central/application/system-application/codeunit/system.text.base64-convert)  
+###### [Temp Blob codeunit](/business-central/application/system-application/codeunit/system.utilities.temp-blob)
 
-#### [Transferring data](developer/devenv-data-transfer.md)
+#### [Transferring data (during upgrade)](developer/devenv-data-transfer.md)
 
 #### Importing and exporting data
 ##### [XMLport overview](developer/devenv-xmlport-overview.md)
