@@ -70,7 +70,7 @@ begin
 end;
 ```
 
-The following example illustrates how to read the content from a Blob field in the database using an InStream object.
+The following example illustrates how to read the content from a media field in the database using an InStream object.
 
 ``` AL
 procedure ReadTextFromMediaResource(MediaResourcesCode: Code[50]) MediaText: Text
@@ -88,6 +88,7 @@ begin
     TextInStream.Read(MediaText);
 end;
 ```
+
 
 
 For more information, see [InStream datatype (reference documentation)](methods-auto/instream/instream-data-type.md)
@@ -126,9 +127,7 @@ For more information, see [OutStream datatype (reference documentation)](methods
 
 ## Why use streams?
 
-- memory
-- performance
-- for BC online - there are no local files
+For [!INCLUDE [prod_short](includes/prod_short.md)] online, there is no way to read from and write to files on local storage, so using streams as a mechanism to read such data is your only option. But streams also come with other benefits as they are optimized for mimimizing the memory footprint of your code when dealing with large data. If you can stream data instead of storing it in a variable, then the [!INCLUDE [prod_short](includes/prod_short.md)] server has less large objects to handle when the operating system does garbage collection, and this in turn will improve the general performance of the system.  
 
 
 ## Examples of stream support
@@ -145,12 +144,18 @@ There are many AL datatypes or objects that you can use to consume data from str
 | Media / Mediaset | [Media.ImportStream](methods-auto/media/media-importstream-instream-text-text-method.md) <br><br>[MediaSet.ImportStream](methods-auto/mediaset/mediaset-importstream-method.md)  | [Media.ExportStream](methods-auto/media/media-exportstream-method.md) |
 | Excel (in-memory buffer) | [OpenBookStream](/business-central/application/base-application/table/system.io.excel-buffer#openbookstream) | [SaveToStream](/business-central/application/base-application/table/system.io.excel-buffer#savetostream) | 
 | CSV (in-memory buffer) | [LoadDataFromStream](/business-central/application/base-application/table/system.io.csv-buffer#loaddatafromstream) | | 
-
+| Blob field in the database| [Temp Blob codeunit](/business-central/application/system-application/codeunit/system.utilities.temp-blob) | [Temp Blob codeunit](/business-central/application/system-application/codeunit/system.utilities.temp-blob) |
 
 > [!TIP]
 >
 > When streaming binary data, you might need to do a Base64 encoding to make it available as a text stream. The System Application has a module for this, see [Codeunit "Base64 Convert"](/business-central/application/system-application/codeunit/system.text.base64-convert).
 
+
+## Streaming text data
+
+When streaming text data, you need to be aware of encodings, which typically is controlled by the [TextEncoding Option Type](methods-auto/textencoding/textencoding-option.md). For more information, [Text encoding](./devenv-file-handling-and-text-encoding.md#text-encoding)
+
+Also, you might also want to learn more about the semantics of line endings and zero byte terminators. For more information, see [Write, WriteText, Read, and ReadText Method Behavior for Line Endings and Zero Terminators](devenv-write-read-methods-line-break-behavior.md)
 
 
 ## See also
@@ -158,4 +163,14 @@ There are many AL datatypes or objects that you can use to consume data from str
 [InStream datatype (AL reference documentation)](methods-auto/instream/instream-data-type.md)   
 [OutStream datatype (AL reference documentation)](methods-auto/outstream/outstream-data-type.md)   
 [System.CopyStream method (AL reference documentation)](methods-auto/system/system-copystream-method.md)   
+
+Streaming binary data
+
 [Codeunit "Base64 Convert" (System Application reference documentation)](/business-central/application/system-application/codeunit/system.text.base64-convert)  
+
+
+Streaming text data
+
+[TextEncoding Option Type](methods-auto/textencoding/textencoding-option.md) 
+[Text encoding](devenv-file-handling-and-text-encoding#text-encoding.md)  
+[Write, WriteText, Read, and ReadText Method Behavior for Line Endings and Zero Terminators](devenv-write-read-methods-line-break-behavior.md)  
