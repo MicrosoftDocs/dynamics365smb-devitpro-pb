@@ -67,6 +67,8 @@ landingContent:
         url: devenv-page-prompting-floating-actionbar.md
       - text: PromptMode property
         url: properties/devenv-promptmode-property.md      
+      - text: Token counting in AI
+        url: ai-system-app-token-counting.md      
       - text: AI module (System.AI)
         url: /dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-completion-params
 # Card
