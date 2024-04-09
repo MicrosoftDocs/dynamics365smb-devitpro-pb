@@ -18,6 +18,8 @@ This article introduces sample apps that provide an easy way to start building y
 
 The apps are made available to you in GitHub repositories and are meant as inspiration only. You can fork the GitHub repositories so that the apps can be customized for your scenarios.
 
+You can find the latest GitHub samples using the [BCSamples](https://github.com/topics/bcsamples) topic.
+
 ## Warehouse helper app 
 
 The warehouse helper app is a sample app that shows a simplified warehouse scenario where users can scan items and update the inventory for that item.  
@@ -37,6 +39,16 @@ The take order app is a frontline app meant for servers working at a restaurant.
 This app is built as an example of a high-fidelity app with a full set of functionalities.
 
 [Find the app here](https://github.com/microsoft/businesscentralsamples-takeorder).
+
+## Coffee MR app 
+
+ This scenario leverages the mixed reality (MR) capabilities of Power Apps, integrated with Business Central's comprehensive data and business logic.
+
+[![Shows a screenshot of the Coffee MR Power Apps](../developer/media/CoffeeMR-pwr-app-50.png)](../developer/media/CoffeeMR-pwr-app.png#lightbox)  
+
+This app is built using the visual style of the the Take Order app and focuses on showcases the technical aspects of using MR with Power Apps and Business Central
+
+[Find the app here](https://github.com/microsoft/bcsamples-CoffeeMR).
 
 ## Next steps
 
