@@ -54,17 +54,73 @@ The “AOAI Chat Messages” codeunit has the following methods:
 
 ```al
 
+procedure WeatherCopilot()
+    var
+        AzureOpenAI: Codeunit "Azure OpenAI";
+        AOAIDeployments: Codeunit "AOAI Deployments";
+        AOAIChatMessages: Codeunit "AOAI Chat Messages";
+        AOAIChatCompletionParams: Codeunit "AOAI Chat Completion Params";
+        AOAIOperationResponse: Codeunit "AOAI Operation Response";
+        ResponseJsonObject: JsonObject;
+        ApiKey: Text;
+    begin
+    	// Set authorization, capability etc
+        // ...
+        // Set temperature to 0 for fixed json output
+        AOAIChatCompletionParams.SetTemperature(0);
+        // Add tool
+        AOAIChatMessages.AddTool(GetWeatherCopilotFunction());
+        // Set tool choice to added tool
+        AOAIChatMessages.SetToolChoice('{"type": "function","function": {"name": "get_current_weather"}}');
+        // Mock user input
+        AOAIChatMessages.AddUserMessage('What is the weather like in San Francisco?');
+
+		// Call generate
+        AzureOpenAI.GenerateChatCompletion(AOAIChatMessages, AOAIChatCompletionParams, AOAIOperationResponse);
+        // Upon success, process output
+        if AOAIOperationResponse.IsSuccess() then begin
+            ResponseJsonObject.ReadFrom(AOAIOperationResponse.GetResult());
+            ProcessWeatherCopilotResponse(ResponseJsonObject);
+        end
+    end;
+```
+
+```al
+procedure ProcessWeatherCopilotResponse(Response: JsonObject)
+    var
+        Array: JsonArray;
+        Token: JsonToken;
+        Object: JsonObject;
+        Location: Text;
+        Unit: Option Celcius,Fahrenheit;
+    begin
+        Response.Get('tool_calls', Token);
+        Array := Token.AsArray();
+        if not Array.Get(0, Token) then exit;
+        Object := Token.AsObject();
+        if not Object.Get('type', Token) then exit;
+        if Token.AsValue().AsText() = 'function' then begin
+            Object.Get('function', Token);
+            Object := Token.AsObject();
+            Object.Get('name', Token);
+            if Token.AsValue().AsText() = 'get_current_weather' then begin
+                Object.Get('arguments', Token);
+                Object := Token.AsObject();
+                Object.Get('location', Token);
+                Location := Token.AsValue().AsText();
+
+                Unit := Unit::Celcius;
+                if Object.Get('unit', Token) then
+                    if Token.AsValue().AsText() = 'fahrenheit' then
+                        Unit := Unit::Fahrenheit;
+
+                Message(GetWeather(Location, Unit));
+            end;
+        end;
+    end;
+
 ```
  
+## Things to consider
 
-Things to note 
-
-SetToolChoice 
-
-Auto 
-
-This is the default if not set. The response can be either a function or a regular chat message response. 
-
-Specific function 
-
-This guarantees the response will always call the function. Even if the intent and context do not match the function, as such, the arguments should be validated by the developer. 
+When using the Function Calling tool, you can set the tool choice to either `Auto` or `Specific` function in the `SetToolChoice` method. `Auto` is the default if not set. The response can be either a function or a regular chat message response. Setting it to `Specific` function will guarantee the response will always call the function. Even if the intent and context do not match the function, as such, the arguments should be validated by the developer.
