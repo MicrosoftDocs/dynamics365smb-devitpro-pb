@@ -90,7 +90,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 ### Copilot in Business Central for developers
 
 - Business Central Under the Hood episode 1 - Developing AI in Business Central: [Business Central under the hood series (youtube.com)​](https://www.youtube.com/watch?v=jdevJbGgB-k&t=792s) 
-- How-to guide for developing AI/Copilot solutions for Business Central: [Developing generative AI experiences​](../developer/ai-build-experience-overview.md​)
+- How-to guide for developing AI/Copilot solutions for Business Central: [Developing generative AI experiences​](../ai-build-experience-overview.md​)
 - Developer resources for Copilot in Business Central: [aka.ms/BCStartCodingWithAILearn](https://aka.ms/BCStartCodingWithAILearn)
 
 ## Reporting and business intelligence  
