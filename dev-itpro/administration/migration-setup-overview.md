@@ -49,4 +49,4 @@ After completing one or more replication runs, you run data upgrade, then comple
 ## Next steps
 
 1. [Define migration table mappings](migration-table-mapping.md) (Business Central on-premises migration only)
-2. [Run data migration setup](migration-setup.md)
+2. [Run data migration setup for Business Central on-premises migration](migration-setup.md) or [Run data migration setup for Dynamics GP](migration-setup-gp.md)
