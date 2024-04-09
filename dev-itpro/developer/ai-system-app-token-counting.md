@@ -1,10 +1,6 @@
 ---
 title: Token counting in AI
-<<<<<<< Updated upstream
-description: Learn whether your AI idea or feature is a match for Copilot in Business Central
-=======
 description: Learn how to count the number of tokens in your input before sending a request to Azure OpenAI
->>>>>>> Stashed changes
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: 

@@ -1,5 +1,5 @@
 ---
-title: Function Calling in AI
+title: Function calling in AI
 description: Learn how to call functions in Azure OpenAI
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -13,11 +13,11 @@ ms.custom: bap-template
 ---
 
 
-# Function Calling in AI
+# Function calling in AI
 
 The model has access to a variety of tools that enable it to perform additional features. Currently, these tools include Code Interpreter, Knowledge Retrieval, and Function Calling. 
 
-The Function Calling tool allows you to describe functions to the Assistant and have it return the function that needs to be called along with its respective arguments. The function to be called and arguments depend on the user input. The Function Calling tool is used to extract key information from natural language and use it as arguments for your functions. 
+The **Function Calling** tool allows you to describe functions to the Assistant and have it return the function that needs to be called along with its respective arguments. The function to be called and arguments depend on the user input. The Function Calling tool is used to extract key information from natural language and use it as arguments for your functions. 
 
 There are many scenarios that ou can use function calling for:
 
@@ -52,132 +52,9 @@ The “AOAI Chat Messages” codeunit has the following methods:
 
 ## Code snippet
 
-procedure WeatherCopilot() 
+```al
 
-    var 
-
-        AzureOpenAI: Codeunit "Azure OpenAI"; 
-
-        AOAIChatCompletionParams: Codeunit "AOAI Chat Completion Params"; 
-
-        AOAIChatMessages: Codeunit "AOAI Chat Messages"; 
-
-        AOAIOperationResponse: Codeunit "AOAI Operation Response"; 
-
-        ResponseJsonObject: JsonObject; 
-
-    begin 
-
-        // Set authorization, capability etc 
-
-        // ... 
-
- 
-
-        // Set temperature to 0 for fixed json output 
-
-        AOAIChatCompletionParams.SetTemperature(0); 
-
-        // Add tool 
-
-        AOAIChatMessages.AddTool(GetWeatherCopilotFunction()); 
-
-        // Set tool choice to added tool 
-
-        AOAIChatMessages.SetToolChoice('{"type": "function","function": {"name": "get_current_weather"}}'); 
-
-        // Mock user input 
-
-        AOAIChatMessages.AddUserMessage('What is the weather like in San Francisco?'); 
-
-        // Call generate 
-
-        AzureOpenAI.GenerateChatCompletion(AOAIChatMessages, AOAIChatCompletionParams, AOAIOperationResponse); 
-
-        // Upon success, process output 
-
-        if AOAIOperationResponse.IsSuccess() then begin 
-
-            ResponseJsonObject.ReadFrom(AOAIOperationResponse.GetResult()); 
-
-            ProcessWeatherCopilotResponse(ResponseJsonObject); 
-
-        end 
-
-    end; 
-
- 
-
-procedure ProcessWeatherCopilotResponse(Response: JsonObject) 
-
-    var 
-
-        Token: JsonToken; 
-
-        Array: JsonArray; 
-
-        Object: JsonObject; 
-
-        Location: Text; 
-
-        Unit: Enum "Unit"; 
-
-    begin 
-
-        if not Response.Get('tool_calls', Token) then exit; 
-
-        Array := Token.AsArray(); 
-
-        if not Array.Get(0, Token) then exit; 
-
-        Object := Token.AsObject(); 
-
-        if not Object.Get('type', Token) then exit; 
-
-        if Token.AsValue().AsText() = 'function' then begin 
-
-            Object.Get('function', Token); 
-
-            Object := Token.AsObject(); 
-
-            Object.Get('name', Token); 
-
-            if Token.AsValue().AsText() = 'get_current_weather' then begin 
-
-                Object.Get('arguments', Token); 
-
-                Object := Token.AsObject(); 
-
-                Object.Get('location', Token); 
-
-                Location := Token.AsValue().AsText(); 
-
-                Unit := Unit::Celsius; 
-
-                if Object.Get('unit', Token) then 
-
-                    if Token.AsValue().AsText() = 'fahrenheit' then 
-
-                        Unit := Unit::Fahrenheit; 
-
-                Message(GetWeather(Location, Unit)); 
-
-            end; 
-
-        end; 
-
-    end; 
-
- 
-
-    procedure GetWeather(Location: Text; Unit: Enum "Unit"): Text 
-
-    begin 
-
-        // Call weather API 
-
-    end; 
-
+```
  
 
 Things to note 
