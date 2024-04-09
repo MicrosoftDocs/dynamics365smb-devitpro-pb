@@ -2,15 +2,20 @@
 title: externaleventsubscriptions resource type
 description: An externaleventsubscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
+ms.service: "dynamics365-business-central"
 ms.topic: reference
-ms.devlang: al
-ms.date: 02/06/2023
+ms.devlang: na
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
 # externaleventsubscriptions resource type
 
-Represents an external event subscription in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+<!-- START>DO_NOT_EDIT -->
+<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+Represents an externaleventsubscriptions in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
@@ -25,11 +30,13 @@ Represents an external event subscription in [!INCLUDE[prod_short](../../../incl
 |[PATCH externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_update.md)|externaleventsubscriptions|Updates a externaleventsubscriptions object.|
 
 
+
 ## Properties
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the externaleventsubscriptions. Non-editable.|
+|companyId|GUID||
 |timestamp|int64||
 |appId|GUID|The ID of the App.|
 |eventName|string||
@@ -39,6 +46,8 @@ Represents an external event subscription in [!INCLUDE[prod_short](../../../incl
 |lastModifiedDateTime|datetime|The last datetime the externaleventsubscriptions was modified. Read-Only.|
 |clientState|string|Client state will be delivered with every notification. This can be used as a secret to verify message or for managing state if needed.|
 |subscriptionType|string||
+|eventVersion|string||
+|subscriptionState|string||
 |systemCreatedAt|datetime|The datetime the company was created.|
 |systemCreatedBy|GUID|The ID of the user who created the company.|
 |systemModifiedAt|datetime|The last datetime the externaleventsubscriptions was modified.|
@@ -52,6 +61,7 @@ Here is a JSON representation of the externaleventsubscriptions resource.
 ```json
 {
     "id": "GUID",
+    "companyId": "GUID",
     "timestamp": "int64",
     "appId": "GUID",
     "eventName": "string",
@@ -61,16 +71,18 @@ Here is a JSON representation of the externaleventsubscriptions resource.
     "lastModifiedDateTime": "datetime",
     "clientState": "string",
     "subscriptionType": "string",
+    "eventVersion": "string",
+    "subscriptionState": "string",
     "systemCreatedAt": "datetime",
     "systemCreatedBy": "GUID",
     "systemModifiedAt": "datetime",
     "systemModifiedBy": "GUID"
 }
 ```
+<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-
-[GET external event subscriptions](../api/dynamics_externaleventsubscriptions_get.md)  
-[DELETE external event subscriptions](../api/dynamics_externaleventsubscriptions_delete.md)  
-[POST external event subscriptions](../api/dynamics_externaleventsubscriptions_create.md)  
-[PATCH external event subscriptions](../api/dynamics_externaleventsubscriptions_update.md)  
+[GET externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_get.md)
+[DELETE externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_delete.md)
+[POST externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_create.md)
+[PATCH externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_update.md)

@@ -4,7 +4,7 @@ description: A location object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/27/2021
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -29,11 +29,6 @@ Represents a location in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |[PATCH location](../api/dynamics_location_update.md)|location|Updates a location object.|
 
 
-## Navigation
-
-| Navigation |Return Type| Description |
-|:----------|:----------|:-----------------|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the location.|
 
 ## Properties
 
@@ -52,6 +47,7 @@ Represents a location in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |phoneNumber|string|Specifies the location's telephone number.|
 |email|string|Specifies the location's email address.|
 |website|string|Specifies the location's home page address.|
+|lastModifiedDateTime|datetime|The last datetime the location was modified. Read-Only.|
 
 ## JSON representation
 
@@ -72,7 +68,8 @@ Here is a JSON representation of the location resource.
     "postalCode": "string",
     "phoneNumber": "string",
     "email": "string",
-    "website": "string"
+    "website": "string",
+    "lastModifiedDateTime": "datetime"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->

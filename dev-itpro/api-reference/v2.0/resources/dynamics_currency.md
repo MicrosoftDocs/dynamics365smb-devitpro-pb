@@ -4,7 +4,7 @@ description: A currency object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -38,7 +38,7 @@ Represents a currency in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |code|string|The code of the currency.|
 |displayName|string|Specifies the currency's name. This name will appear on all sales documents for the currency.|
 |symbol|string|Specifies a graphical representation of the unit of measure.|
-|amountDecimalPlaces|string|Specifies the number of decimal places the system will display on amounts for this currency.|
+|amountDecimalPlaces|string|Specifies the number of decimal places the system will display on amounts for this currency.||
 |amountRoundingPrecision|decimal|Specifies the size of the interval to be used when rounding amounts for this currency.|
 |lastModifiedDateTime|datetime|The last datetime the currency was modified. Read-Only.|
 

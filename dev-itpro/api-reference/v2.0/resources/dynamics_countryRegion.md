@@ -4,7 +4,7 @@ description: A country/region object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -37,7 +37,7 @@ Represents a country/region in [!INCLUDE[prod_short](../../../includes/prod_shor
 |id|GUID|The unique ID of the country/region. Non-editable.|
 |code|string|The code of the country/region.|
 |displayName|string|Specifies the country/region's name. This name will appear on all sales documents for the country/region.|
-|addressFormat|NAV.countryRegionAddressFormat|Specifies the format of the address that is displayed on external-facing documents. You link an address format to a country/region code so that external-facing documents based on cards or documents with that country/region code use the specified address format.|
+|addressFormat|NAV.countryRegionAddressFormat||
 |lastModifiedDateTime|datetime|The last datetime the country/region was modified. Read-Only.|
 
 ## JSON representation
