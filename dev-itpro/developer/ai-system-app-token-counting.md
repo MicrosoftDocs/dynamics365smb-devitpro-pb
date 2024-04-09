@@ -41,3 +41,6 @@ The AOAIToken codeunit has the following methods:
 These methods are version agnostic. For example, GetGPT4TokenCount works for GPT4 0613, GPT4 0125, and all versions. 
 
 ## See also
+
+[Get set up with Azure OpenAI Service](ai-dev-tools-get-started.md)  
+[Function calling in AI](ai-system-app-function-calling.md)  

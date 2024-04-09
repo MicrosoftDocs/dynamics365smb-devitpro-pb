@@ -124,3 +124,8 @@ procedure ProcessWeatherCopilotResponse(Response: JsonObject)
 ## Things to consider
 
 When using the Function Calling tool, you can set the tool choice to either `Auto` or `Specific` function in the `SetToolChoice` method. `Auto` is the default if not set. The response can be either a function or a regular chat message response. Setting it to `Specific` function will guarantee the response will always call the function. Even if the intent and context do not match the function, as such, the arguments should be validated by the developer.
+
+## See also
+
+[Get set up with Azure OpenAI Service](ai-dev-tools-get-started.md)  
+[Token counting in AI](ai-system-app-token-counting.md)  
