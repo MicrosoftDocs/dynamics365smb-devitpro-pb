@@ -52,6 +52,10 @@ The following video illustrates that `Customer.dal` is an external file. A break
 
 For more information about **Go to Definition**, see [AL Code Navigation](devenv-al-code-navigation.md). 
 
+### Conditional breakpoints
+
+You can also set a condition on a breakpoint and if the condition evaluates as true, then code execution breaks at the breakpoint. For more information, see [Setting conditional breakpoints](devenv-debugging-conditional-breakpoints.md).
+
 ## Break on errors
 
 Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to `breakOnError`, it stops execution on both errors that are handled in code and unhandled errors.
@@ -141,7 +145,7 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 
 ## <a name="DebugWS"></a>Debugging web services
 
-It's possible to debug code executed from web service endpoints, both pages and codeunits exposed as OData/SOAP, and API pages/queries. To do so, simply set the `breakOnNext` setting to `WebServiceClient` and trigger the web service endpoint from Postman or your web service client code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
+It's possible to debug code executed from web service endpoints, both pages and codeunits exposed as OData/SOAP, and API pages/queries. To do so, simply set the `breakOnNext` setting to `WebServiceClient` and trigger the web service endpoint from an API explorer tool or your web service client code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
 
 ## NonDebuggable attribute
 

@@ -3,8 +3,8 @@ title: "DrillDownPageId Property"
 description: "Sets the ID of the page to use as a drill-down."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

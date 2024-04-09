@@ -3,8 +3,8 @@ title: "Query.SaveAsCsv(Integer, Text [, Integer] [, Text]) Method"
 description: "Saves the resulting data set of a query as a comma-separated values (CSV) file."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -206,7 +206,7 @@ Create a new .al file, such as MyWorkflowResponses.codeunit.al, with code to ide
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Workflow Response Handling", 'OnAddWorkflowResponsesToLibrary', '', true, true)]
     local procedure AddMyWorkflowResponsesToLibrary()
     var
-        WorkflowEventHandling: codeunit "Workflow Event Handling";
+        WorkflowResponseHandling: Codeunit "Workflow Response Handling";
     begin
         WorkflowResponseHandling.AddResponseToLibrary(MyWorkflowResponseCode, Database::"Purchase Header", 'Send a notification.', 'GROUP 0');
         End

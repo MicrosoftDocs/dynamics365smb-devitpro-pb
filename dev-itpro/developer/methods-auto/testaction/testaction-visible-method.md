@@ -3,8 +3,8 @@ title: "TestAction.Visible() Method"
 description: "Sets whether to display the action on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +21,6 @@ Sets whether to display the action on a test page.
 ```AL
 Visible :=   TestAction.Visible()
 ```
-
 ## Parameters
 *TestAction*  
 &emsp;Type: [TestAction](testaction-data-type.md)  

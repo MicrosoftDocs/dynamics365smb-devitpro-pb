@@ -3,8 +3,8 @@ title: "Caption Property"
 description: "Sets the string that is used to identify a control or other object in the user interface."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -39,6 +39,7 @@ Sets the string that is used to identify a control or other object in the user i
 -   Enum Value
 -   Page Custom Action
 -   Page System Action
+-   Page File Upload Action
 -   Page View
 -   Report Layout
 -   Profile

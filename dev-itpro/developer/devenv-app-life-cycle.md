@@ -1,8 +1,7 @@
 ---
-title: "Lifecycle of apps and extensions"
-description: "Overview of the process of updating an app for Business Central, how to update it."
+title: Lifecycle of apps and extensions
+description: Overview of the process of updating an app for Business Central, how to update it.
 author: solsen
-
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
@@ -10,7 +9,7 @@ ms.author: solsen
 ms.date: 04/01/2021
 ---
 
-# The Lifecycle of Apps and Extensions for Business Central
+# The lifecycle of apps and extensions for Business Central
 
 When you build an app or extension to [!INCLUDE[prod_short](includes/prod_short.md)] and get that published to AppSource, it becomes an app like so many others - the app itself can be updated, and the platform that it sits on, [!INCLUDE[prod_short](includes/prod_short.md)] online itself, will also get updated. But what happens after your app gets published?
 
@@ -76,12 +75,12 @@ When an extensions gets uninstalled, these tables do not get removed. Therefore,
 
 For more information, see [When apps or PTEs cannot be updated by Microsoft](app-maintain.md#when-apps-or-ptes-cannot-be-updated-by-microsoft).  
 
-## See Also
+## See also
 
-[Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
+[Publishing and installing an extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  
-[Upgrading Extensions](devenv-upgrading-extensions.md)  
-[Add your App to AppSource](../administration/appsource.md)  
-[Checklist for Submitting Your App](devenv-checklist-submission.md)  
-[Upgrading AppSource Apps in Production](devenv-upgrade-appsource-app-in-prod.md)  
-[Maintain AppSource Apps and Per-Tenant Extensions](app-maintain.md)  
+[Upgrading extensions](devenv-upgrading-extensions.md)  
+[Add your app to AppSource](../administration/appsource.md)  
+[Checklist for submitting your app](devenv-checklist-submission.md)  
+[Upgrading AppSource apps in production](devenv-upgrade-appsource-app-in-prod.md)  
+[Maintain AppSource apps and per-tenant extensions](app-maintain.md)  

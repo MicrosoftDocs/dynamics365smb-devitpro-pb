@@ -3,8 +3,8 @@ title: "Xmlport.Break() Method"
 description: "Exits from a loop or a trigger in a data item trigger of a report or XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +21,6 @@ Exits from a loop or a trigger in a data item trigger of a report or XmlPort.
 ```AL
  Xmlport.Break()
 ```
-
 ## Parameters
 *Xmlport*  
 &emsp;Type: [Xmlport](xmlport-data-type.md)  

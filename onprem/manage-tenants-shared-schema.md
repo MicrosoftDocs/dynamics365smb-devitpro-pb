@@ -4,7 +4,6 @@ description: Describes how to mount, configure, and upgrade tenants in a shared 
 ms.date: 10/01/2018
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2017"
 author: jswymer
 ---
 # Managing Tenants of a Shared Schema Database in a Multitenant Deployment

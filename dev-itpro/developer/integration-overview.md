@@ -35,7 +35,7 @@ For more information, see [Web services overview](../webservices/web-services.md
 
 When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] from another application, you should use REST APIs, either the built-in APIs or custom APIs. 
 
-[![Shows how the API stack in Business Central](media/api-stack.svg)](media/api-stack.svg#lightbox)
+[![Shows the API stack in Business Central](media/api-stack.svg)](media/api-stack.svg#lightbox)
 
 For more information on how to explore and develop against APIs, best practices, and which built-in APIs exist, see [REST API overview](../webservices/api-overview.md).
 
@@ -90,9 +90,9 @@ For more information, see [Integrating Business Central with Microsoft Dataverse
 
 ## Built-in: Integrating Business Central with Dynamics 365 Sales
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Dynamics 365 Sales by first setting up integration to [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] and then do more setup from the [!INCLUDE[prod_short](../includes/prod_short.md)] application. Integrating to Dynamics 365 Sales lets users view information from [!INCLUDE[prod_short](../includes/prod_short.md)] while they're working in Dynamics 365 Sales. For example, when preparing a sales quote it could be useful to know whether you have enough inventory to fulfill the order.
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Dynamics 365 Sales by first setting up integration to [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] and then doing more setup from the [!INCLUDE[prod_short](../includes/prod_short.md)] application. Integrating to Dynamics 365 Sales lets users view information from [!INCLUDE[prod_short](../includes/prod_short.md)] while they're working in Dynamics 365 Sales. For example, when preparing a sales quote it could be useful to know whether you have enough inventory to fulfill the order.
 
-For more information, see [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
+For more information, see [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).  
 
 
 ## Built-in: Integrating Business Central with Shopify
@@ -104,18 +104,18 @@ For more information, see [Get started with the Shopify connector](/dynamics365/
 
 ## Integrating to external systems from AL code: calling external services
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with external systems by using the *HttpClient* data type in AL code.
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps and extensions with external systems by using the *HttpClient* data type in AL code.
 
-:::image type="content" source="media/httpclient.svg" alt-text="Shows how AL apps/extensions can call external web services from Business Central" lightbox="media/httpclient.svg":::
+:::image type="content" source="media/httpclient.svg" alt-text="Shows how AL apps and extensions can call external web services from Business Central" lightbox="media/httpclient.svg":::
 
-For more information, see [Integrating to external services with the HttpClient data type](../developer/devenv-httpclient.md).
+For more information, see [Call external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
 
 ## Integrating to external systems from AL code: Azure services
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with Azure services such as Azure Blob Services, Azure File Services, Azure Functions, or Azure Key Vault. 
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps and extensions with Azure services such as Azure Blob Storage, Azure Files, Azure Functions, or Azure Key Vault. 
 
-:::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps/extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
+:::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps and extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
 For more information, see [Integrating Business Central with Azure services](./integration-azure-overview.md).
 
@@ -136,13 +136,11 @@ For more information, see [Integrating Business Central with infrastructure serv
 
 ## Integrating AI by extending Copilot in Business Central
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure Open AI Service to extend Copilot in Business Central with new generative AI capabilities.
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps and extensions with the Azure OpenAI Service to extend Copilot in Business Central with new generative AI capabilities.
 
 ![Shows the tasks in the generative-AI development](media/dev-generative-ai-overview.svg)
 
 For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
-
-
 
 ## See also
 
@@ -153,6 +151,8 @@ For more information, see [Integrating AI using Developer Tools for Copilot](../
 [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md)  
 [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)  
 [Integrating Business Central with Shopify](/dynamics365/business-central/shopify/get-started)  
-[Integrating to external services from AL using the HttpClient data type](../developer/devenv-httpclient.md)  
+[Call external services with the HttpClient data type](../developer/devenv-httpclient.md)  
 [Integrating Business Central with Azure services](./integration-azure-overview.md)   
 [Integrating AI using developer tools for Copilot](../developer/ai-integration-landing-page.yml)  
+[Envestnet Yodlee Bank Feeds extension](/dynamics365/business-central/ui-extensions-yodlee-bank-feeds)  
+[AMC Banking 365 Fundamentals extension](/dynamics365/business-central/ui-extensions-amc-banking)  

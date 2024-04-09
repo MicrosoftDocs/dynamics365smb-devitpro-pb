@@ -3,8 +3,8 @@ title: "TestField.Visible() Method"
 description: "Gets the visible state for the field."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +21,6 @@ Gets the visible state for the field.
 ```AL
 Result :=   TestField.Visible()
 ```
-
 ## Parameters
 *TestField*  
 &emsp;Type: [TestField](testfield-data-type.md)  
