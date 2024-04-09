@@ -3,8 +3,8 @@ title: "Compiler Error AL0475"
 description: "The attribute '{0}' cannot be used on variables of array type."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The attribute '{0}' cannot be used on variables of array type.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

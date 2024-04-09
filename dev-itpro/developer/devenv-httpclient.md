@@ -40,7 +40,7 @@ The following example illustrates ways to prepare the request.
 
         // This shows how you can set or change HTTP content headers in your request
         Content.GetHeaders(ContentHeaders);
-        if ContentHeaders.Contains('Content-Type') then headers.Remove('Content-Type');
+        if ContentHeaders.Contains('Content-Type') then ContentHeaders.Remove('Content-Type');
         ContentHeaders.Add('Content-Type', 'multipart/form-data;boundary=boundary');
 
         // This shows how you can set HTTP request headers in your request
@@ -135,9 +135,18 @@ The following example illustrates the error handling you need to setup for handl
 
 ## Advanced scenarios
 
+### Using cookies
+
+Starting from 2024 release wave 1, you can use server-side cookies when calling an external service using HttpClient This allows you to efficiently send and receive cookies in HTTP requests, unblocking scenarios where third-party endpoints require cookie customization. With the Cookie datatype and AL methods for handling cookies, you can automatically re-use response cookies, handle cookies manually, or a mix of both. 
+
+<!-- Pending merge to main for 2024w1 content
+For more information about server-side cookies, see 
+-->
+
+
 ### Using certificates
 
-It's possible to include a certificate when calling an external service. 
+It's possible to include a certificate when calling an external service using HttpClient. 
 
 [!INCLUDE[httpclient_cert_example](includes/include-http-cert-example.md)]
 

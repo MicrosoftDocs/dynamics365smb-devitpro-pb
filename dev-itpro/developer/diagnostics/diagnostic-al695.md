@@ -3,8 +3,8 @@ title: "Compiler Warning (Future Error) AL0695"
 description: "The method {0} will only be available for {1} development for runtime version {2}."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The method {0} will only be available for {1} development for runtime version {2}.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

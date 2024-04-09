@@ -3,8 +3,8 @@ title: "None Data Type"
 description: "Is used implicitly when a method does not return a value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
