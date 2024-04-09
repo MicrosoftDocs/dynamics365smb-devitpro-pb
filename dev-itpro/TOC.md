@@ -751,7 +751,7 @@
 
 #### Streaming data
 ##### [Using streams in Business Central](developer/devenv-streams-overview.md)
-##### [Semantics of Line Endings and Zero Terminators for streams](devenv-write-read-methods-line-break-behavior.md)  
+##### [Semantics of Line Endings and Zero Terminators for streams](developer/devenv-write-read-methods-line-break-behavior.md)  
 ##### AL language reference (streams)
 ###### [InStream datatype (AL reference documentation)](developer/methods-auto/instream/instream-data-type.md)   
 ###### [OutStream datatype (AL reference documentation)](developer/methods-auto/outstream/outstream-data-type.md)   
