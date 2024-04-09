@@ -36,7 +36,7 @@ There are some components that require other software to run. For example, the d
 
 1. Go to the update page for the release that you want to install:
 
-   - Business Central 2024 Release Wave 1 (v24)
+   - [Business Central 2024 Release Wave 1 (v24)](https://www.microsoft.com/en-us/download/details.aspx?id=106000))
    - [Business Central 2023 Release Wave 2 (v23)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-2-7a4f98e8-66b9-4484-9bc1-66c466d8a82d)
    - [Business Central 2023 Release Wave 1 (v22)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-1-37e2d08e-6f61-4522-90ba-1cea59d8de51)
    - [Business Central 2022 Release Wave 2 (v21)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2022-release-wave-2-8efa5bbb-3cd5-4445-ba3a-0752694bf46f)

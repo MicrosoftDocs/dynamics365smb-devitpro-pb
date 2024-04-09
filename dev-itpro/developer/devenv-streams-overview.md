@@ -1,9 +1,9 @@
 ---
 title: Using streams in Business Central
-description: Introducing how to use streams in Business Central AL code.
+description: Introducing how to work with streams in Business Central AL code.
 author: KennieNP
 ms.custom: na
-ms.date: 04/02/2024
+ms.date: 04/05/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: kepontop
@@ -15,23 +15,28 @@ The AL language in [!INCLUDE [prod_short](includes/prod_short.md)] comes with su
 
 ## What is a stream?
 
-A stream is an abstraction of a sequence of bytes, such as a file, an input/output device, an inter-process communication pipe, or a TCP/IP socket. The stream datatypes in AL provide a generic view of these different types of input and output, and isolate the programmer from the specific details of the operating system and the underlying devices.
+A stream is an abstraction of a sequence of bytes, such as a file, an input/output device, an inter-process communication pipe, or a TCP/IP socket. The stream data types in AL provide a generic view of these different types of input and output, and isolate the developer from the specific details of the operating system and the underlying devices.
 
 Streams involve three fundamental operations:
-- You can read from streams. Reading is the transfer of data from a stream into a data structure, such as a Text or Blob.
-- You can write to streams. Writing is the transfer of data from a data structure such as Text or Blob into a stream.
-- Streams can support seeking. Seeking refers to querying and modifying the current position within a stream. Seek capability depends on the kind of backing store a stream has. For example, network streams have no unified concept of a current position, and therefore typically do not support seeking.
 
-A stream is an object used for transfering data, so no actual data is not stored in the stream. When working with streams in AL, you need three things
-1. a data source such as a file, a Blob, or a HTTP request
-2. a stream object connected to the data source. The stream has a direction of reading or writing data to/from the data source.
-3. an object in the AL runtime acting as the consumer or the emitter of the data.
+- You can read from streams  
+    Reading is the transfer of data from a stream into a data structure, such as a Text or Blob.
+- You can write to streams  
+    Writing is the transfer of data from a data structure such as Text or Blob into a stream.
+- Streams can support seeking  
+    Seeking refers to querying and modifying the current position within a stream. Seek capability depends on the kind of backing store a stream has. For example, network streams have no unified concept of a current position, and therefore typically don't support seeking.
+
+A stream is an object used for transferring data, so no actual data is stored in the stream. When working with streams in AL, you need three things.
+
+1. A data source such as a file, a Blob, or an HTTP request
+2. A stream object connected to the data source. The stream has a direction of reading or writing data to/from the data source.
+3. An object in the AL runtime acting as the consumer or the emitter of the data.
 
 ## How are streams implemented in AL?
 
 The AL stream object/methods are wrappers over corresponding .NET stream concepts. In C#, you only have one object called Stream. The direction (read/write) is determined by using the Read/Write methods as illustrated in this C# example:
 
-``` C#
+```csharp
 // how to write the content of one stream into another stream in C#
 static void CopyStream(Stream input, Stream output){
     byte[] buffer = new byte[0x1000];
@@ -41,26 +46,23 @@ static void CopyStream(Stream input, Stream output){
 }
 ```
 
-In AL, the direction of the data flow is instead encoded in the two datatypes `InStream` and `OutStream` and you need to use an AL object to either consume (read) data from a data source using a stream or emit (write) data to a data source using a stream. 
+In AL, the direction of the data flow is instead encoded in the two data types `InStream` and `OutStream` and you need to use an AL object to either consume (read) data from a data source using a stream, or emit (write) data to a data source using a stream. 
 
 :::image type="content" source="media/streams.svg" alt-text="Illustration of how different personas have different analytics needs." lightbox="media/streams.svg":::
-
 
 The AL runtime also has a built-in method for copying a stream, see 
 [System.CopyStream(OutStream: OutStream, InStream: InStream [, BytesToRead: Integer])](methods-auto/system/system-copystream-method.md).
 
 > [!NOTE]
-> 
-> The CopyStream method stems from the time of the C/AL programming language, which was inspired from the Pascal programming language. In Pascal it is common for procedures to follow the direction of assignments, i.e. variable := value (like dest := source). This is the reason why parameters in CopyStream are ordered the way they are.
+> The CopyStream method stems from the time of the C/AL programming language, which was inspired from the Pascal programming language. In Pascal it's common for procedures to follow the direction of assignments, for example, variable := value (like dest := source). This is the reason why parameters in CopyStream are ordered the way they are.
 
+## Reading data with the InStream data type
 
-## Reading data with the InStream datatype
+The InStream datatype provides a generic stream object with methods that you can use to read from streams. The data type also provides methods to change the position in the stream and a way to get the size of the data source object without the need to read all of the data.
 
-The InStream datatype provides a generic stream object with methods that that you can use to read from streams. The datatype also provides methods to change the position in the stream as well as a way to get the size of the data source object without the need to read all of the data.
+An instance of the InStream datatype must be attached to a data source to work, otherwise you get a runtime error stating that *InStream variable not initialized.*.
 
-An instance of the InStream datatype must be attached to a datasource to work, else you will get a runtime error stating that *InStream variable not initialized.*.
-
-``` AL
+```al
 trigger OnAction()
 var
     vInStr: InStream;
@@ -72,7 +74,7 @@ end;
 
 The following example illustrates how to read the content from a media field in the database using an InStream object.
 
-``` AL
+```al
 procedure ReadTextFromMediaResource(MediaResourcesCode: Code[50]) MediaText: Text
 var
     MediaResources: Record "Media Resources";
@@ -89,16 +91,13 @@ begin
 end;
 ```
 
-
-
-For more information, see [InStream datatype (reference documentation)](methods-auto/instream/instream-data-type.md)
-
+For more information, see [InStream datatype (reference documentation)](methods-auto/instream/instream-data-type.md).
 
 ## Writing data with the OutStream datatype
 
-The OutStream datatype provides a generic stream object with methods that that you can use to write to resources using streams. 
+The OutStream datatype provides a generic stream object with methods that you can use to write to resources using streams. 
 
-An instance of the OutStream datatype must be attached to a datasource to work, else you will get a runtime error stating that *InStream variable not initialized.*.
+An instance of the OutStream datatype must be attached to a data source to work, else you'll get a runtime error stating that *InStream variable not initialized.*.
 
 The following example illustrates how to read the content from an uploaded file using an InStream object and then copy the stream content into a blob field using an OutStream object.
 
@@ -127,12 +126,14 @@ For more information, see [OutStream datatype (reference documentation)](methods
 
 ## Why use streams?
 
-For [!INCLUDE [prod_short](includes/prod_short.md)] online, there is no way to read from and write to files on local storage, so using streams as a mechanism to read such data is your only option. But streams also come with other benefits as they are optimized for mimimizing the memory footprint of your code when dealing with large data. If you can stream data instead of storing it in a variable, then the [!INCLUDE [prod_short](includes/prod_short.md)] server has less large objects to handle when the operating system does garbage collection, and this in turn will improve the general performance of the system.  
+- Memory efficiency: Streams allow you to work with large amounts of data without loading it all into memory at once. If you can stream data instead of storing it in a variable, then the [!INCLUDE [prod_short](includes/prod_short.md)] server has less large objects to handle when the operating system does garbage collection, and this in turn will improve the general performance of the system.
+- Performance efficiency: Streams allow you to work with data as it becomes available, rather than waiting for all of it to arrive.
+- When working with [!INCLUDE [prod_short](includes/prod_short.md)] online - you can't use the file system directly. Streams provide a way to work with data without having to store it in a file.
 
 
 ## Examples of stream support
 
-There are many AL datatypes or objects that you can use to consume data from streams or emit data to streams. In this table, you can some examples on how to do this. The list is not exhaustive.
+There are many AL datatypes or objects that you can use to consume data from streams or emit data to streams. In this table, you can some examples on how to do this. The list isn't exhaustive.
 
 | Data source | Consume data with InStream | Emit data with OutStream |
 | ----------- | -------------------------- | ------------------------ |
