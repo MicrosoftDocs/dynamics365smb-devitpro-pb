@@ -164,7 +164,7 @@ Also, you might also want to learn more about the semantics of line endings and 
 [InStream datatype (AL reference documentation)](methods-auto/instream/instream-data-type.md)   
 [OutStream datatype (AL reference documentation)](methods-auto/outstream/outstream-data-type.md)   
 [System.CopyStream method (AL reference documentation)](methods-auto/system/system-copystream-method.md)   
-[Codeunit "Base64 Convert" (System Application reference documentation)](/business-central/application/system-application/codeunit/system.text.base64-convert)  
+[Codeunit "Base64 Convert" (System Application reference documentation)](/dynamics365/business-central/application/system-application/codeunit/system.text.base64-convert)  
 [TextEncoding Option Type](methods-auto/textencoding/textencoding-option.md)   
 [Text encoding](devenv-file-handling-and-text-encoding.md#text-encoding)  
 [Write, WriteText, Read, and ReadText method behavior for line Endings and Zero Terminators](devenv-write-read-methods-line-break-behavior.md)   
