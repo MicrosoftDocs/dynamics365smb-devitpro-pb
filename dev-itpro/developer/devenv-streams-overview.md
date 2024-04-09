@@ -137,11 +137,11 @@ There are many AL datatypes or objects that you can use to consume data from str
 
 | Data source | Consume data with InStream | Emit data with OutStream |
 | ----------- | -------------------------- | ------------------------ |
-| Web service | Read data from stream: [HttpContent.ReadAs](methods-auto/httpcontent/httpcontent-readas-instream-method.md) <br><br> Send data using stream: [HttpContent.WriteFrom](methods-auto/httpcontent/httpcontent-writefrom-instream-method.md)| TODO | 
+| Web service | Read data from stream: [HttpContent.ReadAs](methods-auto/httpcontent/httpcontent-readas-instream-method.md) <br><br> Send data using stream: [HttpContent.WriteFrom](methods-auto/httpcontent/httpcontent-writefrom-instream-method.md)|  | 
 | Local file (only for on-premises) | [File.CreateInStream](methods-auto/file/file-createinstream-method.md) | [File.CreateOutStream](methods-auto/file/file-createoutstream-method.md) |
 | File Upload/download | [DownloadFromStream](methods-auto/file/file-downloadfromstream-method.md) | [UploadIntoStream](methods-auto/file/file-uploadintostream-string-string-string-text-instream-method.md) |
 | XML document | [XmlDocument.ReadFrom](methods-auto/xmldocument/xmldocument-readfrom-instream-xmlreadoptions-xmldocument-method.md) | [XmlDocument.WriteTo](methods-auto/xmldocument/xmldocument-writeto-outstream-method.md) |
-| JSON document | [JsonObject.ReadFrom](methods-auto/jsonobject/jsonobject-readfrom-instream-method.md)| TODO |
+| JSON document | [JsonObject.ReadFrom](methods-auto/jsonobject/jsonobject-readfrom-instream-method.md)| [JsonObject.WriteTo(OutStream)](methods-auto/jsonobject/jsonobject-writeto-outstream-method.md) |
 | Media / Mediaset | [Media.ImportStream](methods-auto/media/media-importstream-instream-text-text-method.md) <br><br>[MediaSet.ImportStream](methods-auto/mediaset/mediaset-importstream-method.md)  | [Media.ExportStream](methods-auto/media/media-exportstream-method.md) |
 | Excel (in-memory buffer) | [OpenBookStream](/business-central/application/base-application/table/system.io.excel-buffer#openbookstream) | [SaveToStream](/business-central/application/base-application/table/system.io.excel-buffer#savetostream) | 
 | CSV (in-memory buffer) | [LoadDataFromStream](/business-central/application/base-application/table/system.io.csv-buffer#loaddatafromstream) | | 
