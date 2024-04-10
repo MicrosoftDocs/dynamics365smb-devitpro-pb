@@ -12,12 +12,11 @@ ms.date: 04/09/2024
 ms.custom: bap-template 
 ---
 
-
 # Function calling in AI
 
 The model has access to various tools that enable it to perform extra features. Currently, these tools include Code Interpreter, Knowledge retrieval, and Function calling. 
 
-The concept of function calling enables you to provide a description of functions to the Assistant. In response, the Assistant identifies the appropriate function that needs to be invoked, along with the necessary arguments. The specific function and its corresponding arguments are determined based on the user's input. The function calling tool plays a crucial role in this process. It's designed to parse essential details from user's natural language input and utilize these details as arguments for the functions you've defined. This way, it bridges the gap between human language and programmatic functions, making the interaction more intuitive and user-friendly.
+The concept of function calling enables you to provide a description of functions to the Assistant. In response, the Assistant identifies the appropriate function that needs to be invoked, along with the necessary arguments. The specific function and its corresponding arguments are determined based on the user's input. The function calling tool is designed to parse essential details from user's natural language input and use this as arguments for the functions that you've defined. This way, it bridges the gap between human language and programmatic functions, making the interaction more intuitive and user-friendly.
 
 There are many scenarios that you can use function calling for, such as:
 
