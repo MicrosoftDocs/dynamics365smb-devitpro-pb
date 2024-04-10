@@ -1,6 +1,6 @@
 ---
 title: Function calling in AI
-description: Learn how to call functions in Azure OpenAI
+description: Learn how to call functions in Azure OpenAI.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: 
@@ -15,22 +15,22 @@ ms.custom: bap-template
 
 # Function calling in AI
 
-The model has access to a variety of tools that enable it to perform additional features. Currently, these tools include Code Interpreter, Knowledge retrieval, and Function calling. 
+The model has access to various tools that enable it to perform extra features. Currently, these tools include Code Interpreter, Knowledge retrieval, and Function calling. 
 
-The Function calling tool allows you to describe functions to the Assistant and have it return the function that must be called along with its respective arguments. The function to be called and arguments depend on the user input. The function calling tool is used to extract key information from natural language and use it as arguments for your functions. 
+The concept of function calling enables you to provide a description of functions to the Assistant. In response, the Assistant identifies the appropriate function that needs to be invoked, along with the necessary arguments. The specific function and its corresponding arguments are determined based on the user's input. The function calling tool plays a crucial role in this process. It's designed to parse essential details from user's natural language input and utilize these details as arguments for the functions you've defined. This way, it bridges the gap between human language and programmatic functions, making the interaction more intuitive and user-friendly.
 
-There are many scenarios that you can use function calling for:
+There are many scenarios that you can use function calling for, such as:
 
-- A scenario could be determining the intent of the input. 
-- If you have two functions, “Document lookup” and “Item lookup” and the input is “I need the items from the last invoice”, the intent would be to document lookup as it needs the last invoice.  
-- Another example would be “I need two red bicycles”, now the intent would be item lookup, as it needs to find what corresponds closest to red bicycles. 
+- To help determine the intent of the input. 
+  - If you have two functions, “Document lookup” and “Item lookup” and the input is “I need the items from the last invoice”, the intent would be to document lookup as it needs the last invoice.  
+  - Another example would be “I need two red bicycles”, now the intent would be item lookup, as it needs to find what corresponds closest to red bicycles. 
 
-An end-to-end scenario would be something like, you receiving an email to purchase some items. 
+An end-to-end scenario for you receiving an email to purchase some items, would look something like this: 
 
 1. Determine the intent of the email.  
-  If it is just a regular email, they’d like to purchase items etc. 
-2. Extract contact information if the contact does not exist.
-3. Extract what items they would like to purchase and create an invoice  
+  If it's just a regular email, they’d like to purchase items etc.
+2. Extract contact information if the contact doesn't exist.
+3. Extract what items they would like to purchase and create an invoice.  
 
 ## Function calling - AOAIChatMessages codeunit
 
@@ -123,7 +123,7 @@ procedure ProcessWeatherCopilotResponse(Response: JsonObject)
  
 ## Things to consider
 
-When using the Function Calling tool, you can set the tool choice to either `Auto` or `Specific` function in the `SetToolChoice` method. `Auto` is the default if not set. The response can be either a function or a regular chat message response. Setting it to `Specific` function will guarantee the response will always call the function. Even if the intent and context do not match the function, as such, the arguments should be validated by the developer.
+When using the Function Calling tool, you can set the tool choice to either `Auto` or `Specific` function in the `SetToolChoice` method. `Auto` is the default if not set. The response can be either a function or a regular chat message response. Setting it to `Specific` function guarantees the response always calls the function. Even if the intent and context don't match the function, as such, the developer should validate the arguments.
 
 ## See also
 
