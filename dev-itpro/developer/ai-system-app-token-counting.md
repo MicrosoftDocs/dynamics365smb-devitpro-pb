@@ -20,12 +20,13 @@ Large Language Models (LLMs) operate using tokens, which are representations of 
 **Tokens:** 41551 757 922 279 13238 1887 13  
 **Number of tokens:** 7
 
-(The spacing between the numbers in the above example has been added purely for readability.)
+> [!NOTE]  
+> The spacing between the numbers in the above example has been added purely for readability. In reality, the tokens are not separated by spaces.
 
 Evaluating the number of tokens in your input is important because it helps you understand the cost of your request and the limitations of the model. By evaluating the number of tokens it takes for your request, you can determine the following:
 
-- Estimating your potential cost of your copilot <Link to AOAI pricing page>. 
-- Models have limited context sizes and when you have more data than what fits the context size, you’d want to use this to help split up your generation into multiple generations.
+- Estimate your potential cost of your copilot <Link to AOAI pricing page>. 
+- Help split up your generation into multiple generations, because models have limited context sizes and you might have more data than what fits the context size.
 
 ## Token counting - "AOAI Token" codeunit
 
