@@ -18,24 +18,23 @@ The model has access to various tools that enable it to perform extra features. 
 
 The concept of function calling enables you to provide a description of functions to the Assistant. In response, the Assistant identifies the appropriate function that needs to be invoked, along with the necessary arguments. The specific function and its corresponding arguments are determined based on the user's input. The function calling tool is designed to parse essential details from user's natural language input and use this as arguments for the functions that you've defined. This way, it bridges the gap between human language and programmatic functions, making the interaction more intuitive and user-friendly.
 
-There are many scenarios that you can use function calling for, such as:
+There are many scenarios that you can use function calling for, one is to determine the intent of the input:
 
-- To help determine the intent of the input. 
-  - If you have two functions, “Document lookup” and “Item lookup” and the input is “I need the items from the last invoice”, the intent would be to document lookup as it needs the last invoice.  
-  - Another example would be “I need two red bicycles”, now the intent would be item lookup, as it needs to find what corresponds closest to red bicycles. 
+- If you have two functions, “Document lookup” and “Item lookup” and the input is “I need the items from the last invoice”, the intent would be to document lookup as it needs the last invoice.  
+- Another example would be “I need two red bicycles”, now the intent would be item lookup, as it needs to find what corresponds closest to red bicycles. 
 
-An end-to-end scenario for you receiving an email to purchase some items, would look something like this: 
+In an end-to-end scenario, where you receive an email to purchase some items, the steps look something like this: 
 
-1. Determine the intent of the email.  
-  If it's just a regular email, they’d like to purchase items etc.
-2. Extract contact information if the contact doesn't exist.
-3. Extract what items they would like to purchase and create an invoice.  
+1. Determine the intent of the email:  
+  If it's just a regular email, that the customer would like to purchase items etc.
+2. Extract the contact information if the contact doesn't already exist.
+3. Extract what items the customer would like to purchase and create an invoice.  
 
 ## Function calling - "AOAI Chat Messages" codeunit
 
-In the [!INCLUDE [prod_short](includes/prod_short.md)] system application, there's a codeunit that can help you ... The codeunit is located in GitHub BCApps repo in the following path: <!-- to be inserted -->. For more information, see [“AOAI Chat Messages” codeunit](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages).
+In the [!INCLUDE [prod_short](includes/prod_short.md)] system application, you find the "AOAI Chat Messages" codeunit. It's located on GitHub in the following path: [https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/AI/src/Azure%20OpenAI/Chat%20Completion/AOAIChatMessages.Codeunit.al](https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/AI/src/Azure%20OpenAI/Chat%20Completion/AOAIChatMessages.Codeunit.al). 
 
-BCApps/src/System Application/App/AI/src/Azure OpenAI/Chat Completion/AOAIChatMessages.Codeunit.al at main · microsoft/BCApps (github.com) 
+For more documentation, see [“AOAI Chat Messages” codeunit](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages).
 
 The “AOAI Chat Messages” codeunit has many methods, the following methods are some of them:
 
