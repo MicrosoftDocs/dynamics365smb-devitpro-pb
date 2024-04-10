@@ -16,9 +16,9 @@ ms.custom: bap-template
 
 Large Language Models (LLMs) operate using tokens, which are representations of ASCII or other encoded characters, rather than directly processing these characters as input or output. Token counting is the process of determining the number of tokens that will be used by your input before sending an actual request to Azure OpenAI (AOAI). A simple example to illustrate token counting is the following:
 
-Input: "Tell me about the solar system."  
-Tokens: 41551 757 922 279 13238 1887 13  
-Number of tokens: 7  
+**Input:** "Tell me about the solar system."  
+**Tokens:** 41551 757 922 279 13238 1887 13  
+**Number of tokens:** 7
 
 (The spacing between the numbers in the above example has been added purely for readability.)
 
