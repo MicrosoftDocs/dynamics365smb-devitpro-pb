@@ -31,14 +31,14 @@ Evaluating the number of tokens in your input is important because it helps you 
 
 In the [!INCLUDE [prod_short](includes/prod_short.md)] system application, there's a codeunit that can help you count the number of tokens in your input. The codeunit is located in GitHub BCApps repo in the following path: <!-- to be inserted -->. For more information, see [Codeunit "AOAI Token"](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token).
 
-The AOAIToken codeunit has the following methods:
+The AOAIToken codeunit has the following methods to support token counting:
 
-- GetGPT35TokenCount(Input):Integer 
-- GetGPT4TokenCount(Input):Integer 
-- GetGPTAdaTokenCount(Input):Integer 
-- GetGPTDavinciTokenCount(Input):Integer 
+- [GetGPT35TokenCount(Input):Integer](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token#getgpt35tokencount)  
+- [GetGPT4TokenCount(Input):Integer](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token#getgpt4tokencount)  
+- [GetGPTAdaTokenCount(Input):Integer](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token#getadatokencount)  
+- [GetGPTDavinciTokenCount(Input):Integer](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token#getdavincitokencount)
 
-These methods are version agnostic. For example, GetGPT4TokenCount works for GPT4 0613, GPT4 0125, and all versions. 
+These methods are version agnostic. For example, `GetGPT4TokenCount` works for GPT4 0613, GPT4 0125, and all versions. 
 
 ## See also
 
