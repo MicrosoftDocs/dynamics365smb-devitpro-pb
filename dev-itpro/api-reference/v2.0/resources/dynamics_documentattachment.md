@@ -58,8 +58,8 @@ Represents a document attachment in [!INCLUDE[prod_short](../../../includes/prod
 |parentType|NAV.attachmentEntityBufferDocumentType|The type of the parent document of the document attachment. It can be " ", "Journal", "Sales Order", "Sales Quote", "Sales Credit Memo", "Sales Invoice" or "Purchase Invoice".|
 |parentId|GUID|The ID of the parent entity. |
 |lineNumber|integer|The document attachment item line number.|
-|documentFlowSales|boolean||
-|documentFlowPurchase|boolean||
+|documentFlowSales|boolean|Specifies if the attachment must flow to transactions. Used for integration with Flow; the field is exposed on the **Document Attachment Details** page.|
+|documentFlowPurchase|boolean|Specifies if the attachment must flow to transactions. Used for integration with Flow; the field is exposed on the **Document Attachment Details** page.|
 |lastModifiedDateTime|datetime|The last datetime the document attachment was modified. Read-Only.|
 
 ## JSON representation
