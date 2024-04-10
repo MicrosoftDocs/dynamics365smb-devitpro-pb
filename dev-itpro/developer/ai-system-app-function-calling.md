@@ -15,11 +15,11 @@ ms.custom: bap-template
 
 # Function calling in AI
 
-The model has access to a variety of tools that enable it to perform additional features. Currently, these tools include Code Interpreter, Knowledge Retrieval, and Function Calling. 
+The model has access to a variety of tools that enable it to perform additional features. Currently, these tools include Code Interpreter, Knowledge retrieval, and Function calling. 
 
-The **Function Calling** tool allows you to describe functions to the Assistant and have it return the function that needs to be called along with its respective arguments. The function to be called and arguments depend on the user input. The Function Calling tool is used to extract key information from natural language and use it as arguments for your functions. 
+The Function calling tool allows you to describe functions to the Assistant and have it return the function that must be called along with its respective arguments. The function to be called and arguments depend on the user input. The function calling tool is used to extract key information from natural language and use it as arguments for your functions. 
 
-There are many scenarios that ou can use function calling for:
+There are many scenarios that you can use function calling for:
 
 - A scenario could be determining the intent of the input. 
 - If you have two functions, “Document lookup” and “Item lookup” and the input is “I need the items from the last invoice”, the intent would be to document lookup as it needs the last invoice.  
