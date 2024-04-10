@@ -32,16 +32,16 @@ An end-to-end scenario for you receiving an email to purchase some items, would 
 2. Extract contact information if the contact doesn't exist.
 3. Extract what items they would like to purchase and create an invoice.  
 
-## Function calling - AOAIChatMessages codeunit
+## Function calling - "AOAI Chat Messages" codeunit
 
-In the [!INCLUDE [prod_short](includes/prod_short.md)] system application, there's a codeunit that can help you ... The codeunit is located in GitHub BCApps repo in the following path: <!-- to be inserted -->.
+In the [!INCLUDE [prod_short](includes/prod_short.md)] system application, there's a codeunit that can help you ... The codeunit is located in GitHub BCApps repo in the following path: <!-- to be inserted -->. For more information, see [“AOAI Chat Messages” codeunit](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages).
 
 BCApps/src/System Application/App/AI/src/Azure OpenAI/Chat Completion/AOAIChatMessages.Codeunit.al at main · microsoft/BCApps (github.com) 
 
-The “AOAI Chat Messages” codeunit has the following methods:
+The “AOAI Chat Messages” codeunit has many methods, the following methods are some of them:
 
-- AddTool 
-- ModifyTool 
+- AddTool
+- ModifyTool
 - DeleteTool 
 - ClearTools 
 - GetTools 

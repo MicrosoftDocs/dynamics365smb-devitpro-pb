@@ -27,9 +27,9 @@ Evaluating the number of tokens in your input is important because it helps you 
 - Estimating your potential cost of your copilot <Link to AOAI pricing page>. 
 - Models have limited context sizes and when you have more data than what fits the context size, you’d want to use this to help split up your generation into multiple generations.
 
-## Token counting - AOAIToken codeunit
+## Token counting - "AOAI Token" codeunit
 
-In the [!INCLUDE [prod_short](includes/prod_short.md)] system application, there's a codeunit that can help you count the number of tokens in your input. The codeunit is located in GitHub BCApps repo in the following path: <!-- to be inserted -->.
+In the [!INCLUDE [prod_short](includes/prod_short.md)] system application, there's a codeunit that can help you count the number of tokens in your input. The codeunit is located in GitHub BCApps repo in the following path: <!-- to be inserted -->. For more information, see [Codeunit "AOAI Token"](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token).
 
 The AOAIToken codeunit has the following methods:
 
