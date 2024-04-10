@@ -40,15 +40,14 @@ BCApps/src/System Application/App/AI/src/Azure OpenAI/Chat Completion/AOAIChatMe
 
 The “AOAI Chat Messages” codeunit has many methods, the following methods are some of them:
 
-- AddTool
-- ModifyTool
-- DeleteTool 
-- ClearTools 
-- GetTools 
-- ToolsExist 
-- SetAddToolsToPayload 
-- SetToolChoice 
-- GetToolChoice 
+- [AddTool](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#addtool)  
+- [ModifyTool](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#modifytool)  
+- [DeleteTool](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#deletetool)  
+- [GetTools](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#gettools)  
+- [ToolsExist](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#toolsexists)  
+- [SetAddToolsToPayload](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#setaddtoolstopayload)  
+- [SetToolChoice](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#settoolchoice)  
+- [GetToolChoice](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#gettoolchoice)  
 
 ## Code snippet
 
