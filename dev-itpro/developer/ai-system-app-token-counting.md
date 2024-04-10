@@ -29,7 +29,9 @@ Evaluating the number of tokens in your input is important because it helps you 
 
 ## Token counting - "AOAI Token" codeunit
 
-In the [!INCLUDE [prod_short](includes/prod_short.md)] system application, there's a codeunit that can help you count the number of tokens in your input. The codeunit is located in GitHub BCApps repo in the following path: <!-- to be inserted -->. For more information, see [Codeunit "AOAI Token"](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token).
+In the [!INCLUDE [prod_short](includes/prod_short.md)] system application, you find the "AOAI Token" codeunit. It's located on GitHub in the following path: [https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/AI/src/Azure%20OpenAI/AOAIToken.Codeunit.al](https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/AI/src/Azure%20OpenAI/AOAIToken.Codeunit.al). 
+
+For more documentation, see [“AOAI Token” codeunit](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token).
 
 The AOAIToken codeunit has the following methods to support token counting:
 
