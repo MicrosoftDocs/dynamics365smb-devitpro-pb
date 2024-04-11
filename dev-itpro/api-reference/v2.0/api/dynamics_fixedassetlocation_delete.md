@@ -2,7 +2,7 @@
 title: Delete fixedAssetLocations
 description: Deletes a fixed asset location object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
+ms.service: dynamics-365-business-central
 ms.topic: article
 ms.devlang: al
 ms.tgt_pltfrm: na
