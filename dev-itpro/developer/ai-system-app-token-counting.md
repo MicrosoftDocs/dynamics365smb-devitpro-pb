@@ -25,7 +25,7 @@ Large Language Models (LLMs) operate using tokens, which are representations of 
 
 Evaluating the number of tokens in your input is important because it helps you understand the cost of your request and the limitations of the model. By evaluating the number of tokens it takes for your request, you can determine the following:
 
-- Estimate your potential cost of your copilot <Link to AOAI pricing page>. 
+- Estimate your potential cost of your copilot. For more information, see [Azure OpenAI Service pricing overview](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/). 
 - Help split up your generation into multiple generations, because models have limited context sizes and you might have more data than what fits the context size.
 
 ## Token counting - "AOAI Token" codeunit
