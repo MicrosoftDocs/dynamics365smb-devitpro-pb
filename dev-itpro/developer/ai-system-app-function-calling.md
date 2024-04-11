@@ -48,6 +48,9 @@ The “AOAI Chat Messages” codeunit has many methods, the following methods ar
 
 ## Code snippet
 
+The following code snippet demonstrates how to use the function calling tool in the Azure OpenAI service. The example shows how to set the temperature to 0 for fixed JSON output, add a tool, set the tool choice to the added tool, mock user input, call generate, and process the output.
+
+
 ```al
 
 procedure WeatherCopilot()
@@ -62,7 +65,7 @@ procedure WeatherCopilot()
     begin
     	// Set authorization, capability etc
         // ...
-        // Set temperature to 0 for fixed json output
+        // Set temperature to 0 for fixed JSON output
         AOAIChatCompletionParams.SetTemperature(0);
         // Add tool
         AOAIChatMessages.AddTool(GetWeatherCopilotFunction());
