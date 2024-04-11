@@ -4,7 +4,7 @@ description: A purchase order line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -53,6 +53,7 @@ Represents a purchase order line in [!INCLUDE[prod_short](../../../includes/prod
 |lineType|NAV.invoiceLineAggLineType|The type of the purchase order line. It can be "Comment", "Account", "Item", "Resource" Value", "Fixed Asset" or "Charge".|
 |lineObjectNumber|string|The number of the object (account or item) of the purchase order line.|
 |description|string|Specifies the description of the purchase order line.|
+|description2|string||
 |unitOfMeasureId|GUID|The ID of unit of measure for the purchase order line.|
 |unitOfMeasureCode|string|The code of unit of measure for the purchase order line.|
 |quantity|decimal|The quantity of the item in the purchase order line.|
@@ -92,6 +93,7 @@ Here is a JSON representation of the purchaseOrderLine resource.
     "lineType": "NAV.invoiceLineAggLineType",
     "lineObjectNumber": "string",
     "description": "string",
+    "description2": "string",
     "unitOfMeasureId": "GUID",
     "unitOfMeasureCode": "string",
     "quantity": "decimal",
