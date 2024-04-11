@@ -8,20 +8,19 @@ ms.topic: reference
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 04/09/2024
+ms.date: 04/11/2024
 ms.custom: bap-template 
 ---
 
 # Function calling in AI
 
-The model has access to various tools that enable it to perform extra features. Currently, these tools include Code Interpreter, Knowledge retrieval, and Function calling. 
+The model has access to various tools that enable it to perform extra features. Currently, these tools include Code interpreter, Knowledge retrieval, and Function calling. 
 
 The concept of function calling enables you to provide a description of functions to the Assistant. In response, the Assistant identifies the appropriate function that needs to be invoked, along with the necessary arguments. The specific function and its corresponding arguments are determined based on the user's input. The function calling tool is designed to parse essential details from user's natural language input and use this as arguments for the functions that you've defined. This way, it bridges the gap between human language and programmatic functions, making the interaction more intuitive and user-friendly.
 
 There are many scenarios that you can use function calling for, one is to determine the intent of the input:
 
-- If you have two functions, “Document lookup” and “Item lookup” and the input is “I need the items from the last invoice”, the intent would be to document lookup as it needs the last invoice.  
-- Another example would be “I need two red bicycles”, now the intent would be item lookup, as it needs to find what corresponds closest to red bicycles. 
+An example could be the following. You have two functions, "Document lookup" and "Item lookup". If the user input is "I need the items from the last invoice", the inferred intent would be to trigger a document lookup, as it requires information from the last invoice. If the user input is instead "I need two red bicycles", the inferred intent would be to perform an item lookup, as it aims to locate the closest match to red bicycles.
 
 In an end-to-end scenario, where you receive an email to purchase some items, the steps look something like this: 
 
