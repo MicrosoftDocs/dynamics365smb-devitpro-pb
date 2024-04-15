@@ -1,10 +1,10 @@
 ---
 title: Selling Business Central apps through AppSource
-description: Learn how to enable tranactability in AppSource for Business Central apps.
+description: Learn how to enable transactability in AppSource for Business Central apps.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: bap-template
-ms.date: 02/06/2024
+ms.date: 04/15/2024
 ms.reviewer: na
 ms.topic: conceptual
 ---
@@ -75,6 +75,14 @@ Once your app is published, you can get insights into how your app is doing. The
 ## Side-by-side support
 
 The side-by-side support is the ability to fall back to custom licensing for existing customers in a transition period. It's crucial that you implement side-by-side support for your app before opting into transactability on AppSource. To enable side-by-side support, you must create an entitlement, which maps the user to the required permission sets to run their custom licensing. On the entitlement object, you must set the `Type` property to `Unlicensed`. For more information, see [Entitlement object](devenv-entitlement-object.md). 
+
+### Sell your transactable apps through the CSP reseller network
+
+As an ISV you can seamlessly license and resell your transactable apps through the managed CSP reseller network, complete with a margin-sharing option for enhanced profitability. For more information, see:
+
+- ISV to CSP private offers FAQs: [Independent Software Vendor (ISV) to Partner private offers FAQ](/partner-center/marketplace/isv-csp-faq).  
+- ISV resells through CSP: [Cloud Solution Provider - Microsoft commercial marketplace](https://learn.microsoft.com/en-us/partner-center/marketplace/cloud-solution-providers)
+
 
 ## See also
 
