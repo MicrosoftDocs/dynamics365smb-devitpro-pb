@@ -76,7 +76,7 @@ Once your app is published, you can get insights into how your app is doing. The
 
 The side-by-side support is the ability to fall back to custom licensing for existing customers in a transition period. It's crucial that you implement side-by-side support for your app before opting into transactability on AppSource. To enable side-by-side support, you must create an entitlement, which maps the user to the required permission sets to run their custom licensing. On the entitlement object, you must set the `Type` property to `Unlicensed`. For more information, see [Entitlement object](devenv-entitlement-object.md). 
 
-### Sell your transactable apps through the CSP reseller network
+## Sell your transactable apps through the CSP reseller network
 
 As an ISV you can seamlessly license and resell your transactable apps through the managed CSP reseller network, complete with a margin-sharing option for enhanced profitability. For more information, see:
 
