@@ -134,3 +134,5 @@ This expression evaluates to 14.
 This expression evaluates to 20.
 
 ## See also
+
+[Get started with AL](devenv-get-started.md)  
