@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to 
 ms.collection:
-ms.date: 11/22/2023
+ms.date: 04/15/2024
 ms.custom: bap-template
 ---
 
@@ -16,7 +16,7 @@ Developing a copilot requires working with several different components. In this
 
 ## Essential components
 
-A copilot in Business Central extension involves three essential components:
+A copilot in a Business Central extension involves three essential components:
 
 - The prompt dialog page for creating the UI for the copilot.
 - The AI module of the system application that provides the programming interface between Business Central and Azure Open AI Service.
