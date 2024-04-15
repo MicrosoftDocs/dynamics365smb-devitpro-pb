@@ -54,4 +54,5 @@ When the code execution reaches the breakpoint, the condition is evaluated. If t
 
 ## See also
 
+[Get started with AL](devenv-get-started.md)  
 [Debugging in AL](devenv-debugging.md)  
