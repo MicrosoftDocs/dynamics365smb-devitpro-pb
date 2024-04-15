@@ -1,6 +1,6 @@
 ---
 title: Selling Business Central apps through AppSource
-description: Learn how to enable transactability in AppSource for Business Central apps.
+description: Learn how to enable transactability in AppSource and through CSP for Business Central apps.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: bap-template
