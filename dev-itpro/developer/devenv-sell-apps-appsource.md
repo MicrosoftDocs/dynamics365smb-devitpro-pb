@@ -81,7 +81,7 @@ The side-by-side support is the ability to fall back to custom licensing for exi
 As an ISV you can seamlessly license and resell your transactable apps through the managed CSP reseller network, complete with a margin-sharing option for enhanced profitability. For more information, see:
 
 - ISV to CSP private offers FAQs: [Independent Software Vendor (ISV) to Partner private offers FAQ](/partner-center/marketplace/isv-csp-faq).  
-- ISV resells through CSP: [Cloud Solution Provider - Microsoft commercial marketplace](https://learn.microsoft.com/en-us/partner-center/marketplace/cloud-solution-providers)
+- ISV resells through CSP: [Cloud Solution Provider - Microsoft commercial marketplace](/partner-center/marketplace/cloud-solution-providers)
 
 
 ## See also
