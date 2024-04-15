@@ -165,7 +165,7 @@ To enable debugging in versions before [!INCLUDE[prod_short](../includes/prod_sh
 
 ### Firewall settings (port 7049)
 
-To use the development environment and debugger, you must make sure that port `7049` is available.
+To use the development environment and debugger, you must make sure that port `7049` (the default port for the debugger) is open. For on-premises environments, the port can be changed with the server setting ``DeveloperServicesPort``.
 
 ### Debug an online environment with an Embed app published in it
 
