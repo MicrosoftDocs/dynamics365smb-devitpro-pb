@@ -8,7 +8,7 @@ ms.date: 04/16/2023
 ms.author: kepontop
 ms.reviewer: jswymer
 
-ms.custom: bab-template
+ms.custom: bap-template
 ---
 # Telemetry FAQ (Frequently Asked Questions)
 
