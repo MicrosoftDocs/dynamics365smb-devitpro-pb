@@ -3,7 +3,7 @@ title: Table object
 description: This article describes the table object in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/12/2024
+ms.date: 04/17/2024
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -23,13 +23,13 @@ The structure of a table has four sections:
 ## Table extensibility limitations
 
 > [!IMPORTANT]  
-> Only tables with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
+> Only tables with the [Extensible property](properties/devenv-extensible-property.md) set to **true** can be extended.
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
 > [!IMPORTANT]  
-> System and virtual tables can't be extended. System tables are created in the ID range of 2.000.000.000 and above. For more information about object ranges, see [Object Ranges](devenv-object-ranges.md).
+> System and virtual tables can't be extended. System tables are created in the ID range of 2.000.000.000 and above. For more information about object ranges, see [Object ranges](devenv-object-ranges.md).
 
 ## Table object limits
 
@@ -115,10 +115,9 @@ table 50104 Address
 
 The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform will automatically add several system fields to tables. For more information, see [System Fields](devenv-table-system-fields.md).
 
+## See also
 
-## See Also
-
-[AL Development Environment](devenv-reference-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
 [Table Overview](devenv-tables-overview.md)  
 [Table Extension Object](devenv-table-ext-object.md)  
 [Adding tooltips to table and page fields](devenv-adding-tooltips.md)  
