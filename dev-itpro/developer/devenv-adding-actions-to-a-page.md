@@ -1,9 +1,9 @@
 ---
 title: Adding actions to a page
-description: Create and display actions in the ribbon of all pages and group them together under Actions, Navigate, Reports tabs and preview it in the Windows Client
+description: Create and display actions in the ribbon of all pages and group them together under Actions, Navigate, Reports tabs and preview it in the Windows Client.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/15/2022
+ms.date: 04/17/2024
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -28,7 +28,7 @@ For more information about different types of actions and where to use them, see
 > After you have added actions to a page, you can use Designer to alter the actions, like moving an action to or from a promoted category, hiding and action or action group, and more. For more information, see [Use Designer](devenv-inclient-designer.md).
 
 
-## To add Actions to a Page
+## To add actions to a page
 
 The page actions are displayed on the header section. There are multiple tabs to help navigate to the right item.
   
@@ -147,7 +147,6 @@ action(DoThisAction)
 > [!NOTE]  
 > Actions are used in different contexts to drive different experiences in the user interface. Be aware that keyboard shortcuts are not supported across all contexts. For example, the `ShortcutKey` property is not supported for actions defined in `area(sections)` or `area(embedding)`.
 
-
 To help you design shortcuts, keep the following information in mind:
 
 - Some shortcuts have default assignments, either defined by the platform or in the base application. Don't reuse shortcuts that are already assigned for different purposes. For a list of these shortcuts, see [Keyboard Shortcuts for the Dynamics 365 Business Central Web Client](/dynamics365/business-central/keyboard-shortcuts). Try to be consistent with shortcuts used across pages, reusing shortcuts for similar actions. 
@@ -160,7 +159,7 @@ To help you design shortcuts, keep the following information in mind:
 
 ## See also  
 
-[Actions Overview](devenv-actions-overview.md)  
-[Pages Overview](devenv-pages-overview.md)  
-[Promoted Actions](devenv-promoted-actions.md)  
+[Actions overview](devenv-actions-overview.md)  
+[Pages overview](devenv-pages-overview.md)  
+[Promoted actions](devenv-promoted-actions.md)  
 [Available icons](https://aka.ms/bcicons)
