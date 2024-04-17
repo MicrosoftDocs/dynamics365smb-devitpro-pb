@@ -1,8 +1,10 @@
 ---
-title: "Microsoft Dynamics 365 Business Central Server Events"
+title: Microsoft Dynamics 365 Business Central Server Events
 description: Learn about Microsoft Dynamics 365 Business Central Server Events. Events have the source BusinessCentralServer.
-ms.custom: bap-template
-ms.date: 04/01/2021
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual

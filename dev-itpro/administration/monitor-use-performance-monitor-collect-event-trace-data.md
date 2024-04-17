@@ -1,10 +1,13 @@
 ---
 title: "How to: Use Performance Monitor to Collect Event Trace Data"
-ms.custom: bap-template
-ms.date: 04/01/2021
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
+author: jswymer
 ---
 # How to: Use Performance Monitor to Collect Event Trace Data
 This topic describes how to use Windows Performance Monitor to collect event trace data for [!INCLUDE[server](../developer/includes/server.md)]. To collect trace event data, you create a Data Collector Set, and then start the Data Collector Set.  

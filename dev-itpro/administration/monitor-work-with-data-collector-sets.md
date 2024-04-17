@@ -1,6 +1,9 @@
 ---
 title: "Working with Data Collector sets"
-ms.custom: bap-template
+description: Explains how to use data collection sets.
+ms.custom
+  - bap-template
+  - evergreen
 ms.date: 01/04/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op

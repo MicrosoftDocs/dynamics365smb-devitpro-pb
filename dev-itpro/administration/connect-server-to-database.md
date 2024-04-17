@@ -3,14 +3,17 @@ title: Server Instance Database Connection
 description: This procedure describes how to use the Server Administration tool to change the Dynamics NAV database to which a Server instance connects.
 author: jswymer
 ms.author: jswymer
-ms.custom: bap-template
-ms.date: 04/01/2021
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms-topic: how-to
 ---
 
 # Connecting a Business Central Server Instance to a Database
+
 This procedure describes how to use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to change the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database to which a [!INCLUDE[server](../developer/includes/server.md)] instance connects.  
 
 ### To connect a database to a [!INCLUDE[server](../developer/includes/server.md)] instance  
