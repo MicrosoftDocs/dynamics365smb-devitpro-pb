@@ -2,7 +2,7 @@
 title: User Authentication with NavUserPassword
 description: Learn how to set up NAVUserPassword for authenticating users.
 ms.custom: bap-template
-ms.date: 04/01/2021
+ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer

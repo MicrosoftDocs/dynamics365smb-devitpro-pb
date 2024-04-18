@@ -1,10 +1,12 @@
 ---
 title: System Requirements for Business Central 2022 Release Wave 2
 description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central version 21 on-premises.
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ms.service: dynamics-365-op
 ms.topic: overview
-ms.date: 01/10/2022
+ms.date: 04/16/2024
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer

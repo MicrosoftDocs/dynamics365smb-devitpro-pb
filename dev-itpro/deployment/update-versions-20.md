@@ -6,8 +6,10 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 10/23/2023
-ms.custom: bap-template
+ms.date: 04/16/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # Dynamics 365 Business Central On-Premises 2022 Release Wave 1 Updates

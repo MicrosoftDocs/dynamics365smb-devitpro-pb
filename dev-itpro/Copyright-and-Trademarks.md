@@ -2,7 +2,6 @@
 title: "Copyright and Trademarks"
 description: Landing page for legal notices for Business Central on-premises.
 author: solsen
-ms.custom: na
 ms.date: 10/01/2022
 ms.reviewer: na
 ms.topic: article

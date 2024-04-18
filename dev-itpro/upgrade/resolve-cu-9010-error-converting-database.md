@@ -1,8 +1,8 @@
 ---
 title: "Resolving Codeunit 9010 Compilation Error"
 description: "Explains how to resolve the compilation error that you get for Codeunit 9010 when converting a database from Dynamics NAV 2018."
-ms.custom: na
-ms.date: 04/01/2021
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.topic: conceptual
 author: jswymer

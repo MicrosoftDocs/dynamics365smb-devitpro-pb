@@ -8,7 +8,7 @@ ms.date: 12/05/2023
 ms.author: jswymer
 ms.reviewer: jswymer
 
-ms.custom: bab-template
+ms.custom: bap-template
 ---
 # Controlling Telemetry Cost
 
