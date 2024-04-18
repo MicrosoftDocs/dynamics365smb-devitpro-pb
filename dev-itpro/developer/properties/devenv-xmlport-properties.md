@@ -1,6 +1,5 @@
 ---
 title: "XMLport Properties"
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: reference
 ms.assetid: 1c8d76d0-27e6-409a-b7ec-057763c9d2c7

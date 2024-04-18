@@ -2,7 +2,6 @@
 title: "Codeunit Object"
 description: "Description of the codeunit object."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7

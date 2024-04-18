@@ -2,7 +2,6 @@
 title: "AutoSave Property"
 description: "Sets whether imported records are automatically written to the table."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

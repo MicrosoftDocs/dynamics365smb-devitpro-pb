@@ -2,7 +2,6 @@
 title: "Compiler Error AL0284"
 description: "The type of the parameter '{1}' on the event subscriber '{0}' does not match the expected type '{2}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

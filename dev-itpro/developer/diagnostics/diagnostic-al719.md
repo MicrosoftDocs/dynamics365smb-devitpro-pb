@@ -2,7 +2,6 @@
 title: "Compiler Information AL0719"
 description: "Argument {0}: The argument should be a valid Field type."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

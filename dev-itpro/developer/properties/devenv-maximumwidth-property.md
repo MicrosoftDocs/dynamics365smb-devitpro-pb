@@ -2,7 +2,6 @@
 title: "MaximumWidth Property"
 description: "Specifies the maximum width that the control add-in can be stretched to."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0106"
 description: "A variable that belongs to the public API cannot be removed, because it will break dependent extensions referencing this variable."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

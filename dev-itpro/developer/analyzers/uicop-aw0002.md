@@ -2,7 +2,6 @@
 title: "UICop Warning AW0002"
 description: "The Web client does not support displaying both Actions and Fields in Cue Groups."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

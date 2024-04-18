@@ -2,7 +2,6 @@
 title: "Compiler Warning AL0679"
 description: "The application object '{0}' is not included in any entitlement and will therefore not be accessible in the cloud."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

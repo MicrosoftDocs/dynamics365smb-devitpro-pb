@@ -2,7 +2,6 @@
 title: "Session.GetCurrentModuleExecutionContext() Method"
 description: "Gets the current session's execution context for the currently executing module."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

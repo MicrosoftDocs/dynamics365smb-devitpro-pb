@@ -2,7 +2,6 @@
 title: "Compiler Error AL0484"
 description: "The property '{0}' must be alphanumeric."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

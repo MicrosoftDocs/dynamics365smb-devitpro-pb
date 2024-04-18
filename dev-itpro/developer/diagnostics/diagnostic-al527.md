@@ -2,7 +2,6 @@
 title: "Compiler Error AL0527"
 description: "The SQL timestamp field '{0}' cannot be part of the keys for table '{1}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

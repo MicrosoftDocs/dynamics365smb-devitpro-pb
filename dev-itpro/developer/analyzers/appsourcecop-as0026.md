@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0026"
 description: "The type and subtype of parameters cannot be modified in events and external procedures."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: AL development environment reference overview
 description: "Overview of the objects in the AL Language development environment."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/19/2024
 ms.topic: overview
 ms.author: solsen

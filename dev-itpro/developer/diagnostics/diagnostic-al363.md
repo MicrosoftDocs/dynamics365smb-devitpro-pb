@@ -2,7 +2,6 @@
 title: "Compiler Error AL0363"
 description: "The directory separator used in this property value is not compatible with the current operating system."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

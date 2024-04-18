@@ -2,7 +2,6 @@
 title: "Compiler Error AL0529"
 description: "The name of columns in queries of the type API must be alphanumeric."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

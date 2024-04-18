@@ -2,7 +2,6 @@
 title: "Notification.GetData(Text) Method"
 description: "Retrieves data that was passed to a notification instance as specified by a SETDATA method call."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

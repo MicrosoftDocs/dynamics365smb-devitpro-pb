@@ -2,7 +2,6 @@
 title: "PerTenantExtensionCop Error PTE0006"
 description: "Encryption key functions must not be invoked."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: Test the advanced sample extension
 description: Includes test code for the advanced example extension.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: solsen

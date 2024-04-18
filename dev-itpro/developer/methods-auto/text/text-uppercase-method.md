@@ -2,7 +2,6 @@
 title: "Text.UpperCase(Text) Method"
 description: "Converts all letters in a string to uppercase."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

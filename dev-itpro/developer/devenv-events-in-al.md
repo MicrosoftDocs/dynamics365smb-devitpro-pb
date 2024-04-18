@@ -3,7 +3,6 @@ title: "Events in Microsoft Dynamics 365 Business Central"
 description: Events is a programming concept that can ease application upgrade and limit the code modifications in customized applications during platform changes. 
 author: jswymer
 ms.author: solsen
-ms.custom: na
 ms.date: 11/11/2021
 ms.topic: conceptual
 ---

@@ -2,7 +2,6 @@
 title: "TestRequestPage.Next() Method"
 description: "Sets the current row of the test page as the next row in the data set."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

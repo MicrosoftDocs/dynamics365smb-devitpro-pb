@@ -2,7 +2,6 @@
 title: Designing pages having multiple lists
 description: "Design and implementation tips for pages that display multiple lists."
 author: mikebcMSFT
-ms.custom: na
 ms.date: 12/15/2023
 ms.reviewer: jswymer
 ms.topic: conceptual

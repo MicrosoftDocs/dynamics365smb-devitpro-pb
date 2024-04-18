@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL0569"
 description: "A page of type Role Center cannot have procedures."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

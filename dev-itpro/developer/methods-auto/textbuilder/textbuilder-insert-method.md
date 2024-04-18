@@ -2,7 +2,6 @@
 title: "TextBuilder.Insert(Integer, Text) Method"
 description: "Inserts a string into this TextBuilder instance at the specified character position."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0194"
 description: "Remember to specify either the 'OnAction' trigger or the 'RunObject' property on an action."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

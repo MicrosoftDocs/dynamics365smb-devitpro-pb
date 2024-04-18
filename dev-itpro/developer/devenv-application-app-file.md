@@ -2,7 +2,6 @@
 title: The Microsoft_Application.app file
 description: The Microsoft_Application.app file encapsulates all of the extensions that make up a solution for Business Central.
 ms.author: solsen
-ms.custom: na
 ms.date: 01/16/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

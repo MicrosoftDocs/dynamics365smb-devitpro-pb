@@ -2,7 +2,6 @@
 title: "ErrorInfo.CustomDimensions([Dictionary of [Text, Text]]) Method"
 description: "Set of additional dimensions, specified as a dictionary that relates to the error."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Compiler Error AL0301"
 description: "A list must end with a member; not a separator {0}."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

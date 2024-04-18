@@ -2,7 +2,6 @@
 title: "OnQueryClosePage (Page) Trigger"
 description: "Runs when a page closes and before the OnClosePage trigger executes."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

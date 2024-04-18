@@ -2,7 +2,6 @@
 title: "Text.SelectStr(Integer, Text) Method"
 description: "Retrieves a substring from a comma-separated string."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

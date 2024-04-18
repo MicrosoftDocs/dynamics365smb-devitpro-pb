@@ -1,7 +1,6 @@
 ---
 title: "Moving between extension scopes"
 description: "Describes how an extension in one scope can be moved into another scope in Business Central."
-ms.custom: na
 ms.author: solsen
 ms.date: 02/24/2022
 ms.topic: conceptual

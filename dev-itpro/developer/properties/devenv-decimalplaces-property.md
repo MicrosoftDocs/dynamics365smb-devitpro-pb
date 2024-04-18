@@ -2,7 +2,6 @@
 title: "DecimalPlaces Property"
 description: "Sets display and storage requirements for the Decimal Data Type."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

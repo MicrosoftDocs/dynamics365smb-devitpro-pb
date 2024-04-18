@@ -2,7 +2,6 @@
 title: "InlineSchema Property"
 description: "Specifies whether an XML schema definition should be included inside an XML document."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

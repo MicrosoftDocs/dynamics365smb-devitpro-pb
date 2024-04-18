@@ -2,7 +2,6 @@
 title: "Xmlport.SetSource(var InStream) Method"
 description: "Sets the source InStream of the XmlPort."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

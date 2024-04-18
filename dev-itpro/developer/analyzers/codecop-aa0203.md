@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0203"
 description: "To avoid confusion, do not give methods the same name as fields or actions in the same scope."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

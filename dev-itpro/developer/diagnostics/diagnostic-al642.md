@@ -2,7 +2,6 @@
 title: "Compiler Warning AL0642"
 description: "Missing XML comment for publicly visible type or member '{0}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

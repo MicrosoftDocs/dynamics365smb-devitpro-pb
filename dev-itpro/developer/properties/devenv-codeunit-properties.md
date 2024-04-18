@@ -1,6 +1,5 @@
 ---
 title: "Codeunit Properties"
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: reference
 author: SusanneWindfeldPedersen

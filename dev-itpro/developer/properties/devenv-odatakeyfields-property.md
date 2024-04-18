@@ -2,7 +2,6 @@
 title: "ODataKeyFields Property"
 description: "Specifies the fields to select when using OData."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Record.AddLoadFields([Any,...]) Method"
 description: "Specifies fields to be initially loaded when the record is retrieved from its data source."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

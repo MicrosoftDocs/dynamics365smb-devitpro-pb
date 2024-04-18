@@ -2,7 +2,6 @@
 title: "Compiler Error AL0707"
 description: "Layouts of type '{0}' must specify a LayoutFile with one of the following extensions: {1}."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

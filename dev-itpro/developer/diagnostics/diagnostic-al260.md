@@ -2,7 +2,6 @@
 title: "Compiler Error AL0260"
 description: "The key '{0}' on table '{1}' cannot start with the fields defined for the primary key."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

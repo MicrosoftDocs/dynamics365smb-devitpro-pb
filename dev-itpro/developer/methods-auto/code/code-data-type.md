@@ -2,7 +2,6 @@
 title: "Code Data Type"
 description: "Denotes a special type of string that is converted to uppercase and removes any trailing or leading spaces."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

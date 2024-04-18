@@ -2,7 +2,6 @@
 title: "Database.UserSecurityId() Method"
 description: "Gets the unique identifier of the user that is logged on to the current session."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

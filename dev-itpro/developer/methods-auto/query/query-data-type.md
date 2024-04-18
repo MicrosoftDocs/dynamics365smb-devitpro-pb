@@ -2,7 +2,6 @@
 title: "Query Data Type"
 description: "Enables you to retrieve data from multiple tables and combine the data in single dataset."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

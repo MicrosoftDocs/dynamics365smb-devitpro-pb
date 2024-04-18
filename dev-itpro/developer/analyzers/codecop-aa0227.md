@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0227"
 description: "In upgrade codeunits always remember to specify optional return values on methods that can cause run-time errors."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

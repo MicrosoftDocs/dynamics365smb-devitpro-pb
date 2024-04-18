@@ -2,7 +2,6 @@
 title: "InherentPermissions Attribute"
 description: "Specifies the permissions assigned to the scope of the method."
 ms.author: solsen
-ms.custom: na
 ms.date: 10/18/2022
 ms.topic: reference
 author: SusanneWindfeldPedersen

@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0021"
 description: "Variable declarations should be ordered by type."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

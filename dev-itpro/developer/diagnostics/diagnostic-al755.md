@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL0755"
 description: "The '{0}' already defines a built-in member called '{1}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

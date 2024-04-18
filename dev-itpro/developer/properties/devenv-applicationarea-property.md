@@ -2,7 +2,6 @@
 title: "ApplicationArea Property"
 description: "Sets the application areas that apply to the control."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

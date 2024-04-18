@@ -2,7 +2,6 @@
 title: "System.GuiAllowed() Method"
 description: "Checks whether the AL code can show any information on the screen."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

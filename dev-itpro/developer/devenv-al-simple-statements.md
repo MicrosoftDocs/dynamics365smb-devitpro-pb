@@ -1,7 +1,6 @@
 ---
 title: AL simple statements
 description: Describes the simple, single-line statements in AL for Business Central with examples
-ms.custom: na
 ms.date: 03/01/2024
 ms.topic: conceptual
 ms.author: solsen

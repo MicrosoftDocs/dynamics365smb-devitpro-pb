@@ -2,7 +2,6 @@
 title: "AppSourceCop Warning AS0119"
 description: "The source symbol's MovedTo property value does not match the destination AppId."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

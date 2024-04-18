@@ -2,7 +2,6 @@
 title: "Compiler Error AL1077"
 description: "An error was encountered when trying to load the workspace: {0}."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

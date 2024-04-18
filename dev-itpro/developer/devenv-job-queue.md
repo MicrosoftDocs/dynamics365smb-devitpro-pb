@@ -1,7 +1,6 @@
 ---
 title: Job queue
 description: Learn about how the job queue works
-ms.custom: na
 ms.date: 12/18/2023
 ms.topic: conceptual
 author: jswymer

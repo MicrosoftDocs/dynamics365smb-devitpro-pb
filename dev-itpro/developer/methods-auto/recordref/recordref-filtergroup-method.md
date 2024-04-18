@@ -2,7 +2,6 @@
 title: "RecordRef.FilterGroup([Integer]) Method"
 description: "Changes the filter group that is being applied to the table."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Compiler Error AL0522"
 description: "Property value {0} is not in the values for enum '{1}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

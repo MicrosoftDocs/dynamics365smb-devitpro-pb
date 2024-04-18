@@ -2,7 +2,6 @@
 title: "Compiler Fatal Error AL1100"
 description: "File name '{0}' is empty, contains invalid characters, has a drive specification without an absolute path, or is too long."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

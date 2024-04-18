@@ -2,7 +2,6 @@
 title: "NavApp.IsEntitled(Text [, Guid]) Method"
 description: "Determines if the current user is entitled to a specific entitlement id for the application."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

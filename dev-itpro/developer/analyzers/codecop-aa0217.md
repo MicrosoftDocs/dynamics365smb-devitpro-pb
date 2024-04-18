@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0217"
 description: "Use a text constant or label for format string in StrSubstNo."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Database.SetDefaultTableConnection(TableConnectionType, Text [, Boolean]) Method"
 description: "Establishes a connection to an external database based on a previously registered connection of the specified type."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

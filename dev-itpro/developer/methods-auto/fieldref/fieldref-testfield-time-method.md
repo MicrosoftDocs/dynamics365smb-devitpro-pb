@@ -2,7 +2,6 @@
 title: "FieldRef.TestField(Time) Method"
 description: "Determines whether the contents of a field matches a given value."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

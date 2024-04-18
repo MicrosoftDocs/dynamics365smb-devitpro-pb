@@ -1,7 +1,6 @@
 ---
 title: "Module Architecture"
 description: "Learn about the internal components of modules in the System Application."
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: bholtorf

@@ -2,7 +2,6 @@
 title: "Compiler Error AL0305"
 description: "The length of the application object identifier '{0}' cannot exceed {1} characters."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

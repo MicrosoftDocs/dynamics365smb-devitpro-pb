@@ -2,7 +2,6 @@
 title: "IsolatedStorage.Get(Text [, DataScope], var SecretText) Method"
 description: "Gets the value associated with the specified key."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

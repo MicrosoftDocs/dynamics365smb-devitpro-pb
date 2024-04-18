@@ -2,7 +2,6 @@
 title: "RecordRef.HasFilter() Method"
 description: "Determines whether a filter has been applied to the table that the RecordRef refers to."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "AppSourceCop Warning AS0086"
 description: "Increasing the length of a field is not allowed as it might break the runtime behavior of dependent extensions referencing it."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

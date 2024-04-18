@@ -2,7 +2,6 @@
 title: "RecordRef.CountApprox() Method"
 description: "Gets an approximate count of the number of records in the table"
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

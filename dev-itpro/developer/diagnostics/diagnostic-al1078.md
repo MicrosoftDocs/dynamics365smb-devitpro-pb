@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL1078"
 description: "Key vault URL is not a valid Azure key vault URL."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

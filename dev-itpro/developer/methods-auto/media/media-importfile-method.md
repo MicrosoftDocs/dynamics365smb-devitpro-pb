@@ -2,7 +2,6 @@
 title: "Media.ImportFile(Text, Text [, Text]) Method"
 description: "Adds a media type, such as a JPEG image, from a file to a Media data type field of a record for displaying the media with the record in the client."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

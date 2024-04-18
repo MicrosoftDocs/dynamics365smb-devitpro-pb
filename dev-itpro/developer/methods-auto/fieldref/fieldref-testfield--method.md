@@ -2,7 +2,6 @@
 title: "FieldRef.TestField() Method"
 description: "Tests that the content of the field is not zero or blank (empty string)."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

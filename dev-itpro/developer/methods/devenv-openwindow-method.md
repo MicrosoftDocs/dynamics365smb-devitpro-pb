@@ -1,7 +1,6 @@
 ---
 title: "OpenWindow Method"
 description: "The OpenWindow method in control add-in for Business Central"
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: reference
 author: solsen

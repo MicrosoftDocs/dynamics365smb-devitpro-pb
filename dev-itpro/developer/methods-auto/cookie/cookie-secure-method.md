@@ -2,7 +2,6 @@
 title: "Cookie.Secure() Method"
 description: "True if the cookie is Secure, false otherwise."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Compiler Error AL0637"
 description: "The property 'NavigationPageId' must be defined on a page of pagetype 'API'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "ErrorBehavior Attribute"
 description: "Specifies the behavior of collectable errors inside the method scope."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/15/2022
 ms.topic: reference
 author: SusanneWindfeldPedersen
