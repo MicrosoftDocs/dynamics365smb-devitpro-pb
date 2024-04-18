@@ -1,7 +1,7 @@
 ---
 title: "Working with Data Collector sets"
 description: Explains how to use data collection sets.
-ms.custom
+ms.custom:
   - bap-template
   - evergreen
 ms.date: 01/04/2024
