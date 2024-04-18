@@ -3,7 +3,6 @@ title: How to Alter Databases
 description: Modify the Database property settings by using the Alter Database window, which gives you access to the same settings as the New Database window.
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: article
 author: jswymer
 ---

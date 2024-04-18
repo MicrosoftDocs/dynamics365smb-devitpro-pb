@@ -4,7 +4,6 @@ description: "Overview of how snapshot debugging allows recording running AL cod
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 09/13/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

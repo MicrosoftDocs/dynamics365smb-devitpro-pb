@@ -4,7 +4,6 @@ description: "Describes what Rapid Application Development is and how you publis
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 08/08/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

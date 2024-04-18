@@ -3,7 +3,6 @@ title: "Formatting the data in a field"
 description: "Learn how to format data in a field, either on the table level or on the page/report level."
 ms.custom: na
 ms.date: 12/01/2023
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

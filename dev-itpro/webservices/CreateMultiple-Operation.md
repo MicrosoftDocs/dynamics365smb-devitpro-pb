@@ -2,7 +2,6 @@
 title: "CreateMultiple operation"
 ms.custom: na
 ms.date: 12/28/2023
-ms.reviewer: na
 ms.topic: conceptual
 description: Learn how to create multiple records with Microsoft's CreateMultiple Operation. Understand method signatures, parameters, results, and handle faults.
 ---

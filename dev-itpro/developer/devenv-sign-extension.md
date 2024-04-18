@@ -4,7 +4,6 @@ description: This article explains how to sign an AL app package file with a pfx
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 03/12/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

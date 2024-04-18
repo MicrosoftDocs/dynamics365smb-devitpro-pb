@@ -4,7 +4,6 @@ description: "Description of the process of upublishing and uninstalling an exte
 author: jswymer
 ms.custom: na
 ms.date: 05/23/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ---

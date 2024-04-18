@@ -4,7 +4,6 @@ description: "Enable users to quickly navigate and perform actions by adding the
 author: jswymer
 ms.custom: na
 ms.date: 08/08/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ---

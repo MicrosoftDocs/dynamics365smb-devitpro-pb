@@ -4,7 +4,6 @@ description: Use SQL Server Query Store to troubleshoot query performance. SQL S
 author: KennieNP
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: troubleshooting
 ms.author: kepontop
 ---

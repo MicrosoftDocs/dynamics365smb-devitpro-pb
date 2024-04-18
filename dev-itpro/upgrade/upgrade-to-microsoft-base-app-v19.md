@@ -3,7 +3,6 @@ title:  "Upgrading Customized C/AL Application to Microsoft Base Application for
 description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 19
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.reviewer: na
 ms.topic: article
 ms.author: jswymer
 author: jswymer

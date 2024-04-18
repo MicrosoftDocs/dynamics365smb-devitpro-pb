@@ -4,7 +4,6 @@ description: Describes the steps involved in creating a report that uses an RDL 
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 12/01/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

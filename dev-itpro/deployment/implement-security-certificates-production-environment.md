@@ -5,7 +5,6 @@ ms.custom:
   - bap-template
   - evergreen
 ms.date: 04/16/2024
-ms.reviewer: na
 ms.service: dynamics-365-op
 ms.topic: how-to
 author: jswymer

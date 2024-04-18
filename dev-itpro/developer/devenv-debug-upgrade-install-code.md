@@ -4,7 +4,6 @@ description: Overview of debugging upgrade and install codeunits in AL for Busin
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 08/01/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

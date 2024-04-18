@@ -4,7 +4,6 @@ description: Pages are the main way to display and organize data.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 03/21/2024
-ms.reviewer: na
 ms.topic: overview
 ms.author: solsen
 ---

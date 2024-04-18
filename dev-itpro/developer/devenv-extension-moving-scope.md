@@ -4,7 +4,6 @@ description: "Describes how an extension in one scope can be moved into another 
 ms.custom: na
 ms.author: solsen
 ms.date: 02/24/2022
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

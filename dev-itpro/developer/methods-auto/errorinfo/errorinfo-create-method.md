@@ -4,7 +4,6 @@ description: "Creates a new ErrorInfo object."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/24/2021
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -4,7 +4,6 @@ description: "Sets APIPublisher property for pages and queries."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 ms.assetid: 18e6df94-639e-4c5f-99ed-5729037bb719
 caps.latest.revision: 13

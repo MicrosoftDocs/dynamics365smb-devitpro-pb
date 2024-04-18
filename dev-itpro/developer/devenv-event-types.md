@@ -3,7 +3,6 @@ title: "Event types"
 description: Dynamics 365 Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global and trigger events.
 ms.custom: na
 ms.date: 12/07/2022
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

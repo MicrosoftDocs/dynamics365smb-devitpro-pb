@@ -4,7 +4,6 @@ description: "Description of how to generate delta files with the ExportToNewSyn
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

@@ -3,7 +3,6 @@ title: Contribute to the Help
 description: Tips and tricks for working with the GitHub repos and Markdown files for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.date: 11/13/2023
 ms.author: solsen

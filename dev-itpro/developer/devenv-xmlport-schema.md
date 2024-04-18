@@ -4,7 +4,6 @@ description: "An XMLport schema determines which data is exported from or import
 author: blrobl
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: brobledodiaz
 ---

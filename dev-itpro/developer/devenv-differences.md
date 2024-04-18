@@ -4,7 +4,6 @@ description: Describes the various differences between the C/SIDE and AL for Bus
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 05/23/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

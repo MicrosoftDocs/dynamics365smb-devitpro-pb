@@ -4,7 +4,6 @@ description: "Specifies the scope of a method."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/15/2022
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

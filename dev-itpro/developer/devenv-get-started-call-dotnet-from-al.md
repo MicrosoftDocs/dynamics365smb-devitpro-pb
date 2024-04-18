@@ -3,7 +3,6 @@ title: Get started with Microsoft .NET Interoperability from AL
 description: Description of the process of referencing and using .NET types
 author: solsen
 ms.date: 03/01/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started

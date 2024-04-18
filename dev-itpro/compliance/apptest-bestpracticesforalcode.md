@@ -4,7 +4,6 @@ description: "Best Practices for writing AL code for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/11/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

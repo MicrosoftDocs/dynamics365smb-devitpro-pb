@@ -4,7 +4,6 @@ description: Troubleshooting guidelines for SAML2 token errors that can occur wh
 author: jswymer
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ---
 # Troubleshooting: SAML2 token errors with Microsoft Entra ID / Office 365 Authentication

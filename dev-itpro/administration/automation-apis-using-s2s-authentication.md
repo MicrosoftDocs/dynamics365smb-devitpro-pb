@@ -4,7 +4,6 @@ description: Service-to-service authentication enables external services to conn
 author: henrikwh
 ms.custom: na
 ms.date: 08/23/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ---

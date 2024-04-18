@@ -4,7 +4,6 @@ description: A FactBox is located on the right-most side of a page. This area is
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

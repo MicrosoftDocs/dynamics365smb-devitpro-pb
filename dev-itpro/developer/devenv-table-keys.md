@@ -3,7 +3,6 @@ title: "Table Keys"
 description: Learn about table keys in Business Central
 ms.custom: na
 ms.date: 07/07/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.assetid: 973de351-209a-44b7-b8f6-7218a1fa69e6
 author: jswymer

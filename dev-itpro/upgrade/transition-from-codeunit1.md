@@ -3,7 +3,6 @@ title: "Transitioning from Codeunit 1"
 description: "Learn how to convert your code as part of the upgrade to version 14 of Business Central."
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

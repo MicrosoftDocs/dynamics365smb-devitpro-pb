@@ -4,7 +4,6 @@ description: "Sets publisher of the API endpoint that the query is exposed in."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2023
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

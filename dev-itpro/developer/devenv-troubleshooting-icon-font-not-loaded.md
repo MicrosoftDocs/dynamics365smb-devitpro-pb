@@ -3,7 +3,6 @@ title: Troubleshooting Icon Font Not Loaded
 description: Learn how to fix icon font issues on client types.
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: troubleshooting
 author: blrobl
 ---

@@ -4,7 +4,6 @@ description: Describes what makes up the app identity of an app for Business Cen
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/01/2021
-ms.reviewer: na
 ms.topic: article
 ms.author: solsen
 ---

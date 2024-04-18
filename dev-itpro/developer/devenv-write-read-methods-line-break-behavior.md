@@ -4,7 +4,6 @@ description: "Write, WriteText, Read, and ReadText Method Behavior for Line Endi
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

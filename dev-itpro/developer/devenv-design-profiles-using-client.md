@@ -4,7 +4,6 @@ description: "Gives an overview of how to create profiles by using the client to
 author: jswymer
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ---

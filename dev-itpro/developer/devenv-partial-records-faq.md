@@ -4,7 +4,6 @@ description: Answers some of the most typical questions about the partial record
 ms.author: jswymer
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

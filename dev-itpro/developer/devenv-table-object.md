@@ -4,7 +4,6 @@ description: This article describes the table object in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 03/12/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 --- 

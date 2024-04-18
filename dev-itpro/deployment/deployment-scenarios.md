@@ -4,7 +4,6 @@ description: This article describes how to install and configure the Dynamics NA
 ms.author: jswymer
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

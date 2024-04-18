@@ -4,7 +4,6 @@ description: "Entitlements cannot be defined in an extension because their use i
 ms.author: solsen
 ms.custom: na
 ms.date: 07/04/2022
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -3,7 +3,6 @@ title: Tables overview
 description: Tables are the objects in which you store and manipulate data, and you create pages and reports in order to access and view the data in the tables.
 ms.custom: na
 ms.date: 03/01/2024
-ms.reviewer: na
 ms.topic: overview
 ms.author: solsen
 author: SusanneWindfeldPedersen
