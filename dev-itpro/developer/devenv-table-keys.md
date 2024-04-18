@@ -1,15 +1,14 @@
 ---
-title: "Table Keys"
+title: Table keys
 description: Learn about table keys in Business Central
 ms.custom: na
 ms.date: 07/07/2022
 ms.reviewer: na
 ms.topic: conceptual
-ms.assetid: 973de351-209a-44b7-b8f6-7218a1fa69e6
 author: jswymer
 ---
 
-# Table Keys
+# Table keys
 
 The database management system, which is SQL Server, uses keys to identify rows in a table. Keys identify the rows by combining one or more columns of a table. SQL also uses indexes to speed up data retrieval from rows in a table. This article explains how to create  keys and indexes for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables from AL code.
 
