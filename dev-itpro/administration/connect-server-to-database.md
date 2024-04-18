@@ -9,7 +9,7 @@ ms.custom:
 ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms-topic: how-to
+ms.topic: how-to
 ---
 
 # Connecting a Business Central Server Instance to a Database
