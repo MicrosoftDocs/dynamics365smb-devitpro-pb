@@ -11,7 +11,7 @@ ms.author: solsen
 
 # Table extension object
 
-The table extension object allows you to add extra fields or to change some properties on a table provided by [!INCLUDE [prod_short](includes/prod_short.md)]. In this way, you can add data to the same table and treat it as a single table. For example, you may want to create a table extension for a retail winter sports store. In your solution you want to have `ShoeSize` as an additional field on the customer table. Adding this as an extension allows you to write code for the customer record and also include values for the `ShoeSize`.
+The table extension object allows you to add extra fields or to change some properties on a table provided by [!INCLUDE [prod_short](includes/prod_short.md)]. In this way, you can add data to the same table and treat it as a single table. For example, you might want to create a table extension for a retail winter sports store. In your solution you want to have `ShoeSize` as an extra field on the customer table. Adding this as an extension allows you to write code for the customer record and also include values for the `ShoeSize`.
 
 Along with defining other fields, the table extension is where you write trigger code for your extra fields.
 
@@ -35,7 +35,7 @@ Just like in the table object, you can define keys for fields added in the table
 
 ## Snippet support
 
-Typing the shortcut `ttableext` will create the basic layout for a table extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `ttableext` creates the basic layout for a table extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Properties
 
