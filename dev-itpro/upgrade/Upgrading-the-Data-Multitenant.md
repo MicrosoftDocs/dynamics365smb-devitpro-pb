@@ -1,8 +1,8 @@
 ---
 title: Upgrading the Database to in a Multitenant Deployment
 description: This article describes the tasks required for upgrade the data when you have a multitenant deployment. 
-ms.custom: na
-ms.date: 04/01/2021
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer

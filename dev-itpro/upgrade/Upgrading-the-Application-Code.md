@@ -1,8 +1,8 @@
 ---
 title: Upgrade Application Code
 description: The article explains how to upgrade the application code to version 14 and how to merge code from different versions of the application.
-ms.custom: na
-ms.date: 04/01/2021
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer

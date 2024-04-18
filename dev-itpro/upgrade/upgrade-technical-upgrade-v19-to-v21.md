@@ -1,8 +1,8 @@
 ---
 title: "Technical Upgrade From Version 18 or 19 to Version 21"
 description: Describes how to do a technical upgrade from Business Central V18 and V19 to V21
-ms.custom: na
-ms.date: 03/03/2022
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
