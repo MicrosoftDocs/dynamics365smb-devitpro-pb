@@ -11,7 +11,7 @@ ms.author: solsen
 
 # Table object
 
-Tables are the core objects used to store data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. No matter how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
+Tables are the core objects used to store data in [!INCLUDE [prod_short](includes/prod_short.md)]. No matter how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
 
 The structure of a table has four sections:
 
@@ -118,10 +118,10 @@ The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform will autom
 ## See also
 
 [AL development environment](devenv-reference-overview.md)  
-[Table Overview](devenv-tables-overview.md)  
-[Table Extension Object](devenv-table-ext-object.md)  
+[Table overview](devenv-tables-overview.md)  
+[Table extension object](devenv-table-ext-object.md)  
 [Adding tooltips to table and page fields](devenv-adding-tooltips.md)  
-[SqlTimestamp Property](properties/devenv-sqltimestamp-property.md)  
-[Table Keys](devenv-table-keys.md)  
-[Table, Table Fields, and Table Extension Properties](properties/devenv-table-properties.md)  
-[Object Specifications and Limitations](devenv-object-specifications-limitations.md)   
+[SqlTimestamp property](properties/devenv-sqltimestamp-property.md)  
+[Table keys](devenv-table-keys.md)  
+[Table, table fields, and table extension properties](properties/devenv-table-properties.md)  
+[Object specifications and limitations](devenv-object-specifications-limitations.md)   
