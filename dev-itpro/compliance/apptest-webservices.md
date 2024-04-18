@@ -4,7 +4,6 @@ description: Describes restrictions on UI for web services.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/11/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: freddyk
 ---

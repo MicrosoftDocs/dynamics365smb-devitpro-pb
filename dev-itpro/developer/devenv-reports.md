@@ -3,7 +3,6 @@ title: Reports overview
 description: Use reports to display information from database to structure and summarize information and print documents, such as invoices. 
 ms.custom: na
 ms.date: 12/05/2023
-ms.reviewer: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ms.collection: get-started

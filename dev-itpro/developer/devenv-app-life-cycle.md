@@ -3,7 +3,6 @@ title: Lifecycle of apps and extensions
 description: Overview of the process of updating an app for Business Central, how to update it.
 author: solsen
 ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ms.date: 04/01/2021
@@ -31,7 +30,7 @@ You (our partner) add some features to your app and also some minor bug fixes. T
 
 ### Impact of app updates
 
-Internal and delegated administrators can update AppSource apps from the [[!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]](../administration/tenant-admin-center-manage-apps), and regular users can do so by uninstalling and reinstalling an app in the environment. AppSource apps are automatically updated to the latest version during a major update to an environment, unless the **App Update Cadence** has been set to **With minor and major updates** for the environment in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+Internal and delegated administrators can update AppSource apps from the [[!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]](../administration/tenant-admin-center-manage-apps.md), and regular users can do so by uninstalling and reinstalling an app in the environment. AppSource apps are automatically updated to the latest version during a major update to an environment, unless the **App Update Cadence** has been set to **With minor and major updates** for the environment in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
 ## Scenario 3: Reported bugs in your app
 
@@ -73,7 +72,7 @@ Additionally, there will not be any data loss during uninstall, install, or upgr
 
 When an extensions gets uninstalled, these tables do not get removed. Therefore, when the extension gets reinstalled (or upgraded), the data is still available. You do not need to worry about data loss for choosing the uninstall/install route. However, do keep in mind that if any actions are being performed on the tenant while the extension is uninstalled, the extension's events and such will not be firing, and your app may miss the creation of new data. Try to perform the uninstall/install while the tenant is not online.  
 
-For more information, see [When apps or PTEs cannot be updated by Microsoft](app-maintain.md#when-apps-or-ptes-cannot-be-updated-by-microsoft).  
+For more information, see [When apps or PTEs cannot be updated by Microsoft](app-maintain.md#when-apps-or-ptes-cant-be-updated-by-microsoft).  
 
 ## See also
 

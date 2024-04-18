@@ -4,7 +4,6 @@ description: Learn how you can harden security on the Business Central Server co
 author: SusanneWindfeldPedersen
 
 ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ms.date: 04/01/2021

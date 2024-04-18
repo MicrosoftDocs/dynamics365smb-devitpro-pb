@@ -4,7 +4,6 @@ description: "Design a XMLport by defining the schema. The XMLport object is com
 author: blrobl
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: overview
 ms.author: brobledodiaz
 ---

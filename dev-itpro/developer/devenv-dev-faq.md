@@ -4,7 +4,6 @@ description: Overview of frequently asked questions for development using the AL
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 03/01/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started

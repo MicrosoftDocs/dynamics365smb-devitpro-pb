@@ -4,7 +4,6 @@ description: Describes how you can create runtime packages used for distribution
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 06/03/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

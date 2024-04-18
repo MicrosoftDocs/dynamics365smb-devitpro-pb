@@ -3,7 +3,6 @@ title: "Enabled (Profile) Property"
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 ms.author: solsen
 ---

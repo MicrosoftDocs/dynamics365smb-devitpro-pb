@@ -1,13 +1,17 @@
 ---
-title: "How to: Use PerfView to View Event Trace Data"
-ms.custom: bap-template
-ms.date: 04/01/2021
+title: Use PerfView to View Event Trace Data
+decription: This topic describes how to use PerfView to view event trace data that is stored in an event trace log \(.etl\) file.  
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 # How to: Use PerfView to View Event Trace Data
+
 This topic describes how to use PerfView to view [!INCLUDE[server](../developer/includes/server.md)] event trace data that is stored in an event trace log \(.etl\) file.  
   
 ### To install PerfView  

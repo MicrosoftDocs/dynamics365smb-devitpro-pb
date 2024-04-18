@@ -4,7 +4,6 @@ description: "Using the procedure overload to create multiple procedures with th
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 ms.author: solsen
 ---

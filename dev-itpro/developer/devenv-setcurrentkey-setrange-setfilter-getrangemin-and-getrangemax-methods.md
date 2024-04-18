@@ -3,7 +3,6 @@ title: Filtering records with the SetRange, SetFilter, GetRangeMin, and GetRange
 description: Describes methods that set limits on the value of one or more specified fields, so that only a subset of the records are displayed, modified, deleted, and so on. 
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

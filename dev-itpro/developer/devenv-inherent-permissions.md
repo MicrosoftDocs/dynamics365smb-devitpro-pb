@@ -4,7 +4,6 @@ description: "Description of how inherent permissions work and the InherentPermi
 author: jswymer
 ms.custom: na
 ms.date: 02/27/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ---

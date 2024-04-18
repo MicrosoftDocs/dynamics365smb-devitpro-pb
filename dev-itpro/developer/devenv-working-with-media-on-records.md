@@ -4,7 +4,6 @@ ms.author: solsen
 description: Learn how to upload media, such as an image, to the database for displaying with records in the client. 
 ms.custom: na
 ms.date: 11/08/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

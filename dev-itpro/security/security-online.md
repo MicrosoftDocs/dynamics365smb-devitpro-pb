@@ -4,7 +4,6 @@ description: "Learn about the main aspects of security in your online deployment
 author: jswymer
 
 ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021

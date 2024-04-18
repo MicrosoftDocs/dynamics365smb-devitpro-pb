@@ -1,9 +1,8 @@
 ---
 title: "Upgrading Unmodified C/AL Application to Version 18"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 18
-ms.custom: na
-ms.date: 07/29/2021
-ms.reviewer: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

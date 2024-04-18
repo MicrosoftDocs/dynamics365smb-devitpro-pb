@@ -2,7 +2,6 @@
 title: "Bulk Inserts"
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.assetid: 6bbe737c-305f-48d2-8cd3-857c7efb9866
 caps.latest.revision: 21

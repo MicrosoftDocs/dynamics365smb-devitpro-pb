@@ -3,7 +3,6 @@ title: "Extending the Data Archive extension"
 description: "Overview and examples of how to enable your app to archive data."
 author: bholtorf
 ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: bholtorf
 ms.date: 12/21/2023

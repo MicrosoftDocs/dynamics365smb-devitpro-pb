@@ -4,7 +4,6 @@ description: "Description of the control add-in object type."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 03/31/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

@@ -4,7 +4,6 @@ description: Description of the entitlement object in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 09/27/2023
-ms.reviewer: na
 ms.topic: article
 ms.author: solsen
 ---

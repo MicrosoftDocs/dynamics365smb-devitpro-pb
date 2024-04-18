@@ -4,7 +4,6 @@ description: "Description of the page object in AL for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

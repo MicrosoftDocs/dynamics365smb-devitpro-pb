@@ -4,7 +4,6 @@ description: (v1.0) "Describing the steps you must go through to enable access t
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 01/08/2024
-ms.reviewer: na
 ms.topic: article
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen

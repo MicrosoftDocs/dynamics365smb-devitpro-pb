@@ -3,7 +3,6 @@ title: "Field Calculation Methods"
 description: "CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods"
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.assetid: 22168a6c-9034-4503-bc82-1cae9497762d
 caps.latest.revision: 9

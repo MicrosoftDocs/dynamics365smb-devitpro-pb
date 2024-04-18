@@ -4,7 +4,6 @@ description: Learn about adding documentation to AL code by including XML elemen
 ms.custom: na
 ms.author: solsen
 ms.date: 03/14/2024
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
