@@ -99,3 +99,7 @@ Value := Record.GetRangeMax(Field)
 
 ## See also
 
+[SetRange method](methods-auto/record/record-setrange-method.md)  
+[SetFilter method](methods-auto/record/record-setfilter-method.md)    
+[GetRangeMin method](methods-auto/record/record-getrangemin-method.md)  
+[GetRangeMax method](methods-auto/record/record-getrangemax-method.md)  
