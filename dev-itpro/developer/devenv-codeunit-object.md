@@ -1,6 +1,6 @@
 ---
 title: Codeunit object
-description: Describes the codeunit object in AL for Business Central.
+description: Describes the codeunit object, which is a container for business logic in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ms.date: 04/18/2024
