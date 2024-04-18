@@ -1,5 +1,5 @@
 ---
-title: How to: Use PerfView to View Event Trace Data
+title: Use PerfView to View Event Trace Data
 decription: This topic describes how to use PerfView to view event trace data that is stored in an event trace log \(.etl\) file.  
 ms.custom:
   - bap-template
