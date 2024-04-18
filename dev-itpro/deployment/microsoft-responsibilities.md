@@ -2,7 +2,6 @@
 title: "Microsoft's responsibilities for apps on Business Central online"
 description: Learn about what Microsoft does for your apps and your customers.
 author: jswymer
-ms.custom: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021

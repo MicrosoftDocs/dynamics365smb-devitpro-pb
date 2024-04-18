@@ -2,7 +2,6 @@
 title: Customizing an Integration with Microsoft Dataverse
 description: Learn how to integrate your extension with Microsoft Dataverse. This walkthrough takes you through each step.
 author: bholtorf
-ms.custom: na
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: bholtorf

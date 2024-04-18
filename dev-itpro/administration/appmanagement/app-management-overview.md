@@ -2,7 +2,6 @@
 title: "App Management for ISVs"
 description: The App Management API can help you manage your apps running in different customer Business Central environments.
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: overview
 ms.author: jswymer
