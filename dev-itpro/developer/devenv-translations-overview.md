@@ -3,7 +3,6 @@ title: "Translations Overview"
 description: "An overview of the translation layers of Business Central and the extension model"
 ms.custom: na
 ms.date: 06/15/2021
-ms.reviewer: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ---

@@ -2,7 +2,6 @@
 title: "FlowFilters overview"
 ms.custom: na
 ms.date: 03/31/2023
-ms.reviewer: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ---

@@ -4,7 +4,6 @@ description: "Description of how to discontinue an app that is available on AppS
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 06/10/2021
-ms.reviewer: na
 ms.topic: article
 ms.author: solsen
 ---

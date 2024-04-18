@@ -2,7 +2,6 @@
 title: "Comparing and merging application object source files"
 ms.custom: evergreen
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

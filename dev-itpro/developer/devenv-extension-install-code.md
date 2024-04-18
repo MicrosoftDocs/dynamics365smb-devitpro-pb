@@ -4,7 +4,6 @@ title: "Writing extensions installation code"
 description: "Describes how to add code to run to initialize data when an extension is installed."
 ms.custom: na
 ms.date: 02/04/2022
-ms.reviewer: na
 ms.topic: conceptual
 ---
 

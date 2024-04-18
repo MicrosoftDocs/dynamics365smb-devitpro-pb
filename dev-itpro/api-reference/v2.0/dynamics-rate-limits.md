@@ -4,7 +4,6 @@ description: "Working with API limits in Business central for cloud."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: article
 ms.author: solsen
 ---

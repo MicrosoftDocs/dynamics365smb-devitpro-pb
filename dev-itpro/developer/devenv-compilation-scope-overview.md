@@ -3,7 +3,6 @@ title: Compilation scope overview"
 description: This article explains the configuration and compilation scope for publishing the extension.
 ms.custom: na
 ms.date: 06/28/2022
-ms.reviewer: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ---

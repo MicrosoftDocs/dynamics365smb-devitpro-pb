@@ -4,7 +4,6 @@ description: "The InvokeExtensibilityMethod in control add-in for Business Centr
 ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2022
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

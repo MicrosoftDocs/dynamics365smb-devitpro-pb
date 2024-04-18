@@ -3,7 +3,6 @@ title: "Fix OnBeforeTestRun and OnAfterTestRun after database conversion"
 description: Explains how to resolve the problems with the OnBeforeTestRun and OnAfterTestRun triggers you convert a Dynamics NAV database.
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

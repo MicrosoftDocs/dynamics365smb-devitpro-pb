@@ -4,7 +4,6 @@ description: "Experienced partners can help users get started with confidence by
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 12/21/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

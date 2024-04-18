@@ -4,7 +4,6 @@ description: Explains how to set the resource exposure policy for allowing downl
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 01/03/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

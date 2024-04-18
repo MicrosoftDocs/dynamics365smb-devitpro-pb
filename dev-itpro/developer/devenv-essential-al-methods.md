@@ -2,7 +2,6 @@
 title: "Essential AL Methods"
 ms.custom: na
 ms.date: 09/28/2022
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 description: Master AL programming with essential methods. Learn the most common methods, their uses, and how to add specialized functionality to your applications.

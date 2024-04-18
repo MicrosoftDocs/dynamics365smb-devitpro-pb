@@ -3,7 +3,6 @@ title: "Nonclustered Columnstore Indexes (NCCI)"
 description: Provides an introduction to nonclustered columnstore indexes in Business Central.
 ms.custom: na
 ms.date: 01/28/2022
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

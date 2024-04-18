@@ -3,7 +3,6 @@ title: " Resolving Table 8620 Compilation Error"
 description: Explains how to resolve the compilation error that you get for Table 8620 when converting a database from Dynamics NAV to Business Central.
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

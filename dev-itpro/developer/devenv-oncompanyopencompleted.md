@@ -4,7 +4,6 @@ description: Explains why you should use OnAfterLogin instead of OnCompanyOpen.
 author: jswymer
 ms.custom: na
 ms.date: 05/23/2022
-ms.reviewer: na
 ms.topic: conceptual
 
 ms.author: jswymer

@@ -3,7 +3,6 @@ title: "Entitlements and Permission Sets Overview"
 description: Learn about the different built-in methods to control which users can do what so that you can design the Business Central permission sets more precisely. 
 ms.custom: na
 ms.date: 08/18/2023
-ms.reviewer: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ---

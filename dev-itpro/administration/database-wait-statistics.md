@@ -3,9 +3,6 @@ title: "Database Wait Statistics in Dynamics 365 Business Central"
 description: "Description about wait statistics page"
 author: jswymer
 ms.date: 06/21/2022
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: 
 ms.author: jswymer
 ms.custom: 

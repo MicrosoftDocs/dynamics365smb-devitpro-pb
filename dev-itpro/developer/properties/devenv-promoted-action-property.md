@@ -3,7 +3,6 @@ title: "Promoted (Action) Property"
 description: "Sets the value that indicates whether the selected action is elevated to a promoted category in the action bar."
 ms.custom: na
 ms.date: 07/08/2021
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

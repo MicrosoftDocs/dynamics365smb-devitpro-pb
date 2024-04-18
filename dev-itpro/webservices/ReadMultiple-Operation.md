@@ -2,7 +2,6 @@
 title: "ReadMultiple Operation"
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ---
 # ReadMultiple Operation

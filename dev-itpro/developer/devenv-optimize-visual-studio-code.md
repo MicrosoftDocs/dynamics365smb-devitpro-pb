@@ -4,7 +4,6 @@ description: Explains how yo configure Visual Studio Code to get better performa
 author: jswymer
 ms.custom: na
 ms.date: 06/22/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ---

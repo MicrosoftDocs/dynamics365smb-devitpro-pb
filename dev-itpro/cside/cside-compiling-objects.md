@@ -2,7 +2,6 @@
 title: "Compiling Objects"
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: article
 ms.assetid: 386dbfff-1518-4731-a2b1-424b556ed42a
 caps.latest.revision: 14

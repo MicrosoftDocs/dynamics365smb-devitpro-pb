@@ -3,7 +3,6 @@ title: "Extract data from Business Central"
 description: Explains how to extract data from Business Central with different tools
 ms.custom: bap-template
 ms.date: 06/12/2023
-ms.reviewer: na
 ms.topic: how-to
 ms.search.keywords: Power BI, reports, data, data warehouse, etl
 author: kennieNP

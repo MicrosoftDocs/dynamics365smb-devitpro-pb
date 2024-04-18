@@ -4,7 +4,6 @@ description: "Handling solutions in the AL language that contain multiple projec
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 11/30/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

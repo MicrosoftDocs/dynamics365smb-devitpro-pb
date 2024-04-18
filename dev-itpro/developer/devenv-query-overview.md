@@ -3,7 +3,6 @@ title: "Query Overview"
 description: "Description of the query object."
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: overview
 author: jswymer
 ---

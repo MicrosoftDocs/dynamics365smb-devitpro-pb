@@ -4,7 +4,6 @@ description: Interfaces in AL are syntactical contracts that can be implemented 
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 03/01/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started

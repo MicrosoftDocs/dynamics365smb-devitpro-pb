@@ -3,7 +3,6 @@ title: Page 6401 Flow Selector Replacement Code for C/AL to AL conversion
 description: The article includes replacement code for Page 6401 Flow Selector for fixing compilation errors when converting a Business Central version 14 application to version 15 AL. 
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

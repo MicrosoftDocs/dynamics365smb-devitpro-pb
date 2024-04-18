@@ -2,7 +2,6 @@
 title: Deploy the Web Server Components
 description: Understand the network architecture, users, security, deployment phases for installing and configuring the Business Central Web Server Components.
 ms.date: 10/11/2021
-ms.reviewer: na
 ms.topic: overview
 author: jswymer
 ms.custom: bap-template 

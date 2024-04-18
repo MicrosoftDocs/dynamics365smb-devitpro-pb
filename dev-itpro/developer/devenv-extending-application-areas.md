@@ -3,7 +3,6 @@ title: "Extending Application Areas"
 description: "Document the extension of Application Areas."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen

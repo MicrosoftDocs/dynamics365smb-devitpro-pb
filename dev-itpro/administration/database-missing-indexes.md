@@ -3,9 +3,6 @@ title: "Missing Indexes in Dynamics 365 Business Central"
 description: "Description about missing indexes and database missing indexes page"
 author: jswymer
 ms.date: 06/09/2022
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: 
 ms.author: jswymer
 ms.custom: 

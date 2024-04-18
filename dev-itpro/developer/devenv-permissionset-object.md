@@ -4,7 +4,6 @@ description: "Description of the permission set object in AL for Business Centra
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 01/05/2023
-ms.reviewer: na
 ms.topic: article
 ms.author: solsen
 ---

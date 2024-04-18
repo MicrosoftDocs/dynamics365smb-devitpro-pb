@@ -4,7 +4,6 @@ description: "Learn how to format data in report datasets."
 author: KennieNP
 ms.custom: na
 ms.date: 12/01/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: kepontop
 ---

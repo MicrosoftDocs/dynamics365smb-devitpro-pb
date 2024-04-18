@@ -3,7 +3,6 @@ title: "Collectible errors API"
 description: Master AL programming with collectible error handling
 ms.custom: bap-template
 ms.date: 12/25/2023
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer

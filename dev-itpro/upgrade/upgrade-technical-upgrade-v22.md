@@ -3,7 +3,6 @@ title: "Technical Upgrade to Version 22"
 description: Describes how to do a technical upgrade from Business Central V19, V20, V21 to V22
 ms.custom: na
 ms.date: 11/27/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

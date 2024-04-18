@@ -3,7 +3,6 @@ title: "DataItemLink Property"
 description: "The DataItemLink property for AL for Business Central can apply to reports and to queries."
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
