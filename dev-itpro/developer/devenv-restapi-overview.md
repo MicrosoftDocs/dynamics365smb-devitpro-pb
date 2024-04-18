@@ -2,7 +2,6 @@
 title: HTTP, JSON, TextBuilder, and XML API overview
 description: Overview of the API capabilities in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/19/2024
 ms.topic: overview
 ms.author: solsen

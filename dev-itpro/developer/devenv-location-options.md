@@ -1,6 +1,5 @@
 ---
 title: "LocationOptions Overview"
-ms.custom: na
 ms.date: 12/18/2023
 ms.topic: overview
 author: blrobl

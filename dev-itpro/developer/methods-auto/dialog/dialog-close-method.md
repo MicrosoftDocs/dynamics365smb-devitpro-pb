@@ -2,7 +2,6 @@
 title: "Dialog.Close() Method"
 description: "Closes a dialog window that has been opened by the OPEN method."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

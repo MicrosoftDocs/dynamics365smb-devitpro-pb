@@ -2,7 +2,6 @@
 title: "FormatEvaluate Property"
 description: "Sets the data that is being imported or exported as XML data types or as the standard AL data types."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

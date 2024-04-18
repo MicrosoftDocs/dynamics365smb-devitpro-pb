@@ -2,7 +2,6 @@
 title: "Caption Attribute"
 description: "Specifies a caption for OData actions."
 ms.author: solsen
-ms.custom: na
 ms.date: 07/07/2022
 ms.topic: reference
 author: SusanneWindfeldPedersen

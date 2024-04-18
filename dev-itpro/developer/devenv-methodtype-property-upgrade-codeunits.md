@@ -1,6 +1,5 @@
 ---
 title: "MethodType Property (Upgrade Codeunits)"
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 ---

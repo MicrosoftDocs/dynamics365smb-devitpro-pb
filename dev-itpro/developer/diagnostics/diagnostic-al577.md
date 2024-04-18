@@ -2,7 +2,6 @@
 title: "Compiler Error AL0577"
 description: "The view '{0}' cannot define layout changes because its property '{1}' is not set to false."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

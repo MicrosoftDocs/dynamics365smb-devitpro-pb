@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL0608"
 description: "The OrderBy property must specify at least one field on which to sort the data."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

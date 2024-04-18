@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0044"
 description: "Destructive field properties that have been published must not be modified."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

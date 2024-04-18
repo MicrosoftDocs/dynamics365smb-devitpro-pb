@@ -1,7 +1,6 @@
 ---
 title: "Event example"
 description: This article shows a simple example of how to use events in Business Central.
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer

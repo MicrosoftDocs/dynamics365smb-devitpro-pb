@@ -2,7 +2,6 @@
 title: "JsonArray.Add(DateTime) Method"
 description: "Adds a new value at the end of the JsonArray."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

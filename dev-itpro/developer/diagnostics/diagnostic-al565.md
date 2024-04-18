@@ -2,7 +2,6 @@
 title: "Compiler Error AL0565"
 description: "Fast publishing requires a built application file to be present."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

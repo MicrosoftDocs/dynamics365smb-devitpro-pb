@@ -2,7 +2,6 @@
 title: "Compiler Warning AL1025"
 description: "The file at location '{0}' does not match any definition."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

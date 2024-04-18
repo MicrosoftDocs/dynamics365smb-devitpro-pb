@@ -2,7 +2,6 @@
 title: "Compiler Error AL1130"
 description: "The format of property '{0}' must be a timeout duration specified as '[d.]hh:mm:ss[.fffffff]'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

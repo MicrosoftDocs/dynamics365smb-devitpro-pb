@@ -2,7 +2,6 @@
 title: "StyleExpr Property"
 description: "Sets whether the format that is specified in the Style Property is applied to text in a field."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

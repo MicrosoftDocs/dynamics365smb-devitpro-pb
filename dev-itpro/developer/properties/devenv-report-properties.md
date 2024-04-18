@@ -1,7 +1,6 @@
 ---
 title: Report object properties
 description: This topic lists report properties that apply to controls of a report object.
-ms.custom: na
 ms.date: 12/04/2023
 ms.topic: reference
 author: SusanneWindfeldPedersen

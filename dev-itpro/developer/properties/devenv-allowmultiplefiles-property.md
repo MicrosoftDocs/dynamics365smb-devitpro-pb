@@ -2,7 +2,6 @@
 title: "AllowMultipleFiles Property"
 description: "Specifies if the action accepts multiple files."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

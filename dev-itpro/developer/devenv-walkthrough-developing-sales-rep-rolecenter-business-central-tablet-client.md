@@ -1,7 +1,6 @@
 ---
 title: "Develop a Sales Rep Role Center for the Tablet Client"
 description: "Create a Role Center for the Business Central Tablet client for a sales representative."
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

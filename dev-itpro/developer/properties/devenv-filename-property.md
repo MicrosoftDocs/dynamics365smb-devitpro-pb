@@ -2,7 +2,6 @@
 title: "FileName Property"
 description: "Sets the name of the external file to read data from or write data to an XmlPort."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

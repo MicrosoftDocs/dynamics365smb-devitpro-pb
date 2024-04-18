@@ -2,7 +2,6 @@
 title: "TestFilter.CurrentKey() Method"
 description: "Gets the current key of a data set that is displayed on a test page."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

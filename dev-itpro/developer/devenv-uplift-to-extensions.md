@@ -2,7 +2,6 @@
 title: "Moving Custom Fields From Base Application to Extensions"
 description: "DMoving Custom Fields From Base Application to Extensions"
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: jswymer

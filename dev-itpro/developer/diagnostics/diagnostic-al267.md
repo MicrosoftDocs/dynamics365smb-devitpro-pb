@@ -2,7 +2,6 @@
 title: "Compiler Error AL0267"
 description: "Actions are not allowed on the control type."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

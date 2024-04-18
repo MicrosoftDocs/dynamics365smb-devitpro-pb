@@ -2,7 +2,6 @@
 title: "Extending Customer, Vendor, and Item Templates"
 description: "How you extend templates in Dynamics 365 Business Central."
 author: bholtorf
-ms.custom: na
 ms.date: 10/14/2021
 ms.topic: conceptual
 ms.author: romanz

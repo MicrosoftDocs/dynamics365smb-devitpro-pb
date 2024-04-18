@@ -2,7 +2,6 @@
 title: "HandlerFunctions Attribute"
 description: "Specifies the handler methods that are used by the test method."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/24/2022
 ms.topic: reference
 author: SusanneWindfeldPedersen

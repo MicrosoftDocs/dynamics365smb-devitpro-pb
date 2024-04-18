@@ -1,7 +1,6 @@
 ---
 title: "Method Attributes"
 description: "The attributes that you can apply to methods in AL for Business Central"
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: reference
 author: SusanneWindfeldPedersen

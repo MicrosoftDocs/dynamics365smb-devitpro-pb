@@ -2,7 +2,6 @@
 title: "XmlDocument.SelectSingleNode(Text, var XmlNode) Method"
 description: "Selects the first XmlNode that matches the XPath expression."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

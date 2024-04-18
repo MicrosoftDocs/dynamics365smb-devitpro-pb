@@ -2,7 +2,6 @@
 title: "HttpClient.Get(Text, var HttpResponseMessage) Method"
 description: "Sends a GET request to get the resource identified by the request URL."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

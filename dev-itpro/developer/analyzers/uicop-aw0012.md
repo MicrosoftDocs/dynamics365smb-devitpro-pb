@@ -2,7 +2,6 @@
 title: "UICop Warning AW0012"
 description: "The Web client does not support using properties for teaching tips in certain contexts."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

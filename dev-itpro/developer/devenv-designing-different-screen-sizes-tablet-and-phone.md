@@ -1,6 +1,5 @@
 ---
 title: "Designing for different screen sizes on tablet and phone"
-ms.custom: na
 ms.date: 01/02/2024
 ms.reviewer: solsen
 ms.topic: conceptual

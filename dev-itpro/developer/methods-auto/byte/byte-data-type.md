@@ -2,7 +2,6 @@
 title: "Byte Data Type"
 description: "Stores a single, 8-bit character as a value in the range 0 to 255."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

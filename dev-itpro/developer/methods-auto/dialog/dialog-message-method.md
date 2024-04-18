@@ -2,7 +2,6 @@
 title: "Dialog.Message(Text [, Any,...]) Method"
 description: "Displays a text string in a message window."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

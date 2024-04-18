@@ -2,7 +2,6 @@
 title: "Compiler Error AL0308"
 description: "The primary key '{0}' on table '{1}' (the first one in the key list) must have the MaintainSqlIndex property set to true."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

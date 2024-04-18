@@ -2,7 +2,6 @@
 title: "Record.GetView([Boolean]) Method"
 description: "Gets a string that describes the current sort order, key, and filters on a table."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

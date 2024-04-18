@@ -1,7 +1,6 @@
 ---
 title: "Using OData with Queries That are Set with a Top Number of Rows"
 description: Learn about using queries that are set with a top number of rows.
-ms.custom: na
 ms.date: 05/26/2021
 ms.topic: conceptual
 ---

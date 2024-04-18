@@ -2,7 +2,6 @@
 title: "Report.Quit() Method"
 description: "Aborts the processing of a report or XmlPort."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

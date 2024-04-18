@@ -2,7 +2,6 @@
 title: "Record.CopyFilters(var Record) Method"
 description: "Copies all the filters set by the SETFILTER method (Record) or the SETRANGE method (Record) from one record to another."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: Running C/SIDE and AL side-by-side
 description: Description of how you can run both the C/SIDE and the AL development environments side-by-side.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 06/03/2022
 ms.topic: conceptual
 ms.author: solsen

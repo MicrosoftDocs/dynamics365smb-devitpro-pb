@@ -1,7 +1,6 @@
 ---
 title: System Requirements for Business Central 2021 Release Wave 1
 description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central version 18 on-premises.
-ms.custom: na
 ms.topic: article
 ms.date: 04/01/2021
 author: jswymer

@@ -1,7 +1,6 @@
 ---
 title: Formatting values, dates, and time
 description: Explains the Format functionality in Business Central.
-ms.custom: na
 ms.date: 03/14/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

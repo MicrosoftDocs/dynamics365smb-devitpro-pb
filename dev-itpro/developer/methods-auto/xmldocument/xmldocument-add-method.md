@@ -2,7 +2,6 @@
 title: "XmlDocument.Add(Any,...) Method"
 description: "Adds the specified content as a child of this document."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

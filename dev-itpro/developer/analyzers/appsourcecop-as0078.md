@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0078"
 description: "Adding or removing a var modifier in public procedures is not allowed as it might break the runtime behavior of extensions calling it."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

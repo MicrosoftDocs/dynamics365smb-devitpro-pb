@@ -1,7 +1,6 @@
 ---
 title: "Nonclustered Columnstore Indexes (NCCIs) and SQL Server"
 description: Explains how nonclustered columnstore indexes in Business Central tables work with SQL Server.
-ms.custom: na
 ms.date: 01/28/2022
 ms.topic: conceptual
 author: jswymer

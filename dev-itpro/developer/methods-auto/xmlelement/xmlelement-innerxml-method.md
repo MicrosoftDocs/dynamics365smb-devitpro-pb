@@ -2,7 +2,6 @@
 title: "XmlElement.InnerXml() Method"
 description: "Gets the markup representing only the child nodes of this node."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

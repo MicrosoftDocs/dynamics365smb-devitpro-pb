@@ -2,7 +2,6 @@
 title: "IsolatedStorage.Contains(Text [, DataScope]) Method"
 description: "Determines whether the storage contains a value with the specified key."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/02/2023
 ms.topic: reference
 author: SusanneWindfeldPedersen

@@ -2,7 +2,6 @@
 title: "Xmlport.Skip() Method"
 description: "Skips the current iteration of the current report or XmlPort."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

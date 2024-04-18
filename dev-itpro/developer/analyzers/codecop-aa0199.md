@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0199"
 description: "The order of the specified ApplicationArea is incorrect."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -1,7 +1,6 @@
 ---
 title: "Subscribing to events"
 description: Designing event subscribers in Dynamics 365 Business Central. 
-ms.custom: na
 ms.date: 02/27/2023
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

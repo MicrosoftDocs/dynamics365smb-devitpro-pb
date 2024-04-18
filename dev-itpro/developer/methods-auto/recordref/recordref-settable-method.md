@@ -2,7 +2,6 @@
 title: "RecordRef.SetTable(Record) Method"
 description: "Sets the table to which a Record variable refers as the same table as a RecordRef variable."
 ms.author: solsen
-ms.custom: na
 ms.date: 07/07/2021
 ms.topic: reference
 author: SusanneWindfeldPedersen

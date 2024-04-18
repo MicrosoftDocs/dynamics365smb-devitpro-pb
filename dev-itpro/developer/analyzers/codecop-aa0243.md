@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0243"
 description: "Running codeunits of subtype upgrade will cause runtime error."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

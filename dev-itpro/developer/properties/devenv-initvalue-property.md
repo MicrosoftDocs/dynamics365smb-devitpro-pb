@@ -2,7 +2,6 @@
 title: "InitValue Property"
 description: "Sets the initial value of this field when a user creates a new record."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

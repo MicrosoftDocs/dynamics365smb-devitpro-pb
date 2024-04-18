@@ -2,7 +2,6 @@
 title: "Compiler Error AL0828"
 description: "The field '{0}' with ID '{1}' can't be moved because it is part of the table's primary key."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

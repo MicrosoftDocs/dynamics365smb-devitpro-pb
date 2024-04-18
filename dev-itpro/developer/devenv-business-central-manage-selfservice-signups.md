@@ -1,6 +1,5 @@
 ---
 title: "Enable and Disable Dynamics 365 Business Central Self-service Signups "
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer

@@ -2,7 +2,6 @@
 title: "AboutText Property"
 description: "Sets the body of text that appears in a teaching tip in the UI."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

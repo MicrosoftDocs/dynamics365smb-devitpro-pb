@@ -1,6 +1,5 @@
 ---
 title: "SourceTableView Property (Pages)"
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: reference
 ms.assetid: 3b99a282-bc11-471c-928c-3b305d94a900

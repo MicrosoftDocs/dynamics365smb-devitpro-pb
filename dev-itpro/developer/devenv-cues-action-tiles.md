@@ -1,7 +1,6 @@
 ---
 title: "Creating and Customizing Cues"
 description: Get an overview of cues and action tiles and the tasks involved in customizing them on Role Centers.
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer

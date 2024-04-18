@@ -2,7 +2,6 @@
 title: "HttpResponseMessage.IsSuccessStatusCode() Method"
 description: "Gets a value that indicates if the HTTP response was successful."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: Developing extensions in AL
 description: Overview of the development experience for building extensions using the AL language.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/01/2024
 ms.topic: overview
 ms.author: solsen

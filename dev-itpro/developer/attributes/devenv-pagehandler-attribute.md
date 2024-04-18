@@ -2,7 +2,6 @@
 title: "PageHandler Attribute"
 description: "Specifies that the method is a PageHandler method, which handles specific pages that are not run modally."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/15/2022
 ms.topic: reference
 author: SusanneWindfeldPedersen

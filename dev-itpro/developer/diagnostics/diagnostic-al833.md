@@ -2,7 +2,6 @@
 title: "Compiler Error AL0833"
 description: "{0} '{1}' cannot be defined outside an action area or group on this control type."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

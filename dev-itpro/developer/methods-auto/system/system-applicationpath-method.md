@@ -2,7 +2,6 @@
 title: "System.ApplicationPath() Method"
 description: "Returns the path of the directory where the executable file for the product is installed."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

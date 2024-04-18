@@ -2,7 +2,6 @@
 title: "Report.SaveAsExcel(Integer, Text [, var Record]) Method"
 description: "Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

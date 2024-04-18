@@ -1,7 +1,6 @@
 ---
 title: "Components and capabilities"
 author: jswymer
-ms.custom: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 12/28/2023

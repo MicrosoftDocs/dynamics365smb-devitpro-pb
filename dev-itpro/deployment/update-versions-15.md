@@ -2,7 +2,6 @@
 title: "Updates for the Business Central 2019 Release Wave 2 version"
 description: "Learn about the updates for Dynamics 365 Business Central 2019 Release Wave 2 on-premises deployments."
 author: jswymer
-ms.custom: na
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer

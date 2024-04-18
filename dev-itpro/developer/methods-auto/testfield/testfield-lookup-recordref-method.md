@@ -2,7 +2,6 @@
 title: "TestField.Lookup(RecordRef) Method"
 description: "Calls the OnAfterLook trigger with the selected record"
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

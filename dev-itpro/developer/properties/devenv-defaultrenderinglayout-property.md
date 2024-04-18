@@ -2,7 +2,6 @@
 title: "DefaultRenderingLayout Property"
 description: "Sets the default layout that should be used for this report."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

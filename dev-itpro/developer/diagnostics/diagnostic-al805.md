@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL0805"
 description: "The object ID '{0}' should not be surrounded with quotes."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

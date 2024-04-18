@@ -1,7 +1,6 @@
 ---
 title: Business Central Virtual Table for Microsoft Dataverse admin reference
 description: The admin reference for working with Business Central and Microsoft Dataverse tables.
-ms.custom: na
 ms.date: 11/13/2023
 ms.reviewer: solsen
 ms.topic: conceptual

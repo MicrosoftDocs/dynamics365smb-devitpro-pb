@@ -2,7 +2,6 @@
 title: "Page.SetBackgroundTaskResult(Dictionary of [Text, Text]) Method"
 description: "Sets the page background task result as a dictionary."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

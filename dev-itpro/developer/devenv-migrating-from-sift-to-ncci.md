@@ -1,7 +1,6 @@
 ---
 title: "Migrating from SIFT to Nonclustered Columnstore Indexes (NCCIs)"
 description: Explains how you can change from using SIFT keys to nonclustered columnstore indexes in Business Central tables.
-ms.custom: na
 ms.date: 01/28/2022
 ms.topic: conceptual
 author: jswymer

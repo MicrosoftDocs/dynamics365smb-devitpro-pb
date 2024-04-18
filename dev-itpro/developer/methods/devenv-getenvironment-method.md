@@ -1,7 +1,6 @@
 ---
 title: GetEnvironment method
 description: The GetEnvironment method in control add-in for Business Central.
-ms.custom: na
 ms.date: 03/19/2024
 ms.topic: reference
 author: solsen

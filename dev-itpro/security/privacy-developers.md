@@ -1,7 +1,6 @@
 ---
 title: Business Central privacy for AL developers
 description: Understand and improve the privacy of your Business Central apps written in AL.
-ms.custom: na
 ms.date: 03/15/2024
 ms.reviewer: solsen
 ms.topic: conceptual

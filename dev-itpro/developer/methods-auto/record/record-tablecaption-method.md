@@ -2,7 +2,6 @@
 title: "Record.TableCaption() Method"
 description: "Gets the current caption of a table as a string."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

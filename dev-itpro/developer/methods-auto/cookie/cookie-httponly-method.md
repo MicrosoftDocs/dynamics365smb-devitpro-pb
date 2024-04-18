@@ -2,7 +2,6 @@
 title: "Cookie.HttpOnly() Method"
 description: "True if the cookie is HttpOnly, false otherwise."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

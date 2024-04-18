@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0189"
 description: "ApplicationArea has invalid value."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

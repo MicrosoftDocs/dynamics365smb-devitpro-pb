@@ -1,7 +1,6 @@
 ---
 title: Filtering in Query Objects
 description: Specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table associated with the query.
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer

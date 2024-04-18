@@ -2,7 +2,6 @@
 title: "Debugger.SkipSystemTriggers(Boolean) Method"
 description: "Enables the debugger to skip code that is inside system triggers."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

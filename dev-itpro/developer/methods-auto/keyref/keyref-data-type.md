@@ -2,7 +2,6 @@
 title: "KeyRef Data Type"
 description: "Identifies a key in a table and the fields in this key."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

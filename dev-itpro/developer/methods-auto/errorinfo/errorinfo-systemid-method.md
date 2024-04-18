@@ -2,7 +2,6 @@
 title: "ErrorInfo.SystemId([Guid]) Method"
 description: "Specifies the system ID of the record that the error relates to."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
