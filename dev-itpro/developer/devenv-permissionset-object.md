@@ -32,7 +32,7 @@ Typing the shortcut `tpermissionset` creates the basic layout for a permission s
 
 [!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
 
-When adding new AL objects, it's easy to forget to update the permissions. With the `al.generatePermissionSetForExtensionObjects` command, you can generate or update a permission file for the active project in Visual Studio Code. Choose to create a new permission file or select an existing file to make updates to. For more information, see [AL Language cxtension configuration](devenv-al-extension-configuration.md).
+When adding new AL objects, it's easy to forget to update the permissions. With the `al.generatePermissionSetForExtensionObjects` command, you can generate or update a permission file for the active project in Visual Studio Code. Choose to create a new permission file or select an existing file to make updates to. For more information, see [AL Language extension configuration](devenv-al-extension-configuration.md).
 
 ## Permission set example
 
