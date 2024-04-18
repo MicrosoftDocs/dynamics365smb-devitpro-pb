@@ -1,8 +1,8 @@
 ---
 title: Install a version 19 update
 description: This article describes the tasks required for getting the monthly version 19 update applied to your Dynamics 365 Business Central on-premises.
-ms.custom: na
-ms.date: 02/09/2023
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer

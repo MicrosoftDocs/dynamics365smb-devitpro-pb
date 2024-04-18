@@ -3,9 +3,11 @@ title: Set Up Multiple Business Central Web Server Instances using PowerShell
 description: Learn how to use Windows PowerShell to set up more than one web server instance on IIS for the Business Central web client.
 author: jswymer
 ms.author: jswymer
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ms.date: 01/03/2023
-ms.reviewer: na
+ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
 ---
@@ -41,10 +43,10 @@ There are different ways to launch this module and start using the cmdlets:
   For example:
 
   ```powershell
-  Import-Module -Name "C:\Program Files\Microsoft Dynamics 365 Business Central\130\Service\NAVWebClientManagement.psm1"
+  Import-Module -Name "C:\Program Files\Microsoft Dynamics 365 Business Central\NNN\Service\NAVWebClientManagement.psm1"
   ```
 
-  For more information, see [the Windows PowerShell docs](/powershell/scripting/overview).
+  Replace `NNN` with the Business Central Server instance folder name, like 240. For more information, see [the Windows PowerShell docs](/powershell/scripting/overview).
 
 ## Creating [!INCLUDE[webserver](../developer/includes/webserver.md)] instances
 
@@ -52,7 +54,7 @@ There are different ways to launch this module and start using the cmdlets:
 
 To create a new web server instance, you need access to the **WebPublish** folder that contains the content files for the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].
 
-- This folder is available on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD) and has the path "DVD\WebClient\Microsoft Dynamics NAV\NNN\Web Client\WebPublish". NNN indicates the Business Central version like 210, 200, or 190. 
+- This folder is available on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD) and has the path "DVD\WebClient\Microsoft Dynamics NAV\NNN\Web Client\WebPublish". NNN indicates the Business Central version like 240 or 230.
 
 - If you installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], this folder has the path "[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client\WebPublish".
 

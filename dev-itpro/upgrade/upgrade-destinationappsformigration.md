@@ -1,8 +1,8 @@
 ---
 title: "DestinationAppsForMigration"
 author: jswymer
-ms.custom: na
-ms.date: 01/03/2024
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer

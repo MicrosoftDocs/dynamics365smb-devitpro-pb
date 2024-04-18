@@ -1,7 +1,7 @@
 ---
 title: "Upgrade to Business Central 2020 Wave 1"
-ms.custom: na
-ms.date: 04/01/2021
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.topic: overview
 ms.author: jswymer

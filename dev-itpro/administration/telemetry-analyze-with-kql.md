@@ -8,7 +8,7 @@ ms.date: 11/13/2022
 ms.author: jswymer
 ms.reviewer: jswymer
 
-ms.custom: bab-template
+ms.custom: bap-template
 ---
 # Analyze and Monitor Telemetry with KQL
 

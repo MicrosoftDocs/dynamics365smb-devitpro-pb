@@ -7,7 +7,7 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 05/31/2023
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.custom: bab-template
+ms.custom: bap-template
 ---
 
 # Monitoring and Analyzing Telemetry
