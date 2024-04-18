@@ -4,7 +4,6 @@ description: "The type of entitlement."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/27/2023
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

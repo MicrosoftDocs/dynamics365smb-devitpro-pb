@@ -4,7 +4,6 @@ description: "Document how to create and interact with an OData V4 Bound Action 
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

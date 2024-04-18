@@ -1,10 +1,8 @@
 ---
 title: Copyright and Trademarks
 description: Landing page for legal notices for Business Central on-premises.
-author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/17/2024
-ms.reviewer: na
+author: solsen
 ms.topic: article
 ms.author: solsen
 ---

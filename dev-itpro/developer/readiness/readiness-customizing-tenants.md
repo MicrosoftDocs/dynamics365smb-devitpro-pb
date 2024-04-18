@@ -4,7 +4,6 @@ description: "Read about how to to build fully custom functionality or adapt wha
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

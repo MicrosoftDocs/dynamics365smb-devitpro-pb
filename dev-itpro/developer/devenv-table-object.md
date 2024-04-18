@@ -4,7 +4,6 @@ description: This article describes the structure, object limits, and extensibil
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ms.date: 04/17/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 --- 

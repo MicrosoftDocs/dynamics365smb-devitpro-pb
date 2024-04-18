@@ -2,7 +2,6 @@
 title: "How to: Export and Import Permission Sets and Permissions"
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

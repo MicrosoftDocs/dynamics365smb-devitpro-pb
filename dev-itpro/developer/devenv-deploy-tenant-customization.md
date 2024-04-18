@@ -4,7 +4,6 @@ description: "Overview of the how you deploy an .app package with a tenant custo
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

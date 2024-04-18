@@ -2,9 +2,8 @@
 title: Control add-in object
 description: Description of the control add-in object type in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
+ms.custom: evergreen
 ms.date: 04/17/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

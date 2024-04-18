@@ -4,7 +4,6 @@ description: Learn about the Get, Find, and Next methods for searching records i
 ms.author: solsen
 ms.custom: evergreen
 ms.date: 04/17/2024
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

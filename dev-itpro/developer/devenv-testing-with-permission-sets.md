@@ -3,7 +3,6 @@ title: "Testing With Permission Sets"
 description: Learn how to run tests in Business Central using permission sets
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 author: blrobl

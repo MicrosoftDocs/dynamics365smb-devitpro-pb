@@ -2,7 +2,7 @@
 title: Triggers overview
 ms.custom: evergreen
 ms.date: 04/17/2024
-ms.reviewer: na
+ms.reviewer: solsen
 ms.topic: get-started
 author: SusanneWindfeldPedersen
 ---

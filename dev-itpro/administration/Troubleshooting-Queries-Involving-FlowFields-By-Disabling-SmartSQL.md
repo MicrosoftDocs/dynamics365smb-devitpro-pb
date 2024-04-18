@@ -4,7 +4,6 @@ description: Learn how to fix long running SQL queries involving FlowFields by d
 author: jswymer
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: troubleshooting
 ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
 ---

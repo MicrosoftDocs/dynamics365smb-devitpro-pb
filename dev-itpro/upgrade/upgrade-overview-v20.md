@@ -3,7 +3,6 @@ title: "Upgrade to Business Central 2022 Wave 1"
 description: Provides an overview of Business Central 2022 release wave 1 upgrade
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.reviewer: na
 ms.topic: overview
 ms.author: jswymer
 author: jswymer

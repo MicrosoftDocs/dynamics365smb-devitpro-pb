@@ -3,7 +3,6 @@ title: "Server-Driven Paging in OData Web Services"
 description: Learn about how to configure paging in OData requests.
 ms.custom: na
 ms.date: 05/26/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

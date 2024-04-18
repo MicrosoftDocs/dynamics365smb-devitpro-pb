@@ -4,7 +4,6 @@ description: "Sets the group of the API endpoint that the page is exposed in."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

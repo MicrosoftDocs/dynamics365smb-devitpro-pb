@@ -4,7 +4,6 @@ description: "Adds the specified header and its value into the HttpHeaders colle
 ms.author: solsen
 ms.custom: na
 ms.date: 03/02/2023
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

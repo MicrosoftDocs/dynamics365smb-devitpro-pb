@@ -4,7 +4,6 @@ description: APIs used to hydrate a Dynamics 365 Business Central tenant. Using 
 author: henrikwh
 ms.custom: na
 ms.date: 12/03/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

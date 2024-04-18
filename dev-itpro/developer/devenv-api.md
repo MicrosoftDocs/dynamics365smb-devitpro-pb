@@ -3,7 +3,6 @@ title: API developer overview
 description: Use APIs to expose information from the database into versioned, OData v4 enabled REST web services.
 ms.custom: na
 ms.date: 02/07/2024
-ms.reviewer: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ms.collection: get-started

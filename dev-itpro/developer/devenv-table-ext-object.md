@@ -4,7 +4,6 @@ description: This article describes the table extension object in AL for Busines
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/17/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

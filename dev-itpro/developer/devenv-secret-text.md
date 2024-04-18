@@ -5,7 +5,6 @@ author: SusanneWindfeldPedersen
 ms.author: sodragon
 ms.custom: bap-template
 ms.date: 12/20/2023
-ms.reviewer: na
 
 ms.topic: conceptual
 ---

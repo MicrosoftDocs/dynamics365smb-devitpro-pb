@@ -4,7 +4,6 @@ description: "The identifier '{0}' cannot have any leading or trailing spaces."
 ms.author: solsen
 ms.custom: na
 ms.date: 03/20/2023
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

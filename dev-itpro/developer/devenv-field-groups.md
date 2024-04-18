@@ -4,7 +4,6 @@ description: A field group defines the fields to display in a DropDown control i
 ms.author: solsen
 ms.custom: na
 ms.date: 09/20/2023
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

@@ -2,7 +2,6 @@
 title: Extending Email
 description: Learn how to extend the email capabilities in Business Central.
 ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.search.form: 4500, 4503, 4504, 4511, 4512,
 author: brentholtorf

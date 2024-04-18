@@ -4,7 +4,6 @@ description: "Provides and overview of Role Center design"
 author: jswymer
 ms.custom: na
 ms.date: 08/11/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ---

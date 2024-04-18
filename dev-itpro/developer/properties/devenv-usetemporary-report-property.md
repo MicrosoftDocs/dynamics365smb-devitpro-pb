@@ -3,7 +3,6 @@ title: "UseTemporary Property (Report)"
 author: solsen
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 ms.assetid: 729f3649-f7c8-498d-8c16-961771f192a0
 ms.author: jswymer

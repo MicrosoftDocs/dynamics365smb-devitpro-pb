@@ -4,7 +4,6 @@ description: Overview of setting conditional breakpoints in AL.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 03/04/2024
-ms.reviewer: 
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started

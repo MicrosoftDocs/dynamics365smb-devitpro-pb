@@ -3,7 +3,6 @@ title: Token counting in AI
 description: Learn how to count the number of tokens in your input before sending a request to Azure OpenAI
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.reviewer: 
 ms.topic: reference
 ms.collection:
   - get-started

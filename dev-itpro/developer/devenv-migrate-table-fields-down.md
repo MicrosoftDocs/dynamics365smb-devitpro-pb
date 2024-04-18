@@ -4,7 +4,6 @@ description: Explains how to move tables and fields from an extension to another
 author: jswymer
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ---

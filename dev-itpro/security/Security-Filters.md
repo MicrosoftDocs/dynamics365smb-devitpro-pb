@@ -3,7 +3,6 @@ title: Using Security Filters in Business Central
 description: Learn how you can configure security filters at different levels in your Business Central solution so that you can limit access to data.
 author: jswymer
 
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021

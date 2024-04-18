@@ -3,7 +3,6 @@ title: "Using OAuth to Authenticate Business Central Web Services (OData and SOA
 description: Learn how to use OAuth to authenticate Business Central web services (OData and SOAP)
 ms.custom: na
 ms.date: 04/29/2022
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

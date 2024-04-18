@@ -4,7 +4,6 @@ description: "Describes how the AL access modifiers can be used in code."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 09/27/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

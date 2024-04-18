@@ -3,7 +3,6 @@ title: Deployment overview for Business Central
 description: Get an overview of your options for deploying Dynamics 365 Business Central
 author: jswymer
 ms.custom: na
-ms.reviewer: na
 ms.topic: overview
 ms.author: jswymer
 ms.date: 04/01/2021
