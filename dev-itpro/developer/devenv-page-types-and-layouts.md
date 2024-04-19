@@ -231,9 +231,9 @@ Generally, [!INCLUDE[prod_short](includes/prod_short.md)] displays dialogs on th
 Given the size of the screen where the dialog appears, more or less of the page contents will be visible without scrolling. When a page contains much content, it's possible for the user to increase the dialog size with the maximize button.
   
 > [!NOTE]  
-> The dialogs created from the ConfirmationDialog and StandardDialog page types are not currently providing a maximize button.
+> The dialogs created from the `StandardDialog` and `ConfirmationDialog` page types aren't currently providing a maximize button.
 >
-> In version 24 (runtime 14) and earlier, the **Important** property is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personlaization or designer. The field also can't be promoted in the FastTab when it's collapsed. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
+> In version 24 (runtime 14) and earlier, the [Importantance* property](properties/devenv-importance-property.md) is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personlaization or designer. The field also can't be promoted in the FastTab when it's collapsed. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
  
 ## See Also
 
