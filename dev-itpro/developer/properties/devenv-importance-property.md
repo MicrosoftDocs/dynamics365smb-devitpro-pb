@@ -41,6 +41,8 @@ You use this property to control the amount of information that is visible on a 
 
 As a developer, the **Importance** property can also be set also by Use Designer (see [Use Designer](../devenv-inclient-designer.md)). In the client, users can change the setting for their workspace by using personalization (see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
 
+> [!NOTE]
+> Before version 25 (runtime), the **Importance**  respected in Standard and Confirm dialogs in the WebClient. From v25 and onwards the WebClient will respect the set value from the metadata and show the field accordingly.
 ## See Also
 
 [Properties](devenv-properties.md)
