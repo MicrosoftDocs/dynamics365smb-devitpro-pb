@@ -1,11 +1,13 @@
 ---
-title: "Development and Administration for Business Central"
-description: Learn how to extend, manage, and customize Dynamics 365 Business Central
-author: solsen
-ms.date: 09/29/2023
+title: Development and administration for Business Central
+description: Learn how to extend, manage, and customize Dynamics 365 Business Central.
+author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.date: 04/17/2024
 ms.topic: article
 ---
-# Development and Administration for Dynamics 365 Business Central
+
+# Development and administration for Dynamics 365 Business Central
 
 [!INCLUDE[prod_long](includes/prod_long.md)] is a complete enterprise resource planning (ERP) software solution for mid-sized organizations that is fast to implement, easy to configure, and simple to use. Right from the start, simplicity has guided — and continues to guide — innovations in product design, development, implementation, and usability. Users can [customize and administrate](/dynamics365/business-central/admin-setup-and-administration) their [!INCLUDE [prod_short](developer/includes/prod_short.md)] experience in the product. Other tasks for administration and development require a more specialized profile, and in this *Development and Administration* section, you can find more technical information, including information about developing for [!INCLUDE[prod_long](includes/prod_long.md)] using the [!INCLUDE[d365al_ext_md](includes/d365al_ext_md.md)] and Visual Studio Code.  
 
@@ -40,9 +42,9 @@ The following table outlines recommended content for you to get started:
 |------|-------------|
 |[Developer learning paths on Microsoft Learn](/learn/browse/?WT.mc_id=dyn365bc_landingpage-docs&resource_type=learning%20path&products=dynamics-business-central&roles=developer)| Provides links to role-specific training. |
 |[Development in AL](developer/devenv-dev-overview.md)|Get an understanding of the basics and terms you will encounter while working in Visual Studio Code with the AL extension.|
-|[Get Started with AL](developer/devenv-get-started.md)|Learn how to set up a development environment.|
-|[The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)|Learn about the business opportunity for building your app on top of [!INCLUDE [prod_short](developer/includes/prod_short.md)].|
-|[Get Started with Building Apps](developer/readiness/get-started.md)|Learn how to get started as a partner.|
+|[Get started with AL](developer/devenv-get-started.md)|Learn how to set up a development environment.|
+|[The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)|Learn about the business opportunity for building your app on top of [!INCLUDE [prod_short](developer/includes/prod_short.md)].|
+|[Get started with building apps](developer/readiness/get-started.md)|Learn how to get started as a partner.|
 
 ## Resources for a reseller
 
@@ -50,8 +52,8 @@ As a reseller of [!INCLUDE [prod_short](includes/prod_short.md)] online, your ro
 
 | Link | Description |
 |--|--|
-| [Get Started as a Reseller of Business Central Online](administration/get-started-online.md) | Landing page for readiness for resellers. |
-| [Business Functionality in Business Central](/dynamics365/business-central/across-business-functionality) | Landing page for the core functionality in [!INCLUDE [prod_short](includes/prod_short.md)]. |
+| [Get started as a reseller of Business Central online](administration/get-started-online.md) | Landing page for readiness for resellers. |
+| [Business functionality in Business Central](/dynamics365/business-central/across-business-functionality) | Landing page for the core functionality in [!INCLUDE [prod_short](includes/prod_short.md)]. |
 | [Business Central on Microsoft Learn](/learn/browse/?WT.mc_id=dyn365bc_landingpage-docs&products=dynamics-business-central&resource_type=learning%20path&roles=functional-consultant) | Provides links to role-specific training. |
 | [Enroll in the Cloud Solution Provider program](/partner-center/enrolling-in-the-csp-program) | Describes the different models for selling in the Cloud Solution Provider (CSP) program so you can determine which works best with your business. |
 
@@ -70,15 +72,15 @@ If you are completely new to [!INCLUDE [prod_short](includes/prod_short.md)], we
 
 ## See also
 
-[[!INCLUDE[prod_long](includes/prod_long.md)] Business Functionality Help](/dynamics365/business-central/index)  
+[[!INCLUDE[prod_long](includes/prod_long.md)] Business functionality Help](/dynamics365/business-central/index)  
 [Dynamics 365 Business Central on Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)  
-[FAQ for Dynamics 365 Business Central Development and Administration](faq.yml)  
-[Resources for Help and Support for [!INCLUDE[prod_long](includes/prod_long.md)]](help-and-support.md)  
-[The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)  
-[Maintenance of AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)  
+[FAQ for Dynamics 365 Business Central development and administration](faq.yml)  
+[Resources for help and support for [!INCLUDE[prod_long](includes/prod_long.md)]](help-and-support.md)  
+[The lifecycle of apps and extensions](developer/devenv-app-life-cycle.md)  
+[Maintenance of AppSource apps and per-tenant extensions](developer/app-maintain.md)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
 [Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central)  
-[Dynamics NAV Developer and ITPro Content](/dynamics-nav/index)  
+[Dynamics NAV developer and IT-pro content](/dynamics-nav/index)  
 [Dynamics 365 Product Licensing](https://www.microsoft.com/Licensing/product-licensing/dynamics365)  
 
 [!INCLUDE [footer-banner](includes/footer-banner.md)]

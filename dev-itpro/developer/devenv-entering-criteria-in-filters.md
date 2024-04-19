@@ -1,11 +1,14 @@
 ---
-title: "Entering Criteria in Filters"
-ms.date: 04/01/2021
+title: Entering criteria in filters
+description: Describes how to enter criteria in filters in AL for Business Central.
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# Entering Criteria in Filters
+# Entering criteria in filters
+
 When you enter criteria, you can use all the numbers and letters that you can normally use in the field. In addition, you can use some special symbols or mathematical expressions. Here are the available formats:  
   
 |**Symbol**|**Meaning**|**Sample Expression**|**Records Displayed**|  
@@ -35,7 +38,7 @@ When you enter criteria, you can use all the numbers and letters that you can no
 ||Calculate before rest|30&#124;\(>=10&\<=20\)|Those with number 30 or with a number from 10 through 20 (the result of the calculation within the parentheses)|  
 |@|Ignore case (either uppercase or lowercase allowed)|@location|Texts such as LOCATION, location or Location|  
   
- You can also combine the various format expressions:  
+You can also combine the various format expressions:  
   
 |Expression|Description|  
 |-|-|  
@@ -46,5 +49,9 @@ When you enter criteria, you can use all the numbers and letters that you can no
 |@*co?*|Texts containing co, CO, Co, cO, such as cot, cope and incorporated.<br /><br /> CO, cO, Co or co must be present, followed by at least one character, but there can be an indefinite number of characters before and after these, and case is unimportant.|  
   
 > [!NOTE]  
->  It is important that you enter only meaningful filters. For example, it is possible to specify an interval that does not exist, and the program cannot check this for you. In order to enter meaningful filters, you must know the sorting rules followed by this program.  
+> It's important that you enter only meaningful filters. For example, it's possible to specify an interval that doesn't exist, and the system can't check this for you. In order to enter meaningful filters, you must know the sorting rules for the field you're filtering on.
+
+## See also
+
+[Get started with AL](devenv-get-started.md)  
 
