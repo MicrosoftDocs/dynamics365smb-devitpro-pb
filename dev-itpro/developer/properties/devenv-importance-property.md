@@ -42,7 +42,8 @@ You use this property to control the amount of information that is visible on a 
 As a developer, the **Importance** property can also be set also by Use Designer (see [Use Designer](../devenv-inclient-designer.md)). In the client, users can change the setting for their workspace by using personalization (see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
 
 > [!NOTE]
-> Before version 25 (runtime), the **Importance**  respected in Standard and Confirm dialogs in the WebClient. From v25 and onwards the WebClient will respect the set value from the metadata and show the field accordingly.
+> Starting from version 25 (runtime 15), the **Important** property is no longer ignored in the web client. Prior to this version, the property was ignored in the web client, which meant that fields set to **Additional** were always visible on the page and not hidden under the **Show more** button. With this change, fields set to **Additional** are hidden under the **Show more** button.
+
 ## See Also
 
 [Properties](devenv-properties.md)
