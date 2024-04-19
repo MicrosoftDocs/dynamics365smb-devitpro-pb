@@ -44,7 +44,7 @@ The name of the company to which you want to change. If you omit this parameter,
 ## Remarks
 
 When you use the RecordRef.Open method a new object is created. This object contains references to the open table, filters, and the record itself and all the fields it contains. You can open a table by using the table number or the name of the table that represents the table number. For example, you open the Customer table by using following syntax: `RecordRef.Open(18)` or `RecordRef.Open(Database::Customer)`.
-`ReordcRef.Open(0);` is also accepted, whereas passing another non-existent table number will result in a runtime error message.
+`RecordRef.Open(0)` is also accepted, whereas passing another non-existent table number will result in a runtime error message.
   
 If you use the *CompanyName* parameter, then this method works the same as the [ChangeCompany Method \(Record\)](../record/record-changecompany-method.md).  
 
