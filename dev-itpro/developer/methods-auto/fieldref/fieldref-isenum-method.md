@@ -2,7 +2,6 @@
 title: "FieldRef.IsEnum() Method"
 description: "Checks if the currently selected field is an enum."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

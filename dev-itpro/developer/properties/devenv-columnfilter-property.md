@@ -2,7 +2,6 @@
 title: "ColumnFilter Property"
 description: "Sets a filter on the column filter row of a query."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

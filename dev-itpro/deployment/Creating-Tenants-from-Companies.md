@@ -1,7 +1,6 @@
 ---
 title: "Creating Tenants from Companies"
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 ---

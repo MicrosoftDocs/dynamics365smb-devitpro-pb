@@ -1,7 +1,6 @@
 ---
 title: "Upgrading Microsoft System and Base Application to Version 22"
 description: Describes how to upgrade an unmodified Business Central versions 15, 16, 17, 18, 19, or 20 to version 22
-ms.custom: na
 ms.date: 01/18/2024
 ms.reviewer: jswymer
 ms.topic: conceptual

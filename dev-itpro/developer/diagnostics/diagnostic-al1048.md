@@ -2,7 +2,6 @@
 title: "Compiler Error AL1048"
 description: "Both 'idRange' and 'idRanges' properties are added."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

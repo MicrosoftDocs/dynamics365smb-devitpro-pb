@@ -2,7 +2,6 @@
 title: "HttpClient.Timeout([Duration]) Method"
 description: "Gets or sets the duration in milliseconds to wait before the request times out."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

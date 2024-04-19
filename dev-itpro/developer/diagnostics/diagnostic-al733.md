@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL0733"
 description: "Access modifier '{0}' is not allowed for member '{1}' in the context of object type '{2}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

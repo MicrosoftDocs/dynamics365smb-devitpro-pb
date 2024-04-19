@@ -2,7 +2,6 @@
 title: "Occurrence Property"
 description: "Sets a value that specifies whether an attribute must occur in the data that is being imported or exported."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

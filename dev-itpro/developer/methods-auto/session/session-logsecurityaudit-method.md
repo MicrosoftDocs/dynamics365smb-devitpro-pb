@@ -2,7 +2,6 @@
 title: "Session.LogSecurityAudit(Text, SecurityOperationResult, Text, AuditCategory [, Array of [Text]] [, Array of [Text]]) Method"
 description: "Logs an IfX audit message to a telemetry account."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

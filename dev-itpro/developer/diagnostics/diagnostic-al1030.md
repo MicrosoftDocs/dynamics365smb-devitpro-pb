@@ -2,7 +2,6 @@
 title: "Compiler Warning AL1030"
 description: "Translation file '{0}' is missing a target language."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

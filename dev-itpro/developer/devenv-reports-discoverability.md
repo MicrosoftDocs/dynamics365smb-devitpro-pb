@@ -2,7 +2,6 @@
 title: Report discoverability
 description: Introducing how to make Business Central reports discoverable by users.
 author: KennieNP
-ms.custom: na
 ms.date: 03/11/2024
 ms.reviewer: solsen
 ms.topic: conceptual

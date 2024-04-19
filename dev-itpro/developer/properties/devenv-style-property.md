@@ -2,7 +2,6 @@
 title: "Style Property"
 description: "Sets a value that determines how text in a field on a page is formatted."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

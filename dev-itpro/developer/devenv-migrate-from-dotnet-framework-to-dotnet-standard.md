@@ -2,7 +2,6 @@
 title: "Migrating from .NET Framework to .NET Standard"
 description: "Description of the process of migrating DLLs used from AL from .NET Framework to .NET Standard"
 author: kennienp
-ms.custom: na
 ms.date: 11/18/2022
 ms.reviewer: solsen
 ms.topic: conceptual

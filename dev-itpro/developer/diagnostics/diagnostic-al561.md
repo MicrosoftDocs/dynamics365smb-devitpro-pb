@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL0561"
 description: "Only parts are valid in an area of type 'FactBoxes'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

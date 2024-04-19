@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0211"
 description: "CalcFields should only be used for FlowFields or Blob fields"
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

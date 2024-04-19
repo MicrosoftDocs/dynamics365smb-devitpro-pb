@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0084"
 description: "The ID range assigned to the extension must be within the range allowed for AppSource applications."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

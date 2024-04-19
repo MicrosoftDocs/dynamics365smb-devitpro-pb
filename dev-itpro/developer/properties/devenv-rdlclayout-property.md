@@ -2,7 +2,6 @@
 title: "RDLCLayout Property"
 description: "Sets the RDL layout that is used on a report and returns it as a data stream."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "RecordRef.GetTable(Record) Method"
 description: "Gets the table of a Record variable and causes the RecordRef to refer to the same table."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

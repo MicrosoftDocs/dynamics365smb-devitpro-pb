@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0028"
 description: "Reducing the array size of a parameter in events and external procedures is not allowed."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

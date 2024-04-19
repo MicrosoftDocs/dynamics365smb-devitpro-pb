@@ -1,7 +1,6 @@
 ---
 title: "Scope (Table) Property"
 description: The scope property for tables sets whether the scope is cloud or on-prem in AL.
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: reference
 author: SusanneWindfeldPedersen

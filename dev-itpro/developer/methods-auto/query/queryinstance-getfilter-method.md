@@ -2,7 +2,6 @@
 title: "Query.GetFilter(Any) Method"
 description: "Returns the filters that are set on the field of a specified column in the query."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

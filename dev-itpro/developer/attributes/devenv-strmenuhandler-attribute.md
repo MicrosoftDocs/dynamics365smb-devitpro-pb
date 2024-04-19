@@ -2,7 +2,6 @@
 title: "StrMenuHandler Attribute"
 description: "Specifies that the method is a StrMenuHandler method, which handles StrMenu statements."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/15/2022
 ms.topic: reference
 author: SusanneWindfeldPedersen

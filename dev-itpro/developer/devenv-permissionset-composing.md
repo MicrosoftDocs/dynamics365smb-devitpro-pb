@@ -2,7 +2,6 @@
 title: "Composing Permission Sets from Other Permission Sets"
 description: "Learn how to create a permission set from one or more existing permission sets in AL code for Business Central."
 author: jswymer
-ms.custom: na
 ms.date: 09/23/2022
 ms.topic: article
 ms.author: jswymer

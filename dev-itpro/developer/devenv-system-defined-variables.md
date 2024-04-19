@@ -1,6 +1,5 @@
 ---
 title: "System-Defined Variables"
-ms.custom: na
 ms.date: 09/21/2022
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

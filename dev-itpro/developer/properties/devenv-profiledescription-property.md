@@ -2,7 +2,6 @@
 title: "ProfileDescription Property"
 description: "Sets the description of the profile that users will see."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

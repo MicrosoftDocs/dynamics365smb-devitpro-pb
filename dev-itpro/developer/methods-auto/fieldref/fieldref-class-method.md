@@ -2,7 +2,6 @@
 title: "FieldRef.Class() Method"
 description: "Gets the value of the FieldClass Property of the field that is currently selected."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

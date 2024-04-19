@@ -2,7 +2,6 @@
 title: "Query.SaveAsCsv(OutStream [, Integer] [, Text]) Method"
 description: "Saves the resulting data set of a query as comma separated values (CSV)"
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

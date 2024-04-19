@@ -2,7 +2,6 @@
 title: "Compiler Error AL0462"
 description: "The publisher '{0}' does not have any public events named '{1}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

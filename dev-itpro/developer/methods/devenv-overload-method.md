@@ -2,7 +2,6 @@
 title: "Procedure overload"
 description: "Using the procedure overload to create multiple procedures with the same name, but with different signatures, on the same application object."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: reference
 ms.author: solsen

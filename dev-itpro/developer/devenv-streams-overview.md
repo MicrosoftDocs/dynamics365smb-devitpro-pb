@@ -2,7 +2,6 @@
 title: Using streams in Business Central
 description: Introducing how to work with streams in Business Central AL code.
 author: KennieNP
-ms.custom: na
 ms.date: 04/05/2024
 ms.reviewer: solsen
 ms.topic: conceptual

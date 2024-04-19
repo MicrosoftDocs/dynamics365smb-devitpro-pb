@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0036"
 description: "Modifying table field properties can lead to destructive changes that will break the upgrade of existing installations and dependent extensions."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

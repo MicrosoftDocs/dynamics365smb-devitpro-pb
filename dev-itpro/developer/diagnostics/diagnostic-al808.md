@@ -2,7 +2,6 @@
 title: "Compiler Error AL0808"
 description: "You cannot set the '{0}' property to '{1}' for {2} '{3}' in the page customization '{4}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

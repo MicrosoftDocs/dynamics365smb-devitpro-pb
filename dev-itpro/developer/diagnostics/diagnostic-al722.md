@@ -2,7 +2,6 @@
 title: "Compiler Error AL0722"
 description: "The property '{0}' is not allowed on {1} '{2}' because the {3} '{4}' is using the ActionRef syntax or the app.json specifies the 'NoPromotedActionProperties' feature."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

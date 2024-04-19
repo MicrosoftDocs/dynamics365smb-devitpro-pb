@@ -2,7 +2,6 @@
 title: "Overview of the System Application"
 description: "This article provides an overview of the modules in the System Application, and information about how you can use them."
 author: bholtorf
-ms.custom: na
 ms.topic: overview
 ms.author: bholtorf
 ms.date: 01/08/2024

@@ -2,7 +2,6 @@
 title: "Compiler Error AL0355"
 description: "Cannot move the {0} '{1}' multiple times inside of a single move operation."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

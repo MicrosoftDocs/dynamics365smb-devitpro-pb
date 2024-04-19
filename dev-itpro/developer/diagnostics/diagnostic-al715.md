@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL0715"
 description: "The {0} name '{1}' is reserved for future AL language features."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

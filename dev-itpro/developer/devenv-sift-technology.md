@@ -1,7 +1,6 @@
 ---
 title: "SumIndexField Technology (SIFT)"
 description: Provides an introduction to SIFT indexes in Business Central.
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer

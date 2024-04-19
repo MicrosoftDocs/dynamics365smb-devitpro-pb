@@ -2,7 +2,6 @@
 title: "JsonObject.Values() Method"
 description: "Gets a set of values of the JsonObject."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

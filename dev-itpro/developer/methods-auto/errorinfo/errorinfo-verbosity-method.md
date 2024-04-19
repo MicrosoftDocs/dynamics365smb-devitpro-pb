@@ -2,7 +2,6 @@
 title: "ErrorInfo.Verbosity([Verbosity]) Method"
 description: "Specifies the severity level of the error."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

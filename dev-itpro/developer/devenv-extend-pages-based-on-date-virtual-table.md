@@ -2,7 +2,6 @@
 title: "Extending pages previously based on the Date virtual table"
 description: "How to extend pages that previously had the Date virtual table as their source table."
 author: blrobl
-ms.custom: na
 ms.reviewer: solsen
 ms.date: 04/01/2021
 ms.topic: conceptual

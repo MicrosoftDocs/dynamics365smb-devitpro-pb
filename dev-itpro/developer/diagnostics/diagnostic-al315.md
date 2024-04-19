@@ -2,7 +2,6 @@
 title: "Compiler Error AL0315"
 description: "Control '{0}' does not exist in group '{1}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

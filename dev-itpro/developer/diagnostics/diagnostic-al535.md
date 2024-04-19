@@ -2,7 +2,6 @@
 title: "Compiler Error AL0535"
 description: "The referenced page '{0}' must be a List part, a Card part, or an API page."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -1,7 +1,6 @@
 ---
 title: "Working with translation files"
 description: "How to work with translations, multilanguage, and XLIFF files in Business Central"
-ms.custom: na
 ms.date: 09/05/2023
 ms.topic: conceptual
 ms.author: solsen

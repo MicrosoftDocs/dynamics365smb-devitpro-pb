@@ -3,7 +3,6 @@ title: REST API Web Services
 description: Learn about RESTful API web services for Business Central and how to create and maintain them.
 author: kennieNP
 
-ms.custom: na
 ms.reviewer: edupont
 ms.topic: overview
 ms.author: kepontop

@@ -2,7 +2,6 @@
 title: "OnBeforePostDataItem (Report Extension Data Set Modify) Trigger"
 description: "Runs before the OnPostDataItem trigger of the base data item."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

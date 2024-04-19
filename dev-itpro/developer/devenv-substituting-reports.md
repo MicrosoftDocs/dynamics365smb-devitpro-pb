@@ -2,7 +2,6 @@
 title: Substituting reports
 description: How to substitute reports for other reports.
 author: blrobl
-ms.custom: na
 ms.date: 12/05/2023
 ms.topic: conceptual
 ---

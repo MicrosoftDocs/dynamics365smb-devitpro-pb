@@ -2,7 +2,6 @@
 title: "Compiler Error AL1068"
 description: "Duplicate package dependency with application ID '{0}', and publisher '{1}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

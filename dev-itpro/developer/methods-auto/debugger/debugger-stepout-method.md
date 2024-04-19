@@ -2,7 +2,6 @@
 title: "Debugger.StepOut() Method"
 description: "Enables debugging to return to the calling method after it steps into a method call."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

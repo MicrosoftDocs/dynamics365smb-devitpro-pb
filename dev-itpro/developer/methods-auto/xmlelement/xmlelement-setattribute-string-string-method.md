@@ -2,7 +2,6 @@
 title: "XmlElement.SetAttribute(Text, Text) Method"
 description: "Sets the value of the specified attribute or create it if is not part of the element's attribute collection."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

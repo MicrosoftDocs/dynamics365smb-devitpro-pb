@@ -2,7 +2,6 @@
 title: "TestAction Data Type"
 description: "Represents a test action on a page."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

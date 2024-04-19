@@ -2,7 +2,6 @@
 title: "NumberSequence.Insert(Text [, BigInteger] [, BigInteger] [, Boolean]) Method"
 description: "Creates a number sequence in the database, with the given parameters."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

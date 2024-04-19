@@ -2,7 +2,6 @@
 title: "NavApp.GetArchiveRecordRef(Integer, var RecordRef) Method"
 description: "Returns a RecordRef for the specified table."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

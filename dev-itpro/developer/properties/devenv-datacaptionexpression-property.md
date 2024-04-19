@@ -2,7 +2,6 @@
 title: "DataCaptionExpression Property"
 description: "Sets an AL expression that is evaluated and displayed to the left of the page caption."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: AL outline view
 description: Description of the outline view in Visual Studio Code.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/01/2024
 ms.topic: conceptual
 ms.author: solsen

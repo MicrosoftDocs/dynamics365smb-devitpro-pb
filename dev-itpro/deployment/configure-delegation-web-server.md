@@ -1,7 +1,6 @@
 ---
 title: Configure Web Client Delegation
 description: The client device, Web Client and Server are on separate computers. Web Client performs actions on behalf of client device called impersonation process.
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: jswymer

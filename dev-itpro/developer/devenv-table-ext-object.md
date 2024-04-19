@@ -2,7 +2,6 @@
 title: Table extension object
 description: This article describes the table extension object in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: solsen

@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0231"
 description: "The data classification context will be lost when using the StrSubstNo method or string concatenation as a parameter in the Error method."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

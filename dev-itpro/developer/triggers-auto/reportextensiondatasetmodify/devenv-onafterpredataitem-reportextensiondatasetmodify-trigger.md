@@ -2,7 +2,6 @@
 title: "OnAfterPreDataItem (Report Extension Data Set Modify) Trigger"
 description: "Runs after the OnPreDataItem trigger of the base data item."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

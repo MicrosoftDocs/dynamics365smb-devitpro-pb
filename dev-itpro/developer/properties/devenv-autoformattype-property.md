@@ -2,7 +2,6 @@
 title: "AutoFormatType Property"
 description: "Sets a value that determines how data is formatted, together with the AL expression in the AutoFormatExpression Property."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

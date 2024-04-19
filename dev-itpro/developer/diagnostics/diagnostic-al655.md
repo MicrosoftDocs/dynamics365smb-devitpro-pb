@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL0655"
 description: "The property DataItemLinkReference can only refer to an ancestor DataItem."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

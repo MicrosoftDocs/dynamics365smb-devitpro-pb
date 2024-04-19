@@ -2,7 +2,6 @@
 title: "AppSourceCop Hidden AS0072"
 description: "The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version (Major.Minor)."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

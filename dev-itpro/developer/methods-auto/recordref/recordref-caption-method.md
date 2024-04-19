@@ -2,7 +2,6 @@
 title: "RecordRef.Caption() Method"
 description: "Gets the caption of the table that is currently selected."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

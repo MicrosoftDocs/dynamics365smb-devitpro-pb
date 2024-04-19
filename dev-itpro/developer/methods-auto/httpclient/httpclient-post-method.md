@@ -2,7 +2,6 @@
 title: "HttpClient.Post(Text, HttpContent, var HttpResponseMessage) Method"
 description: "Sends a POST request to the specified URI as an asynchronous operation."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

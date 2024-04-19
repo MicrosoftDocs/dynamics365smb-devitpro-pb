@@ -2,7 +2,6 @@
 title: Syntax and snippets
 description: Description of syntax and snippets available with the AL language for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/01/2024
 ms.topic: conceptual
 ms.author: solsen

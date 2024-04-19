@@ -1,6 +1,5 @@
 ---
 title: "Asynchronous considerations for control add-ins"
-ms.custom: na
 ms.date: 12/29/2023
 ms.topic: conceptual
 ms.assetid: 6c90376e-b86e-406d-880d-3cc905bf6527

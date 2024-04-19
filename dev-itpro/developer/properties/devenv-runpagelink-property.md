@@ -2,7 +2,6 @@
 title: "RunPageLink Property"
 description: "Sets a link to a page that will be launched for this action."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

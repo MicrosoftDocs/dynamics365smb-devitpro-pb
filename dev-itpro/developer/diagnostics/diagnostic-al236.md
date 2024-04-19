@@ -2,7 +2,6 @@
 title: "Compiler Error AL0236"
 description: "An empty CONST() expression is not allowed on field '{0}' of type '{1}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0234"
 description: "You must write a tooltip in the Tooltip property for all fields on table objects."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

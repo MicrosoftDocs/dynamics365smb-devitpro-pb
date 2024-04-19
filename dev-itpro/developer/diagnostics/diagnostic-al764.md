@@ -2,7 +2,6 @@
 title: "Compiler Error AL0764"
 description: "{0} cannot be empty."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

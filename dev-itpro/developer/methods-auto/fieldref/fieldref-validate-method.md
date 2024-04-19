@@ -2,7 +2,6 @@
 title: "FieldRef.Validate([Any]) Method"
 description: "Use this method to enter a new value into a field and have the new value validated by the properties and code that have been defined for that field."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

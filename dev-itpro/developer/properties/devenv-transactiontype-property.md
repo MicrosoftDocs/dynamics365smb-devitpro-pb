@@ -2,7 +2,6 @@
 title: "TransactionType Property"
 description: "Sets the transaction type."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

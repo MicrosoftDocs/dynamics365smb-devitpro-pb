@@ -2,7 +2,6 @@
 title: "Compiler Error AL0538"
 description: "Views only support setting one sorting direction on table fields."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

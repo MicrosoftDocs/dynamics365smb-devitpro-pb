@@ -1,7 +1,6 @@
 ---
 title: "Web Services Authentication"
 description: Learn about authenticating web services in business Central
-ms.custom: na
 ms.date: 04/26/2023
 ms.topic: conceptual
 author: jswymer

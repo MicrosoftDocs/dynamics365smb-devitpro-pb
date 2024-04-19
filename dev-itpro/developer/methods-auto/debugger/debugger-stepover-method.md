@@ -2,7 +2,6 @@
 title: "Debugger.StepOver() Method"
 description: "Executes a method call and then stops at the first line outside the method call."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

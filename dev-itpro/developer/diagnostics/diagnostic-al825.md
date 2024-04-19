@@ -2,7 +2,6 @@
 title: "Compiler Error AL0825"
 description: "Field '{0}' cannot be moved to {1} '{2}' because '{2}' is marked as Moved."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

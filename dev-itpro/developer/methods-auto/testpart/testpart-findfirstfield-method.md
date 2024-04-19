@@ -2,7 +2,6 @@
 title: "TestPart.FindFirstField(TestField, Any) Method"
 description: "Finds the first field in the data set that is displayed on a test page."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

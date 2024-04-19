@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0022"
 description: "An IF followed by two or more ELSE IF should be replaced with a CASE."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Compiler Error AL0428"
 description: "Cannot specify {0} and {1} property at the same time."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

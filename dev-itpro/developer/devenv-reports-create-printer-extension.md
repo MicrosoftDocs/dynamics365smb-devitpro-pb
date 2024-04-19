@@ -1,7 +1,6 @@
 ---
 title: "Creating a Printer Extension"
 description: Describes how to create an extension that sets up cloud printers. 
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer

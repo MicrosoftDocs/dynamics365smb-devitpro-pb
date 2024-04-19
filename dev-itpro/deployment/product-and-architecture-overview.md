@@ -1,7 +1,6 @@
 ---
 title: Component and System Topology
 description: The Business Central architecture includes of three core components, and various additional tools and components.
-ms.custom: na
 ms.date: 08/31/2022
 ms.topic: overview
 author: jswymer

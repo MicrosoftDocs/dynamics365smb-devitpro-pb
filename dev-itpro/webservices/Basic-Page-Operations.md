@@ -1,7 +1,6 @@
 ---
 title: Basic page operations
 description: Learn how to use basic operations for SOAP web services.
-ms.custom: na
 ms.date: 01/09/2024
 ms.topic: conceptual
 ---

@@ -2,7 +2,6 @@
 title: "AboutTitleML Property"
 description: "Sets the large-font title that appears in a teaching tip in the UI."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

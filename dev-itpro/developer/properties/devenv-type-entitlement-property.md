@@ -2,7 +2,6 @@
 title: "Type (Entitlement) Property"
 description: "The type of entitlement."
 ms.author: solsen
-ms.custom: na
 ms.date: 09/27/2023
 ms.topic: reference
 author: SusanneWindfeldPedersen

@@ -2,7 +2,6 @@
 title: "AuditCategory System Option"
 description: "Represents an audit category for IfX audit telemetry."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

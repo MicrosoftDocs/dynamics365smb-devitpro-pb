@@ -2,7 +2,6 @@
 title: "ExternalBusinessEvent Attribute"
 description: "Specifies that the method is published as an external business event."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/07/2023
 ms.topic: reference
 author: SusanneWindfeldPedersen
