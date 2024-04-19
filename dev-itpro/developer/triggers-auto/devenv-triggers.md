@@ -1,5 +1,6 @@
 ---
 title: Triggers overview
+description: Learn how triggers work in AL for Business Central.
 ms.custom: evergreen
 ms.date: 04/17/2024
 ms.reviewer: solsen
