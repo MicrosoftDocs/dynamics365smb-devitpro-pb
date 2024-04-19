@@ -1,15 +1,16 @@
 ---
 title: Table object
-description: This article describes the table object in AL for Business Central.
+description: This article describes the structure, object limits, and extensibility of the table object in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 03/12/2024
+ms.custom: evergreen
+ms.date: 04/17/2024
 ms.topic: conceptual
 ms.author: solsen
 --- 
 
 # Table object
 
-Tables are the core objects used to store data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. No matter how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
+Tables are the core objects used to store data in [!INCLUDE [prod_short](includes/prod_short.md)]. No matter how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
 
 The structure of a table has four sections:
 
@@ -21,13 +22,13 @@ The structure of a table has four sections:
 ## Table extensibility limitations
 
 > [!IMPORTANT]  
-> Only tables with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
+> Only tables with the [Extensible property](properties/devenv-extensible-property.md) set to **true** can be extended.
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
 > [!IMPORTANT]  
-> System and virtual tables can't be extended. System tables are created in the ID range of 2.000.000.000 and above. For more information about object ranges, see [Object Ranges](devenv-object-ranges.md).
+> System and virtual tables can't be extended. System tables are created in the ID range of 2.000.000.000 and above. For more information about object ranges, see [Object ranges](devenv-object-ranges.md).
 
 ## Table object limits
 
@@ -113,14 +114,13 @@ table 50104 Address
 
 The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform will automatically add several system fields to tables. For more information, see [System Fields](devenv-table-system-fields.md).
 
+## See also
 
-## See Also
-
-[AL Development Environment](devenv-reference-overview.md)  
-[Table Overview](devenv-tables-overview.md)  
-[Table Extension Object](devenv-table-ext-object.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Table overview](devenv-tables-overview.md)  
+[Table extension object](devenv-table-ext-object.md)  
 [Adding tooltips to table and page fields](devenv-adding-tooltips.md)  
-[SqlTimestamp Property](properties/devenv-sqltimestamp-property.md)  
-[Table Keys](devenv-table-keys.md)  
-[Table, Table Fields, and Table Extension Properties](properties/devenv-table-properties.md)  
-[Object Specifications and Limitations](devenv-object-specifications-limitations.md)   
+[SqlTimestamp property](properties/devenv-sqltimestamp-property.md)  
+[Table keys](devenv-table-keys.md)  
+[Table, table fields, and table extension properties](properties/devenv-table-properties.md)  
+[Object specifications and limitations](devenv-object-specifications-limitations.md)   

@@ -1,14 +1,14 @@
 ---
-title: "The Txt2Al Conversion Tool"
-description: "Description of the converter tool."
-
+title: The Txt2Al Conversion Tool
+description: Description of the converter tool that allows you to take C/AL objects and convert them into .al format.
 author: SusanneWindfeldPedersen
-ms.date: 07/01/2022
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# The Txt2Al Conversion Tool
+# The Txt2Al conversion tool
 
 > [!INCLUDE[2022_releasewave2_deprecatedtool](../includes/2022_releasewave2_deprecatedtool.md)]
 
@@ -74,9 +74,11 @@ It's **very** important that you compile the database to get the right result in
 > [!TIP]  
 > You can use the Dynamics NAV Development Shell cmdlet `Export-NAVApplicationObject` with the `-ExportToNewSyntax` flag set instead of using finsql. From the command prompt in the Dynamics NAV Development Shell, run `Get-Help Export-NAVApplicationObject -full` to see the full syntax.
 
-## See Also
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[Report Object](devenv-report-object.md)  
-[Page Properties](properties/devenv-page-property-overview.md)
+
+## See also
+
+[Developing extensions](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Page extension object](devenv-page-ext-object.md)  
+[Report object](devenv-report-object.md)  
+[Page properties](properties/devenv-page-property-overview.md)
