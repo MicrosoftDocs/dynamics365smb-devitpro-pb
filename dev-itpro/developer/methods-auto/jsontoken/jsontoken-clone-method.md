@@ -2,7 +2,6 @@
 title: "JsonToken.Clone() Method"
 description: "Creates a deep-copy of the JsonToken value."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Record.Validate(Any [, Any]) Method"
 description: "Calls the OnValidate trigger for the field that you specify."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

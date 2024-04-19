@@ -2,7 +2,6 @@
 title: "System.Sleep(Integer) Method"
 description: "Returns control to the operating system for a specified time."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -1,7 +1,6 @@
 ---
 title: "Display Data as Tiles"
 description: Describes how to display a list as tiles
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer

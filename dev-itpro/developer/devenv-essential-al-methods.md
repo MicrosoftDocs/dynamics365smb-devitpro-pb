@@ -1,6 +1,5 @@
 ---
 title: "Essential AL Methods"
-ms.custom: na
 ms.date: 09/28/2022
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

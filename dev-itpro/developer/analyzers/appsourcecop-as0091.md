@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0091"
 description: "One or more dependencies of the previous version of the extension, used as a baseline for detecting breaking changes, could not be found in the package cache folder."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

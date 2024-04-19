@@ -2,7 +2,6 @@
 title: "OnInsertRecord (Request Page Extension) Trigger"
 description: "Runs before a new record is inserted into the table."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

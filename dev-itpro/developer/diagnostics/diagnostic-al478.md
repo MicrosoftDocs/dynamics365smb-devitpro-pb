@@ -2,7 +2,6 @@
 title: "Compiler Error AL0478"
 description: "The trigger '{0}' can only be used if the property '{1}' of '{2}' is set with any of the values of :'{3}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

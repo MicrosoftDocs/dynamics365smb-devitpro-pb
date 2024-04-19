@@ -2,7 +2,6 @@
 title: "TaskScheduler Data Type"
 description: "TaskScheduler is a complex data type used for creating and managing tasks in the task scheduler, which runs codeunits at scheduled times."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

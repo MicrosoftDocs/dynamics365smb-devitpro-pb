@@ -2,7 +2,6 @@
 title: "Culture Property"
 description: "Specifies the culture of the .NET assembly."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

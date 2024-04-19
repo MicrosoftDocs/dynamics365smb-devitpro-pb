@@ -2,7 +2,6 @@
 title: "XmlDocument.GetRoot(var XmlElement) Method"
 description: "Gets the root element of the XML tree for this document."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

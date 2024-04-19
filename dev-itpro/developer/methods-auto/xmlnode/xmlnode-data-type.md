@@ -2,7 +2,6 @@
 title: "XmlNode Data Type"
 description: "Represents a XML node which can either be for instance an XML attribute, an XML element or a XML document."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

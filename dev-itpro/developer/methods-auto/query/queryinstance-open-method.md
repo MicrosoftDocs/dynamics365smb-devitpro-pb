@@ -2,7 +2,6 @@
 title: "Query.Open() Method"
 description: "Runs a query object and generates a data set that can be read."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

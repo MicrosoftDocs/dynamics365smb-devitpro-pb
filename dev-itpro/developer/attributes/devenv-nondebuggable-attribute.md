@@ -2,7 +2,6 @@
 title: "NonDebuggable Attribute"
 description: "Specifies that the annotated symbol will not be available to the debugger."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/15/2022
 ms.topic: reference
 author: SusanneWindfeldPedersen

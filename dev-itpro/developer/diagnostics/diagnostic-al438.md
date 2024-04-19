@@ -2,7 +2,6 @@
 title: "Compiler Error AL0438"
 description: "The type of value {0} does not match the field’s type."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

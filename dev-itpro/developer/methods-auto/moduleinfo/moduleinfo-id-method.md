@@ -2,7 +2,6 @@
 title: "ModuleInfo.Id() Method"
 description: "Gets the ID of the specified application."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

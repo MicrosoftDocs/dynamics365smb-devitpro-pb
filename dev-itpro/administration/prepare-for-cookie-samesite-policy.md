@@ -1,7 +1,6 @@
 ---
 title: Cookie samesite policy
 description: Deploy and administer the Web server to support the latest in browser cookie-handling policies.
-ms.custom: na
 ms.date: 12/29/2023
 ms.topic: conceptual
 ms.author: jswymer

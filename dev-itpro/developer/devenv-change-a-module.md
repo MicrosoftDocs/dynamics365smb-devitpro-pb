@@ -1,7 +1,6 @@
 ---
 title: "Change a module in the System Application"
 description: "This article provides steps and examples of how to change a module in the System Application."
-ms.custom: na
 ms.date: 01/03/2024
 ms.topic: conceptual
 author: bholtorf

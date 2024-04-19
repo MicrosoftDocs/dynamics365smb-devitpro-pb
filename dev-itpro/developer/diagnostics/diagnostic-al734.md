@@ -2,7 +2,6 @@
 title: "Compiler Error AL0734"
 description: "The value '{0}' of the property '{1}' is not a valid GUID."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

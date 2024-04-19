@@ -2,7 +2,6 @@
 title: "SumIndexFields Property"
 description: "Specify which fields should be the aggregation fields in a **SumIndexField Technology (SIFT)** index, if applicable."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

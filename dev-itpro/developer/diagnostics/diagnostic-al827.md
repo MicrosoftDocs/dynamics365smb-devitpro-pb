@@ -2,7 +2,6 @@
 title: "Compiler Error AL0827"
 description: "Argument {0}: The argument {0} of field class {1} is not supported."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

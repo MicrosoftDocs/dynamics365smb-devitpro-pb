@@ -2,7 +2,6 @@
 title: "Compiler Error AL0266"
 description: "Pages of types 'CardPart' and 'ListPart' can only contain Processing areas."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/10/2022
 ms.topic: reference
 author: SusanneWindfeldPedersen

@@ -2,7 +2,6 @@
 title: "Multiplicity Property"
 description: "Specify the multiplicity of the part."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

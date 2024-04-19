@@ -2,7 +2,6 @@
 title: "AppSourceCop Info AS0099"
 description: "The member ID should be within the allowed range and outside the range allocated to per-tenant customizations."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

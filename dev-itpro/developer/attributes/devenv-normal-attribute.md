@@ -2,7 +2,6 @@
 title: "Normal Attribute"
 description: "Specifies that the method is a Normal method."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/15/2022
 ms.topic: reference
 author: SusanneWindfeldPedersen

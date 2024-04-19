@@ -2,7 +2,6 @@
 title: "Discontinuing an AppSource app"
 description: "Description of how to discontinue an app that is available on AppSource."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 06/10/2021
 ms.topic: article
 ms.author: solsen

@@ -1,7 +1,6 @@
 ---
 title: Event types
 description: Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global, and trigger events.
-ms.custom: na
 ms.date: 04/18/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

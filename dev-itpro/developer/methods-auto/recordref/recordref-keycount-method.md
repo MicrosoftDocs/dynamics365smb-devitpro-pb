@@ -2,7 +2,6 @@
 title: "RecordRef.KeyCount() Method"
 description: "Gets the number of keys that exist in the table that is referred to by the RecordRef."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

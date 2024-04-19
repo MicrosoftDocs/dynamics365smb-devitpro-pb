@@ -2,7 +2,6 @@
 title: App type, contact type, and customer leads
 description: Guidelines on app type, contact type, and customer leads.
 author: a-emniel
-ms.custom: na
 ms.date: 02/08/2024
 ms.reviewer: solsen
 ms.topic: conceptual

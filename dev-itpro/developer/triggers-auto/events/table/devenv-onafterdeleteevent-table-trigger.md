@@ -2,7 +2,6 @@
 title: "OnAfterDeleteEvent (Table) Trigger Event"
 description: "Executed after a record is deleted from a table."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

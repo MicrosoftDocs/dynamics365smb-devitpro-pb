@@ -2,7 +2,6 @@
 title: AL code actions
 description: Code actions can help you fix code issues either for your project alone or for the entire workspace.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 08/28/2023
 ms.topic: conceptual
 ms.author: solsen

@@ -2,7 +2,6 @@
 title: "Migration JSON file"
 description: "Description of the JSON file for data migration for AL in Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 06/22/2022
 ms.topic: conceptual
 ms.author: solsen

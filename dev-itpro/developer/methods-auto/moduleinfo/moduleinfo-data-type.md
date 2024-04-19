@@ -2,7 +2,6 @@
 title: "ModuleInfo Data Type"
 description: "Represents information about an application consumable from AL."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

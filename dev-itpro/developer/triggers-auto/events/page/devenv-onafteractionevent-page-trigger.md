@@ -2,7 +2,6 @@
 title: "OnAfterActionEvent (Page) Trigger Event"
 description: "Executed after the OnAction trigger, which is called when a user selects an action on the page."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Compiler Warning AL1059"
 description: "Feature '{0}' can only be enabled, if feature '{1}' is also enabled."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

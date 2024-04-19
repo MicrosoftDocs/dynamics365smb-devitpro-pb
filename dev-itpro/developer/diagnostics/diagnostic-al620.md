@@ -2,7 +2,6 @@
 title: "Compiler Error AL0620"
 description: "Preprocessor directives must appear as the first non-whitespace character on a line."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -1,6 +1,5 @@
 ---
 title: "Calling External Web Services"
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.assetid: ef7ae394-7cae-4eb4-a9a4-75b39ca1a2b6

@@ -1,6 +1,5 @@
 ---
 title: "How to: Import Objects"
-ms.custom: na
 ms.date: 04/13/2021
 ms.reviewer: jswymer
 ms.topic: article

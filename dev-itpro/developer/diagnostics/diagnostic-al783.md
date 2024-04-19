@@ -2,7 +2,6 @@
 title: "Compiler Error AL0783"
 description: "A page extension is only allowed to access control add-ins defined within its own extension scope."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

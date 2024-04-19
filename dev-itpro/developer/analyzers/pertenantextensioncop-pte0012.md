@@ -2,7 +2,6 @@
 title: "PerTenantExtensionCop Warning PTE0012"
 description: "The InternalsVisibleTo setting will expose your internal objects to any extension with the given name, publisher, and ID."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

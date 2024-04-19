@@ -2,7 +2,6 @@
 title: "Record.ReadPermission() Method"
 description: "Determines whether a user is granted read permission to the table that contains a record."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

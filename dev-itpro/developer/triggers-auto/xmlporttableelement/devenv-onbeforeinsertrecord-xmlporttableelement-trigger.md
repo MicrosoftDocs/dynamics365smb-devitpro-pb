@@ -2,7 +2,6 @@
 title: "OnBeforeInsertRecord (Xml Port Table Element) Trigger"
 description: "Runs after a record has been loaded and before it is inserted into a database table."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "TransactionModel Attribute"
 description: "Specifies whether data is committed to the database during execution of a test method and whether transactions are rolled back at the end of a test method."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/15/2022
 ms.topic: reference
 author: SusanneWindfeldPedersen

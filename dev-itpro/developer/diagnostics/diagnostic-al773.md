@@ -2,7 +2,6 @@
 title: "Compiler Warning AL0773"
 description: "The number of files found in '{0}' exceeds {1}."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Record.Find([Text]) Method"
 description: "Finds a record in a table that is based on the values stored in keys."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

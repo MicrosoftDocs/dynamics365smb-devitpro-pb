@@ -2,7 +2,6 @@
 title: "Compiler Error AL0364"
 description: "Option members must be accessed with ::."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

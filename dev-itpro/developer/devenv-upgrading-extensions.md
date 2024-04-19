@@ -2,7 +2,6 @@
 author: jswymer
 title: "Upgrading Extensions"
 description: "Describes how to add code to upgrade data in a new extension version."
-ms.custom: na
 ms.date: 09/17/2021
 ms.topic: conceptual
 ---

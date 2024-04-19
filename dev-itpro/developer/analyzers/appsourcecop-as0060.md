@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0060"
 description: "The method cannot be invoked in an AppSource application because it can lead to runtime errors or undefined behavior."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

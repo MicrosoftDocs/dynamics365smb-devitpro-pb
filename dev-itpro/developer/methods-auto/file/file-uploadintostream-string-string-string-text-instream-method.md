@@ -2,7 +2,6 @@
 title: "File.UploadIntoStream(Text, Text, Text, var Text, var InStream) Method"
 description: "Sends a file from the client computer to the corresponding server."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

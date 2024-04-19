@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0003"
 description: "There must be exactly one space character between the NOT operator and its argument."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

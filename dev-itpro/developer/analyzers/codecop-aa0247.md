@@ -2,7 +2,6 @@
 title: "CodeCop Info AA0247"
 description: "Use namespaces to organize your code and isolate it from changes."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

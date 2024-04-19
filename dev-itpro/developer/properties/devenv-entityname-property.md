@@ -2,7 +2,6 @@
 title: "EntityName Property"
 description: "Sets the singular entity name with which the page is exposed in the API endpoint."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

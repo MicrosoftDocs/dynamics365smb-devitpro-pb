@@ -1,6 +1,5 @@
 ---
 title: "Introducing the Dynamics 365 Business Central Mobile App"
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: SusanneWindfeldPedersen

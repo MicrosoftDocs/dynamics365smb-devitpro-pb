@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL0729"
 description: "The {0} '{1}' can only be used if the property '{2}' is set with any of the values of: '{3}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

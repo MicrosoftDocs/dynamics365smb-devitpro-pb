@@ -2,7 +2,6 @@
 title: "CalcFormula Property"
 description: "Sets the Calculation formula for a FlowField."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

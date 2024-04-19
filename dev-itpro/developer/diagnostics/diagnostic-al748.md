@@ -2,7 +2,6 @@
 title: "Compiler Warning AL0748"
 description: "The return type '{0}' of the {1} method '{2}' has 'Internal' accessibility."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -1,7 +1,6 @@
 ---
 title: Azure Key Vaults with Business Central
 description: Provides an overview of Azure key vaults with Business Central extensions.
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: overview
 author: jswymer

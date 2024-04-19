@@ -2,7 +2,6 @@
 title: "System.CompressArray(Array of [Text]) Method"
 description: "Moves all non-empty strings (text) in an array to the beginning of the array."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

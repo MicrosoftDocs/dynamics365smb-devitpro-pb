@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0009"
 description: "The list of fields for the primary key or for the clustered key must not be changed."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

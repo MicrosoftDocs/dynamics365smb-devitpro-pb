@@ -2,7 +2,6 @@
 title: "Session.StartSession(var Integer, Integer, Text, var Record, Duration) Method"
 description: "Starts a session without a UI and runs the specified codeunit."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

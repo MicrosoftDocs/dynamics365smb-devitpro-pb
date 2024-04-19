@@ -2,7 +2,6 @@
 title: "HttpResponseMessage Data Type"
 description: "Represents an HTTP response message including the status code and data."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Compiler Error AL0539"
 description: "The field '{0}' cannot be used multiple times when defining the order of the page view."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

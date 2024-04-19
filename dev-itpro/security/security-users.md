@@ -1,7 +1,6 @@
 ---
 title: "Security Tips for Business Users"
 description: Tips for administrators and business users to secure their devices that access Business Central.
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: mikebc

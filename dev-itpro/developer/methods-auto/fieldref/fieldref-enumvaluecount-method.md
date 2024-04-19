@@ -2,7 +2,6 @@
 title: "FieldRef.EnumValueCount() Method"
 description: "Gets the number of Enum values (or Option members) from the Enum metadata for the field that is currently selected."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

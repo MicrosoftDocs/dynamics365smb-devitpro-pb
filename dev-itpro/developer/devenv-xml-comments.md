@@ -1,7 +1,6 @@
 ---
 title: XML comments in code
 description: Learn about adding documentation to AL code by including XML elements in a special syntax.
-ms.custom: na
 ms.author: solsen
 ms.date: 03/14/2024
 ms.topic: conceptual

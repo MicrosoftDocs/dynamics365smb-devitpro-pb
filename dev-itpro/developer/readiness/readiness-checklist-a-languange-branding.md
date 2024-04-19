@@ -2,7 +2,6 @@
 title: "Language, Branding, and Images"
 description: "Guidelines on language, branding and images"
 author: a-emniel
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual

@@ -2,7 +2,6 @@
 title: "Importance Property"
 description: "Sets the amount of information that is visible in a window or dialog box."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

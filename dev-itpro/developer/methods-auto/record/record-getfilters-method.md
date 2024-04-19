@@ -2,7 +2,6 @@
 title: "Record.GetFilters() Method"
 description: "Gets a string that contains a list of the filters within the current filter group for all fields in a record."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

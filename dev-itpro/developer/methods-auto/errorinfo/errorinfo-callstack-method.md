@@ -2,7 +2,6 @@
 title: "ErrorInfo.Callstack() Method"
 description: "Specifies a callstack where the ErrorInfo was collected."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

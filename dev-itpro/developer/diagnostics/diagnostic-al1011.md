@@ -2,7 +2,6 @@
 title: "Compiler Warning AL1011"
 description: "Source file '{0}' specified multiple times."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

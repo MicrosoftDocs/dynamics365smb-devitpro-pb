@@ -5,7 +5,6 @@ author: jacobwj
 ms.author: solsen
 ms.topic: conceptual
 ms.date: 11/03/2022
-ms.custom: na
 ---
 
 # Pages with Action Bar Improvements

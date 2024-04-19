@@ -2,7 +2,6 @@
 title: "Xmlport Data Type"
 description: "XmlPorts are used to export or import data between an external source and a Microsoft Dynamics Business Central database."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

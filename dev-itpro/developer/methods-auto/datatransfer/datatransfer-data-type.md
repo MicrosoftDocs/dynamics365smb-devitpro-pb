@@ -2,7 +2,6 @@
 title: "DataTransfer Data Type"
 description: "A structure building bulk transfer of data between tables."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

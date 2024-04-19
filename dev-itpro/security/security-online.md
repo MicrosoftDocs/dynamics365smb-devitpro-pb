@@ -3,7 +3,6 @@ title: "Security in Business Central"
 description: "Learn about the main aspects of security in your online deployment of Dynamics 365 Business Central."
 author: jswymer
 
-ms.custom: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021

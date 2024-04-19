@@ -2,7 +2,6 @@
 title: "InternalEvent Attribute"
 description: "Specifies that the method is published as an internal event."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/15/2022
 ms.topic: reference
 author: SusanneWindfeldPedersen

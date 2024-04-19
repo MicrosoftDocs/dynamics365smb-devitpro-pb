@@ -2,7 +2,6 @@
 title: "Xmlport.SetDestination(var OutStream) Method"
 description: "Sets the destination OutStream of the XmlPort."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Get a List of Business Central Environments"
 description: "Describing how to get a list of Business Central environments when working with APIs."
 author: jswymer
-ms.custom: na
 ms.date: 02/10/2022
 ms.topic: article
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7

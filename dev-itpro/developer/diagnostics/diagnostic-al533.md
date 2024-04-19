@@ -2,7 +2,6 @@
 title: "Compiler Error AL0533"
 description: "The view '{0}' is not found in the target '{1}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

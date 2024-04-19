@@ -1,7 +1,6 @@
 ---
 title: "Walkthrough: Creating a console application that use OAuth to Authenticate Business Central Web Services (OData and SOAP)"
 description: Learn how to use OAuth to authenticate Business Central web services (OData and SOAP) through a step-by-step guide
-ms.custom: na
 ms.date: 01/25/2022
 ms.topic: conceptual
 author: jswymer

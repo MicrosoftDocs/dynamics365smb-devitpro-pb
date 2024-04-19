@@ -2,7 +2,6 @@
 title: "Query.ColumnCaption(Any) Method"
 description: "Returns the current caption of a query column as a text string."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

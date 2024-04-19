@@ -2,7 +2,6 @@
 title: "XmlNamespaceManager.LookupPrefix(Text, var Text) Method"
 description: "Finds the prefix declared for the given namespace URI."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

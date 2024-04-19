@@ -2,7 +2,6 @@
 title: "TestRequestPage.GoToKey([Any,...]) Method"
 description: "Finds the row in a data set on the test page that is identified by the specified values."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

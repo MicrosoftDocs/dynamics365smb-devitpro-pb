@@ -2,7 +2,6 @@
 title: "RecordRef.Open(Integer [, Boolean] [, Text]) Method"
 description: "Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

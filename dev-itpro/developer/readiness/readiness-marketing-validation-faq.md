@@ -2,7 +2,6 @@
 title: "Marketing validation FAQ"
 description: "The marketing validation FAQ for Business Central apps"
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 09/26/2023
 ms.reviewer: solsen
 ms.topic: conceptual

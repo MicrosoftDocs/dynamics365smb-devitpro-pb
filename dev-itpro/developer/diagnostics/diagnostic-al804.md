@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL0804"
 description: "You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

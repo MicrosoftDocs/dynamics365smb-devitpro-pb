@@ -2,7 +2,6 @@
 title: "Compiler Error AL0765"
 description: "An argument of type {0} cannot be used in an External Business Event."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

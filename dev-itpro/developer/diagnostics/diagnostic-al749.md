@@ -2,7 +2,6 @@
 title: "Compiler Warning AL0749"
 description: "The type '{0}' of the parameter '{1}' of the {2} method '{3}' has 'Internal' accessibility."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

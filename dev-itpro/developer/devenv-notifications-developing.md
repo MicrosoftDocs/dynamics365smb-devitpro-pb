@@ -2,7 +2,6 @@
 title: "Notifications"
 description: Learn how you can generate notifications that will show to the user.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: solsen

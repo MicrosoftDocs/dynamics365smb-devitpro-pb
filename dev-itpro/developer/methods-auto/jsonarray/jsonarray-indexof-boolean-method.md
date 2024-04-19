@@ -2,7 +2,6 @@
 title: "JsonArray.IndexOf(Boolean) Method"
 description: "Determines the index of a specific value in the JsonArray."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "OnAfterGetRecord (Xml Port Table Element) Trigger"
 description: "Runs after a record is retrieved from a table and before it is exported to the XML document."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

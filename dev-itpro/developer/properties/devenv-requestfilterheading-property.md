@@ -2,7 +2,6 @@
 title: "RequestFilterHeading Property"
 description: "Sets a caption for the request page tab that is related to this data item."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

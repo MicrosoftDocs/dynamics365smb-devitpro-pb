@@ -2,7 +2,6 @@
 title: "Compiler Error AL0725"
 description: "The action type '{0}' is not allowed in area '{1}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

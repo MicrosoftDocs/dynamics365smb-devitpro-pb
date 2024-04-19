@@ -2,7 +2,6 @@
 title: "Compiler Error AL0505"
 description: "Pages of type API must have the 'DelayedInsert' property set to true."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

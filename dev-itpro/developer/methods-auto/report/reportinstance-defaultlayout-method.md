@@ -2,7 +2,6 @@
 title: "Report.DefaultLayout() Method"
 description: "Gets the default built-in layout type that is used on a specified report."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

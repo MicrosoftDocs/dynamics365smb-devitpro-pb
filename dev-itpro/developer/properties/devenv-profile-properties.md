@@ -3,7 +3,6 @@ title: "Profile Properties"
 description: "This topic lists properties that apply to profiles specifically."
 
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: reference
 ms.author: solsen

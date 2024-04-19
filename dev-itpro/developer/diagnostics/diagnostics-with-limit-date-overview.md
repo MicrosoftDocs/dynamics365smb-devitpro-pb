@@ -2,7 +2,6 @@
 title: "Warnings Turning into Errors Overview"
 description: ""
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

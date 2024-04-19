@@ -1,7 +1,6 @@
 ---
 title: "Extending G/L entry aggregations when posting invoices"
 description: Explore an example of how to extend the posting process for sales, purchase, and service documents.
-ms.custom: na
 ms.date: 01/03/2024
 ms.topic: conceptual
 author: bholtorf

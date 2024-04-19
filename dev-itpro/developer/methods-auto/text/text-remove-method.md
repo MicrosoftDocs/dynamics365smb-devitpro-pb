@@ -2,7 +2,6 @@
 title: "Text.Remove(Integer [, Integer]) Method"
 description: "Returns a new Text in which a specified number of characters from the current string are deleted."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

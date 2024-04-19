@@ -1,6 +1,5 @@
 ---
 title: "Implementing the Camera in AL"
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: blrobl
