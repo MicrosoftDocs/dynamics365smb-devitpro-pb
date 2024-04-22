@@ -2,7 +2,7 @@
 title: Designing User Interfaces
 description: "Provides an overview of the components available when designing a user interface in Business Central"
 author: kennieNP
-ms.date: 22/04/2024
+ms.date: 04/22/2024
 ms.topic: conceptual
 ms.author: kepontop
 ---
@@ -78,7 +78,7 @@ For more information, see [Query Object](devenv-query-object.md) and [Analyze da
 
 A profile is the mechanism that makes a Role Center page and its associated pages and reports available to users in the client. It enables you to build an individual experience for users based on their role in the company by customizing the pages that they use to perform the daily tasks. In the client, profiles are referred to as **Roles**. When users sign in to [!INCLUDE[prod_short](includes/prod_short.md)], they are doing so under a specific role. Users can switch the role from the **My Settings** page. 
 
-For more information, see [Designing profiles](devenv-design-profiles.md).
+For more information, see [Designing profiles](devenv-design-profiles.md) and [Customizing for user roles](devenv-role-customization.md).
 
 
 ## Discoverability features 
@@ -98,15 +98,13 @@ For more information, see [Page discoverability overview](devenv-page-discoverab
 
 ## See Also
 
-[Customizing for user roles](devenv-role-customization.md)  
 [Designing role centers](devenv-designing-role-centers.md)  
 [Pages overview](devenv-pages-overview.md)   
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  
-[Arranging fields on a FastTab](devenv-arranging-fields-on-fasttab.md)   
 [Actions overview](devenv-actions-overview.md)   
-
 [Query Object](devenv-query-object.md)   
 [Analyze data on lists and queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 [Designing views](devenv-views.md)   
 [Designing profiles](devenv-design-profiles.md)
+[Customizing for user roles](devenv-role-customization.md)  
 [Page discoverability overview](devenv-page-discoverability.md)   

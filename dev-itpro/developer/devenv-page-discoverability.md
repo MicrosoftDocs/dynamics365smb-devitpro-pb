@@ -2,7 +2,7 @@
 title: Page discoverability
 description: Introducing how to make Business Central pages discoverable by users.
 author: KennieNP
-ms.date: 22/04/2024
+ms.date: 04/22/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: kepontop
