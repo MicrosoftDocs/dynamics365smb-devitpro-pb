@@ -71,4 +71,11 @@ For more information, see [Adding help links to your pages](./devenv-adding-help
 
 ## See also
 
-TODO
+[Adding pages to Tell Me](devenv-al-menusuite-functionality.md)  
+[Adding links to the navigation menu on the role center](devenv-adding-menus-to-navigation-pane.md)  
+[Manage user profiles](/dynamics365/business-central/admin-users-profiles-roles#to-activate-a-profile)  
+[Finding Pages with the Role Explorer](/dynamics365/business-central/ui-role-explorer)   
+[Adding actions to a page (versions before version 2022 release wave 2)](devenv-adding-actions-to-a-page.md)  
+[Promoted Actions](devenv-promoted-actions.md)  
+[Adding teaching tips to your pages](../administration/onboarding-teaching-tips-tours.md)  
+[Adding help links to your pages](./devenv-adding-help-links-from-pages-tables-xmlports.md)  
