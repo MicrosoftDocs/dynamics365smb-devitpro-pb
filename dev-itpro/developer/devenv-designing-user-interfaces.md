@@ -13,12 +13,12 @@ ms.author: kepontop
 
 The user interface for [!INCLUDE[prod_short](includes/prod_short.md)] consists of many types of components, such as 
 
-* *Role Centers*. These serve as personalized dashboards tailored to specific user roles. They provide quick access to relevant information, tasks, and reports.
-* Pages*. Business Central’s interface is organized into pages. These can be list pages, displaying records in a tabular format, or card pages, showing detailed information for a single record. Pages display fields, which represent data elements within records. Users input or view data in these fields.
-* Actions*. Users can perform actions such as creating, editing, deleting, or posting records. These actions are available through buttons on the pages.
-* *Views*. Views allow users to filter and sort data on pages. They define how records are displayed.
-* *Queries*. Users can analyze data from queries to perform reporting tasks.
-* Profiles*. Profiles control access rights and permissions for different users or user groups.
+* **Role Centers**. These serve as personalized dashboards tailored to specific user roles. They provide quick access to relevant information, tasks, and reports.
+* **Pages**. Business Central’s interface is organized into pages. These can be list pages, displaying records in a tabular format, or card pages, showing detailed information for a single record. Pages display fields, which represent data elements within records. Users input or view data in these fields.
+* **Actions**. Users can perform actions such as creating, editing, deleting, or posting records. These actions are available through buttons on the pages.
+* **Views**. Views allow users to filter and sort data on pages. They define how records are displayed.
+* **Queries**. Users can analyze data from queries to perform reporting tasks.
+* **Profiles**. Profiles control access rights and permissions for different users or user groups.
 
 Apart from the components mentioned above, [!INCLUDE[prod_short](includes/prod_short.md)] also comes with Discoverability features:
 * *Tell Me*. A search feature that helps users find specific pages, actions, or reports by typing keywords.
