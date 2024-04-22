@@ -87,7 +87,7 @@ Fields on nonlist type pages, such as card and document type pages, include Desi
 |**Show when collapsed**|Sets the field to always display on the page. The field is displayed regardless the user selects **Show more** or **Show less**. The fields also display in the header of the FastTab if the FastTab is collapsed.|Promoted|
 
 > [!NOTE]
-> In version 24 (runtime 14) and earlier, the `Importantance` property is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personlaization or designer. The field also can't be promoted in the FastTab when it's collapsed. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
+> In version 24 (runtime 14) and earlier, the `Importantance` property is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personalization or designer. The field also can't be promoted in the FastTab when it's collapsed. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
 
 ## Set the Quick Entry on fields
 

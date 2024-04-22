@@ -42,7 +42,7 @@ You use this property to control the amount of information that is visible on a 
 As a developer, the `Importance` property can also be set also by Use Designer (see [Use Designer](../devenv-inclient-designer.md)). In the client, users can change the setting for their workspace by using personalization (see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
 
 > [!NOTE]
-> In version 24 (runtime 14) and earlier, the `Importance` property is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personlaization or designer. The field also can't be promoted in the FastTab when it's collapsed. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
+> In version 24 (runtime 14) and earlier, the `Importance` property is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personalization or designer. The field also can't be promoted in the FastTab when it's collapsed. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
 
 ## See Also
 
