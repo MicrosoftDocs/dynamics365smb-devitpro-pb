@@ -789,31 +789,31 @@
 ##### [Adding tooltips to page fields](developer/devenv-adding-tooltips.md)
 ##### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 
-#### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
-##### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
-##### List pages
-###### [Designing list pages](developer/devenv-designing-list-pages.md)
-###### [Sample list page](developer/devenv-simple-list-page-example.md)
-###### [Repeater controls](developer/devenv-repeater-controls.md)
-###### [Displaying data as tiles](developer/devenv-lists-as-tiles.md)
-###### [Adding filter tokens](developer/devenv-adding-filter-tokens.md)
-###### [Designing indented lists](developer/devenv-indented-hierarchy-lists.md)
-###### [Adding teaching tips to list pages](administration/onboarding-teaching-tips-tours.md)
-##### Card pages
-###### [Designing card pages](developer/devenv-designing-card-pages.md)
-###### [Sample card page](developer/devenv-simple-card-page-example.md)
-###### [Adding teaching tips to card pages](administration/onboarding-teaching-tips-tours.md)
-##### [Assisted setup guides](developer/devenv-designing-navigate-pages.md)
-##### Page parts
-###### [Parts overview](developer/devenv-designing-parts.md)
-###### [Designing list parts](developer/devenv-designing-listparts.md)
-###### [Designing card parts](developer/devenv-designing-cardparts.md)
-###### [Designing headline parts](developer/devenv-create-role-center-headline.md)
-###### [Designing Power BI report parts](developer/devenv-power-bi-report-parts.md)
+##### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
+###### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
+###### List pages
+####### [Designing list pages](developer/devenv-designing-list-pages.md)
+####### [Sample list page](developer/devenv-simple-list-page-example.md)
+####### [Repeater controls](developer/devenv-repeater-controls.md)
+####### [Displaying data as tiles](developer/devenv-lists-as-tiles.md)
+####### [Adding filter tokens](developer/devenv-adding-filter-tokens.md)
+####### [Designing indented lists](developer/devenv-indented-hierarchy-lists.md)
+####### [Adding teaching tips to list pages](administration/onboarding-teaching-tips-tours.md)
+###### Card pages
+####### [Designing card pages](developer/devenv-designing-card-pages.md)
+####### [Sample card page](developer/devenv-simple-card-page-example.md)
+####### [Adding teaching tips to card pages](administration/onboarding-teaching-tips-tours.md)
+###### [Assisted setup guides](developer/devenv-designing-navigate-pages.md)
+###### Page parts
+####### [Parts overview](developer/devenv-designing-parts.md)
+####### [Designing list parts](developer/devenv-designing-listparts.md)
+####### [Designing card parts](developer/devenv-designing-cardparts.md)
+####### [Designing headline parts](developer/devenv-create-role-center-headline.md)
+####### [Designing Power BI report parts](developer/devenv-power-bi-report-parts.md)
 <!-- reenable when topics have been written
 ####### [Designing pages with multiple lists](developer/devenv-designing-multilist-pages.md)
 -->
-###### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
+####### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
 
 #### Views
 ##### [Designing views](developer/devenv-views.md)
