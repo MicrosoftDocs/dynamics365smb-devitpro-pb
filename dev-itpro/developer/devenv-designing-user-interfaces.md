@@ -21,8 +21,8 @@ The user interface for [!INCLUDE[prod_short](includes/prod_short.md)] consists o
 * **Profiles**. Profiles control access rights and permissions for different users or user groups.
 
 Apart from the components mentioned above, [!INCLUDE[prod_short](includes/prod_short.md)] also comes with Discoverability features:
-* *Tell Me*. A search feature that helps users find specific pages, actions, or reports by typing keywords.
-* *Role Explorer*. Provides an overview of available roles and their associated tasks.
+* **Tell Me**. A search feature that helps users find specific pages, actions, or reports by typing keywords.
+* **Role Explorer**. Provides an overview of available roles and their associated tasks.
 
 As a developer, mastering the different user interface components enhances efficiency and productivity for the users of your [!INCLUDE[prod_short](includes/prod_short.md)] apps/extensions. This overview article explains each topic on a high level and provides links for learning more.
 
