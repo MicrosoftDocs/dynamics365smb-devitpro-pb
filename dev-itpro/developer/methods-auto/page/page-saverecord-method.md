@@ -2,7 +2,6 @@
 title: "Page.SaveRecord() Method"
 description: "Saves the current record as if performed by the client."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

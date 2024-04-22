@@ -2,7 +2,6 @@
 title: "Compiler Warning AL1058"
 description: "appId and Id are both specified for a dependency property."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

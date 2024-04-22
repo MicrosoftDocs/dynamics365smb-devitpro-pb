@@ -2,9 +2,7 @@
 title: "Joker Data Type"
 description: "Joker is an internal type, a wildcard, not exposed to AL developers."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 ms.author: solsen
 ---

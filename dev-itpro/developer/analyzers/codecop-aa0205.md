@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0205"
 description: "Always initialize a variable before usage."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

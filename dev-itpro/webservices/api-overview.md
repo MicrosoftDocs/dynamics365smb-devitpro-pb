@@ -1,22 +1,20 @@
 ---
-title: REST API Web Services
+title: REST API web services
 description: Learn about RESTful API web services for Business Central and how to create and maintain them.
 author: kennieNP
-
-ms.custom: na
-ms.reviewer: edupont
+ms.reviewer: solsen
 ms.topic: overview
 ms.author: kepontop
-ms.date: 12/21/2021
+ms.date: 04/18/2024
 ---
 
-# REST API Web Services
+# REST API web services
 
-RESTful web services are typically created to interchange data between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and external systems. The acronym REST stands for REpresentational State Transfer. Any coding language capable of calling REST APIs can be used to use this feature. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] API stack have been optimized for performance and is the preferred way to integrate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+RESTful web services are typically created to interchange data between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and external systems. The acronym REST stands for REpresentational State Transfer. Any coding language capable of calling REST APIs can be used to use this feature. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] API stack is optimized for performance and is the preferred way to integrate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with an extensive list of built-in APIs that requires no code and minimal setup to use. When using the built-in APIs, please choose the highest API version available. You can also develop your own custom APIs using the AL object types _API pages_ and _API queries._
 
-[![Shows how the API stack in Business Central](../developer/media/api-stack.svg)](../developer/media/api-stack.svg#lightbox)
+[![Shows the API stack in Business Central](../developer/media/api-stack.svg)](../developer/media/api-stack.svg#lightbox)
 
 The articles in this section describe the key concepts and techniques for using APIs with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
   
@@ -35,7 +33,7 @@ The articles in this section describe the key concepts and techniques for using 
 |Enable built-in API (for on-premises) | [Enabling the API for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav.md)|  
 
 
-## See Also
+## See also
 
 [Web services overview](web-services.md)   
 [Integration overview](../developer/integration-overview.md)  

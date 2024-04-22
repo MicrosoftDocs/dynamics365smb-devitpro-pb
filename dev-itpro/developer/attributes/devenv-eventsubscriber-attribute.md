@@ -2,9 +2,7 @@
 title: "EventSubscriber Attribute"
 description: "Specifies the event to which the method subscribes."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/15/2022
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

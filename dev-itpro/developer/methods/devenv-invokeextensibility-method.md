@@ -2,9 +2,7 @@
 title: "InvokeExtensibilityMethod Method"
 description: "The InvokeExtensibilityMethod in control add-in for Business Central"
 ms.author: solsen
-ms.custom: na
 ms.date: 04/01/2022
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

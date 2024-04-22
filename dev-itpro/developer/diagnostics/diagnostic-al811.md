@@ -2,7 +2,6 @@
 title: "Compiler Error AL0811"
 description: "The trigger '{0}' cannot be defined on the system action named '{1}' in a page of type '{2}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

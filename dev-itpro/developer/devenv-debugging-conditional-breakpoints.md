@@ -4,7 +4,6 @@ description: Overview of setting conditional breakpoints in AL.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 03/04/2024
-ms.reviewer: 
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -23,14 +22,15 @@ As part of debugging code, you can set [breakpoints](devenv-debugging.md#breakpo
 - Text
 
 The following operators are supported in breakpoint conditions:
-|Operator|
-|--------|
-|`=`|
-|`<>`|
-|`<`|
-|`>`|
-|`<=`|
-|`=>`|  
+
+|Operator|Description|
+|--------|-----------|
+|`=`| Equal to|
+|`<>`| Not equal to|
+|`<`| Less than|
+|`>`| Greater than|
+|`<=`| Less than or equal to|
+|`=>`| Greater than or equal to| 
 
 ## To set a conditional breakpoint
 
@@ -54,4 +54,5 @@ When the code execution reaches the breakpoint, the condition is evaluated. If t
 
 ## See also
 
+[Get started with AL](devenv-get-started.md)  
 [Debugging in AL](devenv-debugging.md)  

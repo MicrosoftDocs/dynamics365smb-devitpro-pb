@@ -2,7 +2,6 @@
 title: "Notification Data Type"
 description: "Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Business Central Web client."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -3,7 +3,6 @@ title: Virtual tables
 description: Virtual tables are system tables in AL for Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.reviewer: 
 
 ms.topic: conceptual
 ms.date: 03/17/2023

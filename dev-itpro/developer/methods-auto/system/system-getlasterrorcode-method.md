@@ -2,7 +2,6 @@
 title: "System.GetLastErrorCode() Method"
 description: "Gets the classification of the last error that occurred."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "XmlElement.LocalName() Method"
 description: "Gets the local name of this element."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

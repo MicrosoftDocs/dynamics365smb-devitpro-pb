@@ -2,7 +2,6 @@
 title: "XmlProcessingInstruction.SetData(Text) Method"
 description: "Sets the content of the processing instruction, excluding the target."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

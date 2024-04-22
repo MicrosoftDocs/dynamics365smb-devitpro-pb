@@ -1,8 +1,7 @@
 ---
 title: "Technical Upgrade Quick Reference"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

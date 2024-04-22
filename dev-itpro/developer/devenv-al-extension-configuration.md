@@ -2,9 +2,7 @@
 title: AL Language extension configuration
 description: Description of the AL Language extension settings in Visual Studio Code for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/06/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started

@@ -1,9 +1,7 @@
 ---
 title: "RecordId Method (Record)"
 description: "The RecordId method in AL for Business Central"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 author: jswymer
 ---

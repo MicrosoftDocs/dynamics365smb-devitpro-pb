@@ -2,7 +2,6 @@
 title: "Database.GetDefaultTableConnection(TableConnectionType) Method"
 description: "Gets the default table connection based on the specified connection type."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

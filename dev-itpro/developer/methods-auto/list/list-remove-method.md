@@ -2,7 +2,6 @@
 title: "List.Remove(T) Method"
 description: "Removes the first occurrence of a specified value from the List."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

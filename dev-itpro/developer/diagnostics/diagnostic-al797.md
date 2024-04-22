@@ -2,7 +2,6 @@
 title: "Compiler Error AL0797"
 description: "{0} '{1}' is moved."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

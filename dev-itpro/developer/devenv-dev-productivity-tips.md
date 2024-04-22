@@ -3,7 +3,6 @@ title: Developer productivity tips
 description: Learn about productivity tips when programming in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.reviewer: 
 ms.topic: conceptual
 ms.collection: 
 ms.custom: bap-template 

@@ -2,7 +2,6 @@
 title: "AppSourceCop Hidden AS0073"
 description: "Obsolete Tag must be set."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

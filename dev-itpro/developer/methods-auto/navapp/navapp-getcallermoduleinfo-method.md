@@ -2,7 +2,6 @@
 title: "NavApp.GetCallerModuleInfo(var ModuleInfo) Method"
 description: "Gets information about the extension that contains the method that called the currently running method."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

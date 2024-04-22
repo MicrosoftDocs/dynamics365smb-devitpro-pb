@@ -2,7 +2,7 @@
 title: Configure Microsoft Entra authentication with OpenID Connect
 description: Learn how to authentication Business Central users by using Microsoft Entra ID with OpenID Connect.
 ms.custom: bap-template
-ms.date: 02/22/2024
+ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.author: jswymer
 ms.topic: how-to

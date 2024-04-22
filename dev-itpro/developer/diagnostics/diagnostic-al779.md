@@ -2,7 +2,6 @@
 title: "Compiler Error AL0779"
 description: "It is not allowed to assign a value to a field of FieldClass='{0}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

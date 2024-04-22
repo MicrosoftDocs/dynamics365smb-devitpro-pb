@@ -2,7 +2,6 @@
 title: "Compiler Error AL0287"
 description: "The event '{0}' can't contain local variables."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

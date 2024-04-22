@@ -2,7 +2,6 @@
 title: "Extensible Property"
 description: "Sets whether the report can be extended."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

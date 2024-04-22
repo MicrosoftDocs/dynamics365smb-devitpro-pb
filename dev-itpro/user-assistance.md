@@ -3,7 +3,6 @@ title: User assistance model
 description: Learn about the user assistance model for Dynamics 365 Business Central and how your solution can comply with it.
 author: edupont04
 ms.custom: na
-ms.reviewer: na
 ms.topic: article
 ms.date: 04/20/2023
 ms.author: edupont

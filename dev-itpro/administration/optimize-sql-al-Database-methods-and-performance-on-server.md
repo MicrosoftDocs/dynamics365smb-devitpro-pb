@@ -2,8 +2,6 @@
 title: "AL Database Methods and Performance on SQL Server"
 description: Read about the relationship between basic database methods in AL and SQL statements in Business Central.  
 author: jswymer
-ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 12/21/2021

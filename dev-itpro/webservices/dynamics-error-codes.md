@@ -66,7 +66,7 @@ The following table explains how the OData error codes/messages translate to exc
 |ODataBadRequestNullFieldException      |BadRequest_RequiredParamNotProvided|Field `'taxable'` must not be blank or empty.|
 |ODataConflictException                 |Request_EntityChanged|Another user has already changed the record.|
 |ODataMethodNotAllowedException         |BadRequest_MethodNotAllowed|`'POST'` requests for `'companies'` of EdmType `'Entity'` <br>are not allowed within Microsoft Dynamics NAV OData web services.|
-|ODataNotImplementedException           |BadRequest_MethodNotImplemented|Entity does not support bound actions|
+|ODataNotImplementedException           |BadRequest_MethodNotImplemented|Entity does not support bound actions or an orderby query option did not match the default OrderBy fields of an underlying Query object.|
 |NavCSideDataException                  |Internal_DataNotFoundFilter|There is no Cust. Ledger Entry within the filter.|
 |NavCSideRecordNotFoundException        |Internal_RecordNotFound|The Acc. Sched. KPI Web srv. Setup does not exist.<br> Identification fields and values: Primary Key=''|
 |NavCSideValidateTableRelationException |Internal_InvalidTableRelation|The field Account No. of table Gen. Journal Line contains a value (ABL001)<br> that cannot be found in the related table (Vendor).|

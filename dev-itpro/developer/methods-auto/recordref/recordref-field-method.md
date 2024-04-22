@@ -2,7 +2,6 @@
 title: "RecordRef.Field(Integer) Method"
 description: "Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

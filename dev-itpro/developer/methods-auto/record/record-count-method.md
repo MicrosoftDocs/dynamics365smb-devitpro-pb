@@ -2,7 +2,6 @@
 title: "Record.Count() Method"
 description: "Counts the number of records in a table."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

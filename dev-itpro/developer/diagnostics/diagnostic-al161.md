@@ -2,7 +2,6 @@
 title: "Compiler Error AL0161"
 description: "'{0}' is inaccessible due to its protection level."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

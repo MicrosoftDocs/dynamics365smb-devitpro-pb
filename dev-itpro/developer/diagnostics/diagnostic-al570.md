@@ -2,7 +2,6 @@
 title: "Compiler Error AL0570"
 description: "The symbol '{0}' results in the same translation ID as one or more other symbols."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

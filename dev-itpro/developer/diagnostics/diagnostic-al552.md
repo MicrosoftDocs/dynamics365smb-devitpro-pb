@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL0552"
 description: "The action area '{0}' can only directly contain groups."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

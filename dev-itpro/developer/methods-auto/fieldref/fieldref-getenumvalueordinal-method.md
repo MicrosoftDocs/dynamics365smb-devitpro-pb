@@ -2,7 +2,6 @@
 title: "FieldRef.GetEnumValueOrdinal(Integer) Method"
 description: "Gets the Enum value (or Option member) ordinal value from the Enum metadata for the field that is currently selected."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

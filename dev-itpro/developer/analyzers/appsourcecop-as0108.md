@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0108"
 description: "The type of a variable that belongs to the public API cannot be changed, because it will break dependent extensions."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

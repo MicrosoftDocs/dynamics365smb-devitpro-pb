@@ -2,7 +2,6 @@
 title: "Compiler Information AL1079"
 description: "Debugging will not work for this extension because 'allowDebugging' has been set to false and 'applyToDevExtension' to true."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

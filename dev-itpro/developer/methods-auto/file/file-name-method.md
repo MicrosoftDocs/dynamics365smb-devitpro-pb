@@ -2,7 +2,6 @@
 title: "File.Name() Method"
 description: "Gets the name of an ASCII or binary file."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

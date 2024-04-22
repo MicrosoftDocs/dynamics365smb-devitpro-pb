@@ -2,7 +2,6 @@
 title: "XmlProcessingInstruction.SetTarget(Text) Method"
 description: "Sets the target of the processing instruction."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

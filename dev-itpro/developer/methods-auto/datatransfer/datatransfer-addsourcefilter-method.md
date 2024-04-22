@@ -2,7 +2,6 @@
 title: "DataTransfer.AddSourceFilter(Integer, Text [, Any,...]) Method"
 description: "Adds a filter for the source table for the data transfer."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

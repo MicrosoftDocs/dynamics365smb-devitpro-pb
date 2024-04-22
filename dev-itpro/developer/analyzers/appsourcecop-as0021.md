@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0021"
 description: "An argument in an event attribute cannot be changed to false."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

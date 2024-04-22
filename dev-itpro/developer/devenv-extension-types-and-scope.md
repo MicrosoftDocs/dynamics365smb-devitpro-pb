@@ -1,10 +1,8 @@
 ---
 title: Extension types and scope
 description: Describes the different types of extensions for Business Central and how broad their scope is.
-ms.custom: na
 ms.author: solsen
 ms.date: 02/20/2024
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

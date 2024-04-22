@@ -2,7 +2,6 @@
 title: "System.Time() Method"
 description: "Gets the current time from the operating system."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

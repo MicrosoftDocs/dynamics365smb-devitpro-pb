@@ -2,7 +2,6 @@
 title: "Best Practices for Deprecation of AL Code"
 description: "Description of best practices and guidelines for deprecating code in the Base App for Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 09/26/2022
 ms.reviewer: solsen
 ms.topic: conceptual

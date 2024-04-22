@@ -2,9 +2,7 @@
 title: "Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen"
 description: Describes how to replace OnBeforeCompanyOpen and OnAfterCompanyOpen events.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/11/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: freddyk
 ---

@@ -4,7 +4,6 @@ description: "Describes current API limits in Business Central (v1.0)"
 author: jswymer
 ms.custom: na
 ms.date: 01/14/2020
-ms.reviewer: na
 ms.topic: article
 ms.author: jswymer
 ---

@@ -1,9 +1,7 @@
 ---
 title: Actions overview
 description: Displaying actions on the action bar for pages in Business Central
-ms.custom: na
 ms.date: 11/30/2022
-ms.reviewer: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ---

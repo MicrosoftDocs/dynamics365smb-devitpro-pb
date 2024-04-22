@@ -2,7 +2,6 @@
 title: "Offer Description"
 description: "Guidelines on offer description"
 author: a-emniel
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual

@@ -1,15 +1,16 @@
 ---
-title: "Triggers Overview"
-ms.custom: na
-ms.date: 04/29/2021
-ms.reviewer: na
-ms.topic: overview
+title: Triggers overview
+description: Learn how triggers work in AL for Business Central.
+ms.custom: evergreen
+ms.date: 04/17/2024
+ms.reviewer: solsen
+ms.topic: get-started
 author: SusanneWindfeldPedersen
 ---
 
-# Triggers Overview
+# Triggers overview
 
-This section describes the triggers that are available to developers in [!INCLUDE [prod_short](../../includes/prod_short.md)].
+This section describes how triggers work in [!INCLUDE [prod_short](../../includes/prod_short.md)].
 
 > [!TIP]  
 > If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster. Otherwise, you can scan the table of contents to find it.
@@ -93,7 +94,7 @@ table 50100 MyTable
 }
 ```
 
-## See Also
+## See also
 
 [Methods](../methods-auto/library.md)  
 [Properties](../properties/devenv-properties.md)

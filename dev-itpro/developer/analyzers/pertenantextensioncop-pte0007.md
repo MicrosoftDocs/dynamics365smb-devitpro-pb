@@ -2,7 +2,6 @@
 title: "PerTenantExtensionCop Error PTE0007"
 description: "Test assertion functions are not allowed in a non-test context."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "JsonObject.Contains(Text) Method"
 description: "Verifies if a JsonObject contains a property with a given key."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

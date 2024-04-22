@@ -2,7 +2,6 @@
 title: "NumberSequence.Exists(Text [, Boolean]) Method"
 description: "Checks whether a specific number sequence exists."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

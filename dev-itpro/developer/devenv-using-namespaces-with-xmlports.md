@@ -2,9 +2,7 @@
 title: "Using namespaces with XMLports"
 description: "Namespaces are used to avoid element name conflicts."
 author: blrobl
-ms.custom: na
 ms.date: 09/20/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: brobledodiaz
 ---

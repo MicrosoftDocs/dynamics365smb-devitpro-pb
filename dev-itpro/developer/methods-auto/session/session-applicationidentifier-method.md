@@ -2,7 +2,6 @@
 title: "Session.ApplicationIdentifier() Method"
 description: "Gets the application ID associated with the current thread."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

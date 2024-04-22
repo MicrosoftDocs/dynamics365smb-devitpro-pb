@@ -1,9 +1,7 @@
 ---
 title: "Handling Errors by Using Try Methods"
 description: Try methods in AL enable you to handle errors that occur in the application during code execution.
-ms.custom: na
 ms.date: 09/28/2022
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

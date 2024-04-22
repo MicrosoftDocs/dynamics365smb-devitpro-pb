@@ -2,9 +2,7 @@
 title: "Prefix and suffix for naming in extensions"
 description: "Use a prefix or suffix for names in your extension."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/11/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: freddyk
 ---

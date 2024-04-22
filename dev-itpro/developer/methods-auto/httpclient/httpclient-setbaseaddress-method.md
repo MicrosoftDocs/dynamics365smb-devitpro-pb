@@ -2,7 +2,6 @@
 title: "HttpClient.SetBaseAddress(Text) Method"
 description: "Sets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

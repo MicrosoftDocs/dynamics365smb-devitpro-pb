@@ -2,7 +2,6 @@
 title: "Compiler Error AL0409"
 description: "The '{0}' type is not a generic type."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

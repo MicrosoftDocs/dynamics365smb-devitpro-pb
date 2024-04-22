@@ -2,7 +2,6 @@
 title: "Compiler Error AL0574"
 description: "This feature is under development and cannot be used in an extension."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

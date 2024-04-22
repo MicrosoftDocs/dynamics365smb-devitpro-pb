@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0053"
 description: "The compilation target of an application must be a value that is allowed in a multi-tenant SaaS environment."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

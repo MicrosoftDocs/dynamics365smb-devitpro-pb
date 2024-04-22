@@ -2,7 +2,6 @@
 title: "JsonArray.Get(Integer, var JsonToken) Method"
 description: "Retrieves the value at the given index in the JsonArray."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

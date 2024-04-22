@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0096"
 description: "The name of an extension cannot be changed for extensions targeting a runtime version lower than '8.0' in their app.json file."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

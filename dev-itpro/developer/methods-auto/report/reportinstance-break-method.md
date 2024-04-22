@@ -2,7 +2,6 @@
 title: "Report.Break() Method"
 description: "Exits from a loop or a trigger in a data item trigger of a report or XmlPort."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
@@ -34,8 +33,11 @@ An instance of the [Report](report-data-type.md) data type.
 
  Compare this with the [QUIT Method \(Report, XMLport\)](../report/reportinstance-quit-method.md).  
 
+> [!NOTE]
+> BREAK still calls remaining triggers for the current record, but the record is omitted from the dataset.
+
 > [!TIP]  
->  You can also use the [AL BREAK Statement](../../devenv-al-control-statements.md) to exit an iteration or loop. The difference is that the BREAK statement does not terminate the trigger. It just exits the loop.  
+> You can also use the [AL BREAK Statement](../../devenv-al-control-statements.md) to exit an iteration or loop. The difference is that the BREAK statement does not terminate the trigger. It just exits the loop.  
 
 ## Example  
 

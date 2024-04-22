@@ -2,7 +2,6 @@
 title: "ColumnStoreIndex Property"
 description: "Sets the fields that are added to the ColumnStore index inside SQL Server."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

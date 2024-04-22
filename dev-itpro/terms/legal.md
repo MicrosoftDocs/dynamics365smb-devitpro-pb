@@ -3,7 +3,6 @@ title: Legal landing page for Business Central online
 description: Get a list of links to legal information for Business Central, including the online service terms for Business Central online. 
 author: jswymer
 ms.custom: na
-ms.reviewer: na
 ms.topic: article
 ms.date: 01/08/2024
 ms.author: edupont

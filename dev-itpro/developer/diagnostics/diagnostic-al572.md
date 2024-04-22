@@ -2,7 +2,6 @@
 title: "Compiler Error AL0572"
 description: "I/O operations on the file or folder '{0}' resulted in an exception with the Windows 32 error code '{1}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

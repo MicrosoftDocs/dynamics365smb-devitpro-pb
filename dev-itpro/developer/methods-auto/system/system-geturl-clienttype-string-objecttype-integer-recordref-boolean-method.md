@@ -2,7 +2,6 @@
 title: "System.GetUrl(ClientType, Text, ObjectType, Integer, RecordRef [, Boolean]) Method"
 description: "Generates a URL for the specified client target that is based on the configuration of the server instance."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

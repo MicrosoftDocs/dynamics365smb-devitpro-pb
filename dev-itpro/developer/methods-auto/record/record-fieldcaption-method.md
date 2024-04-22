@@ -2,7 +2,6 @@
 title: "Record.FieldCaption(Any) Method"
 description: "Gets the current caption of the specified field as a string."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

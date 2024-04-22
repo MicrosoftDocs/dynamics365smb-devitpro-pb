@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0052"
 description: "The property 'url' must be set to a valid URL."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

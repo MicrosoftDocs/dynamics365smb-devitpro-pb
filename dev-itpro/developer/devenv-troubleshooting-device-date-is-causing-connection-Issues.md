@@ -1,9 +1,7 @@
 ---
 title: Troubleshooting device date is causing connectivity issues
 description: Learn how to check how date can cause connectivity issues.
-ms.custom: na
 ms.date: 12/21/2023
-ms.reviewer: na
 ms.topic: troubleshooting
 author: blrobl
 ---

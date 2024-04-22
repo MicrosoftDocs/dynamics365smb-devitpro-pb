@@ -2,7 +2,6 @@
 title: "XmlCData.SelectNodes(Text, var XmlNodeList) Method"
 description: "Selects a list of nodes matching the XPath expression."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

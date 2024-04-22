@@ -2,7 +2,6 @@
 title: "Compiler Error AL0452"
 description: "The type '{0}' could not be found in assembly '{1}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

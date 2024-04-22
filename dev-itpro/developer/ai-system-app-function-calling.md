@@ -3,7 +3,6 @@ title: Function calling in AI
 description: Learn how to call functions in Azure OpenAI.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.reviewer: 
 ms.topic: reference
 ms.collection:
   - get-started

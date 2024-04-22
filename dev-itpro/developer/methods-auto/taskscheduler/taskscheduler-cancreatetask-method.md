@@ -2,7 +2,6 @@
 title: "TaskScheduler.CanCreateTask() Method"
 description: "Checks whether it is possible to schedule tasks in this session (depends on the user/app entitlements)."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

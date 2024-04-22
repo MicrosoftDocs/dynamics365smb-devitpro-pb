@@ -2,7 +2,6 @@
 title: "Compiler Warning AL0200"
 description: "Property '{0}' is obsolete and will be removed in a future version."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

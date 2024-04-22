@@ -2,7 +2,6 @@
 title: "PerTenantExtensionCop Error PTE0011"
 description: "The extension publisher length must not exceed the limit of 50 characters."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

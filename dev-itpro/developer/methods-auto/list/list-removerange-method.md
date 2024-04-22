@@ -2,7 +2,6 @@
 title: "List.RemoveRange(Integer, Integer) Method"
 description: "Removes a range of elements from the List."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

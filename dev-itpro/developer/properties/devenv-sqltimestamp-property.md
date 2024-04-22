@@ -2,7 +2,6 @@
 title: "SqlTimestamp Property"
 description: "Specifies a field to be a timestamp field."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

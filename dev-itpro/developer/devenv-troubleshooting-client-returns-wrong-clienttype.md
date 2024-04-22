@@ -1,9 +1,7 @@
 ---
 title: Troubleshooting client returns wrong CLIENTTYPE
 description: Learn how to ensure that the correct client type is returned for each client.
-ms.custom: na
 ms.date: 12/22/2023
-ms.reviewer: na
 ms.topic: troubleshooting
 author: blrobl
 ---

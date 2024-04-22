@@ -2,7 +2,6 @@
 title: "TestField.Drilldown() Method"
 description: "Applies drill-down capability for a field on a test page."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

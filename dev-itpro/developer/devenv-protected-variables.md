@@ -1,9 +1,7 @@
 ---
 title: Protected variables
 description: The protected keyword can be used to make variables accessible between tables and table extensions, pages and page extensions and report and report extensions.
-ms.custom: na
 ms.date: 01/05/2023
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

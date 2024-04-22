@@ -2,7 +2,6 @@
 title: "System.EncryptionKeyExists() Method"
 description: "Checks whether an encryption key for the current tenant is present on the server tenant."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

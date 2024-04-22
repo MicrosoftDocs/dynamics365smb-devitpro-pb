@@ -2,7 +2,6 @@
 title: "MinimumHeight Property"
 description: "Specifies the minimum height that the control add-in can be shrunk to."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

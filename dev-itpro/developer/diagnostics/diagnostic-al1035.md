@@ -2,7 +2,6 @@
 title: "Compiler Error AL1035"
 description: "The manifest properties 'baseHelpUrl' and 'supportedLocales' must both be specified and have values."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

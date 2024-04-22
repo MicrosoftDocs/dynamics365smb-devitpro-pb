@@ -2,7 +2,6 @@
 title: "Compiler Error AL1074"
 description: "Both 'applicationInsightsKey' and 'applicationInsightsConnectionString' are added."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

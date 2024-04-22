@@ -2,7 +2,6 @@
 title: "TestFilter.SetCurrentKey(TestFilterField [, TestFilterField,...]) Method"
 description: "Sets the specified fields in a data set on a test page as the current key."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0013"
 description: "When BEGIN follows THEN, ELSE, DO, it should be on the same line, preceded by one space character."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

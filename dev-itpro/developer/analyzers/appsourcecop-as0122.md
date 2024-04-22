@@ -2,7 +2,6 @@
 title: "AppSourceCop Warning AS0122"
 description: "The source symbol for this moved symbol cannot be found in the package with the given AppId."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

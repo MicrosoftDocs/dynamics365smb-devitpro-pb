@@ -2,7 +2,6 @@
 title: "System.Clear(var SecretText) Method"
 description: "Clears the value of a single variable."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

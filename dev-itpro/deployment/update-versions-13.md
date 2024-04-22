@@ -2,7 +2,6 @@
 title: "Cumulative updates"
 description: "Learn about the cumulative updates for Dynamics 365 Business Central on-premises deployments."
 author: jswymer
-ms.custom: na
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer

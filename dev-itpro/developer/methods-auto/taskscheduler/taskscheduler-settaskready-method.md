@@ -2,7 +2,6 @@
 title: "TaskScheduler.SetTaskReady(Guid [, DateTime]) Method"
 description: "Sets a task that runs a codeunit to the ready state."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

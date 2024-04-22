@@ -2,7 +2,6 @@
 title: "Compiler Error AL0532"
 description: "The page '{1}' of type 'API' and its control '{0}' of type 'Part' must have the same value of property '{2}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

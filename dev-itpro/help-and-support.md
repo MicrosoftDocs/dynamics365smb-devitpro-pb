@@ -2,7 +2,6 @@
 title: "Resources for Help and Support"
 description: Learn about resources for support and product Help for Business Central if you are reselling partner or a developer.
 author: jswymer
-ms.reviewer: na
 ms.topic: article
 ms.author: jswymer
 ms.date: 01/11/2024

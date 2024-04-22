@@ -2,7 +2,6 @@
 title: "AllowInCustomizations Property"
 description: "Specifies whether this table field can be used as source expression for new page fields in page customizations."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

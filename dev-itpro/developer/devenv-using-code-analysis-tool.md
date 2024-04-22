@@ -2,7 +2,6 @@
 title: "Using the code analysis tool"
 description: "Using static code analysis tool on an AL project."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 06/23/2022
 ms.topic: conceptual
 ms.author: solsen

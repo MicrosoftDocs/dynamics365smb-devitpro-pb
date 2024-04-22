@@ -1,9 +1,7 @@
 ---
 title: "Data Access"
 description: Learn how to improve data access performance in Business Central.
-ms.custom: na
 ms.date: 03/03/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.search.keywords: data access,sql,partitioning,constraints
 author: jswymer

@@ -5,7 +5,7 @@ author: jswymer
 ms.reviewer: jswymer
 ms.topic: overview
 ms.author: jswymer
-ms.date: 02/24/2024
+ms.date: 04/14/2024
 ---
 <!-- comment: when viewing the live version of this article, there's a lot of redundancy in the Service Updates section (line 93). The "includes" text (line 91) contains much of the same info as the text in line 93. -->
 <!-- question: In the paragraph in line 21, what does 30-K mean? It looks like shortcut for 30,000, but that seems small. -->
@@ -31,6 +31,10 @@ The service is built from the ground up as a multitenant service, comprised of m
 [!INCLUDE[prod_short](includes/prod_short.md)] online is running globally in more than 170 countries/regions, out of 21 Microsoft Azure regions, and new countries/regions go live on a quarterly basis. For more information, see [Countries/regions and Translations Supported](compliance/apptest-countries-and-translations.md).  
 
 For a visual overview of where [!INCLUDE [prod_short](includes/prod_short.md)] online is deployed, see the [Geographical availability](https://dynamics.microsoft.com/availability-reports/georeport/) site.  
+
+### Availability of Copilot in Business Central
+
+Microsoft Copilot in Business Central includes a variety of features that can each be in preview or generally available in different languages and regions. For information about availability of Copilot in Business Central and other business applications, see the [Copilot international availability report](https://go.microsoft.com/fwlink/?linkid=2262455).
 
 ## Built upon a foundation of trust, security, and compliance
 

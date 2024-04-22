@@ -2,7 +2,6 @@
 title: "CodeCop Warning AA0100"
 description: "Do not have identifiers with quotes in the name."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

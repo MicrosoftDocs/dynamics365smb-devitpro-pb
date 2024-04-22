@@ -2,7 +2,6 @@
 title: "Compiler Error AL0229"
 description: "The data type on the {0} field is not valid because the ExtendedDatatype property is set to Ratio."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

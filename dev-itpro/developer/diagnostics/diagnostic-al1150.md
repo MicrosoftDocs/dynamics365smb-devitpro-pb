@@ -2,7 +2,6 @@
 title: "Compiler Error AL1150"
 description: "The link in parameter '{0}' ({1}) is not valid."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

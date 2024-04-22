@@ -2,7 +2,6 @@
 title: "Compiler Error AL0307"
 description: "Property value cannot be validated because the source table is unreachable."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

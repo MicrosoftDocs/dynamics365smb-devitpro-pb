@@ -2,9 +2,7 @@
 title: "RequiredPermissions Attribute"
 description: "Specifies the permissions required by the subscriber of an external event."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/20/2023
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -2,7 +2,6 @@
 title: "Compiler Error AL0391"
 description: "The date formula '{0}' must include a number."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

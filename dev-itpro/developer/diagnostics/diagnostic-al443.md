@@ -2,7 +2,6 @@
 title: "Compiler Error AL0443"
 description: "The system object provided is not one of the valid system objects."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

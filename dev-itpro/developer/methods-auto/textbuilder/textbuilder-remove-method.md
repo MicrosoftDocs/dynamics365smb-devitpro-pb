@@ -2,7 +2,6 @@
 title: "TextBuilder.Remove(Integer, Integer) Method"
 description: "Removes the specified range of characters from this TextBuilder instance."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

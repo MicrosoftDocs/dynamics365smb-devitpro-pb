@@ -2,7 +2,6 @@
 title: "List.RemoveAt(Integer) Method"
 description: "Removes the element at the specified index of the List."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
