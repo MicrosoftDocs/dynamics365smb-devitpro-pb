@@ -27,6 +27,8 @@ The [!INCLUDE[prod_short](includes/prod_short.md)] client includes the **Tell me
 
 In AL, you make a page searchable from **Tell me** by setting the [UsageCategory property](properties/devenv-usagecategory-property.md) in code. The **UsageCategory** setting makes the page searchable, and the value chosen for the setting further sub categorizes the item.
 
+![TellMe.](media/tellmeApril19.png)
+
 For more information, see [Adding pages to Tell Me](devenv-al-menusuite-functionality.md).
 
 
