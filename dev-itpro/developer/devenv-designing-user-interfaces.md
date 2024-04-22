@@ -42,7 +42,10 @@ For more information, see [Designing role centers](devenv-designing-role-centers
 
 Understanding how [!INCLUDE[prod_short](includes/prod_short.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface. A fundamental characteristic of a page type is how it relates to the data presented on the page. Two principal ways exist: *entity*-oriented (typical for the `Card` page type) and *collection*-oriented (typical for the `List` page type.) 
 
-![Collection page actions](media/page-layout-collection-actions.png "Collection pages and their actions")
+|`Card`, `Document`, and `ListPlus`|`List` and `Worksheet`|
+|---------|---------------|
+|![Entity page actions](media/page-layout-entity-actions.png "Entity pages and their actions")|![Collection page actions](media/page-layout-collection-actions.png "Collection pages and their actions")|
+|The **entity-oriented** page types have actions (in top and in action bar) that affect the entity or context given by the title of the page.|The **collection-oriented** page types provide actions in action bar (and on the rows' action menu) that take effect on the selected row(s) in the collection.|
 
 For more information, see [Pages overview](devenv-pages-overview.md) and [Page Types and Layouts](devenv-page-types-and-layouts.md).
 
