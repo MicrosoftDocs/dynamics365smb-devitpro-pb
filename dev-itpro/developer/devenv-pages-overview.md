@@ -39,11 +39,17 @@ page 50102 PageName
 
 ### Types of pages  
 
-Which page type you choose depends on the application task that you want to support, the content that you want to display, and how you want to display it. The Role Center page is the main or home page and it helps the user focus on the most important daily tasks and activities. Other types of pages, such as list pages or card pages are typically linked from the home page for easy access. The following page types are available:  
+Which page type you choose depends on the application task that you want to support, the content that you want to display, and how you want to display it. The Role Center page is the main or home page and it helps the user focus on the most important daily tasks and activities. Other types of pages, such as list pages or card pages are typically linked from the home page for easy access. 
 
-|Page type   |Description|
+> [!TIP]  
+> For more information about the different page types and how their layouts supports user scenarios, see [Page types and layouts](devenv-page-types-and-layouts.md).
+
+
+The following page types are available:
+
+|Page type   |Use it for...|
 |------------|-----------|
-|[RoleCenter](devenv-designing-role-centers.md)|The Role Center page is the main page.|
+|[RoleCenter](devenv-designing-role-centers.md)|The Role Center page is the main home page for a role.|
 |[Card](devenv-designing-card-pages.md)|A Card page is used to view and edit one record or entity from a table.|
 |[CardPart](devenv-designing-cardparts.md)|A Card Part page is used in a FactBox on another page to view or edit additional fields associated with a selected entity in the page.|
 |[List](devenv-designing-list-pages.md)|A List page displays content from a table in a list format.|
@@ -61,6 +67,7 @@ Which page type you choose depends on the application task that you want to supp
 > [!NOTE]  
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 
 
+
 ## Page layout
 
 The page layout of the page object determines what the page will look like and is specified in the `layout` section. The `layout` contains one or more `area` sections that define a certain placement on the page. The `area` sections available depend on the page type that you have chosen.
@@ -73,8 +80,9 @@ The following `area` categories are available depending on the page type:
 |`FactBoxes`|The FactBox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
 |`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
 |`Prompt`|The prompt area is used to gather input from the user for a copilot interaction and used on pages of the type `PromptDialog`. For more information, see [PromptDialog page type](devenv-page-type-promptdialog.md).|
-  
-### Page actions
+
+
+## Page actions
 
 All pages contain menu items and navigation controls called actions. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page in the ribbon or in the navigation pane. The `actions` section of the page describes what the user is able to do on a page and must be designed with the user's need for process support in mind. 
 
@@ -86,6 +94,7 @@ Actions can be displayed in the ribbon of all pages and grouped together under t
 - Report
 
 Creating actions can include adding activity buttons/cues to a page, configuring navigation items on a user role center, or adding Reports to a page. To learn how you can enable users to quickly locate the actions they want to use, see [Actions](devenv-actions-overview.md). 
+
 
 ## Adding Help to the page objects
 
@@ -104,9 +113,11 @@ The base application has set the Tooltip property for all controls on (almost) a
 > [!NOTE]  
 > Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that uses the field automatically inherits the tooltip. For more information, see [Add tooltips to table and page fields](devenv-adding-tooltips.md).
 
+
 ### Instructional text
 
 The base application has applied instructional text to setup guides, certain other types of page objects, and for page fields. Your extensions are expected to also include instructional text to setup guides for the same reason. Similarly, instructional text is useful to implement on page fields to describe example values or a short summary directly in the field, which guides the user for what to input in that field. For more information, see [InstructionalText Property](../developer/properties/devenv-instructionaltext-property.md).
+
 
 ### Example
 
@@ -152,6 +163,7 @@ page 50101 "Reward Card"
 
 In this example, the app.json file has specified a link to where the *sales-rewards* target file is published, such as `"contextSensitiveHelpUrl": "https://mysite.com/documentation"`.
 
+
 ## Best practices for designing pages
 
 We recommend that you simplify the user experience by reducing what users see by default. You can promote the information that the users most frequently need to see and hide the less important information. For example:  
@@ -164,12 +176,13 @@ We recommend that you simplify the user experience by reducing what users see by
 
 - Add a target Help file for context-sensitive Help for the feature that the page object supports
 
+
 ## See also
 
+[Page types and layouts](devenv-page-types-and-layouts.md)  
 [Page, page fields, and page extension properties](properties/devenv-page-property-overview.md)  
 [Actions overview](devenv-actions-overview.md)  
 [Use Designer](devenv-inclient-designer.md)  
-[Page types and layouts](devenv-page-types-and-layouts.md)   
 [Adding a factbox to a page](devenv-adding-a-factbox-to-page.md)  
 [Designing role centers](devenv-designing-role-centers.md)  
 [Configure context-sensitive help](../help/context-sensitive-help.md)  
