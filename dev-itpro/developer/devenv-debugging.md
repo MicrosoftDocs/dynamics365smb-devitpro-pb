@@ -163,9 +163,9 @@ This section provides some tips and tricks for working with and troubleshooting 
 
 To enable debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This step requires a server restart.
 
-### Firewall settings (port 7049)
+### Firewall settings for on-premises environments (port 7049)
 
-To use the development environment and debugger, you must make sure that port `7049` (the default port for the debugger) is open. For on-premises environments, the port can be changed with the server setting ``DeveloperServicesPort``.
+To use the development environment and debugger for on-premises environments, you must make sure that port `7049` (the default port for the debugger) is open. The port can be changed with the server setting ``DeveloperServicesPort``.
 
 ### Debug an online environment with an Embed app published in it
 
