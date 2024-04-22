@@ -815,9 +815,9 @@
 -->
 ###### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
 
-##### Views
-###### [Designing views](developer/devenv-views.md)
-###### [Migrating from legacy to modern views](developer/devenv-views-legacy.md)
+#### Views
+##### [Designing views](developer/devenv-views.md)
+##### [Migrating from legacy to modern views](developer/devenv-views-legacy.md)
 
 #### Adding fields to pages
 ##### [Arranging fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
@@ -839,7 +839,7 @@
 ##### Modern action bar
 ###### [Action bar improvements](developer/devenv-action-bar-improvements.md)
 ###### [Behavioral changes for promoted actions](developer/devenv-promoted-actions-behavioral-changes.md)
-###### [pages with action bar improvements](developer/devenv-pages-action-bar-improvements.md)
+###### [Pages with action bar improvements](developer/devenv-pages-action-bar-improvements.md)
 
 #### Profiles
 ##### [Designing profiles](developer/devenv-design-profiles.md)
@@ -847,13 +847,14 @@
 ##### [Page customization object](developer/devenv-page-customization-object.md)
 ##### [Using the client to create profiles](developer/devenv-design-profiles-using-client.md)
 
+#### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
+
 #### Creating deep links
 ##### [Web client URL](developer/devenv-web-client-urls.md)
 ##### [Business Central app URL](developer/devenv-link-to-mobile-app.md)
+
 #### Control add-ins
 ##### [Control add-in style guide](developer/devenv-control-addin-style.md)
-
-#### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
 
 #### Developing for the Business Central mobile app
 ##### [Introducing the Business Central mobile app](developer/devenv-introducing-business-central-mobile-app.md)  
