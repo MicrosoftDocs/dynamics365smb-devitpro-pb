@@ -38,7 +38,7 @@ Role Centers are based on a user-centric design model. You should design a Role 
 For more information, see [Designing role centers](devenv-designing-role-centers.md).
 
 
-## Pages and actions
+## Pages
 
 Understanding how [!INCLUDE[prod_short](includes/prod_short.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface. A fundamental characteristic of a page type is how it relates to the data presented on the page. Two principal ways exist: *entity*-oriented (typical for the `Card` page type) and *collection*-oriented (typical for the `List` page type.) 
 
@@ -49,6 +49,8 @@ Understanding how [!INCLUDE[prod_short](includes/prod_short.md)] displays a page
 
 For more information, see [Pages overview](devenv-pages-overview.md) and [Page Types and Layouts](devenv-page-types-and-layouts.md).
 
+
+## Actions
 
 In [!INCLUDE[prod_short](includes/prod_short.md)], actions are displayed at the top of each page, referred to as the action bar. The actions can be displayed in different menus on the action bar to enable users to quickly locate the actions they want to use.
 
