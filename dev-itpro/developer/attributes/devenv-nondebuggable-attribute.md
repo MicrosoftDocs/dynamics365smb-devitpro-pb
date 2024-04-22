@@ -2,7 +2,7 @@
 title: "NonDebuggable Attribute"
 description: "Specifies that the annotated symbol will not be available to the debugger."
 ms.author: solsen
-ms.date: 06/15/2022
+ms.date: 04/19/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -64,9 +64,14 @@ codeunit 50143 NoDebuggingOfVar
 
 ## Remarks
 
-Regardless of the resource exposure policy setting, methods and variables marked with the `[NonDebuggable]` attribute, will remain non-debuggable. For more information, see [Resource Exposure Policy Setting](../devenv-security-settings-and-ip-protection.md).
-  
-## See Also  
+Regardless of the resource exposure policy setting, methods and variables marked with the `[NonDebuggable]` attribute, will remain non-debuggable.
 
-[AL Method Reference](../methods-auto/library.md)  
+> [!NOTE]  
+> During snapshot debugging, all frames are collected, also for non-debuggable methods, but no variables are shown in any of the snap points for methods that are decorated as non-debuggable. 
+
+For more information, see [Resource Exposure Policy Setting](../devenv-security-settings-and-ip-protection.md).
+  
+## See also  
+
+[AL method reference](../methods-auto/library.md)  
 [Debugging](../devenv-debugging.md)
