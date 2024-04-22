@@ -24,7 +24,7 @@ An alternative to classic debugging is snapshot debugging, which allows you to r
 > To enable debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This step requires a server restart.
 
 > [!IMPORTANT]  
-> To use the development environment and debugger, you must make sure that port `7049` is available.
+> To use the development environment and debugger for on-premises environments, you must make sure that port `7049` is available.
 
 There are some limitations to be aware of:
 
@@ -154,6 +154,27 @@ The ability to debug certain methods and/or variables can be restricted. For mor
 ## Authenticate with Microsoft Entra ID on Business Central on-premises
 
 You can use Microsoft Entra ID as the authentication mechanism for [!INCLUDE[prod_short](includes/prod_short.md)] on-premises or containers. For more information, see [Microsoft Entra authentication for Business Central on-premises](devenv-aad-auth-onprem.md).
+
+## Troubleshooting your debugging setup
+
+This section provides some tips and tricks for working with and troubleshooting your debugging setup.
+
+### Debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019
+
+To enable debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This step requires a server restart.
+
+### Firewall settings for on-premises environments (port 7049)
+
+To use the development environment and debugger for on-premises environments, you must make sure that port `7049` (the default port for the debugger) is open. The port can be changed with the server setting ``DeveloperServicesPort``.
+
+### Debug an online environment with an Embed app published in it
+
+To be able to debug an online environment with an Embed app published in it, make sure to specify the `applicationFamily` parameter in your launch.json file. You must define the application family for your Embed app during onboarding. 
+
+### Launching debug sessions to on-premises environments
+
+To be able to debug sessions in an on-premises environment, make sure to specify the `usePublicURLFromServer` parameter in your launch.json file. For more information, see [Publish to local server settings (launch.json)](devenv-json-launch-file.md#publish-to-local-server-settings-launchjson)
+
 
 ## See also
 
