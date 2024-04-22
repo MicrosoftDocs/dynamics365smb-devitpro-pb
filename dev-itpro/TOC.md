@@ -815,10 +815,6 @@
 -->
 ####### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
 
-#### Views
-##### [Designing views](developer/devenv-views.md)
-##### [Migrating from legacy to modern views](developer/devenv-views-legacy.md)
-
 #### Adding fields to pages
 ##### [Arranging fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
 ##### [Grid controls](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
@@ -840,6 +836,10 @@
 ###### [Action bar improvements](developer/devenv-action-bar-improvements.md)
 ###### [Behavioral changes for promoted actions](developer/devenv-promoted-actions-behavioral-changes.md)
 ###### [Pages with action bar improvements](developer/devenv-pages-action-bar-improvements.md)
+
+#### Views
+##### [Designing views](developer/devenv-views.md)
+##### [Migrating from legacy to modern views](developer/devenv-views-legacy.md)
 
 #### Profiles
 ##### [Designing profiles](developer/devenv-design-profiles.md)
