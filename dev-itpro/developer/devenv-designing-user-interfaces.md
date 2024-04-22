@@ -9,11 +9,11 @@ ms.author: kepontop
 
 # Designing User Interfaces
 
-**Jacob W writes an intro here**
+**!!! Maybe Jacob W writes more/better intro here !!!**
 
 The user interface for [!INCLUDE[prod_short](includes/prod_short.md)] consists of many types of components, such as 
 
-- *Role Centers*. These serve as personalized dashboards tailored to specific user roles. They provide quick access to relevant information, tasks, and reports.
+* *Role Centers*. These serve as personalized dashboards tailored to specific user roles. They provide quick access to relevant information, tasks, and reports.
 * Pages*. Business Central’s interface is organized into pages. These can be list pages, displaying records in a tabular format, or card pages, showing detailed information for a single record. Pages display fields, which represent data elements within records. Users input or view data in these fields.
 * Actions*. Users can perform actions such as creating, editing, deleting, or posting records. These actions are available through buttons on the pages.
 * *Views*. Views allow users to filter and sort data on pages. They define how records are displayed.
@@ -24,7 +24,7 @@ Apart from the components mentioned above, [!INCLUDE[prod_short](includes/prod_s
 * *Tell Me*. A search feature that helps users find specific pages, actions, or reports by typing keywords.
 * *Role Explorer*. Provides an overview of available roles and their associated tasks.
 
-As a developer, mastering the different user interface components enhances efficiency and productivity for the users of your [!INCLUDE[prod_short](includes/prod_short.md)] apps/extensions.
+As a developer, mastering the different user interface components enhances efficiency and productivity for the users of your [!INCLUDE[prod_short](includes/prod_short.md)] apps/extensions. This overview article explains each topic on a high level and provides links for learning more.
 
 
 ## Role Centers
@@ -40,13 +40,45 @@ Role Centers are based on a user-centric design model. You should design a Role 
 
 
 
+
 ## Views
+
+Views in [!INCLUDE[prod_short](includes/prod_short.md)] are used on list pages to define a different view of the data on a given page. A view offers:
+
+- Filtering on multiple table fields on the source table defined for the page.
+- Sorting of the data on multiple table fields, but only in one direction; either *ascending* or *descending*.
+- Layout changes, modifying page columns, moving them, etc. 
+
+For more information, see [Designing views](devenv-views.md)
 
 
 ## Queries
 
+Available from version 23, users can view and analyze query data directly from the [!INCLUDE[prod_short](includes/prod_short.md)] client in analysis mode. The data is analyzed in real time and respects the data security that has been set up for the users. Just like for pages, you can can make queries discoverable for users in Tell Me search and in the role explorer under Report and Analysis. 
+
+:::image type="content" source="/business-central/media/data-analysis-gl-entries.png" alt-text="Example of how to do data analysis on the G/L entries page." lightbox="/business-central/media/data-analysis-gl-entries.png":::
+
+For more information, see [Query Object](devenv-query-object.md) and [Analyze data on lists and queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json).
+
+
 ## Profiles
 
+A profile is the mechanism that makes a Role Center page and its associated pages and reports available to users in the client. It enables you to build an individual experience for users based on their role in the company by customizing the pages that they use to perform the daily tasks. In the client, profiles are referred to as **Roles**. When users sign in to [!INCLUDE[prod_short](includes/prod_short.md)], they are doing so under a specific role. Users can switch the role from the **My Settings** page. 
+
+For more information, see [Designing profiles](devenv-design-profiles.md).
+
+
+## Discoverability features 
+
+After you develop a page and before you make it available for users, you must consider *discoverability* for the page, meaning:
+
+- How users can discover that the page exists?
+- Ensure that users can find it.
+- Ensure that users know how to use it. 
+
+[!INCLUDE[prod_short](includes/prod_short.md)] comes with various features that you can use to make that happen, such as **Tell me** search, actions on role centers and pages, Role explorer, teaching tips, and context-specific help. 
+
+For more information, see [Page discoverability overview](devenv-page-discoverability.md).
 
 
 ## See Also
@@ -57,7 +89,9 @@ Role Centers are based on a user-centric design model. You should design a Role 
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  
 [Arranging fields on a FastTab](devenv-arranging-fields-on-fasttab.md)   
 [Actions overview](devenv-actions-overview.md)   
-[Designing views](devenv-views.md)   
-##### [Designing profiles](developer/devenv-design-profiles.md)
 
-[Add pages and reports to Tell me](devenv-al-menusuite-functionality.md)   
+[Query Object](devenv-query-object.md)   
+[Analyze data on lists and queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+[Designing views](devenv-views.md)   
+[Designing profiles](devenv-design-profiles.md)
+[Page discoverability overview](devenv-page-discoverability.md)   
