@@ -771,7 +771,7 @@
 
 
 ### Pages and user interfaces
-
+#### [Designing user interfaces](developer/devenv-designing-user-interfaces.md)
 #### [Customizing for user roles](developer/devenv-role-customization.md)
 
 #### Role centers
@@ -786,8 +786,6 @@
 ##### [Pages overview](developer/devenv-pages-overview.md)
 ##### [Page object](developer/devenv-page-object.md)
 ##### [Page extension object](developer/devenv-page-ext-object.md)
-##### [Adding tooltips to page fields](developer/devenv-adding-tooltips.md)
-##### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 
 ##### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
 ###### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
@@ -817,6 +815,7 @@
 
 #### Adding fields to pages
 ##### [Arranging fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
+##### [Adding tooltips to page fields](developer/devenv-adding-tooltips.md)
 ##### [Grid controls](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
 ##### [Fixed controls](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
 ##### [Field groups](developer/devenv-field-groups.md)
@@ -836,6 +835,10 @@
 ###### [Action bar improvements](developer/devenv-action-bar-improvements.md)
 ###### [Behavioral changes for promoted actions](developer/devenv-promoted-actions-behavioral-changes.md)
 ###### [Pages with action bar improvements](developer/devenv-pages-action-bar-improvements.md)
+
+#### Page discoverability
+##### [Page discoverability overview](developer/devenv-page-discoverability.md)
+##### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 
 #### Views
 ##### [Designing views](developer/devenv-views.md)
