@@ -771,7 +771,6 @@
 
 
 ### Pages and user interfaces
-#### [Pages overview](developer/devenv-pages-overview.md)
 
 #### [Customizing for user roles](developer/devenv-role-customization.md)
 
@@ -784,6 +783,7 @@
 ##### [Cues and action tiles](developer/devenv-cues-action-tiles.md)
 
 #### Pages
+##### [Pages overview](developer/devenv-pages-overview.md)
 ##### [Page object](developer/devenv-page-object.md)
 ##### [Page extension object](developer/devenv-page-ext-object.md)
 ##### [Adding tooltips to page fields](developer/devenv-adding-tooltips.md)
