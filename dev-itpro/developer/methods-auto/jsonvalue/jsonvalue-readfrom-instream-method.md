@@ -51,7 +51,7 @@ Clear(JsonValue)
 This example shows how to read JSON data from a stream into a JsonValue variable.
 
 ```al
-local procedure ReadJson(source : InStream) result : JsonValue;
+local procedure ReadJson(source : InStream) result : JsonValue
 begin
     result.ReadFrom(source);    
 end;
