@@ -44,9 +44,6 @@ You can set **StyleExpr** property to either the name of a variable; a text cons
 |'ambiguous'|Normal weight, yellow color|  
 |'subordinate'|Normal weight, gray color|  
 
-> [!IMPORTANT]  
-> **StyleExpr** must not be set to a Text or Boolean array; otherwise, it will compile, but fail at runtime.
-
 ## Remarks  
 
 > [!NOTE]  
