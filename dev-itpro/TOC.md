@@ -1199,7 +1199,7 @@
 ### [Overview](developer/devenv-ext-dev-lifecycle-overview.md)
 ### [Extension types and scope](developer/devenv-extension-types-and-scope.md)
 ### [Moving between extension scopes](developer/devenv-extension-moving-scope.md)
-### [Moving tables and fields](developer/devenv-move-table-fields-between-extensions.md)
+### [Moving tables and fields between extensions](developer/devenv-move-table-fields-between-extensions.md)
 ### Migration
 #### [Generating delta files](developer/devenv-generating-delta-files.md)
 #### Migrating tables and fields between extensions (on-premises)
