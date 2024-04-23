@@ -4,7 +4,6 @@ description: Learn how to enable select features ahead of time as the administra
 author: mikebcMSFT
 
 ms.topic: conceptual
-ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview, what's new
 ms.date: 10/26/2021
 ms.author: mikebc

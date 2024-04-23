@@ -2,7 +2,6 @@
 title: "XmlAttributeCollection.Get(Text, Text, var XmlAttribute) Method"
 description: "Gets the specified attribute."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

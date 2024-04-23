@@ -2,7 +2,6 @@
 title: "RecordRef.Number() Method"
 description: "Gets the table ID (number) of the table that contains the record that was referred to by the RecordRef."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

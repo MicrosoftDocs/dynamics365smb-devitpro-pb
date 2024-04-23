@@ -1,12 +1,11 @@
 ---
 title: Security considerations in Business Central
-ms.custom: Learn about the some of the most important aspects to take into consideration when you configure security for your Business Central solution.
+description: Learn about the some of the most important aspects to take into consideration when you configure security for your Business Central solution.
 author: jswymer
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 12/20/2023
-description: Learn how to set up your Business Central security system effectively. Discover the importance of superuser roles and permission sets in database security.
+ms.custom: bap-template
 ---
 # Security considerations
 

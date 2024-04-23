@@ -1,6 +1,5 @@
 ---
 title: "Upgrading to Microsoft Dynamics 365 Business Central"
-ms.custom: na
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer

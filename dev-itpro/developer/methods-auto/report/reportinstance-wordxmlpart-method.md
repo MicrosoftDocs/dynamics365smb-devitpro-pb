@@ -2,7 +2,6 @@
 title: "Report.WordXmlPart([Boolean]) Method"
 description: "Gets the report data structure as structured XML that is compatible with Microsoft Word custom XML parts."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

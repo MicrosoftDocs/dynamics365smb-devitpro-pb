@@ -2,7 +2,6 @@
 title: "Record.TransferFields(var Record [, Boolean]) Method"
 description: "Copies all matching fields in one record to another record."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
@@ -48,7 +47,7 @@ The `TransferFields` method copies fields based on the field number on the field
 The fields must have the *same data type* for the copying to succeed (text and code are convertible, other types are not). Enum fields are considered being the same data type even on different enum types. There must be room for the actual length of the contents of the field to be copied in the field to which it is to be copied. If any one of these conditions aren't fulfilled, a runtime error will occur.
 
 > [!NOTE]
-> When using `TransferFields` errors will only occur if there's a mismatch between fields originating from the *same extension*. Fields from different apps don't cause `TransferFields` to fail due to type mismatches. This behavior is to ensure that the addition of new extensions doesn't disrupt the operation of existing code.
+> When using `TransferFields`, errors will only occur if there's a mismatch between fields originating from the *same extension*. Fields from different apps don't cause `TransferFields` to fail due to type mismatches. This behavior is to ensure that the addition of new extensions doesn't disrupt the operation of existing code.
 
 > [!NOTE]  
 > Fields are assigned, such as `DestinationRecord.Field := SourceRecord.Field`, which won't call the OnValidate trigger on the destination field. To assist with validation when using the `TransferFields` method, the `TypeHelper` codeunit contains a `TransferFieldsWithValidate` method.

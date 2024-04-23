@@ -2,7 +2,6 @@
 title: "XmlAttributeCollection.Remove(Text, Text) Method"
 description: "Removes the specified attribute from the collection."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Text.TrimStart([Text]) Method"
 description: "Removes all leading occurrences of a set of characters specified in an array from the current Text object."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

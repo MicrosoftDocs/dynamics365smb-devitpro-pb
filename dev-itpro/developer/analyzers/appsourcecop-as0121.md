@@ -2,7 +2,6 @@
 title: "AppSourceCop Error AS0121"
 description: "The name of the moved symbol in the source and the destination application is different."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

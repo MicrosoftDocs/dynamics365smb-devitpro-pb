@@ -2,7 +2,6 @@
 title: "Compiler Error AL0536"
 description: "Adding new controls in a view is not allowed."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

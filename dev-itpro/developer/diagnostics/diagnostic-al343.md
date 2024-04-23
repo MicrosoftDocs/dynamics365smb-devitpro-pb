@@ -2,7 +2,6 @@
 title: "Compiler Error AL0343"
 description: "Queries must define a top-level DataItem."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

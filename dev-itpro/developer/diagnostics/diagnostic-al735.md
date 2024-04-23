@@ -2,7 +2,6 @@
 title: "Compiler Error AL0735"
 description: "The custom action '{0}' cannot be defined in {1} '{2}' because '{2}' uses promoted action properties."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

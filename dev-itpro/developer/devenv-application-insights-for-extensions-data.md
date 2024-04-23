@@ -1,7 +1,6 @@
 ---
 title: Data logged to app/extension telemetry 
 description: Describes what data is sent to Azure Application Insights for app/extensions. 
-ms.custom: na
 ms.date: 02/09/2024
 ms.reviewer: solsen
 ms.topic: conceptual

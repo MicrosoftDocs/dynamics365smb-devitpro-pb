@@ -4,7 +4,6 @@ description: "Learn about constraints on API calls made via OData or SOAP reques
 author: jswymer
 ms.custom: na
 ms.date: 01/22/2024
-ms.reviewer: na
 ms.topic: article
 ms.author: jswymer
 ---

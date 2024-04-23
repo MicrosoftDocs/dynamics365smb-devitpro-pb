@@ -1,7 +1,6 @@
 ---
 title: "Designing ListParts"
 description: "Design and implementation tips for page part of type ListPart."
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: brobledodiaz

@@ -2,7 +2,6 @@
 title: "FilterPageBuilder.GetView(Text [, Boolean]) Method"
 description: "Gets the filter view (which defines the sort order, key, and filters) for the record in the specified filter control of a filter page."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

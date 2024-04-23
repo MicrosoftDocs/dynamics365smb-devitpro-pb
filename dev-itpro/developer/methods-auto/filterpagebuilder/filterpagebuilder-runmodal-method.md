@@ -2,7 +2,6 @@
 title: "FilterPageBuilder.RunModal() Method"
 description: "Builds and runs the filter page that includes the filter controls that are stored in FilterPageBuilder object instance."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

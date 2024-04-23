@@ -2,7 +2,6 @@
 title: "HttpHeaders.ContainsSecret(Text) Method"
 description: "Returns if the header for the given key has a secret value."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

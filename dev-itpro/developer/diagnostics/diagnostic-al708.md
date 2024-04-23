@@ -2,7 +2,6 @@
 title: "Compiler Error AL0708"
 description: "MimeType values must be less than {0} characters in length."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

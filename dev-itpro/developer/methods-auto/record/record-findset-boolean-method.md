@@ -2,7 +2,6 @@
 title: "Record.FindSet([Boolean]) Method"
 description: "Finds a set of records in a table based on the current key and filter."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

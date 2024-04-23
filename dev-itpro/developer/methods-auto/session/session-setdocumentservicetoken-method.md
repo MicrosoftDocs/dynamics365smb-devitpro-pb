@@ -2,7 +2,6 @@
 title: "Session.SetDocumentServiceToken(Text) Method"
 description: "Sets the document service token in the current session."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

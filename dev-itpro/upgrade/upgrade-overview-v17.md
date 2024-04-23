@@ -1,9 +1,8 @@
 ---
 title: "Upgrade to Business Central 2020 Wave 2"
 description: Provides an overview of Business Central 2020 release wave 2 upgrade
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: overview
 ms.author: jswymer
 author: jswymer

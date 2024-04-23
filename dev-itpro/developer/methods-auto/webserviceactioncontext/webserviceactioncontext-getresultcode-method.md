@@ -2,7 +2,6 @@
 title: "WebServiceActionContext.GetResultCode() Method"
 description: "Gets the web service action result status code."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

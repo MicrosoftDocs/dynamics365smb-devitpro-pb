@@ -2,7 +2,6 @@
 title: "AppSourceCop Warning AS0094"
 description: "Permission sets should not be defined in XML."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

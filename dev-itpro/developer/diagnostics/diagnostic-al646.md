@@ -2,7 +2,6 @@
 title: "Compiler Warning AL0646"
 description: "XML comment has a duplicate param tag for '{0}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

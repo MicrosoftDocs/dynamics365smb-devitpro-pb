@@ -2,7 +2,6 @@
 title: "System.RoundDateTime(DateTime [, BigInteger] [, Text]) Method"
 description: "Rounds a DateTime."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

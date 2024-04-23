@@ -2,7 +2,6 @@
 title: "RecordRef.DeleteAll([Boolean]) Method"
 description: "Deletes all records in a table that fall within a specified range."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

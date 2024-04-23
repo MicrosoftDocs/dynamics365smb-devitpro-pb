@@ -2,9 +2,7 @@
 title: "APIVersion Property (Page)"
 description: "Sets the versions of the API endpoint that the page is exposed in."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/23/2023
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

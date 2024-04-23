@@ -2,7 +2,6 @@
 title: "Compiler Error AL0638"
 description: "'Variant' is not a valid column type for column '{0}' in report '{1}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

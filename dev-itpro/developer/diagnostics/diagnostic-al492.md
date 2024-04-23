@@ -2,7 +2,6 @@
 title: "Compiler Error AL0492"
 description: "The RunObject property value of actions defined in the '{0}' area must only reference pages of type 'List'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

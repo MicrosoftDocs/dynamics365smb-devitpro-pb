@@ -1,8 +1,6 @@
 ---
 title: "SourceTableView Property (XMLports)"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 ms.assetid: f49d8c45-f2e6-4c96-a53b-31ddd1883e3b
 caps.latest.revision: 4

@@ -2,7 +2,6 @@
 title: "Compiler Error AL0421"
 description: "A ‘foreach’ statement can only be used with an expression of an enumerable type."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

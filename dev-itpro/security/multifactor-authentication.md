@@ -3,7 +3,6 @@ title: Multifactor authentication (MFA) for Business Central
 description: This article explains how to add multifactor authentication (MFA) when your solution uses Microsoft Entra ID as authentication mechanism.
 author: jswymer
 ms.custom: bap-template
-ms.reviewer: na
 
 ms.topic: conceptual
 ms.author: jswymer

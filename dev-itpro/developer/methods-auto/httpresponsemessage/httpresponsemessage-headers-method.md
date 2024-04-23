@@ -2,7 +2,6 @@
 title: "HttpResponseMessage.Headers() Method"
 description: "Gets the HTTP response's HTTP headers."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

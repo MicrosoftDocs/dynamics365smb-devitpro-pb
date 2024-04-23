@@ -2,7 +2,6 @@
 title: "Help and customer support"
 description: "Guidelines on help and customer support links"
 author: a-emniel
-ms.custom: na
 ms.date: 12/29/2023
 ms.reviewer: solsen
 ms.topic: conceptual

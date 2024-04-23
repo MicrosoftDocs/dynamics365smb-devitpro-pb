@@ -2,7 +2,6 @@
 title: "HttpResponseMessage.ReasonPhrase() Method"
 description: "Gets the reason phrase which typically is sent by servers together with the status code."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "TopNumberOfRows Property"
 description: "Specifies the maximum number of rows to include in the resulting data set of a query."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

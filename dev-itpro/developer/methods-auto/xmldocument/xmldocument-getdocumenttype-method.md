@@ -2,7 +2,6 @@
 title: "XmlDocument.GetDocumentType(var XmlDocumentType) Method"
 description: "Gets the Document Type Definition (DTD) for this document."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

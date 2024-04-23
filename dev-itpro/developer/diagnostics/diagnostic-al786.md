@@ -2,7 +2,6 @@
 title: "Compiler Error AL0786"
 description: "The property '{0}' cannot be specified on the control '{1}' in the page customization '{2}' targeting page '{3}', because this property type is not supported in page customizations."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

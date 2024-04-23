@@ -2,7 +2,6 @@
 title: "Compiler Error AL1032"
 description: "Translation file '{0}' has the same target language as another translation file."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

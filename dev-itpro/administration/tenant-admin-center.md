@@ -28,7 +28,7 @@ Users with the following [Microsoft Entra roles](/entra/identity/role-based-acce
 
 - [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator)
 - [Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator)
-- Dynamics 365 Business Central Administrator
+- [Dynamics 365 Business Central Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-business-central-administrator)
 
 Although the following roles aren't required to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] or its environments, they allow for administration of tools and resources that integrate with [!INCLUDE [prod_short](../developer/includes/prod_short.md)]:
 

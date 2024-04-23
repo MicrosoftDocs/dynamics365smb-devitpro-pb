@@ -2,7 +2,6 @@
 title: "UICop Error AW0007"
 description: "The Web client does not support displaying Repeater controls that contain FlowFilter fields."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

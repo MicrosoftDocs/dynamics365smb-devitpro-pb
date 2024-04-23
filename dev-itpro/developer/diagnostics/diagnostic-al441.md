@@ -2,7 +2,6 @@
 title: "Compiler Error AL0441"
 description: "Parameter {0} is only available when the page specifies a 'SourceTable'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

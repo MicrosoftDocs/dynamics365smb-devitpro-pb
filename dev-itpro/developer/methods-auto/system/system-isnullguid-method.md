@@ -2,7 +2,6 @@
 title: "System.IsNullGuid(Guid) Method"
 description: "Indicates whether a value has been assigned to a GUID."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Compiler Error AL0239"
 description: "Attribute {0} is specified multiple times."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

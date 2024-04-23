@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL0571"
 description: "The property 'Description' should only be used for internal comments."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

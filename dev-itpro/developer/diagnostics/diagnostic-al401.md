@@ -2,7 +2,6 @@
 title: "Compiler Error AL0401"
 description: "Multiple page customizations have been specified for the same page {0} within the same profile."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -1,7 +1,6 @@
 ---
 title: "Performance Overview"
 description: Learn different ways to improve the performance of Business Central as a functional consultant, a developer, or an administrator.
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: overview

@@ -2,8 +2,6 @@
 title: "Deploying an Embed app"
 description: Get an overview of the tasks required to deploy a Business Central Embed app to the Online service
 author: jswymer
-ms.custom: na
-ms.reviewer: na
 ms.topic: overview
 ms.author: jswymer
 ms.date: 04/01/2021

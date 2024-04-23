@@ -3,8 +3,6 @@ title: Hardening Business Central Server Security
 description: Learn how you can harden security on the Business Central Server component to protect access to the configuration settings.
 author: SusanneWindfeldPedersen
 
-ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ms.date: 04/01/2021

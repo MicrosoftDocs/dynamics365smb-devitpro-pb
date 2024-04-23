@@ -2,7 +2,6 @@
 title: "Compiler Error AL0282"
 description: "The member referenced by event subscriber '{0}' parameter '{1}' is not found."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

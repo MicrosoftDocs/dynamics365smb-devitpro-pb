@@ -2,7 +2,6 @@
 title: "Database.ExportData(Boolean, var Text [, Text] [, Boolean] [, Boolean] [, Boolean] [, Record]) Method"
 description: "Exports data from the database to a file."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

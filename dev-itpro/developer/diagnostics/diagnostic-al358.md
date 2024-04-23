@@ -2,7 +2,6 @@
 title: "Compiler Error AL0358"
 description: "Cannot move or modify the {0} '{1}' in the same '{2}' that you added."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

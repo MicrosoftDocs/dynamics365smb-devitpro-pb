@@ -2,7 +2,6 @@
 title: "Compiler Error AL0112"
 description: "{0} is not a valid attribute."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

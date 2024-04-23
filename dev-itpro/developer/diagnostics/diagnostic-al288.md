@@ -2,7 +2,6 @@
 title: "Compiler Error AL0288"
 description: "Parameter '{0}' is only allowed to be 'var' if the publisher parameter is 'var'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

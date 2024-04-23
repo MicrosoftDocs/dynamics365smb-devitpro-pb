@@ -2,7 +2,6 @@
 title: "Compiler Warning AL0567"
 description: "The field '{0}' is using the same name as a system-provided field and will shadow that field."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -1,8 +1,6 @@
 ---
 title: "Preparing for Dynamics 365 for Sales for Integration"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

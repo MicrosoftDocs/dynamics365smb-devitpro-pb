@@ -2,7 +2,6 @@
 title: "Integer Data Type"
 description: "Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -2,7 +2,6 @@
 title: "Variant.IsXmlReadOptions() Method"
 description: "Indicates whether an AL variant contains an XmlReadOptions variable."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

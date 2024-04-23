@@ -2,8 +2,7 @@
 title: "System.GuiAllowed() Method"
 description: "Checks whether the AL code can show any information on the screen."
 ms.author: solsen
-ms.custom: na
-ms.date: 02/26/2024
+ms.date: 04/22/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -36,7 +35,7 @@ Ok :=   System.GuiAllowed()
 
 ## Remarks
 
-The `System.GuiAllowed` method returns true if the session where your AL code is running allows you to use methods that interact with the user, such as Dialog.Open, Dialog.Update, Window.Open, Window.Update, or System.Error.
+The `System.GuiAllowed` method returns true if the session where your AL code is running allows you to use methods that interact with the user, such as [Dialog.Open](../dialog/dialog-open-method.md), [Dialog.Update](../dialog/dialog-update-method.md), or [Dialog.Close](../dialog/dialog-close-method.md).
 
 If the same codeunit needs to run both in the UI but also in the background (in a scheduled task or with a job queue entry) or in a web service call (SOAP/OData/API), then use `if GuiAllowed() then` calls to encapsulate AL code that interact with the user.
 

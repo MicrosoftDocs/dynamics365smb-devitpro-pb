@@ -1,9 +1,8 @@
 ---
 title: "Upgrading Version 15, 16, 17, or 18 Base Application to Version 19"
 description: Describes how to upgrade an unmodified Business Central 15, 16, or 17 application to version 19
-ms.custom: na
-ms.date: 11/26/2021
-ms.reviewer: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

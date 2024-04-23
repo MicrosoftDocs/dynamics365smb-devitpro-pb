@@ -3,7 +3,6 @@ title: Prompting using a floating action bar
 description: Learn how to create prompt actions to promote AI capabilities in Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.reviewer: 
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot

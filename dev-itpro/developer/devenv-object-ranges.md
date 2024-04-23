@@ -2,7 +2,6 @@
 title: Object ranges
 description: Description of the object ranges used for licensing in Business Central.
 author: SusanneWindfeldPedersen
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ms.date: 03/01/2024

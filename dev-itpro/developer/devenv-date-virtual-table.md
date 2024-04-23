@@ -3,7 +3,6 @@ title: Date virtual table
 description: The date virtual table in AL for Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.reviewer: 
 
 ms.topic: conceptual
 ms.date: 03/17/2023

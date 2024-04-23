@@ -2,7 +2,6 @@
 title: "ReadState Property"
 description: "Specifies which records are read and how they are locked when a query is executed."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

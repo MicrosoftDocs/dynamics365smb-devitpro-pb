@@ -2,7 +2,6 @@
 title: "Compiler Error AL0160"
 description: "'{0}' is not a valid language identifier."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

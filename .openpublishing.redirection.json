@@ -7488,7 +7488,18 @@
     "source_path": "dev-itpro/developer/devenv-platform-overview.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-reference-overview",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-extending-drop-zones.md",
+    "redirect_url": "/dynamics365/business-central/application/",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/properties/devenv-table-properties.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-table-property-overview",
+    "redirect_document_id": false
    }
+   
   ] 
 }
 

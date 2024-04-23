@@ -2,9 +2,7 @@
 title: "Page Extension Object"
 description: "Description of the page extension object in AL for Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 01/08/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

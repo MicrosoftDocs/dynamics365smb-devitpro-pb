@@ -2,9 +2,7 @@
 title: Table, table fields, and table extension properties
 description: This topic lists table properties that apply to fields of a table object.
 author: solsen
-ms.custom: na
 ms.date: 01/24/2024
-ms.reviewer: na
 ms.topic: reference
 ms.assetid: cf65e1e0-f696-4aac-afbd-992cd82f98de
 ms.author: solsen

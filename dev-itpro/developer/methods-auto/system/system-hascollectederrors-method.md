@@ -2,7 +2,6 @@
 title: "System.HasCollectedErrors() Method"
 description: "Gets a value indicating whether errors have been collected in the current error collection scope."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

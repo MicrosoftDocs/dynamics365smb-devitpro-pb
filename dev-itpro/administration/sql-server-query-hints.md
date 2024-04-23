@@ -1,8 +1,10 @@
 ---
-title: "Configuring Query Hints for Optimizing SQL Server Performance"
+title: Configuring Query Hints for Optimizing SQL Server Performance
 description: Enable query hints in a database for optimizing performance.
-ms.custom: bap-template
-ms.date: 04/01/2021
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual

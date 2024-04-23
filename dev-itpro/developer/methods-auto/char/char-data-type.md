@@ -2,7 +2,6 @@
 title: "Char Data Type"
 description: "Stores a single, 16-bit character as a value in the range 0 to 65535."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

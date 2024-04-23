@@ -2,7 +2,6 @@
 title: "System.IsCollectingErrors() Method"
 description: "Gets a value indicating whether errors are currently being collected."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

@@ -1,8 +1,10 @@
 ---
 title: Upload the License File
 description: Describes how to upload a Business Central license when you deploy on-premises
-ms.custom: bap-template
-ms.date: 10/10/2023
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: article

@@ -2,8 +2,6 @@
 title: "Embed app deployment packages"
 description: Learn about how to deploy a Business Central Embed app to the Online service
 author: jswymer
-ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021

@@ -2,7 +2,6 @@
 title: "Compiler Error AL0175"
 description: "Operator '{0}' cannot be applied to operands of type '{1}' and '{2}'."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

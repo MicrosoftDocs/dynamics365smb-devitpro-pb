@@ -2,7 +2,6 @@
 title: "BigText.TextPos(Text) Method"
 description: "Gets the position at which a specific string first occurs in this BigText instance."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

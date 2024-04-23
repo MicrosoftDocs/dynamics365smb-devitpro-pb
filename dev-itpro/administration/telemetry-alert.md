@@ -8,7 +8,7 @@ ms.date: 11/17/2022
 ms.author: jswymer
 ms.reviewer: jswymer
 
-ms.custom: bac-template
+ms.custom: bap-template
 ---
 # Alert on Telemetry
 

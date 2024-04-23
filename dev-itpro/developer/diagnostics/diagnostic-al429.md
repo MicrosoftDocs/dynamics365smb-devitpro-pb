@@ -2,7 +2,6 @@
 title: "Compiler Error AL0429"
 description: "A repeater control can only be added to pages that have a source table."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

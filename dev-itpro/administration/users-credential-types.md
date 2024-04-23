@@ -2,12 +2,14 @@
 title:  Authentication and credential types
 description: This article explains how the credential authorization mechanism works for users of Business Central and how to configure credential types for on-premises.
 author: jswymer
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 04/26/2023
+ms.date: 04/16/2024
 ---
 # Authentication and credential types for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]  
 
@@ -35,7 +37,7 @@ An on-premises deployment of [!INCLUDE[prod_short](../developer/includes/prod_sh
 |**ExchangeIdentity**, **TaskScheduler**, and **Impersonate**| For internal use only. Don't use.|
 
 > [!IMPORTANT]  
->  If [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). For more information, see [How to: Implement Security Certificates in a Production Environment](/dynamics-nav/How-to--Implement-Security-Certificates-in-a-Production-Environment) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
+> If [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). For more information, see [How to: Implement Security Certificates in a Production Environment](/dynamics-nav/How-to--Implement-Security-Certificates-in-a-Production-Environment) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
 
 ### Configuring the credential type for client and server
 

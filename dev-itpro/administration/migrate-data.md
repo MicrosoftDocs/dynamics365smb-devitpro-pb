@@ -9,7 +9,7 @@ ms.search.form: 2502, 4003
 ms.date: 11/30/2022
 ms.author: jswymer
 
-ms.custom: bac-template
+ms.custom: bap-template
 ---
 
 # Migrate On-Premises Data to Business Central Online

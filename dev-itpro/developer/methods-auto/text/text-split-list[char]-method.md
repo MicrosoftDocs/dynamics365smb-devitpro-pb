@@ -2,7 +2,6 @@
 title: "Text.Split(List of [Char]) Method"
 description: "Splits a string into a maximum number of substrings based on a collection of separators."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

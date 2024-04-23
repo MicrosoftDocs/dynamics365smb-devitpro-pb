@@ -2,7 +2,6 @@
 title: "Compiler Warning (Future Error) AL0650"
 description: "The text with a length of {0} is longer than the MaxLength of {1} which means that the text will be trimmed."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference

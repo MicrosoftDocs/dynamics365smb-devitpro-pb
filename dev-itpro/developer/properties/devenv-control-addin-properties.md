@@ -2,9 +2,7 @@
 title: Control Add-In Properties
 description: This topic lists properties that apply to control add-in object.
 author: solsen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 ms.author: solsen
 ---
