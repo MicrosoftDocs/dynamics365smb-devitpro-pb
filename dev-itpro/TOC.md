@@ -824,9 +824,9 @@
 ##### [Rich Text and content controls](developer/devenv-richtext-content-controls.md)
 
 #### Actions
+##### [Actions in the user interface](developer/devenv-actions-user-interface.md)
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding actions to a page](developer/devenv-adding-actions-to-a-page.md)
-##### [Actions in the user interface](developer/devenv-actions-user-interface.md)
 ##### Promoted actions
 ###### [Promoted actions](developer/devenv-promoted-actions.md)
 ###### [Organizing promoted actions](developer/devenv-organizing-promoted-actions.md)
