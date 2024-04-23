@@ -23,7 +23,7 @@ Sets the type of method in a test codeunit.
   
 |Value|Syntax example|Purpose|  
 |-----------|-----------------|--------|    
-|**MessageHandler**|<br>`[MessageHandler]` </br> ``|This handler is called when a message function is invoked in the code. The parameter type, **Text**,  contains the text of the function.|  
+|**MessageHandler**|<br>`[MessageHandler]` </br> `procedure MessageHandler(Msg : Text[1024])`|This handler is called when a message function is invoked in the code. The parameter type, **Text**,  contains the text of the function.|  
 |**ConfirmHandler**|<br>`[ConfirmHandler]` </br> `procedure ConfirmHandlerNo(Question: Text[1024]; var Reply: Boolean)`|This handler is called when a confirm function is invoked in the code. The parameter type, **Text**,  contains the text of the function and the parameter **Reply** if the response to confirm is *yes* or *no*.|  
 |**StrMenuHandler**|<br>`[StrMenuHandler]` </br> `procedure StrMenuHandler(Option: Text[1024]; var Choice: Integer; Instruction: Text[1024])`|This handler is called when a StrMenu function is invoked in code. The parameter type, **Text**,  contains the text of the function and **Choice** is the option chosen in the StrMenu. **Options** is the list of the different option values and **Instruction** is the leading text.|  
 |**PageHandler**|<br>`[PageHandler]` </br> `procedure MappingPageHandler(var MappingPage: TestPage 1214)`|This handler is called when a non-modal page is invoked in the code. **TestPage** is the specific page in this case.|
