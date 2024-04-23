@@ -85,19 +85,23 @@ table 50100 Student
 
     fields
     {
-        field(1; Code; Text[50])
+        field(1; ID; Integer)
         {
             DataClassification = EndUserPseudonymousIdentifiers;
         }
-        field(2; FirstNames; Text[100])
+        field(2; Code; Text[50])
+        {
+            DataClassification = EndUserPseudonymousIdentifiers;
+        }
+        field(3; FirstNames; Text[100])
         {
             DataClassification = EndUserIdentifiableInformation;
         }
-        field(3; ECTSPoints; Integer)
+        field(4; ECTSPoints; Integer)
         {
             DataClassification = CustomerContent;
         }
-        field(4; NumberOfCourses; Integer)
+        field(5; NumberOfCourses; Integer)
         {
             DataClassification = CustomerContent;
         }
