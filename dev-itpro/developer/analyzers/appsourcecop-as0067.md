@@ -46,12 +46,12 @@ Version 2.0 of the extension:
 ```AL
 interface MyInterface
 {
-    procedure MyProcedure();
+    procedure MyProcedure()
 }
 
 codeunit 50100 MyImplementation implements MyInterface
 {
-    procedure MyProcedure();
+    procedure MyProcedure()
     begin
     end;
 }
@@ -96,12 +96,12 @@ Version 2.0 of the extension:
 ```AL
 interface MyInterface
 {
-    procedure MyProcedure();
+    procedure MyProcedure()
 }
 
 codeunit 50100 MyImplementation implements MyInterface
 {
-    procedure MyProcedure();
+    procedure MyProcedure()
     begin
     end;
 }

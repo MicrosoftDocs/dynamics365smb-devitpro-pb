@@ -21,7 +21,7 @@ AL test methods on test codeunits. A test method is a method that has the [Test 
   
 ```AL  
 [HyperLinkHandler]
-procedure HyperLinkHandler(Message : Text[1024]);
+procedure HyperLinkHandler(Message : Text[1024])
 ```    
   
 ## Remarks

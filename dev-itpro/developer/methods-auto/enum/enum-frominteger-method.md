@@ -44,7 +44,7 @@ enum 50130 YesNo
 
 codeunit 50130 YesNoTest
 {
-    procedure Test();
+    procedure Test()
     var
         Answer: enum YesNo;
     begin
