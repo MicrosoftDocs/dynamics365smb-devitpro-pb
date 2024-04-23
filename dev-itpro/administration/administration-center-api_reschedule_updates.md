@@ -75,7 +75,7 @@ PUT /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}
 
 ```
 {
-  "runOn": datetime, // Sets the date that the upgrade should be run on.
+  "runOn": datetime, // Sets the date that the upgrade should be run on. The date can be up to 10 minutes in the past.
   "ignoreUpgradeWindow": boolean // Specifies if the upgrade window for the environment should be respected.
 }
 ```
