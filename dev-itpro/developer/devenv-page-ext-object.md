@@ -147,7 +147,7 @@ tableextension 50115 RetailWinterSportsStore extends Customer
         }
     }
 
-    procedure HasShoeSize() : Boolean;
+    procedure HasShoeSize() : Boolean
     begin
         exit(ShoeSize <> 0);
     end;

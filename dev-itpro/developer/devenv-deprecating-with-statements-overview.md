@@ -38,7 +38,7 @@ codeunit 50140 MyCodeunit
         end;
     end; 
 
-    local procedure IsDirty(): Boolean;
+    local procedure IsDirty(): Boolean
     begin
         exit(false);
     end;
@@ -80,7 +80,7 @@ codeunit 50140 MyCodeunit
             Customer.Modify();
     end; 
 
-    local procedure IsDirty(): Boolean;
+    local procedure IsDirty(): Boolean
     begin
         exit(false);
     end;
@@ -113,7 +113,7 @@ codeunit 50140 MyCodeunit
         // end;
     end;
 
-    local procedure IsDirty(): Boolean;
+    local procedure IsDirty(): Boolean
     begin
         exit(false);
     end;

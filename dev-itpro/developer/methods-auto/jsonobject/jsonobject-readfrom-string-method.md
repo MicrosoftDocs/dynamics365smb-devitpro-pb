@@ -51,7 +51,7 @@ Clear(JsonObject)
 This example shows how to read JSON data from a string into a JsonObject variable.
 
 ```al
-local procedure ReadJson(data : Text) result : JsonObject;
+local procedure ReadJson(data : Text) result : JsonObject
 begin
     result.ReadFrom(data);    
 end;

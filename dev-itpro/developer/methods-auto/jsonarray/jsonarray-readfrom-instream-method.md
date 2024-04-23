@@ -51,7 +51,7 @@ Clear(JsonArray)
 This example shows how to read JSON data from a stream into a JsonArray variable.
 
 ```al
-local procedure ReadJson(source : InStream) result : JsonArray;
+local procedure ReadJson(source : InStream) result : JsonArray
 begin
     result.ReadFrom(source);    
 end;
