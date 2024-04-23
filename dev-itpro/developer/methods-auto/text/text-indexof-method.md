@@ -2,10 +2,7 @@
 title: "Text.IndexOf(Text [, Integer]) Method"
 description: "Reports the one-based index of the first occurrence of the specified string in this instance."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

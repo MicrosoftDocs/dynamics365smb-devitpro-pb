@@ -2,10 +2,7 @@
 title: "Compiler Warning (Future Error) AL0702"
 description: "Dependency '{0}' is referenced in the property '{1}' and as an explicit dependency."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/06/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

@@ -2,19 +2,16 @@
 title: Report customer outages
 description: Learn about how to report a suspected service outage on behalf of your Business Central online customers as the delegated administrator.
 author: jswymer
-
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 12/28/2021
+ms.devlang: al
+ms.date: 01/03/2024
 ms.author: jswymer
 
 ---
 
-# Report Customer Outages
+# Report customer outages
 
-When a customer has a situation where no users can sign in to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the admin must take immediate action. Outages are frustrating but rare. Make sure that the users are not unable to sign in due to problems with their network connection, for example. For more information, see [How do I check my online service health?](/power-platform/admin/check-online-service-health) in the Power Platform administration content.  
+When a customer has a situation where no users can sign in to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the admin must take immediate action. Outages are frustrating but rare. Make sure that the users aren't unable to sign in due to problems with their network connection, for example. For more information, see [How do I check my online service health?](/power-platform/admin/check-online-service-health) in the Power Platform administration content.  
 
 Internal and delegated administrators can report this outage to Microsoft by using the **Report Production Outage** action for the relevant production environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. This action creates a support ticket for Microsoft with all the information that is needed to begin steps to resolve the issue.  
 
@@ -28,7 +25,7 @@ Internal and delegated administrators can report this outage to Microsoft by usi
 3. In the **Report Production Outage** pane, choose the outage type:
 
     - Unable to sign in (all users)
-    - Cannot access API/Web Service
+    - Can't access API/Web Service
 
 4. Enter your name, email address, and phone number. This information will be included in the support ticket.  
 5. Choose **Next**.
@@ -36,22 +33,22 @@ Internal and delegated administrators can report this outage to Microsoft by usi
 7. Finally, add the date and time when the outage began. This information will also flow to the support ticket.  
 8. Choose the consent checkbox, and then choose **Report**.
 
-A support request ticket is then created, and you will see a dialog box with the ticket ID. You can then monitor progress in the **Reported Outages** section. From there, you can access the tickets in the Partner Center. For more information, see the [Microsoft Partner Center](/partner-center/) documentation.  
+A support request ticket is then created, and you can see a dialog box with the ticket ID. You can then monitor progress in the **Reported Outages** section. From there, you can access the tickets in the Partner Center. For more information, see the [Microsoft Partner Center](/partner-center/) documentation.  
 
 ## Troubleshooting tools and guides
 [!INCLUDE [troubleshooting-overview](../includes/include-troubleshooting-overview.md)]
 
 
-## See Also
+## See also
 
-[Escalating Support Issues to Microsoft](raise-support-case.md)  
-[Managing Technical Support](manage-technical-support.md)  
-[Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md)  
-[Troubleshooting tools and guides](../developer/devenv-troubleshooting-overview.md)
-[The Business Central Administration Center](tenant-admin-center.md)  
-[Technical Support for Business Central](../technical-support.md)  
-[Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)  
-[Deployment Overview](../deployment/Deployment.md)  
-[Administration as a partner](tenant-administration.md#administration-as-a-partner)  
-[Administration of Business Central Online](tenant-administration.md)  
-[Administration of Business Central On-Premises](Administration.md)  
+[Escalating Support Issues to Microsoft](raise-support-case.md)     
+[Managing Technical Support](manage-technical-support.md)    
+[Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md)    
+[Troubleshooting tools and guides](../developer/devenv-troubleshooting-overview.md)  
+[The Business Central Administration Center](tenant-admin-center.md)    
+[Technical Support for Business Central](../technical-support.md)    
+[Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)    
+[Deployment Overview](../deployment/Deployment.md)    
+[Administration as a partner](tenant-administration.md#administration-as-a-partner)    
+[Administration of Business Central Online](tenant-administration.md)    
+[Administration of Business Central on-premises](Administration.md)    

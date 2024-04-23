@@ -7,8 +7,8 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 11/13/2022
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
-ms.custom: bac-template
+
+ms.custom: bap-template
 ---
 # Analyze and Monitor Telemetry with KQL
 

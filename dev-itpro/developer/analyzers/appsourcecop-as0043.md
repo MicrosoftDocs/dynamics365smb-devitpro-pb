@@ -2,10 +2,7 @@
 title: "AppSourceCop Error AS0043"
 description: "The clustered key must not be deleted."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

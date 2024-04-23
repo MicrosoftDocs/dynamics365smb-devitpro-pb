@@ -4,9 +4,8 @@ description: This article explains how to run the Cloud Migration Setup assisted
 author: jswymer
 ms.author: jswymer #Required; your Microsoft alias; optional team alias.
 ms.reviewer: jswymer #Required; Microsoft alias of content publishing team member.
-ms.service: dynamics365-business-central
 ms.topic: how-to 
-ms.date: 07/05/2023
+ms.date: 03/14/2024
 ms.custom: bap-template
 ---
 # Run cloud migration setup
@@ -41,6 +40,8 @@ Once the setup guide is complete and data migration is activated, the initial da
 - Create table mappings if you need to rename a table during the cloud migration or to move a subset of fields to a different table or table extension. For more information, see [Define migration table mappings](migration-table-mapping.md).
 <!-- - Get the SQL connection string for the Business Central on-premises database. For more information, go to [SQL connection string](#define-your-sql-database-connection).-->
 
+- If have any users in already in your Business Central online environment and you want them to be able to work as usual during cloud migration, see [Retain permissions](migration-retain-permissions.md).
+
 > [!TIP]
 > We recommend that you start the migration by running the assisted setup from a company other than the company that you are migrating data to. For example, sign into the demonstration company, CRONUS, and start the process there. This way, you can make sure that all users are logged out of the original company and the target company. This is especially important when you migrate from [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises current version because you can run the migration tool multiple times.
 
@@ -64,26 +65,15 @@ Once the setup guide is complete and data migration is activated, the initial da
 
    Select **Next** when done. Once you choose **Next**, a new pipeline is created in the Azure service. When completed successfully, the **Select companies to migrate** page appears.
 
+    <!-- bc 1. On the **Select companies to migrate** page, select one or more companies from the list or switch on **All Companies**, then select **Next**.-->
 
- <!--For example, Server=jswymer-vm-2\bcdemo;Database="Demo Database BC (21-0)";User Id=bclogin2;Password=1234;-->
+1. On the **Select companies to migrate** page, select one or more companies to migrate or switch on **All Companies**, then select **Next**.
 
-   <!--1. Do one of the following tasks:
+   You can always return the page to add more companies.
 
-   - If you already have a Microsoft integration runtime service instance, you can use the instance by entering its name in the **Integration Runtime Name** box. Then select **Next** and go to step 9. 
-   - If you don't already have an integration runtime, leave **Integration Runtime Name** blank, select **Next**, then go to the next step.-->
-
-<!--
-8. Select **Download the Self-hosted Integration Runtime**, the do these steps to install the integration runtime:
-    1. On the Download Center page that opens, select **Download** > **IntegrationRuntime_<latestversion>.msi** > **Next**. The file is downloaded to your computer.
-    2. Select **Open** file to start the installation. When completed, the **Register Integration Runtime (Self-Hosted)** page opens.
-    3. Go back to the **Cloud Migration Setup** page copy the **Authentication key**.
-    4. Go back to the **Register Integration Runtime (Self-Hosted)** page and paste the key value in authentication key box, then select **Finish**. 
-    5. Go back to **Cloud Migration Setup** and select **Next**.-->
-
-1. On the **Select companies to migrate** page, select one or more companies from the list or switch on **All Companies**, then select **Next**.
 1. Select **Finish** to complete the cloud migration setup.
 
-  If you want to open **Cloud Migration Management**, where you can run the migration, select **Yes**.
+   If you want to open **Cloud Migration Management**, where you can run the migration, select **Yes**.
 
 <a name="sql"></a>
 
@@ -116,8 +106,11 @@ Complete the steps in the wizard to update the runtime service. If the change wa
 > [!CAUTION]
 > If you have mapped users in the first run of the cloud migration setup guide, then do not choose the **Define User Mappings** action again in subsequent runs.
 
+If you run into problems with the setup, go to [Cloud migration setup troubleshooting](migration-setup-troubleshooting.md).
+
 ## Next steps
 
-- If you run into problems with the setup, go to [Cloud migration setup troubleshooting](migration-setup-troubleshooting.md).
-- Once the setup guide is complete and data migration is activated, the initial data migration ready to be run from the **Cloud Migration Management** page whenever you want. Go to [Run Data Migration](migration-data-replication.md).
+Once the setup guide is complete and data migration is activated, the initial data migration ready to be run from the **Cloud Migration Management** page.
 
+- [Change how data is replicated to Business Central online](cloud-migration-change-replication.md) (advanced, optional)
+- [Run Data Migration](migration-data-replication.md).

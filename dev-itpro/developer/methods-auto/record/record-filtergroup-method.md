@@ -2,10 +2,7 @@
 title: "Record.FilterGroup([Integer]) Method"
 description: "Gets or sets the filter group that is applied to a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 04/20/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

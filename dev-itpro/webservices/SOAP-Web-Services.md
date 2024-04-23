@@ -1,21 +1,19 @@
 ---
 title: "SOAP Web Services"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 description: 'Learn how to use SOAP web services for operation-centric services in Business Central. Note: SOAP is being deprecated, consider OData or APIs.'
 ---
+
 # SOAP Web Services
+
 SOAP web services enable full flexibility for building operation-centric services. They provide industry-standard interoperability and channel and host pluggability.  
   
 You can use SOAP to interact with page or codeunit web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] .  
 
-> [!NOTE]  
-> Support for the SOAP protocol is being deprecated in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and will be removed in the future. Start planning to move your solutions to use either OData or APIs pages/queries.
+[!INCLUDE[soap_deprecation](../includes/soap_deprecation_note.md)]
 
+[!INCLUDE[avoid_ui_pages_as_ws](../includes/avoid_ui_pages_as_ws_note.md)]
 
 |To|See|  
 |--------|---------|  
@@ -25,4 +23,8 @@ You can use SOAP to interact with page or codeunit web services in [!INCLUDE[pro
 |Ensure that field values are updated from web services.|[Using Properties to Indicate Field Value Presence](use-properties-to-indicate-field-value.md)|
 
 ## See Also  
- [Basic Page Operations](Basic-Page-Operations.md)
+
+[Web service performance](web-service-performance.md)   
+[Troubleshoot web service errors](web-service-troubleshooting.md)   
+[Web service telemetry](web-service-telemetry.md)   
+[Basic Page Operations (for SOAP webservices)](Basic-Page-Operations.md)   

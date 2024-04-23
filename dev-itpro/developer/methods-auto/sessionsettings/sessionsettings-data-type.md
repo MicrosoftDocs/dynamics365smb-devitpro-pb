@@ -2,10 +2,7 @@
 title: "SessionSettings Data Type"
 description: "Is a complex data type for passing user personalization settings for a client session as an object."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -20,6 +17,7 @@ Is a complex data type for passing user personalization settings for a client se
 
 
 
+## Instance methods
 The following methods are available on instances of the SessionSettings data type.
 
 |Method name|Description|

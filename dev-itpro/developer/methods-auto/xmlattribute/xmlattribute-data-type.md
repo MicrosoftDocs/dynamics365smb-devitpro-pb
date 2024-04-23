@@ -2,10 +2,7 @@
 title: "XmlAttribute Data Type"
 description: "Represents an XML attribute."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -19,6 +16,7 @@ author: SusanneWindfeldPedersen
 Represents an XML attribute.
 
 
+## Static methods
 The following methods are available on the XmlAttribute data type.
 
 
@@ -28,6 +26,7 @@ The following methods are available on the XmlAttribute data type.
 |[Create(Text, Text, Text)](xmlattribute-create-string-string-string-method.md)|Creates an XmlAttribute node.|
 |[CreateNamespaceDeclaration(Text, Text)](xmlattribute-createnamespacedeclaration-method.md)|Creates an attribute that represents a namespace declaration.|
 
+## Instance methods
 The following methods are available on instances of the XmlAttribute data type.
 
 |Method name|Description|

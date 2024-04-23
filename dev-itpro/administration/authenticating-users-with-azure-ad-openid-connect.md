@@ -2,12 +2,12 @@
 title: Configure Microsoft Entra authentication with OpenID Connect
 description: Learn how to authentication Business Central users by using Microsoft Entra ID with OpenID Connect.
 ms.custom: bap-template
-ms.date: 09/18/2023
-ms.reviewer: na
+ms.date: 04/16/2024
+ms.reviewer: jswymer
 ms.author: jswymer
 ms.topic: how-to
 author: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ---
 # Configure Microsoft Entra authentication with OpenID Connect
 
@@ -72,7 +72,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
     |--|--|
     |Name|Specifies the name of your application as it will display to your users, such as **Business Central App by My Solutions**.|
     |Supported account types|Select Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)|
-    |Redirect URI|Specifies the type of application that you're registering and the redirect URI (or reply URL) for your application. Set the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC220/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/BC220/SignIn` or `https://MyBcWebServer/BC220/SignIn`. <br /> <br />**Important** The portion of the reply URL after the domain name (in this case `BC220/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
+    |Redirect URI|Specifies the type of application that you're registering and the redirect URI (or reply URL) for your application. Set the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/240/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/240/SignIn` or `https://MyBcWebServer/240/SignIn`. <br /> <br />**Important** The portion of the reply URL after the domain name (in this case `240/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
 
     # [Multitenant-tenant](#tab/multitenant)
     
@@ -80,7 +80,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
     |--|--|
     |Name|Specifies the name of your application as it will display to your users, such as **Business Central App by My Solutions**.|
     |Supported account types|Specifies the accounts that you would like your application to support. If you're going to use different Microsoft Entra tenants for different [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants, then select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)**. Otherwise, you can choose **Accounts in this organizational directory only (Single tenant)**.|
-    |Redirect URI|Specifies the type of application that you're registering and the redirect URI (or reply URL) for your application. Set the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC220/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/BC220/SignIn` or `https://MyBcWebServer/BC220/SignIn`.<br /> <br />**Important** The portion of the reply URL after the domain name (in this case `BC220/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
+    |Redirect URI|Specifies the type of application that you're registering and the redirect URI (or reply URL) for your application. Set the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/240/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/240/SignIn` or `https://MyBcWebServer/240/SignIn`.<br /> <br />**Important** The portion of the reply URL after the domain name (in this case `240/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
 
     ---
 
@@ -162,7 +162,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC230 -KeyName ValidAudiences -KeyValue "44444444-cccc-5555-dddd-666666666666;https://api.businesscentral.dynamics.com"
+        Set-NAVServerConfiguration -ServerInstance 240 -KeyName ValidAudiences -KeyValue "44444444-cccc-5555-dddd-666666666666;https://api.businesscentral.dynamics.com"
         ```
 
     2. Set the `ADOpenIdMetadataLocation` parameter for version 22 and later or `ClientServicesFederationMetadataLocation` parameter for version 21 and earlier.
@@ -186,7 +186,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         For example:
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC230 -KeyName ADOpenIdMetadataLocation -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/.well-known/openid-configuration"
+        Set-NAVServerConfiguration -ServerInstance 240 -KeyName ADOpenIdMetadataLocation -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/.well-known/openid-configuration"
         ```  
 
         or
@@ -209,7 +209,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         For example:
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC230 -KeyName ADOpenIdMetadataLocation -KeyValue "https://login.microsoftonline.com/common/.well-known/openid-configuration"
+        Set-NAVServerConfiguration -ServerInstance 240 -KeyName ADOpenIdMetadataLocation -KeyValue "https://login.microsoftonline.com/common/.well-known/openid-configuration"
         ```
 
         or
@@ -243,7 +243,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC210 -KeyName WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC210/SignIn"
+        Set-NAVServerConfiguration -ServerInstance BC240 -KeyName WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC210/SignIn"
         ```
 
 4. To configure SOAP and OData web services for Microsoft Entra authentication, specify the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Microsoft Entra ID.
@@ -257,13 +257,13 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
     **Example**
 
     ```powershell
-    Set-NAVServerConfiguration -ServerInstance BC210  -KeyName AppIdUri -KeyValue "https://cronusinternationltd.onmicrosoft.com"
+    Set-NAVServerConfiguration -ServerInstance BC240  -KeyName AppIdUri -KeyValue "https://cronusinternationltd.onmicrosoft.com"
     ```
 
 5. Restart the server instance. For example:
 
     ```powershell
-    Restart-NAVServerInstance -ServerInstance BC210
+    Restart-NAVServerInstance -ServerInstance BC240
     ```
 <!--
 ---
@@ -273,8 +273,15 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
 
 1. Set the `ClientServicesCredentialType` key to `AccessControlService`.
 
+
     ```powershell
-    Set-NAVWebServerInstanceConfiguration -WebServerInstance BC210 -KeyName ClientServicesCredentialType -KeyValue "AccessControlService"
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance $BCServerInstanceName -KeyName ClientServicesCredentialType -KeyValue AccessControlService
+    ```
+
+    For example:
+
+    ```powershell
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance BC240 -KeyName ClientServicesCredentialType -KeyValue "AccessControlService"
     ```
 
 2. Set the `AadApplicationId` key to the application (client) ID of the registered application for Business Central in Microsoft Entra ID.
@@ -324,10 +331,9 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
     Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/{AADTENANTID}"
     ```
     -->
-    or
 
     ```powershell
-    Set-NAVServerConfiguration -ServerInstance BC210 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/common"
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance $BCServerInstanceName -KeyName AadAuthorityUri-KeyValue "https://login.microsoftonline.com/common"
     ```
 
     ---
@@ -403,12 +409,12 @@ Set-NAVServerConfiguration -ServerInstance BC210  -KeyName ExtendedSecurityToken
 
 ### Using host names for tenants
 
-You can configure host name tenant resolution, where each tenant is assigned a unique domain, like customer1.cronusinternational.com. Customers would then access their tenant by using `https://customer1.cronusinternational.com/BC230`.
+You can configure host name tenant resolution, where each tenant is assigned a unique domain, like customer1.cronusinternational.com. Customers would then access their tenant by using `https://customer1.cronusinternational.com/240`.
 
 This setup implies that the public URL is different for each tenant. To support this scenario, you set [!INCLUDE[server](../developer/includes/server.md)] to calculate the host dynamically. In the `WSFederationLoginEndpoint` parameter, use the `{HOSTNAME}` placeholder in the `wreply`, for example:
 
 ```http
-https://login.microsoftonline.com/<AAD TENANT ID>/wsfed?wa=wsignin1.0%26wtrealm=<APP ID URI>%26wreply=https://{HOSTNAME}/BC230/SignIn
+https://login.microsoftonline.com/<AAD TENANT ID>/wsfed?wa=wsignin1.0%26wtrealm=<APP ID URI>%26wreply=https://{HOSTNAME}/240/SignIn
 
 ```
 

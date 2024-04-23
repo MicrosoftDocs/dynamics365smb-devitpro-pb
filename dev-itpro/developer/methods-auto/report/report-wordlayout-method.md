@@ -2,10 +2,7 @@
 title: "Report.WordLayout(Integer, InStream) Method"
 description: "Gets the Word report layout that is used on a report and returns it as a data stream."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/11/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -55,14 +52,32 @@ var
     result: Boolean;
 begin
     result := Report.WordLayout(ObjectId, layoutAsStream);
-    if result then begin
+    if result then
         // use the layout that now is available in the stream
-    end
     else
         // handle that no object exists with that id or that no Excel layout exists for that report
     ;
 end;
 ```
+
+If the report is known when you write the code, the safest way to avoid runtime errors is to use the scope (::) operator to reference the report object. This way you'll get a compile time error if the report doesn't exist. The example illustrates how to call WordLayout on the report MyReport using this technique:
+
+```AL
+var
+    layoutAsStream: InStream;
+    result: Boolean;
+begin
+    // if MyReport does not exist, then Report::MyReport will fail at compile time
+    result := Report.WordLayout(Report::MyReport, layoutAsStream);
+
+    if result then
+        // use the layout that now is available in the stream
+    else
+        // handle that no Excel layout exists for that report
+    ;
+end;
+```
+
 
 ## See Also
 [Report Data Type](report-data-type.md)  

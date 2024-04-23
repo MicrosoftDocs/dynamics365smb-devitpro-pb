@@ -1,11 +1,8 @@
 ---
 title: "Compiler Error AL0575"
-description: "You cannot modify the {0} '{1}' because it is defined in the page customization '{2}'."
+description: "You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -17,11 +14,11 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-You cannot modify the {0} '{1}' because it is defined in the page customization '{2}'.
+You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'.
 
 
 ## Description
-You cannot modify an element defined in a page customization.  
+You cannot reference an element defined in a page customization outside the page customization declaring it.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

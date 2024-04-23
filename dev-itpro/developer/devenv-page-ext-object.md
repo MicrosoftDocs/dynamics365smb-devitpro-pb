@@ -2,11 +2,7 @@
 title: "Page Extension Object"
 description: "Description of the page extension object in AL for Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 01/08/2024
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -26,10 +22,10 @@ For more information about the Page and Page Extension objects, see [Pages Overv
 > Extension objects can have a name with a maximum length of 30 characters.
 
 > [!IMPORTANT]  
-> The API page type should not be extended by creating a page extension object. Instead, create a new API by adding a [page object](devenv-page-object.md).
+> A page of type *API page* can't be extended by creating a page extension object. Instead, create a new API page by adding a new [page object](devenv-page-object.md).
 
 > [!NOTE]  
-> Modifying actions in Cue groups on page extensions is not supported.
+> Modifying actions in Cue groups on page extensions isn't supported.
 
 ## Snippet support
 Typing the shortcut `tpageext` will create the basic layout for a page extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
@@ -39,6 +35,12 @@ Typing the shortcut `tpageext` will create the basic layout for a page extension
 ## Views
 
 Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customization](devenv-page-customization-object.md). For more information, see [Views](devenv-views.md).
+
+## Add tooltips on page fields
+
+Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that uses the field automatically inherits the tooltip. 
+
+For more information, see [Add tooltips to table and page fields](devenv-adding-tooltips.md).
 
 ## Using keywords to place actions and controls
 

@@ -3,10 +3,8 @@ title: inventoryPostingGroup resource type
 description: An inventory posting group object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/24/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -36,6 +34,7 @@ Represents an inventory posting group in [!INCLUDE[prod_short](../../../includes
 |id|GUID|The unique ID of the inventory posting group. Non-editable.|
 |code|string|The code of the inventory posting group.|
 |description|string|Specifies the description of the inventory posting group.|
+|lastModifiedDateTime|datetime|The last datetime the inventory posting group was modified. Read-Only.|
 
 ## JSON representation
 
@@ -46,7 +45,8 @@ Here is a JSON representation of the inventoryPostingGroup resource.
 {
     "id": "GUID",
     "code": "string",
-    "description": "string"
+    "description": "string",
+    "lastModifiedDateTime": "datetime"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->

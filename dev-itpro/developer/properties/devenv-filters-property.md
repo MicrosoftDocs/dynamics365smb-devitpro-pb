@@ -2,10 +2,7 @@
 title: "Filters Property"
 description: "Sets a set of filters for the page that will be applied for this page view."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -48,7 +45,6 @@ pagecustomization MyCustomization customizes "Customer List"
         }
     }
 }
-
 ```
 
 For more information on how you can scan, find, and limit records in a list, see [Sorting, Searching, and Filtering Lists](/dynamics365/business-central/ui-enter-criteria-filters). 

@@ -1,17 +1,13 @@
 ---
-title: "Viewing Table Data"
-description: "View tables in browser for troubleshooting"
+title: Viewing table data
+description: View tables in browser for troubleshooting
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ---
 
-# Viewing Table Data
+# Viewing table data
 
 For developers, administrators, and support personnel, it can be useful to inspect table data in the tenant database, particularly when debugging or troubleshooting. To support this need, you can view table objects in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]. This lets you see the data in all rows and columns of a specific table, including any columns that are added by table extensions.
 
@@ -60,7 +56,7 @@ Note the use of `&` when `table=<TableID>` isn't located directly after the doma
 
 ## View a table object from an AL project in Visual Studio Code
 
-You can configure an AL project to view a table when you publish or debug the project (pressing **F5** or **Ctrl+F5**). 
+You can configure an AL project to view a table when you publish or debug the project (selecting <kbd>F5</kbd> or <kbd>Ctrl</kbd>+<kbd>F5</kbd> ). 
 
 In the `launch.json` file for the project, set the `"startupObjectType"` parameter to `"table"` and the `"startupObjectId"` parameter to the ID of the table. For example:
 
@@ -77,8 +73,7 @@ In the `launch.json` file for the project, set the `"startupObjectType"` paramet
             "startupObjectId": 18
         }
     ]
-} 
-
+}
 ```
 
 For more information about the `launch.json` file, see [Launch JSON file](devenv-json-launch-file.md).
@@ -89,7 +84,7 @@ Must have read access to the table
 Must have execute permission on the Run Table System object 
 Developers: 
 Can only run a table through the web client so they require the same permissions 
-Can set StartupObjectId to the ID of the table they want to inspect and StartupObjectType to "Table" and press Ctrl+F5 from VSCode to open the page. 
+Can set StartupObjectId to the ID of the table they want to inspect and StartupObjectType to "Table" and select <kbd>Ctrl</kbd>+<kbd>F5</kbd> from VSCode to open the page. 
  
 Append '?AID=FIN&table={YourTableId}'    
  

@@ -2,11 +2,8 @@
 title: Business Central Dataverse API
 description: Dataverse API for integration with Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 09/20/2022
 ms.author: solsen
 ---
@@ -47,4 +44,6 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 [company resource type](resources/dynamics_company.md)  
 [dataverseEntityChange resource type](resources/dynamics_dataverseentitychange.md)  
 [subscriptions resource type](resources/dynamics_subscriptions.md)  
-[Trigger flows when a row is added, modified, or deleted](/power-automate/dataverse/create-update-delete-trigger)
+[Trigger flows when a row is added, modified, or deleted](/power-automate/dataverse/create-update-delete-trigger)  
+[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
+

@@ -2,10 +2,7 @@
 title: "AppSourceCop Warning AS0086"
 description: "Increasing the length of a field is not allowed as it might break the runtime behavior of dependent extensions referencing it."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -24,13 +21,13 @@ Increasing the length of a field is not allowed as it might break the runtime be
 ## Remarks
 
 The validation of the length of table fields was previously done with [AS0004](appsourcecop-as0004.md) and has now been split into two different rules:
+
 - [AS0080](appsourcecop-as0080.md) - which validates against decreasing the length of fields
 - [AS0086](appsourcecop-as0086.md) - which validates against increasing the length of fields
 
 ## How to fix this diagnostic?
 
-Reverting the change will fix this diagnostic. If increasing the length of the field is required, the recommended approach is to mark the field as [Obsolete Pending](../properties/devenv-obsoletestate-property.md) and introduce a new field with the desired length.
-Once all dependent extensions have uptaken the new field, you can mark the the original one as [Obsolete Removed](../properties/devenv-obsoletestate-property.md).
+Reverting the change will fix this diagnostic. If increasing the length of the field is required, the recommended approach is to mark the field as [Obsolete Pending](../properties/devenv-obsoletestate-property.md), and in a later app version, remove that state again, and just increase the field length and remove the `Obsolete Pending` state.
 
 ## Code example triggering the rule
 

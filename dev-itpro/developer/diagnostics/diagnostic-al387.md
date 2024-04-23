@@ -2,10 +2,7 @@
 title: "Compiler Error AL0387"
 description: "Namespace '{0}' is already specified."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Namespace '{0}' is already specified.
+
 
 ## Description
 A namespace has been defined multiple times.  

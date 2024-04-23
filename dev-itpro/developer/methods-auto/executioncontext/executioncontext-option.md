@@ -2,10 +2,7 @@
 title: "ExecutionContext System Option"
 description: "Represents the context in which a session is running."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/23/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

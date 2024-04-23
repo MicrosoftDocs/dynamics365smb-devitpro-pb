@@ -4,7 +4,7 @@ description: Description of the AL query object.
 ms.custom: bap-template
 ms.date: 09/24/2023
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -66,7 +66,6 @@ query ID Name
         }
     }
 }
-
 ```
 <!-- 
 The `column` control specifies a field of the table to include in the resulting dataset of a query. You start by adding a `dataitem` control for a table, then within  `dataitem` control, add the `column` controls.
@@ -80,10 +79,22 @@ When you have specified the dataitem and column elements, you create links betwe
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
+> [!IMPORTANT]  
+>  You cannot run a query that gets data from both the application database and the business data database. This also applies to single-tenant deployments so that you do not have to rewrite queries if you decide to export the application. For a description of which tables are considered part of the application database, see [Separating Application Data from Business Data](../deployment/Separating-Application-Data-from-Business-Data.md).
+
+
 ## Snippet support
 Typing the shortcut `tquery` will create the basic layout for a Query object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
+
+## Query discoverability
+
+Available from version 23, by setting the [UsageCategory property](properties/devenv-usagecategory-property.md), you can can make queries discoverable for users in Tell Me search and in the role explorer under Report and Analysis. 
+
+You can also provide teaching tips by setting the properties [AboutTitle](properties/devenv-abouttitle-property.md) and [AboutText](properties/devenv-abouttext-property.md), and provide dedicated help links on the query object to help users understand how to use the query by setting the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md).
+
 
 ## Query example
 The following example shows a query that displays a list of customers with sales and profit figures. The query primarily retrieves fields from the **Customer** table, but also displays fields from the **Salesperson Purchaser** and **Country Region** tables.
@@ -159,14 +170,9 @@ query 50102 "Top Customer Overview"
 }
 ```
 
-By setting the [UsageCategory property](properties/devenv-usagecategory-property.md), you can can make queries discoverable for users in Tell Me search and in the role explorer under Report and Analysis. You can provide teaching tips by setting the properties [AboutTitle](properties/devenv-abouttitle-property.md) and [AboutText](properties/devenv-abouttext-property.md), and provide dedicated help links on the query object to help users understand how to use the query by setting the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md).
-
-
-> [!IMPORTANT]  
->  You cannot run a query that gets data from both the application database and the business data database. This also applies to single-tenant deployments so that you do not have to rewrite queries if you decide to export the application. For a description of which tables are considered part of the application database, see [Separating Application Data from Business Data](../deployment/Separating-Application-Data-from-Business-Data.md).
-
 
 ## View and analyze query data
+
 Available from version 23, you can view and analyze query data directly from the [!INCLUDE[prod_short](includes/prod_short.md)] client by running the query, and then switching to in the analysis mode. The data is analyzed in real time and respects the data security that has been set up for the users.
 
 There are a couple ways to run a query. One way to run a query is to use the `query=<id>` in the web client URL. For example, this URL opens the query that has the the ID 102:

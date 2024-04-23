@@ -2,7 +2,6 @@
 title: Customizing an Integration with Microsoft Dataverse
 description: Learn how to integrate your extension with Microsoft Dataverse. This walkthrough takes you through each step.
 author: bholtorf
-ms.custom: na
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: bholtorf
@@ -71,6 +70,8 @@ In this walkthrough we'll create a table object in the [!INCLUDE[prod_short](../
     -project:<Your AL project folder>
     -packagecachepath:<Your AL project cache folder>
     -serviceuri:<Microsoft Dataverse server URL>
+    -clientid:<Microsoft Entra application client ID>
+    -redirecturi:<Microsoft Entra application redirect URI>
     -entities:cdm_worker
     -baseid:50000
     ```
@@ -627,7 +628,8 @@ After we publish the extension, we can update the mappings by running the **CDS 
 
 ## See Also
 
-[Overview](/dynamics365/business-central/admin-common-data-service)  
+[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
+[Overview - Integrate with Microsoft Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)  
 [Setting Up User Accounts for Integrating with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-setting-up-integration-with-dynamics-sales)  
 [Set Up a Connection to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection)  
 [Synchronizing Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-synchronizing-business-central-and-sales)  

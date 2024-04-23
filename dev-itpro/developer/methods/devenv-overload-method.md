@@ -2,11 +2,7 @@
 title: "Procedure overload"
 description: "Using the procedure overload to create multiple procedures with the same name, but with different signatures, on the same application object."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ms.author: solsen
 ---
@@ -57,8 +53,7 @@ codeunit 10 Stringifier
         else 
             Exit(''); 
     end; 
-} 
-
+}
 ```
 
 In the second code snippet, we overload the ToString procedure for Text, Date and Integer. At this point, it is not possible for a caller to call a ToString method with a different type other than Integer, Date, or Text. This will catch the bug above at compile time. 

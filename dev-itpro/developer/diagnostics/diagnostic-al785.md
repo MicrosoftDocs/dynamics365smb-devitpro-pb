@@ -2,10 +2,7 @@
 title: "Compiler Error AL0785"
 description: "The control with name '{0}' cannot be declared in the page customization '{1}' targeting page '{2}' because controls of type '{3}' are not supported in page customizations."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/02/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

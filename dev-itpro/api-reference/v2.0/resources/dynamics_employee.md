@@ -3,10 +3,8 @@ title: employee resource type
 description: An employee object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -35,10 +33,10 @@ Represents an employee in [!INCLUDE[prod_short](../../../includes/prod_short.md)
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the employee.|
 |[picture](dynamics_picture.md)|picture |Gets the picture of the employee.|
 |[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the employee.|
 |[timeRegistrationEntries](dynamics_timeregistrationentry.md)|timeRegistrationEntries |Gets the timeregistrationentries of the employee.|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the employee.|
 
 ## Properties
 

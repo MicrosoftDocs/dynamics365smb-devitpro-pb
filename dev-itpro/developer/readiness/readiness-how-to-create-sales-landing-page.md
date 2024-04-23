@@ -2,7 +2,6 @@
 title: "How to create an effective sales landing page"
 description: "Guideline on creating an effective Sales Landing page for your app"
 author: a-emniel
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
@@ -102,7 +101,7 @@ If you need help with formulating a positioning statement, try the value proposi
 |-| The more specific and concrete your promise of value is, the better.|
 |-| Abstract concepts such as “more efficiency, more productivity, transform your business” aren't emotionally impactful or convincing and don't compel a prospect to act.
 
-Target market - If you support multiple countries or languages, this is a key selling feature. • Find a way to show this visually. <!--	./media/image49.jpg -->
+Target market - If you support multiple countries/regions or languages, this is a key selling feature. • Find a way to show this visually. <!--	./media/image49.jpg -->
 
 | Element                                | Description                             | Example |
 |--------------------------------------|------------------|-----------------------------------|

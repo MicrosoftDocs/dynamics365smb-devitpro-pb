@@ -3,8 +3,7 @@ title: Frequently asked questions about Microsoft Teams integration with Busines
 description: Answers to typical questions about Teams and Business Central
 ms.custom: bap-template
 ms.date: 11/23/2022
-ms.reviewer: na
-ms.service: dynamics365-business-central
+
 ms.topic: faq
 ms.author: jswymer
 author: jswymer

@@ -2,10 +2,7 @@
 title: "RecordRef.LockTable([Boolean] [, Boolean]) Method"
 description: "Starts locking on a table to protect it from write transactions that conflict with each other."
 ms.author: solsen
-ms.custom: na
-ms.date: 11/03/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -31,6 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 *[Optional] Wait*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies what to do if the table is already locked. If this parameter is true and if another application has already locked the table, the system will wait until the table is unlocked. If this parameter is false and if another application has already locked the table, a run-time error occurs.  
+
 *[Optional] VersionCheck*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If this parameter is true, the version of the RecordRef will be checked. If this parameter is false, blank, or not used, the version will not be checked.  

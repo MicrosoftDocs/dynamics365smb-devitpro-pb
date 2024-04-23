@@ -3,10 +3,8 @@ title: project resource type
 description: A project object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -31,6 +29,11 @@ Represents a project in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[PATCH project](../api/dynamics_project_update.md)|project|Updates a project object.|
 
 
+## Navigation
+
+| Navigation |Return Type| Description |
+|:----------|:----------|:-----------------|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the project.|
 
 ## Properties
 
@@ -39,6 +42,7 @@ Represents a project in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |id|GUID|The unique ID of the project. Non-editable.|
 |number|string|Specifies the number of the project.|
 |displayName|string|Specifies the project's name. This name will appear on all sales documents for the project.|
+|lastModifiedDateTime|datetime|The last datetime the project was modified. Read-Only.|
 
 ## JSON representation
 
@@ -49,7 +53,8 @@ Here is a JSON representation of the project resource.
 {
     "id": "GUID",
     "number": "string",
-    "displayName": "string"
+    "displayName": "string",
+    "lastModifiedDateTime": "datetime"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->

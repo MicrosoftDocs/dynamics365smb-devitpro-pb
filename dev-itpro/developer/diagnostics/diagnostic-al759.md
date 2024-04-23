@@ -2,10 +2,7 @@
 title: "Compiler Error AL0759"
 description: "The value '{0}' specified for FormatRegion cannot be parsed as a valid format culture name."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/23/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

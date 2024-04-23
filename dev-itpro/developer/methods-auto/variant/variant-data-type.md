@@ -2,10 +2,7 @@
 title: "Variant Data Type"
 description: "Represents an AL variable object."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -20,6 +17,7 @@ Represents an AL variable object. The AL variant data type can contain many AL d
 
 
 
+## Instance methods
 The following methods are available on instances of the Variant data type.
 
 |Method name|Description|

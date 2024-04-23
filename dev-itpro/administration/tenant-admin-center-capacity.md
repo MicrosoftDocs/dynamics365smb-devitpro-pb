@@ -3,9 +3,7 @@ title: Managing Capacity
 description: Use the Business Central administration center to manage the storage capacity for a tenant. 
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, storage, capacity, quota, limit, database size
 ms.date: 03/08/2022
 ms.author: jswymer
@@ -24,7 +22,7 @@ To help our customers manage and plan their storage costs on an ongoing basis, t
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administrators can create multiple sandbox and production type environments for various purposes, like:
 
 - Creating more business branches
-- Moving into more countries
+- Moving into more countries/regions
 - Expanding within their current country/region
 - Development
 - Testing changes

@@ -2,10 +2,7 @@
 title: "TextBuilder Data Type"
 description: "Represents a lighweight wrapper for the .Net implementation of StringBuilder."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/13/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -20,6 +17,7 @@ Represents a lighweight wrapper for the .Net implementation of StringBuilder.
 
 
 
+## Instance methods
 The following methods are available on instances of the TextBuilder data type.
 
 |Method name|Description|

@@ -1,17 +1,14 @@
 ---
-title: "Enabling APIs for Microsoft Dynamics NAV"
-description: "Describing the steps you must go through to enable access to the APIs."
+title: Enabling APIs for Microsoft Dynamics 365 Business Central
+description: Describing the steps you must go through to enable access to the APIs.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 02/07/2024
 ms.topic: article
 ms.author: solsen
 ---
 
-# Enabling the APIs for Dynamics 365 Business Central
+# Enabling the APIs for Business Central
 
 [!INCLUDE[on_prem_only_v2](../../developer/includes/on_prem_only_v2.md)]
 
@@ -46,8 +43,10 @@ ms.author: solsen
 
 Depending on where you want to access the APIs from, you must specify the correct endpoint. For more information, see [Endpoints for APIs](endpoints-apis-for-dynamics.md).
 
-## See Also
+[!INCLUDE[on-prem-ws-off-405-note](../../includes/include-on-prem-ws-off-405-note.md)]
 
-[Developing Connect Apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
-[Microsoft Web Services Overview](../../webservices/web-services.md)  
-[OpenAPI Specification](dynamics-open-api.md)  
+## See also
+
+[Developing connect apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
+[Microsoft web services overview](../../webservices/web-services.md)  
+[OpenAPI specification](dynamics-open-api.md)  

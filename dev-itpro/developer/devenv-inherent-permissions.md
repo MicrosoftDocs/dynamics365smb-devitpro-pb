@@ -2,11 +2,7 @@
 title: "Inherent Permissions"
 description: "Description of how inherent permissions work and the InherentPermissions attribute in AL for Business Central."
 author: jswymer
-ms.custom: na
 ms.date: 02/27/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ---
@@ -65,7 +61,7 @@ Does the object run on or contain customer or business data? For example:
 
 Is the object only run through another object that you can control permissions for? The following are some examples of when you can grant inherent permissions.
 
-* We grand indirect Read on the method scope for the General Ledger table when people sign in, because it's only used to get the work date.
+* We grant indirect Read on the method scope for the General Ledger table when people sign in, because it's only used to get the work date.
 * Install and Upgrade codeunits where you can grant inherent Execute permissions.
 * Buffer tables where you can typically grant indirect Read, Insert, Modify, Delete, and Execute permissions and entitlements because they're only use to hold data in memory.
 

@@ -2,10 +2,7 @@
 title: "Compiler Error AL0795"
 description: "The parameter '{0}' cannot be of type 'SecretText'."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/06/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

@@ -1,17 +1,17 @@
 ---
-title: Analyze and Monitor Telemetry with Power BI
+title: Analyze and monitor telemetry with Power BI
 description: Learn how to install, configure, and use the Power BI app on Business Central telemetry data.
 author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/24/2023
+ms.date: 03/21/2024
 ms.author: jswymer
-ms.custom: bac-template
-ms.service: dynamics365-business-central
+ms.custom: bap-template
+
 ---
 
-# Analyze and Monitor Telemetry with Power BI
+# Analyze and monitor telemetry with Power BI
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -103,6 +103,7 @@ To open the app, from the navigation pane, select **Apps** > **Dynamics 365 Busi
 By default, the app shows sample data in the reports. This sample data enables you to demo the app to prospective customers without having to show data from existing customers.
 
 ### App on App Telemetry
+
 To install or update the app for _app telemetry_, go to [https://aka.ms/bctelemetry-isv-app](https://aka.ms/bctelemetry-isv-app) and select **Get it now**.
 
 You'll first have to sign in to Microsoft AppSource using your Power BI account name and password, if you aren't already signed in. Follow the online instructions to get the app installed in Power BI.
@@ -165,9 +166,14 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
    - Timezone (the Business Central platform emits telemetry in the UTC time zone. By setting a Timezone, all visuals that show telemetry by hour of day will adjust to show data in the configured time zone).
    - Whether the app should refresh data (the default is every night around midnight); this option is hidden under **Advanced**.
 
-   For the environment app, you can also define:
+   For the **environment usage app**, you can also define:
 
    - an include list of environments so that only data for these environments is loaded. The format for this parameter is `{"include":[{"AAD tenant id":"<aad tenant id 1>","Name":"<environment name 1>"}, {"AAD tenant id":"<aad tenant id 2>","Name":"<environment name 2>"}]}`
+
+   For the **app usage app**, you can also define:
+
+   - an include list of apps so that only data for these apps is loaded. The format for this parameter is `{"include":[{"appId":"<app id 2>"},{"appId":"<app id 2>"}]}`
+
 
 4. When done making changes, you have to refresh the dataset to update the data shown in the app.
 
@@ -183,10 +189,22 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
 > [!NOTE]
 > If you turn off scheduled refresh and go back to the app, it will remove the Application ID and you have to enter it again.
 
+### Video guidance
+
+The following video shows how to connect Power BI telemetry apps to read your telemetry data.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fIjn]
+
 ## Install, share, and update apps
 
 From time to time, the app is released in a new improved version via AppSource. To learn how to deal with app updates, see 
 [Install, share, and update template apps in your organization](/power-bi/connect-data/service-template-apps-install-distribute)
+
+### Video example
+
+The following video shows how to change dataset properties for a Power BI telemetry app in Power BI.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fxZ6]
 
 
 ## Share the app with coworkers and others
@@ -230,6 +248,25 @@ In the following table, you'll find examples of scenarios for each persona where
 
 ## No-code alerting with Power BI Metrics
 [!INCLUDE[pbimetrics](../includes/include-telemetry-alerting-powerbi-metrics.md)]
+
+
+## Troubleshoot the Power BI apps on telemetry data
+
+### I have no data in one page in the report (but I see data in other pages)
+
+If you don't see any data on a page in a report in one of the Power BI apps on telemetry data, but you do see data in other pages, you can get the KQL query that's used to load data for the page in the **Analyze further with KQL** visual on the bottom of the page. Then use any KQL client of your choice to run the KQL query. For more information, see [Analyze and Monitor Telemetry with KQL](./telemetry-analyze-with-kql.md). If the query returns an empty result, then you don't have such data in your [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource, which means there's nothing wrong with the report.
+
+### I have no data in any pages in the report (but the dataset refreshes without errors)
+
+If you don't see any data in any pages in the report (but the dataset refreshes without errors), consider checking these steps:
+
+1. Have you set global filters in the report? If so, try clearing them and see if you see data now.
+1. Have you set filters in the app definition? For more information, see [Configure an app after initial setup](#configure-an-app-after-initial-setup).
+1. Are you running [!INCLUDE[prod_short](../developer/includes/prod_short.md)]? The Power BI app only works on telemetry data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+
+### The OAuth authentication method isn't supported for this data source
+
+When configuring the app, please keep the **Authentication method** set to **OAuth2**. If you get the error *The OAuth authentication method isn't supported for this data source*, check if the application ID is correct; that's usually the root cause for that error.
 
 
 ## See also

@@ -2,10 +2,7 @@
 title: "ApplicationArea Property"
 description: "Sets the application areas that apply to the control."
 ms.author: solsen
-ms.custom: na
-ms.date: 02/24/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,6 +23,7 @@ Sets the application areas that apply to the control. Standard values are All, B
 -   Page Chart Part
 -   Page Action
 -   Page Custom Action
+-   Page File Upload Action
 -   Page User Control
 -   Page
 -   Report

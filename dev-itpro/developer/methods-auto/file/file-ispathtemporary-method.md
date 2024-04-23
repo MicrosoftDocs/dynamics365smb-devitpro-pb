@@ -2,10 +2,7 @@
 title: "File.IsPathTemporary(Text) Method"
 description: "Validates whether the given path is located in the current users temporary folder within the current service."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

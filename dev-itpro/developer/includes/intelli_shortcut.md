@@ -1,2 +1,2 @@
 > [!TIP]  
-> Use **Ctrl+Space** to trigger IntelliSense and get assistance on code completion, parameter info, quick info, and member lists.
+> Use <kbd>Ctrl</kbd>+<kbd>Space</kbd> to trigger IntelliSense and get assistance on code completion, parameter info, quick info, and member lists. For more information about snippets, see [Syntax and snippets](../devenv-syntax.md).

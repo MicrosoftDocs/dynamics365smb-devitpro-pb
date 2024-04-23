@@ -2,7 +2,6 @@
 title: "Testing your extension"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/11/2023
 ms.topic: conceptual
 ms.author: freddyk

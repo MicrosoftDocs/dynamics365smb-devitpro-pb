@@ -2,10 +2,7 @@
 title: "JsonObject.SelectToken(Text, var JsonToken) Method"
 description: "Selects a JsonToken using a JPath expression."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -70,7 +67,7 @@ We assume that the company token contains JSON data similar to the one below.
 }
 ```
 
-```
+```al
 local procedure SelectEmployeeSalary(companyData : JsonToken; employeeId : Text) salary : Decimal
 var
     query : Text;
@@ -82,6 +79,7 @@ begin
     salary := salaryToken.AsValue().AsDecimal();    
 end;
 ```
+
 > [!NOTE]
 > Ensure that the selected expression contains ' (single quotation mark) and not " (double quotation mark) to decorate the string value.
 

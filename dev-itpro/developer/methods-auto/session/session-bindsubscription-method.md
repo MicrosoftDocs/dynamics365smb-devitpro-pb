@@ -2,10 +2,7 @@
 title: "Session.BindSubscription(Codeunit) Method"
 description: "Binds the event subscriber methods in the codeunit to the current codeunit instance for handling the events that they subscribe to."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

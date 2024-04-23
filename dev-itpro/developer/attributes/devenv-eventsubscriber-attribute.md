@@ -2,11 +2,7 @@
 title: "EventSubscriber Attribute"
 description: "Specifies the event to which the method subscribes."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -63,7 +59,7 @@ Specifies what happens to the subscriber method call when the user account that 
 ## Remarks
 
 > [!TIP]
-> Use the **Shift+Alt+E** shortcut in the AL code editor to invoke the list of all events. Select the one you want to subscribe to and an event subscriber for the event will be inserted.
+> Use the <kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>E</kbd>** shortcut in the AL code editor to invoke the list of all [business](devenv-businessevent-attribute.md), [integration](devenv-integrationevent-attribute.md), and [internal](devenv-internalevent-attribute.md) events. Select the one you want to subscribe to and an event subscriber for the event will be inserted.
 
 The value of the *ObjectType* argument will depend on the type of event: business, integration, and trigger.
 
@@ -114,10 +110,10 @@ codeunit 50107 MyEventSubscriber
 }
 ```
 
-## See Also  
-[AL Method Reference](../methods-auto/library.md)  
+## See also  
+[AL method reference](../methods-auto/library.md)  
 [Events in AL](../devenv-events-in-al.md)  
-[Publishing Events](../devenv-publishing-events.md)   
-[Raising Events](../devenv-raising-events.md)   
-[Subscribing to Events](../devenv-subscribing-to-events.md)   
-[Method Attributes](devenv-method-attributes.md)
+[Publishing events](../devenv-publishing-events.md)   
+[Raising events](../devenv-raising-events.md)   
+[Subscribing to events](../devenv-subscribing-to-events.md)   
+[Method attributes](devenv-method-attributes.md)

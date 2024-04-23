@@ -1,11 +1,8 @@
 ---
 title: "Compiler Error AL0742"
-description: "The property '{0}' is not valid for the cue action '{1}'."
+description: "The property '{0}' is not valid for action '{1}' defined in control '{2}' of type '{3}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/04/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -17,7 +14,8 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The property '{0}' is not valid for the cue action '{1}'.
+The property '{0}' is not valid for action '{1}' defined in control '{2}' of type '{3}'.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

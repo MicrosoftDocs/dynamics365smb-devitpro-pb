@@ -2,10 +2,7 @@
 title: "CustomActionType Property"
 description: "Sets the type of the custom action."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/15/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -25,7 +22,7 @@ Sets the type of the custom action.
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Flow**|runtime version 1.0|An action that can trigger a Power Automate Flow.|
+|**Flow**|runtime version 10.0|An action that can trigger a Power Automate Flow.|
 |**FlowTemplate**|runtime version 11.0|An action that can trigger a Power Automate template editor to create a new Flow from a specific template.|
 |**FlowTemplateGallery**|runtime version 11.0|An action that can trigger a Power Automate template gallery to create a new Flow from a selection of templates.|
 
@@ -64,7 +61,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 
     }
 }
-
 ```
 
 This next code example extends the **Customer Card** page with a promoted action that triggers opening a specific Power Automate template wizard directly. The `FlowTemplateId` property specifies, which template wizard to open.
@@ -94,7 +90,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 
     }
 }
-
 ```
 
 This third code example likewise extends the **Customer Card** page with a promoted action, this time it triggers opening the Power Automate template gallery wizard for the user to create a new Flow from a selection of templates. The `FlowTemplateCategoryName` property sets the category used to filter the list of Power Automate templates shown in the template gallery.
@@ -124,7 +119,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 
     }
 }
-
 ```
 
 ## See Also  

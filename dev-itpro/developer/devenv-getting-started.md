@@ -1,10 +1,7 @@
 ---
-title: "Get started with modules"
-description: "Provides an overview of what you will need to work with modules in the System Application."
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Get started with modules
+description: Provides an overview of what you need to work with modules in the System Application.
+ms.date: 03/01/2024
 ms.topic: conceptual
 author: bholtorf
 ms.collection: get-started
@@ -12,7 +9,9 @@ ms.collection: get-started
 
 # Get started with modules in the System Application
 
-This topic provides information about requirements for working with modules in the System Application.
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
+
+This article provides information about requirements for working with modules in the System Application.
 
 ## AL
 Get familiar with development in AL. For more information, see [Get Started with AL](./devenv-get-started.md).
@@ -31,12 +30,12 @@ Want to improve an existing module? For more information, see [Change a module](
 
 ## System application reference documentation
 
-For an overview of the system application reference documentation, see [Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module).
+For an overview of the system application reference documentation, see [Module System Application](/dynamics365/business-central/application/system-application/module/system-application).
 
 ## Have an issue?
-Please open an [issue](https://github.com/microsoft/BCApps/issues/new).
+Open an [issue](https://github.com/microsoft/BCApps/issues/new).
 
-## See Also
+## See also
 
-[Module Architecture](devenv-blueprint.md)  
+[Module architecture](devenv-blueprint.md)  
 [Create a module](devenv-new-module.md)

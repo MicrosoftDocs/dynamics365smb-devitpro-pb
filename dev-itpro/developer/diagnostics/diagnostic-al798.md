@@ -2,10 +2,7 @@
 title: "Compiler Error AL0798"
 description: "Currently, the Moved(To/From) property is exclusively accessible to Microsoft."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/06/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -21,7 +18,7 @@ Currently, the Moved(To/From) property is exclusively accessible to Microsoft.
 
 
 ## Description
-Only First Party Apps can move application objects.  
+Only First Party Apps can move symbols.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

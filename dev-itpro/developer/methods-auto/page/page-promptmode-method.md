@@ -2,10 +2,7 @@
 title: "Page.PromptMode([PromptMode]) Method"
 description: "The mode of a PromptDialog page that prompts the user for input and shows the output of a copilot interaction."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -45,7 +42,7 @@ The prompt mode used for the page.
 
 ## Remarks
 
-This method is used when creating a generative AI dialog in [!INCLUDE [prod_short](../../includes/prod_short.md)]. For more information, see [The PromptDialog object](../devenv-page-type-promptdialog.md).
+This method is used when creating a generative AI dialog in [!INCLUDE [prod_short](../../includes/prod_short.md)]. For more information, see [PromptDialog page type](../../devenv-page-type-promptdialog.md).
 
 ## See Also
 

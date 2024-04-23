@@ -2,10 +2,7 @@
 title: "Text.PadStr(Text, Integer [, Text]) Method"
 description: "Changes the length of a string to a specified length."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

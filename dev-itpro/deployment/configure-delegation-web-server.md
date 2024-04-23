@@ -1,11 +1,7 @@
 ---
 title: Configure Web Client Delegation
 description: The client device, Web Client and Server are on separate computers. Web Client performs actions on behalf of client device called impersonation process.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -97,7 +93,7 @@ As a best practice, you should configure kernel mode authentication to use the a
   
     2. In the **Open** box, type **cmd**, and then choose the **OK** button.  
   
-    3. At the command prompt, type **iisreset**, and then press Enter.  
+    3. At the command prompt, type **iisreset**, and then select <kbd>Enter</kbd>.  
   
     > [!TIP]  
     >  You can also restart IIS using Internet Information Services Manager, if you have it installed.  
@@ -106,7 +102,7 @@ As a best practice, you should configure kernel mode authentication to use the a
   
 1. Open Internet Information Services Manager.  
   
-    On the **Start** menu, in the **Search Programs and Files** box, type **inetmgr**, and then press Enter.  
+    On the **Start** menu, in the **Search Programs and Files** box, type **inetmgr**, and then select <kbd>Enter</kbd>.  
   
 2. In the **Connections** pane, expand **Sites**, and then select **[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Web client**.  
   

@@ -4,15 +4,17 @@ description: The AL Explorer for Business Central lets you explore and navigate 
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
-ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 09/21/2023
+ms.date: 03/01/2024
 ms.custom: bap-template
+ms.collection: get-started
 ---
 
 # AL Explorer
 
 [!INCLUDE [2023_releasewave1](../includes/2023_releasewave1.md)]
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 The **AL Explorer** provides a tool that allows you to explore, navigate, and better understand objects in extensions. You can drill down into object details, dependencies, and extension points, without looking at the code. With the **AL Explorer**, you have an overview of high-level structures of extensions that can help you specify new features, or do light troubleshooting.
 
@@ -42,4 +44,4 @@ The **EVENTS**, **APIS**, and **EXTENSIBLE ENUMS** tabs provide an overview of a
 ## See also
 
 [AL Home](devenv-al-home.md)  
-[Developing Extensions in AL](devenv-dev-overview.md)
+[Developing extensions in AL](devenv-dev-overview.md)

@@ -2,8 +2,6 @@
 title: Manage Power Automate Flows
 description: Learn to manage Power Automate flows for Business Central online.
 author: jswymer
-ms.custom: na
-ms.reviewer: na
 ms.topic: 
 ms.date: 05/23/2023
 ms.author: jswymer

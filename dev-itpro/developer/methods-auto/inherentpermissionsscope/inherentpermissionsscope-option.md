@@ -2,10 +2,7 @@
 title: "InherentPermissionsScope System Option"
 description: "The different types of scope that the InherentPermissions attribute can apply to."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/06/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -29,7 +26,10 @@ The different types of scope that the InherentPermissions attribute can apply to
 
 ## Remarks
 
-*InherentPermissionScope* is used as a parameter with InherentPermissions attribute, which can override the entitlements. It's an optional method and the default value for InherentPermissionScope is *Both* that includes permissions and entitlements. To learn more about syntax and usage of InherentPermissions attribute, see [InherentPermissions Attribute](../../attributes/devenv-inherentpermissions-attribute.md). 
+*InherentPermissionScope* is used as a parameter with InherentPermissions attribute, which can override the entitlements. It's an optional method and the default value for InherentPermissionScope is *Both* that includes permissions and entitlements. To learn more about syntax and usage of InherentPermissions attribute, see [InherentPermissions Attribute](../../attributes/devenv-inherentpermissions-attribute.md).
+
+> [!NOTE]
+> You can use inherent permissions only for objects within the same extension.
 
 ## Example
 

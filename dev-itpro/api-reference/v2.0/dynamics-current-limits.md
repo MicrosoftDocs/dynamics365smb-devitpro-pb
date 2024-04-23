@@ -1,12 +1,9 @@
 ---
 title: "Current API Limits in Dynamics 365 Business Central"
-description: ""
+description: "Learn about constraints on API calls made via OData or SOAP requests."
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 01/22/2024
 ms.topic: article
 ms.author: jswymer
 ---
@@ -15,43 +12,25 @@ ms.author: jswymer
 
 This article lists the different limits that are set on OData and SOAP requests. The limits are subject to change, following the [Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use).
 
-## API Rate limits
-
-HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.
-
-|              |OData|SOAP|
-|--------------|-----|----| 
-|**Sandbox**   |300 req/min|300 req/min|
-|**Production**|600 req/min|600 req/min|
-
 ## Request time out
 
 HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.
 
-## Maximum Connections
+## API rate limits
 
-The maximum number of simultaneous OData or SOAP requests. HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.
+See operational limits for [OData](../../administration/operational-limits-online.md#ODataServices) and [SOAP](../../administration/operational-limits-online.md#SOAPServices) requests.
 
-|OData|SOAP|
-|-----|----| 
-|100|100|
+## Maximum connections
 
-## Operation Timeout
+See operational limits for [OData](../../administration/operational-limits-online.md#ODataServices) and [SOAP](../../administration/operational-limits-online.md#SOAPServices) requests.
 
-The maximum amount of time that allocated to a single OData or SOAP request. HTTP response code `408 - Request Timeout` is returned if limits are exceeded.
+## Operation timeout
 
-|OData|SOAP|
-|-----|----| 
-|00:08:00|00:10:00|
+See operational limits for [OData](../../administration/operational-limits-online.md#ODataServices) and [SOAP](../../administration/operational-limits-online.md#SOAPServices) requests.
 
-## Request Size
+## Request size
 
-The maximum size of the OData or SOAP request. HTTP response code `413: Request Entity Too Large` is returned if limits are exceeded.
-
-|OData|SOAP|
-|-----|----| 
-|20,000 entities per page|65,536 kilobytes|
-
+See operational limits for [OData](../../administration/operational-limits-online.md#ODataServices) and [SOAP](../../administration/operational-limits-online.md#SOAPServices) requests.
 
 ## See Also
 

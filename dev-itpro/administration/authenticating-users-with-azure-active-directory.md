@@ -1,10 +1,12 @@
 ---
 title: User Authentication with Microsoft Entra ID for Single Sign-on
 description: Associate an existing Microsoft account with user account to achieve single sign-on between the Web client and Microsoft 365.
-ms.custom: bap-template
-ms.date: 02/09/2023
-ms.reviewer: na
-ms.service: dynamics365-business-central
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: how-to
 author: jswymer
 ms.author: jswymer

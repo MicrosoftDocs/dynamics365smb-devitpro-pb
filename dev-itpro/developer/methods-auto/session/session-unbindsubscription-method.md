@@ -2,10 +2,7 @@
 title: "Session.UnbindSubscription(Codeunit) Method"
 description: "Unbinds the event subscriber methods from in the codeunit instance."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -49,7 +46,7 @@ The codeunit that contains the event subscribers.
 ## Example  
  The following sample code illustrates a typical use of the BindSubscription method.  
   
-```  
+```al
 Method MyFunction(….)  
 LocalVar  
   SubScriberCodeunit5000;  

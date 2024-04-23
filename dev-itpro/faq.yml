@@ -37,7 +37,7 @@ sections:
     questions:
       - question: Is Business Central available in my country/region?
         answer: |
-          [!INCLUDE[prod_short](includes/prod_short.md)] is available in a limited number of markets, but new countries are added through Microsoft-led localization or through partner-led localization on a quarterly basis. For more information, see [Countries and Translations Supported](compliance/apptest-countries-and-translations.md).
+          [!INCLUDE[prod_short](includes/prod_short.md)] is available in a limited number of markets, but new countries/regions are added through Microsoft-led localization or through partner-led localization on a quarterly basis. For more information, see [Countries and Translations Supported](compliance/apptest-countries-and-translations.md).
 
       - question: How often is Business Central updated?
         answer: |

@@ -2,11 +2,7 @@
 title: "Report Triggers and Runtime Operations"
 description: "Report triggers in AL for Business Central."
 ms.author: jswymer
-ms.custom: na
 ms.date: 05/17/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ms.search.keywords: reports, triggers, trigger flow, sequence
 ---
@@ -212,7 +208,7 @@ The following figure illustrates the flow associated with a Word report layout t
 
 ## See Also
 
-[Report Triggers](triggers-auto/report/devenv-oninitreport-report-trigger.md) 
-[Report Data Item Triggers](triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)  
+[Report Triggers](triggers-auto/report/devenv-oninitreport-report-trigger.md)   
+[Report Data Item Triggers](triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)   
 [Report Object](devenv-report-object.md)  
-[Triggers](/dynamics365/business-central/dev-itpro/developer/triggers-auto/devenv-triggers)
+[Triggers](/dynamics365/business-central/dev-itpro/developer/triggers-auto/devenv-triggers)  

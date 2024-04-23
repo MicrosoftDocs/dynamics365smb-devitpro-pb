@@ -2,10 +2,7 @@
 title: "HttpContent Data Type"
 description: "Represents an HTTP entity body and content headers."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/06/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -20,6 +17,7 @@ Represents an HTTP entity body and content headers.
 
 
 
+## Instance methods
 The following methods are available on instances of the HttpContent data type.
 
 |Method name|Description|
@@ -89,7 +87,6 @@ codeunit 50110 MyCodeunit
         response.Content().ReadAs(responseText);
     end;
 }
-
 ```
 
 ## See Also

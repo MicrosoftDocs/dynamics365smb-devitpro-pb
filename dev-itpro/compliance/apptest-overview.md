@@ -2,11 +2,8 @@
 title: "Rules and guidelines for AL code"
 description: "Describing the steps you must go through to successfully submit your Dynamics 365 Business Central app to AppSource."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/11/2023
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: freddyk
 ---

@@ -2,7 +2,6 @@
 title: "Marketing validation FAQ"
 description: "The marketing validation FAQ for Business Central apps"
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 09/26/2023
 ms.reviewer: solsen
 ms.topic: conceptual
@@ -11,12 +10,12 @@ ms.author: solsen
 
 # Marketing validation FAQ
  
-## Where do I state the countries, editions and languages that my offer supports?  
+## Where do I state the countries/regions, editions and languages that my offer supports?  
 
-You're required to state the countries, editions and languages that your offer supports in the bottom of your offer’s description text. You can use the following format:  
+You're required to state the countries/regions, editions and languages that your offer supports in the bottom of your offer’s description text. You can use the following format:  
 **Supported Editions:**  
     The app supports the Essentials and Premium Editions of Microsoft Dynamics 365 Business Central.  
-**Supported Countries:**  
+**Supported Countries/regions:**  
     Canada, Mexico and United States  
 **Supported Languages:**
     This app is available in English (United States) and Spanish (Mexico). 

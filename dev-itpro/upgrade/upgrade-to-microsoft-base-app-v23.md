@@ -2,7 +2,6 @@
 title: Upgrading Customized C/AL Application to Microsoft Base Application for version 23
 description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 23.
 ms.topic: article
-ms.service: dynamics365-business-central
 author: jswymer
 ms.author: jswymer
 ms.date: 08/14/2023
@@ -19,7 +18,7 @@ This article describes how to upgrade a customized version 14 application to a v
 
 The upgrade is divided into two sections: Application Upgrade and Data Upgrade. The Application Upgrade section deals with upgrading the application code. For the application upgrade, you'll have to create several extensions. Some of these extensions are only used for upgrade purposes. The Data Upgrade section deals with upgrading the data on tenants - publishing, syncing, and installing extensions. For this scenario, the data upgrade consists of two phases for migrating data from the current tables to extension-based tables. The following figure illustrates the upgrade process.  
 
-[![Shows the upgrade on unmodified Business Central application.](../developer/media/Upgrade-BC14-custom-BC23.png)](../developer/media/Upgrade-BC14-custom-BC23.png#lightbox) "C:\GitHub\dynamics365smb-devitpro\dev-itpro\developer\media\Upgrade-BC14-custom-BC23.png"
+[![Shows the upgrade on unmodified Business Central application.](../developer/media/Upgrade-BC14-custom-BC23.png)](../developer/media/Upgrade-BC14-custom-BC23.png#lightbox) 
 
 The process uses two special features for migrating tables and data to extensions:
 
@@ -79,7 +78,7 @@ This section describes how to upgrade the application code. This work involves c
 
 The first step, and the largest step, is to create extensions for the customizations compared to the Microsoft system and base applications. 
 
-- Create extensions for the target platform **11.0 Business Central 2023 release wave 2**.
+- Create extensions for the target platform **12.0 Business Central 2023 release wave 2**.
 - Include dependencies for the Microsoft System, Base, and Application extensions for version 23.0.0.0.
 
 For example, if your application includes custom tables, then create extensions that include table objects and logic for the custom tables. If the application includes custom fields on system or base application tables, create extensions that include table extension objects to cover the custom fields. As part of this upgrade process, the data currently stored in custom tables or fields will be migrated from the existing tables to the new ones defined in the extensions.
@@ -108,7 +107,7 @@ The only file in the extension project that's required is an app.json. You can c
     - Set the `version` to any version lower than 23.0.0.0, like 14.0.0.0.
     - You'll also have to include the `"publisher"`. You can use your own publisher name or `"Microsoft"`.
     - Remove all other settings. It's important that there are no `"dependencies"` set.
-    - Set the `runtime` to `"11.0"`.
+    - Set the `runtime` to `"12.0"`.
 
     The app.json files for each extension should look similar to following examples:
 
@@ -240,7 +239,7 @@ You'll create two versions of this extension. The first version contains the tab
 
 9. Create an `.alpackages` folder in the root folder of the project and then copy the version 23 system symbols extension (System.app file) to the folder.
 
-    The System.app file is located where you installed the AL Development Environment. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\210\AL Development Environment. This package contains the symbols for all the system tables and codeunits.
+    The System.app file is located where you installed the AL Development Environment. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\230\AL Development Environment. This package contains the symbols for all the system tables and codeunits.
 
 10. Add the AL files for the tables that you converted earlier to the root folder for the project.
 
@@ -586,31 +585,29 @@ Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<e
 Synchronize the extensions in the following order:
 
 1. Microsoft System Application
-2. Microsoft Base Application
-3. Microsoft Application
-4. Microsoft and third-party extensions
+1. Microsoft Base Application
+1. Microsoft Application
+1. Customization extensions that must take ownership of fields/tables from the table migration extension. These extensions contain table objects or table extension objects that must take ownership of tables or fields included in the first table migration extension version.
+1. Second version of the table migration extension (empty version)
+1. Microsoft and third-party extensions
 
-  > [!NOTE]
-  >
-  > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must synchronize the India extensions.
-  >
-  > - Tax Engine
-  > - India Tax Base
-  > - QR Generator
-  > - India GST
-  > - India Gate Entry
-  > - India TCS
-  > - India TDS
-  > - India Voucher Interface
-  > - Fixed Asset Depreciation for India
-  > - India Reports
-  > - India Data Migration
+    > [!NOTE]
+    >
+    > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must synchronize the India extensions.
+    >
+    > - Tax Engine
+    > - India Tax Base
+    > - QR Generator
+    > - India GST
+    > - India Gate Entry
+    > - India TCS
+    > - India TDS
+    > - India Voucher Interface
+    > - Fixed Asset Depreciation for India
+    > - India Reports
+    > - India Data Migration
 
-5. Customization extensions
-6. Second version of the table migration extension (empty version)
-
-> [!IMPORTANT]
-> Synchronize extensions in the order of dependencies. The migration extension must be synchronized last. This step will change table ownership to the system and base application.
+1. Other customization extensions.
 
 ## Task 15: Upgrade empty table migration extension
 

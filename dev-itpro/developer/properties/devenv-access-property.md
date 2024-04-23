@@ -2,10 +2,7 @@
 title: "Access Property"
 description: "Sets the object accessibility level, which controls whether the object can be used from other code in your module or other modules."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -31,8 +28,8 @@ Sets the object accessibility level, which controls whether the object can be us
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Public**|runtime version 1.0|The object can be accessed by any other code in the same module and in other modules that references it.|
-|**Internal**|runtime version 1.0|The object can be accessed only by code in the same module, but not from another module.|
+|**Public**|runtime version 4.0|The object can be accessed by any other code in the same module and in other modules that references it.|
+|**Internal**|runtime version 4.0|The object can be accessed only by code in the same module, but not from another module.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -2,9 +2,7 @@
 title: Running a container-based development environment"
 description: Overview of how to run a container-based development.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 10/04/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -42,13 +40,13 @@ To see which functions are available in the BCContainerHelper module use the fol
 
 To get started quickly, run the following command from the BCContainerHelper module:
 
-```
+```powershell
 $artifactUrl = Get-BcArtifactUrl -type sandbox -country us -select Latest
 New-BCContainer -accept_eula -containerName mysandbox -artifactUrl $artifactUrl
 ```
 
 > [!NOTE]  
-> If you want to try out the Insider builds of Business Central, you can access these by specifying `NextMajor` or `NextMinor` to the select parameter on `Get-BcArtifactUrl`. You also need to add `-accept_insiderEula` in order to get Insider builds.
+> If you want to try out the Insider builds of Business Central, you can access these by specifying `NextMajor` or `NextMinor` to the select parameter on `Get-BcArtifactUrl`. You also need to add `-accept_insiderEula` to both Get-BcArtifactUrl and New-BCContainer in order to get Insider builds.
 
 The `BCContainerHelper` creates a folder on the C:\ drive called *bcartifacts.cache* for caching artifacts. It also creates a folder under C:\ProgramData called BCContainerHelper and places all working files underneath that folder. The C:\ProgramData\BCContainerHelper folder is shared to the container for transfer of files etc. If you don't specify a username and a password, it asks for your password and uses the current Windows username. If you specify your windows password, the container setup uses Windows Authentication integrated with the host. The `BCContainerHelper` also creates shortcuts on the desktop for the [!INCLUDE [prod_short](includes/prod_short.md)] web client, a container prompt, and a container PowerShell prompt.
 

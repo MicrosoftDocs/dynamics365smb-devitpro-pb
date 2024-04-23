@@ -2,10 +2,7 @@
 title: "OnPageBackgroundTaskCompleted (Page) Trigger"
 description: "Runs after a page background task has successfully completed."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

@@ -2,11 +2,7 @@
 title: Page object
 description: "Description of the page object in AL for Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -33,6 +29,12 @@ Typing the shortcut `tpage` will create the basic layout for a page object when 
 
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
+## Add tooltips on page fields
+
+Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that uses the field automatically inherits the tooltip. 
+
+For more information, see [Add tooltips to table and page fields](devenv-adding-tooltips.md).
 
 ## Views
 

@@ -3,8 +3,7 @@ title: Arranging Fields in Rows and Columns Using a fixed Control
 description: A fixed control is used to arrange page fields in rows and columns, similar to a matrix-like format, which is typically used to display statistical data.
 ms.custom: bap-template
 ms.date: 02/06/2023
-ms.reviewer: na
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer

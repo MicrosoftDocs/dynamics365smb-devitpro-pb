@@ -2,10 +2,7 @@
 title: "XmlDocument.ReplaceNodes(Any,...) Method"
 description: "Replaces the children nodes of this document with the specified content."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

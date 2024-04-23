@@ -2,10 +2,7 @@
 title: "ErrorInfo.DataClassification([DataClassification]) Method"
 description: "Specifies the classification of the error."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -42,7 +39,10 @@ The current data classification of the ErrorInfo.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also
+
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[AL error handling](../../devenv-al-error-handling.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -2,10 +2,7 @@
 title: "Compiler Error AL0704"
 description: "A layout must be specified through the 'ExcelLayout' property when the default layout type for a report is 'Excel'."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/01/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 A layout must be specified through the 'ExcelLayout' property when the default layout type for a report is 'Excel'.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

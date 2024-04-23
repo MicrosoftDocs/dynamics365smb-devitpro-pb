@@ -1,13 +1,11 @@
 ---
 title: "Update 19.1 for Microsoft Dynamics 365 Business Central 2021 Release Wave 2"
 description: Get an overview of new and changed capabilities in the 19.1 update of Business Central online, which is part of 2021 release wave 2.
-ms.custom: na
-ms.date: 11/22/2021
+ms.date: 04/01/2024
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-author: EmmaNielsson
+author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ---
 
 # Update 19.1 for Microsoft Dynamics 365 Business Central online 2021 release wave 2
@@ -37,15 +35,13 @@ Find an overview of hotfixes in this [article](https://prod.support.services.mic
 |United States|Form 1099. Format changes as of December 2021: The Internal Revenue Service (IRS) requires one or more versions of the 1099 tax form for payments to vendors. Copies of these forms must be sent to vendors annually on or before the last day of January. On your purchase documents, you can specify that the document is 1099 liable, and you can specify the 1099 code for the vendor. [Reporting Transactions as 1099 Liable in the US](/dynamics365/business-central/localfunctionality/unitedstates/tax-1099-changes).
 
 
-**Business Central is released in the following new countries:**  
+**Business Central is released in the following new countries/regions:**  
 - [Argentina](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--argentina)  
 - [Bulgaria](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--bulgaria)
 - [Chile](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--chile)
 - [Puerto Rico](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--puerto-rico) 
 - [Slovakia](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--slovakia)
 - [Ukraine](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--ukraine) 
-
-
 
 
 ## Release Plan

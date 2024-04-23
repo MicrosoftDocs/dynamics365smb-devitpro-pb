@@ -2,10 +2,7 @@
 title: "SessionSettings.ProfileSystemScope([Boolean]) Method"
 description: "Gets or sets the profile scope property in a SessionSettings object."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -39,7 +36,6 @@ Specifies whether the profile applies to the system or to a tenant only. **true*
 *[Optional] ProfileSystemScope*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the profile applies to the system; **false** if the profile applies to a tenant.
-      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

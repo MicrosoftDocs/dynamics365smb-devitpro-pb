@@ -2,10 +2,7 @@
 title: "Dialog.Confirm(Text [, Boolean] [, Any,...]) Method"
 description: "Creates a dialog box that prompts the user for a yes or no answer."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

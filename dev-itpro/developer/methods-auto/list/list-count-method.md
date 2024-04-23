@@ -2,10 +2,7 @@
 title: "List.Count() Method"
 description: "Gets the number of elements contained in the List."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -25,7 +22,6 @@ Count :=   List.Count()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *List*  
 &emsp;Type: [List](list-data-type.md)  

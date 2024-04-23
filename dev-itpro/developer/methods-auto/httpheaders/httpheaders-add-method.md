@@ -2,11 +2,7 @@
 title: "HttpHeaders.Add(Text, Text) Method"
 description: "Adds the specified header and its value into the HttpHeaders collection."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

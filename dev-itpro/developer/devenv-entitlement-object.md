@@ -2,11 +2,7 @@
 title: Entitlement object
 description: Description of the entitlement object in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 09/27/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: solsen
 ---
@@ -23,8 +19,10 @@ An entitlement consists of a number of [PermissionSet objects](devenv-permission
 
 Entitlements can only be used with the online version of [!INCLUDE [prod_short](includes/prod_short.md)].
 
-> [!NOTE]  
-> With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitlements can be used to support transactability for AppSource apps by binding entitlements to offers. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+## Supporting transactability for AppSource apps
+
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitlements can be used to support transactability for AppSource apps by binding entitlements to offers. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+
 <!--
 > [!NOTE]  
 > In the current version of [!INCLUDE [prod_short](includes/prod_short.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases.
@@ -51,7 +49,7 @@ entitlement "Delegated Admin agent - Partner"
 
     Id = '00000000-0000-0000-0000-000000000007';
 
-    ObjectEntitlement = MyApp_PartnerFullAccessPermissionSet;
+    ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
 
 }
 
@@ -65,7 +63,7 @@ entitlement "Delegated Helpdesk agent - Partner"
 
     Id = '00000000-0000-0000-0000-000000000008';
 
-    ObjectEntitlement = MyApp_PartnerFullAccessPermissionSet;
+    ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
 
 }
 
@@ -79,23 +77,22 @@ entitlement "Dynamics 365 Admin - Partner"
 
     Id = '00000000-0000-0000-0000-000000000009';
 
-    ObjectEntitlement = MyApp_PartnerFullAccessPermissionSet;
+    ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
 
 }
 ```
 
 ## Entitlement example - per-user plan
 
-An example of an entitlement where `Type` is `PerUserServicePlan`. This type is used to enable transactability for AppSource apps. The `Id` property is used to map the entitlement to the plan in Partner Center, and must contain the **Service ID** for the plan. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+An example of an entitlement where `Type` is `PerUserOfferPlan`. This type is used to enable transactability for AppSource apps. The `Id` property is used to map the entitlement to the plan in Partner Center, and must contain the **Service ID** for the plan. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 ```al
-entitlement BC_PerUserServicePlan
+entitlement BC_PerUserOfferPlan
 {
-    Type = PerUserServicePlan;
-    Id = '1a2aaaaa-3aa4-5aa6-789a-a1234567aaaa';
+    Type = PerUserOfferPlan;
+    Id = 'MyOfferPlan';
 
-    ObjectEntitlements = "D365 BASIC";
-
+    ObjectEntitlements = "MyOfferLicensePermission";
 }
 ```
 
@@ -191,6 +188,32 @@ entitlement BC_Group
     Id = '1a2aaaaa-3aa4-5aa6-789a-a1234567aaaa';
 }
 
+```
+
+## Entitlement example - Microsoft Entra application access
+An example of an entitlement where `Type` is `Application`. This supports scenarios when a vendor has to have access to the AppSource app with transact support and no need to buy a license. The `id` property is the client ID of the Microsoft Entra application. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+
+```al
+entitlement BC_SpecificApplication
+{
+    Type = Application;
+    Id = '1a2aaaaa-3aa4-5aa6-789a-a1234567aaaa';
+}
+```
+
+An example of an entitlement where `Type` is `ApplicationScope`. This supports scenarios when it should be possible to have Microsoft Entra application access to the AppSource app with transact support and no need to buy a license. The `id` property is the scope assigned to the Microsoft Entra application. For more information, see [Using Service-to-Service (S2S) Authentication](../administration/automation-apis-using-s2s-authentication.md).
+
+```al
+entitlement BC_ApplicationWithAPIRWScope
+{
+    Type = ApplicationScope;
+    Id = 'API.ReadWrite.All';
+}
+entitlement BC_ApplicationWithAutomationScope
+{
+    Type = ApplicationScope;
+    Id = 'Automation.ReadWrite.All';
+}
 ```
 
 ## See also

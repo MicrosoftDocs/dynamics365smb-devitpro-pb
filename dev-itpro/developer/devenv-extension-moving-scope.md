@@ -1,12 +1,8 @@
 ---
 title: "Moving between extension scopes"
 description: "Describes how an extension in one scope can be moved into another scope in Business Central."
-ms.custom: na
 ms.author: solsen
 ms.date: 02/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -75,6 +71,9 @@ For a definition of the different extension types and their scope, see [Extensio
 **Scenario:** Showing a preview of an app to a customer or developing the next version of the app.
 
 Publishing an AppSource app to a sandbox environment as a DEV extension is a common scenario when you want to show a preview of your app to a customer or during active development.
+
+> [!NOTE]  
+> From [!INCLUDE[prod_short](../includes/prod_short.md)] 2023 release wave 2, it's possible to install a preview of AppSource apps on customer environments without publishing them as DEV extensions. For more information, see [Technical Validation FAQ](../developer/devenv-checklist-submission-faq.md#questions-about-appsource-app-previews).
 
 ### Identity requirements for publishing an AppSource app as a DEV extension
 

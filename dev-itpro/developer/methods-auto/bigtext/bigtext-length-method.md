@@ -2,10 +2,7 @@
 title: "BigText.Length() Method"
 description: "Retrieves the length of the text stored in this BigText instance."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -25,7 +22,6 @@ Length :=   BigText.Length()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *BigText*  
 &emsp;Type: [BigText](bigtext-data-type.md)  

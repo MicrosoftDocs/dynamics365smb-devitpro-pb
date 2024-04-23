@@ -4,7 +4,7 @@ description: Learn how to give your customers access to automated workflows, so 
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: how-to
 ms.date: 04/21/2023
 ms.custom: bap-template 

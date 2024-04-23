@@ -2,10 +2,7 @@
 title: "HttpClient.Clear() Method"
 description: "Sets the HttpClient variable to the default value."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Sets the HttpClient variable to the default value.
 ```AL
  HttpClient.Clear()
 ```
-
 ## Parameters
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  

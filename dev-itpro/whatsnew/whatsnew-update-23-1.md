@@ -1,13 +1,12 @@
 ---
 title: "Update 23.1 for Microsoft Dynamics 365 Business Central 2023 Release Wave 2"
 description: Get an overview of new and changed capabilities in the 23.1 update of Business Central online, which is part of 2023 release wave 2.
-ms.author: a-enielsson
-ms.custom: na
-ms.date: 11/13/2023
+ms.author: jswymer
+ms.date: 04/01/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
-author: EmmaNielsson
+author: jswymer
+ms.custom: evergreen
 ---
 
 # Update 23.1 for Microsoft Dynamics 365 Business Central online 2023 release wave 2
@@ -17,11 +16,12 @@ Would you like to know what has changed in update 23.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5032755) and the downloads [here](https://aka.ms/BCDownload). <!--(Download link for on-premises is coming soon&mdash;stayed tuned on [Yammer](https://aka.ms/BCYammer)).-->
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5032755) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
 
-- [Business Central virtual tables fully supported on Microsoft Dataverse](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/business-central-virtual-tables-fully-supported-dataverse) 
+- [Business Central virtual tables fully supported on Microsoft Dataverse](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/business-central-virtual-tables-fully-supported-dataverse)
+- [Power Pages support via Business Central virtual tables on Dataverse](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/power-pages-support-via-business-central-virtual-tables-dataverse) 
 - [Get marketing text suggestions with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/get-marketing-text-suggestions-copilot)
 - [Complete bank account reconciliation faster with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/complete-bank-account-reconciliation-faster-copilot)
 - [Extend general ledger posting aggregations](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)
