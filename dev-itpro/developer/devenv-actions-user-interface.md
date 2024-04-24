@@ -65,7 +65,7 @@ It's possible to show an action group as a split button to get better discoverab
 
 Don't use split buttons for action groups with actions that the user isn't perceiving as related. 
 
-For more information about split button groups, see [Split buttons for actions](devenv-promoted-actions#split-buttons-for-actions.md).
+For more information about split button groups, see [Split buttons for actions](devenv-promoted-actions.md#split-buttons-for-actions).
 
 ## See also
 
