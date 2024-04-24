@@ -115,7 +115,7 @@ table 50104 Address
         {
             DataClassification = CustomerContent;
             Caption = 'Address validated yet?';
-            InitValue = false;                      // this is how you define default values 
+            InitValue = false; // this is how you define default values 
         }        
     }
     keys
