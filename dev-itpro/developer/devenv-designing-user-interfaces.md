@@ -117,6 +117,9 @@ If you want to test how your app/extension renders on the mobile app or the desk
 [Query Object](devenv-query-object.md)   
 [Analyze data on lists and queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 [Designing views](devenv-views.md)   
-[Designing profiles](devenv-design-profiles.md)
+[Designing profiles](devenv-design-profiles.md)  
 [Customizing for user roles](devenv-role-customization.md)  
 [Page discoverability overview](devenv-page-discoverability.md)   
+[Getting Business Central on your mobile device](/dynamics365/business-central/install-mobile-app?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+[Get Business Central Desktop App](/dynamics365/business-central/install-desktop-app?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+
