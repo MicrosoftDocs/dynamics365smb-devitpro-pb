@@ -23,7 +23,7 @@ Design document pages when you want to represent a transaction or other importan
 
 ### Associate with a list page
 
-Both page types are typically associated with list pages (like the customers or sales orders list) that uses the same table as their source. From the list page, users can select a record and open it the card or document page for viewing and editing. To associate a list page with a card page, you set the [CardPageId](properties/devenv-cardpageid-property.md) property on the list page. For more information, see [List page structure](devenv-designing-list-pages.md#structure).
+Both page types are typically associated with list pages (like the customers or sales orders list) that uses the same table as their source. From the list page, users can select a record and open it the card or document page for viewing and editing. To associate a list page with a card page, you set the [CardPageId](properties/devenv-cardpageid-property.md) property on the list page. For more information, see [List page structure](devenv-designing-list-pages.md#general-definition).
 
 
 ### Customizing a card and document pages from the client
