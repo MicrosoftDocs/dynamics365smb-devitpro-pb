@@ -48,86 +48,50 @@ The following code shows the source and destination tables and how to move a tab
 
 ```al
 table 50150 BaseTable50150
-
 {
-
     ObsoleteState = Moved;
-
     MovedTo = 'F0000000-0000-0000-0000-000000000001'; // Specifies the app ID of the destination extension
 
     fields
-
     {
-
         field(1; MyField; Integer)
-
         {
-
         }
-
         field(10; Field10; Integer)
-
         {
-
         }
-
         field(11; Field11; Integer)
-
         {
-
         }
-
         field(12; Field12; Integer)
-
         {
-
         }
-
     }
-
 }
 ```
 
 ### Destination extension
 
 ```al
-
 table 50150 BaseTable50150
-
 {
-
     MovedFrom = 'f0000000-0000-0000-0000-000000000003'; // Specifies the app ID of the source extension
 
     fields
-
     {
-
         field(1; MyField; Integer)
-
         {
-
         }
-
         field(10; Field10; Integer)
-
         {
-
         }
-
         field(11; Field11; Integer)
-
         {
-
         }
-
         field(12; Field12; Integer)
-
         {
-
         }
-
     }
-
 }
 ```
 
@@ -165,63 +129,35 @@ The following sections show the source and destination fields for how to move fi
 The following code shows the source extension with the fields that are moved to another extension.
 
 ```al
-
 table 50100 BaseTable50100
 
 {
-
     fields
-
     {
-
         field(1; MyField; Integer)
-
         {
-
         }
-
         field(10; Field10; Integer)
-
         {
-
             ObsoleteState = Moved;
-
             MovedTo = 'F0000000-0000-0000-0000-000000000002'; // Specifies the app ID of the destination extension
-
         }
-
         field(11; Field11; Integer)
-
         {
-
             ObsoleteState = Moved;
-
             MovedTo = 'F0000000-0000-0000-0000-000000000002'; // Specifies the app ID of the destination extension
-
         }
-
         field(12; Field12; Integer)
-
         {
-
             ObsoleteState = Moved;
-
             MovedTo = 'F0000000-0000-0000-0000-000000000002'; // Specifies the app ID of the destination extension
-
         }
-
         field(102; Field102; Integer)
-
         {
-
             ObsoleteState = Moved;
-
             MovedTo = 'F0000000-0000-0000-0000-000000000002'; // Specifies the app ID of the destination extension
-
         }
-
     }
-
 }
 ```
 
@@ -231,65 +167,36 @@ The following code shows the destination extension with the fields that are move
 
 ```al
 tableextension 50100 TExtension50100 extends BaseTable50100
-
 {
-
     fields
-
     {
-
         field(10; Field10; Integer)
-
         {
-
             MovedFrom = 'F0000000-0000-0000-0000-000000000001'; // Specifies the app ID of the source extension
-
         }
-
         field(11; Field11; Integer)
-
         {
-
             MovedFrom = 'F0000000-0000-0000-0000-000000000001'; // Specifies the app ID of the source extension
-
         }
-
         field(12; Field12; Integer)
-
         {
-
             MovedFrom = 'F0000000-0000-0000-0000-000000000001'; // Specifies the app ID of the source extension
-
         }
 
         field(20; Field20; Integer)
-
         {
-
             MovedFrom = 'F0000000-0000-0000-0000-000000000003'; // Specifies the app ID of the source extension
-
         }
-
         field(21; Field21; Integer)
-
         {
-
             MovedFrom = 'F0000000-0000-0000-0000-000000000003'; // Specifies the app ID of the source extension
-
         }
-
         field(102; Field102; Integer)
-
         {
-
             ObsoleteState = Removed;
-
             MovedFrom = 'F0000000-0000-0000-0000-000000000001'; // Specifies the app ID of the source extension
-
         }
-
     }
-
 }
 ```
 
@@ -302,45 +209,26 @@ Another scenario could be to move a table to another extension and extract some 
 The following code shows the source extension with the table and fields that are moved to another extension.
 
 ```al
-
 table 50150 BaseTable50150
-
 {
-
     ObsoleteState = Moved;
-
     MovedTo = 'F0000000-0000-0000-0000-000000000001'; // Specifies the app ID of the destination extension
 
     fields
-
     {
-
         field(1; MyField; Integer)
-
         {
-
         }
-
         field(10; Field10; Integer)
-
         {
-
         }
-
         field(11; Field11; Integer)
-
         {
-
         }
-
         field(12; Field12; Integer)
-
         {
-
         }
-
     }
-
 }
 ```
 
@@ -348,31 +236,18 @@ Some of the fields are moved to another table extension.
 
 ```al	
 tableextension 50151 TExtension50151 extends BaseTable50150
-
 {
-
     fields
-
     {
-
         field(50; Field11; Integer)
-
         {
-
             MovedFrom = 'F0000000-0000-0000-0000-000000000002'; // Specifies the app ID of the source extension
-
         }
-
         field(51; Field12; Integer)
-
         {
-
             MovedFrom = 'F0000000-0000-0000-0000-000000000002'; // Specifies the app ID of the source extension
-
         }
-
     }
-
 }
 ```
 
@@ -381,53 +256,30 @@ tableextension 50151 TExtension50151 extends BaseTable50150
 The following code shows the destination extension with the table and fields that are moved from another extension.
 
 ```al
-
 table 50150 BaseTable50150
-
 {
-
     MovedFrom = 'f0000000-0000-0000-0000-000000000003'; // Specifies the app ID of the source extension
 
     fields
-
     {
-
         field(1; MyField; Integer)
-
         {
-
         }
-
         field(10; Field10; Integer)
-
         {
-
         }
-
         field(11; Field11; Integer)
-
         {
-
             ObsoleteState = Moved;
-
             MovedTo = 'F0000000-0000-0000-0000-000000000003'; // Specifies the app ID of the destination extension
-
         }
-
         field(12; Field12; Integer)
-
         {
-
             ObsoleteState = Moved;
-
             MovedTo = 'F0000000-0000-0000-0000-000000000003'; // Specifies the app ID of the destination extension
-
         }
-
     }
-
 }
-
 ```
 
 ## Breaking changes - AppSourceCop rules
