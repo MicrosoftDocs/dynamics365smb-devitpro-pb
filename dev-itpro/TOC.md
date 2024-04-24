@@ -770,8 +770,8 @@
 ##### [Using request pages with XMLports](developer/devenv-request-pages.md)
 
 
-### Pages and user interfaces
-#### [Designing user interfaces](developer/devenv-designing-user-interfaces.md)
+### Pages and the user interface
+#### [Designing the user interface](developer/devenv-designing-user-interfaces.md)
 #### [Customizing for user roles](developer/devenv-role-customization.md)
 
 #### Role centers
@@ -813,15 +813,20 @@
 -->
 ####### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
 
-#### Adding fields to pages
-##### [Arranging fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
-##### [Adding tooltips to page fields](developer/devenv-adding-tooltips.md)
-##### [Grid controls](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
-##### [Fixed controls](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
-##### [Field groups](developer/devenv-field-groups.md)
-##### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate methods](developer/devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
-##### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
-##### [Rich Text and content controls](developer/devenv-richtext-content-controls.md)
+##### Adding fields to pages
+###### [Arranging fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
+###### [Adding tooltips to page fields](developer/devenv-adding-tooltips.md)
+###### [Grid controls](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
+###### [Fixed controls](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
+###### [Field groups](developer/devenv-field-groups.md)
+###### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate methods](developer/#devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
+###### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
+###### [Rich Text and content controls](developer/devenv-richtext-content-controls.md)
+
+##### Page discoverability
+###### [Page discoverability overview](developer/devenv-page-discoverability.md)
+###### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
+
 
 #### Actions
 ##### [Actions in the user interface](developer/devenv-actions-user-interface.md)
@@ -835,10 +840,6 @@
 ###### [Action bar improvements](developer/devenv-action-bar-improvements.md)
 ###### [Behavioral changes for promoted actions](developer/devenv-promoted-actions-behavioral-changes.md)
 ###### [Pages with action bar improvements](developer/devenv-pages-action-bar-improvements.md)
-
-#### Page discoverability
-##### [Page discoverability overview](developer/devenv-page-discoverability.md)
-##### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 
 #### Views
 ##### [Designing views](developer/devenv-views.md)

@@ -1,5 +1,5 @@
 ---
-title: Designing User Interfaces
+title: Designing the User Interface
 description: "Provides an overview of the components available when designing a user interface in Business Central"
 author: kennieNP
 ms.date: 04/22/2024
@@ -7,11 +7,9 @@ ms.topic: conceptual
 ms.author: kepontop
 ---
 
-# Designing User Interfaces
+# Designing the User Interface
 
-**!!! Maybe Jacob W writes more/better intro here !!!**
-
-The user interface for [!INCLUDE[prod_short](includes/prod_short.md)] consists of many types of components, such as 
+Understanding how Business Central displays a page dependent on its page type is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface. The user interface for [!INCLUDE[prod_short](includes/prod_short.md)] consists of many types of components, such as 
 
 * **Role Centers**. These serve as personalized dashboards tailored to specific user roles. They provide quick access to relevant information, tasks, and reports.
 * **Pages**. Business Central’s interface is organized into pages. These can be list pages, displaying records in a tabular format, or card pages, showing detailed information for a single record. Pages display fields, which represent data elements within records. Users input or view data in these fields.
@@ -99,6 +97,15 @@ After you develop a page and before you make it available for users, you must co
 ![TellMe.](media/tellmeApril19.png)
 
 For more information, see [Page discoverability overview](devenv-page-discoverability.md).
+
+
+## Develop once, render on multiple client types
+
+[!INCLUDE[prod_short](includes/prod_short.md)] apps/extensions can run on many types of devices such as browsers, tablets, desktops, TVs, and more. With a huge number of device targets and screen sizes across the device ecosystem, rather than optimizing your UI for each device, when designing the user interface in AL, you don't have to think about screen sizes - the different [!INCLUDE[prod_short](includes/prod_short.md)] clients (browser, mobile, or desktop app) are responsive to screen sizes and device types. 
+
+If you want to test how your app/extension renders on the mobile app or the desktop app, then please visit these articles to learn more
+- [Getting Business Central on your mobile device](/dynamics365/business-central/install-mobile-app?toc=/dynamics365/business-central/dev-itpro/toc.json).
+- [Get Business Central Desktop App](/dynamics365/business-central/install-desktop-app?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
 
 ## See Also
