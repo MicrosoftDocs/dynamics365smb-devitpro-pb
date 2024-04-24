@@ -85,7 +85,6 @@ table 50104 Address
     {
         field(1; Address; Text[50])
         {
-            DataClassification = CustomerContent; // all fields must have a data classification. In this example, only the first field has been classified
             Caption = 'Address retrieved by Service';
         }
         field(2; Locality; Text[30])
@@ -113,7 +112,6 @@ table 50104 Address
         }
         field(5; IsValidated; Boolean)
         {
-            DataClassification = CustomerContent;
             Caption = 'Address validated yet?';
             InitValue = false; // this is how you define default values 
         }        
