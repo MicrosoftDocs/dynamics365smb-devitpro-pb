@@ -101,7 +101,7 @@ For more information, see [Page discoverability overview](devenv-page-discoverab
 
 ## Develop once, render on multiple client types
 
-[!INCLUDE[prod_short](includes/prod_short.md)] apps/extensions can run on many types of devices such as browsers, tablets, desktops, TVs, and more. With a huge number of device targets and screen sizes across the device ecosystem, rather than optimizing your UI for each device, when designing the user interface in AL, you don't have to think about screen sizes - the different [!INCLUDE[prod_short](includes/prod_short.md)] clients (browser, mobile, or desktop app) are responsive to screen sizes and device types. 
+[!INCLUDE[prod_short](includes/prod_short.md)] apps/extensions can run on many types of devices such as browsers, tablets, desktops, phones, and more. With a huge number of device targets and screen sizes across the device ecosystem, rather than optimizing your UI for each device, when designing the user interface in AL, you don't have to think about screen sizes - the different [!INCLUDE[prod_short](includes/prod_short.md)] clients (browser, mobile, or desktop app) are responsive to screen sizes and device types. 
 
 If you want to test how your app/extension renders on the mobile app or the desktop app, then please visit these articles to learn more
 - [Getting Business Central on your mobile device](/dynamics365/business-central/install-mobile-app?toc=/dynamics365/business-central/dev-itpro/toc.json).
