@@ -103,10 +103,11 @@ For more information, see [Page discoverability overview](devenv-page-discoverab
 
 [!INCLUDE[prod_short](includes/prod_short.md)] apps/extensions can run on many types of devices such as browsers, tablets, desktops, phones, and more. With a huge number of device targets and screen sizes across the device ecosystem, rather than optimizing your UI for each device, when designing the user interface in AL, you don't have to think about screen sizes - the different [!INCLUDE[prod_short](includes/prod_short.md)] clients (browser, mobile, or desktop app) are responsive to screen sizes and device types. 
 
+If you design for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)], you must make sure that scenarios are simple enough to be meaningful and usable. The tablet and phone designs are meant for lighter tasks and are useful, for example, for traveling salespeople or service technicians who need a portable, online, easy-to-use app that provides an overview, for example, of daily tasks and items in stock. For more information, see [Developing for the Dynamics 365 Business Central Mobile App](devenv-introducing-business-central-mobile-app.md).
+
 If you want to test how your app/extension renders on the mobile app or the desktop app, then please visit these articles to learn more
 - [Getting Business Central on your mobile device](/dynamics365/business-central/install-mobile-app?toc=/dynamics365/business-central/dev-itpro/toc.json).
 - [Get Business Central Desktop App](/dynamics365/business-central/install-desktop-app?toc=/dynamics365/business-central/dev-itpro/toc.json)
-
 
 ## See Also
 
@@ -120,6 +121,7 @@ If you want to test how your app/extension renders on the mobile app or the desk
 [Designing profiles](devenv-design-profiles.md)  
 [Customizing for user roles](devenv-role-customization.md)  
 [Page discoverability overview](devenv-page-discoverability.md)   
+[Developing for the Dynamics 365 Business Central Mobile App](devenv-introducing-business-central-mobile-app.md)   
 [Getting Business Central on your mobile device](/dynamics365/business-central/install-mobile-app?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 [Get Business Central Desktop App](/dynamics365/business-central/install-desktop-app?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 
