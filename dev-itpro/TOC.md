@@ -896,7 +896,14 @@
 #### Report discoverability
 ##### [Report discoverability overview](developer/devenv-reports-discoverability.md)
 ##### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
-#### [Report triggers and operations](developer/devenv-report-triggers.md)
+#### Report triggers and events
+##### [Report triggers and operations](developer/devenv-report-triggers.md)
+##### Report events
+###### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
+###### [OnAfterDocumentReady](developer/devenv-onafterdocumentready-event.md)
+###### [OnAfterIntermediateDocumentReady](developer/devenv-onafterintermediatedocumentready-event.md)
+###### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
+###### [OnCustomDocumentMergerEx](developer/devenv-oncustomdocumentmergerex-event.md)
 #### [Substituting a report](developer/devenv-substituting-reports.md)
 #### [Testing a report](developer/devenv-testing-reports.md)
 #### [Report performance](developer/devenv-report-performance.md)
