@@ -48,7 +48,7 @@ The following example illustrates how to use the HttpContent type to send a simp
 ```al
 codeunit 50110 MyCodeunit
 {
-    procedure MakeRequest(uri: Text; payload: Text) responseText: Text;
+    procedure MakeRequest(uri: Text; payload: Text) responseText: Text
     var
         client: HttpClient;
         request: HttpRequestMessage;

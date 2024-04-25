@@ -24,9 +24,6 @@ This note pertains to backward compatibility only. If the property is set to Boo
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-> [!IMPORTANT]  
-> **StyleExpr** must not be set to a Text or Boolean array; otherwise, it will compile, but fail at runtime.
-
 ## Remarks  
 
 > [!NOTE]  
