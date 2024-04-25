@@ -19,7 +19,7 @@ The following sections help you understand and improve the performance of [!INCL
 - Visit [How to Work with a Performance Problem](performance-work-perf-problem.md) to learn more on how to tackle a performance problem.
 
 
-The video series *Performance Considerations when Building an App* is also a good starting point to learn more about performance of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
+<!-- The video series *Performance Considerations when Building an App* is also a good starting point to learn more about performance of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
 
 - [Performance Considerations when Building an App, Part I](https://www.youtube.com/watch?v=MooYL05V11Y)  
 
@@ -31,5 +31,5 @@ The video series *Performance Considerations when Building an App* is also a goo
 
   > [!VIDEO https://www.youtube.com/embed/VN7V4GyULtY]
 
-  Learn about best practices on implementing the existing data retrieval methods. Learn how to greatly improve performance by minimizing server roundtrips, and get introduced to important dos and don'ts when coding for performance.
+  Learn about best practices on implementing the existing data retrieval methods. Learn how to greatly improve performance by minimizing server roundtrips, and get introduced to important dos and don'ts when coding for performance. -->
   
