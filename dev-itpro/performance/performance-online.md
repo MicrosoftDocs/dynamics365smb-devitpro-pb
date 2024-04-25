@@ -34,8 +34,7 @@ Due to the nature of the operations our users perform in the sandbox environment
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is a modern, global, robust, and scalable solution for small and mid-sized organizations, providing resource elasticity to support current and future demands of modern businesses.
 
-Scalability is related to performance in situations where slowness of a process in a system is not related to an algorithm (how a process is implemented), but on scarcity of resources. The way to mitigate such issues is to make more of that type of resource available, and this is what the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online service does for many resource types, such as database compute or memory, server CPU cores, web service capacity, and background tasks/jobs. For more information about [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service scalability, see [Service scalability for Business Central online](../service-scalability.md).
-
+Scalability is related to performance in situations where slowness of a process in a system isn't related to an algorithm (how a process is implemented), but on scarcity of resources. The way to mitigate such issues is to make more of that type of resource available, and this is what the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online service does for many resource types, such as database compute or memory, server CPU cores, web service capacity, and background tasks/jobs. For more information about [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service scalability, see [Service scalability for Business Central online](../service-scalability.md).
 
 ## Operational Limits
 
@@ -51,8 +50,8 @@ Without limits, one tenant could use many more resources than other tenants. Oth
 
 ## See Also
 
-[Performance Overview](performance-overview.md)  
-[Performance Articles For Developers](performance-developer.md)  
-[Performance of on-premises Installations](performance-onprem.md)  
-[How to Work with a Performance Problem](performance-work-perf-problem.md)  
+[Performance overview](performance-overview.md)  
+[Performance articles For developers](performance-developer.md)  
+[Performance of on-premises installations](performance-onprem.md)  
+[How to Work with a performance problem](performance-work-perf-problem.md)  
 [Performance tips for business users](performance-users.md)  
