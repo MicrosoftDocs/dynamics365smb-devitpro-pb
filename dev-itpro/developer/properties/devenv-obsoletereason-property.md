@@ -2,10 +2,7 @@
 title: "ObsoleteReason Property"
 description: "Specifies why the object has been marked as Pending in the ObsoleteState property."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/04/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -21,21 +18,19 @@ Specifies why the object has been marked as Pending in the ObsoleteState propert
 ## Applies to
 -   Page Action Ref
 -   Page Custom Action
--   Table Field
+-   Page File Upload Action
 -   Table
+-   Table Field
 -   Table Key
 -   Codeunit
 -   Enum Type
 -   Enum Value
 -   Page Action
--   Page Action Area
 -   Page Action Group
 -   Page Action Separator
--   Page Area
 -   Page Part
 -   Page System Part
 -   Page Chart Part
--   Page Field
 -   Page Group
 -   Page Label
 -   Query
@@ -46,6 +41,9 @@ Specifies why the object has been marked as Pending in the ObsoleteState propert
 -   Report Column
 -   Request Page
 -   Xml Port
+-   Page Field
+-   Page Action Area
+-   Page Area
 -   Page
 -   Page View
 -   Profile

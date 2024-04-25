@@ -2,10 +2,7 @@
 title: "Record Data Type"
 description: "Is a complex data type."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -20,6 +17,7 @@ Is a complex data type.
 
 
 
+## Instance methods
 The following methods are available on instances of the Record data type.
 
 |Method name|Description|
@@ -56,7 +54,8 @@ The following methods are available on instances of the Record data type.
 |[Find([Text])](record-find-method.md)|Finds a record in a table that is based on the values stored in keys.|
 |[FindFirst()](record-findfirst-method.md)|Finds the first record in a table based on the current key and filter.|
 |[FindLast()](record-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
-|[FindSet([Boolean] [, Boolean])](record-findset-method.md)|Finds a set of records in a table based on the current key and filter.|
+|[FindSet([Boolean])](record-findset-boolean-method.md)|Finds a set of records in a table based on the current key and filter.|
+|[FindSet(Boolean, Boolean)](record-findset-boolean-boolean-method.md)|Finds a set of records in a table based on the current key and filter.|
 |[Get([Any,...])](record-get-method.md)|Gets a record based on values stored in primary key fields.|
 |[GetAscending(Any)](record-getascending-method.md)|Gets the sort order for the records returned. You can use GETASCENDING to identify the sort order of the specified field because fields can be sorted in ascending or descending order. For example, you can read data from an ODATA web service where the data is sorted in ascending order on the Name field but in descending order on the City field.|
 |[GetBySystemId(Guid)](record-getbysystemid-method.md)|Gets a record by its SystemId.|
@@ -82,6 +81,7 @@ The following methods are available on instances of the Record data type.
 |[ModifyAll(Any, Any [, Boolean])](record-modifyall-method.md)|Modifies a field in all records within a range that you specify.|
 |[Next([Integer])](record-next-method.md)|Steps through a specified number of records and retrieves a record.|
 |[ReadConsistency()](record-readconsistency-method.md)|Determines if the table supports read consistency.|
+|[ReadIsolation([IsolationLevel])](record-readisolation-method.md)|Gets or sets the read isolation level.|
 |[ReadPermission()](record-readpermission-method.md)|Determines whether a user is granted read permission to the table that contains a record. This method can test for both full read permission and partial read permission that has been granted with a security filter.|
 |[RecordId()](record-recordid-method.md)|Gets the RecordId of the record that is currently selected in the table. If no table is selected, an error is generated.|
 |[RecordLevelLocking()](record-recordlevellocking-method.md)|Determines whether the table supports record-level locking.|
@@ -91,6 +91,7 @@ The following methods are available on instances of the Record data type.
 |[SecurityFiltering([SecurityFilter])](record-securityfiltering-method.md)|Gets or sets how security filters are applied to the record.|
 |[SetAscending(Any, Boolean)](record-setascending-method.md)|Sets the sort order for the records returned. Use this method after you have set the keys to sort after, using SETCURRENTKEY. The default sort order is ascending. You can use SETASCENDING to change the sort order to descending for a specific field, while the other fields in the specified key are sorted in ascending order.|
 |[SetAutoCalcFields([Any,...])](record-setautocalcfields-method.md)|Sets the FlowFields that you specify to be automatically calculated when the record is retrieved from the database.|
+|[SetBaseLoadFields()](record-setbaseloadfields-method.md)|Sets that only fields for the base table to be initially loaded when the record is retrieved from its data source. This will overwrite fields previously selected for initial load.|
 |[SetCurrentKey(Any [, Any,...])](record-setcurrentkey-method.md)|Selects a key for a table.|
 |[SetFilter(Any, Text [, Any,...])](record-setfilter-method.md)|Assigns a filter to a field that you specify.|
 |[SetLoadFields([Any,...])](record-setloadfields-method.md)|Sets the fields to be initially loaded when the record is retrieved from its data source. This will overwrite fields previously selected for initial load.|

@@ -2,10 +2,7 @@
 title: "Xmlport.ImportFile([Boolean]) Method"
 description: "Gets or sets the ImportFile property."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -32,8 +29,7 @@ An instance of the [Xmlport](xmlport-data-type.md) data type.
 
 *[Optional] ImportFile*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-The new value of the ImportFile property. If the XmlPort is designed for export only and the new value of this property is **true**, an XmlPortExportDirectionException is thrown. If the XmlPort is designed for import only and the new value of this property **false**, an XmlPortImportDirectionException is thrown.
-        
+The new value of the ImportFile property. If the XmlPort is designed for export only and the new value of this property is **true**, an XmlPortExportDirectionException is thrown. If the XmlPort is designed for import only and the new value of this property **false**, an XmlPortImportDirectionException is thrown.  
 
 
 ## Return Value

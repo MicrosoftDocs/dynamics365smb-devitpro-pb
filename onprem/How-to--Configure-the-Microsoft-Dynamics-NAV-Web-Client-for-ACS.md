@@ -8,8 +8,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
-ms.prod: "dynamics-nav-2018"
-manager: edupont
 ---
 # Configuring Dynamics NAV Web Client for ACS
 

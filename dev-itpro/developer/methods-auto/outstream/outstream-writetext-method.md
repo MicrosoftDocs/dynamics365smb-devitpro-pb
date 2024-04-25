@@ -2,10 +2,7 @@
 title: "OutStream.WriteText([Text] [, Integer]) Method"
 description: "Writes text to an OutStream object."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/09/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,7 @@ An instance of the [OutStream](outstream-data-type.md) data type.
 
 *[Optional] Text*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The text to write. If you do not specify this, a carriage return and a line feed are written.
-        
+The text to write. If you do not specify this, a carriage return and a line feed are written.  
 
 *[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

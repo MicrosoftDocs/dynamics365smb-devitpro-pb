@@ -1,15 +1,13 @@
 ---
 title: "Width Property"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 59701d5d-65f8-42e8-9b1b-8c47709cf4bc
 caps.latest.revision: 22
 author: jswymer
 ---
+
+<!-- this topic is manually created, sibling node is devenv-width-xmlport-property.md -->
 
 # Width Property
 > **Version**: _Available from runtime version 1.0._
@@ -65,5 +63,5 @@ The following example sets the column width of a field to 50 characters.
 ## See Also
 
 [Properties](devenv-properties.md)  
-[Using Designer](../devenv-inclient-designer.md)  
+[Use Designer](../devenv-inclient-designer.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user  ) 

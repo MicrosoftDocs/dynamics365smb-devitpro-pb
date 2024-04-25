@@ -3,9 +3,7 @@ title: Analyzing Verbose Enable and Disable Telemetry | Microsoft Docs
 description: Learn about the verbose logging telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/23/2022
 ms.author: jswymer
@@ -15,11 +13,13 @@ ms.author: jswymer
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)] 
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users can temporarily set up their environment to emit more verbose telemetry by going to the **Help and Support** page in the client and selecting **Additional Logging**.  They'll typically only do this when asked by a partner or support representative to help troubleshoot problems. This additional logging will continue for 15 minutes or until the user closes the browser or signs out of Business Central&mdash;then it's turned off
 
 A telemetry trace is recorded whenever additional logging is turned on or off.
 
-For information about enabling additional logging, see [Resources for Help and Support](/dynamics365/business-central/product-help-and-support).
+For information about enabling additional logging, see [Resources for Help and Support](/dynamics365/business-central/product-help-and-support#troubleshooting).
 
 ## <a name="enabled"></a>Verbose telemetry enabled for session
 
@@ -40,7 +40,7 @@ The following table explains the custom dimensions included in the trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension is only for traces from Business Central online.|
@@ -73,7 +73,7 @@ The following table explains the custom dimensions included in the trace.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**RT0024**|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension is only for traces from Business Central online.|

@@ -2,11 +2,9 @@
 title: purchaseOrderLine resource type  
 description: A purchase order line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.topic: reference
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -41,6 +39,7 @@ Represents a purchase order line in [!INCLUDE[prod_short](../../../includes/prod
 |[unitOfMeasure](dynamics_unitofmeasure.md)|unitOfMeasure |Gets the unitofmeasure of the purchaseOrderLine.|
 |[itemVariant](dynamics_itemvariant.md)|itemVariant |Gets the itemvariant of the purchaseOrderLine.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the purchaseOrderLine.|
+|[location](dynamics_location.md)|location |Gets the location of the purchaseOrderLine.|
 
 ## Properties
 
@@ -54,6 +53,7 @@ Represents a purchase order line in [!INCLUDE[prod_short](../../../includes/prod
 |lineType|NAV.invoiceLineAggLineType|The type of the purchase order line. It can be "Comment", "Account", "Item", "Resource" Value", "Fixed Asset" or "Charge".|
 |lineObjectNumber|string|The number of the object (account or item) of the purchase order line.|
 |description|string|Specifies the description of the purchase order line.|
+|description2|string||
 |unitOfMeasureId|GUID|The ID of unit of measure for the purchase order line.|
 |unitOfMeasureCode|string|The code of unit of measure for the purchase order line.|
 |quantity|decimal|The quantity of the item in the purchase order line.|
@@ -76,6 +76,7 @@ Represents a purchase order line in [!INCLUDE[prod_short](../../../includes/prod
 |invoiceQuantity|decimal|The quantity of items from the purchase order line to be invoiced.|
 |receiveQuantity|decimal|The quantity of items from the purchase order line to be received.|
 |itemVariantId|GUID|The ID of the item variant in the purchase order line.|
+|locationId|GUID||
 
 ## JSON representation
 
@@ -92,6 +93,7 @@ Here is a JSON representation of the purchaseOrderLine resource.
     "lineType": "NAV.invoiceLineAggLineType",
     "lineObjectNumber": "string",
     "description": "string",
+    "description2": "string",
     "unitOfMeasureId": "GUID",
     "unitOfMeasureCode": "string",
     "quantity": "decimal",
@@ -113,7 +115,8 @@ Here is a JSON representation of the purchaseOrderLine resource.
     "invoicedQuantity": "decimal",
     "invoiceQuantity": "decimal",
     "receiveQuantity": "decimal",
-    "itemVariantId": "GUID"
+    "itemVariantId": "GUID",
+    "locationId": "GUID"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->

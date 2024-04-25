@@ -2,10 +2,7 @@
 title: "UpdatePropagation Property"
 description: "Sets a value that specifies what happens when a main page with a subpage is updated."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -25,10 +22,10 @@ Sets a value that specifies what happens when a main page with a subpage is upda
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**SubPart**|An update action will update the subpage only|
-|**Both**|An update action will update both the main page and the subpage|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**SubPart**|runtime version 1.0|An update action will update the subpage only|
+|**Both**|runtime version 1.0|An update action will update both the main page and the subpage|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

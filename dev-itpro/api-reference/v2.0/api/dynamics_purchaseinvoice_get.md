@@ -4,10 +4,8 @@ description: Gets a purchase invoice object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -90,6 +88,8 @@ Here is an example of the response.
     "payToPostCode": "61236",
     "currencyId": "00000000-0000-0000-0000-000000000000",
     "currencyCode": "USD",
+    "orderId": "00000000-0000-0000-0000-000000000000",
+    "orderNumber": "",
     "pricesIncludeTax": false,
     "discountAmount": 0,
     "discountAppliedBeforeTax": true,

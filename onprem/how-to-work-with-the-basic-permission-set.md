@@ -1,14 +1,12 @@
 ---
 title: "How to: Work with the BASIC Permission Set"
 author: edupont04
-manager: edupont04
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 7cb71f04-d703-44c4-8f39-6b8d99c2d649
 ---
 # How to: Work with the BASIC Permission Set

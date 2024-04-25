@@ -2,10 +2,7 @@
 title: "XmlElement.SetAttribute(Text, Text) Method"
 description: "Sets the value of the specified attribute or create it if is not part of the element's attribute collection."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,7 @@ An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The fully qualified name of the attribute to set.
-        
+The fully qualified name of the attribute to set.  
 
 *Value*  
 &emsp;Type: [Text](../text/text-data-type.md)  

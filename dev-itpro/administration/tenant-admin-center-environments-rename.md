@@ -3,9 +3,7 @@ title: Rename Environments in the Admin Center
 description: Use the Business Central administration center to rename environments. 
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, rename
 ms.date: 04/01/2021
 ms.author: jswymer
@@ -13,12 +11,7 @@ ms.author: jswymer
 
 # Rename Environments in the Admin Center
 
-**APPLIES TO:** Business Central 2020 release wave 2 and later
-
-> [!NOTE]
-> This feature is in preview. It might change or be removed in the future updates.
-
-You can change the name of any environment. The name uniquely identifies the environment from your other environments. Before you change a name, you must consider that the name also is part of the environment's URL. The URL is used in links to the environment in various ways. So changing the name can have significant impact.
+You can change the name of an environment. The name uniquely identifies the environment from your other environments. Before you change a name, you must consider that the name also is part of the environment's URL. The URL is used in links to the environment in various ways. So changing the name can have significant impact.
 
 The renaming of an environment is logged and shown in the [operations log](tenant-admin-center-environments.md#opslog).
 
@@ -73,6 +66,6 @@ Here are some areas where the environment name is used, which will be affected w
 [Updating Environments](tenant-admin-center-update-management.md)  
 [Rename Environments](tenant-admin-center-environments-rename.md)  
 [Restoring an Environment](tenant-admin-center-backup-restore.md)  
-[Move an Environment to another Azure Active Directory organization](tenant-admin-center-environments-move.md)  
+[Move an Environment to another Microsoft Entra organization](tenant-admin-center-environments-move.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  

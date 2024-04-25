@@ -2,10 +2,7 @@
 title: "Record.DeleteAll([Boolean]) Method"
 description: "Deletes all records in a table that fall within a specified range."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *[Optional] RunTrigger*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies whether to run the AL code in the OnDelete Trigger. If this parameter is true, then the code in the OnDelete trigger will be executed. If this parameter is false, then the code in the OnDelete trigger will not be executed. The default value is false.
-          
+Specifies whether to run the AL code in the OnDelete Trigger. If this parameter is true, then the code in the OnDelete trigger will be executed. If this parameter is false, then the code in the OnDelete trigger will not be executed. The default value is false.  
 
 
 

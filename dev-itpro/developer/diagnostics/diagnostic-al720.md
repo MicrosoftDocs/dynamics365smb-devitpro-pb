@@ -1,11 +1,8 @@
 ---
 title: "Compiler Error AL0720"
-description: "An application object '{0} {1}' could not be found in the extension."
+description: "An application object '{0} {1}' could not be found in the current extension."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/01/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -17,7 +14,8 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-An application object '{0} {1}' could not be found in the extension.
+An application object '{0} {1}' could not be found in the current extension. Only application objects that belong to the current extensions can be used in this context.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

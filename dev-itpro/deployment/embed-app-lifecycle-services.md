@@ -2,10 +2,6 @@
 title: "Lifecycle Services for Embed App"
 author: jswymer
 description: Provides an overview of Lifecycle Services for Embed App in Business Central
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
@@ -13,11 +9,13 @@ ms.date: 04/01/2021
 
 # Managing an [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [!INCLUDE[embed app](../developer/includes/embedapp.md)] in Microsoft Lifecycle Services
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Microsoft provides essential functionality within [Microsoft Lifecycle Services](https://lcs.dynamics.com/v2) collaboration portal (LCS) to support qualified ISVs in managing the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] based on [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.  
 
 ## Creating LCS project
 
-In LCS, you should create a project for each [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and each country you would like to deploy to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] service. You provide the list of countries where you want to run your Embed app during onboarding. You can only deploy your solution to the country that is already supported in the Business Central online service. Find the list of supported countries here: https://aka.ms/bccountries. 
+In LCS, you should create a project for each [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and each country/region you would like to deploy to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] service. You provide the list of countries where you want to run your Embed app during onboarding. You can only deploy your solution to the country/region that is already supported in the Business Central online service. Find the list of supported countries here: https://aka.ms/bccountries. 
 
 Before you can create a project, you need to unlock a corresponding Private Preview feature. Once you sign in to LCS, select the **Preview feature management** action. Then on the Preview feature management page, select the "+" action to add a new preview feature using a preview code. In the **Preview code** field, enter the code you received from Microsoft during onboarding. You should now see the "Microsoft Dynamics 365 Business Central (SaaS)" feature on the list of the private preview features on this page.     
 
@@ -113,13 +111,13 @@ Once you've established the reseller relationship with the customer and added [!
 To create a new production environment for your customers, go to this URL:
 
 ```http
-https://[your application family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/Production
+https://[your application family].bc.dynamics.com/[Customer's Microsoft Entra tenant ID]/Production
 ```
 
 To open your customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] Administration center, go to this URL:
 
 ```http
-https://[your application family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/admin
+https://[your application family].bc.dynamics.com/[Customer's Microsoft Entra tenant ID]/admin
 ```
 
 Each environment that you signed up for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is then displayed on the Tenant list part in your LCS project. On this part, you can find more details about the environment, including the name and the URL to sign in to each one. You can see which environments are running on which application version by selecting application version on the list.  

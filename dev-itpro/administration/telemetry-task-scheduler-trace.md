@@ -3,11 +3,9 @@ title: Analyzing Task Scheduler Telemetry
 description: Learn about the task scheduler telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 12/15/2023
 ms.author: jswymer
 ---
 
@@ -15,9 +13,9 @@ ms.author: jswymer
 
 [!INCLUDE[2021_releasewave2.md](../includes/2021_releasewave2.md)]
 
-Task scheduler telemetry gathers information about the execution of scheduled tasks. The data gives insight into what happens in background sessions that are coming from scheduled tasks. It provides information that let's you troubleshoot failures. The data can also help you determine whether tasks would be better scheduled for off hours to limit the load on the service.  
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-For an overview of task scheduler to understand the flow related to these traces, see [Task Scheduler](../developer/devenv-task-scheduler.md).
+[!INCLUDE[task_scheduler_telemetry](../includes/include-telemetry-task-scheduler.md)]
 
 > [!NOTE]
 > In this article, *main codeunit* refers to the codeunit that's run by the TaskScheduler.CreateTask method.
@@ -26,7 +24,7 @@ Each scheduled task is assigned a unique identifier (ID), which is included in e
 
 ## Task created
 
-Occurs when a task was created by a TaskScheduler.CreateTask method call in AL code.
+Occurs when a task was created by a `TaskScheduler.CreateTask` method call in AL code.
 
 ### General dimensions
 
@@ -44,11 +42,11 @@ The following table explains the general dimensions of this trace.
 -->
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|--------------------|
 |eventId|**LC0040**|
 |codeunitObjectId|Specifies the ID of the task's main codeunit.|
 |failureCodeunitObjectId|Specifies the ID of the task's failure codeunit. **0** indicates that there's no failure codeunit.|
-|isReady|Specifies whether the task was in the the ready state when created. **True** indicates that the task is in the ready state. **False** indicates that the task isn't in the ready state.|
+|isReady|Specifies whether the task was in the ready state when created. **True** indicates that the task is in the ready state. **False** indicates that the task isn't in the ready state.|
 |notBefore|Specifies the earliest date and time the task was scheduled to run.|
 |taskId|Specifies the unique identifier assigned to the task.|
 |timeout|Specifies the timeout that was set on the task. If a task takes longer to complete than the specified time, it's canceled. The time has the format hh:mm:ss.sssssss.|
@@ -59,7 +57,7 @@ The following table explains other custom dimensions that are common to all task
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company in which the task was run.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
@@ -140,7 +138,7 @@ For example, the service cancels a task when:
 - It takes longer to complete than the specified timeout. The timeout is specified on the task when it's created. Or if no timeout is specified, then the default timeout of the service is used. For online, the default task timeout is 12 hours. For on-premises, the default timeout is specified by the **Default Task Scheduler Session Timeout** setting on the Business Central Server instance.
 - The Session.StopSession method was called from AL code.
 
-Users can cancel a task a couple ways. For example, with Business Central online, they can use the Business Central admin center. With on-premises, they can run the the [Remove-NAVSession cmdlet](/powershell/module/microsoft.dynamics.nav.management/remove-navserversession).
+Users can cancel a task a couple ways. For example, with Business Central online, they can use the Business Central admin center. With on-premises, they can run the [Remove-NAVSession cmdlet](/powershell/module/microsoft.dynamics.nav.management/remove-navserversession).
 
 ### General dimensions
 
@@ -148,7 +146,7 @@ The following table explains the general dimensions of this trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|The messages will depend on whether the error occurred in the main codeunit ot failure codeunit. <br><br>*Main codeunit*<br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will not be retried and the failure codeunit {failureCodeunitObjectId} will be run. Reason: Exception is not retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**<br><br>*Failure codeunit*<br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will not be retried. Reason: Exception is not retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**|
+|message|The messages will depend on whether the error occurred in the main codeunit of failure codeunit. <br><br>*Main codeunit*<br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will not be retried and the failure codeunit {failureCodeunitObjectId} will be run. Reason: Exception is not retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**<br><br>*Failure codeunit*<br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will not be retried. Reason: Exception is not retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**|
 |severityLevel|**2**|
 
 ### Custom dimensions
@@ -180,7 +178,7 @@ The following table explains the general dimensions of this trace.
 
 ## Task failed
 
-Occurs when the execution of task's main codeunit or failure codeunit fails because of an exception.
+Occurs when the execution of task's main codeunit or failure codeunit fails because of an exception thrown by the AL runtime.
 
 ### General dimensions
 
@@ -217,11 +215,45 @@ The following table explains the general dimensions of this trace.
 |totalTime|Specifies the amount of time it took to create the company. The time has the format hh:mm:ss.sssssss.|
 |[See common custom dimensions](#other)||
 
+### Analyzing report generation failures
+
+When a task fails, the `failureReason` column in the CustomDimensions will include the name of the exception that was thrown by the AL runtime.  
+
+### Sample KQL code (failed tasks)
+
+This KQL code can help you get started analyzing task failures:
+
+```kql
+// Task failed
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where customDimensions has 'LC0045' // for performance 
+| where customDimensions.eventId == 'LC0045'
+| project timestamp
+// in which environment/company did it happen
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+// what codeunit to run
+, codeunitObjectId = customDimensions.codeunitObjectId
+, failureCodeunitObjectId = customDimensions.failureCodeunitObjectId
+// task info
+, formatId = customDimensions.formatId
+, isReady = customDimensions.isReady
+, languageId = customDimensions.languageId
+, notBefore = customDimensions.notBefore
+, taskId = customDimensions.taskId
+, timeout = customDimensions.timeout
+// execution info
+, failureReason = customDimensions.failureReason // this contains the name of the exception thrown by the AL runtime
+```
+
 ## Task completed
 
 Occurs when the execution of a task's main codeunit or failure codeunit succeeds with no errors.
 
-Note that there is no event emitted for task started. You can infer the task-start time by subtracting the totalTime from the task completed timestamp.
+There's no event emitted for task started. You can infer the task-start time by subtracting the totalTime from the task completed timestamp.
 
 ### General dimensions
 
@@ -256,7 +288,52 @@ The following table explains the general dimensions of this trace.
 |totalTime|Specifies the amount of time it took to run the codeunit. The time has the format hh:mm:ss.sssssss.|
 |[See common custom dimensions](#other)||
 
-## See also
+## Task timeout changed because it was exceeding the max timeout value
 
-[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+**INTRODUCED IN:** Version 22.0 
+
+Occurs if the timeout defined on a task exceeds that maximum timeout allowed by the server. The task is then assigned the timeout that's equal to the maximum timeout allowed by the server.
+
+> [!NOTE]
+> For Business Central online, the maximum timeout allowed is 23:59:59. For Business Central on-premises, the maximum timeout allowed is determined by the `MaxTaskSchedulerSessionTimeout` setting on the Business Central server instance (for more information, see [Configure Business Central Server](configure-server-instance.md#Task).
+
+### General dimensions
+
+The following table explains the general dimensions of this trace.
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Task {taskId} timeout changed to: {timeout} because it was exceeding the max timeout value.**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+
+|Dimension|Description or value|
+|---------|-----|-----------|
+|eventId|**LC0057**|
+|attemptNumber|Specifies the retry attempt on the codeunit. **0** indicates the initial run of the codeunit, not a retry.|
+|codeunitObjectId|Specifies the ID of the task's main codeunit.|
+|failureCodeunitObjectId|Specifies the ID of the task's failure codeunit. **0** indicates that there's no failure codeunit.|
+|isReady|Specifies whether the task is in the ready state. **True** indicates that the task is in the ready state. **False** indicates that the task isn't in the ready state.|
+|notBefore|Specifies the earliest date and time that was scheduled to run.|
+|result| **Success**|
+|serverExecutionTime|Specifies the amount of time it took the server to run the codeunit. The time has the format hh:mm:ss.sssssss.|
+|sessionId|Specifies the unique identifier of the session in which the task was run.|
+|sqlExecutes|Specifies the number of SQL statements that were executed.|
+|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
+|taskId|Specifies the unique identifier assigned to the task.|
+|timeout|Specifies the timeout that was set on the task. The time has the format hh:mm:ss.sssssss.|
+|totalTime|Specifies the amount of time it took to run the codeunit. The time has the format hh:mm:ss.sssssss.|
+|[See common custom dimensions](#other)||
+
+## Task scheduler and performance
+
+[!INCLUDE[task_job_queue_performance](../includes/include-task-job-queue-performance.md)]
+
+
+## See also
+[Task Scheduler](../developer/devenv-task-scheduler.md)   
+[Telemetry overview](telemetry-overview.md)  
+[Enabling Telemetry](telemetry-enable-application-insights.md)  
+[Alert on Telemetry](telemetry-alert.md)  

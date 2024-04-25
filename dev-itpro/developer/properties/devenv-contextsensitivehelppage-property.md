@@ -2,10 +2,7 @@
 title: "ContextSensitiveHelpPage Property"
 description: "Specifies the help topic to show when the user presses Help in the UI."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -21,6 +18,7 @@ Specifies the help topic to show when the user presses Help in the UI. The help 
 ## Applies to
 -   Page
 -   Request Page
+-   Query
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

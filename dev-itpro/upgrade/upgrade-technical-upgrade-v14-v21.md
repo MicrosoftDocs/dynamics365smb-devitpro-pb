@@ -1,11 +1,8 @@
 ---
 title: "Technical Upgrade From Version 14 to Version 21"
 description: Describes how to do a technical upgrade from Business Central 14 to 21
-ms.custom: na
-ms.date: 03/09/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -14,7 +11,7 @@ author: jswymer
 
 Use this process when you have a code customized [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 platform (version 21). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
 
-[![Upgrade on customized Business Central application.](../developer/media/bc14-to-21-technical-upgrade-unmodified-app.png)](../developer/media/bc14-to-21-technical-upgrade-unmodified-app.png#lightbox)  
+[![Upgrade on customized Business Central application.](../developer/media/bc14-to-22-technical-upgrade-unmodified-app.png)](../developer/media/bc14-to-21-technical-upgrade-unmodified-app.png#lightbox)  
  
 ## General information
  

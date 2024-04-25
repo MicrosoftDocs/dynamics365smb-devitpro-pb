@@ -1,11 +1,8 @@
 ---
 title: "Technical Upgrade from Version 15 to Version 17" 
 description: Describes how to do a technical upgrade from Business Central 15 to 17
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -75,7 +72,7 @@ For the base application or system application extensions, you'll have to create
     - Set `"platform"` to `17.0.0.0`
     - Set `"target"` to `OnPrem`
 
-    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#Appjson).
+    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#appjson-file).
 5. In the **dotnet.al** files in the project, find and delete all instances of `Version = '15.0.0.0';` in **Microsoft.Dynamics.Nav** and  **Microsoft.Dynamics.Framework** assembly declarations.
 
 6. Rewrite code that references the deprecated table to reference the new tables.

@@ -2,10 +2,7 @@
 title: "XmlAttribute Data Type"
 description: "Represents an XML attribute."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -19,6 +16,7 @@ author: SusanneWindfeldPedersen
 Represents an XML attribute.
 
 
+## Static methods
 The following methods are available on the XmlAttribute data type.
 
 
@@ -28,6 +26,7 @@ The following methods are available on the XmlAttribute data type.
 |[Create(Text, Text, Text)](xmlattribute-create-string-string-string-method.md)|Creates an XmlAttribute node.|
 |[CreateNamespaceDeclaration(Text, Text)](xmlattribute-createnamespacedeclaration-method.md)|Creates an attribute that represents a namespace declaration.|
 
+## Instance methods
 The following methods are available on instances of the XmlAttribute data type.
 
 |Method name|Description|
@@ -39,7 +38,7 @@ The following methods are available on instances of the XmlAttribute data type.
 |[GetParent(var XmlElement)](xmlattribute-getparent-method.md)|Gets the parent XmlElement of this node.|
 |[IsNamespaceDeclaration()](xmlattribute-isnamespacedeclaration-method.md)|Determines if this attribute is a namespace declaration.|
 |[LocalName()](xmlattribute-localname-method.md)|Gets the local name of the attribute.|
-|[Name()](xmlattribute-name-method.md)|The qualified name of the attribute. |
+|[Name()](xmlattribute-name-method.md)|The qualified name of the attribute.|
 |[NamespacePrefix()](xmlattribute-namespaceprefix-method.md)|Gets the prefix of the attribute (if any).|
 |[NamespaceUri()](xmlattribute-namespaceuri-method.md)|Gets the namespace URI of the attribute.|
 |[Remove()](xmlattribute-remove-method.md)|Removes this node from its parent element.|

@@ -1,14 +1,12 @@
 ---
 title: Apply Company Configuration Packages
 description: Streamline your implementation process by using configuration packages with standard settings and to migrate customer data.
-author: edupont04
+author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.form: 1799, 1807, 8632, 1800, 1340, 8610, 8614, 8615, 8620, 8632
 ms.date: 04/07/2022
-ms.author: edupont
+ms.author: jswymer
 
 ---
 # Apply Company Configuration Packages
@@ -36,6 +34,11 @@ From both the **Configuration Worksheet** page and the **Configuration Package**
 - If mapping information is defined in both places, for the field directly and for the primary key in the related table, then [!INCLUDE[prod_short](../includes/prod_short.md)] will search for the mapping in both places.  
 
 - If the same mappings are defined directly for a field and in the related table, but have different new values, the mapping that is defined directly for the field takes priority over the mapping that is defined for the table that the field is referencing.  
+
+> [!IMPORTANT]
+> Use RapidStart configuration packages only when setting up a company for the first time. Configuration packages aren't intended to be used for companies that are already in production. Using configuration packages to import large amounts of data can impact performance and prevent all users from using Business Central during the process.
+>
+> For companies that are in production, we strongly recommend that you use an XMLport to import and export data. Learn more at [XMLport Overview](../developer/devenv-xmlport-overview.md).  
 
 ### Import data from Excel
 

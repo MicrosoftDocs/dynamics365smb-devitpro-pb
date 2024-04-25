@@ -2,10 +2,7 @@
 title: "AppSourceCop Error AS0068"
 description: "Changing the target of a table extension that has been published is not allowed, because this might break the upgrade of existing installations and dependent extensions."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

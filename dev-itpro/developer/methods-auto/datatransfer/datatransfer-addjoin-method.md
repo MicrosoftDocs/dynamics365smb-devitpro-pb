@@ -2,10 +2,7 @@
 title: "DataTransfer.AddJoin(Integer, Integer) Method"
 description: "Adds a field pair to be used to create a join condition which determines which rows to transfer, optional for same table transfers."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/11/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -39,6 +36,19 @@ The destination table field.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+[!INCLUDE[data-transfer](../../../developer/includes/data-transfer.md)]
+
+Use this method to create a join condition between tables when copying fields from one table to the other. For more information, see [Transferring Data Bewteen Tables](../../../developer/devenv-data-transfer.md).
+
+This method isn't needed when copying withing the same table.
+
+## Example
+
+[!INCLUDE[data-transfer-example-copy-fields](../../../developer/includes/data-transfer-example-copy-fields.md)]
+
 ## See Also
 [DataTransfer Data Type](datatransfer-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

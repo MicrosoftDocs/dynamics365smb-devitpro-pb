@@ -2,11 +2,9 @@
 title: purchaseInvoiceLine resource type  
 description: A purchase invoice line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.topic: reference
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -41,6 +39,7 @@ Represents a purchase invoice line in [!INCLUDE[prod_short](../../../includes/pr
 |[unitOfMeasure](dynamics_unitofmeasure.md)|unitOfMeasure |Gets the unitofmeasure of the purchaseInvoiceLine.|
 |[itemVariant](dynamics_itemvariant.md)|itemVariant |Gets the itemvariant of the purchaseInvoiceLine.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the purchaseInvoiceLine.|
+|[location](dynamics_location.md)|location |Gets the location of the purchaseInvoiceLine.|
 
 ## Properties
 
@@ -54,6 +53,7 @@ Represents a purchase invoice line in [!INCLUDE[prod_short](../../../includes/pr
 |lineType|NAV.invoiceLineAggLineType|The type of the purchase invoice line. It can be "Comment", "Account", "Item", "Resource" Value", "Fixed Asset" or "Charge".|
 |lineObjectNumber|string|The number of the object (account or item) of the purchase invoice line.|
 |description|string|Specifies the description of the purchase invoice line.|
+|description2|string||
 |unitOfMeasureId|GUID|The ID of unit of measure for the purchase invoice line.|
 |unitOfMeasureCode|string|The code of unit of measure for the purchase invoice line.|
 |unitCost|decimal|The unit cost of each individual item in the purchase invoice line.|
@@ -72,6 +72,7 @@ Represents a purchase invoice line in [!INCLUDE[prod_short](../../../includes/pr
 |netAmountIncludingTax|decimal|The net amount including tax is the total net amount including tax. Read-Only.|
 |expectedReceiptDate|date|The date the item in the line is expected to be received.|
 |itemVariantId|GUID|The ID of the item variant in the purchase invoice line.|
+|locationId|GUID||
 
 ## JSON representation
 
@@ -88,6 +89,7 @@ Here is a JSON representation of the purchaseInvoiceLine resource.
     "lineType": "NAV.invoiceLineAggLineType",
     "lineObjectNumber": "string",
     "description": "string",
+    "description2": "string",
     "unitOfMeasureId": "GUID",
     "unitOfMeasureCode": "string",
     "unitCost": "decimal",
@@ -105,7 +107,8 @@ Here is a JSON representation of the purchaseInvoiceLine resource.
     "netTaxAmount": "decimal",
     "netAmountIncludingTax": "decimal",
     "expectedReceiptDate": "date",
-    "itemVariantId": "GUID"
+    "itemVariantId": "GUID",
+    "locationId": "GUID"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->

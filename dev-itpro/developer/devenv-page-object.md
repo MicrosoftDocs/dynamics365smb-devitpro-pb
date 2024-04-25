@@ -1,17 +1,13 @@
 ---
-title: "Page Object"
+title: Page object
 description: "Description of the page object in AL for Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Page Object
+# Page object
 
 Pages are the main way to display and organize visual data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. They are the primary object that a user will interact with and have a different behavior based on the type that you choose. Pages are designed independently of the device they are to be rendered on, and in this way the same page can be reused across phone, tablet, and web clients. 
 
@@ -33,6 +29,12 @@ Typing the shortcut `tpage` will create the basic layout for a page object when 
 
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
+## Add tooltips on page fields
+
+Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that uses the field automatically inherits the tooltip. 
+
+For more information, see [Add tooltips to table and page fields](devenv-adding-tooltips.md).
 
 ## Views
 

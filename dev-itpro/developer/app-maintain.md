@@ -1,14 +1,13 @@
 ---
 title: "Maintain AppSource apps and per-tenant extensions"
 description: "Learn about resources available to you as the publisher of an app or per-tenant extension for keeping your code in compliance with the base product."
-author: edupont04
-ms.custom: na
-ms.date: 08/15/2022
+author: solsen
+ms.date: 02/28/2024
 ms.topic: conceptual
-ms.author: edupont
+ms.author: solsen
 ---
 
-# Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online
+# Maintain AppSource apps and Per-Tenant extensions in Business Central online
 
 As a partner, keeping your apps and per-tenant extensions (PTEs) up to date is your responsibility. [!INCLUDE [prod_short](includes/prod_short.md)] is regularly updated with major and minor releases. These updates provide customers with a business application that is always compliant, secure, and enriched with new platform and application functionality. Often customers choose [!INCLUDE [prod_short](includes/prod_short.md)] because of this promise of having an always up-to-date business solution.  
 
@@ -56,9 +55,9 @@ If publishers lack to keep their code updatable, they risk that ultimately their
 
 Since resellers are the first line contact point for customers, they carry responsibility to explain what it means to load code in a customer's environment. The best way is to explain this is with terms.  
 
-We advise these terms include topics like intellectual property rights, upgrade responsibilities, associated costs to keep code updatable, support options, data privacy, and so on.  
+We advise these terms include articles like intellectual property rights, upgrade responsibilities, associated costs to keep code updatable, support options, data privacy, and so on.  
 
-## Pre-release publisher support to keep apps and PTEs compatible and up-to date
+## Pre-release publisher support to keep apps and PTEs compatible and up-to-date
 
 Publishers have several tools available for them to keep their code in good shape. Not least, a Public Preview release is made available approximately one month before the announced release date for a major release. In that Public Preview release time frame, [!INCLUDE [prod_short](includes/prod_short.md)] will automatically test and notify publishers of existing apps and PTEs running in production on technical incompatibility with the upcoming release.  
 
@@ -68,7 +67,7 @@ Publishers have several tools available for them to keep their code in good shap
 > [!NOTE]  
 > If an app has been published through AppSource, it should not be tested, installed, or in other ways treated as a PTE since this will create conflicts.
 
-## When apps or PTEs cannot be updated by Microsoft
+## When apps or PTEs can't be updated by Microsoft
 
 This section describes the processes that are initiated during and after upgrade attempts of code provided by publishers of apps or PTEs. For information about handling a PTE that has conflicts with another extension, see [Upgrading Per-Tenant Extensions that Conflicts with Other Extensions](../upgrade/upgrade-pte-merge-conflict.md).
 
@@ -94,7 +93,7 @@ This section describes the processes that are initiated during and after upgrade
 
 - **T+60 – T+150**: Microsoft initiates the customer wind-down period
 
-    If the incompatibility issues are not resolved at **T+60**, and the publisher remained unresponsive to the request to resolve the incompatibility, Microsoft may choose to send out a wind-down communication to the customer about removal of the publisher's code.  
+    If the incompatibility issues aren't resolved at **T+60**, and the publisher remained unresponsive to the request to resolve the incompatibility, Microsoft might choose to send out a wind-down communication to the customer about removal of the publisher's code.  
 
     This communication will share that the code from the publisher will be removed in *90* days from the day of the communication from Microsoft (**T+150**).  
 
@@ -106,7 +105,7 @@ This section describes the processes that are initiated during and after upgrade
 
 ## Get notified about incompatibilities by Microsoft
 
-It is crucial for you to keep contact details correctly up to date. We advise you to use global team aliases instead of individual mail addresses. Here are the mail addresses that we'll use in the process that is described in the [When apps or PTEs cannot be updated by Microsoft](#when-apps-or-ptes-cannot-be-updated-by-microsoft) section:  
+It's crucial for you to keep contact details correctly up to date. We advise you to use global team aliases instead of individual mail addresses. Here are the mail addresses that we'll use in the process that is described in the [When apps or PTEs can't be updated by Microsoft](#when-apps-or-ptes-cannot-be-updated-by-microsoft) section:  
 
 - PTE publishers
 

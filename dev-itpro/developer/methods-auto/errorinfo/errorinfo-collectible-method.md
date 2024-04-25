@@ -2,10 +2,7 @@
 title: "ErrorInfo.Collectible([Boolean]) Method"
 description: "Specifies if the error is collectible using ErrorBehavior.Collect."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/24/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -42,7 +39,40 @@ The current collectible of the ErrorInfo.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example (get the Collectible property)
+
+```AL
+procedure myErrorHandlerProc( MyErrorInfo: ErrorInfo )
+var 
+    IsErrorCollectible: Boolean;
+begin
+    IsErrorCollectible := MyErrorInfo.Collectible();
+
+    // do something 
+end
+```
+
+## Example (set the Collectible property)
+
+```AL
+var 
+    MyErrorInfo: ErrorInfo;
+begin
+    // setup the error info object: Define Message, DetailedMessage etc.
+
+    // set MyErrorInfo to be collectible
+    MyErrorInfo.Collectible(true);
+
+    Error(MyErrorInfo);    
+end
+```
+
+
 ## See Also
+
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[Collecting Errors](../../devenv-error-collection.md)  
+[AL error handling](../../devenv-al-error-handling.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

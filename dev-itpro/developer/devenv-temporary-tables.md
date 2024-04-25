@@ -1,30 +1,33 @@
 ---
-title: "Temporary Tables"
-description: Learn about temporary tables in Business Central 
-ms.custom: na
-ms.date: 04/01/2021
+title: Temporary tables
+description: Learn about temporary tables in AL for Business Central.
+ms.custom: bap-template
+ms.date: 04/17/2024
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-author: blrobl
+author: SusanneWindfeldPedersen
+ms.author: solsen
 ---
 
-# Temporary Tables
+# Temporary tables
 
 A temporary table is a temporary variable that holds a table. A temporary table is used as a buffer or intermediate storage for table data.
 
 You can use a temporary table just like you use a database table. The differences between a temporary table and a database table are as follows:  
 
 - A temporary table data isn't stored in the database. It's only held in memory until the table is closed.  
-
 - The write transaction principle that applies to a database table doesn't apply to a temporary table.  
+
+> [!TIP]  
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1 IntelliSense, tooltips, and CodeLens displays a suffix after the table name to indicate when a table is a temporary table.
 
 ## Advantage of using a temporary table  
 
 The advantage of using a temporary table is that all the interaction with a temporary table occurs on [!INCLUDE[prod_long](includes/prod_long.md)]. A temporary table reduces the load on both the network and the SQL database server.  
 
 When you want to do many operations on the data in a specific database table, you can load the data into a temporary table when you modify it. Loading the data into a temporary table speeds up the process because all the operations are done in memory on the [!INCLUDE[server](includes/server.md)].
+
+For endpoint performance and temporary tables, see [Anti-patterns (don't do this)](../performance/performance-developer.md#general-anti-patterns-dont-do-this).
 
 ## Creating and using a temporary table
 

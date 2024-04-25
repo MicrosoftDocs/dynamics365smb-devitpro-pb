@@ -2,11 +2,9 @@
 title: pdfDocument resource type  
 description: A pdf document object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.topic: reference
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -36,6 +34,7 @@ Represents a pdf document in [!INCLUDE[prod_short](../../../includes/prod_short.
 |[salesQuote](dynamics_salesquote.md)|salesQuote |Gets the salesquote of the pdfDocument.|
 |[salesCreditMemo](dynamics_salescreditmemo.md)|salesCreditMemo |Gets the salescreditmemo of the pdfDocument.|
 |[purchaseInvoice](dynamics_purchaseinvoice.md)|purchaseInvoice |Gets the purchaseinvoice of the pdfDocument.|
+|[purchaseCreditMemo](dynamics_purchasecreditmemo.md)|purchaseCreditMemo |Gets the purchasecreditmemo of the pdfDocument.|
 
 ## Properties
 

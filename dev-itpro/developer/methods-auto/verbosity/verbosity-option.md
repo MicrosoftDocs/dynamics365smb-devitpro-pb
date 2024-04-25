@@ -2,10 +2,7 @@
 title: "Verbosity System Option"
 description: "Represents the security level of events."
 ms.author: solsen
-ms.custom: na
-ms.date: 05/11/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -21,13 +18,14 @@ Represents the security level of events.
 ## Members
 |  Member  |  Description  |
 |----------------|---------------|
-|Critical| Identifies an abnormal exit or termination event.|
+|Critical|Identifies an abnormal exit or termination event.|
 |Error|Identifies a severe error event.|
 |Warning|Identifies a warning event such as an allocation failure.|
 |Normal|Identifies a non-error event such as an entry or exit event.|
 |Verbose|Identifies a detailed trace event.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

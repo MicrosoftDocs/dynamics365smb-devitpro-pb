@@ -2,11 +2,7 @@
 title: Designing Card Pages
 description: "Provides and overview of card page design"
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ---
@@ -33,7 +29,7 @@ Both page types are typically associated with list pages (like the customers or 
 
 In the client, users can personalize card pages by rearranging or hiding content as they like. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user). 
 
-As a developer or administrator, you can use Designer to customize a card and document page the same way that individual users personalize their own work spaces. The difference is that changes you make are applied to all users. For more information, see [Using Designer](devenv-inclient-designer.md). 
+As a developer or administrator, you can use Designer to customize a card and document page the same way that individual users personalize their own work spaces. The difference is that changes you make are applied to all users. For more information, see [Use Designer](devenv-inclient-designer.md). 
 
 ## [Structure](#tab/structure)
 
@@ -42,7 +38,7 @@ As a developer or administrator, you can use Designer to customize a card and do
 A card page is defined by a page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. 
 For a simple code example of a list page, see [Simple Card Page Example](devenv-simple-card-page-example.md).
 
-A document page is defined by a page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Document`. A document page is also includes a `part()` control that embeds another page into the document page. This is typically that displays line items from the associated transaction or event.
+A document page is defined by a page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Document`. A document page also includes a `part()` control that embeds another page into the document page. This typically displays line items from the associated transaction or event.
 
 ### Structure
 
@@ -122,4 +118,4 @@ Only promoted actions will display on mobile devices, so make sure you promote t
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  

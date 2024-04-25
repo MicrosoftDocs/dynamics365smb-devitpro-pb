@@ -7,10 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: solsen
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 31a1fbeb-a4b4-452d-8cf4-4937c0f87479
 caps.latest.revision: 4
-manager: edupont
 ---
 # Keyboard Shortcuts
 The following table provides an overview of shortcut key combinations in the [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)].

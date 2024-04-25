@@ -2,10 +2,7 @@
 title: "Database Data Type"
 description: "Provides access to common database functionality."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -19,11 +16,13 @@ author: SusanneWindfeldPedersen
 Provides access to common database functionality.
 
 
+## Static methods
 The following methods are available on the Database data type.
 
 
 |Method name|Description|
 |-----------|-----------|
+|[AlterKey(KeyRef, Boolean)](database-alterkey-method.md)|Alter a table's key in SQL, either disabling or enabling it. Any alteration only pertains to the current transaction and will be reverted at the end of the current transaction. Any alteration will fail if it's called on System or non-SQL based tables. Disabling clustered or unique keys is also not supported and will fail at runtime.|
 |[ChangeUserPassword(Text, Text)](database-changeuserpassword-method.md)|Changes the password for the current user.|
 |[CheckLicenseFile(Integer)](database-checklicensefile-method.md)|Checks a key in the license file of the system.|
 |[Commit()](database-commit-method.md)|Ends the current write transaction.|
@@ -35,6 +34,7 @@ The following methods are available on the Database data type.
 |[GetDefaultTableConnection(TableConnectionType)](database-getdefaulttableconnection-method.md)|Gets the default table connection based on the specified connection type. You must already have registered a table connection of this type.|
 |[HasTableConnection(TableConnectionType, Text)](database-hastableconnection-method.md)|Verifies if a connection to an external database exists based on the specified name.|
 |[ImportData(Boolean, var Text [, Boolean] [, Boolean] [, Record])](database-importdata-method.md)|Imports data from a file that has been exported from a database.|
+|[IsInWriteTransaction()](database-isinwritetransaction-method.md)|Checks whether or not you are in a write transaction.|
 |[LastUsedRowVersion()](database-lastusedrowversion-method.md)|Gets the last used RowVersion from the database.|
 |[LockTimeout([Boolean])](database-locktimeout-method.md)|Determines whether the lock time-out setting is set to On. You can also use this method to override the default setting.|
 |[MinimumActiveRowVersion()](database-minimumactiverowversion-method.md)|Returns the lowest active RowVersion in the database. This is the lowest RowVersion for an uncomitted row, meaning rows with a lower timestamp than this value are guaranteed to be comitted. If there are no active transactions, this value is equal to LastUsedRowVersion + 1.|

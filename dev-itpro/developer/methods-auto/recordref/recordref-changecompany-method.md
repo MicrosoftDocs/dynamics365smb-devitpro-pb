@@ -2,10 +2,7 @@
 title: "RecordRef.ChangeCompany([Text]) Method"
 description: "Redirects references to table data from one company to another."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -42,7 +39,7 @@ The name of the company to which you want to change. If you omit this parameter,
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-When executing this method, the user's access rights are respected. For example, a user cannot access data in *CompanyName* unless he already has the necessary access rights.  
+When executing this method, the user's access rights are respected. For example, a user cannot access data in *CompanyName* unless they already have the necessary access rights.  
 
 The **ChangeCompany** method is not affected by the [Reset Method (RecordRef)](recordref-reset-method.md). You can deselect a company by making a new call to **ChangeCompany** or by using the [Clear Method](../system/system-clear-joker-method.md).  
 

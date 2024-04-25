@@ -2,10 +2,8 @@
 title: CREATE projects  
 description: Creates a project object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -24,16 +22,17 @@ POST businesscentralPrefix/companies({id})/projects
 
 ## Request headers
 
-|Header         |Value                    |
-|---------------|-------------------------|
-|Authorization  |Bearer {token}. Required.|
-|Content-Type   |application/json         |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **project**, the **project** will not be updated. |
 
 ## Request body
-In the request body, supply a JSON representation of **projects** object.
+In the request body, supply a JSON representation of **project** object.
 
 ## Response
-If successful, this method returns ```201 Created``` response code and a **projects** object in the response body.
+If successful, this method returns ```201 Created``` response code and a **project** object in the response body.
 
 ## Example
 
@@ -46,7 +45,6 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/projects
 Content-type: application/json
 
 {
-    "id": "22d7a1c5-bde4-ea11-bbf2-00155df3a615",
     "number": "DEERFIELD, 8 WP",
     "displayName": "Setting up Eight Work Areas"
 }

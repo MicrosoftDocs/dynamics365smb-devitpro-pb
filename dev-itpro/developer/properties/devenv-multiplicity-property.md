@@ -2,10 +2,7 @@
 title: "Multiplicity Property"
 description: "Specify the multiplicity of the part."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,10 +20,10 @@ Specify the multiplicity of the part.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**ZeroOrOne**|Zero or one entity|
-|**Many**|Any number of entities.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**ZeroOrOne**|runtime version 6.3|Zero or one entity|
+|**Many**|runtime version 6.3|Any number of entities.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

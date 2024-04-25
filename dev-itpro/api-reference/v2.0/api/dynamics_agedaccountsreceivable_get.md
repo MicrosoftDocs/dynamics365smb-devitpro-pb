@@ -2,11 +2,9 @@
 title: Get agedAccountsReceivable  
 description: Gets an aged accounts receivable object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.topic: reference
+ms.devlang: al
+ms.date: 02/01/2023
 ms.author: solsen
 ---
 
@@ -19,7 +17,7 @@ Retrieve the properties and relationships of an aged accounts receivable report 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-GET businesscentralPrefix/companies({id})/agedAccountsReceivable
+GET businesscentralPrefix/companies({id})/agedAccountsReceivables({customerId})
 ```
 
 ## Request headers
@@ -41,7 +39,7 @@ If successful, this method returns a ```200 OK``` response code and an **agedAcc
 Here is an example of the request.
 
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/agedAccountsReceivable
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/agedAccountsReceivables({customerId})
 ```
 
 **Response**

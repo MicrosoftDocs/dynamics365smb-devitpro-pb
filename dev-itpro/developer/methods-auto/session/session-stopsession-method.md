@@ -2,10 +2,7 @@
 title: "Session.StopSession(Integer [, Text]) Method"
 description: "Stops a session."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -34,13 +31,11 @@ The ID of the session that you want to stop.The session can be any of the follow
 -   NAS services session
 -   SOAP web services client session
 -   OData web services client session
--   Background session
-          
+-   Background session  
 
 *[Optional] Comment*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-An optional comment about the session event. The comment is stored in Table 2000000111, the Session Event table.
-          
+An optional comment about the session event. The comment is stored in Table 2000000111, the Session Event table.  
 
 
 ## Return Value

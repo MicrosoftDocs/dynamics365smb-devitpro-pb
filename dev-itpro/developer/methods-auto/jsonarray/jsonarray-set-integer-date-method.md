@@ -2,10 +2,7 @@
 title: "JsonArray.Set(Integer, Date) Method"
 description: "Replaces the value at the given index with a new value."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -31,6 +28,7 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
   
+
 *Result*  
 &emsp;Type: [Date](../date/date-data-type.md)  
   
@@ -43,6 +41,12 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+> [!NOTE]  
+> The JsonArray is 0-based by design.
+
 ## See Also
 [JsonArray Data Type](jsonarray-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

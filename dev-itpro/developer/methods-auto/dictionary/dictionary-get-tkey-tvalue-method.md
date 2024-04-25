@@ -2,10 +2,7 @@
 title: "Dictionary.Get(TKey, var TValue) Method"
 description: "Gets the value associated with the specified key."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,8 @@ An instance of the [Dictionary](dictionary-data-type.md) data type.
 
 *Key*  
 &emsp;Type: [TKey](dictionary-data-type.md)  
-The key of the value to get. If the specified key is not found an error will be reported.
-        
+The key of the value to get. If the specified key is not found an error will be reported.  
+
 *Value*  
 &emsp;Type: [TValue](dictionary-data-type.md)  
 The value associated with the specified key.  

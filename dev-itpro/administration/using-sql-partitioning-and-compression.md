@@ -1,13 +1,15 @@
 ---
-title: "Using Table Partitioning and Data Compression"
+title: Using Table Partitioning and Data Compression
 description: Learn how to use table partitioning and data compression to improve data access performance in Business Central online.
-ms.custom: na
-ms.date: 05/16/2022
-ms.service: "dynamics365-business-central"
+ms.custom: bap-template
+ms.date: 06/14/2023
 ms.search.keywords: data access,sql,partitioning,constraints
 author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: conceptual
 ---
-# Using Table Partitioning and Data Compression"
+# Using table partitioning and data compression
 
 The use of SQL Server table/index partitioning and data compression are supported configurations for on-premises installations of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. 
 
@@ -114,6 +116,9 @@ However, extra CPU resources are required on the database server to compress and
 
 With the **CompressionType** property, you can configure row or page type compression or configure the table not to use compression. With these compression settings, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] table synchronization process will make changes to the SQL Server table, overwriting the current compression type, if any. You can choose to control data compression directly on SQL Server by setting the **CompressionType** property to **Unspecified**, in which case table synchronization process won't control the data compression.
 
+> [!NOTE]
+> In the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], tables are compressed with **CompressionType** set to **Page**.
+
 To evaluate whether a table is a good candidate to compress, you can use the stored procedure `sp_estimate_data_compression_savings` in SQL Server. For more information, see [sp_estimate_data_compression_savings (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-estimate-data-compression-savings-transact-sql).
 
 Because SQL Server supports data compression on the partition level, you can combine SQL Server data compression with table partitioning to achieve flexible data archiving on historical parts of a large table, without having the CPU overhead on the active part of the table.
@@ -133,7 +138,7 @@ ALTER TABLE ADD CONSTRAINT constraint_name DEFAULT default_value FOR field_name
 
 The name of the default constraint isn't important, as long as it isn't used by another column in the database.
 
-
 ## See Also
+
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)  
 [Table Keys](../developer/devenv-table-keys.md)  

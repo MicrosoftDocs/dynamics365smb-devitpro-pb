@@ -1,11 +1,8 @@
 ---
 title: "Compiler Error AL1064"
-description: "Key vault URL is not a valid URL."
+description: "Key vault URL is not a valid Azure key vault URL."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -17,7 +14,8 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Key vault URL is not a valid URL.
+Key vault URL is not a valid Azure key vault URL. A valid key vault URL must use HTTPS and point to the Azure key vault domain.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

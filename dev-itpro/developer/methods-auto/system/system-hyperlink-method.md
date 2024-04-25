@@ -2,10 +2,7 @@
 title: "System.Hyperlink(Text) Method"
 description: "Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -28,7 +25,7 @@ Passes a URL as an argument to an Internet browser, such as Windows Internet Exp
 ## Parameters
 *URL*  
 &emsp;Type: [Text](../text/text-data-type.md)  
- A URL that is passed to the Internet browser as an argument.  
+A URL that is passed to the Internet browser as an argument.  
 
 
 

@@ -1,14 +1,11 @@
 ---
 title: "Monitoring Business Central Server Events in Event Viewer"
 description: Learn about using event viewer to monitor Business Central Server instances
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.assetid: da2944cc-063d-452d-968c-23b90c547600
-caps.latest.revision: 28
 ---
 # Monitoring Business Central Server Events Using Event Viewer
 Events that occur on the [!INCLUDE[server](../developer/includes/server.md)] instances can be recorded in event logs on the computer that is running [!INCLUDE[server](../developer/includes/server.md)]. You can view the events by using Event Viewer.  
@@ -35,7 +32,7 @@ The **Common** folder contains telemetry events from the event trace provider ca
       
 |Log|Description|  
 |---------|-----------------|  
-|Admin|Includes custom telemetry trace events that are emitted from the application. These are events that are sent by [SENDTRACETAG method](../developer/methods-auto/library.md) calls from inside the application. <br /><br /> For more information, see [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md).<br /><br /> **Note** The [!INCLUDE[server](../developer/includes/server.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of telemetry events to be recorded in the event log, or even turn off telemetry event logging altogether. If you do not see the expected events, then verify the [!INCLUDE[server](../developer/includes/server.md)] instance configuration with an administrator. For information, see [Configuring Business Central Server](configure-server-instance.md#General).|  
+|Admin|Includes custom telemetry trace events that are emitted from the application. These are events that are sent by [SENDTRACETAG method](../developer/methods-auto/library.md) calls from inside the application. <br /><br /> For more information, see [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md).<br /><br /> **Note** The [!INCLUDE[server](../developer/includes/server.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of telemetry events to be recorded in the event log, or even turn off telemetry event logging altogether. If you do not see the expected events, then verify the [!INCLUDE[server](../developer/includes/server.md)] instance configuration with an administrator. For information, see [Configuring Business Central Server](configure-server-instance.md#general-settings).|  
 |Operational|Not applicable.|  
 |Debug|Includes system telemetry trace events that occur.<br /><br /> **Note:** In Event Viewer, this log is hidden and disabled by default. For information about how to show and enable this log, see [Enable Business Central Debug Logs in Event Viewer](use-Event-Viewer-Collect-View-Trace-Events.md).|  
   

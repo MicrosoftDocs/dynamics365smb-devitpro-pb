@@ -4,10 +4,8 @@ description: Creates a attachment object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -28,10 +26,11 @@ POST businesscentralPrefix/companies({companyId})/employees({employeeId})/timeRe
 
 ## Request headers
 
-|Header        |Value                     |
-|--------------|--------------------------|
-|Authorization |Bearer {token}. Required. |
-|Content-Type  |application/json          |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **timeRegistrationEntry**, the **timeRegistrationEntry** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **timeRegistrationEntries** object.
@@ -48,22 +47,15 @@ Here is an example of a request.
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/timeRegistrationEntries
 Content-type: application/json
-```json
+
 {
-    "id": "1a8b1fec-c0e3-ea11-aa60-000d3ad7cacb",
     "employeeId": "258bb9c0-44e3-ea11-bb43-000d3a2feca1",
     "employeeNumber": "AH",
     "jobId": "00000000-0000-0000-0000-000000000000",
     "jobNumber": "",
     "jobTaskNumber": "",
-    "absence": "",
-    "lineNumber": 10000,
     "date": "2019-02-02",
-    "quantity": 5,
-    "status": "Open",
-    "unitOfMeasureId": "56a6738a-44e3-ea11-bb43-000d3a2feca1",
-    "unitOfMeasureCode": "HOUR",
-    "lastModfiedDateTime": "2020-08-21T15:13:58.87Z"
+    "quantity": 5
 }
 ```
 *EmployeeId* can be used instead of *employeeNumber*.

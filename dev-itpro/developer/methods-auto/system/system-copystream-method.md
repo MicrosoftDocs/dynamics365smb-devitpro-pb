@@ -2,10 +2,7 @@
 title: "System.CopyStream(OutStream, InStream [, Integer]) Method"
 description: "Copies the information that is contained in an InStream to an OutStream."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -28,12 +25,12 @@ Copies the information that is contained in an InStream to an OutStream.
 ## Parameters
 *OutStream*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
-The OutStream object to which you will copy the information; the destination stream.
-        
+The OutStream object to which you will copy the information; the destination stream.  
+
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
-The InStream object from which you want to copy; the source stream.
-        
+The InStream object from which you want to copy; the source stream.  
+
 *[Optional] BytesToRead*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
   

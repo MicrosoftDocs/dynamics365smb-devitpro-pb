@@ -2,10 +2,8 @@
 title: CREATE paymentTerms  
 description: Creates a paymentTerm object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -25,9 +23,10 @@ POST businesscentralPrefix/companies({id})/paymentTerms
 ## Request headers
 
 |Header|Value|
-|---------------|-----------------------------|
-|Authorization  |Bearer {token}. Required.    |
-|Content-Type   |application/json             |
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **paymentTerm**, the **paymentTerm** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **paymentTerms** object.
@@ -46,14 +45,12 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/paymentTerms
 Content-type: application/json
 
 {
-    "id": "01a5738a-44e3-ea11-bb43-000d3a2feca1",
     "code": "10 DAYS",
     "displayName": "Net 10 days",
     "dueDateCalculation": "10D",
     "discountDateCalculation": "",
     "discountPercent": 0,
-    "calculateDiscountOnCreditMemos": false,
-    "lastModifiedDateTime": "2020-08-21T00:24:12.633Z"
+    "calculateDiscountOnCreditMemos": false
 }
 ```
 

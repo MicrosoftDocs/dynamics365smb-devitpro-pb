@@ -1,0 +1,1 @@
+Specifies the number of table rows that were read by the SQL statements during the operation.

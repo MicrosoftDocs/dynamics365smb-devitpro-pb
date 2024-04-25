@@ -1,8 +1,8 @@
 ---
-author: edupont04
+author: solsen
 ms.topic: include
 ms.date: 05/09/2022
-ms.author: edupont
+ms.author: solsen
 ---
 As a CSP partner, you can  manage a customer's subscriptions and services on their behalf in the Partner Center by establishing a reseller relationship with your customers. If they already have an account, such as if they currently use Microsoft 365, other Dynamics 365 apps, or PowerApps, for example, you can send them an invitation straight from the Partner Center. For more information, see [Connect with customers in Partner Center (indirect providers/distributors)](/partner-center/request-a-relationship-with-a-customer) and [Connect with customers (indirect resellers)](/partner-center/indirect-reseller-tasks-in-partner-center#connect-with-customers).  
 

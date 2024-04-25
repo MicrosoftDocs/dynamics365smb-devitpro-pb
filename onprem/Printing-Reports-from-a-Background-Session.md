@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 2ca013c1-f142-4679-8c09-876841c83029
 caps.latest.revision: 10
-manager: edupont
 ---
 # Printing Reports from a Background Session
 If you print a report from a background session that you started by using the [STARTSESSION Function \(Sessions\)](STARTSESSION-Function--Sessions-.md), or if you print a report from a NAS services session, then you must know which printer prints the report.  

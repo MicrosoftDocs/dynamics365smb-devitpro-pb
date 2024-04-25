@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 50124e1e-d04b-464c-83dd-6509886c117f
 caps.latest.revision: 31
-manager: edupont
 ---
 # Configuring NAS Services
 NAS services are a middle-tier server component that executes business logic without a user interface or user interaction. NAS services in [!INCLUDE[nav_server](includes/nav_server_md.md)] support applications such as Microsoft Office Outlook Integration and the NAV Job Queue.  

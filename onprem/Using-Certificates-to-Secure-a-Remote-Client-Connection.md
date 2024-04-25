@@ -8,7 +8,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 04b72693-838a-4d0b-aefa-8e26a3a1f2fa
 caps.latest.revision: 11
-manager: edupont
 ---
 # Using Certificates to Secure a Remote Client Connection
 You can use service certificates to help secure [!INCLUDE[rtc](../developer/includes/rtc_md.md)] connections over a wide area network \(WAN\). The certificate is a file that [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] uses to prove its identity and establish a trusted connection with the client that is trying to connect. [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] can support the following configurations:  

@@ -2,13 +2,9 @@
 title: "AVS Error AVS0101"
 description: "A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found."
 ms.author: thpeder
-ms.custom: na
 ms.date: 02/05/2022
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: thpeder
 ---
 
@@ -20,7 +16,7 @@ A package with publisher '{0}', name '{1}', and a version compatible with '{2}' 
 
 ## How to fix this diagnostic?
 
-Validate that the dependency information is correct and that the dependencies are available for the countries/releases validated.
+Validate that the dependency information is correct and that the dependencies are available for the countries/regions and releases that are validated.
 
 ## See Also
 

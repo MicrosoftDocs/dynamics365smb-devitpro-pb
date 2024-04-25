@@ -2,10 +2,7 @@
 title: "TableType Property"
 description: "Specifies the table type."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,15 +20,15 @@ Specifies the table type.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Normal**|Specifies the table type used for Dynamics 365 Business Central.|
-|**CRM**|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Dynamics 365 for Sales.|
-|**ExternalSQL**|Specifies the table as a table or view in SQL Server that is not in the Dynamics 365 Business Central database. This table type is not supported in Business Central online.|
-|**Exchange**|This table type is not supported in Business Central online.|
-|**MicrosoftGraph**|This table type is not supported in Business Central online.|
-|**CDS**|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Common Data Service.|
-|**Temporary**|Specifies the table as an in-memory table used to store temporary data.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Normal**|runtime version 1.0|Specifies the table type used for Dynamics 365 Business Central.|
+|**CRM**|runtime version 1.0|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Dynamics 365 Apps.|
+|**ExternalSQL**|runtime version 1.0|Specifies the table as a table or view in SQL Server that is not in the Dynamics 365 Business Central database. This table type is not supported in Business Central online.|
+|**Exchange**|runtime version 1.0|This table type is not supported in Business Central online.|
+|**MicrosoftGraph**|runtime version 1.0|This table type is not supported in Business Central online.|
+|**CDS**|runtime version 5.0|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Dynamics 365 Apps.|
+|**Temporary**|runtime version 6.0|Specifies the table as an in-memory table used to store temporary data.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -44,10 +41,13 @@ TableType = CDS;
 
 ## Remarks
 
-Tables that are marked as **CDS** or **ExternalSQL** are considered external tables that are not managed by [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. 
+Tables that are marked as **CDS** or **ExternalSQL** are considered external tables that are not managed by [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.
+
+> [!NOTE]  
+> Tables of types `CRM` and `CDS` are used to create outgoing service calls towards Dataverse and Dynamics 365 Apps. Such calls are not counted against [Business Central API limits](../../administration/operational-limits-online.md), but are counted against [Power Platform request limits](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits).
 
 > [!IMPORTANT]  
-> We advise against creating tables of type CDS manually. Instead, use the integration mapping functionality.
+> We advise against creating tables of type CRM/CDS manually. Instead, use the [AL Table Proxy Generator](../devenv-al-table-proxy-generator.md). 
 <!-- For more information, see [Introduction to Dynamics 365 for Sales Integration Customization in Dynamics NAV](Introduction-to-Dynamics-CRM-Integration-Customization-in-Dynamics-NAV.md).  
  -->
 

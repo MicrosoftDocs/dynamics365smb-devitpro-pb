@@ -2,10 +2,7 @@
 title: "XmlDocument.ReadFrom(InStream, var XmlDocument) Method"
 description: "Reads and parses the XML document from the given data source."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,8 +23,8 @@ Reads and parses the XML document from the given data source.
 ## Parameters
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
-A stream containing an XML document.
-        
+A stream containing an XML document.  
+
 *Result*  
 &emsp;Type: [XmlDocument](xmldocument-data-type.md)  
 The XmlDocument parsed from the given data source.  

@@ -2,10 +2,7 @@
 title: "XmlDocument Data Type"
 description: "Represents an XML document."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -19,6 +16,7 @@ author: SusanneWindfeldPedersen
 Represents an XML document.
 
 
+## Static methods
 The following methods are available on the XmlDocument data type.
 
 
@@ -31,6 +29,7 @@ The following methods are available on the XmlDocument data type.
 |[ReadFrom(InStream, var XmlDocument)](xmldocument-readfrom-instream-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
 |[ReadFrom(InStream, XmlReadOptions, var XmlDocument)](xmldocument-readfrom-instream-xmlreadoptions-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
 
+## Instance methods
 The following methods are available on instances of the XmlDocument data type.
 
 |Method name|Description|

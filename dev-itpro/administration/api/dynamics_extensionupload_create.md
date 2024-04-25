@@ -3,9 +3,7 @@ title: Create extensionUpload
 description: Creates an extension upload object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -77,7 +75,8 @@ Here is an example of the request.
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionUpload
 Content-type: application/json
 {
-    "schedule" : "Current version"
+    "schedule" : "Current version",
+    "schemaSyncMode": "Add"
 }
 ```
 
@@ -90,6 +89,7 @@ Content-type: application/json
 {
     "systemId" : "f99be650-07ce-45df-a285-3afe69a953eb",
     "schedule" : "Current version",
+    "schemaSyncMode": "Add",
     "extensionContent" : ""
 }
 ```

@@ -1,18 +1,19 @@
 ---
-title:  Environment Lifecycle Trace Telemetry | Microsoft Docs
-description: Learn about the environment lifecycle telemetry in Business Central  
+title:  Analyzing Environment Lifecycle Trace Telemetry 
+description: Learn about the environment lifecycle telemetry in Business Central.
 author: KennieNP
-ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/08/2022
 ms.author: kepontop
+ms.reviewer: solsen
+ms.topic: conceptual
+ms.date: 02/21/2023
+ms.custom: bap-template
+
 ---
 # Analyzing Environment Lifecycle Trace Telemetry
 
 [!INCLUDE[component](../developer/includes/online_only.md)]
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 Environment lifecycle telemetry gathers data about the success or failure of the following environment-related operations:
 
@@ -20,18 +21,26 @@ Environment lifecycle telemetry gathers data about the success or failure of the
 - Start/stop/restart an environment
 - Copy an environment
 - Point-in-time restore an environment
-- Move an environment to a difference Azure Active Directory (AAD) tenant
+- Transfer an environment to a different Microsoft Entra tenant
 - Cancel a session from the Business Central admin center
 - Export the environment database
 - Change the environment configuration 
 - Delete an environment
 - Rename an environment
 
+Telemetry is also gathered on the following data update events:
+
+- Data upgrade started
+- Data upgrade succeeded
+- Data upgrade failed
+- Data upgrade recovery succeeded
+- Data upgrade recovery failed
+
 Failed operations result in a trace log entry that includes a reason for the failure.
 
 ### Custom dimensions available in all events
 
-The following dimensions are available in all events described below and is not included in the individual event documentation:
+The following dimensions are available in all events described below and aren't included in the individual event documentation:
 
 |Dimension|Description or value|
 |---------|-----|
@@ -100,14 +109,7 @@ Occurs when the environment is scheduled to be updated.
 
 ## Environment update missed
 
-Occurs when the environment was scheduled to be updated, but it was not possible to start the update in the update window defined in the admin center.
-
-<!-- 
-EnvironmentUpdateMissed = "LC0102";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockEnvironmentUpdateInfo
-PartnerDiagnosticsBlockEnvironmentUpdateWindow
-Message => Environment update missed: {this.EnvironmentInfo.EnvironmentName} to version {this.UpdateInfo.DestinationVersion} -->
+Occurs when the environment was scheduled to be updated, but it wasn't possible to start the update in the update window defined in the admin center.
 
 ### General dimensions
 
@@ -139,16 +141,6 @@ Message => Environment update missed: {this.EnvironmentInfo.EnvironmentName} to 
 
 Occurs when updates for version that the environment is on has been set on hold.
 
-<!-- 
-EnvironmentUpdatePostponed = "LC0103";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockEnvironmentUpdateInfo
-[PartnerTelemetryIgnoredKey("updatePeriodStartDateUtc")]
-[PartnerTelemetryIgnoredKey("updatePeriodEndDateUtc")]
-[PartnerTelemetryIgnoredKey("registeredForUpdateOnOrAfterDateUtc")]
-Message => Environment update postponed: {this.EnvironmentInfo.EnvironmentName} to version {this.UpdateInfo.DestinationVersion} 
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -173,14 +165,6 @@ Message => Environment update postponed: {this.EnvironmentInfo.EnvironmentName} 
 ## Environment update resumed
 
 Occurs when an update for a version that the environment is running on has been started again after being stopped.
-
-<!-- 
-EnvironmentUpdateResumed = "LC0104";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockEnvironmentUpdateInfo
-PartnerDiagnosticsBlockEnvironmentUpdateWindow
-Message => Environment update resumed: {this.EnvironmentInfo.EnvironmentName} to version {this.UpdateInfo.DestinationVersion}
--->
 
 ### General dimensions
 |Dimension|Description or value|
@@ -210,16 +194,6 @@ Message => Environment update resumed: {this.EnvironmentInfo.EnvironmentName} to
 ## Environment update started
 
 Occurs when the update was started for the environment.
-
-<!-- 
-EnvironmentUpdateStarted = "LC0105";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockEnvironmentUpdateInfo
-PartnerDiagnosticsBlockEnvironmentUpdateWindow
-PartnerDiagnosticsBlockEnvironmentOperation
-[PartnerTelemetryKey("remainingTimeInUpdateWindow")]
-Message => Environment update started: {this.EnvironmentInfo.EnvironmentName} to version {this.UpdateInfo.DestinationVersion}
--->
 
 ### General dimensions
 
@@ -252,16 +226,6 @@ Message => Environment update started: {this.EnvironmentInfo.EnvironmentName} to
 ## Environment updated successfully
 
 Occurs when the environment was successfully updated.
-
-<!-- 
-EnvironmentUpdateSucceeded = "LC0106";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockEnvironmentUpdateInfo
-PartnerDiagnosticsBlockEnvironmentUpdateWindow
-PartnerDiagnosticsBlockEnvironmentOperation
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Environment updated successfully: {this.EnvironmentInfo.EnvironmentName} to version {this.UpdateInfo.DestinationVersion}
--->
 
 ### General dimensions
 
@@ -296,18 +260,6 @@ Message => Environment updated successfully: {this.EnvironmentInfo.EnvironmentNa
 
 Occurs when the update for the environment failed.
 
-<!-- 
-EnvironmentUpdateFailed = "LC0107";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockEnvironmentUpdateInfo
-PartnerDiagnosticsBlockEnvironmentUpdateWindow
-PartnerDiagnosticsBlockEnvironmentOperation
-PartnerDiagnosticsBlockOperationFailureInfo
-[PartnerTelemetryKey("failureCode")]
-[PartnerTelemetryKey("recovered", AllowEmpty = true)]
-Message => Environment failed to update: {this.EnvironmentInfo.EnvironmentName} to version {this.UpdateInfo.DestinationVersion} 
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -339,15 +291,42 @@ Message => Environment failed to update: {this.EnvironmentInfo.EnvironmentName} 
 |updateWindowEndTimeUtc|[!INCLUDE[updateWindowEndDateUtc](../includes/include-telemetry-dimension-update-window-end-date.md)]|
 |updateWindowStartTimeUtc|[!INCLUDE[updateWindowStartDateUtc](../includes/include-telemetry-dimension-update-window-start-date.md)]|
 
+### Sample KQL code (failed environment updates)
+
+This KQL code can help you get started analyzing environment update failures:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0107' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// information about the update
+, sourceVersion = customDimensions.sourceVersion
+, destinationVersion = customDimensions.destinationVersion
+, updatePeriodStartDateUtc = customDimensions.updatePeriodStartDateUtc
+, updatePeriodEndDateUtc = customDimensions.updatePeriodEndDateUtc
+, registeredForUpdateOnOrAfterDateUtc = customDimensions.registeredForUpdateOnOrAfterDateUtc
+, updateWindowStartTimeUtc = customDimensions.updateWindowStartTimeUtc
+, updateWindowEndTimeUtc = customDimensions.updateWindowEndTimeUtc
+, ignoreUpdateWindow = customDimensions.ignoreUpdateWindow
+, initiatedFrom = customDimensions.initiatedFrom
+, totalTime = customDimensions.totalTime
+// what happened
+, failureReason = customDimensions.failureReason
+, failureCode = customDimensions.failureCode
+, recovered = customDimensions.recovered
+```
+
 ## Environment restart operation initiated
 
 Occurs when a restart operation has been initiated from the admin center.
-
-<!-- 
-EnvironmentRestartInitiated = "LC0110";
-PartnerDiagnosticsBlockEnvironmentInfo 
-Message => Invariant($"Environment restart operation initiated: {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -371,13 +350,6 @@ Message => Invariant($"Environment restart operation initiated: {this.Environmen
 
 Occurs when a restart operation succeeded for the environment.
 
-<!-- 
-EnvironmentRestartSucceeded = "LC0111";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Invariant($"Environment restarted successfully: {this.EnvironmentInfo.EnvironmentName}");
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -400,13 +372,6 @@ Message => Invariant($"Environment restarted successfully: {this.EnvironmentInfo
 
 Occurs when a restart operation failed for the environment.
 
-<!-- 
-EnvironmentRestartFailed = "LC0112";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment restart operation failed: {this.EnvironmentInfo.EnvironmentName}");
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -427,15 +392,30 @@ Message => Invariant($"Environment restart operation failed: {this.EnvironmentIn
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+### Sample KQL code (failed environment restart)
+
+This KQL code can help you get started analyzing environment restart failures:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0112' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// what happened
+, failureReason = customDimensions.failureReason
+```
+
+
 ## Environment start operation initiated
 
 Occurs when a start operation has been initiated for the environment.
-
-<!-- 
-EnvironmentStartInitiated = "LC0113";
-PartnerDiagnosticsBlockEnvironmentInfo
-Message => Invariant($"Environment start operation initiated: {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -458,13 +438,6 @@ Message => Invariant($"Environment start operation initiated: {this.EnvironmentI
 ## Environment started successfully
 
 Occurs when a restart operation succeeded for the environment.
-
-<!-- 
-EnvironmentStartSucceeded = "LC0114";
-PartnerDiagnosticsBlockEnvironmentInfo
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Invariant($"Environment started successfully: {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -489,13 +462,6 @@ Message => Invariant($"Environment started successfully: {this.EnvironmentInfo.E
 
 Occurs when a start operation failed for the environment.
 
-<!-- 
-EnvironmentStartFailed = "LC0115";
-PartnerDiagnosticsBlockEnvironmentInfo
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment start operation failed: {this.EnvironmentInfo.EnvironmentName}");
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -516,16 +482,30 @@ Message => Invariant($"Environment start operation failed: {this.EnvironmentInfo
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+### Sample KQL code (failed environment start operation)
+
+This KQL code can help you get started analyzing environment start failures:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0115' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// what happened
+, failureReason = customDimensions.failureReason
+```
+
 
 ## Environment stop operation initiated
 
 Occurs when a stop operation has been initiated for the environment.
-
-<!-- 
-EnvironmentStopInitiated = "LC0116";
-PartnerDiagnosticsBlockEnvironmentInfo
-Message => Invariant($"Environment stop operation initiated: {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -548,13 +528,6 @@ Message => Invariant($"Environment stop operation initiated: {this.EnvironmentIn
 ## Environment stopped successfully
 
 Occurs when a stop operation succeeded for the environment.
-
-<!-- 
-EnvironmentStopSucceeded = "LC0117";
-PartnerDiagnosticsBlockEnvironmentInfo
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Invariant($"Environment stopped successfully: {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -579,13 +552,6 @@ Message => Invariant($"Environment stopped successfully: {this.EnvironmentInfo.E
 
 Occurs when a stop operation failed for the environment.
 
-<!-- 
-EnvironmentStopFailed = "LC0118";
-PartnerDiagnosticsBlockEnvironmentInfo
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment stop operation failed: {this.EnvironmentInfo.EnvironmentName}"); 
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -606,16 +572,29 @@ Message => Invariant($"Environment stop operation failed: {this.EnvironmentInfo.
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+### Sample KQL code (failed environment stop operation)
+
+This KQL code can help you get started analyzing environment stop failures:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0118' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// what happened
+, failureReason = customDimensions.failureReason
+```
+
 ## Environment copy operation started on source
 
 Occurs when a copy operation for the environment started on the source environment.
-
-<!-- 
-EnvironmentCopyToNewEnvironmentStarted = "LC0119";
-PartnerDiagnosticsBlockEnvironmentInfo
-PartnerDiagnosticsBlockDestinationEnvironmentInfo
-Message => Invariant($"Environment copy operation started on source: {this.EnvironmentInfo.EnvironmentName} to {this.DestinationEnvironmentInfo.DestinationEnvironmentName}");
--->
 
 ### General dimensions
 
@@ -641,14 +620,6 @@ Message => Invariant($"Environment copy operation started on source: {this.Envir
 ## Environment copied successfully
 
 Occurs when a copy operation for the environment succeeded.
-
-<!-- 
-EnvironmentCopyToNewEnvironmentSucceeded = "LC0120";
-PartnerDiagnosticsBlockEnvironmentInfo
-PartnerDiagnosticsBlockDestinationEnvironmentInfo
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Invariant($"Environment copied successfully: {this.EnvironmentInfo.EnvironmentName} to {this.DestinationEnvironmentInfo.DestinationEnvironmentName}");
--->
 
 ### General dimensions
 
@@ -676,14 +647,6 @@ Message => Invariant($"Environment copied successfully: {this.EnvironmentInfo.En
 
 Occurs when a copy operation for the environment failed on the source environment.
 
-<!-- 
-EnvironmentCopyToNewEnvironmentFailed = "LC0121";
-PartnerDiagnosticsBlockEnvironmentInfo
-PartnerDiagnosticsBlockDestinationEnvironmentInfo
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment copy operation failed on source: {this.EnvironmentInfo.EnvironmentName} to {this.DestinationEnvironmentInfo.DestinationEnvironmentName}"); 
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -707,17 +670,35 @@ Message => Invariant($"Environment copy operation failed on source: {this.Enviro
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+### Sample KQL code (failed environment copy on source)
+
+This KQL code can help you get started analyzing environment copy failures (that happened on the source):
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0121' 
+| project timestamp
+, message
+// source environment
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+// destination environment
+, destinationEnvironmentName = customDimensions.destinationEnvironmentName
+, destinationEnvironmentType = customDimensions.destinationEnvironmentType
+, destinationEnvironmentVersion = customDimensions.destinationEnvironmentVersion
+// what happened
+, totalTime = customDimensions.totalTime
+, failureReason = customDimensions.failureReason
+```
+
 
 ## Environment copy operation started on destination
 
 Occurs when a copy operation for the environment started on the destination environment.
-
-<!-- 
-EnvironmentCopyFromExistingEnvironmentStarted = "LC0122";
-PartnerDiagnosticsBlockEnvironmentInfo
-PartnerDiagnosticsBlockSourceEnvironmentInfo
-Message => Invariant($"Environment copy operation started on destination: {this.EnvironmentInfo.EnvironmentName} from {this.SourceEnvironmentInfo.SourceEnvironmentName}");
--->
 
 ### General dimensions
 
@@ -743,14 +724,6 @@ Message => Invariant($"Environment copy operation started on destination: {this.
 ## Environment copied successfully to destination
 
 Occurs when a copy operation for the environment succeeded on the destination environment.
-
-<!-- 
-EnvironmentCopyFromExistingEnvironmentSucceeded = "LC0123";
-PartnerDiagnosticsBlockEnvironmentInfo
-PartnerDiagnosticsBlockSourceEnvironmentInfo
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Invariant($"Environment copied successfully to destination: {this.EnvironmentInfo.EnvironmentName} from {this.SourceEnvironmentInfo.SourceEnvironmentName}");
--->
 
 ### General dimensions
 
@@ -779,14 +752,6 @@ Message => Invariant($"Environment copied successfully to destination: {this.Env
 
 Occurs when a copy operation for the environment failed on the destination environment.
 
-<!-- 
-EnvironmentCopyFromExistingEnvironmentFailed = "LC0124";
-PartnerDiagnosticsBlockEnvironmentInfo
-PartnerDiagnosticsBlockSourceEnvironmentInfo
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment copy operation failed on destination: {this.EnvironmentInfo.EnvironmentName} from {this.SourceEnvironmentInfo.SourceEnvironmentName}"); 
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -810,17 +775,36 @@ Message => Invariant($"Environment copy operation failed on destination: {this.E
 |sourceEnvironmentVersion|[!INCLUDE[sourceEnvironmentVersion](../includes/include-telemetry-dimension-source-environment-version.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+
+### Sample KQL code (failed environment copy on destination)
+
+This KQL code can help you get started analyzing environment copy failures (that happened on the destination):
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0124'
+| project timestamp
+, message
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+// source environment
+, sourceEnvironmentName = customDimensions.sourceEnvironmentName
+, sourceEnvironmentType = customDimensions.sourceEnvironmentType
+, sourceEnvironmentVersion = customDimensions.sourceEnvironmentVersion
+// destination environment
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// what happened
+, totalTime = customDimensions.totalTime
+, failureReason = customDimensions.failureReason
+```
+
+
 ## Environment point-in-time restore operation started on source
 
 Occurs when a point-in-time restore operation for the environment started on the environment.
-
-<!-- 
-EnvironmentRestoreToNewEnvironmentStarted = "LC0125";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("pointInTimeUtc")]
-PartnerDiagnosticsBlockDestinationEnvironmentInfo
-Message => Invariant($"Environment PIT restore operation started on source: {this.EnvironmentInfo.EnvironmentName} to {this.DestinationEnvironmentInfo.DestinationEnvironmentName}");
--->
 
 ### General dimensions
 
@@ -847,15 +831,6 @@ Message => Invariant($"Environment PIT restore operation started on source: {thi
 ## Environment point-in-time restored successfully
 
 Occurs when a point-in-time restore operation for the environment completed successfully.
-
-<!-- 
-EnvironmentRestoreToNewEnvironmentSucceeded = "LC0126";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("pointInTimeUtc")]
-PartnerDiagnosticsBlockDestinationEnvironmentInfo
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Invariant($"Environment PIT restored successfully: {this.EnvironmentInfo.EnvironmentName} to {this.DestinationEnvironmentInfo.DestinationEnvironmentName}");
--->
 
 ### General dimensions
 
@@ -884,15 +859,6 @@ Message => Invariant($"Environment PIT restored successfully: {this.EnvironmentI
 
 Occurs when a point-in-time restore operation for the environment failed.
 
-<!-- 
-EnvironmentRestoreToNewEnvironmentFailed = "LC0127";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("pointInTimeUtc")]
-PartnerDiagnosticsBlockDestinationEnvironmentInfo
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment PIT restore operation failed on source: {this.EnvironmentInfo.EnvironmentName} to {this.DestinationEnvironmentInfo.DestinationEnvironmentName}");
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -917,17 +883,36 @@ Message => Invariant($"Environment PIT restore operation failed on source: {this
 |pointInTimeUtc|[!INCLUDE[pointInTimeUtc](../includes/include-telemetry-dimension-point-in-time.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+### Sample KQL code (failed environment point-in-time operation on source)
+
+This KQL code can help you get started analyzing point-in-time failures (that happened on the source):
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0127'
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, destinationEnvironmentName = customDimensions.destinationEnvironmentName
+, destinationEnvironmentType = customDimensions.destinationEnvironmentType
+, destinationEnvironmentVersion = customDimensions.destinationEnvironmentVersion
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// operation details
+, pointInTimeUtc = customDimensions.pointInTimeUtc
+// what happened
+, failureReason = customDimensions.failureReason
+, totalTime = customDimensions.totalTime
+```
+
+
 ## Environment point-in-time restore operation started on destination
 
 Occurs when a point-in-time restore operation for the environment started on the destination environment.
-
-<!-- 
-EnvironmentRestoreFromExistingEnvironmentStarted = "LC0128";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("pointInTimeUtc")]
-PartnerDiagnosticsBlockSourceEnvironmentInfo
-Message => Invariant($"Environment PIT restore operation started on destination: {this.EnvironmentInfo.EnvironmentName} from {this.SourceEnvironmentInfo.SourceEnvironmentName}");
--->
 
 ### General dimensions
 
@@ -954,15 +939,6 @@ Message => Invariant($"Environment PIT restore operation started on destination:
 ## Environment point-in-time restored successfully to destination
 
 Occurs when a point-in-time restore operation for the environment completed successfully on the destination environment.
-
-<!-- 
-EnvironmentRestoreFromExistingEnvironmentSucceeded = "LC0129";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("pointInTimeUtc")]
-PartnerDiagnosticsBlockSourceEnvironmentInfo
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Invariant($"Environment PIT restored successfully to destination: {this.EnvironmentInfo.EnvironmentName} from {this.SourceEnvironmentInfo.SourceEnvironmentName}");
--->
 
 ### General dimensions
 
@@ -992,15 +968,6 @@ Message => Invariant($"Environment PIT restored successfully to destination: {th
 
 Occurs when a point-in-time restore operation for the environment failed in the destination environment.
 
-<!--
-EnvironmentRestoreFromExistingEnvironmentFailed = "LC0130";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("pointInTimeUtc")]
-PartnerDiagnosticsBlockSourceEnvironmentInfo
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment PIT restore operation failed on destination: {this.EnvironmentInfo.EnvironmentName} from {this.SourceEnvironmentInfo.SourceEnvironmentName}"); 
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -1024,21 +991,42 @@ Message => Invariant($"Environment PIT restore operation failed on destination: 
 |sourceEnvironmentVersion|[!INCLUDE[sourceEnvironmentVersion](../includes/include-telemetry-dimension-source-environment-version.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
-## Environment move to different AAD tenant operation scheduled
+### Sample KQL code (failed environment point-in-time operation on destination)
 
-Occurs when the environment is scheduled to be moved to a different Azure Active Directory (AAD) tenant.
+This KQL code can help you get started analyzing point-in-time failures (that happened on the destination):
 
-<!-- 
-EnvironmentMoveToAnotherAadTenantScheduled = "LC0131";
-[PartnerTelemetryKey("registeredForMoveDateUtc")]
-Message => Invariant($"Environment move to {this.DestinationAadTenantId} AAD tenant operation scheduled to run at {this.RegisteredForMoveDateUtc}: {this.SourceEnvironmentName}"); 
--->
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0130'
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, sourceEnvironmentName = customDimensions.sourceEnvironmentName
+, sourceEnvironmentType = customDimensions.sourceEnvironmentType
+, sourceEnvironmentVersion = customDimensions.sourceEnvironmentVersion
+// operation details
+, pointInTimeUtc = customDimensions.pointInTimeUtc
+// what happened
+, failureReason = customDimensions.failureReason
+, totalTime = customDimensions.totalTime
+```
+
+
+## Environment transfer to different Entra tenant operation scheduled
+
+Occurs when the environment is scheduled to be transferred to a different Microsoft Entra tenant, after a transfer is accepted on the destination tenant.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment move to {destinationAadTenantId} AAD tenant operation scheduled to run at {registeredForMoveDateUtc}: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the AAD tenant that the environment should be moved to. <br /><br /> `{registeredForMoveDateUtc}` indicates the date and time that have been registered for the move.|
+|message|**Environment move to {destinationAadTenantId} AAD tenant operation scheduled to run at {registeredForMoveDateUtc}: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the destination Entra tenant. <br /><br /> `{registeredForMoveDateUtc}` indicates the date and time that have been registered for the move.|
 
 ### Custom dimensions
 
@@ -1054,22 +1042,15 @@ Message => Invariant($"Environment move to {this.DestinationAadTenantId} AAD ten
 |sourceEnvironmentName|[!INCLUDE[sourceEnvironmentName](../includes/include-telemetry-dimension-source-environment-name.md)]|
 |sourceAadTenantId|[!INCLUDE[sourceAadTenantId](../includes/include-telemetry-dimension-source-aadtenantid.md)]|
 
-## Environment move to different AAD tenant operation scheduling failed
+## Environment transfer to different Entra tenant operation scheduling failed
 
-Occurs when the operation to schedule a move of an environment to a different Azure Active Directory (AAD) tenant failed.
-
-<!-- 
-EnvironmentMoveToAnotherAadTenantSchedulingFailed = "LC0132";
-PartnerDiagnosticsBlockSchedulingFailureInfo
-[PartnerTelemetryKey("registeredForMoveDateUtc")]
-Message => Invariant($"Environment move to {this.DestinationAadTenantId} AAD tenant operation scheduling failed: {this.SourceEnvironmentName}");
--->
+Occurs when the operation to schedule a transfer of an environment to a different Microsoft Entra tenant failed, after a transfer is accepted on the destination tenant.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment move to {destinationAadTenantId} AAD tenant operation scheduling failed: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the AAD tenant that the environment should be moved to.|
+|message|**Environment move to {destinationAadTenantId} AAD tenant operation scheduling failed: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the destination Entra tenant.|
 
 ### Custom dimensions
 
@@ -1087,20 +1068,40 @@ Message => Invariant($"Environment move to {this.DestinationAadTenantId} AAD ten
 |sourceAadTenantId|[!INCLUDE[sourceAadTenantId](../includes/include-telemetry-dimension-source-aadtenantid.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
-## Environment move to different AAD tenant operation started
+### Sample KQL code (failed move of environment to different AAD tenant)
 
-Occurs when the operation to move the environment to a different AAD tenant started.
+This KQL code can help you get started analyzing failures in moving an environment to a different AAD tenant:
 
-<!-- 
-EnvironmentMoveToAnotherAadTenantStarted = "LC0133";
-Message => Invariant($"Environment move to {this.DestinationAadTenantId} AAD tenant operation started: {this.SourceEnvironmentName}");
--->
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0132'
+| project timestamp
+, message
+// in which tenants did it happen
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, sourceAadTenantId = customDimensions.sourceAadTenantId
+, destinationAadTenantId = customDimensions.destinationAadTenantId
+, sourceEnvironmentName = customDimensions.sourceEnvironmentName
+, destinationEnvironmentName = customDimensions.destinationEnvironmentName
+, registeredForMoveDateUtc = customDimensions.registeredForMoveDateUtc
+// what happened
+, totalTime = customDimensions.totalTime
+, failureReason = customDimensions.failureReason
+```
+
+## Environment transfer to different Entra tenant operation started
+
+Occurs when the operation to move the environment to a different Entra tenant started.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment move to {destinationAadTenantId} AAD tenant operation operation started: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the AAD tenant that the environment should be moved to.|
+|message|**Environment move to {destinationAadTenantId} AAD tenant operation operation started: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the destination Entra tenant.|
 
 ### Custom dimensions
 
@@ -1115,21 +1116,15 @@ Message => Invariant($"Environment move to {this.DestinationAadTenantId} AAD ten
 |sourceEnvironmentName|[!INCLUDE[sourceEnvironmentName](../includes/include-telemetry-dimension-source-environment-name.md)]|
 |sourceAadTenantId|[!INCLUDE[sourceAadTenantId](../includes/include-telemetry-dimension-source-aadtenantid.md)]|
 
-## Environment moved successfully to different AAD tenant
+## Environment transferred successfully to different Entra tenant
 
-Occurs when the operation to move the environment to a different AAD tenant completed successfully.
-
-<!-- 
-EnvironmentMoveToAnotherAadTenantSucceeded = "LC0134";
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Invariant($"Environment moved to {this.DestinationAadTenantId} AAD tenant successfully: {this.DestinationEnvironmentName}");
--->
+Occurs when the operation to transfer the environment to a different Entra tenant completed successfully.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment moved to {destinationAadTenantId} AAD tenant successfully: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment that was moved.<br /><br /> `{destinationAadTenantId}` indicates the AAD tenant that the environment was moved to.|
+|message|**Environment moved to {destinationAadTenantId} AAD tenant successfully: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment that was moved.<br /><br /> `{destinationAadTenantId}` indicates the Entra tenant that the environment was transferred to.|
 
 ### Custom dimensions
 
@@ -1145,21 +1140,15 @@ Message => Invariant($"Environment moved to {this.DestinationAadTenantId} AAD te
 |sourceAadTenantId|[!INCLUDE[sourceAadTenantId](../includes/include-telemetry-dimension-source-aadtenantid.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
-## Environment move to different AAD tenant failed
+## Environment transfer to different Entra tenant failed
 
-Occurs when the operation to move the environment to a different AAD tenant failed.
-
-<!-- 
-EnvironmentMoveToAnotherAadTenantFailed = "LC0135";
-PartnerDiagnosticsBlockOperationFailureInfo 
-Message => Invariant($"Environment move to {this.DestinationAadTenantId} AAD tenant operation failed: {this.SourceEnvironmentName}");
--->
+Occurs when the operation to transfer the environment to a different Entra tenant failed.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment move to {destinationAadTenantId} AAD tenant operation failed: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment that was to be moved.<br /><br /> `{destinationAadTenantId}` indicates the AAD tenant that the environment was to be moved to.|
+|message|**Environment move to {destinationAadTenantId} AAD tenant operation failed: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment that was to be moved.<br /><br /> `{destinationAadTenantId}` indicates the destination Entra tenant.|
 
 ### Custom dimensions
 
@@ -1176,15 +1165,36 @@ Message => Invariant($"Environment move to {this.DestinationAadTenantId} AAD ten
 |sourceAadTenantId|[!INCLUDE[sourceAadTenantId](../includes/include-telemetry-dimension-source-aadtenantid.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+
+### Sample KQL code (failed move of environment to different AAD tenant)
+
+This KQL code can help you get started analyzing failures in moving an environment to a different AAD tenant:
+
+```kql
+// Environment move to different AAD tenant failed
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0135'
+| project timestamp
+, message
+// in which tenants did it happen
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, sourceAadTenantId = customDimensions.sourceAadTenantId
+, destinationAadTenantId = customDimensions.destinationAadTenantId
+, sourceEnvironmentName = customDimensions.sourceEnvironmentName
+, destinationEnvironmentName = customDimensions.destinationEnvironmentName
+// what happened
+, totalTime = customDimensions.totalTime
+, failureReason = customDimensions.failureReason
+```
+
+
 ## Environment session cancellation started
 
 Occurs when a session is requested to be cancelled from the admin center.
-
-<!-- 
-EnvironmentSessionCancelStarted = "LC0136";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("sessionId")]
-Message => Invariant($"Environment session {this.SessionId} cancellation started: {this.EnvironmentInfo.EnvironmentName}"); -->
 
 ### General dimensions
 
@@ -1208,14 +1218,6 @@ Message => Invariant($"Environment session {this.SessionId} cancellation started
 ## Environment session cancelled successfully
 
 Occurs when a session was successfully cancelled from the admin center.
-
-<!-- 
-EnvironmentSessionCancelSucceeded = "LC0137";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("sessionId")]
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Invariant($"Environment session {this.SessionId} cancelled successfully: {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -1241,14 +1243,6 @@ Message => Invariant($"Environment session {this.SessionId} cancelled successful
 
 Occurs when a session cancellation request from the admin center failed.
 
-<!-- 
-EnvironmentSessionCancelFailed = "LC0138";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("sessionId")]
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment session {this.SessionId} cancellation failed: {this.EnvironmentInfo.EnvironmentName}");
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -1270,15 +1264,32 @@ Message => Invariant($"Environment session {this.SessionId} cancellation failed:
 |sessionId|[!INCLUDE[sessionId](../includes/include-telemetry-dimension-session-id.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+
+### Sample KQL code (failed cancellation of session)
+
+This KQL code can help you get started analyzing failures in cancelling sessions:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0138'
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// what happened
+, failureReason = customDimensions.failureReason
+, sessionId = customDimensions.sessionId
+```
+
+
 ## Environment database export operation started
 
 Occurs when a database export is requested from the admin center.
-
-<!-- 
-EnvironmentDatabaseExportStarted = "LC0139";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("blobUrl")]
-Message => Invariant($"Environment database export operation started: {this.EnvironmentInfo.EnvironmentName}"); -->
 
 ### General dimensions
 
@@ -1301,14 +1312,6 @@ Message => Invariant($"Environment database export operation started: {this.Envi
 ## Environment database exported successfully
 
 Occurs when the environment database was successfully exported from the admin center.
-
-<!-- 
-EnvironmentDatabaseExportSucceeded = "LC0140";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("blobUrl")]
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Invariant($"Environment database exported successfully: {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -1333,14 +1336,6 @@ Message => Invariant($"Environment database exported successfully: {this.Environ
 
 Occurs when a database export request from the admin center failed.
 
-<!-- 
-EnvironmentDatabaseExportFailed = "LC0141";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("blobUrl")]
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment database export operation failed: {this.EnvironmentInfo.EnvironmentName}");
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -1362,18 +1357,32 @@ Message => Invariant($"Environment database export operation failed: {this.Envir
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+
+### Sample KQL code (failed database export operation)
+
+This KQL code can help you get started analyzing failures in export database operations:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0141' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// what happened
+, failureReason = customDimensions.failureReason
+, blobUrl = customDimensions.blobUrl
+```
+
+
 ## Environment configuration key updated
 
 Occurs when a configuration key for the environment was successfully updated.
-
-<!-- 
-EnvironmentConfigurationChanged = "LC0142";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("environmentConfigurationKey")]
-[PartnerTelemetryKey("oldValue")]
-[PartnerTelemetryKey("newValue")]
-Message => Invariant($"Environment configuration key {this.EnvironmentConfigurationKey} updated for environment {this.EnvironmentInfo.EnvironmentName} to value: {this.NewValue}");
--->
 
 ### General dimensions
 
@@ -1400,16 +1409,6 @@ Message => Invariant($"Environment configuration key {this.EnvironmentConfigurat
 
 Occurs when a configuration key for the environment failed to be updated.
 
-<!-- 
-EnvironmentConfigurationChangeFailed = "LC0143";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("environmentConfigurationKey")]
-[PartnerTelemetryKey("oldValue")]
-[PartnerTelemetryKey("newValue")]
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment configuration key {this.EnvironmentConfigurationKey} failed to update for environment {this.EnvironmentInfo.EnvironmentName}");
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -1433,17 +1432,32 @@ Message => Invariant($"Environment configuration key {this.EnvironmentConfigurat
 |oldValue|[!INCLUDE[oldValue](../includes/include-telemetry-dimension-old-value.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+### Sample KQL code (environment configuration key failed to update)
+
+This KQL code can help you get started analyzing failures when setting a environment configuration key:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0143' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// what happened
+, failureReason = customDimensions.failureReason
+, oldValue = customDimensions.oldValue
+, newValue = customDimensions.newValue
+```
+
+
 ## Environment configuration key deleted
 
 Occurs when a configuration key for the environment was successfully deleted.
-
-<!-- 
-EnvironmentConfigurationDeleted = "LC0144";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("environmentConfigurationKey")]
-[PartnerTelemetryKey("oldValue")]
-Message => Invariant($"Environment configuration key {this.EnvironmentConfigurationKey} deleted for environment {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -1469,15 +1483,6 @@ Message => Invariant($"Environment configuration key {this.EnvironmentConfigurat
 
 Occurs when a configuration key for the environment failed to be deleted.
 
-<!-- 
-EnvironmentConfigurationDeleteFailed = "LC0145";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("environmentConfigurationKey")]
-[PartnerTelemetryKey("oldValue")]
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment configuration key {this.EnvironmentConfigurationKey} failed to delete for environment {this.EnvironmentInfo.EnvironmentName}");
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -1500,19 +1505,31 @@ Message => Invariant($"Environment configuration key {this.EnvironmentConfigurat
 |oldValue|[!INCLUDE[oldValue](../includes/include-telemetry-dimension-old-value.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+### Sample KQL code (environment configuration key failed to be deleted)
+
+This KQL code can help you get started analyzing failures when deletin a environment configuration key:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0145' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// what happened
+, failureReason = customDimensions.failureReason
+, oldValue = customDimensions.oldValue
+```
+
+
 ## Environment update window modified
 
 Occurs when the update window for the environment was successfully updated.
-
-<!-- 
-EnvironmentUpdateWindowChanged = "LC0146";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("oldUpdateWindowStartTimeUtc")]
-[PartnerTelemetryKey("oldUpdateWindowEndTimeUtc")]
-[PartnerTelemetryKey("newUpdateWindowStartTimeUtc")]
-[PartnerTelemetryKey("newUpdateWindowEndTimeUtc")]
-Message => Invariant($"Environment update window was modified for environment: {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -1540,17 +1557,6 @@ Message => Invariant($"Environment update window was modified for environment: {
 
 Occurs when a update window failed to be updated.
 
-<!-- 
-EnvironmentUpdateWindowChangeFailed = "LC0147";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("oldUpdateWindowStartTimeUtc")]
-[PartnerTelemetryKey("oldUpdateWindowEndTimeUtc")]
-[PartnerTelemetryKey("newUpdateWindowStartTimeUtc")]
-[PartnerTelemetryKey("newUpdateWindowEndTimeUtc")]
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment update window modification failed for environment: {this.EnvironmentInfo.EnvironmentName}");
--->
-
 ### General dimensions
 
 |Dimension|Description or value|
@@ -1575,16 +1581,154 @@ Message => Invariant($"Environment update window modification failed for environ
 |oldUpdateWindowEndTimeUtc| The end time (in UTC) for the old update window.|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
-## Environment delete operation started
+### Sample KQL code (environment update window modification failed)
 
-Occurs when a delete operation was started for the environment.
+This KQL code can help you get started analyzing failures for updating the environment window modification:
 
-<!-- 
-EnvironmentDeleteStarted = "LC0149";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("deletionReason")]
-Message => Invariant($"Environment delete operation started: {this.EnvironmentInfo.EnvironmentName}");
--->
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0145' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// what happened
+, failureReason = customDimensions.failureReason
+, newUpdateWindowStartTimeUtc = customDimension.newUpdateWindowStartTimeUtc
+, newUpdateWindowEndTimeUtc = customDimension.newUpdateWindowEndTimeUtc
+, oldUpdateWindowStartTimeUtc = customDimension.oldUpdateWindowStartTimeUtc
+, oldUpdateWindowEndTimeUtc = customDimension.oldUpdateWindowEndTimeUtc
+```
+
+
+## Environment (soft) delete operation started
+
+Occurs when a (soft) delete operation was started for the environment.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment soft delete operation started: {environmentName}** <br /><br /> `{environmentName}` indicates the name of the environment.|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|deletionReason|[!INCLUDE[deletionReason](../includes/include-telemetry-dimension-delete-reason.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0180**|
+
+
+## Environment (soft) deleted
+
+Occurs when the environment was successfully (soft) deleted.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment soft deleted successfully: {environmentName}** <br /><br /> `{environmentName}` indicates the name of the environment.|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|deletionReason|[!INCLUDE[deletionReason](../includes/include-telemetry-dimension-delete-reason.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0181**|
+|totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
+
+
+## Environment (soft) delete operation failed
+
+Occurs when a (soft) delete operation for the environment failed.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment soft delete operation failed: {environmentName}** <br /><br /> `{environmentName}` indicates the name of the environment.|
+
+### Custom dimensions
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|deletionReason|[!INCLUDE[deletionReason](../includes/include-telemetry-dimension-delete-reason.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0182**|
+|failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
+|totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
+
+
+### Sample KQL code (environment soft delete failed)
+
+This KQL code can help you get started analyzing failures for (soft) deleting an environment:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0182' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// what happened
+, failureReason = customDimensions.failureReason
+, deletionReason = customDimensions.deletionReason
+```
+
+
+## Environment (hard) delete operation scheduled
+
+Occurs when a (hard) delete operation was scheduled for the environment.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment delete operation scheduled: {environmentName}** <br /><br /> `{environmentName}` indicates the name of the environment.|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|deletionReason|[!INCLUDE[deletionReason](../includes/include-telemetry-dimension-delete-reason.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0148**|
+
+
+## Environment (hard) delete operation started
+
+Occurs when a (hard) delete operation was started for the environment.
 
 ### General dimensions
 
@@ -1605,18 +1749,11 @@ Message => Invariant($"Environment delete operation started: {this.EnvironmentIn
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
 |eventId|**LC0149**|
 
-## Environment deleted
 
-Occurs when the environment was successfully deleted.
+## Environment (hard) deleted
 
-<!-- 
-EnvironmentDeleteSucceeded = "LC0150";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("deletionReason")]
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Invariant($"Environment deleted successfully: {this.EnvironmentInfo.EnvironmentName}");
+Occurs when the environment was successfully (hard) deleted.
 
--->
 
 ### General dimensions
 
@@ -1638,17 +1775,10 @@ Message => Invariant($"Environment deleted successfully: {this.EnvironmentInfo.E
 |eventId|**LC0150**|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
-## Environment delete operation failed
 
-Occurs when a delete operation for the environment failed.
+## Environment (hard) delete operation failed
 
-<!-- 
-EnvironmentDeleteFailed = "LC0151";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("deletionReason")]
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment delete operation failed: {this.EnvironmentInfo.EnvironmentName}");
--->
+Occurs when a (hard) delete operation for the environment failed.
 
 ### General dimensions
 
@@ -1670,16 +1800,126 @@ Message => Invariant($"Environment delete operation failed: {this.EnvironmentInf
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+### Sample KQL code (environment hard delete failed)
+
+This KQL code can help you get started analyzing failures for (hard) deleting an environment:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0151' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// what happened
+, failureReason = customDimensions.failureReason
+, deletionReason = customDimensions.deletionReason
+```
+
+
+## Environment recovery (un-delete) operation started
+
+Occurs when a recovery (un-delete) operation was started for the environment.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment recovery operation started: {environmentName}** <br /><br /> `{environmentName}` indicates the name of the environment.|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|deletionReason|[!INCLUDE[deletionReason](../includes/include-telemetry-dimension-delete-reason.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0183**|
+
+
+## Environment recovered
+
+Occurs when the environment was successfully recovered (un-deleted).
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment recovered successfully: {environmentName}** <br /><br /> `{environmentName}` indicates the name of the environment.|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|deletionReason|[!INCLUDE[deletionReason](../includes/include-telemetry-dimension-delete-reason.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0184**|
+|totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
+
+
+## Environment recovery (un-delete) operation failed
+
+Occurs when a recovery (un-delete) operation for the environment failed.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment recovery operation failed: {environmentName}** <br /><br /> `{environmentName}` indicates the name of the environment.|
+
+### Custom dimensions
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|deletionReason|[!INCLUDE[deletionReason](../includes/include-telemetry-dimension-delete-reason.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0185**|
+|failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
+|totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
+
+
+### Sample KQL code (environment un-delete failed)
+
+This KQL code can help you get started analyzing failures for un-deleting an environment:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0185' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// what happened
+, failureReason = customDimensions.failureReason
+, deletionReason = customDimensions.deletionReason
+```
+
 ## Environment rename operation started
 
 Occurs when a rename operation was started for the environment.
-
-<!-- 
-EnvironmentRenameStarted = "LC0152";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("newEnvironmentName")]
-Message => Invariant($"Environment rename operation started: {this.EnvironmentInfo.EnvironmentName} to {this.NewEnvironmentName}");
--->
 
 ### General dimensions
 
@@ -1700,17 +1940,10 @@ Message => Invariant($"Environment rename operation started: {this.EnvironmentIn
 |eventId|**LC0152**|
 |newEnvironmentName|[!INCLUDE[newEnvironmentName](../includes/include-telemetry-dimension-new-environment-name.md)]|
 
+
 ## Environment renamed
 
 Occurs when the environment was successfully renamed.
-
-<!-- 
-EnvironmentRenameSucceeded = "LC0153";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("newEnvironmentName")]
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Invariant($"Environment renamed successfully: {this.EnvironmentInfo.EnvironmentName} to {this.NewEnvironmentName}");
--->
 
 ### General dimensions
 
@@ -1731,17 +1964,9 @@ Message => Invariant($"Environment renamed successfully: {this.EnvironmentInfo.E
 |newEnvironmentName|[!INCLUDE[newEnvironmentName](../includes/include-telemetry-dimension-new-environment-name.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+
 ## Environment rename operation failed
-
 Occurs when a rename operation for the environment failed.
-
-<!-- 
-EnvironmentRenameFailed = "LC0154";
-PartnerDiagnosticsBlockEnvironmentInfo
-[PartnerTelemetryKey("newEnvironmentName")]
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment rename operation failed: {this.EnvironmentInfo.EnvironmentName} to {this.NewEnvironmentName}");
--->
 
 ### General dimensions
 
@@ -1763,16 +1988,30 @@ Message => Invariant($"Environment rename operation failed: {this.EnvironmentInf
 |newEnvironmentName|[!INCLUDE[newEnvironmentName](../includes/include-telemetry-dimension-new-environment-name.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
+### Sample KQL code (environment rename operation failed)
+
+This KQL code can help you get started analyzing failures for renaming an environment:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0154' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, newEnvironmentName = customDimensions.newEnvironmentName
+// what happened
+, failureReason = customDimensions.failureReason
+```
+
+
 ## Environment app hotfix scheduled by App Management API
-
 Occurs when an app hotfix for the environment has been scheduled by the App Management API service.
-
-<!-- 
-EnvironmentAppHotfixScheduled = "LC0155";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockEnvironmentAppOperation
-Message => Invariant($"Environment app '{this.AppOperation.GetAppDisplayName()}' hotfix to version {this.AppOperation.ExtensionDestinationVersion} scheduled for environment: {this.EnvironmentInfo.EnvironmentName}"); 
--->
 
 ### General dimensions
 
@@ -1799,17 +2038,9 @@ Message => Invariant($"Environment app '{this.AppOperation.GetAppDisplayName()}'
 |runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
 |useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
 
-## Environment app hotfix scheduling by App Management API failed
 
+## Environment app hotfix scheduling by App Management API failed to be scheduled
 Occurs when an app hotfix for the environment could not be scheduled by the App Management API service.
-
-<!-- 
-EnvironmentAppHotfixSchedulingFailed = "LC0156";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockEnvironmentAppOperation
-PartnerDiagnosticsBlockSchedulingFailureInfo
-Message => Invariant($"Environment app '{this.AppOperation.GetAppDisplayName()}' hotfix to version {this.AppOperation.ExtensionDestinationVersion} scheduling failed for environment: {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -1839,16 +2070,41 @@ Message => Invariant($"Environment app '{this.AppOperation.GetAppDisplayName()}'
 |useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]
 
+
+### Sample KQL code (environment app hotfix scheduling by App Management API failed to be scheduled)
+
+This KQL code can help you get started analyzing failures for scheduling an app hotfix by using the App Management API:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0156' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, environmentVersion = customDimensions.environmentVersion
+// which extension/app
+, extensionId = customDimensions.extensionId
+, extensionName = customDimensions.extensionName
+, extensionPublisher = customDimensions.extensionPublisher
+, extensionScope = customDimensions.extensionScope
+, extensionDestinationVersion = customDimensions.extensionDestinationVersion
+, extensionSourceVersion = customDimensions.extensionSourceVersion
+// when should the operation run
+, runAfterDateUtc = customDimensions.runAfterDateUtc
+, useEnvironmentUpdateWindow = customDimensions.useEnvironmentUpdateWindow
+// what happened
+, failureReason = customDimensions.failureReason
+```
+
+
 ## Environment app hotfix cancelled by App Management API
-
 Occurs when an app hotfix for the environment was cancelled by the App Management API service.
-
-<!-- 
-EnvironmentAppHotfixCanceled = "LC0157";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockEnvironmentAppOperation
-Message => Invariant($"Environment app '{this.AppOperation.GetAppDisplayName()}' hotfix to version {this.AppOperation.ExtensionDestinationVersion} was canceled for environment: {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -1876,16 +2132,9 @@ Message => Invariant($"Environment app '{this.AppOperation.GetAppDisplayName()}'
 |runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
 |useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
 
+
 ## Environment app hotfix started by App Management API
-
 Occurs when an app hotfix for the environment was started by the App Management API service.
-
-<!-- 
-EnvironmentAppHotfixStarted = "LC0158";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockEnvironmentAppOperation
-Message => Invariant($"Environment app '{this.AppOperation.GetAppDisplayName()}' hotfix to version {this.AppOperation.ExtensionDestinationVersion} started for environment: {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -1913,17 +2162,9 @@ Message => Invariant($"Environment app '{this.AppOperation.GetAppDisplayName()}'
 |runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
 |useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
 
+
 ## Environment app hotfix applied successfully by App Management API
-
 Occurs when an app hotfix for the environment applied successfully by the App Management API service.
-
-<!-- 
-EnvironmentAppHotfixSucceeded = "LC0159";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockEnvironmentAppOperation
-PartnerDiagnosticsBlockOperationSuccessInfo
-Message => Invariant($"Environment app '{this.AppOperation.GetAppDisplayName()}' hotfix to version {this.AppOperation.ExtensionDestinationVersion} applied successfully for environment: {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -1952,17 +2193,10 @@ Message => Invariant($"Environment app '{this.AppOperation.GetAppDisplayName()}'
 |useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
-## Environment app hotfix operation by App Management API failed
+
+## Environment app hotfix operation by App Management API failed to be installed
 
 Occurs when an app hotfix for the environment was applied by the App Management API service and failed to be installed.
-
-<!-- 
-EnvironmentAppHotfixFailed = "LC0160";
-PartnerDiagnosticsBlockEnvironmentInfo 
-PartnerDiagnosticsBlockEnvironmentAppOperation
-PartnerDiagnosticsBlockOperationFailureInfo
-Message => Invariant($"Environment app '{this.AppOperation.GetAppDisplayName()}' hotfix to version {this.AppOperation.ExtensionDestinationVersion} failed for environment: {this.EnvironmentInfo.EnvironmentName}");
--->
 
 ### General dimensions
 
@@ -1991,6 +2225,39 @@ Message => Invariant($"Environment app '{this.AppOperation.GetAppDisplayName()}'
 |runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 |useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+
+
+### Sample KQL code (environment app hotfix scheduling by App Management API failed to be installed)
+
+This KQL code can help you get started analyzing failures for installing an app hotfix by using the App Management API:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions.eventId == 'LC0160' 
+| project timestamp
+, message
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, applicationFamily = customDimensions.applicationFamily
+, countryCode = customDimensions.countryCode
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, environmentVersion = customDimensions.environmentVersion
+// which extension/app
+, extensionId = customDimensions.extensionId
+, extensionName = customDimensions.extensionName
+, extensionPublisher = customDimensions.extensionPublisher
+, extensionScope = customDimensions.extensionScope
+, extensionDestinationVersion = customDimensions.extensionDestinationVersion
+, extensionSourceVersion = customDimensions.extensionSourceVersion
+// when should the operation run
+, runAfterDateUtc = customDimensions.runAfterDateUtc
+, useEnvironmentUpdateWindow = customDimensions.useEnvironmentUpdateWindow
+// what happened
+, failureReason = customDimensions.failureReason
+```
+
 
 ## See also
 

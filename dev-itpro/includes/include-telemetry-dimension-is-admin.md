@@ -1,0 +1,1 @@
+Specifies if the user is an administrator.

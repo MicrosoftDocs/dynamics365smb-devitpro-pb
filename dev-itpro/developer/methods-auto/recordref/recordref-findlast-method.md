@@ -2,10 +2,7 @@
 title: "RecordRef.FindLast() Method"
 description: "Finds the last record in a table based on the current key and filter."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Finds the last record in a table based on the current key and filter.
 ```AL
 [Ok := ]  RecordRef.FindLast()
 ```
-
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  

@@ -2,10 +2,8 @@
 title: CREATE unitOfMeasures  
 description: Creates a unitOfMeasure object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -27,7 +25,8 @@ POST businesscentralPrefix/companies({id})/unitsOfMeasure
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|Content-Type  |application/json   |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **unitOfMeasure**, the **unitOfMeasure** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **unitsOfMeasure** object.
@@ -46,12 +45,10 @@ POST https://{businesscentralPrefix}/api/v1.0/companies({id})/unitsOfMeasure
 Content-type: application/json
 
 {
-    "id": "53a6738a-44e3-ea11-bb43-000d3a2feca1",
     "code": "BOX",
     "displayName": "Box",
     "internationalStandardCode": "BX",
-    "symbol": "",
-    "lastModifiedDateTime": "2020-08-20T22:24:22.193Z"
+    "symbol": ""
 }
 ```
 

@@ -2,11 +2,9 @@
 title: item resource type  
 description: An item object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.topic: reference
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -36,10 +34,13 @@ Represents an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[itemCategory](dynamics_itemcategory.md)|itemCategory |Gets the itemcategory of the item.|
+|[inventoryPostingGroup](dynamics_inventorypostinggroup.md)|inventoryPostingGroup |Gets the inventorypostinggroup of the item.|
+|[generalProductPostingGroup](dynamics_generalproductpostinggroup.md)|generalProductPostingGroup |Gets the generalproductpostinggroup of the item.|
 |[unitOfMeasure](dynamics_unitofmeasure.md)|unitOfMeasure |Gets the unitofmeasure of the item.|
 |[picture](dynamics_picture.md)|picture |Gets the picture of the item.|
 |[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the item.|
 |[itemVariants](dynamics_itemvariant.md)|itemVariants |Gets the itemvariants of the item.|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the item.|
 
 ## Properties
 
@@ -48,6 +49,7 @@ Represents an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |id|GUID|The unique ID of the item. Non-editable.|
 |number|string|Specifies the number of the item.|
 |displayName|string|Specifies the item's name. This name will appear on all sales documents for the item.|
+|displayName2|string||
 |type|NAV.itemType|Specifies the type of the item. It can be "Inventory", "Service" or "Non-Inventory".|
 |itemCategoryId|GUID|The ID of the item category in the item.|
 |itemCategoryCode|string|The code of the item category in the item.|
@@ -61,6 +63,10 @@ Represents an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |taxGroupCode|string|A Tax Group represents a group of inventory items or resources that are subject to identical tax terms.|
 |baseUnitOfMeasureId|GUID|Specifies the ID of the unit of measure.|
 |baseUnitOfMeasureCode|string|The item's base unit of measure code.|
+|generalProductPostingGroupId|GUID||
+|generalProductPostingGroupCode|string||
+|inventoryPostingGroupId|GUID||
+|inventoryPostingGroupCode|string||
 |lastModifiedDateTime|datetime|The last datetime the item was modified. Read-Only.|
 
 ## JSON representation
@@ -73,6 +79,7 @@ Here is a JSON representation of the item resource.
     "id": "GUID",
     "number": "string",
     "displayName": "string",
+    "displayName2": "string",
     "type": "NAV.itemType",
     "itemCategoryId": "GUID",
     "itemCategoryCode": "string",
@@ -86,6 +93,10 @@ Here is a JSON representation of the item resource.
     "taxGroupCode": "string",
     "baseUnitOfMeasureId": "GUID",
     "baseUnitOfMeasureCode": "string",
+    "generalProductPostingGroupId": "GUID",
+    "generalProductPostingGroupCode": "string",
+    "inventoryPostingGroupId": "GUID",
+    "inventoryPostingGroupCode": "string",
     "lastModifiedDateTime": "datetime"
 }
 ```

@@ -2,10 +2,7 @@
 title: "IncludedFields Property"
 description: "Sets the fields that are included as non-key columns in the index on SQL Server."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -36,6 +33,8 @@ IncludedFields = Field1,Field2;
 ## Remarks
 
 You can't use this property on primary keys or clustered secondary keys ([Clustered](devenv-clustered-property.md) property is **true**).
+
+Fields that are part of a **IncludedFields** definition are not used when searching for a matching key with the **Record.SetCurrentKey** method. For more information, see [Record.SetCurrentKey Method](../methods-auto/record/record-setcurrentkey-method.md).
 
 Using this property can improve query performance. For more information, see [Table Keys](../devenv-table-keys.md).
 

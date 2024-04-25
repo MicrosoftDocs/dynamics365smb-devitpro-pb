@@ -1,16 +1,13 @@
 ---
-title: "Technical Upgrade to Version 19"
+title: "Technical upgrade to version 19"
 description: Describes how to do a technical upgrade from Business Central 16, and 17, and V18 to V19
-ms.custom: na
-ms.date: 10/01/2020
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
-# Technical Upgrade to Version 19
+# Technical upgrade to version 19
 
 Use this process to upgrade any of the following versions to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 platform (version 19). This process won't upgrade the application to the latest version.
 
@@ -65,13 +62,13 @@ $CustomerLicense = "The file path and name of the customer license"
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 4. Copy Dynamics Online Connect add-in (upgrade from version 16 or earlier).
 
-    The Dynamics Online Connect add-in was deprecated in version 17. As a result, it's been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, for upgrade, the add-in may still be required for the old System Application. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 19 server installation.
+    The Dynamics Online Connect add-in was deprecated in version 17. As a result, it's been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, for upgrade, the add-in might still be required for the old System Application. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 19 server installation.
 
 ## Task 2: Upgrade permission sets
 
 Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for defining permissions. However for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you'll have to go through before and during upgrade.
 
-For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
+For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
 
 <!-- ## Prereuisites 
 1. Your current platform version is compatible with version 18.
@@ -113,7 +110,7 @@ For the base application or system application extensions, you'll have to create
     - Set `"platform"` to `19.0.0.0`
     - Set `"target"` to `OnPrem`
 
-    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#Appjson).
+    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#appjson-file).
 5. In the **dotnet.al** files in the project, find and delete all instances of `Version = '15.0.0.0';` in **Microsoft.Dynamics.Nav** and  **Microsoft.Dynamics.Framework** assembly declarations.
 
 6. Rewrite code that references the deprecated table to reference the new tables.
@@ -279,7 +276,7 @@ Compile all published extensions against the new platform.
 
     For more information, see [Fixing compilation errors for technical upgrade](technical-upgrade-fix-compilation-errors.md).
 
-    In most cases, fixing these errors will require that you create new versions of the extensions, which you'll have to publish and upgrade.
+    In most cases, fixing these errors require you to create new versions of the extensions, which you'll have to publish and upgrade.
 
 3. Restart the server instance.
 
@@ -336,7 +333,7 @@ Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "System Appli
 Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "Base Application"-Version "<version>" -Tenant $TenantId 
 ```
 
-This step will install the new versions on the tenant.
+This step installs the new versions on the tenant.
 
 ## Task 10: Reinstall extensions (single-tenant only)
 
@@ -435,7 +432,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## See Also
+## See also
 
-[Upgrading to Business Central](upgrading-to-business-central.md)  
+[Upgrading to Business Central](upgrading-to-business-central.md)    
 [Business Central Compatibility matrix](upgrade-v14-v15-compatibility.md)

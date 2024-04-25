@@ -2,10 +2,7 @@
 title: "JsonToken.ReadFrom(Text) Method"
 description: "Reads the JSON data from the string into a JsonToken variable."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -36,7 +33,7 @@ The String object from which the JSON data will be read.
 ## Return Value
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the read was successful; otherwise, **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
+**true** if the read was successful; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -52,12 +49,14 @@ Clear(JsonToken)
 
 ## Example
 This example shows how to read JSON data from a string into a JsonToken variable.
-```
-local procedure ReadJson(data : Text) result : JsonToken;
+
+```al
+local procedure ReadJson(data : Text) result : JsonToken
 begin
     result.ReadFrom(data);    
 end;
 ```
+
 ## See Also
 [JsonToken Data Type](jsontoken-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

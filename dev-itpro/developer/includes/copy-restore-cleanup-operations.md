@@ -11,6 +11,7 @@ ms.author: jobulsin
   - Graph Mail Setup
   - CRM Connection Setup
   - CDS Connection Setup
+  - All webhooks
   - All records in the Service Connection table
   - All records in the Exchange Sync table
 - The following data is cleared

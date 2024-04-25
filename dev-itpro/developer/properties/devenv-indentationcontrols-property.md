@@ -2,10 +2,7 @@
 title: "IndentationControls Property"
 description: "Sets which columns (controls) are indented in a list."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -56,7 +53,7 @@ repeater(Control1)
     {
        
     }
-
+}
 ```
 
 ## See Also

@@ -1,21 +1,19 @@
 ---
-title: "Protected Variables"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Protected variables
+description: The protected keyword can be used to make variables accessible between tables and table extensions, pages and page extensions and report and report extensions.
+ms.date: 01/05/2023
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# Protected Variables
+# Protected variables
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-The `protected` keyword can be used to make variables accessible between tables and table extensions and between pages and page extensions. If you want to only expose some variables as `protected`, you must create two sections of `var` declarations. See the syntax below.
+The `protected` keyword can be used to make variables accessible between tables and table extensions, pages and page extensions and reports and report extensions. It also makes variables accessible between extensions if they belong to apps, which depend on each other. If you want to only expose some variables as `protected`, you must create two sections of `var` declarations. See the syntax below.
 
 ## Syntax
+
 ```AL
 protected var
         myInt: Integer; // protected var
@@ -25,6 +23,7 @@ var
 ```
 
 ## Example
+
 The example below illustrates how to declare and use a protected variable.
 
 ```AL
@@ -97,7 +96,8 @@ pageextension 50101 MyPageExt extends MyPage
 }
 ```
 
-## See Also  
+## See also
+
 [AL Method Reference](./methods-auto/library.md)   
 [Properties](properties/devenv-properties.md)  
 [Access Property](properties/devenv-access-property.md)  

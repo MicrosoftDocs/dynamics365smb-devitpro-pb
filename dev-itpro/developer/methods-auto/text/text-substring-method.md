@@ -2,10 +2,7 @@
 title: "Text.Substring(Integer [, Integer]) Method"
 description: "Retrieves a substring from this instance."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,6 +20,8 @@ Retrieves a substring from this instance.
 ```AL
 Substring :=   Text.Substring(StartIndex: Integer [, Count: Integer])
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
@@ -30,8 +29,7 @@ An instance of the [Text](text-data-type.md) data type.
 
 *StartIndex*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The one-based starting character position of a substring in this instance.
-        
+The one-based starting character position of a substring in this instance.  
 
 *[Optional] Count*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

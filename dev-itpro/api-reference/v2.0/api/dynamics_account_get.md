@@ -2,11 +2,9 @@
 title: Get accounts  
 description: Gets an account object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.topic: reference
+ms.devlang: al
+ms.date: 02/01/2023
 ms.author: solsen
 ---
 
@@ -60,6 +58,7 @@ Here is an example of the response.
     "blocked": false,
     "accountType": "Heading",
     "directPosting": false,
+    "netChange": 0,
     "lastModifiedDateTime": "2020-08-21T00:24:15.327Z"
 }
 ```

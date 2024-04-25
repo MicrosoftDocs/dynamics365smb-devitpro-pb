@@ -2,10 +2,8 @@
 title: DELETE projects  
 description: Deletes project  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -24,9 +22,10 @@ DELETE businesscentralPrefix/companies({id})/projects({id})
 
 ## Request headers
 
-|Header         |Value                     |
-|---------------|--------------------------|
+|Header|Value|
+|------|-----|
 |Authorization  |Bearer {token}. Required. |
+|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **project**, the **project** will not be updated. |
 
 ## Request body
 Do not supply a request body for this method.

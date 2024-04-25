@@ -3,9 +3,8 @@ title: User assistance model
 description: Learn about the user assistance model for Dynamics 365 Business Central and how your solution can comply with it.
 author: edupont04
 ms.custom: na
-ms.reviewer: na
 ms.topic: article
-ms.date: 03/22/2022
+ms.date: 04/20/2023
 ms.author: edupont
 ---
 
@@ -23,7 +22,7 @@ The [!INCLUDE[prod_short](developer/includes/prod_short.md)] user assistance mod
 
     The Help menu and *Learn more* links on tooltips and teaching tips provide context-sensitive access to Help articles with more information.
 
-Apps, extensions, and customizations are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality. For more information about customizing and extending the user assistance, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md) and [Configure the Help Experience](deployment/configure-help.md).  
+Apps, extensions, and customizations are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality. For more information about customizing and extending the user assistance, see [Contribute to the Help](help/contributor-guide.md) and [Configure the Help Experience](deployment/configure-help.md).  
 
 In this article, we'll talk about the user assistance model itself and what it does.  
 
@@ -66,7 +65,7 @@ The Help pane shows up to four types of links:
 
 [!INCLUDE [ua-help-pane-links-default](includes/ua-help-pane-links-default.md)]
 
-If the automatically generated links do not answer the user's question, then the user can use the *Search* field to search Microsoft's content, both documentation and e-learning material. Currently, search in the [!INCLUDE [prod_short](includes/prod_short.md)] Help pane cannot access sites other than the *docs.microsoft.com* site, including Microsoft Learn.  
+If the automatically generated links do not answer the user's question, then the user can use the *Search* field to search Microsoft's content, both documentation and e-learning material. Currently, search in the [!INCLUDE [prod_short](includes/prod_short.md)] Help pane cannot access sites other than the *learn.microsoft.com* site, including Microsoft Learn.  
 
 ## Help users get unblocked
 
@@ -83,7 +82,7 @@ Most tooltips end with an automatically generated link to *learn more* as descri
 :::image type="content" source="media/ua_tooltip_client.png" alt-text="A tooltip for an action without Learn More link.":::
 
 > [!TIP]
-> Users can always use the Ctrl+F1 keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface. In 2022 release wave 1 and later, Ctrl+F1 opens the Help pane with automatically generated links to related content from Microsoft and partners.
+> Users can always use the <kbd>Ctrl</kbd>+<kbd>F1</kbd> keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface. In 2022 release wave 1 and later, <kbd>Ctrl</kbd>+<kbd>F1</kbd> opens the Help pane with automatically generated links to related content from Microsoft and partners.
 
 The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip)* in the Universal Windows Platform's Fluent Design guidelines. The onboarding framework in [2021 release wave 1](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/in-app-contextual-help-improvements) added another interpretation of teaching tips that you can add to your [!INCLUDE [prod_short](developer/includes/prod_short.md)] solution. For more information, see [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md).
 
@@ -99,13 +98,13 @@ The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are co
 
 The content that Microsoft publishes under the user assistance concept of *Learn more* is intended to answer those questions that the user interface (including the tooltips) cannot answer, such as where that page fits into the bigger workflow, or what comes next, or what would be the alternative.
 
-Users can access this content either through the *Learn more* link in tooltips, by choosing the Help menu, or by using the *Ctrl+F1* keyboard shortcut.  
+Users can access this content either through the *Learn more* link in tooltips, by choosing the Help menu, or by using the <kbd>Ctrl</kbd>+<kbd>F1</kbd> keyboard shortcut.  
 
 ### Links in the Help pane
 
 [!INCLUDE [2022_releasewave1](includes/2022_releasewave1.md)]
 
-The *Learn more* links on tooltips and the Ctrl+F1 shortcut now open the Help pane. In most cases, the pane shows the following types of content:
+The *Learn more* links on tooltips and the <kbd>Ctrl</kbd>+<kbd>F1</kbd> shortcut now open the Help pane. In most cases, the pane shows the following types of content:
 
 [!INCLUDE [ua-help-pane-links-default](includes/ua-help-pane-links-default.md)]
 
@@ -113,43 +112,39 @@ The partner-provided links are based on the mechanism for adding links through a
 
 The following screenshot illustrates the Help pane when it is opened from the **Purchase Invoice** page.
 
-:::image type="content" source="media/ua_help_pane.png" alt-text="Help pane with tooltip text, page metadata link, and links to Docs.microsoft.com.":::
+:::image type="content" source="media/ua_help_pane.png" alt-text="Help pane with tooltip text, page metadata link, and links to learn.microsoft.com.":::
 
 In this case, the **Purchase Invoice** page has not been extended by any apps. If two apps had extended the page, their page-level and app-level configuration would be used to add links on a card after the *Related articles from Microsoft Docs* card.  
 
-The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library, ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)), so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend and customize for your customers.  
-
-There are repos in GitHub for the source content and each of the languages that Microsoft translates to. For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).  
+The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library, ([learn.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)), so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in Markdown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend for your customers.  
 
 > [!NOTE]
 > Currently, [!INCLUDE [prod_short](includes/prod_short.md)] does not require the Help for your own functionality to be created in a specific format. But we expect you to make it available on a website that the users of your functionality can access. For more information, see [Configure Context-Sensitive Help](help/context-sensitive-help.md).
 
-For the base version of [!INCLUDE [prod_short](developer/includes/prod_short.md)], free online learning is also available on Microsoft Learn. For more information, see the [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json).
+For the base version of [!INCLUDE [prod_short](developer/includes/prod_short.md)], free online learning is also available on Microsoft Learn. For more information, see the [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs).
 
 ### Feedback and contributions
 
-On docs.microsoft.com, each article has two buttons at the end of the article. The *Product feedback* button sends you to the Ideas site, and the *Sign in to give documentation feedback* button lets you submit feedback about the content through GitHub. In both cases, you must create an account if you do not already have one. For *product feedback*, you must sign in with your work or organizational email account. For *access to GitHub*, you can use any email address when you create an account.  
+On the *learn.microsoft.com* website, each documentation article encourages you to provide feedback. We've changed the mechanism a couple of times based on, well, feedback. Currently, we ask you to choose the **Feedback** action below the article's title. You can give the article a rating, and write a comment if you want to. The feedback goes straight to the article's author and the team that owns the docs.  
 
-We welcome your contributions, both as pull requests with suggestions or corrections to the content, and as GitHub Issues with bugs or questions. However, we can only accept feedback and contributions to the content in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo. Also, we cannot address issues or questions about the product.  
+We welcome your contributions, both as pull requests with suggestions or corrections to the content, and as GitHub Issues with bugs or questions. However, we can only accept feedback and contributions to the content in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) and [dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb) repos. Also, we cannot address issues or questions about the product.  
 
 > [!IMPORTANT]
-> Microsoft only accepts pull requests to the *dynamics365smb-docs* repo, not the language-specific repos. If you have feedback about translations, you can report a GitHub issue in the relevant repo.  
+> If you have feedback about translations, you can report a GitHub issue in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo.  
 
-Microsoft also accepts contributions and feedback about the development and administration content through the [dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb) repo. This repo does not have translation repos associated with it, but other than that, the same rules apply as for the *dynamics365smb-docs* repo.  
+For more information, see [Contribute to the Help](help/contributor-guide.md).  
 
-For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).  
+### Working in Markdown
 
-### Working in MarkDown
+If you fork one of our repos, you will be authoring in Markdown. We recommend that you learn the basics by referring to the [Learn Markdown reference](/contribute/markdown-reference) section in the Learn Contributor Guide.  
 
-If you fork one of our repos, you will be authoring in MarkDown. We recommend that you learn the basics by referring to the [Docs Markdown reference](/contribute/markdown-reference) section in the Docs Contributor Guide.  
+The [Learn Authoring Pack for VS Code](/contribute/how-to-write-docs-auth-pack) can aid with Markdown authoring and validation in Visual Studio Code. However, you can also use other text editors to edit Markdown.  
 
-The [Docs Authoring Pack for VS Code](/contribute/how-to-write-docs-auth-pack) can aid with MarkDown authoring and validation in Visual Studio Code. However, you can also use other text editors to edit MarkDown.  
-
-For other tips and tricks, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md) and the blog post [Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/).  
+For other tips and tricks, see [Contribute to the Help](help/contributor-guide.md) and the blog post [Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/).  
 
 ## Translate the Help
 
-If you want to deliver a [localization app](developer/readiness/readiness-develop-localization.md), or if you want to deliver your functionality in more than one country, you will want to translate the Help as well as the product. We suggest that you take a look at the [Microsoft Dynamics 365 Translation Service](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview), which is available as preview in Microsoft Dynamics Life Cycle Services. For more information, see [Translate documentation files](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
+If you want to deliver a [localization app](developer/readiness/readiness-develop-localization.md), or if you want to deliver your functionality in more than one country/region, you will want to translate the Help as well as the product. We suggest that you take a look at the [Microsoft Dynamics 365 Translation Service](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview), which is available as preview in Microsoft Dynamics Life Cycle Services. For more information, see [Translate documentation files](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
 
 The user interface text, including the tooltips, is translated as part of the application. For more information, see [Working with Translation Files](developer/devenv-work-with-translation-files.md).  
 

@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 7611e9d5-afeb-4aee-a383-f41ee307d065
 caps.latest.revision: 11
-manager: edupont
 ---
 # How to: View and Sort Table Data
 Usually, you use a page to view the data in a table, but you can also view the data directly by running the table from Object Designer.  

@@ -4,10 +4,8 @@ description: Create a sales invoice object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -27,10 +25,11 @@ POST businesscentralPrefix/companies({id})/salesInvoices
 
 ## Request headers
 
-|Header         |Value                     |
-|---------------|--------------------------|
+|Header|Value|
+|------|-----|
 |Authorization  |Bearer {token}. Required. |
-|Content-Type   |application/json          |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **salesInvoice**, the **salesInvoice** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **salesInvoices** object.
@@ -46,6 +45,54 @@ Here is an example of a request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salesInvoices
+Content-type: application/json
+
+{
+    "number": "PS-INV103001",
+    "externalDocumentNumber": "",
+    "invoiceDate": "2019-01-15",
+    "postingDate": "2019-01-15",
+    "dueDate": "2019-01-15",
+    "customerPurchaseOrderReference": "",
+    "customerId": "f3a5738a-44e3-ea11-bb43-000d3a2feca1",
+    "customerNumber": "20000",
+    "customerName": "Trey Research",
+    "billToCustomerId": "f3a5738a-44e3-ea11-bb43-000d3a2feca1",
+    "billToCustomerNumber": "20000",
+    "shipToName": "Trey Research",
+    "shipToContact": "Helen Ray",
+    "sellToAddressLine1": "153 Thomas Drive",
+    "sellToAddressLine2": "",
+    "sellToCity": "Chicago",
+    "sellToCountry": "US",
+    "sellToState": "IL",
+    "sellToPostCode": "61236",
+    "shipToAddressLine1": "153 Thomas Drive",
+    "shipToAddressLine2": "",
+    "shipToCity": "Chicago",
+    "shipToCountry": "US",
+    "shipToState": "IL",
+    "shipToPostCode": "61236",
+    "currencyId": "00000000-0000-0000-0000-000000000000",
+    "currencyCode": "USD",
+    "paymentTermsId": "0ba5738a-44e3-ea11-bb43-000d3a2feca1",
+    "shipmentMethodId": "00000000-0000-0000-0000-000000000000",
+    "salesperson": "PS",
+    "discountAmount": 0,
+    "phoneNumber": "",
+    "email": "helen.ray@contoso.com"
+}
+```
+
+**Response**
+
+Here is an example of the response. 
+
+> [!NOTE]  
+>   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+```json
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -82,7 +129,7 @@ Content-type: application/json
     "shipToCountry": "US",
     "shipToState": "IL",
     "shipToPostCode": "61236",
-    "currencyId": "00000000-0000-0000-0000-000000000000",
+    "currencyId": "7e8b5305-593f-ee11-be74-6045bdc8c285",
     "currencyCode": "USD",
     "orderId": "00000000-0000-0000-0000-000000000000",
     "orderNumber": "",
@@ -92,11 +139,11 @@ Content-type: application/json
     "pricesIncludeTax": false,
     "remainingAmount": 0,
     "discountAmount": 0,
-    "discountAppliedBeforeTax": true,
-    "totalAmountExcludingTax": 164.7,
-    "totalTaxAmount": 8.24,
-    "totalAmountIncludingTax": 172.94,
-    "status": "Paid",
+    "discountAppliedBeforeTax": false,
+    "totalAmountExcludingTax": 0,
+    "totalTaxAmount": 0,
+    "totalAmountIncludingTax": 0,
+    "status": "Draft",
     "lastModifiedDateTime": "2020-08-21T00:25:58.337Z",
     "phoneNumber": "",
     "email": "helen.ray@contoso.com"

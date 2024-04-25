@@ -2,10 +2,7 @@
 title: "Variant.IsTextConstant() Method"
 description: "Indicates whether an AL variant contains a Text constant."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -25,7 +22,6 @@ Ok :=   Variant.IsTextConstant()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *Variant*  
 &emsp;Type: [Variant](variant-data-type.md)  
@@ -42,7 +38,7 @@ An instance of the [Variant](variant-data-type.md) data type.
 ## Example  
  The following example determines whether an AL variant contains a text constant. The code assigns the Text000 text constant to the variant variable that is named MyVariant. The **IsTextCONSTANT** method determines whether the variant contains a text constant and stores the return value in the varResult variable. In this case, the variant contains a text constant so **Yes** is returned and displayed in a message box. 
  
-```  
+```al
 var
     MyVariant: Variant;
     varResult: Boolean;

@@ -2,11 +2,7 @@
 title: "IsolatedStorage.Contains(Text [, DataScope]) Method"
 description: "Determines whether the storage contains a value with the specified key."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/02/2023
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -26,8 +22,7 @@ HasValue :=   IsolatedStorage.Contains(Key: Text [, DataScope: DataScope])
 ## Parameters
 *Key*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The key to locate in the storage.
-        
+The key to locate in the storage.  
 
 *[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  

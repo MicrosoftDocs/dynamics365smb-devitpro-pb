@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 10ccff06-ebf2-4eb5-b52a-8fc601cf156a
 caps.latest.revision: 11
-manager: edupont
 ---
 # How to: View Names and Captions
 If you have a multilanguage application, then you need to know how to find the values of both the [Name Property](Name-Property.md) of an object, which is in English \(United States\), and the [Caption Property](Caption-Property.md) of an object, which is in the local application language.  

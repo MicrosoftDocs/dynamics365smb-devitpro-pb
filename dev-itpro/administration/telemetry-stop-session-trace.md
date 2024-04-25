@@ -3,14 +3,14 @@ title: Analyzing Stopped Session Telemetry
 description: Learn about analyzing stop session telemetry in Business Central.  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 07/26/2022
 ms.author: jswymer
 ---
 # Analyzing Stopped Session Telemetry
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 In Business Central, a background session is session without a UI that runs a specified codeunit. Background sessions are started and stopped by calling the [StartSession](..\developer\methods-auto\session\session-startsession-integer-integer-string-table-method.md) and [StopSession](..\developer\methods-auto\session\session-stopsession-method.md) methods from AL. With Business Central online, sessions can be stopped by using the admin center, which indirectly calls the StopSession method. For more information, see [Managing Sessions](tenant-admin-center-manage-sessions.md).
 
@@ -67,7 +67,7 @@ The following table explains other custom dimensions os the trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|The Azure Active Directory (Azure AD) tenant ID that's used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|The Microsoft Entra tenant ID that's used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|The version number of the component that emits telemetry (see the component dimension)|
 |environmentName|The name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|

@@ -2,10 +2,7 @@
 title: "XmlElement.SelectSingleNode(Text, var XmlNode) Method"
 description: "Selects the first XmlNode that matches the XPath expression."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,7 @@ An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 *XPath*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The XPath expression.
-        
+The XPath expression.  
 
 *Node*  
 &emsp;Type: [XmlNode](../xmlnode/xmlnode-data-type.md)  

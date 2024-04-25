@@ -2,10 +2,7 @@
 title: "Report.Print(Text [, Text] [, RecordRef]) Method"
 description: "Prints a specified report without running the request page."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -16,7 +13,7 @@ author: SusanneWindfeldPedersen
 # Report.Print(Text [, Text] [, RecordRef]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RUNREQUESTPAGE method call.
+Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RunRequestPage method call.
 
 > [!NOTE]
 > From runtime version 9.0 and onward, this method is supported in Business Central online.
@@ -32,18 +29,15 @@ An instance of the [Report](report-data-type.md) data type.
 
 *Parameters*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RUNREQUESTPAGE method call.
-          
+A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RunRequestPage method call.  
 
 *[Optional] PrinterName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The name of the printer to use to print the report. The printer must be set up on the client computer. If you do not set this variable, the printer that is set as the default printer is used.
-          
+The name of the printer to use to print the report. The printer must be set up on the client computer. If you do not set this variable, the printer that is set as the default printer is used.  
 
 *[Optional] RecordRef*  
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
-The RecordRef that refers to the table in which you want to find a record.
-          
+The RecordRef that refers to the table in which you want to find a record.  
 
 
 

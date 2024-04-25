@@ -2,10 +2,7 @@
 title: "System.ExportObjects(Text, var Record [, Integer]) Method"
 description: "Exports application objects to a file."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,13 +27,11 @@ Exports application objects to a file.
 ## Parameters
 *FileName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The path of the file to export to.
-        
+The path of the file to export to.  
 
 *ObjectRecord*  
 &emsp;Type: [Record](../record/record-data-type.md)  
-A record to the Object table.
-        
+A record to the Object table.  
 
 *[Optional] Format*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

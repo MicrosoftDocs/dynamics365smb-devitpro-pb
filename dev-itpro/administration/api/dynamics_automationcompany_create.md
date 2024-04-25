@@ -3,9 +3,7 @@ title: Create automationCompany
 description: Creates an automation company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -52,14 +50,15 @@ POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/micros
 Content-type: application/json
 {
     "name": "CRONUS",
-    "evaluationCompany": false,
     "displayName": "CRONUS",
     "businessProfileId": ""
 }
 ```
 
 **Response**
+
 Here is an example of the response.
+
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json

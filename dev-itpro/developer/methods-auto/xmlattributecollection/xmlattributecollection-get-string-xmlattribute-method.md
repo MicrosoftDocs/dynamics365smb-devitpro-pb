@@ -2,10 +2,7 @@
 title: "XmlAttributeCollection.Get(Text, var XmlAttribute) Method"
 description: "Gets the specified attribute."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,7 @@ An instance of the [XmlAttributeCollection](xmlattributecollection-data-type.md)
 
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The qualified name of the attribute to retrieve.
-        
+The qualified name of the attribute to retrieve.  
 
 *Result*  
 &emsp;Type: [XmlAttribute](../xmlattribute/xmlattribute-data-type.md)  

@@ -2,10 +2,7 @@
 title: "JsonValue.SetValueToUndefined() Method"
 description: "Set the contents of the JsonValue variable to the JSON representation of UNDEFINED."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Set the contents of the JsonValue variable to the JSON representation of UNDEFIN
 ```AL
  JsonValue.SetValueToUndefined()
 ```
-
 ## Parameters
 *JsonValue*  
 &emsp;Type: [JsonValue](jsonvalue-data-type.md)  

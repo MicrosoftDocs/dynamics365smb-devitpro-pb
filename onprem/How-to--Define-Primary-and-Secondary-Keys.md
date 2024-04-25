@@ -7,10 +7,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: cf31b59c-3436-48cb-ae78-c8e03a80ca92
 caps.latest.revision: 10
-manager: edupont
 ---
 # Define Primary and Secondary Keys
 A maximum of 20 distinct fields can be used to define a primary key. The number of fields used in the primary key limits the number of fields in the secondary keys. Fields used by one key can also be used in another key; however, no more than 20 unique fields can be used to create primary or secondary keys.  

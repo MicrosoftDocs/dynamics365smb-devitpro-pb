@@ -1,11 +1,8 @@
 ---
 title: "Technical Upgrade from Version 17 to Version 18"
 description: Describes how to do a technical upgrade from Business Central V15, 16, and 17, to V18
-ms.custom: na
-ms.date: 10/01/2020
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -53,7 +50,7 @@ Review the information in this section before you start upgrading your deploymen
 
 Version 18 introduces the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for defining permissions. However for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you'll have to go through before and during upgrade.
 
-For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
+For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
 
 <!-- ## Prereuisites 
 1. Your current platform version is compatible with version 18.
@@ -94,7 +91,7 @@ For the base application or system application extensions, you'll have to create
     - Set `"platform"` to `18.0.0.0`
     - Set `"target"` to `OnPrem`
 
-    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#Appjson).
+    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#appjson-file).
 5. In the **dotnet.al** files in the project, find and delete all instances of `Version = '15.0.0.0';` in **Microsoft.Dynamics.Nav** and  **Microsoft.Dynamics.Framework** assembly declarations.
 
 6. Rewrite code that references the deprecated table to reference the new tables.

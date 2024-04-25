@@ -2,10 +2,7 @@
 title: "Xmlport.Import(Integer, var InStream [, var Record]) Method"
 description: "Reads and parses an incoming XML data stream (XML document)."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,16 +23,15 @@ Reads and parses an incoming XML data stream (XML document).
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the XmlPort that you want to run. If the XmlPort that you specify does not exist, a run-time error occurs.
-          
+The ID of the XmlPort that you want to run. If the XmlPort that you specify does not exist, a run-time error occurs.  
+
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
-The source from which the import XmlPort object will read the XML data stream.
-          
+The source from which the import XmlPort object will read the XML data stream.  
+
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
-The record to use in the XmlPort. Any filters that are attached to the record will be used. This parameter is optional. If this parameter is omitted, all records in the table are imported. For example, you can use this parameter to change the values of properties such as FieldSeparator or TextEncoding, depending on each record that is imported.
-          
+The record to use in the XmlPort. Any filters that are attached to the record will be used. This parameter is optional. If this parameter is omitted, all records in the table are imported. For example, you can use this parameter to change the values of properties such as FieldSeparator or TextEncoding, depending on each record that is imported.  
 
 
 ## Return Value

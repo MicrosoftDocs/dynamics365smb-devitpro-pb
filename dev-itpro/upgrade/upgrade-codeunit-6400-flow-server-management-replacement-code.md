@@ -1,11 +1,8 @@
 ---
 title: Codeunit 6400 Flow Server Management Replacement Code for C/AL to AL conversion 
 description: The article includes replacement code for Page 6401 Flow Selector for fixing compilation errors when converting a Business Central version 14 application to version 15 AL. 
-ms.custom: na
+ms.custom: evergreen
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -29,11 +26,11 @@ codeunit 6400 "Flow Service Management"
     end;
 
     var
-        FlowUrlProdTxt: Label 'https://flow.microsoft.com/', Locked = true;
-        FlowUrlTip1Txt: Label 'https://tip1.flow.microsoft.com/', Locked = true;
-        FlowUrlTip2Txt: Label 'https://tip2.flow.microsoft.com/', Locked = true;
+        FlowUrlProdTxt: Label 'https://powerautomate.com/', Locked = true;
+        FlowUrlTip1Txt: Label 'https://tip1.powerautomate.com/', Locked = true;
+        FlowUrlTip2Txt: Label 'https://tip2.powerautomate.com/', Locked = true;
         FlowARMResourceUrlTxt: Label 'https://management.core.windows.net/', Locked = true;
-        FlowServiceResourceUrlTxt: Label 'https://service.flow.microsoft.com/', Locked = true;
+        FlowServiceResourceUrlTxt: Label 'https://service.powerautomate.com/', Locked = true;
         FlowEnvironmentsProdApiTxt: Label 'https://management.azure.com/providers/Microsoft.ProcessSimple/environments?api-version=2016-11-01', Locked = true;
         FlowEnvironmentsTip1ApiTxt: Label 'https://tip1.api.powerapps.com/providers/Microsoft.PowerApps/environments?api-version=2016-11-01', Locked = true;
         FlowEnvironmentsTip2ApiTxt: Label 'https://tip2.api.powerapps.com/providers/Microsoft.PowerApps/environments?api-version=2016-11-01', Locked = true;

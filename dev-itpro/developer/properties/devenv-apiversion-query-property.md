@@ -1,11 +1,8 @@
 ---
 title: "APIVersion Property (Query)"
+description: "Sets the versions of the API endpoint that the query is exposed in."
 ms.author: solsen
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 06/23/2023
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -13,7 +10,9 @@ author: SusanneWindfeldPedersen
 # APIVersion Property (Query)
 > **Version**: _Available from runtime version 1.0._ 
 
-Sets the version(s) of the API endpoint the query is exposed in.  The syntax for providing versions is illustrated in the example below:
+<!-- this topic is manually created, parent node is devenv-apiversion-property.md -->
+
+Sets the version(s) of the API endpoint the query is exposed in. If the `APIVersion` isn't specified, the default value is `beta`. The syntax for providing versions is illustrated in the example below:
 
 ## Applies to  
 

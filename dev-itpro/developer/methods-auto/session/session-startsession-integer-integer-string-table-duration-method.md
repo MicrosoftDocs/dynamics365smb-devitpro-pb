@@ -2,10 +2,7 @@
 title: "Session.StartSession(var Integer, Integer, Text, var Record, Duration) Method"
 description: "Starts a session without a UI and runs the specified codeunit."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -66,4 +63,4 @@ For information about how dialog boxes are handled in a background session, see 
 [Session Data Type](session-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[Configuring Business Central Server - Default StartSession Timeout](../../../administration/configure-server-instance.md#General)
+[Configuring Business Central Server - Default StartSession Timeout](../../../administration/configure-server-instance.md#general-settings)

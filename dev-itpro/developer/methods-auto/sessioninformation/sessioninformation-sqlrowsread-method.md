@@ -2,10 +2,7 @@
 title: "SessionInformation.SqlRowsRead() Method"
 description: "Gets the amount of SQL rows read on the session, since the session started."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,7 +23,6 @@ SqlStatementsExecuted :=   SessionInformation.SqlRowsRead()
 > [!NOTE]
 > This method can be invoked using property access syntax.
 
-
 ## Return Value
 *SqlStatementsExecuted*  
 &emsp;Type: [BigInteger](../biginteger/biginteger-data-type.md)  
@@ -45,7 +41,7 @@ The following code gets the number of SQL rows read for the session and displays
 
 ```al
 var
-    SqlRowsRead := BigText;
+    SqlRowsRead : BigInteger;
 
 begin
 

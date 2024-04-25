@@ -3,9 +3,7 @@ title: Get extensionUpload
 description: Gets an extension upload object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -55,10 +53,12 @@ Here is an example of the response.
 {
     "systemId" : "f99be650-07ce-45df-a285-3afe69a953eb",
     "schedule" : "Next major version",
+    "schemaSyncMode": "Add",
     "extensionContent" : ""
 }
 ```
 Schedule in the body can be "Current version", "Next minor version", or "Next major version".
+Schema Sync Mode in the body can be "Add" or "Force Sync".
 
 ## See Also
 

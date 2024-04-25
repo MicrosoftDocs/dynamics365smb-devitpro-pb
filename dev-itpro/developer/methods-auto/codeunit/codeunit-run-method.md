@@ -2,10 +2,7 @@
 title: "Codeunit.Run(Integer [, var Record]) Method"
 description: "Loads and runs the unit of AL code you specify."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,8 +23,8 @@ Loads and runs the unit of AL code you specify. To use this method, you can spec
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-An integer data type that identifies the unit of AL code. If the codeunit you specify does not exist, a run-time error occurs. If you run the codeunit with a record from a table other than the one it is associated with, a run-time error occurs.
-        
+An integer data type that identifies the unit of AL code. If the codeunit you specify does not exist, a run-time error occurs. If you run the codeunit with a record from a table other than the one it is associated with, a run-time error occurs.  
+
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 This optional parameter identifies a record. This parameter is a record data type.  

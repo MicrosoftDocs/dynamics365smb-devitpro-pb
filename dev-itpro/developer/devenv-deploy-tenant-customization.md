@@ -2,11 +2,7 @@
 title: "Deploying a Tenant Customization"
 description: "Overview of the how you deploy an .app package with a tenant customization to Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -32,7 +28,7 @@ The extension you are deploying could be the initial release of the customizatio
 6. Choose the **Deploy** button.
 7. The extension will be deployed in the background.  
     To check the status of the deployment, choose **Deployment Status** and then view the status of the extension deployment. Select the row to see additional details.  
-    In the deployment status details there is a **Refresh** button in the actions you must press to retrieve the most recent status and details.
+    In the deployment status details there is a **Refresh** button in the actions you must select to retrieve the most recent status and details.
 8. When the extension has been successfully deployed, choose the **Refresh** button to see the new extension in the list of installed extensions.
 
 ## Extension uniqueness requirements
@@ -44,7 +40,7 @@ If you are developing and deploying an updated version of a previously-deployed 
 - Name + Publisher + Version
 
 > [!NOTE]
-> These parameters are defined in the app.json file of the extension. For more information, see [JSON files](devenv-json-files.md#Appjson).
+> These parameters are defined in the app.json file of the extension. For more information, see [JSON files](devenv-json-files.md#appjson-file).
 
 If you have successfully deployed an extension to a tenant, and then recompile the extension’s source code without updating version number, this generates a new extension package file with a new package ID. If you try to upload this new extension package file to a different tenant, the upload will fail with the error similar to `An extension with same App ID and version has already been uploaded. Resolve and deploy again.`. Similarly, if an extension failed to deploy, and you try to upload a new extension package with the same version number, the upload will fail as well.
 
@@ -63,4 +59,4 @@ In some cases, a customer's production environment that includes a per-tenant ex
 [Get Started with AL](devenv-get-started.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  

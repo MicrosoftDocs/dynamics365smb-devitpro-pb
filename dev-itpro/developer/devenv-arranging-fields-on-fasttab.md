@@ -1,11 +1,7 @@
 ---
 title: "Field Arrangement on FastTabs"
 description: FastTabs in Dynamics 365 Business Central allow users to find key information on a page displayed in separate groups.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -82,5 +78,5 @@ Using the GridLayout or FixedLayout controls, you can arrange fields in multiple
 ## See Also
 [Arranging Fields Using Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md)  
 [Pages Overview](devenv-pages-overview.md)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  
 [Table in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]](devenv-tables-overview.md)  

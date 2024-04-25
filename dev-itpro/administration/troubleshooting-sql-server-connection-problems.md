@@ -1,11 +1,7 @@
 ---
 title: "Troubleshooting: SQL Server Connection Problems"
 description: Learn how to configure and troubleshoot SQL Server connections to Business Central.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -66,6 +62,10 @@ If Windows Firewall is running on the computer running SQL Server, then you must
 ## Starting SQL Browser Service
 
 When using a named database instance for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and [!INCLUDE[server](../developer/includes/server.md)] and the SQL server are on separate computers, then SQL Browser Service must be running on the SQL Server. For more information, see [Start SQL Browser Service](/sql/database-engine/configure-windows/start-stop-pause-resume-restart-sql-server-services).  
+
+## Integrating directly on SQL Server objects
+[!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
+
 
 ## See Also  
 

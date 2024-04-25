@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 10cc3b9b-6d65-43ef-add0-af105adbaad2
 caps.latest.revision: 9
-manager: edupont
 ---
 # Page Designer Troubleshooting
 This topic contains information about known troubleshooting issues in Page Designer.  

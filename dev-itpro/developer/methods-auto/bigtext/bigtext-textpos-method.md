@@ -2,10 +2,7 @@
 title: "BigText.TextPos(Text) Method"
 description: "Gets the position at which a specific string first occurs in this BigText instance."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,7 @@ An instance of the [BigText](bigtext-data-type.md) data type.
 
 *String*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The text string to search for in the BigText variable. If this parameter is empty, then 0 is returned.
-        
+The text string to search for in the BigText variable. If this parameter is empty, then 0 is returned.  
 
 
 ## Return Value

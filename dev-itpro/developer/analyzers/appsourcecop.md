@@ -2,10 +2,7 @@
 title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,6 +23,8 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0004](appsourcecop-as0004.md)|Fields must not change type, since dependent extensions may break|Upgrade|Error|
 |[AS0005](appsourcecop-as0005.md)|Fields must not change name|Upgrade|Error|
 |[AS0006](appsourcecop-as0006.md)|Tables that have been published must not change name.|Upgrade|Error|
+|[AS0007](appsourcecop-as0007.md)|Objects that have been published must not change namespace.|Upgrade|Error|
+|[AS0008](appsourcecop-as0008.md)|Defining reserved namespaces is not allowed.|Configuration|Error|
 |[AS0009](appsourcecop-as0009.md)|Key fields must not be changed|Upgrade|Error|
 |[AS0010](appsourcecop-as0010.md)|Keys must not be deleted|Upgrade|Error|
 |[AS0011](appsourcecop-as0011.md)|An affix is required|Extensibility|Error|
@@ -50,9 +49,11 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0032](appsourcecop-as0032.md)|Controls that have been published must not be deleted.|Upgrade|Error|
 |[AS0033](appsourcecop-as0033.md)|Views that have been published must not be deleted.|Upgrade|Error|
 |[AS0034](appsourcecop-as0034.md)|Unsupported table property change|Upgrade|Error|
+|[AS0035](appsourcecop-as0035.md)|Unsupported page property change|Upgrade|Warning|
 |[AS0036](appsourcecop-as0036.md)|Unsupported table field property change|Upgrade|Error|
 |[AS0038](appsourcecop-as0038.md)|Unsupported table key property change|Upgrade|Error|
 |[AS0039](appsourcecop-as0039.md)|Removing properties that cause destructive changes is not allowed|Upgrade|Error|
+|[AS0040](appsourcecop-as0040.md)|Removing properties that cause destructive changes is not allowed|Upgrade|Warning|
 |[AS0041](appsourcecop-as0041.md)|Table field property changes that cause destructive changes must not be removed|Upgrade|Error|
 |[AS0042](appsourcecop-as0042.md)|Table key property changes that cause destructive changes must not be removed|Upgrade|Error|
 |[AS0043](appsourcecop-as0043.md)|The clustered key must not be deleted|Upgrade|Error|
@@ -95,7 +96,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0082](appsourcecop-as0082.md)|It is not allowed to rename an enum value.|Upgrade|Error|
 |[AS0083](appsourcecop-as0083.md)|It is not allowed to delete a value from an enum.|Upgrade|Error|
 |[AS0084](appsourcecop-as0084.md)|The ID range assigned to the extension must be within the allowed range|Extensibility|Error|
-|[AS0085](appsourcecop-as0085.md)|The 'application' property should be used instead of explicit dependencies|Extensibility|Warning|
+|[AS0085](appsourcecop-as0085.md)|Use the 'application' property instead of specifying explicit dependencies.|Extensibility|Warning|
 |[AS0086](appsourcecop-as0086.md)|Fields must not increase in length|Upgrade|Warning|
 |[AS0087](appsourcecop-as0087.md)|Translations of enum value captions must not contain commas|Extensibility|Warning|
 |[AS0088](appsourcecop-as0088.md)|Objects with an ID that can be referenced and which have been published must not be deleted.|Upgrade|Error|
@@ -109,12 +110,33 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0097](appsourcecop-as0097.md)|The publisher name of an extension cannot be changed.|Configuration|Error|
 |[AS0098](appsourcecop-as0098.md)|An affix is needed.|Extensibility|Warning|
 |[AS0099](appsourcecop-as0099.md)|The member ID should be within the allowed range|Extensibility|Info|
-|[AS0100](appsourcecop-as0100.md)|The 'application' property in the app.json file must be specified.|Extensibility|Error|
+|[AS0100](appsourcecop-as0100.md)|The 'application' property must be specified in the app.json file.|Extensibility|Error|
 |[AS0101](appsourcecop-as0101.md)|The 'Isolated' argument cannot be changed, added, or removed.|Upgrade|Error|
 |[AS0102](appsourcecop-as0102.md)|Cannot add a return value to a procedure|Upgrade|Error|
 |[AS0103](appsourcecop-as0103.md)|Table definitions must have a matching permission set.|Configuration|Warning|
 |[AS0104](appsourcecop-as0104.md)|The extension name is not valid.|Extensibility|Error|
 |[AS0105](appsourcecop-as0105.md)|Object pending obsoletion contains an expired ObsoleteTag.|Design|Error|
+|[AS0106](appsourcecop-as0106.md)|A variable belonging to the public API cannot be removed.|Design|Error|
+|[AS0107](appsourcecop-as0107.md)|The access modifier of a variable that belongs to the public API cannot be changed to a value that provides less access.|Design|Error|
+|[AS0108](appsourcecop-as0108.md)|The type of a variable belonging to the public API cannot be changed.|Design|Error|
+|[AS0109](appsourcecop-as0109.md)|The type of the table has changed from Normal to Temporary.|Upgrade|Warning|
+|[AS0110](appsourcecop-as0110.md)|Permission set extensions should not include permissions for objects defined in another application.|Extensibility|Warning|
+|[AS0111](appsourcecop-as0111.md)|Permission set extensions should not include permission sets defined in another application.|Extensibility|Warning|
+|[AS0112](appsourcecop-as0112.md)|Permission set extensions should not include permission sets which include permissions for objects defined in another application.|Extensibility|Warning|
+|[AS0113](appsourcecop-as0113.md)|Permission set extensions should not include wildcard permissions.|Extensibility|Warning|
+|[AS0114](appsourcecop-as0114.md)|The name of an external business event cannot be changed.|Upgrade|Error|
+|[AS0115](appsourcecop-as0115.md)|The obsolete state cannot change directly from 'No' to 'Removed'.|Upgrade|Error|
+|[AS0116](appsourcecop-as0116.md)|Source application for the moved symbol cannot be found.|Upgrade|Warning|
+|[AS0117](appsourcecop-as0117.md)|Application object is moved without the use of PendingMove.|Upgrade|Warning|
+|[AS0118](appsourcecop-as0118.md)|The length of a field part of the primary key cannot change.|Upgrade|Error|
+|[AS0119](appsourcecop-as0119.md)|The value of the MovedTo property in the source symbol does not match the destination AppId.|Upgrade|Warning|
+|[AS0120](appsourcecop-as0120.md)|The value of the MovedFrom property in the destination object does not match the source AppId.|Upgrade|Warning|
+|[AS0121](appsourcecop-as0121.md)|When a symbol is moved the name must remain the same.|Upgrade|Error|
+|[AS0122](appsourcecop-as0122.md)|Source symbol for the moved symbol cannot be found in the package with the given AppId.|Upgrade|Warning|
+|[AS0123](appsourcecop-as0123.md)|A key cannot be declared as clustered on an existing table.|Upgrade|Error|
+|[AS0124](appsourcecop-as0124.md)|Changing an extension object's target is not allowed.|Upgrade|Error|
+|[AS0125](appsourcecop-as0125.md)|Changes the XLIFF translation ID are not allowed.|Upgrade|Info|
+|[AS0126](appsourcecop-as0126.md)|InternalsVisibleTo should not specifying a different publisher name than the one of this extension.|Extensibility|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -149,7 +171,7 @@ The `name`, `publisher`, `version` properties are used for specifying a previous
 
 The `mandatoryAffixes` property specifies strings that must be prepended or appended to the names of all new objects, extension objects and fields. By using these affixes, you can prevent clashes between objects added by your extension and objects added by other extensions.
 
-The `supportedCountries` property specifies the codes that correspond to the countries for which the product allows AppSource submissions. For more information, see [Availability and supported Countries/Regions and Translations](../../compliance/apptest-countries-and-translations.md)
+The `supportedCountries` property specifies the codes that correspond to the countries/regions for which the product allows AppSource submissions. For more information, see [Availability and supported Countries/Regions and Translations](../../compliance/apptest-countries-and-translations.md)
 
 The properties `obsoleteTagVersion`, `obsoleteTagPattern`, and `obsoleteTagPatternDescription` can be used to enable additional validation on object obsoletion. These are not required for AppSource submissions.
 

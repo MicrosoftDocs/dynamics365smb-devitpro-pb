@@ -1,18 +1,19 @@
 ---
-title: "API Query Type"
-description: "Description of the API query type used for exposing and viewing web service endpoints."
+title: API query type
+description: Description of the API query type used for exposing and viewing web service endpoints.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/17/2024
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# API Query Type
+# API query type
 
-Queries of the type `API` are used to generate web service endpoints and this type of query cannot be used to display data in the user interface. A query of the API type can be used to join data from different data sources. The data can only be viewed. When creating this query type, you must specify a number of properties that provide information for the web service endpoint. Use the snippet `tquery - Query of type API` to get the right template and the list of these properties automatically filled in.
+Queries of the type `API` are used to generate web service endpoints and this type of query can't be used to display data in the user interface. A query of the API type can be used to join data from different data sources. The data can only be viewed. When creating this query type, you must specify a number of properties that provide information for the web service endpoint. Use the snippet `tquery - Query of type API` to get the right template and the list of these properties automatically filled in.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
+[!INCLUDE[extending_APIs_is_not_supported_note](includes/include-extending-APIs-is-not-supported-note.md)]
 
 ## Example of the API query type
 
@@ -66,13 +67,14 @@ query 20000 "APIV1 - Customer Sales"
 }
 ```
 
-## See Also
-[AL Development Environment](devenv-reference-overview.md)  
-[API Page Type](devenv-api-pagetype.md)  
-[APIPublisher Property](properties/devenv-apipublisher-query-property.md)  
-[APIGroup Property](properties/devenv-apigroup-query-property.md)  
-[APIVersion Property](properties/devenv-apiversion-query-property.md)   
-[EntityName Property](properties/devenv-entityname-property.md)  
-[EntitySetName Property](properties/devenv-entitysetname-property.md)
-[Query Object](devenv-query-object.md)  
-[Developing Extensions](devenv-dev-overview.md)  
+## See also
+
+[AL development environment](devenv-reference-overview.md)  
+[API page Type](devenv-api-pagetype.md)  
+[APIPublisher property](properties/devenv-apipublisher-query-property.md)  
+[APIGroup property](properties/devenv-apigroup-query-property.md)  
+[APIVersion property](properties/devenv-apiversion-query-property.md)   
+[EntityName property](properties/devenv-entityname-property.md)  
+[EntitySetName property](properties/devenv-entitysetname-property.md)  
+[Query object](devenv-query-object.md)  
+[Developing extensions](devenv-dev-overview.md)  

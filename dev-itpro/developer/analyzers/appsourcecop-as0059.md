@@ -2,10 +2,7 @@
 title: "AppSourceCop Error AS0059"
 description: "Application database tables and reserved application tables should be used only as temporary tables in a multi-tenant environment."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

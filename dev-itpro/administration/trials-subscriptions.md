@@ -1,14 +1,13 @@
 ---
 title: Trials and Subscriptions
 description: Learn how it works with trials and subscriptions for Business Central online, and how the admin can cancel subscriptions.
-author: edupont04
+author: jswymer
 
 ms.topic: conceptual
-ms.workload: na
 ms.search.keywords: preview, trial, sandbox, subscription
 ms.search.form: 1803, 1801
 ms.date: 05/25/2022
-ms.author: edupont
+ms.author: jswymer
 
 ---
 # Business Central Trials and Subscriptions
@@ -19,7 +18,7 @@ Organizations across the world sign up for a free [!INCLUDE[prod_short](../inclu
 
 [!INCLUDE [admin-trial-signup](../includes/admin-trial-signup.md)]
 
-Depending on the country or region, the trial includes the languages and functionality that the country or region requires. For more information, see [Changing Language and Locale](/dynamics365/business-central/about-locale-language.md).  
+Depending on the country or region, the trial includes the languages and functionality that the country or region requires. For more information, see [Changing Language and Locale](/dynamics365/business-central/about-locale-language).  
 
 > [!NOTE]
 > [!INCLUDE [prod_short](../includes/prod_short.md)] resellers can also set up [tailored demo environments](demo-environment.md).  
@@ -62,7 +61,7 @@ Each time a user signs in during the trial period, a notification in a blue bar 
 
 [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
-For more information about what you can do with [!INCLUDE [prod_short](../includes/prod_short.md)], see [Get Ready for Doing Business](/dynamics365/business-central/ui-get-ready-business.md) and [Business Functionality](/dynamics365/business-central/across-business-functionality.md).  
+For more information about what you can do with [!INCLUDE [prod_short](../includes/prod_short.md)], see [Get Ready for Doing Business](/dynamics365/business-central/ui-get-ready-business) and [Business Functionality](/dynamics365/business-central/across-business-functionality).  
 
 ### Removing a subscription
 
@@ -71,7 +70,7 @@ If an organization decides to stop using [!INCLUDE [prod_short](../includes/prod
 > [!WARNING]
 > The subscription is deleted immediately and can not be reactivated.
 
-For more information, see [Suspend or cancel a subscription](/partner-center/create-a-new-subscription#suspend-or-cancel-a-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center content.  
+For partners cancelling a subscription on their customer's behalf, see [Suspend or cancel a subscription](/partner-center/create-a-new-subscription#suspend-or-cancel-a-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center content.
 
 ## <a name="expire"></a>Data and access when a trial or subscription ends
 
@@ -98,8 +97,8 @@ If you are migrating from an on-premises solution, understanding the infrastruct
 
 ## See also
 
-[Sign up for a free Dynamics 365 Business Central trial](/dynamics365/business-central/trial-signup.md)  
-[Dynamics 365 Business Central trial FAQ](/dynamics365/business-central/trial-faq.md)  
+[Sign up for a free Dynamics 365 Business Central trial](/dynamics365/business-central/trial-signup)  
+[Dynamics 365 Business Central trial FAQ](/dynamics365/business-central/trial-faq)  
 [Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md)  
 [Migrate Data](/dynamics365/business-central/dev-itpro/administration/migrate-data)  
 [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](../developer/devenv-sandbox-overview.md)  

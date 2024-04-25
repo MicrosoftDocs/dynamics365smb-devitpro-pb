@@ -2,10 +2,7 @@
 title: "Record.SetView(Text) Method"
 description: "Sets the current sort order, key, and filters on a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/11/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *String*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-A string that contains the sort order, key, and filter to set. The string format is the same as the SourceTableView Property on pages.
-          
+A string that contains the sort order, key, and filter to set. The string format is the same as the SourceTableView Property on pages.  
 
 
 

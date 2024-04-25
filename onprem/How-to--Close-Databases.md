@@ -7,10 +7,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 3377f692-c4e4-4b06-b10d-d8408a654132
 caps.latest.revision: 6
-manager: edupont
 ---
 # How to Close Databases in Dynamics NAV
 You may need to close the database from time to time.  

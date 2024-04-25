@@ -2,10 +2,7 @@
 title: "List.Get(Integer) Method"
 description: "Gets the element at the specified index."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -40,6 +37,11 @@ The element at the specified index.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The type `T` is a dynamic type. When `List` is of type `Text` then `T` will change to `Text`. When `List` is of type `Integer`, then `T` will change to `Integer`.
+
 ## See Also
 [List Data Type](list-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

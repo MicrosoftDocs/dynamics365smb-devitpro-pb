@@ -2,10 +2,7 @@
 title: "XmlAttribute.Name() Method"
 description: "The qualified name of the attribute."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -16,7 +13,7 @@ author: SusanneWindfeldPedersen
 # XmlAttribute.Name() Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-The qualified name of the attribute. 
+The qualified name of the attribute.
 
 
 ## Syntax

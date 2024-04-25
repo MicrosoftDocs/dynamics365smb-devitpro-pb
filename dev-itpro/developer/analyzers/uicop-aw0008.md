@@ -1,11 +1,8 @@
 ---
 title: "UICop Warning AW0008"
-description: "The Web client does not support displaying Repeater controls in pages of type Card, Document, and ListPlus."
+description: "The Web client only supports displaying Repeater controls in pages of type List, ListPart, and Worksheet."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -14,10 +11,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # UICop Warning AW0008
-The Web client does not support displaying Repeater controls in pages of type Card, Document, and ListPlus.
+The Web client only supports displaying Repeater controls in pages of type List, ListPart, and Worksheet.
 
 ## Description
-The Web client does not support displaying Repeater controls in pages of type Card, Document, and ListPlus.
+The Web client only supports displaying Repeater controls in pages of type List, ListPart, and Worksheet.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Moving from Dynamics NAV On-premise to Online 
@@ -139,7 +138,7 @@ To upload your deployable package, you will create a project in LCS.
     |  Field  |  Value  |
     |---------|---------|
     |Product name|[!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)]|
-    |Country|Set this to the country where your solution will be published.|
+    |Country|Set this to the country/region where your solution will be published.|
     |Import roles and users from existing LCS project|No|
 
 5. Select **Create**. 

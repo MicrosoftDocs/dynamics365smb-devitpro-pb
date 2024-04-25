@@ -2,10 +2,7 @@
 title: "DateFormula Property"
 description: "Sets a date formula used to verify that the date the user enters is correct."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,11 +23,12 @@ Sets a date formula used to verify that the date the user enters is correct.
 
 ## Remarks  
 
-> [!NOTE]  
->  We recommend that you do not use this property. Use the [DateFormula Data Type](../methods-auto/dateformula/dateformula-data-type.md) instead.  
+> [!IMPORTANT]  
+> This property will be deprecated with a future release. We recommend that you **don't use** this property. Use the [DateFormula Data Type](../methods-auto/dateformula/dateformula-data-type.md) instead.  
 
 For fields, this property only applies to text fields. In earlier versions of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], the property also applied to code fields, but this has been deprecated.
 
-## See Also  
- [DateFormula Data Type](../methods-auto/dateformula/dateformula-data-type.md)  
- [Properties](devenv-properties.md)
+## See Also
+
+[DateFormula Data Type](../methods-auto/dateformula/dateformula-data-type.md)  
+[Properties](devenv-properties.md)

@@ -1,0 +1,1 @@
+Go to [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights).

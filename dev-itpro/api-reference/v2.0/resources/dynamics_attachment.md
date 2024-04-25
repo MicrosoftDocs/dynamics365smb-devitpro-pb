@@ -2,11 +2,9 @@
 title: attachment resource type  
 description: An attachments object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 09/01/2022
+ms.topic: reference
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -16,10 +14,10 @@ ms.author: solsen
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-Represents an attachment in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. An attachment in the [!INCLUDE[prod_short](../../../includes/prod_short.md)] API is defined as an Incoming Document (table 130).
+Represents an attachments in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md). An attachment in the [!INCLUDE[prod_short](../../../includes/prod_short.md)] API is defined as an Incoming Document (table 130).
 
 ## Methods
 
@@ -43,6 +41,7 @@ Represents an attachment in [!INCLUDE[prod_short](../../../includes/prod_short.m
 |[salesCreditMemo](dynamics_salescreditmemo.md)|salesCreditMemo |Gets the salescreditmemo of the attachment.|
 |[purchaseInvoice](dynamics_purchaseinvoice.md)|purchaseInvoice |Gets the purchaseinvoice of the attachment.|
 |[purchaseOrder](dynamics_purchaseorder.md)|purchaseOrder |Gets the purchaseorder of the attachment.|
+|[purchaseCreditMemo](dynamics_purchasecreditmemo.md)|purchaseCreditMemo |Gets the purchasecreditmemo of the attachment.|
 
 ## Properties
 

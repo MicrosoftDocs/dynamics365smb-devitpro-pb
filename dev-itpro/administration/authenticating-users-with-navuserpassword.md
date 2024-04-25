@@ -1,15 +1,16 @@
 ---
 title: User Authentication with NavUserPassword
 description: Learn how to set up NAVUserPassword for authenticating users.
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 04/16/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
+ms.service: dynamics-365-op
 ---
 # Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with NavUserPassword
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 NavUserPassword is an authentication method that's handled by [!INCLUDE[server](../developer/includes/server.md)], but isn't based on Windows users or Active Directory. Each user is set up with a user name and password that's configured inside [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only. The user is prompted for username/password credentials when they start the client.
 
@@ -93,5 +94,5 @@ For more information, see [Configure Configuring [!INCLUDE[webserver](../develop
 ## See Also  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
-[Troubleshooting: SAML2 token errors with Azure Active Directory/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
+[Troubleshooting: SAML2 token errors with Microsoft Entra ID/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
 [Migrating to Multitenancy](../deployment/migrating-to-multitenancy.md)

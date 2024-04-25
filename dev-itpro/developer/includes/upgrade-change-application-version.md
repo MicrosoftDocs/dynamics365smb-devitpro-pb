@@ -8,7 +8,7 @@ After you upgrade your application, we recommend changing the value of applicati
 
 For more information about version numbers, see [Version numbers in Business Central](../../administration/version-numbers.md).
 
-### Change the application version in the database
+#### Change the application version in the database
 
 1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
@@ -40,8 +40,7 @@ For more information about version numbers, see [Version numbers in Business Cen
 
 Don't stop the [!INCLUDE[server](server.md)] instance until the process is complete, that is, when you see `State = Completed` in the results from the Get-NAVDataUpgrade cmdlet. Also, you can't do operations like installing extensions until the state is operational. It can take several minutes before the process completes.
 
-
-### Change the application version shown on the Help and Support page in the client
+#### Change the application version shown on the Help and Support page in the client
 
 The [!INCLUDE[server](server.md)] includes a configuration setting called **Solution Version Extension** (SolutionVersionExtension). This setting lets you specify an extension whose version number will show as the Application Version on the client's **Help and Support** page. Typically, you'd use the extension considered to be your solution's base application. You set **Solution Version Extension** to ID of the extension. For example, if your solution uses the Microsoft Base Application, set the value to `437dbf0e-84ff-417a-965d-ed2bb9650972`.
 

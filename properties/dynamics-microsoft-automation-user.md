@@ -56,7 +56,6 @@ Here is a JSON representation of the user.
     "state": "Enabled",
     "expiryDate": "0001-01-01T00:00:00Z"
 }
-
 ```
 
 <!-- 

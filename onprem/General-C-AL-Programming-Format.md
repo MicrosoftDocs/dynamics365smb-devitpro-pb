@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: cf121aea-8230-4496-b57c-fd3f85230cc9
 caps.latest.revision: 10
-manager: edupont
 ---
 # General C/AL Programming Format
 To make it easy to maintain an application, you should follow a few strict guidelines when you write C/AL code. This section describes the general rules for:  

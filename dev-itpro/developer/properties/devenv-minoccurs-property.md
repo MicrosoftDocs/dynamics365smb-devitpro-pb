@@ -2,10 +2,7 @@
 title: "MinOccurs Property"
 description: "Sets the minimum number of times that an element can occur."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -25,10 +22,10 @@ Sets the minimum number of times that an element can occur.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Zero**|There is no minimum number of occurences.|
-|**Once**|The element must occur at least once.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Zero**|runtime version 1.0|There is no minimum number of occurences.|
+|**Once**|runtime version 1.0|The element must occur at least once.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

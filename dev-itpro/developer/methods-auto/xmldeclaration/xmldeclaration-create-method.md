@@ -2,10 +2,7 @@
 title: "XmlDeclaration.Create(Text, Text, Text) Method"
 description: "Creates an XmlDeclaration node."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,13 +23,11 @@ XmlDeclaration :=   XmlDeclaration.Create(Version: Text, Encoding: Text, Standal
 ## Parameters
 *Version*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The version of the XML, usually "1.0".
-        
+The version of the XML, usually "1.0".  
 
 *Encoding*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The encoding for the XML document.
-        
+The encoding for the XML document.  
 
 *Standalone*  
 &emsp;Type: [Text](../text/text-data-type.md)  

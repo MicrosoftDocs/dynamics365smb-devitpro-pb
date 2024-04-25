@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: a6a0b9f5-3c7d-4ba3-899f-33d714bf00e0
 caps.latest.revision: 4
-manager: edupont
 ---
 # Numbers
 This section contains the following topics:  

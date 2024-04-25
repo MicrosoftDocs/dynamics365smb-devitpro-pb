@@ -4,10 +4,8 @@ description: Updates a sales invoice line object in Dynamics 365 Business Centra
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -91,7 +89,8 @@ Content-type: application/json
     "netTaxAmount": 8.24,
     "netAmountIncludingTax": 172.94,
     "shipmentDate": "2020-08-21",
-"itemVariantId": "00000000-0000-0000-0000-000000000000"
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 

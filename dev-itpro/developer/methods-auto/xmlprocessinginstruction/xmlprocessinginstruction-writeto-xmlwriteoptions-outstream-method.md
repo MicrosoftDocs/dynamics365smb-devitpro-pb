@@ -2,10 +2,7 @@
 title: "XmlProcessingInstruction.WriteTo(XmlWriteOptions, OutStream) Method"
 description: "Serializes and saves the current node to the given variable."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,8 @@ An instance of the [XmlProcessingInstruction](xmlprocessinginstruction-data-type
 
 *WriteOptions*  
 &emsp;Type: [XmlWriteOptions](../xmlwriteoptions/xmlwriteoptions-data-type.md)  
-Specifies options for customizing how the node is serialized.
-        
+Specifies options for customizing how the node is serialized.  
+
 *OutStream*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
 The OutStream to which you want to save the serialized representation of the node.  

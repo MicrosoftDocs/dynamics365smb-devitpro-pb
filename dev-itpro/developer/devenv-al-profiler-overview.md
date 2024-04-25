@@ -1,18 +1,18 @@
 ---
-title: "AL Profiler Overview"
-description: "Description of how to use the AL profiler and the Performance Profiler to analyze performance in code written for Business Central."
+title: AL Profiler overview
+description: Description of how to use the AL profiler and the Performance Profiler to analyze performance in code written for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2022
+ms.date: 03/01/2024
 ms.topic: overview
 ms.author: solsen
+ms.collection: get-started
 ---
 
-# AL Profiler Overview
+# AL Profiler overview
 
 [!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)] and updated with sampling profiling for Business Central 2022 release wave 1.
 
-Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for *instrumentation* profiling and *sampling* profiling.
+Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for *instrumentation* profiling and *sampling* profiling. The AL Profiler is based on a snapshot of running code. The snapshot is a recording of running code that allows for later offline inspection. The AL Profiler is a powerful tool for analyzing performance in code written for Business Central.
 
 ## Snapshot of the running code
 
@@ -23,7 +23,7 @@ The AL profiler works on a snapshot of running code. Snapshot debugging is a rec
 
 ## Snapshot configuration settings
 
-In order to do any profiling on code, first, you must capture a snapshot of running code. Before doing that, you must set up a snapshot configuration in the `launch.json` file. The configuration settings depend on what type of profiling you want to perform. 
+In order to do any profiling on code, first, you must capture a snapshot of running code. Before doing that, you must set up a snapshot configuration in the `launch.json` file. The configuration settings depend on what type of profiling you want to perform. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md) and [Launch JSON file](devenv-json-launch-file.md).
 
 ### To set up a snapshot configuration for instrumentation profiling
 
@@ -73,15 +73,26 @@ For sampling profiling, choose `Sampling` as the `profilingType` in the `launch.
             "authentication": "Windows",
             "breakOnNext": "WebClient",
             "executionContext": "Profile",
-            "profilingType": "Sampling"
+            "profilingType": "Sampling",
+            "profileSamplingInterval": 100
         }
 ```
+
+## Getting a snapshot file
+
+When a configuration is defined and you've ensured that the `executionContext` parameter is either `DebugAndProfile` or `Profile` a snapshot debugging session can be initialized by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then selecting AL:Initialize Snapshot Debugging or by pressing <kbd>F7</kbd>.
+
+Once a snapshot debugging session is initialized, the snapshot debugging session counter on the status bar will be updated and look like this:
+
+:::image type="content" source="media/SnapshotDebugger.png" alt-text="Snapshot debugger counter":::
+
+Press <kbd>Alt</kbd>+<kbd>F7</kbd> to finish a snapshot debugging session. Stopping the session brings up all snapshot sessions that have been started. Choosing one will close the session debugging on the server and download the snapshot file. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
 
 ## Generating a profile file for instrumentation profiling
 
 Once the snapshot file is downloaded, you can generate a profile file. This can be done in one of the two ways:
 
-1. Open the Command Palette by using the **Ctrl+Shift+P** shortcut, then select the **AL: Generate profile file** command and choose a snapshot from the dropdown menu.
+1. Open the Command Palette by using the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> shortcut, then select the **AL: Generate profile file** command and choose a snapshot from the dropdown menu.
 1. Alternatively, in the Visual Studio Code explorer, right-click the specific snapshot file and choose **Generate Profile File**.
 
 The profile file for AL code has the extension `.alcpuprofile` and when you open the file, it displays in the performance profiling editor view in the Visual Studio Code.
@@ -152,18 +163,24 @@ The following table provides an overview of the shortcut key combinations that y
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
-|**Enter+Toggle** | Expand and collapse a node. |
-|**Arrow+Left** | Collapse a node. |
-|**Arrow+Right** | Expand a node. |
-|-(minus) | Collapse all nodes.|
-|*(star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
+|<kbd>Enter</kbd>+<kbd>Toggle</kbd> | Expand and collapse a node. |
+|<kbd>Left arrow</kbd> | Collapse a node. |
+|<kbd>Right arrow</kbd> | Expand a node. |
+|<kbd>Tab</kbd>+<kbd>Enter</kbd> | Go to the source code of a node. |
+|<kbd>F12</kbd> | Jump to selected node.|
+|<kbd>Home</kbd> | Jump to the first node of the list.|
+|<kbd>End</kbd> | Jump to the last node of the list.|
+|<kbd>Down arrow</kbd> | Jump to the next node. |
+|<kbd>Up arrow</kbd> | Jump to the previous node. |
+|<kbd>-</kbd> (minus) | Collapse all nodes.|
+|<kbd>*</kbd> (star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
 
 ### Inline Profiler CodeLens for AL profiling results
 
 The Profiler CodeLens for AL shows profile results. At hover, the Profiler CodeLens displays time spent in milliseconds for a specific method, and the number of hits on the method. When opening a profiler file, the lens will show information on all statements that appear as frames in the profiler.
 
-General CodeLens support for the Visual Studio Code is enabled in the user or workspace settings by adding the `"editor.codeLens": true` setting for the specific user or for the workspace. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings.
+General CodeLens support for the Visual Studio Code is enabled in the user or workspace settings by adding the `"editor.codeLens": true` setting for the specific user or for the workspace. To activate this setting, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings.
 
 While in the settings file, you can now add two options for the Profiler CodeLens for AL. The `"al.areProfileLensesSupported": true` enables the CodeLens and is by *default* true. The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. This must be set to the value in milliseconds, which is the lower limit. The *default* for this setting is `500` milliseconds (ms). Any value below the stated threshold won't be shown. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
@@ -178,15 +195,16 @@ Sampling isn't as accurate as instrumentation profiling is. But it can give an i
 
 There are a few server restrictions for sampling profiling to be aware of:
 
-- The maximum duration of a sampling session is 10 minutes. This is a configurable server setting. 
-- The number of stack frame entries is limited to 2000. This is a configurable server setting.
+- The maximum duration of a sampling session is 10 minutes. 
+- The number of stack frame entries is limited to 2000.
 
-### Performance profiling in Business Central
+### In-client performance profiling
 
-In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. This allows for recording of a process that seems slow directly in [!INCLUDE [prod_short](includes/prod_short.md)]. When the Performance Profiler has run and recorded a process in [!INCLUDE [prod_short](includes/prod_short.md)], it generates a `.alcpuprofile` file, which can be downloaded and shared using OneDrive. When receiving such a `.alcpuprofile` file, it can be opened in the Visual Studio Code and further investigated. For more information, see [Performance Profiler Overview](../administration/performance-profiler-overview.md).
+In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. This allows for recording of a process that seems slow directly in [!INCLUDE [prod_short](includes/prod_short.md)]. When the Performance Profiler has run and recorded a process in [!INCLUDE [prod_short](includes/prod_short.md)], it generates a `.alcpuprofile` file, which can be downloaded and shared using OneDrive. When receiving such a `.alcpuprofile` file, it can be opened in another [!INCLUDE [prod_short](includes/prod_short.md)] Performance Profiler, or in Visual Studio Code and further investigated. For more information, see [In-client Performance Profiler overview](../administration/performance-profiler-overview.md).
 
-## See Also
+## See also
 
-[Snapshot Debugging](devenv-snapshot-debugging.md)  
-[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
-[Performance Profiler Overview](../administration/performance-profiler-overview.md)
+[Snapshot debugging](devenv-snapshot-debugging.md)  
+[AL Language extension configuration](devenv-al-extension-configuration.md)  
+[In-client performance profiler overview](../administration/performance-profiler-overview.md)  
+[JSON files](devenv-json-files.md)  

@@ -2,10 +2,7 @@
 title: "Record.GetRangeMax(Any) Method"
 description: "Gets the maximum value in a range for a field."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The field for which you want to find the maximum value. The current filter on Field must be a single range filter; otherwise, a run-time error occurs.
-          
+The field for which you want to find the maximum value. The current filter on Field must be a single range filter; otherwise, a run-time error occurs.  
 
 
 ## Return Value

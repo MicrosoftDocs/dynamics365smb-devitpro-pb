@@ -2,10 +2,7 @@
 title: "Debugger.SkipSystemTriggers(Boolean) Method"
 description: "Enables the debugger to skip code that is inside system triggers."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,8 +23,7 @@ Enables the debugger to skip code that is inside system triggers.
 ## Parameters
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies if the debugger should skip system triggers.
-        
+Specifies if the debugger should skip system triggers.  
 
 
 ## Return Value

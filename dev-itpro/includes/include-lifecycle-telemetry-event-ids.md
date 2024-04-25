@@ -1,8 +1,15 @@
 | Event ID | Area | Message |
 |----------|-------------|-----------------|
 | AL0000E24 | Job Queue Lifecycle | [Job queue entry enqueued: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#enqueued) |
+| AL0000FNY | Job Queue Lifecycle | [Job queue entry not enqueued: {alJobQueueId}](../administration/telemetry-job-queue-lifecycle-trace.md#enqueueError) |
 | AL0000E25 | Job Queue Lifecycle | [Job queue entry started: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#started) |
 | AL0000E26 | Job Queue Lifecycle | [Job queue entry finished: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#finished) |
+| AL0000HE7 | Job Queue Lifecycle | [Job queue entry errored: {alJobQueueId}](../administration/telemetry-job-queue-lifecycle-trace.md#error) |
+| AL0000I49 | Job Queue Lifecycle | [Job queue entry rescheduled on login: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#rescheduledOnLogin) |
+| AL0000JRG | Job Queue Lifecycle | [Job queue entry {Job Queue Id} errored after {attempt number} attempts](../administration/telemetry-job-queue-lifecycle-trace.md#errorStopped) |
+| AL0000FMG | Job Queue Lifecycle | [Running job queue once](../administration/telemetry-job-queue-lifecycle-trace.md#runOnce) |
+| AL0000I49 | Job Queue Lifecycle | [Job queue entry rescheduled on login: {job queue entry id}](../administration/telemetry-job-queue-lifecycle-trace.md#rescheduledOnLogin) |
+| AL0000KZV | Job Queue Lifecycle | [Job queue entry cancelled: {job queue entry id}](../administration/telemetry-job-queue-lifecycle-trace.md#cancelled) |
 |AL0000E3F|Configuration Package|[Configuration package export started: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#exportstarted)|
 |AL0000E3G|Configuration Package|[Configuration package exported successfully: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#exportsuccessful)|
 |AL0000E3H|Configuration Package|[Configuration package import started: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#importstarted)|
@@ -11,8 +18,19 @@
 |AL0000E3O|Configuration Package|[Configuration package applied successfully: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#applysuccessful)|
 |AL0000E3P|Configuration Package|[Configuration package deleted successfully: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#deletesuccessful)|
 | AL0000EJ9 | Extension Lifecycle | [Upgrade tag searched for: {AlUpgradeTag}](../administration/telemetry-extension-update-trace.md#upgrade-tag-searched-for) |
+|AL0000FJ1|Cloud migration|[Companion table repair started](../administration/telemetry-cloud-migration-trace.md#companion-table-repair-started)|
+|AL0000FJ4|Cloud migration|[Companion table repair completed successfully](../administration/telemetry-cloud-migration-trace.md#companion-table-repair-completed-successfully)|
+|AL0000FXC|Cloud migration|[Companion table repair scheduled](../administration/telemetry-cloud-migration-trace.md#companion-table-repair-scheduled)|
+|AL0000IGC|Cloud migration|[Cloud migration has been disabled from company {companyname}](../administration/telemetry-cloud-migration-trace.md#cloud-migration-disabled)|
+|AL0000K0H|Cloud migration|[Replication run completed](../administration/telemetry-cloud-migration-trace.md#replication-run-completed)|
+|AL0000K0I|Cloud migration|[Replication run completed with failed tables](../administration/telemetry-cloud-migration-trace.md#replication-run-completed-with-failed-tables)|
+|AL0000K0J|Cloud migration|[Replication run started](../administration/telemetry-cloud-migration-trace.md#replication-run-started)|
+|AL0000K0K|Cloud migration|[Cloud migration data upgrade scheduled](../administration/telemetry-cloud-migration-trace.md#cloud-migration-data-upgrade-scheduled)|
 | AL0000EJA | Extension Lifecycle | [Upgrade tag set: {AlUpgradeTag}](../administration/telemetry-extension-update-trace.md#upgrade-tag-set) |
 | AL0000EIQ | User Checklist Lifecycle | [User checklist status updated: {oldStatus} to {newStatus}](../administration/telemetry-user-checklist-trace.md) |
+| AL0000JT3 | Feature Lifecycle | [Feature switch has been flipped](../administration/telemetry-feature-management-trace.md) |
+|AL0000G7J|	Feature Lifecycle |[More than one telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#multipleloggers)|
+|AL0000G7K|	Feature Lifecycle |[No telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#nologger)|
 | LC0001 | Company Lifecycle | [Company created: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-created) |
 | LC0002 | Company Lifecycle | [Company creation canceled: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-creation-canceled) |
 | LC0003 | Company Lifecycle | [Company creation failed: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-creation-failed) |
@@ -57,6 +75,19 @@
 | LC0043 | Task Scheduler  | [Task {taskId} main/failure codeunit {codeunitObjectId} completed.](../administration/telemetry-task-scheduler-trace.md#task-completed) |
 | LC0044 |Task Scheduler  | [Task {taskId} main/failure codeunit {codeunitObjectId} canceled.](../administration/telemetry-task-scheduler-trace.md#task-canceled) |
 | LC0045 |Task Scheduler  | [Task {taskId} main/failure codeunit {codeunitObjectId} failed.](../administration/telemetry-task-scheduler-trace.md#task-failed) |
+| LC0057 |Task Scheduler  | [Task {taskId} timeout changed to: {timeout} because it was exceeding the max timeout value.](../administration/telemetry-task-scheduler-trace.md#task-timeout-changed-because-it-was-exceeding-the-max-timeout-value) |
+| LC0046 | Profile Configuration Lifecycle | [Profile import succeeded: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#import-success) |
+| LC0047 | Profile Configuration Lifecycle | [Profile import failed: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#import-failed) |
+| LC0048 | Profile Configuration Lifecycle | [Profiles exported successfully](../administration/telemetry-profile-configuration-lifecycle-trace.md#export-success) |
+| LC0049 | Profile Configuration Lifecycle | [Profiles failed to be exported](../administration/telemetry-profile-configuration-lifecycle-trace.md#export-failed) |
+| LC0050 | Profile Configuration Lifecycle | [Profile copy succeeded: {ProfileId} to {NewProfileId} from app/extension {ProfileAppId} to app/extension {NewProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#copy-success) |
+| LC0051 | Profile Configuration Lifecycle | [Profile copy failed: {ProfileId} to {NewProfileId} from app/extension {ProfileAppId} to app/extension {NewProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#copy-failed) |
+| LC0052 | Profile Configuration Lifecycle | [Profile created successfully:  {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#create-success) |
+| LC0053 | Profile Configuration Lifecycle | [Profile removed: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#removed) |
+| LC0054 | Profile Configuration Lifecycle | [Profile page customization removed: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#customization-removed) |
+| LC0055 | Profile Configuration Lifecycle | [Profile page customization converted: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#customization-converted) |
+|LC0056|Extension Lifecycle |[Extension is already synchronized: {extensionName}](../administration/telemetry-extension-lifecycle-trace.md#alreadySynced)|
+|LC0058|Permissions |[Permission set changed by an extension](../administration/telemetry-permission-changes-trace.md#permissionsetchangedbyapp)|
 | LC0100 | Environment | [Environment update available for scheduling: {environmentName} to version {destinationVersion}.](../administration/telemetry-environment-lifecycle-trace.md#environment-update-available-for-scheduling) |
 | LC0101 | Environment | [Environment update scheduled: {environmentName} to version {destinationVersion}, update on or after date: {registeredForUpdateOnOrAfterDateUtc}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-scheduled) |
 | LC0102 | Environment | [Environment update missed: {environmentName} to version {destinationVersion}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-missed) |
@@ -103,18 +134,18 @@
 | LC0145 | Environment | [Environment configuration key {environmentConfigurationKey} failed to delete for environment {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-configuration-key-failed-to-be-deleted) |
 | LC0146 | Environment | [Environment update window was modified for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-window-modified) |
 | LC0147 | Environment | [Environment update window modification failed for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-window-modification-failed) |
-| LC0149 | Environment | [Environment delete operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-delete-operation-started) |
-| LC0150 | Environment | [Environment deleted successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-deleted) |
-| LC0151 | Environment | [Environment delete operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-delete-operation-failed) |
+| LC0149 | Environment | [Environment delete operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-hard-delete-operation-started) |
+| LC0150 | Environment | [Environment deleted successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-hard-deleted) |
+| LC0151 | Environment | [Environment delete operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-hard-delete-operation-failed) |
 | LC0152 | Environment | [Environment rename operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-rename-operation-started) |
 | LC0153 | Environment | [Environment renamed successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-renamed) |
 | LC0154 | Environment | [Environment rename operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-rename-operation-failed) |
 | LC0155 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} scheduled for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-scheduled-by-app-management-api) |
-| LC0156 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} scheduling failed for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-scheduling-by-app-management-api-failed) |
+| LC0156 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} scheduling failed for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-scheduling-by-app-management-api-failed-to-be-scheduled) |
 | LC0157 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} was cancelled for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-cancelled-by-app-management-api) |
 | LC0158 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} started for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-started-by-app-management-api) |
 | LC0159 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} applied successfully for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-applied-successfully-by-app-management-api) |
-| LC0160 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} failed for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-operation-by-app-management-api-failed) |
+| LC0160 | Environment | [Environment app '{extensionName}' hotfix to version {extensionDestinationVersion} failed for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-app-hotfix-operation-by-app-management-api-failed-to-be-installed)|
 |LC0161| Extension Lifecycle| [Environment app {extensionName} install to version {extensionDestinationVersion} scheduled for environment: {environmentName}](../administration/telemetry-extension-lifecycle-trace.md#app-install-scheduled) |
 |LC0162| Extension Lifecycle| [Environment app {extensionId}, version {extensionDestinationVersion} installation scheduling failed for environment: {environmentName}](../administration/telemetry-extension-lifecycle-trace.md#app-install-schedule-failed) |
 |LC0163| Extension Lifecycle| [Environment app {extensionId}, version {extensionDestinationVersion} installation started for environment: {environmentName}](../administration/telemetry-extension-lifecycle-trace.md#app-install-latest) |
@@ -128,3 +159,29 @@
 |LC0171| Extension Lifecycle| [Environment app {extensionId} update to version {extensionDestinationVersion} failed for environment: {environmentName}](../administration/telemetry-extension-lifecycle-trace.md#app-update-latest-failed) |
 |LC0173| Extension Lifecycle| [Environment app {extensionName} uninstall scheduled for environment: {environmentName}](../administration/telemetry-extension-lifecycle-trace.md#app-uninstall-scheduled) |
 |LC0174| Extension Lifecycle| [Environment app {extensionId} uninstall scheduling failed for environment: {environmentName}](../administration/telemetry-extension-lifecycle-trace.md#app-uninstall-schedule-failed) |
+|LC0175| Cloud migration| [Environment data upgrade operation started: {environmentName}](../administration/telemetry-cloud-migration-trace.md#environment-data-upgrade-operation-started) |
+|LC0176| Cloud migration| [Environment data upgrade operation completed successfully: {environmentName}](../administration/telemetry-cloud-migration-trace.md#environment-data-upgrade-operation-completed-successfully) |
+|LC0177| Cloud migration| [Environment data upgrade operation failed: {environmentName}](../administration/telemetry-cloud-migration-trace.md#environment-data-upgrade-operation-failed) |
+|LC0178| Cloud migration| [Recovery from a failed data upgrade operation has completed successfully: {environmentName}](../administration/telemetry-cloud-migration-trace.md#recovery-from-a-failed-data-upgrade-operation-has-completed-successfully) |
+|LC0179| Cloud migration| [Recovery from a failed data upgrade operation has failed: {environmentName}](../administration/telemetry-cloud-migration-trace.md#recovery-from-a-failed-data-upgrade-operation-has-failed) |
+|LC0180| Environment| [Environment soft delete operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-soft-delete-operation-started) |
+|LC0181| Environment| [Environment soft deleted successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-soft-deleted) |
+|LC0182| Environment| [Environment soft delete operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-soft-delete-operation-failed) |
+|LC0183| Environment| [Environment recovery operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-recovery-un-delete-operation-started) |
+|LC0184| Environment| [Environment recovered successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-recovered) |
+|LC0185| Environment| [Environment recovery operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-recovery-un-delete-operation-failed) |
+|LC0200| Per-tenant extension| [PTE validation started: request {submissionId}](../administration/telemetry-pte-upload-validation-trace.md#pte-validation-started) |
+|LC0202| Per-tenant extension| [PTE submission validation request completed successfully: request {submission id}](../administration/telemetry-pte-upload-validation-trace.md#pte-validation-completed-successfully) |
+|LC0203| Per-tenant extension| [PTE validation completed with failures: request {submissionId}](../administration/telemetry-pte-upload-validation-trace.md#pte-validation-completed-with-failures) |
+|LC0204| Per-tenant extension| [Extension validation started: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](../administration/telemetry-pte-upload-validation-trace.md#extension-validation-started) |
+|LC0205| Per-tenant extension| [Extension validation completed successfully: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](../administration/telemetry-pte-upload-validation-trace.md#extension-validation-completed-successfully) |
+|LC0206| Per-tenant extension| [Extension validation completed with failures: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](../administration/telemetry-pte-upload-validation-trace.md#extension-validation-completed-with-failures) |
+|LC0210| Per-tenant extension| [Validation diagnostic reported: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](../administration/telemetry-pte-upload-validation-trace.md#extension-validation-reported) |
+|LC0220|Environment validation| [Environment validation started: environment {environmentName} target build version {targetVersion}](../administration/telemetry-environment-validation-trace.md#environment-validation-started) |
+|LC0224|Environment validation| [Extension validation started: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](../administration/telemetry-environment-validation-trace.md#extension-validation-started) |
+|LC0225|Environment validation| [Extension validation completed successfully: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](../administration/telemetry-environment-validation-trace.md#extension-validation-completed-successfully) |
+|LC0226|Environment validation| [Extension validation completed with failures: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](../administration/telemetry-environment-validation-trace.md#extension-validation-completed-with-failures) |
+|LC0222|Environment validation| [Environment validation request completed successfully for {environmentName} target build version  {targetVersion}](../administration/telemetry-environment-validation-trace.md#environment-validation-request-completed-successfully) |
+|LC0223|Environment validation| [Environment validation request completed with failures for environment {environmentName} target build version {targetVersion}](../administration/telemetry-environment-validation-trace.md#environment-validation-request-completed-with-failures) |
+|LC0227|Environment validation| [Validation diagnostic reported: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](../administration/telemetry-environment-validation-trace.md#environment-diagnostic-reported) |
+

@@ -1,18 +1,20 @@
 ---
-title: "OpenAPI Specification"
-description: "OpenAPI Specification for Dynamics 365 Business Central"
+title: OpenAPI specification
+description: OpenAPI specification for Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
 ms.date: 09/10/2021
 ms.topic: article
 ms.author: solsen
 ---
 
-# OpenAPI Specification for Dynamics 365 Business Central
+# OpenAPI specification for Dynamics 365 Business Central
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 Standard APIs for Business Central are available as an [OpenAPI Specification (OAS)](https://swagger.io/specification/). OAS defines a standard interface to RESTful APIs, providing a uniform access to APIs and documentation.  
 
 > [!IMPORTANT]  
-> At this point in time, there is not a downloadable .yaml file for version 2.0 of the API. This topic explains how to preview the OpenAPI contract based on a version 1.0 of the .yaml file. 
+> At this point in time, there's no downloadable .yaml file for version 2.0 of the API. This article explains how to preview the OpenAPI contract based on a version 1.0 of the .yaml file. 
 
 ## Download Business Central OpenAPI specification
 
@@ -28,7 +30,7 @@ There are [extensions](https://marketplace.visualstudio.com/search?term=openapi&
 
 To run SwaggerUI locally, node.js can be used to serve the SwaggerUI, by following the steps below:
 
-1) Download OAS for Business Central as shown above.
+1) Download OAS for [!INCLUDE [prod_short](../../developer/includes/prod_short.md)] as shown above.
 2) Install [Node.js](https://nodejs.org/en/download/).
 3) Copy the javascript code shown below and save it to a file with the filename `BC_OAS.js`.  
 
@@ -56,11 +58,11 @@ To run SwaggerUI locally, node.js can be used to serve the SwaggerUI, by followi
     node BC_OAS.js
     ```
 6) Browse to `https://localhost:3000`.
-7) To use **Try it out** authorization in SwaggerUI, an Azure Active Directory app must be created. [Follow these steps to create an AAD app, with access to Business Central](../../developer/devenv-develop-connect-apps.md#AAD). Copy and paste the client ID from the AAD app into the authorization dialog of SwaggerUI.
+7) To use **Try it out** authorization in SwaggerUI, a Microsoft Entra app must be created. [Follow these steps to create a Microsoft Entra app, with access to Business Central](../../developer/devenv-develop-connect-apps.md#setting-up-microsoft-entra-id-based-authentication). Copy and paste the client ID from the Microsoft Entra app into the authorization dialog of SwaggerUI.
 
 > [!NOTE]  
-> For OAuth2 testing purposes, a multi-tenant AAD app has been created. Admin consent is needed. Client ID : 060af3ac-70c3-4c14-92bb-8a88230f3f38.
+> For OAuth2 testing purposes, a multi-tenant Microsoft Entra app has been created. Admin consent is needed. Client ID : 060af3ac-70c3-4c14-92bb-8a88230f3f38.
 
-## See Also
+## See also
 
-[Developing Connect Apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
+[Developing Connect apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  

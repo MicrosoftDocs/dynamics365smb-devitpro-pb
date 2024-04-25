@@ -2,10 +2,7 @@
 title: "OnRun (Codeunit) Trigger"
 description: "Runs when a codeunit is run."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/23/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -31,6 +28,29 @@ end;
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+The `OnRun()` trigger is used to initialize the codeunit. A codeunit can be called from another codeunit, a page, or a report. The `OnRun()` trigger is run when the codeunit is called. The following pseudo code illustrates how the `OnRun()` trigger is run when a codeunit is called from a page.
+
+```AL
+page 50111 MyPage
+{
+    trigger OnOpenPage();
+    begin
+        Codeunit.Run(Codeunit::RunMyCode);
+    end;
+}
+
+codeunit 50110 RunMyCode
+{
+    trigger OnRun()
+    begin
+        // Run some code here
+    end;
+}
+```
+
 ## See Also  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

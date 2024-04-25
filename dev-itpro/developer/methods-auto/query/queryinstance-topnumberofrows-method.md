@@ -2,10 +2,7 @@
 title: "Query.TopNumberOfRows([Integer]) Method"
 description: "Specifies the maximum number of rows to include in the resulting data set of a query."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -32,8 +29,7 @@ An instance of the [Query](query-data-type.md) data type.
 
 *[Optional] NewRows*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of rows to include in the resulting data set. If you do not set the NewRows parameter, then the resulting data set will include all rows. If you set the value to 0, then there is no limit and all rows of the data set are returned.
-          
+The number of rows to include in the resulting data set. If you do not set the NewRows parameter, then the resulting data set will include all rows. If you set the value to 0, then there is no limit and all rows of the data set are returned.  
 
 
 ## Return Value

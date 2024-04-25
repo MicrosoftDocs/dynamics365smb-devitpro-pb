@@ -2,16 +2,23 @@
 title: Application Access Management API
 description: Learn about the Application Access Management API.
 author: jswymer
+ms.author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+
+ms.custom: bap-template
+ms.reviewer: jswymer
 ms.search.keywords: application, tenant, management, access, API
-ms.date: 04/01/2021
+ms.date: 08/24/2023
 ---
 # Application Access Management API
 
-As a **Delegated Tenant Admin**, you can manage access to application families available in the service. The application family is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or [!INCLUDE[embedapp](../developer/includes/embedapp.md)] applications that may be provisioned through the service. 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
+As a **Delegated Global Administrator** or as a **Delegated Dynamics 365 Administrator**, you can manage access to application families available in the service. The application family is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or [!INCLUDE[embedapp](../developer/includes/embedapp.md)] applications that may be provisioned through the service. 
+
+> [!NOTE]
+> This API endpoint can only be used by delegated administrators. Guest users in the customer tenant can't use this API endpoint, even if they are also a delegated administrator. Service-to-service authentication using a Microsot Entra app authorized in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] isn't supported.
+
 
 You can get the list of applications that are available to the customer tenant. From this list you can determine, by setting the access property, for which applications an environment may be created on the tenant.
 
@@ -20,7 +27,7 @@ You can get the list of applications that are available to the customer tenant. 
 Returns a list of manageable applications by family and country code.
 
 ```
-GET /admin/v2.3/manageableapplications
+GET /admin/v2.15/manageableapplications
 ```
 
 #### Response
@@ -54,7 +61,7 @@ Pass the application family name in the URL and a boolean in the body.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.3/manageableapplications/{applicationFamily}/countries/{countryCode}
+PUT /admin/v2.15/manageableapplications/{applicationFamily}/countries/{countryCode}
 ```
 
 #### Route Parameters
@@ -72,13 +79,13 @@ PUT /admin/v2.3/manageableapplications/{applicationFamily}/countries/{countryCod
 ```
 
 > [!NOTE]  
-> It is not possible to disable the access to an application family for the AAD tenant which already has an environment created in that family.
+> It is not possible to disable the access to an application family for the Microsoft Entra tenant which already has an environment created in that family.
 
 #### Expected Error Codes
 
 `invalidInput` - the targeted property in invalid in some way
 
-   - target: {targeted tenant's AAD Id} - attempt to remove access to an application but the targeted tenant already has an environment in that application
+   - target: {targeted tenant's Id} - attempt to remove access to an application but the targeted tenant already has an environment in that application
 
 `resourceDoesNotExist` - couldn't find the targeted application
 

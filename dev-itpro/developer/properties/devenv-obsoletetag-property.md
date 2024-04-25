@@ -2,10 +2,7 @@
 title: "ObsoleteTag Property"
 description: "Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/04/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -21,21 +18,19 @@ Specifies a free-form text to support tracking of where and when the object was 
 ## Applies to
 -   Page Action Ref
 -   Page Custom Action
--   Table Field
+-   Page File Upload Action
 -   Table
+-   Table Field
 -   Table Key
 -   Codeunit
 -   Enum Type
 -   Enum Value
 -   Page Action
--   Page Action Area
 -   Page Action Group
 -   Page Action Separator
--   Page Area
 -   Page Part
 -   Page System Part
 -   Page Chart Part
--   Page Field
 -   Page Group
 -   Page Label
 -   Query
@@ -46,6 +41,9 @@ Specifies a free-form text to support tracking of where and when the object was 
 -   Report Column
 -   Request Page
 -   Xml Port
+-   Page Field
+-   Page Action Area
+-   Page Area
 -   Page
 -   Page View
 -   Profile

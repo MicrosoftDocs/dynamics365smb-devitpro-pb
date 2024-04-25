@@ -2,13 +2,11 @@
 title: "Update 18.5 for Microsoft Dynamics 365 Business Central 2021 Release Wave 1"
 description: Get an overview of new and changed capabilities in the 18.5 update of Business Central online, which is part of 2021 release wave 1.
 ms.author: solsen
-ms.custom: na
-ms.date: 09/10/2021
+ms.date: 04/01/2024
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-author: EmmaNielsson
+author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ---
 
 # Update 18.5 for Microsoft Dynamics 365 Business Central online 2021 release wave 1
@@ -16,7 +14,7 @@ author: EmmaNielsson
 Would you like to know what has changed in update 18.5? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 > [!IMPORTANT]  
-> Builds for Business Central in Turkey are now live. 
+> Builds for Business Central in Türkiye are now live. 
 
 ## Hotfixes
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5006076).
@@ -53,7 +51,7 @@ Directions EMEA is your opportunity to network with other partners in the Dynami
 Conference details: 
 - October 27-29 in Milan
 - MiCo Milano Convention Center, Piazzale Carlo Magno, 1 – 20149, Milan
-- Event website: https://directions4partners.com/events/directions-emea/  
+- Event website: https://directions4partners.com/
 
 **Customer Consent capabilities for all features that exchange data with 3rd party services**  
 Business Central capabilities enable companies to seamlessly integrate with other parties needed to achieve business goals or statutory obligations.

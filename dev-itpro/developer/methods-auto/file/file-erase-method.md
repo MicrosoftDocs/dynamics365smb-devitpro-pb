@@ -2,10 +2,7 @@
 title: "File.Erase(Text) Method"
 description: "Deletes a file."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -33,8 +30,7 @@ Deletes a file.
 The name of the file that you want to delete, including the path. When you enter the path, consider these shortcuts:
 -   You can omit the drive designation if the file is located on the current drive.
 -   You can omit the full path if the file is located in the current directory.
--   You can enter only the subdirectory name if the file is located in a subdirectory of the current directory.
-          
+-   You can enter only the subdirectory name if the file is located in a subdirectory of the current directory.  
 
 
 ## Return Value

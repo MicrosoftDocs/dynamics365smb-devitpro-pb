@@ -2,10 +2,7 @@
 title: "Dictionary Data Type"
 description: "Represents an unordered collection of keys and values."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/23/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -20,6 +17,7 @@ Represents an unordered collection of keys and values. The Dictionary data type 
 
 
 
+## Instance methods
 The following methods are available on instances of the Dictionary data type.
 
 |Method name|Description|
@@ -56,7 +54,7 @@ The Dictionary data type does not support holding instantiated records. For this
 In the following example, the variable `counter` represents the Dictionary data type to store a value representing the number of occurrences for each character in the `customerName`. Using the `Get` method, you get the number of occurrences for the character at position `i`. If `i` returns **false**, it means there is no value associated with that character, so you add the value 1. If `i` returns **true**, it means the value already exists, so you add `c + 1` to the value. The `Add` method adds the {key:value} pair to the Dictionary.
 
 ```al
-procedure CountCharactersInCustomerName(customerName: Text; var counter: Dictionary of [Char, Integer]);
+procedure CountCharactersInCustomerName(customerName: Text; var counter: Dictionary of [Char, Integer])
 var
     i : Integer;
     c : Integer;

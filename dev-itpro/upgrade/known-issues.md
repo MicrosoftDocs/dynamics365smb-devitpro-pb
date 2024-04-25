@@ -1,22 +1,105 @@
 ---
-title: Known Issues with On-premises
+title: Some Known Issues in Business Central On-premises
 description: Provides an overview of the known issues in Business Central versions
-ms.custom: na
-ms.date: 10/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/02/2023
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.custom: bap-template 
 ---
 
-# Some Known Issues in [!INCLUDE[prod long](../developer/includes/prod_long.md)] On-premises
+# Some Known Issues in Business Central On-premises
 
 This article describes some known issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions. These issues can impact installation, upgrade, and various operations of [!INCLUDE[prod short](../developer/includes/prod_short.md)] on-premises.
 
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
+
+## Error importing control add-in files from the client
+
+> Applies to: Upgrade to version 23.3
+
+### Problem
+
+When you try to import an a control add-in file client from the **Control Add-ins** page in the client by using the **Control Add-in Resource** > **Import**, you get the follwoing error:
+
+```
+Can't open file`
+
+[URL] can't open files in this folder because it cotains system files`
+```
+
+`[URL]` is the URL of your Business Central web client, for example, `http://localhost:8080`.
+
+### Workaround
+
+You have two options to work around this issue:
+
+- Use the Set-NAVAddin cmdlet of the Business Central Administration Shell as described in [Upgrade control add-ins](upgrading-cumulative-update-v23.md#controladdins). 
+- If you want to use the Business Central web client, then copy the files to another folder on your PC, like Documents or Downloads, and try again.
+
+## Removed table fields in the Czech (CZ) base application cause sync errors
+
+> Applies to: Upgrade to version 23
+
+### Problem
+
+As part of the delocalization process of the Czech (CZ) version of Business Central, Microsoft moved Czech-specific functionality into separate applications. As a result, the following fields have been removed and the primary keys modified in the Czech (CZ) base application, version 23:
+
+|Table|Field|
+|-|-|
+|1251 "Text-to-Account Mapping"|11700 "Text-to-Account Mapping (Code[10])|
+|1252 "Bank Pmt. Appl. Rule"|11700 "Bank Pmt. Appl. Rule Code" (Code[10])|
+
+These changes can lead to the following errors when you try to synchronize the base application with the tenant during upgrade:
+
+```ps
+Sync-NAVApp : Table 1251 Text-to-Account Mapping :: The field 'Text-to-Account Mapping Code' cannot be located. Removing fields is not allowed.
+Table 1251 Text-to-Account Mapping :: Changing fields for the key 'Key1' is not allowed. Previous list: 'Text-to-Account Mapping Code', 'Line No.', new List: 'Line No.'.
+Table 1252 Bank Pmt. Appl. Rule :: The field 'Bank Pmt. Appl. Rule Code' cannot be located. Removing fields is not allowed.
+Table 1252 Bank Pmt. Appl. Rule :: Changing fields for the key 'Key1' is not allowed. Previous list: 'Bank Pmt. Appl. Rule Code', 'Match Confidence', 'Priority', new List: 'Match Confidence', 'Priority'.
+```
+
+### Workaround
+
+If you're upgrading from version 22, use the [Sync-NavApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) to synchronize the base application in the ForceSync mode during upgrade, for example: 
+
+```ps
+SyncNavApp -ServiceInstance <BC 23 server instance> -Name "Base Application" -Version <23 version number> -Mode ForceSync
+```
+
+If you're upgrading from version 21 or earlier, the workaround is slightly different. First, ensure that no duplicate records will exist in either table 1251 "Text to Account Mapping" or table 1252 "Bank Payment Application Rule" after upgrade. <!--the Czech-specific fields have been removed and the primary key modified.--> To do this, complete one of the following tasks before you upgrade to version 23:
+
+- Manually delete any duplicate records in either of the tables, or
+- Upgrade to the latest [version 22 that's compatible](upgrade-v14-v15-compatibility.md) with the version 23 you're upgrading to. With version 22, the necessary data modifications to handle duplicate records are included as part of the upgrade procedures.
+
+Once you completed either of these tasks, upgrade to version 23 as usual. Don't forget to synchronize the base application using the ForceSync mode with the Sync-NavApp cmdlet.
+
+<!--[Learn more about this issue]()-->
+
+
+## Web server components fatal error during installation on Azure virtual machine (VM)
+
+<!-- hhttps://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/445272/-->
+
+> Applies to: Version 20 and 21 
+
+### Problem
+
+When you try to install the [!INCLUDE[webserver](../developer/includes/webserver.md)] components using setup.exe on a Azure VM running Windows Server, the following error occurs:
+
+**Web Server Components**
+
+**Fatal error during installation**
+
+### Possible cause
+
+This error will typically occur on a VM where the [!INCLUDE[webserver](../developer/includes/webserver.md)] hasn't been installed before. It happens because setup is trying to install Windows Server Hosting and Microsoft .NET Core Runtime on the VM but they're already installed, causing a conflict. 
+
+### Workaround
+
+Uninstall Windows Server Hosting and Microsoft .NET Core Runtime from the VM, then run setup.exe again.
 
 ## Users can't sign in to the web client after upgrade to 19.0
 
@@ -70,7 +153,7 @@ So if there are records in these tables, or the application includes custom code
 
 ### Workaround 
 
-Before you upgrade, either move the records to new tables or delete the records from the tables. Also, rewrite the custom application code thats stores the non-temporary records in these base application tables to use other tables.
+Before you upgrade, either move the records to new tables or delete the records from the tables. Also, rewrite the custom application code that's stores the non-temporary records in these base application tables to use other tables.
 
 ## NavUserPassword authentication doesn't work after upgrade to version 18
 <!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/398164 -->
@@ -146,7 +229,7 @@ To workaround this issue, activate the `EnableLegacyIterationCount` feature swit
 
 ### Problem
 
-When you upgrade to version 18 from an earlier major version, authentication that's based on the NavUserPassword credential type takes longer than it did in previous versions. This reason is that the password algorithm has been updated in version 18. The extra time it takes per authentication isn't noticeable to a normal user. But in a solution that has a very heavy authentication load, for example from multiple and repeated web service calls, the extra time may be significant.
+When you upgrade to version 18 from an earlier major version, authentication that's based on the NavUserPassword credential type takes longer than it did in previous versions. This reason is that the password algorithm has been updated in version 18. The extra time it takes per authentication isn't noticeable to a normal user. But in a solution that has a heavy authentication load, for example from multiple and repeated web service calls, the extra time may be significant.
 
 ### Workaround
 
@@ -402,7 +485,7 @@ The Help Server installation will fail.
 
 ### Workaround
 
-Install Help Server without the HTML files for local functionality, then pick up the content from GitHub instead. For more information, see [Get updates from Microsoft](../help/contributor-guide.md#get-updates-from-microsoft).
+Install Help Server without the HTML files for local functionality, then pick up the content from GitHub instead.
 
 ## [!INCLUDE[admintool](../developer/includes/admintool.md)] doesn't work for multitenant server instances
 
@@ -424,6 +507,58 @@ When you try to use the **Tenant** node in the [!INCLUDE[admintool](../developer
 ### Workaround
 
 Use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. This error is fixed in later updates.
+
+
+## Sync-NAVApp error: Parameter @objname is ambiguous or the claimed @objtype (INDEX) is wrong
+
+<!--https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/374610-->
+
+> Applies to: Upgrade from 14.X 
+
+### Problem
+
+You get the following error when running Sync-NAVApp cmdlet on the base application:
+
+```powershell
+Sync-NAVApp : The following SQL error was unexpected:
+
+Either the parameter @objname is ambiguous or the claimed @objtype (INDEX) is wrong.
+
+Either the parameter @objname is ambiguous or the claimed @objtype (INDEX) is wrong.
+
+Caution: Changing any part of an object name could break scripts and stored procedures.
+```
+
+### Workaround
+
+This occurs when a key fails to get renamed. To fix the problem, identify the key that fails to get renamed, for example, by using the event log or SQL profiler. Then, disable the key by using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)].
+
+## Business Central Server instance fails to start after changing a port number directly in the CustomSettings.config file
+
+> Applies to: Upgrade to 21.x
+
+### Problem
+
+You get errors in the Event Log similar to the following errors when trying to start the [!INCLUDE[server](../developer/includes/server.md)] instance after changing a port number directly in it's CustomSettings.config file:
+
+- Message (HttpSysException): Failed to start service with CLR type Microsoft.Dynamics.Nav.Service.AspNetCore.AspNetCoreApiHost, API type ClientApi and address http://gc1662:8085/BC210/client.
+- Failed to start service with CLR type Microsoft.Dynamics.Nav.Service.AspNetCore.AspNetCoreApiHost, API type ClientApi and address
+- The service MicrosoftDynamicsNavServer$BC210 failed to start. This could be caused by a configuration error. Detailed error information: Microsoft.AspNetCore.Server.HttpSys.HttpSysException (0x80004005): Access is denied
+- Type: Microsoft.AspNetCore.Server.HttpSys.HttpSysException; Message: Access is denied
+
+### Impact
+
+After upgrading to version 21.x, you notice that the [!INCLUDE[admintool](../developer/includes/admintool.md)] is no longer available, because it has been removed in version 21.x. If you then try to update certain port numbers (for example, ClientServicesPort ) directly in the server instance's CustomSettings.config file, you may get the errors described above when you try to start the server instance.
+
+### Workaround
+
+Avoid updating the CustomSetting.config file directly. Instead, use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] with the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration). This will automatically grant the required Namespace Reservation permissions for the relevant port.
+
+Alternatively, you could grant the required Namespace Reservation permissions manually for the relevant port by running the appropriate NETSH command in an administrator command prompt on the [!INCLUDE[server](../developer/includes/server.md)] machine, for example:
+
+```
+netsh http add urlacl url=http://+:<PORT NUMBER>/<BC SERVICE NAME>/ user="<BC SERVICE ACCOUNT>"
+```
 
 ## See Also
 

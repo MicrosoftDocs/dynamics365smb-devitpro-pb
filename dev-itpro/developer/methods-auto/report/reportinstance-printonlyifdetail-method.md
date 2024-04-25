@@ -2,10 +2,7 @@
 title: "Report.PrintOnlyIfDetail([Boolean]) Method"
 description: "Gets or sets the current settings of the PrintOnlyIfDetail property."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -19,7 +16,7 @@ author: SusanneWindfeldPedersen
 Gets or sets the current settings of the PrintOnlyIfDetail property.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises.
+> From runtime version 10.1 and onward, this method is supported in Business Central online.
 
 ## Syntax
 ```AL
@@ -49,7 +46,7 @@ The current settings of the PrintOnlyIfDetail property.
 
  The following example is from the OnAfterGetRecord trigger of a report. If the PrintOnlyIfDetail property is true and if a GLEntryPage record exists, given the current filters, then the PageGroupNo is incremented.
  
-```  
+```al
 var
     GLEntryPage: Record "G/L Entry";
     PageGroupNo: Integer;

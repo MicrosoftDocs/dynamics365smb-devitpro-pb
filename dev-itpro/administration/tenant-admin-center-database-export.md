@@ -4,9 +4,7 @@ description: Use the Business Central administration center to export tenant dat
 author: jswymer
 
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export, bacpac, backup
 ms.date: 04/15/2021
 ms.author: jswymer
@@ -34,7 +32,10 @@ Before you can export the file, you must first set up the Azure storage account 
 
 ### Creating the storage account
 
-The first step is to create an Azure standard storage account, if you don't already have one. To set up the export, you must first have a subscription to Microsoft Azure and access to the [Azure portal](https://portal.azure.com). 
+The first step is to create a **Standard general-purpose v2** Azure storage account, if you don't already have one. To set up the export, you must first have a subscription to Microsoft Azure and access to the [Azure portal](https://portal.azure.com).
+
+> [!IMPORTANT]
+> Exporting an environment database to a storage account that isn't a **Standard general-purpose v2** Azure storage account, such as V1 or Premium storage accounts, isn't supported.
 
 For more information setting up an Azure storage account, see [Create a storage account](/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
 
@@ -100,7 +101,7 @@ This means that if you want to export the data in order to change the customer's
 For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import), [Migrating to Single-Tenancy From Multitenancy](../deployment/Merging-an-Application-Database-with-a-Tenant-Database.md), and [When to choose on-premises deployment](../deployment/Deployment.md#when-to-choose-on-premises-deployment).  
 
 > [!NOTE]
-> If you are getting an error saying your file contains corrupted data when importing the bacpac file please ensure you are using the .NET Core version of [SqlPackage.exe](https://docs.microsoft.com/sql/tools/sqlpackage/sqlpackage-download).
+> If you are getting an error saying your file contains corrupted data when importing the bacpac file please ensure you are using the .NET Core version of [SqlPackage.exe](/sql/tools/sqlpackage/sqlpackage-download).
 
 ## Restoring the exported data to Business Central online
 

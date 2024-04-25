@@ -3,9 +3,7 @@ title: Analyzing Database Wait Statistics Telemetry
 description: Learn about the telemetry for database wait statics for Business Central in Azure Application Insights.  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 06/16/2022
 ms.author: jswymer
@@ -14,6 +12,8 @@ ms.author: jswymer
 # Analyzing Database Wait Statistics Telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2022 release wave 1, version 20.0, and later
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 [!INCLUDE[include_telemetry_database_wait_statistics_md](../includes/include-telemetry-database-wait-statistics.md)]
 
@@ -29,6 +29,8 @@ Occurs when you choose the **Emit Telemetry** icon on the Database Wait Statisti
 |---------|-----|
 |message|**Database wait statistics snapshot taken: {snapshotId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
 
 ### Custom dimensions
 
@@ -43,15 +45,12 @@ The following table explains custom dimensions that are common to all database w
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments).|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-<!--
-{"aadTenantId":"common","component":"Dynamics 365 Business Central Server","environmentType":"Production","telemetrySchemaVersion":"0.2","eventId":"RT0025","componentVersion":"21.0.42152.0","snapshotId":"7df7dd29-c450-41f7-b6ac-29db870ba513"}
--->
 
 ## <a name="waitstatsentry"></a>Database wait statistics snapshot entry
 
@@ -63,6 +62,7 @@ Occurs when a query has to wait because of a resource, queue, or external event 
 |---------|-----|
 |message|**Database wait statistics snapshot entry: {databaseWaitStatisticsCategory}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -78,14 +78,10 @@ Occurs when a query has to wait because of a resource, queue, or external event 
 |databaseWaitTimeInMs|Specifies the total wait time for a wait category including the databaseSignalWaitTimeInMs.|
 |[See common custom dimensions](#other)||
 
-<!--
-{"aadTenantId":"common","component":"Dynamics 365 Business Central Server","environmentType":"Production","telemetrySchemaVersion":"0.2","eventId":"RT0026","componentVersion":"21.0.42152.0","snapshotId":"7df7dd29-c450-41f7-b6ac-29db870ba513","databaseMaxWaitTimeInMs":"64","databaseWaitTimeInMs":"310","databaseSignalWaitTimeInMs":"290","databaseWaitStatisticsCategory":"Memory","databaseStartedDuration":"19934878","databaseWaitingTasksCount":"602"}
-
--->
 
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
-[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/performance/performance-developer](../performance/performance-developer.md)  
+[Performance for Developers](../performance/performance-developer.md)  
 [How to work with a performance problem](../performance/performance-work-perf-problem.md)  

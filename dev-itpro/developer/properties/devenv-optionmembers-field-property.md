@@ -1,22 +1,18 @@
 ---
-title: "OptionMembers Property (Field)"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "OptionMembers Property (Table field)"
+ms.date: 12/29/2022
 ms.topic: reference
 ms.author: solsen
 ---
 
-# OptionMembers Property (Field)
+# OptionMembers Property (Table field)
 > **Version**: _Available from runtime version 1.0._
 
-Sets the list of options that are available in the field that is currently selected. 
+Sets the list of options that are available in the table field that is currently selected. 
   
 ## Applies to  
   
-- Fields  
+- Table fields  
 
 ## Example
 

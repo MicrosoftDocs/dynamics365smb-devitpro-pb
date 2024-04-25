@@ -3,9 +3,7 @@ title: Create userGroupPermission
 description: Creates a user group permission object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 05/05/2021
 ms.author: solsen
 ---
@@ -53,7 +51,6 @@ Content-Type:application/json
     "roleId": "D365 COMPANY HUB", 
     "displayName": "D365 COMPANY HUB"
 }
-
 ```
 
 **Response**

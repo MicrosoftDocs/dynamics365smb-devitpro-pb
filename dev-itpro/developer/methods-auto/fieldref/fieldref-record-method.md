@@ -2,10 +2,7 @@
 title: "FieldRef.Record() Method"
 description: "Gets the RecordRef of the field that is currently selected."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Gets the RecordRef of the field that is currently selected. This method returns 
 ```AL
 Record :=   FieldRef.Record()
 ```
-
 ## Parameters
 *FieldRef*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  

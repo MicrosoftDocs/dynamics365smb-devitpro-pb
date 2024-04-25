@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 0b5f1e2c-b748-48e2-b201-bc3b02ffe3e1
 caps.latest.revision: 28
-manager: edupont
 ---
 # Walkthrough: Combining Data from Microsoft Dynamics NAV Queries and Pages with Data from Azure DataMarket (OData)
 This walkthrough describes how you can use OData to combine data from [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] with data from Microsoft Azure Markeplace.  
@@ -43,7 +41,7 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
 -   A Microsoft account for accessing data from Azure Marketplace. For more information about Microsoft account, see the [What is a Microsoft account?](https://go.microsoft.com/fwlink/?LinkId=271494). To obtain a Microsoft account, go to the [sign-up page](https://go.microsoft.com/fwlink/?LinkId=271493).  
   
 ## Story  
- Victor, the business system developer at [!INCLUDE[demoname](../developer/includes/demoname_md.md)], has been asked by his manager Tim to create a data visualization that will show total sales to customers in different countries/regions, and how those countries/regions align with Key Development Indicators, which are a measure of national/regional affluence. Tim tells Victor that he can find information about Key Development Indicators on zure Marketplace. Victor assesses the assignment and decides that he can use OData web services to bring [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data to Excel, where he can merge it with economic data from Azure Marketplace.  
+ Victor, the business system developer at [!INCLUDE[demoname](../developer/includes/demoname_md.md)], has been asked by the manager Tim to create a data visualization that will show total sales to customers in different countries/regions, and how those countries/regions align with Key Development Indicators, which are a measure of national/regional affluence. Tim tells Victor that information about Key Development Indicators can be found on zure Marketplace. Victor assesses the assignment and decides that OData web services can be used to bring [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data to Excel, where it can be merged with economic data from Azure Marketplace.  
   
 ## Creating a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Query  
  You create a query to capture data about sales to individual customers.  

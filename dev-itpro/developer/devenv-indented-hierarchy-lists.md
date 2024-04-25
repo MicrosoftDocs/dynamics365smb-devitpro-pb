@@ -1,11 +1,7 @@
 ---
 title: "Designing Indented Hierarchy Lists"
 description: This article explains how to indent rows in a repeater control to design hierarchical lists. You can nest records that users can navigate, expand, and collapse.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -32,7 +28,7 @@ To demonstrate how indented hierarchy works, we'll use a basic table and page. F
 
 #### Table
 
-```
+```al
 table 50100 MyTable
 {
     fields
@@ -59,7 +55,7 @@ table 50100 MyTable
 
 #### Page
 
-```
+```al
 page 50100 MyPage
 {
     PageType = List;
@@ -110,7 +106,7 @@ In the figure, indentation is applied to the second column. Setting up the fixed
 In this example, you indent records based on the value of the **Indent** column and apply the indentation to **Name** column. You set the IndentationColumn and IndentationControls on the repeater of the page, as shown in the following code:
 
 <!-- 
-```
+```al
 repeater(Control1)
 {
     IndentationColumn = Indent;
@@ -187,7 +183,7 @@ Unlike fixed indented lists, a collapsible hierarchy always indents the left-mos
 In this example, you'll indent records based on the value of the **Indent** column. Records will indent on the **Number** column and parent records will be collapsible. You add the IndentationColumn, ShowAsTree, and TreeInitialState properties to the pages' repeater: 
 
 <!--
-```
+```al
 repeater(Control1)
 {
     IndentationColumn = Indent;
@@ -241,14 +237,12 @@ page 50100 MyPage
 }  
 ```
 
-You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above. 
+You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above.
 
-For a more detailed implementation example, see the [Assisted Setup](https://businesscentral.dynamics.com/?page=1801) page in the base application (link requires sign-in to Business Central online). 
-
+For a more detailed implementation example, see the [Assisted Setup](https://businesscentral.dynamics.com/?page=1801) page in the base application (link requires sign-in to Business Central online).
 
 ### Collapsed or Expanded lists
-Users can change whether the page opens with rows collapsed or expanded, essentially overriding the TreeInitialState property. They change the behavior by selecting the **Toggle Expand All / Collapse All** button in the header of the first column, or using the button in the top-left corner of the repeater. It stays this way, until they delete personalization on the page.  
-
+Users can change whether the page opens with rows collapsed or expanded, essentially overriding the TreeInitialState property. They change the behavior by selecting the **Toggle Expand All / Collapse All** button in the header of the first column, or using the button in the top-left corner of the repeater. It stays this way, until they delete personalization on the page.
 
 ## Design and behavior considerations
 
@@ -259,6 +253,8 @@ When using an indented hierarchy, consider the following behavior:
 - Indentation is used to visually communicate structure, without modifying the table of records itself. There's no tightly defined *parent-child* relationship between records, so you must implement additional logic if records need to relate together. For example, if a user deletes a parent record, Business Central won't delete all of its child records.  
 - Indenting records in a list doesn't automatically apply any additional styling to emphasize parent records and distinguish them from child records. You can implement styling using style expressions. For example, you could format all fields on parent records to display bold values. Learn more about [StyleExpr Property](properties/devenv-styleexpr-property.md).  
 
+> [!NOTE]
+> Having more than 1000 nested rows under the root level row can cause performance issues in the web client.
 
 ## See Also
 

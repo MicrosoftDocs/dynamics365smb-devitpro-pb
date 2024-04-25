@@ -2,10 +2,7 @@
 title: "BigText.Write(OutStream) Method"
 description: "Streams a BigText object to a BLOB field in a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,15 +27,13 @@ An instance of the [BigText](bigtext-data-type.md) data type.
 
 *OutStream*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
-The stream to which you write a BigText.
-        
+The stream to which you write a BigText.  
 
 
 ## Return Value
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the write transaction was successful, otherwise **false**.
-      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

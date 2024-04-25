@@ -1,11 +1,7 @@
 ---
 title: "Running a Business Central Database to Azure SQL Database"
 description: Learn how to deploy a Business Central database to Azure SQL Database
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -184,6 +180,10 @@ When comparing the performance of Azure SQL database and a SQL Server deployed t
 - Azure SQL database is a high-availability database with a number of secondary replicas where writes must be confirmed for commits to be done. Secondary replicas will affect the performance of write operations (any inserts, updates, or deletes). For high throughput systems, running the database on SQL Server might be a better option. In this case, high-availability can be achieved using delayed durability or async commits. This condition will affect the data volume that you're ready to sacrifice if a database crash occurs.
 - Azure SQL database is a scalable and intelligent service that includes features such as high-availability, backups, automatic index tuning, security vulnerability assessment, and advanced threat detection. When choosing a pricing tier for running your production database, make sure that you compare Azure SQL database to a similar setup for SQL Server on a virtual machine (including the cost of administration and maintenance).
 - The performance of an Azure SQL database is correlated to the price you pay for usage, and new pricing models evolve over time. Use the scalability options within the service to change the database performance tier for your installation as your workload changes over time.
+
+## Integrating directly on SQL Server objects
+[!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
+
 
 ## See Also
 

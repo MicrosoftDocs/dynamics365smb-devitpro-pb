@@ -19,8 +19,7 @@
   ],
   "notification_subscribers": [
     "solsen@microsoft.com",
-    "jswymer@microsoft.com",
-    "edupont@microsoft.com"
+    "jswymer@microsoft.com"
   ],
   "sync_notification_subscribers": [
     "buckley.guderian@microsoft.com"
@@ -41,6 +40,12 @@
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "shared-content",
+      "url": "https://github.com/MicrosoftDocs/powerapps-docs-pr",
       "branch": "main",
       "branch_mapping": {}
     }

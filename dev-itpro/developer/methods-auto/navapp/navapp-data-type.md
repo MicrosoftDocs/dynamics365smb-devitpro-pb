@@ -2,10 +2,7 @@
 title: "NavApp Data Type"
 description: "Provides information about a NavApp."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/26/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -19,6 +16,7 @@ author: SusanneWindfeldPedersen
 Provides information about a NavApp.
 
 
+## Static methods
 The following methods are available on the NavApp data type.
 
 
@@ -30,7 +28,9 @@ The following methods are available on the NavApp data type.
 |[GetCallerModuleInfo(var ModuleInfo)](navapp-getcallermoduleinfo-method.md)|Gets information about the extension that contains the method that called the currently running method. For example, if method 1 (in extension A) calls method 2 (in extension B), which calls GetCallerModuleInfo, then GetCallerModuleInfo will return information about extension A.|
 |[GetCurrentModuleInfo(var ModuleInfo)](navapp-getcurrentmoduleinfo-method.md)|Gets information about the application that contains the AL object that is currently running.|
 |[GetModuleInfo(Guid, var ModuleInfo)](navapp-getmoduleinfo-method.md)|Gets information about the specified AL application.|
+|[IsEntitled(Text [, Guid])](navapp-isentitled-method.md)|Determines if the current user is entitled to a specific entitlement id for the application.|
 |[IsInstalling()](navapp-isinstalling-method.md)|Returns **true** if the application that contains the AL object that is currently running is being installed, otherwise it returns **false**.|
+|[IsUnlicensed([Guid])](navapp-isunlicensed-method.md)|Determines if the current user is assigned the Unlicensed entitlement type for the application.|
 |[LoadPackageData(Integer)](navapp-loadpackagedata-method.md)|Loads default, or starting, table data into the specified table of an extension during installation.|
 |[RestoreArchiveData(Integer [, Boolean])](navapp-restorearchivedata-method.md)|Restores archived data for a specified table of an extension during installation.|
 

@@ -2,10 +2,7 @@
 title: "Record.LockTable([Boolean] [, Boolean]) Method"
 description: "Starts locking on a table to protect it from write transactions that conflict with each other."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/06/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -58,6 +55,7 @@ The table lock is released (unlocked) when the transaction is committed.
 This method works the same as the RecordRef [LockTable Method](../recordref/recordref-locktable-method.md).
 
 ## See Also
+
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

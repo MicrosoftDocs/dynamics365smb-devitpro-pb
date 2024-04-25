@@ -1,1 +1,1 @@
-AL Language extension
+AL Language extension for Microsoft Dynamics 365 Business Central

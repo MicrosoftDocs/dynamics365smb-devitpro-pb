@@ -3,12 +3,11 @@ title: Delete userPermission | Microsoft Docs
 description: Delete userPermission objects in Dynamics 365 Business Central.
 documentationcenter: ''
 author: henrikwh
-
 ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2020
+ms.date: 12/18/2023
 ms.author: solsen
 ---
 
@@ -26,10 +25,10 @@ DELETE /microsoft/automation/{apiVersion}/companies({companyId})/users({userSecu
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match|Required. When this request header is included and the eTag provided does not match the current tag on the **userPermission**, the **userPermission** will not be deleted. |
+|If-Match|Required. When this request header is included and the eTag provided doesn't match the current tag on the **userPermission**, the **userPermission** won't be deleted. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```204 No Content``` response code.
@@ -38,12 +37,12 @@ If successful, this method returns a ```204 No Content``` response code.
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 DELETE https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({companyId})/users({userSecurityId})/userPermissions(781f5ae5-a5d9-4ec3-8cea-2167a8064dc6, 'SECURITY', 'CRONOS','System',00000000-0000-0000-0000-000000000000)
 If-Match:*
 ```
 
-## See Also 
+## See also 
 [Introduction to Automation APIs](itpro-introduction-to-automation-apis.md)  
 [UserPermission Resource Type](dynamics-microsoft-automation-userpermission.md)  

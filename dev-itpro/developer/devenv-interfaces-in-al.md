@@ -1,33 +1,33 @@
 ---
-title: "Interfaces in AL"
-description: "Interfaces in AL are syntactical contracts that can be implemented by a non-abstract method."
+title: Interfaces in AL
+description: Interfaces in AL are syntactical contracts that can be implemented by a nonabstract method.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/01/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
 # Interfaces in AL
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
-An interface in AL is similar to an interface in any other programming language; it is a syntactical contract that can be implemented by a non-abstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface.
+An interface in AL is similar to an interface in any other programming language; it's a syntactical contract that can be implemented by a nonabstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface. 
 
 This allows for writing code that reduces the dependency on implementation details, makes it easier to reuse code, and supports a polymorphic way of calling object methods, which again can be used for substituting business logic.
 
-The interface declares an interface name along with its methods, and codeunits that implement the interface methods, must use the `implements` keyword along with the interface name(s). The interface itself does not contain any code, only signatures, and cannot itself be called from code, but must be implemented by other objects.
+The interface declares an interface name along with its methods, and codeunits that implement the interface methods, must use the `implements` keyword along with one or more interface names. The interface itself doesn't contain any code, only signatures, and can't itself be called from code, but must be implemented by other objects.
  
 The AL compiler checks to ensure that implementations adhere to assigned interfaces.
 
 You can declare variables as a given interface to allow passing objects that implement the interface, and then call interface implementations on the passed object in a polymorphic manner.
 
+> [!NOTE]  
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, you can use the **Go to Implementations** option in the Visual Studio Code context menu (or press <kbd>Ctrl+F12</kbd>) on an interface to view all the implementations within scope for that interface. This is supported on interfaces, and on codeunits and enums, which implement an interface, as well as on their procedures if they map to a procedure on an interface. It's also supported on codeunit variables of type interface to jump to other implementations of that specific interface.
+
 ## Snippet support
 
-Typing the shortcut `tinterface` will create the basic layout for an interface object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `tinterface` creates the basic layout for an interface object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 
 ## Interface example
@@ -45,7 +45,7 @@ interface "IAddressProvider"
 codeunit 50200 CompanyAddressProvider implements IAddressProvider
 {
 
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
     var
         ExampleAddressLbl: Label 'Company address \ Denmark 2800';
         
@@ -57,7 +57,7 @@ codeunit 50200 CompanyAddressProvider implements IAddressProvider
 codeunit 50201 PrivateAddressProvider implements IAddressProvider
 {
 
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
     var
         ExampleAddressLbl: Label 'My Home address \ Denmark 2800';
 
@@ -146,7 +146,7 @@ page 50200 MyAddressPage
 }
 ```
 
-## See Also
+## See also
 
-[Codeunit Object](devenv-codeunit-object.md)  
-[Extensible Enums](devenv-extensible-enums.md)  
+[Codeunit object](devenv-codeunit-object.md)  
+[Extensible enums](devenv-extensible-enums.md)  

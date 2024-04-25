@@ -3,9 +3,7 @@ title: Update extensionUpload
 description: Updates an  extension upload object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -21,7 +19,7 @@ Updates the properties of an extension upload object for [!INCLUDE[d365fin_long_
 Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
 
 ```json
-PATCH /microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensionUploadId})/content
+PATCH /microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensionUploadId})/extensionContent
 Content-type: application/octet-stream
 Body: binary content of the extension
 ```
@@ -47,10 +45,10 @@ If successful, this method returns a ```204 No Content```.
 Here is an example of the request.
 
 ```json
-PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensionUploadId})/content
-Authorization : Bearer {token}
-Content-type : application/octet-stream
-If-Match:-*
+PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensionUploadId})/extensionContent
+Authorization: Bearer {token}
+Content-Type: application/octet-stream
+If-Match: *
 Body: binary stream
 ```
 

@@ -1,13 +1,15 @@
 ---
-title: "Cumulative updates for the Spring 2019 version"
-description: "Learn about the cumulative updates for Dynamics 365 Business Central Spring 2019 on-premises deployments."
+title: Cumulative updates for the Spring 2019 version
+description: Learn about the cumulative updates for Dynamics 365 Business Central Spring 2019 on-premises deployments.
 author: jswymer
-ms.custom: na
-ms.reviewer: edupont
-ms.topic: conceptual
 ms.author: jswymer
-ms.date: 09/01/2022
-
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
+ms.topic: conceptual
+ms.date: 04/14/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # Dynamics 365 Business Central On-Premises Spring 2019 Updates
@@ -27,13 +29,29 @@ We recommend that you install the latest cumulative update.
 
 ## Available updates for Business Central April 2019
 
-The following table lists the cumulative updates released for the Spring 2019 release of Business Central (version 14). The cumulative updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description. 
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
+
+
+The following table lists the cumulative updates released for the Spring 2019 release of Business Central (version 14). The cumulative updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description. 
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
-|[5017792](https://support.microsoft.com/help/5017792)|Cumulative Update 39|September 2022|Application 14.40.</br>Platform 14.0.|
+|[5031948](https://support.microsoft.com/help/5031948)|Cumulative Update 52|October 2023|Application Build 14.53.50097</br>Platform Build 14.0.50094|
+|[5031028](https://support.microsoft.com/help/5031028)|Cumulative Update 51|September 2023|Application Build 14.52.50053</br>Platform Build 14.0.50051|
+|[5029762](https://support.microsoft.com/help/5029762)|Cumulative Update 50|August 2023|Application Build 14.51.50001</br>Platform Build 14.0.49994|
+|[5029054](https://support.microsoft.com/help/5029054)|Cumulative Update 49|July 2023|Application Build 14.50.49975</br>Platform Build 14.0.49970|
+|[5027889](https://support.microsoft.com/help/5027889)|Cumulative Update 48|June 2023|Application Build 14.49.49909</br>Platform Build 14.0.49902|
+|[5026929](https://support.microsoft.com/help/5026929)|Cumulative Update 47|May 2023|Application Build 14.48.49868</br>Platform Build 14.0.49864|
+|[5025972](https://support.microsoft.com/help/5025972)|Cumulative Update 46|April 2023|Application Build 14.47.49814</br>Platform Build 14.0.49811|
+|[5024400](https://support.microsoft.com/help/5024400)|Cumulative Update 45|March 2023|Application Build 14.46.49756</br>Platform Build 14.0.49754|
+|[5023398](https://support.microsoft.com/help/5023398)|Cumulative Update 44|February 2023|Application Build 14.45.49699</br>Platform Build 14.0.49695|
+|[5022711](https://support.microsoft.com/help/5022711)|Cumulative Update 43|January 2023|Application Build 14.44.49619</br>Platform Build 14.0.49616|
+|[5021669](https://support.microsoft.com/help/5021669)|Cumulative Update 42|December 2022|Application 14.43.49498</br>Platform 14.0.49494|
+|[5021001](https://support.microsoft.com/help/5021001)|Cumulative Update 41|November 2022|Application 14.42.49347 </br>Platform 14.0.49339|
+|[5019238](https://support.microsoft.com/help/5019238)|Cumulative Update 40|October 2022|Application 14.41.49238 </br>Platform 14.0.49232|
+|[5017792](https://support.microsoft.com/help/5017792)|Cumulative Update 39|September 2022|Application 14.40.49174</br>Platform 14.40.49170|
 |[5017014](https://support.microsoft.com/help/5017014)|Cumulative Update 38|August 2022|Application 14.39.49063</br>Platform 14.0.49057|
 |[5016301](https://support.microsoft.com/help/5016301)|Cumulative Update 37|July 2022|Application 14.38.48967</br>Platform 14.0.48964|
 |[5015472](https://support.microsoft.com/help/5015472)|Cumulative Update 36|June 2022|Application 14.37.48797</br>Platform 14.0.48792|

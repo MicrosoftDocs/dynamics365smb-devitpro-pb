@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: reference
 ms.author: solsen
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
 
 # OnRun Trigger

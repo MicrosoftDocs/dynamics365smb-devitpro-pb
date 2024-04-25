@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 692b5780-53c7-4747-9c2d-9b97afefeb81
 caps.latest.revision: 21
-manager: edupont
 ---
 # Walkthrough: Creating a Query That Uses a Totaling Method and Sorting
 This walkthrough demonstrates how to modify an existing query, which links two tables, so that the query includes a totaling method on a field in one of the tables.  
@@ -27,7 +25,7 @@ This walkthrough demonstrates how to modify an existing query, which links two t
  This walkthrough builds on the steps that are described in [Walkthrough: Creating a Query to Link Two Tables](Walkthrough--Creating-a-Query-to-Link-Two-Tables.md).  
   
 ## Story  
- Viktor is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] He wants to create a dataset that contains the total number of items in open sales orders for each customer. Viktor has already created a query that contains the quantity of items of every open sales order for each customer. He can modify that query so that it displays the sum of quantity of items for each customer.  
+ Viktor is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] Viktor wants to create a dataset that contains the total number of items in open sales orders for each customer. Viktor has already created a query that contains the quantity of items of every open sales order for each customer. The query can be modified to display the sum of quantity of items for each customer.  
   
  The SQL query for this dataset that Viktor wants is the following:  
   
@@ -40,7 +38,7 @@ ORDER BY Quantity
 ```  
   
 ## Adding a Totaling Method to a Query  
- Viktor examines the query that he created earlier. To calculate the total number of items in open sales orders for each customer, he adds the **Quantity** column from the **Sales Line** table to the query, and then implements a sum method on the column by changing the [Method Property](Method-Property.md).  
+ Viktor examines the query created earlier. To calculate the total number of items in open sales orders for each customer, Viktor adds the **Quantity** column from the **Sales Line** table to the query, and then implements a sum method on the column by changing the [Method Property](Method-Property.md).  
   
 #### To add a totaling method to a query  
   
@@ -65,7 +63,7 @@ ORDER BY Quantity
     >  When you set the **Method** column to **Totals**, the name of the column is automatically changed from **Quantity** to **\<Sum\_Quantity>**. The column name is specified by its [Name Property](Name-Property.md). The **OrderBy** property identifies a column by the **Name** property.  
   
 ## Sorting the Query Results  
- Viktor wants the resulting dataset to display records according to the item quantity in descending order from highest value to lowest value. To achieve this, he will set the [OrderBy Property](OrderBy-Property.md) on the query object.  
+ Viktor wants the resulting dataset to display records according to the item quantity in descending order from highest value to lowest value. To achieve this, Viktor will set the [OrderBy Property](OrderBy-Property.md) on the query object.  
   
 #### To sort query results by item quantity  
   
@@ -88,7 +86,7 @@ ORDER BY Quantity
 7.  Choose the **OK** button, close the **Query – Properties** window, and return to Query Designer.  
   
 ## Saving and Running the Query  
- Viktor wants to verify that the resulting dataset what he wants. He saves the query and then runs it from Object Designer. The call to run the query runs on [!INCLUDE[nav_server](includes/nav_server_md.md)] and opens a view of the dataset in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
+  To verify the resulting dataset, Viktor saves the query and then runs it from Object Designer. The call to run the query runs on [!INCLUDE[nav_server](includes/nav_server_md.md)] and opens a view of the dataset in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
   
 #### To save and run a query  
   

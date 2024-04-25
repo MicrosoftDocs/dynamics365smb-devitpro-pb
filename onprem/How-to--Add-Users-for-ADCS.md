@@ -7,10 +7,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 4c5564b0-f01d-47af-b2f6-9f7587afd449
 caps.latest.revision: 9
-manager: edupont
 translation.priority.ht:
   - da-dk
   - de-at

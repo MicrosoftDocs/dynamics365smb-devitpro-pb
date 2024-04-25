@@ -1,16 +1,12 @@
 ---
-title: "Control Add-In Performance Best Practices"
-ms.custom: na
-ms.date: 04/01/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Control add-in performance best practices"
+ms.date: 04/11/2023
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ---
 
-# Control Add-In Performance Best Practices
+# Control add-in performance best practices
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
@@ -30,7 +26,7 @@ The following example illustrates code that is problematic and might cause perfo
 function invokeALTriggerTheWrongWay() {
     // Invoke the trigger every 10 seconds, ignoring 
     // whether the previous call has completed
-    window.setTimeout(() => {
+    window.setInterval(() => {
         Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(
             "MyTrigger",
             arguments,
@@ -55,7 +51,7 @@ function invokeALTriggerTheRightWay() {
         () => {
             // Invoking the AL trigger has completed, invoke
             // the AL trigger again in 10 seconds
-            window.setTimeout(() => {
+            window.setInterval(() => {
                 invokeALTriggerTheRightWay();
             },
             10000);

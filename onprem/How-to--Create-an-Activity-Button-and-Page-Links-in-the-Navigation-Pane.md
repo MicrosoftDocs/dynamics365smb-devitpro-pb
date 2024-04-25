@@ -7,10 +7,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 8e8e9c18-7509-4353-a996-d63f4a9d44e4
 caps.latest.revision: 23
-manager: edupont
 ---
 # Creating Activity Buttons and Page Links in the Navigation Pane
 An activity button in the navigation pane displays a menu of links to additional pages in the RoleTailored client. The following illustration shows activity buttons in the navigation pane.  

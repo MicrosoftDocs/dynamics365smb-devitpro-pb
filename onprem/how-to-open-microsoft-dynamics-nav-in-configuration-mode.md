@@ -7,10 +7,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 0a562f54-76df-4058-880b-8cdb4bab52f2
 caps.latest.revision: 34
-manager: edupont
 ---
 
 # How to: Open [!INCLUDE[nav_windows](includes/nav_windows_md.md)] in Configuration Mode

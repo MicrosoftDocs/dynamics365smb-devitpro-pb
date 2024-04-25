@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: f04a4b9b-b440-4472-81a3-66a1069c54b1
 caps.latest.revision: 6
-manager: edupont
 ---
 # Altering Databases - Transaction Log Files Tab
 Increases the size of the existing transaction log files or adds new files to enable more transactions to be performed in the database. The transaction log grows as new transactions are performed in the database. SQL Server truncates the log after it performs a successful database or transaction log backup.  

@@ -1,15 +1,13 @@
 ---
 title: Set Up Company Configuration Packages
 description: Streamline your implementation process by turning a set of company types you use with most customers into company configuration packages available for reuse.
-author: edupont04
+author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords:
 ms.search.form: 8610, 8613, 8614, 8615, 8620, 8632
 ms.date: 04/07/2022
-ms.author: edupont
+ms.author: jswymer
 
 ---
 # Set Up Company Configuration Packages
@@ -57,7 +55,7 @@ There are some things to consider before you create a configuration package beca
 
 ### Tables that contain posted entries
 
-You cannot import data to tables that contain posted entries, such as the tables for customer, vendor, and item ledger entries, so you should not include this data in your configuration package. You can add entries to these tables after you import the configuration package by using journals to post the entries. For more information, see [Posting Documents and Journals](/dynamics365/business-central/ui-post-documents-journals.md) in the business functionality content.
+You cannot import data to tables that contain posted entries, such as the tables for customer, vendor, and item ledger entries, so you should not include this data in your configuration package. You can add entries to these tables after you import the configuration package by using journals to post the entries. For more information, see [Posting Documents and Journals](/dynamics365/business-central/ui-post-documents-journals) in the business functionality content.
 
 ### Table names that contain special characters
 

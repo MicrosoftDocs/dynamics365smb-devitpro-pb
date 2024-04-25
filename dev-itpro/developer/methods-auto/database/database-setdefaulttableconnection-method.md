@@ -2,10 +2,7 @@
 title: "Database.SetDefaultTableConnection(TableConnectionType, Text [, Boolean]) Method"
 description: "Establishes a connection to an external database based on a previously registered connection of the specified type."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -28,13 +25,11 @@ Establishes a connection to an external database based on a previously registere
 ## Parameters
 *Type*  
 &emsp;Type: [TableConnectionType](../tableconnectiontype/tableconnectiontype-option.md)  
-The type of table connection as defined in the TableType property.
-        
+The type of table connection as defined in the TableType property.  
 
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The name of the external table connection. You must already have registered a table connection with this name.
-        
+The name of the external table connection. You must already have registered a table connection with this name.  
 
 *[Optional] Scoped*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  

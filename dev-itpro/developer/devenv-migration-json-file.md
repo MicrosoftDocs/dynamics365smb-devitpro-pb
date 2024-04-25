@@ -1,17 +1,13 @@
 ---
-title: "The Migration.json File"
-description: "Description of the json file for data migration for AL in Business Central."
+title: "Migration JSON file"
+description: "Description of the JSON file for data migration for AL in Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 06/22/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# The Migration.json File
+# Migration JSON file
 
 [!INCLUDE[2019_releasewave2_15.3_onprem](../includes/2019_releasewave2_15.3_onprem.md)]
 

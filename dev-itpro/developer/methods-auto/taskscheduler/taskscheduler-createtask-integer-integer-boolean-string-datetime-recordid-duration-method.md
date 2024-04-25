@@ -1,11 +1,8 @@
 ---
 title: "TaskScheduler.CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration) Method"
-description: "Adds a task to ensure that a codeunit is not run before the specified time."
+description: "Adds a task to be run by the task scheduler."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -16,7 +13,7 @@ author: SusanneWindfeldPedersen
 # TaskScheduler.CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration) Method
 > **Version**: _Available or changed with runtime version 7.0._
 
-Adds a task to ensure that a codeunit is not run before the specified time.
+Adds a task to be run by the task scheduler. The task is ensured to not run before the specified time. This method also allows you to set a timeout for the task.
 
 
 ## Syntax
@@ -26,33 +23,27 @@ Adds a task to ensure that a codeunit is not run before the specified time.
 ## Parameters
 *CodeunitId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-Specifies the ID of the codeunit to run.
-          
+Specifies the ID of the codeunit to run.  
 
 *FailureCodeunitId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
- Specifies the ID of the codeunit to run if the task fails. If you do not want to provide a failure codeunit, then use 0.
-          
+Specifies the ID of the codeunit to run if the task fails. If you do not want to provide a failure codeunit, then use 0.  
 
 *IsReady*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Sets the task to the ready state. A task cannot run unless it is ready.
-          
+Sets the task to the ready state. A task cannot run unless it is ready.  
 
 *Company*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-Specifies the company to run the task for. If you do not specify a company, the task will run in the user’s current company.
-          
+Specifies the company to run the task for. If you do not specify a company, the task will run in the user’s current company.  
 
 *NotBefore*  
 &emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
-Specifies the date and time that you want to run the task. When the task actually runs will depend on whether other tasks are running at the same time. The task will run the first opportunity on or after the date and time that you specify.
-          
+Specifies the date and time that you want to run the task. When the task actually runs will depend on whether other tasks are running at the same time. The task will run the first opportunity on or after the date and time that you specify.  
 
 *RecordID*  
 &emsp;Type: [RecordId](../recordid/recordid-data-type.md)  
-Specifies the recordID of the record that you want to run the task on.
-          
+Specifies the recordID of the record that you want to run the task on.  
 
 *Timeout*  
 &emsp;Type: [Duration](../duration/duration-data-type.md)  
@@ -67,11 +58,15 @@ Specifies the timeout of the created session. If not specified a default timeout
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
-Scheduled tasks are recorded in table **2000000175 Scheduled Task**.  For more information about tasks and task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
+## Remarks
 
-## See Also
+This version of the `TaskScheduler.CreateTask` method has the same semantics as the version without a timeout parameter. For more information and usage examples, see [CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId])](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md).
+
+## See also
+
+[CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId])](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md)   
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
+[Using the Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Configuring Business Central Server - Default Task Scheduler Session Timeout](../../../administration/configure-server-instance.md#Task)

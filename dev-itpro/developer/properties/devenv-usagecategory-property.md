@@ -1,11 +1,8 @@
 ---
 title: "UsageCategory Property"
-description: "Sets the department column for a searched page or report in the Web client."
+description: "Sets the department column for a searched page, report, or query in the web client."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -14,25 +11,26 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # UsageCategory Property
-> **Version**: _Available or changed with runtime version 1.0._
+> **Version**: _Available or changed with runtime version 12.0._
 
-Sets the department column for a searched page or report in the Web client.
+Sets the department column for a searched page, report, or query in the web client.
 
 ## Applies to
+-   Query
 -   Page
 -   Report
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**None**|The page or report is not included in a search.|
-|**Lists**|The page or report is listed as **Lists** under the **Pages and Tasks** category.|
-|**Tasks**|The page or report is listed as **Tasks** under the **Pages and Tasks** category.|
-|**ReportsAndAnalysis**|The page or report is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
-|**Documents**|The page or report is listed as **Documents** under the **Reports and Analysis** category.|
-|**History**|The page or report is listed as **Archive** under the **Reports and Analysis** category.|
-|**Administration**|The page or report is listed as **Administration** under the **Pages and Tasks** category.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**None**|runtime version 12.0|The page, report or query is not included in a search.|
+|**Lists**|runtime version 12.0|The page, report or query is listed as **Lists** under the **Pages and Tasks** category.|
+|**Tasks**|runtime version 12.0|The page, report or query is listed as **Tasks** under the **Pages and Tasks** category.|
+|**ReportsAndAnalysis**|runtime version 12.0|The page, report or query is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
+|**Documents**|runtime version 12.0|The page, report or query is listed as **Documents** under the **Reports and Analysis** category.|
+|**History**|runtime version 12.0|The page, report or query is listed as **Archive** under the **Reports and Analysis** category.|
+|**Administration**|runtime version 12.0|The query is listed as **Administration** under the **Pages and Tasks** category.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -58,7 +56,7 @@ The [AccessByPermission property](devenv-accessbypermission-property.md) and [Ap
 
 ## See Also
 
-[Adding Pages and Reports to Tell me](../devenv-al-menusuite-functionality.md)  
+[Add pages and reports to Tell me](../devenv-al-menusuite-functionality.md)  
 [Properties](devenv-properties.md)  
 [Page Object](../devenv-page-object.md)  
 [Report Object](../devenv-report-object.md)  

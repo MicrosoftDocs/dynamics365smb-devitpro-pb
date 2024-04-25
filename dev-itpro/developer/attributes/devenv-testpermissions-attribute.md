@@ -2,11 +2,7 @@
 title: "TestPermissions Attribute"
 description: "Specifies a value that can be used to determine which permission sets are used on tests that are run by a test method."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -39,6 +35,8 @@ Specifies a value that can be used to determine which permission sets are used o
 Specifies the permission sets used on tests that are run by the test method.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
 
 The **InheritFromTestCodeunit** option value for the *TestPermissions* argument is only relevant for test methods; not test codeunits. It specifies that a test method uses the TestPermissions property setting of the test codeunit to which it belongs. If you use this value on a test codeunit, the property will resolve to **Restrictive** at runtime.
 

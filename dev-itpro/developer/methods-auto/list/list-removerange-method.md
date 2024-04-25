@@ -2,10 +2,7 @@
 title: "List.RemoveRange(Integer, Integer) Method"
 description: "Removes a range of elements from the List."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,8 @@ An instance of the [List](list-data-type.md) data type.
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The one-based starting index of the range of elements to remove.
-        
+The one-based starting index of the range of elements to remove.  
+
 *Count*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of elements to remove.  

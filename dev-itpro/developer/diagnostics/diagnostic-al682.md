@@ -2,10 +2,7 @@
 title: "Compiler Error AL0682"
 description: "A DataItem or Column with name '{0}' could not be found in the target {1}."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 A DataItem or Column with name '{0}' could not be found in the target {1}.
+
 
 ## Description
 The reference DataItem or Column could not be found in the target report.  

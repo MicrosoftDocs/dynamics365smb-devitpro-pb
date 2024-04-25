@@ -2,11 +2,7 @@
 title: "Moving Tables and Fields to Extensions Down the Dependency Graph"
 description: Explains how to move tables and fields from an extension to another extension that is down the dependency graph.
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ---
@@ -73,7 +69,7 @@ The receiving extension will contain the table and fields that you want to move.
     - Increase the `"version"` value.
     - In the `"dependencies"` parameter, set up a dependency on the new receiving extension **Ext Y**.
 
-    For more information, see [App.json file](devenv-json-files.md#Appjson).
+    For more information, see [App.json file](devenv-json-files.md#appjson-file).
 3. Complete the following steps for **TableC**.
 
     1. Add a table extension object **TableExtC**.

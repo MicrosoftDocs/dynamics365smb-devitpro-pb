@@ -2,11 +2,9 @@
 title: salesQuote resource type  
 description: A sales quote object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.topic: reference
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -32,6 +30,12 @@ Represents a sales quote in [!INCLUDE[prod_short](../../../includes/prod_short.m
 
 ## Bound Actions
 
+The salesQuote resource type offers a bound action called `send` which sends the corresponding salesQuote batch.
+This is illustrated in the following example:
+`SEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesQuotes({id})/Microsoft.NAV.send`
+
+The response has no content; the response code is 204.
+
 The salesQuote resource type offers a bound action called `makeInvoice` which make invoices the corresponding salesQuote batch.
 This is illustrated in the following example:
 `MAKEINVOICE https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesQuotes({id})/Microsoft.NAV.makeInvoice`
@@ -44,25 +48,20 @@ This is illustrated in the following example:
 
 The response has no content; the response code is 204.
 
-The salesQuote resource type offers a bound action called `send` which sends the corresponding salesQuote batch.
-This is illustrated in the following example:
-`SEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesQuotes({id})/Microsoft.NAV.send`
-
-The response has no content; the response code is 204.
-
 ## Navigation
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[customer](dynamics_customer.md)|customer |Gets the customer of the salesQuote.|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the salesQuote.|
+|[dimensionValue](dynamics_dimensionvalue.md)|dimensionValue |Gets the dimensionvalue of the salesQuote.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the salesQuote.|
 |[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the paymentterm of the salesQuote.|
 |[shipmentMethod](dynamics_shipmentmethod.md)|shipmentMethod |Gets the shipmentmethod of the salesQuote.|
+|[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesQuote.|
 |[salesQuoteLines](dynamics_salesquoteline.md)|salesQuoteLines |Gets the salesquotelines of the salesQuote.|
 |[pdfDocument](dynamics_pdfdocument.md)|pdfDocument |Gets the pdfdocument of the salesQuote.|
 |[attachments](dynamics_attachment.md)|attachments |Gets the attachments of the salesQuote.|
-|[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesQuote.|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the salesQuote.|
 
 ## Properties
 
@@ -100,6 +99,8 @@ The response has no content; the response code is 204.
 |shipToCountry|string|Ship to country.|
 |shipToState|string|Ship to state.|
 |shipToPostCode|string|Ship to post code.|
+|shortcutDimension1Code|string||
+|shortcutDimension2Code|string||
 |currencyId|GUID|Specifies which currency the sales quote uses.|
 |currencyCode|string|The default currency code for the sales quote.|
 |paymentTermsId|GUID|Specifies which payment term the sales quote uses.|
@@ -156,6 +157,8 @@ Here is a JSON representation of the salesQuote resource.
     "shipToCountry": "string",
     "shipToState": "string",
     "shipToPostCode": "string",
+    "shortcutDimension1Code": "string",
+    "shortcutDimension2Code": "string",
     "currencyId": "GUID",
     "currencyCode": "string",
     "paymentTermsId": "GUID",

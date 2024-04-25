@@ -2,10 +2,7 @@
 title: "JsonArray.RemoveAt(Integer) Method"
 description: "Removes the token at the given index."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -42,6 +39,10 @@ The position of the element that will be removed.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
+> [!NOTE]  
+> The JsonArray is 0-based by design.
+
 1. The operation will fail if the Index is smaller than 0 or (greater or equal) than JsonArray.Count.
 2. Objects of type JsonArray represent a 0-based array.
 

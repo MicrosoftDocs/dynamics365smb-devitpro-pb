@@ -2,10 +2,7 @@
 title: "Record.CalcFields(Any [, Any,...]) Method"
 description: "Calculates the FlowFields in a record."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -31,6 +28,7 @@ An instance of the [Record](record-data-type.md) data type.
 *Field1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
   
+
 *[Optional] Field2*  
 &emsp;Type: [Any](../any/any-data-type.md)  
   

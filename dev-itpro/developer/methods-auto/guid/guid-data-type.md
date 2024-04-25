@@ -2,10 +2,7 @@
 title: "Guid Data Type"
 description: "Represents a 16 byte binary data type."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/23/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -37,7 +34,7 @@ The GUID data type is useful when you want to uniquely identify some data, so th
 
 You can assign and compare the Text data type and the GUID data type. Assigning a Text to a GUID can be done as follows:  
   
-```  
+```al
 MyTableRec.MyGuid  :=  MyTableRec.MyText;  
 ```  
 
@@ -50,13 +47,13 @@ The supported formats of `MyText` are:
 
 The following AL methods can be used with the GUID data type:  
   
-```  
+```al
 Guid := CreateGUID();  
 ```  
   
 This method creates a new unique GUID value. The value can then be assigned to a field of the GUID data type or of the Text data type.  
   
-```  
+```al 
 Ok := IsNullGUID(Guid);  
 ```  
   

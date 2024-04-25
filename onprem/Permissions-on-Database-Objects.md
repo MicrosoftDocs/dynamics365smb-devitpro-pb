@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: ab8c997f-b5f8-40b1-913d-0b8906418b41
 caps.latest.revision: 11
-manager: edupont
 ---
 # Permissions on Database Objects
 This section provides an overview of permissions and permission sets in [!INCLUDE[navnowlong](includes/navnowlong_md.md)]  

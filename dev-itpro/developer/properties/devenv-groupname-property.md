@@ -1,11 +1,8 @@
 ---
 title: "GroupName Property"
-description: "If the entitlement type is ConcurrentUserServicePlan, the GroupName determines which AAD group that users with this entitlement should be members of."
+description: "If the entitlement type is ConcurrentUserServicePlan, the GroupName determines which Microsoft Entra group that users with this entitlement should be members of."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -16,7 +13,7 @@ author: SusanneWindfeldPedersen
 # GroupName Property
 > **Version**: _Available or changed with runtime version 7.0._
 
-If the entitlement type is ConcurrentUserServicePlan, the GroupName determines which AAD group that users with this entitlement should be members of.
+If the entitlement type is ConcurrentUserServicePlan, the GroupName determines which Microsoft Entra group that users with this entitlement should be members of.
 
 ## Applies to
 -   Entitlement
@@ -25,8 +22,7 @@ If the entitlement type is ConcurrentUserServicePlan, the GroupName determines w
 
 ## Remarks
 
-> [!NOTE]  
-> In the current version of [!INCLUDE [prod_short](../../includes/prod_short.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. For more information, see [Entitlement Object](../devenv-entitlement-object.md).
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 ## See Also
 

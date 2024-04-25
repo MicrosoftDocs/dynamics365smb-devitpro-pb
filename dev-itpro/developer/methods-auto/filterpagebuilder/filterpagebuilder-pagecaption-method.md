@@ -1,11 +1,8 @@
 ---
 title: "FilterPageBuilder.PageCaption([Text]) Method"
-description: " Gets or sets the FilterPageBuilder UI caption."
+description: "Gets or sets the FilterPageBuilder UI caption."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -16,7 +13,7 @@ author: SusanneWindfeldPedersen
 # FilterPageBuilder.PageCaption([Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
- Gets or sets the FilterPageBuilder UI caption. Defaults to the resource text if not explicitly set.
+Gets or sets the FilterPageBuilder UI caption. Defaults to the resource text if not explicitly set.
 
 
 ## Syntax

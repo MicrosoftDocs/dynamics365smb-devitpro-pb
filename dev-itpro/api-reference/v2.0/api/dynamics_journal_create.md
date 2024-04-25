@@ -4,10 +4,8 @@ description: Creates a journal object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -27,10 +25,11 @@ POST businesscentralPrefix/companies({id})/journals({id})
 
 ## Request headers
 
-|Header        |Value                     |
-|--------------|--------------------------|
-|Authorization |Bearer {token}. Required. |
-|Content-Type  |application/json          |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **journal**, the **journal** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **journals** object.
@@ -47,9 +46,10 @@ Here is an example of a request.
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/journals
 Content-type: application/json
-```json
+
 {
-  "code": "DEFAULT"
+  "code": "DEFAULT",
+  "displayName": "Default Journal Batch"
 }
 ```
 

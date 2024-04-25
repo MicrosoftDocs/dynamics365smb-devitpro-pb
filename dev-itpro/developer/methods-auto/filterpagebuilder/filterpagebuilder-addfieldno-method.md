@@ -2,10 +2,7 @@
 title: "FilterPageBuilder.AddFieldNo(Text, Integer [, Text]) Method"
 description: "Adds a table field to the filter control for a table on the filter page."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,13 +27,11 @@ An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type
 
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The name that is assigned to the table in the filter control. This value must match the value of the Name parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.
-        
+The name that is assigned to the table in the filter control. This value must match the value of the Name parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.  
 
 *FieldNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number that is assigned to the field in the table as specified by the Field No. Property.
-        
+The number that is assigned to the field in the table as specified by the Field No. Property.  
 
 *[Optional] Filter*  
 &emsp;Type: [Text](../text/text-data-type.md)  

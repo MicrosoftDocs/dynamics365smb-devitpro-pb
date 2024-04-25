@@ -2,10 +2,7 @@
 title: "AppSourceCop Error AS0003"
 description: "The previous version of the extension, used as a baseline for detecting breaking changes, could not be found in the package cache folder."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

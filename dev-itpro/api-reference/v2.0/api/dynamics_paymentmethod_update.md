@@ -2,10 +2,8 @@
 title: UPDATE paymentMethods   
 description: Updates a paymentMethod object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -34,7 +32,7 @@ PATCH businesscentralPrefix/companies({id})/paymentMethods({id})
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
-If successful, this method returns a ```200 OK``` response code and an updated **paymentMethods ** object in the response body.
+If successful, this method returns a ```200 OK``` response code and an updated **paymentMethods** object in the response body.
 
 ## Example
 
@@ -47,7 +45,7 @@ PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/paymentMethods({i
 Content-type: application/json
 
 {
-  "displayName": "Personal Check Payment",
+  "displayName": "Personal Check Payment"
 }
 ```
 

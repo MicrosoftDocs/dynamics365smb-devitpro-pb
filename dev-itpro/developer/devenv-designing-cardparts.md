@@ -1,7 +1,6 @@
 ---
 title: "Designing CardParts"
 description: "Design and implementation tips for page part of type CardPart."
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: brobledodiaz
@@ -113,5 +112,5 @@ page 50102 "Customer Card"
 [Adding a FactBox to a page](devenv-adding-a-factbox-to-page.md)   
 [ListPart Pages](devenv-designing-listparts.md)   
 [AL Development Environment](devenv-reference-overview.md)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  
 

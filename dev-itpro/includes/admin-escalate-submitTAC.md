@@ -4,6 +4,9 @@ ms.topic: include
 ms.date: 12/29/2021
 ms.author: edupont
 ---
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment to open the environment details.
 2. In the **Support** menu, choose **New Support Request**.
 
@@ -19,6 +22,6 @@ You can find most of the necessary information in the [!INCLUDE [prodadmincenter
 > [!IMPORTANT]
 > [!INCLUDE [admin-supportplan](admin-supportplan.md)]
 
-The support person can be a member of the **Helpdesk agent** group in the customer's Azure AD tenant or a global administrator. For more information, see [Delegated Admin Access to Business Central Online](../administration/delegated-admin.md).  
+The support person can be a member of the **Helpdesk agent** group in the customer's Microsoft Entra tenant or a global administrator. For more information, see [Delegated Admin Access to Business Central Online](../administration/delegated-admin.md).  
 
 Microsoft Support will keep you updated on the status of your support request. You can also see the status in the Power Platform Admin Center. For more information, see [Power Platform Admin Center](/power-platform/admin/admin-documentation).  

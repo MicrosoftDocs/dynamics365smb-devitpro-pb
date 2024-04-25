@@ -2,10 +2,7 @@
 title: "DateFormula Data Type"
 description: "Represents a date formula that has the same capabilities as an ordinary input string for the CALCDATE Method (Date)."
 ms.author: solsen
-ms.custom: na
-ms.date: 05/18/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -48,8 +45,8 @@ In [!INCLUDE [prod_short](../../includes/prod_short.md)], weeks begin on Monday 
 This example requires that you create a DateFormulaVariable variable that is a DateFormula data type.  
 
 ```al
-if Format(DateFormulaVariable) = ' ' then  
-  Evaluate(DateFormulaVariable, '1W');  
+if Format(DateFormulaVariable) = '' then  
+  Evaluate(DateFormulaVariable, '<1W>');  
 ```  
 
 You must use the [Format Method](../system/system-format-joker-integer-string-method.md) to make a comparison with a text string. If you do not use this method, then the `if` statement will fail because you cannot compare a DateFormula data type with a Text data type.  

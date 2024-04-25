@@ -2,10 +2,7 @@
 title: "Clustered Property"
 description: "Sets a value that indicates whether the key also defines the clustered index in the database."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -16,7 +13,7 @@ author: SusanneWindfeldPedersen
 # Clustered Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Sets a value that indicates whether the key also defines the clustered index in the database.  
+Sets a value that indicates whether the key also defines the clustered index in the database.
 
 By default the primary key is configured as the clustered key.
 
@@ -60,7 +57,6 @@ keys
         Clustered = true;
     }
 }
-
 ```
 
 ## See Also  

@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: b35da374-6a7b-4987-8dc2-b96f571bc216
 caps.latest.revision: 19
-manager: edupont
 ---
 # Altering Databases - Collation Tab
 Changes the collation that is used by the database.  

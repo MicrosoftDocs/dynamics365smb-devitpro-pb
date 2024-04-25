@@ -1,15 +1,13 @@
 ---
 title: The SMB opportunity for app publishers 
 description: Learn about the business opportunity we see for software companies in the SMB space if you build your solution on Dynamics 365 Business Central.
-author: edupont04
-manager: edupont
-
+author: SusanneWindfeldPedersen
 ms.topic: conceptual
 ms.date: 05/30/2022
 ms.author: kurtju
 ---
 
-# The SMB Opportunity for App Publishers
+# The SMB opportunity for app publishers
 
 Our mission is to empower every individual and every organization on the planet to achieve more. Particularly, focusing on those 78 million small and mid-sized businesses (SMB) worldwide that passionately want more resiliency in their tech intensity and their capability of transforming products and services to face the challenges in the marketplace. To embrace the constant change and grow, every organization must have a business application that breaks down the silos of data, processes, and workflow in their operations. This insight enables employees to respond to daily challenges and opportunities with agility. Market research shows that the business applications opportunity for software companies in the SMB space is predicted to be 51 billion dollars by 2025. As a developer, you want to make sure you bet on the winning platform. The BizApps market growth in this area is 17%; however [!INCLUDE[prod_short](../includes/d365fin_md.md)] platform growth is increasing at 47%!  
 
@@ -17,7 +15,7 @@ Our mission is to empower every individual and every organization on the planet 
 
 [Dynamics 365 Business Central](https://dynamics.microsoft.com/business-central/partners/) is an all-in-one business management solution that connects operations for SMBs. It ensures business continuity with a cloud solution that connects sales, service, finance, and operations to help teams adapt faster and deliver result. [!INCLUDE[prod_short](../includes/prod_short.md)] provides app publishers with a modern business platform that can easily connect to, extend and build on—with little to no code required.  
 
-## Microsoft AppSource
+## The Microsoft commercial marketplace
 
 [Microsoft AppSource](https://appsource.microsoft.com/) is part of Microsoft's commercial marketplace where customers can find, try to get business solutions apps. It's the launch pad for your joint go-to-market activities with Microsoft and a medium for business growth. By using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on AppSource can be the centerpiece of your cloud business engine.  
 
@@ -40,13 +38,13 @@ Connect your existing online service with the [!INCLUDE[prod_short](../includes/
 
 - [Scaptify](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.scapta%7CAID.50395b48-f7b6-4445-96df-6faaa8c96deb%7CPAPPID.96da1317-c2e8-42ec-aa19-216e33d0da19?tab=Overview), which connects your Shopify store with Business Central  
 
-Learn more about the API to build connect apps: [Getting Started Developing Connect Apps](../devenv-develop-connect-apps.md)  
+Learn more about the API to build connect apps: [Get started developing Connect apps](../devenv-develop-connect-apps.md)  
 
 ### Add-on
 
 You can extend the default capabilities in [!INCLUDE[prod_short](../includes/prod_short.md)] to add extra productivity features or industry functionality to fit the needs of your customer base. The possibilities are plentiful.  
 
-In countries, where [!INCLUDE[prod_short](../includes/prod_short.md)] isn't localized by Microsoft, you can extend [!INCLUDE[prod_short](../includes/prod_short.md)] based on local requirements to respond to the regulatory or competitive needs of that market.  
+In countries/regions, where [!INCLUDE[prod_short](../includes/prod_short.md)] isn't localized by Microsoft, you can extend [!INCLUDE[prod_short](../includes/prod_short.md)] based on local requirements to respond to the regulatory or competitive needs of that market.  
 
 Here are a few examples of some apps that extend [!INCLUDE[prod_short](../includes/prod_short.md)]:
 

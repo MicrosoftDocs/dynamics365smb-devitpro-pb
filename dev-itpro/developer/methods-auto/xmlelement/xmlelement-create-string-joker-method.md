@@ -2,10 +2,7 @@
 title: "XmlElement.Create(Text, Any,...) Method"
 description: "Creates an XmlElement node."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,8 +23,7 @@ XmlElement :=   XmlElement.Create(Name: Text, Content: Any,...)
 ## Parameters
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The fully qualified name of the element to create.
-        
+The fully qualified name of the element to create.  
 
 *Content*  
 &emsp;Type: [Any](../any/any-data-type.md)  

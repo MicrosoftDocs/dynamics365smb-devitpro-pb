@@ -1,19 +1,19 @@
 ---
-title: Company Lifecycle Trace | Microsoft Docs
+title: Company lifecycle trace | Microsoft Docs
 description: Learn about the company lifecycle telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 12/21/2023
 ms.author: jswymer
 ---
 
-# Analyzing Company Lifecycle Trace Telemetry
+# Analyzing company lifecycle trace telemetry
 
 **INTRODUCED IN:** Business Central 2020 release wave 1, version 16.1
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 Company lifecycle telemetry gathers data about the success or failure of the following company-related operations:
 
@@ -33,12 +33,13 @@ Occurs when the company has been successfully created.
 |---------|-----|
 |message|**Company created: {companyName}** <br /><br />`{companyName}` indicates the name of the new company.|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**|
@@ -54,10 +55,6 @@ Occurs when the company has been successfully created.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took to create the company. The time has the format hh:mm:ss.sssssss.|
 
-<!--
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:21.0739451","Component version":"16.0.12630.0","Environment type":"Production","componentVersion":"16.0.12630.0","environmentType":"Production","":"Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version","AadTenantId":"common","aadTenantId":"common","companyName":"jsco","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","totalTime":"00:00:21.0739451","component":"Dynamics 365 Business Central Server","eventId":"LT0001","result":"Success","sqlExecutes":"5186","sqlRowsRead":"1574"}
--->
-
 ## Company creation canceled
 
 Occurs when creating a company was canceled. 
@@ -68,12 +65,13 @@ Occurs when creating a company was canceled.
 |---------|-----|
 |message|**Company creation canceled: {companyName}**<br /><br />`{companyName}` indicates the name of the company being created.|
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
@@ -99,12 +97,13 @@ Occurs when a company failed to be created.
 |---------|-----|
 |message|**Company creation failed: {companyName}**<br /><br />`{companyName}` indicates the name of the company being created.|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
@@ -120,10 +119,6 @@ Occurs when a company failed to be created.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to create the company before it failed. The time has the format hh:mm:ss.sssssss.|
 
-<!--
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:21.0739451","Component version":"16.0.12630.0","Environment type":"Production","componentVersion":"16.0.12630.0","environmentType":"Production","":"Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version","AadTenantId":"common","aadTenantId":"common","companyName":"jsco","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","totalTime":"00:00:21.0739451","component":"Dynamics 365 Business Central Server","eventId":"LT0001","result":"Success","sqlExecutes":"5186","sqlRowsRead":"1574"}
--->
-
 ## Company copied
 
 Occurs when a company has been copied from another company successfully.
@@ -134,12 +129,13 @@ Occurs when a company has been copied from another company successfully.
 |---------|-----|
 |message|**Company copied: {companyNameSource} to {companyNameDestination}**<ul><li>`{companyNameSource}` is name of the company that was copied.</li><li>`{companyNameDestination}`is the name of new company that was created.</li></ul>|
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyNameDestination|Specifies the name of the new company.|
 |companyNameSource|Specifies the name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
@@ -155,9 +151,6 @@ Occurs when a company has been copied from another company successfully.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took to copy the company. The time has the format hh:mm:ss.sssssss.|
 
-<!--
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:23.0278844","Component version":"16.0.12630.0","Environment type":"Production","componentVersion":"16.0.12630.0","environmentType":"Production","deprecatedKeys":"Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version","sqlRowsRead":"1435","AadTenantId":"common","aadTenantId":"common","sqlExecutes":"5265","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","totalTime":"00:00:23.0278844","eventId":"LT0004","result":"Success","companyNameDestination":"company2","companyNameSource":"company1"}
--->
 
 ## Company copy canceled
 
@@ -169,12 +162,14 @@ Occurs when a copying a company was canceled.
 |---------|-----|
 |message|**Company copied canceled: {source company name} to {destination company name}**<ul><li>`{companyNameSource}` is name of the company that was being copied.</li><li>`{companyNameDestination}`is the name of new company that was being created.</li></ul> |
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed operation, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
@@ -189,9 +184,6 @@ Occurs when a copying a company was canceled.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to do the operation. The time has the format hh:mm:ss.sssssss.|
 
-<!--
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:08.5394212","Component version":"16.0.12630.0","componentVersion":"16.0.12630.0","Environment type":"Production","environmentType":"Production","deprecatedKeys":"Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version","AadTenantId":"common","sqlExecutes":"909","sqlRowsRead":"1432","aadTenantId":"common","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","totalTime":"00:00:08.5394212","component":"Dynamics 365 Business Central Server","eventId":"LT0005","result":"NavNCLOperationCanceledException","companyNameDestination":"company2","companyNameSource":"company1"}
--->
 
 ## Company copy failed
 
@@ -203,12 +195,13 @@ Occurs when a company failed to be copied from another company.
 |---------|-----|
 |message|**Company copy failed: {companyNameSource} to {companyNameDestination}**<ul><li>`{companyNameSource}` is name of the company that was being copied.</li><li>`{companyNameDestination}`is the name of new company that was being created.</li></ul>|
 |severityLevel|**3**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
@@ -223,9 +216,6 @@ Occurs when a company failed to be copied from another company.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to create the company before it failed. The time has the format hh:mm:ss.sssssss.|
 
-<!--
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:23.0278844","Component version":"16.0.12630.0","Environment type":"Production","componentVersion":"16.0.12630.0","environmentType":"Production","deprecatedKeys":"Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version","sqlRowsRead":"1435","AadTenantId":"common","aadTenantId":"common","sqlExecutes":"5265","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","totalTime":"00:00:23.0278844","eventId":"LT0004","result":"Success","companyNameDestination":"company2","companyNameSource":"company1"}
--->
 
 ## Company deleted
 
@@ -237,12 +227,13 @@ Occurs when a company has been deleted successfully.
 |---------|-----|
 |message|**Company deleted: {companyName}**<br /><br />`{companyName}` indicates the name of the company that was deleted.|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
@@ -257,12 +248,6 @@ Occurs when a company has been deleted successfully.
 |totalTime|Specifies the amount of time it took to delete the company. The time has the format hh:mm:ss.sssssss.|
 
 
-
-<!--
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:14.6442254","Component version":"16.0.12630.0","componentVersion":"16.0.12630.0","Environment type":"Production","environmentType":"Production","deprecatedKeys":"Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version","companyName":"jsco","sqlExecutes":"2669","AadTenantId":"common","sqlRowsRead":"1432","aadTenantId":"common","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","totalTime":"00:00:14.6442254","component":"Dynamics 365 Business Central Server","eventId":"LT0007","result":"Success"}
--->
-
-
 ## Company deletion canceled
 
 Occurs when deleting a company failed was canceled.
@@ -273,12 +258,13 @@ Occurs when deleting a company failed was canceled.
 |---------|-----|
 |message|**Company deletion canceled: {companyName}**<br /><br />`{companyName}` indicates the name of the company that was being deleted.|
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
@@ -303,12 +289,13 @@ Occurs when a company failed to be deleted.
 |---------|-----|
 |message|**Company deletion failed: {companyName}**<br /><br />`{companyName}` indicates the name of the company that was being deleted.|
 |severityLevel|**3**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|

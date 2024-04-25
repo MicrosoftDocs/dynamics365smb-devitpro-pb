@@ -1,11 +1,7 @@
 ---
 title: "Creating and Customizing Cues"
 description: Get an overview of cues and action tiles and the tasks involved in customizing them on Role Centers.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -75,7 +71,7 @@ The first thing that you must do is to create a table that contains fields that 
 
     - Set the [FieldClass property](properties/devenv-fieldclass-property.md) to **FlowField** or **Normal**.  
   
-      If field is a FlowField, then set the `CalcFormula` property to calculate the Cue data. For more information, see [Calculation Formulas and the CalcFormula Property](devenv-calculation-formulas-and-the-calcformula-property.md).  
+      If field is a FlowField, then set the `CalcFormula` property to calculate the Cue data. For more information, see [CalcFormula property](properties\devenv-calcformula-property.md).  
   
 3. Add a primary key field for FlowFields.  
 
@@ -136,10 +132,10 @@ After you have a table for holding the Cue data, you create a page that you asso
     To initialize the fields, for example, you can add the following AL code to the [OnOpenPage Trigger](triggers-auto/page/devenv-onopenpage-page-trigger.md).     
 
     ```AL
-          RESET;
-        if not get then begin
-            INIT;
-            INSERT;
+        Rec.Reset();
+        if not Rec.Get() then begin
+            Rec.Init();
+            Rec.Insert();
         end;
     ```    
 
@@ -170,10 +166,10 @@ page 50105 SalesInvoiceCuePage
         
     trigger OnOpenPage();
     begin
-        RESET;
-        if not get then begin
-            INIT;
-            INSERT;
+        Rec.Reset();
+        if not Rec.Get() then begin
+            Rec.Init();
+            Rec.Insert();
         end;
     end;
 }

@@ -1,14 +1,10 @@
 ---
 title: "Database Wait Statistics in Dynamics 365 Business Central"
 description: "Description about wait statistics page"
-author: Javariya
+author: jswymer
 ms.date: 06/21/2022
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: 
-ms.author: a-jaaamir
-ms.custom: 
+ms.topic: conceptual
+ms.author: jswymer
 ---
 
 # Database Wait Statistics in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]

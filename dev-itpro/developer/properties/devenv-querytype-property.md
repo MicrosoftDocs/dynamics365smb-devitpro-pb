@@ -2,10 +2,7 @@
 title: "QueryType Property"
 description: "Sets the type of query to create."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,10 +20,10 @@ Sets the type of query to create.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Normal**|It is a normal query.|
-|**API**|The query is of the type API.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Normal**|runtime version 1.0|It is a normal query.|
+|**API**|runtime version 1.0|The query is of the type API.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

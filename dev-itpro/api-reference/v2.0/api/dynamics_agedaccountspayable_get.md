@@ -2,11 +2,9 @@
 title: Get agedAccountsPayable  
 description: Gets an aged accounts payable object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.topic: reference
+ms.devlang: al
+ms.date: 02/01/2023
 ms.author: solsen
 ---
 
@@ -19,7 +17,7 @@ Retrieve the properties and relationships of an aged accounts payable report obj
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-GET businesscentralPrefix/companies({id})/agedAccountsPayable
+GET businesscentralPrefix/companies({id})/agedAccountsPayables({vendorId})
 ```
 
 ## Request headers
@@ -32,7 +30,7 @@ GET businesscentralPrefix/companies({id})/agedAccountsPayable
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a ```200 OK``` response code and an **agedAccountsPayable** object in the response body.
+If successful, this method returns a ```200 OK``` response code and an **agedAccountsPayables** object in the response body.
 
 ## Example
 
@@ -40,7 +38,7 @@ If successful, this method returns a ```200 OK``` response code and an **agedAcc
 
 Here is an example of the request.
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/agedAccountsPayable
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/agedAccountsPayables({vendorId})
 ```
 
 **Response**

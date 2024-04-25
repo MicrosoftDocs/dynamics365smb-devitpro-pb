@@ -2,11 +2,7 @@
 title: "HttpHeaders.Add(Text, Text) Method"
 description: "Adds the specified header and its value into the HttpHeaders collection."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/02/2023
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -30,8 +26,7 @@ An instance of the [HttpHeaders](httpheaders-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The header to add to the collection.
-        
+The header to add to the collection.  
 
 *Value*  
 &emsp;Type: [Text](../text/text-data-type.md)  

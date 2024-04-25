@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: ad0c2641-1896-48c5-bc9d-2af5cb695900
 caps.latest.revision: 21
-manager: edupont
 ---
 # Custom Option
 The Custom option is available on the **Choose an installation option** page in [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup.  

@@ -2,11 +2,9 @@
 title: picture resource type  
 description: A picture object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.topic: reference
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -34,7 +32,7 @@ Represents a picture in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[item](dynamics_item.md)|item |Gets the item of the picture. For more information, see [Create item picture](../api/dynamics_item_create_picture.md).|
+|[item](dynamics_item.md)|item |Gets the item of the picture.|
 |[customer](dynamics_customer.md)|customer |Gets the customer of the picture.|
 |[contact](dynamics_contact.md)|contact |Gets the contact of the picture.|
 |[vendor](dynamics_vendor.md)|vendor |Gets the vendor of the picture.|

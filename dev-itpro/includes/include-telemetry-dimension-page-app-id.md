@@ -1,0 +1,1 @@
+Specifies the Id of the app/extension that was opened.

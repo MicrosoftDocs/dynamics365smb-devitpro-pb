@@ -1,11 +1,7 @@
 ---
 title: Install a version 21 update
 description: This article describes the tasks required for getting the monthly version 21 update applied to your Dynamics 365 Business Central on-premises.
-ms.custom: na
-ms.date: 05/12/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 01/04/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -30,7 +26,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - System Application extension
 
-    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When using the Microsoft Base Application, your solution uses the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
+    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When using the Microsoft Base Application, your solution uses the System Application. With a custom Base Application, your solution might or might not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
 
 - Base application extension
 
@@ -47,6 +43,8 @@ The application includes AL extensions that define the objects and code that mak
 ### Single-tenant and multitenant deployments
 
 [!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
+
+[!INCLUDE[server-web-server-instances-upgrade](../developer/includes/server-web-server-instances-upgrade.md)]
 
 ### Platform versus application update
 
@@ -81,7 +79,7 @@ $ExtName = "The name of an extension"
 $ExtVersion = "The version of an extension, for example, 1.0.0.0"
 $AddinsFolder = "The file path to the Add-ins folder of Business Central Server installation, for example: C:\Program Files\Microsoft Dynamics 365 Business Central\210\Service\Add-ins"
 $PartnerLicense= "The file path and name of the partner license"
-$CustmerLicense= "The file path and name of the cutomer license"
+$CustomerLicense= "The file path and name of the customer license"
 ```
 
 ## Download update package
@@ -95,6 +93,8 @@ The first thing to do is to download the update package that matches your Busine
     When extracted, the update includes the DVD folder. This folder contains the full Business Central product. For example, the folder includes the Business Central installation program (setup.exe), tools for upgrading to the platform, and the Microsoft extensions.
 
 When this step is completed, you can continue to update your Business Central solution to the new platform and application.
+
+[!INCLUDE[upgrade-copy-configuration-files](../developer/includes/upgrade-copy-configuration-files.md)]
 
 ## Prepare existing databases
 
@@ -171,6 +171,9 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
         - Server
         - Web Server Components.
 
+          > [!NOTE]
+          > When install the Web Server Components, a [!INCLUDE[webserverinstance](../developer/includes/webserverinstance.md)] instance with the same name that you define for the [!INCLUDE[server](../developer/includes/server.md)] instance will be created on Internet Information Services (IIS). If you're existing deployment has multiple web server instances that you want to reuse, you'll have to upgrade these instances later in this article.
+
     4. Select **Next**.
     5. On the **Specify parameters** page, set the fields as needed.
 
@@ -183,7 +186,11 @@ For more information, see [Installing Business Central Using Setup](../deploymen
 
 ## PLATFORM UPDATE
 
-Follow the next few tasks to convert your database to the new platform of the update. A multitenant deployment includes the application and tenant databases. The conversion updates the system tables of the database to the new schema (data structure) and provides the latest platform features and performance enhancements.
+Follow the next few tasks to convert your database to the new platform of the update. A multitenant deployment includes the application and tenant databases. Running the database conversion will:
+
+- Update the system tables of the database to the new schema (data structure)
+- Provide the latest platform features and performance enhancements
+- Automatically publish the system symbols for the new platform
 
 Also, to ensure that the existing published extensions work on the new platform, you'll recompile the extensions.
 
@@ -196,16 +203,16 @@ Also, to ensure that the existing published extensions work on the new platform,
 2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the database conversion to the new platform.
 
     ```powershell
-    Invoke-NAVApplicationDatabaseConversion -DatabaseServer $DatabaseServer -DatabaseName $TenantDatabase|$ApplicationDatabase [-Force]
+    Invoke-NAVApplicationDatabaseConversion -DatabaseServer $DatabaseServer -DatabaseName $TenantDatabase|$ApplicationDatabase -Force
     ```
 
     For example, in a single tenant deployment:
 
     ```powershell
-    Invoke-NAVApplicationDatabaseConversion -DatabaseServer $DatabaseServer -DatabaseName $TenantDatabase
+    Invoke-NAVApplicationDatabaseConversion -DatabaseServer $DatabaseServer -DatabaseName $TenantDatabase -Force
     ```
 
-    In a multitenant deployment, run this cmdlet against the application database and use the `-Force` parameter. For example:
+    In a multitenant deployment, run this cmdlet against the application database. For example:
 
     ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer $DatabaseServer -DatabaseName $ApplicationDatabase -Force
@@ -226,7 +233,9 @@ Also, to ensure that the existing published extensions work on the new platform,
     >
     > `Invoke-NAVApplicationDatabaseConversion : A technical upgrade of database <database name> on server '.\<database instance>' cannot be run, because the database's application version 'NNNNNN' is greater than or equal to the platform version 'NNNNNN'`
     >
-    > This is not an error, and you can continue installing the update. This message is recorded as a warning in the event log as well. This message indicates that the application database is already compatible with the new platform, which happens when the update does not make any schema changes to the system tables.
+    > This isn't an error. This message is recorded as a warning in the event log as well. This message indicates that the application database is already compatible with the new platform, which happens when the update does not make any schema changes to the system tables.
+    >
+    > You'll see this message if you ran the cmdlet without the `-Force` parameter. Run the cmdlet again, but be sure to include `-Force` parameter.
 
 ## Connect server instance to database
  
@@ -456,7 +465,7 @@ The Microsoft_Application extension was introduced in 15.3. In short, it's used 
 2. Synchronize the tenant database with the schema changes of the Microsoft_Application extension.
 
     ```powershell
-    Sync-NavApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name Application -Tenant $TenantId
+    Sync-NavApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name Application -Version $NewBcVersion
     ```
 
 3. Upgrade the Microsoft_Application extension on your tenants.
@@ -497,48 +506,11 @@ As an alternative, if you have the source for these extensions, you can build an
 
 ### <a name="controladdins"></a>Upgrade control add-ins
 
-The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins, like Microsoft.Dynamics.Nav.Client.BusinessChart, Microsoft.Dynamics.Nav.Client.VideoPlayer, and more. If your solution uses any of these control add-ins, upgrade them to the latest version.
-
-To upgrade the control add-ins, do the following steps:
-
-1. Open the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
-2. Search for and open the **Control Add-ins** page.
-3. Choose **Actions** > **Control Add-in Resource** > **Import**.
-4. Locate and select the .zip file for the control add-in and choose **Open**.
-
-    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\210\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
-5. After you've imported all the new control add-in versions, restart Business Central Server instance.
-
-As an alternative, you can use the [Set-NAVAddin cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navaddin) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For example, the following commands update the some of the control add-ins installed by default. Modify the commands to suit:
-
-```powershell
-Set-NAVAddIn -ServerInstance $BcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.BusinessChart' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip')
-Set-NAVAddIn -ServerInstance $BcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.FlowIntegration' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'FlowIntegration\Microsoft.Dynamics.Nav.Client.FlowIntegration.zip')
-Set-NAVAddIn -ServerInstance $BcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.OAuthIntegration' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'OAuthIntegration\Microsoft.Dynamics.Nav.Client.OAuthIntegration.zip')
-Set-NAVAddIn -ServerInstance $BcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.PageReady' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'PageReady\Microsoft.Dynamics.Nav.Client.PageReady.zip')
-Set-NAVAddIn -ServerInstance $BcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.PowerBIManagement' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'PowerBIManagement\Microsoft.Dynamics.Nav.Client.PowerBIManagement.zip')
-Set-NAVAddIn -ServerInstance $BcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.RoleCenterSelector' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'RoleCenterSelector\Microsoft.Dynamics.Nav.Client.RoleCenterSelector.zip')
-Set-NAVAddIn -ServerInstance $BcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.SatisfactionSurvey' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'SatisfactionSurvey\Microsoft.Dynamics.Nav.Client.SatisfactionSurvey.zip')
-Set-NAVAddIn -ServerInstance $BcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.VideoPlayer' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'VideoPlayer\Microsoft.Dynamics.Nav.Client.VideoPlayer.zip')
-Set-NAVAddIn -ServerInstance $BcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.WebPageViewer' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'WebPageViewer\Microsoft.Dynamics.Nav.Client.WebPageViewer.zip')
-Set-NAVAddIn -ServerInstance $BcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
-```
+[!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
 ### Update application version
 
-This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version. The **Help and Support** page in the client displays an application version, such as 16.1.2345.6. This version number isn't updated automatically when you install an update.
-
-However, the [!INCLUDE[server](../developer/includes/server.md)] includes a configuration setting called **Solution Version Extension** (SolutionVersionExtension). This setting lets you specify an extension whose version number will show as the Application Version on the client's **Help and Support** page. Typically, you'd use the extension considered to be your solution's base application. You set **Solution Version Extension** to ID of the extension. For example, if your solution uses the Microsoft Base Application, set the value to `437dbf0e-84ff-417a-965d-ed2bb9650972`.
-
-You can set **Solution Version Extension** by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet of the [!INCLUDE[admin shell](../developer/includes/adminshell.md)].
-
-The following example uses the Set-NAVServerConfiguration cmdlet to set the **Solution Version Extension** to the Microsoft Base Application:
-
-```powershell  
-Set-NAVServerConfiguration -ServerInstance $BcServerInstance -KeyName SolutionVersionExtension -KeyValue 437dbf0e-84ff-417a-965d-ed2bb9650972 -ApplyTo All  
-```
-
-For more information about how to configure a server instance, see [Configuring Business Central Server](../administration/configure-server-instance.md).
+[!INCLUDE[upgrade-change-application-version](../developer/includes/upgrade-change-application-version.md)]
 
 ### Import the customer license
 
@@ -546,13 +518,18 @@ Import the customer license by using the [Import-NAVServerLicense cmdlet](/power
 
 ```powershell
 Import-NAVServerLicense -ServerInstance $BcServerInstance -LicenseFile $CustomerLicense
+```
+
+```powershell
 Restart-NAVServerInstance -ServerInstance $BcServerInstance
 ```
 
-## See Also
+[!INCLUDE[upgrade-web-server-instances](../developer/includes/upgrade-web-server-instances.md)]
 
-[Dynamics 365 Business Central On-Premises 2022 Release Wave 1 Updates](../deployment/update-versions-20.md)  
-[Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v20.md)  
+## See also
+
+[Dynamics 365 Business Central on-premises 2022 Release Wave 1 Updates](../deployment/update-versions-20.md)  
+[Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
 [Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  

@@ -2,10 +2,7 @@
 title: "Page.RunModal(Integer [, Record] [, Any]) Method"
 description: "Creates, opens, and closes a page that you specify."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,12 +23,12 @@ Creates, opens, and closes a page that you specify. When a page is run modally, 
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of the page that you want to run.
-        
+The number of the page that you want to run.  
+
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
-By default, this method shows the record that was last displayed on the page. For each object, information is stored about the most recently shown record and the attached key and filters. Use this optional parameter to select a specific record to display on the page. The record must be of the same type as the table that is attached to the page. When the record is displayed, the key and filters that are attached to the record are used.
-        
+By default, this method shows the record that was last displayed on the page. For each object, information is stored about the most recently shown record and the attached key and filters. Use this optional parameter to select a specific record to display on the page. The record must be of the same type as the table that is attached to the page. When the record is displayed, the key and filters that are attached to the record are used.  
+
 *[Optional] Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 Use this optional parameter to select a specific field which will be in focus.  

@@ -1,0 +1,1 @@
+Specifies the version of the app/extension that the page belongs to.

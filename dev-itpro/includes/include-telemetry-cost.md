@@ -1,0 +1,3 @@
+[!INCLUDE[appinsights](azure-appinsights-name.md)] is billed based on the volume of telemetry data your application sends (data ingestion) and how long time you want data to be available (data retention). 
+
+Check the [!INCLUDE[appinsights](azure-appinsights-name.md)] documentation for up-to-date information on pricing: [https://azure.microsoft.com/pricing/details/monitor/](https://azure.microsoft.com/pricing/details/monitor/).

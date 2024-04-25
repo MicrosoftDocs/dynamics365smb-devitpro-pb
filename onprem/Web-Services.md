@@ -7,10 +7,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 35c974ac-f27f-4c60-86ee-85525ce06cd9
 caps.latest.revision: 29
-manager: edupont
 ---
 # Working with Dynamics NAV Web Services
 The following sections provide an overview of the documentation for web services in [!INCLUDE[navnowlong](includes/navnowlong_md.md)].  

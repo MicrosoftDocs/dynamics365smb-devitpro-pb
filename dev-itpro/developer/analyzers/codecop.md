@@ -2,10 +2,7 @@
 title: "CodeCop Analyzer"
 description: "CodeCop is an analyzer that enforces the official AL Coding Guidelines."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,6 +27,10 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0021](codecop-aa0021.md)|Variable declarations should be ordered by type.|Readability|Warning|
 |[AA0022](codecop-aa0022.md)|Substitute the IF THEN ELSE structure with a CASE.|Readability|Warning|
 |[AA0040](codecop-aa0040.md)|Avoid using nested WITH statements.|Readability|Warning|
+|[AA0050](codecop-aa0050.md)|Permission set extensions should not include permissions for objects defined in another application.|Design|Warning|
+|[AA0051](codecop-aa0051.md)|Permission set extensions should not include permission sets defined in another application.|Design|Warning|
+|[AA0052](codecop-aa0052.md)|Permission set extensions should not include permission sets which include permissions for objects defined in another application.|Design|Warning|
+|[AA0053](codecop-aa0053.md)|Permission set extensions should not include wildcard permissions.|Design|Warning|
 |[AA0072](codecop-aa0072.md)|The name of variables and parameters must be suffixed with the type or object name.|Readability|Info|
 |[AA0073](codecop-aa0073.md)|The name of temporary variable must be prefixed with Temp.|Readability|Warning|
 |[AA0074](codecop-aa0074.md)|TextConst and Label variable names should have an approved suffix.|Readability|Warning|
@@ -55,7 +56,6 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0199](codecop-aa0199.md)|Use only a correct order for ApplicationArea.|Design|Warning|
 |[AA0200](codecop-aa0200.md)|When ApplicationArea is set to 'All', no other values for ApplicationArea should be specified.|Design|Warning|
 |[AA0201](codecop-aa0201.md)|When ApplicationArea is set to 'Basic', you must also specify 'Suite'.|Design|Warning|
-|[AA0462](codecop-aa0462.md)|The CalcDate should only be used with DataFormula variables. Alternatively the string should be enclosed using the <> symbols.|Localizability|Warning|
 |[AA0202](codecop-aa0202.md)|To avoid confusion, do not give local variables the same name as fields, methods, or actions in the same scope.|Design|Warning|
 |[AA0203](codecop-aa0203.md)|To avoid confusion, do not give methods the same name as fields or actions in the same scope.|Design|Warning|
 |[AA0204](codecop-aa0204.md)|To avoid confusion, do not give global variables the same name as fields, methods, or actions in the same scope.|Design|Warning|
@@ -66,7 +66,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0211](codecop-aa0211.md)|Avoids a runtime error from using CalcFields on a field that is not a FlowField or a field of type Blob.|Design|Warning|
 |[AA0213](codecop-aa0213.md)|Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted.|Design|Warning|
 |[AA0214](codecop-aa0214.md)|The local record should be modified before saving to the database.|Design|Warning|
-|[AA0215](codecop-aa0215.md)|Follow [the style guide](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.|Readability|Warning|
+|[AA0215](codecop-aa0215.md)|Follow [the style guide](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.|Readability|Warning|
 |[AA0216](codecop-aa0216.md)|Use a text constant for passing user messages and errors without concatenations.|Localizability|Warning|
 |[AA0217](codecop-aa0217.md)|Use a text constant or label for format string in StrSubstNo.|Localizability|Warning|
 |[AA0218](codecop-aa0218.md)|You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects.|Localizability|Warning|
@@ -84,15 +84,19 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0231](codecop-aa0231.md)|StrSubstNo or string concatenation must not be used as a parameter in the Error method.|Design|Warning|
 |[AA0232](codecop-aa0232.md)|The FlowField of a table should be indexed.|Design|Info|
 |[AA0233](codecop-aa0233.md)|Use Get(), FindFirst() and FindLast() without Next() method.|Design|Warning|
-|[AA0235](codecop-aa0235.md)|When using 'OnInstallPerCompany' you should also add 'Company-Initialize'::'OnCompanyInitialize' event subscriber.|Design|Info|
+|[AA0234](codecop-aa0234.md)|You must write a tooltip in the Tooltip property for all fields on table objects.|Localizability|Warning|
+|[AA0235](codecop-aa0235.md)|When using 'OnInstallAppPerCompany' you should also add 'Company-Initialize'::'OnCompanyInitialize' event subscriber.|Design|Info|
 |[AA0237](codecop-aa0237.md)|The name of non-temporary variables must not be prefixed with Temp.|Readability|Warning|
 |[AA0240](codecop-aa0240.md)|Email and Phone No must not be present in any part of the source code.|Design|Warning|
-|[AA0241](codecop-aa0241.md)|Use all lowercase letters for reserved language keywords.|Readability|Warning|
+|[AA0241](codecop-aa0241.md)|Use all lowercase letters for reserved language keywords.|Readability|Hidden|
 |[AA0242](codecop-aa0242.md)|Limit JIT loads by selecting all fields for load.|Design|Warning|
 |[AA0243](codecop-aa0243.md)|Running an upgrade codeunit is not allowed.|Design|Warning|
 |[AA0244](codecop-aa0244.md)|Do not use identical names for parameters and global variables.|Design|Warning|
 |[AA0245](codecop-aa0245.md)|To avoid confusion, do not give parameters the same name as fields, methods, or actions in the same scope.|Design|Warning|
+|[AA0246](codecop-aa0246.md)|Suppressing all diagnostics is not allowed.|Design|Warning|
+|[AA0247](codecop-aa0247.md)|Use namespaces.|Design|Info|
 |[AA0448](codecop-aa0448.md)|You must use the FieldCaption method instead of the FieldName method and TableCaption method instead of TableName method.|Localizability|Warning|
+|[AA0462](codecop-aa0462.md)|The CalcDate should only be used with DataFormula variables. Alternatively the string should be enclosed using the <> symbols.|Localizability|Warning|
 |[AA0470](codecop-aa0470.md)|Placeholders should have a comment explaining their content.|Localizability|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

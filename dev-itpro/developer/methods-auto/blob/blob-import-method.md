@@ -2,10 +2,7 @@
 title: "Blob.Import(Text) Method"
 description: "Imports a binary large object (BLOB) from a file."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -35,8 +32,7 @@ An instance of the [Blob](blob-data-type.md) data type.
 The path and name of the BLOB that you want to import. When you enter the path, consider the following shortcuts:
 -   You can omit the drive letter if the command is located on the current drive.
 -   You can omit the full path if the command is located in the current directory.
--   You can enter only the subdirectory name if the command is located in a subdirectory of the current directory.
-      
+-   You can enter only the subdirectory name if the command is located in a subdirectory of the current directory.  
 
 
 ## Return Value

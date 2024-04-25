@@ -7,10 +7,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: d6add43c-5e40-4a6d-9de9-27f5b09f2eeb
 caps.latest.revision: 14
-manager: edupont
 ---
 # Object and Field Numbering Conventions
 Each object and field in [!INCLUDE[navnow](includes/navnow_md.md)] is identified by a number that is stored in its [ID Property](ID-Property.md). This topic describes the numbering scheme for the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)]. Numbering conventions that are used in the [!INCLUDE[demolong](includes/demolong_md.md)] and guidelines for objects and fields that are outside the demo range are described.  

@@ -2,10 +2,7 @@
 title: "XmlElement.GetChildElements(Text, Text) Method"
 description: "Gets a list containing the child elements for this element, in document order."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,7 @@ An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 *LocalName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The local name of the elements to retrieve.
-        
+The local name of the elements to retrieve.  
 
 *NamespaceUri*  
 &emsp;Type: [Text](../text/text-data-type.md)  

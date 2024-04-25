@@ -2,10 +2,7 @@
 title: "RecordRef.Find([Text]) Method"
 description: "Finds a record in a table based on the values stored in the key fields."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -36,8 +33,7 @@ Specifies how to perform the search. The table will be searched until the record
 -   \<  search for a record that is less than the key values
 -   +  search for the last record in the table (+ can only be used alone)
 -   -  search for the first record in the table (- can only be used alone)
-You can combine the '=', '\>', and '\<' characters. If this parameter contains '=', '\>', or '\<', then you must assign value to all fields of the current and primary keys before you call FIND.
-  
+You can combine the '=', '\>', and '\<' characters. If this parameter contains '=', '\>', or '\<', then you must assign value to all fields of the current and primary keys before you call FIND.  
 
 
 ## Return Value

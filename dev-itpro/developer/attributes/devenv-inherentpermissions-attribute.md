@@ -2,11 +2,7 @@
 title: "InherentPermissions Attribute"
 description: "Specifies the permissions assigned to the scope of the method."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/05/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 10/18/2022
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -43,13 +39,30 @@ Specifies the ID of the object that permissions are assigned to. You can specify
 
 *Permissions*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
-Specifies the permission values. You can specify the permissions using the syntax '<permission value>'.  
+Specifies the permission values. You can specify the permissions using the syntax `<permission value>`.  
 
 *[Optional] InherentPermissionsScope*  
 &emsp;Type: [InherentPermissionsScope](../methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md)  
 Specifies the scope of the permissions that are assigned (Entitlements, Permissions or Both).  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+For information about the `<permission value>` syntax, refer to [permissions values](../properties/devenv-permissions-property.md#values) or [permissions on objects](../devenv-permissions-on-database-objects.md#permissions-on-objects).
+
+## Example 
+
+```AL
+[InherentPermissions (PermissionObjectType::Table, Database::"Customer", 'r', InherentPermissionsScope::Both)]
+```
+
+> [!NOTE]  
+> Specifying `InherentPermissionsScope` is optional and the default is *Both* that includes permissions and entitlements. To read about different types of scope, see [InherentPermissionsScope Option](../methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md).
+
+> [!NOTE]
+> You can use inherent permissions only for objects within the same extension.
+
 ## See Also  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

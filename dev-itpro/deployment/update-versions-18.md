@@ -2,7 +2,6 @@
 title: "Updates for the Business Central 2021 Release Wave 1 version"
 description: "Learn about the updates for Dynamics 365 Business Central 2021 Release Wave 1 on-premises deployments."
 author: jswymer
-ms.custom: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 09/01/2022
@@ -20,12 +19,13 @@ You should always install the latest update.
 
 ## Available updates for Business Central 2021 Release Wave 1
 
-The following table lists the updates that have been released for 2021 release wave 1 of Business Central (version 18). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
+The following table lists the updates that have been released for 2021 release wave 1 of Business Central (version 18). The updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5019239](https://support.microsoft.com/help/5019239)|Update 18.18 |October 2022|Application 18.18.46920</br>Platform Build 18.0.46905|
 |[5017793](https://support.microsoft.com/help/5017793)|Update 18.17 |September 2022|Application 18.17.45552</br>Platform Build 18.0.45520|
 |[5017015](https://support.microsoft.com/help/5017015)|Update 18.16 |August 2022|Application 18.16.44351</br>Platform Build 18.0.44303|
 |[5016302](https://support.microsoft.com/help/5016302)|Update 18.15 |July 2022|Application 18.15.43047</br>Platform Build 18.0.43010|
@@ -53,7 +53,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Resources for Help and Support](../help-and-support.md)  
 [System Requirements April '19](system-requirement-business-central.md)  
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
-[Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
+[Countries/regions and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
 [Dynamics NAV developer and IT Pro content](/dynamics-nav/index)

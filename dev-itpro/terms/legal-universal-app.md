@@ -4,11 +4,7 @@ description: Get a list of links to legal information for the Business Central u
 author: tsiggaar
 ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-manager: edupont
 ---
 # Legal Resources for Microsoft Dynamics NAV Universal Apps
 

@@ -1,16 +1,12 @@
 ---
-title: "Actions Overview"
-description: Displaying actions on the action bar for pages in Business Central.
-ms.custom: na
-ms.date: 09/12/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Actions overview
+description: Displaying actions on the action bar for pages in Business Central
+ms.date: 11/30/2022
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ---
 
-# Actions Overview
+# Actions overview
 
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page, referred to as the action bar. In this article, you learn about different types of actions, and how you can enable users to quickly locate the actions they want to use.  
   
@@ -38,7 +34,6 @@ For more information about actions used on the role center page, see [Designing 
  
 ## Types of Actions
 
-=======
 > [!TIP]  
 > If you used to work in [!INCLUDE[dyn_nav_md](includes/dyn_nav_md.md)], you can get an overview of the mapping between actions in the [Differences in the Development Environments](devenv-differences.md#pages) topic.
 
@@ -46,8 +41,12 @@ Each page has a different set of actions depending on the page type, and the pro
   
 Each process in an organization has several actions associated with it. You should try to create a full set of actions that mirror all tasks and processes that are performed.  
   
-For example, the Sales Orders list page at CRONUS International contains all actions related to processing sales orders. During user configuration and personalization, some of these actions may be hidden or promoted to the ribbon. Therefore, you must create a full set of actions for the customer. 
+For example, the Sales Orders list page at CRONUS International contains all actions related to processing sales orders. During user configuration and personalization, some of these actions might be hidden or promoted to the ribbon. Therefore, you must create a full set of actions for the customer. 
+
+> [!NOTE]  
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](devenv-promoted-actions.md).
  
+
 Pages can have the following actions as described in each section below.  
   
 ## Actions menu
@@ -88,7 +87,7 @@ For example, on the Customers page, if the order processor wants to create a new
 The Navigate menu is displayed after the Actions menu in the action bar. Rather than providing tasks for the user, this menu provides additional information by taking the user to a specific page in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. To add a page link in the Navigate menu, you must use the `navigation` action area. These actions act like a bookmark to enable quick access to view a page. <!-- For examples on how to link pages in the Navigate menu, see [Adding Page Links to Navigate Menu](devenv-adding-page-links-to-navigate-menu.md). -->
   
 > [!NOTE]  
-> You should not add a Navigation action to a Role Center page.  
+> You shouldn't add a Navigation action to a Role Center page.  
   
 ## Report menu
 
@@ -109,7 +108,8 @@ The Report menu is displayed after the Navigate menu in the action bar. The Repo
 > [!NOTE]  
 > With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](devenv-promoted-actions.md).
 
-Promoted actions are actions that are set up on the Actions, Navigate, or Reports menus in the action bar, but are also configured to display in custom menus in the action bar. Although the actions are set up on the Actions, Navigate, or Report menus, you can choose to hide them on these menus and only show them in custom menus.
+Promoted actions are actions that are set up on the Actions, Navigate, or Reports menus in the action bar, but are also configured to display in custom menus in the action bar. Although the actions are set up on the Actions, Navigate, or Report menus, you can choose to hide them on these menus and only show them in custom menus. Promoted actions can be used on Card, Document, List, ListPlus, and Worksheet pages to provide quick access to common tasks that appear under the Home tab. 
+
 
 <!-- 
 ### Home menu 
@@ -120,7 +120,7 @@ The Home menu is always displayed first so promoted actions provide quick access
 
 [!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, it's possible to define page actions that trigger a Power Automate flow using custom actions. Custom actions are defined next to other actions, but use the `customaction` keyword instead. The syntax is as follows:
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, it's possible to define page actions that trigger a Power Automate instant flow by using custom actions. Custom actions are defined next to other actions, but use the `customaction` keyword instead. The syntax is as follows:
 
 ```al
 customaction(MyFlowAction)
@@ -128,10 +128,16 @@ customaction(MyFlowAction)
     CustomActionType = Flow;
     FlowId = '<the-GUID-identifying-the-Power-Automate-Flow>';
     FlowEnvironmentId = '<the-GUID-identifying-the-Power-Automate-environment>';
+    
 }
 ```
 
 For a `customaction`, the [CustomActionType Property](properties/devenv-customactiontype-property.md) must be set to `Flow`. The [FlowId Property](properties/devenv-flowid-property.md) and the [FlowEnvironmentId Property](properties/devenv-flowenvironmentid-property.md) must specify the IDs of the flow and the environment of the flow. These properties make up the target flow identity, allowing the client to trigger the flow when the custom action is invoked.
+
+> [!TIP]
+> You can get the flow and environment IDs in Power Automate. Sign in to [Power Automate](https://powerautomate.com) and open the flow for editing. Then, get the environment ID and flow ID from the URL in the browser address, which has a format like: `https://make.powerautomate.com/environments/<environment ID>/flows/<environment ID>`.
+
+To learn more about Power Automate flows with Business Central, see [Power Automate Integration Overview](../powerplatform/power-automate-overview.md). 
 
 ## Grouping Actions in Submenus
 
@@ -174,11 +180,11 @@ actions
 
 ## Actions at runtime  
  
-An action can trigger code to run, such as posting a document or otherwise modifying a record in a table. When a user chooses an action, one of the following pieces of logic will happen in addition to the code that the action itself triggers:  
+An action can trigger code to run, such as posting a document or otherwise modifying a record in a table. When a user chooses an action, one of the following pieces of logic happens in addition to the code that the action itself triggers:  
   
 - If the page is empty and no longer shows any records, the page is reinitialized with default values.  
   
-- If the page does show records, and the current state is within the page filters boundary, the **OnAfterGetRecord** trigger is run on the page.  
+- If the page shows records, and the current state is within the page filters boundary, the **OnAfterGetRecord** trigger is run on the page.  
   
 - If the current record that the page showed is now outside the filter but there are other records within the filter, the **OnFindRecord** trigger is called, and the **OnAfterGetRecord** trigger is run on the next record with the given filters.  
   
@@ -196,7 +202,7 @@ end;
 
 ## See Also
 
-[AL Development Environment](devenv-reference-overview.md)  
-[Developing Extensions in AL](devenv-dev-overview.md)  
-[Pages Overview](devenv-pages-overview.md)  
-[Promoted Actions](devenv-promoted-actions.md)
+[AL development environment](devenv-reference-overview.md)  
+[Developing extensions in AL](devenv-dev-overview.md)  
+[Pages overview](devenv-pages-overview.md)  
+[Promoted actions](devenv-promoted-actions.md)

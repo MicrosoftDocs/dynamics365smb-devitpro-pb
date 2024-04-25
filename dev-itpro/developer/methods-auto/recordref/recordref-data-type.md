@@ -2,10 +2,7 @@
 title: "RecordRef Data Type"
 description: "References a record in a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -20,6 +17,7 @@ References a record in a table.
 
 
 
+## Instance methods
 The following methods are available on instances of the RecordRef data type.
 
 |Method name|Description|
@@ -55,7 +53,8 @@ The following methods are available on instances of the RecordRef data type.
 |[Find([Text])](recordref-find-method.md)|Finds a record in a table based on the values stored in the key fields.|
 |[FindFirst()](recordref-findfirst-method.md)|Finds the first record in a table based on the current key and filter.|
 |[FindLast()](recordref-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
-|[FindSet([Boolean] [, Boolean])](recordref-findset-method.md)|Finds a set of records in a table based on the current key and filter. FINDSET can only retrieve records in ascending order.|
+|[FindSet([Boolean])](recordref-findset-boolean-method.md)|Finds a set of records in a table based on the current key and filter. FINDSET can only retrieve records in ascending order.|
+|[FindSet(Boolean, Boolean)](recordref-findset-boolean-boolean-method.md)|Finds a set of records in a table based on the current key and filter. FindSet can only retrieve records in ascending order.|
 |[Get(RecordId)](recordref-get-method.md)|Gets a record based on the ID of the record.|
 |[GetBySystemId(Guid)](recordref-getbysystemid-method.md)|Gets a record based on the ID of the record. The RecordRef must already be opened.|
 |[GetFilters()](recordref-getfilters-method.md)|Determines which filters have been applied to the table referred to by the RecordRef.|
@@ -83,6 +82,7 @@ The following methods are available on instances of the RecordRef data type.
 |[Number()](recordref-number-method.md)|Gets the table ID (number) of the table that contains the record that was referred to by the RecordRef.|
 |[Open(Integer [, Boolean] [, Text])](recordref-open-method.md)|Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.|
 |[ReadConsistency()](recordref-readconsistency-method.md)|Gets a value indicating whether read consistency is enabled.|
+|[ReadIsolation([IsolationLevel])](recordref-readisolation-method.md)|Gets or sets the read isolation level.|
 |[ReadPermission()](recordref-readpermission-method.md)|Determines if you can read from a table.|
 |[RecordId()](recordref-recordid-method.md)|Gets the RecordID of the record that is currently selected in the table. If no table is selected, an error is generated.|
 |[RecordLevelLocking()](recordref-recordlevellocking-method.md)|Gets a value indicating whether record level locking is enabled.|
@@ -93,7 +93,8 @@ The following methods are available on instances of the RecordRef data type.
 |[SetPermissionFilter()](recordref-setpermissionfilter-method.md)|Applies the user's security filter to the referenced record. The security filter is combined with any other filters that are placed on the record with SetFilter or SetRange. The combined filter will not include any records outside the range of the security filter and this will prevent a runtime permission error from occuring when the record is read. If the permission filter is not set, an error can occur if you attempt to read a record that is outside the range of the user's security filter.|
 |[SetPosition(Text)](recordref-setposition-method.md)|Sets the fields in a primary key on a record to the values specified in the String parameter. The remaining fields are not changed.|
 |[SetRecFilter()](recordref-setrecfilter-method.md)|Sets a filter on a record that is referred to by a RecordRef.|
-|[SetTable(Record)](recordref-settable-method.md)|Sets the table to which a Record variable refers as the same table as a RecordRef variable.|
+|[SetTable(Record)](recordref-settable-table-method.md)|Sets the table to which a Record variable refers as the same table as a RecordRef variable.|
+|[SetTable(Record, Boolean)](recordref-settable-table-boolean-method.md)|Sets the table to which a Record variable refers as the same table as a RecordRef variable.|
 |[SetView(Text)](recordref-setview-method.md)|Sets the current sort order, key, and filters on a table.|
 |[SystemCreatedAtNo()](recordref-systemcreatedatno-method.md)|Gets the field number that is used by the SystemCreatedAt field. The SystemCreatedAt field is a system field that the platform adds to all table objects.|
 |[SystemCreatedByNo()](recordref-systemcreatedbyno-method.md)|Gets the field number that is used by the SystemCreatedBy field. The SystemCreatedBy field is a system field that the platform adds to all table objects.|
@@ -106,10 +107,11 @@ The following methods are available on instances of the RecordRef data type.
 
 ## Remarks 
  
-The RecordRef object can refer to any table in the database. Use the [Open method](recordref-open-method.md) to use the table number to select the table that you want to access, or use the [GetTable method](recordref-gettable-method.md) to use another record variable to select the table that you want to access.  
+The `RecordRef` object can refer to any table in the database, if the extension target in [app.json](../../devenv-json-files.md#appjson-file) doesn't conflict with the field/table [scope](../../attributes/devenv-scope-attribute.md). Example, an extension with target `Cloud` can't use `RecordRef` to access a table with scope `OnPrem`.
+Use the [Open method](recordref-open-method.md) to use the table number to select the table that you want to access, or use the [GetTable method](recordref-gettable-method.md) to use another record variable to select the table that you want to access.  
   
-If one RecordRef variable is assigned to another RecordRef variable, then they both refer to the same table instance. 
+If one `RecordRef` variable is assigned to another `RecordRef` variable, then they both refer to the same table instance. 
 
-## See Also  
-[Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+## See also  
+[Get started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  

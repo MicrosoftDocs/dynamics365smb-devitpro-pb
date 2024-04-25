@@ -36,9 +36,13 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "author": "jswymer", 
+      "author": "jswymer",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
-      "searchScope": ["DynamicsNAV"],
+      "searchScope": [ "DynamicsNAV" ],
+      "search.app": [
+        "businesscentral",
+        "businesscentral-docs"
+      ],
       "titleSuffix": "Dynamics NAV",
       "breadcrumb_path": "/dynamics-nav/bread/toc.json"
     },

@@ -2,10 +2,7 @@
 title: "XmlDocumentType.Create(Text, Text) Method"
 description: "Creates an XmlDocumentType node."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,8 +23,7 @@ XmlDocumentType :=   XmlDocumentType.Create(Name: Text, PublicId: Text)
 ## Parameters
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-A string that contains the qualified name of the DTD, which is the same as the qualified name of the root element of the XML document.
-        
+A string that contains the qualified name of the DTD, which is the same as the qualified name of the root element of the XML document.  
 
 *PublicId*  
 &emsp;Type: [Text](../text/text-data-type.md)  

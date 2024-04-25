@@ -2,11 +2,7 @@
 title: "FAQ for Partial Records"
 description: Answers some of the most typical questions about the partial records capability in Business Central
 ms.author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -20,7 +16,7 @@ No. If a field that's not selected for loading is accessed, the data will be fet
 
 ## Where is "Partial Records" applied? To all records instances?
 
-Currently, the partial records capability is only implicitly used on report data items and OData pages. The behavior for all other record instances is as before, that is, all fields will be loaded. However, as an AL developer, use in your own code to improve performance in looping code.
+Currently, the partial records capability is only implicitly used on report data items, OData pages, List pages, ListPart pages and table relation-based lookups. The behavior for all other record instances is as before, that is, all fields will be loaded. However, as an AL developer, use in your own code to improve performance in looping code.
 
 ## What happens when accessing fields not selected for load?
 

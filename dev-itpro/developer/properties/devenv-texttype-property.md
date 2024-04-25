@@ -2,10 +2,7 @@
 title: "TextType Property"
 description: "Sets the type of text this element or attribute contains."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -24,10 +21,10 @@ Sets the type of text this element or attribute contains.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Text**|To display normal text. It is the default value.|
-|**BigText**|To display large text.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Text**|runtime version 1.0|To display normal text. It is the default value.|
+|**BigText**|runtime version 1.0|To display large text.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -2,10 +2,7 @@
 title: "Report.RunRequestPage(Integer [, Text]) Method"
 description: "Runs the request page for a report without running the report."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,13 +23,11 @@ Parameters :=   Report.RunRequestPage(Number: Integer [, Parameters: Text])
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the report for which you want to run the request page. If the report that you specify does not exist, then a run-time error occurs.
-          
+The ID of the report for which you want to run the request page. If the report that you specify does not exist, then a run-time error occurs.  
 
 *[Optional] Parameters*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-A string of request page parameters as XML to use to run the report.
-          
+A string of request page parameters as XML to use to run the report.  
 
 
 ## Return Value
@@ -45,34 +40,62 @@ XML string that contains the request page parameters that are entered on the req
 
 ## Remarks  
 
-This method opens the request page for the specified report, where the user can provide parameters for the report. When the user closes the request page by choosing the **OK** button, a string that contains the parameter values that were set by the user is returned. When the user chooses the **Cancel** button, an empty string will be returned. The returned parameter string can be picked up by calling one of the following methods:  
+This method opens the request page for the specified report to allow the user to provide parameters for the report. When the user closes the request page by choosing the **OK** button, a string that contains the parameter values that were set by the user is returned. When the user chooses the **Cancel** button, an empty string is returned. The returned parameter string can be picked up by calling one of the following methods:  
 
 - [Execute Method](../report/report-execute-method.md)  
-
 - [Print Method](../report/report-print-method.md)  
-
 - [SaveAs Method](../report/report-saveas-method.md)  
 
 > [!NOTE]  
 > You can use these methods to schedule reports in the job queue.  
 
-Because the request page runs in the context of where it was invoked from, users cannot bookmark a link to this page from the user interface.  
+Because the request page runs in the context of where it was invoked from, users can't bookmark a link to this page from the user interface.  
 
-## Example  
- This example illustrates how to use the RunRequestPage method to run the request page for report ID 206 Sales Invoice. The request page parameters are saved to a table, and then uses the parameters with the Execute, SaveAs, and Print methods to preview the report, save it as a PDF file, and print it.  
+## Example: Using `Report::<object ID>` syntax
+As mentioned previously, the `Report.RunRequestPage` method throws a runtime error if no report with the supplied object ID exists. If you know the report object, a safe way to call `Report.RunRequestPage` is to use the `Report::<object identifier>` syntax because the compiler will tell you if the report object doesn't exist.  
 
- This example requires that you create a table for holding parameters that are entered on the report request page and a codeunit that runs the report methods.  
+```AL
+procedure RunRequestPageKnownReport()
+var
+    XmlParameters: Text;
+begin
+    XmlParameters := Report.RunRequestPage(Report::MyReport);
+end;
+```
 
- Create a table called **Request Parameters** that has the following fields.  
+## Example: End-to-end scenario
+
+This example illustrates how to use the `RunRequestPage` method to run the request page for report ID 206 Sales Invoice. The request page parameters are saved to a table. The parameters are then used with the Execute, SaveAs, and Print methods to preview the report, save it as a PDF file, and print it.  
+
+This example requires that you create a table for holding parameters that are entered on the report request page and a codeunit that runs the report methods.  
+
+Create a table called **ReportParameters** that has the following fields.  
 
 ```al
-var
-    ReportId: Integer;
-    UserId: Code[100];
-    Parameters: BLOB;
+table 50103 ReportParameters
+{
+    DataClassification = ToBeClassified;
+
+    fields
+    {
+        field(1; ReportId; Integer)
+        {
+            DataClassification = ToBeClassified;
+
+        }
+        field(2; UserId; Code[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(3; Parameters; Blob)
+        {
+            DataClassification = ToBeClassified;
+        }
+    }
+}
 ``` 
 
- Create a codeunit and add the following code to the *OnRun* trigger of the codeunit.  
+Create a codeunit and add the following code to the *OnRun* trigger of the codeunit.  
 
 ```al
 var
@@ -83,10 +106,9 @@ var
     CurrentUser: Code[100];
     Content: File;
     TempFileName: Text;
-
 begin
     // Use the Report.RunRequestPage method to run the request page to get report parameters  
-    XmlParameters := Report.RunRequestPage(206);  
+    XmlParameters := Report.RunRequestPage(Report::"Sales Invoice");  
     CurrentUser := UserId;  
     
     // Save the request page parameters to the database table  
@@ -119,14 +141,14 @@ begin
     // Use the Report.SaveAs method to save the report as a PDF file  
     Content.Create('TestFile.pdf');  
     Content.CreateOutStream(OStream);  
-    Report.SaveAs(206,XmlParameters,ReportFormat::Pdf,OStream);  
+    Report.SaveAs(Report::"Sales Invoice", XmlParameters,ReportFormat::Pdf,OStream);  
     Content.Close;  
     
     // Use the Report.Execute method to preview the report  
-    Report.Execute(206,XmlParameters);  
+    Report.Execute(Report::"Sales Invoice", XmlParameters);  
     
     // Use the Report.Print method to print the report  
-    Report.Print(206,XmlParameters);  
+    Report.Print(Report::"Sales Invoice", XmlParameters);  
 
 ```  
 

@@ -1,17 +1,16 @@
 ---
-title: "The Txt2Al Conversion Tool"
-description: "Description of the converter tool."
-
+title: The Txt2Al Conversion Tool
+description: Description of the converter tool that allows you to take C/AL objects and convert them into .al format.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 07/01/2022
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# The Txt2Al Conversion Tool
+# The Txt2Al conversion tool
 
-[!INCLUDE[2022_releasewave2_deprecatedtool](../includes/2022_releasewave2_deprecatedtool.md)]
+> [!INCLUDE[2022_releasewave2_deprecatedtool](../includes/2022_releasewave2_deprecatedtool.md)]
 
 The Txt2Al conversion tool allows you to take C/AL objects, which were created in [!INCLUDE[navnow_md](includes/navnow_md.md)] or [!INCLUDE[prod_short](includes/prod_short.md)] Spring 2019 (version 14), and convert them into the new .al format. The .al format is used when developing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Converting the objects consists of following two steps:
 
@@ -75,9 +74,11 @@ It's **very** important that you compile the database to get the right result in
 > [!TIP]  
 > You can use the Dynamics NAV Development Shell cmdlet `Export-NAVApplicationObject` with the `-ExportToNewSyntax` flag set instead of using finsql. From the command prompt in the Dynamics NAV Development Shell, run `Get-Help Export-NAVApplicationObject -full` to see the full syntax.
 
-## See Also
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[Report Object](devenv-report-object.md)  
-[Page Properties](properties/devenv-page-property-overview.md)
+
+## See also
+
+[Developing extensions](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Page extension object](devenv-page-ext-object.md)  
+[Report object](devenv-report-object.md)  
+[Page properties](properties/devenv-page-property-overview.md)

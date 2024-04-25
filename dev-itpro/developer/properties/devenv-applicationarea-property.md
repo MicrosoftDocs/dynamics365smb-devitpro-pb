@@ -2,10 +2,7 @@
 title: "ApplicationArea Property"
 description: "Sets the application areas that apply to the control."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/22/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -26,6 +23,7 @@ Sets the application areas that apply to the control. Standard values are All, B
 -   Page Chart Part
 -   Page Action
 -   Page Custom Action
+-   Page File Upload Action
 -   Page User Control
 -   Page
 -   Report
@@ -52,6 +50,9 @@ ApplicationArea = Basic, Suite;
 [!INCLUDE [2022_releasewave2](../../includes/2022_releasewave2.md)]
 
 With [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2, the `ApplicationArea` property set on fields defaults to the page value. The property inheritance means that page controls without the `ApplicationArea` property explicitly set, inherit the `ApplicationArea` *defined on the parent page* or *report if it's a request page*. The `ApplicationArea` property can be used without setting the `UsageCategory` property on pages to provide a default fallback for controls, without forcing search visibility.
+
+> [!TIP]  
+> With [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1, a new code action is introduced to set the default value for `ApplicationArea` on a page or a report level and remove all duplicates on field level. This code action can be applied to an object, a document, a project, or a workspace. For more information, see [AL Code Actions](../devenv-code-actions.md).
 
 > [!NOTE]  
 > The `ApplicationArea` property inheritance has *no impact on page or report extensions*. On these extensions values must still be set explicitly.

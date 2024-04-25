@@ -1,23 +1,22 @@
 ---
 title: Manage Tenant-Specific Notifications
 description: Learn about how an internal admin and a delegated admin can get notified of changes for Business Central tenants. 
-author: edupont04
+author: jswymer
 
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, notifications
-ms.date: 09/16/2022
-ms.author: edupont
-
+ms.date: 04/12/2023
+ms.author: solsen
 ---
 
 # Manage Tenant-Specific Notifications
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 You can get notified of administrative events that occur on environments in a [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant. For example, we send notifications when a major update is available for environments, when an environment update has succeeded or failed, or when extensions require changes to be compatible with an upcoming update. When these and other similar events occur on the tenant, an email is sent to the notification recipients for the tenant.  
 
-> [!NOTE]
+> [!NOTE]  
 > If a prospect has signed up for a trial of [!INCLUDE [prod_short](../includes/prod_short.md)], make sure that they understand that they must sign up for notifications. This is especially important if the prospect moves to My Company so that the tenant will expire after 30 days. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for Business Central.
 
 ## Communication channels
@@ -76,12 +75,21 @@ This Logic App runs a query that returns any failed environment updates ever num
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FActionFailedEnvironmentUpdate.json)
 
-##### Action available updates from an Adaptive Card in Teams
+##### Example: Post adaptive cards in Teams for each available environment update
 
-This Logic App queries Application Insights regularly to get any new updates made available to environments for which AppInsights has been set up and posts an Adaptive Card to Teams from which the update can be started immediately or rescheduled, all without having to navigate to the admin center.
+This Logic App queries Application Insights every number of minutes (specified in the deployment) and posts an adaptive card to a specified Microsoft Teams channel for each environment that has an update available. Based on the user's choice, the Logic App will call the Business Central admin center API using an authorized service-to-service Microsoft Entra app (configuration details specified in the deployment). The adaptive card gives the user four choices:  
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FActionFailedEnvironmentUpdate.json)
+- Schedule the update as soon as possible ("Run Now"), and allow the update to start outside of the update window for the environment  
+- Reschedule the update to a specified other day  
+- Ignore information about the update and close the card  
+- Open the admin center  
 
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FS2SAppsEnvironmentUpdateAdaptiveCard.json)
+
+##### Example: Post adaptive cards in Teams for user permission errors
+This Logic App queries Application Insights every number of minutes (specified in the deployment) and posts adaptive cards to a specified Microsoft Teams channel for each permission error users in environments emitting telemetry to the specified Application Insights resource have encountered. Using the adaptive card, administrators can open Business Central to assign the needed permissions to the user.
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FPermissionError.json)
 
 #### Reporting
 
@@ -106,12 +114,12 @@ The following table illustrates how we communicate about the different environme
 |Updates Postponed/Resumed|![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |         |
 |Update Started |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
 |Update Succeeded/Failed<sup>[\[2\]](#2) |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |         |![check mark for feature](../developer/media/check.png)
-|Environment Hotfix |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
+|Environment Hotfix |![check mark for feature](../developer/media/check.png) |         |         |         |
 |Environment Restart |![check mark for feature](../developer/media/check.png)|         |         |         |![check mark for feature](../developer/media/check.png)
 |Environment Started/Stopped|![check mark for feature](../developer/media/check.png)|         |         |         |
 |Environment Copy |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
 |Environment Restore |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|Environment AAD Tenant Move |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
+|Environment Microsoft Entra tenant Move |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
 |Cancel Session |![check mark for feature](../developer/media/check.png) |         |         |         |
 |Database Export |![check mark for feature](../developer/media/check.png) |         |         |         |Export History Page
 |Environment Setting Change <sup>[\[3\]](#3) |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
@@ -122,7 +130,7 @@ The following table illustrates how we communicate about the different environme
 |AppSource App Uninstall Scheduling |![check mark for feature](../developer/media/check.png) |         |         |         |
 |AppSource App/PTE Uninstall | ![check mark for feature](../developer/media/check.png)        |         |         |         | ![check mark for feature](../developer/media/check.png)
 |AppSource App/PTE Dependency Install & Update Orchestration |![check mark for feature](../developer/media/check.png) |         |         |         |
-|Installed PTE incompatible with next version |         |![check mark for feature](../developer/media/check.png) |         |         |
+|Installed PTE incompatible with next version |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |         |         |
 |Service Incidents and Advisories |         |         |         |![check mark for feature](../developer/media/check.png) |
 |Feature Change and Deprecation Announcements |         |         |![check mark for feature](../developer/media/check.png) |         |
 

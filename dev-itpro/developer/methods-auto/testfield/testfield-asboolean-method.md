@@ -2,10 +2,7 @@
 title: "TestField.AsBoolean() Method"
 description: "Converts the value in a field on a test page to a Boolean data type."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Converts the value in a field on a test page to a Boolean data type.
 ```AL
 Result :=   TestField.AsBoolean()
 ```
-
 ## Parameters
 *TestField*  
 &emsp;Type: [TestField](testfield-data-type.md)  

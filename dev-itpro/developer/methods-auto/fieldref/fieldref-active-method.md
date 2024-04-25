@@ -2,10 +2,7 @@
 title: "FieldRef.Active() Method"
 description: "Checks whether the field that is currently selected is enabled."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -25,7 +22,6 @@ Ok :=   FieldRef.Active()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *FieldRef*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  
@@ -54,10 +50,10 @@ The following example opens table 18 \(Customer\) as a RecordRef variable that i
 > You can use the name of the table instead of the table number to open the table by using the following syntax: 
 
 ```al
-Recref.Open\(DATABASE::Customer\)
+RecRef.Open(DATABASE::Customer)
 ```
 
-```
+```al
 var
     Recref: RecordRef;
     MyFieldRef: FieldRef;

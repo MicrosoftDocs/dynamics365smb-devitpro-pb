@@ -2,10 +2,7 @@
 title: "CuegroupLayout Property"
 description: "Specifies if the layout is wide."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,9 +20,9 @@ Specifies if the layout is wide.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Wide**|Sets the `cuegroup` control to the wide layout|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Wide**|runtime version 1.0|Sets the `cuegroup` control to the wide layout|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

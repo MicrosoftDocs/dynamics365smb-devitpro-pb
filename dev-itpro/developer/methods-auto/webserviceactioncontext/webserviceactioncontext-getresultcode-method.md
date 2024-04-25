@@ -2,10 +2,7 @@
 title: "WebServiceActionContext.GetResultCode() Method"
 description: "Gets the web service action result status code."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Gets the web service action result status code.
 ```AL
 ResultCode :=   WebServiceActionContext.GetResultCode()
 ```
-
 ## Parameters
 *WebServiceActionContext*  
 &emsp;Type: [WebServiceActionContext](webserviceactioncontext-data-type.md)  

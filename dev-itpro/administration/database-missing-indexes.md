@@ -1,14 +1,10 @@
 ---
 title: "Missing Indexes in Dynamics 365 Business Central"
 description: "Description about missing indexes and database missing indexes page"
-author: Javariya
+author: jswymer
 ms.date: 06/09/2022
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: 
-ms.author: a-jaaamir
-ms.custom: 
+ms.topic: conceptual
+ms.author: jswymer
 ---
 
 # Missing Indexes in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]
@@ -24,6 +20,8 @@ For more information on indexes and their types, see [Clustered and nonclustered
 ## Missing indexes
 
 When you run a database query, the query optimizer, which is an important database component, analyzes and chooses the best possible plan to complete the instruction. In doing so, it provides additional information about the ongoing operation that the operation might perform well if the particular column (or columns) is indexed. The SQL server's Query optimizer gets this information from Dynamic Management Views (DMV), in our case, [sys.dm_db_missing_index_details](/sql/relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-details-transact-sql). *sys.dm_db_missing_index_details* returns details about missing indexes, which will help you in creating right indexes.
+
+To learn how to use missing index suggestions to effectively tune indexes and improve query performance, go to [Tune nonclustered indexes with missing index suggestions](/sql/relational-databases/indexes/tune-nonclustered-missing-index-suggestions)
 
 To know more about Dynamic Management Views (DMV), see [System Dynamic Management Views (Transact-SQL)](/sql/relational-databases/system-dynamic-management-views/system-dynamic-management-views).
 
@@ -48,3 +46,4 @@ To get information on missing indexes, go to **Database Missing Indexes** in Bus
 
 [Performance Article For Developers](../performance/performance-developer.md)  
 [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)  
+[How to tune indexes with missing index suggestions](/sql/relational-databases/indexes/tune-nonclustered-missing-index-suggestions)

@@ -2267,7 +2267,7 @@
     },
     {
       "source_path": "dev-itpro/developer/devenv-triggers-overview.md",
-      "redirect_url": "triggers/devenv-triggers.md",
+      "redirect_url": "triggers/devenv-triggers",
       "redirect_document_id": false
     },
     {
@@ -7323,8 +7323,182 @@
     "source_path": "dev-itpro/whatsnew/whatsnew-update-20.1.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/whatsnew/whatsnew-update-20-1",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/admin-shopify-connector.md",
+    "redirect_url": "/dynamics365/business-central/shopify/walkthrough-setting-up-and-using-shopify",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "properties/properties/devenv-demolicense-properties.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-demolicense-properties",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/help/custom-help-toolkit.md",
+    "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/help/custom-help-toolkit-FieldTopicTextExtractor.md",
+    "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/help/custom-help-toolkit-HtmlLocaleChanger.md",
+    "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/help/custom-help-toolkit-HtmlFromRepoGenerator.md",
+    "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/record/record-findset-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/record/record-findset-boolean-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/recordref/recordref-findset-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/recordref/recordref-findset-boolean-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/dynamics-error-codes.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/webservices/dynamics-error-codes",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/properties/devenv-dataclassification-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/dataclassification/dataclassification-option.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-classifying-data.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-classifying-data-sensitivity.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-calculation-formulas-and-the-calcformula-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-calcformula-property",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-add-test-app.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-create-online-dev-env-github.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-create-online-dev-env-vscode.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-create-release-app.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-dependency-app-github.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-enable-keyvault-app-development.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-enabling-telemetry.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-get-started.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-register-cust-prod-env.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-register-sandbox-env.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-settings.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-setup-cicd-existing-app.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-setup-cicd-existing-pte.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-setup-github-runner-performance.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-system-files.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-use-azure-keyvault-for-secrets.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/errorinfo/errorinfo-addaction-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/errorinfo/errorinfo-addaction-string-integer-string-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/errorinfo/errorinfo-addnavigationaction-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/errorinfo/errorinfo-addnavigationaction-string-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-platform-overview.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-reference-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-extending-drop-zones.md",
+    "redirect_url": "/dynamics365/business-central/application/",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/properties/devenv-table-properties.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-table-property-overview",
+    "redirect_document_id": false
    }
-
    
   ] 
 }

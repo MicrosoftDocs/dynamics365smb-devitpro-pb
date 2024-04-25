@@ -1,14 +1,12 @@
 ---
 title: Administration of Business Central Online
 description: Learn about how you as the internal administrator or as a reselling partner can manage online tenants of Dynamics 365 Business Central.  
-author: edupont04
+author: jswymer
 
 ms.topic: conceptual
-ms.workload: na
-ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 05/25/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Administration of Business Central Online
@@ -17,7 +15,7 @@ Administrators that can manage [!INCLUDE [prod_short](../developer/includes/prod
 
 ## Administration as an internal administrator
 
-Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned the **Global admin** role in the Microsoft 365 admin center. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
+Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned the **Global admin** or **Dynamics 365 Admin** role in the Microsoft 365 admin center. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
 
 ### Administration in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 

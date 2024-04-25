@@ -8,10 +8,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 14dbf038-ca14-49a3-9252-9f1deb74d0e6
 caps.latest.revision: 8
-manager: edupont
 ---
 # C/AL Comments
 You can insert comments about your C/AL code or comment out parts of your code to prevent execution. The following are the two ways to insert comments in C/AL:  

@@ -2,11 +2,9 @@
 title: company resource type  
 description: A company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.topic: reference
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -33,21 +31,25 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[items](dynamics_item.md)|items |Gets the items of the company.|
+|[inventoryPostingGroups](dynamics_inventorypostinggroup.md)|inventoryPostingGroups |Gets the inventorypostinggroups of the company.|
+|[generalProductPostingGroups](dynamics_generalproductpostinggroup.md)|generalProductPostingGroups |Gets the generalproductpostinggroups of the company.|
 |[unitsOfMeasure](dynamics_unitofmeasure.md)|unitsOfMeasure |Gets the unitsofmeasure of the company.|
 |[pictures](dynamics_picture.md)|pictures |Gets the pictures of the company.|
 |[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the company.|
 |[itemVariants](dynamics_itemvariant.md)|itemVariants |Gets the itemvariants of the company.|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the company.|
 |[customers](dynamics_customer.md)|customers |Gets the customers of the company.|
 |[customerFinancialDetails](dynamics_customerfinancialdetail.md)|customerFinancialDetails |Gets the customerfinancialdetails of the company.|
 |[agedAccountsReceivables](dynamics_agedaccountsreceivable.md)|agedAccountsReceivables |Gets the agedaccountsreceivables of the company.|
-|[contactsInformation](dynamics_contactinformation.md)|contactsInformation |Gets the contactsinformation of the company.|
+|[contactsInformation](dynamics_contactsinformation.md)|contactsInformation |Gets the contactsinformation of the company.|
 |[contacts](dynamics_contact.md)|contacts |Gets the contacts of the company.|
 |[vendors](dynamics_vendor.md)|vendors |Gets the vendors of the company.|
 |[agedAccountsPayables](dynamics_agedaccountspayable.md)|agedAccountsPayables |Gets the agedaccountspayables of the company.|
 |[companyInformation](dynamics_companyinformation.md)|companyInformation |Gets the companyinformation of the company.|
 |[salesInvoices](dynamics_salesinvoice.md)|salesInvoices |Gets the salesinvoices of the company.|
-|[salesInvoiceLines](dynamics_salesinvoiceline.md)|salesInvoiceLines |Gets the salesinvoicelines of the company.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the company.|
+|[salesInvoiceLines](dynamics_salesinvoiceline.md)|salesInvoiceLines |Gets the salesinvoicelines of the company.|
+|[locations](dynamics_location.md)|locations |Gets the locations of the company.|
 |[pdfDocument](dynamics_pdfdocument.md)|pdfDocument |Gets the pdfdocument of the company.|
 |[attachments](dynamics_attachment.md)|attachments |Gets the attachments of the company.|
 |[customerPaymentJournals](dynamics_customerpaymentjournal.md)|customerPaymentJournals |Gets the customerpaymentjournals of the company.|
@@ -92,6 +94,17 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[purchaseReceiptLines](dynamics_purchasereceiptline.md)|purchaseReceiptLines |Gets the purchasereceiptlines of the company.|
 |[purchaseOrders](dynamics_purchaseorder.md)|purchaseOrders |Gets the purchaseorders of the company.|
 |[purchaseOrderLines](dynamics_purchaseorderline.md)|purchaseOrderLines |Gets the purchaseorderlines of the company.|
+|[itemLedgerEntries](dynamics_itemledgerentry.md)|itemLedgerEntries |Gets the itemledgerentries of the company.|
+|[opportunities](dynamics_opportunity.md)|opportunities |Gets the opportunities of the company.|
+|[customerReturnReasons](dynamics_customerreturnreason.md)|customerReturnReasons |Gets the customerreturnreasons of the company.|
+|[purchaseCreditMemos](dynamics_purchasecreditmemo.md)|purchaseCreditMemos |Gets the purchasecreditmemos of the company.|
+|[purchaseCreditMemoLines](dynamics_purchasecreditmemoline.md)|purchaseCreditMemoLines |Gets the purchasecreditmemolines of the company.|
+|[currencyExchangeRates](dynamics_currencyexchangerate.md)|currencyExchangeRates |Gets the currencyexchangerates of the company.|
+|[accountingPeriods](dynamics_accountingperiod.md)|accountingPeriods |Gets the accountingperiods of the company.|
+|[generalLedgerSetup](dynamics_generalledgersetup.md)|generalLedgerSetup |Gets the generalledgersetup of the company.|
+|[disputeStatus](dynamics_disputestatu.md)|disputeStatus |Gets the disputestatus of the company.|
+|[fixedAssetLocations](dynamics_fixedassetlocation.md)|fixedAssetLocations |Gets the fixedassetlocations of the company.|
+|[fixedAssets](dynamics_fixedasset.md)|fixedAssets |Gets the fixedassets of the company.|
 |[customerSales](dynamics_customersale.md)|customerSales |Gets the customersales of the company.|
 |[vendorPurchases](dynamics_vendorpurchase.md)|vendorPurchases |Gets the vendorpurchases of the company.|
 
@@ -101,6 +114,7 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the company. Non-editable.|
 |systemVersion|string|Specifies the internal version of the company.|
+|timestamp|int64||
 |name|string|Represents the company's name.|
 |displayName|string|Specifies the company's name. This name will appear on all sales documents for the company.|
 |businessProfileId|string|Specifies the Business Profile ID linked to the company.|
@@ -118,6 +132,7 @@ Here is a JSON representation of the company resource.
 {
     "id": "GUID",
     "systemVersion": "string",
+    "timestamp": "int64",
     "name": "string",
     "displayName": "string",
     "businessProfileId": "string",

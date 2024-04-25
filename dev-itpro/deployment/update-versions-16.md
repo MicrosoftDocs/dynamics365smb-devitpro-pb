@@ -2,7 +2,6 @@
 title: "Updates for the Business Central 2020 Release Wave 1 version"
 description: "Learn about the updates for Dynamics 365 Business Central 2020 Release Wave 1 on-premises deployments."
 author: jswymer
-ms.custom: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 10/01/2021
@@ -21,7 +20,7 @@ You should always install the latest update.
 
 ## Available updates for Business Central 2020 Release Wave 1
 
-The following table lists the updates that have been released for 2020 release wave 1 of Business Central (version 16). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
+The following table lists the updates that have been released for 2020 release wave 1 of Business Central (version 16). The updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
 

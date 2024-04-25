@@ -2,11 +2,8 @@
 title: "Defining Multiple Report Layouts"
 description: "Describes how to define multiple layouts for one report in Business Central using AL."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 02/10/2022
-ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -14,7 +11,7 @@ ms.author: solsen
 
 In AL you have the option of defining multiple layouts for one report in code. This means that you can offer multiple versions of a layout for different purposes. Defining multiple layouts applies to both report objects, and report extension objects. The layouts can be of different types, meaning that you can have, for example, a Word layout and an Excel layout for one report, or multiple Excel layouts for one report. This enables creating report extensions that only add layouts to an existing report and packaging it as an extension .al file.
 
-Read more about enabling multiple report layouts and implementing rendering differentiation in extensions, see [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
+<!-- target section removed becuase applies only to v22 Read more about enabling multiple report layouts and implementing rendering differentiation in extensions, see [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).--> 
 
 ## Enabling multiple layouts
 
@@ -67,7 +64,7 @@ reportextension 50102 EmpReportExt extends "Employee - List"
 }
 ```
 
-If one or more of the layouts do not exist, they will be generated when pressing **Ctrl+Shift+P**, and then choosing **AL: Package**. The layouts will appear in your project in the right pane of Visual Studio Code. The generated reports contain the dataset from the report, and you can modify and model the reports in each of the layout types as you want.
+If one or more of the layouts do not exist, they will be generated when selecting <kbd>Ctrl+</kbd>Shift</kbd>+<kbd>P</kbd>, and then choosing **AL: Package**. The layouts will appear in your project in the right pane of Visual Studio Code. The generated reports contain the dataset from the report, and you can modify and model the reports in each of the layout types as you want.
 
 Creating layouts in Excel, RDL, or Word is further described in the topics shown under [See also](devenv-multiple-report-layouts.md#see-also).
 

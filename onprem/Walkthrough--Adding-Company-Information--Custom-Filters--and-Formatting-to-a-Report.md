@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 6ff83384-54f1-49b3-bc99-ae397e5766b5
 caps.latest.revision: 15
-manager: edupont
 ---
 # Walkthrough: Adding Company Information, Custom Filters, and Formatting to a Report
 When you create a report, you can add features such as formatting, custom filters, company logo, and company name to the report. Adding these features make the report readable and improves the visual presentation of the report. You will add these features to the report that you created in [Walkthrough: Designing a Report from Multiple Tables](Walkthrough--Designing-a-Report-from-Multiple-Tables.md).  
@@ -45,7 +43,7 @@ When you create a report, you can add features such as formatting, custom filter
 -   Microsoft Visual Studio installed. For more information about which version of Microsoft Visual Studio you need, see [System Requirements for Microsoft Dynamics NAV](System-Requirements-for-Microsoft-Dynamics-NAV.md). This walkthrough assumes that Microsoft Visual Studio 2012 or Microsoft Visual Studio 2013 is used.  
 
 ## Story  
- Viktor has created the report that was assigned to him in [Walkthrough: Designing a Report from Multiple Tables](Walkthrough--Designing-a-Report-from-Multiple-Tables.md). Viktor wants to improve the visual presentation of the report by adding the company name and company logo to the report. He will format the data and the layout of the report. The company name and the logo must be displayed on every page. On the request page, Viktor wants to enable users to filter the data by customer number and provide the option to hide or show detailed customer information.  
+ Viktor has created the report that was assigned in [Walkthrough: Designing a Report from Multiple Tables](Walkthrough--Designing-a-Report-from-Multiple-Tables.md). Viktor wants to improve the visual presentation of the report by adding the company name and company logo to the report. Viktor will format the data and the layout of the report. The company name and the logo must be displayed on every page. On the request page, Viktor wants to enable users to filter the data by customer number and provide the option to hide or show detailed customer information.  
 
 ## Declaring the Required Variables  
  First, Viktor will declare the variables that are that are required to create the custom filter and add the company name and logo to the report.  
@@ -287,7 +285,7 @@ When you create a report, you can add features such as formatting, custom filter
 2.  Repeat step 1 to apply the `Code.BlankZero()` function to all the amount fields.  
 
 ## Formatting the Report Layout  
- Viktor will format the report to make it visually appealing and he will resize the cell to make the values readable.  
+ Viktor will format the report to make it visually appealing and resize the cell to make the values readable.  
 
 #### To format the report layout  
 

@@ -1,11 +1,7 @@
 ---
 title: "Scope (Action) Property"
 description: Specifies the scope of the action to be page-specific or repeater control-specific in Business Central
-ms.custom: na
 ms.date: 09/05/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -13,6 +9,8 @@ author: SusanneWindfeldPedersen
 # Scope (Action) Property
 
 > **Version**: _Available from runtime version 1.0._
+
+<!-- this topic is manually created, parent node is devenv-scope-property.md -->
 
 Specifies the scope of the action to be either page-specific, or specific to a repeater control. The **Scope** property has two options; **Page** and **Repeater**.  
   

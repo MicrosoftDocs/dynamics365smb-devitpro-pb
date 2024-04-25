@@ -2,11 +2,7 @@
 title: "Write, WriteText, Read, and ReadText Method Behavior"
 description: "Write, WriteText, Read, and ReadText Method Behavior for Line Endings and Zero Terminators."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -19,7 +15,7 @@ When writing to and reading from a stream object using the Write, WriteText, Rea
 - `Read` Reads until a 0 byte or the specified length of the string.
 - `ReadText` Reads the until a zero byte, an end-of-line, the specified number of bytes, or the maximum length.  
 
-To help understand this, consider the following code examples. These example assume that a BLOB field called `MyBlobField` exists in a table called `MyBlobTable`.
+To help understand this, consider the following code example. This example assumes that a BLOB field called `MyBlobField` exists in a table called `MyBlobTable`.
 
 ```AL
 var
@@ -53,8 +49,8 @@ begin
     CRLF[1] := 13;
     CRLF[2] := 10;
     MyRecord.MyBlobField.CreateOutStream(MyOutStream);
-    MyOutStream.WRITE('A' + CRLF + 'B');
-    MyOutStream.WRITE('C');
+    MyOutStream.Write('A' + CRLF + 'B');
+    MyOutStream.Write('C');
 
     MyRecord.MyBlobField.CreateInStream(MyInStream);
     MyInStream.ReadText(Result); // Reads A

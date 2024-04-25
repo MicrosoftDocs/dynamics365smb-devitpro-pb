@@ -2,11 +2,9 @@
 title: customer resource type  
 description: A customer object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.topic: reference
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -35,7 +33,6 @@ Represents a customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the customer.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the customer.|
 |[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the paymentterm of the customer.|
 |[shipmentMethod](dynamics_shipmentmethod.md)|shipmentMethod |Gets the shipmentmethod of the customer.|
@@ -44,7 +41,8 @@ Represents a customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |[picture](dynamics_picture.md)|picture |Gets the picture of the customer.|
 |[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the customer.|
 |[agedAccountsReceivable](dynamics_agedaccountsreceivable.md)|agedAccountsReceivable |Gets the agedaccountsreceivable of the customer.|
-|[contactsInformation](dynamics_contactinformation.md)|contactsInformation |Gets the contactsinformation of the customer.|
+|[contactsInformation](dynamics_contactsinformation.md)|contactsInformation |Gets the contactsinformation of the customer.|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the customer.|
 
 ## Properties
 
@@ -63,6 +61,9 @@ Represents a customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |phoneNumber|string|Specifies the customer's telephone number.|
 |email|string|Specifies the customer's email address.|
 |website|string|Specifies the customer's home page address.|
+|salespersonCode|string||
+|balanceDue|decimal|Specifies total balance due.|
+|creditLimit|decimal||
 |taxLiable|boolean|Specifies if the customer or vendor is liable for sales tax. Set to **true** if the customer is tax liable.|
 |taxAreaId|GUID|Specifies which tax area the customer belongs to.|
 |taxAreaDisplayName|string|Specified the display name of the tax area the customer belongs to.|
@@ -95,6 +96,9 @@ Here is a JSON representation of the customer resource.
     "phoneNumber": "string",
     "email": "string",
     "website": "string",
+    "salespersonCode": "string",
+    "balanceDue": "decimal",
+    "creditLimit": "decimal",
     "taxLiable": "boolean",
     "taxAreaId": "GUID",
     "taxAreaDisplayName": "string",

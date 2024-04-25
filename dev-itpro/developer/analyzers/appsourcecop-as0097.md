@@ -2,10 +2,7 @@
 title: "AppSourceCop Error AS0097"
 description: "The publisher name of an extension cannot be changed for extensions targeting a runtime version lower than '8.0' in their app.json file."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,7 @@ The publisher name of an extension cannot be changed for extensions targeting a 
 
 ## Remarks
 
-Changing the identity of extensions is only supported in Business Central starting from version 2021 release wave 2 which corresponds to the AL runtime version 8.0, see [JSON Files](../devenv-json-files.md#Appjson). For more information about what makes up the identity of an app, see [App Identity](../devenv-app-identity.md).
+Changing the identity of extensions is only supported in Business Central starting from version 2021 release wave 2 which corresponds to the AL runtime version 8.0, see [JSON Files](../devenv-json-files.md#appjson-file). For more information about what makes up the identity of an app, see [App Identity](../devenv-app-identity.md).
 
 ## How to fix this diagnostic?
 

@@ -2,10 +2,8 @@
 title: CREATE vendorPaymentJournals  
 description: Creates a vendorPaymentJournal object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -25,10 +23,11 @@ POST businesscentralPrefix/companies({id})/vendorPaymentJournals
 
 ## Request headers
 
-|Header         |Value                    |
-|---------------|-------------------------|
-|Authorization  |Bearer {token}. Required.|
-|Content-Type   |application/json         |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **vendorPaymentJournal**, the **vendorPaymentJournal** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **vendorPaymentJournals** object.
@@ -47,7 +46,9 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/vendorPaymentJourn
 Content-type: application/json
 
 {
-PLACE CODE HERE.
+  "code": "OTTER",
+  "displayName": "Otter cash receipts and payments",
+  "balancingAccountId": "021c2ed0-021d-ed11-9db9-000d3aa935da"
 }
 ```
 
@@ -60,7 +61,12 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-PLACE CODE HERE.
+  "id": "1377cc08-eb23-ed11-88e7-f2834877f72d",
+  "code": "OTTER",
+  "displayName": "Otter cash receipts and payments",
+  "balancingAccountId": "021c2ed0-021d-ed11-9db9-000d3aa935da",
+  "balancingAccountNumber": "10700",
+  "lastModifiedDateTime": "2022-08-24T20:26:30.03Z"
 }
 ```
 
@@ -71,5 +77,3 @@ PLACE CODE HERE.
 [Get vendorPaymentJournal](dynamics_vendorPaymentJournal_Get.md)   
 [Delete vendorPaymentJournal](dynamics_vendorPaymentJournal_Delete.md)   
 [Update vendorPaymentJournal](dynamics_vendorPaymentJournal_Update.md)   
-
-

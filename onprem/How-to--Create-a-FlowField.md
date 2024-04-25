@@ -7,10 +7,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 2f6560a1-33a5-4fee-beac-fa6a3100c85a
 caps.latest.revision: 11
-manager: edupont
 ---
 # How to: Create a FlowField in Dynamics NAV
 The following procedure describes how to set up a FlowField.  

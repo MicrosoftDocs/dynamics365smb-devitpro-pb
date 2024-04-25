@@ -1,16 +1,12 @@
 ---
-title: "Compilation Scope Overview"
+title: Compilation scope overview"
 description: This article explains the configuration and compilation scope for publishing the extension.
-ms.custom: na
 ms.date: 06/28/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ---
 
-# Compilation Scope Overview
+# Compilation scope overview
 
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are different layers to manage what can be published to the server and accessed from within a project.
 

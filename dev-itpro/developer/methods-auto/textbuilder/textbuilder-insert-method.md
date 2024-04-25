@@ -2,10 +2,7 @@
 title: "TextBuilder.Insert(Integer, Text) Method"
 description: "Inserts a string into this TextBuilder instance at the specified character position."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,8 @@ An instance of the [TextBuilder](textbuilder-data-type.md) data type.
 
 *Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The position in this TextBuilder instance where insertion begins.
-        
+The position in this TextBuilder instance where insertion begins.  
+
 *Text*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The string to insert.  

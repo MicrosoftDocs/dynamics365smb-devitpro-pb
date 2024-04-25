@@ -4,8 +4,6 @@ description: Learn how to enable select features ahead of time as the administra
 author: mikebcMSFT
 
 ms.topic: conceptual
-ms.workload: na
-ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview, what's new
 ms.date: 10/26/2021
 ms.author: mikebc
@@ -13,7 +11,7 @@ ms.author: mikebc
 
 # Enabling Upcoming Features Ahead of Time
 
-New capabilities are added to [!INCLUDE [prod_short](../includes/prod_short.md)] in major updates and minor updates. Some new features can be enabled ahead of time on sandbox and production environments. Learn how you as an administrator can turn on new features using the **Feature Management** page.
+We add new capabilities to [!INCLUDE [prod_short](../includes/prod_short.md)] in major updates and minor updates. Some new features can be enabled ahead of time on sandbox and production environments. Learn how you as an administrator can turn on new features using the **Feature Management** page.
 
 ## Managing optional features
 
@@ -21,7 +19,7 @@ Some new features can be enabled ahead of time on sandbox and production environ
 
 When Microsoft releases features or feature design improvements as part of minor updates, some features aren't immediately enabled. Users as well as administrators can learn about these features in the release plans, and administrators can enable each individual feature from the **Feature Management** page inside [!INCLUDE [prod_short](../includes/prod_short.md)]. Once a feature is enabled, it becomes available for all users on that environment no matter how they access [!INCLUDE[prod_short](../includes/prod_short.md)].  
 
-These features are only optional for a while. The option period typically starts from the minor update in which they're made generally available. The period ends when the features become mandatory and are automatically enabled in a later major update. To see the approximate date and service update when each feature is expected to become mandatory, see the **Automatically enabled from** field in the **Feature Management** page. After this date, the feature will no longer appear in the **Feature Management** page and can no longer be turned off.  
+These features are only optional for a while. The option period typically starts from the minor update in which they're made generally available. The period ends when the features become mandatory and are automatically enabled in a later major update. To see the approximate date and service update when each feature is expected to become mandatory, see the **Automatically enabled from** field in the **Feature Management** page. After this date, the feature will no longer appear in the **Feature Management** page and can no longer be turned off. To learn more about features that are now, or soon will be mandatory or generally available, go to [Optional Features that are Now Mandatory](feature-management-mandatory-features.md).  
 
 > [!IMPORTANT]
 > The projected timeline for a feature is subject to change (see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332)).
@@ -39,11 +37,14 @@ Learn about [new features available in the last minor update in a release wave](
 
 ## How to enable an optional feature
 
-1. Sign in to your environment and navigate to the **Feature Management** page, or use this link: [https://businesscentral.dynamics.com/?page=2610](https://businesscentral.dynamics.com/?page=2610).
-2. If the page isn't editable, choose **Edit List** from the action menu.
-3. For any row in the list, set the **Enabled for** field to *All users*.
+> [!NOTE]
+> Features might require that one or more other features are also enabled, and perhaps even first. If the feature you want to turn on depends on other features, [!INCLUDE[prod_short](../includes/prod_short.md)] will let you know. The prerequisite features are indented beneath the feature you want to turn on. Information about prerequisites is also available in the **Dependent Features** FactBox.
 
-As soon as you enable the feature, any user that signs in to that environment experiences the change. You won't necessarily experience the change yourself until you sign out and sign in again, or start a new session.
+1. Sign in to your environment and navigate to the **Feature Management** page, or use this link: [https://businesscentral.dynamics.com/?page=2610](https://businesscentral.dynamics.com/?page=2610).
+2. If the page isn't editable, choose the **Edit List** action.
+3. For the feature you want to turn on, in the **Enabled for** field, choose **All users**.
+
+As soon as you enable the feature, any user who signs in to that environment experiences the change. You won't necessarily experience the change yourself until you sign out and sign in again, or start a new session.
 
 > [!TIP]
 > Try out the feature for yourself without enabling it for all users by choosing the **Try it out** link. This will open a new browser tab with the feature enabled for that session. Any new sessions in your browser will also have the feature temporarily turned on. To stop trying the feature, close your browser window or sign out.  
@@ -73,6 +74,10 @@ You schedule a data update on the **Feature Management** page by choosing the **
 Most users, by default, won't have permission to enable upcoming features themselves. As an administrator, the easiest way to give a user permission is to assign them the **FEATURE MGT. - ADMIN** permission set. For more information, see [Assigning Permission Sets](/dynamics365/business-central/ui-define-granular-permissions). This permission set was introduced in version 18.1.
 
 ## FAQ about Feature Management
+
+### Why do I have to enable another feature before I can get the feature I want?
+
+Some features are built to work together with one or more other features. That means that a feature might need functionality that another feature provides, so you must enable the other features first. When that's the case, the dependent features are indented under the primary feature in the list.  
 
 ### There are no features listed as optional. Did I do something wrong?
 
@@ -136,7 +141,7 @@ Starting with version 19.1, when you create a copy of an environment, any irreve
 
 When you create a new sandbox environment with a copy of production data, your choice of enabled features is also copied to the sandbox. When you create a fresh sandbox, each feature is enabled by default, unless a feature is irreversible.  
 
-### Why does the list include features that apply to other countries?
+### Why does the list include features that apply to other countries/regions?
 
 Microsoft's business functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] consists of functionality that is generic and functionality that is particular to a specific country or region. The **Feature Management** page will at times show optional features that are particular to a country, even if your [!INCLUDE [prod_short](../includes/prod_short.md)] is based on another country-specific version. This is due to the current limitations of feature management, which relies on a system table to populate the **Feature Management** page.  
 

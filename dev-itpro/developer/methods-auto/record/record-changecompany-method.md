@@ -2,10 +2,7 @@
 title: "Record.ChangeCompany([Text]) Method"
 description: "Redirects references to table data from one company to another."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *[Optional] CompanyName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The name of the company to which you want to change. If you omit this parameter, you change back to the current company.
-          
+The name of the company to which you want to change. If you omit this parameter, you change back to the current company.  
 
 
 ## Return Value
@@ -44,7 +40,7 @@ The name of the company to which you want to change. If you omit this parameter,
 
 ## Remarks
 
-When executing this method, the user's access rights are respected. For example, a user cannot access data in *CompanyName* unless he already has the necessary access rights.  
+When executing this method, the user's access rights are respected. For example, a user cannot access data in *CompanyName* unless they already have the necessary access rights.  
 
 The **ChangeCompany** method is not affected by the [Reset Method (RecordRef)](../recordref/recordref-reset-method.md). You can deselect a company by making a new call to **ChangeCompany** or by using the [Clear Method](../system/system-clear-joker-method.md).  
 
@@ -76,7 +72,6 @@ codeunit 50112 ChangeCompany
         MyRecord.Delete;  
     end;
 }
-
 ```  
 
 ## See Also

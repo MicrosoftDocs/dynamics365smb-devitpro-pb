@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 7f78321e-0493-4ac2-8bd1-500c4bf53efb
 caps.latest.revision: 19
-manager: edupont
 ---
 # How to: Set an Icon on an Activity Button
 The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] includes images that you can use on activity buttons in the navigation pane. Images are displayed on the left side of activity buttons, as shown in the following navigation pane example.  

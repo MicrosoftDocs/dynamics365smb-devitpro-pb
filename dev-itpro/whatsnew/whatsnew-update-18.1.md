@@ -2,13 +2,11 @@
 title: "Update 18.1 for Microsoft Dynamics 365 Business Central 2021 Release Wave 1"
 description: Get an overview of new and changed capabilities in the 18.1 update of Business Central online, which is part of 2021 release wave 1.
 ms.author: solsen
-ms.custom: na
-ms.date: 06/04/2021
+ms.date: 04/01/2024
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-author: EmmaNielsson
+author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ---
 
 # Update 18.1 for Microsoft Dynamics 365 Business Central online 2021 release wave 1
@@ -30,7 +28,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/top
 
 ## Localization updates 
 
-| Country| Feature change |
+| Country/region| Feature change |
 |-------------|--------------|
 |Canada and US | Updates for Include Tax with partial shipping and prepayment credit memo|
 |Italy | Changes in withholding tax declaration 2021 |

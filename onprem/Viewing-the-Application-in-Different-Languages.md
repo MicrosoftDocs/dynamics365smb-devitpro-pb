@@ -7,10 +7,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: c8d9df64-66c1-464f-9803-f1b9f4aca228
 caps.latest.revision: 9
-manager: edupont
 ---
 # Viewing the Application in Different Languages
 In a multilanguage-enabled application, you can view the text in any language that has been added to the application. For more information about adding languages, see [Language Modules](Language-Modules.md).  

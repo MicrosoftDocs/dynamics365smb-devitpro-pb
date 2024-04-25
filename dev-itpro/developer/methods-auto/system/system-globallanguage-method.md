@@ -2,10 +2,7 @@
 title: "System.GlobalLanguage([Integer]) Method"
 description: "Gets and sets the current global language setting."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,15 +27,13 @@ Gets and sets the current global language setting.
 ## Parameters
 *[Optional] NewLanguageID*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The Microsoft language ID (LCID), such as 1033 for English (US).
-        
+The Microsoft language ID (LCID), such as 1033 for English (US).  
 
 
 ## Return Value
 *[Optional] LanguageID*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The Microsoft language ID (LCID).
-      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

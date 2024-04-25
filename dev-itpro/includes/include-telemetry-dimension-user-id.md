@@ -1,0 +1,1 @@
+The user telemetry ID for the user. On the user card, you can use the user_Id to look up the user who triggered this telemetry event. 

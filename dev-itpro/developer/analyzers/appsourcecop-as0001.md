@@ -2,10 +2,7 @@
 title: "AppSourceCop Error AS0001"
 description: "Tables and table extensions that have been published must not be deleted."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -21,8 +18,15 @@ Tables and table extensions that have been published must not be deleted. This m
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-> [!NOTE]  
-> This rule validates tables independently of their Accessibility or ObsoleteState, because tables are always used when synchronizing the schema defined in the extension to the database.
+## Remarks
+
+This rule validates tables independently of their Accessibility or ObsoleteState, because tables are always used when synchronizing the schema defined in the extension to the database.
+
+This rule validates table extensions independently of the ObsoleteState of their target tables. Table extensions extending a table, which is marked with obsolete state Removed must be preserved, since they're still contributing to the database schema defined by the extension.
+
+## How to fix this diagnostic?
+
+Revert the changes done by adding back the tables and table extensions that have been removed.
 
 ## See Also
 

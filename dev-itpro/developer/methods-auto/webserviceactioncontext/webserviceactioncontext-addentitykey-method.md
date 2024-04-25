@@ -2,10 +2,7 @@
 title: "WebServiceActionContext.AddEntityKey(Integer, Any) Method"
 description: "Add a new \<fieldId, value\> pair to the collection of entity keys."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/11/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,7 @@ An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.m
 
 *FieldId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The field ID of the entity key.
-        
+The field ID of the entity key.  
 
 *FieldValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  

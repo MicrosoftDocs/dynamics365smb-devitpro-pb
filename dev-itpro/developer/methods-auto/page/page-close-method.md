@@ -2,10 +2,7 @@
 title: "Page.Close() Method"
 description: "Closes the current page."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Closes the current page.
 ```AL
  Page.Close()
 ```
-
 ## Parameters
 *Page*  
 &emsp;Type: [Page](page-data-type.md)  

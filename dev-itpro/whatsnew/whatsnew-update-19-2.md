@@ -1,13 +1,11 @@
 ---
 title: "Update 19.2 for Microsoft Dynamics 365 Business Central 2021 Release Wave 2"
 description: Get an overview of new and changed capabilities in the 19.2 update of Business Central online, which is part of 2021 release wave 2.
-ms.custom: na
-ms.date: 12/07/2021
+ms.date: 04/01/2024
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-author: EmmaNielsson
+author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ---
 
 # Update 19.2 for Microsoft Dynamics 365 Business Central online 2021 release wave 2
@@ -24,7 +22,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Synchronize multiline text fields between Business Central and Dataverse (and Dynamics 365 Sales)](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features)
 
 ## Localization updates
-- [All countries that use the Intrastat format have been updated to 2022 requirements](/dynamics365/business-central/finance-how-setup-report-intrastat)
+- [All countries/regions that use the Intrastat format have been updated to 2022 requirements](/dynamics365/business-central/finance-how-setup-report-intrastat)
 -  [MX Carta de Porte 2.0](/dynamics365/business-central/localfunctionality/mexico/packing-slips-transfer-orders)
 - [New VAT Return submission for Norway](/dynamics365/business-central/localfunctionality/norway/norwegian-vat-reporting)
 

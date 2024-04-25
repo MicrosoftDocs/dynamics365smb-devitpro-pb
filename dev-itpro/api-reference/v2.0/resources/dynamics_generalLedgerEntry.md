@@ -2,11 +2,9 @@
 title: generalLedgerEntry resource type  
 description: A general ledger entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.topic: reference
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -50,6 +48,8 @@ Represents a general ledger entry in [!INCLUDE[prod_short](../../../includes/pro
 |description|string|Specifies the description of the general ledger entry.|
 |debitAmount|decimal|Specifies the debitAmount of the general ledger entry.|
 |creditAmount|decimal|Specifies the creditAmount of the general ledger entry.|
+|additionalCurrencyDebitAmount|decimal||
+|additionalCurrencyCreditAmount|decimal||
 |lastModifiedDateTime|datetime|The last datetime the general ledger entry was modified. Read-Only.|
 
 ## JSON representation
@@ -69,6 +69,8 @@ Here is a JSON representation of the generalLedgerEntry resource.
     "description": "string",
     "debitAmount": "decimal",
     "creditAmount": "decimal",
+    "additionalCurrencyDebitAmount": "decimal",
+    "additionalCurrencyCreditAmount": "decimal",
     "lastModifiedDateTime": "datetime"
 }
 ```

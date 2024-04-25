@@ -2,11 +2,9 @@
 title: salesCreditMemoLine resource type  
 description: A sales credit memo line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.topic: reference
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -41,6 +39,7 @@ Represents a sales credit memo line in [!INCLUDE[prod_short](../../../includes/p
 |[unitOfMeasure](dynamics_unitofmeasure.md)|unitOfMeasure |Gets the unitofmeasure of the salesCreditMemoLine.|
 |[itemVariant](dynamics_itemvariant.md)|itemVariant |Gets the itemvariant of the salesCreditMemoLine.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesCreditMemoLine.|
+|[location](dynamics_location.md)|location |Gets the location of the salesCreditMemoLine.|
 
 ## Properties
 
@@ -54,6 +53,7 @@ Represents a sales credit memo line in [!INCLUDE[prod_short](../../../includes/p
 |lineType|NAV.invoiceLineAggLineType|The type of the sales credit memo line. It can be "Comment", "Account", "Item", "Resource" Value", "Fixed Asset" or "Charge".|
 |lineObjectNumber|string|The number of the object (account or item) of the sales credit memo line.|
 |description|string|Specifies the description of the sales credit memo line.|
+|description2|string||
 |unitOfMeasureId|GUID|The ID of unit of measure for the sales credit memo line.|
 |unitOfMeasureCode|string|The code of unit of measure for the sales credit memo line.|
 |unitPrice|decimal|Specifies the price for one unit of the item in the specified sales credit memo line.|
@@ -72,6 +72,7 @@ Represents a sales credit memo line in [!INCLUDE[prod_short](../../../includes/p
 |netAmountIncludingTax|decimal|The net amount including tax is the total net amount including tax. Read-Only.|
 |shipmentDate|date|The date the item in the line is expected to ship.|
 |itemVariantId|GUID|The ID of the item variant in the sales credit memo line.|
+|locationId|GUID||
 
 ## JSON representation
 
@@ -88,6 +89,7 @@ Here is a JSON representation of the salesCreditMemoLine resource.
     "lineType": "NAV.invoiceLineAggLineType",
     "lineObjectNumber": "string",
     "description": "string",
+    "description2": "string",
     "unitOfMeasureId": "GUID",
     "unitOfMeasureCode": "string",
     "unitPrice": "decimal",
@@ -105,7 +107,8 @@ Here is a JSON representation of the salesCreditMemoLine resource.
     "netTaxAmount": "decimal",
     "netAmountIncludingTax": "decimal",
     "shipmentDate": "date",
-    "itemVariantId": "GUID"
+    "itemVariantId": "GUID",
+    "locationId": "GUID"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->

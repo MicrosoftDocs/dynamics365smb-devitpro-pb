@@ -6,10 +6,8 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: d447aa5e-e9a3-40d2-9880-e0353debde31
 caps.latest.revision: 24
-manager: edupont
 ---
 # Designing MenuSuites
 In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can create MenuSuites that contain menu content that is displayed in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. The MenuSuite that is provided in [!INCLUDE[navnow](includes/navnow_md.md)] is a generic MenuSuite that you can modify. You can also create a new MenuSuite from the basic MenuSuite. Each menu in the basic MenuSuite represents a department such as Financial Management, Human Resources, and Manufacturing. Each department contains menu items that are specific for that department area. A department menu contains menu items that can link to the following objects:  
@@ -40,7 +38,7 @@ In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can create MenuSuites 
 |----------------------------|-----------------|  
 |Dept - MBS|The base design level that is provided in [!INCLUDE[navnow](includes/navnow_md.md)]. Any MenuSuite you create inherits from this base design level or a design level that inherited from this base design level.|  
 |Dept - Region|The design level that is used for region specific MenuSuites. This level is typically used for localization. Only one region specific design level MenuSuite can be created in a given application.|  
-|Dept - Country|The design level that is used for country specific MenuSuite. This level is typically used for localization and other items such as taxes that are country specific. Only one country specific design level MenuSuite can be created in a given application.|  
+|Dept - Country|The design level that is used for country/region specific MenuSuite. This level is typically used for localization and other items such as taxes that are country/region specific. Only one country/region specific design level MenuSuite can be created in a given application.|  
 |Dept - Add-on|The design level that a developer or [!INCLUDE[navnow](includes/navnow_md.md)] partner can use for customization. Up to ten Add-on design level MenuSuites can be created in a given application.|  
 |Dept - Partner|The design level that [!INCLUDE[navnow](includes/navnow_md.md)] partners use to customize MenuSuites. Only one partner design level MenuSuite can be created in a given application.|  
 |Dept - Company|The design level that is used to design for a specific company. Only one company specific design level MenuSuite can be created in a given application.|  

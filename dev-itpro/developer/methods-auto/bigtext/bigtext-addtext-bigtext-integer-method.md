@@ -2,10 +2,7 @@
 title: "BigText.AddText(BigText [, Integer]) Method"
 description: "Adds a text string to a BigText variable."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,8 @@ An instance of the [BigText](bigtext-data-type.md) data type.
 
 *String*  
 &emsp;Type: [BigText](bigtext-data-type.md)  
-The string that will be added to the BigText variable. If this parameter is empty, then the BigText variable is not modified.
-        
+The string that will be added to the BigText variable. If this parameter is empty, then the BigText variable is not modified.  
+
 *[Optional] Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 This is an optional parameter that defines the position in the BigText variable where the string is inserted. If this parameter is omitted, then the string is added at the end of the BigText variable. If this parameter is less than one, then a run-time error occurs. If this parameter is greater than the length of the BigText variable, then the string is added at the end of the BigText variable.  

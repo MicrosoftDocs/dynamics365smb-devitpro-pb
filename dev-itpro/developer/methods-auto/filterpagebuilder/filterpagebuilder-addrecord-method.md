@@ -2,10 +2,7 @@
 title: "FilterPageBuilder.AddRecord(Text, Record) Method"
 description: "Adds a filter control for a table to a filter page."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,7 @@ An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type
 
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-Assigns a name to the filter control for the table. The text displays as the caption for the filter control on the rendered filter page in the client.
-        
+Assigns a name to the filter control for the table. The text displays as the caption for the filter control on the rendered filter page in the client.  
 
 *Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
@@ -41,8 +37,7 @@ The record to use in the filter control.
 ## Return Value
 *[Optional] Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The text that is specified by the Name parameter. If an error occurs at runtime, an empty text string is returned.
-       If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
+The text that is specified by the Name parameter. If an error occurs at runtime, an empty text string is returned. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

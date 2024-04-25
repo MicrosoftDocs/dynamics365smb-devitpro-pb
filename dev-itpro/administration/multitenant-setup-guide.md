@@ -1,11 +1,12 @@
 ---
 title: "Manage Application and Tenant Databases in a Multitenant Deployment"
 description: Learn about the tasks for managing application and tenant databases for a multitenant deployment
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 04/14/2024
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 ---
 # Multitenant Deployment Setup Guide
@@ -50,7 +51,7 @@ To set up the [!INCLUDE[server](../developer/includes/server.md)] instance for m
 1. Enable the **Multitenant** setting.
 2. Set the server instance to connect to the application database by changing these settings: **DatabaseServer**, **DatabaseInstance**, and **DatabaseName**.
 
-For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#multitenant) and [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).  
+For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#general-settings) and [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).  
 
 > [!TIP]
 > Instead of doing the two previous steps, you could use the [Mount-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/Mount-NAVApplication). Running this cmdlet will enable the **Multitenant** and set up the data base connection.

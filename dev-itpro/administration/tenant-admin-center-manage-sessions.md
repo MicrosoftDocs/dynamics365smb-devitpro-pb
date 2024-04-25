@@ -3,15 +3,15 @@ title: Managing Sessions in the Admin Center
 description: Use the Business Central administration center to manage sessions in your tenant environments. 
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, sessions
 ms.date: 12/14/2021
 ms.author: jswymer
 ---
 
 # Managing Sessions in the Admin Center
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 For each environment in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can use the **Manage Sessions** page to view information about active sessions on an environment and cancel selected sessions.
 
@@ -39,5 +39,5 @@ To restart an environment that is causing problems for you, go to the **Manage S
 [Updating Environments](tenant-admin-center-update-management.md)  
 [Rename Environments](tenant-admin-center-environments-rename.md)  
 [Restoring an Environment](tenant-admin-center-backup-restore.md)  
-[Move an Environment to another Azure Active Directory organization](tenant-admin-center-environments-move.md)  
+[Move an Environment to another Microsoft Entra organization](tenant-admin-center-environments-move.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  

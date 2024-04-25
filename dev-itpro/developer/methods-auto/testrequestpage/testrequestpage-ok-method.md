@@ -2,10 +2,7 @@
 title: "TestRequestPage.OK() Method"
 description: "Gets a TestAction representing an action on the Page under Test."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Gets a TestAction representing an action on the Page under Test.
 ```AL
 Action :=   TestRequestPage.OK()
 ```
-
 ## Parameters
 *TestRequestPage*  
 &emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  

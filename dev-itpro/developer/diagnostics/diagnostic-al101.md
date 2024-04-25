@@ -2,10 +2,7 @@
 title: "Compiler Error AL0101"
 description: "Constant value '{0}' is outside the range for a Decimal."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,9 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Constant value '{0}' is outside the range for a Decimal.
+## Error message example
+Constant value '11212211221234123465676343434435435343232.12' is outside the range for a Decimal
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

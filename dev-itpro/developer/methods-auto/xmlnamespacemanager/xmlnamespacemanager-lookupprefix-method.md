@@ -2,10 +2,7 @@
 title: "XmlNamespaceManager.LookupPrefix(Text, var Text) Method"
 description: "Finds the prefix declared for the given namespace URI."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,8 +27,7 @@ An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data 
 
 *Uri*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The namespace to resolve for the prefix.
-        
+The namespace to resolve for the prefix.  
 
 *Result*  
 &emsp;Type: [Text](../text/text-data-type.md)  

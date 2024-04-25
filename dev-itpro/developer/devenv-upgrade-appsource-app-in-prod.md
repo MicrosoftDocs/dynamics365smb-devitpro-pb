@@ -3,11 +3,8 @@ title: "Upgrading AppSource Apps in Production"
 description: "Describes how to upgrade apps available on AppSource that are already in running in production."
 author: SusanneWindfeldPedersen
 
-ms.custom: na
 ms.date: 08/19/2021
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: freddyk
 ---

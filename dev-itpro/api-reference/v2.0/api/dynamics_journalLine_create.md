@@ -2,10 +2,8 @@
 title: Create journalLines  
 description: Creates a journal line in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -20,15 +18,16 @@ Creates a journal line object in [!INCLUDE[prod_short](../../../includes/prod_sh
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
-POST businesscentralPrefix/companies({id})/journals({id})/journalLines({id})
+POST businesscentralPrefix/companies({id})/journals({id})/journalLines
 ```
 
 ## Request headers
 
-|Header        |Value                    |
-|--------------|-------------------------|
-|Authorization |Bearer {token}. Required.|
-|Content-Type  |application/json         |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **journalLine**, the **journalLine** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **journalLines** object.
@@ -49,7 +48,6 @@ Content-type: application/json
 {
     "id": "0a077d18-45e3-ea11-bb43-000d3a2feca1",
     "journalId": "dd1b6a90-44e3-ea11-bb43-000d3a2feca1",
-    "journalDisplayName": "DEFAULT",
     "lineNumber": 10000,
     "accountType": "G/L Account",
     "accountId": "00000000-0000-0000-0000-000000000000",
@@ -59,8 +57,7 @@ Content-type: application/json
     "externalDocumentNumber": "",
     "amount": 0,
     "description": "",
-    "comment": "",
-    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+    "comment": ""
 }
 ```
 **Response**

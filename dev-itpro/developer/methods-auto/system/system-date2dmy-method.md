@@ -2,10 +2,7 @@
 title: "System.Date2DMY(Date, Integer) Method"
 description: "Gets the day, month, or year of a Date Data Type."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -35,8 +32,7 @@ The input date.
 Specifies what the method should return. The valid options are 1, 2, and 3.
 - The value 1 corresponds to Day (1-31).
 - The value 2 corresponds to Month (1-12).
-- The value 3 corresponds to Year.
-        
+- The value 3 corresponds to Year.  
 
 
 ## Return Value

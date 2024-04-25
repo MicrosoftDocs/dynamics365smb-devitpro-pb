@@ -2,7 +2,6 @@
 title: Upgrading Customized C/AL Application to Microsoft Base Application for version 21
 description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 21.
 ms.topic: article
-ms.service: dynamics365-business-central
 author: jswymer
 ms.author: jswymer
 ms.date: 03/05/2022
@@ -69,7 +68,7 @@ The process uses two special features for migrating tables and data to extension
 
 Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for defining permissions. However for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you'll have to go through before and during upgrade.
 
-For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
+For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
 
 ## APPLICATION UPGRADE
 
@@ -148,7 +147,7 @@ The only file in the extension project that's required is an app.json. You can c
     > [!NOTE]
     > For customization extensions, the version number must be lower than the final version for publication. Otherwise, you can't run upgrade on the extension later.
 
-4. Build and compile the extension package. To build the extension package, press Ctrl+Shift+B.
+4. Build and compile the extension package. To build the extension package, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
 > [!TIP]
 > This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in **Task 17**. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not not include upgrade code.
@@ -246,7 +245,7 @@ You'll create two versions of this extension. The first version contains the tab
 
 11. Build the extension package for the first version.
 
-    To build the extension package, press Ctrl+Shift+B. This step creates an .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
+    To build the extension package, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>. This step creates an .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
 
 ### Create the second version - empty
 
@@ -284,14 +283,13 @@ You'll create two versions of this extension. The first version contains the tab
     |table 7330 "Bin Content Buffer" |BinContentBuffer.Table.al| Remove line `AccessByPermission = TableData "Warehouse Source Filter" = R;`<br /><br /> Remove any `TableRelation =` lines |
     |table 265 "Document Entry"| DocumentEntry.Table.al|Remove any `TableRelation =` lines.|
     |table 338 "Entry Summary" |EntrySummary.Table.al|Remove line `AccessByPermission = TableData "Warehouse Source Filter" = R;`<br /><br />Remove any `TableRelation =` lines. |
-    |table 1754 "Field Content Buffer"|FieldContentBuffer.Table.al|Remove any `TableRelation =` lines. |
     |table 1670 "Option Lookup Buffer"|OptionLookupBuffer.Table.al |Remove any `TableRelation =` lines. |
 
     Starting in version 18, these tables have been changed to temporary tables. For now, you'll have to include these objects in the table migration extension; otherwise you'll have problems syncing the extension later.
 4. Increase the `version` in the app.json file.
 5. Build the extension package for the second version.
 
-    To build the extension package, press Ctrl+Shift+B.
+    To build the extension package, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
 ## DATA UPGRADE
 
