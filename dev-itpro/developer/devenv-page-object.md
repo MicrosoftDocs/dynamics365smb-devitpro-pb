@@ -1,8 +1,8 @@
 ---
 title: Page object
-description: "Description of the page object in AL for Business Central."
+description: Description of the page object and its syntax in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+ms.date: 04/26/2024
 ms.topic: conceptual
 ms.author: solsen
 ---
