@@ -2,9 +2,7 @@
 title: "HandlerFunctions Attribute"
 description: "Specifies the handler methods that are used by the test method."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/24/2022
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -74,7 +72,7 @@ You use handler methods to automate tests by handling instances when user intera
 ```AL
 [Test]
 [HandlerFunctions('SendNotificationHandler,MessageHandler')]
-procedure MyTestFunction();
+procedure MyTestFunction()
 begin
     ...
 end

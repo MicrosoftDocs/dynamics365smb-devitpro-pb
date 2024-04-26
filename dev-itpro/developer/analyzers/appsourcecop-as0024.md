@@ -2,9 +2,8 @@
 title: "AppSourceCop Error AS0024"
 description: "Parameters cannot be removed or added in external procedures, because it will break dependent extensions."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

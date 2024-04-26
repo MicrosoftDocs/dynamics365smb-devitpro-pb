@@ -2,9 +2,8 @@
 title: "Debugger.Activate() Method"
 description: "Activates the debugger and attaches the debugger to the next session that is started."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Activates the debugger and attaches the debugger to the next session that is sta
 ```AL
 [Ok := ]  Debugger.Activate()
 ```
-
 
 ## Return Value
 *[Optional] Ok*  

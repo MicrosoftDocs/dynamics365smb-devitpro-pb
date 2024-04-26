@@ -2,9 +2,8 @@
 title: "Compiler Error AL0349"
 description: "Column '{0}' does not exist in application object '{1}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Column '{0}' does not exist in application object '{1}'.
+
 
 ## Description
 The referenced column does not exist in the current application object.  

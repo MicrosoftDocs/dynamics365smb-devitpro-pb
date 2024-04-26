@@ -2,9 +2,8 @@
 title: "Compiler Information AL1080"
 description: "Source will still be visible for this extension via debugging because 'allowDebugging' has been set to true."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/05/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Source will still be visible for this extension via debugging because 'allowDebugging' has been set to true.
+
 
 ## Description
 For more information, see [Resource Exposure Policy Setting](/dynamics365/business-central/dev-itpro/developer/devenv-security-settings-and-ip-protection#when-should-i-set-allowdebugging-to-true).  

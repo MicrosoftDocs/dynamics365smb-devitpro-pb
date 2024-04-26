@@ -4,12 +4,10 @@ description: Gives an overview of what happens you set up cloud migration.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-
 ms.topic: conceptual 
-ms.date: 07/26/2023
+ms.date: 02/29/2024
 ms.custom: bap-template
 ---
-
 # Cloud migration setup overview
 
 The first phase of cloud migration of on-premises data is the setup, which is done by running the **Cloud Migration Setup** assisted setup from the destination Business Central online environment. This task doesn't migrate any data, but it establishes the connection and pipeline between the on-premises database and online tenant database used for migrating the data. <!--the **Cloud Migration Setup** you'll specify the database connection string to your on-premises database and install the Microsoft Runtime Integration for . The following diagram illustrates what happens during the setup.-->
@@ -42,7 +40,7 @@ The following steps provide more details of the different phases in the process:
    The replication pipeline is used for copying the data. This pipeline remains idle until you initiate the data replication.
 5. Environment is marked as ready for migration and the preparation pipeline is deleted.
 
-After completing 1 or more replication runs, you run data upgrade, then complete the migration.
+After completing one or more replication runs, you run data upgrade, then complete the migration.
 
 ## Cloud migration setup telemetry
 
@@ -51,4 +49,4 @@ After completing 1 or more replication runs, you run data upgrade, then complete
 ## Next steps
 
 1. [Define migration table mappings](migration-table-mapping.md) (Business Central on-premises migration only)
-2. [Run data migration setup](migration-setup.md)
+2. [Run data migration setup for Business Central on-premises migration](migration-setup.md) or [Run data migration setup for Dynamics GP](migration-setup-gp.md)

@@ -2,9 +2,8 @@
 title: "XmlElement.GetDescendantElements() Method"
 description: "Gets a list containing the descendant elements for this element, in document order."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Gets a list containing the descendant elements for this element, in document ord
 ```AL
 DescendantElements :=   XmlElement.GetDescendantElements()
 ```
-
 ## Parameters
 *XmlElement*  
 &emsp;Type: [XmlElement](xmlelement-data-type.md)  

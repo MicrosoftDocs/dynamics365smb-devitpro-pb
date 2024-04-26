@@ -2,9 +2,8 @@
 title: "NavApp.GetModuleInfo(Guid, var ModuleInfo) Method"
 description: "Gets information about the specified AL application."
 ms.author: solsen
-ms.custom: na
-ms.date: 02/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

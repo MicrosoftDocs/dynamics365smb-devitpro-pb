@@ -2,9 +2,8 @@
 title: "CodeCop Info AA0072"
 description: "To improve readability the name of variables and parameters must be suffixed with the type or object name."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

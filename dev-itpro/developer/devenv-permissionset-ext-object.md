@@ -2,9 +2,7 @@
 title: "Permission Set Extension Object"
 description: "Description of the permission set extension object in AL for Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/09/2023
-ms.reviewer: na
 ms.topic: article
 ms.author: solsen
 ---

@@ -1,9 +1,7 @@
 ---
 title: Configure Localization App Location of Translated Base App Help
 description: 
-ms.custom: na
 ms.date: 10/24/2022
-ms.reviewer: na
 robots: NOINDEX
 ms.topic: conceptual
 ms.author: solsen

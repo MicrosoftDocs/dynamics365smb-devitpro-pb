@@ -2,9 +2,8 @@
 title: "Record.Relation(Any) Method"
 description: "Determines the table relationship of a given field."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/22/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

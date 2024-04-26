@@ -4,7 +4,6 @@ description: "Describes working with current API limits in Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 01/02/2024
-ms.reviewer: na
 ms.topic: article
 ms.author: solsen
 ---

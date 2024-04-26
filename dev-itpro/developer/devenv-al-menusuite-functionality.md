@@ -2,8 +2,7 @@
 title: Add pages and reports to Tell me
 description: Description of how you use AL to add pages and reports so that they're discoverable through search in the client.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 12/05/2023
+ms.date: 03/01/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started

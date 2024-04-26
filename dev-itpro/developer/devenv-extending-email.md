@@ -1,8 +1,6 @@
 ---
 title: Extending Email
 description: Learn how to extend the email capabilities in Business Central.
-ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.search.form: 4500, 4503, 4504, 4511, 4512,
 author: brentholtorf
@@ -182,14 +180,14 @@ The first step is to implement the `Email View Policy` interface.
 ```al
 interface "Email View Policy"​
 {​
-    procedure GetSentEmails(var SentEmails: Record "Sent Email" temporary);​
-    procedure GetOutboxEmails(var OutboxEmails: Record "Email Outbox" temporary);​
-    procedure GetSentEmails(SourceTableId: Integer; var SentEmails: Record "Sent Email" temporary);​
-    procedure GetOutboxEmails(SourceTableId: Integer; var OutboxEmails: Record "Email Outbox" temporary);​
-    procedure GetSentEmails(SourceTableId: Integer; SourceSystemId: Guid; var SentEmails: Record "Sent Email" temporary);​
-    procedure GetOutboxEmails(SourceTableId: Integer; SourceSystemId: Guid; var OutboxEmails: Record "Email Outbox" temporary);​
-    procedure HasAccess(SentEmail: Record "Sent Email"): Boolean;​
-    procedure HasAccess(OutboxEmail: Record "Email Outbox"): Boolean;​
+    procedure GetSentEmails(var SentEmails: Record "Sent Email" temporary)
+    procedure GetOutboxEmails(var OutboxEmails: Record "Email Outbox" temporary)
+    procedure GetSentEmails(SourceTableId: Integer; var SentEmails: Record "Sent Email" temporary)
+    procedure GetOutboxEmails(SourceTableId: Integer; var OutboxEmails: Record "Email Outbox" temporary)
+    procedure GetSentEmails(SourceTableId: Integer; SourceSystemId: Guid; var SentEmails: Record "Sent Email" temporary)
+    procedure GetOutboxEmails(SourceTableId: Integer; SourceSystemId: Guid; var OutboxEmails: Record "Email Outbox" temporary)
+    procedure HasAccess(SentEmail: Record "Sent Email"): Boolean
+    procedure HasAccess(OutboxEmail: Record "Email Outbox"): Boolean
 }
 ```
 
@@ -229,13 +227,13 @@ The first step is to implement the `Email Connector` interface.
 ```al
 interface "Email Connector"​
 {​
-    procedure Send(EmailMessage: Codeunit "Email Message"; AccountId: Guid);​
-    procedure GetAccounts(var Accounts: Record "Email Account");​
-    procedure ShowAccountInformation(AccountId: Guid);​
+    procedure Send(EmailMessage: Codeunit "Email Message"; AccountId: Guid)
+    procedure GetAccounts(var Accounts: Record "Email Account")
+    procedure ShowAccountInformation(AccountId: Guid)
     procedure RegisterAccount(var EmailAccount: Record "Email Account"): Boolean​
     procedure DeleteAccount(AccountId: Guid): Boolean​
-    procedure GetLogoAsBase64(): Text;​
-    procedure GetDescription(): Text[250];​
+    procedure GetLogoAsBase64(): Text
+    procedure GetDescription(): Text[250]
 }
 ```
 Next, we'll extend the `Email Connector` enum by adding an **SMTP** option.

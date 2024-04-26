@@ -2,9 +2,8 @@
 title: "ToolTipML Property"
 description: "Sets the multilanguage string used for the tooltip of an action, a field, a FactBox, or an activity button."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -29,6 +28,8 @@ In the client, tooltips appear when you point to the caption of the control.
 -   Page Action Group
 -   Page Custom Action
 -   Page System Action
+-   Page File Upload Action
+-   Table Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

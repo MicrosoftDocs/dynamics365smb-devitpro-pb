@@ -2,9 +2,8 @@
 title: "Compiler Error AL0449"
 description: "The alias '{0}' is already declared."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The alias '{0}' is already declared.
+
 
 ## Description
 There are multiple DotNet types defined with the same alias.  

@@ -2,9 +2,8 @@
 title: "Dialog.Close() Method"
 description: "Closes a dialog window that has been opened by the OPEN method."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,7 +22,6 @@ Closes a dialog window that has been opened by the OPEN method.
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
-
 ## Parameters
 *Dialog*  
 &emsp;Type: [Dialog](dialog-data-type.md)  

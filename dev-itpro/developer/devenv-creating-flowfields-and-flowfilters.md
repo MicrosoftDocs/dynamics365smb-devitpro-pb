@@ -3,7 +3,6 @@ title: Creating FlowFields and FlowFilters
 description: Examples of FlowFields and FlowFilters that are used to display the result of the calculation described in the CalcFormula property. 
 author: SusanneWindfeldPedersen
 ms.date: 09/04/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---

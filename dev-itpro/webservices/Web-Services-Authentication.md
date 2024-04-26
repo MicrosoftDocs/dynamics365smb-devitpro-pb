@@ -1,12 +1,11 @@
 ---
 title: "Web Services Authentication"
 description: Learn about authenticating web services in business Central
-ms.custom: na
 ms.date: 04/26/2023
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---
+
 # Web Services Authentication
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]

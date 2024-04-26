@@ -2,9 +2,8 @@
 title: "Report Data Type"
 description: "Is used to display, print, or process information from a database."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/01/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -25,14 +24,14 @@ The following methods are available on the Report data type.
 |-----------|-----------|
 |[DefaultLayout(Integer)](report-defaultlayout-method.md)|Gets the default built-in layout type that is used on a specified report.|
 |[ExcelLayout(Integer, InStream)](report-excellayout-method.md)|Gets the Excel layout that is used on a report and returns it as a data stream.|
-|[Execute(Integer, Text [, RecordRef])](report-execute-method.md)|Runs a report in preview or processing-only mode without showing the request page in the client. The preview document will be downloaded as a PDF file to the user's browser client, where it can be read with the PDF reader. It won't open the Business Central preview page in the browser. The method gets the request page parameter values as an input parameter string from a RUNREQUESTPAGE method call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown.|
+|[Execute(Integer, Text [, RecordRef])](report-execute-method.md)|Runs a report in preview or processing-only mode without showing the request page in the client. The preview document will be downloaded as a PDF file to the user's browser client, where it can be read with the PDF reader. It won't open the Business Central preview page in the browser. The method gets the request page parameter values as an input parameter string from a RunRequestPage method call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown.|
 |[GetSubstituteReportId(Integer)](report-getsubstitutereportid-method.md)|Gets the ID of the report that will be run by the platform after considering any substitutions made by extensions.|
-|[Print(Integer, Text [, Text] [, RecordRef])](report-print-method.md)|Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RUNREQUESTPAGE method call.|
+|[Print(Integer, Text [, Text] [, RecordRef])](report-print-method.md)|Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RunRequestPage method call.|
 |[RdlcLayout(Integer, InStream)](report-rdlclayout-method.md)|Gets the RDLC layout that is used on a report and returns it as a data stream.|
 |[Run(Integer [, Boolean] [, Boolean] [, var Record])](report-run-method.md)|Loads and executes the report that you specify.|
 |[RunModal(Integer [, Boolean] [, Boolean] [, var Record])](report-runmodal-method.md)|Loads and executes the report that you specify.|
 |[RunRequestPage(Integer [, Text])](report-runrequestpage-method.md)|Runs the request page for a report without running the report. Returns an XML string that contains the request page parameters that are entered on the request page.|
-|[SaveAs(Integer, Text, ReportFormat, var OutStream [, RecordRef])](report-saveas-method.md)|Runs a specific report without a request page and saves the report as a PDF, Excel, Word, HTML, or XML file. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from the return value of a RUNREQUESTPAGE method call.|
+|[SaveAs(Integer, Text, ReportFormat, var OutStream [, RecordRef])](report-saveas-method.md)|Runs a specific report without a request page and saves the report as a PDF, Excel, Word, HTML, or XML file. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from the return value of a RunRequestPage method call.|
 |[SaveAsExcel(Integer, Text [, var Record])](report-saveasexcel-method.md)|Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook.|
 |[SaveAsHtml(Integer, Text [, var Record])](report-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.|
 |[SaveAsPdf(Integer, Text [, var Record])](report-saveaspdf-method.md)|Saves a report as a .pdf file.|
@@ -52,7 +51,7 @@ The following methods are available on instances of the Report data type.
 |[CreateTotals(Array of [Decimal])](reportinstance-createtotals-decimal-method.md)|Maintains totals for a variable in AL.|
 |[DefaultLayout()](reportinstance-defaultlayout-method.md)|Gets the default built-in layout type that is used on a specified report.|
 |[ExcelLayout(var InStream)](reportinstance-excellayout-method.md)|Gets the Excel layout that is used on a report and returns it as a data stream.|
-|[Execute(Text [, RecordRef])](reportinstance-execute-method.md)|Runs a report in preview or processing-only mode without showing the request page in the client. The preview document will be downloaded as a PDF file to the user's browser client, where it can be read with the PDF reader. It won't open the Business Central preview page in the browser. The method gets the request page parameter values as an input parameter string from a RUNREQUESTPAGE method call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown.|
+|[Execute(Text [, RecordRef])](reportinstance-execute-method.md)|Runs a report in preview or processing-only mode without showing the request page in the client. The preview document will be downloaded as a PDF file to the user's browser client, where it can be read with the PDF reader. It won't open the Business Central preview page in the browser. The method gets the request page parameter values as an input parameter string from a RunRequestPage method call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown.|
 |[FormatRegion([Text])](reportinstance-formatregion-method.md)|Gets or sets the current format region setting for the report.|
 |[IsReadOnly()](reportinstance-isreadonly-method.md)|Gets if the current report's data access intent is readonly.|
 |[Language([Integer])](reportinstance-language-method.md)|Gets or sets the current language setting for the report.|
@@ -62,14 +61,14 @@ The following methods are available on instances of the Report data type.
 |[PageNo([Integer])](reportinstance-pageno-method.md)|Gets or sets the current page number of a report.|
 |[PaperSource(Integer [, Integer])](reportinstance-papersource-method.md)|Gets or sets the paper source used for the current page or a specified page.|
 |[Preview()](reportinstance-preview-method.md)|Indicates whether a report is being printed in preview mode.|
-|[Print(Text [, Text] [, RecordRef])](reportinstance-print-method.md)|Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RUNREQUESTPAGE method call.|
+|[Print(Text [, Text] [, RecordRef])](reportinstance-print-method.md)|Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RunRequestPage method call.|
 |[PrintOnlyIfDetail([Boolean])](reportinstance-printonlyifdetail-method.md)|Gets or sets the current settings of the PrintOnlyIfDetail property.|
 |[Quit()](reportinstance-quit-method.md)|Aborts the processing of a report or XmlPort.|
 |[RDLCLayout(var InStream)](reportinstance-rdlclayout-method.md)|Gets the RDLC layout that is used on a report and returns it as a data stream.|
 |[Run()](reportinstance-run-method.md)|Loads and executes the report that you specify.|
 |[RunModal()](reportinstance-runmodal-method.md)|Loads and executes the report that you specify.|
 |[RunRequestPage([Text])](reportinstance-runrequestpage-method.md)|Runs the request page for a report without running the report. Returns an XML string that contains the request page parameters that are entered on the request page.|
-|[SaveAs(Text, ReportFormat, var OutStream [, RecordRef])](reportinstance-saveas-method.md)|Runs a specific report without a request page and saves the report as a PDF, Excel, Word, or XML file. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from the return value of a RUNREQUESTPAGE method call.|
+|[SaveAs(Text, ReportFormat, var OutStream [, RecordRef])](reportinstance-saveas-method.md)|Runs a specific report without a request page and saves the report as a PDF, Excel, Word, or XML file. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from the return value of a RunRequestPage method call.|
 |[SaveAsExcel(Text)](reportinstance-saveasexcel-method.md)|Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook.|
 |[SaveAsHtml(Text)](reportinstance-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.|
 |[SaveAsPdf(Text)](reportinstance-saveaspdf-method.md)|Saves a report as a .pdf file.|

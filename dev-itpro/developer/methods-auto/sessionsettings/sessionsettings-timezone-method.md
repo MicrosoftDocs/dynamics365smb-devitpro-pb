@@ -2,9 +2,8 @@
 title: "SessionSettings.TimeZone([Text]) Method"
 description: "Gets or sets the time zone property in a SessionSettings object."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -37,7 +36,6 @@ Specifies the time zone property in the SessionsSettings object. The value must 
 *[Optional] TimeZone*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The time zone set in the SessionSettings object.
-      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

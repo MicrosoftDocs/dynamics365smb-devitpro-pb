@@ -2,9 +2,8 @@
 title: "NavApp.IsInstalling() Method"
 description: "Returns **true** if the application that contains the AL object that is currently running is being installed, otherwise it returns **false**."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Returns **true** if the application that contains the AL object that is currentl
 ```AL
 Result :=   NavApp.IsInstalling()
 ```
-
 
 ## Return Value
 *Result*  

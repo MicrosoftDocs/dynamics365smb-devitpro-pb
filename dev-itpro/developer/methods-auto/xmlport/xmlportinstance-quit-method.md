@@ -2,9 +2,8 @@
 title: "Xmlport.Quit() Method"
 description: "Aborts the processing of a report or XmlPort."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Aborts the processing of a report or XmlPort.
 ```AL
  Xmlport.Quit()
 ```
-
 ## Parameters
 *Xmlport*  
 &emsp;Type: [Xmlport](xmlport-data-type.md)  

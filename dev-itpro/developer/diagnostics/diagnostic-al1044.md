@@ -2,9 +2,8 @@
 title: "Compiler Error AL1044"
 description: "The value for the manifest property '{0}' is not valid."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/23/2023
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

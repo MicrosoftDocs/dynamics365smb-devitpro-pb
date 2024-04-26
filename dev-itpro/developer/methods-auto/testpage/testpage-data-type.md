@@ -2,9 +2,8 @@
 title: "TestPage Data Type"
 description: "Represents a variable type that can be used to test Page Application Objects."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/01/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

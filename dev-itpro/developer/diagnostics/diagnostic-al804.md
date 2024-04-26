@@ -2,9 +2,8 @@
 title: "Compiler Warning (Future Error) AL0804"
 description: "You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/06/2023
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -19,7 +18,7 @@ You cannot reference the {0} '{1}' because it is defined in the page customizati
 
 
 > [!IMPORTANT]
-> This warning will become an error with Business Central 2024 release wave 1.  
+> This warning will become an error with Business Central 2024 release wave 2.  
 
 ## Description
 You cannot reference an element defined in a page customization outside the page customization declaring it.  

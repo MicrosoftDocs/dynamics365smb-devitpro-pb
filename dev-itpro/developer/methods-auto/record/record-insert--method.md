@@ -2,9 +2,8 @@
 title: "Record.Insert() Method"
 description: "Inserts a record into a table without executing the code in the OnInsert trigger."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Inserts a record into a table without executing the code in the OnInsert trigger
 ```AL
 [Ok := ]  Record.Insert()
 ```
-
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  

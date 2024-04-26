@@ -1,9 +1,7 @@
 ---
 title: "Entitlements and Permission Sets Overview"
 description: Learn about the different built-in methods to control which users can do what so that you can design the Business Central permission sets more precisely. 
-ms.custom: na
 ms.date: 08/18/2023
-ms.reviewer: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ---
@@ -45,7 +43,16 @@ When developing an app, entitlements and permission sets are handled as objects 
 > In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases.  
 -->
 
-## Upgrade considerations
+## System Application objects for permissions
+
+The [!INCLUDE [prod_short](includes/prod_short.md)] System Application includes a number of objects that can help you when working with permissions:
+
+- [Codeunit 'User Permissions'](/dynamics365/business-central/application/system-application/codeunit/system.security.user.user-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
+- [Page 'Effective Permissions'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
+- [Page 'Effective Permissions By Set'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions-by-set?toc=/dynamics365/business-central/dev-itpro/toc.json) 
+
+
+## Upgrade considerations (prior to version 18)
 
 Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v18.0), the [!INCLUDE [prod_short](includes/prod_short.md)] demo database, which is shipped with our on-premises installation, doesn't contain any data in the **Permission Set** and **Permission** tables in the application database. Instead, the **System** permission sets and permissions are provided as AL objects of type `PermissionSet` and `PermissionSetExtension`, included with Microsoft apps. 
 
@@ -65,7 +72,7 @@ In the on-premises version of [!INCLUDE [prod_short](includes/prod_short.md)], e
 
 Although starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0), System permissions are no longer shipped as data in the application database, the partners can use the same procedure as before to export the new permissions that are defined using AL objects. The new permission sets and permissions can be exported into XML file by running XMLport 9171 Import/Export Permission Sets, making it possible to compare and merge the customized permission sets in your old database with the newly shipped permission sets. Find more details, see [Export and Import Permission Sets and Permissions](../upgrade/how-to--import-export-permission-sets-permissions.md).
 
-### How to upgrade permission sets
+### How to upgrade permission sets (when upgrading to version 18)
 
 When upgrading to version 18, first decide whether you want to use the permissions defined as data or switch to permissions defined as AL objects. Then, follow the guidelines at [Upgrading Permission Sets](../upgrade/upgrade-permissions.md) for details on how to do the upgrade.  
 
@@ -102,4 +109,8 @@ Permission sets and permissions [included with apps in XML format](devenv-export
 [Get Started with AL](devenv-get-started.md)  
 [Entitlement Object](devenv-entitlement-object.md)  
 [PermissionSet Object](devenv-permissionset-object.md)  
-[PermissionSet Extension Object](devenv-permissionset-ext-object.md)  
+[PermissionSet Extension Object](devenv-permissionset-ext-object.md)   
+[Codeunit 'User Permissions'](/dynamics365/business-central/application/system-application/codeunit/system.security.user.user-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+[Page 'Effective Permissions'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+[Page 'Effective Permissions By Set'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions-by-set?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+

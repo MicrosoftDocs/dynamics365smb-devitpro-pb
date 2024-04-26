@@ -2,9 +2,8 @@
 title: "File.Seek(Integer) Method"
 description: "Sets a file pointer to a new position in an ASCII or binary file."
 ms.author: solsen
-ms.custom: na
-ms.date: 11/05/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -2,9 +2,8 @@
 title: "Media Data Type"
 description: "Encapsulates media files, such as image .jpg and .png files, in application database tables."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/01/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

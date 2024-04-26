@@ -2,9 +2,8 @@
 title: "AppSourceCop Error AS0104"
 description: "The extension name is not valid."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/21/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

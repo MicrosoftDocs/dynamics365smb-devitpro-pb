@@ -19,7 +19,6 @@ The following figure illustrates the suggested steps for getting a preview of a 
 
 For more information, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md). 
 
-
 ## Practice and test
 
 Once you have the preview, start using it:
@@ -32,28 +31,22 @@ Once you have the preview, start using it:
 
     In rare cases, if you discover any changes required for your per-tenant extension to become compatible with the next release, apply the changes to your app, test it again on a sandbox environment running on a preview version. Then, if tests complete successfully, upload the app into your production environment, setting the **Deploy to** field to *Next major version*. This way, the compatible version of your app will be used when you schedule the upgrade of your production environment to the new major update once it becomes available.
 
-3. Test the quality. If you run into issues related to the preview, please provide [feedback on Collaborate](#provide-feedback-on-the-preview).
+3. Test the quality. If you run into issues related to the preview, please provide feedback as described in the [next section](#provide-feedback-on-the-preview).
 
 Finally, as always, if you have ideas for features you would like to see in future releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
 
 ## Provide feedback on the preview
 
-We need your feedback on the preview! Let us know about your experiences with the new version. You can provide feedback on Microsoft Collaborate:
+We need your feedback on the preview! Let us know about your experiences with the new version. You can provide feedback on Viva Engage (formerly Yammer) by following these steps:
 
-1. Browse to [aka.ms/collaborate](https://aka.ms/collaborate)
+1. Go to [Business Central Public preview group](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=177710096384) on Viva Engage.
+2. If you haven't joined the group yet, select **Join group**. [Learn more about Business Central partner community on Viva Engage](../join-viva-engage.md).
+3. Share your thoughts, ask questions, or seek clarifications on any aspect of the preview release. Just add your comment or question in the **Share something with this group** box and select **Post**. Or feel free to respond to another post.
+4. If you encounter any issues or glitches during your testing, please help us by posting them as bugs. Just include the hashtag `#Bug`in your post along with the following information, if you can:
 
-2. If you haven't registered before, complete the registration form to access Collaborate (discover the steps [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-a-how-your-global-administrator-must-register-for-collaborate))
-
-3. Choose **Engagements**, and then choose the **Join** action
-
-4. Under the **Ready! for Dynamics 365 Business Central** program, find the latest preview version in the list of available engagements, and then choose the **Join** action
-
-Once you have joined the preview engagement, you can submit your feedback by filling in the form. You must specify if you're reporting a technical issue, a translation issue, or a documentation issue. The default severity is set to 3, which is the normal severity for most defects and means that the system isn't crashing and users aren't blocked from doing their work, but you can change that. When we have triaged your issue, you can see changes in Collaborate. 
-
-For every public preview, we create a "Public preview" group on [Yammer](https://aka.ms/BCYammer). Make sure to join it and feel free to provide your feedback here as well. 
-
-> [!TIP] 
-> If you get stuck trying to join Collaborate or Yammer, please contact [dyn365bep@microsoft.com](mailto:dyn365bep@microsoft.com) with as many details about the error that you got and other circumstances.
+    - **Description of the problem:** Clearly describe the issue you encountered.
+    - **Repro steps:** Provide step-by-step instructions on how to reproduce the problem.
+    - **Screenshots:** If possible, attach screenshots to help illustrate the issue.
 
 ## Guidelines for how to get started
 
@@ -63,10 +56,10 @@ If you run your tests on a preview environment one month before the announced ma
 
 We expect to update the preview version only if we discover critical issues before the major update is generally available for production environments. Apart from these potential fixes, we don't expect any further changes to the product between the preview and the official release. You can start your testing and learning activities immediately, without waiting for the official release.
 
-> [!NOTE] 
+> [!NOTE]
 > You will be able to test the update on a copy of your production data in a sandbox environment when we release the new update in production in April or October, respectively. When the official release becomes available, you can continue your tests on that version. You will no longer be able to create new preview sandboxes.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > The preview version as well as all sandbox environments that are based on it will be removed 30 days after the official release becomes available. 
 
 

@@ -2,9 +2,8 @@
 title: "JsonToken.ReadFrom(InStream) Method"
 description: "Reads the JSON data from the stream into a JsonToken variable."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -52,7 +51,7 @@ Clear(JsonToken)
 This example shows how to read JSON data from a stream into a JsonToken variable.
 
 ```al
-local procedure ReadJson(source : InStream) result : JsonToken;
+local procedure ReadJson(source : InStream) result : JsonToken
 begin
     result.ReadFrom(source);    
 end;

@@ -2,9 +2,8 @@
 title: "RecordRef.SetLoadFields([Integer,...]) Method"
 description: "Sets the fields to be initially loaded when the record is retrieved from its data source."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

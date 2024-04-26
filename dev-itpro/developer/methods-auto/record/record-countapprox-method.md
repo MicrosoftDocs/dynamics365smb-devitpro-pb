@@ -2,9 +2,8 @@
 title: "Record.CountApprox() Method"
 description: "Returns an approximate count of the number of records in the table, for example, for updating progress bars or displaying informational messages."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,7 +22,6 @@ Number :=   Record.CountApprox()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  

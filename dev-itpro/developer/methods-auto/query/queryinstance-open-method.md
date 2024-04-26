@@ -2,9 +2,8 @@
 title: "Query.Open() Method"
 description: "Runs a query object and generates a data set that can be read."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Runs a query object and generates a data set that can be read. The following cod
 ```AL
 [Ok := ]  Query.Open()
 ```
-
 ## Parameters
 *Query*  
 &emsp;Type: [Query](query-data-type.md)  

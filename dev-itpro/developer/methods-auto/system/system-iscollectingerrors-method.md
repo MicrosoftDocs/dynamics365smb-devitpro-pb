@@ -2,9 +2,8 @@
 title: "System.IsCollectingErrors() Method"
 description: "Gets a value indicating whether errors are currently being collected."
 ms.author: solsen
-ms.custom: na
-ms.date: 11/03/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -25,7 +24,6 @@ Ok :=   System.IsCollectingErrors()
 > This method can be invoked using property access syntax.
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
-
 
 ## Return Value
 *Ok*  

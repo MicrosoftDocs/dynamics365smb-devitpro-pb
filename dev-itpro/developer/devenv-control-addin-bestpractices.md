@@ -1,8 +1,6 @@
 ---
 title: "Control add-in performance best practices"
-ms.custom: na
 ms.date: 04/11/2023
-ms.reviewer: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ms.author: solsen

@@ -2,9 +2,8 @@
 title: "Compiler Error AL0541"
 description: "The use of the variable '{0}' in the property value of '{1}' in view '{2}' is not allowed."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The use of the variable '{0}' in the property value of '{1}' in view '{2}' is not allowed.
+
 
 ## Description
 It is not allowed to use boolean expressions as the proeprty value of properties defined in a view.  

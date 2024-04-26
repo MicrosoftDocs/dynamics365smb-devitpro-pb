@@ -1,10 +1,9 @@
 ---
-title: MaximumDatasetSize Property
-description: Sets the maximum amount of rows to be included on the report.
+title: "MaximumDatasetSize Property"
+description: "Sets the maximum amount of rows to be included on the report."
 ms.author: solsen
-ms.custom: bap-template
-ms.date: 01/18/2024
-ms.reviewer: jswymer
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -3,8 +3,6 @@ title: "Update Lifecycle for Tenant Customizations"
 description: "Overview of the process of ensuring extension compatibility with update versions"
 author: jaredha
 
-ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jaredha
 ms.date: 04/01/2021

@@ -2,9 +2,8 @@
 title: "Query.Read() Method"
 description: "Reads data from a row in the resulting data set of a query."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Reads data from a row in the resulting data set of a query.
 ```AL
 [Ok := ]  Query.Read()
 ```
-
 ## Parameters
 *Query*  
 &emsp;Type: [Query](query-data-type.md)  

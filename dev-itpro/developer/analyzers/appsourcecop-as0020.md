@@ -2,9 +2,8 @@
 title: "AppSourceCop Error AS0020"
 description: "The event attribute type cannot be changed because it might break dependent extensions."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

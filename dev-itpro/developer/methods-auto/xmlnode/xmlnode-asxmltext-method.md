@@ -2,9 +2,8 @@
 title: "XmlNode.AsXmlText() Method"
 description: "Converts the node to an XmlText node."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Converts the node to an XmlText node. The operation will fail if the node is not
 ```AL
 XmlText :=   XmlNode.AsXmlText()
 ```
-
 ## Parameters
 *XmlNode*  
 &emsp;Type: [XmlNode](xmlnode-data-type.md)  

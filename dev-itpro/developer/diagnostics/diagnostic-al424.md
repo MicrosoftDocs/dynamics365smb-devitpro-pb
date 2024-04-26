@@ -1,10 +1,9 @@
 ---
 title: "Compiler Warning AL0424"
-description: "The multilanguage syntax is being deprecated."
+description: "The multilanguage syntax should not be used because the app uses translation files (the features property of the app.json includes TranslationFile)."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -15,7 +14,8 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The multilanguage syntax is being deprecated. Please update to the new syntax.
+The multilanguage syntax should not be used because the app uses translation files (the "features" property of the app.json includes "TranslationFile"). Update the translation files and use the label syntax instead.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

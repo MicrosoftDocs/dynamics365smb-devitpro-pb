@@ -2,9 +2,7 @@
 title: "Report Triggers and Runtime Operations"
 description: "Report triggers in AL for Business Central."
 ms.author: jswymer
-ms.custom: na
 ms.date: 05/17/2021
-ms.reviewer: na
 ms.topic: reference
 ms.search.keywords: reports, triggers, trigger flow, sequence
 ---

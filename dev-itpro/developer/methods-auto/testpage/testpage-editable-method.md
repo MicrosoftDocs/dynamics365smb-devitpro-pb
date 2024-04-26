@@ -2,9 +2,8 @@
 title: "TestPage.Editable() Method"
 description: "Gets the runtime value of the Editable property on a test page."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,7 +22,6 @@ Editable :=   TestPage.Editable()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *TestPage*  
 &emsp;Type: [TestPage](testpage-data-type.md)  

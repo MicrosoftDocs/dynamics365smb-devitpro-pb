@@ -2,9 +2,7 @@
 title: "BusinessEvent Attribute"
 description: "Specifies that the method is published as a business type event."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/15/2022
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -75,7 +73,7 @@ This example publishes a business type event by using the `OnAddressLineChanged`
 
 ```AL
 [BusinessEvent(false)] 
-procedure OnAddressLineChanged(line : Text[100]);
+procedure OnAddressLineChanged(line : Text[100])
 begin    
 end;
 ```  

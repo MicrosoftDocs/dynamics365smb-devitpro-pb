@@ -3,9 +3,9 @@ title: AL operators
 description: Describes the operators you can use in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.reviewer: 
+ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 02/05/2024
+ms.date: 03/15/2024
 ms.custom: bap-template
 ms.collection: get-started
 ---
@@ -141,3 +141,4 @@ This expression evaluates to 20.
 [Arithmetic operators](devenv-al-arithmetic-operators.md)  
 [Boolean operators](devenv-al-boolean-operators.md)  
 [Relational operators](devenv-al-relational-operators.md)  
+[Get started with AL](devenv-get-started.md)  

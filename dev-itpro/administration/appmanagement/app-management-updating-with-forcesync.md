@@ -2,9 +2,7 @@
 title: "Updating an App Version by Using ForceSync"
 description: Learn how to synchronize a new app version that includes breaking changes.
 author: jswymer
-ms.custom: na
 ms.date: 06/10/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ---

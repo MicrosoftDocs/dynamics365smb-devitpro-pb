@@ -2,9 +2,8 @@
 title: "AppSourceCop Error AS0023"
 description: "A return type cannot be modified in external procedures."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

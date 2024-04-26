@@ -2,9 +2,8 @@
 title: "Compiler Error AL0735"
 description: "The custom action '{0}' cannot be defined in {1} '{2}' because '{2}' uses promoted action properties."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/04/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The custom action '{0}' cannot be defined in {1} '{2}' because '{2}' uses promoted action properties. Convert the promoted properties into ActionRefs in oder to use custom actions.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

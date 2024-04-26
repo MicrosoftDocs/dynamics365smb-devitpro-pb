@@ -2,9 +2,8 @@
 title: "CodeCop Warning AA0018"
 description: "The END, IF, REPEAT, UNTIL, FOR, WHILE, and CASE statement should always start a line."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

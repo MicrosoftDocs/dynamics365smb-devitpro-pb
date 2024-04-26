@@ -2,7 +2,6 @@
 title: "AVS Error AVS0108"
 description: "The following extension(s) could not be found. Upload the missing extensions and try again. {0}."
 ms.author: thpeder
-ms.custom: na
 ms.date: 02/05/2022
 ms.reviewer: solsen
 ms.topic: reference

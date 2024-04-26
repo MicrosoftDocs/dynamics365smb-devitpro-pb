@@ -2,9 +2,7 @@
 title: "IsolatedStorage.Set(Text, Text [, DataScope]) Method"
 description: "Sets the value associated with the specified key."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/02/2023
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

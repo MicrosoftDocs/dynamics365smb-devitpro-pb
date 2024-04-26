@@ -1,17 +1,16 @@
 ---
-title: Designing Card Pages
-description: "Provides and overview of card page design"
+title: Designing card pages
+description: Provides and overview of card page design.
 author: jswymer
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.date: 04/26/2024
 ms.topic: conceptual
+ms.reviewer: solsen
 ms.author: jswymer
 ---
-# Designing Card and Document Pages
+
+# Designing card and document pages
 
 The *card* page type displays selected fields from an underlying table. The *document* page type is very similar in structure to the card page, but in addition to fields, it also includes a part that includes another page, called a sub-page. 
-
 
 ## [Overview](#tab/about)
 
@@ -25,7 +24,7 @@ Design document pages when you want to represent a transaction or other importan
 
 ### Associate with a list page
 
-Both page types are typically associated with list pages (like the customers or sales orders list) that uses the same table as their source. From the list page, users can select a record and open it the card or document page for viewing and editing.
+Both page types are typically associated with list pages (like the customers or sales orders list) that uses the same table as their source. From the list page, users can select a record and open it the card or document page for viewing and editing. To associate a list page with a card page, you set the [CardPageId](properties/devenv-cardpageid-property.md) property on the list page. For more information, see [List page structure](devenv-designing-list-pages.md#general-definition).
 
 ### Customizing a card and document pages from the client
 
@@ -73,17 +72,17 @@ From the user's perspective, the following are qualities of a well-designed card
 
 ### Card pages
 
--    It is used only for data that represents master or reference data. 
+-    It's used only for data that represents master or reference data. 
 -    The page title clearly identifies the entity/entry represented in the page.
 
 ### Document pages
 
-- It Is used only for data that represents a transaction or other important event in the domain of business.
+- It's used only for data that represents a transaction or other important event in the domain of business.
 - The page title clearly identifies the transaction/event represented in the page.
 
 ## General
 
-- It is optimized for viewing by organizing data in FastTabs, and fields are either shown or hidden by default based on their importance.
+- It's optimized for viewing by organizing data in FastTabs, and fields are either shown or hidden by default based on their importance.
 - The most important fields are placed in a the first FastTab (**General**) in the most natural order from the user's perspective.
 - It includes one or two FactBoxes to give necessary statistics and quick access to related documents.
 - Within a FastTab, you can also use `group()` controls to create sub-groups of fields to improve data organization.
@@ -113,11 +112,11 @@ Only promoted actions will display on mobile devices, so make sure you promote t
         Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](devenv-implementation-tips-gestures-property.md).
 
  
-## See Also
-[AL Development Environment](devenv-reference-overview.md)  
-[Page Types and Layouts](devenv-page-types-and-layouts.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[Actions Overview](devenv-actions-overview.md)  
-[Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  
-[Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
+## See also
+[AL development environment](devenv-reference-overview.md)  
+[Page types and layouts](devenv-page-types-and-layouts.md)  
+[Page extension object](devenv-page-ext-object.md)  
+[Actions overview](devenv-actions-overview.md)  
+[Adding pages and reports to Search](devenv-al-menusuite-functionality.md)  
+[Personalizing your workspace](/dynamics365/business-central/ui-personalization-user)  
 [Use Designer](devenv-inclient-designer.md)  

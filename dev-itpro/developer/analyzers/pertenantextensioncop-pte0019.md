@@ -2,9 +2,8 @@
 title: "PerTenantExtensionCop Warning PTE0019"
 description: "Permission set extensions should not include wildcard permissions."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/20/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -2,9 +2,8 @@
 title: "PerTenantExtensionCop Error PTE0021"
 description: "The namespace must be different from System and Microsoft."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

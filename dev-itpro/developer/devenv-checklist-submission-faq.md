@@ -2,8 +2,7 @@
 title: Technical validation FAQ
 description: Describes the most common questions when submitting your app to AppSource for Business Central.
 author: qutreson
-ms.custom: na
-ms.date: 01/19/2024
+ms.date: 03/01/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: qutreson
@@ -48,9 +47,9 @@ You can know which versions of your extensions were used as baseline during the 
 
 ### Which apps are validated in my submission?
 
-The main app and the libraries required by the main app are validated and uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)]. If you have included libraries, which aren't required by the main app, they are ignored during the validation and aren't uploaded to the service.
+The main app and the libraries required by the main app are validated and uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)]. If you have included libraries, which aren't required by the main app, they're ignored during the validation and aren't uploaded to the service.
 
-For example, let's consider an app A, which has an offer in the AppSource marketplace and A depends on a library named B, which doesn't have any dependencies. If you create a new submission with A as the main app and include B, C, and D as libraries, then only A and B will be validated. C and D will be ignored because they aren't required by the main app A. If B is updated to depend on C and D, then all apps in the submission will now be validated by the service.
+For example, let's consider an app A, which has an offer in the AppSource marketplace and A depends on a library named B, which doesn't have any dependencies. If you create a new submission with A as the main app and include B, C, and D as libraries, then only A and B are validated. C and D are ignored because they aren't required by the main app A. If B is updated to depend on C and D, then all apps in the submission are now validated by the service.
 
 > [!NOTE]  
 > If some apps in your submission already have been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] with the same version for some countries/regions, then the app will not be validated again for these countries/regions.
@@ -66,7 +65,7 @@ During 'Automated application validation', the apps in your submission are valid
 
 When setting up your offer in Partner Center, you must still include a test package in 'App Tests Automation', but it isn't used during the validation of the submission.
 
-Test automation is something we expect you to run, to test your app and to make sure that the quality of your app is high. We don't run tests of your apps, nor do we have a set value for a required code coverage. Instead, we rely on you to test your app properly to give your customers a good experience.
+Test automation is something we expect you to run, to test your app, and to make sure that the quality of your app is high. We don't run tests of your apps, nor do we have a set value for a required code coverage. Instead, we rely on you to test your app properly to give your customers a good experience.
 
 ### When I submit an app to AppSource; do you always make a manual validation based on the provided 'Key Usage Scenario' document?  
 
@@ -82,46 +81,41 @@ Before going public with the submitted app version, you can test it after the "P
 	
 `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PreviewKey' IS '[PreviewKey]'&page=2503` 
 	
-where
+Where
 
 - `[TenantID]` is the Microsoft Entra ID of the customer environment, 
 - `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
-- `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission. 
-	
-For more information about AppSource app preview, see the [dedicated section](#questions-about-appsource-app-previews) below.
+- `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
+
+For more information about AppSource app preview, see the section [Questions about AppSource app previews](#questions-about-appsource-app-previews) in this article.
 
 ### When should I include my library apps as part of my submission?
 
 You aren't required to always include the dependencies of your extension as part of your submission.
 
-You're only required to include the dependencies for your extension as part of your submission if you're submitting a newer version for them. If you don't include them in your submission, they are downloaded automatically if they're publicly available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries/regions.
+You're only required to include the dependencies for your extension as part of your submission if you're submitting a newer version for them. If you don't include them in your submission, they're downloaded automatically if they're publicly available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries/regions.
 
 > [!NOTE]  
-> If you include the dependencies of your extension as part of the submission, these dependency versions will be used during the validation, even if there are higher versions already available in [!INCLUDE[prod_short](../includes/prod_short.md)].
+> If you include the dependencies of your extension as part of the submission, these dependency versions are used during the validation, even if there are higher versions already available in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 If you didn't include the dependencies for your app and they aren't publicly available, your submission fails during the "Automated Application Validation" stage. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
 
-If you receive an error with the diagnostic code `AVS0107` and a message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you already published another .app file for this extension to [!INCLUDE[prod_short](../includes/prod_short.md)] as part of a previous submission. This can happen if you submit a .app file with different content, or created by a different build (each .app file created has a specific build ID stamped, so building multiple times the same project results in .app files with different build IDs). If this version of the library is already available for all countries/regions targeted by your submission, you can just remove the extension from the submission. If you're making your library available in new countries/regions, you should use the .app file that has already been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] or increase the version number in the manifest of the extension (the app.json file). All submitted versions that passed the "Automated Application Validation" are considered in the content validation check, even if they weren't made publicly available
+If you receive an error with the diagnostic code `AVS0107` and a message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you already published another .app file for this extension to [!INCLUDE[prod_short](../includes/prod_short.md)] as part of a previous submission. This can happen if you submit a .app file with different content, or created by a different build (each .app file created has a specific build ID stamped, so building multiple times the same project results in .app files with different build IDs). If this version of the library is already available for all countries/regions targeted by your submission, you can just remove the extension from the submission. If you're making your library available in new countries/regions, you should use the .app file that is already uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] or increase the version number in the manifest of the extension (the app.json file). All submitted versions that passed the "Automated Application Validation" are considered in the content validation check, even if they weren't made publicly available.
 
 ### My app failed at the "Automated application validation" stage, what do I do next?
 
 At this stage, your extensions are validated to assess whether they meet the requirements specified in the [Technical Validation Checklist](devenv-checklist-submission.md).
 
-If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what caused the error. If you're using Azure Application Insights, information about the validation results is logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started. If you're experiencing issues with Azure Application Insights, refer to the dedicated section below.
+- If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what caused the error. If you're using Azure Application Insights, information about the validation results is logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started. If you're experiencing issues with Azure Application Insights, refer to the section [Questions bout Azure Application Insights usage during AppSource submissions](#questions-about-azure-application-insights-usage-during-appsource-submissions) in this article.
+- If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, you must update the list of extensions submitted. For more information, see "When should I include my library apps as part of my submission?".
+- If this stage failed with an error message similar to `The manifest property 'X' of the extension 'My App' by 'Publisher Name' (version '1.2.3.4') specifies 'Y' while the offer description specifies 'Z'.`, you should either change your app.json file or the offer description to match each other and submit a new version. Offer description changes in Partner Center can be made in the "Properties" section of your offer for the app version, "Offer listing" section for the app name, and your publisher name can be found in Partner Center under `Account Settings > Organizational Profile > Legal > Developer > Publisher Name` or by following [this link](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer). When changing any of these, remember to consult the section on this page called "Questions about app identity".
+- If this stage failed with an error message similar to `The submission must target at least one existing country/region of Business Central`, your submission doesn't target any countries/regions currently available in [!INCLUDE[prod_short](../includes/prod_short.md)]. If your submission targets a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), you must wait for the localization to become available in [!INCLUDE[prod_short](../includes/prod_short.md)] and resubmit your offer. Generally, it's possible to upload apps for new localizations, a few weeks before they're made available to customers.
+- If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') contains inconsistent information about the package id/name/publisher/version`, it means that something went wrong when the package included in your submission was built. In order to mitigate the issue, you must rebuild the package and submit it again.
+- If this stage failed with an error message similar to `The App ID '<some-Guid>' is already used for Per-Tenant-Extensions in Business Central and cannot be used for the AppSource extension with name 'MyApp' and publisher 'MyPublisher'`, this means that there exists one or many PTEs with the same App ID in the service. Since [!INCLUDE[prod_short](../includes/prod_short.md)] doesn't support having AppSource apps and PTEs with the same App ID, it's then recommended to change the ID of your extension before submitting it in Partner Center. For more information, see [Moving a PTE to AppSource](devenv-extension-moving-scope.md#moving-a-pte-to-appsource). If the PTEs with that App ID aren't used in any customer environments anymore, you can create a support case in Partner Center to request an exception.
 
-If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, you must update the list of extensions submitted. For more information, see "When should I include my library apps as part of my submission?".
+- If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has not been signed.` or `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has been signed, but the root certificate authority (CA) is not trusted.`, your submission doesn't live up to the code signing requirement of AppSource for [!INCLUDE[prod_short](../includes/prod_short.md)]. In order to correctly sign your app, check out the section [Questions about code-signing validation](#questions-about-code-signing-validation) in this article, and take a look at the article [Sign an app package file](devenv-sign-extension.md).
 
-If this stage failed with an error message similar to `The manifest property 'X' of the extension 'My App' by 'Publisher Name' (version '1.2.3.4') specifies 'Y' while the offer description specifies 'Z'.`, you should either change your app.json file or the offer description to match each other and submit a new version. Offer description changes in Partner Center can be made in the "Properties" section of your offer for the app version, "Offer listing" section for the app name, and your publisher name can be found in Partner Center under `Account Settings > Organizational Profile > Legal > Developer > Publisher Name`. When changing any of these, remember to consult the section on this page called "Questions about app identity".
-
-If this stage failed with an error message similar to `The submission must target at least one existing country/region of Business Central`, your submission doesn't target any countries/regions currently available in [!INCLUDE[prod_short](../includes/prod_short.md)]. If your submission targets a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), you must wait for the localization to become available in [!INCLUDE[prod_short](../includes/prod_short.md)] and resubmit your offer. Generally, it's possible to upload apps for new localizations, a few weeks before they're made available to customers.
-
-If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') contains inconsistent information about the package id/name/publisher/version`, it means that something went wrong when the package included in your submission was built. In order to mitigate the issue, you must rebuild the package and submit it again.
-
-If this stage failed with an error message similar to `The App ID '<some-Guid>' is already used for Per-Tenant-Extensions in Business Central and cannot be used for the AppSource extension with name 'MyApp' and publisher 'MyPublisher'`, this means that there exists one or many PTEs with the same App ID in the service. Since [!INCLUDE[prod_short](../includes/prod_short.md)] doesn't support having AppSource apps and PTEs with the same App ID, it's then recommended to change the ID of your extension before submitting it in Partner Center. For more information, see [Moving a PTE to AppSource](devenv-extension-moving-scope.md#moving-a-pte-to-appsource). If the PTEs with that App ID aren't used in any customer environments anymore, you can create a support case in Partner Center to request an exception.
-
-If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has not been signed.` or `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has been signed, but the root certificate authority (CA) is not trusted.`, your submission doesn't live up to the code signing requirement of AppSource for [!INCLUDE[prod_short](../includes/prod_short.md)]. In order to correctly sign your app, check out the section below called "Questions about code-signing validation" and [Sign an app package file](devenv-sign-extension.md).
-
-If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again. `, you should create a new submission in Partner Center. If your submission fails again, you should create a support case in Partner Center as documented in this article.
+- If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again. `, you should create a new submission in Partner Center. If your submission fails again, you should create a support case in Partner Center as documented in this article.
 
 > [!NOTE]
 > Because the extensions in your submission are validated for each release and country/region targeted by the submissions, the validation results can be really verbose and cannot always be displayed in their full length in Partner Center. The error message will then end with `...(Truncated)`. If that happens for your submission, you should either enable Azure Application Insights in your extension, run the self-validation script, or fix the errors visible and iterate on your submission.
@@ -136,11 +130,11 @@ Review the Marketing requirements and the [Marketing Validation FAQ](readiness/r
 
 At this stage, your extensions are being published to [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-If this stage failed with the following error message `Automated upload to Business Central of the extensions in the submission has failed. Please retry the operation and contact Partner Center support if it fails again.`, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the dedicated section below.
+If this stage failed with the following error message `Automated upload to Business Central of the extensions in the submission has failed. Please retry the operation and contact Partner Center support if it fails again.`, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the section [Channels to ask questions or report issues](#channels-to-ask-questions-or-report-issues) in this article.
 
 ### My app failed at another stage, what do I do next?
 
-If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in the dedicated section below.
+If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in section [Channels to ask questions or report issues](#channels-to-ask-questions-or-report-issues) in this article.
 
 ## Questions about hotfixing an AppSource app
 
@@ -162,7 +156,7 @@ Selected customers can install the preview version of the extensions in your sub
 
 `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PreviewKey' IS '[PreviewKey]'&page=2503` 
 
-where
+Where
 
 - `[TenantID]` is the Microsoft Entra ID of the customer environment, 
 - `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
@@ -191,7 +185,7 @@ You can make your preview version publicly available in the AppSource marketplac
 
 The preview key specified in Partner Center under `Availability > Preview Audience > Hide Key` **at the time of the submission** is the one that must be used by customers to install this preview version. 
 
-If you change the preview key for your offer in Partner Center, the submitted preview version won't be automatically updated and will still use the previous preview key. For example, if you submit version 1.0.0.0 with the preview key `key-1`, then version 1.0.0.0 can be installed by customer that adds the key `key-1` in the install URL. If you change the preview key for your offer in Partner Center to `key-2`, this key won't be used until you start a new submission. If you submit version 1.0.0.0 again, customers are able to install it using either `key-1` or `key-2`. If you submit version 2.0.0.0, then customers are able to install it with version `key-2` only.
+If you change the preview key for your offer in Partner Center, the submitted preview version isn't automatically updated and will still use the previous preview key. For example, if you submit version 1.0.0.0 with the preview key `key-1`, then version 1.0.0.0 can be installed by customer that adds the key `key-1` in the install URL. If you change the preview key for your offer in Partner Center to `key-2`, this key won't be used until you start a new submission. If you submit version 1.0.0.0 again, customers are able to install it using either `key-1` or `key-2`. If you submit version 2.0.0.0, then customers are able to install it with version `key-2` only.
 
 Similarly, if you submitted the same library version 1.0.0.0 as part of two offers using two separate preview keys `key-1` and `key-2`, customers are able to use either `key-1` or `key-2` to install the library on their environment.
 
@@ -212,7 +206,7 @@ Your submission fails during the "Automated Application Validation" stage if you
 
 ### What happens to preview versions during environment upgrades?
 
-During the upgrade of an environment to the next major, the latest publicly available version of AppSource apps are installed on the customer environment. If there is a higher version is available for your preview app, this version is installed. If the preview version is the highest version, the preview version is preserved.
+During the upgrade of an environment to the next major, the latest publicly available version of AppSource apps are installed on the customer environment. If there's a higher version is available for your preview app, this version is installed. If the preview version is the highest version, the preview version is preserved.
 
 During the upgrade of an environment to the next minor, AppSource apps versions are preserved unless the environment settings specify to update apps to the latest version available.
 
@@ -255,7 +249,7 @@ This section contains frequently asked questions related to the code-signing req
 
 No, you need to use a Microsoft Windows computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed.
 
-If [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] isn't installed, you get an error similar to: "This file format cannot be signed because it isn't recognized".
+If [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] isn't installed, you get an error similar to: "This file format can't be signed because it isn't recognized".
 
 ### Can I use a self-signed certificate to sign my apps targeting AppSource?
 
@@ -322,7 +316,7 @@ When changing the publisher of an extension, you must:
 > [!IMPORTANT]  
 > The App ID is a critical part of the identity of apps in [!INCLUDE[prod_short](../includes/prod_short.md)], and changing it is a breaking change for all extensions depending on it. You should then not change the App ID of extensions which are installed for customers in Business Central Online.
 
-If you're submitting a new version of your extension with a different App ID for an existing offer, then this new version is considered as a different extension. This means that all extensions that depend on the extension with the old app ID must be updated to reference the new App ID. If they aren't updated, this causes issues such as customer environment upgrade failures, which must be fixed within the required time period, see [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md). Since the app ID is part of how data is stored in [!INCLUDE[prod_short](../includes/prod_short.md)], this also means that you'll have to migrate the data for all customers that have the extension with the old App ID installed. Note that we don't provide tools for performing data migration in SaaS, but you can create your own solution to export data from the old extension and reimport the data after the extension change.
+If you're submitting a new version of your extension with a different App ID for an existing offer, then this new version is considered as a different extension. This means that all extensions that depend on the extension with the old app ID must be updated to reference the new App ID. If they aren't updated, this causes issues such as customer environment upgrade failures, which must be fixed within the required time period, see [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md). Since the app ID is part of how data is stored in [!INCLUDE[prod_short](../includes/prod_short.md)], this also means that you have to migrate the data for all customers that have the extension with the old App ID installed. We don't provide tools for performing data migration in SaaS, but you can create your own solution to export data from the old extension and reimport the data after the extension change.
 
 ### Is it possible to have multiple apps with the same App ID in AppSource? 
 
@@ -356,15 +350,15 @@ It's possible to automatically submit apps to AppSource from our DevOps setup by
 
 ### How do I install an offer with 'Contact Me' listing type on a customer environment?
 
-Offers using 'Contact Me' as listing type can't be directly installed from the AppSource marketplace. When choosing 'Contact Me' on the offer listing, the customer will be asked to share their information with Microsoft through your customer relationship management (CRM) system. These customer details, along with the offer name, ID, and marketplace source are sent to the CRM system, which you've configured for your offer in Partner Center.
+Offers using 'Contact Me' as listing type can't be directly installed from the AppSource marketplace. When choosing 'Contact Me' on the offer listing, the customer is asked to share their information with Microsoft through your customer relationship management (CRM) system. These customer details, along with the offer name, ID, and marketplace source are sent to the CRM system, which you configured for your offer in Partner Center.
 
 Based on this information, you can then build the install URL for your offer and share it with the customer:
 
 `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]'&page=2503` 
 
-where
+Where
 
-- `[TenantID]` is the Microsoft Entra ID of the customers environment, and
+- `[TenantID]` is the Microsoft Entra ID of the customer's environment, and
 - `[AppID]` is the app ID defined in the manifest of the main extension for this offer.
 
 For more information on listing types, see [App type, contact type, and customer leads](.\readiness\readiness-checklist-e-industries-categories-apptype.md).

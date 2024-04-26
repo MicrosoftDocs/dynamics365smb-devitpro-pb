@@ -2,9 +2,8 @@
 title: "Xmlport.Import() Method"
 description: "Reads and parses an incoming XML data stream (XML document)."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Reads and parses an incoming XML data stream (XML document).
 ```AL
 [Ok := ]  Xmlport.Import()
 ```
-
 ## Parameters
 *Xmlport*  
 &emsp;Type: [Xmlport](xmlport-data-type.md)  

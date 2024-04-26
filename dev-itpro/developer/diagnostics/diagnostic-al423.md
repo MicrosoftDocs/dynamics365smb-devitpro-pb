@@ -2,9 +2,8 @@
 title: "Compiler Error AL0423"
 description: "The property '{0}' can only be set if the specified fields are from the same table."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The property '{0}' can only be set if the specified fields are from the same table.
+
 
 ## Description
 A property can only be used on keys with fields from the same table.  

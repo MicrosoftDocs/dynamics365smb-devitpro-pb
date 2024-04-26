@@ -2,9 +2,8 @@
 title: "Compiler Error AL0496"
 description: "Attributes cannot be defined in this context."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Attributes cannot be defined in this context.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

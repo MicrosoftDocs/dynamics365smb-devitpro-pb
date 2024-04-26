@@ -2,9 +2,8 @@
 title: "Compiler Error AL0132"
 description: "'{0}' does not contain a definition for '{1}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 '{0}' does not contain a definition for '{1}'.
+
 
 ## Description
 The referenced element does not contain a definition for the referenced member.  

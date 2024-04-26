@@ -1,9 +1,7 @@
 ---
 title: "Running a Business Central Database to Azure SQL Database"
 description: Learn how to deploy a Business Central database to Azure SQL Database
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

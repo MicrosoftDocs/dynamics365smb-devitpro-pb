@@ -2,7 +2,6 @@
 title: "Microsoft Timeline for Deprecating Code in Business Central"
 description: "Description of the timeline for deprecating code in Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 09/26/2022
 ms.reviewer: solsen
 ms.topic: conceptual

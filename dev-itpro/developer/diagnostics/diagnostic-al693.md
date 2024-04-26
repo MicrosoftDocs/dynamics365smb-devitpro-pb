@@ -2,9 +2,8 @@
 title: "Compiler Error AL0693"
 description: "The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete. All related properties will have no effect.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

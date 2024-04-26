@@ -2,9 +2,8 @@
 title: "FieldRef Data Type"
 description: "Identifies a field in a table and gives you access to this field."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/01/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

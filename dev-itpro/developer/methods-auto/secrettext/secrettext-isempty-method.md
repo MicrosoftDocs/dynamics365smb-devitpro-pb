@@ -2,9 +2,8 @@
 title: "SecretText.IsEmpty() Method"
 description: "Returns a value indicating whether the secret text contains any content."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

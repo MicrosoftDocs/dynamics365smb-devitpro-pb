@@ -1,9 +1,7 @@
 ---
 title: Events discoverability
 description: Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario.
-ms.custom: na
 ms.date: 01/08/2024
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---

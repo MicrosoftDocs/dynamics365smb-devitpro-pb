@@ -2,9 +2,8 @@
 title: "ErrorInfo.Title([Text]) Method"
 description: "Specifies the title of the error."
 ms.author: solsen
-ms.custom: na
-ms.date: 02/08/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

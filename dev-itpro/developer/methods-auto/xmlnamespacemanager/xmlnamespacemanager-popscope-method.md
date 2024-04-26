@@ -2,9 +2,8 @@
 title: "XmlNamespaceManager.PopScope() Method"
 description: "Pops a namespace scope off the stack."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Pops a namespace scope off the stack.
 ```AL
  XmlNamespaceManager.PopScope()
 ```
-
 ## Parameters
 *XmlNamespaceManager*  
 &emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)  

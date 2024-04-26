@@ -15,7 +15,7 @@ When troubleshooting failed REST API/OData calls, you have many tools/techniques
 - Telemetry 
 - HTTP status codes 
 - OData error codes 
-- Postman
+<!-- - Postman -->
 - AL debugger 
 
 ## Troubleshoot failed REST API/OData calls with telemetry
@@ -66,7 +66,7 @@ The following table explains how the OData error codes/messages translate to exc
 |ODataBadRequestNullFieldException      |BadRequest_RequiredParamNotProvided|Field `'taxable'` must not be blank or empty.|
 |ODataConflictException                 |Request_EntityChanged|Another user has already changed the record.|
 |ODataMethodNotAllowedException         |BadRequest_MethodNotAllowed|`'POST'` requests for `'companies'` of EdmType `'Entity'` <br>are not allowed within Microsoft Dynamics NAV OData web services.|
-|ODataNotImplementedException           |BadRequest_MethodNotImplemented|Entity does not support bound actions|
+|ODataNotImplementedException           |BadRequest_MethodNotImplemented|Entity does not support bound actions or an orderby query option did not match the default OrderBy fields of an underlying Query object.|
 |NavCSideDataException                  |Internal_DataNotFoundFilter|There is no Cust. Ledger Entry within the filter.|
 |NavCSideRecordNotFoundException        |Internal_RecordNotFound|The Acc. Sched. KPI Web srv. Setup does not exist.<br> Identification fields and values: Primary Key=''|
 |NavCSideValidateTableRelationException |Internal_InvalidTableRelation|The field Account No. of table Gen. Journal Line contains a value (ABL001)<br> that cannot be found in the related table (Vendor).|
@@ -94,12 +94,11 @@ The following table explains how the OData error codes/messages translate to exc
 
 This article is covered in the general troubleshooting guide for web services. For more information, see [Debugging code called from a web service endpoint](web-service-troubleshooting.md#debugging-code-called-from-a-web-service-endpoint).
 
+## Explore REST APIs with an API explorer
 
-## Explore REST APIs with Postman
-
-Postman is a popular tool that developers can use to explore and test REST APIs. When troubleshooting API issues, consider using Postman to interact with the API endpoint to "debug" the API as seen from the web service client point of view. This technique is particularly useful if you are not allowed to debug the AL code for the API endpoint.
-
-For more information, see [Explore REST APIs with Postman and Microsoft Entra authentication](../developer/devenv-develop-connect-apps.md#explore-rest-apis-with-postman-and-microsoft-entra-authentication).
+There are tools available for exploring and testing REST APIs. When troubleshooting API issues, consider using a tool, such as Insomnia, Bruno, or Insomnium to interact with the API endpoint to "debug" the API as seen from the web service client point of view. This technique is particularly useful if you are not allowed to debug the AL code for the API endpoint.
+<!--
+For more information, see [Explore REST APIs with Postman and Microsoft Entra authentication](../developer/devenv-develop-connect-apps.md#explore-rest-apis-with-postman-and-microsoft-entra-authentication). -->
 
 
 ## Which IP addresses or ranges does my environment use?
@@ -114,7 +113,7 @@ This article is covered in the general troubleshooting guide for web services. F
 
 ## See also
 
-[Explore REST APIs with Postman](../developer/devenv-develop-connect-apps.md#explore-rest-apis-with-postman-and-microsoft-entra-authentication)
+<!-- [Explore REST APIs with Postman](../developer/devenv-develop-connect-apps.md#explore-rest-apis-with-postman-and-microsoft-entra-authentication) -->
 [Troubleshoot web service errors](web-service-troubleshooting.md)  
 [Web service performance](web-service-performance.md)  
 [Analyzing incoming web services request telemetry](../administration/telemetry-webservices-trace.md)  

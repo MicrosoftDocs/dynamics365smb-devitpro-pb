@@ -1,10 +1,9 @@
 ---
 title: "Report.SaveAs(Integer, Text, ReportFormat, var OutStream [, RecordRef]) Method"
-description: "Runs a specific report without a request page and saves the report as a PDF, Excel, Word, HTML, or XML file. (static method)"
+description: "Runs a specific report without a request page and saves the report as a PDF, Excel, Word, HTML, or XML file."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

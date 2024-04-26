@@ -1,7 +1,6 @@
 ---
 title: "Report Layout Definition"
 description: Report layout definitions in AL for Business Central.
-ms.custom: na
 ms.date: 04/03/2022
 ms.reviewer: solsen
 ms.topic: conceptual

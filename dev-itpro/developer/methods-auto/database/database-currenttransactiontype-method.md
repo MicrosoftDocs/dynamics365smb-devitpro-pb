@@ -2,9 +2,8 @@
 title: "Database.CurrentTransactionType([TransactionType]) Method"
 description: "Gets the current transaction type and sets a new type to be assigned."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -35,7 +34,6 @@ The type of transaction to be set for the next transaction.
 *[Optional] TransactionType*  
 &emsp;Type: [TransactionType](../transactiontype/transactiontype-option.md)  
 The type of transaction for the next transaction.
-      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

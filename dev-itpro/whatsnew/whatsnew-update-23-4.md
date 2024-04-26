@@ -1,12 +1,14 @@
 ---
 title: Update 23.4 for Microsoft Dynamics 365 Business Central 2023 Release Wave 2
 description: Get an overview of new and changed capabilities in the 23.4 update of Business Central online, which is part of 2023 release wave 2.
-ms.author: a-enielsson
-ms.custom: bap-template
-ms.date: 01/29/2024
+ms.author: jswymer
+ms.date: 04/01/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
-author: EmmaNielsson
+author: jswymer
+ms.custom: 
+    - evergreen
+    - bap-template
 ---
 
 # Update 23.4 for Microsoft Dynamics 365 Business Central online 2023 release wave 2
@@ -64,7 +66,7 @@ In the current minor update, we’re transitioning to the Shopify Admin API vers
 
 ### Automatically update AppSource apps with minor updates
 
-You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the Release Plan for more details.
+You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the [release plan](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/planned-features) for more details.
 
 ### Features becoming mandatory soon
 

@@ -2,9 +2,8 @@
 title: "Compiler Error AL0499"
 description: "The handler function {0} was not found."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The handler function {0} was not found. Make sure the procedure is defined and has a handler attribute.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

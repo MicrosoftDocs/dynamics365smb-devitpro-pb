@@ -2,9 +2,8 @@
 title: "Compiler Error AL0596"
 description: "Value '{0}' does not implement interface '{1}' and there is no default implementation for the mentioned interface."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Value '{0}' does not implement interface '{1}' and there is no default implementation for the mentioned interface.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

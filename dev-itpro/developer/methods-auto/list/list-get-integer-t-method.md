@@ -2,9 +2,8 @@
 title: "List.Get(Integer, var T) Method"
 description: "Gets the element at the specified index."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/10/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -29,6 +28,7 @@ An instance of the [List](list-data-type.md) data type.
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The one-based index of the element to get.  
+
 *Result*  
 &emsp;Type: [T](list-data-type.md)  
 The element at the specified index.  

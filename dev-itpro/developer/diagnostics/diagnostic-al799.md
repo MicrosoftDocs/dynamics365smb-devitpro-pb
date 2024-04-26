@@ -2,9 +2,8 @@
 title: "Compiler Error AL0799"
 description: "The field with ID '{0}' and name '{1}' cannot be used as source expression in the page customization '{2}' targeting page '{3}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/02/2023
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

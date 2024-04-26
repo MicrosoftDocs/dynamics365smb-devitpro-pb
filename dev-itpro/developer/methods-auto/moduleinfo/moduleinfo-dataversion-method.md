@@ -2,9 +2,8 @@
 title: "ModuleInfo.DataVersion() Method"
 description: "Gets the version of the specified application's data in the context of a given tenant."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,7 +22,6 @@ DataVersion :=   ModuleInfo.DataVersion()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *ModuleInfo*  
 &emsp;Type: [ModuleInfo](moduleinfo-data-type.md)  

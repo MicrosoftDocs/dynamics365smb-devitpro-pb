@@ -5,7 +5,7 @@ ms.custom: bap-template
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
-ms.date: 04/01/2021
+ms.date: 04/14/2024
 ms.service: dynamics-365-op
 ---
 # Administration of Business Central On-Premises

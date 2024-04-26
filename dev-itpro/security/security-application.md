@@ -1,9 +1,7 @@
 ---
 title: "Layered security model in Business Central"
 description: Helps you understand and improve the security of your Business Central application regardless of where it's hosted.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -26,9 +24,11 @@ Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod
 
 <!-- [User Authentication](user-security.md#user-authentication)  -->
 
-[Authentication and Credential Types](../administration/users-credential-types.md)
+[Set up Business Central Access with Microsoft 365 Licenses](/dynamics365/business-central/admin-access-with-m365-license)
 
-[Multifactor Authentication](multifactor-authentication.md)<!--note from editor: "Multifactor" is never hyphenated, via Microsoft Writing Style Guide.-->
+[Authentication and Credential Types (on-premises only)](../administration/users-credential-types.md)
+
+[Set up Multifactor Authentication (MFA)](multifactor-authentication.md)<!--note from editor: "Multifactor" is never hyphenated, via Microsoft Writing Style Guide.-->
 
 The authentication method configured for Business Central Server is also used to access web services. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md).
 

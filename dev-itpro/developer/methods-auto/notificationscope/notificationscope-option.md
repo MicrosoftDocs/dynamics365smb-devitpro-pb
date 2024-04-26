@@ -2,9 +2,8 @@
 title: "NotificationScope System Option"
 description: "Specifies the context in which the notification appears in the client."
 ms.author: solsen
-ms.custom: na
-ms.date: 05/11/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

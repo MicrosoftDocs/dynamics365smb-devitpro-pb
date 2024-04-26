@@ -2,9 +2,8 @@
 title: "AppSourceCop Error AS0077"
 description: "Adding a var modifier in events is not allowed as it might break the runtime behavior of extensions subscribing to it."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/19/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

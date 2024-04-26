@@ -2,9 +2,8 @@
 title: "XmlDeclaration.AsXmlNode() Method"
 description: "Converts the node to an XmlNode."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Converts the node to an XmlNode.
 ```AL
 XmlNode :=   XmlDeclaration.AsXmlNode()
 ```
-
 ## Parameters
 *XmlDeclaration*  
 &emsp;Type: [XmlDeclaration](xmldeclaration-data-type.md)  

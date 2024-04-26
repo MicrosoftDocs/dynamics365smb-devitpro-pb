@@ -2,9 +2,8 @@
 title: "Compiler Warning AL0659"
 description: "The length of the enum identifier '{0}' should not exceed {1} characters as it may result in runtime issues in cases where there are other enums with the same first {1} characters."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The length of the enum identifier '{0}' should not exceed {1} characters as it may result in runtime issues in cases where there are other enums with the same first {1} characters.
+
 
 ## Description
 The length of an enum identifier should not exceed 30 characters.  

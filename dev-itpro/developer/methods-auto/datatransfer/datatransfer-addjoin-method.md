@@ -2,9 +2,8 @@
 title: "DataTransfer.AddJoin(Integer, Integer) Method"
 description: "Adds a field pair to be used to create a join condition which determines which rows to transfer, optional for same table transfers."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/11/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

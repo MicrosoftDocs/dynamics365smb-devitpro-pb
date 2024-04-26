@@ -2,9 +2,8 @@
 title: "Report.Preview() Method"
 description: "Indicates whether a report is being printed in preview mode."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/18/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

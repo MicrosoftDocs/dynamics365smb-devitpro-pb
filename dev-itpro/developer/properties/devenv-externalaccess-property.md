@@ -2,9 +2,8 @@
 title: "ExternalAccess Property"
 description: "Specifies the type of access to the original table field in the external database."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

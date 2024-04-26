@@ -2,9 +2,8 @@
 title: "Record.CalcSums(Any [, Any,...]) Method"
 description: "Calculates the total of a column in a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -29,6 +28,7 @@ An instance of the [Record](record-data-type.md) data type.
 *Field1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
   
+
 *[Optional] Field2*  
 &emsp;Type: [Any](../any/any-data-type.md)  
   

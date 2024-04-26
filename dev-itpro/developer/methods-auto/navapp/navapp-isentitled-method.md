@@ -2,9 +2,8 @@
 title: "NavApp.IsEntitled(Text [, Guid]) Method"
 description: "Determines if the current user is entitled to a specific entitlement id for the application."
 ms.author: solsen
-ms.custom: na
-ms.date: 02/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -40,7 +39,13 @@ The ID of the application for which to retrieve information, defaults to the cur
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+
+## Remarks
+
+For examples on how to use this method, see [Entitlement object](../../devenv-entitlement-object.md#entitlement-example---testing-for-entitlements-in-code).
+
+## See also
+
 [NavApp Data Type](navapp-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

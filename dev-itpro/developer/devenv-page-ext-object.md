@@ -2,9 +2,7 @@
 title: "Page Extension Object"
 description: "Description of the page extension object in AL for Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 01/08/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -37,6 +35,12 @@ Typing the shortcut `tpageext` will create the basic layout for a page extension
 ## Views
 
 Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customization](devenv-page-customization-object.md). For more information, see [Views](devenv-views.md).
+
+## Add tooltips on page fields
+
+Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that uses the field automatically inherits the tooltip. 
+
+For more information, see [Add tooltips to table and page fields](devenv-adding-tooltips.md).
 
 ## Using keywords to place actions and controls
 
@@ -143,7 +147,7 @@ tableextension 50115 RetailWinterSportsStore extends Customer
         }
     }
 
-    procedure HasShoeSize() : Boolean;
+    procedure HasShoeSize() : Boolean
     begin
         exit(ShoeSize <> 0);
     end;

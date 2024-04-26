@@ -2,9 +2,8 @@
 title: "InStream.Position([BigInteger]) Method"
 description: "Get or set the current stream position in seekable streams."
 ms.author: solsen
-ms.custom: na
-ms.date: 02/27/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -1,17 +1,15 @@
 ---
-title: "HTTP, JSON, TextBuilder, and XML API Overview"
-description: "Overview of the API capabilities."
+title: HTTP, JSON, TextBuilder, and XML API overview
+description: Overview of the API capabilities in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.date: 03/19/2024
 ms.topic: overview
 ms.author: solsen
 ---
 
-# HTTP, JSON, TextBuilder, and XML API Overview
+# HTTP, JSON, TextBuilder, and XML API overview
 
-With the API for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you have HTTP, JSON, TextBuilder, and XML classes available for accessing services. The following table shows the classes that are available. 
+AL has a number of data types available for accessing services. The following table shows the data types that are available to use in AL for [!INCLUDE [prod_short](includes/prod_short.md)].
 
 ## API reference
 
@@ -45,7 +43,7 @@ With the API for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you ha
 
 ## See Also
 
-[Developing Extensions](devenv-dev-overview.md)  
-[Get Started with AL](devenv-get-started.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[Data Types and Methods in AL](methods-auto/library.md)
+[Developing extensions](devenv-dev-overview.md)  
+[Get started with AL](devenv-get-started.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Data types and methods in AL](methods-auto/library.md)

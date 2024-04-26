@@ -1,9 +1,7 @@
 ---
 title: "Web Client URL"
 description: Learn about the URL for opening the Web client. 
-ms.custom: na
 ms.date: 08/30/2022
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

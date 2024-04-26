@@ -2,9 +2,8 @@
 title: "Compiler Error AL0774"
 description: "Try methods should not specify an explicit return value, because the value will be discarded."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/20/2023
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

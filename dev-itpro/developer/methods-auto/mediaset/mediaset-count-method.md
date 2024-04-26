@@ -2,9 +2,8 @@
 title: "MediaSet.Count() Method"
 description: "Gets the number of media objects that are included in the MediaSet of a record."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -23,7 +22,6 @@ Count :=   MediaSet.Count()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *MediaSet*  
 &emsp;Type: [MediaSet](mediaset-data-type.md)  

@@ -2,9 +2,8 @@
 title: "FilterPageBuilder.SetView(Text, Text) Method"
 description: "Sets the current filter view, which defines the sort order, key, and filters, for a record in a filter control on a filter page."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

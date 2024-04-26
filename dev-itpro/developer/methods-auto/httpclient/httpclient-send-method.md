@@ -2,9 +2,8 @@
 title: "HttpClient.Send(HttpRequestMessage, var HttpResponseMessage) Method"
 description: "Sends an HTTP request as an asynchronous operation."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -40,6 +39,7 @@ The response received from the remote endpoint.
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Ways that HttpClient.Send calls can fail
@@ -59,58 +59,57 @@ As an example of how to use the HttpClient.Send, we illustrate how to do a HTTP 
 The PATCH request is a partial update to an existing resource. It doesn't create a new resource, and it's not intended to replace an existing resource. Instead, it updates a resource only partially. To make an HTTP PATCH request, given an HttpClient and a URI, use the HttpClient.Send method:
 
 ```AL
-    local procedure PatchRequest(json: Text;) ResponseText: Text
-    var
-        Client: HttpClient;
-        RequestMessage: HttpRequestMessage;        
-        Content: HttpContent
-        ContentHeaders: HttpHeaders;
-        IsSuccessful: Boolean;
-        Response: HttpResponseMessage;
-        ResponseText: Text;
-    begin
-        Content.GetHeaders(ContentHeaders);
+local procedure PatchRequest(json: Text) ResponseText: Text
+var
+    Client: HttpClient;
+    Content: HttpContent;
+    ContentHeaders: HttpHeaders;
+    RequestMessage: HttpRequestMessage;        
+    Response: HttpResponseMessage;
+    IsSuccessful: Boolean;
+begin
+    Content.GetHeaders(ContentHeaders);
 
-        if ContentHeaders.Contains('Content-Type') then headers.Remove('Content-Type');
-        ContentHeaders.Add('Content-Type', 'application/json');
+    if ContentHeaders.Contains('Content-Type') then ContentHeaders.Remove('Content-Type');
+    ContentHeaders.Add('Content-Type', 'application/json');
 
-        if ContentHeaders.Contains('Content-Encoding') then headers.Remove('Content-Encoding');
-        ContentHeaders.Add('Content-Encoding', 'UTF8');
-        
-        // assume that the json parameter contains the following data
-        //
-        // {
-        //    title = "updated title",
-        //    completed = true
-        // }
-        Content.WriteFrom(json);
+    if ContentHeaders.Contains('Content-Encoding') then ContentHeaders.Remove('Content-Encoding');
+    ContentHeaders.Add('Content-Encoding', 'UTF8');
 
-        RequestMessage.SetRequestUri('https://jsonplaceholder.typicode.com/todos/1');
-        RequestMessage.Method('PATCH');
-        RequestMessage.Content(Content);
+    // assume that the json parameter contains the following data
+    //
+    // {
+    //    title = "updated title",
+    //    completed = true
+    // }
+    Content.WriteFrom(json);
 
-        IsSuccessful := Client.Send(RequestMessage, Response);
+    RequestMessage.SetRequestUri('https://jsonplaceholder.typicode.com/todos/1');
+    RequestMessage.Method('PATCH');
+    RequestMessage.Content(Content);
 
-        if not IsSuccessful then begin
-            // handle the error
-        end;
+    IsSuccessful := Client.Send(RequestMessage, Response);
 
-        if not Response.IsSuccessStatusCode() then begin
-            HttpStatusCode := response.HttpStatusCode();
-            // handle the error (depending on the HTTP status code)
-        end;
-
-        Response.Content().ReadAs(ResponseText);
-
-        // Expected output
-        //   PATCH https://jsonplaceholder.typicode.com/todos/1 HTTP/1.1
-        //   {
-        //     "userId": 1,
-        //     "id": 1,
-        //     "title": "updated title",
-        //     "completed": true
-        //   }
+    if not IsSuccessful then begin
+        // handle the error
     end;
+
+    if not Response.IsSuccessStatusCode() then begin
+        HttpStatusCode := Response.HttpStatusCode();
+        // handle the error (depending on the HTTP status code)
+    end;
+
+    Response.Content().ReadAs(ResponseText);
+
+    // Expected output
+    //   PATCH https://jsonplaceholder.typicode.com/todos/1 HTTP/1.1
+    //   {
+    //     "userId": 1,
+    //     "id": 1,
+    //     "title": "updated title",
+    //     "completed": true
+    //   }
+end;
 ```
 
 The preceding code:

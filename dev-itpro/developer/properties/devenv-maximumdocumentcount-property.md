@@ -2,9 +2,8 @@
 title: "MaximumDocumentCount Property"
 description: "Sets the maximum document count when generating a report by using WordMergerDataItem."
 ms.author: solsen
-ms.custom: bap-template
-ms.date: 01/18/2024
-ms.reviewer: jswymer
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

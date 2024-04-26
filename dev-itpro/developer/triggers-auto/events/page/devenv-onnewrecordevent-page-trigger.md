@@ -2,9 +2,8 @@
 title: "OnNewRecordEvent (Page) Trigger Event"
 description: "Executed after the OnNewRecord trigger, which is called before a new record is initialized."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/20/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

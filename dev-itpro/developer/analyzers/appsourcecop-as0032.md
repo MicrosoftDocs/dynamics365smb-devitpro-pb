@@ -2,9 +2,8 @@
 title: "AppSourceCop Error AS0032"
 description: "Controls that have been published must not be deleted, because it will break dependent extensions."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/03/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

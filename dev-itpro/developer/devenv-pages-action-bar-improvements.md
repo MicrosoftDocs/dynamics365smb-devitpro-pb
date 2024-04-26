@@ -3,10 +3,8 @@ title: "Pages with Action Bar Improvements"
 description: "Overview of pages in Dynamics 365 Business Central that contain the action bar improvements"
 author: jacobwj
 ms.author: solsen
-ms.reviewer: 
 ms.topic: conceptual
 ms.date: 11/03/2022
-ms.custom: na
 ---
 
 # Pages with Action Bar Improvements

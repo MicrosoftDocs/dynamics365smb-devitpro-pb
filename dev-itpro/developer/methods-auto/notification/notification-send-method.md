@@ -2,9 +2,8 @@
 title: "Notification.Send() Method"
 description: "Sends the notification to the client, where it will display in the UI."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Sends the notification to the client, where it will display in the UI.
 ```AL
 [Ok := ]  Notification.Send()
 ```
-
 ## Parameters
 *Notification*  
 &emsp;Type: [Notification](notification-data-type.md)  

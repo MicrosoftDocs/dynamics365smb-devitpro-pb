@@ -2,9 +2,8 @@
 title: "TestRequestPage.Print() Method"
 description: "Gets a the Print representing an action on the Page under Test."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Gets a the Print representing an action on the Page under Test.
 ```AL
 Action :=   TestRequestPage.Print()
 ```
-
 ## Parameters
 *TestRequestPage*  
 &emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  

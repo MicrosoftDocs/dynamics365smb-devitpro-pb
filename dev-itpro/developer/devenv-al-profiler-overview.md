@@ -2,8 +2,7 @@
 title: AL Profiler overview
 description: Description of how to use the AL profiler and the Performance Profiler to analyze performance in code written for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 08/30/2023
+ms.date: 03/01/2024
 ms.topic: overview
 ms.author: solsen
 ms.collection: get-started
@@ -13,7 +12,7 @@ ms.collection: get-started
 
 [!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)] and updated with sampling profiling for Business Central 2022 release wave 1.
 
-Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for *instrumentation* profiling and *sampling* profiling.
+Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for *instrumentation* profiling and *sampling* profiling. The AL Profiler is based on a snapshot of running code. The snapshot is a recording of running code that allows for later offline inspection. The AL Profiler is a powerful tool for analyzing performance in code written for Business Central.
 
 ## Snapshot of the running code
 
@@ -203,9 +202,9 @@ There are a few server restrictions for sampling profiling to be aware of:
 
 In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. This allows for recording of a process that seems slow directly in [!INCLUDE [prod_short](includes/prod_short.md)]. When the Performance Profiler has run and recorded a process in [!INCLUDE [prod_short](includes/prod_short.md)], it generates a `.alcpuprofile` file, which can be downloaded and shared using OneDrive. When receiving such a `.alcpuprofile` file, it can be opened in another [!INCLUDE [prod_short](includes/prod_short.md)] Performance Profiler, or in Visual Studio Code and further investigated. For more information, see [In-client Performance Profiler overview](../administration/performance-profiler-overview.md).
 
-## See Also
+## See also
 
-[Snapshot Debugging](devenv-snapshot-debugging.md)  
-[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
-[In-client Performance Profiler overview](../administration/performance-profiler-overview.md)  
+[Snapshot debugging](devenv-snapshot-debugging.md)  
+[AL Language extension configuration](devenv-al-extension-configuration.md)  
+[In-client performance profiler overview](../administration/performance-profiler-overview.md)  
 [JSON files](devenv-json-files.md)  

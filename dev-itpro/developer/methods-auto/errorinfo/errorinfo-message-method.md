@@ -2,9 +2,8 @@
 title: "ErrorInfo.Message([Text]) Method"
 description: "Specifies the message that will be sent to telemetry."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/03/2024
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

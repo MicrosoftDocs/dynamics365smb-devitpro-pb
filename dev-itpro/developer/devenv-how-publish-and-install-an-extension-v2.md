@@ -2,9 +2,7 @@
 title: "How to: Publish and Install an Extension"
 description: "Description of the process of publishing and installing an extension"
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ---

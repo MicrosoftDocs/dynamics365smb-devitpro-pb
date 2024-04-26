@@ -2,9 +2,8 @@
 title: "JsonToken.ReadFrom(Text) Method"
 description: "Reads the JSON data from the string into a JsonToken variable."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -52,7 +51,7 @@ Clear(JsonToken)
 This example shows how to read JSON data from a string into a JsonToken variable.
 
 ```al
-local procedure ReadJson(data : Text) result : JsonToken;
+local procedure ReadJson(data : Text) result : JsonToken
 begin
     result.ReadFrom(data);    
 end;

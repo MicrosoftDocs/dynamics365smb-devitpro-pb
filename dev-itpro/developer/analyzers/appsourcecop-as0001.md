@@ -2,9 +2,8 @@
 title: "AppSourceCop Error AS0001"
 description: "Tables and table extensions that have been published must not be deleted."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

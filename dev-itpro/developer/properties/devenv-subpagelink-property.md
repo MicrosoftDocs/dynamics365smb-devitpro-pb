@@ -2,9 +2,8 @@
 title: "SubPageLink Property"
 description: "Sets a link to a Factbox from a page."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

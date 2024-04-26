@@ -2,9 +2,8 @@
 title: "AppSourceCop Error AS0062"
 description: "Page controls and actions must use the ApplicationArea property to be visible to users."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/26/2022
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

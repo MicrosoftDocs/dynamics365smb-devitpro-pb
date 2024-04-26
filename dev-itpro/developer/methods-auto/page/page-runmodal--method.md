@@ -2,9 +2,8 @@
 title: "Page.RunModal() Method"
 description: "Creates, opens, and closes a page that you specify."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Creates, opens, and closes a page that you specify. When a page is run modally, 
 ```AL
 [Action := ]  Page.RunModal()
 ```
-
 ## Parameters
 *Page*  
 &emsp;Type: [Page](page-data-type.md)  

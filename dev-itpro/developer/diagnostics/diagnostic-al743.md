@@ -1,10 +1,9 @@
 ---
 title: "Compiler Warning (Future Error) AL0743"
-description: "The property '{0}' is not valid for the cue action '{1}'."
+description: "The property '{0}' is not valid for action '{1}' defined in control '{2}' of type '{3}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/04/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -15,7 +14,8 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The property '{0}' is not valid for the cue action '{1}'.
+The property '{0}' is not valid for action '{1}' defined in control '{2}' of type '{3}'.
+
 
 > [!IMPORTANT]
 > This warning will become an error with Business Central 2023 release wave 2.  

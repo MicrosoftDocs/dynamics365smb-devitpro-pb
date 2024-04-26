@@ -2,9 +2,8 @@
 title: "Debugger.IsBreakpointHit() Method"
 description: "Specifies if a breakpoint is hit in a debugging session."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Specifies if a breakpoint is hit in a debugging session.
 ```AL
 Ok :=   Debugger.IsBreakpointHit()
 ```
-
 
 ## Return Value
 *Ok*  

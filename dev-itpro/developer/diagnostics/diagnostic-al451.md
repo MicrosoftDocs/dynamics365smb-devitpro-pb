@@ -2,9 +2,8 @@
 title: "Compiler Error AL0451"
 description: "An assembly named '{0}' could not be found in the assembly probing paths '{1}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 An assembly named '{0}' could not be found in the assembly probing paths '{1}'.
+
 
 ## Description
 The referenced assembly could not be found in the assembly probing paths. You must add the path of the folder containing the assembly to the Al: Assembly Probing Paths setting on the User Settings or Workspace Settings so the compiler can access it.  

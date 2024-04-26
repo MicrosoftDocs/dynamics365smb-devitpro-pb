@@ -45,7 +45,7 @@ The OnBeforeGetPageSummary event subscription has the following syntax:
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnBeforeGetPageSummary', '', false, false)]
-local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray; Handled: Boolean);
+local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray; Handled: Boolean)
 ```
 
 #### Parameters
@@ -111,7 +111,7 @@ The OnAfterGetSummaryFields event lets you add or remove from the set of fields 
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetSummaryFields', '', false, false)]
-local procedure OnAfterGetSummaryFields(PageId: Integer; RecId: RecordId; var FieldList: List of [Integer]);
+local procedure OnAfterGetSummaryFields(PageId: Integer; RecId: RecordId; var FieldList: List of [Integer])
 ```
 
 #### Parameters
@@ -173,7 +173,7 @@ This event allows you to modify, add, or remove fields included in the card thro
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetPageSummary', '', false, false)]
-local procedure OnAfterGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray);
+local procedure OnAfterGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray)
 ```
 
 #### Parameters

@@ -2,9 +2,8 @@
 title: "Compiler Error AL1067"
 description: "Duplicate package dependency with publisher '{0}', and name '{1}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 03/11/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Duplicate package dependency with publisher '{0}', and name '{1}'. Remove duplicate dependencies in the application manifest.
+
 
 ## Description
 Multiple package dependencies with the same publisher and name have been defined.  

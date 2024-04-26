@@ -2,9 +2,8 @@
 title: "FieldRef.CalcSum() Method"
 description: "Calculates the total of all values of a SumIndexField in a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 02/26/2024
+ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,6 @@ Calculates the total of all values of a SumIndexField in a table.
 ```AL
 [Ok := ]  FieldRef.CalcSum()
 ```
-
 ## Parameters
 *FieldRef*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  
