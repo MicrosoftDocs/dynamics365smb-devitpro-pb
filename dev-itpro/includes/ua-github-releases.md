@@ -1,8 +1,8 @@
 ---
-author: edupont04
+author: jswymer
 ms.topic: include
 ms.date: 04/01/2021
-ms.author: edupont
+ms.author: jswymer
 ---
 The source repo, *dynamics365smb-docs*, contains packages of Markdown files for major versions and snapshots of the docs for the previous minor version.
 
