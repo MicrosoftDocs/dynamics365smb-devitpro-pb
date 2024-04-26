@@ -3,8 +3,7 @@ title: Relational operators
 description: Description of the relational operators in AL and how they are used to compare expressions, as well as valid uses of relational operators.
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 01/15/2024
-ms.custom: bap-template
+ms.date: 04/26/2024
 ms.author: solsen
 author: KennieNP
 ms.collection: get-started

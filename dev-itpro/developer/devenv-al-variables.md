@@ -3,8 +3,7 @@ title: AL variables
 description: Description of AL user-defined and system-defined variables.
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 01/15/2024
-ms.custom: bap-template
+ms.date: 04/26/2024
 author: KennieNP
 ms.author: solsen
 ms.collection: get-started

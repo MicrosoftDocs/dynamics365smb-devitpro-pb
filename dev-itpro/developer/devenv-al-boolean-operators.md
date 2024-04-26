@@ -1,10 +1,9 @@
 ---
 title: Boolean operators
-description: Description of the Boolean operators in AL
+description: Description of the Boolean operators in AL for Business Central.
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 01/15/2024
-ms.custom: bap-template
+ms.date: 04/26/2024
 ms.author: solsen
 author: KennieNP
 ms.collection: get-started
