@@ -41,29 +41,27 @@ For more information about current limitations on the table object, see [Object 
 
 ## System fields
 
-The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform will automatically add several system fields to tables. For more information, see [System Fields](devenv-table-system-fields.md).
+The [!INCLUDE [prod_short](includes/prod_short.md)] platform automatically adds several system fields to tables. For more information, see [System fields](devenv-table-system-fields.md).
 
 
 ## Defining default values for fields
 
-It is commonly used to have field value set to a default value. To do this, you set the `InitValue` property on the field. 
+It's commonly used to have field value set to a default value. To do this, you set the `InitValue` property on the field. 
 
-For more information, see [InitValue Property](properties/devenv-initvalue-property.md).
+For more information, see [InitValue property](properties/devenv-initvalue-property.md).
 
 
 ## Defining validation rules for fields
 
 If you want to run business logic to validate the value of a field, you can define the `OnValidate` trigger on the field. 
 
-For more information, see [OnValidate (Field) Trigger](triggers-auto/field/devenv-onvalidate-field-trigger.md).
-
+For more information, see [OnValidate (Field) trigger](triggers-auto/field/devenv-onvalidate-field-trigger.md).
 
 ## Snippet support
 
 Typing the shortcut `ttable` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
-
 
 ## Add tooltips on table fields
 

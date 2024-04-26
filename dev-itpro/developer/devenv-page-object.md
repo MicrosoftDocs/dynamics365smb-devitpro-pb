@@ -5,6 +5,8 @@ author: SusanneWindfeldPedersen
 ms.date: 04/26/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.custom: evergreen
+ms.collection: get-started
 ---
 
 # Page object
