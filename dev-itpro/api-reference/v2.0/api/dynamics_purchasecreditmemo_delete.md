@@ -1,5 +1,5 @@
 ---
-title: Delete purchaseCreditMemoes
+title: Delete purchaseCreditMemos
 description: Deletes a purchase credit memo object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: dynamics-365-business-central
@@ -13,7 +13,7 @@ ms.author: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Delete purchaseCreditMemoes
+# Delete purchaseCreditMemos
 
 Deletes a purchase credit memo from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
@@ -22,7 +22,7 @@ Deletes a purchase credit memo from [!INCLUDE[prod_short](../../../includes/prod
 Replaces the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
 ```
-DELETE businesscentralPrefix/companies({id})/purchaseCreditMemoes({id})
+DELETE businesscentralPrefix/companies({id})/purchaseCreditMemos({id})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
@@ -48,7 +48,7 @@ If successful, this method returns ```204 No Content``` response code and delete
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
-DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemoes({id})
+DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemos({id})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 **Response**
