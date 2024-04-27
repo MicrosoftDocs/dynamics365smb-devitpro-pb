@@ -48,4 +48,3 @@ profile MyProfile
 
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  
-[InDataSet Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute)
