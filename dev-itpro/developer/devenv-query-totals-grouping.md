@@ -198,7 +198,7 @@ In SQL SELECT statements, the Count method corresponds to a COUNT\(\*\) or COUNT
 
 ## Using a Query to Get Distinct Values
 
-When working with table data, you might need to get a list of distinct values from the table (in SQL, this would correspond to a SELECT DISTINCT statement). This operation is not supported out-of-the-box in AL, but you can use a query using an agggregation to implement this. 
+When working with table data, you might need to get a list of distinct values from the table (in SQL, this would correspond to a SELECT DISTINCT statement). This operation isn't supported out-of-the-box in AL, but you can use a query using an aggregation to implement it. 
 
 This AL example code shows how you can encode distinct into a query using an aggregation.
 
@@ -227,7 +227,7 @@ query 50150 DistinctValuesQuery
 }
 ```
 
-This AL example code shows how you can then query for the distinct values (not that the Count column is not used here).
+This AL example code shows how you can then query for the distinct values (note that the Count column isn't used here).
 
 ```AL
 trigger OnAction()
