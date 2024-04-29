@@ -24,7 +24,7 @@ The name '{0}' cannot be used as an identifier because it does not comply with t
 For more information about Common Language Specification, see:
 
 [What is the Common Language Specification](/previous-versions/dotnet/netframework-1.1/12a7a7h3(v=vs.71))  
-[Unicode Normalization Forms](www.unicode.org/unicode/reports/tr15/tr15-18.html)  
+[Unicode Normalization Forms](https://www.unicode.org/unicode/reports/tr15/tr15-18.html)  
 
 ## See Also  
 [Get Started with AL](../devenv-get-started.md)  
