@@ -1,15 +1,15 @@
 ---
-title: "Best Practices for AL code"
-description: "Best Practices for writing AL code for Business Central."
+title: Best practices for AL code
+description: Best practices for writing AL code for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 04/11/2023
+ms.date: 04/26/2024
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Best Practices for AL  
+# Best practices for AL  
 
-This page defines some of the best practices to follow when writing AL code for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These best practices are additional to rules and guidelines that are caught during compilation of AL code. We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
+This page defines some of the best practices to follow when writing AL code for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These best practices are additive to rules and guidelines that are caught during compilation of AL code. We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
 
 > [!TIP]  
 > Check out the great work that is going on at [https://alguidelines.dev/](https://alguidelines.dev/). New design patterns and best practices are being established, so join the discussions, and contribute through [GitHub](https://github.com/microsoft/alguidelines).
@@ -107,13 +107,13 @@ codeunit 70000000 MyPrefixSalesperson
 
 We recommend keeping your AL code properly formatted as follows:
 
-- Use all lowercase letters for reserved language keywords. Built-in methods and types are not included in this rule because they're written using Pascal case. 
+- Use all lowercase letters for reserved language keywords. Built-in methods and types aren't included in this rule because they're written using Pascal case. 
 - Use four spaces for indentation. 
 - Curly brackets are always on a new line. If there's one property, put it on a single line. 
 
 The following example illustrates these formatting rules. 
 
-```
+```al
 page 123 PageName
 {
     actions
@@ -204,7 +204,7 @@ Furthermore:
 
 ### Example
 
-```
+```al
 TempCustomer: Record Customer temporary;
 Vendor: Record Vendor; 
 ```
@@ -220,7 +220,7 @@ To declare a method, follow these guidelines:
 
 ### Example
  
-```
+```al
 local procedure MyProcedure(Customer: Record Customer; Int: Integer)
 begin
 end;
@@ -239,7 +239,7 @@ When calling a method, include one space after each command if you're passing mu
 
 ### Example
 
-```
+```al
 MyProcedure();
 MyProcedure(1);
 MyProcedure(1, 2); 
@@ -249,15 +249,15 @@ MyProcedure(1, 2);
 
 When you declare a variable or a parameter, the name of that variable or parameter must be immediately followed by a colon, then a single space, and then the type of the variable/parameter as illustrated in the example.
 
-```
+```al
 var
     Number: Integer;
 
 local procedure MyProcedure(a: Integer; b: Integer): Integer 
 ```
 
-## See Also
+## See also
 
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
-[Rules and Guidelines for AL Code](apptest-overview.md)  
-[Using the Code Analysis Tool](../developer/devenv-using-code-analysis-tool.md)
+[Checklist for submitting your app](../developer/devenv-checklist-submission.md)  
+[Rules and guidelines for AL code](apptest-overview.md)  
+[Using the code analysis tool](../developer/devenv-using-code-analysis-tool.md)

@@ -4,6 +4,7 @@ description: Describes the system-defined variables that are automatically decla
 ms.date: 04/26/2024
 ms.reviewer: solsen
 ms.topic: conceptual
+ms.custom: evergreen
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.collection: get-started
@@ -11,7 +12,7 @@ ms.collection: get-started
 
 # System-defined variables
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] automatically declares and initializes several variables that you can use when you develop applications. The following table describes the system-defined variables.  
+[!INCLUDE [prod_short](includes/prod_short.md)] automatically declares and initializes several variables that you can use when you develop applications. The following table describes the system-defined variables.  
 
 |System-defined variable|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|  
 |------------------------------|---------------------------------------|  
@@ -52,4 +53,3 @@ You can access properties of the request page through the RequestOptionsPage var
 [AL variables](devenv-al-variables.md)  
 [AL method reference](methods-auto/library.md)  
 [Properties](properties/devenv-properties.md)  
-

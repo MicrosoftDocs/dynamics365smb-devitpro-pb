@@ -1,9 +1,8 @@
 ---
-title: "Data Types and Methods in AL"
-description: ""
+title: Data types and methods in AL
+description: Learn about the data types and methods that are available in the AL Language.
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 04/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

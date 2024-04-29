@@ -1,8 +1,8 @@
 ---
-author: edupont04
+author: jswymer
 ms.topic: include
 ms.date: 04/01/2021
-ms.author: edupont
+ms.author: jswymer
 ---
 The Microsoft user assistance model requires a tooltip for all controls of type Action and Field that exist on page objects. Follow these guidelines:
 

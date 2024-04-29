@@ -7498,8 +7498,53 @@
     "source_path": "dev-itpro/developer/properties/devenv-table-properties.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-table-property-overview",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/resources/dynamics_externalbusinesseventdefinitions.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index.",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externalbusinesseventdefinitions_get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index.",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/resources/dynamics_apicategoryroutes.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index.",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_apicategoryroutes_get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index.",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/resources/dynamics_externaleventsubscriptions.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index.",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externaleventsubscriptions_update.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index.",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externaleventsubscriptions_get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index.",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externaleventsubscriptions_delete.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index.",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externaleventsubscriptions_create.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index.",
+    "redirect_document_id": false
    }
-   
+ 
   ] 
 }
 

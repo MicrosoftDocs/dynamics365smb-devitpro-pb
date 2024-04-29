@@ -2,7 +2,7 @@
 title: Application Validation Service diagnostics overview
 description: The application validation service diagnostics.
 ms.author: thpeder
-ms.date: 05/18/2022
+ms.date: 04/26/2024
 ms.reviewer: solsen
 ms.topic: reference
 author: thpeder

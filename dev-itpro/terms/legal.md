@@ -5,8 +5,9 @@ author: jswymer
 ms.custom: na
 ms.topic: article
 ms.date: 01/08/2024
-ms.author: edupont
+ms.author: jswymer
 ---
+
 # Legal landing page for Microsoft Dynamics 365 Business Central Online
 
 This article provides links to legal information for [!INCLUDE [prod_short](../includes/prod_short.md)] online.  
