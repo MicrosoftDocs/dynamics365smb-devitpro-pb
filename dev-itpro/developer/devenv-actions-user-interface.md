@@ -29,7 +29,7 @@ In addition to actions at the page-level, each part on a page may have specific 
 
 :::image type="content" source="../media/part-level-actions.png" alt-text="Part-level actions":::
 
-## Application actions 
+## Application action guidelines
 
 Achieving a great user experience starts with organizing the page-level actions to suit users’ needs and expectations. Consider the tasks that users have with the page, the type of page you place actions in, and the total set of actions in the page. In the following, we describe these considerations in more detail. 
 
@@ -65,6 +65,7 @@ It's possible to show an action group as a split button to get better discoverab
 
 Don't use split buttons for action groups with actions that the user isn't perceiving as related. 
 
+For more information about split button groups, see [Split buttons for actions](devenv-promoted-actions.md#split-buttons-for-actions).
 
 ## See also
 

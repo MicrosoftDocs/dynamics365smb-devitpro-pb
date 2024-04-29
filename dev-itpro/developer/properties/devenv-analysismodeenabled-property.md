@@ -32,7 +32,7 @@ AnalysisModeEnabled = true|false;
 
 ## Remarks
 
-The analysis mode enables users to analyze data directly from the page, without having to run a report or switch another application like Excel. It provides an interactive and versatile way to calculate, summarize, and examine data. [Learn more about the analysis mode](/dynamics365/business-central/analysis-mode) in the business functionality help.
+Data analysis mode enables users to analyze data directly from the page, without having to run a report or switch another application like Excel. It provides an interactive and versatile way to calculate, summarize, and examine data. [Learn more about data analysis mode](/dynamics365/business-central/analysis-mode) in the business functionality help.
 
 ## See also
 [Getting Started with AL](../devenv-get-started.md)  

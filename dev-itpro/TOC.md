@@ -771,12 +771,10 @@
 ##### [Using request pages with XMLports](developer/devenv-request-pages.md)
 
 
-### Pages and user interfaces
+### Pages and the user interface
+#### [Designing the user interface](developer/devenv-designing-user-interfaces.md)
 #### [Customizing for user roles](developer/devenv-role-customization.md)
-#### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
-#### Creating deep links
-##### [Web client URL](developer/devenv-web-client-urls.md)
-##### [Business Central app URL](developer/devenv-link-to-mobile-app.md)
+
 #### Role centers
 ##### [Designing role centers](developer/devenv-designing-role-centers.md)
 ##### [Sample role center](developer/devenv-simple-role-center-example.md)
@@ -784,65 +782,81 @@
 ##### [Adding a checklist to the role center](administration/onboarding-checklist.md)
 ##### [Headlines](developer/devenv-create-role-center-headline.md)
 ##### [Cues and action tiles](developer/devenv-cues-action-tiles.md)
+
 #### Pages
 ##### [Pages overview](developer/devenv-pages-overview.md)
 ##### [Page object](developer/devenv-page-object.md)
 ##### [Page extension object](developer/devenv-page-ext-object.md)
-##### [Adding tooltips to page fields](developer/devenv-adding-tooltips.md)
-##### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
-#### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
-##### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
-##### List pages
-###### [Designing list pages](developer/devenv-designing-list-pages.md)
-###### [Sample list page](developer/devenv-simple-list-page-example.md)
-###### [Repeater controls](developer/devenv-repeater-controls.md)
-###### [Displaying data as tiles](developer/devenv-lists-as-tiles.md)
-###### Views
-####### [Designing views](developer/devenv-views.md)
-####### [Migrating from legacy to modern views](developer/devenv-views-legacy.md)
-###### [Adding filter tokens](developer/devenv-adding-filter-tokens.md)
-###### [Designing indented lists](developer/devenv-indented-hierarchy-lists.md)
-###### [Adding teaching tips to list pages](administration/onboarding-teaching-tips-tours.md)
-##### Card pages
-###### [Designing card pages](developer/devenv-designing-card-pages.md)
-###### [Sample card page](developer/devenv-simple-card-page-example.md)
-###### [Adding teaching tips to card pages](administration/onboarding-teaching-tips-tours.md)
-##### [Assisted setup guides](developer/devenv-designing-navigate-pages.md)
-##### Page parts
-###### [Parts overview](developer/devenv-designing-parts.md)
-###### [Designing list parts](developer/devenv-designing-listparts.md)
-###### [Designing card parts](developer/devenv-designing-cardparts.md)
-###### [Designing headline parts](developer/devenv-create-role-center-headline.md)
-###### [Designing Power BI report parts](developer/devenv-power-bi-report-parts.md)
+
+##### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
+###### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
+###### List pages
+####### [Designing list pages](developer/devenv-designing-list-pages.md)
+####### [Sample list page](developer/devenv-simple-list-page-example.md)
+####### [Repeater controls](developer/devenv-repeater-controls.md)
+####### [Displaying data as tiles](developer/devenv-lists-as-tiles.md)
+####### [Adding filter tokens](developer/devenv-adding-filter-tokens.md)
+####### [Designing indented lists](developer/devenv-indented-hierarchy-lists.md)
+####### [Adding teaching tips to list pages](administration/onboarding-teaching-tips-tours.md)
+###### Card pages
+####### [Designing card pages](developer/devenv-designing-card-pages.md)
+####### [Sample card page](developer/devenv-simple-card-page-example.md)
+####### [Adding teaching tips to card pages](administration/onboarding-teaching-tips-tours.md)
+###### [Assisted setup guides](developer/devenv-designing-navigate-pages.md)
+###### Page parts
+####### [Parts overview](developer/devenv-designing-parts.md)
+####### [Designing list parts](developer/devenv-designing-listparts.md)
+####### [Designing card parts](developer/devenv-designing-cardparts.md)
+####### [Designing headline parts](developer/devenv-create-role-center-headline.md)
+####### [Designing Power BI report parts](developer/devenv-power-bi-report-parts.md)
 <!-- reenable when topics have been written
 ####### [Designing pages with multiple lists](developer/devenv-designing-multilist-pages.md)
 -->
-###### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
-#### Fields
-##### [Arranging fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
-##### [Grid controls](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
-##### [Fixed controls](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
-##### [Field groups](developer/devenv-field-groups.md)
-##### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate methods](developer/devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
-##### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
-##### [Rich Text and content controls](developer/devenv-richtext-content-controls.md)
+####### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
+
+##### Adding fields to pages
+###### [Arranging fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
+###### [Adding tooltips to page fields](developer/devenv-adding-tooltips.md)
+###### [Grid controls](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
+###### [Fixed controls](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
+###### [Field groups](developer/devenv-field-groups.md)
+###### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate methods](developer/#devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
+###### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
+###### [Rich Text and content controls](developer/devenv-richtext-content-controls.md)
+
+##### Page discoverability
+###### [Page discoverability overview](developer/devenv-page-discoverability.md)
+###### [Adding pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
+
+
 #### Actions
+##### [Actions in the user interface](developer/devenv-actions-user-interface.md)
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding actions to a page](developer/devenv-adding-actions-to-a-page.md)
-##### [Actions in the user interface](developer/devenv-actions-user-interface.md)
-#### Promoted actions
-##### [Promoted actions](developer/devenv-promoted-actions.md)
-##### [Organizing promoted actions](developer/devenv-organizing-promoted-actions.md)
-##### [Common promoted action groups](developer/devenv-common-promoted-action-groups.md)
-#### Modern action bar
-##### [Action bar improvements](developer/devenv-action-bar-improvements.md)
-##### [Behavioral changes for promoted actions](developer/devenv-promoted-actions-behavioral-changes.md)
-##### [pages with action bar improvements](developer/devenv-pages-action-bar-improvements.md)
+##### Promoted actions
+###### [Promoted actions](developer/devenv-promoted-actions.md)
+###### [Organizing promoted actions](developer/devenv-organizing-promoted-actions.md)
+###### [Common promoted action groups](developer/devenv-common-promoted-action-groups.md)
+##### Modern action bar
+###### [Action bar improvements](developer/devenv-action-bar-improvements.md)
+###### [Behavioral changes for promoted actions](developer/devenv-promoted-actions-behavioral-changes.md)
+###### [Pages with action bar improvements](developer/devenv-pages-action-bar-improvements.md)
+
+#### Views
+##### [Designing views](developer/devenv-views.md)
+##### [Migrating from legacy to modern views](developer/devenv-views-legacy.md)
+
 #### Profiles
 ##### [Designing profiles](developer/devenv-design-profiles.md)
 ##### [Profile object](developer/devenv-profile-object.md)
 ##### [Page customization object](developer/devenv-page-customization-object.md)
 ##### [Using the client to create profiles](developer/devenv-design-profiles-using-client.md)
+
+#### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
+
+#### Creating deep links
+##### [Web client URL](developer/devenv-web-client-urls.md)
+##### [Business Central app URL](developer/devenv-link-to-mobile-app.md)
 
 #### Control add-ins
 ##### [Control add-in style guide](developer/devenv-control-addin-style.md)
@@ -897,7 +911,14 @@
 #### Report discoverability
 ##### [Report discoverability overview](developer/devenv-reports-discoverability.md)
 ##### [Adding reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
-#### [Report triggers and operations](developer/devenv-report-triggers.md)
+#### Report triggers and events
+##### [Report triggers and operations](developer/devenv-report-triggers.md)
+##### Report events
+###### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
+###### [OnAfterDocumentReady](developer/devenv-onafterdocumentready-event.md)
+###### [OnAfterIntermediateDocumentReady](developer/devenv-onafterintermediatedocumentready-event.md)
+###### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
+###### [OnCustomDocumentMergerEx](developer/devenv-oncustomdocumentmergerex-event.md)
 #### [Substituting a report](developer/devenv-substituting-reports.md)
 #### [Testing a report](developer/devenv-testing-reports.md)
 #### [Report performance](developer/devenv-report-performance.md)
@@ -1090,7 +1111,7 @@
 <!-- Data analytics and reporting -->
 ## Data analytics and reporting
 ### [Analyzing, pivoting, and sharing data in Business Central](developer/devenv-reporting-options-overview.md)
-### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 ### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
 ### [Analyze data on lists and queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 ### [Queries in Business Central](developer/devenv-query-overview.md)  
@@ -1147,7 +1168,7 @@
 #### [Control add-in best practices](developer/devenv-control-addin-bestpractices.md)
 
 ### Embedding Power BI
-#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 #### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
 
 <!-- end Testing the application -->
@@ -1571,13 +1592,13 @@
 
 <!-- Microsoft Power BI -->
 ### Integrating with Microsoft Power BI
-#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 #### Administrator
-##### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview)
-##### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup)
+##### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### Report creator
-##### [Get started: Build Power BI reports](/dynamics365/business-central/#across-how-use-financials-data-source-powerbi)
-##### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
+##### [Get started: Build Power BI reports](/dynamics365/business-central/#across-how-use-financials-data-source-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
 #### [Extract data from Business Central](developer/devenv-extract-data.md)
 #### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
