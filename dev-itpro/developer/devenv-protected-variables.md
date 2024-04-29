@@ -4,6 +4,7 @@ description: The protected keyword can be used to make variables accessible betw
 ms.date: 01/05/2023
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 
 # Protected variables

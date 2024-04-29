@@ -1051,6 +1051,15 @@
 ### [Overview](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)
 ### [FAQ for developing in AL](developer/devenv-dev-faq.md)
+### Variables, types, and operators
+#### [AL operators](developer/devenv-al-operators.md)
+#### [Arithmetic operators](developer/devenv-al-arithmetic-operators.md)
+#### [Boolean operators](developer/devenv-al-boolean-operators.md)
+#### [Relational operators](developer/devenv-al-relational-operators.md)  
+#### [AL variables](developer/devenv-al-variables.md)
+#### [System-defined variables](developer/devenv-system-defined-variables.md)
+#### [Protected variables](developer/devenv-protected-variables.md)
+#### [AL type conversion in expressions](developer/devenv-al-type-conversion-expressions.md)
 ### [AL simple statements](developer/devenv-al-simple-statements.md)
 ### [AL control statements](developer/devenv-al-control-statements.md)
 ### [AL complex types](developer/devenv-al-complextypes.md)
@@ -1059,8 +1068,6 @@
 ### [AL code comments](developer/devenv-xml-comments.md)
 ### [Using access modifiers in AL](developer/devenv-using-access-modifiers.md)
 ### [Working with labels](developer/devenv-using-labels.md)
-### [System-defined variables](developer/devenv-system-defined-variables.md)
-### [Protected variables](developer/devenv-protected-variables.md)
 
 ### Objects
 #### [Table object](developer/devenv-table-object.md)
