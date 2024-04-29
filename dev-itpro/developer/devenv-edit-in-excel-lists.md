@@ -6,9 +6,10 @@ ms.topic: conceptual
 author: kennienp
 ---
 
-# Controlling Edit in Excel on list pages and 
+# Controlling Edit in Excel on list pages
 
 This article explains how the system action Edit in Excel appears on list pages.
+
 
 ## Default behaviour for visibility of the Edit in Excel action
 

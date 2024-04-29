@@ -793,6 +793,7 @@
 ####### [Designing list pages](developer/devenv-designing-list-pages.md)
 ####### [Sample list page](developer/devenv-simple-list-page-example.md)
 ####### [Repeater controls](developer/devenv-repeater-controls.md)
+####### [Controlling Edit in Excel on list pages](developer/devenv-edit-in-excel-lists.md)
 ####### [Displaying data as tiles](developer/devenv-lists-as-tiles.md)
 ####### [Adding filter tokens](developer/devenv-adding-filter-tokens.md)
 ####### [Designing indented lists](developer/devenv-indented-hierarchy-lists.md)
