@@ -1,9 +1,7 @@
 ---
 title: "Accessing Columns of a Query Dataset"
-ms.date: 04/01/2021
+ms.date: 04/29/2024
 ms.topic: conceptual
-ms.assetid: 261c896a-4b7b-4b46-b874-2c032e7096be
-caps.latest.revision: 9
 author: jswymer
 ---
 # Accessing Columns of a Query Dataset
