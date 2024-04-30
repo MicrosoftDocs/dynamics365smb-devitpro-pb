@@ -2,7 +2,7 @@
 title: Update 24.1 for Microsoft Dynamics 365 Business Central 2024 Release Wave 1
 description: Get an overview of new and changed capabilities in the 24.1 update of Business Central online, which is part of 2024 release wave 1.
 ms.author: jswymer
-ms.date: 04/25/2024
+ms.date: 04/30/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
@@ -39,8 +39,9 @@ Note that new customers will automatically get the latest builds of Business Cen
 
 ## Good to know
 
-### BCLE link and promote newest YouTube channel
+### Business Central channel on YouTube
 
+Checkout the new [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube at [aka.ms/BCYouTube](https://aka.ms/BCYouTube) where you can find the latest videos from the 2024 release wave 1 Launch Event.
 
 ### Upcoming Business Central Office Hours Calls
 
