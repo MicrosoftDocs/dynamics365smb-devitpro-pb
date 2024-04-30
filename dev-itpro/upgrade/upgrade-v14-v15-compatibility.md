@@ -27,7 +27,7 @@ Before you choose the target version for your upgrade, read the [Some Known Issu
 The following table lists the Business Central 23 versions and the minimum version of later releases that are compatible for upgrade.
 
 |Version 23|Version 24|
-----------|----------|
+|----------|----------|
 |23.0 to 23.5|[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000) |
 |[23.6](https://support.microsoft.com/help/5037541)|[24.1](https://support.microsoft.com/help/5038531)|
 |[23.7](https://support.microsoft.com/help/5038530)<sup>[\[1\]](#1)</sup> |24.2|
@@ -46,10 +46,9 @@ The following table lists the Business Central 22 versions and the minimum versi
 |[22.10](https://support.microsoft.com/help/5035206)|[23.5](https://support.microsoft.com/help/5036474)|24.0|
 |[22.11](https://support.microsoft.com/help/5036473) |[23.6](https://support.microsoft.com/help/5037541) |24.0|
 |[22.12](https://support.microsoft.com/help/5037540)|[23.7](https://support.microsoft.com/help/5038530) |[24.1](https://support.microsoft.com/help/5038531)|
-|[22.12](https://support.microsoft.com/help/5037540)<sup>[\[1\]](#1)</sup> |23.8|24.2|
+|[22.13](https://support.microsoft.com/help/5038529)<sup>[\[1\]](#1)</sup> |23.8|24.2|
 
-To view a list of all available updates for Business Central 2023 Release Wave 1, go to [Released Updates for Microsoft Dynamics 365 Business Central 2023 Release Wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-1-37e2d08e-6f61-4522-90ba-1cea59d8de51). 
-
+To view a list of all available updates for Business Central 2023 Release Wave 1, go to [Released Updates for Microsoft Dynamics 365 Business Central 2023 Release Wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-1-37e2d08e-6f61-4522-90ba-1cea59d8de51).
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
@@ -72,11 +71,11 @@ The following table lists the Business Central 21 versions and the minimum versi
 |[21.15](https://support.microsoft.com/help/5034718)|[22.10](https://support.microsoft.com/help/5035206) |[23.4](https://support.microsoft.com/help/5035207)|24.0|
 |[21.16](https://support.microsoft.com/help/5035205)|[22.11](https://support.microsoft.com/help/5036473) |[23.5](https://support.microsoft.com/help/5036474)|24.0|
 |[21.17](https://support.microsoft.com/help/5036472)|[22.12](https://support.microsoft.com/help/5037540) |[23.6](https://support.microsoft.com/help/5037541)|24.0|
-|[21.18](https://support.microsoft.com/help/5037539)|22.13 |[23.7](https://support.microsoft.com/help/5038530)|[24.1](https://support.microsoft.com/help/5038531)|
+|[21.18](https://support.microsoft.com/help/5037539)|[22.13](https://support.microsoft.com/help/5038529) |[23.7](https://support.microsoft.com/help/5038530)|[24.1](https://support.microsoft.com/help/5038531)|
 
-To view a list of all available updates for Business Central 2022 Release Wave 2, go to [Released Updates for Microsoft Dynamics 365 Business Central 2022 Release Wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2022-release-wave-2-8efa5bbb-3cd5-4445-ba3a-0752694bf46f). 
+To view a list of all available updates for Business Central 2022 Release Wave 2, go to [Released Updates for Microsoft Dynamics 365 Business Central 2022 Release Wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2022-release-wave-2-8efa5bbb-3cd5-4445-ba3a-0752694bf46f).
 
-[!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
+[!INCLUDE [upgrade-21](../includes/upgrade-21.md)]
 
 ## Version 20 compatibility
 
