@@ -793,7 +793,6 @@
 ####### [Designing list pages](developer/devenv-designing-list-pages.md)
 ####### [Sample list page](developer/devenv-simple-list-page-example.md)
 ####### [Repeater controls](developer/devenv-repeater-controls.md)
-####### [Controlling Edit in Excel on list pages](developer/devenv-edit-in-excel-lists.md)
 ####### [Displaying data as tiles](developer/devenv-lists-as-tiles.md)
 ####### [Adding filter tokens](developer/devenv-adding-filter-tokens.md)
 ####### [Designing indented lists](developer/devenv-indented-hierarchy-lists.md)
@@ -1514,6 +1513,7 @@
 ### Integrating with Microsoft Excel
 #### [Using Excel for viewing and editing Business Central data](/dynamics365/business-central/across-work-with-excel)  
 #### [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  
+#### [Controlling Edit in Excel on list pages](developer/devenv-edit-in-excel-lists.md)
 ### [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
 ### Integrating with Microsoft Onedrive
 #### [Integrating with Onedrive for Business overview (for administrators)](/dynamics365/business-central/across-onedrive-overview)  
