@@ -27,7 +27,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-|Spain|Introduce the **Ignore in SII** option for the G/L Account|If users want to ignore some lines in the sales or purchase invoices when they report to SII, they can now do it using a new setup in the **VAT Posting Setup** where they can mark **Ignore in SII** field.|
+|Spain|Introduce the **Ignore in SII** option for the G/L Account|If users want to ignore some lines in the sales or purchase invoices when they report to SII, they can now do it using a new setup in the **VAT Posting Setup** where they can mark the **Ignore in SII** field.|
 
 ## Release Plan
 
