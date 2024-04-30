@@ -41,7 +41,7 @@ Note that new customers will automatically get the latest builds of Business Cen
 
 ### Business Central channel on YouTube
 
-Checkout the new [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube at [aka.ms/BCYouTube](https://aka.ms/BCYouTube) where you can find the latest videos from the 2024 release wave 1 Launch Event.
+Checkout the new [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube at [aka.ms/BCYouTube](https://aka.ms/BCYouTube), where you can find the latest videos from the 2024 release wave 1 Launch Event.
 
 ### Upcoming Business Central Office Hours Calls
 
