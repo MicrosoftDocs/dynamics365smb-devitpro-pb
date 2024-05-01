@@ -5,6 +5,6 @@ ms.date: 04/30/2024
 ms.author: jswymer
 ---
 > [!NOTE]
-> As of October 2023, Business Central 2022 release wave 1 no longer gets updates.
+> Version 20.18 (published in October 2023) is the last update for Business Central 2022 release wave 1.
 >
 > All version 20 updates are compatible for upgrade with Business Central 2024 release wave 1 (version 24) and later release waves.
