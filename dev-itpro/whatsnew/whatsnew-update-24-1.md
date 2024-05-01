@@ -45,9 +45,9 @@ Check out the new [!INCLUDE [prod_short](../includes/prod_short.md)] channel on 
 
 ### Upcoming Business Central Office Hours Calls
 
-During May, we'll host the following call, which you can already register for today:
+<!--During May, we'll host the following call, which you can already register for today:
 
-- **May xx:** tbd
+- **May xx:** tbd-->
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
 Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).
