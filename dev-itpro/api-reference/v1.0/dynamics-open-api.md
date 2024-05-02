@@ -1,13 +1,14 @@
 ---
-title: (v1.0) "OpenAPI Specification"
-description: (v1.0) "OpenAPI Specification for Dynamics 365 Business Central"
+title: (v1.0) OpenAPI specification
+description: (v1.0) OpenAPI specification for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 10/23/2019
+ms.date: 05/01/2024
 ms.topic: article
 ms.author: solsen
+ms.custom: evergreen
 ---
 
-# OpenAPI Specification for Dynamics 365 Business Central (v1.0)
+# OpenAPI specification for Dynamics 365 Business Central (v1.0)
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
