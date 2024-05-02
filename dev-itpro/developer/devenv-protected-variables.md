@@ -57,7 +57,6 @@ page 50100 MyPage
     }
 
     protected var
-        [InDataSet]
         ShowBalance: Boolean;
 }
 
