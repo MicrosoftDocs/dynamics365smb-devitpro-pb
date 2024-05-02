@@ -1051,6 +1051,15 @@
 ### [Overview](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)
 ### [FAQ for developing in AL](developer/devenv-dev-faq.md)
+### Variables, types, and operators
+#### [AL operators](developer/devenv-al-operators.md)
+#### [Arithmetic operators](developer/devenv-al-arithmetic-operators.md)
+#### [Boolean operators](developer/devenv-al-boolean-operators.md)
+#### [Relational operators](developer/devenv-al-relational-operators.md)  
+#### [AL variables](developer/devenv-al-variables.md)
+#### [System-defined variables](developer/devenv-system-defined-variables.md)
+#### [Protected variables](developer/devenv-protected-variables.md)
+#### [AL type conversion in expressions](developer/devenv-al-type-conversion-expressions.md)
 ### [AL simple statements](developer/devenv-al-simple-statements.md)
 ### [AL control statements](developer/devenv-al-control-statements.md)
 ### [AL complex types](developer/devenv-al-complextypes.md)
@@ -1059,8 +1068,6 @@
 ### [AL code comments](developer/devenv-xml-comments.md)
 ### [Using access modifiers in AL](developer/devenv-using-access-modifiers.md)
 ### [Working with labels](developer/devenv-using-labels.md)
-### [System-defined variables](developer/devenv-system-defined-variables.md)
-### [Protected variables](developer/devenv-protected-variables.md)
 
 ### Objects
 #### [Table object](developer/devenv-table-object.md)
@@ -1110,7 +1117,7 @@
 <!-- Data analytics and reporting -->
 ## Data analytics and reporting
 ### [Analyzing, pivoting, and sharing data in Business Central](developer/devenv-reporting-options-overview.md)
-### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 ### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
 ### [Analyze data on lists and queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 ### [Queries in Business Central](developer/devenv-query-overview.md)  
@@ -1167,7 +1174,7 @@
 #### [Control add-in best practices](developer/devenv-control-addin-bestpractices.md)
 
 ### Embedding Power BI
-#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 #### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
 
 <!-- end Testing the application -->
@@ -1513,6 +1520,7 @@
 ### Integrating with Microsoft Excel
 #### [Using Excel for viewing and editing Business Central data](/dynamics365/business-central/across-work-with-excel)  
 #### [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  
+#### [Controlling Edit in Excel on list pages](developer/devenv-edit-in-excel-lists.md)
 ### [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
 ### Integrating with Microsoft Onedrive
 #### [Integrating with Onedrive for Business overview (for administrators)](/dynamics365/business-central/across-onedrive-overview)  
@@ -1591,13 +1599,13 @@
 
 <!-- Microsoft Power BI -->
 ### Integrating with Microsoft Power BI
-#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
+#### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 #### Administrator
-##### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview)
-##### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup)
+##### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### Report creator
-##### [Get started: Build Power BI reports](/dynamics365/business-central/#across-how-use-financials-data-source-powerbi)
-##### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox)
+##### [Get started: Build Power BI reports](/dynamics365/business-central/#across-how-use-financials-data-source-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
 #### [Extract data from Business Central](developer/devenv-extract-data.md)
 #### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)

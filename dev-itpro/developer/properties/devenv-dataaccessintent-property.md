@@ -54,5 +54,4 @@ When calling an API page or API query, the property value can be overwritten by 
 [Optimizing SQL Server Performance](../../administration/optimize-sql-server-performance.md)  
 [Properties](devenv-properties.md)   
 [Page Properties](./devenv-properties.md)  
-[InDataSet Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute)  
 [Specifying Data Access Intent for REST API GET requests](../devenv-connect-apps-tips.md#DataAccessIntent)  

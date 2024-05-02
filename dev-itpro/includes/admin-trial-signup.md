@@ -1,8 +1,8 @@
 ---
-author: edupont04
+author: jswymer
 ms.topic: include
 ms.date: 05/25/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 Any organization in the supported markets can sign up for a free trial from the [https://dynamics.microsoft.com/business-central/](https://dynamics.microsoft.com/business-central/) page. To learn how to sign up, see the [Sign up for a free Dynamics 365 Business Central trial](/dynamics365/business-central/trial-signup) article.  
 
