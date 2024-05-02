@@ -4,7 +4,7 @@ description: This article explains how to control the Edit in Excel system actio
 ms.date: 05/02/2024
 ms.topic: conceptual
 ms.reviewer: solsen
-ms.author: kennienp
+ms.author: kepontop
 author: kennienp
 ---
 
