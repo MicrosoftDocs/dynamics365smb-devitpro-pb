@@ -22,7 +22,7 @@ As an admin, you can exclude permission to the **Edit in Excel** action for user
 
 - `EDIT IN EXCEL - VIEW`
 - `EDIT IN EXCEL-ADMIN`
-- `EDIT IN EXCEL ACTION`
+- `EXCEL EXPORT ACTION`
 
 ## How to set up Edit in Excel for on-premises (and Docker sandbox) environments 
 
