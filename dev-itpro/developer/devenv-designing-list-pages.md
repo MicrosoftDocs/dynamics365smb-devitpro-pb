@@ -69,6 +69,7 @@ The following table describes the elements of a typical list page.
 - List pages that are accessed from the Role Center page open embedded within the Role Center framework. The pages are always opened in the read-only mode, regardless of the [Editable](properties/devenv-editable-property.md) property.
 - There are a few system actions that are automatically added to the actions bar, such as **Search**, **See Attached** and **Open in Excel**.
 - Analysis mode is enabled by default on list pages. If you want to turn off this ability, set the [AnalysisModeEnabled](properties/devenv-analysismodeenabled-property.md) property to **false**. 
+- The Edit in Excel action is enabled by default on list pages (for users with the right permissions). If you want to turn off this ability, see  [Controlling Edit in Excel on list pages](devenv-edit-in-excel-lists.md).
 - Media and image fields only display in tile view.
 
 ## [Developer tips](#tab/tips)
@@ -84,6 +85,7 @@ From the user's perspective, the following are qualities of a well-designed list
 
 > [!IMPORTANT]
 > List pages are designed for using a single `repeater()` control within the content area only. If you include more than one repeater or another control like a `group` or `grid`, the page might not behave as expected. If you want to design a page that includes controls in the content area other than a repeater, then try using a `Worksheet` page type instead.
+
 
 ## [Designing for devices](#tab/targets)
 
