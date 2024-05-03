@@ -1,4 +1,4 @@
----
+distinc---
 title: Query Totals and Grouping
 description: Do calculations on the fields of a column and return the calculated value in the dataset. Know the Dynamics NAV Total methods for running queries.
 ms.date: 04/29/2024
@@ -196,9 +196,9 @@ Looking at the sample query, you can use `Count` method the number of sales orde
   
 In SQL SELECT statements, the Count method corresponds to a COUNT\(\*\) or COUNT\(field\) clause.  
 
-## Using a Query to Get Distinct Values
+## Using a query to get distinct values
 
-When working with table data, you might need to get a list of distinct values from the table (in SQL, this would correspond to a SELECT DISTINCT statement). This operation isn't supported out-of-the-box in AL, but you can use a query using an aggregation to implement it. 
+When working with table data, you might need to get a list of distinct values from the table (in SQL, this would correspond to a SELECT DISTINCT statement). This operation isn't supported out-of-the-box in AL, but you can do it with a query using an aggregation. 
 
 This AL example code shows how you can encode distinct into a query using an aggregation.
 
