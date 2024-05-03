@@ -1,5 +1,5 @@
 ---
-title: Enable or disable sending telemetry to application insights
+title: Turn sending telemetry to application insights on or off
 description: Learn how you can get richer telemetry by connecting your Business Central with Application Insights for telemetry. 
 ms.reviewer: kepontop
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.date: 05/03/2024
 ms.custom: bap-template
 ---
 
-# Enable or disable environment telemetry
+# Turn environment telemetry on or off
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
@@ -52,19 +52,19 @@ The following video summarizes how to store [!INCLUDE [prod_short](../includes/p
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fAB5]
 
-## Enable telemetry on environments
+## Turn telemetry on environments on
 
 Once you have the resource and its connection string or instrumentation key, you can enable your tenants to send telemetry to your [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource.
 
-The way you enable [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] depends on whether you want to connect to a [!INCLUDE [prod_short](../includes/prod_short.md)] online or [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises environment. For on-premises, if also depends on whether the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a single-tenant or multitenant instance.
+The way you turn on [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] depends on whether you want to connect to a [!INCLUDE [prod_short](../includes/prod_short.md)] online or [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises environment. For on-premises, if also depends on whether the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a single-tenant or multitenant instance.
 
 ### For online environments
 
-For [!INCLUDE [prod_short](../includes/prod_short.md)] online, you can enable telemetry on environments either from the admin center or by using the the admin center API.  To use the admin center, complete the following steps. For information about using the admin center API, go to [Put AppInsights key](administration-center-api_environment_settings.md#put-appinsights-key).
+For [!INCLUDE [prod_short](../includes/prod_short.md)] online, you can turn on telemetry on environments either from the admin center or by using the the admin center API.  To use the admin center, complete the following steps. For information about using the admin center API, go to [Put AppInsights key](administration-center-api_environment_settings.md#put-appinsights-key).
 
 #### Video guidance
 
-The following video shows how to enable telemetry for online environments.
+The following video shows how to turn telemetry on for online environments.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fAB2]
 
@@ -76,10 +76,10 @@ The following video shows how to enable telemetry for online environments.
     > The next steps require a restart to the environment, which is triggered automatically at the end of this procedure. Plan to do this during non-working hours to avoid disruptions.
 2. On the **Environment** page, the **Application Insights Key** field shows if the environment already uses application insights.
 
-    To enable telemetry, choose the **Define** caption, and then, in the **Set Application Insights Key** pane, choose the **Enable application insights** field and enter the instrumentation key in the **Instrumentation Key** field.  
+    To turn telemetry on, choose the **Define** caption, and then, in the **Set Application Insights Key** pane, choose the **Enable application insights** field and enter the instrumentation key in the **Instrumentation Key** field.  
 
     > [!NOTE]
-    > In version 15 and 16, to enable telemetry, choose the **Application Insights Key** action, and then specify the instrumentation key.
+    > In version 15 and 16, to turn telemetry on, choose the **Application Insights Key** action, and then specify the instrumentation key.
 3. Choose the **Save** button.
 
 ### For on-premises environments (single-tenant mode)
@@ -92,7 +92,8 @@ Set-NAVServerConfiguration -ServerInstance BC200 -Keyname ApplicationInsightsCon
 For more information, see [Configuring Business Central Server](configure-server-instance.md#general-settings).
 
 ### For on-premises environments (multi-tenant mode)
-For a multitenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, enable telemetry on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance.
+
+For a multitenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, turn telemetry on, on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
 The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps&preserve-view=true) includes the `-ApplicationInsightsConnectionString` and `-ApplicationInsightsKey` parameters. For example:
 
@@ -126,10 +127,9 @@ You can specify the same or another key when creating more tenants:
 New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
 ```
 
-## Disable telemetry on environments
+## Turn telemetry on environments off
 
-To disable having telemetry sent from environments, follow the instructions above for enabling telemetry, but set the [!INCLUDE[appinsights](../includes/azure-appinsights-name)] connection string or instrumentation key to a blank value.
-
+To turn off having telemetry sent from environments, follow the instructions above for turning telemetry on, but set the [!INCLUDE[appinsights](../includes/azure-appinsights-name)] connection string or instrumentation key to a blank value.
 
 ## Troubleshooting telemetry setup
 
