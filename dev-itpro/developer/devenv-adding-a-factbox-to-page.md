@@ -75,8 +75,9 @@ You can define the following system parts by using the `systempart()` keyword:
 |--------|-------------|
 |  Links | Allows the user to add links to a URL or path on the record shown in the page. For example, on an Item card, a user can add a link to the supplier's item catalog. The links appear with the record when it's viewed. When a user chooses a link, the target file opens.|
 |  Notes | Allows the user to write a note on the record shown in the page. For example, when creating a sales order, a user can add a note about the order. The note appears with the item when it's viewed.|
+<!--
 | Outlook | |
-| MyNotes | |
+| MyNotes | Allows the user to write a note to themselves for the record shown in the page. | -->
 
 ## Filtering data that are displayed on a page in a FactBox
 
@@ -127,45 +128,54 @@ Having a page composed of multiple FactBox pages that each process data from dif
 If the FactBox pane is collapsed, no FactBoxes are loaded until the user expands the FactBox pane.
 
 Below are some practical tips to help you make the most of this optimization:
- - Consider hiding any FactBoxes that represent secondary content that only some users require. Learn more about [Choosing the Visibility of Parts](devenv-designing-parts.md#choosing-the-visibility-of-parts).  
- - For FactBoxes that require heavy processing, consider processing in the page background task. Learn more about [Using Page Background Tasks](devenv-designing-parts.md#using-page-background-tasks).  
+
+ - Consider hiding any FactBoxes that represent secondary content that only some users require. Learn more about [Choosing the visibility of parts](devenv-designing-parts.md#choosing-the-visibility-of-parts).  
+ - For FactBoxes that require heavy processing, consider processing in the page background task. Learn more about [Using page background tasks](devenv-designing-parts.md#using-page-background-tasks).  
  - Avoid having triggers on the hosting page that call into a FactBox because this condition forces the FactBox to ignore performance optimizations and load along with the content of the hosting page, adding to the total loading time. 
  
 ### FAQ about performance
 
 #### Are any FactBox triggers run when the FactBox is hidden?
+
 No. The trigger is only run when the FactBox is visible and within the user's view.
 
 #### How often are triggers run if the FactBox pane is expanded, collapsed, and then expanded again?
+
 In this scenario, the `OnOpenPage` trigger is only run the first time. Once a FactBox is loaded, it isn't loaded again for as long as the page remains open.
 
 #### Are FactBoxes processed asynchronously?
+
 No. This optimization is simply a controlled sequence in which triggers are run, still within the same session as the hosting page. For more information about asynchronous processing in the background, see [Designing page parts for page background tasks](devenv-page-background-tasks.md#partpages).
 
 #### Does this optimization work with SubPageLink or SubPageView properties?
+
 The use of these properties has no effect on the sequence of loading content on a page. Using properties such as `SubPageView` is preferred to writing trigger code to update a FactBox.
 
 #### Does this optimization apply to parts that aren't FactBoxes?
+
 This optimization doesn't apply to Role Center pages. When parts are used in the content area of a page, such as on a Card page, they aren't loaded if their `Visible` property evaluates to `false`. 
 
 #### Can I force a FactBox to load along with page content?
+
 There's no AL API to force FactBoxes to load along with the content of the hosting page.
 
 #### Can I set the FactBox pane to start collapsed on all pages?
+
 No. The default state of the FactBox pane is set by the [!INCLUDE[prod_short](includes/prod_short.md)] platform and modified by the user.
 
 #### Does the experience vary on different browsers?
+
 Each browser has its own definition of whether a FactBox is considered within view or not. For example, opening [!INCLUDE[prod_short](includes/prod_short.md)] in a new browser tab and quickly switching back to the original tab might pause loading of any FactBoxes in the new tab.
 
 #### Does this optimization apply to other form factors?
+
 This applies to desktop, tablet, and phone clients.
 
-## See Also 
+## See also 
  
-[Pages Overview](devenv-pages-overview.md)   
-[Page and Page Extension Properties Overview](properties/devenv-page-property-overview.md)  
+[Pages overview](devenv-pages-overview.md)   
+[Page and page extension properties overview](properties/devenv-page-property-overview.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  
 [Use Designer](devenv-inclient-designer.md)  
-[Arranging Fields on a Fasttab](devenv-arranging-fields-on-fasttab.md)  
-[Actions Overview](devenv-actions-overview.md)
-
+[Arranging fields on a Fasttab](devenv-arranging-fields-on-fasttab.md)  
+[Actions overview](devenv-actions-overview.md)  
