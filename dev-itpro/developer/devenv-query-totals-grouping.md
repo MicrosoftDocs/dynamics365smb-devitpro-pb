@@ -1,12 +1,12 @@
 ---
-title: Query Totals and Grouping
+title: Aggregating data in query objects
 description: Do calculations on the fields of a column and return the calculated value in the dataset. Know the Dynamics NAV Total methods for running queries.
 ms.date: 05/03/2024
 ms.topic: conceptual
 author: jswymer
 ---
 
-# Aggregating Data in Query Objects
+# Aggregating data in query objects
 
 In a query object, you can use the [Method property](properties/devenv-method-property.md) to do a calculation on the fields of a column and return the calculated value in the dataset. For example, you can sum all the fields in a column or find the average value. The `Method` property is set on `column` controls and can be set to any of the following aggregate methods.  
   
@@ -30,7 +30,7 @@ column(Name; Field)
 }
 ```
 
-Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. Records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. It's similar to the GROUP BY clause in SQL SELECT statements (see [Creating Queries with Aggregates in SQL](devenv-query-totals-grouping.md#SQL)).
+Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. Records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. It's similar to the GROUP BY clause in SQL SELECT statements.
 
 The aggregate methods and grouping are further explained in the following sections.  
   
