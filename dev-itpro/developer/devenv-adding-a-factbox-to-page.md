@@ -9,7 +9,7 @@ ms.author: solsen
 
 # Adding a FactBox to a page
 
-A FactBox is the area that is located on the right-most side of a page and it's divided into one or more parts that are arranged vertically. This area is used to display content including other pages, charts, and system parts such as Notes, and Links. Typically, you can use a FactBox to display information that is related to an item on the main content page. For example, on a page that shows a sales order list, you can use a FactBox to show sell-to customer sales history for a selected sales order in the list as shown below.  
+A FactBox is the area that is located on the right-most side of a page and it's divided into one or more parts that are arranged vertically. This area is used to display content including other pages, charts, and system parts such as Notes, and Links. Typically, you can use a FactBox to display information that is related to an item on the main content page. For example, on a page that shows a sales order list, you can use a FactBox to show sell-to customer sales history for a selected sales order in the list as shown below. A FactBox can be hidden or shown by the user by toggling the little **i** icon in the top right corner of the page.
 
 ![Shows FactBox on a sales order.](media/factboxApril19.png)  
 
@@ -33,7 +33,7 @@ You define the FactBox by adding a FactBox area container control to the page. T
 > Only one FactBox area control is allowed on a page. 
 
 > [!WARNING]  
-> You can add a part to the FactBox area that displays an existing page of the CardPart or ListPart type only. If you attempt to use another page type, you will get an error. 
+> You can add a part to the FactBox area that displays an existing page of the CardPart or ListPart type only. If you attempt to use another page type, you'll get an error. 
 
 ### Example
 
