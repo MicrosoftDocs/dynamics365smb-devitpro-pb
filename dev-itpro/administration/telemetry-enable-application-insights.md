@@ -129,7 +129,7 @@ New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2
 
 ## Turn off telemetry on environments
 
-To turn off having telemetry sent from environments, follow the instructions above for turning on telemetry, but set the [!INCLUDE[appinsights](../includes/azure-appinsights-name)] connection string or instrumentation key to a blank value.
+To turn off having telemetry sent from environments, follow the instructions above for turning on telemetry, but set the [!INCLUDE [azure-appinsights-name](../includes/azure-appinsights-name.md)] connection string or instrumentation key to a blank value.
 
 ## Troubleshooting telemetry setup
 
