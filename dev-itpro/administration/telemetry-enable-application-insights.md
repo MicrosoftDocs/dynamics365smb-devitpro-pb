@@ -1,5 +1,5 @@
 ---
-title: Enable Sending Telemetry to Application Insights
+title: Enable/Disable Sending Telemetry to Application Insights
 description: Learn how you can get richer telemetry by connecting your Business Central with Application Insights for telemetry. 
 ms.reviewer: kepontop
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.date: 01/26/2024
 ms.custom: bap-template
 ---
 
-# Enable Environment Telemetry
+# Enable/Disable Environment Telemetry
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
@@ -125,6 +125,11 @@ You can specify the same or another key when creating more tenants:
 ```powershell
 New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
 ```
+
+## Disable telemetry on environments
+
+To disable having telemetry sent from environments, follow the instructions above for enabling telemetry, but set the [!INCLUDE[appinsights](../includes/azure-appinsights-name)] connection string or instrumentation key to a blank value.
+
 
 ## Troubleshooting telemetry setup
 
