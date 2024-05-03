@@ -1,7 +1,7 @@
-distinc---
+---
 title: Query Totals and Grouping
 description: Do calculations on the fields of a column and return the calculated value in the dataset. Know the Dynamics NAV Total methods for running queries.
-ms.date: 04/29/2024
+ms.date: 05/03/2024
 ms.topic: conceptual
 author: jswymer
 ---
@@ -227,7 +227,7 @@ query 50150 DistinctValuesQuery
 }
 ```
 
-This AL example code shows how you can then query for the distinct values (note that the Count column isn't used here).
+This AL example code shows how you can then query for the distinct values (note that the `Count` column isn't used here).
 
 ```AL
 trigger OnAction()
