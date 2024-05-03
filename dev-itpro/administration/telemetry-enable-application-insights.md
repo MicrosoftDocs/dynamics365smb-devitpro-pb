@@ -1,10 +1,10 @@
 ---
-title: Enable/Disable Sending Telemetry to Application Insights
+title: Enable or disable sending telemetry to application insights
 description: Learn how you can get richer telemetry by connecting your Business Central with Application Insights for telemetry. 
 ms.reviewer: kepontop
 ms.topic: conceptual
 author: jswymer
-ms.date: 01/26/2024
+ms.date: 05/03/2024
 ms.custom: bap-template
 ---
 
