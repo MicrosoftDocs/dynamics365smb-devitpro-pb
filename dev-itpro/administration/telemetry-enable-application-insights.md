@@ -52,7 +52,7 @@ The following video summarizes how to store [!INCLUDE [prod_short](../includes/p
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fAB5]
 
-## Turn telemetry on environments on
+## Turn on telemetry on environments
 
 Once you have the resource and its connection string or instrumentation key, you can enable your tenants to send telemetry to your [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource.
 
@@ -64,7 +64,7 @@ For [!INCLUDE [prod_short](../includes/prod_short.md)] online, you can turn on t
 
 #### Video guidance
 
-The following video shows how to turn telemetry on for online environments.
+The following video shows how to turn on telemetry for online environments.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fAB2]
 
@@ -79,7 +79,7 @@ The following video shows how to turn telemetry on for online environments.
     To turn telemetry on, choose the **Define** caption, and then, in the **Set Application Insights Key** pane, choose the **Enable application insights** field and enter the instrumentation key in the **Instrumentation Key** field.  
 
     > [!NOTE]
-    > In version 15 and 16, to turn telemetry on, choose the **Application Insights Key** action, and then specify the instrumentation key.
+    > In version 15 and 16, to turn on telemetry, choose the **Application Insights Key** action, and then specify the instrumentation key.
 3. Choose the **Save** button.
 
 ### For on-premises environments (single-tenant mode)
@@ -93,7 +93,7 @@ For more information, see [Configuring Business Central Server](configure-server
 
 ### For on-premises environments (multi-tenant mode)
 
-For a multitenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, turn telemetry on, on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance.
+For a multitenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, turn on telemetry on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
 The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps&preserve-view=true) includes the `-ApplicationInsightsConnectionString` and `-ApplicationInsightsKey` parameters. For example:
 
@@ -127,9 +127,9 @@ You can specify the same or another key when creating more tenants:
 New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
 ```
 
-## Turn telemetry on environments off
+## Turn off telemetry on environments
 
-To turn off having telemetry sent from environments, follow the instructions above for turning telemetry on, but set the [!INCLUDE[appinsights](../includes/azure-appinsights-name)] connection string or instrumentation key to a blank value.
+To turn off having telemetry sent from environments, follow the instructions above for turning on telemetry, but set the [!INCLUDE[appinsights](../includes/azure-appinsights-name)] connection string or instrumentation key to a blank value.
 
 ## Troubleshooting telemetry setup
 
