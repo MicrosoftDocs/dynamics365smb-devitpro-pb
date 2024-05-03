@@ -8,7 +8,7 @@ ms.date: 05/03/2024
 ms.custom: bap-template
 ---
 
-# Enable/Disable Environment Telemetry
+# Enable or disable environment telemetry
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
