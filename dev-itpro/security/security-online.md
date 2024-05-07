@@ -34,6 +34,11 @@ We recommend that you use encrypted network protocols to connect to the Power BI
 
 [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md) 
 
+## Customer Lockbox
+Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. With Customer Lockbox, we provide an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft.
+
+Customer Lockbox for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is administered in the Power Platform Admin Center and requires the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to be [linked to a Power Platform environment](../administration/tenant-admin-center-environments.md#linked-power-platform-environment). Learn more about administering Customer Lockbox in the Power Platform Admin Center [here](~/power-platform/admin/about-lockbox.md).
+
 ## See Also  
 
 [Microsoft Trust Center (what we do to make the service secure)](https://www.microsoft.com/trustcenter/security/default.aspx)  
