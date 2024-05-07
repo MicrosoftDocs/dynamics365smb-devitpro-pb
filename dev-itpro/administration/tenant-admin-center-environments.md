@@ -25,6 +25,16 @@ In the environments list, you can view more details by choosing the link in the 
 > [!div class="mx-imgBorder"]
 > ![View details about an environment.](../developer/media/admin/business_central_admin_center_details-V3.png)
 
+### Linked Power Platform environment
+A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can be linked to a Power Platform environment of the same type (production or sandbox) in the same Azure Geo. Setting up a link to a Power Platform environment lets the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment inherit selected settings from the Power Platform environment and provides a default target environment when setting up features that integrate [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Power Platform and other Dynamics 365 products. Links between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments and Power Platform environments are exclusive; it is not possible to simultaneously link multiple [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments to a single Power Platform environment or vice versa.
+
+> [!NOTE]
+> Currently, the only setting administered in the Power Platform Admin Center that can be inherited on the linked [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is Customer Lockbox.
+
+When a link exists between a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment and a Power Platform environment several environment lifecycle operations are blocked on the Power Platform environment. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment cannot be deleted if it's linked to a Power Platform environment. For environment lifecycle operations on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment that create a new environment, such as [Copy](tenant-admin-center-environments-copy.md) and [Restore](tenant-admin-center-backup-restore.md), the target environment will not be linked to a Power Platform environment as part of the operation. The target environment can be linked to a different Power Platform environment after the operation that creates the environment completes.
+
+It is possible to unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from the Power Platform environment from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Unlinking an environment disables any settings the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment inherits from the Power Platform environment, but does not disable any integrations set up between the two environments (for example Power Automate flows created from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment or data integration with Dynamics 365 Sales or Dynamics 365 Field Service). Environments that have been unlinked can be relinked to the same or different environments from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+
 ## Types of environments
 
 You can create environments of different types. Choose the type of environment based on what you need it for. For more information, see [Production and Sandbox Environments](environment-types.md).  
