@@ -16,6 +16,38 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
+## Installation fails because PowerShell 7 is already installed
+
+> Applies to: Upgrade to version 24.1
+
+### Problem
+
+When you try to install the [!INCLUDE[server](../developer/includes/server.md)] using the setup.exe program of version 24.1, the installation fails with the following error:
+
+```
+Microsoft Dynamics 365 Business Central Build NNNNN Error Report
+
+Setup Components
+The component was rolled back.
+
+PowerShell 7
+PowerShell 7 for the commandlets
+Fatal error during installation.
+```
+
+In the installation log or Windows Event Viewer, you get an error message similar to `A newer version of PowerShell is already installed.`  
+
+## Possible cause
+
+The [!INCLUDE[server](../developer/includes/server.md)] machine already has a 
+There's already a version of PowerShell 7.0 on . Instead of skipping the installation of PowerShell 7.0 as it should, setup.exe tries to install it and fails. 
+
+### Workaround
+
+Uninstall PowerShell 7.0 from the [!INCLUDE[server](../developer/includes/server.md)] machine, then run setup.exe again.
+
+[Learn how to uninstall an app or program in Windows](https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98)
+
 ## Error importing control add-in files from the client
 
 > Applies to: Upgrade to version 23.3
