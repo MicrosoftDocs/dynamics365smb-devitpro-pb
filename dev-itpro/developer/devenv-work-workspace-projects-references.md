@@ -88,8 +88,8 @@ To control how dependency publishing is performed on the server, the `launch.jso
 
 |Setting |Description |
 |--------|------------|
-|Default|Set dependency publishing will be applied.|
-|Ignore|Dependency publishing is ignored. This setting should be used cautiously, see note below.|
+|Default|Set dependency publishing is applied.|
+|Ignore|Dependency publishing is ignored. This setting should be used cautiously. See the following note.|
 |Strict|Dependency publishing fails if there are any installed apps that depend on the startup project.|
 
 > [!NOTE]  
