@@ -223,6 +223,57 @@ For more information, see [Web URL syntax](devenv-web-client-urls.md).
 
 [!INCLUDE[using_office_themes](../includes/include-excel-word-layouts-themes.md)]
 
+## Best practices for Excel layouts
+
+### Excel functionality
+
+When doing lookups inside the Excel workbook, use the `XLOOKUP` function instead of `VLOOKUP`. For more information, see [XLOOKUP function](https://support.microsoft.com/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929).
+
+Power Query is a powerful tool for cleaning and transforming data (eg. setting correct data types). If you want to use Power Query in your layouts, please take a look at [Power Query in Excel](https://powerquery.microsoft.com/excel).
+
+Table formulas in Excel are a powerful way to work on table data. For more information, see [Use calculated columns in an Excel table](https://support.microsoft.com/office/use-calculated-columns-in-an-excel-table-873fbac6-7110-4300-8f6f-aafa2ea11ce8#:~:text=As%20a%20result%2C%20Excel%20built%20the%20formula%3A%20%3DSUM,to%20use%20the%20same%20formula%20for%20each%20row)
+
+
+### Worksheet naming and location
+
+Locate worksheets in the order you think will be most useful for users so that they do not have to scroll when using the report. 
+
+Good worksheet names help users quickly get an overview of the information they can obtain by navigating to the worksheet. 
+
+An Excel worksheet can be up to 31 characters long.
+
+### One or multiple worksheets?
+
+In contrast to a report designed for print or pdf, an Excel report typically consists of multiple worksheets, each of which is designed for a different purpose. Some common types of worksheets are
+1. Overview dashboard
+1. Pivot table
+1. Table
+1. Print-friendly
+1. About the report
+
+There is no technical limit to the number of worksheets in a report, but users probably prefer limited number of worksheets. Note that you can develop multiple Excel layouts for the same report, so maybe design for a specific persona.
+
+#### Overview dashboard worksheet
+Excel has visuals such as charts and maps, sparklines, and slicers, that can be used for creating dashboards known from Business Intelligence products such as Power BI. You can use these to create dashboard worksheets that lets a user interact with the data and get visually appealing graphs showing trends or top 10 numbers.
+
+#### Pivot table worksheet
+Use a pivot table worksheet to give users a way to interact with the dataset. Typically there is only the need of one pivot worksheet in the report (unless you want to offer multiple pre-baked analysis). If you add multiple pre-baked pivot table worksheets, consider naming them *X by Y*, such as *Customers by Item* or *Sales by Region*. 
+
+#### Table worksheet
+A table worksheet can be used to display a specific view on the dataset, maybe only showing a subset of the columns and maybe even with some added computed columns. 
+
+#### Print-friendly worksheet
+Some users might want to print the report, but this should not force you to design all worksheets to be print-friendly. Instead, consider having one or more worksheets that has been opmitized for print, maybe one for horizontal and one for landscape paper orientation.
+
+#### About the report worksheet
+Users are not always 100% sure how your report can be used and for whom it was designed. Consider always having a *About the report* worksheet that explains
+1. What the report is about and maybe also for which persona.
+1. A description for each worksheet that explains what the users can do here.
+1. Maybe also add *See also* links to documentation in case the user wants to learn more.
+
+
+
+
 ## Example: Create a simple Excel layout report
 
 The following steps show how to create a basic report based on an Excel layout. The example also illustrates how compilation triggers a starter template for the Excel layout. If an existing layout is referenced with the `LayoutFile` property, the layout is validated based on the schema of the report dataset. 
