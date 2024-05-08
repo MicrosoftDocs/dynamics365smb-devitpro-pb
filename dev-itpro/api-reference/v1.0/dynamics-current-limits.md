@@ -1,14 +1,14 @@
 ---
-title: "API Limits in Dynamics 365 Business Central (v1.0)"
-description: "Describes current API limits in Business Central (v1.0)"
+title: API Limits in Dynamics 365 Business Central (v1.0)
+description: Describes current API limits in Business Central (v1.0).
 author: jswymer
-ms.custom: na
-ms.date: 01/14/2020
+ms.custom: evergreen
+ms.date: 05/01/2024
 ms.topic: article
 ms.author: jswymer
 ---
 
-# Current API Limits (v1.0)
+# Current API limits (v1.0)
 
 This article lists the different limits that are set on OData and SOAP requests. The limits are subject to change, following the [Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use).
 
@@ -54,9 +54,9 @@ The maximum size of the OData or SOAP request. HTTP response code `413: Request 
 |20,000 entities per page|65,536 kilobytes|
 
 
-## See Also
+## See also
 
-[Working with API Rate Limits](dynamics-rate-limits.md)  
+[Working with API rate limits](dynamics-rate-limits.md)  
 [Best practices on transient errors](/azure/architecture/best-practices/transient-faults)  
-[Using OData Batch request](/openspecs/windows_protocols/ms-odata/dd99aa5c-d81e-4eac-9e07-039491356bf6)  
+[Using OData batch request](/openspecs/windows_protocols/ms-odata/dd99aa5c-d81e-4eac-9e07-039491356bf6)  
 [Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use)

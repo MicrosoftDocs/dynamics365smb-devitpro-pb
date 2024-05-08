@@ -22,7 +22,7 @@ Sets the key on which to sort, the sort order, and the filters for the data item
 
 ## Examples
 
-In the following example, the **DataItemView** property is used to sort a table view based on the `"Entry No."` field.
+In the following example, the **DataItemTableView** property is used to sort a table view based on the `"Entry No."` field.
 
 ```AL
 DataItemTableView = SORTING ("Entry No.");
