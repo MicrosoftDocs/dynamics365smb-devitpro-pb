@@ -1,7 +1,7 @@
 ---
 title: Some Known Issues in Business Central On-premises
 description: Provides an overview of the known issues in Business Central versions
-ms.date: 03/02/2023
+ms.date: 05/08/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Some Known Issues in Business Central On-premises
 
-This article describes some known issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions. These issues can impact installation, upgrade, and various operations of [!INCLUDE[prod short](../developer/includes/prod_short.md)] on-premises.
+This article describes some known issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions. These issues can affect installation, upgrade, and various operations of [!INCLUDE[prod short](../developer/includes/prod_short.md)] on-premises.
 
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
@@ -25,7 +25,8 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 When you try to install the [!INCLUDE[server](../developer/includes/server.md)] using the setup.exe program of version 24.1, the installation fails with the following error:
 
 ```
-Microsoft Dynamics 365 Business Central Build NNNNN Error Report
+Microsoft Dynamics 365 Business Central Build NNNNN
+Error Report
 
 Setup Components
 The component was rolled back.
@@ -39,14 +40,13 @@ In the installation log or Windows Event Viewer, you get an error message simila
 
 ## Possible cause
 
-The [!INCLUDE[server](../developer/includes/server.md)] machine already has a 
-There's already a version of PowerShell 7.0 on . Instead of skipping the installation of PowerShell 7.0 as it should, setup.exe tries to install it and fails. 
+There's already a version of PowerShell 7 on  [!INCLUDE[server](../developer/includes/server.md)] machine. Instead of skipping the installation of PowerShell 7 as it should, the setup.exe tries to install it and fails.
 
 ### Workaround
 
 Uninstall PowerShell 7.0 from the [!INCLUDE[server](../developer/includes/server.md)] machine, then run setup.exe again.
 
-[Learn how to uninstall an app or program in Windows](https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98)
+[Learn how to uninstall an app or program in Windows.](https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98)
 
 ## Error importing control add-in files from the client
 
@@ -54,7 +54,7 @@ Uninstall PowerShell 7.0 from the [!INCLUDE[server](../developer/includes/server
 
 ### Problem
 
-When you try to import an a control add-in file client from the **Control Add-ins** page in the client by using the **Control Add-in Resource** > **Import**, you get the follwoing error:
+When you try to import a control add-in file client from the **Control Add-ins** page in the client by using the **Control Add-in Resource** > **Import**, you get the following error:
 
 ```
 Can't open file`
@@ -119,7 +119,7 @@ Once you completed either of these tasks, upgrade to version 23 as usual. Don't 
 
 ### Problem
 
-When you try to install the [!INCLUDE[webserver](../developer/includes/webserver.md)] components using setup.exe on a Azure VM running Windows Server, the following error occurs:
+When you try to install the [!INCLUDE[webserver](../developer/includes/webserver.md)] components using setup.exe on an Azure VM running Windows Server, the following error occurs:
 
 **Web Server Components**
 
@@ -127,7 +127,7 @@ When you try to install the [!INCLUDE[webserver](../developer/includes/webserver
 
 ### Possible cause
 
-This error will typically occur on a VM where the [!INCLUDE[webserver](../developer/includes/webserver.md)] hasn't been installed before. It happens because setup is trying to install Windows Server Hosting and Microsoft .NET Core Runtime on the VM but they're already installed, causing a conflict. 
+This error typically occurs on a VM where the [!INCLUDE[webserver](../developer/includes/webserver.md)] hasn't been installed before. It happens because setup is trying to install Windows Server Hosting and Microsoft .NET Core Runtime on the VM but they're already installed, causing a conflict. 
 
 ### Workaround
 
@@ -141,7 +141,7 @@ Uninstall Windows Server Hosting and Microsoft .NET Core Runtime from the VM, th
 
 ### Problem
 
-If the [!INCLUDE[webserver](../developer/includes/webserver.md)] is configured for Windows authentication, users may not be able to sign in. In the event viewer, you'll see the following exception:
+If the [!INCLUDE[webserver](../developer/includes/webserver.md)] is configured for Windows authentication, users might not be able to sign in. In the event viewer, you see the following exception:
 
 ```
 System.PlatformNotSupportedException: Operation is not supported on this platform.
@@ -154,7 +154,7 @@ System.PlatformNotSupportedException: Operation is not supported on this platfor
 Set the `UnknownSpnHint` setting in the navsettings.json file of [!INCLUDE[webserver](../developer/includes/webserver.md)] by following the guidelines at in [Configuring Business Central Web Server instance](../administration/configure-web-server.md#spn).
 
 
-## <a name="temptables"></a>Tables changed to temporary may prevent synchronizing new base application version
+## <a name="temptables"></a>Tables changed to temporary might prevent synchronizing new base application version
 
 > Applies to: Upgrade from version 17.X or earlier to any later version
 
@@ -177,15 +177,15 @@ Starting in version 18, the following base application tables are now temporary 
 
 ### Impact
 
-With this change, these tables must be empty to complete the upgrade. If a table isn't empty, you can't synchronize the new version of the base application. In this case, you'll get an error stating that the table cannot be deleted from the database because it contains data, for example:
+With this change, these tables must be empty to complete the upgrade. If a table isn't empty, you can't synchronize the new version of the base application. In this case, you get an error stating that the table can't be deleted from the database because it contains data, for example:
 
 `Cannot delete the Document Entry table from the database because it contains data.`
 
-So if there are records in these tables, or the application includes custom code that stores non-temporary records to these tables, you'll have to make some changes before you can run the upgrade.
+So if there are records in these tables, or the application includes custom code that stores nontemporary records to these tables, you have to make some changes before you can run the upgrade.
 
 ### Workaround 
 
-Before you upgrade, either move the records to new tables or delete the records from the tables. Also, rewrite the custom application code that's stores the non-temporary records in these base application tables to use other tables.
+Before you upgrade, either move the records to new tables or delete the records from the tables. Also, rewrite the custom application code that's stores the nontemporary records in these base application tables to use other tables.
 
 ## NavUserPassword authentication doesn't work after upgrade to version 18
 <!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/398164 -->
@@ -198,17 +198,17 @@ When you upgrade to version 18 from an earlier major version, authentication tha
 
 ### Impact
 
-When users try to sign in to Business Central, they'll get an error, similar to the following message:
+When users try to sign in to Business Central, they get an error, similar to the following message:
 
 `The specified user name or password is not correct, or you do not have a valid user account in Dynamics 365 Business Central`
 
-In event viewer, you'll see the following error:
+In event viewer, you see the following error:
 
 `Your user name <name> or password is incorrect, or you do not have a valid account in Dynamics 365 Business Central.`
 
 ### <a name="legacy"></a>Workaround
 
-To workaround this issue, activate the `EnableLegacyIterationCount` feature switch by completing these steps.
+To work around this issue, activate the `EnableLegacyIterationCount` feature switch by completing these steps.
 
 1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 
@@ -261,7 +261,7 @@ To workaround this issue, activate the `EnableLegacyIterationCount` feature swit
 
 ### Problem
 
-When you upgrade to version 18 from an earlier major version, authentication that's based on the NavUserPassword credential type takes longer than it did in previous versions. This reason is that the password algorithm has been updated in version 18. The extra time it takes per authentication isn't noticeable to a normal user. But in a solution that has a heavy authentication load, for example from multiple and repeated web service calls, the extra time may be significant.
+When you upgrade to version 18 from an earlier major version, authentication that's based on the NavUserPassword credential type takes longer than it did in previous versions. This reason is that the password algorithm has been updated in version 18. The extra time it takes per authentication isn't noticeable to a normal user. But in a solution that has a heavy authentication load, for example from multiple and repeated web service calls, the extra time might be significant.
 
 ### Workaround
 
@@ -436,7 +436,7 @@ You'll experience this issue in the following scenarios:
 - Upgrading a customized version 14 solution to version 15 or 16
 - Migrating data from one extension to another.
 
-The issue occurs when synchronizing extensions. You'll get an error similar to one of the following messages:
+The issue occurs when synchronizing extensions. You get an error similar to one of the following messages:
 
 `Sync-NAVApp : The metadata object Enum <ID> was not found.`
 
@@ -474,13 +474,13 @@ Version 16.5 includes the wrong .NET 4.5 assemblies for connecting to external s
 
 ### Impact
 
-In the [!INCLUDE[prod short](../developer/includes/prod_short.md)] client, you can set up external service connections from the **Service Connections** page. When you try to set up a connection, it will fail because [!INCLUDE[prod short](../developer/includes/prod_short.md)] can't obtain an access token for connecting to the service.
+In the [!INCLUDE[prod short](../developer/includes/prod_short.md)] client, you can set up external service connections from the **Service Connections** page. When you try to set up a connection, it fails because [!INCLUDE[prod short](../developer/includes/prod_short.md)] can't obtain an access token for connecting to the service.
 
-In the client, you'll get an error similar to the following message:
+In the client, you get an error similar to the following message:
 
 `Failed to acquire authorization token for <service>.`
 
-In the event log, you'll see an error similar to the following message:
+In the event log, you see an error similar to the following message:
 
 `Could not load file or assembly 'Microsoft.Identity.Client, Version=4.14.0, Culture=neutral, PublicToken=0a613f4dd989e8e' or one of its dependencies. The located assembly's manifest location does not match the assembly reference.`
 
@@ -513,7 +513,7 @@ The installation media (DVD) is missing required HTML files for the Help Server.
 
 ### Impact
 
-The Help Server installation will fail.
+The Help Server installation fails.
 
 ### Workaround
 
