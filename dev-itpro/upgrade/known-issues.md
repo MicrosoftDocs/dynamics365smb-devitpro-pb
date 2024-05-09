@@ -36,11 +36,11 @@ PowerShell 7 for the commandlets
 Fatal error during installation.
 ```
 
-In the installation log or Windows Event Viewer, you get an error message similar to `A newer version of PowerShell is already installed.`  
+In the installation log or Windows Event Viewer, you get an error message similar to `A newer version of PowerShell is already installed`.  
 
 ## Possible cause
 
-There's already a version of PowerShell 7 on  [!INCLUDE[server](../developer/includes/server.md)] machine. Instead of skipping the installation of PowerShell 7 as it should, the setup.exe tries to install it and fails.
+There's already a version of PowerShell 7 on the [!INCLUDE[server](../developer/includes/server.md)] machine. Instead of skipping the installation of PowerShell 7 as it should, the setup.exe tries to install it and fails.
 
 ### Workaround
 
