@@ -20,7 +20,7 @@ For an overview of the supported paths, see [Supported Upgrade Paths](upgrade-pa
 
 ## Before choosing the target version
 
-Before you choose the target version for your upgrade, read the [Some Known Issues](known-issues.md) article. This article will describe issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions that affect upgrade.
+Before you choose the target version for your upgrade, read the [Some Known Issues](known-issues.md) article. This article describes issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions that affect upgrade.
 
 ## Version 23 compatibility
 
