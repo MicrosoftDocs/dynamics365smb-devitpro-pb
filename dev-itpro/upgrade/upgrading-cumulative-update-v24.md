@@ -170,7 +170,7 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
 1. Run setup.exe to uninstall your current version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
    > [!IMPORTANT]
-   > If you're machine is installed with Windows PowerShell 7.4.2 or later, you must uninstall it before you install version 24.1.; otherwise the installation fails. For more information, see [Known issues](known-issues.md#installation-fails-because-powershell-7-is-already-installed).
+   > If you're machine is installed with Windows PowerShell 7.4.2 or later, you must uninstall it before you install Business Central version 24.1; otherwise the installation fails. For more information, see [Known issues](known-issues.md#installation-fails-because-powershell-7-is-already-installed).
 
 1. Run setup.exe again to install components of the update.
 

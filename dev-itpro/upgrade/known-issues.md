@@ -40,7 +40,14 @@ In the installation log or Windows Event Viewer, you get an error message simila
 
 ## Possible cause
 
-Windows PowerShell 7.4.2 or later is already installed on the [!INCLUDE[server](../developer/includes/server.md)] machine. The Business Central setup.exe installs PowerShell 7.4.2, but it should only do so if the machine doesn't have PowerShell installed or if it does, the version is earlier than 7.4.2. In version 24.1, instead of skipping the PowerShell installation when it should, the setup.exe tries to install PowerShell but fails.
+Windows PowerShell 7.4.2 or later is already installed on the [!INCLUDE[server](../developer/includes/server.md)] machine. The Business Central setup.exe will automatically install PowerShell 7.4.2, but it should only do so if the machine doesn't have PowerShell installed or it has a version earlier than 7.4.2. In version 24.1, instead of skipping the PowerShell installation when it should, the setup.exe tries to install PowerShell but fails.
+
+> [!TIP]
+> To find out what PowerShell version is running on your machine, open PowerShell and enter the following prompt:
+>
+> ```powershell
+> PWSH.exe
+> ```
 
 ### Workaround
 
