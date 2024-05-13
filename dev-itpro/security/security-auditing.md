@@ -24,6 +24,8 @@ Some of the most important tables tracked include:
 
 - Table 2000000121 User Property
 
+- Table 2000000253 Tenant Permission Set Rel.
+
 - Table 402 Change Log Setup
 
 - Table 403 Change Log Setup
