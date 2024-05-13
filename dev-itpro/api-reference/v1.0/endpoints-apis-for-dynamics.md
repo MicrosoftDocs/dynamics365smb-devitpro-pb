@@ -1,18 +1,14 @@
 ---
-title: (v1.0) "Endpoints for the APIs for Microsoft Dynamics NAV and Microsoft Dynamics 365 Business Central"
-description: (v1.0) "Describing the steps you must go through to enable access to the APIs in on-prem and cloud product versions."
+title: (v1.0) Endpoints for the APIs for Microsoft Dynamics NAV and Microsoft Dynamics 365 Business Central
+description: (v1.0) Describing the steps you must go through to enable access to the APIs in on-prem and cloud product versions.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 12/16/2019
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 05/01/2024
 ms.topic: article
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 ---
 
-# Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online (v1.0)
+# Endpoints for the APIs for Dynamics 365 Business Central on-premises and online (v1.0)
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -47,6 +43,13 @@ Once you have the API access enabled, you can write code that integrates your we
 |**API/Data access**    |Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|
 |**API update cycle**   |Hotfixes installed by partner.|
 |**Development instance**|Get [Docker](https://aka.ms/navdeveloperpreview) instance.|
+
+## Which IP addresses or ranges does my environment's API use?
+
+When you exchange data through the API, you might have to safelist the IP addresses. 
+
+For more information, see [FAQ: IP addresses or ranges for the Business Central service](../../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
+
 
 ## See Also
 

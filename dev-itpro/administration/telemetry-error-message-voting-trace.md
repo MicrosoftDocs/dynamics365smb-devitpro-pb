@@ -3,9 +3,7 @@ title: Analyzing Error Message Vote Telemetry | Microsoft Docs
 description: Learn about error message vote telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/22/2022
 ms.author: jswymer
@@ -36,6 +34,7 @@ The following table explains the general dimensions included in the trace. The t
 |Dimension|Description or value|
 |---------|--------------------|
 |message|**User gave feedback on error message: [OK|Not OK]**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] <br><br>Data in user_Id from the **User** card was introduced in version 24 for page view telemetry.  |
 
 <!-- removed by request |severityLevel|**3**| -->
 

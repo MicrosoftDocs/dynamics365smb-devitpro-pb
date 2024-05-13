@@ -2,10 +2,7 @@
 title: "CodeCop Warning AA0205"
 description: "Always initialize a variable before usage."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,14 +27,14 @@ var
     x: Integer;
     z: Integer;
 
-procedure Proc1();
+procedure Proc1()
 var
 begin
     Proc2(z);
     x := z;
 end;
 
-procedure Proc2(z: Integer);
+procedure Proc2(z: Integer)
 var
 begin
     z := 10;
@@ -50,14 +47,14 @@ var
     x: Integer;
     z: Integer;
 
-procedure Proc1();
+procedure Proc1()
 var
 begin
     Proc2(z);
     x := z;
 end;
 
-procedure Proc2(var z: Integer);
+procedure Proc2(var z: Integer)
 var
 begin
     z := 10;

@@ -1,18 +1,18 @@
 ---
-title: Legal Landing Page for Business Central online
+title: Legal landing page for Business Central online
 description: Get a list of links to legal information for Business Central, including the online service terms for Business Central online. 
 author: jswymer
 ms.custom: na
-ms.reviewer: na
 ms.topic: article
-ms.date: 01/10/2022
-ms.author: edupont
+ms.date: 01/08/2024
+ms.author: jswymer
 ---
-# Legal Landing Page for Microsoft Dynamics 365 Business Central Online
+
+# Legal landing page for Microsoft Dynamics 365 Business Central Online
 
 This article provides links to legal information for [!INCLUDE [prod_short](../includes/prod_short.md)] online.  
 
-## Product Terms
+## Product terms
 
 - [Commercial Licensing Terms for the Microsoft Customer Agreement program](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDynamics365Services/MCA)
 
@@ -36,8 +36,8 @@ This article provides links to legal information for [!INCLUDE [prod_short](../i
 - [Lifecycle policy for [!INCLUDE [prod_short](../includes/prod_short.md)] online](/lifecycle/products/dynamics-365-business-central)
 <!--- links-->
 
-## See Also
+## See also
 
 [Privacy FAQ](../security/PrivacyFAQ.md)  
-[Legal Resources for Business Central On-Premises](legal-onpremises.md)  
+[Legal Resources for Business Central on-premises](legal-onpremises.md)  
 [Developer and Administration Help for Microsoft Dynamics 365 Business Central](../index.md)  

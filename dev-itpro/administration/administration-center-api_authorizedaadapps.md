@@ -3,9 +3,7 @@ title: Business Central Admin Center API - Authorized AAD Apps
 description: Learn about the Business Central administration center API for authorizing Microsoft Entra apps.
 author: jobulsin
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
@@ -13,9 +11,10 @@ ms.date: 02/24/2023
 
 # Authorized Microsoft Entra apps 
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 Authorized Apps are Microsoft Entra apps authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
+
+> [!NOTE]
+> Endpoints on this page cannot be used when authenticated as an app.
 
 ## Get Authorized Microsoft Entra apps
 

@@ -1,21 +1,17 @@
 ---
-title: "Pages Overview"
-description: "Pages are the main way to display and organize data." 
+title: Pages overview
+description: Pages are the main way to display and organize data.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/21/2024
 ms.topic: overview
 ms.author: solsen
 ---
 
-# Pages Overview
+# Pages overview
 
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], pages are the main way to display and organize data. Pages are the primary object that a user will interact with and have a different behavior based on the type of page that you choose. Pages are designed independently of the device they are to be rendered on, and in this way the same page can be reused across phone, tablet, and web clients.
 
-A page is defined in code as an object composed of controls, properties, actions, and triggers. You can also use Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to create a page. For more information, see [Using Designer](devenv-inclient-designer.md). 
+A page is defined in code as an object composed of controls, properties, actions, and triggers. You can also use Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to create a page. For more information, see [Use Designer](devenv-inclient-designer.md). 
 
 Whether you are creating a new page, or extending an existing page, you will add a new .al file to your project and describe the [page object](devenv-page-object.md) in code. The difference is basically that for a new page, you need to define the entire page, whereas when modifying an existing page, you only add the extra functionality or modify the existing. 
 
@@ -28,7 +24,7 @@ Furthermore, the page has properties. Properties work in the same way for pages 
 
 ## Page metadata
 
-For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object.  
+For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object. IntelliSense can help you explore the options for, which metadata you can set. Press <kbd>Ctrl</kbd>+<kbd>Space</kbd> to activate IntelliSense from everywhere in your code.  
 
 ```AL
 page 50102 PageName
@@ -43,11 +39,17 @@ page 50102 PageName
 
 ### Types of pages  
 
-Which page type you choose depends on the application task that you want to support, the content that you want to display, and how you want to display it. The Role Center page is the main or home page and it helps the user focus on the most important daily tasks and activities. Other types of pages, such as list pages or card pages are typically linked from the home page for easy access. The following page types are available:  
+Which page type you choose depends on the application task that you want to support, the content that you want to display, and how you want to display it. The Role Center page is the main or home page and it helps the user focus on the most important daily tasks and activities. Other types of pages, such as list pages or card pages are typically linked from the home page for easy access. 
 
-|Page type   |Description|
+> [!TIP]  
+> For more information about the different page types and how their layouts supports user scenarios, see [Page types and layouts](devenv-page-types-and-layouts.md).
+
+
+The following page types are available:
+
+|Page type   |Use it for...|
 |------------|-----------|
-|[RoleCenter](devenv-designing-role-centers.md)|The Role Center page is the main page.|
+|[RoleCenter](devenv-designing-role-centers.md)|The Role Center page is the main home page for a role.|
 |[Card](devenv-designing-card-pages.md)|A Card page is used to view and edit one record or entity from a table.|
 |[CardPart](devenv-designing-cardparts.md)|A Card Part page is used in a FactBox on another page to view or edit additional fields associated with a selected entity in the page.|
 |[List](devenv-designing-list-pages.md)|A List page displays content from a table in a list format.|
@@ -60,23 +62,27 @@ Which page type you choose depends on the application task that you want to supp
 |[NavigatePage](devenv-designing-navigate-pages.md)|You use a Navigate page type to create an assisted setup guide, also known as a wizard, that leads the user through a sequence of steps for completing a task.|
 |[HeadlinePart](devenv-create-role-center-headline.md)|You use a HeadlinePart page type to display a set of changing headlines on a Role Center.|
 |[API](devenv-api-pagetype.md)|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface. This page type should not be extended by creating a page extension object. Instead, create a new API by adding a page object.|
+|[PromptDialog](devenv-page-type-promptdialog.md) | Pages of this type are used to enable creating generative AI experiences with the copilot look and feel.|
 
 > [!NOTE]  
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 
 
+
 ## Page layout
 
-The page layout of the page object determines what the page will look like and is specified in the `layout` section. The `layout` contains one or more `area` sections that define a certain placement on the page. 
+The page layout of the page object determines what the page will look like and is specified in the `layout` section. The `layout` contains one or more `area` sections that define a certain placement on the page. The `area` sections available depend on the page type that you have chosen.
 
-You can choose between the following `area` categories:
+The following `area` categories are available depending on the page type:
 
 |Area type|Placement on the page|
 |---------|---------------------|
 |`Content`|The content area displays the content of, for example, a RoleCenter or a List page.|
 |`FactBoxes`|The FactBox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
 |`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
-  
-### Page actions
+|`Prompt`|The prompt area is used to gather input from the user for a copilot interaction and used on pages of the type `PromptDialog`. For more information, see [PromptDialog page type](devenv-page-type-promptdialog.md).|
+
+
+## Page actions
 
 All pages contain menu items and navigation controls called actions. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page in the ribbon or in the navigation pane. The `actions` section of the page describes what the user is able to do on a page and must be designed with the user's need for process support in mind. 
 
@@ -87,7 +93,8 @@ Actions can be displayed in the ribbon of all pages and grouped together under t
 - Navigate
 - Report
 
-Creating actions can include adding activity buttons/cues to a page, configuring navigation items on a user role center, or adding Reports to a page. To learn how you can enable users to quickly locate the actions they want to use, see [Actions](devenv-actions-overview.md). 
+Creating actions can include adding activity buttons/cues to a page, configuring navigation items on a user role center, or adding Reports to a page. To learn how you can enable users to quickly locate the actions they want to use, see [Action overview](devenv-actions-overview.md). 
+
 
 ## Adding Help to the page objects
 
@@ -103,9 +110,14 @@ In combination with descriptive captions and instructional text, tooltips are ou
 
 The base application has set the Tooltip property for all controls on (almost) all page objects. Most system actions also include tooltips so that users get a consistent experience. Your extensions are expected to also include tooltips for the same reason. For more information, see [ToolTip Property](../developer/properties/devenv-tooltip-property.md).  
 
+> [!NOTE]  
+> Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that uses the field automatically inherits the tooltip. For more information, see [Add tooltips to table and page fields](devenv-adding-tooltips.md).
+
+
 ### Instructional text
 
-The base application has applied instructional text to setup guides and certain other types of page objects. Your extensions are expected to also include instructional text to setup guides for the same reason. For more information, see [InstructionalText Property](../developer/properties/devenv-instructionaltext-property.md).  
+The base application has applied instructional text to setup guides, certain other types of page objects, and for page fields. Your extensions are expected to also include instructional text to setup guides for the same reason. Similarly, instructional text is useful to implement on page fields to describe example values or a short summary directly in the field, which guides the user for what to input in that field. For more information, see [InstructionalText Property](../developer/properties/devenv-instructionaltext-property.md).
+
 
 ### Example
 
@@ -141,6 +153,7 @@ page 50101 "Reward Card"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the impact of the reward on the customer''s price.';
+                    InstructionalText = 'For example, 7.5 %';
                 }
             }
         }
@@ -149,6 +162,7 @@ page 50101 "Reward Card"
 ```
 
 In this example, the app.json file has specified a link to where the *sales-rewards* target file is published, such as `"contextSensitiveHelpUrl": "https://mysite.com/documentation"`.
+
 
 ## Best practices for designing pages
 
@@ -162,12 +176,13 @@ We recommend that you simplify the user experience by reducing what users see by
 
 - Add a target Help file for context-sensitive Help for the feature that the page object supports
 
-## See Also
 
-[Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
-[Actions Overview](devenv-actions-overview.md)  
-[Using Designer](devenv-inclient-designer.md)  
-[Page Types and Layouts](devenv-page-types-and-layouts.md)   
-[Adding a Factbox to a Page](devenv-adding-a-factbox-to-page.md)  
-[Designing Role Centers](devenv-designing-role-centers.md)  
-[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
+## See also
+
+[Page types and layouts](devenv-page-types-and-layouts.md)  
+[Page, page fields, and page extension properties](properties/devenv-page-property-overview.md)  
+[Actions overview](devenv-actions-overview.md)  
+[Use Designer](devenv-inclient-designer.md)  
+[Adding a factbox to a page](devenv-adding-a-factbox-to-page.md)  
+[Designing role centers](devenv-designing-role-centers.md)  
+[Configure context-sensitive help](../help/context-sensitive-help.md)  

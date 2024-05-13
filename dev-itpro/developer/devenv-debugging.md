@@ -1,19 +1,22 @@
 ---
-title: "Debugging"
-description: "Overview of debugging in AL"
+title: Debugging in AL
+description: Debugging in AL with Visual Studio Code and the AL Language extension.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 06/28/2022
-ms.reviewer: na
+ms.custom: bap-template
+ms.date: 01/10/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
 ---
 
 # Debugging in AL
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-*Debugging* is the process of finding and correcting errors. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you get an integrated debugger to help you inspect your code and verify that your application can run as expected. You can start a debugging session by pressing **F5**. For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging). 
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
+
+*Debugging* is the process of finding and correcting errors. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you get an integrated debugger to help you inspect your code and verify that your application can run as expected. You can start a debugging session by pressing <kbd>F5</kbd>. For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging). 
 
 An alternative to classic debugging is snapshot debugging, which allows you to record running code, and later debug it. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 
@@ -21,12 +24,12 @@ An alternative to classic debugging is snapshot debugging, which allows you to r
 > To enable debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This step requires a server restart.
 
 > [!IMPORTANT]  
-> To use the development environment and debugger, you must make sure that port `7049` is available.
+> To use the development environment and debugger for on-premises environments, you must make sure that port `7049` is available.
 
 There are some limitations to be aware of:
 
 - "External code" can only be debugged if the code has the `allowDebugging` flag set to `true`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md). 
-- The debugger launches a new client instance each time you press **F5**. If you close the debugging session and then start a new session, this new session will rely on a new client instance. We recommend that you close the Web client instances when you close a debugging session.
+- The debugger launches a new client instance each time you select <kbd>F5</kbd>. If you close the debugging session and then start a new session, this new session will rely on a new client instance. We recommend that you close the Web client instances when you close a debugging session.
 - Pausing the debugging session isn't supported.
 
 To control table data synchronization between each debugging session, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).  
@@ -49,6 +52,10 @@ The following video illustrates that `Customer.dal` is an external file. A break
 
 For more information about **Go to Definition**, see [AL Code Navigation](devenv-al-code-navigation.md). 
 
+### Conditional breakpoints
+
+You can also set a condition on a breakpoint and if the condition evaluates as true, then code execution breaks at the breakpoint. For more information, see [Setting conditional breakpoints](devenv-debugging-conditional-breakpoints.md).
+
 ## Break on errors
 
 Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to `breakOnError`, it stops execution on both errors that are handled in code and unhandled errors.
@@ -56,7 +63,7 @@ Specify if the debugger breaks on the next error by using the `breakOnError` pro
 The default value of the `breakOnError` property is **true**, which means the debugger stops the execution that throws an error by default. To skip the error handling process, set the `breakOnError` property to **false** in the `launch.json` file. 
 
 > [!TIP]  
-> If the debugging session takes longer, you can refresh the session by pressing the **Ctrl+Shift+P** keys and selecting **Reload Window**.
+> If the debugging session takes longer, you can refresh the session by selecting the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> keys and selecting **Reload Window**.
 
 ## Break on record changes
 
@@ -73,7 +80,7 @@ The default value of the `breakOnRecordWrite` property is **false**, which means
 
 ## Debugging large size variable values
 
-Variables with values larger than 1024 bytes are truncated (`…`) and can't be fully inspected from the **VARIABLES** window. To inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name, or qualified name of a variable to inspect at the prompt and then press **Enter**.
+Variables with values larger than 1024 bytes are truncated (`…`) and can't be fully inspected from the **VARIABLES** window. To inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name, or qualified name of a variable to inspect at the prompt and then select <kbd>Enter</kbd>.
 
 ## Attach and Debug Next
 
@@ -83,15 +90,15 @@ If you don't want to publish and invoke the functionality to debug it, you can a
 
 |Keystroke    |Action         |
 |-------------|---------------|
-|**F5**           |Start debugging|
-|**Ctrl+F5**      |Start without debugging|
-|**Shift+F5**     |Stop debugging|
-|**Ctrl+Shift+F5**|Start debugging without publishing. <br> Using this command on a changed but unpublished code may trigger false existing breakpoints. For example, if you modify the method "foo", add two lines, put a breakpoint on the second line, and then start debugging without publishing, that breakpoint won't be hit, or if it's hit isn't your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
-|**Alt+F5**       |Start RAD with debugging. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).|
-|**F10**          |Step over|
-|**F11**          |Step into|
-|**Shift+F11**    |Step out|
-|**F12**          |Go To Definition| 
+|<kbd>F5</kbd>           |Start debugging|
+|<kbd>Ctrl</kbd>+<kbd>F5</kbd>       |Start without debugging|
+|<kbd>Shift</kbd>+<kbd>F5</kbd>     |Stop debugging|
+|<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F5</kbd>|Start debugging without publishing. <br> Using this command on a changed but unpublished code may trigger false existing breakpoints. For example, if you modify the method "foo", add two lines, put a breakpoint on the second line, and then start debugging without publishing, that breakpoint won't be hit, or if it's hit isn't your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
+|<kbd>Alt</kbd>+<kbd>F5</kbd>       |Start RAD with debugging. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).|
+|<kbd>F10</kbd>         |Step over|
+|<kbd>F11</kbd>          |Step into|
+|<kbd>Shift</kbd>+<kbd>F11</kbd>    |Step out|
+|<kbd>F12</kbd>          |Go To Definition| 
 
 For more shortcuts, see [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging). For working with Snapshot Debugging, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 
@@ -135,6 +142,11 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 > [!NOTE]  
 > For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics. These statistics are gathered and then displayed in the debugger, like whether long running SQL statements or SQL statements are shown. Check the server configuration if you don't see the insights that you expect in the debugger. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
 
+
+## <a name="DebugWS"></a>Debugging web services
+
+It's possible to debug code executed from web service endpoints, both pages and codeunits exposed as OData/SOAP, and API pages/queries. To do so, simply set the `breakOnNext` setting to `WebServiceClient` and trigger the web service endpoint from an API explorer tool or your web service client code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
+
 ## NonDebuggable attribute
 
 The ability to debug certain methods and/or variables can be restricted. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
@@ -143,9 +155,31 @@ The ability to debug certain methods and/or variables can be restricted. For mor
 
 You can use Microsoft Entra ID as the authentication mechanism for [!INCLUDE[prod_short](includes/prod_short.md)] on-premises or containers. For more information, see [Microsoft Entra authentication for Business Central on-premises](devenv-aad-auth-onprem.md).
 
-## See Also
+## Troubleshooting your debugging setup
 
-[Attach and Debug Next](devenv-attach-debug-next.md)  
-[Developing Extensions](devenv-dev-overview.md)  
-[JSON Files](devenv-json-files.md)  
-[AL Code Navigation](devenv-al-code-navigation.md)  
+This section provides some tips and tricks for working with and troubleshooting your debugging setup.
+
+### Debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019
+
+To enable debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This step requires a server restart.
+
+### Firewall settings for on-premises environments (port 7049)
+
+To use the development environment and debugger for on-premises environments, you must make sure that port `7049` (the default port for the debugger) is open. The port can be changed with the server setting ``DeveloperServicesPort``.
+
+### Debug an online environment with an Embed app published in it
+
+To be able to debug an online environment with an Embed app published in it, make sure to specify the `applicationFamily` parameter in your launch.json file. You must define the application family for your Embed app during onboarding. 
+
+### Launching debug sessions to on-premises environments
+
+To be able to debug sessions in an on-premises environment, make sure to specify the `usePublicURLFromServer` parameter in your launch.json file. For more information, see [Publish to local server settings (launch.json)](devenv-json-launch-file.md#publish-to-local-server-settings-launchjson)
+
+
+## See also
+
+[Attach and debug next](devenv-attach-debug-next.md)  
+[Snapshot debugging](devenv-snapshot-debugging.md)  
+[Developing extensions](devenv-dev-overview.md)  
+[JSON files](devenv-json-files.md)  
+[AL code navigation](devenv-al-code-navigation.md)  

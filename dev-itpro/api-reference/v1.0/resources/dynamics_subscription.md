@@ -3,12 +3,10 @@ title: (v1.0) subscription resource type
 description: (v1.0) A subscription object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
 ---
 
@@ -57,7 +55,6 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "dateTimeOffset",
   "expirationDateTime": "dateTimeOffset"
 }
-
 ```
 
 ## See also

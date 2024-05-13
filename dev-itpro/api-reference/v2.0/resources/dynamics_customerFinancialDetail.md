@@ -3,10 +3,8 @@ title: customerFinancialDetail resource type
 description: A customer financial detail object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -43,6 +41,7 @@ Represents a customer financial detail in [!INCLUDE[prod_short](../../../include
 |balance|decimal|Specifies customer financial detail's total balance.|
 |totalSalesExcludingTax|decimal|Total sales exluding tax.|
 |overdueAmount|decimal|Overdue amount for the customer financial detail.|
+|lastModifiedDateTime|datetime|The last datetime the customer financial detail was modified. Read-Only.|
 
 ## JSON representation
 
@@ -55,7 +54,8 @@ Here is a JSON representation of the customerFinancialDetail resource.
     "number": "string",
     "balance": "decimal",
     "totalSalesExcludingTax": "decimal",
-    "overdueAmount": "decimal"
+    "overdueAmount": "decimal",
+    "lastModifiedDateTime": "datetime"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->

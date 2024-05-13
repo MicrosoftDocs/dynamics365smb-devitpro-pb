@@ -2,10 +2,7 @@
 title: "XmlNode.AsXmlComment() Method"
 description: "Converts the node to an XmlComment node."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Converts the node to an XmlComment node. The operation will fail if the node is 
 ```AL
 XmlComment :=   XmlNode.AsXmlComment()
 ```
-
 ## Parameters
 *XmlNode*  
 &emsp;Type: [XmlNode](xmlnode-data-type.md)  

@@ -2,10 +2,7 @@
 title: "OnBeforeValidate (Field Extension) Trigger"
 description: "Runs before the user input is validated."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/23/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -55,7 +52,6 @@ tableextension 50111 "CustomerExt" extends Customer
         }
     }
 }
-
 ```
 
 ## See Also  

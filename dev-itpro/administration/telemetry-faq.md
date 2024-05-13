@@ -7,8 +7,8 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 04/16/2023
 ms.author: kepontop
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
-ms.custom: bac-template
+
+ms.custom: bap-template
 ---
 # Telemetry FAQ (Frequently Asked Questions)
 

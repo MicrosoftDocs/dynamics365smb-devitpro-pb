@@ -1,16 +1,13 @@
 ---
-title: "Preprocessor Directives in AL"
-description: "The different types of preprocessor directives in AL; conditional, regions, and pragmas and preprocessorSymbols setting."
+title: Preprocessor directives in AL
+description: The different types of preprocessor directives in AL; conditional, regions, and pragmas and preprocessorSymbols setting.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2021
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/19/2024
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Preprocessor Directives in AL
+# Preprocessor directives in AL
 
 [!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
@@ -71,16 +68,16 @@ For more information, see [JSON Files](../devenv-json-files.md).
 
 ```
 
-## See Also
+## See also
 
 [Development in AL](../devenv-dev-overview.md)  
-[AL Development Environment](../devenv-reference-overview.md)  
+[AL development environment](../devenv-reference-overview.md)  
 [Conditional directives](devenv-directives-in-al.md#conditional-directives)  
-[Region Directive in AL](devenv-directive-region.md)  
-[Pragma Directive in AL](devenv-directive-pragma.md)  
-[Deprecating Explicit and Implicit With Statements](../devenv-deprecating-with-statements-overview.md)  
-[Best Practices for Deprecation of Code in the Base App](../devenv-deprecation-guidelines.md)  
-[ObsoleteState Property](../properties/devenv-obsoletestate-property.md)  
-[ObsoleteReason Property](../properties/devenv-obsoletereason-property.md)  
-[ObsoleteTag Property](../properties/devenv-obsoletetag-property.md)  
-[Obsolete Attribute](../attributes/devenv-obsolete-attribute.md)  
+[Region directive in AL](devenv-directive-region.md)  
+[Pragma directive in AL](devenv-directive-pragma.md)  
+[Deprecating explicit and implicit with statements](../devenv-deprecating-with-statements-overview.md)  
+[Best practices for deprecation of code in the Base App](../devenv-deprecation-guidelines.md)  
+[ObsoleteState property](../properties/devenv-obsoletestate-property.md)  
+[ObsoleteReason property](../properties/devenv-obsoletereason-property.md)  
+[ObsoleteTag property](../properties/devenv-obsoletetag-property.md)  
+[Obsolete attribute](../attributes/devenv-obsolete-attribute.md)  

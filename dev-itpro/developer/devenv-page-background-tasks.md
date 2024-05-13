@@ -3,11 +3,7 @@ title: "Page Background Tasks"
 description: Explains how to create page background tasks in Business Central.
 author: jswymer
 ms.author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 
@@ -313,7 +309,6 @@ begin​
   TaskParameters.Add('RecId', Id);​
   CurrPage.EnqueueBackgroundTask(TaskSumId, 50100, TaskParameters, 1000, PageBackgroundTaskErrorLevel::Warning);​
 end;
-```
 
 -->
 ## Coding the background task completion trigger to handle the results

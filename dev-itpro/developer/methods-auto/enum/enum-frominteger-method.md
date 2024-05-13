@@ -2,10 +2,7 @@
 title: "Enum.FromInteger(Integer) Method"
 description: "Returns an enum with the integer value"
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -47,7 +44,7 @@ enum 50130 YesNo
 
 codeunit 50130 YesNoTest
 {
-    procedure Test();
+    procedure Test()
     var
         Answer: enum YesNo;
     begin

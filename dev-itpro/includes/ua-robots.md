@@ -1,8 +1,8 @@
 ---
-author: edupont04
+author: jswymer
 ms.topic: include
 ms.date: 04/01/2021
-ms.author: edupont
+ms.author: jswymer
 ---
 We encourage you to use apply the `ROBOTS: NOINDEX, NOFOLLOW` metadata to any customized versions of Microsoft's content. The intent is that search engines will find Microsoft's original content on the learn.microsoft.com site rather than any customizations that you and hundreds of other may have published. Set the metadata in the individual files, or set it in the `globalMeta` section of docfx.json if you build using [docfx.exe](https://dotnet.github.io/docfx/index.html). For an example, see [the ui-work-with-notes.md file in GitHub](https://github.com/MicrosoftDocs/dynamics365smb-docs/blob/live/business-central/ui-work-with-notes.md), which we have deprecated but kept in the repo as an example.  
 

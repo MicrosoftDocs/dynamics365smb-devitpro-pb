@@ -2,10 +2,7 @@
 title: "HttpClient Data Type"
 description: "Provides a data type for sending HTTP requests and receiving HTTP responses from a resource identified by a URI."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/06/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -20,6 +17,7 @@ Provides a data type for sending HTTP requests and receiving HTTP responses from
 
 
 
+## Instance methods
 The following methods are available on instances of the HttpClient data type.
 
 |Method name|Description|
@@ -37,6 +35,7 @@ The following methods are available on instances of the HttpClient data type.
 |[SetBaseAddress(Text)](httpclient-setbaseaddress-method.md)|Sets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests.|
 |[Timeout([Duration])](httpclient-timeout-method.md)|Gets or sets the duration in milliseconds to wait before the request times out.|
 |[UseDefaultNetworkWindowsAuthentication()](httpclient-usedefaultnetworkwindowsauthentication-method.md)|Sets the HttpClient credentials to use the default network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
+|[UseResponseCookies(Boolean)](httpclient-useresponsecookies-method.md)|If true, the client automatically attaches cookies received in the response to all subsequent requests.|
 |[UseWindowsAuthentication(Text, Text [, Text])](httpclient-usewindowsauthentication-string-string-string-method.md)|Sets the HttpClient credentials to use the specified network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
 |[UseWindowsAuthentication(SecretText, SecretText [, SecretText])](httpclient-usewindowsauthentication-secrettext-secrettext-secrettext-method.md)|Sets the HttpClient credentials to use the specified network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
 

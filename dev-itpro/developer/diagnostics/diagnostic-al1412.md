@@ -2,10 +2,7 @@
 title: "Compiler Designer Customization Warning AL1412"
 description: "{0} '{1}' is marked for removal."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 {0} '{1}' is marked for removal. {2}.
+
 
 ## Description
 The referenced object has been marked as obsolete pending. That is, the owner of the extension that defines it will remove it in a future version.  

@@ -2,10 +2,7 @@
 title: "InStream.ReadText(var Text [, Integer]) Method"
 description: "Reads text from an InStream object."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -31,6 +28,7 @@ An instance of the [InStream](instream-data-type.md) data type.
 *Variable*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The variable that receives the characters that were read.  
+
 *[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of characters to be read. If you do not specify this parameter, the maximum length of the string is used.  

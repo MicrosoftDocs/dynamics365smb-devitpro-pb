@@ -2,11 +2,7 @@
 title: Field groups
 description: A field group defines the fields to display in a DropDown control in Dynamics 365 Business Central. 
 ms.author: solsen
-ms.custom: na
 ms.date: 09/20/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -77,6 +73,34 @@ tableextension 50100 CustomerExercise extends Customer
 }
 ```
 
+> [!NOTE]  
+> If the field you're adding to the DropDown has `Visibility = false` on the underlying lookup page, it will not show up in the DropDown. 
+
+For example, if we want to add the "Address 2" field to the Ship-to Address DropDown, the following code illustrates the changes needed to add the "Address 2" field to the Ship-To Address DropDown fieldgroup.
+The underlying lookup page is the Ship-To Address List, where Address 2 has the `Visibility` property set to `false`. 
+
+
+```AL
+tableextension 50101 ShipToAddressExercise extends "Ship-to Address"
+{
+    fieldgroups
+    {
+        addlast(DropDown; "Address 2"){}
+    }
+}
+
+pageextension 50101 ShipToAddressExercise extends "Ship-to Address"
+{
+    layout
+    {
+        modify("Address 2")
+        {
+            Visible = true;
+        }
+    }
+}
+```
+
 ## Adding new field groups
 
 [!INCLUDE[2023-releasewave2](../includes/2023-releasewave2.md)]
@@ -90,7 +114,8 @@ The ordering of the fields will then be determined by the order in which extensi
 
 To specify which fields are included in a tile for a record in a list page object, you use the `Brick` field group name. The following example defines the `Brick` field group that includes two fields of a table object:
 
-```
+
+```al
 table 50101 MyTable
 {
     DataClassification = ToBeClassified;

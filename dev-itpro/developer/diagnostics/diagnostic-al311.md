@@ -2,10 +2,7 @@
 title: "Compiler Error AL0311"
 description: "Member '{0}' cannot be accessed with an instance reference; qualify it with '{1}' instead."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Member '{0}' cannot be accessed with an instance reference; qualify it with '{1}' instead.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

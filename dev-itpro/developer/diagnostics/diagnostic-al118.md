@@ -2,10 +2,7 @@
 title: "Compiler Error AL0118"
 description: "The name '{0}' does not exist in the current context."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The name '{0}' does not exist in the current context.
+
 
 ## Description
 The referenced name does not exist in the current context.  

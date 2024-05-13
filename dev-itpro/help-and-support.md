@@ -1,11 +1,10 @@
 ---
 title: "Resources for Help and Support"
 description: Learn about resources for support and product Help for Business Central if you are reselling partner or a developer.
-author: edupont04
-ms.reviewer: na
+author: jswymer
 ms.topic: article
-ms.author: edupont
-ms.date: 10/24/2023
+ms.author: jswymer
+ms.date: 01/11/2024
 ---
 
 # Resources for Help and Support for [!INCLUDE[prod_long](includes/prod_long.md)]
@@ -124,7 +123,6 @@ You can learn about current and coming capabilities through a number of differen
 > |Integrating with Business Central using web services|[learn.microsoft.com/dynamics365/business-central/dev-itpro/webservices/](webservices/web-services.md)|Use this content to learn how to integrate Business Central with other products by using web services.|
 > |Migrate to Business Central online|[learn.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/upgrading-to-business-central-online](upgrade/upgrading-to-business-central-online.md)|Use this content to learn how you can move an on-premises solution to Business Central online.|
 > |Features not implemented in on-premises deployments|[learn.microsoft.com/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises](features-not-implemented-on-premises.md)|Use this content to learn which capabilities in Business Central online are not available in Business Central on-premises deployments.|
-> |The Business Central learning catalog|[learn.microsoft.com/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
 > |Free eLearning|[/learn/dynamics365/business-central](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)|Free [!INCLUDE [prod_short](developer/includes/prod_short.md)] collections and learning paths on Microsoft Learn|
 
 ### <a name="ideas"></a>Share an idea about a new feature you'd like to have

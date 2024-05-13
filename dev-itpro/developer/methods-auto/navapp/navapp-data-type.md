@@ -2,10 +2,7 @@
 title: "NavApp Data Type"
 description: "Provides information about a NavApp."
 ms.author: solsen
-ms.custom: na
-ms.date: 02/02/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -19,6 +16,7 @@ author: SusanneWindfeldPedersen
 Provides information about a NavApp.
 
 
+## Static methods
 The following methods are available on the NavApp data type.
 
 

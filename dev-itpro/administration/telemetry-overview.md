@@ -7,7 +7,7 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 05/31/2023
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.custom: bac-template
+ms.custom: bap-template
 ---
 
 # Monitoring and Analyzing Telemetry
@@ -18,18 +18,21 @@ ms.custom: bac-template
 
 ## Environment-level and app/extension-level telemetry
 
-Telemetry can be enabled on two different levels:
+Telemetry in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can be enabled on two different levels:
 
 - Environment-level telemetry
+- App/extension-level telemetry (for each app/extension installed) 
 
-    Telemetry can be enabled for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment or on-premises [!INCLUDE[server](../developer/includes/server.md)] instance. When enabled on the environment, telemetry is emitted to a single [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource for gathering data on operations that happen on the environment.
+:::image type="content" source="../developer/media/telemetry-architecture.svg" alt-text="Shows how Environment-level telemetry and App/extension-level telemetry works in Business Central AL" lightbox="../developer/media/telemetry-architecture.svg":::
 
-- App/extension-level telemetry  
+When telemetry is enabled on the environment level, telemetry is emitted to an [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource for gathering data on operations that happen on the environment. 
 
-    With the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and later, telemetry can also be enabled on a per-extension basis. Enabling telemetry is done by setting an [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] connection string in the app's manifest (app.json file). At runtime, certain events related to the app/extension are emitted to the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource. This feature targets publishers of per-tenant extensions or Microsoft AppSource apps. It gives extension publishers insight into usage of their apps/extensions and also allows them to find errors and performance issues before partners and customers report them.
+With the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and later, telemetry can also be enabled on a per-extension basis. Enabling telemetry is done by setting an [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] connection string in the app's manifest (app.json file). At runtime, certain events related to the app/extension are emitted to the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource. This feature targets publishers of per-tenant extensions or Microsoft AppSource apps. It gives extension publishers insight into usage of their apps/extensions and also allows them to find errors and performance issues before partners and customers report them.
 
-Both for environment-level and app-level telemetry, it's possible to craft custom telemetry messages directly from AL
-using the [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md). Learn more about AL at [Programming in AL](../developer/devenv-programming-in-al.md).
+Both online environments and on-premises instances can emit telemetry to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)].
+
+> [!TIP]
+> As an AL developer, you can craft custom telemetry messages directly from AL using the [Feature Telemetry codeunit](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry) in the System Application or by using the [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md).
 
 ## Available telemetry
 
@@ -53,7 +56,7 @@ Check the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] documen
 For more information, go to [Control Telemetry Cost](telemetry-control-cost.md).
 
 ## <a name="view"></a>Viewing telemetry data with Power BI
-To make it simple to analyze Business Central telemetry, we've developed two Power BI apps available from the Microsoft commercial marketplace. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
+To make it simple to analyze Business Central telemetry, we've developed two Power BI apps available from the Microsoft commercial marketplace. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to install.
 
 For more information, go to [Analyze and Monitor Telemetry with Power BI](telemetry-power-bi-app.md).
 
@@ -90,6 +93,7 @@ We have compiled a list of frequently asked questions (FAQ) on telemetry. See [T
 [Analyze Telemetry with KQL](telemetry-analyze-with-kql.md)  
 [Alert on Telemetry](telemetry-alert.md)  
 [Telemetry FAQ](telemetry-faq.md)   
+[Feature Telemetry* codeunit](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)  
 [Custom telemetry with LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)  
 [Working with Administration Tools](administration.md)  
 [Business Central Administration Center](tenant-admin-center.md)  

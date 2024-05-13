@@ -2,10 +2,7 @@
 title: "TestPage.OpenEdit() Method"
 description: "Opens a test page in edit mode."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Opens a test page in edit mode.
 ```AL
  TestPage.OpenEdit()
 ```
-
 ## Parameters
 *TestPage*  
 &emsp;Type: [TestPage](testpage-data-type.md)  

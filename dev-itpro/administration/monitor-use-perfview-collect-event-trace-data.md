@@ -1,13 +1,12 @@
 ---
 title: "How to: Use PerfView to Collect Event Trace Data"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.assetid: 0a53dde8-c139-46d0-a13c-56391eed7f95
-caps.latest.revision: 14
 author: SusanneWindfeldPedersen
 ---
 # How to: Use PerfView to Collect Event Trace Data

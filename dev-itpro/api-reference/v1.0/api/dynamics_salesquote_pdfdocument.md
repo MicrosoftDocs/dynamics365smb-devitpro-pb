@@ -3,11 +3,9 @@ title: (v1.0) Get salesQuotes pdfDocument
 description: (v1.0) Gets a PDF document on a salesQuote in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 06/18/2019
 ms.author: solsen
 ---

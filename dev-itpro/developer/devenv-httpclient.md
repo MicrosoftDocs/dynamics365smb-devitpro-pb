@@ -2,9 +2,9 @@
 title: Call external services with the HttpClient data type
 description: Learn about how to call external services using the HttpClient datatype.
 ms.custom: bap-template
-ms.date: 07/26/2023
+ms.date: 01/08/2024
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 author: kennienp
 ms.author: kepontop
@@ -12,9 +12,13 @@ ms.author: kepontop
 
 # Call external services with the HttpClient data type
 
+You can integrate [!INCLUDE[prod_short](includes/prod_short.md)] apps/extensions with external systems by using the *HttpClient* data type in your AL code.
+
+:::image type="content" source="media/httpclient.svg" alt-text="Shows how AL apps/extensions can call external web services from Business Central" lightbox="media/httpclient.svg":::
+
 The [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md) is simply a wrapper on the .NET class HttpClient.  
 
-In this article, you learn how to make HTTP requests using the _HttpClient_ data type and handle responses using the _HttpResponseMessage_ data type. 
+In this article, you learn how to make HTTP requests using the *HttpClient* data type and handle responses using the *HttpResponseMessage* data type. 
 
 ## Set up an external call
 
@@ -36,7 +40,7 @@ The following example illustrates ways to prepare the request.
 
         // This shows how you can set or change HTTP content headers in your request
         Content.GetHeaders(ContentHeaders);
-        if ContentHeaders.Contains('Content-Type') then headers.Remove('Content-Type');
+        if ContentHeaders.Contains('Content-Type') then ContentHeaders.Remove('Content-Type');
         ContentHeaders.Add('Content-Type', 'multipart/form-data;boundary=boundary');
 
         // This shows how you can set HTTP request headers in your request
@@ -87,6 +91,7 @@ The following example shows how to call an external web service from AL. It also
 [!INCLUDE[allowhttpclientnote](../includes/include-http-allowhttpclient-note.md)]
 
 ### Supported HTTP methods
+
 [!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md )]
 
 ## Parsing the result
@@ -125,32 +130,40 @@ The following example illustrates the error handling you need to setup for handl
 [!INCLUDE[httpStatusCodes](../includes/include-http-status-codes.md)]
 
 ### Common HTTP status error codes
+
 [!INCLUDE[httpStatusErrorCodes](../includes/include-http-status-error-codes.md)]
 
 ## Advanced scenarios
 
+### Using cookies
+
+Starting from 2024 release wave 1, you can use server-side cookies when calling an external service using HttpClient This allows you to efficiently send and receive cookies in HTTP requests, unblocking scenarios where third-party endpoints require cookie customization. With the Cookie datatype and AL methods for handling cookies, you can automatically re-use response cookies, handle cookies manually, or a mix of both. 
+
+<!-- Pending merge to main for 2024w1 content
+For more information about server-side cookies, see 
+-->
+
+
 ### Using certificates
 
-It's possible to include a certificate when calling an external service. 
+It's possible to include a certificate when calling an external service using HttpClient. 
 
-The following example shows how to add a certificate to the HttpClient data type.
+[!INCLUDE[httpclient_cert_example](includes/include-http-cert-example.md)]
 
-```AL
-// This code shows how to use certificates with HttpClient
-procedure AddCertificateToHttpClient(var HttpClient: HttpClient; CertificateCode: Text[6])
-var
-    IsolatedCertificate: Record "Isolated Certificate";
-    CertificateManagement: Codeunit "Certificate Management";
-begin
-    if not IsolatedCertificate.Get(CertificateCode) then
-        exit;
-    HttpClient.AddCertificate(
-        CertificateManagement.GetCertAsBase64String(IsolatedCertificate),
-        CertificateManagement.GetPassword(IsolatedCertificate));
-end;
-```
+[!INCLUDE[httpclient_cert_note](includes/include-http-cert-note.md)]
 
-For more information about certificates, see the [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-method.md)
+For more information about certificates, see
+
+- [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-method.md) 
+- [Supported cipher suites in HTTPS](devenv-supported-cipher-suites.md).
+
+### Which IP addresses or ranges does my environment use?
+
+When you exchange data through external services, you might have to safelist the IP addresses from where the [!INCLUDE[prod_short](includes/prod_short.md)] service is running. 
+
+For more information, see 
+- [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
+- [How-to restrict network access from/to Business Central](../security/security-service-tags.md).
 
 ## Monitor and troubleshoot
 
@@ -170,8 +183,10 @@ You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry 
 
 ## See also
 
+[Supported cipher suites in HTTPS](devenv-supported-cipher-suites.md)  
+[How-to restrict network access from/to Business Central](../security/security-service-tags.md)  
 [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md)  
 [HttpContent data type](methods-auto/httpcontent/httpcontent-data-type.md)  
 [Analyzing outgoing web service request telemetry](../administration/telemetry-webservices-outgoing-trace.md)  
-[Developing Extensions](devenv-dev-overview.md)  
-[Get Started with AL](devenv-get-started.md)  
+[Developing extensions](devenv-dev-overview.md)  
+[Get started with AL](devenv-get-started.md)  

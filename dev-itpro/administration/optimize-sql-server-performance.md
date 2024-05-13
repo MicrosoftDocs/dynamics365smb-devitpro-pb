@@ -1,13 +1,11 @@
 ---
 title: "Optimizing SQL Server Performance with Business Central"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+description: Describes how to optimize performance when accessing data from the SQL Server database. 
+ms.custom: bap-template
+ms.date: 04/16/2024
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.assetid: e4c70172-b5bb-4649-a5cb-27fe0afd988c
-caps.latest.revision: 3
 author: jswymer
 ---
 # Optimizing SQL Server Performance with Business Central

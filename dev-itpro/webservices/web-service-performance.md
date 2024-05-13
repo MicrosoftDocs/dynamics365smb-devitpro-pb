@@ -4,7 +4,7 @@ description: Learn about how performance of Business Central web services (OData
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.author: kepontop
 ms.date: 07/03/2023
@@ -50,4 +50,5 @@ For more information, see [Web service telemetry](web-service-telemetry.md)
 [Web Services Best Practices](Web-Services-Best-Practices.md)  
 [Web service telemetry](web-service-telemetry.md)   
 [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md)  
+[Troubleshooting web service errors](web-service-troubleshooting.md)   
 [Performance Articles For Developers](../performance/performance-developer.md)   

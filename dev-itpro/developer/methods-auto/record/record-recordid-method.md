@@ -2,10 +2,7 @@
 title: "Record.RecordId() Method"
 description: "Gets the RecordId of the record that is currently selected in the table."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/13/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -25,7 +22,6 @@ RecordID :=   Record.RecordId()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  

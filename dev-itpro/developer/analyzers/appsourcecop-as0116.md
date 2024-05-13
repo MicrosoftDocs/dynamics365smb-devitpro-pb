@@ -1,11 +1,8 @@
 ---
 title: "AppSourceCop Warning AS0116"
-description: "The source application for this moved object cannot be found."
+description: "The source application for this moved symbol cannot be found."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/06/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -14,10 +11,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Warning AS0116
-Source application for the moved object cannot be found.
+Source application for the moved symbol cannot be found.
 
 ## Description
-The source application for this moved object cannot be found.
+The source application for this moved symbol cannot be found.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

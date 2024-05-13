@@ -2,32 +2,32 @@
 metadata:
   title: "FAQ about developer and admin experiences"
   description: Get answers to some of your questions about administering, customizing, extending, or selling Business Central.
-  author: edupont04
+  author: SusanneWindfeldPedersen
   ms.reviewer: solsen
   ms.topic: faq
-  ms.author: edupont
-  ms.date: 02/15/2022
+  ms.author: solsen
+  ms.date: 04/26/2024
 
 title: FAQ for developer and admin experiences for Dynamics 365 Business Central
 summary: |
   This article guides you to frequently asked questions about [!INCLUDE[prod_short](includes/prod_short.md)]. We also have more focused FAQs as show in the following list:
 
-  - Visit [FAQ about Developing in AL](developer/devenv-dev-faq.md) for questions and answers related to developing extensions in AL.
-  - Visit [FAQ on Managing and submitting your business central offer](developer/app-faq-offer.md) in Partner Center.
-  - Visit [FAQ about Library and Dependency Apps](developer/app-faq-dependencies-libraries.md) to learn about differences between library and dependency apps.
-  - Visit [FAQ about Updating your App](developer/app-faq-update.md) to get answers to questions on tenants, versioning, and compatibility.
-  - Visit [FAQ about Testing your App](developer/app-faq-test.md) to learn about testing before submitting an app.
-  - Visit [FAQ about Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md) for questions and answers related to the validation process.
-  - Visit [FAQ about Migrating to the Cloud from On-Premises Solutions](administration/faq-migrate-data.md) to learn about what is supported.
-  - Visit [FAQ about the Windows Client](faq-win-cli.md) to learn about support for the [!INCLUDE[prod_short](includes/prod_short.md)] Windows client.
-  - Visit [FAQ about Signing Up and Using](/dynamics365/business-central/across-faq) for questions about signing up for and using [!INCLUDE[prod_short](includes/prod_short.md)] in the business functionality content for.
+  - Visit [FAQ about developing in AL](developer/devenv-dev-faq.md) for questions and answers related to developing extensions in AL.
+  - Visit [FAQ on managing and submitting your business central offer](developer/app-faq-offer.md) in Partner Center.
+  - Visit [FAQ about library and dependency apps](developer/app-faq-dependencies-libraries.md) to learn about differences between library and dependency apps.
+  - Visit [FAQ about updating your app](developer/app-faq-update.md) to get answers to questions on tenants, versioning, and compatibility.
+  - Visit [FAQ about testing your app](developer/app-faq-test.md) to learn about testing before submitting an app.
+  - Visit [FAQ about update lifecycle for AppSource apps](developer/devenv-update-app-life-cycle-faq.md) for questions and answers related to the validation process.
+  - Visit [FAQ about migrating to the cloud from on-premises solutions](administration/faq-migrate-data.md) to learn about what is supported.
+  - Visit [FAQ about the windows client](faq-win-cli.md) to learn about support for the [!INCLUDE[prod_short](includes/prod_short.md)] Windows client.
+  - Visit [FAQ about signing up and using](/dynamics365/business-central/across-faq) for questions about signing up for and using [!INCLUDE[prod_short](includes/prod_short.md)] in the business functionality content for.
 
   If you work with processes in [!INCLUDE[prod_short](includes/prod_short.md)], the following list provides answers to some of the most frequently asked questions:
 
-  - Visit [Copy Paste FAQ](/dynamics365/business-central/ui-copy-paste) for tips on copying and pasting.
+  - Visit [Copy paste FAQ](/dynamics365/business-central/ui-copy-paste) for tips on copying and pasting.
   - Visit [Tell Me FAQ](/dynamics365/business-central/ui-search-faq) for guidance on using search.
-  - Visit [List Views FAQ](/dynamics365/business-central/ui-views-faq) to find answers on list views.
-  - Visit [Searching and Filtering FAQ](/dynamics365/business-central/ui-search-filter-faq) to learn about setting filters on data.
+  - Visit [List views FAQ](/dynamics365/business-central/ui-views-faq) to find answers on list views.
+  - Visit [Searching and filtering FAQ](/dynamics365/business-central/ui-search-filter-faq) to learn about setting filters on data.
 
   The following sections provides some of our top-most frequently asked questions for developer and admin experiences.
 
@@ -37,7 +37,7 @@ sections:
     questions:
       - question: Is Business Central available in my country/region?
         answer: |
-          [!INCLUDE[prod_short](includes/prod_short.md)] is available in a limited number of markets, but new countries are added through Microsoft-led localization or through partner-led localization on a quarterly basis. For more information, see [Countries and Translations Supported](compliance/apptest-countries-and-translations.md).
+          [!INCLUDE[prod_short](includes/prod_short.md)] is available in a limited number of markets, but new countries/regions are added through Microsoft-led localization or through partner-led localization on a quarterly basis. For more information, see [Countries and Translations Supported](compliance/apptest-countries-and-translations.md).
 
       - question: How often is Business Central updated?
         answer: |
@@ -125,12 +125,12 @@ sections:
 
           You can find the IP addresses of the Azure regions [as a download on the Download center](https://www.microsoft.com/download/details.aspx?id=56519). Search for the `AzureCloud.<region name>` sections in the file to find the corresponding IP ranges, such as *AzureCloud.westeurope*.
 
-      - question: See Also
+      - question: See also
         answer: |
-          [FAQ for Developing in AL](developer/devenv-dev-faq.md)
+          [FAQ for developing in AL](developer/devenv-dev-faq.md)
           [Features not implemented in on-premises deployments of [!INCLUDE[prod_long](includes/prod_long.md)]](features-not-implemented-on-premises.md)
-          [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md)
-          [Dynamics 365 Business Central Compliance](/dynamics365/business-central/compliance/compliance-overview)
-          [FAQ for Dynamics 365 Update Policies](/dynamics365/get-started/faq-update-policy)
-          [Dynamics 365 Resources](https://dynamics.microsoft.com/resources/)
+          [Software Lifecycle Policy and Dynamics 365 Business Central on-premises updates](terms/lifecycle-policy-on-premises.md)
+          [Dynamics 365 Business Central compliance](/dynamics365/business-central/compliance/compliance-overview)
+          [FAQ for Dynamics 365 update policies](/dynamics365/get-started/faq-update-policy)
+          [Dynamics 365 resources](https://dynamics.microsoft.com/resources/)
           [Welcome to [!INCLUDE[prod_long](includes/prod_long.md)]](/dynamics365/business-central/index)

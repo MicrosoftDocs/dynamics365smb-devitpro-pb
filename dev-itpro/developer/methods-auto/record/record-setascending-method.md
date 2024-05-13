@@ -2,10 +2,7 @@
 title: "Record.SetAscending(Any, Boolean) Method"
 description: "Sets the sort order for the records returned."
 ms.author: solsen
-ms.custom: na
-ms.date: 04/27/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

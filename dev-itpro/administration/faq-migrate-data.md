@@ -45,8 +45,6 @@ We recommend that you reduce the number of companies that you're migrating data 
 
 If you want to add more companies after the first selection of companies, you can add more companies in the **Cloud Migration Management** page in Business Central online. For more information, see [Run the tool multiple times](migration-setup.md#rerunning-cloud-migration-setup-guide).
 
-If you're looking at migrating databases larger than 80 GB, we recommend that you contact the support team and work with them to make sure that the migration is successful. If needed, you can also purchase more storage. For more information, go to [Managing Capacity](tenant-admin-center-capacity.md).  
-
 ## Is my SQL connection string required to set up the connection?
 
 Yes. The SQL connection string is passed to Azure Data Factory, where it's encrypted and delivered to your Self-Hosted Integration Runtime. The connection string is used to communicate with your SQL Server instance during the data replication process. For more information, see [How do I find my SQL connection string?](#how-do-i-find-my-sql-connection-string).  

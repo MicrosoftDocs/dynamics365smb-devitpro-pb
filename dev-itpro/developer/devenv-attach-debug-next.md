@@ -1,13 +1,12 @@
 ---
 title: "Attach and debug next"
 description: "Attach to a session on a specified server and debug for Web API sessions."
-ms.custom: na
-ms.date: 02/28/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 01/10/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.author: solsen
 ---
 
 # Attach and debug next
@@ -17,7 +16,7 @@ author: SusanneWindfeldPedersen
 If you don't want to publish and invoke functionality to debug it, you can instead attach a session to a specified server, and await a process to trigger the breakpoint you've set. Then debugging starts when the code that the breakpoint is set on is hit. 
 
 > [!NOTE]  
-> To use the attach functionality, you must make sure that your app is published with **Ctrl+F5** first, or with **Alt+Ctrl+F5** for [RAD](devenv-rad-publishing.md) publishing, before you start the debugging session with **F5**. Creating a new server session from the client can be achieved for example by launching a new client session. Pressing **F5** (Refresh) in a browser may not create a new server session, because it is cached, but if a session is expired and refreshed that will create a new session.
+> To use the attach functionality, you must make sure that your app is published with <kbd>Ctrl</kbd>+<kbd>F5</kbd> first, or with <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>F5</kbd> for [RAD](devenv-rad-publishing.md) publishing, before you start the debugging session with <kbd>F5</kbd>. Creating a new server session from the client can be achieved for example by launching a new client session. Pressing <kbd>F5</kbd> (Refresh) in a browser may not create a new server session, because it is cached, but if a session is expired and refreshed that will create a new session.
 
 > [!IMPORTANT]  
 > Only the user who starts a Visual Studio Code attach session can issue the Web request on the server.
@@ -36,10 +35,13 @@ If `sessionId` isn't specified, but `userId` is, then the debugger will be attac
 > [!IMPORTANT]  
 > In case of `userId` being a different user than the user logged into Visual Studio Code, then the user logged into Visual Studio Code must be part of **D365 ATTACH DEBUG** permission set.
 
-The example below illustrates a configuration for a local server.
-
 > [!NOTE]  
 > The debugger is able to connect to *background sessions*, and not *background tasks*.
+
+
+## Example (attach to a web client session)
+
+The following example illustrates a configuration for a local server, where you want to debug a web client session.
 
 ```json
 ...
@@ -61,7 +63,30 @@ The example below illustrates a configuration for a local server.
 ...
 ```
 
-## Attach support
+## Example (attach to an online sandbox web services session)
+
+The following example illustrates a configuration for an online sandbox, where you want to debug a web service endpoint.
+
+```json
+...
+{
+            "name": "Attach to online sandbox",
+            "type": "al",
+            "request": "attach",
+            "environmentType": "Sandbox",
+            "environmentName": "MyEnvironment",
+            "breakOnError": true,
+            "breakOnRecordWrite": false,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "breakOnNext": "WebServiceClient"
+        }
+...
+```
+
+## Supported Attach configurations
 
 The following configurations for attach are supported:
 
@@ -70,7 +95,8 @@ The following configurations for attach are supported:
 |On-premises      | Supported    |     Supported     |   Supported      |
 |Sandbox          | Supported    |     Supported     |   Supported      |
 
-### To start an attach session
+
+## How to start an attach session
 
 1. In Visual Studio Code, under **Run**, choose **Add configuration**.
 2. Choose whether to attach to a cloud or a local session.  
@@ -78,10 +104,10 @@ The `launch.json` file is now populated with the correct attach configuration se
 3. Set `breakOnNext` to specify the client type on which to break.
 4. In your code, set at least one breakpoint using **Run** from the toolbar, choose **New breakpoint**, and then choose which type of breakpoint to add. 
 You can always add more breakpoints while debugging. 
-5. If your most recent app is not yet published, it's important to make sure you publish it pressing **Ctrl+F5**, alternatively **Alt+Ctrl+F5** for RAD publishing. Then, use **F5** to start the attach session.  
+5. If your most recent app is not yet published, it's important to make sure you publish it slecting <kbd>Ctrl</kbd>+<kbd>F5</kbd> , alternatively <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>F5</kbd> for RAD publishing. Then, use <kbd>F5</kbd> to start the attach session.  
     > [!IMPORTANT]  
-    > If you modify the app code during the debugging session, make sure to re-publish the app using **Ctrl+F5**.
-6. After publishing the app, press **F5** to start a debugging session.  
+    > If you modify the app code during the debugging session, make sure to re-publish the app using <kbd>Ctrl</kbd>+<kbd>F5</kbd> .
+6. After publishing the app, select <kbd>F5</kbd> to start a debugging session.  
     > [!NOTE]  
     > If you have more attach configuration settings, you must first select which configuration to start.
 7. Debug and inspect the code. You can add more breakpoints while debugging.

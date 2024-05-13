@@ -1,11 +1,8 @@
 ---
 title: "Compiler Error AL0761"
-description: "Invalid enum is used for category."
+description: "An incorrect value was used for the category."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/23/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -17,11 +14,11 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Invalid enum is used for category. A value of enum {0} {1} is expected which is available in platform version {2} and higher.
+An incorrect value was used for the category. One of the values of the enum {0} {1} is expected which is available in platform version {2} and higher.
 
 
 ## Description
-The enum provided for category is wrong.  
+The enum provided for the category is wrong.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

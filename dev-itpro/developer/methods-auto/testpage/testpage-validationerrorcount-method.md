@@ -2,10 +2,7 @@
 title: "TestPage.ValidationErrorCount() Method"
 description: "Gets the number of validation errors that occurred on the test page."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Gets the number of validation errors that occurred on the test page.
 ```AL
 Count :=   TestPage.ValidationErrorCount()
 ```
-
 ## Parameters
 *TestPage*  
 &emsp;Type: [TestPage](testpage-data-type.md)  

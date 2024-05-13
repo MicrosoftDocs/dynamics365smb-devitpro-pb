@@ -1,13 +1,10 @@
 ---
 title: "Bulk Inserts"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 6bbe737c-305f-48d2-8cd3-857c7efb9866
 caps.latest.revision: 21
+description: Learn how to optimize SQL bulk inserts in Business Central for improved performance and scalability. Understand constraints and disabling bulk inserts.
 ---
 # Bulk Inserts
 By default, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] automatically buffers inserts in order to send them to Microsoft SQL Server at one time.  

@@ -2,10 +2,7 @@
 title: "XmlReadOptions Data Type"
 description: "Represents the options configuring how XML is loaded from a data source."
 ms.author: solsen
-ms.custom: na
-ms.date: 05/11/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -20,6 +17,7 @@ Represents the options configuring how XML is loaded from a data source.
 
 
 
+## Instance methods
 The following methods are available on instances of the XmlReadOptions data type.
 
 |Method name|Description|

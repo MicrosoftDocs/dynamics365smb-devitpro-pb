@@ -1,11 +1,8 @@
 ---
 title: "Changing Application Version Number After Upgrade"
 description: Describes how to increase the application version number stored in the database and shown on the Help and Support page.
-ms.custom: na
-ms.date: 04/15/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

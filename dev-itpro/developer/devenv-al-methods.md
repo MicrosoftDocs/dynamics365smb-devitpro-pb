@@ -1,22 +1,22 @@
 ---
-title: "Working with AL methods"
-description: "Methods also known as procedures are a fundamental programming element in AL for Business Central."
-ms.custom: na
-ms.date: 11/16/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Working with AL methods
+description: Methods also known as procedures are a fundamental programming element in AL for Business Central.
+ms.custom: evergreen
+ms.date: 04/17/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 
-# AL methods
+# Working with AL methods
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 Like other languages, AL methods are a fundamental programming element. A method, also known as a procedure, is a named group of statements that perform an operation or task. Depending on the scope, methods can be run, or *called*, from the same object in which they are declared or from other parts of the application.  
 
 There are two types of methods: system methods (built-in) and user-defined (custom) methods.
 
-- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL method Reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md). For information about method scope, see [Scope Attribute](attributes/devenv-scope-attribute.md).
+- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL method Reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md). For information about method scope, see [Scope attribute](attributes/devenv-scope-attribute.md).
 
 - Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and code units, together to form a unified whole. You can create special methods for use anywhere in the database.
 
@@ -49,13 +49,13 @@ A method can be a *local* method or *global* method. A local method can only be 
 To declare a local method, start the declaration with `local`: 
 
 ```AL
-local procedure Mymethod();
+local procedure Mymethod()
 ```
 
 To declare a global method, *omit* `local`:
 
 ```AL
- procedure Mymethod();
+ procedure Mymethod()
 ```
 
 ### Parameters (optional)
@@ -65,7 +65,7 @@ A parameter is one or more variables or expressions that are sent to the method 
 For example, the following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
 
 ```AL
- procedure MyMethod(MyCustomer : Record Customer; var MyDimension : ARRAY [2] OF Boolean)
+ procedure MyMethod(MyCustomer : Record Customer; var MyDimension : List of [Boolean])
 ```
 
 This example also illustrates how parameters can be *passed by value* or *passed by reference*. The `MyCustomer` parameter is passed by value, and the `MyDimension` parameter is passed by reference in the example above. For more information, see the section [Parameters](devenv-al-methods.md#Parameters) below.
@@ -74,7 +74,7 @@ This example also illustrates how parameters can be *passed by value* or *passed
 
 A method can return data that can be then coded against. A return value is defined by a name (optional), data type, and optional length depending on the data type. 
 
-For example, if the return value is a Text DataType, the text might have a length of 50.
+For example, if the return value is a `Text` data type, the text might have a length of 50.
 
 ```AL
     procedure MyMethod() ReturnValue: Text[50]
@@ -139,22 +139,31 @@ method(Optional1, Optional2)
   
 ## Example 2  
 
-ABS is an example of an AL method that has a fixed number of parameters (1).  
+`Abs` is an example of an AL method that has a fixed number of parameters (1).  
   
 ```AL
-Value := -1033; //A negative integer value  
-PositiveValue := ABS(Value); //Calculate the positive value 1033  
+var
+    Value: Integer;
+    PositiveValue: Integer;
+begin
+    Value := -1033; //A negative integer value  
+    PositiveValue := Abs(Value); //Calculate the positive value 1033  
+end
 ```  
   
 ## Example 3  
 
-The method `DMY2DATE` is an example of a method that can be called by using a variable number of parameters.  
+The method `DMY2Date` is an example of a method that can be called by using a variable number of parameters.  
   
 ```AL
-NewDate := DMY2DATE(5, 11, 1992); //Returns the date November 5, 1992  
+var
+    NewDate: Date;
+begin
+    NewDate := DMY2Date(5, 11, 1992); // Returns the date November 5, 1992  
+end
 ```  
   
-Depending on the use of the `DMY2DATE` method, one, two, or three parameters can be passed to the method because the second and third parameters are optional. When the second and third parameters are not used, values from the system date are used as default values.  
+Depending on the use of the `DMY2Date` method, one, two, or three parameters can be passed to the method because the second and third parameters are optional. When the second and third parameters are not used, values from the system date are used as default values.  
   
 ## Example 4  
 
@@ -164,9 +173,9 @@ You can assign the return value of a method to a variable.
 ReturnVal := MyMethod(Param1);  
 ```  
   
-### Example 5  
+## Example 5  
 
-In this example, `MyMethod` returns a Boolean value. You can use the return value in a conditional statement.  
+In this example, `MyMethod` returns a `Boolean` value. You can use the return value in a conditional statement.  
   
 ```AL
 if (MyMethod(Param1)) then  
@@ -175,9 +184,19 @@ else
   <Statement2>  
 ```
 
-## See Also
+## Example 6
 
-[Development Overview](devenv-dev-overview.md)  
-[AL Methods](methods-auto/library.md)  
-[AL Simple Statements](devenv-al-simple-statements.md)  
-[AL Control Statements](devenv-al-control-statements.md)  
+This example also illustrates how parameters can be *passed by value* or *passed by reference*. The following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
+
+```AL
+procedure MyMethod(MyCustomer : Record Customer; var MyDimension : List of [Boolean])
+```
+
+The `MyCustomer` parameter is passed by value, and the `MyDimension` parameter is passed by reference.
+
+## See also
+
+[Development overview](devenv-dev-overview.md)  
+[AL methods](methods-auto/library.md)  
+[AL simple statements](devenv-al-simple-statements.md)  
+[AL control statements](devenv-al-control-statements.md)  

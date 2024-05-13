@@ -1,11 +1,7 @@
 ---
 title: "Event example"
 description: This article shows a simple example of how to use events in Business Central.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -58,7 +54,7 @@ codeunit 50101 MySubscribers
     EventSubscriberInstance = StaticAutomatic;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 'OnAddressLineChanged', '', true, true)]
-    procedure CheckAddressLine(line: Text[100]);
+    procedure CheckAddressLine(line: Text[100])
     begin
         if (STRPOS(line, '+') > 0) then begin
             MESSAGE('Can''t use a plus sign (+) in the address [' + line + ']');

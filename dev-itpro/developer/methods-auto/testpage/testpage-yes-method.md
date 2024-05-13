@@ -2,10 +2,7 @@
 title: "TestPage.Yes() Method"
 description: "Gets the Yes system action."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Gets the Yes system action.
 ```AL
 Action :=   TestPage.Yes()
 ```
-
 ## Parameters
 *TestPage*  
 &emsp;Type: [TestPage](testpage-data-type.md)  
@@ -47,7 +43,7 @@ The **Yes** method just retrieves the *Yes* system action, but does not execute 
 
 The following example uses a handler method to confirm the `"Create Order From Sales"` modal test page when invoked in code.
 
-```
+```al
 [ModalPageHandler]
 procedure CreateOrderFromSalesModalPageHandler(var CreateOrderFromSales: TestPage "Create Order From Sales")
 begin

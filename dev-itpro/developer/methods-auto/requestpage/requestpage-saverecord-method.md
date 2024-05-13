@@ -2,10 +2,7 @@
 title: "RequestPage.SaveRecord() Method"
 description: "Saves the current record as if performed by the client."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Saves the current record as if performed by the client. If the record does not e
 ```AL
  RequestPage.SaveRecord()
 ```
-
 ## Parameters
 *RequestPage*  
 &emsp;Type: [RequestPage](requestpage-data-type.md)  

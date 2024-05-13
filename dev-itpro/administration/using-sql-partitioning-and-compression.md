@@ -3,7 +3,6 @@ title: Using Table Partitioning and Data Compression
 description: Learn how to use table partitioning and data compression to improve data access performance in Business Central online.
 ms.custom: bap-template
 ms.date: 06/14/2023
-ms.service: "dynamics365-business-central"
 ms.search.keywords: data access,sql,partitioning,constraints
 author: jswymer
 ms.author: jswymer
@@ -116,6 +115,9 @@ Since [!INCLUDE[prod_short](../developer/includes/prod_short.md)] April 2019, it
 However, extra CPU resources are required on the database server to compress and decompress the data while data is exchanged with the [!INCLUDE[server](../developer/includes/server.md)].
 
 With the **CompressionType** property, you can configure row or page type compression or configure the table not to use compression. With these compression settings, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] table synchronization process will make changes to the SQL Server table, overwriting the current compression type, if any. You can choose to control data compression directly on SQL Server by setting the **CompressionType** property to **Unspecified**, in which case table synchronization process won't control the data compression.
+
+> [!NOTE]
+> In the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], tables are compressed with **CompressionType** set to **Page**.
 
 To evaluate whether a table is a good candidate to compress, you can use the stored procedure `sp_estimate_data_compression_savings` in SQL Server. For more information, see [sp_estimate_data_compression_savings (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-estimate-data-compression-savings-transact-sql).
 

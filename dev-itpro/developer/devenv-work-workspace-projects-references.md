@@ -3,9 +3,6 @@ title: "Work with multiple projects and project references"
 description: "Handling solutions in the AL language that contains multiple projects in one Visual Studio Code folder and contains references between these projects."
 author: SusanneWindfeldPedersen
 ms.date: 12/19/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -25,7 +22,7 @@ In the example below, the project called **Leaf** defines two dependencies to th
 
 The advantage of working with project references is that there's no need to download the symbols for a project reference. They're there as the symbols for the reference project and will be resolved as they're modified. For example, if you add a new method to a codeunit in the **Root** project and reference the codeunit in the **Leaf** project, the method will automatically resolve as you touch the **Leaf** project.
 
-When a project is built with **Ctrl+Shift+B**, the following will happen:
+When a project is built with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>, the following will happen:
 
 1. The .app file is copied to the `.alpackages` folder of all projects that depend on it.
 2. All project references that might be "dirty" are also built.
@@ -45,7 +42,7 @@ Projects that haven't been loaded in the workspace are decorated with the letter
 
 ## Publish changes
 
-With the introduction of project references, the publishing logic in a workspace has changed. Publishing, either with **Ctrl+F5** or RAD publishing using **Alt+Ctrl+F5**, will do a set publishing of all the projects that have changed with defining a startup project. The startup project is always the active project.
+With the introduction of project references, the publishing logic in a workspace has changed. Publishing, either with <kbd>Ctrl</kbd>+<kbd>F5</kbd>  or RAD publishing using <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>F5</kbd>, will do a set publishing of all the projects that have changed with defining a startup project. The startup project is always the active project.
 
 A project is considered changed if any of its application objects have changed in the sense that the application object is already in the `rad.json` or will be in the `rad.json` once the project has been built. This means that if you change an application object, you save it, and then close Visual Studio Code without building the project, the `rad.json` won't update and then the project won't be considered "dirty".
 
@@ -98,15 +95,15 @@ To control how dependency publishing is performed on the server, the `launch.jso
 > [!NOTE]  
 > With the `Ignore` setting only **Leaf** will be published against what has already been published on the server for **Middle** and **Base**. If a change has been done on **Base** that would break **Leaf**, even though local compilation would pass, the server compilation will fail in this scenario. The benefit of using this option is to gain publishing time when **Base** is a large project. Assuming that **Base** is published, then **Leaf** and **Middle** will be left untouched on the server. Only runtime errors will reveal if **Base** has broken **Middle** and **Leaf**.
 
-## Global and workspace launch configuration
+## User and workspace launch configuration
 
-With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. For more information, see [Global and workspace launch configuration](devenv-json-launch-file.md#global-and-workspace-launch-configuration).
+With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. For more information, see [User and workspace launch configuration](devenv-json-launch-file.md#user-and-workspace-launch-configuration).
 
 ## Traverse the dependency graph
 
 [!INCLUDE[2022_releasewave1.md](../includes/2022_releasewave1.md)]
 
-To remove unnecessary manual work, use the **AL: Publish full dependency tree for active project** command, which will traverse a project dependency graph in the workspace and install any required projects if these aren't already deployed to the NST server. Find the command by using **Ctrl+Shift+P** or by using the keyboard shortcut **Shift+Alt+W**. This will calculate the correct order in which to compile and publish the dependencies of the current project and publish them using the `launch.json` option selected from the current active project.
+To remove unnecessary manual work, use the **AL: Publish full dependency tree for active project** command, which will traverse a project dependency graph in the workspace and install any required projects if these aren't already deployed to the NST server. Find the command by using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> or by using the keyboard shortcut <kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>W</kbd>. This will calculate the correct order in which to compile and publish the dependencies of the current project and publish them using the `launch.json` option selected from the current active project.
 
 > [!NOTE]  
 > Only project and app references covered by the workspace will be traversed. If the deployed AL project has dependencies to apps that aren't included in the workspace, these will still have to be present or manually deployed in advance.
@@ -118,7 +115,7 @@ If the `al.incrementalBuild` setting is set to `true` on workspaces with project
 ## Making sure that your project or workspace is updated
 
 > [!NOTE]  
-> When working in a project or workspace, some operations require that you run a **Reload Window** command (**Ctrl+R**) for your project or workspace to ensure that it’s updated correctly. Examples are; source control operations like Git Pull, changes made to the `app.json` file, or updating User or Workspace settings for AL.
+> When working in a project or workspace, some operations require that you run a **Reload Window** command (<kbd>Ctrl</kbd>+<kbd>R</kbd>) for your project or workspace to ensure that it’s updated correctly. Examples are; source control operations like Git Pull, changes made to the `app.json` file, or updating User or Workspace settings for AL.
 
 
 ## See also

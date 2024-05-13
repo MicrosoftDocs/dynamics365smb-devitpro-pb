@@ -2,10 +2,7 @@
 title: "Record.FindSet([Boolean]) Method"
 description: "Finds a set of records in a table based on the current key and filter."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -30,7 +27,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *[Optional] ForUpdate*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Set this parameter to true if you want to modify any records in the set; otherwise, set the parameter to false.If you set this parameter to true, then the LOCKTABLE method (Record) is immediately run on the table before the records are read. If you set this parameter to false, then you can still modify the records in the set, but these updates will not be performed optimally. The default value is false.
+Set this parameter to true if you want to modify any records in the set; otherwise, set the parameter to false. If you set this parameter to true, then the records will be read with Updlock. If you set this parameter to false, then you can still modify the records in the set, but these updates will not be performed optimally. The default value is false.
           
 
 

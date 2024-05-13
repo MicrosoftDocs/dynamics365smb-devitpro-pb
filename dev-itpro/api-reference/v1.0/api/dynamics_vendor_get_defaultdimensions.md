@@ -2,12 +2,10 @@
 title: (v1.0) Get vendor defaultDimensions
 description: (v1.0) Gets a vendor default dimensions in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
 ---
 

@@ -2,10 +2,7 @@
 title: "SharedLayout Property"
 description: "Specifies whether the view has the same layout as the default view 'All'."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/09/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

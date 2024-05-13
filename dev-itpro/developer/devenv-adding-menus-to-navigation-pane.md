@@ -2,11 +2,7 @@
 title: Adding Menus to the Navigation Area
 description: "Enable users to quickly navigate and perform actions by adding the menu items to the navigation area."
 author: jswymer
-ms.custom: na
 ms.date: 08/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ---
@@ -72,7 +68,7 @@ pageextension 50120 ExtendNavigationArea extends "Order Processor Role Center"
 }
 ```
 
-You can also enable pages and reports to appear in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] search for a quick navigational support. For more information, see [Adding Pages and Reports to Tell Me](devenv-al-menusuite-functionality.md).
+You can also enable pages and reports to appear in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] search for a quick navigational support. For more information, see [Add pages and reports to Tell me](devenv-al-menusuite-functionality.md).
 
 ## Adding to the navigation bar
 
@@ -164,4 +160,4 @@ addlast(Reporting)
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
-[Adding Pages and Reports to Tell Me](devenv-al-menusuite-functionality.md)  
+[Add pages and reports to Tell me](devenv-al-menusuite-functionality.md)  

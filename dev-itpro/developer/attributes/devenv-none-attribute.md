@@ -2,11 +2,7 @@
 title: "None Attribute"
 description: "Is used implicitly when a method does not have an attribute set."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

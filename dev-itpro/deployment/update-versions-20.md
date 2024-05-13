@@ -4,10 +4,12 @@ description: Learn about the updates for Dynamics 365 Business Central 2022 Rele
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 10/05/2023
-ms.custom: bap-template
+ms.date: 04/16/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # Dynamics 365 Business Central On-Premises 2022 Release Wave 1 Updates
@@ -22,7 +24,7 @@ You should always install the latest update.
 
 ## Available updates for Business Central 2022 Release Wave 1
 
-The following table lists the updates that have been released for 2022 release wave 1 of Business Central (version 20). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
+The following table lists the updates that have been released for 2022 release wave 1 of Business Central (version 20). The updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
 

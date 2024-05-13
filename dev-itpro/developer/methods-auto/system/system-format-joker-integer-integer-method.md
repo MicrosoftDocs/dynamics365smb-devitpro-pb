@@ -2,10 +2,7 @@
 title: "System.Format(Any [, Integer] [, Integer]) Method"
 description: "Formats a value into a string."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -49,9 +46,19 @@ This optional parameter specifies the format that you want to use.
 
 ## Remarks
 
-For more information about *FormatNumber*, see [Formatting Values, Dates, and Time](../../devenv-format-property.md)).
+The *FormatNumber* parameter specifies the format that you want to use. The basic options for the Decimal data type are as follows:  
 
-## See Also
+- <*Sign*><*Integer Thousand*><*Decimals*> is Format 0  
+- <*Sign*><*Integer*><*Decimals*> is Format 1  
+- <*Sign*><*Integer*><*Decimals*><*Comma*,.> is Format 2  
+- <*Integer Thousand*><*Decimals*><*Sign,1*> is Format 3  
+- <*Integer*><*Decimals*><*Sign,1*> is Format 4  
+
+
+For more information, see [Formatting Values, Dates, and Time](../../devenv-format-property.md)).
+
+## See also
+
 [System Data Type](system-data-type.md)  
-[Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Get started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)

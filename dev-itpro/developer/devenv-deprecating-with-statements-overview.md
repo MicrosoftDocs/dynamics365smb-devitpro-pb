@@ -1,16 +1,13 @@
 ---
-title: "Deprecating Explicit and Implicit With Statements"
-description: "Rationale and description of why explicit and implicit with statements are deprecated in AL"
-ms.custom: na
-ms.date: 08/15/2022
+title: Deprecating explicit and implicit with statements
+description: Rationale and description of why explicit and implicit with statements are deprecated in AL.
+ms.date: 04/17/2024
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 author: esbenk
 ---
 
-# Deprecating Explicit and Implicit With Statements
+# Deprecating explicit and implicit `with` statements
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
@@ -19,9 +16,9 @@ author: esbenk
 
 The extensibility model and the AL programming language are successors to the C/AL language. And the `with` statement has up until now been supported in AL. While using the `with` statement might make code harder to read, it can also prevent code in [!INCLUDE[prod_short](includes/prod_short.md)] online from being upgraded without changes to the code or even worse - upgraded, but with changed behavior. We distinguish between two types of with statements; the explicit type of `with` using the keyword, and the implicit with which isn't expressed directly in code. The next sections describe the explicit and implicit types one by one.
 
-## The explicit with statement
+## The explicit `with` statement
 
-In [!INCLUDE[prod_short](includes/prod_short.md)] online your code is recompiled when the platform and application versions are upgraded. The recompilation ensures that it's working and the recompile regenerates the runtime artifacts to match the new platform. Breaking changes without due warning aren't allowed, but the use of the `with` statement makes it impossible, as Microsoft, to make even additive changes in a non-breaking way. This problem isn't alone isolated to changes made by Microsoft; any additive change has the potential to break a `with` statement in consuming code.
+In [!INCLUDE[prod_short](includes/prod_short.md)] online your code is recompiled when the platform and application versions are upgraded. The recompilation ensures that it's working and the recompile regenerates the runtime artifacts to match the new platform. Breaking changes without due warning aren't allowed, but the use of the `with` statement makes it impossible, as Microsoft, to make even additive changes in a nonbreaking way. This problem isn't alone isolated to changes made by Microsoft; any additive change has the potential to break a `with` statement in consuming code.
 
 The following example illustrates code written using the `with` statement; referred to in this context as the explicit `with`.
 
@@ -41,7 +38,7 @@ codeunit 50140 MyCodeunit
         end;
     end; 
 
-    local procedure IsDirty(): Boolean;
+    local procedure IsDirty(): Boolean
     begin
         exit(false);
     end;
@@ -52,9 +49,9 @@ The `DoStuff()` procedure processes work on the Customer record and calls a loca
 
 ## Symbol lookup
 
-If we take another look at the above code sample again, what would happen to that code if `IsDirty` was added to the base application between two releases? To understand that we need to take a look at how compilers turn syntax into symbols. When the AL compiler meets the `IsDirty` call it must bind the syntax name to a procedure symbol.
+If we take another look at the above code sample again, what would happen to that code if `IsDirty` was added to the base application between two releases? To understand that, we need to take a look at how compilers turn syntax into symbols. When the AL compiler meets the `IsDirty` call it must bind the syntax name to a procedure symbol.
 
-When the AL compiler searches for the symbol `IsDirty()` in the sample above it will search in following order:
+When the AL compiler searches for the symbol `IsDirty()` in the sample above it searches in following order:
 
 1. Customer table
     - User-defined members on the Customer table and Customer table extensions
@@ -64,7 +61,7 @@ When the AL compiler searches for the symbol `IsDirty()` in the sample above it 
     - Platform-defined members
 3. Globally defined members
 
-The first time the search for `IsDirty` finds the name IsDirty, it will not continue to the next top-level group. That means that if a procedure named `IsDirty` is introduced in the Customer table (platform or application) that procedure will be found instead of the procedure in `MyCodeunit`.
+The first time the search for `IsDirty` finds the name IsDirty, it doesn't continue to the next top-level group. That means that if a procedure named `IsDirty` is introduced in the Customer table (platform or application) that procedure will be found instead of the procedure in `MyCodeunit`.
 
 The solution for the *explicit* `with` is to stop using it. Using the `with` statement can make your code vulnerable to upstream changes. The example below illustrates how to rewrite the sample in [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement):
 
@@ -83,7 +80,7 @@ codeunit 50140 MyCodeunit
             Customer.Modify();
     end; 
 
-    local procedure IsDirty(): Boolean;
+    local procedure IsDirty(): Boolean
     begin
         exit(false);
     end;
@@ -116,14 +113,14 @@ codeunit 50140 MyCodeunit
         // end;
     end;
 
-    local procedure IsDirty(): Boolean;
+    local procedure IsDirty(): Boolean
     begin
         exit(false);
     end;
 }
 ```
 
-Similar to the [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement), the code looks like it will call the local `IsDirty` method, but depending on the Customer table, extensions to the Customer table, and built-in methods that may not be the case. If any of these implement an `IsDirty` method with an identical signature that returns `true`, then the example above will fail with an error. If an `IsDirty` method with a different signature is implemented, then this code won't compile and will fail to upgrade.
+Similar to the [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement), the code looks like it calls the local `IsDirty` method, but depending on the Customer table, extensions to the Customer table, and built-in methods that might not be the case. If any of these implement an `IsDirty` method with an identical signature that returns `true`, then the example above will fail with an error. If an `IsDirty` method with a different signature is implemented, then this code won't compile and will fail to upgrade.
 
 ## Pages
 
@@ -172,7 +169,7 @@ From [!INCLUDE[prod_short](includes/prod_short.md)] 2020 release wave 2 we begin
 
 ### AL0606 - use of explicit with
 
-The warning has a Quick Fix code action that allows you to convert the statement(s) inside the `with` statement to fully qualified statements, which means statements as shown in [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement).
+The warning has a Quick Fix code action that allows you to convert one or more statements inside the `with` statement to fully qualified statements, which means statements as shown in [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement).
 
 ### AL0604 - use of implicit with
 

@@ -2,10 +2,7 @@
 title: "Debugger Data Type"
 description: "Enables communication with a debugger."
 ms.author: solsen
-ms.custom: na
-ms.date: 05/11/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -21,6 +18,7 @@ Enables communication with a debugger.
 > [!NOTE]
 > This data type is supported only in Business Central on-premises.
 
+## Static methods
 The following methods are available on the Debugger data type.
 
 

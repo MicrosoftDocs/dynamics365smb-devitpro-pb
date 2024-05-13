@@ -2,11 +2,7 @@
 title: "Troubleshooting: Using Query Store to Monitor Query Performance"
 description: Use SQL Server Query Store to troubleshoot query performance. SQL Server Query Store feature provides insight on database query plan choice and performance.
 author: KennieNP
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: troubleshooting
 ms.author: kepontop
 ---

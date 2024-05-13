@@ -2,10 +2,7 @@
 title: "XmlAttributeCollection.RemoveAll() Method"
 description: "Removes all attributes from the collection."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Removes all attributes from the collection.
 ```AL
  XmlAttributeCollection.RemoveAll()
 ```
-
 ## Parameters
 *XmlAttributeCollection*  
 &emsp;Type: [XmlAttributeCollection](xmlattributecollection-data-type.md)  

@@ -1,11 +1,8 @@
 ---
 title: "Compiler Error AL0699"
-description: "The symbol '{0}' is not valid in this context."
+description: "The symbol '{0}' cannot be referenced in this context."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/02/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -17,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The symbol '{0}' is not valid in this context. Only symbols from '{1}' are allowed.
+The symbol '{0}' cannot be referenced in this context. You can only reference symbols from the base object '{1}', from extension objects defined in this app with an ID lower or equal to '{2}', or from extension objects defined in dependencies.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

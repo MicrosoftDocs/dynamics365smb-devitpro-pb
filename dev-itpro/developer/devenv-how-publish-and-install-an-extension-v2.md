@@ -2,11 +2,7 @@
 title: "How to: Publish and Install an Extension"
 description: "Description of the process of publishing and installing an extension"
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ---
@@ -33,7 +29,7 @@ Synchronizing an extension updates the database schema of the tenant database wi
 
     The cmdlet takes as parameters the [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance that you want to install to and the .app package file that contains the extension. The following example publishes the extension **MyExtension.app** to the **YourDynamicsNAVServer** instance.  
 
-    ```  
+    ```powershell
     Publish-NAVApp -ServerInstance YourDynamicsNAVServer -Path ".\MyExtension.app"
     ```  
 
@@ -44,7 +40,7 @@ Synchronizing an extension updates the database schema of the tenant database wi
 
     The following example synchronizes the extension **MyExtension** with version number 1.0.0.0: 
    
-    ```
+    ```powershell
     Sync-NavApp -ServerInstance YourDynamicsNAVServer -Name ExtensionName -Version 1.0.0.0 -Tenant TenantID
     ```
     Replace `TenantID` with the tenant ID of the database. If you don't have a multitenant server instance, use `default` or omit this parameter.
@@ -67,7 +63,7 @@ After you publish and synchronize an extension, you can install it on tenants. T
 
     The following example installs the extension **My Extension** for Tenant1 and Tenant3. In single-tenant deployments, you either specify `default` as the tenant ID, or you omit the `–Tenant` parameter.  
 
-    ```  
+    ```powershell
     Install-NAVApp -ServerInstance YourDynamicsNAVServer -Name "My Extension" –Tenant Tenant1, Tenant3  
     ```   
 

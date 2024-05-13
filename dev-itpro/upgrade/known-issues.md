@@ -16,6 +16,29 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
+## Error importing control add-in files from the client
+
+> Applies to: Upgrade to version 23.3
+
+### Problem
+
+When you try to import an a control add-in file client from the **Control Add-ins** page in the client by using the **Control Add-in Resource** > **Import**, you get the follwoing error:
+
+```
+Can't open file`
+
+[URL] can't open files in this folder because it cotains system files`
+```
+
+`[URL]` is the URL of your Business Central web client, for example, `http://localhost:8080`.
+
+### Workaround
+
+You have two options to work around this issue:
+
+- Use the Set-NAVAddin cmdlet of the Business Central Administration Shell as described in [Upgrade control add-ins](upgrading-cumulative-update-v23.md#controladdins). 
+- If you want to use the Business Central web client, then copy the files to another folder on your PC, like Documents or Downloads, and try again.
+
 ## Removed table fields in the Czech (CZ) base application cause sync errors
 
 > Applies to: Upgrade to version 23

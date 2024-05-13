@@ -1,18 +1,13 @@
 ---
 title: "Table modeling"
 description: "Relational modeling between Microsoft Dataverse tables used in Business Central"
-ms.custom: na
-ms.date: 06/02/2021
+ms.date: 11/13/2023
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: solsen
 ---
 
-# Table Modeling
-
-[!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
+# Table modeling for virtual tables
 
 > [!IMPORTANT]  
 > This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/dynamics365/released-versions/dynamics-365ce#all-version-availability).
@@ -204,6 +199,7 @@ Calculated and unmapped fields in [!INCLUDE[prod_short](../developer/includes/pr
 
 ## See Also
 
+[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
 [Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
 [Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference](powerplat-admin-reference.md)  

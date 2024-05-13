@@ -1,13 +1,7 @@
 ---
 title: "Accessing Columns of a Query Dataset"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 04/29/2024
 ms.topic: conceptual
-ms.assetid: 261c896a-4b7b-4b46-b874-2c032e7096be
-caps.latest.revision: 9
 author: jswymer
 ---
 # Accessing Columns of a Query Dataset
@@ -39,7 +33,7 @@ This example demonstrates how to access a column of a query dataset. When the qu
 The following query object links table **18 Customer** and table **37 Sales Line**.
   
 ```AL
-query 50123 "Customer_Sales_Quantity"
+query 50123 Customer_Sales_Quantity
 {
     QueryType = Normal;
     // Sets the results to only include the top forts the results in descending order
@@ -60,7 +54,7 @@ query 50123 "Customer_Sales_Quantity"
 
             dataitem(SL; "Sales Line")
             {
-                DataItemLink = "Sell-to Customer No." = c."No.";
+                DataItemLink = "Sell-to Customer No." = C."No.";
                 SqlJoinType = InnerJoin;
 
                 column(Qty; Quantity)
@@ -78,31 +72,33 @@ The following codeunit opens the query, reads each row of dataset, and then disp
 codeunit 50100 QueryColumnAccess
 {
     trigger OnRun()
+    var
+        MyQuery: Query Customer_Sales_Quantity;
     begin
 
         // Sets a filter to display only sales quantities greater than 20.  
-        MyQuery.SETFILTER(Qty, '>20');
-        // Runs the query.  
-        MyQuery.OPEN;
-        // Reads each row in the dataset and displays a message with column values.  
-        // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
-        while MyQuery.READ do begin
-            MESSAGE(Text000, MyQuery.Customer_Name, MyQuery.Qty);
-        end;
-        // Closes the query.  
-        MyQuery.CLOSE;
+        MyQuery.SetFilter(Qty, '>20');
 
+        // Opens the query for reading.
+        MyQuery.Open;
+
+        // Reads each row in the dataset and displays a message with column values.  
+        // Stops reading when there are no more rows remaining in the dataset (Read returns FALSE).  
+        while MyQuery.Read do begin
+            Message(MyLabel, MyQuery.Customer_Name, MyQuery.Qty);
+        end;
+
+        // Closes the query.  
+        MyQuery.Close;
     end;
 
     var
-        MyQuery: Query "Customer_Sales_Quantity";
-
-        Text000: Label 'Customer name = %1, Quantity = %2.';
+        MyLabel: Label 'Customer name = %1, Quantity = %2.';
 }
 ```
 
 ## See Also
 
- [Query Object](devenv-query-object.md)  
- [Filtering Queries](devenv-query-filters.md)  
- [Aggregating Data](devenv-query-totals-grouping.md)  
+[Query Object](devenv-query-object.md)  
+[Filtering Queries](devenv-query-filters.md)  
+[Aggregating Data](devenv-query-totals-grouping.md)  

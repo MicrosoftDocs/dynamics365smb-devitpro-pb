@@ -1,10 +1,9 @@
 ---
 title: Performance article for developers
 description: Provides information for developers to help improve performance in Business Central
-ms.custom: bap-tremplate
+ms.custom: bap-template
 ms.date: 10/11/2023
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 author: KennieNP
 ms.author: kepontop

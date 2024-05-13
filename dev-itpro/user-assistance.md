@@ -1,15 +1,14 @@
 ---
 title: User assistance model
 description: Learn about the user assistance model for Dynamics 365 Business Central and how your solution can comply with it.
-author: edupont04
-ms.custom: na
-ms.reviewer: na
+author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ms.topic: article
-ms.date: 04/20/2023
-ms.author: edupont
+ms.date: 04/26/2024
+ms.author: solsen
 ---
 
-# [!INCLUDE[prod_long](developer/includes/prod_long.md)] User Assistance Model
+# [!INCLUDE[prod_long](developer/includes/prod_long.md)] User assistance model
 
 The [!INCLUDE[prod_short](developer/includes/prod_short.md)] user assistance model is based on the following principles:
 
@@ -34,8 +33,6 @@ The user assistance concept of *Get Started* is not just about getting started w
 The default version of [!INCLUDE [prod_short](includes/prod_short.md)] online includes in-product tours to introduce the first users of a new tenant to the general user interface and the most used pages. The in-product search makes it easy to find pages or reports - provided that you remember what they're called.  
 
 We strive to make [!INCLUDE [prod_short](includes/prod_short.md)] easy to get started with in the browser and in the apps for desktop and mobile devices. Assistance in the shape of wizards is helpful for setup or filling in data for a complicated report, for example. Home pages that are designed for a particular role or job help users get started with their daily work – they can easily get to their most important tasks, and that means that [!INCLUDE[prod_short](developer/includes/prod_short.md)] helps them get their work done more efficiently. Similarly, in-product links to videos give new users a quick introduction to how the product works.  
-
-
 
 ### Onboarding checklist
 
@@ -83,7 +80,7 @@ Most tooltips end with an automatically generated link to *learn more* as descri
 :::image type="content" source="media/ua_tooltip_client.png" alt-text="A tooltip for an action without Learn More link.":::
 
 > [!TIP]
-> Users can always use the Ctrl+F1 keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface. In 2022 release wave 1 and later, Ctrl+F1 opens the Help pane with automatically generated links to related content from Microsoft and partners.
+> Users can always use the <kbd>Ctrl</kbd>+<kbd>F1</kbd> keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface. In 2022 release wave 1 and later, <kbd>Ctrl</kbd>+<kbd>F1</kbd> opens the Help pane with automatically generated links to related content from Microsoft and partners.
 
 The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip)* in the Universal Windows Platform's Fluent Design guidelines. The onboarding framework in [2021 release wave 1](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/in-app-contextual-help-improvements) added another interpretation of teaching tips that you can add to your [!INCLUDE [prod_short](developer/includes/prod_short.md)] solution. For more information, see [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md).
 
@@ -99,13 +96,13 @@ The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are co
 
 The content that Microsoft publishes under the user assistance concept of *Learn more* is intended to answer those questions that the user interface (including the tooltips) cannot answer, such as where that page fits into the bigger workflow, or what comes next, or what would be the alternative.
 
-Users can access this content either through the *Learn more* link in tooltips, by choosing the Help menu, or by using the *Ctrl+F1* keyboard shortcut.  
+Users can access this content either through the *Learn more* link in tooltips, by choosing the Help menu, or by using the <kbd>Ctrl</kbd>+<kbd>F1</kbd> keyboard shortcut.  
 
 ### Links in the Help pane
 
 [!INCLUDE [2022_releasewave1](includes/2022_releasewave1.md)]
 
-The *Learn more* links on tooltips and the Ctrl+F1 shortcut now open the Help pane. In most cases, the pane shows the following types of content:
+The *Learn more* links on tooltips and the <kbd>Ctrl</kbd>+<kbd>F1</kbd> shortcut now open the Help pane. In most cases, the pane shows the following types of content:
 
 [!INCLUDE [ua-help-pane-links-default](includes/ua-help-pane-links-default.md)]
 
@@ -122,7 +119,7 @@ The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] use
 > [!NOTE]
 > Currently, [!INCLUDE [prod_short](includes/prod_short.md)] does not require the Help for your own functionality to be created in a specific format. But we expect you to make it available on a website that the users of your functionality can access. For more information, see [Configure Context-Sensitive Help](help/context-sensitive-help.md).
 
-For the base version of [!INCLUDE [prod_short](developer/includes/prod_short.md)], free online learning is also available on Microsoft Learn. For more information, see the [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json).
+For the base version of [!INCLUDE [prod_short](developer/includes/prod_short.md)], free online learning is also available on Microsoft Learn. For more information, see the [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs).
 
 ### Feedback and contributions
 
@@ -157,18 +154,18 @@ At Microsoft, we are in process of simplifying and unifying our style guides. To
 
 [!INCLUDE [ua-rss](includes/ua-rss.md)]
 
-## See Also
+## See also
 
-[Configure the Help Experience](deployment/configure-help.md)  
-[Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
-[ToolTip Property](developer/properties/devenv-tooltip-property.md)  
-[InstructionalText Property](developer/properties/devenv-instructionaltext-property.md)  
-[Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)  
+[Configure the help experience](deployment/configure-help.md)  
+[Adding help links from pages, reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
+[ToolTip property](developer/properties/devenv-tooltip-property.md)  
+[InstructionalText property](developer/properties/devenv-instructionaltext-property.md)  
+[Development of a localization solution](developer/readiness/readiness-develop-localization.md)  
 [Translate documentation files](/dynamics365/unified-operations/dev-itpro/lifecycle-services/use-translation-service-ua)  
-[Resources for Help and Support](help-and-support.md)  
+[Resources for help and support](help-and-support.md)  
 [Blog post: Extending and customizing the Help](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/extending-and-customizing-the-help-in-dynamics-365-business-central)  
 [Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)  
-[Docs Contributor Guide](/contribute/)  
+[Docs contributor guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 [Microsoft Cloud Style Guide (requires login)](https://styleguides.azurewebsites.net/StyleGuide/Read?id=2696)  
 [Microsoft Writing Style Guide](/style-guide/welcome/)  

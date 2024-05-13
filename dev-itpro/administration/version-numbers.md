@@ -4,10 +4,10 @@ description: Learn how to read version numbers in Business Central and how to un
 author: jswymer
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 03/09/2022
-ms.service: dynamics365-business-central
+ms.date: 04/26/2024
 ms.custom: bap-template
 ---
+
 # Version numbers in Business Central
 
 [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online and on-premises consists of different components that must work together. If you are a an enduser, this doesn't matter in the course of your normal work day. But if you are an administrator, knowing the version numbers is important for troubleshooting, development, and on-premises upgrade scenarios.  
@@ -31,6 +31,7 @@ The numbers are updated based on Microsoft's builds. In the default version of [
 The following list describes the meaning of each of the numbers in a full version number:
 
 - `major` is the major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
+  - `24` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 1 update in April 2024 and forward
   - `23` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2 update in October 2023 and forward
   - `22` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1 update in April 2023 and forward
   - `21` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 update in October 2022 and forward
@@ -54,6 +55,6 @@ The same version numbers are used to identify versions in [!INCLUDE[prod_short](
 
 ## See also
 
-[Managing Technical Support](manage-technical-support.md)  
-[Installing a Cumulative Update](../upgrade/upgrading-cumulative-update.md)  
-[Administration of Business Central Online](tenant-administration.md)  
+[Managing technical support](manage-technical-support.md)  
+[Installing a cumulative update](../upgrade/upgrading-cumulative-update.md)  
+[Administration of Business Central online](tenant-administration.md)  

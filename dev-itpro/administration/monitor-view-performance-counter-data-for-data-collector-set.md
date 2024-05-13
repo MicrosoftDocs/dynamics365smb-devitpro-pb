@@ -1,16 +1,16 @@
 ---
-title: "How to: View Performance Counter Data for a Data Collector Set"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "How to: View performance counter data for a Data Collector Set"
+decription: Explains how to view performance counter data for a Data Collector Set.
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 01/08/2024
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.assetid: 002ace19-dc33-432b-b74f-ac280a51fcd5
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
-# How to: View Performance Counter Data for a Data Collector Set
+# How to: View performance counter data for a Data Collector Set
 When you run a Data Collector Set, the data that is collected for performance counters is stored to a log file \(.blg\) in the location that was defined when the Data Collector Set was created. In Windows Performance Monitor, you can view log files to see a visual representation of performance counter data.  
   
 ### To view the Data Collector Set log file  
@@ -31,7 +31,7 @@ When you run a Data Collector Set, the data that is collected for performance co
   
 6.  Choose the **OK** button.  
   
-## See Also  
+## See also  
  [Business Central Performance Counters](performance-counters.md)   
  [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)   
  [Create Data Collector for Microsoft Dynamics NAV Performance Counters](create-data-collector-performance-counters.md)   

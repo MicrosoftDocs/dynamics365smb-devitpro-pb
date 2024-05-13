@@ -2,10 +2,7 @@
 title: "Compiler Error AL0134"
 description: "'{0}' is not recognized as a valid type."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 '{0}' is not recognized as a valid type.
+
 
 ## Description
 Unknown type. For more information about the data types available as part of the AL Language, see [Data Types and Methods in AL](/dynamics365/business-central/dev-itpro/developer/methods-auto/library).  

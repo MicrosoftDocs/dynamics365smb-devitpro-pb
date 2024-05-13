@@ -2,10 +2,7 @@
 title: "Compiler Error AL0187"
 description: "Attribute '{0}' is valid only for {1}."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Attribute '{0}' is valid only for {1}.
+
 
 ## Description
 The specified attribute is not allowed on such element. For more information, refer to the attribute's documentation.  

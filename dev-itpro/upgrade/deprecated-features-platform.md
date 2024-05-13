@@ -4,27 +4,41 @@ description: Describes the features that have been removed or replaced in the pl
 author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 03/17/2023
+ms.date: 04/02/2024
 ms.custom: bap-template
 ---
 
-# Deprecated Features in the Platform - Clients, Server, and Database
+# Deprecated features in the platform - Clients, Server, and Database
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-This article describes the features that are up for removal or that have been removed or replaced in the platform that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses across languages and base app.  
+This article describes the features that are up for removal or that have been removed or replaced in the platform that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses across languages and base app.
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
 ## Changes in 2025 release wave 1 (version 26.0)
 
-### Direct cloud migration and data upgrade from version Dynamics Business Central 2019 (v.14.x) (removed)
+### Direct cloud migration and data upgrade from version Dynamics Business Central 2019 (v.14.x) (removal)
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | Direct cloud migration and data upgrade from version Business Central 2019 (v.14.x) is no longer supported. In order to upgrade (or cloud-migrate) data to v.26 or higher, follow one of these paths:<br><ul><li>Pre-v.14 customers > upgrade to v.14 > upgrade to v.25 > upgrade or cloud migrate to v.26</li><li>V.14 to v.24 customers > upgrade to v.25 > upgrade or cloud migrate to v.26 </li></ul>`ObsoleteState = Removed` fields will be regularly cleaned up with a cadence of once every five major releases (referred to as the *stepping-stone* release). So after v.25, the next stepping-stone release will be v.30, and so on. |
+|Removed | Direct cloud migration and data upgrade from version Business Central 2019 (v.14.x) is no longer supported. In order to upgrade (or cloud-migrate) data to v.26 or higher, follow one of these paths:<br><ul><li>Pre-v.14 customers > upgrade to v.14 > upgrade to v.25 > upgrade or cloud migrate to v.26</li><li>V.14 to v.24 customers > upgrade to v.25 > upgrade or cloud migrate to v.26 </li></ul>`ObsoleteState = Removed` fields are regularly cleaned up with a cadence of once every five major releases (referred to as the *stepping-stone* release). So after v.25, the next stepping-stone release will be v.30, and so on. |
+
+### Support for PowerShell 5.0 (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | As part of our move to .NET Core, we've converted the following Business Central administration modules from PowerShell 5 to PowerShell 7: Microsoft.Dynamics.Nav.Management.dll, Microsoft.Dynamics.Nav.Apps.Management.dll, and Microsoft.Dynamics.Nav.Apps.Tools.dll. The PowerShell 7 modules are renamed with the prefix `Microsoft.BusinessCentral` instead of `Microsoft.Dynamics.Nav` and are located in the new **Admin** folder of the Business Central Server installation.<br><br> For those who aren't ready to use PowerShell 7, we've included a Windows PowerShell 5 compatibility layer module that consolidates the cmdlets/functions of all three modules into a single module that can run with PowerShell 5. The PowerShell 5 compatibility layer module is called Microsoft.Dynamics.Nav.Management.dll, and it's installed side-by-side with the new PowerShell 7 modules as a part of Business Central Server installation except in the **Management** folder. The PowerShell 5 compatibility layer module is using an approach similar to the [Windows PowerShell Compatibility functionality in PowerShell 7](/powershell/module/microsoft.powershell.core/about/about_windows_powershell_compatibility?view=powershell-7.4).<br><br> We highly recommend that you use the PowerShell 7 modules instead PowerShell 5 compatibility module because they'll give you the best performance. If PowerShell 7 is installed on your device, the PowerShell 7 modules are used by default by selecting **Business Central Administration Shell** in the **Start** menu or by runnng the NavAdminTool.ps1 script.<br><br> The Windows PowerShell 5 compatibility layer module is planned for removal in version 26 and won't receive any new functionality added in the new PowerShell 7 modules in the meantime. |
+
+
+### <a name="soap-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as a SOAP endpoint (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 26, it's no longer possible to expose a Microsoft page as a SOAP endpoint. If you need to have SOAP integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
+
+[!INCLUDE[soap_deprecacation](../includes/soap_deprecation_note.md)]
 
 ## Changes in 2024 release wave 2 (version 25.0)
 
@@ -32,9 +46,15 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | Cloud migration tool and on-premises data upgrade toolkit support one-step upgrade path from any version starting from Dynamics Business Central 2019 (v.14) to the latest version of Business Central.<br><br>This is possible because none of the schema elements (tables and fields) deprecated over 11 major updates (from v.14 to v.25) were removed from the released databases to preserve backwards compatibility and enable more seamless transition for our customers to the latest versions on-premises and online. <br><br>Over these releases, we've accumulated a significant number of such obsolete schema elements, which increases complexity of working with the application code. This condition blocks the reuse of the long obsolete objects and field IDs, affecting our work of moving common functionality from local versions of Business Central to W1 version. <br><br>At the same time, much has changed in the area of upgradeability since v.14 like: the move to extensions, the transition to Universal Code, introduction of AL Go for GitHub for tracking apps compatibility and more. These improvements make it simpler to follow Business Central update cadence more closely.<br><br>So in the next release (that is, 2025 release wave 1 (v.26)), we're going to clean up all schemas that have been marked as `ObsoleteState = Removed` since Dynamics Business Central 2019 (v.14). <br><br>As a result, data upgrade or cloud migration to v.26 or higher will have to be done via v.25 (referred to as the *stepping-stone* release) following one of the paths:<br><ul><li>Pre-v.14 customers > upgrade to v.14 > upgrade to v.25 > upgrade or cloud migrate to v.26 </li><li>V.14 to v.24 customers > upgrade to v.25 > upgrade or cloud migrate to v.26</li></ul>`ObsoleteState = Removed` fields will then be regularly cleaned up with a cadence of once every five major releases. So after v.25, the next stepping-stone release will be v.30, and so on. | 
+|Removed | Cloud migration tool and on-premises data upgrade toolkit support one-step upgrade path from any version starting from Dynamics Business Central 2019 (v.14) to the latest version of Business Central.<br><br>This is possible because none of the schema elements (tables and fields) deprecated over 11 major updates (from v.14 to v.25) were removed from the released databases to preserve backwards compatibility and enable more seamless transition for our customers to the latest versions on-premises and online. <br><br>Over these releases, we've accumulated a significant number of such obsolete schema elements, which increases complexity of working with the application code. This condition blocks the reuse of the long obsolete objects and field IDs, affecting our work of moving common functionality from local versions of Business Central to W1 version. <br><br>At the same time, much has changed in the area of upgradeability since v.14 like: the move to extensions, the transition to Universal Code, introduction of AL Go for GitHub for tracking apps compatibility and more. These improvements make it simpler to follow Business Central update cadence more closely.<br><br>So in the next release (that is, 2025 release wave 1 (v.26)), we're going to clean up all schemas that have been marked as `ObsoleteState = Removed` since Dynamics Business Central 2019 (v.14). <br><br>As a result, data upgrade or cloud migration to v.26 or higher will have to be done via v.25 (referred to as the *stepping-stone* release) following one of the paths:<br><ul><li>Pre-v.14 customers > upgrade to v.14 > upgrade to v.25 > upgrade or cloud migrate to v.26 </li><li>V.14 to v.24 customers > upgrade to v.25 > upgrade or cloud migrate to v.26</li></ul>`ObsoleteState = Removed` fields will then be regularly cleaned up with a cadence of once every five major releases. So after v.25, the next stepping-stone release will be v.30, and so on. |
 
 ## Changes in 2024 release wave 1 (version 24.0)
+
+### Support for PowerShell 5.0 (warning)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | As part of our move to .NET Core, we've converted the following Business Central administration modules from PowerShell 5 to PowerShell 7: Microsoft.Dynamics.Nav.Management.dll, Microsoft.Dynamics.Nav.Apps.Management.dll, and Microsoft.Dynamics.Nav.Apps.Tools.dll. The PowerShell 7 modules are renamed with the prefix `Microsoft.BusinessCentral` instead of `Microsoft.Dynamics.Nav` and are located in the new **Admin** folder of the Business Central Server installation.<br><br> For those who aren't ready to use PowerShell 7, we've included a Windows PowerShell 5 compatibility layer module that consolidates the cmdlets/functions of all three modules into a single module that can run with PowerShell 5. The PowerShell 5 compatibility layer module is called Microsoft.Dynamics.Nav.Management.dll, and it's installed side-by-side with the new PowerShell 7 modules as a part of Business Central Server installation except in the **Management** folder. The PowerShell 5 compatibility layer module is using an approach similar to the [Windows PowerShell Compatibility functionality in PowerShell 7](/powershell/module/microsoft.powershell.core/about/about_windows_powershell_compatibility?view=powershell-7.4).<br><br> We highly recommend that you use the PowerShell 7 modules instead PowerShell 5 compatibility module because they'll give you the best performance. If PowerShell 7 is installed on your device, the PowerShell 7 modules are used by default by selecting **Business Central Administration Shell** in the **Start** menu or by runnng the NavAdminTool.ps1 script.<br><br> The Windows PowerShell 5 compatibility layer module is planned for removal in version 26 and won't receive any new functionality added in the new PowerShell 7 modules in the meantime. |
 
 ### <a name="schemaversion"></a>Schema version for custom APIs (changed default)
 
@@ -42,7 +62,7 @@ This article describes the features that are up for removal or that have been re
 |---------|---------|
 |Replaced | The API capability in Business Central is used many places, for example, in the APIs that come out-of-the-box. For these APIs, $schemaversion is always set to 2.0 to get the latest features in the Business Central OData stack. For custom APIs, it's possible to get these new features by simply calling the API with $schemaversion=2.0. Starting in version 24, the default value of $schemaversion is set to 2.0, also for custom APIs.|
 
-### <a name="odata_delta"></a>Support for Delta Links with APIs (removed)
+### <a name="odata_delta"></a>Support for delta links with APIs (removed)
 
 |Removed or Replaced? |Why?|
 |---------|---------|
@@ -60,6 +80,20 @@ This article describes the features that are up for removal or that have been re
 |---------|---------|
 |Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it's possible to write to the app database tables from AL. Starting in version 24, this is no longer possible. |
 
+### <a name="soap-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as a SOAP endpoint (warning)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 26, it's no longer possible to expose a Microsoft page as a SOAP endpoint. If you need to have SOAP integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
+
+[!INCLUDE[soap_deprecacation](../includes/soap_deprecation_note.md)]
+
+### <a name="views"></a>Legacy views on list pages (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | Legacy views are list views that were created by developers in previous releases by placing them on the Role Center page object. In April 2019 release wave, we introduced a new, modern way of creating views. Starting in version 24, views must be created using the modern way. Legacy views will no longer be supported and won't display on list pages. Learn more at [Migrating from Legacy Views to Modern Views](../developer/devenv-views-legacy.md).|
+
 
 ## Changes in 2023 release wave 2 (version 23.0)
 
@@ -76,7 +110,7 @@ This article describes the features that are up for removal or that have been re
 |---------|---------|
 |Replaced | The API capability in Business Central is used many places, for example, in the APIs that come out-of-the-box. For these APIs, $schemaversion is always set to 2.0 to get the latest features in the Business Central OData stack. For custom APIs, it's possible to get these new features by simply calling the API with $schemaversion=2.0. Starting in version 24, the default value of $schemaversion is set to 2.0, also for custom APIs.|
 
-### <a name="odata_delta"></a>Support for Delta Links with APIs (warning)
+### <a name="odata_delta"></a>Support for delta links with APIs (warning)
 
 |Removed or Replaced? |Why?|
 |---------|---------|
@@ -88,16 +122,9 @@ This article describes the features that are up for removal or that have been re
 |---------|---------|
 |Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it's possible to write to the app database tables from AL. Starting in version 24, this is no longer possible. |
 
-### <a name="views"></a>Legacy views on list pages (removal)
-
-|Removed or Replaced? |Why?|
-|---------|---------|
-|Replaced | Legacy views are list views that were created by developers in previous releases by placing them on the Role Center page object. In April 2019 release wave, we introduced a new, modern way of creating views. Starting in version 23, views must be created using the modern way. Legacy views will no longer be supported and won't display on list pages. Learn more at [Migrating from Legacy Views to Modern Views](../developer/devenv-views-legacy.md).|
-
-
 ### <a name="ropc"></a>Resource Owner Password Credentials (ROPC) flow in OAuth 2.0 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online (removal)
 
-The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.  
+The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
@@ -127,13 +154,13 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |---------|---------|
 |Replaced| .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework won't work in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. For more information, see [Migrating from .NET Framework to .NET Standard](../developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md). |
 
-### Business Central Telemetry: using an instrumentation key (removal)
+### Business Central telemetry: using an instrumentation key (removal)
 
-On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end. After that date, your Azure Applications Insights resources will continue to receive data, but we'll no longer provide updates or customer support for instrumentation key–based global ingestion. 
+On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end. After that date, your Azure Applications Insights resources will continue to receive data, but we'll no longer provide updates or customer support for instrumentation key–based global ingestion.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | Support for using an instrumentation key to setup telemetry for Business Central environments or apps will be removed in the 2023 release wave 1 (version 22.0). Use the Azure Applications Insights connection string instead. |
+|Removed | Support for using an instrumentation key to set up telemetry for Business Central environments or apps will be removed in the 2023 release wave 1 (version 22.0). Use the Azure Applications Insights connection string instead. |
 
 <!-- removed from deprecated list for now
 ### Running the Business Central web server on a different machine than the Business Central server
@@ -155,13 +182,13 @@ The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/
 
 ## Changes in 2022 release wave 2 (version 21.0)
 
-### Microsoft Entra authentication Library (ADAL) and Azure AD graph API
+### Microsoft Entra Authentication Library (ADAL) and Azure AD graph API
 
-The Microsoft Entra authentication Library (ADAL) and Azure AD graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+The Microsoft Entra Authentication Library (ADAL) and Azure AD graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Replaced| To help developers take advantage of all the identity features available in Microsoft Entra ID, we’re now recommending that all developers use the Microsoft Authentication Library (MSAL) and the Microsoft Graph API in their application development. Moving forward, all new identity capabilities will only be available in MSAL and Microsoft Graph. We’re also providing guidance on end of support timelines for Microsoft Entra authentication Library (ADAL) and Azure AD graph API, so that you can plan to update any applications that are still using either one of them. **Starting June 30th, 2022**, Microsoft will end support for ADAL and Azure AD graph and will no longer provide technical support or security updates. Apps using Azure AD graph after this time will no longer receive responses from the Azure AD graph endpoint. Apps using ADAL on existing OS versions will continue to work after this time but will not get any technical support or security updates. For more information, see [Update your applications to use Microsoft Authentication Library and Microsoft Graph API](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363)|
+|Replaced| To help developers take advantage of all the identity features available in Microsoft Entra ID, we’re now recommending that all developers use the Microsoft Authentication Library (MSAL) and the Microsoft Graph API in their application development. Moving forward, all new identity capabilities will only be available in MSAL and Microsoft Graph. We’re also providing guidance on end of support timelines for Microsoft Entra Authentication Library (ADAL) and Azure AD graph API, so that you can plan to update any applications that are still using either one of them. **Starting June 30th, 2022**, Microsoft will end support for ADAL and Azure AD graph and will no longer provide technical support or security updates. Apps using Azure AD graph after this time will no longer receive responses from the Azure AD graph endpoint. Apps using ADAL on existing OS versions will continue to work after this time but won't get any technical support or security updates. For more information, see [Update your applications to use Microsoft Authentication Library and Microsoft Graph API](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363)|
 
 
 ### Business Central Server Administration tool (removal)
@@ -184,7 +211,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ### <a name="ropc"></a>Resource Owner Password Credentials (ROPC) flow in OAuth 2.0 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online (warning)
 
-The following feature will eventually be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.  
+The following feature will eventually be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
@@ -205,11 +232,11 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ### <a name="flfformat"></a>License files in the .flf format for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (warning)
 
-The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.  
+The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | Importing license files in the .flf format will be unsupported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. It will remain supported in older versions. Please transition to using the newer .bclicense format instead. |
+|Removed | Importing license files in the .flf format will be unsupported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. It will remain supported in older versions. Transition to using the newer .bclicense format instead. |
 
 ### <a name="accesskeys"></a>Web Service Access Keys (Basic Auth) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
 
@@ -227,21 +254,21 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |---------|---------|
 |Removed | With releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] prior to 2021 release wave 1 (v.18.0), System and Extension permissions and entitlements were defined as data in the application database. This has changed with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] v.18.0. With [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2022 release wave 1, the support for defining permissions and entitlements as data in the application database will be removed. For more information, see [Entitlements and Permissions Overview](../developer/devenv-entitlements-and-permissionsets-overview.md).|
 
-### <a name="deprecate legacy v1 endpoints"></a>Deprecate legacy V1 endpoints for Power Automate, Power Apps and Logic Apps in favour of newer technology
+### <a name="deprecate legacy v1 endpoints"></a>Deprecate legacy V1 endpoints for Power Automate, Power Apps and Logic Apps in favor of newer technology
 
 The legacy V1 endpoints served by our Power Automate, Power Apps and Logic Apps connector are being **replaced** later in Business Central online in 2022 and as a consequence we encourage everyone to switch to the most up-to-date V3 endpoints.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Replaced | Introduced back in 2018 and replaced with new endpoints several releases ago the legacy V1 endpoints served by our Power Automate, Power Apps and Logic Apps connector are being finally discontinued. Since more than a year ago, actions based on these endpoints aren't exposed in the Power Automate or Power Apps UI in any form. Partners are also educated and encouraged to use actions based on current V3 endpoints, so in 2022 we'll be completely removing access to V1 endpoints in our connector. Any partners and customers who had in the past created a flow or app based on these older endpoints and haven't moved to the new ones needs to update their Power Automate flows or Power Apps now and switch to V3 actions. |
+|Replaced | Introduced back in 2018 and replaced with new endpoints several releases ago the legacy V1 endpoints served by our Power Automate, Power Apps and Logic Apps connector are being finally discontinued. Since more than a year ago, actions based on these endpoints aren't exposed in the Power Automate or Power Apps UI in any form. Partners are also educated and encouraged to use actions based on current V3 endpoints, so in 2022 we are completely removing access to V1 endpoints in our connector. Any partners and customers who had in the past created a flow or app based on these older endpoints and haven't moved to the new ones needs to update their Power Automate flows or Power Apps now and switch to V3 actions. |
 
 ### <a name="invoicingapi"></a>Deprecating nativeInvoicing APIs
 
-The following feature will be deprecated with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 and **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.
+The following feature has been deprecated with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 and **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.
 
 |Moved, Removed, or Replaced? |	Why?|
 |-----------------------------|-----|
-|Removed| The nativeInvoicing API will be deprecated with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 and **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2. Use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] standard APIs instead. For more information, see [API(V2.0) for Dynamics 365 Business Central](../api-reference/v2.0/index.md).|
+|Removed| The nativeInvoicing API is deprecated with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 and **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2. Use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] standard APIs instead. For more information, see [API(V2.0) for Dynamics 365 Business Central](../api-reference/v2.0/index.md).|
 
 ## Changes in 2021 release wave 2 (version 19.0)
 
@@ -259,7 +286,7 @@ The following feature will be **Removed** in a later release.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | The Business Central Server Administration tool for configuring the [!INCLUDE[server](../developer/includes/server.md)] in on-premises installations will be removed in a later release. Please transition to using the provided PowerShell cmdlets in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] instead. |
+|Removed | The Business Central Server Administration tool for configuring the [!INCLUDE[server](../developer/includes/server.md)] in on-premises installations will be removed in a later release. Transition to using the provided PowerShell cmdlets in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] instead. |
 
 ### SOAP endpoints (warning)
 
@@ -272,7 +299,7 @@ The capability of exposing SOAP endpoints will be removed in a later release.
 
 ### StartSession calls in upgrade/install context will fail
 
-The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
+The following feature has been **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
 
 |Removed or Replaced? |    Why?|
 |-----------------------------|-----|
@@ -312,13 +339,13 @@ The legacy Outlook add-in for synchronizing data, such as to-dos, contacts, and 
 |Removed | This add-in used Business Central web services based on outdated technology.|
 
 > [!NOTE]
-> The feature is separate from and has no affect on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]add-in for Outlook, which is described at [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin).
+> The deprecation of the **Outlook add-in for synchronizing data** feature does not affect the **[!INCLUDE[prod_short](../developer/includes/prod_short.md)] add-in for Outlook** feature, which is described at [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin).
 
 ## Changes in 2021 release wave 1 (version 18.0)
 
 ### .NET add-ins not using .NET Standard (warning)
 
-In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, a warning shows if you include .NET add-ins that are compiled with .NET Framework and not with .NET Standard. The capability of using .NET add-ins compiled with .NET Framework will be removed in a later release. 
+In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, a warning shows if you include .NET add-ins that are compiled with .NET Framework and not with .NET Standard. The capability of using .NET add-ins compiled with .NET Framework will be removed in a later release.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
@@ -358,13 +385,13 @@ We have simplified the story for how to deploy Help for a customer-specific solu
 
 The following sections describe the features that were deprecated in 2020 release wave 1.
 
-### Microsoft Entra authentication Library (ADAL) and Azure AD graph API
+### Microsoft Entra Authentication Library (ADAL) and Azure AD graph API
 
-The Microsoft Entra authentication Library (ADAL) and Azure AD graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+The Microsoft Entra Authentication Library (ADAL) and Azure AD graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Replaced| To help developers take advantage of all the identity features available in Microsoft Entra ID, we’re now recommending that all developers to use the Microsoft Authentication Library (MSAL) and the Microsoft Graph API in their application development. Moving forward, all new identity capabilities will only be available in MSAL and Microsoft Graph. We’re also providing guidance on end of support timelines for Microsoft Entra authentication Library (ADAL) and Azure AD graph API, so you can plan to update any applications that are still using either one of them. **Starting, June 30th, 2020**, Microsoft will no longer add any new features to ADAL and Azure AD graph. We'll continue to provide technical support and security updates but will no longer provide feature updates. For more information, see [Update your applications to use Microsoft Authentication Library and Microsoft Graph API](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363)|
+|Replaced| To help developers take advantage of all the identity features available in Microsoft Entra ID, we’re now recommending that all developers to use the Microsoft Authentication Library (MSAL) and the Microsoft Graph API in their application development. Moving forward, all new identity capabilities will only be available in MSAL and Microsoft Graph. We’re also providing guidance on end of support timelines for Microsoft Entra Authentication Library (ADAL) and Azure AD graph API, so you can plan to update any applications that are still using either one of them. **Starting, June 30th, 2020**, Microsoft will no longer add any new features to ADAL and Azure AD graph. We'll continue to provide technical support and security updates but will no longer provide feature updates. For more information, see [Update your applications to use Microsoft Authentication Library and Microsoft Graph API](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363)|
 
 
 ## Changes in 2019 release wave 2 (version 15.0)
@@ -394,7 +421,7 @@ You can export data to an Excel workbook.
 |---------|---------|
 |Removed| The Excel COM add-in was installed along with the Windows client. Now that the Windows Client is no longer available, neither is the add-in. To export data to Excel, use the **Edit in Excel** action.|
 
-### Printing Programmatically
+### Printing programmatically
 
 You can print documents such as invoices automatically, without prompting the user or without the user choosing to do so.
 
@@ -402,7 +429,7 @@ You can print documents such as invoices automatically, without prompting the us
 |---------|---------|
 |Removed| This feature was tied to the Windows Client, which is no longer available. |
 
-## Breaking Changes
+## Breaking changes
 
 When we move, remove, or replace an object, breaking changes can result in other apps or extensions that use the object. To help our partners identify and resolve breaking changes, we have created a [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md) document that lists known issues and suggestions for what to do about them.
 
@@ -410,7 +437,7 @@ When we move, remove, or replace an object, breaking changes can result in other
 <!--Should we include a section about this?-->
 Some features are available only under specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](../features-not-implemented-on-premises.md).
 
-## See Also
+## See also
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Austrian Version](deprecated-features-at.md)  
@@ -429,7 +456,8 @@ Some features are available only under specific circumstances, or not at all int
 [Deprecated Features in the Swiss Version](deprecated-features-ch.md)  
 [Deprecated Features in the UK Version](deprecated-features-uk.md)  
 [Deprecated Features in the United States Version](deprecated-features-us.md)  
-[Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](deprecated-fields.md)
+[Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](deprecated-fields.md)  
 [Deprecated Tables](deprecated-tables.md)  
-[AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)  
+[ALAppExtensions repository (legacy)](https://github.com/microsoft/ALAppExtensions)  
+[BCApps repository (substutute for ALAppExtensions)](https://github.com/microsoft/BCApps)  
 [Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  
