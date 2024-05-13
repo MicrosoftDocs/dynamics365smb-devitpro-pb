@@ -2,10 +2,7 @@
 title: "Compiler Warning AL1056"
 description: "A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be loaded."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be loaded. {3}.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

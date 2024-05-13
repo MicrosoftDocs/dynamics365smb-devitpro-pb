@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ---
 # Configuring [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web Services to Use SSL 
 Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide security and data integrity for data communications over a network. By encrypting your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services using SSL, you make your data and the network more secure and more reliable.  

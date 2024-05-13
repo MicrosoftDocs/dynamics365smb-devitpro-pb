@@ -2,7 +2,6 @@
 title: "Language, Branding, and Images"
 description: "Guidelines on language, branding and images"
 author: a-emniel
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
@@ -25,7 +24,7 @@ Your app can be in any language; if not in English, a document with English tran
 |Support / Help:|Can be in any language.|
 |Privacy:| Can be in any language.|
 |Licensing:| Can be in any language.|
-|Supported countries:| Must be in English.|
+|Supported countries/regions:| Must be in English.|
 |Supported editions:| Must be in English.|
 |Supported languages:| Must be in English.|
 

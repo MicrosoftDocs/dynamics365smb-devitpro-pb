@@ -1,11 +1,8 @@
 ---
 title: "Compiler Error AL0754"
-description: "The '{0}' already defines a method called '{1}'."
+description: "The '{0}' already defines a built-in member called '{1}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/05/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -17,10 +14,11 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The '{0}' already defines a method called '{1}'.
+The '{0}' already defines a built-in member called '{1}'. Choose another name for {2} '{1}', or it might cause runtime issues.
+
 
 ## Description
-A method is defined multiple times.  
+A built-in member with the same name is already defined for the object, which can cause runtime errors.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

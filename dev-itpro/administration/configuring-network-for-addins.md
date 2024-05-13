@@ -3,8 +3,7 @@ title: Preparing your network for the Excel Add-In
 description: This article includes information that helps administrators configure advanced device and network settings for the Excel add-in for Business Central.
 author: mikebcMSFT
 ms.topic: conceptual
-ms.workload: na
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.search.keywords: configure, port, firewall, proxy
 ms.date: 04/01/2021
 ms.author: mikebc

@@ -2,10 +2,7 @@
 title: "File.Name() Method"
 description: "Gets the name of an ASCII or binary file."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -50,8 +47,8 @@ You must use the [Open Method \(File\)](../../methods-auto/file/file-open-method
 
 The following example opens a text file that is named C:\\TestFolder\\TestFile.txt. The [Name Method \(File\)](../../methods-auto/file/file-name-method.md) retrieves the name and path of the text file and stores it in the varName variable. The value in the variable is displayed in a message box. This example assumes that you have created a text file named C:\\TestFolder\\TestFile.txt.
 
- ```
- var
+```al
+var
     Testfile: File;
     varName: Text;
 begin

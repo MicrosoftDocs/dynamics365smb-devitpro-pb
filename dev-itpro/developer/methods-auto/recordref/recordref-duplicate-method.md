@@ -2,10 +2,7 @@
 title: "RecordRef.Duplicate() Method"
 description: "Duplicates the table that contains the RecordRef."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Duplicates the table that contains the RecordRef.
 ```AL
 RecordRef :=   RecordRef.Duplicate()
 ```
-
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  

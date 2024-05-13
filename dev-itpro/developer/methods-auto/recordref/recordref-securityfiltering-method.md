@@ -2,10 +2,7 @@
 title: "RecordRef.SecurityFiltering([SecurityFilter]) Method"
 description: "Gets or sets how security filters are applied to the RecordRef."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

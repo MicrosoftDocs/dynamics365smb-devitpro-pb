@@ -1,18 +1,21 @@
 ---
-title: "Legal Resources for Business Central On-Premises"
+title: "Legal resources for Business Central on-premises"
 description: View a list of links to where you can find legal information that applies to Business Central on-premises deployments.
 author: jswymer
-ms.custom: na
-ms.reviewer: edupont
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.reviewer: solsen
+ms.service: dynamics-365-op
 ms.topic: article
-ms.date: 04/13/2021
+ms.date: 01/04/2024
 ---
-# Legal Resources for Business Central On-Premises
 
-This page provides links to legal information for Business Central On-Premises.
+# Legal resources for Business Central on-premises
 
+## Software License Terms
+
+For legal information for Business Central on-premises, see [Legal Information](https://dynamics.microsoft.com/en-au/business-applications/legal/) under **Software and Notices**. 
+
+<!--
 ## Software License Terms
 
 - [Dynamics 365 Business Central on-premises- \<language\>.pdf](https://www.microsoft.com/download/details.aspx?id=57274)
@@ -37,14 +40,14 @@ This page provides links to legal information for Business Central On-Premises.
 
 ## Lifecycle
 
-- [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](lifecycle-policy-on-premises.md)
+- [Software Lifecycle Policy and Dynamics 365 Business Central on-premises Updates](lifecycle-policy-on-premises.md)
 
 <!--- links-->
 
-## See Also
+## See also
 
-[Legal Resources for Business Central Online](legal.md)  
-[Microsoft Online Service Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products)  
+[Legal Resources for Business Central Online](legal.md)    
+[Microsoft Online Service Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products)    
 [Developer and Administration Help for Microsoft Dynamics 365 Business Central](../index.md)  
 
 

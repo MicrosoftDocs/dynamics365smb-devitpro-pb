@@ -2,8 +2,6 @@
 title: "Keeping Database Size Under the Limit"
 description: Learn about the best ways to reduce data stored in Business Central databases.
 author: jswymer
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
@@ -73,7 +71,7 @@ There are two ways to enable or change data compression in [!INCLUDE[prod_short]
 
 - On a database-level (on-premises only), use the [Start-NAVDatabaseCompression cmdlet](/powershell/module/microsoft.dynamics.nav.management/start-navdatabasecompression). This cmdlet is only available with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 and later.
 
-For more information about data compression, see [Data Access - Using SQL Server data compression](optimize-sql-data-access.md).
+For more information about data compression, see [Using table partitioning and data compression](using-sql-partitioning-and-compression.md).
 
 ## See Also
 

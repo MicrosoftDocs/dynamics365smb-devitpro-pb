@@ -4,19 +4,21 @@ description: The AL Explorer for Business Central lets you explore and navigate 
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
-ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 03/29/2023
+ms.date: 03/01/2024
 ms.custom: bap-template
+ms.collection: get-started
 ---
 
 # AL Explorer
 
 [!INCLUDE [2023_releasewave1](../includes/2023_releasewave1.md)]
 
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
+
 The **AL Explorer** provides a tool that allows you to explore, navigate, and better understand objects in extensions. You can drill down into object details, dependencies, and extension points, without looking at the code. With the **AL Explorer**, you have an overview of high-level structures of extensions that can help you specify new features, or do light troubleshooting.
 
-The **AL Explorer** has four tabs: **OBJECTS**, **EVENTS**, **APIS**, and **EXTENSIBLE ENUMS**. For each of these categories, you can apply filtering, bookmarks, and go to source. For tables, pages, and report objects, you can also choose run these objects directly from the explorer window, on either a local machine or a tenant. You can also get an overview of all objects in a given app scope, for example, a workspace or a selected project, and you can search in object names, and group objects by type.
+The **AL Explorer** has four tabs: **OBJECTS**, **EVENTS**, **APIS**, and **EXTENSIBLE ENUMS**. For each of these categories, you can apply filtering for type, module, related table, or namespace, you can set bookmarks, and go to source code. For tables, pages, and report objects, you can choose to run these objects directly from the explorer window, on either a local machine or a tenant. You can get an overview of all objects in a given app scope, for example, a workspace or a selected project, and you can search in object names, and group objects by type.
 
 :::image type="content" source="media/al-explorer.png" alt-text="The AL Explorer window with tabs and buttons to drill-down into code":::
 
@@ -42,4 +44,4 @@ The **EVENTS**, **APIS**, and **EXTENSIBLE ENUMS** tabs provide an overview of a
 ## See also
 
 [AL Home](devenv-al-home.md)  
-[Developing Extensions in AL](devenv-dev-overview.md)
+[Developing extensions in AL](devenv-dev-overview.md)

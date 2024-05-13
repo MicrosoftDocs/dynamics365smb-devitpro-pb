@@ -3,8 +3,7 @@ title: Arrange Fields Using Grid Control
 description: Fields in a FastTab are arranged automatically. Use Grid control to manually set up rows, columns, span fields across, and show or hide captions.
 ms.custom: bap-template
 ms.date: 02/06/2023
-ms.reviewer: na
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer

@@ -2,10 +2,7 @@
 title: "KeyRef Data Type"
 description: "Identifies a key in a table and the fields in this key."
 ms.author: solsen
-ms.custom: na
-ms.date: 05/11/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -20,6 +17,7 @@ Identifies a key in a table and the fields in this key.
 
 
 
+## Instance methods
 The following methods are available on instances of the KeyRef data type.
 
 |Method name|Description|

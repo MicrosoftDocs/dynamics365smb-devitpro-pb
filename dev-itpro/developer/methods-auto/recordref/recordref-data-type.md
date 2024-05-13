@@ -2,10 +2,7 @@
 title: "RecordRef Data Type"
 description: "References a record in a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -20,6 +17,7 @@ References a record in a table.
 
 
 
+## Instance methods
 The following methods are available on instances of the RecordRef data type.
 
 |Method name|Description|
@@ -109,10 +107,11 @@ The following methods are available on instances of the RecordRef data type.
 
 ## Remarks 
  
-The RecordRef object can refer to any table in the database. Use the [Open method](recordref-open-method.md) to use the table number to select the table that you want to access, or use the [GetTable method](recordref-gettable-method.md) to use another record variable to select the table that you want to access.  
+The `RecordRef` object can refer to any table in the database, if the extension target in [app.json](../../devenv-json-files.md#appjson-file) doesn't conflict with the field/table [scope](../../attributes/devenv-scope-attribute.md). Example, an extension with target `Cloud` can't use `RecordRef` to access a table with scope `OnPrem`.
+Use the [Open method](recordref-open-method.md) to use the table number to select the table that you want to access, or use the [GetTable method](recordref-gettable-method.md) to use another record variable to select the table that you want to access.  
   
-If one RecordRef variable is assigned to another RecordRef variable, then they both refer to the same table instance. 
+If one `RecordRef` variable is assigned to another `RecordRef` variable, then they both refer to the same table instance. 
 
-## See Also  
-[Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+## See also  
+[Get started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  

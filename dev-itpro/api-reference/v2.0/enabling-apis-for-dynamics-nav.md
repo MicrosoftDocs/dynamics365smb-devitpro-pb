@@ -1,17 +1,14 @@
 ---
-title: "Enabling APIs for Microsoft Dynamics NAV"
-description: "Describing the steps you must go through to enable access to the APIs."
+title: Enabling APIs for Microsoft Dynamics 365 Business Central
+description: Describing the steps you must go through to enable access to the APIs.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 02/07/2024
 ms.topic: article
 ms.author: solsen
 ---
 
-# Enabling the APIs for Dynamics 365 Business Central
+# Enabling the APIs for Business Central
 
 [!INCLUDE[on_prem_only_v2](../../developer/includes/on_prem_only_v2.md)]
 
@@ -19,18 +16,37 @@ ms.author: solsen
 
 ## Enable access to the APIs
 
-1. Open the [Business Central Administration tool](../../administration/administration-tool.md).
-2. Expand the **OData Services** tab, and select the **Enable OData Services** checkbox first, then select the **Enable API Services** checkbox.
-3. Check that the values for the **OData Base URL** and **Port** are entered correctly.  
+1. Open the [!INCLUDE[adminshell](../../developer/includes/adminshell.md)].
+
+   [!INCLUDE[open-admin-shell](../../developer/includes/open-admin-shell.md)]
+1. Run the [Set-NAVServerConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet to enable OData services.
+
+   ```powershell
+   Set-NAVServerConfiguration <BC server instance name> -KeyName ODataServicesEnabled -KeyValue true
+   ```
+1. Run the Set-NAVServerConfiguration cmdlet to enable API Services.
+
+   ```powershell
+   Set-NAVServerConfiguration <BC server instance name> -KeyName ApiServicesEnabled -KeyValue true
+   ```
+1. Check that the values for the `PublicODataBaseUrl` and `ODataServicesPort` parameters are correct.  
     When exposing a web service, you must open the port for other consumers of your web service to access it. You can have your system administrator add the port through Windows Firewall on the computer running [!INCLUDE[prod_short](../../includes/prod_short.md)] server. The default port for OData web services is 7048.
-4. In [!INCLUDE[prod_short](../../includes/prod_short.md)], search for **API Setup** and then choose the related link.
-5. On the **API Setup** page, choose the **Integrate APIs** button.  
+
+   You can verify these settings by running the [Get-NAVServerConfiguration](/powershell/module/microsoft.dynamics.nav.management/get-navserverconfiguration):
+
+   ```powershell
+   Get-NAVServerConfiguration <BC server instance name>
+   ```
+1. In [!INCLUDE[prod_short](../../includes/prod_short.md)], search for **API Setup** and then choose the related link.
+1. On the **API Setup** page, choose the **Integrate APIs** button.  
     This will start a process of populating all the integration tables with records for all APIs. The process can take several minutes.
 
 Depending on where you want to access the APIs from, you must specify the correct endpoint. For more information, see [Endpoints for APIs](endpoints-apis-for-dynamics.md).
 
-## See Also
+[!INCLUDE[on-prem-ws-off-405-note](../../includes/include-on-prem-ws-off-405-note.md)]
 
-[Developing Connect Apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
-[Microsoft Web Services Overview](../../webservices/web-services.md)  
-[OpenAPI Specification](dynamics-open-api.md)  
+## See also
+
+[Developing connect apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
+[Microsoft web services overview](../../webservices/web-services.md)  
+[OpenAPI specification](dynamics-open-api.md)  

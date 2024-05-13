@@ -3,9 +3,7 @@ title: CREATE unitOfMeasures
 description: Creates a unitOfMeasure object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -47,12 +45,10 @@ POST https://{businesscentralPrefix}/api/v1.0/companies({id})/unitsOfMeasure
 Content-type: application/json
 
 {
-    "id": "53a6738a-44e3-ea11-bb43-000d3a2feca1",
     "code": "BOX",
     "displayName": "Box",
     "internationalStandardCode": "BX",
-    "symbol": "",
-    "lastModifiedDateTime": "2020-08-20T22:24:22.193Z"
+    "symbol": ""
 }
 ```
 

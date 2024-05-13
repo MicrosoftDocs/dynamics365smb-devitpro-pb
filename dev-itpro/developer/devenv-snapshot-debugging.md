@@ -1,18 +1,18 @@
 ---
-title: "Snapshot Debugging"
+title: "Snapshot debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 08/24/2022
-ms.reviewer: na
+ms.date: 09/13/2023
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Snapshot Debugging
+# Snapshot debugging
 
 > [!NOTE]  
 > With [!INCLUDE[prod_short](includes/prod_short.md)] 17.2 - Snapshot Debugging is available in production cloud environments.
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 With snapshot debugging, you can record AL code that runs on the server, and when it has completed, debug the recorded *snapshot* in Visual Studio Code. Snapshot debugging lets you inspect code execution and variables in the production environment on a cloud service for a specified user session. To create and download a snapshot file that exists on the server on behalf of an end-user, the user must be part of the **D365 Snapshot Debug** permission set. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
@@ -33,9 +33,9 @@ In the following sections, you can read more about how to initialize, view the s
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
-|**F7**|Start a snapshot debugging session|
-|**Shift+F7**|List all available snapshots|
-|**Alt+F7**|Finish a snapshot debugging session|
+|<kbd>F7</kbd>|Start a snapshot debugging session|
+|<kbd>Shift</kbd>+<kbd>F7</kbd>|List all available snapshots|
+|<kbd>Alt</kbd>+<kbd>F7</kbd>|Finish a snapshot debugging session|
 
 ## Initialize a snapshot debugging session
 
@@ -44,16 +44,16 @@ You can start a snapshot by creating a snapshot configuration file in Visual Stu
 - AL: Initialize a snapshot debugging session locally
 - AL: Initialize a snapshot debugging session on cloud
 
-Choose whether to run the session on a cloud service or locally. The configuration file contains the following information. For a full overview of configuration settings, see [Launch JSON file](devenv-json-launch-file.md#initialize-snapshot-debugging-settings).
+Choose whether to run the session on a cloud service or locally. The configuration file contains the following information. For a full overview of configuration settings, see [Launch JSON file](devenv-json-launch-file.md#initialize-a-snapshot-debugging-session-on-a-cloud-production-environment-launchjson).
 
 |Setting | Description |
 |--------|-------------|
 |`userId`| The GUID of the user who initiated the process to start snapshot debugging. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the `breakOnNext` parameter. <br>**Note:** Specifying `userId` doesn't work with Windows authentication: `"authentication" : "Windows"`, in which case you can only choose `sessionId` or attach to the next session. For more information, see [Launch JSON file](devenv-json-launch-file.md).|
 |`sessionId`| A session ID for the user specified in `userId`.|
 |`snapshotVerbosity`| Determines how much execution context to be recorded. If **SnapPoint** is specified, then only methods that hit a snappoint will be recorded.|
-|`tenant`| The AAD tenant ID for the tenant to connect to. Specify this if your target is a different tenant from the user's own AAD tenant, for example when running as a delegated admin.|
+|`tenant`| The Microsoft Entra tenant ID for the tenant to connect to. Specify this if your target is a different tenant from the user's own Microsoft Entra tenant, for example when running as a delegated admin.|
 
-When a configuration is defined, a snapshot debugging session can be initialized by pressing **Ctrl+Shift+P**, and then selecting **AL:Initialize Snapshot Debugging** or by pressing **F7**.
+When a configuration is defined, a snapshot debugging session can be initialized by selecting <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then selecting **AL:Initialize Snapshot Debugging** or by selecting <kbd>F7</kbd>.
 
 > [!NOTE]  
 > If you're going to use the snapshot for profiling the code, you must enable the configuration parameter called `executionContext`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).
@@ -68,7 +68,7 @@ To record the AL execution, the server will now wait for a connection to happen 
 > If you're having difficulty getting the snapshot debugger to attach to a new session using `WebClient` for the `breakOnNext` configuration parameter, then close the browser window and try again.
 
 > [!TIP]  
-> To do snapshot debugging of Service to Service (S2S) web service calls set the `breakOnNext` configuration parameter to `WebServiceClient` in the `launch.json` file and use table explorer to find the `userId` of the user record mapped to the S2S Azure AD Authentication Application. When the snapshot session is initialized, trigger the session either from the integration (service or device) or manually by invoking a web service call using tools like Postman or Fiddler. For information about creating S2S refer to [Using Service to Service Authentication](../administration/automation-apis-using-s2s-authentication.md), [Client Credentials Grant Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), [App-only Authentication](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps), and [Postman HowTo](https://blog.postman.com/pkce-oauth-how-to/).
+> To do snapshot debugging of Service to Service (S2S) web service calls set the `breakOnNext` configuration parameter to `WebServiceClient` in the `launch.json` file and use table explorer to find the `userId` of the user record mapped to the S2S Microsoft Entra authentication Application. When the snapshot session is initialized, trigger the session either from the integration (service or device) or manually by invoking a web service call using tools like Insomnia, Bruno, or Insomnium. For information about creating S2S refer to [Using Service to Service Authentication](../administration/automation-apis-using-s2s-authentication.md), [Client Credentials Grant Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), [App-only Authentication](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps&preserve-view=true).
 
 Once a snapshot debugging session is initialized, the snapshot debugging session counter on the status bar will be updated and look like this:
 
@@ -76,7 +76,7 @@ Once a snapshot debugging session is initialized, the snapshot debugging session
 
 ## Status of a snapshot debugging session
 
-Clicking on the status bar icon or pressing **Shift+F7**  will bring up a list of all available snapshots.  
+Clicking on the status bar icon or selecting <kbd>Shift</kbd>+<kbd>F7</kbd>  will bring up a list of all available snapshots.  
 The status list will show the state of a snapshot-debugged session. 
 
 A snapshot debugging session can be in one of the three states:
@@ -88,7 +88,7 @@ A snapshot debugging session can be in one of the three states:
 
 ## Stop a snapshot debugging session
 
-You can stop a snapshot debugging session by pressing **Alt+F7**. This brings up all snapshot sessions that have been started. Choosing one will close the session debugging on the server and download the snapshot file. 
+You can stop a snapshot debugging session by selecting <kbd>Alt</kbd>+<kbd>F7</kbd>. This brings up all snapshot sessions that have been started. Choosing one will close the session debugging on the server and download the snapshot file. 
 
 > [!IMPORTANT]  
 > The snapshot file can contain customer privacy data and must therefore be handled according to the privacy and compliance policies. The file should be deleted when it's not needed anymore.
@@ -122,7 +122,7 @@ Symbols download is using the **snapshotInitialize** debug configuration setting
 There are two user actions that will start snapshot debugging:
 
 - Creating a new launch debug configuration and specifying the snapshot file name in the `snapshotFileName` configuration setting. This is the only setting that is needed besides the type, request, and name. 
-- Choosing the status icon or by pressing **Shift+F7** and selecting a finished snapshot-debugged session. 
+- Choosing the status icon or by selecting <kbd>Shift</kbd>+<kbd>F7</kbd> and selecting a finished snapshot-debugged session. 
 
 Once a snapshot debugging session starts in Visual Studio Code, code execution will stop at the first snappoint. AL exceptions will be treated as snappoints, with the only difference that they can't be removed by the user actions. Other snappoints are regular breakpoints that can be removed or readded by the user actions. If no snappoints are specified in the first recorded methods; the first line is the entry breakpoint. 
 
@@ -147,11 +147,11 @@ Snapshot debugging is almost the same as a regular debugging with the difference
 |--|
 |Breakpoints can be added or removed and they'll be hit if the breakpoint is in the execution context of a recorded state. This means that if you walk the execution stack for a breakpoint and the next stepped line is reached, then the code will break on the breakpoint. |
 |A snappoint is a breakpoint in Visual Studio Code that is set when creating a snapshot. They don't, however, stop execution of code like when using regular debugging. Snappoints instruct execution to log the state at the breakpoint for later offline inspection.|
-|You can always navigate through all the breakpoints with **Continue** (F5). The order may not be the same as the execution order on the [!INCLUDE[prod_short](includes/prod_short.md)] server. This is because some calls on the server are AL calls with non-walkable stacks. Some are direct server calls on the server like triggers. A snapshot debugging session on the [!INCLUDE[prod_short](includes/prod_short.md)] server can only record AL calls and walk AL stack traces.|
+|You can always navigate through all the breakpoints with **Continue** (<kbd>F5</kbd>). The order may not be the same as the execution order on the [!INCLUDE[prod_short](includes/prod_short.md)] server. This is because some calls on the server are AL calls with non-walkable stacks. Some are direct server calls on the server like triggers. A snapshot debugging session on the [!INCLUDE[prod_short](includes/prod_short.md)] server can only record AL calls and walk AL stack traces.|
 |This is also true when stepping. The rule of thumb is that breakpoints within the reach are hit first, and if there are none; the next line is hit. Breakpoints on triggers may not always qualify as code within reach.|
 |Variable data is only shown on snappoints.|
 |If there are no frames available, snapshot debugging will stop.|
-|Stepping out of triggers with no recorded stack information will move execution to the first recorded method's first line. This may be far from the user's execution of interest. For example, stepping out from an `OnOpenPage` trigger with a snappoint may land on deep inside base code execution where recording has started. Navigating with **F5** will start over breakpoint resolution, thus this is an exit strategy from a scenario like this.|
+|Stepping out of triggers with no recorded stack information will move execution to the first recorded method's first line. This may be far from the user's execution of interest. For example, stepping out from an `OnOpenPage` trigger with a snappoint may land on deep inside base code execution where recording has started. Navigating with <kbd>F5</kbd> will start over breakpoint resolution, thus this is an exit strategy from a scenario like this.|
 |A snappoint may resolve as a non-reachable breakpoint if there was no execution state on the server hitting the snappoint.|
 |A snapshot debugger session with a [!INCLUDE[prod_short](includes/prod_short.md)] server will be closed if not attached to after 30 minutes.|
 |If a snapshot debugger session is started, it has to be finished after 10 minutes.|
@@ -163,7 +163,3 @@ Snapshot debugging is almost the same as a regular debugging with the difference
 [Developing Extensions](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
 [AL Code Navigation](devenv-al-code-navigation.md)  
-[EnableLongRunningSQLStatements Property](./properties/devenv-properties.md)  
-[EnableSQLInformationDebugger Property](./properties/devenv-properties.md)  
-[LongrunningSQLStatementsThreshold Property](./properties/devenv-properties.md)  
-[NumberOfSQLStatements Property](./properties/devenv-properties.md)

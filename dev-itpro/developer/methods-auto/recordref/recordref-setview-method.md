@@ -2,10 +2,7 @@
 title: "RecordRef.SetView(Text) Method"
 description: "Sets the current sort order, key, and filters on a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/12/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen

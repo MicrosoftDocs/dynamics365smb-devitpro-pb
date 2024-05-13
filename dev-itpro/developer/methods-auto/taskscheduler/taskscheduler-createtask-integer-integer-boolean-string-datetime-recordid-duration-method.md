@@ -1,11 +1,8 @@
 ---
 title: "TaskScheduler.CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration) Method"
-description: "Adds a task to ensure that a codeunit is not run before the specified time."
+description: "Adds a task to be run by the task scheduler."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -16,7 +13,7 @@ author: SusanneWindfeldPedersen
 # TaskScheduler.CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration) Method
 > **Version**: _Available or changed with runtime version 7.0._
 
-Adds a task to ensure that a codeunit is not run before the specified time.
+Adds a task to be run by the task scheduler. The task is ensured to not run before the specified time. This method also allows you to set a timeout for the task.
 
 
 ## Syntax
@@ -61,11 +58,15 @@ Specifies the timeout of the created session. If not specified a default timeout
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
-Scheduled tasks are recorded in table **2000000175 Scheduled Task**.  For more information about tasks and task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
+## Remarks
 
-## See Also
+This version of the `TaskScheduler.CreateTask` method has the same semantics as the version without a timeout parameter. For more information and usage examples, see [CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId])](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md).
+
+## See also
+
+[CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId])](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md)   
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
+[Using the Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Configuring Business Central Server - Default Task Scheduler Session Timeout](../../../administration/configure-server-instance.md#Task)

@@ -20,7 +20,7 @@ Data items on reports.
 
 ## Examples
 
-In the following example, the **DataItemView** property is used to sort a table view based on the `"Entry No."` field.
+In the following example, the **DataItemTableView** property is used to sort a table view based on the `"Entry No."` field.
 
 ```AL
 DataItemTableView = SORTING ("Entry No.");

@@ -1,18 +1,16 @@
 ---
-title: "Application Security in Business Central"
+title: "Layered security model in Business Central"
 description: Helps you understand and improve the security of your Business Central application regardless of where it's hosted.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
 
-# Application Security in Business Central
+# Layered security model in Business Central
 
-This section helps you understand and improve the security of your Business Central application regardless of where it's hosted. In the sections listed below, you'll find guidance and recommended practices related to authentication, authorization, and auditing, in addition to data encryption and secure development practices that can be applied to any Business Central environment.
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
+This section helps you understand and improve the security of your Business Central installation regardless of where it's hosted. In the sections listed below, you'll find guidance and recommended practices related to authentication, authorization, and auditing, in addition to data encryption and secure development practices that can be applied to any Business Central environment.
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses a layered approach to application security, as outlined in the following diagram.
 
@@ -20,15 +18,17 @@ This section helps you understand and improve the security of your Business Cent
 
 ## Authentication
 
-Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as a valid user in the system. Business Central (on-premises) supports several authentication methods, such as Windows and Azure Active Directory (Azure AD). Business Central online deployments use Azure AD only. For more information, see the following articles:
+Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as a valid user in the system. Business Central (on-premises) supports several authentication methods, such as Windows and Microsoft Entra ID . Business Central online deployments use Microsoft Entra ID only. For more information, see the following articles:
 
 [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)
 
 <!-- [User Authentication](user-security.md#user-authentication)  -->
 
-[Authentication and Credential Types](../administration/users-credential-types.md)
+[Set up Business Central Access with Microsoft 365 Licenses](/dynamics365/business-central/admin-access-with-m365-license)
 
-[Multifactor Authentication](multifactor-authentication.md)<!--note from editor: "Multifactor" is never hyphenated, via Microsoft Writing Style Guide.-->
+[Authentication and Credential Types (on-premises only)](../administration/users-credential-types.md)
+
+[Set up Multifactor Authentication (MFA)](multifactor-authentication.md)<!--note from editor: "Multifactor" is never hyphenated, via Microsoft Writing Style Guide.-->
 
 The authentication method configured for Business Central Server is also used to access web services. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md).
 
@@ -61,6 +61,13 @@ After a user is authenticated, authorization determines which areas the user can
 [Security Auditing](security-auditing.md)
 
 [Data Classification](/dynamics365/business-central/admin-classifying-data-sensitivity)
+
+> [!TIP]  
+> Before [!INCLUDE[prod_short](../includes/prod_short.md)] online logs authorization attempts to telemetry, a successful authentication (login) must happen against Microsoft Entra ID (formerly Azure Active Directory). With the information in the Microsoft Entra sign-in log, you can figure out what happened if a user sign-in failed. For more information, see [Analyze sign-ins with the Microsoft Entra sign-in log](/entra/identity/monitoring-health/quickstart-analyze-sign-in)
+> 
+> If you want to track, monitor, or alert on successful and failed login attempts against Microsoft Entra ID, configure integration to Azure Monitor on Microsoft Entra and analyze further with KQL. For more information, see [Integrate Microsoft Entra logs with Azure Monitor](/entra/identity/monitoring-health/howto-access-activity-logs#integrate-logs-with-azure-monitor-logs).
+
+
 
 ## Data encryption
 

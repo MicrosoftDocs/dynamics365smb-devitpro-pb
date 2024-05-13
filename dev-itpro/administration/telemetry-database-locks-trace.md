@@ -3,9 +3,7 @@ title: Database Lock Timeout Trace Telemetry | Microsoft Docs
 description: Learn about the database lock timeout Trace Telemetry telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 04/01/2021
 ms.author: jswymer
@@ -14,6 +12,8 @@ ms.author: jswymer
 # Analyzing Database Lock Timeout Trace Telemetry
 
 **INTRODUCED IN:** Business Central 2020 release wave 1, version 16.0
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 Database lock timeout telemetry gathers information about database locks that have timed out. The telemetry data allows you to troubleshoot what caused these locks.
 
@@ -45,7 +45,7 @@ Occurs when a database lock has timed out for a session.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alExecutingMethodScope|Specifies the AL action that is running the transaction that caused the lock.|
 |alObjectId|Specifies the ID of the running AL object that requested the lock. |
 |alObjectName|Specifies the name of the running AL object that requested the lock. not shown|
@@ -70,6 +70,8 @@ Occurs when a database lock has timed out for a session.
 ### Sample KQL code
 
 This KQL code can help you get started troubleshooting lock timeouts.
+> [!NOTE]
+> Reminder, as stated in [previous section](#analyzing-database-lock-timeout-trace-telemetry) that if these events can't be found on on-premise installations it is because the `EnableLockTimeoutMonitoring` setting is inactivated.
 
 ```kql
 traces 
@@ -119,7 +121,7 @@ In the case of a database lock timeout, the BC server also takes a snapshot. Her
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alExecutingMethodScope|Specifies the AL action that is running the transaction that caused the lock.|
 |alObjectId|Specifies the ID of the running AL object that requested the lock. |
 |alObjectName|Specifies the name of the running AL object that requested the lock.|

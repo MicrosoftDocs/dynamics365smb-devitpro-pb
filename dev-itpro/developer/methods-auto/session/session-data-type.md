@@ -2,10 +2,7 @@
 title: "Session Data Type"
 description: "Represents a Microsoft Dynamics Business Central session."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -19,6 +16,7 @@ author: SusanneWindfeldPedersen
 Represents a Microsoft Dynamics Business Central session.
 
 
+## Static methods
 The following methods are available on the Session data type.
 
 

@@ -2,10 +2,7 @@
 title: "ObsoleteState Property"
 description: "Marks whether the object will be deprecated."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -21,8 +18,9 @@ Marks whether the object will be deprecated.
 ## Applies to
 -   Page Action Ref
 -   Page Custom Action
--   Table Field
+-   Page File Upload Action
 -   Table
+-   Table Field
 -   Table Key
 -   Codeunit
 -   Enum Type
@@ -33,7 +31,6 @@ Marks whether the object will be deprecated.
 -   Page Part
 -   Page System Part
 -   Page Chart Part
--   Page Field
 -   Page Group
 -   Page Label
 -   Query
@@ -44,6 +41,7 @@ Marks whether the object will be deprecated.
 -   Report Column
 -   Request Page
 -   Xml Port
+-   Page Field
 -   Page Action Area
 -   Page Area
 -   Page
@@ -58,8 +56,8 @@ Marks whether the object will be deprecated.
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**No**|runtime version 1.0|Not obsolete. This is the normal/default setting.|
-|**Pending**|runtime version 1.0|Will become obsolete in a future version.|
+|**No**|runtime version 10.0|Not obsolete. This is the normal/default setting.|
+|**Pending**|runtime version 10.0|Will become obsolete in a future version.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

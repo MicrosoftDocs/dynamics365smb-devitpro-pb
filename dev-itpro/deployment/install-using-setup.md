@@ -1,15 +1,14 @@
 ---
-title: "Install Business Central Using Setup"
-description: Learn about installing Business Central using the installation wizard
-ms.date: 10/11/2022
-ms.reviewer: na
+title: Install Business Central Using Setup
+description: Learn about installing Business Central using the installation wizard.
+ms.date: 03/04/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.custom: bap-template 
 ---
 
-# Installing Business Central Using Setup
+# Installing Business Central using Setup
 
 You use [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the different components that comprise a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] production, demonstration, or development environment. For a list of components, see [Components and Topology](product-and-architecture-overview.md).
 
@@ -25,7 +24,6 @@ During Setup, you're presented with various configuration settings. Some setting
 
 There are some components that require other software to run. For example, the database requires SQL Server and the Web client requires IIS. Setup will install several of these prerequisites, like installing SQL Server Express and enabling IIS. You can see which prerequisites Setup installs in the [System Requirements](system-requirement-business-central.md).  
 
-
 ## Downloading [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for installation 
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is available for downloading from Microsoft Support. For each major release, minor updates are published on a regular basis. The downloaded files contain the installation media, which includes the setup.exe file.
@@ -33,18 +31,14 @@ There are some components that require other software to run. For example, the d
 > [!IMPORTANT]
 > We recommend that you install the latest update for the release you want to install. However, if you are installing a version for upgrade, make sure that you choose a target version that is compatible with the version that you will be upgrading. For more information, see [Dynamics 365 Business Central Upgrade Compatibility Matrix](../upgrade/upgrade-v14-v15-compatibility.md).
 
-
 ### Download the files
 
 1. Go to the update page for the release that you want to install:
 
-   <!-- - [Business Central 2018](https://support.microsoft.com//help/4470116)-->
-  <!-- - [Business Central 2019 Release Wave 2](https://support.microsoft.com/help/4528706)-->
-
-   - [Business Central Spring 2019 (v14)](https://support.microsoft.com/help/4501292)
-   - [Business Central 2021 Release Wave 1 (v18)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-1-cba50f7c-8950-4795-bc86-53fb39e675d6)
-   - [Business Central 2021 Release Wave 2 (v19)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-2-0d9263bf-e474-41c1-ae41-d98de5cd6e84)
-   - [Business Central 2022 Release Wave 1 (v20)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2022-release-wave-1-25be7a74-9771-4f0a-b9bd-ee1aac5a227d)
+   - [Business Central 2024 Release Wave 1 (v24)](https://www.microsoft.com/en-us/download/details.aspx?id=106000))
+   - [Business Central 2023 Release Wave 2 (v23)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-2-7a4f98e8-66b9-4484-9bc1-66c466d8a82d)
+   - [Business Central 2023 Release Wave 1 (v22)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-1-37e2d08e-6f61-4522-90ba-1cea59d8de51)
+   - [Business Central 2022 Release Wave 2 (v21)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2022-release-wave-2-8efa5bbb-3cd5-4445-ba3a-0752694bf46f)
 
 2. In the **Cumulative Updates** table, select the link in the **Knowledge Base ID** column for the update you want.
 3. In the **Resolution** section, select the link under  **How to obtain the Microsoft Dynamics 365 Business Central \<release\> files**.
@@ -85,6 +79,7 @@ There are some components that require other software to run. For example, the d
         > **APPLIES TO:** Business Central 2021 release wave 2 (v19) and earlier only.
     - Choose **Advance installation options** to install a demonstration environment or individual components. Then, follow the on-screen instructions to complete the installation.
 
+<!-- 
 ## <a name="sqlclient"></a>Install prerequisites for [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] (Business Central 2019 only)
 
 Starting with cumulative update 24 (version 14.25), SQL Server Native Client is no longer be installed by Setup or included on the installation media (DVD). This change doesn't affect the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] installation if you upgrading from an earlier version, because the prerequisite should already have been installed. However, for a clean installation of the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], you'll have to manually install the SQL Server Native Client; otherwise, you may experience problems connecting the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] to the database.   To install the SQL Server Native Client, follow these steps:
@@ -92,7 +87,7 @@ Starting with cumulative update 24 (version 14.25), SQL Server Native Client is 
 1. From [Released Cumulative Updates for Business Central Spring 2019](https://support.microsoft.com/help/4501292), download an earlier cumulative update to the computer where you're installing [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].
 2. Unzip the files.
 3. Open the **DVD\Prerequisite Components\Microsoft SQL Server folder**, then double-click either the sqlncli.msi or sqlncli64.msi, depending on whether the computer has an 86-bit or 64-bit operating system respectively.
-4. Follow the instructions.
+4. Follow the instructions.-->
 
 ## Cancel Setup
 
@@ -162,7 +157,7 @@ The option to load a Setup configuration file is on the **Choose an installation
   
      Setup now shows the **Customize the installation** page. It's modified according to the component selection in the configuration file.  
   
-3. Modify the list of components to install or choose **Next** to continue to the **Specify parameters** page.   
+3. Modify the list of components to install or choose **Next** to continue to the **Specify parameters** page.
   
 4. Configure these settings or choose **Apply** to accept these values and continue.
 

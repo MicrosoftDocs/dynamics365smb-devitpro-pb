@@ -2,10 +2,7 @@
 title: "Debugger.StepOut() Method"
 description: "Enables debugging to return to the calling method after it steps into a method call."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Enables debugging to return to the calling method after it steps into a method c
 ```AL
 [Ok := ]  Debugger.StepOut()
 ```
-
 
 ## Return Value
 *[Optional] Ok*  

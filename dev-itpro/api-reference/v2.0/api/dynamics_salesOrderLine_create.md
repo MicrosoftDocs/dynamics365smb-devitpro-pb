@@ -3,9 +3,7 @@ title: Create salesOrderLines
 description: Creates a sales order line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/28/2023
 ms.author: solsen
 ---
@@ -21,7 +19,7 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 
 ```
 POST businesscentralPrefix/companies({id})/salesOrders({id})/salesOrderLines
-POST businesscentralPrefix/companies({id})/salesOrderLines({salesOrderLineId})
+POST businesscentralPrefix/companies({id})/salesOrderLines
 ```
 
 ## Request headers

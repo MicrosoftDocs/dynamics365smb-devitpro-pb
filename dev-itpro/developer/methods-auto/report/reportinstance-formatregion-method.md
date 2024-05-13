@@ -2,10 +2,7 @@
 title: "Report.FormatRegion([Text]) Method"
 description: "Gets or sets the current format region setting for the report."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/23/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -65,8 +62,8 @@ end;
 
 ## See Also
 
-[Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
 [Report Localization](../../devenv-report-localization.md)  
 [Report.Language](./reportinstance-language-method.md)  
+[Report Data Type](report-data-type.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)   

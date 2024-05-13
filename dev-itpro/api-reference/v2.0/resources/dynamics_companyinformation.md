@@ -3,9 +3,7 @@ title: companyInformation resource type
 description: A company information object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -27,13 +25,6 @@ Represents a company information in [!INCLUDE[prod_short](../../../includes/prod
 |:--------------------|:-----------|:-------------------------|
 |[GET companyInformation](../api/dynamics_companyinformation_get.md)|companyInformation|Gets a company information object.|
 |[PATCH companyInformation](../api/dynamics_companyinformation_update.md)|companyInformation|Updates a company information object.|
-
-
-## Navigation
-
-| Navigation |Return Type| Description |
-|:----------|:----------|:-----------------|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the companyInformation.|
 
 ## Properties
 

@@ -2,10 +2,7 @@
 title: "File.Write(Boolean) Method"
 description: "Writes to an MS-DOS encoded file or binary file."
 ms.author: solsen
-ms.custom: na
-ms.date: 11/05/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -60,8 +57,8 @@ To read or write files in Unicode or in other formats, we recommend that you use
 
 The following example determines whether the specified file exists. If it exists, the [WriteMode Method \(File\)](file-writemode-method.md) allows the file to be open for writing. The [Open Method \(File\)](file-open-method.md) opens the file, the [Write Method \(File\)](file-writemode-method.md) writes the text “Hello World” to the file and then the [Close Method \(File\)](file-close-method.md) closes the file. If the file does not exist, then an error message is displayed. This example assumes that you have created the following file: C:\\TestFolder\\TestFile.txt.
  
-  ```
- var
+```al
+var
     FileName: Text;
     TestFile: File;
     Bool: Boolean;

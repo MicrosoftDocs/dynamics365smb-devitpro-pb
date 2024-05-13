@@ -2,12 +2,11 @@
 title: "Update 21.1 for Microsoft Dynamics 365 Business Central 2022 Release Wave 2"
 description: Get an overview of new and changed capabilities in the 21.1 update of Business Central online, which is part of 2022 release wave 2.
 ms.author: jswymer
-ms.custom: na
-ms.date: 11/17/2022
+ms.date: 04/01/2024
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
-author: EmmaNielsson
+author: jswymer
+ms.custom: evergreen
 ---
 
 # Update 21.1 for Microsoft Dynamics 365 Business Central online 2022 release wave 2
@@ -23,7 +22,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/top
 - [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
 -  [Embed Business Central in Teams tabs](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/embed-business-central-teams-tabs)
 - [Auto-Save as you work:](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work) due to popular demand, administrators can now choose to turn on or off the new auto-saving behaviour using Feature Management
-- [Business Central is available in 11 more countries](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features#country-and-regional)
+- [Business Central is available in 11 more countries/regions](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features#country-and-regional)
 - [Accessibility declaration for Italy available](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/accessibility-declaration-italy)
 - [Use SharePoint Connector module in System Application to build integration between Business Central and Sharepoint](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/use-sharepoint-module-system-application-build-integrations-between-business-central-sharepoint) 
 - [Use multiline text fields with Word mail merge](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/use-multiline-text-fields-word-mail-merge)
@@ -32,10 +31,10 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/top
 
 ## Localization updates
 
-| Country| Feature  |Description|
+| Country/region| Feature  |Description|
 |-------------|--------------|--------------|
 | Belgium | Vendor Name as a column in EB Payment Journal | Vendor Name now exists in Belgium local EB Payment Journal, the same as in W1 Payment Journal feature.|
-| W1 | Services Declarations [BE] F01DGS Declaration | Belgian authorities require reporting for exporting services to the other EU countries and this includes the F01DGS form for Belgium. Even primarily required for Belgium market, this feature is available as an extension and can be used in all countries. Reporting is configurable, so it won't have a hard-coded format for export. It works with the Items (Type=Service), Resources, and Item Charges as services in both purchase and sales documents.|
+| W1 | Services Declarations [BE] F01DGS Declaration | Belgian authorities require reporting for exporting services to the other EU countries and this includes the F01DGS form for Belgium. Even primarily required for Belgium market, this feature is available as an extension and can be used in all countries/regions. Reporting is configurable, so it won't have a hard-coded format for export. It works with the Items (Type=Service), Resources, and Item Charges as services in both purchase and sales documents.|
 | United States | IRS 1099 | All IRS 1099 form printouts are updated accordingly with 2022 requirements. When users open the 1099 Form Boxes page, they will see the notification about update to 2022 release. They can schedule an upgrade and when it is finished, new reports will be available for usage.|
 | The Netherlands | Electronic Tax Declaration Setup | Previously used hardcoded endpoints for electronic tax declaration have been moved to the setup under the new “Endpoints” tab, so users now can configure endpoints manually. It will be deployed to 21.1 tenants. But for them, the upgrade would not be executed, and they will see all the values blank. But Digipoort solution still would work and take the hardcoded values if there are no values in the setup. For 21.2 the system will automatically run an upgrade.|
 

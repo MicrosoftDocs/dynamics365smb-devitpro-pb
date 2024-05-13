@@ -2,10 +2,7 @@
 title: "Compiler Designer Customization Warning AL1405"
 description: "The control '{0}' is not found in the target '{1}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The control '{0}' is not found in the target '{1}'.
+
 
 ## Description
 Cannot resolve a reference to a control in a page extension or page customization.  

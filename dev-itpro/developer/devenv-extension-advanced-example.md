@@ -1,19 +1,15 @@
 ---
 author: SusanneWindfeldPedersen
-title: "Building an Advanced Sample Extension"
-description: "Includes code for an advanced example extension using Business Central and AL in Visual Studio Code."
-ms.custom: na
+title: Building an Advanced Sample Extension
+description: Includes code for an advanced example extension using Business Central and AL in Visual Studio Code.
 ms.date: 12/29/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Building an Advanced Sample Extension
+# Building an advanced sample extension
 
-It's required to submit tests with your extension in order to pass validation. This walkthrough builds an advanced sample extension, which is used as the foundation for writing a test, which you can read about in the [Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md) article. If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). 
+It's required to submit tests with your extension in order to pass validation. This walkthrough builds an advanced sample extension, which is used as the foundation for writing a test, which you can read about in the [Test the advanced sample extension](devenv-extension-advanced-example-test.md) article. If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). 
 
 For information about submitting your app to AppSource, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
 
@@ -140,8 +136,7 @@ table 50101 "Activation Code Information"
             Clustered = true; 
         } 
     } 
-} 
-
+}
 ``` 
 
 #### Customer Rewards Mgt. Setup table object 
@@ -425,7 +420,7 @@ page 50100 "Customer Rewards Wizard"
         EnableControls; 
     end; 
 
-    local procedure EnableControls(); 
+    local procedure EnableControls()
     begin 
         ResetControls; 
 
@@ -441,7 +436,7 @@ page 50100 "Customer Rewards Wizard"
         end; 
     end; 
 
-    local procedure NextStep(Backwards: Boolean); 
+    local procedure NextStep(Backwards: Boolean)
     begin 
         if Backwards then 
             Step := Step - 1 
@@ -450,7 +445,7 @@ page 50100 "Customer Rewards Wizard"
         EnableControls; 
     end; 
 
-    local procedure FinishAndEnableCustomerRewards(); 
+    local procedure FinishAndEnableCustomerRewards()
     var 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
     begin 
@@ -458,7 +453,7 @@ page 50100 "Customer Rewards Wizard"
         CustomerRewardsExtMgt.OpenRewardsLevelPage; 
     end; 
 
-    local procedure ShowFirstPage(); 
+    local procedure ShowFirstPage()
     begin 
         FirstPageVisible := true; 
         SecondPageVisible := false; 
@@ -468,7 +463,7 @@ page 50100 "Customer Rewards Wizard"
         NextEnabled := EnableCustomerRewards; 
     end; 
 
-    local procedure ShowSecondPage(); 
+    local procedure ShowSecondPage()
     begin 
         FirstPageVisible := false; 
         SecondPageVisible := true; 
@@ -478,7 +473,7 @@ page 50100 "Customer Rewards Wizard"
         ActivateEnabled := true; 
     end; 
 
-    local procedure ShowFinalPage(); 
+    local procedure ShowFinalPage()
     begin 
         FinalPageVisible := true; 
         BackEnabled := true; 
@@ -486,7 +481,7 @@ page 50100 "Customer Rewards Wizard"
         ActivateEnabled := false; 
     end; 
 
-    local procedure ResetControls(); 
+    local procedure ResetControls()
     begin 
         FinishEnabled := true; 
         BackEnabled := true; 
@@ -497,7 +492,7 @@ page 50100 "Customer Rewards Wizard"
         FinalPageVisible := false; 
     end; 
 
-    local procedure LoadTopBanners(); 
+    local procedure LoadTopBanners()
     begin 
         if MediaRepositoryStandard.GET('AssistedSetup-NoText-400px.png', FORMAT(CURRENTCLIENTTYPE)) 
       then 
@@ -520,8 +515,7 @@ page 50100 "Customer Rewards Wizard"
         NextEnabled: Boolean; 
         ActivateEnabled: Boolean; 
         EnableCustomerRewards: Boolean; 
-} 
-
+}
 ``` 
 
 #### Rewards Level List page object
@@ -668,7 +662,7 @@ codeunit 50100 "Customer Rewards Install Logic"
         SetDefaultCustomerRewardsExtMgtCodeunit; 
     end; 
 
-    procedure SetDefaultCustomerRewardsExtMgtCodeunit(); 
+    procedure SetDefaultCustomerRewardsExtMgtCodeunit()
     var 
         CustomerRewardsExtMgtSetup: Record "Customer Rewards Mgt. Setup"; 
     begin 
@@ -687,7 +681,7 @@ The 50101 **Customer Rewards Ext. Mgt.**  codeunit encapsulates most of the 
  
 ```AL
     // Activates Customer Rewards if activation code is validated successfully  
-    procedure ActivateCustomerRewards(ActivationCode: Text): Boolean; 
+    procedure ActivateCustomerRewards(ActivationCode: Text): Boolean
     var 
         ActivationCodeInfo: Record "Activation Code Information"; 
     begin 
@@ -698,13 +692,13 @@ The 50101 **Customer Rewards Ext. Mgt.**  codeunit encapsulates most of the 
 
     // publishes event 
     [IntegrationEvent(false, false)] 
-    procedure OnGetActivationCodeStatusFromServer(ActivationCode: Text); 
+    procedure OnGetActivationCodeStatusFromServer(ActivationCode: Text)
     begin 
     end; 
 
     // Subscribes to OnGetActivationCodeStatusFromServer event and handles it when the event is raised 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Customer Rewards Ext. Mgt.", 'OnGetActivationCodeStatusFromServer', '', false, false)] 
-    local procedure OnGetActivationCodeStatusFromServerSubscriber(ActivationCode: Text); 
+    local procedure OnGetActivationCodeStatusFromServerSubscriber(ActivationCode: Text)
     var 
         ActivationCodeInfo: Record "Activation Code Information"; 
         ResponseText: Text; 
@@ -736,7 +730,7 @@ The 50101 **Customer Rewards Ext. Mgt.**  codeunit encapsulates most of the 
     end; 
 
     // Helper method to make calls to a service to validate activation code 
-    local procedure GetHttpResponse(ActivationCode: Text; var ResponseText: Text): Boolean; 
+    local procedure GetHttpResponse(ActivationCode: Text; var ResponseText: Text): Boolean
     begin 
         // You will typically make external calls / http requests to your service to validate the activation code 
         // here but for the sample extension we simply return a successful dummy response 
@@ -764,7 +758,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
         NoRewardlevelTxt: Label 'NONE'; 
 
     // Determines if the extension is activated 
-    procedure IsCustomerRewardsActivated(): Boolean; 
+    procedure IsCustomerRewardsActivated(): Boolean
     var 
         ActivationCodeInfo: Record "Activation Code Information"; 
     begin 
@@ -777,7 +771,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
     end; 
 
     // Opens the Customer Rewards Assisted Setup Guide 
-    procedure OpenCustomerRewardsWizard(); 
+    procedure OpenCustomerRewardsWizard()
     var 
         CustomerRewardsWizard: Page "Customer Rewards Wizard"; 
     begin 
@@ -785,7 +779,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
     end; 
 
     // Opens the Reward Level page 
-    procedure OpenRewardsLevelPage(); 
+    procedure OpenRewardsLevelPage()
     var 
         RewardsLevelPage: Page "Rewards Level List"; 
     begin 
@@ -793,7 +787,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
     end; 
 
     // Determines the correponding reward level and returns it 
-    procedure GetRewardLevel(RewardPoints: Integer) RewardLevelTxt: Text; 
+    procedure GetRewardLevel(RewardPoints: Integer) RewardLevelTxt: Text
     var 
         RewardLevelRec: Record "Reward Level"; 
         MinRewardLevelPoints: Integer; 
@@ -819,7 +813,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
     end; 
 
     // Activates Customer Rewards if activation code is validated successfully  
-    procedure ActivateCustomerRewards(ActivationCode: Text): Boolean; 
+    procedure ActivateCustomerRewards(ActivationCode: Text): Boolean
     var 
         ActivationCodeInfo: Record "Activation Code Information"; 
     begin 
@@ -830,13 +824,13 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
 
     // publishes event 
     [IntegrationEvent(false, false)] 
-    procedure OnGetActivationCodeStatusFromServer(ActivationCode: Text); 
+    procedure OnGetActivationCodeStatusFromServer(ActivationCode: Text)
     begin 
     end; 
 
     // Subscribes to OnGetActivationCodeStatusFromServer event and handles it when the event is raised 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Customer Rewards Ext. Mgt.", 'OnGetActivationCodeStatusFromServer', '', false, false)] 
-    local procedure OnGetActivationCodeStatusFromServerSubscriber(ActivationCode: Text); 
+    local procedure OnGetActivationCodeStatusFromServerSubscriber(ActivationCode: Text)
     var 
         ActivationCodeInfo: Record "Activation Code Information"; 
         ResponseText: Text; 
@@ -869,7 +863,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
     end; 
 
     // Helper method to make calls to a service to validate activation code 
-    local procedure GetHttpResponse(ActivationCode: Text; var ResponseText: Text): Boolean; 
+    local procedure GetHttpResponse(ActivationCode: Text; var ResponseText: Text): Boolean
     begin 
         // You will typically make external calls / http requests to your service to validate the activation code 
         // here but for the sample extension we simply return a successful dummy response 
@@ -882,7 +876,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
 
     // Subcribes to the OnAfterReleaseSalesDoc event and increases reward points for the sell to customer in posted sales order 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Release Sales Document", 'OnAfterReleaseSalesDoc', '', false, false)] 
-    local procedure OnAfterReleaseSalesDocSubscriber(VAR SalesHeader: Record "Sales Header"; PreviewMode: Boolean; LinesWereModified: Boolean); 
+    local procedure OnAfterReleaseSalesDocSubscriber(VAR SalesHeader: Record "Sales Header"; PreviewMode: Boolean; LinesWereModified: Boolean)
     var 
         Customer: Record Customer; 
     begin 
@@ -895,7 +889,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
     end; 
 
     // Checks if the current codeunit is allowed to handle Customer Rewards Activation requests rather than a mock. 
-    local procedure CanHandle(): Boolean; 
+    local procedure CanHandle(): Boolean
     var 
         CustomerRewardsExtMgtSetup: Record "Customer Rewards Mgt. Setup"; 
     begin 
@@ -907,7 +901,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
 ```
 
 ### Conclusion
-At this point, the Customer Rewards sample extension can be published and installed on your sandbox. To continue writing tests for the sample extension, see [Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md). 
+At this point, the Customer Rewards sample extension can be published and installed on your sandbox. To continue writing tests for the sample extension, see [Test the advanced sample extension](devenv-extension-advanced-example-test.md). 
 
 ## See Also  
 [Developing Extensions](devenv-dev-overview.md)  

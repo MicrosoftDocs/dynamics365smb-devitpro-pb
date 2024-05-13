@@ -1,11 +1,8 @@
 ---
 title: "Compiler Error AL0766"
-description: "An External Business Event with {0} {1} is already declared."
+description: "An External Business Event with {0} {1} and version {2} is already declared."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/23/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -17,11 +14,11 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-An External Business Event with {0} {1} is already declared.
+An External Business Event with {0} {1} and version {2} is already declared.
 
 
 ## Description
-A duplication in the name or display name of an external business event is detected.  
+A duplication in the name or display name and the same version of an external business event is detected.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

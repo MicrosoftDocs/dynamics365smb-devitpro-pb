@@ -3,9 +3,7 @@ title: Create journalLines
 description: Creates a journal line in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -20,7 +18,7 @@ Creates a journal line object in [!INCLUDE[prod_short](../../../includes/prod_sh
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
-POST businesscentralPrefix/companies({id})/journals({id})/journalLines({id})
+POST businesscentralPrefix/companies({id})/journals({id})/journalLines
 ```
 
 ## Request headers

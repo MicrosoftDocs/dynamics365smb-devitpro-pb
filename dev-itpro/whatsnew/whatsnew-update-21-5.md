@@ -1,13 +1,12 @@
 ---
 title: "Update 21.5 for Microsoft Dynamics 365 Business Central 2022 Release Wave 2"
 description: Get an overview of new and changed capabilities in the 21.5 update of Business Central online, which is part of 2022 release wave 2.
-ms.author: a-enielsson
-ms.custom: na
-ms.date: 03/06/2023
+ms.author: jswymer
+ms.date: 04/01/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
-author: EmmaNielsson
+author: jswymer
+ms.custom: evergreen
 ---
 
 # Update 21.5 for Microsoft Dynamics 365 Business Central online 2022 release wave 2
@@ -23,9 +22,9 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Localization updates
 
-| Country| Feature  |Description|
+| Country/region | Feature  |Description|
 |-------------|--------------|--------------|
-| All countries | Added field Registration No. to Customers and Vendors | Business Central previously had a Registration No. field in the Company Information, but no such field in Customer or Vendor cards. In some localizations, this field already existed, so now this fields are delocalized and you can use them in global version
+| All countries/region | Added field Registration No. to Customers and Vendors | Business Central previously had a Registration No. field in the Company Information, but no such field in Customer or Vendor cards. In some localizations, this field already existed, so now this fields are delocalized and you can use them in global version
 | Belgium | Deferrals on local Purchase/Sales Ledger reports | Business Central posts the deferral entries in the same journal as the original invoice or credit memo. This model previously made problems when print out the purchase ledger, and sales ledger (BE local reports). Both the purchase ledger and the sales ledger now show the invoices, and credit memos without deferrals.|
 | Belgium | Intervat VAT declaration version 9 | Intervat VAT declaration has been updated against the newest required version - v0.9. It is now already possible to add the comment into the Intervat VAT XML file in order to inform the VAT administration. |
 | United States | Added EIN Number and IRS Employee Contact | The EIN Number and IRS Employee Contact (referenced with Employees) has been added to the Company Information. Also, when users prints IRS 1096 report, these two fields will be populated by default. |

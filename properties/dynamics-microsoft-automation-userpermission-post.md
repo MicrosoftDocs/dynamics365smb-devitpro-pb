@@ -45,7 +45,6 @@ Content-Type:application/json
     "id": "SECURITY", 
     "company" : "CRONUS"
 }
-
 ```
 
 **Response**

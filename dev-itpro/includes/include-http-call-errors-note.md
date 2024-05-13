@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> The call might fail in the [!INCLUDE[prod_short](prod_short.md)] platform before actually reaching the external web service. It's therefore important that you check for this in your AL code. Common error examples are if you have added duplicate request or content HTTP headers, if there are networking/firewall issues, if the URI cannot be resolved with DNS, or if the app/extension has not been configured to allow HttpClient requests in the Extension Settings.

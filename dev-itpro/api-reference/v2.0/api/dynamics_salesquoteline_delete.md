@@ -5,9 +5,7 @@ description: Deletes a sales quote line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -22,7 +20,7 @@ Delete a sales quote line object from [!INCLUDE[prod_short](../../../includes/pr
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
 DELETE businesscentralPrefix/companies({id})/salesQuotes({id})/salesQuoteLines({salesQuoteLineId})
-DELETE businesscentralPrefix/companies({id})/salesQuoteLines({salesQouteLineId})
+DELETE businesscentralPrefix/companies({id})/salesQuoteLines({salesQuoteLineId})
 ```
 
 ## Request headers
@@ -45,7 +43,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 Here is an example of the request.
 
 ```json
-DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/salesQuotes({id})/salesQuoteLines({salesQouteLineId})
+DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/salesQuotes({id})/salesQuoteLines({salesQuoteLineId})
 ```
 
 **Response** 

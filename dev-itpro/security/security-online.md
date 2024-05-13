@@ -3,10 +3,6 @@ title: "Security in Business Central"
 description: "Learn about the main aspects of security in your online deployment of Dynamics 365 Business Central."
 author: jswymer
 
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
@@ -14,11 +10,13 @@ ms.date: 04/01/2021
 
 # Business Central Security 
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This section helps you understand and improve the security of your Dynamics 365 Business Central tenant. In the links below you'll find information, guidance, and recommended practices related to authentication, data encryption, and safely integrating with other services. You'll also find information on Business Central certifications and regulatory compliance.
 
 ## Authentication
  
-Business Central uses Azure Active Directory (Azure AD) as the authentication method, which is automatically set up and managed for you.
+Business Central uses Microsoft Entra ID as the authentication method, which is automatically set up and managed for you.
 
 ## Data isolation and encryption
 

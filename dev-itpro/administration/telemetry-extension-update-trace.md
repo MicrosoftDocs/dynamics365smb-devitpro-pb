@@ -3,9 +3,7 @@ title:  Extension Update Trace Telemetry | Microsoft Docs
 description: Learn about the extension upgrade telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 04/01/2021
 ms.author: jswymer
@@ -13,6 +11,8 @@ ms.author: jswymer
 # Analyzing Extension Update Telemetry
 
 **INTRODUCED IN:** Exception telemetry was introduced in Business Central 2020 release wave 1, version 16.2. Upgrade tag telemetry was introduced in Business Central 2021 release wave 1, version 18.1.
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 Extension upgrade telemetry gathers information about operations that can occur during extension upgrades:
 
@@ -62,7 +62,7 @@ The following table explains other custom dimensions that are common to all exte
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|The Azure Active Directory (Azure AD) tenant ID that's used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|The Microsoft Entra tenant ID that's used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|The version number of the component that emits telemetry (see the component dimension)|
 |environmentName|The name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|

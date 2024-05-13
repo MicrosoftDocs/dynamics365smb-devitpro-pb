@@ -2,10 +2,7 @@
 title: "DefaultRenderingLayout Property"
 description: "Sets the default layout that should be used for this report."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -22,6 +19,41 @@ Sets the default layout that should be used for this report.
 -   Report
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## Example
+
+The following example shows how to use this property together with a *rendering* section.
+
+```AL
+report 50124 MyExcelReport
+    DefaultRenderingLayout = MyExcelLayout; 
+    // More report properties goes here
+
+    rendering
+    {
+        layout(MyExcelLayout) 
+        {
+            Type = Excel; 
+            Caption = 'Excel layout for the sales report'; 
+            Summary = 'The Excel layout for the sales report is used for ad-hoc analysis';
+            LayoutFile = './Src/Reports/SalesReport.xlsx'; 
+        }
+
+        layout(MyWordLayout) 
+        {
+            Type = Word; 
+            Caption = 'Word layout for the sales report'; 
+            Summary = 'The Word layout for the sales report is used for print and pdf generation';
+            LayoutFile = './Src/Reports/SalesReport.docx'; 
+        }        
+    }
+
+    // dataset definition goes here
+```
+
+## See also
+
+[Developing reports](../devenv-reports.md)  
+[Defining multiple report layouts](../devenv-multiple-report-layouts.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

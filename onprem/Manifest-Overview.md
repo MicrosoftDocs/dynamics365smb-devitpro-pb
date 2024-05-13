@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 939606f2-3092-4f14-9faf-c99a3499a58d
 caps.latest.revision: 17
 ---
@@ -161,8 +160,7 @@ var map = null;
 function initializeControlAddIn() {  
     var controlAddIn = document.getElementById('controlAddIn');  
     controlAddIn.innerHTML = "Hello World";  
-}  
-
+}
 ```  
 
 ### Sizing the Control Add-in  

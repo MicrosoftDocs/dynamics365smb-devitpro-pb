@@ -1,10 +1,9 @@
 ---
 title: "Walkthrough: Implementing New Workflow Events and Responses"
 description: Learn how you can extend the native workflows by adding workflow events and responses in code to support additional business scenarios.
-author: edupont04
-ms.reviewer: na
+author: solsen
 ms.topic: conceptual
-ms.author: edupont
+ms.author: solsen
 ms.date: 02/11/2022
 ---
 
@@ -82,7 +81,7 @@ Your MyWorkflowEvents.codeunit.al file now looks like this:
 ```AL
 codeunit 50101 MyWorkflowEvents
 {
-    procedure MyWorkflowEventCode(): code[128];
+    procedure MyWorkflowEventCode(): code[128]
     begin
     end;
 }
@@ -206,7 +205,7 @@ Create a new .al file, such as MyWorkflowResponses.codeunit.al, with code to ide
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Workflow Response Handling", 'OnAddWorkflowResponsesToLibrary', '', true, true)]
     local procedure AddMyWorkflowResponsesToLibrary()
     var
-        WorkflowEventHandling: codeunit "Workflow Event Handling";
+        WorkflowResponseHandling: Codeunit "Workflow Response Handling";
     begin
         WorkflowResponseHandling.AddResponseToLibrary(MyWorkflowResponseCode, Database::"Purchase Header", 'Send a notification.', 'GROUP 0');
         End
@@ -221,7 +220,7 @@ The codeunit now looks something like this:
 ```AL
 codeunit 50103 MyWorkflowResponses
 {
-    procedure MyWorkflowResponseCode(): code[128];
+    procedure MyWorkflowResponseCode(): code[128]
     begin
     end;
 

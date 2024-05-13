@@ -4,11 +4,12 @@ description: Learn how to set the isolation levels used when querying the Busine
 author: phduck 
 ms.author: magram 
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
-ms.date: 01/02/2023
+ms.date: 01/08/2024
 ms.custom: bap-template
 ---
+
 # Record instance isolation level
 
 This article explains how you can use the [ReadIsolation method](methods-auto/record/record-readisolation-method.md) to control isolation level on database transactions. The isolation level on a transaction determines the degree to which it's isolated from other transactions to prevent problems in concurrent situations. On the record level, the isolation level improves the integrity and stability of data when multiple transactions are reading the same record. It protects a transaction from the effects of other transactions by taking locks, preventing reads of uncommitted data, or preventing modifications.
@@ -17,7 +18,7 @@ Database locking can be a major cause for performance issues. When AL code takes
 
 ## How isolation level works by default
 
-The runtime of Business Central automatically determines the isolation levels used when querying the database. A transaction's isolation level is heightened either implicitly by writes on a record or explicitly via a [LockTable](methods-auto/record/record-locktable-method-md) method call, both on a per-table basis. The heightened isolation level persists for the entirety of the transaction&mdash;leaving subsequent code executed be impacted by heightened isolation levels, whether it's required or wanted.
+The runtime of Business Central automatically determines the isolation levels used when querying the database. A transaction's isolation level is heightened either implicitly by writes on a record or explicitly via a [LockTable](methods-auto/record/record-locktable-method.md) method call, both on a per-table basis. The heightened isolation level persists for the entirety of the transaction&mdash;leaving subsequent code executed be impacted by heightened isolation levels, whether it's required or wanted.
 
 The below example shows AL code with SQL isolation level hints annotated on database reads, which solely relies on transaction determined locking.
 
@@ -45,7 +46,7 @@ end;
 
 ## Using record instance isolation level
 
-With the introduction of record instance isolation level, it's possible to explicitly select the isolation level for reads on a record instance. Record instance isolation level will override the transaction's isolation level for a given table. It's possible to both heighten and lower the isolation level, with the effect being localized to the record instance instead of lasting for the entire length of the transaction.
+With the introduction of record instance isolation level, it's possible to explicitly select the isolation level for reads on a record instance. Record instance isolation level overrides the transaction's isolation level for a given table. It's possible to both heighten and lower the isolation level, with the effect being localized to the record instance instead of lasting for the entire length of the transaction.
 
 The following example shows AL code with SQL isolation level hints annotated on database reads, with record instance isolation level used to override the transaction's isolation level.
 
@@ -70,14 +71,14 @@ end;
 
 ### Isolation levels
 
-The following table describes the different isolation levels of the [IsolationLevel option type](/isolationlevel/isolationlevel-option) that you can apply:
+The following table describes the different isolation levels of the [IsolationLevel option type](methods-auto/isolationlevel/isolationlevel-option.md) that you can apply:
 
 |Value|Description|
 |-|-|
 |Default|Follows the transaction's state. It's the same as not using read isolation.|
 |ReadUncommitted|Allows dirty reads, which means it can read rows that have been modified by other transactions but not yet committed. It takes no locks and ignores locks from other transactions.|
 |ReadCommitted|Allows reads on committed data only, in other words, it can't read data that has been modified by other transactions but not yet committed. But it doesn't guarantee that rows read will stay consistent throughout the entirety of the transaction.|
-|RepetableRead|Ensures all reads are stable by holding shared locks for the lifetime of the transaction. The transaction can't read data that has been modified but not yet committed by other transactions, and no other transactions can modify data that has been read by the current transaction until the current transaction completes.|
+|RepeatableRead|Ensures all reads are stable by holding shared locks for the lifetime of the transaction. The transaction can't read data that has been modified but not yet committed by other transactions, and no other transactions can modify data that has been read by the current transaction until the current transaction completes.|
 |UpdLock|Reads for update, disallowing others to read with the same intent.|
 
 For more about non-default values, go to [SET TRANSACTION ISOLATION LEVEL](/sql/t-sql/statements/set-transaction-isolation-level-transact-sql) and [UPDLOCK](/sql/t-sql/queries/hints-transact-sql-table?#updlock) in the SQL Server documentation.
@@ -103,7 +104,7 @@ end;
 
 ## Temporarily lowering the isolation level
 
-It isn't possible inside a transaction to determine the current isolation level used in the transaction. If previously executed code has triggered a higher isolation level, counting on the entire table will require locks on the entire table. With record instance isolation level, for example, you could get an estimated record count without locking everyone else out from making changes to the table.
+It isn't possible inside a transaction to determine the current isolation level used in the transaction. If previously executed code has triggered a higher isolation level, counting on the entire table requires locks on the entire table. With record instance isolation level, for example, you could get an estimated record count without locking everyone else out from making changes to the table.
 
 ```al
 local procedure GetEstimatedCount(tableno: Integer) : Integer

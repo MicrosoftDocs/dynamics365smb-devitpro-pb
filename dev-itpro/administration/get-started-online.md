@@ -1,18 +1,15 @@
 ---
 title: Get started as a reseller of Business Central Online
 description: Learn about how to get started as a reselling partner of Dynamics 365 Business Central online, how to become a partner, and how to onboard customers.  
-author: edupont04
-
+author: jswymer
 ms.topic: conceptual
-ms.workload: na
-ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 06/03/2022
-ms.author: edupont
-ms.custom: intro-internal
+ms.author: jswymer
+ms.collection: get-started
 ---
 
-# Get Started as a Reseller of Business Central Online
+# Get started as a reseller of Business Central online
 
 If you want to build your business on [!INCLUDE [prod_long](../developer/includes/prod_long.md)] online, you must get set up as a reseller in the Microsoft Partner Center. In this article, we take you through the first steps in your journey.  
 
@@ -102,7 +99,7 @@ For more information, see [Administration of Business Central Online](tenant-adm
 
 [Administration of Business Central Online](tenant-administration.md)  
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)] on-premises](../deployment/Deployment.md)  
-[Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md)  
+[Trials and sign-ups for Business Central online](../deployment/customer-signup.md)  
 [Licensing in Dynamics 365 Business Central](../deployment/licensing.md)  
 [Learn how to partner with indirect providers in the Cloud Solution Provider program](/partner-center/indirect-reseller-tasks-in-partner-center)  
 [Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central)  

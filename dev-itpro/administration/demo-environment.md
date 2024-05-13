@@ -1,15 +1,15 @@
 ---
 title: Prepare demonstrations of Business Central
 description: Get an overview of your options for setting up demos of Dynamics 365 Business Central online that will help you turn your prospects into customers.
-author: edupont04
-ms.custom: na
-ms.reviewer: na
+author: jswymer
+ms.custom: bap-template
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.search.form: 2500, 2502, 20350
-ms.author: edupont
+ms.author: jswymer
 ms.date: 09/22/2022
 ---
-# Prepare Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
+# Prepare demonstration environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
 As a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] reselling partner, you might want to have an environment that you can show prospects as part of pre-sales demonstrations. Depending on your requirements, you have several different options that are described in this article.  
 
@@ -149,5 +149,5 @@ Starting in February 2022, partners can request dedicated licenses to set up add
 [Data and access when a trial or subscription ends](tenant-administration.md#expire)  
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/Deployment.md)  
 [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products)  
-
+[Performance in Business Central online](../performance/performance-online.md)   
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

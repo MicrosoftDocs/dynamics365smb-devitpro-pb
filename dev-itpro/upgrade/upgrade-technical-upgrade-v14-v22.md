@@ -1,11 +1,8 @@
 ---
 title: "Technical Upgrade From Version 14 to Version 22"
 description: Describes how to do a technical upgrade from Business Central 14 to 22
-ms.custom: na
-ms.date: 03/20/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -131,6 +128,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
     ```powershell
     Stop-NAVServerInstance -ServerInstance <BC14 server instance>
     ```
+8. [!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
 
 ## Task 5: Convert the application database to version 22
 

@@ -2,10 +2,7 @@
 title: "Compiler Warning (Future Error) AL0751"
 description: "Enum values can't be nested."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/05/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Enum values can't be nested. Use '{0}' instead.
+
 
 > [!IMPORTANT]
 > This warning will become an error with Business Central 2024 release wave 1.  

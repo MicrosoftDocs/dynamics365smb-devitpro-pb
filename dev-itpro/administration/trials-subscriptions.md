@@ -1,14 +1,13 @@
 ---
 title: Trials and Subscriptions
 description: Learn how it works with trials and subscriptions for Business Central online, and how the admin can cancel subscriptions.
-author: edupont04
+author: jswymer
 
 ms.topic: conceptual
-ms.workload: na
 ms.search.keywords: preview, trial, sandbox, subscription
 ms.search.form: 1803, 1801
 ms.date: 05/25/2022
-ms.author: edupont
+ms.author: jswymer
 
 ---
 # Business Central Trials and Subscriptions
@@ -71,7 +70,7 @@ If an organization decides to stop using [!INCLUDE [prod_short](../includes/prod
 > [!WARNING]
 > The subscription is deleted immediately and can not be reactivated.
 
-For more information, see [Suspend or cancel a subscription](/partner-center/create-a-new-subscription#suspend-or-cancel-a-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center content.  
+For partners cancelling a subscription on their customer's behalf, see [Suspend or cancel a subscription](/partner-center/create-a-new-subscription#suspend-or-cancel-a-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center content.
 
 ## <a name="expire"></a>Data and access when a trial or subscription ends
 

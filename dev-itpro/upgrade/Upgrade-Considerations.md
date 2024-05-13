@@ -2,10 +2,7 @@
 title: Upgrade Considerations
 description: This article provides tips and considerations to prepare a solution when you are planning to upgrade Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.custom: na
-ms.reviewer: edupont
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.date: 04/01/2021
 ms.author: jswymer

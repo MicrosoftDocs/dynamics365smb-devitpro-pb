@@ -2,13 +2,11 @@
 title: "Update 17.1 for Microsoft Dynamics 365 Business Central 2020 Release Wave 2"
 description: Get an overview of new and changed capabilities in the 17.1 update of Business Central online, which is part of 2020 release wave 2.
 ms.author: solsen
-ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/01/2024
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-author: EmmaNielsson
+author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ---
 
 # Update 17.1 for Microsoft Dynamics 365 Business Central online 2020 release wave 2
@@ -47,7 +45,7 @@ Business Central includes a cloud migration tool that administrators can use to 
 This helps customers reduce their costs of migrating to the Business Central cloud significantly, as they can skip upgrading their on-premises environments to the latest version of Business Central and just migrate the data, including all historical transactions. The Cloud Migration app now includes all the necessary data upgrade logic to convert the data from the previous versions to the data structure of 2020 release wave 2 (version 17.0). Learn more [here](../administration/migrate-business-central-on-premises.md).
 
 **Database size when migrating from Business Central on-prem to online**  
-We have increased the limit we apply to the database size from 30 Gb to 80 Gb when migrating from Business Central on-prem to Business Central online using the Cloud Migration tool. If you are looking at migrating a larger database, we recommend that you contact the support team and work with them to make sure that the migration is successful. Learn more [here](../administration/faq-migrate-data.md#are-there-any-limits-on-the-amount-or-type-of-data-that-will-migrate) and read about running the cloud migration tool [here](../administration/migrate-data.md).  
+We have increased the limit we apply to the database size from 30 Gb to 80 Gb when migrating from Business Central on-prem to Business Central online using the Cloud Migration tool. If you are looking at migrating a larger database, we recommend that you contact the support team and work with them to make sure that the migration is successful. Learn more [here](../administration/faq-migrate-data.md#are-there-any-limits-on-the-amount-or-type-of-data-that-can-be-migrated) and read about running the cloud migration tool [here](../administration/migrate-data.md).  
 
 **Watch what's new sessions on demand**  
 Watch the sessions from the Business Central Launch Event in October. Register and get access to 30+ sessions [here](https://aka.ms/MSDyn365BCLaunchEvent).

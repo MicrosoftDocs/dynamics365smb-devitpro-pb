@@ -1,13 +1,14 @@
 ---
 title: "Code Conversion from C/AL to AL"
 description: "Description of the conversion process from C/AL to AL."
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
 ---
 # Code Conversion from C/AL to AL
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 This article explains how to convert a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (version 14) C/AL code-customized on-premises solution to AL code.
 
@@ -303,7 +304,7 @@ In this task, you'll create an AL project in Visual Studio code that you'll use 
 
     You might also have to remove references to `SessionList` in ChangeGlobalDimensions.Codeunit.al.
     
-11. Build and compile your project (press Ctrl+Shift+B).
+11. Build and compile your project (select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>).
 
     The AL compiler will issue errors for constructs that aren't valid. Fix any errors that occur, and build again.
 
@@ -383,7 +384,7 @@ The AL compiler is more strict than the C/SIDE compiler and will issue errors fo
                 TempPlan.Reset;
                 TempPlan.DeleteAll;
         
-                // Loop through assigned Azure AD Plans
+                // Loop through assigned Microsoft Entra ID Plans
                 foreach AssignedPlan in GraphUser.AssignedPlans do begin
                   HaveAssignedPlans := true;
                   if AssignedPlan.CapabilityStatus = 'Enabled' then begin
@@ -393,7 +394,7 @@ The AL compiler is more strict than the C/SIDE compiler and will issue errors fo
                   end;
                 end;
         
-                // If there are no Azure AD Plans, loop through Azure AD Roles
+                // If there are no Microsoft Entra ID Plans, loop through Microsoft Entra roles
                 /* if not HaveAssignedPlans then
                   foreach DirectoryRole in Graph.GetUserRoles(GraphUser) do begin
                     Evaluate(IsSystemRole,Format(DirectoryRole.IsSystem));
@@ -543,7 +544,7 @@ When your converted solutions compile to an app, you can deploy and run it. You 
 
 - PowerShell cmdlets as described in [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md), or  
 
-- Publish from within Visual Studio Code by defining the server configuration in launch.json and publish with **Ctrl+F5**. 
+- Publish from within Visual Studio Code by defining the server configuration in launch.json and publish with <kbd>Ctrl</kbd>+<kbd>F5</kbd> . 
 
 ### Publishing to a Docker AL Preview image
 We recently released a Docker AL Preview image as part of the Insider program, containing the BaseApp published as an extension. You can use this to deploy your own modified AL application.
@@ -556,7 +557,7 @@ We recently released a Docker AL Preview image as part of the Insider program, c
 
     - Using the PowerShell cmdlets as described in [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md). 
 
-    - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with **Ctrl+F5**. 
+    - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with <kbd>Ctrl</kbd>+<kbd>F5</kbd> . 
 -->
 ## See Also
 [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md)  

@@ -1,11 +1,8 @@
 ---
 title: "Technical Upgrade From Version 19 to Version 22"
 description: Describes how to do a technical upgrade from Business Central V19 to V22
-ms.custom: na
-ms.date: 03/03/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -126,6 +123,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
     ```powershell
     Stop-NAVServerInstance -ServerInstance $OldBcServerInstance
     ```
+7. [!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
 
 ## Task 5: Convert application database to version 22
 

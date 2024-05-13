@@ -1,20 +1,16 @@
 ---
-title: "GetImageResource Method"
-description: "The GetImageResource method in control add-in for Business Central"
+title: GetImageResource method
+description: Learn about the GetImageResource method in control add-ins for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ---
 
-# GetImageResource Method
+# GetImageResource ethod
 
 Gets the URL for an image resource specified in the control add-in manifest. The image resource is stored in the database as part of the .zip file for the control add-in and is exposed to the control add-in script running on the Business Central client using the URL that this method returns. 
 
-For more information, see [Control Add-in Object](../devenv-control-addin-object.md). 
+For more information, see [Control add-in object](../devenv-control-addin-object.md). 
   
 ## Method signature  
 
@@ -42,9 +38,9 @@ var imageUrl = Microsoft.Dynamics.NAV.GetImageResource('PushpinImage.png');
 pushpin.SetCustomIcon("<div><img src='" + imageUrl +"'/></div>");   
 ```  
 
-## See Also
+## See also
 
-[AL Method Reference](../methods-auto/library.md)  
-[GetEnvironment Method](devenv-getenvironment-method.md)   
-[InvokeExtensibilityMethod Method](devenv-invokeextensibility-method.md)   
-[OpenWindow Method](devenv-openwindow-method.md)  
+[AL method reference](../methods-auto/library.md)  
+[GetEnvironment method](devenv-getenvironment-method.md)   
+[InvokeExtensibilityMethod method](devenv-invokeextensibility-method.md)   
+[OpenWindow method](devenv-openwindow-method.md)  

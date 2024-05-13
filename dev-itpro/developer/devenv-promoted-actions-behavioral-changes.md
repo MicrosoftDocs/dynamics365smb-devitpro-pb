@@ -1,11 +1,7 @@
 ---
 title: "Behavioral Changes for Promoted Actions"
 description: The promoted action framework has been redesigned with Dynamics 365 Business Central 2022 release wave 2. 
-ms.custom: na
 ms.date: 10/01/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 --- 

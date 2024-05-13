@@ -2,12 +2,13 @@
 title: Deploy the Web Server Components
 description: Understand the network architecture, users, security, deployment phases for installing and configuring the Business Central Web Server Components.
 ms.date: 10/11/2021
-ms.reviewer: na
 ms.topic: overview
 author: jswymer
 ms.custom: bap-template 
 ---
 # [!INCLUDE[webserver](../developer/includes/webserver.md)] Overview
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 Giving users access to data from the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], companion app, and Outlook add-in requires a Internet Information Services (IIS) website as part of your deployment. The website, which we refer to as [!INCLUDE[webserver](../developer/includes/webserver.md)] instance, hosts the files that provide content and services to client users over the Internet. This article highlights several factors to consider to help you set up [!INCLUDE[webserver](../developer/includes/webserver.md)] instances that suit your deployment requirements.
 
@@ -26,7 +27,7 @@ Each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance must con
 For information about the common deployment scenarios, see [Deployment Topologies](deployment-scenarios.md).  
 
 > [!IMPORTANT]
-> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support Azure Active Directory Application Proxy, because Application Proxy doesn't fully support web sockets.
+> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support Microsoft Entra application Proxy, because Application Proxy doesn't fully support web sockets.
 
 ##  Creating a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance  
 

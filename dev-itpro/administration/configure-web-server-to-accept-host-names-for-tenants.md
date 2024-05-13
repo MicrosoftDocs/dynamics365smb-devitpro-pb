@@ -1,17 +1,18 @@
 ---
 title: Web Client Configuration for Tenants
 description: To deploy the Dynamics NAV Web Client in a multitenant development architecture, URLs must specify the tenant ID to access a specific tenant.
-ms.custom: na
+ms.custom: bap-template
 ms.date: 10/27/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 ms.assetid: eb87ee8c-be21-4fed-a5f7-2229c4101c61
 caps.latest.revision: 6
 author: jswymer
 ---
 # Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] to Accept Host Names for Tenants
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 When you deploy the [!INCLUDE[webserver](../developer/includes/webserver.md)] in a multitenant deployment architecture, URLs that must access a specific tenant must specify the tenant ID. However, the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] can be also accessed from URLs that specify a host name. To use host names for tenants, you must enable the corresponding URL rewrite rule in the web.config configuration file for the [!INCLUDE[webserver](../developer/includes/webserver.md)].  
   
@@ -37,7 +38,7 @@ When you deploy the [!INCLUDE[webserver](../developer/includes/webserver.md)] in
   
 Host names for the [!INCLUDE[webserver](../developer/includes/webserver.md)] can now be used. If a tenant's mounted with a host name as an alternative ID, the [!INCLUDE[webserver](../developer/includes/webserver.md)] will accept a URL that contains this host name to identify the tenant.  
   
-If you create a non-tenant specific app for SharePoint that accesses the [!INCLUDE[webserver](../developer/includes/webserver.md)] by using Microsoft Azure Active Directory, the resulting URL includes a parameter that specifies a SharePoint host URL. This parameter represents the URL for opening the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] that you've specified in the app manifest. You must enable a URL rewrite rule to accept the URL.  
+If you create a non-tenant specific app for SharePoint that accesses the [!INCLUDE[webserver](../developer/includes/webserver.md)] by using Microsoft Microsoft Entra ID, the resulting URL includes a parameter that specifies a SharePoint host URL. This parameter represents the URL for opening the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] that you've specified in the app manifest. You must enable a URL rewrite rule to accept the URL.  
   
 ## See Also
 

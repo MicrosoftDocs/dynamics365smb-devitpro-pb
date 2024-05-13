@@ -16,6 +16,69 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
+## Error importing control add-in files from the client
+
+> Applies to: Upgrade to version 23.3
+
+### Problem
+
+When you try to import an a control add-in file client from the **Control Add-ins** page in the client by using the **Control Add-in Resource** > **Import**, you get the follwoing error:
+
+```
+Can't open file`
+
+[URL] can't open files in this folder because it cotains system files`
+```
+
+`[URL]` is the URL of your Business Central web client, for example, `http://localhost:8080`.
+
+### Workaround
+
+You have two options to work around this issue:
+
+- Use the Set-NAVAddin cmdlet of the Business Central Administration Shell as described in [Upgrade control add-ins](upgrading-cumulative-update-v23.md#controladdins). 
+- If you want to use the Business Central web client, then copy the files to another folder on your PC, like Documents or Downloads, and try again.
+
+## Removed table fields in the Czech (CZ) base application cause sync errors
+
+> Applies to: Upgrade to version 23
+
+### Problem
+
+As part of the delocalization process of the Czech (CZ) version of Business Central, Microsoft moved Czech-specific functionality into separate applications. As a result, the following fields have been removed and the primary keys modified in the Czech (CZ) base application, version 23:
+
+|Table|Field|
+|-|-|
+|1251 "Text-to-Account Mapping"|11700 "Text-to-Account Mapping (Code[10])|
+|1252 "Bank Pmt. Appl. Rule"|11700 "Bank Pmt. Appl. Rule Code" (Code[10])|
+
+These changes can lead to the following errors when you try to synchronize the base application with the tenant during upgrade:
+
+```ps
+Sync-NAVApp : Table 1251 Text-to-Account Mapping :: The field 'Text-to-Account Mapping Code' cannot be located. Removing fields is not allowed.
+Table 1251 Text-to-Account Mapping :: Changing fields for the key 'Key1' is not allowed. Previous list: 'Text-to-Account Mapping Code', 'Line No.', new List: 'Line No.'.
+Table 1252 Bank Pmt. Appl. Rule :: The field 'Bank Pmt. Appl. Rule Code' cannot be located. Removing fields is not allowed.
+Table 1252 Bank Pmt. Appl. Rule :: Changing fields for the key 'Key1' is not allowed. Previous list: 'Bank Pmt. Appl. Rule Code', 'Match Confidence', 'Priority', new List: 'Match Confidence', 'Priority'.
+```
+
+### Workaround
+
+If you're upgrading from version 22, use the [Sync-NavApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) to synchronize the base application in the ForceSync mode during upgrade, for example: 
+
+```ps
+SyncNavApp -ServiceInstance <BC 23 server instance> -Name "Base Application" -Version <23 version number> -Mode ForceSync
+```
+
+If you're upgrading from version 21 or earlier, the workaround is slightly different. First, ensure that no duplicate records will exist in either table 1251 "Text to Account Mapping" or table 1252 "Bank Payment Application Rule" after upgrade. <!--the Czech-specific fields have been removed and the primary key modified.--> To do this, complete one of the following tasks before you upgrade to version 23:
+
+- Manually delete any duplicate records in either of the tables, or
+- Upgrade to the latest [version 22 that's compatible](upgrade-v14-v15-compatibility.md) with the version 23 you're upgrading to. With version 22, the necessary data modifications to handle duplicate records are included as part of the upgrade procedures.
+
+Once you completed either of these tasks, upgrade to version 23 as usual. Don't forget to synchronize the base application using the ForceSync mode with the Sync-NavApp cmdlet.
+
+<!--[Learn more about this issue]()-->
+
+
 ## Web server components fatal error during installation on Azure virtual machine (VM)
 
 <!-- hhttps://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/445272/-->

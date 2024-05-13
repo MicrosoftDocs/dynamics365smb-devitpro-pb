@@ -1,22 +1,21 @@
 ---
-title: "Performance Article For Developers"
+title: Performance article for developers
 description: Provides information for developers to help improve performance in Business Central
-ms.custom: na
-ms.date: 06/09/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 10/11/2023
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: KennieNP
+ms.author: kepontop
 ---
 
-# Performance Articles For Developers
+# Performance articles for developers
 
 In this article, you can read about ways to tune performance when developing for [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 - [Writing efficient pages](performance-developer.md#writing-efficient-pages)  
 - [Writing efficient Web Services](performance-developer.md#writing-efficient-web-services)  
-- [Writing efficient reports](performance-developer.md#writing-efficient-reports)  
+- [Writing efficient reports](performance-developer.md#writing-efficient-al-reports)  
 - [AL performance patterns](performance-developer.md#al-performance-patterns)  
 - [Efficient Data access](performance-developer.md#efficient-data-access)  
 - [Testing and validating performance](performance-developer.md#testing-and-validating-performance)  
@@ -35,7 +34,7 @@ There are many patterns that a developer can use to get a page to load faster. C
 
 To avoid unnecessary recalculation of expensive results, consider caching the data and refresh the cache regularly. Let's say you want to show the top five open sales orders or a VIP customers list on the role center. The content of such a list probably doesn't change significantly every hour. There's no need to calculate that from raw data every time the page is loaded. Instead, create a table that can contain the calculated data and refresh every hour/day using a background job.
 
-Another example of unexpected recalculation is when using query objects. In contrast to using the record API, query results aren't cached in the primary key cache in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. Any use of a query object will always go to the database. So, sometimes it's faster to not use a query object. 
+Another example of unexpected recalculation is when using query objects. In contrast to using the record API, query results aren't cached in the primary key cache in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. Any use of a query object always goes to the database. So, sometimes it's faster to not use a query object. 
 
 ### Pattern - Do less
 
@@ -43,7 +42,7 @@ One way to speed up things is to reduce the amount of work that the system must 
 
 Remove calculated fields from lists if they aren't needed, especially on larger tables. Setting the field's Enabled or Visible properties to false isn't enough. The field definition needs to be removed from the page or page extension definition. Also, if indexing is inadequate, calculated fields can significantly slow down a list page.
 
-Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and fact boxes even if they aren't shown in the lookup. For example, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 1 added dedicated lookup pages for Customer, Vendor, and Item to the Base Application.
+Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages run all triggers and fact boxes even if they aren't shown in the lookup. For example, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 1 added dedicated lookup pages for Customer, Vendor, and Item to the Base Application.
  
 ### Pattern - Offloading the UI thread
 
@@ -59,79 +58,41 @@ The **Edit in Excel** feature uses UI pages exposed through OData, which means t
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  supports for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the client). 
 
-
-
 ### Endpoint performance
 
-#### Anti-patterns (don't do this)
-Avoid using standard UI pages to expose as web service endpoints. Many things, such as fact boxes, aren't returned in web service results, but will use resources to prepare.
+#### General anti-patterns (don't do this)
 
-Things that have historically caused performance issues on pages that are exposed as endpoints are:
-
-- Heavy logic in `OnAfterGetCurrRecord` or `OnAfterGetRecord`
-- Many SIFT fields
-- FactBoxes
-
-Avoid exposing calculated fields, because calculated fields are expensive. Try to move them to a separate page or to refactor the code so the value is stored on the physical table (if applicable). Complex types are also a performance hit because they take time to calculate. 
-
-Don't use temp tables as a source if you have many records. Temp tables that are based on APIs are a performance hit. The server has to fetch and insert every record, and there's no caching on data in temp tables. Paging becomes difficult to do in a performant manner. A rule of thumb is if you have more than 100 records, don't use temp tables.
-
-Don't insert child records belonging to same parent in parallel. This condition causes locks on parent and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
-
-Don't use a deprecated protocol such as SOAP. Instead, utilize newer technology stacks such as OData, or preferably API pages/queries. The latter are up to 10 times faster than using the SOAP protocol. One way to migrate from SOAP towards OData is to utilize OData unbound actions. For more information, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+[!INCLUDE[perf_ws_antipatterns](../includes/include-webservices-performance-anti-patterns.md)]
 
 #### Performance patterns (do this)
-- Instead of exposing UI pages as web service endpoints, use the API pages or API queries because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
-- If you do expose UI pages as web service endpoints as web service endpoints, note that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating factboxes, avoid calculation, and avoid defaulting logic.
+[!INCLUDE[perf_ws_patterns](../includes/include-webservices-performance-patterns.md)]
 
-- The choice of protocol (SOAP, OData, or APIs) for the endpoint can have a significant impact on performance. Favor OData version 4 or APIs for the best performance. It's possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+### API/OData client performance patterns
 
-- If you want OData endpoints that work as data readers (like for consumption in Power BI), consider using API queries and set `DataAccessIntent = ReadOnly`. For more information, see [API Query Type](../developer/devenv-api-querytype.md) and [DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md).
+[!INCLUDE[perf_ws_odata_patterns](../includes/include-webservices-odata-performance-patterns.md)]
 
-### OData Performance patterns
-When calling OData web services, there are many strategies that you can use to speed up your queries
-- Limiting the set ($filter or $top) if you're using an expensive $expand statement
-- Using OData transaction $batch
-- Using Data Access Intent Read-only with OData
+### How to handle large throughput of web service calls
 
-For more details about OData query performance, see [OData Query Performance](../webservices/odata-client-performance.md).
+[!INCLUDE[perf_ws_throughput](../includes/include-webservices-throughput-performance-patterns.md)]
 
-### How to handle large volumes of web service calls
-When integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from external systems using web services, it's important to understand the operational limits for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] servers that host the web service endpoints being called. To ensure that excessive traffic doesn't cause stability and performance issues for all users, the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints.
+## Performance patterns for business intelligence and reporting
 
-Make sure that your external application can handle the two HTTP status codes *429 (Too Many Requests)* and *504 (Gateway Timeout)*.
+### Writing efficient AL reports
 
-- Handling status code 429 requires the client to adopt a retry logic while providing a cool off period. You can apply different strategies, like:
+[!INCLUDE[report_performance](../includes/include-report-performance.md)]
 
-    - Regular interval retry
-    - Incremental intervals retry
-    - Exponential back-off
-    - Randomization
+For more information on how to use telemetry to analyze the performance of reports, see [Report performance](../developer/devenv-report-performance.md)
 
-- Handling status code 504 - Gateway Timeout requires the client to refactor the long running request to execute within time limit by splitting the request into multiple requests. Then, deal with potential 429 codes by applying a back off strategy.
+### Stop using report properties **DefaultLayout**, **ExcelLayout**, **RDLLayout**, and **WordLayout**
 
-A common pattern is to implement a queue in your external application so that you can flatten spikes of traffic. If a request gets the HTTP status code *429 (Too Many Requests)*, then put it back in the queue and apply one of the retry strategies described above.
+[!INCLUDE[single_layouts](../developer/includes/include-single-layout-obsolete.md)]
 
-Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-rate-limits.md).
+### Loading data efficiently to Power BI
 
-The same advice applies for outgoing web service calls using the AL module HttpClient. Make sure your AL code can handle slow response times, throttling, and failures in external services that you integrate with.
+[!INCLUDE[perf_ws_pbi_patterns](../includes/include-webservices-pbi-performance-patterns.md)]
 
-## Writing efficient reports
-
-Reports generally fall into two categories. They can be specific to a single instance of an entity, like an invoice. Or, they can be of a more analytical nature that joins data from multiple instances of multiple entities. Typically, performance issues in reports lie in the latter category. The following articles contain advice about implementing faster reports: 
-
-- Use Read Scale-Out to read data from a read-only copy of the database, see [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md) for more information.
-- Use Partial Records to reduce the data loaded from the database, see [Using Partial Records](../developer/devenv-partial-records.md) for more information.
-- Use AL queries to optimize the way data is read from the database, see [Queries in Business Central](../developer/devenv-query-overview.md) for more information.
-- Compared to Word layouts, RDL layouts can result in slower performance with document reports, especially for actions related to the user interface (like sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
-
-Read more about how to tune RDL reports here:
-- [RDLC Performance Optimization Tips](https://community.dynamics.com/business/b/navteam/posts/a-couple-of-rdlc-performance-optimization-tips)
-
-[!INCLUDE [send-report-excel](../developer/includes/send-report-excel.md)]
-
-## Efficient extracts to data lakes or data warehouses
+### Efficient extracts to data lakes or data warehouses
 
 When establishing a data lake or a data warehouse, you typically need to do two types of data extraction:
 
@@ -142,9 +103,11 @@ The fastest (and least disruptive) way to get a historical load from [!INCLUDE[p
 
 The fastest (and least disruptive) way to get delta loads from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to set up API queries configured with read-scaleout and use the data audit field **LastModifiedOn** (introduced in version 17.0) on filters.
 
+For more information, see [Extract data from Business Central](../developer/devenv-extract-data.md).
+
 ## AL performance patterns
 
-Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we'll describe the following patterns and their impact on performance.
+Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we describe the following patterns and their impact on performance.
 
 - [Use built-in data structures](#builtindatastructure)  
 - [Run async (and parallelize)](#runasync)  
@@ -162,36 +125,13 @@ Use a `List` data type if you need an unbound "array" (where you would previousl
 
 Use the `Media` or `Mediaset` data types instead of the `Blob` data type. The `Media` and `MediaSet` data types have a couple advantages over the `Blob` data type when working with images. First of all, a thumbnail version of the image is generated when you save the data. You can use the thumbnail when loading a page and then load the larger image asynchronously using a page background task. Second, data for `Media` and `MediaSet` data types is cached on the client. Data for the `Blob` data type is never cached on the server. It's always fetched from the database.
 
-
 ### <a name="runasync"></a>Pattern - Run async (and parallelize)
 
-It's often desirable to offload AL execution from the UI thread to a background session. 
+[!INCLUDE[async-overview](../includes/include-async-overview.md)]
 
-Here are some examples of this pattern:
+### <a name="setbasedmethods"></a>Pattern - Use set-based methods instead of looping
 
-- Don't let the user wait for batches 
-- Split large tasks into smaller tasks and run them in parallel
-
-There are many different ways to spin up a new task:
-
-- [Job Queue](/dynamics365/business-central/admin-job-queues-schedule-tasks)  
-- [TaskScheduler.CreateTask](../developer/methods-auto/taskscheduler/taskscheduler-data-type.md)  
-- [StartSession](../developer/methods-auto/session/session-startsession-integer-integer-string-table-method.md)  
-- [Page Background Task](../developer/devenv-page-background-tasks.md)  
-
-They come with different characteristics as described in this table:
-
-|Method to start a new task | Properties |
-|---------------------------|------------|
-| Page Background Task      | Can (will) be canceled <br> Read-only <br> Call back to parent session <br> Lightweight |
-| StartSession              | Created immediately <br> Runs on same server <br> Not as controlled as a Page Background Task |
-| Task                      | Queued up <br> Any server in a cluster can start it <br> Survives server restarts <br> No logging | 
-| Job queue                 | Scheduled <br> Recurrence <br> Any server in a cluster can start it <br> Survives server restarts <br> Logging of results |
-
-
-### <a name="setbasedmethods"></a>Pattern - Use set-based methods instead of looping 
-
-The AL methods such as `FindSet`, `CalcFields`, `CalcSums`, and `SetAutoCalcFields` are examples of set-based operations that are much faster than looping over a result set and do the calculation for each row.
+The AL methods such as `FindSet`, `CalcFields`, `CalcSums`, and `SetAutoCalcFields` are examples of set-based operations that are faster than looping over a result set and do the calculation for each row.
 
 - [CalcFields, CalcSums, and Count](../administration/optimize-sql-al-database-methods-and-performance-on-server.md#calc) 
 - [FindSet Method](../developer/methods-auto/recordref/recordref-findset-method.md)
@@ -204,13 +144,13 @@ Try to minimize work done in the `OnAfterGetRecord` trigger code. Common perform
 - Avoiding `CurrPage.Update()` calls.
 - Avoiding repeated calculations. Move them outside the loop, if possible. 
 - Avoid changing filters. This pattern requires the server to throw away the result set.
-- Never do any database writes here. With more than one user on the system, this will give database locking issues and even deadlock errors.
+- Never do any database writes here. With more than one user on the system, this gives database locking issues and even deadlock errors.
 
 Consider using a query object if you want to use a set-based coding paradigm. These pros and cons for using query objects:
 
 |Pros for using a query object|Cons for using a query object | 
 |-----------------------------|------------------------------|
-| - Will bypass the AL record API where server reads all fields. <br> - With a covering index, you can get fast read performance for tables with many fields. <br> - Can join multiple tables. | - Query object result sets aren't cached in the servers primary key (data) cache. <br> - No writes are allowed. <br> - You can't add a page on a query object. |
+| - Bypasses the AL record API where server reads all fields. <br> - With a covering index, you can get fast read performance for tables with many fields. <br> - Can join multiple tables. | - Query object result sets aren't cached in the servers primary key (data) cache. <br> - No writes are allowed. <br> - You can't add a page on a query object. |
 
 Read more about query objects here:
 
@@ -226,11 +166,17 @@ When writing AL code for which the fields needed on a record or recordref are kn
 
 Partial records improve performance in two major ways. First, they limit the fields that need to be loaded from the database. Loading more fields leads to more data being read, sent over the connection, and created on the record. Second, partial records limit the number of table extensions that need to be joined.
 
+> [!NOTE]  
+> With [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2023 release wave 2, the data model for table extensions has changed. In this new model, data from all table extensions on a table are stored in the same companion table. This means that there will be at most one SQL join involved when doing data operations on the table (as seen from AL). Partial records can still eliminate the join to the single companion table in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2023 release wave 2, if all loaded fields reside in the base table.
+
 The performance gains compound when looping over many records, because both effects scale with the number of rows loaded.
 
 For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
 
-### Table extension impact on performance
+### Table extension impact on performance (for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2023 release wave 1 and earlier)
+
+> [!NOTE]  
+> In version 23, the data model for table extensions was changed. In this new model, data from all table extensions on a table are stored in the same companion table. This means that there will be at most one SQL join involved when doing data operations on the table (as seen from AL).
 
 Table extensions are separate tables in the database and therefore need to be joined together in the data stack when accessed via a record. With tables extensions being stored individually, the amount of joins necessary grows with the number of table extensions extending a table. Together with the current inability to define indexes that span base and extension fields, one should avoid splitting one's code into too many table extensions.
 
@@ -247,6 +193,8 @@ Here are the pros and cons of the two data models:
 |Table extension | Fields can be added to lists and are searchable. <br> Always loaded with the base table. <br> Expensive at runtime but easy to use. <br> Use only for critical fields. |
 | Related tables | Need to set up table relations. <br> Dedicated page for editing. <br> Requires flow field to be shown in lists. <br> Doesn't affect performance of base table. <br> Excellent for FactBoxes. | 
 
+
+
 ### Limit your event subscriptions
 
 The following are best practices for getting performant events:
@@ -261,34 +209,12 @@ Table events change the behavior of SQL optimizations on the [!INCLUDE[server](.
 - The [!INCLUDE[server](../developer/includes/server.md)] will issue SQL update/delete statements row in a for loop rather than one SQL statement.
 - They impact `ModifyAll` and `DeleteAll` methods that normally do bulk SQL operations to be forced to do single row operations.
 
-
 ### Outgoing web service calls block AL execution
-If you call external web service using the HttpClient module in AL, be aware that the [!INCLUDE[server](../developer/includes/server.md)] blocks the execution of AL code for the session until the call completes. For interactive sessions, this behavior means that the user will see a spinning wheel for the duration of the call.  
+
+[!INCLUDE[httpclientPerformance](../includes/performance-outgoing-http.md)] 
 
 ### Limit work done in login event subscribers
-The events _OnCompanyOpen_ and _OnCompanyOpenCompleted_ are raised every time a session is created. Only when the code for all event subscribers on these events has completed can the session start running AL code. Until code has completed completed, the session creation process will wait. For interactive sessions, the user will see a spinner. Web service calls (SOAP, OData, or API) or background sessions (job queue, scheduled tasks, page background tasks) will not start running.
-
-This behavior means that you must design such code in a way that is minimally intrusive, for example, set low timeouts for outgoing web service calls. 
-
-If you have enabled telemetry for your environment or app, you can use this KQL query to analyze how session creation time is delayed by calls to external services. 
-
-```Kusto
-traces
-| where customDimensions.eventId == 'RT0019'
-| where isnotempty( customDimensions.alStackTrace ) // RT0019 only has stacktrace from 20.1
-| extend StackTrace = tostring( customDimensions.alStackTrace )
-, executionTimeInMs = toreal(totimespan(customDimensions.serverExecutionTime))/10000 //the datatype for executionTime is timespan
-| where StackTrace has 'OnCompanyOpen' or StackTrace has 'OnCompanyOpenCompleted'
-| summarize count() // how many calls
-, sum(executionTimeInMs) // sum of delays for session creations (all session types are affected: UI, web service, background, ...) 
-, avg(executionTimeInMs) // average session creation time delay by this app
-, max(executionTimeInMs) // average session creation time delay by this app
-by 
-// which app is calling out from OnCompanyOpen/OnCompanyOpenCompleted?
-  extensionId = tostring( customDimensions.extensionId )
-, extensionName = tostring( customDimensions.extensionName )
-, extensionVersion = tostring( customDimensions.extensionVersion )
-```
+[!INCLUDE[login_performance](../includes/include-telemetry-login-performance.md)])
 
 ## Efficient data access 
 
@@ -299,7 +225,8 @@ Many performance issues are related to how data is defined, accessed, and modifi
 Many performance issues can be traced back to missing indexes (also called keys in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]), but index design is often not a key skill for AL developers. For best performance, even with large amounts of data, it's imperative to design appropriate indexes according to the way your code will access data. 
 
 These articles on indexing are worth knowing as an AL developer:
-- [About Table Keys](../developer/devenv-table-keys.md) 
+
+- [About Table Keys](../developer/devenv-table-keys.md)
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
 - [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described)
 - [Missing Indexes](../administration/database-missing-indexes.md)
@@ -307,18 +234,22 @@ These articles on indexing are worth knowing as an AL developer:
 Indexes have a cost to update, so it's recommended to not add too many of them on a table. 
 
 ### Using data audit fields to only read recent data
+
 Every table in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]) includes the following two system fields, which can be used for filtering records:
+
 - `SystemCreatedAt`
 - `SystemModifiedAt`
 
 One example is to use the system field `SystemModifiedAt` to implement delta reads. For more information about system fields, see [System Fields](../developer/devenv-table-system-fields.md).  
 
 ### Non-clustered Columnstore Indexes (NCCI)
+
 Starting in the 2021 release wave 2 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], non-clustered columnstore indexes (sometimes referred to as NCCIs) are supported on tables. 
 
 You can use a non-clustered columnstore index to efficiently run real-time operational analytics on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database without the need to define SIFT indexes up front (and without the locking issues that SIFT indexes sometimes impose on the system.)
 
 Read more about non-clustered columnstore indexes here:
+
 - [ColumnStoreIndex table property](../developer/properties/devenv-columnstoreindex-property.md)
 - [Columnstore indexes overview](/sql/relational-databases/indexes/columnstore-indexes-overview)
 
@@ -365,11 +296,13 @@ Sometimes, performance issues aren't due to resource starvation, but due to proc
 Using the `Record.LockTable` method, this will apply the `WITH (updlock)` hint on all subsequent calls to the database until the transaction is committed, not only on the table that the record variable is defined on, but on all calls to the database. Hence, it's good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked. Read more here: [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
 
 Some tips for avoiding locking:
+
 -	Read setup information before starting write transactions
 -	If possible, limit the time you hold locks
 -	If possible, limit transaction size (divide into smaller operations that can be committed)
 -	Make sure you have indexes on ranges you update
 -	Locking is much less of an issue if you have a logical separation across companies
+-	Set record instance isolation level on transactions to isolate them from other transactions to prevent problems in concurrent situations. [Learn more about record instance isolation level](../developer/devenv-read-isolation.md).  
 
 #### Database locking caused by web service calls
 
@@ -402,7 +335,7 @@ Read more here:
 
 **Read Scale-Out** applies to queries, reports, or API pages. With these objects, instead of sharing the primary, they can be set up to run against a read-only replica. This setup   essentially isolates them from the main read-write workload so that they won't affect the performance of business processes.
 
-As a developer, you control **Read Scale-Out** on report, API page, and query objects by using the [DataAccessControl property](../developer/properties/devenv-dataaccessintent-property.md). For more information, see [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md).
+As a developer, you control **Read Scale-Out** on report, API page, and query objects by using the [DataAccessIntent property](../developer/properties/devenv-dataaccessintent-property.md). For more information, see [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md).
 
 ## Testing and validating performance 
 

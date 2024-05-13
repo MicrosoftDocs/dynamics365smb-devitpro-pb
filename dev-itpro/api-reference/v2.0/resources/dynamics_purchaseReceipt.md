@@ -3,10 +3,8 @@ title: purchaseReceipt resource type
 description: A purchase receipt object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -32,8 +30,6 @@ Represents a purchase receipt in [!INCLUDE[prod_short](../../../includes/prod_sh
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[vendor](dynamics_vendor.md)|vendor |Gets the vendor of the purchaseReceipt.|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the purchaseReceipt.|
 |[purchaseReceiptLines](dynamics_purchasereceiptline.md)|purchaseReceiptLines |Gets the purchasereceiptlines of the purchaseReceipt.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the purchaseReceipt.|
 
@@ -44,7 +40,7 @@ Represents a purchase receipt in [!INCLUDE[prod_short](../../../includes/prod_sh
 |id|GUID|The unique ID of the purchase receipt. Non-editable.|
 |number|string|Specifies the number of the purchase receipt.|
 |invoiceDate|date|The invoice date .|
-|postingDate|date|The date that the purchase receipt   is posted.|
+|postingDate|date|The date that the purchase receipt is posted.|
 |dueDate|date|The date the purchase receipt is due.|
 |vendorNumber|string|Specifies vendor's number.|
 |vendorName|string|Specifies vendor's name.|

@@ -2,10 +2,7 @@
 title: "Compiler Error AL0422"
 description: "Constant value {0} is not a valid value for APIVersion."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Constant value {0} is not a valid value for APIVersion. Valid values are 'beta' or of type 'vX.Y' where X and Y represent positive integers.
+
 
 ## Description
 The APIVersion property must have the values 'beta' or of type 'vX.Y', where X and Y represent positive integers.  

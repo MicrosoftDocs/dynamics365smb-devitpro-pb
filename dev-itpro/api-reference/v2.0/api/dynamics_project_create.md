@@ -3,9 +3,7 @@ title: CREATE projects
 description: Creates a project object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -47,7 +45,6 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/projects
 Content-type: application/json
 
 {
-    "id": "22d7a1c5-bde4-ea11-bbf2-00155df3a615",
     "number": "DEERFIELD, 8 WP",
     "displayName": "Setting up Eight Work Areas"
 }

@@ -2,10 +2,7 @@
 title: "OutStream Data Type"
 description: "Is a generic stream object that you can use to write to files and BLOBs."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -20,6 +17,7 @@ Is a generic stream object that you can use to write to files and BLOBs.
 
 
 
+## Instance methods
 The following methods are available on instances of the OutStream data type.
 
 |Method name|Description|

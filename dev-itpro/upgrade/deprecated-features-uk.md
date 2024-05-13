@@ -4,9 +4,7 @@ description: We are constantly streamlining and adjusting our app in-step with m
 author: bholtorf
 
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms. search.keywords: deprecated, United Kingdom, local functionality
 ms.date: 04/01/2021
 ms.author: bholtorf
@@ -36,7 +34,7 @@ To let you use more than one interest rate to calculate finance charges for a sp
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Moved| This functionality is also available to countries such as NO, SE, FI, and IT, so we have removed the country-specific designation so that it's available to everyone.|
+|Moved| This functionality is also available to countries such as NO, SE, FI, and IT, so we have removed the country/region-specific designation so that it's available to everyone.|
 -->
 
 <!-- THIS WORK DID NOT GET DONE. EXPECT IT TO COME IN A FUTURE UPDATE

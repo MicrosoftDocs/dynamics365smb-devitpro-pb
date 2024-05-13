@@ -2,10 +2,7 @@
 title: "FieldRef.Length() Method"
 description: "Gets the maximum size of the field (the size specified in the DataLength property of the field)."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -25,7 +22,6 @@ Length :=   FieldRef.Length()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *FieldRef*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  

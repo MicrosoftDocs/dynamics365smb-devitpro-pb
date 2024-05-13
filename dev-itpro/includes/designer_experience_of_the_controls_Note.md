@@ -1,0 +1,2 @@
+> [!NOTE]
+> Due to restrictions on design capabilities in the web client, it's currently not possible to customize or personalize the controls within the `grid` and `fixed` syntax. It applies to all design modes.

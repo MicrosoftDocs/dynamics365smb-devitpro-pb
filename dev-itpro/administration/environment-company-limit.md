@@ -4,11 +4,13 @@ description: Learn about limitations on environment operations when the environm
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-ms.service: dynamics365-business-central
+
 ms.date: 01/12/2023
 ms.custom: bap-template
 ---
 # Operational challenges with many companies per environment
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 The Premium/Essentials license subscription for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with one production environment and three sandbox environments free of charge.  These environments can be created and used in any countries/regions where [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is available. If you need more productions environments, you can purchase them via your Cloud Solution Provider (CSP) partner and each of them also comes with three additional sandbox environments.  
 
@@ -22,7 +24,7 @@ Each environment can be divided into multiple companies, where each company defi
 
 - As data per company continues to grow, the more companies you have per environment, the longer data upgrades and schema syncs will take when your environment is updated, making it more difficult to schedule and fit an upgrade in an overnight update window.
 
-- Configuring user access at the company level is more complex than doing it at the environment level, which can be done using the standard Azure Active Directory (Azure AD) features.
+- Configuring user access at the company level is more complex than doing it at the environment level, which can be done using the standard Microsoft Entra ID features.
 
 - To reproduce and debug some issues, you'll need to copy your production environment into your sandbox environment. Consequently, the more companies you have per environment, the longer this will take, which increases the time to mitigate those issues.
 

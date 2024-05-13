@@ -2,7 +2,6 @@
 title: Upgrading Customized C/AL Application to Microsoft Base Application for version 22
 description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 22.
 ms.topic: article
-ms.service: dynamics365-business-central
 author: jswymer
 ms.author: jswymer
 ms.date: 04/11/2023
@@ -346,6 +345,7 @@ You'll create two versions of this extension. The first version contains the tab
     ```powershell
     Stop-NAVServerInstance -ServerInstance <server instance name>
     ```
+9. [!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
 
 ## Task 7: Convert version 14 database
 

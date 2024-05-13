@@ -2,10 +2,7 @@
 title: "DataItemTableView Property"
 description: "Sets the key on which to sort, the sort order, and the filters for the data item."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -25,7 +22,7 @@ Sets the key on which to sort, the sort order, and the filters for the data item
 
 ## Examples
 
-In the following example, the **DataItemView** property is used to sort a table view based on the `"Entry No."` field.
+In the following example, the **DataItemTableView** property is used to sort a table view based on the `"Entry No."` field.
 
 ```AL
 DataItemTableView = SORTING ("Entry No.");

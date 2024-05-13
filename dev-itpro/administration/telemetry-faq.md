@@ -7,8 +7,8 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 04/16/2023
 ms.author: kepontop
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
-ms.custom: bac-template
+
+ms.custom: bap-template
 ---
 # Telemetry FAQ (Frequently Asked Questions)
 
@@ -39,6 +39,14 @@ See an overview at [Telemetry overview](telemetry-overview.md).
 ## How can I see which telemetry events are most common in my Application Insights?
 
 [!INCLUDE[telemetryEventDistribution](../includes/include-telemetry-event-distribution.md)]
+
+## Why do I see _1, _2 in custom dimensions?
+
+Each event has a `customDimensions` column that includes a set of dimensions containing metrics specific to the event. Each of these custom dimensions has a limit of 8000 characters. When logging an event with a dimension exceeding 8000 characters, the  [!INCLUDE[server](../developer/includes/server.md)] adds more overflow dimension keys to the event to contain the excess characters. There can be up to two extra overflow dimension keys, each with a maximum 8000 characters. The overflow dimension keys are named  `<dimension_key_name>_1` and `<dimension_key_name>_2`, where `<dimension_key>` is the name of the original dimension key. So if the custom dimension key is `extensionCompilationDependencyList`, then the overflow dimension keys would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
+
+> [!NOTE]
+> The 8000 character limit is governed by the [Application Insights API](/azure/azure-monitor/app/api-custom-events-metrics#limits).
+
 
 ## Should each customer/app have their own Application Insights resource, rather than one insight for multiple customers/apps?
 
@@ -72,7 +80,7 @@ The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service doesn't 
 
 Yes, telemetry also works for on-premises installations (private or public cloud). A few events aren't emitted with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. For an overview of events not emitted, see [Telemetry overview](telemetry-overview.md).
 
-For information about how to enable telemetry on-premises, see [Enable environment telemetry] (telemetry-enable-application-insights.md#enable-telemetry-on-environments).
+For information about how to enable telemetry on-premises, see [Enable environment telemetry](telemetry-enable-application-insights.md#enable-telemetry-on-environments).
 
 ## Will you backport the Application Insights instrumentation to versions prior to 15.0?
 

@@ -2,10 +2,7 @@
 title: "Debugger.Continue() Method"
 description: "Executes code until the next breakpoint or until execution ends."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -23,7 +20,6 @@ Executes code until the next breakpoint or until execution ends.
 ```AL
 [Ok := ]  Debugger.Continue()
 ```
-
 
 ## Return Value
 *[Optional] Ok*  

@@ -1,17 +1,15 @@
 ---
 title: Using Key Vault Secrets in Business Central Extensions 
 description: Describes how to use an Azure Key vault with Business Central extensions.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
 # Using Key Vault Secrets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 This article describes how to code an extension to retrieve secrets from Azure Key Vaults. Secrets are typically used when the extensions calls a web service. For an overview of app key vaults and secrets, see [Using App Key Vaults with Extensions](devenv-app-key-vault-overview.md).
 
@@ -105,19 +103,19 @@ For on-premises deployments, you can configure [!INCLUDE[server](../developer/in
 
 #### How it works
 
-Publisher validation is done by comparing the key vault's Azure AD tenant ID with the extension publisher's Azure AD tenant ID. It works this way:
+Publisher validation is done by comparing the key vault's Microsoft Entra tenant ID with the extension publisher's Microsoft Entra tenant ID. It works this way:
 
-1. When an extension is published by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp), the publisher can provide their Azure AD tenant ID by setting the `-PublisherAzureActiveDirectoryTenantId` parameter:
+1. When an extension is published by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp), the publisher can provide their Microsoft Entra tenant ID by setting the `-PublisherAzureActiveDirectoryTenantId` parameter:
 
     ```powershell
-    Publish-NavApp -ServerInstance <server instance> -Path <path to extension package> -PublisherAzureActiveDirectoryTenantId <Azure AD tenant ID GUID>
+    Publish-NavApp -ServerInstance <server instance> -Path <path to extension package> -PublisherAzureActiveDirectoryTenantId <Microsoft Entra tenant ID GUID>
     ```
     
     > [!NOTE]
     > An error won't occur if `-PublisherAzureActiveDirectoryTenantId` isn't set. There is nothing preventing you from publishing the extension at this point.
 
 2.  When the extension runs, it tries to initialize the **App Key Vault Secret Provider** codeunit.
-3. The system compares the key vault's Azure AD tenant ID with the Azure AD tenant ID published with the extension:
+3. The system compares the key vault's Microsoft Entra tenant ID with the Microsoft Entra tenant ID published with the extension:
 
     - If they match, initialization succeeds.
     - If they don't match, an error occurs.
@@ -172,3 +170,4 @@ You can set up extensions to emit telemetry to an Application Insights resource 
 [Get Started with AL](devenv-get-started.md)  
 [Publishing and Installing Extensions](devenv-how-publish-and-install-an-extension-v2.md)  
 [Configuring Business Central Server](../administration/configure-server-instance.md)  
+[App Key Vault Telemetry](../administration/telemetry-extension-key-vault-trace.md)  

@@ -1,10 +1,7 @@
 ---
 title: "Extending Price Calculations"
-ms.custom: na
+description: "How you extend the price calculations in Dynamics 365 Business Central."
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: bholtorf
 ---
@@ -147,7 +144,7 @@ Now we'll subscribe to the 'OnCopyFromSalesPrice' event to copy data from "Sales
 codeunit 50012 "Copy DocumentNo to Price List"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::CopyFromToPriceListLine, 'OnCopyFromSalesPrice', '', false, false)]
-    procedure CopyFromSalesPriceHandler(var SalesPrice: Record "Sales Price"; var PriceListLine: Record "Price List Line");
+    procedure CopyFromSalesPriceHandler(var SalesPrice: Record "Sales Price"; var PriceListLine: Record "Price List Line")
     begin
         PriceListLine."Document No." := SalesPrice."Document No.";
     end;
@@ -287,7 +284,7 @@ table 7005 "Price Source"
     var
         PriceSourceInterface: Interface "Price Source";
 
-    procedure LookupNo() Result: Boolean;
+    procedure LookupNo() Result: Boolean
     begin
         PriceSourceInterface := "Source Type";
         Result := PriceSourceInterface.IsLookupOK(Rec);
@@ -364,7 +361,6 @@ tableextension 50001 "Attach Price" extends "Sales Line"
         PriceCalculationMgt.GetHandler(SalesLinePrice, PriceCalculation);
     end;
 }
-
 ```
 
 The following page extension adds the Attach Line No. field to the Sales order page (subform). 
@@ -383,7 +379,6 @@ pageextension 50001 "Attach Price" extends "Sales Order Subform"
         }
     }
 }
-
 ```
 The following table extension adds the Attach to Item No. field to the "Price List line" table.
 ```AL
@@ -421,13 +416,13 @@ The calculation that links these three new fields is based on the following even
 codeunit 50004 "Attached Price Mgt."
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Price Calculation Buffer Mgt.", 'OnAfterSetFilters', '', false, false)]
-    procedure OnAfterSetFilters(var PriceListLine: Record "Price List Line"; AmountType: Enum "Price Amount Type"; var PriceCalculationBuffer: Record "Price Calculation Buffer"; ShowAll: Boolean);
+    procedure OnAfterSetFilters(var PriceListLine: Record "Price List Line"; AmountType: Enum "Price Amount Type"; var PriceCalculationBuffer: Record "Price Calculation Buffer"; ShowAll: Boolean)
     begin
         PriceListLine.SetRange("Attach To Item No.", PriceCalculationBuffer."Attach To Item No.");
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterFillBuffer', '', false, false)]
-    procedure OnAfterFillBuffer(var PriceCalculationBuffer: Record "Price Calculation Buffer"; SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line");
+    procedure OnAfterFillBuffer(var PriceCalculationBuffer: Record "Price Calculation Buffer"; SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line")
     begin
         PriceCalculationBuffer."Attach To Item No." := FindItemToAttachToInLine(SalesLine);
     end;
@@ -453,7 +448,7 @@ This example shows how to add a new type of asset so that it can be used in pric
 
 The product type that is set for the price list line is implemented by the **Price Asset Type** enum. Extend the enum with a new value, **Fixed Asset**.
 
-```
+```al
 enumextension 50000 "Fixed Asset Type" extends "Price Asset Type"
 {
     value(5600; "Fixed Asset")
@@ -527,7 +522,7 @@ codeunit 50002 "Price Asset - Fixed Asset" implements "Price Asset"
         exit(false)
     end;
 
-    procedure IsAssetNoRequired(): Boolean;
+    procedure IsAssetNoRequired(): Boolean
     begin
         exit(true)
     end;
@@ -536,7 +531,7 @@ codeunit 50002 "Price Asset - Fixed Asset" implements "Price Asset"
     begin
     end;
 
-    procedure FilterPriceLines(PriceAsset: Record "Price Asset"; var PriceListLine: Record "Price List Line") Result: Boolean;
+    procedure FilterPriceLines(PriceAsset: Record "Price Asset"; var PriceListLine: Record "Price List Line") Result: Boolean
     begin
         PriceListLine.SetRange("Asset Type", PriceAsset."Asset Type");
         PriceListLine.SetRange("Asset No.", PriceAsset."Asset No.");
@@ -567,11 +562,11 @@ Now lets include this new product type in price calculations.
 
 The following codeunit shows a sample implementation.
 
-```
+```al
 codeunit 50001 "Fixed Asset Price Calc."
 {
     [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnBeforeUpdateUnitPrice', '', false, false)]
-    local procedure OnBeforeUpdateUnitPrice(var SalesLine: Record "Sales Line"; xSalesLine: Record "Sales Line"; CalledByFieldNo: Integer; CurrFieldNo: Integer; var Handled: Boolean);
+    local procedure OnBeforeUpdateUnitPrice(var SalesLine: Record "Sales Line"; xSalesLine: Record "Sales Line"; CalledByFieldNo: Integer; CurrFieldNo: Integer; var Handled: Boolean)
     begin
         if SalesLine.Type = SalesLine.Type::"Fixed Asset" then begin
             UpdateUnitPriceByField(SalesLine, xSalesLine, CalledByFieldNo, CurrFieldNo);
@@ -580,7 +575,7 @@ codeunit 50001 "Fixed Asset Price Calc."
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterGetAssetType', '', false, false)]
-    local procedure OnAfterGetAssetType(SalesLine: Record "Sales Line"; var AssetType: Enum "Price Asset Type");
+    local procedure OnAfterGetAssetType(SalesLine: Record "Sales Line"; var AssetType: Enum "Price Asset Type")
     begin
         if SalesLine.Type = SalesLine.Type::"Fixed Asset" then
             AssetType := AssetType::"Fixed Asset";
@@ -620,7 +615,7 @@ The **Price Source Type** enum implements the **Applies-to Type** field in the h
 
 In this example, we will extend the Price Source Type enum to display the value in the sales price lists by also extending the Sales Price Source Type enum. For compatibility, the new value must have the same ID in both enums.
 
-```
+```al
 enumextension 50001 "Location Source Type" extends "Price Source Type"
 {
     value(50001; Location)
@@ -637,14 +632,13 @@ enumextension 50003 "Location Sales Source Type" extends "Sales Price Source Typ
         Caption = 'Location';
     }
 }
-
 ```
 
 The Price Source Type enum implements the Price Source and Price Source Group interfaces. We don't need special source group handling here, and can reuse the existing implementation codeunit **Price Source Group - Customer**. For the Price Source interface, we must add a new implementation codeunit **Price Source - Location**. For examples, see the existing implementations of the Price Source interface.
 
 The following example enables the new Applies-to Type on price lists.
 
-```
+```al
 codeunit 50003 "Price Source - Location" implements "Price Source"
 {
     var
@@ -674,7 +668,7 @@ codeunit 50003 "Price Source - Location" implements "Price Source"
         exit(true);
     end;
 
-    procedure IsSourceNoAllowed() Result: Boolean;
+    procedure IsSourceNoAllowed() Result: Boolean
     begin
         Result := true;
     end;
@@ -698,7 +692,7 @@ codeunit 50003 "Price Source - Location" implements "Price Source"
             Error(ParentErr);
     end;
 
-    procedure GetGroupNo(PriceSource: Record "Price Source"): Code[20];
+    procedure GetGroupNo(PriceSource: Record "Price Source"): Code[20]
     begin
         exit(PriceSource."Source No.");
     end;
@@ -708,7 +702,6 @@ codeunit 50003 "Price Source - Location" implements "Price Source"
         PriceSource.Description := Location.Name;
     end;
 }
-
 ```
 Now lets ensure that price calculations include the new applies-to type.
 
@@ -717,11 +710,11 @@ Now lets ensure that price calculations include the new applies-to type.
 
 The following example shows how.
 
-```
+```al
 codeunit 50004 "Location Source Price Calc."
 {
     [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnValidateLocationCodeOnAfterSetOutboundWhseHandlingTime', '', false, false)]
-    local procedure OnValidateLocationCodeOnAfterSetOutboundWhseHandlingTime(var SalesLine: Record "Sales Line");
+    local procedure OnValidateLocationCodeOnAfterSetOutboundWhseHandlingTime(var SalesLine: Record "Sales Line")
     begin
         UpdateUnitPriceByLocationCode(SalesLine);
     end;
@@ -750,7 +743,6 @@ codeunit 50004 "Location Source Price Calc."
         PriceSourceList.Add("Price Source Type"::Location, SalesLine."Location Code");
     end;
 }
-
 ```
 
 Now we can test the price calculation. In this example, we have an **East** location where we keep item 1896-S, and the item has prices for all customers.
@@ -766,7 +758,7 @@ This example adds a new price calculation method that changes the existing imple
 
 The **Price Calculation Method** implements the price calculation methods. The following examples show how to extend the enum with the new value.
 
-```
+```al
 enumextension 50005 "Hierarchical Price Method" extends "Price Calculation Method"
 {
     value(50005; Hierarchical)
@@ -774,7 +766,6 @@ enumextension 50005 "Hierarchical Price Method" extends "Price Calculation Metho
         Caption = 'Hierarchical';
     }
 }
-
 ```
 
 We'll add a new codeunit that does the following:
@@ -784,10 +775,9 @@ We'll add a new codeunit that does the following:
 
 The following example shows how.
 
-```
+```al
 codeunit 50005 "Hierarchical Price Calc."
 {
-
     local procedure SetHierarchicalSourceList(SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line"; var PriceSourceList: Codeunit "Price Source List")
     begin
         PriceSourceList.Init();
@@ -800,7 +790,7 @@ codeunit 50005 "Hierarchical Price Calc."
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Price Calculation Mgt.", 'OnFindSupportedSetup', '', false, false)]
-    local procedure OnFindSupportedSetup(var TempPriceCalculationSetup: Record "Price Calculation Setup");
+    local procedure OnFindSupportedSetup(var TempPriceCalculationSetup: Record "Price Calculation Setup")
     begin
         TempPriceCalculationSetup.Init();
         TempPriceCalculationSetup.Method := TempPriceCalculationSetup.Method::Hierarchical;
@@ -813,13 +803,12 @@ codeunit 50005 "Hierarchical Price Calc."
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterAddSources', '', false, false)]
-    local procedure OnAfterAddSources(SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line"; PriceType: Enum "Price Type"; var PriceSourceList: Codeunit "Price Source List");
+    local procedure OnAfterAddSources(SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line"; PriceType: Enum "Price Type"; var PriceSourceList: Codeunit "Price Source List")
     begin
         if SalesLine."Price Calculation Method" = "Price Calculation Method"::Hierarchical then
             SetHierarchicalSourceList(SalesHeader, SalesLine, PriceSourceList);
     end;
 }
-
 ```
 
 Now we can set up a price calculation method and see how it works in a sales order. Let's create a new price calculation method named **Hierarchical**  with one implementation for the sales type, as shown in the following images.
@@ -842,6 +831,6 @@ Now we'll create a sales order for customer 10000, and add a line for item 1900-
 
 ## See Also
 
-[Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module)  
-[Module Base Application](/dynamics365/business-central/application/reference/base%20application/)  
+[Module System Application](/dynamics365/business-central/application/system-application/module/system-application)    
+[Module Base Application](/dynamics365/business-central/application/base-application/module/base-application)    
 [Extending Application Areas](devenv-extending-application-areas.md)

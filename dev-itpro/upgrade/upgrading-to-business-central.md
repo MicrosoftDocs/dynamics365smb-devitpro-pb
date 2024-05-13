@@ -1,13 +1,11 @@
 ---
 title: "Upgrading to Microsoft Dynamics 365 Business Central"
-ms.custom: na
-ms.reviewer: edupont
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.date: 04/01/2021
+description: Learn how to upgrade to Dynamics 365 Business Central with this comprehensive guide. Covers online and on-premises deployment options.
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 

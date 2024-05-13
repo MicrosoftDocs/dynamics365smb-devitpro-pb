@@ -1,11 +1,8 @@
 ---
 title: "Technical Upgrade to Version 20"
 description: Describes how to do a technical upgrade from Business Central 17, V18, and V19 to V20
-ms.custom: na
-ms.date: 03/03/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer

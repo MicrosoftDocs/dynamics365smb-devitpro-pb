@@ -1,8 +1,8 @@
 ---
-author: edupont04
+author: jswymer
 ms.topic: include
 ms.date: 12/01/2021
-ms.author: edupont
+ms.author: jswymer
 ---
 > [!NOTE]
-> As of October 2021, Business Central 2020 Release Wave 1 is no longer being updated.
+> As of October 2021, Business Central 2020 Release Wave 1 no longer gets updates.

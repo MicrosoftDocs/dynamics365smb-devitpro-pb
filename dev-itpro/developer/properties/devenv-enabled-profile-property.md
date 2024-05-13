@@ -1,11 +1,7 @@
 ---
 title: "Enabled (Profile) Property"
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ms.author: solsen
 ---
@@ -52,4 +48,3 @@ profile MyProfile
 
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  
-[InDataSet Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute)

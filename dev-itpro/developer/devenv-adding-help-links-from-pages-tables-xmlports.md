@@ -1,17 +1,14 @@
 ---
-title: "Adding Help Links from Pages, Reports, and XMLports"
-description: "This article shows how to specify the Help link."
-author: edupont04
-ms.custom: na
+title: Adding help links from pages, reports, and XMLports
+description: This article shows how to specify the Help link on pages, reports and XMLports in AL for Business Central.
+author: SusanneWindfeldPedersen
 ms.date: 05/23/2022
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.author: edupont
+ms.author: solsen
 ---
 
-# Adding Help Links from Pages, Reports, and XMLports
+# Adding help links from pages, reports, and XMLports
 
 When creating new pages, you can specify which Help file to open if the user selects the *Learn more* links in the UI of [!INCLUDE[prod_short](includes/prod_short.md)].  
 

@@ -1,10 +1,6 @@
 ---
 title: "Preserving Data When Working with a Statically Generated Proxy"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 # Preserving Data When Working with a Statically Generated Proxy

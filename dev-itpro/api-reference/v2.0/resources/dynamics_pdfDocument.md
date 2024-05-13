@@ -3,10 +3,8 @@ title: pdfDocument resource type
 description: A pdf document object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/27/2023
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -36,6 +34,7 @@ Represents a pdf document in [!INCLUDE[prod_short](../../../includes/prod_short.
 |[salesQuote](dynamics_salesquote.md)|salesQuote |Gets the salesquote of the pdfDocument.|
 |[salesCreditMemo](dynamics_salescreditmemo.md)|salesCreditMemo |Gets the salescreditmemo of the pdfDocument.|
 |[purchaseInvoice](dynamics_purchaseinvoice.md)|purchaseInvoice |Gets the purchaseinvoice of the pdfDocument.|
+|[purchaseCreditMemo](dynamics_purchasecreditmemo.md)|purchaseCreditMemo |Gets the purchasecreditmemo of the pdfDocument.|
 
 ## Properties
 
@@ -43,7 +42,7 @@ Represents a pdf document in [!INCLUDE[prod_short](../../../includes/prod_short.
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the pdf document. Non-editable.|
 |parentId|GUID|The ID of the parent entity. |
-|parentType|NAV.attachmentEntityBufferDocumentType|The type of the parent document of the PDF document. It can be " ", "Journal", "Sales Order", "Sales Quote", "Sales Credit Memo", "Sales Invoice", "Purchase Invoice", "Purchase Order".|
+|parentType|NAV.attachmentEntityBufferDocumentType|The type of the parent document of the pdf document. It can be " ", "Journal", "Sales Order", "Sales Quote", "Sales Credit Memo", "Sales Invoice" or "Purchase Invoice".|
 |pdfDocumentContent|stream|The content of the PDF document.|
 
 ## JSON representation

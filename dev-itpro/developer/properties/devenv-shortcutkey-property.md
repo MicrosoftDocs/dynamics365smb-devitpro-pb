@@ -2,10 +2,7 @@
 title: "ShortcutKey Property"
 description: "Sets a shortcut key for selecting a menu item."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/15/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -21,6 +18,7 @@ Sets a shortcut key for selecting a menu item.
 ## Applies to
 -   Page Action
 -   Page Custom Action
+-   Page File Upload Action
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -3,9 +3,7 @@ title: opportunity resource type
 description: An opportunity object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 08/24/2021
 ms.author: solsen
 ---
@@ -29,13 +27,6 @@ Represents an opportunity in [!INCLUDE[prod_short](../../../includes/prod_short.
 |[DELETE opportunity](../api/dynamics_opportunity_delete.md)|none|Deletes a opportunity object.|
 |[POST opportunity](../api/dynamics_opportunity_create.md)|opportunity|Creates a opportunity object.|
 |[PATCH opportunity](../api/dynamics_opportunity_update.md)|opportunity|Updates a opportunity object.|
-
-
-## Navigation
-
-| Navigation |Return Type| Description |
-|:----------|:----------|:-----------------|
-|[contact](dynamics_contact.md)|contact |Gets the contact of the opportunity.|
 
 ## Properties
 

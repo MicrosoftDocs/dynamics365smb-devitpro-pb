@@ -3,9 +3,7 @@ title: Get scheduledJob
 description: Gets a scheduled job object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
 ---
@@ -13,6 +11,8 @@ ms.author: solsen
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Get scheduledJob
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 Retrieves the properties and relationships of a scheduled job object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
@@ -57,7 +57,7 @@ Here is an example of the response.
     "id" : "26066f96-8775-eb11-bb56-000d3a298ab3",
     "category" : "APIUSERJOB",
     "status" : "In Progress",
-    "description" : "Create new users from Azure AD API job",
+    "description" : "Create new users from Microsoft Entra API job",
     "errorMessage" : ""
 }
 ```

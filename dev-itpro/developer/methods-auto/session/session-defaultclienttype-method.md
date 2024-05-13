@@ -2,10 +2,7 @@
 title: "Session.DefaultClientType() Method"
 description: "Gets the default client that is configured for the server instance that is used by the current session."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -27,7 +24,6 @@ ClientType :=   Session.DefaultClientType()
 > This method can be invoked using property access syntax.
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
-
 
 ## Return Value
 *ClientType*  

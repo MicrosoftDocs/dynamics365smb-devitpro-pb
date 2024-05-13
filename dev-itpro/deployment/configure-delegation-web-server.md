@@ -1,11 +1,7 @@
 ---
 title: Configure Web Client Delegation
 description: The client device, Web Client and Server are on separate computers. Web Client performs actions on behalf of client device called impersonation process.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -97,7 +93,7 @@ As a best practice, you should configure kernel mode authentication to use the a
   
     2. In the **Open** box, type **cmd**, and then choose the **OK** button.  
   
-    3. At the command prompt, type **iisreset**, and then press Enter.  
+    3. At the command prompt, type **iisreset**, and then select <kbd>Enter</kbd>.  
   
     > [!TIP]  
     >  You can also restart IIS using Internet Information Services Manager, if you have it installed.  
@@ -106,7 +102,7 @@ As a best practice, you should configure kernel mode authentication to use the a
   
 1. Open Internet Information Services Manager.  
   
-    On the **Start** menu, in the **Search Programs and Files** box, type **inetmgr**, and then press Enter.  
+    On the **Start** menu, in the **Search Programs and Files** box, type **inetmgr**, and then select <kbd>Enter</kbd>.  
   
 2. In the **Connections** pane, expand **Sites**, and then select **[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Web client**.  
   
@@ -119,7 +115,7 @@ As a best practice, you should configure kernel mode authentication to use the a
 ## <a name="RegisterSPN"></a> Registering Service Principal Names for [!INCLUDE[server](../developer/includes/server.md)]
 
 > [!NOTE]
-> This section only applies to Business Central 2022 release wave 1 (version 20) and earlier. SPNs aren't support in later versions.
+> This section only applies to Business Central 2022 release wave 1 (version 20) and earlier. SPNs aren't supported in later versions.
 
 When [!INCLUDE[server](../developer/includes/server.md)] is using a dedicated domain user account as its logon account, then you must register service principal names \(SPN\) for the [!INCLUDE[server](../developer/includes/server.md)] on the domain user account to make delegation work. An SPN is the name by which a client uniquely identifies an instance of a service, using the account under which the service runs. To register SPNs, you used the setspn command-line tool that is available in Windows Server 2008 and Windows 7.  
   

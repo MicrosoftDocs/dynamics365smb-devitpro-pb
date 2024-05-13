@@ -2,10 +2,7 @@
 title: "Compiler Error AL0346"
 description: "The methods '{0}' can only be used on Columns that have a Date or DateTime type."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 03/11/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -18,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The methods '{0}' can only be used on Columns that have a Date or DateTime type.
+
 
 ## Description
 The **Method** property can only have the property values Day, Month and Year when used on Columns of the type Date or DateTime.  

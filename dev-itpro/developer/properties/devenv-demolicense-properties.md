@@ -1,11 +1,7 @@
 ---
 title: "Demonstration License for Business Central On-Premises"
 description: Learn about the properties of the demo license for on-premises deployments.
-ms.author: edupont
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.author: solsen
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.date: 03/23/2023

@@ -3,10 +3,6 @@ title: Security Auditing in Business Central
 description: Learn about the built-in capabilities in Business Central that let you track and audit usage of your Business Central.
 author: jswymer
 
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021

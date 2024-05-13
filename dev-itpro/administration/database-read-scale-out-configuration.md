@@ -1,11 +1,10 @@
 ---
 title: Configuring a Database for Read Scale-Out
 description: Get tips for how to make your on-premises database ready for read scale-out.
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---
@@ -26,7 +25,10 @@ For [!INCLUDE[prod_short.md](../developer/includes/prod_short.md)] on-premises, 
 3. Enable SQL read-only replica support on the [!INCLUDE[server.md](../developer/includes/server.md)] instance.
 
     [!INCLUDE[server.md](../developer/includes/server.md)] includes the **Enable SQL Read-Only Replica Support** (EnableSqlReadOnlyReplicaSupport) setting. This setting isn't enabled by default. For more information, see [Configuring Business Central Server](configure-server-instance.md#Database).
-    
+
+## Integrating directly on SQL Server objects
+[!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
+
 ## See also
 
 [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md)  

@@ -2,10 +2,7 @@
 title: "System.GetUrl(ClientType [, Text] [, ObjectType] [, Integer] [, Record] [, Boolean]) Method"
 description: "Generates a URL for the specified client target that is based on the configuration of the server instance."
 ms.author: solsen
-ms.custom: na
-ms.date: 04/13/2023
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -48,7 +45,7 @@ Specifies the Record variable that specifies which record to open.
 
 *[Optional] UseFilters*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies whether to include filters that are defined on the object as a text string in the URL. Note, UseFilters is supported only for ClientType Desktop, OData, Phone, Tablet, Web, Windows, Current, Default, ODataV4, and Teams. An empty string is returned otherwise.  
+Specifies whether to include filters that are defined on the object as a text string in the URL. Note, UseFilters is supported only for ClientType: Desktop, OData, Phone, Tablet, Web, Windows, Default, ODataV4, Teams and Current, when CurrenClientType is one of the ClientType mentioned. An empty string is returned otherwise.  
 
 
 ## Return Value

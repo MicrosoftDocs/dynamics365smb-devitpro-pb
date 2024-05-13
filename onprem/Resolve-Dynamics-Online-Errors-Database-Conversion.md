@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 6ea75b39-cf7d-4c88-868b-86fa0be2426b
 caps.latest.revision: 4
 author: jswymer
@@ -260,8 +259,8 @@ OBJECT Codeunit 827 DO Payment Card Validation
     END.
   }
 }
-
 ```
+
 ## Codeunit 829 DO Payment Trans. Log Mgt.
 ```
 OBJECT Codeunit 829 DO Payment Trans. Log Mgt.

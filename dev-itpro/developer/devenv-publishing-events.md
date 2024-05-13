@@ -1,11 +1,7 @@
 ---
 title: "Publishing Events"
 description: This article describes how to create an event publisher method to publish business and integration events.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -76,7 +72,7 @@ This example creates the codeunit **50100 MyPublishers** to publish an integrati
 codeunit 50100 MyPublishers
 {
     [IntegrationEvent(false, false)]
-    procedure OnAddressLineChanged(line : Text[100]);
+    procedure OnAddressLineChanged(line : Text[100])
     begin  
     end;
 }

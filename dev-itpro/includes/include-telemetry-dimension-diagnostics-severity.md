@@ -1,0 +1,1 @@
+Specifies the severity of diagnostics message emitted by the AL compiler, such as **Error** or **Warning**.

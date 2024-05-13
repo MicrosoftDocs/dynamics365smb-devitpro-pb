@@ -1,23 +1,23 @@
 ---
-title: Analyzing Retention Policy Trace Telemetry
+title: Analyzing retention policy trace telemetry
 description: Learn about the telemetry for retention policies in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 12/27/2023
 ms.author: jswymer
 ---
 
-# Analyzing Retention Policy Trace Telemetry
+# Analyzing retention policy trace telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2, update 17.1 and later
 
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Administrators define retention policies to specify how frequently they want [!INCLUDE[prod_short](../includes/prod_short.md)] to delete outdated data in tables that contain log entries and archived records. For example, cleaning up log entries makes it easier to work with the data that's relevant. Policies can include all data in the tables that is past the expiration date. Or you can add filter criteria to include only certain expired data in the policy.
 
-To gather this telemetry data, you'll have to set up retention policies on tables that contain log entries and archived records. For more information, see [Define Retention Policies](/dynamics365/business-central/admin-data-retention-policies) in the Application help.
+To gather this telemetry data, you have to set up retention policies on tables that contain log entries and archived records. For more information, see [Define Retention Policies](/dynamics365/business-central/admin-data-retention-policies) in the Application help.
 
 Telemetry is then logged for the following operations:
 
@@ -58,12 +58,12 @@ The following table explains other custom dimensions that are common to all rete
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
 |alDataClassification|**SystemMetadata**|
-|alObjectId|**3912**, which is the ID of the **Reten. Policy Telemetry Impl.** codeunit.|
+|alObjectId|**3912**, which is the ID of the **Reten. Policy Telemetry Imp.** codeunit.|
 |alObjectName|**Reten. Policy Telemetry Impl.**|
 |alObjectType|**Codeunit**|
 |extensionId|Specifies the ID of the system application: **63ca2fa4-4f03-4f2b-a480-172fef340d3f**.|

@@ -78,9 +78,9 @@ table 50120 TableWithRelation
     }
   }
 }
-
 ```
-The next code sample implements a table extension of the table defined above and an enum extension. The combined table relation is evaluated top-down. That means that the first unconditional relation will prevail, meaning that you cannot change an existing `TableRelation` from Customer to Item, since the original table relation is unconditional. 
+
+The next code sample implements a table extension of the table defined above and an enum extension. The combined table relation is evaluated top-down. That means that the first unconditional relation will prevail, meaning that you cannot change an existing `TableRelation` from Customer to Item, since the original table relation is unconditional.
 
 ```AL
 enumextension 50133 TypeEnumExt extends TypeEnum

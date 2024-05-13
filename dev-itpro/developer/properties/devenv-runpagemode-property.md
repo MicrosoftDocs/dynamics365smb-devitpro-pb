@@ -2,10 +2,7 @@
 title: "RunPageMode Property"
 description: "Sets the mode in which the page is run."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
+ms.date: 02/26/2024
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
