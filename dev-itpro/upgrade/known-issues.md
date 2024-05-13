@@ -40,11 +40,11 @@ In the installation log or Windows Event Viewer, you get an error message simila
 
 ## Possible cause
 
-There's already a version of PowerShell 7 on the [!INCLUDE[server](../developer/includes/server.md)] machine. Instead of skipping the installation of PowerShell 7 as it should, the setup.exe tries to install it and fails.
+Windows PowerShell 7.4.2 or later is already installed on the [!INCLUDE[server](../developer/includes/server.md)] machine. The Business Central setup.exe installs PowerShell 7.4.2, but it should only do so if the machine doesn't have PowerShell installed or if it does, the version is earlier than 7.4.2. In version 24.1, instead of skipping the PowerShell installation when it should, the setup.exe tries to install PowerShell but fails.
 
 ### Workaround
 
-Uninstall PowerShell 7.0 from the [!INCLUDE[server](../developer/includes/server.md)] machine, then run setup.exe again.
+Uninstall PowerShell 7 from the [!INCLUDE[server](../developer/includes/server.md)] machine, then run setup.exe again.
 
 [Learn how to uninstall an app or program in Windows.](https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98)
 
