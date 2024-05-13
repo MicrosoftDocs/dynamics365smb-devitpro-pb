@@ -18,7 +18,7 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 ## Installation fails because PowerShell 7 is already installed
 
-> Applies to: Install of or upgrade to version 24.0 or 24.1
+> Applies to: Installation of version 24.0 or 24.1
 
 ### Problem
 
