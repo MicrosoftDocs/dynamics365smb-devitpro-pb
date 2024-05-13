@@ -28,13 +28,13 @@ Environments are the instances of the application that have been set up for the 
 Returns a list of all the environments for the tenant. 
 
 ```
-GET /admin/v2.20/applications/environments
+GET /admin/v2.21/applications/environments
 ```
 
 Returns a list of the environments for the specified application family.
 
 ```
-GET /admin/v2.20/applications/{applicationFamily}/environments
+GET /admin/v2.21/applications/{applicationFamily}/environments
 ```
 
 ### Route Parameters
@@ -80,7 +80,7 @@ Returns a wrapped array of environments.
 Returns the properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.20/applications/{applicationFamily}/environments/{environmentName}
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -127,7 +127,7 @@ Creates a new environment with sample data.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.20/applications/{applicationFamily}/environments/{environmentName}
+PUT /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -252,14 +252,14 @@ Creates a new environment with a copy of another environment's data.
 
 ```
 Content-Type: application/json
-POST /admin/v2.20/applications/{applicationFamily}/environments/{sourceEnvironmentName}/copy
+POST /admin/v2.21/applications/{applicationFamily}/environments/{sourceEnvironmentName}/copy
 ```
 
 API v2.8 and earlier:
 
 ```
 Content-Type: application/json
-POST /admin/v2.20/applications/{applicationFamily}/environments/{sourceEnvironmentName}
+POST /admin/v2.21/applications/{applicationFamily}/environments/{sourceEnvironmentName}
 ```
 
 ### Route Parameters
@@ -386,7 +386,7 @@ Returns HTTP status code 201 (Created) with newly copied environment.
 Deletes the specified environment. This operation *soft deletes* the environment, which means it's retained for fourteen days during which time it can be recovered. For more information, about environment deletion and recovery, go to [Delete and recover environments](tenant-admin-center-environments-delete.md#about-deleting-and-recovering-environments). If the specified environment has the status `Creating Failed` or `Removing Failed`, the environment won't be retained and will be permanently deleted immediately (*hard delete*).
 
 ```
-DELETE /admin/v2.20/applications/{applicationFamily}/environments/{environmentName}
+DELETE /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -477,7 +477,7 @@ Returns empty HTTP status code 202 (Accepted).
 Recovers a soft-deleted environment. For more information, about environment deletion and recovery, go to [Delete and recover environments](tenant-admin-center-environments-delete.md#about-deleting-and-recovering-environments).
 
 ```
-POST /admin/v2.20/applications/{applicationFamily}/environments/{environmentName}/recover
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/recover
 ```
 
 ### Route Parameters
@@ -524,7 +524,7 @@ Schedules a rename operation on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.20/applications/{applicationFamily}/environments/{environmentName}/rename
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/rename
 ```
 
 ### Routing parameters
@@ -572,7 +572,7 @@ Schedules a restore operation an existing environment from a time in the past.
 
 ```
 Content-Type: application/json
-POST /admin/v2.20/applications/{applicationFamily}/environments/{environmentName}/restore
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/restore
 ```
 
 ### Routing parameters
@@ -654,12 +654,53 @@ GET applications/{applicationType}/environments/{environmentName}/availableResto
 } 
 ```
 
+## Link Power Platform environment
+
+**INTRODUCED IN:** API version 2.21
+
+Links the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to a Power Platform environment. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment must be linked to a Power Platform environment of the same type (i.e. Production or Sandbox) and in the same Azure Geo.
+
+```
+POST /admin/v2.21/bap/applications/{applicationType}/environments/{environmentName}/linkEnvironment?powerPlatformEnvironmentId={id} 
+```
+
+### Routing parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral").
+
+`environmentName` - Name of the environment to restore.
+
+`id` - ID of the Power Platform environment to link the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to.
+
+### Response
+200
+
+## Unlink Power Platform environment
+
+**INTRODUCED IN:** API version 2.21
+
+Unlinks the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from a linked Power Platform environment. 
+```
+POST /admin/v2.21/bap/applications/{applicationType}/environments/{environmentName}/unlinkEnvironment?powerPlatformEnvironmentId={id} 
+```
+
+### Routing parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral").
+
+`environmentName` - Name of the environment to restore.
+
+`id` - ID of the Power Platform environment to unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from.
+
+### Response
+200
+
 ## Get used storage of an environment by application family and name
 
 Returns used storage properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.20/applications/{applicationFamily}/environments/{environmentName}/usedstorage
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/usedstorage
 ```
 
 ### Route Parameters
@@ -693,7 +734,7 @@ Returns used storage information of a single environment if exists.
 Returns a list of used storage objects for all the environments.
 
 ```
-GET /admin/v2.20/environments/usedstorage
+GET /admin/v2.21/environments/usedstorage
 ```
 
 ### Response
@@ -716,7 +757,7 @@ Returns a wrapped array of used storage objects.
 Returns different types of quotas and their limits.
 
 ```
-GET /admin/v2.20/environments/quotas
+GET /admin/v2.21/environments/quotas
 ```
 
 ### Response
@@ -745,7 +786,7 @@ Returns quotas object.
 Gets the following operations that occurred on an environment.
 
 ```
-GET /admin/v2.20/applications/{applicationType}/environments/{environmentName}/operations 
+GET /admin/v2.21/applications/{applicationType}/environments/{environmentName}/operations 
 ```
 
 ### Operation types
@@ -857,7 +898,7 @@ Example `200 OK` response:
 Gets the operations that occurred on all environments.
 
 ```
-GET /admin/v2.20/applications/{applicationType}/environments/operations 
+GET /admin/v2.21/applications/{applicationType}/environments/operations 
 ```
 
 ### Operation types
