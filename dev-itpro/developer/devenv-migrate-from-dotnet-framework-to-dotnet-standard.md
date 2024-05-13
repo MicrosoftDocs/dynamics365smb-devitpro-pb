@@ -2,7 +2,7 @@
 title: Migrating from .NET Framework to .NET Standard
 description: Describes of the process of migrating DLLs used from AL from .NET Framework to .NET Standard.
 author: kennienp
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/18/2024
 ms.reviewer: solsen
 ms.topic: conceptual
@@ -18,20 +18,22 @@ Starting in 2022 release wave 2 (v21), the [!INCLUDE [server](includes/server.md
 When first released, .NET Framework had one runtime for building and running Windows desktop and Web applications. The .NET implementation has evolved over the years. Now, to supplement the .NET Framework, we also have:
 
 - .NET Core  
-The latest .NET implementation, open source and available for multiple operating systems. With .NET Core, you can build cross-platform console apps and ASP.NET Core Web applications and cloud services.
+
+   The latest .NET implementation, open source and available for multiple operating systems. With .NET Core, you can build cross-platform console apps and ASP.NET Core Web applications and cloud services.
 - .NET Standard  
-The set of fundamental APIs, sometimes referred to as the .NET Base Class Library (BCL) that all .NET implementations must implement. By targeting .NET Standard, you can build libraries that you can share across all your .NET apps, no matter on which .NET implementation or operating system they run.
+
+   The set of fundamental APIs, sometimes referred to as the .NET Base Class Library (BCL) that all .NET implementations must implement. By targeting .NET Standard, you can build libraries that you can share across all your .NET apps, no matter on which .NET implementation or operating system they run.
 
 The various .NET implementations target specific versions of .NET Standard.
 
 ## What are the changes to Business Central server?
 
-- In v21, [!INCLUDE [server](includes/server.md)] now lets you install and run .NET add-ins that are compiled to target the .NET Standard runtime. The [!INCLUDE [server](includes/server.md)] executable itself is still compiled for the .NET Framework 4.8 runtime as in earlier versions.
-- In v22, the difference is that the [!INCLUDE [server](includes/server.md)] executable is complied for the .NET 6.0 runtime.
+- In v21, [!INCLUDE [server](includes/server.md)] lets you install and run .NET add-ins that are compiled to target the .NET Standard runtime. The [!INCLUDE [server](includes/server.md)] executable itself is still compiled for the .NET Framework 4.8 runtime as in earlier versions.
+- In v22, [!INCLUDE [server](includes/server.md)] executable is compiled for the .NET 6.0 runtime.
 
 ## What does this mean for your .NET add-ins?
 
-In v21, you don't have any problems compiling, installing, or using .NET add-ins built on the old .NET Framework, related to this change. The reason is because of the .NET compatibility mode. It isn't necessary to recompile your .NET to target another .NET runtime right now. For more information about compatibility mode, go to [.NET Framework compatibility mode](/dotnet/core/porting/third-party-deps#net-framework-compatibility-mode).
+In v21, you won't have any problems compiling, installing, or using .NET add-ins built on the old .NET Framework, related to this change. The reason is because of the .NET compatibility mode. It isn't necessary to recompile your .NET to target another .NET runtime right now. For more information about compatibility mode, go to [.NET Framework compatibility mode](/dotnet/core/porting/third-party-deps#net-framework-compatibility-mode).
 
 In v22, you'll still be able to use .NET add-ins built on the old .NET Framework. But problems arise if you have a .NET add-in that calls another API that's not compatible with the add-in's target runtime. When the add-in calls the incompatible API, an exception occurs.
 
