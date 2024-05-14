@@ -2,8 +2,7 @@
 title: "OnPageBackgroundTaskError (Page) Trigger"
 description: "Runs when an error occurs in a page background task."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
