@@ -1,10 +1,6 @@
 ---
 title: "How to: Integrate Report Dataset Designer and Visual Studio Report Designer"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a289ca6c-d65c-45a9-9e0c-5af791cf001d
 caps.latest.revision: 31

@@ -1,10 +1,6 @@
 ---
 title: "How to: View and Export the Dataset for a Report"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 88eb2f13-580e-4be7-8094-fead853f99c5
 caps.latest.revision: 14

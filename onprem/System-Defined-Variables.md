@@ -1,10 +1,6 @@
 ---
 title: "System-Defined Variables"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d3797441-20f0-4463-aa6e-45d61fef1f89
 caps.latest.revision: 17

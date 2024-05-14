@@ -1,10 +1,6 @@
 ---
 title: "How to: View Variables That Are in Scope"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aa04712b-9bc0-41f0-917e-8e8de5001c62
 caps.latest.revision: 5

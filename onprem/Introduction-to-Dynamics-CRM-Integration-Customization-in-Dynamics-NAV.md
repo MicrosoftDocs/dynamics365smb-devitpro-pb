@@ -1,10 +1,6 @@
 ---
 title: "Introduction to Dynamics 365 for Sales Integration Customization in Dynamics NAV"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 87918c6d-eb00-48bf-aaa8-b995ba718b5e
 caps.latest.revision: 4

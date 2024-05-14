@@ -1,11 +1,7 @@
 ---
 title: Create Labels for Report
 description: Add labels to the dataset by using Report Dataset Designer in development environment using RDLC report layout in Visual Studio or Word report layout. 
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: fa9bc4b3-14f1-4ba3-95fd-d9d309d39186
 caps.latest.revision: 17

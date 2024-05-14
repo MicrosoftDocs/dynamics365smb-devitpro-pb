@@ -1,10 +1,6 @@
 ---
 title: "C/AL BREAK Statement"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 625e29a8-963e-4ef1-971d-c96cf19e1ccb
 caps.latest.revision: 8

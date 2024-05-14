@@ -1,10 +1,6 @@
 ---
 title: "Language Modules"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ee2cc124-6d85-4e2a-bee0-8c084c9f81dc
 caps.latest.revision: 12

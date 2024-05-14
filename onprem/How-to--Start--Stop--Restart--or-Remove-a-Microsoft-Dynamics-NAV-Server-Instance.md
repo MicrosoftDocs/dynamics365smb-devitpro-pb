@@ -1,10 +1,6 @@
 ---
 title: "How to: Start, Stop, Restart, or Remove a Microsoft Dynamics NAV Server Instance"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1e330b20-3806-4877-a1a6-f39acead3fa0
 caps.latest.revision: 4

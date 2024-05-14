@@ -1,10 +1,6 @@
 ---
 title: "Extending Microsoft Dynamics NAV Using COM"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b28a3cb1-b8be-4cf7-b6a8-c69afd8ad45b
 caps.latest.revision: 9

@@ -1,11 +1,7 @@
 ---
 title: Create New Pages per Record
 description: Print a new page for each new record by creating a report dataset that includes the data items and columns that you want in the report.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8cbf1aed-c255-4ac4-bdd1-b4bc5fe7aa95
 caps.latest.revision: 22

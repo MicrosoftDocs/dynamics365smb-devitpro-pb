@@ -1,10 +1,7 @@
 ---
 title: "BlankNumbers Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cd877cdb-059d-4f88-a071-cbb1b99b4eb0
 caps.latest.revision: 8

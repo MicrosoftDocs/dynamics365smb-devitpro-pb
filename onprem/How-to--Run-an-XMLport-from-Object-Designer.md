@@ -1,10 +1,6 @@
 ---
 title: "How to: Run an XMLport from Object Designer"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d1ae3fd3-daa9-43c2-bc26-1aa6c33e6386
 caps.latest.revision: 11

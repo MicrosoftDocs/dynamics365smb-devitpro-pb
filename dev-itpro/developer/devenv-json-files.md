@@ -2,7 +2,7 @@
 title: JSON files
 description: Description of the settings of the app JSON and other JSON files for AL in Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 03/01/2024
+ms.date: 05/13/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -63,6 +63,7 @@ The following table describes the settings in the `app.json` file. To see an exa
 |resourceExposurePolicy|No|Defines the accessibility of the resources and source code during different operations. The `resourceExposurePolicy` property contains four options for defining access: `applyToDevExtension`, `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile`. All defaults are false. The syntax is `"resourceExposurePolicy": {"applyToDevExtension": true, "allowDebugging": true, "allowDownloadingSource": true, "includeSourceInSymbolFile": true}`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).|
 |source|No|Specifies the properties for source control. The options are: <br> `repositoryUrl`, which is the URL of the repository where the source code of the project can be found.<br> `commit`, which is an ID of the source code for the current version of the project, that allows getting back to the commit that triggered building the extension.<br>The `source` setting can dynamically be set as part of build pipelines via command line parameters for the used alc.exe compiler executable. The values passed here overwrites any values in the app.json source file.|
 |build|No|Specifies the properties for building the package. The options are:<br> `by`, which is useful for tracking the build agent/system that orchestrated the build, for example AL-Go for GitHub. <br> `url`, which can be used for the URL to the build system invocation where the build can be found.<br>The `build` setting can dynamically be set as part of build pipelines via command line parameters for the used alc.exe compiler executable. The values passed here overwrites any values in the app.json source file.|
+|alternateIds|No|The IDs of the applications, which will be replaced by this application. This property should be used by apps that replace the base application. Specified as a list of one or more IDs.|
 
 ## See Also
 
