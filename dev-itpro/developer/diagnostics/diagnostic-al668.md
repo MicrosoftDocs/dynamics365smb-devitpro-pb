@@ -2,8 +2,7 @@
 title: "Compiler Error AL0668"
 description: "This feature is not available on cross-platform builds of the AL compiler."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

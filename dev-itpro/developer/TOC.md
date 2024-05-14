@@ -564,6 +564,8 @@
 #### [AL0841](diagnostics/diagnostic-al841.md)
 #### [AL0843](diagnostics/diagnostic-al843.md)
 #### [AL0844](diagnostics/diagnostic-al844.md)
+#### [AL0846](diagnostics/diagnostic-al846.md)
+#### [AL0847](diagnostics/diagnostic-al847.md)
 #### [AL0999](diagnostics/diagnostic-al999.md)
 #### [AL1001](diagnostics/diagnostic-al1001.md)
 #### [AL1002](diagnostics/diagnostic-al1002.md)
@@ -693,6 +695,7 @@
 #### [AL0835](diagnostics/diagnostic-al835.md)
 #### [AL0836](diagnostics/diagnostic-al836.md)
 #### [AL0842](diagnostics/diagnostic-al842.md)
+#### [AL0848](diagnostics/diagnostic-al848.md)
 #### [AL1000](diagnostics/diagnostic-al1000.md)
 #### [AL1003](diagnostics/diagnostic-al1003.md)
 #### [AL1004](diagnostics/diagnostic-al1004.md)
@@ -707,6 +710,7 @@
 #### [AL1058](diagnostics/diagnostic-al1058.md)
 #### [AL1059](diagnostics/diagnostic-al1059.md)
 #### [AL1072](diagnostics/diagnostic-al1072.md)
+#### [AL1156](diagnostics/diagnostic-al1156.md)
 ### Warning (Future Error) messages
 #### [AL0269](diagnostics/diagnostic-al269.md)
 #### [AL0273](diagnostics/diagnostic-al273.md)
@@ -793,6 +797,7 @@
 #### [AL0826](diagnostics/diagnostic-al826.md)
 #### [AL0830](diagnostics/diagnostic-al830.md)
 #### [AL0837](diagnostics/diagnostic-al837.md)
+#### [AL0845](diagnostics/diagnostic-al845.md)
 #### [AL1078](diagnostics/diagnostic-al1078.md)
 ### Hidden messages
 #### [AL0605](diagnostics/diagnostic-al605.md)

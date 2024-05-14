@@ -2,8 +2,7 @@
 title: "Compiler Error AL0746"
 description: "The auto-increment field '{0}' has already been defined for table '{1}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

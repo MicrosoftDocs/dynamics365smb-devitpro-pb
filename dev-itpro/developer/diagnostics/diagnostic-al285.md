@@ -2,8 +2,7 @@
 title: "Compiler Error AL0285"
 description: "The event '{0}' must not have a parameter name 'sender' when it specifies to include sender."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

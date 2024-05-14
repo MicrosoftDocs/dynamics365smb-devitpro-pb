@@ -2,8 +2,7 @@
 title: "Compiler Error AL0108"
 description: "Indexers must have at least one value."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

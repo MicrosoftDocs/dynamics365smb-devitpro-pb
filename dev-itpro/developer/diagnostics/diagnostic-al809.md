@@ -2,8 +2,7 @@
 title: "Compiler Error AL0809"
 description: "The variable '{0}' is not allowed to be of type 'SecretText' because it is declared as protected."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
