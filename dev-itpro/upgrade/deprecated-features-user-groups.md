@@ -4,7 +4,7 @@ description: This article describes why we've deprecated user groups, and provid
 author: brentholtorf
 ms.author: bholtorf
 ms.date: 08/24/2023
-ms.reviewer: ihhandzi
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.custom: bap-template
 ---
