@@ -36,13 +36,16 @@ Every event emitted to Purview auditing solutions uses the [common schema](~/off
 
 |Event name|Description|
 |---|---|
-|Environment Administration|Operations that create, update, or delete environments|
-|Extension Administration|Operations that create, update, or delete extensions|
-|User Administration|Operations that create, update, or delete users|
-|Company Administration|Operations that create, update, or delete companies|
-|Integration Administration|Operations that create, update, or delete integrations|
-|Copilot Administration|Operations that create, update, or delete Copilot|
-|Cloud Migration Administration|Operations that create, update, or delete cloud migration|
-|Report Administration|Operations that create, update, or delete reports|
+|Administered environment|Operations that create, update, or delete environments|
+|Configured extension|Operations that create, update, or delete extensions|
+|Administered user|Operations that create, update, or delete users|
+|Administered company|Operations that create, update, or delete companies|
+|Configured integration|Operations that create, update, or delete integrations|
+|Configured Copilot|Operations that create, update, or delete Copilot|
+|Configured cloud migration|Operations that create, update, or delete cloud migration|
+|Administered report|Operations that create, update, or delete reports|
 
 ### Environment Administration Operations
+|Operation name|Custom dimensions|
+|---|---|
+|Created environment|`{"aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","environmentName":"vak05032","ApplicationVersion":null,"CountryCode":"US","EnvironmentType":"Production","RingName":"PROD"}`
