@@ -662,14 +662,14 @@ Links the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environmen
 > This API endpoint is not supported for service-to-service authentication using Microsoft Entra apps.
 
 ```
-POST /admin/v2.21/bap/applications/{applicationType}/environments/{environmentName}/linkEnvironment?powerPlatformEnvironmentId={id} 
+POST /admin/v2.21/bap/applications/{applicationFamily}/environments/{environmentName}/linkEnvironment?powerPlatformEnvironmentId={id} 
 ```
 
 ### Routing parameters
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral").
 
-`environmentName` - Name of the environment to restore.
+`environmentName` - Name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to link.
 
 `id` - ID of the Power Platform environment to link the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to.
 
@@ -690,14 +690,14 @@ Unlinks the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environm
 > This API endpoint is not supported for service-to-service authentication using Microsoft Entra apps.
 
 ```
-POST /admin/v2.21/bap/applications/{applicationType}/environments/{environmentName}/unlinkEnvironment?powerPlatformEnvironmentId={id} 
+POST /admin/v2.21/bap/applications/{applicationFamily}/environments/{environmentName}/unlinkEnvironment?powerPlatformEnvironmentId={id} 
 ```
 
 ### Routing parameters
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral").
 
-`environmentName` - Name of the environment to restore.
+`environmentName` - Name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to unlink.
 
 `id` - ID of the Power Platform environment to unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from.
 
