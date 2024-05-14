@@ -2,9 +2,7 @@
 title: "AdditionalSearchTermsML Property"
 description: Describes the AdditionalSearchTermsML Property that specifies search terms for the page or report in different languages.
 author: jswymer
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.topic: article
 ms.author: jswymer
 ---

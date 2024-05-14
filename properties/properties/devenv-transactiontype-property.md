@@ -1,10 +1,8 @@
 ---
 title: "TransactionType Property"
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 06f309da-8c03-48e7-ae27-4107092d14e7
 caps.latest.revision: 18

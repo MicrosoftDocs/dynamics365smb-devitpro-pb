@@ -1,10 +1,8 @@
 ---
 title: "ShowMandatory Property"
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1efce3ed-69c2-4655-b499-8e30b4d35ea9
 caps.latest.revision: 11
