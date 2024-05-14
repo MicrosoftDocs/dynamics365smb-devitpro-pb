@@ -11,8 +11,6 @@ ms.date: 02/24/2023
 
 # Environments
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 Environments are the instances of the application that have been set up for the tenant. An instance can be of either a production type or a sandbox type. The environment APIs can be used to:
 
 - Get information about the environments currently set up for the tenant
@@ -660,6 +658,9 @@ GET applications/{applicationType}/environments/{environmentName}/availableResto
 
 Links the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to a Power Platform environment. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment must be linked to a Power Platform environment of the same type (i.e. Production or Sandbox) and in the same Azure Geo.
 
+> [!NOTE]  
+> This API endpoint is not supported for service-to-service authentication using Microsoft Entra apps.
+
 ```
 POST /admin/v2.21/bap/applications/{applicationType}/environments/{environmentName}/linkEnvironment?powerPlatformEnvironmentId={id} 
 ```
@@ -673,7 +674,7 @@ POST /admin/v2.21/bap/applications/{applicationType}/environments/{environmentNa
 `id` - ID of the Power Platform environment to link the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to.
 
 ### Response
-200
+200 OK.
 
 ### Expected Error Codes
 `BadArgument` - Occurs when the environments can not be linked, for example when either environment is in an inactive state or already linked to another environment, when the environment type or Azure Geo do not match, or when the environment does not exist.
@@ -684,6 +685,10 @@ POST /admin/v2.21/bap/applications/{applicationType}/environments/{environmentNa
 **INTRODUCED IN:** API version 2.21
 
 Unlinks the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from a linked Power Platform environment. 
+
+> [!NOTE]  
+> This API endpoint is not supported for service-to-service authentication using Microsoft Entra apps.
+
 ```
 POST /admin/v2.21/bap/applications/{applicationType}/environments/{environmentName}/unlinkEnvironment?powerPlatformEnvironmentId={id} 
 ```
@@ -697,7 +702,7 @@ POST /admin/v2.21/bap/applications/{applicationType}/environments/{environmentNa
 `id` - ID of the Power Platform environment to unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from.
 
 ### Response
-200
+200 OK.
 
 ### Response
 `BadArgument` - Occurs when the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is not linked to a Power Platform environment.
