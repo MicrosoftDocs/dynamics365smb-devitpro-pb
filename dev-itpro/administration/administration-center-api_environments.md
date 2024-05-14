@@ -675,6 +675,10 @@ POST /admin/v2.21/bap/applications/{applicationType}/environments/{environmentNa
 ### Response
 200
 
+### Expected Error Codes
+`BadArgument` - Occurs when the environments can not be linked, for example when either environment is in an inactive state or already linked to another environment, when the environment type or Azure Geo do not match, or when the environment does not exist.
+`Forbidden` - Occurs when the user or application used to authenticate does not have the required permissions.
+
 ## Unlink Power Platform environment
 
 **INTRODUCED IN:** API version 2.21
@@ -694,6 +698,9 @@ POST /admin/v2.21/bap/applications/{applicationType}/environments/{environmentNa
 
 ### Response
 200
+
+### Response
+`BadArgument` - Occurs when the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is not linked to a Power Platform environment.
 
 ## Get used storage of an environment by application family and name
 
