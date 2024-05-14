@@ -1,11 +1,7 @@
 ---
 title: Add Company to a Database
 description: Add a new company to a Dynamics NAV database on a computer or a virtual machine by using the New-NAVCompany cmdlet of the Administration Shell.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1bd63fec-c8b1-4ac4-b3df-d1549f591eca
 caps.latest.revision: 13

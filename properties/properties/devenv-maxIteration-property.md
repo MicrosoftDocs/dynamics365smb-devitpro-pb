@@ -1,10 +1,7 @@
 ---
 title: "MaxIteration Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: de72895e-8df3-4ae7-921d-44f5738bd4bb
 caps.latest.revision: 4

@@ -1,11 +1,7 @@
 ---
 title: Call .NET Framework Types From C/AL Code
 description: Call .NET Framework type members, including methods, properties, and constructors, from C/AL code by defining a DotNet type variable that references the .NET Framework assembly.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5900cae9-c742-4c66-812c-ab9a82887eba
 caps.latest.revision: 19

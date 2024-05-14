@@ -1,10 +1,6 @@
 ---
 title: "CaptionClass Syntax"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9396c266-ed85-4cc9-ab5a-d968b01bfbdd
 caps.latest.revision: 14

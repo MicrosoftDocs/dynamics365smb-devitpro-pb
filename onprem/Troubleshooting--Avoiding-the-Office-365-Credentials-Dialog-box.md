@@ -1,10 +1,6 @@
 ---
 title: "Troubleshooting: Avoiding the Office 365 Credentials Dialog box"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: fa0f91a9-3e58-4625-b6f6-e61b801472b2
 caps.latest.revision: 2

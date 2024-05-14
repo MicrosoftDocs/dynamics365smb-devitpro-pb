@@ -1,10 +1,6 @@
 ---
 title: "Interactive Timeline Business Data Visualization"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c35c1956-3b7b-43cd-a5e4-34ab899cb981
 caps.latest.revision: 6

@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Creating a Customer List in Page Designer"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ea8f5be6-3afd-42e3-badc-c956e369cc0b
 caps.latest.revision: 27

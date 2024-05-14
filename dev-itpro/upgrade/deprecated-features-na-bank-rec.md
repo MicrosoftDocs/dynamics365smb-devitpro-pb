@@ -3,7 +3,7 @@ title: Deprecated bank reconciliation and deposits features in the North America
 description: If you're using the deprecated Bank Reconciliation Worksheet and Deposits features in the US, CA, and MX versions, this article can help you understand what to do after you upgrade to 2023 release wave 2.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: bnielse
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms. search.keywords: deprecated, Dutch, NL, Netherlands, local functionality
 ms.date: 09/26/2023

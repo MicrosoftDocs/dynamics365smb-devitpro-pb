@@ -1,10 +1,8 @@
 ---
 title: "WordMergeDataItem Property"
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5e251ec0-0bf2-4139-a8a2-cfaca5dae3ad
 caps.latest.revision: 6

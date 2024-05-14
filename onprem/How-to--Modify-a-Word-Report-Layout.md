@@ -1,10 +1,6 @@
 ---
 title: "How to: Modify a Word Report Layout"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7a193bac-4c45-4f04-bf68-e3f299beeba2
 caps.latest.revision: 6

@@ -1,10 +1,6 @@
 ---
 title: "Database Logins"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 449018fc-6bcf-4726-ad1a-b521d0cf8d55
 caps.latest.revision: 12

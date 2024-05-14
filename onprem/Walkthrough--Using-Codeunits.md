@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Using Codeunits"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 124c1ffa-ed8b-4e04-8e0c-e133f9b33fac
 caps.latest.revision: 18

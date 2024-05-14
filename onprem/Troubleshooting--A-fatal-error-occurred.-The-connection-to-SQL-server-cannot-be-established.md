@@ -1,10 +1,6 @@
 ---
 title: "Troubleshooting: A fatal error occurred. The connection to SQL server cannot be established"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b8612c03-8366-4334-94c0-d409f1c4a10b
 caps.latest.revision: 8

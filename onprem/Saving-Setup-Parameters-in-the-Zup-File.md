@@ -1,10 +1,6 @@
 ---
 title: "Saving Setup Parameters in the Zup File"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9c7cf52b-8128-45af-a7d9-0482457cb4df
 caps.latest.revision: 7

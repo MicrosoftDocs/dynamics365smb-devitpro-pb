@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Designing a Customer List Report"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4fdf1f02-5039-444e-aa8e-ac7b9b206629
 caps.latest.revision: 47

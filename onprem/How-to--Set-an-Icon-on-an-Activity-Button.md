@@ -1,10 +1,6 @@
 ---
 title: "How to: Set an Icon on an Activity Button"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7f78321e-0493-4ac2-8bd1-500c4bf53efb
 caps.latest.revision: 19

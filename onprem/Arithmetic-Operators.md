@@ -1,10 +1,6 @@
 ---
 title: "Arithmetic Operators"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b428bd42-cedd-4a2f-a812-fe99db86ad77
 caps.latest.revision: 7

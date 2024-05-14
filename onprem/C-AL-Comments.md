@@ -2,11 +2,7 @@
 title: "C/AL Comments"
 description: "Describing the C/AL comments."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 14dbf038-ca14-49a3-9252-9f1deb74d0e6
 caps.latest.revision: 8

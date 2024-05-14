@@ -1,10 +1,6 @@
 ---
 title: "Creating and Running Hyperlinks"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 89785500-355e-4971-bd57-0410814d7417
 caps.latest.revision: 41

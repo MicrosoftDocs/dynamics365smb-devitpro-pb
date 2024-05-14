@@ -1,10 +1,6 @@
 ---
 title: "Installing and Configuring Windows Client Control Add-ins on Pages"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c384ba35-7fed-4dd3-b1e1-4a8346436f3c
 caps.latest.revision: 16
