@@ -1,11 +1,7 @@
 ---
 title: Create Menu for a Department in MenuSuite
 description: Dynamics NAV provides a basic MenuSuite that you can modify or create a new one from the basic one by designing it in Navigation Pane Designer.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 040befa6-1f60-4879-85ea-acabdc923d7c
 caps.latest.revision: 10

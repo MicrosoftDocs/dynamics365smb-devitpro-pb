@@ -1,11 +1,7 @@
 ---
 title: "ImportLangModule"
 author: edupont04
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e4d673a7-dbe3-43e7-bb88-baa4fd0047e6
 caps.latest.revision: 9

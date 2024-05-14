@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Combining Data from Microsoft Dynamics NAV Queries and Pages with Data from Azure DataMarket (OData)"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0b5f1e2c-b748-48e2-b201-bc3b02ffe3e1
 caps.latest.revision: 28

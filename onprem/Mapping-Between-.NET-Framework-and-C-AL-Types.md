@@ -1,10 +1,6 @@
 ---
 title: "Mapping Between .NET Framework and C/AL Types"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1e5577ea-9730-46d2-b828-5e35135d9a52
 caps.latest.revision: 18

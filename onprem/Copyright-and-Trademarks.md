@@ -1,11 +1,7 @@
 ---
 title: "Copyright and Trademarks"
 author: edupont04
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c428ae82-1f49-472c-89da-2dd1fdebc1b9
 ms.author: edupont

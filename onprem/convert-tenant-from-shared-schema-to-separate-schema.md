@@ -2,7 +2,6 @@
 title: Converting a Tenant From Shared Schema to Separate Schema
 description: Explains how to change a tenant from the shared schema data model to the separate schema data model.
 ms.date: 10/01/2018
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---

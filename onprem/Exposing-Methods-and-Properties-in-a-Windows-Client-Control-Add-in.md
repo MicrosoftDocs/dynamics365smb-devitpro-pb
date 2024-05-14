@@ -1,10 +1,6 @@
 ---
 title: "Exposing Methods and Properties in a Windows Client Control Add-in"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9f1b5e9e-4167-4d57-bb0f-498587530ec7
 caps.latest.revision: 18

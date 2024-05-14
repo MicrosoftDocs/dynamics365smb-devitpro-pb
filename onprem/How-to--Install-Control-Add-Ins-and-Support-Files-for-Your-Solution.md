@@ -1,11 +1,7 @@
 ---
 title: "How to: Install Control Add-Ins and Support Files for Your Solution"
 author: jswymer
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ced668d6-5e2c-4355-813a-4041060cf25f
 ms.author: jswymer

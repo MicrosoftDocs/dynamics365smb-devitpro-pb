@@ -1,10 +1,6 @@
 ---
 title: "How to: Set Conditional Breakpoints"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bdb46bc8-3887-4b73-9aaa-d9010dc7fa00
 caps.latest.revision: 10

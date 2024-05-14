@@ -1,11 +1,7 @@
 ---
 title: Embed the Web Client Pages
 description: Deploy the Web client as an independent website in an internal company portal containing data from Dynamics NAV including document handling, newsfeed etc.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ba530099-5194-4f1b-8783-5921588cd469
 caps.latest.revision: 23

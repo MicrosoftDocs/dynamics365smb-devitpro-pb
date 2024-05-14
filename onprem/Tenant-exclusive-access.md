@@ -1,10 +1,6 @@
 ---
 title: "Tenant Exclusive Access"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
 author: jswymer

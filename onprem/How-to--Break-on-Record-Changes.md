@@ -1,11 +1,7 @@
 ---
 title: Break on Record Changes
 description: Specify if the debugger breaks on record changes. If it is set to break on record changes, then it breaks before creating, modifying, or deleting a record.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4a443cec-f31c-4c74-a9e5-5be8d6ca9cc0
 caps.latest.revision: 7

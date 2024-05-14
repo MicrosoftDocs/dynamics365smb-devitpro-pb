@@ -1,10 +1,6 @@
 ---
 title: "How to: Preconfigure Components"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 511d8c03-364b-4595-a11e-4cfa6710d92c
 caps.latest.revision: 21

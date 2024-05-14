@@ -1,10 +1,6 @@
 ---
 title: "Binding a Windows Client Control Add-in to the Database"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6a587bf8-4eeb-40e9-809a-95643842e90f
 caps.latest.revision: 24

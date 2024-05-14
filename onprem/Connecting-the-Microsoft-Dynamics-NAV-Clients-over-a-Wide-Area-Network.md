@@ -1,10 +1,6 @@
 ---
 title: "Connecting the Microsoft Dynamics NAV Clients over a Wide Area Network"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4134e6f3-54ec-48e0-9f28-6b2e3a0e49d7
 caps.latest.revision: 22

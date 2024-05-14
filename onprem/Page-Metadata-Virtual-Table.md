@@ -1,10 +1,6 @@
 ---
 title: "Page Metadata Virtual Table"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b21e8d51-044b-4018-8a9d-830b851c04ea
 caps.latest.revision: 3

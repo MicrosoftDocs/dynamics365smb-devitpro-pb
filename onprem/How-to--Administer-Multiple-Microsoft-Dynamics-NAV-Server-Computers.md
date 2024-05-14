@@ -1,11 +1,7 @@
 ---
 title: Administer Multiple Server Computers
 description: Launch Microsoft Management Console (MMC) and configure multiple Dynamics NAV Server computers from a single instance of the Server Administration tool.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0431dd5f-98d1-47e4-b426-8dbe97b19fe2
 caps.latest.revision: 17
