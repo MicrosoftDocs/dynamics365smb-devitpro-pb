@@ -1,7 +1,7 @@
 ---
 title: Subscribing to events
 description: Designing event subscribers in AL for Business Central. 
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/18/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
