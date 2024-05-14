@@ -2,8 +2,7 @@
 title: "RecordRef.SetTable(Record, Boolean) Method"
 description: "Sets the table to which a Record variable refers as the same table as a RecordRef variable."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
