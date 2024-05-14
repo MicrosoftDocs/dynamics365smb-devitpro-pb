@@ -2,8 +2,7 @@
 title: "InsertAllowed Property"
 description: "Sets a value to specify whether users can add records while using a page."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
