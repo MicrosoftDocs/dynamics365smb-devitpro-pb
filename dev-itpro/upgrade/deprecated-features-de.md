@@ -4,7 +4,7 @@ description: We're constantly streamlining and adjusting our app in-step with ma
 author: bholtorf
 ms.topic: conceptual
 ms.devlang: al
-ms. search.keywords: deprecated, Germany, local functionality
+ms.search.keywords: deprecated, Germany, local functionality
 ms.date: 12/22/2023
 ms.author: jswymer
 

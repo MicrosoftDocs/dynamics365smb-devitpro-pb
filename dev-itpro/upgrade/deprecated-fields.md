@@ -4,7 +4,7 @@ description: We're constantly streamlining and adjusting our app in-step with ma
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
-ms. search.keywords: deprecated, obsolete
+ms.search.keywords: deprecated, obsolete
 ms.date: 04/01/2021
 ms.author: jswymer
 
