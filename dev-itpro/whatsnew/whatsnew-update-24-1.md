@@ -18,10 +18,12 @@ Would you like to know what has changed in update 24.1? Below you'll find an ove
 
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5038531) and the downloads [here](https://aka.ms/BCDownload).
 
+<!--
 ## Feature changes
 
 - [Handle multiple file uploads and file drop zones](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/handle-multiple-file-uploads-file-drop-zones)
 
+--> 
 ## Localization updates
 
 | Country| Feature  |Description|
