@@ -45,7 +45,71 @@ Every event emitted to Purview auditing solutions uses the [common schema](~/off
 |Configured cloud migration|Operations that create, update, or delete cloud migration|
 |Administered report|Operations that create, update, or delete reports|
 
-### Environment Administration Operations
-|Operation name|Custom dimensions|
-|---|---|
-|Created environment|`{"aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","environmentName":"vak05032","ApplicationVersion":null,"CountryCode":"US","EnvironmentType":"Production","RingName":"PROD"}`
+### Administered environment operations
+
+Operations listed in the table below can be audited by filtering to the `Administered environment` event.
+
+<table>
+    <thead>
+        <tr>
+            <th>Operation name</th>
+            <th>Custom dimensions</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2>Created environment</td>
+            <td>ApplicationVersion</td>
+            <td>24.0.0.0</td>
+        </tr>
+        <tr>
+            <td>CountryCode</td>
+            <td>US</td>
+        </tr>
+        <tr>
+            <td>Removed environment</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Renamed environment</td>
+            <td>NewEnvironmentName</td>
+            <td>EnvironmentName</td>
+        </tr>
+        <tr>
+            <td rowspan=2>Copied environment</td>
+            <td>targetEnvironmentType</td>
+            <td>Production</td>
+        </tr>
+        <tr>
+            <td>targetEnvironmentName</td>
+            <td>EnvironmentName</td>
+        </tr>
+        <tr>
+            <td rowspan=6>Restored environment</td>
+            <td>EnvironmentName</td>
+            <td>RestoredEnvironment</td>
+        </tr>
+        <tr>
+            <td>EnvironmentType</td>
+            <td>Production</td>
+        </tr>
+        <tr>
+            <td>PointInTime</td>
+            <td>0001-01-01T00:00:00</td>
+        </tr>
+        <tr>
+            <td>SkipInstallingPTEs</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td>SkipInstallingThirdPartyGlobalApps</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td>SkipEnvironmentCleanup</td>
+            <td>false</td>
+        </tr>
+    </tbody>
+</table>
