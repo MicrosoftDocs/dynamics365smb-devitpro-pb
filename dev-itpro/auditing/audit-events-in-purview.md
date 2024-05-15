@@ -32,22 +32,22 @@ Every event emitted to Purview auditing solutions uses the [common schema](~/off
 |BcCustomDimensions|Contains dynamic values based on the emitted event, see details for each event below|False|Edm.ComplexType|
 |BcOperationName|The name of the operation for which the log was emitted|True|Edm.String|
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] events emitted to Purview are categorized as events and operations; events are high-level and are parents to the more specific operations.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] events emitted to Purview are categorized as events and activities; events are high-level and are parents to the more specific activities.
 
 |Event name|Description|
 |---|---|
-|Administered environment|Operations that create, update, or delete environments|
-|Configured extension|Operations that create, update, or delete extensions|
-|Administered user|Operations that create, update, or delete users|
-|Administered company|Operations that create, update, or delete companies|
-|Configured integration|Operations that create, update, or delete integrations|
-|Configured Copilot|Operations that create, update, or delete Copilot|
-|Configured cloud migration|Operations that create, update, or delete cloud migration|
-|Administered report|Operations that create, update, or delete reports|
+|Administered environment|Activities that create, update, or delete environments|
+|Configured extension|Activities that create, update, or delete extensions|
+|Administered user|Activities that create, update, or delete users|
+|Administered company|Activities that create, update, or delete companies|
+|Configured integration|Activities that create, update, or delete integrations|
+|Configured Copilot|Activities that create, update, or delete Copilot|
+|Configured cloud migration|Activities that create, update, or delete cloud migration|
+|Administered report|Activities that create, update, or delete reports|
 
 ### Administered environment operations
 
-Operations listed in the table below can be audited by filtering to the `Administered environment` event.
+Activities listed in the table below can be audited by filtering to the `Administered environment` event.
 
 <table>
     <thead>
@@ -110,6 +110,194 @@ Operations listed in the table below can be audited by filtering to the `Adminis
         <tr>
             <td>SkipEnvironmentCleanup</td>
             <td>false</td>
+        </tr>
+        <tr>
+            <td>Recovered environment</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan=2>Scheduled update</td>
+            <td>IgnoreUpdateWindow</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td>RunOn</td>
+            <td>0001-01-01T00:00:00</td>
+        </tr>
+        <tr>
+            <td>Set Security Group Access</td>
+            <td>Value</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Removed Security Group Access</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Set Application Insights Instrumentation Key</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Set Access with Microsoft 365 Licenses</td>
+            <td>Value</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>Removed Access with Microsoft 365 Licenses</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Set AppSource Apps Update Cadence</td>
+            <td>Value</td>
+            <td>DuringMajorMinorUpgrade</td>
+        </tr>
+        <tr>
+            <td>Removed AppSource Apps Update Cadence</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan=8>Reported Service Outage</td>
+            <td>AppVersion</td>
+            <td>24.0.0.0</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>email@cronus.com</td>
+        </tr>
+        <tr>
+            <td>FirstName</td>
+            <td>John</td>
+        </tr>
+        <tr>
+            <td>LastName</td>
+            <td>Doe</td>
+        </tr>
+        <tr>
+            <td>OutageQuestionAnswers</td>
+            <td>1: Yes. 2: All users</td>
+        </tr>
+        <tr>
+            <td>OutageType</td>
+            <td>Logon</td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>+1 0000000000</td>
+        </tr>
+        <tr>
+            <td>PlatformVersion</td>
+            <td>24.0.0.0</td>
+        </tr>
+        <tr>
+            <td rowspan=5>Set Update Window</td>
+            <td>PreferredEndTime</td>
+            <td>06:00</td>
+        </tr>
+        <tr>
+            <td>PreferredEndTimeUtc</td>
+            <td>0001-01-01T06:00:00</td>
+        </tr>
+        <tr>
+            <td>PreferredStartTime</td>
+            <td>00:00</td>
+        </tr>
+        <tr>
+            <td>PreferredStartTimeUtc</td>
+            <td>0001-01-01T00:00:00</td>
+        </tr>
+        <tr>
+            <td>TimeZoneId</td>
+            <td>Coordinated Universal Time</td>
+        </tr>
+        <tr>
+            <td>Exported Environment</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Restarted Environment</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cancelled Session</td>
+            <td>sessionId</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td rowspan=2>Requested Environment Transfer</td>
+            <td>DestinationEntraTenantId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>RunAt</td>
+            <td>0001-01-01T00:00:00</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Accepted Environment Transfer Request</td>
+            <td>ApplicationFamily</td>
+            <td>BusinessCentral</td>
+        </tr>
+        <tr>
+            <td>DestinationEnvironmentName</td>
+            <td>EnvironmentName</td>
+        </tr>
+        <tr>
+            <td>SourceEntraTenantId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>SourceEnvironmentName</td>
+            <td>EnvironmentName</td>
+        </tr>
+        <tr>
+            <td>Cancelled Environment Transfer Request</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan=3>Link Environment to Power Platform Environment</td>
+            <td>powerPlatformEnvironmentId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>applicationFamily</td>
+            <td>BusinessCentral</td>
+        </tr>
+        <tr>
+            <td>environmentName</td>
+            <td>EnvironmentName</td>
+        </tr>
+        <tr>
+            <td rowspan=3>Unink Environment to Power Platform Environment</td>
+            <td>powerPlatformEnvironmentId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>applicationFamily</td>
+            <td>BusinessCentral</td>
+        </tr>
+        <tr>
+            <td>environmentName</td>
+            <td>EnvironmentName</td>
+        </tr>
+        <tr>
+            <td rowspan=3>Set Support Contact Information</td>
+            <td>Email</td>
+            <td>support@cronus.com</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>SupportContact</td>
+        </tr>
+        <tr>
+            <td>Url</td>
+            <td>https://cronus.com/support</td>
         </tr>
     </tbody>
 </table>
