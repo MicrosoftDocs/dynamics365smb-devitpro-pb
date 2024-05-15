@@ -2,9 +2,8 @@
 title: "Working with API Limits in Dynamics 365 Business Central"
 description: "Working with API limits in Business central for cloud."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.topic: article
+ms.topic: how-to
 ms.author: solsen
 ---
 

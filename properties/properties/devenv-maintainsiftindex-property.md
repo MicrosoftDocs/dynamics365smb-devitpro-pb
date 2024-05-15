@@ -1,10 +1,7 @@
 ---
 title: "MaintainSIFTIndex Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4bfc7edc-4561-4da4-b725-623d1c86be99
 caps.latest.revision: 7

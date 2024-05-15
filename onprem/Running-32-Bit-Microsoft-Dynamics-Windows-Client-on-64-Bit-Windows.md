@@ -1,10 +1,6 @@
 ---
 title: "Running 32-Bit Microsoft Dynamics Windows Client on 64-Bit Windows"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1e7bf9c4-3c2b-4288-b55f-da89d940051d
 caps.latest.revision: 6

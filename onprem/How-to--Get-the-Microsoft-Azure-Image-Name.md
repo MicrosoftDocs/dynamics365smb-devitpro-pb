@@ -1,10 +1,6 @@
 ---
 title: "How to: Get the Microsoft Azure Image Name"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 81172ef7-24b4-44f0-8fa2-5a00ed960fb9
 caps.latest.revision: 4

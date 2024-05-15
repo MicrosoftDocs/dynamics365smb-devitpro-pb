@@ -1,10 +1,6 @@
 ---
 title: "Synchronizing Dynamics NAV and Dynamics 365 for Sales"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---

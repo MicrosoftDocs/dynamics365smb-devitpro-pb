@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Creating MenuSuites for the Microsoft Dynamics NAV Windows Client"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c0e4c4ed-eeb5-4a0e-ba08-254ed7dc3353
 caps.latest.revision: 14

@@ -3,7 +3,7 @@ title: Country/regional availability and supported languages
 description: Overview of availability and supported languages.
 author: sorenfriisalexandersen
 ms.date: 01/25/2024
-ms.reviewer: kfender
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: altotovi
 ---

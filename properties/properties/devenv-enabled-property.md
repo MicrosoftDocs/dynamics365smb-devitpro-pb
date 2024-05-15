@@ -1,11 +1,8 @@
 ---
 title: "Enabled Property"
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e54c1bbb-2070-40cb-b633-4be7738cd3d6
 ms.author: solsen
