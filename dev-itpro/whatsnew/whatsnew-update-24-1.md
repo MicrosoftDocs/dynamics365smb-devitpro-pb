@@ -2,7 +2,7 @@
 title: Update 24.1 for Microsoft Dynamics 365 Business Central 2024 Release Wave 1
 description: Get an overview of new and changed capabilities in the 24.1 update of Business Central online, which is part of 2024 release wave 1.
 ms.author: jswymer
-ms.date: 04/30/2024
+ms.date: 05/15/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
@@ -20,7 +20,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes
 
-- [Automate country of origin listed for item tracking code in Intrastat reporting](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/automate-country-origin-listed-item-tracking-code-intrastat-reporting)
 - [Handle multiple file uploads and file drop zones](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/handle-multiple-file-uploads-file-drop-zones)
 
 ## Localization updates
