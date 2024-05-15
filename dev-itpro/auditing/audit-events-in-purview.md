@@ -7,7 +7,7 @@ ms.date: 13/05/2024
 ms.author: jobulsin
 ---
 
-# Auditing in Business Central
+# Auditing in Purview
 
 > [!NOTE]
 > Purview auditing solutions for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is in Preview. Please register any feedback and requests for additional events to be auditable on (aka.ms/bcideas)[https://aka.ms/bcideas].
