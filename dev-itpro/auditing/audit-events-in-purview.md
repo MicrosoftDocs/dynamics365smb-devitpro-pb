@@ -52,7 +52,7 @@ Activities listed in the table below can be audited by filtering to the `Adminis
 <table>
     <thead>
         <tr>
-            <th>Operation name</th>
+            <th>Activity</th>
             <th>Custom dimensions</th>
             <th>Sample value</th>
         </tr>
