@@ -45,7 +45,7 @@ Every event emitted to Purview auditing solutions uses the [common schema](~/off
 |Configured cloud migration|Activities that create, update, or delete cloud migration|
 |Administered report|Activities that create, update, or delete reports|
 
-### Administered environment operations
+### Administered environment activities
 
 Activities listed in the table below can be audited by filtering to the `Administered environment` event.
 
