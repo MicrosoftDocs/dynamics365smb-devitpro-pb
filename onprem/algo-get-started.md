@@ -2,7 +2,6 @@
 title: "Create a new per-tenant extension and start developing in Visual Studio Code"
 description: "Get started with AL-Go for GitHub and create repository from template for Business Central."
 author: freddyk
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual

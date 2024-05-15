@@ -1,10 +1,6 @@
 ---
 title: "Handling merge conflicts"
-ms.custom: na
 ms.date: 12/28/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 22cddb12-180f-4dbf-8351-120caa9a55f0
 caps.latest.revision: 3

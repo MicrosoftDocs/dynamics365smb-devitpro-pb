@@ -1,11 +1,7 @@
 ---
 title: Upgrade Help Content
 description: Reuse the earlier version of Help created using the Dynamics NAV Help Toolkit which is supported by using the HTML files.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8dc757ad-ad73-43e6-b314-0d22e75f7602
 caps.latest.revision: 7

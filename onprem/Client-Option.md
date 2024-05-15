@@ -2,11 +2,7 @@
 title: "Client Option"
 description: "Describing the different client options"
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dca2ad0b-d384-479b-8437-cb6de6bd5a10
 caps.latest.revision: 2

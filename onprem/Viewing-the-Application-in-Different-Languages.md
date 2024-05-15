@@ -1,11 +1,7 @@
 ---
 title: Multiple Language Functionality
 description: In a Multilanguage-enabled application, you view the text in any language that has been added to the application in Microsoft Dynamics NAV. 
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c8d9df64-66c1-464f-9803-f1b9f4aca228
 caps.latest.revision: 9

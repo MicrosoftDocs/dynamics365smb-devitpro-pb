@@ -1,11 +1,7 @@
 ---
 title: How to Break on Errors
 description: If the debugger is set to break on errors, then it breaks execution both on errors that are handled in code and on unhandled errors. 
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ddb133b9-e940-4db8-bf3a-e5f906600188
 caps.latest.revision: 24

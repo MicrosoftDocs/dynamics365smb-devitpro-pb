@@ -1,10 +1,6 @@
 ---
 title: "How to: Include Microsoft Dynamics Online Connect on Role Centers"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6be897c2-9f68-4b0d-a40e-f66566c7f267
 caps.latest.revision: 15

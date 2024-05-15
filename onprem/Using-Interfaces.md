@@ -1,10 +1,6 @@
 ---
 title: "Using Interfaces"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 23577936-4d02-4e73-96d6-6fc2ee40637b
 caps.latest.revision: 3

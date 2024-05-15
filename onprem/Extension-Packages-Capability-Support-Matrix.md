@@ -1,11 +1,7 @@
 ---
 title: "Extension Packages Capability Support Matrix"
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 83351319-ce8a-4a84-9831-f68ed9f14835
 ms.author: solsen

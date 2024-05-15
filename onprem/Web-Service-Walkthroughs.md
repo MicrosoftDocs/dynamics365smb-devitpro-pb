@@ -1,10 +1,6 @@
 ---
 title: "Web Service Walkthroughs"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ---
 # Web Service Walkthroughs

@@ -1,10 +1,7 @@
 ---
 title: "PaperSourceDefaultPage Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 624acbca-5cbb-433d-a768-9e1ed45c9d97
 caps.latest.revision: 9

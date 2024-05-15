@@ -1,10 +1,6 @@
 ---
 title: "Prepare Users for First ACS Login"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1ee054ce-dbd4-4954-8ef0-212bee274dc0
 caps.latest.revision: 9

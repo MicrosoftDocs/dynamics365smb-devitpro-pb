@@ -1,10 +1,6 @@
 ---
 title: "File Virtual Table"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 80425fe1-fd65-45db-83fc-5801bf9e7dec
 caps.latest.revision: 11

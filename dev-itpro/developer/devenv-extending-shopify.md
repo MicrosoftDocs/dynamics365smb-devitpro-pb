@@ -3,7 +3,7 @@ title: Extending Shopify
 description: This article provides descriptions and examples of how you can extend your Shopify integration.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: andreipa
+ms.reviewer: bholtorf
 ms.custom: bap-template
 ms.date: 08/21/2023
 ms.topic: conceptual

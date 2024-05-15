@@ -1,10 +1,6 @@
 ---
 title: "Printing Reports from a Background Session"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2ca013c1-f142-4679-8c09-876841c83029
 caps.latest.revision: 10
