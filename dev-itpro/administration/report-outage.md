@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.devlang: al
 ms.date: 01/03/2024
 ms.author: jswymer
-
+ms.reviewer: jswymer
 ---
 
 # Report customer outages

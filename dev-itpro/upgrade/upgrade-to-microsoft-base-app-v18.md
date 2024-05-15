@@ -6,6 +6,7 @@ ms.date: 04/18/2024
 ms.topic: article
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading Customized C/AL Application to Microsoft Base Application Version 18
 

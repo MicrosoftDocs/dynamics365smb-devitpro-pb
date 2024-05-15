@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 09/27/2022
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Using Access Modifiers in AL

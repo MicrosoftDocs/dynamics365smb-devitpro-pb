@@ -7,6 +7,7 @@ ms.custom: bap-template
 ms.date: 06/16/2023
 
 ms.topic: conceptual
+ms.reviewer: solsen
 ---
 
 # Using delta links with APIs

@@ -3,7 +3,7 @@ title: Actionable errors
 description: Learn how to write AL code that returns error dialogs where users might unblock themselves.
 ms.custom: bap-template
 ms.date: 12/21/2023
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: samirdal
 ms.author: samirdal

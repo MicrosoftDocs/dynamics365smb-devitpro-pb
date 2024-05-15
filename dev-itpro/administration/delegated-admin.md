@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 10/18/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Delegated Administrator Access to Business Central Online

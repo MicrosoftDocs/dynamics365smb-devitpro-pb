@@ -6,6 +6,7 @@ ms.date: 05/01/2024
 ms.topic: conceptual
 ms.custom: evergreen
 ms.author: freddyk
+ms.reviewer: jswymer
 ---
 
 # Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen

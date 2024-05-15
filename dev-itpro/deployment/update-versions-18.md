@@ -5,6 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 09/01/2022
+ms.reviewer: jswymer
 ---
 
 # Dynamics 365 Business Central On-Premises 2021 Release Wave 1 Updates

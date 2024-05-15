@@ -6,6 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 05/05/2021
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # profile resource type

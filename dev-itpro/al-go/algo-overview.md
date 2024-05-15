@@ -6,6 +6,7 @@ ms.custom: bap-template
 ms.date: 10/11/2023
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Overview of AL-Go

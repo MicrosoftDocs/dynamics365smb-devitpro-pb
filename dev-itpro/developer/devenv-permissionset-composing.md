@@ -5,6 +5,7 @@ author: jswymer
 ms.date: 09/23/2022
 ms.topic: article
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Composing Permission Sets
 

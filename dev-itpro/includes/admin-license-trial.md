@@ -3,6 +3,7 @@ author: jswymer
 ms.topic: include
 ms.date: 09/07/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 > [!IMPORTANT]
 > Specifically for businesses who want to convert a 30-day trial company into their actual production company, the first user who signs into [!INCLUDE [prod_short](../includes/prod_short.md)] after the license was applied to their tenant must be a user with this license assigned. This way, the 30-day trial ends, and any trial-related notifications disappear so that users can use [!INCLUDE [prod_short](../includes/prod_short.md)] to do work.

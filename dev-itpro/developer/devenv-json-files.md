@@ -6,6 +6,7 @@ ms.date: 05/13/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # JSON files

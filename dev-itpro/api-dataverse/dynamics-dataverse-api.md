@@ -6,6 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 09/20/2022
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Business Central Dataverse API

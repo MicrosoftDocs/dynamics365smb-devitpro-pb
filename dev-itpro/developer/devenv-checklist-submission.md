@@ -3,7 +3,7 @@ title: Technical validation checklist
 description: Describes the steps you must go through to successfully submit your app to AppSource using AppSourceCop for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 03/04/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: freddyk
 ---

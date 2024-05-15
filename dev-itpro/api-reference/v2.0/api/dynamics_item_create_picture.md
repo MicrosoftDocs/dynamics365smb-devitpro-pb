@@ -8,6 +8,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 01/11/2022
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create item picture

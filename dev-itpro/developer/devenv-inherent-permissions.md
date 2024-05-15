@@ -5,6 +5,7 @@ author: jswymer
 ms.date: 02/27/2023
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Inherent Permissions

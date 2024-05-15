@@ -5,6 +5,7 @@ description: Provides an overview of Embed App in Business Central
 ms.topic: overview
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 
 # Embed App Overview

@@ -5,6 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 
 # Preparing test environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]

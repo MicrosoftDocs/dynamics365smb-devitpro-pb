@@ -6,6 +6,7 @@ ms.date: 10/04/2023
 ms.topic: conceptual
 ms.author: jswymer
 ms.collection: get-started
+ms.reviewer: jswymer
 ---
 
 # Get started with the container sandbox development environment

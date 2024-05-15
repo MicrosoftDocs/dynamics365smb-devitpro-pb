@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.topic: conceptual
 ms.date: 09/09/2021
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Authoring Guide for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]

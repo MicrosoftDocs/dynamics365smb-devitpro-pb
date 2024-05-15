@@ -3,6 +3,7 @@ author: jswymer
 ms.topic: include
 ms.date: 04/01/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 > [!NOTE]
 > As of April 2022, Business Central 2020 Release Wave 2 no longer gets updates.

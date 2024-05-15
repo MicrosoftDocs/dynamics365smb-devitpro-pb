@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
 ms.date: 01/08/2024
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Prepare for major updates with preview environments

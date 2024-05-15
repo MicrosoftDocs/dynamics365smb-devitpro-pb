@@ -6,6 +6,7 @@ ms.custom: conceptual
 ms.date: 01/08/2024
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online

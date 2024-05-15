@@ -4,6 +4,7 @@ ms.date: 05/01/2024
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Control add-in performance best practices

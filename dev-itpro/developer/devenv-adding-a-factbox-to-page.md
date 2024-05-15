@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Adding a FactBox to a Page

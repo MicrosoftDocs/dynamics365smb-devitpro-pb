@@ -3,7 +3,7 @@ title: What's new or changed in Business Central
 description: This article points to articles that describe the new and changed features in minor updates to Dynamics 365 Business Central online.
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 ms.date: 04/01/2024
 ms.custom: bap-template
 ms.topic: whats-new 

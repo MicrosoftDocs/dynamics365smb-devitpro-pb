@@ -6,6 +6,7 @@ ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading the Application Code in [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 

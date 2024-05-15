@@ -3,7 +3,7 @@ title: Troubleshooting overview
 description: An overview of tools and processes that help troubleshoot issues in Business Central.
 ms.custom: bap-template
 ms.date: 01/18/2024
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: overview
 ms.author: solsen
 author: SusanneWindfeldPedersen

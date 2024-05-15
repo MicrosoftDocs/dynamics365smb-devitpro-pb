@@ -8,6 +8,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 12/21/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyzing error method telemetry

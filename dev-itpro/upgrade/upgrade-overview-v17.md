@@ -6,6 +6,7 @@ ms.date: 04/18/2024
 ms.topic: overview
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2020 Release Wave 2
 

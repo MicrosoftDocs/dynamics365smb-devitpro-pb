@@ -4,7 +4,7 @@ description: Describes the XMLport object in AL, which is composed of a schema, 
 author: blrobl
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: overview
 ms.author: brobledodiaz
 ---

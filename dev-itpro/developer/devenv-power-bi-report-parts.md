@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.search.keywords: Power BI, reports, faq, errors
 author: jswymer
 ms.author: jswymer
-
+ms.reviewer: jswymer
 ---
 # Embed Power BI reports, scorecards, dashboards in pages
 

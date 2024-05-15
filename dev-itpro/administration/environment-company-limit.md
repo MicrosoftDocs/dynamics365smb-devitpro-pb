@@ -3,7 +3,7 @@ title: Operational challenges with many companies per environment
 description: Learn about limitations on environment operations when the environment includes many companies.
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 
 ms.date: 01/12/2023
 ms.custom: bap-template

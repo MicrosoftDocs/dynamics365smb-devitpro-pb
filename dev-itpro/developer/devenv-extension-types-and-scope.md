@@ -5,6 +5,7 @@ ms.author: solsen
 ms.date: 02/20/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Extension types and scope
