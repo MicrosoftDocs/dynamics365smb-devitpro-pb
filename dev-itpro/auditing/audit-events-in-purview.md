@@ -316,7 +316,7 @@ Activities listed in the table below can be audited by filtering to the `Configu
     </thead>
     <tbody>
         <tr>
-            <td rowspan=5>Installed App</td>
+            <td rowspan=5>Installed Global App</td>
             <td>appId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -337,7 +337,7 @@ Activities listed in the table below can be audited by filtering to the `Configu
             <td>true</td>
         </tr>
         <tr>
-            <td rowspan=5>Updated App</td>
+            <td rowspan=5>Updated Global App</td>
             <td>appId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -358,7 +358,7 @@ Activities listed in the table below can be audited by filtering to the `Configu
             <td>true</td>
         </tr>
         <tr>
-            <td rowspan=4>Uninstalled App</td>
+            <td rowspan=4>Uninstalled Global App</td>
             <td>appId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -375,7 +375,7 @@ Activities listed in the table below can be audited by filtering to the `Configu
             <td>true</td>
         </tr>
         <tr>
-            <td rowspan=2>Cancelled App Update</td>
+            <td rowspan=2>Cancelled Global App Update</td>
             <td>appId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -406,12 +406,12 @@ Activities listed in the table below can be audited by filtering to the `Configu
     </thead>
     <tbody>
         <tr>
-            <td>Set Authorized Microsoft Entra App</td>
+            <td>Set Authorized Microsoft Entra App to Admin Center API</td>
             <td>appId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td>Deleted Authorized Microsoft Entra App</td>
+            <td>Deleted Authorized Microsoft Entra App from Admin Center API</td>
             <td>appId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
