@@ -16,7 +16,7 @@ Would you like to know what has changed in update 24.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5038531) and the downloads [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5038531) and the downloads [here](https://www.microsoft.com/en-us/download/details.aspx?id=106062).<!--(https://aka.ms/BCDownload).-->
 
 ## Feature changes
 
