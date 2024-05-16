@@ -1,10 +1,6 @@
 ---
 title: "How to: Use a Timestamp Field"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d551118d-e8fd-40ab-bc08-c920b611ef8f
 caps.latest.revision: 4

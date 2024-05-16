@@ -1,10 +1,6 @@
 ---
 title: "Formatting the Data in a Field"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b54bf548-379f-4724-8901-12ab3ba5d181
 caps.latest.revision: 11

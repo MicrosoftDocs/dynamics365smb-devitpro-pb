@@ -1,10 +1,6 @@
 ---
 title: "SQL Advanced Options for Data Item Link Types"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8bfff70e-a3ac-4a5e-aa04-092473a1559e
 caps.latest.revision: 14

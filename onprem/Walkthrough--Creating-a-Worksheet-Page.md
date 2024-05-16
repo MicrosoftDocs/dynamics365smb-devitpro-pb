@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Creating a Worksheet Page"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b5a9ec61-2a4a-446b-8c59-62fe477a7c31
 caps.latest.revision: 51

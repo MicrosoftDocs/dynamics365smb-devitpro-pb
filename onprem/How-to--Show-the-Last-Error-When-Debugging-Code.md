@@ -1,10 +1,6 @@
 ---
 title: "How to: Show the Last Error When Debugging Code"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9514a2b5-e621-4925-928e-053cfbc1e8a9
 caps.latest.revision: 6

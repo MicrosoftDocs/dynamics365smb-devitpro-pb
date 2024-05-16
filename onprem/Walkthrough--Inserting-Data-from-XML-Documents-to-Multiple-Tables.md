@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Inserting Data from XML Documents to Multiple Tables"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 25a6a189-fd8e-4324-9f29-88af759716db
 caps.latest.revision: 23

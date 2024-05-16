@@ -1,11 +1,7 @@
 ---
 title: Add Users for ADCS
 description: Add user as an Automated Data Capture System ADCS user, and optionally provide a connection that identifies ADCS user as a warehouse employee.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4c5564b0-f01d-47af-b2f6-9f7587afd449
 caps.latest.revision: 9

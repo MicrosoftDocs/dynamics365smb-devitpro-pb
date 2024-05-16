@@ -1,10 +1,6 @@
 ---
 title: "Altering Databases - General Tab"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dd9e5a21-eb54-498d-9222-c31317d2050f
 caps.latest.revision: 4

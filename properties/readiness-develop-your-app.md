@@ -2,7 +2,6 @@
 title: "Step 3 - How to Develop Your App"
 description: ""
 author: solsen
-ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.topic: article

@@ -1,11 +1,7 @@
 ---
 title: Configure the Web Server and Client
 description: This article explains how to configure the initial Setup and the Installed Microsoft Dynamics NAV Web Server and Client.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---

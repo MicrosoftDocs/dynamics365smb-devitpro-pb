@@ -1,10 +1,6 @@
 ---
 title: "Field Virtual Table"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c3cf5527-dec2-4c12-9f6f-a2a5f349bf0c
 caps.latest.revision: 11

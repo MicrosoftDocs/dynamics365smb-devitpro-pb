@@ -2,11 +2,7 @@
 title: Create Extension Package
 description: When you developed a Dynamics NAV extension, the next step is to wrap your new .TXT and .DELTA files into a .NAVX file, the packageing format for extensions. 
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c3403c71-52c4-4cd9-a8c4-22499bd78cd1
 ms.author: solsen
