@@ -146,19 +146,9 @@ Activities listed in the table below can be audited by filtering to the `Adminis
             <td>true</td>
         </tr>
         <tr>
-            <td>Removed Access with Microsoft 365 Licenses</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
             <td>Set AppSource Apps Update Cadence</td>
             <td>Value</td>
             <td>DuringMajorMinorUpgrade</td>
-        </tr>
-        <tr>
-            <td>Removed AppSource Apps Update Cadence</td>
-            <td></td>
-            <td></td>
         </tr>
         <tr>
             <td rowspan=8>Reported Service Outage</td>
