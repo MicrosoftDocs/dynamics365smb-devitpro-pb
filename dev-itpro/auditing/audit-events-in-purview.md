@@ -136,7 +136,7 @@ Activities listed in the table below can be audited by filtering to the `Adminis
             <td></td>
         </tr>
         <tr>
-            <td>Set Application Insights Instrumentation Key</td>
+            <td>Set Application Insights Connection String</td>
             <td></td>
             <td></td>
         </tr>
