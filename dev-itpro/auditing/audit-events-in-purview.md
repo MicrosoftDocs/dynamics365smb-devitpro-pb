@@ -301,3 +301,163 @@ Activities listed in the table below can be audited by filtering to the `Adminis
         </tr>
     </tbody>
 </table>
+
+### Configured extension activities
+
+Activities listed in the table below can be audited by filtering to the `Configured extension` event.
+
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Custom dimensions</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=5>Installed App</td>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>AllowPreviewVersion</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>InstallOrUpdateNeededDependencies</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>TargetVersion</td>
+            <td>24.0.0.0</td>
+        </tr>
+        <tr>
+            <td>UseEnvironmentUpdateWindow</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td rowspan=5>Updated App</td>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>AllowPreviewVersion</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>InstallOrUpdateNeededDependencies</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>TargetVersion</td>
+            <td>24.0.0.0</td>
+        </tr>
+        <tr>
+            <td>UseEnvironmentUpdateWindow</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Uninstalled App</td>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>DeleteData</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>UninstallDependents</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>UseEnvironmentUpdateWindow</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td rowspan=2>Cancelled App Update</td>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>ScheduledOperationId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+    </tbody>
+</table>
+
+### Administered user activities
+Coming soon.
+
+### Administered company activities
+Coming soon.
+
+### Configured integration activities
+
+Activities listed in the table below can be audited by filtering to the `Configured integration` event.
+
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Custom dimensions</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Set Authorized Microsoft Entra App</td>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Deleted Authorized Microsoft Entra App</td>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Set Customer Tenant Access to Application Family</td>
+            <td>varTenantId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>applicationFamily</td>
+            <td>BusinessCentral</td>
+        </tr>
+        <tr>
+            <td>country</td>
+            <td>US</td>
+        </tr>
+        <tr>
+            <td>access</td>
+            <td>read</td>
+        </tr>
+        <tr>
+            <td rowspan=3>Set Notification Recipient</td>
+            <td>Id</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>recipient@cronus.com</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>John Doe</td>
+        </tr>
+        <tr>
+            <td>Removed Notification Recipient</td>
+            <td>Id</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+    </tbody>
+</table>
+
+### Configured Copilot activities
+Coming soon.
+
+### Configured cloud migration activities
+Coming soon.
+
+### Administered report activities
+Coming soon.
