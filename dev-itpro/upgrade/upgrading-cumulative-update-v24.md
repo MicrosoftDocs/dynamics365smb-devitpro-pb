@@ -2,13 +2,13 @@
 title: Install a version 24 update
 description: This article describes the tasks required for getting the monthly version 24 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 03/06/2024
+ms.date: 05/01/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
-# Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2024 Release Wave 1 Update
+# Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2024 release wave 1 update
 
 This article describes how to install an update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
 
@@ -163,16 +163,20 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
 
 1. Stop the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
-    ```powershell
-    Stop-NAVServerInstance -ServerInstance $BcServerInstance
-    ```
+   ```powershell
+   Stop-NAVServerInstance -ServerInstance $BcServerInstance
+   ```
 
-2. Run setup.exe to uninstall your current version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
-3. Run setup.exe again to install components of the update.
+1. Run setup.exe to uninstall your current version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+
+   > [!IMPORTANT]
+   > If you're machine is installed with Windows PowerShell 7.4.2 or later, you must uninstall it before you install Business Central version 24.1; otherwise the installation fails. For more information, see [Known issues](known-issues.md#installation-fails-because-powershell-7-is-already-installed).
+
+1. Run setup.exe again to install components of the update.
 
     1. Follow setup pages until you get to the **Microsoft [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Setup** page.
-    2. Select **Advanced installation options** > **Choose an installation option** > **Custom**.
-    3. On the **Customize the installation** page, select the following components as a minimum:
+    1. Select **Advanced installation options** > **Choose an installation option** > **Custom**.
+    1. On the **Customize the installation** page, select the following components as a minimum:
 
         - AL Development Environment (optional but recommended)
         - Server
@@ -181,13 +185,13 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
           > [!NOTE]
           > When install the Web Server Components, a [!INCLUDE[webserverinstance](../developer/includes/webserverinstance.md)] instance with the same name that you define for the [!INCLUDE[server](../developer/includes/server.md)] instance will be created on Internet Information Services (IIS). If you're existing deployment has multiple web server instances that you want to reuse, you'll have to upgrade these instances later in this article.
 
-    4. Select **Next**.
-    5. On the **Specify parameters** page, set the fields as needed.
+    1. Select **Next**.
+    1. On the **Specify parameters** page, set the fields as needed.
 
         > [!IMPORTANT]
         > Clear the **SQL Database** field so that it is blank. At this time, do not set this to the database that you want to update; otherwise, the installation of the [!INCLUDE[server](../developer/includes/server.md)] will fail. You will connect the database to the [!INCLUDE[server](../developer/includes/server.md)] later after it is converted to the new platform.
 
-    6. Select **Apply** to complete the installation.
+    1. Select **Apply** to complete the installation.
 
 For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
