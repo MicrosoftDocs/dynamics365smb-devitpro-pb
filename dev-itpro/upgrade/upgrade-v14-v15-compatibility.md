@@ -32,6 +32,7 @@ The following table lists the Business Central 23 versions and the minimum versi
 |[23.6](https://support.microsoft.com/help/5037541)|[24.1](https://support.microsoft.com/help/5038531)|
 |[23.7](https://support.microsoft.com/help/5038530)<sup>[\[1\]](#1)</sup> |24.2|
 
+To view a list of all available updates for Business Central 2023 Release Wave 2, go to [Released Updates for Microsoft Dynamics 365 Business Central 2023 Release Wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-2-7a4f98e8-66b9-4484-9bc1-66c466d8a82d).
 ## Version 22 compatibility
 
 The following table lists the Business Central 22 versions and the minimum version of later releases that are compatible for upgrade.
