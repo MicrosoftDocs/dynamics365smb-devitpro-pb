@@ -2,8 +2,7 @@
 title: "XmlDocumentType.SelectNodes(Text, XmlNamespaceManager, var XmlNodeList) Method"
 description: "Selects a list of nodes matching the XPath expression."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
