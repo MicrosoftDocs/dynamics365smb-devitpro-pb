@@ -1356,6 +1356,9 @@
 ### [Service overview](service-overview.md)
 ### [Service scalability](service-scalability.md)
 ### [Service operations](service-operations.md)
+## Auditing
+### [Auditing overview](auditing/auditing-overview.md)
+### [Auditing in Purview](auditing/audit-events-in-purview.md)
 <!-- begin performance -->
 # Performance
 ## [Performance overview](performance/performance-overview.md)

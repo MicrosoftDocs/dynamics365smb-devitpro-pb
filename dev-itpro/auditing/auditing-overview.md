@@ -15,5 +15,5 @@ An effective business solution must incorporate comprehensive auditing capabilit
 - [Auditing events in Purview](/audit-events-in-purview.md)  
 - [Authorization assessment](/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)  
 - [Data auditing](/dynamics365/business-central/across-log-changes)  
-- [Security auditing](security-auditing.md)  
+- [Security auditing](../security/security-auditing.md)  
 - [Data classification](/dynamics365/business-central/admin-classifying-data-sensitivity)  
