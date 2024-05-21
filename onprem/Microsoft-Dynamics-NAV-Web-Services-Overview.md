@@ -2,11 +2,7 @@
 title: Web Services Overview
 description: Web services are a lightweight, industry-standard way to make application functionality available to a variety of external systems and users.
 author: edupont04
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ---
 # Microsoft Dynamics NAV Web Services Overview

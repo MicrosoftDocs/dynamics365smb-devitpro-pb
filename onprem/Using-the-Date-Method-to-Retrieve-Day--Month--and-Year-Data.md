@@ -1,10 +1,6 @@
 ---
 title: "Using the Date Method to Retrieve Day, Month, and Year Data"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 389a5299-4b33-46ba-baa6-62bc4332d261
 caps.latest.revision: 18

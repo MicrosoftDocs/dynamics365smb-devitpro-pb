@@ -1,10 +1,6 @@
 ---
 title: "Modifying, Uninstalling, or Repairing Microsoft Dynamics NAV"
-ms.custom: na
 ms.date: 06/05/2016
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c36a66ec-4edb-4dea-a95a-7246ef0d9a3c
 caps.latest.revision: 25

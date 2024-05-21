@@ -1,10 +1,6 @@
 ---
 title: "Adding Actions to Pages"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5035ae11-828f-4d28-ba42-c28acec87ab7
 caps.latest.revision: 14

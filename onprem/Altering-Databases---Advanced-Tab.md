@@ -1,10 +1,6 @@
 ---
 title: "Altering Databases - Advanced Tab"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 121a43fb-8514-4d0d-a20d-331c413bd77c
 caps.latest.revision: 12

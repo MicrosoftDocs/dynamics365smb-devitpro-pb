@@ -1,11 +1,7 @@
 ---
 title: Couple and Synchronize Records Manually
 description: Synchronizing an integration table mapping enables data syncing in all records of Dynamics NAV table and Dynamics 365 for Sales entity that coupled together.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---

@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Creating a Link from a Report to a Report"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9d74d7e1-2409-4c2a-96f1-280a4d47c7f1
 caps.latest.revision: 23

@@ -1,10 +1,8 @@
 ---
 title: "TestIsolation Property"
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 01226286-33b5-41a5-991c-5db627a077d8
 caps.latest.revision: 6

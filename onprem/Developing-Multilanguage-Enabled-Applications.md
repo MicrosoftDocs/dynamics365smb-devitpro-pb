@@ -1,10 +1,6 @@
 ---
 title: "Developing Multilanguage-Enabled Applications"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1d887bde-09e2-4e7e-a553-85d8630a78f9
 caps.latest.revision: 21

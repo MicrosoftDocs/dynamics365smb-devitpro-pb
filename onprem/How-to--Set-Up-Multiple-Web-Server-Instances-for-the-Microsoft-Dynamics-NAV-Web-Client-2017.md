@@ -1,10 +1,6 @@
 ---
 title: "How to: Set Up Multiple Web Server Instances for the Microsoft Dynamics NAV Web Client"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 28566a8f-eccf-4344-bc00-1df9b6918783
 caps.latest.revision: 29

@@ -1,10 +1,7 @@
 ---
 title: "TableIDExpr Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bdbfd7ca-01ef-4553-a223-4fc5c80b955d
 caps.latest.revision: 4

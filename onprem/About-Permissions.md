@@ -1,11 +1,7 @@
 ---
 title: "About Permissions"
 author: edupont04
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0adbd6ea-16d6-4030-9f3b-d9b02b447191
 caps.latest.revision: 14

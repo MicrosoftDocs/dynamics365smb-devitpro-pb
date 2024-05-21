@@ -1,10 +1,6 @@
 ---
 title: "How to: Modify Menu Items in a MenuSuite"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 75036bbe-8bb0-455e-ac76-2ab3ed61b617
 caps.latest.revision: 26

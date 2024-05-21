@@ -1,10 +1,7 @@
 ---
 title: "Numeric Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9fa14511-7807-4f9e-823f-bab30edbdd95
 caps.latest.revision: 10

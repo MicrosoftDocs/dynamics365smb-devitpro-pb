@@ -1,10 +1,6 @@
 ---
 title: "Business Areas and Functional Areas"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e288921a-31f4-4587-8ad4-5a8010501060
 caps.latest.revision: 9

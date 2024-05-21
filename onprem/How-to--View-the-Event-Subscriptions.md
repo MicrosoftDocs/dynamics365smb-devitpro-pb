@@ -1,10 +1,6 @@
 ---
 title: "How to: View the Event Subscriptions"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 59c5f3db-2c12-47eb-8a06-3e101e11971b
 caps.latest.revision: 3
