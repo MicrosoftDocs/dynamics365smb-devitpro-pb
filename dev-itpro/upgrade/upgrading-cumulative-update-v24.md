@@ -415,6 +415,39 @@ Follow these steps if your existing solution uses the Microsoft System Applicati
 
     Upgrading data updates the data in the tables of the tenant database to the schema changes made to tables of the System Application.
 
+## Upgrade Business Foundation
+
+### Microsoft Business Foundation
+
+Follow these steps if your existing solution uses the Microsoft Business Foundation.
+
+1. Publish the Business Central Business Foundation extension (Microsoft_Business Foundation.app).
+
+    The **Business Foundation** extension contains an expansive set of open source modules that make it easier to build, maintain, and easily upgrade on-premises and online apps. You find the Microsoft_Business Foundation.app in the **Applications\BusinessFoundation\Source** folder of installation media (DVD).
+
+    ```powershell
+    Publish-NAVApp -ServerInstance $BcServerInstance -Path "<path to Microsoft_Business Foundation.app>"
+    ```
+
+2. Synchronize the tenant with the Business Central Business Foundation extension (Microsoft_Business Foundation):
+
+    ```powershell
+    Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "Business Foundation" -Version $NewBcVersion
+    ```
+
+    Replace `$NewBcVersion` with the exact version of the published Business Foundation.
+
+    With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID. This process can take several minutes.
+3. Run the data upgrade on the Business Foundation.
+
+    To run the data upgrade, use the [Start-NavAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
+
+    ```powershell
+    Start-NAVAppDataUpgrade -ServerInstance $BcServerInstance -Tenant $TenantId -Name "Business Foundation" -Version $NewBcVersion
+    ```
+
+    Upgrading data updates the data in the tables of the tenant database to the schema changes made to tables of the Business Foundation.
+   
 ## Upgrade Base Application
 
 ### Microsoft Base Application
