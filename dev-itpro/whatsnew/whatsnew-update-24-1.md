@@ -44,11 +44,9 @@ Check out the new [!INCLUDE [prod_short](../includes/prod_short.md)] channel on 
 
 ### Upcoming Business Central Office Hours Calls
 
-<!--During May, we'll host the following call, which you can already register for today:
+Join the Office Hour Call Thursday June 13 to about Business Central integration with Power Platform and Dataverse.
 
-- **May xx:** tbd-->
-
-Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
+Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). 
 Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).
 
 ### Features becoming mandatory soon
