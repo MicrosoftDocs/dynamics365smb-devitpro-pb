@@ -2,8 +2,7 @@
 title: "JsonObject.Keys() Method"
 description: "Gets a set of keys of the JsonObject."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

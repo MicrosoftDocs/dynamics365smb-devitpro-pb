@@ -2,8 +2,7 @@
 title: "ModuleDependencyInfo.Id() Method"
 description: "Gets the app ID of the specified app."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
