@@ -2,8 +2,7 @@
 title: "DataTransfer.AddConstantValue(Any, Integer) Method"
 description: "Specifies the given value is to be set in the given field in the destination table."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -2,8 +2,7 @@
 title: "System.Abs(Decimal) Method"
 description: "Calculates the absolute value of a number (Decimal, Integer or BigInteger)."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
