@@ -2,8 +2,7 @@
 title: "OnDelete (Table Extension) Trigger"
 description: "Runs when the user tries to delete a record."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
