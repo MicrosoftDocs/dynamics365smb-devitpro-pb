@@ -61,7 +61,7 @@ The **Cloud Migration Management** page gives you access to details about the da
 
 ## Fix errors
 
-If errors occur, fix them then rerun the data replication. For information about some of the most common issues, go to [Data replication troubleshooting](migration-data-replication-troubleshooting.md).
+If errors occur during data replication, fix them then rerun the data replication. For more information about some common errors, refer to the [Microsoft troubleshooting documentation for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central) under **Cloud migration**.
 
 When you're ready to run the data replication again, select **Run date replication**. In general, only data changed since the last replication is replicated. To learn more, go to [Rerunning data replication](migration-data-replication.md#rerunning-data-replication).
 
