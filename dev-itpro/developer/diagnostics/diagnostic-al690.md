@@ -2,8 +2,7 @@
 title: "Compiler Error AL0690"
 description: "The primary key '{0}' on table '{1}' (the first one in the key list) must not have the IncludedFields property set."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

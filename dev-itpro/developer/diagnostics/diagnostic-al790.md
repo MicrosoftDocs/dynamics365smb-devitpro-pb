@@ -2,8 +2,7 @@
 title: "Compiler Warning AL0790"
 description: "The using directive for '{0}' appeared previously in this namespace declaration."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

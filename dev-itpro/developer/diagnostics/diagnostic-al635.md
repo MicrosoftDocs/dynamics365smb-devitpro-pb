@@ -2,8 +2,7 @@
 title: "Compiler Warning (Future Error) AL0635"
 description: "A method with 'OnPrem' scope cannot be used as event subscriber."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

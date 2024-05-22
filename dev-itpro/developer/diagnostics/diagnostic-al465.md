@@ -2,8 +2,7 @@
 title: "Compiler Error AL0465"
 description: "The property '{0}' does not accept references to external files."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

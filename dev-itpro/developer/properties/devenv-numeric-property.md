@@ -2,8 +2,7 @@
 title: "Numeric Property"
 description: "Sets a value that requires that users enter only numbers in the field."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

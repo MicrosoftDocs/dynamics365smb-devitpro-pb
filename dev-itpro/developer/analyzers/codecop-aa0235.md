@@ -2,8 +2,7 @@
 title: "CodeCop Info AA0235"
 description: "When using trigger 'OnInstallAppPerCompany' in a codeunit with 'Subtype = Install' you should also add a 'Company-Initialize'::'OnCompanyInitialize' event subscriber to ensure that new companies also have the correct setup."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

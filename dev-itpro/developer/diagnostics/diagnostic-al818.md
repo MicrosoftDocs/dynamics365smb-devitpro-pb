@@ -2,8 +2,7 @@
 title: "Compiler Warning (Future Error) AL0818"
 description: "The {0} '{1}' already defines an event called '{2}' with the same parameter types in '{3}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -2,7 +2,7 @@
 title: "SessionSettingsHandler Attribute"
 description: "Specifies a SessionSettingsHandler method, which handles RequestSessionUpdate statements."
 ms.author: solsen
-ms.date: 06/15/2022
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -29,7 +29,7 @@ Specifies a SessionSettingsHandler method, which handles RequestSessionUpdate st
 > **Version**: _Available or changed with runtime version 3.0._
 ```AL
 [SessionSettingsHandler]
-procedure SessionSettingsHandler(var SessionSettings: SessionSettings) : Boolean
+procedure SessionSettingsHandler(var SessionSettings: SessionSettings) : Boolean;
 ```
 > [!IMPORTANT]
 > The above signature requires the SessionSettingsHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).

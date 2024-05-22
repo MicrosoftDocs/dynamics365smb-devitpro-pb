@@ -2,8 +2,7 @@
 title: "Compiler Error AL0193"
 description: "Argument {0}: cannot convert from '{1}' to the type of Argument 1 '{2}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

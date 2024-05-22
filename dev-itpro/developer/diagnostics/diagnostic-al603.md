@@ -2,8 +2,7 @@
 title: "Compiler Warning AL0603"
 description: "An implicit conversion is being performed from a value of type '{0}' to a value of type '{1}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
