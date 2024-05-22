@@ -2,8 +2,7 @@
 title: "OnAssistEdit (Page Field Extension) Trigger"
 description: "Runs in place of the AssistEdit property features that are provided in the application."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
