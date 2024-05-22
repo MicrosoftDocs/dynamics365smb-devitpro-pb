@@ -944,6 +944,7 @@
 #### [AA0245](analyzers/codecop-aa0245.md)
 #### [AA0246](analyzers/codecop-aa0246.md)
 #### [AA0247](analyzers/codecop-aa0247.md)
+#### [AA0248](analyzers/codecop-aa0248.md)
 #### [AA0448](analyzers/codecop-aa0448.md)
 #### [AA0462](analyzers/codecop-aa0462.md)
 #### [AA0470](analyzers/codecop-aa0470.md)

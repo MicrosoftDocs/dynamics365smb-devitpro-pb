@@ -2,8 +2,7 @@
 title: "CodeCop Warning AA0240"
 description: "Email and Phone No must not be present in any part of the source code that might be collected as telemetry data."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
