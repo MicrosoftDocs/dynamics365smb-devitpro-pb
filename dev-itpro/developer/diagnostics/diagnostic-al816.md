@@ -2,8 +2,7 @@
 title: "Compiler Warning (Future Error) AL0816"
 description: "The property '{0}' cannot be set if the property '{1}' is set to '{2}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

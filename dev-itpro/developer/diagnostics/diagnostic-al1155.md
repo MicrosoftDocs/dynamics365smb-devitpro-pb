@@ -2,8 +2,7 @@
 title: "Compiler Error AL1155"
 description: "Missing folder specification for '{0}' option."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

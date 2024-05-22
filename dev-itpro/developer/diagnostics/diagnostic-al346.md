@@ -2,8 +2,7 @@
 title: "Compiler Error AL0346"
 description: "The methods '{0}' can only be used on Columns that have a Date or DateTime type."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

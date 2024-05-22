@@ -2,8 +2,7 @@
 title: "Compiler Error AL0716"
 description: "The {0} name '{1}' is reserved for future AL language features."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
