@@ -2,8 +2,7 @@
 title: "RequestPage.Activate([Boolean]) Method"
 description: "Activates the current page on the client if possible."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

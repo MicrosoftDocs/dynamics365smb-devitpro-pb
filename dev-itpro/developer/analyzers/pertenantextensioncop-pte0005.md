@@ -2,8 +2,7 @@
 title: "PerTenantExtensionCop Error PTE0005"
 description: "The compilation target of an application must be a value that is allowed in a multi-tenant SaaS environment."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
