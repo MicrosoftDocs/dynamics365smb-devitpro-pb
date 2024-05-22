@@ -2,8 +2,7 @@
 title: "Compiler Error AL0813"
 description: "The property '{0}' can only be specified when the property '{1}' has a value of '{2}' if the runtime version is '{3}' or higher."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

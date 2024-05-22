@@ -2,8 +2,7 @@
 title: "CodeCop Warning AA0201"
 description: "When ApplicationArea is set to 'Basic', you must also specify 'Suite'."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

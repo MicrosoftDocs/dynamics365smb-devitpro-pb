@@ -2,8 +2,7 @@
 title: "Compiler Error AL1033"
 description: "An error occurred while loading the included rule set file {0} - {1}."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

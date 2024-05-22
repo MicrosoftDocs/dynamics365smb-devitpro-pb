@@ -2,8 +2,7 @@
 title: "Compiler Error AL0384"
 description: "The name of all the columns and all the labels defined in a report must be unique."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

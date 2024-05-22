@@ -2,8 +2,7 @@
 title: "Compiler Error AL0575"
 description: "You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

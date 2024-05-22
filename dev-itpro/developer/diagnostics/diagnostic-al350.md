@@ -2,8 +2,7 @@
 title: "Compiler Error AL0350"
 description: "The column '{0}' cannot be used multiple times when defining the order of the resulting dataset."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

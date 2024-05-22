@@ -2,8 +2,7 @@
 title: "TableConnectionType System Option"
 description: "Use variables of this data type to specify the type of connection to an external database."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

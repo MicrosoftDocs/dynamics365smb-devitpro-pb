@@ -2,8 +2,7 @@
 title: "Permissions Property"
 description: "Sets whether an object has additional permission required to perform some operations on one or more tables."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

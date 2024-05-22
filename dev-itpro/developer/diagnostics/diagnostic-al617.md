@@ -2,8 +2,7 @@
 title: "Compiler Warning (Future Error) AL0617"
 description: "Event trigger 'OnBeforeActionEvent' cannot be used because the action '{0}' specifies the 'RunObject' property."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,8 +2,7 @@
 title: "Compiler Warning AL1072"
 description: "The name for the preprocessing symbol is not valid; '{0}' is not a valid identifier."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

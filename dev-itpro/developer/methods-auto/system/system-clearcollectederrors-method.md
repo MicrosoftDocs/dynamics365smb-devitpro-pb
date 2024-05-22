@@ -2,8 +2,7 @@
 title: "System.ClearCollectedErrors() Method"
 description: "Clears all collected errors from the current collection scope."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

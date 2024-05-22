@@ -2,8 +2,7 @@
 title: "Compiler Error AL0353"
 description: "A Column must have a valid data source or have the 'Method' property set to 'Count'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

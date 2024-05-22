@@ -2,8 +2,7 @@
 title: "JsonObject.Replace(Text, Duration) Method"
 description: "Replaces the value of the property with the given key with the new value."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

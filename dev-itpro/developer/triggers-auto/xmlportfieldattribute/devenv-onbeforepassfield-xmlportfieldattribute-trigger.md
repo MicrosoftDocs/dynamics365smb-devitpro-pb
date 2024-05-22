@@ -2,8 +2,7 @@
 title: "OnBeforePassField (Xml Port Field Attribute) Trigger"
 description: "Runs before a field is passed to the XML document."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

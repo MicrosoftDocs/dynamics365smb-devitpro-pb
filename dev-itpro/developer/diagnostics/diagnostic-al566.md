@@ -2,8 +2,7 @@
 title: "Compiler Error AL0566"
 description: "The field '{0}' is using an Id {1} that is reserved for system fields."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

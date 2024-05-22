@@ -2,8 +2,7 @@
 title: "Compiler Error AL0155"
 description: "A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

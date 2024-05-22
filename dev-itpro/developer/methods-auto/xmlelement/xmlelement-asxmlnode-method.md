@@ -2,8 +2,7 @@
 title: "XmlElement.AsXmlNode() Method"
 description: "Converts the node to an XmlNode."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

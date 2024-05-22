@@ -2,8 +2,7 @@
 title: "Compiler Error AL0787"
 description: "The control with name '{0}' cannot be declared in the page customization '{1}' targeting page '{2}' because it is not using a source table field as source expression."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

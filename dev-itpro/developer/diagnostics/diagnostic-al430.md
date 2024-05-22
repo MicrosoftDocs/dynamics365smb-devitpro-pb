@@ -2,8 +2,7 @@
 title: "Compiler Error AL0430"
 description: "The parameter '{0}' has a type which is not serializable and therefore cannot be used in the given context."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

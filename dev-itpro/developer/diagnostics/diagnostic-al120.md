@@ -2,8 +2,7 @@
 title: "Compiler Error AL0120"
 description: "A local or parameter named '{0}' cannot be declared in this scope because that name is used in an enclosing local scope to define a local or parameter."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

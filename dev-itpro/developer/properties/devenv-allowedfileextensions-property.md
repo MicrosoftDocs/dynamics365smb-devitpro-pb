@@ -2,8 +2,7 @@
 title: "AllowedFileExtensions Property"
 description: "Specifies the list of allowed file extensions."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -23,7 +22,7 @@ Specifies the list of allowed file extensions.
 
 ## Remarks
 
-The `AllowedFileExtensions` property allows you to specify, which file types the user can drag to a drop zone. The property is a comma-separated list of file extensions. For example, if you want to allow the user to drag .jpg, .jpeg, and .png files to the drop zone, you would set the property to `AllowedFileExtensions = '.jpg','.jpeg','.png';`. For mor information, see [Add drop zones for file uploads](devenv-extending-drop-zones.md).
+The `AllowedFileExtensions` property allows you to specify, which file types the user can drag to a drop zone. The property is a comma-separated list of file extensions. For example, if you want to allow the user to drag .jpg, .jpeg, and .png files to the drop zone, you would set the property to `AllowedFileExtensions = '.jpg','.jpeg','.png';`. <!-- For mor information, see [Add drop zones for file uploads](devenv-extending-drop-zones.md). -->
 
 ## See also
 

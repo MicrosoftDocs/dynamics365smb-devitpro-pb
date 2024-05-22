@@ -2,8 +2,7 @@
 title: "AppSourceCop Error AS0015"
 description: "The TranslationFile flag must be added to the features array in the app.json file."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

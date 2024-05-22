@@ -2,8 +2,7 @@
 title: "FieldRef.GetEnumValueCaption(Integer) Method"
 description: "Gets an Enum value (or Option member) caption for the from the Enum metadata for the field that is currently selected."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

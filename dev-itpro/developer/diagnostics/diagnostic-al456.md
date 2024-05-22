@@ -2,8 +2,7 @@
 title: "Compiler Error AL0456"
 description: "The number of option ordinal values is not valid."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

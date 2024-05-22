@@ -2,8 +2,7 @@
 title: "Compiler Warning (Future Error) AL0694"
 description: "The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

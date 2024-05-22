@@ -2,8 +2,7 @@
 title: "Compiler Error AL0329"
 description: "The {0} property must reference a top-level DataItem."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

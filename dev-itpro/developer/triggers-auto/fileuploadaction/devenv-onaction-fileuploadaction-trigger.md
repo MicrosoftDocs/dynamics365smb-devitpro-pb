@@ -2,8 +2,7 @@
 title: "OnAction (File Upload Action) Trigger"
 description: "Runs when a user uploads files on a page."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -20,7 +19,7 @@ Runs when a user uploads files on a page.
 
 ## Syntax
 ```AL
-trigger OnAction(Files: ListOfFileUpload)
+trigger OnAction(Files: List of [FileUpload])
 begin
     ...
 end;
@@ -29,7 +28,7 @@ end;
 ### Parameters
 
 *Files*  
-&emsp;Type: [ListOfFileUpload](../../methods-auto/listoffileupload/listoffileupload-data-type.md)  
+&emsp;Type: [List of [FileUpload]](../../methods-auto/list/list-data-type.md)  
 List of the files uploaded.  
 
 

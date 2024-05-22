@@ -2,8 +2,7 @@
 title: "AppSourceCop Error AS0100"
 description: "The 'application' property in the app.json file must be specified on apps targeting the AppSource marketplace."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

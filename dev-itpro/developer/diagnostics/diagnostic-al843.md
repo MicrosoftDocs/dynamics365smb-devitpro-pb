@@ -2,8 +2,7 @@
 title: "Compiler Error AL0843"
 description: "The property '{0}' can only be used if the {1}'s type is '{2}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

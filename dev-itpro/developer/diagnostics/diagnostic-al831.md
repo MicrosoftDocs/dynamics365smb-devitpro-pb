@@ -2,8 +2,7 @@
 title: "Compiler Error AL0831"
 description: "The method '{0}' is not supported as the implementation for the interface method because it is a try function."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

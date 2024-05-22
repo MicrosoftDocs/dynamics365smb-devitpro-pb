@@ -2,8 +2,7 @@
 title: "Compiler Error AL0306"
 description: "A field list has to contain at least one field."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

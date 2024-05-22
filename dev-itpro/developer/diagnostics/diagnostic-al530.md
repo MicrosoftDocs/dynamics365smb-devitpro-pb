@@ -2,8 +2,7 @@
 title: "Compiler Error AL0530"
 description: "The maximum length for the type '{0}' is {1}."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

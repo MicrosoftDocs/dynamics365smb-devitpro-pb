@@ -2,8 +2,7 @@
 title: "DataTransfer.CopyFields() Method"
 description: "Copies the fields specified in AddFields with filters from AddSourceFilter, and the join conditions from AddJoins in one bulk operation in SQL."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,8 +2,7 @@
 title: "Compiler Error AL1043"
 description: "The runtime version '{0}' is not supported by the AL compiler."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

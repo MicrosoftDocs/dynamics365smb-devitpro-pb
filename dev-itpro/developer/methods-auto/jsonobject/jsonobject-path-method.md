@@ -2,8 +2,7 @@
 title: "JsonObject.Path() Method"
 description: "Retrieves the JSON path of the object relative to the root of its containing tree."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

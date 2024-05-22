@@ -2,8 +2,7 @@
 title: "Compiler Warning AL1026"
 description: "A warning occurred during XML validation: '{0}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,8 +2,7 @@
 title: "Compiler Warning AL0739"
 description: "The name of {0} '{1}' cannot be empty."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

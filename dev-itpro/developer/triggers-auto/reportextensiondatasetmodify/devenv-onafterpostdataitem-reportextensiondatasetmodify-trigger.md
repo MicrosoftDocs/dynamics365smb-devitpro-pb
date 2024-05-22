@@ -2,8 +2,7 @@
 title: "OnAfterPostDataItem (Report Extension Data Set Modify) Trigger"
 description: "Runs after the OnPostDataItem trigger of the base data item."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

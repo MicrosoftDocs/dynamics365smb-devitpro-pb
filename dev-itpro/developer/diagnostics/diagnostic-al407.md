@@ -2,8 +2,7 @@
 title: "Compiler Error AL0407"
 description: "The generic '{0}' type expects {1} type arguments."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

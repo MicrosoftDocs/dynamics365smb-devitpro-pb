@@ -2,8 +2,7 @@
 title: "Compiler Error AL0732"
 description: "Access modifier '{0}' is not allowed for member '{1}' in the context of object type '{2}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

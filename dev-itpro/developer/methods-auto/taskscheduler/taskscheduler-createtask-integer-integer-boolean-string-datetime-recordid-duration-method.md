@@ -2,8 +2,7 @@
 title: "TaskScheduler.CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration) Method"
 description: "Adds a task to be run by the task scheduler."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,8 +2,7 @@
 title: "CodeCop Warning AA0230"
 description: "Version number should not be specified for internal assemblies to avoid errors during upgrade procedures."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

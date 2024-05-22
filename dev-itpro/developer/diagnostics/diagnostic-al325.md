@@ -2,8 +2,7 @@
 title: "Compiler Error AL0325"
 description: "The field '{0}' in the table '{1}' cannot be included in a key because its type is '{2}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

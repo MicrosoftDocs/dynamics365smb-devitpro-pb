@@ -2,8 +2,7 @@
 title: "NavApp.GetArchiveVersion() Method"
 description: "Returns the version of the extension that the specified table is part of."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

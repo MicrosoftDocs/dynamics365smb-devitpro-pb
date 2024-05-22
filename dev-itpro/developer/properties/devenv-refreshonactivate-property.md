@@ -2,8 +2,7 @@
 title: "RefreshOnActivate Property"
 description: "Set this property on pages where you want to refresh the data when the user navigates back from another page."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

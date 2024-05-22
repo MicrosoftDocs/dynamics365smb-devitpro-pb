@@ -662,6 +662,8 @@ In version 14.0, with the base application being C/AL, there are three types of 
 
 In version 15, with the move to AL, the only symbols required are the system symbols, which are still provided on the version 15.0 installation media (DVD).
 
+<!--  Symbols in AL extensions are essentially the definitions of the objects and elements (such as fields, data types, and methods) that are used in the AL code to create the extension. They are used by the AL compiler to understand the structure and dependencies of the code.-->
+
 ### Customization extensions
 Customization extensions are AL extensions that add functionality to the base application or system application. These extensions can be Microsoft (1st party) or 3rd party extensions. 3rd party extensions are extensions that your organization provides or extensions that are provided by others, such as from ISVs or from App Source.
   

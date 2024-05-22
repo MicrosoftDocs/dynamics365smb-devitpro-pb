@@ -2,8 +2,7 @@
 title: "FileUpload Data Type"
 description: "Represents a file."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -23,7 +22,8 @@ The following methods are available on instances of the FileUpload data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[CreateInStream(InStream, TextEncoding)](fileupload-createinstream-method.md)|Creates an InStream object for a file. This enables you to import or read data from the file.|
+|[CreateInStream(InStream)](fileupload-createinstream-instream-method.md)|Creates an InStream object for a file. This enables you to import or read data from the file.|
+|[CreateInStream(InStream, TextEncoding)](fileupload-createinstream-instream-textencoding-method.md)|Creates an InStream object for a file. This enables you to import or read data from the file.|
 |[FileName()](fileupload-filename-method.md)|Gets the file name.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

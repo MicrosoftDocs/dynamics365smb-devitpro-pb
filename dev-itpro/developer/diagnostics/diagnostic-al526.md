@@ -2,8 +2,7 @@
 title: "Compiler Error AL0526"
 description: "The referenced page '{0}' of type 'API' is only allowed inside pages of PageType 'API'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,8 +2,7 @@
 title: "AllowMultipleFiles Property"
 description: "Specifies if the action accepts multiple files."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -23,7 +22,7 @@ Specifies if the action accepts multiple files.
 
 ## Remarks
 
-The `AllowMultipleFiles` property specifies if the action accepts multiple files. The property is a Boolean value. If set to `true`, the action accepts multiple files. If set to `false`, the action only accepts a single file. For more information, see [Add drop zones for file uploads](devenv-extending-drop-zones.md).
+The `AllowMultipleFiles` property specifies if the action accepts multiple files. The property is a Boolean value. If set to `true`, the action accepts multiple files. If set to `false`, the action only accepts a single file. <!-- For more information, see [Add drop zones for file uploads](devenv-extending-drop-zones.md). -->
 
 ## See also  
 

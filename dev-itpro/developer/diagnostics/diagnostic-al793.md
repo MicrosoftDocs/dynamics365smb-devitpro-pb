@@ -2,8 +2,7 @@
 title: "Compiler Error AL0793"
 description: "The property '{0}' cannot be used on a multi-select action with '{1}' scope."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

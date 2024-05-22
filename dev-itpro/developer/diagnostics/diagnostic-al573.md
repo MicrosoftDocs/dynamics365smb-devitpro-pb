@@ -2,8 +2,7 @@
 title: "Compiler Warning (Future Error) AL0573"
 description: "{0} is not valid for client expressions."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

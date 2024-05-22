@@ -2,8 +2,7 @@
 title: "Compiler Error AL0241"
 description: "The signature of procedure '{0}' does not match the signature required by attribute '{1}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

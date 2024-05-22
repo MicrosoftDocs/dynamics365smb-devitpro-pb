@@ -2,8 +2,7 @@
 title: "Compiler Warning AL0821"
 description: "The method '{0}' is missing or does not have exactly one parameter of type {1}."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
