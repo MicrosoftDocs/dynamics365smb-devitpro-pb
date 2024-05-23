@@ -7548,8 +7548,17 @@
     "source_path": "dev-itpro/administration/api/dynamics_apicategoryroutes_get.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/administration/itpro-introduction-to-automation-apis",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/migrate-data-replication-run.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/welcome-business-central",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/migration-setup.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/welcome-business-central",
+    "redirect_document_id": false
    }
-
   ] 
 }
 

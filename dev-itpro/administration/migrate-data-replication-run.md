@@ -59,7 +59,7 @@ The **Cloud Migration Management** page gives you access to details about the da
    > [!TIP]
    > [!INCLUDE [cloud-migration-telemetry](../developer/includes/cloud-migration-telemetry.md)]
 
-## Fix errors
+## Troubleshoot and fix problems
 
 If errors occur during data replication, fix them then rerun the data replication. For more information about some common errors, refer to the [Microsoft troubleshooting documentation for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central) under **Cloud migration**.
 
