@@ -62,8 +62,7 @@ Apart from the troubleshooting tools described above, the following articles des
 
 Cloud migration:
 - [Troubleshoot cloud migration (overview)](../administration/migration-troubleshooting.md)
-- [Troubleshoot cloud migration (setup)](../administration/migration-setup-troubleshooting.md)
-- [Troubleshoot cloud migration (data replication)](../administration/migration-data-replication-troubleshooting.md)
+- [Troubleshoot cloud migration (setup and data replication)](/troubleshoot/dynamics-365/business-central/welcome-business-central)
 
 Performance: 
 - [Performance overview](../performance/performance-overview.md)
@@ -80,4 +79,3 @@ Web services:
 - [Troubleshoot web service errors](../webservices/web-service-troubleshooting.md)
 - [Troubleshooting OData calls](../webservices/dynamics-error-codes.md)
 - [Troubleshooting API calls](../webservices/dynamics-error-codes.md)
-

@@ -1310,8 +1310,7 @@
 ### Troubleshooting guides (TSGs)
 #### Troubleshoot cloud migration
 ##### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
-##### [Troubleshooting cloud migration setup](administration/migration-setup-troubleshooting.md)
-##### [Troubleshooting data replication](administration/migration-data-replication-troubleshooting.md)
+##### [Troubleshooting cloud migration setup and data replication](/troubleshoot/dynamics-365/business-central/welcome-business-central)
 #### [Troubleshoot report errors](developer/devenv-reports-troubleshooting.md)
 #### Troubleshoot web services
 ##### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
