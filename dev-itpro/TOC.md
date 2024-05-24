@@ -1286,9 +1286,7 @@
 #### [Using the Performance Profiler](administration/performance-profiler-overview.md)
 #### [Verifying report datasets](/dynamics365/business-central/report-analyze-excel)
 #### [Checking personalization issues](/dynamics365/business-central/ui-personalization-user)
-<!--#### [Troubleshooting user personalization can't be started](developer/devenv-troubleshooting-user-personalization.md)-->
 #### [Checking customization issues](/dynamics365/business-central/ui-personalization-manage)
-<!--#### [Troubleshooting profile configuration can't be started](developer/devenv-troubleshooting-profile-configuration.md)-->
 #### [Verifying user permissions](/dynamics365/business-central/ui-define-granular-permissions)
 #### [Investigating mobile app (on-premises)](developer/devenv-troubleshooting-the-mobile-app.md)
 ### Troubleshooting in AL

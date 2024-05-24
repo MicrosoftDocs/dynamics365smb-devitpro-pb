@@ -7550,12 +7550,12 @@
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/administration/migrate-data-replication-run.md",
+    "source_path": "dev-itpro/administration/migration-data-replication-troubleshooting.md",
     "redirect_url": "/troubleshoot/dynamics-365/business-central/welcome-business-central",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/administration/migration-setup.md",
+    "source_path": "dev-itpro/administration/migration-setup-troubleshooting.md",
     "redirect_url": "/troubleshoot/dynamics-365/business-central/welcome-business-central",
     "redirect_document_id": false
    },
