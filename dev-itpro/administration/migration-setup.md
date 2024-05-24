@@ -106,7 +106,9 @@ Complete the steps in the wizard to update the runtime service. If the change wa
 > [!CAUTION]
 > If you have mapped users in the first run of the cloud migration setup guide, then do not choose the **Define User Mappings** action again in subsequent runs.
 
-If you run into problems with the setup, go to [Cloud migration setup troubleshooting](migration-setup-troubleshooting.md).
+## Troubleshoot and fix problems
+
+If you have any problems during setup, refer to the [Cloud migration troubleshooting documentation for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central).
 
 ## Next steps
 

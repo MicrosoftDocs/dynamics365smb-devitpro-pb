@@ -13,6 +13,11 @@ author: SusanneWindfeldPedersen
 
 The following sections help you troubleshoot issues with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] so that you can *gather information* about a given problem, *identify the cause* of the problem, and eventually *implement a sustainable solution* that does not introduce new issues. Use the tools provided in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client to gain insights on trends in application behavior, identify performance issues, database locks, and more. Use profiling combined with debugging in sandboxes, or snapshot debugging in production environments to pinpoint what causes a specific issue. And if you want to investigate and troubleshooting things after they happened, then use telemetry and the tools around that feature.
 
+Troubleshooting articles
+For a large collection of troubleshooting articles, see the following site provided by Microsoft Support:
+
+Microsoft Dynamics 365 Supply Chain Management troubleshooting
+These articles explain how to determine, diagnose, and fix issues that you might encounter when you use Supply Chain Management. The articles are organized by feature area and each article focuses on a specific issue and how to solve it.
 
 ## Troubleshooting in the client
 These tools provided in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client can help you gain insights on trends in application behavior, identify performance issues, database locks, and more. 
@@ -27,9 +32,9 @@ These tools provided in the [!INCLUDE[prod_short](../developer/includes/prod_sho
 - Identify performance issues with the [Performance Profiler](../administration/performance-profiler-overview.md)
 - Verify report dataset with [Save Report Dataset to Excel](/dynamics365/business-central/report-analyze-excel)
 - Check personalization issues with [Personalized Pages](/dynamics365/business-central/ui-personalization-user)  
-- Mitigate can't start user personalization issues with [Troubleshooting user personalization can't be started](devenv-troubleshooting-user-personalization.md)  
+- Mitigate can't start user personalization issues with [Troubleshooting user personalization can't be started](/troubleshoot/dynamics-365/business-central/client/client-user-personalization)  
 - Check customization issues with [Customized Pages](/dynamics365/business-central/ui-personalization-manage)
-- Mitigate can't start profile configuration issues with [Troubleshooting profile configuration can't be started](devenv-troubleshooting-profile-configuration.md)
+- Mitigate can't start profile configuration issues with [Troubleshooting profile configuration can't be started](/troubleshoot/dynamics-365/business-central/client/client-profile-configuration)
 - Verify user permissions with [Effective Permissions](/dynamics365/business-central/ui-define-granular-permissions)
 - Investigate issues with [Mobile App On-Premises](devenv-troubleshooting-the-mobile-app.md)
 - Investigate issues with [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md).
@@ -62,8 +67,7 @@ Apart from the troubleshooting tools described above, the following articles des
 
 Cloud migration:
 - [Troubleshoot cloud migration (overview)](../administration/migration-troubleshooting.md)
-- [Troubleshoot cloud migration (setup)](../administration/migration-setup-troubleshooting.md)
-- [Troubleshoot cloud migration (data replication)](../administration/migration-data-replication-troubleshooting.md)
+- [Troubleshoot cloud migration (setup and data replication)](/troubleshoot/dynamics-365/business-central/welcome-business-central)
 
 Performance: 
 - [Performance overview](../performance/performance-overview.md)
@@ -80,4 +84,3 @@ Web services:
 - [Troubleshoot web service errors](../webservices/web-service-troubleshooting.md)
 - [Troubleshooting OData calls](../webservices/dynamics-error-codes.md)
 - [Troubleshooting API calls](../webservices/dynamics-error-codes.md)
-

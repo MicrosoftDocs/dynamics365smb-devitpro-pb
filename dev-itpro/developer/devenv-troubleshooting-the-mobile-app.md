@@ -19,11 +19,11 @@ The first thing to do is to check that the environment meets the prerequisites f
   
  [Troubleshooting: The File that You Are Trying to Use Is Too Large](Troubleshooting--The-File-that-You-Are-Trying-to-Use-Is-Too-Large.md) -->  
   
- [Troubleshooting: Icon Font Not Loaded](devenv-troubleshooting-icon-font-not-loaded.md)  
+ [Troubleshooting: Icon Font Not Loaded](/troubleshoot/dynamics-365/business-central/client/client-user-personalization)  
   
  [Troubleshooting: Device Date is Causing Connection Issues](devenv-troubleshooting-device-date-is-causing-connection-issues.md)  
   
- [Troubleshooting: Client Returns Wrong CLIENTTYPE](devenv-troubleshooting-client-returns-wrong-clienttype.md)  
+ [Troubleshooting: Client Returns Wrong CLIENTTYPE](/troubleshoot/dynamics-365/business-central/client/client-returns-wrong-clienttype)  
   
  <!-- [Troubleshooting: The Server Is Not Compatible](Troubleshooting--The-Server-Is-Not-Compatible.md) -->
 
