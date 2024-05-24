@@ -76,14 +76,11 @@ var
     i : Integer;
     c : Integer;
 begin
-    for i := 1 to StrLen(customerName) do 
-    begin
-        for i := 1 to StrLen(customerName) do
-            if counter.Get(customerName[i], c) then
-                counter.Set(customerName[i], c + 1)
-            else
-                counter.Add(customerName[i], 1);
-    end;
+    for i := 1 to StrLen(customerName) do
+        if counter.Get(customerName[i], c) then
+            counter.Set(customerName[i], c + 1)
+        else
+            counter.Add(customerName[i], 1);
 end;
 
 ```
