@@ -1,11 +1,7 @@
 ---
 title: Add Action Submenus to Pages
 description: Place the action submenus on pages under the main action tabs including Actions, Navigate, Report tabs in the Windows Client for Microsoft Dynamics NAV.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e757a8ef-8299-4229-aa44-059341100e0d
 caps.latest.revision: 19

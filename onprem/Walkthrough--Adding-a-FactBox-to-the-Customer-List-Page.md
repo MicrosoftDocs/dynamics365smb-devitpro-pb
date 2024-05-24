@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Adding a FactBox to the Customer List Page"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0f088e64-b1bb-4b17-8617-2b1b6ccfa000
 caps.latest.revision: 23

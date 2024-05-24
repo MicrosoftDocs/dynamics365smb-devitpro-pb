@@ -1,10 +1,6 @@
 ---
 title: "How to: Determine the Public Key Token of the Windows Client Control Add-in and .NET Framework Assembly"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f7ce3b2d-5e2e-4d2d-97fa-bed3a6add0d2
 caps.latest.revision: 20

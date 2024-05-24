@@ -2,8 +2,7 @@
 title: "AppSourceCop Warning AS0109"
 description: "The type of a table should not be changed from Normal to Temporary, because synchronizing the app will fail if the table contains data."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -1,10 +1,6 @@
 ---
 title: "Setting .NET Framework Types to Target the Microsoft Dynamics NAV Windows Client or Server"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 631f5c0e-5be3-4e24-87b0-6d01278e0786
 caps.latest.revision: 8

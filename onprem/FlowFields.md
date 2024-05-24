@@ -1,10 +1,6 @@
 ---
 title: "FlowFields"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 990a4cbc-d545-4568-aff8-30e7833edd59
 caps.latest.revision: 13

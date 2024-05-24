@@ -2,8 +2,7 @@
 title: "CodeCop Warning AA0245"
 description: "To avoid confusion, do not give parameters the same name as fields, methods, or actions in the same scope."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -2,8 +2,7 @@
 title: "System.ImportEncryptionKey(Text, Text) Method"
 description: "Points to a password protected file that contains the key on the current server."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

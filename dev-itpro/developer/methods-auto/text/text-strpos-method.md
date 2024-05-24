@@ -2,8 +2,7 @@
 title: "Text.StrPos(Text, Text) Method"
 description: "Searches for the first occurrence of substring inside a string."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

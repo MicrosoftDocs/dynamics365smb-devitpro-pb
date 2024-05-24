@@ -2,11 +2,7 @@
 title: "Integrating Dynamics NAV and Office"
 author: jswymer
 ms.author: edupont
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ---
 # Integrating [!INCLUDE[navnow](includes/navnow_md.md)] and Microsoft Office

@@ -2,11 +2,7 @@
 title: "C/AL WITH Statements"
 description: "Desription of the C/AL WITH statements."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e224ae1d-8147-419a-9b34-037729c75a2d
 caps.latest.revision: 11

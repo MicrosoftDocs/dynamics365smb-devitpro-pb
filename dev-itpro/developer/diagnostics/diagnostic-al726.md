@@ -2,8 +2,7 @@
 title: "Compiler Error AL0726"
 description: "An identifier, a literal, or an option access is expected as the value of a filter expression."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

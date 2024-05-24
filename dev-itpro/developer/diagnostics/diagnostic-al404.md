@@ -2,8 +2,7 @@
 title: "Compiler Error AL0404"
 description: "Property '{0}' is not allowed on a table extension."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

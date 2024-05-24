@@ -1,11 +1,7 @@
 ---
 title: Install an update
 description: This article describes the tasks required for getting the monthly update applied to your Dynamics 365 Business Central on-premises.
-ms.custom: na
 ms.date: 10/01/2019
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 author: jswymer

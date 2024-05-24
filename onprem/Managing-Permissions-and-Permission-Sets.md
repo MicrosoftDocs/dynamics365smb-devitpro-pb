@@ -1,11 +1,7 @@
 ---
 title: "Managing Permissions and Permission Sets"
 author: edupont04
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 392ea3d8-e127-4a7a-8404-c558aa8fef50
 ---

@@ -1,10 +1,6 @@
 ---
 title: "Custom Option"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ad0c2641-1896-48c5-bc9d-2af5cb695900
 caps.latest.revision: 21

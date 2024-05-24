@@ -1,10 +1,7 @@
 ---
 title: "TransactionModel Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1eb38214-45a5-4ffe-82d1-c7507af277ee
 caps.latest.revision: 11

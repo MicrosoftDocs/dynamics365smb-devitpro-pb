@@ -2,8 +2,7 @@
 title: "Compiler Error AL0710"
 description: "The DefaultRenderingLayout property can only be used with layouts specified in the report's rendering section."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

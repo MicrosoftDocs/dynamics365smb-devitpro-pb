@@ -2,8 +2,7 @@
 title: "Compiler Warning (Future Error) AL0685"
 description: "The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

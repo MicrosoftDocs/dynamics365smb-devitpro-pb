@@ -2,8 +2,7 @@
 title: "Compiler Error AL0476"
 description: "The trigger '{0}' can only be used if the property '{1}' of '{2}' is set."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

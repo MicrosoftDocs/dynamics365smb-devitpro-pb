@@ -1,10 +1,7 @@
 ---
 title: "MinOccurs Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e35b2d60-5c3e-499b-a4f9-f9b8481d69c8
 caps.latest.revision: 13
