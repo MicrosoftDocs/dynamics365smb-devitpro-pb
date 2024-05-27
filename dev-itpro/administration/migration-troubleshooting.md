@@ -14,9 +14,7 @@ In this article, you learn how to troubleshoot problems that you might experienc
 
 ## Cloud migration setup and data replication troubleshooting articles
 
-For a collection of troubleshooting articles related cloud migration setup and data replication, refer to the following site provided by Microsoft Support:
-
-[Cloud migration troubleshooting documentation for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central).
+For a collection of troubleshooting articles related cloud migration setup and data replication, refer to Microsoft troubleshooting documentation at [Cloud migration troubleshooting documentation for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central).
 
 The sections that follow provide guidance for general error that you might experience during cloud migration.
 

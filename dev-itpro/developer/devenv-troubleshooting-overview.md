@@ -69,7 +69,7 @@ Apart from the troubleshooting tools described above, the following articles des
 Cloud migration:
 
 - [Troubleshoot cloud migration (overview)](../administration/migration-troubleshooting.md)
-- [Troubleshoot cloud migration (setup and data replication)](/troubleshoot/dynamics-365/business-central/welcome-business-central) on Microsoft Support.
+- [Troubleshoot cloud migration (setup and data replication)](/troubleshoot/dynamics-365/business-central/welcome-business-central) in Microsoft troubleshooting documentation.
 
 Performance:
 
