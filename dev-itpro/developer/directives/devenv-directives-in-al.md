@@ -31,7 +31,7 @@ The following conditional preprocessor directives are supported in AL.
 
 |Conditional preprocessor directive |Description |
 |-----------------------|------------|
-|#if                    | Specifies the beginning of a conditional clause. The `#endif` clause ends it. Compiles the code between the directives if the specified symbol being checked is defined.|
+|#if                    | Specifies the beginning of a conditional clause. The `#endif` clause ends it. Compiles the code between the directives if the specified symbol being checked is defined. <br><br>  Inside the `#if` directive, you can use logical operators to create complex conditions. The supported logical operators are `#and`, `#or`, and `#not`.`#and` evaluates to `true` if both operands are true, `#or` evaluates to `true` if one of the operands is true, and `#not` negates the value of the operand. |
 |#else                  | Specifies a compound conditional clause. If none of the preceding clauses evaluate to `true`, the compiler will evaluate code between `#else` and `#endif`. |
 |#elif                  | Combines `else` and `if`. If `#elif` is `true` the compiler evaluates all code between `#elif` and the next conditional directive.|
 |#endif                 | Specifies the end of a conditional clause that begins with `#if`. |
