@@ -2,7 +2,7 @@
 title: Creating and interacting with an OData V4 unbound action
 description: Describing how to create and interact with an OData V4 Unbound Action in AL.
 author: ap3rus
-ms.date: 04/19/2023
+ms.date: 05/27/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: vlnagorn
