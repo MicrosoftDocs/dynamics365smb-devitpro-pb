@@ -33,9 +33,9 @@ These tools provided in the [!INCLUDE[prod_short](../developer/includes/prod_sho
 - Identify performance issues with the [Performance Profiler](../administration/performance-profiler-overview.md)
 - Verify report dataset with [Save Report Dataset to Excel](/dynamics365/business-central/report-analyze-excel)
 - Check personalization issues with [Personalized Pages](/dynamics365/business-central/ui-personalization-user)  
-- Mitigate can't start user personalization issues with [Troubleshooting user personalization can't be started](/troubleshoot/dynamics-365/business-central/client/client-user-personalization)  
+- Mitigate can't start user personalization issues with [Troubleshooting user personalization can't be started](/troubleshoot/dynamics-365/business-central/client/client-user-personalization) in Microsoft troubleshooting documentation. 
 - Check customization issues with [Customized Pages](/dynamics365/business-central/ui-personalization-manage)
-- Mitigate can't start profile configuration issues with [Troubleshooting profile configuration can't be started](/troubleshoot/dynamics-365/business-central/client/client-profile-configuration)
+- Mitigate can't start profile configuration issues with [Troubleshooting profile configuration can't be started](/troubleshoot/dynamics-365/business-central/client/client-profile-configuration) in Microsoft troubleshooting documentation
 - Verify user permissions with [Effective Permissions](/dynamics365/business-central/ui-define-granular-permissions)
 - Investigate issues with [Mobile App On-Premises](devenv-troubleshooting-the-mobile-app.md)
 - Investigate issues with [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md).
