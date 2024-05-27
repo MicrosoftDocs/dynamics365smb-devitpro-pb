@@ -7548,8 +7548,37 @@
     "source_path": "dev-itpro/administration/api/dynamics_apicategoryroutes_get.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/administration/itpro-introduction-to-automation-apis",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/migration-data-replication-troubleshooting.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/welcome-business-central",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/migration-setup-troubleshooting.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/welcome-business-central",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-troubleshooting-user-personalization.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/client/client-user-personalization",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-troubleshooting-profile-configuration.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/client/client-profile-configuration",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-troubleshooting-icon-font-not-loaded.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/client/client-icon-font-not-loaded",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-troubleshooting-client-returns-wrong-clienttype",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/client/client-returns-wrong-clienttype",
+    "redirect_document_id": false
    }
-
   ] 
 }
 
