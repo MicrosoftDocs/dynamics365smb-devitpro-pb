@@ -2,8 +2,7 @@
 title: "Compiler Warning (Future Error) AL0788"
 description: "An area of type '{0}' is only valid on pages of type(s) '{1}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

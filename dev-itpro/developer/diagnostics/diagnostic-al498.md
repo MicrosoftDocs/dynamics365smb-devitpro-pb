@@ -2,8 +2,7 @@
 title: "Compiler Error AL0498"
 description: "The attribute '{0}' can only be used on procedures that have the attribute '{1}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

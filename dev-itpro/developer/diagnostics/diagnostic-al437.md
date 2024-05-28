@@ -2,8 +2,7 @@
 title: "Compiler Error AL0437"
 description: "The value of the '{0}' property cannot include empty members."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

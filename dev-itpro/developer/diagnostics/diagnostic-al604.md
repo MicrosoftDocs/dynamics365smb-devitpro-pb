@@ -2,8 +2,7 @@
 title: "Compiler Warning (Future Error) AL0604"
 description: "Use of implicit 'with' will be removed in the future."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

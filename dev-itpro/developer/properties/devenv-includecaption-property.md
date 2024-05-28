@@ -2,8 +2,7 @@
 title: "IncludeCaption Property"
 description: "Sets whether to include the caption of a field in the data set of a report."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -2,8 +2,7 @@
 title: "Compiler Error AL0176"
 description: "Expected one of the calculation formula methods (Average,Count,Exist,Min,Max,Lookup,Sum)."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

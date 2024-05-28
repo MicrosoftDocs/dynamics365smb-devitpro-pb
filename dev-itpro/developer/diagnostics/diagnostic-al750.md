@@ -2,8 +2,7 @@
 title: "Compiler Error AL0750"
 description: "Enum values can't be nested."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

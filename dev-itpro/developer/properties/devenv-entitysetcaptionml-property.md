@@ -2,8 +2,7 @@
 title: "EntitySetCaptionML Property"
 description: "Sets the caption of a set of entities."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

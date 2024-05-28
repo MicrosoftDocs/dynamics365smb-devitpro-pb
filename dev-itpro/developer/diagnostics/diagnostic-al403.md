@@ -2,8 +2,7 @@
 title: "Compiler Error AL0403"
 description: "To modify '{0}' you must add at least one property or trigger."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

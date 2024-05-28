@@ -2,8 +2,7 @@
 title: "Compiler Error AL1034"
 description: "The link '{0}' must contain a placeholder with value 0 for the user locale."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

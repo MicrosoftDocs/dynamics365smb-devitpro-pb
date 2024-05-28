@@ -2,8 +2,7 @@
 title: "Compiler Error AL0342"
 description: "You cannot combine two DataItems at the same level because unions are not supported."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
