@@ -39,12 +39,12 @@ Every event emitted to Purview auditing solutions uses the [common schema](/offi
 |Event name|Description|
 |---|---|
 |Administered environment|Activities that create, update, or delete environments|
-|Configured extension|Activities that create, update, or delete extensions|
+|Configured extension|Activities that configure extensions|
 |Administered user|Activities that create, update, or delete users|
 |Administered company|Activities that create, update, or delete companies|
-|Configured integration|Activities that create, update, or delete integrations|
-|Configured Copilot|Activities that create, update, or delete Copilot|
-|Configured cloud migration|Activities that create, update, or delete cloud migration|
+|Configured integration|Activities that configure integrations|
+|Configured Copilot|Activities that configure Copilot|
+|Configured cloud migration|Activities that configure cloud migration|
 |Administered report|Activities that create, update, or delete reports|
 
 ### Administered environment activities
