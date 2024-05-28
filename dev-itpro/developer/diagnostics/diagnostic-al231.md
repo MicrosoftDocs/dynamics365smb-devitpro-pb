@@ -2,8 +2,7 @@
 title: "Compiler Error AL0231"
 description: "A member with ID '{0}' is already defined in {1} '{2}' by the extension '{3}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

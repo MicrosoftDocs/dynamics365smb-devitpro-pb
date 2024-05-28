@@ -2,8 +2,7 @@
 title: "Compiler Error AL0417"
 description: "Control add-in '{0}' not found."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

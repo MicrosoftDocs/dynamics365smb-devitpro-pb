@@ -2,8 +2,7 @@
 title: "Compiler Error AL0379"
 description: "The name '{0}' cannot be used as an identifier because it does not comply with the Common Language Specification."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

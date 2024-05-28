@@ -2,8 +2,7 @@
 title: "Compiler Error AL0385"
 description: "IncludeCaption can be set to true only if the source of the column is a named field."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

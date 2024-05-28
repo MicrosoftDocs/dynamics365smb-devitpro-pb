@@ -2,8 +2,7 @@
 title: "Report Data Type"
 description: "Is used to display, print, or process information from a database."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -36,7 +35,7 @@ The following methods are available on the Report data type.
 |[SaveAsHtml(Integer, Text [, var Record])](report-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.|
 |[SaveAsPdf(Integer, Text [, var Record])](report-saveaspdf-method.md)|Saves a report as a .pdf file.|
 |[SaveAsWord(Integer, Text [, var Record])](report-saveasword-method.md)|Saves a report on the computer that is running the server as a Microsoft Word (.doc) document.|
-|[SaveAsXml(Integer, Text [, var Record])](report-saveasxml-method.md)|Saves the resulting data set of a query as an .xml file. The following code shows the syntax of the SAVEASXML function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
+|[SaveAsXml(Integer, Text [, var Record])](report-saveasxml-method.md)|Saves the resulting data set of a query as an .xml file. The following code shows the syntax of the SaveAsXml method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
 |[ValidateAndPrepareLayout(Integer, InStream, var InStream, ReportLayoutType)](report-validateandpreparelayout-method.md)|Validates if the provided report layout is compatible with the specified report and performs the required modifications so that it can be used for rendering.|
 |[WordLayout(Integer, InStream)](report-wordlayout-method.md)|Gets the Word report layout that is used on a report and returns it as a data stream.|
 |[WordXmlPart(Integer [, Boolean])](report-wordxmlpart-method.md)|Returns the report data structure as structured XML that is compatible with Microsoft Word custom XML parts. The method has an instance call and a static call. The following code shows the syntax of the WORDXMLPART function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
@@ -73,7 +72,7 @@ The following methods are available on instances of the Report data type.
 |[SaveAsHtml(Text)](reportinstance-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.|
 |[SaveAsPdf(Text)](reportinstance-saveaspdf-method.md)|Saves a report as a .pdf file.|
 |[SaveAsWord(Text)](reportinstance-saveasword-method.md)|Saves a report on the computer that is running the server as a Microsoft Word (.doc) document.|
-|[SaveAsXml(Text)](reportinstance-saveasxml-method.md)|Saves the resulting data set of a query as an .xml file.The following code shows the syntax of the SAVEASXML method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
+|[SaveAsXml(Text)](reportinstance-saveasxml-method.md)|Saves the resulting data set of a query as an .xml file.The following code shows the syntax of the SaveAsXml method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
 |[SetTableView(var Record)](reportinstance-settableview-method.md)|Applies the table view on the current record as the table view for the page, report, or XmlPort.|
 |[ShowOutput()](reportinstance-showoutput--method.md)|Returns the current setting of whether a section should be printed, and changes this setting.|
 |[ShowOutput(Boolean)](reportinstance-showoutput-boolean-method.md)|Returns the current setting of whether a section should be printed, and changes this setting.|

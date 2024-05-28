@@ -2,8 +2,7 @@
 title: "Page.EnqueueBackgroundTask(var Integer, Integer [, var Dictionary of [Text, Text]] [, Integer] [, PageBackgroundTaskErrorLevel]) Method"
 description: "Creates and queues a background task that runs the specified codeunit (without a UI) in a read-only child session of the page session."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
