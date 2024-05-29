@@ -2,8 +2,7 @@
 title: "Compiler Warning AL0254"
 description: "Sorting field '{0}' should be part of the keys for table '{1}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

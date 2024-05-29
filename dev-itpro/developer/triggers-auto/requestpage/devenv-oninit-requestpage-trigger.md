@@ -2,8 +2,7 @@
 title: "OnInit (Request Page) Trigger"
 description: "Initializes the user-defined variables on the page."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

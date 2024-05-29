@@ -2,8 +2,7 @@
 title: "Compiler Error AL0272"
 description: "The anchoring symbol '{0}' must be a grouping symbol."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

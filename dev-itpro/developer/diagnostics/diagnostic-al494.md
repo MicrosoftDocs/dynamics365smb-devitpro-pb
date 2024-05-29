@@ -2,8 +2,7 @@
 title: "Compiler Error AL0494"
 description: "The action area '{0}' can only directly contain groups."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

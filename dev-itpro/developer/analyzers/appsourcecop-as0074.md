@@ -2,8 +2,7 @@
 title: "AppSourceCop Hidden AS0074"
 description: "The Obsolete Tag must be the same across branches."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

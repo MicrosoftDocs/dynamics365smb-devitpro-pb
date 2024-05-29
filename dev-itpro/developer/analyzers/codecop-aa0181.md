@@ -2,8 +2,7 @@
 title: "CodeCop Warning AA0181"
 description: "Avoid getting the dataset when an enumeration is not used, which will decrease performance."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -2,8 +2,7 @@
 title: "Compiler Warning AL0756"
 description: "The division by Abs(integer) will change its behavior in release version 11."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

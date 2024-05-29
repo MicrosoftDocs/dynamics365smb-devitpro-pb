@@ -2,8 +2,7 @@
 title: "Compiler Error AL0427"
 description: "Field {0} cannot be converted to type {1}."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

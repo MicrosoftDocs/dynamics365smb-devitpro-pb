@@ -2,8 +2,7 @@
 title: "Compiler Error AL0737"
 description: "The {0} '{1}' cannot be referenced in {2} '{3}' because '{1}' is defined in the promoted part of the action part while '{3}' uses promoted action properties."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

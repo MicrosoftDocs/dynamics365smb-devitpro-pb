@@ -2,8 +2,7 @@
 title: "Compiler Error AL0518"
 description: "A method with name '{0}' possessing one Handler attribute is already defined in this test codeunit."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
