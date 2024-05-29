@@ -8,7 +8,7 @@ metadata:
   description: AL programming language for Business Central developer documentation
   author: SusanneWindfeldPedersen
   ms.author: solsen
-  ms.date: 05/16/2023
+  ms.date: 05/24/2024
   ms.topic: landing-page
   ms.custom: bap-template
   ms.collection: get-started
@@ -43,7 +43,7 @@ landingContent:
             url: https://stackoverflow.com/questions/tagged/dynamics-al
           - text: AL on Discord
             url: https://t.co/XubV3r9gYp
-          - text: AL on Twitter
+          - text: AL on X
             url: https://twitter.com/search?q=%23bcalhelp&src=typed_query
 
   - title: Understand building blocks

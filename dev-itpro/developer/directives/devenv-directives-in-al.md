@@ -31,12 +31,16 @@ The following conditional preprocessor directives are supported in AL.
 
 |Conditional preprocessor directive |Description |
 |-----------------------|------------|
-|#if                    | Specifies the beginning of a conditional clause. The `#endif` clause ends it. Compiles the code between the directives if the specified symbol being checked is defined.|
+|#if                    | Specifies the beginning of a conditional clause. The `#endif` clause ends it. Compiles the code between the directives if the specified symbol being checked is defined. <br><br>  Inside the `#if` directive, you can use logical operators to create complex conditions. The supported logical operators are shown in the [next section](#logical-operators-in-conditional-directives). |
 |#else                  | Specifies a compound conditional clause. If none of the preceding clauses evaluate to `true`, the compiler will evaluate code between `#else` and `#endif`. |
 |#elif                  | Combines `else` and `if`. If `#elif` is `true` the compiler evaluates all code between `#elif` and the next conditional directive.|
 |#endif                 | Specifies the end of a conditional clause that begins with `#if`. |
 |#define                | Defines a symbol that can be used to specify conditions for a compilation. For example, `#define DEBUG`. The scope of the symbol is the file that it was defined in.|
 |#undef                 | Undefines a symbol. |
+
+### Logical operators in conditional directives
+
+The operators `&&` (and), `||` (or), and `!` (not) are supported in conditional directives. `&&` (and) evaluates to `true` if both operands are true, `||` evaluates to `true` if one of the operands is true, and `!` negates the value of the operand.
 
 ## Defining preprocessorSymbols
 
