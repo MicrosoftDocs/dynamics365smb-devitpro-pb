@@ -1,7 +1,7 @@
 ---
 title: Protected variables
 description: The protected keyword can be used to make variables accessible between tables and table extensions, pages and page extensions and report and report extensions.
-ms.date: 01/05/2023
+ms.date: 05/24/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.collection: get-started
@@ -98,7 +98,7 @@ pageextension 50101 MyPageExt extends MyPage
 
 ## See also
 
-[AL Method Reference](./methods-auto/library.md)   
+[AL method reference](./methods-auto/library.md)   
 [Properties](properties/devenv-properties.md)  
-[Access Property](properties/devenv-access-property.md)  
-[Extensible Property](properties/devenv-extensible-property.md)
+[Access property](properties/devenv-access-property.md)  
+[Extensible property](properties/devenv-extensible-property.md)
