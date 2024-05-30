@@ -20,11 +20,11 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes
 
-- [Automate country of origin listed for item tracking code in Intrastat reporting](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/automate-country-origin-listed-item-tracking-code-intrastat-reporting)
-- [Discover report and data analysis content easily](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/discover-report-data-analysis-content-easily)
-- [Enable additional countries and regions](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/enable-additional-countries-regions)
-- [Use drag and drop on file upload dialog to attach multiple files](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/use-drag-drop-attach-multiple-files)
-- [Use linked environment in Dataverse integration](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/use-linked-environment-dataverse-integration)
+- [Automate country of origin listed for item tracking code in Intrastat reporting](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/automate-country-origin-listed-item-tracking-code-intrastat-reporting)
+- [Discover report and data analysis content easily](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/discover-report-data-analysis-content-easily)
+- [Enable additional countries and regions](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/enable-additional-countries-regions)
+- [Use drag and drop on file upload dialog to attach multiple files](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/use-drag-drop-attach-multiple-files)
+- [Use linked environment in Dataverse integration](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/use-linked-environment-dataverse-integration)
 
 ## Localization updates
 
