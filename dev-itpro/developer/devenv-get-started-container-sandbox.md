@@ -67,6 +67,7 @@ To set up a Docker container sandbox using an existing sandbox environment, foll
 9. Select <kbd>F5</kbd> to run the script.
 
     The console pane displays the progress of the script. When the script has completed successfully, information like in the following example displays:
+
     ```powershell
     ...
     Container IP Address: 172.22.147.63
