@@ -44,7 +44,7 @@ Note that new customers will automatically get the latest builds of Business Cen
 
 ### New Business Central online service features
 
-The following featured weere rolled out during May 2024:
+The following featured were rolled out during May 2024:
 
 - [Audit Business Central operations in Microsoft Purview (preview)](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/audit-business-central-operations-purview)
 - [Allow customers to consent to Microsoft Support accessing their data](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/allow-customers-consent-support-accessing-their-data)
