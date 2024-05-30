@@ -8,7 +8,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export, bacpac, backup
 ms.date: 04/15/2021
 ms.author: jswymer
-
+ms.reviewer: jswymer
 ---
 # Exporting Databases in the Admin Center
 

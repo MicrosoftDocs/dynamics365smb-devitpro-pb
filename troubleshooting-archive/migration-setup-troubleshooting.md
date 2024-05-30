@@ -3,7 +3,7 @@ title: Cloud migration setup troubleshooting
 description: Troubleshooting cloud migration setup.
 author: jswymer
 ms.author: jswymer 
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 ms.topic: troubleshooting 
 ms.date: 07/05/2023
 ms.custom: bap-template

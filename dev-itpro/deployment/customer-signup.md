@@ -5,6 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 11/29/2023
+ms.reviewer: jswymer
 ---
 
 # Trials and sign-ups for Business Central online

@@ -3,7 +3,7 @@ title: Run cloud migration setup for Dynamics GP migration
 description: This article explains how to run the Cloud Migration Setup assisted setup guide to configure the components and connection for migrating data from a Dynamics GP on-premises database to Business Central online environment.
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 ms.topic: how-to 
 ms.date: 02/29/2024
 ms.custom: bap-template

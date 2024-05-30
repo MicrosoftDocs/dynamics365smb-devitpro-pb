@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 04/17/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Adding actions to a page

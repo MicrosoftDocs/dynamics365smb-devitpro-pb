@@ -3,7 +3,7 @@ title: User experience guidelines for errors
 description: Describes how to handle error dialogs in AL code.
 author: samirdal
 ms.author: samirdal
-ms.reviewer: solsen
+ms.reviewer: jswymer
 
 ms.topic: conceptual
 ms.date: 12/21/2023

@@ -4,7 +4,7 @@ description: Describes of the process of migrating DLLs used from AL from .NET F
 author: kennienp
 ms.custom: bap-template
 ms.date: 04/18/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: kepontop
 ---

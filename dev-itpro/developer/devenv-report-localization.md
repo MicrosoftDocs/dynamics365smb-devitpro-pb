@@ -5,6 +5,7 @@ author: nhsejth
 ms.date: 01/04/2023
 ms.topic: conceptual
 ms.author: nhsejth
+ms.reviewer: jswymer
 ---
 
 # Localizing the report data formatting and caption strings

@@ -6,6 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 08/25/2022
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # dataverseEntityChange resource type

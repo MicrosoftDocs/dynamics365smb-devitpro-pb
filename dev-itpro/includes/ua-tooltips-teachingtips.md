@@ -3,6 +3,7 @@ author: jswymer
 ms.topic: include
 ms.date: 03/22/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 There are different rules for tooltips and teaching tips.
 

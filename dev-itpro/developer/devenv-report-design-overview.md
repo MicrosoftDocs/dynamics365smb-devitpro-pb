@@ -4,7 +4,7 @@ description: Design a report by defining the dataset and designing the layout. R
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 12/08/2023
-ms.reviewer: jswymer
+ms.reviewer: solsen
 
 ms.topic: overview
 ms.author: solsen

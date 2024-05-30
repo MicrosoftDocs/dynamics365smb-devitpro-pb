@@ -3,6 +3,7 @@ author: jswymer
 ms.topic: include
 ms.date: 10/05/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 You can upgrade to [!INCLUDE[prod_short](prod_short.md)] online from supported versions of [!INCLUDE[navnow_md](navnow_md.md)] on-premises, provided that your application customization is handled by extensions. Any data from tables with code customizations cannot be carried forward from [!INCLUDE[navnow_md](navnow_md.md)].  
 

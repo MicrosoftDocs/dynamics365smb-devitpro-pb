@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox
 ms.date: 03/03/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Production and sandbox environments

@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.date: 04/17/2024
 ms.topic: article
+ms.reviewer: solsen
 ---
 
 # Development and administration for Dynamics 365 Business Central

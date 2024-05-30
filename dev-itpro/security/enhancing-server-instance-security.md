@@ -6,6 +6,7 @@ author: SusanneWindfeldPedersen
 ms.topic: conceptual
 ms.author: solsen
 ms.date: 04/01/2021
+ms.reviewer: solsen
 ---
 # Hardening [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server Security
 

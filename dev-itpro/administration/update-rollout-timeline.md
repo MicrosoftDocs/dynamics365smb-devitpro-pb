@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
 ms.date: 01/09/2024
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Major updates and minor updates for Business Central online

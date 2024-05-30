@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
 ms.topic: how-to
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Working with API limits in Dynamics 365 Business Central

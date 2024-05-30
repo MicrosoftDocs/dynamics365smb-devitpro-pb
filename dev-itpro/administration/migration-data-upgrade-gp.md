@@ -3,7 +3,7 @@ title: Upgrade data for Dynamics GP cloud migration
 description: This article explains the process for running the data upgrade as part of Dynamics GP cloud migration. 
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 ms.topic: conceptual 
 ms.date: 02/29/2024
 ms.custom: bap-template 

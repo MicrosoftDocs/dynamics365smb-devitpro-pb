@@ -5,6 +5,7 @@ ms.author: jswymer
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Deployment Topologies

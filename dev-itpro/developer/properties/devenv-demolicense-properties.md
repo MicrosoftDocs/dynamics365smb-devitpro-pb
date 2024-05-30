@@ -5,6 +5,7 @@ ms.author: solsen
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.date: 03/23/2023
+ms.reviewer: solsen
 ---
 
 # Demonstration License for Business Central On-Premises

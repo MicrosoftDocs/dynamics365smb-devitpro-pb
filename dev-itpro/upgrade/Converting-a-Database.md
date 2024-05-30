@@ -6,6 +6,7 @@ ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Converting a Database to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019  - Technical Upgrade
 

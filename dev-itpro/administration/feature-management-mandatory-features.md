@@ -3,7 +3,7 @@ title: Optional features now mandatory
 description: Learn about the features that were optional but are now mandatory.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: jswymer
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.date: 02/15/2024
 ms.custom: bap-template

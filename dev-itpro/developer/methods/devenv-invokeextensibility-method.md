@@ -5,6 +5,7 @@ ms.author: solsen
 ms.date: 04/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # InvokeExtensibilityMethod method
