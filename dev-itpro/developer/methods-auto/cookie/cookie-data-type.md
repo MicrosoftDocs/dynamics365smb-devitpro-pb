@@ -46,5 +46,5 @@ The following data types have methods that return or use the `Cookie` data type:
 
 ## See also
 
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  
