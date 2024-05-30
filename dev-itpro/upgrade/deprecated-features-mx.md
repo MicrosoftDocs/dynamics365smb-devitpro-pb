@@ -4,7 +4,7 @@ description: We're constantly streamlining and adjusting our app in-step with ma
 author: bholtorf
 ms.topic: conceptual
 ms.devlang: al
-ms. search.keywords: deprecated, Mexico, local functionality
+ms.search.keywords: deprecated, Mexico, local functionality
 ms.date: 12/19/2023
 ms.author: bholtorf
 ms.reviewer: bholtorf

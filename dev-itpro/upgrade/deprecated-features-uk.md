@@ -5,7 +5,7 @@ author: bholtorf
 
 ms.topic: conceptual
 ms.devlang: al
-ms. search.keywords: deprecated, United Kingdom, local functionality
+ms.search.keywords: deprecated, United Kingdom, local functionality
 ms.date: 04/01/2021
 ms.author: bholtorf
 ms.reviewer: bholtorf

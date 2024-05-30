@@ -5,7 +5,7 @@ author: jenolson
 ms.topic: conceptual
 ms.devlang: al
 ms.reviewer: jswymer
-ms. search.keywords: cloud, edge, gp, migration
+ms.search.keywords: cloud, edge, gp, migration
 ms.search.form: 4003
 ms.date: 02/28/2024
 ms.author: jswymer
