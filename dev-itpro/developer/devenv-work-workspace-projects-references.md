@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 05/06/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Work with multiple projects and project references

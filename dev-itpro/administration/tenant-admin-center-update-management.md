@@ -8,6 +8,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
 ms.date: 05/31/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Managing Updates in the Business Central Admin Center

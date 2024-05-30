@@ -5,6 +5,7 @@ author: jswymer
 ms.date: 06/09/2022
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Missing Indexes in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]

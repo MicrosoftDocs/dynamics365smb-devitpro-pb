@@ -4,7 +4,7 @@ description: Describes the features that have been moved, removed, or replaced i
 author: brentholtorf
 ms.author: bholtorf
 ms.date: 03/26/2024
-ms.reviewer: jswymer
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.custom: bap-template
 ---

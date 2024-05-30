@@ -5,6 +5,7 @@ author: blrobl
 ms.date: 09/20/2023
 ms.topic: conceptual
 ms.author: brobledodiaz
+ms.reviewer: jswymer
 ---
 
 # Using namespaces with XMLports

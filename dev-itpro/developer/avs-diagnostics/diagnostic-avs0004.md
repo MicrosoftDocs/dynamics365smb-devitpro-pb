@@ -3,7 +3,7 @@ title: AVS Error AVS0004
 description: "The specified ruleset could not be loaded. Details: {0}"
 ms.author: thpeder
 ms.date: 04/26/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: reference
 author: thpeder
 ---

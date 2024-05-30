@@ -7,7 +7,7 @@ ms.devlang: al
 ms.search.keywords: deprecated, obsolete
 ms.date: 04/01/2021
 ms.author: jswymer
-
+ms.reviewer: jswymer
 ---
 
 # Deprecated Fields, and Fields Marked as Obsolete

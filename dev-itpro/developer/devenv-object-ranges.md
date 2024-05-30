@@ -6,6 +6,7 @@ ms.topic: conceptual
 ms.author: solsen
 ms.date: 03/01/2024
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Object ranges in [!INCLUDE[prod_short](includes/prod_short.md)]

@@ -5,6 +5,7 @@ ms.date: 02/09/2023
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2023 Release Wave 1 Update
 

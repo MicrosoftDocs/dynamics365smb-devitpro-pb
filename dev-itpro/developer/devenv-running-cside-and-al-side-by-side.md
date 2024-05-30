@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 06/03/2022
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Run C/SIDE and AL side-by-side

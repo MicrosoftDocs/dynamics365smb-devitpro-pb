@@ -7,6 +7,7 @@ ms.custom: bap-template
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 11/13/2023
+ms.reviewer: jswymer
 ---
 # Setting up Multifactor Authentication (MFA) for Business Central  
 

@@ -8,7 +8,7 @@ ms.devlang: al
 ms.search.keywords: deprecated, Dutch, NL, Netherlands, local functionality
 ms.date: 04/01/2021
 ms.author: bholtorf
-
+ms.reviewer: bholtorf
 ---
 
 # Deprecated Features in the Dutch Version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]

@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/22/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Analyzing Page View Telemetry
 

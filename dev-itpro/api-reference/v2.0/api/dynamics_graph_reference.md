@@ -6,6 +6,7 @@ ms.topic: get-started
 ms.devlang: al
 ms.date: 12/21/2023
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Microsoft Graph reference

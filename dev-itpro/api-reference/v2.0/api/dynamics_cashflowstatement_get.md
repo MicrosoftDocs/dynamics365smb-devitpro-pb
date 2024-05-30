@@ -6,6 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 07/30/2021
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get cashFlowStatements

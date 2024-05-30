@@ -8,7 +8,7 @@ ms.devlang: al
 ms.search.keywords: deprecated, United States, local functionality
 ms.date: 04/01/2021
 ms.author: bholtorf
-
+ms.reviewer: bholtorf
 ---
 
 # Deprecated Features in the United States Version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]

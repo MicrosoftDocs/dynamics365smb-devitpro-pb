@@ -8,6 +8,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # paymentTerms resource type (v1.0)

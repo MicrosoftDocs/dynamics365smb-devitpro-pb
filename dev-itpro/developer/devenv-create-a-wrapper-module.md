@@ -5,6 +5,7 @@ author: bholtorf
 ms.topic: conceptual
 ms.author: bholtorf
 ms.date: 04/01/2021
+ms.reviewer: bholtorf
 ---
 
 # Create a .NET Wrapper Module

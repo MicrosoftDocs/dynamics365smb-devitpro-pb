@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Report Extension Example

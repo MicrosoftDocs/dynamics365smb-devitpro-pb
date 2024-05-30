@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
 ms.date: 02/24/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Managing Production and Sandbox Environments in the Admin Center

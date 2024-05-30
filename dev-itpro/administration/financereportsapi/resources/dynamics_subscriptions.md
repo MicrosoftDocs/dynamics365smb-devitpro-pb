@@ -6,6 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 08/11/2022
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # subscriptions resource type (Beta)

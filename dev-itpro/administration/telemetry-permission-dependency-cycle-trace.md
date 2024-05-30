@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.search.keywords: administration, dependency cycle, permission set, telemetry
 ms.date: 12/20/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Analyzing permission dependency cycle trace telemetry
 

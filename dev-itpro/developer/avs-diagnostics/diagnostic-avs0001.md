@@ -3,7 +3,7 @@ title: AVS Error AVS0001
 description: "The 'app.json' could not be found in the specified package."
 ms.author: thpeder
 ms.date: 02/26/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: reference
 author: thpeder
 ---

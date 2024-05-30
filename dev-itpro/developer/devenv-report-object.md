@@ -4,7 +4,7 @@ description: The report object in AL for Business Central allows to create a new
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/18/2024
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
 ---

@@ -6,6 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 08/24/2021
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # opportunity resource type

@@ -9,6 +9,7 @@ ms.custom: bap-template
 ms.collection:
   - get-started
   - bap-ai-copilot
+ms.reviewer: solsen
 ---
 
 # Build the copilot capability in AL

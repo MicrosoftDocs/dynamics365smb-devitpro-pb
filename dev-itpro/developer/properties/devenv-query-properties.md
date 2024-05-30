@@ -4,6 +4,7 @@ ms.author: solsen
 ms.date: 04/01/2021
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 # Query Properties
 
