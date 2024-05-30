@@ -3,7 +3,7 @@ title: AVS Error AVS0006
 description: "The runtime version '{0}' is not supported for the release '{1}' because its latest supported runtime version is '{2}'."
 ms.author: thpeder
 ms.date: 04/26/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: reference
 author: thpeder
 ---

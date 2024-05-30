@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 09/27/2023
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Entitlement object

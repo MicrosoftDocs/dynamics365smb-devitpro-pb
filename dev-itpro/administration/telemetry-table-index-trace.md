@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, table keys, indexes, keys, indexes
 ms.date: 12/22/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyze Table Index Trace Telemetry

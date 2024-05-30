@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Creating and Interacting with an OData V4 Bound Action

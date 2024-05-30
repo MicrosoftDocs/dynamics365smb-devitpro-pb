@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
 ms.date: 12/22/2023
 ms.author: kepontop
-ms.reviewer: jsywmer
+ms.reviewer: jswymer
 ---
 
 # Feature management telemetry

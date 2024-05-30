@@ -7,6 +7,7 @@ ms.devlang: al
 ms. search.keywords: deprecated, Italy, local functionality
 ms.date: 12/19/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Deprecated features in the Italian version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]

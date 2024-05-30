@@ -8,7 +8,7 @@ ms.devlang: al
 ms. search.keywords: deprecated, Denmark, local functionality
 ms.date: 04/01/2021
 ms.author: jswymer
-
+ms.reviewer: jswymer
 ---
 
 # Deprecated Features in the Danish Version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]

@@ -4,7 +4,7 @@ description: Debugging in AL with Visual Studio Code and the AL Language extensi
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/10/2024
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started

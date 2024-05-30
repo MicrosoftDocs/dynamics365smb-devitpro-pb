@@ -3,7 +3,7 @@ title: AVS Error AVS0002
 description: "The runtime version '{0}' of the extension is too recent for the release of Business Central being validated. The latest supported runtime version is '{1}'."
 ms.author: thpeder
 ms.date: 04/26/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: reference
 author: thpeder
 ---

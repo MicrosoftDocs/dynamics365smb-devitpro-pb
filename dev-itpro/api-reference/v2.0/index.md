@@ -6,6 +6,7 @@ ms.topic: get-started
 ms.devlang: al
 ms.date: 03/14/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Welcome to the API (v2.0) for Business Central

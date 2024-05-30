@@ -6,6 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 12/04/2023
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # securityGroup resource type

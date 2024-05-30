@@ -4,7 +4,7 @@ description: Describes the steps involved in creating a report that uses a Word 
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/24/2024
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
 ---

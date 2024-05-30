@@ -5,6 +5,7 @@ author: solsen
 ms.date: 02/28/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Maintain AppSource apps and Per-Tenant extensions in Business Central online

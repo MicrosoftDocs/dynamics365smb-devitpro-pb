@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
 ms.date: 01/13/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Restoring an Environment in the Admin Center

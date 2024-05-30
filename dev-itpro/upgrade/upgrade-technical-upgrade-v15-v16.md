@@ -6,6 +6,7 @@ ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 description: Upgrade from Business Central 2019 (v15) to 2020 (v16) with our comprehensive guide. Learn about prerequisites, database preparation, and post-upgrade tasks.
+ms.reviewer: jswymer
 ---
 # Technical upgrade from version 15 to version 16
 

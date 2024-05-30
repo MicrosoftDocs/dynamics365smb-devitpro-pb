@@ -3,6 +3,7 @@ author: jswymer
 ms.topic: include
 ms.date: 12/29/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 As the delegated administrator, if you are logged into the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can use the **New Support Request** link in the **Support** menu to submit a support request on behalf of your customer.  
 

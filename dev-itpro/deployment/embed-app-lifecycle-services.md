@@ -5,6 +5,7 @@ description: Provides an overview of Lifecycle Services for Embed App in Busines
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 
 # Managing an [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [!INCLUDE[embed app](../developer/includes/embedapp.md)] in Microsoft Lifecycle Services

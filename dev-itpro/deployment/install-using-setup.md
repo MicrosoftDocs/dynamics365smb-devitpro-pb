@@ -5,7 +5,8 @@ ms.date: 03/04/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.custom: bap-template 
+ms.custom: bap-template
+ms.reviewer: jswymer
 ---
 
 # Installing Business Central using Setup

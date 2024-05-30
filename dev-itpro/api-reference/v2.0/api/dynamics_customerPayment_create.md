@@ -7,6 +7,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 02/01/2023
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create customerPayments

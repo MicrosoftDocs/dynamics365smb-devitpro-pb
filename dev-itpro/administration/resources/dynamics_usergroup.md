@@ -6,6 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 12/03/2023
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # userGroup resource type

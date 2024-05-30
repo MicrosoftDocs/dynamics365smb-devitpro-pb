@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Write, WriteText, Read, and ReadText Method Behavior for Line Endings and Zero Terminators 

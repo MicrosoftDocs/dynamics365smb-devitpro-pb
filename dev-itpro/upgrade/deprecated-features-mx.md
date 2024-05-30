@@ -7,6 +7,7 @@ ms.devlang: al
 ms. search.keywords: deprecated, Mexico, local functionality
 ms.date: 12/19/2023
 ms.author: bholtorf
+ms.reviewer: bholtorf
 ---
 
 # Deprecated features in the Mexican version of Microsoft Dynamics 365 Business Central

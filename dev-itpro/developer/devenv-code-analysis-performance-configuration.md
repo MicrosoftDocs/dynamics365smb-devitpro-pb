@@ -3,7 +3,7 @@ title: Code analysis performance configuration
 description: Guidance on troubleshooting and optimizing code analysis performance in AL for Business Central.
 author:  BazookaMusic 
 ms.author: sodragon
-ms.reviewer: solsen
+ms.reviewer: jswymer
 
 ms.topic: conceptual
 ms.date: 01/09/2023

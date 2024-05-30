@@ -3,7 +3,7 @@ title: Controlling Edit in Excel on list pages
 description: This article explains how to control the Edit in Excel system action on list pages.
 ms.date: 05/02/2024
 ms.topic: conceptual
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.author: kepontop
 author: kennienp
 ---

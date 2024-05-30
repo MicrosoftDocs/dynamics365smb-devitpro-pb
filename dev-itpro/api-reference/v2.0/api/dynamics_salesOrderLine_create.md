@@ -6,6 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 04/28/2023
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create salesOrderLines

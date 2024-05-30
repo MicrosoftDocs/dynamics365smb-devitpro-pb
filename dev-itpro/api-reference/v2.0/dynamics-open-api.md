@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 09/10/2021
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # OpenAPI specification for Dynamics 365 Business Central

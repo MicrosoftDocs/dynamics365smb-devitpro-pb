@@ -5,6 +5,7 @@ author: jswymer
 ms.date: 06/21/2022
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Database Wait Statistics in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]

@@ -5,6 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 03/07/2023
+ms.reviewer: jswymer
 ---
 
 # Transferring data between tables using DataTransfer

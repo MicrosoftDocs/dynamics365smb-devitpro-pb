@@ -5,6 +5,7 @@ author: jswymer
 ms.date: 06/10/2021
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Upgrading an App by Using ForceSync

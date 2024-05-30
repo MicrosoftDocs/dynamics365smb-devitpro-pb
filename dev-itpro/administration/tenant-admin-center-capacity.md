@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, storage, capacity, quota, limit, database size
 ms.date: 03/08/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Managing Capacity
