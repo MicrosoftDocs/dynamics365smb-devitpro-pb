@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.topic: conceptual
 ms.author: solsen
 ms.date: 01/03/2024
+ms.reviewer: solsen
 ---
 
 # Configure context-sensitive help

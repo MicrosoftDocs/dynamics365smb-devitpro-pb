@@ -6,6 +6,7 @@ ms.custom: how-to
 ms.date: 02/07/2024
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Enabling the APIs for Business Central

@@ -7,6 +7,7 @@ ms.search.keywords: administration, tenant, admin, environment
 ms.date: 06/03/2022
 ms.author: jswymer
 ms.collection: get-started
+ms.reviewer: jswymer
 ---
 
 # Get started as a reseller of Business Central online

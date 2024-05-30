@@ -6,6 +6,7 @@ ms.date: 03/01/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Keyboard shortcuts for AL in Visual Studio Code

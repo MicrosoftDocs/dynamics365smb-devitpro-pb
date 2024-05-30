@@ -5,6 +5,7 @@ description: Provides an overview of the licensing in Business Central
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 03/23/2022
+ms.reviewer: jswymer
 ---
 
 # Licensing in Dynamics 365 Business Central

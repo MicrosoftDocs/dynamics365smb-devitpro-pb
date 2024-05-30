@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.custom: bap-template
 ms.date: 01/26/2023
 ms.topic: how-to
-
+ms.reviewer: jswymer
 ---
 
 # Register Business Central On-Premises in Microsoft Entra ID for Integrating with Other Services

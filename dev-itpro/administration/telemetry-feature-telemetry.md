@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
 ms.date: 07/13/2023
 ms.author: bholtorf
+ms.reviewer: bholtorf
 ---
 
 # Feature telemetry

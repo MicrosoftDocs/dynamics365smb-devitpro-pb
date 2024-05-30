@@ -4,7 +4,6 @@ description: Guidance on troubleshooting and optimizing code analysis performanc
 author:  BazookaMusic 
 ms.author: sodragon
 ms.reviewer: solsen
-
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.custom: bap-template

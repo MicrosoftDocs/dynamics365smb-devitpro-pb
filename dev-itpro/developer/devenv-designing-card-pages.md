@@ -4,7 +4,7 @@ description: Provides and overview of card page design.
 author: jswymer
 ms.date: 04/26/2024
 ms.topic: conceptual
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.author: jswymer
 ---
 

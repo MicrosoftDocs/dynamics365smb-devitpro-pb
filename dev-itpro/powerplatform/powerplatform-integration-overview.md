@@ -2,7 +2,7 @@
 title: Integrating with Microsoft Power Platform
 description: Learn how to integrate Business Central with the Microsoft Power Platform
 author: kennienp
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: overview
 ms.author: kepontop
 ms.date: 02/19/2024

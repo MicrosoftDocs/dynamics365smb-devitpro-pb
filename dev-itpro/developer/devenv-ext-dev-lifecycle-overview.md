@@ -4,6 +4,7 @@ description: Explains the phases involved in the lifecycle of developing an exte
 ms.date: 04/12/2022
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Extension Development Lifecycle Overview

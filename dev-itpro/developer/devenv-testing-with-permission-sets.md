@@ -6,6 +6,7 @@ ms.topic: conceptual
 ms.author: jswymer
 author: blrobl
 ROBOTS: NOINDEX
+ms.reviewer: jswymer
 ---
 
 # Testing With Permission Sets

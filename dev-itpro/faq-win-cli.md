@@ -5,6 +5,7 @@ author: jswymer
 ms.topic: article
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 # FAQ About the Windows Client and Business Central
 

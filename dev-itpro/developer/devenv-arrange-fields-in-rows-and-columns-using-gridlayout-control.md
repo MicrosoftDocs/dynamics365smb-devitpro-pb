@@ -7,6 +7,7 @@ ms.date: 02/06/2023
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Arranging Fields in Rows and Columns Using the Grid Control

@@ -2,7 +2,7 @@
 title: Data replication troubleshooting
 description: Troubleshooting article for data replication process in Business Central cloud migration
 ms.author: jswymer 
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 ms.topic: troubleshooting 
 ms.date: 02/29/2024
 ms.custom: bap-template

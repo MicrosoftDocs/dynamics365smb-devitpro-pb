@@ -6,7 +6,7 @@ ms.topic: troubleshooting
 ms. search.keywords: cloud, edge
 ms.date: 05/27/2024
 ms.author: dmitrych
-ms.review: jswymer
+ms.reviewer: jswymer
 ---
 # Troubleshooting Cloud Migration
 

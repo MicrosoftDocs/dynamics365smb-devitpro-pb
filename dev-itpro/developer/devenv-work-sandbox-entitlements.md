@@ -2,7 +2,7 @@
 title: "Working with sandboxes and entitlements"
 description:
 ms.author: freddyk
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.date: 01/04/2024
 ms.topic: conceptual
 author: freddydk

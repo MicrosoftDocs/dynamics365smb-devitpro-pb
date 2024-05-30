@@ -5,6 +5,7 @@ author: jswymer
 ms.author: solsen
 ms.date: 11/11/2021
 ms.topic: conceptual
+ms.reviewer: solsen
 ---
 
 # Events in AL

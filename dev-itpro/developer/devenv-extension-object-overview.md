@@ -6,6 +6,7 @@ ms.author: solsen
 ms.topic: overview
 ms.collection: get-started
 ms.date: 03/11/2024
+ms.reviewer: solsen
 ---
 
 # Extension objects overview

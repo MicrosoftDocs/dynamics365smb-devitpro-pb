@@ -5,6 +5,7 @@ ms.author: solsen
 ms.date: 02/24/2022
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Moving between extension scopes

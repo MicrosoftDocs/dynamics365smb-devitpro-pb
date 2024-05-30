@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 03/09/2023
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Permission Set Extension Object

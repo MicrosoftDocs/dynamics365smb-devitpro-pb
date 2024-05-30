@@ -7,6 +7,7 @@ ms.service: dynamics-365-op
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Fixing compilation errors for technical upgrade
 

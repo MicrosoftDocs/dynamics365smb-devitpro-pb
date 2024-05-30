@@ -5,6 +5,7 @@ author: jswymer
 ms.date: 04/06/2021
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Adding Barcodes to Reports

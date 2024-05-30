@@ -6,6 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 03/08/2023
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Update documentAttachments
