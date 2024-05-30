@@ -65,7 +65,7 @@ The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Co
 
 ## <a  name="largeprojects"></a>Enable code analysis on large projects
 
-To improve performance while running code analysis on large projects, you can follow the performance tips in [Code Analysis Performance Configuration](devenv-code-analysis-performance-configuration).
+To improve performance while running code analysis on large projects, you can follow the performance tips in [Code Analysis Performance Configuration](devenv-code-analysis-performance-configuration.md).
   
 ## See Also
 
