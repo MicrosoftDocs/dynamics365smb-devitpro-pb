@@ -6,6 +6,7 @@ ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/26/2024
 ms.custom: bap-template
+ms.reviewer: jswymer
 ---
 
 # Version numbers in Business Central

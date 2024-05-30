@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.date: 04/01/2021
 ms.topic: conceptual
+ms.reviewer: solsen
 ---
 
 # Assign a User to a Profile

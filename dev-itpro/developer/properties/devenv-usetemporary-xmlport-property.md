@@ -5,6 +5,7 @@ ms.date: 04/01/2021
 ms.topic: reference
 ms.assetid: 729f3649-f7c8-498d-8c16-961771f192a0
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
  
 # UseTemporary Property (XMLport)

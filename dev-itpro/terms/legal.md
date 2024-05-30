@@ -6,6 +6,7 @@ ms.custom: bap-template
 ms.topic: overview
 ms.date: 01/08/2024
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Legal landing page for Microsoft Dynamics 365 Business Central Online

@@ -5,6 +5,7 @@ author: jswymer
 ms.date: 06/22/2022
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Optimize Visual Studio Code for AL development

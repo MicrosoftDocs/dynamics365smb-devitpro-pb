@@ -5,6 +5,7 @@ author: KennieNP
 ms.date: 04/01/2021
 ms.topic: troubleshooting
 ms.author: kepontop
+ms.reviewer: jswymer
 ---
 # Troubleshooting: Using Query Store to Monitor Query Performance in Business Central
 

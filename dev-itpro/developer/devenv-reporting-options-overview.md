@@ -3,7 +3,7 @@ title: Analyzing, pivoting, and sharing data in Business Central
 description: Introducing the options you have for creating Business Central reports that analyze, pivot, and share data.
 author: KennieNP
 ms.date: 02/14/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: kepontop
 ---

@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 05/25/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Administration of Business Central Online

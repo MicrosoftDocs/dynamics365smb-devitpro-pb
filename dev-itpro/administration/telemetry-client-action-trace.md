@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/07/2023
 ms.author: kepontop
+ms.reviewer: jswymer
 ---
 # Analyzing client action telemetry
 

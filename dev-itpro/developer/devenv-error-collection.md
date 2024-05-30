@@ -6,6 +6,7 @@ ms.date: 01/04/2024
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Collecting Errors

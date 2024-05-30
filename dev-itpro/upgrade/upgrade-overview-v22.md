@@ -5,6 +5,7 @@ ms.date: 08/31/2022
 ms.topic: overview
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2023 Release Wave 1
 

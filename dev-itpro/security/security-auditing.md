@@ -5,6 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 05/13/2024
+ms.reviewer: jswymer
 ---
 
 # Security Auditing in Business Central

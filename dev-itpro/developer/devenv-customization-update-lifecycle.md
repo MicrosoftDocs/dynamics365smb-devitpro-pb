@@ -6,6 +6,7 @@ author: jaredha
 ms.topic: conceptual
 ms.author: jaredha
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 
 # Update Lifecycle for Customizations of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online

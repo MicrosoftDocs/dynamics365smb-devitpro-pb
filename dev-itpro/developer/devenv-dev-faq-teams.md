@@ -7,6 +7,7 @@ ms.date: 11/23/2022
 ms.topic: faq
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # FAQ for Microsoft Teams Integration with Business Central
 

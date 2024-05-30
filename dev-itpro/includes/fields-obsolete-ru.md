@@ -4,6 +4,7 @@ author: AndreiPanko
 ms.topic: include
 ms.date: 06/29/2021
 ms.author: andreipa
+ms.reviewer: jswymer
 ---
 
 The following fields are marked as `ObsoleteState = Pending;` in the RU version.

@@ -6,6 +6,7 @@ ms.topic: overview
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Tables overview

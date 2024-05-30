@@ -3,6 +3,7 @@ author: jswymer
 ms.topic: include
 ms.date: 11/30/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 To help you test the migration, you can migrate data to the target production environment, and then create a sandbox environment based on this production environment. For [!INCLUDE[prod_short](prod_short.md)] on-premises, first use the data replication step in the production environment, and then run the data upgrade step in the sandbox environment for safe testing before you run the data upgrade step in the production environment.  
 

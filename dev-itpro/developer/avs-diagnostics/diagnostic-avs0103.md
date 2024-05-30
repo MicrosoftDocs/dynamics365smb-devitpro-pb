@@ -3,7 +3,7 @@ title: AVS Error AVS0103
 description: "The extension with Id '{0}' appears multiple times in the submission, while all extensions submitted are expected to have a unique Id."
 ms.author: thpeder
 ms.date: 04/26/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: reference
 author: thpeder
 ---

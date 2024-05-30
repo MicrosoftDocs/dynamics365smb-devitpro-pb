@@ -6,6 +6,7 @@ ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: jswymer
 ROBOTS: NOINDEX
+ms.reviewer: jswymer
 ---
 
 # Moving Custom Fields From the Base Application to an Extension

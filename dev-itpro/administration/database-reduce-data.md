@@ -5,6 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 
 # Reducing Data Stored in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Databases 

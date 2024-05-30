@@ -4,6 +4,7 @@ author: jswymer
 ms.topic: include
 ms.date: 04/01/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 A number of fields that are related to pictures are no longer in use, because the pictures are now stored in Image fields that are of type *Media*. The fields are marked as `ObsoleteState = Pending;`.  
 

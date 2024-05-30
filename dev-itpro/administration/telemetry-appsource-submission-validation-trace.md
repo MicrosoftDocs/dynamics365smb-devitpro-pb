@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, AppSource, validation
 ms.date: 08/01/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyzing AppSource submission validation telemetry

@@ -5,6 +5,7 @@ author: jswymer
 ms.date: 04/01/2021
 ms.topic: overview
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # App Management for ISVs

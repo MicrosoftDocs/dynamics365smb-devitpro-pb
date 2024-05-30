@@ -5,6 +5,7 @@ author: solsen
 ms.date: 04/01/2021
 ms.topic: reference
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Control Add-In Properties

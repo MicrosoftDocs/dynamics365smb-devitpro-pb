@@ -6,6 +6,7 @@ ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # AL simple statements

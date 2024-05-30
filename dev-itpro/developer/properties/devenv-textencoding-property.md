@@ -5,6 +5,7 @@ ms.author: solsen
 ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -43,7 +44,7 @@ The **TextEncoding** property is only available when the **Format** property is 
 
 [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md) is the process of transforming bytes of data into readable characters for users of a system or program. There are several industry [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md) formats and different systems support different formats. Internally, [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] uses Unicode encoding. For exporting and importing data with an XMLport, [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] supports MS-DOS, UTF-8, UTF-16, and Windows encoding formats. 
 
-The [Text data type](methods-auto/text/text-data-type.md) in AL uses the in AL uses UTF-16 encoding, the same encoding as .NET strings. For more information, see [String class (.NET)](/dotnet/api/system.string?view=net-8.0&preserve-view=true).
+The [Text data type](../methods-auto/text/text-data-type.md) in AL uses the in AL uses UTF-16 encoding, the same encoding as .NET strings. For more information, see [String class (.NET)](/dotnet/api/system.string?view=net-8.0&preserve-view=true).
   
 You should set the **TextEncoding** property to the encoding format that is compatible with the system or program that you will be exporting to or importing from. The following sections describe the available [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md) formats.  
   

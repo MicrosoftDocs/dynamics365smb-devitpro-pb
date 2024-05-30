@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, move
 ms.date: 12/21/2023
 ms.author: jobulsin
+ms.reviewer: jswymer
 ---
 
 # Transfer environments

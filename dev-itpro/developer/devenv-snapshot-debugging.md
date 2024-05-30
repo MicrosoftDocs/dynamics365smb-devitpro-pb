@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 09/13/2023
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Snapshot debugging

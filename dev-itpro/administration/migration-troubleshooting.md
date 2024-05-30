@@ -3,10 +3,10 @@ title: Troubleshooting the Cloud Migration
 description: Learn how to troubleshoot problems that you may experience with the cloud migration.
 author: dmc-dk
 ms.topic: troubleshooting
-ms. search.keywords: cloud, edge
+ms.search.keywords: cloud, edge
 ms.date: 05/27/2024
 ms.author: dmitrych
-ms.review: jswymer
+ms.reviewer: jswymer
 ---
 # Troubleshooting Cloud Migration
 
