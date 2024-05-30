@@ -101,8 +101,7 @@ To compress pictures that are part of the layout file, do as follows:
 
 For more information, see [Reduce the file size of a picture in Microsoft Office](https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)
 
-For pictures that are part of the report dataset, you need to adjust the size in Business Central. You can use the codeunit 5080 "Image Handler Management" to scale images in AL. 
-
+For pictures that are part of the report dataset, you need to adjust the size in Business Central. You can use the codeunit 5080 "Image Handler Management" to scale images in AL (from version 24.1 also available in [!INCLUDE[prod_short](includes/prod_short.md)] online). For more information, see [Codeunit "Image Handler Management"](/dynamics365/business-central/application/base-application/codeunit/system.media.image-handler-management).
 
 
 ### Using tables to display data from the report dataset (simple repeaters)

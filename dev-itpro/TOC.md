@@ -392,11 +392,9 @@
 ##### [Retain permissions (optional)](administration/migration-retain-permissions.md)
 ##### [Run cloud migration setup](administration/migration-setup.md)
 ##### [Change how data is replicated](administration/cloud-migration-change-replication.md)
-##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
 #### Replicate data
 ##### [Data replication overview](administration/migration-data-replication.md)
 ##### [Run data replication](administration/migrate-data-replication-run.md)
-##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
 #### Upgrade data
 ##### [Run data upgrade](administration/migration-data-upgrade.md)
 ##### [Skip API data upgrade](administration/migration-skip-api-data-upgrade.md)
@@ -419,11 +417,9 @@
 ##### [Retain permissions (optional)](administration/migration-retain-permissions.md)
 ##### [Run cloud migration setup](administration/migration-setup-gp.md)
 ##### [Configure Dynamics GP company migration](administration/migrate-gp-configure-companies.md)
-##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
 #### Replicate data
 ##### [Data replication overview](administration/migration-data-replication.md)
 ##### [Run data replication](administration/migrate-data-replication-run.md)
-##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
 #### Upgrade data
 ##### [Run data upgrade](administration/migration-data-upgrade-gp.md)
 #### Finish cloud migration
@@ -1290,9 +1286,7 @@
 #### [Using the Performance Profiler](administration/performance-profiler-overview.md)
 #### [Verifying report datasets](/dynamics365/business-central/report-analyze-excel)
 #### [Checking personalization issues](/dynamics365/business-central/ui-personalization-user)
-#### [Troubleshooting user personalization can't be started](developer/devenv-troubleshooting-user-personalization.md)
 #### [Checking customization issues](/dynamics365/business-central/ui-personalization-manage)
-#### [Troubleshooting profile configuration can't be started](developer/devenv-troubleshooting-profile-configuration.md)
 #### [Verifying user permissions](/dynamics365/business-central/ui-define-granular-permissions)
 #### [Investigating mobile app (on-premises)](developer/devenv-troubleshooting-the-mobile-app.md)
 ### Troubleshooting in AL
@@ -1314,8 +1308,7 @@
 ### Troubleshooting guides (TSGs)
 #### Troubleshoot cloud migration
 ##### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
-##### [Troubleshooting cloud migration setup](administration/migration-setup-troubleshooting.md)
-##### [Troubleshooting data replication](administration/migration-data-replication-troubleshooting.md)
+##### [Troubleshooting cloud migration setup and data replication](/troubleshoot/dynamics-365/business-central/welcome-business-central)
 #### [Troubleshoot report errors](developer/devenv-reports-troubleshooting.md)
 #### Troubleshoot web services
 ##### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
@@ -1356,6 +1349,9 @@
 ### [Service overview](service-overview.md)
 ### [Service scalability](service-scalability.md)
 ### [Service operations](service-operations.md)
+## Auditing
+### [Auditing overview](auditing/auditing-overview.md)
+### [Auditing in Purview](auditing/audit-events-in-purview.md)
 <!-- begin performance -->
 # Performance
 ## [Performance overview](performance/performance-overview.md)

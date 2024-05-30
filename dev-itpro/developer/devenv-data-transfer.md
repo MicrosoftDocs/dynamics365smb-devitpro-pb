@@ -166,7 +166,7 @@ begin
     dt.SetTables(Database::Destination, Database::Destination);
     dt.AddSourceFilter(dest.FieldNo("Field 1"), '=%1', 'A');
     dt.AddSourceFilter(dest.FieldNo("Field 2"), '%1..%2', 'B', 'C');
-    dt.AddConstValue(dest."Enum Field"::SomeValue, dest.FieldNo("Enum Field"));
+    dt.AddConstantValue(dest."Enum Field"::SomeValue, dest.FieldNo("Enum Field"));
     dt.CopyFields();
 end;
 ```

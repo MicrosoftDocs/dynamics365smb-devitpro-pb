@@ -144,9 +144,9 @@ Complete these steps to set up the Microsoft Entra application for service-to-se
    > Applications can't be assigned the **SUPER** permission set. Make sure that applications follows least-privilege principle and only assign permissions required for the integration to work.
 
    > [!NOTE]
-   > The system permission sets and user groups called **D365 AUTOMATION** and **EXTEND. MGT. - ADMIN** provide access to most typical objects used with automation.
+   > The system permission sets and user groups called **D365 AUTOMATION** and **EXTEN. MGT. - ADMIN** provide access to most typical objects used with automation.
    >
-   > The **EXTEND. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
+   > The **EXTEN. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
 
 7. (optional) Select **Grant Consent** and follow the wizard. 
 
