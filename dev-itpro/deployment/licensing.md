@@ -38,6 +38,8 @@ Licensing Guide, which you can download from [https://go.microsoft.com/fwlink/?L
 
 > [!NOTE]  
 > With the next major release, version 25.0, user groups are deprecated and replaced with composable permission sets and security groups. For more information, see [Migrate from User Groups to Permission Sets or Security Groups](../upgrade/deprecated-features-user-groups.md).
+> 
+> User groups are replaced with security groups. For more information, see [Create users according to licenses](/dynamics365/business-central/ui-how-users-permissions)
 
 *Entitlements* are permissions that describe which objects in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] a user is entitled to use according to their Microsoft Entra role or the license they purchased from Microsoft.  
 
