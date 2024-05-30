@@ -67,25 +67,25 @@ To set up a Docker container sandbox using an existing sandbox environment, foll
 8. Set the `$accept_eula = ''` variable to `'$true'`.
 9. Select <kbd>F5</kbd> to run the script.
 
-    The console pane displays the progress of the script. When the script has completed successfully, information like in the following example displays:
+   The console pane displays the progress of the script. When the script has completed successfully, information like in the following example displays:
 
-    ```powershell
-    ...
-    Container IP Address: 172.22.147.63
-    Container Hostname  : mybc
-    Container Dns Name  : mybc
-    Web Client          : http://mybc/BC/
-    Dev. Server         : http://mybc
-    Dev. ServerInstance : BC
-
-    Files:
-    http://test:8080/ALLanguage.vsix
-
-    Initialization took 116 seconds
-    Ready for connections!
-    Reading CustomSettings.config from mybc
-    Creating Desktop Shortcuts for mybc
-    ```
+   ```powershell
+   ...
+   Container IP Address: 172.22.147.63
+   Container Hostname  : mybc
+   Container Dns Name  : mybc
+   Web Client          : http://mybc/BC/
+   Dev. Server         : http://mybc
+   Dev. ServerInstance : BC
+   
+   Files:
+   http://test:8080/ALLanguage.vsix
+   
+   Initialization took 116 seconds
+   Ready for connections!
+   Reading CustomSettings.config from mybc
+   Creating Desktop Shortcuts for mybc
+   ```
 
 10. Write down or copy the following parameter/values from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You need this information later to [set up Visual Studio Code for extension development](#VSCode).
 
