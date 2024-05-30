@@ -110,7 +110,7 @@ The Apps Update Cadence setting does not affect updates to per-tenant extensions
 
 ## What happens when an app update is installed?
 
-When you install an app update, the new app version will be published, synchronized, and updated in the background. This process usually doesn't take long, and users won't be interrupted. However, we still recommend you to install the updates outside of working hours. Tick the "Schedule update in the next update window" box in the confirmation dialogue when installing an app update to start the update during the next [update window](../tenant-admin-center-update-management#set-the-update-window-for-each-environment).
+When you install an app update, the new app version will be published, synchronized, and updated in the background. This process usually doesn't take long, and users won't be interrupted. However, we still recommend you to install the updates outside of working hours. Tick the "Schedule update in the next update window" box in the confirmation dialogue when installing an app update to start the update during the next [update window](tenant-admin-center-update-management#set-the-update-window-for-each-environment).
 
 ## <a name="failure"></a>What do I do when an update fails?
 
