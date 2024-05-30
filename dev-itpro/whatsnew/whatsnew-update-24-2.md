@@ -42,6 +42,14 @@ Note that new customers will automatically get the latest builds of Business Cen
 
 ## Good to know
 
+### New Business Central online service features
+
+The following featured weere rolled out during May 2024:
+
+- [Audit Business Central operations in Microsoft Purview (preview)](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/audit-business-central-operations-purview)
+- [Allow customers to consent to Microsoft Support accessing their data](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/allow-customers-consent-support-accessing-their-data)
+- [Link Business Central environments to Power Platform environments](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/link-business-central-environments-power-platform-environments)
+
 ### Business Central channel on YouTube
 
 Check out the new [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube at [aka.ms/BCYouTube](https://aka.ms/BCYouTube), where you can find the latest videos from the 2024 release wave 1 Launch Event.
