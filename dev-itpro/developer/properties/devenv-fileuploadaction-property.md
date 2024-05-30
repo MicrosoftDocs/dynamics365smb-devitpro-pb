@@ -25,7 +25,7 @@ Specifies the File Upload Action to be invoked when a file is uploaded.
 
 ## Remarks
 
-The `FileUploadAction` property specifies the `fileUploadAction` page action to be invoked when a file is uploaded. The property is a string value that specifies the name of the `fileUploadAction`. For more information, see [Add drop zones for file uploads](devenv-extending-drop-zones.md).
+The `FileUploadAction` property specifies the `fileUploadAction` page action to be invoked when a file is uploaded. The property is a string value that specifies the name of the `fileUploadAction`. <!--For more information, see [Add drop zones for file uploads](devenv-extending-drop-zones.md).-->
 
 ## See also
 

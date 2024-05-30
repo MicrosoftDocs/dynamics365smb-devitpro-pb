@@ -39,12 +39,12 @@ The `Cookie` data type allows you to efficiently work with HTTP cookies. You can
 The following data types have methods that return or use the `Cookie` data type:
 
 - [HttpClient.UseResponseCookies method](../httpclient/httpclient-useresponsecookies-method.md)  
-- [HttpResponseMessage.GetCookie method](../httpresponsemessage-getcookie-method.md)  
+- [HttpResponseMessage.GetCookie method](../httpresponsemessage/httpresponsemessage-getcookie-method.md)  
 - [HttpResponseMessage.GetCookieNames method](../httpresponsemessage/httpresponsemessage-getcookienames-method.md)  
 - [HttpRequestMessage.GetCookie method](../httprequestmessage/httprequestmessage-getcookie-method.md)  
 - [HttpRequestMessage.GetCookieNames method](../httprequestmessage/httprequestmessage-getcookienames-method.md)  
 
 ## See also
 
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

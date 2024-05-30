@@ -4,7 +4,6 @@ description: How to specify that all inner requests in a certain OData $batch re
 ms.custom: bap-template
 ms.date: 04/25/2023
 ms.reviewer: jswymer
-ms.service: d365-business-central
 ms.author: jswymer
 ms.topic: conceptual
 author: jswymer

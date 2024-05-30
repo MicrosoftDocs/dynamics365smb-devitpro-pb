@@ -142,8 +142,7 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 > [!NOTE]  
 > For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics. These statistics are gathered and then displayed in the debugger, like whether long running SQL statements or SQL statements are shown. Check the server configuration if you don't see the insights that you expect in the debugger. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
 
-
-## <a name="DebugWS"></a>Debugging web services
+## Debugging web services
 
 It's possible to debug code executed from web service endpoints, both pages and codeunits exposed as OData/SOAP, and API pages/queries. To do so, simply set the `breakOnNext` setting to `WebServiceClient` and trigger the web service endpoint from an API explorer tool or your web service client code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
 

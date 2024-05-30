@@ -50,7 +50,7 @@ The [!INCLUDE[embedapp](../developer/includes/embedapp.md)] will promote the par
 - Name, image, and icon on the provisioning page of the Fixed Client Endpoint  
 - Splash screen of the client  
 - Title bar of the browser tab (for example, "Fabrikam Apples")  
-- A dedicated product tile, icon, and short marketing description in the Dynamics shell ([https://home.dynamics.com](https://home.dynamics.com))  
+- A dedicated product tile, icon, and short marketing description in the Dynamics shell ([https://www.microsoft365.com/](https://www.microsoft365.com/))  
 - In-product messages (such as pop-up errors, warnings, notifications)  
 
 ![Tiles with Embed App apps.](../media/embed-app-apps.png "Embed App apps")  
