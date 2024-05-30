@@ -5,7 +5,7 @@ author: bholtorf
 ms.topic: conceptual
 ms.devlang: al
 ms. search.keywords: deprecated, Finland, local functionality
-ms.date: 10/08/2024
+ms.date: 05/30/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
