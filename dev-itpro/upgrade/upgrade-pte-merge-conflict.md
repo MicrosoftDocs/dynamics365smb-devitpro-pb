@@ -5,6 +5,7 @@ ms.date: 10/25/2021
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Upgrading Per-Tenant Extensions that Conflicts with Other Extensions

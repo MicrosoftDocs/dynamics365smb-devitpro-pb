@@ -5,7 +5,7 @@ author: jswymer
 
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms. search.keywords: cloud, edge
+ms.search.keywords: cloud, edge
 ms.date: 11/30/2022
 ms.author: jswymer
 ---

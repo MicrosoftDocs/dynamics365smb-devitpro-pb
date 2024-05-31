@@ -1,7 +1,7 @@
 ---
 title: "Designing for different screen sizes on tablet and phone"
 ms.date: 01/02/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: blrobl
 ms.author: brobledodiaz

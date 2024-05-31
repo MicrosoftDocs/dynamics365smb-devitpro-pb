@@ -3,7 +3,7 @@ title: What are the developer tools for copilot?
 description: Get an overview of the toolkit from Business Central for building copilots in your extensions.
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 ms.topic: overview
 ms.collection:
   - get-started

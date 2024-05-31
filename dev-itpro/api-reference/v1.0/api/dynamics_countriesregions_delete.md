@@ -7,6 +7,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Delete countriesRegions (v1.0)

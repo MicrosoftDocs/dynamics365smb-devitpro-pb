@@ -4,7 +4,7 @@ description: Learn how to set up cloud data migration to Business Central online
 author: jswymer
 ms.topic: conceptual
 ms.reviewer: jswymer
-ms. search.keywords: cloud, edge
+ms.search.keywords: cloud, edge
 ms.search.form: 2502, 4003
 ms.date: 11/30/2022
 ms.author: jswymer

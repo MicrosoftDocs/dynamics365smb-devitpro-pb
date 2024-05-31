@@ -5,6 +5,7 @@ ms.topic: conceptual
 ms.author: jswymer
 ms.date: 12/28/2023
 description: Discover Dynamics365 Business Central App Components & Deployment Steps - Microsoft's Base Application, Platform Updates, & Ecosystem Integrations.
+ms.reviewer: jswymer
 ---
 
 # Components and capabilities

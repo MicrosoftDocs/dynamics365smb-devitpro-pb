@@ -6,6 +6,7 @@ author: SusanneWindfeldPedersen
 ms.date: 08/26/2021
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Retaining table data after publishing

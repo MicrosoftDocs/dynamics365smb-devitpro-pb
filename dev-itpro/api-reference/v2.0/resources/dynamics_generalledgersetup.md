@@ -9,6 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # generalLedgerSetup resource type

@@ -5,6 +5,7 @@ ms.author: solsen
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.date: 01/25/2024
+ms.reviewer: solsen
 ---
 
 # Per-Tenant Extension (PTE) Disclaimer

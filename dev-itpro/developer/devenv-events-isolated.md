@@ -5,6 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.date: 11/11/2021
 ms.topic: conceptual
+ms.reviewer: jswymer
 ---
 
 # Isolated Events in AL

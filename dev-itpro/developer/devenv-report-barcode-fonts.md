@@ -5,6 +5,7 @@ author: jswymer
 ms.date: 10/29/2021
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Barcode Fonts with Business Central Online

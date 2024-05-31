@@ -6,6 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 09/26/2022
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # cloudMigrationCompany resource type

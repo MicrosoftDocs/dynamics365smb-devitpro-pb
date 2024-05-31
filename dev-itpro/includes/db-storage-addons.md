@@ -3,6 +3,7 @@ author: jswymer
 ms.topic: include
 ms.date: 03/08/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 Customers can purchase additional database capacity and environments through their reselling partner by using the following add-ons to their existing license:
   

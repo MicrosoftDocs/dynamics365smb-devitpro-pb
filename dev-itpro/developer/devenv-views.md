@@ -1,7 +1,7 @@
 ---
 title: Views
 description: Description of what views are and how they're defined in Business Central.
-ms.reviewer: jswymer
+ms.reviewer: solsen
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/25/2024

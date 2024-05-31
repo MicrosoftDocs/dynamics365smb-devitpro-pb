@@ -4,7 +4,7 @@ description: Understanding page types to be able to create good user experience 
 author: jacobwj
 ms.custom: bap-template
 ms.date: 04/26/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.author: jswymer
 ms.topic: conceptual
 ---

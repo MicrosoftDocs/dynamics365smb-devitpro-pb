@@ -6,6 +6,7 @@ ms.author: solsen
 ms.date: 07/14/2023
 ms.topic: conceptual
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Get started developing Connect apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]

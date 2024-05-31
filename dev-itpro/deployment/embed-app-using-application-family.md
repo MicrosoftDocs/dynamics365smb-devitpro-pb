@@ -4,6 +4,7 @@ author: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 
 # Using Application Family in [!INCLUDE[embed app](../developer/includes/embedapp.md)]
