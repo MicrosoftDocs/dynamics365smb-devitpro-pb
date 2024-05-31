@@ -1,6 +1,6 @@
 ---
-title: Update 25.1 for Microsoft Dynamics 365 Business Central 2024 Release Wave 1
-description: Get an overview of new and changed capabilities in the 24.1 update of Business Central online, which is part of 2024 release wave 1.
+title: Update 24.2 for Microsoft Dynamics 365 Business Central 2024 Release Wave 1
+description: Get an overview of new and changed capabilities in the 24.2 update of Business Central online, which is part of 2024 release wave 1.
 ms.author: jswymer
 ms.date: 05/27/2024
 ms.reviewer: jswymer
@@ -16,20 +16,20 @@ Would you like to know what has changed in update 24.2? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5038531) and the downloads [here](https://www.microsoft.com/en-us/download/details.aspx?id=106062).<!--(https://aka.ms/BCDownload).-->
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5040044) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
 
-- [Automate country of origin listed for item tracking code in Intrastat reporting (preview)](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/automate-country-origin-listed-item-tracking-code-intrastat-reporting)
-- [Discover report and data analysis content easily](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/discover-report-data-analysis-content-easily)
-- [Enable additional countries and regions (preview)](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/enable-additional-countries-regions)
-- [Use linked environment in Dataverse integration](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/use-linked-environment-dataverse-integration)
+- [Automate country of origin listed for item tracking code in Intrastat reporting (preview)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/automate-country-origin-listed-item-tracking-code-intrastat-reporting)
+- [Discover report and data analysis content easily](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/discover-report-data-analysis-content-easily)
+- [Enable Sustainability features for integrations with APIs (preview)](hdynamics365/release-plan/2024wave1/smb/dynamics365-business-central/achieving-sustainable-compliance-business-central)
+- [Use linked environment in Dataverse integration](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/use-linked-environment-dataverse-integration)
 
 ## Localization updates
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-|||
+|Mexico|CFDI Comercio exterior complemento 2.0|Business Central is now compliant with new foreign trade rules in Mexico&mdash;Comercio Exterior 2.0&mdash;which are now integrated with the CFDI 4.0. Changes are related with the foreign trade section, issuer section, and new validation rules.|
 
 ## Release Plan
 
@@ -41,9 +41,9 @@ Note that new customers will automatically get the latest builds of Business Cen
 
 ## Good to know
 
-### New Business Central online service features
+### Recent service features
 
-The following featured were rolled out during May 2024:
+The following Business Central online service features were rolled out during May 2024:
 
 - [Audit Business Central operations in Microsoft Purview (preview)](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/audit-business-central-operations-purview)
 - [Allow customers to consent to Microsoft Support accessing their data](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/allow-customers-consent-support-accessing-their-data)
