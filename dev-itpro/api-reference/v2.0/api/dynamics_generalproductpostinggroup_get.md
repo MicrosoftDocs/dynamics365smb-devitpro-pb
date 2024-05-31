@@ -4,7 +4,7 @@ description: Gets a general product posting group object in Dynamics 365 Busines
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/24/2021
+ms.date: 05/31/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---

@@ -4,7 +4,7 @@ description: Gets an account object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 02/01/2023
+ms.date: 05/31/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---

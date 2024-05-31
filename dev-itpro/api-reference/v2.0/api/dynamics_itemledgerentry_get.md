@@ -4,7 +4,7 @@ description: Gets an item ledger entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/24/2021
+ms.date: 05/31/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
