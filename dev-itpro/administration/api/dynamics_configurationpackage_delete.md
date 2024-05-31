@@ -4,7 +4,7 @@ description: Deletes a configuration package object in Dynamics 365 Business Cen
 author: SusanneWindfeldPedersen
 ms.topic: article
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---

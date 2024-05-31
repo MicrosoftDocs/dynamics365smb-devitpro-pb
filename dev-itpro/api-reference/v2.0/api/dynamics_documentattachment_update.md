@@ -4,7 +4,7 @@ description: Updates a  document attachment object in Dynamics 365 Business Cent
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 03/08/2023
+ms.date: 05/31/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---

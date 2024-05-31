@@ -3,7 +3,7 @@ title: Contribute to the Help
 description: Tips and tricks for working with the GitHub repos and Markdown files for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: conceptual
-ms.date: 11/13/2023
+ms.date: 05/31/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -68,7 +68,7 @@ You can use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev
 
 A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides for [!INCLUDE [prod_short](../includes/prod_short.md)]. There's good advice and best practices published in the [Microsoft Docs contributor guide](/contribute/). But this section provides information about how to apply that advice to the [!INCLUDE [prod_short](../includes/prod_short.md)] content.
 
-For example, you might have a new article that you think would be beneficial, or you might have a correction to an existing article. If you would like to contribute to the [!INCLUDE [prod_short](../includes/prod_short.md)] content on the Microsoft Docs website, you create a *pull request* from your repo to the target repo. The Microsoft team then reviews the request and include the changes as appropriate.
+For example, you might have a new article that you think would be beneficial, or you might have a correction to an existing article. If you would like to contribute to the [!INCLUDE [prod_short](../includes/prod_short.md)] content on the Microsoft Docs website, you create a *pull request* from your repo to the target repo. The Microsoft team then reviews the request and includes the changes as appropriate.
 
 ### Get started
 
@@ -85,7 +85,7 @@ If you want to suggest a minor (or major) change to an existing article, follow 
 4. Make the relevant changes (and remember to save them!).
 5. Submit a *pull request* to the source repo.
 
-    You'll have something like this configuration in a browser:
+    You have something like this configuration in a browser:
 
     :::image type="content" source="../media/contributor-guide-contribute.png" alt-text="The start of a pull request with fork on the right and target to the left.":::
 
