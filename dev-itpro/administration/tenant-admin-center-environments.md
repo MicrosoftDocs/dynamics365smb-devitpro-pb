@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 02/24/2023
+ms.date: 05/31/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -17,7 +17,7 @@ ms.reviewer: jswymer
 The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] production and sandbox environments for the tenant, and you can manage updates for each environment.
 
 > [!div class="mx-imgBorder"]
->  [ ![Business Central Admin Center.](../developer/media/business_central_admin_center-v2.png)](../developer/media/business_central_admin_center-v2.png)
+>  [ ![Business Central Admin Center.](../developer/media/admin/business_central_admin_center.png)](../developer/media/admin/business_central_admin_center.png)
 
 ## Viewing details for an environment
 
