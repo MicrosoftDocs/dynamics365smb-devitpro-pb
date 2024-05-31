@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -13,7 +13,7 @@ ms.reviewer: jswymer
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to do administrative tasks for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. Here, administrators can:
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to do administrative tasks for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. Some of the tasks that administrators can do include:
 
 - [view and work with production and sandbox environments](tenant-admin-center-environments.md) on the tenant.
 - [set up notification recipients](tenant-admin-center-notifications.md).
