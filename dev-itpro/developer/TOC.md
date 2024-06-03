@@ -797,7 +797,7 @@
 #### [AL0826](diagnostics/diagnostic-al826.md)
 #### [AL0830](diagnostics/diagnostic-al830.md)
 #### [AL0837](diagnostics/diagnostic-al837.md)
-#### [AL0845](diagnostics/diagnostic-al845.md)
+#### [AL0845 (Preview)](diagnostics/diagnostic-al845.md)
 #### [AL1078](diagnostics/diagnostic-al1078.md)
 ### Hidden messages
 #### [AL0605](diagnostics/diagnostic-al605.md)
