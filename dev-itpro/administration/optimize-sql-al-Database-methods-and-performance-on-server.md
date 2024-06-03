@@ -5,6 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 12/21/2021
+ms.reviewer: jswymer
 ---
 
 # AL Database Methods and Performance on SQL Server

@@ -6,6 +6,7 @@ ms.custom: evergreen
 ms.date: 05/01/2024
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Enabling the APIs for Dynamics 365 Business Central (v1.0)

@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 11/30/2022
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Work with multiple AL project folders within one workspace

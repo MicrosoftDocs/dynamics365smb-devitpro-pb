@@ -5,6 +5,7 @@ ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
 ms.date: 10/01/2021
+ms.reviewer: jswymer
 ---
 # Extending Document Sharing and OneDrive for Business Integration
 

@@ -6,6 +6,7 @@ ms.custom: evergreen
 ms.topic: article
 ms.date: 04/26/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # [!INCLUDE[prod_long](developer/includes/prod_long.md)] User assistance model

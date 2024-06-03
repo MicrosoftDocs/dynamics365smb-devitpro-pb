@@ -5,6 +5,7 @@ ms.date: 04/01/2021
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Deprecated Tables

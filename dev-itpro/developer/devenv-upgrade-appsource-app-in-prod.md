@@ -4,7 +4,7 @@ description: "Describes how to upgrade apps available on AppSource that are alre
 author: SusanneWindfeldPedersen
 
 ms.date: 08/19/2021
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: freddyk
 ---

@@ -6,6 +6,7 @@ ms.date: 08/28/2023
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # AL code actions

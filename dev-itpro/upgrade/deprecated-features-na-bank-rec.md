@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.topic: conceptual
-ms. search.keywords: deprecated, Dutch, NL, Netherlands, local functionality
+ms.search.keywords: deprecated, Dutch, NL, Netherlands, local functionality
 ms.date: 09/26/2023
 ms.custom: bap-template
 ---

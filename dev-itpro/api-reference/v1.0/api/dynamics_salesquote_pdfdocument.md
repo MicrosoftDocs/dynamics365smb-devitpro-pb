@@ -8,6 +8,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 06/18/2019
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get salesQuotes pdfDocument (v1.0)

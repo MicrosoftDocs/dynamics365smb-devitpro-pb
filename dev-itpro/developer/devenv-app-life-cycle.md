@@ -5,6 +5,7 @@ author: solsen
 ms.topic: conceptual
 ms.author: solsen
 ms.date: 04/17/2024
+ms.reviewer: solsen
 ---
 
 # The lifecycle of apps and extensions for Business Central

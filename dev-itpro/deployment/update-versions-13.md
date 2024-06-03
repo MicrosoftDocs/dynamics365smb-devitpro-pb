@@ -59,5 +59,5 @@ The following table lists the cumulative updates that have been released for the
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
 [Countries/regions and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
-[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
+[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/product/dynamics-365-business-central/)  
 [Dynamics NAV developer and ITpro content](/dynamics-nav/index)

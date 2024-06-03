@@ -3,7 +3,7 @@ title: Data replication overview
 description: The next phase of data migration process is replicating the on-premises data to online, also known as data migration.
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer.
+ms.reviewer: jswymer
 
 ms.topic: conceptual
 ms.date: 01/15/2023

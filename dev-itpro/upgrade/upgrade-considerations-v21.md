@@ -6,6 +6,7 @@ ms.custom: evergreen
 ms.topic: conceptual
 ms.date: 04/18/2024
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Important Information and Considerations When Upgrading to Business Central 2022 Release Wave 2
 

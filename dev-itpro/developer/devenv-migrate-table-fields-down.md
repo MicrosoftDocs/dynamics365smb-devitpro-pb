@@ -5,6 +5,7 @@ author: jswymer
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Moving Tables and Fields to Extensions Down the Dependency Graph
 

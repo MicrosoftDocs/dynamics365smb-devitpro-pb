@@ -5,6 +5,7 @@ ms.date: 12/29/2023
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Preparing Dynamics NAV or Dynamics 365 Business Central for upcoming changes to browser cookie policy

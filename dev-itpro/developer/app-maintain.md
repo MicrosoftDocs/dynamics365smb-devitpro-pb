@@ -5,6 +5,7 @@ author: solsen
 ms.date: 02/28/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Maintain AppSource apps and Per-Tenant extensions in Business Central online
@@ -105,7 +106,7 @@ This section describes the processes that are initiated during and after upgrade
 
 ## Get notified about incompatibilities by Microsoft
 
-It's crucial for you to keep contact details correctly up to date. We advise you to use global team aliases instead of individual mail addresses. Here are the mail addresses that we'll use in the process that is described in the [When apps or PTEs can't be updated by Microsoft](#when-apps-or-ptes-cannot-be-updated-by-microsoft) section:  
+It's crucial for you to keep contact details correctly up to date. We advise you to use global team aliases instead of individual mail addresses. Here are the mail addresses that we'll use in the process that is described in the [When apps or PTEs can't be updated by Microsoft](#when-apps-or-ptes-cant-be-updated-by-microsoft) section:  
 
 - PTE publishers
 

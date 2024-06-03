@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 10/11/2023
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # About dates in Business Central

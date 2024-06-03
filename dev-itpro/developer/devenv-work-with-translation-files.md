@@ -5,6 +5,7 @@ ms.date: 09/05/2023
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Working with translation files

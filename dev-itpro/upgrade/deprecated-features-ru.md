@@ -4,9 +4,10 @@ description: We're constantly streamlining and adjusting our app in-step with ma
 author: AndreiPanko
 ms.topic: article
 ms.devlang: al
-ms. search.keywords: deprecated, Russia, local functionality
+ms.search.keywords: deprecated, Russia, local functionality
 ms.date: 12/19/2023
 ms.author: andreipa
+ms.reviewer: jswymer
 ---
 
 # Deprecated features in the Russian version of [!INCLUDE [prod_long](../includes/prod_long.md)]

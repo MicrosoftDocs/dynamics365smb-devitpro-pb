@@ -3,13 +3,14 @@ title: Authoring guide for Business Central
 description: Tips and tricks for authoring in MarkDown files when you extend or customize the Help for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: conceptual
-ms.date: 09/09/2021
+ms.date: 09/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Authoring Guide for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
+# Authoring guide for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
-If you're contributing to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] Help, or if you're customizing and extending the Microsoft content for your own solution, you'll probably want to use the same tools, processes, and style guide that Microsoft uses.  
+If you're contributing to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] help, or if you're customizing and extending the Microsoft content for your own solution, you probably want to use the same tools, processes, and style guide that Microsoft uses.  
 
 ## Resources
 
@@ -28,7 +29,7 @@ At Microsoft, we write for accessibility, which also means that the same content
 
 ### Accessible illustrations
 
-The accessibility requirements also impact metadata for illustrations, such as the following:
+The accessibility requirements also affect metadata for illustrations, such as the following:
 
 ```markdown
 :::image type="content" source="media/illustration.png" alt-text="Text used by screen readers.":::
@@ -46,9 +47,9 @@ Both formats are valid MarkDown, and both formats are supported by DocFx.exe. Fo
 
 The [Describing interactions with UI](/style-guide/procedures-instructions/describing-interactions-with-ui) article in the Microsoft Style Guide also applies to [!INCLUDE [prod_short](../includes/prod_short.md)] content. However, the navigation in [!INCLUDE [prod_short](../includes/prod_short.md)] is different from many other Microsoft products, and users can even pin actions and personalize  their workspace in other ways that change the navigation path.  
 
-As a result, we often choose to be not specific about how to find a given action. We write *Choose the Register Payments action*, rather than try to predict if the user will find that action pinned to their action bar or hidden away under **More options**, for example.  
+As a result, we often choose to be not specific about how to find a given action. We write *Choose the Register Payments action*, rather than try to predict if the user finds that action pinned to their action bar or hidden away under **More options**, for example.  
 
-But we also have written something like this: *To map text on the vendor invoice to a specific debit account, on the Actions tab, in the General group, choose Map Text to Account, and then fill the Text-to-Account Mapping Worksheet page.*. In this example, the guidance is now outdated - the actual action is, in the default configuration of the CRONUS demonstration company, easily discoverable in the **Process** part of the action bar, which is the first place people tend to look for things. In other words, the instructions *Choose the Map Text to Account action* would have made it easier for users to find the action.  
+But we also write something like this: *To map text on the vendor invoice to a specific debit account, on the Actions tab, in the General group, choose Map Text to Account, and then fill the Text-to-Account Mapping Worksheet page.*. In this example, the guidance is now outdated - the actual action is, in the default configuration of the CRONUS demonstration company, easily discoverable in the **Process** part of the action bar, which is the first place people tend to look for things. In other words, the instructions *Choose the Map Text to Account action* would have made it easier for users to find the action.  
 
 The following table provides examples of how to write about the user interface in a helpful but future proof way, with accessibility in mind.
 
@@ -80,7 +81,7 @@ However, some metadata is recommended as a best practice as outlined in the foll
 |title |Used by search engines. Recommended length of 60-70 characters, including spaces. We recommend that the title metadata is the same as the first heading in the article.|
 |description|Used by search engines. Recommended length of 100-160 characters, including spaces. |
 |author     |GitHub account of the main contributor to the article. |
-|ROBOTS|Apply this tag if you customize one of Microsoft's articles and deploy that to your website. By applying the metadata `ROBOTS: NOINDEX, NOFOLLOW`, you help make sure that search engines will find the original article rather than your customized version. Users of your Help will still be able to find the customized article through context-sensitive Help links and other links.  |
+|ROBOTS|Apply this tag if you customize one of Microsoft's articles and deploy that to your website. By applying the metadata `ROBOTS: NOINDEX, NOFOLLOW`, you help make sure that search engines find the original article rather than your customized version. Users of your help are still able to find the customized article through context-sensitive help links and other links.  |
 
 ### Bulleted lists
 
@@ -164,7 +165,7 @@ These links have the format ```[link text](filename.md)```.
 Example:
 ```[Managing Payables](payables-manage-payables.md)```
 
-### Link to a article in a subfolder of the source article
+### Link to an article in a subfolder of the source article
 
 These links have the format ```[link text](subfolder/filename.md)```.
 
@@ -178,7 +179,7 @@ For example, you want to link to payables-manage-payables.md from ui-work-genera
 Here's the link:
 ```[Manage Payables](ManagePayables/payables-manage-payables.md)```
 
-### Link to a article in a different folder than source article
+### Link to an article in a different folder than source article
 
 These links have the format ```[link text](../folder/filename.md)```.
 
@@ -200,7 +201,7 @@ From within an article, you can create a link to a specific heading in the same 
 
 ```[link text](#target-heading)```
 
-target-heading is the text of the heading that you want to link to, except it's all lowercase and spaces between words are replaced with hyphens. For example, here's the link:
+*target-heading* is the text of the heading that you want to link to, except it's all lowercase and spaces between words are replaced with hyphens. For example, here's the link:
 ```[How Autoscaling Works](#how-autoscaling-works)```
 
 To the heading:
@@ -226,9 +227,9 @@ For example, to link to the heading "How autoscaling works" in the article Autos
 
 In the editor, add two blank spaces at the end of the sentence and hit return. This is used in the See Also list. (See Also must be heading 2.)
 
-### Continue steps after a non-step para
+### Continue steps after a nonstep para
 
-Enter four spaces in front of the non-step para. Otherwise, the non-step para will restart the step sequence.
+Enter four spaces in front of the nonstep para. Otherwise, the nonstep para restarts the step sequence.
 
 ### TOC
 
@@ -257,12 +258,12 @@ Rather than copy-pasting content that you want to surface in two or more places,
 ### Article titles
 
 - Use imperative verb form for step-based articles ("Pay vendors").
-- Use gerund verb form for conceptual, non-step articles. ("Paying Vendors")
+- Use gerund verb form for conceptual, nonstep articles. ("Paying Vendors")
 - Use nouns for highest-level articles. ("Sales")
 
 ### File naming
 
-In this section, we describe best practices for file names of MarkDown files that will publish to a website. The guidelines make the files easier to work with and better for search engines to index.
+In this section, we describe best practices for file names of MarkDown files that publish to a website. The guidelines make the files easier to work with and better for search engines to index.
 
 #### Rules
 
@@ -325,22 +326,22 @@ Messages that users see when they work in [!INCLUDE [prod_short](../developer/in
 
     Write out all static captions, where the value is always known.  
 
-- All placeholders complicate translation, also valid ones, even when they are preceded by code comments.  
+- All placeholders complicate translation, also valid ones, even when they're preceded by code comments.  
 
-    A typical challenge is to determine the gender of the noun that a placeholder represents. This is problematic for target languages such as French, German, and Russian.
+    A typical challenge is to determine the gender of the noun that a placeholder represents, which is problematic for target languages such as French, German, and Russian.
 
     |Use|Instead of  |
     |---------|---------|
     |The document has been posted. | The %1 has been posted. (Translators can't determine the gender.) |
     |The Unit Cost field is updated. | The %1 field is updated. (Where %1 always represents "Unit Cost".)|
     |Document %1 contains invalid characters. (Where %1 represents a given document ID.) ||
-    |Option %1 is not supported. (Where %1 represents one of more options.) ||
+    |Option %1 isn't supported. (Where %1 represents one of more options.) ||
 
 - Don't place quotation marks around placeholders.
 
     However, if the placeholder represents free-text user input that is hard to distinguish, such as a payment comment on a bank transaction. The quotation marks then helps to distinguish the user input from other parts of the message.  
 
-    Example: *The payment line with transaction text '%1' is not applied.*, where %1 = `Hi - here is my payment of invoice 1223344`.  
+    Example: *The payment line with transaction text '%1' isn't applied.*, where %1 = `Hi - here is my payment of invoice 1223344`.  
 
 ### Teaching tips
 

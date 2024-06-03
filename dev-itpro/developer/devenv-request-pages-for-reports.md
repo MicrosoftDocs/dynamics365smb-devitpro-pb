@@ -4,7 +4,7 @@ description: "Introducing how to work with request pages with Business Central r
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 03/11/2024
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
 ---

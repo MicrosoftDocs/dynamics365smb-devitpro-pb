@@ -564,7 +564,7 @@
 #### [AL0841](diagnostics/diagnostic-al841.md)
 #### [AL0843](diagnostics/diagnostic-al843.md)
 #### [AL0844](diagnostics/diagnostic-al844.md)
-#### [AL0846](diagnostics/diagnostic-al846.md)
+#### [AL0846 (Preview)](diagnostics/diagnostic-al846.md)
 #### [AL0847](diagnostics/diagnostic-al847.md)
 #### [AL0999](diagnostics/diagnostic-al999.md)
 #### [AL1001](diagnostics/diagnostic-al1001.md)
@@ -797,7 +797,7 @@
 #### [AL0826](diagnostics/diagnostic-al826.md)
 #### [AL0830](diagnostics/diagnostic-al830.md)
 #### [AL0837](diagnostics/diagnostic-al837.md)
-#### [AL0845](diagnostics/diagnostic-al845.md)
+#### [AL0845 (Preview)](diagnostics/diagnostic-al845.md)
 #### [AL1078](diagnostics/diagnostic-al1078.md)
 ### Hidden messages
 #### [AL0605](diagnostics/diagnostic-al605.md)

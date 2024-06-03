@@ -5,6 +5,7 @@ ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 #  <a name="AddExtensions"></a>Publishing, Upgrading, and Installing Extensions During Upgrade
 

@@ -2,7 +2,7 @@
 title: Integrating with Office apps and Microsoft 365 
 description: Learn how to integrate Business Central with Office apps and Microsoft 365.
 author: kennienp
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: overview
 ms.author: kepontop
 ms.date: 04/08/2024
