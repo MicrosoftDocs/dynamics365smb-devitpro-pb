@@ -5,6 +5,7 @@ ms.date: 05/19/2021
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Supported cipher suites in outgoing calls

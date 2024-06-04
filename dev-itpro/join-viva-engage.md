@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ms.topic: how-to 
 ms.collection: 
 ms.custom: bap-template 
-ms.date: 11/17/2023
+ms.date: 05/30/2024
 ---
 
 # About Business Central partner community on Viva Engage (formerly Yammer)
@@ -16,7 +16,7 @@ The partner community on Viva Engage is your unique opportunity as a partner to 
 
 ## How to join Viva Engage
 
-Before you can join the partner community on Viva Engage, you must be a member of the Microsoft Partner Network (MPN) with valid MPN ID. [Learn more](../administration/get-started-online.md#step-1-become-a-partner).   
+Before you can join the partner community on Viva Engage, you must be a member of the Microsoft Partner Network (MPN) with valid MPN ID. [Learn more](administration/get-started-online.md#step-1-become-a-partner).
 
 Once you have an MPN ID, you can join Viva Engage using either of the following ways:
 

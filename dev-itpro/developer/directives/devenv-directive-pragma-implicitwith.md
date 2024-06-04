@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 03/19/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Pragma ImplicitWith directive in AL

@@ -1,10 +1,11 @@
 ---
-title: "Licensing in Business Central"
+title: Licensing in Business Central
 author: jswymer
 description: Provides an overview of the licensing in Business Central
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 03/23/2022
+ms.date: 05/30/2024
+ms.reviewer: solsen
 ---
 
 # Licensing in Dynamics 365 Business Central
@@ -19,7 +20,7 @@ ms.date: 03/23/2022
 - External Accountant  
 - Microsoft also offers read-only access to [!include[prod_short](../developer/includes/prod_short.md)] through Microsoft 365 licenses, as an addition to Premium or Essentials plans
 
-Prospects and customers can also subscribe for an evaluation version by using self-service sign-up, also known as the viral trial. This subscription comes with 10,000 licenses, and partners can use such viral trials to let prospects explore [!INCLUDE [prod_short](../includes/prod_short.md)] using non-production companies. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../administration/demo-environment.md).  
+Prospects and customers can also subscribe for an evaluation version by using self-service sign-up, also known as the viral trial. This subscription comes with 10,000 licenses, and partners can use such viral trials to let prospects explore [!INCLUDE [prod_short](../includes/prod_short.md)] using nonproduction companies. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../administration/demo-environment.md).  
 
 [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
@@ -34,6 +35,11 @@ This condition means that when a user purchases, for example, an Essential licen
 Licensing Guide, which you can download from [https://go.microsoft.com/fwlink/?LinkId=866544](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## Entitlements and user groups
+
+> [!NOTE]  
+> With the next major release, version 25.0, user groups are deprecated and replaced with composable permission sets and security groups. For more information, see [Migrate from User Groups to Permission Sets or Security Groups](../upgrade/deprecated-features-user-groups.md).
+> 
+> User groups are replaced with security groups. For more information, see [Create users according to licenses](/dynamics365/business-central/ui-how-users-permissions)
 
 *Entitlements* are permissions that describe which objects in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] a user is entitled to use according to their Microsoft Entra role or the license they purchased from Microsoft.  
 
@@ -65,7 +71,7 @@ Your company's Microsoft 365 administrator or Microsoft partner can create the *
 
 ### Device user features and limitations
 
-Users with the Device license can now set up jobs to run as scheduled tasks in the job queue of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. Device users are concurrent users and when it's time to run their scheduled tasks, they'll be automatically signed in to run their tasks in background sessions. When their tasks are running, each of them is considered present in the system and using a device license. 
+Users with the Device license can now set up jobs to run as scheduled tasks in the job queue of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. Device users are concurrent users and when it's time to run their scheduled tasks, they are automatically signed in to run their tasks in background sessions. When their tasks are running, each of them is considered present in the system and using a device license. 
 
 In terms of limitations, a device user can't be the first user to sign in. A user of type Administrator, Full User, or External Accountant must be the first to sign in so they can set up [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information, see [Administration of Business Central Online](../administration/tenant-administration.md).  
 

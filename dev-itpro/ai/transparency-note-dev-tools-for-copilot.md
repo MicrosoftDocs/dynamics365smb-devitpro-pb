@@ -4,7 +4,7 @@ description: Understand how our AI technology works, the choices system owners c
 author: mikebc 
 ms.author: jswymer 
 ms.reviewer: jswymer
-ms.topic: FAQ
+ms.topic: faq
 ms.collection:
   - bap-ai-copilot 
 ms.date: 12/07/2023

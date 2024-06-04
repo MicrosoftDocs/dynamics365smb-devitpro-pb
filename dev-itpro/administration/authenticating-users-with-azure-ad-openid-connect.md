@@ -2,7 +2,7 @@
 title: Configure Microsoft Entra authentication with OpenID Connect
 description: Learn how to authentication Business Central users by using Microsoft Entra ID with OpenID Connect.
 ms.custom: bap-template
-ms.date: 04/16/2024
+ms.date: 05/31/2024
 ms.reviewer: jswymer
 ms.author: jswymer
 ms.topic: how-to
@@ -192,7 +192,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         or
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC210 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml"
+        Set-NAVServerConfiguration -ServerInstance BC240 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml"
         ```  
 
         # [Multitenant-tenant](#tab/multitenant)
@@ -215,7 +215,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         or
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC210 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/common/FederationMetadata/2007-06/FederationMetadata.xml"
+        Set-NAVServerConfiguration -ServerInstance BC240 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/common/FederationMetadata/2007-06/FederationMetadata.xml"
         ```
 
         ---
@@ -243,7 +243,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC240 -KeyName WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC210/SignIn"
+        Set-NAVServerConfiguration -ServerInstance BC240 -KeyName WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC240/SignIn"
         ```
 
 4. To configure SOAP and OData web services for Microsoft Entra authentication, specify the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Microsoft Entra ID.
@@ -355,7 +355,7 @@ Mount your tenants by using the [Mount-NAVTenant cmdlet](/powershell/module/micr
 For example:
 
 ```powershell
-Mount-NAVTenant -ServerInstance BC210  -Tenant Tenant1 –DatabaseServer ..\BCDEMO -DatabaseName "BC Demo Database" -AadTenantId 1111-aaaa-2222-bbbb-333333333333
+Mount-NAVTenant -ServerInstance BC240  -Tenant Tenant1 –DatabaseServer ..\BCDEMO -DatabaseName "BC Demo Database" -AadTenantId 1111-aaaa-2222-bbbb-333333333333
 ```
 <!--
 --- 
@@ -404,7 +404,7 @@ Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName Exten
 **Example**
 
 ```powershell
-Set-NAVServerConfiguration -ServerInstance BC210  -KeyName ExtendedSecurityTokenLifetime -KeyValue "20"
+Set-NAVServerConfiguration -ServerInstance BC240  -KeyName ExtendedSecurityTokenLifetime -KeyValue "20"
 ```
 
 ### Using host names for tenants

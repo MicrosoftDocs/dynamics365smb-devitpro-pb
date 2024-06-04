@@ -6,6 +6,7 @@ ms.author: solsen
 
 ms.topic: conceptual
 ms.date: 01/12/2024
+ms.reviewer: solsen
 ---
 
 # Use Azure security service tags to restrict network access from/to Business Central

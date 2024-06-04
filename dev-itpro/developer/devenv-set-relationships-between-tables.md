@@ -5,6 +5,7 @@ ms.author: solsen
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Setting Relationships Between Tables

@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 07/21/2022
 ms.author: kepontop
+ms.reviewer: jswymer
 ---
 # Analyzing User Checklist Telemetry
 

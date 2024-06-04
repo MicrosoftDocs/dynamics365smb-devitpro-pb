@@ -6,6 +6,7 @@ ms.topic: article
 ms.devlang: al
 ms.date: 02/06/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Troubleshooting REST API/OData calls

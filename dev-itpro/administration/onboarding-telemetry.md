@@ -5,7 +5,7 @@ ms.date: 02/23/2023
 ms.topic: conceptual
 author: sorenfriisalexandersen
 ms.author: soalex
-ms.reviewer: brentholtorf
+ms.reviewer: jswymer
 ---
 
 # Measure onboarding progress using telemetry

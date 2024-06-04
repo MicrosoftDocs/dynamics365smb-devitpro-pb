@@ -5,6 +5,7 @@ ms.date: 05/28/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # AL Table Proxy Generator

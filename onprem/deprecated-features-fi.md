@@ -4,7 +4,10 @@ description: We are constantly streamlining and adjusting our app in-step with m
 author: bholtorf
 
 ms.topic: article
-ms. search.keywords: deprecated, Finland, local functionality
+ms.devlang: na
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.search.keywords: deprecated, Austria, local functionality
 ms.date: 10/01/2018
 ms.author: SorenGP
 

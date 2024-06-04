@@ -4,7 +4,7 @@ description: This article provides an overview of how the migration works and th
 author: jswymer
 ms.topic: conceptual
 ms.reviewer: jswymer
-ms. search.keywords: cloud, edge
+ms.search.keywords: cloud, edge
 ms.search.form: 2502, 4003
 ms.date: 02/28/2024
 ms.author: jswymer

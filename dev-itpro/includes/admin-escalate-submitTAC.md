@@ -3,6 +3,7 @@ author: jswymer
 ms.topic: include
 ms.date: 12/29/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]

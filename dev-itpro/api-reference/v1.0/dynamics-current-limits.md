@@ -6,6 +6,7 @@ ms.custom: evergreen
 ms.date: 05/01/2024
 ms.topic: article
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Current API limits (v1.0)

@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 12/28/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Understanding the Infrastructure of Business Central Online

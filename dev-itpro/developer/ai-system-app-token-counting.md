@@ -8,7 +8,8 @@ ms.collection:
   - get-started
   - bap-ai-copilot
 ms.date: 04/11/2024
-ms.custom: bap-template 
+ms.custom: bap-template
+ms.reviewer: solsen
 ---
 
 # Token counting in AI

@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 01/03/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Resource exposure policy setting

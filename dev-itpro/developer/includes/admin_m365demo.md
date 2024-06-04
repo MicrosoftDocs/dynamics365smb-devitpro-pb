@@ -1,7 +1,7 @@
 ---
 author: dmc-dk
 ms.topic: include
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.date: 04/01/2021
 ms.author: dmitrych
 ---

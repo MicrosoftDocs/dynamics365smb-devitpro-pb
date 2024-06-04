@@ -5,6 +5,7 @@ ms.author: solsen
 ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,7 +18,7 @@ The value for the manifest property '{0}' is not valid. Expected type: {1}.
 
 
 ## Description
-Wrong type for a manifest property. For more information about manifest properties and their type, see [App.json file](../devenv-json-files.md#Appjson).  
+Wrong type for a manifest property. For more information about manifest properties and their type, see [App.json file](../devenv-json-files.md#appjson-file).  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

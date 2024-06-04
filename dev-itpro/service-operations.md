@@ -3,7 +3,7 @@ title: Service operations
 description: Learn about the operations done to keep Business Central optimized and reliable.
 author: dmc-dk
 ms.author: dmitrych 
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 ms.topic: conceptual 
 ms.collection: 
 ms.date: 02/22/2024
