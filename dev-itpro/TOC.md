@@ -1504,7 +1504,7 @@
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### Extend Copilot in Business Central 
 #### [Introduction](developer/ai-build-experience-overview.md)
-#### [Build the Copilot capability in AL](developer/ai-build-capability-in-al.md)
+#### [Build Copilot capability in AL](developer/ai-build-capability-in-al.md)
 #### Build Copilot user experience
 ##### [Overview](developer/ai-build-experience.md)
 ##### [Create prompt dialog page](developer/copilot-create-promptdialog.md)
