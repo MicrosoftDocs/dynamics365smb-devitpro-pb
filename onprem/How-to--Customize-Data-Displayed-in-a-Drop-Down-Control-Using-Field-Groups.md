@@ -1,11 +1,7 @@
 ---
 title: Customize Drop-Down Control Data
 description: Fields are enabled with filter-as-you-type functionality, a drop-down control displays data from source table when you type text into these fields.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 27e06f03-185e-49d2-8c81-841ecf53ef28
 caps.latest.revision: 16

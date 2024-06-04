@@ -4,8 +4,9 @@ description: A general product posting group object in Dynamics 365 Business Cen
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/24/2021
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # generalProductPostingGroup resource type
@@ -36,6 +37,7 @@ Represents a general product posting group in [!INCLUDE[prod_short](../../../inc
 |description|string|Specifies the description of the general product posting group.|
 |defaultVATProductPostingGroup|string||
 |autoInsertDefault|boolean||
+|lastModifiedDateTime|datetime|The last datetime the general product posting group was modified. Read-Only.|
 
 ## JSON representation
 
@@ -48,7 +50,8 @@ Here is a JSON representation of the generalProductPostingGroup resource.
     "code": "string",
     "description": "string",
     "defaultVATProductPostingGroup": "string",
-    "autoInsertDefault": "boolean"
+    "autoInsertDefault": "boolean",
+    "lastModifiedDateTime": "datetime"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->

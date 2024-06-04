@@ -2,11 +2,7 @@
 title: "C/AL Operators"
 description: "Describing the C/AL operators."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f34d9ae5-8dbd-406a-82c9-bbf064d2e871
 caps.latest.revision: 11

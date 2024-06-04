@@ -4,8 +4,9 @@ description: Deletes a subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: article
 ms.devlang: al
-ms.date: 08/25/2022
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->

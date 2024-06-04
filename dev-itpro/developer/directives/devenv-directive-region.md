@@ -2,10 +2,10 @@
 title: Region directive in AL
 description: The region directive in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/19/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Region directive in AL

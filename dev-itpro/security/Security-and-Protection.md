@@ -2,11 +2,10 @@
 title: Security overview
 description: Get an overview of the articles about security in Business Central, so that you can configure your solution.
 author: jswymer
-ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.date: 12/07/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Security in Business Central

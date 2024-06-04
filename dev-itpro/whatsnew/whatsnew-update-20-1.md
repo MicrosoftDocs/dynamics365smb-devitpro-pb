@@ -2,11 +2,11 @@
 title: Update 20.1 for Business Central online
 description: Get an overview of new and changed capabilities in the 20.1 update of Business Central online, which is part of 2022 release wave 1.
 ms.author: jswymer
-ms.custom: na
-ms.date: 05/12/2022
-ms.reviewer: solsen
+ms.date: 04/01/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ---
 
 # Update 20.1 for Microsoft Dynamics 365 Business Central online 2022 release wave 1

@@ -1,8 +1,6 @@
 ---
 title: "Type Property"
-ms.custom: na
 ms.date: 02/25/2022
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

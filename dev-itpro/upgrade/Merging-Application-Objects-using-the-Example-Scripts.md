@@ -1,8 +1,6 @@
 ---
 title: "Merging application objects using the example scripts"
-ms.custom: na
 ms.date: 12/22/2023
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

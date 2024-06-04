@@ -3,9 +3,9 @@ title: "Update the Excel add-in configuration"
 description: Learn about how to change the Excel add-in setup so that it works with the update in July 2022.
 author: jswymer
 ms.author: jswymer
-ms.custom: na
 ms.topic: conceptual
 ms.date: 12/29/2023
+ms.reviewer: jswymer
 ---
 # Modify the Excel add-in configuration to support July 2022 update
 

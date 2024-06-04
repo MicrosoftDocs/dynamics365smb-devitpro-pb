@@ -1,9 +1,7 @@
 ---
 title: Array methods
 description: Methods of the type array in AL for Business Central.
-ms.custom: na
 ms.date: 03/19/2024
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

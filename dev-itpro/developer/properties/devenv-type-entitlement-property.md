@@ -2,11 +2,10 @@
 title: "Type (Entitlement) Property"
 description: "The type of entitlement."
 ms.author: solsen
-ms.custom: na
 ms.date: 09/27/2023
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 <!-- this topic is manually created, parent node is devenv-type-property.md -->
@@ -32,7 +31,7 @@ The type of entitlement. When a user logs into Business Central, it's checked if
 |**ConcurrentUserServicePlan**|The entitlement is associated with a named Microsoft Entra group.|
 |**Application**|The entitlement is associated with a Microsoft Entra application.|
 |**ApplicationScope**|The entitlement is associated with a Microsoft Entra application scope.|
-|**Implicit**|Everyone has this license.|
+|**Implicit**|Internal use only.|
 |**Unlicensed**|Entitlement applied when no other entitlements from an app has been applied. This type is used to enable side-by-side support for transactability-enabled apps on AppSource. For more information, see [Selling Business Central apps through AppSource](../devenv-sell-apps-appsource.md).|
 |**Group**|The entitlement is associated with a specific Microsoft Entra group, identified by the object ID specified in the id property. For more information, see [Selling Business Central apps through AppSource](../devenv-sell-apps-appsource.md).|
 

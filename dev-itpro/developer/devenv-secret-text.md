@@ -5,9 +5,9 @@ author: SusanneWindfeldPedersen
 ms.author: sodragon
 ms.custom: bap-template
 ms.date: 12/20/2023
-ms.reviewer: na
 
 ms.topic: conceptual
+ms.reviewer: jswymer
 ---
 
 # Protecting sensitive values with the SecretText data type

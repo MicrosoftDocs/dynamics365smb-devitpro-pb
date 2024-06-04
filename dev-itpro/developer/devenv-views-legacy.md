@@ -2,10 +2,10 @@
 title: "Migrating to modern list views"
 description: "Explains how to move from legacy views to modern list views in Business Central."
 author: jswymer
-ms.custom: na
 ms.date: 08/09/2022
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Migrating from legacy views to modern views

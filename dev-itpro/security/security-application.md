@@ -1,9 +1,7 @@
 ---
 title: "Layered security model in Business Central"
 description: Helps you understand and improve the security of your Business Central application regardless of where it's hosted.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -51,25 +49,6 @@ After a user is authenticated, authorization determines which areas the user can
 [Analyzing Authorization Telemetry](../administration/telemetry-authorization-trace.md)
 
 [Using OAuth to Authorize Business Central Web Services](../webservices/authenticate-web-services-using-oauth.md)
-
-## Auditing
-
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] includes several auditing features that help you track information about who is signing in, what their permissions are, what data they've changed, and more. For more information, see the following articles:
-
-[Authorization Assessment](/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)
-  
-[Data Auditing](/dynamics365/business-central/across-log-changes)
-  
-[Security Auditing](security-auditing.md)
-
-[Data Classification](/dynamics365/business-central/admin-classifying-data-sensitivity)
-
-> [!TIP]  
-> Before [!INCLUDE[prod_short](../includes/prod_short.md)] online logs authorization attempts to telemetry, a successful authentication (login) must happen against Microsoft Entra ID (formerly Azure Active Directory). With the information in the Microsoft Entra sign-in log, you can figure out what happened if a user sign-in failed. For more information, see [Analyze sign-ins with the Microsoft Entra sign-in log](/entra/identity/monitoring-health/quickstart-analyze-sign-in)
-> 
-> If you want to track, monitor, or alert on successful and failed login attempts against Microsoft Entra ID, configure integration to Azure Monitor on Microsoft Entra and analyze further with KQL. For more information, see [Integrate Microsoft Entra logs with Azure Monitor](/entra/identity/monitoring-health/howto-access-activity-logs#integrate-logs-with-azure-monitor-logs).
-
-
 
 ## Data encryption
 

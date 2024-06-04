@@ -1,10 +1,6 @@
 ---
 title: "Deploying Microsoft Dynamics NAV on Cloud Services Other Than Microsoft Azure"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6470796c-510e-462e-9de5-6a7dfcb019a6
 caps.latest.revision: 8

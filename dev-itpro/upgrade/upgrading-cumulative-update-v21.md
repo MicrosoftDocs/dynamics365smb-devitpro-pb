@@ -1,12 +1,11 @@
 ---
 title: Install a version 21 update
 description: This article describes the tasks required for getting the monthly version 21 update applied to your Dynamics 365 Business Central on-premises.
-ms.custom: na
 ms.date: 01/04/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2022 Release Wave 2 Update
 

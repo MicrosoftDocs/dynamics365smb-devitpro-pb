@@ -2,11 +2,10 @@
 title: "Notification.AddAction(Text, Integer, Text) Method"
 description: "Specifies an action for the notification."
 ms.author: solsen
-ms.custom: na
 ms.date: 03/02/2023
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

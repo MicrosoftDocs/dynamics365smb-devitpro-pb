@@ -6,7 +6,7 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.reviewer: jswymer
-ms. search.keywords: cloud, edge, gp, migration, video
+ms.search.keywords: cloud, edge, gp, migration, video
 ms.date: 07/06/2022
 ms.author: jswymer
 ---

@@ -3,12 +3,11 @@ title: Embed Power BI reports in pages
 description: Explains how to display Power BI reports on pages in Business Central
 ms.custom: bap-template
 ms.date: 01/04/2024
-ms.reviewer: na
 ms.topic: how-to
 ms.search.keywords: Power BI, reports, faq, errors
 author: jswymer
 ms.author: jswymer
-
+ms.reviewer: jswymer
 ---
 # Embed Power BI reports, scorecards, dashboards in pages
 

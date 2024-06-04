@@ -1,11 +1,7 @@
 ---
 title: Configure ADCS Options
 description: Modify Dynamics NAV VT100Plugin configuration file to work with Automated Data Capture Systems (ADCS) which should be performed by a system administrator.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8e1e399e-a538-4438-bca4-06c5b7090e38
 caps.latest.revision: 24

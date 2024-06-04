@@ -2,11 +2,10 @@
 title: "AL Diagnostics"
 description: ""
 ms.author: solsen
-ms.custom: na
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -674,7 +673,7 @@ author: SusanneWindfeldPedersen
 |[AL0795](diagnostic-al795.md)|The parameter '{0}' cannot be of type 'SecretText'.|Error|
 |[AL0796](diagnostic-al796.md)|The 'Unwrap' method should only be used inside a non-debuggable method otherwise the contents of the value will be viewable through the debugger.|Warning|
 |[AL0797](diagnostic-al797.md)|{0} '{1}' is moved. {2}.|Error|
-|[AL0798](diagnostic-al798.md)|Currently, the Moved(To/From) property is exclusively accessible to Microsoft.|Error|
+|[AL0798](diagnostic-al798.md)|Currently, the Moved(To/From) property is exclusively accessible to Microsoft and select publishers.|Error|
 |[AL0799](diagnostic-al799.md)|The field with ID '{0}' and name '{1}' cannot be used as source expression in the page customization '{2}' targeting page '{3}'.|Error|
 |[AL0800](diagnostic-al800.md)|The field '{0}' specifies ExtendedDataType '{1}'. This ExtendedDataType can only be set on a control.|Error|
 |[AL0801](diagnostic-al801.md)|{0} '{1}' is marked to be moved. {2}.|Warning|
@@ -721,6 +720,10 @@ author: SusanneWindfeldPedersen
 |[AL0842](diagnostic-al842.md)|The type '{0}' of the {1} field '{2}' has 'Internal' accessibility. The field will not be usable outside of this module without an implicit conversion.|Warning|
 |[AL0843](diagnostic-al843.md)|The property '{0}' can only be used if the {1}'s type is '{2}'.|Error|
 |[AL0844](diagnostic-al844.md)|The property '{0}' can only be used if the {1}'s type is one of these values: '{2}'.|Error|
+|[AL0845](diagnostic-al845.md)|The {0} '{1}' is already being used. The EntityName and EntityNames property values must be unique.|Warning (Future Error)|
+|[AL0846](diagnostic-al846.md)|The {0} '{1}' is already being used. The EntityName and EntityNames property values must be unique.|Error|
+|[AL0847](diagnostic-al847.md)|'{0}' does not contain a definition for '{1}'.|Error|
+|[AL0848](diagnostic-al848.md)|'{0}' is a keyword from version '{1}'.|Warning|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|
@@ -773,8 +776,8 @@ author: SusanneWindfeldPedersen
 |[AL1051](diagnostic-al1051.md)|Fast publishing requires that there are no manifest changes for the application '{0}'.|Error|
 |[AL1052](diagnostic-al1052.md)|The link '{0}' can only contain one placeholder with value 0 for the user locale. No other placeholder values are allowed.|Error|
 |[AL1053](diagnostic-al1053.md)|The value '{0}' is not valid for the manifest property '{1}'.|Error|
-|[AL1054](diagnostic-al1054.md)|Invalid reference module: {0}.|Error|
-|[AL1055](diagnostic-al1055.md)|Invalid reference module: {0}.|Warning|
+|[AL1054](diagnostic-al1054.md)|Invalid reference module: {0}. Please clear the downloaded symbols cache and re-download symbols.|Error|
+|[AL1055](diagnostic-al1055.md)|Invalid reference module: {0}. Please clear the downloaded symbols cache and re-download symbols.|Warning|
 |[AL1056](diagnostic-al1056.md)|A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be loaded. {3}.|Warning|
 |[AL1057](diagnostic-al1057.md)|The module specification is not valid. One or more of the required attributes: 'publisher', 'name', and 'id' are either missing or not valid.|Error|
 |[AL1058](diagnostic-al1058.md)|appId and Id are both specified for a dependency property. The appId value will be ignored.|Warning|
@@ -811,6 +814,7 @@ author: SusanneWindfeldPedersen
 |[AL1153](diagnostic-al1153.md)|The referenced module '{1}' with runtime reference version '{0}' cannot be loaded by the compiler with version '{2}'.|Error|
 |[AL1154](diagnostic-al1154.md)|It is not possible to specify both '{0}' and '{1}' at the same time.|Error|
 |[AL1155](diagnostic-al1155.md)|Missing folder specification for '{0}' option.|Error|
+|[AL1156](diagnostic-al1156.md)|Comments are not recommended inside the manifest file as they can cause interoperability issues with CI/CD pipelines or other integrations.|Warning|
 |[AL1401](diagnostic-al1401.md)|Reference '{0}' in application object '{1}' does not exist.|Designer Customization Warning|
 |[AL1402](diagnostic-al1402.md)|{0} '{1}' is missing.|Designer Customization Warning|
 |[AL1403](diagnostic-al1403.md)|'{0}' is an ambiguous reference between '{1}' defined by the extension '{2}' and '{3}' defined by the extension '{4}'.|Designer Customization Warning|

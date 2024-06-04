@@ -5,8 +5,8 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: bap-template
 ms.date: 09/22/2023
-ms.reviewer: na
 ms.topic: conceptual
+ms.reviewer: solsen
 ---
 
 # Structuring namespaces in AL

@@ -1,9 +1,7 @@
 ---
 title: "Promoted Actions"
 description: Promoted actions are configured to display on the Home tab for accessing quick daily actions in Dynamics 365 Business Central. 
-ms.custom: na
 ms.date: 05/05/2022
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 --- 
@@ -38,7 +36,7 @@ As part of the new programming model for promoted actions, you can combine multi
 
 ### Syntax example
 
-This example illustrates a page with the promoted area syntax. In the example the `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. The `MyBaseAction` will be available from under the **Processing** group in the action bar and it will be promoted because it's added to the `area(Promoted)` section, which defines the actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the **Processing** group, also is promoted for easy access on the page.<!--?? check with deprecation and new behavior -->. Also, the example illustrates using a split button for `Group2` where two `actionref`s 
+This example illustrates a page with the promoted area syntax. In the example the `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. The `MyBaseAction` will be available from under the **Processing** group in the action bar and it will be promoted because it's added to the `area(Promoted)` section, which defines the actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the **Processing** group, also is promoted for easy access on the page.<!--?? check with deprecation and new behavior -->. Also, the example illustrates using a split button for `Group2` where two `actionref`s are included in the button.
 
 ```al
 page 50105 ActionRefPage

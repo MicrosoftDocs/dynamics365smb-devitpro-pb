@@ -2,9 +2,8 @@
 title: Simple Role Center example
 description: "Provides AL code for a simple role center"
 author: blrobl
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: brobledodiaz
 ---

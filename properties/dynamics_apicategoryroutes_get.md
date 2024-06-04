@@ -2,9 +2,11 @@
 title: Get apicategoryroutes
 description: Gets an apicategoryroutes object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
+ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
-ms.date: 12/04/2023
+ms.workload: na
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -12,14 +14,14 @@ ms.author: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Get apicategoryroutes
 
-Retrieves the properties and relationships of an apicategoryroutes object for [!INCLUDE[prod_short](../../includes/prod_short.md)].
+Retrieves the properties and relationships of an apicategoryroutes object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
 
-Replace the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
-
+Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```
-GET /microsoft/automation/v2.0/companies({companyId})/apicategoryroutes({routesId})
+GET businesscentralPrefix/companies({id})/apicategoryroutes({id})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
@@ -43,9 +45,9 @@ If successful, this method returns a ```200 OK``` response code and an **apicate
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
-GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/apicategoryroutes({routeId})
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/apicategoryroutes({id})
 ```
-
+<!-- END>EDIT_IS_REQUIRED -->
 **Response**
 
 Here is an example of the response.

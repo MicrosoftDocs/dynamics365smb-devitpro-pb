@@ -1,11 +1,11 @@
 ---
-title: "User scenario documentation"
-description: "Describing how to generate the required scenario document to get your app approved for AppSource."
+title: User scenario documentation
+description: Describing how to generate the required scenario document to get your app approved for AppSource.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/11/2023
 ms.topic: conceptual
 ms.author: freddyk
+ms.reviewer: jswymer
 ---
 
 # User scenario documentation

@@ -2,7 +2,7 @@
 title: Integrating with Microsoft Dataverse
 description: Learn how to integrate Business Central with Microsoft Dataverse
 author: kennienp
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: overview
 ms.author: kepontop
 ms.date: 02/02/2024

@@ -1,11 +1,7 @@
 ---
 title: Change Printed Values of Boolean Variables
 description: This article describes how to change the printed value of a Boolean variable or field in an RDLC report layout from True or False to Yes or No.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a4d7b9c6-17f6-4083-b0fe-3b238b4e2138
 caps.latest.revision: 16

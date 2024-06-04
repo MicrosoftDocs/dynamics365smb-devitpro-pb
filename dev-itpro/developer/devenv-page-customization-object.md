@@ -2,11 +2,10 @@
 title: "Page customization object"
 description: "Description of the page customization object in AL for Business Central    ."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 08/21/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Page customization object

@@ -1,10 +1,6 @@
 ---
 title: "How to: View or Modify Properties on a Table or Field"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a3aa1f8c-12a8-4ec5-9700-fdcbe53b1edc
 caps.latest.revision: 10

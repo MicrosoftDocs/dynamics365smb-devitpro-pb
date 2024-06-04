@@ -1,10 +1,7 @@
 ---
 title: "LinkTable Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4a0ae945-1a46-46b3-b025-8bd3707128fd
 caps.latest.revision: 8

@@ -5,7 +5,7 @@ author: ZdenekBicek
 
 ms.topic: conceptual
 ms.devlang: al
-ms. search.keywords: deprecated, Czech, local functionality
+ms.search.keywords: deprecated, Czech, local functionality
 ms.date: 04/01/2021
 ms.reviewer: jswymer
 ms.author: v-zdbice

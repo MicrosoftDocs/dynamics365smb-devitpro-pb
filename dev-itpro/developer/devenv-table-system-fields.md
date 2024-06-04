@@ -2,11 +2,10 @@
 title: "Table System fields"
 description: Description of the table System fields.
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 --- 
 
 # System Fields

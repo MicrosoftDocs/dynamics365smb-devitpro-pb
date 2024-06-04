@@ -1,10 +1,6 @@
 ---
 title: "Type Conversion in Expressions"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b786ecd0-fc98-4c35-94a0-3f6b9395999c
 caps.latest.revision: 8

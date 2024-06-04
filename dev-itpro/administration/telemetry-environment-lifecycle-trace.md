@@ -3,7 +3,7 @@ title:  Analyzing Environment Lifecycle Trace Telemetry
 description: Learn about the environment lifecycle telemetry in Business Central.
 author: KennieNP
 ms.author: kepontop
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.date: 02/21/2023
 ms.custom: bap-template

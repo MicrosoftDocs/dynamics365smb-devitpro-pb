@@ -4,7 +4,7 @@ description: Describes the features that have been moved, removed, or replaced i
 author: brentholtorf
 ms.author: bholtorf
 ms.date: 03/26/2024
-ms.reviewer: jswymer
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.custom: bap-template
 ---
@@ -32,6 +32,11 @@ The following features will be removed in 2026 release wave 1.
 
 The following features are marked as `obsolete:pending` in 2024 release wave 1.
 
+### Excel reports on the Business Manager and Accountant role centers
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| The Excel reports (Balance Sheet, Income Statement, Statement of Cash Flows, Statement of Retained Earnings, VAT Collected, Customer Statements, Aged Accounts Payable, and Aged Accounts Receivable) that are available from the Business Manager and Accountant role centers are being replaced by new reports. The new reports use Excel layouts that allow power users to modify the layouts with Excel and upload the new layouts to [!INCLUDE[prod_short](../includes/prod_short.md)]. The deprecated reports will be hidden from the role centers in 2025 release wave 1 and will be completely removed from [!INCLUDE[prod_short](../includes/prod_short.md)] in 2026 release wave 1.|
 ### API (v1.0) for Business Central (warning)
 
 |Moved, Removed, or Replaced? |    Why?|

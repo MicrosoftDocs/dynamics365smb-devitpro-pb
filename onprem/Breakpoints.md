@@ -1,10 +1,6 @@
 ---
 title: "Breakpoints"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 52eb9384-166a-4425-94e7-a75cbcec1c90
 caps.latest.revision: 33

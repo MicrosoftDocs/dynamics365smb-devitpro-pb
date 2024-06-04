@@ -1,7 +1,6 @@
 ---
 title: "Business Central virtual tables FAQ"
 description: "Frequently asked questions for working with Business Central virtual tables"
-ms.custom: na
 ms.date: 11/13/2023
 ms.reviewer: solsen
 ms.topic: conceptual

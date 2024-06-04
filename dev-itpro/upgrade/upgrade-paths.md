@@ -2,11 +2,10 @@
 title: Supported upgrade paths to Business Central on-premises
 description: Provides an overview of the different upgrade paths for Business Central on-premises across versions.
 author: jswymer
-ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 03/07/2024
+ms.reviewer: jswymer
 ---
 
 # Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases

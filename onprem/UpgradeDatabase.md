@@ -1,10 +1,6 @@
 ---
 title: "UpgradeDatabase"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5ccd436d-5938-4fe5-b35e-4f7a39f215e8
 caps.latest.revision: 7

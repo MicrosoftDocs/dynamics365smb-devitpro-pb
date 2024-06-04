@@ -3,11 +3,10 @@ title: Granting permissions to manage databases
 description: Learn how to set database owner and security admin permissions in SQL Server for your Business Central solution.
 author: jswymer
 
-ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 # Granting Permissions to Manage [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Databases in SQL Server
 

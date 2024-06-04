@@ -1,12 +1,11 @@
 ---
 title: Install a version 22 update
 description: This article describes the tasks required for getting the monthly version 22 update applied to your Dynamics 365 Business Central on-premises.
-ms.custom: na
 ms.date: 02/09/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2023 Release Wave 1 Update
 

@@ -1,7 +1,6 @@
 ---
 title: Async processing Overview
 description: Overview on the different ways an AL developer can do asynchronous (async) processing.
-ms.custom: na
 ms.date: 10/04/2023
 ms.reviewer: jswymer
 

@@ -3,7 +3,7 @@ title: Build a Copilot user experience with the PromptDialog page
 description: Learn how to use PromptDialog page type to create a Copilot experience in the client.
 author: jswymer 
 ms.author: jswymer 
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.collection:
   - get-started

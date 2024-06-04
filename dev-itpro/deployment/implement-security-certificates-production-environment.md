@@ -1,13 +1,15 @@
 ---
 title: Using Security Certificates with Business Central On-Premises"
 description: Learn how to use security certificates to help secure connections with Business Central.
-ms.custom: bap-template
-ms.date: 04/11/2023
-ms.reviewer: na
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
 ms.service: dynamics-365-op
 ms.topic: how-to
 author: jswymer
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Using security certificates with Business Central on-premises
 
@@ -35,7 +37,7 @@ In a production environment, you should obtain a certificate from a certificatio
   
 ###  <a name="AboutProdCerts"></a> Obtaining certificates
 
-You implement chain trust by obtaining X.509 service certificates from a trusted provider. These certificates and their root certification authority \(CA\) certificates must be installed in the certificates store on the computer that is running [!INCLUDE[server](../developer/includes/server.md)]. The CA certificate must also be installed in the certificate store on computers that are running the [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] so that clients can validate the server.  
+You implement chain trust by obtaining X.509 service certificates from a trusted provider. These certificates and their root certification authority \(CA\) certificates must be installed in the certificates store on the computer that is running [!INCLUDE[server](../developer/includes/server.md)]. The CA certificate must also be installed in the certificate store on computers that are running the [!INCLUDE[webserver](../developer/includes/webserver.md)] so that clients can validate the server.  
   
 Most enterprises and hosting providers have their own infrastructure for issuing and managing certificates. You can also use these certificate infrastructures. The only requirement is that the service certificates must be set up for key exchange and therefore must contain both private and public keys. Additionally, the service certificates that are installed on [!INCLUDE[server](../developer/includes/server.md)] instances must have the Service Authentication and Client Authentication certificate purposes enabled.  
 
@@ -101,7 +103,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance configuration i
     Set-NAVServerConfiguration -ServerInstance <BC server instance> -KeyName ServicesCertificateThumbprint -KeyValue <thumbprint>
     ```
 
-    Substitute `<BC server instance>` with name of your server instance, like `BC220`.
+    Substitute `<BC server instance>` with name of your server instance, like `BC240`.
 3. Run the following command to specify SSL between the web client and [!INCLUDE[server](../developer/includes/server.md)]:
 
     ```powershell
@@ -168,7 +170,7 @@ You can configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] 
     Set-NAVWebServerInstanceConfiguration -WebServerInstance <web server instance> -KeyName ServerHttps -KeyValue true
     ```
 
-    Substitute `<web server instance>` with name of your web server instance, like `BC220`.
+    Substitute `<web server instance>` with name of your web server instance, like `BC240`.
 
 #### Manually changing the navsettings.json
 

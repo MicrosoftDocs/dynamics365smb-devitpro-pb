@@ -3,12 +3,12 @@ title: Prompting using a prompt guide
 description: Learn how to build a prompt guide for your PromptDialog pages in Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.reviewer: 
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
 ms.date: 03/21/2024
 ms.custom: bap-template
+ms.reviewer: solsen
 ---
 
 # Prompting using a prompt guide

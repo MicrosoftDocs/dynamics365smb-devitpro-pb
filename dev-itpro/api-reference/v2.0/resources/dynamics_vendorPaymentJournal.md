@@ -1,14 +1,21 @@
 ---
-title: vendorPaymentJournal resource type  
+title: vendorPaymentJournal resource type
 description: A vendor payment journal object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
+ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # vendorPaymentJournal resource type
+
+<!-- START>DO_NOT_EDIT -->
+<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
@@ -31,7 +38,6 @@ Represents a vendor payment journal in [!INCLUDE[prod_short](../../../includes/p
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[account](dynamics_account.md)|account |Gets the account of the vendorPaymentJournal.|
 |[vendorPayments](dynamics_vendorpayment.md)|vendorPayments |Gets the vendorpayments of the vendorPaymentJournal.|
 
 ## Properties
@@ -60,10 +66,10 @@ Here is a JSON representation of the vendorPaymentJournal resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
+<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See also
-
-[GET vendorPaymentJournal](../api/dynamics_vendorPaymentJournal_Get.md)  
-[DELETE vendorPaymentJournal](../api/dynamics_vendorPaymentJournal_Delete.md)  
-[POST vendorPaymentJournal](../api/dynamics_vendorPaymentJournal_Create.md)  
-[PATCH vendorPaymentJournal](../api/dynamics_vendorPaymentJournal_Update.md)
+## See Also
+[GET vendorPaymentJournal](../api/dynamics_vendorpaymentjournal_get.md)
+[DELETE vendorPaymentJournal](../api/dynamics_vendorpaymentjournal_delete.md)
+[POST vendorPaymentJournal](../api/dynamics_vendorpaymentjournal_create.md)
+[PATCH vendorPaymentJournal](../api/dynamics_vendorpaymentjournal_update.md)

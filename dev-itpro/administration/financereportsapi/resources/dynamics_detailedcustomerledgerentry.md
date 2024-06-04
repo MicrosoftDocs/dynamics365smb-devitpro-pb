@@ -4,8 +4,9 @@ description: A detailed customer ledger entry object in Dynamics 365 Business Ce
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/11/2022
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # detailedCustomerLedgerEntry resource type (Beta)

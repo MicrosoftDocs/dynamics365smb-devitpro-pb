@@ -4,14 +4,14 @@ description: This article describes how to download and use the ALDoc tool to ge
 author: SusanneWindfeldPedersen
 ms.topic: conceptual
 ms.reviewer: solsen
-ms.date: 09/27/2023
+ms.date: 05/31/2024
 ms.author: solsen
 ms.custom: bap-template
 ---
 
 # Generating help with the ALDoc tool
 
-Generating content based on source code has many advantages such as accuracy, 100% reflection of the current codebase, less error prone documentation, and it saves time. The ALDoc tool generates documentation from symbolic and syntactical information, code comments, and overall application structure based on input .app file(s). The tool also generates a help site with these reference articles, sorted by the application structure, based on the provided template.
+Generating content based on source code has many advantages such as accuracy, 100% reflection of the current codebase, less error prone documentation, and it saves time. The ALDoc tool generates documentation from symbolic and syntactical information, code comments, and overall application structure based on one or more input .app files. The tool also generates a help site with these reference articles, sorted by the application structure, based on the provided template.
 
 This article describes the necessary steps to use the ALDoc tool to generate the documentation for AL .app packages. The ALDoc tool relies on the DocFx tool, and needs the DocFx prerequisites to be available on the machine that generates the reference documentation. To generate help using the ALDoc tool, the following steps are involved: 
 
@@ -97,7 +97,7 @@ When all prerequisites have been successfully installed, the next step is to use
      .\\aldoc\\aldoc.exe build -o .\\mypath\\ -c 'c:\\my_path_package_cache1','c:\\my_path_package_cache2','c:\\my_path_package_cache3' -s 'F:\\AL\\.alpackages\\Microsoft_System Application_23.0.00000.0.app'
     ```
 
-In the next steps, you will use the DocFx tool to build and host the static website.
+In the next steps, you'll use the DocFx tool to build and host the static website.
 
 ## Build and host the static website
 

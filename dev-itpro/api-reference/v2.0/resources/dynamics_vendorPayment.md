@@ -4,8 +4,9 @@ description: A vendor payment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # vendorPayment resource type
@@ -33,7 +34,7 @@ Represents a vendor payment in [!INCLUDE[prod_short](../../../includes/prod_shor
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[vendorPaymentJournal](dynamics_vendorpaymentjournal.md)|vendorPaymentJournal |Gets the vendorpaymentjournal of the vendorPayment.|
+|[customerPaymentJournal](dynamics_customerpaymentjournal.md)|customerPaymentJournal |Gets the customerpaymentjournal of the vendorPayment.|
 |[vendor](dynamics_vendor.md)|vendor |Gets the vendor of the vendorPayment.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the vendorPayment.|
 |[applyVendorEntries](dynamics_applyvendorentry.md)|applyVendorEntries |Gets the applyvendorentries of the vendorPayment.|

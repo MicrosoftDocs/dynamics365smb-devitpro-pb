@@ -2,11 +2,10 @@
 title: "FAQ for Partial Records"
 description: Answers some of the most typical questions about the partial records capability in Business Central
 ms.author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
+ms.reviewer: jswymer
 ---
 # FAQ for Partial Records
 

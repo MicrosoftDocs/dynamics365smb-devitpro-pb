@@ -1,10 +1,6 @@
 ---
 title: "How to: Install the Microsoft Azure Cmdlets Module"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8a8c59dd-acd3-4f22-a7c3-ca5faaf1af40
 caps.latest.revision: 9

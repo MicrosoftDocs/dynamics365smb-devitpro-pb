@@ -5,10 +5,10 @@ author: sorenfriisalexandersen
 
 ms.topic: conceptual
 ms.devlang: al
-ms. search.keywords: deprecated, Belgium, local functionality
+ms.search.keywords: deprecated, Belgium, local functionality
 ms.date: 04/01/2021
 ms.author: soalex
-
+ms.reviewer: jswymer
 ---
 
 # Deprecated Features in the Belgian Version of Microsoft Dynamics 365 Business Central

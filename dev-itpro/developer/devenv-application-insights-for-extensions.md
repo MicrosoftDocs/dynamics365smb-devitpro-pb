@@ -1,7 +1,6 @@
 ---
 title: Setting up telemetry in an app/extension 
 description: Describes how to configure an extension to send telemetry data to Azure Application Insights. 
-ms.custom: na
 ms.date: 02/09/2024
 ms.reviewer: solsen
 ms.topic: conceptual

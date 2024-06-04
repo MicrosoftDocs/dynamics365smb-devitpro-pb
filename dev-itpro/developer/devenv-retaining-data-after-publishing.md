@@ -3,10 +3,10 @@ title: "Synchronizing extension test data"
 description: "Retaining table data after publishing an extension"
 
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 08/26/2021
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Retaining table data after publishing

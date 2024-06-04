@@ -8,7 +8,7 @@ ms.date: 04/16/2023
 ms.author: kepontop
 ms.reviewer: jswymer
 
-ms.custom: bac-template
+ms.custom: bap-template
 ---
 # Telemetry FAQ (Frequently Asked Questions)
 
@@ -80,7 +80,7 @@ The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service doesn't 
 
 Yes, telemetry also works for on-premises installations (private or public cloud). A few events aren't emitted with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. For an overview of events not emitted, see [Telemetry overview](telemetry-overview.md).
 
-For information about how to enable telemetry on-premises, see [Enable environment telemetry](telemetry-enable-application-insights.md#enable-telemetry-on-environments).
+For information about how to enable telemetry on-premises, see [Enable environment telemetry](telemetry-enable-application-insights.md#for-on-premises-environments-single-tenant-mode).
 
 ## Will you backport the Application Insights instrumentation to versions prior to 15.0?
 

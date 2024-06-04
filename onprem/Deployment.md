@@ -1,10 +1,6 @@
 ---
 title: "Deployment"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0b0afe27-af2f-4172-b971-b4dd076d187a
 caps.latest.revision: 31

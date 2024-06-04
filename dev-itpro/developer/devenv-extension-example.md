@@ -2,9 +2,7 @@
 title: Build your first sample extension that uses new objects and extension objects
 description: Includes code for an example extension, complete with new objects, extension objects, and install and upgrade code.
 author: jswymer
-ms.custom: na
 ms.date: 05/19/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.collection: get-started
 ---

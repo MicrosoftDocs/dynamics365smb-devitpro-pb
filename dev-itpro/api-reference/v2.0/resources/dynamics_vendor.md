@@ -4,8 +4,9 @@ description: A vendor object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # vendor resource type
@@ -33,14 +34,14 @@ Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the country region of the vendor.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the vendor.|
-|[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the payment term of the vendor.|
-|[paymentMethod](dynamics_paymentmethod.md)|paymentMethod |Gets the payment method of the vendor.|
+|[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the paymentterm of the vendor.|
+|[paymentMethod](dynamics_paymentmethod.md)|paymentMethod |Gets the paymentmethod of the vendor.|
 |[picture](dynamics_picture.md)|picture |Gets the picture of the vendor.|
-|[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the default dimensions of the vendor.|
-|[agedAccountsPayable](dynamics_agedaccountspayable.md)|agedAccountsPayable |Gets the aged accounts payable of the vendor.|
-|[contactsInformation](dynamics_contactinformation.md)|contactInformation |Gets the contact information of the vendor.|
+|[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the vendor.|
+|[agedAccountsPayable](dynamics_agedaccountspayable.md)|agedAccountsPayable |Gets the agedaccountspayable of the vendor.|
+|[contactsInformation](dynamics_contactsinformation.md)|contactsInformation |Gets the contactsinformation of the vendor.|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the vendor.|
 
 ## Properties
 

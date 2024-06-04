@@ -2,11 +2,7 @@
 title: Manage Report Layouts in Client
 description: Create custom report layouts based on the build-in report layouts to enable users to switch between different layouts for the same report.
 author: edupont04
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ---
 # Managing Report Layouts in Dynamics NAV Clients

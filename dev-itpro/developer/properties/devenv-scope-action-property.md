@@ -1,9 +1,7 @@
 ---
 title: "Scope (Action) Property"
 description: Specifies the scope of the action to be page-specific or repeater control-specific in Business Central
-ms.custom: na
 ms.date: 09/05/2022
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
