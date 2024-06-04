@@ -21,9 +21,15 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 ## Feature changes
 
 - [Automate country of origin listed for item tracking code in Intrastat reporting (preview)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/automate-country-origin-listed-item-tracking-code-intrastat-reporting)
-- [Discover report and data analysis content easily](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/discover-report-data-analysis-content-easily)
 - [Enable Sustainability features for integrations with APIs (preview)](hdynamics365/release-plan/2024wave1/smb/dynamics365-business-central/achieving-sustainable-compliance-business-central)
 - [Use linked environment in Dataverse integration](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/use-linked-environment-dataverse-integration)
+- Copilot is available in more languages for the following features:
+
+  - [Analysis assist](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/get-insights-faster-copilot-generated-analysis-tabs)
+  - [Bank reconciliation assist](/dynamics365/business-central/bank-reconciliation-with-copilot)
+  - [Marketing text suggestions](https://learn.microsoft.com/en-us/dynamics365/business-central/ai-overview)
+  - [Sales lines suggestions](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/create-sales-lines-easily-copilot) 
+  - [E-documents matching](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/map-e-documents-purchase-order-lines-copilot)
 
 ## Localization updates
 
@@ -40,6 +46,10 @@ If you want to get a comprehensive overview of what's new and planned for Busine
 Note that new customers will automatically get the latest builds of Business Central (24.2). If you're an existing partner/customer, you'll receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
+
+### New Copilot video and blog
+
+Watch the latest [video showcasing Copilot in Business Central](https://www.microsoft.com/videoplayer/embed/RW1l5SJ), and read the [blog post](https://aka.ms/bc-ai) by Mike Morton covering AI innovation.
 
 ### Recent service features
 
