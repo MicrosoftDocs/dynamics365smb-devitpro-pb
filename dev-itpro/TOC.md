@@ -1500,7 +1500,7 @@
 ## Integrating AI using developer tools for Copilot
 ### [Overview](developer/ai-integration-landing-page.yml)
 ### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
-### [What is considered a Copilot offering](developer/ai-extend-copilot-overview.md)
+### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
 ### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### Extend Copilot in Business Central 
