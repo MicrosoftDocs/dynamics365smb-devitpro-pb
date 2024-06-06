@@ -1,6 +1,6 @@
 ---
-title: Launch copilot experience
-description: Learn how to add an action in the UI that users select to start the copilot experience.
+title: Launch Copilot experience
+description: Learn how to add an action in the UI that users select to start the Copilot experience.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -12,13 +12,13 @@ ms.date: 02/17/2024
 ms.custom: bap-template
 ---
 
-# Launch copilot experience
+# Launch Copilot experience
 
-In this article, you learn how to add an action in the UI that users select to start the copilot experience. This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your copilot. You also apply a specific image so that users can easily recognize that the action is related to a copilot feature.
+In this article, you learn how to add an action in the UI that users select to start the Copilot experience. This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your Copilot extension. You also apply a specific image so that users can easily recognize that the action is related to a Copilot feature.
 
-## Add an action for your copilot
+## Add an action for your Copilot
 
-The following code illustrates how to add an action that opens the prompt dialog page for copilot:  
+The following code illustrates how to add an action that opens the prompt dialog page for Copilot:  
 
 ```al
 action(GenerateCopilot)
@@ -28,21 +28,21 @@ action(GenerateCopilot)
 
     trigger OnAction()
     begin
-        Page.RunModal(Page::"My copilot");
+        Page.RunModal(Page::"My Copilot");
     end;
 }
 ```
 
-Set the [Image property](properties/devenv-image-property.md) to either `Sparkle` ![Shows the copilot sparkle icon](media/copilot-sparkle.png)
-or `SparkleFilled` ![Shows the copilot sparkle filled icon](media/copilot-sparkle-filled.png). These images are recognized across Microsoft products to indicate that the action is associated with copilot.
+Set the [Image property](properties/devenv-image-property.md) to either `Sparkle` ![Shows the Copilot sparkle icon](media/copilot-sparkle.png)
+or `SparkleFilled` ![Shows the Copilot sparkle filled icon](media/copilot-sparkle-filled.png). These images are recognized across Microsoft products to indicate that the action is associated with Copilot.
 
-In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific copilot. For example, if there are multiple copilot actions on a page, you might want to emphasize one copilot action over the others.  
+In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific Copilot. For example, if there are multiple Copilot actions on a page, you might want to emphasize one Copilot action over the others.  
 
-## Promote copilot using prompt action 
+## Promote Copilot using prompt action 
 
-You can create a prompt action to promote your Copilot on pages and encourage users to use it. A prompt action is a standard action that appears under the ![Shows the copilot action icon icon](media/promptdialog-copilot-action-icon.png) in the action bar and in the Copilot toolbar that floats on the page for easy access. Users can hide Copilot toolbar by selecting the **Hide** action on the toolbar or **Show in page** in the action bar.
+You can create a prompt action to promote your Copilot on pages and encourage users to use it. A prompt action is a standard action that appears under the ![Shows the Copilot action icon icon](media/promptdialog-copilot-action-icon.png) in the action bar and in the Copilot toolbar that floats on the page for easy access. Users can hide Copilot toolbar by selecting the **Hide** action on the toolbar or **Show in page** in the action bar.
 
-![Shows the copilot action icon clip](media/promptdialog-launch-floating.png)
+![Shows the Copilot action icon clip](media/promptdialog-launch-floating.png)
 
 Prompt actions are only supported on `List`, `ListPage`, `StandardDialog`, and `WorkSheet` page types. To create a prompt action, add an action area called `area(Prompting)` to the page and an `action` that runs the prompt dialog page. 
 
@@ -87,6 +87,6 @@ actions
 
 ## Next steps
 
-- [Design copilot prompt mode](copilot-design-prompt-mode.md)
-- [Design copilot content mode](copilot-design-content-mode.md)
-- [Customize copilot generate mode](copilot-customize-generate-mode.md)
+- [Design Copilot prompt mode](copilot-design-prompt-mode.md)
+- [Design Copilot content mode](copilot-design-content-mode.md)
+- [Customize Copilot generate mode](copilot-customize-generate-mode.md)
