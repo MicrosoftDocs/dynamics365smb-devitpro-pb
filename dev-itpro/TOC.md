@@ -1497,22 +1497,22 @@
 ### [Using webhooks to track data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
 ### [Business events (preview)](developer/business-events-overview.md)
 
-## Integrating AI using developer tools for copilot
+## Integrating AI using developer tools for Copilot
 ### [Overview](developer/ai-integration-landing-page.yml)
-### [What are developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
-### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
-### [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
+### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
+### [What is considered a Copilot offering](developer/ai-extend-copilot-overview.md)
+### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
-### Build a copilot experience
+### Extend Copilot in Business Central 
 #### [Introduction](developer/ai-build-experience-overview.md)
-#### [Build the copilot capability in AL](developer/ai-build-capability-in-al.md)
+#### [Build Copilot capability in AL](developer/ai-build-capability-in-al.md)
 #### Build Copilot user experience
 ##### [Overview](developer/ai-build-experience.md)
 ##### [Create prompt dialog page](developer/copilot-create-promptdialog.md)
 ##### [Design prompt mode](developer/copilot-design-prompt-mode.md)
 ##### [Design content mode](developer/copilot-design-content-mode.md)
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
-##### [Launch copilot](developer/copilot-launch-experience.md)
+##### [Launch Copilot](developer/copilot-launch-experience.md)
 ## Integrating Business Central with Office apps and Microsoft 365
 ### [Overview](developer/m365-integration-overview.md)
 ### Integrating with Microsoft Excel
