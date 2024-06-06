@@ -45,7 +45,7 @@ landingContent:
       - text: About Copilot in Business Central
         url: /dynamics365/business-central/copilot-overview
 # Card
-  - title: Build a copilot experience
+  - title: Extend Copilot in Business Central
     linkLists:
     - linkListType: overview
       links: 
@@ -53,9 +53,9 @@ landingContent:
         url: ai-build-experience-overview.md
     - linkListType: how-to-guide
       links:
-      - text: Build copilot capability in AL
+      - text: Build Copilot capability in AL
         url: ai-build-capability-in-al.md
-      - text: Build copilot user experience
+      - text: Build Copilot user experience
         url: ai-build-experience.md
     - linkListType: reference
       links:

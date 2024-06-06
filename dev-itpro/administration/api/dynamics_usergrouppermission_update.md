@@ -4,7 +4,7 @@ description: Updates a user group permission object in Dynamics 365 Business Cen
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/05/2021
+ms.date: 05/31/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---

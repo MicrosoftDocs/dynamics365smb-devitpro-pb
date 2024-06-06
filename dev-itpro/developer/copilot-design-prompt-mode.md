@@ -1,6 +1,6 @@
 ---
 title: Design the prompt mode of prompt dialog page
-description: Learn how to define the screen of a copilot prompt dialog page where users can add input that the AI generation logic uses for producing results.
+description: Learn how to define the screen of a Copilot prompt dialog page where users can add input that the AI generation logic uses for producing results.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -14,13 +14,13 @@ ms.custom: bap-template
 
 # Design the prompt mode of prompt dialog page
 
-In this article, you learn how to design the copilot screen where users can add input that the AI generation logic uses for producing results. The screen is defined by the prompt mode of the PromptDialog page. The prompt mode is optional because not all AI designs required it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the copilot experience.
+In this article, you learn how to design the Copilot screen where users can add input that the AI generation logic uses for producing results. The screen is defined by the prompt mode of the PromptDialog page. The prompt mode is optional because not all AI designs required it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the Copilot experience.
 
 The following figure illustrates an example of the prompt mode. The prompt mode UI consists of several elements, which are described in the sections that follow.
 
 [![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.png)](media/promptdialog-prompt-mode-prompt-area-no-callout.png#lightbox)
 
-For an overview building the copilot UI, go to [Build copilot user experience](ai-build-experience.md).
+For an overview building the Copilot UI, go to [Build Copilot user experience](ai-build-experience.md).
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ layout
             ShowCaption = false;
             MultiLine = true;
             // Adds placeholder text.
-            InstructionalText = 'Enter information that describes that you want to give copilot...'; 
+            InstructionalText = 'Enter information that describes that you want to give Copilot...'; 
         }
     }
 }
@@ -126,7 +126,7 @@ actions
             Caption = 'Generate';
             trigger OnAction()
             begin
-                // The code triggering the copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
+                // The code triggering the Copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
                 RunGeneration();
             end;
         }
@@ -137,11 +137,11 @@ actions
 
 Use the [OnAction()](triggers-auto/action/devenv-onaction-action-trigger.md) to call generative AI code, in this case the `RunGeneration()` procedure. This trigger is invoked when the user selects the button or when the page is opened in generate mode.
 
-The code of the `RunGeneration` procedure, you must implement yourself. This procedure is where you call the copilot API, and get the results back.
+The code of the `RunGeneration` procedure, you must implement yourself. This procedure is where you call the Copilot API, and get the results back.
 
 For an example on how to implement the `RunGeneration` procedure, see [BCTech samples AzureOpenAI](https://github.com/microsoft/BCTech/blob/002affcf1520a710c270257d6547e25a9a223e85/samples/AzureOpenAI/Basic_ItemSubstitution/PromptDialog/ItemSubstAIProposal.Page.al#L111).
 
-For an example on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
+For an example on building an AI capability, see [Build the Copilot capability in AL](ai-build-capability-in-al.md).
 
 ## Add a file attachment action
 
@@ -203,6 +203,6 @@ actions
 
 ## Next steps
 
-- [Design copilot content mode](copilot-design-content-mode.md)
-- [Customize copilot generate mode](copilot-customize-generate-mode.md)
-- [Launch copilot](copilot-launch-experience.md)
+- [Design Copilot content mode](copilot-design-content-mode.md)
+- [Customize Copilot generate mode](copilot-customize-generate-mode.md)
+- [Launch Copilot](copilot-launch-experience.md)
