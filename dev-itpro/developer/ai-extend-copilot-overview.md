@@ -1,5 +1,5 @@
 ---
-title: What is considered a Copilot offering?
+title: What is considered an extension to Copilot?
 description: Learn whether your AI idea or feature is a match for Copilot in Business Central
 author: jswymer
 ms.author: jswymer 
@@ -12,7 +12,7 @@ ms.date: 11/05/2023
 ms.custom: bap-template 
 ---
 
-# What is considered a Copilot offering?
+# What is considered an extension to Copilot?
 
 At Microsoft, the term *Copilot* refers to a category of large language model-based, generative AI interaction. A Copilot empowers users to work smarter, be more productive, more creative, and more connected to the people and things around them.
 
