@@ -80,8 +80,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ### Copilot in Business Central 101
 
-- Copilot in Business Central playlist on YouTube: [aka.ms/BC-Copilot-Videos​](aka.ms/BC-Copilot-Videos) 
-- Copilot in Business Central - hero video: [aka.ms/BC-AI-Sizzle](aka.ms/BC-AI-Sizzle)
+- Copilot in Business Central playlist on YouTube: [aka.ms/BC-Copilot-Videos​](https://aka.ms/BC-Copilot-Videos)
+- Copilot in Business Central - hero video: [aka.ms/BC-AI-Sizzle](https://aka.ms/BC-AI-Sizzle)
 - Business Central pitch deck: [aka.ms/BC-GTM](https://aka.ms/BC-GTM)
 - Copilot in Business Central blog: [aka.ms/bc-ai​](https://aka.ms/bc-ai)
 - Copilot in Business Central Q&A : [About Copilot](/dynamics365/business-central/copilot-overview)
