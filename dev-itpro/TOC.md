@@ -1512,6 +1512,9 @@
 ##### [Design content mode](developer/copilot-design-content-mode.md)
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
 ##### [Launch Copilot](developer/copilot-launch-experience.md)
+## Developing AI with machine learning APIs
+### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
+
 ## Integrating Business Central with Office apps and Microsoft 365
 ### [Overview](developer/m365-integration-overview.md)
 ### Integrating with Microsoft Excel

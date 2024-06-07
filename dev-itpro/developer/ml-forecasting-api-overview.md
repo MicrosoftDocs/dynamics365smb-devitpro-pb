@@ -27,8 +27,6 @@ All logic of the Forecasting API is encapsulated in the Time Series Management c
 - [Forecast](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#forecast)  
 - [GetForecast](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#getforecast)  
 
-The Forecasting API is a wrapper around an Azure Machine Learning experiment, which is published as a web service. The Forecasting API, also known as the Time Series API, is designed to predict future values of a specific indicator based on its past, time-ordered observations. This API is beneficial for two reasons:
-
 For [!INCLUDE [prod_short](includes/prod_short.md)] online, the experiment is published by Microsoft and connected to the Microsoft subscription. For other deployment options, you have to publish the experiment in your own Azure subscription.
 
 The publishing task consists of four steps: 
