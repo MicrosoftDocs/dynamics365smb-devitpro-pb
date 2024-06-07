@@ -48,9 +48,12 @@ var
 begin
   TimeSeriesManagement.Initialize(URITxt, KeyTxt, 0, false);
  
-If you pass empty strings, the system will use the default end-point, but that will only work for Business Central online:
-  TimeSeriesManagement.Initialize('', '', 0, true);
+```
 
+If you pass empty strings, the system will use the default end-point, but that will only work for Business Central online: 
+
+```al
+TimeSeriesManagement.Initialize('', '', 0, true);
 ```
 
 Once initialized, you must prepare the training dataset. There are two options:
