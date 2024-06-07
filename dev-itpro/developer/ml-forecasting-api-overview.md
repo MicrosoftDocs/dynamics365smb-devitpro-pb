@@ -178,6 +178,22 @@ begin
 
 If you modify this code to run in a loop, you can get the following result:
 
+:::image type="content" source="media/forecasting_prediction.png" alt-text="Forecasting prediction model":::
+
+Based on this output, there are two major observations:
+
+1. The ALL model displays same result as the TBATS model. When you choose ALL as the option, it runs all available algorithms, compares the results, and returns the one that has the lowest mean? absolute percentage error (MAPE). For this dataset that appears to be the TBATS model. 
+2. We also can notice that the STL and STL+ETS models are missing. That’s because STL is an acronym for a seasonal decomposition of time series by Loess, and it focusses on seasonality. In the Forecasting API, the season is specified as 1 year. STL requires data for more than 2 years. 
+
+Let’s try to run the same code but with data for 26 months.
+
+:::image type="content" source="media/forecasting_prediction_2years.png" alt-text="Forecasting prediction for two years":::
+
+Now, the STL and ETS+STL models are also capable of producing results. Notice that TBATS still the best option.
+If so, why don’t we always use the TBATS model? Because it doesn’t work well on small datasets. Let’s rerun the same code for a dataset that contains 6 months only.
+
+:::image type="content" source="media/forecasting_prediction_3months.png" alt-text="Forecasting prediction for three months":::
+
 
 
 ## See also
