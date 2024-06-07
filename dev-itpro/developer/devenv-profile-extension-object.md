@@ -1,16 +1,18 @@
 ---
-title: Profile Object
-description: Description of the profile object, which allows you to build an individual experience for each user profile.
-author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+title: Profile Extension Object
+description: Description of the profile extension object, which allows you to modify an individual experience for each user profile.
+author: qutreson
+ms.date: 04/01/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Profile object
+# Profile extension object
 
-The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to build an individual experience for each user profile. The Profile object performs a validation to check whether the specified role center page exists, and [page customization objects](devenv-page-customization-object.md) exists, when you define a new profile object. On a page customization you can add changes to the page layout, and actions; but you cannot add variables, procedures, or triggers. 
+<!-- TODO(qutreson) -->
+
+The profile extension object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to build an individual experience for each user profile. The Profile object performs a validation to check whether the specified role center page exists, and [page customization objects](devenv-page-customization-object.md) exists, when you define a new profile object. On a page customization you can add changes to the page layout, and actions; but you cannot add variables, procedures, or triggers. 
 
 > [!NOTE]  
 > Page customizations only apply to the RoleCenter they are specified for. In order to see them, in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] under **My Settings**, **Role Center** change to the specific RoleCenter that a page customization is defined for.
@@ -30,15 +32,15 @@ Typing the shortcut `tprofile` will create the basic layout for a profile object
 The following profile object example creates a profile for the `MyRoleCenter` Role Center, which is available in the **Role Explorer** in the UI and available to end-users. The profile also depends on the customization `MyCustomization` and modifies the layout of the **Customer List** to make the `Name` field invisible using the `modify` method. For more information, see [Profile Properties](properties/devenv-profile-properties.md).
 
 ```AL
-profile MyProfile
+profileextension MyProfileExt extends "Business Manager"
 { 
-    Description = 'Some internal comment that only the Dev can see'; 
     Caption = 'My User-friendly Name'; 
     ProfileDescription = 'A detailed description of who is this profile for, why/how to use it (etc)'; 
-    RoleCenter = MyRoleCenter; 
+    RoleCenter = MyRoleCenter;
     Enabled = true; 
     Promoted = true; 
-    Customizations = MyCustomization;
+
+    Customizations = MyCustomization; // This adds a new customizations on top of the profile defined one.
 } 
 
 pagecustomization MyCustomization customizes "Customer List"
@@ -57,5 +59,5 @@ pagecustomization MyCustomization customizes "Customer List"
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [Pages Overview](devenv-pages-overview.md)  
-[Profile Extension Object](devenv-profile-extension-object.md)
+[Profile Object](devenv-profile-object.md)
 [Page Customization Object](devenv-page-customization-object.md)
