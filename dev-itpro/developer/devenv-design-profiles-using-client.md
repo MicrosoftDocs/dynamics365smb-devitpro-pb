@@ -96,6 +96,9 @@ A profile package is a zip file that contains profiles, profile extensions, and 
 
 The sections that follow explain a bit more about the file types and creating the profile package.
 
+> [!NOTE]
+> This section describes the package structure and file naming for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 2 (version 25.0) and later.
+
 ### Profile files
 
 Each user-created profile is exported to a separate AL file in a dedicated folder. This file contains the `profile` object that defines the profile's ID, name, and Role Center. It also includes references to the page customizations it uses. For example, let's say you created a profile with the ID **MyProfile** that uses the role center page **9022 Business Manager Role Center**.  You then customized the Business Manager Role Center itself and the **Customer** list page. The exported profile package would contain a folder named **MYPROFILE** and a file called **MYPROFILE.Profile.al**. This file would include the following code:
@@ -121,7 +124,7 @@ Customizations made to extension-based profiles are exported to a profile extens
 - Properties that specify metadata like, the CaptionML, ProfileDescriptionML, and RoleCenter. 
 - References to configuration files that define page customizations. 
 
-For example, let's say you changed the description and customized the **Customer** page for the **Business Manager** profile that is provided by the Base Application extension. The profile package would then contain a folder named **BUSINESS MANAGER** and the file **BUSINESS MANAGER.ProfileExt.al**. This file will contain code similar to the following code:
+For example, let's say you changed the description and customized the **Customer List** page for the **Business Manager** profile that is provided by the Base Application extension. The profile package would then contain a folder named **BUSINESS MANAGER** and the file **BUSINESS MANAGER.ProfileExt.al**. This file will contain code similar to the following code:
 
 ```AL
 profileextension BUSINESSMANAGER_1 extends "BUSINESS MANAGER"
@@ -135,7 +138,7 @@ profileextension BUSINESSMANAGER_1 extends "BUSINESS MANAGER"
 }
 ```
 
-`Configuration3` is a reference to a page customization file for the **Customer** page. For more information, see the next section.
+`Configuration3` is a reference to a page customization file for the **Customer List** page. For more information, see the next section.
 
 <!--And:
 
@@ -158,7 +161,7 @@ pagecustomization Configuration3 customizes "Customer List"
 
 ### Page customization files
 
-Page customizations made to user-created profiles and extension-based profiles are exported to AL files that include a `pagecustomization` object. This object defines each modification to the page. Referring to the examples above, the zip file would include three files:
+Page customizations made to user-created profiles and extension-based profiles are exported to AL files that include a `pagecustomization` object. This object defines each modification to the page. Referring to the examples above, the zip file would include three files in two different folders:
 
 - **MYPROFILE\Business Manager Role Center.PageCust.al**
 - **MYPROFILE\Customer List.PageCust.al**
@@ -178,9 +181,6 @@ pagecustomization Configuration1 customizes "Business Manager Role Center"
       Visible = false;
     }
   }
-  actions
-  {
-  }
 }
 ```
 
@@ -196,9 +196,6 @@ pagecustomization Configuration2 customizes "Customer List"
       Visible = false;
     }
   }
-  actions
-  {
-  }
 }
 ```
 
@@ -213,9 +210,6 @@ pagecustomization Configuration3 customizes "Customer List"
     {
       Visible = true;
     }
-  }
-  actions
-  {
   }
 }
 ```

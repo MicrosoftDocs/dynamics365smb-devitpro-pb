@@ -67,7 +67,7 @@ pagecustomization CustomerListCust customizes "Customer List"
 }
 ```
 
-## Using the client to create AL profiles and page customizations
+## Using the client to create AL profiles, profile extensions, and page customizations
 
 Creating profiles, profile extensions, and page customizations can also be done from the client. This will typically be done by administrators or consultants to create new profiles or fine-tune the page customizations that are provided by extensions. However, as a developer, you can also leverage the client to make profiles, profile extensions, and page customizations in AL extensions. For more information, see [Using the Client to Create Profiles and Page Customizations](devenv-design-profiles-using-client.md).
 
