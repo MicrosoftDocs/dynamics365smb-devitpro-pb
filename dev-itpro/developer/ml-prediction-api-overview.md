@@ -13,6 +13,81 @@ ms.reviewer: solsen
 
 # Prediction API overview
 
+The Prediction API is the latest addition to the collection of Machine Learning APIs that are embedded in [!INCLUDE [prod_short](includes/prod_short.md)]. It first and foremost supports the **Late Payment Prediction** extension (LINK). However, it can be used to solve other problems with regression or classification. For example, in our “Christmas Apparel Demo” <link>, we used the Prediction API to build a classification model that allocates each item to one of three classes based on the expected sales volume. We could also use the Prediction API to build a model that predicts customer churn, quote conversion, or shipment delay.
+
+The classification is a typical problem that can be solved with machine learning, and there are multiple techniques to do that. If you read the previous article (LINK), you know that we used the Custom Vision service to train an image classification model based on the provided images and tags.
+
+The Prediction API is another tool that works on a different type of training dataset. As you already know, the training dataset contains one or more features and a label. We hadn’t specified features for the Custom Vision model, because, for images, 1 pixel is usually 1 feature (grayscale) or 3 features (RGB). However, if we want to build a classification model for sales volume, we must define our own features, such as price, gender, sleeve length, and so on.
+
+All logic of the Prediction API is concentrated in the [ML Prediction Management](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management) codeunit (ID=2003) and has the following methods:
+
+- [Initialize](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management#initialize)
+- [SetRecord](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management#setrecord)
+- [AddFeature](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management#addfeature) 
+- [SetLabel](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management#setlabel) 
+- [SetConfidence](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management#setconfidence)
+- [Train](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management#train)
+- [Predict](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management#predict)
+
+The Prediction API is a wrapper around an Azure Machine Learning experiment, which is published as a web service. For [!INCLUDE [prod_short](includes/prod_short.md)] online, the experiment is published by Microsoft and connected to the Microsoft subscription. For other deployment options, you must publish the experiment in your own Azure subscription.
+
+The publishing task consists of 4 simple steps: 
+
+- Open this (https://gallery.azure.ai/Experiment/Prediction-Experiment-for-Dynamics-365-Business-Central) experiment in Azure Machine Learning Studio. 
+- Run it, and then deploy it as a web service. 
+- In the web service dashboard, copy the API key.
+- Choose REQUEST/RESPONSE, and then copy the Request URI.
+
+The purpose of this task is to get API URI and API Key and pass them to the Initialize method. 
+
+```al
+
+var
+  MLPredictionManagement: Codeunit "ML Prediction Management";
+  URITxt: TextConst ENU = 'https://../execute?api-version=2.0&details=true';
+  KeyTxt: TextConst ENU = 'TlfjUL..Mnrahg==';
+begin
+  MLPredictionManagement.Initialize(URITxt, KeyTxt, 0);
+```
+
+In [!INCLUDE [prod_short](includes/prod_short.md)] online, you can use the default credentials. In that case, you can use the following method instead:
+
+```al
+  MLPredictionManagement.InitializeWithKeyVaultCredentials(0);
+```
+
+Once initialized, you must prepare the training dataset. Just like the Forecasting API, the Prediction API can take almost any record as input. But, from a practical perspective, it's recommended to create a buffer table to aggregate the training data. In this case, you can gather data from multiple sources and perform the data transformation as needed. Even in the simple “Christmas Apparel Demo”, the data was coming from multiple sources: Sales prices come from the Item card or the Sales Prices table; gender, material, and sleeve length came from item attributes. So let’s get started by creating the buffer table.
+
+```al
+
+Table 50136 "ML Prediction Parameters"
+{
+    fields
+    {
+        field(1; Counter; Integer) { AutoIncrement = true; }
+        field(2; Price; Option) { OptionMembers = Low,Medium,High; }
+        field(3; Gender; Option) { OptionMembers = Man,Women; }
+        field(4; Material; Option) { OptionMembers = Cashmere,Silk,Wool,Acrylic,Viscose,Cotton; }
+        field(5; SleeveLength; Option) { OptionMembers = Full,Half,Short,Threequarter,Butterfly,Sleveless; }
+        field(6; IsChristmas; Boolean) { }
+        field(10; DecemberSales; Option) { OptionMembers = Low,Medium,High; }
+        field(11; Confidence; Decimal) { }
+    }
+
+    Keys
+    {
+        key(PK; Counter) { Clustered = true; }
+    }
+}
+```
+
+It’s just a buffer table, where Counter is the primary key. `Price`, `Gender`, `Material`, `SleeveLength`, and `IsChristmas` are features. The `DecemberSales` field stores labels for training and receives the predicted value. `Confidence` is a field that specifies the probability that the classification is correct.
+
+The next step is to fill the buffer table with data, done in AL and not shown here.
+
+
+
+
 ## See also
 
 [Forecasting API overview](ml-forecasting-api-overview.md)  
