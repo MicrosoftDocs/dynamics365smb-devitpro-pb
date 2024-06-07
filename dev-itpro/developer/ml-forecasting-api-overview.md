@@ -29,20 +29,6 @@ All logic of the Forecasting API is encapsulated in the Time Series Management c
 
 The Forecasting API is a wrapper around an Azure Machine Learning experiment, which is published as a web service. The Forecasting API, also known as the Time Series API, is designed to predict future values of a specific indicator based on its past, time-ordered observations. This API is particularly beneficial for two reasons:
 
-1. The dataset required for training is remarkably straightforward – it primarily needs labels. There's no real necessity for features in forecasting. The only stipulation is that the labels must be arranged in chronological order and represent consistent time intervals.
-2. Business applications are typically abundant with data arranged in chronological order. Approximately 30% of all tables contain a column of type *Date* and another of type *Decimal*.
-
-The core logic of the Forecasting API is encapsulated within the Time Series Management codeunit (ID 2000), which comprises the following methods:
-
-- [Initialize](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#initialize)
-- [PrepareData](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#preparedata)
-- [SetPreparedData](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#setprepareddata)
-- [GetPreparedData](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#getprepareddata)
-- [Forecast](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#forecast)
-- [GetForecast](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#getforecast)
-
-The Forecasting API essentially serves as a wrapper around an Azure Machine Learning experiment that is published as a web service. It's important to note that in the context of Azure Machine Learning Studio, the term "experiment" refers to the draft model. Once the experiment is published, it's typically ready for production use.
-
 For [!INCLUDE [prod_short](includes/prod_short.md)] online, the experiment is published by Microsoft and connected to the Microsoft subscription. For other deployment options, you have to publish the experiment in your own Azure subscription.
 
 The publishing task consists of four steps: 
