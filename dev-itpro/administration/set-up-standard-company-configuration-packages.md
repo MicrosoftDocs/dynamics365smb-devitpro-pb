@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords:
 ms.search.form: 8610, 8613, 8614, 8615, 8620, 8632
-ms.date: 04/07/2022
+ms.date: 06/07/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -76,7 +76,7 @@ When exporting and importing configuration packages between two company database
 
 You can import a configuration package that has been exported from a database that has a different schema than that target database. However, any tables or fields in the configuration package that are missing in the target database will not be imported. Tables with different primary keys and fields with different data types will also not successfully import. For example, if the configuration pack includes table **50000, Customer** that has primary key **Code20** and the database to which you import the pack includes table **50000, Customer Bank Account** that has the primary key **Code20 + Code 20**, then data will not be imported.  
 
-## To create a custom company configuration package
+## Create a custom company configuration package
 
 1. Create a new company. For more information, see [Create New Companies in Business Central](/dynamics365/business-central/about-new-company) in the business functionality content.  
 2. Set up the new company in the way you need. Fill in all required setup tables.  
@@ -148,7 +148,7 @@ You can import a configuration package that has been exported from a database th
 
 The next time you're going to set up [!INCLUDE [prod_short](../includes/prod_short.md)] for a new customer, you can apply your configuration packages and get started fast. For more information, see [Apply Company Configuration Packages](apply-company-configuration-packages.md).  
 
-## See Also
+## See also
 
 [Apply Company Configuration Packages](apply-company-configuration-packages.md)  
 [Migrate On-Premises Data to Business Central Online](migrate-data.md)  
