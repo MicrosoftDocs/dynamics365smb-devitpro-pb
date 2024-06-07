@@ -137,8 +137,47 @@ It depends on what you are predicting, but in most cases I would ignore forecast
 
 :::image type="content" source="media/forecasting_graph.png" alt-text="Forecasting graph":::
 
-## Next steps
+## Fine-tuning the results
 
-You can now try to build an extension that populates the Demand Forecast. For more advanced scenarios, see []().
+The experiment accepts a number of parameters to fine-tune results. Not all parameters are exposed in the API, but the Time Series Model is, and it accepts following options that represent various time series algorithms and their combinations:
+
+- ARIMA 
+- ETS 
+- STL 
+- ETS+ARIMA (returns average as a result)
+- ETS+STL (returns average as a result)
+- TBATS 
+- ALL
+
+When you run the `TimeSeriesManagement.Forecast(3, 0, 0);` the ARIMA model is used for calculation. It’s usually a good choice to start with, but which model to choose, depends on the data that you have.
+
+Let’s run all possible options and compare results. In AL, define the enum as shown below:
+
+```al
+enum 50139 "Time Series Model"
+{
+    value(0; ARIMA) { }
+    value(1; ETS) { }
+    value(2; STL) { }
+    value(3; ETS_ARIMA) { Caption = 'ETS+ARIMA'; }
+    value(4; ETS_STL) { Caption = 'ETS+STL'; }
+    value(5; ALL) { }
+    value(6; TBATS) { }
+}
+```
+
+And then run the code that we wrote in the previous section, now with a different value for the `Model` parameter.
+
+```al
+
+var
+  TimeSeriesModel: enum "Time Series Model";
+begin
+  TimeSeriesManagement.Forecast(3, 0, TimeSeriesModel::ARIMA);
+```
+
+If you modify this code to run in a loop, you can get the following result:
+
+
 
 ## See also
