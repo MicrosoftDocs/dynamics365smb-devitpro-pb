@@ -194,6 +194,16 @@ If so, why don’t we always use the TBATS model? Because it doesn’t work well
 
 :::image type="content" source="media/forecasting_prediction_3months.png" alt-text="Forecasting prediction for three months":::
 
+In the example, we see another two interesting facts:
 
+- The amount of data didn’t allow the Forecasting API to calculate the range for the ARIMA model.
+- Despite that, the ARIMA model is the best performer on this dataset. In contrast, TBATS returns extreme numbers.
+
+What about always using ALL? That’s a good option, however with its own drawbacks:
+
+- We've seen issues (timeouts) for the ARIMA model with larger datasets that contained more than 200 data points. As ALL will try to perform a calculation for all models including ARIMA, it'll encounter similar issues. The solution is to reduce the dataset, use specific models, and adjust R? script if you're using your own deployment of the Azure Machine Learning experiment.
+- There are also some cost considerations to make. Running all models is often more expensive than running a specific one, as it requires more compute power. 
+ 
+For more information, see the source code of the [Sales and Inventory Forecast extension](https://github.com/microsoft/ALAppExtensions/tree/master/AddOns/SalesAndInventoryForecast). Alternatively, you can also take a closer look at the Cash Flow Forecast feature, which is part of the Base Application extension.
 
 ## See also
