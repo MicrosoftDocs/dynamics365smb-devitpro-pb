@@ -2,7 +2,7 @@
 title: Install a version 24 update
 description: This article describes the tasks required for getting the monthly version 24 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 05/01/2024
+ms.date: 05/29/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -249,7 +249,7 @@ Also, to ensure that the existing published extensions work on the new platform,
     > You'll see this message if you ran the cmdlet without the `-Force` parameter. Run the cmdlet again, but be sure to include `-Force` parameter.
 
 ## Connect server instance to database
- 
+
 1. (Multitenant only) Enable the server instance as a multitenant instance:
 
     ```powershell
@@ -414,6 +414,34 @@ Follow these steps if your existing solution uses the Microsoft System Applicati
     ```
 
     Upgrading data updates the data in the tables of the tenant database to the schema changes made to tables of the System Application.
+
+## Upgrade Business Foundation Application
+
+Follow these steps if your existing solution uses the Microsoft Business Foundation Application. Otherwise, you can skip this procedure.
+
+1. Publish the  **Business Foundation** extension (Microsoft_Business Foundation.app).
+
+    You find the Microsoft_Business Foundation.app in the **Applications\BusinessFoundation\Source** folder of installation media (DVD).
+
+    ```powershell
+    Publish-NAVApp -ServerInstance $BcServerInstance -Path $BusFoundAppPath
+    ```
+
+1. Synchronize the tenant with the Business Foundation extension.
+
+    ```powershell
+    Sync-NAVApp -ServerInstance $BcServerInstance-Tenant $TenantId -Name "Business Foundation" -Version $NewBCVersion
+    ```
+
+   Replace `$NewBcVersion` with the exact version of the published Business Foundation extension.
+
+1. Run the data upgrade on the Business Foundation.
+
+    To run the data upgrade, use the [Start-NavAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
+
+    ```powershell
+    Start-NAVAppDataUpgrade -ServerInstance $BcServerInstance -Tenant $TenantId -Name "Business Foundation" -Version $NewBcVersion
+    ```
 
 ## Upgrade Base Application
 
