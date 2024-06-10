@@ -13,11 +13,11 @@ ms.reviewer: solsen
 
 # Prediction API overview
 
-The Prediction API is the latest addition to the collection of Machine Learning APIs that are embedded in [!INCLUDE [prod_short](includes/prod_short.md)]. It first and foremost supports the **Late Payment Prediction** extension (LINK). However, it can be used to solve other problems with regression or classification. For example, in our “Christmas Apparel Demo” <link>, we used the Prediction API to build a classification model that allocates each item to one of three classes based on the expected sales volume. We could also use the Prediction API to build a model that predicts customer churn, quote conversion, or shipment delay.
+The Prediction API is the latest addition to the collection of Machine Learning APIs that are embedded in [!INCLUDE [prod_short](includes/prod_short.md)]. It first and foremost supports the **Late Payment Prediction** extension <!-- link -->. However, it can be used to solve other problems with regression or classification. For example, in our “Christmas Apparel Demo” <!-- <link> -->, we used the Prediction API to build a classification model that allocates each item to one of three classes based on the expected sales volume. We could also use the Prediction API to build a model that predicts customer churn, quote conversion, or shipment delay.
 
-The classification is a typical problem that can be solved with machine learning, and there are multiple techniques to do that. If you read the previous article (LINK), you know that we used the Custom Vision service to train an image classification model based on the provided images and tags.
+The classification is a typical problem that can be solved with machine learning, and there are multiple techniques to do that. If you read [Forecasting API overview](ml-forecasting-api-overview.md) article, you know that we used the Custom Vision service to train an image classification model based on the provided images and tags.
 
-The Prediction API is another tool that works on a different type of training dataset. As you already know, the training dataset contains one or more features and a label. We hadn’t specified features for the Custom Vision model, because, for images, 1 pixel is usually 1 feature (grayscale) or 3 features (RGB). However, if we want to build a classification model for sales volume, we must define our own features, such as price, gender, sleeve length, and so on.
+The Prediction API is another tool that works on a different type of training dataset. As introduced in the [Forecasting API overview](ml-forecasting-api-overview.md) article, the training dataset contains one or more features and a label. We didn’t specify features for the Custom Vision model, because, for images, one pixel is usually one feature (grayscale) or three features (RGB). However, if we want to build a classification model for sales volume, we must define our own features, such as price, gender, sleeve length, and so on.
 
 All logic of the Prediction API is concentrated in the [ML Prediction Management](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management) codeunit (ID=2003) and has the following methods:
 
@@ -31,14 +31,14 @@ All logic of the Prediction API is concentrated in the [ML Prediction Management
 
 The Prediction API is a wrapper around an Azure Machine Learning experiment, which is published as a web service. For [!INCLUDE [prod_short](includes/prod_short.md)] online, the experiment is published by Microsoft and connected to the Microsoft subscription. For other deployment options, you must publish the experiment in your own Azure subscription.
 
-The publishing task consists of 4 simple steps: 
+The publishing task consists of four simple steps: 
 
-- Open this (https://gallery.azure.ai/Experiment/Prediction-Experiment-for-Dynamics-365-Business-Central) experiment in Azure Machine Learning Studio. 
+- Open the [Prediction Experiment for Dynamics 365 Business Central](https://gallery.azure.ai/Experiment/Prediction-Experiment-for-Dynamics-365-Business-Central) experiment in Azure Machine Learning studio. 
 - Run it, and then deploy it as a web service. 
 - In the web service dashboard, copy the API key.
 - Choose REQUEST/RESPONSE, and then copy the Request URI.
 
-The purpose of this task is to get API URI and API Key and pass them to the Initialize method. 
+The purpose of this task is to get API URI and API key and pass them to the `Initialize` method. 
 
 ```al
 
@@ -85,17 +85,14 @@ It’s just a buffer table, where Counter is the primary key. `Price`, `Gender`,
 
 The next step is to fill the buffer table with data, done in AL and not shown here.
 
+:::image type="content" source="media/prediction-parameters.png" alt-text="Prediction parameters":::
 
-media
+Once we have the training data, we can use the Prediction API to train the model. Let see if the system figures out how different combinations of price, gender, material, and Christmas theme lead to different sales volumes in December.
+We use the `SetRecord` method to point to the table with the training dataset. After that, we run the `AddFeature` method for each field that contains our features (Price, Gender, and so on). We can add up to 25 features.
 
-Once we have the training data, we can use the Prediction API to train the model. Let see if the system will figure out how different combinations of price, gender, material, and Christmas theme lead to different sales volumes in December.
-We'll use the `SetRecord` method to point to the table with the training dataset. After that, we run the `AddFeature` method for each field that contains our features (Price, Gender, and so on). We can add up to 25 features.
-
-Then, we must specify, which fields contain the label (the expected output) and confidence. Though confidence isn't really needed at this stage, the way the API is implemented requires us to specify the confidence field.
+Then, we must specify, which fields contain the label (the expected output) and confidence. Though confidence isn't needed at this stage, the way the API is implemented requires us to specify the confidence field.
 
 ```al
-
-
 var
   MLPredictionParameters: Record "ML Prediction Parameters";
   ModelAsText: Text;
@@ -122,7 +119,7 @@ The last method to call is `Train`, which sends data to the Azure Machine Learni
 
 If the quality of the model (the percentage of correct predictions) is acceptable for your business scenario (0.8 or higher), then you can store the model for future use, for example in a BLOB field. Now, you have the trained model, and you can use it for classification tasks.
 
-The application code will be very similar to the code we wrote for training purposes. Again we’ll use a buffer table, but this time it'll contain records with features only. Notice that in this case, you keep the label field empty (in our scenario, that’s the `DecemberSales` field).
+The application code is similar to the code we wrote for training purposes. Again we use a buffer table, but this time it contains records with features only. Notice that in this case, you keep the label field empty (in our scenario, that’s the `DecemberSales` field).
 
 ```al
 MLPredictionManagement.Initialize(URITxt, KeyTxt, 0);
@@ -142,7 +139,7 @@ MLPredictionManagement.Predict(ModelAsText);
 The last method that you call is the `Predict` method, which sends the model and data to the Azure Machine Learning experiment. As soon as results are received, the fields `DecemberSales` and `Confidence` are updated with the predicted class and the probability that the classification is correct.
 
 Now, you can loop through the updated buffer table and read the label and confidence for each record used in the prediction. 
-For more information, refer to the source code of the [Late Payment Prediction extension](https://github.com/microsoft/ALAppExtensions/tree/master/AddOns/LatePaymentPredictor).
+For more information, see the source code of the [Late Payment Prediction extension](https://github.com/microsoft/ALAppExtensions/tree/master/AddOns/LatePaymentPredictor).
 
 ## See also
 
