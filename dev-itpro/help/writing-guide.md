@@ -3,7 +3,7 @@ title: Authoring guide for Business Central
 description: Tips and tricks for authoring in MarkDown files when you extend or customize the Help for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: conceptual
-ms.date: 09/31/2024
+ms.date: 06/10/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
