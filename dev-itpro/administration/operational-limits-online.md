@@ -40,7 +40,6 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|Max items in object graph|The maximum number of objects to serialize or deserialize.|  10,000|
 |Max file size|The maximum size of files that can be uploaded to or downloaded from the service.|350 MB|
 |Maximum stream read size|The maximum number of bytes that can be read from a stream (InStream object) in a single AL read operation. Examples include READ or InStream.READTEXT method calls. This setting pertains to UTF-8 and UTF-16 text encoding; not MS-DOS encoding. |1,000,000 bytes|
 
