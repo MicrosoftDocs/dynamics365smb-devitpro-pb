@@ -193,9 +193,11 @@ In the example, we see another two interesting facts:
 
 What about always using ALL? That’s a good option, however with its own drawbacks:
 
-- We've seen issues (timeouts) for the ARIMA model with larger datasets that contained more than 200 data points. As ALL will try to perform a calculation for all models including ARIMA, it encounters similar issues. The solution is to reduce the dataset, use specific models, and adjust R? script if you're using your own deployment of the Azure Machine Learning experiment.
+- We've seen issues (timeouts) for the ARIMA model with larger datasets that contained more than 200 data points. As ALL will try to perform a calculation for all models including ARIMA, it encounters similar issues. The solution is to reduce the dataset, use specific models, and adjust the R script if you're using your own deployment of the Azure Machine Learning experiment.
 - There are also some cost considerations to make. Running all models is often more expensive than running a specific one, as it requires more compute power. 
  
 For more information, see the source code of the [Sales and Inventory Forecast extension](https://github.com/microsoft/ALAppExtensions/tree/master/AddOns/SalesAndInventoryForecast). Alternatively, you can also take a closer look at the Cash Flow Forecast feature, which is part of the Base Application extension.
 
 ## See also
+
+[Prediction API overview](ml-forecasting-api-overview.md)  
