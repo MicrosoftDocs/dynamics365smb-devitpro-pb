@@ -56,11 +56,10 @@ TimeSeriesManagement.Initialize('', '', 0, true);
 
 Once initialized, you must prepare the training dataset. There are two options:
 
-1. You can prepare the dataset “manually” by inserting records into a temporary instance of the **Time Series Buffer** table.
+1. You can prepare the dataset "manually” by inserting records into a temporary instance of the **Time Series Buffer** table.
 2. Or, you can use the helper method `PrepareData`, which will do it for you. The `PrepareData` method transforms any passed record into a format, which can be processed by the Forecasting API. For example, if you want to detect sales volume, you'll probably use the **Item Ledger Entry** table as the source table:
 
 ```al
-
 var
   ItemLedgerEntry: Record "Item Ledger Entry";
   Date: Record Date;
@@ -107,13 +106,13 @@ You can see 12 periods for each item (only one item is displayed on screenshot).
 
 You can update the dataset (for example invert the sign for values) or create your own dataset if you need to collect data from more than one table. Then, you can send that dataset back to the Forecasting API with the `SetPreparedData` method. That's what we do with the Cash Flow Forecast, where we gather data from the **Customer Ledger Entries**, **Vendor Ledger Entries**, and **Tax Entries** tables.
 
-Once your dataset is ready, it's time to run the Forecast method. The only parameter you need to specify is the number of data points you want to forecast:
+Once your dataset is ready, it's time to run the `Forecast` method. The only parameter you need to specify is the number of data points that you want to forecast:
 
 ```al
 TimeSeriesManagement.Forecast(3, 0, 0);
 ```
 
-The quality of the forecast is affected by specifying too many data points at a time. We address this later in this article.
+The quality of the forecast is affected by specifying too many data points at a time. We address that later in this article.
 
 Now, you can get results for further processing. The `GetForecast` method fills the **Time Series Forecast** table with results.
 
@@ -124,20 +123,17 @@ Now, you can get results for further processing. The `GetForecast` method fills 
         TimeSeriesManagement.GetForecast(TempTimeSeriesForecast);   
 ```
 
-This following picture shows the forecast for the next 3 periods (13, 14, 15) that comes after the initial 12. There are forecasted values and delta for each data point.
+The following image shows the forecast for the next 3 periods (13, 14, 15) that comes after the initial 12. There are forecasted values and delta for each data point.
 
 :::image type="content" source="media/forecasting_api2.png" alt-text="Forecast for the next 3 periods":::
  
-The Forecasting API doesn’t return the single value for a data point, but returns a range where the predicted value will be. In the example above, the period 15 has a predicted value of 13 and a delta of 6.02. This means that the value for the 15th period will be somewhere between 6.98 and 19.02 (13-6,02 and 13+6.02). 
-
-
-It depends on what you are predicting, but in most cases I would ignore forecasts where the delta is wider than 20-30%. The narrower the better.
+The Forecasting API doesn’t return the single value for a data point, but returns a range where the predicted value will be. In the example above, the period 15 has a predicted value of 13 and a delta of 6.02. This means that the value for the 15th period will be somewhere between 6.98 and 19.02 (13-6,02 and 13+6.02). Depending on what you're predicting, it might be good to ignore forecasts where the delta is wider than 20-30%. The narrower the better.
 
 :::image type="content" source="media/forecasting_graph.png" alt-text="Forecasting graph":::
 
 ## Fine-tuning the results
 
-The experiment accepts many parameters to fine-tune results. Not all parameters are exposed in the API, but the Time Series Model is, and it accepts following options that represent various time series algorithms and their combinations:
+The experiment accepts many parameters to fine-tune results. Not all parameters are exposed in the API, but the Time Series Model is, and it accepts the following options that represent various time series algorithms and their combinations:
 
 - ARIMA 
 - ETS 
@@ -149,7 +145,7 @@ The experiment accepts many parameters to fine-tune results. Not all parameters 
 
 When you run the `TimeSeriesManagement.Forecast(3, 0, 0);` the ARIMA model is used for calculation. It’s usually a good choice to start with, but which model to choose, depends on the data that you have.
 
-Let’s run all possible options and compare results. In AL, define the enum as shown below:
+Let’s run all possible options and compare the results. In AL, define the enum as shown below:
 
 ```al
 enum 50139 "Time Series Model"
@@ -167,7 +163,6 @@ enum 50139 "Time Series Model"
 And then run the code that we wrote in the previous section, now with a different value for the `Model` parameter.
 
 ```al
-
 var
   TimeSeriesModel: enum "Time Series Model";
 begin
@@ -180,15 +175,14 @@ If you modify this code to run in a loop, you can get the following result:
 
 Based on this output, there are two major observations:
 
-1. The ALL model displays same result as the TBATS model. When you choose ALL as the option, it runs all available algorithms, compares the results, and returns the one that has the lowest mean? absolute percentage error (MAPE). For this dataset that appears to be the TBATS model. 
-2. We also can notice that the STL and STL+ETS models are missing. That’s because STL is an acronym for a seasonal decomposition of time series by Loess, and it focuses on seasonality. In the Forecasting API, the season is specified as one year. STL requires data for more than two years. 
+1. The ALL model displays same result as the TBATS model. When you choose ALL as the option, it runs all available algorithms, compares the results, and returns the one that has the lowest, absolute percentage error (MAPE). For this dataset that appears to be the TBATS model. 
+2. We also notice that the STL and STL+ETS models are missing. That’s because STL is an acronym for a seasonal decomposition of time series by Loess, and it focuses on seasonality. In the Forecasting API, the season is specified as one year. STL requires data for more than two years. 
 
 Let’s try to run the same code but with data for 26 months.
 
 :::image type="content" source="media/forecasting_prediction_2years.png" alt-text="Forecasting prediction for two years":::
 
-Now, the STL and ETS+STL models are also capable of producing results. Notice that TBATS still the best option.
-If so, why don’t we always use the TBATS model? Because it doesn’t work well on small datasets. Let’s rerun the same code for a dataset that contains six months only.
+Now, the STL and ETS+STL models are also capable of producing results. Notice that TBATS still the best option. If so, why don’t we always use the TBATS model? Because it doesn’t work well on small datasets. Let’s rerun the same code for a dataset that contains six months only.
 
 :::image type="content" source="media/forecasting_prediction_3months.png" alt-text="Forecasting prediction for three months":::
 
