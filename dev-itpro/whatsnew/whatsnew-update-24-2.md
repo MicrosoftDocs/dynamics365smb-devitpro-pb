@@ -25,11 +25,11 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Use linked environment in Dataverse integration](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/use-linked-environment-dataverse-integration)
 - Copilot in Business Central is now available in more languages for the following features:
 
-  - [Analysis assist](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/get-insights-faster-copilot-generated-analysis-tabs)
+  - [Analysis assist](/dynamics365/business-central/analysis-assist)
   - [Bank reconciliation assist](/dynamics365/business-central/bank-reconciliation-with-copilot)
-  - [Marketing text suggestions](https://learn.microsoft.com/en-us/dynamics365/business-central/ai-overview)
-  - [Sales lines suggestions](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/create-sales-lines-easily-copilot) 
-  - [E-documents matching](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/map-e-documents-purchase-order-lines-copilot)
+  - [Marketing text suggestions](/dynamics365/business-central/item-marketing-text)
+  - [Sales lines suggestions](/dynamics365/business-central/sales-suggest-sales-lines-with-copilot) 
+  - [E-documents matching](/dynamics365/business-central/map-edocuments-with-copilot)
   
   > [!NOTE]
   > Some languages aren't yet fully supported by Copilot. You can use them, but the quality of the results might vary. To find out which langauges are supported for a feature, refer to the documentation.
