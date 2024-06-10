@@ -61,5 +61,5 @@ pagecustomization MyCustomization customizes "Customer List"
 [AL development environment](devenv-reference-overview.md)  
 [Developing extensions](devenv-dev-overview.md)  
 [Pages overview](devenv-pages-overview.md)  
-[Profile extension object](devenv-profile-extension-object.md)
+[Profile extension object](devenv-profile-ext-object.md)
 [Page customization object](devenv-page-customization-object.md)

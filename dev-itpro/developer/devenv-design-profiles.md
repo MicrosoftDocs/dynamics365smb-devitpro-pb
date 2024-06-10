@@ -12,7 +12,7 @@ ms.reviewer: jswymer
 
 A profile is the mechanism that makes a Role Center page and its associated pages and reports available to users in the client. It enables you to build an individual experience for users based on their role in the company by customizing the pages that they use to perform the daily tasks. In the client, profiles are referred to as **Roles**. When users sign in to [!INCLUDE[prod_short](includes/prod_short.md)], they are doing so under a specific role. Users can switch the role from the **My Settings** page.
 
-Creating profiles in AL involves three different object types: [profile object](devenv-profile-object.md), [profile extension object](devenv-profile-extension-object.md), and [page customization object](devenv-page-customization-object.md).
+Creating profiles in AL involves three different object types: [profile object](devenv-profile-object.md), [profile extension object](devenv-profile-ext-object.md), and [page customization object](devenv-page-customization-object.md).
 
 ## Profile objects
 
