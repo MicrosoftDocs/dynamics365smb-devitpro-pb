@@ -1,18 +1,15 @@
 ---
-title: Exporting Databases in the Admin Center
+title: Exporting databases in the admin center
 description: Use the Business Central administration center to export tenant databases per environment.  
 author: jswymer
-
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export, bacpac, backup
-ms.date: 04/15/2021
+ms.date: 06/10/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
-# Exporting Databases in the Admin Center
-
-[!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
+# Exporting databases in the admin center
 
 From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can export the database for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environments as BACPAC files to an Azure storage container.
 
@@ -71,7 +68,6 @@ When you've created the Azure storage account and generated the SAS URI, you can
 5. In the **Container Name** field, enter the name of the container in the Azure storage account to which you want the BACPAC file exported. If you've already created a container in your Azure storage account, you can enter the name of that container here. Otherwise, if the name that is specified in the **Container Name** field doesn't already exist in the Azure storage account, it will be created for you.
 
 Once the export operation begins, the BACPAC file is generated and exported to the indicated Azure storage account. The operation may take several minutes to several hours depending on the size of the database. You can close the browser window with the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] during the export. When the export completes, you can access the export file in the defined container in your Azure storage account. Optionally, you can import the data into a new database in Azure SQL Database or SQL Server for further processing. For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import).  
-
 
 ## Viewing the export history
 
