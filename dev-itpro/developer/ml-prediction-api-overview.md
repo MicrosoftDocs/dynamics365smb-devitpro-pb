@@ -13,11 +13,42 @@ ms.reviewer: solsen
 
 # Prediction API overview
 
-The Prediction API is the latest addition to the collection of machine learning APIs that are embedded in [!INCLUDE [prod_short](includes/prod_short.md)]. It first and foremost supports the **Late Payment Prediction** extension <!-- link -->. However, it can be used to solve other problems with regression or classification, or it could be used to build a model that predicts customer churn, quote conversion, or shipment delay. <!-- For example, in our “Christmas Apparel Demo” <link>, we used the Prediction API to build a classification model that allocates each item to one of three classes based on the expected sales volume.We could also use the Prediction API to build a model that predicts customer churn, quote conversion, or shipment delay.-->
+The Prediction API is another machine learning APIs that are embedded in [!INCLUDE [prod_short](includes/prod_short.md)]. It first and foremost supports the [**Late Payment Prediction**](https://docs.microsoft.com/dynamics365/business-central/ui-extensions-late-payment-prediction) extension. However, it can be used to solve other problems with regression or classification, like customer churn, quote conversion, or shipment delay. 
 
-The classification is a typical problem that can be solved with machine learning, and there are multiple techniques to do that. If you read the [Forecasting API overview](ml-forecasting-api-overview.md) article, you know that we used the Custom Vision service to train an image classification model based on the provided images and tags.
+## Prediction Model
+The Prediction Model for [!INCLUDE prod_short] lets you easily train, evaluate, visualize models for prediction purpose . This model uses the Execute R Script module to run the R scripts that performs all the tasks. The two input modules define the expected structure of the input datasets. The first module defines the structure of the dataset, which is flexible and can accept up to 25 features, and the second defines the parameters.
 
-The Prediction API is another tool that works on a different type of training dataset. As introduced in the [Forecasting API overview](ml-forecasting-api-overview.md) article, the training dataset contains one or more features and a label. We didn’t specify features for the Custom Vision model, because, for images, one pixel is usually one feature (grayscale) or three features (RGB). However, if we want to build a classification model for sales volume, we must define our own features, such as price, gender, sleeve length, and so on.
+### Input Data Schema
+When you call the api, you need to pass several parameters:
+
+- **method (String)** – Required parameter. Specifies the Machine Learning procedure to be used. The model supports the following methods:
+  - train (system will decide whether to use classification or regression based on your dataset)
+  - trainclassification
+  - trainregression
+  - predict
+  - evaluate
+  - plotmodel
+
+Based on selected method you may need additional parameters, such as
+- The **train_percent (Numeric)** – Required for **train**, **trainclassification**, and **trainregression** methods. Specifies how to divide a dataset into training and validation sets. 80 means 80% of dataset will be used for training and 20% for validation of result.
+- The **model (String;base64)** - Required for **predict**, **evaluate**, and **plotmodel** methods. Contents serialized model, encoded with Base64. You can get model as result of run train, trainclassification or trainregression methods.
+- The **captions (String)** – Optional parameter used with the **plotmodel** method. Contains comma separated captions for features. If not passed Feature1..Feature25 will be used.
+- The **labels (String)** – Optional parameter used with the **plotmodel** method. Contains comma separated alternative captions for labels. If not passed actual values will be used.
+- The **dataset** - Required for **train**, **trainclassification**, **trainregression**, **evaluate**, **predict** and it consists of:
+  - **Feature1..25** – The features are the descriptive attributes (aka dimensions) that describe the single observation (record in dataset). It can be integer, decimal, Boolean, option, code or string.
+  - **Label** – Required but should be empty for predict method. The label is what you're attempting to predict or forecast
+
+### Output Data Schema
+The output of the service:
+- The **model (String;base64)** – Result of execution of **train**, **trainclassification**, and **trainregression** methods. Contains serialized model, encoded with Base64.
+- The **quality (Numeric)** – Result of execution of **train**, **trainclassification**, **trainregression**, and **evaluate** methods. In current experiment we use Balanced Accuracy score as a measure of a model’s quality.
+- The **plot (application/pdf;base64)** – Result of execution of **plotmodel** method. Contains visualization of model in pdf format encoded with Base64.
+- The **Dataset** – Result of execution of predict method, consists of:
+  - **Feature1..25** – same as input.
+  - **Label** – the predicted value
+  - **Confidence** – the probability that classification is correct.
+
+## Prediction API
 
 All logic of the Prediction API is concentrated in the [ML Prediction Management](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management) codeunit (ID=2003) and has the following methods:
 
@@ -29,16 +60,9 @@ All logic of the Prediction API is concentrated in the [ML Prediction Management
 - [Train](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management#train)
 - [Predict](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management#predict)
 
-The Prediction API is a wrapper around an Azure Machine Learning experiment, which is published as a web service. For [!INCLUDE [prod_short](includes/prod_short.md)] online, the experiment is published by Microsoft and connected to the Microsoft subscription. For other deployment options, you must publish the experiment in your own Azure subscription.
+For [!INCLUDE [prod_short](includes/prod_short.md)] online, the experiment is published by Microsoft and connected to the Microsoft subscription. For other deployment options, you have to create Machine Learnining resources in your own Azure subscription. You can find sample steps here: https://github.com/microsoft/BCTech/tree/master/samples/MachineLearning.
 
-The publishing task consists of four simple steps: 
-
-- Open the [Prediction Experiment for Dynamics 365 Business Central](https://gallery.azure.ai/Experiment/Prediction-Experiment-for-Dynamics-365-Business-Central) experiment in Azure Machine Learning studio. 
-- Run it, and then deploy it as a web service. 
-- In the web service dashboard, copy the API key.
-- Choose REQUEST/RESPONSE, and then copy the Request URI.
-
-The purpose of this task is to get API URI and API key and pass them to the `Initialize` method. 
+The purpose of this task is to get the API URI and API key and pass them into the `Initialize` method. That gives the Prediction API the end-point to contact:
 
 ```al
 
@@ -69,7 +93,6 @@ Table 50136 "ML Prediction Parameters"
         field(3; Gender; Option) { OptionMembers = Man,Women; }
         field(4; Material; Option) { OptionMembers = Cashmere,Silk,Wool,Acrylic,Viscose,Cotton; }
         field(5; SleeveLength; Option) { OptionMembers = Full,Half,Short,Threequarter,Butterfly,Sleveless; }
-        field(6; IsChristmas; Boolean) { }
         field(10; DecemberSales; Option) { OptionMembers = Low,Medium,High; }
         field(11; Confidence; Decimal) { }
     }
@@ -81,13 +104,24 @@ Table 50136 "ML Prediction Parameters"
 }
 ```
 
-It’s just a buffer table, where Counter is the primary key. `Price`, `Gender`, `Material`, `SleeveLength`, and `IsChristmas` are features. The `DecemberSales` field stores labels for training and receives the predicted value. `Confidence` is a field that specifies the probability that the classification is correct.
+It’s just a buffer table, where Counter is the primary key. `Price`, `Gender`, `Material`, and `SleeveLength` are features. The `DecemberSales` field stores labels for training and receives the predicted value. `Confidence` is a field that specifies the probability that the classification is correct.
 
-The next step is to fill the buffer table with data, done in AL and not shown here.
+The next step is to fill the buffer table with data, done in AL and not shown here. 
 
-:::image type="content" source="media/prediction-parameters.png" alt-text="Prediction parameters":::
+Price|Gender|Material|SleeveLength|DecemberSales
+---|---|---|---|---
+Medium|Woman|Cotton|Threequarter|**Low**
+High|Man|Cotton|Half|**Low**
+Medium|Woman|Acrylic|Butterfly|**High**
+Medium|Man|Silk|Short|**Medium**
+Medium|Woman|Cotton|Butterfly|**High**
+Low|Woman|Acrylic|Threequarter|**Low**
+Medium|Man|Wool|Full|**Medium**
+Low|Man|Cotton|Full|**High**
+…|…|…|…|…
+Low|Woman|Acrylic|Short|**High**
 
-Once we have the training data, we can use the Prediction API to train the model. Let see if the system figures out how different combinations of price, gender, material, and Christmas theme lead to different sales volumes in December.
+Once we have the training data, we can use the Prediction API to train the model. Let see if the system figures out how different combinations of price, gender, material lead to different sales volumes in December.
 We use the `SetRecord` method to point to the table with the training dataset. After that, we run the `AddFeature` method for each field that contains our features (Price, Gender, and so on). We can add up to 25 features.
 
 Then, we must specify, which fields contain the label (the expected output) and confidence. Though confidence isn't needed at this stage, the way the API is implemented requires us to specify the confidence field.
@@ -104,7 +138,6 @@ begin
   MLPredictionManagement.AddFeature(MLPredictionParameters.FieldNo(Gender));
   MLPredictionManagement.AddFeature(MLPredictionParameters.FieldNo(Material));
   MLPredictionManagement.AddFeature(MLPredictionParameters.FieldNo(SleeveLength));
-  MLPredictionManagement.AddFeature(MLPredictionParameters.FieldNo(IsChristmas));   
 
   MLPredictionManagement.SetLabel(MLPredictionParameters.FieldNo(DecemberSales));  
 
@@ -129,7 +162,6 @@ MLPredictionManagement.AddFeature(MLPredictionParameters.FieldNo(Price));
 MLPredictionManagement.AddFeature(MLPredictionParameters.FieldNo(Gender));
 MLPredictionManagement.AddFeature(MLPredictionParameters.FieldNo(Material));
 MLPredictionManagement.AddFeature(MLPredictionParameters.FieldNo(SleeveLength));
-MLPredictionManagement.AddFeature(MLPredictionParameters.FieldNo(IsChristmas));
 MLPredictionManagement.SetConfidence(MLPredictionParameters.FieldNo(Confidence));
 MLPredictionManagement.SetLabel(MLPredictionParameters.FieldNo(DecemberSales));
 
@@ -144,3 +176,4 @@ For more information, see the source code of the [Late Payment Prediction extens
 ## See also
 
 [Forecasting API overview](ml-forecasting-api-overview.md)  
+[The Late Payment Prediction Extension](https://docs.microsoft.com/dynamics365/business-central/ui-extensions-late-payment-prediction)
