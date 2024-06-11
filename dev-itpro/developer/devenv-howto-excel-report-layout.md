@@ -4,7 +4,7 @@ description: Describes the steps involved in creating a report that uses an Exce
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 06/10/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: kepontop
 ---
