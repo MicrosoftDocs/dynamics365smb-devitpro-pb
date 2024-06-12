@@ -1,7 +1,7 @@
 ---
 title: Forecasting API overview
 description: Integrate with the Azure Machine Learning web service through the forecasting API in Business Central.
-author: SusanneWindfeldPedersen
+author: AndreiPanko
 ms.author: solsen
 ms.topic: conceptual
 ms.date: 06/07/2024

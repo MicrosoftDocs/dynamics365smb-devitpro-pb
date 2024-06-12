@@ -1,7 +1,7 @@
 ---
 title: Prediction API overview
 description: Integrate with the Azure Machine Learning web service through the prediction API in Business Central.
-author: SusanneWindfeldPedersen
+author: AndreiPanko
 ms.author: solsen
 ms.topic: conceptual
 ms.date: 06/07/2024
@@ -16,26 +16,28 @@ ms.reviewer: solsen
 The Prediction API is another machine learning APIs that are embedded in [!INCLUDE [prod_short](includes/prod_short.md)]. It first and foremost supports the [**Late Payment Prediction**](https://docs.microsoft.com/dynamics365/business-central/ui-extensions-late-payment-prediction) extension. However, it can be used to solve other problems with regression or classification, like customer churn, quote conversion, or shipment delay. 
 
 ## Prediction Model
-The Prediction Model for [!INCLUDE prod_short] lets you easily train, evaluate, visualize models for prediction purpose . This model uses the Execute R Script module to run the R scripts that performs all the tasks. The two input modules define the expected structure of the input datasets. The first module defines the structure of the dataset, which is flexible and can accept up to 25 features, and the second defines the parameters.
+
+The Prediction Model for [!INCLUDE[prod_short](includes/prod_short.md)] lets you easily train, evaluate, visualize models for prediction purpose. This model uses the Execute R Script module to run the R scripts that performs all the tasks. The two input modules define the expected structure of the input datasets. The first module defines the structure of the dataset, which is flexible and can accept up to 25 features, and the second defines the parameters.
 
 ### Input Data Schema
-When you call the api, you need to pass several parameters:
+
+When you call the API, you need to pass several parameters:
 
 - **method (String)** – Required parameter. Specifies the Machine Learning procedure to be used. The model supports the following methods:
-  - train (system will decide whether to use classification or regression based on your dataset)
+  - train (system decides whether to use classification or regression based on your dataset)
   - trainclassification
   - trainregression
   - predict
   - evaluate
   - plotmodel
 
-Based on selected method you may need additional parameters, such as
-- The **train_percent (Numeric)** – Required for **train**, **trainclassification**, and **trainregression** methods. Specifies how to divide a dataset into training and validation sets. 80 means 80% of dataset will be used for training and 20% for validation of result.
-- The **model (String;base64)** - Required for **predict**, **evaluate**, and **plotmodel** methods. Contents serialized model, encoded with Base64. You can get model as result of run train, trainclassification or trainregression methods.
-- The **captions (String)** – Optional parameter used with the **plotmodel** method. Contains comma separated captions for features. If not passed Feature1..Feature25 will be used.
-- The **labels (String)** – Optional parameter used with the **plotmodel** method. Contains comma separated alternative captions for labels. If not passed actual values will be used.
-- The **dataset** - Required for **train**, **trainclassification**, **trainregression**, **evaluate**, **predict** and it consists of:
-  - **Feature1..25** – The features are the descriptive attributes (aka dimensions) that describe the single observation (record in dataset). It can be integer, decimal, Boolean, option, code or string.
+Based on selected method you might need extra parameters, such as
+- The **train_percent (Numeric)** – Required for **train**, **trainclassification**, and **trainregression** methods. Specifies how to divide a dataset into training and validation sets. 80 means 80% of dataset are used for training and 20% for validation of result.
+- The **model (String;base64)** - Required for **predict**, **evaluate**, and **plotmodel** methods. Contents serialized model, encoded with Base64. You can get model as result of run train, trainclassification, or trainregression methods.
+- The **captions (String)** – Optional parameter used with the **plotmodel** method. Contains comma separated captions for features. If not passed Feature1..Feature25 are used.
+- The **labels (String)** – Optional parameter used with the **plotmodel** method. Contains comma separated alternative captions for labels. If not passed actual values are used.
+- The **dataset** - Required for **train**, **trainclassification**, **trainregression**, **evaluate**, **predict**, and it consists of:
+  - **Feature1..25** – The features are the descriptive attributes (also known as dimensions) that describe the single observation (record in dataset). It can be integer, decimal, Boolean, option, code, or string.
   - **Label** – Required but should be empty for predict method. The label is what you're attempting to predict or forecast
 
 ### Output Data Schema
@@ -60,7 +62,7 @@ All logic of the Prediction API is concentrated in the [ML Prediction Management
 - [Train](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management#train)
 - [Predict](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management#predict)
 
-For [!INCLUDE [prod_short](includes/prod_short.md)] online, the experiment is published by Microsoft and connected to the Microsoft subscription. For other deployment options, you have to create Machine Learnining resources in your own Azure subscription. You can find sample steps here: https://github.com/microsoft/BCTech/tree/master/samples/MachineLearning.
+For [!INCLUDE [prod_short](includes/prod_short.md)] online, the experiment is published by Microsoft and connected to the Microsoft subscription. For other deployment options, you have to create Machine Learning resources in your own Azure subscription. You can find sample steps here: https://github.com/microsoft/BCTech/tree/master/samples/MachineLearning.
 
 The purpose of this task is to get the API URI and API key and pass them into the `Initialize` method. That gives the Prediction API the end-point to contact:
 
