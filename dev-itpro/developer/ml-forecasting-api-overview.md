@@ -59,7 +59,7 @@ The output of the service shows the calculated forecast values with confidence l
 
 ## Forecasting API
 
-All logic of the Forecasting API is encapsulated in the Time Series Management codeunit (ID 2000) and it consists of the following methods:
+All logic of the Forecasting API is encapsulated in the [Time Series Management codeunit (ID 2000)](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management) and it consists of the following methods:
 
 - [Initialize](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#initialize)  
 - [PrepareData](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#preparedata)  
@@ -306,5 +306,5 @@ For more information, see the source code of the [Sales and Inventory Forecast e
 ## See also
 
 [Prediction API overview](ml-forecasting-api-overview.md)  
-[The Sales and Inventory Forecast Extension](/dynamics365/business-central/ui-extensions-sales-forecast)
+[The Sales and Inventory Forecast Extension](/dynamics365/business-central/ui-extensions-sales-forecast)  
 [Analyzing Cash Flow in Your Company](/dynamics365/business-central/finance-analyze-cash-flow)
