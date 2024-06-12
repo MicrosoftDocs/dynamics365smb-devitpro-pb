@@ -2,12 +2,12 @@
 title: Transparency note Developer tools for Copilot in Business Central 
 description: Understand how our AI technology works, the choices system owners can make that influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment
 author: andreipanko 
-ms.author: andreipa 
-ms.reviewer: jswymer
+ms.author: solsen 
+ms.reviewer: solsen
 ms.topic: faq
 ms.collection:
   - bap-ai-copilot 
-ms.date: 12/06/2024
+ms.date: 06/12/2024
 ms.custom: bap-template
 ---
 
