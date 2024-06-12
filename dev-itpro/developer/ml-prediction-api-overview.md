@@ -13,7 +13,7 @@ ms.reviewer: solsen
 
 # Prediction API overview
 
-The Prediction API is another machine learning APIs that are embedded in [!INCLUDE [prod_short](includes/prod_short.md)]. It first and foremost supports the [**Late Payment Prediction**](https://docs.microsoft.com/dynamics365/business-central/ui-extensions-late-payment-prediction) extension. However, it can be used to solve other problems with regression or classification, like customer churn, quote conversion, or shipment delay. 
+The Prediction API is another machine learning APIs that are embedded in [!INCLUDE [prod_short](includes/prod_short.md)]. It first and foremost supports the [**Late Payment Prediction**](/dynamics365/business-central/ui-extensions-late-payment-prediction) extension. However, it can be used to solve other problems with regression or classification, like customer churn, quote conversion, or shipment delay. 
 
 ## Prediction Model
 
@@ -62,7 +62,7 @@ All logic of the Prediction API is concentrated in the [ML Prediction Management
 - [Train](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management#train)
 - [Predict](/dynamics365/business-central/application/base-application/codeunit/system.ai.ml-prediction-management#predict)
 
-For [!INCLUDE [prod_short](includes/prod_short.md)] online, the experiment is published by Microsoft and connected to the Microsoft subscription. For other deployment options, you have to create Machine Learning resources in your own Azure subscription. You can find sample steps here: https://github.com/microsoft/BCTech/tree/master/samples/MachineLearning.
+For [!INCLUDE [prod_short](includes/prod_short.md)] online, the experiment is published by Microsoft and connected to the Microsoft subscription. For other deployment options, you have to create Machine Learning resources in your own Azure subscription. You can find sample steps in the [sample repo](https://github.com/microsoft/BCTech/tree/master/samples/MachineLearning).
 
 The purpose of this task is to get the API URI and API key and pass them into the `Initialize` method. That gives the Prediction API the end-point to contact:
 
@@ -178,4 +178,4 @@ For more information, see the source code of the [Late Payment Prediction extens
 ## See also
 
 [Forecasting API overview](ml-forecasting-api-overview.md)  
-[The Late Payment Prediction Extension](https://docs.microsoft.com/dynamics365/business-central/ui-extensions-late-payment-prediction)
+[The Late Payment Prediction Extension](/dynamics365/business-central/ui-extensions-late-payment-prediction)

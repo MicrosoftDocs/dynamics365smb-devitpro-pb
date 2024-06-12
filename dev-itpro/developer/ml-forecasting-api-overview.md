@@ -23,7 +23,9 @@ The Forecasting API, also known as the Time Series API, is designed to predict f
 The Forecasting Model for [!INCLUDE [prod_short](includes/prod_long.md)] lets you analyze data in historical periods to make predictions about cash flow and inventory levels. This model uses the Execute R Script module to run the R scripts that calculate the forecast and determine its accuracy. The two input modules define the expected structure of the input datasets. The first module defines the historical data, and the second defines the global parameters.
 
 ### Input Data Schema
+
 The experiment uses historical time series values from the following fields:
+
 - **GranularityAttribute (String)** - Can be associated with a product ID to forecast product sales. The Group ID can be a composite key that includes the product ID and a location ID or variant.
 - **DateKey (Numeric)** - Ordinal number of time-periods, such as days, weeks, months, or years. The model expects the same duration for each period.
 - **TransactionQty (Numeric)** - The forecast value for the quantity of items sold, total payables or receivables, or the percentage of capacity that was used.
@@ -47,6 +49,7 @@ If you choose ALL the model compares the results and returns the one that has th
 - **Confidence_level (Numeric)** - In the model output, notice that in addition to the forecasted value, the model also returns the sigma, or variance. This is the range that future values are predicted to fall within, with the probability defined by the confidence level. So, if the confidence level is 95%, the forecasted value might be 100, for example, and the sigma 20. This means that with a probability of 95%, the actual value is somewhere in between 80 and 120 (100+/-20). If you set the **confidence_level** to 85, the sigma is lower. In the previous example, it can be that the forecasted value is 100 and the sigma 14. Together, this means that, with a probability of 85%, the actual value is somewhere between 86 and 114.
 
 ### Output Data Schema
+
 The output of the service shows the calculated forecast values with confidence levels in the following fields:
 
 - **GranularityAttribute (String)** - Can be associated with a product ID to forecast product sales.
@@ -54,8 +57,8 @@ The output of the service shows the calculated forecast values with confidence l
 - The **TransactionQty (Numeric)** – The forecast value for the quantity of items sold, total payables or receivables, or the percentage of capacity that was used.
 - The **Sigma (Numeric)** – Specifies the range that the forecast values are expected to fall within. This indicates the quality of predictions. For example, if **TransactionQty** is 100, and **Sigma** is 10, the forecast value is somewhere between 90 and 110. This is a good prediction. If Sigma is 100, however, the forecast value is between 0 and 200, which isn't a reliable prediction.
 
-
 ## Forecasting API
+
 All logic of the Forecasting API is encapsulated in the Time Series Management codeunit (ID 2000) and it consists of the following methods:
 
 - [Initialize](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#initialize)  
@@ -65,7 +68,7 @@ All logic of the Forecasting API is encapsulated in the Time Series Management c
 - [Forecast](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#forecast)  
 - [GetForecast](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#getforecast)  
 
-For [!INCLUDE [prod_short](includes/prod_short.md)] online, the experiment is published by Microsoft and connected to the Microsoft subscription. For other deployment options, you have to create Machine Learning resources in your own Azure subscription. You can find sample steps here: https://github.com/microsoft/BCTech/tree/master/samples/MachineLearning.
+For [!INCLUDE [prod_short](includes/prod_short.md)] online, the experiment is published by Microsoft and connected to the Microsoft subscription. For other deployment options, you have to create Machine Learning resources in your own Azure subscription. You can find sample steps in the [sample repo](https://github.com/microsoft/BCTech/tree/master/samples/MachineLearning).
 
 The purpose of this task is to get the API URI and API key and pass them into the `Initialize` method. That gives the Forecasting API the end-point to contact:
 
@@ -303,5 +306,5 @@ For more information, see the source code of the [Sales and Inventory Forecast e
 ## See also
 
 [Prediction API overview](ml-forecasting-api-overview.md)  
-[The Sales and Inventory Forecast Extension](https://docs.microsoft.com/dynamics365/business-central/ui-extensions-sales-forecast)
-[Analyzing Cash Flow in Your Company](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-cash-flow)
+[The Sales and Inventory Forecast Extension](/dynamics365/business-central/ui-extensions-sales-forecast)
+[Analyzing Cash Flow in Your Company](/dynamics365/business-central/finance-analyze-cash-flow)
