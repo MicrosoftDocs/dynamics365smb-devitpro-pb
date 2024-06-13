@@ -178,7 +178,7 @@ Group ID|Period No.|Period Start Date|Value|Delta|Delta %
 1896-S|14|May, YYYY+1|-13.00|4.92|37.83
 1896-S|15|June, YYYY+1|-13.00|6.02|46.33
 
-The Forecasting API doesn’t return the single value for a data point, but returns a range where the predicted value will be. In the example above, the period 15 has a predicted value of 13 and a delta of 6.02. This means that the value for the 15th period will be somewhere between 6.98 and 19.02 (13-6,02 and 13+6.02). Depending on what you're predicting, it might be good to ignore forecasts where the delta is wider than 20-30%. The narrower the better.
+The Forecasting API doesn’t return the single value for a data point, but returns a range where the predicted value will be. In the example above, the period 15 has a predicted value of 13 and a delta of 6.02. This means that the value for the 15th period will be somewhere between 6.98 and 19.02 (13-6.02 and 13+6.02). Depending on what you're predicting, it might be good to ignore forecasts where the delta is wider than 20-30%. The narrower the better.
 
 :::image type="content" source="media/forecasting_graph.png" alt-text="Forecasting graph":::
 
