@@ -4,7 +4,7 @@ description: Integrate with the Azure Machine Learning web service through the p
 author: AndreiPanko
 ms.author: solsen
 ms.topic: conceptual
-ms.date: 06/07/2024
+ms.date: 06/13/2024
 ms.custom: bap-template
 ms.collection:
   - get-started
@@ -13,11 +13,11 @@ ms.reviewer: solsen
 
 # Prediction API overview
 
-The Prediction API is another machine learning APIs that are embedded in [!INCLUDE [prod_short](includes/prod_short.md)]. It first and foremost supports the [**Late Payment Prediction**](/dynamics365/business-central/ui-extensions-late-payment-prediction) extension. However, it can be used to solve other problems with regression or classification, like customer churn, quote conversion, or shipment delay. 
+The Prediction API is another machine learning APIs that's embedded in [!INCLUDE [prod_short](includes/prod_short.md)]. It first and foremost supports the [**Late Payment Prediction**](/dynamics365/business-central/ui-extensions-late-payment-prediction) extension. However, it can be used to solve other problems with regression or classification, like customer churn, quote conversion, or shipment delay. 
 
 ## Prediction Model
 
-The Prediction Model for [!INCLUDE[prod_short](includes/prod_short.md)] lets you easily train, evaluate, visualize models for prediction purpose. This model uses the Execute R Script module to run the R scripts that performs all the tasks. The two input modules define the expected structure of the input datasets. The first module defines the structure of the dataset, which is flexible and can accept up to 25 features, and the second defines the parameters.
+The Prediction Model for [!INCLUDE[prod_short](includes/prod_short.md)] lets you easily train, evaluate, visualize models for prediction purpose. This model uses R code to perform all the tasks. The structure of the input dataset is flexible and can accept up to 25 features.
 
 ### Input Data Schema
 

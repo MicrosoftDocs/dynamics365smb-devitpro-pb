@@ -4,7 +4,7 @@ description: Integrate with the Azure Machine Learning web service through the f
 author: AndreiPanko
 ms.author: solsen
 ms.topic: conceptual
-ms.date: 06/07/2024
+ms.date: 06/13/2024
 ms.custom: bap-template
 ms.collection:
   - get-started
@@ -15,12 +15,12 @@ ms.reviewer: solsen
 
 The Forecasting API, also known as the Time Series API, is designed to predict future values of a specific indicator based on its past, time-ordered observations. This API is useful for two reasons:
 
-1. The dataset required for training is simple – it primarily needs labels. Features aren't needed for forecasting. The only requirement is that labels must be sorted chronologically and that they must represent the same time interval.
+1. The dataset required for training is simple – it primarily needs labels. Features aren't needed for forecasting. The only requirement is that values must be sorted chronologically and that they must represent the same time interval.
 2. Business applications are full of data, which is sorted chronologically. Approximately 30% of all tables contain a column of type *Date* and a column of type *Decimal*.
 
 ## Forecasting Model
 
-The Forecasting Model for [!INCLUDE [prod_short](includes/prod_long.md)] lets you analyze data in historical periods to make predictions about cash flow and inventory levels. This model uses the Execute R Script module to run the R scripts that calculate the forecast and determine its accuracy. The two input modules define the expected structure of the input datasets. The first module defines the historical data, and the second defines the global parameters.
+The Forecasting Model for [!INCLUDE [prod_short](includes/prod_long.md)] lets you analyze data in historical periods to make predictions about cash flow and inventory levels. This model uses R code to calculate the forecast and determine accuracy.
 
 ### Input Data Schema
 
@@ -298,7 +298,7 @@ In the example, we see another two interesting facts:
 
 What about always using ALL? That’s a good option, however with its own drawbacks:
 
-- We've seen issues (timeouts) for the ARIMA model with larger datasets that contained more than 200 data points. As ALL will try to perform a calculation for all models including ARIMA, it encounters similar issues. The solution is to reduce the dataset, use specific models, and adjust the R script if you're using your own deployment of the Azure Machine Learning experiment.
+- We've seen issues (timeouts) for the ARIMA model with larger datasets that contained more than 200 data points. As ALL will try to perform a calculation for all models including ARIMA, it encounters similar issues. The solution is to reduce the dataset, use specific models, and adjust the R script if you're using your own deployment of the machine learning R code.
 - There are also some cost considerations to make. Running all models is often more expensive than running a specific one, as it requires more compute power. 
  
 For more information, see the source code of the [Sales and Inventory Forecast extension](https://github.com/microsoft/ALAppExtensions/tree/master/AddOns/SalesAndInventoryForecast). Alternatively, you can also take a closer look at the Cash Flow Forecast feature, which is part of the Base Application extension.
