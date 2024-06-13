@@ -58,7 +58,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |SQL command timeout|The contextual time-out for a SQL command.|30 minutes|
 |SQL connection idle timeout|The time that a SQL connection can remain idle before being closed.|5 minutes|
 |SQL connection timeout|The time to wait for the service to connect to the database. When the time is exceeded, the attempt is canceled and an error occurs. This setting also applies to the beginning, rollback, and commit of transactions.|1.5 minutes|
-|Long-running SQL query threshold|The amount of time that an SQL query can run before a warning telemetry event occurs. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.|1000 ms|
+|Long-running SQL query threshold|The amount of time that an SQL query can run before a warning telemetry event occurs. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.|750 ms|
 
 <!--
 |SQL bulk import batch size|Specifies how many SQL memory chunks a data import must be distributed across.| 448|
