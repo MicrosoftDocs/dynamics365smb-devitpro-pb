@@ -57,13 +57,13 @@ Here is an example of the response.
 <!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 {
-    "id" : "",
-    "startingDate" : "",
-    "name" : "",
-    "newFiscalYear" : "",
-    "closed" : "",
-    "dateLocked" : "",
-    "lastModifiedDateTime" : ""
+    "id": "78748e9f-8401-ef11-9f8f-6045bde9b6de",
+    "startingDate": "2022-01-01",
+    "name": "January   ",
+    "newFiscalYear": true,
+    "closed": false,
+    "dateLocked": true,
+    "lastModifiedDateTime": "2024-04-27T10:30:17.387Z"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
