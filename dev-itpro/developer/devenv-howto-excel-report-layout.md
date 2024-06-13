@@ -3,8 +3,8 @@ title: Creating an Excel layout report
 description: Describes the steps involved in creating a report that uses an Excel layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 05/16/2024
-ms.reviewer: solsen
+ms.date: 06/10/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: kepontop
 ---
@@ -166,6 +166,7 @@ The following Excel elements can be translated:
 - Worksheet name
 - Text data in a cell
 - Chart title
+- Chart axis titles (available from version 24.1)
 - Pivot table name (right-click on the pivot table, choose **PivotTable Options**, then add your tag in the **PivotTable Name** field)
 - Pivot field name (right-click on the field in the pivot table, choose **Field Settings**, then add your tag in the **Custom Name** field)
 - Slicer name (right-click on the slicer, choose **Slicer Settings**, then add your tag in the **Caption** field)

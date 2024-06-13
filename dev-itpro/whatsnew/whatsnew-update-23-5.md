@@ -29,8 +29,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 |-------------|--------------|--------------|
 | Norway | Migrate Electronic VAT submission solution to the new ID-porten system | IChanges in the new Noweigian ID-porten for Electronic VAT Submissions are updated. Authentication URL and Login URL have been changed and existing users need to update the Electronic VAT setup with the new endpoints. |
 | Mexico | Carta Porte Complement 3.0 update | Carta Porte functionality and schemas in Mexico are updated to the version 3.0 and some new fields, catalogues, and features have been added or changed as new version requires more detailed information for some processes. |
-	
-
 
 ## Release Plan
 
