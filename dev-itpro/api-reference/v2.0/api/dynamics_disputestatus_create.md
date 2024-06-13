@@ -53,9 +53,8 @@ Here is an example of the request.
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/disputeStatus({id})
 Content-type: application/json
 {
-    "id" : "",
-    "code" : "",
-    "displayName" : ""
+    "code": "QUALITY",
+    "displayName": "A disputed invoice due to quality"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
@@ -67,9 +66,9 @@ Here is an example of the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 {
-    "id" : "",
-    "code" : "",
-    "displayName" : ""
+    "id" : "c7748e9f-8401-ef11-9f8f-6045bde9b6de",
+    "code": "QUALITY",
+    "displayName": "A disputed invoice due to quality"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
