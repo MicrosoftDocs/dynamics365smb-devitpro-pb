@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.custom: bap-template
 ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 06/13/204
+ms.date: 06/13/2024
 ms.reviewer: jswymer
 ---
 # Setting up the Business Central Add-in for Excel in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-premises
