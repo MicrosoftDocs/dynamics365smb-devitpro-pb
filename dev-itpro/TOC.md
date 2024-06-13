@@ -1513,6 +1513,11 @@
 ##### [Design content mode](developer/copilot-design-content-mode.md)
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
 ##### [Launch Copilot](developer/copilot-launch-experience.md)
+## Developing AI with machine learning APIs
+### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
+### [Prediction API overview](developer/ml-prediction-api-overview.md)
+### [Transparency note: Machine Learnining APIs](developer/ml-transparency-note.md)
+
 ## Integrating Business Central with Office apps and Microsoft 365
 ### [Overview](developer/m365-integration-overview.md)
 ### Integrating with Microsoft Excel
@@ -2029,5 +2034,6 @@
 ## [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 # Responsible AI
 ## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
+## [Transparency note: Machine Learnining APIs](developer/ml-transparency-note.md)
 <!-- end upgrade -->
 <!--on-prem ends-->
