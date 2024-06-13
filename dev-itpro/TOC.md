@@ -70,6 +70,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 24.2](whatsnew/whatsnew-update-24-2.md)
 ### [Update 24.1](whatsnew/whatsnew-update-24-1.md)
 ### Updates for earlier major versions
 #### [Update 23.5](whatsnew/whatsnew-update-23-5.md)
@@ -1496,22 +1497,22 @@
 ### [Using webhooks to track data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
 ### [Business events (preview)](developer/business-events-overview.md)
 
-## Integrating AI using developer tools for copilot
+## Integrating AI using developer tools for Copilot
 ### [Overview](developer/ai-integration-landing-page.yml)
-### [What are developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
-### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
-### [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
+### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
+### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
+### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
-### Build a copilot experience
+### Extend Copilot in Business Central 
 #### [Introduction](developer/ai-build-experience-overview.md)
-#### [Build the copilot capability in AL](developer/ai-build-capability-in-al.md)
+#### [Build Copilot capability in AL](developer/ai-build-capability-in-al.md)
 #### Build Copilot user experience
 ##### [Overview](developer/ai-build-experience.md)
 ##### [Create prompt dialog page](developer/copilot-create-promptdialog.md)
 ##### [Design prompt mode](developer/copilot-design-prompt-mode.md)
 ##### [Design content mode](developer/copilot-design-content-mode.md)
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
-##### [Launch copilot](developer/copilot-launch-experience.md)
+##### [Launch Copilot](developer/copilot-launch-experience.md)
 ## Integrating Business Central with Office apps and Microsoft 365
 ### [Overview](developer/m365-integration-overview.md)
 ### Integrating with Microsoft Excel
@@ -1880,30 +1881,30 @@
 ##### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v22.md)
 ##### [From version 20 or 21](upgrade/upgrade-technical-upgrade-v22.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v22.md)
-### Business Central 2022 release wave 2
-#### [Overview](upgrade/upgrade-overview-v21.md)
-#### [Before you upgrade](upgrade/upgrade-considerations-v21.md)
-#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
-#### [Upgrading reports](upgrade/upgrade-reports.md)
-#### Application and data
-##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v21.md)
-##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v21.md)
-##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v21.md)
-##### Related articles
-###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating tables and fields between extensions
-####### [Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-###### Data Migration Toolkit - India
-####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
-#### Technical upgrade
-##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v21.md)
-##### [From version 18 or 19](upgrade/upgrade-technical-upgrade-v19-to-v21.md)
-##### [From version 20](upgrade/upgrade-technical-upgrade-v21.md)
-#### [Installing a minor update](upgrade/upgrading-cumulative-update-v21.md)
 ### Earlier versions
+#### Business Central 2022 release wave 2
+##### [Overview](upgrade/upgrade-overview-v21.md)
+##### [Before you upgrade](upgrade/upgrade-considerations-v21.md)
+##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+##### [Upgrading reports](upgrade/upgrade-reports.md)
+##### Application and data
+###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v21.md)
+###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v21.md)
+###### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v21.md)
+###### Related articles
+####### [Convert to AL](upgrade/devenv-code-conversion.md)
+####### Migrating tables and fields between extensions
+######## [Overview](developer/devenv-migrate-table-fields.md)
+######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+####### Data Migration Toolkit - India
+######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
+##### Technical upgrade
+###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v21.md)
+###### [From version 18 or 19](upgrade/upgrade-technical-upgrade-v19-to-v21.md)
+###### [From version 20](upgrade/upgrade-technical-upgrade-v21.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update-v21.md)
 #### Business Central 2022 release wave 1
 ##### [Overview](upgrade/upgrade-overview-v20.md)
 ##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
