@@ -1364,8 +1364,6 @@
 #### [FieldRef.TestField(Decimal, ErrorInfo) Method](methods-auto/fieldref/fieldref-testfield-decimal-errorinfo-method.md)
 #### [FieldRef.TestField(Guid) Method](methods-auto/fieldref/fieldref-testfield-guid-method.md)
 #### [FieldRef.TestField(Guid, ErrorInfo) Method](methods-auto/fieldref/fieldref-testfield-guid-errorinfo-method.md)
-#### [FieldRef.TestField(Text) Method](methods-auto/fieldref/fieldref-testfield-string-method.md)
-#### [FieldRef.TestField(Text, ErrorInfo) Method](methods-auto/fieldref/fieldref-testfield-string-errorinfo-method.md)
 #### [FieldRef.TestField(Label) Method](methods-auto/fieldref/fieldref-testfield-label-method.md)
 #### [FieldRef.TestField(Label, ErrorInfo) Method](methods-auto/fieldref/fieldref-testfield-label-errorinfo-method.md)
 #### [FieldRef.TestField(Text) Method](methods-auto/fieldref/fieldref-testfield-text-method.md)
