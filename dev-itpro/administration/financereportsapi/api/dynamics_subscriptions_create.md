@@ -1,6 +1,6 @@
 ---
 title: Create subscriptions (Beta)
-description: Creates a subscriptions object in Dynamics 365 Business Central.
+description: Creates a subscriptions object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al

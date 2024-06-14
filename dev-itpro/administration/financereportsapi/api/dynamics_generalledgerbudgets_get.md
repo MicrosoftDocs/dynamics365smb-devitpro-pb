@@ -1,6 +1,6 @@
 ---
 title: Get generalLedgerBudgets (Beta)
-description: Gets a general ledger budgets object in Dynamics 365 Business Central.
+description: Gets a general ledger budgets object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al

@@ -1,6 +1,6 @@
 ---
 title: company resource type (Beta)
-description: A company object in Dynamics 365 Business Central.
+description: A company object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
