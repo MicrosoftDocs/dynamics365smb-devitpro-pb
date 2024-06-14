@@ -1,5 +1,5 @@
 ---
-title: Delete configurationPackage
+title: (automation API) Delete configurationPackage
 description: Deletes a configuration package object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: article
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Delete configurationPackage
+# (automation API) Delete configurationPackage
 
 Deletes a configuration package from [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
