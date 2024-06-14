@@ -1,5 +1,5 @@
 ---
-title: subscriptions resource type
+title: (cloudMigration API) subscriptions resource type
 description: A subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -9,7 +9,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# subscriptions resource type
+# (cloudMigration API) subscriptions resource type
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
