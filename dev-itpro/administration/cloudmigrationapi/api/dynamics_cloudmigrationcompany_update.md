@@ -1,6 +1,6 @@
 ---
 title: (cloudMigration API) Update cloudMigrationCompanies
-description: Updates a  cloud migration company object in Dynamics 365 Business Central.
+description: Updates a cloud migration company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al

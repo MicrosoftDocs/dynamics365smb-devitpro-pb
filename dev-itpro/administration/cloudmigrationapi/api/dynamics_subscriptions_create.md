@@ -1,6 +1,6 @@
 ---
 title: (cloudMigration API) Create subscriptions
-description: Creates a subscriptions object in Dynamics 365 Business Central.
+description: Creates a subscriptions object in the cloudMigration API for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
