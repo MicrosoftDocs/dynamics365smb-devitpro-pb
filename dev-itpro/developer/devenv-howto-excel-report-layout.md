@@ -234,7 +234,7 @@ For more information, see [Web URL syntax](devenv-web-client-urls.md).
 
 When doing lookups inside the Excel workbook, use the `XLOOKUP` function instead of `VLOOKUP`. For more information, see [XLOOKUP function](https://support.microsoft.com/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929).
 
-Power Query is a powerful tool for cleaning and transforming data (for example, setting correct data types). If you want to use Power Query in your layouts, take a look at [Power Query in Excel](https://powerquery.microsoft.com/excel).
+Consider using Power Query as a powerful tool for cleaning and transforming data (for example, setting correct data types). Power Query is available in all Excel versions since Excel 2016. Connectors offering differs between SKUs as stated in this support article: [Power Query data sources in Excel versions](https://support.microsoft.com/office/power-query-data-sources-in-excel-versions-e9332067-8e49-46fc-97ff-f2e1bfa0cb16). For more information, see [Power Query in Excel](https://powerquery.microsoft.com/excel). 
 
 Table formulas in Excel are a powerful way to work on table data. For more information, see [Use calculated columns in an Excel table](https://support.microsoft.com/office/use-calculated-columns-in-an-excel-table-873fbac6-7110-4300-8f6f-aafa2ea11ce8#:~:text=As%20a%20result%2C%20Excel%20built%20the%20formula%3A%20%3DSUM,to%20use%20the%20same%20formula%20for%20each%20row).
 
