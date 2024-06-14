@@ -1,5 +1,5 @@
 ---
-title: company resource type
+title: (Business Central Dataverse API) company resource type
 description: A company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -9,7 +9,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# company resource type
+# (Business Central Dataverse API) company resource type
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->

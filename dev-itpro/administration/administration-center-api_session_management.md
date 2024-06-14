@@ -9,7 +9,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
 
-# Session Management
+# Business Central Admin Center API - Session Management
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 

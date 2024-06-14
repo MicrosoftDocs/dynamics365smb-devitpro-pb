@@ -9,7 +9,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
 
-# Environment Outage Reporting
+# Business Central Admin Center API - Environment Outage Reporting
 
 Enables the ability to report that an environment isn't accessible and may require attention
 
