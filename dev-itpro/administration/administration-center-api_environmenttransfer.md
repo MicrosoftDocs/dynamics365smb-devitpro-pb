@@ -9,7 +9,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 01/19/2024
 ---
 
-# Transfer environments
+# Business Central Admin Center API - Transfer environments
 
 Environments can be transferred between Microsoft Entra tenants by internal administrators, for example when multiple Microsoft Entra tenants are consolidated, when a business is acquired by or merging with another business, or when a partner prepares a demo environment in their tenant that needs to be transferred to the customer tenant for the customer to evaluate.
 

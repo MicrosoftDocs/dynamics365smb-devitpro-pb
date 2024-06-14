@@ -1,6 +1,6 @@
 ---
-title: Get companies
-description: Gets a company object in Dynamics 365 Business Central.
+title: (cloudMigration API) Get companies
+description: Gets a company object in the cloudMigration API for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
@@ -9,7 +9,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Get companies
+# (cloudMigration API) Get companies
 
 Retrieves the properties and relationships of a company object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

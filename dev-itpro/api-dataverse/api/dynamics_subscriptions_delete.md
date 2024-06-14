@@ -1,6 +1,6 @@
 ---
-title: Delete subscriptions
-description: Deletes a subscriptions object in Dynamics 365 Business Central.
+title: (Business Central Dataverse API) Delete subscriptions
+description: Deletes a subscriptions object in Dataverse API for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: article
 ms.devlang: al
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Delete subscriptions
+# (Business Central Dataverse API) Delete subscriptions
 
 Deletes a subscriptions from [!INCLUDE [prod_short](../../includes/prod_short.md)].
 

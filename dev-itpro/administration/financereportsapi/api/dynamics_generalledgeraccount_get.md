@@ -1,6 +1,6 @@
 ---
-title: Get generalLedgerAccounts
-description: Gets a general ledger account object in Dynamics 365 Business Central.
+title: Get generalLedgerAccounts (Beta)
+description: Gets a general ledger account object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al

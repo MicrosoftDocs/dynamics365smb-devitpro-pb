@@ -1,5 +1,5 @@
 ---
-title: Get sourceProductTypes
+title: (cloudMigration API) Get sourceProductTypes
 description: Gets a source product type object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Get sourceProductTypes
+# (cloudMigration API) Get sourceProductTypes
 
 Retrieves the properties and relationships of a source product type object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
