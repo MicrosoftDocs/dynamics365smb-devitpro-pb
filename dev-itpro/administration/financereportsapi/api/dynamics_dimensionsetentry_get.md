@@ -1,5 +1,5 @@
 ---
-title: Get dimensionSetEntries
+title: Get dimensionSetEntries (Beta)
 description: Gets a dimension set entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

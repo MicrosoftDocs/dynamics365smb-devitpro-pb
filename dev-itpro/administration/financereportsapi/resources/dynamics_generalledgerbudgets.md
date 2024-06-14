@@ -1,5 +1,5 @@
 ---
-title: generalLedgerBudgets resource type
+title: generalLedgerBudgets resource type (Beta)
 description: A general ledger budgets object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

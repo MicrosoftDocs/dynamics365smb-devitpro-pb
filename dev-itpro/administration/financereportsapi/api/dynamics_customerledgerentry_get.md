@@ -1,5 +1,5 @@
 ---
-title: Get customerLedgerEntries
+title: Get customerLedgerEntries (Beta)
 description: Gets a customer ledger entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

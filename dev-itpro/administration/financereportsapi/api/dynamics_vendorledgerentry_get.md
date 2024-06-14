@@ -1,5 +1,5 @@
 ---
-title: Get vendorLedgerEntries
+title: Get vendorLedgerEntries (Beta)
 description: Gets a vendor ledger entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

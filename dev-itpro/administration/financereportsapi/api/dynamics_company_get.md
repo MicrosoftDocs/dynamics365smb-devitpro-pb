@@ -1,5 +1,5 @@
 ---
-title: Get companies
+title: Get companies (Beta)
 description: Gets a company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

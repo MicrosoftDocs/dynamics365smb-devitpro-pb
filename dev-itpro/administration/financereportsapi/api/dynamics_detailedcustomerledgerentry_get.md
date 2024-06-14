@@ -1,5 +1,5 @@
 ---
-title: Get detailedCustomerLedgerEntries
+title: Get detailedCustomerLedgerEntries (Beta)
 description: Gets a detailed customer ledger entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

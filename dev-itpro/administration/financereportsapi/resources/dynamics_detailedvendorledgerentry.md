@@ -1,5 +1,5 @@
 ---
-title: detailedVendorLedgerEntry resource type
+title: detailedVendorLedgerEntry resource type (Beta)
 description: A detailed vendor ledger entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

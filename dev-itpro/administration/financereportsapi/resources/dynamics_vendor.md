@@ -1,5 +1,5 @@
 ---
-title: vendor resource type
+title: vendor resource type (Beta)
 description: A vendor object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

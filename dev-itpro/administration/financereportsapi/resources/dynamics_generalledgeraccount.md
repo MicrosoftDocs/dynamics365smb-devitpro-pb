@@ -1,5 +1,5 @@
 ---
-title: generalLedgerAccount resource type
+title: generalLedgerAccount resource type (Beta)
 description: A general ledger account object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

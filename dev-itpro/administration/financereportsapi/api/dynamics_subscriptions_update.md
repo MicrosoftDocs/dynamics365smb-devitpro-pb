@@ -1,5 +1,5 @@
 ---
-title: Update subscriptions
+title: Update subscriptions (Beta)
 description: Updates a  subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

@@ -1,5 +1,5 @@
 ---
-title: accountingPeriod resource type
+title: accountingPeriod resource type (Beta)
 description: An accounting period object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

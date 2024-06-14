@@ -1,5 +1,5 @@
 ---
-title: Get businessUnits
+title: Get businessUnits (Beta)
 description: Gets a business unit object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

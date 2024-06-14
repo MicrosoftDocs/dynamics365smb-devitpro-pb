@@ -1,5 +1,5 @@
 ---
-title: Get generalBudgetEntries
+title: Get generalBudgetEntries (Beta)
 description: Gets a general budget entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

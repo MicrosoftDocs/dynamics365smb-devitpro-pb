@@ -1,5 +1,5 @@
 ---
-title: dimensionSetEntry resource type
+title: dimensionSetEntry resource type (Beta)
 description: A dimension set entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

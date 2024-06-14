@@ -1,5 +1,5 @@
 ---
-title: Get subscriptions
+title: Get subscriptions (Beta)
 description: Gets a subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference

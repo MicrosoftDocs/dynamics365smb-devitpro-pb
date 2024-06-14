@@ -1,5 +1,5 @@
 ---
-title: generalLedgerEntry resource type
+title: generalLedgerEntry resource type (Beta)
 description: A general ledger entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
