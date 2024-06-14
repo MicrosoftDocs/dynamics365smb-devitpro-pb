@@ -4,7 +4,7 @@ description: Learn how to use filter expressions in OData URIs to limit the resu
 author: jswymer
 ms.author: jswymer
 ms.custom: bap-template
-ms.date: 01/28/2024
+ms.date: 06/14/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ---
