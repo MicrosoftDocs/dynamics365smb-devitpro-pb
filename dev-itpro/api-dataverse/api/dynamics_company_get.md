@@ -1,6 +1,6 @@
 ---
 title: (Business Central Dataverse API) Get companies
-description: Gets a company object in Dynamics 365 Business Central.
+description: Gets a company object in the Dataverse API for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
