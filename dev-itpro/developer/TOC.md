@@ -1432,7 +1432,6 @@
 #### [File.Write(Option) Method](methods-auto/file/file-write-option-method.md)
 #### [File.Write(Record) Method](methods-auto/file/file-write-table-method.md)
 #### [File.Write(RecordId) Method](methods-auto/file/file-write-recordid-method.md)
-#### [File.Write(Text) Method](methods-auto/file/file-write-string-method.md)
 #### [File.Write(Any) Method](methods-auto/file/file-write-joker-method.md)
 #### [File.WriteMode([Boolean]) Method](methods-auto/file/file-writemode-method.md)
 ### [FileUpload Data Type](methods-auto/fileupload/fileupload-data-type.md)
