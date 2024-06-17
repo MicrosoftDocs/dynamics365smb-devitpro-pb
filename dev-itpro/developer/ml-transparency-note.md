@@ -1,6 +1,6 @@
 ---
-title: Transparency note Developer tools for Copilot in Business Central 
-description: Understand how our AI technology works, the choices system owners can make that influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment
+title: Transparency note Machine Learning APIs for Business Central  
+description: Understand how our AI technology works with regards to Machine Learning APIs, the choices system owners can make that influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment
 author: andreipanko 
 ms.author: solsen 
 ms.reviewer: solsen
