@@ -18,7 +18,7 @@ Enables the ability to report that an environment isn't accessible and may requi
 Gets the list of supported categories of outages
 
 ```
-GET /admin/v2.19/support/outageTypes
+GET /admin/v2.21/support/outageTypes
 ```
 
 ### Response
@@ -47,7 +47,7 @@ Returns a list with information about the supported outage types for reporting
 Gets the list of metadata about questions that need to be answered when reporting an environment outage
 
 ```
-GET /admin/v2.19/support/outageTypes/{outageType}/outageQuestions
+GET /admin/v2.21/support/outageTypes/{outageType}/outageQuestions
 ```
 
 ### Response
@@ -83,7 +83,7 @@ Returns the list of question metadata for the provided outage type
 Gets the list of outages that have been previously reported 
 
 ```
-GET /admin/v2.19/support/reportedoutages
+GET /admin/v2.21/support/reportedoutages
 ```
 
 ### Response
@@ -119,7 +119,7 @@ Initiates an outage report indicating that an environment isn't accessible
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
+POST /admin/v2.21/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
 ```
 
 ### Route Parameters
