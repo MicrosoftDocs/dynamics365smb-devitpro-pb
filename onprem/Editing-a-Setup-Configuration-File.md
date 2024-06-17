@@ -1,10 +1,6 @@
 ---
 title: "Editing a Setup Configuration File"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4e583092-9d42-459f-b18f-bb80d4754e21
 caps.latest.revision: 13

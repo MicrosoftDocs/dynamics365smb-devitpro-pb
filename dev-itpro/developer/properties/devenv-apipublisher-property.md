@@ -7,6 +7,7 @@ ms.topic: reference
 ms.assetid: 18e6df94-639e-4c5f-99ed-5729037bb719
 caps.latest.revision: 13
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
  
 # APIPublisher Property 

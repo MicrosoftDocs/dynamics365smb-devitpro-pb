@@ -1,11 +1,7 @@
 ---
 title: Administration in the Development Environment
 description: You can use the development environment to administer certain aspects of Dynamics NAV databases and licenses. 
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9e672917-a2f5-47ab-89b8-5b16c412aea5
 caps.latest.revision: 3

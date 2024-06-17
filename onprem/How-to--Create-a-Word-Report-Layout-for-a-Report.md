@@ -1,11 +1,7 @@
 ---
 title: Create Word Report Layout
 description: Create blank Word report layout on a report from Development Environment and modify the layout to include dataset fields and define a general format.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ae84f1f9-2040-4d5b-874d-b9033d04cc46
 caps.latest.revision: 7

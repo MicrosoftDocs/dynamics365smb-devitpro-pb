@@ -2,7 +2,7 @@
 title: Customizing option mappings with Microsoft Dataverse
 description: Learn how to customize option mappings in an integration with Microsoft Dataverse.
 author: bholtorf
-ms.reviewer: solsen
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.author: bholtorf
 ms.date: 04/01/2021

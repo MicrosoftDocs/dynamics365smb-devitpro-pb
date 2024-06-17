@@ -1,10 +1,6 @@
 ---
 title: "Setting Up Cues"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 091bf6bb-8839-4a02-8925-f0d06d4a3745
 caps.latest.revision: 5

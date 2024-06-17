@@ -1,11 +1,7 @@
 ---
 title: System Tables 
 description: The information in System Tables are stored in the database, closely related to DBMS, which uses to manage system security and permissions.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6e9be5ec-3b61-4054-97fe-56cc24299c16
 caps.latest.revision: 12

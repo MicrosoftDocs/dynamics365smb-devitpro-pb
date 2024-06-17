@@ -3,7 +3,7 @@ title: AVS Error AVS0106
 description: "The submission must target at least one existing country/region of Business Central. Verify that at least one country/region is marked as 'Available' at aka.ms/bccountries."
 ms.author: thpeder
 ms.date: 04/26/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: reference
 author: thpeder
 ---

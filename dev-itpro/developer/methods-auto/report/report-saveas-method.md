@@ -2,10 +2,10 @@
 title: "Report.SaveAs(Integer, Text, ReportFormat, var OutStream [, RecordRef]) Method"
 description: "Runs a specific report without a request page and saves the report as a PDF, Excel, Word, HTML, or XML file."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

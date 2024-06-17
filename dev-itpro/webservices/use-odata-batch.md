@@ -3,8 +3,7 @@ title: Using OData transactional $batch requests
 description: How to specify that all inner requests in a certain OData $batch request are processed in a transactional way in Business Central.
 ms.custom: bap-template
 ms.date: 04/25/2023
-ms.reviewer: solsen
-ms.service: d365-business-central
+ms.reviewer: jswymer
 ms.author: jswymer
 ms.topic: conceptual
 author: jswymer

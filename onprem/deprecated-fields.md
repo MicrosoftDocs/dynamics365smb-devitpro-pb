@@ -5,7 +5,8 @@ author: edupont04
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
-ms. search.keywords: deprecated, obsolete
+ms.workload: na
+ms.search.keywords: deprecated, Austria, local functionality
 ms.date: 10/01/2018
 ms.author: edupont
 

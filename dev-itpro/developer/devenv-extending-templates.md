@@ -5,6 +5,7 @@ author: bholtorf
 ms.date: 10/14/2021
 ms.topic: conceptual
 ms.author: romanz
+ms.reviewer: jswymer
 ---
 
 # Extending Customer, Vendor, and Item Templates

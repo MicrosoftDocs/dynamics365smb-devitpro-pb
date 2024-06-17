@@ -2,10 +2,10 @@
 title: Security Auditing in Business Central
 description: Learn about the built-in capabilities in Business Central that let you track and audit usage of your Business Central.
 author: jswymer
-
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 04/01/2021
+ms.date: 05/13/2024
+ms.reviewer: jswymer
 ---
 
 # Security Auditing in Business Central
@@ -23,6 +23,8 @@ Some of the most important tables tracked include:
 - Table 2000000120 User
 
 - Table 2000000121 User Property
+
+- Table 2000000253 Tenant Permission Set Rel.
 
 - Table 402 Change Log Setup
 

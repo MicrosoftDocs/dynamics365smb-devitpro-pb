@@ -1,10 +1,6 @@
 ---
 title: "Types of Reports"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9aa90fac-bf11-4f5a-867d-e0fea847c9c3
 caps.latest.revision: 13

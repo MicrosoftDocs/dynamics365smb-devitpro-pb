@@ -1,11 +1,7 @@
 ---
 title: Configure Web Client for ACS
 description: Configure Dynamics NAV Web Client for Access Control Service by editing an xml file called web.config file, edit with any text editor, for example- notepad.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---

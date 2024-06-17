@@ -1,10 +1,6 @@
 ---
 title: "License Types"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3da24be8-f749-4b79-a41a-0fb83a599701
 caps.latest.revision: 16

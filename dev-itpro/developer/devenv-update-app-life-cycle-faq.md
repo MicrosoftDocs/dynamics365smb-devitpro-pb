@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.topic: conceptual
 ms.author: freddyk
 ms.date: 08/01/2021
+ms.reviewer: jswymer
 ---
 
 # Update lifecycle for AppSource apps FAQ

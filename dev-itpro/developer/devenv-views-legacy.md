@@ -5,6 +5,7 @@ author: jswymer
 ms.date: 08/09/2022
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Migrating from legacy views to modern views

@@ -1,10 +1,8 @@
 ---
 title: "UseSystemPrinter Property"
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1b00de44-adbd-4c8e-ad19-bee606f69f48
 caps.latest.revision: 5

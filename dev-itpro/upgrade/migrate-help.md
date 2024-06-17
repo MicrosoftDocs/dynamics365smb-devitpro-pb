@@ -5,6 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.date: 12/29/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Migrate legacy help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] format

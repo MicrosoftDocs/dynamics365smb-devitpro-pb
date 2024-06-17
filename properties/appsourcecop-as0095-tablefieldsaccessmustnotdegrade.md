@@ -2,11 +2,7 @@
 title: "AppSourceCop Rule AS0095"
 description: "The access modifier of a table field cannot be changed to a value that provides less access because it will break dependent extensions. You can only change the accessibility to provide more access."
 ms.author: solsen
-ms.custom: na
 ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -1,10 +1,6 @@
 ---
 title: "Server Virtual Table"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 35a2f3e6-4c95-44df-885b-9a35ecb9f8c0
 caps.latest.revision: 10

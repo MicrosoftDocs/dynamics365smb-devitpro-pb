@@ -7,6 +7,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 11/04/2019
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create customerPaymentsJournals (v1.0)

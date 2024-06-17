@@ -1,16 +1,17 @@
 ---
-title: Get automationCompany
+title: (automation API) Get automationCompany
 description: Gets an automation company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Get automationCompany
+# (automation API) Get automationCompany
 
 Retrieves the properties and relationships of an automation company object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 

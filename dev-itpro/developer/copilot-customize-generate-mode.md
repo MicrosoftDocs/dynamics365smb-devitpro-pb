@@ -1,5 +1,5 @@
 ---
-title: Customize generate mode caption in copilot
+title: Customize generate mode caption in Copilot
 description: Learn how to change the caption progress bar shown in the UI of the prompt dialog page in generate mode.
 author: jswymer
 ms.author: jswymer
@@ -14,11 +14,11 @@ ms.custom: bap-template
 
 # Customize generate mode caption of the prompt dialog page
 
-In this article, you learn how to change the caption shown in the UI when copilot is retrieving generated results from the Azure Open AI service. The UI is defined by the generate mode of the prompt dialog page. Its purpose is to give users feedback about what's happening with copilot. The caption functions as a kind of progress bar for the user. By default, the caption of PromptDialog page when it's in the generate mode is **Generating**, as illustrated in the following figure:
+In this article, you learn how to change the caption shown in the UI when Copilot is retrieving generated results from the Azure Open AI service. The UI is defined by the generate mode of the prompt dialog page. Its purpose is to give users feedback about what's happening with Copilot. The caption functions as a kind of progress bar for the user. By default, the caption of PromptDialog page when it's in the generate mode is **Generating**, as illustrated in the following figure:
 
 [![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.png)](media/promptdialog-generate-mode.png#lightbox)
 
-Customizing the caption enables you to give users more specific feedback about what copilot is doing or how it's progressing. This feedback is especially useful if the Copilot consists of multiple steps or takes a long time.
+Customizing the caption enables you to give users more specific feedback about what Copilot is doing or how it's progressing. This feedback is especially useful if the Copilot consists of multiple steps or takes a long time.
 
 ## How to change the caption
 
@@ -30,7 +30,7 @@ There are different ways to use the `Dialog.Open()`and `Dialog.Update()` to chan
 
 The following code example illustrates how to change the generate mode caption directly from the `OnAction()` trigger of `Generate` and `Regenerate` actions. The code snippets use the `OnAction()` trigger to change the caption to:
 
-- **Creating a draft for you...** when generating the first draft with copilot.
+- **Creating a draft for you...** when generating the first draft with Copilot.
 - **Revising the draft for you...** when regenerating a draft.
 
 ```al
@@ -107,6 +107,6 @@ For a more comprehensive example, go to [Advanced_SuggestJob sample on GitHub](h
 
 ## Next steps
 
-- [Design copilot prompt mode](copilot-design-prompt-mode.md)
-- [Design copilot content mode](copilot-design-content-mode.md)
-- [Launch copilot](copilot-launch-experience.md) 
+- [Design Copilot prompt mode](copilot-design-prompt-mode.md)
+- [Design Copilot content mode](copilot-design-content-mode.md)
+- [Launch Copilot](copilot-launch-experience.md) 

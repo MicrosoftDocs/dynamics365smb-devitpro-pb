@@ -9,7 +9,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
 
-# Reschedule Updates
+# Business Central Admin Center API - Reschedule Updates
 
 Allows for the management of scheduled updates such as rescheduling the update to a run on or after a specific date within a provided range.
 

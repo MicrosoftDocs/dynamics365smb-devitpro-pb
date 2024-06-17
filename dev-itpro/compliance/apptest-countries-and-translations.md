@@ -3,7 +3,7 @@ title: Country/regional availability and supported languages
 description: Overview of availability and supported languages.
 author: sorenfriisalexandersen
 ms.date: 01/25/2024
-ms.reviewer: kfender
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: altotovi
 ---
@@ -39,7 +39,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Bahrain|Partner|W1|Available|BH|
 |Bangladesh|Partner|W1|Available|BD|
 |Belgium|Microsoft|BE|Available|BE|
-|Belize|Partner|W1|Planned for June 2024|BZ|
+|Belize|Partner|W1|Planned for June 2024|BZ *3)*|
 |Bermuda|Partner|W1|Available|BM|
 |Bolivia|Partner|W1|Available|BO|
 |Bosnia and Herzegovina|Partner|W1|Available|BA|
@@ -48,7 +48,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Brunei|Partner|W1|Available|BN|
 |Brazil|Partner|W1|Available|BR|
 |Bulgaria|Partner|W1|Available|BG|
-|Burkina Faso|Partner|W1|Planned for June 2024|BF|
+|Burkina Faso|Partner|W1|Planned for June 2024|BF *3)*|
 |Cambodia|Partner|W1|Available|KH|
 |Cameroon|Partner|W1|Available|CM|
 |Canada|Microsoft|NA|Available|CA|
@@ -76,13 +76,13 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Fiji|Partner|W1|Available|FJ|
 |Finland|Microsoft|FI|Available|FI|
 |France|Microsoft|FR|Available|FR|
-|French Polynesia|Partner|W1|Planned for June 2024|PF|
-|Gabon|Partner|W1|Planned for June 2024|GA|
-|Gambia|Partner|W1|Planned for June 2024|GM|
+|French Polynesia|Partner|W1|Planned for June 2024|PF *3)*|
+|Gabon|Partner|W1|Planned for June 2024|GA *3)*|
+|Gambia|Partner|W1|Planned for June 2024|GM *3)*|
 |Georgia|Partner|W1|Available|GE|
 |Germany|Microsoft|DE|Available|DE|
 |Ghana|Partner|W1|Available|GH|
-|Gibraltar|Partner|W1|Planned for June 2024|GI|
+|Gibraltar|Partner|W1|Planned for June 2024|GI *3)*|
 |Greece|Partner|W1|Available|GR|
 |Greenland (Denmark)|Microsoft|W1|Available|DK|
 |Grenada|Partner|W1|Available|GD|
@@ -95,7 +95,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Honduras|Partner|W1|Available|HN|
 |Hong Kong SAR|Partner|W1|Available|HK|
 |Hungary|Partner|W1|Available|HU|
-|Iceland|Microsoft|IS *2)*|Available|IS|
+|Iceland|Microsoft|IS *1)*|Available|IS|
 |India|Microsoft|W1|Available|IN|
 |Indonesia|Partner|W1|Available|ID|
 |Ireland|Partner|W1|Available|IE|
@@ -110,7 +110,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Kenya|Partner|W1|Available|KE|
 |Kosovo|Partner|W1|Available|XK|
 |Kuwait|Partner|W1|Available|KW|
-|Laos|Partner|W1|Planned for June 2024|LA|
+|Laos|Partner|W1|Planned for June 2024|LA *3)*|
 |Latvia|Partner|W1|Available|LV|
 |Lebanon|Partner|W1|Available|LB|
 |Liechtenstein|Partner|CH|Available|LI|
@@ -121,16 +121,16 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Malawi|Partner|W1|Available|MW|
 |Malaysia|Partner|W1|Available|MY|
 |Maldives|Partner|W1|Available|MV|
-|Mali|Partner|W1|Planned for June 2024|ML|
+|Mali|Partner|W1|Planned for June 2024|ML *3)*|
 |Malta|Partner|W1|Available|MT|
-|Marshall Islands|Partner|W1|Planned for June 2024|MH|
+|Marshall Islands|Partner|W1|Planned for June 2024|MH *3)*|
 |Mauritius|Partner|W1|Available|MU|
 |Mexico|Microsoft|NA|Available|MX|
 |Micronesia|Partner|W1|Available|FM|
-|Moldova|Partner|W1|Planned for June 2024|MD|
+|Moldova|Partner|W1|Planned for June 2024|MD *3)*|
 |Monaco|Partner|FR|Available|MC|
 |Mongolia|Partner|W1|Available|MN|
-|Montserrat|Partner|W1|Planned for June 2024|MS|
+|Montserrat|Partner|W1|Planned for June 2024|MS *3)*|
 |Montenegro|Partner|W1|Available|ME|
 |Morocco|Partner|W1|Available|MA|
 |Mozambique|Partner|W1|Available|MZ|
@@ -157,9 +157,9 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Qatar|Partner|W1|Available|QA|
 |Romania|Partner|W1|Available|RO|
 |Russia **(on-premises only)**|Microsoft|RU|Available|(Not listed)|
-|Saint Kitts and Nevis|Partner|W1|Planned for June 2024|KN|
-|Saint Lucia|Partner|W1|Planned for June 2024|LC|
-|Saint Vincent and the Grenadines|Partner|W1|Planned for June 2024|VC|
+|Saint Kitts and Nevis|Partner|W1|Planned for June 2024|KN *3)*|
+|Saint Lucia|Partner|W1|Planned for June 2024|LC *3)*|
+|Saint Vincent and the Grenadines|Partner|W1|Planned for June 2024|VC *3)*|
 |Samoa|Partner|W1|Available|WS|
 |San Marino|Partner|IT|Available|SM|
 |Sao Tome & Principe|Partner|W1|Available|SM|
@@ -175,7 +175,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Spain|Microsoft|ES|Available|ES|
 |Sri Lanka|Partner|W1|Available|LK|
 |Suriname|Partner|W1|Available|SR|
-|Sweden|Microsoft|SE *1)*|Available|SE|
+|Sweden|Microsoft|SE *2)*|Available|SE|
 |Switzerland|Microsoft|CH|Available|CH|
 |Taiwan|Partner|W1|Available|TW|
 |Tanzania|Partner|W1|Available|TZ|
@@ -183,28 +183,29 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Trinidad and Tobago|Partner|W1|Available|TT|
 |Tunisia|Partner|W1|Available|TN|
 |Türkiye|Partner|W1|Available|TR|
-|Turks and Caicos Islands|Partner|W1|Planned for June 2024|TC|
+|Turks and Caicos Islands|Partner|W1|Planned for June 2024|TC *3)*|
 |Uganda|Partner|W1|Available|UG|
 |Ukraine|Partner|W1|Available|UA|
 |United Arab Emirates|Partner|W1|Available|AE|
 |United Kingdom|Microsoft|GB|Available|GB|
 |United States|Microsoft|NA|Available|US|
-|U.S. Virgin Islands|Partner|W1|Planned for June 2024|VI|
+|U.S. Virgin Islands|Partner|W1|Planned for June 2024|VI *3)*|
 |Uruguay|Partner|W1|Available|UY|
-|Uzbekistan|Partner|W1|Planned for June 2024|UZ|
+|Uzbekistan|Partner|W1|Planned for June 2024|UZ *3)*|
 |Vanuatu|Partner|W1|Available|VU|
-|Vatican City|Partner|IT|Planned for June 2024|VA|
+|Vatican City|Partner|IT|Planned for June 2024|VA *3)*|
 |Vietnam|Partner|W1|Available|VN|
-|Yemen|Partner|W1|Planned for June 2024|YE|
+|Yemen|Partner|W1|Planned for June 2024|YE *3)*|
 |Zambia|Partner|W1|Available|ZM|
 |Zimbabwe|Partner|W1|Available|ZW|
 
 > [!NOTE]
-> *1) BaseApp for Sweden will be migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1. Current localization features will be available as apps. Existing users can enable new features through **Feature Management**.*
-> *2) BaseApp for Iceland will be migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 2 (23.3). Current localization features will be available as apps. Existing users can enable new features through **Feature Management**.*
+> *1) BaseApp for Iceland has been migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 2 (23.3). Current localization features will be available as apps. Existing users can enable new features through the **Feature Management**.*
+> *2) BaseApp for Sweden has been migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1. Current localization features will be available as apps. Existing users can enable new features through the **Feature Management**.*
+> *3) This country is available for deployment and transactions, but marketplace availability has been postponed. Therefore, ISV solutions from AppSource will not be accessible until further notice.*
 
 > [!NOTE]  
-> Microsoft will announce new planned countries for [!INCLUDE [prod_short](../includes/prod_short.md)] 2024 release wave 2 at the end of August.
+> Microsoft will announce new planned countries for [!INCLUDE [prod_short](../includes/prod_short.md)] 2024 release wave 2 at October.
 
 For a list of the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available, go to [Geographical availability for Dynamics 365](https://dynamics.microsoft.com/en-us/availability-reports/georeport/) report and select [!INCLUDE [prod_long](../developer/includes/prod_long.md)] in the **Product** list.
 

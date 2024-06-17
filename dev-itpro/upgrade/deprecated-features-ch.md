@@ -4,9 +4,10 @@ description: We're constantly streamlining and adjusting our app in-step with ma
 author: bholtorf
 ms.topic: conceptual
 ms.devlang: al
-ms. search.keywords: deprecated, Switzerland, local functionality
+ms.search.keywords: deprecated, Switzerland, local functionality
 ms.date: 12/19/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Deprecated features in the Swiss version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]

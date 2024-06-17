@@ -6,6 +6,7 @@ ms.date: 04/15/2021
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading Customized C/AL Application to Microsoft Base Application Version 17
 

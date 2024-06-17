@@ -9,7 +9,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
 
-# Authorized Microsoft Entra apps 
+# Business Central Admin Center API - Authorized Microsoft Entra apps 
 
 Authorized Apps are Microsoft Entra apps authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
 

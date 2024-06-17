@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 03/19/2024
+ms.date: 06/10/2024
 ms.custom: bap-template
 ---
 
@@ -28,7 +28,8 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|*coming in May 2024*|Update 24.1 |May 2024|Application Build 24.1</br>Platform Build 24.0|
+|[5040044](https://support.microsoft.com/help/5040044)|Update 24.2 |June 2024|Application Build 24.2.20424</br>Platform Build 24.0.20409|
+|[5038531](https://support.microsoft.com/help/5038531)|Update 24.1 |May 2024|Application Build 24.1.19498</br>Platform Build 24.0.19487|
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
@@ -43,7 +44,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
 [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
-[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
+[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/product/dynamics-365-business-central/)  
 [Dynamics NAV developer and IT Pro content](/dynamics-nav/index)
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

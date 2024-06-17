@@ -1,10 +1,6 @@
 ---
 title: "How to: Manage Breakpoints from the Debugger Breakpoint List"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 41d743cb-9980-4985-a9b4-86e13232d3f8
 caps.latest.revision: 19

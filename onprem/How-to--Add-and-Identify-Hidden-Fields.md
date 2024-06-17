@@ -1,11 +1,7 @@
 ---
 title: Add and Identify Hidden Report Fields
 description: Mark the hidden fields on a report, so they are easy to identify, and move them to a different location in the layout to avoid problems with formatting.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d93e829b-5fd3-4f9d-a767-4f5ee5b3b4f1
 caps.latest.revision: 16

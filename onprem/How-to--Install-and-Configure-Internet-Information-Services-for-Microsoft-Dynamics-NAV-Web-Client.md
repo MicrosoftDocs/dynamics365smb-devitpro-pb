@@ -1,10 +1,6 @@
 ---
 title: "How to: Install and Configure Internet Information Services for Microsoft Dynamics NAV Web Client"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 890e4a5b-2f43-4cb8-bc7a-18261eaf8139
 caps.latest.revision: 19

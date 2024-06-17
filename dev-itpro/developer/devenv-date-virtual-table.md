@@ -7,6 +7,7 @@ ms.author: solsen
 ms.topic: conceptual
 ms.date: 03/17/2023
 ms.custom: bap-template
+ms.reviewer: solsen
 ---
 
 # Date virtual table

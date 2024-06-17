@@ -1,10 +1,6 @@
 ---
 title: "Troubleshooting: The Server Is Not Compatible"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7d656074-1e17-4819-86e8-eee39fbafd10
 caps.latest.revision: 4

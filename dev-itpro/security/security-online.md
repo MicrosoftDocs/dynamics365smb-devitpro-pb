@@ -6,6 +6,7 @@ author: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 
 # Business Central Security 

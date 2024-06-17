@@ -6,6 +6,7 @@ ms.date: 03/01/2024
 ms.topic: overview
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # AL Profiler overview

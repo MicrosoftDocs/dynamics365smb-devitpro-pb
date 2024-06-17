@@ -1,10 +1,6 @@
 ---
 title: "How to: Verify the Paper Size"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c2608bdc-0684-400a-8dc7-bdf2a19428a3
 caps.latest.revision: 10

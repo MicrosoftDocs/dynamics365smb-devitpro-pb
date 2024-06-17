@@ -3,7 +3,7 @@ title: AVS Error AVS0111
 description: "A {0} with name '{1}' is found in both {2} and {3}. Object names must be unique per environment. Resolve the conflict in your extension by using a different name and upload the extension again."
 ms.author: thpeder
 ms.date: 04/26/2024
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: reference
 author: thpeder
 ---

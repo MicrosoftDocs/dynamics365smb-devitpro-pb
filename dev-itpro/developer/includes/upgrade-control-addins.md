@@ -3,6 +3,7 @@ author: jswymer
 ms.topic: include
 ms.date: 10/01/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 The [!INCLUDE[server](server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins, like Microsoft.Dynamics.Nav.Client.BusinessChart, Microsoft.Dynamics.Nav.Client.VideoPlayer, and more. If your solution uses any of these control add-ins, upgrade them to the latest version.
 

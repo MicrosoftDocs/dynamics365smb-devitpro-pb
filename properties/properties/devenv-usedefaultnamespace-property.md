@@ -1,10 +1,8 @@
 ---
 title: "UseDefaultNamespace Property"
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 300855cc-e2dd-483c-8f70-6b48c4abef06
 caps.latest.revision: 6

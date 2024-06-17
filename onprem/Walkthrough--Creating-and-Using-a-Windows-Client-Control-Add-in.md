@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Creating and Using a Windows Client Control Add-in"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 670a6589-05e7-4289-9bb4-a3c0015f2442
 caps.latest.revision: 51

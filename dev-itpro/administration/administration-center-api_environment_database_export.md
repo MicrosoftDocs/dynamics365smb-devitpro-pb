@@ -9,7 +9,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 01/03/2023
 ---
 
-# Environment Database Export
+# Business Central Admin Center API - Environment Database Export
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 

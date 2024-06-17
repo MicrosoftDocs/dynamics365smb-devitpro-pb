@@ -9,6 +9,7 @@ ms.service: dynamics-365-op
 ms.topic: how-to
 author: jswymer
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Using security certificates with Business Central on-premises
 

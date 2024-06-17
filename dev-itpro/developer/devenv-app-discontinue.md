@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 06/10/2021
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Discontinuing an AppSource app

@@ -1,10 +1,6 @@
 ---
 title: "Configuring Authentication and Single Sign-On Between Microsoft Dynamics NAV and SharePoint"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bcf10a58-e3e3-494f-9fd8-bb47bceea89f
 caps.latest.revision: 6

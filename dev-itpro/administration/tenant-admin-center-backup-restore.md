@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
 ms.date: 01/13/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Restoring an Environment in the Admin Center
@@ -83,7 +84,7 @@ To restore an environment, you'll have to provide a name for the environment and
    > [!NOTE]
    > In some cases, extension compilation issues may prevent you from restoring your environment. If you don't need installed extensions to be restored, you can uninstall them as part of the environment restore to avoid compilation errors. By default, we disable environment setups and clean up integration data listed above under **Considerations and limitations**. By skipping environment cleanup you can override this default behavior.
 
-8. When the process starts, you can go to the list of your environments and see the status of the restored environment. At first, you'll see the new environment with state **Preparing**. The original environment state remains as **Active**. -->
+8. When the process starts, you can go to the list of your environments and see the status of the restored environment. At first, you'll see the new environment with state **Preparing**. The original environment state remains as **Active**.
 
    The restore operation duration is affected by several factors. For large or highly active databases, the restore might take several hours. You can find more details about the factors that affect the recovery time at [Recovery time](/azure/azure-sql/database/recovery-using-backups#recovery-time).  
 

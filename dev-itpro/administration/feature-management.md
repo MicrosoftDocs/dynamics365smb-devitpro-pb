@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview, what's new
 ms.date: 10/26/2021
 ms.author: mikebc
+ms.reviewer: jswymer
 ---
 
 # Enabling Upcoming Features Ahead of Time

@@ -5,7 +5,7 @@ ms.date: 05/23/2023
 ms.topic: conceptual
 author: sorenfriisalexandersen
 ms.author: soalex
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ---
 
 # Requirements for connectivity apps

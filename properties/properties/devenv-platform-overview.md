@@ -3,7 +3,6 @@ title: AL Platform Overview
 description: Introduces and explains the elements that the Business Central platform consists of.
 ms.custom: bap-template
 ms.date: 09/25/2023
-ms.reviewer: na
 
 ms.topic: conceptual
 ms.author: solsen

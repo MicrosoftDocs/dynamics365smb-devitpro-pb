@@ -8,7 +8,7 @@ ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
-# Environment Settings
+# Business Central Admin Center API - Environment Settings
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -332,7 +332,7 @@ Returns 200 if successful.
 
 **INTRODUCED IN:** API version 2.19
 
-Specifies whether AppSource apps installed on the environment should be updated with every major environment update or every major and minor update. Learn more at [Manage Apps](../dev-itpro/administration/tenant-admin-center-manage-apps).
+Specifies whether AppSource apps installed on the environment should be updated with every major environment update or every major and minor update. Learn more at [Manage Apps](tenant-admin-center-manage-apps.md).
 
 ```
 Content-Type: application/json

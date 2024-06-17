@@ -7,6 +7,7 @@ ms.date: 03/04/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Setting conditional breakpoints

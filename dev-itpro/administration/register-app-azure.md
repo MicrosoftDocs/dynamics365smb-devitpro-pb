@@ -4,9 +4,9 @@ description: Learn what to do when you want to use Business Central on-premises 
 author: jswymer
 ms.author: jswymer
 ms.custom: bap-template
-ms.date: 01/26/2023
+ms.date: 06/10/2024
 ms.topic: how-to
-
+ms.reviewer: jswymer
 ---
 
 # Register Business Central On-Premises in Microsoft Entra ID for Integrating with Other Services
@@ -51,7 +51,7 @@ The first task is to use Azure portal to register an application for Business Ce
         |-------|-----------|
         |Name|Specify a name for your Business Central on-premises solution, such as *Business Central on-premises* or *Azure Services for Business Central on-premises*. |
         |Supported account types| Select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)**<br /><br />**Note:** [!INCLUDE [prod_short](../developer/includes/prod_short.md)] doesn't require the organization to be multitenant, not even if this field is set to multitenant. |
-        |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://localhost/BC230/OAuthLanding.htm` `https://MyServer/BC230/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC230/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Microsoft Entra ID.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address of the computer you're working on. For example, even though the actual URL might be `https://MyServer:443/BC230/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
+        |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://localhost/BC240/OAuthLanding.htm` `https://MyServer/BC240/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC240/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Microsoft Entra ID.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address of the computer you're working on. For example, even though the actual URL might be `https://MyServer:443/BC240/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
 
         When completed, an **Overview** displays in the portal for the new application.
 
@@ -103,9 +103,7 @@ After you create the application registration, the next task is to configure the
 2. Select **Set up your Microsoft Entra accounts**, then **Next**.
 
     The **Connect With Azure** page opens.
-    <!--
-    ![Setting the Microsoft Entra ID.](../developer/media/set-up-azure-ad.png)
-    -->
+
 3. In the **Redirect URL** field, make sure the URL matches the redirect URL that's assigned the registered Business Central application in Microsoft Entra ID.
 4. In the **Application ID** field, specify the application (client) ID of the Business Central application in Microsoft Entra ID that you copied in the previous task.
 5. In the **Key** field, specify the value of the client secret that's used by the Business Central application in Microsoft Entra ID.
@@ -141,7 +139,7 @@ This issue indicates there's a problem with the configuration of the Azure regis
 
 ## Problem consenting to the Microsoft Entra (Azure) services for initial connection
 
-While consenting to the services for the initial connection, you keep getting prompted to consent instead of connecting, there may be a problem with the reply URL that used in the **Set up your Microsoft Entra accounts** assisted setup guide. The first part of the reply URL, before `OAuthLanding.htm`, should exactly match what appears in your browser URL when you open the Business Central web client. For example, if the browser URL is `https://localhost/BC230` on your computer, then the reply URL you provide must be `https://localhost/BC230/OAuthLanding.htm`. The reply URL must also be included in the app you registered in Microsoft Entra ID previously in this article. 
+While consenting to the services for the initial connection, you keep getting prompted to consent instead of connecting, there may be a problem with the reply URL that used in the **Set up your Microsoft Entra accounts** assisted setup guide. The first part of the reply URL, before `OAuthLanding.htm`, should exactly match what appears in your browser URL when you open the Business Central web client. For example, if the browser URL is `https://localhost/BC240` on your computer, then the reply URL you provide must be `https://localhost/BC240/OAuthLanding.htm`. The reply URL must also be included in the app you registered in Microsoft Entra ID previously in this article. 
  
 ## See Also
 

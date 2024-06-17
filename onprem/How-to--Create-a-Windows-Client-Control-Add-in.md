@@ -1,11 +1,7 @@
 ---
 title: Windows Client Control Add-ins
 description: A control add-in is defined as a class in a Visual C\# solution. After developing a control add-in, you build and sign an assembly before you install.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: fdc41aa6-5780-4cd7-b22c-994cfd795a93
 caps.latest.revision: 40

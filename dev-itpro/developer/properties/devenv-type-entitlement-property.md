@@ -5,6 +5,7 @@ ms.author: solsen
 ms.date: 09/27/2023
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 <!-- this topic is manually created, parent node is devenv-type-property.md -->
