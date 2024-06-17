@@ -27,7 +27,7 @@ Creates a request to transfer an environment to another Microsoft Entra tenant.
 > This API call must be authenticated on the source tenant.
 
 ```
-POST /admin/v2.20/transfers/outgoing/applications/{applicationFamily}/environments/{environmentName}
+POST /admin/v2.21/transfers/outgoing/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route parameters
@@ -85,7 +85,7 @@ Accepts an environment transfer on the destination tenant.
 > This API call must be authenticated on the destination tenant.
 
 ```
-POST /admin/v2.20/transfers/incoming
+POST /admin/v2.21/transfers/incoming
 ```
 
 ### Body
@@ -136,7 +136,7 @@ Cancels a created transfer request on the source tenant.
 > This API call must be authenticated on the source tenant.
 
 ```
-DELETE /admin/v2.20/transfers/outgoing/applications/{applicationFamily}/environments/{environmentName}
+DELETE /admin/v2.21/transfers/outgoing/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route parameters
@@ -183,7 +183,7 @@ Get a list of transfer requests on the source tenant that haven't yet been compl
 > This API call must be authenticated on the source tenant.
 
 ```
-GET /admin/v2.20/transfers/outgoing
+GET /admin/v2.21/transfers/outgoing
 ```
 
 ### Response
@@ -225,7 +225,7 @@ Get a list incoming transfers on the destination tenant from a specific source t
 > This API call must be authenticated on the destination tenant.
 
 ```
-GET /admin/v2.20/transfers/incoming/{sourceEntraTenantId}
+GET /admin/v2.21/transfers/incoming/{sourceEntraTenantId}
 ```
 
 ### Route parameters
