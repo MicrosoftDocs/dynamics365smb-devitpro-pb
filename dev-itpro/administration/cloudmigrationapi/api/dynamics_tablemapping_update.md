@@ -1,5 +1,5 @@
 ---
-title: Update tableMappings
+title: (cloudMigration API) Update tableMappings
 description: Updates a  table mapping object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Update tableMappings
+# (cloudMigration API) Update tableMappings
 
 Updates the properties of a table mapping object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

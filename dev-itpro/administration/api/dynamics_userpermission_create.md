@@ -1,5 +1,5 @@
 ---
-title: Create userPermission
+title: (automation API) Create userPermission
 description: Creates an user permission object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Create userPermission
+# (automation API) Create userPermission
 
 Creates an user permission in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 

@@ -1,6 +1,6 @@
 ---
-title: customer resource type
-description: A customer object in Dynamics 365 Business Central.
+title: customer resource type (Beta)
+description: A customer object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al

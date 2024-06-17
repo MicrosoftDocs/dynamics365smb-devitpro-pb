@@ -1,6 +1,6 @@
 ---
-title: Get customers
-description: Gets a customer object in Dynamics 365 Business Central.
+title: Get customers (Beta)
+description: Gets a customer object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al

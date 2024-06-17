@@ -1,5 +1,5 @@
 ---
-title: Get configurationPackage
+title: (automation API) Get configurationPackage
 description: Gets a configuration package object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Get configurationPackage
+# (automation API) Get configurationPackage
 
 Retrieves the properties and relationships of a configuration package object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
