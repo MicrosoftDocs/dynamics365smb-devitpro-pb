@@ -17,6 +17,6 @@ A business solution must have a built-in security system that helps protect your
 - [Security tips for business users](security-users.md)  
 - [Online security](security-online.md)  
 - [On-premises security](security-onpremises.md)  
-- [Data securoty ](data-security)
+- [Data security](data-security.md)
 
 [!INCLUDE [admin-tlswarning](../developer/includes/admin-tlswarning.md)]
