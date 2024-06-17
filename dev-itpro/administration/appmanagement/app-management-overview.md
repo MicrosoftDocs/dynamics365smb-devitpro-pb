@@ -18,7 +18,7 @@ As an authorized ISV, you can deliver your functionality or your services as app
 
 ## About the App Management API
 
-The App Management API is a REST-based API. It requires that you're an authorized ISV and your apps have been registered by Microsoft. Once registered, you access the API by using this global endpoint: [https://apps.businesscentral.dynamics.com](https://apps.businesscentral.dynamics.com). 
+The App Management API is a REST-based API. It requires that you're an authorized ISV and your apps have been registered by Microsoft. Once registered, you access the API by using this global endpoint: `https://apps.businesscentral.dynamics.com`. 
 
 You can use the API for the following operations:
 
