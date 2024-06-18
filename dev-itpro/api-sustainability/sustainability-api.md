@@ -1,5 +1,5 @@
 ---
-title: Use Sustainability APIs
+title: Sustainability API
 description: Learn how to use APIs in related to the sustainability features.
 author: altotovi
 ms.topic: reference
@@ -8,7 +8,7 @@ ms.author: altotovi
 ms.service: dynamics-365-business-central
 ---
 
-# Sustainability APIs
+# Sustainability API
 
 With the Sustainability feature in [!INCLUDE [prod_short](../includes/prod_short.md)], you can create connected apps that establish a point-to-point connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and third-party sustainability solutions or services. To do so, you can typically create those connections using the standard REST API to interchange data. Once you have the API access enabled, you can write code that integrates your web service or SaaS solution with the sustainability features in the [!INCLUDE[prod_short](../includes/prod_short.md)].  
 
