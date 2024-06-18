@@ -13,7 +13,8 @@ ms.service: dynamics-365-business-central
 With the Sustainability feature in [!INCLUDE [prod_short](../includes/prod_short.md)], you can create connected apps that establish a point-to-point connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and third-party sustainability solutions or services. To do so, you can typically create those connections using the standard REST API to interchange data. Once you have the API access enabled, you can write code that integrates your web service or SaaS solution with the sustainability features in the [!INCLUDE[prod_short](../includes/prod_short.md)].  
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE [prod_short](../includes/prod_short.md)], see [Enabling the APIs for Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/api-reference/v2.0/enabling-apis-for-dynamics-nav).
+> For information about enabling APIs for [!INCLUDE [prod_short](../includes/prod_short.md)], see [Enabling the APIs for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav).
+
 ## sustainabilityAccountCategory 
 
 Represents the *Sustainability Category* in [!INCLUDE[prod_short](../includes/prod_short.md)].   
@@ -31,13 +32,13 @@ Represents the *Sustainability Category* in [!INCLUDE[prod_short](../includes/pr
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
-| id | GUID | The unique ID of the sustainabilityAccountCategory. Non-editable. |
+| id | GUID | The unique ID of the sustainabilityAccountCategory. Noneditable. |
 | code | string | The code of sustainabilityAccountCategory. |
 | displayName | string | Specifies the sustainabilityAccountCategory's name. |
 | emmisionScope | string | Specifies the sustainabilityAccountCategory's emission  scope. It can be "Scope 1," "Scope 2," or "Scope 3." |
-| registerCO2 | boolean | Specifies the sustainabilityAccountCategory that is used to register CO2 emission. |
-| registerCH4 | boolean | Specifies the sustainabilityAccountCategory that is used to register CH4 emission. |
-| registerN20 | boolean | Specifies the sustainabilityAccountCategory that is used to register N2O emission. |
+| registerCO2 | boolean | Specifies the sustainabilityAccountCategory that's used to register CO2 emission. |
+| registerCH4 | boolean | Specifies the sustainabilityAccountCategory that's used to register CH4 emission. |
+| registerN20 | boolean | Specifies the sustainabilityAccountCategory that's used to register N2O emission. |
 | calculationFoundationType | string | Specifies the sustainabilityAccountCategory's formulas type. |
 | emissionCalculationCustomValue | string | Specifies the sustainabilityAccountCategory's custom value for using in formulas. |
 
@@ -56,7 +57,7 @@ Represents the *Sustainability Subcategory* in [!INCLUDE[prod_short](../includes
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
-| id | GUID | The unique ID of the sustainabilityAccountSubcategory. Non-editable. |
+| id | GUID | The unique ID of the sustainabilityAccountSubcategory. Noneditable. |
 | code | string | The code of sustainabilityAccountSubcategory. |
 | displayName | string | Specifies the sustainabilityAccountSubcategory's name. |
 | category | GUID | Specifies the ID of the sustainabilityAccountSubcategory's category. |
@@ -80,7 +81,7 @@ Represents the *Sustainability Accounts* in [!INCLUDE[prod_short](../includes/pr
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
-| id | GUID | The unique ID of the sustainabilityAccount. Non-editable. |
+| id | GUID | The unique ID of the sustainabilityAccount. Noneditable. |
 | number | string | Specifies the number of sustainabilityAccount. |
 | displayName | string | Specifies the sustainabilityAccount's name. |
 | category | string | Specifies the sustainabilityAccount's category. |
@@ -102,7 +103,7 @@ Represents a *Sustainability Journal Lines* in Business Central.
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
-| id | GUID | The unique ID of the sustainabilityJournalLine. Non-editable. |
+| id | GUID | The unique ID of the sustainabilityJournalLine. Noneditable. |
 | journalTemplateName | string | Specifies the sustainabilityJournalLine's template name. |
 | journalBatchName | string | Specifies the sustainabilityJournalLine's batch name. |
 | lineNumber | integer | The sustainabilityJournalLine number. |
@@ -137,7 +138,7 @@ Represents the *Sustainability Ledger Entries* in [!INCLUDE[prod_short](../inclu
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
-| id | GUID | The unique ID of the sustainabilityLedgerEntry. Non-editable. |
+| id | GUID | The unique ID of the sustainabilityLedgerEntry. Noneditable. |
 | entryNumber | integer | Sustainability Entry number. |
 | postingDate | date | The date that the sustainability entry is posted. |
 | documentType | string | Specifies a document type for the sustainabilityLedgerEntry. |
@@ -159,9 +160,9 @@ Represents the *Sustainability Ledger Entries* in [!INCLUDE[prod_short](../inclu
 ## See also
 
 [Sustainability management overview](/dynamics365/business-central/finance-manage-sustainability)  
-[Sustainability Setup](/dynamics365/business-central/finance-sustainability-setup)  
+[Sustainability setup](/dynamics365/business-central/finance-sustainability-setup)  
 [How to record emissions](/dynamics365/business-central/finance-sustainability-journal)  
-[Working with Chart of sustainability accounts and ledger](/dynamics365/business-central/finance-sustainability-accounts-ledger)  
-[Ad-hoc analysis of sustainability data](/dynamics365/business-central/ad-hoc-analysis-sustainability)  
+[Working with chart of sustainability accounts and ledger](/dynamics365/business-central/finance-sustainability-accounts-ledger)  
+[Ad hoc analysis of sustainability data](/dynamics365/business-central/ad-hoc-analysis-sustainability)  
 [Sustainability reports and analytics in Business Central](/dynamics365/business-central/sustainability-reports)  
 [Work with [!INCLUDE[prod_short](includes/prod_short.md)]](/dynamics365/business-central/ui-work-product)  
