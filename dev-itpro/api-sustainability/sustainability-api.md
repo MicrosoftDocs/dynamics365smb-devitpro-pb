@@ -13,7 +13,7 @@ ms.service: dynamics-365-business-central
 With the Sustainability feature in [!INCLUDE [prod_short](../includes/prod_short.md)], you can create connected apps that establish a point-to-point connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and third-party sustainability solutions or services. To do so, you can typically create those connections using the standard REST API to interchange data. Once you have the API access enabled, you can write code that integrates your web service or SaaS solution with the sustainability features in the [!INCLUDE[prod_short](../includes/prod_short.md)].  
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE [prod_short](../includes/prod_short.md)], see [Enabling the APIs for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav).
+> For information about enabling APIs for [!INCLUDE [prod_short](../includes/prod_short.md)], see [Enabling the APIs for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
 
 ## sustainabilityAccountCategory 
 
@@ -165,4 +165,4 @@ Represents the *Sustainability Ledger Entries* in [!INCLUDE[prod_short](../inclu
 [Working with chart of sustainability accounts and ledger](/dynamics365/business-central/finance-sustainability-accounts-ledger)  
 [Ad hoc analysis of sustainability data](/dynamics365/business-central/ad-hoc-analysis-sustainability)  
 [Sustainability reports and analytics in Business Central](/dynamics365/business-central/sustainability-reports)  
-[Work with [!INCLUDE[prod_short](includes/prod_short.md)]](/dynamics365/business-central/ui-work-product)  
+[Work with [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/ui-work-product)  
