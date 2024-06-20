@@ -20,6 +20,12 @@ Specifies the origin extension ID when a table is moved to a new extension. If t
 -   Table Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+> [!NOTE]
+> This property is currently only for Microsoft use and will be available in a future release.
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
