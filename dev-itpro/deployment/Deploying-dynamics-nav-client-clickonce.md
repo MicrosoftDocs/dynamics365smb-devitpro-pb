@@ -1,10 +1,11 @@
 ---
-title: "Dynamics NAV client connected to Business Central using ClickOnce"
+title: Dynamics NAV client connected to Business Central using ClickOnce
 description: Learn how to deploy the Dynamics NAV Client connected to Business Central using ClickOnce
-ms.date: 12/29/2023
+ms.date: 06/20/2024
 ms.topic: conceptual
 ms.search.keywords: NAV Windows client
 author: jswymer
+ms.custom: evergreen
 ---
 # Deploying Dynamics NAV client connected to Business Central using ClickOnce
 
@@ -86,7 +87,7 @@ Follow these steps to host on a file share:
   
 2. (Optional) Obtain a code signing certificate. This is a certificate that is issued by a certification authority, and will enable you to sign the application in such a way that end users can see that the application is published by the expected provider and, for example, not by a phisher.  
   
-  1. If you don't already have a code signing certificate, you'll have to obtain one from one of the certification authorities. For a list of certification authorities, see [Microsoft Technet](https://go.microsoft.com/fwlink/?LinkId=262163).  
+  1. If you don't already have a code signing certificate, you'll have to obtain one from one of the certification authorities.  
   2. You can also create a test certificate and use it for testing. For more information, see [How to: Create Your Own Test Certificate](https://msdn.microsoft.com/library/ff699202.aspx) or [New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2022-ps).  
   3. For information about when it's acceptable to skip this step, see [Security Considerations](#Security).  
   
