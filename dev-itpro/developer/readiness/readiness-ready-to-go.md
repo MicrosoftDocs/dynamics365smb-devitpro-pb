@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contains a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 06/06/2024
+ms.date: 06/20/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
