@@ -67,7 +67,7 @@ This section describes all the configuration settings for a [!INCLUDE[server](..
   
 The following table describes fields on the **General** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
-|Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|
+|Setting|Key Name|Description|
 |-------|--------|-------------------------------------------------------------------|
 |AL Function Logging Threshold - Application Insights|ALLongRunningFunctionTracingThresholdForApplicationInsights|Specifies the amount of time (in milliseconds) that an AL function can run before a warning event is recorded in the partner's Application Insights resource trace log. If you don't want a threshold, set the value to -1. <br /><br />To collect this telemetry data, the **Application Insights Instrumentation Key** setting must be configured. For information about analyzing this telemetry, see [Analyzing Long Running AL Methods Telemetry](telemetry-al-method-trace.md).<br /><br />Default: -1<br />Dynamically Updatable: Yes<br /><br />**APPLIES TO:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 (version 17.1) and later.|
 |Application Insights Connection String|ApplicationInsightsConnectionString|Specifies the connection string of the Application Insights resource in Microsoft Azure to use for gathering and analyzing telemetry data emitted by the server instance. When this setting is configured, the server instance will send telemetry data to Application Insights for analysis and presentation.<br /><br />This is the recommended setting instead of the Application Insights Instrumentation Key. If both settings are used, the Application Insights Connection String takes precedence.<br /><br />This setting only applies to a server instance that is configured as a single-tenant instance. For a multitenant server instance, this setting is ignored, and the Application Insights resource is set on a per-tenant basis, when tenants are mounted.<br /><br />For more information, see [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md).<br /><br />Default: empty<br />Dynamically Updatable: No|
@@ -123,9 +123,9 @@ The following table describes fields on the **General** tab in the [!INCLUDE[adm
 The following table describes fields on the **Database** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 > [!NOTE]  
->  If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant server instance, then except for the **Database Name**, **Database Instance**, and **Database Server** settings, the settings apply to both the application database and the tenant database.  
+> If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant server instance, then except for the **Database Name**, **Database Instance**, and **Database Server** settings, the settings apply to both the application database and the tenant database.  
 
-|Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
+|Setting|Key Name|Description|  
 |-------|--------|-------------------------------------------------------------------|
 |Database Instance|DatabaseInstance|The name of the SQL Server database instance to connect to. If the value is a null string \(""\), [!INCLUDE[server](../developer/includes/server.md)] instance connects to the default database instance of SQL Server.<br /><br /> If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant server instance, then this setting specifies the SQL Server database instance that hosts the application database.<br /><br /> Default: NAVDEMO<br />Dynamically Updatable: No|  
 |Database Name|DatabaseName|The name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in SQL Server.<br /><br /> If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as multi-tenant server instance, then this setting specifies the application database.<br /><br /> Default: "Demo Database BC \(14-0\)"<br />Dynamically Updatable: No|  
@@ -157,7 +157,7 @@ The following table describes fields on the **Database** tab in the [!INCLUDE[ad
   
 The following table describes fields on the **Client Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
-|Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
+|Setting|Key Name|Description|  
 |-------|--------|-------------------------------------------------------------------|  
 |Allowed File Types|ClientServicesAllowedFileTypes|Specifies the file types that can be stored by the server when requested by the client. The value is a semicolon-separated list of the file name extensions. The server won't store other file types.<br /><br />Example values:<ul><li>Blank or empty string (`""`): The setting is disabled. File types will be limited based on **Prohibited File Types** setting instead.</li><li>Asterisk (`*`): Specifies that all file types are allowed.</li><li>List of file type extensions separated by semi-colons, for example `txt;xml;pdf`: Specifies that only .txt, .xml, and .pdf file types can be stored.</li></ul>Trailing semicolons are ignored.<br /><br /> Default: blank<br />Dynamically Updatable: Yes|
 |Chunk Size|ClientServicesChunkSize|The default size for a chunk of data that is transferred between [!INCLUDE[server](../developer/includes/server.md)] and the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] or [!INCLUDE[webserver](../developer/includes/webserver.md)], in kilobytes.<br /><br /> The range of values is from 4 to 80.<br /><br /> Default: 28<br />Dynamically Updatable: No<br /><br />[!INCLUDE[2022rw1_and-earlier_only](../developer/includes/2022rw1_and-earlier_only.md)]|  
@@ -185,7 +185,7 @@ The following table describes fields on the **Client Services** tab in the [!INC
   
  The following table describes fields on the **SOAP Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
-|Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
+|Setting|Key Name|Description|  
 |-------|--------|-------------------------------------------------------------------|  
 |Enable SOAP Services|SOAPServicesEnabled|Specifies whether SOAP web services are enabled for this server instance.<br /><br /> If SOAP has been turned off, any call to such an endpoint will also return a HTTP status code 405 (so check your server configurations if you see those). <br /><br /> Default: Not enabled<br />Dynamically Updatable: No|  
 |Enable SSL|SOAPServicesSSLEnabled|Specifies whether SSL \(https\) is enabled for the SOAP web service port. For more information, see [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|  
@@ -204,7 +204,7 @@ The following table describes fields on the **Client Services** tab in the [!INC
   
 The following table describes fields on the **OData Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
-|Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
+|Setting|Key Name|Description|  
 |-------|--------|-------------------------------------------------------------------|
 ||APISubscriptionEnabled|Specifies whether subscriptions are enabled for the API endpoint.<br /><br /> Default: Enabled<br />Dynamically Updatable: No|
 ||APISubscriptionExpirtation|Specifies the number of days that an API subscription lasts before it expires.<br /><br /> Default: 3<br />Dynamically Updatable: No|
@@ -246,7 +246,7 @@ The following table describes fields on the **NAS Services** tab in the [!INCLUD
 > [!NOTE]  
 >  Instead of using NAS services, we recommend that you use the Task Scheduler (see [Task Scheduler](../developer/devenv-task-scheduler.md). If you decide to use NAS, and want to read more about its configuration, see [Configuring NAS Services](/dynamics-nav/configuring-nas-services) in the Dev and IT Pro Help for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
 
-|Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
+|Setting|Key Name|Description|  
 |-------|--------|-------------------------------------------------------------------|  
 |Enable Debugging|NASServicesEnableDebugging|Specifies if the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Debugger must attach to the NAS Services session. When this is enabled, the NAS Services session waits 60 seconds before the first AL statement is run.<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|
 |Run NAS Services with Admin Rights|NASServicesRunWithAdminRights|Specifies whether NAS services run operations with administrator rights instead of the rights granted to the [!INCLUDE[server](../developer/includes/server.md)] service account.<br /><br /> If you select this setting, NAS services will have full permissions in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], similar to the permissions that are granted by the SUPER permission set. The [!INCLUDE[server](../developer/includes/server.md)] service account isn't required to be set up as a user in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].<br /><br />If you clear this setting, the [!INCLUDE[server](../developer/includes/server.md)] service account must be added as a user in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and assigned the permissions that are required to perform the operations.<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|  
@@ -259,7 +259,7 @@ The following table describes fields on the **NAS Services** tab in the [!INCLUD
   
 The following table describes fields on the **Management Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
-|Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
+|Setting|Key Name|Description|  
 |-------|--------|-------------------------------------------------------------------|  
 |Enable Management Services|ManagementServicesEnabled|Specifies whether [!INCLUDE[admintool](../developer/includes/admintool.md)] is enabled for this server instance.<br /><br /> Default: Enabled<br />Dynamically Updatable: No<br><br>**APPLIES TO:** Version 21 and earlier. Deleted and replaced by **ManagementAPIServicesEnabled** in later versions.|  
 |Idle Client Timeout|ManagementServicesIdleClientTimeout|Specifies the amount of time a PowerShell command, like Invoke-NAVCodeunit, can run before the session times out and closes.<br /><br />The value has the format hh:mm:ss.<br />Default: 10:00:00<br />Dynamically Updatable: No| 
