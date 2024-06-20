@@ -1,8 +1,8 @@
 ---
 title: Resources for partners
-description: "Resources for partners contains a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central."
+description: Resources for partners contains a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 04/08/2024
+ms.date: 06/06/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -80,7 +80,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ### Copilot in Business Central 101
 
-- Copilot in Business Central playlist on YouTube: [aka.ms/BCYouTube​](https://aka.ms/BCYouTube)
+- Copilot in Business Central playlist on YouTube: [aka.ms/BC-Copilot-Videos​](https://aka.ms/BC-Copilot-Videos)
+- Copilot in Business Central - showcase video: [aka.ms/BC-AI-Sizzle](https://aka.ms/BC-AI-Sizzle)
 - Business Central pitch deck: [aka.ms/BC-GTM](https://aka.ms/BC-GTM)
 - Copilot in Business Central blog: [aka.ms/bc-ai​](https://aka.ms/bc-ai)
 - Copilot in Business Central Q&A : [About Copilot](/dynamics365/business-central/copilot-overview)
