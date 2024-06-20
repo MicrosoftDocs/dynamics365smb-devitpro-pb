@@ -50,35 +50,23 @@ If successful, this method returns ```201 Created``` response code and a **purch
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values -->
 ```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemoLines({id})
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemos({id})/purchaseCreditMemoLines({id})
 Content-type: application/json
 {
-    "id" : "",
-    "documentId" : "",
-    "sequence" : "",
-    "itemId" : "",
-    "accountId" : "",
-    "lineType" : "",
-    "lineObjectNumber" : "",
-    "description" : "",
-    "unitOfMeasureId" : "",
-    "unitOfMeasureCode" : "",
-    "unitCost" : "",
-    "quantity" : "",
-    "discountAmount" : "",
-    "discountPercent" : "",
-    "discountAppliedBeforeTax" : "",
-    "amountExcludingTax" : "",
-    "taxCode" : "",
-    "taxPercent" : "",
-    "totalTaxAmount" : "",
-    "amountIncludingTax" : "",
-    "invoiceDiscountAllocation" : "",
-    "netAmount" : "",
-    "netTaxAmount" : "",
-    "netAmountIncludingTax" : "",
-    "itemVariantId" : "",
-    "locationId" : ""
+    "itemId": "64748e9f-8401-ef11-9f8f-6045bde9b6de",
+    "accountId": "00000000-0000-0000-0000-000000000000",
+    "lineType": "Item",
+    "lineObjectNumber": "1896-S",
+    "description": "ATHENS Desk",
+    "unitOfMeasureId": "d5748e9f-8401-ef11-9f8f-6045bde9b6de",
+    "unitOfMeasureCode": "PCS",
+    "unitCost": 780.7,
+    "quantity": 1,
+    "discountAmount": 0,
+    "discountPercent": 0,
+    "taxCode": "FURNITURE",
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
@@ -90,32 +78,32 @@ Here is an example of the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 {
-    "id" : "",
-    "documentId" : "",
-    "sequence" : "",
-    "itemId" : "",
-    "accountId" : "",
-    "lineType" : "",
-    "lineObjectNumber" : "",
-    "description" : "",
-    "unitOfMeasureId" : "",
-    "unitOfMeasureCode" : "",
-    "unitCost" : "",
-    "quantity" : "",
-    "discountAmount" : "",
-    "discountPercent" : "",
-    "discountAppliedBeforeTax" : "",
-    "amountExcludingTax" : "",
-    "taxCode" : "",
-    "taxPercent" : "",
-    "totalTaxAmount" : "",
-    "amountIncludingTax" : "",
-    "invoiceDiscountAllocation" : "",
-    "netAmount" : "",
-    "netTaxAmount" : "",
-    "netAmountIncludingTax" : "",
-    "itemVariantId" : "",
-    "locationId" : ""
+    "id": "9722e816-7602-ef11-b3c3-83fe9ccecec3",
+    "documentId": "93c20e8c-7402-ef11-b3c3-83fe9ccecec3",
+    "sequence": 10000,
+    "itemId": "64748e9f-8401-ef11-9f8f-6045bde9b6de",
+    "accountId": "00000000-0000-0000-0000-000000000000",
+    "lineType": "Item",
+    "lineObjectNumber": "1896-S",
+    "description": "ATHENS Desk",
+    "unitOfMeasureId": "d5748e9f-8401-ef11-9f8f-6045bde9b6de",
+    "unitOfMeasureCode": "PCS",
+    "unitCost": 780.7,
+    "quantity": 1,
+    "discountAmount": 0,
+    "discountPercent": 0,
+    "discountAppliedBeforeTax": false,
+    "amountExcludingTax": 0,
+    "taxCode": "FURNITURE",
+    "taxPercent": 5.99974,
+    "totalTaxAmount": 0,
+    "amountIncludingTax": 0,
+    "invoiceDiscountAllocation": 0,
+    "netAmount": 780.7,
+    "netTaxAmount": 46.84,
+    "netAmountIncludingTax": 827.54,
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->

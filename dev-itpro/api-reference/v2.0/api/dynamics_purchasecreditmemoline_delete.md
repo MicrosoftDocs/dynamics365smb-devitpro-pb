@@ -49,7 +49,7 @@ If successful, this method returns ```204 No Content``` response code and delete
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
-DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemoLines({id})
+DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemos({id})/purchaseCreditMemoLines({id})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 **Response**

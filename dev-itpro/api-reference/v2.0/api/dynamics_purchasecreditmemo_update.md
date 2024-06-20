@@ -1,5 +1,5 @@
 ---
-title: Update purchaseCreditMemoes
+title: Update purchaseCreditMemos
 description: Updates a  purchase credit memo object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: dynamics-365-business-central
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Update purchaseCreditMemoes
+# Update purchaseCreditMemos
 
 Updates the properties of a purchase credit memo object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
@@ -23,7 +23,7 @@ Updates the properties of a purchase credit memo object for [!INCLUDE[prod_short
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
 ```
-PATCH businesscentralPrefix/companies({id})/purchaseCreditMemoes({id})
+PATCH businesscentralPrefix/companies({id})/purchaseCreditMemos({id})
 ```
 <!-- END>EDIT_IS_REQUIRED-->
 ## Request headers
@@ -49,11 +49,10 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values) -->
 ```json
-PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemoes({id})
+PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemos({id})
 Content-type: application/json
 {
-    "id" : ,
-    "number" :
+    "dueDate": "2022-02-10"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
@@ -66,47 +65,47 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "id" : ,
-    "number" : ,
-    "creditMemoDate" : ,
-    "postingDate" : ,
-    "dueDate" : ,
-    "vendorId" : ,
-    "vendorNumber" : ,
-    "vendorName" : ,
-    "payToVendorId" : ,
-    "payToVendorNumber" : ,
-    "payToName" : ,
-    "buyFromAddressLine1" : ,
-    "buyFromAddressLine2" : ,
-    "buyFromCity" : ,
-    "buyFromCountry" : ,
-    "buyFromState" : ,
-    "buyFromPostCode" : ,
-    "payToAddressLine1" : ,
-    "payToAddressLine2" : ,
-    "payToCity" : ,
-    "payToCountry" : ,
-    "payToState" : ,
-    "payToPostCode" : ,
-    "shortcutDimension1Code" : ,
-    "shortcutDimension2Code" : ,
-    "currencyId" : ,
-    "currencyCode" : ,
-    "paymentTermsId" : ,
-    "shipmentMethodId" : ,
-    "purchaser" : ,
-    "pricesIncludeTax" : ,
-    "discountAmount" : ,
-    "discountAppliedBeforeTax" : ,
-    "totalAmountExcludingTax" : ,
-    "totalTaxAmount" : ,
-    "totalAmountIncludingTax" : ,
-    "status" : ,
-    "lastModifiedDateTime" : ,
-    "invoiceId" : ,
-    "invoiceNumber" : ,
-    "vendorReturnReasonId" :
+    "id": "b5fcbb14-7402-ef11-b3c3-83fe9ccecec3",
+    "number": "1004",
+    "creditMemoDate": "2024-01-08",
+    "postingDate": "2024-01-08",
+    "dueDate": "2022-02-10",
+    "vendorId": "60748e9f-8401-ef11-9f8f-6045bde9b6de",
+    "vendorNumber": "20000",
+    "vendorName": "First Up Consultants",
+    "payToVendorId": "60748e9f-8401-ef11-9f8f-6045bde9b6de",
+    "payToVendorNumber": "20000",
+    "payToName": "First Up Consultants",
+    "buyFromAddressLine1": "100 Day Drive",
+    "buyFromAddressLine2": "",
+    "buyFromCity": "Chicago",
+    "buyFromCountry": "US",
+    "buyFromState": "IL",
+    "buyFromPostCode": "61236",
+    "payToAddressLine1": "100 Day Drive",
+    "payToAddressLine2": "",
+    "payToCity": "Chicago",
+    "payToCountry": "US",
+    "payToState": "IL",
+    "payToPostCode": "61236",
+    "shortcutDimension1Code": "",
+    "shortcutDimension2Code": "",
+    "currencyId": "00000000-0000-0000-0000-000000000000",
+    "currencyCode": "USD",
+    "paymentTermsId": "62728e9f-8401-ef11-9f8f-6045bde9b6de",
+    "shipmentMethodId": "00000000-0000-0000-0000-000000000000",
+    "purchaser": "",
+    "pricesIncludeTax": false,
+    "discountAmount": 0,
+    "discountAppliedBeforeTax": false,
+    "totalAmountExcludingTax": 0,
+    "totalTaxAmount": 0,
+    "totalAmountIncludingTax": 0,
+    "status": "Draft",
+    "lastModifiedDateTime": "2024-04-24T19:52:07.043Z",
+    "invoiceId": "00000000-0000-0000-0000-000000000000",
+    "invoiceNumber": "",
+    "vendorReturnReasonId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED-->
