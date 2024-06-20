@@ -5,6 +5,7 @@ ms.date: 06/20/2024
 ms.topic: conceptual
 ms.search.keywords: NAV Windows client
 author: jswymer
+ms.custom: evergreen
 ---
 # Deploying Dynamics NAV client connected to Business Central using ClickOnce
 
