@@ -185,7 +185,7 @@ Transparency is the key to building trust.
 - Give them a compelling offer they can't refuse. Offer a time-limited trial or special pricing discount if they buy in 30 days.
 - Use scarcity to compel action. Offer a 100% money-back guarantee.
 
-We recommend providing three offerings, optimized for three different customer segments. For more recommendations on pricing, see the pricing guide located at <!-- https://mbspartner.microsoft.com/BFI/Topic/64-->[Pricing and licensing](https://dynamicspartners.transform.microsoft.com/download/protected?assetname=assets/Microsoft%20presents%20-%20Pricing%20and%20licensing.pdf&download=1&protected=1).
+We recommend providing three offerings, optimized for three different customer segments. For more recommendations on pricing, see the [pricing and licensing guide](https://dynamicspartners.transform.microsoft.com/download/protected?assetname=assets/Microsoft%20presents%20-%20Pricing%20and%20licensing.pdf&download=1&protected=1). <!-- https://mbspartner.microsoft.com/BFI/Topic/64-->
 
 | Element       | Description |
 |---------------|-------------|
