@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 # AL code actions
 
-[!INCLUDE [2024_releasewave2_changed](../includes/2024_releasewave2_changed.md)]
+[!INCLUDE [2024-releasewave2-changed](../includes/2024-releasewave2-changed.md)]
 
 [!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
