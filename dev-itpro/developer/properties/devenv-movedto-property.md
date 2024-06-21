@@ -23,8 +23,8 @@ Specifies the destination extension Id when a table is moved to another extensio
 
 ## Remarks
 
-> [!NOTE]
-> This property is currently only for Microsoft use and will be available in a future release.
+> [!IMPORTANT]
+> This feature is currently not available to partners, but will be with a future update.
 
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
