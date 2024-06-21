@@ -48,6 +48,10 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API su
     |Redirect URI|Optional. You can grant consent from the Azure portal if left empty.|
 
     When completed, an **Overview** displays in the portal for the new application.
+
+  > [!NOTE]
+  > Copy the **Application (client) ID** of the registered app. You'll need this later. You can get this value from the **Overview** page.
+
 3. Create a client secret for the registered application as follows:
 
     1. Select **Certificates & secrets** > **New client secret**.
@@ -58,10 +62,10 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API su
 
     For the latest guidelines about adding client secrets in Microsoft Entra ID, see [Add credentials](/azure/active-directory/develop/quickstart-register-app#add-credentials) in the Azure documentation.
 
-  > [!NOTE]
-  > Copy the **Application (client) ID** of the registered app. You'll need this later. You can get this value from the **Overview** page.
+   > [!IMPORTANT]  
+   > The sample code below uses a client secret to demonstrate how to obtain an access token. For production scenarios it is not recommended to authenticate using a client secret. Refer to the [identity platform security checklist](/entra/identity-platform/identity-platform-integration-checklist.md#security) for the latest recommendations on secure authentication using Entra apps.
 
-4. Grant the registered application **AdminCenter.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]** API as follows:
+5. Grant the registered application **AdminCenter.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]** API as follows:
 
     1. Select **API permissions** > **Add a permission** > **Microsoft APIs**.
     2. Select **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]**.
@@ -70,13 +74,13 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API su
     > [!NOTE]
     > If you intent to use the same Microsoft Entra app with the Automation API and Business Central Web Services you can also grant **API.ReadWrite.All** and **Automation.ReadWrite.All** permissions. Learn more [here](automation-apis-using-s2s-authentication.md).
 
-5. (optional) Grant admin consent on each permission by selecting it in the list, then selecting **Grant admin consent for \<tenant name\>**. This step isn't required if you'll be granting consent from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. It is possible to grant consent from this page only for your own current tenant. This works for single-tenant apps, but for multi-tenant apps you have to grant consent for each tenant from that tenant's [Microsoft Entra admin center](https://entra.microsoft.com/), [Azure portal](https://portal.azure.com/) or the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
-6. Go to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and navigate to the 'Authorized Microsoft Entra apps' page. Paste the **Application (client) ID** of your app in the form to authorize an app.
-7. If not already completed in step 5 you can grant consent for your app from the 'Authorized Microsoft Entra apps' page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+6. (optional) Grant admin consent on each permission by selecting it in the list, then selecting **Grant admin consent for \<tenant name\>**. This step isn't required if you'll be granting consent from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. It is possible to grant consent from this page only for your own current tenant. This works for single-tenant apps, but for multi-tenant apps you have to grant consent for each tenant from that tenant's [Microsoft Entra admin center](https://entra.microsoft.com/), [Azure portal](https://portal.azure.com/) or the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
+7. Go to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and navigate to the 'Authorized Microsoft Entra apps' page. Paste the **Application (client) ID** of your app in the form to authorize an app.
+8. If not already completed in step 5 you can grant consent for your app from the 'Authorized Microsoft Entra apps' page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
   
     > [!NOTE]
-    > There might be a short delay until the `Granted` status is visible in the Business Central admin center after refreshing. To grant consent, you must have a Microsoft Entra role assigned that allows for management of application registrations in the tenant, such as the [Cloud Application Administrator](/azure/active-directory/roles/permissions-reference#cloud-application-administrator) role. The Dynamics 365 Administrator role that grants access to the [!INCLUDE[prodadmincenter] does not allow users to grant consent to applications in the tenant.
-8. (optional) Some operations in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API require that the app has a permissions assigned in the environment in addition to the authorization in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Follow the instructions in Task 2 [here](automation-apis-using-s2s-authentication.md) to assign permissions.
+    > There might be a short delay until the `Granted` status is visible in the Business Central admin center after refreshing. To grant consent, you must have a Microsoft Entra role assigned that allows for management of application registrations in the tenant, such as the [Cloud Application Administrator](/azure/active-directory/roles/permissions-reference#cloud-application-administrator) role. The Dynamics 365 Administrator role that grants access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] does not allow users to grant consent to applications in the tenant.
+9. (optional) Some operations in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API require that the app has a permissions assigned in the environment in addition to the authorization in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Follow the instructions in Task 2 [here](automation-apis-using-s2s-authentication.md) to assign permissions.
 
     > [!NOTE]
     > Learn more about permissions required for App Management operations [here](administration-center-api_app_management.md) and learn more about permissions required for Database Exports [here](administration-center-api_environment_database_export.md).
