@@ -16,7 +16,7 @@ Administrators that can manage [!INCLUDE [prod_short](../developer/includes/prod
 
 ## Administration as an internal administrator
 
-Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned the **Global admin** or **Dynamics 365 Admin** role in the Microsoft 365 admin center. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
+Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned the **Global administrator**, **Dynamics 365 Administrator**, or **Dynamics 365 Business Central Administrator** role in the Microsoft 365 admin center. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
 
 ### Administration in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
@@ -27,7 +27,7 @@ As an internal administrator you have **read-only** access to all areas of [!INC
 > [!IMPORTANT]
 > You must have a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] license in order to set up integration to other products, or perform any other tasks in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], except the two mentioned above. For information about licensing, see [Microsoft Dynamics 365 Business Central Licencing Guide](https://aka.ms/BusinessCentralLicensing).
 
-For other tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], where you can manage upgrade schedules and other tasks. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
+For other tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], where you can manage environment updates and other tasks. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
 You can also use telemetry to track usage and monitor user sessions, for example. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md) and [Managing Sessions](tenant-admin-center-manage-sessions.md).  
 
@@ -37,13 +37,11 @@ If your organization has signed up for a [!INCLUDE [prod_short](../developer/inc
 
 ### Administration in the Microsoft 365 admin center
 
-The **Global admin** role makes you an administrator of your organization's Microsoft 365 tenant. This role means that you can manage the subscription, add or remove users, and assign or remove licenses in the Microsoft 365 admin center. For more information, see [Microsoft 365 Admin help center](/office365/admin/admin-home).  
+The **Global administrator** and **License administrator** roles let you manage the subscription and assign or remove licenses in the Microsoft 365 admin center. The **Global administrator** and **User administrator** roles let you add or remove users from your organization's tenant. For more information, see [Microsoft 365 Admin help center](/office365/admin/admin-home).  
 
 ### Collaboration with reselling partners
 
-When your organization subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you have a relationship with [an authorized partner of Microsoft](/microsoft-365/admin/misc/add-partner). The partner company assists with licensing, configuration, and other tasks. They can also help you get [telemetry](telemetry-overview.md) about your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment.  
-
-The partner will have access to your tenant as a *delegated administrator*. You can configure their access to your data. Starting in February 2022, the partner can request *granular delegated admin privileges*, and we recommend that you work with your partner or partners to change their access to your tenant to use the *Dynamics 365 administrator* role rather than the *Global admin* role. For more information, see [Managing delegated permissions as an internal administrator](delegated-admin.md#managing-delegated-permissions-as-an-internal-administrator).  
+When your organization subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you have a relationship with [an authorized partner of Microsoft](/microsoft-365/admin/misc/add-partner). The partner company assists with licensing, configuration, and other tasks. They can also help you get [telemetry](telemetry-overview.md) about your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment. Authorized partners can gain access to your tenant and its [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments by setting up a GDAP relationship. It is recommended the **Dynamics 365 Business Central Administrator** role in GDAP relationships as this role limits access for partner users to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] only. The **Global administrator** and **Dynamics 365 administrator** roles are also supported for partners to administer and access [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments in the customer tenant, but also provide access to services other than [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
 
 If your organization decides to switch to another partner, you must take the following steps:
 
@@ -54,11 +52,11 @@ If your organization decides to switch to another partner, you must take the fol
     2. In the details pane, choose **Remove delegated admin**
     3. In the confirmation pane, choose **Remove**
     4. [Disable their user accounts](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]  
-3. Remove any settings in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] if the partner did not already clear their settings.  
+3. Remove any settings in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] if the partner did not already clear their settings. Settings that are typically set up by partners in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] that should be removed include [notification recipients](tenant-admin-center-notifications.md), [authorized Microsoft Entra apps](administration-center-api.md), and the [Application Insights connection string](telemetry-enable-application-insights.md#from-the-admin-center).
 
     For more information, see [Internal administrators](tenant-admin-center.md#internal-administrators).
 
-4. [Add your new partner to your subscription](/microsoft-365/admin/misc/add-partner#add-a-partner-to-an-existing-subscription), and work with them to get them set up  
+4. [Add your new partner to your subscription](/microsoft-365/admin/misc/add-partner#add-a-partner-to-an-existing-subscription), and work with them to get them set up.
 
 ### Unsubscribing from [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
