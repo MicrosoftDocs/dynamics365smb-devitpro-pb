@@ -63,7 +63,7 @@ All logic of the Forecasting API is encapsulated in the [Time Series Management 
 
 - [Initialize](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#initialize)  
 - [PrepareData](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#preparedata)  
-- [SetPreparedData](/dynamics365/business-centra/application/base-application/codeunit/system.ai.time-series-management#setprepareddata)  
+- [SetPreparedData](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#setprepareddata) 
 - [GetPreparedData](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#getprepareddata)  
 - [Forecast](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#forecast)  
 - [GetForecast](/dynamics365/business-central/application/base-application/codeunit/system.ai.time-series-management#getforecast)  

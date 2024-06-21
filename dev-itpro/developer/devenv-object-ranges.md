@@ -43,7 +43,7 @@ Partners can obtain IDs in this range for extensions for [!INCLUDE[prod_short](i
 
 For more information, see [Get Started with Building Apps](readiness/get-started.md).
 
-Download the [!INCLUDE[prod_short](includes/prod_short.md)] licensing guide [here](https://go.microsoft.com/fwlink/?LinkId=871590&clcid=0x409).
+Download the [!INCLUDE[prod_short](includes/prod_short.md)] licensing guide [here](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## See also
 

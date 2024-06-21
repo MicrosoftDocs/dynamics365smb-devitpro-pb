@@ -4,7 +4,7 @@ description: "How you extend templates in Dynamics 365 Business Central."
 author: bholtorf
 ms.date: 10/14/2021
 ms.topic: conceptual
-ms.author: romanz
+ms.author: bholtorf
 ms.reviewer: jswymer
 ---
 
