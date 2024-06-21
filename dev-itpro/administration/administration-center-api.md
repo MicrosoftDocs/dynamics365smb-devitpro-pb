@@ -63,7 +63,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API su
     For the latest guidelines about adding client secrets in Microsoft Entra ID, see [Add credentials](/azure/active-directory/develop/quickstart-register-app#add-credentials) in the Azure documentation.
 
    > [!IMPORTANT]  
-   > The sample code below uses a client secret to demonstrate how to obtain an access token. For production scenarios it is not recommended to authenticate using a client secret. Refer to the [identity platform security checklist](/entra/identity-platform/identity-platform-integration-checklist.md#security) for the latest recommendations on secure authentication using Entra apps.
+   > The sample code below uses a client secret to demonstrate how to obtain an access token. For production scenarios it is not recommended to authenticate using a client secret. Refer to the [identity platform security checklist](/entra/identity-platform/identity-platform-integration-checklist#security) for the latest recommendations on secure authentication using Entra apps.
 
 1. Grant the registered application **AdminCenter.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]** API as follows:
 
