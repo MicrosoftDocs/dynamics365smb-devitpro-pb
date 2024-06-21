@@ -94,10 +94,11 @@ The following examples show how to obtain such a token using PowerShell. Using C
 PowerShell example without prompt:
 
 ```powershell
-   $cred = [Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential]::new($AppId, $AppSecret)
-   $ctx = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext]::new("https://login.windows.net/$TenantName")
-   $token = $ctx.AcquireTokenAsync("996def3d-b36c-4153-8607-a6fd3c01b89f", $cred).GetAwaiter().GetResult().AccessToken
+$cred = [Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential]::new($AppId, $AppSecret)
+$ctx = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext]::new("https://login.windows.net/$TenantName")
+$token = $ctx.AcquireTokenAsync("996def3d-b36c-4153-8607-a6fd3c01b89f", $cred).GetAwaiter().GetResult().AccessToken
  ```
+
 > [!NOTE]
 > In the PowerShell example above, the guid specified to acquire the token (996def3d-b36c-4153-8607-a6fd3c01b89f) is the resource ID of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The example gets the client credential using the app secret, but the recommended way would be to rely on X.509 certificates.
 
@@ -163,7 +164,7 @@ $scopes = [String[]]@("https://api.businesscentral.dynamics.com/.default")
 $client = [Microsoft.Identity.Client.PublicClientApplicationBuilder]::Create($applicationId).WithAuthority($authority).Build()
 $accessToken = $client.AcquireTokenByUsernamePassword($Scopes, $cred.UserName, $cred.Password).ExecuteAsync().GetAwaiter().GetResult().AccessToken
 ```
- 
+
 PowerShell example with prompt:
 
 ```powershell
@@ -177,7 +178,7 @@ $accessToken = $client.AcquireTokenInteractive($scopes).ExecuteAsync().GetAwaite
 
 If an error occurs during the execution of an API method, it will respond back with an error object. While the specifics of any error will vary from endpoint to endpoint and by the error, the error object returned should adhere to the following structure. When an error occurs that doesn't fit this structure, it typically indicates that an error occurred in sending the request or during authentication of the request. For example, it could be that the API hasn't yet received the request. 
 
-**Error Response Object:** 
+**Error Response Object:**
 
 ```
 {
@@ -199,7 +200,7 @@ If an error occurs during the execution of an API method, it will respond back w
 
 **General unhandled errors**
 
-All unknown and unhandled errors that aren't covered by the lists above will use the error code: **Unknown** 
+All unknown and unhandled errors that aren't covered by the lists above will use the error code: **Unknown**
 
 ## See also
 
