@@ -200,7 +200,7 @@ The following table lists the Business Central 16 versions and the minimum versi
 |[16.14](https://support.microsoft.com/help/5004717)|[17.9](https://support.microsoft.com/help/5005374)|[18.4](https://support.microsoft.com/help/5005375)|19.0|
 |[16.15](https://support.microsoft.com/help/5005373)|[17.10](https://support.microsoft.com/help/5006075)|[18.5](https://support.microsoft.com/help/5006076)|19.0|
 |[16.16](https://support.microsoft.com/help/5006074)|[17.11](https://support.microsoft.com/help/5007025)|[18.6](https://support.microsoft.com/help/5007026)|19.0|
-|[16.17](https://support.microsoft.com/help/5007024)|[17.12](https://support.microsoft.com/help/5007777)|[18.7](https://support.microsoft.com/help/5007778)|[19.1](https://support.microsoft.com/help/5007779)|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|
+|[16.17](https://support.microsoft.com/help/5007024)|[17.12](https://support.microsoft.com/help/5007777)|[18.7](https://support.microsoft.com/help/5007778)|[19.1](https://support.microsoft.com/help/5007779)|
 
 To view the available updates for Business Central 2020 Release Wave 1, go to [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 1 on-premises](https://support.microsoft.com/help/4549687).
 
