@@ -2,7 +2,7 @@
 title: AL code actions
 description: Code actions can help you fix code issues either for your project alone or for the entire workspace.
 author: SusanneWindfeldPedersen
-ms.date: 08/28/2023
+ms.date: 06/21/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -24,8 +24,8 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the following code a
 - Interface implementer
 - Make method local
 - Use parenthesis for method call fix for instance, document, project, or workspace.
-- Fix explicit `with` statements
-- Fix implicit `with` statements
+- Fix explicit `with` statements on the instance, document, project, or workspace.
+- Fix implicit `with` statements on the instance, document, project, or workspace.
 - Fix old report layout and replace with `rendering` layout section
 - Fix for [AW0013](analyzers\uicop-aw0013.md)
 - Convert pages or page extensions to use the `actionRef` syntax for promoted actions on the action bar. Fix for instance, document, project, or workspace. For more information, see [Code action for actions](devenv-code-actions.md#code-actions-for-promoted-actions).
@@ -66,7 +66,7 @@ Alternatively:
 2. Navigate to **Extensions > AL Language extension configuration**.
 3. Choose the **Enable Code Actions** checkbox. You've now enabled code actions on your project.
 
-## See Also
+## See also
 
 [AL development environment](devenv-reference-overview.md)  
 [AL outline view](devenv-al-outline-view.md)  
