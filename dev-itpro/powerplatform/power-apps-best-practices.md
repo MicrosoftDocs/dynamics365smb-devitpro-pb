@@ -158,7 +158,7 @@ You can see the full list of supported connectors at [Power Automate Connectors]
 
 Using a uniform set of rules when building Power Apps makes the project more manageable and reduces the change of coding mistakes. For some general best practice resources for building Power Apps, see the following links:
 
-- [Power Apps canvas app coding standards and guidelines](https://pahandsonlab.blob.core.windows.net/documents/PowerApps%20canvas%20app%20coding%20standards%20and%20guidelines.pdf)
+- [Power Apps canvas app coding standards and guidelines](/power-apps/guidance/coding-guidelines/overview)<!--(https://pahandsonlab.blob.core.windows.net/documents/PowerApps%20canvas%20app%20coding%20standards%20and%20guidelines.pdf)-->
 - [Power Apps Community Call](https://www.youtube.com/watch?v=cJzomM29vNI&t=39s)
 - [Tips and best practices to improve performance of canvas apps](/power-apps/maker/canvas-apps/performance-tips)  
 
