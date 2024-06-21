@@ -2,7 +2,7 @@
 title: Embed Power BI reports in pages
 description: Explains how to display Power BI reports on pages in Business Central
 ms.custom: bap-template
-ms.date: 01/04/2024
+ms.date: 06/20/2024
 ms.topic: how-to
 ms.search.keywords: Power BI, reports, faq, errors
 author: jswymer
@@ -408,7 +408,7 @@ To display a specific Power BI element, such as a report, visual, or dashboard, 
 
    - [Get reports](/rest/api/power-bi/reports/get-reports) - Typically, the embedURL has the format `https://app.powerbi.com/reportEmbed?reportId=<id>&config=<config>`. 
    - [Get dashboards](/rest/api/power-bi/dashboards/get-dashboards) - Typically, the embedURL has the format `https://app.powerbi.com/dashboardEmbed?dashboardId=<id>&config=<config`. 
-   - [Get scorecards](/rest/api/power-bi/scorecards_(preview)/get)
+   - [Get scorecards](/rest/api/power-bi/scorecards(preview)/get)
 
 - For report visuals, you also need the page name and the visual name.
 
