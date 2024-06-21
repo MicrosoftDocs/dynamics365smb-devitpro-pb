@@ -44,8 +44,8 @@ When your organization subscribes to [!INCLUDE [prod_short](../developer/include
 
 If your organization decides to switch to another partner, you must take the following steps:
 
-1. Ask your current partner to [remove the reseller relationship with you](/microsoft-365/admin/misc/add-partner#remove-a-reseller-relationship) in the Partner Center
-1. Remove their delegated administration privileges:
+1. Ask your current partner to [remove the reseller relationship with you](/microsoft-365/admin/misc/add-partner#remove-a-reseller-relationship) in the Partner Center.
+1. Remove their delegated administration privileges by completing the follwoing steps:
 
    1. In the Microsoft 365 admin center, under **Settings**, select **Partner relationships**, and then select the partner of interest.
    1. In the details pane, select **Remove delegated admin**.
