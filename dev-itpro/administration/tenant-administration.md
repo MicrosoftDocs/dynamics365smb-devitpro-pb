@@ -2,10 +2,9 @@
 title: Administration of Business Central Online
 description: Learn about how you as the internal administrator or as a reselling partner can manage online tenants of Dynamics 365 Business Central.  
 author: jswymer
-
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 05/25/2022
+ms.date: 06/21/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -46,17 +45,17 @@ When your organization subscribes to [!INCLUDE [prod_short](../developer/include
 If your organization decides to switch to another partner, you must take the following steps:
 
 1. Ask your current partner to [remove the reseller relationship with you](/microsoft-365/admin/misc/add-partner#remove-a-reseller-relationship) in the Partner Center
-2. Remove their delegated administration privileges
+1. Remove their delegated administration privileges
 
     1. In the Microsoft 365 admin center, under **Settings**, choose **Partner relationships**, and then select the partner of interest
-    2. In the details pane, choose **Remove delegated admin**
-    3. In the confirmation pane, choose **Remove**
-    4. [Disable their user accounts](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]  
+    1. In the details pane, choose **Remove delegated admin**
+    1. In the confirmation pane, choose **Remove**
+    1. [Disable their user accounts](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]  
 3. Remove any settings in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] if the partner did not already clear their settings. Settings that are typically set up by partners in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] that should be removed include [notification recipients](tenant-admin-center-notifications.md), [authorized Microsoft Entra apps](administration-center-api.md), and the [Application Insights connection string](telemetry-enable-application-insights.md#from-the-admin-center).
 
     For more information, see [Internal administrators](tenant-admin-center.md#internal-administrators).
 
-4. [Add your new partner to your subscription](/microsoft-365/admin/misc/add-partner#add-a-partner-to-an-existing-subscription), and work with them to get them set up.
+1. [Add your new partner to your subscription](/microsoft-365/admin/misc/add-partner#add-a-partner-to-an-existing-subscription), and work with them to get them set up.
 
 ### Unsubscribing from [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
