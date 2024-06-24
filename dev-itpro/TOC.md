@@ -1438,6 +1438,8 @@
 ###### [Get vendor ledger entry](administration/financereportsapi/api/dynamics_vendorledgerentry_get.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+#### [Sustainability API](api-sustainability/sustainability-api.md)
+
 #### [Automation API](administration/itpro-introduction-to-automation-apis.md)
 #### [Admin Center API](administration/administration-center-api.md)
 #### [Cloud migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)

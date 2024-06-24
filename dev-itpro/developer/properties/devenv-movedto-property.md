@@ -20,6 +20,12 @@ Specifies the destination extension Id when a table is moved to another extensio
 -   Table Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+> [!IMPORTANT]
+> This feature is currently not available to partners, but will be with a future update.
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -6,7 +6,7 @@ ms.topic: article
 ms.devlang: al
 ms.search.keywords: India, local, IN, English
 ms.date: 09/01/2021
-ms.author: v-debapd
+ms.author: jswymer
 ms.reviewer: jswymer
 ---
 # Publish, Synchronize and Install the ‘IndiaUpgradeTables’ extension
