@@ -65,7 +65,7 @@ For more information about what you can do with [!INCLUDE [prod_short](../includ
 
 ### Removing a subscription
 
-If an organization decides to stop using [!INCLUDE [prod_short](../includes/prod_short.md)], an administrator must remove the subscription in the Microsoft 365 admin center. An email notification is sent to all administrators of the account. Deleting the subscription blocks all users from accessing their [!INCLUDE [prod_short](../includes/prod_short.md)], and deletes all data. If the administrator doesn't remove the subscription, it'll eventually expire, see [Data and access when a trial and subscription ends](trials-subscriptions.md#data-and-access-when-a-trial-or-subscription-ends).
+If an organization decides to stop using [!INCLUDE [prod_short](../includes/prod_short.md)], an administrator must remove the subscription in the Microsoft 365 admin center. An email notification is sent to all administrators of the account. Deleting the subscription blocks all users from accessing their [!INCLUDE [prod_short](../includes/prod_short.md)], and deletes all data. If the administrator doesn't remove the subscription, it'll eventually expire, see [Data and access when a trial and subscription ends](#data-and-access-when-a-trial-or-subscription-ends).
 
 > [!WARNING]
 > The subscription is deleted immediately and can't be reactivated.
