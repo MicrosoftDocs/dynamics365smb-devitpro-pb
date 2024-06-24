@@ -51,7 +51,7 @@ If your organization decides to switch to another partner, you must take the fol
    1. In the details pane, select **Remove delegated admin**.
    1. In the confirmation pane, select **Remove**.
    1. [Disable their user accounts](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) in [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
-   1. Remove any [multitenant applications](automation-apis-using-s2s-authentication.md) owned by the partner authorized to use S2S authentication with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] APIs.
+   1. Remove any [multitenant applications](automation-apis-using-s2s-authentication.md) owned by the partner that are authorized to use service to service (S2S) authentication with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] APIs.
 
 1. Remove any settings in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] if the partner didn't already clear their settings. Settings that partners typically set up in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] that should be removed include [notification recipients](tenant-admin-center-notifications.md), [authorized Microsoft Entra apps](administration-center-api.md), and the [Application Insights connection string](telemetry-enable-application-insights.md#from-the-admin-center).
 
